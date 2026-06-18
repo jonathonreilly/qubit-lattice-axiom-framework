@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 940 |
+| **retained_bounded** | 941 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1577 |
+| unaudited | 1576 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 13 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1363 |
+| `audited_clean` | 1364 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1899 |
+| `unaudited` | 1898 |
 
 | claim_type | count |
 |---|---:|
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
@@ -116,9 +116,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 907 | 38.83 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 786 | 38.12 | `audited_clean` | **retained_no_go** |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 785 | 38.12 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1114 | 36.62 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1086 | 35.59 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 734 | 33.02 | `unaudited` | unaudited |
@@ -1296,6 +1296,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_newton_blocking_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_newton_reproduction_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_only_det_positivity_case_a_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_self_consistent_two_body_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -18212,6 +18213,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Equation (16) and (18): det(M)=∏_{i=1}^{n/2}(m²+σ_i²)>0 after the det(γ₅)=(-1)^{n/2} sign cancels the sign in det(γ₅M).  _(class `A`)_
 - **chain closes:** True — Given the stated off-diagonal anti-Hermitian block form M_KS=[[0,K],[-K†,0]] with equal ε-sublattice dimensions, the SVD of K reduces γ₅M to independent 2x2 blocks. The determinant sign from γ₅ is explicitly counted and cancels, leaving a strictly positive product because m>0 and σ_i²≥0.
 - **rationale:** The proof is a genuine closed-form algebraic determinant factorization over the stated staggered block decomposition, not a renaming or numerical fit. The runner source actually constructs finite canonical staggered SU(3) operators and recomputes the block structure, γ₅-Hermiticity, sign reconciliation, and positivity scan; it does not hard-code the contested determinant value or import an opaque helper. The finite runner is only supporting evidence; the audit verdict rests on the exact SVD/block determinant argument.
+- **auditor confidence:** high
+
+### `staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03`
+
+- **Note:** [`STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md`](../../docs/STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded statement that, under the explicit row-local scalar-mass premise M = mI, m > 0 and M_epsilon = 0, the stated determinant-phase consequences and epsilon-component exclusions follow; no derivation of the scalar-mass-only action class was audited or established.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note fixes the row-local bounded premise to the real scalar line M = mI, m > 0 with M_epsilon = 0, then applies the retained staggered-only determinant-positivity result to det(D + mI).  _(class `A`)_
+- **chain closes:** True — The determinant positivity consequence follows from the cited retained Case A authority for real positive scalar mass, and the mass-basis membership/exclusion checks are direct algebra in the {I, epsilon} basis. The scalar-mass action class is an explicit bounded antecedent, not a derived framework consequence.
+- **rationale:** Within the declared bounded scope, the source note is disciplined: it states the scalar-mass premise locally and does not present it as derived from baseline framework inputs. The cited determinant-positivity authority is marked retained, and the runner source performs actual matrix decompositions and sampled staggered SU(3) determinant-phase checks rather than merely printing pass counts. The runner does hard-code the premise label, so it cannot support any unbounded derivation of the scalar action class; that limitation is already inside the audited claim boundary.
 - **auditor confidence:** high
 
 ### `staggered_scalar_parity_lapse_coupling_external_narrow_theorem_note_2026-05-16`

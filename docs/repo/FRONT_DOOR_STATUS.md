@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1480 |
-| Retained-grade rows, including boxed decorations | 1419 |
+| Applied audit verdicts | 1481 |
+| Retained-grade rows, including boxed decorations | 1420 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 213 |
-| Retained bounded rows | 940 |
+| Retained bounded rows | 941 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 19 |
-| Unaudited rows | 1577 |
+| Unaudited rows | 1576 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 22 |
 | Audited renaming rows | 13 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1579 |
-| Ready rows | 144 |
+| Total pending rows | 1578 |
+| Ready rows | 143 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
-| Medium pending | 439 |
+| Medium pending | 438 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03`](../../docs/STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md) - medium; unaudited
 - [`complex_selectivity_predictor_note`](../../docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md) - medium; unaudited
 - [`hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16`](../../docs/HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md) - medium; unaudited
+- [`koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
 - [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
-- [`koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
+- [`strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26`](../../docs/STRONG_CP_EPSILON_PSEUDOTENSOR_OH_SIGN_BRIDGE_BOUNDED_NOTE_2026-05-26.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
-- `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
+- `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
 - `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
 - `key_terminology` - critical; 1118 descendants; score 46.628
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

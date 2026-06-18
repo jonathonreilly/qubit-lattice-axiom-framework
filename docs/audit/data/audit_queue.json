@@ -3,7 +3,7 @@
     "critical": 304,
     "high": 267,
     "leaf": 569,
-    "medium": 439
+    "medium": 438
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -17415,30 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.807,
-      "note_path": "docs/STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/staggered_scalar_mass_class_bounded_premise_runner.py",
-      "transitive_descendants": 27
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "complex_selectivity_predictor_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17487,6 +17463,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence.py",
+      "transitive_descendants": 24
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "fermion_parity_z2_grading_theorem_note_2026-05-02",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.144,
+      "note_path": "docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_matter_attachment_reduces_to_ks.py",
       "transitive_descendants": 24
     },
     {
@@ -17565,36 +17571,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_distance_law_definitive.py",
       "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
-        "per_site_su2_spin_half_theorem_note_2026-05-02",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.322,
-      "note_path": "docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_matter_attachment_reduces_to_ks.py",
-      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -47308,6 +47284,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 144,
-  "total_pending": 1579
+  "ready_count": 143,
+  "total_pending": 1578
 }

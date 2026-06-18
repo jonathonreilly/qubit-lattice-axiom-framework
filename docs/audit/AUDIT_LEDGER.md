@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 218 |
-| **retained_no_go** | 215 |
+| **retained_no_go** | 216 |
 | **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1481 |
+| unaudited | 1480 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1419 |
+| `audited_clean` | 1420 |
 | `audited_conditional` | 48 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1803 |
+| `unaudited` | 1802 |
 
 | claim_type | count |
 |---|---:|
@@ -510,6 +510,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_logdet_factor_4b_jacobi_derivative_narrow_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_measure_positivity_agnostic_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_missing_axiom_carrier_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_native_action_predicts_q1_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
@@ -7231,6 +7232,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Applying d log|f| = Re(df/f) to f = det M(j), Jacobi's formula gives ∂_x log|det M(j)| = Re Tr[M(j)^(-1) ∂M/∂j_x], and for M(j)=D+diag(j), ∂M/∂j_x=P_x.  _(class `A`)_
 - **chain closes:** True — The proof closes by standard finite-dimensional calculus: Jacobi's determinant formula, d log|f| = Re(df/f) for nonzero complex f, and the elementary derivative ∂(D+diag j)/∂j_x=P_x. The trace/projector identity Tr[A P_x]=A_xx is correct with the stated matrix convention.
 - **rationale:** The audited claim is narrow and finite-dimensional, with no dependence on the Record axiom or on the cited physics residuals. The displayed identities, absolute-value convention, real-part convention, projector normalization, and trace/index contraction are internally consistent. The runner performs genuine numerical sanity checks of the finite algebra rather than printing constants or importing the contested premise; it is corroborative but not needed for the proof closure.
+- **auditor confidence:** high
+
+### `flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15`
+
+- **Note:** [`FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md`](../../docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the conditional no-go that the supplied gauge-uniform separable C3 singlet|doublet max-record-entropy selector is sector-blind and therefore cannot by itself derive a sector-dependent Koide r dial.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the supplied gauge-uniform separable selector hypothesis, tracing out the gauge factor multiplies singlet and doublet record weights by the identical gauge-dimension factor, which cancels in the normalized record fractions, so the entropy argmax remains r = 1/2 for every sector.  _(class `A`)_
+- **chain closes:** True — The cancellation is an elementary tensor-factor normalization identity over the cited C3 singlet|doublet carrier, and maximizing the resulting two-cell Shannon entropy gives the unique equipartition point r = 1/2. The source explicitly does not claim that physical fermion sectors realize this separable carrier.
+- **rationale:** The cited authorities are retained-grade on the required C3 carrier and r = 1/2 structural facts, and the load-bearing sector-blindness step is pure finite-dimensional algebra. The runner source computes the normalized record weights with uniform tensor factors, checks the non-uniform multiplicity control, and separately flags the quark values only as comparator evidence for weight-leak. The N1-N8 no-go gate is satisfied at the narrowed scope because live sector-dependent record structures and added priors are explicitly left outside the claimed closure.
 - **auditor confidence:** high
 
 ### `flavor_measure_positivity_agnostic_note_2026-05-31`

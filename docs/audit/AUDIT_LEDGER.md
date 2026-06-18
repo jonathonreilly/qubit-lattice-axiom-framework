@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1447 |
+| unaudited | 1446 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 20 |
+| ~~audited_renaming~~ | 21 |
 | ~~audited_conditional~~ | 56 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 20 |
-| `unaudited` | 1769 |
+| `audited_renaming` | 21 |
+| `unaudited` | 1768 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 891 |
-| `leaf` | 1421 |
+| `medium` | 892 |
+| `leaf` | 1420 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1745,6 +1745,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -16362,6 +16363,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The three one-angle holonomies give the linear system M(phis)[u,v,w]^T=h with rows [2 cos(phi_i), 2 sin(phi_i), 1], so whenever det M(phis) != 0 the reduced coordinates are recovered exactly.  _(class `A`)_
 - **chain closes:** True — The cited twisted-flux authority and included helper source supply the reduced family and one-angle holonomy law, and the independent basis-inner-product check gives h_phi=2u cos(phi)+2v sin(phi)+w. For phis=(0, pi/2, pi/3), det M=2-2sqrt(3) != 0, so reconstruction and separation follow by linear algebra.
 - **rationale:** The load-bearing closure is finite-dimensional algebra over the cited reduced carrier and holonomy law. The displayed design matrix and determinant check out independently of the runner implementation path, and the runner source performs the claimed matrix construction, solve, and separation checks rather than merely printing constants. The retained_bounded Tier-A carrier language in the twisted-flux authority limits the theorem to bounded PMNS carrier naming, but it does not leave a missing step in this bounded algebraic inversion claim. No external comparator or tuned numerical input is used.
+- **auditor confidence:** high
+
+### `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite C3 algebra for the TM2 singlet projector, RECORD P0/P1 dephasing, K-real two-block degeneracy, and the asserted identification of the residual K-reality predicate with site-basis conjugation.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The TM2 column's K-reality residual is identified with the site-basis K/CPT real-structure: site-basis complex conjugation transported by the C3 Fourier fixes Pchar0 and swaps Pchar1 with Pchar2.  _(class `F`)_
+- **chain closes:** False — The finite matrix identities checked by the runner close, including P0=J/3=Pchar(0) and conjugation swapping the nontrivial character projectors. The step that makes the residual predicate the canonical lattice K/CPT predicate is a chosen identification, not derived from a retained independent K/CPT bridge in the restricted packet.
+- **rationale:** Issue: the runner verifies the finite C3/projector/conjugation algebra, but the load-bearing conclusion equating the prior K-reality residual with site-basis K/CPT is an identification of concepts. Why this blocks: the cited authorities do not independently derive that this site-basis conjugation is the physical K/CPT predicate required by the residual. Repair target: add or cite a bridge theorem deriving the K/CPT/site-basis predicate from retained primitives rather than choosing it. Claim boundary until fixed: the note can support the explicit finite algebra and predicate definition, not a derived non-arbitrary K/CPT bridge.
 - **auditor confidence:** high
 
 ### `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`

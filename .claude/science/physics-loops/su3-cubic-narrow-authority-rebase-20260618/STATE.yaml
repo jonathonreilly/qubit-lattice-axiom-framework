@@ -1,0 +1,23 @@
+loop_slug: su3-cubic-narrow-authority-rebase-20260618
+goal: "Source-side repair for the SU(3)^3 cubic colour-anomaly cancellation row so its local proof depends on narrow colour-sector suppliers instead of broad matter-closure and hypercharge-uniqueness packets."
+target_status: bounded-support
+mode: source_repair
+cycle_count: 1
+active_route: narrow_authority_rebase
+hard_residual: "Full one-generation matter closure, branch convention, chirality/time selection, and SM hypercharge uniqueness remain outside this row."
+files_touched:
+  - docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md
+  - scripts/frontier_su3_cubic_anomaly_cancellation.py
+  - logs/runner-cache/frontier_su3_cubic_anomaly_cancellation.txt
+  - .claude/science/physics-loops/su3-cubic-narrow-authority-rebase-20260618/
+open_imports:
+  - "Full one-generation matter closure is not proved by this branch."
+  - "Neutral-singlet branch convention is not derived by this branch."
+  - "Physical chirality/time selection is not derived by this branch."
+  - "Absolute SM hypercharge labelling and uniqueness are not derived by this branch."
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Commit, push, open a ready review PR, then pivot to the next audit-unlock opportunity without rebasing older PRs onto main."
+stop_condition: "Stop only after PR handoff for this block or after the refreshed queue has no source-side repair route left."

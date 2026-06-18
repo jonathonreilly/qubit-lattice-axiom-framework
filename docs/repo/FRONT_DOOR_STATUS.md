@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1638 |
-| Retained-grade rows, including boxed decorations | 1497 |
+| Applied audit verdicts | 1639 |
+| Retained-grade rows, including boxed decorations | 1498 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 218 |
-| Retained bounded rows | 1002 |
+| Retained bounded rows | 1003 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 37 |
-| Unaudited rows | 1419 |
+| Unaudited rows | 1418 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 60 |
 | Audited renaming rows | 29 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1421 |
-| Ready rows | 5 |
+| Total pending rows | 1420 |
+| Ready rows | 4 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
-| Medium pending | 411 |
+| Medium pending | 410 |
 | Leaf pending | 438 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13`](../../docs/WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md) - medium; unaudited
 - [`yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25`](../../docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
@@ -80,8 +79,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 928 |
-| Leaf nodes | 1512 |
+| Medium nodes | 927 |
+| Leaf nodes | 1513 |
 
 Top load-bearing rows by graph score:
 

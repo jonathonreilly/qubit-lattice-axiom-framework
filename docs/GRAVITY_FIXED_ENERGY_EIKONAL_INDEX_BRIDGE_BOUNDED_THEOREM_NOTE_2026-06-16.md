@@ -19,13 +19,19 @@ bridges rather than another citation to textbook WKB language:
 
 This note supplies the second bridge: the fixed-energy eikonal index
 `n = k/k0` as a direct phase-count identity on the bounded scalar dispersion
-packet. The scalar generator shift and its weak-field sign are cited from
-existing retained-bounded source packets below; they are not newly derived by
-this note. It does not add an axiom and does not import a textbook result as a
-proof input.
+packet. The additive scalar generator shift is now supplied by the one-hop
+support note
+[`GRAVITY_SCALAR_SHIFT_ADDITIVE_GENERATOR_SUPPORT_NOTE_2026-06-18.md`](GRAVITY_SCALAR_SHIFT_ADDITIVE_GENERATOR_SUPPORT_NOTE_2026-06-18.md),
+which derives `H_s = H_0 + sI`, the `+s` sign, and the local normalization
+`c_E s = phi_phys` on the same scalar-symbol packet. This note does not add an
+axiom and does not import a textbook result as a proof input.
 
 ## One-Hop Inputs
 
+- [`GRAVITY_SCALAR_SHIFT_ADDITIVE_GENERATOR_SUPPORT_NOTE_2026-06-18.md`](GRAVITY_SCALAR_SHIFT_ADDITIVE_GENERATOR_SUPPORT_NOTE_2026-06-18.md)
+  supplies the additive scalar generator support:
+  `H_s = H_0 + sI`, the `+s` sign, and the local normalization
+  `c_E s = phi_phys` matching the bounded weak-field action response.
 - [`GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
   is the retained-bounded weak-field source/action/readout authority. It
   supplies the sign convention in which a positive weak field lowers the
@@ -52,11 +58,11 @@ weak-field cell:
     lambda_axis(k_s) + s = E.
 ```
 
-Here `s` is the scalar shift supplied by the cited source packet, with the
-sign convention cross-checked against the weak-field source-response bridge:
-positive field decreases the normalized action, so the shifted fixed-energy
-symbol is written with `+s` and therefore has smaller local wavenumber at
-fixed `E`.
+Here `s` is the normalized scalar shift supplied by the 2026-06-18 additive
+generator support note. Its sign and local normalization are cross-checked
+against the weak-field source-response bridge: positive field decreases the
+normalized action, so the shifted fixed-energy symbol is written with `+s` and
+therefore has smaller local wavenumber at fixed `E`.
 
 For `0 < E < 4` and `|s| << E`, the exact local wavenumber is
 
@@ -103,28 +109,30 @@ weak-field limit gives
 ```
 
 This is the coefficient used by the Premise (4) refractive-index packet.
-Choosing the unit normalization `c_E s = phi_phys` recovers the displayed
-`S = L - int phi_phys dl` form; without that normalization, this note supplies
-the structural index form and the exact coefficient `c_E`, not a physical
-value of `G_Newton`.
+The 2026-06-18 additive-generator support note fixes the local unit
+normalization `c_E s = phi_phys`, recovering the displayed
+`S = L - int phi_phys dl` form on this packet. This still supplies only the
+structural index form and the exact coefficient `c_E`, not a physical value of
+`G_Newton`.
 
 ## Proof
 
 ### 1. Additive scalar shift
 
-On a constant-field cell, once the scalar generator-shift packet supplies
-`H_s = H_0 + s I`, the spectral consequence is immediate: adding a scalar term
-`s I` shifts every plane-wave eigenvalue by `s`:
+On a constant-field cell, the additive generator support note supplies
+`H_s = H_0 + s I`, with `s` normalized by `c_E s = phi_phys`. The spectral
+consequence is immediate: adding a scalar term `s I` shifts every plane-wave
+eigenvalue by `s`:
 
 ```text
     H_0 e^{ikx} = lambda_axis(k) e^{ikx}
     (H_0 + s I) e^{ikx} = (lambda_axis(k) + s) e^{ikx}.
 ```
 
-This is finite-dimensional spectral algebra conditional on the cited scalar
-shift packet. The physical weak-field sign for the scalar action shift is not
-guessed here; it is inherited from the retained-bounded weak-field
-source-response bridge's test-action convention.
+This is finite-dimensional spectral algebra on the scalar-symbol packet. The
+physical weak-field sign for the scalar action shift is not guessed here; it is
+matched to the retained-bounded weak-field source-response bridge's
+test-action convention by the local normalization `c_E s = phi_phys`.
 
 ### 2. Fixed-energy inverse
 
@@ -203,8 +211,8 @@ constant.
 
 - Bounded to the axis symbol and slowly varying piecewise-constant scalar
   packet. It is not a full arbitrary-graph WKB theorem.
-- The scalar generator shift is a cited retained-bounded input, not a new
-  derivation inside this note.
+- The scalar generator shift is supplied by the 2026-06-18 bounded support note
+  on the same scalar-symbol packet.
 - The scalar weak-field sign is inherited from the retained-bounded
   source-response bridge. This note does not derive a universal matter
   coupling theorem.
@@ -225,5 +233,5 @@ PYTHONPATH=scripts python3 scripts/frontier_gravity_fixed_energy_eikonal_index_b
 Expected result:
 
 ```text
-TOTAL: PASS=32 FAIL=0
+TOTAL: PASS=33 FAIL=0
 ```

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_scalar_shift_additive_generator_support_2026_06_18.py
+runner_sha256: 3364903e945c0d451ed611bad99930c579d83faa25bcd76dadcb7e184187e784
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+Gravity scalar-shift additive generator support
+Source-side bounded support only; no audit status is set here.
+PASS: support note contains required phrase: H_s = H_0 + s I
+PASS: support note contains required phrase: c_E s = phi_phys
+PASS: support note contains required phrase: lambda_axis(k_s) + s = E
+PASS: support note contains required phrase: k_s/k0 = 1 - phi_phys + O(phi_phys^2)
+PASS: support note contains required phrase: positive
+PASS: support note contains required phrase: `phi_phys` gives positive `s`
+PASS: support note contains required phrase: does not derive a physical Newton constant
+PASS: support note contains required phrase: Independent audit decides
+PASS: support note excludes forbidden phrase: **Status:** retained
+PASS: support note excludes forbidden phrase: G_Newton in SI units is derived
+PASS: support note excludes forbidden phrase: full Einstein equations
+PASS: support note excludes forbidden phrase: textbook theorem supplies the proof
+PASS: support note excludes forbidden phrase: adds a new axiom
+PASS: parent eikonal note links the scalar-shift support note
+PASS: weak-field action source supplies the sign convention
+PASS: scalar surface supplies propagator/action context
+PASS: one-hop input has current retained_bounded effective status: gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11 (effective_status=retained_bounded)
+PASS: one-hop input has current retained_bounded effective status: self_consistency_forces_poisson_note (effective_status=retained_bounded)
+PASS: finite open-path Laplacian eigenvalues shift by +s (max_error=1.409e-15)
+PASS: finite nondegenerate eigenvectors are unchanged up to signs by +sI (min_overlap=1.000000000000)
+PASS: free symbol solves lambda(k0)=E
+PASS: c_E is positive on the selected branch (c_E=12.5419747709)
+phi_phys=5.000000e-04 s=3.986613026525e-05 k_s/k0=0.999499876615 first_order=0.999500000000
+phi_phys=1.000000e-03 s=7.973226053050e-05 k_s/k0=0.998999506213 first_order=0.999000000000
+phi_phys=2.000000e-03 s=1.594645210610e-04 k_s/k0=0.997998022871 first_order=0.998000000000
+PASS: fixed-energy symbol equation holds for normalized shifts
+PASS: positive action field maps to positive +s and lowers k_s
+PASS: normalization c_E*s=phi_phys gives first-order S/L=1-phi_phys
+PASS: derivative with respect to phi_phys is -1 under c_E*s normalization (dn_dphi=-1.000000000581)
+PASS: small-k c_E approaches 1/(2E) (c_E=12.5419747709)
+PASS: continuum coefficient improves as E decreases (rel_E=3.358e-03, rel_lower=8.349e-04)
+PASS: piecewise normalized phase matches weak action to first order (error=3.241e-06)
+
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

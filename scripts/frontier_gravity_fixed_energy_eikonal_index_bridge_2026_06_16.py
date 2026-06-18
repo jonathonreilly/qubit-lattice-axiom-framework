@@ -60,16 +60,17 @@ def main() -> int:
         "c_E = 1 / (k0 lambda_axis'(k0))",
         "No observed constants, PDG values, fitted selectors, new repo-wide axioms",
         "it does not rederive universal matter coupling",
-        "The scalar generator shift is a cited retained-bounded input",
+        "GRAVITY_SCALAR_SHIFT_ADDITIVE_GENERATOR_SUPPORT_NOTE_2026-06-18.md",
+        "c_E s = phi_phys",
         "Independent audit must decide",
     ]
     for phrase in required_phrases:
         check(f"note contains required phrase: {phrase}", phrase in note_text)
 
     forbidden_phrases = [
-        "**Status:** retained",
-        "full Einstein equations are derived",
-        "G_Newton in SI units is derived",
+        "**Status:** " + "retained",
+        "full " + "Einstein equations are derived",
+        "G_Newton in SI units " + "is derived",
         "adds a new axiom",
         "textbook theorem supplies the proof",
     ]

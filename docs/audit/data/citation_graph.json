@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16"
     },
     {
@@ -100664,7 +100660,6 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12",
         "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16",
         "wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13",
         "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
@@ -100672,7 +100667,7 @@
         "ai_methodology.raw.canonical_framing_paragraph"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3a18439e4611d6003081eefae5d185fc8b885f52e3772d85fee1393f3a566bdd",
+      "note_hash": "a871731af77ec0cd0e851a3963e7ef2e6bc87287114c4c855e62c00debcb9eb9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -115741,8 +115736,8 @@
       "open_gate": 180,
       "positive_theorem": 599
     },
-    "edge_count": 13172,
-    "leaf_count": 1139,
+    "edge_count": 13171,
+    "leaf_count": 1140,
     "node_count": 3523,
     "root_count": 1076,
     "runners_with_path": 3109

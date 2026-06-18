@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1002 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1420 |
+| unaudited | 1419 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 29 |
@@ -61,6 +61,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
 | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 3 |
 | `decoration_under_three_generation_observable_theorem_note` | 1 |
+| `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
 
 | audit_status | count |
@@ -68,16 +69,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1452 |
 | `audited_conditional` | 60 |
-| `audited_decoration` | 57 |
+| `audited_decoration` | 58 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1742 |
+| `unaudited` | 1741 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1729 |
-| `decoration` | 59 |
+| `bounded_theorem` | 1728 |
+| `decoration` | 60 |
 | `meta` | 329 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
@@ -87,8 +88,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 890 |
-| `leaf` | 1422 |
+| `medium` | 888 |
+| `leaf` | 1424 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1705,6 +1706,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `translation_covariance_local_op_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
+| `wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | cross_family | codex-gpt-5.5 | A | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` |
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -22835,6 +22837,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Taking the curvature magnitude from the upstream Wilson extremum note and dividing by the diagnostic count N_taste = 16 gives (1/(4 u_0^2)) * (1 - 3 r^2/u_0^2) + O(r^4), with the square-root expansion following from sqrt(1 - x).  _(class `A`)_
 - **chain closes:** True — The cited retained-bounded authorities supply the staircase normalization, total Wilson-shifted leading curvature, and D1/N_taste diagnostic setup. The audited result follows by curvature magnitude, division by 16, and the standard square-root Taylor expansion.
 - **rationale:** The load-bearing calculation is finite algebra over retained-bounded inputs: |−4/u_0^2 + 12 r^2/u_0^4|/16 gives the stated coefficient, and the ratio expansion has the correct −3/2 and −9/8 terms. The runner source performs arithmetic, Taylor-residual, all-orders consistency, import, and scope-guard checks rather than merely printing PASS. The physical Higgs-pole, uniform physical channel-selection, and numerical r readings are explicit non-claims, so they do not enter this bounded diagnostic conclusion.
+- **auditor confidence:** high
+
+### `wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16`
+
+- **Note:** [`WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md`](../../docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic beta-rescaling under nonzero T'_a = c T_a with compensating g' T'_a = g T_a, inside the supplied standard Wilson plaquette action and canonical trace-normalization surface.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying the same Wilson small-a matching theorem to the primed surface gives beta' = 2 N_c / g'^2 = 2 N_c / (g^2/c^2) = c^2 beta.  _(class `A`)_
+- **chain closes:** True — Given the retained_bounded Wilson matching authority beta = 2 N_c / g^2 and the compensating relation g'^2 = g^2/c^2, the stated beta' = c^2 beta and beta' g'^2 = beta g^2 = 2 N_c follow by direct algebra. No Wilson action-surface selection, beta=6, or g_bare=1 claim is needed or audited.
+- **rationale:** The chain uses a single retained_bounded parent, the Wilson small-a matching theorem, and substitutes the compensating coupling rescaling into that formula. The independent algebra check gives beta' g'^2 = c^2 beta * g^2/c^2 = beta g^2 = 2 N_c. The runner performs finite rational algebra plus source-boundary checks; it does not compute new framework physics, so this is an algebraic decoration of the upstream Wilson matching result.
+- **decoration parent:** `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`
 - **auditor confidence:** high
 
 ### `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`

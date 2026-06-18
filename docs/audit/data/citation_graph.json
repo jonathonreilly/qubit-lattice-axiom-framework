@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "connectivity_family_v2_elliptical_duplicate_note"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13"
+      "to": "d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12",
         "connectivity_family_v2_elliptical_duplicate_note",
         "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12",
         "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12",
         "d3_native_stable_orbit_upper_bound_composition_note_2026-06-09",
+        "d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13"
+        "d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13"
       ],
       "helper_runner_paths": [],
-      "note_hash": "968c64ef5516d5bf34e6e28f4aabc73e3ec6b436d9149c9be8277f412a96f13d",
+      "note_hash": "dfec37d554a08b83b18a7646f04424cc321f5799eb6ba5dd7fb4e206351a0c0f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

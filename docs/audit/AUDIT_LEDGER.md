@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 970 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1499 |
+| unaudited | 1498 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 41 |
+| ~~audited_conditional~~ | 42 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,28 +65,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1408 |
-| `audited_conditional` | 41 |
+| `audited_conditional` | 42 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1821 |
+| `unaudited` | 1820 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1728 |
+| `bounded_theorem` | 1729 |
 | `decoration` | 57 |
 | `meta` | 326 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 760 |
+| `positive_theorem` | 759 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 894 |
-| `leaf` | 1418 |
+| `medium` | 891 |
+| `leaf` | 1421 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1554,6 +1554,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `connectivity_family_v2_elliptical_duplicate_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4328,6 +4329,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The runner constructs the finite L=3 Fock/Born tree, computes prefix statistics and seeded permutation-null p95 values, applies the adequacy gate, and reports that every adequate row has theorem_clears=true. Independent table arithmetic against the printed rows and gate gives adequate kmax values 6, 4, and 7, with all higher-k rows flagged family-inadequate.
 - **rationale:** The runner source does not merely print the claim: it builds the finite Hilbert-space machinery, evolves the branch tree, computes determinant phases, prefix-family statistics, null quantiles, adequacy flags, and cap-stability checks. The displayed adequate sets match the claimed theorem-grade clear sets, and non-clearing or singleton/empty-sector rows are outside the adequacy gate rather than counted as theorem wins. The no-exhaustion language is bounded to fixed L=3, k<=8, selected rows, and the adequate-family range, so it does not overclaim asymptotic or higher-k closure.
 - **auditor confidence:** high
+
+### `connectivity_family_v2_elliptical_duplicate_note`
+
+- **Note:** [`CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md`](../../docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite diagnostic status of the parity-tapered elliptical-shell no-restore grown-slice sweep as a duplicate of the retained-bounded sign-portability gate packet, not an independent family.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-connectivity_family_v2_elliptical_duplicate_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The ellipse-tapered rule reproduces the already-retained portable sign-law fixed point on a narrow seed-0 slice, while nearby seed-1 rows fail the sign-orientation boundary, so it is a diagnostic duplicate rather than a new independent family.  _(class `C`)_
+- **chain closes:** False — The code performs a genuine finite sweep, but the completed cache does not contain the stated drift=0.02 row and reports 25/45 passing rows across all listed drifts, not the source's narrow seed-0 slice narrative. Re-audit needs either the missing targeted certificate/log or source prose aligned to the current cache.
+- **rationale:** Issue: The runner source is a real class-C finite computation, but the source note's row inventory is stale relative to the provided cache: drift=0.02, seed=0 is not run, the cache reports 25/45 passes, and passes occur outside a narrow seed-0 slice. Why this blocks: the diagnostic-duplicate conclusion can be safely argued only from the finite rows actually certified, and the note as written asks the auditor to accept unprovided or stale row evidence. Repair target: refresh the note against CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.txt or include the targeted log/certificate that verifies the older row set. Claim boundary until fixed: the packet supports that the current runner computes a sign-law-like gate packet on many passing rows, but not the exact source-scoped row narrative.
+- **auditor confidence:** medium
 
 ### `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10`
 

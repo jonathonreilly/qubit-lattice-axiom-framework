@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 329,
+    "critical": 328,
     "high": 289,
     "leaf": 569,
     "medium": 473
@@ -121,31 +121,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-      "claim_scope": "Assuming CN, N_c=3, WM beta=2 N_c/g_bare^2, and the explicit scoped input beta=6, exact algebra gives g_bare^2=1 and g_bare=1 on the positive branch.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-        "cl3_color_automorphism_theorem"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.46,
-      "note_path": "docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_constraint_surface_check.py",
-      "transitive_descendants": 995
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -49507,6 +49482,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 162,
-  "total_pending": 1660
+  "ready_count": 161,
+  "total_pending": 1659
 }

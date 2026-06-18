@@ -52234,15 +52234,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15"
     },
     {
       "from": "repo.front_door_status",
       "to": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "complex_selectivity_predictor_note"
     },
     {
       "from": "repo.front_door_status",
@@ -52258,7 +52258,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "complex_selectivity_predictor_note"
+      "to": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15",
         "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
+        "complex_selectivity_predictor_note",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "distance_law_definitive_note",
-        "complex_selectivity_predictor_note"
+        "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "95220490c5e3b6e8aa075203ea45146bf5869c8b5602a97ccd798a4c244b04dd",
+      "note_hash": "d1909c26a9745bd775bab85bd7dd7be5f5221f857b571c30adb93d5776ef9f61",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

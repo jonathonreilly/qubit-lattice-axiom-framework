@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 938 |
+| **retained_bounded** | 939 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1579 |
+| unaudited | 1578 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 13 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1361 |
+| `audited_clean` | 1362 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1901 |
+| `unaudited` | 1900 |
 
 | claim_type | count |
 |---|---:|
@@ -1465,6 +1465,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `wilson_extremum_curvature_readout_boundary_certificate_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -20582,6 +20583,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given the Hamming-weight Wilson shift 2rk and uniform staggered imaginary part ±2iu_0, each class contributes log((2rk+m)^2+4u_0^2), so V_taste^W(m)=-(1/2)Σ_k binomial(4,k)log((2rk+m)^2+4u_0^2).  _(class `A`)_
 - **chain closes:** True — The cited retained-bounded staircase note supplies the binomial multiplicities and Wilson shifts, while the retained-bounded Higgs parent supplies the uniform ±2iu_0 staggered spectrum. From those inputs the potential, derivatives, r=0 limit, and +60 r^2/u_0^4 coefficient follow by direct calculus and binomial moments.
 - **rationale:** The load-bearing mathematics is an algebraic closure over retained-bounded inputs, not a definition, comparator match, or tuned numerical readout. Independent differentiation of the displayed V_taste^W gives equations (2) and (3), and expanding f(x)=(x-u_0^2)/(x+u_0^2)^2 with Σ binomial(4,k)k^2=80 gives the stated +60 r^2/u_0^4 leading correction. The note explicitly confines itself to the symmetric-point bounded formula and does not claim the Wilson-shifted extremum, physical Higgs mass, Wilson coefficient, u_0 value, or +12% gap closure.
+- **auditor confidence:** high
+
+### `wilson_extremum_curvature_readout_boundary_certificate_2026-06-15`
+
+- **Note:** [`WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md`](../../docs/WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Leading-order Wilson-shifted per-channel diagnostic curvature readout and its Taylor ratio, excluding any physical Higgs-pole, channel-selection, or numerical Wilson-coefficient conclusion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-wilson_extremum_curvature_readout_boundary_certificate_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Taking the curvature magnitude from the upstream Wilson extremum note and dividing by the diagnostic count N_taste = 16 gives (1/(4 u_0^2)) * (1 - 3 r^2/u_0^2) + O(r^4), with the square-root expansion following from sqrt(1 - x).  _(class `A`)_
+- **chain closes:** True — The cited retained-bounded authorities supply the staircase normalization, total Wilson-shifted leading curvature, and D1/N_taste diagnostic setup. The audited result follows by curvature magnitude, division by 16, and the standard square-root Taylor expansion.
+- **rationale:** The load-bearing calculation is finite algebra over retained-bounded inputs: |−4/u_0^2 + 12 r^2/u_0^4|/16 gives the stated coefficient, and the ratio expansion has the correct −3/2 and −9/8 terms. The runner source performs arithmetic, Taylor-residual, all-orders consistency, import, and scope-guard checks rather than merely printing PASS. The physical Higgs-pole, uniform physical channel-selection, and numerical r readings are explicit non-claims, so they do not enter this bounded diagnostic conclusion.
 - **auditor confidence:** high
 
 ### `wilson_mu2_distance_sweep_note_2026-04-11`

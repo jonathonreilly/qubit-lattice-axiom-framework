@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 924 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1617 |
+| unaudited | 1616 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 9 |
-| ~~audited_conditional~~ | 15 |
+| ~~audited_conditional~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1337 |
-| `audited_conditional` | 15 |
+| `audited_conditional` | 16 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1939 |
+| `unaudited` | 1938 |
 
 | claim_type | count |
 |---|---:|
@@ -1476,6 +1476,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_mru_demotion_note_2026-04-20` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
@@ -9044,6 +9045,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For fixed positive alpha != 1 and nonzero C, if N_species(R) != N_species(R') then C * alpha^(N_species(R)) != C * alpha^(N_species(R')).  _(class `A`)_
 - **chain closes:** True — The algebra closes because the ratio of two bridge outputs is alpha^(N_R-N_R'), which cannot equal 1 for positive alpha != 1 and N_R != N_R'; the nonzero prefactor cancels. This audits only the bounded conditional obstruction, not B1/B2 as derived regulator physics.
 - **rationale:** The source note’s actual no-go is restricted to the abstract exponent-difference step, and that step is a valid algebraic closure over the stated fixed-alpha, fixed-prefactor assumptions. The runner source computes that algebra and separately checks or hard-codes witness/boundary data; it does not derive B1/B2, but the note explicitly keeps those packets non-load-bearing. The N1-N8 no-go discipline is satisfied for the bounded reading because O1/O2/O3 remain named residual routes rather than being claimed impossible.
+- **auditor confidence:** high
+
+### `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`
+
+- **Note:** [`HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Delta=0 B4 magnitude obstruction: the provided block observables contain u_0 but no native alpha_bare, reducing closure to an unsupplied alpha_s-per-taste attachment-observable identification.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The checked block determinant/condensate forms are u_0-only, while alpha_LM^16 = alpha_bare^16 u_0^-16, so the alpha_bare^16 magnitude is bookkeeping unless an attachment-observable transport rule supplies it.  _(class `A`)_
+- **chain closes:** False — The algebraic reduction closes, but the claimed hierarchy transport does not. The missing step is a ratio-normalized block readout in which one decoupling taste contributes alpha_s = alpha_bare/u_0^2 multiplicatively.
+- **rationale:** Issue: the runner verifies algebraic identities, symbol absence, and scope markers, but it does not derive the B4 attachment-observable identification. Why this blocks: u_0^16 * alpha_s^16 = alpha_LM^16 is a bookkeeping equivalence, not a transport mechanism in a determinant, log-partition, or readout observable. Repair target: provide a retained theorem identifying the ratio-normalized block observable that attaches alpha_s per taste decoupling. Claim boundary until fixed: retained as an open-gate obstruction surface, not hierarchy-formula closure.
 - **auditor confidence:** high
 
 ### `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26`

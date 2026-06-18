@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_q_dred_normalization_freedom_no_go_note_2026-06-15"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
         "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "causal_field_reconciliation_note",
         "flavor_readout_gate_equals_carrier_identification_2026-05-31",
-        "koide_q_dred_normalization_freedom_no_go_note_2026-06-15"
+        "koide_q_dred_normalization_freedom_no_go_note_2026-06-15",
+        "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ef95989f8a973a6f0d09bf527085d883ee3e8cc0ecffcbc61b35501b511e9c28",
+      "note_hash": "2cbd434e33dca44c14bd49b461dc36d0e3633d5b8b99ced24815dc8b4fee8fe3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

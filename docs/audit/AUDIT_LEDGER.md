@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 219 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 989 |
+| **retained_bounded** | 990 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
-| unaudited | 1454 |
+| unaudited | 1453 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1434 |
+| `audited_clean` | 1435 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1776 |
+| `unaudited` | 1775 |
 
 | claim_type | count |
 |---|---:|
@@ -887,6 +887,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_dense_window_extension_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_l2_numpy_h0125_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_l2_numpy_h0125_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lattice_3d_nyquist_diffraction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_tapered_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lattice_complementarity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -12969,6 +12970,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The current fixed-family artifact chain supports a completed h=0.125 row, machine-clean Born/k=0 behavior, TOWARD bridge sign, and F~M remaining about 0.50 rather than 1.00.  _(class `C`)_
 - **chain closes:** True — The primary bridge cache completes the four-row fixed-family replay through h=0.125 and the focused single-row log independently supports the decisive h=0.125 row. The audited scope is only the bounded finite evidence and explicit non-Newtonian limitation, not a continuum-limit or Newtonian bridge theorem.
 - **rationale:** The runner instantiates the dense 3D fixed-family lattice replay rather than printing the target conclusion, and the completed cache supports the source note's safe read: Born/k=0 remain clean, the retained-family sign is TOWARD at h=0.5, h=0.25, and h=0.125, and F~M stays about 0.50. The small difference between the focused single-row Born residue and the current bridge-cache residue is immaterial to the scoped claim because both are machine-clean and the exact residue is not used as a physical prediction. Residual risk is limited to the stated bounded finite family; no continuum or Newtonian closure is audited here.
+- **auditor confidence:** high
+
+### `lattice_3d_nyquist_diffraction_note`
+
+- **Note:** [`LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md`](../../docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite ordered-lattice valley-linear probe showing that, for h=0.5 and h=0.25 at strengths 1e-4 and 1e-2, the first positive-to-negative gravity-side centroid-shift flip occurs near pi/h and scales with the lattice spacing.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-lattice_3d_nyquist_diffraction_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The first gravity sign flip tracks the lattice Nyquist scale, stays field-independent to the tested order of magnitude, and moves with h rather than staying at a fixed continuum scale.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the lattice, field, slit geometry, propagates amplitudes, scans k, computes centroid shifts, and interpolates the first sign flip without hard-coding the reported flip values. The cited retained_bounded authority supplies the finite valley-linear lattice family context, and no open external comparator or continuum bridge is needed for this bounded lattice-artifact claim.
+- **rationale:** The runner source and helper source implement the load-bearing computation directly from the finite lattice propagator, action, kernel, field, and detector geometry, then compare the computed flips to pi/h. The stdout values match the source note: both spacings show the first positive-to-negative flip near the corresponding Nyquist scale, and the flip scale roughly doubles when h halves. The clean result is bounded to the stated finite scan and does not establish a continuum theorem or exact aliasing proof.
 - **auditor confidence:** high
 
 ### `lattice_3d_tapered_refinement_note`

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 976 |
+| **retained_bounded** | 977 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1488 |
+| unaudited | 1487 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1415 |
+| `audited_clean` | 1416 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1810 |
+| `unaudited` | 1809 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 895 |
-| `leaf` | 1417 |
+| `medium` | 894 |
+| `leaf` | 1418 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -444,6 +444,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
@@ -6292,6 +6293,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The retained-bounded weak-field bridge supplies rho_psi(x)=|psi(x)|^2 and the same-source weak-field coupling form, so the normalized EP source integral integral m|psi(x)|^2 dx = m has bounded framework-native support.  _(class `A`)_
 - **chain closes:** True — The chain closes for the scoped EP-S3a claim because the cited retained-bounded authority supplies the Born-density readout and weak-field source/test coupling, and normalization gives the coefficient integral. The continuous action, inertial rest-gap readout, and inertial/gravitational coefficient identity remain open but are explicitly outside this claim.
 - **rationale:** Within the stated boundary, the note does not claim WEP closure or a shared inertial/gravitational coefficient derivation. The retained-bounded cited bridge supplies the needed |psi|^2 source-readout and weak-field coupling surface, and the added normalization is straightforward algebra over that input. The runner mostly verifies note/dependency text plus algebraic Gaussian normalization and residual lambda scaling; it does not pretend to compute a first-principles EP closure. No external comparator, tuned numerical scale, or hidden promotion is needed for EP-S3a as scoped.
+- **auditor confidence:** high
+
+### `epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12`
+
+- **Note:** [`EPSSTAR_COEFFICIENT_RICHARDSON_MOFF0_BOUNDED_NOTE_2026-06-12.md`](../../docs/EPSSTAR_COEFFICIENT_RICHARDSON_MOFF0_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Harper/PT one-particle computation for Q=24, Ly=2, N=48, GL=20, branch bracket [1.2,2.4], fixed etas {0.08,0.04,0.02,0.01}, at m=0 and m=0.2 only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner separately computes the fixed-eta PT response fit chi(mu0,eta)/eta^2 = a + b eta^2 and the finite-T mu*(T)^2 root-locus slope, then compares the extrapolated alpha and m=0.2 kernel split against the stated gaps and sign-flip inequalities.  _(class `C`)_
+- **chain closes:** True — The included runner constructs the finite Harper/PT matrices, diagonalizes the GL grid, computes the T=0 branch, eta-sequence Richardson fit, finite-T root-locus slope, and m=0.2 split directly. The frozen constants are used as post-computation gates rather than as inputs to the extrapolant or slope calculation.
+- **rationale:** The source and runner agree on the bounded finite-cell scope, and the runner performs the load-bearing computations rather than printing or importing the contested values. The eta^2 fit arithmetic, residual bound, gap comparison, and sign inequalities are internally consistent with the packet values. No cited authority or unclosed primitive is needed for the restricted finite-cell statement, and the note explicitly avoids continuum, full-surface, or gauge-self-energy claims.
 - **auditor confidence:** high
 
 ### `equivalence_principle_harness_note`

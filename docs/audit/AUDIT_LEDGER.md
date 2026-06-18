@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 961 |
+| **retained_bounded** | 962 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1530 |
+| unaudited | 1529 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1396 |
+| `audited_clean` | 1397 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1852 |
+| `unaudited` | 1851 |
 
 | claim_type | count |
 |---|---:|
@@ -458,6 +458,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_radial_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_repaired_positive_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fine_h_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `finite_rank_source_to_metric_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -6340,6 +6341,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The fine-H lensing slope is portable across three DAG families within the -1.38 to -1.43 band, with a possible residual Fam2/Fam3 offset (t=2.37) that needs more seeds to resolve.  _(class `C`)_
 - **chain closes:** True — The source note has no upstream dependencies, and the registered runner cache now replays the full 3-family x 5-seed finite computation with the same slopes, family summaries, and pairwise t-statistics. The audited scope is the bounded finite replay only, not geometry-independence or an independent eikonal-baseline derivation.
 - **rationale:** The runner constructs the three fixed drift/restore DAG families, evaluates seeds 0-4 at H=0.25 and b in {3,4,5,6}, computes the Kubo readout, fits the per-seed and seed-mean power laws, and emits the same family means, grand mean, population sigma, and Fam2-vs-Fam3 t-statistic reported in the note. The note's retained boundary is explicitly three-family portability with a borderline residual family offset, not universality or kernel-independence. Within that bounded finite scope there is no hidden dependency, stale number, timeout, or imported comparator needed for closure.
+- **auditor confidence:** high
+
+### `finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13`
+
+- **Note:** [`FINITE_CELL_TWO_BAND_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md`](../../docs/FINITE_CELL_TWO_BAND_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed supplied free staggered two-band Harper cell Q=24, Ly=2, t=1, mu=1.7086, T=0.2, with the implemented finite-cell Peierls B^2 perturbation; the audited claim is equality of the finite momentum closed form and direct finite real-space Harper perturbation, not a continuum-Moyal theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Peierls variations are the exact finite Fourier sums X_nm and X2_nm inserted into the finite-dimensional divided-difference formula, giving the same B^2 response as the direct real-space Harper perturbation calculation on the fixed cell.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the closed-form block calculation from explicit finite Fourier sums and separately constructs real-space Harper H0,H1,H2 perturbation matrices, with no hard-coded response constants. The completed cache shows agreement to 1e-10, a B-halving finite-difference discriminator, nonzero massive interband terms, and the Moyal comparator is explicitly non-load-bearing.
+- **rationale:** The bounded finite-cell theorem closes within the supplied model and fixed parameters: the load-bearing response is computed from the finite Hamiltonian and Peierls perturbation rather than imported from another note or fitted to stored expected values. The direct real-space perturbation path is an independent implementation of the same finite object, and the finite-difference check tests the B^2 response behavior. The continuum-Moyal material is scoped as a bounded comparator and residual, so it does not broaden the audited conclusion.
 - **auditor confidence:** high
 
 ### `finite_rank_gravity_residual_helper_note_2026-04-14`

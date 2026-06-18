@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 215 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 931 |
+| **retained_bounded** | 932 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1604 |
+| unaudited | 1603 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 10 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1345 |
+| `audited_clean` | 1346 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1926 |
+| `unaudited` | 1925 |
 
 | claim_type | count |
 |---|---:|
@@ -1343,6 +1343,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `theta_multi_plaquette_cross_plane_absence_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18719,6 +18720,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using the current bright tensor coefficients from the current tensor-boundary-drive pipeline, the runner fixes an affine law from the two exact A1 support endpoints and tests it on intermediate canonical A1 backgrounds, the exact local O_h A1 baseline, and the finite-rank A1 baseline.  _(class `C`)_
 - **chain closes:** True — Within the bounded scope, the cached runner completes and directly computes the support Green-matrix endpoint equality, the delta_A1(r) formula residuals, and the affine tensor-law residuals. The note explicitly leaves the exact tensor observable, exact endpoint coefficients, restricted tensor completion theorem, and nonlinear GR outside the closed claim.
 - **rationale:** The exact support-side portion is not just a symbol rename: the runner constructs the support potential and verifies the endpoint arm equality, center-excess size 1/6, and delta_A1(r)=1/(6(1+sqrt(6)r)) at machine precision. The bounded tensor portion is also scoped conservatively: it claims only that the current runner-computed bright tensor coefficients are nearly affine in this exact support scalar on the sampled canonical family and two baselines, with completed cached output showing all five checks pass. The note does not overclaim derivation of the tensor observable or endpoint coefficients, and those gaps are explicitly excluded from the closed scope.
+- **auditor confidence:** medium
+
+### `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`
+
+- **Note:** [`TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md`](../../docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded helper-module audit of the explicit vector-shift, traceless-shear, and mixed metric probe construction and finite-difference Einstein-residual reporting on the supplied scalar bridge inputs.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-tensorial_einstein_regge_completion_probe_helper_note_2026-04-14-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each vector-shift, traceless-shear, and mixed probe, the helper computes the 3+1 Einstein tensor on the perturbed metric and reports the active G_{0i}, traceless G_{ij}, and combined residual channels while the scalar Schur action is unchanged.  _(class `C`)_
+- **chain closes:** True — The supplied runner source constructs the three probe families, evaluates the metric-dependent Einstein tensor by finite differences, and derives the reported residual activations rather than printing fixed PASS constants. The closure is only for these explicit probes and sampled finite-difference residuals, not for a downstream universal tensorial Einstein/Regge theorem.
+- **rationale:** The claim is a bounded helper claim, and within that scope the code path is inspectable: scalar-action invariance follows because the Schur boundary action is evaluated only on the unchanged scalar phi grid, while the vector, tensor, and mixed channels are computed from perturbed ADM metrics. The one-hop cited authorities are retained_bounded, and the primary runner cache matches the runner source's computed PASS conditions. This does not ratify any broader no-go or full GR closure beyond the explicit probe surface.
 - **auditor confidence:** medium
 
 ### `testable_predictions_map_note`

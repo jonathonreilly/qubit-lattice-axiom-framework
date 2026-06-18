@@ -52234,11 +52234,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17"
+      "to": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14"
     },
     {
       "from": "repo.front_door_status",
-      "to": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14"
+      "to": "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17"
     },
     {
       "from": "repo.front_door_status",
@@ -100630,8 +100630,8 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
+        "gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
@@ -100639,7 +100639,7 @@
         "yt_ew_m_residual_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "15baa5f30a0851b9e6a303e31babf48653fe340ae56a564b5c2a338ce44fe6cd",
+      "note_hash": "a1201a5ddc35694f04d9992630d5370936377bc2c2288685773e2cd6057f97b3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

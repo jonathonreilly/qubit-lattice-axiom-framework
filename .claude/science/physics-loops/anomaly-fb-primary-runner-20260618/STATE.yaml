@@ -1,0 +1,26 @@
+loop_slug: anomaly-fb-primary-runner-20260618
+goal: "Unblock anomaly_forces_time_fb_note_2026-05-17 by registering and refreshing its primary runner/cache on source files only."
+target_status: "audit-unblock tooling; no audit verdict"
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: runner_certificate
+active_route: "source-boundary primary-runner registration"
+base: origin/main@05b027c0b
+files_touched:
+  - docs/ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md
+  - scripts/frontier_anomaly_forces_time_fb_framing_fix.py
+  - logs/runner-cache/frontier_anomaly_forces_time_fb_framing_fix.txt
+  - .claude/science/physics-loops/anomaly-fb-primary-runner-20260618/
+open_imports:
+  - "P-ABJ remains external in the parent theorem."
+  - "P-HY, P-COMP, P-REC, and B-AXIS remain declared boundaries in the parent theorem."
+  - "This block does not derive B-AXIS or change the parent theorem's bounded status."
+no_go_routes:
+  - "Do not restore the superseded single-clock Step-4 wording; current mainline uses local B-AXIS."
+  - "Do not add audit results, ledger tags, or status-board updates."
+trace_gate_classification: direct_blocker_closure
+review_findings: "local source-boundary review passed; independent reviewer still required"
+pr_status: "ready to open"
+next_exact_action: "Open review PR, then pivot to higher-impact science targets: YT neutral Higgs carrier, registrable readout, hierarchy alpha_s attachment-observable."
+stop_condition: "Stop this block after PR creation; campaign should continue from opportunity queue."

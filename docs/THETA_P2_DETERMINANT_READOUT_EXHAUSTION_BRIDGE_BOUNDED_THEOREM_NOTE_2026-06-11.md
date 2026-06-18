@@ -3,12 +3,14 @@
 **Date:** 2026-06-11 (supplied-boundary repair 2026-06-15)
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
+**Status:** conditional-support; supplied-context algebra only, not a
+physical theta_eff or action-level readout bridge.
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
 **Primary runner:**
 [`scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py`](../scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py)
-(TOTAL: PASS=40 FAIL=0; cached:
+(TOTAL: PASS=41 FAIL=0; cached:
 [`logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt`](../logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt))
 
 ---
@@ -31,6 +33,23 @@ phase. It does **not** derive the physical W2 identification or the
 action-level reduction from the framework. The word "exhaust" below is used
 only in the audit lane's own technical sense — a proved factorization statement
 about a constrained readout class — never as a claim about a search space.
+
+## 2026-06-18 Supplied-Context Scope Firewall
+
+This row takes the audit fallback path: it is scoped as supplied-context
+algebra only. The citable conclusion is restricted to the supplied determinant
+datum context, the supplied W2 registrability premise, and the supplied
+Gaussian/per-plaquette action class named below.
+
+It does not derive W2 physical registrability. It does not derive the physical
+theta_eff mass-orientation datum or prove that the framework action reduces
+that datum to `arg det(M_u M_d)`. It does not exclude physical
+non-registrable, multi-plaquette, source-insertion, gauge-side, or
+beyond-supplied-class action-level data. Downstream physical strong-CP use must
+carry a separate W2/action-level theorem or remain explicitly conditional.
+
+No new axiom, Tier-A admission, audit verdict, ledger tag, or publication
+status is introduced by this firewall.
 
 ## 2026-06-15 Supplied-Boundary Repair
 

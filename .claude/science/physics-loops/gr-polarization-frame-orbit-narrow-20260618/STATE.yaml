@@ -1,0 +1,22 @@
+loop_slug: gr-polarization-frame-orbit-narrow-20260618
+goal: "Narrow the universal GR polarization-frame source packet to the exact finite frame-orbit support result checked by its runner."
+target_status: bounded-support
+mode: source_repair
+cycle_count: 1
+active_route: finite_frame_orbit_scope_repair
+hard_residual: "No covariant full polarization-frame bundle, projector bundle, connection, horizontal distribution, or Pi_curv theorem is supplied."
+files_touched:
+  - docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md
+  - scripts/frontier_universal_gr_polarization_frame_bundle.py
+  - logs/runner-cache/frontier_universal_gr_polarization_frame_bundle.txt
+  - .claude/science/physics-loops/gr-polarization-frame-orbit-narrow-20260618/
+open_imports:
+  - "Full curvature-localization operator Pi_curv remains open."
+  - "Full GR/Einstein-Regge dynamics law remains open."
+  - "Exhaustive no-go over all covariant projector-bundle constructions remains open."
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Commit, push, open a ready review PR, then continue to the next source-side unlock candidate without rebasing older PRs."
+stop_condition: "Stop only after PR handoff or after refreshed queue scan has no source-side repair route left."

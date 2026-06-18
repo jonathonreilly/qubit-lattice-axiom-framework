@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 265,
-    "leaf": 523,
+    "leaf": 522,
     "medium": 413
   },
   "cycle_break_target_count": 8,
@@ -17455,31 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "plaquette_v1_picard_fuchs_ode_note_2026-05-05"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_beta6_multicube_resummation_relocation.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17582,6 +17557,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/causal_impact_parameter_probe.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "causal_source_placement_robustness_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "default_positive_theorem",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "causal_propagating_field_live_packet_note_2026-06-05",
+        "causal_field_reconciliation_note",
+        "causal_field_portability_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/evolving_network_prototype_v6.py"
+      ],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/causal_source_placement_robustness.py",
       "transitive_descendants": 15
     },
     {
@@ -30282,34 +30285,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "causal_source_placement_robustness_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "causal_propagating_field_live_packet_note_2026-06-05",
-        "causal_field_reconciliation_note",
-        "causal_field_portability_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/evolving_network_prototype_v6.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/causal_source_placement_robustness.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45461,6 +45436,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 92,
-  "total_pending": 1508
+  "ready_count": 91,
+  "total_pending": 1507
 }

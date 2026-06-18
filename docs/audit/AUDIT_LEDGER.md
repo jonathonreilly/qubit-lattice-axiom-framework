@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 215 |
 | **retained_bounded** | 967 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 29 |
-| unaudited | 1506 |
+| open_gate | 30 |
+| unaudited | 1505 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1404 |
+| `audited_clean` | 1405 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1828 |
+| `unaudited` | 1827 |
 
 | claim_type | count |
 |---|---:|
@@ -205,6 +205,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beta6_plaquette_connected_beta6_coefficient_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_plaquette_d7_coefficient_and_tadpole_verdict_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta_eff_two_witness_refresh_assessment_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2737,6 +2738,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cited upstream authority is retained_bounded and supplies the d_5/d_6 anchors plus the size-6/7 support reduction. The provided runner wrapper delegates to source code that constructs exact SU(3) Haar projectors, exact moments/cumulants, and Fraction-arithmetic cube-shell multiplicity sums; the ansatz falsification then follows by direct rational arithmetic.
 - **rationale:** The load-bearing coefficient is not merely printed: the helper source computes it from framework primitives via exact invariant-projector link integrals, set-partition cumulants, GF(3) support filtering, and optimized Fraction contraction, then compares the computed rational to the displayed value. Independent arithmetic checks confirm the displayed per-shell aggregation, ratios, prediction 49/68024448, and relative misses 29/49 and 29/20. The Monte Carlo checks are non-load-bearing validation only, and no external comparator or beta=6 closure is imported.
 - **auditor confidence:** medium
+
+### `beta6_plaquette_multicube_resummation_relocation_note_2026-05-31`
+
+- **Note:** [`BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md`](../../docs/BETA6_PLAQUETTE_MULTICUBE_RESUMMATION_RELOCATION_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the bounded open-gate packet of local symbolic checks for the beta=6 plaquette multi-cube resummation lane, excluding the full order-beta^9 48-support classification and the order-beta^10 marked-face sector weight.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-beta6_plaquette_multicube_resummation_relocation_note_2026-05-31-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner actually recomputes only the local packet: K=log J cumulants through kappa_5, Euler closed-surface weights 18^{1-F} for F=6 and F=10, the SU(3) epsilon/baryon singlet in 3x3x3, and finite J-truncation root migration, while leaving the beta9/beta10 sector classifications open.  _(class `A`)_
+- **chain closes:** True — The restricted claim closes because the note confines downstream use to finite algebraic checks and runner-backed truncation evidence, and explicitly firewalls the unproved beta9/beta10 classifications. The retained and retained_bounded cited authorities are used only within their finite/local scope.
+- **rationale:** The source note does not promote the PR-local engine probes or the full relocation theorem; it lands only the local K=log J cumulant core, Euler normalization anchors, SU(3) epsilon-channel existence, and finite truncation-root evidence. The cumulant and Euler identities check algebraically from the displayed recurrence/ODE data, the SU(3) singlet statement is the standard wedge^3 fundamental identity, and an independent root calculation reproduces the listed migration values. Residual risk is correctly isolated as future finite-sector classification work rather than smuggled into the conclusion.
+- **auditor confidence:** high
 
 ### `beta6_resummation_radius_growth_rate_bounded_note_2026-05-30`
 

@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 214 |
 | **retained_bounded** | 949 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 21 |
-| unaudited | 1559 |
+| open_gate | 22 |
+| unaudited | 1558 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 15 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1375 |
+| `audited_clean` | 1376 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1881 |
+| `unaudited` | 1880 |
 
 | claim_type | count |
 |---|---:|
@@ -1505,6 +1505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -21283,6 +21284,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** Localizing the exact vector symmetry of the staggered Q_L action emits the symmetric point-split current and equating the variation with the projector commutator gives sum_mu[J_mu(x)-J_mu(x-mu)]=[E_x,M], while the unit-normalized U(2)_iso x SU(3)_color singlet gives the H_unit matrix element 1/sqrt(6).  _(class `A`)_
 - **chain closes:** True — The source packet closes the Ward identity on the declared B1 action surface by finite-dimensional Noether/Schwinger-Dyson algebra, with runner checks that construct M, J, G, exact rational certificates, and falsification legs rather than merely printing the result. The T1 corollary is likewise an exact normalization and Schur/commutant calculation for the defined H_unit operator, not a physical Yukawa readout or tadpole-transport claim. Class A is the better load-bearing classification because the theorem is algebraic closure over the admitted staggered-action surface, not a first-principles derivation of that surface from the minimal axioms.
 - **rationale:** The source packet closes the Ward identity on the declared B1 action surface by finite-dimensional Noether/Schwinger-Dyson algebra, with runner checks that construct M, J, G, exact rational certificates, and falsification legs rather than merely printing the result. The T1 corollary is likewise an exact normalization and Schur/commutant calculation for the defined H_unit operator, not a physical Yukawa readout or tadpole-transport claim. Class A is the better load-bearing classification because the theorem is algebraic closure over the admitted staggered-action surface, not a first-principles derivation of that surface from the minimal axioms.
+- **auditor confidence:** high
+
+### `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Coefficient-bookkeeping diagnostic showing that the retained Rep A and Rep B scalar-singlet coefficients reduce to the gate equation, with the same-1PI bridge explicitly left open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The residual C_A - C_B = (N_iso * c_S * g_bare^2 - 2) / (2 N_c N_iso), so C_A = C_B iff c_S * g_bare^2 = 2 / N_iso.  _(class `A`)_
+- **chain closes:** True — For the scoped open-gate diagnostic, the algebra from the stated coefficients to the residual and canonical g_bare^2 = 1 surface closes. The Wick-level proof that Rep A and Rep B are the same amputated 1PI Green's function is correctly identified as missing and is not claimed.
+- **rationale:** The load-bearing step is an exact symbolic simplification over the stated coefficient inputs, not a numerical fit or comparator check. The runner verifies the residual, canonical reduction, off-surface counterexample, SU(3) Fierz identity, and H_unit normalization, while not asserting the contested same-1PI equality. Because the note is scoped as an open-gate diagnostic and forbids downstream promotion to a same-1PI or top-Yukawa theorem, the audited conclusion follows within its boundary.
 - **auditor confidence:** high
 
 ### `yt_zero_import_chain_note`

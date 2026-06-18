@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
         "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
         "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
         "distance_law_definitive_note",
         "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
         "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
-        "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
+        "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
+        "gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fd7c5dc598f22d04d7984fdd2f73b382c5559e61b1c1a82f343b4720cc01cd86",
+      "note_hash": "6fa700e2e72b84120b57eda74b9e1c399eff3181f475437cc46bec1e94bc6c18",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

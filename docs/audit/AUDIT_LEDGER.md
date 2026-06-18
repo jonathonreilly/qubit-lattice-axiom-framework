@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1626 |
+| unaudited | 1625 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
-| ~~audited_renaming~~ | 6 |
+| ~~audited_renaming~~ | 7 |
 | ~~audited_conditional~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -64,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
-| `audited_renaming` | 6 |
-| `unaudited` | 1948 |
+| `audited_renaming` | 7 |
+| `unaudited` | 1947 |
 
 | claim_type | count |
 |---|---:|
@@ -1562,6 +1562,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
@@ -16303,6 +16304,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The staggered parity grading anticommutes with every nearest-neighbor pure-staggered closed-background Hamiltonian, while diagonalizing the explicit Wilson-mass holonomy cylinder gives localized edge sectors whose eta_delta labels follow theta and are opposite on the two boundaries.  _(class `C`)_
 - **chain closes:** True — W0 closes algebraically because every nonzero pure-staggered nearest-neighbor matrix element flips the even-torus parity grading, forcing ± spectral pairing and eta_delta=0. W1/W2/W3 close within the stated Wilson-mass model class: the runner constructs and diagonalizes the Hamiltonians rather than importing constants, and an independent full real-space Hamiltonian check reproduces the edge-label table and trivial-window control.
 - **rationale:** The cited minimal-axiom authority is an accepted premise and the one-hop APS scoping authority is retained_bounded, which is retained-grade under the rubric. The load-bearing Wilson result is not a definition, renaming, external comparator, or tuned numerical match: it computes spectra and edge weights from the displayed finite matrices. The note also keeps the framework-native Wilson-mass derivation, 3D lift, superselection, and source action outside scope, so the clean verdict applies only to the bounded model-theorem stated above.
+- **auditor confidence:** high
+
+### `single_axiom_hilbert_note`
+
+- **Note:** [`SINGLE_AXIOM_HILBERT_NOTE.md`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under stipulated local dimension, local Hermitian Hamiltonian, Born readout, and support-equals-edges extraction rule, the runner mechanically checks graph recovery, Born-rule I_3 = 0, unitary-vs-Lindblad behavior, and a tensor-product locality toy comparison.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-single_axiom_hilbert_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Packaging the four admitted inputs together gives the phrase "a finite Hilbert space with local tensor product structure"; the runner then evaluates the four consequences under that package.  _(class `E`)_
+- **chain closes:** True — The narrowed operational chain closes after the four inputs are stipulated: the code builds those structures and performs mechanical checks. It does not close as a first-principles derivation of those structures from bare tensor-product Hilbert space.
+- **rationale:** Issue: the runner constructs local Hamiltonians, Born probabilities, and support extraction, then repackages those stipulated structures as the single local tensor-product Hilbert-space surface. Why this blocks: none of the cited authorities or code derives the local Hermitian H, locality restriction, Born p=2 readout, or support-equals-edges rule from the bare tensor-product Hilbert space. Repair target: derive those inputs from a strictly smaller retained framework surface and repair the Test 4 source/runner drift. Claim boundary until fixed: the note supports only the definitional-compression/bounded operational consequences under the admitted package.
 - **auditor confidence:** high
 
 ### `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`

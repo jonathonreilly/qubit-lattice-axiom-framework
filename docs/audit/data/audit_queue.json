@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 304,
-    "high": 281,
+    "high": 280,
     "leaf": 569,
     "medium": 474
   },
@@ -8860,32 +8860,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "single_axiom_hilbert_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "minimal_axioms_2026-04-11",
-        "minimal_axioms_2026-05-03"
-      ],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.392,
-      "note_path": "docs/SINGLE_AXIOM_HILBERT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_single_axiom_hilbert.py",
-      "transitive_descendants": 83
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "restricted_strong_field_closure_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -9025,15 +8999,15 @@
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
       ],
-      "direct_in_degree": 8,
+      "direct_in_degree": 9,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.907,
+      "load_bearing_score": 9.407,
       "note_path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",
-      "transitive_descendants": 14
+      "transitive_descendants": 29
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -48679,6 +48653,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 163,
-  "total_pending": 1628
+  "ready_count": 162,
+  "total_pending": 1627
 }

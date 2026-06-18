@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1614 |
+| Applied audit verdicts | 1615 |
 | Retained-grade rows, including boxed decorations | 1485 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 993 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 35 |
-| Unaudited rows | 1443 |
+| Unaudited rows | 1442 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 57 |
-| Audited renaming rows | 23 |
+| Audited renaming rows | 24 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 7 |
 
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1445 |
-| Ready rows | 29 |
+| Total pending rows | 1444 |
+| Ready rows | 28 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 460 |
+| Leaf pending | 459 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`post_record_production_dynamics_needed_row_map_2026-06-06`](../../docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md) - medium; unaudited
 - [`post_record_selector_tangent_readout_weight_prototype_2026-06-06`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`qnm_hardening_feasibility_note`](../../docs/QNM_HARDENING_FEASIBILITY_NOTE.md) - medium; unaudited
 - [`qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22`](../../docs/QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
+- [`record_markov_generator_premise_classifier_2026-06-06`](../../docs/RECORD_MARKOV_GENERATOR_PREMISE_CLASSIFIER_2026-06-06.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`record_markov_generator_premise_classifier_2026-06-06`](../../docs/RECORD_MARKOV_GENERATOR_PREMISE_CLASSIFIER_2026-06-06.md) - leaf; unaudited
+- [`record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15`](../../docs/RECORD_POINTER_CONTROLLED_COUPLING_FINITE_EXAMPLE_BOUNDED_THEOREM_NOTE_2026-06-15.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

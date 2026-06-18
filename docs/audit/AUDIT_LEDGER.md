@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1443 |
+| unaudited | 1442 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 23 |
+| ~~audited_renaming~~ | 24 |
 | ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -71,17 +71,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 23 |
-| `unaudited` | 1765 |
+| `audited_renaming` | 24 |
+| `unaudited` | 1764 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1729 |
 | `decoration` | 59 |
-| `meta` | 327 |
+| `meta` | 328 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 756 |
+| `positive_theorem` | 755 |
 
 | criticality | count |
 |---|---:|
@@ -1749,6 +1749,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `post_record_production_dynamics_needed_row_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -16846,6 +16847,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A supplied finite pre-record word law is pushed forward through the supplied monotone record-writing update, and the supplied overlap kernel gives a law-scoped expected overlap certificate.  _(class `A`)_
 - **chain closes:** True — The scoped finite construction closes by direct enumeration from the supplied definitions. Independently, the law sums to 1, the four words push forward to the four stated records, the kernel is symmetric/self-normalized/bounded, and the expected overlap is 169/320.
 - **rationale:** The audited claim is not a derivation of a production law, Born law, physical arrow, or dial selection; it is a finite supplied-bridge construction with those exclusions stated in the note and reflected in the runner. The load-bearing math is exact finite enumeration over supplied inputs, not a tuned numerical comparator or a symbol renaming. An independent calculation of the displayed probabilities and kernel expectation matches the runner's 169/320 result.
+- **auditor confidence:** high
+
+### `post_record_production_dynamics_needed_row_map_2026-06-06`
+
+- **Note:** [`POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md`](../../docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Read-only audit-companion taxonomy: six current `production_dynamics_needed` rows are mapped into three lanes with bridge-import lists and firewalls against deriving dynamics or promoting rows.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-post_record_production_dynamics_needed_row_map_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note hard-codes a table mapping the six current `production_dynamics_needed` rows into three lanes and lists the supplied bridge imports still needed for each lane.  _(class `E`)_
+- **chain closes:** True — Under the narrowed meta scope, the explicit table/ROW_MAP and runner checks support that the six rows are mapped and that no dynamics claim is made. The chain does not close as a positive theorem because the lane and bridge classes are stipulated rather than derived.
+- **rationale:** Issue: the load-bearing map is a hard-coded ROW_MAP/table, and the note explicitly says the production-dynamics import classes are not derived from Record or retained physics primitives. Why this blocks: the runner verifies anchor text, finite counts, and firewall flags, but it cannot turn the taxonomy into a retained production-dynamics theorem. Repair target: derive or cite retained bridge theorems for the lane and bridge assignments if the desired claim is theorem status rather than a read-only audit map. Claim boundary until fixed: the source supports only a meta/read-only map of six current rows to bridge-import classes.
 - **auditor confidence:** high
 
 ### `post_record_retained_unbounded_dynamics_gate_2026-06-06`

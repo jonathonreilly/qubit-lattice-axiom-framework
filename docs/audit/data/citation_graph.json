@@ -52234,11 +52234,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19"
+      "to": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03"
     },
     {
       "from": "repo.front_door_status",
-      "to": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03"
+      "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19"
     },
     {
       "from": "repo.front_door_status",
@@ -52254,11 +52254,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "newton_derivation_top4_bridge_note"
+      "to": "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05"
     },
     {
       "from": "repo.front_door_status",
-      "to": "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05"
+      "to": "newton_derivation_top4_bridge_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19",
         "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
+        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19",
         "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
         "yt_ew_m_residual_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
-        "newton_derivation_top4_bridge_note",
-        "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05"
+        "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
+        "newton_derivation_top4_bridge_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2efa138b6eee6a2ef2c4ee054c1d1b94cedc0fd8b3d76ed87cf422c6be132f3a",
+      "note_hash": "2b54c0734aceff463fc5d89b7a23d736fac6f8c466f24fd9a3ff1c442a878ed4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

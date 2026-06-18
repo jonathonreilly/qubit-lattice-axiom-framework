@@ -476,10 +476,10 @@
           "transitive_descendants": null
         },
         {
-          "audit_status": "unaudited",
+          "audit_status": "audited_renaming",
           "claim_id": "ai_methodology.raw.canonical_framing_paragraph",
-          "claim_type": "positive_theorem",
-          "effective_status": "unaudited",
+          "claim_type": "meta",
+          "effective_status": "audited_renaming",
           "note_path": "docs/ai_methodology/raw/canonical_framing_paragraph.md",
           "title": "Canonical Methodology Framing Paragraph",
           "transitive_descendants": 14

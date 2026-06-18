@@ -1,0 +1,23 @@
+loop_slug: g2v-su2-u0-native-20260618
+goal: "Retire the row-local literature u0 interval import in the g_2(v) bounded interval row by supplying native SU(2) beta=16 one-plaquette support."
+target_status: bounded-support
+mode: source-side_unlock_pr
+cycle_count: 1
+active_route: native_su2_beta16_one_plaquette_class_angle_integral
+hard_residual: "Whether one-plaquette beta=16 support is enough for the broader EW parent lane remains for reviewer/auditor judgment; this block only closes the row-local interval import."
+files_touched:
+  - docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md
+  - docs/SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+  - scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
+  - scripts/su2_u0_single_plaquette_beta16_native_interval_2026_06_18.py
+  - logs/runner-cache/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.txt
+  - logs/runner-cache/su2_u0_single_plaquette_beta16_native_interval_2026_06_18.txt
+open_imports:
+  - "Full thermodynamic SU(2) gauge-field continuum/non-perturbative matching is not derived by this block."
+retired_imports:
+  - "Row-local literature numerical interval for u0(SU2) in [0.96, 0.98]."
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Run verification checks, commit, push, and open a ready PR."
+stop_condition: "PR opened or GitHub delivery failure recorded in PR_BACKLOG.md."

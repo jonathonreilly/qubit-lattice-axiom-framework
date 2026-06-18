@@ -8,6 +8,15 @@ pipeline-derived.
 **Source-note proposal disclaimer:** this note is a source-note proposal;
 audit verdict and downstream status are set only by the independent
 audit lane.
+**Actual current-surface status:** conditional-support. The finite
+orbit-counting, Fourier, and no-proper-quotient algebra closes on the
+explicit supplied `Z^3`/`C_3[111]` substrate surface; this note does not
+derive retained-grade authority that `Z^3` is the physical substrate.
+**Trace class:** upstream_support
+**Reachability to target:** supports
+**Proposal allowed:** false
+**Bare retained allowed:** false
+**Audit required before effective retained:** true
 
 **Primary runner:** [`scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py`](../scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py)
 **Cached output:** [`logs/runner-cache/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.txt`](../logs/runner-cache/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.txt)
@@ -22,17 +31,19 @@ gravitational-`U(1)`) are all **linear** in `n_gen`: they take the form
 `n_gen` that satisfies the per-generation cancellation also satisfies the
 total cancellation.
 
-This probe asks the dual question:
+This probe asks the dual conditional question:
 
-> Does the framework's physical `Z^3` spatial substrate plus `C_3[111]`
-> structure force a three-element `hw=1` substrate carrier via
-> orbit-counting / character theory, even though anomaly cancellation
-> alone does not force a generation count?
+> Conditional on the supplied `Z^3` spatial-substrate surface plus
+> `C_3[111]` structure, does the finite orbit-counting / character-theory
+> packet force a three-element `hw=1` substrate carrier, even though
+> anomaly cancellation alone does not force a generation count?
 
 The current repo support relevant to this question provides:
 
-1. **Z^3 spatial substrate** (per `MINIMAL_AXIOMS_2026-05-03.md`): the framework
-   is discrete in lattice (3-dimensional spatial substrate) and time.
+1. **Supplied `Z^3` spatial-substrate premise** (per
+   `MINIMAL_AXIOMS_2026-05-03.md`): the restricted audit packet did not
+   provide retained-grade physical-substrate authority for this premise,
+   so this note uses it only as an explicit conditional input.
 2. **BZ-corner structure** (per
    [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)):
    `Z³` BZ corners are `{0, π}³`, partitioned by Hamming weight as
@@ -58,17 +69,36 @@ The current repo support relevant to this question provides:
    `C_3[111]` is fundamental and unbroken; species labels {electron,
    muon, tau} are convention.
 
-This probe assembles items (1)–(7) into a single bounded
-three-orbit substrate-cardinality claim. The chain is independent of
-anomaly cancellation.
+This probe assembles items (1)–(7) into a single conditional-support
+three-orbit substrate-cardinality claim. The closed chain is independent
+of anomaly cancellation after the `Z^3`/`C_3[111]` surface is supplied.
+
+### 0.1 Audit-scope repair (2026-06-18)
+
+The 2026-06-18 conditional audit identified the missing bridge:
+retained-grade or prompt-registered authority for the physical `Z^3`
+substrate premise. This note takes the source-side narrowing route. Its
+current claim is not that the framework physically forces `Z^3`, not that
+three SM generations are fully derived, and not that the physical
+species map is closed. The claim is the exact finite algebra:
+
+> Given the supplied `Z^3` BZ-corner surface and supplied `C_3[111]`
+> action on `H_{hw=1}`, the `hw=1` carrier has cardinality 3 and admits
+> no nonzero algebra-preserving quotient reducing that cardinality.
+
+Downstream citations must use the phrase **conditional
+substrate-cardinality algebra over supplied `Z^3`/`C_3[111]` premises**.
+They must not cite this note as retained physical-substrate authority, as
+an unconditional generation-count theorem, as a physical SM species
+identification, or as sector propagation to quarks/neutrinos.
 
 ## 1. Theorem (bounded substrate-cardinality claim)
 
-**Theorem (Z-Substrate-Generation-Z3; bounded substrate-cardinality
-claim).** On the framework's physical `Z^3` spatial substrate with the
+**Theorem (Z-Substrate-Generation-Z3; conditional substrate-cardinality
+claim).** Given the supplied `Z^3` spatial-substrate surface with the
 named `C_3[111]` action, the lightest non-trivial substrate carrier on
-`H_{hw=1}` has cardinality exactly 3, and this cardinality is
-substrate-forced within the cited support surface. Specifically:
+`H_{hw=1}` has cardinality exactly 3, and this cardinality is forced
+inside that supplied finite algebra surface. Specifically:
 
 1. **(`|C_3| = 3` by group order.)** The cyclic group `C_3 ≅ ℤ/3ℤ` has
    exactly 3 elements by definition. This is a group-theoretic
@@ -94,22 +124,23 @@ substrate-forced within the cited support surface. Specifically:
    `|H_{hw=1}|` below 3 while preserving the cited generation
    algebra.
 
-5. **(Substrate specificity.)** A counterfactual `Z^d × C_d` substrate
+5. **(Substrate specificity conditional on the supplied surface.)** A
+   counterfactual `Z^d × C_d` substrate
    would produce `|hw=1| = C(d, 1) = d` corners with a natural
    `C_d`-action of order `d`. The number 3 enters specifically because
-   the framework baseline is `Z^3` as physical spatial substrate
-   (lattice dimension `d = 3`,
-   per `MINIMAL_AXIOMS_2026-05-03.md`). The framework's lattice
-   dimension equals the cyclic-group order, and the BZ-corner
-   `hw = 1` count equals `C(d, 1) = d`.
+   the supplied substrate surface is `Z^3` (lattice dimension `d = 3`,
+   per `MINIMAL_AXIOMS_2026-05-03.md`). The supplied lattice dimension
+   equals the cyclic-group order, and the BZ-corner `hw = 1` count equals
+   `C(d, 1) = d`.
 
 Combining items (1)–(5):
 
-> The physical `Z^3` substrate plus `C_3[111]` support forces exactly
-> three elements in the lightest non-trivial `hw = 1` substrate carrier.
-> This forcing is structurally
-> distinct from SM anomaly cancellation (which is linear in `n_gen` and
-> admits any positive integer).
+> Conditional on the supplied `Z^3` substrate plus `C_3[111]` support,
+> the finite algebra forces exactly three elements in the lightest
+> non-trivial `hw = 1` substrate carrier. This conditional
+> substrate-cardinality algebra is structurally distinct from SM anomaly
+> cancellation (which is linear in `n_gen` and admits any positive
+> integer).
 
 The bounded qualifications are:
 
@@ -125,14 +156,15 @@ leptons, up-quarks, down-quarks, light neutrinos) is a separate sector
 argument not load-bearing in this probe.
 
 (c) the **physical-lattice premise** — that `Z³` is the physical
-substrate rather than an abstract auxiliary lattice — remains delegated
-to `PHYSICAL_LATTICE_NECESSITY_NOTE.md`.
+substrate rather than an abstract auxiliary lattice — is not derived
+here and remains delegated to `PHYSICAL_LATTICE_NECESSITY_NOTE.md` or a
+future retained/prompt-registered authority.
 
 ## 2. Inputs (current support only)
 
 | ID | Statement | Class |
 |---|---|---|
-| Z3 | `Z^3` spatial substrate (3-dim spatial discrete carrier) | repo baseline per `MINIMAL_AXIOMS_2026-05-03.md` |
+| Z3 | supplied `Z^3` spatial-substrate surface (3-dim spatial discrete carrier) | explicit conditional input per `MINIMAL_AXIOMS_2026-05-03.md`; physical-substrate authority not derived here |
 | BZ | BZ corners `{0,π}³` with `1+3+3+1` Hamming-weight partition | support from `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`, `THREE_GENERATION_STRUCTURE_NOTE.md` |
 | C3OP | `C_3[111]` cyclic operator on `H_{hw=1} ≅ ℂ³` | support from `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` |
 | FT | Fourier diagonalization with eigenvalues `{1, ω, ω²}` on `ℂ³` | support from `THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md` |
@@ -146,8 +178,8 @@ to `PHYSICAL_LATTICE_NECESSITY_NOTE.md`.
 - NO PDG observed mass values used as derivation input
 - NO lattice MC empirical measurements
 - NO fitted matching coefficients
-- NO new axioms beyond the physical `Z^3` spatial substrate and cited
-  `C_3[111]` support
+- NO new axioms. The `Z^3` physical-substrate reading is an explicit
+  conditional premise here, not a newly derived or newly admitted axiom.
 - Standard orbit-counting / group theory is admissible (mathematical only)
 
 ## 3. Derivation
@@ -265,18 +297,17 @@ A counterfactual `Z^d × C_d` substrate (for arbitrary lattice dimension
   the `d` standard basis directions
 - `|C_d| = d` orbit count
 
-The framework baseline is `Z^3` (lattice dimension `d = 3`) per
-`MINIMAL_AXIOMS_2026-05-03.md`. Therefore the framework's
-substrate-internal numbers are forced to:
+On the supplied `Z^3` surface (lattice dimension `d = 3`) per
+`MINIMAL_AXIOMS_2026-05-03.md`, the substrate-internal numbers are:
 
 - `|hw = 1| = 3`
 - `|C_3| = 3`
 - single regular orbit of size 3
 
 The number 3 is **not** a generic claim about cyclic groups (`C_N`
-exists for all `N ≥ 1`). It is forced by the framework's specific
-choice of substrate dimension `d = 3`. The lattice dimension and the
-cyclic-group order MATCH because the natural `C_3[111]` action arises
+exists for all `N ≥ 1`). It follows inside the supplied surface from
+the substrate dimension `d = 3`. The lattice dimension and the
+cyclic-group order match because the natural `C_3[111]` action arises
 as the cyclic permutation of the `d = 3` standard basis directions of
 `Z³`.
 
@@ -289,26 +320,28 @@ The Standard Model has exactly 3 generations of:
 - down-type quarks: `{d, s, b}`
 - light neutrinos: `{ν_1, ν_2, ν_3}`
 
-The framework's substrate-forced cardinality (3) **matches** the SM's
+The supplied-surface substrate cardinality (3) **matches** the SM's
 observed generation cardinality (3) at the cardinality level only. This
 is a **cardinality-level cross-check**, not a substrate-to-species
-identification.
+identification or a proof that the supplied substrate is physical.
 
 Important: the SM's `n_gen = 3` is **observed**, not used as
-derivation input here. Steps 1–5 give substrate cardinality 3; the
-cross-check in Step 6 only notes that the observed value matches.
+derivation input here. Steps 1–5 give conditional substrate
+cardinality 3; the cross-check in Step 6 only notes that the observed
+value matches.
 
 ## 4. What this probe DOES claim
 
-1. The cardinality of the lightest non-trivial `hw = 1` substrate
-   carrier is exactly three under the physical `Z^3` spatial substrate
-   plus the named `C_3[111]` action, by combined orbit-counting +
-   no-proper-quotient.
-2. This forcing is **structurally distinct** from anomaly cancellation
-   (which is linear in `n_gen` and admits any positive integer).
-3. The number 3 is tied to the framework's physical `Z^3` substrate
-   dimension `d = 3`. A counterfactual `Z^d × C_d` substrate with
-   `d ≠ 3` would give a different `hw=1` substrate-cardinality.
+1. Conditional on the supplied `Z^3` spatial-substrate surface plus the
+   named `C_3[111]` action, the cardinality of the lightest non-trivial
+   `hw = 1` substrate carrier is exactly three by combined
+   orbit-counting + no-proper-quotient.
+2. This conditional algebra is **structurally distinct** from anomaly
+   cancellation (which is linear in `n_gen` and admits any positive
+   integer).
+3. The number 3 is tied to the supplied `Z^3` substrate dimension
+   `d = 3`. A counterfactual `Z^d × C_d` substrate with `d ≠ 3` would
+   give a different `hw=1` substrate-cardinality.
 4. At the cardinality level, this substrate count matches the
    observed SM generation count. That is a comparator, not an
    identification.
@@ -328,8 +361,9 @@ cross-check in Step 6 only notes that the observed value matches.
    `H_{hw=1}` remain bounded research targets per
    `A3_OPTION_C_BRANNEN_RIVERO_PHYSICAL_LATTICE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_optC.md`.
 4. **Physical-lattice premise:** that `Z³` is the physical substrate
-   (and not an abstract auxiliary lattice) remains delegated to
-   `PHYSICAL_LATTICE_NECESSITY_NOTE.md`.
+   (and not an abstract auxiliary lattice) is not derived here; it
+   remains delegated to `PHYSICAL_LATTICE_NECESSITY_NOTE.md` or a future
+   retained/prompt-registered authority.
 5. **Right-handed-neutrino content:** the framework's content on
    right-handed neutrinos remains its own audit lane; this probe does
    not claim n_gen forcing for that sector.
@@ -362,22 +396,23 @@ Run the runner:
 python3 scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py
 ```
 
-Expected on the cited support surface:
+Expected on the narrowed support surface:
 
 ```
-SUMMARY: PASS=29 FAIL=0 ADMITTED=6
+SUMMARY: PASS=37 FAIL=0 ADMITTED=7
 ```
 
-The 29 PASS items establish:
+The 37 PASS items establish:
 
-1. `|C_3| = 3` by group order (4 PASS)
-2. `C_3[111]` has exactly 3 distinct eigenvalues `{1, ω, ω²}` on `ℂ³` (7 PASS)
-3. BZ-corner orbit-counting gives `|hw = 1| = 3` with single regular `C_3`-orbit (7 PASS)
-4. No proper quotient of `H_{hw=1}` preserves the cited algebra (5 PASS)
-5. Specificity: counterfactual `Z^d × C_d` substrates produce `|hw=1| = d` (5 PASS)
-6. Cardinality cross-check with SM observed `n_gen = 3` (1 PASS)
+1. source-scope and citation firewall checks (8 PASS)
+2. `|C_3| = 3` by group order (4 PASS)
+3. `C_3[111]` has exactly 3 distinct eigenvalues `{1, ω, ω²}` on `ℂ³` (7 PASS)
+4. BZ-corner orbit-counting gives `|hw = 1| = 3` with single regular `C_3`-orbit (7 PASS)
+5. No proper quotient of `H_{hw=1}` preserves the cited algebra (5 PASS)
+6. Specificity: counterfactual `Z^d × C_d` substrates produce `|hw=1| = d` (5 PASS)
+7. Cardinality cross-check with SM observed `n_gen = 3` (1 PASS)
 
-The 6 ADMITTED items track explicitly bounded admissions:
+The 7 ADMITTED items track explicitly bounded admissions:
 
 1. species-map e/μ/τ
 2. species-map u/c/t
@@ -385,29 +420,40 @@ The 6 ADMITTED items track explicitly bounded admissions:
 4. carrying `n_gen = 3` to neutrino sector
 5. physical-lattice premise (delegated)
 6. anomaly-cancellation non-specificity (comparison context)
+7. retained physical-substrate authority (not supplied by this note)
 
 ## 8. Honest status
 
-Bounded substrate-cardinality theorem. The substrate `Z^3 × C_3`
-support forces exactly three elements in the lightest `hw = 1`
-substrate carrier. This addresses the substrate-internal counting
-question that anomaly cancellation alone does not answer.
+Conditional-support substrate-cardinality theorem. Given the supplied
+`Z^3 × C_3` surface, the finite algebra forces exactly three elements
+in the lightest `hw = 1` substrate carrier. This addresses the
+substrate-internal counting question that anomaly cancellation alone
+does not answer, but it does not derive retained physical-substrate
+authority.
 
 The probe is bounded on:
 
 - species map (labeling convention)
 - sector propagation (separate argument needed for quarks and neutrinos)
-- physical-lattice premise (delegated)
+- physical-lattice premise (delegated / not derived here)
 
 The claim is therefore narrower than "n_gen = 3 is fully derived for
-all SM matter sectors." It is a bounded substrate-cardinality result
-with the cross-sector upgrade tracked as a separate research target.
+all SM matter sectors" and narrower than "the physical substrate is
+retained." It is conditional substrate-cardinality algebra with the
+physical-substrate and cross-sector upgrades tracked as separate
+research targets.
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "Z^3 x C_3 substrate support gives |hw=1| = 3 (orbit count) via combined orbit-counting + no-proper-quotient. Structurally distinct from anomaly cancellation. Does not by itself identify SM species or propagate to all sectors."
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+claim_scope: "Conditional on supplied Z^3 x C_3 substrate support, |hw=1| = 3 (orbit count) via combined orbit-counting + no-proper-quotient. Structurally distinct from anomaly cancellation. Does not derive physical-substrate authority, identify SM species, or propagate to all sectors."
 upstream_dependencies:
-  - minimal_axioms_2026_05_03 (Z^3 substrate)
+  - minimal_axioms_2026_05_03 (supplied Z^3 substrate premise; physical-substrate authority not derived here)
   - staggered_dirac_bz_corner_forcing_theorem_note_2026_05_07 (BZ corner structure)
   - three_generation_observable_theorem_note (M_3(C) on hw=1)
   - three_gen_z3_fourier_diagonalization_theorem_note_2026_05_03 (C_3 eigenbasis)
@@ -424,6 +470,7 @@ bounded_admissions:
   - species_map_down_quarks_d_s_b (labeling convention)
   - sector_propagation_neutrinos (separate argument)
   - physical_lattice_premise (delegated)
+  - retained_physical_substrate_authority (not supplied here)
   - anomaly_non_specificity (probe_y dual)
 context_notes:
   - anomaly cancellation alone is linear in n_gen and does not force n_gen = 3

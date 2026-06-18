@@ -12,10 +12,10 @@ Anomaly cancellation alone is linear in n_gen, so any positive n_gen
 that has per-generation cancellation also cancels in total. It does not
 force n_gen = 3.
 
-This probe asks the dual substrate question: does the framework's physical
-Z^3 spatial substrate plus named C_3[111] structure force a three-element
-hw=1 carrier via orbit-counting / character theory, even though anomaly
-cancellation alone does not force a generation count?
+This probe asks the dual conditional substrate question: given the supplied
+Z^3 spatial-substrate surface plus named C_3[111] structure, does the finite
+orbit-counting / character-theory packet force a three-element hw=1 carrier,
+even though anomaly cancellation alone does not force a generation count?
 
 Method
 ------
@@ -26,28 +26,31 @@ Method
    |hw=1| = 3, lightest non-trivial mass class.
 4. No-proper-quotient theorem on hw=1 prevents reduction below 3.
 5. Specificity test: counterfactual Z^N x C_N substrates produce
-   |C_N| = N orbits. So the three-orbit result is tied to the framework's
-   specific physical Z^3 spatial substrate dimension, not a generic
-   claim that any cyclic group forces 3.
+   |C_N| = N orbits. So the three-orbit result is tied to the supplied
+   Z^3 spatial-substrate dimension, not a generic claim that any cyclic
+   group forces 3.
 
 Verdict structure
 -----------------
-Bounded theorem: the substrate's Z^3 x C_3 support forces exactly three
-elements in the lightest hw=1 carrier via combined orbit-counting +
-no-proper-quotient. This is structurally distinct from anomaly cancellation
-(which is linear in n_gen and admits any positive integer). The bounded
-qualification is twofold:
+Conditional-support theorem: on the supplied Z^3 x C_3 surface, the finite
+algebra forces exactly three elements in the lightest hw=1 carrier via
+combined orbit-counting + no-proper-quotient. This is structurally distinct
+from anomaly cancellation (which is linear in n_gen and admits any positive
+integer). The bounded qualification is threefold:
   (a) the species map (which orbit element <-> electron/muon/tau) remains
       labeling convention per the preserved-C_3 interpretation note;
   (b) carrying this to neutrinos and quarks is a separate sector argument
       not covered here.
+  (c) this runner does not derive retained-grade authority that Z^3 is the
+      physical substrate.
 
 Forbidden imports respected
 ---------------------------
 - NO PDG observed values used as derivation input
 - NO lattice MC empirical measurements
 - NO fitted matching coefficients
-- NO new axioms beyond the physical Z^3 spatial substrate and cited C_3 support
+- NO new axioms. The physical Z^3 substrate reading is an explicit
+  conditional premise here, not a derived or newly admitted axiom.
 - Standard orbit-counting / group theory is admissible (mathematical only)
 
 References (current support cited)
@@ -80,6 +83,7 @@ import cmath
 import math
 import sys
 from itertools import product
+from pathlib import Path
 
 
 # ----------------------------------------------------------------------
@@ -133,6 +137,64 @@ class Counter:
 # Primitive 3rd root of unity:
 OMEGA = cmath.exp(2j * math.pi / 3)
 TOL = 1e-12
+NOTE_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "docs"
+    / "KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md"
+)
+
+
+def read_note_text() -> str:
+    return NOTE_PATH.read_text(encoding="utf-8")
+
+
+def section_0_source_scope(c: Counter) -> None:
+    print()
+    print("Section 0 — SOURCE SCOPE FIREWALL: conditional substrate-cardinality only")
+
+    note = read_note_text()
+    normalized_note = " ".join(note.split())
+    c.record(
+        "source declares actual current-surface status conditional-support",
+        "**Actual current-surface status:** conditional-support" in note,
+    )
+    c.record(
+        "source declares upstream_support trace class",
+        "**Trace class:** upstream_support" in note,
+    )
+    c.record(
+        "source declares reachability supports",
+        "**Reachability to target:** supports" in note,
+    )
+    c.record(
+        "source bars proposal language",
+        "**Proposal allowed:** false" in note,
+    )
+    c.record(
+        "source bars bare retained status",
+        "**Bare retained allowed:** false" in note,
+    )
+    c.record(
+        "source names retained physical-substrate authority as unsupplied",
+        "does not derive retained-grade authority that `Z^3` is the physical substrate"
+        in normalized_note
+        and "retained_physical_substrate_authority (not supplied here)" in note,
+    )
+    c.record(
+        "source provides downstream citation firewall phrase",
+        "conditional substrate-cardinality algebra over supplied `Z^3`/`C_3[111]` premises"
+        in normalized_note,
+    )
+    forbidden_overclaims = [
+        "substrate-forced cardinality",
+        "under the physical `Z^3` spatial substrate",
+        "The physical `Z^3` substrate plus `C_3[111]` support forces",
+    ]
+    c.record(
+        "source removed old unconditional physical-substrate overclaim phrases",
+        not any(fragment in note for fragment in forbidden_overclaims),
+        f"checked {len(forbidden_overclaims)} fragments",
+    )
 
 
 def cyclic_group_order(n: int) -> int:
@@ -224,7 +286,7 @@ def section_1_group_order(c: Counter) -> None:
     )
     print(
         "    -> Counterfactual: |C_N| = N for any N. The number 3 enters "
-        "from the Z^3 substrate's lattice dimension, NOT from C_N choice."
+        "from the supplied Z^3 substrate dimension, NOT from C_N choice."
     )
 
 
@@ -316,8 +378,8 @@ def section_2_c3_eigenvalues(c: Counter) -> None:
 def section_3_bz_orbit_count(c: Counter) -> None:
     print()
     print(
-        "Section 3 — CHECK: BZ-corner orbit-counting on Z^3 substrate "
-        "forces |hw=1| = 3"
+        "Section 3 — CHECK: conditional BZ-corner orbit-counting on "
+        "supplied Z^3 substrate gives |hw=1| = 3"
     )
 
     # Z^3 substrate => BZ = {0, pi}^3; encode pi as 1, 0 as 0
@@ -410,8 +472,8 @@ def section_3_bz_orbit_count(c: Counter) -> None:
         "size 3."
     )
     print(
-        "    -> Combined with Z^3 substrate dimension d=3, this forces "
-        "|hw=1| = 3 from substrate alone."
+        "    -> Conditional on supplied Z^3 substrate dimension d=3, this "
+        "gives |hw=1| = 3 from the finite substrate algebra."
     )
 
 
@@ -569,13 +631,12 @@ def section_5_specificity(c: Counter) -> None:
             f"hw=1 corners = {d}, |C_{d}| = {d}",
         )
 
-    # The Z^3 dimension is the framework's physical spatial substrate dimension
-    # (per MINIMAL_AXIOMS_2026-05-03.md: "discrete in lattice/time" with
-    # 3-dimensional spatial lattice). So:
-    #   d = 3 (from physical Z^3 spatial substrate)
+    # The Z^3 dimension is supplied as the conditional spatial-substrate
+    # surface (per MINIMAL_AXIOMS_2026-05-03.md). So:
+    #   d = 3 (from supplied Z^3 spatial substrate)
     #   |hw=1| = C(3, 1) = 3
     #   |C_3| = 3
-    # All three numbers AGREE because the framework's lattice dimension
+    # All three numbers agree on that supplied surface because its lattice dimension
     # equals the cyclic-group order.
 
     print()
@@ -583,7 +644,7 @@ def section_5_specificity(c: Counter) -> None:
         "    -> The three-orbit result is NOT a generic claim about cyclic groups."
     )
     print(
-        "    -> It is forced by the framework's Z^3 substrate (d = 3),"
+        "    -> It follows from the supplied Z^3 substrate surface (d = 3),"
     )
     print(
         "       which carries C(d, 1) = d = 3 hw=1 corners and"
@@ -619,10 +680,11 @@ def section_6_sm_match(c: Counter) -> None:
     #
     # n_gen_SM = 3 is observed, NOT input here. We only count.
 
-    # The framework gives substrate cardinality 3. SM observes generation count 3.
+    # The supplied Z^3 x C_3 surface gives substrate cardinality 3.
+    # SM observes generation count 3.
     # They MATCH at the cardinality level.
 
-    substrate_cardinality = 3  # forced by Z^3 x C_3 substrate support
+    substrate_cardinality = 3  # conditional on supplied Z^3 x C_3 substrate support
     n_gen_sm_observed = 3  # observed (not derivation input)
 
     c.record(
@@ -685,6 +747,10 @@ def section_7_admissions(c: Counter) -> None:
         "anomaly cancellation specificity (linear in n_gen, admits any n)",
         "anomaly cancellation alone does not force n_gen=3",
     )
+    c.admit(
+        "retained physical-substrate authority for Z^3",
+        "not supplied by this note; delegated to retained/prompt-registered authority",
+    )
 
 
 # ----------------------------------------------------------------------
@@ -694,7 +760,10 @@ def section_7_admissions(c: Counter) -> None:
 
 def main() -> int:
     print("=" * 72)
-    print("Probe Z-Substrate-Generation-Z3 — Z^3 x C_3 substrate three-orbit bound")
+    print(
+        "Probe Z-Substrate-Generation-Z3 — conditional Z^3 x C_3 "
+        "substrate three-orbit bound"
+    )
     print("Date: 2026-05-10")
     print("Source-note authority:")
     print(
@@ -704,6 +773,7 @@ def main() -> int:
     print("=" * 72)
 
     c = Counter()
+    section_0_source_scope(c)
     section_1_group_order(c)
     section_2_c3_eigenvalues(c)
     section_3_bz_orbit_count(c)
@@ -717,26 +787,29 @@ def main() -> int:
     print()
     print("=" * 72)
     print(
-        "VERDICT: Z^3 x C_3 substrate support gives exactly 3 elements at the lightest"
+        "VERDICT: conditional on supplied Z^3 x C_3 substrate support, the"
     )
     print(
-        "  hw=1 mass class via combined orbit-counting + no-proper-quotient."
+        "  lightest hw=1 mass class has exactly 3 elements via combined"
+    )
+    print(
+        "  orbit-counting + no-proper-quotient."
     )
     print(
         "  This is structurally distinct from anomaly cancellation (linear)."
     )
     print()
     print(
-        "  Tier: bounded theorem (substrate-cardinality level),"
+        "  Tier: conditional-support theorem (substrate-cardinality level),"
     )
     print(
-        "        with bounded admissions on species map and sector"
+        "        with bounded admissions on physical-substrate authority,"
     )
     print(
-        "        propagation (charged leptons / quarks / neutrinos)."
+        "        species map, and sector propagation."
     )
     print(
-        "  The number 3 is forced by the Z^3 substrate dimension d=3."
+        "  The number 3 follows inside the supplied Z^3 surface from d=3."
     )
     print(
         "  Counterfactual Z^N substrate would produce |hw=1| = N orbits."

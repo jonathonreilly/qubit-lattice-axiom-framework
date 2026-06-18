@@ -1,0 +1,22 @@
+loop: koide-z-substrate-conditional-scope-20260618
+target_claim_id: koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3
+target_note: docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md
+target_runner: scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py
+base: origin/main@31352f0f2
+branch: codex/koide-z-substrate-conditional-scope-20260618
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: narrow to conditional algebra over explicit supplied Z3/C3 premises
+blocker_text: "physical-substrate wording depends on docs/MINIMAL_AXIOMS_2026-05-03.md, which is marked meta in the packet and is not flagged as an accepted premise by the restricted materials"
+repair_summary: >
+  The source note now says the finite orbit-counting/Fourier/no-proper-quotient algebra
+  closes only on the supplied Z^3/C_3[111] surface and does not derive retained
+  physical-substrate authority or SM generation/species closure.
+verification:
+  - "PYTHONPATH=scripts python3 scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py -> SUMMARY: PASS=37 FAIL=0 ADMITTED=7"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py -> status ok"
+  - "git diff --check -> clean"
+review_loop: delegated_to_codex_reviewer
+next_exact_action: open source-side PR; independent reviewer/auditor may re-audit the narrowed row
+

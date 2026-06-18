@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 214 |
-| **retained_no_go** | 207 |
+| **retained_no_go** | 208 |
 | **retained_bounded** | 921 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1627 |
+| unaudited | 1626 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 6 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1331 |
+| `audited_clean` | 1332 |
 | `audited_conditional` | 14 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 6 |
-| `unaudited` | 1949 |
+| `unaudited` | 1948 |
 
 | claim_type | count |
 |---|---:|
@@ -136,6 +136,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `action_normalization_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_power_3d_operator_cauchy_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -1636,6 +1637,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The action preference does shift with regularity on the tested family, is not cleanly monotonic on this slice, and the safest label is mixed bridge.  _(class `C`)_
 - **chain closes:** True — The supplied runner source actually generates the DAGs, propagates both actions, and computes the reported table rather than printing fixed constants. The source note's safe interpretation is limited to the tested scripted slice and matches the completed stdout.
 - **rationale:** Clean for the bounded computational claim only: the note freezes the parameters, the runner computes the finite replay, and the stdout supports a mixed, non-monotonic shift in the scripted readout. The result does not rely on unlisted dependencies or external comparators, and the note explicitly does not claim a universal action unification or continuum theorem. Residual risk is scope creep if later citations treat this as a physical bridge beyond the frozen generated-DAG experiment.
+- **auditor confidence:** medium
+
+### `action_normalization_note`
+
+- **Note:** [`ACTION_NORMALIZATION_NOTE.md`](../../docs/ACTION_NORMALIZATION_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Within `scripts/frontier_action_normalization.py`, the finite propagator-Poisson scans, reciprocal rescaling check, PPN-gamma algebra, and massive-probe sanity checks do not select a convention-free coefficient `c` in `S = L(1 - c*f)`.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-action_normalization_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The rescaling `(c, G) -> (c/a, a*G)` keeps `c*G` fixed and leaves the effective product `c*f` invariant up to the finite cached scan, so the packet exposes a one-parameter convention family rather than selecting `c` convention-free.  _(class `A`)_
+- **chain closes:** True — The algebraic rescaling and PPN readout show that `c` can be absorbed into the `f/Phi` and source-normalization convention, while the runner checks that the listed finite diagnostics do not isolate a unique representative. This closes only the narrowed current-packet no-go; a later retained bridge could still choose a convention and name `c`.
+- **rationale:** The runner is not a trivial PASS printer: it solves the finite Poisson/propagator loop for the scans, checks reciprocal rescaling stability, and records finite massive-probe diagnostics. The PPN-gamma step is algebraic under the stated conditional identification `Phi = c*f/2`, and it does not import an external observed value or tuned comparator. The no-go is scoped to the present finite packet and listed routes, not to all possible future bridge theorems.
 - **auditor confidence:** medium
 
 ### `action_power_3d_gravity_sign_closure_note`

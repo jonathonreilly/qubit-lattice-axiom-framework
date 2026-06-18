@@ -1,0 +1,21 @@
+loop_slug: theta-supplied-context-firewall-20260618
+goal: "Queue a source-side theta row repair for re-audit without auditing or retagging the ledger."
+target_status: conditional-support
+cycle_count: 1
+active_route: "Take the audit fallback path by scoping the theta determinant-readout row as supplied-context algebra only."
+hard_residual_attacked: "The missing W2 physical-registrability and action-level theta_eff reduction theorem."
+files_touched:
+  - docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  - scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
+  - logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt
+open_imports:
+  - "W2 physical-registrability theorem"
+  - "action-level theorem reducing the physical theta_eff mass-orientation datum to arg det(M_u M_d)"
+  - "physical exclusions outside the supplied Gaussian/per-plaquette class"
+no_go_routes:
+  - "Do not claim physical theta_eff closure from the supplied determinant algebra."
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Commit, push, open ready PR, then record PR URL in PR_BACKLOG.md."
+stop_condition: "Stop this block after ready PR creation; continue campaign from refreshed audit opportunities."

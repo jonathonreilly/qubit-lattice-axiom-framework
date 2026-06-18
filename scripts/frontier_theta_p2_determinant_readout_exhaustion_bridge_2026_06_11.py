@@ -120,8 +120,15 @@ def main() -> int:
         and "any multi-plaquette, source-insertion, or non-registrable readout exclusion" in note_text,
     )
     check(
+        "source note is scoped as supplied-context algebra only",
+        "**Claim type:** supplied-context algebra support" in note_text
+        and "**Type:** conditional-support" in note_text
+        and "not a physical theta_eff or action-level readout bridge" in note_flat
+        and "Downstream physical strong-CP use must carry a separate W2/action-level theorem" in note_flat,
+    )
+    check(
         "source note expected scorecard matches runner count",
-        "TOTAL: PASS=40 FAIL=0" in note_text,
+        "TOTAL: PASS=41 FAIL=0" in note_text,
     )
 
     # ------------------------------------------------------------------

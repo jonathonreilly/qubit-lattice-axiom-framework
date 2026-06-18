@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lanes.generated-geometry.readme"
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19"
+      "to": "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
         "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16",
         "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13",
         "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
         "gate_b_weak_field_source_action_interface_note_2026-06-16",
+        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19",
         "lanes.generated-geometry.readme",
-        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19"
+        "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5201d9e37e88777db44d754eaa0480c5778173fde46afc393038c6e08515ec7c",
+      "note_hash": "24a895fd350519984f4a34e938d727da30f9e3fdcd6126ea312836e7c834cb21",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

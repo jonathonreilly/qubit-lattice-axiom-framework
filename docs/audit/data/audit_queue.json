@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 304,
     "high": 267,
-    "leaf": 550,
+    "leaf": 549,
     "medium": 412
   },
   "cycle_break_target_count": 7,
@@ -17415,30 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17544,6 +17520,38 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
+        "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+        "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
+        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+        "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py",
+        "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py"
+      ],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py",
       "transitive_descendants": 16
     },
     {
@@ -30216,38 +30224,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12",
-        "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
-        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
-        "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
-        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
-        "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py",
-        "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -31181,6 +31157,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_dirac_lorentz_diagnostic_boundaries_2026_06_07.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16",
+        "matter_inertial_closure_note",
+        "broad_gravity_derivation_note",
+        "minimal_axioms",
+        "equivalence_principle_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py",
       "transitive_descendants": 0
     },
     {
@@ -37977,34 +37981,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_edge_two_site_framing_no_native_color_route_record_text_2026_06_08.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16",
-        "matter_inertial_closure_note",
-        "broad_gravity_derivation_note",
-        "minimal_axioms",
-        "equivalence_principle_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py",
       "transitive_descendants": 0
     },
     {
@@ -46095,5 +46071,5 @@
     }
   ],
   "ready_count": 111,
-  "total_pending": 1533
+  "total_pending": 1532
 }

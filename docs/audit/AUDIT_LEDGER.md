@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 960 |
+| **retained_bounded** | 961 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1531 |
+| unaudited | 1530 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1395 |
+| `audited_clean` | 1396 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1853 |
+| `unaudited` | 1852 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 892 |
-| `leaf` | 1422 |
+| `medium` | 893 |
+| `leaf` | 1421 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1048 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1027 | 49.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 922 | 44.35 | `unaudited` | unaudited |
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 734 | 33.02 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1004 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
-| 24 | `left_handed_charge_matching_note` | decoration | critical | 877 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
 
 
@@ -428,6 +428,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_product_law_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
@@ -5935,6 +5936,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Since H_oo - E I = (mu - E)I, the Schur complement gives mu' = mu - 2t^2/(mu - E) and t' = t^2/(mu - E), hence mu' - E = (mu - E)(1 - 2h^2) and h' = h^2/(1 - 2h^2).  _(class `A`)_
 - **chain closes:** True — The independent Schur-complement calculation gives the stated diagonal and nearest-neighbor effective parameters with the correct signs and factors. The singular gate mu = E and the displayed-map pole at h^2 = 1/2 are excluded by the stated domain/chart.
 - **rationale:** The load-bearing step is a direct algebraic closure, not a definition, renaming, tuned numerical match, or external comparator. The runner source genuinely constructs finite-ring Hamiltonians, performs the Schur complement, and checks the formula, singular gate, threshold covariance, length diagnostic, sign quotient, and chart boundary without importing a contested premise. No cited authority or open bridge is needed for this bounded free-chain statement.
+- **auditor confidence:** high
+
+### `ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16`
+
+- **Note:** [`EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md`](../../docs/EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Only EP-S3a: the normalized |psi|^2 source-readout and weak-field source-coupling form used by the EP stiffness template have retained-bounded weak-field support.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained-bounded weak-field bridge supplies rho_psi(x)=|psi(x)|^2 and the same-source weak-field coupling form, so the normalized EP source integral integral m|psi(x)|^2 dx = m has bounded framework-native support.  _(class `A`)_
+- **chain closes:** True — The chain closes for the scoped EP-S3a claim because the cited retained-bounded authority supplies the Born-density readout and weak-field source/test coupling, and normalization gives the coefficient integral. The continuous action, inertial rest-gap readout, and inertial/gravitational coefficient identity remain open but are explicitly outside this claim.
+- **rationale:** Within the stated boundary, the note does not claim WEP closure or a shared inertial/gravitational coefficient derivation. The retained-bounded cited bridge supplies the needed |psi|^2 source-readout and weak-field coupling surface, and the added normalization is straightforward algebra over that input. The runner mostly verifies note/dependency text plus algebraic Gaussian normalization and residual lambda scaling; it does not pretend to compute a first-principles EP closure. No external comparator, tuned numerical scale, or hidden promotion is needed for EP-S3a as scoped.
 - **auditor confidence:** high
 
 ### `equivalence_principle_harness_note`

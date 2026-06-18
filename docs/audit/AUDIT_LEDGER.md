@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1000 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1423 |
+| unaudited | 1422 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
-| ~~audited_renaming~~ | 28 |
+| ~~audited_renaming~~ | 29 |
 | ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
-| `audited_renaming` | 28 |
-| `unaudited` | 1745 |
+| `audited_renaming` | 29 |
+| `unaudited` | 1744 |
 
 | claim_type | count |
 |---|---:|
@@ -1771,6 +1771,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_markov_generator_premise_classifier_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
@@ -21355,6 +21356,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The family has a real bounded basin: 5/15 tested rows pass exact zero and neutral controls, correct +1/-1 sign orientation, and near-linear double-source scaling.  _(class `C`)_
 - **chain closes:** True — The cached SHA-fresh runner output matches the note's counted pass set, drift coverage, and mean exponent, and the one-hop boundary dependency is retained_bounded. The conclusion must remain bounded to the tested finite sweep and does not support a family-wide or geometry-generic theorem.
 - **rationale:** The runner constructs the third cross-quadrant load-balanced connectivity, computes zero, plus, minus, neutral, double-source responses for all 15 drift/seed rows, and marks five rows as passing without hard-coded target pass values. The source note's numeric claims match the cached runner output: 5/15 passed rows, drift coverage [0.1, 0.2, 0.3], and mean passing exponent 0.999842. The upstream boundary note is retained_bounded and supports the narrow interpretation that edge failures are structural rather than control leakage.
+- **auditor confidence:** high
+
+### `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Pure syntactic registration of external confinement-mechanism vocabulary as an open gate; no monopole/vortex condensation, Wilson-loop area law, string-tension derivation, or framework observable bridge is audited as proved.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The row's load-bearing packet is only P_THOOFT_REG: a pure syntactic vocabulary registration and open-gate boundary for abelian-projection, monopole/dual-superconductor, center-vortex, symbolic action-form, and Wilson-loop area-law notation.  _(class `E`)_
+- **chain closes:** True — The restricted packet closes only the definitional registration and boundary disclaimer. It does not close any physical confinement mechanism or framework bridge, and the note explicitly excludes those conclusions.
+- **rationale:** Issue: the load-bearing move is the definition/registration of P_THOOFT_REG plus boundary disclaimers, while the runner verifies text presence and tautological symbolic identities. Why this blocks: no retained authority or derivation establishes monopole condensation, center-vortex percolation, Wilson-loop area law, positive string tension, or a framework observable bridge. Repair target: add retained one-hop authorities or retained bridge theorems before using this row as theorem input. Claim boundary until fixed: pure syntactic open-gate vocabulary catalogue.
 - **auditor confidence:** high
 
 ### `three_family_card_note`

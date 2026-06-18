@@ -1,0 +1,12 @@
+slug: gr-frame-bundle-blocker-scope-20260618
+status: ready_for_review_pr
+branch: codex/gr-frame-bundle-blocker-scope-20260618
+target_row: universal_gr_polarization_frame_bundle_blocker_note
+mode: source_side_audit_unlock
+audit_actions_performed: false
+review_loop_run: false
+main_refresh_required: false
+summary: >
+  Narrows the critical GR frame-bundle blocker row to the finite prototype
+  frame-orbit support result and forbids reading it as an exhaustive no-go
+  against all covariant Pi_curv constructions.

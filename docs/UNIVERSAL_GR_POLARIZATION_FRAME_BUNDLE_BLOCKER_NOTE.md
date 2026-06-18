@@ -5,14 +5,38 @@
 **Branch:** `codex/review-active`  
 **Role:** direct universal route / blocker note  
 **Purpose:** isolate the smallest missing primitive on the straight-to-full-GR
-**Primary runner:** [`scripts/frontier_universal_gr_polarization_frame_bundle.py`](../scripts/frontier_universal_gr_polarization_frame_bundle.py) (PASS=11/0)
+**Primary runner:** [`scripts/frontier_universal_gr_polarization_frame_bundle.py`](../scripts/frontier_universal_gr_polarization_frame_bundle.py) (current default `PASS=13 FAIL=0`)
 path after the exact scalar observable generator, exact `3+1` lift, exact
 tensor-valued variational candidate, and unique symmetric quotient kernel are
 already in hand
 
+## Audit-scope repair (2026-06-18)
+
+The auditable claim in this row is the **finite prototype frame-orbit support
+result**:
+
+- the displayed symmetric `3+1` quotient prototype has a nondegenerate Hessian
+  Gram matrix;
+- its scalar-channel/lapse-plus-trace projector is invariant on the sampled
+  valid polarization frames;
+- complementary localization coefficients move under a valid spatial-frame
+  rotation;
+- therefore this packet does not construct a canonical full
+  polarization-frame/projector bundle or curvature-localization operator
+  `Pi_curv`.
+
+This row is **not** an exhaustive theorem that no alternative covariant bundle,
+connection, horizontal distribution, curvature-localization map, or future
+extension of the current stack can ever construct `Pi_curv`. It also does not
+identify the Hessian with Einstein/Regge dynamics. Any downstream claim needing
+that stronger conclusion must provide a separate N1-N8-complete route
+exhaustion or a positive covariant bundle construction.
+
 ## Verdict
 
-The direct universal route is still blocked, and the block is now exact.
+This packet records a sharp finite support obstruction for the direct
+universal route. It shows that the supplied prototype data do not by
+themselves select a canonical full polarization frame.
 
 The current axiom-first stack gives:
 
@@ -21,7 +45,7 @@ The current axiom-first stack gives:
 - an exact tensor-valued variational candidate on that lifted background
 - an exact unique symmetric `3+1` quotient kernel on the finite prototype
 
-It does **not** yet give:
+This packet does **not** construct:
 
 - a covariant `3+1` polarization-frame / projector bundle that canonically
   splits the symmetric Hessian kernel into lapse, shift, and spatial
@@ -29,19 +53,19 @@ It does **not** yet give:
 - an exact curvature-localization operator `Pi_curv` derivable from the
   current stack alone
 
-So the remaining gap is no longer a scalar, quotient-uniqueness, or generic
-action problem. It is the missing covariant frame / projector bundle itself.
+So the remaining gap exposed by this packet is not a scalar,
+quotient-uniqueness, or generic action calculation inside the displayed
+prototype. It is the missing covariant frame / projector bundle itself.
 
-The current runner checks whether a canonical `Pi_curv` can be reconstructed
-from the present quotient kernel by comparing two valid `3+1` polarization
-frames. It cannot. The localized channel coefficients move under frame
-rotation, so the current stack does not canonically fix the lapse/shift/shear
-splitting.
+The current runner compares two valid `3+1` polarization frames for the same
+prototype quotient kernel. The localized channel coefficients move under frame
+rotation, so the displayed packet does not canonically fix the
+lapse/shift/shear splitting.
 
-The strongest exact object available here is the associated orbit of
-localized channels over the valid `3+1` polarization frames. That orbit is
-exact, but the stack does not supply a distinguished connection or horizontal
-distribution that picks a canonical section.
+The strongest exact object available here is the associated orbit of localized
+channels over the sampled valid `3+1` polarization frames. That orbit is exact
+for the finite prototype, but this packet does not supply a distinguished
+connection or horizontal distribution that picks a canonical section.
 
 ## What is exact already
 
@@ -94,9 +118,9 @@ frame-dependent.
 
 ## Why the current stack stops here
 
-The present data determine a unique bilinear kernel on the symmetric quotient,
-and they also determine the exact `A1` invariant projector, but they do not
-specify how to localize the complementary `E \oplus T1` channels into
+The present finite packet determines a unique bilinear kernel on the symmetric
+quotient, and it also determines the exact `A1` invariant projector, but it
+does not specify how to localize the complementary `E \oplus T1` channels into
 curvature channels on `PL S^3 x R`.
 
 In particular, the current stack has no exact object that:
@@ -106,9 +130,9 @@ In particular, the current stack has no exact object that:
    components;
 3. identifies those components with the Einstein/Regge tensor law.
 
-Without that object, the Hessian remains a variational candidate, not a GR
-dynamics law. The exact `A1` projector is the strongest selector already
-latent in the current stack, but it is not the canonical localization bundle.
+Without that object, the Hessian remains a variational candidate in this
+packet, not a GR dynamics law. The exact `A1` projector is the strongest
+selector displayed here, but it is not the canonical localization bundle.
 
 ## Minimal missing primitive
 
@@ -121,10 +145,9 @@ The smallest honest missing object is now:
 > trace/shear channels before localization.
 
 Equivalently, the missing primitive is still a covariant `3+1`
-curvature-localization operator `Pi_curv`, but the current stack shows that
-`Pi_curv` is not derivable without that extra frame primitive. The exact
-structure available today is the frame-orbit family of candidate
-localizations, not a canonical projector bundle.
+curvature-localization operator `Pi_curv`. This packet demonstrates only that
+the finite quotient/frame data supplied here determine a frame-orbit family of
+candidate localizations rather than a canonical projector bundle.
 
 ## Honest status
 
@@ -135,4 +158,6 @@ The current direct universal route is:
 - exact at the symmetric `3+1` quotient-kernel level
 - blocked at the curvature-localization level
 
-That is the sharpest disciplined statement available on the current atlas.
+That is the sharpest disciplined statement this packet supports. Stronger
+downstream use as a global no-go for all covariant `Pi_curv` constructions, or
+as a positive Einstein/Regge dynamics theorem, is outside this row.

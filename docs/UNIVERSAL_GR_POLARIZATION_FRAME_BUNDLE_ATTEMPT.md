@@ -10,13 +10,27 @@ curvature localization
 
 **Primary runner:** scripts/frontier_universal_gr_polarization_frame_bundle.py
 
+**Audit-scope note (2026-06-18):** the auditable source claim in this
+row is the finite prototype frame-dependence diagnostic and the
+downstream source-boundary firewall. The scalar-observable, `3+1`
+lift, tensor-candidate, quotient-kernel, and blocker surfaces named
+below are route-context handles for the historical universal route, not
+one-hop proof authorities imported by this row. The primary runner now
+checks the finite matrix calculation and this boundary language without
+reading those upstream notes as proof inputs. Any downstream
+current-stack or route-level closure must cite and audit the upstream
+sources directly.
+
 ## Verdict
 
-The current universal stack does **not** derive a canonical polarization-frame
-bundle from the scalar observable principle, the exact `3+1` lift, and the
-unique symmetric quotient kernel alone.
+The route context investigated here does **not** derive a canonical
+polarization-frame bundle from the scalar observable principle, the exact
+`3+1` lift, and the unique symmetric quotient kernel alone. Those
+upstream ingredients are context handles in this row; this packet's
+auditable calculation is the finite prototype frame-orbit diagnostic
+below.
 
-What it does give is:
+The route context records:
 
 - an exact scalar observable generator;
 - an exact `3+1` kinematic background `PL S^3 x R`;
@@ -55,7 +69,7 @@ current stack. Two valid `3+1` polarization frames related by a spatial
 rotation yield different localized channel coefficients for the same kernel.
 That is not a numerical artifact. It is the exact obstruction.
 
-The audit runner records the frame dependence explicitly:
+The primary runner records the frame dependence explicitly:
 
 - the quotient kernel stays fixed;
 - the localized channel coefficients change with polarization frame choice;
@@ -99,10 +113,11 @@ canonical Einstein/Regge dynamics law.
 
 Allowed downstream uses of this packet are limited to:
 
-- cite the exact scalar observable generator;
-- cite the exact `3+1` kinematic lift on `PL S^3 x R`;
-- cite the exact tensor-valued variational candidate and unique symmetric
-  quotient-kernel checks on the finite prototype;
+- cite the finite prototype frame-dependence diagnostic;
+- cite this packet as a context pointer to the scalar observable generator,
+  `3+1` lift on `PL S^3 x R`, tensor-valued variational candidate, and
+  unique symmetric quotient-kernel route handles, while citing those
+  upstream sources directly if they are load-bearing;
 - cite the exact rank-2 scalar-channel projector on lapse and spatial trace;
 - cite the obstruction that complement-channel localization coefficients
   depend on valid polarization-frame choices.
@@ -127,12 +142,22 @@ distinguished connection or horizontal distribution on the complement.
 
 ## Honest status
 
-The current direct universal route is:
+This packet's auditable source claim is:
+
+- exact at the finite prototype Hessian / symmetric-basis level;
+- exact for the displayed pair of valid `3+1` polarization frames;
+- exact for the source-boundary statement that the complement-frame
+  localization is an associated orbit, not a canonical full section;
+- open at the covariant polarization-frame / curvature-localization
+  level.
+
+Route context, not one-hop authority in this row, records upstream work
+that is:
 
 - exact at the scalar observable level
 - exact at the `3+1` kinematic lift level
 - exact at the symmetric `3+1` quotient-kernel level
-- blocked at the covariant polarization-frame / curvature-localization level
+- blocked at the covariant polarization-frame / curvature-localization level.
 
 This is the sharpest exact statement currently available on the universal
 route.

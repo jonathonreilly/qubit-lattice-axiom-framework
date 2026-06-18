@@ -1,39 +1,33 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_polarization_frame_bundle.py
-runner_sha256: 758003f0a0ad7eead81e7e65072136fb81e5248a1248d987d5d54c1ea44461a8
+runner_sha256: d6f5770bef84f8514fbfafe8798ab4799034034c11d3074f7e89a4e6b12b4ad6
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-UNIVERSAL GR POLARIZATION-FRAME BUNDLE AUDIT
+UNIVERSAL GR POLARIZATION-FRAME BUNDLE FINITE DIAGNOSTIC
 ==============================================================================
-[PASS] scalar generator is exact
-    observable principle gives the exact scalar generator
-[PASS] 3+1 lift is exact
-    route-2 gives the exact PL S^3 x R scaffold
-[PASS] tensor candidate is exact as a construction
-    candidate note identifies the Hessian on the lifted background
-[PASS] unique symmetric quotient kernel is exact on the prototype
-    quotient-uniqueness note records the nondegenerate prototype kernel
 [PASS] prototype Gram matrix is symmetric
     max symmetry error = 0.000e+00
 [PASS] prototype symmetric quotient basis is nondegenerate
     rank = 10 / 10
 [PASS] scalar-line restriction matches the same Hessian
     direct = -4.215193e-01, expected = -4.215193e-01
-[PASS] blocker note names the curvature-localization map
-    blocker is still sharpened to the localization primitive
-[PASS] curvature-localization blocker isolates the frame-orbit obstruction
-    older frame-orbit blocker is now historical; live blocker reframed as interpretation theorem beyond Lorentzian closure
-[PASS] frame-bundle note records the same missing primitive
-    the dedicated blocker note matches the curvature blocker
-[PASS] localization coefficients depend on frame choice
+[PASS] canonical and rotated frames have ten symmetric-sector channels
+    len(frame_a)=10, len(frame_b)=10
+[PASS] rank-2 scalar channel is invariant under the tested spatial rotation
+    max scalar-channel delta = 0.000e+00
+[PASS] complement channels depend on frame choice
+    max complement delta = 6.767e-02
+[PASS] localized full-channel coefficients depend on frame choice
     max channel delta across two valid polarization frames = 6.767e-02
 [PASS] source-boundary firewall names allowed and forbidden downstream uses
     attempt note preserves open-gate/source-boundary guardrails
 [PASS] source-boundary firewall forbids full GR/curvature-localization reuse
     runner pass remains blocker/support only, not GR closure
+[PASS] runner boundary avoids hidden route-level imports
+    attempt note keeps upstream route handles out of this runner's proof inputs
 
 ==============================================================================
 PROTOTYPE RESULTS
@@ -43,6 +37,8 @@ scalar_expected = -4.215192743764e-01
 gram_rank       = 10
 gram_size       = 10
 symmetry_error  = 0.000000000000e+00
+scalar_delta    = 0.000000000000e+00
+complement_delta= 6.767360754447e-02
 frame_delta     = 6.767360754447e-02
 resp_a[0:4]     = ['-2.500000e-01', '-8.249579e-02', '3.111270e-02', '-1.818275e-02']
 resp_b[0:4]     = ['-2.500000e-01', '-8.699980e-02', '-1.430351e-02', '-1.818275e-02']
@@ -50,8 +46,8 @@ resp_b[0:4]     = ['-2.500000e-01', '-8.699980e-02', '-1.430351e-02', '-1.818275
 ==============================================================================
 SUMMARY
 ==============================================================================
-PASS=13 FAIL=0 TOTAL=13
-Direct-universal progress: the scalar observable principle and the 3+1 lift now support an exact tensor-valued variational candidate with a unique symmetric quotient kernel, but the exact curvature-localization operator is still missing and only an associated localization orbit is currently determined.
+PASS=10 FAIL=0 TOTAL=10
+Finite diagnostic: the displayed prototype has a canonical rank-2 scalar channel, while complement-channel localization remains frame-dependent. Route-level upstream closure is not claimed by this runner.
 
 ----- stderr -----
 

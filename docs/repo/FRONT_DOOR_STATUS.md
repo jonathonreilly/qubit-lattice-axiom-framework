@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1568 |
+| Applied audit verdicts | 1569 |
 | Retained-grade rows, including boxed decorations | 1463 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
 | Retained bounded rows | 976 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 31 |
-| Unaudited rows | 1489 |
+| Unaudited rows | 1488 |
 | Retained-pending-chain rows | 3 |
-| Audited conditional rows | 44 |
+| Audited conditional rows | 45 |
 | Audited renaming rows | 18 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 7 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1491 |
-| Ready rows | 75 |
+| Total pending rows | 1490 |
+| Ready rows | 74 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 506 |
+| Leaf pending | 505 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07`](../../docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md) - medium; unaudited
 - [`epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12`](../../docs/EPSSTAR_COEFFICIENT_RICHARDSON_MOFF0_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12`](../../docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12`](../../docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
+- [`flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md) - leaf; unaudited
+- [`flavor_interacting_matter_build_note_2026-05-30`](../../docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 934 |
-| Leaf nodes | 1506 |
+| Medium nodes | 935 |
+| Leaf nodes | 1505 |
 
 Top load-bearing rows by graph score:
 

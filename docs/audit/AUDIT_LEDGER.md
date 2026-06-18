@@ -23,11 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 965 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 28 |
-| unaudited | 1518 |
+| unaudited | 1517 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 36 |
+| ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -65,19 +66,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1401 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 52 |
-| `audited_failed` | 25 |
+| `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1840 |
+| `unaudited` | 1839 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1730 |
 | `decoration` | 54 |
-| `meta` | 323 |
+| `meta` | 324 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 764 |
+| `positive_theorem` | 763 |
 
 | criticality | count |
 |---|---:|
@@ -1638,6 +1639,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `post_record_dynamics_campaign_closeout_index_2026-06-06` | meta | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `shapiro_diamond_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
@@ -15734,6 +15736,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With source mass only on A, two distinct row-stochastic kernels agree on the visited A row, differ on the unvisited B row, and induce the same length-2 law and directed certificate values.  _(class `A`)_
 - **chain closes:** True — The finite two-state witnesses close the underselection claim: the same law/certificate data admit distinct candidate kernels, and a single scalar certificate also admits distinct full-support candidates. Routes that recover a kernel require extra supplied assumptions such as a model class, sufficient statistics, or a selection rule, which the claim explicitly excludes.
 - **rationale:** The load-bearing step is an exact finite algebraic counterexample, not a definition, renaming, tuned numerical match, or external comparator check. Independent recomputation of the displayed fractions gives the runner's laws and certificate values: k1 and k2 share L(AA)=1/2 and L(AB)=1/2 while differing on the B row, and k3 and k4 share endpoint_AB=1/4 while other directed statistics separate them. The no-go is clean only in the scoped sense of no selection from directed certificates alone, not as a ban on separately supplied model-selection rules.
+- **auditor confidence:** high
+
+### `post_record_dynamics_campaign_closeout_index_2026-06-06`
+
+- **Note:** [`POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md`](../../docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Branch-local bookkeeping index for the six PR post-record dynamics stack, including listed PR/status entries, cached-summary checks, and firewall flags; no physics theorem or audit verdict was audited.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-post_record_dynamics_campaign_closeout_index_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner verifies all six PR entries, cached summaries for each stack layer, exact/no-go counts, and firewall booleans while applying no audit verdicts or retained promotion.  _(class `B`)_
+- **chain closes:** False — The narrow metadata index is only a cross-file/string verification, not a derivation from an axiom or retained authority. The runner source also checks hard-coded cached-summary strings `SUMMARY: PASS=64 FAIL=0` and `SUMMARY: PASS=52 FAIL=0` for PR #2850 and #2864, while the source note says the repaired certificates are `SUMMARY: PASS=60 FAIL=0` and `SUMMARY: PASS=47 FAIL=0`, so the stated runner certificate does not close.
+- **rationale:** Issue: The source note's runner certificate says the directed-certificate and authority-map layers consume repaired `SUMMARY: PASS=60 FAIL=0` and `SUMMARY: PASS=47 FAIL=0` certificates, but the included runner source hard-codes and verifies `SUMMARY: PASS=64 FAIL=0` and `SUMMARY: PASS=52 FAIL=0` instead. Why this blocks: the closeout index is an exact-support bookkeeping claim, so stale or mismatched cached-summary expectations mean the restricted packet does not verify the stated index as written. Repair target: reconcile the note and runner/cache excerpts for PR #2850 and PR #2864, then rerun the cached runner. Claim boundary until fixed: the packet can be cited only as an intended branch-local handoff map, not as an exact verified closeout certificate.
 - **auditor confidence:** high
 
 ### `post_record_expectation_concentration_firewall_2026-06-06`

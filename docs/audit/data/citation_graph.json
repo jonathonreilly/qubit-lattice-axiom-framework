@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "post_record_dynamics_campaign_closeout_index_2026-06-06"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lanes.generated-geometry.readme"
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
+      "to": "su3_dabc_symmetric_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
         "post_record_dynamics_campaign_closeout_index_2026-06-06",
         "post_record_retained_unbounded_dynamics_gate_2026-06-06",
         "sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15",
         "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
+        "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
         "lanes.generated-geometry.readme",
-        "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
+        "su3_dabc_symmetric_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4bbe2388e3d3a8a021bac5591082805d7fcb4637efa9f76759841d86f9c80fce",
+      "note_hash": "78b3663e62acc8d33345da1a17337dfea244fe2dab46c18a8ad55f127a4fc590",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

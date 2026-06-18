@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 219 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 986 |
+| **retained_bounded** | 987 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 32 |
-| unaudited | 1460 |
+| unaudited | 1459 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1429 |
+| `audited_clean` | 1430 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1782 |
+| `unaudited` | 1781 |
 
 | claim_type | count |
 |---|---:|
@@ -836,6 +836,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orientation_blind_count_b_field_gate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_p1_collapses_frame_residuals_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_pointed_origin_exhaustion_theorem_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_positive_parent_axis_obstruction_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12172,6 +12173,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The conjugation map on the b-plane flips complex orientation but preserves the metric, so the per-block rank count dim(R^2)/2 = 1 is orientation-blind, while the B-coupling to B-field bridge remains open.  _(class `A`)_
 - **chain closes:** True — Within the stated local objects, the identities close by direct finite-dimensional algebra. The downstream identification of the circulant coefficient b with a first-order Kähler-Dirac B-field amplitude is explicitly left open and is not part of the audited direct claim.
 - **rationale:** The runner source performs actual finite-dimensional matrix and symbolic algebra checks rather than merely printing constants, and the displayed formulas independently reduce correctly: cJc^{-1}=-J, c^Tgc=g, c^T omega c=-omega, trace(H)=3a, trace(H^2)=3a^2+6|b|^2, and Q=(1+2r)/3. The cooling jump orthogonality and zero Lambda^1 to Lambda^1 Kähler-Dirac block are also direct algebraic facts in the finite model. The note does not claim the missing B-coupling to B-field bridge or a Koide derivation, so the bounded local-support claim closes on its own terms.
+- **auditor confidence:** high
+
+### `koide_p1_collapses_frame_residuals_note_2026-06-01`
+
+- **Note:** [`KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite carrier-frame diagnostics: supplied one-mode spin input, hard-core-boson blindness of the finite CCR cardinality obstruction, sampled scalar positive-energy/PSD witness, and two-site NN spectrum relabel.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-koide_p1_collapses_frame_residuals_note_2026-06-01-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Within finite diagnostics only, the supplied faithful spin-1/2 input gives a soft-Bose/CAR boundedness discriminator, the retained CCR cardinality obstruction is blind to the same sigma_+ hard-core boson, the scalar toy kernel is PSD on the sampled surface, and the two-site NN bilinear spectra match across JW-fermion and hard-core-boson frames.  _(class `A`)_
+- **chain closes:** True — The finite matrix and spectrum statements follow by direct algebra, and the sole cited cardinality authority is retained-grade for the soft CCR finite-dimensional obstruction. The note explicitly excludes continuum spin-statistics, OS/Wightman, scalar microcausality, GL(F), and faithful-carrier closure from the audited claim.
+- **rationale:** The load-bearing content is a bounded finite-algebra package, not a continuum bridge claim. The included runner source performs the relevant sigma_+ nilpotence, trace/anticommutator, sampled PSD, and two-site spectrum computations rather than merely printing constants, and an independent recomputation matches those identities. The supplied faithful spin input is used only as a declared hypothesis for the finite discriminator, not as a derived carrier theorem.
 - **auditor confidence:** high
 
 ### `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04`

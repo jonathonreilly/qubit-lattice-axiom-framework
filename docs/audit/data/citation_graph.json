@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_p1_collapses_frame_residuals_note_2026-06-01"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "kubo_fam2_non_convergence_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "kubo_fam2_non_convergence_note_2026-05-02"
+      "to": "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18",
         "koide_p1_collapses_frame_residuals_note_2026-06-01",
         "koide_pointer_record_degeneracy_d3_note_2026-05-31",
         "koide_record_sign_agnostic_eta_refuted_2026-06-04",
         "koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3",
+        "kubo_fam2_non_convergence_note_2026-05-02",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "kubo_fam2_non_convergence_note_2026-05-02"
+        "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13"
       ],
       "helper_runner_paths": [],
-      "note_hash": "23e09c257d4d5a4ef16c7b1f0dcd5779c0af14f071e15fda46f343cea5584b5a",
+      "note_hash": "1950f76a45d6f97d9dae0018cb4cfa228ea1235963fb9065a6dcd946055b41bf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

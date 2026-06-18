@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 265,
-    "leaf": 477,
+    "leaf": 476,
     "medium": 413
   },
   "cycle_break_target_count": 8,
@@ -17455,30 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_p1_collapses_frame_residuals_note_2026-06-01",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_p1_collapses_frame_residuals.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_pointer_record_degeneracy_d3_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17587,6 +17563,28 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_kubo_fam2_non_convergence_stretch.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py",
       "transitive_descendants": 15
     },
     {
@@ -30287,28 +30285,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44226,6 +44202,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 46,
-  "total_pending": 1462
+  "ready_count": 45,
+  "total_pending": 1461
 }

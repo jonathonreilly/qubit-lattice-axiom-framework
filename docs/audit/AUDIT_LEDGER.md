@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1474 |
+| unaudited | 1473 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 19 |
@@ -38,6 +38,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | 1 |
+| `decoration_under_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
@@ -66,20 +67,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1420 |
 | `audited_conditional` | 53 |
-| `audited_decoration` | 55 |
+| `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1796 |
+| `unaudited` | 1795 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1729 |
-| `decoration` | 57 |
+| `decoration` | 58 |
 | `meta` | 326 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 759 |
+| `positive_theorem` | 758 |
 
 | criticality | count |
 |---|---:|
@@ -1628,6 +1629,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `gate_b_weak_field_source_action_interface_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | cross_family | codex-gpt-5.5 | A | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` |
 | `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` |
+| `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19` |
 | `gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
@@ -8803,6 +8805,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The primary runner exhaustively evaluates the stated 6 x 6 x 5 x 8 = 1440 sampled grid and finds a strictly positive minimum scaled-fit gap of 7.791551e-03 at the reported grid point.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the stated grids, computes the witness vector and optimal scalar gap at each sampled point, and the cached output matches the note's minimum and argmin. The conclusion is restricted to the finite grid; no continuous-box exclusion is used or audited.
 - **rationale:** The load-bearing result is a first-principles finite computation over the explicit sampled grid, not a definition, renaming, or external comparator match. The primary runner does not merely print the contested minimum: it sweeps all 1440 grid points and computes the gap through the supplied helper chain. Hard-coded reference values in the runner are used only for sanity checks and are not load-bearing for the sampled minimum. The no-go is clean only at the finite-grid resolution explicitly stated in the repaired note; off-grid continuous minimizers and other parameterizations remain outside scope.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_FIRST_HANKEL_TO_DM_BOUNDARY_NOTE_2026-04-19.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic first-Jacobi/first-Hankel equivalence on the canonical minimal-bulk-completion Wilson/Perron packet; not earliest DM-boundary localization or actual framework-point selection.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the canonical Wilson-side packet selected by the minimal-bulk-completion branch, the first Jacobi layer and first Hankel packet are equivalent via alpha0 = m1 and beta1^2 = m2 - m1^2, with beta1 > 0.  _(class `A`)_
+- **chain closes:** True — The cited parent is retained_bounded and supplies the canonical packet within its bounded zero-extension witness scope. The current row only applies the standard first-step Jacobi/moment identities to that packet, and the runner verifies the identities without importing the historical earliest-feeding-boundary premise.
+- **rationale:** The source note narrows the load-bearing claim to an algebraic equivalence on the already-constructed parent packet. The primary runner imports the parent's selected packet and checks finiteness, positivity/symmetry conditions, alpha0 = m1, and beta1 = sqrt(m2 - m1^2), with PASS=4 FAIL=0 and no external comparator. This adds no new physical bridge or DM-boundary theorem; the historical earliest-feeding premise is explicitly non-load-bearing. Therefore the row is an algebraic decoration of the retained_bounded parent claim.
+- **decoration parent:** `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19`
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20`

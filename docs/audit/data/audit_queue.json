@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 304,
+    "critical": 303,
     "high": 267,
     "leaf": 439,
     "medium": 407
@@ -125,25 +125,26 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
+      "claim_id": "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
       "claim_scope": null,
-      "claim_type": "decoration",
+      "claim_type": "positive_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
       "deps": [
+        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
         "cl3_color_automorphism_theorem"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 13.771,
-      "note_path": "docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md",
+      "load_bearing_score": 13.248,
+      "note_path": "docs/CL3_BARYON_QQQ_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/cl3_quark_antiquark_color_singlet_check.py",
-      "transitive_descendants": 308
+      "runner_path": "scripts/cl3_baryon_qqq_color_singlet_check.py",
+      "transitive_descendants": 303
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7090,31 +7091,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_koide_brannen_phase_reduction_theorem.py",
       "transitive_descendants": 305
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "cl3_color_automorphism_theorem"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.248,
-      "note_path": "docs/CL3_BARYON_QQQ_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/cl3_baryon_qqq_color_singlet_check.py",
-      "transitive_descendants": 303
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -43071,5 +43047,5 @@
     }
   ],
   "ready_count": 1,
-  "total_pending": 1417
+  "total_pending": 1416
 }

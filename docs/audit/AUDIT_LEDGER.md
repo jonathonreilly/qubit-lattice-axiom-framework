@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1003 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1415 |
+| unaudited | 1414 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -31,7 +31,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 6 |
+| `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -70,11 +70,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1453 |
 | `audited_conditional` | 61 |
-| `audited_decoration` | 59 |
+| `audited_decoration` | 60 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1737 |
+| `unaudited` | 1736 |
 
 | claim_type | count |
 |---|---:|
@@ -1661,6 +1661,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
+| `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | cross_family | codex-gpt-5.5 | A | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` |
 | `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12` | decoration | ~~audited_decoration~~ | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | cross_family | codex-gpt-5.5 | A | `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` |
 | `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | algebraic_corollary_of_parent | `cpt_exact_note` |
@@ -4074,6 +4075,20 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Five-judge panel result: 3/5 judges sided with the second tuple and ratified audited_clean / positive_theorem / class C; 2/5 sided with the first tuple and class A. Majority rationale: the claim closes only with accepted A1/A2 in the packet. A1 supplies the one-qubit/C^2/Pauli local site module and physical site-Hilbert bridge, A2 supplies the Z^3 site set, and the retained pure Cl(3,0) theorem supplies the finite-dimensional faithful irreducible module classification. The finite-block formula is then ordinary tensor-product dimension algebra. Under the audit rubric, correct use of accepted axiom content as the framework baseline is class C rather than a mere class A identity check over retained inputs. The clean verdict is therefore ratified in the scoped A1/A2 sense, not as a pure-Cl(3)-only derivation or a chirality/spin-statistics claim.
 - **rationale:** Five-judge panel result: 3/5 judges sided with the second tuple and ratified audited_clean / positive_theorem / class C; 2/5 sided with the first tuple and class A. Majority rationale: the claim closes only with accepted A1/A2 in the packet. A1 supplies the one-qubit/C^2/Pauli local site module and physical site-Hilbert bridge, A2 supplies the Z^3 site set, and the retained pure Cl(3,0) theorem supplies the finite-dimensional faithful irreducible module classification. The finite-block formula is then ordinary tensor-product dimension algebra. Under the audit rubric, correct use of accepted axiom content as the framework baseline is class C rather than a mere class A identity check over retained inputs. The clean verdict is therefore ratified in the scoped A1/A2 sense, not as a pure-Cl(3)-only derivation or a chirality/spin-statistics claim.
 - **auditor confidence:** judicial
+
+### `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`
+
+- **Note:** [`CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Abstract CL3 algebraic SU(3) carrier result: V ⊗ V* = trace singlet ⊕ 8-dimensional traceless complement, with normalized trace projector, excluding physical SM-color identification.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-153428-eb742fcb-cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under V ⊗ V* ≅ End(V), every X decomposes as (Tr X/3)I_3 plus a traceless part, and the only matrices commuting with all eight embedded Gell-Mann generators are scalars.  _(class `A`)_
+- **chain closes:** True — The cited retained_bounded authority supplies the 3-dimensional algebraic SU(3) carrier and generators; finite-dimensional linear algebra then gives the trace/traceless decomposition and unique scalar invariant line. The source note explicitly excludes the physical quark-color bridge, so the parent’s open physical-identification language is not imported into this claim scope.
+- **rationale:** The load-bearing work is standard algebra over the single upstream abstract SU(3) carrier: V ⊗ V* is End(C^3), the trace line is fixed by conjugation, and the traceless complement has dimension 8. The runner performs internal algebraic checks of normalization, projector rank/idempotence, invariance, traceless rank, and commutant dimension; it does not use external comparators or tuned numerical inputs. Because this adds no physical bridge or independent comparator beyond the retained-bounded parent plus standard mathematics, the proper terminal verdict is decoration rather than clean independent theorem.
+- **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
 
 ### `cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`
 

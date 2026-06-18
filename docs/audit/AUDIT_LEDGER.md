@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 219 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 991 |
+| **retained_bounded** | 992 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1449 |
+| unaudited | 1448 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1437 |
+| `audited_clean` | 1438 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1771 |
+| `unaudited` | 1770 |
 
 | claim_type | count |
 |---|---:|
@@ -1005,6 +1005,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -14661,6 +14662,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The cited recurrence and positivity authorities supply J, exact nonnegative Wilson coefficient ratios, and the half-slice factorization surface within the stated discrete scope. The runner constructs the recurrence layers, coefficient intervals, finite block bounds, Hilbert-Schmidt deflation, and path-count tail majorants rather than importing the frontier numbers.
 - **rationale:** The load-bearing certificate is a finite first-principles computation over the repo-native SU(3) packet operator, not a definition substitution or tuned numerical comparison. The primary runner source computes exact rational coefficient and tail bounds and uses the helper import only for floating diagnostics and finite outer-box witness checks, not for the exact certification inequality. The cited authorities are retained-grade for the scoped inputs, and their open physical-environment identifications are explicitly outside this note's claim boundary.
 - **auditor confidence:** high
+
+### `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Repo-native discrete SU(3) half-slice packet operator: finite-shell large-beta ratios, numerical Richardson limit 0.1938058, saddle-reduced diagonal cross-check, and normalization falsifiers; no continuum, beta=6 physical, operator-norm remainder, or uniform half-line bound audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The scaled true half-slice operator is evaluated with exact Wilson character coefficients on shell-stable beta rows and Richardson-extrapolated in powers of 1/beta to lambda_1/lambda_0 -> 0.1938058, with a saddle-diagonal route giving the same extrapolated limit.  _(class `C`)_
+- **chain closes:** True — Within the stated bounded scope, the chain closes: the cited retained-grade authorities supply the six-neighbor J recurrence, half-slice factorization surface, and Wilson coefficient positivity, while the runner computes the finite-shell ratios and saddle-diagonal cross-check from those ingredients. The missing scaled-operator remainder lemma is needed only for the stronger uniform half-line theorem, which the source note explicitly disclaims.
+- **rationale:** The load-bearing number is computed rather than imported: the primary runner builds J-I from the six-neighbor recurrence, evaluates Wilson character coefficients through the helper Bessel-determinant evaluator, forms the sparse scaled half-slice LinearOperator, solves the top-two eigenvalue ratios, and performs independent Richardson fits. The helper's beta=6 comparator and environment-reference machinery are not on the load-bearing path used by this runner. The saddle route shares the half-slice eigensolve but changes the diagonal input, so it is a structural cross-check rather than an operator-independent proof; the source states that limitation clearly.
+- **auditor confidence:** medium
 
 ### `native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12`
 

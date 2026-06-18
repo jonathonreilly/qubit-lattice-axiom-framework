@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "architecture_note_directional_measure"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "teleportation_3d1_causal_record_channel_note"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "distance_law_definitive_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_3d1_causal_record_channel_note"
+      "to": "wave_direct_dm_h025_seed0_crossfamily_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "architecture_note_directional_measure",
         "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
         "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
+        "teleportation_3d1_causal_record_channel_note",
         "distance_law_definitive_note",
-        "teleportation_3d1_causal_record_channel_note"
+        "wave_direct_dm_h025_seed0_crossfamily_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a3d38caa8293c3c9092cbd9abae3538a388507c719894c8740e840e69339b35a",
+      "note_hash": "3d3e989cf7c91371115ee448e0e63dbd4d414b5e10ef976799bc1957ef2ea2c8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

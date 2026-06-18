@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 943 |
+| **retained_bounded** | 944 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1573 |
+| unaudited | 1572 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 13 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1366 |
+| `audited_clean` | 1367 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1895 |
+| `unaudited` | 1894 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 502 |
-| `medium` | 882 |
+| `high` | 501 |
+| `medium` | 883 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -780,6 +780,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10870,6 +10871,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the Z_3 eigenvalue parametrization v_g = a + 2β cos(φ + 2πg/3), the sums give Q(v) = (3a² + 6β²)/(9a²) = 1/3 + (2/3)(β/a)², so Q = 2/3 iff a² = 2β² = |b|² + |c|².  _(class `A`)_
 - **chain closes:** True — The proof closes as a direct finite Fourier/circulant algebra identity. No empirical mass values, external comparators, or unprovided upstream premises are needed for the stated equivalence.
 - **rationale:** The load-bearing step is a genuine algebraic identity check: cosine orthogonality gives the sums, and the Koide equation reduces exactly to the LCC residual. The runner source symbolically verifies the same identities rather than importing measured values or hard-coding a contested physical premise. The broader speculative Lane 6 mechanisms are explicitly non-load-bearing and are not part of the audited theorem.
+- **auditor confidence:** high
+
+### `koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded localization that native D plus the operator-frame SU(2) merger do not force the per-site C^2 matter-state spinor law; the positive route remains a separate Kawamoto-Smit/state-law bridge or elementary state-law theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Native single-component D is spin-blind on the per-site C^2 and the SU(2) merger gives only adjoint operator-frame covariance, so no matter-ket spinor transformation law follows without a separate KS/state-law bridge.  _(class `A`)_
+- **chain closes:** True — The supplied retained-grade authorities and runner support the stated localization: D has no spinor index, commutes with the spectator C^2 action, and the merger proves conjugation covariance of operators rather than a ket-level law. The note does not claim final matter attachment is forced on this surface.
+- **rationale:** The load-bearing step is an algebraic/scope closure over retained or retained-bounded inputs, not a numerical fit or definition substitution. The runner source genuinely constructs the finite staggered D, verifies spin-blindness, checks adjoint Pauli covariance, verifies the KS scalarization identity, and records the state-law bridge as a boundary rather than counting it as a pass. The conclusion is clean only at the bounded localization scope: it preserves, rather than discharges, the KS-to-physical-matter-state bridge residual.
 - **auditor confidence:** high
 
 ### `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`

@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 984 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1466 |
+| unaudited | 1465 |
 | meta | 322 |
-| ~~audited_numerical_match~~ | 9 |
+| ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 20 |
 | ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
@@ -69,9 +69,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 53 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
-| `audited_numerical_match` | 9 |
+| `audited_numerical_match` | 10 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1788 |
+| `unaudited` | 1787 |
 
 | claim_type | count |
 |---|---:|
@@ -1703,6 +1703,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
+| `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -10470,6 +10471,22 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Since rho_* = A_ref v_ref^4 = A(L) v(L)^4 with all quantities positive, v(L)^4 / v_ref^4 = A_ref / A(L), so v(L) / v_ref = (A_ref / A(L))^(1/4).  _(class `A`)_
 - **chain closes:** True — The fixed-density bridge is exact algebra: divide the two equal positive densities and take the unique positive fourth root. The endpoint examples then substitute retained-grade coefficient ratios; the broader electroweak order-parameter identification is explicitly outside the audited scope.
 - **rationale:** The source claim is a bounded algebraic bridge, not a first-principles derivation of the density or a physical VEV insertion. The primary runner computes the ratio formula, sign, normalization, and endpoint applications, and separately checks retained-grade dependency/status hygiene; it does not use observed targets or fitted comparators. The endpoint coefficients are cited inputs rather than derived here, but the audited conclusion only requires algebra over those inputs and the explicit fixed positive density premise. Within that boundary the chain closes.
+- **auditor confidence:** high
+
+### `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded numerical diagnostic: the finite-lattice condensate-density ratio at u0=0.9, m=0.01, the D=4 and D=16 inverse-root arithmetic, and the numerical ordering/comparison against imported C_obs, excluding any physical det->VEV bridge.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Among the two compression candidates probed, the dimension-4 fourth-root R^(-1/4) is in the few-percent range of the imported C_obs while the direct sixteenth-root R^(-1/16) is too small.  _(class `G`)_
+- **chain closes:** False — The arithmetic diagnostic closes at the chosen inputs, and the runner keeps observed-target values out of PASS gates. The derivational chain to a physical VEV scale does not close because the effective-potential-density/det->VEV insertion bridge fixing sign, placement, and normalization remains unsupplied.
+- **rationale:** The runner source genuinely computes the finite APBC Dirac condensate ratio and performs the inverse-root arithmetic; its seven PASS gates are five algebraic/code-scope checks and two source-firewall checks. However, the load-bearing scientific comparison remains a numerical match/order statement at selected u0,m and against an imported observed prefactor, not a theorem forcing the D=4 exponent or mapping it to the physical VEV. Repair target: a retained effective-potential-density insertion theorem with explicit sign, placement, and normalization.
+- **open / conditional deps cited:**
+  - `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
+  - `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
 - **auditor confidence:** high
 
 ### `hierarchy_dimensional_compression_note`

@@ -1,0 +1,22 @@
+loop_slug: post-record-closeout-counts-20260618
+target_claim_id: post_record_dynamics_campaign_closeout_index_2026-06-06
+target_status: audited_failed
+mode: science-fix
+branch: codex/post-record-closeout-counts-20260618
+base: origin/main
+cycle_count: 1
+active_route: cache_summary_reconciliation
+hard_residual: "This remains a closeout index / handoff map only; it is not a physics derivation."
+files_touched:
+  - docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md
+  - scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.txt
+open_imports: []
+trace_gate_classification: exact_bookkeeping_repair
+reachability_to_target: directly_closes_reported_mismatch
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_disposition: not_run_by_request
+pr_status: ready_for_reviewer
+next_exact_action: "Reviewer can decide whether the reconciled note/runner/cache are sufficient to requeue the failed row."
+stop_condition: "The note, runner, and cache now agree on cached summary strings."

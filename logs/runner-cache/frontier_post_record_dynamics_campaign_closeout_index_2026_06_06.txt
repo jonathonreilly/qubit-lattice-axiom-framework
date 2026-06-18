@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
-runner_sha256: e18f1b244427549e1a783944efeb3753ddee88cd8d281840977df42c9c7d2c89
+runner_sha256: 096985e1f310df4aa2abff9d4f4da1b6a199b811871481ddd5d7c66d51dc2670
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -14,21 +14,27 @@ PASS six PR stack entries are expected
 PASS index contains PR #2850
 PASS index contains title fragment for #2850
 PASS index contains status for #2850
+PASS index contains cached summary for #2850
 PASS index contains PR #2853
 PASS index contains title fragment for #2853
 PASS index contains status for #2853
+PASS index contains cached summary for #2853
 PASS index contains PR #2856
 PASS index contains title fragment for #2856
 PASS index contains status for #2856
+PASS index contains cached summary for #2856
 PASS index contains PR #2858
 PASS index contains title fragment for #2858
 PASS index contains status for #2858
+PASS index contains cached summary for #2858
 PASS index contains PR #2861
 PASS index contains title fragment for #2861
 PASS index contains status for #2861
+PASS index contains cached summary for #2861
 PASS index contains PR #2864
 PASS index contains title fragment for #2864
 PASS index contains status for #2864
+PASS index contains cached summary for #2864
 PASS index states stable location is not selected dial
 PASS index states no audit verdicts are applied
 
@@ -69,7 +75,7 @@ PASS sample-is-probability-law flag is false
 PASS generation/Koide dial selected flag is false
 PASS stable setting selects dial flag is false
 
-SUMMARY: PASS=46 FAIL=0
+SUMMARY: PASS=52 FAIL=0
 POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX=TRUE
 DYNAMICS_STACK_PRS=6
 DYNAMICS_STACK_EXACT_SUPPORT=4

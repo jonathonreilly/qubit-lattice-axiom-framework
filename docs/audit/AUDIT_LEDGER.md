@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 910 |
+| **retained_bounded** | 911 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
 | unaudited | 1648 |
-| audit_in_progress | 1 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 3 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1318 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1319 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -813,6 +811,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_deterministic_rescale_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -11050,6 +11049,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the measured norm with h^2 normalization, p = 1.5 is closest to stable across h = 1.0, 0.5, 0.25, 0.125.  _(class `C`)_
 - **chain closes:** True — The current runner, invoked with the note's four h values, reproduces the stated measured slopes: +0.102, -0.204, -0.598, and -1.046, ranking p = 1.5 closest to marginal. The note explicitly bounds the result away from branch promotion, same-harness propagation, and continuum-limit claims.
 - **rationale:** The load-bearing claim is a bounded numerical computation inside a specified local harness, not a physical promotion claim. The runner computes the relevant outgoing transfer norms and log-log measured slopes directly, and the scoped note does not import dependencies or overstate the result beyond the finite discriminator.
+- **auditor confidence:** high
+
+### `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`
+
+- **Note:** [`LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-grid scalar lattice-Laplacian shell-localization identity and reduced-shell corollaries for the 15^3 Dirichlet Z^3 nearest-neighbor Laplacian at R = 4, excluding any GR/tensor activation claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the explicit 15^3 zero-Dirichlet lattice with H = 6I - A and R = 4, the seven star-support Green columns induce the same shell-mean, normalized radial DtN, and normalized anisotropic reduced-shell data, so the reduced shell map factors only through total charge Q.  _(class `C`)_
+- **chain closes:** True — The runner constructs H directly from the Z^3 nearest-neighbor adjacency, solves the Green columns, forms Pi_R^ext and sigma_R = H Pi_R^ext phi, and checks the shell and reduced-map residuals without helper imports or hard-coded shell constants. The accepted Lattice axiom and retained O_h lift supply the symmetry setting; the finite-grid shell conclusions then follow by first-principles computation plus linearity within the stated scope.
+- **rationale:** The load-bearing computation is class C: it instantiates the finite nearest-neighbor lattice Laplacian, computes the Green data, exterior truncation, shell source, radial DtN data, and anisotropic orbit mode from H itself. The source code imports only numpy and does not read helper-frontier numerics, fitted constants, external comparators, or the reported c_aniso as an input. The dependencies are acceptable for this bounded scope: the Minimal Axioms entry is an accepted premise, and the O_h lift authority is retained-grade under the rubric. The verdict covers only the finite scalar shell identity and reduced-shell corollaries stated here, not downstream tensor or GR matching.
 - **auditor confidence:** high
 
 ### `lattice_nn_continuum_note`

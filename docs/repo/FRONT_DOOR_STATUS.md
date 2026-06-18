@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1407 |
-| Retained-grade rows, including boxed decorations | 1376 |
+| Applied audit verdicts | 1408 |
+| Retained-grade rows, including boxed decorations | 1377 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 910 |
+| Retained bounded rows | 911 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 14 |
 | Unaudited rows | 1648 |
@@ -33,19 +33,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1652 |
-| Ready rows | 163 |
+| Total pending rows | 1651 |
+| Ready rows | 164 |
 | Cycle-break targets | 7 |
-| Critical pending | 320 |
+| Critical pending | 319 |
 | High pending | 289 |
 | Medium pending | 474 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - critical; audit_in_progress
 - [`universal_gr_polarization_frame_bundle_blocker_note`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md) - critical; unaudited
 - [`finite_rank_gravity_residual_helper_note_2026-04-14`](../../docs/FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md) - critical; audit_in_progress
+- [`coarse_grained_exterior_law_helper_note_2026-04-14`](../../docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
 - [`axiom_first_kms_condition_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited

@@ -1,0 +1,26 @@
+loop_slug: accessible-prediction-scope-20260618
+target_claim_id: accessible_prediction_note
+target_status: audited_conditional
+mode: science-fix
+branch: codex/accessible-prediction-scope-20260618
+base: origin/main
+cycle_count: 1
+active_route: executable_scope_firewall
+hard_residual: "P1..P6 are still supplied scenario premises, not derived framework primitives."
+files_touched:
+  - docs/ACCESSIBLE_PREDICTION_NOTE.md
+  - scripts/frontier_accessible_prediction.py
+  - logs/runner-cache/frontier_accessible_prediction.txt
+open_imports:
+  - "P1 rho=|psi|^2 Poisson sourcing."
+  - "P2 branch-level entangling dynamics."
+  - "P3 Born-gravity cross-link."
+  - "P4/P5/P6 ansatz validity ranges."
+trace_gate_classification: scope_firewall_repair
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_disposition: not_run_by_request
+pr_status: ready_for_reviewer
+next_exact_action: "Reviewer can decide whether executable conditional-scope firewall is enough to requeue the row as a clean conditional scenario packet."
+stop_condition: "Runner output no longer presents P1..P6 scenarios as unconditional framework predictions."

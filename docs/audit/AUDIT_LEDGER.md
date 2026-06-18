@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 219 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 988 |
+| **retained_bounded** | 989 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
-| unaudited | 1455 |
+| unaudited | 1454 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1433 |
+| `audited_clean` | 1434 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1777 |
+| `unaudited` | 1776 |
 
 | claim_type | count |
 |---|---:|
@@ -86,8 +86,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 892 |
-| `leaf` | 1420 |
+| `medium` | 891 |
+| `leaf` | 1421 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -880,6 +880,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -12851,6 +12852,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The implication from linear response to F~M = 1 closes as standard log-log slope algebra once the upstream Kubo coefficient and the runner's selected linearity subset are accepted. It does not establish an independent positive theorem because the F~M result is forced by the same measured linearity condition used to define the subset.
 - **rationale:** Issue: the decisive step is the algebraic identity that a response proportional to s has log-log slope 1. Why this blocks: the runner's headline 15/41 subset is selected by measured linearity ratios across the same strengths used to fit F~M, so the near-1 F~M result is a corollary of the subset definition rather than an independent derivation of a new battery condition. Repair target: present this as a bounded range-of-validity diagnostic under the true-Kubo parent, or add an independent criterion that does not mathematically enforce the F~M slope. Claim boundary until fixed: the runner supports that its selected linearity-regime families have the reported F~M statistics, conditional on the upstream Kubo coefficient.
 - **decoration parent:** `linear_response_true_kubo_note`
+- **auditor confidence:** high
+
+### `landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13`
+
+- **Note:** [`LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md`](../../docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the supplied two-dimensional single-band magnetic Peierls/Moyal star-product expansion and periodic Brillouin-torus boundary condition, the Landau-Peierls response prefactor is derived as -1/12 and checked against finite square-lattice Peierls diagonalization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The periodic divergence identity div V = G'''(E) Q + 2 G''(E) D makes integral G'''(E)Q = -2 integral G''(E)D on the Brillouin torus, reducing the star-expansion B^2 term to c2 = -(1/24) integral G''(E) det Hess(E) and chi = 2c2 = -(1/12) integral f'(E) det Hess(E).  _(class `C`)_
+- **chain closes:** True — The runner symbolically derives the local B^2 star-functional term, verifies the divergence identity exactly, and obtains the response prefactor only after applying the torus integral reduction and chi = 2c2 convention. The finite-lattice Hofstadter diagonalization is independent of the LP formula and numerically converges to the derived thermodynamic value.
+- **rationale:** The load-bearing prefactor is not imported or fitted: the source runner computes it from the stated magnetic star product and an independently checked periodic divergence identity. Manual inspection of the algebra confirms the sign and factor: the local term -(1/8)G''D -(1/24)G'''Q integrates to -(1/24)G''D, and the centered response doubles it to -1/12. The numerical diagonalization checks are corroborative rather than load-bearing and do not hard-code the contested prefactor.
 - **auditor confidence:** high
 
 ### `lanes.generated-geometry.readme`

@@ -1,7 +1,10 @@
 # yt Boundary BC-Transfer Finite-Grid Diagnostic (Backward-RGE)
 
 **Date:** 2026-05-17
-**Type:** bounded_theorem
+**Type:** conditional-support
+**Status:** conditional finite-grid implementation diagnostic only; not a
+continuum uniqueness theorem, physical BC-transfer theorem, or parent
+`yt_boundary_theorem` closure.
 **Claim scope:** the standalone finite-grid numerical diagnostic that the
 runner's backward-RGE map `y_t(v) -> y_t(M_Pl)` is finite on the sampled
 trajectories, increasing on the runner's 33-point `X` grid, has finite
@@ -32,6 +35,24 @@ unique-root closure.
 
 **Primary runner:** [`scripts/frontier_yt_boundary_bc_transfer_uniqueness.py`](../scripts/frontier_yt_boundary_bc_transfer_uniqueness.py)
 **Cache:** [`logs/runner-cache/frontier_yt_boundary_bc_transfer_uniqueness.txt`](../logs/runner-cache/frontier_yt_boundary_bc_transfer_uniqueness.txt)
+
+## 2026-06-18 Conditional-Status Firewall
+
+This row takes the audit fallback path: it is a conditional finite-grid
+implementation diagnostic over the declared runner inputs only. Its source
+status is not theorem-grade physical boundary transfer.
+
+The citable claim is restricted to the runner's finite sampled trajectories,
+33-point finite-grid monotonicity check, finite observed slopes, bracketed
+root stability checks, and extension scan under the declared implementation
+inputs. It does not derive the Ward target, canonical plaquette constants,
+SM RGE normalization, threshold seeds, or EW initial-condition surface from
+framework primitives. It does not prove continuum monotonicity, exact
+continuum uniqueness, physical validity of the SM EFT at `M_Pl`, or closure
+of the parent YT boundary theorem.
+
+No new axiom, retained bridge, audit verdict, ledger tag, or publication
+status is introduced by this firewall.
 
 ## 2026-06-07 Implementation-Input Boundary Retargeting
 
@@ -154,7 +175,7 @@ The runner performs 29 pass/fail checks:
 Expected result:
 
 ```text
-Counts: 29 PASS, 0 FAIL
+Counts: 30 PASS, 0 FAIL
 ```
 
 ## Audit Graph Hygiene

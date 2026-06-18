@@ -1,0 +1,25 @@
+loop_slug: yt-boundary-finite-grid-scope-20260618
+goal: "Queue a source-side YT boundary row repair for re-audit without auditing or retagging the ledger."
+target_status: conditional-support
+cycle_count: 1
+active_route: "Take the audit fallback path by classifying the YT boundary BC-transfer row as a conditional finite-grid implementation diagnostic."
+hard_residual_attacked: "The missing retained/accepted authorities for Ward target, plaquette constants, SM RGE normalization, threshold seeds, and EW initial-condition surface."
+files_touched:
+  - docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md
+  - scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
+  - logs/runner-cache/frontier_yt_boundary_bc_transfer_uniqueness.txt
+open_imports:
+  - "Ward boundary target authority"
+  - "canonical plaquette constants authority"
+  - "two-loop SM RGE normalization authority"
+  - "threshold seeds authority"
+  - "EW initial-condition surface authority"
+  - "continuum validated-numerics uniqueness theorem"
+no_go_routes:
+  - "Do not infer continuum monotonicity or exact uniqueness from the finite 33-point grid."
+  - "Do not treat implementation constants as retained physical authorities for this row."
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Commit, push, open ready PR, then record PR URL in PR_BACKLOG.md."
+stop_condition: "Stop this block after ready PR creation; continue campaign from refreshed audit opportunities."

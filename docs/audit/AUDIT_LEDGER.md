@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 952 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 22 |
-| unaudited | 1553 |
+| unaudited | 1552 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 15 |
+| ~~audited_renaming~~ | 16 |
 | ~~audited_conditional~~ | 25 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -66,8 +66,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 15 |
-| `unaudited` | 1875 |
+| `audited_renaming` | 16 |
+| `unaudited` | 1874 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 885 |
-| `leaf` | 1429 |
+| `medium` | 884 |
+| `leaf` | 1430 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1628,6 +1628,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -9069,6 +9070,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Given the weak-field bridge inputs L^{-1}=G_0, rho=|psi|^2, and S=L(1-phi), together with G(r) ~ 1/(4 pi r), Poisson linearity gives phi(r) ~ M/(4 pi r) and a bilinear inverse-square test-source force in lattice units.  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the cited bridge supplies the weak-field operator, source readout, and test response, while the Green-kernel authority supplies the 1/(4 pi r) asymptotic. Differentiating the potential and multiplying by the test-source response gives the claimed inverse-square bilinear scaling without importing physical G_Newton or nonlinear gravity.
 - **rationale:** The load-bearing step is an algebraic composition over retained-bounded one-hop inputs, not a new first-principles gravity derivation. The runner mostly verifies wiring, status firewalls, cache freshness, and dependency links, then checks the elementary 1/r and 1/r^2 scaling identities; it does not prove the upstream bridge or Green theorem. Because the source note explicitly confines the conclusion to the bounded weak-field lattice-unit implication and avoids the superseded physical-gravity overclaim, the scoped claim closes.
+- **auditor confidence:** high
+
+### `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Renaming/bounded weak-field finite linear algebra only: after identifying the gravitational weak-field response with phi = G_0 rho on the neutral subspace, the runner checks H phi = rho, linearity, a perturbed-kernel failure, Green-column decay, and one-step nonlinear kernel movement.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The weak-field gravitational potential sourced by matter density rho is identified with the lattice resolvent response phi = G_0 rho, where G_0 = H^{-1}, hence L = G_0^{-1} = H.  _(class `F`)_
+- **chain closes:** False — The finite algebra closes only after the gravitational response kernel is identified with the lattice propagator G_0. The missing step is a source-coupling theorem deriving that physical identification from lattice dynamics rather than defining or stipulating it.
+- **rationale:** The load-bearing move is a class F symbol-identity step between the gravitational weak-field response kernel and the lattice resolvent G_0. The runner verifies neutral-subspace identities and diagnostics after phi = G_0 rho is imposed, but it does not derive that gravity is mediated by the same H and G_0. The source note's own boundary says this support may not be cited as a retained derivation of L^{-1}=G_0, the gravitational response kernel, the 1/(4 pi r) asymptotic, or nonlinear self-gravity convergence.
+- **open / conditional deps cited:**
+  - `GRAVITY_FULL_SELF_CONSISTENCY_NOTE.md`
 - **auditor confidence:** high
 
 ### `gravity_full_self_consistency_note`

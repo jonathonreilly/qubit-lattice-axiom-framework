@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "teleportation_taste_readout_operator_model_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "universal_gr_polarization_frame_bundle_attempt"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
         "gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07",
         "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12",
         "quark_c3_oriented_ward_splitter_support_note_2026-04-28",
         "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
         "teleportation_bell_measurement_circuit_note",
-        "teleportation_taste_readout_operator_model_note"
+        "teleportation_taste_readout_operator_model_note",
+        "universal_gr_polarization_frame_bundle_attempt"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eccc00f301dfedd7d581107cfb6fcf2d96a2fa5099b1befd6dcae4331db361a3",
+      "note_hash": "2c80a37bfae853e70b09d475ea1973f59250eda8d178e1a6e61efb26ade6dc64",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

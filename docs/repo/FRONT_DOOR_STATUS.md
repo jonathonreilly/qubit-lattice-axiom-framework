@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1419 |
-| Retained-grade rows, including boxed decorations | 1383 |
+| Applied audit verdicts | 1420 |
+| Retained-grade rows, including boxed decorations | 1384 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 914 |
+| Retained bounded rows | 915 |
 | Boxed decorations under retained parents | 48 |
 | Open gates | 14 |
 | Unaudited rows | 1637 |
@@ -33,10 +33,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1640 |
-| Ready rows | 161 |
+| Total pending rows | 1639 |
+| Ready rows | 162 |
 | Cycle-break targets | 7 |
-| Critical pending | 308 |
+| Critical pending | 307 |
 | High pending | 289 |
 | Medium pending | 474 |
 | Leaf pending | 569 |
@@ -44,20 +44,20 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`gravity_clean_derivation_note`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md) - critical; audit_in_progress
 - [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
 - [`hierarchy_effective_potential_endpoint_note`](../../docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md) - critical; unaudited
 - [`koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - high; unaudited
 - [`source_resolved_exact_green_pocket_note`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md) - high; unaudited
 - [`action_normalization_note`](../../docs/ACTION_NORMALIZATION_NOTE.md) - high; unaudited
+- [`record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **434**.
+- Non-retained-grade cited rows in publication tables: **433**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -66,7 +66,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 93 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 

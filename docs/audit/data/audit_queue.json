@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 304,
-    "high": 280,
+    "high": 279,
     "leaf": 569,
     "medium": 474
   },
@@ -8860,30 +8860,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "restricted_strong_field_closure_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.822,
-      "note_path": "docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_restricted_strong_field_closure_packet.py",
-      "transitive_descendants": 79
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "teleportation_native_axioms_theory_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -9028,7 +9004,7 @@
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
         "plaquette_self_consistency_note"
       ],
-      "direct_in_degree": 13,
+      "direct_in_degree": 14,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
@@ -9036,12 +9012,12 @@
         "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
         "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
       ],
-      "load_bearing_score": 10.307,
+      "load_bearing_score": 11.858,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12.py",
-      "transitive_descendants": 13
+      "transitive_descendants": 28
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -33634,6 +33610,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gate_b_operator_cauchy_note_2026-05-10",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gate_b_connectivity_tolerance_note",
+        "restricted_strong_field_closure_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_operator_cauchy.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -40954,31 +40955,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/gate_b_connectivity_tolerance.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_operator_cauchy_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gate_b_connectivity_tolerance_note",
-        "restricted_strong_field_closure_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_operator_cauchy.py",
       "transitive_descendants": 0
     },
     {
@@ -48654,5 +48630,5 @@
     }
   ],
   "ready_count": 162,
-  "total_pending": 1627
+  "total_pending": 1626
 }

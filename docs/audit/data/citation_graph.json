@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "single_axiom_hilbert_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "restricted_strong_field_closure_note"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "single_axiom_hilbert_note",
         "restricted_strong_field_closure_note",
         "teleportation_native_axioms_theory_note",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
         "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
-        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+        "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "466e5bad6a3a73a910caf250a7a47bbc531fca6b9e8f0886ef11e0332a54ccdf",
+      "note_hash": "6818f44ff6a07f51f7e3131c30035f67e7864b827b4a1d5dd144c577273049b7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 919 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1633 |
+| unaudited | 1632 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 6 |
-| ~~audited_conditional~~ | 11 |
+| ~~audited_conditional~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1329 |
-| `audited_conditional` | 11 |
+| `audited_conditional` | 12 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
 | `audited_renaming` | 6 |
-| `unaudited` | 1955 |
+| `unaudited` | 1954 |
 
 | claim_type | count |
 |---|---:|
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 785 | 38.12 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1113 | 36.62 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1086 | 35.59 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 734 | 33.02 | `unaudited` | unaudited |
@@ -1467,6 +1467,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -8973,6 +8974,21 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Since rho_* = A_ref v_ref^4 = A(L) v(L)^4 with all quantities positive, v(L)^4 / v_ref^4 = A_ref / A(L), so v(L) / v_ref = (A_ref / A(L))^(1/4).  _(class `A`)_
 - **chain closes:** True — The fixed-density bridge is exact algebra: divide the two equal positive densities and take the unique positive fourth root. The endpoint examples then substitute retained-grade coefficient ratios; the broader electroweak order-parameter identification is explicitly outside the audited scope.
 - **rationale:** The source claim is a bounded algebraic bridge, not a first-principles derivation of the density or a physical VEV insertion. The primary runner computes the ratio formula, sign, normalization, and endpoint applications, and separately checks retained-grade dependency/status hygiene; it does not use observed targets or fitted comparators. The endpoint coefficients are cited inputs rather than derived here, but the audited conclusion only requires algebra over those inputs and the explicit fixed positive density premise. Within that boundary the chain closes.
+- **auditor confidence:** high
+
+### `hierarchy_dimensional_compression_note`
+
+- **Note:** [`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional intra-framework arithmetic: given the computed staggered-Dirac condensate-density ratio R and a positive fixed D=4 coefficient readout, R maps algebraically to R^(-1/4), is distinct from R^(-1/16), and uses the D=4 identity 1/D = 4/2^D.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_dimensional_compression_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the fixed positive D=4 density-coefficient readout, if R is the endpoint coefficient ratio relative to L_t=2, the scale readout is forced to be R^(-1/4), with the D=4 and D=16 candidates separated by more than 2%.  _(class `A`)_
+- **chain closes:** False — The arithmetic core closes under the supplied fixed-density coefficient-to-scale bridge and retained taste-count authorities. The chain does not close as a physical VEV or hierarchy readout because no provided authority identifies the electroweak order parameter with the fixed positive D=4 density or selects the physical endpoint coefficient surface.
+- **rationale:** Issue: the source proves only conditional D=4 coefficient-to-scale arithmetic, while the physical electroweak fixed-density/order-parameter identification remains open. Why this blocks: retained status cannot propagate from algebraic R^(-1/4) compression to a physical VEV readout without the missing observable bridge and endpoint selection. Repair target: derive and independently audit the physical theorem identifying the EW order parameter with the fixed D=4 density and the relevant A(L) surface. Claim boundary until fixed: the row supports conditional intra-framework D=4 arithmetic only, not a retained physical hierarchy theorem.
+- **open / conditional deps cited:**
+  - `HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`
 - **auditor confidence:** high
 
 ### `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`

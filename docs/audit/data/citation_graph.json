@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+      "to": "hierarchy_dimensional_compression_note"
     },
     {
       "from": "repo.front_door_status",
@@ -100630,7 +100630,7 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+        "hierarchy_dimensional_compression_note",
         "koide_mru_demotion_note_2026-04-20",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "source_resolved_exact_green_pocket_note",
@@ -100639,7 +100639,7 @@
         "single_axiom_hilbert_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "19c97fe1555298248c3f7f4f3f895d40346ec0a46e7399ac351f0d6022b46f03",
+      "note_hash": "7b8055b8f88607c26c6c2fb0aa75ff193a587c8fe6b10b5bb0394718124db499",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

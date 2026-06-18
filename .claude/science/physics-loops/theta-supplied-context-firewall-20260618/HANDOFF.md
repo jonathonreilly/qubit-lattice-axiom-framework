@@ -3,6 +3,8 @@
 This branch narrows the theta determinant-readout exhaustion source note to
 `conditional-support` / supplied-context algebra only.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4397
+
 What changed:
 
 - The note header no longer advertises `bounded_theorem`.

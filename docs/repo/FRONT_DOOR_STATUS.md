@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1644 |
-| Retained-grade rows, including boxed decorations | 1501 |
+| Applied audit verdicts | 1645 |
+| Retained-grade rows, including boxed decorations | 1502 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 218 |
-| Retained bounded rows | 1003 |
+| Retained bounded rows | 1004 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1413 |
+| Unaudited rows | 1412 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 61 |
 | Audited renaming rows | 30 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1415 |
-| Ready rows | 2 |
+| Total pending rows | 1414 |
+| Ready rows | 1 |
 | Cycle-break targets | 7 |
 | Critical pending | 302 |
 | High pending | 267 |
 | Medium pending | 407 |
-| Leaf pending | 439 |
+| Leaf pending | 438 |
 
 Next ready rows by queue order:
 
-- [`color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05`](../../docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
-- [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - leaf; unaudited
+- [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -77,16 +76,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 574 |
 | High nodes | 507 |
-| Medium nodes | 922 |
-| Leaf nodes | 1520 |
+| Medium nodes | 924 |
+| Leaf nodes | 1518 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1640 descendants; score 144.680
+- `minimal_axioms` - critical; 1641 descendants; score 144.681
 - `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1401 descendants; score 60.953
 - `observable_principle_from_axiom_note` - critical; 890 descendants; score 59.799
 - `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
 - `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
-- `key_terminology` - critical; 1118 descendants; score 46.628
+- `key_terminology` - critical; 1119 descendants; score 46.629
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

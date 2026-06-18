@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1003 |
+| **retained_bounded** | 1004 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1413 |
+| unaudited | 1412 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1453 |
+| `audited_clean` | 1454 |
 | `audited_conditional` | 61 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1735 |
+| `unaudited` | 1734 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 883 |
-| `leaf` | 1431 |
+| `medium` | 885 |
+| `leaf` | 1429 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -108,13 +108,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1641 | 144.68 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1401 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 890 | 59.80 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1084 | 40.58 | `unaudited` | unaudited |
@@ -122,7 +122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1366 | 39.42 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 907 | 38.83 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 998 | 38.46 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 785 | 38.12 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1113 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1086 | 35.59 | `audited_clean` | **retained_bounded** |
@@ -313,6 +313,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `color_generation_independent_z3_structures_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `color_link_sym2_endpoint_projection_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -4381,6 +4382,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Under the stated admitted endpoint hypothesis, the projectors, ranks, orthogonality, and embedded block action follow by finite-dimensional linear algebra. The chain does not derive endpoint ontology, block preservation dynamics, transport, Gauss/Wilson observables, action, or color readout, and the note keeps those outside scope.
 - **rationale:** The primary runner instantiates the two-qubit swap, projectors, symmetric/antisymmetric bases, and embedded Gell-Mann generators directly rather than printing constants; the 66 passing checks match the bounded algebraic scope. An independent algebra check gives the same closure: for an isometry V into the symmetric subspace, T_a=V(λ_a/2)V^† preserves P_sym, kills P_anti, and inherits Hermiticity, trace normalization, and su(3) commutators from the standard Gell-Mann matrices. The result is clean only as a bounded theorem on an admitted two-qubit endpoint, with all endpoint-ontology and dynamics claims explicitly residual.
 - **auditor confidence:** high
+
+### `color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05`
+
+- **Note:** [`COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md`](../../docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded partial-pinning result on the explicit C^8 base x fiber carrier: record-invariance supplies the conditional commutant half of the symmetric-base-to-color bridge and leaves the matter-realization antecedent open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-153428-eb742fcb-color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the antecedent that the physical records are the color singlets, the gauge-from-invariance-commutant reading selects the base SU(3), while the same link/Gauss-law profile does not force that antecedent over fiber SU(2).  _(class `A`)_
+- **chain closes:** True — The cited retained-bounded carrier and two-endpoint authorities, together with the runner, support the distinct commutants, color-singlet projectors, and non-discrimination of the gauged symmetry. The audited conclusion is only the bounded partial-pinning statement, so it does not import the unclosed physical-color bridge as a premise.
+- **rationale:** The load-bearing step is an algebraic identity and bounded comparison over explicit retained-grade inputs, not a numerical match or renaming. The note expressly does not derive physical SU(3)_c or force the records=color-singlets antecedent; it names that matter-realization residual. Within that stated scope, the chain closes without hidden physical-identification input.
+- **auditor confidence:** medium
 
 ### `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12`
 

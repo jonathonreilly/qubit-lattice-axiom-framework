@@ -52266,7 +52266,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
+      "to": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -100639,10 +100643,11 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
+        "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
+        "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6c0862e1c7db87db2cbab220d3739dbf737059a0d3bfe5c4faff2917bb2bc0e6",
+      "note_hash": "eea0dc249a70283b3049e6bec6d0be6d386dd23209d45271ef3bff082f9fdf2f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -115711,8 +115716,8 @@
       "open_gate": 180,
       "positive_theorem": 599
     },
-    "edge_count": 13166,
-    "leaf_count": 1145,
+    "edge_count": 13167,
+    "leaf_count": 1144,
     "node_count": 3523,
     "root_count": 1076,
     "runners_with_path": 3109

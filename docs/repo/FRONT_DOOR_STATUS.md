@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1523 |
-| Retained-grade rows, including boxed decorations | 1441 |
+| Applied audit verdicts | 1524 |
+| Retained-grade rows, including boxed decorations | 1442 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 959 |
+| Retained bounded rows | 960 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 27 |
-| Unaudited rows | 1534 |
+| Unaudited rows | 1533 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 29 |
 | Audited renaming rows | 16 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1536 |
-| Ready rows | 113 |
+| Total pending rows | 1535 |
+| Ready rows | 112 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
 | Medium pending | 412 |
-| Leaf pending | 553 |
+| Leaf pending | 552 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`color_link_sym2_endpoint_projection_2026-06-05`](../../docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md) - medium; unaudited
 - [`commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`](../../docs/COMMENSURATION_UNCONDITIONAL_PERIOD_PARITY_LEMMA_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28`](../../docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
 - [`ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16`](../../docs/EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md) - medium; unaudited
 - [`finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13`](../../docs/FINITE_CELL_TWO_BAND_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
+- [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - medium; unaudited
 - [`lanes.generated-geometry.readme`](../../docs/lanes/generated-geometry/README.md) - medium; unaudited
-- [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - leaf; unaudited
+- [`gate_b_weak_field_source_action_interface_note_2026-06-16`](../../docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 574 |
 | High nodes | 507 |
-| Medium nodes | 932 |
-| Leaf nodes | 1510 |
+| Medium nodes | 933 |
+| Leaf nodes | 1509 |
 
 Top load-bearing rows by graph score:
 
@@ -93,6 +93,6 @@ Top load-bearing rows by graph score:
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
 - `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
-- `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
+- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 49.006
 - `key_terminology` - critical; 1119 descendants; score 46.629
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 922 descendants; score 44.350

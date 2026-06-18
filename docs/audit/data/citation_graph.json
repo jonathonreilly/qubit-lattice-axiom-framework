@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "causal_distance_tail_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "color_link_sym2_endpoint_projection_2026-06-05"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lanes.generated-geometry.readme"
     },
     {
       "from": "repo.front_door_status",
-      "to": "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13"
+      "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "causal_distance_tail_note",
         "color_link_sym2_endpoint_projection_2026-06-05",
         "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12",
         "dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28",
         "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16",
+        "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13",
         "lanes.generated-geometry.readme",
-        "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13"
+        "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "164c6f660588c552c4aa979f80b7293d8fca2e330639d75fcd307638c92d9487",
+      "note_hash": "4e5c95dda65c54f0e49983325eb135479447caee7b76f42ed9f9db1df7e0d1ea",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

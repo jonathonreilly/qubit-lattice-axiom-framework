@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 959 |
+| **retained_bounded** | 960 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1534 |
+| unaudited | 1533 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1393 |
+| `audited_clean` | 1394 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1856 |
+| `unaudited` | 1855 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 893 |
-| `leaf` | 1421 |
+| `medium` | 894 |
+| `leaf` | 1420 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -106,23 +106,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1027 | 49.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 922 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 846 | 39.73 | `audited_clean` | **retained_bounded** |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1365 | 39.42 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 907 | 38.83 | `unaudited` | unaudited |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 908 | 38.83 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 998 | 38.46 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 786 | 38.12 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1114 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 925 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 734 | 33.02 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 1004 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 877 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
@@ -300,6 +300,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `color_generation_independent_z3_structures_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `color_link_sym2_endpoint_projection_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4060,6 +4061,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The color center scalar action has Z3 character (3, 3 omega, 3 omega^2), while the hw=1 generation axis cycle has regular character (3, 0, 0), so the two representations are inequivalent.  _(class `A`)_
 - **chain closes:** True — The retained-bounded cited authorities supply the two abstract carrier actions needed for the comparison. Finite Z3 characters are complete representation invariants, and the non-identity traces and multiplicities differ, so the scoped inequivalence follows without a physical readout bridge.
 - **rationale:** The load-bearing step is an exact algebraic character comparison over two supplied retained-grade abstract representations. The runner source constructs the Z3 cycle and omega scalar matrices, checks traces, generator relabeling, irreducible multiplicities, and Hom-rank obstruction rather than merely printing PASS output. No measured value, tuned scale, or physical color/generation identification enters the scoped conclusion; the no-go discipline check is satisfied for this narrow no-identification statement, not for any broader physical independence claim.
+- **auditor confidence:** high
+
+### `color_link_sym2_endpoint_projection_2026-06-05`
+
+- **Note:** [`COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md`](../../docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-dimensional projection algebra for an admitted two-qubit endpoint: the swap projector decomposes C^2⊗C^2 into Sym^2(C^2)⊕Anti^2(C^2), with standard su(3) acting on the symmetric rank-3 block and zero on the antisymmetric rank-1 block.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-color_link_sym2_endpoint_projection_2026-06-05-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given an admitted two-qubit endpoint, the swap involution defines P_sym=(I+S_ab)/2 and P_anti=(I-S_ab)/2 with ranks 3 and 1, and the Gell-Mann su(3) action embeds on the rank-3 symmetric block while annihilating the antisymmetric complement.  _(class `A`)_
+- **chain closes:** True — Under the stated admitted endpoint hypothesis, the projectors, ranks, orthogonality, and embedded block action follow by finite-dimensional linear algebra. The chain does not derive endpoint ontology, block preservation dynamics, transport, Gauss/Wilson observables, action, or color readout, and the note keeps those outside scope.
+- **rationale:** The primary runner instantiates the two-qubit swap, projectors, symmetric/antisymmetric bases, and embedded Gell-Mann generators directly rather than printing constants; the 66 passing checks match the bounded algebraic scope. An independent algebra check gives the same closure: for an isometry V into the symmetric subspace, T_a=V(λ_a/2)V^† preserves P_sym, kills P_anti, and inherits Hermiticity, trace normalization, and su(3) commutators from the standard Gell-Mann matrices. The result is clean only as a bounded theorem on an admitted two-qubit endpoint, with all endpoint-ontology and dynamics claims explicitly residual.
 - **auditor confidence:** high
 
 ### `complex_action_note`

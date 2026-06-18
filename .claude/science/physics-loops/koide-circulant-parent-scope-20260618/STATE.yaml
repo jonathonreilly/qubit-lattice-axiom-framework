@@ -1,0 +1,17 @@
+loop_slug: koide-circulant-parent-scope-20260618
+goal: "Make the high-load unaudited Koide circulant parent source row audit-readable without changing its science or claiming an audit outcome."
+target_claim_id: koide_circulant_character_derivation_note_2026-04-18
+target_status: bounded-support
+runtime_mode: source-side scope repair PR
+cycle_count: 1
+active_route: parent claim-scope hardening
+hard_residual: "The old parent row is high-load and unaudited; its source already has exact subproofs and open-boundary text, but lacked canonical Claim type / Claim scope front matter."
+files_touched:
+  - docs/KOIDE_CIRCULANT_CHARACTER_DERIVATION_NOTE_2026-04-18.md
+open_imports:
+  - "Frobenius-equipartition selection principle remains open."
+  - "Square-root readout, delta=2/9, v_0, and charged-lepton mass derivation remain open."
+review_loop_disposition: "not run; delegated to reviewer"
+pr_status: pending
+next_exact_action: "Open source-side PR for reviewer extraction."
+stop_condition: "One coherent scope-hardening repair packaged."

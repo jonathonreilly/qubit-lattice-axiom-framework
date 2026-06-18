@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31"
+      "to": "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12",
         "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
         "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15",
         "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
         "flavor_interacting_matter_build_note_2026-05-30",
+        "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "flavor_lane_panel_reduces_to_doublet_mode_count_2026-05-31"
+        "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e6086d90be3c310a7f03a437ff63ebe095e704d6819560131e5b20559ca0332b",
+      "note_hash": "4d35d0987f88f4e6cd9d7041c0c2584f098f5475afc610c53e001bf976c1896e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

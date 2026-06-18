@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 265,
-    "leaf": 503,
+    "leaf": 502,
     "medium": 413
   },
   "cycle_break_target_count": 8,
@@ -17455,31 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17583,6 +17558,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
+        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "three_generation_observable_theorem_note",
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_max_record_entropy_sector_blind_2026_06_15.py",
       "transitive_descendants": 15
     },
     {
@@ -30283,35 +30287,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02",
-        "flavor_r_half_stable_under_thermalizing_arrow_2026-06-02",
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "three_generation_observable_theorem_note",
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_max_record_entropy_sector_blind_2026_06_15.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44957,6 +44932,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 72,
-  "total_pending": 1488
+  "ready_count": 71,
+  "total_pending": 1487
 }

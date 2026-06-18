@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
+      "to": "architecture_note_directional_measure"
     },
     {
       "from": "repo.front_door_status",
@@ -52258,7 +52258,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "architecture_note_directional_measure"
+      "to": "teleportation_3d1_causal_record_channel_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
+        "architecture_note_directional_measure",
         "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
         "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "distance_law_definitive_note",
-        "architecture_note_directional_measure"
+        "teleportation_3d1_causal_record_channel_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0157e38cb9fce23a5d7b8c20441b4f5ed00ab787e8976c211591896465087764",
+      "note_hash": "a3d38caa8293c3c9092cbd9abae3538a388507c719894c8740e840e69339b35a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

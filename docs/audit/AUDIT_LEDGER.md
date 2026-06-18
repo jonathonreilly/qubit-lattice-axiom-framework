@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1574 |
+| unaudited | 1573 |
 | meta | 322 |
-| ~~audited_numerical_match~~ | 6 |
+| ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 13 |
 | ~~audited_conditional~~ | 22 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -65,9 +65,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
-| `audited_numerical_match` | 6 |
+| `audited_numerical_match` | 7 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1896 |
+| `unaudited` | 1895 |
 
 | claim_type | count |
 |---|---:|
@@ -1598,6 +1598,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `architecture_note_directional_measure` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -2038,6 +2039,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `ANOMALY_FORCES_TIME_THEOREM.md`
 - **auditor confidence:** high
+
+### `architecture_note_directional_measure`
+
+- **Note:** [`ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md`](../../docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Six deterministic directional-measure smoke/table checks at fixed tuned beta = 0.8; beta derivation and broader gravity/decoherence claims are outside the audited closure.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-architecture_note_directional_measure-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The tested smoke/table results hold at the fixed tuned point beta = 0.8, while beta itself is an empirical input rather than a derived constant.  _(class `G`)_
+- **chain closes:** True — The runner source performs finite fixture computations through the directional path-measure helpers and reports PASS=6/6 at beta = 0.8. This closes only the fixed-beta numerical support claim, not a derivation of beta or a general theorem beyond the tested fixtures.
+- **rationale:** Issue: the load-bearing result uses beta = 0.8 as a hard-coded tuned setting. Why this blocks clean status: the cited retained no-go supports the not-derived boundary, and the runner verifies only fixture behavior at that supplied value. Repair target: derive beta within a retained framework route and rerun the table without treating beta as calibrated input. Claim boundary until fixed: bounded numerical support at beta = 0.8 only.
+- **auditor confidence:** medium
 
 ### `architecture_portability_sweep_note`
 

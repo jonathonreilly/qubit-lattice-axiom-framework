@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/quark_route2_t_side_endpoint_theorem_attempt_bounded_2026_06_12.py
+runner_sha256: 83ab6a5a08fc14d0fcdb059ca848bca206dcd45473af92fca7c415000098d010
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+W71 Route-2 T-side endpoint theorem attempt (bounded rational runner)
+========================================================================
+PART 1: quote-anchor markers
+PASS: new note has canonical metadata and no untracked checkpoint pointers
+PASS: docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains required markers -- Given any admissible readout map `P_R`, lacks is a theorem that selects one unique `P_R`., Xi_P(t ; c) = (P_R c)
+PASS: docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains required markers -- gamma_E = alpha_E u_E + beta_E delta_A1 u_E, gamma_T = alpha_T u_T + beta_T delta_A1 u_T, P_R = [[alpha_E, 0, beta_E, 0],
+PASS: docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains required markers -- endpoint-fitted, not first-principles, fixed by the two endpoint, old `eta_floor_tf` pipeline
+PASS: docs/S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md contains required markers -- It does **not**, derive the unresolved readout-triple, valid for every admissible readout in the 1-parameter family
+PASS: docs/MINIMAL_AXIOMS_2026-06-05.md contains required markers -- record supplies no readout context, weighting, normalization, probability
+
+PART 2: exact conditional reproduction under supplied readout row
+PASS: restricted endpoint carrier columns are exact rational columns -- E-center=(Fraction(1, 1), Fraction(0, 1), Fraction(1, 6), Fraction(0, 1)), T-center=(Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(1, 6))
+PASS: supplied T row gives rho_T = beta_T/alpha_T = -1 exactly -- beta_T/alpha_T = 2/-2 = -1
+PASS: supplied T row gives q_T = 1 + rho_T/6 = 5/6 exactly -- q_T = 5/6
+PASS: supplied shell rows give s_TE = alpha_T/alpha_E = -2 exactly -- alpha_T/alpha_E = -2/1 = -2
+PASS: same arithmetic is integer-over-integer, not Fraction-of-float -- all denominators are exact Fraction denominators
+
+PART 3: exact readout-row freedom on the same carrier/time structure
+  candidate: rho_T=-1, q_T=5/6, s_TE=-2
+  free_t_shape: rho_T=0, q_T=1, s_TE=-2
+  free_e_shell_scale: rho_T=-1, q_T=5/6, s_TE=-1
+  free_t_shell_scale: rho_T=-1, q_T=5/6, s_TE=-3
+  free_sign_orientation: rho_T=-1, q_T=5/6, s_TE=2
+PASS: same carrier permits an exact row with s_TE fixed but rho_T not target -- alpha_T=-2, beta_T=0 gives rho_T=0 and q_T=1
+PASS: same carrier permits exact alpha_E rescaling that keeps rho_T but changes s_TE -- alpha_E=2 changes s_TE from -2 to -1
+PASS: same carrier permits exact alpha_T/beta_T common rescaling that keeps rho_T but changes s_TE -- alpha_T=-3, beta_T=3 changes s_TE from -2 to -3
+PASS: same carrier permits exact opposite shell orientation that keeps rho_T but flips s_TE sign -- alpha_T=2, beta_T=-2 gives s_TE=+2
+PASS: T-side row selection and E/T shell normalization are independent walls -- one counter-witness changes rho_T only; another changes s_TE only
+
+PART 4: wrong-structure falsifiers
+PASS: wrong center gap/dimension breaks q_T for the supplied T row -- delta=1/5 gives q_T=4/5
+PASS: wrong center gap/dimension breaks inverted rho_T from q_T=5/6 -- (5/6-1)/(1/5) = -5/6
+PASS: wrong channel pairing breaks rho_T and q_T visibly -- beta_T=21/4 with alpha_T=-2 gives rho_T=-21/8, q_T=9/16
+PASS: wrong E/T shell pairing inverts the normalization -- alpha_E/alpha_T = -1/2
+PASS: wrong shell-orientation sign preserves rho_T but breaks s_TE sign -- alpha_T=+2, alpha_E=1 gives s_TE=2
+PASS: wrong N_c substitution changes the color center fraction, not the shell normalization -- F_adj(2)=3/4, F_adj(3)=8/9, |s_TE|=2
+PASS: wrong N_c in the optional center-ratio bridge gives a different E lift -- N_c=2 would give q_E=20/9, rho_E=22/3
+
+PART 5: bridge localization checks
+PASS: E-center lift remains a separate parameter even after supplied T-side rows -- rho_E=0 gives c_TE=-5/3; rho_E=21/4 gives c_TE=-8/9
+PASS: approved premise registry text does not grant a readout bridge or normalization rule -- registered primitive notes explicitly exclude these grants
+TOTAL: PASS=25, FAIL=0
+
+----- stderr -----
+

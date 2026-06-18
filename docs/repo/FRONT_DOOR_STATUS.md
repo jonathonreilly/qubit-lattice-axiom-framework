@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1542 |
-| Retained-grade rows, including boxed decorations | 1449 |
+| Applied audit verdicts | 1543 |
+| Retained-grade rows, including boxed decorations | 1450 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 965 |
+| Retained bounded rows | 966 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 28 |
-| Unaudited rows | 1515 |
+| Unaudited rows | 1514 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 37 |
 | Audited renaming rows | 17 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1517 |
+| Total pending rows | 1516 |
 | Ready rows | 99 |
-| Cycle-break targets | 7 |
-| Critical pending | 304 |
-| High pending | 267 |
+| Cycle-break targets | 8 |
+| Critical pending | 307 |
+| High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 533 |
+| Leaf pending | 531 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15`](../../docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
 - [`su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`su3_dabc_symmetric_theorem_note_2026-05-02`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`teleportation_encoding_portability_note`](../../docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md) - medium; unaudited
 - [`lanes.generated-geometry.readme`](../../docs/lanes/generated-geometry/README.md) - medium; unaudited
 - [`accessible_prediction_note`](../../docs/ACCESSIBLE_PREDICTION_NOTE.md) - medium; unaudited
-- [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - leaf; unaudited
+- [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
+- [`allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14`](../../docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,18 +81,18 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3523 |
-| Critical nodes | 574 |
-| High nodes | 507 |
-| Medium nodes | 931 |
-| Leaf nodes | 1511 |
+| Critical nodes | 577 |
+| High nodes | 506 |
+| Medium nodes | 932 |
+| Leaf nodes | 1508 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1641 descendants; score 144.681
-- `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
+- `three_generation_observable_theorem_note` - critical; 1048 descendants; score 65.535
 - `graph_first_su3_integration_note` - critical; 1401 descendants; score 60.953
-- `observable_principle_from_axiom_note` - critical; 890 descendants; score 59.799
+- `observable_principle_from_axiom_note` - critical; 891 descendants; score 59.801
 - `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
-- `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
-- `key_terminology` - critical; 1118 descendants; score 46.628
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349
+- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 49.006
+- `key_terminology` - critical; 1119 descendants; score 46.629
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 922 descendants; score 44.350

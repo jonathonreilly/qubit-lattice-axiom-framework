@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 917 |
 | Boxed decorations under retained parents | 48 |
 | Open gates | 14 |
-| Unaudited rows | 1635 |
+| Unaudited rows | 1634 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 6 |
@@ -44,7 +44,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
+- [`koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md) - critical; audit_in_progress
 - [`hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - high; unaudited
 - [`source_resolved_exact_green_pocket_note`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md) - high; unaudited
@@ -61,11 +61,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 174 |
+| critical | `unaudited` | 173 |
 | high | `unaudited` | 158 |
 | medium | `unaudited` | 93 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 

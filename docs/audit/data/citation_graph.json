@@ -52254,11 +52254,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "action_normalization_note"
+      "to": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+      "to": "action_normalization_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100635,11 +100635,11 @@
         "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "source_resolved_exact_green_pocket_note",
-        "action_normalization_note",
-        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+        "action_normalization_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a159af84c674e8ad556e6fcde4290bbb2fc6fad3e317415f771aadbd8ae04907",
+      "note_hash": "618ab82e030f059855fc20a5ba8d0fd7208c874c8cff8cb5f22c6f82fc1343e7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

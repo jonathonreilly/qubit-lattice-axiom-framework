@@ -1,0 +1,27 @@
+loop: teleportation-poisson-finite-extraction-core-20260618
+target_claim_id: teleportation_resource_from_poisson_note
+target_note: docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md
+core_note: docs/TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md
+target_runner: scripts/frontier_teleportation_resource_from_poisson.py
+core_runner: scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py
+scope_runner: scripts/frontier_teleportation_poisson_resource_scope_repair.py
+base: origin/main@8e3a68da1
+branch: codex/teleportation-poisson-finite-extraction-core-20260618
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: split bounded offline finite extraction from open native preparation/readout theorem
+blocker_text: "The full deterministic physical teleportation-resource chain does not close because the native preparation/readout/apparatus theorem for producing and reading this Poisson resource remains missing."
+repair_summary: >
+  Added a bounded finite-extraction companion note and runner over the existing
+  Poisson/CHSH resource computation, fixed a stale null Bell-label tie check,
+  and kept the parent row as an open physical-resource gate.
+verification:
+  - "PYTHONPATH=scripts python3 scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py -> TOTAL: PASS=48 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_teleportation_poisson_resource_scope_repair.py -> TOTAL: PASS=23 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_teleportation_resource_from_poisson.py --trials 16 -> exit 0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py -> status ok"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_teleportation_poisson_resource_scope_repair.py -> status ok"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_teleportation_resource_from_poisson.py -> status ok"
+review_loop: delegated_to_codex_reviewer
+next_exact_action: open source-side PR; reviewer/auditor may re-audit the bounded finite-extraction split and parent open-gate boundary

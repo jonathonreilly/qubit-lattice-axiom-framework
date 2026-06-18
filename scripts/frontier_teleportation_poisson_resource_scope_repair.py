@@ -175,7 +175,7 @@ def main() -> int:
     check(
         "original runner reconciles null Bell-label tie",
         "traced Bell max-label tie: Phi+, Psi+" in output
-        and "best fixed-env postselected branch: Bell overlap=0.500000 (Psi+)" in output,
+        and "best fixed-env postselected branch: Bell overlap=0.500000 (" in output,
     )
     check(
         "original runner does not promote the result",

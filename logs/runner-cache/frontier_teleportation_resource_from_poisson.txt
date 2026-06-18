@@ -3,7 +3,7 @@ runner: scripts/frontier_teleportation_resource_from_poisson.py
 runner_sha256: 1b319e081c066147239237256908aef39755fcc01fd3255c1a873f517b43a978
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 POISSON/CHSH TELEPORTATION RESOURCE AUDIT
@@ -26,7 +26,7 @@ Case: 1d_null
   traced Bell max-label tie: Phi+, Psi+ (deterministic report uses Phi+)
   standard teleportation with traced resource: mean fidelity=0.669817, min=0.500038, max=0.987949, max trace error=0.000e+00
   best fixed-env postselected branch: Bell overlap=0.500000 (Phi+), probability=6.250000e-02, CHSH=2.000000, negativity=0.000000
-    env A=((0,), ()) env B=((3,), ())
+    env A=((1,), ()) env B=((1,), ())
   deterministic high-fidelity Bell resource (threshold 0.900): NO
 
 Case: 1d_poisson_chsh

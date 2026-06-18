@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1479 |
+| unaudited | 1478 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1420 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1801 |
+| `unaudited` | 1800 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 899 |
-| `leaf` | 1413 |
+| `medium` | 900 |
+| `leaf` | 1412 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1579,6 +1579,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7825,6 +7826,26 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The folded staggered phase matrices obey Gamma_mu^2 = I and Gamma_mu Gamma_nu + Gamma_nu Gamma_mu = 0, so H_hop(k)^2 = -(sum_mu sin^2 k_mu) I and every reduced momentum sector reduces to the one-axis 2 by 2 time-block algebra.  _(class `A`)_
 - **chain closes:** True — Both cited authorities are retained_bounded, which is retained-grade under the rubric, and they are used only for the one-axis two-step transfer algebra/normalization and quasilocal contour mechanism. The new d-dimensional step closes internally by the Gamma-matrix algebra and the note's self-contained strip estimate.
 - **rationale:** The load-bearing step is a genuine algebraic closure, not a definition or renaming: the staggered phase bookkeeping gives a Clifford family whose scalar square reduces the d-dimensional hop to the retained one-axis two-step eigenvalue calculation. The displayed signs, factors of 2, determinant/trace algebra, pi-periodicity support rule, contour-shift sign for exp(i p.z), and l_inf-to-l1 rate conversion are consistent. The runner source performs actual matrix, spectrum, and FFT checks rather than printing constants, and its finite d=2,d=3 computations support the general algebraic derivation without importing external comparators.
+- **auditor confidence:** high
+
+### `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28`
+
+- **Note:** [`FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md`](../../docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate decomposition recording that the FRW plus adiabatic cosmological backdrop remains conditional on C1-C3 and the named unaudited context surfaces, without deriving those premises or changing row statuses.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the retained S^3 spatial topology and the already-conditional FRW kinematic / open-number reduction surface, the eta-cascade's cosmological backdrop closes only after admitting the supplied premise packet C1-C3.  _(class `A`)_
+- **chain closes:** False — The source and runner consistently record the C1-C3 premise boundary, but the underlying backdrop does not close from the restricted packet. C1-C3 and the named S^3/FRW/open-number/N_eff/transport context surfaces remain unclosed or unaudited inputs.
+- **rationale:** The note is explicit that it is an open gate, not a derivation: C1-C3 are local supplied premises, and the relevant FRW/S3/N_eff/transport surfaces are described as unaudited or conditional. The runner verifies source-firewall phrases and the 5+3 partition, not a first-principles computation of FRW dynamics, adiabaticity, or equation-of-state labels. The audited claim therefore stands only as a conditional admission-boundary record, not as clean retained closure.
+- **open / conditional deps cited:**
+  - `S3_GENERAL_R_DERIVATION_NOTE.md`
+  - `COSMOLOGY_FRW_KINEMATIC_REDUCTION_THEOREM_NOTE_2026-04-24.md`
+  - `COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md`
+  - `DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`
+  - `DM_LEPTOGENESIS_TRANSPORT_DECOMPOSITION_THEOREM_NOTE_2026-04-16.md`
+  - `N_EFF_FROM_THREE_GENERATIONS_THEOREM_NOTE_2026-04-24.md`
 - **auditor confidence:** high
 
 ### `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`

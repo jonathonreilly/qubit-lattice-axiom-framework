@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03"
+      "to": "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
         "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28",
         "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "gate_b_dynamics_note",
         "gate_b_operator_cauchy_note_2026-05-10",
+        "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03"
+        "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f7101bd0a99d552588c64a75e02bf116c359468874b93a55311a630ca73353b5",
+      "note_hash": "bf835aba8da45bec5844c26d083b775fb2e7c0d7d8fc1ffaa4d6fc82a7ad9102",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

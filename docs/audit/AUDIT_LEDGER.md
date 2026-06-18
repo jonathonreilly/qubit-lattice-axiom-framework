@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 933 |
+| **retained_bounded** | 934 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 16 |
-| unaudited | 1597 |
+| unaudited | 1596 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
@@ -60,13 +60,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1350 |
+| `audited_clean` | 1351 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 50 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1919 |
+| `unaudited` | 1918 |
 
 | claim_type | count |
 |---|---:|
@@ -368,6 +368,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_dple_abcc_no_go_note_2026-04-19` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | D | - |
+| `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4937,6 +4938,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Using the corrected high-precision continuum thermal evaluator on the admitted same-surface one-scalar DM family gives a unique interior closure crossing at sigma_conv = 0.145077095756643 and Omega_DM = 0.268.  _(class `D`)_
 - **chain closes:** True — The note states a bounded admitted-family convergence claim, and the runner recomputes the interior crossing, matches the quoted Omega_DM comparator, and verifies material drift away from the coarse and 9/62 values.
 - **rationale:** The bounded support claim closes on its own terms: the runner recomputes the converged same-surface selector, verifies the observed Omega_DM comparator on the admitted one-scalar family, and checks that the coarse grid and 9/62 clue are not stable. The source note explicitly keeps current-bank selector closure open, so this clean audit is limited to the convergence/sanity-check surface and does not ratify a theorem-grade DM selector law. Residual risk is downstream misuse of the admitted-family crossing as a first-principles current-bank closure.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Arithmetic verification that the helper-defined endpoint couplings, certified R(alpha) intervals, and Omega_b-scaled Omega_DM intervals satisfy the displayed strict ordering and non-overlap inequalities, with no selector or completeness claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** alpha_bare < alpha_lo < alpha_hi, R(alpha_lo)_hi < R(alpha_hi)_lo, and Omega_DM(alpha_lo)_hi < Omega_DM(alpha_hi)_lo.  _(class `A`)_
+- **chain closes:** True — Within the stated boundary, the conclusion follows directly from the helper-computed/displayed numeric intervals and strict inequality checks. The packet does not close any stronger claim about endpoint selection, helper completeness, or independent retained status of the helper layer, but those claims are explicitly excluded.
+- **rationale:** The load-bearing step is a bounded arithmetic certificate over supplied helper-defined outputs, not a first-principles selector derivation. The primary runner calls the included helper functions, checks endpoint ordering and interval disjointness, and the cached run reports PASS=8 FAIL=0 with values matching the note. The cited dependency links are retained-bounded bookkeeping links and are not used to broaden the audited scope.
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`

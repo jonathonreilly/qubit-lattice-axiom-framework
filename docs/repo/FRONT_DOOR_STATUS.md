@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1460 |
-| Retained-grade rows, including boxed decorations | 1408 |
+| Applied audit verdicts | 1461 |
+| Retained-grade rows, including boxed decorations | 1409 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 933 |
+| Retained bounded rows | 934 |
 | Boxed decorations under retained parents | 49 |
 | Open gates | 16 |
-| Unaudited rows | 1597 |
+| Unaudited rows | 1596 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 18 |
 | Audited renaming rows | 11 |
@@ -33,20 +33,20 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1599 |
+| Total pending rows | 1598 |
 | Ready rows | 155 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 269 |
-| Medium pending | 457 |
+| Medium pending | 456 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_sector_truncated_environment_packet_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md) - medium; unaudited
 - [`industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md) - medium; unaudited
+- [`dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md) - medium; unaudited
 - [`koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
 - [`yt_ew_m_residual_note_2026-05-02`](../../docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
@@ -57,13 +57,13 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **428**.
+- Non-retained-grade cited rows in publication tables: **427**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 173 |
 | high | `unaudited` | 153 |
-| medium | `unaudited` | 91 |
+| medium | `unaudited` | 90 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
 | critical | `audited_conditional` | 1 |

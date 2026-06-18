@@ -15,8 +15,12 @@ so the total is zero.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
+
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md"
 
 
 ANOMALY_INDEX = {
@@ -93,6 +97,66 @@ def part_reference_indices(checks: list[Check]) -> None:
         "conjugate sextet has opposite anomaly index",
         ANOMALY_INDEX["6bar"] == -ANOMALY_INDEX["6"],
         f"A(6bar)={ANOMALY_INDEX['6bar']}, -A(6)={-ANOMALY_INDEX['6']}",
+    )
+
+
+def gell_mann_generators() -> np.ndarray:
+    lam = np.zeros((8, 3, 3), dtype=complex)
+    lam[0] = [[0, 1, 0], [1, 0, 0], [0, 0, 0]]
+    lam[1] = [[0, -1j, 0], [1j, 0, 0], [0, 0, 0]]
+    lam[2] = [[1, 0, 0], [0, -1, 0], [0, 0, 0]]
+    lam[3] = [[0, 0, 1], [0, 0, 0], [1, 0, 0]]
+    lam[4] = [[0, 0, -1j], [0, 0, 0], [1j, 0, 0]]
+    lam[5] = [[0, 0, 0], [0, 0, 1], [0, 1, 0]]
+    lam[6] = [[0, 0, 0], [0, 0, -1j], [0, 1j, 0]]
+    lam[7] = (1 / np.sqrt(3)) * np.array(
+        [[1, 0, 0], [0, 1, 0], [0, 0, -2]],
+        dtype=complex,
+    )
+    return lam / 2.0
+
+
+def cubic_trace(gens: np.ndarray, a: int, b: int, c: int) -> float:
+    anticommutator = gens[b] @ gens[c] + gens[c] @ gens[b]
+    return float(np.trace(gens[a] @ anticommutator).real)
+
+
+def d_symbol(gens: np.ndarray, a: int, b: int, c: int) -> float:
+    anticommutator = gens[a] @ gens[b] + gens[b] @ gens[a]
+    return float((2 * np.trace(anticommutator @ gens[c])).real)
+
+
+def part_core_index_derivation(checks: list[Check]) -> None:
+    gens3 = gell_mann_generators()
+    gens3bar = -np.conjugate(gens3)
+    a, b, c = 0, 0, 7  # mathematical labels (1,1,8)
+    d118 = d_symbol(gens3, a, b, c)
+    a3 = 2 * cubic_trace(gens3, a, b, c) / d118
+    a3bar = 2 * cubic_trace(gens3bar, a, b, c) / d118
+
+    add(
+        checks,
+        "explicit Gell-Mann trace gives nonzero d118",
+        abs(d118 - 1 / np.sqrt(3)) < 1e-12,
+        f"d118={d118:.12f}",
+    )
+    add(
+        checks,
+        "explicit Gell-Mann trace derives A(3)=+1",
+        abs(a3 - 1.0) < 1e-12,
+        f"A(3)={a3:.12f}",
+    )
+    add(
+        checks,
+        "explicit conjugate-rep trace derives A(3bar)=-1",
+        abs(a3bar + 1.0) < 1e-12,
+        f"A(3bar)={a3bar:.12f}",
+    )
+    add(
+        checks,
+        "hard-coded core index table agrees with explicit trace derivation",
+        ANOMALY_INDEX["3"] == round(a3) and ANOMALY_INDEX["3bar"] == round(a3bar),
+        f"table=({ANOMALY_INDEX['3']},{ANOMALY_INDEX['3bar']})",
     )
 
 
@@ -216,19 +280,7 @@ def su2_d_tensor_max() -> float:
 
 
 def su3_d_tensor_stats() -> tuple[float, int]:
-    lam = np.zeros((8, 3, 3), dtype=complex)
-    lam[0] = [[0, 1, 0], [1, 0, 0], [0, 0, 0]]
-    lam[1] = [[0, -1j, 0], [1j, 0, 0], [0, 0, 0]]
-    lam[2] = [[1, 0, 0], [0, -1, 0], [0, 0, 0]]
-    lam[3] = [[0, 0, 1], [0, 0, 0], [1, 0, 0]]
-    lam[4] = [[0, 0, -1j], [0, 0, 0], [1j, 0, 0]]
-    lam[5] = [[0, 0, 0], [0, 0, 1], [0, 1, 0]]
-    lam[6] = [[0, 0, 0], [0, 0, -1j], [0, 1j, 0]]
-    lam[7] = (1 / np.sqrt(3)) * np.array(
-        [[1, 0, 0], [0, 1, 0], [0, 0, -2]],
-        dtype=complex,
-    )
-    generators = lam / 2.0
+    generators = gell_mann_generators()
     max_value = 0.0
     nonzero = 0
     for a in range(8):
@@ -286,17 +338,59 @@ def part_scope(checks: list[Check]) -> None:
     )
 
 
+def part_source_boundary(checks: list[Check]) -> None:
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    retained_inputs = note.split("## Proof On Retained Content", 1)[0]
+    handoff = note.split("## Source-side dependency rebase handoff", 1)[-1]
+    normalized_handoff = " ".join(handoff.split())
+
+    add(
+        checks,
+        "source note records 2026-06-18 narrow-authority rebase",
+        "## 2026-06-18 source-side narrow-authority rebase" in note,
+        "branch-local source repair section present",
+    )
+    add(
+        checks,
+        "load-bearing inputs cite RH color anti-fundamental narrow theorem",
+        "RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md" in retained_inputs,
+        "A(3bar)=-1 source is explicit",
+    )
+    add(
+        checks,
+        "load-bearing inputs cite anomaly singlet completion narrow theorem",
+        "ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md" in retained_inputs,
+        "right-handed slot arithmetic source is explicit",
+    )
+    add(
+        checks,
+        "broad one-generation and hypercharge rows are not markdown load-bearing links",
+        "[ONE_GENERATION_MATTER_CLOSURE_NOTE.md]" not in note
+        and "[STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md]" not in note,
+        "broad rows remain plain-text reader pointers only",
+    )
+    add(
+        checks,
+        "handoff keeps full matter closure outside this row",
+        "does not close full one-generation matter closure" in normalized_handoff
+        and "does not derive the branch convention" in normalized_handoff,
+        "remaining blockers are named",
+    )
+
+
 def main() -> int:
     checks: list[Check] = []
     part_reference_indices(checks)
+    part_core_index_derivation(checks)
     part_content_audit(checks)
     part_cancellation(checks)
     part_net_count(checks)
     part_extension_scenarios(checks)
     part_group_theory(checks)
     part_scope(checks)
+    part_source_boundary(checks)
 
-    print("SU(3)^3 cubic gauge anomaly retained-count audit")
+    print("SU(3)^3 cubic gauge anomaly source-side verifier")
     print("=" * 72)
     for check in checks:
         status = "PASS" if check.passed else "FAIL"

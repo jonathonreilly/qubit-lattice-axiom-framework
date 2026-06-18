@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "causal_cone_speed_map_note"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "causal_cone_speed_map_note"
+      "to": "causal_impact_parameter_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
         "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
         "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
         "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12",
+        "causal_cone_speed_map_note",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "causal_cone_speed_map_note"
+        "causal_impact_parameter_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7071c6f915978655b39b6400ba1a7ac18fb4e56bc133dfc1994267b56d3c62cb",
+      "note_hash": "9011cf533d0dd48c8fc1fb644f0307a137f94d611d5be5acdda38f056d476ddb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

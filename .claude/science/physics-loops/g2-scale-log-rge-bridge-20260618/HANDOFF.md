@@ -3,6 +3,8 @@
 This block targets the `g_2(v)` bounded interval row's audit blocker for X6
 and X7 only.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4302
+
 What changed:
 
 - Hardened the existing 2026-06-15 bounded-support bridge with direct

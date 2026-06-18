@@ -1,17 +1,12 @@
 #!/usr/bin/env python3
-"""Audit the direct-universal polarization-frame-bundle blocker.
+"""Finite prototype verifier for the universal-GR frame-bundle attempt.
 
-This is not a closure proof. It checks that the current atlas gives:
-
-1. the exact scalar observable generator from the axiom-side observable
-   principle;
-2. the exact `3+1` kinematic lift on `PL S^3 x R`;
-3. the exact tensor-valued variational candidate;
-4. the exact unique symmetric `3+1` quotient kernel;
-5. a sharpened blocker stating that the missing primitive is a covariant
-   `3+1` polarization frame / projector bundle;
-6. a frame-orbit check showing that the current stack determines an
-   associated family of localizations, not a canonical section.
+This runner deliberately does not read the route-level upstream notes as proof
+inputs. It checks the auditable source claim of the attempt row: on the finite
+prototype Hessian, two valid polarization frames give the same scalar-channel
+sector but different complement-channel localization coefficients. The route
+context remains open unless downstream rows cite and audit the upstream
+scalar/3+1/tensor/quotient authorities directly.
 """
 
 from __future__ import annotations
@@ -25,19 +20,17 @@ from typing import Sequence
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 
-OBSERVABLE = DOCS / "OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md"
-ROUTE2 = DOCS / "S3_ANOMALY_SPACETIME_LIFT_NOTE.md"
-VARIATIONAL = DOCS / "UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md"
-UNIQUENESS = DOCS / "UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md"
-BLOCKER = DOCS / "UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md"
-CURVATURE = DOCS / "UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md"
-FRAME_BUNDLE = DOCS / "UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md"
 ATTEMPT_NOTE = DOCS / "UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md"
 
 SOURCE_BOUNDARY_REQUIRED_PHRASES = [
+    "Audit-scope note (2026-06-18)",
+    "finite prototype frame-dependence diagnostic",
+    "not one-hop proof authorities imported by this row",
+    "without reading those upstream notes as proof inputs",
     "Downstream source-boundary firewall",
-    "exact scalar observable generator",
-    "exact `3+1` kinematic lift",
+    "cite the finite prototype frame-dependence diagnostic",
+    "citing those upstream sources directly if they are load-bearing",
+    "`3+1` lift on `PL S^3 x R`",
     "unique symmetric",
     "rank-2 scalar-channel projector",
     "complement-channel localization coefficients",
@@ -48,6 +41,7 @@ SOURCE_BOUNDARY_REQUIRED_PHRASES = [
     "framework-level GR derivation",
     "exhaustive no-go",
     "distinguished covariant frame/projector bundle with connection",
+    "This packet's auditable source claim is",
 ]
 
 
@@ -63,7 +57,7 @@ def read(path: Path) -> str:
 
 
 def has(text: str, needle: str) -> bool:
-    return needle.lower() in text.lower()
+    return " ".join(needle.lower().split()) in " ".join(text.lower().split())
 
 
 def bilinear(
@@ -228,13 +222,6 @@ def max_abs_delta(a: Sequence[float], b: Sequence[float]) -> float:
 
 
 def main() -> int:
-    obs = read(OBSERVABLE)
-    route2 = read(ROUTE2)
-    var = read(VARIATIONAL)
-    uni = read(UNIQUENESS)
-    blk = read(BLOCKER)
-    curv = read(CURVATURE)
-    fb = read(FRAME_BUNDLE)
     attempt = read(ATTEMPT_NOTE)
 
     d = (2.0, 3.0, 5.0, 7.0)
@@ -259,29 +246,10 @@ def main() -> int:
     resp_a = response_vector(h_test, frame_a, d)
     resp_b = response_vector(h_test, frame_b, d)
     frame_delta = max_abs_delta(resp_a, resp_b)
+    scalar_channel_delta = max(abs(resp_a[i] - resp_b[i]) for i in (0, 4))
+    complement_delta = max(abs(resp_a[i] - resp_b[i]) for i in (1, 2, 3, 5, 6, 7, 8, 9))
 
     checks = [
-        Check(
-            "scalar generator is exact",
-            has(obs, "observable principle") and has(obs, "det(d+j)") and has(obs, "det d"),
-            "observable principle gives the exact scalar generator",
-        ),
-        Check(
-            "3+1 lift is exact",
-            has(route2, "pl s^3 x r") or has(route2, "O_lift = 1"),
-            "route-2 gives the exact PL S^3 x R scaffold",
-        ),
-        Check(
-            "tensor candidate is exact as a construction",
-            has(var, "metric-source hessian") and has(var, "s_gr^cand"),
-            "candidate note identifies the Hessian on the lifted background",
-        ),
-        Check(
-            "unique symmetric quotient kernel is exact on the prototype",
-            has(uni, "unique symmetric `3+1` quotient kernel")
-            or has(uni, "unique bilinear lift"),
-            "quotient-uniqueness note records the nondegenerate prototype kernel",
-        ),
         Check(
             "prototype Gram matrix is symmetric",
             max_symmetry_error(gram) < 1e-15,
@@ -298,30 +266,28 @@ def main() -> int:
             f"direct = {scalar_direct:.6e}, expected = {scalar_expected:.6e}",
         ),
         Check(
-            "blocker note names the curvature-localization map",
-            has(blk, "curvature-localization map")
-            and has(blk, "Einstein/Regge"),
-            "blocker is still sharpened to the localization primitive",
+            "canonical and rotated frames have ten symmetric-sector channels",
+            len(frame_a) == len(frame_b) == 10,
+            f"len(frame_a)={len(frame_a)}, len(frame_b)={len(frame_b)}",
         ),
         Check(
-            "curvature-localization blocker isolates the frame-orbit obstruction",
-            has(curv, "older frame-orbit blocker was too strong")
-            or (has(curv, "frame-orbit") and has(curv, "Casimir block localization")),
-            "older frame-orbit blocker is now historical; live blocker reframed as interpretation theorem beyond Lorentzian closure",
+            "rank-2 scalar channel is invariant under the tested spatial rotation",
+            scalar_channel_delta < 1e-12,
+            f"max scalar-channel delta = {scalar_channel_delta:.3e}",
         ),
         Check(
-            "frame-bundle note records the same missing primitive",
-            has(fb, "polarization-frame bundle") and has(fb, "Pi_curv"),
-            "the dedicated blocker note matches the curvature blocker",
+            "complement channels depend on frame choice",
+            complement_delta > 1e-6 and abs(complement_delta - frame_delta) < 1e-15,
+            f"max complement delta = {complement_delta:.3e}",
         ),
         Check(
-            "localization coefficients depend on frame choice",
+            "localized full-channel coefficients depend on frame choice",
             frame_delta > 1e-6,
             f"max channel delta across two valid polarization frames = {frame_delta:.3e}",
         ),
         Check(
             "source-boundary firewall names allowed and forbidden downstream uses",
-            all(phrase.lower() in attempt.lower() for phrase in SOURCE_BOUNDARY_REQUIRED_PHRASES),
+            all(has(attempt, phrase) for phrase in SOURCE_BOUNDARY_REQUIRED_PHRASES),
             "attempt note preserves open-gate/source-boundary guardrails",
         ),
         Check(
@@ -331,9 +297,15 @@ def main() -> int:
             and has(attempt, "do not cite it as a framework-level GR derivation"),
             "runner pass remains blocker/support only, not GR closure",
         ),
+        Check(
+            "runner boundary avoids hidden route-level imports",
+            has(attempt, "not one-hop proof authorities imported by this row")
+            and has(attempt, "Any downstream current-stack or route-level closure must cite and audit the upstream sources directly"),
+            "attempt note keeps upstream route handles out of this runner's proof inputs",
+        ),
     ]
 
-    print("UNIVERSAL GR POLARIZATION-FRAME BUNDLE AUDIT")
+    print("UNIVERSAL GR POLARIZATION-FRAME BUNDLE FINITE DIAGNOSTIC")
     print("=" * 78)
     for c in checks:
         tag = "PASS" if c.ok else "FAIL"
@@ -348,6 +320,8 @@ def main() -> int:
     print(f"gram_rank       = {rank(gram)}")
     print(f"gram_size       = {len(gram)}")
     print(f"symmetry_error  = {max_symmetry_error(gram):.12e}")
+    print(f"scalar_delta    = {scalar_channel_delta:.12e}")
+    print(f"complement_delta= {complement_delta:.12e}")
     print(f"frame_delta     = {frame_delta:.12e}")
     print(f"resp_a[0:4]     = {[f'{x:.6e}' for x in resp_a[:4]]}")
     print(f"resp_b[0:4]     = {[f'{x:.6e}' for x in resp_b[:4]]}")
@@ -360,11 +334,10 @@ def main() -> int:
     print(f"PASS={n_pass} FAIL={n_fail} TOTAL={len(checks)}")
     if n_fail == 0:
         print(
-            "Direct-universal progress: the scalar observable principle and the "
-            "3+1 lift now support an exact tensor-valued variational candidate "
-            "with a unique symmetric quotient kernel, but the exact curvature-"
-            "localization operator is still missing and only an associated "
-            "localization orbit is currently determined."
+            "Finite diagnostic: the displayed prototype has a canonical rank-2 "
+            "scalar channel, while complement-channel localization remains "
+            "frame-dependent. Route-level upstream closure is not claimed by "
+            "this runner."
         )
         return 0
 

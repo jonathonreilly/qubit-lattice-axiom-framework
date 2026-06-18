@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_connectivity_tolerance.py
-runner_sha256: 50289f18b0fc997fcd59a42ee64fc3565320779fb66a49b57984c2814cc0d13f
+runner_sha256: 501656d290b2b6675b07f3874b7d377e6d5f9e4935ae4df03640d34894063413
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.75
+elapsed_sec: 5.20
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -43,7 +43,7 @@ Interpretation:
 Source-boundary checks
 ----------------------------------------
 [PASS] note claim type is open_gate and has 2026-06-12 source-index firewall
-[PASS] GB-S1/GB-S2/GB-S3 remain supplied row-local ingredients
+[PASS] GB-S1b/GB-S2b/GB-S3b residues remain supplied row-local data
 [PASS] note forbids Gate B dynamics closure and axiom/admission/status changes
 BOUNDARY_CHECKS: PASS=3 FAIL=0
 

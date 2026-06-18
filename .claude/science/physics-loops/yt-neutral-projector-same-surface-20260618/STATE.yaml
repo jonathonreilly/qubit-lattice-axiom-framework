@@ -1,0 +1,37 @@
+loop_id: yt-neutral-projector-same-surface-20260618
+status: packaged_for_review
+created: 2026-06-18
+branch: codex/yt-neutral-projector-same-surface-20260618
+base: origin/main@91622d703
+goal: "Source-side audit unlock for the Y_T qubit neutral-Higgs carrier-ray bridge, without editing audit/status surfaces."
+target_claim_id: yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25
+target_prior_audit_status: audited_conditional
+target_note: docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md
+new_support_note: docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md
+new_runner: scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py
+updated_runner: scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py
+runner_cache:
+  - logs/runner-cache/frontier_yt_ew_neutral_projector_same_surface_carrier.txt
+  - logs/runner-cache/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.txt
+audit_blocker: "missing_bridge_theorem: add or cite a retained same-surface carrier theorem identifying the qubit P_- source ray with the neutral EW Higgs doublet ray, then re-audit the bounded support claim."
+actual_current_surface_status: exact-support
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The branch closes the same-surface carrier blocker only; physical Y_T closure still needs top coefficient, transfer-response, scalar normalization, top carrier/hypercharge authority, and physical-scale g_2 support."
+trace_class: direct_blocker_closure
+reachability_to_target: closes_source_side_blocker
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle_count: 1
+review_loop_disposition: deferred_to_external_reviewer_by_user_instruction
+open_imports:
+  - top coefficient theorem or direct top response measurement
+  - retained one-Higgs/top carrier authority
+  - retained hypercharge authority
+  - scalar LSZ/source-Higgs normalization
+  - physical-scale g_2 authority
+  - positive physical Y_T transfer-surface closure
+forbidden_surfaces_touched: false
+next_exact_action: "Open review PR, then let independent reviewer/auditor decide whether the source-side repair requeues or moves the audited_conditional row."

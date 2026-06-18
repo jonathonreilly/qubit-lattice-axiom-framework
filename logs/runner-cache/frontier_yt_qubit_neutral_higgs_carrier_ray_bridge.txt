@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py
-runner_sha256: 92bdfb5e93a585d2eb07b09aea3f26a48d1d891bcd0829e8a891bb1674c4e3a6
+runner_sha256: 1eae89fde219f8a3d6dabc089223774241bb3ffca6e8a9568e3346724918c9d5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -15,6 +15,7 @@ Part 1: anchors and authority scope
 [PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
 [PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
 [PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md exists
 [PASS] docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md exists
 [PASS] docs/audit/data/audit_ledger.json exists
 [PASS] note contains required section: Theorem
@@ -22,6 +23,12 @@ Part 1: anchors and authority scope
 [PASS] note contains required section: What This Still Does Not Close
 [PASS] note contains required section: Why This Is Not A Renaming
 [PASS] note contains required section: Review Boundary Certificate
+[PASS] same-surface carrier theorem contains marker: same-surface spectral-projector theorem
+[PASS] same-surface carrier theorem contains marker: P_neut = 1_0(Q_H)
+[PASS] same-surface carrier theorem contains marker: P_+ = P_ch
+[PASS] same-surface carrier theorem contains marker: P_- = P_neut
+[PASS] same-surface carrier theorem contains marker: exp(h epsilon_H) = exp(h) exp(-2 h P_neut)
+[PASS] same-surface carrier theorem contains marker: does not derive positive Y_T closure
 [PASS] source-action support packet is retained_bounded
 [PASS] EW Higgs gauge-mass theorem is retained
 [PASS] one-Higgs Yukawa gauge-selection row is not retained
@@ -47,6 +54,8 @@ Part 3: P_- is the retained neutral EW Higgs ray
 [PASS] neutral ray is unique in the one-Higgs doublet: [Matrix([
 [0],
 [1]])]
+[PASS] P_- equals the zero spectral projector I-Q: Matrix([[0, 0], [0, 1]])
+[PASS] P_+ equals the charged spectral projector Q: Matrix([[1, 0], [0, 0]])
 
 Part 4: radial tangent stays on the same neutral ray
 [PASS] H(s) lies on P_- ray: Matrix([[0], [sqrt(2)*v(s)/2]])
@@ -56,6 +65,7 @@ Part 4: radial tangent stays on the same neutral ray
 
 Part 5: current closure boundary
 [PASS] neutral carrier-ray bridge is closed
+[PASS] same-surface charge-spectral projector theorem is present
 [PASS] strict W/Z denominator response packet is present
 [PASS] symbolic top response row packet is present
 [PASS] full same-surface top/W transfer response remains open
@@ -81,7 +91,7 @@ Part 6: firewalls
 [PASS] forbidden overclaim absent: coefficient-certified top/W response rows are present
 
 wrote outputs/yt_qubit_neutral_higgs_carrier_ray_bridge_2026-05-25.json
-SUMMARY: PASS=56 FAIL=0
+SUMMARY: PASS=66 FAIL=0
 
 ----- stderr -----
 

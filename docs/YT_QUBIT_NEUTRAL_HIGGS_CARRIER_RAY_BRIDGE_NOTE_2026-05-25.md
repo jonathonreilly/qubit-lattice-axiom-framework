@@ -35,6 +35,10 @@ Load-bearing one-hop authorities:
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
   supplies the retained one-Higgs electroweak doublet bookkeeping:
   `H_0 = (0, v/sqrt(2))^T`, `Y_H = 1/2`, and `Q = T_3 + Y`.
+- [`YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md`](YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md)
+  supplies the same-surface spectral-projector theorem that identifies the
+  qubit `P_-` source ray with the neutral EW Higgs ray as
+  `P_neut = 1_0(Q_H)` on the same one-Higgs doublet carrier.
 - [`YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`](YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md)
   supplies the already-landed support fact that a common top/W response ratio
   is invariant under local source reparameterization.
@@ -140,6 +144,26 @@ This is not a fitted choice and it does not use observed masses.  It is the
 finite Pauli/projector algebra of one qubit plus the retained EW neutral-ray
 bookkeeping.
 
+## 2026-06-18 Same-Surface Carrier Repair
+
+The same-surface carrier step is now supplied by
+[`YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md`](YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md).
+That theorem does not choose a qubit basis by name. It starts from the retained
+EW charge operator `Q_H = T_3 + Y_H`, forms its spectral projector
+`P_neut = 1_0(Q_H) = I - Q_H`, and proves
+
+```text
+P_neut = P_-,
+epsilon_H = 2 Q_H - I = I - 2 P_neut,
+exp(h epsilon_H) = exp(h) exp(-2 h P_neut).
+```
+
+This directly answers the same-surface carrier question for this note: the
+signed-record source and the neutral EW Higgs source use the same spectral
+projector on the same one-Higgs doublet carrier. It does not change audit
+status by itself and does not close the top coefficient, same-source top
+transfer-response, scalar normalization, or physical-scale `g_2` gates.
+
 ## What This Still Does Not Close
 
 This note does not derive positive retained `Y_T` closure.  It does not claim:
@@ -159,6 +183,7 @@ The current positive route is now narrower:
 ```text
 closed support:
   signed record -> P_- occupation -> neutral Higgs carrier ray
+  + P_- is the charge-spectral projector 1_0(Q_H) on the same EW carrier
   + source-coordinate scale cancels in same-source top/W ratio
   + symbolic top-response row shape
 
@@ -201,9 +226,10 @@ hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
 proposal_allowed_reason: |
-  The carrier-ray bridge is closed and the symbolic top row shape is present,
-  but the top coefficient, retained one-Higgs/top carrier authority, retained hypercharge
-  authority, and physical-scale g_2 authority remain open.
+  The same-surface carrier-ray bridge is closed and the symbolic top row shape
+  is present, but the top coefficient, retained one-Higgs/top carrier
+  authority, retained hypercharge authority, and physical-scale g_2 authority
+  remain open.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```

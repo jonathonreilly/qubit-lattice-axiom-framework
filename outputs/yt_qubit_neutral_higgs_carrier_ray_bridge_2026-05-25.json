@@ -8,12 +8,13 @@
     "one_higgs_yukawa_selection_retained": false,
     "physical_scale_g2_retained": false,
     "retained_closure_allowed": false,
+    "same_surface_charge_spectral_projector_theorem_present": true,
     "strict_same_source_wz_packet_present": true,
     "symbolic_top_response_row_present": true,
     "wz_denominator_response_closed": true
   },
   "fail_count": 0,
-  "pass_count": 56,
+  "pass_count": 66,
   "proposal_allowed": false,
   "proposal_allowed_reason": "Carrier-ray alignment is closed and a symbolic top row is present, but the top coefficient, retained one-Higgs/hypercharge authority, and physical-scale g_2 authority remain open.",
   "review_surface": [
@@ -21,6 +22,7 @@
     "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",
     "outputs/yt_qubit_neutral_higgs_carrier_ray_bridge_2026-05-25.json"
   ],
+  "same_surface_charge_spectral_projector_theorem_present": true,
   "status": "exact support: signed-record source is the neutral Higgs carrier ray up to affine source reparameterization",
   "upstream_statuses": {
     "ew_coupling_status": "unaudited",

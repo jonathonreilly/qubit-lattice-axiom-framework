@@ -25,6 +25,7 @@ NOTE = DOCS / "YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md"
 MINIMAL_AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-05-20.md"
 SOURCE_ACTION = DOCS / "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
 EW_MASS = DOCS / "EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md"
+SAME_SURFACE_CARRIER = DOCS / "YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md"
 SOURCE_COORD = DOCS / "YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md"
 ONE_HIGGS = DOCS / "SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md"
 HYPERCHARGE = DOCS / "STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md"
@@ -71,7 +72,7 @@ def matrix_is_zero(matrix: sp.Matrix) -> bool:
 
 def part1_anchors() -> dict[str, Any]:
     print("\nPart 1: anchors and authority scope")
-    for path in (NOTE, MINIMAL_AXIOMS, SOURCE_ACTION, EW_MASS, SOURCE_COORD, LEDGER):
+    for path in (NOTE, MINIMAL_AXIOMS, SOURCE_ACTION, EW_MASS, SAME_SURFACE_CARRIER, SOURCE_COORD, LEDGER):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
 
     note = read(NOTE)
@@ -83,6 +84,17 @@ def part1_anchors() -> dict[str, Any]:
         "Review Boundary Certificate",
     ):
         check(f"note contains required section: {phrase}", phrase in note)
+
+    carrier_note = read(SAME_SURFACE_CARRIER)
+    for phrase in (
+        "same-surface spectral-projector theorem",
+        "P_neut = 1_0(Q_H)",
+        "P_+ = P_ch",
+        "P_- = P_neut",
+        "exp(h epsilon_H) = exp(h) exp(-2 h P_neut)",
+        "does not derive positive Y_T closure",
+    ):
+        check(f"same-surface carrier theorem contains marker: {phrase}", phrase in carrier_note)
 
     source_action = ledger_row("yt_source_action_support_packet_note_2026-05-22")
     ew_mass = ledger_row("ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26")
@@ -153,6 +165,8 @@ def part3_neutral_ew_ray_alignment() -> None:
     check("Q annihilates H_0", matrix_is_zero(q * h0), q * h0)
     check("upper component is charged", matrix_is_zero(q * upper - upper), q * upper)
     check("neutral ray is unique in the one-Higgs doublet", q.rank() == 1 and q.nullspace() == [sp.Matrix([0, 1])], q.nullspace())
+    check("P_- equals the zero spectral projector I-Q", matrix_is_zero(p_minus - (ident - q)), ident - q)
+    check("P_+ equals the charged spectral projector Q", matrix_is_zero(p_plus - q), q)
 
 
 def part4_radial_tangent_and_ratio_compatibility() -> None:
@@ -183,6 +197,7 @@ def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
     strict_wz_packet = ROOT / "outputs" / "yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
     blockers = {
         "neutral_carrier_ray_bridge_closed": True,
+        "same_surface_charge_spectral_projector_theorem_present": SAME_SURFACE_CARRIER.exists(),
         "wz_denominator_response_closed": strict_wz_packet.exists(),
         "symbolic_top_response_row_present": SYMBOLIC_TOP_PACKET.exists(),
         "full_same_surface_top_w_transfer_response_closed": False,
@@ -194,6 +209,7 @@ def part5_current_closure_boundary(statuses: dict[str, Any]) -> dict[str, Any]:
         "retained_closure_allowed": False,
     }
     check("neutral carrier-ray bridge is closed", blockers["neutral_carrier_ray_bridge_closed"])
+    check("same-surface charge-spectral projector theorem is present", blockers["same_surface_charge_spectral_projector_theorem_present"])
     check("strict W/Z denominator response packet is present", blockers["wz_denominator_response_closed"])
     check("symbolic top response row packet is present", blockers["symbolic_top_response_row_present"])
     check("full same-surface top/W transfer response remains open", not blockers["full_same_surface_top_w_transfer_response_closed"])
@@ -251,6 +267,7 @@ def main() -> int:
             "physical-scale g_2 authority remain open."
         ),
         "carrier_ray_bridge_closed": True,
+        "same_surface_charge_spectral_projector_theorem_present": SAME_SURFACE_CARRIER.exists(),
         "current_blockers": blockers,
         "upstream_statuses": statuses,
         "pass_count": PASS_COUNT,

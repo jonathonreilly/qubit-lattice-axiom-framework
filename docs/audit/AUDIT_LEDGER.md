@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 937 |
+| **retained_bounded** | 938 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1580 |
+| unaudited | 1579 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 13 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1360 |
+| `audited_clean` | 1361 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 13 |
-| `unaudited` | 1902 |
+| `unaudited` | 1901 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 502 |
-| `medium` | 882 |
+| `high` | 501 |
+| `medium` | 883 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -696,6 +696,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9609,6 +9610,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For a single Hamming-weight class hw = k, N_taste^(k) = binomial(4,k), while the uniform all-corners assignment uses sum_k binomial(4,k) = 16; substituting these into formula [5] gives three single-class values, none equal to the uniform-16 value.  _(class `A`)_
 - **chain closes:** True — The cited Wilson staircase gives binomial(4,k) = (1,4,6,4,1) and sum 16, and the parent formula supplies the N_taste slot. Direct substitution gives N = 1,4,6,4,1 versus uniform N = 16, so the narrow non-selection boundary follows without adding a channel selector.
 - **rationale:** The load-bearing step is exact finite algebra over retained-bounded cited inputs, not a physical Higgs-pole derivation or a tuned comparator match. Independent arithmetic confirms the displayed class counts, ratios 16/binomial(4,k), rounded masses, and the uniform v/(2u_0) = 140.3 GeV readout. The clean verdict applies only to the bounded boundary statement; channel selection, the parent Higgs interpretation, and the +12% gap remain outside scope.
+- **auditor confidence:** high
+
+### `higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure lattice-side mean-field algebra on the retained bridge-backed d=4/APBC taste determinant carrier: W''(0)/N_tot = 4/(u_0^2 N_taste) = 1/(4 u_0^2) at N_taste = 16, excluding physical Higgs-mass matching and any numerical u_0 value.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From W(J) = (N_tot/2) log(J^2 + 4 u_0^2), W''(0)/N_tot = 1/(4 u_0^2), and with N_taste = 16 the ratio 4/(u_0^2 N_taste) also equals 1/(4 u_0^2).  _(class `A`)_
+- **chain closes:** True — The retained bridge authorities supply the d=4 taste count, determinant carrier, and W(J) form; the remaining step is exact Clifford algebra, differentiation, and simplification. The note keeps the tadpole mean-field truncation as an explicit bounded hypothesis and excludes the physical identification R_lattice = (m_H/v)^2.
+- **rationale:** The audited claim is an exact algebraic closure over retained-grade inputs: the bridge packets provide N_taste = 16 and D_mf^dag D_mf = 4 u_0^2 I_48, and the source/runner independently verify the Clifford square and curvature formula. The runner source performs symbolic and matrix checks rather than merely printing the target identity, and the supplied cache reports PASS=103, FAIL=0. No PDG value, numerical u_0, Higgs-mass identification, or fitted scale is used in the load-bearing chain.
 - **auditor confidence:** high
 
 ### `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`

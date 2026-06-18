@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1477 |
-| Retained-grade rows, including boxed decorations | 1416 |
+| Applied audit verdicts | 1478 |
+| Retained-grade rows, including boxed decorations | 1417 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 213 |
-| Retained bounded rows | 937 |
+| Retained bounded rows | 938 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 19 |
-| Unaudited rows | 1580 |
+| Unaudited rows | 1579 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 22 |
 | Audited renaming rows | 13 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1582 |
-| Ready rows | 145 |
+| Total pending rows | 1581 |
+| Ready rows | 144 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 268 |
-| Medium pending | 441 |
+| Medium pending | 440 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`wilson_extremum_curvature_readout_boundary_certificate_2026-06-15`](../../docs/WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md) - medium; unaudited
 - [`staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03`](../../docs/STAGGERED_SCALAR_MASS_CLASS_BOUNDED_PREMISE_BRIDGE_NOTE_2026-06-03.md) - medium; unaudited
+- [`complex_selectivity_predictor_note`](../../docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md) - medium; unaudited
 - [`work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
 - [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
-- [`complex_selectivity_predictor_note`](../../docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md) - medium; unaudited
+- [`hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16`](../../docs/HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3523 |
 | Critical nodes | 574 |
-| High nodes | 508 |
-| Medium nodes | 921 |
+| High nodes | 507 |
+| Medium nodes | 922 |
 | Leaf nodes | 1520 |
 
 Top load-bearing rows by graph score:

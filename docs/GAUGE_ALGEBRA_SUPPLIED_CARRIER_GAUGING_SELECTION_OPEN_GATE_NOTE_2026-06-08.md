@@ -103,6 +103,22 @@ dim-12 gauging. This prunes that repair route only. It does **not** derive
 `MR_color`, the factorwise carrier/gauge-selection principle, or chiral
 `su(2)_L`, and it does not change this row's audit status.
 
+### 2026-06-18 Factor-local normalizer addendum
+
+[`GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md`](GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md)
+adds the positive finite-algebra companion to the conjugation-independence
+no-go. On the same supplied `C^3(base) x C^2(fiber)` carrier, if one supplies
+the rule that infinitesimal gauged generators preserve the base and fiber
+observable algebras separately, the exact normalizer is uniquely
+`u(3) x I_2 + I_3 x u(2)`, i.e. `su(3) + su(2) + u(1)` after the shared center
+is counted once. The 24 `su(3) x su(2)` cross tensors are then exactly the
+non-factor-local complement to full `u(6)`.
+
+This closes no physical selection bridge by itself. It localizes the remaining
+gap: the row still requires a retained source or explicit admission for
+`MR_color`, for the physical factor-algebra preservation rule, and for chiral
+`su(2)_L`. The addendum changes no audit status.
+
 ## What is and is not claimed
 
 - **Is:** GIVEN the supplied carrier and its supplied factor-locality premise, the

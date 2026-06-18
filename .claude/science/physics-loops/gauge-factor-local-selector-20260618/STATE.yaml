@@ -1,0 +1,22 @@
+loop_slug: gauge-factor-local-selector-20260618
+goal: "Unlock the audited conditional gauge-carrier selection row without auditing or retagging."
+target_claim_id: gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08
+branch: codex/gauge-factor-local-selector-20260618
+base: origin/main
+status: block_ready_for_review
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: factor_observable_normalizer
+files_touched:
+  - docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md
+  - scripts/gauge_factor_local_selector_normalizer_2026_06_18.py
+  - logs/runner-cache/gauge_factor_local_selector_normalizer_2026_06_18.txt
+  - docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md
+remaining_blockers:
+  - "derive or explicitly admit MR_color"
+  - "derive or explicitly admit the physical factor-algebra preservation rule"
+  - "derive or explicitly admit chiral su(2)_L"
+  - "supply gauge dynamics/action/couplings/matter content"
+review_loop_disposition: not_run_user_deferred_to_codex_reviewer
+next_exact_action: "Reviewer should decide whether this exact normalizer theorem is useful source-side support for re-audit of the parent conditional row."

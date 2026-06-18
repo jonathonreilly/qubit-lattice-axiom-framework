@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1516 |
+| Applied audit verdicts | 1517 |
 | Retained-grade rows, including boxed decorations | 1438 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 214 |
 | Retained bounded rows | 957 |
 | Boxed decorations under retained parents | 50 |
-| Open gates | 24 |
-| Unaudited rows | 1541 |
+| Open gates | 25 |
+| Unaudited rows | 1540 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 16 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1543 |
-| Ready rows | 119 |
+| Total pending rows | 1542 |
+| Ready rows | 118 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
 | Medium pending | 412 |
-| Leaf pending | 560 |
+| Leaf pending | 559 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`chiral_split_mass_gravity_note`](../../docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md) - medium; unaudited
 - [`koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
 - [`native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16`](../../docs/POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md) - medium; unaudited
 - [`acphilambda_hw_complementation_equivariance_support_note_2026-06-09`](../../docs/ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md) - medium; unaudited
+- [`carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06`](../../docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md) - medium; unaudited
 - [`lanes.generated-geometry.readme`](../../docs/lanes/generated-geometry/README.md) - medium; unaudited
-- [`carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06`](../../docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md) - leaf; unaudited
+- [`causal_distance_tail_note`](../../docs/CAUSAL_DISTANCE_TAIL_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,12 +83,12 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 574 |
 | High nodes | 507 |
-| Medium nodes | 930 |
-| Leaf nodes | 1512 |
+| Medium nodes | 931 |
+| Leaf nodes | 1511 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1639 descendants; score 144.679
+- `minimal_axioms` - critical; 1640 descendants; score 144.680
 - `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296

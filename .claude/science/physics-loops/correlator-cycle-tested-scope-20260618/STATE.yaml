@@ -1,0 +1,25 @@
+loop_slug: correlator-cycle-tested-scope-20260618
+target_claim_id: correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12
+target_status: audited_conditional
+mode: science-fix
+branch: codex/correlator-cycle-tested-scope-20260618
+base: origin/main
+cycle_count: 1
+active_route: tested_class_scope_repair
+hard_residual: "A carrier-class exhaustion theorem is still not supplied."
+files_touched:
+  - docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md
+  - scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py
+  - logs/runner-cache/frontier_correlator_cycle_phases_dichotomy_2026_06_12.txt
+open_imports:
+  - "Carrier-class exhaustion theorem for all state-independent carrier-angle middlemen on the supplied circulant surface."
+  - "Non-circulant moving-eigenvector carrier analysis."
+  - "Direct multiset-to-geometry bridge for R-eta."
+trace_gate_classification: scope_firewall_repair
+reachability_to_target: partially_closes
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_disposition: not_run_by_request
+pr_status: ready_for_reviewer
+next_exact_action: "Reviewer can decide whether the tested-class scope repair is enough to requeue the row as clean bounded support."
+stop_condition: "Unsupported carrier-class exhaustion language has been removed; tested-class runner passes."

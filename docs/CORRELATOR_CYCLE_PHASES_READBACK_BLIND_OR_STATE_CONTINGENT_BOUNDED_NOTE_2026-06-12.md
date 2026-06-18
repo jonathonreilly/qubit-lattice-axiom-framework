@@ -8,17 +8,20 @@ set or predict an audit outcome and does not edit any audit-lane-owned
 registry, ledger, queue, or publication-status surface.
 **Primary runner:** `scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py`
 **Status:** source proposal; the audit lane grades. Runner
-`PASS=27 FAIL=0`.
+`PASS=28 FAIL=0`.
 
 ## Boundary
 
 This note proves four bounded facts on the supplied three-site Hermitian
 circulant surface: the identity-function readback case, the spectral-projector
-blind case, the thermal state-contingent case, and the resulting absence of a
-state-independent derived-angle middleman on that surface. It does not close
-the R-eta derivation question, does not probe non-circulant surfaces, and does
-not claim the identification is underivable. It makes no R-eta claim either
-way. No fixed value of `r` is used, selected, or preferred.
+blind case, the thermal state-contingent case, and the direct symmetric
+inversion of `|delta|` on the stated branch. These checks rule out the tested
+identity/projector/strictly mixing thermal classes as state-independent
+derived-angle middlemen on this surface. They do not provide a carrier-class
+exhaustion theorem, do not close the R-eta derivation question, do not probe
+non-circulant surfaces, and do not claim the identification is underivable. The
+note makes no R-eta claim either way. No fixed value of `r` is used, selected,
+or preferred.
 
 State-contingent cycle-phase values are registered state data under the
 realized-state interface; they are not universal readout identifications, and
@@ -86,8 +89,7 @@ these thermal values are registered state data, not universal readout
 identifications. Check tags: `thermal-K-odd`, `thermal-grid`,
 `thermal-comparison`.
 
-**No-middleman consequence.** Combine the three cases above with the
-carrier-class elimination pattern: the registered symmetric data determine
+**Tested-class middleman boundary.** The registered symmetric data determine
 `|delta|` through the inversion
 
 ```text
@@ -97,18 +99,24 @@ cos(3 delta) = (e_3 - a^3 + 3 a B^2) / (2 B^3),
 ```
 
 The coefficient `3` is derived from the three-cycle determinant term and is
-reproved here. The dichotomy then removes a state-independent carrier-angle
-middleman on this surface: readback phases return the supplied hopping phase;
-projector phases are blind; strictly mixing phases are state-contingent
-registered data. Any derivation of the R-eta identification must directly
-equate the multiset-determined `|delta|` with the fixed-locus arithmetic.
-Check tags: `inversion`, `dichotomy`.
+reproved here. For the classes actually tested by the runner, the only
+outcomes are readback, blindness, or state-contingent registered data:
+readback phases return the supplied hopping phase; projector phases are blind;
+strictly mixing thermal phases are state-contingent registered data.
+
+This does not exhaust all possible carrier-angle constructions. It says only
+that the tested identity/projector/thermal classes do not supply a universal
+state-independent middleman on this circulant surface. A full carrier-class
+exhaustion theorem, or a new untested middleman construction, remains outside
+this packet. Check tags: `inversion`, `dichotomy`.
 
 ## The next paths
 
 Open-target update: the named residual is the **circulant-carrier phase
-dichotomy wall**. The next paths are:
+dichotomy wall for the tested classes**. The next paths are:
 
+- a carrier-class exhaustion theorem for the circulant surface, if the goal is
+  to rule out every state-independent middleman on that surface;
 - non-circulant carriers, meaning surfaces where the eigenvectors move with
   the dynamics, including the full staggered lattice realization;
 - the direct multiset-to-geometry equation, with no derived-angle middleman.
@@ -117,10 +125,12 @@ Both paths remain open and neither is probed here.
 
 ## No-Go Discipline Gate
 
-This gate applies only to the narrowed negative claim: on the supplied
-circulant surface there is no state-independent derived-angle middleman between
-the multiset-determined `|delta|` and the R-eta fixed-locus arithmetic. It is
-not a global no-go for R-eta, non-circulant carriers, or direct
+This gate applies only to the narrowed tested-class negative claim: on the
+supplied circulant surface, the identity/projector/strictly mixing thermal
+classes do not provide a state-independent derived-angle middleman between the
+multiset-determined `|delta|` and the R-eta fixed-locus arithmetic. It is not a
+carrier-class exhaustion theorem and not a global no-go for R-eta,
+non-circulant carriers, untested carrier-angle constructions, or direct
 multiset-to-geometry routes.
 
 **N1 - Alternative route enumeration.**
@@ -132,13 +142,14 @@ multiset-to-geometry routes.
 | Thermal functional phase | Use strictly mixing thermal functions. | K-odd but state-contingent; values are registered state data under the realized-state primitive, not universal readout identifications. | ATTEMPTED |
 | Candidate-constant matching | Search tested thermal classes at `delta=2/9` for a fixed value. | No tested class lands within `0.1` of the runner's candidate constants; this remains a bounded finite test, not a global exclusion. | ATTEMPTED |
 | Direct multiset inversion | Use the derived `cos(3 delta)` relation to recover `|delta|`. | This bypasses a middleman rather than supplying one; direct matching to fixed-locus arithmetic remains open. | ATTEMPTED |
+| Circulant carrier-class exhaustion | Prove every state-independent carrier-angle functional on the supplied circulant surface falls into readback, blind, or state-contingent behavior. | Not supplied here; explicitly left open. | NOT TESTED HERE |
 | Non-circulant moving-eigenvector carriers | Move to surfaces whose eigenvectors vary with the dynamics. | Not tested here and explicitly left open. | NOT TESTED HERE |
 
 **N2 - Wall-independence audit.** The wall set collapses to one surface-local
-wall: none of the tested circulant phase carriers supplies a state-independent
-derived-angle middleman. Readback, projector blindness, and thermal state
-contingency are three faces of that one wall on this surface, not three
-independent framework admissions.
+tested-class wall: none of the tested circulant phase carriers supplies a
+state-independent derived-angle middleman. Readback, projector blindness, and
+thermal state contingency are three faces of that one wall on this surface, not
+three independent framework admissions.
 
 **N3 - Hidden-wall scan.** "Supplied surface" is load-bearing and explicit;
 "registered state data" is exactly the realized-state primitive boundary and
@@ -146,8 +157,9 @@ does not supply a state, selector, measure, weighting, probability, or typical
 state; "candidate constants" are finite runner comparators only.
 
 **N4 - Residual matching.** The residual matched here is the circulant-surface
-middleman route. The note does not use this residual as evidence against
-non-circulant carriers, the direct multiset-to-geometry route, or R-eta itself.
+tested-class middleman route. The note does not use this residual as evidence
+against untested carrier-angle constructions, non-circulant carriers, the
+direct multiset-to-geometry route, or R-eta itself.
 
 **N5 - Rhetoric audit.** The negative is stated at surface resolution:
 "no state-independent derived-angle middleman on the supplied circulant
@@ -168,8 +180,8 @@ carrier-angle functional. This note accepts that route as open.
 carrier-class eliminations: shortcuts can be ruled out on a named carrier while
 the direct bridge remains open. This note preserves that distinction.
 
-Gate outcome: PASS for the narrowed surface-local negative; no global R-eta
-no-go is asserted.
+Gate outcome: PASS for the narrowed tested-class surface-local boundary; no
+carrier-class exhaustion theorem and no global R-eta no-go are asserted.
 
 ## Does NOT
 
@@ -177,6 +189,7 @@ no-go is asserted.
 - Does not set `r`, use a fixed `r`, or move the occupancy-selection question.
 - Does not promote state-contingent thermal values to universal readout
   identifications.
+- Does not exhaust all possible state-independent carrier-angle middlemen.
 - Does not probe non-circulant carriers.
 - Does not alter audit status, Tier-A registry text, or publication status.
 

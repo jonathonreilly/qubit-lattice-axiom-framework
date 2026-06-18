@@ -1,0 +1,26 @@
+loop_slug: dm-mininfo-open-gate-repair-20260618
+goal: "Repair the audited_renaming source boundary for dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16 without editing audit/status surfaces."
+target_status: "open_gate source repair"
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+artifact_role: demotion
+base: origin/main@2ba17fb21
+active_route: "claim-type narrowing plus runner source-boundary checks"
+files_touched:
+  - docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md
+  - scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py
+  - logs/runner-cache/frontier_dm_leptogenesis_pmns_mininfo_source_law.txt
+  - .claude/science/physics-loops/dm-mininfo-open-gate-repair-20260618/
+open_imports:
+  - "I_seed remains an adopted information-geometric selector objective."
+  - "eta_{i_*}/eta_obs = 1 remains an imposed equality constraint."
+  - "No baseline-framework selector theorem is supplied."
+no_go_routes:
+  - "Do not call this a retained or bounded theorem authority for PMNS branch closure."
+  - "Do not edit audit ledger, queue, publication status, front door, lane registry, or active review queue."
+trace_gate_classification: direct_blocker_closure
+review_findings: "local source-boundary checks pass; independent review/audit still required"
+pr_status: "ready to open"
+next_exact_action: "Open review PR, then continue to harder derivation lanes if the goal resumes."
+stop_condition: "Stop this block after PR creation."

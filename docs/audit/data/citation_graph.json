@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wave_direct_dm_h025_seed0_crossfamily_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "distance_law_definitive_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
+      "to": "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "wave_direct_dm_h025_seed0_crossfamily_note",
         "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
         "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
         "distance_law_breakpoint_note",
         "koide_readout_lane_demarcation_note_2026-05-30",
+        "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
         "distance_law_definitive_note",
-        "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11"
+        "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9bb323aacc0bfa58f2c263be9172b6d480daf0f5cfcd220a9e92c6901723f3c4",
+      "note_hash": "6bfd4c02a1012e20df1dab93f7a5b33ace8c061d64c72c1d52bfb214c5d88e8a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

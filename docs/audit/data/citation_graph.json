@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "causal_distance_tail_note"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lanes.generated-geometry.readme"
     },
     {
       "from": "repo.front_door_status",
-      "to": "causal_distance_tail_note"
+      "to": "color_link_sym2_endpoint_projection_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
         "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12",
         "post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16",
         "acphilambda_hw_complementation_equivariance_support_note_2026-06-09",
         "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06",
+        "causal_distance_tail_note",
         "lanes.generated-geometry.readme",
-        "causal_distance_tail_note"
+        "color_link_sym2_endpoint_projection_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "00d00e2c740cea0266eb860d3341de6e666902b61634510ed6c028777accd903",
+      "note_hash": "4a6358b1f49b7fd994896faefb39c43018e76c4b42d3d0e942dea8ae34ede524",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

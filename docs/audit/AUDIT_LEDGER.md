@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 215 |
 | **retained_bounded** | 957 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 25 |
-| unaudited | 1539 |
+| open_gate | 26 |
+| unaudited | 1538 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1389 |
+| `audited_clean` | 1390 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1861 |
+| `unaudited` | 1860 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 892 |
-| `leaf` | 1422 |
+| `medium` | 893 |
+| `leaf` | 1421 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -102,12 +102,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1048 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
@@ -116,9 +116,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 907 | 38.83 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 785 | 38.12 | `audited_clean` | **retained_no_go** |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 786 | 38.12 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1114 | 36.62 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1086 | 35.59 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 734 | 33.02 | `unaudited` | unaudited |
@@ -960,6 +960,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
@@ -13509,6 +13510,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note bounds the core expansion error plus the Gaussian and actual tails by an absolute integral remainder B_abs/t^2, then evaluates sqrt(2/pi) B_abs = C_0 to obtain the all-a scalar error bound.  _(class `A`)_
 - **chain closes:** True — The expansion follows directly from the supplied scalar integral representation using elementary cosine-series inequalities, Gaussian Fourier differentiation, and explicit tail bounds. The cited SU(3) authority is only needed to identify the repository convention for the I_k atom, and it is retained_bounded.
 - **rationale:** The load-bearing proof is an exact scalar analytic closure from the integral representation, not a fitted numerical match or a definition-only substitution. Independent checking confirms the sign of the s^4/(24t) correction, the fourth-derivative formula for P_1(a), and the conversion of the core and tail Gaussian moments into the displayed C_0. The runner source is consistent with this: it hard-codes the derived formulas for hygiene and witness checks, while scipy.special.ive is used only as a numerical witness, not as the proof input.
+- **auditor confidence:** high
+
+### `native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the open-gate obstruction claim that this source note does not derive K_W(a) and stops at the missing uniform large-argument Bessel/determinant remainder for k,n = O(sqrt(beta)).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The fixed-index Bessel next term fails on the active window, and the needed uniform local-CLT remainder with determinant-mode tails is not supplied by the retained inputs.  _(class `A`)_
+- **chain closes:** True — The chain closes for the scoped open-gate claim only. The cited retained-grade authorities provide the target estimate and exact Bessel-determinant convention, while the note correctly identifies the absent uniform remainder rather than deriving or fitting K_W(a).
+- **rationale:** The load-bearing obstruction is a genuine algebraic check on the attempted fixed-index Bessel expansion, supported by retained-grade authorities that state the target and coefficient convention. The runner recomputes determinant ratios and falsifier rows from the Bessel determinant and explicitly avoids fitting K_W(a); these are witness checks, not a hidden derivation of K_W(a). The conclusion is narrow: this note cleanly records an open gate at the uniform Bessel/determinant remainder step, not a broader impossibility result.
 - **auditor confidence:** high
 
 ### `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23`

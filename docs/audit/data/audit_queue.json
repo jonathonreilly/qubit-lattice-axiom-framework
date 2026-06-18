@@ -3,7 +3,7 @@
     "critical": 304,
     "high": 267,
     "leaf": 569,
-    "medium": 424
+    "medium": 423
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -17415,31 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "distance_law_breakpoint_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "distance_law_portability_note",
-        "sign_portability_invariant_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.392,
-      "note_path": "docs/DISTANCE_LAW_BREAKPOINT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py",
-      "transitive_descendants": 20
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_readout_lane_demarcation_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17577,15 +17552,15 @@
         "s3_taste_cube_decomposition_note",
         "quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
+      "load_bearing_score": 6.248,
       "note_path": "docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_quark_generation_equivariant_ward_degeneracy_no_go.py",
-      "transitive_descendants": 3
+      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "any_non_self",
@@ -46894,6 +46869,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 132,
-  "total_pending": 1564
+  "ready_count": 131,
+  "total_pending": 1563
 }

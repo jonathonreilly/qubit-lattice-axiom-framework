@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 21 |
-| unaudited | 1562 |
+| unaudited | 1561 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 8 |
-| ~~audited_renaming~~ | 14 |
+| ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 24 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -66,8 +66,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
-| `audited_renaming` | 14 |
-| `unaudited` | 1884 |
+| `audited_renaming` | 15 |
+| `unaudited` | 1883 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 883 |
-| `leaf` | 1431 |
+| `medium` | 884 |
+| `leaf` | 1430 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1615,6 +1615,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -4865,6 +4866,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The retained signal is the 31^3 through 64^3 grid sweep with largest-grid far-field exponent alpha = -1.023 +/- 0.012, finite-size extrapolation alpha_inf = -0.976 +/- 0.019, and largest-grid mass-linearity spread below 0.1%.  _(class `C`)_
 - **chain closes:** True — The named runner directly recomputes the Poisson field, path-sum deflections, far-field fits, finite-size extrapolation, and largest-grid mass scaling, and its live output reproduces the note's bounded numerical values.
 - **rationale:** The clean verdict is narrow. The live runner reproduces alpha(64^3) = -1.0233 +/- 0.0115, alpha_inf = -0.9762 +/- 0.0193, and delta/M spread 0.0010 on the specified Dirichlet 3D path-sum setup. The note explicitly limits the claim to a bounded numerical continuation and states that it is not full Newton closure, not architecture portability, and not a two-body M1 M2 theorem. Residual risk is therefore scope-bound: the result should only be cited for this finite path-sum surface and its stated convergence trend.
+- **auditor confidence:** high
+
+### `distance_law_breakpoint_note`
+
+- **Note:** [`DISTANCE_LAW_BREAKPOINT_NOTE.md`](../../docs/DISTANCE_LAW_BREAKPOINT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Hard-coded finite alpha/direction breakpoint table across the retained grown, alt-connectivity, third, fourth, and fifth-radial families; no causal architecture-feature theorem audited.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-distance_law_breakpoint_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing content is the finite breakpoint table: the per-family alpha and direction rows, with causal architecture-feature attribution explicitly split off as non-load-bearing.  _(class `E`)_
+- **chain closes:** False — The primary runner does not compute alpha values, direction fractions, or breakpoint classes, and it does not read or assert the cited authorities; it defines BreakpointRow constants and prints them. The packet therefore supports only a reprinted table, not a closed bounded theorem from the supplied inputs.
+- **rationale:** Issue: the runner's load-bearing path is the hard-coded ROWS constant table, not a computation or cross-note verifier. Why this blocks: the current packet can define or reprint the finite breakpoint rows and labels, but it does not derive or verify them as a bounded theorem. Repair target: replace the constant-table runner with a verifier that consumes retained family outputs, or add matched-ablation computations if the causal feature diagnosis is to become load-bearing. Claim boundary until fixed: documented finite summary only, with causal diagnosis excluded.
 - **auditor confidence:** high
 
 ### `distance_law_note`

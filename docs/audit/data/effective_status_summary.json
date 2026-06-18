@@ -43,7 +43,7 @@
   "effective_status_counts": {
     "audited_conditional": 24,
     "audited_numerical_match": 8,
-    "audited_renaming": 14,
+    "audited_renaming": 15,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
     "decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_color_automorphism_theorem": 4,
@@ -79,7 +79,7 @@
     "retained_bounded": 948,
     "retained_no_go": 213,
     "retained_pending_chain": 3,
-    "unaudited": 1562
+    "unaudited": 1561
   },
   "retained_pending_chain_count": 3,
   "retained_pending_chain_examples": [

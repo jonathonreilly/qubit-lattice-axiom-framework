@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 219 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 984 |
+| **retained_bounded** | 985 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1465 |
+| unaudited | 1464 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 20 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1426 |
+| `audited_clean` | 1427 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1787 |
+| `unaudited` | 1786 |
 
 | claim_type | count |
 |---|---:|
@@ -743,6 +743,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `holographic_probe_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -10777,6 +10778,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The registered SHA-pinned joint-validator cache for scripts/higher_symmetry_joint_validation.py, on default argv with N=25,40,60,80 and 16 seeds, directly supports the bounded Z2 x Z2 Born-clean, k=0-zero, and positive band-averaged gravity rows in the sparse window.  _(class `C`)_
 - **chain closes:** True — The packet includes the primary runner, both helper sources, and a SHA-pinned cache whose stdout matches the narrowed sparse-window claim. The dense N=80/100/120 material is explicitly excluded from binding scope despite stale historical text later in the note.
 - **rationale:** Within the narrowed binding scope, the runner genuinely generates the DAG families, calls the joint measurement code, computes Born, gravity, k=0, purity, gravity-band, and exponent summaries, and reports values not hard-coded from the note. The helper sources are present and do not import the contested result as an input. The cited mirror authority is retained_bounded, and no non-retained cited authority is needed for the narrowed cache-backed claim. The note still contains stale 32-seed and N=120 promotional prose, but its binding-scope language cleanly demotes those statements out of the audited claim.
+- **auditor confidence:** high
+
+### `hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`HKD_CORRESPONDENCE_GENERAL_CHARTS_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/HKD_CORRESPONDENCE_GENERAL_CHARTS_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-chart audit of the listed anchor and S1 charts under the fixed dense nearest-neighbor Hamiltonian, E=-0.6 Schur decimation on axes 0 and 2, and even-d2 truncation convention.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the listed checked charts, the runner-computed real Schur H_kd_after vanishes exactly when the independently counted misaligned survivors vanish, and exactly when all chart periods are even.  _(class `C`)_
+- **chain closes:** True — The runner source actually constructs the finite Hamiltonian, performs the two Schur complements, truncates by even periodic d2, measures H_kd_after, and separately enumerates the parity misalignment count. Within the explicitly bounded checked-chart scope, no cited upstream or external bridge is needed.
+- **rationale:** The claim is scoped to a fixed finite list of checked charts and a fixed numerical convention, not to an all-period or continuum theorem. The runner computes the Schur quantities from the stated finite Hamiltonian and computes the parity diagnostic separately, so the three-way coincidence is not merely a symbol renaming or printed constant. The frozen anchor values are used as regression gates, but the load-bearing chart classification is recomputed within the packet and no external comparator or open dependency is imported.
 - **auditor confidence:** high
 
 ### `hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26`

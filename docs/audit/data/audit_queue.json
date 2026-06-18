@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 304,
-    "high": 269,
+    "high": 268,
     "leaf": 569,
     "medium": 441
   },
@@ -8860,32 +8860,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30",
-        "minimal_axioms_2026-04-11",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.255,
-      "note_path": "docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_alpha_s_direct_wilson_loop.py",
-      "transitive_descendants": 26
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17614,15 +17588,15 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.959,
+      "load_bearing_score": 5.322,
       "note_path": "docs/DISTANCE_LAW_DEFINITIVE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_distance_law_definitive.py",
-      "transitive_descendants": 10
+      "transitive_descendants": 19
     },
     {
       "audit_independence_required": "any_non_self",
@@ -47420,6 +47394,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 146,
-  "total_pending": 1583
+  "ready_count": 145,
+  "total_pending": 1582
 }

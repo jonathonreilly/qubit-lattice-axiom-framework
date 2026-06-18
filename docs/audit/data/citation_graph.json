@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "mirror_mutual_information_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "poisson_self_field_note"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "poisson_self_field_note"
+      "to": "post_record_conditional_audit_evidence_ladder_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "mirror_mutual_information_note",
         "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12",
         "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12",
         "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12",
         "pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07",
+        "poisson_self_field_note",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "poisson_self_field_note"
+        "post_record_conditional_audit_evidence_ladder_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7b1eeb2103a53dc623d9f714309cbdd78842438a7a40d4028c8104f6f3df6957",
+      "note_hash": "a59781e3bff79bcdb642006a63e0e6f1da5adf4acf867ae8ba1661afee5822b3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

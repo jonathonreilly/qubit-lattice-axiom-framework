@@ -198,6 +198,27 @@ open gate for a physical deterministic resource. The new artifact is bounded
 preparation-path support only; it introduces no new axiom, primitive,
 approved premise, or retained-grade proposal.
 
+## 2026-06-18 Finite Extraction Core Split
+
+The audit-confirmed finite part is now split into a bounded-support companion:
+[`TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md`](TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md)
+with runner
+`scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py`.
+
+That companion certifies only the bounded offline extraction:
+
+- on the default `1D N=8` and `2D 4x4` Poisson/CHSH surfaces, the runner
+  diagonalizes the finite Hamiltonian, traces cells and spectator tastes,
+  keeps the last retained taste bit per species, and obtains a high-fidelity
+  logical Bell resource;
+- the `G=0` null control does not produce an entangled logical resource;
+- the retained-axis finite operator algebra is routed through RALA;
+- postselected branches remain diagnostic only.
+
+The split does not change this parent row's open-gate status.  The physical
+native preparation/readout and apparatus theorem remains open, and this row
+must not be cited as a deterministic physical teleportation-resource theorem.
+
 ## Script
 
 New runner:

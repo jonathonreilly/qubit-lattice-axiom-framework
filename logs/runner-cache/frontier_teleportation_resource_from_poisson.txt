@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_resource_from_poisson.py
-runner_sha256: 1b319e081c066147239237256908aef39755fcc01fd3255c1a873f517b43a978
+runner_sha256: 10064ae4b0b8155b5210083f0d07bb0a7be1b789f1be8c58ea2cd233a56dc0b1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.64
 status: ok
 ----- stdout -----
 POISSON/CHSH TELEPORTATION RESOURCE AUDIT

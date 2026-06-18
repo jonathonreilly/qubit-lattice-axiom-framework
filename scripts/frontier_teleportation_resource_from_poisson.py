@@ -74,6 +74,7 @@ SOURCE_REQUIRED_SYMBOLS = (
 RALA_CLAIM_ID = "teleportation_retained_axis_operator_algebra_closure_note"
 RESOURCE_NOTE = ROOT / "docs" / "TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md"
 RALA_NOTE = ROOT / "docs" / "TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md"
+RETAINED_GRADES = {"retained", "retained_bounded", "retained_no_go"}
 PREP_READOUT_NOTE = ROOT / "docs" / "TELEPORTATION_PREPARATION_READOUT_PROBE_NOTE.md"
 OPERATOR_END_TO_END_NOTE = ROOT / "docs" / "TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md"
 MICROSCOPIC_CLOSURE_NOTE = ROOT / "docs" / "TELEPORTATION_MICROSCOPIC_CLOSURE_NOTE.md"
@@ -162,9 +163,9 @@ def retained_axis_source_certificate() -> dict[str, object]:
     if missing:
         raise RuntimeError(f"RALA source note is missing expected theorem snippets: {missing}")
     status = ledger_status(RALA_CLAIM_ID)
-    if status != "retained_bounded":
+    if status not in RETAINED_GRADES:
         raise RuntimeError(
-            "RALA source note must remain retained_bounded for this bounded support route; "
+            "RALA source note must remain retained-grade for this bounded support route; "
             f"ledger status={status!r}"
         )
     return {

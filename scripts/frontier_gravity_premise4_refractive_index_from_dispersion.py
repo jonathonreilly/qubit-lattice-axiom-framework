@@ -60,6 +60,8 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md"
 EIKONAL_NOTE = ROOT / "docs" / "GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md"
 EIKONAL_RUNNER = ROOT / "scripts" / "frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py"
+SCALAR_SHIFT_NOTE = ROOT / "docs" / "GRAVITY_CONSTANT_FIELD_SCALAR_GENERATOR_SHIFT_BOUNDED_THEOREM_NOTE_2026-06-18.md"
+SCALAR_SHIFT_RUNNER = ROOT / "scripts" / "frontier_gravity_constant_field_scalar_generator_shift_2026_06_18.py"
 AUDIT_LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 KUBO_RUNNER = ROOT / "scripts" / "frontier_lensing_exponent_is_dipole_crossover.py"
 KUBO_CACHE = ROOT / "logs" / "runner-cache" / "frontier_lensing_exponent_is_dipole_crossover.txt"
@@ -156,9 +158,15 @@ check("SOURCE note names the 2026-06-08 audit-targeted boundary repair",
       "2026-06-08 Audit-Targeted Boundary Repair" in note_text)
 check("SOURCE note names the 2026-06-16 source-side eikonal bridge repair",
       "2026-06-16 Source-Side Eikonal Bridge Repair" in note_text)
+check("SOURCE note names the 2026-06-18 scalar generator-shift bridge repair",
+      "2026-06-18 Scalar Generator-Shift Bridge Repair" in note_text
+      and "GRAVITY_CONSTANT_FIELD_SCALAR_GENERATOR_SHIFT_BOUNDED_THEOREM_NOTE_2026-06-18.md" in note_text)
 check("SOURCE note cites the fixed-energy eikonal index bridge",
       "GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md" in note_text
       and "n(x) = k_s(x) / k_0" in note_text)
+check("SOURCE note routes H_s=H_0+sI through scalar-shift bridge",
+      "constant-field scalar generator-shift bridge for `H_s=H_0+sI`" in note_text
+      and "`gravity_constant_field_scalar_generator_shift_bounded_theorem_note_2026-06-18`" in note_text)
 check("SOURCE note states bounded bridge hypotheses explicitly",
       "bounded source-side repair proposal" in note_text
       and "Hypotheses for T1-T6" in note_text
@@ -176,6 +184,16 @@ check("AUTH finite_rank_source_to_metric is retained_bounded",
       rows.get("finite_rank_source_to_metric_theorem_note", {}).get("effective_status") == "retained_bounded")
 check("AUTH weak-field source-response bridge is retained_bounded",
       rows.get("gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11", {}).get("effective_status") == "retained_bounded")
+check("SCALAR-SHIFT bridge note and runner are present",
+      SCALAR_SHIFT_NOTE.exists() and SCALAR_SHIFT_RUNNER.exists())
+if SCALAR_SHIFT_NOTE.exists():
+    scalar_shift_text = SCALAR_SHIFT_NOTE.read_text(encoding="utf-8")
+    check("SCALAR-SHIFT bridge proves H_s=H_0+sI with unit normalization",
+          "H_s = H_0 + s I" in scalar_shift_text
+          and "D_s = s I" in scalar_shift_text
+          and "dE_j/ds = 1" in scalar_shift_text)
+else:
+    check("SCALAR-SHIFT bridge proves H_s=H_0+sI with unit normalization", False)
 check("EIKONAL bridge note and runner are present",
       EIKONAL_NOTE.exists() and EIKONAL_RUNNER.exists())
 if EIKONAL_NOTE.exists():

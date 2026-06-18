@@ -13,6 +13,7 @@ from scipy.integrate import quad
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md"
 SOURCE_BRIDGE = ROOT / "docs" / "GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md"
+SCALAR_SHIFT_BRIDGE = ROOT / "docs" / "GRAVITY_CONSTANT_FIELD_SCALAR_GENERATOR_SHIFT_BOUNDED_THEOREM_NOTE_2026-06-18.md"
 SCALAR_SHIFT = ROOT / "docs" / "SELF_CONSISTENCY_FORCES_POISSON_NOTE.md"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
@@ -47,6 +48,7 @@ def k_of_shift(E: float, s: float) -> float:
 def main() -> int:
     note_text = NOTE.read_text(encoding="utf-8")
     source_text = SOURCE_BRIDGE.read_text(encoding="utf-8")
+    scalar_bridge_text = SCALAR_SHIFT_BRIDGE.read_text(encoding="utf-8")
     scalar_shift_text = SCALAR_SHIFT.read_text(encoding="utf-8")
     rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
 
@@ -55,12 +57,14 @@ def main() -> int:
         "Status authority:** independent audit lane only",
         "H_s = H_0 + s I",
         "lambda_axis(k_s) + s = E",
+        "GRAVITY_CONSTANT_FIELD_SCALAR_GENERATOR_SHIFT_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+        "unit normalization `dE_j/ds = 1`",
         "n_j := k_{s_j} / k0",
         "S_eik[s] = sum_j n_j Delta l_j",
         "c_E = 1 / (k0 lambda_axis'(k0))",
         "No observed constants, PDG values, fitted selectors, new repo-wide axioms",
         "it does not rederive universal matter coupling",
-        "The scalar generator shift is a cited retained-bounded input",
+        "The scalar generator shift is supplied by the cited constant-field bridge",
         "Independent audit must decide",
     ]
     for phrase in required_phrases:
@@ -92,6 +96,22 @@ def main() -> int:
         "source-response bridge supplies S_test sign convention",
         "S_test(phi; x) = L_test (1 - phi(x))" in source_text
         and "U_test(phi; x) = -m phi(x)" in source_text,
+    )
+    check(
+        "constant-field bridge supplies H_s=H_0+sI with unit normalization",
+        "H_s = H_0 + s I" in scalar_bridge_text
+        and "D_s = s I" in scalar_bridge_text
+        and "dE_j/ds = 1" in scalar_bridge_text,
+    )
+    check(
+        "constant-field bridge supplies positive-s fixed-energy sign",
+        "positive `s` lowers the fixed-energy wavenumber" in scalar_bridge_text
+        and "lambda_axis(k_s) + s = E" in scalar_bridge_text,
+    )
+    check(
+        "constant-field bridge excludes physical-unit closure",
+        "does not set `G_Newton`" in scalar_bridge_text
+        and "does not supply an audit verdict or effective status change" in scalar_bridge_text,
     )
     check(
         "self-consistency packet supplies scalar propagator/action surface",

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_constant_field_scalar_generator_shift_2026_06_18.py
+runner_sha256: e0469a29b867edb489915223333c706e9235f5522e60dd9596be844039ade155
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS: note contains required phrase: Claim type:** bounded_theorem
+PASS: note contains required phrase: Status authority:** independent audit lane only
+PASS: note contains required phrase: H_s = H_0 + s I
+PASS: note contains required phrase: D_s = s I
+PASS: note contains required phrase: dE_j/ds = 1
+PASS: note contains required phrase: lambda_axis(k_s) + s = E
+PASS: note contains required phrase: positive `s` lowers the fixed-energy wavenumber
+PASS: note contains required phrase: No observed constants, fitted selectors, PDG values, textbook WKB theorem
+PASS: note contains required phrase: does not add an axiom
+PASS: note contains required phrase: does not set `G_Newton`
+PASS: note contains required phrase: does not supply an audit verdict or effective status change
+PASS: note excludes forbidden phrase: **Status:** retained
+PASS: note excludes forbidden phrase: full Einstein equations are derived
+PASS: note excludes forbidden phrase: physical `G_Newton` is derived
+PASS: note excludes forbidden phrase: adds a new axiom
+PASS: note excludes forbidden phrase: textbook WKB theorem supplies the proof
+PASS: weak-field bridge dependency is retained_bounded in current ledger
+PASS: weak-field dependency supplies action sign convention
+PASS: minimal axioms do not contain scalar generator-shift axiom
+PASS: finite matrix satisfies H_s - H_0 = sI
+PASS: identity perturbation commutes with H_0
+PASS: every eigenvalue shifts by +s
+PASS: unit normalization gives dE_j/ds = 1 for all modes
+PASS: translation-covariant diagonal perturbation space is one-dimensional
+PASS: nonconstant diagonal perturbation fails translation covariance
+PASS: constant diagonal perturbation is translation covariant
+PASS: free axis branch solves lambda(k0)=E
+PASS: selected branch has positive derivative (dlam=0.39799497)
+PASS: fixed-energy equation lambda_axis(k_s)+s=E is exact
+PASS: positive s lowers fixed-energy wavenumber
+PASS: dk_s/ds = -1/lambda_axis'(k0)
+PASS: downstream first-order sign is S_eik=L-c_E int s dl
+PASS: c_E is positive for the selected branch (c_E=12.54197477)
+PASS: eikonal consumer cites the new scalar-shift bridge
+
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,25 @@
+loop_slug: gravity-scalar-shift-bridge-20260618
+goal: "Unlock the audited conditional gravity fixed-energy eikonal row by proving the missing constant-field scalar generator shift on the source side."
+target_claim_id: gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16
+target_status: bounded-support
+runtime_mode: source-side repair PR
+cycle_count: 1
+active_route: constant-field scalar identity perturbation theorem
+hard_residual: "Auditor requested a direct theorem or one-hop authority deriving H_s=H_0+sI with the +s sign and normalization."
+files_touched:
+  - docs/GRAVITY_CONSTANT_FIELD_SCALAR_GENERATOR_SHIFT_BOUNDED_THEOREM_NOTE_2026-06-18.md
+  - scripts/frontier_gravity_constant_field_scalar_generator_shift_2026_06_18.py
+  - logs/runner-cache/frontier_gravity_constant_field_scalar_generator_shift_2026_06_18.txt
+  - docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md
+  - scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py
+  - logs/runner-cache/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.txt
+  - docs/GRAVITY_PREMISE4_REFRACTIVE_INDEX_FROM_DISPERSION_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py
+  - logs/runner-cache/frontier_gravity_premise4_refractive_index_from_dispersion.txt
+open_imports:
+  - "Independent audit has not ratified the new scalar-shift bridge."
+  - "Physical Newton normalization and arbitrary-field WKB remain outside scope."
+review_loop_disposition: "not run; delegated to reviewer"
+pr_status: pending
+next_exact_action: "Open source-side PR and let independent reviewer/auditor decide status movement."
+stop_condition: "One coherent repair block packaged."

@@ -1,21 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py
-runner_sha256: 2708b75c3fa889c5a6b1a72184a963573b5ed6c70a97392661deab9e3a1456d4
+runner_sha256: ad6c77b5d9d282fea6cc81066db9d5f375e0893483fb9f98fb74480b2d9b6453
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.70
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 PASS: note contains required phrase: Claim type:** bounded_theorem
 PASS: note contains required phrase: Status authority:** independent audit lane only
 PASS: note contains required phrase: H_s = H_0 + s I
 PASS: note contains required phrase: lambda_axis(k_s) + s = E
+PASS: note contains required phrase: GRAVITY_CONSTANT_FIELD_SCALAR_GENERATOR_SHIFT_BOUNDED_THEOREM_NOTE_2026-06-18.md
+PASS: note contains required phrase: unit normalization `dE_j/ds = 1`
 PASS: note contains required phrase: n_j := k_{s_j} / k0
 PASS: note contains required phrase: S_eik[s] = sum_j n_j Delta l_j
 PASS: note contains required phrase: c_E = 1 / (k0 lambda_axis'(k0))
 PASS: note contains required phrase: No observed constants, PDG values, fitted selectors, new repo-wide axioms
 PASS: note contains required phrase: it does not rederive universal matter coupling
-PASS: note contains required phrase: The scalar generator shift is a cited retained-bounded input
+PASS: note contains required phrase: The scalar generator shift is supplied by the cited constant-field bridge
 PASS: note contains required phrase: Independent audit must decide
 PASS: note excludes forbidden phrase: **Status:** retained
 PASS: note excludes forbidden phrase: full Einstein equations are derived
@@ -25,6 +27,9 @@ PASS: note excludes forbidden phrase: textbook theorem supplies the proof
 PASS: weak-field source-response bridge is retained_bounded in current ledger (effective_status=retained_bounded)
 PASS: self-consistency scalar-shift packet is retained_bounded in current ledger (effective_status=retained_bounded)
 PASS: source-response bridge supplies S_test sign convention
+PASS: constant-field bridge supplies H_s=H_0+sI with unit normalization
+PASS: constant-field bridge supplies positive-s fixed-energy sign
+PASS: constant-field bridge excludes physical-unit closure
 PASS: self-consistency packet supplies scalar propagator/action surface
 PASS: free wavenumber solves lambda(k0)=E
 PASS: axis derivative is positive on selected branch (dlam=0.39799497)
@@ -39,7 +44,7 @@ PASS: linearized eikonal ray-angle magnitude is 2 c_E a / b
 PASS: ray-angle product alpha*b is constant
 PASS: continuum limit improves c_E -> 1/(2E) (rel_E=3.358e-03, rel_E2=8.349e-04)
 
-TOTAL: PASS=32 FAIL=0
+TOTAL: PASS=37 FAIL=0
 
 ----- stderr -----
 

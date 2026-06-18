@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1003 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1418 |
+| unaudited | 1417 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1453 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 58 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1740 |
+| `unaudited` | 1739 |
 
 | claim_type | count |
 |---|---:|
@@ -88,8 +88,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 887 |
-| `leaf` | 1425 |
+| `medium` | 886 |
+| `leaf` | 1426 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1652,6 +1652,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
@@ -23084,6 +23085,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The canonical kinetic term fixes [A_mu] = (d - 2) / 2, and dimensional consistency of i g_YM [A_mu, A_nu] with partial_mu A_nu gives [g_YM] + 2[A_mu] = d/2, hence [g_YM] = (4 - d) / 2.  _(class `A`)_
 - **chain closes:** True — The kinetic-term dimension balance gives 2 + 2[A] = d, so [A] = (d - 2) / 2. Substitution into either the non-abelian field-strength term or the cubic action term gives [g_YM] = (4 - d) / 2, whose zero is uniquely d = 4.
 - **rationale:** The restricted packet proves an exact engineering-dimension identity, not a physical spacetime-selection theorem. The independent manual check matches the runner: 2 + 2[A] = d fixes [A], and both [g_YM] + 2[A] = d/2 and -d + [g_YM] + 1 + 3[A] = 0 yield [g_YM] = (4 - d) / 2. The runner does not hard-code a fitted observable; it verifies the same algebra and uniqueness over integer dimensions with exact rational arithmetic. Residual risk appears only if the claim is broadened to renormalizability, beta functions, asymptotic freedom, physical d forcing, Wick/P2 closure, or a gauge-coupling value/running claim.
+- **auditor confidence:** high
+
+### `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-grid numerical diagnostic of the coded backward-RGE map Phi: y_t(v) -> y_t(M_Pl) on X in [0.5, 1.2], conditional on the runner's declared constants, Ward target, SM RGE, thresholds, and EW initial inputs.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the runner implementation, the companion runner verifies finite trajectories, positive 33-point grid forward differences, finite observed slopes, stable brentq roots near X = 0.97267, and an extension-scan blow-up onset above the working interval, all under the runner's declared implementation inputs.  _(class `D`)_
+- **chain closes:** False — The runner source does compute the advertised finite-grid checks and the cache reports 29 PASS, 0 FAIL. The restricted packet does not derive or retain the imported plaquette constants, Ward target, two-loop SM RGE normalization, threshold scales, or EW initial surface; they remain supplied implementation premises.
+- **rationale:** Issue: the finite diagnostic is reproducible for the supplied code inputs, but the load-bearing chain depends on explicit implementation inputs rather than a class (C) framework derivation or retained upstream authorities. Why this blocks: helper code hard-codes the canonical plaquette surface and the primary runner supplies the Ward target, SM RGE, thresholds, and EW initial constants, so the result is a conditional numerical check of that device, not a clean retained theorem. Repair target: either keep the row explicitly conditional, or add retained/accepted authorities deriving the imported constants, boundary condition, and RGE setup within the restricted packet. Claim boundary until fixed: the runner-supported finite-grid diagnostic T1-T5 holds for the declared implementation inputs and does not prove continuum uniqueness or physical BC-transfer closure.
 - **auditor confidence:** high
 
 ### `yt_color_projection_correction_note`

@@ -1,0 +1,21 @@
+loop_slug: acphilambda-w2-context-bridge-20260618
+goal: unlock audit by repairing a conditional ACPHILAMBDA R-eta blocker fragment
+target_status: bounded-support
+base: origin/main@c7106461c
+active_route: supplied finite context Record-registrability theorem
+hard_residual: physical carrier/context realization plus A_R-eta h-class/h-unit
+files_touched:
+  - docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md
+  - scripts/frontier_acphilambda_r_eta_w2_registrability_context_bridge_2026_06_18.py
+  - docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+open_imports:
+  - physical charged-lepton carrier/context realization
+  - A_R-eta h-class
+  - A_R-eta h-unit
+trace_gate:
+  trace_class: direct_blocker_closure
+  reachability_to_target: partially_closes
+review_disposition: pass
+pr_status: pending
+next_exact_action: commit, push, open PR
+stop_condition: one coherent source-side PR opened for this block

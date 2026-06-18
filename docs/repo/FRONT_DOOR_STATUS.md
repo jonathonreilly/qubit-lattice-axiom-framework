@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1414 |
-| Retained-grade rows, including boxed decorations | 1379 |
+| Applied audit verdicts | 1415 |
+| Retained-grade rows, including boxed decorations | 1380 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 912 |
-| Boxed decorations under retained parents | 46 |
+| Boxed decorations under retained parents | 47 |
 | Open gates | 14 |
-| Unaudited rows | 1643 |
+| Unaudited rows | 1642 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 5 |
@@ -33,18 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1645 |
+| Total pending rows | 1644 |
 | Ready rows | 160 |
 | Cycle-break targets | 7 |
-| Critical pending | 313 |
+| Critical pending | 312 |
 | High pending | 289 |
 | Medium pending | 474 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`koide_q_delta_linking_relation_theorem_note_2026-04-20`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md) - critical; unaudited
+- [`g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07`](../../docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`poisson_exhaustive_uniqueness_note`](../../docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md) - critical; unaudited
 - [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited

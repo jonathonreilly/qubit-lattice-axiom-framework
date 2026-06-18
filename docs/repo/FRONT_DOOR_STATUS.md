@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1631 |
+| Applied audit verdicts | 1632 |
 | Retained-grade rows, including boxed decorations | 1494 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 218 |
 | Retained bounded rows | 1000 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 36 |
-| Unaudited rows | 1426 |
+| Unaudited rows | 1425 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 59 |
-| Audited renaming rows | 27 |
+| Audited renaming rows | 28 |
 | Audited numerical-match rows | 12 |
 | Citation cycles detected | 7 |
 
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1428 |
-| Ready rows | 12 |
+| Total pending rows | 1427 |
+| Ready rows | 11 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 443 |
+| Leaf pending | 442 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`teleportation_conclusion_boundary_note`](../../docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md) - medium; unaudited
 - [`teleportation_native_axioms_scope_split_source_theorem_note_2026-05-16`](../../docs/TELEPORTATION_NATIVE_AXIOMS_SCOPE_SPLIT_SOURCE_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11`](../../docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16`](../../docs/THOOFT_1981_DUAL_SUPERCONDUCTOR_CENTER_VORTEX_CONFINEMENT_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13`](../../docs/TWO_BAND_LATTICE_MOYAL_FULL_B2_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
+- [`two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12`](../../docs/TWO_BAND_ORBITAL_RESPONSE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12`](../../docs/TWO_BAND_ORBITAL_RESPONSE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16`](../../docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 931 |
-| Leaf nodes | 1509 |
+| Medium nodes | 932 |
+| Leaf nodes | 1508 |
 
 Top load-bearing rows by graph score:
 

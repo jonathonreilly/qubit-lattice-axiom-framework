@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15"
+      "to": "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08"
     },
     {
       "from": "repo.front_door_status",
@@ -52243,6 +52243,10 @@
     {
       "from": "repo.front_door_status",
       "to": "complex_selectivity_predictor_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
     },
     {
       "from": "repo.front_door_status",
@@ -52255,10 +52259,6 @@
     {
       "from": "repo.front_door_status",
       "to": "distance_law_definitive_note"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15",
+        "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08",
         "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
         "complex_selectivity_predictor_note",
+        "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
-        "distance_law_definitive_note",
-        "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
+        "distance_law_definitive_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d1909c26a9745bd775bab85bd7dd7be5f5221f857b571c30adb93d5776ef9f61",
+      "note_hash": "985dd7509551bc764e03be8978043af925ea8062ddb37ce23975c3da7376f4dc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

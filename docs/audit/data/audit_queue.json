@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 304,
-    "high": 268,
+    "high": 267,
     "leaf": 569,
     "medium": 439
   },
@@ -8855,35 +8855,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
-        "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
-        "higgs_mass_from_axiom_note",
-        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
-        "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15",
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.2,
-      "note_path": "docs/WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_wilson_m_h_tree_at_extremum_leading_order_in_r.py",
-      "transitive_descendants": 12
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17996,6 +17967,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_quark_generation_equivariant_ward_degeneracy_no_go.py",
+      "transitive_descendants": 3
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
+        "higgs_mass_from_axiom_note",
+        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
+        "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08",
+        "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
+        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.0,
+      "note_path": "docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_wilson_m_h_tree_at_extremum_all_orders.py",
       "transitive_descendants": 3
     },
     {
@@ -29858,35 +29858,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_strong_cp_multiplaquette_ftf_admissible_not_clean_closeable_exact.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
-        "higgs_mass_from_axiom_note",
-        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
-        "wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08",
-        "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.0,
-      "note_path": "docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_wilson_m_h_tree_at_extremum_all_orders.py",
       "transitive_descendants": 3
     },
     {
@@ -47338,5 +47309,5 @@
     }
   ],
   "ready_count": 144,
-  "total_pending": 1580
+  "total_pending": 1579
 }

@@ -1,0 +1,15 @@
+loop: wilson-mh-algebraic-core-split-20260618
+target: wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08
+status: source_pr_ready
+branch: codex/wilson-mh-algebraic-core-split-20260618
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+active_route: algebraic diagnostic-core split
+files_touched:
+  - docs/WILSON_M_H_TREE_AT_EXTREMUM_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
+  - scripts/frontier_wilson_m_h_tree_at_extremum_algebraic_core_split_2026_06_18.py
+  - docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md
+review_loop_disposition: not_run_user_delegated_to_reviewer
+next_exact_action: reviewer should decide whether to extract the split core as the re-auditable algebraic row and leave matching/readout claims conditional
+stop_condition: PR opened for this coherent science block

@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 950 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 22 |
-| unaudited | 1557 |
+| unaudited | 1556 |
 | meta | 322 |
-| ~~audited_numerical_match~~ | 8 |
+| ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
 | ~~audited_conditional~~ | 24 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -65,9 +65,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 24 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
-| `audited_numerical_match` | 8 |
+| `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1879 |
+| `unaudited` | 1878 |
 
 | claim_type | count |
 |---|---:|
@@ -101,7 +101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1639 | 144.68 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
@@ -119,7 +119,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 786 | 38.12 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1113 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 925 | 34.85 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 734 | 33.02 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
@@ -1612,6 +1612,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | fresh_context | codex-gpt-5.5 | G | - |
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -4883,6 +4884,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The load-bearing content is the finite breakpoint table: the per-family alpha and direction rows, with causal architecture-feature attribution explicitly split off as non-load-bearing.  _(class `E`)_
 - **chain closes:** False — The primary runner does not compute alpha values, direction fractions, or breakpoint classes, and it does not read or assert the cited authorities; it defines BreakpointRow constants and prints them. The packet therefore supports only a reprinted table, not a closed bounded theorem from the supplied inputs.
 - **rationale:** Issue: the runner's load-bearing path is the hard-coded ROWS constant table, not a computation or cross-note verifier. Why this blocks: the current packet can define or reprint the finite breakpoint rows and labels, but it does not derive or verify them as a bounded theorem. Repair target: replace the constant-table runner with a verifier that consumes retained family outputs, or add matched-ablation computations if the causal feature diagnosis is to become load-bearing. Claim boundary until fixed: documented finite summary only, with causal diagnosis excluded.
+- **auditor confidence:** high
+
+### `distance_law_definitive_note`
+
+- **Note:** [`DISTANCE_LAW_DEFINITIVE_NOTE.md`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite ordered-cubic Dirichlet Poisson/ray-sum computations for N=31..96, including the table of scaled-fit alpha values, mass-independence at N=64, and the post-selected N>=56 weighted-mean estimator.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-distance_law_definitive_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The weighted mean of the scaled-fit alpha values for N >= 56 is selected as the best estimate, giving alpha = -1.00104 +/- 0.00416 and a 0.104% deviation from -1.  _(class `G`)_
+- **chain closes:** False — The runner genuinely computes Poisson fields and path-sum fits, but the 0.1% inverse-square conclusion depends on selecting the scaled-fit N>=56 weighted mean. Other extrapolation estimators in the same output miss -1 by about 3% to 14%, so an independent estimator-selection theorem or pre-registered protocol is missing.
+- **rationale:** The primary runner is not just printing constants: it solves sparse finite-box Poisson problems, computes deflections, fits power laws, and checks mass scaling. However, the headline sub-percent result is obtained by choosing a particular large-N scaled-fit weighted mean after the finite table is known. The same runner reports multiple plausible finite-size extrapolations that do not support the 0.1% inverse-square closure, so the presented chain is bounded numerical support rather than an estimator-independent theorem.
 - **auditor confidence:** high
 
 ### `distance_law_note`

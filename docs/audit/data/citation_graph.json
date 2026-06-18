@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "source_resolved_exact_green_pocket_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "teleportation_native_axioms_theory_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "source_resolved_exact_green_pocket_note",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
         "action_normalization_note",
         "single_axiom_hilbert_note",
         "restricted_strong_field_closure_note",
-        "teleportation_native_axioms_theory_note"
+        "teleportation_native_axioms_theory_note",
+        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
       ],
       "helper_runner_paths": [],
-      "note_hash": "17ae8f1cbf2ffad98f1ab5edb0689505ab491370b8a40d1272db84b6854e3668",
+      "note_hash": "5f0fe599960c8efe89541cac816cb1b69c0b82d84e878a6cc561525bd6f0b9f8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

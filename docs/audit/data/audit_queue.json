@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 304,
-    "high": 284,
+    "high": 283,
     "leaf": 569,
     "medium": 474
   },
@@ -8860,33 +8860,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
-        "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.431,
-      "note_path": "docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py",
-      "transitive_descendants": 121
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -9018,15 +8991,15 @@
         "cl3_color_automorphism_theorem",
         "cl3_taste_generation_theorem"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.044,
+      "load_bearing_score": 9.085,
       "note_path": "docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py",
-      "transitive_descendants": 32
+      "transitive_descendants": 47
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -48754,6 +48727,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 160,
-  "total_pending": 1631
+  "ready_count": 159,
+  "total_pending": 1630
 }

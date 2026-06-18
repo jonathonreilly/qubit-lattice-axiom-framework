@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1443 |
-| Retained-grade rows, including boxed decorations | 1396 |
+| Applied audit verdicts | 1444 |
+| Retained-grade rows, including boxed decorations | 1397 |
 | Retained positive theorems | 215 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 925 |
+| Retained bounded rows | 926 |
 | Boxed decorations under retained parents | 48 |
 | Open gates | 15 |
-| Unaudited rows | 1614 |
+| Unaudited rows | 1613 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 17 |
 | Audited renaming rows | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1616 |
-| Ready rows | 158 |
+| Total pending rows | 1615 |
+| Ready rows | 159 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 271 |
-| Medium pending | 472 |
+| Medium pending | 471 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`causal_field_reconciliation_note`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md) - medium; unaudited
 - [`grown_transfer_basin_note`](../../docs/GROWN_TRANSFER_BASIN_NOTE.md) - medium; unaudited
 - [`flavor_readout_gate_equals_carrier_identification_2026-05-31`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md) - medium; unaudited
 - [`koide_q_dred_normalization_freedom_no_go_note_2026-06-15`](../../docs/KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`record_formation_to_kraus_isometry_bridge_2026-06-06`](../../docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md) - medium; unaudited
 - [`dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md) - medium; unaudited
+- [`tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`](../../docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

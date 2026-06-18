@@ -3,7 +3,7 @@
     "critical": 304,
     "high": 271,
     "leaf": 569,
-    "medium": 471
+    "medium": 470
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -8860,6 +8860,39 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "sign_portability_invariant_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
+        "grown_transfer_basin_note",
+        "alt_connectivity_family_basin_note",
+        "second_grown_family_sign_note",
+        "third_grown_family_sign_note",
+        "fourth_family_quadrant_note",
+        "fifth_family_radial_boundary_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
+        "scripts/gate_b_nonlabel_connectivity_v1.py"
+      ],
+      "load_bearing_score": 8.992,
+      "note_path": "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
+      "transitive_descendants": 89
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -11853,39 +11886,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_gbare_same_1pi_admitted_residue_repair.py",
       "transitive_descendants": 91
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "sign_portability_invariant_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09",
-        "grown_transfer_basin_note",
-        "alt_connectivity_family_basin_note",
-        "second_grown_family_sign_note",
-        "third_grown_family_sign_note",
-        "fourth_family_quadrant_note",
-        "fifth_family_radial_boundary_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/SECOND_GROWN_FAMILY_SIGN_SWEEP.py",
-        "scripts/gate_b_nonlabel_connectivity_v1.py"
-      ],
-      "load_bearing_score": 8.992,
-      "note_path": "docs/SIGN_PORTABILITY_INVARIANT_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py",
-      "transitive_descendants": 89
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17528,32 +17528,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "grown_transfer_basin_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "grown_transfer_basin_targeted_repair_note_2026-06-04"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/gate_b_grown_joint_package.py"
-      ],
-      "load_bearing_score": 8.039,
-      "note_path": "docs/GROWN_TRANSFER_BASIN_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/GROWN_TRANSFER_BASIN_SWEEP.py",
-      "transitive_descendants": 92
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_readout_gate_equals_carrier_identification_2026-05-31",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17688,7 +17662,7 @@
         "coarse_grained_exterior_law_helper_note_2026-04-14",
         "oh_schur_boundary_action_note"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
@@ -17697,12 +17671,12 @@
         "scripts/frontier_oh_schur_boundary_action.py",
         "scripts/frontier_same_source_metric_ansatz_scan.py"
       ],
-      "load_bearing_score": 6.333,
+      "load_bearing_score": 6.858,
       "note_path": "docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_tensorial_einstein_regge_completion.py",
-      "transitive_descendants": 56
+      "transitive_descendants": 57
     },
     {
       "audit_independence_required": "any_non_self",
@@ -18272,6 +18246,38 @@
       "ready": true,
       "runner_path": "scripts/frontier_distance_law_definitive.py",
       "transitive_descendants": 10
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "complex_selectivity_predictor_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "claude_complex_action_grown_companion_note",
+        "second_grown_family_complex_note",
+        "second_grown_family_complex_boundary_note",
+        "alt_connectivity_family_complex_failure_note",
+        "third_grown_family_complex_boundary_note",
+        "fourth_family_complex_boundary_note",
+        "fifth_family_complex_note",
+        "fifth_family_complex_boundary_note",
+        "grown_transfer_basin_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.322,
+      "note_path": "docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/COMPLEX_SELECTIVITY_PREDICTOR_SCAN.py",
+      "transitive_descendants": 9
     },
     {
       "audit_independence_required": "any_non_self",
@@ -26886,38 +26892,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_yt_operational_source_action_bridge_theorem_attempt.py",
-      "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "complex_selectivity_predictor_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "claude_complex_action_grown_companion_note",
-        "second_grown_family_complex_note",
-        "second_grown_family_complex_boundary_note",
-        "alt_connectivity_family_complex_failure_note",
-        "third_grown_family_complex_boundary_note",
-        "fourth_family_complex_boundary_note",
-        "fifth_family_complex_note",
-        "fifth_family_complex_boundary_note",
-        "grown_transfer_basin_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.322,
-      "note_path": "docs/COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/COMPLEX_SELECTIVITY_PREDICTOR_SCAN.py",
       "transitive_descendants": 9
     },
     {
@@ -48336,6 +48310,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 159,
-  "total_pending": 1615
+  "ready_count": 160,
+  "total_pending": 1614
 }

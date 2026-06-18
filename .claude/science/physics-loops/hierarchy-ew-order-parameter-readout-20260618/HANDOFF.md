@@ -1,6 +1,10 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4403
+
+Branch: `codex/hierarchy-ew-order-parameter-readout-20260618`
+
+Commit: `4ead0c230910`
 
 This block adds a source-side hierarchy bridge:
 

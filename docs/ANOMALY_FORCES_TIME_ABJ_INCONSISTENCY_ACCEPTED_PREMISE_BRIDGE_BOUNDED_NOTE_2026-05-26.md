@@ -126,13 +126,34 @@ dependency graph explicit for re-audit: the bridge can be checked as an
 exact conditional consequence over these named edges, but it is not a
 retained derivation of hypercharge, matter completion, P-ABJ, or P-REC.
 
+## Scale-free anomaly-core repair (2026-06-18)
+
+The source-side boundary
+[`ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md`](ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md)
+separates the ABJ arithmetic core from the absolute hypercharge
+normalization. On the native `6 + 2` left-handed abelian surface, with
+`Y_a = a P_6 - 3a P_2` and `a != 0`, exact algebra gives
+`Tr[Y_a^3] = -48 a^3`, `Tr[SU(3)^2 Y_a] = a`, and
+`Tr[SU(3)^3]_LH = 2`. Therefore the
+absolute normalization `a = 1/3` is not load-bearing for the nonzero
+anomaly arithmetic; it only
+specializes the scale-free formulas to the familiar displayed values
+`-16/9` and `1/3`.
+
+The same note verifies that the completion witness scales as
+`(4a, -2a, -6a, 0)`, specializing at `a = 1/3` to
+`(4/3, -2/3, -2, 0)`. This narrows P-HY/P-COMP bookkeeping for re-audit:
+the bridge still does not derive P-HY, P-COMP, P-ABJ, or P-REC, but the
+absolute SM normalization and naming convention are no longer the
+load-bearing reason the anomaly traces are nonzero.
+
 ## Proof-walk
 
 | Step | Statement | Load-bearing input | Lattice-action input? |
 |---|---|---|---|
-| (B1) | Three perturbative anomaly traces of the LH SM content are nonzero (`Tr[Y^3] = -16/9`, `Tr[SU(3)^2 Y] = 1/3`, `Tr[SU(3)^3] = 2`) | Retained nonabelian graph-first content + bounded HY-surface + declared P-HY; exact rational arithmetic on the explicit `(2,3)_{+1/3} + (2,1)_{-1}` multiplets | no |
+| (B1) | Three perturbative anomaly traces of the LH native abelian surface are nonzero (`Tr[Y_a^3] = -48 a^3`, `Tr[SU(3)^2 Y_a] = a`, `Tr[SU(3)^3] = 2`, specializing at `a=1/3` to `-16/9`, `1/3`, `2`) | Retained nonabelian graph-first content + bounded HY-surface + scale-free anomaly core above; P-HY remains the declared premise that the nonzero native abelian direction is the anomaly-relevant gauged U(1) | no |
 | (B2) | A chiral gauge theory with nonzero anomaly traces fails to close as a unitary quantum field theory | (P1) accepted-premise packet entry | no |
-| (B3) | Adding SU(2)-singlet right-handed completion with `(y_1, y_2, y_3, y_4) = (4/3, -2/3, -2, 0)` cancels all three anomaly traces (full LH+RH content has `Tr[Y]=Tr[Y^3]=Tr[SU(3)^2 Y]=Tr[SU(3)^3]=Tr[SU(2)^2 Y]=0`) | Declared P-COMP completion premise; Standard Model branch is exact rational witness, not derived completion authority | no |
+| (B3) | Adding SU(2)-singlet right-handed completion with `(y_1, y_2, y_3, y_4) = (4a, -2a, -6a, 0)` cancels all anomaly traces, specializing at `a=1/3` to `(4/3, -2/3, -2, 0)` | Declared P-COMP completion premise; scale-free completion branch is exact algebraic witness, not derived completion authority | no |
 | (B4) | The SU(2)-singlet RH completion is chirally distinct from LH doublets; under P-REC, staggered `epsilon` is realized as Clifford `gamma_5` (involution, anticommuting with all Dirac matrices) on the carrying spacetime representation | Retained `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02` rules per-site Cl(3); retained-bounded `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07` carries the staggered `{epsilon, D_staggered}=0` realization; P-REC is declared | no |
 | (B5) | `gamma_5` involution + anticommutation forces total dimension `d = d_s + d_t` to be even | Retained `CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10` (sister narrow theorem) | no |
 | (B6) | With `d_s = 3` (Z^3 substrate), `d_t` must be a positive odd integer: `d_t in {1, 3, 5, ...}` | Retained `NATIVE_GAUGE_CLOSURE_NOTE` (Cl(3)/Z^3); subtraction in `Z` | no |
@@ -243,6 +264,12 @@ registered.
   — supplies the bounded abelian eigenvalue surface with spectrum
   `{+1/3 x6, -1 x2}`. P-HY, not this note, identifies that surface
   with anomaly-relevant `U(1)_Y`.
+- [`ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md`](ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md)
+  — verifies that the ABJ nonzero-anomaly and completion-witness
+  arithmetic is scale-free over `Y_a = a P_6 - 3a P_2` for `a != 0`.
+  This removes the absolute `a = 1/3` normalization and SM naming
+  convention from the load-bearing anomaly arithmetic. It does not
+  derive P-HY, P-COMP, P-ABJ, or P-REC.
 - [`CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md)
   — supplies the retained-grade narrow theorem that `gamma_5`
   existence forces `d = d_s + d_t` even (used in step (B5)).

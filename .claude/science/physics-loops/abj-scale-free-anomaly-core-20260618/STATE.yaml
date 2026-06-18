@@ -1,0 +1,18 @@
+loop: abj-scale-free-anomaly-core-20260618
+branch: codex/abj-scale-free-anomaly-core-20260618
+base: origin/main@ea47472d8ab6e42c90c9b261376de1d4ca8d9940
+target_claim_id: anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26
+target_status: audited_conditional
+blocker: "P-HY, P-COMP, and P-REC are declared premise edges; P-HY/P-COMP arithmetic should be narrowed where possible."
+active_route: scale-free native abelian anomaly core
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+files_touched:
+  - docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md
+  - docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  - scripts/frontier_abj_scale_free_native_abelian_anomaly_core_2026_06_18.py
+  - logs/runner-cache/frontier_abj_scale_free_native_abelian_anomaly_core_2026_06_18.txt
+review_loop_disposition: reviewer_owned_not_run
+audit_required_before_effective_retained: true
+next_exact_action: "Reviewer can decide whether to extract the scale-free support note and re-audit the ABJ bridge with normalization removed from the P-HY/P-COMP blocker."

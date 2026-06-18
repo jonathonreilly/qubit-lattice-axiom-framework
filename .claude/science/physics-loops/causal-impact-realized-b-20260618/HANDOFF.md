@@ -3,6 +3,8 @@
 This branch repairs the audited-failed `causal_impact_parameter_note` source
 packet without editing audit results.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4373
+
 The old failure was that alpha/R^2 was fit against nominal `target_z` labels
 while the source layer saturated near the generated boundary. This branch
 enlarges the transverse source support to `HALF = 20`, emits source-anchor

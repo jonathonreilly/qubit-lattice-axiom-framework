@@ -17,6 +17,6 @@ no_go_routes:
   - "Keeping HALF=5 cannot realize target b=5..10; the source anchors collapse near realized b about 2.54..2.61."
 trace_gate: direct_blocker_closure
 review_loop_disposition: delegated
-pr_status: pending
-next_exact_action: "Push branch and open ready PR for reviewer extraction; do not audit, land, or refresh stale PRs."
-stop_condition: "Stop after PR creation for this coherent source-side repair block."
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4373"
+next_exact_action: "Reviewer extracts and backpressures PR #4373; do not audit, land, or refresh stale PRs."
+stop_condition: "Stop after ready PR creation for this coherent source-side repair block."

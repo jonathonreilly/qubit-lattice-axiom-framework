@@ -1,0 +1,12 @@
+loop_id: plh-ncg-underdetermination-20260618
+status: review_ready
+branch: codex/plh-ncg-underdetermination-20260618
+started_at: 2026-06-18
+target: primitive_p_lh_content_proposal_note_2026-05-10_pplh
+claim_status: bounded_negative_boundary
+audit_action: none
+review_loop: not_run_user_deferred_to_codex_reviewer
+summary: >
+  Added a no-new-axioms underdetermination boundary for the P-LH NCG route,
+  showing the current minimal baseline does not determine order-one,
+  KO-dim-6 J, or the finite algebra.

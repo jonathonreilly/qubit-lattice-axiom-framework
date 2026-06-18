@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 213 |
+| **retained** | 214 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 912 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
 | unaudited | 1643 |
-| audit_in_progress | 1 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 5 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1321 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1322 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
@@ -131,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_kms_condition_theorem_note_2026-05-01` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -181,6 +179,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_kms_condition_theorem_note_2026-05-01` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2212,6 +2211,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** In each conical zero window, replace |E_b(p_j+q)| by |V_jb q| with O(T^5) absolute error and evaluate ∫ d^3q/(2π)^3 |V_jb q| n_F(|V_jb q|/T) = |det V_jb|^-1 (7/8)(π^2/30) T^4.  _(class `A`)_
 - **chain closes:** True — The theorem follows from the explicit kernel-geometry hypothesis (Z), compactness/gap off the zero windows, the determinant Jacobian for the tangent cone, and the retained 7/8 Fermi integral. The open items named in the note are boundaries of scope, not missing steps in the conditional theorem.
 - **rationale:** The coefficient check closes independently: Γ(4)η(4)=7π^4/120 and the phase-space factor gives 7π^2/240=(7/8)(π^2/30), while the linear change of variables contributes exactly |det V|^-1. The O(T^5) replacement bound follows from the quadratic cone error and exponential Lipschitz decay of x n_F(x/T); the falsification exponents T^2 and T^(5/2) follow by codim-1 and quadratic rescaling. The runner source performs actual finite-kernel spectral, zero-set, quadrature, and mode-sum computations rather than merely printing constants, and the cited non-retained axiom memo is explicitly an accepted premise while the other dependencies are retained-grade.
+- **auditor confidence:** high
+
+### `axiom_first_kms_condition_theorem_note_2026-05-01`
+
+- **Note:** [`AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-block even-L_tau two-step RP transfer-matrix setting: the Gibbs state on finite H_phys with T=T_hat^2 and H=-(1/(2a_tau))log(T/M_T) satisfies the finite-dimensional KMS strip identity, trace/Gibbs slice cyclicity, strip analyticity, and invariant-KMS uniqueness.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-axiom_first_kms_condition_theorem_note_2026-05-01-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** After expanding alpha_{t+i beta_th}(B), cyclicity of the finite trace moves e^{beta_th H} to the front and gives F_{A,B}(t+i beta_th) = Z^{-1} tr(e^{-beta_th H} alpha_t(B) A) = G_{A,B}(t).  _(class `A`)_
+- **chain closes:** True — Given the retained-bounded RP input supplying finite H_phys and positive two-step T, and the retained-bounded spectrum input supplying self-adjoint H with the stated blocked-time normalization, the KMS identity and uniqueness are finite-dimensional trace and matrix-unit algebra. No external comparator, fitted value, or continuum KMS theorem is used.
+- **rationale:** The load-bearing calculation is an exact finite-dimensional algebraic closure over the supplied RP/spectrum transfer-matrix inputs: matrix exponentials, cyclic trace, and matrix units prove (K2)–(K4), while T^N_tau = exp(-beta_th H) follows after the stated vacuum-energy normalization. The runner source genuinely checks the generic finite-PSD-H identities and slice cyclicity rather than printing constants, but it correctly does not attempt to rederive RP or the spectrum condition. The direct non-axiom dependencies in the restricted packet are retained_bounded, which is retained-grade under the rubric; the minimal axiom memo is an accepted premise.
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06`

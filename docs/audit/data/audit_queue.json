@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 304,
     "high": 267,
-    "leaf": 554,
+    "leaf": 553,
     "medium": 412
   },
   "cycle_break_target_count": 7,
@@ -17415,33 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "causal_distance_tail_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "causal_propagating_field_live_packet_note_2026-06-05",
-        "causal_field_portability_note"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/evolving_network_prototype_v6.py"
-      ],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/CAUSAL_DISTANCE_TAIL_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/causal_distance_tail_probe.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "color_link_sym2_endpoint_projection_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17536,6 +17509,28 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/FINITE_CELL_TWO_BAND_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py",
       "transitive_descendants": 16
     },
     {
@@ -30208,28 +30203,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/FINITE_CELL_TWO_BAND_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30932,6 +30905,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_capture_tail_exact_law_2026_06_12.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "causal_cone_speed_map_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "causal_propagating_field_live_packet_note_2026-06-05",
+        "causal_field_portability_note",
+        "causal_distance_tail_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/evolving_network_prototype_v6.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/CAUSAL_CONE_SPEED_MAP_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/causal_cone_speed_map.py",
       "transitive_descendants": 0
     },
     {
@@ -36969,34 +36970,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_carrier_orbit_invariance.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "causal_cone_speed_map_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "causal_propagating_field_live_packet_note_2026-06-05",
-        "causal_field_portability_note",
-        "causal_distance_tail_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/evolving_network_prototype_v6.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CAUSAL_CONE_SPEED_MAP_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/causal_cone_speed_map.py",
       "transitive_descendants": 0
     },
     {
@@ -46198,5 +46171,5 @@
     }
   ],
   "ready_count": 113,
-  "total_pending": 1537
+  "total_pending": 1536
 }

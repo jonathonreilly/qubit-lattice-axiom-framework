@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1522 |
-| Retained-grade rows, including boxed decorations | 1440 |
+| Applied audit verdicts | 1523 |
+| Retained-grade rows, including boxed decorations | 1441 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 958 |
+| Retained bounded rows | 959 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 27 |
-| Unaudited rows | 1535 |
+| Unaudited rows | 1534 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 29 |
 | Audited renaming rows | 16 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1537 |
+| Total pending rows | 1536 |
 | Ready rows | 113 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
 | Medium pending | 412 |
-| Leaf pending | 554 |
+| Leaf pending | 553 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`causal_distance_tail_note`](../../docs/CAUSAL_DISTANCE_TAIL_NOTE.md) - medium; unaudited
 - [`color_link_sym2_endpoint_projection_2026-06-05`](../../docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md) - medium; unaudited
 - [`commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`](../../docs/COMMENSURATION_UNCONDITIONAL_PERIOD_PARITY_LEMMA_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28`](../../docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
 - [`ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16`](../../docs/EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md) - medium; unaudited
+- [`finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13`](../../docs/FINITE_CELL_TWO_BAND_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`lanes.generated-geometry.readme`](../../docs/lanes/generated-geometry/README.md) - medium; unaudited
-- [`finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13`](../../docs/FINITE_CELL_TWO_BAND_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md) - leaf; unaudited
+- [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 958 |
+| **retained_bounded** | 959 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1535 |
+| unaudited | 1534 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1392 |
+| `audited_clean` | 1393 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1857 |
+| `unaudited` | 1856 |
 
 | claim_type | count |
 |---|---:|
@@ -231,6 +231,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3055,6 +3056,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
   - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
+- **auditor confidence:** high
+
+### `causal_distance_tail_note`
+
+- **Note:** [`CAUSAL_DISTANCE_TAIL_NOTE.md`](../../docs/CAUSAL_DISTANCE_TAIL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite configured runner result on three structured-growth families: zero-source controls vanish, broad causal-field variants fit steep high-R2 distance tails, and dynamic c=0.5 gives a much steeper mixed-toward tail on the declared b-grid.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-causal_distance_tail_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The broad field cases keep a clear but non-Newtonian distance-law tail on the tested families, while dynamic c=0.5 collapses the tail further and marks the configured boundary diagnostic.  _(class `C`)_
+- **chain closes:** True — The primary runner constructs the declared families, fields, propagations, centroid shifts, and log-log fits directly, and the supplied output matches the source note. The helper source used for growth and propagation is included; no external comparator or imported fitted exponent is used.
+- **rationale:** The code does not hard-code the reported alpha, R^2, or TOWARD counts; it computes them from the configured field rules over seeds, b-values, and families. Both cited authorities are retained_bounded, which is retained-grade for this bounded diagnostic, and the source note explicitly disclaims universal causal-field and physical wave-speed claims. The clean result is therefore only the finite replay statement, not a physical derivation of the causal carrier or a universal Newtonian-distance theorem.
 - **auditor confidence:** high
 
 ### `causal_escape_window_note`

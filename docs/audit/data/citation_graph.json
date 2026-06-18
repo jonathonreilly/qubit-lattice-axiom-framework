@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "distance_law_definitive_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10"
+      "to": "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12",
         "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
         "distance_law_breakpoint_note",
         "koide_readout_lane_demarcation_note_2026-05-30",
         "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
+        "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
         "distance_law_definitive_note",
-        "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10"
+        "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7d60c783a7860ed3e2999cdd9c1c1b02251f050936b0b64a23afa17bd2aeb389",
+      "note_hash": "b98ecb36bda5295c0d61337b191ac166621722f8ae131f73fef3db56469eb184",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

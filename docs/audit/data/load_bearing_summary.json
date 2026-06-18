@@ -1,9 +1,9 @@
 {
   "criticality_counts": {
     "critical": 574,
-    "high": 508,
+    "high": 507,
     "leaf": 1520,
-    "medium": 921
+    "medium": 922
   },
   "flagship_signal_used": false,
   "node_count": 3523,
@@ -121,14 +121,14 @@
     {
       "claim_id": "three_generation_structure_note",
       "criticality": "critical",
-      "load_bearing_score": 35.586,
-      "transitive_descendants": 1086
+      "load_bearing_score": 35.587,
+      "transitive_descendants": 1087
     },
     {
       "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
       "criticality": "critical",
-      "load_bearing_score": 34.853,
-      "transitive_descendants": 924
+      "load_bearing_score": 34.855,
+      "transitive_descendants": 925
     },
     {
       "claim_id": "koide_circulant_character_derivation_note_2026-04-18",

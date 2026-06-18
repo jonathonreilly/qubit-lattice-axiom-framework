@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1000 |
+| **retained_bounded** | 1001 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1422 |
+| unaudited | 1421 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 29 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1450 |
+| `audited_clean` | 1451 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1744 |
+| `unaudited` | 1743 |
 
 | claim_type | count |
 |---|---:|
@@ -1473,6 +1473,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `transfer_trace_correspondence_fixes_kernel_normalization_on_retained_surface_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -21647,6 +21648,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The strongest retained quantitative result from this pilot is: LN+|y|+collapse at N=25: purity=0.7075; LN+|y|+collapse at N=100: purity=0.8835.  _(class `C`)_
 - **chain closes:** True — For the narrowed bounded scope, the live runner reproduces the note's finite-run purity values and negative fitted alpha. The chain does not close for any asymptotic theorem beyond the tested/fitted range or for a uniform collapse-over-LN improvement claim.
 - **rationale:** The retained claim is only the bounded numerical output of the specified runner configuration. No declared ledger dependencies are needed for that scoped finite-run statement, and the operational helper imports are implementation code rather than cited retained claims. The runner has no assert/PASS checks, so the clean verdict rests on direct live reproduction of the reported output, not on a formal assertion harness. The source prose that adding collapse gives a small finite-N improvement over LN+|y| alone should not be treated as retained, since N=40 has LN+|y|+collapse purity 0.7655 versus LN+|y| purity 0.7636.
+- **auditor confidence:** high
+
+### `two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13`
+
+- **Note:** [`TWO_BAND_LATTICE_MOYAL_FULL_B2_BOUNDED_THEOREM_NOTE_2026-06-13.md`](../../docs/TWO_BAND_LATTICE_MOYAL_FULL_B2_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free staggered two-band lattice Hamiltonian at mu=1.7086, T=0.2, m in {0,0.2,0.3,0.5}: implemented full lattice Moyal B^2 comparator versus the Q=24, Ly=2 finite-cell response after one m=0 normalization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner independently reconstructs the implemented B^2 Moyal source and, after fixing the single cell normalization at m=0, finds a maximum off-reference residual of 35.654% at m=0.5.  _(class `C`)_
+- **chain closes:** True — The primary runner computes the Moyal B^2 source from the stated Hamiltonian, validates it against a finite-difference reconstruction, and compares it to the retained_bounded finite-cell reference. The conclusion is only the bounded one-point-normalized mismatch, not finite-cell closure or a global no-go.
+- **rationale:** The helper runner computes the finite-cell target through a finite momentum sum and checks it against direct real-space Harper perturbation; the primary runner recomputes those reference values rather than relying only on note prose. The primary runner then computes the Moyal B^2 matrices and integrals, checks the load-bearing source matrix by finite differences, and bounds quadrature and pole-reconstruction error. The negative language is scoped to this comparator miss, and the source note supplies an N1-N8 no-go discipline gate rather than overclaiming a universal obstruction.
 - **auditor confidence:** high
 
 ### `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05`

@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17"
+      "to": "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16",
         "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13",
         "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12",
         "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16",
         "wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13",
+        "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17"
+        "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b834aa7abc3ea1322ba57bfc4e6b89afe38a257372a2dabab8a5af3753e9a944",
+      "note_hash": "7bbfcb866a1123c31f7c93b481898267dba5ee43c4fbb851b1bade6ee07bc67a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

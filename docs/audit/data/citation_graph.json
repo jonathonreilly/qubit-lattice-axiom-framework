@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "source_resolved_exact_green_self_consistent_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11"
+      "to": "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "source_resolved_exact_green_self_consistent_note",
         "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
         "taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13",
         "teleportation_conclusion_boundary_note",
         "teleportation_native_axioms_scope_split_source_theorem_note_2026-05-16",
+        "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11"
+        "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bb329e6d2769e300ac47069dd5ccf847f600a18e9e122812ea28a7b823a1122d",
+      "note_hash": "9f0e5a5c4a13c6ff89bd13aabd72f99edd75647be4b0e2b3aa2842712dd94386",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

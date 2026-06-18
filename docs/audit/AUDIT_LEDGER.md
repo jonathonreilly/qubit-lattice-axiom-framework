@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 999 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1428 |
+| unaudited | 1427 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1448 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1750 |
+| `unaudited` | 1749 |
 
 | claim_type | count |
 |---|---:|
@@ -1639,6 +1639,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -20207,6 +20208,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using K = U Sigma V^dag, unitary block conjugation reduces M = [[alpha I,K],[-K^dag,alpha I]] to direct two-by-two blocks [[alpha,sigma_i],[-sigma_i,alpha]], so det(M)=prod_i(alpha^2+sigma_i^2)>0 for alpha>0.  _(class `A`)_
 - **chain closes:** True — The algebra closes independently of the runner: with W=diag(U,V), W^dag M W has off-diagonal Sigma and -Sigma, and a permutation of basis exposes the 2x2 block direct sum. Each factor alpha^2+sigma_i^2 is strictly positive because alpha>0 and sigma_i>=0.
 - **rationale:** The determinant formula is a standard finite-dimensional algebraic identity once the balanced eps decomposition and supplied alpha I diagonal surface are assumed. The note explicitly does not claim that M_W = r d I is framework-forced, does not cover the standard Wilson nearest-neighbour Laplacian, and does not assert parent-row reflection positivity or Wilson-sector sign-problem closure. On that scoped supplied surface, no open dependency or hidden bridge theorem is imported. The runner source performs actual finite-matrix construction and factorisation checks, but the clean verdict rests on the independent SVD/block determinant argument.
+- **auditor confidence:** high
+
+### `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`
+
+- **Note:** [`STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the algebraic reduction of the W8a statistics atom under retained one-copy Born form, retained-bounded product-to-outcome weakening, and a supplied two-outcome quotient factorization m(j,k)=p_j p_k; the factorization premise itself was not audited as true.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supply the quotient-level premise m(j,k)=p_j p_k for j,k in {s,d}; then agreement conditioning gives p_i' = p_i^2/(p_s^2+p_d^2), hence x -> x^2 and r -> 2r^2.  _(class `A`)_
+- **chain closes:** False — The conditional algebra closes once m(j,k)=p_j p_k is supplied. The unrestricted chain does not close from the cited retained inputs alone because no provided authority derives the outcome-factorization premise for repeated registrations.
+- **rationale:** Issue: K2 imports the quotient-level outcome-factorization premise m(j,k)=p_j p_k as a supplied premise. Why this blocks: the retained Born and product-to-outcome authorities justify the form of the downstream algebra, but they do not derive physical repeated-registration independence. Repair target: provide a retained theorem or retained-bounded direct dependency discharging outcome factorization on the registered two-outcome quotient. Claim boundary until fixed: the note is a valid conditional algebraic reduction under that supplied premise, not a closure of the statistics atom from retained inputs alone.
+- **open / conditional deps cited:**
+  - `UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md`
+  - `UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md`
 - **auditor confidence:** high
 
 ### `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26`

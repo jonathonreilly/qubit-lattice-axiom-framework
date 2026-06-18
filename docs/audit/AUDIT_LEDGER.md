@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 988 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 33 |
-| unaudited | 1457 |
+| unaudited | 1456 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1432 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1779 |
+| `unaudited` | 1778 |
 
 | claim_type | count |
 |---|---:|
@@ -1609,6 +1609,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_mru_demotion_note_2026-04-20` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12729,6 +12730,21 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The in-scope coefficient claim follows by direct matrix multiplication and trace algebra from the displayed T_m plus the stated potential normalization. The broader mass-tower and physical selected-point language is explicitly excluded from the audited scope and is not needed for the local coefficient result.
 - **rationale:** The load-bearing algebra is local: T_m is displayed, T_m^2=I_3 is directly checkable, Tr(T_m^2)=3 and Tr(T_m^3)=1 then fix the quadratic and cubic coefficients under the note's stated potential normalization. No one-hop dependencies are wired for this row, and no runner is required because the audited claim is an exact finite matrix calculation. Residual risk is scope drift: the title and later mass-table material must not be cited as an audited derivation of the charged-lepton mass tower or physical m_* selector.
 - **auditor confidence:** high
+
+### `koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3`
+
+- **Note:** [`KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md`](../../docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given a physical Z^3 substrate and the cited C3[111]/translation-projector action on H_hw=1, the hw=1 BZ-corner carrier has cardinality 3 and is not reducible by an algebra-preserving nonzero quotient; SM species identification and sector propagation are out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Z^3 BZ corners have a hw=1 class of exactly three corners, C3[111] acts on it as a single regular 3-cycle, and no proper D3+C3-preserving nonzero quotient reduces that carrier.  _(class `A`)_
+- **chain closes:** False — The finite orbit-counting and no-quotient algebra close on the stated substrate surface. The missing step is retained-grade or prompt-registered accepted-premise authority for the physical Z^3 substrate premise used as load-bearing input.
+- **rationale:** Issue: the runner performs real finite checks for group order, Fourier eigenvectors, hw=1 orbit enumeration, and D3+C3 invariant subspaces. Why this blocks: the physical-substrate wording depends on docs/MINIMAL_AXIOMS_2026-05-03.md, which is marked meta in the packet and is not flagged as an accepted premise by the restricted materials. Repair target: provide a retained-grade or prompt-registered accepted-premise authority for the physical Z^3 substrate premise, or narrow the claim to a purely conditional algebraic statement. Claim boundary until fixed: conditional substrate-cardinality theorem, not an unqualified physical forcing claim.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-03.md`
+- **auditor confidence:** medium
 
 ### `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`
 

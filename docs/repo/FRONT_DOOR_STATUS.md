@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1600 |
+| Applied audit verdicts | 1601 |
 | Retained-grade rows, including boxed decorations | 1479 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 988 |
 | Boxed decorations under retained parents | 55 |
 | Open gates | 33 |
-| Unaudited rows | 1457 |
+| Unaudited rows | 1456 |
 | Retained-pending-chain rows | 3 |
-| Audited conditional rows | 54 |
+| Audited conditional rows | 55 |
 | Audited renaming rows | 20 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 7 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1459 |
-| Ready rows | 43 |
+| Total pending rows | 1458 |
+| Ready rows | 42 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 474 |
+| Leaf pending | 473 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3`](../../docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md) - medium; unaudited
 - [`kubo_fam2_non_convergence_note_2026-05-02`](../../docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md) - medium; unaudited
 - [`landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13`](../../docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`lattice_3d_nyquist_diffraction_note`](../../docs/LATTICE_3D_NYQUIST_DIFFRACTION_NOTE.md) - medium; unaudited
 - [`lepton_block_d12_prime_matching_no_go_note_2026-05-10`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md) - medium; unaudited
+- [`meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16`](../../docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16`](../../docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) - leaf; unaudited
+- [`mirror_mutual_information_note`](../../docs/MIRROR_MUTUAL_INFORMATION_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

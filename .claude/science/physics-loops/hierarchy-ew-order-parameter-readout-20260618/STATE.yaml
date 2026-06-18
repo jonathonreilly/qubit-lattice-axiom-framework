@@ -1,0 +1,28 @@
+loop_slug: hierarchy-ew-order-parameter-readout-20260618
+objective: "Partially close the hierarchy dimensional-compression physical readout blocker by proving the retained EW neutral order-parameter v is the D=4 fourth-root coordinate for a supplied positive quartic density."
+target_status: bounded-support
+base_branch: main
+base_commit: a8c174fa4
+branch: codex/hierarchy-ew-order-parameter-readout-20260618
+worktree: /private/tmp/hierarchy-ew-order-parameter-readout-20260618
+cycle_count: 1
+active_route: "EW neutral-Higgs norm plus fixed positive quartic density theorem"
+hard_residual: "Endpoint coefficient to physical Higgs density selection and absolute EW scale remain open."
+files_touched:
+  - docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+  - scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py
+  - logs/runner-cache/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.txt
+  - docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md
+  - scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py
+  - logs/runner-cache/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.txt
+open_imports:
+  - "physical theorem identifying the hierarchy Matsubara endpoint coefficient surface with the physical Higgs density surface"
+  - "absolute EW scale closure"
+  - "framework-native carrier realization for using the map as a full physical VEV theorem"
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_loop_disposition: "not_run_user_delegated_to_reviewer"
+pr_status: pending
+pr_url: pending
+next_exact_action: "Commit, push, and open ready PR."
+stop_condition: "Coherent source-side bridge packaged as PR; audit/review/landing are delegated."

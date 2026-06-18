@@ -8,7 +8,8 @@ Within-scope content (this runner's PASS gates):
   electroweak observation v_obs or the imported pre-selector value
   v_pred. The (1/4) D=4 compression exponent and inverse placement are
   now routed through the 2026-06-16 fixed-density coefficient-to-scale
-  bridge, while the physical VEV readout identification stays outside
+  bridge and the 2026-06-18 EW order-parameter D=4 density readout bridge,
+  while endpoint selection and the absolute physical VEV closure stay outside
   this parent row.
 
 External-context block (printed, NOT PASS-load-bearing):
@@ -17,10 +18,10 @@ External-context block (printed, NOT PASS-load-bearing):
   see why the dimensional-compression direction is of physical
   interest; explicitly excluded from any PASS condition.
 
-This script does not derive the EW VEV from primitives. The within-
-scope load-bearing content is the PASS-gated arithmetic below; the
-remaining open step is the physical order-parameter/readout
-identification.
+This script does not derive the EW VEV from primitives. The within-scope
+load-bearing content is the PASS-gated arithmetic below; the remaining open
+step is the hierarchy-endpoint-to-physical-Higgs-density selection and
+absolute scale closure.
 """
 
 from __future__ import annotations
@@ -126,6 +127,13 @@ def check_source_firewall() -> None:
         and "still does not identify the electroweak VEV" in flat
         and "D=4 taste-count input is now routed through retained bounded taste-count authorities" in flat
         and "No new axiom, Tier-A admission, observed target, or audit status" in flat,
+    )
+    check(
+        "source note wires EW order-parameter readout bridge while preserving endpoint-selection residual",
+        "HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md" in note
+        and "EW neutral order-parameter coordinate" in flat
+        and "endpoint-selection residual remains open" in flat
+        and "does not derive that the hierarchy Matsubara endpoint coefficient is the physical Higgs density" in flat,
     )
     taste_ids = [
         "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
@@ -253,11 +261,12 @@ def main() -> None:
 
     print("\nConclusion (within-scope):")
     print("  Under the 2026-06-16 fixed-density coefficient-to-scale bridge,")
-    print("  a positive endpoint coefficient ratio R maps to the inverse")
-    print("  fourth-root scale factor R^(-1/4) at D=4. The runner checks")
-    print("  that this candidate is quantitatively distinct from the D=16")
-    print("  direct-scale alternative and that no within-scope PASS gate")
-    print("  depends on the imported v_obs.")
+    print("  and the 2026-06-18 EW order-parameter readout bridge, a positive")
+    print("  endpoint coefficient ratio R maps to the inverse fourth-root")
+    print("  scale factor R^(-1/4) at D=4 on a supplied quartic Higgs-density")
+    print("  surface. The runner checks that this candidate is quantitatively")
+    print("  distinct from the D=16 direct-scale alternative and that no")
+    print("  within-scope PASS gate depends on the imported v_obs.")
 
     print("\n" + "=" * 78)
     print(f"SCORECARD: {PASS_COUNT} pass, {FAIL_COUNT} fail out of {PASS_COUNT + FAIL_COUNT}")

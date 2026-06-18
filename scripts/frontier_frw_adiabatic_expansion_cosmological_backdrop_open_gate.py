@@ -57,13 +57,18 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
 def part0_source_firewall() -> str:
     print("\n== Part 0: source firewall ==")
     note = NOTE_PATH.read_text(encoding="utf-8")
+    note_normalized = " ".join(note.split())
 
     required = [
         "Supplied premise packet (not axioms, not registry premises)",
         "C1 Cosmological principle",
         "C2 Adiabatic expansion",
         "C3 Standard FRW equation-of-state sequence",
-        "does **not** claim to derive C1, C2, or C3 from",
+        "2026-06-18 C3 kinetic-label partial bridge",
+        "FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+        "does not derive C1 or C2",
+        "does not derive the full FRW backdrop",
+        "full cosmological-fluid application of C3 remain outside this parent note",
         "no new repo-wide axiom is introduced",
         "introduces **no new admissions and no new repo-wide",
         "Status authority:** independent audit lane only",
@@ -72,7 +77,7 @@ def part0_source_firewall() -> str:
         RUNNER_PATH,
     ]
     for phrase in required:
-        check(f"source contains boundary phrase: {phrase}", phrase in note)
+        check(f"source contains boundary phrase: {phrase}", phrase in note_normalized)
 
     # Forbidden = positive over-claim or imported-physics framing. Quoted
     # uses inside disclaimer language ("no new 'cosmological backdrop
@@ -120,7 +125,7 @@ def part1_partition() -> tuple[set[str], set[str]]:
     supplied_C123 = {
         "C1: cosmological principle (homogeneity + isotropy beyond S^3)",
         "C2: adiabatic expansion (no entropy injection in leptogenesis -> CMB window)",
-        "C3: standard FRW EOS labels (w_r=1/3, w_m=0)",
+        "C3 residual: cosmological-fluid application of ideal EOS labels",
     }
     intersection = framework_or_conditional & supplied_C123
     union = framework_or_conditional | supplied_C123
@@ -232,8 +237,9 @@ def part5_admission_boundary_recorded() -> None:
     note = NOTE_PATH.read_text(encoding="utf-8")
     note_normalized = " ".join(note.split())
     required_honest_scope = [
-        "*Nothing.*",  # the "retired to bounded-derived class" column is empty
-        "does not retire any cosmological-backdrop admission",
+        "The ideal kinetic component labels `w_r = 1/3` and `w_m = 0` are now supported",
+        "retires only the narrow ideal kinetic-label import",
+        "does not retire the cosmological-backdrop admission",
         "records the admission boundary",
         "It does **not**",
         "open gate",
@@ -262,7 +268,7 @@ def part6_downstream_source_boundary_firewall() -> None:
             phrase in note_normalized,
         )
     blocked_targets = [
-        "C1, C2, or C3",
+        "C1, C2, or the full cosmological-fluid application of C3",
         "FRW dynamics",
         "entropy conservation or adiabatic expansion",
         "observational cosmology parameters",
@@ -284,10 +290,13 @@ def part6_result(fw_set: set[str], supplied_set: set[str]) -> None:
     for entry in sorted(supplied_set):
         print(f"  - {entry}")
     print(
-        "Net retirements to bounded-derived: 0 (the bridge re-bases the existing "
-        "open gate onto an explicit C1-C3 premise packet without eliminating admission)."
+        "Net retirement: the ideal non-Lambda kinetic EOS labels are narrowed to "
+        "bounded support; C1, C2, and C3 cosmological-fluid application remain open."
     )
-    print("No new repo-wide axiom and no claim to derive C1, C2, or C3.")
+    print(
+        "No new repo-wide axiom and no claim to derive C1, C2, or the full "
+        "cosmological-fluid application of C3."
+    )
 
 
 def main() -> int:
@@ -304,8 +313,9 @@ def main() -> int:
     if FAIL == 0:
         print(
             "VERDICT: open gate passes; FRW + adiabatic backdrop decomposition "
-            "is recorded as an unresolved C1-C3 premise boundary. No new admissions "
-            "are introduced; no row's effective status is changed."
+            "is recorded as an unresolved C1-C3 premise boundary with partial "
+            "bounded support for the ideal non-Lambda C3 kinetic labels. No new "
+            "admissions are introduced; no row's effective status is changed."
         )
         return 0
     print("VERDICT: open gate FAILED.")

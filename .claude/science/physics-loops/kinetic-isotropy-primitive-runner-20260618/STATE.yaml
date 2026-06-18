@@ -1,0 +1,24 @@
+loop_slug: kinetic-isotropy-primitive-runner-20260618
+goal: "Register a primitive-boundary runner for kinetic_isotropy_primitive so the critical approved-primitive row has mechanical source evidence."
+target_status: best-honest-status
+actual_current_surface_status: open
+trace_class: methodology
+reachability_to_target: supports
+branch: codex/kinetic-isotropy-primitive-runner-20260618
+base: origin/main
+base_commit: e075820c0
+cycle_count: 1
+active_route: approved_primitive_boundary_runner
+files_touched:
+  - docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+  - scripts/kinetic_isotropy_primitive_boundary_check_2026_06_09.py
+  - logs/runner-cache/kinetic_isotropy_primitive_boundary_check_2026_06_09.txt
+open_imports: []
+no_go_routes:
+  - treating kinetic isotropy as a downstream Lorentz theorem
+  - using the primitive to supply masses, couplings, angles, selectors, readout bridges, or empirical fits
+review_loop_disposition: "not run; reviewer handles review-loop/landing per user instruction"
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+next_exact_action: "Open PR for source-side primitive-boundary runner registration."
+stop_condition: "One coherent runner-registration block completed."

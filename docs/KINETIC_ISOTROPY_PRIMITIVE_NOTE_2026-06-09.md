@@ -9,6 +9,9 @@
 `docs/audit/data/axiom_premise_nodes.json` as
 `kinetic_isotropy_primitive`. Explicit owner approval is recorded in
 `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
+**Primary runner:** [`scripts/kinetic_isotropy_primitive_boundary_check_2026_06_09.py`](../scripts/kinetic_isotropy_primitive_boundary_check_2026_06_09.py)
+(primitive-boundary check; verifies registry/policy/source firewall only;
+`PASS=31 FAIL=0` on 2026-06-18).
 
 ## What This Declares
 

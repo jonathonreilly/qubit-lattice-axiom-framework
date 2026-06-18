@@ -3,7 +3,7 @@
     "critical": 304,
     "high": 267,
     "leaf": 569,
-    "medium": 420
+    "medium": 419
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -17415,32 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "three_generation_structure_note",
-        "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.822,
-      "note_path": "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_wilson_bz_corner_hamming_staircase_closed_form_certificate_2026_05_09.py",
-      "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "distance_law_definitive_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17582,15 +17556,15 @@
       "deps": [
         "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.67,
       "note_path": "docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_2026_06_12.py",
-      "transitive_descendants": 2
+      "transitive_descendants": 17
     },
     {
       "audit_independence_required": "any_non_self",
@@ -46792,6 +46766,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 130,
-  "total_pending": 1560
+  "ready_count": 129,
+  "total_pending": 1559
 }

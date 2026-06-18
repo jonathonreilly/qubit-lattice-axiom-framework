@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 949 |
+| **retained_bounded** | 950 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 22 |
-| unaudited | 1558 |
+| unaudited | 1557 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 15 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1376 |
+| `audited_clean` | 1377 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1880 |
+| `unaudited` | 1879 |
 
 | claim_type | count |
 |---|---:|
@@ -1475,6 +1475,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wide_lattice_h2t_skeptic_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wigner_mode_low_d_sublattice_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_extremum_curvature_readout_boundary_certificate_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -20811,6 +20812,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For n_mu in {0,1}, 1 - cos(n_mu*pi) = 1 - (-1)^{n_mu} = 2*n_mu, so W(n) = r*sum_mu 2*n_mu = 2*r*hw(n).  _(class `A`)_
 - **chain closes:** True — The audited statement is finite combinatorics plus exact integer arithmetic: {0,1}^4 has 16 corners, Hamming-weight classes have binomial(4,k) multiplicities, and the per-coordinate Wilson contribution is exactly 0 or 2. The direct dependency is retained-bounded for the Z^3 sister spectrum and no-quotient scope; this audit uses it only as contextual bounded authority, not as support for any physical species, Higgs, g_bare, or Wilson-coefficient claim.
 - **rationale:** The source note proves only the bounded staircase identity and explicitly excludes the Wilson coefficient r, staggered-Dirac realization gate, g_bare, Higgs gap chain, continuum mass, and physical matter/species claims. Independent enumeration confirms the 16 corners, the binomial multiplicities (1,4,6,4,1), exact W/r values (0,2,4,6,8), and class uniformity. The no-go/wall discipline check does not expose an inflated negative or hidden physical closure: the named walls are boundaries of scope, not asserted solved facts.
+- **auditor confidence:** high
+
+### `wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09`
+
+- **Note:** [`WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md`](../../docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite Wilson BZ-corner Hamming-weight staircase on the cited retained bounded {0,1}^4 corner surface, including S_4 equivariance, rectangular-rescaling cancellation for dimensionless W/r, and the Z^3 spatial corollary.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each component n_mu in {0,1}, 1 - cos(n_mu*pi) = 2*n_mu, so W(n)/r = sum_mu 2*n_mu = 2*hw(n), with multiplicities binomial(4,k).  _(class `A`)_
+- **chain closes:** True — The proof reduces to exact evaluation of cos(0) and cos(pi), binomial counting of bit-vectors, and permutation invariance of Hamming weight. All cited one-hop authorities in the packet are retained_bounded, and no external comparator or tuned numerical input is used.
+- **rationale:** The load-bearing identity is a genuine algebraic closure over the provided retained bounded Wilson/BZ-corner surface. The runner source enumerates the finite carriers, symbolically evaluates the Wilson sums, checks S_4/C_3 equivariance, verifies the rectangular-rescaling cancellation, and emits a certificate; it does not import PDG data, fitted constants, or a hidden calibrated value. This is not a renaming or numerical match, and it does not reduce to a single parent restatement because the audited package includes the closed-form enumeration, equivariance, lattice-rescaling identity, and spatial corollary.
 - **auditor confidence:** high
 
 ### `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08`

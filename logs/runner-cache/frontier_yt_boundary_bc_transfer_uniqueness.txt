@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_boundary_bc_transfer_uniqueness.py
-runner_sha256: 789afae304a265c7add4efb023878d91956900252938c5809644b2393a96ccf9
+runner_sha256: 324a03772dbe1c42e1bd8fa39d61c7332072a1d853fc9ad0bf45d203c543e484
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.83
+elapsed_sec: 1.45
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -16,6 +16,8 @@ SECTION 0: Source-boundary checks
 
   [PASS (D)] section0_2026_06_07_boundary_present
          source note carries the implementation-input retargeting section
+  [PASS (D)] section0_source_status_is_conditional_support
+         source type/status matches the finite-grid implementation boundary
   [PASS (D)] section0_imports_are_implementation_inputs
          canonical plaquette and Ward target are not proof authorities for this row
   [PASS (D)] section0_continuum_claims_excluded
@@ -236,11 +238,11 @@ SECTION 8: SCORECARD
     - parent claim (iii) Ward-identity domain     (interpretive)
     - parent claim (v)  non-perturbative bridge  (interpretive)
 
-  Elapsed: 0.9s
+  Elapsed: 0.7s
 
-  Counts: 29 PASS, 0 FAIL
+  Counts: 30 PASS, 0 FAIL
 
-  All 29 checks passed.
+  All 30 checks passed.
 
 ----- stderr -----
 

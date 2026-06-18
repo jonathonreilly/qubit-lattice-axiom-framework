@@ -310,10 +310,20 @@ log("SECTION 0: Source-boundary checks")
 log("=" * 78)
 log()
 note_text = NOTE.read_text(encoding="utf-8")
+note_flat = " ".join(note_text.split())
 check(
     "section0_2026_06_07_boundary_present",
     "2026-06-07 Implementation-Input Boundary Retargeting" in note_text,
     "source note carries the implementation-input retargeting section",
+)
+check(
+    "section0_source_status_is_conditional_support",
+    "**Claim type:** bounded_theorem" in note_text
+    and "**Type:** bounded_theorem" in note_text
+    and "conditional finite-grid implementation diagnostic only" in note_flat
+    and "not a continuum uniqueness theorem, physical BC-transfer theorem" in note_flat
+    and "No new axiom, retained bridge, audit verdict, ledger tag, or publication" in note_flat,
+    "source type/status matches the finite-grid implementation boundary",
 )
 check(
     "section0_imports_are_implementation_inputs",
@@ -336,7 +346,7 @@ check(
 )
 check(
     "section0_runner_count_updated",
-    "Counts: 29 PASS, 0 FAIL" in note_text,
+    "Counts: 30 PASS, 0 FAIL" in note_text,
     "note scorecard matches source-boundary runner",
 )
 check(

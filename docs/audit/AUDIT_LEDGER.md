@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 215 |
 | **retained_bounded** | 966 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 28 |
-| unaudited | 1512 |
+| open_gate | 29 |
+| unaudited | 1511 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 17 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1402 |
+| `audited_clean` | 1403 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1834 |
+| `unaudited` | 1833 |
 
 | claim_type | count |
 |---|---:|
@@ -1380,6 +1380,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_causal_channel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_cross_encoding_maps_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_dynamical_resource_generation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `teleportation_encoding_portability_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_finite_gapped_preparation_path_support_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_initial_state_preparation_probe_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `teleportation_logical_readout_audit` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5 | B | - |
@@ -19700,6 +19701,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** No high-fidelity Bell-resource window appears in this bounded product-state scan at the 0.90 Bell-overlap threshold, while interacting cases open only useful low-fidelity windows after fixed Bell-frame alignment.  _(class `C`)_
 - **chain closes:** True — The runner directly computes the stated finite model, extraction, Bell overlaps, teleportation fidelity estimates, null control, and Bob no-record input-independence for the default bounded cases. The note keeps the claim within ordinary quantum state teleportation and explicitly states the small-surface, sampled-time, ideal-logical-operation limits.
 - **rationale:** The scoped result is a bounded finite/model computation, not a no-go theorem and not merely an open obligation. The live output supports the note's numerical boundary: interacting cases exceed the useful Bell-overlap threshold but remain far below the 0.90 high-fidelity threshold, with null and no-signaling diagnostics passing. No hidden carrier, matter-transfer, FTL, or protocol-readout claim is needed for the bounded statement.
+- **auditor confidence:** high
+
+### `teleportation_encoding_portability_note`
+
+- **Note:** [`TELEPORTATION_ENCODING_PORTABILITY_NOTE.md`](../../docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite even-side KS cell/taste encoding portability for dimensions 1-3 and side lengths 2,4,6,8 over all cells, spectator choices, and logical axes, limited to ideal same-encoding quantum state teleportation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-teleportation_encoding_portability_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current fixed pair-hop flips only the last taste bit, so it gives logical X when a=d-1 but has P_encoded X_fixed P_encoded = 0 for non-last axes; retargeting X to the selected axis restores the logical X on every surveyed encoding.  _(class `C`)_
+- **chain closes:** True — The runner constructs the KS site operators, encoded subspaces, Bell projectors, and teleportation checks directly rather than printing expected constants, and the output matches the algebraic T5 condition from the retained-bounded cited authority. Physical apparatus, resource-generation dynamics, durable records, noise, and matter transfer are explicitly outside scope.
+- **rationale:** The primary computation genuinely instantiates the finite operator algebra and enumerates the audited grid, giving the stated 470/1330 fixed-X passes, 860 non-last-axis failures, and 1330/1330 axis-adapted passes. The single cited authority is retained_bounded and supplies the same necessary-and-sufficient fixed-X membership condition. The helper boundary check is status/boundary bookkeeping and does not add a hidden physical bridge to the finite operator-targeting claim.
 - **auditor confidence:** high
 
 ### `teleportation_finite_gapped_preparation_path_support_note_2026-06-16`

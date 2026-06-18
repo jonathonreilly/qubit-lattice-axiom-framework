@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_dabc_symmetric_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "teleportation_encoding_portability_note"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
+      "to": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "su3_dabc_symmetric_theorem_note_2026-05-02",
         "teleportation_encoding_portability_note",
         "lanes.generated-geometry.readme",
         "accessible_prediction_note",
         "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
+        "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
+        "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ece9de12e0849b018903289b7ea318436f2107529177190ef8dcb25af2074179",
+      "note_hash": "56fbaacc4386a991e279a749d513662816c8f08067a131b0943a0bbcc92b4e67",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -115747,7 +115747,7 @@
       "positive_theorem": 599
     },
     "edge_count": 13173,
-    "leaf_count": 1141,
+    "leaf_count": 1140,
     "node_count": 3523,
     "root_count": 1076,
     "runners_with_path": 3109

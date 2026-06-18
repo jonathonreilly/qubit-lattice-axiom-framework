@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 911 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1648 |
+| unaudited | 1647 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 3 |
-| ~~audited_conditional~~ | 10 |
+| ~~audited_conditional~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 2 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1319 |
-| `audited_conditional` | 10 |
+| `audited_conditional` | 11 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
 | `audited_renaming` | 3 |
-| `unaudited` | 1970 |
+| `unaudited` | 1969 |
 
 | claim_type | count |
 |---|---:|
@@ -1461,6 +1461,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
@@ -18813,6 +18814,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The scalar Green tail approaches 1/(4 pi r), and the sampled tensor response Pi_TT(k)-Pi_TT(0) is positive and approximately proportional to 2 - 2 cos k at the two smallest sampled momenta.  _(class `C`)_
 - **chain closes:** True — The runner actually computes the scalar heat-kernel Green values and the finite N=10 Pauli-matrix tensor response, and the reported tensor ratios are positive with the stated finite-grid spread. The source note restricts the conclusion to shape compatibility and does not rely on an absolute Newton constant, tensor/scalar source normalization, or observed-G equality.
 - **rationale:** For the scoped bounded diagnostic, the load-bearing computation is internal finite/numerical evaluation from the displayed lattice and Pauli-matrix definitions, not a renaming or external comparator match. The note explicitly excludes the physical Newton-route equality, GR tensor factor, and nonlinear closure that the packet does not derive. No cited non-retained authority or open bridge is needed for the narrowed claim.
+- **auditor confidence:** high
+
+### `universal_gr_polarization_frame_bundle_blocker_note`
+
+- **Note:** [`UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded blocker claim that the current packet supports a finite prototype frame-orbit obstruction but does not construct a canonical covariant 3+1 polarization-frame/projector bundle or Pi_curv.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-universal_gr_polarization_frame_bundle_blocker_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The localized channel coefficients move under valid 3+1 polarization-frame rotation, so the present quotient kernel does not canonically fix the lapse/shift/shear splitting or a distinguished Pi_curv.  _(class `A`)_
+- **chain closes:** False — The runner closes a finite algebraic check that sampled channel coefficients differ between two valid frames. It does not exhaust alternative covariant bundle/connection constructions or derive from the restricted packet that no canonical Pi_curv can be obtained from the current stack.
+- **rationale:** Issue: the load-bearing computation is a finite frame-dependence example plus text checks of upstream notes, not an exhaustive no-go or derivation from the axiom alone. Why this blocks: the stated blocker names a missing primitive for the current universal route, but the packet does not rule out other canonical covariant projector-bundle or connection constructions. Repair target: either narrow the claim to the exact finite frame-orbit/prototype result, or add an N1-N8-complete exhaustive theorem showing the current stack cannot derive Pi_curv. Claim boundary until fixed: the packet supports that no canonical Pi_curv is constructed here and that one sampled localization family is frame-dependent.
 - **auditor confidence:** high
 
 ### `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09`

@@ -52230,15 +52230,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "universal_gr_polarization_frame_bundle_blocker_note"
     },
     {
       "from": "repo.front_door_status",
       "to": "finite_rank_gravity_residual_helper_note_2026-04-14"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
     },
     {
       "from": "repo.front_door_status",
@@ -100629,9 +100629,9 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
         "universal_gr_polarization_frame_bundle_blocker_note",
         "finite_rank_gravity_residual_helper_note_2026-04-14",
+        "coarse_grained_exterior_law_helper_note_2026-04-14",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "axiom_first_kms_condition_theorem_note_2026-05-01",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
@@ -100639,7 +100639,7 @@
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c61b6fbebf113ab1df2ee28afee79511243a8de0b78a7da47b207c668dd91992",
+      "note_hash": "2c7a075355c47a3496566f1af10418921bc5f87ca81420b786bb6a83ba2f2ae2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

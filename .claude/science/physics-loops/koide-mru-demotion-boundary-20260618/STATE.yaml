@@ -1,0 +1,22 @@
+loop_slug: koide-mru-demotion-boundary-20260618
+goal: "Repair the Koide MRU demotion source note so it claims only bounded demotion / bridge-corollary support and fixes the cubic trace phase term."
+target_status: bounded-support
+mode: source_repair
+cycle_count: 1
+active_route: demotion_boundary_and_trace_formula_repair
+hard_residual: "A full physical scalar-measure closure theorem for the block-total route remains outside this row."
+files_touched:
+  - docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md
+  - scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py
+  - logs/runner-cache/frontier_koide_kappa_spectrum_operator_bridge_theorem.txt
+  - .claude/science/physics-loops/koide-mru-demotion-boundary-20260618/
+open_imports:
+  - "Spectrum-side Koide premise remains outside this demotion note."
+  - "Block-total Frobenius remains bounded support, not standalone physical scalar-measure closure."
+  - "MRU SO(2)-quotient remains a supplied condition for the MRU exposition, not derived here."
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Commit, push, open a ready review PR, then continue to the next source-side unlock candidate without rebasing older PRs."
+stop_condition: "Stop only after PR handoff or after refreshed queue scan has no source-side repair route left."

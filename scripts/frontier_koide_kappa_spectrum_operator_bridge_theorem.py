@@ -34,6 +34,7 @@ keyed to a substantive computation; there are no hard-coded True values.
 from __future__ import annotations
 
 import math
+from pathlib import Path
 
 import numpy as np
 import sympy as sp
@@ -41,6 +42,9 @@ import sympy as sp
 
 PASS = 0
 FAIL = 0
+
+ROOT = Path(__file__).resolve().parents[1]
+DEMOTION_NOTE = ROOT / "docs" / "KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md"
 
 
 def check(label: str, cond: bool, detail: str = "") -> bool:
@@ -53,6 +57,10 @@ def check(label: str, cond: bool, detail: str = "") -> bool:
     suffix = f"  ({detail})" if detail else ""
     print(f"  [{status}] {label}{suffix}")
     return cond
+
+
+def normalize(text: str) -> str:
+    return " ".join(text.split()).lower()
 
 
 # ---------------------------------------------------------------------------
@@ -128,8 +136,20 @@ check(
     sp.simplify(lhs_spectrum - rhs_operator) == 0,
 )
 
+# T6 — exact cubic trace diagnostic used by the MRU demotion note.
+tr_h3 = sp.expand(sp.trace(H_sym ** 3))
+phase_piece = sp.expand(tr_h3 - 3 * a_sym ** 3 - 18 * a_sym * (b1_sym ** 2 + b2_sym ** 2))
+expected_phase_piece = sp.expand(3 * (b_sym ** 3 + sp.conjugate(b_sym) ** 3))
+obsolete_phase_piece = sp.expand(a_sym * (b_sym ** 3 + sp.conjugate(b_sym) ** 3))
+check(
+    "T6 tr(H^3) phase term is 3(b^3+bbar^3), not a(b^3+bbar^3)",
+    sp.simplify(phase_piece - expected_phase_piece) == 0
+    and sp.simplify(phase_piece - obsolete_phase_piece) != 0,
+    detail=f"phase piece = {sp.simplify(phase_piece)}",
+)
+
 # ---------------------------------------------------------------------------
-# T6 / T7 — PDG numerical realization
+# T7 / T8 — PDG numerical realization
 # ---------------------------------------------------------------------------
 
 print("\nSection B — PDG charged-lepton numerical realization")
@@ -141,7 +161,7 @@ v = np.array([math.sqrt(m_e), math.sqrt(m_mu), math.sqrt(m_tau)])
 
 Q_num = float(np.sum(v ** 2) / np.sum(v) ** 2)
 check(
-    "T6 PDG Koide Q ~ 2/3",
+    "T7 PDG Koide Q ~ 2/3",
     abs(Q_num - 2.0 / 3.0) < 3e-5,
     detail=f"Q = {Q_num:.8f}",
 )
@@ -151,13 +171,13 @@ a_op = float(np.sum(v) / 3.0)
 b_op = (v[0] + np.conj(w) * v[1] + w * v[2]) / 3.0
 kappa_num = (a_op ** 2) / abs(b_op) ** 2
 check(
-    "T7 PDG operator-side kappa = a^2/|b|^2 ~ 2",
+    "T8 PDG operator-side kappa = a^2/|b|^2 ~ 2",
     abs(kappa_num - 2.0) < 3e-4,
     detail=f"kappa = {kappa_num:.8f}",
 )
 
 # ---------------------------------------------------------------------------
-# T8 — bridge holds pointwise on random Herm_circ(3) samples
+# T9 — bridge holds pointwise on random Herm_circ(3) samples
 # ---------------------------------------------------------------------------
 
 print("\nSection C — random Herm_circ(3) sample scan")
@@ -181,13 +201,13 @@ for _ in range(N_samples):
     max_residual = max(max_residual, abs(lhs - rhs))
 
 check(
-    "T8 bridge identity holds on 200 random samples (max residual < 1e-10)",
+    "T9 bridge identity holds on 200 random samples (max residual < 1e-10)",
     max_residual < 1e-10,
     detail=f"max residual = {max_residual:.3e}",
 )
 
 # ---------------------------------------------------------------------------
-# T9 — closure-equivalence
+# T10 — closure-equivalence
 # ---------------------------------------------------------------------------
 
 print("\nSection D — closure equivalence under bridge")
@@ -211,9 +231,44 @@ else:
     spec_residual = 0.0
 
 check(
-    "T9 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)",
+    "T10 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)",
     abs(spec_residual) < 1e-10,
     detail=f"|spectrum residual| = {abs(spec_residual):.3e}",
+)
+
+# ---------------------------------------------------------------------------
+# T11 .. T15 — source-boundary checks for the MRU demotion note
+# ---------------------------------------------------------------------------
+
+print("\nSection E — MRU demotion source-boundary checks")
+
+demotion_note = DEMOTION_NOTE.read_text(encoding="utf-8")
+demotion_norm = normalize(demotion_note)
+
+check(
+    "T11 demotion note records the 2026-06-18 source-boundary repair",
+    "## 2026-06-18 source-boundary repair" in demotion_note,
+)
+check(
+    "T12 clean claim is bounded demotion / bridge-corollary support",
+    "bounded demotion / bridge-corollary" in demotion_norm
+    and "primary exact bridge-corollary route" in demotion_norm,
+)
+check(
+    "T13 block-total route is bounded support, not standalone closure",
+    "independent bounded support" in demotion_norm
+    and "not a standalone full physical scalar-measure closure theorem" in demotion_norm,
+)
+check(
+    "T14 demotion note prints the corrected cubic trace diagnostic",
+    "tr(h^3) = 3 a^3 + 18 a |b|^2 + 3 (b^3 + bbar^3)" in demotion_norm
+    and "not to `a (b^3 + bbar^3)`" in demotion_norm,
+)
+check(
+    "T15 demotion note removes old retained-route overclaim phrases",
+    "primary retained closure route" not in demotion_norm
+    and "two retained independent routes" not in demotion_norm
+    and "independent second closure route" not in demotion_norm,
 )
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

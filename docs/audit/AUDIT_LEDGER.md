@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 999 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1429 |
+| unaudited | 1428 |
 | meta | 322 |
-| ~~audited_numerical_match~~ | 11 |
+| ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 27 |
 | ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 2 |
@@ -70,9 +70,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
-| `audited_numerical_match` | 11 |
+| `audited_numerical_match` | 12 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1751 |
+| `unaudited` | 1750 |
 
 | claim_type | count |
 |---|---:|
@@ -1738,6 +1738,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -19073,6 +19074,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the fixed h=0.5, W=3, L=24 source-resolved Green-kernel configuration, the runner computes zero-source shift +0.000000e+00, four positive Green deflections, F~M exponent 1.01, and mean |green/inst| = 1.111.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helper build the lattice, fields, propagation, centroid readout, ratios, and power fits from the stated constants; the reported values are computed rather than hard-coded. The closure is limited to the stated finite lattice, kernel, calibration target, source cluster, and readout.
 - **rationale:** The runner source is substantive: it constructs the finite lattice, computes the source-resolved Green-like field, propagates amplitudes, and derives the centroid shifts and fitted exponents without importing prior note outputs or asserting the table constants. The cached stdout matches the note's frozen readout, including exact zero-source reduction and all four TOWARD rows. This clean verdict applies only to the bounded fixed-configuration computation, not to a full self-consistent field theory or generated-geometry transfer.
+- **auditor confidence:** high
+
+### `source_resolved_exact_green_self_consistent_note`
+
+- **Note:** [`SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the declared h=0.25 compact lattice, clipped cross5 source cluster, fixed Green-like kernel, calibrated gain, and one source-weight update, the runner-backed pocket reproduces the frozen numerical table, zero-source reduction, TOWARD sign, and near-linear source scaling.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-source_resolved_exact_green_self_consistent_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The frozen pocket uses the selected compact lattice, boundary-clipped source cluster, Green-like kernel, calibrated gain input, and one self-consistency update to reproduce the stated table, TOWARD sign, zero-source reduction, and linear scaling.  _(class `G`)_
+- **chain closes:** True — The included runner and helper compute the bounded finite-lattice update and reproduce all six stated checks. Closure is only within the declared calibrated setup; the gain, normalization, source geometry, and fully converged dynamics are not derived.
+- **rationale:** Issue: the load-bearing result depends on the hard-coded calibrated gain and fixed compact setup, with frozen table values used as regression targets. Why this blocks: the packet supports a calibrated finite numerical pocket, not an independently derived amplitude or full self-consistent field theorem. Repair target: derive the gain and normalization from retained dynamics and replace the one-update pocket with a converged self-consistent dynamics theorem. Claim boundary until fixed: the stated table and hard gates hold for the declared calibrated setup only.
 - **auditor confidence:** high
 
 ### `source_resolved_generated_architecture_bridge_note`

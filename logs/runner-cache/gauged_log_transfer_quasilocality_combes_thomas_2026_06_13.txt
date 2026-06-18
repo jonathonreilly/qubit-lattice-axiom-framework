@@ -1,0 +1,135 @@
+===== runner cache v1 =====
+runner: scripts/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.py
+runner_sha256: 7c20672bfa221b8c270c6002b32e19b6728e0268234fc861210c9274549186d3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
+============================================================================
+GAUGED LOG-TRANSFER QUASILOCALITY (COMBES-THOMAS) RUNNER
+============================================================================
+
+Extends the named open frontier of TRANSFER_MATRIX_LOG_QUASILOCALITY_2026-06-10
+(free U=1, sharp rate arcsinh(m)) to FIXED gauge backgrounds via Combes-Thomas
+on a gauge-background-independent spectral gap. Action-faithful square-of-sum
+carrier m^2 + (sum_mu s_mu)^2 (= the landed per-config gauged radicand).
+
+============================================================================
+G0  object sanity: self-adjointness, finite range, d=1 action symbol
+============================================================================
+  [PASS] s_mu[U] self-adjoint
+         max|s - s^dag| = 0.0e+00
+  [PASS] D[U] self-adjoint
+  [PASS] D[U] finite-range (range 2): zero beyond ring-distance 2
+         max |D entry| at ring-dist >= 3 = 0.0e+00
+  [PASS] 1D D[U] support pattern gauge-background-independent
+  [PASS] at U=1 (d=1), D kernel = m^2 + sin^2 p (exact action symbol)
+         max|D_kernel - symbol| = 1.1e-16
+  [PASS] 2D square-of-sum (action-faithful) is finite-range 2
+         max |D entry| at l_inf-dist >= 3 = 0.0e+00
+
+============================================================================
+G1  uniform spectral gap: spec(D[U]) subset [m^2, m^2+d^2] for every U
+============================================================================
+  [PASS] 1D: ||s_mu|| <= 1 (S_mu contraction) and spec(D) subset [m^2, m^2+1]
+         ||s||<= 0.99999; spec in [0.09002, 1.08998] vs [0.0900, 1.0900]
+  [PASS] 2D square-of-sum: spec(D) subset [m^2, m^2+d^2] over 8 random-flux backgrounds
+         spec in [0.09001, 3.07425] vs [0.0900, 4.0900]
+  [PASS] gap to the holomorphy cut (-inf,0] is exactly m^2, uniform in U
+         dist(spec, cut) >= m^2 = 0.0900
+
+============================================================================
+G2  holomorphy domain + explicit contour (gap m^2 load-bearing)
+============================================================================
+  [PASS] contour stays in Re(w) > 0 (off the cut (-inf,0])
+         min Re(w) = 0.0450
+  [PASS] sup|f| and |Gamma| finite -> functional-calculus kernel constant finite
+         sup|f| = 1.4585, |Gamma| = 8.3600, const = 1.9406
+  [PASS] Riesz-Dunford contour integral reproduces eigh-based h[U] (functional calculus valid)
+         max|h_contour - h_eigh| = 2.88e-04 on the margin-m^2/2 contour (trapezoidal, corner-limited; -> 0 with npts)
+  [PASS] resolvent sup-norm on Gamma is finite for gap>0 and blows up as margin->0
+         sup||R|| at margin m^2/2 = 22.2; at margin/20 = 443.8 (20x) -- the gap m^2>0 is load-bearing
+
+============================================================================
+G3  Combes-Thomas: Schur twist bound + measured resolvent decay
+============================================================================
+  [PASS] off-diagonal |D[x,x+2]| = 1/4 on every background (CT input U-independent)
+         max |D_offdiag - 1/4| = 5.6e-17
+  [PASS] twisted-operator 2-norm respects the rigorous Schur row-sum bound
+         ||D_alpha - D|| = 0.0499 <= Schur bound 0.0501
+  [PASS] Combes-Thomas rate alpha* > 0 exists (schur_bound(alpha*) <= eta/2)
+         alpha* = 0.0220 at eta = 0.0450
+  [PASS] closed-form band constant B(R,d)=(2R+1)^(d-1)R(R+1) matches enumeration (d=1,2,3)
+         (2R+1)^(d-1) R(R+1): d1R2=6, d2R2=30, d3R2=150 -- pins the eq.(5) constant
+  [PASS] closed-form pinned gamma_CT <= numerical Schur alpha* (closed form conservative)
+         closed-form gamma_CT = 0.00127 <= alpha* = 0.0220
+  [PASS] resolvent (D-w)^{-1} decays exponentially off the spectrum
+         measured resolvent rate = 0.2106
+  [PASS] reproved Combes-Thomas alpha* is a valid LOWER bound on the measured rate
+         alpha* 0.0220 <= measured 0.2106
+
+============================================================================
+G4/G5/G8  kernel quasilocality, gauge covariance, parity
+============================================================================
+  [PASS] G4 1D: h[U] kernel decays exponentially (random U(1) background)
+         measured 1D kernel rate = 0.2977
+  [PASS] G4 2D: h[U] (square-of-sum) kernel decays exponentially (random flux)
+         measured 2D l_inf kernel rate = 0.8828
+  [PASS] G5 1D abelian: |<x|h[U^g]|y>| = |<x|h[U]|y>| exactly
+         max ||H|-|H^g|| = 1.5e-15
+  [PASS] G5 2D abelian: kernel magnitude gauge-invariant (square-of-sum)
+         max ||H|-|H^g|| (2D) = 3.4e-15
+  [PASS] G5 SU(2): kernel BLOCK operator-norm ||h_xy|| gauge-invariant (non-abelian)
+         max | ||h_xy|| - ||h^g_xy|| | = 5.6e-16
+  [PASS] G8 1D: h[U](z)=0 for odd z (even-sublattice parity preserved)
+         max |H[0,odd]| = 6.1e-17
+  [PASS] G8 2D square-of-sum: parity is BROKEN by flux cross-terms (stated, not hidden)
+         max |H2[0, odd-component z]| = 1.565e-01 (nonzero => parity broken)
+
+============================================================================
+G6  uniform rate over an ensemble (U(1) and SU(2))
+============================================================================
+  [PASS] pinned CT floor is positive and not violated by any measured rate (conservative)
+         CT floor 0.00127 (d=1) <= all 12 rates; min measured = 0.2967 (U(1) 0.297, SU(2) 0.475) -- floor is conservative by ~234x
+
+============================================================================
+G7  U=1/d=1 reduction: rate -> arcsinh(m); CT bound <= arcsinh(m)
+============================================================================
+  [PASS] d=1 kernel rate (joint fit) matches the landed free sharp rate arcsinh(m)
+         fitted rate 0.29513 vs arcsinh(m) 0.29567 (rel err 0.18%)
+  [PASS] joint fit recovers the sqrt-branch-point prefactor exponent 3/2 (not imported)
+         fitted prefactor exponent = 1.560 (sqrt-branch-point asymptotic = 1.5; matches free-note T5)
+  [PASS] Combes-Thomas lower bound <= arcsinh(m) (conservative, no contradiction)
+         CT bound 0.00127 <= arcsinh(m) 0.2957
+
+============================================================================
+G9  carrier robustness: the sum-of-squares carrier also CT-quasilocal
+============================================================================
+  [PASS] sum-of-squares carrier: spec subset [m^2, m^2+d] (tighter ceiling than sq-of-sum)
+         spec in [0.2252, 1.9548] vs [0.0900, 2.0900]
+  [PASS] sum-of-squares carrier: kernel quasilocal (same CT conclusion)
+         min 2D rate = 0.8866
+  [PASS] sum-of-squares carrier additionally preserves even-sublattice parity
+         max |H[0, odd-component z]| = 8.2e-17 (parity intact)
+
+============================================================================
+F1/F2  falsification: gap and finite range are load-bearing
+============================================================================
+  [PASS] F1: m=0 closes the gap -> power-law kernel (power fit beats exponential)
+         m=0: power R^2 0.9998 (+0.1131 vs exp) exponent -2.014; m=0.3: exp beats power by +0.0625 (gap restores exp decay)
+  [PASS] F2: long-range covariant term injects a range-R0 kernel bump >> the CT-compliant control
+         |kernel| at R0=10: long-range 9.741e-02 vs control 2.506e-04 = 389x (finite-range premise is load-bearing; control alone would not trip a loose threshold)
+
+============================================================================
+SUMMARY: PASS=36 FAIL=0
+============================================================================
+
+Every number (gap floor m^2, ceiling m^2+d^2, pinned CT lower bound, kernel
+rates, arcsinh(m) reduction, gauge-invariance) is derived in-runner from explicit
+operators; Combes-Thomas and the contour are reproved (no literature constant
+imported). Fixed-background single-particle sector; the U-integrated dynamical
+case, the sharp gauged rate, and the many-body Lieb-Robinson lightcone remain open.
+
+----- stderr -----
+

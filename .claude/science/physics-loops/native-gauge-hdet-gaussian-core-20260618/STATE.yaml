@@ -1,0 +1,20 @@
+loop_slug: native-gauge-hdet-gaussian-core-20260618
+goal: "Add source-side Gaussian determinant-core support for the native gauge H_det(A) blocker."
+target_claim_id: native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12
+target_status: bounded-support
+runtime_mode: source-side science support PR
+cycle_count: 1
+active_route: H_det_core Gaussian determinant support
+hard_residual: "Full H_det(A) still needs exact-Bessel scalar correction propagation, determinant-mode tails, c_(0,0) lower constants, and K_W(A); H_spec remains separate."
+files_touched:
+  - docs/NATIVE_GAUGE_TRANSFER_HDET_GAUSSIAN_CORE_SUPPORT_NOTE_2026-06-18.md
+  - docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md
+  - scripts/native_gauge_transfer_hdet_gaussian_core_support_2026_06_18.py
+  - logs/runner-cache/native_gauge_transfer_hdet_gaussian_core_support_2026_06_18.txt
+open_imports:
+  - "H_det_remainder(A): exact-Bessel scalar correction propagation, determinant-mode tails, c_(0,0) lower constants, and K_W(A)."
+  - "H_spec: reduced A2 spectral domination c_D <= c_J."
+review_loop_disposition: "not run; delegated to reviewer"
+pr_status: pending
+next_exact_action: "Open source-side PR for reviewer extraction."
+stop_condition: "One coherent upstream H_det_core support artifact packaged."

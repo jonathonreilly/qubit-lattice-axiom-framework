@@ -18,6 +18,27 @@ scale ratio derivation, or `α_LM^16` substitution is claimed.
 status set by `compute_effective_status.py`.
 **Runner:** [`scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py`](../scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.txt`](../logs/runner-cache/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.txt)
+**Action-core split:** [`FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md)
+**Action-core runner/cache:** [`scripts/fractional_instanton_action_core_split_2026_06_18.py`](../scripts/fractional_instanton_action_core_split_2026_06_18.py),
+[`logs/runner-cache/fractional_instanton_action_core_split_2026_06_18.txt`](../logs/runner-cache/fractional_instanton_action_core_split_2026_06_18.txt)
+
+## 2026-06-18 action-core split
+
+[`FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md)
+separates the safe fractional charge/action algebra from the external
+dilute-gas mechanism. The split consumes the retained-bounded
+[`TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md`](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md)
+surface for the fixed-convention action normalization and twisted `Q=k/N`
+arithmetic, yielding only
+
+```text
+S_frac(k,N) = (8*pi^2/g^2) |k/N|.
+```
+
+The dilute-gas determinant/measure/coupling-scale/convergence bridge remains
+open, and condensate formation remains external model-regime language. This
+split does not identify a framework substrate, close `alpha_LM^16`, derive
+`v/M_Pl`, or promote this parent open gate.
 
 ## Claim
 
@@ -167,15 +188,16 @@ Q = (1 / (32 π²)) ∫_{T⁴} d^4x  Tr( F_μν *F^μν ).
    1981, González-Arroyo 1979, Anber-Poppitz 2018-2021, and the modern
    Cox-Pisarski 2023 dilute-gas analysis.
 
-The action formula and schematic dilute-gas expression are external
-inputs/targets for later bridge work. This note does not assert that
+The action formula is now isolated as bounded action-core support in the
+2026-06-18 split note. The schematic dilute-gas expression remains an external
+input/target for later bridge work. This note does not assert that
 the dilute-gas expansion converges, that a condensate forms, or that
 the determinant/phase-space factors produce a framework hierarchy.
 
 ## Boundary
 
-This note records an external 4D Yang-Mills action formula and its
-standard published lattice / dilute-gas neighborhood. It does **not**
+This note records a bounded action-core split plus an external 4D Yang-Mills
+dilute-gas neighborhood. It does **not**
 claim:
 
 - that the fractional instanton substrate or the twisted-`T⁴` setting
@@ -209,10 +231,10 @@ substrate-specific bridge.
 
 ## Downstream Source-Boundary Firewall
 
-This packet may be cited only for the external twisted-`T^4`
-fractional-charge/action algebra and for the schematic dilute-gas
-modeling form under its stated determinant, measure, coupling-scale,
-phase-space, and convergence boundaries. Later framework use must
+This packet may be cited for the split action-core algebra only through the
+2026-06-18 bounded support note, and for the schematic dilute-gas modeling form
+only under its stated determinant, measure, coupling-scale, phase-space, and
+convergence boundaries. Later framework use must
 separately prove the twisted-`T^4` sector, the determinant/measure/
 coupling-scale prescription, the dilute-gas convergence or condensate
 criterion, and the substrate/observable bridge before importing this

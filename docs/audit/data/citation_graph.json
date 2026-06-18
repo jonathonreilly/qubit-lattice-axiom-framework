@@ -52230,10 +52230,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_formula_honest_status_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_effective_potential_endpoint_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100629,17 +100629,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "axiom_first_kms_condition_theorem_note_2026-05-01",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
         "koide_q_delta_linking_relation_theorem_note_2026-04-20",
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
         "poisson_exhaustive_uniqueness_note",
-        "hierarchy_formula_honest_status_note_2026-05-10"
+        "hierarchy_formula_honest_status_note_2026-05-10",
+        "hierarchy_effective_potential_endpoint_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5359c43f9b0dcbef874ee5bd4a203565bd5eaaf6a9846ad51bb5b28128f41f65",
+      "note_hash": "dae79f8a140caa3714721cf3cc4acde7a024e4c356e53cb8d34319402762d3b3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

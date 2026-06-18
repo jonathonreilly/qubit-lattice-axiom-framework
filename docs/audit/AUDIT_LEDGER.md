@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 912 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1645 |
+| unaudited | 1644 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
-| ~~audited_renaming~~ | 4 |
+| ~~audited_renaming~~ | 5 |
 | ~~audited_conditional~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -64,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
-| `audited_renaming` | 4 |
-| `unaudited` | 1967 |
+| `audited_renaming` | 5 |
+| `unaudited` | 1966 |
 
 | claim_type | count |
 |---|---:|
@@ -1540,6 +1540,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -4940,6 +4941,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Multiplying Y(delta) by its adjoint gives the displayed H_e entries, and since all x_i,y_i are real, replacing delta by -delta is exactly entrywise complex conjugation of the Hermitian block.  _(class `A`)_
 - **chain closes:** True — The bounded formal claim closes directly from the supplied fixed-chart Y(delta) and ordinary matrix multiplication. No reduced N_e surface authority, favored-column closure, eta normalization, relative-action selector, KKT branch classification, branch minimality, leptogenesis abundance, physical PMNS column selection, or full PMNS-assisted leptogenesis selector is audited or ratified.
 - **rationale:** The runner is not merely a text checker: it constructs symbolic Y(delta), computes Y Y^dagger with Sympy, checks the displayed matrix, Hermiticity, parity under delta -> -delta, and representative conjugation-invariant readouts. Its nine source-note boundary checks only guard the narrowed scope and are not load-bearing algebra. With direct dependencies empty and the physical selector conclusions withdrawn from the binding claim, the fixed-chart algebraic theorem is clean only at the bounded formal scope stated above.
+- **auditor confidence:** high
+
+### `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`
+
+- **Note:** [`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the row as a bounded post-axiom selector diagnostic: after adopting I_seed and imposing eta_0/eta_obs = 1, the runner reports the stated low-cost off-seed source.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Define the imported information-deformation cost I_seed and choose the positive off-seed source minimizing it on the fixed seed surface subject to eta_{i_*}/eta_obs = 1.  _(class `E`)_
+- **chain closes:** False — The runner computes a reproducible constrained-optimization diagnostic under the adopted convention. The chain from cited inputs to the selector law itself does not close; the missing step is a retained derivation of I_seed and its use as the source selector.
+- **rationale:** Issue: the source-selecting rule is an explicit definition of an information-geometric objective plus an imposed eta equality constraint. Why this blocks: the runner computes consequences of that convention, but the convention is not derived from the cited fixed-chart algebra or a retained selector theorem in the packet. Repair target: supply and audit a framework-internal derivation of the selector objective and constraint authority before treating this as source-law theorem authority. Claim boundary until fixed: this is a reproducible post-axiom selector diagnostic, not an independent selector derivation.
+- **open / conditional deps cited:**
+  - `DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md`
 - **auditor confidence:** high
 
 ### `dm_leptogenesis_pmns_projector_interface_note_2026-04-16`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 971 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1497 |
+| unaudited | 1496 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1409 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1819 |
+| `unaudited` | 1818 |
 
 | claim_type | count |
 |---|---:|
@@ -1556,6 +1556,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `connectivity_family_v2_elliptical_duplicate_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4395,6 +4396,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The narrowed finite-h claim follows from the completed cached runner output, and the runner source genuinely computes the reported lattice propagation quantities rather than printing constants or importing a contested premise. The strict h -> 0 continuum-limit statement is explicitly excluded from the audited scope.
 - **rationale:** The source note narrows the binding claim to a finite-resolution numerical trend, and the cached output matches the displayed h values, transfer norms, weak-field deflections, and F~M values. The runner source constructs offsets, fields, propagates amplitudes, computes centroids, Born ratios, and mass-scaling fits directly with fixed parameters; it does not hard-code the contested table. Because the h -> 0 convergence language is demoted to diagnostic-only, the missing convergence theorem does not block this bounded finite-h audit.
 - **auditor confidence:** high
+
+### `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12`
+
+- **Note:** [`CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md`](../../docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the supplied three-site Hermitian circulant surface: identity readback, nonzero spectral-projector delta-blindness, beta in {1,4} thermal state-contingency checks, cos(3 delta) inversion, and the asserted surface-local no-middleman consequence.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note combines the identity readback, delta-blind projector, and beta in {1,4} thermal state-contingent cases with a carrier-class elimination pattern to remove a state-independent carrier-angle middleman on the supplied circulant surface.  _(class `B`)_
+- **chain closes:** False — The algebraic and finite numerical checks close for the listed carrier classes. The missing step is a packet-included or retained carrier-class exhaustion theorem showing those classes cover every possible state-independent carrier-angle middleman on the circulant surface.
+- **rationale:** The runner source genuinely performs symbolic and numerical checks for the readback, projector, thermal, inversion, and firewall claims; it is not merely printing hard-coded pass lines. The realized-state primitive is provided and flagged as an accepted premise, and the note uses it only to classify state-contingent thermal values as registered data. However, the no-middleman consequence relies on an unprovided carrier-class elimination or exhaustion step; the runner checks selected classes, not all possible state-independent carrier-angle middlemen.
+- **auditor confidence:** medium
 
 ### `coulomb_stability_upper_bound_support_note_2026-05-20`
 

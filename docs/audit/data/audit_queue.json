@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 265,
-    "leaf": 514,
+    "leaf": 513,
     "medium": 413
   },
   "cycle_break_target_count": 8,
@@ -17455,31 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "d3_native_stable_orbit_upper_bound_composition_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17568,6 +17543,28 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_depth_branch_corrected_closed_form_2026_06_13.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/DEPTH_LAURENT_ROOT_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_depth_laurent_root_closed_form_2026_06_12.py",
       "transitive_descendants": 15
     },
     {
@@ -30268,28 +30265,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DEPTH_LAURENT_ROOT_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_depth_laurent_root_closed_form_2026_06_12.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45224,6 +45199,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 83,
-  "total_pending": 1499
+  "ready_count": 82,
+  "total_pending": 1498
 }

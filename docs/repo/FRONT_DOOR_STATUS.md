@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1561 |
-| Retained-grade rows, including boxed decorations | 1458 |
+| Applied audit verdicts | 1562 |
+| Retained-grade rows, including boxed decorations | 1459 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 971 |
+| Retained bounded rows | 972 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 30 |
-| Unaudited rows | 1496 |
+| Unaudited rows | 1495 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 43 |
 | Audited renaming rows | 18 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1498 |
-| Ready rows | 82 |
+| Total pending rows | 1497 |
+| Ready rows | 81 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 513 |
+| Leaf pending | 512 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`d3_native_stable_orbit_upper_bound_composition_note_2026-06-09`](../../docs/D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md) - medium; unaudited
 - [`d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13`](../../docs/D3_ORBITAL_RESPONSE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13`](../../docs/D3_STAGGERED_TWO_BAND_ORBITAL_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13`](../../docs/DEPTH_BRANCH_CORRECTED_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12`](../../docs/DEPTH_LAURENT_ROOT_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12`](../../docs/DET_HOLONOMY_TRIVIAL_ON_HERMITIAN_POSITIVE_CIRCULANT_EDGE_CONTENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12`](../../docs/DET_HOLONOMY_TRIVIAL_ON_HERMITIAN_POSITIVE_CIRCULANT_EDGE_CONTENT_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

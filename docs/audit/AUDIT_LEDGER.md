@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 215 |
 | **retained_bounded** | 958 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 26 |
-| unaudited | 1537 |
+| open_gate | 27 |
+| unaudited | 1536 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1391 |
+| `audited_clean` | 1392 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1859 |
+| `unaudited` | 1858 |
 
 | claim_type | count |
 |---|---:|
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 734 | 33.02 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
-| 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 24 | `left_handed_charge_matching_note` | decoration | critical | 877 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
 
 
@@ -136,6 +136,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_normalization_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -1682,6 +1683,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the free staggered operator with eps D eps = -D, K = eps D gives H(m)^2 = K^2 + m^2 I, and the flat-background trace A[1,1] = Tr[eps exp(-t D^dag D)] vanishes.  _(class `A`)_
 - **chain closes:** True — The runner source explicitly constructs the free staggered D and eps grading and verifies the anticommutation, Hermiticity, H(m)^2 identity, spectral gap away from m=0, and vanishing heat-kernel trace. The note does not claim to close P1' or exhibit a nonzero-index background.
 - **rationale:** The load-bearing internal facts are exact finite-dimensional algebra plus direct first-principles matrix checks, with no hard-coded contested premise and no external comparator. CPT_EXACT is retained-grade for the relevant eps-anticommutation pattern, and the runner independently instantiates the free 4D staggered operator used in this note. The external GW-demolition citations are confined to removing a necessity misstatement and are not used to import a nonzero-index construction into the framework chain.
+- **auditor confidence:** high
+
+### `acphilambda_hw_complementation_equivariance_support_note_2026-06-09`
+
+- **Note:** [`ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md`](../../docs/ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite Boolean-cube and three-slot circulant support: hw=1/hw=2 complementation equivariance, identical C3 orbit structure, and scoped exhaustion of order-48 cube relabelings, degree<=3 C3 readouts, and listed per-triplet finite profiles.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-acphilambda_hw_complementation_equivariance_support_note_2026-06-09-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the Boolean corner cube, complementation maps the hw=1 triplet bijectively to the hw=2 triplet, commutes with the C3[111] rotation, and the scoped finite relabeling/readout/profile checks leave no distinguishing invariant within the stated finite surface.  _(class `A`)_
+- **chain closes:** True — The claim closes as finite algebra and symbolic enumeration within the stated surface. It does not require or assert a physical-species bridge, full-dynamics complementation equivariance, or any registry/status change.
+- **rationale:** The runner actually enumerates the Boolean cube, the order-48 coordinate-permutation/bit-flip relabelings, the C3 orbit structure, and the listed triplet profiles, and it symbolically verifies the circulant determinant and orientation-odd readout identities. The load-bearing step is exact finite algebra rather than a definition substitution, external comparator, or tuned numerical match. The source note is scoped to support-only finite-surface content and expressly avoids the unclosed physical bridge and registry implications.
 - **auditor confidence:** high
 
 ### `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11`

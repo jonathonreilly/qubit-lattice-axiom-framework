@@ -52266,7 +52266,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"
+      "to": "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -100639,10 +100639,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"
+        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2479769f96869ab5ea97cbe962d53c8ab18adb14fd353febb93961bd28e74eb7",
+      "note_hash": "6c0862e1c7db87db2cbab220d3739dbf737059a0d3bfe5c4faff2917bb2bc0e6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

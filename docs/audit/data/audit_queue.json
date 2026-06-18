@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 303,
+    "critical": 302,
     "high": 267,
     "leaf": 439,
     "medium": 407
@@ -121,31 +121,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "cl3_color_automorphism_theorem"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.248,
-      "note_path": "docs/CL3_BARYON_QQQ_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/cl3_baryon_qqq_color_singlet_check.py",
-      "transitive_descendants": 303
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -17391,6 +17366,38 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "key_terminology",
+        "cl3_color_automorphism_theorem",
+        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
+        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
+        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
+        "minimal_axioms",
+        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
+        "color_generation_independent_z3_structures_2026-06-05"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.307,
+      "note_path": "docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_color_su3_bridge_from_record_2026_06_05.py",
+      "transitive_descendants": 27
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lepton_block_scalar_singlet_composite_uniqueness_d17_prime_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -22755,38 +22762,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_gbare_wilson_action_internal_proof_walk.py",
       "transitive_descendants": 28
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "cl3_color_automorphism_theorem",
-        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
-        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
-        "minimal_axioms",
-        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "color_generation_independent_z3_structures_2026-06-05"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.307,
-      "note_path": "docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_color_su3_bridge_from_record_2026_06_05.py",
-      "transitive_descendants": 27
     },
     {
       "audit_independence_required": "any_non_self",
@@ -30056,6 +30031,37 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
+        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_interacting_rp_full_algebra_2026_06_05.py",
+      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -37339,37 +37345,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
-        "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28",
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_interacting_rp_mass_link_reflection_controls_2026_06_09.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_interacting_rp_full_algebra_2026_06_05.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "kcpt_orbit_clause_kinvariant_surface_equivalence_narrow_theorem_note_2026-06-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -43046,6 +43021,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 1,
-  "total_pending": 1416
+  "ready_count": 2,
+  "total_pending": 1415
 }

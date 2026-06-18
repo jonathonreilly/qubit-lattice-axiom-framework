@@ -1,0 +1,24 @@
+loop_slug: flavor-interacting-core-split-20260618
+goal: "Repair the audited conditional flavor_interacting_matter_build row by splitting executable finite algebra from external interacting-dynamics context."
+target_claim_id: flavor_interacting_matter_build_note_2026-05-30
+target_status: best-honest-status
+actual_current_surface_status: open
+branch: codex/flavor-interacting-core-split-20260618
+base: origin/main@9b1e08ebb
+cycle_count: 1
+active_route: executable_core_split
+hard_residual: "A first-principles matter-action runner deriving the nonperturbative b!=0 branch, critical coupling, continuous r(g), and channel ratio is still missing."
+files_touched:
+  - docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md
+  - scripts/flavor_interacting_matter_build_2026_05_30.py
+  - logs/runner-cache/flavor_interacting_matter_build_2026_05_30.txt
+  - .claude/science/physics-loops/flavor-interacting-core-split-20260618/
+open_imports:
+  - matter-action vertex/channel ratio
+  - critical coupling and nonperturbative b-branch computation
+  - continuous r(g) curve
+trace_gate_classification: direct_blocker_closure
+review_loop: "not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Push branch, open PR, then hand off the exact core split and remaining matter-action bridge."
+stop_condition: "One coherent source-side repair PR opened; goal remains active for future audit unlocks."

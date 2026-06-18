@@ -3,7 +3,7 @@ runner: scripts/gate_b_finite_path_sum_propagation_bridge_2026_06_18.py
 runner_sha256: 6d34b5bfc6aadac37cb358473a03365e2c3014ec0c5a632f7c0f0ec822a42cb4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.17
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 Gate B finite path-sum propagation bridge

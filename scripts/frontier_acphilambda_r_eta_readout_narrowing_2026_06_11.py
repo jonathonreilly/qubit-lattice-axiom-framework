@@ -31,10 +31,16 @@ Per-check PASS/FAIL lines; final `TOTAL: PASS=N FAIL=0`.
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import sympy as sp
 
 PASS = 0
 FAIL = 0
+NOTE = (
+    Path(__file__).resolve().parents[1]
+    / "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md"
+)
 
 
 def check(name: str, ok, detail: str = "") -> None:
@@ -287,6 +293,13 @@ def main() -> int:
     check("no Tier-A registry edit, no audit status set, no admission retired; "
           "this is a source-side narrowing of WHAT sub-admission (ii) admits",
           True)
+    note_text = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
+    note_flat = " ".join(note_text.split())
+    check("2026-06-13 boundary: conditional support only; A_R-eta remains admitted",
+          "2026-06-13 audit-conditional boundary" in note_text
+          and "conditional support for narrowing sub-admission (ii), not a retirement" in note_flat
+          and "A_R-eta` (h-class + h-unit, one real parameter) remains admitted" in note_flat
+          and "cannot cite it as a framework-native derivation of `|delta| = 2/9`" in note_flat)
 
     # ------------------------------------------------------------------
     print("\n" + "=" * 88)

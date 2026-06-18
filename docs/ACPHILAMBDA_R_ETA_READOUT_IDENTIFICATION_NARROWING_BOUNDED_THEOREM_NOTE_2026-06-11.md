@@ -9,7 +9,7 @@ registry (`docs/audit/data/tier_a_admissions.json`), ledger, queue, or any
 publication-status surface.
 **Primary runner:**
 [`scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py`](../scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py)
-(`TOTAL: PASS=49 FAIL=0`; exact sympy, 3x3 class-A finite-dimensional; cached:
+(`TOTAL: PASS=50 FAIL=0`; exact sympy, 3x3 class-A finite-dimensional; cached:
 [`logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt`](../logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt))
 
 > **What this is.** The live Tier-A registry states AC_phi_lambda
@@ -36,6 +36,17 @@ remains the registered dial setting with sectors `r in {0, 1/2, 1}` (the
 charged-lepton registered setting `r = 1/2` is a stable setting on that dial,
 not a forced value, and is not used here — the sibling chain note's mass
 comparator, which uses `r = 1/2`, is **not consumed**).
+
+## 2026-06-13 audit-conditional boundary
+
+This is conditional support for narrowing sub-admission (ii), not a retirement
+of that admission. The forced form layer is finite algebra on the supplied
+AC_phi_lambda circulant/K-orbit/readout context. The surviving atom
+`A_R-eta` (h-class + h-unit, one real parameter) remains admitted, and the
+standing physical readout-context premise remains supplied. A consumer may
+cite this note only for the form/value split: it cannot cite it as a
+framework-native derivation of `|delta| = 2/9`, as a registry edit, or as a
+closure of the carrier gate / R2 / `r` lanes.
 
 ## Statement
 

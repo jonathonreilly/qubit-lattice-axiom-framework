@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1446 |
+| unaudited | 1445 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 21 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1439 |
-| `audited_conditional` | 56 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 21 |
-| `unaudited` | 1768 |
+| `unaudited` | 1767 |
 
 | claim_type | count |
 |---|---:|
@@ -1623,6 +1623,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `poisson_self_field_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16470,6 +16471,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source genuinely constructs the listed operators, runs the fixed-point propagation/field solve, and computes convergence and beta values rather than hard-coding the contested outputs. The note narrows the conclusion to the finite sampled runner surface and explicitly excludes continuum-alpha, continuum-limit, and all-operator exhaustiveness claims.
 - **rationale:** Within the bounded finite-runner scope, the completed cache and runner source support the observed selection pattern. The cited authorities are retained-grade for audit purposes, and the current claim does not rely on promoting the parent Gate B chain. The result is clean only as a finite-grid diagnostic, not as continuum Poisson uniqueness or exhaustiveness over all local symmetric operators.
 - **auditor confidence:** medium
+
+### `poisson_self_field_note`
+
+- **Note:** [`POISSON_SELF_FIELD_NOTE.md`](../../docs/POISSON_SELF_FIELD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the supplied per-layer 2D Poisson equation and imposed longitudinal factor, the runner audits the transverse profile and branch checks: TOWARD shift, near-linear F~M, machine-precision Born cancellation, and exact null at s=0.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-poisson_self_field_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The transverse (y,z) profile at each layer is derived from a supplied 2D Poisson equation, laplacian_perp(f) = -source(iy, iz), while the longitudinal falloff is still imposed as 1/(dx+0.1).  _(class `C`)_
+- **chain closes:** False — The runner supports the supplied-branch numerics, but the restricted packet does not derive or retain the Poisson PDE, source, boundary condition, normalization, gravity readout, or imposed longitudinal law. The missing step is a retained derivation or approved premise for those inputs.
+- **rationale:** The runner source performs real finite-difference Poisson solving and propagation rather than printing constants, so the supplied-branch numerical checks are substantive. However, the source note itself says the PDE, source, boundary condition, normalization, readout, and longitudinal falloff are supplied or imposed, and no cited authority in the restricted packet closes those premises. The cached runner also reports Born |I3|/P = 1.32e-15 while the note states 7.07e-16, so the exact retained number is stale even though both values are machine-precision cancellations.
+- **auditor confidence:** high
 
 ### `poisson_self_gravity_born_audit_note`
 

@@ -1,0 +1,17 @@
+loop_slug: gate-b-local-stencil-gb-s3-20260618
+goal: "Unlock the audited-conditional Gate B dynamics row by retiring the arbitrary-graph reading of GB-S3 where possible."
+target_status: bounded-support
+active_route: "Split GB-S3 into GB-S3a finite local stencil and GB-S3b physical-growth selector."
+current_surface_status: bounded-support source proposal
+trace_class: direct_blocker_closure
+target_claim_id: gate_b_dynamics_note
+files_touched:
+  - docs/GATE_B_DYNAMICS_NOTE.md
+  - docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md
+  - scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py
+open_imports:
+  - "GB-S1b scalar normalization remains supplied."
+  - "GB-S2 propagation/readout semantics remain supplied."
+  - "GB-S3b physical selection or dynamical generation of the stencil remains open."
+next_exact_action: "Run verifier/cache checks, push branch, open review PR."
+stop_condition: "Stop this block after PR creation; continue campaign with the next non-duplicative audit unlock."

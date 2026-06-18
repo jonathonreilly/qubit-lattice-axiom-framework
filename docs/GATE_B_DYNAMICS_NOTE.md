@@ -24,10 +24,29 @@ propagation/readout semantics, or `GB-S3` generated-connectivity rule from
 retained framework primitives. This split adds no new axiom, Tier-A admission,
 or audit-status change.
 
+## 2026-06-18 local stencil connectivity split
+
+The source-side bridge
+[`GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+splits `GB-S3` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S3a` | label/offset-preserving forward stencil on the finite `Z^3` slab | bounded-support source bridge: the stencil is a finite-range local lattice relation, translation-covariant in the interior, boundary-clipped on the finite slab, and exactly matches the adjacency used by `scripts/gate_b_connectivity_tolerance.py` |
+| `GB-S3b` | physical selection or dynamical generation of that stencil as the Gate B growth rule | still open Gate-B dynamics data |
+
+This removes one avoidable ambiguity in the generated-connectivity packet: the
+runner's positive label/offset family is not an arbitrary KNN or nonlocal graph
+choice. It is the finite-slab restriction of a fixed local stencil on the
+framework lattice. The stronger physical-growth claim remains open. This update
+does not derive `GB-S1b`, `GB-S2`, a physical gravity readout, or a full Gate B
+dynamics theorem.
+
 ## 2026-06-12 audit firewall: source index, not dynamics closure
 
-The audited missing bridges remain `GB-S1b`, `GB-S2`, and `GB-S3`: the Gate B
-runner's regularized scalar/normalization, propagation/readout semantics, and
+The audited missing bridges remain `GB-S1b`, `GB-S2`, and the `GB-S3b`
+physical-growth selector: the Gate B runner's regularized
+scalar/normalization, propagation/readout semantics, and selected
 generated-connectivity rule are supplied row-local ingredients. The primary
 connectivity replay and companion manifest verify finite generated-geometry
 behavior inside that supplied packet only.
@@ -71,7 +90,7 @@ index rather than as an independent primitive-to-physical-gravity bridge.
 |---|---|---|---|
 | `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Split by the 2026-06-16 interface note: the linear `S=L(1-phi)` response form has bounded weak-field support (`GB-S1a`), but the Gate B scalar `strength/(r+0.1)`, regulator, and normalization remain supplied (`GB-S1b`). Not fully derived from retained primitives and not a new axiom. |
 | `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked barrier, detector-window mass gain, `TOWARD` sign, and local `F~M` log-slope readouts. | Runner-supplied operational readout for bounded numerical certificates; not a retained physical-gravity readout bridge. |
-| `GB-S3` | generated-connectivity rule | The positive generated-geometry rows use label/offset-preserving forward connectivity with drift/restore companions; KNN and non-label candidates are recorded as controls or bounded negatives where their sign/`F~M` package weakens. | Supplied generated-family rule for this packet only; not yet derived from a local retained growth primitive. |
+| `GB-S3` | generated-connectivity rule | The positive generated-geometry rows use label/offset-preserving forward connectivity with drift/restore companions; KNN and non-label candidates are recorded as controls or bounded negatives where their sign/`F~M` package weakens. | Split by the 2026-06-18 local-stencil bridge: the label/offset stencil itself has bounded-support as a finite-range `Z^3` local relation matching the runner adjacency (`GB-S3a`), but the physical selection/dynamical generation of that stencil remains supplied (`GB-S3b`). |
 
 The direct source packet is therefore:
 

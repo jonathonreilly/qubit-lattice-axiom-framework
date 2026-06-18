@@ -1,0 +1,16 @@
+loop: hierarchy-s3-gap-spectrum-no-go-20260618
+target: hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30
+status: source_pr_ready
+branch: codex/hierarchy-s3-gap-spectrum-no-go-20260618
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: S3 fixed-G lattice-gauge-only gap spectrum
+files_touched:
+  - docs/HIERARCHY_DELTA0_S3_FIXED_GAP_SPECTRUM_NO_GO_NOTE_2026-06-18.md
+  - scripts/frontier_hierarchy_delta0_s3_fixed_gap_spectrum_no_go_2026_06_18.py
+  - docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md
+  - logs/runner-cache/frontier_hierarchy_delta0_s3_fixed_gap_spectrum_no_go_2026_06_18.txt
+review_loop_disposition: not_run_user_delegated_to_reviewer
+next_exact_action: reviewer should inspect whether the S3 pruning note is useful source-side evidence for re-auditing the DELTA0 conditional gate
+stop_condition: PR opened for this coherent science block

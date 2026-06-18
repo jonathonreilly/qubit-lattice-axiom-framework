@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 909 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1657 |
+| unaudited | 1656 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
-| ~~audited_renaming~~ | 2 |
+| ~~audited_renaming~~ | 3 |
 | ~~audited_conditional~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -63,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 45 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
-| `audited_renaming` | 2 |
-| `unaudited` | 1979 |
+| `audited_renaming` | 3 |
+| `unaudited` | 1978 |
 
 | claim_type | count |
 |---|---:|
@@ -1531,6 +1531,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -18471,6 +18472,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows by substituting the retained K4 dimensional readout dim_C V = 2 into the stated tadpole convention. The proof does not require any numerical plaquette value or downstream running input.
 - **rationale:** The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the narrow alias map identifying the old U4 single faithful Cl(3) per-site module condition with the accepted one-qubit-per-site Quantum axiom.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-015204-1f6874e3-u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The word 'qubit' already means a 2-dimensional complex Hilbert space C^2 with M_2(C) acting irreducibly, so the qubit-per-site baseline directly specifies H_x = C^2 and k(x) = 1.  _(class `F`)_
+- **chain closes:** True — The alias follows from the accepted Quantum axiom together with the retained M_2(C) ~= Cl(3,0) algebraic authority. The closure is by identification with axiom content, not by an independent theorem-grade derivation.
+- **rationale:** The source note repeatedly scopes itself as axiom-unpacking, compatibility, and alias support, and explicitly says it does not re-derive the qubit-per-site baseline. Its operative move is to identify the older U4 bridge with the accepted one-qubit-per-site Quantum axiom, with retained algebra supplying the Cl(3,0) formulation. No runner is present, but no completed compute is needed because the load-bearing step is adjudicable from the restricted text.
 - **auditor confidence:** high
 
 ### `unification_basin_failure_note`

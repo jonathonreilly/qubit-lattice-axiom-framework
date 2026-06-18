@@ -3,6 +3,9 @@
 Target:
 `d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13`
 
+PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4379
+
 What changed:
 
 - D3 no longer computes its LP integral with a hard-coded scalar described as a
@@ -34,5 +37,5 @@ Not done:
 - No stale existing PR was refreshed against `main`.
 
 Next exact action:
-Open the PR and ask the reviewer to extract the science, then audit the
+Reviewer extracts/reviews the source repair, then audit can grade the
 companion-first dependency order if the reviewer accepts the repair shape.

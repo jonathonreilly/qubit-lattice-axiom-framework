@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 214 |
+| **retained** | 215 |
 | **retained_no_go** | 208 |
 | **retained_bounded** | 923 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1619 |
+| unaudited | 1618 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 9 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1335 |
+| `audited_clean` | 1336 |
 | `audited_conditional` | 15 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1941 |
+| `unaudited` | 1940 |
 
 | claim_type | count |
 |---|---:|
@@ -778,6 +778,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
+| `koide_q_minimal_scale_free_selector_note_2026-04-22` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -10721,6 +10722,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Exactness gives fibres, not canonical splittings; the closing section a=0, b1=0, b2=0 is exactly the missing primitive-based readout/basepoint law or an equivalent retained canonical-section theorem.  _(class `A`)_
 - **chain closes:** True — The no-go closes within the restricted packet: the note and runner exhibit nontrivial kernels, nonunique section families, and counter-representatives that preserve retained totals while changing Q or delta. No dependency note is required because the audited scope is the algebraic obstruction for the stated projections, not a positive derivation of the missing physical readout law.
 - **rationale:** The runner verifies the load-bearing linear-algebra obstruction rather than hard-coding a target Koide closure: nonzero kernel representatives preserve the retained projections and fail to close the target readouts, while the zero representative is an additional section choice. This supports the no-go claim that exactness/cohomology data alone do not supply the primitive-based basepoint/readout law. Residual risk is scope control: the clean result applies to the explicit retained-projection exact-sequence packet, not to every conceivable future cohomological theorem that might add new structure.
+- **auditor confidence:** high
+
+### `koide_q_minimal_scale_free_selector_note_2026-04-22`
+
+- **Note:** [`KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact abstract invariant-count theorem on the explicit real three-slot `C_3` carrier, plus the retained Frobenius-normalization bridge identifying the unique ratio with `E_perp/E_+` and `2/kappa`; no physical carrier identification or value law is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_q_minimal_scale_free_selector_note_2026-04-22-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At quadratic order, the `C_3`-invariant scalar space is exactly two-dimensional, `Q(x)=A r0^2 + C(r1^2+r2^2)`, so after quotienting by overall scale there is exactly one nontrivial scale-free ratio `rho_Q=E_perp/E_+`.  _(class `A`)_
+- **chain closes:** True — The invariant count follows directly from elementary `C_3` invariant theory on the explicit three-slot carrier, and the `2/kappa` bridge follows from the retained one-hop Frobenius authority using the stated coordinate normalization. The note explicitly excludes the staggered-Dirac carrier identification and physical value law from the load-bearing claim.
+- **rationale:** The load-bearing step is a genuine algebraic closure: linear invariants reduce to the trace line, quadratic invariants reduce to the two basis scalars `r0^2` and `r1^2+r2^2`, and the scale quotient leaves one nontrivial ratio. The cited kappa authority is marked retained and supplies only the Frobenius block normalization used in Section 4. The runner source performs symbolic invariant solving and normalization checks rather than importing a fitted value or hard-coding the contested premise, though some non-load-bearing guard checks are textual or tautological. Within the stated abstract scope, no open physical bridge is consumed.
 - **auditor confidence:** high
 
 ### `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25`

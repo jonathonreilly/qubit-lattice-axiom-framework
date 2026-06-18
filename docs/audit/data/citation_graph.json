@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+      "to": "koide_q_minimal_scale_free_selector_note_2026-04-22"
     },
     {
       "from": "repo.front_door_status",
@@ -52258,7 +52258,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_q_minimal_scale_free_selector_note_2026-04-22"
+      "to": "flavor_readout_gate_equals_carrier_identification_2026-05-31"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+        "koide_q_minimal_scale_free_selector_note_2026-04-22",
         "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
         "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10",
         "grown_transfer_basin_targeted_repair_note_2026-06-04",
         "causal_field_reconciliation_note",
-        "koide_q_minimal_scale_free_selector_note_2026-04-22"
+        "flavor_readout_gate_equals_carrier_identification_2026-05-31"
       ],
       "helper_runner_paths": [],
-      "note_hash": "addb876794ab26074642363a766da8e0f4c8c19d30c4dd07161ca02902960dd6",
+      "note_hash": "78b9908cf01241be1f9c3a1c2ce4fa9ef8b2196923f8de1b6bc225a2f533f4e0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

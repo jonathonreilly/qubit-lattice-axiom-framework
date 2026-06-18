@@ -151,12 +151,13 @@ load-bearing source edges:
 | Imported module | Role in the no-go witness | Wrapper note |
 |---|---|---|
 | [`scripts/frontier_tensorial_einstein_regge_completion.py`](../scripts/frontier_tensorial_einstein_regge_completion.py) | constructs the vector-shift, traceless-shear, and mixed probe families and computes their `G_{0i}` and traceless `G_{ij}` Einstein residuals | [TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md](TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md) |
-| [`scripts/frontier_same_source_metric_ansatz_scan.py`](../scripts/frontier_same_source_metric_ansatz_scan.py) | builds the exact local `O_h`-symmetric `phi` grid against which scalar-data invariance is verified | [ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md](ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) (`same_source_metric_ansatz_scan` row of the umbrella) |
+| [`scripts/frontier_same_source_metric_ansatz_scan.py`](../scripts/frontier_same_source_metric_ansatz_scan.py) | builds the exact local `O_h`-symmetric `phi` grid against which scalar-data invariance is verified | [ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md](ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) (`same_source_metric_ansatz_scan` row of the helper-wrapper registry only; not a derivation of that helper) |
 | [`scripts/frontier_coarse_grained_exterior_law.py`](../scripts/frontier_coarse_grained_exterior_law.py) | builds the finite-rank `phi` grid on which the same scalar-data invariance is independently verified | [COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md](COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md) |
 
 These modules are imported authorities for this bounded witness. Each
 of the three runner-imported helpers now has a citeable one-hop
-authority via the wrapper-note column above (added 2026-05-17). The
+helper-wrapper registry authority via the wrapper-note column above
+(added 2026-05-17); no helper derivation is imported from that wrapper. The
 audit-conditional status of this no-go reflects the bounded-helper-
 character of those wrappers, not a defect in the algebraic argument.
 Promoting any helper wrapper itself to a stronger upstream tier is a

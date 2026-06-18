@@ -1,0 +1,26 @@
+loop_slug: one-parameter-helper-citation-firewall-20260618
+branch: codex/one-parameter-helper-citation-firewall-20260618
+base: origin/main@7a6a44056
+goal: "Source-side audit unlock for one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13 without auditing or status edits."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+target_claim_id: one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13
+active_route: citation_use_firewall_for_helper_wrapper_registry
+files_touched:
+  - docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md
+  - docs/ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md
+  - docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md
+  - scripts/frontier_one_parameter_reduced_shell_law.py
+  - logs/runner-cache/frontier_one_parameter_reduced_shell_law.txt
+  - .claude/science/physics-loops/one-parameter-helper-citation-firewall-20260618/
+open_imports:
+  - "The five helper modules remain their own source/audit question; this block only prevents the umbrella wrapper from being used as their derivation."
+no_go_routes:
+  - "Do not promote the umbrella wrapper itself; the audit row says it is a named-import/helper-wrapper support surface."
+  - "Do not edit audit ledger, effective-status matrices, front-door status, active review queue, or lane registry."
+verification:
+  - "python3 scripts/frontier_one_parameter_reduced_shell_law.py -> PASS=17 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_one_parameter_reduced_shell_law.py -> status ok"
+next_exact_action: "Run final check-only/cache, py_compile, diff, and forbidden-path guard; then commit, push, and open PR."
+stop_condition: "This block closes when the PR is open for reviewer extraction; no audit landing is performed here."

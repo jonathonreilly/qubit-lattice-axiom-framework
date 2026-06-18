@@ -1,0 +1,22 @@
+loop_slug: d3-lp-native-prefactor-unlock-20260618
+goal: "Unlock the audited-conditional D3 orbital-response decomposition row by removing the raw textbook Landau-Peierls prefactor input."
+target_status: "open source-side repair; independent audit required"
+cycle_count: 1
+active_route: "import retirement through native prefactor companion consumption"
+target_claim_id: "d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13"
+target_blocker: "D3 imported the standard Landau-Peierls formula and -1/12 spinless unit-flux normalization instead of deriving or citing an accepted native authority."
+files_touched:
+  - "docs/D3_ORBITAL_RESPONSE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md"
+  - "docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md"
+  - "scripts/frontier_d3_orbital_response_decomposition_2026_06_13.py"
+  - "logs/runner-cache/frontier_d3_orbital_response_decomposition_2026_06_13.txt"
+  - "logs/runner-cache/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.txt"
+open_imports:
+  - "Independent audit still needs to grade the native-prefactor companion packet."
+  - "The companion packet still names the magnetic Peierls/Moyal expansion as its bounded mathematical surface."
+trace_gate_classification: "direct_blocker_closure"
+reachability: "partially_closes"
+review_loop_disposition: "delegated_to_reviewer"
+pr_status: "pending"
+next_exact_action: "Commit, push, and open the review PR; then hand off companion-first audit/review ordering."
+stop_condition: "Stop this block after PR handoff; continue campaign only by selecting a new audited-conditional row."

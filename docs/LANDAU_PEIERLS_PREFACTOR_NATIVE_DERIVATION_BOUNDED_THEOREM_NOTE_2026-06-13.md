@@ -46,6 +46,14 @@ chi = Omega''(0) = 2 c_2.
 The symbolic derivation gives `c_2 = -(1/24) integral f'(E) det Hess(E)`;
 therefore the response prefactor is exactly `-1/12`.
 
+2026-06-18 source-side dependency use: this packet is now the explicit
+prefactor companion for
+`docs/D3_ORBITAL_RESPONSE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md`.
+The D3 runner imports this runner's symbolic derivation and uses the returned
+exact rational as its Landau-Peierls normalization. This note remains a source
+proposal until the independent audit lane grades it; it does not set its own
+effective status or the D3 note's effective status.
+
 ## Native symbolic derivation
 
 The runner starts from the magnetic star product
@@ -116,13 +124,13 @@ Final runner output:
 LP kgrid 48: -1.54931076443342586e-02
 LP kgrid 96: -1.54931076443342274e-02
 
-exact L=24, nflux=1: -1.54902341405529428e-02
-exact L=24, nflux=2: -1.54924629038020369e-02
-exact L=24, nflux=3: -1.54929624907440156e-02
+exact L=24, nflux=1: -1.54902341388942245e-02
+exact L=24, nflux=2: -1.54924629021433169e-02
+exact L=24, nflux=3: -1.54929624911126183e-02
 
-exact L=20, nflux=1: -1.54820823091538530e-02  err=1.103e-05
-exact L=24, nflux=1: -1.54902341405529428e-02  err=2.874e-06
-exact L=28, nflux=1: -1.54932179738991160e-02  err=1.103e-07
+exact L=20, nflux=1: -1.54820823062741322e-02  err=1.103e-05
+exact L=24, nflux=1: -1.54902341388942245e-02  err=2.874e-06
+exact L=28, nflux=1: -1.54932179874453253e-02  err=1.103e-07
 derived LP thermodynamic value: -1.54931076443342274e-02
 
 TOTAL: PASS=8 FAIL=0
@@ -135,3 +143,10 @@ supplied Peierls/Moyal star-product expansion. The `-1/12` response prefactor
 is derived inside that expansion and survives an independent exact
 finite-lattice Peierls diagonalization reference. No scalar prefactor is fitted
 to the diagonalization data.
+
+This packet is meant to retire the raw-textbook-scalar role, not to claim a
+full continuum-QFT theorem or a thermodynamic-limit theorem for every
+single-band model. The standard Landau-Peierls and magnetic-Moyal literature
+can be cited in parallel as context, but the load-bearing scalar used by the
+D3 source packet is the runner-derived rational plus the finite Peierls
+diagonalization cross-check recorded here.

@@ -3,6 +3,8 @@
 This branch narrows the YT boundary BC-transfer row to
 `conditional-support` / finite-grid implementation diagnostic only.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4398
+
 What changed:
 
 - The note type/status now matches the finite-grid source boundary.

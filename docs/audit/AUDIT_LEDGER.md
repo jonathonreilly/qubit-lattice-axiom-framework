@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 937 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1582 |
+| unaudited | 1581 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 12 |
+| ~~audited_renaming~~ | 13 |
 | ~~audited_conditional~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -66,8 +66,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 12 |
-| `unaudited` | 1904 |
+| `audited_renaming` | 13 |
+| `unaudited` | 1903 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 501 |
-| `medium` | 883 |
+| `high` | 502 |
+| `medium` | 882 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -102,12 +102,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1048 | 65.53 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1604,6 +1604,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -12862,6 +12863,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The finite-range iterated-commutator lemma derives v_LR := 2·e·q·W·R, and inserting H_hop support data q=2, R=1, W=|m|+2d gives v_LR <= 4·e·(|m|+2d).  _(class `A`)_
 - **chain closes:** True — The ledger-scoped theorem closes by finite-dimensional support counting, operator-norm algebra, and the in-note LR tail estimate over retained-grade or accepted-premise inputs. The exact reconstructed H=-log(T)/a_tau locality and quasilocal tail-composition discussion is explicitly not ratified as proved and is outside the unconditional F1-F4 surface. The load-bearing step is analytic algebra over existing support-family inputs, so class A is more accurate than class C, though the runner includes nontrivial finite-matrix checks.
 - **rationale:** The ledger-scoped theorem closes by finite-dimensional support counting, operator-norm algebra, and the in-note LR tail estimate over retained-grade or accepted-premise inputs. The exact reconstructed H=-log(T)/a_tau locality and quasilocal tail-composition discussion is explicitly not ratified as proved and is outside the unconditional F1-F4 surface. The load-bearing step is analytic algebra over existing support-family inputs, so class A is more accurate than class C, though the runner includes nontrivial finite-matrix checks.
+- **auditor confidence:** high
+
+### `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the finite 6-NN reachability/no-diagonal arithmetic and the claimed ratio/absolute-scale split; the physical time-step identification is only supported as a naming convention.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The minimum time step is one elementary dynamical update = one record tick, so one tick is one nearest-neighbor hop and a_tau is locked to a_s.  _(class `F`)_
+- **chain closes:** False — The finite graph facts close: a 6-NN update reaches exactly the six graph-distance-1 neighbors, while 26-NN reaches diagonal sites out to sqrt(3). The claimed derivation of the minimum physical time step does not close because the packet lacks a retained bridge theorem deriving the record/update tick as the time coordinate rather than defining that identity.
+- **rationale:** Issue: the runner computes nearest-neighbor reachability, but the load-bearing move equates update tick, record tick, a_tau, and one lattice edge. Why this blocks: the cited reachability theorem constrains influence under an already indexed local update; it does not derive that index as the physical time coordinate. Repair target: supply a retained bridge theorem deriving the record/update tick as time. Claim boundary until fixed: finite reachability and no-diagonal support are valid, but the time-step tie is a renaming.
 - **auditor confidence:** high
 
 ### `minimal_absorbing_horizon_probe_note`

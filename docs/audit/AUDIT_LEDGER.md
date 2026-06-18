@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 215 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 923 |
+| **retained_bounded** | 924 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1618 |
+| unaudited | 1617 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 9 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1336 |
+| `audited_clean` | 1337 |
 | `audited_conditional` | 15 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1940 |
+| `unaudited` | 1939 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 502 |
-| `medium` | 882 |
+| `high` | 501 |
+| `medium` | 883 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -563,6 +563,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_bridge_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7633,6 +7634,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The temporal-gauge plaquette reduction and product Haar measure give the tensor product kernel, and compact-group Schur orthogonality gives the stated c_lambda/d_lambda factor. The marked-link formula follows by applying the per-link identity to the fixed Peter-Weyl tensor factors and the trivial character on unmarked links.
 - **rationale:** The load-bearing mathematics is compact-group convolution algebra plus the temporal-gauge Wilson plaquette identity, not a numerical comparator, renaming, or imported framework-specific premise. Independent inspection of the displayed formulas confirms the c_lambda/d_lambda normalization, the a_0=1 trivial-channel normalization, and the c_0 contribution from unmarked links. The runner performs finite-group Z_N checks consistent with the algebra and does not import SU(3), beta=6, PDG data, or a downstream marked-plaquette premise.
 - **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_ADJACENT_WORD_CONTRACTION_DERIVED_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite beta=6, tensor NMAX=4/MODE_MAX=80 adjacent-word matrix-element contraction with trivial-slice boundary readout, composed into the existing finite source-sector NMAX=7/MODE_MAX=200 Perron machinery; no full rim-boundary eta_beta^env or untruncated spatial Wilson environment is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The shared-link Haar identity gives the adjacent bond factor b(lambda_i, lambda_(i+1)) = delta(lambda_i, lambda_(i+1)) / d_lambda_i, and the cited finite packet's boundary0 = e_(0,0) forces the bounded readout to the trivial-slice component rather than the marginal sum.  _(class `A`)_
+- **chain closes:** True — Within the declared finite packet, the Schur/Peter-Weyl convolution authorities supply the inverse-dimension shared-link contraction, and the retained finite tensor-word packet supplies only the trivial-channel unit boundary vector. The runner/helper chain computes the two- and three-word finite Perron readouts from those finite operators; broader full-rim and untruncated claims are explicitly out of scope.
+- **rationale:** The bounded derivation closes as algebra over retained-grade inputs: equation (5) supplies the matrix-element bond, while boundary0 in the finite packet rules out treating the other word slots as an all-label marginal on this cited surface. The runner source is not a print-only certificate: it constructs the finite multiword operator through the provided helper code and verifies residuals, positivity, readout values, comparator isolation, and the measured two/three-word stationarity guard. The clean verdict is only for the finite-packet negative and derived re-read; it does not ratify any full physical 3D rim-boundary theorem or canonical plaquette closure.
+- **auditor confidence:** medium
 
 ### `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`
 

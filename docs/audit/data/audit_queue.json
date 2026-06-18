@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 325,
+    "critical": 324,
     "high": 289,
     "leaf": 569,
     "medium": 473
@@ -125,25 +125,26 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+      "claim_id": "g_bare_derivation_note",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "positive_theorem",
       "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
       "deps": [
-        "cl3_color_automorphism_theorem"
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
       ],
-      "direct_in_degree": 12,
+      "direct_in_degree": 20,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.57,
-      "note_path": "docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md",
+      "load_bearing_score": 19.56,
+      "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_g_bare_rescaling_conditional_algebra_check.py",
-      "transitive_descendants": 759
+      "runner_path": "scripts/frontier_g_bare_derivation.py",
+      "transitive_descendants": 754
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -301,7 +302,7 @@
       "deps": [
         "dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16"
       ],
-      "direct_in_degree": 9,
+      "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py",
@@ -309,12 +310,12 @@
         "scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py",
         "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py"
       ],
-      "load_bearing_score": 13.457,
+      "load_bearing_score": 13.96,
       "note_path": "docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py",
-      "transitive_descendants": 496
+      "transitive_descendants": 497
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -1656,31 +1657,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_atlas_axiom_closure.py",
       "transitive_descendants": 764
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_derivation_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 20,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.56,
-      "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_g_bare_derivation.py",
-      "transitive_descendants": 754
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -19075,6 +19051,36 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+        "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+        "graph_first_su3_integration_note",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
+        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.5,
+      "note_path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -27110,36 +27116,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-        "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
-        "graph_first_su3_integration_note",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
-        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.5,
-      "note_path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "axiom_first_first_law_bh_mechanics_theorem_note_2026-05-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -33712,6 +33688,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39562,32 +39564,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/beta_eff_onset_provenance_jet_extension_2026_06_12.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py",
       "transitive_descendants": 0
     },
     {
@@ -49401,6 +49377,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 161,
-  "total_pending": 1656
+  "ready_count": 163,
+  "total_pending": 1655
 }

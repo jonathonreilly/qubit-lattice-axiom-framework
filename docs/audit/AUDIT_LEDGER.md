@@ -23,14 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 911 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1652 |
+| unaudited | 1651 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 3 |
 | ~~audited_conditional~~ | 9 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
-| `decoration_under_cl3_color_automorphism_theorem` | 1 |
+| `decoration_under_cl3_color_automorphism_theorem` | 2 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -60,16 +60,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 4 |
 | `audited_clean` | 1317 |
 | `audited_conditional` | 9 |
-| `audited_decoration` | 45 |
+| `audited_decoration` | 46 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
 | `audited_renaming` | 3 |
-| `unaudited` | 1974 |
+| `unaudited` | 1973 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1734 |
-| `decoration` | 47 |
+| `bounded_theorem` | 1733 |
+| `decoration` | 48 |
 | `meta` | 322 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
@@ -101,7 +101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 889 | 59.80 | `audited_conditional` | ~~audited_conditional~~ |
+| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
@@ -1471,6 +1471,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `gauge_vacuum_plaquette_compressed_rim_functional_uniqueness_note_2026-04-17` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
 | `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -6871,6 +6872,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Equating the two abstract constraints F^2 = c0 and F^2 = g^2/(2N) gives g^2 = 2 N c0, so on the positive branch g = sqrt(2 N c0) when c0 > 0.  _(class `A`)_
 - **chain closes:** True — The theorem follows by direct substitution and multiplication by 2N over the stated positive-real domain, with the c0=0 boundary explicitly excluded by g>0. The runner verifies the symbolic identity, positive branch, rational instances, non-unit counterexamples, and scope disclaimers with PASS=39, FAIL=0.
 - **rationale:** The scoped claim closes as pure algebra: the two hypotheses give c0 = g^2/(2N), hence g^2 = 2Nc0, and the positive branch is unique for c0>0. The specific g=1 result is correctly limited to pairs satisfying 2Nc0=1, with the note and runner showing that other pairs such as (N,c0)=(1,1) force different values. This audit does not ratify the physical Ward-route premises or any claim that those abstract variables are fixed by Cl(3), Wilson, or SU(N_c) structure.
+- **auditor confidence:** high
+
+### `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`
+
+- **Note:** [`G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Given the retained canonical trace normalization Tr(T_a T_b)=delta_ab/2, scalar rescaling T_a -> c T_a scales the Gram matrix by c^2 and preserves the canonical surface only when c^2=1.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-021040-5a6921b6-g_bare_rescaling_freedom_removal_theorem_note_2026-05-03-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Tr((c T_a)(c T_b)) = c^2 delta_ab / 2, so a nontrivial scalar rescaling does not preserve the canonical Gram normalization.  _(class `A`)_
+- **chain closes:** True — The CL3 cited authority is retained_bounded and supplies the canonical SU(3) trace normalization needed for this narrowed algebraic lemma. The conclusion follows by bilinearity of trace under scalar multiplication and does not use the authority's open physical-color bridge or any Wilson beta-routing premise.
+- **rationale:** The load-bearing step is an exact class-A trace/Gram scaling identity over the single retained CL3 trace-normalization parent plus standard mathematics. The runner uses exact rational arithmetic to check representative nontrivial c^2 values and verifies that the source note quarantines Wilson beta-routing. Because the chain reduces to one upstream parent claim and contains no independent first-principles computation or external comparator, it is decoration rather than an independent audited_clean theorem.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `g_bare_rigidity_theorem_note`

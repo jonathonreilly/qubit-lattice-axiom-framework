@@ -52230,10 +52230,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_from_axiom_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "finite_rank_gravity_residual_helper_note_2026-04-14"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
     },
     {
       "from": "repo.repo_organization",
@@ -100629,17 +100629,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_from_axiom_note",
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
         "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
         "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
         "universal_gr_polarization_frame_bundle_blocker_note",
-        "finite_rank_gravity_residual_helper_note_2026-04-14"
+        "finite_rank_gravity_residual_helper_note_2026-04-14",
+        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c6edc500d76f3501fd8c8b87cef1ce1d4c95345e53afeaf23f51e92169821ac7",
+      "note_hash": "43ca51cf38d90d38159aba5e83067d738976a6619f2b5305adcced27cad9361f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

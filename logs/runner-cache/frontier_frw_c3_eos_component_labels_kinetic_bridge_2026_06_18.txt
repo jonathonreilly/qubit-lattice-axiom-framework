@@ -1,0 +1,107 @@
+===== runner cache v1 =====
+runner: scripts/frontier_frw_c3_eos_component_labels_kinetic_bridge_2026_06_18.py
+runner_sha256: 7a3814f491242f0f450a333d5ae139691214c7fc73c939898370709f7e5561e3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+FRW C3 EOS COMPONENT LABELS: FINITE KINETIC BRIDGE
+PASS: all selected shells are nonzero momentum shells (q_values=[1, 2, 5, 9, 14])
+
+== Part 0: source and status firewall ==
+PASS: bridge note contains boundary phrase: Claim type:** bounded_theorem
+PASS: bridge note contains boundary phrase: Type:** bounded_theorem
+PASS: bridge note contains boundary phrase: Status:** bounded support for ideal finite kinetic component labels only
+PASS: bridge note contains boundary phrase: actual_current_surface_status: bounded-support
+PASS: bridge note contains boundary phrase: trace_class: direct_blocker_closure
+PASS: bridge note contains boundary phrase: reachability_to_target: partially_closes
+PASS: bridge note contains boundary phrase: proposal_allowed: false
+PASS: bridge note contains boundary phrase: not an audit result
+PASS: bridge note contains boundary phrase: No new axiom
+PASS: bridge note contains boundary phrase: does not derive C1 or C2
+PASS: bridge note contains boundary phrase: does not derive the full FRW backdrop
+PASS: bridge note contains boundary phrase: ideal kinetic component labels only
+PASS: bridge note contains boundary phrase: scripts/frontier_frw_c3_eos_component_labels_kinetic_bridge_2026_06_18.py
+PASS: bridge note contains boundary phrase: logs/runner-cache/frontier_frw_c3_eos_component_labels_kinetic_bridge_2026_06_18.txt
+PASS: bridge note excludes overclaim phrase: Status: retained
+PASS: bridge note excludes overclaim phrase: actual_current_surface_status: retained
+PASS: bridge note excludes overclaim phrase: promotes the FRW row
+PASS: bridge note excludes overclaim phrase: sets effective status
+PASS: bridge note excludes overclaim phrase: derives C1
+PASS: bridge note excludes overclaim phrase: derives C2
+PASS: bridge note excludes overclaim phrase: derives full FRW
+PASS: parent FRW note records partial bridge phrase: 2026-06-18 C3 kinetic-label partial bridge
+PASS: parent FRW note records partial bridge phrase: FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+PASS: parent FRW note records partial bridge phrase: does not derive C1 or C2
+PASS: parent FRW note records partial bridge phrase: does not derive the full FRW backdrop
+
+== Part 1: finite signed-permutation orbit isotropy ==
+PASS: shell (1, 0, 0) has equal axis-square sums (axis_sums=(2, 2, 2))
+PASS: shell (1, 0, 0) has axis sum n*q/3 exactly (n=6, q=1, n*q/3=2)
+PASS: shell (1, 1, 0) has equal axis-square sums (axis_sums=(8, 8, 8))
+PASS: shell (1, 1, 0) has axis sum n*q/3 exactly (n=12, q=2, n*q/3=8)
+PASS: shell (2, 1, 0) has equal axis-square sums (axis_sums=(40, 40, 40))
+PASS: shell (2, 1, 0) has axis sum n*q/3 exactly (n=24, q=5, n*q/3=40)
+PASS: shell (2, 2, 1) has equal axis-square sums (axis_sums=(72, 72, 72))
+PASS: shell (2, 2, 1) has axis sum n*q/3 exactly (n=24, q=9, n*q/3=72)
+PASS: shell (3, 2, 1) has equal axis-square sums (axis_sums=(224, 224, 224))
+PASS: shell (3, 2, 1) has axis sum n*q/3 exactly (n=48, q=14, n*q/3=224)
+
+== Part 2: massless radiation label w_r = 1/3 ==
+PASS: massless shell (1, 0, 0) has 3*P_0=rho (3P={1: Fraction(6, 1)}, rho={1: Fraction(6, 1)})
+PASS: massless shell (1, 0, 0) has 3*P_1=rho (3P={1: Fraction(6, 1)}, rho={1: Fraction(6, 1)})
+PASS: massless shell (1, 0, 0) has 3*P_2=rho (3P={1: Fraction(6, 1)}, rho={1: Fraction(6, 1)})
+PASS: massless shell (1, 1, 0) has 3*P_0=rho (3P={2: Fraction(12, 1)}, rho={2: Fraction(12, 1)})
+PASS: massless shell (1, 1, 0) has 3*P_1=rho (3P={2: Fraction(12, 1)}, rho={2: Fraction(12, 1)})
+PASS: massless shell (1, 1, 0) has 3*P_2=rho (3P={2: Fraction(12, 1)}, rho={2: Fraction(12, 1)})
+PASS: massless shell (2, 1, 0) has 3*P_0=rho (3P={5: Fraction(24, 1)}, rho={5: Fraction(24, 1)})
+PASS: massless shell (2, 1, 0) has 3*P_1=rho (3P={5: Fraction(24, 1)}, rho={5: Fraction(24, 1)})
+PASS: massless shell (2, 1, 0) has 3*P_2=rho (3P={5: Fraction(24, 1)}, rho={5: Fraction(24, 1)})
+PASS: massless shell (2, 2, 1) has 3*P_0=rho (3P={9: Fraction(24, 1)}, rho={9: Fraction(24, 1)})
+PASS: massless shell (2, 2, 1) has 3*P_1=rho (3P={9: Fraction(24, 1)}, rho={9: Fraction(24, 1)})
+PASS: massless shell (2, 2, 1) has 3*P_2=rho (3P={9: Fraction(24, 1)}, rho={9: Fraction(24, 1)})
+PASS: massless shell (3, 2, 1) has 3*P_0=rho (3P={14: Fraction(48, 1)}, rho={14: Fraction(48, 1)})
+PASS: massless shell (3, 2, 1) has 3*P_1=rho (3P={14: Fraction(48, 1)}, rho={14: Fraction(48, 1)})
+PASS: massless shell (3, 2, 1) has 3*P_2=rho (3P={14: Fraction(48, 1)}, rho={14: Fraction(48, 1)})
+PASS: arbitrary positive rational shell mixture has 3*P_0=rho (3P={1: Fraction(12, 1), 2: Fraction(36, 1), 5: Fraction(96, 1), 9: Fraction(120, 1), 14: Fraction(288, 1)}, rho={1: Fraction(12, 1), 2: Fraction(36, 1), 5: Fraction(96, 1), 9: Fraction(120, 1), 14: Fraction(288, 1)})
+PASS: arbitrary positive rational shell mixture has 3*P_1=rho (3P={1: Fraction(12, 1), 2: Fraction(36, 1), 5: Fraction(96, 1), 9: Fraction(120, 1), 14: Fraction(288, 1)}, rho={1: Fraction(12, 1), 2: Fraction(36, 1), 5: Fraction(96, 1), 9: Fraction(120, 1), 14: Fraction(288, 1)})
+PASS: arbitrary positive rational shell mixture has 3*P_2=rho (3P={1: Fraction(12, 1), 2: Fraction(36, 1), 5: Fraction(96, 1), 9: Fraction(120, 1), 14: Fraction(288, 1)}, rho={1: Fraction(12, 1), 2: Fraction(36, 1), 5: Fraction(96, 1), 9: Fraction(120, 1), 14: Fraction(288, 1)})
+
+== Part 3: pressureless rest matter label w_m = 0 ==
+PASS: rest-sector energy density is positive (rho=187/2)
+PASS: all rest-sector pressure components vanish exactly (P_i=[Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)])
+PASS: pressureless rest sector has w_m=0 exactly (P/rho=0)
+
+== Part 4: massive nonzero momentum correction boundary ==
+PASS: massive nonzero shell (1, 0, 0) has positive pressure correction (w=1/303)
+PASS: massive nonzero shell (1, 0, 0) is not dust (w=1/303)
+PASS: massive nonzero shell (1, 0, 0) remains below radiation pressure (w=1/303 < 1/3)
+PASS: massive nonzero shell (1, 0, 0) obeys q/(3*m^2) cold bound (w=1/303, bound=1/300)
+PASS: massive nonzero shell (1, 1, 0) has positive pressure correction (w=1/153)
+PASS: massive nonzero shell (1, 1, 0) is not dust (w=1/153)
+PASS: massive nonzero shell (1, 1, 0) remains below radiation pressure (w=1/153 < 1/3)
+PASS: massive nonzero shell (1, 1, 0) obeys q/(3*m^2) cold bound (w=1/153, bound=1/150)
+PASS: massive nonzero shell (2, 1, 0) has positive pressure correction (w=1/63)
+PASS: massive nonzero shell (2, 1, 0) is not dust (w=1/63)
+PASS: massive nonzero shell (2, 1, 0) remains below radiation pressure (w=1/63 < 1/3)
+PASS: massive nonzero shell (2, 1, 0) obeys q/(3*m^2) cold bound (w=1/63, bound=1/60)
+PASS: massive nonzero shell (2, 2, 1) has positive pressure correction (w=3/109)
+PASS: massive nonzero shell (2, 2, 1) is not dust (w=3/109)
+PASS: massive nonzero shell (2, 2, 1) remains below radiation pressure (w=3/109 < 1/3)
+PASS: massive nonzero shell (2, 2, 1) obeys q/(3*m^2) cold bound (w=3/109, bound=3/100)
+PASS: massive nonzero shell (3, 2, 1) has positive pressure correction (w=7/171)
+PASS: massive nonzero shell (3, 2, 1) is not dust (w=7/171)
+PASS: massive nonzero shell (3, 2, 1) remains below radiation pressure (w=7/171 < 1/3)
+PASS: massive nonzero shell (3, 2, 1) obeys q/(3*m^2) cold bound (w=7/171, bound=7/150)
+
+== Part 5: honest scope summary ==
+Closed by this bridge: ideal finite kinetic labels w_r=1/3 and w_m=0.
+Still open: C1, C2, full FRW backdrop, actual cosmological-fluid application.
+PASS: runner itself does not modify audit data
+
+TOTAL: PASS=78 FAIL=0
+VERDICT: bounded support passes for ideal finite kinetic EOS labels w_r=1/3 and w_m=0. The full FRW backdrop, C1/C2, cosmological-fluid application, and audit status remain open.
+
+----- stderr -----
+

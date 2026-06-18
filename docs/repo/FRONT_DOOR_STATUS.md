@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1493 |
-| Retained-grade rows, including boxed decorations | 1425 |
+| Applied audit verdicts | 1494 |
+| Retained-grade rows, including boxed decorations | 1426 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 213 |
-| Retained bounded rows | 946 |
+| Retained bounded rows | 947 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 21 |
-| Unaudited rows | 1564 |
+| Unaudited rows | 1563 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 24 |
 | Audited renaming rows | 14 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1566 |
+| Total pending rows | 1565 |
 | Ready rows | 133 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
-| High pending | 268 |
+| High pending | 267 |
 | Medium pending | 425 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md) - high; unaudited
 - [`koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_GRADED_STATISTICS_GATE_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`distance_law_breakpoint_note`](../../docs/DISTANCE_LAW_BREAKPOINT_NOTE.md) - medium; unaudited
 - [`koide_readout_lane_demarcation_note_2026-05-30`](../../docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md) - medium; unaudited
 - [`record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
-- [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
 - [`yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10`](../../docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
+- [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
+- [`wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09`](../../docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

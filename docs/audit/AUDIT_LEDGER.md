@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 998 |
+| **retained_bounded** | 999 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1430 |
+| unaudited | 1429 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 27 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1447 |
+| `audited_clean` | 1448 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1752 |
+| `unaudited` | 1751 |
 
 | claim_type | count |
 |---|---:|
@@ -1284,6 +1284,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
+| `sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -18877,6 +18878,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The parity-sheared shell sweep passes 12/21 sampled rows, with exact zero-source and neutral controls, sign orientation on the passing subset, drift coverage [0.0, 0.05, 0.1, 0.15, 0.2, 0.3], and mean exponent 0.999895, so the construction is a narrow sixth-family basin rather than a generic theorem.  _(class `B`)_
 - **chain closes:** True — SIXTH_FAMILY_SHEARED_SWEEP.py currently reproduces the note's pass count, drift coverage, exact zero/neutral controls, and mean weak-field exponent. The note's conclusion is bounded and selective, matching the data rather than claiming family-wide closure.
 - **rationale:** The sheared basin note closes at bounded tier: the runner verifies the exact pass/fail structure and the note states the correct narrow interpretation. It neither expands the result into a universal connectivity theorem nor hides the failed rows. Residual risk is only missing ledger runner attachment; the local sweep script is the direct evidence surface.
+- **auditor confidence:** high
+
+### `sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded arithmetic closure: under retained LH hypercharge content, N_c=3, n_gen=3, standard anomaly formulae, and the explicit minimal no-nu_R RH ansatz, the RH hypercharges are uniquely fixed up to the stated u/d convention and the listed one-generation gauge anomalies vanish exactly.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the retained LH content and the admitted no-nu_R minimal SU(2)-singlet RH completion, the equations SU(3)^2Y=0, Tr[Y]=0, and Tr[Y^3]=0 force (Y(u_R),Y(d_R),Y(e_R))=(+4/3,-2/3,-2), after which all six gauge-anomaly conditions cancel exactly.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by exact algebra over the supplied retained inputs plus the explicit bounded premises. The runner source computes the quadratic, trace sums, cubic sums, Witten parity count, and caveat examples with Fractions/integers rather than merely printing expected values.
+- **rationale:** Within the bounded scope, the load-bearing step is genuine class-A algebraic closure over retained-grade inputs and explicitly stated premises. The cited authorities for the LH content, nonabelian structure, and generation count are retained-grade, while the minimal axiom memo is an accepted framework premise. The result does not derive the RH matter content, exclude vectorlike or nu_R branches, or fix absolute Y scale; those limits are explicitly outside the forced conclusion and are checked by the runner ledger.
 - **auditor confidence:** high
 
 ### `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 304,
     "high": 267,
-    "leaf": 563,
+    "leaf": 562,
     "medium": 412
   },
   "cycle_break_target_count": 7,
@@ -17415,40 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "teleportation_resource_from_poisson_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "teleportation_retained_axis_operator_algebra_closure_note",
-        "teleportation_microscopic_closure_note",
-        "teleportation_apparatus_dynamics_closure_note",
-        "teleportation_finite_gapped_preparation_path_support_note_2026-06-16",
-        "minimal_axioms",
-        "teleportation_poisson_resource_sweep_note",
-        "teleportation_resource_fidelity_note",
-        "teleportation_measurement_record_note",
-        "teleportation_operator_consistent_end_to_end_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_bell_inequality.py"
-      ],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "teleportation_taste_readout_operator_model_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -17545,6 +17511,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/koide_signed_readout_is_not_chirality.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_2026_06_12.py",
       "transitive_descendants": 17
     },
     {
@@ -30211,32 +30203,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12",
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_2026_06_12.py",
       "transitive_descendants": 2
     },
     {
@@ -46431,6 +46397,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 122,
-  "total_pending": 1546
+  "ready_count": 121,
+  "total_pending": 1545
 }

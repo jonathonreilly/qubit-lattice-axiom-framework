@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_bell_measurement_circuit_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "teleportation_resource_from_poisson_note"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lanes.generated-geometry.readme"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "teleportation_bell_measurement_circuit_note",
         "teleportation_resource_from_poisson_note",
         "teleportation_taste_readout_operator_model_note",
         "universal_gr_polarization_frame_bundle_attempt",
         "chiral_split_mass_gravity_note",
         "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
-        "lanes.generated-geometry.readme"
+        "lanes.generated-geometry.readme",
+        "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a02d45acc66c9c68f4cf093f084f1aa9d10e9da6fa2263f65ad22288ab9de7c3",
+      "note_hash": "3e4b14a454b8dd9fbc4861dc0ed05dabbe61563f7b69512cddd8462c67ad2dd0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

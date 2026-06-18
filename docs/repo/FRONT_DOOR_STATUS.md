@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1513 |
+| Applied audit verdicts | 1514 |
 | Retained-grade rows, including boxed decorations | 1438 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 214 |
 | Retained bounded rows | 957 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 23 |
-| Unaudited rows | 1544 |
+| Unaudited rows | 1543 |
 | Retained-pending-chain rows | 3 |
-| Audited conditional rows | 26 |
+| Audited conditional rows | 27 |
 | Audited renaming rows | 16 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 7 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1546 |
-| Ready rows | 122 |
+| Total pending rows | 1545 |
+| Ready rows | 121 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
 | Medium pending | 412 |
-| Leaf pending | 563 |
+| Leaf pending | 562 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 - [`teleportation_taste_readout_operator_model_note`](../../docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md) - medium; unaudited
 - [`universal_gr_polarization_frame_bundle_attempt`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md) - medium; unaudited
 - [`chiral_split_mass_gravity_note`](../../docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md) - medium; unaudited
 - [`koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
+- [`native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`lanes.generated-geometry.readme`](../../docs/lanes/generated-geometry/README.md) - medium; unaudited
-- [`native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16`](../../docs/POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 574 |
 | High nodes | 507 |
-| Medium nodes | 931 |
-| Leaf nodes | 1511 |
+| Medium nodes | 932 |
+| Leaf nodes | 1510 |
 
 Top load-bearing rows by graph score:
 

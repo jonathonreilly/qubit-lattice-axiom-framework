@@ -6,6 +6,18 @@
 **Status authority:** independent audit lane only. This note sets/predicts no audit status,
 **retires no Tier-A admission**, and edits no `docs/audit/data/*` file.
 
+**Relation to landed work (this note generalizes, does not originate).** The `AC_φλ`-side fact
+that `δ→−δ` conjugation leaves the unordered spectrum invariant is **already landed**
+(`retained_bounded`) in
+[`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md).
+This note **generalizes** that single fact to the *whole* conjugation-selector class
+(carrier-independent, `n=4..12`), adds the modular/KMS circularity (§3) and the topological
+escaping observable (§4), and identifies the object as the one shared by gravity, flavor, and
+`θ`. The cross-sector "shared shape" claim is held to the over-reach discipline of
+[`RELATIVE_ORIENTATION_FUSION_...`](RELATIVE_ORIENTATION_FUSION_STATE_SELECTION_POINTER_FRAME_ONE_VACUOUS_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+(shared shape ⇏ same root): the welding is via the *exact* `e₄` Clifford identity, not a shape
+resonance.
+
 **Claim scope (narrow).** For the shared T-odd orientation `Z₂` — the realized sign of the
 `Cl(3,1)` `e₄` volume form, equivalently `sign(Vandermonde Δ)` (Koide handedness), the
 `θ` mass-side `arg det M ∈ {0,π}` orientation bit, and the EH/conformal-mode sign — three

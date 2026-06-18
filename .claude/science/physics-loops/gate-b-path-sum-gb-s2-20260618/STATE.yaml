@@ -1,0 +1,17 @@
+loop_slug: gate-b-path-sum-gb-s2-20260618
+goal: "Unlock the audited-conditional Gate B dynamics row by retiring the opaque-recursion portion of GB-S2 where possible."
+target_status: bounded-support
+active_route: "Split GB-S2 into GB-S2a finite path-sum propagation and GB-S2b physical readout semantics."
+current_surface_status: bounded-support source proposal
+trace_class: direct_blocker_closure
+target_claim_id: gate_b_dynamics_note
+files_touched:
+  - docs/GATE_B_DYNAMICS_NOTE.md
+  - docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md
+  - scripts/gate_b_finite_path_sum_propagation_bridge_2026_06_18.py
+open_imports:
+  - "GB-S1b scalar normalization remains supplied."
+  - "GB-S2b physical detector-window/TOWARD/F~M semantics remain supplied."
+  - "GB-S3 generated connectivity remains supplied in this independent branch."
+next_exact_action: "Run verifier/cache checks, push branch, open review PR."
+stop_condition: "Stop this block after PR creation; continue campaign with the next non-duplicative audit unlock."

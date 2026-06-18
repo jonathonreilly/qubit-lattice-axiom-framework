@@ -24,10 +24,29 @@ propagation/readout semantics, or `GB-S3` generated-connectivity rule from
 retained framework primitives. This split adds no new axiom, Tier-A admission,
 or audit-status change.
 
+## 2026-06-18 finite path-sum propagation split
+
+The source-side bridge
+[`GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+splits `GB-S2` into two pieces:
+
+| ID | Piece | Current status |
+|---|---|---|
+| `GB-S2a` | finite complex-amplitude propagation on the supplied layered DAG | bounded-support source bridge: the runner recursion is exactly the finite path-sum transfer over unblocked directed paths, with a finite linear transfer operator and normalized terminal detector distribution once a detector set is supplied |
+| `GB-S2b` | physical detector-window mass-gain, `TOWARD`, and `F~M` readout semantics | still supplied Gate-B runner data |
+
+This removes a bookkeeping ambiguity in the propagation packet: the update rule
+is not an opaque numerical procedure. It is the exact finite path expansion of
+the declared edge kernel on the declared finite DAG. The physical interpretation
+of the detector window, `TOWARD` sign, and `F~M` slope remains open. This
+update does not derive `GB-S1b`, `GB-S3`, a physical gravity readout, or a full
+Gate B dynamics theorem.
+
 ## 2026-06-12 audit firewall: source index, not dynamics closure
 
-The audited missing bridges remain `GB-S1b`, `GB-S2`, and `GB-S3`: the Gate B
-runner's regularized scalar/normalization, propagation/readout semantics, and
+The audited missing bridges remain `GB-S1b`, the `GB-S2b` physical readout
+semantics, and `GB-S3`: the Gate B runner's regularized
+scalar/normalization, physical detector-window/TOWARD/`F~M` semantics, and
 generated-connectivity rule are supplied row-local ingredients. The primary
 connectivity replay and companion manifest verify finite generated-geometry
 behavior inside that supplied packet only.
@@ -70,7 +89,7 @@ index rather than as an independent primitive-to-physical-gravity bridge.
 | ID | Supplied ingredient | Row-local definition | Status boundary |
 |---|---|---|---|
 | `GB-S1` | valley-linear source/action rule | The runners use the scalar field `f(x) = strength/(r(x, mass)+0.1)` and the forward phase action `S = L(1 - f)` with the declared constants in the paired scripts. | Split by the 2026-06-16 interface note: the linear `S=L(1-phi)` response form has bounded weak-field support (`GB-S1a`), but the Gate B scalar `strength/(r+0.1)`, regulator, and normalization remain supplied (`GB-S1b`). Not fully derived from retained primitives and not a new axiom. |
-| `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked barrier, detector-window mass gain, `TOWARD` sign, and local `F~M` log-slope readouts. | Runner-supplied operational readout for bounded numerical certificates; not a retained physical-gravity readout bridge. |
+| `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked barrier, detector-window mass gain, `TOWARD` sign, and local `F~M` log-slope readouts. | Split by the 2026-06-18 finite path-sum bridge: the finite propagation recursion itself is exact path-sum algebra (`GB-S2a`), but the central barrier, detector-window mass gain, `TOWARD`, and `F~M` physical readout semantics remain supplied (`GB-S2b`). |
 | `GB-S3` | generated-connectivity rule | The positive generated-geometry rows use label/offset-preserving forward connectivity with drift/restore companions; KNN and non-label candidates are recorded as controls or bounded negatives where their sign/`F~M` package weakens. | Supplied generated-family rule for this packet only; not yet derived from a local retained growth primitive. |
 
 The direct source packet is therefore:

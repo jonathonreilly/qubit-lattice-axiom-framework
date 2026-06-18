@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 962 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1529 |
+| unaudited | 1528 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1397 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1851 |
+| `unaudited` | 1850 |
 
 | claim_type | count |
 |---|---:|
@@ -1541,6 +1541,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7354,6 +7355,23 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The folded staggered phase matrices obey Gamma_mu^2 = I and Gamma_mu Gamma_nu + Gamma_nu Gamma_mu = 0, so H_hop(k)^2 = -(sum_mu sin^2 k_mu) I and every reduced momentum sector reduces to the one-axis 2 by 2 time-block algebra.  _(class `A`)_
 - **chain closes:** True — Both cited authorities are retained_bounded, which is retained-grade under the rubric, and they are used only for the one-axis two-step transfer algebra/normalization and quasilocal contour mechanism. The new d-dimensional step closes internally by the Gamma-matrix algebra and the note's self-contained strip estimate.
 - **rationale:** The load-bearing step is a genuine algebraic closure, not a definition or renaming: the staggered phase bookkeeping gives a Clifford family whose scalar square reduces the d-dimensional hop to the retained one-axis two-step eigenvalue calculation. The displayed signs, factors of 2, determinant/trace algebra, pi-periodicity support rule, contour-shift sign for exp(i p.z), and l_inf-to-l1 rate conversion are consistent. The runner source performs actual matrix, spectrum, and FFT checks rather than printing constants, and its finite d=2,d=3 computations support the general algebraic derivation without importing external comparators.
+- **auditor confidence:** high
+
+### `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`
+
+- **Note:** [`FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional FS route map: given the realization-gate/external-spacetime identification, emergent Lorentz/positivity/microcausality, and a non-circular OS-to-Wightman reconstruction R, the standard spin-statistics comparator would select the fermionic sign; the finite runner checks only toy CCR/CAR and multi-loop sign-blindness witnesses.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** spin-1/2 support + abstract O_h/Cl(3) support + supplied realization gate + supplied/emergent Lorentz/positivity + supplied reconstruction R => fermionic sign forced by the comparator spin-statistics engine.  _(class `D`)_
+- **chain closes:** False — The packet explicitly does not derive Link B, Lorentz/positivity/microcausality, or R from the framework baseline. The runner hard-codes or text-checks those boundaries and computes only finite stress-test witnesses.
+- **rationale:** Issue: The load-bearing implication requires supplied realization-gate/external spacetime identification, emergent Lorentz/positivity/microcausality, and OS-to-Wightman reconstruction R, while the runner explicitly says it does not derive them. Why this blocks: the finite runner verifies scope text and toy comparator/cocycle checks, not a framework derivation of the physical bridges needed to force FS. Repair target: audit or derive the realization identification, emergent Lorentz/positivity/microcausality, and a non-circular R reconstruction. Claim boundary until fixed: conditional support and finite stress-test, not bounded theorem closure of FS.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `free_field_os_wightman_reconstruction (path not provided in packet)`
+  - `flavor_spin_statistics_forces_modulo_reconstruction (path not provided in packet)`
 - **auditor confidence:** high
 
 ### `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`

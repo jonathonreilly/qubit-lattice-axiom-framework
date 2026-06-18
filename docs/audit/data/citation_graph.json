@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lanes.generated-geometry.readme"
     },
     {
       "from": "repo.front_door_status",
-      "to": "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11"
+      "to": "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13",
         "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
         "gate_b_weak_field_source_action_interface_note_2026-06-16",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19",
         "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12",
+        "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11",
         "lanes.generated-geometry.readme",
-        "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11"
+        "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8d0a04e45ed1759d613b9256c36fb8b99bf847c8f86e80aaf0cf267013ff803e",
+      "note_hash": "1c12210f9db287d04f3b97419d3cff6e7c4a7bb1c0ae948f0c2f48635ac4ab8e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

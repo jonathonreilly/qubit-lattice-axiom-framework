@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_formula_honest_status_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_effective_potential_endpoint_note"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "action_normalization_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "single_axiom_hilbert_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "hierarchy_formula_honest_status_note_2026-05-10",
         "hierarchy_effective_potential_endpoint_note",
         "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "source_resolved_exact_green_pocket_note",
         "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-        "action_normalization_note"
+        "action_normalization_note",
+        "single_axiom_hilbert_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "618ab82e030f059855fc20a5ba8d0fd7208c874c8cff8cb5f22c6f82fc1343e7",
+      "note_hash": "2fb413fd920565ccf104a4bca8852587282f3ea66e43de9c22ef9809a001034e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 916 |
 | Boxed decorations under retained parents | 48 |
 | Open gates | 14 |
-| Unaudited rows | 1636 |
+| Unaudited rows | 1635 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 6 |
@@ -44,7 +44,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`hierarchy_effective_potential_endpoint_note`](../../docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md) - critical; unaudited
+- [`hierarchy_effective_potential_endpoint_note`](../../docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md) - critical; audit_in_progress
 - [`koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - high; unaudited
 - [`source_resolved_exact_green_pocket_note`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md) - high; unaudited
@@ -61,11 +61,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 175 |
+| critical | `unaudited` | 174 |
 | high | `unaudited` | 158 |
 | medium | `unaudited` | 93 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 
@@ -87,7 +88,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
-- `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
-- `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
+- `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
+- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 49.006
 - `key_terminology` - critical; 1119 descendants; score 46.629
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

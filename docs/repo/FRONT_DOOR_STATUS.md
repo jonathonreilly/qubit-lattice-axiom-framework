@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1576 |
-| Retained-grade rows, including boxed decorations | 1467 |
+| Applied audit verdicts | 1577 |
+| Retained-grade rows, including boxed decorations | 1468 |
 | Retained positive theorems | 218 |
-| Retained no-go rows | 215 |
+| Retained no-go rows | 216 |
 | Retained bounded rows | 980 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 31 |
-| Unaudited rows | 1481 |
+| Unaudited rows | 1480 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 48 |
 | Audited renaming rows | 18 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1483 |
-| Ready rows | 67 |
+| Total pending rows | 1482 |
+| Ready rows | 66 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 498 |
+| Leaf pending | 497 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16`](../../docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28`](../../docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md) - medium; unaudited
 - [`g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`gate_b_dynamics_note`](../../docs/GATE_B_DYNAMICS_NOTE.md) - medium; unaudited
+- [`gate_b_operator_cauchy_note_2026-05-10`](../../docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`gate_b_operator_cauchy_note_2026-05-10`](../../docs/GATE_B_OPERATOR_CAUCHY_NOTE_2026-05-10.md) - leaf; unaudited
+- [`gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03`](../../docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

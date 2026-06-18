@@ -27,4 +27,11 @@ landing cleanup to the Codex reviewer.
 
 ## PR
 
-Pending.
+Ready PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4377
+
+Remote branch:
+`codex/fractional-instanton-action-core-split-20260618`
+
+Primary commit:
+`4ba579ea1` (`Split fractional instanton action core`)

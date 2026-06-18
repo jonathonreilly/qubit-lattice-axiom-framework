@@ -18,6 +18,8 @@ open_imports:
 trace_gate_classification: direct_blocker_closure
 trace_gate_reachability: partially_closes
 review_loop_disposition: delegated
-pr_status: pending
-next_exact_action: "Run final checks, commit, push, open ready PR, then record PR URL."
-stop_condition: "This block stops after PR handoff unless a distinct high-value target is started."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4377"
+remote_branch: origin/codex/fractional-instanton-action-core-split-20260618
+commit: 4ba579ea1
+next_exact_action: "Reviewer extracts the action-core split and decides whether/how to re-audit the parent row's split scope."
+stop_condition: "This block is complete as a PR handoff unless a distinct high-value target is started."

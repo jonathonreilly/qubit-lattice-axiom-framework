@@ -52230,7 +52230,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03"
+      "to": "g_bare_derivation_note"
     },
     {
       "from": "repo.front_door_status",
@@ -100629,7 +100629,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_derivation_note",
         "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26",
@@ -100639,7 +100639,7 @@
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "43ca51cf38d90d38159aba5e83067d738976a6619f2b5305adcced27cad9361f",
+      "note_hash": "9e040d74487619e6e878a5c8c5b46333c6065eefdc8e6c9f0afa397681948468",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1404 |
+| Applied audit verdicts | 1405 |
 | Retained-grade rows, including boxed decorations | 1375 |
 | Retained positive theorems | 212 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 911 |
 | Boxed decorations under retained parents | 45 |
 | Open gates | 14 |
-| Unaudited rows | 1651 |
+| Unaudited rows | 1650 |
 | Retained-pending-chain rows | 3 |
-| Audited conditional rows | 9 |
+| Audited conditional rows | 10 |
 | Audited renaming rows | 3 |
 | Audited numerical-match rows | 4 |
 | Citation cycles detected | 7 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1655 |
-| Ready rows | 163 |
+| Total pending rows | 1654 |
+| Ready rows | 162 |
 | Cycle-break targets | 7 |
-| Critical pending | 324 |
+| Critical pending | 323 |
 | High pending | 289 |
 | Medium pending | 473 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`g_bare_derivation_note`](../../docs/G_BARE_DERIVATION_NOTE.md) - critical; unaudited
 - [`canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) - critical; unaudited
 - [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) - critical; unaudited
 - [`cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26`](../../docs/CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`universal_gr_polarization_frame_bundle_blocker_note`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md) - critical; unaudited
 - [`finite_rank_gravity_residual_helper_note_2026-04-14`](../../docs/FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md) - critical; audit_in_progress
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
+- [`axiom_first_kms_condition_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

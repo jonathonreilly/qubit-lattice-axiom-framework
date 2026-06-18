@@ -27,4 +27,11 @@ landing cleanup to the Codex reviewer.
 
 ## PR
 
-Pending.
+Ready PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4376
+
+Remote branch:
+`codex/flavor-holonomy-character-kernel-20260618`
+
+Primary commit:
+`581393abf` (`Add flavor holonomy character kernel`)

@@ -17,6 +17,8 @@ open_imports:
 trace_gate_classification: upstream_support
 trace_gate_reachability: supports
 review_loop_disposition: delegated
-pr_status: pending
-next_exact_action: "Commit, push, open ready PR, then record the URL in HANDOFF.md and PR_BACKLOG.md."
-stop_condition: "This block stops after PR handoff unless a distinct high-value audit unlock is started."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4376"
+remote_branch: origin/codex/flavor-holonomy-character-kernel-20260618
+commit: 581393abf
+next_exact_action: "Reviewer extracts the finite kernel and decides whether/how it feeds re-audit of the flavor holonomy parent."
+stop_condition: "This block is complete as a PR handoff unless a distinct high-value audit unlock is started."

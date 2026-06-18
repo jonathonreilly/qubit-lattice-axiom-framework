@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 916 |
+| **retained_bounded** | 917 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
 | unaudited | 1635 |
-| audit_in_progress | 1 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 6 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1326 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1327 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_effective_potential_endpoint_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -666,6 +664,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -8972,6 +8971,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** If f has mass dimension d and C_M is dimensionless, then C_M f^alpha has mass dimension d alpha, so requiring mass dimension one gives d alpha = 1 and alpha = 1/d; at d = 4 this is 1/4.  _(class `A`)_
 - **chain closes:** True — The theorem follows directly from the dimensional identity [C_M f^alpha] = d alpha and the linear equation d alpha = 1. No physical density, hierarchy formula, determinant readout, scale bridge, or empirical comparator is used.
 - **rationale:** The source note cleanly restricts itself to exact dimensional algebra and explicitly excludes the downstream hierarchy/free-energy/determinant applications. The runner verifies the dimension count, alpha = 1/d solution, d=4 quarter exponent, uniqueness among checked positive integers plus monotonicity, and symbolic round trips at exact rational/sympy precision with PASS=8 and FAIL=0. Residual risk is only downstream scope drift: this theorem does not derive any physical order parameter or hierarchy formula.
+- **auditor confidence:** high
+
+### `hierarchy_effective_potential_endpoint_note`
+
+- **Note:** [`HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`](../../docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic extraction of the small-m coefficient, APBC endpoint sums, ratio A_inf/A_2, and formal dimension-4 endpoint factor from the provided Matsubara free-energy density formula; no physical electroweak insertion theorem was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-hierarchy_effective_potential_endpoint_note-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Conditional on the Matsubara free-energy density formula, A(L_t) = (1/(2 L_t u_0^2)) sum_omega 1/(3 + sin^2 omega), with endpoints A_2 = 1/(8 u_0^2), A_4 = 1/(7 u_0^2), and A_inf = 1/(4 sqrt(3) u_0^2).  _(class `A`)_
+- **chain closes:** True — The endpoint identities follow by Taylor expanding log(1+x) at small m and evaluating the finite APBC sums at L_t=2 and L_t=4 plus the standard continuum average integral for L_t -> infinity. The open dimension-4 insertion bridge is explicitly outside the scoped algebraic claim.
+- **rationale:** The load-bearing algebra closes from the retained-grade Matsubara free-energy density authority, whose effective status is decoration_under a retained parent, plus standard finite-sum and integral identities. The runner genuinely computes the coefficient, endpoint formulas, and ratio checks, while its two observed-prefactor checks are external comparator evidence and are not needed for the scoped algebraic theorem. The note correctly leaves the physical det -> v insertion theorem open, so the clean verdict applies only to the bounded endpoint algebra and formal C_inf^(4D) factor, not to hierarchy closure.
 - **auditor confidence:** high
 
 ### `hierarchy_formula_honest_status_note_2026-05-10`

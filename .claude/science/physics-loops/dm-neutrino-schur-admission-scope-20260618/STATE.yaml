@@ -1,0 +1,23 @@
+loop_slug: dm-neutrino-schur-admission-scope-20260618
+goal: "Queue a source-side DM-neutrino Schur row repair for re-audit without auditing or retagging the ledger."
+target_status: conditional-support
+cycle_count: 1
+active_route: "Take the audit fallback path by classifying the Schur suppression row as conditional support over ADM-1/ADM-2/ADM-3."
+hard_residual_attacked: "The missing physical readout, physical coupling, and graph-shift-to-Dirac-Higgs phi-space transport bridges."
+files_touched:
+  - docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md
+  - scripts/frontier_neutrino_schur_suppression_named_admissions.py
+  - logs/runner-cache/frontier_neutrino_schur_suppression_named_admissions.txt
+open_imports:
+  - "ADM-1 mI physical readout theorem"
+  - "ADM-2 framework-native physical weak-coupling theorem"
+  - "ADM-3 graph-shift-to-Dirac-Higgs phi-space transport theorem"
+no_go_routes:
+  - "Do not license the mI baseline through the retained anti-Hermitian determinant theorem."
+  - "Do not promote the comparator g input to a derived physical coupling."
+  - "Do not claim native even-trace Dirac-Higgs transport; that route is blocked by the named no-go."
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Commit, push, open ready PR, then record PR URL in PR_BACKLOG.md."
+stop_condition: "Stop this block after ready PR creation; continue campaign from refreshed audit opportunities."

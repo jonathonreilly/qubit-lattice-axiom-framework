@@ -3,6 +3,9 @@
 Target:
 `gate_b_operator_cauchy_note_2026-05-10`
 
+PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4380
+
 What changed:
 
 - The note is now a bounded tested-axis negative boundary, not a family-level
@@ -34,4 +37,4 @@ Not done:
 - No stale existing PR was refreshed against `main`.
 
 Next exact action:
-Open the PR and ask the reviewer to extract the narrowed source repair.
+Reviewer extracts/reviews the narrowed source repair.

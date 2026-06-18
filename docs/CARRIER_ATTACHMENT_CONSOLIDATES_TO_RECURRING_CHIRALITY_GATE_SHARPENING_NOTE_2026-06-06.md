@@ -141,3 +141,10 @@ untouched. Effective status remains `unaudited`.
 ```bash
 PYTHONPATH=scripts python3 scripts/carrier_attachment_chirality_gate_consolidation_runner.py
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
+- [staggered_dirac_grassmann_forcing_theorem_note_2026-05-07](STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md)

@@ -4521,6 +4521,14 @@
       "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
     },
     {
+      "from": "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06",
+      "to": "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+    },
+    {
+      "from": "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06",
+      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
+    },
+    {
       "from": "carrier_orbit_invariance_note_2026-05-03",
       "to": "s3_time_constructed_support_tensor_primitive_note"
     },
@@ -38201,6 +38209,34 @@
       "to": "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10"
     },
     {
+      "from": "universal_gr_polarization_frame_bundle_attempt",
+      "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "universal_gr_polarization_frame_bundle_attempt",
+      "to": "s3_anomaly_spacetime_lift_note"
+    },
+    {
+      "from": "universal_gr_polarization_frame_bundle_attempt",
+      "to": "universal_gr_tensor_variational_candidate_note"
+    },
+    {
+      "from": "universal_gr_polarization_frame_bundle_attempt",
+      "to": "universal_gr_tensor_quotient_uniqueness_note"
+    },
+    {
+      "from": "universal_gr_polarization_frame_bundle_attempt",
+      "to": "universal_gr_tensor_action_blocker_note"
+    },
+    {
+      "from": "universal_gr_polarization_frame_bundle_attempt",
+      "to": "universal_gr_curvature_localization_blocker_note"
+    },
+    {
+      "from": "universal_gr_polarization_frame_bundle_attempt",
+      "to": "universal_gr_polarization_frame_bundle_blocker_note"
+    },
+    {
       "from": "universal_gr_positive_background_extension_note",
       "to": "universal_gr_positive_background_local_closure_note"
     },
@@ -52234,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_records_objectivity_conditional_note_2026-05-31"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "linear_response_derivation_note"
     },
     {
@@ -52254,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lanes.generated-geometry.readme"
     },
     {
       "from": "repo.front_door_status",
-      "to": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12"
+      "to": "post_record_dynamics_campaign_closeout_index_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -58294,10 +58330,12 @@
         "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
         "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
+        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "63534e430b97a1eb3c0ad7d037f1e38f02b4412ca32c3b5f8410976df91483e3",
+      "note_hash": "57c87489e87ffe3cff6ff103fd7b270fb9b647d9129adf70ab127e5d65a485cf",
       "path": "docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md",
       "runner_path": "scripts/carrier_attachment_chirality_gate_consolidation_runner.py",
       "title": "The Half-Integer Matter-Field Carrier Residual Consolidates into the Recurring Chirality Gate (No-Go Sharpening)"
@@ -100630,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "koide_records_objectivity_conditional_note_2026-05-31",
         "linear_response_derivation_note",
         "linear_response_second_order_kubo_note",
         "native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12",
         "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
+        "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
         "lanes.generated-geometry.readme",
-        "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12"
+        "post_record_dynamics_campaign_closeout_index_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ec922b4259cf2d7af21800c899c0d76abe7bebfa8f727e50a09ced644d0c76d5",
+      "note_hash": "0edee5a4117af0dad97d39999aea56b1fa2b43a39b58b371b18663e4e4b5d899",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -109179,9 +109217,17 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": "open_gate",
-      "deps": [],
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "s3_anomaly_spacetime_lift_note",
+        "universal_gr_tensor_variational_candidate_note",
+        "universal_gr_tensor_quotient_uniqueness_note",
+        "universal_gr_tensor_action_blocker_note",
+        "universal_gr_curvature_localization_blocker_note",
+        "universal_gr_polarization_frame_bundle_blocker_note"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "31eaa23ef6943f1c9a8ca7f7a69a9c2930f95acd081a18225b6a5bcb905496fe",
+      "note_hash": "0fb4e8166b42022b59e06f814c8367bd05cac746aecca3496855e53d3c3ce3dc",
       "path": "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md",
       "runner_path": "scripts/frontier_universal_gr_polarization_frame_bundle.py",
       "title": "Universal GR Polarization-Frame Bundle Attempt on `PL S^3 x R`"
@@ -115592,7 +115638,6 @@
     "universal_gr_lambda_bypass_note",
     "universal_gr_lorentzian_global_atlas_closure_note",
     "universal_gr_newton_tensor_scalar_consistency_bounded_theorem_note_2026-06-08",
-    "universal_gr_polarization_frame_bundle_attempt",
     "universal_gr_polarization_frame_bundle_blocker_note",
     "universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09",
     "universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08",
@@ -115701,10 +115746,10 @@
       "open_gate": 180,
       "positive_theorem": 599
     },
-    "edge_count": 13164,
+    "edge_count": 13173,
     "leaf_count": 1145,
     "node_count": 3523,
-    "root_count": 1077,
+    "root_count": 1076,
     "runners_with_path": 3109
   }
 }

@@ -19,8 +19,8 @@
     {
       "claim_id": "minimal_axioms",
       "criticality": "critical",
-      "load_bearing_score": 144.68,
-      "transitive_descendants": 1640
+      "load_bearing_score": 144.681,
+      "transitive_descendants": 1641
     },
     {
       "claim_id": "three_generation_observable_theorem_note",
@@ -31,14 +31,14 @@
     {
       "claim_id": "graph_first_su3_integration_note",
       "criticality": "critical",
-      "load_bearing_score": 60.952,
-      "transitive_descendants": 1400
+      "load_bearing_score": 60.953,
+      "transitive_descendants": 1401
     },
     {
       "claim_id": "observable_principle_from_axiom_note",
       "criticality": "critical",
-      "load_bearing_score": 59.296,
-      "transitive_descendants": 888
+      "load_bearing_score": 59.799,
+      "transitive_descendants": 890
     },
     {
       "claim_id": "plaquette_self_consistency_note",
@@ -73,8 +73,8 @@
     {
       "claim_id": "anomaly_forces_time_theorem",
       "criticality": "critical",
-      "load_bearing_score": 40.582,
-      "transitive_descendants": 1083
+      "load_bearing_score": 40.583,
+      "transitive_descendants": 1084
     },
     {
       "claim_id": "yt_ward_identity_derivation_theorem",
@@ -85,8 +85,8 @@
     {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
-      "load_bearing_score": 39.416,
-      "transitive_descendants": 1365
+      "load_bearing_score": 39.417,
+      "transitive_descendants": 1366
     },
     {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
@@ -163,8 +163,8 @@
     {
       "claim_id": "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
       "criticality": "critical",
-      "load_bearing_score": 31.193,
-      "transitive_descendants": 206
+      "load_bearing_score": 31.137,
+      "transitive_descendants": 198
     }
   ]
 }

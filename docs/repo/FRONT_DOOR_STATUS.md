@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1535 |
+| Applied audit verdicts | 1533 |
 | Retained-grade rows, including boxed decorations | 1447 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
 | Retained bounded rows | 963 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 27 |
-| Unaudited rows | 1522 |
+| Unaudited rows | 1524 |
 | Retained-pending-chain rows | 3 |
-| Audited conditional rows | 35 |
+| Audited conditional rows | 33 |
 | Audited renaming rows | 16 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 7 |
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1524 |
-| Ready rows | 106 |
+| Total pending rows | 1526 |
+| Ready rows | 107 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
-| Medium pending | 412 |
+| Medium pending | 414 |
 | Leaf pending | 541 |
 
 Next ready rows by queue order:
@@ -49,8 +49,8 @@ Next ready rows by queue order:
 - [`native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
 - [`plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12`](../../docs/PLAQUETTE_ENVIRONMENT_CONTRACTION_COST_VERIFICATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`post_record_dynamics_campaign_closeout_index_2026-06-06`](../../docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md) - medium; unaudited
 - [`lanes.generated-geometry.readme`](../../docs/lanes/generated-geometry/README.md) - medium; unaudited
-- [`post_record_dynamics_campaign_closeout_index_2026-06-06`](../../docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -88,10 +88,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1640 descendants; score 144.680
+- `minimal_axioms` - critical; 1641 descendants; score 144.681
 - `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
-- `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
-- `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
+- `graph_first_su3_integration_note` - critical; 1401 descendants; score 60.953
+- `observable_principle_from_axiom_note` - critical; 890 descendants; score 59.799
 - `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
 - `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 49.006
 - `key_terminology` - critical; 1119 descendants; score 46.629

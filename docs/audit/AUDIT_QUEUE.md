@@ -1,12 +1,12 @@
 # Audit Queue
 
-**Total pending:** 1524
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 106
+**Total pending:** 1526
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 107
 
 By criticality:
 - `critical`: 304
 - `high`: 267
-- `medium`: 412
+- `medium`: 414
 - `leaf`: 541
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
@@ -16,7 +16,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | unaudited | critical | 308 | 13.77 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_quark_antiquark_color_singlet_check.py` |
-| 2 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1083 | 40.58 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
+| 2 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1084 | 40.58 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
 | 3 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 1054 | 14.54 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py` |
 | 4 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 958 | 19.41 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_lattice_noether_check.py` |
 | 5 | `staggered_dirac_physical_species_direct_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 922 | 15.85 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/probe_three_states_direct_derivation.py` |
@@ -28,11 +28,11 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 11 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | unaudited | critical | 907 | 38.83 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py` |
 | 12 | `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | unaudited | critical | 904 | 11.32 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_vertex_power_operator_counting_lemma.py` |
 | 13 | `alpha_s_derived_note` | bounded_theorem | unaudited | critical | 901 | 38.82 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_alpha_s_derived_bounded_chain.py` |
-| 14 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 879 | 12.28 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
-| 15 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 876 | 16.78 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
-| 16 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 876 | 12.78 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
-| 17 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | unaudited | critical | 876 | 12.28 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_source_domain_bridge_no_go.py` |
-| 18 | `s3_time_theta_to_slice_coupling_note` | open_gate | unaudited | critical | 876 | 11.28 |  | fresh_context_or_stronger_with_cross_confirmation | - |
+| 14 | `s3_time_transfer_matrix_bridge_note` | bounded_theorem | unaudited | critical | 881 | 12.29 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_transfer_matrix_bridge.py` |
+| 15 | `s3_time_bilinear_tensor_primitive_note` | open_gate | unaudited | critical | 878 | 16.78 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_bilinear_tensor_primitive.py` |
+| 16 | `s3_time_spacetime_tensor_primitive_note` | bounded_theorem | unaudited | critical | 878 | 12.78 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_time_spacetime_tensor_primitive.py` |
+| 17 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | no_go | unaudited | critical | 878 | 12.28 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_source_domain_bridge_no_go.py` |
+| 18 | `s3_time_theta_to_slice_coupling_note` | open_gate | unaudited | critical | 878 | 11.28 |  | fresh_context_or_stronger_with_cross_confirmation | - |
 | 19 | `one_generation_matter_closure_note` | bounded_theorem | unaudited | critical | 859 | 26.75 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_right_handed_sector.py` |
 | 20 | `yt_zero_import_authority_note` | positive_theorem | unaudited | critical | 813 | 14.17 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 21 | `standard_model_hypercharge_uniqueness_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 812 | 29.17 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_sm_hypercharge_uniqueness.py` |
@@ -72,7 +72,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
 |---:|---|---:|---:|---|---|---|
-| 1 | `cycle-0001` | 4 | 876 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | critical | unaudited |
+| 1 | `cycle-0001` | 4 | 878 | `quark_route2_source_domain_bridge_no_go_note_2026-04-28` | critical | unaudited |
 | 2 | `cycle-0002` | 3 | 629 | `ckm_down_type_scale_convention_support_note_2026-04-22` | critical | unaudited |
 | 3 | `cycle-0003` | 4 | 629 | `ckm_down_type_scale_convention_support_note_2026-04-22` | critical | unaudited |
 | 4 | `cycle-0004` | 4 | 629 | `ckm_down_type_scale_convention_support_note_2026-04-22` | critical | unaudited |

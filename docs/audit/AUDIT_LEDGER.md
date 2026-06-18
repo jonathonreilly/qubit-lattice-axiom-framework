@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 963 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1522 |
+| unaudited | 1524 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 33 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1398 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 33 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1844 |
+| `unaudited` | 1846 |
 
 | claim_type | count |
 |---|---:|
@@ -102,18 +102,18 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1641 | 144.68 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1401 | 60.95 | `audited_clean` | **retained** |
+| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 890 | 59.80 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1027 | 49.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1084 | 40.58 | `unaudited` | unaudited |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 846 | 39.73 | `audited_clean` | **retained_bounded** |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1365 | 39.42 | `audited_clean` | **retained** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1366 | 39.42 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 907 | 38.83 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
@@ -126,7 +126,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1537,7 +1537,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1563,7 +1562,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
-| `universal_gr_polarization_frame_bundle_attempt` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3053,22 +3051,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** In the tested finite hopping models, the open-chain hard-core-boson and Jordan-Wigner Hamiltonians are identical matrices, so the same positive transfer operator and Stone spectrum are obtained, while the closed-loop sign changes spectra without making either transfer operator non-positive.  _(class `C`)_
 - **chain closes:** True — The finite one-qubit tensor-product construction closes the scoped result: adjacent open-chain Jordan-Wigner strings cancel in the hopping Hamiltonian, so T=exp(-tau H) and the Stone spectrum cannot discriminate the frames. On the ring the uncancelled loop string changes the spectrum, but finite Hermitian Hamiltonians still give strictly positive transfer operators in both frames.
 - **rationale:** The runner source constructs the HCB and JW operators directly on finite qubit tensor products and computes commutators, ranks, Gram spectra, transfer spectra, correlators, and ring spectra rather than printing hard-coded conclusions. An independent algebra check agrees with the load-bearing signs: open nearest-neighbor JW strings cancel bond-by-bond, while the closed boundary string remains as a loop datum; positivity of exp(-tau H) follows for each finite Hermitian H. The cited minimal-axiom authority is an accepted premise, and the note explicitly limits the no-go to the tested finite positivity route rather than claiming a global spin-statistics or graded-locality obstruction.
-- **auditor confidence:** high
-
-### `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06`
-
-- **Note:** [`CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md`](../../docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Audited the rotation-level no-go against deriving the per-site C^2 matter-state j=1/2 law from operator-frame/Clifford data, plus the claimed consolidation of that residual into the recurring staggered {eps,D}=0 chirality gate.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The trivial scalar lift satisfies the operator-frame constraints, and the only selector excluding it is the spinful sigma.p kernel, identified with the staggered chiral {eps,D}=0 gate.  _(class `A`)_
-- **chain closes:** False — The operator-frame escape refutation closes as a finite algebraic no-go. The consolidation does not fully close from the restricted packet because the physical Kawamoto-Smit/Grassmann-to-matter-state-law bridge and the identification of this selector as the already-paid recurring chirality gate remain explicit open work.
-- **rationale:** The runner verifies real finite matrix facts: adjoint conjugation is blind to the SU(2) center, the scalar lift is operator-frame-compatible, a spin-blind scalar kernel commutes, and the displayed staggered D anticommutes with eps. But the final consolidation is not derived by the runner; it is asserted via consolidated = True and depends on an unclosed KS/Grassmann physical state-law bridge. The cited Kähler-Dirac authority is retained_bounded but explicitly disclaims the physical dynamical staggered-Dirac identification needed for this broader conclusion.
-- **open / conditional deps cited:**
-  - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
-  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
 - **auditor confidence:** high
 
 ### `causal_distance_tail_note`
@@ -20489,27 +20471,6 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The scalar Green tail approaches 1/(4 pi r), and the sampled tensor response Pi_TT(k)-Pi_TT(0) is positive and approximately proportional to 2 - 2 cos k at the two smallest sampled momenta.  _(class `C`)_
 - **chain closes:** True — The runner actually computes the scalar heat-kernel Green values and the finite N=10 Pauli-matrix tensor response, and the reported tensor ratios are positive with the stated finite-grid spread. The source note restricts the conclusion to shape compatibility and does not rely on an absolute Newton constant, tensor/scalar source normalization, or observed-G equality.
 - **rationale:** For the scoped bounded diagnostic, the load-bearing computation is internal finite/numerical evaluation from the displayed lattice and Pauli-matrix definitions, not a renaming or external comparator match. The note explicitly excludes the physical Newton-route equality, GR tensor factor, and nonlinear closure that the packet does not derive. No cited non-retained authority or open bridge is needed for the narrowed claim.
-- **auditor confidence:** high
-
-### `universal_gr_polarization_frame_bundle_attempt`
-
-- **Note:** [`UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** Open-gate blocker that the direct universal GR route has a canonical scalar-channel selector but only a frame-dependent complement localization orbit, not a canonical full polarization/projector bundle or `Pi_curv`.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-universal_gr_polarization_frame_bundle_attempt-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Two valid `3+1` polarization frames related by a spatial rotation yield different localized channel coefficients for the same kernel.  _(class `A`)_
-- **chain closes:** False — The finite prototype frame-dependence closes as an algebraic matrix check, and the runner does not hard-code the reported `frame_delta`. The broader route-level statement depends on upstream exact scalar, `3+1`, tensor-candidate, quotient-kernel, and blocker notes that are not supplied as cited authorities in the restricted packet.
-- **rationale:** Issue: the load-bearing frame-orbit calculation is local algebra, but the note and runner also import multiple route-level premises by reading upstream docs absent from the cited-authority packet. Why this blocks: the restricted packet can verify a finite prototype localization-orbit diagnostic, not that the full current universal stack supplies all exact inputs and lacks only the named covariant frame/projector primitive. Repair target: add the upstream notes as explicit one-hop dependencies, with their retained status, or narrow the row to the finite algebraic frame-dependence check. Claim boundary until fixed: cite this only as an open-gate diagnostic/source-boundary warning, not as a closed universal GR polarization-bundle theorem.
-- **open / conditional deps cited:**
-  - `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`
-  - `S3_ANOMALY_SPACETIME_LIFT_NOTE.md`
-  - `UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md`
-  - `UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md`
-  - `UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md`
-  - `UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md`
-  - `UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md`
 - **auditor confidence:** high
 
 ### `universal_gr_polarization_frame_bundle_blocker_note`

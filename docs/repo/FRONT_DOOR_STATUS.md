@@ -12,7 +12,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1409 |
+| Applied audit verdicts | 1410 |
 | Retained-grade rows, including boxed decorations | 1377 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1650 |
-| Ready rows | 163 |
+| Total pending rows | 1649 |
+| Ready rows | 162 |
 | Cycle-break targets | 7 |
-| Critical pending | 318 |
+| Critical pending | 317 |
 | High pending | 289 |
 | Medium pending | 474 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`finite_rank_gravity_residual_helper_note_2026-04-14`](../../docs/FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md) - critical; audit_in_progress
 - [`coarse_grained_exterior_law_helper_note_2026-04-14`](../../docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
 - [`axiom_first_kms_condition_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`koide_q_delta_linking_relation_theorem_note_2026-04-20`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md) - critical; unaudited
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`poisson_exhaustive_uniqueness_note`](../../docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md) - critical; unaudited
+- [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

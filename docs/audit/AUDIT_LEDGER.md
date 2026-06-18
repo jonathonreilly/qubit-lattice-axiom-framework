@@ -58,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1319 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1320 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
@@ -130,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -440,6 +439,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fifth_family_radial_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fifth_family_radial_repaired_positive_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `fine_h_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `finite_rank_source_to_metric_theorem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `fixed_field_complex_grown_basin_v2_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -5880,6 +5880,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The fine-H lensing slope is portable across three DAG families within the -1.38 to -1.43 band, with a possible residual Fam2/Fam3 offset (t=2.37) that needs more seeds to resolve.  _(class `C`)_
 - **chain closes:** True — The source note has no upstream dependencies, and the registered runner cache now replays the full 3-family x 5-seed finite computation with the same slopes, family summaries, and pairwise t-statistics. The audited scope is the bounded finite replay only, not geometry-independence or an independent eikonal-baseline derivation.
 - **rationale:** The runner constructs the three fixed drift/restore DAG families, evaluates seeds 0-4 at H=0.25 and b in {3,4,5,6}, computes the Kubo readout, fits the per-seed and seed-mean power laws, and emits the same family means, grand mean, population sigma, and Fam2-vs-Fam3 t-statistic reported in the note. The note's retained boundary is explicitly three-family portability with a borderline residual family offset, not universality or kernel-independence. Within that bounded finite scope there is no hidden dependency, stale number, timeout, or imported comparator needed for closure.
+- **auditor confidence:** high
+
+### `finite_rank_gravity_residual_helper_note_2026-04-14`
+
+- **Note:** [`FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md`](../../docs/FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-rank Woodbury/Dyson source renormalization and exterior-field construction for supplied finite-rank lattice data H_0, P, and W, with no audit of the origin of P,W or downstream 3+1 gravity closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-finite_rank_gravity_residual_helper_note_2026-04-14-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The exact Woodbury/Dyson identity gives G_W P = G_0 P (I - W G_S)^(-1), hence q_eff = (I - W G_S)^(-1)m and phi = G_0 P q_eff.  _(class `A`)_
+- **chain closes:** True — The Woodbury identity follows algebraically for the supplied finite-dimensional operator data when the displayed inverses exist. The runner genuinely constructs the matrices and checks the column identity, compressed source formula, and exterior harmonicity rather than hard-coding the contested result.
+- **rationale:** The load-bearing step is a standard algebraic finite-rank resolvent identity over the stated inputs, and the note explicitly bounds away from deriving the support structure or full gravity theorem. The primary runner independently builds the lattice Laplacian, support projector, finite-rank W, and verifies the exact identities to numerical precision, with additional bounded diagnostic residual tests. The current runner residual values differ from the prose's quoted historical residual, so a second auditor should treat that quote as a non-load-bearing stale verification detail rather than part of the theorem closure.
 - **auditor confidence:** high
 
 ### `finite_rank_source_to_metric_theorem_note`

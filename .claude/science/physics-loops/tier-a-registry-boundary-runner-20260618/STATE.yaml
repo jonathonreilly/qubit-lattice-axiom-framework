@@ -1,0 +1,20 @@
+loop_slug: tier-a-registry-boundary-runner-20260618
+goal: "Make admitted_input_registry_tier_a_note_2026-05-23 re-auditable by adding a source/machine-registry boundary runner and cache."
+target_claim_id: admitted_input_registry_tier_a_note_2026-05-23
+target_status: exact-support
+runtime_mode: short source-side unlock block
+cycle_count: 1
+active_route: exact runner
+hard_residual: "High-load Tier-A meta row is unaudited and has no runner_path on main."
+files_touched:
+  - docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md
+  - scripts/admitted_input_registry_tier_a_boundary_check.py
+  - logs/runner-cache/admitted_input_registry_tier_a_boundary_check.txt
+  - .claude/science/physics-loops/tier-a-registry-boundary-runner-20260618/
+open_imports:
+  - "No Tier-A admission is retired. This block certifies source/registry consistency only."
+trace_gate_classification: direct_blocker_closure
+review_findings: "Local verification pass; independent review/audit still required before any effective-status change."
+pr_status: pending
+next_exact_action: "Open a review PR from codex/tier-a-registry-boundary-runner-20260618."
+stop_condition: "One coherent source-side unlock block packaged as PR."

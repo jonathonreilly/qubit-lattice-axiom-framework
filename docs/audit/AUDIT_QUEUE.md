@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1652
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 163
+**Total pending:** 1651
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 164
 
 By criticality:
-- `critical`: 320
+- `critical`: 319
 - `high`: 289
 - `medium`: 474
 - `leaf`: 569
@@ -15,9 +15,9 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16` | bounded_theorem | audit_in_progress | critical | 670 | 11.39 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_laplacian_shell_localization_2026_06_16.py` |
-| 2 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | unaudited | critical | 665 | 14.38 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_universal_gr_polarization_frame_bundle.py` |
-| 3 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | critical | 653 | 10.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_finite_rank_gravity_residual.py` |
+| 1 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | unaudited | critical | 665 | 14.38 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_universal_gr_polarization_frame_bundle.py` |
+| 2 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | critical | 653 | 10.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_finite_rank_gravity_residual.py` |
+| 3 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | unaudited | critical | 651 | 10.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_coarse_grained_exterior_law.py` |
 | 4 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | unaudited | critical | 497 | 13.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py` |
 | 5 | `axiom_first_kms_condition_theorem_note_2026-05-01` | positive_theorem | unaudited | critical | 373 | 13.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_kms_condition_check.py` |
 | 6 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 352 | 17.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/su3_casimir_fundamental_check.py` |

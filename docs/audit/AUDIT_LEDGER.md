@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 957 |
+| **retained_bounded** | 958 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 26 |
-| unaudited | 1538 |
+| unaudited | 1537 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1390 |
+| `audited_clean` | 1391 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1860 |
+| `unaudited` | 1859 |
 
 | claim_type | count |
 |---|---:|
@@ -1098,6 +1098,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_expectation_concentration_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_likelihood_score_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_null_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_target_kernel_stability_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -15469,6 +15470,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For W sampled from the supplied finite null law, P(p_T(W) <= alpha) <= alpha for every alpha in [0,1].  _(class `A`)_
 - **chain closes:** True — For any alpha, the event {p_T(W) <= alpha} is either empty or an upper tail set at a minimal statistic cutoff whose supplied null mass is exactly its tail p-value, hence at most alpha. This proves the scoped conditional finite-null statement without deriving the null law, statistic, or threshold.
 - **rationale:** The load-bearing theorem is a finite-probability superuniformity argument over a supplied normalized law and supplied ordered statistic. Independent checking of the displayed formulas confirms the exact tail definition and the runner's finite examples, including 17/625, 189/256, and 7/16. The runner source performs actual enumeration for the finite p-values and conservativity checks; its cross-note source-anchor checks are non-load-bearing for this scoped theorem. The audit does not close, and the note does not claim to close, derivation of the null law, statistic, threshold, or model-selection rule.
+- **auditor confidence:** high
+
+### `post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16`
+
+- **Note:** [`POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md`](../../docs/POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given only a supplied finite carrier and supplied rational nonnegative weights with positive total, total-weight normalization gives a normalized finite measure; zero-total, negative-weight, and selector-authority extensions are outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For a supplied finite carrier X and supplied rational nonnegative weights w_x with W = sum_x w_x > 0, mu(x)=w_x/W is a normalized finite measure on X under that supplied weight rule.  _(class `A`)_
+- **chain closes:** True — The finite algebra closes: every mu(x) is nonnegative and rational, and sum_x mu(x) = W/W = 1. The note explicitly rejects zero-total and negative supplied weights and does not claim to derive the carrier, weights, prior, selector, or physical law.
+- **rationale:** The load-bearing step is an exact algebraic normalization identity over supplied finite data, not a physical selector or upstream carrier derivation. The runner uses exact Fraction arithmetic to check a representative positive family, scaling invariance, invalid-input rejection, and firewall flags; the general closure is independently the finite-sum identity sum_x w_x/W = 1. The clean verdict applies only to the bounded supplied-input normalization lemma as stated.
 - **auditor confidence:** high
 
 ### `post_record_finite_target_kernel_stability_2026-06-06`

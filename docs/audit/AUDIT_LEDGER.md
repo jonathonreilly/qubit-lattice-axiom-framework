@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 212 |
 | **retained_bounded** | 937 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 18 |
-| unaudited | 1586 |
+| open_gate | 19 |
+| unaudited | 1585 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1358 |
+| `audited_clean` | 1359 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1908 |
+| `unaudited` | 1907 |
 
 | claim_type | count |
 |---|---:|
@@ -107,7 +107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
@@ -737,6 +737,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -10225,6 +10226,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The C_3[111] cyclic permutation has transverse eigenvalues {omega, omega^2}, hence weights (1,2), and the unique trace-free pair gives L_3(1,2)=2/9 via (omega-1)(omega^2-1)=3.  _(class `A`)_
 - **chain closes:** True — Independently, the cyclic matrix sends e1->e2->e3->e1, has det(P-xI)=1-x^3, rank(P-I)=2, and transverse spectrum {omega, omega^2}. Among nontrivial weight pairs only (1,2)/(2,1) has determinant character 1, and the density sum gives two terms of 1/3 divided by 3, hence 2/9.
 - **rationale:** The load-bearing result is finite linear algebra and exact root-of-unity arithmetic over retained or retained_bounded inputs, not a numerical match or definition substitution. The runner source performs actual symbolic computations rather than printing constants, and an independent hand derivation checks the same determinant, rank, trace-free-pair, and density factors. The open PL/global ABSS and physical readout bridges are explicitly outside the narrowed A/B claim scope, so they do not block this bounded theorem verdict.
+- **auditor confidence:** high
+
+### `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04`
+
+- **Note:** [`KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md`](../../docs/KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the four explicit real/holomorphic and Gaussian/Berezin model cells showing that the tested fork separates polarization choice from statistics for the Koide r and Q counts.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The r = 1/2 cell follows from holomorphic polarization, i.e. choosing the doublet complex structure J and counting the doublet as one complex slot, not merely from switching Gaussian to Berezin statistics.  _(class `A`)_
+- **chain closes:** True — The cited Q lever is retained, and the four cell assignments are algebraic model checks in the provided runner; no external comparator or unretained premise is used to reach the scoped mechanism statement. The note explicitly leaves derivation or adoption of J open, so that missing positive selector is outside the audited closure.
+- **rationale:** The runner source constructs the C3 idempotents, real split, doublet complex structure, determinant/Pfaffian checks, and the four modeled cells rather than merely printing pass lines. The load-bearing conclusion is an algebraic comparison of explicitly scoped cells, so it is class A rather than a first-principles class C derivation. The cited physics authorities are retained-grade for the uses made here, and the broad no-go is explicitly demoted rather than claimed.
 - **auditor confidence:** high
 
 ### `koide_berry_monopole_bridge_reduction_note_2026-05-31`

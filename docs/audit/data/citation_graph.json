@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30"
+      "to": "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
@@ -100630,7 +100630,7 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
+        "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04",
         "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
         "newton_derivation_top4_bridge_note",
         "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
@@ -100639,7 +100639,7 @@
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6731247dd1979a597bf10bcee2b33db2144d41bfcb14b04b382706dbe666e649",
+      "note_hash": "2b964791f16e3e17d3be95f9026a121ef2547312bdbfcb3a17fac00df99f5617",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

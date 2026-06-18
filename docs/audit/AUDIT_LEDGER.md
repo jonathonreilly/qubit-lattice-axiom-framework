@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 217 |
 | **retained_bounded** | 988 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 33 |
-| unaudited | 1456 |
+| open_gate | 34 |
+| unaudited | 1455 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1432 |
+| `audited_clean` | 1433 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1778 |
+| `unaudited` | 1777 |
 
 | claim_type | count |
 |---|---:|
@@ -86,8 +86,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 891 |
-| `leaf` | 1421 |
+| `medium` | 892 |
+| `leaf` | 1420 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -878,6 +878,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -12810,6 +12811,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For the specified Fam1 grown-DAG static 1/r-field harness, the runner computes kubo_true = 7.061910, 5.972756, 5.986043 at H = 0.50, 0.35, 0.25, so the medium-to-fine drift is 0.2% under the runner's 5% criterion.  _(class `C`)_
 - **chain closes:** True — The supplied runner source actually grows the lattice, propagates A and B, computes the centroid derivative, and prints the cached values without hard-coded expected results. This closes the bounded three-refinement numerical statement, but not a stronger general H to 0 continuum theorem.
 - **rationale:** The load-bearing bounded claim is a class C framework-internal computation: the runner instantiates the Fam1 grown-DAG harness and computes the Kubo coefficient values directly. The cached stdout matches the source note's table and the last-step drift calculation. The cited one-hop authorities are provided as retained_bounded, so there is no open dependency blocking this scoped result. This clean verdict is only for the bounded three-point Fam1 stabilization, not for a general asymptotic H to 0 theorem or family-portable continuum result.
+- **auditor confidence:** high
+
+### `kubo_fam2_non_convergence_note_2026-05-02`
+
+- **Note:** [`KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md`](../../docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite sampled-H open-gate inventory: records Fam2 non-monotone Kubo behavior on the provided ladder, rejects only the visible near-term settling-to-Fam1/Fam3 interpretation, and names three non-exhaustive possible follow-up routes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-kubo_fam2_non_convergence_note_2026-05-02-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The recorded Fam2 refinement data are non-monotone over H={0.50,0.35,0.25,0.20}, so the simple 'Fam2 only needs finer H to settle near the Fam1/Fam3 value' reading is not supported by the sampled data.  _(class `A`)_
+- **chain closes:** True — The cited retained_bounded notes supply the Fam2 finite sequence and the Fam1/Fam3 comparator; non-monotonicity and lack of visible settling are direct checks on those values. The source note explicitly disclaims a Fam2 continuum theorem, an exhaustive obstruction trichotomy, and a resolved mechanism.
+- **rationale:** The primary runner is a class-A consistency/provenance checker rather than a first-principles Kubo computation, but that matches the scoped open-gate claim. The provided retained_bounded authorities and SHA-fresh cache support the finite values, and the note's conclusion is only the finite-sequence inventory plus non-exhaustive route listing. No hidden convergence target, fitted coefficient, or same-surface forcing argument is imported in the audited claim scope.
 - **auditor confidence:** high
 
 ### `kubo_fam2_refinement_note`

@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "kubo_fam2_non_convergence_note_2026-05-02"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16"
+      "to": "mirror_mutual_information_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3",
         "kubo_fam2_non_convergence_note_2026-05-02",
         "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13",
         "lattice_3d_nyquist_diffraction_note",
         "lepton_block_d12_prime_matching_no_go_note_2026-05-10",
+        "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16"
+        "mirror_mutual_information_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1dc740361f5256787f6374e99972de859dac9cbaa5f7afcd06521e86ef70268f",
+      "note_hash": "d9bfa35ec48f18f32470d51f3f920e1f173eef4f2461f34846652729196bb485",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1397 |
+| Applied audit verdicts | 1398 |
 | Retained-grade rows, including boxed decorations | 1371 |
 | Retained positive theorems | 212 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 909 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 14 |
-| Unaudited rows | 1657 |
+| Unaudited rows | 1656 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 8 |
-| Audited renaming rows | 2 |
+| Audited renaming rows | 3 |
 | Audited numerical-match rows | 4 |
 | Citation cycles detected | 7 |
 
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1662 |
-| Ready rows | 164 |
+| Total pending rows | 1661 |
+| Ready rows | 163 |
 | Cycle-break targets | 7 |
-| Critical pending | 331 |
+| Critical pending | 330 |
 | High pending | 289 |
 | Medium pending | 473 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md) - critical; unaudited
 - [`wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`](../../docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) - critical; audit_in_progress
 - [`g_bare_constraint_vs_convention_theorem_note_2026-05-03`](../../docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) - critical; unaudited
 - [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) - critical; unaudited
+- [`cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26`](../../docs/CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -1,14 +1,14 @@
 # Causal Impact-Parameter Note
 
 **Date:** 2026-04-06  
-**Status:** bounded causal-field impact-parameter probe on the proposed_retained center grown family
+**Status:** bounded causal-field impact-parameter probe on the retained center grown family
 
 ## Artifact Chain
 
 - [`scripts/causal_impact_parameter_probe.py`](../scripts/causal_impact_parameter_probe.py)
 - [`logs/2026-04-06-causal-impact-parameter-probe.txt`](../logs/2026-04-06-causal-impact-parameter-probe.txt)
 - causal-field context:
-  - [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
+  - [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
   - [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](../docs/CAUSAL_FIELD_PORTABILITY_NOTE.md)
   - [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
 

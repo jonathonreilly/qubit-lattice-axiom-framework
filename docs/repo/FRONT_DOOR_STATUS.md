@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1507 |
-| Retained-grade rows, including boxed decorations | 1433 |
+| Applied audit verdicts | 1508 |
+| Retained-grade rows, including boxed decorations | 1434 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 214 |
-| Retained bounded rows | 953 |
+| Retained bounded rows | 954 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 22 |
-| Unaudited rows | 1550 |
+| Unaudited rows | 1549 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 26 |
 | Audited renaming rows | 16 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1552 |
-| Ready rows | 125 |
+| Total pending rows | 1551 |
+| Ready rows | 124 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
 | Medium pending | 414 |
-| Leaf pending | 567 |
+| Leaf pending | 566 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07`](../../docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`teleportation_bell_measurement_circuit_note`](../../docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md) - medium; unaudited
 - [`teleportation_taste_readout_operator_model_note`](../../docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md) - medium; unaudited
 - [`universal_gr_polarization_frame_bundle_attempt`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md) - medium; unaudited
 - [`chiral_split_mass_gravity_note`](../../docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md) - medium; unaudited
-- [`gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07`](../../docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
+- [`teleportation_finite_gapped_preparation_path_support_note_2026-06-16`](../../docs/TELEPORTATION_FINITE_GAPPED_PREPARATION_PATH_SUPPORT_NOTE_2026-06-16.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -89,10 +89,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1640 descendants; score 144.680
-- `three_generation_observable_theorem_note` - critical; 1048 descendants; score 65.535
+- `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
 - `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
-- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 49.006
-- `key_terminology` - critical; 1119 descendants; score 46.629
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 922 descendants; score 44.350
+- `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
+- `key_terminology` - critical; 1118 descendants; score 46.628
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

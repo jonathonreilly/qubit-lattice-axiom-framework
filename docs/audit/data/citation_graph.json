@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_c3_oriented_ward_splitter_support_note_2026-04-28"
+      "to": "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11"
     },
     {
       "from": "repo.front_door_status",
@@ -52258,7 +52258,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11"
+      "to": "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "quark_c3_oriented_ward_splitter_support_note_2026-04-28",
+        "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11",
         "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
         "teleportation_bell_measurement_circuit_note",
         "teleportation_taste_readout_operator_model_note",
         "universal_gr_polarization_frame_bundle_attempt",
         "chiral_split_mass_gravity_note",
-        "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11"
+        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a66f4e6c8c67229113f7839b1014ad453f807fbcbeb3ab99bb7a1628156d55a8",
+      "note_hash": "5c313c57ac36e06f150728e2f5d43b6b9ecb1ca7dd4bbf606e0ff3f07d1ce83c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

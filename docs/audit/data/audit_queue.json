@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 326,
+    "critical": 325,
     "high": 289,
     "leaf": 569,
     "medium": 473
@@ -121,34 +121,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_from_axiom_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
-      ],
-      "direct_in_degree": 99,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 59.296,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
-      "transitive_descendants": 888
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -49429,6 +49401,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 162,
-  "total_pending": 1657
+  "ready_count": 161,
+  "total_pending": 1656
 }

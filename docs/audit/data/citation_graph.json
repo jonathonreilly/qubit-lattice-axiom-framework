@@ -52230,7 +52230,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+      "to": "observable_principle_from_axiom_note"
     },
     {
       "from": "repo.front_door_status",
@@ -100629,7 +100629,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
+        "observable_principle_from_axiom_note",
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
         "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
@@ -100639,7 +100639,7 @@
         "finite_rank_gravity_residual_helper_note_2026-04-14"
       ],
       "helper_runner_paths": [],
-      "note_hash": "16a59d9e9bbb795217399d4ba39a013337984b4e108ebbece74abbf3c7c53f5f",
+      "note_hash": "c6edc500d76f3501fd8c8b87cef1ce1d4c95345e53afeaf23f51e92169821ac7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

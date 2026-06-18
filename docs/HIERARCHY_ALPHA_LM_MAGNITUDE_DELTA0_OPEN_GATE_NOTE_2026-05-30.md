@@ -143,6 +143,14 @@ executes the declared K1-K8 candidate-readout enumeration and finds no
 non-definitional candidate readout carrying the required factor.  The
 two exact match-window cells in that enumeration are the supplier-chain
 identity itself, not a mechanism.
+`HIERARCHY_DELTA0_B4_CURRENT_BANK_ALPHA_ATTACHMENT_NO_GO_NOTE_2026-06-18.md`
+(context handle, not a citation-graph dependency) sharpens the same
+negative boundary as a current-bank alpha-attachment no-go: products,
+quotients, and integer powers of the K1-K8 genuine readout rows keep
+alpha exponent zero, while the alpha-bearing rows are supplier-chain
+identities with no readout mechanism.  This prunes reuse of the current
+bank as the missing attachment theorem and leaves outside-K1-K8
+readouts and non-perturbative route families open.
 
 The repair attempt therefore lands as a named-gap statement, not as a
 closure and not as a global no-go:

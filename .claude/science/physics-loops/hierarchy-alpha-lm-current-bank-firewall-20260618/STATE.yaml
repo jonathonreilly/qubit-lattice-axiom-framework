@@ -1,0 +1,21 @@
+loop_slug: hierarchy-alpha-lm-current-bank-firewall-20260618
+goal: "Unlock the hierarchy alpha_LM audited-conditional blocker without auditing or retagging."
+target_claim_id: hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: current_bank_alpha_attachment_no_go
+hard_residual: "missing retained attachment-observable theorem supplying alpha_s per taste decoupling"
+files_touched:
+  - docs/HIERARCHY_DELTA0_B4_CURRENT_BANK_ALPHA_ATTACHMENT_NO_GO_NOTE_2026-06-18.md
+  - docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md
+  - scripts/frontier_hierarchy_delta0_b4_current_bank_alpha_attachment_no_go_2026_06_18.py
+open_imports:
+  - "Positive outside-K1-K8 attachment-observable theorem remains open."
+no_go_routes:
+  - "Current K1-K8 genuine readout bank cannot supply alpha_s because genuine readouts have alpha exponent zero."
+review_loop_disposition: not_run_user_delegated_to_reviewer
+pr_status: pending_at_checkpoint
+next_exact_action: "Run verification, commit, push, and open a source-side review PR."
+stop_condition: "Coherent source-side no-go block packaged for reviewer; broader audit-unlock goal remains active."

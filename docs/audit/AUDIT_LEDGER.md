@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 970 |
+| **retained_bounded** | 971 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1498 |
+| unaudited | 1497 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1408 |
+| `audited_clean` | 1409 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1820 |
+| `unaudited` | 1819 |
 
 | claim_type | count |
 |---|---:|
@@ -316,6 +316,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4367,6 +4368,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The strict prefix-sum operator satisfies the Rota-Baxter identity of weight +1: P(a)P(b)=P(P(a)b+aP(b)+ab).  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, the packet verifies the Rota-Baxter identity, non-idempotence, B4 combinatorics, and the tautological first-slot readout. The note explicitly excludes framework-native characters, staggered taste-blocking bridges, and derivation of alpha_LM^16, so those missing bridges do not block this scoped claim.
 - **rationale:** The scoped theorem is external algebra plus an explicit boundary statement, and the dependency is provided as retained. The runner's alpha_LM^16 check is hard-coded, but the note labels that as an imported character value and not a derivation, so it supports the boundary rather than inflating the claim.
+- **auditor confidence:** high
+
+### `continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12`
+
+- **Note:** [`CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md`](../../docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the standard-form localization evaluation on C3[111] weights and the supplied C3-circulant chiral mass-family scan showing no delta selection on this tested surface; not an R-eta derivation, refutation, or universal no-go.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Evaluating the standard Lefschetz/cotangent localization formulas on the retained C3[111] transverse weights (1,2) gives 2/9, and those formulas have no a, B, delta, or operator-coupling input.  _(class `A`)_
+- **chain closes:** True — Given the retained fixed-locus weights and the note's explicitly supplied standard localization formulas, the exact arithmetic closes to 2/9 and the formula-level delta firewall follows. The runner source also performs a finite matrix scan for the tested chiral circulant family, with spectral flow 0 and flat eta in that bounded setup.
+- **rationale:** The load-bearing step is an algebraic evaluation over retained-grade inputs, not a fitted numerical match or symbol renaming. The runner source genuinely computes the localization expressions and the finite tested-family scan, and no helper imports are missing. The cited retained_bounded authorities are used only within their closed weight/Kahler-Dirac scope; their separately declared exclusions are not consumed by this bounded claim.
 - **auditor confidence:** high
 
 ### `continuum_limit_note`

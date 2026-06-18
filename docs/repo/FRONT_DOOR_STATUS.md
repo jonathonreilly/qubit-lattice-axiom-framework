@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1559 |
-| Retained-grade rows, including boxed decorations | 1457 |
+| Applied audit verdicts | 1560 |
+| Retained-grade rows, including boxed decorations | 1458 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 970 |
+| Retained bounded rows | 971 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 30 |
-| Unaudited rows | 1498 |
+| Unaudited rows | 1497 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 42 |
 | Audited renaming rows | 18 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1500 |
-| Ready rows | 84 |
+| Total pending rows | 1499 |
+| Ready rows | 83 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 515 |
+| Leaf pending | 514 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12`](../../docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12`](../../docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`d3_native_stable_orbit_upper_bound_composition_note_2026-06-09`](../../docs/D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md) - medium; unaudited
 - [`d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13`](../../docs/D3_ORBITAL_RESPONSE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13`](../../docs/D3_STAGGERED_TWO_BAND_ORBITAL_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
+- [`depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13`](../../docs/DEPTH_BRANCH_CORRECTED_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13`](../../docs/DEPTH_BRANCH_CORRECTED_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md) - leaf; unaudited
+- [`depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12`](../../docs/DEPTH_LAURENT_ROOT_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

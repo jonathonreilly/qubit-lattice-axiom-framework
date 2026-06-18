@@ -6,6 +6,7 @@ target_runner: scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py
 core_runner: scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py
 base: origin/main@8e3a68da1
 branch: codex/yt-neutral-carrier-algebra-core-20260618
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4387
 actual_current_surface_status: bounded-support
 trace_class: upstream_support
 reachability_to_target: supports
@@ -21,4 +22,4 @@ verification:
   - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py -> status ok"
   - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py -> status ok"
 review_loop: delegated_to_codex_reviewer
-next_exact_action: open source-side PR; reviewer/auditor may re-audit the algebra-core split and parent bridge boundary
+next_exact_action: reviewer may run review-loop/landing cleanup; independent audit may re-audit the algebra-core split and parent bridge boundary

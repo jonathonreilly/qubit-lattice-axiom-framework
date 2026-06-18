@@ -1,6 +1,7 @@
 # Handoff
 
 Branch: `codex/yt-neutral-carrier-algebra-core-20260618`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4387
 
 This source-side repair targets `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`.
 It splits the finite algebra that audit said closes from the physical
@@ -22,3 +23,7 @@ Verification:
 Forbidden-surface expectation: no audit ledger, queue, publication, repo
 status, lane registry, or active review queue files should be changed by this
 branch.
+
+Next action: reviewer may run review-loop and landing cleanup. If accepted,
+independent audit can decide whether the parent row is now cleanly bounded to
+the algebra support layer.

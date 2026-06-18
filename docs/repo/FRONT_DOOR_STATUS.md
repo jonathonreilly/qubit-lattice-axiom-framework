@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1426 |
-| Retained-grade rows, including boxed decorations | 1388 |
+| Applied audit verdicts | 1427 |
+| Retained-grade rows, including boxed decorations | 1389 |
 | Retained positive theorems | 214 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 919 |
+| Retained bounded rows | 920 |
 | Boxed decorations under retained parents | 48 |
 | Open gates | 14 |
-| Unaudited rows | 1631 |
+| Unaudited rows | 1630 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 13 |
 | Audited renaming rows | 6 |
@@ -33,19 +33,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1633 |
+| Total pending rows | 1632 |
 | Ready rows | 161 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
-| High pending | 286 |
+| High pending | 285 |
 | Medium pending | 474 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - high; unaudited
 - [`source_resolved_exact_green_pocket_note`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md) - high; unaudited
+- [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
 - [`record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 - [`action_normalization_note`](../../docs/ACTION_NORMALIZATION_NOTE.md) - high; unaudited
 - [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited

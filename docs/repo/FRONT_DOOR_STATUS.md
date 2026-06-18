@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1643 |
-| Retained-grade rows, including boxed decorations | 1500 |
+| Applied audit verdicts | 1644 |
+| Retained-grade rows, including boxed decorations | 1501 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 218 |
 | Retained bounded rows | 1003 |
-| Boxed decorations under retained parents | 59 |
+| Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1414 |
+| Unaudited rows | 1413 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 61 |
 | Audited renaming rows | 30 |
@@ -33,17 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1416 |
-| Ready rows | 1 |
+| Total pending rows | 1415 |
+| Ready rows | 2 |
 | Cycle-break targets | 7 |
-| Critical pending | 303 |
+| Critical pending | 302 |
 | High pending | 267 |
 | Medium pending | 407 |
 | Leaf pending | 439 |
 
 Next ready rows by queue order:
 
-- [`cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_BARYON_QQQ_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05`](../../docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
+- [`interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05`](../../docs/INTERACTING_RP_FULL_ALGEBRA_FIXED_A_GAUGE_INVARIANT_FOUR_FERMION_BOUNDED_NOTE_2026-06-05.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

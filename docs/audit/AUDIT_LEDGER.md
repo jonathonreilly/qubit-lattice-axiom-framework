@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 220 |
-| **retained_no_go** | 217 |
+| **retained_no_go** | 218 |
 | **retained_bounded** | 998 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1431 |
+| unaudited | 1430 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 27 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1446 |
+| `audited_clean` | 1447 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1753 |
+| `unaudited` | 1752 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 892 |
-| `leaf` | 1420 |
+| `medium` | 891 |
+| `leaf` | 1421 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1276,6 +1276,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
 | `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `site_phase_cube_shift_intertwiner_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -18772,6 +18773,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Packaging the four admitted inputs together gives the phrase "a finite Hilbert space with local tensor product structure"; the runner then evaluates the four consequences under that package.  _(class `E`)_
 - **chain closes:** True — The narrowed operational chain closes after the four inputs are stipulated: the code builds those structures and performs mechanical checks. It does not close as a first-principles derivation of those structures from bare tensor-product Hilbert space.
 - **rationale:** Issue: the runner constructs local Hamiltonians, Born probabilities, and support extraction, then repackages those stipulated structures as the single local tensor-product Hilbert-space surface. Why this blocks: none of the cited authorities or code derives the local Hermitian H, locality restriction, Born p=2 readout, or support-equals-edges rule from the bare tensor-product Hilbert space. Repair target: derive those inputs from a strictly smaller retained framework surface and repair the Test 4 source/runner drift. Claim boundary until fixed: the note supports only the definitional-compression/bounded operational consequences under the admitted package.
+- **auditor confidence:** high
+
+### `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16`
+
+- **Note:** [`SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md`](../../docs/SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md)
+- **claim_type:** `no_go`
+- **claim_scope:** KMS/APBC is audited only as a pre-B-AXIS axis supplier: on the finite staggered block and cyclic-shift checks, APBC is axis-covariant after a circle is supplied and does not itself provide the per-axis boundary-condition asymmetry.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the exchange W, APBC on the supplied tau circle transports exactly to APBC on the supplied x1 circle, so APBC decorates whichever circle was already supplied rather than selecting the axis.  _(class `A`)_
+- **chain closes:** True — The runner constructs W and the finite staggered hop matrices and verifies the APBC transport and symmetry-breaking claims directly. The retained no-go scope supplies the B-AXIS residual, and the retained bounded Berezin note supports only the algebra-after-generators point, so the narrow route-pruning conclusion follows.
+- **rationale:** The load-bearing content is an algebraic finite-matrix covariance check, not a tuned numerical match or a definition substitution. The runner source actually constructs the exchange operator, staggered hop matrices, rank witnesses, and cyclic shifts; it does not merely print the PASS summary. The no-go is scoped narrowly to KMS/APBC as an axis supplier before the axis is supplied, and its N1-N8 discipline explicitly leaves future independently derived BC-asymmetry bridges open.
 - **auditor confidence:** high
 
 ### `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`

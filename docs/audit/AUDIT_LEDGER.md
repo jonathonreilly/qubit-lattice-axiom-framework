@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 215 |
 | **retained_no_go** | 209 |
-| **retained_bounded** | 929 |
+| **retained_bounded** | 930 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1606 |
+| unaudited | 1605 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 10 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1343 |
+| `audited_clean` | 1344 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1928 |
+| `unaudited` | 1927 |
 
 | claim_type | count |
 |---|---:|
@@ -123,7 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -566,6 +566,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_bridge_support_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7697,6 +7698,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the declared finite packet, the Schur/Peter-Weyl convolution authorities supply the inverse-dimension shared-link contraction, and the retained finite tensor-word packet supplies only the trivial-channel unit boundary vector. The runner/helper chain computes the two- and three-word finite Perron readouts from those finite operators; broader full-rim and untruncated claims are explicitly out of scope.
 - **rationale:** The bounded derivation closes as algebra over retained-grade inputs: equation (5) supplies the matrix-element bond, while boundary0 in the finite packet rules out treating the other word slots as an all-label marginal on this cited surface. The runner source is not a print-only certificate: it constructs the finite multiword operator through the provided helper code and verifies residuals, positivity, readout values, comparator isolation, and the measured two/three-word stationarity guard. The clean verdict is only for the finite-packet negative and derived re-read; it does not ratify any full physical 3D rim-boundary theorem or canonical plaquette closure.
 - **auditor confidence:** medium
+
+### `gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Purely formal finite-dimensional algebra lemma for arbitrary abstract operators (S, eta, ell_W), with beta=6 Wilson/Haar identification and closed-form matrix evaluation excluded from the audited scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For arbitrary finite-dimensional H with abstract S, eta, and ell_W, define z_(p,q)=<chi_(p,q),S^(L_perp-1)eta>, v=sum z_(p,q) chi_(p,q), Z(W)=ell_W(v)=<k(W),v>, and rho_(p,q)=z_(p,q)/z_(0,0) only when z_(0,0) != 0.  _(class `A`)_
+- **chain closes:** True — Within the declared formal scope, the conclusion follows by elementary linear algebra: the z values are the coordinates of the propagated vector in the orthonormal class basis, ell_W is represented by k(W) by finite-dimensional Riesz representation, and rho is only a nonzero-denominator ratio. The four Wilson/Haar bridge identities remain explicitly out of scope and are not needed for this formal lemma.
+- **rationale:** The 2026-05-28 narrowing makes the audited claim an abstract finite-dimensional algebra statement, not a beta=6 physical Wilson/Haar reduction. The load-bearing step is class A and closes from the stated abstract hypotheses without importing the unsupplied physical bridge authorities. The runner provides finite algebra/witness checks and cross-note support-string checks, but it does not and need not derive the excluded Wilson/Haar identities for the formal lemma to close.
+- **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_beta6_scalar_value_insufficiency_note_2026-04-17`
 

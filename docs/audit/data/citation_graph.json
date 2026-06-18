@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_ew_m_residual_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16",
         "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
-        "yt_ew_m_residual_note_2026-05-02"
+        "yt_ew_m_residual_note_2026-05-02",
+        "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3036f48343a00b8fdb709c512508d945054d59c6556d990f040e5b63cdb9f06b",
+      "note_hash": "0325ba803d91f9deef997d476e338d6a1e300cfafab09fc6b13225516a5d7816",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -52234,15 +52234,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "complex_selectivity_predictor_note"
     },
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
@@ -52258,7 +52258,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
+      "to": "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "staggered_scalar_mass_class_bounded_premise_bridge_note_2026-06-03",
         "complex_selectivity_predictor_note",
         "hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16",
+        "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "distance_law_definitive_note",
-        "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
+        "strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f968fa3296b64f1d919bfbeb42636a39bbcf032d165a2cc39619b07044c17446",
+      "note_hash": "2a40ab337f709f60e69eb003e1abecc882b27b999efb2d2d88195a4537a26393",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

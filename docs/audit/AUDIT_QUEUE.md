@@ -15,14 +15,14 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16` | bounded_theorem | unaudited | critical | 670 | 11.39 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_laplacian_shell_localization_2026_06_16.py` |
+| 1 | `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16` | bounded_theorem | audit_in_progress | critical | 670 | 11.39 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_laplacian_shell_localization_2026_06_16.py` |
 | 2 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | unaudited | critical | 665 | 14.38 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_universal_gr_polarization_frame_bundle.py` |
 | 3 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | critical | 653 | 10.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_finite_rank_gravity_residual.py` |
 | 4 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | unaudited | critical | 497 | 13.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py` |
 | 5 | `axiom_first_kms_condition_theorem_note_2026-05-01` | positive_theorem | unaudited | critical | 373 | 13.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_kms_condition_check.py` |
 | 6 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 352 | 17.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/su3_casimir_fundamental_check.py` |
 | 7 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | unaudited | critical | 321 | 13.83 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
-| 8 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | unaudited | critical | 307 | 10.27 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_quark_antiquark_color_singlet_check.py` |
+| 8 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | unaudited | critical | 308 | 10.77 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_quark_antiquark_color_singlet_check.py` |
 | 9 | `poisson_exhaustive_uniqueness_note` | bounded_theorem | unaudited | critical | 291 | 13.69 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_poisson_exhaustive_uniqueness.py` |
 | 10 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | unaudited | critical | 260 | 17.03 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
 | 11 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | unaudited | critical | 250 | 12.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_effective_potential_endpoint.py` |

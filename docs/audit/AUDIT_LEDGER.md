@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 919 |
+| **retained_bounded** | 920 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1631 |
+| unaudited | 1630 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 6 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1329 |
+| `audited_clean` | 1330 |
 | `audited_conditional` | 13 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
 | `audited_renaming` | 6 |
-| `unaudited` | 1953 |
+| `unaudited` | 1952 |
 
 | claim_type | count |
 |---|---:|
@@ -454,6 +454,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_not_derived_two_inputs_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_chirality_gate_narrows_to_one_spin_statistics_import_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6106,6 +6107,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If a physical charge U(1) acts as a scalar on the generation triplet, it commutes with C and cannot orient the generation doublet or select the det_C reading.  _(class `A`)_
 - **chain closes:** True — The scalar action is central, so [iI,C]=0 and it supplies no orientation of the generation doublet. Independently, (exp(i alpha)C)^3=exp(3i alpha)I, so order three allows only alpha=0,2pi/3,4pi/3 modulo 2pi.
 - **rationale:** The load-bearing route-pruning statement is a direct algebraic identity about scalar matrices and the C3 order condition, not a definition substitution or numerical fit. The runner source actually computes the spectral endpoint, commutator, and order-three rephasing obstruction, while the charged-sector and neutrino values are correctly bounded as empirical comparators rather than promoted to selectors. The packet explicitly does not claim that physical Standard Model gauge U(1) actions are generation-scalar or that a physical det_C/det_R selector has been derived.
+- **auditor confidence:** high
+
+### `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`
+
+- **Note:** [`FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite periodic 2 x 2 x 2 translation/BZ carrier statement for position-diagonal local readouts on the supplied hw=1 three-corner sector.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For any diagonal position observable O = diag(w_n), <psi_k, O psi_k> = (1/8) sum_n w_n, so position-diagonal local observables cannot separate the hw=1 character labels, while P_k separates momentum labels.  _(class `A`)_
+- **chain closes:** True — The restricted claim closes as finite translation-group algebra: the character vectors have uniform position probabilities, so every diagonal position observable has the same expectation on the hw=1 states, and rank-one momentum projectors give Kronecker separation. The open physical-generation-locus bridge to hw=1 is explicitly outside the audited scope and is not used.
+- **rationale:** The runner genuinely constructs the periodic 2 x 2 x 2 translation matrices, Z2^3 character basis, projectors, hw=1 orbit, and diagonal-observable expectations rather than printing constants or importing the contested premise. The load-bearing equality follows directly from the constant-magnitude character vectors, and the momentum-projector separation follows from orthonormality. The note does not claim the physical generation locus is forced to be hw=1, so the named parent bridge is a scoped boundary rather than an open dependency for this bounded theorem.
 - **auditor confidence:** high
 
 ### `flavor_carrier_not_derived_two_inputs_2026-05-31`

@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_mru_demotion_note_2026-04-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "restricted_strong_field_closure_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "teleportation_native_axioms_theory_note"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "koide_mru_demotion_note_2026-04-20",
         "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
         "source_resolved_exact_green_pocket_note",
         "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
         "action_normalization_note",
         "single_axiom_hilbert_note",
-        "restricted_strong_field_closure_note"
+        "restricted_strong_field_closure_note",
+        "teleportation_native_axioms_theory_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b694939a84b883d01845a615056f748a39a7d0c7b774179d13e2e1f5ac1febf9",
+      "note_hash": "5dbf7b42fea440ee2beeaca13a96a355a98c0f4a9d807e724da14b79b5b1e27a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

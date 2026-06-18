@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1442 |
-| Retained-grade rows, including boxed decorations | 1395 |
+| Applied audit verdicts | 1443 |
+| Retained-grade rows, including boxed decorations | 1396 |
 | Retained positive theorems | 215 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 924 |
+| Retained bounded rows | 925 |
 | Boxed decorations under retained parents | 48 |
 | Open gates | 15 |
-| Unaudited rows | 1615 |
+| Unaudited rows | 1614 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 17 |
 | Audited renaming rows | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1617 |
+| Total pending rows | 1616 |
 | Ready rows | 158 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 271 |
-| Medium pending | 473 |
+| Medium pending | 472 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`grown_transfer_basin_targeted_repair_note_2026-06-04`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md) - medium; unaudited
 - [`causal_field_reconciliation_note`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md) - medium; unaudited
+- [`grown_transfer_basin_note`](../../docs/GROWN_TRANSFER_BASIN_NOTE.md) - medium; unaudited
 - [`flavor_readout_gate_equals_carrier_identification_2026-05-31`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md) - medium; unaudited
 - [`koide_q_dred_normalization_freedom_no_go_note_2026-06-15`](../../docs/KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
+- [`record_formation_to_kraus_isometry_bridge_2026-06-06`](../../docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md) - medium; unaudited
 - [`dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md) - medium; unaudited
-- [`record_formation_to_kraus_isometry_bridge_2026-06-06`](../../docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -87,10 +87,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1640 descendants; score 144.680
-- `three_generation_observable_theorem_note` - critical; 1048 descendants; score 65.535
+- `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
 - `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
 - `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
-- `key_terminology` - critical; 1118 descendants; score 46.628
+- `key_terminology` - critical; 1119 descendants; score 46.629
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

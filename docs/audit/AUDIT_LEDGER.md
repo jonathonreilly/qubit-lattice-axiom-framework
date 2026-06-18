@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 215 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 924 |
+| **retained_bounded** | 925 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1615 |
+| unaudited | 1614 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 9 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1337 |
+| `audited_clean` | 1338 |
 | `audited_conditional` | 17 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1937 |
+| `unaudited` | 1936 |
 
 | claim_type | count |
 |---|---:|
@@ -100,12 +100,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1048 | 65.53 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
@@ -649,6 +649,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `growing_graph_expansion_skeptic_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `growing_graph_frontier_expansion_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `growing_graph_static_control_audit_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `grown_transfer_basin_targeted_repair_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `grown_wavefield_companion_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `guard_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8808,6 +8809,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The review-safe conclusion is to promote the frontier-delay proxy only and keep dynamic propagation as a static-control failure, not as a transport or cosmology statement.  _(class `C`)_
 - **chain closes:** True — The live runner recomputes the growing-frontier graph distances from the seed graph, reproduces the 3.000 -> 22.000 frontier-delay increase and positive slopes, and separately recomputes the weak, non-monotone visibility-drop table against a static graph control. The source note keeps the conclusion inside that computed graph-distance/static-control boundary.
 - **rationale:** The load-bearing computation is current with the live runner: frontier delay grows from 3.000 to 22.000 with frontier/RMS/width slopes +0.9325, +0.5981, and +0.2129, while the dynamic-propagation visibility drops are small and non-monotone across n_layers = 10, 15, 20. The runner constructs these quantities from graph snapshots, generated DAGs, propagation amplitudes, and frozen controls rather than hard-coding the contested conclusion. The source note's final claim is exactly the bounded safe read supported by the computation: retain graph-distance expansion and freeze dynamic-propagation repair as a no-go, with no transport, cosmology, unitarity, or field-theory extension.
+- **auditor confidence:** high
+
+### `grown_transfer_basin_targeted_repair_note_2026-06-04`
+
+- **Note:** [`GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md`](../../docs/GROWN_TRANSFER_BASIN_TARGETED_REPAIR_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite grown-transfer basin packet at H=0.5, K=5.0, BETA=0.8, NL=25, PW=10, seeds 0-2, requiring signed-source and complex-action predicates on the same declared rows.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-grown_transfer_basin_targeted_repair_note_2026-06-04-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The row values are recomputed by _score_row(drift, restore), which builds the grown geometry through gate_b_grown_joint_package.grow(), propagates the signed-source and complex-action amplitudes, and applies the shared row predicates.  _(class `C`)_
+- **chain closes:** True — Within the finite scope, the runner chain constructs grown geometries, computes the signed-source and complex-action observables, and applies the predicates rather than importing row constants. The completed caches show the 3x3 sweep and four-row targeted subset surviving on the same rows, with no broader graph-ladder or geometry-generic claim needed.
+- **rationale:** The primary runner calls the sweep implementation, and the sweep calls the grown-geometry helper on the load-bearing path; the code computes amplitudes and predicates rather than printing the contested result. The sweep cache reports same-row survivors 9/9 and the targeted cache reports 4/4, both at PW=10 with the repaired gamma=0.5 away-sign criterion. The hard-coded EXPECTED_REPLAY table in the Gate B helper is not on the basin runner's load-bearing path; only grow() is imported for this claim. The only cited authority is retained_bounded and the note's scope is explicitly finite, so the bounded conclusion closes without importing an open broader transfer theorem.
 - **auditor confidence:** high
 
 ### `grown_wavefield_companion_note`

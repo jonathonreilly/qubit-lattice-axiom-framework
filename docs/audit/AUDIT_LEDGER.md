@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1477 |
+| unaudited | 1476 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1420 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1799 |
+| `unaudited` | 1798 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 900 |
-| `leaf` | 1412 |
+| `medium` | 898 |
+| `leaf` | 1414 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1583,6 +1583,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gate_b_dynamics_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -8079,6 +8080,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the bounded replay, the runner constructs the graph families, propagates amplitudes under the explicit S = L(1-f) rule, normalizes detector probabilities, and computes the table entries rather than printing constants. The conclusion closes only for the finite parameter and architecture suite shown, not as a Gate B dynamics theorem.
 - **rationale:** The runner source implements the load-bearing computation directly from the stated finite setup: positions, connectivity, field, barrier, propagation, detector probabilities, mass-window gain, and local scaling fit. The source note's tables match the completed runner output, and no helper runner or cited authority is missing from the load-bearing numerical path. The note also keeps the scope bounded by explicitly denying Gate B closure and universal F~M constants.
 - **auditor confidence:** medium
+
+### `gate_b_dynamics_note`
+
+- **Note:** [`GATE_B_DYNAMICS_NOTE.md`](../../docs/GATE_B_DYNAMICS_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the note as an open-gate source index over the supplied Gate B runner packet and cached connectivity-tolerance replay, not as a Gate B dynamics or physical-gravity theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-gate_b_dynamics_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing claim is only conditional on I_GateB: the named frozen runners compute sign, local F~M, distance-law, and non-gravity companion readouts for the declared rows, without promoting I_GateB to a retained theorem or premise.  _(class `C`)_
+- **chain closes:** False — The finite runner computation closes only inside the supplied I_GateB packet. The missing steps are derivations or explicit admissions of GB-S1b scalar normalization/regulator, GB-S2 propagation/readout semantics, and GB-S3 generated-connectivity rule from retained primitives.
+- **rationale:** Issue: The note explicitly conditions the Gate B result on I_GateB, and the cited weak-field authority repairs only GB-S1a while GB-S1b, GB-S2, and GB-S3 remain runner-supplied. Why this blocks: The primary runner genuinely computes the connectivity-tolerance numbers from its supplied graph/source/readout packet, but it does not derive that packet from retained primitives. Repair target: derive or explicitly admit the remaining source normalization, propagation/readout, and generated-connectivity bridges. Claim boundary until fixed: the row is a bounded open-gate source index, not a closed Gate B dynamics theorem.
+- **auditor confidence:** high
 
 ### `gate_b_farfield_bounded_conditional_separator_narrow_theorem_note_2026-05-17`
 

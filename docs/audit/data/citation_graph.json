@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gate_b_dynamics_note"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17"
+      "to": "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17",
         "gate_b_dynamics_note",
         "gate_b_operator_cauchy_note_2026-05-10",
         "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03",
         "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
+        "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17"
+        "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4cfbd77706ef7a541bea52ebeae24d4c4ab26986b66f838098b7cf2ef5d62dfd",
+      "note_hash": "116889ed3fde69c4af54992c6db6fe627fd4bd9c1c0aa46a2e29f2acb437c5e8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

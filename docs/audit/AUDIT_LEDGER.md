@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 214 |
 | **retained_bounded** | 957 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 24 |
-| unaudited | 1541 |
+| open_gate | 25 |
+| unaudited | 1540 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1387 |
+| `audited_clean` | 1388 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1863 |
+| `unaudited` | 1862 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 891 |
-| `leaf` | 1423 |
+| `medium` | 892 |
+| `leaf` | 1422 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -101,7 +101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1639 | 144.68 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
@@ -259,6 +259,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_3plus1d_mixing_period_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `chsh_structural_bound_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -3414,6 +3415,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At n=15, theta0=0.3, strength 5e-4, mass offset +3, and periodic boundary conditions, the frozen runner observes both positive and negative shell-difference gravity-proxy signs across N = 12, 14, 16, 18, 20.  _(class `C`)_
 - **chain closes:** True — The provided runner source computes unperturbed and perturbed evolutions, forms rho1-rho0, sums toward and away shells, and verifies that the resulting signals include both signs. The cached run matches the note's stated finite operating slice.
 - **rationale:** The load-bearing claim is a bounded first-principles numerical computation over the stated chiral-walk update rule, not a definition, renaming, or tuned external comparator. The runner does not hard-code the asserted per-N signs; it computes them from evolve/probability_density and checks sign diversity across the N sweep. The note explicitly limits the mechanism hypothesis and universal-gravity implication, so the audited conclusion is only the finite sign-noninvariance diagnostic.
+- **auditor confidence:** high
+
+### `chiral_split_mass_gravity_note`
+
+- **Note:** [`CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md`](../../docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Exploratory fixed-theta g-linearity diagnostic in the specified 1D local-unitary chiral-walk toy harness; theta_m flattening, k-achromaticity, EP closure, and framework mass-gravity claims are outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-chiral_split_mass_gravity_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At theta_m = 0.30, k0 = 0.60, strength = 5e-4, sweeping g from 0.0 to 0.5 gives a split centroid-shift response linear in g with R^2 approximately 1.0000.  _(class `C`)_
+- **chain closes:** True — The runner actually constructs the packet, scalar field, local coin/shift evolution, centroid deflection, and line fit across the g sweep; it is not merely printing constants or importing the contested result. The cached stdout matches the source note's narrowed claim and its negative theta/k boundary.
+- **rationale:** Within the narrowed toy-harness scope, the load-bearing g-linearity step closes from the supplied runner computation. The runner source computes the finite 1D chiral walk and least-squares fit directly, while the source note explicitly withdraws theta_m flattening, k-achromaticity, overload-bottleneck, EP, and physical mass-gravity claims. No cited dependency, external calibrated comparator, or hidden framework bridge is needed for this bounded open-gate diagnostic.
 - **auditor confidence:** high
 
 ### `chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08`

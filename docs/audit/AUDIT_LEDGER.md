@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1475 |
+| unaudited | 1474 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 18 |
+| ~~audited_renaming~~ | 19 |
 | ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -69,8 +69,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 18 |
-| `unaudited` | 1797 |
+| `audited_renaming` | 19 |
+| `unaudited` | 1796 |
 
 | claim_type | count |
 |---|---:|
@@ -1704,6 +1704,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -8580,6 +8581,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Every accepted source reduces exactly to K_O(omega) = 3w (3 + sin^2 omega), so the normalization cancels and A_O(inf) / A_O(2) = 2 / sqrt(3).  _(class `A`)_
 - **chain closes:** True — Within the stated Wilson nearest-neighbor source grammar, the six plaquette orientations induce equal directional weights and the minimal APBC spatial cube gives three unit spatial gaps, yielding K_O(omega) = 3w(3 + sin^2 omega). The endpoint ratio then follows algebraically from the Lt=2 sum and the standard infinite-time trigonometric average; no downstream plaquette-observable closure is claimed.
 - **rationale:** The audited claim is narrow: universality only inside the accepted Wilson nearest-neighbor scalar gauge-source grammar, excluding anisotropic terms, site terms, unrelated source classes, and the interacting plaquette expectation. The load-bearing step is a combinatorial/algebraic reduction of that scoped grammar, not a definition substitution or external numerical match. The runner checks the Wilson orientation count, induced directional equality, minimal-cube kernel reduction, normalization independence, and sensitivity to forbidden deformations; it uses no external comparators.
+- **auditor confidence:** high
+
+### `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03`
+
+- **Note:** [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03.md`](../../docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_IMPLICIT_FLOW_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-volume implicit response-coordinate identity and susceptibility-flow law under the stated monotonicity and in-range premises; not an evaluated beta=6 plaquette or independent parent bridge derivation.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** beta_eff,Lambda(beta) := R_O^(-1)(P_Lambda(beta)); substituting the definition gives P_Lambda(beta) = R_O(beta_eff,Lambda(beta)).  _(class `E`)_
+- **chain closes:** True — The formal coordinate identity closes because beta_eff is defined as the inverse response coordinate of P_Lambda, and the note gives premises intended to make that inverse well posed. This is tautological coordinate closure, not an independent derivation of <P>_full or beta_eff(6).
+- **rationale:** Issue: The proof's load-bearing move is the definition beta_eff := R_O^(-1)(P_Lambda(beta)); the displayed bridge then follows by substitution. Why this blocks: this establishes a response coordinate once P_Lambda is already known, but it does not independently derive the full plaquette or completed coupling from retained primitives. Repair target: derive P_Lambda(beta) or beta_eff(beta) without using the inverse-definition as input. Claim boundary until fixed: a valid implicit-coordinate restatement with stated existence premises, not a retained observable-bridge derivation.
 - **auditor confidence:** high
 
 ### `gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03`

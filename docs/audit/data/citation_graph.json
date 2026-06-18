@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gate_b_operator_cauchy_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12"
+      "to": "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gate_b_operator_cauchy_note_2026-05-10",
         "gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03",
         "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
         "gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_note_2026-04-17",
         "gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10",
+        "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12"
+        "gauge_vacuum_plaquette_symmetrized_window_displacement_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f8b9718dc86a80efab108922d1c98afcf7ee7293597289ef6882cf1e8d7b56ab",
+      "note_hash": "7239d1b07de8ddc4afff574079c8d4406e56c7a007c09bf4cbcd17a60fa4a3ed",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

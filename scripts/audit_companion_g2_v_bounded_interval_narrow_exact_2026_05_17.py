@@ -5,9 +5,10 @@
 The narrow theorem's load-bearing content is the bounded-interval
 substitution implication: given
 
-  (X1) Literature import u_0(SU(2)) in [u_lo, u_hi] = [96/100, 98/100]
-       (named external admission, Trottier et al hep-lat/9803024 +
-       Munster strong-coupling series).
+  (X1) u_0(SU(2)) in [u_lo, u_hi] = [96/100, 98/100], with the
+       2026-06-18 finite one-plaquette Wilson/Haar source companion proving
+       u_0,1plaq(beta_W=16) in [0.9761,0.9762] subset [0.96,0.98].
+       The stronger full four-dimensional SU(2) vacuum plaquette remains open.
   (X2) Retained b_2 = 19/6 (SU2_WEAK_BETA_COEFFICIENT_NARROW retained_bounded).
   (X3) Retained native SU(2) gauge structure from Cl(3) bivector irrep
        (NATIVE_GAUGE_CLOSURE_NOTE retained).
@@ -45,16 +46,19 @@ u_lo = 96/100, u_hi = 98/100, b_2 = 19/6, L = Rational(3844, 100) approximation
 of 38.44, then provides high-precision mpmath decimal endpoints for the
 result interval to 30 decimal digits.
 
-Companion role: no new claim row, no new source note, no status promotion.
-Provides audit-friendly evidence at exact precision plus high-precision
-numeric readout. This is the audit-companion for the Pattern A narrow
-bounded theorem; literature import u_0(SU(2)) in [0.96, 0.98] is
-explicitly classified as NAMED EXTERNAL ADMISSION (not derived).
+Companion role: no audit verdict and no status promotion. Provides
+audit-friendly evidence at exact precision plus high-precision numeric
+readout. This is the audit-companion for the Pattern A narrow bounded
+theorem; the 2026-06-18 branch adds one-plaquette source support for the
+previously literature-only u_0 interval while keeping the stronger
+full-lattice u_0 closure open.
 """
 
 from __future__ import annotations
 
+import math
 import sys
+from decimal import Decimal, getcontext
 from pathlib import Path
 
 try:
@@ -79,6 +83,13 @@ PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md"
+U0_SUPPORT_NOTE = (
+    ROOT
+    / "docs"
+    / "SU2_WEAK_U0_ONE_PLAQUETTE_WILSON_BRACKET_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+)
+
+getcontext().prec = 90
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -100,13 +111,43 @@ def section(title: str) -> None:
     print("-" * 88)
 
 
+def plain(text: str) -> str:
+    return " ".join(text.replace("**", "").replace("`", "").lower().split())
+
+
+def D(value: str | int) -> Decimal:
+    return Decimal(str(value))
+
+
+def decimal_bessel_i(n: int, x: Decimal) -> Decimal:
+    """Modified Bessel I_n(x) from the positive defining series."""
+
+    half = x / D(2)
+    term = (half ** n) / D(math.factorial(n))
+    total = term
+    k = 0
+    tolerance = D("1e-78")
+    while True:
+        k += 1
+        term *= (half * half) / (D(k) * D(k + n))
+        total += term
+        if abs(term) <= tolerance * max(D(1), abs(total)):
+            return +total
+        if k > 500:
+            raise RuntimeError("Bessel series did not converge")
+
+
+def decimal_close(a: Decimal, b: Decimal, tol: str = "1e-62") -> bool:
+    return abs(a - b) <= D(tol)
+
+
 def main() -> int:
     print("=" * 88)
     print("Audit companion (exact-symbolic) for")
     print("G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17")
     print("Goal: sympy verification of g_2(v) bounded interval from u_0 in [0.96, 0.98]")
     print("Inputs (cited):")
-    print("  (X1) u_0(SU(2)) in [96/100, 98/100]   ... NAMED EXTERNAL ADMISSION")
+    print("  (X1) u_0(SU(2)) in [96/100, 98/100]   ... one-plaquette support; full lattice open")
     print("  (X2) b_2 = 19/6                        ... retained_bounded")
     print("  (X3) Cl(3) bivector -> SU(2)           ... retained")
     print("  (X4) 1/alpha_2^bare |_lattice = 16 pi  ... retained_bounded one-hop anchor")
@@ -119,7 +160,25 @@ def main() -> int:
     section("Part 0: source-packet dependency repair checks")
     # ------------------------------------------------------------------
     note_text = NOTE.read_text(encoding="utf-8")
+    support_text = U0_SUPPORT_NOTE.read_text(encoding="utf-8") if U0_SUPPORT_NOTE.exists() else ""
+    note_plain = plain(note_text)
+    support_plain = plain(support_text)
     check("source note exists", NOTE.exists(), detail=str(NOTE.relative_to(ROOT)))
+    check(
+        "(X1) one-plaquette support note exists",
+        U0_SUPPORT_NOTE.exists(),
+        detail=str(U0_SUPPORT_NOTE.relative_to(ROOT)),
+    )
+    check(
+        "(X1) source note cites the one-plaquette support note",
+        "SU2_WEAK_U0_ONE_PLAQUETTE_WILSON_BRACKET_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+        in note_text,
+    )
+    check(
+        "(X1) support note keeps the full 4D nonperturbative plaquette open",
+        "does not prove the full four-dimensional nonperturbative" in support_plain
+        and "full four-dimensional nonperturbative su(2) lattice plaquette" in note_plain,
+    )
     check(
         "(X4) source note cites the retained_bounded SU2 lattice-alpha anchor",
         "SU2_WEAK_ALPHA_LATTICE_ONE_OVER_SIXTEEN_PI_ANCHOR_NARROW_THEOREM_NOTE_2026-05-28.md"
@@ -342,6 +401,61 @@ def main() -> int:
         "(U3) 0.988 comparator is not used as an endpoint",
         u_weak not in (u_lo, u_hi),
         detail="load-bearing endpoints remain 96/100 and 98/100",
+    )
+
+    # ------------------------------------------------------------------
+    section("Part 6c: finite one-plaquette Wilson/Haar support for X1")
+    # ------------------------------------------------------------------
+    # The 2026-06-18 source companion does not assert a full four-dimensional
+    # SU(2) vacuum plaquette. It proves the narrower one-plaquette Wilson/Haar
+    # bracket at the existing weak-anchor beta_W = 16:
+    #
+    #   Z(beta) = I_0(beta) - I_2(beta) = 2 I_1(beta)/beta,
+    #   <P>_1plaq = d log Z / d beta = I_2(beta)/I_1(beta),
+    #   u_0,1plaq = <P>_1plaq^(1/4).
+    beta_w = D(16)
+    i0 = decimal_bessel_i(0, beta_w)
+    i1 = decimal_bessel_i(1, beta_w)
+    i2 = decimal_bessel_i(2, beta_w)
+    i3 = decimal_bessel_i(3, beta_w)
+    z_diff = i0 - i2
+    z_recur = D(2) * i1 / beta_w
+    dz = (i1 - i3) / D(2)
+    p_derivative = dz / z_diff
+    p_ratio = i2 / i1
+    u0_oneplaquette = p_ratio.sqrt().sqrt()
+    print(f"  <P>_1plaq(beta_W=16) = {p_ratio}")
+    print(f"  u_0,1plaq(beta_W=16) = {u0_oneplaquette}")
+    check(
+        "(U0-1) Bessel recurrence gives Z = I_0 - I_2 = 2 I_1/beta",
+        decimal_close(z_diff, z_recur),
+        detail=f"relative delta={(z_diff - z_recur) / z_diff:.3E}",
+    )
+    check(
+        "(U0-2) d log Z / d beta equals I_2/I_1",
+        decimal_close(p_derivative, p_ratio),
+        detail=f"relative delta={(p_derivative - p_ratio) / p_ratio:.3E}",
+    )
+    check(
+        "(U0-3) one-plaquette <P>(16) lies in [0.9078, 0.9079]",
+        D("0.9078") < p_ratio < D("0.9079"),
+        detail=f"<P>={p_ratio}",
+    )
+    check(
+        "(U0-4) one-plaquette u_0(16) lies in [0.9761, 0.9762]",
+        D("0.9761") < u0_oneplaquette < D("0.9762"),
+        detail=f"u_0={u0_oneplaquette}",
+    )
+    check(
+        "(U0-5) one-plaquette u_0 bracket is inside X1 [0.96,0.98]",
+        D("0.96") < u0_oneplaquette < D("0.98"),
+        detail="[0.9761,0.9762] subset [0.96,0.98]",
+    )
+    check(
+        "(U0-6) source text explicitly leaves full-lattice u_0 open",
+        "full four-dimensional nonperturbative su(2) lattice plaquette" in note_plain
+        and "stronger full-lattice" in note_plain
+        and "open residual" in note_plain,
     )
 
     # ------------------------------------------------------------------

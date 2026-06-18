@@ -18,12 +18,12 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 180 |
-| high | `unaudited` | 159 |
-| medium | `unaudited` | 90 |
+| high | `unaudited` | 158 |
+| medium | `unaudited` | 93 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
 
-**Total non-retained-grade rows in publication tables:** 434
+**Total non-retained-grade rows in publication tables:** 436
 
 ## Per-row breakdown
 
@@ -340,7 +340,6 @@ publication tables phrase it.
 | high | `proton_lifetime_derived_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `restricted_strong_field_closure_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `scalar_harmonic_tower_theorem_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| high | `scalar_trace_tensor_no_go_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `shapiro_delay_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `sigma_hier_uniqueness_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `single_axiom_hilbert_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
@@ -406,6 +405,8 @@ publication tables phrase it.
 | medium | `g_weak_from_framework_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gr_class_expansion_finite_rank_target_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadron_lane1_chiral_condensate_banks_casher_scoping_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadron_mass_lane1_theorem_plan_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
@@ -442,6 +443,7 @@ publication tables phrase it.
 | medium | `quark_jts_physical_point_closure_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `retained_cross_lane_consistency_support_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `s3_time_tensorized_schur_primitive_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `scalar_trace_tensor_no_go_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `shapiro_family_portability_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `shapiro_qa_retest_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `shapiro_unique_discriminator_v2_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

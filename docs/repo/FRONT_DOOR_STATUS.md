@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1604 |
+| Applied audit verdicts | 1605 |
 | Retained-grade rows, including boxed decorations | 1481 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 990 |
 | Boxed decorations under retained parents | 55 |
-| Open gates | 34 |
-| Unaudited rows | 1453 |
+| Open gates | 35 |
+| Unaudited rows | 1452 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 55 |
 | Audited renaming rows | 20 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1455 |
-| Ready rows | 39 |
+| Total pending rows | 1454 |
+| Ready rows | 38 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 470 |
+| Leaf pending | 469 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`lepton_block_d12_prime_matching_no_go_note_2026-05-10`](../../docs/LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md) - medium; unaudited
 - [`meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16`](../../docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`mirror_mutual_information_note`](../../docs/MIRROR_MUTUAL_INFORMATION_NOTE.md) - medium; unaudited
 - [`native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12`](../../docs/PLAQUETTE_ENVIRONMENT_QUOTIENT_EQUIVARIANCE_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12`](../../docs/PLAQUETTE_ENVIRONMENT_QUOTIENT_EQUIVARIANCE_NARROW_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07`](../../docs/PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 931 |
-| Leaf nodes | 1509 |
+| Medium nodes | 932 |
+| Leaf nodes | 1508 |
 
 Top load-bearing rows by graph score:
 

@@ -147,15 +147,15 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "hierarchy_formula_honest_status_note_2026-05-10",
-      "claim_scope": null,
+      "claim_scope": "Bounded structural support theorem T1 for species count, determinant degree, selector, suppression constant, and sensitivities, with D1/C1 treated only as declared candidate-map/readout appendices and not as EW-VEV or formula closure.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "kinetic_isotropy_primitive",
         "plaquette_self_consistency_note",
@@ -164,13 +164,13 @@
         "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 19,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
       "load_bearing_score": 17.533,
       "note_path": "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_formula_honest_status.py",
       "transitive_descendants": 261
@@ -8989,6 +8989,32 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "key_terminology",
+        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 10,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 11.7,
+      "note_path": "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py",
+      "transitive_descendants": 103
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "action_normalization_note",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -9006,32 +9032,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_action_normalization.py",
       "transitive_descendants": 94
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.976,
-      "note_path": "docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_record_formation_dynamics_constraint_2026_06_05.py",
-      "transitive_descendants": 88
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

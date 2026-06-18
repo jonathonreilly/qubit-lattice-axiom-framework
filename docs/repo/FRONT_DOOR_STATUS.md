@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 915 |
 | Boxed decorations under retained parents | 48 |
 | Open gates | 14 |
-| Unaudited rows | 1637 |
+| Unaudited rows | 1636 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 6 |
@@ -44,13 +44,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
+- [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`hierarchy_effective_potential_endpoint_note`](../../docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md) - critical; unaudited
 - [`koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
 - [`flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`](../../docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md) - high; unaudited
 - [`source_resolved_exact_green_pocket_note`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md) - high; unaudited
-- [`action_normalization_note`](../../docs/ACTION_NORMALIZATION_NOTE.md) - high; unaudited
 - [`record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md) - high; unaudited
+- [`action_normalization_note`](../../docs/ACTION_NORMALIZATION_NOTE.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -89,5 +89,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
 - `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
 - `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
-- `key_terminology` - critical; 1118 descendants; score 46.628
+- `key_terminology` - critical; 1119 descendants; score 46.629
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

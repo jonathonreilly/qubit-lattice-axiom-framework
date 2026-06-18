@@ -1,0 +1,19 @@
+loop_slug: koide-brannen-phase-scope-20260618
+goal: "Harden the Koide Brannen phase reduction row so Q=2/3 and the physical radian bridge are explicit supplied/open premises, not retained closure."
+target_claim_id: koide_brannen_phase_reduction_theorem_note_2026-04-20
+target_status: bounded-support
+runtime_mode: source-side scope repair PR
+cycle_count: 1
+active_route: explicit supplied-premise boundary
+hard_residual: "Prior conditional audit history said the algebra is exact but the physical phase depends on supplied Q=2/3 and residual physical-base radian bridge P."
+files_touched:
+  - docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md
+  - scripts/frontier_koide_brannen_phase_reduction_theorem.py
+  - logs/runner-cache/frontier_koide_brannen_phase_reduction_theorem.txt
+open_imports:
+  - "I1: Q=2/3 Koide-ratio input is supplied/open in this note."
+  - "P: physical-base radian bridge remains open."
+review_loop_disposition: "not run; delegated to reviewer"
+pr_status: pending
+next_exact_action: "Open source-side PR for reviewer extraction."
+stop_condition: "One coherent boundary repair packaged."

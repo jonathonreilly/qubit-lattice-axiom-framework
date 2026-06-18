@@ -126,6 +126,35 @@ dependency graph explicit for re-audit: the bridge can be checked as an
 exact conditional consequence over these named edges, but it is not a
 retained derivation of hypercharge, matter completion, P-ABJ, or P-REC.
 
+## P-COMP arithmetic split (2026-06-18)
+
+The source-side support note
+[`ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md`](ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md)
+isolates the exact finite algebra inside the declared P-COMP witness.
+On the scale-free left-handed surface
+
+```text
+Q_L : (2,3)_a,      L_L : (2,1)_(-3a),      a != 0,
+```
+
+it proves that, once the opposite-chirality SU(2)-singlet completion
+template with two color-triplet singlet slots, one charged colorless
+singlet slot, and one neutral colorless singlet slot is supplied,
+anomaly cancellation forces the completion charges
+
+```text
+{4a, -2a, -6a, 0}
+```
+
+up to swapping the two color-triplet singlet labels. At `a = 1/3` this
+is the `(4/3, -2/3, -2, 0)` witness used in (B3). This narrows P-COMP:
+the arithmetic and absolute normalization are not the residual. The
+remaining residual is the physical existence/minimality of that
+opposite-chirality singlet completion surface, including the neutral
+singlet, from framework-native structure. This split does not derive
+P-HY, P-ABJ, full P-COMP, P-REC, or B-AXIS.
+
+
 ## Proof-walk
 
 | Step | Statement | Load-bearing input | Lattice-action input? |

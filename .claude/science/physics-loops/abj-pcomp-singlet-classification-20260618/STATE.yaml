@@ -1,0 +1,18 @@
+loop_slug: abj-pcomp-singlet-classification-20260618
+target_status: bounded-support
+active_route: scale-free P-COMP singlet completion classification
+current_goal: reduce the ABJ audited-conditional P-COMP blocker without auditing or retagging
+files_touched:
+  - docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md
+  - scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py
+  - docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+open_imports:
+  - P-HY physical anomaly-relevant U(1) identification
+  - P-ABJ anomaly-to-inconsistency premise
+  - physical/minimal P-COMP completion slots and neutral singlet
+  - P-REC anomaly-carrying chirality reconstruction
+  - B-AXIS one-clock cap
+trace_gate: direct_blocker_closure_partial
+review_disposition: reviewer_owned_not_run
+pr_status: pending
+next_exact_action: run runner, cache, py_compile, diff guards, commit, push, open PR

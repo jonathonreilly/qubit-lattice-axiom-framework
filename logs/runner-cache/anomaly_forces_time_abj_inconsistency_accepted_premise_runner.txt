@@ -3,7 +3,7 @@ runner: scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py
 runner_sha256: eb649f819818eb2361181ee559d941bf9f94f418a9bb6fca118ba730b85ce8ef
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ANOMALY-FORCES-TIME ABJ-INCONSISTENCY ACCEPTED-PREMISE BRIDGE

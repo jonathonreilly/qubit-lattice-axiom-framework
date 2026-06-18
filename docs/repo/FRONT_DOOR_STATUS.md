@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1536 |
+| Applied audit verdicts | 1537 |
 | Retained-grade rows, including boxed decorations | 1447 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
 | Retained bounded rows | 963 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 28 |
-| Unaudited rows | 1521 |
+| Unaudited rows | 1520 |
 | Retained-pending-chain rows | 3 |
-| Audited conditional rows | 35 |
+| Audited conditional rows | 36 |
 | Audited renaming rows | 16 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 7 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1523 |
-| Ready rows | 104 |
+| Total pending rows | 1522 |
+| Ready rows | 103 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
 | Medium pending | 413 |
-| Leaf pending | 539 |
+| Leaf pending | 538 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
 - [`plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12`](../../docs/PLAQUETTE_ENVIRONMENT_CONTRACTION_COST_VERIFICATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`post_record_dynamics_campaign_closeout_index_2026-06-06`](../../docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md) - medium; unaudited
 - [`post_record_retained_unbounded_dynamics_gate_2026-06-06`](../../docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md) - medium; unaudited
+- [`sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15`](../../docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md) - medium; unaudited
 - [`lanes.generated-geometry.readme`](../../docs/lanes/generated-geometry/README.md) - medium; unaudited
-- [`sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15`](../../docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md) - leaf; unaudited
+- [`su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15`](../../docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

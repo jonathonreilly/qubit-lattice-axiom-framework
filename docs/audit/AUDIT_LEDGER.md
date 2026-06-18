@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 963 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 28 |
-| unaudited | 1521 |
+| unaudited | 1520 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1399 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1843 |
+| `unaudited` | 1842 |
 
 | claim_type | count |
 |---|---:|
@@ -1557,6 +1557,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -13772,6 +13773,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The note bounds the core expansion error plus the Gaussian and actual tails by an absolute integral remainder B_abs/t^2, then evaluates sqrt(2/pi) B_abs = C_0 to obtain the all-a scalar error bound.  _(class `A`)_
 - **chain closes:** True — The expansion follows directly from the supplied scalar integral representation using elementary cosine-series inequalities, Gaussian Fourier differentiation, and explicit tail bounds. The cited SU(3) authority is only needed to identify the repository convention for the I_k atom, and it is retained_bounded.
 - **rationale:** The load-bearing proof is an exact scalar analytic closure from the integral representation, not a fitted numerical match or a definition-only substitution. Independent checking confirms the sign of the s^4/(24t) correction, the fourth-derivative formula for P_1(a), and the conversion of the core and tail Gaussian moments into the displayed C_0. The runner source is consistent with this: it hard-codes the derived formulas for hygiene and witness checks, while scipy.special.ive is used only as a numerical witness, not as the proof input.
+- **auditor confidence:** high
+
+### `native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the open-gate assertion that scalar Bessel local-CLT control propagates through finite 3x3 determinant algebra but does not by itself close the Route B Wilson-to-saddle bound or the Route A reduced spectral comparison.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `H_scalar` gives only a finite bounded-window determinant expansion; `This is not yet K_W(a)` because the determinant-mode sums still must be converted to the normalized Wilson ratio with `c_(0,0)` normalization and tails, and Route A separately needs `H_spec`.  _(class `A`)_
+- **chain closes:** False — The bounded-window determinant propagation is an algebraic consequence of `H_scalar` and determinant multilinearity. The two-route assembly does not close because `H_det(A)` and `H_spec` are not supplied in the restricted packet.
+- **rationale:** Issue: the note's finite determinant propagation from `H_scalar` is algebraic and internally checked, but it explicitly stops before the normalized Wilson ratio and Route A spectral comparison. Why this blocks: scalar entry control does not supply the `c_(0,0)` lower normalization, determinant-mode/weight tails, or the reduced A2 inequality `c_D <= c_J`. Repair target: supply and audit `H_det(A)` and `H_spec`; until then the valid boundary is a partial open-gate sufficiency map, not a closed half-line assembly.
 - **auditor confidence:** high
 
 ### `native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12`

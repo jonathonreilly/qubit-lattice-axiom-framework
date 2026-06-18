@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 986 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 32 |
-| unaudited | 1462 |
+| unaudited | 1461 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 20 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1429 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1784 |
+| `unaudited` | 1783 |
 
 | claim_type | count |
 |---|---:|
@@ -1602,6 +1602,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_mru_demotion_note_2026-04-20` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11735,6 +11736,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With J_i = σ_i/2 ≠ 0, K_i = 0 makes [K_i,K_j] = 0 while the so(3,1) or so(4) bracket requires [K_i,K_j] = ± i ε_ijk J_k, so K=0 is not a completion.  _(class `A`)_
 - **chain closes:** True — The retained merger supplies the operator-frame spatial rotation generators J_i=σ_i/2, and the Lie-bracket contradiction for K=0 is immediate. The chain does not close full matter faithfulness; the missing step is the matter-field-index attachment bridge, which the note explicitly disclaims.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: for any off-diagonal pair, ε_ijk J_k is nonzero, so K=0 cannot satisfy either sign of the [K,K] bracket. An independent algebra check also gives the listed same-carrier completions K_i=aJ_i with a^2=-1 for so(3,1) and a^2=+1 for so(4). The runner's section E uses hard-coded scope assertions, so those are not treated as proof; the clean verdict rests on the bracket algebra and the cited operator-frame merger only.
+- **auditor confidence:** high
+
+### `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`
+
+- **Note:** [`KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite algebraic localization: Q delta-independence, discrete Z3 clock multiplicity block balance, native R^3 circulant anticommuting no-go, and separate-factor algebraic escape; not a physical r=1/2 derivation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Within native R^3, every C3-equivariant/circulant mass commutes with Gamma_chi and comm(C) cap anticomm(Gamma_chi) = {0}, while a nonzero Gamma_chi-anticommuting operator appears only after placing chirality on a separate C^2 factor.  _(class `A`)_
+- **chain closes:** True — The algebraic chain closes for the stated finite localization: all load-bearing C3/circulant and tensor-factor identities are computed by the runner or supported by retained_bounded algebraic authorities. It does not close a physical selector; the physical AC_phi_lambda-to-L-R coupling and r-weighting readout are explicitly outside scope.
+- **rationale:** The runner source genuinely computes the finite identities rather than printing constants: Q is delta-independent, the clock character multiplicities are (1,1,1), comm(C) cap anticomm(Gamma_chi) is zero in the native circulant algebra, and the R^3 x C^2 anticommuting example is nonzero. That supports class A bounded algebraic localization. The source also correctly quarantines the physical selector: the cited staggered-Dirac gate is unaudited and the AC_phi_lambda -> M(b) tensor sigma_+ action/readout bridge is not supplied, so the packet cannot be used as a retained physical r=1/2 derivation.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md`
 - **auditor confidence:** high
 
 ### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`

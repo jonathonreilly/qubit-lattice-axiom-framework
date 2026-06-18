@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/frontier_frw_c3_kinetic_component_fluid_lift_2026_06_18.py
+runner_sha256: b49fd79a0ed88e9d51d65dd46e86fbee05231bd6a1e4ca94aa295f73bab7989d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+FRW C3 KINETIC COMPONENT TO PERFECT-FLUID LIFT
+
+== Part 0: source/status firewall ==
+PASS: fluid-lift note contains boundary phrase: Claim type:** bounded_theorem
+PASS: fluid-lift note contains boundary phrase: Type:** bounded_theorem
+PASS: fluid-lift note contains boundary phrase: Status:** bounded support for finite perfect-fluid lift of ideal C3 kinetic labels only
+PASS: fluid-lift note contains boundary phrase: actual_current_surface_status: bounded-support
+PASS: fluid-lift note contains boundary phrase: trace_class: direct_blocker_closure
+PASS: fluid-lift note contains boundary phrase: reachability_to_target: partially_closes
+PASS: fluid-lift note contains boundary phrase: proposal_allowed: false
+PASS: fluid-lift note contains boundary phrase: not an audit result
+PASS: fluid-lift note contains boundary phrase: No new axiom
+PASS: fluid-lift note contains boundary phrase: does not derive C1
+PASS: fluid-lift note contains boundary phrase: does not derive C2
+PASS: fluid-lift note contains boundary phrase: does not derive real cosmological species allocation
+PASS: fluid-lift note contains boundary phrase: finite perfect-fluid lift only
+PASS: fluid-lift note contains boundary phrase: FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+PASS: fluid-lift note contains boundary phrase: scripts/frontier_frw_c3_kinetic_component_fluid_lift_2026_06_18.py
+PASS: fluid-lift note contains boundary phrase: logs/runner-cache/frontier_frw_c3_kinetic_component_fluid_lift_2026_06_18.txt
+PASS: fluid-lift note contains boundary phrase: [`FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md`](FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md)
+PASS: fluid-lift note contains boundary phrase: [`DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md`](DARK_ENERGY_EOS_RETAINED_COROLLARY_THEOREM_NOTE.md)
+PASS: fluid-lift note excludes overclaim phrase: Status: retained
+PASS: fluid-lift note excludes overclaim phrase: actual_current_surface_status: retained
+PASS: fluid-lift note excludes overclaim phrase: sets effective status
+PASS: fluid-lift note excludes overclaim phrase: derives the cosmological principle
+PASS: fluid-lift note excludes overclaim phrase: derives adiabatic expansion
+PASS: fluid-lift note excludes overclaim phrase: derives real cosmological fluids
+PASS: parent FRW note records fluid-lift phrase: 2026-06-18 C3 perfect-fluid lift partial bridge
+PASS: parent FRW note records fluid-lift phrase: FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+PASS: parent FRW note records fluid-lift phrase: does not derive C1 or C2
+PASS: parent FRW note records fluid-lift phrase: does not derive real cosmological species allocation
+
+== Part 1: component mixed stress tensors ==
+PASS: radiation component tensor is diagonal (((Fraction(-12, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(4, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(4, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(4, 1))))
+PASS: radiation component has isotropic pressure (P=(4, 4, 4))
+PASS: matter component tensor is diagonal (((Fraction(-21, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))))
+PASS: matter component has isotropic pressure (P=(0, 0, 0))
+PASS: Lambda component tensor is diagonal (((Fraction(-5, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-5, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(-5, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(-5, 1))))
+PASS: Lambda component has isotropic pressure (P=(-5, -5, -5))
+PASS: radiation component has w_r=1/3
+PASS: pressureless rest matter component has w_m=0
+PASS: Lambda component is separate supplied w=-1 surface
+
+== Part 2: finite direct-sum perfect-fluid aggregation ==
+PASS: total tensor remains diagonal (((Fraction(-38, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1))))
+PASS: total tensor remains isotropic in spatial pressure (P=(-1, -1, -1))
+PASS: total density is component density sum (rho_total=38, expected=38)
+PASS: total pressure is component pressure sum (p_total=-1, expected=-1)
+PASS: effective w is weighted component sum (w_eff=-1/38)
+
+== Part 3: finite cell homogeneity boundary ==
+PASS: homogeneous finite cell average equals each cell tensor
+PASS: homogeneous cell packet is pointwise FRW-compatible
+PASS: inhomogeneous cells can each retain local w_r=1/3
+PASS: inhomogeneous cells are not a homogeneous FRW background (cell_a=((Fraction(-9, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(3, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(3, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(3, 1))), cell_b=((Fraction(-15, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(5, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(5, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(5, 1))))
+PASS: cell inhomogeneity is a C1 residual, not a C3 label failure
+
+== Part 4: source-free continuity boundary ==
+PASS: source-free radiation scaling exponent a^-4 matches w=1/3 (residual=0)
+PASS: source-free matter scaling exponent a^-3 matches w=0 (residual=0)
+PASS: nonzero source term blocks adiabatic/scaling closure (residual_with_source=2)
+PASS: source injection is a C2 residual, not a C3 label failure
+
+== Result ==
+Closed by this bridge: finite component tensors and homogeneous cell aggregation.
+Still open: C1, C2, real species allocation, thermal history, and audit status.
+
+TOTAL: PASS=51 FAIL=0
+VERDICT: bounded support passes for the finite perfect-fluid lift of ideal kinetic C3 labels. C1, C2, real cosmological species allocation, and audit status remain open.
+
+----- stderr -----
+

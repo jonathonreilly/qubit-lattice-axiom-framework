@@ -1,0 +1,28 @@
+loop_slug: stale-frame-runner-firewalls-20260618
+goal: "Unlock audit cleanup for stale-frame failed rows by converting registered runners from positive theorem checkers into archive-firewall witnesses."
+target_status: best-honest-status
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: partially_closes
+branch: codex/stale-frame-runner-firewalls-20260618
+base: origin/main
+base_commit: 4d16f83ce
+cycle_count: 1
+active_route: stale_frame_archive_firewall_repair
+files_touched:
+  - archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md
+  - archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md
+  - archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md
+  - scripts/frontier_cl4c_carrier_axiom_consequence_map.py
+  - scripts/frontier_hubble_c1_a5_minimal_carrier_axiom_audit.py
+  - scripts/frontier_hubble_c1_stuck_fanout_synthesis.py
+open_imports: []
+no_go_routes:
+  - stale Axiom* consequence cascade as live support
+  - stale A5 minimal-carrier wrapper as live support for G1/C1
+  - stale stuck-fan-out wrapper as global no-hidden-route proof
+review_loop_disposition: "not run; reviewer will extract science per user instruction"
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+next_exact_action: "Open PR and hand the source-side firewall repair to reviewer/auditor."
+stop_condition: "One coherent source-side repair block completed."

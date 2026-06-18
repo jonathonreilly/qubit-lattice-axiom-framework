@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1622 |
-| Retained-grade rows, including boxed decorations | 1487 |
-| Retained positive theorems | 219 |
+| Applied audit verdicts | 1623 |
+| Retained-grade rows, including boxed decorations | 1488 |
+| Retained positive theorems | 220 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 995 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 36 |
-| Unaudited rows | 1435 |
+| Unaudited rows | 1434 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 58 |
 | Audited renaming rows | 27 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1437 |
-| Ready rows | 21 |
+| Total pending rows | 1436 |
+| Ready rows | 20 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 452 |
+| Leaf pending | 451 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13`](../../docs/RESIDUAL_D_POWER_DIVERGENT_CS_REGENERATION_B4_NOTE_2026-06-13.md) - medium; unaudited
 - [`rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`](../../docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`s3_time_tensor_build_memo`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16`](../../docs/SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md) - medium; unaudited
+- [`sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
+- [`source_resolved_exact_green_self_consistent_note`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

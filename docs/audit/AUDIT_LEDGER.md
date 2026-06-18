@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 219 |
+| **retained** | 220 |
 | **retained_no_go** | 217 |
 | **retained_bounded** | 995 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1435 |
+| unaudited | 1434 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 27 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1442 |
+| `audited_clean` | 1443 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1757 |
+| `unaudited` | 1756 |
 
 | claim_type | count |
 |---|---:|
@@ -1225,6 +1225,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `registration_reinstates_chirality_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
+| `residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -17957,6 +17958,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The provided runner implements the stated convention by doing nothing when numpy is importable, re-execing the target script under /usr/bin/python3 when numpy is missing and the current interpreter is different, and otherwise exiting with a clear local error; current inspection confirms the helper loads and numpy is importable under the declared system path, with several retained replay scripts calling the helper.  _(class `B`)_
 - **chain closes:** True — Within the restricted inputs, the note's operational claims close: the runner script matches the documented bootstrap behavior, the current inspection output supports that the helper is present and importable, and the usage search supports the claim that relevant retained numpy replay lanes call it. The note also explicitly limits its scope to local operational reproducibility and disclaims CI enforcement, scientific promotion, and generalization beyond this host.
 - **rationale:** The support note is internally accurate against the provided runner and inspection output. Its load-bearing operational convention is implemented by the bootstrap helper and reflected in listed script usages. Because the claim boundary is explicitly local, non-scientific, and non-CI-enforced, no hidden premise is needed for the stated support-level claim.
+- **auditor confidence:** high
+
+### `residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13`
+
+- **Note:** [`RESIDUAL_D_POWER_DIVERGENT_CS_REGENERATION_B4_NOTE_2026-06-13.md`](../../docs/RESIDUAL_D_POWER_DIVERGENT_CS_REGENERATION_B4_NOTE_2026-06-13.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the specified UV-leading one-loop tadpole density on the accepted OS0 B4-cut discrete-tick regulator, the power-divergent a^-2 curvature has zero marginal c_t-c_s projection; B4-broken continuous-time temporal blocks regenerate a nonzero marginal term, while the B4-invariant remnant is dimension-6/Planck-suppressed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the B4-cut measure the marginal projection of the power-divergent piece vanishes because the cut-measure power-divergent curvature 4-vector is already B4-isotropic.  _(class `C`)_
+- **chain closes:** True — The accepted kinetic-isotropy primitive supplies the OS0 B4-cut regulator premise, and the other non-primitive cited authorities are retained-grade. The runner constructs the B4 group, lattice/continuum blocks, orbit averages, and integrals directly, with B4-broken controls showing the zero is not baked into the cut alone.
+- **rationale:** The load-bearing result is a direct finite-lattice/B4 computation, not a definition substitution or imported numerical match. The runner does not read contested constants from another note; it computes the a^-2 scaling, B4-cut marginal zero, anisotropic-block falsification, continuous-time regeneration, and dimension-6 orbit behavior from the stated lattice blocks and group action. Within the stated single-integrand OS0 regulator scope, the conclusion follows from the cited retained/approved premises.
 - **auditor confidence:** high
 
 ### `restricted_strong_field_closure_note`

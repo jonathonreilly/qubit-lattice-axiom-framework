@@ -1,0 +1,14 @@
+loop: poisson-self-field-supplied-branch-core-20260618
+date: 2026-06-18
+status: source_repair_pr_ready
+mode: audit_unlock_source_repair
+target_row: poisson_self_field_note
+branch: codex/poisson-self-field-supplied-branch-core-20260618
+claim_surface: bounded supplied-branch core
+audit_actions_performed: false
+ledger_edits_performed: false
+review_loop_run: false
+summary: >
+  Split the finite supplied-Poisson branch from the parent note, corrected the
+  stale Born cache value, and added a runner that checks numerical closure plus
+  source-boundary firewalls.

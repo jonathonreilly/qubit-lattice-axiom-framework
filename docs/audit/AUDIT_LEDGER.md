@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 217 |
-| **retained_no_go** | 214 |
+| **retained_no_go** | 215 |
 | **retained_bounded** | 957 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 25 |
-| unaudited | 1540 |
+| unaudited | 1539 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1388 |
+| `audited_clean` | 1389 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1862 |
+| `unaudited` | 1861 |
 
 | claim_type | count |
 |---|---:|
@@ -824,6 +824,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_three_measures_three_observables_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11575,6 +11576,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For real eigenvalues, Q(V) = (3a²+6|b|²)/(Σ|λ_k|)² and Σ|λ_k| ≥ Σλ_k = 3a, with equality exactly when no eigenvalue is negative; at r=1/2 this makes Q(S)=2/3 while Q(V) varies with θ once a sign flip occurs.  _(class `A`)_
 - **chain closes:** True — The displayed identities follow from the C3 root-of-unity/trigonometric sums, real-spectrum numerator equality |λ_k|²=λ_k², and the triangle inequality for the denominator. The r=1/2 specialization is explicitly a hypothesis, and the exact sample angles independently establish nonconstancy of Q(V).
 - **rationale:** The claim is a genuine algebraic closure over the restricted packet with no load-bearing cited authority or external comparator. Independent formula checking confirms the factors 3a, 3a²+6|b|², Q(S)=(1+2r)/3, the r=1/2 value 2/3, the closed equality window including θ=π/12, and the one-negative denominator 3a−2λ_min. The runner source actually computes the symbolic identities and exact samples rather than merely printing constants, and its PASS=30/FAIL=0 is consistent with the note.
+- **auditor confidence:** high
+
+### `koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04`
+
+- **Note:** [`KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md`](../../docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow same-factor algebraic no-go: the signed Brannen/det_R eigenvalue readout of the C3 circulant is not equivalent to Gamma_chi anticommutation/chirality, and Hermiticity alone does not force the signed sqrt(m) readout.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Brannen signed-eigenvalue Q=2/3 readout belongs to the Gamma_chi-commuting C3 circulant class, while Gamma_chi-anticommuting Hermitian operators have sign-symmetric {-lambda,0,+lambda} eigenvalue readout and comm(R) intersect anticomm(Gamma_chi) = {0}.  _(class `A`)_
+- **chain closes:** True — The discriminator follows from retained-grade algebraic inputs: Gamma_chi is circulant, circulants commute, no nonzero circulant anticommutes with Gamma_chi, and anticommuting Hermitian H has zero-sum sign-symmetric eigenvalues. The note does not need to derive r=1/2, physical charged-lepton masses, or a global chirality mechanism.
+- **rationale:** The load-bearing step is a genuine class-A algebraic closure over retained or retained-bounded authorities, not a definition or numerical match. The runner source constructs the two operator classes and checks the commute/anticommute split, signed/singular readout contrast, eigenvalue/eigenvector readout distinction, and sign-grade steelman without importing external data. The source note's N1-N8 no-go gate is scoped narrowly and explicitly leaves multi-factor chirality and dynamics routes open, so the negative claim is not overbroad.
 - **auditor confidence:** high
 
 ### `koide_taste_cube_cyclic_source_descent_note_2026-04-18`

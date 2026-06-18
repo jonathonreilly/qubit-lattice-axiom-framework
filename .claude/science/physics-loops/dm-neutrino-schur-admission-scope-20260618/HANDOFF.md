@@ -3,6 +3,8 @@
 This branch narrows the DM-neutrino Schur suppression row to
 `conditional-support` over ADM-1, ADM-2, and ADM-3.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4399
+
 What changed:
 
 - The note header no longer advertises `bounded_theorem`.

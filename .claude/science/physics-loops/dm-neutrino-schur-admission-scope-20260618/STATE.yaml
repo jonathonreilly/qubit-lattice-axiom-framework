@@ -18,6 +18,6 @@ no_go_routes:
   - "Do not claim native even-trace Dirac-Higgs transport; that route is blocked by the named no-go."
 trace_gate_classification: direct_blocker_closure
 review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
-pr_status: pending
-next_exact_action: "Commit, push, open ready PR, then record PR URL in PR_BACKLOG.md."
-stop_condition: "Stop this block after ready PR creation; continue campaign from refreshed audit opportunities."
+pr_status: "open ready PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4399"
+next_exact_action: "Reviewer/auditor can inspect PR #4399; campaign should refresh audit opportunities before the next block."
+stop_condition: "This coherent block is packaged; continue campaign from refreshed audit opportunities."

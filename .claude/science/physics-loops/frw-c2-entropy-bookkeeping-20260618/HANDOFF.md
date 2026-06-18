@@ -1,6 +1,10 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4402
+
+Branch: `codex/frw-c2-entropy-bookkeeping-20260618`
+
+Commit: `426581cb64c9`
 
 This is stacked on PR #4401:
 
@@ -22,3 +26,5 @@ python3 scripts/cached_runner_output.py --refresh scripts/frontier_frw_adiabatic
 
 Review-loop was not run; the user delegated review-loop and landing cleanup to
 the Codex reviewer.
+
+No audit ledger/result/status/publication/lane-registry files were edited.

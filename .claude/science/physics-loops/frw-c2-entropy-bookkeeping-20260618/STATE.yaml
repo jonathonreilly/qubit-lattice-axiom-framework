@@ -24,7 +24,8 @@ open_imports:
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
 review_loop_disposition: "not_run_user_delegated_to_reviewer"
-pr_status: pending
-pr_url: pending
-next_exact_action: "Open stacked ready PR against codex/frw-c3-fluid-lift-20260618."
+pr_status: open_ready
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4402
+commit: 426581cb64c9
+next_exact_action: "Reviewer extracts science from PR #4402; audit/review/landing remain delegated."
 stop_condition: "Coherent stacked source-side science block packaged as PR; audit/review/landing are delegated."

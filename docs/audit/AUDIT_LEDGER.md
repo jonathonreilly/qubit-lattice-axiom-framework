@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 215 |
 | **retained_bounded** | 976 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 30 |
-| unaudited | 1490 |
+| open_gate | 31 |
+| unaudited | 1489 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1414 |
+| `audited_clean` | 1415 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1812 |
+| `unaudited` | 1811 |
 
 | claim_type | count |
 |---|---:|
@@ -372,6 +372,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_field_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5186,6 +5187,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** On the finite m0 = 0.10 scan grid, the Gaussian profile has 5/5 TOWARD offset biases with an offset-law fit alpha = 3.053 and R^2 = 0.8098, while all profiles fail N-monotonicity.  _(class `C`)_
 - **chain closes:** True — The runner source explicitly constructs the 4-component Dirac walk, mass-field kernels, density readout, N sweep, offset sweep, and power-law fit rather than printing hard-coded contested constants. The note's in-scope numerical statements match the completed runner output.
 - **rationale:** The narrowed binding claim is only the finite m0 = 0.10 runner-output statement, not nearby-mass robustness or physical-readout interpretation. Within that scope, the completed runner computes the quoted biases, TOWARD counts, monotonicity failures, and Gaussian offset-law fit from the implemented Dirac-walk dynamics. The source note's in-scope numbers agree with stdout, and no cited authority or missing helper source is needed for the finite computational claim.
+- **auditor confidence:** high
+
+### `dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`
+
+- **Note:** [`DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the narrow diagnostic boundary: the rejected Gaussian common-analytic-vector bridge fails for H, and native spatial Z^3/continuous-time invariant counting does not manufacture an independent c_t/c_s anisotropy absent an added temporal lattice or 4D premise.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The diagnostic packet rests on the two checks that the rapidity Gaussian is analytic for K=-i d/dzeta but not for H=M_perp cosh(zeta), and that spatial Z^3 has one quadratic speed coefficient while Z^3 x Z_tau has two unless a 4D hypercubic/normalization premise is added.  _(class `A`)_
+- **chain closes:** True — The H lower bound grows superfactorially relative to n!, while K is controlled by Gaussian derivative moments; the invariant counts follow from signed-permutation orbit counting and the dispersion expansion. The note does not promote these diagnostics into Nelson, Poincare-representation, dynamics, or interacting naturalness closure.
+- **rationale:** The load-bearing facts are exact analytic and group-theoretic diagnostics over the provided operators, symmetry groups, and retained/accepted inputs. The runner source computes the Gaussian ratios, analytic H lower bound, signed-permutation invariant dimensions, dispersion coefficients, and primitive-registry firewall rather than merely printing pass lines. The cited non-axiom authorities are retained-grade for the scoped uses, and the minimal-axiom premise is accepted under the rubric carve-out. The source note explicitly preserves only open-gate diagnostic facts and withholds the broader repairs, so no hidden Lorentz, dynamics, or naturalness bridge is imported.
 - **auditor confidence:** high
 
 ### `dirac_observable_panel_note`

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1605 |
+| Applied audit verdicts | 1606 |
 | Retained-grade rows, including boxed decorations | 1481 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 990 |
 | Boxed decorations under retained parents | 55 |
 | Open gates | 35 |
-| Unaudited rows | 1452 |
+| Unaudited rows | 1451 |
 | Retained-pending-chain rows | 3 |
-| Audited conditional rows | 55 |
+| Audited conditional rows | 56 |
 | Audited renaming rows | 20 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 7 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1454 |
-| Ready rows | 38 |
+| Total pending rows | 1453 |
+| Ready rows | 37 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 469 |
+| Leaf pending | 468 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16`](../../docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`mirror_mutual_information_note`](../../docs/MIRROR_MUTUAL_INFORMATION_NOTE.md) - medium; unaudited
 - [`native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12`](../../docs/PLAQUETTE_ENVIRONMENT_QUOTIENT_EQUIVARIANCE_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07`](../../docs/PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07`](../../docs/PMNS_TM2_COLUMN_SITE_BASIS_KCPT_PREDICATE_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
+- [`poisson_self_field_note`](../../docs/POISSON_SELF_FIELD_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

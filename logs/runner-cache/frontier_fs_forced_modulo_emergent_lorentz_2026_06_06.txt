@@ -1,14 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py
-runner_sha256: fcfce48c3eb68b9c6b3b0daf6e29c96347104cc872dded1b231112e11fcc91e1
+runner_sha256: c32ef674ba470409f28bc065980de53f315ddb20b6375420d024deda02f3e223
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ============================================================================================
 FS stress-test: conditional 'forced-modulo emergent-Lorentz + R' route map
 ============================================================================================
+  [PASS] note declares open_gate / conditional-support stress-test
+  [PASS] note no longer declares bounded_theorem claim type
+  [PASS] note has 2026-06-18 open-gate source-scope repair
+  [PASS] note source-scope certificate keeps actual surface open
+  [PASS] note forbids branch-local retained proposal
   [PASS] note has 2026-06-16 post-audit scope firewall
   [PASS] note says runner does not derive realization/Lorentz/R residuals
   [PASS] note declares route map/stress-test, not FS closure or new axiom
@@ -43,7 +48,7 @@ FS stress-test: conditional 'forced-modulo emergent-Lorentz + R' route map
   [PASS] no new axiom invented; all four FS no-gos remain concordant for the STATIC baseline only
 
 ============================================================================================
-SCORECARD:  PASS = 18   FAIL = 0
+SCORECARD:  PASS = 23   FAIL = 0
 ============================================================================================
 
 ----- stderr -----

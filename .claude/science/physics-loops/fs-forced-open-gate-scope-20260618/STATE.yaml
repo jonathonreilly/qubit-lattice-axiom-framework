@@ -1,0 +1,29 @@
+loop_slug: fs-forced-open-gate-scope-20260618
+target: fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06
+branch: codex/fs-forced-open-gate-scope-20260618
+base: origin/main
+started_from: f55e4030b
+actual_current_surface_status: open
+conditional_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+review_loop_disposition: not_run_user_delegated
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md
+  - scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py
+  - logs/runner-cache/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.txt
+  - .claude/science/physics-loops/fs-forced-open-gate-scope-20260618/
+open_imports:
+  - Link-B realization-gate/external-spacetime identification
+  - emergent Lorentz/positivity/microcausality bridge
+  - non-circular OS-to-Wightman reconstruction R
+closed_this_block:
+  - Source row no longer declares bounded_theorem.
+  - Runner now fails stale bounded-theorem posture and checks open_gate status.
+  - Finite stress-test remains executable at PASS=23 FAIL=0.
+next_exact_action: "Reviewer should run review-loop and decide whether this source repair is suitable for re-audit dispatch; no audit verdict is claimed here."
+stop_condition: "Science block packaged as a source-side PR."

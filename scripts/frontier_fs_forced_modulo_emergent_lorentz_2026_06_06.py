@@ -143,6 +143,19 @@ def main():
     print("=" * 92)
     note_text = NOTE.read_text(encoding="utf-8")
     note_flat = " ".join(note_text.split())
+    check("note declares open_gate / conditional-support stress-test",
+          "**Claim type:** open_gate / conditional-support stress-test" in note_text)
+    check("note no longer declares bounded_theorem claim type",
+          "**Claim type:** bounded_theorem" not in note_text)
+    check("note has 2026-06-18 open-gate source-scope repair",
+          "2026-06-18 Open-Gate Source-Scope Repair" in note_text)
+    check("note source-scope certificate keeps actual surface open",
+          "actual_current_surface_status: open" in note_text
+          and "conditional_surface_status: conditional-support" in note_text)
+    check("note forbids branch-local retained proposal",
+          "proposal_allowed: false" in note_text
+          and "audit_required_before_effective_retained: true" in note_text
+          and "bare_retained_allowed: false" in note_text)
     check("note has 2026-06-16 post-audit scope firewall",
           "2026-06-16 Post-Audit Scope Firewall" in note_text)
     check("note says runner does not derive realization/Lorentz/R residuals",

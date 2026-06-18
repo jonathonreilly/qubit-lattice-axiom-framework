@@ -1,0 +1,36 @@
+=== Source-boundary checks ===
+[PASS] note declares boundary: dimensionless Sommer root kernel
+[PASS] note declares boundary: This note does not derive the physical anchor r0 = 0.5 fm.
+[PASS] note declares boundary: This note does not promote alpha_s(M_Z) to retained status.
+[PASS] note declares boundary: This note does not use r0_anchor_fm as proof input.
+[PASS] parent Sommer partial note points to this standalone root kernel
+
+=== Certificate surface checks ===
+[PASS] certificate authority is Wilson-loop/static-potential
+[PASS] scale-setting mode is fixed-g_bare global Sommer fit
+[PASS] Cornell fit uses 12 finite static-potential points
+[PASS] Cornell string coefficient sigma is positive :: sigma=0.054485636694192
+[PASS] Cornell Coulomb coefficient e lies inside the Sommer target :: e=0.284764583881128
+
+=== Sommer root algebra ===
+[PASS] r0/a recomputed from sqrt((1.65 - e)/sigma) matches fit field :: computed=5.005676254205751
+[PASS] r0/a recomputed from fit matches global certificate field :: global=5.005676254205751
+[PASS] Sommer force equation sigma*(r0/a)^2 + e = 1.65 closes :: value=1.650000000000000
+
+=== Finite-certificate diagnostics ===
+[PASS] three finite-volume r0/a diagnostics are present
+[PASS] finite-volume diagnostics are positive
+[PASS] finite-volume r0/a diagnostic spread is below 11 percent :: spread=0.099142
+
+=== Physical-anchor separation ===
+[PASS] physical a_fm is a downstream conversion using r0_anchor_fm :: a_fm=0.099886603649188
+[PASS] changing the physical anchor changes a_fm but not dimensionless r0/a
+[PASS] runner never reads alpha_s(M_Z) result for the root theorem
+
+=== Falsifiers ===
+[PASS] falsifier detects omitting the Coulomb e term :: wrong=5.503018299432378
+[PASS] falsifier detects the wrong force-sign convention :: wrong=1.080470832237744
+[PASS] falsifier detects using the wrong Sommer target :: wrong=3.623126441193114
+[PASS] domain guard rejects nonpositive sigma
+
+SUMMARY: PASS=23 FAIL=0

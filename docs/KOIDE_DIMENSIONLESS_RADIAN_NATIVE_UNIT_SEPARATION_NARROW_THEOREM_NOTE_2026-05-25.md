@@ -403,8 +403,8 @@ edges:
   `A = d theta` underlying the Berry-per-step native unit; not
   consumed as a forcing input here.
 - `KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`
-  — the original site naming the radian-bridge postulate `P`; not
-  consumed as a forcing input here.
+  — current repaired note is formal-only Q-Delta arithmetic; not
+  consumed as a forcing input here and not authority for a radian bridge.
 - `KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`
   — the original site noting `(rational) * pi` form of retained
   periodic phase sources on `Cl(3)/Z^3`; not consumed as a forcing

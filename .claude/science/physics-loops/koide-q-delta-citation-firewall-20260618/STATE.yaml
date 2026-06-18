@@ -1,0 +1,23 @@
+loop: koide-q-delta-citation-firewall-20260618
+status: ready_for_review
+target_claim_id: koide_q_delta_linking_relation_theorem_note_2026-04-20
+target_audit_status_on_main: audited_renaming
+objective: "Repair source-side citation hygiene for the Koide Q-Delta formal identity row without applying an audit verdict."
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes_source_side_only
+branch: codex/koide-q-delta-citation-firewall-20260618
+base: origin/main e22efc4f8
+files_touched:
+  - docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md
+  - scripts/frontier_koide_q_delta_formal_ratio_repair.py
+  - logs/runner-cache/frontier_koide_q_delta_formal_ratio_repair.txt
+  - direct source citations listed in HANDOFF.md
+open_imports:
+  - "No derivation of Q_d = 2/d from retained framework inputs."
+  - "No derivation of Delta_d = 2/d^2 from a physical Koide/Berry bridge."
+  - "Independent audit still owns any status change."
+checks:
+  - "python3 scripts/frontier_koide_q_delta_formal_ratio_repair.py -> PASS=106 FAIL=0"
+next_exact_action: "Reviewer should inspect the citation-firewall PR and, if acceptable, hand it to the independent audit lane for re-audit."
+stop_condition: "Block packaged as one PR; continue audit-unlock campaign on a separate target."

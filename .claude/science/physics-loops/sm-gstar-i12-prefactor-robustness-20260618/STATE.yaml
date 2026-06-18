@@ -1,0 +1,23 @@
+loop_slug: sm-gstar-i12-prefactor-robustness-20260618
+branch: codex/sm-gstar-i12-prefactor-robustness-20260618
+base: origin/main
+status: pr_ready_pending_push
+target_status: bounded-support
+active_route: adversarial prefactor robustness for the I12 empirical thermal comparator
+target_claim_id: sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29
+target_blocker: "empirical small-m_nu admission and Gamma ~ y_nu^2 T versus H thermalization comparator remain load-bearing."
+files_touched:
+  - docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md
+  - scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
+  - logs/runner-cache/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.txt
+  - .claude/science/physics-loops/sm-gstar-i12-prefactor-robustness-20260618/
+open_imports:
+  - empirical small neutrino mass remains an admitted comparator
+  - parametric Gamma ~ y_nu^2 T scaling remains a thermal comparator
+  - radiation-era H ~ T^2/M_Pl scaling remains a cosmology comparator
+verification:
+  - python3 scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
+  - python3 -m py_compile scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
+review_loop: reviewer_owned_not_run_per_user_direction
+next_exact_action: reviewer should decide whether the prefactor-robustness packet is enough to re-open the I12 conditional row for independent audit.

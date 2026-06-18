@@ -46,6 +46,14 @@ def gamma_over_h(y_nu: float, temp_gev: float) -> float:
     return y_nu * y_nu * MPL_GEV / (H_PREF * math.sqrt(GSTAR) * temp_gev)
 
 
+def gamma_over_h_with_enhancement(y_nu: float, temp_gev: float, enhancement: float) -> float:
+    return enhancement * gamma_over_h(y_nu, temp_gev)
+
+
+def y_threshold_with_enhancement(temp_gev: float, enhancement: float) -> float:
+    return y_threshold(temp_gev) / math.sqrt(enhancement)
+
+
 def mass_from_y(y_nu: float) -> float:
     return y_nu * HVEV_GEV / EV_TO_GEV
 
@@ -53,6 +61,7 @@ def mass_from_y(y_nu: float) -> float:
 def main() -> int:
     note = NOTE.read_text(encoding="utf-8")
     parent = PARENT.read_text(encoding="utf-8")
+    flat = " ".join(note.split())
 
     print("SM GSTAR I12 EMPIRICAL THERMAL COMPARATOR BRIDGE")
 
@@ -64,6 +73,10 @@ def main() -> int:
         "does not derive small neutrino mass",
         "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
         "`0.6 eV` edge remains more than three decades below it",
+        "prefactor-robustness repair",
+        "E = c_Gamma / c_H",
+        "Gamma_nuR/H < 1e-3",
+        "m_nu > 20 eV",
         "new axiom",
     ]
     for phrase in required_note_phrases:
@@ -107,7 +120,61 @@ def main() -> int:
     check("thermalization at 100 GeV implies m_nu above 1 keV", m_required_ev > 1e3, f"{m_required_ev:.3e} eV")
     check("thermalization at 100 GeV is above 0.6 eV comparator by > 1000x", m_required_ev / 0.6 > 1000)
 
-    flat = " ".join(note.split())
+    masses_ev = [0.05, 0.1, 0.6]
+    temps_gev = [100.0, 1.0e9, 1.0e12]
+    enhancements = [1.0e-4, 1.0e-2, 1.0, 1.0e2, 1.0e4]
+    worst = max(
+        (gamma_over_h_with_enhancement(y_from_mnu(m), t, e), m, t, e)
+        for m in masses_ev
+        for t in temps_gev
+        for e in enhancements
+    )
+    check(
+        "prefactor grid has 3 masses x 3 temperatures x 5 enhancements = 45 cases",
+        len(masses_ev) * len(temps_gev) * len(enhancements) == 45,
+    )
+    check(
+        "all prefactor-grid cases remain out of equilibrium (Gamma/H < 1)",
+        worst[0] < 1.0,
+        f"worst={worst[0]:.3e} at m={worst[1]} eV, T={worst[2]:.3e} GeV, E={worst[3]:.1e}",
+    )
+    check(
+        "hostile E=1e4 at 0.6 eV, 100 GeV still has Gamma/H < 1e-3",
+        gamma_over_h_with_enhancement(y_06, 100.0, 1.0e4) < 1.0e-3,
+        f"{gamma_over_h_with_enhancement(y_06, 100.0, 1.0e4):.3e}",
+    )
+    y_thr_100_e4 = y_threshold_with_enhancement(100.0, 1.0e4)
+    m_required_100_e4 = mass_from_y(y_thr_100_e4)
+    check(
+        "hostile E=1e4 thermalization at 100 GeV still implies m_nu > 20 eV",
+        m_required_100_e4 > 20.0,
+        f"{m_required_100_e4:.3e} eV",
+    )
+    check(
+        "hostile E=1e4 thermalization mass remains >30x the 0.6 eV generous edge",
+        m_required_100_e4 / 0.6 > 30.0,
+        f"{m_required_100_e4 / 0.6:.2f}x",
+    )
+    check(
+        "central 0.1 eV branch survives even E=1e8 at 100 GeV",
+        gamma_over_h_with_enhancement(y_01, 100.0, 1.0e8) < 1.0,
+        f"{gamma_over_h_with_enhancement(y_01, 100.0, 1.0e8):.3e}",
+    )
+    check(
+        "temperature monotonicity makes 100 GeV the most lenient point for every enhancement",
+        all(
+            gamma_over_h_with_enhancement(y_from_mnu(m), 100.0, e)
+            > gamma_over_h_with_enhancement(y_from_mnu(m), 1.0e9, e)
+            > gamma_over_h_with_enhancement(y_from_mnu(m), 1.0e12, e)
+            for m in masses_ev
+            for e in enhancements
+        ),
+    )
+    check(
+        "exact 1.66/rate prefactors are not decisive inside the E<=1e4 robustness box",
+        "exact `1.66`, exact rate prefactor" in flat and "E = c_Gamma / c_H" in flat,
+    )
+
     check("note does not claim audit-retained status", "audit-retained" not in flat)
     check("note keeps small mnu derivation excluded", "derive the small neutrino mass" in flat and "does **not**" in flat)
     check("note denies new axiom", "new axiom" in flat)

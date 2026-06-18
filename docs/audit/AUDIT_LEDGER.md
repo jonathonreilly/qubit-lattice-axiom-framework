@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 911 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1650 |
+| unaudited | 1649 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 3 |
@@ -48,6 +48,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
+| `decoration_under_plaquette_self_consistency_note` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
@@ -60,16 +61,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 4 |
 | `audited_clean` | 1317 |
 | `audited_conditional` | 10 |
-| `audited_decoration` | 46 |
+| `audited_decoration` | 47 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
 | `audited_renaming` | 3 |
-| `unaudited` | 1972 |
+| `unaudited` | 1971 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1733 |
-| `decoration` | 48 |
+| `bounded_theorem` | 1732 |
+| `decoration` | 49 |
 | `meta` | 322 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
@@ -100,19 +101,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1399 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
-| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
+| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1019 | 41.49 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 846 | 39.73 | `audited_clean` | **retained_bounded** |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1365 | 39.42 | `audited_clean` | **retained** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1364 | 39.41 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 907 | 38.83 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 998 | 38.46 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 785 | 38.12 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1113 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1086 | 35.59 | `audited_clean` | **retained_bounded** |
@@ -1461,6 +1462,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
+| `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
@@ -2827,6 +2829,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Haar-probability measure on the Pontryagin dual T^3 of Z^3, written on the [-π,π]^3 coordinate fundamental domain, is d^3k/(2π)^3 because vol([-π,π]^3)=(2π)^3.  _(class `A`)_
 - **chain closes:** True — The cited axiom supplies the Z^3 substrate, and the remaining steps are standard Pontryagin-dual/Haar-normalization facts plus product-measure arithmetic on [-π,π]^3. The continuum d^3k/(2π)^3 convention is not used to derive the substrate normalization.
 - **rationale:** The load-bearing computation is an algebraic and measure-normalization closure over the accepted Z^3 lattice premise plus textbook Pontryagin/Haar facts explicitly admitted by the claim. Independent checking of the displayed formulae confirms that the dual coordinate period is 2π, the product volume is (2π)^3=8π^3, and normalizing Haar measure to total mass one gives density 1/(2π)^3. The runner supports this but is not the sole basis for the verdict; its source performs arithmetic and finite character-factorization checks rather than merely printing a verdict. No open upstream authority is load-bearing in the restricted packet.
+- **auditor confidence:** high
+
+### `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`
+
+- **Note:** [`CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Bounded arithmetic certificate for the canonical plaquette-derived alpha_LM and alpha_s(v) constants, conditional only on using the parent plaquette value P = 0.5934 as scoped input; no derivation of P or physical coupling closure is audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_plaquette_self_consistency_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Taking P = 0.5934 as the parent input, define u_0 = P^(1/4), alpha_bare = 1/(4 pi), alpha_LM = alpha_bare/u_0, and alpha_s(v) = alpha_bare/u_0^2, then check the displayed identities.  _(class `A`)_
+- **chain closes:** True — Within the stated arithmetic scope, the chain closes by direct substitution and numerical identity checks from P = 0.5934 and 1/(4 pi). The derivation or physical certification of P is outside this row and remains owned by the parent plaquette surface.
+- **rationale:** The runner and helper import or hard-code the parent input P = 0.5934, then compute the displayed quantities by elementary arithmetic. The independent check confirms the formulas and printed values within the stated tolerances. There are no external comparator checks and no first-principles beta=6 plaquette derivation here, so the result is an algebraic decoration of a single retained-bounded parent rather than an independent physical closure.
+- **decoration parent:** `plaquette_self_consistency_note`
 - **auditor confidence:** high
 
 ### `car_from_positivity_neutrality_note_2026-06-02`

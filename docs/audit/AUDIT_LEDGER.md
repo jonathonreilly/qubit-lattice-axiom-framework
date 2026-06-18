@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 996 |
+| **retained_bounded** | 997 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1433 |
+| unaudited | 1432 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 27 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1444 |
+| `audited_clean` | 1445 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1755 |
+| `unaudited` | 1754 |
 
 | claim_type | count |
 |---|---:|
@@ -1248,6 +1248,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_taste_cube_decomposition_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `s3_time_constructed_support_tensor_primitive_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `s3_time_tensor_build_memo` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `scalar_3plus1_temporal_ratio_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `scalar_kg_rerun_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -18272,6 +18273,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Within the current restricted Route-2 carrier/readout class, even after granting the two T-side candidates, beta_E / alpha_E remains a free parameter unless an additional E-center endpoint ratio, source-domain rule, or stronger readout primitive is supplied.  _(class `A`)_
 - **chain closes:** True — The cited readout authority supplies the channelwise P_R reduction and endpoint-ratio algebra, the time-coupling authority supplies the induced non-unique conditional family, and the retained naturality no-go supplies the rho_E non-selection boundary. The positive readout theorem remains open because beta_E / alpha_E = 21/4 is not derived.
 - **rationale:** All cited authorities in the restricted packet are retained-grade or retained_no_go, and the source note keeps the result scoped as an open gate rather than promoting the missing E-channel entry. The primary runner is not a print-only certificate: it checks the cited authority chain, computes the restricted E endpoint carrier columns through the helper path, and verifies the exact reduced-family algebra with rational arithmetic. The hard-coded 21/4 appears only as the forbidden target/equivalent endpoint value, not as a derived output, and the downstream firewall correctly blocks use as a positive readout or unique time-coupling theorem.
+- **auditor confidence:** high
+
+### `s3_time_tensor_build_memo`
+
+- **Note:** [`S3_TIME_TENSOR_BUILD_MEMO.md`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded synthesis that the cited readout and time-coupling notes imply an exact conditional readout-to-slice family plus unresolved E-channel dependence; no unique P_R or Einstein/Regge dynamics identification is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-s3_time_tensor_build_memo-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the cited Route-2 readout/time authorities, the stack has exact K_R/Lambda_R, restricted P_R reduction, endpoint algebra, and a conditional Xi_P(t;c) family, while the missing E-channel readout entry blocks a unique Theta_R -> Lambda_R theorem.  _(class `A`)_
+- **chain closes:** True — The scoped conclusion follows from the two provided retained-grade authorities plus finite endpoint algebra. The unique readout map and final dynamics identification are explicitly outside the safe claim.
+- **rationale:** The load-bearing step is an algebraic/logical closure over the cited readout and time-coupling authorities, not a new first-principles physics derivation. The runner source performs exact Fraction arithmetic for the endpoint identities and checks the memo preserves the restricted source boundary. No external comparator, tuned numerical input, or asserted unique P_R enters the audited claim.
 - **auditor confidence:** high
 
 ### `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23`

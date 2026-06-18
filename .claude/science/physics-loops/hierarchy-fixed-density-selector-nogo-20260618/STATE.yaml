@@ -1,0 +1,13 @@
+loop: hierarchy-fixed-density-selector-nogo-20260618
+target_claim_id: hierarchy_dimensional_compression_note
+status: block_ready_for_review_pr
+actual_current_surface_status: no-go / negative-route-pruning
+branch: codex/hierarchy-fixed-density-selector-nogo-20260618
+files_touched:
+  - docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md
+  - scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py
+  - docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md
+  - .claude/science/physics-loops/hierarchy-fixed-density-selector-nogo-20260618/TRACE_GATE.md
+  - .claude/science/physics-loops/hierarchy-fixed-density-selector-nogo-20260618/CLAIM_STATUS_CERTIFICATE.md
+  - .claude/science/physics-loops/hierarchy-fixed-density-selector-nogo-20260618/HANDOFF.md
+next_exact_action: "Open PR for reviewer extraction; do not edit audit ledger or main."

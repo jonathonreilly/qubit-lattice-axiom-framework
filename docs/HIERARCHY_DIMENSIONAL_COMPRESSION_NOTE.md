@@ -30,6 +30,19 @@ load-bearing here: the D=4 taste-count input is now routed through retained
 bounded taste-count authorities named below. No new axiom, Tier-A admission,
 observed target, or audit status is introduced here.
 
+## 2026-06-18 selector no-go: fixed-density algebra cannot pick the physical surface
+
+The fixed-density coefficient-to-scale bridge supplies ratios, not a physical
+selector. The source-side no-go
+`HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md` proves the
+remaining limitation exactly: for `rho_* = A(L) v(L)^4`, absolute-density
+rescalings leave all endpoint ratios unchanged, and the endpoint set
+`A_2`, `A_4`, `A_inf` admits multiple compatible reference surfaces. Therefore
+the physical electroweak order-parameter/readout identification and endpoint
+surface selection cannot be recovered by reusing the fixed-density algebra
+alone. A future positive repair must supply an independent physical selector
+theorem; this note remains conditional until then.
+
 ## 0. Audit context — what this note still claims, and what it does not
 
 The 2026-05-05 audit pass returned `audited_numerical_match` with the

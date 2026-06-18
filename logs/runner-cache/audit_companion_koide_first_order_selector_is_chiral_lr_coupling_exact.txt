@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py
-runner_sha256: 5c745c12eb98919f470ab818a109369b60cd86fe7c0b12eeef4eca35db1d3b98
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.58
-status: ok
------ stdout -----
 PASS - (1a) Sum lambda = 3a, Sum lambda^2 = 3a^2+6|b|^2 (both delta-INDEPENDENT) -> U(1)_b is a red herring
 PASS - (1b) Q=(1+2r)/3 with r=|b|^2/a^2 -> Q=2/3 iff r=1/2; Q has NO delta dependence (count is a functional choice, not a symmetry quotient)
 PASS - (2a) clock grading: Omega^-1 C Omega = w * C (genuine nontrivial Z3 action, character k on C^k line)
@@ -27,6 +19,3 @@ is false and is not claimed. (4) the factor-crossing L-R coupling shape M(b)(x)s
 (5) the native mass is Berry-flat/commuting. NET: this is bounded algebraic localization only; the framework
 supplies the grading eps but NOT the physical coupling or r-weighting rule -> gated on the AC_phi_lambda corner
 realization. NOT a derivation of r=1/2 and NOT a retained positive selector theorem.
-
------ stderr -----
-

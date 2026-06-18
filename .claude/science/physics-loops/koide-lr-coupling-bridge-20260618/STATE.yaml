@@ -1,0 +1,25 @@
+loop_slug: koide-lr-coupling-bridge-20260618
+branch: codex/koide-lr-coupling-bridge-20260618
+base: origin/main
+current_goal: "Repair the Koide first-order selector conditional audit by making the bounded algebraic localization surface explicit and excluding physical selector closure."
+target_status: bounded-support
+cycle_count: 1
+active_route: "bounded-localization certificate for finite C3/chirality algebra"
+hard_residual: "physical AC_phi_lambda -> M(b) tensor sigma_+ action term and physical r-weighting/readout rule"
+files_touched:
+  - docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md
+  - docs/KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md
+  - scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py
+  - scripts/koide_first_order_selector_bounded_localization_certificate_2026_06_18.py
+  - logs/runner-cache/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.txt
+  - logs/runner-cache/koide_first_order_selector_bounded_localization_certificate_2026_06_18.txt
+open_imports:
+  - "physical L-R action/readout bridge"
+  - "framework-selected Koide r=1/2 weighting rule"
+no_go_routes:
+  - "native R^3/C3/U(1)_b route supplies the physical first-order selector"
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending_pr_creation
+next_exact_action: "Commit, push, open PR, then continue from exact uncovered conditional/cycle/compute scan."
+stop_condition: "Stop only when no source-side repair, compute unblock, cycle break, or bounded certificate target remains."

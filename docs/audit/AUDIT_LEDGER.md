@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 213 |
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 20 |
-| unaudited | 1567 |
+| open_gate | 21 |
+| unaudited | 1566 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 7 |
 | ~~audited_renaming~~ | 14 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1370 |
+| `audited_clean` | 1371 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 7 |
 | `audited_renaming` | 14 |
-| `unaudited` | 1889 |
+| `unaudited` | 1888 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 502 |
-| `medium` | 882 |
+| `high` | 501 |
+| `medium` | 883 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1004 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1339,6 +1339,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `symmetry_spectrum_mirror_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `taste_scalar_isotropy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `teleportation_3d1_causal_record_channel_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_3d_operator_consistent_end_to_end_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_3d_readout_convention_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -18847,6 +18848,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The Hessian therefore reduces to the binary orthogonality sum sum_s (-1)^{s_i} (-1)^{s_j}, which is 8 for i=j and 0 for i!=j.  _(class `A`)_
 - **chain closes:** True — The simultaneous eigenvalue formula lambda_s(phi)=sum_i phi_i (-1)^{s_i} gives, by the chain rule, a common coefficient 2 f'(v^2)+4 v^2 f''(v^2) multiplying (-1)^{s_i}(-1)^{s_j} at phi=(v,0,0). Summing over the eight binary signs gives a Hessian proportional to delta_ij with no dependency or bounded companion estimate needed.
 - **rationale:** The proposed positive_theorem type is correct for the scoped exact Hessian-isotropy statement. The source note's proof sketch compresses the derivative step, but the displayed eigenvalue formula plus standard chain rule make the Hessian coefficient common across all sign sectors at the axis, leaving exactly the binary orthogonality identity. The cached runner output for SHA 519c1d8d830ea43f8cdcd866565184a4d2d1c8d4c9b0318557fe22df5f35c59b reports THEOREM PASS=30 and FAIL=0, checking the shift algebra, eigenvalue sign sum, binary orthogonality, and finite-difference Hessian isotropy for representative smooth functions. The six bounded gauge/thermal passes are outside this audited scope and are not used for closure.
+- **auditor confidence:** high
+
+### `teleportation_3d1_causal_record_channel_note`
+
+- **Note:** [`TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md`](../../docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite planning-scope check of an explicit classical Bell-record channel on the specified 3D lattice: given a supplied Bell record and assumed ordinary teleportation resource, delivery obeys the discrete future cone and enables post-delivery qubit-state correction without matter transfer, FTL signaling, or derivation of the record/resource/apparatus.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-teleportation_3d1_causal_record_channel_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The emitted two-bit Bell record propagates on a local 3D+1 lattice worldline with earliest_delivery_tick = emitted_at_tick + ceil(distance / speed), and the correct delivered record restores Bob's branch state while pre-delivery Bob state remains input-independent.  _(class `C`)_
+- **chain closes:** True — Within that scoped model, the runner source directly computes the Manhattan distance, local worldline, exactly-once channel guards, Bell-branch projection/correction fidelities, and finite-probe pre-delivery Bob-state independence from explicit lattice and one-qubit matrices. The downstream helper adds boundary-status guards, but does not expand the audited physical scope beyond the supplied-record planning artifact.
+- **rationale:** The primary runner is not a print-only harness: it instantiates the finite 3D+1 cone, schedules records, enforces receive constraints, computes Bell projections and Pauli corrections, and evaluates no-signaling probes numerically. The source note's limitations explicitly exclude deriving Bell bits, the Bell resource, measurement apparatus dynamics, matter transport, and FTL control, so those are not silently claimed. The helper performs cross-note boundary-status checks that pass in the cached run and preserve the bounded downstream alignment rather than supplying the finite channel computation itself.
 - **auditor confidence:** high
 
 ### `teleportation_3d_initial_ramp_probe_note`

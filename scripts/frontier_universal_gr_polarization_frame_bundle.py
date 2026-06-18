@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
-"""Audit the direct-universal polarization-frame-bundle blocker.
+"""Verify the finite polarization-frame orbit support packet.
 
-This is not a closure proof. It checks that the current atlas gives:
+This is not a closure proof and not an exhaustive no-go. It checks that the
+current finite prototype gives:
 
 1. the exact scalar observable generator from the axiom-side observable
    principle;
 2. the exact `3+1` kinematic lift on `PL S^3 x R`;
 3. the exact tensor-valued variational candidate;
 4. the exact unique symmetric `3+1` quotient kernel;
-5. a sharpened blocker stating that the missing primitive is a covariant
-   `3+1` polarization frame / projector bundle;
-6. a frame-orbit check showing that the current stack determines an
-   associated family of localizations, not a canonical section.
+5. a finite frame-orbit check showing that the sampled prototype determines an
+   associated family of localizations, not a canonical complement section by
+   this route;
+6. source-boundary text forbidding reuse as full GR closure or as an
+   exhaustive no-go.
 """
 
 from __future__ import annotations
@@ -34,6 +36,13 @@ CURVATURE = DOCS / "UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md"
 FRAME_BUNDLE = DOCS / "UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md"
 ATTEMPT_NOTE = DOCS / "UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md"
 
+SOURCE_INPUT_LINKS = [
+    "OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+    "S3_ANOMALY_SPACETIME_LIFT_NOTE.md",
+    "UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md",
+    "UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md",
+]
+
 SOURCE_BOUNDARY_REQUIRED_PHRASES = [
     "Downstream source-boundary firewall",
     "exact scalar observable generator",
@@ -46,7 +55,6 @@ SOURCE_BOUNDARY_REQUIRED_PHRASES = [
     "curvature-localization operator `Pi_curv`",
     "Einstein/Regge dynamics law",
     "framework-level GR derivation",
-    "exhaustive no-go",
     "distinguished covariant frame/projector bundle with connection",
 ]
 
@@ -63,7 +71,7 @@ def read(path: Path) -> str:
 
 
 def has(text: str, needle: str) -> bool:
-    return needle.lower() in text.lower()
+    return " ".join(needle.lower().split()) in " ".join(text.lower().split())
 
 
 def bilinear(
@@ -298,10 +306,22 @@ def main() -> int:
             f"direct = {scalar_direct:.6e}, expected = {scalar_expected:.6e}",
         ),
         Check(
-            "blocker note names the curvature-localization map",
-            has(blk, "curvature-localization map")
-            and has(blk, "Einstein/Regge"),
-            "blocker is still sharpened to the localization primitive",
+            "source note narrows to finite frame-orbit support",
+            has(fb, "2026-06-18 scope repair")
+            and has(fb, "finite frame-orbit support")
+            and has(fb, "not an exhaustive no-go"),
+            "source row is scoped as finite support, not universal no-go",
+        ),
+        Check(
+            "source note exposes non-reciprocal verifier dependencies",
+            all(f"]({target})" in fb for target in SOURCE_INPUT_LINKS)
+            and "UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md" in fb
+            and "](UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md)" not in fb
+            and "UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md" in fb
+            and "](UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md)" not in fb
+            and "UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md" in fb
+            and "](UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md)" not in fb,
+            "support sources are markdown-linked; reciprocal guardrail notes stay plain text",
         ),
         Check(
             "curvature-localization blocker isolates the frame-orbit obstruction",
@@ -310,9 +330,11 @@ def main() -> int:
             "older frame-orbit blocker is now historical; live blocker reframed as interpretation theorem beyond Lorentzian closure",
         ),
         Check(
-            "frame-bundle note records the same missing primitive",
-            has(fb, "polarization-frame bundle") and has(fb, "Pi_curv"),
-            "the dedicated blocker note matches the curvature blocker",
+            "frame-bundle note records missing primitive without closure claim",
+            has(fb, "polarization-frame bundle")
+            and has(fb, "Pi_curv")
+            and has(fb, "does not close universal GR"),
+            "the dedicated note keeps Pi_curv and full GR outside this packet",
         ),
         Check(
             "localization coefficients depend on frame choice",
@@ -333,7 +355,7 @@ def main() -> int:
         ),
     ]
 
-    print("UNIVERSAL GR POLARIZATION-FRAME BUNDLE AUDIT")
+    print("UNIVERSAL GR POLARIZATION-FRAME FINITE ORBIT VERIFIER")
     print("=" * 78)
     for c in checks:
         tag = "PASS" if c.ok else "FAIL"
@@ -363,8 +385,8 @@ def main() -> int:
             "Direct-universal progress: the scalar observable principle and the "
             "3+1 lift now support an exact tensor-valued variational candidate "
             "with a unique symmetric quotient kernel, but the exact curvature-"
-            "localization operator is still missing and only an associated "
-            "localization orbit is currently determined."
+            "localization operator is not supplied here. The checked result is "
+            "finite frame-orbit support, not an exhaustive no-go."
         )
         return 0
 

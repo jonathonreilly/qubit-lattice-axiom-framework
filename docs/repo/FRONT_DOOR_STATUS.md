@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1588 |
-| Retained-grade rows, including boxed decorations | 1472 |
+| Applied audit verdicts | 1589 |
+| Retained-grade rows, including boxed decorations | 1473 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 217 |
-| Retained bounded rows | 982 |
+| Retained bounded rows | 983 |
 | Boxed decorations under retained parents | 55 |
 | Open gates | 31 |
-| Unaudited rows | 1469 |
+| Unaudited rows | 1468 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 53 |
 | Audited renaming rows | 20 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1471 |
-| Ready rows | 55 |
+| Total pending rows | 1470 |
+| Ready rows | 54 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 486 |
+| Leaf pending | 485 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05`](../../docs/GAUGE_VACUUM_THREE_SAMPLE_RADICAL_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
 - [`hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12`](../../docs/HKD_CORRESPONDENCE_GENERAL_CHARTS_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12`](../../docs/HKD_ENTRY_SUM_FULL_L_CLOSURE_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12`](../../docs/HKD_ENTRY_SUM_FULL_L_CLOSURE_NARROW_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`koide_dkd_berry_spectator_note_2026-05-31`](../../docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 930 |
-| Leaf nodes | 1510 |
+| Medium nodes | 931 |
+| Leaf nodes | 1509 |
 
 Top load-bearing rows by graph score:
 

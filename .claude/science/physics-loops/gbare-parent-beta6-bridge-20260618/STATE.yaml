@@ -1,0 +1,17 @@
+loop: gbare-parent-beta6-bridge-20260618
+status: verified_source_block
+target: g_bare_derivation_note
+target_status: best_honest_status
+active_route: finite-link scalar slot plus Wilson coefficient bridge
+branch: codex/gbare-parent-beta6-bridge-20260618
+files_touched:
+  - docs/G_BARE_DERIVATION_NOTE.md
+  - docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md
+  - scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
+  - scripts/frontier_g_bare_derivation.py
+open_imports:
+  - Wilson action-form selection remains supplied, not derived here.
+  - Global logarithm branch and continuum gauge-field limit remain out of scope.
+  - Independent audit must decide parent status after review.
+next_exact_action: "Commit, push, and open PR."
+stop_condition: "PR opened and effectiveness review returned to user."

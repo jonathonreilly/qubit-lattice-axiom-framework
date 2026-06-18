@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_g_bare_derivation.py
-runner_sha256: 7dfdc335ad93bc485791dba4786ec8c6dfe208ec0446d80f6f61fc3dff1570b7
+runner_sha256: 70094604089c00a03f28a0aeb641a890604c58cef442b2686a4724424797cce0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.77
 status: ok
 ----- stdout -----
 ========================================================================================
-G_BARE = 1 PRIMARY DERIVATION RUNNER
-Cl(3) -> End(V) -> su(3) -> Wilson action -> g_bare = 1
+G_BARE CONDITIONAL BETA=6 COROLLARY RUNNER
+CN + WM + supplied beta=6 + N_c=3 -> g_bare^2 = 1
 ========================================================================================
 
 ========================================================================================
-SECTION A: Cl(3) -> End(V=C^8) chiral representation (axiom A1)
+SECTION A: Cl(3) -> End(V=C^8) chiral representation (Quantum axiom)
 ========================================================================================
   [PASS] Cl(3) anticommutator {G_1, G_1} = 2 delta_11 I_8  (||{G_1, G_1} - target|| = 0.00e+00)
   [PASS] Cl(3) anticommutator {G_1, G_2} = 2 delta_12 I_8  (||{G_1, G_2} - target|| = 0.00e+00)
@@ -39,7 +39,7 @@ SECTION B: canonical orthonormal su(3) generators on canonical triplet
   [PASS] quadratic Casimir sum_a T_a T_a = (4/3) I_3 in fundamental  (||casimir - C_F I|| = 2.22e-16)
 
 ========================================================================================
-SECTION C: Wilson plaquette small-a expansion forces beta = 2 N_c / g^2
+SECTION C: Wilson plaquette small-a expansion gives beta = 2 N_c / g^2
 ========================================================================================
   [PASS] A_mu, A_nu are Hermitian su(3) elements
   [PASS] F_munu = i [A_mu, A_nu] is Hermitian (constant-A limit)
@@ -48,78 +48,97 @@ SECTION C: Wilson plaquette small-a expansion forces beta = 2 N_c / g^2
   [PASS] matching: beta = 2 N_c / g^2 at g^2 = 1.0 gives beta = 6.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
   [PASS] matching: beta = 2 N_c / g^2 at g^2 = 1.5 gives beta = 4.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
   [PASS] matching: beta = 2 N_c / g^2 at g^2 = 2.0 gives beta = 3.0000  (beta * g^2 = 6.000000 = 2 N_c = 6)
-  [PASS] at N_c = 3, the canonical normalization gives beta = 6 and g_bare^2 = 1  (beta = 2 N_c = 6; g_bare^2 = 2 N_c / beta = 1.0)
+  [PASS] Section C does not derive the local beta = 6 surface  (beta=6 is checked only as a scoped input in Section E)
 
 ========================================================================================
-SECTION D: rescaling A -> c * A shifts beta by c^2, not g_bare
+SECTION D: scalar rescaling changes the canonical Gram surface
 ========================================================================================
   [PASS] rescale T -> c T at c = 0.5000: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 2.78e-17)
   [PASS] rescale T -> c T at c = 0.5000: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 0.2500: beta_new = 1.5000  (beta_old * c^2 = 1.5000, beta_new (matched) = 1.5000, no shift to g_bare)
   [PASS] rescale T -> c T at c = 1.4142: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 0.00e+00)
   [PASS] rescale T -> c T at c = 1.4142: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 2.0000: beta_new = 12.0000  (beta_old * c^2 = 12.0000, beta_new (matched) = 12.0000, no shift to g_bare)
   [PASS] rescale T -> c T at c = 2.0000: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 4.44e-16)
   [PASS] rescale T -> c T at c = 2.0000: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 4.0000: beta_new = 24.0000  (beta_old * c^2 = 24.0000, beta_new (matched) = 24.0000, no shift to g_bare)
   [PASS] rescale T -> c T at c = 3.0000: Gram = c^2 * delta/2  (||Gram_scaled - c^2 delta/2|| = 1.78e-15)
   [PASS] rescale T -> c T at c = 3.0000: Gram NOT equal to canonical delta/2  (non-canonical normalization (forbidden by canonical Cl(3) basis))
-  [PASS] rescale shifts beta by c^2 = 9.0000: beta_new = 54.0000  (beta_old * c^2 = 54.0000, beta_new (matched) = 54.0000, no shift to g_bare)
+  [PASS] beta-routing theorem derived by this parent runner is false  (only Gram scaling is checked here)
+  [PASS] continuum rescaling freedom removed by this parent runner is false  (requires a separate action-coefficient theorem)
 
   Conclusion: under canonical Tr(T_a T_b) = delta_ab / 2,
-  the rescaling A -> c * A shifts the matched beta by c^2, NOT g_bare.
-  The continuum rescaling freedom is removed by the canonical normalization.
+  nontrivial scalar rescaling changes the canonical Gram surface.
+  This runner does not derive beta routing or remove continuum rescaling freedom.
 
 ========================================================================================
-SECTION E: constraint-vs-convention disambiguation
+SECTION E: conditional beta=6 algebra corollary
 ========================================================================================
-  [PASS] canonical beta = 2 N_c = 6 for SU(3) (exact)  (beta = 6)
-  [PASS] given canonical normalization + beta = 6, g_bare^2 = 1 forced (exact)  (g_bare^2 = 2 N_c / beta = 1)
-  [PASS] alternative g^2 = 1/2 requires beta = 12 != 6  (incompatible with canonical normalization-forced beta = 6)
-  [PASS] alternative g^2 = 2 requires beta = 3 != 6  (incompatible with canonical normalization-forced beta = 6)
-  [PASS] alternative g^2 = 4 requires beta = 3/2 != 6  (incompatible with canonical normalization-forced beta = 6)
-  [PASS] convention layer: canonical Tr(T_a T_b) = delta_ab/2 is the framework normalization  (carried by cl3_color_automorphism_theorem (axiom A4 normalization input))
-  [PASS] constraint layer: given canonical normalization, g_bare = 1 is structurally derived  (no separate g_bare convention layer; g_bare = 1 follows as a constraint)
-  [PASS] [BOUNDED] bounded boundary: Wilson action form itself remains a convention-layer input  (see G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18 Claim 3 caveat)
+  [PASS] scoped beta input equals 6 for this conditional corollary  (beta_supplied = 6)
+  [PASS] color rank input N_c = 3  (N_c = 3)
+  [PASS] given WM + supplied beta = 6 + N_c = 3, g_bare^2 = 1 (exact)  (g_bare^2 = 2 N_c / beta = 1)
+  [PASS] positive-coupling branch gives g_bare = 1  (negative branch and complex choices are outside the supplied gauge-coupling surface)
+  [PASS] alternative g^2 = 1/2 requires beta = 12 != 6  (incompatible with the supplied beta=6 surface)
+  [PASS] alternative g^2 = 2 requires beta = 3 != 6  (incompatible with the supplied beta=6 surface)
+  [PASS] alternative g^2 = 4 requires beta = 3/2 != 6  (incompatible with the supplied beta=6 surface)
+  [PASS] convention layer: canonical Tr(T_a T_b) = delta_ab/2 is the framework normalization  (carried by the CL3 color algebra authority)
+  [PASS] conditional layer: beta=6 is supplied, not derived here  (future science must derive beta=6 before this parent can close unconditionally)
+  [PASS] Wilson action form and local beta coefficient are not promoted by this runner  (this is source-side conditional algebra only)
 
 ========================================================================================
-SECTION F: end-to-end derivation chain (no circular use of g_bare = 1)
+SECTION F: end-to-end conditional chain with explicit beta input
 ========================================================================================
-  [PASS] Step 1: Cl(3) A1 -> End(V=C^8) chiral rep built without g_bare input  ({G_mu, G_nu} = 2 delta_munu I_8 verified in Section A)
+  [PASS] Step 1: Quantum axiom Cl(3) local algebra -> End(V=C^8) chiral rep built without g_bare input  ({G_mu, G_nu} = 2 delta_munu I_8 verified in Section A)
   [PASS] Step 2: canonical orthonormal su(3) Gram = delta/2 (no g_bare input)  (||Gram - delta/2|| = 1.11e-16)
   [PASS] Step 3: Wilson matching gives beta = 2 N_c / g^2 (symbolic, no g_bare input)  (verified in Section C across g^2 in {0.5, 1.0, 1.5, 2.0})
-  [PASS] Step 4: canonical normalization + matching -> g_bare = 1 (derived, not input)  (g_bare^2 = 1.0, derived from beta = 2 N_c = 6)
+  [PASS] Step 4: supplied beta=6 + matching -> g_bare^2 = 1  (g_bare^2 = 1.0, using supplied beta = 6)
 
-  Circularity audit:
-  - Step 1 uses Cl(3) anticommutator (axiom A1); no beta or g input.
+  Explicit-input audit:
+  - Step 1 uses the Quantum axiom Cl(3) local anticommutator; no beta or g input.
   - Step 2 uses canonical Gell-Mann basis; Tr normalization is structural.
   - Step 3 uses Wilson plaquette form + small-a expansion; symbolic beta, g.
-  - Step 4 derives g_bare from canonical normalization + matching; no g input.
-  - Final g_bare = 1 is derived from the chain, not asserted.
-  [PASS] no circular use of g_bare = 1 or beta = 6 as input in the chain  (forward-only relative to canonical normalization and Wilson matching)
+  - Step 4 supplies beta=6 and derives only g_bare^2=1 from matching.
+  - The runner does not derive beta=6 or remove all rescaling freedom.
+  [PASS] no hidden beta=6 derivation is claimed  (beta=6 is an explicit scoped input)
+  [PASS] no positive-theorem parent promotion is claimed  (bounded conditional algebra only)
 
 ========================================================================================
-SECTION G: ledger visibility for the new theorem rows
+SECTION G: source-boundary anchors
 ========================================================================================
-  [PASS] [BOUNDED] declared dep 'cl3_color_automorphism_theorem' present in audit ledger  (effective_status = retained)
-  [FAIL] [BOUNDED] new row 'g_bare_rescaling_freedom_removal_theorem_note_2026-05-03' seeded with deps = ['cl3_color_automorphism_theorem']  (audit_status = audited_clean; effective_status = retained_bounded)
-  [FAIL] [BOUNDED] new row 'g_bare_constraint_vs_convention_theorem_note_2026-05-03' seeded with deps = ['cl3_color_automorphism_theorem']  (audit_status = audited_clean; effective_status = retained_bounded)
+  [PASS] docs/G_BARE_DERIVATION_NOTE.md exists
+  [PASS] docs/G_BARE_DERIVATION_NOTE.md contains: g_bare Conditional beta=6 Corollary
+  [PASS] docs/G_BARE_DERIVATION_NOTE.md contains: **Claim type:** bounded_theorem
+  [PASS] docs/G_BARE_DERIVATION_NOTE.md contains: not a positive theorem
+  [PASS] docs/G_BARE_DERIVATION_NOTE.md contains: CN + WM + supplied beta=6 + N_c=3  =>  g_bare^2 = 1
+  [PASS] docs/G_BARE_DERIVATION_NOTE.md contains: The local `beta = 6` Wilson coefficient surface is an explicit
+  [PASS] docs/G_BARE_DERIVATION_NOTE.md contains: This note does not prove `beta = 6`.
+  [PASS] docs/G_BARE_DERIVATION_NOTE.md contains: canonical Cl(3) normalization alone derives beta = 6
+  [PASS] docs/G_BARE_DERIVATION_NOTE.md contains: bounded conditional algebra; beta=6 remains open
+  [PASS] docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md exists
+  [PASS] docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md contains: g_bare Rescaling Gram-Scaling Lemma
+  [PASS] docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md contains: It is only the exact canonical-Gram scaling lemma
+  [PASS] docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md contains: no longer a beta-routing lemma
+  [PASS] docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md contains: does not derive any `beta_new / beta_old`
+  [PASS] docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md exists
+  [PASS] docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md contains: g_bare Conditional Algebra Corollary
+  [PASS] docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md contains: CN + WM + beta=6 + N_c=3  =>  g_bare^2 = 1
+  [PASS] docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md contains: **beta=6** is an explicit scoped input
+  [PASS] docs/G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md contains: does not derive `beta = 6`
+  [PASS] audit ledger status is not inspected by this runner  (audit-loop owns effective_status and verdicts)
 
 ========================================================================================
 SUMMARY
 ========================================================================================
-  EXACT   : PASS = 51,   FAIL = 0
-  BOUNDED : PASS = 2, FAIL = 2
-  TOTAL   : PASS = 53, FAIL = 2
+  EXACT   : PASS = 73,   FAIL = 0
+  BOUNDED : PASS = 0, FAIL = 0
+  TOTAL   : PASS = 73, FAIL = 0
 
   All exact checks passed.
-  The Cl(3) -> End(V) -> su(3) -> Wilson action chain derives g_bare = 1
-  under the canonical Cl(3) connection normalization Tr(T_a T_b) = delta_ab/2,
-  which is carried through the declared cl3_color_automorphism_theorem dependency.
+  The repaired parent source proves only the conditional algebra
+  CN + WM + supplied beta=6 + N_c=3 -> g_bare^2 = 1.
 
-  Rescaling A -> c * A shifts the matched beta by c^2, NOT g_bare.
-  Therefore g_bare = 1 is queued as a structural constraint candidate
-  relative to the canonical normalization, not an independent free convention.
+  The local beta=6 surface is not derived here.
+  Rescaling is checked only as canonical Gram scaling.
+  AUDIT_LEDGER_WRITTEN=FALSE
+  AUDIT_VERDICT_APPLIED=FALSE
+  POSITIVE_PARENT_PROMOTED=FALSE
 
 ----- stderr -----
 

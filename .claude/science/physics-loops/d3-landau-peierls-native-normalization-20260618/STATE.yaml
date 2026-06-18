@@ -1,0 +1,19 @@
+loop_slug: d3-landau-peierls-native-normalization-20260618
+branch: codex/d3-landau-peierls-native-normalization-20260618
+status: source_pr_ready_after_verification
+goal: "Remove a naked textbook Landau-Peierls normalization import from the d=3 orbital-response comparison by deriving the spinless -1/12 factor in the repo Peierls-flux convention."
+audit_boundary: "No audit loop run; no audit ledger, queue, registry, publication, front-door, or lane-status edits."
+review_boundary: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+new_axioms: 0
+artifacts:
+  - docs/D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md
+  - scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py
+  - logs/runner-cache/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.txt
+  - docs/D3_ORBITAL_RESPONSE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md
+  - scripts/frontier_d3_orbital_response_decomposition_2026_06_13.py
+  - logs/runner-cache/frontier_d3_orbital_response_decomposition_2026_06_13.txt
+verification:
+  - python3 scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py --timeout-sec 120 --tail-chars 4000
+  - python3 scripts/frontier_d3_orbital_response_decomposition_2026_06_13.py
+  - python3 scripts/cached_runner_output.py --refresh scripts/frontier_d3_orbital_response_decomposition_2026_06_13.py --timeout-sec 120 --tail-chars 4000

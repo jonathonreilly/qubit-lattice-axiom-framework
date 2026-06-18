@@ -19,11 +19,17 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import math
+from pathlib import Path
 import sys
 from typing import Iterable
 
 import numpy as np
 
+
+ROOT = Path(__file__).resolve().parents[1]
+PARENT_NOTE_PATH = ROOT / "docs/D3_ORBITAL_RESPONSE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md"
+NORMALIZATION_NOTE_PATH = ROOT / "docs/D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md"
+NORMALIZATION_CACHE_PATH = ROOT / "logs/runner-cache/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.txt"
 
 # Frozen model parameters.
 L_EXACT = 32
@@ -36,8 +42,8 @@ CURVE_MUS = (-4.5, -3.0, -1.5, 0.0, 1.5, 3.0, 4.5)
 
 # Fixed cell normalization for the grand-potential second derivative with
 # dimensionless Peierls flux B per plaquette, spinless charge/hbar/c/a = 1.
-# This is the Landau-Peierls normalization from the continuum
-# Euler-Maclaurin check: d^2 Omega / dB^2 = -1/12 int f'(E) det Hess_xy(E).
+# Source-side derivation:
+# docs/D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md
 CELL_NORMALIZATION = -1.0 / 12.0
 CHI_INTER_SINGLE_BAND = 0.0
 
@@ -238,6 +244,11 @@ def print_curve(rows: Iterable[tuple[float, float, float, float]]) -> None:
         )
 
 
+def text_contains_all(text: str, snippets: Iterable[str]) -> tuple[bool, list[str]]:
+    missing = [snippet for snippet in snippets if snippet not in text]
+    return not missing, missing
+
+
 def main() -> int:
     print("d=3 orbital-response decomposition runner")
     print(
@@ -255,6 +266,39 @@ def main() -> int:
     )
 
     gates = Gates()
+
+    normalization_note = NORMALIZATION_NOTE_PATH.read_text()
+    parent_note = PARENT_NOTE_PATH.read_text()
+    normalization_cache = NORMALIZATION_CACHE_PATH.read_text()
+    source_ok, source_missing = text_contains_all(
+        normalization_note,
+        (
+            "does not introduce a new axiom",
+            "midpoint Euler-Maclaurin coefficient",
+            "`-1/12`",
+            "not an audit verdict",
+        ),
+    )
+    gates.check(
+        "S-1 source normalization note anchors the -1/12 factor without new axioms",
+        source_ok,
+        "source-boundary phrases present" if source_ok else f"missing={source_missing}",
+    )
+    gates.check(
+        "S-1 source normalization runner cache passes",
+        "TOTAL: PASS=9 FAIL=0" in normalization_cache and "status: ok" in normalization_cache,
+        "normalization cache status ok with PASS=9 FAIL=0",
+    )
+    old_import_phrases = (
+        "used as explicit theory " + "inputs",
+        "does not derive the Landau-Peierls formula from the repo " + "axioms",
+    )
+    gates.check(
+        "S-1 parent note no longer leaves LP normalization as a naked theory import",
+        all(phrase not in parent_note for phrase in old_import_phrases)
+        and str(NORMALIZATION_NOTE_PATH.relative_to(ROOT)) in parent_note,
+        "parent cites source normalization dependency and omits old import-boundary phrasing",
+    )
 
     B_fine = flux_from_quanta(FLUX_QUANTA_FINE, L_EXACT)
     B_coarse = flux_from_quanta(FLUX_QUANTA_COARSE, L_EXACT)

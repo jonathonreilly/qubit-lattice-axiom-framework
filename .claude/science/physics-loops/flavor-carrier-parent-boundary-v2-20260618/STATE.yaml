@@ -1,0 +1,22 @@
+loop_slug: flavor-carrier-parent-boundary-v2-20260618
+goal: "Repair the flavor carrier parent note so it remains a combined conditional packet and delegates clean Layer A carrier-type support to the 2026-06-15 split theorem."
+target_status: bounded-support
+mode: source_repair
+cycle_count: 1
+active_route: parent_split_boundary_repair
+hard_residual: "The physical hw=1 locus, r=1/2 basepoint, and readout-class selections remain open."
+files_touched:
+  - docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md
+  - scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py
+  - logs/runner-cache/flavor_carrier_from_axioms_momentum_forced_2026_05_31.txt
+  - .claude/science/physics-loops/flavor-carrier-parent-boundary-v2-20260618/
+open_imports:
+  - "Staggered/KS hw=1 physical locus from baseline."
+  - "Continuous r=1/2 basepoint."
+  - "Index/readout-class selection."
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Commit, push, open a ready review PR, then continue to the next source-side unlock candidate without rebasing older PRs."
+stop_condition: "Stop only after PR handoff or after refreshed queue scan has no source-side repair route left."

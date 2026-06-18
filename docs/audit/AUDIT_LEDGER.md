@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 937 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1584 |
+| unaudited | 1583 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 11 |
+| ~~audited_renaming~~ | 12 |
 | ~~audited_conditional~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -66,8 +66,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 11 |
-| `unaudited` | 1906 |
+| `audited_renaming` | 12 |
+| `unaudited` | 1905 |
 
 | claim_type | count |
 |---|---:|
@@ -102,12 +102,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1048 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1603,6 +1603,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -13252,6 +13253,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Five-judge panel round 1 majority 5/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The scientific chain closes as a class-A finite matrix-algebra check over retained-grade inputs, and the runner source genuinely verifies the load-bearing statements without external comparators or fitted values. The PASS=14 expected-text versus PASS=16 cached/source runner count is a documentation drift, but it does not undermine the algebraic derivation or runner computation in this restricted packet.
 - **rationale:** Five-judge panel round 1 majority 5/5 selected ('first', 'audited_clean', 'bounded_theorem', 'A'). Representative rationale: The scientific chain closes as a class-A finite matrix-algebra check over retained-grade inputs, and the runner source genuinely verifies the load-bearing statements without external comparators or fitted values. The PASS=14 expected-text versus PASS=16 cached/source runner count is a documentation drift, but it does not undermine the algebraic derivation or runner computation in this restricted packet.
 - **auditor confidence:** judicial
+
+### `newton_derivation_top4_bridge_note`
+
+- **Note:** [`NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md`](../../docs/NEWTON_DERIVATION_TOP4_BRIDGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the top4 multistage compact-object bridge: the runner computes persistence, near-linear response in s, and stage-stable kappa on the baseline top4 case, but not an independent inertial-mass or external-field equivalence-principle theorem.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-newton_derivation_top4_bridge_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bridge therefore satisfies the Newton-derivation conditional's Principle-3 premise as a definitional identification: the parameter s is the unique scalar whose extensivity controls the field, response, and persistence simultaneously.  _(class `F`)_
+- **chain closes:** False — The numerical runner supports the operational measurements it prints, but the load-bearing move from source-strength/response scalar s to the inertial quantity required by Principle 3 is an asserted identification. The missing step is an independent bridge deriving that inertial-quantity identification, especially under an external-field response test.
+- **rationale:** Issue: the runner genuinely recomputes overlap, alpha, and kappa stability from the lattice helpers, but those checks do not derive that s is the inertial quantity. Why this blocks: the source note itself frames the decisive move as a definitional identification, and the cited authorities explicitly remain below persistent-pattern equivalence-principle or external-field closure. Repair target: add an independent bridge theorem deriving the inertial response scalar from an external-field compact-object test. Claim boundary until fixed: the row supports a bounded operational response/persistence bridge, not a derived Principle-3 inertial-mass theorem.
+- **auditor confidence:** high
 
 ### `newton_law_derived_note`
 

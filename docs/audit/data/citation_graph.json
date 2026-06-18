@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "newton_derivation_top4_bridge_note"
     },
     {
@@ -52250,6 +52246,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
     },
     {
@@ -52258,7 +52258,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15"
+      "to": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
         "newton_derivation_top4_bridge_note",
         "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
         "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+        "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
-        "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15"
+        "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e915f54f195475cf6473e9e6271c4b0c597429ac8aafaaf0be839012fa1ec3a2",
+      "note_hash": "a545542704b2ae4ea04eb43c2112b1bc0d7de40ca93448ac093a6746cb34878e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

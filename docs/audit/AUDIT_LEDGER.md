@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 913 |
+| **retained_bounded** | 914 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
 | unaudited | 1638 |
-| audit_in_progress | 1 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 6 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1323 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1324 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -639,6 +637,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `growing_graph_dynamic_limit_diagnostic_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `growing_graph_dynamic_propagation_replacement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `growing_graph_expansion_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -8601,6 +8600,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For finite alpha, omega^2(k)/|k|^2 = c2(1 + alpha A4(khat)|k|^2) tends to c2 as k -> 0, so the strict leading sign is sign(c2).  _(class `A`)_
 - **chain closes:** True — The quotient is exactly c2 times a factor that tends to 1 as |k|^2 -> 0 for finite alpha and bounded cubic harmonic A4. The closure is only for the conditional model; c2, the physical TT kernel, leading isotropy, the RP bridge, and an emergent metric remain outside scope.
 - **rationale:** The load-bearing step is a genuine class-A limit identity, independently checked by bounding A4: for unit khat, sum khat_i^4 lies in [1/3,1], so A4 lies in [-4/15,2/5] and alpha A4 |k|^2 vanishes. The runner source performs finite algebra/order checks consistent with that hand calculation, including the 6.667e-12 tiny-k error and 2.8 eps^2 relative scaling. The source note explicitly excludes the broader gravity-sign and bottom-relocation claims, and the listed N1-N8 guardrails keep the missing physical bridges outside the audited theorem scope.
+- **auditor confidence:** high
+
+### `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional weak-field Z^3 graph-Laplacian source-response bridge on the zero-mode-removed sector, including scalar Born-density readout uniqueness under the stated local diagonal assumptions and first-order test-source response; the 1/(4 pi r) asymptotic is supplied by the retained Green-kernel authority.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Because H is positive definite on the P0 sector, the stationary solution of A[phi; rho] is unique there and equals phi = H^{-1} P0 rho = G0 P0 rho, with the stated local normalized readout rho_psi=|psi|^2 and test potential U_test=-m phi.  _(class `A`)_
+- **chain closes:** True — The variational Euler equation, uniqueness on P0, Born-density uniqueness, and test-source sign/bilinearity are finite-dimensional algebraic consequences of the stated operator and locality assumptions. The only large-distance coefficient is not rederived here but is imported from a retained-bounded cited authority within the declared scope.
+- **rationale:** All cited authorities in the restricted packet are retained-grade for the uses made here: retained_bounded for the Poisson/Green inputs and retained_no_go only as boundary context. The runner genuinely constructs the periodic Z^3 graph Laplacian, the neutral projector, and the pseudoinverse, then checks the Euler equation, minimizer identity, density uniqueness constraints, force sign, and bilinearity rather than merely printing constants. The source does not claim nonlinear self-gravity, SI Newton constant closure, or Einstein-equation closure, so the bounded conclusion follows from the cited inputs and finite-dimensional algebra.
 - **auditor confidence:** high
 
 ### `growing_graph_dynamic_limit_diagnostic_note`

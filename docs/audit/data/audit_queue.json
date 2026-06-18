@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 309,
+    "critical": 308,
     "high": 289,
     "leaf": 569,
     "medium": 474
@@ -147,31 +147,33 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
-      "claim_scope": "Bounded finite-dimensional weak-field bridge on finite periodic Z^3 with the constant mode projected out: variational source response, unique local phase-invariant normalized density rho_psi=|psi|^2, and first-order same-source test response with U=-m phi and F=m grad phi, using the retained Z^3 Green-kernel asymptotic only for the large-distance 1/(4 pi r) normalization.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gravity_clean_derivation_note",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-        "poisson_self_gravity_loop_v3_note",
-        "gate_b_poisson_self_gravity_note",
+        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
         "self_consistency_forces_poisson_note",
-        "poisson_exhaustive_uniqueness_note"
+        "poisson_exhaustive_uniqueness_note",
+        "gravity_full_self_consistency_note",
+        "staggered_fermion_card_2026-04-11",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
       ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 21,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.18,
-      "note_path": "docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 18.645,
+      "note_path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_gravity_weak_field_source_response_bridge_2026_06_11.py",
-      "transitive_descendants": 289
+      "runner_path": "scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py",
+      "transitive_descendants": 282
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7390,36 +7392,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_koide_brannen_route3_geometry_support.py",
       "transitive_descendants": 284
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gravity_clean_derivation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
-        "self_consistency_forces_poisson_note",
-        "poisson_exhaustive_uniqueness_note",
-        "gravity_full_self_consistency_note",
-        "staggered_fermion_card_2026-04-11",
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
-      ],
-      "direct_in_degree": 21,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 18.645,
-      "note_path": "docs/GRAVITY_CLEAN_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py",
-      "transitive_descendants": 282
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -32871,6 +32843,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -32922,6 +32918,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gate_b_weak_field_source_action_interface_note_2026-06-16",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+        "valley_linear_continuum_synthesis_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -32945,6 +32966,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gl_f_identification_bridge_check_2026_06_11.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
+        "self_consistency_forces_poisson_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py",
       "transitive_descendants": 1
     },
     {
@@ -36608,30 +36654,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/EP_RECORD_STIFFNESS_WEAK_FIELD_SOURCE_READOUT_INTERFACE_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36760,31 +36782,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_g_bare_l3b_overall_scalar_invariance_2026_05_17.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_weak_field_source_action_interface_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
-        "valley_linear_continuum_synthesis_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py",
       "transitive_descendants": 1
     },
     {
@@ -37014,31 +37011,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/generation_dial_dynamics_stability_classifier_2026_06_05.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
-        "self_consistency_forces_poisson_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py",
       "transitive_descendants": 1
     },
     {
@@ -49019,6 +48991,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 158,
-  "total_pending": 1641
+  "ready_count": 161,
+  "total_pending": 1640
 }

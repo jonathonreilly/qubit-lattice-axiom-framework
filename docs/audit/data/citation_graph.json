@@ -52269,10 +52269,6 @@
       "to": "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"
     },
     {
-      "from": "repo.front_door_status",
-      "to": "ai_methodology.raw.canonical_framing_paragraph"
-    },
-    {
       "from": "repo.repo_organization",
       "to": "key_terminology"
     },
@@ -100643,11 +100639,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "ai_methodology.raw.canonical_framing_paragraph"
+        "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "930d00df05d5b2b46e528bb55eab6c26cae3ab562a261224f9c6628608dadfc4",
+      "note_hash": "e910a635d6d037eaa7bba7f79d42c55f7c1aba048573f511d79b04e5c438a8b1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -115716,8 +115711,8 @@
       "open_gate": 180,
       "positive_theorem": 599
     },
-    "edge_count": 13167,
-    "leaf_count": 1144,
+    "edge_count": 13166,
+    "leaf_count": 1145,
     "node_count": 3523,
     "root_count": 1076,
     "runners_with_path": 3109

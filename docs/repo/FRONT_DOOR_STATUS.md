@@ -35,11 +35,11 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 |---|---:|
 | Total pending rows | 1417 |
 | Ready rows | 1 |
-| Cycle-break targets | 8 |
-| Critical pending | 307 |
-| High pending | 265 |
+| Cycle-break targets | 7 |
+| Critical pending | 304 |
+| High pending | 267 |
 | Medium pending | 407 |
-| Leaf pending | 438 |
+| Leaf pending | 439 |
 
 Next ready rows by queue order:
 
@@ -74,18 +74,18 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3523 |
-| Critical nodes | 577 |
-| High nodes | 506 |
-| Medium nodes | 924 |
-| Leaf nodes | 1516 |
+| Critical nodes | 574 |
+| High nodes | 507 |
+| Medium nodes | 922 |
+| Leaf nodes | 1520 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1641 descendants; score 144.681
-- `three_generation_observable_theorem_note` - critical; 1048 descendants; score 65.535
+- `minimal_axioms` - critical; 1640 descendants; score 144.680
+- `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1401 descendants; score 60.953
-- `observable_principle_from_axiom_note` - critical; 891 descendants; score 59.801
-- `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
-- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 49.006
-- `key_terminology` - critical; 1119 descendants; score 46.629
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 922 descendants; score 44.350
+- `observable_principle_from_axiom_note` - critical; 890 descendants; score 59.799
+- `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
+- `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
+- `key_terminology` - critical; 1118 descendants; score 46.628
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

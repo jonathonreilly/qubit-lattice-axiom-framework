@@ -1,5 +1,5 @@
 {
-  "cycle_count": 8,
+  "cycle_count": 7,
   "cycles": [
     {
       "cycle_id": "cycle-0001",
@@ -23,7 +23,7 @@
         }
       ],
       "length": 4,
-      "max_transitive_descendants": 879,
+      "max_transitive_descendants": 878,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -32,7 +32,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md",
           "title": "Route 2 Bilinear Tensor Carrier (Definition-Only)",
-          "transitive_descendants": 879
+          "transitive_descendants": 878
         },
         {
           "audit_status": "unaudited",
@@ -41,7 +41,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md",
           "title": "Route 2 Spacetime Tensor Primitive Candidate on `PL S^3 x R`",
-          "transitive_descendants": 879
+          "transitive_descendants": 878
         },
         {
           "audit_status": "unaudited",
@@ -50,7 +50,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md",
           "title": "Route 2 Readout to Slice Coupling",
-          "transitive_descendants": 879
+          "transitive_descendants": 878
         },
         {
           "audit_status": "unaudited",
@@ -59,7 +59,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md",
           "title": "Quark Route-2 Source-Domain Bridge No-Go",
-          "transitive_descendants": 879
+          "transitive_descendants": 878
         }
       ],
       "requires_lemma_extraction": false
@@ -82,7 +82,7 @@
         }
       ],
       "length": 3,
-      "max_transitive_descendants": 630,
+      "max_transitive_descendants": 629,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -91,7 +91,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md",
           "title": "Quark Mass Ratios from the Taste-Staircase + EWSB Cascade",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -100,7 +100,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md",
           "title": "CKM Down-Type Mass-Ratio Scale-Convention Support Note",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -109,7 +109,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md",
           "title": "Quark Five-Sixths Scale-Selection Boundary",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         }
       ],
       "requires_lemma_extraction": false
@@ -136,7 +136,7 @@
         }
       ],
       "length": 4,
-      "max_transitive_descendants": 630,
+      "max_transitive_descendants": 629,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -145,7 +145,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_FROM_MASS_HIERARCHY_NOTE.md",
           "title": "CKM From Mass Hierarchy: V_CKM = U_u^dag U_d via Derived Mass Matrices",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -154,7 +154,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md",
           "title": "Quark Mass Ratios from the Taste-Staircase + EWSB Cascade",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -163,7 +163,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md",
           "title": "CKM Down-Type Mass-Ratio Scale-Convention Support Note",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -172,7 +172,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md",
           "title": "CKM Five-Sixths Bridge Support Note",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         }
       ],
       "requires_lemma_extraction": false
@@ -199,7 +199,7 @@
         }
       ],
       "length": 4,
-      "max_transitive_descendants": 630,
+      "max_transitive_descendants": 629,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -208,7 +208,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md",
           "title": "Quark Mass Ratios from the Taste-Staircase + EWSB Cascade",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -217,7 +217,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md",
           "title": "CKM Down-Type Mass-Ratio Scale-Convention Support Note",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -226,7 +226,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md",
           "title": "CKM Five-Sixths Bridge Support Note",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -235,7 +235,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md",
           "title": "Down-Type Mass Ratios from the CKM Dual",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         }
       ],
       "requires_lemma_extraction": false
@@ -266,7 +266,7 @@
         }
       ],
       "length": 5,
-      "max_transitive_descendants": 630,
+      "max_transitive_descendants": 629,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -275,7 +275,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_FROM_MASS_HIERARCHY_NOTE.md",
           "title": "CKM From Mass Hierarchy: V_CKM = U_u^dag U_d via Derived Mass Matrices",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -284,7 +284,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md",
           "title": "Quark Mass Ratios from the Taste-Staircase + EWSB Cascade",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -293,7 +293,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md",
           "title": "CKM Down-Type Mass-Ratio Scale-Convention Support Note",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -302,7 +302,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md",
           "title": "CKM Five-Sixths Bridge Support Note",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -311,7 +311,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md",
           "title": "Down-Type Mass Ratios from the CKM Dual",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         }
       ],
       "requires_lemma_extraction": false
@@ -346,7 +346,7 @@
         }
       ],
       "length": 6,
-      "max_transitive_descendants": 630,
+      "max_transitive_descendants": 629,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -355,7 +355,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_FROM_MASS_HIERARCHY_NOTE.md",
           "title": "CKM From Mass Hierarchy: V_CKM = U_u^dag U_d via Derived Mass Matrices",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -364,7 +364,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md",
           "title": "Quark Mass Ratios from the Taste-Staircase + EWSB Cascade",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -373,7 +373,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md",
           "title": "CKM Down-Type Mass-Ratio Scale-Convention Support Note",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -382,7 +382,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md",
           "title": "Quark Five-Sixths Scale-Selection Boundary",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -391,7 +391,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md",
           "title": "Quark Lane 3 Bounded-Companion Retention Firewall",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         },
         {
           "audit_status": "unaudited",
@@ -400,7 +400,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/QUARK_MASS_RATIO_NOTE_2026-04-18.md",
           "title": "Quark Mass-Ratio Support Packet (2026-04-18)",
-          "transitive_descendants": 630
+          "transitive_descendants": 629
         }
       ],
       "requires_lemma_extraction": false
@@ -419,7 +419,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 84,
+      "max_transitive_descendants": 83,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -428,7 +428,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md",
           "title": "Koide Q Reduced Observable Restriction Theorem",
-          "transitive_descendants": 84
+          "transitive_descendants": 83
         },
         {
           "audit_status": "unaudited",
@@ -437,70 +437,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md",
           "title": "Koide Q Reduced Carrier Physical-Identification Obstruction",
-          "transitive_descendants": 84
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0008",
-      "decision": null,
-      "edges": [
-        {
-          "from": "repo.front_door_status",
-          "to": "ai_methodology.raw.canonical_framing_paragraph"
-        },
-        {
-          "from": "ai_methodology.raw.canonical_framing_paragraph",
-          "to": "ai_methodology_note_2026-04-25"
-        },
-        {
-          "from": "ai_methodology_note_2026-04-25",
-          "to": "publication.ci3_z3.readme"
-        },
-        {
-          "from": "publication.ci3_z3.readme",
-          "to": "repo.front_door_status"
-        }
-      ],
-      "length": 4,
-      "max_transitive_descendants": 14,
-      "nodes": [
-        {
-          "audit_status": null,
-          "claim_id": "repo.front_door_status",
-          "claim_type": null,
-          "effective_status": null,
-          "note_path": "docs/repo/FRONT_DOOR_STATUS.md",
-          "title": "Front Door Status Snapshot",
-          "transitive_descendants": null
-        },
-        {
-          "audit_status": "audited_renaming",
-          "claim_id": "ai_methodology.raw.canonical_framing_paragraph",
-          "claim_type": "meta",
-          "effective_status": "audited_renaming",
-          "note_path": "docs/ai_methodology/raw/canonical_framing_paragraph.md",
-          "title": "Canonical Methodology Framing Paragraph",
-          "transitive_descendants": 14
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "ai_methodology_note_2026-04-25",
-          "claim_type": "meta",
-          "effective_status": "meta",
-          "note_path": "docs/AI_METHODOLOGY_NOTE_2026-04-25.md",
-          "title": "AI Methodology Note \u2014 Cl(3)/Z^3 Framework",
-          "transitive_descendants": 14
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "publication.ci3_z3.readme",
-          "claim_type": "meta",
-          "effective_status": "meta",
-          "note_path": "docs/publication/ci3_z3/README.md",
-          "title": "Lattice-Quantum-Record Framework Publication Package",
-          "transitive_descendants": 14
+          "transitive_descendants": 83
         }
       ],
       "requires_lemma_extraction": false
@@ -509,7 +446,7 @@
   "length_counts": {
     "2": 1,
     "3": 1,
-    "4": 4,
+    "4": 3,
     "5": 1,
     "6": 1
   },

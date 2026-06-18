@@ -1,0 +1,20 @@
+loop_slug: connectivity-elliptical-cache-align-20260618
+goal: "Repair the audited_conditional connectivity_family_v2_elliptical_duplicate_note row by aligning the source note to the current cached 45-row runner sweep."
+target_status: bounded-support
+current_status: source-side note/cache alignment ready for independent review and audit
+runtime_mode: resume
+cycle_count: 1
+active_route: cache_aligned_duplicate_boundary
+target_claim_id: connectivity_family_v2_elliptical_duplicate_note
+hard_residual: "The source note cited a stale targeted row inventory including drift=0.02, seed=0 while the current cache certifies a 45-row sweep with 25 passes."
+files_touched:
+  - docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md
+open_imports:
+  - "scripts/gate_b_no_restore_farfield.py remains an executable bounded-harness helper source."
+no_go_routes:
+  - "The current cache does not support the old narrow seed-0 slice narrative or a new independent retained family."
+trace_gate: direct_blocker_closure
+review_loop_disposition: delegated
+pr_status: pending
+next_exact_action: "Push branch and open ready PR for reviewer extraction; do not audit, land, or refresh stale PRs."
+stop_condition: "Stop after PR creation for this coherent source-side alignment block."

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 965 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 28 |
-| unaudited | 1516 |
+| unaudited | 1515 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1401 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 17 |
-| `unaudited` | 1838 |
+| `unaudited` | 1837 |
 
 | claim_type | count |
 |---|---:|
@@ -1567,6 +1567,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17701,6 +17702,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The parity-sheared shell sweep passes 12/21 sampled rows, with exact zero-source and neutral controls, sign orientation on the passing subset, drift coverage [0.0, 0.05, 0.1, 0.15, 0.2, 0.3], and mean exponent 0.999895, so the construction is a narrow sixth-family basin rather than a generic theorem.  _(class `B`)_
 - **chain closes:** True — SIXTH_FAMILY_SHEARED_SWEEP.py currently reproduces the note's pass count, drift coverage, exact zero/neutral controls, and mean weak-field exponent. The note's conclusion is bounded and selective, matching the data rather than claiming family-wide closure.
 - **rationale:** The sheared basin note closes at bounded tier: the runner verifies the exact pass/fail structure and the note states the correct narrow interpretation. It neither expands the result into a universal connectivity theorem nor hides the failed rows. Residual risk is only missing ledger runner attachment; the local sweep script is the direct evidence surface.
+- **auditor confidence:** high
+
+### `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15`
+
+- **Note:** [`SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md`](../../docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional arithmetic bridge comparing supplied sub-eV Dirac-neutrino Yukawa values to supplied radiation-era nu_R thermalization thresholds using g_* = 427/4.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using y_nu = m_nu/<H> and y_thr(T) = sqrt(1.66 sqrt(g_*) T / M_Pl), the supplied sub-eV neutrino-mass comparators give Yukawas far below the 100 GeV thermalization threshold.  _(class `A`)_
+- **chain closes:** False — The numerical comparisons close algebraically from the stated m_nu values, <H>, g_*, M_Pl, and thermal-rate formula. The restricted packet does not close the empirical m_nu input or the standard Gamma_nuR/H thermalization comparator, so the overall support chain remains conditional on those inputs.
+- **rationale:** Issue: The arithmetic is correct, but the small-m_nu band and the Gamma_nuR ~ y_nu^2 T versus H comparator are explicit external premises not closed by the cited authority; the cited authority only closes the g_* arithmetic. Why this blocks: The note itself disclaims deriving those comparator inputs, so the I12 support is conditional rather than a derivation from retained inputs in the restricted packet. Repair target: add retained or accepted authority for the empirical m_nu input and the thermal rate comparator, or keep the row explicitly scoped as pure comparator arithmetic. Claim boundary until fixed: the row supports only the stated order-of-magnitude comparison given those comparator inputs.
 - **auditor confidence:** high
 
 ### `sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`

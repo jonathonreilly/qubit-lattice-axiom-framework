@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 304,
     "high": 267,
-    "leaf": 534,
+    "leaf": 533,
     "medium": 413
   },
   "cycle_break_target_count": 7,
@@ -17415,30 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sm_relativistic_dof_count_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17560,6 +17536,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gate_b_grown_joint_package.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "accessible_prediction_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "action_normalization_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/ACCESSIBLE_PREDICTION_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_accessible_prediction.py",
       "transitive_descendants": 15
     },
     {
@@ -30231,30 +30231,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "accessible_prediction_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "action_normalization_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACCESSIBLE_PREDICTION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_accessible_prediction.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45697,6 +45673,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 100,
-  "total_pending": 1518
+  "ready_count": 99,
+  "total_pending": 1517
 }

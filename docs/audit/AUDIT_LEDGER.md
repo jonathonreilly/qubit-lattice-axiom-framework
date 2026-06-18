@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 215 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 927 |
+| **retained_bounded** | 928 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1612 |
+| unaudited | 1611 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 9 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1340 |
+| `audited_clean` | 1341 |
 | `audited_conditional` | 17 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1934 |
+| `unaudited` | 1933 |
 
 | claim_type | count |
 |---|---:|
@@ -1174,6 +1174,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_static_discriminator_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
+| `sign_portability_invariant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -16387,6 +16388,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** In logs/runner-cache/SIGN_PORTABILITY_INVARIANT_COMPARE.txt, the runner reports the second-grown gate block PASS, all listed core and holdout families as G1G2G3G4=PPPP, configured thresholds, and OVERALL PASS.  _(class `B`)_
 - **chain closes:** True — The narrowed claim follows from the SHA-pinned cached runner output and the inspected runner source: the runner recomputes a two-row second-grown subset and then checks the same thresholds against registered family logs. This closes only the bounded diagnostic/cache certificate, not a unit-slope theorem, row-wise lower-bound theorem, physical sign-law derivation, or cross-family proof.
 - **rationale:** The cross-log dependence is load-bearing, so the step is class B rather than a first-principles derivation; however the source note has been narrowed to exactly that finite cached gate-certificate claim. The runner source and cache output support the stated PASS lines and thresholds, and the note explicitly excludes the broader theorem and physical-derivation readings. The decoration heuristic is not controlling here because the note is not an algebraic corollary of a single parent claim; it is a bounded runner diagnostic over recorded artifacts.
+
+### `sign_portability_invariant_note`
+
+- **Note:** [`SIGN_PORTABILITY_INVARIANT_NOTE.md`](../../docs/SIGN_PORTABILITY_INVARIANT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite cached comparison that the named family logs satisfy G1 zero-source cancellation, G2 neutral cancellation, G3 plus/minus antisymmetry, and G4 unit-slope tolerance under the runner thresholds, with G4 checked only on family-accepted rows.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-sign_portability_invariant_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The registered comparison runner reads the listed family logs and checks the four displayed gates at ZERO_TOL=1e-12, NEUTRAL_TOL=1e-12, ANTISYM_TOL=5e-3, and EXP_TOL=5e-3.  _(class `A`)_
+- **chain closes:** True — The chain closes for the narrowed finite-cache claim: the runner source parses registered per-row logs, recomputes a small second-grown-family subset, applies the stated thresholds, and the supplied cache exits 0 with all packets passing. It does not establish any broader cross-family inheritance theorem.
+- **rationale:** Within the bounded scope, the cited authorities are retained-grade and the primary runner performs real parsing and threshold checks rather than printing hard-coded pass text. The load-bearing step is an algebraic threshold verification over retained cached inputs, supplemented by one in-family recomputation block. The source note explicitly confines the conclusion to the finite cached gate packet, so the broader portability-theorem reading is not part of the audited claim.
+- **auditor confidence:** high
 
 ### `signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12`
 

@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "grown_transfer_basin_note"
+      "to": "sign_portability_invariant_note"
     },
     {
       "from": "repo.front_door_status",
@@ -100630,7 +100630,7 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "grown_transfer_basin_note",
+        "sign_portability_invariant_note",
         "flavor_readout_gate_equals_carrier_identification_2026-05-31",
         "koide_q_dred_normalization_freedom_no_go_note_2026-06-15",
         "record_formation_to_kraus_isometry_bridge_2026-06-06",
@@ -100639,7 +100639,7 @@
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14"
       ],
       "helper_runner_paths": [],
-      "note_hash": "95e8adda82b1cd2220b65d04dc638c911bb4cfd360d90331ce5b6419a38d6785",
+      "note_hash": "bbdc575384f8f6612565b1ca4cd6baea3528ebca603ba200a4715f750f27e4a3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

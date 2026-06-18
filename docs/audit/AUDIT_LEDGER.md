@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 999 |
+| **retained_bounded** | 1000 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1427 |
+| unaudited | 1426 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 27 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1448 |
+| `audited_clean` | 1449 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1749 |
+| `unaudited` | 1748 |
 
 | claim_type | count |
 |---|---:|
@@ -1415,6 +1415,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `symmetry_spectrum_mirror_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `taste_scalar_isotropy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_3d1_causal_record_channel_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_3d_operator_consistent_end_to_end_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -20748,6 +20749,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The Hessian therefore reduces to the binary orthogonality sum sum_s (-1)^{s_i} (-1)^{s_j}, which is 8 for i=j and 0 for i!=j.  _(class `A`)_
 - **chain closes:** True — The simultaneous eigenvalue formula lambda_s(phi)=sum_i phi_i (-1)^{s_i} gives, by the chain rule, a common coefficient 2 f'(v^2)+4 v^2 f''(v^2) multiplying (-1)^{s_i}(-1)^{s_j} at phi=(v,0,0). Summing over the eight binary signs gives a Hessian proportional to delta_ij with no dependency or bounded companion estimate needed.
 - **rationale:** The proposed positive_theorem type is correct for the scoped exact Hessian-isotropy statement. The source note's proof sketch compresses the derivative step, but the displayed eigenvalue formula plus standard chain rule make the Hessian coefficient common across all sign sectors at the axis, leaving exactly the binary orthogonality identity. The cached runner output for SHA 519c1d8d830ea43f8cdcd866565184a4d2d1c8d4c9b0318557fe22df5f35c59b reports THEOREM PASS=30 and FAIL=0, checking the shift algebra, eigenvalue sign sum, binary orthogonality, and finite-difference Hessian isotropy for representative smooth functions. The six bounded gauge/thermal passes are outside this audited scope and are not used for closure.
+- **auditor confidence:** high
+
+### `taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13`
+
+- **Note:** [`TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md`](../../docs/TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the stated finite-cut one-loop staggered taste-changing rainbow model on the OS0 xi=1 B4 regulator block, the B4 taste-orbit summed marginal velocity curvature is isotropic while single-taste sectors are not.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the honest observable G_hon(p,B)=Dinv(p)-Sigma(p,B), the individual taste curvatures on OS0 are anisotropic O(0.2), but averaging over the hw=2 B4 taste orbit gives equal four-direction curvatures and Sigma_t-Sigma_s near 1e-14.  _(class `C`)_
+- **chain closes:** True — The retained B4 theorem and registered kinetic-isotropy primitive supply the OS0 B4-covariant setting, and the runner explicitly constructs the Clifford/taste operators, self-energy, honest inverse-propagator observable, and curvature averages rather than reading the target values from another note. The scale primitive is used only for the disclosed dim-6 size estimate and does not carry the marginal protection step.
+- **rationale:** The load-bearing result is a bounded first-principles computation inside the declared model: the runner source computes Sigma(p,B), G_hon, curvature finite differences, B4-orbit averages, and off-OS0 falsification controls, with no helper imports or hard-coded contested pass values. The cited non-retained-looking inputs are registered axiom/primitive premises and are used within their declared scope; the one retained B4 authority supplies the relevant orbit-relabel symmetry. The clean scope is bounded to this one-loop model and taste-summed marginal sector; the physical interpretation of a single taste remains explicitly outside the claim.
 - **auditor confidence:** high
 
 ### `teleportation_3d1_causal_record_channel_note`

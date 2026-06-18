@@ -52230,7 +52230,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
+      "to": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
     },
     {
       "from": "repo.front_door_status",
@@ -100629,7 +100629,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "coarse_grained_exterior_law_helper_note_2026-04-14",
+        "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "axiom_first_kms_condition_theorem_note_2026-05-01",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
@@ -100639,7 +100639,7 @@
         "hierarchy_formula_honest_status_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dba0eadfad7999d1ec3c648d964076449d654f3f5afe64b3fd0d25056fddf376",
+      "note_hash": "5359c43f9b0dcbef874ee5bd4a203565bd5eaaf6a9846ad51bb5b28128f41f65",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 912 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1646 |
+| unaudited | 1645 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
-| ~~audited_renaming~~ | 3 |
+| ~~audited_renaming~~ | 4 |
 | ~~audited_conditional~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -64,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 4 |
-| `audited_renaming` | 3 |
-| `unaudited` | 1968 |
+| `audited_renaming` | 4 |
+| `unaudited` | 1967 |
 
 | claim_type | count |
 |---|---:|
@@ -1542,6 +1542,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
@@ -13144,6 +13145,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting (Y_uR,Y_dR,Y_eR,Y_nuR)=(a+1,a-1,b-1,b+1) into the cubic anomaly gives -6(n_color a + b), which vanishes by the imported LH trace relation b=-n_color a.  _(class `A`)_
 - **chain closes:** True — The dependency supplies b=-n_color a and b=-1 as retained-bounded inputs, and the source note explicitly treats SHIFT and NEUTRAL_BRANCH as hypotheses/conventions rather than derived physics. Within that narrowed scope, the anomaly cancellations are exact algebraic identities.
 - **rationale:** The theorem is narrow enough to avoid claiming a derivation of the branch, n_color=3, chirality, or SM identification. The runner hard-codes the SHIFT completion, but that is not a defect for this scoped claim because the note states it is checking a fixed algebraic completion under imposed SHIFT/branch assumptions. No external comparator or first-principles physics bridge is needed for the bounded theorem as written.
+- **auditor confidence:** high
+
+### `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`
+
+- **Note:** [`ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A named umbrella registry for the five helper modules loaded by scripts/frontier_one_parameter_reduced_shell_law.py, limited to a one-hop dependency handle and not a derivation of the helpers or parent shell law.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing move is the creation of a citeable umbrella handle for five helper modules.  _(class `E`)_
+- **chain closes:** True — The scoped wrapper claim closes as a definition/registry handle: the note lists the five modules and states the one-hop citation boundary. No derivation of the helper modules, the shell law, or the tensor/GR completion is supplied or claimed.
+- **rationale:** The source note's own boundary is named-import-only wrapper support, and its load-bearing step is creating a citeable umbrella handle. The primary runner performs genuine lattice-shell computations with PASS=7 FAIL=0, but those computations support the parent shell-law surface rather than turning this wrapper registry into a derivation. The verdict is therefore audited_renaming: the row may serve as a citation handle, but it does not promote or derive the five helper modules or the parent theorem.
 - **auditor confidence:** high
 
 ### `ordered_lattice_packet_reidentification_note`

@@ -1,0 +1,32 @@
+loop_slug: dm-eta-open-gate-scope-20260618
+target: dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28
+branch: codex/dm-eta-open-gate-scope-20260618
+base: origin/main
+started_from: 51314d78f
+actual_current_surface_status: open
+conditional_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+artifact_role: demotion
+review_loop_disposition: not_run_user_delegated
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md
+  - scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py
+  - logs/runner-cache/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.txt
+  - .claude/science/physics-loops/dm-eta-open-gate-scope-20260618/
+open_imports:
+  - P1 freeze-out-bypass identity eta = C * m_DM^2
+  - P2 composed mass route m_DM = N_sites * v
+  - P3 BBN coefficient
+  - P4 freeze-out coefficient band
+  - P6 Kolb-Turner prefactor
+  - P7 Sommerfeld/dark-coupling route
+closed_this_block:
+  - Source row no longer declares bounded_theorem.
+  - Runner now fails stale bounded-theorem posture and checks open_gate status.
+  - Arithmetic certificate remains executable at PASS=90 FAIL=0.
+next_exact_action: "Reviewer should run review-loop and decide whether this source repair is suitable for re-audit dispatch; no audit verdict is claimed here."
+stop_condition: "Science block packaged as a source-side PR."

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Runner: DM eta conditional support from the local P_DM_ETA input packet.
+"""Runner: DM eta open-gate conditional arithmetic certificate.
 
-Audits the conditional bounded-support prediction note
+Checks the open-gate conditional arithmetic certificate
 `docs/DM_ETA_BOUNDED_PREDICTION_FROM_SUPPLIED_NSITES_V_NARROW_THEOREM_NOTE_2026-05-28.md`
 
 Verifies, with rational arithmetic where possible and floating-point
-arithmetic elsewhere, the bounded prediction surface:
+arithmetic elsewhere, the conditional arithmetic surface:
 
 1. Retained R_base = 31/9 group-theory identity on cited Casimir/adjoint
    inputs.
@@ -15,10 +15,10 @@ arithmetic elsewhere, the bounded prediction surface:
    the local packet: supplied P1-P4 and P6-P7 plus retained_bounded P5.
 4. Central evaluation eta_pred(central) = 6.38e-10 at
    (x_F = 25, S_vis/S_dark = 1.59, alpha_X = alpha_LM).
-5. Bounded band eta_pred in [5.25e-10, 8.11e-10] over
+5. Conditional band eta_pred in [5.25e-10, 8.11e-10] over
    (x_F, S_vis/S_dark) in [22, 28] x [1.4, 1.7].
 6. Central deviation +4.18% vs eta_obs = 6.12e-10.
-7. Falsifiable single-mass readout m_DM ≈ 3.94 TeV.
+7. Supplied single-mass readout m_DM ≈ 3.94 TeV.
 8. Cross-check with ETA_188 structural decomposition consistency.
 9. Note-text recording of the named local packet P1-P7.
 10. Note-text recording of the supplied composed-product (P2) as a
@@ -121,7 +121,7 @@ def eta_pred(
 # ---------------------------------------------------------------------------
 
 print("=" * 72)
-print("DM eta conditional support from local P_DM_ETA input packet")
+print("DM eta open-gate conditional arithmetic certificate")
 print("=" * 72)
 
 print()
@@ -132,16 +132,17 @@ note_text = read_doc(NOTE_FNAME)
 note_flat = " ".join(note_text.split())
 audit("Note exists at expected path", len(note_text) > 0, NOTE_FNAME)
 audit(
-    "Note claim type is canonical bounded_theorem",
-    "**Claim type:** bounded_theorem" in note_text,
+    "Note claim type is open_gate conditional-support certificate",
+    "**Claim type:** open_gate / conditional-support arithmetic certificate" in note_text,
 )
 audit(
-    "Note type is conditional / support",
-    "**Type:** conditional / support" in note_text,
+    "Note type is open_gate / conditional-support",
+    "**Type:** open_gate / conditional-support" in note_text,
 )
 audit(
-    "Old bare bounded support claim-type header is absent",
+    "Old bounded theorem claim-type headers are absent",
     "**Claim type:** bounded support note" not in note_text
+    and "**Claim type:** bounded_theorem" not in note_text
     and "**Type:** bounded_theorem" not in note_text,
 )
 audit(
@@ -152,6 +153,21 @@ audit(
     "Note records conditional support over the P_DM_ETA input packet",
     "conditional support over the\n`P_DM_ETA` input packet" in note_text
     or "conditional support over the `P_DM_ETA` input packet" in note_text,
+)
+audit(
+    "Note records 2026-06-18 open-gate source-scope repair",
+    "2026-06-18 Open-Gate Source-Scope Repair" in note_text,
+)
+audit(
+    "Source-scope certificate marks actual current surface open",
+    "actual_current_surface_status: open" in note_text
+    and "conditional_surface_status: conditional-support" in note_text,
+)
+audit(
+    "Source-scope certificate forbids retained proposal language",
+    "proposal_allowed: false" in note_text
+    and "audit_required_before_effective_retained: true" in note_text
+    and "bare_retained_allowed: false" in note_text,
 )
 audit(
     "Note records 2026-06-12 P5 retained-input repair",
@@ -212,14 +228,7 @@ audit(
     "Old central R display 5.4811 is absent",
     "5.4811" not in note_text,
 )
-for phrase in (
-    "source-note proposal only",
-    "actual_" + "current_surface_status",
-    "conditional_" + "surface_status",
-    "proposal_allowed",
-    "audit_required_before_effective_" + "ret" + "ained",
-    "bare_" + "ret" + "ained_allowed",
-):
+for phrase in ("source-note proposal only",):
     audit(
         f"Note omits source-side status control phrase: {phrase}",
         phrase not in note_text,
@@ -337,12 +346,12 @@ audit(
     f"computed {m_DM:.4f} GeV",
 )
 audit(
-    "m_DM ≈ 3.94 TeV (falsifiable single-mass readout)",
+    "m_DM ≈ 3.94 TeV (supplied single-mass readout)",
     abs(m_DM / 1000.0 - 3.94) < 0.01,
     f"computed {m_DM / 1000.0:.3f} TeV",
 )
 audit(
-    "Note records the falsifiable readout `m_DM ~ 3.94 TeV`",
+    "Note records the supplied readout `m_DM ~ 3.94 TeV`",
     "3.94 TeV" in note_text,
 )
 
@@ -415,11 +424,11 @@ audit(
 
 
 # ---------------------------------------------------------------------------
-# Section 6: bounded band over (x_F, S_vis/S_dark) rectangle
+# Section 6: conditional band over (x_F, S_vis/S_dark) rectangle
 # ---------------------------------------------------------------------------
 
 print()
-print("Section 6: bounded band over (x_F, S_vis/S_dark) rectangle")
+print("Section 6: conditional band over (x_F, S_vis/S_dark) rectangle")
 print("-" * 72)
 
 # (M0) arithmetic on the (x_F, S_vis/S_dark) rectangle with alpha_X = alpha_LM
@@ -459,19 +468,19 @@ for x_F in x_F_samples:
         true_low = min(true_low, v)
         true_high = max(true_high, v)
 
-# The bounded band on the supplied rectangle:
+# The conditional band on the supplied rectangle:
 # - eta_pred decreasing in s_ratio (eta ~ 1/R ~ 1/s_ratio)
 # - eta_pred increasing in x_F  (eta ~ x_F)
 # So the corners are: (22, 1.7) low, (28, 1.4) high
 eta_low_corner = eta_pred(m_DM, x_F=22.0, s_ratio=1.7)
 eta_high_corner = eta_pred(m_DM, x_F=28.0, s_ratio=1.4)
 audit(
-    "Bounded band low corner (x_F=22, S=1.7) ≈ 5.25e-10",
+    "Conditional band low corner (x_F=22, S=1.7) ≈ 5.25e-10",
     abs(eta_low_corner - 5.25e-10) < 2e-11,
     f"computed {eta_low_corner:.3e}",
 )
 audit(
-    "Bounded band high corner (x_F=28, S=1.4) ≈ 8.11e-10",
+    "Conditional band high corner (x_F=28, S=1.4) ≈ 8.11e-10",
     abs(eta_high_corner - 8.11e-10) < 5e-11,
     f"computed {eta_high_corner:.3e}",
 )
@@ -624,18 +633,25 @@ print()
 print("Section 10: status discipline")
 print("-" * 72)
 
-for phrase in (
-    "source-note proposal only",
-    "actual_" + "current_surface_status",
-    "conditional_" + "surface_status",
-    "proposal_allowed",
-    "audit_required_before_effective_" + "ret" + "ained",
-    "bare_" + "ret" + "ained_allowed",
-):
+for phrase in ("source-note proposal only",):
     audit(
         f"Note keeps source-side status control absent: {phrase}",
         phrase not in note_text,
     )
+audit(
+    "Note keeps actual surface as open",
+    "actual_current_surface_status: open" in note_text,
+)
+audit(
+    "Note keeps conditional support separate from actual surface",
+    "conditional_surface_status: conditional-support" in note_text,
+)
+audit(
+    "Note forbids branch-local retained proposal",
+    "proposal_allowed: false" in note_text
+    and "audit_required_before_effective_retained: true" in note_text
+    and "bare_retained_allowed: false" in note_text,
+)
 audit(
     "Note does NOT use bare 'proposed_retained' or 'retained:' status language",
     "**Status:** retained" not in note_text
@@ -651,15 +667,15 @@ print()
 print("=" * 72)
 print(f"TOTAL: PASS={AUDIT_PASSES} FAIL={len(AUDIT_FAILS)}")
 if AUDIT_FAILS:
-    print("VERDICT: conditional bounded-support runner FAILED at:")
+    print("VERDICT: open-gate conditional arithmetic runner FAILED at:")
     for fail in AUDIT_FAILS:
         print(f"  - {fail}")
     sys.exit(1)
 else:
     print(
-        "VERDICT: conditional bounded-support arithmetic passes; eta_pred bracketed inside "
-        "[5.25e-10, 8.11e-10] with central +4.18% vs eta_obs; "
+        "VERDICT: open-gate conditional arithmetic certificate passes; eta_pred bracketed inside "
+        "[5.25e-10, 8.11e-10] with central +4.18% vs eta_obs comparator; "
         "m_DM = 3.94 TeV is the supplied composed-product readout; "
-        "(C2.eta) remains open."
+        "P1-P4/P6-P7 and (C2.eta) remain open."
     )
     sys.exit(0)

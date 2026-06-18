@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 964 |
+| **retained_bounded** | 965 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 28 |
-| unaudited | 1519 |
+| unaudited | 1518 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1400 |
+| `audited_clean` | 1401 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1841 |
+| `unaudited` | 1840 |
 
 | claim_type | count |
 |---|---:|
@@ -1062,6 +1062,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_4d_mc_support_note_2026-05-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_bootstrap_framework_integration_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_observable_uniqueness_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15096,6 +15097,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The core theorem is an algebraic restriction of a retained-grade PSD form, followed by the standard mean-subtraction identity with `F = P - <P>`. The mixed-cumulant coefficient is cited only as retained onset context and the `beta = 6` arithmetic is explicitly demoted to a non-load-bearing diagnostic.
 - **rationale:** The load-bearing BB1/BB1' claims close as class-A algebra over retained-grade inputs: restriction of a PSD Hermitian sesquilinear form preserves PSD, and applying it to the mean-subtracted plaquette gives `C_{P_-,P} >= 0`. The runner is illustrative rather than first-principles, but that matches the claim because the proof is algebraic, not an SDP or new lattice computation. The note correctly keeps the formal `beta = 6` substitution and literature/MC comparisons outside theorem scope.
 - **auditor confidence:** medium
+
+### `plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12`
+
+- **Note:** [`PLAQUETTE_ENVIRONMENT_CONTRACTION_COST_VERIFICATION_BOUNDED_NOTE_2026-06-12.md`](../../docs/PLAQUETTE_ENVIRONMENT_CONTRACTION_COST_VERIFICATION_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded cost verification for the marked L_s=3 periodic spatial Wilson environment at NMAX in {2,3,4}: raw dense original-graph contraction and support-only sparse estimates exceed 4 GiB, while the orbit quotient is not an exact original-graph contraction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the original factor-primal graph, all tested exact-on-box direct cells are over budget, while the orbit quotient is feasible only as a non-exact diagnostic.  _(class `C`)_
+- **chain closes:** True — The runner constructs the finite L_s=3 marked environment, graph brackets, stabilizer quotient, LR support counts, and cost table directly rather than importing the contested cost numbers. The conclusion is explicitly bounded to tested direct original-graph methods and does not claim computation of rho_(p,q), exact treewidth, or a global contraction no-go.
+- **rationale:** The finite geometry counts, marked plaquette removal, graph-width brackets, and memory estimates are computed from visible runner code with no helper imports or external comparator constants. The displayed cost magnitudes are consistent with the reported best clique size 41 and the 4 GiB clique-size ceilings, and the source correctly treats sparse support as an estimate and the orbit quotient as non-exact. The No-Go Discipline section narrows the negative wording to tested direct original-graph methods and leaves rank-aware, stabilizer-block, stronger optimizer, and approximate routes open.
+- **auditor confidence:** high
 
 ### `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10`
 

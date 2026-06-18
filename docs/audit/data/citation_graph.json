@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lanes.generated-geometry.readme"
     },
     {
       "from": "repo.front_door_status",
-      "to": "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15"
+      "to": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
         "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
         "post_record_dynamics_campaign_closeout_index_2026-06-06",
         "post_record_retained_unbounded_dynamics_gate_2026-06-06",
         "sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15",
+        "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
         "lanes.generated-geometry.readme",
-        "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15"
+        "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9c6e14bf3f90bca7f33d877dc3034028e52e53180112cd4f010c4a3d21b4762e",
+      "note_hash": "4bbe2388e3d3a8a021bac5591082805d7fcb4637efa9f76759841d86f9c80fce",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1411 |
+| Applied audit verdicts | 1412 |
 | Retained-grade rows, including boxed decorations | 1378 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 912 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 14 |
-| Unaudited rows | 1646 |
+| Unaudited rows | 1645 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 11 |
-| Audited renaming rows | 3 |
+| Audited renaming rows | 4 |
 | Audited numerical-match rows | 4 |
 | Citation cycles detected | 7 |
 
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1648 |
-| Ready rows | 163 |
+| Total pending rows | 1647 |
+| Ready rows | 162 |
 | Cycle-break targets | 7 |
-| Critical pending | 316 |
+| Critical pending | 315 |
 | High pending | 289 |
 | Medium pending | 474 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
 - [`axiom_first_kms_condition_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`poisson_exhaustive_uniqueness_note`](../../docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md) - critical; unaudited
 - [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
+- [`hierarchy_effective_potential_endpoint_note`](../../docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

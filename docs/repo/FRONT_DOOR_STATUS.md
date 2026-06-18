@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1543 |
-| Retained-grade rows, including boxed decorations | 1450 |
+| Applied audit verdicts | 1544 |
+| Retained-grade rows, including boxed decorations | 1451 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
 | Retained bounded rows | 966 |
-| Boxed decorations under retained parents | 51 |
+| Boxed decorations under retained parents | 52 |
 | Open gates | 28 |
-| Unaudited rows | 1514 |
+| Unaudited rows | 1513 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 37 |
 | Audited renaming rows | 17 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1516 |
-| Ready rows | 99 |
+| Total pending rows | 1515 |
+| Ready rows | 98 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 531 |
+| Leaf pending | 530 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`su3_dabc_symmetric_theorem_note_2026-05-02`](../../docs/SU3_DABC_SYMMETRIC_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`teleportation_encoding_portability_note`](../../docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md) - medium; unaudited
 - [`lanes.generated-geometry.readme`](../../docs/lanes/generated-geometry/README.md) - medium; unaudited
 - [`accessible_prediction_note`](../../docs/ACCESSIBLE_PREDICTION_NOTE.md) - medium; unaudited
+- [`allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14`](../../docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14`](../../docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md) - leaf; unaudited
+- [`axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 932 |
-| Leaf nodes | 1508 |
+| Medium nodes | 931 |
+| Leaf nodes | 1509 |
 
 Top load-bearing rows by graph score:
 

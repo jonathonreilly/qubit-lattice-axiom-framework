@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 928 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1609 |
+| unaudited | 1608 |
 | meta | 322 |
-| ~~audited_numerical_match~~ | 5 |
+| ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 10 |
 | ~~audited_conditional~~ | 17 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -63,9 +63,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 17 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
-| `audited_numerical_match` | 5 |
+| `audited_numerical_match` | 6 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1931 |
+| `unaudited` | 1930 |
 
 | claim_type | count |
 |---|---:|
@@ -1570,6 +1570,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -20298,6 +20299,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given lambda^2 = alpha_s/n_pair and A^2 = n_pair/n_color, substitution forces A^2 lambda^2 = alpha_s/n_color, |V_cb|^2 = alpha_s^2/(n_pair n_color), and |V_ub|_0^2 = alpha_s^3(rho^2+eta^2)/(n_pair^2 n_color).  _(class `A`)_
 - **chain closes:** True — Inside the stated scope, every asserted identity follows by direct symbolic substitution from the hypotheses. The runner checks only class-A algebra and reports PASS=22, FAIL=0, matching the note's deliberately narrow claim boundary.
 - **rationale:** The scoped theorem is not claiming the input identities, a physical observable bridge, or numerical agreement; it only claims algebraic consequences conditional on explicit hypotheses. Those consequences close exactly by substitution, including the n_pair cancellation and the count-substituted forms. No hidden dependency is needed for this narrow claim because the upstream CKM/CP claims are excluded rather than consumed as authority.
+- **auditor confidence:** high
+
+### `work_history.ckm.cabibbo_bound_note`
+
+- **Note:** [`work_history/ckm/CABIBBO_BOUND_NOTE.md`](../../docs/work_history/ckm/CABIBBO_BOUND_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded Cabibbo numerical-match statement that the mass-basis NNI runner, using imported PDG masses and fitted NNI coefficients, computes |V_us| approximately 0.2251 against PDG 0.2243.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-work_history.ckm.cabibbo_bound_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Within the mass-basis NNI flavor package, the framework gives |V_us| = 0.2251, compared with the PDG value 0.2243.  _(class `G`)_
+- **chain closes:** True — The runner source builds NNI matrices from hard-coded PDG masses and imported fitted coefficients and computes |V_us| = 0.225117, matching the cache and source note. The closure is only the stated imports-dependent numerical match; the masses and NNI coefficients are not derived.
+- **rationale:** The source note explicitly says the Cabibbo number load-bears PDG quark masses, PDG comparators, and calibrated NNI/flavor coefficients. The runner performs real matrix diagonalization, but the load-bearing numerical agreement depends on those hard-coded external and fitted inputs, so it is class G rather than a first-principles framework computation. Promotion would require deriving the quark mass hierarchy and NNI coefficients from retained framework dynamics.
+- **open / conditional deps cited:**
+  - `work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md`
 - **auditor confidence:** high
 
 ### `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11`

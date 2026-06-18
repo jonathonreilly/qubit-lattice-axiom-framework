@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 304,
-    "high": 271,
+    "high": 270,
     "leaf": 569,
     "medium": 467
   },
@@ -8860,30 +8860,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "work_history.ckm.cabibbo_bound_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "work_history.ckm.ckm_mass_basis_nni_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.228,
-      "note_path": "docs/work_history/ckm/CABIBBO_BOUND_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_ckm_mass_basis_nni.py",
-      "transitive_descendants": 52
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "a3_route2_single_clock_c3_obstruction_note_2026-05-08_r2",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17701,7 +17677,7 @@
         "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16",
         "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py",
@@ -17709,12 +17685,12 @@
         "scripts/dm_full_closure_same_surface_thermal_support_common.py",
         "scripts/dm_leptogenesis_exact_common.py"
       ],
-      "load_bearing_score": 7.172,
+      "load_bearing_score": 7.7,
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py",
-      "transitive_descendants": 50
+      "transitive_descendants": 51
     },
     {
       "audit_independence_required": "any_non_self",
@@ -48233,6 +48209,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 159,
-  "total_pending": 1611
+  "ready_count": 158,
+  "total_pending": 1610
 }

@@ -9,12 +9,18 @@
 (SUMMARY: CAUSAL PROPAGATING FIELD SOURCE PACKET PASS=30 FAIL=0)
 **Source packet verifier cache:** [`logs/runner-cache/causal_propagating_field_source_packet_manifest_2026_06_05.txt`](../logs/runner-cache/causal_propagating_field_source_packet_manifest_2026_06_05.txt)
 **Source packet verifier JSON:** [`outputs/causal_propagating_field_source_packet_manifest_2026_06_05.json`](../outputs/causal_propagating_field_source_packet_manifest_2026_06_05.json)
+**Re-audit bridge:** [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md`](CAUSAL_PROPAGATING_FIELD_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md)
+with verifier
+[`scripts/causal_propagating_field_live_reaudit_bridge_2026_06_18.py`](../scripts/causal_propagating_field_live_reaudit_bridge_2026_06_18.py).
 
 ## Scope
 
 This note repairs the live support surface for the archived
 `causal_propagating_field_note` row. It does not unarchive the old note, edit
 the audit ledger, or restore the stale `0.63 / 0.45` positive table.
+The 2026-06-18 re-audit bridge makes that split explicit: the archived row is
+historical failed evidence, while this live packet is the bounded finite replay
+surface to inspect if the lane is re-audited.
 
 The current packet is a finite configured replay:
 

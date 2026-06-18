@@ -1,0 +1,8 @@
+claim_id: causal_propagating_field_live_reaudit_bridge_note_2026-06-18
+target_claim_id: causal_propagating_field_note
+trace_class: direct_blocker_partial_closure
+status: source_side_reaudit_bridge
+audit_status_set_by_this_pr: false
+adds_axiom: false
+edits_audit_surfaces: false
+next_action: "reviewer extracts source-side bridge if useful"

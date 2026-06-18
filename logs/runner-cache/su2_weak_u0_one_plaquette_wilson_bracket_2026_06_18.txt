@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/su2_weak_u0_one_plaquette_wilson_bracket_2026_06_18.py
+runner_sha256: 52693a13dc4b8ebe40e8b9a905b8a492d664c3708489b400898e58bb4a2d2b15
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+========================================================================================
+SU(2) one-plaquette Wilson/Haar u_0 bracket at beta_W = 16
+========================================================================================
+
+----------------------------------------------------------------------------------------
+A. Source packet checks
+----------------------------------------------------------------------------------------
+  [PASS] support note exists  --  docs/SU2_WEAK_U0_ONE_PLAQUETTE_WILSON_BRACKET_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+  [PASS] g_2 source note exists  --  docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md
+  [PASS] support note declares independent audit-lane status authority
+  [PASS] support note forbids full 4D nonperturbative-vacuum promotion
+  [PASS] g_2 row cites the one-plaquette support note
+  [PASS] g_2 row keeps full-lattice u_0 closure as an open stronger target
+
+----------------------------------------------------------------------------------------
+B. Exact one-plaquette Wilson/Haar integral identities
+----------------------------------------------------------------------------------------
+  [PASS] Bessel recurrence gives Z = I_0 - I_2 = 2 I_1 / beta  --  relative delta=2.458E-81
+  [PASS] d log Z / d beta equals I_2(beta) / I_1(beta)  --  relative delta=-2.458E-81
+  [PASS] one-plaquette expectation is a strict plaquette factor 0 < <P> < 1  --  <P>=0.907814845880750517616655328746266000706212386584219122513458197305336218563508839331412057
+
+----------------------------------------------------------------------------------------
+C. beta_W = 16 bracket
+----------------------------------------------------------------------------------------
+  [PASS] <P>_1plaq(16) lies in [0.9078, 0.9079]  --  <P>=0.907814845880750517616655328746266000706212386584219122513458197305336218563508839331412057
+  [PASS] u_0,1plaq(16) lies in [0.9761, 0.9762]  --  u_0=0.976111254449673255612569608004019655458630927679668157735775577284057351692357524916136506
+  [PASS] u_0,1plaq(16) is inside the g_2 row interval [0.96, 0.98]  --  0.96 < 0.976111254449673255612569608004019655458630927679668157735775577284057351692357524916136506 < 0.98
+  [PASS] the one-plaquette bracket is narrower than the admitted interval  --  [0.9761,0.9762] subset [0.96,0.98]
+
+----------------------------------------------------------------------------------------
+D. Guardrails
+----------------------------------------------------------------------------------------
+  [PASS] guardrail recorded: no full four-dimensional nonperturbative su(2) lattice vacuum
+  [PASS] guardrail recorded: no monte carlo import
+  [PASS] guardrail recorded: no observed electroweak g_2
+  [PASS] guardrail recorded: no new axiom
+
+Result:
+  beta_W = 16
+  <P>_1plaq(16) = 0.907814845880750517616655328746266000706212386584219122513458197305336218563508839331412057
+  u_0,1plaq(16) = 0.976111254449673255612569608004019655458630927679668157735775577284057351692357524916136506
+  certified bracket: u_0,1plaq(16) in [0.9761, 0.9762] subset [0.96, 0.98]
+  PASS=17 FAIL=0
+
+----- stderr -----
+

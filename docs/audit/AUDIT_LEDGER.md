@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 217 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 956 |
+| **retained_bounded** | 957 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 22 |
-| unaudited | 1546 |
+| unaudited | 1545 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1384 |
+| `audited_clean` | 1385 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1868 |
+| `unaudited` | 1867 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 566 |
 | `high` | 501 |
-| `medium` | 889 |
-| `leaf` | 1425 |
+| `medium` | 890 |
+| `leaf` | 1424 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -117,7 +117,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 785 | 38.12 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1113 | 36.62 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1114 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1086 | 35.59 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1326,6 +1326,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structureless_dag_gravity_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -18741,6 +18742,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substitute the assumed input g_2^2|_lattice = 1/4 into alpha = g^2/(4 pi) to get alpha_2|_lattice = 1/(16 pi), and substitute N = 2 and g_2^2|_lattice = 1/4 into beta_W = 2N/g_bare^2 to get beta_W|_lattice = 16.  _(class `A`)_
 - **chain closes:** True — The scoped theorem closes as exact algebra over the four named inputs. It does not derive the coupling input or the two textbook conventions, but the note correctly scopes those as assumptions/admissions rather than derived content.
 - **rationale:** The load-bearing step is a genuine class-A algebraic substitution, not a definition, renaming, external comparator, or tuned numerical match. The cited one-hop authorities are retained-grade for the scoped use: the coupling row supplies the formal assumed input g_2^2 = 1/(d+1), and the native gauge closure supplies SU(2) structure/dimension once SU(2)_L is fixed. Independent arithmetic confirms alpha_2 = (1/4)/(4 pi) = 1/(16 pi), its reciprocal is 16 pi, and beta_W = 2*2/(1/4) = 16.
+- **auditor confidence:** high
+
+### `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic substitution of retained/bounded count inputs and the named Peskin-Schroeder beta-formula admission to derive the SU(2)_L b_2 closed form, its 19/6 framework value, sector decomposition, and listed algebraic corollaries.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting N_W = (N_color + 1) * N_gen, n_S^complex_components = 2, T(F) = 1/2, and C_2(adj SU(2)) = N_pair into the admitted SU(N) one-loop beta formula gives b_2 = (11/3)N_pair - (1/3)(N_color + 1)N_gen - 1/6.  _(class `A`)_
+- **chain closes:** True — The stated closed form follows by direct coefficient substitution and common-denominator reduction. At (N_pair, N_color, N_gen) = (2, 3, 3), the exact arithmetic gives 22/3 - 4 - 1/6 = 19/6.
+- **rationale:** Within the declared bounded scope, the source does not claim to derive SU(2), color, generation count, Higgs content, or the beta formula; it claims only the algebraic implication from those named inputs. The provided one-hop authorities are retained-grade in the packet, and the runner source performs exact symbolic simplification plus Rational arithmetic rather than merely printing constants. No PDG comparator, fitted selector, or tuned scale enters the load-bearing step.
 - **auditor confidence:** high
 
 ### `su3_adjoint_casimir_theorem_note_2026-05-02`

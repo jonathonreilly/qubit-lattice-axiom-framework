@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 304,
     "high": 267,
-    "leaf": 565,
+    "leaf": 564,
     "medium": 412
   },
   "cycle_break_target_count": 7,
@@ -17415,34 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "native_gauge_closure_note",
-        "graph_first_su3_integration_note",
-        "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_count_corollary_note_2026-05-03",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "teleportation_bell_measurement_circuit_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -17565,6 +17537,38 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_chiral_split_mass_gravity.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+        "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "cpt_exact_note",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_readout_lane_demarcation_note_2026-05-30"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/koide_signed_readout_is_not_chirality.py",
       "transitive_descendants": 17
     },
     {
@@ -30211,38 +30215,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
-        "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
-        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "cpt_exact_note",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_readout_lane_demarcation_note_2026-05-30"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/koide_signed_readout_is_not_chirality.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lanes.generated-geometry.readme",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30915,6 +30887,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
+        "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
+        "scale_reference_primitive",
+        "hierarchy_formula_honest_status_note_2026-05-10"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py",
       "transitive_descendants": 1
     },
     {
@@ -36185,33 +36184,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_su2_double_use_reduces_to_pairing_admission_2026_06_08.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
-        "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28",
-        "scale_reference_primitive",
-        "hierarchy_formula_honest_status_note_2026-05-10"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py",
       "transitive_descendants": 1
     },
     {
@@ -46484,5 +46456,5 @@
     }
   ],
   "ready_count": 123,
-  "total_pending": 1548
+  "total_pending": 1547
 }

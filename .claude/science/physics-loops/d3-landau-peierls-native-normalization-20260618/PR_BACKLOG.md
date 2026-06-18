@@ -1,6 +1,6 @@
 # PR Backlog
 
-Target PR: pending.
+Target PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4393
 
 Branch: `codex/d3-landau-peierls-native-normalization-20260618`
 

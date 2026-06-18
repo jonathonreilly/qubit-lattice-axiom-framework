@@ -12,18 +12,18 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1500 |
+| Applied audit verdicts | 1501 |
 | Retained-grade rows, including boxed decorations | 1430 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 214 |
 | Retained bounded rows | 950 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 22 |
-| Unaudited rows | 1557 |
+| Unaudited rows | 1556 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 24 |
 | Audited renaming rows | 15 |
-| Audited numerical-match rows | 8 |
+| Audited numerical-match rows | 9 |
 | Citation cycles detected | 7 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1559 |
-| Ready rows | 129 |
+| Total pending rows | 1558 |
+| Ready rows | 128 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
-| Medium pending | 419 |
+| Medium pending | 418 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
 - [`quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md) - medium; unaudited
 - [`wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 - [`dimension_selection_upper_bound_textbook_import_note_2026-05-17`](../../docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
 - [`gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07`](../../docs/GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
+- [`teleportation_bell_measurement_circuit_note`](../../docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -88,7 +88,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1640 descendants; score 144.680
+- `minimal_axioms` - critical; 1639 descendants; score 144.679
 - `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296

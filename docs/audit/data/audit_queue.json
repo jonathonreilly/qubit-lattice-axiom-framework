@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 311,
+    "critical": 310,
     "high": 289,
     "leaf": 569,
     "medium": 474
@@ -121,33 +121,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "physical_lattice_necessity_note",
-        "cl3_color_automorphism_theorem",
-        "graph_first_su3_integration_note",
-        "su3_casimir_fundamental_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 29,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 22.785,
-      "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_hs_rigidity_narrow.py",
-      "transitive_descendants": 311
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -9052,6 +9025,28 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.943,
+      "note_path": "docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
+      "transitive_descendants": 122
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "source_resolved_exact_green_pocket_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -9073,28 +9068,6 @@
       "ready": true,
       "runner_path": "scripts/source_resolved_exact_green_pocket.py",
       "transitive_descendants": 115
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.345,
-      "note_path": "docs/FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py",
-      "transitive_descendants": 114
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -49072,6 +49045,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 159,
-  "total_pending": 1643
+  "ready_count": 158,
+  "total_pending": 1642
 }

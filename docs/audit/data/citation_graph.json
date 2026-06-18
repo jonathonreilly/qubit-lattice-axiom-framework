@@ -52230,10 +52230,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_q_delta_linking_relation_theorem_note_2026-04-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "source_resolved_exact_green_pocket_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
     },
     {
       "from": "repo.repo_organization",
@@ -100629,17 +100629,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_q_delta_linking_relation_theorem_note_2026-04-20",
         "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
         "poisson_exhaustive_uniqueness_note",
         "hierarchy_formula_honest_status_note_2026-05-10",
         "hierarchy_effective_potential_endpoint_note",
         "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
-        "source_resolved_exact_green_pocket_note"
+        "source_resolved_exact_green_pocket_note",
+        "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bff0da06681804f3a25b9264c968acc29bc0c77b11e17b352963271bbd63fd70",
+      "note_hash": "9a6b5d7ed8efdd76c071016e0ce6905b98ecaa3c616825bbe827a21f5bbe07e1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

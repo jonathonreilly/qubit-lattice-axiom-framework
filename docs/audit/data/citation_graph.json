@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "record_markov_generator_premise_classifier_2026-06-06"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17"
+      "to": "s3_time_tensor_build_memo"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22",
         "record_markov_generator_premise_classifier_2026-06-06",
         "record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15",
         "record_prerecord_instrument_kernel_gate_2026-06-06",
         "residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13",
+        "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17"
+        "s3_time_tensor_build_memo"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7816b9dccf6207648a36f1fc155c61afaca52a8ff327e8a982a53360e3424a2e",
+      "note_hash": "65cf04c9e42c8d3a93711cba635ced1447dc581231c3ab3a47f0233d7ab43bdb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1438 |
+| unaudited | 1437 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 26 |
+| ~~audited_renaming~~ | 27 |
 | ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -71,17 +71,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 26 |
-| `unaudited` | 1760 |
+| `audited_renaming` | 27 |
+| `unaudited` | 1759 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1729 |
 | `decoration` | 59 |
-| `meta` | 328 |
+| `meta` | 329 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 755 |
+| `positive_theorem` | 754 |
 
 | criticality | count |
 |---|---:|
@@ -1755,6 +1755,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `record_markov_generator_premise_classifier_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -17807,6 +17808,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** No finite real generator can satisfy P_swap = exp(Q t) at finite t because det(exp(Q t)) = exp(t tr(Q)) > 0, and singular reset is likewise excluded because finite matrix exponentials are invertible.  _(class `A`)_
 - **chain closes:** True — The displayed matrices close by standard finite-matrix algebra: P_lazy has the supplied two-state generator, P_swap has determinant -1, P_reset has determinant 0, and every finite real matrix exponential has positive determinant and is invertible. No cited authority or external physical input is needed for this narrowed claim.
 - **rationale:** The load-bearing step is a genuine algebraic closure, not a definition, renaming, or numerical match. Independent formula inventory agrees with the packet: the stochasticity, determinants, generator signs, exponential formula for the lazy kernel, and rate-time rescaling all check exactly. The no-go is clean only at the stated scope: finite real bounded generator, finite clock time, exact same finite transition matrix. No-go stress testing leaves alternative routes such as limiting resets, dilations, projections, approximate embeddings, or broader dynamics outside this audited claim rather than contradictions to it.
+- **auditor confidence:** high
+
+### `record_markov_generator_premise_classifier_2026-06-06`
+
+- **Note:** [`RECORD_MARKOV_GENERATOR_PREMISE_CLASSIFIER_2026-06-06.md`](../../docs/RECORD_MARKOV_GENERATOR_PREMISE_CLASSIFIER_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Audited the stated premise taxonomy and the finite two-state stochasticity, determinant-obstruction, generator, and semigroup checks for the record Markov-generator classifier.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-record_markov_generator_premise_classifier_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner classifies dynamics claims into four premise levels separating post-record information, production kernels, Markov semigroups, and physical-rate models.  _(class `E`)_
+- **chain closes:** False — The finite matrix checks close exactly, but the classifier gates themselves are stipulated as a premise map. No cited authority or first-principles axiom derivation is provided showing that this taxonomy follows rather than being defined.
+- **rationale:** Issue: the load-bearing classifier levels and gates are introduced by definition, not derived from retained inputs or first-principles framework dynamics. Why this blocks: the note can support a reusable taxonomy and exact finite examples, but not a retained derivation of a dynamics law, kernel, bridge, clock, or rate normalization. Repair target: supply a theorem deriving the gate structure from accepted axioms or split the finite algebraic checks from the stipulated classifier surface. Claim boundary until fixed: cite only the premise discipline and the checked two-state examples.
 - **auditor confidence:** high
 
 ### `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15`

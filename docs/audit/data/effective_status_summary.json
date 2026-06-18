@@ -2,10 +2,10 @@
   "claim_type_counts": {
     "bounded_theorem": 1729,
     "decoration": 59,
-    "meta": 328,
+    "meta": 329,
     "no_go": 351,
     "open_gate": 159,
-    "positive_theorem": 755
+    "positive_theorem": 754
   },
   "cycle_examples": [
     [
@@ -44,7 +44,7 @@
     "audited_conditional": 58,
     "audited_failed": 2,
     "audited_numerical_match": 11,
-    "audited_renaming": 26,
+    "audited_renaming": 27,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
     "decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_color_automorphism_theorem": 6,
@@ -84,7 +84,7 @@
     "retained_bounded": 993,
     "retained_no_go": 217,
     "retained_pending_chain": 3,
-    "unaudited": 1438
+    "unaudited": 1437
   },
   "retained_pending_chain_count": 3,
   "retained_pending_chain_examples": [

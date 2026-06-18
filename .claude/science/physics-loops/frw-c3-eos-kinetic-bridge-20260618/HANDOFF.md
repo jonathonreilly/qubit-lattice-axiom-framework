@@ -1,6 +1,6 @@
 # Handoff
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4400
 
 This block adds exact finite kinetic support for the ideal non-Lambda C3
 component labels:

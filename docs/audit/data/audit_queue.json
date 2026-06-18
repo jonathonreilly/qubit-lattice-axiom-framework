@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 265,
-    "leaf": 502,
+    "leaf": 501,
     "medium": 413
   },
   "cycle_break_target_count": 8,
@@ -17455,35 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-        "three_generation_observable_theorem_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17587,6 +17558,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_max_record_entropy_sector_blind_2026_06_15.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py",
       "transitive_descendants": 15
     },
     {
@@ -30287,30 +30282,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44932,6 +44903,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 71,
-  "total_pending": 1487
+  "ready_count": 70,
+  "total_pending": 1486
 }

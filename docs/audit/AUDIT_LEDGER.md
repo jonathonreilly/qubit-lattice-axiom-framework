@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 979 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1485 |
+| unaudited | 1484 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 45 |
+| ~~audited_conditional~~ | 46 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1418 |
-| `audited_conditional` | 45 |
+| `audited_conditional` | 46 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1807 |
+| `unaudited` | 1806 |
 
 | claim_type | count |
 |---|---:|
@@ -1573,6 +1573,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7107,6 +7108,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In the finite C3 algebra with e0=(I+C+C^2)/3 and e1=I-e0, the densities rho_p=p e0/Tr(e0)+(1-p)e1/Tr(e1) for 0<=p<=1 are positive trace-one C3-invariant states, so p=1/2 is admissible but not selected.  _(class `A`)_
 - **chain closes:** True — Independently, e0=J/3 and e1=I-J/3 are orthogonal central idempotents with traces 1 and 2; rho_p has eigenvalues p on e0 and (1-p)/2 on e1, giving positivity, trace one, C3-invariance, trace masses (1/3,2/3) at p=1/3 and equal masses (1/2,1/2) at p=1/2. The Q(r) formula and physical selector are explicitly separated from the theorem and are not used as derived conclusions.
 - **rationale:** The runner source performs actual finite matrix computations rather than merely printing constants, and its checks match the independent algebraic audit of the displayed projections, traces, block averages, state simplex, and Q(r) arithmetic. The old block-compression error is correctly demoted: e0Ae0+e1Ae1 is not center-valued for general A, while the repaired center-valued average and C3 conjugation average are kept distinct. The clean verdict is bounded to the stated finite-algebra claim; it does not derive a physical Q=2/3 readout, a trace default, a Frobenius beta-family, or dynamics selecting p=1/2.
+- **auditor confidence:** high
+
+### `flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15`
+
+- **Note:** [`FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md`](../../docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the algebraic color-singlet holonomy cap on the Koide sector dial for a link-dressed b-term with link-blind a-term, and its claimed contradiction with the quoted quark/lepton ordering.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the fibre-averaged link-dressed hop, b_eff = b·χ_R(U)/d_R and a_eff = a, hence r_R = r0·|χ_R(U)/d_R|^2 ≤ r0 by |χ_R(U)| ≤ d_R.  _(class `A`)_
+- **chain closes:** False — The character-suppression inequality closes for the modeled fibre-averaged holonomy operator. The full no-go against the observed quark/lepton sector spread still needs a closed bridge identifying the leptonic sector with the trivial representation and quark sector r values with nontrivial colour representations for this observable.
+- **rationale:** Issue: the algebraic character cap is sound for the stated colour-singlet fibre average, but the observed-sector contradiction imports the physical representation/readout identification colourless lepton ↔ trivial rep and coloured quark ↔ nontrivial rep. Why this blocks: the cited minimal-coupling and fibre-frame authorities explicitly remain kinematic/current-surface and defer physical SU(3)_c or future colour-readout identification. Repair target: add or cite a retained bridge theorem that maps the relevant Koide r observable for leptons and quarks onto those fibre representations. Claim boundary until fixed: conditional no-go for the gauge-invariant hopping-holonomy channel under that representation assignment.
+- **open / conditional deps cited:**
+  - `MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md`
+  - `FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md`
 - **auditor confidence:** high
 
 ### `flavor_hw1_staggered_projection_democratic_r0_2026-06-02`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1625 |
-| Retained-grade rows, including boxed decorations | 1490 |
+| Applied audit verdicts | 1626 |
+| Retained-grade rows, including boxed decorations | 1491 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 217 |
-| Retained bounded rows | 997 |
+| Retained bounded rows | 998 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 36 |
-| Unaudited rows | 1432 |
+| Unaudited rows | 1431 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 58 |
 | Audited renaming rows | 27 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1434 |
-| Ready rows | 18 |
+| Total pending rows | 1433 |
+| Ready rows | 17 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 449 |
+| Leaf pending | 448 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16`](../../docs/SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER_NO_GO_NOTE_2026-06-16.md) - medium; unaudited
 - [`sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`](../../docs/SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`source_resolved_exact_green_self_consistent_note`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_SELF_CONSISTENT_NOTE.md) - medium; unaudited
 - [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13`](../../docs/TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13`](../../docs/TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md) - leaf; unaudited
+- [`teleportation_conclusion_boundary_note`](../../docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

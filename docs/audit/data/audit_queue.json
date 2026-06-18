@@ -3,7 +3,7 @@
     "critical": 304,
     "high": 268,
     "leaf": 569,
-    "medium": 446
+    "medium": 445
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -17444,30 +17444,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.248,
-      "note_path": "docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gauge_gauging_selection_conjugation_independence_2026_06_16.py",
-      "transitive_descendants": 37
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "newton_derivation_top4_bridge_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17559,6 +17535,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
+        "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
+        "higgs_mass_from_axiom_note",
+        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.858,
+      "note_path": "docs/WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wilson_extremum_curvature_readout_boundary_2026_06_15.py",
+      "transitive_descendants": 28
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17614,28 +17617,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15",
+      "claim_id": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "open_gate",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
-        "higgs_mass_from_axiom_note",
-        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
+        "color_su3_matter_realization_residual_map_2026-06-05",
+        "graph_first_su3_integration_note",
+        "cl3_color_automorphism_theorem",
+        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
+        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
+        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 4.307,
-      "note_path": "docs/WILSON_EXTREMUM_CURVATURE_READOUT_BOUNDARY_CERTIFICATE_2026-06-15.md",
+      "load_bearing_score": 5.459,
+      "note_path": "docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/wilson_extremum_curvature_readout_boundary_2026_06_15.py",
-      "transitive_descendants": 13
+      "runner_path": "scripts/gauge_algebra_supplied_carrier_2026_06_08.py",
+      "transitive_descendants": 21
     },
     {
       "audit_independence_required": "any_non_self",
@@ -24196,35 +24201,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_selector_relative_action_recovered_branch_separation_support_2026_04_21.py",
-      "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "color_su3_matter_realization_residual_map_2026-06-05",
-        "graph_first_su3_integration_note",
-        "cl3_color_automorphism_theorem",
-        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.459,
-      "note_path": "docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gauge_algebra_supplied_carrier_2026_06_08.py",
       "transitive_descendants": 21
     },
     {
@@ -47535,5 +47511,5 @@
     }
   ],
   "ready_count": 149,
-  "total_pending": 1587
+  "total_pending": 1586
 }

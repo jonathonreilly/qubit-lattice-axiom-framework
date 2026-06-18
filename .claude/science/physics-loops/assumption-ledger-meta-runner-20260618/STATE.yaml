@@ -1,0 +1,24 @@
+loop_slug: assumption-ledger-meta-runner-20260618
+goal: "Register and harden the assumption-derivation ledger meta firewall runner so the critical meta row has source-side mechanical evidence."
+target_status: best-honest-status
+actual_current_surface_status: open
+trace_class: methodology
+reachability_to_target: supports
+branch: codex/assumption-ledger-meta-runner-20260618
+base: origin/main
+base_commit: e075820c0
+cycle_count: 1
+active_route: metadata_runner_registration
+files_touched:
+  - docs/ASSUMPTION_DERIVATION_LEDGER.md
+  - scripts/assumption_derivation_ledger_meta_check.py
+  - logs/runner-cache/assumption_derivation_ledger_meta_check.txt
+open_imports: []
+no_go_routes:
+  - treating the ledger as a bounded theorem without one-hop authority wiring
+  - using the ledger to promote, demote, retain, or bound ingredient rows
+review_loop_disposition: "not run; reviewer handles review-loop/landing per user instruction"
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+next_exact_action: "Open PR for source-side runner registration and hand to reviewer/auditor."
+stop_condition: "One coherent audit-unlock block completed."

@@ -20,7 +20,9 @@ Verifies, in exact finite dimensions:
        for the exact half-integer cutoff family Lambda in Z>=0+1/2,
        with the proposal's branch conditions (gap failure at a = 0;
        eta = 0 at a = 1/2; chi = -1 on (1/2, 1)), the exact floor
-       formula, and explicit non-half-integer counterexample cutoffs.
+       formula and the equivalent generic Lambda=m+r formula
+       eta=1_{r>=a}-1_{r>=1-a}, plus explicit non-half-integer
+       counterexample cutoffs.
   [T4] coexistence: D_tot Hermitian; [D_gen, C3] = 0; {D_gen-part,
        Gamma_prod} = 0; [D_bdy-part, Gamma_prod] = 0; [N, eps] = 0;
        {e4, eps} = 0; {e1, eps} = 0.
@@ -78,6 +80,16 @@ def tower_spectral(a: float, lam_max: float) -> np.ndarray:
 def eta_formula_positive(a: float, lam_max: float) -> int:
     """Closed-form eta for a in (0, 1/2) on the spectral cutoff."""
     return int(np.floor(lam_max - a) + 1 - np.floor(lam_max + a))
+
+
+def frac_part(x: float) -> float:
+    return float(x - np.floor(x))
+
+
+def eta_formula_positive_twist(a: float, lam_max: float) -> int:
+    """Exact eta for 0 < a < 1/2 and Lambda=m+r."""
+    r = frac_part(lam_max)
+    return int(r + 1.0e-12 >= a) - int(r + 1.0e-12 >= 1.0 - a)
 
 
 def label(lam: np.ndarray) -> str:
@@ -203,12 +215,15 @@ def main() -> int:
     for LL in (0.5, 1.5, 2.5, 20.5, 20.25, 20.75):
         for aa in (0.1, 0.3, 0.49):
             e_direct, _ = eta_h(tower_spectral(aa, LL))
-            if e_direct != eta_formula_positive(aa, LL):
+            floor_formula = eta_formula_positive(aa, LL)
+            indicator_formula = eta_formula_positive_twist(aa, LL)
+            if e_direct != floor_formula or floor_formula != indicator_formula:
                 formula_ok = False
                 print(f"    FLOOR MISMATCH Lambda={LL}, a={aa}: "
-                      f"direct={e_direct}, formula={eta_formula_positive(aa, LL)}")
-    check("T3", "closed floor formula eta=floor(Lambda-a)+1-floor(Lambda+a) "
-                "matches direct spectral counts on tested cutoffs",
+                      f"direct={e_direct}, floor={floor_formula}, "
+                      f"indicator={indicator_formula}")
+    check("T3", "closed floor/fractional formula for eta matches direct "
+                "spectral counts on tested cutoffs",
           formula_ok)
     half_integer_ok = True
     for LL in (0.5, 1.5, 2.5, 7.5, 20.5):

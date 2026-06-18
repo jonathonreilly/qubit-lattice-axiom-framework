@@ -23,10 +23,11 @@ Lambda}`, the uniform interval labels are **quantized for the exact
 half-integer cutoff family** `Lambda in Z_{\ge 0} + 1/2`: `chi = +1`
 for `a in (0, 1/2)`, `chi = -1` for `a in (-1/2, 0)`, and the
 proposal's branch conditions fail exactly where they should (`a = 0`:
-gap fails, `h_delta = 1`; `a = +/-1/2`: `eta_delta = 0`); outside
-that half-integer cutoff family the same floor formula gives explicit
-counterexample cutoffs, so the broad arbitrary-`Lambda` reading is not
-claimed; (T4) the **same** total Dirac
+gap fails, `h_delta = 1`; `a = +/-1/2`: `eta_delta = 0`). For a
+generic cutoff `Lambda = m + r`, the exact condition is
+`eta_delta = 1_{r >= a} - 1_{r >= 1-a}` for `0 < a < 1/2`; ordinary
+non-boundary cutoffs can give `eta_delta = 0`, so the broad
+arbitrary-`Lambda` reading is not claimed; (T4) the **same** total Dirac
 simultaneously satisfies the Koide-side anticommutation
 `{D_gen-part, Gamma_prod} = 0` with the product grading
 `Gamma_prod = G (x) I (x) eps`, while `[D_bdy-part, Gamma_prod] = 0`
@@ -172,20 +173,21 @@ The undefined cases are exactly the proposal's branch conditions
 (`h_delta = 0` and `eta_delta != 0`), and the `a = 0` case is the
 consistency leg with the retained bulk-vanishing row: the untwisted
 (flat/mean-field) surface carries **no** label, matching
-`eta_APS = 0` identically on the closed staggered torus. For a general
-cutoff `Lambda = m + r`, `m in Z_{\ge 0}`, `r in [0,1)`, and
-`a in (0,1/2)`,
+`eta_APS = 0` identically on the closed staggered torus.
+
+For a general cutoff `Lambda = m + r`, `m in Z_{\ge 0}`, `0 <= r < 1`,
+and `0 < a < 1/2`,
 
 ```text
     eta_delta(A(a)) = floor(Lambda - a) + 1 - floor(Lambda + a).
 ```
 
-Thus the positive interval has the uniform label `+1` exactly when
-`r = 1/2`; for a single fixed `a` the positive-label condition is
-`a <= r < 1 - a`. The negative interval follows by reflection. This
-note claims the uniform theorem only for `Lambda in Z_{\ge 0}+1/2`.
-Non-half-integer cutoffs are excluded from the theorem surface rather
-than silently admitted.
+Equivalently, `eta_delta(A(a)) = 1_{r >= a} - 1_{r >= 1-a}`. Thus the
+positive interval has the uniform label `+1` exactly when `r = 1/2`;
+for a single fixed `a` the positive-label condition is `a <= r < 1 - a`.
+The negative interval follows by reflection. This note claims the uniform
+theorem only for `Lambda in Z_{\ge 0}+1/2`. Non-half-integer cutoffs are
+excluded from the theorem surface rather than silently admitted.
 
 **(T4) Coexistence with the Koide-side anticommutation (escape hatch
 II realized).** With `Gamma_prod = G (x) I (x) eps`:
@@ -226,19 +228,12 @@ sign follows. For the orientation image: if `B' = -U B U^dag` then
 Lambda`. For `a in (0, 1/2)`, positives are `n >= 0` with
 `n <= Lambda - a` (`floor(Lambda - a) + 1` values), while negatives
 are `n <= -1` with `n >= -Lambda - a` (`floor(Lambda + a)` values).
-Hence
-
-```text
-    eta_delta(A(a)) = floor(Lambda - a) + 1 - floor(Lambda + a).
-```
-
-Writing `Lambda = m + r`, `r in [0,1)`, this equals `+1` throughout
-the whole interval `a in (0,1/2)` exactly for `r = 1/2`; if `r < 1/2`,
-any `a in (r,1/2)` gives `eta_delta = 0`, and if `r > 1/2`, any
-`a in (1-r,1/2)` gives `eta_delta = 0`. For a single fixed positive
-twist, the exact condition is `a <= r < 1-a`; the uniform theorem used
-by this note takes the stronger and canonical half-integer cutoff
-family `Lambda in Z_{\ge0}+1/2`. The map `a -> -a` flips the spectrum,
+Hence `eta_delta(A(a)) = floor(Lambda - a) + 1 - floor(Lambda + a)`.
+Writing `Lambda = m + r`, `0 <= r < 1`, this is equivalently
+`eta_delta = 1_{r >= a} - 1_{r >= 1-a}`. It equals `+1` throughout
+`a in (0, 1/2)` exactly for the canonical half-integer cutoff family
+`Lambda in Z_{\ge0}+1/2`; for a single fixed positive twist, the exact
+condition is `a <= r < 1-a`. The map `a -> -a` flips the spectrum,
 giving the negative interval. At `a = 0` the `n = 0` eigenvalue sits
 in the `delta`-window (`h_delta = 1`). At `a = 1/2` and half-integer
 `Lambda`, the spectrum is reflection-symmetric, so `eta_delta = 0`.
@@ -335,11 +330,12 @@ Primary runner
    unitary conjugate.
 4. **[T3]** the label table over `a in {0, +/-0.1, +/-0.3, 0.49,
    0.5, 0.7, 0.9}` on the half-integer cutoff `Lambda = 20.5`, the
-   exact floor formula, uniform labels over sampled half-integer
-   cutoffs, and explicit excluded non-half-integer counterexample
-   cutoffs. Branch-condition behavior remains exact (gap failure at
-   `a = 0` with `h_delta = 1`; `eta_delta = 0` at `a = 1/2`;
-   `chi = -1` for `a in (1/2, 1)` i.e. `a - 1 in (-1/2, 0)`).
+   exact floor/fractional-cutoff formula, uniform labels over sampled
+   half-integer cutoffs, and explicit excluded non-half-integer
+   counterexample cutoffs. Branch-condition behavior remains exact
+   (gap failure at `a = 0` with `h_delta = 1`; `eta_delta = 0` at
+   `a = 1/2`; `chi = -1` for `a in (1/2, 1)` i.e. `a - 1 in
+   (-1/2, 0)`).
 5. **[T4]** Hermiticity of `D_tot`; `[D_gen, C_3] = 0`;
    `{D_gen-part, Gamma_prod} = 0`; `[D_bdy-part, Gamma_prod] = 0`;
    `[N, eps] = 0`, `{e_4, eps} = 0`, `{e_1, eps} = 0`.

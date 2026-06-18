@@ -15,15 +15,16 @@ verdict.
 Given the supplied accepted-premise packet (P1) below — the parent
 theorem's current `P-ABJ` premise, i.e. the standard
 Adler–Bell–Jackiw (ABJ) anomaly-to-inconsistency implication for
-chiral gauge theories — together with the hypercharge/completion and
-chirality-realization premise edges named in §"Dependency-edge repair
-(2026-06-16)" and §"Load-Bearing Dependencies" below, the following
-narrow conditional consequence holds:
+chiral gauge theories — together with the retained-bounded P-HY
+supplier wiring added in 2026-06-18 and the remaining
+completion/chirality-realization premise edges named in
+§"Dependency-edge repair (2026-06-16)" and §"Load-Bearing
+Dependencies" below, the following narrow conditional consequence
+holds:
 
 ```text
 (B1)  The retained graph-first nonabelian SU(2) x SU(3) content plus
-      the bounded left-handed abelian eigenvalue surface, under the
-      declared P-HY identification premise, gives the left-handed
+      the retained-bounded P-HY LH-surface supplier gives the left-handed
       fermion content (2, 3)_{+1/3} + (2, 1)_{-1} and produces
       three nonzero perturbative anomaly traces:
         Tr[Y^3]         = -16/9   (nonzero)
@@ -59,10 +60,12 @@ narrow conditional consequence holds:
 ```
 
 This is an exact rational-arithmetic conditional consequence once
-(P1/P-ABJ), P-HY, P-COMP, and P-REC are exposed as named premise
-edges. The bridge does **not** derive (P1) itself — that is the
-standard ABJ result [1,2] for chiral gauge theories. It also does not
-derive P-HY, P-COMP, or P-REC. The bridge does **not** close
+(P1/P-ABJ), the retained-bounded P-HY LH-surface supplier, P-COMP,
+and P-REC are exposed as named edges. The bridge does **not** derive
+(P1) itself — that is the standard ABJ result [1,2] for chiral gauge
+theories. It also does not derive P-COMP or P-REC, and it does not widen
+P-HY beyond the bounded left-handed hypercharge-identification surface
+supplied below. The bridge does **not** close
 d_t = 1; that final pin requires the parent theorem's declared
 B-AXIS boundary, which is outside this bridge.
 
@@ -95,11 +98,18 @@ named-premise form.
   external admission in named-premise form rather than deriving it.
 
 The registered premise (P1/P-ABJ) feeds step (B2) of the
-§"Proof-walk" table below. P-HY supplies the identification from the
-bounded abelian surface to anomaly-relevant `U(1)_Y`, P-COMP supplies
+§"Proof-walk" table below. For the narrow B1 left-handed arithmetic,
+P-HY is supplied by the 2026-06-18 retained-bounded supplier wiring:
+[`ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md`](ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md)
+points to the already audit-clean bounded chain
+[`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md),
+which identifies the graph-first LH doublet surface
+`Y = (1/3) P_sym - P_anti` with eigenvalues `+1/3` on `(2,3)` and
+`-1` on `(2,1)` under its stated bounded conventions. P-COMP supplies
 the opposite-chirality SU(2)-singlet completion premise, and P-REC
 supplies the taste-reconstruction bridge from staggered `epsilon` to
-Clifford chirality. These are premise edges, not derived conclusions.
+Clifford chirality. P-COMP and P-REC remain premise edges, not derived
+conclusions.
 The arithmetic in (B1), (B3), and (B6) is exact over `Q`/`Z`; the
 Clifford parity step (B5) consumes a retained theorem.
 
@@ -113,24 +123,28 @@ authority. Current `main` correctly separates the inputs:
 |---|---|---|
 | GC | retained nonabelian `SU(2) x SU(3)` graph-first content and `d_s=3` substrate | retained source input |
 | HY-surface | bounded abelian eigenvalue spectrum `{+1/3 x6, -1 x2}` | bounded source input |
-| P-HY | identifies `Y_like` with anomaly-relevant `U(1)_Y` for the LH content | declared premise edge inherited from the parent theorem |
+| P-HY | identifies the bounded LH `Y_like` surface with the `U(1)_Y` values used in the B1 anomaly arithmetic | supplied for this narrow LH arithmetic surface by the 2026-06-18 supplier note plus retained-bounded `HYPERCHARGE_IDENTIFICATION_NOTE`; not widened to full physical hypercharge, electroweak matching, or full-spectrum completion |
 | P-ABJ / P1 | anomaly-to-inconsistency implication | declared external premise edge |
 | P-COMP | opposite-chirality SU(2)-singlet completion premise; SM branch used only as exact witness | declared premise edge inherited from the parent theorem |
 | CHI | staggered `epsilon` grading and Kawamoto-Smit phase-class carrier | retained-bounded source input |
 | P-REC | identifies staggered `epsilon` with Clifford chirality on the irreducible Dirac factor | declared premise edge inherited from the parent theorem |
 | EVEN | Clifford chirality exists iff total dimension is even | retained theorem input |
 
-No audit ledger or status surface is edited here. The repair does not derive P-HY, P-COMP, or P-REC.
+No audit ledger or status surface is edited here. The repair does not derive
+P-COMP or P-REC and does not widen P-HY beyond the bounded left-handed
+hypercharge-identification surface.
+Guardrail: this repair does not widen P-HY beyond the bounded left-handed hypercharge-identification surface.
 The repair makes the
 dependency graph explicit for re-audit: the bridge can be checked as an
 exact conditional consequence over these named edges, but it is not a
-retained derivation of hypercharge, matter completion, P-ABJ, or P-REC.
+retained derivation of full physical hypercharge, matter completion, P-ABJ,
+or P-REC.
 
 ## Proof-walk
 
 | Step | Statement | Load-bearing input | Lattice-action input? |
 |---|---|---|---|
-| (B1) | Three perturbative anomaly traces of the LH SM content are nonzero (`Tr[Y^3] = -16/9`, `Tr[SU(3)^2 Y] = 1/3`, `Tr[SU(3)^3] = 2`) | Retained nonabelian graph-first content + bounded HY-surface + declared P-HY; exact rational arithmetic on the explicit `(2,3)_{+1/3} + (2,1)_{-1}` multiplets | no |
+| (B1) | Three perturbative anomaly traces of the LH SM content are nonzero (`Tr[Y^3] = -16/9`, `Tr[SU(3)^2 Y] = 1/3`, `Tr[SU(3)^3] = 2`) | Retained nonabelian graph-first content + retained-bounded P-HY LH-surface supplier; exact rational arithmetic on the explicit `(2,3)_{+1/3} + (2,1)_{-1}` multiplets | no |
 | (B2) | A chiral gauge theory with nonzero anomaly traces fails to close as a unitary quantum field theory | (P1) accepted-premise packet entry | no |
 | (B3) | Adding SU(2)-singlet right-handed completion with `(y_1, y_2, y_3, y_4) = (4/3, -2/3, -2, 0)` cancels all three anomaly traces (full LH+RH content has `Tr[Y]=Tr[Y^3]=Tr[SU(3)^2 Y]=Tr[SU(3)^3]=Tr[SU(2)^2 Y]=0`) | Declared P-COMP completion premise; Standard Model branch is exact rational witness, not derived completion authority | no |
 | (B4) | The SU(2)-singlet RH completion is chirally distinct from LH doublets; under P-REC, staggered `epsilon` is realized as Clifford `gamma_5` (involution, anticommuting with all Dirac matrices) on the carrying spacetime representation | Retained `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02` rules per-site Cl(3); retained-bounded `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07` carries the staggered `{epsilon, D_staggered}=0` realization; P-REC is declared | no |
@@ -241,8 +255,15 @@ registered.
   identification, or right-handed matter completion.
 - [`NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23.md`](NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23.md)
   — supplies the bounded abelian eigenvalue surface with spectrum
-  `{+1/3 x6, -1 x2}`. P-HY, not this note, identifies that surface
-  with anomaly-relevant `U(1)_Y`.
+  `{+1/3 x6, -1 x2}`. The 2026-06-18 P-HY supplier wiring below,
+  not this note alone, identifies the bounded LH surface used by the
+  B1 anomaly arithmetic.
+- [`ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md`](ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md)
+  — records the source-side dependency repair that routes the ABJ B1
+  left-handed `Y` values through the already retained-bounded
+  [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](HYPERCHARGE_IDENTIFICATION_NOTE.md)
+  and keeps full physical hypercharge, electroweak matching, and
+  full-spectrum completion out of scope.
 - [`CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`](CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md)
   — supplies the retained-grade narrow theorem that `gamma_5`
   existence forces `d = d_s + d_t` even (used in step (B5)).
@@ -266,7 +287,7 @@ registered.
   formalizes the lower-bound part of that package in named-premise
   form. Parent context only; the conditional `d_t` parity conclusion
   inside that row's proof is reproduced here on the explicit P-ABJ/P1,
-  P-HY, P-COMP, and P-REC premise edges.
+  retained-bounded P-HY supplier, and P-COMP/P-REC premise edges.
 - `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`
   is provenance/context for the parent theorem's B-AXIS wording. It is
   *not* a dependency of this bridge — this bridge stops at
@@ -307,7 +328,9 @@ This bridge does **not** close:
   (the proposed PR 402 companion was closed without merge);
 - the final pin `d_t = 1`, which requires B-AXIS and is outside this
   bridge;
-- derivation of P-HY, P-COMP, or P-REC;
+- derivation of P-COMP or P-REC;
+- derivation of full physical hypercharge beyond the retained-bounded
+  left-handed P-HY supplier surface;
 - derivation of the staggered chirality carrier itself (carried
   separately by
   `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07`);
@@ -324,19 +347,20 @@ This bridge does **not** close:
   `ANOMALY_FORCES_TIME_THEOREM` is decided by the audit lane).
 
 The bridge re-bases the parent theorem's current `P-ABJ` premise onto
-an explicit (P1) accepted-premise registration and exposes the sibling
-P-HY/P-COMP/P-REC premise edges. It does not eliminate any premise; it
-formally exposes the conditional chain in audit-readable named-premise
-form.
+an explicit (P1) accepted-premise registration and exposes the
+retained-bounded P-HY supplier surface plus the remaining P-COMP/P-REC
+premise edges. It does not eliminate P-COMP or P-REC; it formally exposes
+the conditional chain in audit-readable named-edge form.
 
 ## NO NEW ADMISSIONS
 
 (P1) is the same external ABJ premise now named in the parent theorem
-as `P-ABJ`. P-HY, P-COMP, P-REC, and B-AXIS are likewise the current
-parent theorem's declared boundary vocabulary; this bridge only exposes
-which of those edges are load-bearing for the `d_t` odd lower-bound
-subclaim. No new axiom, no new admission, and no new repo-wide theory
-class is introduced.
+as `P-ABJ`. P-HY is supplied for the bounded LH arithmetic surface by
+the 2026-06-18 source-side wiring; P-COMP, P-REC, and B-AXIS remain the
+current parent theorem's declared boundary vocabulary. This bridge only
+exposes which of those edges are load-bearing for the `d_t` odd
+lower-bound subclaim. No new axiom, no new admission, and no new
+repo-wide theory class is introduced.
 
 ## Verification
 
@@ -351,8 +375,9 @@ Expected:
 ```text
 TOTAL: PASS=<N> FAIL=0
 VERDICT: bounded ABJ-inconsistency accepted-premise bridge passes;
-LH-content anomaly + P-ABJ/P1 + P-HY/P-COMP/P-REC + named dependencies
-force d_t in {odd positives} by exact rational arithmetic.
+LH-content anomaly + P-ABJ/P1 + retained-bounded P-HY supplier
++ P-COMP/P-REC + named dependencies force d_t in {odd positives}
+by exact rational arithmetic.
 ```
 
 ## References

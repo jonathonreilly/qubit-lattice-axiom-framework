@@ -1,0 +1,28 @@
+loop_slug: abj-phy-supplier-wiring-20260618
+branch: codex/abj-phy-supplier-wiring-20260618
+base: origin/main
+target_status: bounded-support
+active_claim_id: anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26
+cycle_count: 1
+current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+closed_sub_edge: P-HY left-handed arithmetic supplier
+remaining_open_edges:
+  - P-ABJ anomaly-to-inconsistency premise
+  - P-COMP completion-shape premise/derivation
+  - P-REC anomaly-carrying chirality reconstruction
+  - B-AXIS for parent theorem's d_t = 1 cap
+files_touched:
+  - docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md
+  - docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md
+  - scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py
+  - scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py
+  - logs/runner-cache/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.txt
+  - logs/runner-cache/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.txt
+verification:
+  - "python3 -m py_compile scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py"
+  - "python3 scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py"
+  - "PYTHONPATH=scripts python3 scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py"
+review_disposition: local_pass_external_review_required
+next_exact_action: "Commit, push, and open ready PR."

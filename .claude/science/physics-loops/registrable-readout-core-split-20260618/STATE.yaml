@@ -1,0 +1,11 @@
+loop: registrable-readout-core-split-20260618
+target_status: exact-support
+current_goal: split clean algebraic core from physical readout bridges
+active_route: algebraic-core split
+files_touched:
+  - docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
+  - scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py
+  - logs/runner-cache/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.txt
+  - docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md
+review_loop: not_run_user_delegated
+next_exact_action: run runner, refresh cache, push PR

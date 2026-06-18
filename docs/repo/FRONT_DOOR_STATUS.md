@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1565 |
-| Retained-grade rows, including boxed decorations | 1461 |
+| Applied audit verdicts | 1566 |
+| Retained-grade rows, including boxed decorations | 1462 |
 | Retained positive theorems | 218 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 974 |
+| Retained bounded rows | 975 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 30 |
-| Unaudited rows | 1492 |
+| Unaudited rows | 1491 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 44 |
 | Audited renaming rows | 18 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1494 |
-| Ready rows | 78 |
+| Total pending rows | 1493 |
+| Ready rows | 77 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 509 |
+| Leaf pending | 508 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12`](../../docs/DEPTH_LAURENT_ROOT_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12`](../../docs/DET_HOLONOMY_TRIVIAL_ON_HERMITIAN_POSITIVE_CIRCULANT_EDGE_CONTENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07`](../../docs/DIRAC_LORENTZ_DIAGNOSTIC_BOUNDARIES_FROM_REJECTED_REPAIRS_NOTE_2026-06-07.md) - medium; unaudited
 - [`ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07`](../../docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md) - medium; unaudited
 - [`epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12`](../../docs/EPSSTAR_COEFFICIENT_RICHARDSON_MOFF0_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12`](../../docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12`](../../docs/EPSSTAR_CURVE_PT_BOUNDARY_QUADRATURE_COLLAPSE_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12`](../../docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 931 |
-| Leaf nodes | 1509 |
+| Medium nodes | 934 |
+| Leaf nodes | 1506 |
 
 Top load-bearing rows by graph score:
 

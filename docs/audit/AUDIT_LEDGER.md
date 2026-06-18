@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1002 |
+| **retained_bounded** | 1003 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1419 |
+| unaudited | 1418 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 29 |
@@ -67,13 +67,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1452 |
+| `audited_clean` | 1453 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 58 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1741 |
+| `unaudited` | 1740 |
 
 | claim_type | count |
 |---|---:|
@@ -88,8 +88,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 888 |
-| `leaf` | 1424 |
+| `medium` | 887 |
+| `leaf` | 1425 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1562,6 +1562,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -22908,6 +22909,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The restricted packet closes the scoped coefficient theorem: the trace expansion gives the plaquette deficit a^4 g_bare^2 F^a F^a/(4 N_c), and the continuum action has coefficient 1/2 over unordered planes. This is a clean bounded derivation under supplied Wilson-action and trace-normalization hypotheses, with no claim of Wilson action-surface selection or g_bare=1. The first audit is the better resolution because it treats the step as algebraic derivation over supplied inputs rather than first-principles framework computation.
 - **rationale:** The restricted packet closes the scoped coefficient theorem: the trace expansion gives the plaquette deficit a^4 g_bare^2 F^a F^a/(4 N_c), and the continuum action has coefficient 1/2 over unordered planes. This is a clean bounded derivation under supplied Wilson-action and trace-normalization hypotheses, with no claim of Wilson action-surface selection or g_bare=1. The first audit is the better resolution because it treats the step as algebraic derivation over supplied inputs rather than first-principles framework computation.
 - **auditor confidence:** judicial
+
+### `wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13`
+
+- **Note:** [`WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md`](../../docs/WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebraic spectrum, multiplicity grouping, determinant, and half-log V_taste^W formula for the explicitly constructed Wilson-shifted staggered direct-sum operator on the APBC minimal-block corner labels.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each corner, adding the Wilson scalar shift W(n)=2r hw(n) to the staggered real two-plane J(u_0) gives O_n=W(n)I_2+J(u_0), whose eigenvalues are 2r hw(n) +/- 2 i u_0.  _(class `A`)_
+- **chain closes:** True — Given the retained Wilson shift W(n)=2r hw(n) and retained unshifted staggered conjugate pair represented by J(u_0), the eigenvalue shift and determinant formula follow by direct 2x2 characteristic-polynomial algebra. The Hamming-weight multiplicities are exactly the cited binomial corner count.
+- **rationale:** The load-bearing step is a genuine algebraic closure over two retained-bounded inputs, not a definition, external comparator, or tuned numerical match. Independent inspection confirms the 2x2 block has characteristic polynomial (lambda-2r hw(n))^2+4u_0^2 and that grouping over {0,1}^4 gives the stated binomial product. The runner mostly checks finite algebra and source markers rather than first-principles lattice construction, but that matches the note's bounded construction-only scope.
+- **auditor confidence:** high
 
 ### `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`
 

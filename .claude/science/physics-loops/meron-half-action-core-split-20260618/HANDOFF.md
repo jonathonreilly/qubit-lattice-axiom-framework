@@ -1,6 +1,7 @@
 # Handoff
 
 Branch: `codex/meron-half-action-core-split-20260618`
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4386
 
 This source-side PR repairs the latest conditional audit result for `meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16` by splitting the closed half-action algebra core from the still-open boundary construction.
 
@@ -19,3 +20,4 @@ Verification:
 
 Forbidden-surface expectation: no audit ledger, queue, publication, repo status, lane registry, or active review queue files should be changed by this branch.
 
+Next action: reviewer may run review-loop and landing cleanup. If accepted, independent audit can decide whether the bounded-support core changes the parent conditional row.

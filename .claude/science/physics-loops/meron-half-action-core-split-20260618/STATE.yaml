@@ -6,6 +6,7 @@ target_runner: scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narro
 core_runner: scripts/meron_half_action_core_split_2026_06_18.py
 base: origin/main@49228cd03
 branch: codex/meron-half-action-core-split-20260618
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4386
 actual_current_surface_status: bounded-support
 trace_class: upstream_support
 reachability_to_target: supports
@@ -22,5 +23,4 @@ verification:
   - "python3 scripts/cached_runner_output.py --refresh scripts/meron_half_action_core_split_2026_06_18.py -> status ok"
   - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py -> status ok"
 review_loop: delegated_to_codex_reviewer
-next_exact_action: open source-side PR; reviewer/auditor may re-audit the algebra core split and parent boundary
-
+next_exact_action: reviewer may run review-loop/landing cleanup; independent audit may re-audit the algebra core split and parent boundary

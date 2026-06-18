@@ -35,4 +35,11 @@ git diff --check
 
 ## PR
 
-Pending.
+Ready PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4375
+
+Remote branch:
+`codex/gauge-kinematic-bridge-wiring-20260618`
+
+Primary commit:
+`f04007dec` (`Wire gauge kinematic bridge support`)

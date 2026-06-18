@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 265,
-    "leaf": 485,
+    "leaf": 484,
     "medium": 413
   },
   "cycle_break_target_count": 8,
@@ -17455,41 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_adjacent_word_contraction_derived_narrow_theorem_note_2026-06-12",
-        "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
-        "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
-        "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-        "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-        "su3_fusion_engine_pr1_theorem_note_2026-05-03",
-        "plaquette_self_consistency_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
-        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
-        "scripts/frontier_su3_fusion_engine.py",
-        "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
-      ],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_2026_06_12.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17579,6 +17544,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hkd_entry_sum_full_l_closure_2026_06_12.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_dkd_berry_spectator_note_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_dkd_berry_spectator_2026_05_31.py",
       "transitive_descendants": 15
     },
     {
@@ -30279,32 +30270,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_dkd_berry_spectator_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_dkd_berry_spectator_2026_05_31.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44437,6 +44402,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 54,
-  "total_pending": 1470
+  "ready_count": 53,
+  "total_pending": 1469
 }

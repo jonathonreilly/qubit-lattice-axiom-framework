@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12"
+      "to": "koide_dkd_berry_spectator_note_2026-05-31"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12",
         "gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12",
         "gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05",
         "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10",
         "hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12",
+        "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12"
+        "koide_dkd_berry_spectator_note_2026-05-31"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fcf50626fa559b6b99a5a09dd6303439c4cccb8eea98661696967ded0a66d608",
+      "note_hash": "f8dfccd710f7682b5b5dfd49d5064c5c0558895798ff75c6e99c08ca93ac6d23",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 983 |
+| **retained_bounded** | 984 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1468 |
+| unaudited | 1467 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 20 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1424 |
+| `audited_clean` | 1425 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1790 |
+| `unaudited` | 1789 |
 
 | claim_type | count |
 |---|---:|
@@ -656,6 +656,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_window_top_down_integral_displacement_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9466,6 +9467,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The fundamental-window displacement is not reported because the remaining top-down window-specific integral is the normalized external-label Clebsch/Racah contraction over B4, not the one-word anchor, W44 trivial-channel assembly, or the unit 3 x 3bar invariant.  _(class `A`)_
 - **chain closes:** True — The chain closes for the stated bounded obstruction: the runner verifies the method and trivial-window gates, verifies nonempty fundamental support, and then withholds the fundamental displacement because the required normalized B4 external-label contraction is not supplied. It does not claim a numeric fundamental-window displacement or a broad no-go against future direct magnetic-index constructions.
 - **rationale:** The load-bearing step is a narrow algebraic obstruction statement over retained or retained-bounded one-hop inputs, not a tuned numerical match or a definition-as-derivation. The runner source actually rebuilds the one-word row, W48/W50 invariant objects, W44 trivial-window transfer, and B4 support counts, and it does not hard-code or infer a contested fundamental displacement. The no-go discipline section is present and adequately narrow: it enumerates alternative routes, collapses the residual to one named contraction, admits the direct magnetic-index steelman, and keeps the claim finite-packet scoped.
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_WINDOWED_BOND_DEEP_LIMIT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite W53 oriented fundamental-window bond probe on the 625-state B4 two-strip surface at beta=6, tensor NMAX=4/MODE_MAX=80 with source NMAX=7/MODE_MAX=200, including slice-support counts, B4 k=2, zero-window gates, and reduced NMAX=2/3 k=3 fallback; no B4 deep-limit or physical 3D environment closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-gauge_vacuum_plaquette_windowed_bond_deep_limit_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner constructs the W53 oriented windowed bond on the finite B4 two-strip surface, shows the predecessor support expands from 4 to 19 and the first-row slice support from 36 to 81, then directly computes the scoped k=2 and reduced k=3 Perron readouts.  _(class `C`)_
+- **chain closes:** True — Within the declared finite scope, the runner builds the Wilson coefficients, SU(3) fusion data, strip transfer, W53 window bond, and Perron solves rather than importing the windowed result. The full B4 windowed k=3, B4 deep limit, symmetrized window, larger boxes, and physical rim environment are explicitly left outside the claim.
+- **rationale:** The bounded finite computation closes from retained-grade one-hop inputs and executable helper sources. The load-bearing support counts and Perron values are computed from explicit finite operators; hard-coded anchors and the 0.5934 comparator are used only for reproduction/fenced-distance checks, not to generate the W53 windowed readout. The note does not promote the reduced k=3 probe or the k=2 displacement into a B4 deep-limit or physical 3D result.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12`

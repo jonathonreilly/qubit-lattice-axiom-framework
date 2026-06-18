@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 971 |
+| **retained_bounded** | 972 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1496 |
+| unaudited | 1495 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1409 |
+| `audited_clean` | 1410 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1818 |
+| `unaudited` | 1817 |
 
 | claim_type | count |
 |---|---:|
@@ -346,6 +346,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d3_native_stable_orbit_upper_bound_composition_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4815,6 +4816,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because the odd-parity sublattice has no internal nearest-neighbor bonds, h_oo = μI and the step-1 Schur complement gives diag′ = μ − 6t²/μ, face-diagonal entries −2t²/μ, axial entries −t²/μ, and no other generated couplings; the parity lemma follows from d_i² ≡ d_i mod 2.  _(class `C`)_
 - **chain closes:** True — Manual path counting independently gives six two-step returns, two common odd neighbors for face diagonals, one for axial distance two, and no other two-step endpoints; the Schur denominator (E−μ) supplies the stated negative signs and μ−E covariance. The parity lemma is the integer identity d_i²−d_i even, summed over three coordinates.
 - **rationale:** The cited Minimal Axioms authority is explicitly flagged as an accepted axiom premise, and the claim uses only its cubic Z^3 nearest-neighbor adjacency within the note's bounded free one-orbital setup. The runner source constructs the lattice Hamiltonian, parity blocks, Schur complement, path-count matrix, E-shift check, and retained resolvent check rather than merely printing pass lines. An independent two-step path count confirms the displayed coefficients, signs, absence of beyond-shell couplings, and parity-preservation statement.
+- **auditor confidence:** high
+
+### `d3_native_stable_orbit_upper_bound_composition_note_2026-06-09`
+
+- **Note:** [`D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md`](../../docs/D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the current finite lower-bound runner packet {3,4,5}, composing with the retained-bounded native stable-circular-orbit upper edge d <= 3 selects {3}; the Coulomb d <= 4 edge remains compatible companion support, not the selector.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-d3_native_stable_orbit_upper_bound_composition_note_2026-06-09-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** L_runner intersect U_stable = {3,4,5} intersect {d : d <= 3} = {3}.  _(class `A`)_
+- **chain closes:** True — The cited lower-bound packet supplies the finite checked set {3,4,5}, and the cited stable-orbit support supplies the bounded upper edge d <= 3 on the relevant integer dimensions. The singleton conclusion follows by exact finite-set intersection without using the full Bertrand closed-orbit theorem or a Coulomb uniqueness claim.
+- **rationale:** The audited claim is a bounded finite-set composition over retained-bounded one-hop inputs, not a fresh derivation of dimension selection from the framework baseline. The load-bearing step is exact algebra once the lower packet and stable-orbit upper edge are accepted within their declared scopes. The runner is primarily a source-surface and finite-set certificate, which is appropriate for this class-A wrapper but would not support any broader physics claim beyond the note's non-claims.
 - **auditor confidence:** high
 
 ### `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12`

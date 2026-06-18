@@ -31,10 +31,15 @@ TWO LAYERS (the synthesis' clean split, verified here):
   BASEPOINT r=|b|^2/a^2=1/2: separate continuous Yukawa input, untouched by the discrete pole structure.
 """
 import itertools
+from pathlib import Path
+
 import numpy as np
 import sympy as sp
 
 W = np.exp(2j * np.pi / 3)
+ROOT = Path(__file__).resolve().parents[1]
+PARENT_NOTE = ROOT / "docs" / "FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md"
+SPLIT_NOTE = ROOT / "docs" / "FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md"
 
 
 def check(name, cond, detail=""):
@@ -42,6 +47,10 @@ def check(name, cond, detail=""):
     if detail:
         print(f"       {detail}")
     return bool(cond)
+
+
+def normalize(text: str) -> str:
+    return " ".join(text.split()).lower()
 
 
 def hw(k):
@@ -137,12 +146,52 @@ def main():
         abs((1 / 3 + 2 / 3 * 0.5) - 2 / 3) < 1e-12 and abs((1 / 3 + 2 / 3 * 1.0) - 1.0) < 1e-12,
         "discrete pole/corner structure fixes delta=2/9 only; the continuous Yukawa modulus r is a separate input"))
 
+    # ===== Source-boundary checks: parent remains conditional; clean Layer A lives in the split note =====
+    parent = PARENT_NOTE.read_text(encoding="utf-8")
+    split = SPLIT_NOTE.read_text(encoding="utf-8")
+    parent_norm = normalize(parent)
+    split_norm = normalize(split)
+    passed.append(check(
+        "E1 parent note records 2026-06-18 parent-boundary repair",
+        "## 2026-06-18 parent-boundary repair" in parent,
+        "source-side repair section present"))
+    passed.append(check(
+        "E2 parent delegates clean Layer-A carrier-type theorem to the 2026-06-15 split",
+        "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15.md" in parent_norm
+        and "clean layer-a theorem" in parent_norm,
+        "downstream Layer-A citations should use the split note"))
+    passed.append(check(
+        "E3 parent remains the combined conditional packet",
+        "combined conditional packet" in parent_norm
+        and "physical `hw=1` locus bridge" in parent_norm
+        and "`r=1/2` input" in parent_norm
+        and "readout-class input" in parent_norm,
+        "locus/basepoint/readout stay inside the conditional parent"))
+    passed.append(check(
+        "E4 parent is not standalone physical generation-carrier closure",
+        "do not use this parent as a standalone closure of the physical generation carrier" in parent_norm,
+        "full physical carrier closure stays open"))
+    passed.append(check(
+        "E5 parent names the re-audit condition before full-package reuse",
+        "only after a separate theorem forces the staggered/ks `hw=1` physical locus" in parent_norm
+        and "closes the `r=1/2` and readout selections" in parent_norm,
+        "full-package recheck requires locus/r/readout closure"))
+    passed.append(check(
+        "E6 split note boundary excludes hw=1/r/readout closure",
+        "this split proves only item 1" in split_norm
+        and "does not claim that the physical generation locus is forced to be `hw=1`" in split_norm
+        and "that the continuous koide basepoint `r = 1/2` is derived" in split_norm
+        and "that the index-density readout `delta = 2/9` is selected" in split_norm,
+        "split theorem remains clean Layer A only"))
+
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
     print("VERDICT: carrier_derived_modulo_one_principle. LAYER A (carrier TYPE = momentum, not position) is")
     print("FORCED from framework baseline: [H_dyn,T_mu]=0 + spectral theorem => basis-independent BZ decomposition; local")
     print("observables generation-blind; flavor-separating observables are momentum-block (corner) operators;")
     print("the extensive Gamma_5 position index vanishes. This is the genuine advance -- the position-vs-")
-    print("momentum carrier question is dissolved as a theorem of A2. LAYER B (which LOCUS = hw=1 triplet) is")
+    print("momentum carrier question is dissolved as a theorem of A2. The clean Layer-A citation target is")
+    print("FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15. This parent remains")
+    print("the combined conditional packet. LAYER B (which LOCUS = hw=1 triplet) is")
     print("NOT forced by framework baseline: the dispersion zero locus is all 8 corners and a Wilson operator prefers hw=0;")
     print("the hw=1 C_3 triplet needs the staggered/Kawamoto-Smit first-order CHIRAL operator (single-mode")
     print("Grassmann + {epsilon,D}=0) -- a genuine import that aligns with the framework's named")

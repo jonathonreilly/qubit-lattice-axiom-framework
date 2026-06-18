@@ -2,8 +2,13 @@
 
 **Date:** 2026-05-31
 **Claim type:** bounded_theorem
-**Claim boundary:** positive partial derivation (Layer A forced from axioms) + a sharp gate-reduction (Layer B = one named import) + an input separation. Not a full closure.
-**Runner:** `scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py` (SCORECARD 8/8).
+**Claim boundary:** parent conditional packet. The clean Layer-A carrier-type
+theorem is split out to
+[`FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md`](FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md).
+This parent keeps the broader package: Layer A support, the open Layer-B
+physical `hw=1` locus bridge, the separate `r=1/2` input, and the separate
+readout-class input. Not a full closure.
+**Runner:** `scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py` (SCORECARD PASS=15 FAIL=0 after the parent-boundary checks).
 **Source:** workflow `wf_de220c3f-291` — 6 axioms-up routes + 3-lens adversarial verification + synthesis (25 agents). Directive: derive the carrier from framework baseline up, ledger status set aside.
 
 **Post-audit split (2026-06-15).** The clean carrier-type theorem is
@@ -13,6 +18,27 @@ This parent note remains the combined conditional packet for the physical
 `hw=1` locus bridge, the `r=1/2` input, and the readout-class input. The split
 does not apply an audit verdict; independent audit owns any status change.
 
+## 2026-06-18 parent-boundary repair
+
+This source repair makes the parent/split boundary explicit:
+
+- cite
+  [`FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md`](FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)
+  for the clean Layer-A theorem that translation symmetry forces
+  flavor-separating observables onto the momentum/BZ factor rather than
+  position-diagonal local readouts;
+- cite this parent only for the combined conditional packet that also names
+  the still-open physical `hw=1` locus bridge, the `r=1/2` input, and the
+  index/readout-class input;
+- do not use this parent as a standalone closure of the physical generation
+  carrier;
+- re-audit this parent as a full package only after a separate theorem forces
+  the staggered/KS `hw=1` physical locus from baseline and closes the
+  `r=1/2` and readout selections.
+
+No audit verdict, ledger status, publication status, or repo-wide authority
+surface is changed by this source-side repair.
+
 ## Question
 The carrier sub-claim is: the physical charged-lepton flavor observable lives on the intrinsic
 generation factor (the C₃ orbit of the hw=1 BZ corners, read as the intensive index density δ=2/9),
@@ -20,7 +46,7 @@ not the Γ₅-graded extensive position-space lattice index. The prior note show
 generation-blind, so a *momentum/spectral* principle is required. **Can that principle — and the carrier
 — be built from framework baseline up?**
 
-## Verdict: the carrier TYPE is FORCED; the LOCUS reduces to one named import; r=1/2 is separate
+## Verdict: Layer A is delegated to the split theorem; the parent remains conditional
 
 The result splits cleanly into two layers, and the adversarial verification is internally consistent on
 which layer survives (the "lands-on-momentum-factor" lens upheld Layer A for **all six** routes, 0
@@ -88,13 +114,17 @@ orthogonal to carrier selection.
 4. **Readout-class** (retain the index density over the bare character to land δ=2/9, not −1) — a separate
    selection, consistent with the index/η signpost.
 
-This is the campaign's strongest consolidation: the carrier is no longer an independent unexplained
-input. Half of it (momentum type) is a theorem; the other half (locus) is the *same* chirality import the
-rest of the flavor sector pays for once. What remains genuinely free is the continuous `r=1/2` and the
-readout class. Per standing practice, the chirality import is a `gate`, not an airtight impossibility:
-the open physics question is whether a first-order chiral Dirac operator with hw=1 zero-modes can be
-forced from the bosonic `M₂(ℂ)` qubit (the single-mode-Grassmann/`{ε,D}=0` premises), which is the one
-lever that would also discharge generation-ID and `Q=2/3` simultaneously.
+This is the campaign's strongest consolidation, but this parent remains a
+conditional packet. The clean carrier-type theorem is the 2026-06-15 split
+note. Half of the carrier problem (momentum type) is a theorem; the other half
+(physical `hw=1` locus) is the same chirality import the rest of the flavor
+sector pays for once. What remains genuinely free is the continuous `r=1/2`
+and the readout class. Per standing practice, the chirality import is a
+`gate`, not an airtight impossibility: the open physics question is whether a
+first-order chiral Dirac operator with hw=1 zero-modes can be forced from the
+bosonic `M₂(ℂ)` qubit (the single-mode-Grassmann/`{ε,D}=0` premises), which
+is the one lever that would also discharge generation-ID and `Q=2/3`
+simultaneously.
 
 ## Provenance (verified 2026-05-31; derivation stands on framework baseline, ledger status non-constraining per directive)
 - Layer A is a direct framework baseline + spectral-theorem construction (no note authority needed).

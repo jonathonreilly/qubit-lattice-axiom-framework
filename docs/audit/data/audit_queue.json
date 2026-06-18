@@ -3,7 +3,7 @@
     "critical": 304,
     "high": 267,
     "leaf": 569,
-    "medium": 423
+    "medium": 422
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -17415,34 +17415,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_readout_lane_demarcation_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "koide_frobenius_isotype_split_uniqueness_note_2026-04-21",
-        "action_normalization_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.892,
-      "note_path": "docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_readout_lane_demarcation_2026_05_30.py",
-      "transitive_descendants": 20
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17581,15 +17553,15 @@
         "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.0,
+      "load_bearing_score": 5.748,
       "note_path": "docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_wilson_m_h_tree_at_extremum_all_orders.py",
-      "transitive_descendants": 3
+      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "any_non_self",
@@ -30573,6 +30545,38 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
+        "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
+        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
+        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+        "cpt_exact_note",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_readout_lane_demarcation_note_2026-05-30"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.085,
+      "note_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/koide_signed_readout_is_not_chirality.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lanes.generated-geometry.readme",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -34166,38 +34170,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_g_newton_skeleton_selection_2026_05_10_gnewtonG1.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10",
-        "koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01",
-        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "cpt_exact_note",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_readout_lane_demarcation_note_2026-05-30"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/koide_signed_readout_is_not_chirality.py",
       "transitive_descendants": 2
     },
     {
@@ -46870,5 +46842,5 @@
     }
   ],
   "ready_count": 131,
-  "total_pending": 1563
+  "total_pending": 1562
 }

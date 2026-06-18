@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1496 |
-| Retained-grade rows, including boxed decorations | 1427 |
+| Applied audit verdicts | 1497 |
+| Retained-grade rows, including boxed decorations | 1428 |
 | Retained positive theorems | 216 |
-| Retained no-go rows | 213 |
+| Retained no-go rows | 214 |
 | Retained bounded rows | 948 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 21 |
-| Unaudited rows | 1561 |
+| Unaudited rows | 1560 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 24 |
 | Audited renaming rows | 15 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1563 |
+| Total pending rows | 1562 |
 | Ready rows | 131 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
-| Medium pending | 423 |
+| Medium pending | 422 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`koide_readout_lane_demarcation_note_2026-05-30`](../../docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md) - medium; unaudited
 - [`record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10`](../../docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09`](../../docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md) - medium; unaudited
 - [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
 - [`quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md) - medium; unaudited
 - [`wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
+- [`dimension_selection_upper_bound_textbook_import_note_2026-05-17`](../../docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
-- `plaquette_self_consistency_note` - critical; 1011 descendants; score 52.983
+- `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
 - `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
 - `key_terminology` - critical; 1118 descendants; score 46.628
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349

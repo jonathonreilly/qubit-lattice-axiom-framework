@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 216 |
-| **retained_no_go** | 213 |
+| **retained_no_go** | 214 |
 | **retained_bounded** | 948 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 21 |
-| unaudited | 1561 |
+| unaudited | 1560 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 15 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1373 |
+| `audited_clean` | 1374 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1883 |
+| `unaudited` | 1882 |
 
 | claim_type | count |
 |---|---:|
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
@@ -813,6 +813,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_reality_type_permitted_not_forced_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_pointer_grounds_block_channel_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11383,6 +11384,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For H=aI+bC+conj(b)C^2, the trace projections recover a and b, Q=(1+2|b|^2/a^2)/3 gives Q=1/3 at b=0 and Q=2/3 at r=1/2, L_3(1,2)=2/9, and Q is independent of the phase of b.  _(class `A`)_
 - **chain closes:** True — The displayed identities follow by trace orthogonality of the C3 circulant basis, the root-of-unity cosine sums, and the cited retained-grade L_3(1,2)=2/9 calculation. The note explicitly leaves the physical interaction or record mechanism outside scope.
 - **rationale:** Independent algebra checks reproduce a=Tr(H)/3, b=Tr(C^{-1}H)/3, Q=(3a^2+6|b|^2)/(3a)^2=(1+2r)/3, the r=0 and r=1/2 values, phase independence, and L_3(1,2)=2/9. The runner performs finite algebraic checks rather than merely printing constants, although it is not a first-principles framework computation. All cited authorities are retained-grade for the bounded algebra used here, and the source does not claim charged-lepton channel closure.
+- **auditor confidence:** high
+
+### `koide_readout_lane_demarcation_note_2026-05-30`
+
+- **Note:** [`KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md`](../../docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the narrow demarcation that the tested native signed/Hermitian C3-circulant readout and listed residue/readout variants supply the Koide formula and theta-independence but do not select the r=1/2 block-count weight.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_readout_lane_demarcation_note_2026-05-30-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With unit residues the signed/Hermitian circulant readout gives Q=(1+2r)/3 with dQ/dr=2/3, and the tested residue, tracial, and block-energy variants either keep r free, collapse masses, or select dimension weighting rather than r=1/2.  _(class `A`)_
+- **chain closes:** True — The load-bearing formulas are direct algebra over the cited retained-grade circulant and real-representation inputs: root-of-unity sums give Q=(1+2r)/3, the derivative is nonzero, and the F1/F3 extrema occur at different r. The tracial rho=I/3 measurement check is explicitly admission-contingent and non-load-bearing, so it does not block the narrow no-go closure.
+- **rationale:** The runner source performs actual symbolic and finite linear-algebra checks rather than merely printing expected constants, and the cached output reports PASS=13 FAIL=0. The no-go is scoped narrowly to the tested native readout/residue routes and passes the N1-N8 discipline gate: five routes are enumerated, the wall is collapsed to the absence of a readout-side block-weight selector, hidden admissions are marked non-load-bearing, and future dynamics or source-response routes are left open. The conclusion does not claim a physical Koide derivation or exclude future non-native residue theorems.
 - **auditor confidence:** high
 
 ### `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30`

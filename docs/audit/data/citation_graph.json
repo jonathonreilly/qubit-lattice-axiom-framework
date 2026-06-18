@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "distance_law_breakpoint_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_readout_lane_demarcation_note_2026-05-30"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "distance_law_breakpoint_note",
         "koide_readout_lane_demarcation_note_2026-05-30",
         "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11",
         "yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10",
         "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
         "distance_law_definitive_note",
-        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28"
+        "quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28",
+        "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "164495537c6f38646e54a9063480301e4c6d6397680e8125d3ed9097874fd62f",
+      "note_hash": "b337c0045e92b0cf496807fc9073ec53053da3f3e50b01f0e0d51f701c651fe5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

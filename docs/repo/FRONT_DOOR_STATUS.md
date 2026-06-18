@@ -12,18 +12,18 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1448 |
+| Applied audit verdicts | 1449 |
 | Retained-grade rows, including boxed decorations | 1400 |
 | Retained positive theorems | 215 |
 | Retained no-go rows | 209 |
 | Retained bounded rows | 928 |
 | Boxed decorations under retained parents | 48 |
 | Open gates | 15 |
-| Unaudited rows | 1609 |
+| Unaudited rows | 1608 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 17 |
 | Audited renaming rows | 10 |
-| Audited numerical-match rows | 5 |
+| Audited numerical-match rows | 6 |
 | Citation cycles detected | 7 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1611 |
-| Ready rows | 159 |
+| Total pending rows | 1610 |
+| Ready rows | 158 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
-| High pending | 271 |
+| High pending | 270 |
 | Medium pending | 467 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`work_history.ckm.cabibbo_bound_note`](../../docs/work_history/ckm/CABIBBO_BOUND_NOTE.md) - high; unaudited
 - [`record_formation_to_kraus_isometry_bridge_2026-06-06`](../../docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md) - medium; unaudited
 - [`dm_leptogenesis_pmns_multistart_selector_support_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MULTISTART_SELECTOR_SUPPORT_NOTE_2026-04-16.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_BETA6_EVALUATION_SEAM_REDUCTION_SCIENCE_ONLY_NOTE_2026-04-17.md) - medium; unaudited
 - [`tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`](../../docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) - medium; unaudited
 - [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) - medium; unaudited
+- [`industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03`](../../docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,13 +62,14 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 173 |
-| high | `unaudited` | 154 |
+| high | `unaudited` | 153 |
 | medium | `unaudited` | 91 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
+| high | `audited_numerical_match` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 

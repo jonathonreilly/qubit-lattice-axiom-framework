@@ -1,9 +1,9 @@
 {
   "criticality_counts": {
     "critical": 574,
-    "high": 509,
+    "high": 508,
     "leaf": 1520,
-    "medium": 920
+    "medium": 921
   },
   "flagship_signal_used": false,
   "node_count": 3523,
@@ -55,8 +55,8 @@
     {
       "claim_id": "key_terminology",
       "criticality": "critical",
-      "load_bearing_score": 46.628,
-      "transitive_descendants": 1118
+      "load_bearing_score": 46.629,
+      "transitive_descendants": 1119
     },
     {
       "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",

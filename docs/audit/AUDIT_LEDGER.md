@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 934 |
+| **retained_bounded** | 935 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 16 |
-| unaudited | 1594 |
+| unaudited | 1593 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
@@ -61,28 +61,28 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1351 |
+| `audited_clean` | 1352 |
 | `audited_conditional` | 19 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1916 |
+| `unaudited` | 1915 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1730 |
+| `bounded_theorem` | 1731 |
 | `decoration` | 53 |
 | `meta` | 323 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 765 |
+| `positive_theorem` | 764 |
 
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 503 |
-| `medium` | 881 |
+| `high` | 502 |
+| `medium` | 882 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -107,7 +107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
@@ -583,6 +583,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_tail_underdetermination_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -7963,6 +7964,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Given the completed retained vector v_min with nonzero first coordinate, normalization by z00_min gives rho_ret(0,0)=1 and z00_min E_3 rho_ret = E_3 v_min = Z_min. This closes only the truncated retained packet statement, not extension to the full beta=6 environment data.
 - **rationale:** The runner normalizes an imported completed-sector vector and checks the resulting reconstruction, so the load-bearing work is algebra over the parent completion claim rather than a new first-principles computation. The factorization and character-measure authorities support the packet vocabulary only within the stated truncated/finite scope. The result is therefore a valid decoration of the completed first-sector triple, not an independent positive theorem about the full beta=6 environment extension.
 - **decoration parent:** `gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19`
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite dominant-weight-box factorized-class existence: the retained first-sector packet is zero-extended on the truncated box and inserted into the fixed factorized form, with exact retained-sector reconstruction; actual Wilson environment identification and all-weight closure are out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Extend the retained packet rho_ret by zero outside the first-symmetric weights, then form T_ext = exp(3 J) D_6^loc diag(rho_ext) exp(3 J).  _(class `A`)_
+- **chain closes:** True — Within the finite truncated box, the zero-extension is nonnegative and conjugation-symmetric, and T_ext has the algebraic form M P M with P diagonal nonnegative, so the PSD/symmetry claims close. Reconstruction follows from rho_ret = v_min / z00_min and the retained evaluation matrix.
+- **rationale:** The retained truncated-packet authority supplies rho_ret, and the retained_bounded character-measure authority supplies the finite factorized operator setting without importing the actual Wilson environment identification. The runner source constructs rho_ext, forms the finite operator, checks symmetry/swap/PSD numerically, and verifies retained reconstruction; the helper chain computes the retained packet rather than merely printing constants. The clean verdict is only for bounded finite factorized-class existence, not for the actual framework-point Wilson packet.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17`

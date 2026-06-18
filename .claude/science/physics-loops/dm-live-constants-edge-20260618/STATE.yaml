@@ -1,0 +1,12 @@
+loop_id: dm-live-constants-edge-20260618
+status: review_ready
+branch: codex/dm-live-constants-edge-20260618
+started_at: 2026-06-18
+target: dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17
+claim_status: bounded_support_theorem
+audit_action: none
+review_loop: not_run_user_deferred_to_codex_reviewer
+summary: >
+  Added a source-side bounded support certificate for the DM live constants
+  edge without editing audit ledgers, retagging rows, landing to main, or
+  refreshing existing PRs against main.

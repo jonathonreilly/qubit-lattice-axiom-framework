@@ -40,6 +40,16 @@ cleaner bridge would have to prove P-dep from retained framework structure;
 this note instead gives the narrower conditional theorem whose premise is
 visible to re-audit.
 
+**2026-06-18 P-dep independence no-go.**
+[`UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md`](UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md)
+proves the complementary boundary: Record additivity plus `K`/CPT orbit
+constancy alone do not derive P-dep. The no-go constructs an unregistered
+`K`-even context-scale family whose scalar readouts remain finitely additive
+and orbit-constant while assigning different values to the same registered
+sector datum. This does not alter the conditional theorem here; it explains why
+the P-dep premise must either remain explicit or be supplied by a separate
+physical-readout/extensionality theorem.
+
 ## Setting: the supplied readout context (G1 — all of it is input)
 
 The theorem is stated on a **supplied** readout context; the Record axiom

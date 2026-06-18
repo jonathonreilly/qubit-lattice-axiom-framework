@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 951 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 22 |
-| unaudited | 1555 |
+| unaudited | 1554 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1378 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1877 |
+| `unaudited` | 1876 |
 
 | claim_type | count |
 |---|---:|
@@ -101,28 +101,28 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1639 | 144.68 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
+| 1 | `minimal_axioms` | meta | critical | 1640 | 144.68 | `unaudited` | meta |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1048 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1027 | 49.01 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 922 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 846 | 39.73 | `audited_clean` | **retained_bounded** |
 | 12 | `native_gauge_closure_note` | positive_theorem | critical | 1365 | 39.42 | `audited_clean` | **retained** |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 907 | 38.83 | `unaudited` | unaudited |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 908 | 38.83 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 998 | 38.46 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 786 | 38.12 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1113 | 36.62 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1114 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1087 | 35.59 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 925 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 734 | 33.02 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 1004 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
@@ -1535,6 +1535,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
@@ -20879,6 +20880,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Taking the curvature magnitude from the upstream Wilson extremum note and dividing by the diagnostic count N_taste = 16 gives (1/(4 u_0^2)) * (1 - 3 r^2/u_0^2) + O(r^4), with the square-root expansion following from sqrt(1 - x).  _(class `A`)_
 - **chain closes:** True — The cited retained-bounded authorities supply the staircase normalization, total Wilson-shifted leading curvature, and D1/N_taste diagnostic setup. The audited result follows by curvature magnitude, division by 16, and the standard square-root Taylor expansion.
 - **rationale:** The load-bearing calculation is finite algebra over retained-bounded inputs: |−4/u_0^2 + 12 r^2/u_0^4|/16 gives the stated coefficient, and the ratio expansion has the correct −3/2 and −9/8 terms. The runner source performs arithmetic, Taylor-residual, all-orders consistency, import, and scope-guard checks rather than merely printing PASS. The physical Higgs-pole, uniform physical channel-selection, and numerical r readings are explicit non-claims, so they do not enter this bounded diagnostic conclusion.
+- **auditor confidence:** high
+
+### `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`
+
+- **Note:** [`WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** All-orders finite-sum formula for the Wilson-shifted per-channel curvature-scale squared, plus the stated PDG-comparison bisection root, under the declared uniform-N_taste=16, tree-level mean-field, nonzero-r, and numerical-u_0 admissions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Taking the negative of the cited exact total curvature at m* = -4r and dividing by the uniform N_taste = 16 admission gives eq. (2), (m_H_tree^W/v)^2 = (1/64) Σ_k binomial(4,k)(u_0^2-(k-2)^2r^2)/(((k-2)^2r^2+u_0^2)^2).  _(class `A`)_
+- **chain closes:** False — The algebra from the cited curvature formula to eq. (2), its r=0 and leading-order reductions, and the bisection root close as finite-sum arithmetic over the declared inputs. The chain does not close as a derived Higgs-pole readout or derived Wilson coefficient because the uniform channel denominator, tree-level readout, nonzero r, and numerical u_0 normalization remain admitted or unreconciled with the current parent boundary surface.
+- **rationale:** Issue: the displayed all-orders formula is an algebraic consequence of the retained-bounded curvature input, but the Higgs/readout interpretation and matching value import admitted structure rather than deriving it. Why this blocks: the cited parent explicitly demotes the object to a diagnostic curvature scale, the channel-boundary note says uniform N_taste=16 is non-derived, and r is only a comparison value selected by matching to the external PDG number. Repair target: either narrow the row to the algebraic diagnostic curvature-scale formula and sync the u_0 numerical input to the parent B1 value, or supply retained bridge theorems for the channel/readout/nonzero-r choices. Claim boundary until fixed: exact finite-sum arithmetic under stated admissions, not a Higgs-pole derivation or canonical Wilson-coefficient derivation.
+- **open / conditional deps cited:**
+  - `HIGGS_MASS_FROM_AXIOM_NOTE.md`
+  - `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`
+  - `WILSON_M_H_TREE_AT_EXTREMUM_LEADING_ORDER_IN_R_BOUNDED_NOTE_2026-05-08.md`
 - **auditor confidence:** high
 
 ### `wilson_m_h_tree_at_extremum_leading_order_in_r_bounded_note_2026-05-08`

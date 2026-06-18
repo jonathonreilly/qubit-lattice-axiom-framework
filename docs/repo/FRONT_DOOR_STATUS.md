@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1502 |
+| Applied audit verdicts | 1503 |
 | Retained-grade rows, including boxed decorations | 1431 |
 | Retained positive theorems | 216 |
 | Retained no-go rows | 214 |
 | Retained bounded rows | 951 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 22 |
-| Unaudited rows | 1555 |
+| Unaudited rows | 1554 |
 | Retained-pending-chain rows | 3 |
-| Audited conditional rows | 24 |
+| Audited conditional rows | 25 |
 | Audited renaming rows | 15 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 7 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1557 |
-| Ready rows | 128 |
+| Total pending rows | 1556 |
+| Ready rows | 127 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
-| Medium pending | 417 |
+| Medium pending | 416 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 - [`dimension_selection_upper_bound_textbook_import_note_2026-05-17`](../../docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
 - [`gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07`](../../docs/GRAVITY_CLOSURE_FROM_WEAK_FIELD_LINEAR_RESPONSE_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_UNIFORM_BESSEL_LOCAL_CLT_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`quark_c3_oriented_ward_splitter_support_note_2026-04-28`](../../docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md) - medium; unaudited
 - [`su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`teleportation_bell_measurement_circuit_note`](../../docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md) - medium; unaudited
-- [`quark_c3_oriented_ward_splitter_support_note_2026-04-28`](../../docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md) - medium; unaudited
+- [`teleportation_taste_readout_operator_model_note`](../../docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -88,11 +88,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1639 descendants; score 144.679
-- `three_generation_observable_theorem_note` - critical; 1047 descendants; score 65.533
+- `minimal_axioms` - critical; 1640 descendants; score 144.680
+- `three_generation_observable_theorem_note` - critical; 1048 descendants; score 65.535
 - `graph_first_su3_integration_note` - critical; 1400 descendants; score 60.952
 - `observable_principle_from_axiom_note` - critical; 888 descendants; score 59.296
 - `plaquette_self_consistency_note` - critical; 1012 descendants; score 52.984
-- `minimal_axioms_2026-05-03` - critical; 1026 descendants; score 49.004
-- `key_terminology` - critical; 1118 descendants; score 46.628
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 921 descendants; score 44.349
+- `minimal_axioms_2026-05-03` - critical; 1027 descendants; score 49.006
+- `key_terminology` - critical; 1119 descendants; score 46.629
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 922 descendants; score 44.350

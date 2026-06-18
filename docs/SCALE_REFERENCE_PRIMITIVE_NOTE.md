@@ -10,6 +10,9 @@
 `scale_reference_primitive`. Explicit owner approval is recorded in
 `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
 
+**Primary runner:** [`scripts/scale_reference_primitive_boundary_check.py`](../scripts/scale_reference_primitive_boundary_check.py)
+**Cached output:** [`logs/runner-cache/scale_reference_primitive_boundary_check.txt`](../logs/runner-cache/scale_reference_primitive_boundary_check.txt)
+
 ## What This Declares
 
 The framework takes exactly one dimensionful reference: a scale that converts

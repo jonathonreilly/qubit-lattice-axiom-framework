@@ -1,0 +1,20 @@
+loop_slug: scale-reference-primitive-runner-20260618
+goal: "Make scale_reference_primitive re-auditable by adding a source-boundary runner and cache without changing audit verdict files."
+target_claim_id: scale_reference_primitive
+target_status: exact-support
+runtime_mode: short source-side unlock block
+cycle_count: 1
+active_route: exact runner
+hard_residual: "Audit ledger row has no runner_path on main; source must mechanically expose primitive boundary and no-laundering clauses."
+files_touched:
+  - docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+  - scripts/scale_reference_primitive_boundary_check.py
+  - logs/runner-cache/scale_reference_primitive_boundary_check.txt
+  - .claude/science/physics-loops/scale-reference-primitive-runner-20260618/
+open_imports:
+  - "No physics import is retired. This block certifies existing owner-approved premise boundaries."
+trace_gate_classification: direct_blocker_closure
+review_findings: "Local verification pass; independent review/audit still required before any effective-status change."
+pr_status: pending
+next_exact_action: "Open a review PR from codex/scale-reference-primitive-runner-20260618."
+stop_condition: "One coherent source-side unlock block packaged as PR."

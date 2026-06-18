@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py
+runner_sha256: ee1f93ecda02965e2d865d90ab2ecf01778219b1767dabb01ecab51aed2bf144
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+# Y_T signed-record lower-projector neutral-ray algebra core
+# Source note: docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md
+
+==============================================================================
+T0: source status and firewalls
+==============================================================================
+[PASS] core note contains Claim type:** bounded_theorem
+[PASS] core note contains Actual current-surface status:** bounded-support
+[PASS] core note contains Trace class:** upstream_support
+[PASS] core note contains proposal_allowed: false
+[PASS] core note contains bare_retained_allowed: false
+[PASS] core note contains MINIMAL_AXIOMS_2026-06-05.md
+[PASS] core note contains YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md
+[PASS] core note contains EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md
+[PASS] core note preserves boundary: not a same-surface physical carrier theorem
+[PASS] core note preserves boundary: do not identify the qubit readout basis with the EW Higgs doublet basis
+[PASS] core note preserves boundary: same physical carrier surface
+[PASS] parent cites algebra-core note
+[PASS] parent records 2026-06-18 audit-scope repair
+[PASS] parent leaves same-surface carrier theorem open
+[PASS] forbidden overclaim absent: carrier-ray bridge is closed
+[PASS] forbidden overclaim absent: same physical carrier surface has been derived
+[PASS] forbidden overclaim absent: signed-record source is physically the neutral EW radial source
+[PASS] forbidden overclaim absent: proposed_retained
+
+==============================================================================
+T1: signed-record lower-projector algebra
+==============================================================================
+[PASS] P_+ is idempotent: Matrix([[1, 0], [0, 0]])
+[PASS] P_- is idempotent: Matrix([[0, 0], [0, 1]])
+[PASS] P_+ P_- = 0: Matrix([[0, 0], [0, 0]])
+[PASS] P_+ + P_- = I: Matrix([[1, 0], [0, 1]])
+[PASS] sigma_z = P_+ - P_-: Matrix([[1, 0], [0, -1]])
+[PASS] sigma_z = I - 2 P_-: Matrix([[1, 0], [0, -1]])
+[PASS] exp(h epsilon) equals exp(h) exp(-2h P_-) on eigenweights: Matrix([[exp(h)], [exp(-h)]])
+[PASS] affine source coordinate is j=-2h
+
+==============================================================================
+T2: EW lower ray is neutral in the one-Higgs bookkeeping
+==============================================================================
+[PASS] P_- H_0 = H_0: Matrix([[0], [sqrt(2)*v/2]])
+[PASS] P_+ H_0 = 0: Matrix([[0], [0]])
+[PASS] Q H_0 = 0: Matrix([[0], [0]])
+[PASS] upper ray has charge +1: Matrix([[1], [0]])
+[PASS] neutral nullspace is the lower ray: [Matrix([
+[0],
+[1]])]
+
+==============================================================================
+T3: conditional radial tangent and response-ratio compatibility
+==============================================================================
+[PASS] H(s) lies on EW lower ray: Matrix([[0], [sqrt(2)*v(s)/2]])
+[PASS] dH/ds lies on EW lower ray: Matrix([[0], [sqrt(2)*Derivative(v(s), s)/2]])
+[PASS] dH/ds is neutral: Matrix([[0], [0]])
+[PASS] top/W response-ratio shape cancels the common Jacobian: sqrt(2)*y_t/g_2
+
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

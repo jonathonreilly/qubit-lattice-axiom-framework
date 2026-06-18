@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 967 |
+| **retained_bounded** | 968 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1504 |
+| unaudited | 1503 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1405 |
+| `audited_clean` | 1406 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1826 |
+| `unaudited` | 1825 |
 
 | claim_type | count |
 |---|---:|
@@ -234,6 +234,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3143,6 +3144,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Within the stated arithmetic scope, the chain closes by direct substitution and numerical identity checks from P = 0.5934 and 1/(4 pi). The derivation or physical certification of P is outside this row and remains owned by the parent plaquette surface.
 - **rationale:** The runner and helper import or hard-code the parent input P = 0.5934, then compute the displayed quantities by elementary arithmetic. The independent check confirms the formulas and printed values within the stated tolerances. There are no external comparator checks and no first-principles beta=6 plaquette derivation here, so the result is an algebraic decoration of a single retained-bounded parent rather than an independent physical closure.
 - **decoration parent:** `plaquette_self_consistency_note`
+- **auditor confidence:** high
+
+### `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`CAPTURE_DEFICIT_EXACT_TAIL_ACCOUNTING_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/CAPTURE_DEFICIT_EXACT_TAIL_ACCOUNTING_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite L=3 realized-state check for K=3 seed 391, K=4 seed 99, K=5 seed 99, and K=6 seed 466 at tau=0.35, T=256, Hankel window 64: the order-4 capture deficit equals the Hankel-Frobenius SVD tail fraction and the ascending tail order is K6,K5,K3,K4.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because C4 is defined as the top-four Hankel singular-energy fraction, 1-C4 equals the normalized sum of singular energies with j>4, equivalently the relative Frobenius error of the best rank-4 truncated SVD.  _(class `A`)_
+- **chain closes:** True — The cited retained-bounded authorities supply the realized-state family, capture ordering, and Hankel capture machinery; the realized-state primitive is an accepted pointwise-evaluation premise. Within that bounded surface, the tail identity is standard SVD/Frobenius algebra and the runner verifies the finite tables without extending to generic seeds, larger L, or asymptotics.
+- **rationale:** The load-bearing equality is a genuine algebraic closure of the landed Hankel capture definition, not a new physical bridge or an external comparator match. The runner source constructs the finite L=3 Hamiltonian, realized states, determinant-phase increments, Fourier reconstruction, and Hankel SVDs; the frozen constants serve as regression anchors while the deficit-tail equality is computed directly. The dependencies are retained-grade or accepted primitive premises, so no open dependency remains inside the explicitly bounded finite scope.
 - **auditor confidence:** high
 
 ### `car_from_positivity_neutrality_note_2026-06-02`

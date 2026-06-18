@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 265,
-    "leaf": 521,
+    "leaf": 520,
     "medium": 413
   },
   "cycle_break_target_count": 8,
@@ -17455,32 +17455,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12",
-        "harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12",
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/CAPTURE_DEFICIT_EXACT_TAIL_ACCOUNTING_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_capture_tail_exact_law_2026_06_12.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "causal_cone_speed_map_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17583,6 +17557,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_commensuration_general_lemma_2026_06_12.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "connectivity_family_v2_elliptical_duplicate_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "sign_portability_invariant_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/gate_b_no_restore_farfield.py"
+      ],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
       "transitive_descendants": 15
     },
     {
@@ -30283,32 +30283,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "connectivity_family_v2_elliptical_duplicate_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sign_portability_invariant_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/gate_b_no_restore_farfield.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45410,6 +45384,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 90,
-  "total_pending": 1506
+  "ready_count": 89,
+  "total_pending": 1505
 }

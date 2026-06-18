@@ -52230,11 +52230,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
+      "to": "koide_q_delta_linking_relation_theorem_note_2026-04-20"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_q_delta_linking_relation_theorem_note_2026-04-20"
+      "to": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07"
     },
     {
       "from": "repo.front_door_status",
@@ -100629,8 +100629,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "su3_casimir_fundamental_theorem_note_2026-05-02",
         "koide_q_delta_linking_relation_theorem_note_2026-04-20",
+        "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
         "poisson_exhaustive_uniqueness_note",
         "hierarchy_formula_honest_status_note_2026-05-10",
@@ -100639,7 +100639,7 @@
         "source_resolved_exact_green_pocket_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3bb1d48990b29f0c229986177fc70f222da3183731769dffb5a4b480ebf39df7",
+      "note_hash": "bff0da06681804f3a25b9264c968acc29bc0c77b11e17b352963271bbd63fd70",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

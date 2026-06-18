@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 965 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 28 |
-| unaudited | 1517 |
+| unaudited | 1516 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 16 |
+| ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 36 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -68,17 +68,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 52 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 16 |
-| `unaudited` | 1839 |
+| `audited_renaming` | 17 |
+| `unaudited` | 1838 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1730 |
 | `decoration` | 54 |
-| `meta` | 324 |
+| `meta` | 325 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 763 |
+| `positive_theorem` | 762 |
 
 | criticality | count |
 |---|---:|
@@ -1673,6 +1673,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -15853,6 +15854,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A supplied finite pre-record word law is pushed forward through the supplied monotone record-writing update, and the supplied overlap kernel gives a law-scoped expected overlap certificate.  _(class `A`)_
 - **chain closes:** True — The scoped finite construction closes by direct enumeration from the supplied definitions. Independently, the law sums to 1, the four words push forward to the four stated records, the kernel is symmetric/self-normalized/bounded, and the expected overlap is 169/320.
 - **rationale:** The audited claim is not a derivation of a production law, Born law, physical arrow, or dial selection; it is a finite supplied-bridge construction with those exclusions stated in the note and reflected in the runner. The load-bearing math is exact finite enumeration over supplied inputs, not a tuned numerical comparator or a symbol renaming. An independent calculation of the displayed probabilities and kernel expectation matches the runner's 169/320 result.
+- **auditor confidence:** high
+
+### `post_record_retained_unbounded_dynamics_gate_2026-06-06`
+
+- **Note:** [`POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md`](../../docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** The packet was audited only as a branch-local finite gate map that records bounded finite-certificate discipline and names open retained/unbounded-family gates, not as a retained or unbounded dynamics theorem.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-post_record_retained_unbounded_dynamics_gate_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Exact enumeration over finite objects does not by itself provide a law over an unbounded family, so the unbounded move is a separate gate requiring a supplied or derived family principle.  _(class `E`)_
+- **chain closes:** True — The note and runner consistently define and check the finite gate-map/firewall declarations. The closure is definitional rather than a derivation of the upstream dynamics rows or an unbounded-family principle.
+- **rationale:** Issue: the runner hard-codes the gate rows, statuses, and firewall booleans, then checks document presence and consistency. Why this blocks: that verifies a declared methodology/gate map, but it does not derive any retained status, physical dynamics bridge, production kernel, dial selection, probability law, or unbounded-family lift. Repair target: if a theorem is intended, provide retained upstream authorities or a runner that derives the relevant bridge/family principle rather than defining gate rows. Claim boundary until fixed: cite only the finite gate discipline and the explicitly open unbounded/effective-retained gates.
 - **auditor confidence:** high
 
 ### `post_record_selection_rule_target_vector_firewall_2026-06-06`

@@ -1,0 +1,29 @@
+loop_slug: observable-t1d-diagonal-classifier-20260618
+branch: codex/observable-t1d-diagonal-classifier-20260618
+base: origin/main
+target_status: bounded-support
+active_claim_id: observable_principle_from_axiom_note
+cycle_count: 1
+current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+files_touched:
+  - docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md
+  - docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md
+  - scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py
+  - logs/runner-cache/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.txt
+  - .claude/science/physics-loops/observable-t1d-diagonal-classifier-20260618/
+open_imports:
+  - source-to-record disjointness readout-context bridge
+  - determinant-only quotient selecting the logarithmic one-site invariant
+  - independent audit review before any effective status change
+no_go_routes:
+  - "Record additivity plus determinant multiplicativity alone does not derive T1-d; see 2026-06-16 no-go."
+  - "Trace-sensitive additive readouts remain live unless a determinant quotient is supplied."
+verification:
+  - "python3 -m py_compile scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py"
+  - "python3 scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py"
+  - "python3 scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py | tee logs/runner-cache/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.txt"
+review_disposition: local_pass_external_review_required
+next_exact_action: "Commit, push, and open a ready review PR."
+stop_condition: "This block is complete after PR creation; then pause for the requested effectiveness review."

@@ -25,6 +25,13 @@ proves that Record additivity plus determinant block factorization does not
 derive the determinant-only readout quotient or the source-blocks-to-records
 clause, so T1-d remains an explicit Boundary rather than axiom-derived
 content.
+2026-06-18 positive-diagonal readout classifier:
+[`OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md`](OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md)
+shows that, once finite positive diagonal source-block additivity is supplied,
+every continuous direct-sum additive diagonal readout is a sum of one-site
+terms, and determinant-only readout is exactly the quotient that removes all
+non-logarithmic one-site invariants and any global dimension label. This
+sharpens the T1-d residual; it does not derive T1-d from Record.
 **Type:** bounded_theorem (finite-algebra `log|det(D+J)|` generator on
 the runner block, using Record-backed finite scalar additivity, the
 positive-source-cone P2 elimination on the consumed finite real source surface,
@@ -44,7 +51,13 @@ T1-d independence no-go gives the exact obstruction: continuous direct-sum
 additive finite source readouts such as `log det + epsilon Tr` obey Record-style
 additivity and determinant multiplicativity while failing to be functions of
 `det(D+J)` alone, and a source-disjoint assignment need not be record-disjoint
-without an additional readout-context bridge.
+without an additional readout-context bridge. The 2026-06-18 positive-diagonal
+classifier strengthens the obstruction into a full local classification:
+on positive diagonal blocks, additivity gives `W_n(x_1,...,x_n)=sum_i phi(x_i)`;
+determinant-only global readout is the special continuous case
+`phi(x)=c log x` after erasing any dimension label. The remaining T1-d bridge is
+therefore exactly a source-to-record disjointness bridge plus a determinant
+quotient, not a hidden consequence of Record.
 **Headline (post-2026-06-10 boundary declaration):** *On finite scalar record
 readout surfaces, Record supplies P1 additivity over disjoint/independent
 record collections. On the finite real staggered source sector consumed here,

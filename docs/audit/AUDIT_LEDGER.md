@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 958 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 27 |
-| unaudited | 1536 |
+| unaudited | 1535 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 29 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1392 |
-| `audited_conditional` | 28 |
+| `audited_conditional` | 29 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1858 |
+| `unaudited` | 1857 |
 
 | claim_type | count |
 |---|---:|
@@ -1530,6 +1530,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3038,6 +3039,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** In the tested finite hopping models, the open-chain hard-core-boson and Jordan-Wigner Hamiltonians are identical matrices, so the same positive transfer operator and Stone spectrum are obtained, while the closed-loop sign changes spectra without making either transfer operator non-positive.  _(class `C`)_
 - **chain closes:** True — The finite one-qubit tensor-product construction closes the scoped result: adjacent open-chain Jordan-Wigner strings cancel in the hopping Hamiltonian, so T=exp(-tau H) and the Stone spectrum cannot discriminate the frames. On the ring the uncancelled loop string changes the spectrum, but finite Hermitian Hamiltonians still give strictly positive transfer operators in both frames.
 - **rationale:** The runner source constructs the HCB and JW operators directly on finite qubit tensor products and computes commutators, ranks, Gram spectra, transfer spectra, correlators, and ring spectra rather than printing hard-coded conclusions. An independent algebra check agrees with the load-bearing signs: open nearest-neighbor JW strings cancel bond-by-bond, while the closed boundary string remains as a loop datum; positivity of exp(-tau H) follows for each finite Hermitian H. The cited minimal-axiom authority is an accepted premise, and the note explicitly limits the no-go to the tested finite positivity route rather than claiming a global spin-statistics or graded-locality obstruction.
+- **auditor confidence:** high
+
+### `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06`
+
+- **Note:** [`CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md`](../../docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the rotation-level no-go against deriving the per-site C^2 matter-state j=1/2 law from operator-frame/Clifford data, plus the claimed consolidation of that residual into the recurring staggered {eps,D}=0 chirality gate.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The trivial scalar lift satisfies the operator-frame constraints, and the only selector excluding it is the spinful sigma.p kernel, identified with the staggered chiral {eps,D}=0 gate.  _(class `A`)_
+- **chain closes:** False — The operator-frame escape refutation closes as a finite algebraic no-go. The consolidation does not fully close from the restricted packet because the physical Kawamoto-Smit/Grassmann-to-matter-state-law bridge and the identification of this selector as the already-paid recurring chirality gate remain explicit open work.
+- **rationale:** The runner verifies real finite matrix facts: adjoint conjugation is blind to the SU(2) center, the scalar lift is operator-frame-compatible, a spin-blind scalar kernel commutes, and the displayed staggered D anticommutes with eps. But the final consolidation is not derived by the runner; it is asserted via consolidated = True and depends on an unclosed KS/Grassmann physical state-law bridge. The cited Kähler-Dirac authority is retained_bounded but explicitly disclaims the physical dynamical staggered-Dirac identification needed for this broader conclusion.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
+  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
 - **auditor confidence:** high
 
 ### `causal_escape_window_note`

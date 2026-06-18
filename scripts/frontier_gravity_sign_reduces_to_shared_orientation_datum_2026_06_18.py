@@ -99,6 +99,24 @@ def block_clifford_weld() -> None:
           np.allclose(eps_conj, -eps),
           f"||e4 eps e4^-1 + eps|| = {np.linalg.norm(eps_conj + eps):.2e}")
 
+    # Rep-independence: a SECOND, structurally different Cl(3,1) rep (sx<->sy roles
+    # swapped between the two tensor factors) satisfies the SAME two identities -- the weld
+    # is generic grade-parity, not an artifact of one matrix rep.
+    f1, f2, f3 = kron(sy, sx), kron(sy, sy), kron(sy, sz)
+    f4 = kron(1j * sx, I2)
+    gens2 = {"e1": f1, "e2": f2, "e3": f3, "e4": f4}
+    clifford2_ok = all(
+        np.allclose(A @ B + B @ A,
+                    (2 * eta[na] if na == nb else 0) * np.eye(4, dtype=complex))
+        for (na, A), (nb, B) in itertools.product(gens2.items(), repeat=2))
+    v2 = f1 @ f2 @ f3
+    e2_ = f1 @ f2 @ f3 @ f4
+    f4i = np.linalg.inv(f4)
+    rep2_ok = (np.allclose(f4 @ v2 @ f4i, -v2) and np.allclose(f4 @ e2_ @ f4i, -e2_))
+    check("a SECOND Cl(3,1) rep satisfies the same Clifford relations AND the same two "
+          "e_4 weld identities (rep-independent grade-parity, not a matrix artifact)",
+          clifford2_ok and rep2_ok)
+
     # WELD: ONE e_4 orientation flip reverses BOTH -> gravity-sign twist and the
     # spatial-handedness Z2 are the SAME twist datum, not two independent signs.
     check("WELD: one e_4 flip reverses BOTH the spatial volume element AND chirality "

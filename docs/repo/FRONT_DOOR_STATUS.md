@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1594 |
+| Applied audit verdicts | 1595 |
 | Retained-grade rows, including boxed decorations | 1477 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 986 |
 | Boxed decorations under retained parents | 55 |
-| Open gates | 31 |
-| Unaudited rows | 1463 |
+| Open gates | 32 |
+| Unaudited rows | 1462 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 53 |
 | Audited renaming rows | 20 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1465 |
-| Ready rows | 49 |
+| Total pending rows | 1464 |
+| Ready rows | 48 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 480 |
+| Leaf pending | 479 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`koide_dkd_berry_spectator_note_2026-05-31`](../../docs/KOIDE_DKD_BERRY_SPECTATOR_NOTE_2026-05-31.md) - medium; unaudited
 - [`koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md) - medium; unaudited
 - [`koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18`](../../docs/KOIDE_GAMMA_ORBIT_EXPONENTIAL_VALUE_LAW_CANDIDATE_NOTE_2026-04-18.md) - medium; unaudited
 - [`koide_p1_collapses_frame_residuals_note_2026-06-01`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md) - medium; unaudited
 - [`koide_pointer_record_degeneracy_d3_note_2026-05-31`](../../docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md) - medium; unaudited
+- [`koide_record_sign_agnostic_eta_refuted_2026-06-04`](../../docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`koide_record_sign_agnostic_eta_refuted_2026-06-04`](../../docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md) - leaf; unaudited
+- [`koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3`](../../docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 931 |
-| Leaf nodes | 1509 |
+| Medium nodes | 930 |
+| Leaf nodes | 1510 |
 
 Top load-bearing rows by graph score:
 

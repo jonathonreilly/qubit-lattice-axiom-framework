@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1439 |
+| unaudited | 1438 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 25 |
+| ~~audited_renaming~~ | 26 |
 | ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 25 |
-| `unaudited` | 1761 |
+| `audited_renaming` | 26 |
+| `unaudited` | 1760 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 890 |
-| `leaf` | 1422 |
+| `medium` | 891 |
+| `leaf` | 1421 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1754,6 +1754,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_production_dynamics_needed_row_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -17491,6 +17492,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the fixed h=0.5, W=8, L=6 ordered-lattice segment, broad square-window and top-N compressed relaunch states preserve downstream free and weak-field profiles within the reported TV and relative-delta errors, while sharper localization fails.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the fixed lattice, propagates the point packet, compresses the detector-layer state, relaunches it, and computes TV distances and field-response deltas rather than printing hard-coded results. The conclusion is limited to the reported fixed-family bounded surrogate behavior.
 - **rationale:** Within the narrow audited scope, the load-bearing step is a first-principles numerical computation on the provided ordered-lattice harness, not a renaming or imported numerical match. The cited authorities are retained_bounded and are used only as bounded context, while the primary runner directly supplies the controlling metrics for this note. The note explicitly avoids upgrading the result to persistent mass, inertial closure, or family-generic behavior, so the bounded conclusion follows on its own terms.
+- **auditor confidence:** high
+
+### `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited whether per-site H_x = C^2 and k(x)=1 follow from the accepted one-qubit-per-site axiom, standard qubit semantics, and M2(C)/Cl(3,0) representation classification.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The axiom's phrase "qubit at every site" is read via the standard QI definition as the minimal faithful complex irreducible M2(C) module, which by the multiplicity classification is the k=1 case.  _(class `F`)_
+- **chain closes:** False — The algebraic substep closes: the minimal faithful complex M2(C) module is C^2 with multiplicity k=1. The full theorem does not close as an independent derivation because selecting the minimal carrier is exactly the semantic identification of "qubit," not a consequence of the operator algebra alone.
+- **rationale:** Issue: the proof's decisive move is the semantic identification of the axiom word "qubit" with the minimal faithful complex M2(C) module. The Wedderburn/Schur classification supports the minimal-module readout, but it does not independently exclude higher faithful multiplicity once that semantic minimality premise is removed. Repair target: promote the minimal-carrier reading as an explicit axiom/approved definition or supply a separate retained bridge theorem; until then the note supports the k=1 reading only as definitional aliasing, not as a positive theorem.
 - **auditor confidence:** high
 
 ### `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04`

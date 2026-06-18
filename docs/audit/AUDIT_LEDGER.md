@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 920 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
-| unaudited | 1630 |
+| unaudited | 1629 |
 | meta | 322 |
-| ~~audited_numerical_match~~ | 4 |
+| ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 6 |
 | ~~audited_conditional~~ | 13 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -63,9 +63,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 13 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
-| `audited_numerical_match` | 4 |
+| `audited_numerical_match` | 5 |
 | `audited_renaming` | 6 |
-| `unaudited` | 1952 |
+| `unaudited` | 1951 |
 
 | claim_type | count |
 |---|---:|
@@ -115,7 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 901 | 38.82 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 997 | 38.46 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 785 | 38.12 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1113 | 36.62 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1114 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1086 | 35.59 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 924 | 34.85 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 285 | 34.66 | `unaudited` | unaudited |
@@ -123,7 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1003 | 31.97 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 731 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 876 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 198 | 31.14 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 206 | 31.19 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1553,6 +1553,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_carrier_completion_note_2026-04-18` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_endpoint_ratio_chain_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -16491,6 +16492,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** finite sharp-record Fisher tangent theorem + supplied diagonal C^6 Hilbert-Schmidt response basis => primitive unit tangent normalization lambda=1 => democratic coordinate amplitude 1/sqrt(6) in that supplied basis  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, the retained Fisher tangent theorem supplies the zero-mean RN score, Fisher pairing, unit signed record, and exponential chart, while the retained_bounded diagonal-basis theorem supplies the orthonormal C^6 basis and democratic unit. The physical Y_T/source readout bridge is not closed, but the note explicitly excludes it from the audited load-bearing claim.
 - **rationale:** The load-bearing step is finite algebra over retained-grade inputs, not a new physical source identification. Independently, for P0=(1/2,1/2), epsilon=(1,-1) has E0[epsilon]=0 and E0[epsilon^2]=1, while lambda epsilon has Fisher norm lambda^2; in the supplied C^6 diagonal Hilbert-Schmidt basis, (1/sqrt(6)) sum_i E_ii has norm one and component amplitude 1/sqrt(6). The note's firewall keeps same-source top/W response and physical Y_T semantics conditional, so the bounded theorem closes as written.
+- **auditor confidence:** high
+
+### `source_resolved_exact_green_pocket_note`
+
+- **Note:** [`SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_POCKET_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the declared h=0.5, W=3, L=20 finite replay with four in-bounds boundary-clipped source nodes, source strengths {0.001,0.002,0.004,0.008}, Green kernel parameters mu=0.08 and eps=0.5, and calibrated gain 2.131774.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-source_resolved_exact_green_pocket_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the declared small exact-lattice family, the runner reproduces zero-source reduction, 4/4 TOWARD Green-channel signs, Green F~M exponent 1.00, and mean |green/inst| ratio 1.235 using the selected Green kernel and calibrated gain.  _(class `G`)_
+- **chain closes:** True — The restricted packet closes the finite replay: the primary and helper runner sources compute the reported table and the cached run passes the five hard-bar assertions. Closure is only for the declared calibrated numerical pocket, not for a derivation of the Green kernel, source geometry, or gain from retained framework dynamics.
+- **rationale:** The runner is not a print-only artifact: it builds the lattice, constructs the source-resolved Green-like field, propagates both instantaneous and Green fields, computes centroid shifts, fits exponents, and enforces explicit thresholds. The load-bearing result nevertheless depends on runner-selected kernel parameters, a boundary-clipped source cluster, and a calibrated gain selected at the declared scale. This supports a reproducible bounded numerical pocket, not class C theorem closure or a retained field-theoretic derivation.
 - **auditor confidence:** high
 
 ### `source_resolved_exact_green_scaling_note`

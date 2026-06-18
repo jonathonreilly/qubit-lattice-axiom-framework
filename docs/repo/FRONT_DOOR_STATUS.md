@@ -12,18 +12,18 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1596 |
+| Applied audit verdicts | 1597 |
 | Retained-grade rows, including boxed decorations | 1477 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 986 |
 | Boxed decorations under retained parents | 55 |
 | Open gates | 32 |
-| Unaudited rows | 1461 |
+| Unaudited rows | 1460 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 54 |
 | Audited renaming rows | 20 |
-| Audited numerical-match rows | 10 |
+| Audited numerical-match rows | 11 |
 | Citation cycles detected | 7 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1463 |
-| Ready rows | 47 |
+| Total pending rows | 1462 |
+| Ready rows | 46 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 478 |
+| Leaf pending | 477 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18`](../../docs/KOIDE_GAMMA_ORBIT_EXPONENTIAL_VALUE_LAW_CANDIDATE_NOTE_2026-04-18.md) - medium; unaudited
 - [`koide_p1_collapses_frame_residuals_note_2026-06-01`](../../docs/KOIDE_P1_COLLAPSES_FRAME_RESIDUALS_NOTE_2026-06-01.md) - medium; unaudited
 - [`koide_pointer_record_degeneracy_d3_note_2026-05-31`](../../docs/KOIDE_POINTER_RECORD_DEGENERACY_D3_NOTE_2026-05-31.md) - medium; unaudited
 - [`koide_record_sign_agnostic_eta_refuted_2026-06-04`](../../docs/KOIDE_RECORD_SIGN_AGNOSTIC_ETA_REFUTED_2026-06-04.md) - medium; unaudited
 - [`koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3`](../../docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md) - medium; unaudited
+- [`kubo_fam2_non_convergence_note_2026-05-02`](../../docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`kubo_fam2_non_convergence_note_2026-05-02`](../../docs/KUBO_FAM2_NON_CONVERGENCE_NOTE_2026-05-02.md) - leaf; unaudited
+- [`landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13`](../../docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 930 |
-| Leaf nodes | 1510 |
+| Medium nodes | 931 |
+| Leaf nodes | 1509 |
 
 Top load-bearing rows by graph score:
 

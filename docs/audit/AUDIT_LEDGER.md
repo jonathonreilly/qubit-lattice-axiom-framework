@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 219 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 992 |
+| **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1448 |
+| unaudited | 1447 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1438 |
+| `audited_clean` | 1439 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1770 |
+| `unaudited` | 1769 |
 
 | claim_type | count |
 |---|---:|
@@ -1102,6 +1102,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_bootstrap_framework_integration_note_2026-05-03` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_observable_uniqueness_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16034,6 +16035,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the original factor-primal graph, all tested exact-on-box direct cells are over budget, while the orbit quotient is feasible only as a non-exact diagnostic.  _(class `C`)_
 - **chain closes:** True — The runner constructs the finite L_s=3 marked environment, graph brackets, stabilizer quotient, LR support counts, and cost table directly rather than importing the contested cost numbers. The conclusion is explicitly bounded to tested direct original-graph methods and does not claim computation of rho_(p,q), exact treewidth, or a global contraction no-go.
 - **rationale:** The finite geometry counts, marked plaquette removal, graph-width brackets, and memory estimates are computed from visible runner code with no helper imports or external comparator constants. The displayed cost magnitudes are consistent with the reported best clique size 41 and the 4 GiB clique-size ceilings, and the source correctly treats sparse support as an estimate and the orbit quotient as non-exact. The No-Go Discipline section narrows the negative wording to tested direct original-graph methods and leaves rank-aware, stabilizer-block, stronger optimizer, and approximate routes open.
+- **auditor confidence:** high
+
+### `plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`PLAQUETTE_ENVIRONMENT_QUOTIENT_EQUIVARIANCE_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/PLAQUETTE_ENVIRONMENT_QUOTIENT_EQUIVARIANCE_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite L_s=3 marked-plaquette quotient statement: stabilizer/orbit data, dual-label orientation bookkeeping, exact rational falsifier of link-orbit tying, Burnside dense label-orbit cost at NMAX 2 and 3, and no rho computation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because scalar summands are constant only on complete G_stab orbits of label-plus-internal cells, the exact quotient is the finite orbit sum with weight |G_stab|/|Stab_G_stab(x)|, not the one-label-per-link-orbit tied diagnostic quotient.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from finite group action on the L_s=3 link-label set plus the exact orbit-sum identity; the runner reconstructs the stabilizer and computes the toy falsifier and Burnside counts in exact or deterministic arithmetic. The note stays narrow: it rejects the tied diagnostic carrier as exact-by-equivariance and leaves rank-aware exact contractors open.
+- **rationale:** The load-bearing step is a genuine finite-orbit algebraic closure over retained-bounded geometry and cost inputs, supported by deterministic stabilizer reconstruction and exact rational counterexample. The runner source is not a print-only artifact: it enumerates affine signed-permutation stabilizers, records orientation reversals, verifies group law, computes Burnside label-orbit counts, and checks the toy quotient in Fraction arithmetic. The no-go/wall language is scoped to the diagnostic tied carrier and passes the included N1-N8 narrowing: it does not assert global contraction infeasibility or rule out rank-aware stabilizer-block contractors.
 - **auditor confidence:** high
 
 ### `plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10`

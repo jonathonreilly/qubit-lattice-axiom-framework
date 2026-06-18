@@ -1,0 +1,12 @@
+slug: carrier-chirality-boundary-20260618
+status: ready_for_review_pr
+branch: codex/carrier-chirality-boundary-20260618
+target_row: carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06
+mode: source_side_audit_unlock
+audit_actions_performed: false
+review_loop_run: false
+main_refresh_required: false
+summary: >
+  Repairs the newly audited conditional carrier/chirality row by preserving
+  the finite operator-frame no-go and demoting the unresolved KS/Grassmann
+  and Koide/generation consolidation language to explicit source boundaries.

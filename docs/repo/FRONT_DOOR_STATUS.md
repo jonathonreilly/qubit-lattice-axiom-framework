@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1510 |
-| Retained-grade rows, including boxed decorations | 1436 |
+| Applied audit verdicts | 1511 |
+| Retained-grade rows, including boxed decorations | 1437 |
 | Retained positive theorems | 217 |
 | Retained no-go rows | 214 |
-| Retained bounded rows | 955 |
+| Retained bounded rows | 956 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 22 |
-| Unaudited rows | 1547 |
+| Unaudited rows | 1546 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 26 |
 | Audited renaming rows | 16 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1549 |
-| Ready rows | 124 |
+| Total pending rows | 1548 |
+| Ready rows | 123 |
 | Cycle-break targets | 7 |
 | Critical pending | 304 |
 | High pending | 267 |
-| Medium pending | 413 |
+| Medium pending | 412 |
 | Leaf pending | 565 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07`](../../docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`teleportation_bell_measurement_circuit_note`](../../docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md) - medium; unaudited
+- [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 - [`teleportation_taste_readout_operator_model_note`](../../docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md) - medium; unaudited
 - [`universal_gr_polarization_frame_bundle_attempt`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md) - medium; unaudited
 - [`chiral_split_mass_gravity_note`](../../docs/CHIRAL_SPLIT_MASS_GRAVITY_NOTE.md) - medium; unaudited
-- [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
+- [`koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 574 |
 | High nodes | 507 |
-| Medium nodes | 925 |
-| Leaf nodes | 1517 |
+| Medium nodes | 928 |
+| Leaf nodes | 1514 |
 
 Top load-bearing rows by graph score:
 

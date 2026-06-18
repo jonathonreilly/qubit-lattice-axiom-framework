@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 970 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1500 |
+| unaudited | 1499 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -35,6 +35,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_cpt_exact_note` | 4 |
+| `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | 1 |
 | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17` | 1 |
 | `decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19` | 1 |
@@ -65,16 +66,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1408 |
 | `audited_conditional` | 41 |
-| `audited_decoration` | 54 |
+| `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1822 |
+| `unaudited` | 1821 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1729 |
-| `decoration` | 56 |
+| `bounded_theorem` | 1728 |
+| `decoration` | 57 |
 | `meta` | 326 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
@@ -1592,6 +1593,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | cross_family | codex-gpt-5.5 | A | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` |
+| `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12` | decoration | ~~audited_decoration~~ | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | cross_family | codex-gpt-5.5 | A | `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` |
 | `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | algebraic_corollary_of_parent | `cpt_exact_note` |
 | `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
@@ -4247,6 +4249,20 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** Given an admitted two-qubit endpoint, the swap involution defines P_sym=(I+S_ab)/2 and P_anti=(I-S_ab)/2 with ranks 3 and 1, and the Gell-Mann su(3) action embeds on the rank-3 symmetric block while annihilating the antisymmetric complement.  _(class `A`)_
 - **chain closes:** True — Under the stated admitted endpoint hypothesis, the projectors, ranks, orthogonality, and embedded block action follow by finite-dimensional linear algebra. The chain does not derive endpoint ontology, block preservation dynamics, transport, Gauss/Wilson observables, action, or color readout, and the note keeps those outside scope.
 - **rationale:** The primary runner instantiates the two-qubit swap, projectors, symmetric/antisymmetric bases, and embedded Gell-Mann generators directly rather than printing constants; the 66 passing checks match the bounded algebraic scope. An independent algebra check gives the same closure: for an isometry V into the symmetric subspace, T_a=V(λ_a/2)V^† preserves P_sym, kills P_anti, and inherits Hermiticity, trace normalization, and su(3) commutators from the standard Gell-Mann matrices. The result is clean only as a bounded theorem on an admitted two-qubit endpoint, with all endpoint-ontology and dynamics claims explicitly residual.
+- **auditor confidence:** high
+
+### `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited the d=3 step-2 K-period family (L/2, L, L/2): the minimal-vector d^2 mod 2 parity correspondence holds exactly for L = 0 mod 4, with combinatorial grid checks for L = 8 through 30 and Hamiltonian tie only at the stated L=8 and L=10 anchors.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each period, subtracting an even period preserves minimal-representative parity while subtracting an odd period flips it on wrapped residues, giving d2_mod2 = chart_mod2 + high_x + high_z mod 2 for L = 2 mod 4.  _(class `A`)_
+- **chain closes:** True — The parity correspondence follows from residue-class arithmetic over the supplied K-period family, and the runner source genuinely enumerates the finite pair-count cases rather than only printing constants. The Hamiltonian anchor checks use frozen parent values and therefore support only the bounded anchor tie stated in scope, not a broader new H_kd equivalence.
+- **rationale:** The load-bearing step is standard mod-2 algebra applied to the single retained-bounded parent chart family. There are no external comparator checks, and the new content reduces to an algebraic/combinatorial decoration of the upstream commensuration criterion rather than a new first-principles physics derivation. The runner's Hamiltonian anchor constants are frozen parent checks, while the parity-grid path independently computes the claimed finite correspondence.
+- **decoration parent:** `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`
 - **auditor confidence:** high
 
 ### `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`

@@ -1,0 +1,22 @@
+loop_slug: causal-impact-realized-b-20260618
+goal: "Repair audited_failed causal_impact_parameter_note by replacing the nominal target_z fit with a realized source-detector impact-parameter replay."
+target_status: bounded-support
+current_status: source-side repair PR ready for independent review and audit
+runtime_mode: resume
+cycle_count: 1
+active_route: realized_b_enlarged_support_replay
+target_claim_id: causal_impact_parameter_note
+hard_residual: "Old runner fit alpha/R^2 against nominal B_VALUES while source selection saturated near the finite source-layer boundary."
+files_touched:
+  - docs/CAUSAL_IMPACT_PARAMETER_NOTE.md
+  - scripts/causal_impact_parameter_probe.py
+  - logs/runner-cache/causal_impact_parameter_probe.txt
+open_imports:
+  - "scripts/evolving_network_prototype_v6.py remains an executable bounded-harness algorithm source, not a derived framework carrier theorem."
+no_go_routes:
+  - "Keeping HALF=5 cannot realize target b=5..10; the source anchors collapse near realized b about 2.54..2.61."
+trace_gate: direct_blocker_closure
+review_loop_disposition: delegated
+pr_status: pending
+next_exact_action: "Push branch and open ready PR for reviewer extraction; do not audit, land, or refresh stale PRs."
+stop_condition: "Stop after PR creation for this coherent source-side repair block."

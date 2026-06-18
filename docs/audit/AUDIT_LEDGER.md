@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1001 |
+| **retained_bounded** | 1002 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1421 |
+| unaudited | 1420 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 29 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1451 |
+| `audited_clean` | 1452 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1743 |
+| `unaudited` | 1742 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 892 |
-| `leaf` | 1420 |
+| `medium` | 890 |
+| `leaf` | 1422 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1474,6 +1474,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `translation_abelian_composition_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -21661,6 +21662,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner independently reconstructs the implemented B^2 Moyal source and, after fixing the single cell normalization at m=0, finds a maximum off-reference residual of 35.654% at m=0.5.  _(class `C`)_
 - **chain closes:** True — The primary runner computes the Moyal B^2 source from the stated Hamiltonian, validates it against a finite-difference reconstruction, and compares it to the retained_bounded finite-cell reference. The conclusion is only the bounded one-point-normalized mismatch, not finite-cell closure or a global no-go.
 - **rationale:** The helper runner computes the finite-cell target through a finite momentum sum and checks it against direct real-space Harper perturbation; the primary runner recomputes those reference values rather than relying only on note prose. The primary runner then computes the Moyal B^2 matrices and integrals, checks the load-bearing source matrix by finite differences, and bounds quadrature and pole-reconstruction error. The negative language is scoped to this comparator miss, and the source note supplies an N1-N8 no-go discipline gate rather than overclaiming a universal obstruction.
+- **auditor confidence:** high
+
+### `two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`TWO_BAND_ORBITAL_RESPONSE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/TWO_BAND_ORBITAL_RESPONSE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the fixed-scope free d=2 staggered two-band model claim that the 47/120 scalar R Omega_z^2 interband ansatz is refuted, with the corrected star-product residue and disclosed finite-cell residual at mu=1.7086, T=0.2, m in {0,0.2,0.3,0.5}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The symbolic star-product residue gives the d2/dB2 core (f_- - f_+)(qx^2+qy^2)/(4 R^5), so its ratio to R Omega_z^2 is (qx^2+qy^2)/m^2 rather than a constant.  _(class `A`)_
+- **chain closes:** True — The runner source actually performs the Pauli/star-product algebra and residue checks supporting the nonconstant ratio, and recomputes the finite-cell Peierls anchors before using them. The disclosed no-fudge residual is scoped as residual, not claimed as full closed-form completion.
+- **rationale:** The load-bearing scalar-prefactor refutation is a genuine algebraic closure over the displayed two-band Hamiltonian and star-product calculation, not a renaming or tuned numerical match. The one cited authority is marked retained_bounded, which is retained-grade under the rubric, and the runner has no missing helper imports. The note does not overclaim full lattice completion; it explicitly preserves the positive over-capture residual as follow-on work.
 - **auditor confidence:** high
 
 ### `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05`

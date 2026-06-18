@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_conclusion_boundary_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "teleportation_native_axioms_scope_split_source_theorem_note_2026-05-16"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12"
+      "to": "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "teleportation_conclusion_boundary_note",
         "teleportation_native_axioms_scope_split_source_theorem_note_2026-05-16",
         "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
         "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16",
         "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13",
+        "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12"
+        "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a6f9ebfbf3c95b3b22aacb121f8cf59993e7f8050eb4ad53fe1e815df550ae86",
+      "note_hash": "d254e7912c6387e96b4ff19dfbbdf336f5f3a5b171997fb87b4c04cb9378fe55",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

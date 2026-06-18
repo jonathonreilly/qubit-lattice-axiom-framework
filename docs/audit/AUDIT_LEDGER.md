@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 969 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1502 |
+| unaudited | 1501 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 41 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -66,10 +66,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1407 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 54 |
-| `audited_failed` | 26 |
+| `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1824 |
+| `unaudited` | 1823 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 894 |
-| `leaf` | 1418 |
+| `medium` | 893 |
+| `leaf` | 1419 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1639,6 +1639,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `causal_impact_parameter_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | C | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go | ~~audited_failed~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | B | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -3253,6 +3254,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The low-SNR cross-family replay is trustworthy only as a diagnosis of the fixed-anchor replay harness boundary, not as a refutation of the archived center-family causal-field result.  _(class `C`)_
 - **chain closes:** True — The supplied runner and helper source actually build the three configured families, select the fixed source anchor, compute the field cases, and produce the cited centroid-shift ratios. The narrowed conclusion follows from the retained_bounded live packet and portability diagnostic without asserting the stale archived 0.45 observable.
 - **rationale:** The primary runner is not just printing constants: it computes the configured fixed-anchor replay through the included growth, propagation, field, and centroid routines. The output matches the cited family rows and supports the bounded diagnostic that the ratios split across families while the zero control remains exact. Both one-hop cited authorities are marked retained_bounded in the restricted packet, which is retained-grade for this bounded theorem scope. This verdict does not validate the archived 0.45 table or any broader physical field-speed claim.
+- **auditor confidence:** high
+
+### `causal_impact_parameter_note`
+
+- **Note:** [`CAUSAL_IMPACT_PARAMETER_NOTE.md`](../../docs/CAUSAL_IMPACT_PARAMETER_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite computational probe of instantaneous, forward-only, and dynamic causal-field variants on the configured center grown family, fitting detector centroid shifts against the declared B_VALUES.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-causal_impact_parameter_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the fitted alpha/R^2 table over B_VALUES, the note asserts that the impact-parameter sweep is real but the causal-field modification does not preserve a recognizable ~1/b law, with the finite-cone case as the diagnosed boundary.  _(class `C`)_
+- **chain closes:** False — The runner fits against nominal B_VALUES, but source selection uses nearest target_z on a family whose transverse z support is only about +/-2.5 while target_z is 5, 6, 7, 8, and 10. The missing step is a construction or diagnostic showing that the fitted b values are realized impact parameters rather than boundary-selected source labels.
+- **rationale:** Issue: the impact-parameter variable in the fit is the nominal target_z list, not a verified realized source-detector separation. Why this blocks: the reported alpha/R^2 table may be a fit against labels after source selection saturates near the generated lattice boundary, so the claimed impact-parameter-law conclusion does not follow. Repair target: rerun with actual realized impact parameters in the fit, or enlarge/register the source layer so the requested b values are physically realized, and emit source-anchor diagnostics. Claim boundary until fixed: the packet supports only this runner's nominal-target centroid shifts and the exact zero-field control.
 - **auditor confidence:** high
 
 ### `causal_propagating_field_live_packet_note_2026-06-05`

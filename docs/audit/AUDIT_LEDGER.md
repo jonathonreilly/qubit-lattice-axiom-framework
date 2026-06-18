@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 216 |
-| **retained_no_go** | 209 |
+| **retained_no_go** | 210 |
 | **retained_bounded** | 933 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1600 |
+| unaudited | 1599 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
@@ -59,13 +59,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1348 |
+| `audited_clean` | 1349 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1922 |
+| `unaudited` | 1921 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 501 |
-| `medium` | 883 |
+| `high` | 502 |
+| `medium` | 882 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -584,6 +584,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_positive_cone_order_witness_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7965,6 +7966,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Because the second sample-matrix column is <K(W), Phi_1> = 3(chi_(1,0)(W) + chi_(0,1)(W)) = 18 J(W), the radical entries determine J(W_i), hence w_6(W_i)=exp(6 J(W_i)) and the normalized local ratios follow by division by Z_(1plaq)(6).  _(class `A`)_
 - **chain closes:** True — The cited radical sample matrix fixes the relevant source entries, the local Wilson definition gives w_6(W)=exp(6J(W)), and the Bessel-determinant normalization gives Z_(1plaq)(6). These inputs algebraically reproduce the displayed local values without asserting any full environment completion.
 - **rationale:** The load-bearing step is an algebraic conversion from retained sample-matrix entries to local Wilson weights, followed by the retained one-plaquette normalization. The runner source actually recomputes the radical matrix, Bessel-determinant partition value, normalized sample triple, and reconstruction checks; it does not merely print the target values, although it does compare against displayed decimals. The cited authorities' open full-environment language does not block this scoped local-only claim because the source explicitly excludes B_6(W), K_6^env, and Z_6^env(W_i).
+- **auditor confidence:** high
+
+### `gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17`
+
+- **Note:** [`GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_LOCAL_WILSON_RETAINED_POSITIVE_CONE_OBSTRUCTION_NOTE_2026-04-17.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The normalized local Wilson one-plaquette triple on W_A, W_B, W_C is outside the first symmetric retained positive cone because its reconstructed adjoint retained coordinate is strictly negative.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Applying the exact inverse map gives a^loc = F^(-1) Z^loc with a^loc_(1,1) = -0.03190961277002443..., so F^(-1) Z^loc is not componentwise nonnegative.  _(class `A`)_
+- **chain closes:** True — The cited local-evaluation note supplies Z^loc, the radical-map note supplies the invertible F and inverse reconstruction law, and the positive-cone note supplies the equivalence between cone membership and F^(-1)Z >= 0. An independent solve of the displayed matrix reproduces the negative adjoint coordinate, while the true full environment samples remain explicitly out of scope.
+- **rationale:** The load-bearing step is a direct algebraic cone-membership test over retained-grade inputs, not a definition, comparator fit, or import of the contested conclusion. The runner recomputes the radical matrix, local normalization, inverse reconstruction, negative adjoint sign, order gap, and repair amount; the decisive sign is also independently reproduced from the displayed matrix and sample triple. The no-go is narrow: it rules out the local Wilson triple as the first symmetric retained positive-type evaluator, without claiming the open full K_6^env / B_6(W) amplitudes are evaluated.
 - **auditor confidence:** high
 
 ### `gauge_vacuum_plaquette_framework_point_underdetermination_note`

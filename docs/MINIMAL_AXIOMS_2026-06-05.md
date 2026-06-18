@@ -77,6 +77,7 @@ entry in `docs/audit/data/axiom_premise_nodes.json`. Dependencies on
 **Primary runner:** `scripts/audit_companion_three_axiom_clean_base_exact.py`
 checks only elementary algebra/notation sanity for the three axiom names. It
 does not derive or enlarge the axiom set.
+**Cached output:** `logs/runner-cache/audit_companion_three_axiom_clean_base_exact.txt`
 
 Axioms and approved primitives are not Tier-A admitted derivation targets.
 Depending on the Lattice, Quantum, or Record axiom, or on an explicitly

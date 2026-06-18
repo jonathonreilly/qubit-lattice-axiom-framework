@@ -1,0 +1,20 @@
+loop_slug: minimal-axioms-boundary-runner-20260618
+goal: "Strengthen the live minimal_axioms runner/cache so the high-load current axiom row is audit-ready without retagging any ledger."
+target_claim_id: minimal_axioms
+target_status: exact-support
+runtime_mode: short source-side unlock block
+cycle_count: 1
+active_route: exact runner hardening
+hard_residual: "Live minimal_axioms has very high load and is unaudited; existing runner only checked elementary algebra and did not certify registry/policy/Tier-A boundaries."
+files_touched:
+  - docs/MINIMAL_AXIOMS_2026-06-05.md
+  - scripts/audit_companion_three_axiom_clean_base_exact.py
+  - logs/runner-cache/audit_companion_three_axiom_clean_base_exact.txt
+  - .claude/science/physics-loops/minimal-axioms-boundary-runner-20260618/
+open_imports:
+  - "No physics import is retired. This hardens the source boundary for the already approved Lattice, Quantum, Record axiom memo."
+trace_gate_classification: direct_blocker_closure
+review_findings: "Local verification pass; independent review/audit still required before any effective-status change."
+pr_status: pending
+next_exact_action: "Open a review PR from codex/minimal-axioms-boundary-runner-20260618."
+stop_condition: "One coherent source-side unlock block packaged as PR."

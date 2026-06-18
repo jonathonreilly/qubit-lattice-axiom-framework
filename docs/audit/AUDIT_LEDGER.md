@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 214 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 912 |
+| **retained_bounded** | 913 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
 | unaudited | 1639 |
-| audit_in_progress | 1 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 6 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1322 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1323 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `poisson_exhaustive_uniqueness_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -1036,6 +1034,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `poisson_3d_self_field_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `poisson_exhaustive_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_born_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
@@ -14241,6 +14240,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The primary runner constructs the grid, calls the included Poisson helper functions to build fields and propagate amplitudes, and asserts the finite sign and escape inequalities reported in stdout. The helper source is included and does not import a contested threshold or hard-code the table values.
 - **rationale:** The audited claim is explicitly bounded to the current finite harness and declared G grid, not to the archived G_crit claim or a continuum physical threshold. The runner computes the rows from the included propagation and self-field routines, then checks positive delta, escape > 1 at 0.011, 0.012, and 0.020, escape < 1 at 0.050, and first_subunit == 0.050. The provided stdout matches those inequalities, and the code path is computational rather than a mere printout or cross-note value import. The conclusion therefore closes at the bounded harness level.
 - **auditor confidence:** high
+
+### `poisson_exhaustive_uniqueness_note`
+
+- **Note:** [`POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md`](../../docs/POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite N=16 candidate-enumeration diagnostic over the runner-instantiated fractional, anisotropic, non-local, and higher-order Poisson-operator rows with the stated parameters.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-poisson_exhaustive_uniqueness_note-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the N=16 Dirichlet grid, the runner's explicitly enumerated finite candidate rows produce the stated convergence, attractiveness, monotonicity, and beta-selection pattern under the fixed self-consistent iteration.  _(class `C`)_
+- **chain closes:** True — The runner source genuinely constructs the listed operators, runs the fixed-point propagation/field solve, and computes convergence and beta values rather than hard-coding the contested outputs. The note narrows the conclusion to the finite sampled runner surface and explicitly excludes continuum-alpha, continuum-limit, and all-operator exhaustiveness claims.
+- **rationale:** Within the bounded finite-runner scope, the completed cache and runner source support the observed selection pattern. The cited authorities are retained-grade for audit purposes, and the current claim does not rely on promoting the parent Gate B chain. The result is clean only as a finite-grid diagnostic, not as continuum Poisson uniqueness or exhaustiveness over all local symmetric operators.
+- **auditor confidence:** medium
 
 ### `poisson_self_gravity_born_audit_note`
 

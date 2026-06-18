@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1410 |
-| Retained-grade rows, including boxed decorations | 1377 |
+| Applied audit verdicts | 1411 |
+| Retained-grade rows, including boxed decorations | 1378 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 911 |
+| Retained bounded rows | 912 |
 | Boxed decorations under retained parents | 46 |
 | Open gates | 14 |
 | Unaudited rows | 1646 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1649 |
-| Ready rows | 162 |
+| Total pending rows | 1648 |
+| Ready rows | 163 |
 | Cycle-break targets | 7 |
-| Critical pending | 317 |
+| Critical pending | 316 |
 | High pending | 289 |
 | Medium pending | 474 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`coarse_grained_exterior_law_helper_note_2026-04-14`](../../docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md) - critical; audit_in_progress
+- [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
 - [`axiom_first_kms_condition_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited

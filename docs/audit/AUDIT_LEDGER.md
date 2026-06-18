@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 911 |
+| **retained_bounded** | 912 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 14 |
 | unaudited | 1646 |
-| audit_in_progress | 1 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 4 |
 | ~~audited_renaming~~ | 3 |
@@ -59,8 +58,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1320 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1321 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 47 |
 | `audited_failed` | 25 |
@@ -131,7 +130,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -291,6 +289,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3787,6 +3786,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within the stated W1-W4 hypotheses, W1, W3, and W4 give the per-mode lower bound on the anticommutator, and W2 turns the nonzero-momentum average into the displayed theorem bound. The d=1, d=2, and d>=3 IR threshold is covered by the retained_bounded cited authorities and matches the independent small-k comparison E_k ~ |k|^2.
 - **rationale:** The load-bearing step is a direct algebraic rearrangement of the four explicit finite-volume hypotheses with the stated unnormalized Fourier volume factors. The runner is not merely printing constants: it recomputes the finite lattice sums, checks the d=1 identity, monotonic/log behavior, bound monotonicity, and the symbolic rearrangement. The note explicitly excludes the broader claim that arbitrary continuous-symmetry Hamiltonians satisfy W1-W4, so the missing operator-construction theorem is outside this audited scope rather than a hidden dependency.
 - **auditor confidence:** high
+
+### `coarse_grained_exterior_law_helper_note_2026-04-14`
+
+- **Note:** [`COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md`](../../docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded finite-grid helper claim that the specified local O_h and finite-rank lattice fields, after shell averaging and least-squares radial-harmonic projection, produce the reported vacuum-close coarse-grained exterior residual improvement on the scanned 15^3 Dirichlet grid.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-coarse_grained_exterior_law_helper_note_2026-04-14-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The helper applies shell averaging to the finite-rank exterior field and fits the resulting shell means to the unique radial-harmonic profile phi_eff(r)=a/r, then verifies the coarse metric residual across the scanned matching radii.  _(class `C`)_
+- **chain closes:** True — The cited finite-rank authority supplies the exact finite-rank field construction, and the cited shell-localization identity supplies the retained shell-helper surface. The included runner and load-bearing helper excerpts compute the shell averages, a/r projection, and metric residuals rather than merely printing constants.
+- **rationale:** Issue: no substantive closure defect in the bounded helper scope. Why this closes: the runner instantiates the lattice finite-rank fields, performs the shell fit, and computes the coarse versus direct Einstein-tensor residuals with PASS=3 FAIL=0, while the one-hop dependencies are retained-grade bounded authorities. Repair target: none for the bounded helper claim. Claim boundary until extended: this does not derive a physically forced shell projection, full tensorial 3+1 completion, or framework-level gravity theorem beyond the finite-grid coarse-residual calculation.
+- **auditor confidence:** medium
 
 ### `complex_action_note`
 

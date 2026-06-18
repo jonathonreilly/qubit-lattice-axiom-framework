@@ -1,0 +1,25 @@
+loop_slug: gauge-kinematic-bridge-wiring-20260618
+goal: "Wire retained-bounded local-frame/minimal-coupling kinematics into the gauge-algebra parent row without promoting the row or editing audit surfaces."
+target_status: conditional-support
+cycle_count: 1
+active_route: "import retirement: link-transporter convention -> retained-bounded local-frame kinematics"
+hard_residual: "MR_color/factor-locality, factorwise gauging selection, chiral su(2)_L, and gauge dynamics remain open."
+files_touched:
+  - docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md
+  - scripts/gauge_algebra_parent_kinematic_bridge_firewall_2026_06_18.py
+  - logs/runner-cache/gauge_algebra_parent_kinematic_bridge_firewall_2026_06_18.txt
+  - .claude/science/physics-loops/gauge-kinematic-bridge-wiring-20260618/
+  - .claude/science/physics-loops/gauge-kinematic-bridge-wiring-20260618/PR_BODY.md
+open_imports:
+  - "C^3(base) x C^2(fiber) carrier factorization / MR_color."
+  - "Factor-locality and selection of the factorwise su(3)+su(2)+u(1) subgroup over u(6) or conjugates."
+  - "Chiral su(2)_L weak-coupling surface."
+  - "Gauge action, dynamics, couplings, and continuum limit."
+no_go_routes:
+  - "Conjugation-invariant carrier data cannot select the factorwise dim-12 gauging; see the retained no-go note cited by the runner."
+trace_gate_classification: direct_blocker_closure
+trace_gate_reachability: partially_closes
+review_loop_disposition: delegated
+pr_status: pending
+next_exact_action: "Run cache/checks, commit, push, open a ready PR, then update HANDOFF.md and PR_BACKLOG.md with the PR URL."
+stop_condition: "Stop this block after PR creation; continue campaign only if a distinct high-value target remains."

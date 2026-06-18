@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py
+runner_sha256: 104a5199bfce0098b376c52bf0e66ea705e832614349ce4f9e43e488db408984
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.75
+status: ok
+----- stdout -----
+PASS: QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md exists -- docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: RCONN_DERIVED_NOTE.md exists -- docs/RCONN_DERIVED_NOTE.md
+PASS: RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md exists -- docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md
+PASS: EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md exists -- docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: MINIMAL_AXIOMS_2026-06-05.md exists -- docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: axiom_premise_nodes.json exists -- docs/audit/data/axiom_premise_nodes.json
+A. Source-note hygiene
+PASS: note declares canonical bounded_theorem metadata
+PASS: note carries standard status-authority block
+PASS: note uses portable markdown runner and cache links
+PASS: note avoids overreach phrases
+PASS: note declares no new scientific imports
+PASS: note quotes the W9 bridge target
+PASS: source-domain note names the same missing bridge
+PASS: source-domain runner exports the same missing bridge endpoints
+B. Exact algebraic counter-witness
+PASS: F_adj at N_c=3 is exact 8/9 -- 8/9
+PASS: rho_E=0 keeps granted T-side values -- q_T=5/6, s_TE=-2
+PASS: rho_E=21/4 keeps granted T-side values -- q_T=5/6, s_TE=-2
+PASS: rho_E=0 gives c_TE=-5/3 exactly -- -5/3
+PASS: rho_E=21/4 gives q_E=15/8 exactly -- 15/8
+PASS: rho_E=21/4 gives c_TE=-8/9 exactly -- -8/9
+PASS: same F_adj does not determine a unique c_TE -- -5/3 vs -8/9
+PASS: solving c_TE=-F_adj returns rho_E=21/4 -- 21/4
+PASS: positive F_adj alone has wrong signed Route-2 lift -- -69/4
+C. Authority surface separation
+PASS: Rconn note keeps exact support as F_adj
+PASS: Rconn note does not define Route-2 gamma objects
+PASS: Fierz note supplies Fierz channel algebra
+PASS: Fierz note does not define Route-2 gamma objects
+PASS: readout note defines gamma_E and gamma_T
+PASS: readout note does not import R_conn
+PASS: time-coupling note leaves P_R selection open
+PASS: bilinear note defines K_R without R_conn
+PASS: naturality note names c_TE equivalence
+D. Physical selector boundary kept separate
+PASS: kappa note separates exact algebra from physical selector
+PASS: kappa note names missing readout-weighting rule
+PASS: minimal axioms withhold readout and weighting
+PASS: primitive registry does not grant readout bridge
+PASS: new note keeps algebraic W1 separate from kappa_EW W2
+E. Reachability re-run
+PASS: W9 derived inventory has no R_conn-to-center path -- path=0
+PASS: W9 derived inventory has no Rconn-to-rho path -- path=0
+PASS: hypothetical missing bridge reaches center -- path=1
+PASS: hypothetical missing bridge reaches rho_E -- path=3
+PASS: new note does not add missing bridge to derived inventory
+PASS: source-domain note names the typed bridge gap
+PASS: new note states s3-time discharge surface unchanged
+F. No-go discipline visibility
+PASS: N1 checklist item is present
+PASS: N2 checklist item is present
+PASS: N3 checklist item is present
+PASS: N4 checklist item is present
+PASS: N5 checklist item is present
+PASS: N6 checklist item is present
+PASS: N7 checklist item is present
+PASS: N8 checklist item is present
+PASS: N1 lists at least five alternative routes
+PASS: N6 records primitive registry scan
+PASS: N7 steelman is present
+PASS: N8 cross-cycle echo is present
+PASS: gate result is narrow PASS
+TOTAL: PASS=62, FAIL=0
+
+----- stderr -----
+

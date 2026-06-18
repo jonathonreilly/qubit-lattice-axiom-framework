@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1636 |
-| Retained-grade rows, including boxed decorations | 1495 |
+| Applied audit verdicts | 1637 |
+| Retained-grade rows, including boxed decorations | 1496 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 218 |
-| Retained bounded rows | 1001 |
+| Retained bounded rows | 1002 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 37 |
-| Unaudited rows | 1421 |
+| Unaudited rows | 1420 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 60 |
 | Audited renaming rows | 29 |
@@ -33,18 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1423 |
-| Ready rows | 7 |
+| Total pending rows | 1422 |
+| Ready rows | 6 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
-| Medium pending | 413 |
+| Medium pending | 412 |
 | Leaf pending | 438 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12`](../../docs/TWO_BAND_ORBITAL_RESPONSE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16`](../../docs/WILSON_GENERATOR_RESCALING_BETA_TRANSFORMATION_NARROW_THEOREM_NOTE_2026-06-16.md) - medium; unaudited
 - [`wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13`](../../docs/WILSON_STAGGERED_MINIMAL_BLOCK_SPECTRUM_BRIDGE_NOTE_2026-06-13.md) - medium; unaudited
 - [`yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
@@ -82,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3523 |
 | Critical nodes | 577 |
 | High nodes | 506 |
-| Medium nodes | 932 |
-| Leaf nodes | 1508 |
+| Medium nodes | 930 |
+| Leaf nodes | 1510 |
 
 Top load-bearing rows by graph score:
 

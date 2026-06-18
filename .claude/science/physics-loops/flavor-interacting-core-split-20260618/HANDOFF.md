@@ -26,4 +26,4 @@ Remaining blocker:
 The packet still lacks a first-principles matter-action derivation of the
 nonperturbative branch, critical coupling, channel ratio, and `r(g)` curve.
 
-PR: pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4381

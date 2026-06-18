@@ -52234,10 +52234,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30"
     },
     {
@@ -52254,11 +52250,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18"
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+      "to": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
         "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30",
         "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
         "newton_derivation_top4_bridge_note",
         "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
+        "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18",
-        "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2c760a7442c85879df43b9c483033c4d81ccbd3b552afa07b695ca1b90af533c",
+      "note_hash": "6731247dd1979a597bf10bcee2b33db2144d41bfcb14b04b382706dbe666e649",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

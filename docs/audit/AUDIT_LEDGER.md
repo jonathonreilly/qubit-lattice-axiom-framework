@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 216 |
-| **retained_no_go** | 211 |
+| **retained_no_go** | 212 |
 | **retained_bounded** | 937 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 18 |
-| unaudited | 1587 |
+| unaudited | 1586 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 11 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1357 |
+| `audited_clean` | 1358 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 11 |
-| `unaudited` | 1909 |
+| `unaudited` | 1908 |
 
 | claim_type | count |
 |---|---:|
@@ -107,7 +107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1118 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1020 | 41.50 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1083 | 40.58 | `unaudited` | unaudited |
@@ -805,6 +805,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_reality_type_permitted_not_forced_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_pointer_grounds_block_channel_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11194,6 +11195,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For H=aI+bC+conj(b)C^2, the trace projections recover a and b, Q=(1+2|b|^2/a^2)/3 gives Q=1/3 at b=0 and Q=2/3 at r=1/2, L_3(1,2)=2/9, and Q is independent of the phase of b.  _(class `A`)_
 - **chain closes:** True — The displayed identities follow by trace orthogonality of the C3 circulant basis, the root-of-unity cosine sums, and the cited retained-grade L_3(1,2)=2/9 calculation. The note explicitly leaves the physical interaction or record mechanism outside scope.
 - **rationale:** Independent algebra checks reproduce a=Tr(H)/3, b=Tr(C^{-1}H)/3, Q=(3a^2+6|b|^2)/(3a)^2=(1+2r)/3, the r=0 and r=1/2 values, phase independence, and L_3(1,2)=2/9. The runner performs finite algebraic checks rather than merely printing constants, although it is not a first-principles framework computation. All cited authorities are retained-grade for the bounded algebra used here, and the source does not claim charged-lepton channel closure.
+- **auditor confidence:** high
+
+### `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30`
+
+- **Note:** [`KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md`](../../docs/KOIDE_REAL_REP_BLOCK_COUNT_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the narrow claim that the listed real-representation/CPT/signed-readout constraints do not force the (1,1) block-count weighting or make the (1,2) dimension weighting incompatible.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-koide_real_rep_block_count_permitted_not_forced_note_2026-05-30-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Hilbert-Schmidt Gram witness diag(3,6,6) realizes the (1,2) weighting while remaining real, positive-definite, C_3-invariant, and Theta-invariant, so the listed constraints do not forbid (1,2).  _(class `A`)_
+- **chain closes:** True — A single admissible (1,2) witness satisfying every listed retained constraint is enough to refute the proposed forcing route. The runner source actually computes the invariant Gram cone, Theta residuals, Hermitian eigenvalue form, Q compatibility, determinant weighting, and witness invariance rather than merely printing constants.
+- **rationale:** All cited authorities are retained-grade under the rubric, and no open or support-status dependency is used load-bearing. The load-bearing step is a genuine algebraic counterexample over the stated finite matrices, not a definition, renaming, fitted numerical match, or external comparator. The no-go is narrowly scoped and leaves the SO(2)/U(1)_b quotient/readout-factorization handle open, so the negative conclusion does not overreach the tested route.
 - **auditor confidence:** high
 
 ### `koide_reality_type_permitted_not_forced_note_2026-05-30`

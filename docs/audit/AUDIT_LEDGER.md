@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1000 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1426 |
+| unaudited | 1425 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
-| ~~audited_renaming~~ | 27 |
+| ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
-| `audited_renaming` | 27 |
-| `unaudited` | 1748 |
+| `audited_renaming` | 28 |
+| `unaudited` | 1747 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 891 |
-| `leaf` | 1421 |
+| `medium` | 892 |
+| `leaf` | 1420 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1768,6 +1768,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `record_markov_generator_premise_classifier_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
@@ -20905,6 +20906,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The harness checks that an explicit two-bit Bell record is scheduled on a finite directed lattice/DAG with positive latency, no early or duplicate delivery, and Bob pre-delivery no-signaling.  _(class `C`)_
 - **chain closes:** True — The source note limits the claim to a causal classical-record channel, and the runner directly checks the scheduling, delivery, wrong/delayed controls, post-delivery correction, and pre-delivery Bob no-signaling properties. No cited dependencies or external physical identifications are needed for that bounded model claim.
 - **rationale:** The scoped claim closes because the runner constructs the channel and teleportation-control harness directly, then verifies the stated causal and no-signaling properties within the declared boundary. The note explicitly excludes FTL signaling, matter/mass/charge transfer, Bell-record derivation from the DAG, and CHSH/Poisson derivation, so the clean verdict does not ratify those stronger claims. Residual risk is limited to this being a first-artifact model harness rather than a broader physical derivation.
+- **auditor confidence:** high
+
+### `teleportation_conclusion_boundary_note`
+
+- **Note:** [`TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md`](../../docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited only as an ordinary quantum-state teleportation planning boundary that records unresolved selector, scaling, and hardware obligations and forbids nature-grade promotion.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-teleportation_conclusion_boundary_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current lane status is `planning_closed = True`, `unconditional_closed = False`, `promote_to_nature_grade = False`, with retained status `planning closed as conditional theory; nature-grade closure HOLD`.  _(class `E`)_
+- **chain closes:** False — The chain does not close as a derivation: no cited authority derives the selector residuals, side-12 scaling certificate, side-14 blocker, or hardware evidence status. The runner sets those fields as constants and checks that the resulting boundary flags remain HOLD.
+- **rationale:** Issue: The load-bearing lane status is introduced as fixed boundary data, and the runner hard-codes the selector, scaling, and hardware fields rather than deriving them from an axiom or cited authority. Why this blocks: with no cited authorities, the restricted packet cannot substantively verify the underlying selector residuals, finite certificate, side-14 blocker, or hardware evidence status. Repair target: add and audit direct dependency notes or a runner that actually derives the underlying selector, scaling, and hardware facts. Claim boundary until fixed: it may be cited only as a planning HOLD/open-gate boundary for ordinary state teleportation, not as theorem evidence.
 - **auditor confidence:** high
 
 ### `teleportation_cross_encoding_maps_note`

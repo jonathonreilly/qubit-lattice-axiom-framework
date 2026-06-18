@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "teleportation_conclusion_boundary_note"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13"
+      "to": "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13",
         "teleportation_conclusion_boundary_note",
         "teleportation_native_axioms_scope_split_source_theorem_note_2026-05-16",
         "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
         "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16",
+        "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13"
+        "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "300d83f7e8745b89fc96e73c1061292ae5438f6f30b536784cddd8e45ae04839",
+      "note_hash": "a6f9ebfbf3c95b3b22aacb121f8cf59993e7f8050eb4ad53fe1e815df550ae86",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

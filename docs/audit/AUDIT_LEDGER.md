@@ -57,8 +57,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 1313 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 1314 |
 | `audited_conditional` | 8 |
 | `audited_decoration` | 45 |
 | `audited_failed` | 25 |
@@ -133,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `finite_rank_gravity_residual_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -1420,6 +1419,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_test_mass_continuum_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -19502,6 +19502,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The supplied primary runner and helper source instantiate the open Wilson lattice, Poisson solve, Wilson Hamiltonian evolution, mutual acceleration observable, clean/attract labeling, and log-log power-law fits rather than merely printing constants. The completed cache reports 12/12 clean attractive rows at each mu^2 and the quoted monotone exponent softening.
 - **rationale:** The load-bearing claim is bounded to a finite computed lattice surface and is directly supported by the supplied runner cache. The helper path used by the primary runner calls genuine computational routines; the hard-coded comparison table in the helper's own main is not on the primary runner's load-bearing path. The cited upstream authority is retained_bounded and consistent with the scoped companion calibration, while the note explicitly avoids promoting the result to full Newton closure.
 - **auditor confidence:** high
+
+### `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`
+
+- **Note:** [`WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`](../../docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Inside the supplied standard Wilson plaquette action with canonical Tr(T_a T_b)=delta_ab/2, the small-a coefficient matching gives beta g_bare^2 = 2 N_c.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-015204-1f6874e3-wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07-panel1-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** Matching the Wilson small-a coefficient beta g_bare^2/(4 N_c) to the unordered-plane continuum Yang-Mills coefficient 1/2 gives beta = 2 N_c / g_bare^2.  _(class `A`)_
+- **chain closes:** True — The restricted packet closes the scoped coefficient theorem: the trace expansion gives the plaquette deficit a^4 g_bare^2 F^a F^a/(4 N_c), and the continuum action has coefficient 1/2 over unordered planes. This is a clean bounded derivation under supplied Wilson-action and trace-normalization hypotheses, with no claim of Wilson action-surface selection or g_bare=1. The first audit is the better resolution because it treats the step as algebraic derivation over supplied inputs rather than first-principles framework computation.
+- **rationale:** The restricted packet closes the scoped coefficient theorem: the trace expansion gives the plaquette deficit a^4 g_bare^2 F^a F^a/(4 N_c), and the continuum action has coefficient 1/2 over unordered planes. This is a clean bounded derivation under supplied Wilson-action and trace-normalization hypotheses, with no claim of Wilson action-surface selection or g_bare=1. The first audit is the better resolution because it treats the step as algebraic derivation over supplied inputs rather than first-principles framework computation.
+- **auditor confidence:** judicial
 
 ### `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`
 

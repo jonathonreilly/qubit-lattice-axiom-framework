@@ -52230,10 +52230,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07"
     },
     {
@@ -52259,6 +52255,10 @@
     {
       "from": "repo.front_door_status",
       "to": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
     },
     {
       "from": "repo.repo_organization",
@@ -100629,17 +100629,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
         "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
         "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
         "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
         "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
         "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
         "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad57a092861b0355403a784ea32a1e8c0de9655786db6fe1201130062a8b84ca",
+      "note_hash": "4a4465fe20e5943ec68e939b6ff727e6bd861c748320d7f0f68a2df6e083e012",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

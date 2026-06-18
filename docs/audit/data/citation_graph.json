@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "accessible_prediction_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08"
+      "to": "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "accessible_prediction_note",
         "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
         "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
         "beta6_plaquette_multicube_resummation_relocation_note_2026-05-31",
+        "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08"
+        "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6662c8b375359fea954724542bddff9bab1b6856a83aa8ba5a97daa0a6dd60d6",
+      "note_hash": "a3c7a9a83fa0d69339459564f664c838d1224e6745fa3434ac50159e440a5b51",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

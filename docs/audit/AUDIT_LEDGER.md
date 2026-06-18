@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 218 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 966 |
+| **retained_bounded** | 967 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 29 |
-| unaudited | 1509 |
+| unaudited | 1508 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1403 |
+| `audited_clean` | 1404 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1831 |
+| `unaudited` | 1830 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 891 |
-| `leaf` | 1421 |
+| `medium` | 893 |
+| `leaf` | 1419 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -150,6 +150,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1921,6 +1922,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `stale embedded PASS=41/JTS-residue transcript state conflicts with live PASS=13/JTS-derived runner state`
   - `canonical ISSR1/JTS theorem notes are not registered as this row's one-hop dependencies`
 - **auditor confidence:** high
+
+### `allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14`
+
+- **Note:** [`ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md`](../../docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded perturbative all-orders marginal-velocity protection inside the supplied exact B4-symmetric Wilson/staggered regulator, with one-loop and representative genuine two-loop checks; nonperturbative effects, continuum-limit claims, per-taste/taste-breaking effects, and broken-B4 continuous-time cases are outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the regulated action and measure are exactly B4-invariant, the perturbative effective action Gamma is B4-invariant order by order; since the B4-invariant diagonal marginal kinetic subspace is one-dimensional, the coefficient of the B4-non-invariant marginal velocity operator vanishes at every perturbative order.  _(class `A`)_
+- **chain closes:** True — The finite-regulator symmetry/change-of-variables argument closes the Ward-style step: B4 invariance of action plus measure transfers to Z[J] and Gamma order by order, and the Reynolds-rank result leaves only c_t = c_s at marginal diagonal order. The runner source performs nontrivial finite group, one-loop, two-loop, nonfactorization, and B4-breaking falsifier checks rather than printing constants.
+- **rationale:** The audited claim is correctly scoped as a bounded theorem inside a supplied B4-covariant regulator, not as a derivation of that regulator from the framework axioms. The cited retained/retained_bounded authorities and flagged accepted primitives do not force a dependency downgrade, and the all-orders conclusion follows by standard finite-regulator symmetry plus the explicit rank-one B4 kinetic-form calculation. The two-loop calculation is confirmatory rather than load-bearing, but the source verifies it with an analytic integrand curvature, a genuine q+r two-loop coupling, and a B4-breaking control.
+- **auditor confidence:** medium
 
 ### `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`
 

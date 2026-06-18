@@ -1,0 +1,24 @@
+loop: yt-neutral-carrier-algebra-core-20260618
+target_claim_id: yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25
+target_note: docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md
+core_note: docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md
+target_runner: scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py
+core_runner: scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py
+base: origin/main@8e3a68da1
+branch: codex/yt-neutral-carrier-algebra-core-20260618
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: split finite lower-projector algebra from open physical same-surface carrier theorem
+blocker_text: "the broader carrier-ray bridge still needs a retained same-surface theorem identifying the qubit readout P_- carrier with the EW Higgs doublet P_- carrier as a physical source surface"
+repair_summary: >
+  Added a bounded algebra-core note and runner for epsilon=I-2P_- plus EW
+  lower-ray neutrality, and rescaled the parent note/runner so the physical
+  qubit-to-Higgs same-surface carrier bridge remains open rather than hidden.
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py -> TOTAL: PASS=32 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py -> SUMMARY: PASS=67 FAIL=0"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py -> status ok"
+  - "python3 scripts/cached_runner_output.py --refresh scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py -> status ok"
+review_loop: delegated_to_codex_reviewer
+next_exact_action: open source-side PR; reviewer/auditor may re-audit the algebra-core split and parent bridge boundary

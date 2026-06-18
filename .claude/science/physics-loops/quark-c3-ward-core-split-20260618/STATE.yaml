@@ -1,0 +1,17 @@
+goal: "Unlock the quark C3 Ward splitter audited conditional row with source-side science only."
+target_status: exact-support
+runtime_mode: focused_block
+cycle_count: 1
+active_route: "finite-dimensional C3 algebraic core split"
+hard_residual: "physical carrier provenance and quark source/readout laws remain open"
+files_touched:
+  - docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md
+  - docs/QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
+  - scripts/frontier_quark_c3_oriented_ward_splitter_algebraic_core_split_2026_06_18.py
+open_imports:
+  - "physical staggered-carrier provenance for broader physical claims"
+  - "quark source/readout theorem for a,b,c and Yukawa-channel identification"
+review_findings: "review-loop not run; user delegated review-loop and landing cleanup to Codex reviewer"
+pr_status: pending
+next_exact_action: "Run verification, cache the runner output, commit, push, and open a review PR."
+stop_condition: "coherent source-side repair PR opened"

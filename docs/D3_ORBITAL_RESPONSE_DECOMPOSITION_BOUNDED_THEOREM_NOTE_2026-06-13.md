@@ -5,6 +5,8 @@
 **Primary runner:** `scripts/frontier_d3_orbital_response_decomposition_2026_06_13.py`
 **Runner cache:** `logs/runner-cache/frontier_d3_orbital_response_decomposition_2026_06_13.txt`
 **Status:** source proposal; the audit lane grades.
+**Normalization dependency:**
+[`D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md`](D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md)
 **Status authority:** independent audit lane. This source note does not set or
 predict an audit outcome and does not edit audit-owned registry, ledger, queue,
 or publication-status surfaces.
@@ -54,7 +56,8 @@ The scope is deliberately narrow:
 
 No fitted scalar prefactor is used. The Landau-Peierls cell normalization is
 fixed once as `-1/12`, the spinless unit-flux grand-potential second-derivative
-normalization:
+normalization supplied by
+[`D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md`](D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md):
 
 ```text
 chi_LP = -1/12 * integral_BZ f'(E(k))
@@ -65,11 +68,16 @@ E_xx E_yy - E_xy^2 = 4 cos(kx) cos(ky)
 
 ## Input Boundary
 
-The standard Landau-Peierls single-band formula and its `-1/12` spinless
-unit-flux normalization are used as explicit theory inputs. The runner tests
-that input against a finite periodic Peierls lattice reference. This note does
-not derive the Landau-Peierls formula from the repo axioms, does not claim a
-continuum-QFT theorem, and does not claim a thermodynamic-limit theorem.
+The `-1/12` spinless unit-flux normalization is now source-side supplied by the
+single-band Peierls magnetic-translation normalization note named above. This
+parent note remains the finite periodic Peierls-lattice comparison: it tests the
+source-supplied single-band term against an exact finite-torus reference, keeps
+the single-band interband term at zero, and does not claim a continuum-QFT or
+thermodynamic-limit theorem.
+
+If the normalization dependency does not pass independent review/audit, this
+parent note falls back to a conditional numerical comparison. This source note
+does not set or predict that outcome.
 
 ## Finite-Torus Reference
 
@@ -119,11 +127,11 @@ mu       exact chi             LP chi                residual
 ## Gates
 
 The runner declares all tolerances before computing spectra or integrals. Its
-load-bearing gates include the finite-torus reference construction, a
-sub-`1%` relative residual at the reference point, sign tracking across the
-sampled `chi(mu)` curve, and a sub-`1%` active relative residual across that
-curve. The passing run reports:
+load-bearing gates include the source-normalization anchors, the finite-torus
+reference construction, a sub-`1%` relative residual at the reference point,
+sign tracking across the sampled `chi(mu)` curve, and a sub-`1%` active
+relative residual across that curve. The passing run reports:
 
 ```text
-TOTAL: PASS=9 FAIL=0
+TOTAL: PASS=12 FAIL=0
 ```

@@ -1,0 +1,19 @@
+loop_slug: plaquette-all-k-tail-bridge-20260618
+goal: "Add source-side bounded support for the plaquette word-count all-k remainder tail blocker."
+target_claim_id: gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12
+target_status: bounded-support
+runtime_mode: source-side science support PR
+cycle_count: 1
+active_route: rescaled high-precision tail support
+hard_residual: "A full analytic monotone/Neumann tail proof is still needed to control ||e_k||_1 / alpha^k for every k beyond the sampled high-precision window."
+files_touched:
+  - docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RESCALED_TAIL_SUPPORT_NOTE_2026-06-18.md
+  - docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md
+  - scripts/gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18.py
+  - logs/runner-cache/gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18.txt
+open_imports:
+  - "Analytic uniform tail theorem: prove a monotone/block-resolvent/Neumann bound for all k beyond the high-precision rows."
+review_loop_disposition: "not run; delegated to reviewer"
+pr_status: pending
+next_exact_action: "Open source-side PR for reviewer extraction."
+stop_condition: "One coherent bounded-support artifact packaged."

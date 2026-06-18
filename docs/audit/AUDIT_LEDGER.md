@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1445 |
+| unaudited | 1444 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 21 |
+| ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -71,17 +71,17 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 21 |
-| `unaudited` | 1767 |
+| `audited_renaming` | 22 |
+| `unaudited` | 1766 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1729 |
 | `decoration` | 59 |
-| `meta` | 326 |
+| `meta` | 327 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 757 |
+| `positive_theorem` | 756 |
 
 | criticality | count |
 |---|---:|
@@ -1747,6 +1747,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -16662,6 +16663,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A finite history of length n can be embedded into physical time by any strictly increasing finite clock sequence tau_0 < tau_1 < ... < tau_n, preserving the same word/counts while generally changing elapsed times and rates.  _(class `A`)_
 - **chain closes:** True — The finite word/count data are invariant under replacing the supplied clock by any other strictly increasing map on the same event indices. Since the rate denominators change while the record history does not, append/count data alone do not select a physical clock rate.
 - **rationale:** The displayed quantitative checks close by finite algebra: the same four-event word admits strict clocks with elapsed times 4, 8, and 10, giving total rates 1, 1/2, and 2/5, while counts and prefix order are unchanged. Supplied-clock formulas for durations, interval rates, total rates, and per-letter rates independently match the stated arithmetic. The runner performs the relevant finite prefix/count and Fraction calculations, while its source-anchor checks are cross-note text checks and the hard-coded firewall flags are not load-bearing. The clean no-go is branch-local to the counts-alone post-record route and does not rule out rates from an added clock, production process, or dynamics bridge.
+- **auditor confidence:** high
+
+### `post_record_conditional_audit_evidence_ladder_2026-06-06`
+
+- **Note:** [`POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md`](../../docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md)
+- **claim_type:** `meta`
+- **claim_scope:** Branch-local audit-methodology classifier mapping supplied finite evidence patterns to allowed audit-lane readings, without applying audit verdicts or deriving physics laws.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-post_record_conditional_audit_evidence_ladder_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The ladder is a finite classifier for what a bounded or conditional row is allowed to claim from the evidence it supplies.  _(class `E`)_
+- **chain closes:** True — The restricted packet supports the classifier as a definition with internal consistency checks. It does not close as a first-principles derivation of the evidence rungs from axioms, and the note explicitly disclaims that stronger reading.
+- **rationale:** Issue: the load-bearing step introduces the audit evidence ladder and its category map rather than deriving those categories from retained physics or axiom content. Why this blocks: the runner implements and checks the same finite rule table, including source-anchor text checks, so it verifies internal consistency but not independent theorem closure. Repair target: supply a retained audit-policy theorem deriving the sufficiency/blocked rungs, or keep this row scoped as a methodological definition. Claim boundary until fixed: branch-local classifier support only.
 - **auditor confidence:** high
 
 ### `post_record_count_probability_firewall_2026-06-06`

@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1612 |
+| Applied audit verdicts | 1613 |
 | Retained-grade rows, including boxed decorations | 1485 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 993 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 35 |
-| Unaudited rows | 1445 |
+| Unaudited rows | 1444 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 57 |
-| Audited renaming rows | 21 |
+| Audited renaming rows | 22 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 7 |
 
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1447 |
-| Ready rows | 31 |
+| Total pending rows | 1446 |
+| Ready rows | 30 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 462 |
+| Leaf pending | 461 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`post_record_conditional_audit_evidence_ladder_2026-06-06`](../../docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md) - medium; unaudited
 - [`post_record_flow_thermal_stable_setting_certificate_2026-06-06`](../../docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md) - medium; unaudited
 - [`post_record_production_dynamics_needed_row_map_2026-06-06`](../../docs/POST_RECORD_PRODUCTION_DYNAMICS_NEEDED_ROW_MAP_2026-06-06.md) - medium; unaudited
 - [`post_record_selector_tangent_readout_weight_prototype_2026-06-06`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
+- [`qnm_hardening_feasibility_note`](../../docs/QNM_HARDENING_FEASIBILITY_NOTE.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`qnm_hardening_feasibility_note`](../../docs/QNM_HARDENING_FEASIBILITY_NOTE.md) - leaf; unaudited
+- [`qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22`](../../docs/QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

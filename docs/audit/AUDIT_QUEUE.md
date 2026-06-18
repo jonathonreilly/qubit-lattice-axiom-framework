@@ -16,7 +16,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | unaudited | critical | 308 | 10.77 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_quark_antiquark_color_singlet_check.py` |
-| 2 | `gravity_clean_derivation_note` | bounded_theorem | unaudited | critical | 282 | 18.64 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py` |
+| 2 | `gravity_clean_derivation_note` | bounded_theorem | audit_in_progress | critical | 283 | 19.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gravity_clean_weak_field_composition_certificate_2026_06_11.py` |
 | 3 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | unaudited | critical | 261 | 17.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
 | 4 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | unaudited | critical | 251 | 13.48 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_effective_potential_endpoint.py` |
 | 5 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | unaudited | critical | 238 | 20.90 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py` |

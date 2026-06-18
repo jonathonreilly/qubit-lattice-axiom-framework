@@ -1,0 +1,17 @@
+loop_slug: linear-response-kubo-scope-20260618
+goal: "Narrow the second-order Kubo source note to the finite replay supported by its runner."
+target_claim_id: linear_response_second_order_kubo_note
+target_status: bounded-support
+runtime_mode: source-side scope repair PR
+cycle_count: 1
+active_route: scope_narrowing
+hard_residual: "A no-go for third or higher Taylor order, another expansion basepoint, or non-perturbative treatment is not proved by this note."
+files_touched:
+  - docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md
+open_imports:
+  - "Remainder/convergence/non-analyticity theorem for Taylor orders beyond two."
+  - "Explicit third-or-higher-order computation for the failing families."
+review_loop_disposition: "not run; delegated to reviewer"
+pr_status: pending
+next_exact_action: "Open source-side PR for reviewer extraction."
+stop_condition: "One coherent audited-conditional source-boundary repair packaged."

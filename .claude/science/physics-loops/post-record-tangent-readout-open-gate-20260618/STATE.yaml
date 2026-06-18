@@ -1,0 +1,15 @@
+loop: post-record-tangent-readout-open-gate-20260618
+date: 2026-06-18
+status: source_repair_pr_ready
+mode: audit_unlock_source_repair
+target_row: post_record_selector_tangent_readout_weight_prototype_2026-06-06
+branch: codex/post-record-tangent-readout-open-gate-20260618
+claim_surface: open-gate conditional-support diagnostic
+audit_actions_performed: false
+ledger_edits_performed: false
+review_loop_run: false
+summary: >
+  Repaired the post-record selector/tangent/readout weight prototype by demoting
+  its source boundary from bounded-support packet to open-gate
+  conditional-support diagnostic, wiring the 2026-06-05 Record axiom
+  non-supply clauses into the runner, and refreshing the live bucket count.

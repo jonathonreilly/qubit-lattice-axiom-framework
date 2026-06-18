@@ -2,6 +2,7 @@
 
 **Date:** 2026-04-06  
 **Status:** proposed_retained narrow positive on the high-drift/high-restore third family
+**Live bridge to archived card blocker:** [`THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md`](THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md)
 
 ## Artifact Chain
 
@@ -50,6 +51,11 @@ It only says that the third family from the three-family card preserves both:
 
 - signed-source / weak-field controls
 - near-Newtonian distance-tail viability
+
+It also does **not** repair the archived three-family 9/9 card by itself. That
+card still needs a single runner that recomputes all nine listed properties for
+all three families. This note only supplies the live missing Family 3
+distance-tail slot.
 
 ## Conclusion
 

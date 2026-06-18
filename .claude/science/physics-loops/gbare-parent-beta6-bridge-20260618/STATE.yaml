@@ -1,5 +1,5 @@
 loop: gbare-parent-beta6-bridge-20260618
-status: verified_source_block
+status: pr_open
 target: g_bare_derivation_note
 target_status: best_honest_status
 active_route: finite-link scalar slot plus Wilson coefficient bridge
@@ -13,5 +13,6 @@ open_imports:
   - Wilson action-form selection remains supplied, not derived here.
   - Global logarithm branch and continuum gauge-field limit remain out of scope.
   - Independent audit must decide parent status after review.
-next_exact_action: "Commit, push, and open PR."
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4310
+next_exact_action: "Reviewer extracts science and decides review/audit path."
 stop_condition: "PR opened and effectiveness review returned to user."

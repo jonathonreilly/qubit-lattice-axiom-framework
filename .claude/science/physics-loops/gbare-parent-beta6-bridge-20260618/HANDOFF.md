@@ -3,6 +3,8 @@
 This block repairs `G_BARE_DERIVATION_NOTE.md` by sourcing the `beta=6`
 surface from a finite-link/Wilson bridge instead of hard-coding it.
 
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4310
+
 Artifacts:
 
 - `docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md`

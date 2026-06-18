@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lattice_3d_nyquist_diffraction_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "lepton_block_d12_prime_matching_no_go_note_2026-05-10"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12"
+      "to": "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "lattice_3d_nyquist_diffraction_note",
         "lepton_block_d12_prime_matching_no_go_note_2026-05-10",
         "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
         "mirror_mutual_information_note",
         "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12",
+        "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12"
+        "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "53abeb18bc0938bc325d5502fb5582f01edb526c2962b354121b2f91ecaadb62",
+      "note_hash": "08a02d601a706644fd68d14a039a05196ff778703cefab2fd1ec8c264aa6d3b6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

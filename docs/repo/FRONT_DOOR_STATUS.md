@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1400 |
-| Retained-grade rows, including boxed decorations | 1372 |
+| Applied audit verdicts | 1401 |
+| Retained-grade rows, including boxed decorations | 1373 |
 | Retained positive theorems | 212 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 910 |
+| Retained bounded rows | 911 |
 | Boxed decorations under retained parents | 44 |
 | Open gates | 14 |
 | Unaudited rows | 1654 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1659 |
-| Ready rows | 161 |
+| Total pending rows | 1658 |
+| Ready rows | 162 |
 | Cycle-break targets | 7 |
-| Critical pending | 328 |
+| Critical pending | 327 |
 | High pending | 289 |
 | Medium pending | 473 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07`](../../docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) - critical; audit_in_progress
 - [`observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - critical; unaudited
 - [`g_bare_rescaling_freedom_removal_theorem_note_2026-05-03`](../../docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26`](../../docs/CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - critical; unaudited
 - [`universal_gr_polarization_frame_bundle_blocker_note`](../../docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md) - critical; unaudited
+- [`finite_rank_gravity_residual_helper_note_2026-04-14`](../../docs/FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

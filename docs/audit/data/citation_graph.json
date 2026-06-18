@@ -52234,7 +52234,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17"
+      "to": "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17"
     },
     {
       "from": "repo.front_door_status",
@@ -52254,11 +52254,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_ew_m_residual_note_2026-05-02"
+      "to": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
+      "to": "yt_ew_m_residual_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -100630,16 +100630,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17",
+        "gauge_vacuum_plaquette_first_symmetric_three_sample_exact_radical_reconstruction_map_note_2026-04-17",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
         "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
         "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
-        "yt_ew_m_residual_note_2026-05-02",
-        "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
+        "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
+        "yt_ew_m_residual_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0325ba803d91f9deef997d476e338d6a1e300cfafab09fc6b13225516a5d7816",
+      "note_hash": "15baa5f30a0851b9e6a303e31babf48653fe340ae56a564b5c2a338ce44fe6cd",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "d3_native_stable_orbit_upper_bound_composition_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12"
+      "to": "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "d3_native_stable_orbit_upper_bound_composition_note_2026-06-09",
         "d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13",
         "d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13",
         "depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13",
         "depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12",
+        "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12"
+        "dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "18558833df60b92b652cac7eba1867dcd3f224d96c1ec84bfbf13c58bb83dfcb",
+      "note_hash": "b6d3cd67775c80f48e100fdf84f5bfa090f3ebaead63053a1eb2dd5e0870f47a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

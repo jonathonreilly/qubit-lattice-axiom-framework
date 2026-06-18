@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 972 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 30 |
-| unaudited | 1495 |
+| unaudited | 1494 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1410 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1817 |
+| `unaudited` | 1816 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 891 |
-| `leaf` | 1421 |
+| `medium` | 890 |
+| `leaf` | 1422 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1558,6 +1558,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `connectivity_family_v2_elliptical_duplicate_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
+| `d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_eta_bounded_prediction_from_supplied_nsites_v_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4829,6 +4830,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** L_runner intersect U_stable = {3,4,5} intersect {d : d <= 3} = {3}.  _(class `A`)_
 - **chain closes:** True — The cited lower-bound packet supplies the finite checked set {3,4,5}, and the cited stable-orbit support supplies the bounded upper edge d <= 3 on the relevant integer dimensions. The singleton conclusion follows by exact finite-set intersection without using the full Bertrand closed-orbit theorem or a Coulomb uniqueness claim.
 - **rationale:** The audited claim is a bounded finite-set composition over retained-bounded one-hop inputs, not a fresh derivation of dimension selection from the framework baseline. The load-bearing step is exact algebra once the lower packet and stable-orbit upper edge are accepted within their declared scopes. The runner is primarily a source-surface and finite-set certificate, which is appropriate for this class-A wrapper but would not support any broader physics claim beyond the note's non-claims.
+- **auditor confidence:** high
+
+### `d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13`
+
+- **Note:** [`D3_ORBITAL_RESPONSE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md`](../../docs/D3_ORBITAL_RESPONSE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free spinless single-band cubic nearest-neighbor L=32 torus at T=0.30 with quantized xy Peierls flux, testing the finite-torus grand-potential second difference against the stated 3D Landau-Peierls formula with chi_inter=0 at mu=-2 and across the sampled mu curve.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At L=32, mu=-2.0, T=0.30, the computed Landau-Peierls plus single-band interband value differs from the finite-torus Richardson Peierls reference by 2.213602903391e-05, a 5.573420774086e-03 relative residual, with worst sampled curve residual about 0.61%.  _(class `C`)_
+- **chain closes:** False — The runner appears to compute the Peierls finite-torus spectrum and the Landau-Peierls Brillouin-zone integral rather than hard-code the reported residuals. The chain does not close from the restricted packet alone because the standard Landau-Peierls formula and its -1/12 spinless unit-flux normalization are explicit imported theory inputs with no cited retained or accepted authority.
+- **rationale:** Issue: the finite Peierls reference and LP integral are computed, but the note explicitly imports the standard Landau-Peierls formula and its -1/12 normalization rather than deriving or citing a retained accepted authority for them. Why this blocks: the packet supports bounded numerical agreement under that assumed formula, not closure of the decomposition theorem from the restricted inputs alone. Repair target: cite or audit a retained Landau-Peierls normalization theorem for this single-band lattice setting, or narrow the claim to a conditional numerical comparison. Claim boundary until fixed: the runner is evidence that the stated formula tracks the finite torus at these frozen parameters to below 1%, with chi_inter set to zero for one band.
 - **auditor confidence:** high
 
 ### `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12`

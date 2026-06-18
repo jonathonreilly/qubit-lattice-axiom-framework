@@ -3,7 +3,7 @@ runner: scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py
 runner_sha256: 2585063e3d01b6727978f79f08ec2a35c9c5fe7a9456b5efca688817207a10ca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 Gate B local-stencil connectivity bridge

@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1441 |
+| unaudited | 1440 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
-| ~~audited_renaming~~ | 24 |
+| ~~audited_renaming~~ | 25 |
 | ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -71,8 +71,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
-| `audited_renaming` | 24 |
-| `unaudited` | 1763 |
+| `audited_renaming` | 25 |
+| `unaudited` | 1762 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 892 |
-| `leaf` | 1420 |
+| `medium` | 890 |
+| `leaf` | 1422 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1752,6 +1752,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_production_dynamics_needed_row_map_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -17123,6 +17124,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On a finite translation-covariant qubit window with only normalization imposed, Jaynes entropy maximization selects the unique normalized trace state I_{2^{|Lambda|}}/2^{|Lambda|}, whose one-site marginals are I_2/2 and whose trace state is invariant under the available lattice-translation automorphisms.  _(class `C`)_
 - **chain closes:** True — The cited axiom premise supplies Z^3 sites with one M_2(C) qubit algebra per site, and the retained algebraic authorities support the two-dimensional one-site factor. Standard finite-dimensional entropy concavity gives the unique trace maximizer, and the displayed normalizations, marginal trace, unitary invariance, and translation-automorphism invariance all check internally.
 - **rationale:** No runner stdout or source is available, so the audit rests on the note text and standard finite-dimensional entropy facts. The load-bearing variational step is not a renaming or comparator match: it computes the unconstrained finite-window Jaynes state from the qubit-lattice algebra and normalization. The claim is appropriately scoped to finite windows and local invariance content, avoiding the separately named full-state uniqueness obstruction.
+- **auditor confidence:** high
+
+### `pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Commuting bounded finite-source observables on a finite-region one-qubit algebra, with rho_ref supplied as input; audited only the identification of W[J] = log Tr(rho_ref e^{-J}) - log Tr(rho_ref) with the standard cumulant generator and its stated sign convention.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the commuting-source scope, the framework's W[J] is the right-hand side of the standard source functional with rho = rho_ref, so W[J] is the standard cumulant generating functional applied to rho_ref.  _(class `F`)_
+- **chain closes:** False — The commuting-source cumulant algebra is internally consistent, including the explicit (-1)^n sign bookkeeping. The missing step is an independent derivation that the framework's pre-record W must have this form, rather than an identification of an already supplied W with the standard cumulant generator.
+- **rationale:** Issue: the load-bearing move is the note's explicit identification of the framework symbol W[J] with the standard cumulant generating functional. Why this blocks: that is a symbol identity/standard-object naming step, not a derivation from the cited axiom content or from an independently closed source-functional theorem. Repair target: provide a retained theorem deriving the source functional form from accepted framework premises or keep this row scoped as a standard-math identification. Claim boundary until fixed: given rho_ref and commuting bounded sources, the displayed W has the usual cumulant-generator content with the stated sign convention.
 - **auditor confidence:** high
 
 ### `q_integer_spectrum_theorem_note_2026-05-02`

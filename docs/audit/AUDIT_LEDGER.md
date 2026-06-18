@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 980 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1478 |
+| unaudited | 1477 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1420 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1800 |
+| `unaudited` | 1799 |
 
 | claim_type | count |
 |---|---:|
@@ -1581,6 +1581,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_derivation_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -7889,6 +7890,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The C3-invariant K-odd Hermitian operator space is exactly span{A}, and A commutes with S, so the A-current/emergent-time route cannot supply a T-odd non-commuting selector for delta=0.  _(class `A`)_
 - **chain closes:** True — The finite circulant algebra closes the claim: K-real C3-invariant monitors are span_R{I,S}, H-Hbar=2 Im(b) A, [S,A]=0, and the K-odd invariant Hermitian subspace is one-dimensional. The cited retained-grade inputs supply only the scoped emergent-time parity and nonnegative clock-generator comparison; no global no-go against C3-breaking T-odd sources is claimed.
 - **rationale:** The runner source genuinely constructs the C3 matrices and checks the advertised finite identities rather than printing constants, and the restricted packet includes no opaque helper dependency. An independent symbolic circulant check confirms the characteristic polynomials, the delta-direction identity, [S,A]=0, and the span{A} K-odd classification. The no-go discipline gate is satisfied because the conclusion is explicitly scoped to the A-current/emergent-time route and leaves C3-breaking T-odd sources open.
+- **auditor confidence:** high
+
+### `g_2_v_bounded_interval_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic bounded-interval evaluation of g_2(v_cand) from the admitted u_0(SU(2)) interval [0.96,0.98], retained b_2=19/6, retained lattice-alpha/tadpole inputs, and the retained_bounded scale/RGE bridge with L=38.44.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-g_2_v_bounded_interval_narrow_theorem_note_2026-05-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the tadpole-improved lattice boundary into the bridged one-loop inverse-alpha law gives 1/alpha_2(v)=16*pi*u_0^2-(b_2/(2*pi))*L, hence g_2(v)=sqrt(4*pi/(16*pi*u_0^2-(b_2/(2*pi))*L)) with reversed endpoints by monotonicity.  _(class `A`)_
+- **chain closes:** True — The substitution, monotonicity, and endpoint arithmetic close once the row-local X1 u_0 interval is accepted. The retained-grade chain still depends on that explicit literature admission, so the result is conditional rather than unbounded clean.
+- **rationale:** Issue: the class-A algebra and exact-rational runner reproduce the stated interval and endpoint reversal. Why this blocks a clean verdict: the interval still depends on the row-local literature admission u_0(SU(2)) in [0.96,0.98], which is not derived or supplied by a retained authority in the restricted packet. Repair target: add a retained SU(2) u_0 interval/value theorem or approved admission-retirement authority. Claim boundary until fixed: the conditional bounded interval follows from X1-X7, but X1 remains imported.
 - **auditor confidence:** high
 
 ### `g_bare_canonical_convention_narrow_theorem_note_2026-05-02`

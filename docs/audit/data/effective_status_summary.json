@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 1729,
-    "decoration": 57,
+    "decoration": 58,
     "meta": 326,
     "no_go": 351,
     "open_gate": 159,
-    "positive_theorem": 759
+    "positive_theorem": 758
   },
   "cycle_examples": [
     [
@@ -54,6 +54,7 @@
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
     "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": 1,
+    "decoration_under_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19": 1,
     "decoration_under_gauge_vacuum_plaquette_first_symmetric_three_sample_minimal_positive_completion_note_2026-04-19": 1,
     "decoration_under_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_note_2026-04-17": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
@@ -82,7 +83,7 @@
     "retained_bounded": 980,
     "retained_no_go": 216,
     "retained_pending_chain": 3,
-    "unaudited": 1474
+    "unaudited": 1473
   },
   "retained_pending_chain_count": 3,
   "retained_pending_chain_examples": [

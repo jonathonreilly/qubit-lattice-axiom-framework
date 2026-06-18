@@ -18,8 +18,8 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 173 |
-| high | `unaudited` | 153 |
-| medium | `unaudited` | 93 |
+| high | `unaudited` | 154 |
+| medium | `unaudited` | 92 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
 | critical | `audited_conditional` | 1 |
@@ -310,6 +310,7 @@ publication tables phrase it.
 | high | `koide_axiom_native_support_batch_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `koide_microscopic_scalar_selector_target_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | high | `koide_q_eq_3delta_identity_note_2026-04-21` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
+| high | `koide_q_minimal_scale_free_selector_note_2026-04-22` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
 | high | `koide_q_op_locality_source_domain_closure_theorem_note_2026-04-29` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `koide_q_reduced_observable_restriction_theorem_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | high | `koide_q_second_order_support_batch_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
@@ -419,7 +420,6 @@ publication tables phrase it.
 | medium | `koide_native_zero_section_nature_review_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
 | medium | `koide_one_scalar_obstruction_triangulation_theorem_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | medium | `koide_q_delta_readout_retention_split_no_go_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, RESULTS_INDEX.md |
-| medium | `koide_q_minimal_scale_free_selector_note_2026-04-22` | `unaudited` | `unaudited` | RESULTS_INDEX.md |
 | medium | `koide_q_no_hidden_source_audit_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `koide_q_normalized_second_order_effective_action_theorem_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `koide_q_second_order_reviewer_stress_test_note_2026-04-22` | `unaudited` | `unaudited` | RESULTS_INDEX.md |

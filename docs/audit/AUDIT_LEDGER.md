@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 923 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1620 |
+| unaudited | 1619 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 9 |
-| ~~audited_conditional~~ | 14 |
+| ~~audited_conditional~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1335 |
-| `audited_conditional` | 14 |
+| `audited_conditional` | 15 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 9 |
-| `unaudited` | 1942 |
+| `unaudited` | 1941 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 501 |
-| `medium` | 883 |
+| `high` | 502 |
+| `medium` | 882 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -1481,6 +1481,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -20294,6 +20295,22 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The unique S_6-permutation-invariant unit vector on the six Q_L color-isospin components is (1,1,1,1,1,1)/sqrt(6), so each component amplitude is 1/sqrt(6).  _(class `A`)_
 - **chain closes:** True — The invariant-vector calculation closes as standard linear algebra once the six-component Q_L carrier and full S_6 democracy are taken as the stated setup. The physical bridge equating this amplitude with the top Yukawa response is explicitly outside the audited load-bearing scope.
 - **rationale:** The repaired note cleanly limits its load-bearing claim to the finite-dimensional S_6-invariant unit-vector lemma. The runner source actually performs symbolic checks of equality constraints, normalization, component amplitudes, and permutation invariance rather than merely printing constants. The note explicitly admits that the response bridge to y_33 remains open and does not use that bridge as a load-bearing step.
+- **auditor confidence:** high
+
+### `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic support for the affine equivalence between the signed one-qubit record and lower-component occupation, plus the neutrality of the lower ray in the retained one-Higgs EW doublet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** epsilon = sigma_z = P_+ - P_- = I - 2P_-, so exp(h epsilon)=exp(h) exp(-2 h P_-) and the signed-record source is the P_- occupation source; in the EW doublet, P_- H_0 = H_0 and Q H_0 = 0.  _(class `A`)_
+- **chain closes:** False — The finite projector and EW neutrality identities close as algebra. The broader carrier-ray bridge still needs a retained same-surface theorem identifying the qubit readout P_- carrier with the EW Higgs doublet P_- carrier as a physical source surface.
+- **rationale:** Issue: The runner verifies the local projector algebra and EW doublet neutrality, but it does not derive an authority that the qubit readout basis and the EW Higgs doublet basis are the same physical carrier surface. Why this blocks: the minimal axiom authority explicitly does not supply gauge group, particle content, or a physical observable bridge, while the Y_T source-action and source-coordinate notes remain support-only for neutral EW/Higgs source identification. Repair target: add or cite a retained same-surface carrier theorem connecting the qubit P_- source ray to the EW neutral Higgs ray. Claim boundary until fixed: epsilon = I - 2P_- and lower-ray EW neutrality remain valid exact support.
+- **open / conditional deps cited:**
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
+  - `YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

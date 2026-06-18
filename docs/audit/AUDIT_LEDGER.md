@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 219 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 994 |
+| **retained_bounded** | 995 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 36 |
-| unaudited | 1436 |
+| unaudited | 1435 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 27 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1441 |
+| `audited_clean` | 1442 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1758 |
+| `unaudited` | 1757 |
 
 | claim_type | count |
 |---|---:|
@@ -1217,6 +1217,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `record_prerecord_instrument_kernel_gate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -17835,6 +17836,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** At t_rec = pi/(4g), U_rec = exp(-i H_rec t_rec) writes orthogonal pointer-conditioned states into each singleton fragment while H_rec(g)=g sigma_z(S) sum_k sigma_x(E_k) commutes with Pi_S.  _(class `A`)_
 - **chain closes:** True — The controlled Hamiltonian is diagonal in the pointer basis, so pointer populations are preserved, and at pi/(4g) the two conditional X-rotated environment states are orthogonal. The runner constructs the finite Pauli operators, unitaries, reductions, conditional fragment states, and mutual informations directly, with no external comparator or upstream note import.
 - **rationale:** The claim is limited to a concrete finite sufficiency example and explicitly excludes the broader objective-record iff pointer-nondemolition equivalence, pointer derivation, dynamics derivation, coupling selection, beta=6, or gauge-coupling claims. The load-bearing step is an exact finite operator-algebra closure from the declared Hamiltonian, pointer observable, initial environment state, and rescaled recording time. The runner source actually computes the commutators, evolved states, reductions, entropies, mutual informations, orthogonality, persistence, and demolition controls rather than printing constants or importing contested premises.
+- **auditor confidence:** high
+
+### `record_prerecord_instrument_kernel_gate_2026-06-06`
+
+- **Note:** [`RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite supplied-context one-qubit algebra: supplied Z/X projective readout contexts plus retained-bounded projective/Lueders authority yield probability vectors over possible future record atoms, distinct from realized one-hot record/count updates.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-record_prerecord_instrument_kernel_gate_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given a one-qubit density matrix, cited canonical projective/Lueders trace authority, and a supplied projective readout context, the production kernel is p_r = Tr(P_r rho), while a realized outcome writes a one-hot post-record atom.  _(class `A`)_
+- **chain closes:** True — The scoped finite algebra closes: the supplied projectors are orthogonal and complete, the cited projective/Lueders authorities support K_r=P_r and trace-normalized branches, and the runner computes p_Z, p_X, and one-hot/count updates exactly. No physical readout-context selection, production generator, IID frequency theorem, or clock/rate normalization is audited as part of this scope.
+- **rationale:** The load-bearing step is an exact algebraic trace calculation over supplied matrices/projectors and retained-bounded upstream projective/Lueders authority, not a tuned numerical match or a definition substitution. The runner source actually constructs rho, Z/X projectors, trace probabilities, selective/nonselective states, and record atoms; the hard-coded True checks are boundary/firewall checks rather than the load-bearing probability algebra. The clean verdict applies only to the stated supplied-context finite gate and does not promote this row into a physical readout, generator, rate, or Born-rule authority beyond the cited bounded inputs.
 - **auditor confidence:** high
 
 ### `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15`

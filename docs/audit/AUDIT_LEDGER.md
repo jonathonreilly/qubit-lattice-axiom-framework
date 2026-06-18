@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 966 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 29 |
-| unaudited | 1510 |
+| unaudited | 1509 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1403 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 26 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 18 |
-| `unaudited` | 1832 |
+| `unaudited` | 1831 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 892 |
-| `leaf` | 1420 |
+| `medium` | 891 |
+| `leaf` | 1421 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1539,6 +1539,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1711,6 +1712,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the free staggered operator with eps D eps = -D, K = eps D gives H(m)^2 = K^2 + m^2 I, and the flat-background trace A[1,1] = Tr[eps exp(-t D^dag D)] vanishes.  _(class `A`)_
 - **chain closes:** True — The runner source explicitly constructs the free staggered D and eps grading and verifies the anticommutation, Hermiticity, H(m)^2 identity, spectral gap away from m=0, and vanishing heat-kernel trace. The note does not claim to close P1' or exhibit a nonzero-index background.
 - **rationale:** The load-bearing internal facts are exact finite-dimensional algebra plus direct first-principles matrix checks, with no hard-coded contested premise and no external comparator. CPT_EXACT is retained-grade for the relevant eps-anticommutation pattern, and the runner independently instantiates the free 4D staggered operator used in this note. The external GW-demolition citations are confined to removing a necessity misstatement and are not used to import a nonzero-index construction into the framework chain.
+- **auditor confidence:** high
+
+### `accessible_prediction_note`
+
+- **Note:** [`ACCESSIBLE_PREDICTION_NOTE.md`](../../docs/ACCESSIBLE_PREDICTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional prediction scenarios mapping explicit premises P1-P6 to five accessible signatures, without auditing derivation of those premises from retained primitives.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-accessible_prediction_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If the named premises P1-P6 are granted as inputs, the five scenario conclusions and the lattice-spacing observation follow algebraically; the note does not derive P1-P6 from framework primitives.  _(class `A`)_
+- **chain closes:** False — The conditional algebra is only over assumed premises, but the restricted packet does not close P1-P6. ACTION_NORMALIZATION_NOTE is retained as a no-go and explicitly leaves the scalar-potential/source-normalization bridge open; P2-P6 and P3 are also unproved inputs here.
+- **rationale:** Issue: The note's conclusions require P1-P6, including rho=|psi|^2 Poisson sourcing, branch-level entangling dynamics, the Born-gravity cross-link, and ansatz validity ranges. Why this blocks: the cited normalization authority does not derive the needed bridge and the runner evaluates formulas after assuming the contested premises rather than computing them from retained primitives. Repair target: retained bridge theorem(s) for P1/P2/P3 and P4-P6 validity. Claim boundary until fixed: conditional scenarios only.
+- **open / conditional deps cited:**
+  - `ACTION_NORMALIZATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `acphilambda_hw_complementation_equivariance_support_note_2026-06-09`

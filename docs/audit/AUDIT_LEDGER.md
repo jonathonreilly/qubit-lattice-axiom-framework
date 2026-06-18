@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 946 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 19 |
-| unaudited | 1570 |
+| unaudited | 1569 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 7 |
-| ~~audited_renaming~~ | 13 |
+| ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 22 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -66,8 +66,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 7 |
-| `audited_renaming` | 13 |
-| `unaudited` | 1892 |
+| `audited_renaming` | 14 |
+| `unaudited` | 1891 |
 
 | claim_type | count |
 |---|---:|
@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 501 |
-| `medium` | 883 |
+| `high` | 502 |
+| `medium` | 882 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -1615,6 +1615,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11688,6 +11689,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the ordered 3D dense spent-delay family, the live sweep shows z = 2 through 6 remain attractive, z = 7 is mixed/signal-free, detector-window widening preserves z = 6's sign, and wider slit thresholds do not extend the window further.  _(class `C`)_
 - **chain closes:** True — The live script reproduces the source table and decision on the same declared family, action, geometry, slit threshold, detector-window scan, and z range; the source keeps the conclusion bounded and does not promote an all-distance or new-action theorem.
 - **rationale:** The source claim is a bounded computational extension, and the live artifact reproduces the canonical z sweep, detector-window sensitivity rows, slit-threshold spot checks, Born companion value, MI/decoherence values, and final bounded-extension decision. The conclusion is limited to the ordered 3D dense spent-delay family with the declared geometry and explicitly excludes all-distance, 4D, NN, and action-law claims, so the runner checks the load-bearing step without hidden promotion. Residual risk is only ordinary finite-sweep scope: this clean audit does not say anything beyond the tested family and parameter grid.
+- **auditor confidence:** high
+
+### `lattice_3d_inverse_square_kernel_helper_note_2026-04-04`
+
+- **Note:** [`LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the helper-wrapper/interface claim: the module-top width-6 constants and named helper functions in scripts/lattice_3d_inverse_square_kernel.py, not any derivation of an inverse-square kernel, asymptotic tail law, or downstream theorem.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-lattice_3d_inverse_square_kernel_helper_note_2026-04-04-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The wrapper provides citeable one-hop authority for the width-6 comparator constants and helper function names in scripts/lattice_3d_inverse_square_kernel.py.  _(class `F`)_
+- **chain closes:** True — Within the stated wrapper scope, the runner source declares PHYS_L, PHYS_W, PHYS_CONNECTIVITY, MASS_Z_VALUES and defines build_family, barrier_metrics, no_barrier_distance, and fit_power. The chain closes only as an interface/labeling wrapper, not as a physics derivation from axioms.
+- **rationale:** Issue: the load-bearing move is a wrapper/labeling step identifying module constants and helper names as the width-6 comparator interface. Why this blocks: the code stipulates the inverse-square transport branch as w/(L*L) and computes finite diagnostics, but no cited authority or runner proof derives that kernel or any tail theorem from axioms. Repair target: a separate retained derivation or implementation-fidelity theorem would be needed for physics closure. Claim boundary until fixed: the note may be used as a module-interface wrapper only.
 - **auditor confidence:** high
 
 ### `lattice_3d_l2_numpy_h0125_audit_note`

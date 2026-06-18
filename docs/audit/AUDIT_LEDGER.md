@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1000 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1424 |
+| unaudited | 1423 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1450 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1746 |
+| `unaudited` | 1745 |
 
 | claim_type | count |
 |---|---:|
@@ -1644,6 +1644,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -21287,6 +21288,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the verbatim license every licensed closed-loop support collapses to a single plaquette, and under the pairwise-proximity weakening no licensed plaquette product can contain a complementary plane pair, so no cross-plane F tilde F monomial can appear.  _(class `A`)_
 - **chain closes:** True — The finite-combinatorial and symbolic steps close from the retained_bounded license and per-plaquette cross-plane authorities. The theorem remains explicitly conditional on those local support classes and does not derive the license, dynamics, winding sectors, or theta closure.
 - **rationale:** The runner does real finite enumeration and symbolic coefficient checks rather than merely printing expected verdicts, and the two dependency-pin checks are limited to verifying the consumed upstream text. Independently, the verbatim-license distance-2 argument confines closed supports to the finite plaquette classification, while the complementary-plane W exclusion follows from projecting one plaquette to a unit square and the complementary plaquette to one integer point, with no L1-radius-1 point covering all four corners. The coefficient criterion is also algebraic: a product of one-plane factors has a cross-plane mixed coefficient only when both complementary plane variables occur. The source states the remaining chain-connected and global-winding complements, so the audited scope is narrow rather than overclosed.
+- **auditor confidence:** high
+
+### `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Supplied-boundary theorem: in a supplied determinant readout context satisfying Record additivity/orbit constancy and the supplied Gaussian/per-plaquette action class, registrable determinant readouts have no phase component.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record additivity over disjoint records, applied to multiplicative determinant union data, forces F(zw)=F(z)+F(w); the resulting additive phase component is odd while K/CPT orbit constancy makes it even, hence g==0.  _(class `A`)_
+- **chain closes:** False — The determinant-readout algebra closes once the supplied context is granted. The packet does not derive W2 physical registrability or the physical action-level reduction to the theta_eff arg det(M_u M_d) datum.
+- **rationale:** Issue: the algebraic forcing and erasure step is sound within the supplied determinant-readout model, and the runner computes finite nullspaces and hostile witnesses rather than only printing constants. Why this blocks: the physical W2 registrability identification and the action-level reduction from the physical fermion determinant to the theta_eff arg det(M_u M_d) datum are explicitly supplied, not derived by cited retained authority. Repair target: retain those bridge theorems or split this row so it claims only the formal supplied-context determinant-readout erasure. Claim boundary until fixed: safe as a supplied-context algebraic exhaustion statement, not as a retained physical bridge excluding all mass-orientation action data.
+- **open / conditional deps cited:**
+  - `THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`
 - **auditor confidence:** high
 
 ### `third_grown_family_boundary_note`

@@ -1,0 +1,30 @@
+loop_slug: frw-c2-entropy-bookkeeping-20260618
+objective: "Narrow the FRW C2 residual by proving finite source-free entropy and g_*S step bookkeeping."
+target_status: bounded-support
+base_branch: codex/frw-c3-fluid-lift-20260618
+base_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4401
+base_commit: a64d1e01a
+branch: codex/frw-c2-entropy-bookkeeping-20260618
+worktree: /private/tmp/frw-c2-entropy-bookkeeping-20260618
+cycle_count: 1
+active_route: "constructive finite bookkeeping theorem plus exact runner"
+hard_residual: "The real leptogenesis-to-CMB no-injection era and g_*S(T) inventory remain open; C1 and C3 real species allocation remain open."
+files_touched:
+  - docs/FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md
+  - scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py
+  - logs/runner-cache/frontier_frw_c2_entropy_bookkeeping_2026_06_18.txt
+  - docs/FRW_ADIABATIC_EXPANSION_COSMOLOGICAL_BACKDROP_OPEN_GATE_NOTE_2026-05-28.md
+  - scripts/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.py
+  - logs/runner-cache/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.txt
+open_imports:
+  - "C1 cosmological principle and actual large-scale homogeneity/isotropy"
+  - "physical no-entropy-injection claim for the actual leptogenesis-to-CMB window"
+  - "source authority for the g_*S(T) inventory"
+  - "real species allocation of cosmological radiation/matter into ideal kinetic components"
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_loop_disposition: "not_run_user_delegated_to_reviewer"
+pr_status: pending
+pr_url: pending
+next_exact_action: "Open stacked ready PR against codex/frw-c3-fluid-lift-20260618."
+stop_condition: "Coherent stacked source-side science block packaged as PR; audit/review/landing are delegated."

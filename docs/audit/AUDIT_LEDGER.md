@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1003 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1417 |
+| unaudited | 1416 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 29 |
@@ -63,22 +63,23 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_three_generation_observable_theorem_note` | 1 |
 | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
+| `decoration_under_yt_ew_color_projection_theorem` | 1 |
 
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1453 |
 | `audited_conditional` | 61 |
-| `audited_decoration` | 58 |
+| `audited_decoration` | 59 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1739 |
+| `unaudited` | 1738 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1728 |
-| `decoration` | 60 |
+| `bounded_theorem` | 1727 |
+| `decoration` | 61 |
 | `meta` | 329 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
@@ -88,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 569 |
 | `high` | 500 |
-| `medium` | 886 |
-| `leaf` | 1426 |
+| `medium` | 885 |
+| `leaf` | 1427 |
 
 - **Retained pending chain closure:** 3
 - **Citation cycles detected:** 7
@@ -1710,6 +1711,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | cross_family | codex-gpt-5.5 | A | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` |
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
+| `yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_yt_ew_color_projection_theorem` | cross_family | codex-gpt-5.5 | A | `yt_ew_color_projection_theorem` |
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -23193,6 +23195,20 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The packet supplies the algebraic fraction F_adj = 8/9 but does not contain a retained selector promoting it to exact physical EW matching rule M, so exact physical R_conn = 8/9 is not derived by this packet.  _(class `A`)_
 - **chain closes:** True — The cited retained no-go parent supplies the open selector boundary, and the cited decoration authority supplies only the finite-dimensional SU(3) channel fraction. The source note does not claim an absolute finite-N_c impossibility or an exhaustive no-go over future selectors.
 - **rationale:** The restricted packet cleanly supports the narrowed no-go boundary: F_adj = (N_c^2 - 1) / N_c^2 gives 8/9 at N_c = 3, and no selector deriving physical R_conn = 8/9 is supplied. Independent formula checks of the kappa-family, Fierz normalization, channel dimensions, and listed specializations found no coefficient or normalization defect. The no-go discipline gate passes because the note explicitly limits itself to current-packet absence, leaves future non-perturbative selector routes open, and avoids absolute no-go rhetoric.
+- **auditor confidence:** high
+
+### `yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25`
+
+- **Note:** [`YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md`](../../docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Common nonzero EW-coupling rescaling preserves the SM Weinberg-angle ratio; no kappa_EW selector, 9/8 specialization, or individual-coupling projection is audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_yt_ew_color_projection_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the same nonzero multiplicative EW-coupling factor into both g_Y and g_2 makes the common squared factor cancel in g_Y^2/(g_Y^2+g_2^2).  _(class `A`)_
+- **chain closes:** True — The algebra closes: for any common nonzero factor c, (c g_Y)^2/((c g_Y)^2+(c g_2)^2)=g_Y^2/(g_Y^2+g_2^2). The cited Higgs note supplies the SM ratio and the parent supplies the universal rescaling/weak-angle-preservation context; no kappa_EW value is selected.
+- **rationale:** The load-bearing step is a class-A algebraic identity, and the runner genuinely symbolically checks that the common-factor difference simplifies to zero. There is no external comparator, tuned numerical input, or first-principles compute. Because the result is only an algebraic corollary of the parent kappa-family universality statement plus the standard SM ratio definition, it is decoration rather than an independent bounded theorem.
+- **decoration parent:** `yt_ew_color_projection_theorem`
 - **auditor confidence:** high
 
 ### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`

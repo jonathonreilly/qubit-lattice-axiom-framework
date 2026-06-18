@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1728,
-    "decoration": 60,
+    "bounded_theorem": 1727,
+    "decoration": 61,
     "meta": 329,
     "no_go": 351,
     "open_gate": 159,
@@ -79,13 +79,14 @@
     "decoration_under_three_generation_observable_theorem_note": 1,
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
+    "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 322,
     "open_gate": 37,
     "retained": 220,
     "retained_bounded": 1003,
     "retained_no_go": 218,
     "retained_pending_chain": 3,
-    "unaudited": 1417
+    "unaudited": 1416
   },
   "retained_pending_chain_count": 3,
   "retained_pending_chain_examples": [

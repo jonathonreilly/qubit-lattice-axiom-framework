@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 219 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 985 |
+| **retained_bounded** | 986 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 31 |
-| unaudited | 1464 |
+| unaudited | 1463 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 20 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1427 |
+| `audited_clean` | 1428 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1786 |
+| `unaudited` | 1785 |
 
 | claim_type | count |
 |---|---:|
@@ -744,6 +744,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higher_symmetry_joint_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `holographic_probe_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -10791,6 +10792,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For the listed checked charts, the runner-computed real Schur H_kd_after vanishes exactly when the independently counted misaligned survivors vanish, and exactly when all chart periods are even.  _(class `C`)_
 - **chain closes:** True — The runner source actually constructs the finite Hamiltonian, performs the two Schur complements, truncates by even periodic d2, measures H_kd_after, and separately enumerates the parity misalignment count. Within the explicitly bounded checked-chart scope, no cited upstream or external bridge is needed.
 - **rationale:** The claim is scoped to a fixed finite list of checked charts and a fixed numerical convention, not to an all-period or continuum theorem. The runner computes the Schur quantities from the stated finite Hamiltonian and computes the parity diagnostic separately, so the three-way coincidence is not merely a symbol renaming or printed constant. The frozen anchor values are used as regression gates, but the load-bearing chart classification is recomputed within the packet and no external comparator or open dependency is imported.
+- **auditor confidence:** high
+
+### `hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`HKD_ENTRY_SUM_FULL_L_CLOSURE_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/HKD_ENTRY_SUM_FULL_L_CLOSURE_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the d=3 step-2 chart family K-periods=(L/2,L,L/2), the combinatorial kept-decimated support existence criterion is audited for even L >= 8, with dense Schur/H_kd anchor agreement only for L in {8,10,12,14,16,18}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since d2 = sum_i delta_i^2 = sum_i delta_i mod 2, a misaligned survivor exists exactly when some chart period is odd; for (L/2,L,L/2) with even L this is exactly L != 0 mod 4.  _(class `A`)_
+- **chain closes:** True — The retained cited period-parity lemma gives parity preservation iff all periods are even, and this family has all periods even exactly when L = 0 mod 4. The runner source genuinely computes the dense finite anchors and exact combinatorial support counts; frozen values are used as regression gates, not as the sole computation.
+- **rationale:** The full-L part is an algebraic parity closure over a retained upstream lemma, and the bounded dense-anchor bridge is computed self-contained from the stated Hamiltonian/Schur construction for the finite anchor grid. No external comparator, tuned empirical value, open bridge, or non-retained dependency is used. The theorem’s scope is correctly bounded: it does not claim dense Hamiltonian magnitude closure beyond the listed anchors.
 - **auditor confidence:** high
 
 ### `hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26`

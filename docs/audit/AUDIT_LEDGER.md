@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 216 |
 | **retained_no_go** | 214 |
-| **retained_bounded** | 950 |
+| **retained_bounded** | 951 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 22 |
-| unaudited | 1556 |
+| unaudited | 1555 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 15 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1377 |
+| `audited_clean` | 1378 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 15 |
-| `unaudited` | 1878 |
+| `unaudited` | 1877 |
 
 | claim_type | count |
 |---|---:|
@@ -1124,6 +1124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_c3_a1_source_domain_bridge_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_c3_p1_positive_parent_readout_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | B | - |
+| `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -15826,6 +15827,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The three live endpoint ratios are nearest to the small rational candidates {5/6, -2, -8/9}, which then multiply to gamma_E(center)/gamma_E(shell)=15/8.  _(class `G`)_
 - **chain closes:** False — The algebra closes once the three rational legs are granted. The derivation does not close because the load-bearing identification of those legs, especially gamma_T(center)/gamma_E(center)=-8/9, is a nearest-rational match to live endpoint data rather than a first-principles Route-2 derivation.
 - **rationale:** The runner computes live endpoint ratios, scans a bounded low-rational grammar, and verifies that the nearest candidates are {5/6, -2, -8/9}; that is class G numerical matching, not a derivation from retained tensor machinery. The downstream multiplication to 15/8, r_E=21/4, and D_E=21/8 is exact conditional algebra. The cited retained no-go explicitly says the third leg -8/9 is equivalent to the missing E-center readout primitive and is not forced by the restricted Route-2 carrier class.
+- **auditor confidence:** high
+
+### `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28`
+
+- **Note:** [`QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded representation-theoretic no-go on the supplied retained-bounded hw=1 S_3 permutation triplet: S_3-equivariant Hermitian Ward endomorphisms have at most singlet/doublet splitting, and generation-basis diagonal equivariant readouts are scalar.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If W is S_3-equivariant on the hw=1 generation triplet V ~= A_1 + E, then W lies in the commutant of the three-point permutation representation, W = a I + b J, giving one A_1 eigenvalue and one doubly degenerate E eigenvalue.  _(class `A`)_
+- **chain closes:** True — Given the supplied hw=1 carrier V ~= A_1 + E and standard finite-group commutant algebra, the centralizer of the transitive S_3 three-point permutation representation is span{I,J}, so the E plane is necessarily degenerate. The conclusion is explicitly bounded to S_3-equivariant Ward endomorphisms and does not exclude added readout or symmetry-breaking inputs.
+- **rationale:** The load-bearing step is an exact algebraic centralizer calculation over retained-grade bounded inputs, not a numerical match, definition, or external comparator. The runner source genuinely constructs the S_3 matrices, computes characters, commutant nullity, eigenvalue degeneracy, and boundary firewalls; it does not merely print constants. The clean verdict is for the narrow bounded no-go only: routes using C_3 orientation, hidden projectors, physical mass input, CKM singular values, or an additional readout bridge are outside the audited claim scope and are left open.
 - **auditor confidence:** high
 
 ### `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28`

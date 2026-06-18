@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 216 |
+| **retained** | 217 |
 | **retained_no_go** | 214 |
 | **retained_bounded** | 954 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 22 |
-| unaudited | 1549 |
+| unaudited | 1548 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -61,13 +61,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1381 |
+| `audited_clean` | 1382 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1871 |
+| `unaudited` | 1870 |
 
 | claim_type | count |
 |---|---:|
@@ -657,6 +657,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_clean_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_full_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_law_cleanup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9114,6 +9115,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The primary-runner cache reports the raw per-b t-values on b ∈ {2,4,6,8,10,12} and the runner's own statement that there are not enough falling-tail points for a review-safe power-law fit.  _(class `C`)_
 - **chain closes:** True — The runner stdout matches the note's quoted rows and no-tail-fit statement, and the included source computes the rows from generated graphs rather than printing fixed expected constants. The narrowed claim does not promote significance or a force-law exponent.
 - **rationale:** Within the restricted packet, the load-bearing claim is only a descriptive cached-runner result: raw per-b t-values plus absence of enough falling-tail points for a review-safe fit. The runner source performs a seed sweep, propagation, field computation, per-seed aggregation, mean/SE/t calculation, and tail-count check; the contested numerical rows are not hard-coded. Because the note explicitly withdraws significance, peak-signal, and power-law claims, the presented bounded conclusion follows from the provided runner cache and source.
+- **auditor confidence:** high
+
+### `gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07`
+
+- **Note:** [`GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md`](../../docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the lattice-unit leading asymptotic correction to the nearest-neighbor Z^3 graph-Laplacian Green function, and only its bounded weak-field gravity use through the cited retained-bounded parent.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The (1/12) sum_mu k_mu^4/k^4 correction to 1/lambda(k) Fourier-transforms to the 1/r^3 cubic harmonic, with isotropic part only a contact term, giving [5/(32 pi)] K4(nhat)/r^3.  _(class `C`)_
+- **chain closes:** True — The correction follows from the exact Z^3 graph-Laplacian dispersion and heat-kernel/Bessel Green function, with the cited retained-bounded Green normalization supplying the 1/(4 pi r) leading term. No empirical comparator, tuned scale, or extra physical bridge is needed for the lattice-unit asymptotic claim.
+- **rationale:** The load-bearing step is a first-principles computation from the framework lattice operator: expanding lambda(k) gives the quartic correction, and the Fourier-transform normalization yields +5/(32 pi) K4/r^3 away from the contact term. The runner evaluates the exact Bessel resolvent and checks residual power, cubic-harmonic direction structure, coefficient, zero spherical average, and wrong-coefficient rejection without importing an external value. The cited authorities are retained_bounded and are used within their declared lattice-unit or bounded weak-field scope.
 - **auditor confidence:** high
 
 ### `gravity_observable_hierarchy_note`

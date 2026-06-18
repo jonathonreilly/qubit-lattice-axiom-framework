@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3381 |
-| Applied audit verdicts | 1617 |
+| Applied audit verdicts | 1618 |
 | Retained-grade rows, including boxed decorations | 1485 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 993 |
 | Boxed decorations under retained parents | 56 |
-| Open gates | 35 |
-| Unaudited rows | 1440 |
+| Open gates | 36 |
+| Unaudited rows | 1439 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 58 |
 | Audited renaming rows | 25 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1442 |
-| Ready rows | 26 |
+| Total pending rows | 1441 |
+| Ready rows | 25 |
 | Cycle-break targets | 8 |
 | Critical pending | 307 |
 | High pending | 265 |
 | Medium pending | 413 |
-| Leaf pending | 457 |
+| Leaf pending | 456 |
 
 Next ready rows by queue order:
 
 - [`cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02`](../../docs/CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
-- [`qnm_hardening_feasibility_note`](../../docs/QNM_HARDENING_FEASIBILITY_NOTE.md) - medium; unaudited
 - [`qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22`](../../docs/QUBIT_K1_DERIVATION_FROM_MINIMALITY_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`record_markov_generator_premise_classifier_2026-06-06`](../../docs/RECORD_MARKOV_GENERATOR_PREMISE_CLASSIFIER_2026-06-06.md) - medium; unaudited
 - [`record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15`](../../docs/RECORD_POINTER_CONTROLLED_COUPLING_FINITE_EXAMPLE_BOUNDED_THEOREM_NOTE_2026-06-15.md) - medium; unaudited
 - [`record_prerecord_instrument_kernel_gate_2026-06-06`](../../docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md) - medium; unaudited
+- [`residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13`](../../docs/RESIDUAL_D_POWER_DIVERGENT_CS_REGENERATION_B4_NOTE_2026-06-13.md) - medium; unaudited
 - [`ai_methodology.raw.canonical_framing_paragraph`](../../docs/ai_methodology/raw/canonical_framing_paragraph.md) - medium; unaudited
-- [`residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13`](../../docs/RESIDUAL_D_POWER_DIVERGENT_CS_REGENERATION_B4_NOTE_2026-06-13.md) - leaf; unaudited
+- [`rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`](../../docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

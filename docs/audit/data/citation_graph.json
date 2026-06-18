@@ -52270,10 +52270,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "qnm_hardening_feasibility_note"
     },
     {
@@ -52290,11 +52286,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ai_methodology.raw.canonical_framing_paragraph"
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
+      "to": "residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13"
     },
     {
       "from": "repo.repo_organization",
@@ -100668,16 +100668,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02",
-        "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
         "qnm_hardening_feasibility_note",
         "qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22",
         "record_markov_generator_premise_classifier_2026-06-06",
         "record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15",
+        "record_prerecord_instrument_kernel_gate_2026-06-06",
         "ai_methodology.raw.canonical_framing_paragraph",
-        "record_prerecord_instrument_kernel_gate_2026-06-06"
+        "residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0537ee84dad2df2bcef93e828f045794d2d9f17f4668813398dadcbffc1c798f",
+      "note_hash": "6987aea344a99779b44a7c4f4e91bc7831f26331f7b587d6b398d0bd743561ef",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

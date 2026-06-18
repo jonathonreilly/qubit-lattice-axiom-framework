@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 217 |
 | **retained_bounded** | 993 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 35 |
-| unaudited | 1440 |
+| open_gate | 36 |
+| unaudited | 1439 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 25 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1439 |
+| `audited_clean` | 1440 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 25 |
-| `unaudited` | 1762 |
+| `unaudited` | 1761 |
 
 | claim_type | count |
 |---|---:|
@@ -1175,6 +1175,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `quantum_horizon_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_bicac_endpoint_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -17189,6 +17190,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** It does not promote a quasi-normal mode result; it only freezes the control program that would be required before any QNM-style escape-spectrum claim could be reviewed safely.  _(class `A`)_
 - **chain closes:** True — The note's claim is a scope restriction and control checklist, not a positive spectral theorem. It explicitly denies a QNM/escape-spectrum result and therefore closes as a bounded control-program note without needing a numerical runner.
 - **rationale:** The source note is audit-clean only for its narrow boundary: QNM remains a hardening target and no quasi-normal-mode or escape-spectrum result is asserted. It does not attempt to derive or validate any spectral observable, and its listed five controls are stated as future prerequisites rather than achieved results. Residual risk is that this clean verdict must not be reused as evidence for a positive QNM lane; it ratifies only the bounded control-program framing.
+- **auditor confidence:** high
+
+### `qnm_hardening_feasibility_note`
+
+- **Note:** [`QNM_HARDENING_FEASIBILITY_NOTE.md`](../../docs/QNM_HARDENING_FEASIBILITY_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Bounded open-gate audit of the reduced QNM hardening certificate: on the tested grids and controls, no stable sub-Nyquist self-coupled absorption minimum is certified, so the packet does not support a positive QNM spectral law.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-qnm_hardening_feasibility_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The 2026-05-26 runner finds that every apparent self-coupled absorption minimum in the tested cases lies at or beyond 0.95*pi/h, so the sub-Nyquist peak set is empty under the stated controls.  _(class `C`)_
+- **chain closes:** True — The primary runner constructively computes relaxed fields, frozen-field spectra, peak sets, Sorkin I3, Nyquist cuts, and stability variants using the included qnm_scaling helper rather than importing the contested conclusion. The cited authorities are retained-grade for the limited control context used here, and no extra bridge is needed for the bounded negative/open-gate claim.
+- **rationale:** The code path instantiates the finite QNM lattice/spectrum calculation, scans the tested k windows, computes absorption minima, applies the declared 0.95*pi/h sub-Nyquist exclusion, and asserts empty sub-Nyquist sets together with residual and fixed-field Born bounds. The helper source is included and does not hard-code the claimed empty sub-Nyquist result; it supplies the propagation, self-field, spectrum, and peak-finding routines used by the primary runner. The source note is correctly firewalled as a bounded negative/open-gate result and explicitly forbids using the packet as a positive QNM law. Residual risk is finite-surface scope only, not an unclosed dependency.
 - **auditor confidence:** high
 
 ### `quantum_horizon_note`

@@ -1,0 +1,22 @@
+loop_slug: flavor-holonomy-character-kernel-20260618
+goal: "Retire the imported character-suppression math step in the flavor holonomy no-go by proving it on the retained finite link surface."
+target_status: bounded-support
+cycle_count: 1
+active_route: "framework-native finite character kernel"
+hard_residual: "The physical sector-to-representation/readout bridge tying leptons to the trivial representation and quarks to nontrivial colour representations remains open."
+files_touched:
+  - docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md
+  - docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md
+  - scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py
+  - logs/runner-cache/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.txt
+  - .claude/science/physics-loops/flavor-holonomy-character-kernel-20260618/
+open_imports:
+  - "Physical sector-to-representation/readout bridge: colourless lepton -> trivial rep, coloured quark -> nontrivial colour rep."
+  - "Observed sector ordering remains a comparator anchor for the parent no-go, not a derivation input."
+  - "Gauge dynamics/background-link distribution/couplings remain outside this kernel."
+trace_gate_classification: upstream_support
+trace_gate_reachability: supports
+review_loop_disposition: delegated
+pr_status: pending
+next_exact_action: "Commit, push, open ready PR, then record the URL in HANDOFF.md and PR_BACKLOG.md."
+stop_condition: "This block stops after PR handoff unless a distinct high-value audit unlock is started."

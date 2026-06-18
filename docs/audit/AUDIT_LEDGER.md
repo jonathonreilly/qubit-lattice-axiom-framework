@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 990 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 35 |
-| unaudited | 1451 |
+| unaudited | 1450 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 11 |
 | ~~audited_renaming~~ | 20 |
@@ -52,6 +52,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | 1 |
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
+| `decoration_under_mirror_mutual_information_chokepoint_note` | 1 |
 | `decoration_under_moving_source_retarded_portability_note` | 1 |
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_plaquette_self_consistency_note` | 1 |
@@ -67,20 +68,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1436 |
 | `audited_conditional` | 56 |
-| `audited_decoration` | 56 |
+| `audited_decoration` | 57 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 11 |
 | `audited_renaming` | 20 |
-| `unaudited` | 1773 |
+| `unaudited` | 1772 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1729 |
-| `decoration` | 58 |
+| `decoration` | 59 |
 | `meta` | 326 |
 | `no_go` | 351 |
 | `open_gate` | 159 |
-| `positive_theorem` | 758 |
+| `positive_theorem` | 757 |
 
 | criticality | count |
 |---|---:|
@@ -1664,6 +1665,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `mirror_mutual_information_note` | decoration | ~~audited_decoration~~ | `decoration_under_mirror_mutual_information_chokepoint_note` | cross_family | codex-gpt-5.5 | A | `mirror_mutual_information_chokepoint_note` |
 | `momentum_charge_commute_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` |
@@ -14459,6 +14461,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the single parameter card npl_half=60, connect_radius=5.0, k=5.0, layer2_prob=0.0, 16 seeds, mirror MI exceeds matched random MI at N=40, 60, 80 and falls below matched random MI at N=100; the power-law fits are descriptive only.  _(class `C`)_
 - **chain closes:** True — The provided runner source generates the mirror and matched random chokepoint DAGs, propagates amplitudes, computes MI and purity over the declared seeds, and the cached output matches the retained rows. The cited dense-card authority is retained_bounded, and the source claim is explicitly finite rather than an asymptotic family theorem.
 - **rationale:** The load-bearing MI table is produced by an actual first-principles runner path using the supplied graph generators and propagator, not by hard-coded expected values or a cross-note copied table. Both cited one-hop authorities in the restricted packet are retained_bounded. Because the note narrows the conclusion to the finite N=40/60/80 advantage and explicit N=100 reversal, the bounded claim follows without importing an unclosed asymptotic law.
+- **auditor confidence:** high
+
+### `mirror_mutual_information_note`
+
+- **Note:** [`MIRROR_MUTUAL_INFORMATION_NOTE.md`](../../docs/MIRROR_MUTUAL_INFORMATION_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited that docs/MIRROR_MUTUAL_INFORMATION_NOTE.md is only a routing/decorative pointer to the canonical mirror-MI artifacts, not an independent mirror-MI theorem.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_mirror_mutual_information_chokepoint_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-mirror_mutual_information_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** This file may be cited only to route readers to the canonical mirror-MI artifact and may not be cited as the mirror-MI theorem or as independent scientific authority.  _(class `A`)_
+- **chain closes:** True — The source note explicitly disclaims independent theorem status and routes the substantive MI computation to the cited chokepoint/canonical artifacts. The cited parent authorities are retained_bounded in the packet, so the pointer closes only as decoration.
+- **rationale:** Issue: the current note contains no independent mirror-MI theorem; it is a routing alias. Why this blocks: any theorem-level citation must use the retained_bounded chokepoint or canonical-family authorities, while this file only points to them. Repair target: none if pointer status is intended; otherwise the source would need a new, direct theorem statement and retained dependency chain. Claim boundary until fixed: decorative routing alias under the mirror-MI chokepoint parent.
+- **decoration parent:** `mirror_mutual_information_chokepoint_note`
 - **auditor confidence:** high
 
 ### `mirror_vs_central_head_to_head_note`

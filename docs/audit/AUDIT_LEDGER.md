@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 928 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 15 |
-| unaudited | 1608 |
+| unaudited | 1607 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 10 |
-| ~~audited_conditional~~ | 17 |
+| ~~audited_conditional~~ | 18 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 4 |
@@ -60,12 +60,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1342 |
-| `audited_conditional` | 17 |
+| `audited_conditional` | 18 |
 | `audited_decoration` | 49 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 10 |
-| `unaudited` | 1930 |
+| `unaudited` | 1929 |
 
 | claim_type | count |
 |---|---:|
@@ -79,8 +79,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 566 |
-| `high` | 502 |
-| `medium` | 882 |
+| `high` | 501 |
+| `medium` | 883 |
 | `leaf` | 1431 |
 
 - **Retained pending chain closure:** 3
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1047 | 65.53 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1400 | 60.95 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 888 | 59.30 | `audited_conditional` | ~~audited_conditional~~ |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1011 | 52.98 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1012 | 52.98 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1026 | 49.00 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1119 | 46.63 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 921 | 44.35 | `unaudited` | unaudited |
@@ -1487,6 +1487,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_mru_demotion_note_2026-04-20` | meta | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15614,6 +15615,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the stated finite S+E model and quantum-Darwinism record convention, persistent pointer records require pointer non-demolition [H_int, Pi_S] = 0, and the nonzero local controlled-copy Hamiltonian g sigma_z(S) tensor sum_k sigma_x(E_k) at t = pi/(4g) suffices to form redundant objective records.  _(class `C`)_
 - **chain closes:** True — Within the explicitly bounded finite model, the Heisenberg commutator criterion and the controlled-copy record calculation close. The runner constructs the Hilbert-space operators, unitaries, partial traces, pointer Holevo information, redundancy, counterexamples, and transfer commutators rather than hard-coding a target result.
 - **rationale:** The note does not claim to derive the Darwinism record bridge, physical dynamics, beta value, or OS record channel; those are either explicit bounded inputs or excluded. The load-bearing finite-model claims are directly checked by dense matrix computation and elementary commutator algebra, with QND-alone counterexamples preventing the main overclaim. The retained-bounded companion and accepted minimal-axiom premise introduce no open dependency downgrade for this scoped bounded theorem.
+- **auditor confidence:** high
+
+### `record_formation_to_kraus_isometry_bridge_2026-06-06`
+
+- **Note:** [`RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md`](../../docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite projective pointer model with supplied stable pointer projectors, orthonormal record labels, and an ideal pointer-label write; no general dynamics-to-isometry or Born-probability derivation was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-record_formation_to_kraus_isometry_bridge_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** By the projector resolution and orthonormal record labels, W^dagger W = sum_{r,s} P_r^dagger P_s <r|s> = sum_r P_r = I, and contracting with <r| gives K_r = P_r.  _(class `A`)_
+- **chain closes:** True — Within the stated finite projective write model, the projector identity proves the normalized isometry, projective Kraus blocks, CPTP dephasing map, and repeat-read branch stability. The closure is conditional on the supplied ideal write/register premises and does not derive those premises from arbitrary persistent dynamics.
+- **rationale:** The load-bearing step is genuine finite-dimensional projector algebra, and the runner actually constructs the projectors, W, extracted blocks, Choi positivity, branch normalization, and repeat-read stability. That supports the class A algebraic closure for the supplied projective record-write model. The restricted packet does not derive the blank record register plus ideal pointer-label write from the pointer-non-demolition dynamics, and the upstream Kraus authority explicitly leaves the general W bridge open. The result is therefore conditional rather than clean.
+- **open / conditional deps cited:**
+  - `RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`
+  - `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`
 - **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`

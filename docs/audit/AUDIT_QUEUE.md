@@ -15,14 +15,14 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | unaudited | critical | 652 | 11.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_coarse_grained_exterior_law.py` |
+| 1 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | audit_in_progress | critical | 652 | 11.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_coarse_grained_exterior_law.py` |
 | 2 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | bounded_theorem | unaudited | critical | 497 | 13.96 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py` |
 | 3 | `axiom_first_kms_condition_theorem_note_2026-05-01` | positive_theorem | unaudited | critical | 373 | 13.05 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_kms_condition_check.py` |
 | 4 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 352 | 17.46 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/su3_casimir_fundamental_check.py` |
 | 5 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | unaudited | critical | 321 | 13.83 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
 | 6 | `cl3_quark_antiquark_color_singlet_theorem_note_2026-05-02` | decoration | unaudited | critical | 308 | 10.77 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/cl3_quark_antiquark_color_singlet_check.py` |
 | 7 | `poisson_exhaustive_uniqueness_note` | bounded_theorem | unaudited | critical | 292 | 14.20 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_poisson_exhaustive_uniqueness.py` |
-| 8 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | unaudited | critical | 260 | 17.03 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
+| 8 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | unaudited | critical | 261 | 17.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
 | 9 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | unaudited | critical | 250 | 12.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_effective_potential_endpoint.py` |
 | 10 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | unaudited | critical | 237 | 20.39 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py` |
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1083 | 40.58 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |

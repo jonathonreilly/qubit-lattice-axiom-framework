@@ -52290,11 +52290,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lanes.generated-geometry.readme"
+      "to": "post_record_dynamics_campaign_closeout_index_2026-06-06"
     },
     {
       "from": "repo.front_door_status",
-      "to": "post_record_dynamics_campaign_closeout_index_2026-06-06"
+      "to": "lanes.generated-geometry.readme"
     },
     {
       "from": "repo.repo_organization",
@@ -100673,11 +100673,11 @@
         "native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12",
         "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
         "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12",
-        "lanes.generated-geometry.readme",
-        "post_record_dynamics_campaign_closeout_index_2026-06-06"
+        "post_record_dynamics_campaign_closeout_index_2026-06-06",
+        "lanes.generated-geometry.readme"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0edee5a4117af0dad97d39999aea56b1fa2b43a39b58b371b18663e4e4b5d899",
+      "note_hash": "5bd86d729673ed3ec0f47fee273c34ba707c8b68a58c016943bc03efbd7ed336",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

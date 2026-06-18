@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 215 |
 | **retained_bounded** | 963 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 27 |
-| unaudited | 1524 |
+| open_gate | 28 |
+| unaudited | 1523 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 16 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1398 |
+| `audited_clean` | 1399 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 16 |
-| `unaudited` | 1846 |
+| `unaudited` | 1845 |
 
 | claim_type | count |
 |---|---:|
@@ -897,6 +897,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `light_cone_framing_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
@@ -12749,6 +12750,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The displayed CN bound is a direct triangle-inequality composition of the retained_bounded free-bilinear quasilocal LR bridge and the retained_bounded CN cone-inheritance theorem. The staggered dispersion maximum is an independent algebraic identity, and the note keeps the open gauged/interacting and volume-independent CN-defect targets out of scope.
 - **rationale:** The repair removes the stale diameter-2 exact-H and fixed-step CN velocity surfaces and routes the conclusion through retained-grade bounded authorities supplied in the packet. Independent algebra gives v_max(m)=sqrt(m^2+1)-m from E^2=m^2+sin^2(k), and the LR/CN composition preserves the stated hypotheses and additive defect. The runner is supportive rather than purely self-printing: it numerically checks the dispersion formula, source rewiring guards, weighted-overlap condition, and a finite-block CN defect inequality.
 - **auditor confidence:** medium
+
+### `linear_response_derivation_note`
+
+- **Note:** [`LINEAR_RESPONSE_DERIVATION_NOTE.md`](../../docs/LINEAR_RESPONSE_DERIVATION_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Frozen 44-family detector-only linear-response heuristic record: reported Pearson correlations, 36/44 no-fit sign agreement, fitted-threshold caveat, and firewall against treating the heuristic as the literal first-order Kubo theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-linear_response_derivation_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The detector-only heuristic `kubo_heuristic = cz_weighted - cz_free`, computed from free detector amplitudes reweighted by `1/|z-z_src|`, is compared against the finite-difference measured response across the frozen 44-family log.  _(class `A`)_
+- **chain closes:** True — For the declared open-gate scope, the chain closes: the runner parses the frozen 44-family log and recomputes the reported correlations, sign counts, threshold summary, measured-response ceiling, and source-boundary firewall. It does not close, and does not claim to close, the literal `<z*deltaH>_0` Kubo theorem.
+- **rationale:** The primary runner source is a frozen-log verifier, not a first-principles derivation runner, and its checks match that limited role: `SCORECARD PASS=15 FAIL=0`. The source note preserves the no-fit versus tuned split and repeatedly forbids reuse as a literal first-order Kubo theorem or closed compact-principle derivation. The clean verdict is therefore clean only at `open_gate` scope: a reproducible detector-only heuristic record with explicit downstream firewall.
+- **auditor confidence:** high
 
 ### `linear_response_true_kubo_note`
 

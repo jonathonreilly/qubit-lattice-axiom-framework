@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1629 |
-| Retained-grade rows, including boxed decorations | 1498 |
+| Applied audit verdicts | 1630 |
+| Retained-grade rows, including boxed decorations | 1499 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 217 |
-| Retained bounded rows | 1001 |
+| Retained bounded rows | 1002 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1452 |
+| Unaudited rows | 1451 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 49 |
 | Audited renaming rows | 30 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1455 |
-| Ready rows | 22 |
+| Total pending rows | 1454 |
+| Ready rows | 21 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
 | Medium pending | 418 |
-| Leaf pending | 466 |
+| Leaf pending | 465 |
 
 Next ready rows by queue order:
 
-- [`frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18`](../../docs/FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`poisson_self_field_supplied_branch_core_bounded_note_2026-06-18`](../../docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
-- [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18`](../../docs/SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1638 |
+| Applied audit verdicts | 1639 |
 | Retained-grade rows, including boxed decorations | 1503 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 218 |
 | Retained bounded rows | 1005 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1443 |
+| Unaudited rows | 1442 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 53 |
+| Audited conditional rows | 54 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 12 |
 | Citation cycles detected | 7 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1446 |
-| Ready rows | 15 |
+| Total pending rows | 1445 |
+| Ready rows | 14 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
 | Medium pending | 418 |
-| Leaf pending | 457 |
+| Leaf pending | 456 |
 
 Next ready rows by queue order:
 
-- [`acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11`](../../docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
 - [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12`](../../docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13`](../../docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
-- [`harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12`](../../docs/HARMONIC_LADDER_ORIGIN_OF_CAPTURE_DEFICIT_BOUNDED_THEOREM_NOTE_2026-06-12.md) - leaf; unaudited
+- [`harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12`](../../docs/HARMONIC_LADDER_ORIGIN_OF_CAPTURE_DEFICIT_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
+- [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 943 |
-| Leaf nodes | 1516 |
+| Medium nodes | 945 |
+| Leaf nodes | 1514 |
 
 Top load-bearing rows by graph score:
 

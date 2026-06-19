@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 998 |
+| **retained_bounded** | 999 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1457 |
+| unaudited | 1456 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1447 |
+| `audited_clean` | 1448 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1779 |
+| `unaudited` | 1778 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 893 |
-| `leaf` | 1438 |
+| `medium` | 894 |
+| `leaf` | 1437 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -108,7 +108,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1658 | 147.70 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1657 | 147.69 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1050 | 65.54 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 909 | 60.33 | `audited_conditional` | ~~audited_conditional~~ |
@@ -1580,6 +1580,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -23027,6 +23028,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The common v'(h) factor in dM_t/dh=(y_t/sqrt(2))v'(h) and dM_W/dh=(g_2/2)v'(h) cancels, so y_t=(g_2/sqrt(2))(dM_t/dh)/(dM_W/dh), and the same cancellation holds under h=f(s).  _(class `A`)_
 - **chain closes:** True — The formula is an exact symbolic quotient: differentiating both masses with respect to the same local source coordinate gives a shared Jacobian, and a reparameterization h=f(s) multiplies both derivatives by the same chain-rule factor. Independent symbolic recomputation reproduces sqrt(2)*y_t/g_2 and recovered y_t.
 - **rationale:** Clean under the exact coordinate-invariance support scope. The source note does not rename the signed-record source as the Higgs; it proves that once a later retained same-surface EW radial source is supplied, the top/W derivative ratio is independent of the local coordinate normalization. The runner's symbolic checks and firewall/status checks pass, but they correctly leave the top transfer-response theorem, coefficient-certified rows, retained numerical g_2 authority, and physical-scale Y_T closure outside this row.
+- **auditor confidence:** high
+
+### `yt_source_covariance_normalization_support_note_2026-05-24`
+
+- **Note:** [`YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-support source-side covariance identity for the fixed Y_T source-action RN source coordinate, including the fixed-h source-rescaling boundary.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-yt_source_covariance_normalization_support_note_2026-05-24-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite-support RN partition function satisfies d log Z / d h_x = <epsilon_x>_h and d^2 log Z / d h_x d h_y = <epsilon_x epsilon_y>_h - <epsilon_x>_h <epsilon_y>_h, so C_ss(x,y;h)=Cov_h(epsilon_x,epsilon_y).  _(class `A`)_
+- **chain closes:** True — Differentiating the finite sum for Z gives the normalized first moment, and differentiating once more gives the connected covariance. The rescaling consequence follows algebraically because changing the insertion changes the fixed-coordinate score unless the source coordinate is redefined.
+- **rationale:** The load-bearing step is a standard finite-sum algebraic identity applied to the retained-grade RN source packet. The runner enumerates signed records, uses a nonuniform positive reference weight for the covariance check, compares analytic moments to finite-difference derivatives, and separately verifies the boundary prose. It imports no external comparator, tuned value, or physical normalization beyond the declared fixed source coordinate.
 - **auditor confidence:** high
 
 ### `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23`

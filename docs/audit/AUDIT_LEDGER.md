@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 996 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1465 |
+| unaudited | 1464 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1444 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1787 |
+| `unaudited` | 1786 |
 
 | claim_type | count |
 |---|---:|
@@ -87,9 +87,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 574 |
-| `high` | 501 |
-| `medium` | 889 |
+| `critical` | 573 |
+| `high` | 503 |
+| `medium` | 888 |
 | `leaf` | 1442 |
 
 - **Retained pending chain closure:** 4
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1658 | 147.70 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1050 | 65.54 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1422 | 60.98 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 909 | 60.33 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1015 | 52.99 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1032 | 49.01 | `unaudited` | meta |
@@ -119,13 +119,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1042 | 42.03 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1103 | 40.11 | `unaudited` | unaudited |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 847 | 39.73 | `audited_clean` | **retained_bounded** |
-| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1387 | 39.44 | `audited_clean` | **retained** |
+| 12 | `native_gauge_closure_note` | positive_theorem | critical | 1388 | 39.44 | `audited_clean` | **retained** |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 910 | 39.33 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 905 | 38.82 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1001 | 38.47 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 786 | 38.12 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1117 | 36.63 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1089 | 35.59 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1088 | 35.59 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 927 | 34.86 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 286 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 735 | 33.02 | `unaudited` | unaudited |
@@ -1611,6 +1611,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_mru_demotion_note_2026-04-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11909,6 +11910,23 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Stationarity forces rho_plus^2 = rho_perp^2, and the fixed-energy constraint then gives rho_plus^2 = rho_perp^2 = E_tot/2.  _(class `A`)_
 - **chain closes:** True — Independently parameterizing t = rho_plus^2/E_tot gives L = log(E_tot)/1 + 0.5 log(t(1-t)) up to the same constant normalization, whose only interior critical point is t = 1/2 and whose boundary limit is -infinity. Substituting t = 1/2 into the stated definition gives kappa = 2.
 - **rationale:** The source note explicitly limits the claim to a formal reduced two-variable carrier and withdraws the physical SO(2), charged-lepton, and operator-side bridges. The displayed Lagrange equations, constraint substitution, boundary behavior, and weighted-negative-control algebra are correct under that scope. The runner performs real in-packet symbolic and numeric checks rather than importing external data or hard-coding a contested physical premise.
+- **auditor confidence:** high
+
+### `koide_mru_demotion_note_2026-04-20`
+
+- **Note:** [`KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the MRU demotion/source-boundary claim: the displayed spectral-observable route does not derive the SO(2) quotient; the spectrum-operator bridge gives the exact kappa=2 corollary from spectrum-side Koide; block-total Frobenius remains bounded support, not standalone physical scalar-measure closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-koide_mru_demotion_note_2026-04-20-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under b -> e^{i theta} b the spectrum is not invariant for generic theta, as tr(H^3) and det(H) retain a cos(3 arg b) phase channel, so the retained observable principle does not force the SO(2)-quotient.  _(class `A`)_
+- **chain closes:** False — The displayed algebraic checks close for the Path A failure and the bridge identity. The broader negative statement that no retained framework theorem derives the SO(2)-quotient is not fully certified by the restricted packet because alternative retained routes are not exhaustively audited.
+- **rationale:** Issue: the algebraic Path A failure and bridge identity are correctly supported, but the note also makes a broad wall-naming demotion claim that no retained framework theorem derives the SO(2)-quotient. Why this blocks: the packet shows one failed route and conditional MRU status, but does not provide a complete no-go discipline route enumeration or exhaustive retained-authority scan. Repair target: either narrow the claim to the explicit Path A algebra plus bridge-corollary bookkeeping, or add an N1-N8 no-go checklist with enough retained-authority route closures. Claim boundary until fixed: the MRU route is conditionally demoted relative to the provided routes, while global non-derivability of the quotient remains conditional.
+- **open / conditional deps cited:**
+  - `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`
+  - `KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`
+  - `KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
 - **auditor confidence:** high
 
 ### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`

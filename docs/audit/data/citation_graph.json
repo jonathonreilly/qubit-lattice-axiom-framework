@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_source_action_support_packet_note_2026-05-22"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
     },
     {
@@ -52634,6 +52630,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "gate_b_connectivity_tolerance_note"
     },
     {
@@ -52642,11 +52642,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18"
+      "to": "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18"
+      "to": "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_source_action_support_packet_note_2026-05-22",
         "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
         "koide_mru_demotion_note_2026-04-20",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
         "gate_b_connectivity_tolerance_note",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
-        "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
-        "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18"
+        "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
+        "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "01c1f8a85515477fcf6c51e9ccbd18c7b34b57420a823f273d9994d2f0ecb8ba",
+      "note_hash": "c958541f9de64e4cf2c71dcb20fe3fab624776b52fad5c2db0226fd1ca731b5c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

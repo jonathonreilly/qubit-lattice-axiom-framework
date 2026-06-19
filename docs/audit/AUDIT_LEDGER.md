@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 994 |
+| **retained_bounded** | 995 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1468 |
+| unaudited | 1467 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 29 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1442 |
+| `audited_clean` | 1443 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1790 |
+| `unaudited` | 1789 |
 
 | claim_type | count |
 |---|---:|
@@ -727,6 +727,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10342,6 +10343,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The massless staggered chirality operator anticommutes with the Hermitian staggered Dirac matrix on the stated finite bulk surface, pairing every nonzero eigenvalue lambda with -lambda so sum sign(lambda)=0; separately, 2^(1-d)=1/(2d)=1-eta(d)/zeta(d) is equivalent to 2^(d-2)=d and has the unique integer solution d=4.  _(class `A`)_
 - **chain closes:** True — Manual check: anticommutation {Gamma5,D}=0 implies +/- eigenvalue pairing, and the stated L_t=2,4 spectra have nonzero uniform |lambda|^2, so the signed eta sum vanishes. The rational identity check reduces A=B=C to 2^(d-2)=d, with d=2,3 nonzero residuals and monotonic positivity for d>=5. The no-go discipline gate does not block because the verdict ratifies only this exact bare-bulk obstruction and leaves the five alternative APS routes open.
 - **rationale:** The row closes as a bounded scoping theorem, not as an APS no-go. The exact finite bulk surface has +/- spectral pairing, so the bare APS eta signed sum is zero and cannot supply eta_APS/2=1/8 there. The 1/8 rational identities are not independent witnesses because their equality reduces to the already retained d=4 integer-alignment theorem. The source's N1-N8 discipline is adequate for the audited scope: Wilson/domain-wall mass, nontrivial gauge backgrounds, boundary geometry, spectral flow, and residue corrections are explicitly left open rather than foreclosed.
+- **auditor confidence:** high
+
+### `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`
+
+- **Note:** [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic D=4 fixed-positive-density coefficient-to-scale map, including inverse placement, sign, reference normalization, and endpoint applications to the supplied retained A_2/A_4 and A_inf/A_2 ratios, excluding any electroweak VEV identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From the fixed positive readout rho_* = A_ref v_ref^4 = A(L) v(L)^4, positivity permits the unique positive fourth root, giving v(L)/v_ref = (A_ref/A(L))^(1/4).  _(class `A`)_
+- **chain closes:** True — The conclusion follows by exact algebra on positive reals plus the retained D=4 fourth-root dimensional theorem and retained-grade endpoint coefficient ratios. The note explicitly keeps the physical order-parameter/VEV identification outside scope, so that open downstream bridge is not imported as a premise.
+- **rationale:** The load-bearing step is a genuine algebraic identity: equating two positive fixed-density readouts forces the inverse fourth-root scale ratio, with the stated normalization and sign. The runner source computes representative fixed-density cases, exact endpoint ratio placements, dependency retained-grade checks, and boundary-hygiene checks; it does not use observed targets or external comparator values. The endpoint constants are treated as retained or retained_bounded inputs rather than first-principles outputs, which matches the bounded claim scope. The cited endpoint note’s open physical insertion problem remains downstream and is not claimed here.
 - **auditor confidence:** high
 
 ### `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`

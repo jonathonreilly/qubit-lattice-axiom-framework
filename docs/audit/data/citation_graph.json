@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18"
     },
     {
@@ -52647,6 +52643,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "teleportation_resource_from_poisson_note"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
         "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
         "d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18",
         "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18",
         "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18",
         "gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18",
         "gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18",
-        "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
+        "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
+        "teleportation_resource_from_poisson_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4db197e8363e3f5d0e905414b1e75f22afc05b1a1427749ac822f98356f61e4f",
+      "note_hash": "b3db4bb33cf23fc8684e72874d3b5b32999d3979b641ca38546a22d4a5ec2c3b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

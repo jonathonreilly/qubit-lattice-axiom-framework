@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 217 |
-| **retained_bounded** | 1001 |
+| **retained_bounded** | 1002 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1452 |
+| unaudited | 1451 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1450 |
+| `audited_clean` | 1451 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1774 |
+| `unaudited` | 1773 |
 
 | claim_type | count |
 |---|---:|
@@ -558,6 +558,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `free_field_lattice_to_continuum_gaussian_measure_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_scalar_point_split_ward_seagull_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -7853,6 +7854,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The folded staggered phase matrices obey Gamma_mu^2 = I and Gamma_mu Gamma_nu + Gamma_nu Gamma_mu = 0, so H_hop(k)^2 = -(sum_mu sin^2 k_mu) I and every reduced momentum sector reduces to the one-axis 2 by 2 time-block algebra.  _(class `A`)_
 - **chain closes:** True — Both cited authorities are retained_bounded, which is retained-grade under the rubric, and they are used only for the one-axis two-step transfer algebra/normalization and quasilocal contour mechanism. The new d-dimensional step closes internally by the Gamma-matrix algebra and the note's self-contained strip estimate.
 - **rationale:** The load-bearing step is a genuine algebraic closure, not a definition or renaming: the staggered phase bookkeeping gives a Clifford family whose scalar square reduces the d-dimensional hop to the retained one-axis two-step eigenvalue calculation. The displayed signs, factors of 2, determinant/trace algebra, pi-periodicity support rule, contour-shift sign for exp(i p.z), and l_inf-to-l1 rate conversion are consistent. The runner source performs actual matrix, spectrum, and FFT checks rather than printing constants, and its finite d=2,d=3 computations support the general algebraic derivation without importing external comparators.
+- **auditor confidence:** high
+
+### `frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18`
+
+- **Note:** [`FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md`](../../docs/FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite source-free entropy bookkeeping: conservation of total comoving entropy under zero-sum component updates, exact g_*S T^3 a^3 step compensation, and conserved N_B/S when both numerator and total entropy are conserved.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** S_total' = sum_i(S_i + Delta_i) = S_total + sum_i Delta_i, so a finite update with sum_i Delta_i = 0 exactly conserves total comoving entropy.  _(class `A`)_
+- **chain closes:** True — Within the stated finite bookkeeping scope, the conclusion follows by summing component updates and equating the stated entropy invariant across a g_*S step. No external physical premise is needed for this bounded algebraic result.
+- **rationale:** The load-bearing proof is ordinary finite algebra, not a definition substitution or tuned numerical match. The runner source actually computes Fraction examples for zero-sum transfers, nonzero injection, g_*S compensation, wrong-scaling failure, and N_B/S behavior; its text checks enforce the stated scope boundary rather than serving as the mathematical proof. This clean verdict applies only to the bounded bookkeeping theorem stated in claim_scope.
 - **auditor confidence:** high
 
 ### `frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18`

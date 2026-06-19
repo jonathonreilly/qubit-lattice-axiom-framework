@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 264,
-    "leaf": 466,
+    "leaf": 465,
     "medium": 418
   },
   "cycle_break_target_count": 7,
@@ -17416,28 +17416,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17574,6 +17552,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/poisson_self_field_supplied_branch_core_2026_06_18.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
       "transitive_descendants": 16
     },
     {
@@ -30359,33 +30364,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
-        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
-        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44129,6 +44107,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 22,
-  "total_pending": 1455
+  "ready_count": 21,
+  "total_pending": 1454
 }

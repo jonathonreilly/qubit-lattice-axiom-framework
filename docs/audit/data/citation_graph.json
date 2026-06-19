@@ -52618,14 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12"
     },
     {
@@ -52647,6 +52639,14 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_gamma5_factor_bridge_no_go_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "post_record_selector_tangent_readout_weight_prototype_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
-        "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
         "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
         "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15",
         "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
         "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13",
         "harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12",
-        "koide_gamma5_factor_bridge_no_go_note_2026-06-06"
+        "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
+        "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12",
+        "post_record_selector_tangent_readout_weight_prototype_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "358f56a843f344a3c037ef2532165764a3102de648a32f9eed9565ce51c2d7df",
+      "note_hash": "f5a1fd7c40018335d8f43b4b70bb34611bd4ede645555781071110dda50b5dd1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

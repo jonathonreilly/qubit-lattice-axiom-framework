@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1625 |
-| Retained-grade rows, including boxed decorations | 1496 |
+| Applied audit verdicts | 1626 |
+| Retained-grade rows, including boxed decorations | 1497 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 217 |
-| Retained bounded rows | 999 |
+| Retained bounded rows | 1000 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1456 |
+| Unaudited rows | 1455 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 47 |
 | Audited renaming rows | 30 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1459 |
+| Total pending rows | 1458 |
 | Ready rows | 25 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
 | Medium pending | 419 |
-| Leaf pending | 469 |
+| Leaf pending | 468 |
 
 Next ready rows by queue order:
 
-- [`teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18`](../../docs/TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18`](../../docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18`](../../docs/D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18`](../../docs/FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
-- [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - leaf; unaudited
+- [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
+- [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,16 +83,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 933 |
-| Leaf nodes | 1526 |
+| Medium nodes | 934 |
+| Leaf nodes | 1525 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1657 descendants; score 147.695
-- `three_generation_observable_theorem_note` - critical; 1050 descendants; score 65.538
+- `minimal_axioms` - critical; 1658 descendants; score 147.696
+- `three_generation_observable_theorem_note` - critical; 1051 descendants; score 65.539
 - `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
 - `observable_principle_from_axiom_note` - critical; 909 descendants; score 60.330
 - `plaquette_self_consistency_note` - critical; 1015 descendants; score 52.989
-- `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 49.013
-- `key_terminology` - critical; 1124 descendants; score 46.636
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 924 descendants; score 44.353
+- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
+- `key_terminology` - critical; 1125 descendants; score 46.637
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 925 descendants; score 44.355

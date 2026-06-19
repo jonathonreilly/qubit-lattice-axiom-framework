@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 219 |
+| **retained** | 220 |
 | **retained_no_go** | 217 |
 | **retained_bounded** | 996 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
 | unaudited | 1464 |
-| audit_in_progress | 1 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,8 +67,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 1442 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 1443 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
@@ -142,7 +141,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
-| `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -824,6 +822,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kahler_dirac_silent_on_measure_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -11778,6 +11777,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For H = a I + b C + bbar C^2, the block-total Frobenius slots are E_+ = 3 a^2 and E_perp = 6 |b|^2, so maximizing log E_+ + log E_perp at fixed E_+ + E_perp gives E_+ = E_perp and hence kappa = a^2/|b|^2 = 2.  _(class `A`)_
 - **chain closes:** True — The Frobenius norm formulas, constrained log extremum, and Hermitian-circulant multiplicity formula are exact algebra within the stipulated block-total carrier. The physical canonical-measure or scalar-lane quotient claim is explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a direct algebraic computation and optimization, not a numerical comparator or symbol renaming. The runner source visibly computes the projector identities, Frobenius formulas, finite multiplicity scan, synthetic consistency checks, and law separation; its PDG line is diagnostic only and not a PASS gate. The cited retained_bounded authorities are used only for the MRU weight context, while the source itself excludes physical canonicity of the block-total carrier from the theorem.
+- **auditor confidence:** high
+
+### `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact algebraic equivalence on Herm_circ(3) between the spectrum condition a_0^2=2|z|^2 and the operator condition a^2=2|b|^2, with the kappa ratio understood on the nonzero-|b| domain; not a derivation of spectrum-side Koide Q=2/3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The exact identity a_0^2 - 2|z|^2 = 3(a^2 - 2|b|^2) follows from a_0 = sqrt(3)a and z = sqrt(3)b for the Hermitian circulant Fourier eigenvalue triple.  _(class `A`)_
+- **chain closes:** True — The Fourier sums over 1, omega, omega^2 project the trivial component to a_0=sqrt(3)a and the selected nontrivial component to z=sqrt(3)b, so the stated identity follows exactly. This closes the bridge equivalence within the stated Hermitian-circulant coordinate dictionary, while leaving Q=2/3 itself as an external spectrum-side condition.
+- **rationale:** The load-bearing step is genuine algebraic closure, not a renaming: substituting the circulant eigenvalues into the Fourier coefficients gives the factors sqrt(3) and hence the identity exactly. The runner source performs symbolic checks of hermiticity, eigenvalue reality, the coefficient identities, the bridge identity, and finite random-sample verification; the PDG checks are comparator sanity checks and are not needed for the theorem. The source note does not claim to derive spectrum-side Q=2/3, only that the operator-side kappa condition is equivalent to it under the stated bridge.
 - **auditor confidence:** high
 
 ### `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05`

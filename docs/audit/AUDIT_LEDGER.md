@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1003 |
+| **retained_bounded** | 1004 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1445 |
+| unaudited | 1444 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1453 |
+| `audited_clean` | 1454 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1767 |
+| `unaudited` | 1766 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 902 |
-| `leaf` | 1429 |
+| `medium` | 903 |
+| `leaf` | 1428 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -1277,6 +1277,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sign_portability_invariant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
 | `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -18699,6 +18700,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Because K = 2 arcsinh(sqrt(m^2 + H_hop^2)) with H_hop^2 >= 0 has spec(K) >= 2 arcsinh(m), every tested zero-centered window |lambda| <= bulk_gap/2 lies below the spectral floor, so the in-gap edge-tower set is empty.  _(class `A`)_
 - **chain closes:** True — The source and runner close the scoped finite-matrix claim: the positivity-floor inequality independently explains the empty in-gap window, and the runner source actually diagonalizes the constructed finite operators rather than printing constants. The conclusion is route-local and does not exclude Wilson-mass, domain-wall, interacting, gauged, 3D-lift, or derived symmetric-spectrum mechanisms.
 - **rationale:** The load-bearing failure of the sufficiency chain is not a tuned numerical match: it follows algebraically from the positive transfer-log spectral floor, with the finite runner confirming the relevant windows and spectra on all tested carriers. The cited retained-bounded authorities supply the two-step transfer/log normalization used by the bounded test, and no external comparator or empirical input is used. The no-go wording is properly narrowed to the native free kernel on this sufficiency route, with the missing edge tower identified as the single wall.
+- **auditor confidence:** high
+
+### `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional product-grading theorem: retained Cl(3,1) chirality plus a supplied spectrally truncated twisted tower yields opposite eta-sector labels and coexists with generation-factor anticommutation under the stated half-integer cutoff scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the eps=s sector, the boundary block I⊗A(a)⊗eps restricts to sA(a) with multiplicity 2, so eta_delta^(s)=2s eta_delta(A(a)); under the half-integer spectral cutoff eta_delta(A(a)) is +1 on a in (0,1/2) and -1 on a in (-1/2,0).  _(class `A`)_
+- **chain closes:** True — Within the stated finite-dimensional scope, T1-T4 follow from Clifford anticommutation, tensor-product sector restriction, and exact spectral counting. The twist realization, eta-sector dynamics, and source action are explicitly outside the audited claim.
+- **rationale:** The load-bearing content is exact Clifford/tensor-product algebra plus a finite spectral count; the retained Clifford authorities supply the algebraic carrier, and the half-integer cutoff formula follows by direct counting of n+a. The runner source substantively constructs the matrices, tower, sector projections, floor formula, and falsifiers rather than merely printing expected constants. No external comparator, tuned numerical input, or definition-as-derivation is used, and the note keeps downstream physical realization claims out of scope.
 - **auditor confidence:** high
 
 ### `signed_gravity_response_lane_status_note_2026-04-26`

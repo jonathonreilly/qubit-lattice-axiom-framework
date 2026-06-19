@@ -1,11 +1,11 @@
 # Audit Queue
 
-**Total pending:** 1461
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 27
+**Total pending:** 1460
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 26
 
 By criticality:
 - `critical`: 307
-- `high`: 265
+- `high`: 264
 - `medium`: 419
 - `leaf`: 470
 

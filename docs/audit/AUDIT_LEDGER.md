@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1009 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1433 |
+| unaudited | 1432 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1460 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1755 |
+| `unaudited` | 1754 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 898 |
-| `leaf` | 1433 |
+| `medium` | 896 |
+| `leaf` | 1435 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -1649,6 +1649,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -17060,6 +17061,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The same rational target vector can select different kernels under different supplied loss weights, so target vector and loss weights are supplied rule data for this finite selection interface.  _(class `A`)_
 - **chain closes:** True — Independent arithmetic matches the finite witness: k3 has endpoint_ba=0 and second_is_b=3/4, while k4 has endpoint_ba=1/2 and second_is_b=1/4. With target (1/3,2/3), weights (100,1) uniquely select k4 and weights (1,100) uniquely select k3, so target alone does not determine the selection under the supplied objective.
 - **rationale:** The load-bearing calculation is finite algebra over explicitly supplied rational data, and the runner source computes the laws, statistic vectors, weighted losses, and blocking cases rather than merely printing constants. The cited authorities are retained-grade for the restricted supplied-rule and kernel-firewall surfaces. The no-go discipline gate is satisfied only for this narrow firewall: any broader claim that Record can never derive target vectors or weights is expressly outside scope and is not ratified here.
+- **auditor confidence:** high
+
+### `post_record_selector_tangent_readout_weight_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Supplied finite selector/tangent/readout arithmetic diagnostic and row-indexing check; no Record-derived selector, readout, tangent metric, Hessian, or weighting authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-post_record_selector_tangent_readout_weight_prototype_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A supplied finite tangent/readout carrier with supplied positive tangent metric or Hessian and supplied nonnegative readout weights passes exact normalization and quadratic checks, yielding finite readout/tangent weight arithmetic only inside that supplied packet.  _(class `A`)_
+- **chain closes:** False — The exact normalization, SPD, and quadratic checks close for the finite packet instantiated in the runner. The chain does not close as framework authority because no cited retained theorem supplies the carrier, readout weights/map, tangent metric, or Hessian from Record.
+- **rationale:** Issue: The finite arithmetic checks close only after the carrier, readout weights/map, and positive tangent metric/Hessian are supplied. Why this blocks: The Record axiom explicitly supplies none of those structures, and the measure/weight subdivision authority is itself conditional/meta rather than retained-grade theorem authority. Repair target: Provide a retained bridge deriving or explicitly accepting the selector/tangent/readout carrier, weights, and positive metric/Hessian. Claim boundary until fixed: the packet is a valid supplied finite arithmetic diagnostic, not selector/tangent/readout authority or a bounded theorem from Record.
+- **open / conditional deps cited:**
+  - `POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md`
 - **auditor confidence:** high
 
 ### `post_record_source_measure_trace_normalization_prototype_2026-06-06`

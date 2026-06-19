@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1648 |
+| Applied audit verdicts | 1649 |
 | Retained-grade rows, including boxed decorations | 1508 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 219 |
 | Retained bounded rows | 1009 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1433 |
+| Unaudited rows | 1432 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 58 |
+| Audited conditional rows | 59 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 12 |
 | Citation cycles detected | 7 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1436 |
-| Ready rows | 5 |
+| Total pending rows | 1435 |
+| Ready rows | 4 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
-| Medium pending | 416 |
+| Medium pending | 415 |
 | Leaf pending | 449 |
 
 Next ready rows by queue order:
 
-- [`post_record_selector_tangent_readout_weight_prototype_2026-06-06`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12`](../../docs/SLAB_BOUNDARY_ETA_GLOBALLY_ZERO_PER_EDGE_NONUNIVERSAL_NO_FRACTIONAL_CARRIER_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
 - [`theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11`](../../docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
@@ -80,8 +79,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 937 |
-| Leaf nodes | 1522 |
+| Medium nodes | 935 |
+| Leaf nodes | 1524 |
 
 Top load-bearing rows by graph score:
 

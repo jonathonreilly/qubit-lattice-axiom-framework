@@ -19,14 +19,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 220 |
-| **retained_no_go** | 217 |
-| **retained_bounded** | 995 |
+| **retained_no_go** | 216 |
+| **retained_bounded** | 994 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1465 |
+| unaudited | 1468 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
-| ~~audited_renaming~~ | 30 |
+| ~~audited_renaming~~ | 29 |
 | ~~audited_conditional~~ | 42 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -67,14 +67,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1443 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1442 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
-| `audited_renaming` | 30 |
-| `unaudited` | 1787 |
+| `audited_renaming` | 29 |
+| `unaudited` | 1790 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 574 |
 | `high` | 501 |
-| `medium` | 888 |
-| `leaf` | 1443 |
+| `medium` | 889 |
+| `leaf` | 1442 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -142,7 +142,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
-| `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -1575,9 +1574,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `yt_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -1757,7 +1755,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
-| `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -22836,21 +22833,6 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **decoration parent:** `yt_ew_color_projection_theorem`
 - **auditor confidence:** high
 
-### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`
-
-- **Note:** [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Algebraic carrier compatibility: the local Pauli sharp-projective readout has outcomes {-1,+1}, and the finite product RN source score over signed records is epsilon_x; no source-action authority, Higgs/O_H, LSZ, kappa_Y, or y_t closure is audited.
-- **audit_status:** ~~audited_renaming~~
-- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-yt_lsp_signed_record_source_readout_support_note_2026-05-24-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under the qubit/LSP readout, the RN score epsilon_x is represented by the same signed carrier as the local projective measurement of sigma_z(x), stated as the Y_T primitive signed source record epsilon_x = the LSP sharp-projective signed Pauli readout at site x.  _(class `F`)_
-- **chain closes:** True — The chain closes for the declared compatibility-only scope: the cited qubit axiom, LSP projective rule, and Y_T source-action packet support the shared {-1,+1} carrier and finite RN score algebra. It does not close a derivation that the primitive Y_T source record is physically generated by that projective measurement.
-- **rationale:** The runner verifies Pauli projector identities, finite RN score algebra, source-family composition algebra, and boundary/firewall text. The load-bearing equality identifies two already-provided signed carriers rather than deriving the Y_T primitive source record from the projective measurement. The source note itself preserves that boundary and forbids using the result as EW/Higgs, O_H, LSZ, kappa_Y, or y_t closure.
-- **open / conditional deps cited:**
-  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
-- **auditor confidence:** high
-
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`
 
 - **Note:** [`YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md)
@@ -22877,6 +22859,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **rationale:** The load-bearing step is ordinary finite-dimensional color algebra, not a definition, numerical fit, or external comparator. The cited upstream authority is retained_no_go and supplies the conditional kappa_Y family that this note targets; the current note does not import the open kappa_Y selector as a premise. The restricted packet satisfies the no-go gate: it enumerates six routes, collapses independent walls, scans hidden assumptions, matches the cited residual, narrows rhetoric, leaves partial closure paths open, gives a steelman, and uses same-packet cross-cycle evidence.
 - **auditor confidence:** high
 
+### `yt_source_action_support_packet_note_2026-05-22`
+
+- **Note:** [`YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`](../../docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-support identity between product RN source profiles on signed one-site records and the site-diagonal action S_h = S_0 - sum_x h_x epsilon_x, excluding neutral EW/Higgs or Y_T closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-yt_source_action_support_packet_note_2026-05-22-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** If S_h = S_0 - sum_x h_x epsilon_x, then exp(-S_h)/exp(-S_0) = exp(sum_x h_x epsilon_x), which is the same RN family after normalization.  _(class `A`)_
+- **chain closes:** True — The finite-support RN composition, origin score, and site-diagonal action equivalence follow by direct algebra over the stated signed-record block. The note explicitly limits the result to support mathematics and does not claim the separate physical source/action authority.
+- **rationale:** The load-bearing step is a genuine algebraic identity on the finite signed-record sample space, not a definition-only substitution or numerical match. The runner substantively checks finite instances of composition, the origin score, and action equivalence; its remaining checks are scope/firewall guards. Because the audited claim is bounded to the support identity and expressly excludes Y_T physical closure, the chain closes within the restricted packet.
+- **auditor confidence:** high
+
 ### `yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25`
 
 - **Note:** [`YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`](../../docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md)
@@ -22888,32 +22883,6 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The common v'(h) factor in dM_t/dh=(y_t/sqrt(2))v'(h) and dM_W/dh=(g_2/2)v'(h) cancels, so y_t=(g_2/sqrt(2))(dM_t/dh)/(dM_W/dh), and the same cancellation holds under h=f(s).  _(class `A`)_
 - **chain closes:** True — The formula is an exact symbolic quotient: differentiating both masses with respect to the same local source coordinate gives a shared Jacobian, and a reparameterization h=f(s) multiplies both derivatives by the same chain-rule factor. Independent symbolic recomputation reproduces sqrt(2)*y_t/g_2 and recovered y_t.
 - **rationale:** Clean under the exact coordinate-invariance support scope. The source note does not rename the signed-record source as the Higgs; it proves that once a later retained same-surface EW radial source is supplied, the top/W derivative ratio is independent of the local coordinate normalization. The runner's symbolic checks and firewall/status checks pass, but they correctly leave the top transfer-response theorem, coefficient-certified rows, retained numerical g_2 authority, and physical-scale Y_T closure outside this row.
-- **auditor confidence:** high
-
-### `yt_source_covariance_normalization_support_note_2026-05-24`
-
-- **Note:** [`YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Exact finite-support source-side covariance normalization in the fixed signed-record RN source coordinate.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260605-183223-34a4e4cb18-yt_source_covariance_normali`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** For the finite-support exponential source family, d^2 log Z / d h_x d h_y equals <epsilon_x epsilon_y>_h - <epsilon_x>_h <epsilon_y>_h, so C_ss(x,y;h)=Cov_h(epsilon_x,epsilon_y).  _(class `A`)_
-- **chain closes:** True — Direct differentiation of the finite partition sum gives dZ/dh_x = Z <epsilon_x>_h and a second derivative of log Z gives the centered covariance. This closes only the source-coordinate covariance row and does not import physical scalar/Higgs LSZ or same-surface source/action authority.
-- **rationale:** The displayed finite-support identities, normalization factors, signs, composition rule, source-score convention, rescaling statement, pole-row residue scaling, and 9/8 ratio all check algebraically in the restricted packet. The runner source performs genuine finite exponential-family covariance checks plus metadata/firewall checks and does not hard-code a contested physical constant. Both cited authorities are retained-grade for the bounded support/no-go roles used here, and the open physical gates are explicitly outside the audited scope.
-- **auditor confidence:** high
-
-### `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23`
-
-- **Note:** [`YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md`](../../docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md)
-- **claim_type:** `no_go`
-- **claim_scope:** Narrow algebraic no-go that strict single-pole C_ss/C_sH/C_HH Gram purity and mass extraction alone cannot fix absolute source/Higgs normalization or select kappa_Y=0.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_no_go**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-no-go-gate-20260531-ef51181c43-yt_source_higgs_pole_row_nor`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Under s -> mu s and H -> lambda H, the residues scale as mu^2, mu lambda, and lambda^2 while Gram purity and the effective-mass ratio remain invariant, so the K_Y(1)/K_Y(0)=9/8 factor can be absorbed by lambda^2=9/8.  _(class `A`)_
-- **chain closes:** True — The rescaling witness gives indistinguishable pole-row purity and mass data with different absolute normalizations. Since the connected/full K_Y difference is exactly a squared normalization factor, the pole-row data alone lack information to choose kappa_Y.
-- **rationale:** The displayed identities close directly: C_sH^2 equals C_ss C_HH, both sides pick up the same mu^2 lambda^2 factor under rescaling, C(t)/C(t+1) is amplitude-blind, and K_Y(1)/K_Y(0)=9/8. The runner source performs exact fraction arithmetic and boundary-phrase checks rather than merely printing constants, with no external comparator or fitted input. The cited K_Y family is retained, and the support/LSZ material is used to delimit missing normalization rather than as a hidden positive premise. N1-N8 stress testing keeps the no-go narrow: it rules out the pole-row-purity shortcut only and leaves canonical O_H/LSZ, W/Z response, direct correlator, and future same-surface routes open.
 - **auditor confidence:** high
 
 ### `yt_ssb_matching_gap_analysis_note_2026-04-18`

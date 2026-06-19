@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1615 |
-| Retained-grade rows, including boxed decorations | 1492 |
+| Applied audit verdicts | 1613 |
+| Retained-grade rows, including boxed decorations | 1490 |
 | Retained positive theorems | 220 |
-| Retained no-go rows | 217 |
-| Retained bounded rows | 995 |
+| Retained no-go rows | 216 |
+| Retained bounded rows | 994 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1465 |
+| Unaudited rows | 1468 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 42 |
-| Audited renaming rows | 30 |
+| Audited renaming rows | 29 |
 | Audited numerical-match rows | 12 |
 | Citation cycles detected | 7 |
 
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1469 |
-| Ready rows | 30 |
+| Total pending rows | 1471 |
+| Ready rows | 31 |
 | Cycle-break targets | 7 |
-| Critical pending | 308 |
-| High pending | 271 |
-| Medium pending | 415 |
-| Leaf pending | 475 |
+| Critical pending | 307 |
+| High pending | 272 |
+| Medium pending | 418 |
+| Leaf pending | 474 |
 
 Next ready rows by queue order:
 
-- [`yt_source_action_support_packet_note_2026-05-22`](../../docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md) - critical; audit_in_progress
 - [`hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
 - [`koide_mru_demotion_note_2026-04-20`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md) - high; unaudited
 - [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
+- [`yt_lsp_signed_record_source_readout_support_note_2026-05-24`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md) - high; unaudited
 - [`gate_b_connectivity_tolerance_note`](../../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
+- [`teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18`](../../docs/TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18`](../../docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
-- [`teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18`](../../docs/TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 582 |
 | High nodes | 507 |
-| Medium nodes | 927 |
-| Leaf nodes | 1532 |
+| Medium nodes | 928 |
+| Leaf nodes | 1531 |
 
 Top load-bearing rows by graph score:
 

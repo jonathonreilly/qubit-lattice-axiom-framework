@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
     },
     {
@@ -52631,6 +52627,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_mru_demotion_note_2026-04-20"
     },
     {
       "from": "repo.front_door_status",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
         "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
         "yt_source_action_support_packet_note_2026-05-22",
         "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+        "koide_mru_demotion_note_2026-04-20",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "gate_b_connectivity_tolerance_note",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
         "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "089cfa7cf86d2f133e4316e91f7ee25c41de97670e21f03bca8d72041d929a64",
+      "note_hash": "bb06ea805c7e5462aef63ea558d537bff3aba8a71dc630a5322fa00d896be04b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

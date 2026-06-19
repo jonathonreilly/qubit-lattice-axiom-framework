@@ -1,7 +1,7 @@
 {
   "by_criticality": {
-    "critical": 309,
-    "high": 270,
+    "critical": 308,
+    "high": 271,
     "leaf": 475,
     "medium": 415
   },
@@ -121,28 +121,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Zero-dependency dimensional-algebra theorem: for an abstract positive quantity f of mass dimension d and dimensionless prefactor C_M, the simple-power extraction C_M f^alpha has mass dimension one iff alpha = 1/d; the d=4 exponent is exactly 1/4 and is unique among positive integer d.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 5,
-      "effective_status": "retained",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.472,
-      "note_path": "docs/HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_dimensional_fourth_root_compression_narrow.py",
-      "transitive_descendants": 250
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -9001,7 +8979,7 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+      "claim_id": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -9009,18 +8987,19 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+        "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
+        "hierarchy_effective_potential_endpoint_note",
+        "scalar_3plus1_temporal_ratio_note"
       ],
       "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.954,
-      "note_path": "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "load_bearing_score": 8.96,
+      "note_path": "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
-      "transitive_descendants": 247
+      "runner_path": "scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py",
+      "transitive_descendants": 248
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -9038,15 +9017,15 @@
         "koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19",
         "koide_moment_ratio_uniformity_theorem_note_2026-04-19"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.883,
+      "load_bearing_score": 10.389,
       "note_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py",
-      "transitive_descendants": 235
+      "transitive_descendants": 236
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -9103,6 +9082,31 @@
       "ready": false,
       "runner_path": "scripts/cl3_a3_option_c_brannen_rivero_2026_05_08_optC.py",
       "transitive_descendants": 249
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.954,
+      "note_path": "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
+      "transitive_descendants": 247
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -44486,6 +44490,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 31,
+  "ready_count": 30,
   "total_pending": 1469
 }

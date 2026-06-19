@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1651 |
+| Applied audit verdicts | 1652 |
 | Retained-grade rows, including boxed decorations | 1509 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 219 |
 | Retained bounded rows | 1010 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1430 |
+| Unaudited rows | 1429 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 60 |
+| Audited conditional rows | 61 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 12 |
 | Citation cycles detected | 7 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1433 |
-| Ready rows | 2 |
+| Total pending rows | 1432 |
+| Ready rows | 1 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
-| Medium pending | 413 |
+| Medium pending | 412 |
 | Leaf pending | 449 |
 
 Next ready rows by queue order:
 
-- [`theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11`](../../docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
@@ -77,16 +76,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 931 |
-| Leaf nodes | 1528 |
+| Medium nodes | 929 |
+| Leaf nodes | 1530 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1658 descendants; score 147.696
-- `three_generation_observable_theorem_note` - critical; 1051 descendants; score 65.539
-- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
+- `three_generation_observable_theorem_note` - critical; 1050 descendants; score 65.538
+- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
 - `observable_principle_from_axiom_note` - critical; 909 descendants; score 60.330
 - `plaquette_self_consistency_note` - critical; 1015 descendants; score 52.989
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 50.014
-- `key_terminology` - critical; 1125 descendants; score 47.637
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 925 descendants; score 45.355
+- `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 50.013
+- `key_terminology` - critical; 1124 descendants; score 47.636
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 924 descendants; score 45.353

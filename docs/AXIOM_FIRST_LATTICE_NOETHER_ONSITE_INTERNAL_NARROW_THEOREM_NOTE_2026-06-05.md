@@ -334,3 +334,4 @@ No load-bearing broad-gate dependency is recorded here. The prior
 staggered-realization parent link has been removed because the onsite/internal
 Noether theorem reconstructs the finite bilinear carrier/exhibit it needs and
 delegates only to retained abstract bilinear and substep-1 authorities.
+- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)

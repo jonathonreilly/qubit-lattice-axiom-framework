@@ -17,21 +17,20 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 173 |
-| high | `unaudited` | 153 |
+| critical | `unaudited` | 174 |
+| high | `unaudited` | 154 |
 | medium | `unaudited` | 85 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
-| high | `audited_conditional` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 424
+**Total non-retained-grade rows in publication tables:** 425
 
 ## Per-row breakdown
 
@@ -103,6 +102,7 @@ publication tables phrase it.
 | critical | `koide_cl3_selector_gap_note_2026-04-19` | `open_gate` | `audited_clean` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_explicit_calculations_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `koide_q_delta_closure_package_readme_2026-04-21` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | `audited_renaming` | `audited_renaming` | DERIVATION_ATLAS.md |
@@ -303,7 +303,7 @@ publication tables phrase it.
 | high | `gravity_cosmology_tower_lambda_spectral_bridge_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `gw_echo_null_result_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `hadron_lane1_sqrt_sigma_retention_gate_audit_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| high | `hierarchy_dimensional_compression_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
+| high | `hierarchy_dimensional_compression_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `higgs_mass_retention_analysis_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `hubble_tension_structural_lock_theorem_note_2026-04-26` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `hypercharge_squared_trace_catalog_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

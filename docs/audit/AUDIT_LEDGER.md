@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1007 |
+| **retained_bounded** | 1008 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1436 |
+| unaudited | 1435 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1457 |
+| `audited_clean` | 1458 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1758 |
+| `unaudited` | 1757 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 906 |
-| `leaf` | 1425 |
+| `medium` | 905 |
+| `leaf` | 1426 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -727,6 +727,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `harmonic_depth_weight_distribution_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10521,6 +10522,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For each realized state, the eigenbasis-pair weights w_g are aggregated over the three coupled gaps, and the resulting concentration order K=6 -> K=5 -> K=3 -> K=4 matches the order-4 det-phase capture order.  _(class `C`)_
 - **chain closes:** True — The runner source instantiates the finite L=3 Hamiltonian, seeded occupied subspaces, phase trajectory, Hankel summaries, and eigenbasis-pair coupling weights rather than merely printing constants. Independent arithmetic from the displayed weights verifies the shares, participation ratios, entropies, gap-second moments, cyclic-null values, and all stated orderings.
 - **rationale:** The load-bearing numerical step is a finite first-principles computation on the scoped realized states, with retained-bounded upstream depth/rank anchors and the realized-state primitive used only for pointwise evaluation. The hard-coded frozen tables in the runner act as regression checks after computed records are built, not as the sole source of the quantities. No external comparator, tuned empirical scale, renaming, or widened causal/generative interpretation is needed for the bounded claim as stated.
+- **auditor confidence:** high
+
+### `harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`HARMONIC_LADDER_ORIGIN_OF_CAPTURE_DEFICIT_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/HARMONIC_LADDER_ORIGIN_OF_CAPTURE_DEFICIT_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite L=3 realized states K=3 seed 391, K=4 seed 99, K=5 seed 99, and K=6 seed 466 at tau=0.35, T=256, Hankel window 64.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the physical base-angle coordinate, the determinant-phase readout has an integer harmonic ladder at gaps 3k, with nonzero k=2 weight in every realized state, while the landed deficit remains the Hankel-SVD tail rather than a simple Fourier tail.  _(class `C`)_
+- **chain closes:** True — The one-hop capture-deficit authority is retained_bounded and supplies the landed Hankel capture/tail surface. The primary runner independently instantiates the finite L=3 Hamiltonian, supplied realized states, determinant-polar readout, FFT/Hankel calculations, and verifies the stated ladder, leakage, k=2, and ordering claims within the declared finite scope.
+- **rationale:** Within the bounded finite-state scope, the claim does not require a generic-state, asymptotic, or empirical bridge. The runner is not merely printing constants: it constructs the lattice Hamiltonian, realized projectors from the supplied seeds, determinant-polar phase increments, raw and base-angle spectra, and Hankel singular-value tails before checking the source-note tables and qualitative distinctions. The note also explicitly avoids the overclaim that Fourier coefficient tail mass is the landed capture deficit, preserving the upstream Hankel-SVD definition.
 - **auditor confidence:** high
 
 ### `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17`

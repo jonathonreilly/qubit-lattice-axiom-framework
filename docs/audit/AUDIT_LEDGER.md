@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1006 |
+| **retained_bounded** | 1007 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1437 |
+| unaudited | 1436 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1456 |
+| `audited_clean` | 1457 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1759 |
+| `unaudited` | 1758 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 907 |
-| `leaf` | 1424 |
+| `medium` | 906 |
+| `leaf` | 1425 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -669,6 +669,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_three_sample_radical_reconstruction_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
@@ -9692,6 +9693,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For any dominant weight (p,q), V_(p,q) occurs in Sym^p(3) tensor Sym^q(3bar) inside V^{tensor(p+q)} as the Cartan highest-weight component.  _(class `A`)_
 - **chain closes:** True — The tensor-power expansion of chi_V^n has nonnegative irreducible multiplicities, and the Cartan product gives a positive n=p+q contribution for every (p,q). The formal convolution statement is restricted to the algebraic dual of finite-character tests and does not assert analytic closure.
 - **rationale:** The all-weight positivity follows from finite-dimensional SU(3) representation algebra: chi_V^n is a tensor-power character with nonnegative multiplicities, and the Cartan highest-weight component supplies the strict positive witness. The runner checks arithmetic consequences and packet markers rather than independently decomposing tensor powers, so runner PASS is supporting evidence, not the sole basis for the verdict. The formal distribution dictionary is explicitly algebraic/formal and does not overclaim L2, continuity, positivity, or bounded-operator closure.
+- **auditor confidence:** high
+
+### `gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13`
+
+- **Note:** [`GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md`](../../docs/GAUGED_LOG_TRANSFER_QUASILOCALITY_COMBES_THOMAS_NARROW_THEOREM_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed-background single-particle quasilocality of h[U]=arcsinh(sqrt(m^2 I+(sum_mu s_mu[U])^2)) for unitary compact-gauge link backgrounds, including gauge-covariant kernel norms and sum-of-squares carrier robustness; excludes U-integrated/dynamical, sharp-rate, and many-body Lieb-Robinson claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Combining the holomorphic functional calculus for h[U]=arcsinh(sqrt(D[U])) with the Combes-Thomas resolvent bound for the finite-range, uniformly gapped D[U] gives ||<x|h[U]|y>|| <= Const(m,d) exp(-gamma_CT ||x-y||_inf), with constants independent of U and volume.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade inputs supply the reconstructed fixed-background single-particle object and conventions; the source note then proves the uniform spectral gap, finite range, holomorphic contour, and Combes-Thomas decay directly. The runner source computes explicit operators rather than printing constants and supports the analytic proof without importing external comparators.
+- **rationale:** The load-bearing step is a genuine analytic closure over retained-grade one-hop inputs: finite range plus a background-independent gap feed a reproved Combes-Thomas estimate and Riesz-Dunford calculus. The runner verifies the operator construction, contour, CT constants, gauge covariance, free reduction, parity boundary, and falsification legs from explicit matrices, with no hard-coded contested premise or external numerical match. The clean scope is only the fixed-background single-particle theorem; the source explicitly leaves U-integrated dynamics, sharp gauged rates, and many-body LR composition outside the claim.
 - **auditor confidence:** high
 
 ### `gellmann_completeness_theorem_note_2026-05-02`

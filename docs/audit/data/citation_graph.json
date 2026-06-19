@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13"
     },
     {
@@ -52647,6 +52643,10 @@
     {
       "from": "repo.front_door_status",
       "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
         "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13",
         "harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12",
         "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
         "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12",
         "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
         "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12",
-        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
+        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
+        "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e35a71c013d0d53d8321c2e58719512ec20ce52838472c1ae46467ebb31eb5a1",
+      "note_hash": "b2688e5e4d8b185fd79ec3872b4f8995ee1d1185708e4ca3399427cc7b6a7046",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

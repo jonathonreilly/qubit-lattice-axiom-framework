@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1002 |
+| **retained_bounded** | 1003 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1447 |
+| unaudited | 1446 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1452 |
+| `audited_clean` | 1453 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1769 |
+| `unaudited` | 1768 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 899 |
-| `leaf` | 1432 |
+| `medium` | 902 |
+| `leaf` | 1429 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -116,7 +116,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 50.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1125 | 47.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 925 | 45.35 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 848 | 43.73 | `audited_clean` | **retained_bounded** |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 847 | 43.73 | `audited_clean` | **retained_bounded** |
 | 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1043 | 42.03 | `audited_clean` | **retained_bounded** |
 | 11 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 911 | 40.33 | `unaudited` | unaudited |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1103 | 40.11 | `unaudited` | unaudited |
@@ -1012,6 +1012,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -14709,6 +14710,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For 0 <= x,y <= a and beta >= 1, the saddle diagonal satisfies |beta^(-3/2) r_sad_(p,q)(beta) - H(x,y) exp[-Q(x,y)]| <= K_geom(a) beta^(-1/2), with K_geom(a)=6a^4+3a^2+3a+1, and the scaled half-slice factors are contractions.  _(class `A`)_
 - **chain closes:** True — The displayed polynomial expansion, Gaussian tail estimate, contraction argument, and ratio perturbation inequality close from the provided definitions and retained-grade one-hop inputs. The exact Wilson determinant remainder, true Wilson tail, explicit K, beta_0, and half-line gap theorem are named as outside the claimed scope.
 - **rationale:** Independent formula checks confirm the beta^(-1/2) saddle-profile constant, the A2 tail bound, the contraction of exp((beta/2)(J-I)), and the perturbation ratio inequality. The runner source performs witness computations and source-hygiene checks without importing a contested fitted K or promoting the non-authority L_sample. The source note is carefully bounded and does not claim the missing Wilson-to-saddle estimate or the full operator-norm remainder.
+- **auditor confidence:** high
+
+### `native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded strong-coupling coefficient-transfer gap for the repo-native SU(3) Wilson character packet w_beta=exp((beta/6)(chi_(1,0)+chi_(0,1))) on 0 <= beta <= 1; the 25-state half-slice packet is only a finite consistency check.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each nontrivial lambda, m_lambda^(n) <= 6^n/d_lambda with d_lambda >= 3 and c_(0,0)(beta) >= 1, hence c_lambda(beta)/c_(0,0)(beta) <= (1/3) sum_{n>=1} beta^n/n! <= (2/3) beta on 0 <= beta <= 1.  _(class `A`)_
+- **chain closes:** True — The cited character recurrence and Wilson coefficient-positivity inputs give the nonnegative SU(3) multiplicity expansion, and evaluation at the identity gives the dimension majorant used in the displayed inequality. The conclusion does not use beta=6 environment data, a continuum limit, or an external comparator.
+- **rationale:** The load-bearing proof is a genuine algebraic bound over retained-grade one-hop inputs: nonnegative character multiplicities, SU(3) dimensions, and an elementary exponential tail majorant. The primary runner implements the recurrence and rational tail checks, and its finite Bessel/matrix checks are supportive rather than load-bearing. The helper functions used by the parent for Wilson coefficients, J, and matrix exponentials are computational; hard-coded helper diagnostics are not on the parent load-bearing path. The source note’s scope fences correctly exclude the physical beta=6 Perron solve, continuum Yang-Mills, and infinite-volume mass-gap claims.
 - **auditor confidence:** high
 
 ### `native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12`

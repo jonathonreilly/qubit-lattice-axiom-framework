@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1634 |
-| Retained-grade rows, including boxed decorations | 1500 |
+| Applied audit verdicts | 1635 |
+| Retained-grade rows, including boxed decorations | 1501 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 218 |
-| Retained bounded rows | 1002 |
+| Retained bounded rows | 1003 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1447 |
+| Unaudited rows | 1446 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 52 |
 | Audited renaming rows | 30 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1450 |
+| Total pending rows | 1449 |
 | Ready rows | 18 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
 | Medium pending | 418 |
-| Leaf pending | 461 |
+| Leaf pending | 460 |
 
 Next ready rows by queue order:
 
-- [`native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`poisson_self_field_supplied_branch_core_bounded_note_2026-06-18`](../../docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18`](../../docs/SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11`](../../docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
 - [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
-- [`epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12`](../../docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12`](../../docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 938 |
-| Leaf nodes | 1521 |
+| Medium nodes | 941 |
+| Leaf nodes | 1518 |
 
 Top load-bearing rows by graph score:
 

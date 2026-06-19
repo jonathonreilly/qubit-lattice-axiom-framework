@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 307,
     "high": 264,
-    "leaf": 461,
+    "leaf": 460,
     "medium": 418
   },
   "cycle_break_target_count": 7,
@@ -17416,34 +17416,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
-      ],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/native_gauge_transfer_strong_coupling_gap_narrow_2026_06_12.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17596,6 +17568,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_neutrino_schur_suppression_named_admissions.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12",
+        "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
+        "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_epsstar_sommerfeld_derivation_2026_06_12.py",
       "transitive_descendants": 15
     },
     {
@@ -30386,32 +30384,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12",
-        "lp_two_band_exact_completion_bounded_theorem_note_2026-06-12",
-        "d2_sign_boundary_mass_collapse_bounded_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_epsstar_sommerfeld_derivation_2026_06_12.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -30547,6 +30519,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_gamma5_factor_bridge_no_go.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+      ],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12.py",
       "transitive_descendants": 0
     },
     {
@@ -39733,35 +39734,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
-      ],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -44016,5 +43988,5 @@
     }
   ],
   "ready_count": 18,
-  "total_pending": 1450
+  "total_pending": 1449
 }

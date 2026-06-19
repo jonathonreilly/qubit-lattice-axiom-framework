@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 313,
+    "critical": 312,
     "high": 270,
     "leaf": 471,
     "medium": 414
@@ -121,32 +121,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_derivation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem",
-        "wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03"
-      ],
-      "direct_in_degree": 21,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 23.066,
-      "note_path": "docs/G_BARE_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_g_bare_derivation.py",
-      "transitive_descendants": 757
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -279,10 +253,10 @@
       "criticality_rank": 3,
       "cross_confirmation_status": "awaiting_second",
       "deps": [],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "retained",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.972,
+      "load_bearing_score": 13.472,
       "note_path": "docs/HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
@@ -9107,15 +9081,15 @@
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.954,
+      "load_bearing_score": 8.448,
       "note_path": "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
-      "transitive_descendants": 247
+      "transitive_descendants": 246
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -44430,6 +44404,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 34,
-  "total_pending": 1468
+  "ready_count": 33,
+  "total_pending": 1467
 }

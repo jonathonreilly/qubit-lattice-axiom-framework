@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1003 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 37 |
-| unaudited | 1461 |
+| unaudited | 1460 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 7 |
 | `audited_clean` | 1446 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1783 |
+| `unaudited` | 1782 |
 
 | claim_type | count |
 |---|---:|
@@ -1608,6 +1608,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_interacting_matter_build_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `g_bare_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -7898,6 +7899,23 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** g_bare^2 = 2 N_c / beta = 6 / 6 = 1.  _(class `A`)_
 - **chain closes:** True — Within the stated conditional scope, CL3 supplies the canonical trace normalization and N_c=3, the Wilson small-a note supplies WM within its bounded Wilson-action scope, and beta=6 is an explicit theorem hypothesis. Substitution gives 2*3/6=1; the row does not derive beta=6 or Wilson action-surface selection.
 - **rationale:** The load-bearing step is an exact algebraic identity over the listed inputs, not a first-principles derivation or a tuned numerical match. The runner source actually performs the rational substitutions and checks the source firewall rather than merely printing a pass. The cited authorities are retained_bounded for the portions used, and their broader open bridge/action-selection boundaries are not imported into this narrowed conditional claim. This clean verdict licenses only the conditional statement, not a derivation of beta=6 or a broader g_bare row.
+- **auditor confidence:** high
+
+### `g_bare_derivation_note`
+
+- **Note:** [`G_BARE_DERIVATION_NOTE.md`](../../docs/G_BARE_DERIVATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded conditional algebra: CN + WM + supplied beta=6 + N_c=3 implies g_bare^2=1, and g_bare=1 only on the positive branch.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-g_bare_derivation_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With N_c = 3, Wilson matching gives g_bare^2 = 2 N_c / beta = 6 / 6 = 1 only after the scoped beta = 6 surface is supplied.  _(class `A`)_
+- **chain closes:** False — The algebraic implication closes after beta=6 is supplied. The restricted packet does not derive the beta=6 Wilson coefficient surface, so the chain does not close as an unconditional g_bare=1 derivation.
+- **rationale:** Issue: the load-bearing arithmetic is correct but depends on an explicitly supplied beta=6 coefficient surface. Why this blocks: CN and WM are cited, but the restricted packet contains no retained theorem deriving beta=6. Repair target: add or cite a retained derivation of the local beta=6 Wilson coefficient surface. Claim boundary until fixed: CN + WM + supplied beta=6 + N_c=3 entails g_bare^2=1.
+- **open / conditional deps cited:**
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
+  - `WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md`
+  - `G_BARE_CONSTRAINT_VS_CONVENTION_THEOREM_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `g_bare_dynamical_fixation_obstruction_note_2026-04-18`

@@ -52642,11 +52642,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_source_action_support_packet_note_2026-05-22"
+      "to": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
+      "to": "yt_source_action_support_packet_note_2026-05-22"
     },
     {
       "from": "repo.repo_organization",
@@ -101363,11 +101363,11 @@
         "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
         "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
         "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-        "yt_source_action_support_packet_note_2026-05-22",
-        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
+        "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
+        "yt_source_action_support_packet_note_2026-05-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "39d52d7730d2c455913174edea3db6ad415db9cb282b1fc4aaf8f37120b2bf14",
+      "note_hash": "5301ae143eda84ad14c758e8f41698b5ee256ed69b28363cb06556971ac43401",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

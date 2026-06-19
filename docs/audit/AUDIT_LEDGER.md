@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1004 |
+| **retained_bounded** | 1005 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1444 |
+| unaudited | 1443 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1454 |
+| `audited_clean` | 1455 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1766 |
+| `unaudited` | 1765 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 903 |
-| `leaf` | 1428 |
+| `medium` | 904 |
+| `leaf` | 1427 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -1392,6 +1392,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structured_mirror_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `structureless_dag_gravity_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `structureless_dag_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_adjoint_casimir_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `su3_bridge_pr525_flaw_fix_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -20318,6 +20319,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The safe read is that structureless causal DAGs can show TOWARD rows, and when they do the source-strength response stays close to linear on this pocket.  _(class `C`)_
 - **chain closes:** True — The runner directly constructs the stated random DAG pocket, propagates with the stated valley-linear field and kernel, and reports the TOWARD counts, local power-law fits, and no-field controls. No external dependency or graph-universality claim is needed for the narrowed harness-level statement.
 - **rationale:** The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed.
+- **auditor confidence:** high
+
+### `su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18`
+
+- **Note:** [`SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md`](../../docs/SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Native SU(2) one-plaquette Wilson class-angle computation at beta_W=16 proving u0 in [0.9761,0.9762] and therefore in [0.96,0.98].
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the declared SU(2) one-plaquette Wilson class-angle surface, P_SU2(beta)=I_2(beta)/I_1(beta), so at beta=16, u0=P_SU2(16)^(1/4)=0.976111254..., hence u0 is in [0.9761,0.9762].  _(class `C`)_
+- **chain closes:** True — The retained_bounded upstream authority supplies beta_W=16, and the source note declares the SU(2) one-plaquette class-angle integral being evaluated. The runner computes the plaquette expectation by direct quadrature and independently by the Bessel ratio, with the resulting fourth root inside the claimed interval.
+- **rationale:** The load-bearing step is a genuine numerical computation from the declared one-plaquette SU(2) Wilson integral at the cited beta value, not a definition, symbol renaming, or external comparator match. The runner source does not merely print the contested value: it evaluates the quadrature, evaluates the Bessel closed form, requires agreement, and then checks the tight and parent intervals. The only direct upstream beta authority is retained_bounded, which is retained-grade for this bounded theorem scope; no observed g2 value, fitted selector, Monte Carlo plaquette, or literature numerical interval is load-bearing.
 - **auditor confidence:** high
 
 ### `su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1005 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1443 |
+| unaudited | 1442 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1455 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1765 |
+| `unaudited` | 1764 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 904 |
-| `leaf` | 1427 |
+| `medium` | 906 |
+| `leaf` | 1425 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -1598,6 +1598,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -1836,6 +1837,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the Boolean corner cube, complementation maps the hw=1 triplet bijectively to the hw=2 triplet, commutes with the C3[111] rotation, and the scoped finite relabeling/readout/profile checks leave no distinguishing invariant within the stated finite surface.  _(class `A`)_
 - **chain closes:** True — The claim closes as finite algebra and symbolic enumeration within the stated surface. It does not require or assert a physical-species bridge, full-dynamics complementation equivariance, or any registry/status change.
 - **rationale:** The runner actually enumerates the Boolean cube, the order-48 coordinate-permutation/bit-flip relabelings, the C3 orbit structure, and the listed triplet profiles, and it symbolically verifies the circulant determinant and orientation-odd readout identities. The load-bearing step is exact finite algebra rather than a definition substitution, external comparator, or tuned numerical match. The source note is scoped to support-only finite-surface content and expressly avoids the unclosed physical bridge and registry implications.
+- **auditor confidence:** high
+
+### `acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional on the supplied AC_phi_lambda 3x3 circulant/K-orbit/readout context, the packet audits the algebraic form/value split of R-eta: sign stripping, cos(3 delta) channel, fundamental-domain folding, det-class phase erasure, and fixed-weight L3(1,2)=2/9 arithmetic, while A_R-eta remains admitted.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record additivity/orbit constancy plus exact symmetric-function algebra on H(delta) force only the even cos(3 delta) form, while the hostile constant-magnitude family |delta| = c passes those forced constraints, leaving A_R-eta as the one-parameter value atom.  _(class `A`)_
+- **chain closes:** False — The finite algebra closes for a supplied H(delta): e1/e2 are delta-blind, e3 carries delta only through cos(3 delta), and the fixed-locus arithmetic gives L3(1,2)=2/9. The chain does not close unconditionally as a theorem about the physical AC_phi_lambda readout because the circulant/K-orbit/readout context and A_R-eta h-class+h-unit identification are supplied rather than derived.
+- **rationale:** Issue: the runner genuinely verifies the finite 3x3 algebra and fixed-locus arithmetic, but the theorem is conditional on the supplied AC_phi_lambda circulant/K-orbit/readout context and on the admitted A_R-eta h-class+h-unit identification. Why this blocks: Record does not itself supply that readout context, K/CPT structure, carrier gate, or unit/readout bridge, and the source note explicitly says |delta| = 2/9 is not derived. Repair target: wire and retain the missing context dependencies, then derive or separately retire A_R-eta. Claim boundary until fixed: this is a bounded conditional narrowing of the R-eta admission, not a framework-native derivation of the delta value.
+- **open / conditional deps cited:**
+  - `ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`
+  - `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+  - `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md`
 - **auditor confidence:** high
 
 ### `action_crossover_note`

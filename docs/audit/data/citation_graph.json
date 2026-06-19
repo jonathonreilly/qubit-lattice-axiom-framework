@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11"
     },
     {
@@ -52647,6 +52643,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18",
         "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
         "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
         "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
         "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15",
         "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
-        "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13"
+        "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13",
+        "harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1b1dd383e16901041953c314daf21bc24e872ecbed822482b3a77d702c5df25b",
+      "note_hash": "1aaf426b19eb97aa34b26fa06b9d9b61d12c642c22097277fb177a355c0c40c0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -116540,7 +116540,7 @@
       "positive_theorem": 597
     },
     "edge_count": 13261,
-    "leaf_count": 1142,
+    "leaf_count": 1141,
     "node_count": 3548,
     "root_count": 1080,
     "runners_with_path": 3134

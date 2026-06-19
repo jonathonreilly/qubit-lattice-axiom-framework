@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 218 |
-| **retained_bounded** | 1005 |
+| **retained_bounded** | 1006 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1440 |
+| unaudited | 1439 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1455 |
+| `audited_clean` | 1456 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1762 |
+| `unaudited` | 1761 |
 
 | claim_type | count |
 |---|---:|
@@ -452,6 +452,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `equivalence_principle_harness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -6443,6 +6444,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The finite two-band Harper/PT runner computes mu*_PT(m,T) on the stated mass-temperature grid and shows that mu*_PT(m,T)^2 - m^2 has a per-temperature mean eps*(T)^2 with maximum relative spread below 2%.  _(class `C`)_
 - **chain closes:** True — The runner source directly constructs the finite Harper/PT matrices, evaluates the full PT response, bisects roots, and derives the eps*(T) table from those computed roots. The cited authorities are retained_bounded and no external comparator, empirical value, or hidden bridge is needed for the stated finite-grid scope.
 - **rationale:** The load-bearing result is a first-principles finite-dimensional computation on the declared Harper/PT surface, not a renaming or imported curve. The only imported numerical anchor is used as a provenance sanity check, while the eps*(T) values and spreads are computed from the PT roots in the runner. The printed root table also supports the disclosed residual pattern: per-temperature collapse values decrease with m and have residual signs (+,+,+,-). The claim is clean only within its bounded sampled-grid scope and does not establish continuum behavior or exact m-independence.
+- **auditor confidence:** high
+
+### `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12`
+
+- **Note:** [`EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](../../docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the fixed finite one-particle two-band Harper/PT grid with Q=24, Ly=2, GL=20, eta=0.05, and the listed temperature samples, the located T=0 m=0 branch matches the low-T extrapolated branch within tolerance, but the fixed-kernel occupation-smearing Sommerfeld coefficient does not reproduce the m=0 or wave-10 T^2 slopes.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The fixed Sommerfeld calculation from the same T=0 surface gives alpha_analytic = -9.266358431847, opposite in sign and far mismatched from the computed finite-T m=0 slope d = 3.877078419951.  _(class `C`)_
+- **chain closes:** True — The runner source constructs the finite Harper/PT matrices, computes the boundary roots, T=0 surface root, regression slopes, and Sommerfeld coefficient rather than importing the contested mismatch. The one-hop cited authorities are marked retained_bounded, and the claim stays inside the declared finite-grid scope.
+- **rationale:** The load-bearing mismatch is a direct finite-dimensional computation from the runner's constructed operators and is confirmed by the printed runner output and arithmetic consistency of the reported fits. The frozen anchors are provenance checks, not the contested result. The no-go language is narrowed to the fixed T=0 occupation-smearing coefficient, and the note explicitly leaves full T-differentiation open, so the negative claim is not over-broad within its bounded scope.
 - **auditor confidence:** high
 
 ### `equivalence_principle_harness_note`

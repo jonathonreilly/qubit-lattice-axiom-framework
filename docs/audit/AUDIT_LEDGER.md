@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1003 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1446 |
+| unaudited | 1445 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1453 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1768 |
+| `unaudited` | 1767 |
 
 | claim_type | count |
 |---|---:|
@@ -1636,6 +1636,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16491,6 +16492,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source genuinely constructs the listed operators, runs the fixed-point propagation/field solve, and computes convergence and beta values rather than hard-coding the contested outputs. The note narrows the conclusion to the finite sampled runner surface and explicitly excludes continuum-alpha, continuum-limit, and all-operator exhaustiveness claims.
 - **rationale:** Within the bounded finite-runner scope, the completed cache and runner source support the observed selection pattern. The cited authorities are retained-grade for audit purposes, and the current claim does not rely on promoting the parent Gate B chain. The result is clean only as a finite-grid diagnostic, not as continuum Poisson uniqueness or exhaustiveness over all local symmetric operators.
 - **auditor confidence:** medium
+
+### `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18`
+
+- **Note:** [`POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md`](../../docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite verification that, given the supplied per-layer 2D Poisson equation, point source, zero boundary, longitudinal factor, and diagnostic readouts, the declared lattice branch has the cached residual, centroid shifts, near-linear slopes, Born cancellation, and s=0 null behavior.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-poisson_self_field_supplied_branch_core_bounded_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Then the runner computes, rather than hard-codes, the finite supplied-branch claims listed in the Answer section.  _(class `C`)_
+- **chain closes:** False — The visible wrapper runner delegates the load-bearing computation to scripts/poisson_self_field.py, but that source is not included in the restricted packet. Without it, the cached PASS output cannot verify that the imported field, graph, propagation, centroid, and detector routines actually compute the stated branch rather than hard-code or import it.
+- **rationale:** Issue: the primary runner dynamically imports scripts/poisson_self_field.py for constants, graph construction, Poisson fields, propagation, centroid, and detector probabilities, but that computation source is absent from the restricted packet. Why this blocks: the wrapper source and cached stdout show intended finite checks, but they do not expose the imported load-bearing functions for hard-code, premise-import, or formula verification. Repair target: include the full SHA-pinned scripts/poisson_self_field.py source/cache excerpt or provide an independent sliced runner implementing the same finite branch. Claim boundary until fixed: the note's supplied-input scope is appropriately narrow, but only the wrapper certificate is auditable here.
+- **auditor confidence:** high
 
 ### `poisson_self_gravity_born_audit_note`
 

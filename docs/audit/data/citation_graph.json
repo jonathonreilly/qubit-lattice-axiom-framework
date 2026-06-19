@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18"
     },
     {
@@ -52647,6 +52643,10 @@
     {
       "from": "repo.front_door_status",
       "to": "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
         "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
         "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
         "su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18",
         "acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11",
         "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
-        "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12"
+        "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12",
+        "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1b7b94f43f7ce1aa2214e1c8bbef2df01244749ce74d42cff4bab55dedd87ae8",
+      "note_hash": "e2537c20a6bd3ac68ead265fc7909efe25cd04ca9436568f34376ca770818ee5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -116540,7 +116540,7 @@
       "positive_theorem": 597
     },
     "edge_count": 13261,
-    "leaf_count": 1145,
+    "leaf_count": 1144,
     "node_count": 3548,
     "root_count": 1080,
     "runners_with_path": 3134

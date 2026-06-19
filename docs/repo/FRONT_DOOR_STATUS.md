@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1646 |
-| Retained-grade rows, including boxed decorations | 1506 |
+| Applied audit verdicts | 1647 |
+| Retained-grade rows, including boxed decorations | 1507 |
 | Retained positive theorems | 220 |
-| Retained no-go rows | 218 |
+| Retained no-go rows | 219 |
 | Retained bounded rows | 1008 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1435 |
+| Unaudited rows | 1434 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 58 |
 | Audited renaming rows | 30 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1438 |
-| Ready rows | 7 |
+| Total pending rows | 1437 |
+| Ready rows | 6 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
-| Medium pending | 418 |
+| Medium pending | 417 |
 | Leaf pending | 449 |
 
 Next ready rows by queue order:
 
-- [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`post_record_selector_tangent_readout_weight_prototype_2026-06-06`](../../docs/POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12`](../../docs/SLAB_BOUNDARY_ETA_GLOBALLY_ZERO_PER_EDGE_NONUNIVERSAL_NO_FRACTIONAL_CARRIER_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
@@ -82,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 944 |
-| Leaf nodes | 1515 |
+| Medium nodes | 940 |
+| Leaf nodes | 1519 |
 
 Top load-bearing rows by graph score:
 

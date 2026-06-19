@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 307,
-    "high": 268,
-    "leaf": 473,
-    "medium": 418
+    "high": 267,
+    "leaf": 472,
+    "medium": 419
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -8957,32 +8957,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
-        "yt_source_action_support_packet_note_2026-05-22"
-      ],
-      "direct_in_degree": 14,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.17,
-      "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
-      "transitive_descendants": 35
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17635,6 +17609,28 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py",
       "transitive_descendants": 16
     },
     {
@@ -30480,28 +30476,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44414,6 +44388,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 28,
-  "total_pending": 1466
+  "ready_count": 27,
+  "total_pending": 1465
 }

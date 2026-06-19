@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
     },
     {
@@ -52647,6 +52643,10 @@
     {
       "from": "repo.front_door_status",
       "to": "d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
         "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
         "gate_b_connectivity_tolerance_note",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
         "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
         "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
-        "d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18"
+        "d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18",
+        "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4d55c30bdc4e04969ea953cb54d38889d6a876e64df39136f1ea10cac5f655cc",
+      "note_hash": "659fede0bad11b5646d7ae4eb5d04d5797ed43350c7dc5e8a39f61892fb3a84b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

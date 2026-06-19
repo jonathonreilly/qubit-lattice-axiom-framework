@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 996 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1463 |
+| unaudited | 1462 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
-| ~~audited_renaming~~ | 29 |
+| ~~audited_renaming~~ | 30 |
 | ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -73,8 +73,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
-| `audited_renaming` | 29 |
-| `unaudited` | 1785 |
+| `audited_renaming` | 30 |
+| `unaudited` | 1784 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 503 |
-| `medium` | 889 |
-| `leaf` | 1441 |
+| `medium` | 890 |
+| `leaf` | 1440 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -124,7 +124,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 905 | 38.82 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1001 | 38.47 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 786 | 38.12 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1117 | 36.63 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1116 | 36.62 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1088 | 35.59 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 927 | 34.86 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 286 | 34.66 | `unaudited` | unaudited |
@@ -132,7 +132,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1007 | 31.98 | `unaudited` | meta |
 | 23 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 732 | 31.52 | `unaudited` | unaudited |
 | 24 | `left_handed_charge_matching_note` | decoration | critical | 879 | 31.28 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 207 | 31.20 | `audited_clean` | **retained** |
+| 25 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 199 | 31.14 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1760,6 +1760,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -22911,6 +22912,21 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **chain closes:** True — The algebra closes: for any common nonzero factor c, (c g_Y)^2/((c g_Y)^2+(c g_2)^2)=g_Y^2/(g_Y^2+g_2^2). The cited Higgs note supplies the SM ratio and the parent supplies the universal rescaling/weak-angle-preservation context; no kappa_EW value is selected.
 - **rationale:** The load-bearing step is a class-A algebraic identity, and the runner genuinely symbolically checks that the common-factor difference simplifies to zero. There is no external comparator, tuned numerical input, or first-principles compute. Because the result is only an algebraic corollary of the parent kappa-family universality statement plus the standard SM ratio definition, it is decoration rather than an independent bounded theorem.
 - **decoration parent:** `yt_ew_color_projection_theorem`
+- **auditor confidence:** high
+
+### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`
+
+- **Note:** [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Compatibility/renaming support between the Y_T primitive signed record carrier and the {-1,+1} sigma_z projective readout, plus finite RN score/composition algebra.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-yt_lsp_signed_record_source_readout_support_note_2026-05-24-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Y_T primitive signed source record epsilon_x is identified with the LSP sharp-projective signed Pauli readout at site x.  _(class `F`)_
+- **chain closes:** True — The finite algebra closes at the carrier-compatibility level: P_plus - P_minus = sigma_z has outcomes {-1,+1}, and the RN score at h=0 is epsilon_x. It does not derive generation of the Y_T source record by the projective measurement; it only matches the signed carrier representation.
+- **rationale:** The Pauli projector identities and finite RN source algebra are correctly checked, and the cited retained-bounded inputs supply the local qubit carrier, canonical Luders readout, and primitive signed RN source record. The decisive move is an asserted identity between two existing signed carriers, not a derivation that the primitive Y_T record is produced by the Pauli measurement. The runner verifies isomorphic {-1,+1} algebra and boundary prose, so the row is valid as narrow compatibility/renaming support rather than an independent derivation.
+- **open / conditional deps cited:**
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
 - **auditor confidence:** high
 
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`

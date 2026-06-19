@@ -52618,11 +52618,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gate_b_connectivity_tolerance_note"
+      "to": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
+      "to": "yt_source_covariance_normalization_support_note_2026-05-24"
     },
     {
       "from": "repo.front_door_status",
@@ -52646,7 +52646,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_source_covariance_normalization_support_note_2026-05-24"
+      "to": "gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gate_b_connectivity_tolerance_note",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+        "yt_source_covariance_normalization_support_note_2026-05-24",
         "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
         "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
         "d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18",
         "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18",
         "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18",
-        "yt_source_covariance_normalization_support_note_2026-05-24"
+        "gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ea35f046b36489d3422aef5a35d00af293ad1692c0328309702d3b5c1fa3c715",
+      "note_hash": "c2550011aa7494b9fd3aa62935a1656c0a133059b73bd4e9b2906a23014d40a8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

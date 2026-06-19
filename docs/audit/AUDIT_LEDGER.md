@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 219 |
-| **retained_bounded** | 1008 |
+| **retained_bounded** | 1009 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1434 |
+| unaudited | 1433 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1459 |
+| `audited_clean` | 1460 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1756 |
+| `unaudited` | 1755 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 901 |
-| `leaf` | 1430 |
+| `medium` | 898 |
+| `leaf` | 1433 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -1014,6 +1014,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14827,6 +14828,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Rows are marked CERTIFIED yes exactly when (block_lambda1_upper + tail_radius) / lambda0_lower < 1, with block_lambda1_upper supplied by trace or Hilbert-Schmidt deflation and tail_radius by the path-count/outside-row majorant.  _(class `C`)_
 - **chain closes:** True — The cited recurrence and positivity authorities supply J, exact nonnegative Wilson coefficient ratios, and the half-slice factorization surface within the stated discrete scope. The runner constructs the recurrence layers, coefficient intervals, finite block bounds, Hilbert-Schmidt deflation, and path-count tail majorants rather than importing the frontier numbers.
 - **rationale:** The load-bearing certificate is a finite first-principles computation over the repo-native SU(3) packet operator, not a definition substitution or tuned numerical comparison. The primary runner source computes exact rational coefficient and tail bounds and uses the helper import only for floating diagnostics and finite outer-box witness checks, not for the exact certification inequality. The cited authorities are retained-grade for the scoped inputs, and their open physical-environment identifications are explicitly outside this note's claim boundary.
+- **auditor confidence:** high
+
+### `native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-grid certificate for the repo-native diagonal SU(3) Wilson coefficient-transfer operator C_beta on the declared beta rows through beta=117/25, excluding continuum, R^4, physical beta=6 Perron, and full infinite half-slice claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner computes exact rational SU(3) character-recursion partial sums through ORDER=80 and combines dimension-majorant tail intervals to certify lambda_1/lambda_0 <= block_lambda1_upper + outside_tail_upper on the declared beta grid.  _(class `C`)_
+- **chain closes:** True — The cited recurrence and positivity inputs supply the coefficient expansion and nonnegative dimension majorant; the runner then performs a genuine exact-rational finite computation with an explicit outside-block tail bound. The claimed frontier is only a declared-grid bounded certificate, so no physical beta=6 or continuum bridge is needed.
+- **rationale:** The load-bearing certificate is computed from the SU(3) character recurrence and tail inequalities rather than imported from another note or fitted to an external comparator. The primary runner does not hard-code the contested beta-table values; it builds multiplicity layers, coefficient intervals, block maxima, and outside-tail bounds directly, while the helper import is used for float cross-checks only. All cited authorities in the restricted packet are retained-grade for the scoped ingredients used here, and their open beta=6/environment residuals are outside the audited claim boundary.
 - **auditor confidence:** high
 
 ### `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`

@@ -12,9 +12,9 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1614 |
-| Retained-grade rows, including boxed decorations | 1492 |
-| Retained positive theorems | 219 |
+| Applied audit verdicts | 1615 |
+| Retained-grade rows, including boxed decorations | 1493 |
+| Retained positive theorems | 220 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 996 |
 | Boxed decorations under retained parents | 60 |
@@ -33,20 +33,20 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1470 |
-| Ready rows | 29 |
+| Total pending rows | 1469 |
+| Ready rows | 31 |
 | Cycle-break targets | 7 |
-| Critical pending | 310 |
+| Critical pending | 309 |
 | High pending | 270 |
 | Medium pending | 415 |
 | Leaf pending | 475 |
 
 Next ready rows by queue order:
 
-- [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; audit_in_progress
 - [`hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`yt_source_action_support_packet_note_2026-05-22`](../../docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md) - critical; audit_in_progress
 - [`hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18`](../../docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - high; unaudited
+- [`koide_mru_demotion_note_2026-04-20`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md) - high; unaudited
 - [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
 - [`gate_b_connectivity_tolerance_note`](../../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
@@ -57,7 +57,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **425**.
+- Non-retained-grade cited rows in publication tables: **424**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -66,13 +66,13 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 85 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
+| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

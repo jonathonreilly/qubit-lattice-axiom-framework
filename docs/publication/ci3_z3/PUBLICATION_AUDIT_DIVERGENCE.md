@@ -22,7 +22,6 @@ publication tables phrase it.
 | medium | `unaudited` | 85 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_renaming` | 1 |
@@ -31,7 +30,7 @@ publication tables phrase it.
 | medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 425
+**Total non-retained-grade rows in publication tables:** 424
 
 ## Per-row breakdown
 
@@ -103,7 +102,6 @@ publication tables phrase it.
 | critical | `koide_cl3_selector_gap_note_2026-04-19` | `open_gate` | `audited_clean` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | critical | `koide_explicit_calculations_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md |
 | critical | `koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `koide_q_delta_closure_package_readme_2026-04-21` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | `audited_renaming` | `audited_renaming` | DERIVATION_ATLAS.md |

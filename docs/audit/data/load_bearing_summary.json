@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 581,
     "high": 508,
-    "leaf": 1521,
-    "medium": 938
+    "leaf": 1518,
+    "medium": 941
   },
   "flagship_signal_used": false,
   "node_count": 3548,
@@ -67,8 +67,8 @@
     {
       "claim_id": "yt_ward_identity_derivation_theorem",
       "criticality": "critical",
-      "load_bearing_score": 43.73,
-      "transitive_descendants": 848
+      "load_bearing_score": 43.728,
+      "transitive_descendants": 847
     },
     {
       "claim_id": "cl3_color_automorphism_theorem",

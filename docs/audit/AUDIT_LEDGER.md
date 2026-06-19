@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1002 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1451 |
+| unaudited | 1450 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1451 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1773 |
+| `unaudited` | 1772 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 896 |
-| `leaf` | 1435 |
+| `medium` | 897 |
+| `leaf` | 1434 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -1613,6 +1613,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `g_bare_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -8112,6 +8113,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** In the SHA-pinned runner cache, the harness reports 36/36 TOWARD and F~M=1.00 for each declared drift/restore row.  _(class `C`)_
 - **chain closes:** True — The chain closes for the bounded cache-table claim: the runner SHA matches the cache, and the source code deterministically constructs the declared seeded scenarios and computes the TOWARD fractions and F~M slopes. The admitted runner ingredients limit the scope but are not hidden premises for a physical Gate B bridge theorem.
 - **rationale:** The runner computes the table from fixed scenario parameters, fixed seeds, propagation loops, detector-weighted centroids, and log-slope regression; it does not hard-code the 36/36 TOWARD or F~M=1.00 outcomes. There is no external physical comparator or tuned observational value being matched in the audited claim. The note explicitly confines the result to the SHA-pinned finite harness certificate and excludes grown-geometry derivation, source/readout/kernel derivation, retained physical gravity readout, and clean Gate B/gravity closure.
+- **auditor confidence:** high
+
+### `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18`
+
+- **Note:** [`GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** GB-S2a only: exact finite complex-amplitude path-sum algebra for the supplied finite Gate B layered DAG and edge kernel, excluding physical readout semantics and Gate B closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The propagation recursion a_j(new) += a_i(old) W_ij on a finite layered DAG equals the finite directed path sum over unblocked source-to-detector paths with edge-weight products.  _(class `A`)_
+- **chain closes:** False — The mathematical step is a genuine finite-DAG algebraic identity, and the primary runner contains nontrivial enumeration checks. However, the primary runner imports the load-bearing Gate B helper module while the packet says no helper imports were detected, so the restricted packet cannot independently verify the current runner kernel it claims to audit.
+- **rationale:** Within the declared bounded scope, the note does not overclaim physical Gate B dynamics; it narrows the claim to supplied finite propagation algebra. The runner output reports all checks passing and the visible primary runner implements independent path enumeration, linearity, blocked-node, and normalization checks rather than merely printing constants. But the visible source imports `scripts/gate_b_connectivity_tolerance.py` for `_propagate`, graph construction, field construction, blocked nodes, detector probabilities, and kernel constants, and that helper source is absent from the packet despite being load-bearing. This is a runner artifact completeness defect, not a substantive disproof of the algebraic claim.
 - **auditor confidence:** high
 
 ### `gate_b_grown_distance_law_note`

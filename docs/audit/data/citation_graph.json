@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18"
     },
     {
@@ -52647,6 +52643,10 @@
     {
       "from": "repo.front_door_status",
       "to": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18",
         "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18",
         "gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18",
         "gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18",
         "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
         "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
         "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
-        "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
+        "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
+        "su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "86acd8410413328f67801ca706d6706dcf7d09b550fe5c6f04a5772f6f797d24",
+      "note_hash": "b8e72fd51e78369f432c9c722f7c74ed175c505f41260baa6247db7db3e10c48",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

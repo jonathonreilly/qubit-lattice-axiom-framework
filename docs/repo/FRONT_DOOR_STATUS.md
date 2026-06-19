@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1633 |
-| Retained-grade rows, including boxed decorations | 1499 |
+| Applied audit verdicts | 1634 |
+| Retained-grade rows, including boxed decorations | 1500 |
 | Retained positive theorems | 220 |
-| Retained no-go rows | 217 |
+| Retained no-go rows | 218 |
 | Retained bounded rows | 1002 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1448 |
+| Unaudited rows | 1447 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 52 |
 | Audited renaming rows | 30 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1451 |
+| Total pending rows | 1450 |
 | Ready rows | 18 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
 | Medium pending | 418 |
-| Leaf pending | 462 |
+| Leaf pending | 461 |
 
 Next ready rows by queue order:
 
-- [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`poisson_self_field_supplied_branch_core_bounded_note_2026-06-18`](../../docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18`](../../docs/SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11`](../../docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
-- [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
+- [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
+- [`epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12`](../../docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 937 |
-| Leaf nodes | 1522 |
+| Medium nodes | 938 |
+| Leaf nodes | 1521 |
 
 Top load-bearing rows by graph score:
 
@@ -93,6 +93,6 @@ Top load-bearing rows by graph score:
 - `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
 - `observable_principle_from_axiom_note` - critical; 909 descendants; score 60.330
 - `plaquette_self_consistency_note` - critical; 1015 descendants; score 52.989
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
-- `key_terminology` - critical; 1125 descendants; score 46.637
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 925 descendants; score 44.355
+- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 50.014
+- `key_terminology` - critical; 1125 descendants; score 47.637
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 925 descendants; score 45.355

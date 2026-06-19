@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1010 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1430 |
+| unaudited | 1429 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1461 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1752 |
+| `unaudited` | 1751 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 892 |
-| `leaf` | 1439 |
+| `medium` | 890 |
+| `leaf` | 1441 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -109,24 +109,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1658 | 147.70 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1051 | 65.54 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1050 | 65.54 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1422 | 60.98 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 909 | 60.33 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1015 | 52.99 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 50.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1125 | 47.64 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 925 | 45.35 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 848 | 43.73 | `audited_clean` | **retained_bounded** |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1043 | 42.03 | `audited_clean` | **retained_bounded** |
-| 11 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 911 | 40.33 | `unaudited` | unaudited |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1032 | 50.01 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1124 | 47.64 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 924 | 45.35 | `unaudited` | unaudited |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 847 | 43.73 | `audited_clean` | **retained_bounded** |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1042 | 42.03 | `audited_clean` | **retained_bounded** |
+| 11 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 910 | 40.33 | `unaudited` | unaudited |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1103 | 40.11 | `unaudited` | unaudited |
-| 13 | `native_gauge_closure_note` | positive_theorem | critical | 1388 | 39.44 | `audited_clean` | **retained** |
+| 13 | `native_gauge_closure_note` | positive_theorem | critical | 1387 | 39.44 | `audited_clean` | **retained** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 905 | 38.82 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1002 | 38.47 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1001 | 38.47 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 786 | 38.12 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1117 | 36.63 | `audited_clean` | **retained** |
-| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 928 | 35.86 | `audited_clean` | **retained_bounded** |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1089 | 35.59 | `audited_clean` | **retained_bounded** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1116 | 36.62 | `audited_clean` | **retained** |
+| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 927 | 35.86 | `audited_clean` | **retained_bounded** |
+| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1088 | 35.59 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 286 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 735 | 33.02 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1008 | 31.98 | `unaudited` | meta |
@@ -1660,6 +1660,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -21442,6 +21443,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the verbatim license every licensed closed-loop support collapses to a single plaquette, and under the pairwise-proximity weakening no licensed plaquette product can contain a complementary plane pair, so no cross-plane F tilde F monomial can appear.  _(class `A`)_
 - **chain closes:** True — The finite-combinatorial and symbolic steps close from the retained_bounded license and per-plaquette cross-plane authorities. The theorem remains explicitly conditional on those local support classes and does not derive the license, dynamics, winding sectors, or theta closure.
 - **rationale:** The runner does real finite enumeration and symbolic coefficient checks rather than merely printing expected verdicts, and the two dependency-pin checks are limited to verifying the consumed upstream text. Independently, the verbatim-license distance-2 argument confines closed supports to the finite plaquette classification, while the complementary-plane W exclusion follows from projecting one plaquette to a unit square and the complementary plaquette to one integer point, with no L1-radius-1 point covering all four corners. The coefficient criterion is also algebraic: a product of one-plane factors has a cross-plane mixed coefficient only when both complementary plane variables occur. The source states the remaining chain-connected and global-winding complements, so the audited scope is narrow rather than overclosed.
+- **auditor confidence:** high
+
+### `theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11`
+
+- **Note:** [`THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](../../docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within a supplied determinant-readout context satisfying Record additivity/orbit constancy, and within the supplied Gaussian/per-plaquette action class for the action-level clause, registrable readouts of det(M_u M_d) factor through |det| and carry no phase component; no physical W2 or unrestricted action-level identification is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record additivity over disjoint records plus multiplicative determinant union data forces F(zw)=F(z)+F(w), and K/CPT orbit constancy makes the additive phase component both odd and even, hence zero.  _(class `A`)_
+- **chain closes:** True — The supplied-context algebra closes: determinant multiplicativity, Record additivity, and K/CPT evenness imply the homomorphism/even-odd erasure, with finite nullspace checks supporting the claimed constrained solution space. The closure is conditional because W2 physical registrability and the theta_eff/action-level determinant entry are explicitly supplied premises.
+- **rationale:** The load-bearing step is class A algebra over supplied inputs, not a first-principles framework computation. The runner source performs real finite algebra, nullspace, hostile-function, and symbolic per-plaquette checks, and it also verifies that the note quarantines W2 and broader physical action-level claims. Because the determinant readout context, W2 registrability, and physical theta_eff/action-level reduction are not derived in the restricted packet, the row remains conditional despite closing on its stated supplied-context surface.
+- **open / conditional deps cited:**
+  - `THETA_P2_K_CPT_DETERMINANT_CHARACTER_PHASE_ERASURE_BOUNDED_NOTE_2026-06-10.md`
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
 - **auditor confidence:** high
 
 ### `third_grown_family_boundary_note`

@@ -3,7 +3,7 @@
     "critical": 307,
     "high": 264,
     "leaf": 449,
-    "medium": 413
+    "medium": 412
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -172,12 +172,12 @@
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.553,
+      "load_bearing_score": 15.551,
       "note_path": "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py",
-      "transitive_descendants": 1061
+      "transitive_descendants": 1060
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -203,12 +203,12 @@
       "direct_in_degree": 13,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 20.411,
+      "load_bearing_score": 20.41,
       "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/axiom_first_lattice_noether_check.py",
-      "transitive_descendants": 962
+      "transitive_descendants": 961
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -235,12 +235,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.856,
+      "load_bearing_score": 16.855,
       "note_path": "docs/STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/probe_three_states_direct_derivation.py",
-      "transitive_descendants": 926
+      "transitive_descendants": 925
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -271,12 +271,12 @@
       "direct_in_degree": 63,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 45.355,
+      "load_bearing_score": 45.353,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_staggered_dirac_substep4_ac_check_2026_05_07_substep4ac.py",
-      "transitive_descendants": 925
+      "transitive_descendants": 924
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -302,12 +302,12 @@
       "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.341,
+      "load_bearing_score": 16.339,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_staggered_dirac_substep4_labeling_no_go_2026_05_17.py",
-      "transitive_descendants": 916
+      "transitive_descendants": 915
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -354,42 +354,12 @@
       "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.838,
+      "load_bearing_score": 16.836,
       "note_path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py",
-      "transitive_descendants": 914
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
-        "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.334,
-      "note_path": "docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py",
-      "transitive_descendants": 912
+      "transitive_descendants": 913
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -421,6 +391,36 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_bridge_bounded_note_2026-05-26",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+        "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.333,
+      "note_path": "docs/STAGGERED_DIRAC_GATE_AC_PHI_LAMBDA_LABELING_CONVENTION_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/staggered_dirac_gate_ac_phi_lambda_labeling_convention_accepted_premise_runner.py",
+      "transitive_descendants": 911
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -446,12 +446,12 @@
       "direct_in_degree": 53,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 40.333,
+      "load_bearing_score": 40.331,
       "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py",
-      "transitive_descendants": 911
+      "transitive_descendants": 910
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -17411,34 +17411,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "strong_cp_theta_zero_note",
-        "per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09",
-        "theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09",
-        "strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py",
-      "transitive_descendants": 15
     },
     {
       "audit_independence_required": "any_non_self",
@@ -43552,6 +43524,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 2,
-  "total_pending": 1433
+  "ready_count": 1,
+  "total_pending": 1432
 }

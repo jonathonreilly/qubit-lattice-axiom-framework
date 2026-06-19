@@ -52618,19 +52618,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24"
     },
     {
       "from": "repo.front_door_status",
@@ -52647,6 +52635,18 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gate_b_connectivity_tolerance_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
-        "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
         "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
-        "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
         "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
         "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
         "yt_source_action_support_packet_note_2026-05-22",
-        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
+        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+        "gate_b_connectivity_tolerance_note",
+        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9e01ec7806b9619d4ab0be13cabd121da45c95c660ca69dd8df8ee65713cd51f",
+      "note_hash": "962dc267bd9f56084477a981c54830819d8e20388eeffea24dd4484d6c802b9d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

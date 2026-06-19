@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 311,
+    "critical": 310,
     "high": 270,
     "leaf": 475,
     "medium": 415
@@ -121,31 +121,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
-      "claim_scope": "Pure algebraic SU(3) statement on the cited Gell-Mann carrier and d^{abc} tensor: complex-conjugate generators preserve the bracket and flip the cubic anomaly index, giving A(3bar)=-1 and two-copy contribution -2, without auditing any matter-existence or physical-color bridge.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "cl3_color_automorphism_theorem",
-        "su3_dabc_symmetric_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.109,
-      "note_path": "docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py",
-      "transitive_descendants": 275
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -7381,30 +7356,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Audited only the bounded algebraic implication that the imposed SHIFT plus neutral-branch convention gives the stated right-handed hypercharges and that those values satisfy the stated color, gravitational, and cubic anomaly equations under the retained LH trace dependency.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "retained_pending_chain",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.624,
-      "note_path": "docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py",
-      "transitive_descendants": 278
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
@@ -7459,6 +7410,30 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_n_f_v3_trace_check_2026-05-07_w2binary.py",
+      "transitive_descendants": 277
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
+      "claim_id": "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
+      "claim_scope": "Audited only the bounded algebraic implication that the imposed SHIFT plus neutral-branch convention gives the stated right-handed hypercharges and that those values satisfy the stated color, gravitational, and cubic anomaly equations under the retained LH trace dependency.",
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": "awaiting_second",
+      "deps": [
+        "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "retained_pending_chain",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.119,
+      "note_path": "docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "queue_reason": "audit_in_progress",
+      "ready": false,
+      "runner_path": "scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py",
       "transitive_descendants": 277
     },
     {
@@ -7554,33 +7529,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "graph_first_su3_integration_note",
-        "left_handed_charge_matching_note",
-        "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
-        "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17"
-      ],
-      "direct_in_degree": 14,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.103,
-      "note_path": "docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_cubic_anomaly_cancellation.py",
-      "transitive_descendants": 274
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "l3a_v3_trace_surface_bounded_obstruction_note_2026-05-07_l3a",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -7642,6 +7590,33 @@
       "ready": false,
       "runner_path": "scripts/frontier_gauge_scalar_bridge_3plus1_native_tube_staging.py",
       "transitive_descendants": 274
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "graph_first_su3_integration_note",
+        "left_handed_charge_matching_note",
+        "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
+        "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17"
+      ],
+      "direct_in_degree": 13,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 14.598,
+      "note_path": "docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_su3_cubic_anomaly_cancellation.py",
+      "transitive_descendants": 273
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -9086,15 +9061,15 @@
         "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
         "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.845,
+      "load_bearing_score": 12.443,
       "note_path": "docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py",
-      "transitive_descendants": 114
+      "transitive_descendants": 122
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17674,15 +17649,15 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.144,
+      "load_bearing_score": 7.0,
       "note_path": "docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gate_b_connectivity_tolerance.py",
-      "transitive_descendants": 24
+      "transitive_descendants": 31
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17700,15 +17675,15 @@
         "yt_source_action_support_packet_note_2026-05-22",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
+      "load_bearing_score": 5.954,
       "note_path": "docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py",
-      "transitive_descendants": 15
+      "transitive_descendants": 30
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44533,6 +44508,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 30,
-  "total_pending": 1471
+  "ready_count": 29,
+  "total_pending": 1470
 }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 996 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1464 |
+| unaudited | 1463 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1444 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1786 |
+| `unaudited` | 1785 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 503 |
-| `medium` | 888 |
-| `leaf` | 1442 |
+| `medium` | 889 |
+| `leaf` | 1441 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -1599,6 +1599,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -6945,6 +6946,22 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** If a physical charge U(1) acts as a scalar on the generation triplet, it commutes with C and cannot orient the generation doublet or select the det_C reading.  _(class `A`)_
 - **chain closes:** True — The scalar action is central, so [iI,C]=0 and it supplies no orientation of the generation doublet. Independently, (exp(i alpha)C)^3=exp(3i alpha)I, so order three allows only alpha=0,2pi/3,4pi/3 modulo 2pi.
 - **rationale:** The load-bearing route-pruning statement is a direct algebraic identity about scalar matrices and the C3 order condition, not a definition substitution or numerical fit. The runner source actually computes the spectral endpoint, commutator, and order-three rephasing obstruction, while the charged-sector and neutrino values are correctly bounded as empirical comparators rather than promoted to selectors. The packet explicitly does not claim that physical Standard Model gauge U(1) actions are generation-scalar or that a physical det_C/det_R selector has been derived.
+- **auditor confidence:** high
+
+### `flavor_carrier_from_axioms_momentum_forced_2026-05-31`
+
+- **Note:** [`FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Layer-A momentum carrier-type support on the supplied finite translation representative, with the parent package's hw=1 locus, r=1/2 basepoint, and index-density readout left conditional.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-flavor_carrier_from_axioms_momentum_forced_2026-05-31-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The spectral theorem for the commuting translation unitaries forces a BZ/momentum decomposition, and local position-diagonal observables are generation-blind while momentum-block projectors separate the labels.  _(class `C`)_
+- **chain closes:** False — The restricted packet closes the Layer-A carrier-type result, but the parent package does not force the physical hw=1 locus from baseline. The r=1/2 basepoint and delta=2/9 readout class are also explicit separate selections.
+- **rationale:** Issue: the parent combines a clean momentum-carrier type theorem with an unclosed physical-locus/readout/basepoint package. Why this blocks: the staggered/KS authority is retained only on supplied kinetic/scalarization premises and does not force the physical species locus from baseline; the parent also leaves r=1/2 and the index-density readout as separate inputs. Repair target: prove the staggered/KS hw=1 physical locus from baseline and close the r=1/2 plus index-density readout selections. Claim boundary until fixed: cite the split note for Layer-A momentum type and treat this parent only as conditional consolidation/gate alignment.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
+  - `KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`
 - **auditor confidence:** high
 
 ### `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15`

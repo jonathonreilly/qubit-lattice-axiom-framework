@@ -52618,15 +52618,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_mru_demotion_note_2026-04-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
     },
     {
       "from": "repo.front_door_status",
       "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
     },
     {
       "from": "repo.front_door_status",
@@ -52646,7 +52646,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
+      "to": "d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_mru_demotion_note_2026-04-20",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+        "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
         "gate_b_connectivity_tolerance_note",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
         "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
         "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
-        "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
+        "d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9a9324789193793fc1bbd2099c40ed94441ea9217e9cb31c5219337521425d26",
+      "note_hash": "4d55c30bdc4e04969ea953cb54d38889d6a876e64df39136f1ea10cac5f655cc",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

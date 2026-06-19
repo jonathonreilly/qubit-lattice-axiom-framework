@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 220 |
-| **retained_no_go** | 218 |
+| **retained_no_go** | 219 |
 | **retained_bounded** | 1008 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1435 |
+| unaudited | 1434 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1458 |
+| `audited_clean` | 1459 |
 | `audited_conditional` | 58 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1757 |
+| `unaudited` | 1756 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 905 |
-| `leaf` | 1426 |
+| `medium` | 901 |
+| `leaf` | 1430 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -820,6 +820,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_fisher_rao_spherical_reorganization_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_gamma5_factor_bridge_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11969,6 +11970,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** If D is invertible and S = A - B D^(-1) B† is the Schur complement on T_1, then C S = S C.  _(class `A`)_
 - **chain closes:** True — The block equations from U M U† = M give C A = A C, C B = B R, and R D = D R; hence D^(-1) commutes with R and the Schur complement commutes with C. The taste-cube and spectator-factor cases are instances of the same block-equivariance hypothesis, while the charged-lepton carrier naming remains bounded through the stated Tier-A admission rather than derived here.
 - **rationale:** The load-bearing step is pure Schur-complement equivariance algebra, not a numerical match, definition, or external comparator. Independent checking confirms the block adjoint/intertwiner identities and the circulant plus axis-diagonal scalar collapse. The clean verdict is only for the bounded theorem scope: it does not derive the physical T_1 charged-lepton identification or a new readout primitive.
+- **auditor confidence:** high
+
+### `koide_gamma5_factor_bridge_no_go_note_2026-06-06`
+
+- **Note:** [`KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited only the natural on-site embedding gamma5_spin ⊗ I_gen on C^2 ⊗ C^3 as a proposed generation-factor C3-breaking selector; rooted or spin-generation-entangling carriers remain outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-koide_gamma5_factor_bridge_no_go_note_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With the natural tensor embedding, [gamma5_spin ⊗ I_gen, I_spin ⊗ S] = 0 exactly, and gamma5 is real/K-even on the generation factor, so it cannot supply the required generation-factor T/K-odd non-commuting selector.  _(class `A`)_
+- **chain closes:** True — The tensor-factor commutator identity is exact and independently recomputes to zero; gamma5 acts on the spin C^2 factor while S acts on the generation C^3 factor. Given the retained companion requirement that the selector be generation-factor T/K-odd and non-commuting with S, the scoped no-go follows.
+- **rationale:** The load-bearing step is finite tensor-product algebra, not a definition, fitted numerical match, or external comparator check. The runner genuinely instantiates C, S, A, gamma5, and the tensor embeddings; an independent recomputation confirms C^3=I, eig(S)={-1,-1,2}, both commutators vanish, and gamma5 is K-even. The no-go is narrow and explicitly excludes rooted/spin-generation-entangled carriers, so the open frontier is not imported as a premise.
 - **auditor confidence:** high
 
 ### `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`

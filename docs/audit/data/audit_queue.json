@@ -3,7 +3,7 @@
     "critical": 307,
     "high": 264,
     "leaf": 449,
-    "medium": 418
+    "medium": 417
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -17411,35 +17411,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24",
-        "koide_delta_marked_relative_cobordism_no_go_note_2026-04-24",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_g2_bridge_c3_current_cannot_beat_gap_a.py"
-      ],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_gamma5_factor_bridge_no_go.py",
-      "transitive_descendants": 15
     },
     {
       "audit_independence_required": "any_non_self",
@@ -43691,6 +43662,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 7,
-  "total_pending": 1438
+  "ready_count": 6,
+  "total_pending": 1437
 }

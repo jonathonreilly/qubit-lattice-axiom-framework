@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1009 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1432 |
+| unaudited | 1431 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1460 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1754 |
+| `unaudited` | 1753 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 896 |
-| `leaf` | 1435 |
+| `medium` | 893 |
+| `leaf` | 1438 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -1654,6 +1654,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -19027,6 +19028,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The parity-sheared shell sweep passes 12/21 sampled rows, with exact zero-source and neutral controls, sign orientation on the passing subset, drift coverage [0.0, 0.05, 0.1, 0.15, 0.2, 0.3], and mean exponent 0.999895, so the construction is a narrow sixth-family basin rather than a generic theorem.  _(class `B`)_
 - **chain closes:** True — SIXTH_FAMILY_SHEARED_SWEEP.py currently reproduces the note's pass count, drift coverage, exact zero/neutral controls, and mean weak-field exponent. The note's conclusion is bounded and selective, matching the data rather than claiming family-wide closure.
 - **rationale:** The sheared basin note closes at bounded tier: the runner verifies the exact pass/fail structure and the note states the correct narrow interpretation. It neither expands the result into a universal connectivity theorem nor hides the failed rows. Residual risk is only missing ledger runner attachment; the local sweep script is the direct evidence surface.
+- **auditor confidence:** high
+
+### `slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12`
+
+- **Note:** [`SLAB_BOUNDARY_ETA_GLOBALLY_ZERO_PER_EDGE_NONUNIVERSAL_NO_FRACTIONAL_CARRIER_BOUNDED_NOTE_2026-06-12.md`](../../docs/SLAB_BOUNDARY_ETA_GLOBALLY_ZERO_PER_EDGE_NONUNIVERSAL_NO_FRACTIONAL_CARRIER_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** S1-S5 for the supplied C_3-reducible Wilson slab: in-gap edge counts, total boundary eta cancellation, per-edge nonzero parameter dependence, and the scoped no-fractional-carrier conclusion on that reducible slab.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Finite-spectrum computation on the supplied C_3 ring-momentum Wilson slab gives zero total boundary eta after periodic subtraction while support-weighted single-edge eta_omega is nonzero and parameter-dependent.  _(class `C`)_
+- **chain closes:** False — The finite open-slab computation itself is a real eigenvalue/eigenvector computation from the supplied Wilson block. The full stated scope does not close because the runner validates the `sharp domain wall` label but never changes the Hamiltonian for that label, so a claimed boundary-condition branch is not actually computed.
+- **rationale:** Issue: the runner builds and diagonalizes the Wilson slab matrices, but `bc_label` is a no-op beyond membership validation, so `open uniform` and `sharp domain wall` receive the same operator. Why this blocks: the theorem claims stability across both boundary-condition labels, but the restricted packet supplies only one implemented boundary operator. Repair target: implement and cache an actual sharp-domain-wall boundary Hamiltonian, or narrow the source note to the open slab actually computed. Claim boundary until fixed: the open-slab reducible-wall computation supports global cancellation and nonuniversal per-edge values on the tested grid, but not a distinct sharp-domain-wall check.
 - **auditor confidence:** high
 
 ### `sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08`

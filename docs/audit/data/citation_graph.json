@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "post_record_selector_tangent_readout_weight_prototype_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12"
     },
     {
@@ -101345,14 +101341,13 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
         "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12",
         "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
         "theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11",
         "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "65181d306b2edd49b9404191cdd3ae7446c82d3ff8868791df150966ed716fed",
+      "note_hash": "5ba6c97d2435aa0f57b9e6754ce64c6b719c1b8665a16e0f4d1edeca2102d0d1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -116524,8 +116519,8 @@
       "open_gate": 181,
       "positive_theorem": 597
     },
-    "edge_count": 13258,
-    "leaf_count": 1144,
+    "edge_count": 13257,
+    "leaf_count": 1145,
     "node_count": 3548,
     "root_count": 1080,
     "runners_with_path": 3134

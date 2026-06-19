@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1617 |
-| Retained-grade rows, including boxed decorations | 1499 |
+| Applied audit verdicts | 1613 |
+| Retained-grade rows, including boxed decorations | 1492 |
 | Retained positive theorems | 219 |
 | Retained no-go rows | 217 |
-| Retained bounded rows | 1003 |
+| Retained bounded rows | 996 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1460 |
-| Retained-pending-chain rows | 3 |
-| Audited conditional rows | 41 |
+| Unaudited rows | 1465 |
+| Retained-pending-chain rows | 4 |
+| Audited conditional rows | 42 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 12 |
 | Citation cycles detected | 7 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1467 |
-| Ready rows | 33 |
+| Total pending rows | 1471 |
+| Ready rows | 30 |
 | Cycle-break targets | 7 |
-| Critical pending | 312 |
+| Critical pending | 311 |
 | High pending | 270 |
-| Medium pending | 414 |
-| Leaf pending | 471 |
+| Medium pending | 415 |
+| Leaf pending | 475 |
 
 Next ready rows by queue order:
 
-- [`lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
-- [`one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10`](../../docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17`](../../docs/RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; audit_in_progress
-- [`su3_cubic_anomaly_cancellation_theorem_note_2026-04-24`](../../docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md) - critical; unaudited
 - [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
 - [`hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`yt_source_action_support_packet_note_2026-05-22`](../../docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md) - critical; audit_in_progress
 - [`hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18`](../../docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - high; unaudited
+- [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
+- [`gate_b_connectivity_tolerance_note`](../../docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md) - medium; unaudited
+- [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

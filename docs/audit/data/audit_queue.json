@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 307,
-    "high": 265,
+    "high": 264,
     "leaf": 470,
     "medium": 419
   },
@@ -8952,32 +8952,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py",
-      "transitive_descendants": 8
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -44286,6 +44260,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 27,
-  "total_pending": 1461
+  "ready_count": 26,
+  "total_pending": 1460
 }

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1002 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1450 |
+| unaudited | 1449 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1451 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1772 |
+| `unaudited` | 1771 |
 
 | claim_type | count |
 |---|---:|
@@ -1614,6 +1614,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_derivation_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -8126,6 +8127,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The propagation recursion a_j(new) += a_i(old) W_ij on a finite layered DAG equals the finite directed path sum over unblocked source-to-detector paths with edge-weight products.  _(class `A`)_
 - **chain closes:** False — The mathematical step is a genuine finite-DAG algebraic identity, and the primary runner contains nontrivial enumeration checks. However, the primary runner imports the load-bearing Gate B helper module while the packet says no helper imports were detected, so the restricted packet cannot independently verify the current runner kernel it claims to audit.
 - **rationale:** Within the declared bounded scope, the note does not overclaim physical Gate B dynamics; it narrows the claim to supplied finite propagation algebra. The runner output reports all checks passing and the visible primary runner implements independent path enumeration, linearity, blocked-node, and normalization checks rather than merely printing constants. But the visible source imports `scripts/gate_b_connectivity_tolerance.py` for `_propagate`, graph construction, field construction, blocked nodes, detector probabilities, and kernel constants, and that helper source is absent from the packet despite being load-bearing. This is a runner artifact completeness defect, not a substantive disproof of the algebraic claim.
+- **auditor confidence:** high
+
+### `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18`
+
+- **Note:** [`GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite runner-local GB-S1b-a scalar-helper equality and algebraic properties on the supplied Gate B slab.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The current `_field_for_mass` helper exactly matches `strength/(r+0.1)` for every site in the tested slab.  _(class `A`)_
+- **chain closes:** False — The finite algebraic checks themselves are class-A checks, but the restricted packet omits the source of the imported `scripts/gate_b_connectivity_tolerance.py` module that supplies `_field_for_mass`, `FIELD_STRENGTH`, and the slab construction. Without that helper source, the imported runner surface remains opaque rather than source-verified.
+- **rationale:** Issue: the primary runner imports `scripts/gate_b_connectivity_tolerance.py`, but the packet reports no helper imports and does not include that source. Why this blocks: the load-bearing equality is specifically about the imported helper, so cached PASS output plus the wrapper runner is not enough for a source-level audit of the helper implementation. Repair target: include the helper source or a source-pinned certificate for the imported helper and slab construction, then re-audit the same finite algebra. Claim boundary until fixed: the packet provides supportive black-box runner evidence for the finite scalar facts, but not a closed source-audited theorem.
 - **auditor confidence:** high
 
 ### `gate_b_grown_distance_law_note`

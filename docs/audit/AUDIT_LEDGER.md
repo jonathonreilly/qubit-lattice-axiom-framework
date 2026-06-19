@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1006 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1438 |
+| unaudited | 1437 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
-| ~~audited_conditional~~ | 57 |
+| ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 1456 |
-| `audited_conditional` | 57 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1760 |
+| `unaudited` | 1759 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 906 |
-| `leaf` | 1425 |
+| `medium` | 907 |
+| `leaf` | 1424 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -113,20 +113,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1423 | 60.98 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 909 | 60.33 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1015 | 52.99 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1032 | 50.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1124 | 47.64 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 924 | 45.35 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 847 | 43.73 | `audited_clean` | **retained_bounded** |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1042 | 42.03 | `audited_clean` | **retained_bounded** |
-| 11 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 910 | 40.33 | `unaudited` | unaudited |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 50.01 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1125 | 47.64 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 925 | 45.35 | `unaudited` | unaudited |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 848 | 43.73 | `audited_clean` | **retained_bounded** |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 1043 | 42.03 | `audited_clean` | **retained_bounded** |
+| 11 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 911 | 40.33 | `unaudited` | unaudited |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1103 | 40.11 | `unaudited` | unaudited |
 | 13 | `native_gauge_closure_note` | positive_theorem | critical | 1388 | 39.44 | `audited_clean` | **retained** |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 905 | 38.82 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 1002 | 38.47 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 786 | 38.12 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1116 | 36.62 | `audited_clean` | **retained** |
-| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 927 | 35.86 | `audited_clean` | **retained_bounded** |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1088 | 35.59 | `audited_clean` | **retained_bounded** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1117 | 36.63 | `audited_clean` | **retained** |
+| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 928 | 35.86 | `audited_clean` | **retained_bounded** |
+| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1089 | 35.59 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 286 | 34.66 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 735 | 33.02 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 1008 | 31.98 | `unaudited` | meta |
@@ -1617,6 +1617,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -7262,6 +7263,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
   - `FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md`
   - `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`
 - **auditor confidence:** medium
+
+### `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15`
+
+- **Note:** [`FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md`](../../docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow no-go that generation-carrier scalar action and unbroken non-abelian colour-representation functions cannot distinguish the observed sector r-spread, especially the up/down within-doublet split; abelian/electroweak and within-sector-measure channels remain open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The generation-scalar plus non-abelian colour channel supplies at most a colourless/coloured 2-class structure, while the observed sector spread has at least three distinct r values with r_up != r_down inside the coloured class.  _(class `A`)_
+- **chain closes:** False — The counting argument is algebraically valid once scalar generation gauge action, SM representation assignments, and the observed r anchors are granted. The restricted cited authorities prove the M3(C) generation algebra/no-proper-quotient surface, but do not themselves prove the gauge-action scalar dressing law on a and b or supply the SM sector-representation/r-spread inputs.
+- **rationale:** Issue: the runner hard-codes the scalar gauge-factor model, SM representation table, and observed r anchors rather than deriving or sourcing them from the cited retained authorities. Why this blocks: the M3(C) authorities do not by themselves establish that any generation-carrier gauge action must scale a and b identically, nor do they close the sector representation/readout premises used in the counting contradiction. Repair target: add a retained bridge for the gauge-uniform scalar action on the Koide a,b parameters and wire retained authority for the sector representation and r-spread anchors, with an explicit N1-N8 no-go checklist. Claim boundary until fixed: the packet supports a conditional counting obstruction for this channel, not a clean retained no-go.
+- **open / conditional deps cited:**
+  - `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`
+- **auditor confidence:** high
 
 ### `flavor_hw1_staggered_projection_democratic_r0_2026-06-02`
 

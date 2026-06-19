@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15"
     },
     {
@@ -52647,6 +52643,10 @@
     {
       "from": "repo.front_door_status",
       "to": "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15",
         "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
         "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13",
         "harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12",
         "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
         "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12",
         "post_record_selector_tangent_readout_weight_prototype_2026-06-06",
-        "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12"
+        "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12",
+        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8600391de554289a56f982a7bc6da7c2377e7026e8560d4ce29a80886529df6f",
+      "note_hash": "e35a71c013d0d53d8321c2e58719512ec20ce52838472c1ae46467ebb31eb5a1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

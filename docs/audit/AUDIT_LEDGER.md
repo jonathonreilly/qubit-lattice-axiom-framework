@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 220 |
 | **retained_no_go** | 219 |
-| **retained_bounded** | 1009 |
+| **retained_bounded** | 1010 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1431 |
+| unaudited | 1430 |
 | meta | 322 |
 | ~~audited_numerical_match~~ | 12 |
 | ~~audited_renaming~~ | 30 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 3 |
-| `audited_clean` | 1460 |
+| `audited_clean` | 1461 |
 | `audited_conditional` | 60 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 27 |
 | `audited_numerical_match` | 12 |
 | `audited_renaming` | 30 |
-| `unaudited` | 1753 |
+| `unaudited` | 1752 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 573 |
 | `high` | 502 |
-| `medium` | 893 |
-| `leaf` | 1438 |
+| `medium` | 892 |
+| `leaf` | 1439 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 7
@@ -1294,6 +1294,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sm_anomaly_closure_retained_anchors_decoupled_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `sm_identity_triangulation_convergence_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -19054,6 +19055,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Given the retained LH content and the admitted no-nu_R minimal SU(2)-singlet RH completion, the equations SU(3)^2Y=0, Tr[Y]=0, and Tr[Y^3]=0 force (Y(u_R),Y(d_R),Y(e_R))=(+4/3,-2/3,-2), after which all six gauge-anomaly conditions cancel exactly.  _(class `A`)_
 - **chain closes:** True — The conclusion follows by exact algebra over the supplied retained inputs plus the explicit bounded premises. The runner source computes the quadratic, trace sums, cubic sums, Witten parity count, and caveat examples with Fractions/integers rather than merely printing expected values.
 - **rationale:** Within the bounded scope, the load-bearing step is genuine class-A algebraic closure over retained-grade inputs and explicitly stated premises. The cited authorities for the LH content, nonabelian structure, and generation count are retained-grade, while the minimal axiom memo is an accepted framework premise. The result does not derive the RH matter content, exclude vectorlike or nu_R branches, or fix absolute Y scale; those limits are explicitly outside the forced conclusion and are checked by the runner ledger.
+- **auditor confidence:** high
+
+### `sm_gstar_higgs_sector_count_stretch_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded arithmetic and texture-vs-field-content reconciliation: given the retained-bounded finite SM inventory with one complex SU(2)_L Higgs doublet, the g_* census is 106.75, and the retained charged-lepton two-Higgs reduction is a Yukawa-texture/counting statement rather than an added thermalized scalar-doublet claim. The native H_unit-to-full-EWSB-doublet derivation is not audited as closed here.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260619-203739-0fd17364-sm_gstar_higgs_sector_count_stretch_note_2026-05-29-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the retained-bounded declared Standard-Model inventory premise, one complex SU(2)_L Higgs doublet contributes 4 scalar dof, so N_bosons = 24 + 4 = 28 and g_* = 28 + (7/8) * 90 = 427/4 = 106.75; a second independent thermalized doublet would shift this by +4 to 110.75.  _(class `A`)_
+- **chain closes:** True — For the stated bounded scope, the chain closes: the one-doublet thermal field content is supplied explicitly by the retained-bounded SM inventory note, and the remaining g_* arithmetic is exact. The source correctly excludes the native H_unit-to-full-doublet derivation from the proof input rather than claiming it is closed.
+- **rationale:** The note does not present the one-doublet inventory as a framework-native derivation; it uses it as an explicit retained-bounded premise and then performs exact finite arithmetic. The retained charged-lepton two-Higgs authority supports a Yukawa-texture reduction and does not itself assert an independent thermalized scalar field; the runner’s algebraic checks distinguish monomial/two-offset texture behavior from Fock-space dof counting. The H_unit representation no-go is used only as a boundary against the forbidden direct singlet-to-doublet route, not as positive proof of the census field content. No PDG, fitted, or numerical-comparator import is load-bearing.
 - **auditor confidence:** high
 
 ### `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15`

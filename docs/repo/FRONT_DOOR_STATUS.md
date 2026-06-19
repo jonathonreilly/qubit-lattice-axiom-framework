@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1650 |
-| Retained-grade rows, including boxed decorations | 1508 |
+| Applied audit verdicts | 1651 |
+| Retained-grade rows, including boxed decorations | 1509 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 219 |
-| Retained bounded rows | 1009 |
+| Retained bounded rows | 1010 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1431 |
+| Unaudited rows | 1430 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 60 |
 | Audited renaming rows | 30 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1434 |
-| Ready rows | 3 |
+| Total pending rows | 1433 |
+| Ready rows | 2 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
-| Medium pending | 414 |
+| Medium pending | 413 |
 | Leaf pending | 449 |
 
 Next ready rows by queue order:
 
-- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
 - [`theta_p2_determinant_readout_exhaustion_bridge_bounded_theorem_note_2026-06-11`](../../docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 
@@ -78,8 +77,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 932 |
-| Leaf nodes | 1527 |
+| Medium nodes | 931 |
+| Leaf nodes | 1528 |
 
 Top load-bearing rows by graph score:
 

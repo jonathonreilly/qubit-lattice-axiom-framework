@@ -52618,10 +52618,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
     },
     {
@@ -52647,6 +52643,10 @@
     {
       "from": "repo.front_door_status",
       "to": "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -101357,17 +101357,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
         "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
         "gate_b_connectivity_tolerance_note",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
         "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18",
         "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18",
         "d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18",
-        "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18"
+        "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18",
+        "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "659fede0bad11b5646d7ae4eb5d04d5797ed43350c7dc5e8a39f61892fb3a84b",
+      "note_hash": "c553f27233cdd4af97105a519437107df4a4edc4a2d7ec98e8254056523e63a0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

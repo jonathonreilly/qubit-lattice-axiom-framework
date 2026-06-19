@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 307,
-    "high": 267,
-    "leaf": 472,
-    "medium": 419
+    "high": 266,
+    "leaf": 471,
+    "medium": 420
   },
   "cycle_break_target_count": 7,
   "cycle_break_targets": [
@@ -8957,32 +8957,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_source_action_support_packet_note_2026-05-22",
-        "yt_color_projection_correction_note",
-        "observable_principle_scale_invariant_source_response_narrow_theorem_note_2026-05-16"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.255,
-      "note_path": "docs/YT_SOURCE_HIGGS_POLE_ROW_NORMALIZATION_NO_GO_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_source_higgs_pole_row_normalization_no_go.py",
-      "transitive_descendants": 26
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17637,6 +17611,53 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/gate_b_finite_path_sum_propagation_bridge_2026_06_18.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_source_covariance_normalization_support_note_2026-05-24",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "yt_source_action_support_packet_note_2026-05-22",
+        "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.67,
+      "note_path": "docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_source_covariance_normalization_support.py",
+      "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lepton_block_scalar_singlet_composite_uniqueness_d17_prime_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -25770,31 +25791,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_source_covariance_normalization_support_note_2026-05-24",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_source_action_support_packet_note_2026-05-22",
-        "yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.67,
-      "note_path": "docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_source_covariance_normalization_support.py",
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "color_neutrality_entanglement_depolarization_is_global_invariant_not_connection_narrow_theorem_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -30476,28 +30472,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_finite_path_sum_propagation_bridge_2026_06_18.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -44389,5 +44363,5 @@
     }
   ],
   "ready_count": 27,
-  "total_pending": 1465
+  "total_pending": 1464
 }

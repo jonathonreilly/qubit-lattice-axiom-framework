@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1652 |
+| Applied audit verdicts | 1653 |
 | Retained-grade rows, including boxed decorations | 1509 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 219 |
 | Retained bounded rows | 1010 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1429 |
+| Unaudited rows | 1428 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 61 |
+| Audited conditional rows | 62 |
 | Audited renaming rows | 30 |
 | Audited numerical-match rows | 12 |
 | Citation cycles detected | 7 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1432 |
-| Ready rows | 1 |
+| Total pending rows | 1431 |
+| Ready rows | 0 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
-| Medium pending | 412 |
+| Medium pending | 411 |
 | Leaf pending | 449 |
 
 Next ready rows by queue order:
 
-- [`yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
+- none
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -76,12 +76,12 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 929 |
-| Leaf nodes | 1530 |
+| Medium nodes | 928 |
+| Leaf nodes | 1531 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1658 descendants; score 147.696
+- `minimal_axioms` - critical; 1657 descendants; score 147.695
 - `three_generation_observable_theorem_note` - critical; 1050 descendants; score 65.538
 - `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
 - `observable_principle_from_axiom_note` - critical; 909 descendants; score 60.330

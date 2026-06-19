@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 996 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1465 |
+| Unaudited rows | 1464 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 42 |
 | Audited renaming rows | 30 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
+- [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; audit_in_progress
 - [`hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`yt_source_action_support_packet_note_2026-05-22`](../../docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md) - critical; audit_in_progress
 - [`hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18`](../../docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - high; unaudited
@@ -61,18 +61,18 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 174 |
+| critical | `unaudited` | 173 |
 | high | `unaudited` | 154 |
 | medium | `unaudited` | 85 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
-| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 
@@ -90,7 +90,7 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1658 descendants; score 147.696
 - `three_generation_observable_theorem_note` - critical; 1050 descendants; score 65.538
-- `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
+- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
 - `observable_principle_from_axiom_note` - critical; 909 descendants; score 60.330
 - `plaquette_self_consistency_note` - critical; 1015 descendants; score 52.989
 - `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 49.013

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1624 |
-| Retained-grade rows, including boxed decorations | 1495 |
+| Applied audit verdicts | 1625 |
+| Retained-grade rows, including boxed decorations | 1496 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 217 |
-| Retained bounded rows | 998 |
+| Retained bounded rows | 999 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1457 |
+| Unaudited rows | 1456 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 47 |
 | Audited renaming rows | 30 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1460 |
-| Ready rows | 26 |
+| Total pending rows | 1459 |
+| Ready rows | 25 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
 | High pending | 264 |
 | Medium pending | 419 |
-| Leaf pending | 470 |
+| Leaf pending | 469 |
 
 Next ready rows by queue order:
 
-- [`yt_source_covariance_normalization_support_note_2026-05-24`](../../docs/YT_SOURCE_COVARIANCE_NORMALIZATION_SUPPORT_NOTE_2026-05-24.md) - medium; unaudited
 - [`teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18`](../../docs/TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18`](../../docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18`](../../docs/D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18`](../../docs/FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
-- [`gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - leaf; unaudited
+- [`gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
+- [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,12 +83,12 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3548 |
 | Critical nodes | 581 |
 | High nodes | 508 |
-| Medium nodes | 932 |
-| Leaf nodes | 1527 |
+| Medium nodes | 933 |
+| Leaf nodes | 1526 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1658 descendants; score 147.696
+- `minimal_axioms` - critical; 1657 descendants; score 147.695
 - `three_generation_observable_theorem_note` - critical; 1050 descendants; score 65.538
 - `graph_first_su3_integration_note` - critical; 1423 descendants; score 60.976
 - `observable_principle_from_axiom_note` - critical; 909 descendants; score 60.330

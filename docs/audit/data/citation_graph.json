@@ -52618,7 +52618,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+      "to": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
@@ -101357,7 +101357,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
         "koide_mru_demotion_note_2026-04-20",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
@@ -101367,7 +101367,7 @@
         "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c958541f9de64e4cf2c71dcb20fe3fab624776b52fad5c2db0226fd1ca731b5c",
+      "note_hash": "162af2a3682d60c34542f00b47cf48f030902009c5d23520f14caa2eef74962a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

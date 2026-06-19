@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3406 |
-| Applied audit verdicts | 1614 |
-| Retained-grade rows, including boxed decorations | 1491 |
+| Applied audit verdicts | 1615 |
+| Retained-grade rows, including boxed decorations | 1492 |
 | Retained positive theorems | 220 |
 | Retained no-go rows | 216 |
-| Retained bounded rows | 995 |
+| Retained bounded rows | 996 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 37 |
-| Unaudited rows | 1467 |
+| Unaudited rows | 1466 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 42 |
 | Audited renaming rows | 29 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1470 |
+| Total pending rows | 1469 |
 | Ready rows | 31 |
 | Cycle-break targets | 7 |
 | Critical pending | 307 |
-| High pending | 271 |
+| High pending | 270 |
 | Medium pending | 418 |
 | Leaf pending | 474 |
 
 Next ready rows by queue order:
 
-- [`hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18`](../../docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - high; unaudited
+- [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 - [`koide_mru_demotion_note_2026-04-20`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md) - high; unaudited
 - [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
 - [`yt_lsp_signed_record_source_readout_support_note_2026-05-24`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md) - high; unaudited

@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 307,
-    "high": 271,
+    "high": 270,
     "leaf": 474,
     "medium": 418
   },
@@ -8957,26 +8957,28 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+      "claim_id": "hierarchy_dimensional_compression_note",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "open_gate",
       "claim_type_provenance": "author_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
+        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.448,
-      "note_path": "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+      "load_bearing_score": 9.943,
+      "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py",
-      "transitive_descendants": 246
+      "runner_path": "scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py",
+      "transitive_descendants": 245
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -9085,33 +9087,6 @@
       "ready": false,
       "runner_path": "scripts/cl3_a3_option_c_brannen_rivero_2026_05_08_optC.py",
       "transitive_descendants": 249
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hierarchy_dimensional_compression_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
-        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
-        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.943,
-      "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py",
-      "transitive_descendants": 245
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -44520,5 +44495,5 @@
     }
   ],
   "ready_count": 31,
-  "total_pending": 1470
+  "total_pending": 1469
 }

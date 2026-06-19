@@ -52617,6 +52617,38 @@
       "to": "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
     },
     {
+      "from": "repo.front_door_status",
+      "to": "g_bare_derivation_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_source_action_support_packet_note_2026-05-22"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
+    },
+    {
       "from": "repo.repo_organization",
       "to": "key_terminology"
     },
@@ -101324,9 +101356,18 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "g_bare_derivation_note",
+        "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
+        "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
+        "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17",
+        "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
+        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+        "yt_source_action_support_packet_note_2026-05-22",
+        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "dbc69257625012c336a1d82e9b323f83207f7da4a2c64fe48131b60fa29df2d2",
+      "note_hash": "39d52d7730d2c455913174edea3db6ad415db9cb282b1fc4aaf8f37120b2bf14",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -116204,7 +116245,6 @@
     "register_not_read_scope_correction_panel_verdict_2026-06-06",
     "reopened_lane_checklist",
     "replay_environment_note",
-    "repo.front_door_status",
     "repo.python_venv_setup",
     "repo_active_review_queue_note_2026-05-17",
     "repo_submission_consolidation_plan_2026-04-12",
@@ -116499,10 +116539,10 @@
       "open_gate": 181,
       "positive_theorem": 597
     },
-    "edge_count": 13253,
+    "edge_count": 13261,
     "leaf_count": 1149,
     "node_count": 3548,
-    "root_count": 1081,
+    "root_count": 1080,
     "runners_with_path": 3134
   }
 }

@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | unaudited | critical | 255 | 13.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py` |
+| 1 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | audit_in_progress | critical | 255 | 13.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py` |
 | 2 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | critical | 250 | 13.47 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_dimensional_fourth_root_compression_narrow.py` |
 | 3 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | audit_in_progress | critical | 55 | 17.81 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_source_action_support_packet.py` |
 | 4 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1103 | 40.11 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |

@@ -1,9 +1,15 @@
 # Planck Link-Local First-Variation P_A Forcing Theorem
 
 **Date:** 2026-04-30
-**Status:** intrinsic proposed_retained candidate; current audit graph effective
-status is conditional until upstream action/time/CPT authority rows are clean
-**Runner:** `scripts/frontier_planck_link_local_first_variation_p_a_forcing.py`
+**Status:** bounded-support action-source bridge; not retained on the current
+authority surface. Effective status remains conditional until the
+link-local action-source premise and upstream time/CPT/action authority rows
+are independently reviewed and accepted by the audit lane.
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit verdict.
+**Primary runner:** `scripts/frontier_planck_link_local_first_variation_p_a_forcing.py`
+**Runner cache:** `logs/runner-cache/frontier_planck_link_local_first_variation_p_a_forcing.txt`
 **Loop:** `physics-loop/planck-pa-retention-block01-20260430`
 
 ## Purpose
@@ -29,14 +35,14 @@ The boundary-incidence stretch no-go sharpened the same obstruction:
 oriented faces and normal covectors are Hodge-dual, so boundary orientation
 alone still does not select `P_1`.
 
-This note records the new path that does distinguish them. It uses the
-microscopic action surface itself. The accepted `A_min` dynamics are the finite
-Grassmann / staggered-Dirac partition with lattice operators built from
-one-link nearest-neighbor terms. On the time-completed primitive local star,
-the fundamental action-source variables are one-link / one-axis variables.
-The primitive active response is the first variation of that retained action
-with respect to those variables. Its support is exactly the Hamming-weight-one
-packet:
+This note records the conditional path that distinguishes them once the
+link-local action-source surface is granted. The assumed action-source surface
+is the finite Grassmann / staggered-Dirac partition with lattice operators
+built from one-link nearest-neighbor terms. On the time-completed primitive
+local star, the fundamental action-source variables are one-link / one-axis
+variables. The primitive active response is the first variation of that
+action-source map with respect to those variables. Its support is exactly the
+Hamming-weight-one packet:
 
 ```text
 P_A = P_1.
@@ -50,9 +56,17 @@ duality or after taking higher composite/third-variation data.
 
 The theorem uses:
 
-- [MINIMAL_AXIOMS_2026-04-11.md](./MINIMAL_AXIOMS_2026-04-11.md): local
-  `Cl(3)`, cubic `Z^3`, finite Grassmann / staggered-Dirac partition, and
-  lattice operators built on that surface;
+- [MINIMAL_AXIOMS_2026-06-05.md](./MINIMAL_AXIOMS_2026-06-05.md): the current
+  axiom memo naming the repo-wide base as Lattice, Quantum, and Record while
+  leaving source/action and the staggered-Dirac / Grassmann realization as
+  separate open gates rather than framework axioms;
+- [LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md](./LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md):
+  exact conditional algebra proving that a one-link source map plus the
+  active-response/support bridge selects `P_1` and excludes `P_3` only on that
+  stated premise surface;
+- Historical note `MINIMAL_AXIOMS_2026-04-11.md` is background only for the
+  older candidate action-source wording. It is not current axiom authority and
+  is not a load-bearing dependency for this bounded bridge.
 - [NATIVE_GAUGE_CLOSURE_NOTE.md](./NATIVE_GAUGE_CLOSURE_NOTE.md): staggered
   hopping and `Cl(3)` bivector / spatial spin-lift context;
 - [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](./GRAPH_FIRST_SU3_INTEGRATION_NOTE.md):
@@ -81,17 +95,16 @@ That phrase was already isolated as circular by the earlier no-gos.
 The selector here is narrower and action-native:
 
 ```text
-image of the algebraic differential of the retained link-local microscopic
-action with respect to its fundamental local link/source variables.
+image of the algebraic differential of the link-local microscopic action
+source map with respect to its fundamental local link/source variables.
 ```
 
-Those variables are present because the minimal input stack already contains
-the finite Grassmann / staggered-Dirac partition and lattice operators on
-`Z^3`. A Hodge-dual face/flux variable is a valid dual representation, but it
-is not an automorphism of that source domain: it sends a one-link source to a
-three-link composite. If an audit does not accept the minimal action source
-domain as retained substrate content, this note demotes to conditional support
-rather than retained-grade closure.
+Those variables are available only on the named action-source surface. A
+Hodge-dual face/flux variable is a valid dual representation, but it is not an
+automorphism of that source domain: it sends a one-link source to a three-link
+composite. If an audit does not accept that action-source domain as a retained
+or otherwise allowed premise, this note remains conditional support rather
+than retained-grade closure.
 
 ## Theorem Statement
 
@@ -102,9 +115,9 @@ W = span(t,x,y,z),        H_cell ~= Lambda^* W.
 ```
 
 Let `u_a` denote the fundamental local link/source variable for the primitive
-axis `a` in the time-completed staggered/Dirac local star. The retained
-microscopic action is link-local: each primitive local term carries exactly
-one such axis label,
+axis `a` in the time-completed staggered/Dirac local star. On the named
+action-source surface, the microscopic action is link-local: each primitive
+local term carries exactly one such axis label,
 
 ```text
 S_link = sum_{a in {t,x,y,z}} u_a J_a,
@@ -133,7 +146,7 @@ P_1 = sum_a P_{ {a} } = P_A.
 
 Among the 17 local rank-four equivariant projector classes admitted by the
 spin/time/CPT/local symmetry package, `P_A` is the unique class satisfying the
-additional retained-action criterion:
+additional action-source criterion:
 
 ```text
 support = support of the fundamental link-local first variation.
@@ -142,19 +155,19 @@ support = support of the fundamental link-local first variation.
 Thus:
 
 ```text
-A_min link-local first variation + anomaly-forced time
-  -> unique active P_A block.
+link-local first variation + anomaly-forced time
+  -> selected active P_A block on that premise.
 ```
 
 ## Derivation
 
-### 1. The Retained Action Variables Are One-Link Variables
+### 1. The Action-Source Variables Are One-Link Variables
 
-The minimal accepted dynamics are not an arbitrary exterior-algebra response
-on `H_cell`. They are the finite Grassmann / staggered-Dirac partition and
-the lattice operators built on that surface. Locally, the staggered/Dirac
-operator is a nearest-neighbor hop operator. After the anomaly-forced time
-completion, the primitive local star has four axis labels:
+The assumed dynamics are not an arbitrary exterior-algebra response on
+`H_cell`. They are the finite Grassmann / staggered-Dirac partition and the
+lattice operators built on that surface. Locally, the staggered/Dirac operator
+is a nearest-neighbor hop operator. After the anomaly-forced time completion,
+the primitive local star has four axis labels:
 
 ```text
 t, x, y, z.
@@ -197,7 +210,7 @@ In the Boolean event-cell dictionary,
 J_a <-> P_{ {a} }.
 ```
 
-So the total support of the retained source differential is
+So the total support of the source differential is
 
 ```text
 span({t}, {x}, {y}, {z}) = P_1 H_cell.
@@ -205,8 +218,8 @@ span({t}, {x}, {y}, {z}) = P_1 H_cell.
 
 The runner constructs the four derivative images `dS_link(du_a)` and verifies
 that their support projector is exactly `P_1`, with rank four. This is a
-derivative of the retained microscopic source map, not an adopted observable
-readout principle.
+derivative of the named microscopic source map, not an adopted observable
+readout principle and not a repo-wide axiom.
 
 ### 3. P_3 Is A Flux/Composite Sector, Not A Fundamental First Variation
 
@@ -245,7 +258,7 @@ equivariant projector classes. That no-go remains correct on its stated
 surface.
 
 The present theorem adds a criterion not present in the symmetry-only
-surface, and derives it from the retained action:
+surface, and derives it from the named action-source map:
 
 ```text
 the active primitive response must be the support of the link-local first
@@ -280,7 +293,7 @@ two-mode CAR pairing.
 The theorem therefore supplies the missing selector:
 
 ```text
-retained link-local action response -> P_A H_cell,
+link-local action-source response -> P_A H_cell,
 retained Cl(3)+time coframe -> Cl_4(C) carrier on that selected packet.
 ```
 
@@ -290,18 +303,18 @@ This theorem does not overturn the no-gos. It changes the premise surface.
 
 | Prior result | Still valid? | What changes here |
 |---|---:|---|
-| symmetry-only substrate-to-`P_A` no-go | yes | link-local first variation is extra retained action structure, not pure symmetry |
-| first-order coframe unconditionality no-go | yes | "first-order" is not assumed abstractly; it is the first variation of the retained link-local action |
+| symmetry-only substrate-to-`P_A` no-go | yes | link-local first variation is extra action-source structure, not pure symmetry |
+| first-order coframe unconditionality no-go | yes | "first-order" is not assumed abstractly; it is the first variation of the named link-local action-source map |
 | boundary-incidence no-go | yes | normal/face incidence is Hodge-dual, but only the normal link variable is fundamental in the action source domain |
 | full-cell odd coframe restriction obstruction | yes | the active `Cl_4` carrier is intrinsic after `P_A` is selected; it is not a compression of odd full-cell generators |
 | bilinear active-block support boundary | yes | bilinears show capacity; the present theorem supplies the missing block selector, not a dimensional action unit |
 
 ## Claim Boundary
 
-This theorem claims:
+This theorem claims, on the named action-source premise:
 
-- the active primitive action-response block is forced to be `P_A` by the
-  retained link-local first variation;
+- the active primitive action-response block is selected as `P_A` by the
+  link-local first variation;
 - the Hodge-dual `P_3` is excluded as a fundamental first variation, though it
   remains a valid flux/face representation;
 - after `P_A` is selected, the rank-four `Cl_4(C)` / two-mode CAR carrier is
@@ -317,13 +330,12 @@ This theorem does not claim:
 - that the gravitational Wald/area carrier identification is closed by this
   note alone.
 
-The theorem is intended to repair the PR #228 renaming failure at the
-substrate-to-active-packet step. Audit ratification is still required before
-any downstream Planck cascade can be promoted. On the current audit graph, the
-intrinsic theorem is a `proposed_retained` candidate but the effective lane
-remains conditional until the upstream action/time/CPT authority rows are
-clean or the auditor accepts those facts as base substrate content for this
-restricted theorem.
+The theorem is intended to supply a source-side repair route for the PR #228
+renaming failure at the substrate-to-active-packet step. Audit ratification is
+still required before any downstream Planck cascade can advance. On the
+current authority surface this is bounded support over an explicit
+action-source premise; it is not a retained-grade proposal and does not set or
+predict an audit verdict.
 
 ## Verification
 

@@ -41,10 +41,12 @@ holds:
       all three anomaly traces above by exact rational arithmetic.
 
 (B4)  The P-COMP SU(2)-singlet completion (B3) is chirally
-      distinguished from the LH doublets. Under the parent theorem's
-      declared P-REC taste-reconstruction premise, the staggered
-      chirality grading is realized as a chirality operator gamma_5
-      satisfying
+      distinguished from the LH doublets. The finite spin/taste
+      reconstruction core supplies a taste-singlet spin-Clifford
+      gamma_5 on the blocked staggered hypercube. Under the remaining
+      physical P-REC premise, the anomaly-carrying chiral gauge
+      representation is identified with that spin gamma_5 (not with the
+      staggered epsilon shortcut), satisfying
         gamma_5^2 = +I,   {gamma_5, gamma_mu} = 0
       must exist on the spacetime representation that carries the
       gauge-theory anomaly evaluation.
@@ -127,13 +129,14 @@ authority. Current `main` correctly separates the inputs:
 | P-ABJ / P1 | anomaly-to-inconsistency implication | declared external premise edge |
 | P-COMP | opposite-chirality SU(2)-singlet completion premise; SM branch used only as exact witness | declared premise edge inherited from the parent theorem |
 | CHI | staggered `epsilon` grading and Kawamoto-Smit phase-class carrier | retained-bounded source input |
-| P-REC | identifies staggered `epsilon` with Clifford chirality on the irreducible Dirac factor | declared premise edge inherited from the parent theorem |
+| P-REC | physical reconstruction premise identifying the anomaly-carrying chiral gauge representation with the reconstructed spin-Clifford `gamma_5`; the finite spin/taste Clifford core is split out in the 2026-06-18 note below, while physical single-taste/gauged chirality remains a premise edge | declared premise edge inherited from the parent theorem |
 | EVEN | Clifford chirality exists iff total dimension is even | retained theorem input |
 
-No audit ledger or status surface is edited here. The repair does not derive
-P-COMP or P-REC and does not widen P-HY beyond the bounded left-handed
-hypercharge-identification surface.
-Guardrail: this repair does not widen P-HY beyond the bounded left-handed hypercharge-identification surface.
+No audit ledger or status surface is edited here. Guardrail: this repair does
+not derive P-COMP or P-REC, and does not derive P-HY, P-ABJ, or B-AXIS.
+It also does not widen P-HY beyond the bounded left-handed hypercharge-identification surface.
+The 2026-06-18 spin/taste note below supplies only a finite-algebraic core of
+P-REC; full physical P-REC remains a declared premise edge.
 The repair makes the
 dependency graph explicit for re-audit: the bridge can be checked as an
 exact conditional consequence over these named edges, but it is not a
@@ -169,6 +172,28 @@ singlet, from framework-native structure. This split does not derive
 P-HY, P-ABJ, full P-COMP, P-REC, or B-AXIS.
 
 
+## P-REC spin/taste core split (2026-06-18)
+
+[`ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md`](ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md)
+separates the algebraic part of P-REC from the physical anomaly-chirality
+identification. On the canonical blocked free staggered hypercube, the
+`16 x 16` matrices induced by the staggered phases generate a `Cl_4` spin
+algebra with a `16`-dimensional taste commutant. The spin volume element
+`Gamma_5^spin = alpha_0 alpha_1 alpha_2 alpha_3` squares to `I`, anticommutes
+with every reconstructed Clifford generator, and commutes with the taste
+commutant. The same runner verifies that staggered site-parity `epsilon`
+is not `+/- Gamma_5^spin`, is not in the generated spin Clifford algebra, and
+fails to commute with the full taste commutant.
+
+This closes only the finite-algebraic spin/taste core: a taste-singlet spin
+`gamma_5` exists on the blocked reconstruction. It does not close full P-REC.
+The remaining P-REC residual is the physical bridge saying that the
+anomaly-carrying chiral gauge representation uses this spin `gamma_5` in the
+relevant interacting, single-taste, continuum/readout context. The prior
+epsilon-shortcut route remains rejected; P-REC should be read through the
+spin/taste core plus this remaining physical identification, not as a direct
+`epsilon = gamma_5` assertion.
+
 ## Proof-walk
 
 | Step | Statement | Load-bearing input | Lattice-action input? |
@@ -176,7 +201,7 @@ P-HY, P-ABJ, full P-COMP, P-REC, or B-AXIS.
 | (B1) | Three perturbative anomaly traces of the LH SM content are nonzero (`Tr[Y^3] = -16/9`, `Tr[SU(3)^2 Y] = 1/3`, `Tr[SU(3)^3] = 2`) | Retained nonabelian graph-first content + retained-bounded P-HY LH-surface supplier; exact rational arithmetic on the explicit `(2,3)_{+1/3} + (2,1)_{-1}` multiplets | no |
 | (B2) | A chiral gauge theory with nonzero anomaly traces fails to close as a unitary quantum field theory | (P1) accepted-premise packet entry | no |
 | (B3) | Adding SU(2)-singlet right-handed completion with `(y_1, y_2, y_3, y_4) = (4/3, -2/3, -2, 0)` cancels all three anomaly traces (full LH+RH content has `Tr[Y]=Tr[Y^3]=Tr[SU(3)^2 Y]=Tr[SU(3)^3]=Tr[SU(2)^2 Y]=0`) | Declared P-COMP completion premise; Standard Model branch is exact rational witness, not derived completion authority | no |
-| (B4) | The SU(2)-singlet RH completion is chirally distinct from LH doublets; under P-REC, staggered `epsilon` is realized as Clifford `gamma_5` (involution, anticommuting with all Dirac matrices) on the carrying spacetime representation | Retained `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02` rules per-site Cl(3); retained-bounded `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07` carries the staggered `{epsilon, D_staggered}=0` realization; P-REC is declared | no |
+| (B4) | The SU(2)-singlet RH completion is chirally distinct from LH doublets; the blocked spin/taste core supplies a taste-singlet spin-Clifford `gamma_5`, and under the remaining physical P-REC premise that spin `gamma_5` is the chirality used by the anomaly-carrying gauge representation | Retained `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02` rules per-site Cl(3); retained-bounded `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07` carries the staggered carrier; `ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18` supplies the finite spin/taste Clifford core; full physical P-REC remains declared | no |
 | (B5) | `gamma_5` involution + anticommutation forces total dimension `d = d_s + d_t` to be even | Retained `CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10` (sister narrow theorem) | no |
 | (B6) | With `d_s = 3` (Z^3 substrate), `d_t` must be a positive odd integer: `d_t in {1, 3, 5, ...}` | Retained `NATIVE_GAUGE_CLOSURE_NOTE` (Cl(3)/Z^3); subtraction in `Z` | no |
 

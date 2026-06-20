@@ -440,6 +440,13 @@ def _section(text: str, heading: str) -> str:
 def part_7_manifest_sync(L: float):
     print("\n=== Part 7: note/runner manifest sync (bookkeeping, class B) ===\n")
     note = NOTE_PATH.read_text(encoding="utf-8")
+    note_flat = " ".join(note.split())
+    check("note declares canonical bounded_theorem metadata and independent audit authority",
+          "**Type:** bounded_theorem" in note
+          and "**Claim type:** bounded_theorem" in note
+          and "**Status authority:** independent audit lane only." in note_flat
+          and "does not set or predict an audit outcome" in note_flat,
+          "source note sets no audit outcome", kind="B")
     check("note declares the same closed-form constant L = 1.1746670551 and "
           "the same kernel domain [0.085, 0.130]",
           "1.1746670551" in note and "[0.085, 0.130]" in note

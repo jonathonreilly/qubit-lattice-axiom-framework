@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_qcd_low_energy_running_bridge.py
-runner_sha256: 36b69b56c7791c6d0043e95cee02eb3e32c98da2e87236bd553c838490b7cf0b
+runner_sha256: ce0356d0304716bc5f8504a26b7eebdbaa2127fdc0f7a48eef82f36ba3f88e95
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.72
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -65,6 +65,7 @@ PDG comparisons are confined to the labeled class-D appendix (Part 8).
 
 === Part 7: note/runner manifest sync (bookkeeping, class B) ===
 
+  [PASS] [B] note declares canonical bounded_theorem metadata and independent audit authority  (source note sets no audit outcome)
   [PASS] [B] note declares the same closed-form constant L = 1.1746670551 and the same kernel domain [0.085, 0.130]  (note text carries the runner's L and domain)
   [PASS] [B] note declares the same import scales v, m_t, M_Z and auxiliary tuple  (v = 246.282818290129, m_t = 172.69, M_Z = 91.1876)
   [PASS] [B] the boundary value 0.103304 is absent from the kernel-theorem claim surface and confined to the labeled class-D comparator appendix  (claim surface is boundary-value-free)
@@ -79,8 +80,8 @@ PDG comparisons are confined to the labeled class-D appendix (Part 8).
   [PASS] [D] PDG-band pullback window T_2^{-1}([0.1171, 0.1189]) = [0.10257, 0.10394] (interior to D)  (window = [0.10257, 0.10394])
 
 ==============================================================================
-CHECK CLASSES: A=22  B=3  D=2  (D-comparators are a labeled minority; no C-class first-principles claims made)
-SUMMARY: PASS=27  FAIL=0
+CHECK CLASSES: A=22  B=4  D=2  (D-comparators are a labeled minority; no C-class first-principles claims made)
+SUMMARY: PASS=28  FAIL=0
 ==============================================================================
 
 ----- stderr -----

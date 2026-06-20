@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""The Brannen-BAE 2/9 READOUT GATE equals the generation-CARRIER IDENTIFICATION.
+"""Open-gate repair for the Brannen-BAE 2/9 readout/carrier/basepoint packet.
 
 Question attacked (workflow wf_400cd07a-108, 10 agents, 6 routes + 3-lens verify + synth):
 does framework baseline+retained FORCE the intensive local Lefschetz density 2/9 as THE physical flavor
 observable (over the EXTENSIVE global equivariant index, which vanishes on the retained
 Gamma_5=(-1)^(x+y+z)-paired native staggered Dirac), or does it relocate / stand as a third premise?
 
-VERDICT: gate_is_identification_bridge_relabeled. 5 of 6 routes converge: there is NO
-identification-independent forcing of 2/9 as the observable. The readout gate, the
-generation-carrier identification (open_gate lepton_brannen_bae_delta_two_ninths), and the
-zero-section/basepoint pick of retained_no_go koide_q_delta_residual_cohomology_obstruction
-are PROVEN to be ONE single gate, not three.
+VERDICT: open_gate_support. 5 of 6 routes converge: there is no
+identification-independent forcing of 2/9 as the physical observable. The
+readout gate, generation-carrier identification, and zero-section/basepoint
+pick are the same remaining premise in the bookkeeping sense; this runner
+does not derive that premise.
 
 This runner verifies the load-bearing algebra:
   (A) the C_3 fixed locus on the generation rep R^3 is the [111] LINE (det(I-C)=0), NOT an
@@ -25,9 +25,15 @@ This runner verifies the load-bearing algebra:
   (C) the within-doublet rep theory: L_3(1,2)=2/9 (holomorphic/det_C), L_3(1,1)=1/9 (real/Euler) --
       a genuine C_3 fact, but it does not select WHICH determinant is the physical mass ratio.
 
-NET: no new forcing; two apparent gates collapse to one, pinned precisely.
+NET: no new forcing; apparent gates collapse to one open premise, pinned
+precisely. This is not a retained derivation.
 """
+from pathlib import Path
+
 import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md"
 
 W = np.exp(2j * np.pi / 3)
 I3 = np.eye(3)
@@ -47,6 +53,28 @@ def check(name, cond, detail=""):
 
 def main():
     passed = []
+
+    note = NOTE.read_text(encoding="utf-8")
+    passed.append(check(
+        "S1 note is explicitly open_gate, not bounded_theorem",
+        "**Claim type:** open_gate" in note and "**Claim type:** bounded_theorem" not in note,
+    ))
+    passed.append(check(
+        "S2 note forbids retained-derivation use",
+        "may not be cited as a retained derivation" in note
+        and "No retained-grade promotion" in note
+        and "theorem closing" in note,
+    ))
+    passed.append(check(
+        "S3 note registers primary runner and cached output",
+        "scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py" in note
+        and "logs/runner-cache/flavor_readout_gate_equals_carrier_identification_2026_05_31.txt" in note,
+    ))
+    passed.append(check(
+        "S4 source repair states the remaining premise is still open",
+        "single physical carrier/basepoint premise" in note
+        and "does not derive the remaining premise" in note,
+    ))
 
     # --- (A) the fixed locus on R^3 is a LINE, not an isolated point -------------------------
     eig = np.sort_complex(np.linalg.eigvals(C))
@@ -115,12 +143,12 @@ def main():
         f"L={L}: extensive={extensive:.4f}, intensive={intensive:.4f}; the carrier choice (R^3 vs lattice) IS the gate"))
 
     print(f"\nSCORECARD PASS={sum(passed)} FAIL={len(passed)-sum(passed)}")
-    print("VERDICT: gate_is_identification_bridge_relabeled. No identification-independent forcing of 2/9")
-    print("as THE observable exists in framework baseline+retained. The readout gate = the generation-carrier")
-    print("identification (open_gate lepton_brannen_bae_delta_two_ninths) = the zero-section pick of")
-    print("retained_no_go koide_q_delta_residual_cohomology_obstruction. THREE apparent gates collapse to")
-    print("ONE, pinned precisely. New verified negative: J_cs is silent on r (the Q-setting parameter), so")
-    print("the Schur-forced complex structure does NOT select det_C over det_R as the Koide readout.")
+    print("VERDICT: open_gate_support. No identification-independent forcing of 2/9")
+    print("as THE observable exists in framework baseline+retained. The readout gate, generation-carrier")
+    print("identification, and zero-section pick are one remaining physical carrier/basepoint premise,")
+    print("not three independently closed theorems. New verified negative: J_cs is silent on r")
+    print("(the Q-setting parameter), so the Schur-forced complex structure does NOT select det_C")
+    print("over det_R as the Koide readout.")
     print("Provenance (verified vs origin/main 2026-05-31): open_gate lepton_brannen_bae_delta_two_ninths;")
     print("retained_no_go koide_q_delta_residual_cohomology_obstruction; retained_bounded koide_z3_")
     print("equivariant_anticommuting_no_go. No load-bearing on unaudited closure_c_staggered_dirac_gate /")

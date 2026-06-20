@@ -329,7 +329,7 @@ check(
     "section0_imports_are_implementation_inputs",
     "visible" in note_text
     and "declared implementation inputs" in note_text
-    and "declared implementation inputs for this bounded" in note_text,
+    and "declared/admitted implementation inputs for this bounded" in note_text,
     "canonical plaquette and Ward target are not proof authorities for this row",
 )
 check(
@@ -345,8 +345,17 @@ check(
     "plaquette, Ward target, RGE, thresholds, and EW initial conditions are enumerated",
 )
 check(
+    "section0_inputs_admitted_not_retained",
+    "2026-06-20 Audit Repair" in note_text
+    and "None of `I1`–`I5` carries a retained-grade dependency edge" in note_flat
+    and "supplied/" in note_flat and "admitted inputs" in note_flat
+    and "finite-grid numerical diagnostic conditional on `I1`–`I5`" in note_flat
+    and "not a retained-grade theorem" in note_flat,
+    "I1-I5 are admitted (not retained-grade, not self-contained-derived); result is conditional finite-grid diagnostic",
+)
+check(
     "section0_runner_count_updated",
-    "Counts: 30 PASS, 0 FAIL" in note_text,
+    "Counts: 31 PASS, 0 FAIL" in note_text,
     "note scorecard matches source-boundary runner",
 )
 check(

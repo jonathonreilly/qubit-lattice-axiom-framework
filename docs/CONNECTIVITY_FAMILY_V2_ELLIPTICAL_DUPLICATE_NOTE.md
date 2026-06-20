@@ -1,10 +1,15 @@
 # Connectivity Family V2 Elliptical Duplicate Note
 
-**Date:** 2026-04-06; cache-aligned row inventory 2026-06-18
+**Date:** 2026-04-06; cache-aligned row inventory 2026-06-18; runner-output
+accounting refresh 2026-06-20
 **Claim type:** bounded_theorem
 **Status:** bounded diagnostic duplicate of the parent sign-portability gate;
 the parity-tapered elliptical-shell sweep is not an independent
 tier-ratifiable family.
+
+**Status authority:** independent audit lane only. This note records no audit
+verdict and asserts no grade; the effective status is set exclusively by the
+independent audit lane on `origin/main`.
 
 ## Artifact Chain
 
@@ -57,7 +62,8 @@ runner/cache packet and is not used by this note.
 | `0.40` | `2, 3, 4` | `0, 1` | `3/5` |
 | `0.50` | `1, 4` | `0, 2, 3` | `2/5` |
 
-Total: `25/45` rows pass the runner gate.
+Total: `25/45` rows pass the runner gate. This matches the runner's verbatim
+`SAFE READ` summary line `passed rows: 25/45` in the SHA-pinned cache.
 
 The passing rows retain the runner's exact-control packet:
 
@@ -66,9 +72,10 @@ The passing rows retain the runner's exact-control packet:
 - plus/minus antisymmetry with the accepted sign orientation;
 - weak-field double-source exponent near unit slope.
 
-The cache reports mean passing exponent `0.999826`. Rows that fail do so by
-the sign-orientation condition, not by loss of the exact zero or neutral
-controls.
+The cache reports mean passing exponent `0.999826`, matching the runner's
+verbatim `SAFE READ` line `mean exponent among passes: 0.999826`. Rows that
+fail do so by the sign-orientation condition, not by loss of the exact zero or
+neutral controls.
 
 ## Safe Read
 
@@ -101,3 +108,44 @@ The parity-tapered elliptical-shell sweep is a bounded finite diagnostic
 duplicate of the parent sign-portability gate. It records a `25/45`
 cache-backed pass surface and a sign-orientation boundary, not a second
 independent retained family.
+
+## Repair: runner-output accounting refresh (2026-06-20)
+
+This repair refreshes the reported rows/pass accounting against the current
+SHA-pinned cached sweep and records why the older drift=0.02 targeted row is
+not part of this packet. No runner computation and no derived value were
+changed; only the note's reported accounting was synced to the runner's
+current cached output.
+
+Quote-anchored accounting:
+
+- Pass total — before: `Total: 25/45 rows pass the runner gate.`; after:
+  unchanged at `25/45`, now anchored to the runner's verbatim `SAFE READ` line
+  `passed rows: 25/45`.
+- Mean passing exponent — before: `mean passing exponent 0.999826`; after:
+  unchanged at `0.999826`, now anchored to the runner's verbatim `SAFE READ`
+  line `mean exponent among passes: 0.999826`.
+- Per-drift inventory — before: the `Checked Row Inventory` table; after:
+  unchanged, re-verified row-for-row against the current SHA-pinned cache
+  (per `(drift, seed)` `YES`/`no` flags). All nine drift rows and their
+  passing/failing seed sets match the current cache exactly.
+
+Verbatim runner `SAFE READ` summary block reproduced from the current
+SHA-pinned cache:
+
+```text
+SAFE READ
+  passed rows: 25/45
+  drift coverage: [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5]
+  mean exponent among passes: 0.999826
+  this family reproduces the portable sign-law fixed point on a narrow slice
+  it does not broaden the retained family set
+```
+
+Drift=0.02 certificate (second audit branch): not applicable. The current
+runner's `DRIFTS` list is
+`[0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50]`; it does not contain
+`0.02`, so the runner computes no drift=0.02 row and the SHA-pinned cache
+contains no such row. The honest refresh is therefore the current-cache row
+set above. The old `drift = 0.02, seed = 0` targeted row remains out of this
+packet (see `Current Cached Sweep`).

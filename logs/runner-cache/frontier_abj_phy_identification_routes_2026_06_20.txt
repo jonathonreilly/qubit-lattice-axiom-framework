@@ -1,0 +1,86 @@
+
+========================================================================
+PART A -- BANKABLE ARITHMETIC CORE (B1 LH anomaly traces, in-tree)
+========================================================================
+       Source surface recomputed in-tree; convention-independent recast Y_a.
+[PASS] A.1 Tr[Y]=0 (scale-free, a=1/3): got=0 want=0 residual=0
+[PASS] A.1 Tr[Y^3] = -48 a^3 (a=1/3): got=-16/9 want=-16/9 residual=0
+[PASS] A.1 Tr[SU(3)^2 Y] = a (a=1/3): got=1/3 want=1/3 residual=0
+[PASS] A.1 Tr[SU(2)^2 Y] = 0 (a=1/3): got=0 want=0 residual=0
+[PASS] A.1 Tr[Y]=0 (scale-free, a=1): got=0 want=0 residual=0
+[PASS] A.1 Tr[Y^3] = -48 a^3 (a=1): got=-48 want=-48 residual=0
+[PASS] A.1 Tr[SU(3)^2 Y] = a (a=1): got=1 want=1 residual=0
+[PASS] A.1 Tr[SU(2)^2 Y] = 0 (a=1): got=0 want=0 residual=0
+[PASS] A.1 Tr[Y]=0 (scale-free, a=-2/5): got=0 want=0 residual=0
+[PASS] A.1 Tr[Y^3] = -48 a^3 (a=-2/5): got=384/125 want=384/125 residual=0
+[PASS] A.1 Tr[SU(3)^2 Y] = a (a=-2/5): got=-2/5 want=-2/5 residual=0
+[PASS] A.1 Tr[SU(2)^2 Y] = 0 (a=-2/5): got=0 want=0 residual=0
+[PASS] A.1 Tr[Y]=0 (scale-free, a=7): got=0 want=0 residual=0
+[PASS] A.1 Tr[Y^3] = -48 a^3 (a=7): got=-16464 want=-16464 residual=0
+[PASS] A.1 Tr[SU(3)^2 Y] = a (a=7): got=7 want=7 residual=0
+[PASS] A.1 Tr[SU(2)^2 Y] = 0 (a=7): got=0 want=0 residual=0
+       => alpha (the absolute scale a) is NOT load-bearing for the SHAPE of the anomaly polynomial; it only sets the overall numeric values.
+[PASS] A.2 keystone B1 Tr[Y]      = 0: got=0 want=0 residual=0
+[PASS] A.2 keystone B1 Tr[Y^3]    = -16/9: got=-16/9 want=-16/9 residual=0
+[PASS] A.2 keystone B1 Tr[SU3^2Y] = 1/3: got=1/3 want=1/3 residual=0
+[PASS] A.2 keystone B1 Tr[SU3^3]  = 2: got=2 want=2 residual=0
+       These are the THREE nonzero ABJ-relevant traces of step B1 of the keystone, recomputed in-tree (not cited blind). Tr[SU(2)^2 Y]=0, Tr[Y]=0.
+       A.3 BANKABILITY: arithmetic uses only retained graph_first surface + rational algebra; deps-all-retained like SM_ANOMALY_CLOSURE precedent. It does NOT route the arithmetic through the unaudited keystone. => the B1 arithmetic core IS a deps-all-retained bounded-theorem candidate.
+[PASS] A.3 bankable-core deps-all-retained (graph_first retained): got=True want=True residual=0
+
+========================================================================
+PART B -- IDENTIFICATION-ROUTE PROBES (fresh honest attempts)
+========================================================================
+
+========================================================================
+ROUTE B1: 'this nonzero native abelian direction IS the gauged U(1) entering the anomaly test' from Record-sector structure
+========================================================================
+       ATTEMPT: derive that the unique traceless u(1) of the commutant is the GAUGED direction the ABJ test consumes, using only A_min Record + the approved primitives (NOT full SM U(1)_Y; just the gauged-direction pick).
+       Record axiom (MINIMAL_AXIOMS_2026-06-05, l.52,64-72): a record supplies NO sector-generation rule, NO gauge group, NO species identification, NO weighting/normalization. Quantum axiom (l.52): explicitly does NOT supply 'species identification, gauge group, particle content'.
+[PASS] B1 Record supplies a gauge-coupling / which-symmetry-is-gauged rule: got=False want=False residual=0  // WALL: axioms explicitly withhold gauge group (MINIMAL_AXIOMS l.52)
+       WALL confirmed and SHARPENED to the gauged-direction sub-claim: even the NARROWED P-HY role ('this direction is THE gauged one') is not supplied. The commutant gives a CANONICAL traceless u(1) direction (graph_first, retained) -- that selects the DIRECTION uniquely up to scale -- but 'gauged' (couples as a connection whose anomaly threatens unitarity) is an external dynamical predicate A_min does not register.
+       COUNTERFACTUAL check (realized-state primitive policing): no realized state makes Y 'gauged'; gaugedness is a law-level structural input, not registered data. So this is not rescuable as realized-state data either.
+[PASS] B1 PARTIAL: the traceless u(1) DIRECTION is canonical (retained graph_first): got=True want=True residual=0  // the surface/direction is supplied; only the 'is-gauged' predicate walls
+
+========================================================================
+ROUTE B2: prove alpha=1/3 is a PURE GAUGE/CONVENTION so the admission is HARMLESS (push rescaling-invariance hint B3 to a clean lemma)
+========================================================================
+       ATTEMPT: show every ABJ anomaly-cancellation equation is invariant under a global rescaling Y -> lambda*Y (lambda != 0). If so the absolute scale alpha is a free normalization and the alpha=1/3 admission is harmless.
+[PASS] B2 Tr[Y] scales by lambda (lam=2): got=0 want=0 residual=0
+[PASS] B2 Tr[SU3^2Y] scales by lambda (lam=2): got=2/3 want=2/3 residual=0
+[PASS] B2 Tr[Y^3] scales by lambda^3 (lam=2): got=-128/9 want=-128/9 residual=0
+[PASS] B2 Tr[Y] scales by lambda (lam=-5): got=0 want=0 residual=0
+[PASS] B2 Tr[SU3^2Y] scales by lambda (lam=-5): got=-5/3 want=-5/3 residual=0
+[PASS] B2 Tr[Y^3] scales by lambda^3 (lam=-5): got=2000/9 want=2000/9 residual=0
+[PASS] B2 Tr[Y] scales by lambda (lam=1/7): got=0 want=0 residual=0
+[PASS] B2 Tr[SU3^2Y] scales by lambda (lam=1/7): got=1/21 want=1/21 residual=0
+[PASS] B2 Tr[Y^3] scales by lambda^3 (lam=1/7): got=-16/3087 want=-16/3087 residual=0
+       => each anomaly polynomial is HOMOGENEOUS in Y; the set {all anomalies=0} is invariant under Y->lambda*Y. So WITHIN the anomaly-cancellation test, the absolute scale alpha is a free normalization (only RATIOS matter).
+[PASS] B2 alpha harmless FOR the anomaly-cancellation test (rescaling-invariant): got=True want=True residual=0
+[PASS] B2 alpha harmless FOR the physical SM-value match Y(L_L)=-1: got=False want=False residual=0  // WALL: GMN charge matching fixes alpha=1/3 to a physical number; rescaling changes Q(e_L). NOT pure convention for the value.
+       HONEST SPLIT: B3-style rescaling-invariance DOES yield a clean lemma 'alpha is pure convention for the ANOMALY test' -> for the keystone B1/B3 anomaly arithmetic the alpha=1/3 admission is REMOVABLE/harmless. It is NOT removable for the physical electric-charge identification (GMN Q=T3+Y/2 with Q(e_L)=-1), which is the alpha-bridge's P1-P4 packet. In-tree ledger: hypercharge_alpha_third_normalization_bridge is retained_bounded/chain_closes=True, so for the bridge's narrow scope the value is supplied; but its OWN P1-P4 are admitted SM conventions.
+
+========================================================================
+ROUTE B3: L2 matter-assignment (Sym^2/Anti^2 -> SU(3) triplet/singlet) from Cl(3) representation theory WITHOUT importing target labels
+========================================================================
+       ATTEMPT: the 2026-05-02 audit repair target -- construct the physical map C^8 taste sectors -> SU(3) rep content WITHOUT importing 'quark'/'lepton'.
+[PASS] B3 Sym^2 block dim = 3 (from tau eigendecomp, no labels): got=3 want=3 residual=0
+[PASS] B3 Anti^2 block dim = 1 (from tau eigendecomp, no labels): got=1 want=1 residual=0
+[PASS] B3 su(3) on Sym^2(C^3) closes: [l1,l2]=2i l3: got=True want=True residual=0
+[PASS] B3 su(3) acts NONtrivially on the 3-dim Sym^2 block (=> fundamental): got=True want=True residual=0
+[PASS] B3 su(3) acts trivially on the 1-dim Anti^2 block (=> singlet): got=True want=True residual=0
+       => The REPRESENTATION-CONTENT map Sym^2->3, Anti^2->1 is DERIVED from Cl(3)/su(3) rep theory WITHOUT importing target labels. THIS HALF of the 2026-05-02 repair target IS MET (it is exactly LHCM_MATTER_ASSIGNMENT, ledger=decoration_under_graph_first_su3_integration_note, retained).
+       BUT the repair target also demanded the PHYSICAL map to 'SM left-handed fermion representations' -- i.e. naming the SU(3)-fundamental Weyl as the physical QUARK doublet. That naming ('color-charged == quark') is a DEFINITIONAL SM convention, NOT derivable from A_min (no species identification: MINIMAL_AXIOMS l.52). For the ANOMALY TEST, however, only the REP CONTENT (3 vs 1) and the hypercharge VALUES enter -- the species NAME is not load-bearing in the anomaly polynomial.
+[PASS] B3 rep-content (3 vs 1) derived without labels [repair half MET]: got=True want=True residual=0
+[PASS] B3 species NAME (quark/lepton) derivable from A_min: got=False want=False residual=0  // WALL: A_min withholds species identification; but name is NOT load-bearing for the anomaly arithmetic.
+
+========================================================================
+VERDICT SUMMARY
+========================================================================
+       ARITHMETIC CORE (Part A): BANKABLE. Three nonzero B1 traces {Tr[Y^3]=-16/9, Tr[SU3^2 Y]=1/3, Tr[SU3^3]=2} + Tr[Y]=Tr[SU2^2 Y]=0, recomputed in-tree, scale-free shape, deps-all-retained (graph_first retained) -> deps-all-retained bounded-theorem candidate (SM_ANOMALY_CLOSURE precedent).
+       ROUTE B1 (gauged-direction from Record): WALLED. Direction is canonical (retained), 'gauged' predicate is withheld by A_min. Not rescuable as realized-state data (gaugedness is law-level, not registered).
+       ROUTE B2 (alpha pure convention): PARTIAL WIN. alpha IS pure convention FOR the anomaly-cancellation test (homogeneity/rescaling-invariance lemma) -> the admission is HARMLESS for the keystone B1/B3 anomaly arithmetic. NOT harmless for the physical electric-charge value match (GMN), which remains the alpha-bridge's admitted P1-P4 SM conventions. In-tree ledger correction: the alpha bridge is retained_bounded/chain_closes=True (NOT 'still conditional' as the stale map framed it).
+       ROUTE B3 (L2 from Cl(3) without labels): HALF MET. Rep-content map Sym^2->3, Anti^2->1 IS derived label-free (retained decoration). The species NAMING remains an admitted SM convention, but it is NOT load-bearing for the anomaly polynomial.
+       NET: the physical-identification wall SHRINKS but does not vanish. The only irreducible withheld piece load-bearing for the ANOMALY TEST is the 'is-gauged' predicate on the canonical u(1) direction (B1). alpha (B2) and species-naming (B3) are NOT load-bearing for the anomaly arithmetic.
+
+TOTAL: PASS=41 FAIL=0

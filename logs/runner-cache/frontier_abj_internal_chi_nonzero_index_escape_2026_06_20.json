@@ -1,0 +1,184 @@
+{
+  "edge": "P-ABJ",
+  "claim": "no A_min-internal complex yields a nonzero taste-singlet index with intact chirality; internal route sharper-walled",
+  "pass": 34,
+  "fail": 0,
+  "checks": [
+    {
+      "name": "P0 Z4xZ2^3 random U(1): equal eps sublattices (balanced, chi=0)",
+      "status": "PASS",
+      "detail": "N+=16 N-=16"
+    },
+    {
+      "name": "P0 Z4xZ2^3 random U(1): eps D eps = -D",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P0 Z4xZ2^3 random U(1): A_t = 0 for all t (square-block wall)",
+      "status": "PASS",
+      "detail": "max|A_t|=1.19e-14"
+    },
+    {
+      "name": "P0 Z4xZ2^3 flux U(1): equal eps sublattices (balanced, chi=0)",
+      "status": "PASS",
+      "detail": "N+=16 N-=16"
+    },
+    {
+      "name": "P0 Z4xZ2^3 flux U(1): eps D eps = -D",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P0 Z4xZ2^3 flux U(1): A_t = 0 for all t (square-block wall)",
+      "status": "PASS",
+      "detail": "max|A_t|=2.66e-15"
+    },
+    {
+      "name": "P0 Z4^4 random U(1): equal eps sublattices (balanced, chi=0)",
+      "status": "PASS",
+      "detail": "N+=128 N-=128"
+    },
+    {
+      "name": "P0 Z4^4 random U(1): eps D eps = -D",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P0 Z4^4 random U(1): A_t = 0 for all t (square-block wall)",
+      "status": "PASS",
+      "detail": "max|A_t|=6.10e-15"
+    },
+    {
+      "name": "P0 Z4^4 flux U(1): equal eps sublattices (balanced, chi=0)",
+      "status": "PASS",
+      "detail": "N+=128 N-=128"
+    },
+    {
+      "name": "P0 Z4^4 flux U(1): eps D eps = -D",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P0 Z4^4 flux U(1): A_t = 0 for all t (square-block wall)",
+      "status": "PASS",
+      "detail": "max|A_t|=1.15e-14"
+    },
+    {
+      "name": "P1 R-A: a hypercubic torus is eps-imbalanced IFF every edge length is odd (total site count odd)",
+      "status": "PASS",
+      "detail": "imbalanced cases found: 16 (all have all-odd edges)"
+    },
+    {
+      "name": "P1 R-A: the all-odd torus IS eps-imbalanced (chi != 0)",
+      "status": "PASS",
+      "detail": "N+=41 N-=40"
+    },
+    {
+      "name": "P1 R-A: but the all-odd torus DESTROYS {eps,D}=0 (no chiral grading)",
+      "status": "PASS",
+      "detail": "max|eps D eps + D|=1.000 (nonzero -> eps not a chirality)"
+    },
+    {
+      "name": "P2 control: open 3x3 hypercube is eps-imbalanced (boundary => chi!=0)",
+      "status": "PASS",
+      "detail": "N+=5 N-=4"
+    },
+    {
+      "name": "P2 control: open boundary KEEPS {eps,D}=0 (bipartite, rectangular B)",
+      "status": "PASS",
+      "detail": "max|eps D eps + D|=0.00e+00"
+    },
+    {
+      "name": "P2 control: imbalanced open complex => NONZERO index (escape works ONLY off A_min substrate)",
+      "status": "PASS",
+      "detail": "A_inf=1.000000, N+-N-=1 (boundary not in A_min)"
+    },
+    {
+      "name": "P3 (4, 2, 2, 2): overlap kernel K=eps D is Hermitian",
+      "status": "PASS",
+      "detail": "max|K-K^dag|=0.00e+00"
+    },
+    {
+      "name": "P3 (4, 2, 2, 2): overlap/Adams taste-singlet index = 0 on flat A_min torus",
+      "status": "PASS",
+      "detail": "index=-0.000000"
+    },
+    {
+      "name": "P3 (4, 2, 2, 2) m=0.37: H^2 = K^2 + m^2 I (eps-gap G1 => flow 0)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P3 (4, 2, 2, 2) m=1.0: H^2 = K^2 + m^2 I (eps-gap G1 => flow 0)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P3 (4, 4, 4, 4): overlap kernel K=eps D is Hermitian",
+      "status": "PASS",
+      "detail": "max|K-K^dag|=0.00e+00"
+    },
+    {
+      "name": "P3 (4, 4, 4, 4): overlap/Adams taste-singlet index = 0 on flat A_min torus",
+      "status": "PASS",
+      "detail": "index=-0.000000"
+    },
+    {
+      "name": "P3 (4, 4, 4, 4) m=0.37: H^2 = K^2 + m^2 I (eps-gap G1 => flow 0)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P3 (4, 4, 4, 4) m=1.0: H^2 = K^2 + m^2 I (eps-gap G1 => flow 0)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P3 R-B: overlap index = 0 even with U(1) flux on balanced A_min torus (taste-singlet route does NOT escape on the A_min substrate)",
+      "status": "PASS",
+      "detail": "index(flux)=-0.000000"
+    },
+    {
+      "name": "P4 R-C: closed A_min torus, single-valued links => total winding Q=0 (no internal topological charge)",
+      "status": "PASS",
+      "detail": "max|Q_plane|=1.31e-15"
+    },
+    {
+      "name": "P4 R-C: nonzero Q on the torus requires an injected boundary TWIST (transition function) = external topological input, not A_min-derived",
+      "status": "PASS",
+      "detail": "Q_tx=-16.0000 (integer winding from the inserted twist)"
+    },
+    {
+      "name": "P4 R-C: even with injected Q!=0, A_t=0 on the balanced A_min torus (square-block wall survives nonzero gauge topological charge)",
+      "status": "PASS",
+      "detail": "max|A_t|=1.15e-14"
+    },
+    {
+      "name": "P5 W1: NO closed hypercubic torus is BOTH eps-imbalanced AND keeps {eps,D}=0 (chi!=0 and intact chirality are mutually exclusive on A_min)",
+      "status": "PASS",
+      "detail": "imbalance <=> all edges odd <=> grading broken in every direction"
+    },
+    {
+      "name": "P5 W2: A_min closed substrate => B is SQUARE (no boundary cell to make it rectangular)",
+      "status": "PASS",
+      "detail": "B shape=(16, 16)"
+    },
+    {
+      "name": "P5 W3: bare A_min substrate (no gauge primitive) => Q=0 AND A_t=0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "P5 FINAL: every nonzero-index closure condition (W1/W2/W3) requires non-A_min structure (boundary, non-cubic cell, or injected topology)",
+      "status": "PASS",
+      "detail": "A_min hypercubic-closed substrate gives balanced square-block, A_t=0"
+    }
+  ],
+  "verdict": "On the A_min-internal closed hypercubic substrate (Lattice cubic adjacency + kinetic-isotropy time edge), every escape ray for the P-ABJ internal route is blocked: (R-A) chi!=0 imbalance requires an all-odd torus which destroys {eps,D}=0 (loses the chirality grading), (R-B) the overlap/Adams taste-singlet index is pinned to 0 by the eps-gap H^2=K^2+m^2 even under U(1) flux, (R-C) a closed A_min complex carries Q=0 internally and even an externally-injected Q!=0 leaves the balanced square-block A_t=0. Nonzero index needs a boundary / non-cubic cell / injected topological charge that A_min does not supply. The internal route is SHARPER-walled; the external ABJ premise stays a registered admission (not derivable from A_min by policy).",
+  "absorbs": [
+    "ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30 (retained_no_go, PASS=45)",
+    "ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28 (retained_bounded, PASS=36)",
+    "ABJ_ANOMALY_FRAMEWORK_INTERNAL_U1_JACOBIAN_NARROW_NOTE_2026-05-27 (PASS=19)"
+  ]
+}

@@ -1,0 +1,63 @@
+P-REC R4 taste-reconstruction fresh-attack runner
+keystone: anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26
+
+PART 0 - Blocked free staggered carrier: alpha_mu surface (re-derive in-tree)
+  [PASS] alpha_0 Hermitian  residual=0.000e+00
+  [PASS] alpha_1 Hermitian  residual=0.000e+00
+  [PASS] alpha_2 Hermitian  residual=0.000e+00
+  [PASS] alpha_3 Hermitian  residual=0.000e+00
+  [PASS] alpha_0^2 = I  residual=0.000e+00
+  [PASS] alpha_1^2 = I  residual=0.000e+00
+  [PASS] alpha_2^2 = I  residual=0.000e+00
+  [PASS] alpha_3^2 = I  residual=0.000e+00
+  [PASS] alpha_mu form Cl_4 {a_mu,a_nu}=2 delta I  residual=0.000e+00  [absorbs abj-prec-spintaste-core Cl_4]
+  [PASS] generated spin algebra dim = 16 (one Cl_4 block)  residual=0.000e+00  [absorbs spintaste-core rank-16 spin algebra]
+  [PASS] taste commutant dim = 16  residual=0.000e+00  [spectator taste algebra M_4(C)]
+
+PART 1 - Gamma_5^spin as a genuine taste-singlet spacetime gamma_5
+  [PASS] G5 Hermitian  residual=0.000e+00
+  [PASS] G5^2 = I  residual=0.000e+00
+  [PASS] {G5, alpha_mu} = 0 for all mu  residual=0.000e+00
+  [PASS] chirality projectors rank 8 / 8  residual=0.000e+00
+  [PASS] G5 commutes with full taste commutant (taste-singlet)  residual=1.235e-15  [G5 IS a taste-singlet spin gamma_5]
+
+PART 2 - Staggered epsilon is taste-dressed (sharpened no-go, absorbed)
+  [PASS] epsilon Hermitian involution  residual=0.000e+00
+  [PASS] {epsilon, alpha_mu} = 0 (epsilon grades hopping)  residual=0.000e+00
+  [PASS] epsilon != +/- G5 (max|eps -/+ G5| ~ 1)  residual=1.000e+00
+  [PASS] epsilon NOT in Cl_4 spin algebra (residual ~ 4.0)  residual=4.000e+00  [epsilon outside generated spin algebra]
+  [PASS] epsilon FAILS to commute with taste commutant (taste-dressed)  residual=3.753e-01  [epsilon is taste-dressed, not spin gamma_5]
+
+PART 3 - R4 (route 1): taste-reconstruction map + free-Dirac chirality test
+  [PASS] R4-core: {G5, D_red(m=0,p)} = 0 (massless free chirality exact)  residual=0.000e+00  [G5 IS a chirality operator for the FREE massless staggered Dirac op]
+  [PASS] R4-core: {G5, D_red(m,p)} = 2 m G5 (mass-only breaking)  residual=0.000e+00  [standard: only mass breaks chirality]
+  [PASS] target irreducible Dirac gamma_mu form Cl_4 (4x4)  residual=0.000e+00
+  [PASS] R4: intertwiner space alpha-rep ~ gamma_mu(x)1_taste has dim 16 (=M_4(C))  residual=0.000e+00  [multiplicity-4 Cl_4 reps are unitarily equivalent]
+  [PASS] R4: explicit unitary reconstruction W: alpha_mu -> gamma_mu (x) 1_taste  residual=1.887e-15  [blocked carrier -> 4 identical irreducible Dirac factors]
+  [PASS] R4: G5 -> gamma_5^Dirac (x) 1_taste under reconstruction  residual=2.434e-15  [Gamma_5^spin IS the chirality of the irreducible Dirac factor]
+
+PART 3.5 - R4 WALL: single-taste selection is NOT forced (free algebra)
+  [PASS] WALL: full M_4(C) taste commutant are EXACT symmetries of D_red(m,p) for all p  residual=1.554e-15  [no taste direction preferred -> single-taste NOT selected by free algebra]
+  [PASS] WALL: free carrier splits into >=4 degenerate taste sectors (no preferred one)  residual=0.000e+00  [4 taste sectors; single-taste choice is a SELECTION not a derivation]
+  [PASS] WALL: two DISTINCT rank-4 single-taste projectors both invariant (selector ambiguous)  residual=1.346e-15  [single-taste chirality = SELECTOR-dependent = registered data (counterfactual clause)]
+
+PART 4 - R2 (route 2): CL3_TO_CL31 4th generator + single-taste selector
+  [PASS] R2: per-site Cl(3) no gamma_5 (constraint full rank, only M=0)  residual=0.000e+00  [root NO_PER_SITE_CHIRALITY reconfirmed in-tree]
+  [PASS] R2: CL3->CL31 e_4 adjoined, signature (+,+,+,-)  residual=0.000e+00
+  [PASS] R2: Cl(3,1) volume elt anticommutes with the 3 spatial generators  residual=0.000e+00  [4th generator supplies a finite gamma_5 ALGEBRAICALLY]
+  [PASS] R2 WALL: eps=+1 branch (Cl(4,0)) is a DISTINCT extension (sign-eps is admitted)  residual=0.000e+00  [Lorentzian sign eps=-1 is delegated/admitted per CL3_TO_CL31 (not derived here)]
+  [PASS] R2 WALL: identification still needs an UNFORCED single-taste selector  residual=0.000e+00  [R2 reduces to the same single-taste selection wall as R4]
+
+PART 5 - R3a (route 3): Adams taste-singlet index as chirality witness
+  [PASS] R3a: G5 in {alpha}'' = functional-calculus algebra (it IS a polynomial in alpha_mu)  residual=0.000e+00  [correct algebra: spectral/polynomial, not span{I,G}]
+  [PASS] R3a: epsilon NOT in {alpha}'' (taste-dressed, cannot be the index grading)  residual=4.000e+00
+  [PASS] R3a: naive Tr[G5] = 0 on even 2^4 carrier (square-block no-go content)  residual=0.000e+00  [naive taste-summed index vanishes on equal-sublattice even tori]
+  [PASS] R3a: taste-singlet index nonzero ONLY given imposed Q!=0 background (re-targets)  residual=2.000e+00  [Adams index is a witness GIVEN chi!=0/Q!=0 background; free framework supplies none]
+  [PASS] R3a WALL: free framework supplies no chi!=0 background -> index route OPEN not closed  residual=0.000e+00  [R3a leaves a genuine open ray (curved/imbalanced complex)]
+
+PART 6 - Verdict synthesis for P-REC
+  [PASS] SYNTHESIS: P-REC arithmetic core CLOSED (free reconstruction + taste-singlet G5)  residual=0.000e+00
+  [PASS] SYNTHESIS: P-REC physical identification WALLED (unforced single-taste selector)  residual=0.000e+00  [soft wall: escape exists but needs interacting single-taste selector NOT in A_min]
+  [PASS] SYNTHESIS: R4 does NOT crack P-REC (no campaign pivot)  residual=0.000e+00  [R4 sharpens the wall to a single missing object: the gauged single-taste selector]
+
+TOTAL: PASS=43 FAIL=0

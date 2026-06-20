@@ -1,0 +1,111 @@
+
+==============================================================================
+ABJ ARITHMETIC CORE BANKABILITY -- EDGE-INDEPENDENT VERIFICATION
+==============================================================================
+Precedent: SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED_BOUNDED_THEOREM
+           _NOTE_2026-06-08 (deps-all-retained, audit-ready, PASS=11 on main).
+Target keystone (must NOT be on any core's load-bearing path):
+  anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26
+
+==============================================================================
+CORE 1: P-HY scale-free native abelian anomaly core
+==============================================================================
+  [PASS] PHY.Tr[Y]==0 (scale-free, all a) :: Tr[Y]=0
+  [PASS] PHY.Tr[Y^3]==-48 a^3 (nonzero for a!=0) :: Tr[Y^3]=-48*a**3
+  [PASS] PHY.Tr[SU(3)^2 Y]==a (nonzero for a!=0) :: Tr[SU(3)^2 Y]=a
+  [PASS] PHY.Tr[SU(2)^2 Y]==0 (scale-free, all a) :: Tr[SU(2)^2 Y]=0
+  [PASS] PHY.Tr[SU(3)^3]_LH==2 :: Tr[SU(3)^3]_LH=2
+  [PASS] PHY.a=1/3 -> Tr[Y^3]=-16/9 :: =-16/9
+  [PASS] PHY.a=1/3 -> Tr[SU(3)^2 Y]=1/3 :: =1/3
+  [PASS] PHY.convention-independent: Tr[Y^3],Tr[SU3^2 Y] nonzero on a-grid :: grid {1/3,1/5,-2/7,11/13,3} all nonzero
+
+==============================================================================
+CORE 2: P-COMP scale-free singlet-completion classification
+==============================================================================
+  [PASS] PCOMP.anomaly forces {x,y}={4a,-2a}, z=-6a (n=0) :: solutions=[{x: -2*a, y: 4*a, z: -6*a}, {x: 4*a, y: -2*a, z: -6*a}]
+  [PASS] PCOMP.witness (4a,-2a,-6a,0): mixed SU3^2 Y == 0
+  [PASS] PCOMP.witness: grav^2 Y (Tr[Y]) == 0
+  [PASS] PCOMP.witness: cubic Y^3 == 0
+  [PASS] PCOMP.witness: SU(3)^3 == 0
+  [PASS] PCOMP.B3 global-Y rescaling preserves cubic zero (scale = convention)
+  [PASS] PCOMP.B2 vectorlike (t,-t) pair adds 0 to Tr[Y] and Tr[Y^3]
+  [PASS] PCOMP.B1 counterexample (0,2a,-2a,-4a) cancels mixed SU3^2 Y
+  [PASS] PCOMP.B1 counterexample cancels Tr[Y]
+  [PASS] PCOMP.B1 counterexample cancels Tr[Y^3]
+  [PASS] PCOMP.B1 counterexample != SM witness (=> n=0 load-bearing)
+  [PASS] PCOMP.scale-free spot checks a in {1/3,2/5,7/4,-1/2}
+
+==============================================================================
+CORE 3: P-REC spin/taste Clifford core (blocked 2^4 hypercube)
+==============================================================================
+  [PASS] PREC.alpha_mu Hermitian
+  [PASS] PREC.alpha_mu involutions (alpha^2=I)
+  [PASS] PREC.{alpha_mu,alpha_nu}=2 delta_{mu nu} I (Cl_4)
+  [PASS] PREC.Gamma5spin Hermitian
+  [PASS] PREC.Gamma5spin^2 = I
+  [PASS] PREC.Gamma5spin anticommutes every alpha_mu
+  [PASS] PREC.chirality projectors rank 8 / 8
+  [PASS] PREC.generated spin Clifford algebra dim = 16
+  [PASS] PREC.taste commutant dim = 16
+  [PASS] PREC.Gamma5spin commutes with taste commutant (taste-singlet)
+  [PASS] PREC.eps anticommutes every alpha_mu (kinetic grading)
+  [PASS] PREC.eps != +/- Gamma5spin (taste-dressed) :: max|eps-G5|=1.000, max|eps+G5|=1.000
+  [PASS] PREC.eps NOT in generated Cl_4 spin algebra (residual>0) :: lstsq residual=4.000
+  [PASS] PREC.eps does NOT commute with taste commutant :: max taste-commutator=0.359
+
+==============================================================================
+DEPENDENCY-SET RETAINED-GRADE AUDIT (read-only ledger parse)
+==============================================================================
+  [PASS] LEDGER.keystone bridge is UNAUDITED (must not be on any core path) :: status=unaudited
+  [PASS] LEDGER.parent anomaly_forces_time_theorem is UNAUDITED :: status=unaudited
+  [PASS] LEDGER.precedent SM_ANOMALY_CLOSURE is retained-grade :: status=retained_pending_chain
+
+  --- P-HY anomaly core : load-bearing retained-anchor deps ---
+  [PASS] P-HY anomaly core :: dep 'graph_first_su3_integration_note' retained-grade :: status=retained
+  [PASS] P-HY anomaly core :: dep 'native_gauge_closure_note' retained-grade :: status=retained
+  [PASS] P-HY anomaly core :: dep 'native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23' retained-grade :: status=decoration_under_graph_first_su3_integration_note
+  [PASS] P-HY anomaly core :: dep 'lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02' retained-grade :: status=decoration_under_graph_first_su3_integration_note
+  [PASS] P-HY anomaly core :: does NOT route through keystone/parent
+  [PASS] P-HY anomaly core :: BANKABLE NOW (deps-all-retained + decoupled)
+
+  --- P-COMP completion classification : load-bearing retained-anchor deps ---
+  [PASS] P-COMP completion classification :: dep 'graph_first_su3_integration_note' retained-grade :: status=retained
+  [PASS] P-COMP completion classification :: dep 'native_gauge_closure_note' retained-grade :: status=retained
+  [PASS] P-COMP completion classification :: dep 'native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23' retained-grade :: status=decoration_under_graph_first_su3_integration_note
+  [PASS] P-COMP completion classification :: does NOT route through keystone/parent
+  [PASS] P-COMP completion classification :: BANKABLE NOW (deps-all-retained + decoupled)
+
+  --- P-REC spin/taste Clifford core : load-bearing retained-anchor deps ---
+  [PASS] P-REC spin/taste Clifford core :: dep 'no_per_site_chirality_theorem_note_2026-05-02' retained-grade :: status=retained_no_go
+  [PASS] P-REC spin/taste Clifford core :: dep 'clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10' retained-grade :: status=retained
+  [PASS] P-REC spin/taste Clifford core :: dep 'lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29' retained-grade :: status=retained_bounded
+  [PASS] P-REC spin/taste Clifford core :: does NOT route through keystone/parent
+  [PASS] P-REC spin/taste Clifford core :: BANKABLE NOW (deps-all-retained + decoupled)
+
+==============================================================================
+WRINKLE: P-REC staggered carrier status (Kawamoto-Smit)
+==============================================================================
+  staggered_dirac_kawamoto_smit_forcing status = audited_conditional
+  [PASS] PREC.carrier (audited_conditional) is NOT a load-bearing dep (recomputed in-tree instead) :: KS status=audited_conditional; alpha_mu rebuilt in-tree from phases
+  [PASS] PREC.WRINKLE flagged: if the bank lists the staggered carrier as load-bearing it is NOT deps-all-retained :: KS is audited_conditional -> would break deps-all-retained if cited load-bearing
+
+==============================================================================
+BANKABILITY SUMMARY
+==============================================================================
+  BANKABLE NOW  : P-HY anomaly core
+  BANKABLE NOW  : P-COMP completion classification
+  BANKABLE NOW  : P-REC spin/taste Clifford core
+
+  Admitted premises (STATED, not ledger deps -- mirror SM_ANOMALY_CLOSURE P):
+    P-HY  : the native nonzero abelian direction IS the gauged anomaly-
+            relevant U(1) entering the test (NARROW role); alpha=1/3 is a
+            convention (B3-style rescaling) NOT load-bearing for the core.
+    P-COMP: the opposite-chirality SU(2)-singlet RH template incl neutral n_R.
+    P-REC : the interacting/gauged single-taste reconstruction map (R4, open).
+  External comparator facts (named, reproven-in-runner where arithmetical):
+    Adler 1969; Bell-Jackiw 1969; Dynkin T(2)=T(3)=1/2; SU(3) cubic A(3)=+1.
+
+==============================================================================
+TOTAL: PASS=55 FAIL=0
+VERDICT: all three ABJ arithmetic cores recomputed exact in-tree AND each has a deps-all-retained, keystone-decoupled load-bearing set -> BANKABLE as conditional bounded theorems (SM_ANOMALY_CLOSURE shape). Identifications remain admitted premises (not derived).
+==============================================================================

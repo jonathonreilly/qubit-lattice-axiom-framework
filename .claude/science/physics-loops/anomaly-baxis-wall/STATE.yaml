@@ -1,0 +1,42 @@
+loop_slug: anomaly-abj-bridge
+mode: campaign (continuation of single-clock-baxis-wall; next OPPORTUNITY_QUEUE item)
+goal: >
+  Wall-consolidation + arithmetic-core banking on the anomaly_forces_time ABJ
+  premise bridge (fanout 1105). Unlike single_clock B-AXIS, this bridge is NOT
+  all-walled: three arithmetic cores are bankable as deps-all-retained bounded
+  theorems (SM_ANOMALY_CLOSURE shape); four physical identifications wall.
+worktree: /Users/jonBridger/tp-audit-bridge-20260620
+started_epoch: 1781963041
+deadline_epoch: 1782006241
+base_commit: 9469e8251
+
+cycle_count: 1
+block_count: 1
+active_block: 01
+active_block_branch: physics-loop/anomaly-abj-bridge-block01-20260620
+block01_result: >
+  CLOSED. Per-edge fresh attempts (P-HY/P-COMP/P-REC/P-ABJ) + bankability check.
+  NO CRACK. 5 runners 222 PASS / 0 FAIL. THREE bankable arithmetic cores
+  (deps-all-retained, keystone-decoupled): P-HY traces, P-COMP classification
+  (arithmetic only, circular-on-parent), P-REC spin/taste Clifford core
+  (carrier-conditional even 2^4). P-HY identification wall SHRANK to the single
+  "is-gauged" predicate (alpha proven pure convention via homogeneity lemma;
+  species-naming label-free). Four identifications walled, all funnel to the
+  MINIMAL_AXIOMS gauge-group/content/species/single-taste withholding gate;
+  P-ABJ categorically external. Commit pending.
+exercise_warranted_walls:
+  - P-COMP template existence/minimality (no positive Record/Cl(3) supplier; circular-on-parent)
+  - P-REC gauged/interacting single-taste selector (free algebra has full M_4(C) taste symmetry; selector = registered data)
+  - P-ABJ internal-route N7 steelman (curved/non-hypercubic complex witnessing nonzero index)
+
+revised_block_plan:
+  - block01: DONE — per-edge fresh attempts + bankability (no crack; 3 bankable cores)
+  - block01b: EXERCISE skill on the 3 flagged hard walls (user standing directive) before fencing N1/N7
+  - block02: bank the 3 cores as keystone-decoupled bounded theorems + unified four-edge hybrid obstruction note (N1-N8, incl exercise results)
+  - block03: consumer-firewall widening over the 1105 cone (re-expose P-HY; do not inherit dep-reroute laundering)
+  - block04: owner/audit packaging (Decisions A bank cores / H alpha-convention lemma / I P-ABJ external) + final report
+
+next_exact_action: >
+  Commit block01; run the exercise skill on the 3 flagged walls (block01b);
+  then bank cores + unified note (block02).
+stop_condition: runtime/deadline ~21:44 EDT, all blocks closed, or a crack pivots.

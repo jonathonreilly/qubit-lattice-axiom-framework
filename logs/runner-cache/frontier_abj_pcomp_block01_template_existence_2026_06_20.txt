@@ -1,0 +1,54 @@
+
+=== P-COMP block01 fresh-attack residuals ===
+[PASS] A1 mixed-color anomaly gives x+y=2a
+[PASS] A2 cubic with n=0 forces xy=-8a^2
+[PASS] A3 linear/grav with n=0 forces z=-6a
+[PASS] A4 forced template {x,y,z,n}={4a,-2a,-6a,0} (up to x<->y swap)
+[PASS] A5 SU(3)^3 color cubic cancels (2-1-1=0)
+[PASS] A6 all anomalies vanish at forced template, a=1/3
+[PASS] A6 all anomalies vanish at forced template, a=2/5
+[PASS] A6 all anomalies vanish at forced template, a=7/4
+[PASS] A6 all anomalies vanish at forced template, a=-1/2
+[PASS] A7 a=1/3 reproduces keystone (B3) witness (4/3,-2/3,-2,0)
+[PASS] B-CE counterexample (0,2a,-2a,-4a) cancels Tr[Y]
+[PASS] B-CE counterexample cancels Tr[SU(3)^2 Y]
+[PASS] B-CE counterexample cancels Tr[Y^3]
+[PASS] B-CE counterexample is NON-neutral (n=-4a != 0 for a!=0)
+[PASS] B1 free-n_R one-parameter family cancels Tr[Y] for all t
+[PASS] B1 free-n_R family cancels Tr[SU(3)^2 Y] for all t
+[PASS] B1 free-n_R family cancels Tr[Y^3] for all t
+[PASS] B1 => neutral branch n=0 is SELECTION, not anomaly consequence
+[PASS] B2 vectorlike pair (w,-w) adds 0 to Tr[Y] (w + (-w))
+[PASS] B2 vectorlike pair adds 0 to Tr[Y^3] (w^3+(-w)^3)
+[PASS] B2 => matter content NOT anomaly-unique; mirror/vectorlike exclusion separate
+[PASS] B3 Tr[Y] homogeneous deg 1 -> rescale preserves zero
+[PASS] B3 Tr[Y^3] homogeneous deg 3 -> rescale preserves zero
+[PASS] B3 => absolute Y-scale is convention; only ratios +1:(-3) etc. invariant
+[PASS] C-R1.0 Cl(3) taste carrier {Gamma_i,Gamma_j}=2 delta is dim-8 (LH surface)
+[PASS] C-R1.1 native Cl(3) surface gives ONLY LH spectrum {+1/3 x6, -1 x2}
+[PASS] C-R1.2 ROUTE 1 WALLED: no opposite-chirality SU(2)-singlet template is forced by the Cl(3)/Record native carrier
+[PASS] C-R1.3 ROUTE 1 residual relocates to MINIMAL_AXIOMS withholding (particle content / species / opposite-chirality frame)
+[PASS] D-R2.1 steelman defeated: VECTORLIKE/mirror completion is anomaly-free WITHOUT the chiral RH singlet template
+[PASS] D-R2.2 steelman defeated: non-neutral chiral model (0,2a,-2a,-4a) is also anomaly-free -> template+neutral not uniquely consistency-forced
+[PASS] D-R2.3 SU(3)^3 needs exactly 2 RH triplet slots; carrier supplies 0 -> slot count is a template INPUT, not native
+[PASS] D-R2.4 ROUTE 2 verdict: minimal-axioms NO-GO is a STEELMAN-DEFEAT (template existence is NOT a consistency consequence), not a hard impossibility proof
+[PASS] E-R3.1 Record-trace neutrality (sum Y=0) does NOT force n=0 (reduces to B1 family, n=t free)
+[PASS] E-R3.2 RH-singlet-block neutrality forces n = +0*? test
+[PASS] E-R3.3 counterfactual test: RH-block-neutrality FAILS on the anomaly-equivalent model (0,2a,-2a,-4a) (sum=-4a != 0)
+[PASS] E-R3.4 ROUTE 3 WALLED: n=0 not derivable from native charge-neutrality; any neutrality strong enough to pin n is itself a non-derived selection (fails the counterfactual test)
+[PASS] F-ledger one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10 status=retained_bounded
+[PASS] F-ledger lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10 status=retained_bounded
+[PASS] F-ledger cl3_color_automorphism_theorem status=retained_bounded
+[PASS] F-ledger cl3_complexification_split_narrow_theorem_note_2026-05-10 status=retained
+[PASS] F-ledger one_generation_matter_closure_note status=unaudited
+[PASS] F-ledger rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17 status=unaudited
+[PASS] F-ledger su3_anomaly_forced_3bar_completion_theorem_note_2026-05-02 status=unaudited
+[PASS] F-ledger su3_dabc_symmetric_theorem_note_2026-05-02 status=audited_failed
+[PASS] F1 P-COMP arithmetic-core dep set is DEPS-ALL-RETAINED (chain_closes=True, NOT routed through unaudited keystone)
+[PASS] F2 retained one_generation_anomaly_singlet note ALREADY banks the RH-Y closed form (4/3,-2/3,-2,0) as conditional bounded_theorem
+[PASS] F3 BANKABLE WITH NAMED PREMISES: the core is conditional on {template existence (P-COMP), P-HY identification, n=0 branch} as EXPLICIT admissions (mirror SM_ANOMALY_CLOSURE keeping P/C1-C3 named)
+[PASS] F4 existence-side suppliers are ALL unaudited -> the TEMPLATE/EXISTENCE wall CANNOT be banked; only the ARITHMETIC (RH-Y solving) is bankable
+[PASS] F5 P-COMP circular-on-parent flag persists: the SM witness used by (B3) is the conditional output, not an independent matter-existence supplier
+
+TOTAL: PASS=49 FAIL=0
+VERDICT: P-COMP arithmetic core re-derived in-tree and bankable deps-all-retained (SM_ANOMALY_CLOSURE shape); all THREE fresh routes (template-existence, minimal-axioms no-go, n=0-from-neutrality) WALL on the same A_min withholding of the opposite-chirality matter sector. Template existence is a NEW hard wall (no positive supplier exists).

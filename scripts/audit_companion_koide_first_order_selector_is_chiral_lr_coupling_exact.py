@@ -88,6 +88,17 @@ if NOTE.exists():
         "bounded algebraic localization and route-pruning theorem",
         "KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md",
         "Independent audit required",
+        # 2026-06-20 bounded-localization re-audit repair (source-side):
+        # the row keeps the audit-named SECOND branch (bounded localization only),
+        # explicitly leaving the physical M(b)(x)sigma_+ bridge + r-weighting OPEN.
+        "**Status authority:** independent audit lane only",
+        "2026-06-20 bounded-localization re-audit repair",
+        "This repair confirms the **second** branch",
+        "No physical `M(b)⊗σ₊` bridge and no",
+        "the `AC_phi_lambda` /",
+        "physical first-order/readout `r`-weighting rule",
+        "`r=1/2` is a **stable dial",
+        "names the **algebraic shape inside",
     ]
     banned=[
         "**The selector is exactly that L-R coupling.**",
@@ -99,8 +110,9 @@ else:
     chk("(6) source note present", False)
 
 P=sum(1 for _,o in R if o); F=sum(1 for _,o in R if not o)
-for l,o in R: print(("PASS" if o else "FAIL"),"-",l)
-print("\n%d PASS, %d FAIL"%(P,F))
+for l,o in R: print(("PASS:" if o else "FAIL:"),l)
+print("\nTOTAL: PASS=%d FAIL=%d"%(P,F))
+print("SUMMARY: PASS=%d FAIL=%d"%(P,F))
 if F: raise SystemExit(1)
 print("\nBOUNDED-LOCALIZATION SYNTHESIS verified: (1) U(1)_b is a RED HERRING (Q delta-independent; count=functional choice).\n"
       "(2) the DISCRETE Z3-character index gives the conditional (1,1) block-balance algebra while respecting C^3=I,\n"

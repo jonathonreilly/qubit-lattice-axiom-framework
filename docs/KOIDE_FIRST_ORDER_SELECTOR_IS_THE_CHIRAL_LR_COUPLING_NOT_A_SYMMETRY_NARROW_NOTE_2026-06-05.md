@@ -9,10 +9,13 @@ the candidate first-order/holomorphic reading (`r=1/2`) versus the
 second-order/modulus reading (`r=1`): the native `R³`/`C₃` route cannot supply a
 nonzero `Γ_χ`-anticommuting selector, while a separate chirality tensor factor
 can carry such an operator algebraically. If a physical first-order selector is
-later supplied, it must enter through a chiral left-right coupling such as
-`M(b)⊗σ₊` across that separate chirality factor, not through a continuous
-`U(1)_b` symmetry, a static complex structure, or the native `R³` circulant
-family alone.
+later supplied, it must enter through a chiral left-right coupling of the
+algebraic shape `M(b)⊗σ₊` across that separate chirality factor — not through a
+continuous `U(1)_b` symmetry, a static complex structure, or the native `R³`
+circulant family alone. The `M(b)⊗σ₊` token names the **algebraic shape inside
+the runner's `R³⊗C²` toy**; its identification with a physical action term is
+**not** claimed here and is the unsupplied open bridge (see the 2026-06-20
+repair below).
 **Claim scope:** this is **not a derivation of `r = 1/2`** and not a bridge from
 `AC_φλ` to a physical `M(b)⊗σ₊` action term. It localizes the open atom to one
 dynamics gate and corrects prior framing. Two corrections: (i) the
@@ -25,6 +28,9 @@ statement about the algebraic block-balance readout, not a framework-selected
 physical modulus value.
 **Status:** review-loop source proposal. No audit verdict; no effective-status change; independent audit
 required.
+**Status authority:** independent audit lane only. The note asserts no audit
+outcome and does not set, predict, promote, demote, or edit any audit-owned
+registry, ledger, queue, or publication-status surface.
 **Runner:** [`scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py`](../scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py)
 
 ## Correction 1 — U(1)_b is a red herring
@@ -198,6 +204,47 @@ Thus this row should not be consumed as a retained physical selector. It is a
 bounded algebraic localization and route-pruning theorem whose positive value
 is that it names the explicit first-order escape isolated by the finite
 analysis and removes the native `R^3`/continuous-symmetry routes.
+
+## 2026-06-20 bounded-localization re-audit repair (source-side)
+
+The conditional re-audit named two branches:
+
+> "retain a bridge from `AC_phi_lambda`/staggered corner data to the physical
+> `M(b)` tensor `sigma_+` L-R coupling plus the physical `r`-weighting/readout
+> rule, **or keep downstream use strictly bounded to the finite algebraic
+> localization**."
+
+This repair confirms the **second** branch. No physical `M(b)⊗σ₊` bridge and no
+physical `r`-weighting/readout rule are retained or supplied. The load-bearing
+content of this row is **only** the finite algebraic localization:
+
+1. `Q=(1+2r)/3` is exact and `δ`-independent (runner (1)), so continuous
+   `U(1)_b` is not the selector mechanism.
+2. The discrete `C₃` clock character has multiplicities `(1,1,1)` (runner (2)),
+   so the `(1,1)` block-balance algebra is available while respecting `C³=I`.
+3. Inside the native circulant generation family,
+   `comm(C) ∩ anticomm(Γ_χ) = {0}` (runner (3)); the converse is **not** claimed.
+4. On the separate `R³⊗C²` chirality factor a nonzero algebraic
+   factor-crossing anticommuting shape exists (runner (4)).
+5. The native circulant mass has `b`-independent Fourier eigenvectors and stays
+   on the Berry-flat/commuting side of the finite comparison (runner (5)).
+
+The following remain **conditional/open** and are **not** claimed by this row:
+
+- the identification of the runner's `R³⊗C²` toy `M(b)⊗σ₊` shape with a
+  **physical** L-R coupling / framework action term (the `AC_phi_lambda` /
+  staggered corner bridge is **unsupplied**);
+- the physical first-order/readout `r`-weighting rule;
+- any derivation of the Koide `r=1/2` branch.
+
+Consistent with the framework's dial discipline, `r=1/2` is a **stable dial
+setting, not a forced value**: the bounded surface above neither selects nor
+forces it; selecting it physically would require the unsupplied chiral-coupling
+and readout bridges. A downstream consumer must read this row **only** as the
+bounded algebraic localization (1)-(5) plus the route-pruning statement that the
+native `R³`/`C₃`/`U(1)_b` routes do not supply the physical first-order
+selector. It must **not** consume this row as a physical selector, an
+`AC_phi_lambda → M(b)⊗σ₊` action/readout bridge, or an `r=1/2` derivation.
 
 ## Dependencies (citation-graph visible)
 

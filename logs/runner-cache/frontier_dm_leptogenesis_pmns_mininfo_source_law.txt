@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py
-runner_sha256: 9c223d8f914db9aad69a5a477b2768bff47a77c910e86816a7be230e83560406
+runner_sha256: 87f20280260c0fa605529f5797a858213cbe96423a7cab831153d144dfc884bd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.18
+elapsed_sec: 1.51
 status: ok
 ----- stdout -----
 ========================================================================================
-DM LEPTOGENESIS PMNS MINIMUM-INFORMATION SOURCE LAW (bounded / conditional)
+DM LEPTOGENESIS PMNS MINIMUM-INFORMATION SELECTOR DIAGNOSTIC (open gate / conditional)
 ========================================================================================
 
 Framework baseline:
   Lattice + Quantum + Record; one-qubit operator algebra on the Z^3 lattice.
 
-Scope (bounded / conditional theorem):
+Scope (open gate / conditional diagnostic):
   IF the minimum-information selector law is adopted as a post-axiom
   convention on the fixed native N_e seed surface, THEN the runner
   finds a calibrated low-cost exact-closure off-seed source on the
@@ -34,10 +34,12 @@ NOT claimed:
 ========================================================================================
 PART 0: SOURCE SCOPE FIREWALL
 ========================================================================================
-  [PASS] Source note identifies the bounded conditional diagnostic
+  [PASS] Source note identifies the open-gate selector diagnostic
+  [PASS] Source note registers primary runner and cached output
   [PASS] Source note does not claim global uniqueness as runner-proved
   [PASS] Source note keeps eta_obs equality as an imposed constraint
   [PASS] Source note does not introduce a new axiom or retained bridge
+  [PASS] Source note forbids retained selector-theorem reuse
 
 ========================================================================================
 PART 1: TRANSPORT EXTREMALITY FIXES THE FAVORED COLUMN
@@ -79,15 +81,15 @@ PART 3: BOTTOM LINE (conditional)
 ========================================================================================
   [PASS] The off-seed source law is now an explicit definition  (minimum information deformation at exact closure on the favored column)
   [PASS] Conditional on adopting I_seed, the runner-found source is sharper than the bare extremal candidate  (it finds a low-deformation exact closure source, not just some overshooting source)
-  [PASS] The runner verifies the conditional theorem, not the unconditional one  (I_seed is imported from information geometry; baseline-framework derivation is parked at sister theorems)
+  [PASS] The runner verifies the conditional diagnostic, not a selector theorem  (I_seed is imported from information geometry; baseline-framework derivation is parked at sister theorems)
 
 ========================================================================================
-PART 4: HONEST SCOPE ASSERTIONS (bounded / conditional)
+PART 4: HONEST SCOPE ASSERTIONS (open gate / conditional)
 ========================================================================================
   [PASS] Adopted selector is well-defined on the fixed native seed surface  (x_seed and y_seed are fully fixed by the adopted seed pair (xbar, ybar))
   [PASS] Conditional closure on favored column holds at the selected source  (eta_0/eta_obs - 1 = 2.220e-16)
   [PASS] Selected source has finite, computable information cost (defines the reported selection)  (I_seed = 0.058549869343)
-  [PASS] Runner explicitly does NOT claim baseline-framework derivation of I_seed  (I_seed is imported from information geometry; treat note as bounded support)
+  [PASS] Runner explicitly does NOT claim baseline-framework derivation of I_seed  (I_seed is imported from information geometry; treat note as open-gate support)
   [PASS] Selector is comparable to sister selectors (relative action, KKT classification)  (all converge to the same low-action branch on the reduced N_e surface)
 
 ========================================================================================
@@ -99,7 +101,7 @@ RESULT (conditional)
     - exact eta/eta_obs = 1 on the current PMNS-assisted N_e branch
     - conditional on adopting I_seed as the selector
 
-PASS=21  FAIL=0
+PASS=23  FAIL=0
 
 ----- stderr -----
 

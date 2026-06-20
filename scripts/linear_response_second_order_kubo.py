@@ -50,6 +50,10 @@ import universality_classifier as uc
 import independent_generators_heldout as ind
 import global_coherence_off_scaffold as offs
 
+# Slow runner (full 44-family battery, ~10 min); declare the audit-lane
+# timeout so the cache replay does not time out at the 120s default.
+AUDIT_TIMEOUT_SEC = 1800
+
 MASS_Z = uc.MASS_Z
 H = uc.H
 K_PHASE = uc.K
@@ -361,7 +365,9 @@ def main():
         print("  full path-sum.")
     elif growth == 0:
         print(f"  NULL — second order did not change the linearity-regime count.")
-        print("  Failing families need either much higher orders or a different framework.")
+        print("  At the computed second order the failing families are not brought into")
+        print("  the linearity regime; whether higher Taylor orders or a different")
+        print("  framework would do so is not established here (not computed).")
     else:
         print(f"  WORSE — second-order prediction makes the linearity regime SHRINK by {-growth}.")
         print("  Either the recurrence has a bug or the second-order term overshoots.")

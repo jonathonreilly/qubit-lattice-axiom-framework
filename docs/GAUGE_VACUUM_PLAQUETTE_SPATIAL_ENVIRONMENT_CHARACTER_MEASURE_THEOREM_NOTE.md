@@ -186,6 +186,15 @@ the full residual-environment / character-measure identification theorem.
 - [gauge_vacuum_plaquette_local_environment_factorization_theorem_note](GAUGE_VACUUM_PLAQUETTE_LOCAL_ENVIRONMENT_FACTORIZATION_THEOREM_NOTE.md)
   supplies the bounded finite `D_6^loc` packet used in
   `exp(3J) D_6^loc C_(Z_6^packet) exp(3J)`.
+- [gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+  supplies the source-side all-weight **formal diagonal-convolution**
+  bridge for the stripped residual eigenvalue sequence. It supports the
+  Peter-Weyl dictionary part of the character-measure identification:
+  a diagonal residual sequence can be written as unnormalized formal
+  convolution by a central sequence. It does not compute the actual
+  beta=6 unmarked spatial Wilson environment coefficients, prove
+  normalized `kappa_(0,0)=1`, or identify the finite single-link packet
+  with the full multi-link environment.
 
 The actual residual-environment equality row remains a future sibling target,
 not a dependency of this finite packet. This note does not import a stronger
@@ -195,4 +204,8 @@ The open bridge named by the earlier review history remains open at full
 theorem scope: prove, or runner-certify, that the stripped residual
 source-sector operator equals normalized convolution by the actual compressed
 unmarked spatial Wilson environment boundary character, beyond insertion of
-the finite single-link coefficient packet.
+the finite single-link coefficient packet. After the all-weight formal bridge
+above, the remaining physical bridge is the independent derivation of the
+environment coefficient sequence from the unmarked DOF integral /
+tensor-transfer construction, not the formal Peter-Weyl diagonal-convolution
+dictionary itself.

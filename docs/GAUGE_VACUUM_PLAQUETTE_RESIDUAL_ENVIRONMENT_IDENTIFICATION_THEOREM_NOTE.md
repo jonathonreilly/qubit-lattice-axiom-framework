@@ -162,8 +162,20 @@ close the full residual-environment identification theorem.
   computes the bounded normalized single-link Wilson coefficients on a finite
   weight box by two independent methods. This is the load-bearing coefficient
   authority for the finite packet used here.
+- [gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+  supplies the source-side all-weight **formal diagonal-convolution**
+  bridge for the stripped residual eigenvalue sequence:
+  `R_beta^env chi_(p,q) = (1/lambda_env) C_(Z_beta^env) chi_(p,q)`.
+  This is structural support only. It does not compute the beta=6
+  coefficient sequence from the full unmarked spatial Wilson integral, does
+  not assert normalized `kappa_(0,0)=1` closure, and does not promote this
+  parent row.
 
 The open bridge named by the prior conditional audit remains open at full
 theorem scope: prove, or runner-certify, that the stripped residual
 source-sector operator equals the compressed unmarked spatial Wilson
-environment beyond the finite inserted coefficient table.
+environment beyond the finite inserted coefficient table. After the
+all-weight formal bridge above, the remaining physical bridge is the
+independent derivation of the environment coefficient sequence from the
+unmarked DOF integral / tensor-transfer construction, not the formal
+Peter-Weyl diagonal-convolution dictionary itself.

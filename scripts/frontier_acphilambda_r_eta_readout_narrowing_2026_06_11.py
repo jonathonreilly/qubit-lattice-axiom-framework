@@ -25,7 +25,12 @@ Sections:
       delta with no density object present (R-eta nowhere in the derivation)
   S8  conditional value: |delta| = 2/9 EXACT conditional on the named atom;
       consistency with the separation no-go boundary (2/9 not in {n pi/3})
-  S9  boundary witnesses (what is NOT claimed) + r-firewall statement
+  S9  boundary witnesses (what is NOT claimed) + r-firewall statement; and the
+      2026-06-20 audit repair: option (2) formal H(delta) split witnesses
+      (formal-theorem section present; two non-retained named authorities flagged
+      unaudited; K-orbit form wired as the single one-hop markdown-link authority
+      at its live retained_bounded status; physical readout identification
+      explicitly NOT claimed; status authority preserved)
 
 Per-check PASS/FAIL lines; final `TOTAL: PASS=N FAIL=0`.
 """
@@ -300,6 +305,30 @@ def main() -> int:
           and "conditional support for narrowing sub-admission (ii), not a retirement" in note_flat
           and "A_R-eta` (h-class + h-unit, one real parameter) remains admitted" in note_flat
           and "cannot cite it as a framework-native derivation of `|delta| = 2/9`" in note_flat)
+    # 2026-06-20 audit repair: option (2) formal split + one-hop K-orbit wiring.
+    check("2026-06-20 repair: explicit FORMAL H(delta) theorem split present "
+          "(option (2) taken; physical readout identification is conditional/open)",
+          "2026-06-20 audit repair" in note_text
+          and "Formal theorem (H(delta) layer)" in note_text
+          and "Formal claim." in note_flat
+          and "The formal theorem is exactly (F1)-(F5)" in note_flat)
+    check("2026-06-20 repair: the two non-retained named authorities are flagged "
+          "unaudited (cannot be wired as one-hop retained authorities)",
+          "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`: effective_status **`unaudited`**" in note_flat
+          and "carrier gate, R-eta source) are **not retained** on origin/main" in note_flat)
+    check("2026-06-20 repair: the K-orbit circulant form is wired as a one-hop "
+          "markdown-link authority at its live retained_bounded status",
+          "[`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`]"
+          "(TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)"
+          in note_flat
+          and "one-hop authority for the circulant form L2" in note_flat)
+    check("2026-06-20 repair: physical readout identification explicitly NOT "
+          "claimed (firewall: register-not-read price class preserved)",
+          "is **not claimed** here" in note_flat
+          and "the irreducible register-not-read price class and is not derived" in note_flat)
+    check("Status authority preserved: independent audit lane only "
+          "(no audit grade authored/altered in this source note)",
+          "Status authority:** independent audit lane only" in note_flat)
 
     # ------------------------------------------------------------------
     print("\n" + "=" * 88)

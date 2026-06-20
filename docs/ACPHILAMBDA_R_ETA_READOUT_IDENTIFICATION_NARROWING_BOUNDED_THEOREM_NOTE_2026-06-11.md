@@ -9,7 +9,7 @@ registry (`docs/audit/data/tier_a_admissions.json`), ledger, queue, or any
 publication-status surface.
 **Primary runner:**
 [`scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py`](../scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py)
-(`TOTAL: PASS=50 FAIL=0`; exact sympy, 3x3 class-A finite-dimensional; cached:
+(`TOTAL: PASS=55 FAIL=0`; exact sympy, 3x3 class-A finite-dimensional; cached:
 [`logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt`](../logs/runner-cache/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.txt))
 
 > **What this is.** The live Tier-A registry states AC_phi_lambda
@@ -47,6 +47,77 @@ standing physical readout-context premise remains supplied. A consumer may
 cite this note only for the form/value split: it cannot cite it as a
 framework-native derivation of `|delta| = 2/9`, as a registry edit, or as a
 closure of the carrier gate / R2 / `r` lanes.
+
+## 2026-06-20 audit repair (missing_dependency_edge: option (2) — formal split)
+
+The independent audit lane asked, verbatim, to either (1) "wire/provide the
+K-orbit circulant/sign-flip authority, carrier gate/readout-context authority,
+and R-eta source as direct one-hop dependencies; then re-audit the bounded
+algebraic narrowing against those retained statuses", or (2) "split to an
+explicitly formal H(delta) theorem".
+
+Effective_status was re-verified on origin/main (audit ledger
+`docs/audit/data/audit_ledger.json`, 2026-06-20) for the three named
+authorities:
+
+- **K-orbit circulant/sign-flip authority** —
+  `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09`:
+  effective_status **`retained_bounded`** (the 2026-06-11 in-file label
+  `audited_conditional` was stale).
+- **carrier gate / readout-context authority** —
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`: effective_status
+  **`unaudited`**.
+- **R-eta source** —
+  `KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09`:
+  effective_status **`unaudited`**.
+
+Because two of the three named authorities (carrier gate, R-eta source) are
+**not retained** on origin/main, they cannot be wired as direct one-hop
+*retained* authorities: doing so would only convert this row's blocker into a
+`dependency_not_retained` against an unaudited note. Option (1) is therefore
+unavailable for the full set. This note takes **option (2)**: the bounded
+algebraic narrowing is restated as an **explicitly formal H(delta) theorem** —
+a finite mathematical result about the Hermitian circulant `H(delta)`, taken
+as a formal symbolic object — whose one retained input is the K-orbit
+circulant form, now wired as a one-hop markdown-link authority. The *physical*
+readout identification (that `H(delta)` is the realized charged-lepton carrier
+surface, that the registered angle is the AB/Lefschetz density, and the
+identity-radian reading) is explicitly **conditional and open**, routed
+through the two unaudited context notes, and is **not claimed** here. This
+respects the firewall: the readout-import identification is the irreducible
+register-not-read price class and is not derived.
+
+## Formal theorem (H(delta) layer)
+
+The following is a **formal** result: it treats `H(delta) = a I + B e^{i delta}
+C + B e^{-i delta} C^T` (the circulant form L2 supplied by the one retained
+one-hop authority, the Tier-A K-orbit note) as a symbolic object over
+`{a, B, delta}` and derives the form/value split by finite exact algebra. No
+physical readout identification is used in this layer; the runner sections
+S1-S8 are this formal layer verbatim (symbolic sympy, no PDG/fitted/measured
+value, no density object in the channel derivation — runner S7).
+
+**Formal claim.** For the symbolic Hermitian circulant `H(delta)`:
+(F1) `conj(H(delta)) = H(-delta)`; the sign line `sin(3 delta)` is odd under
+the conjugation, so any orbit-constant additive functional of the spectrum is
+even in `delta` (S1-S2). (F2) The elementary symmetric functions satisfy
+`e1 = 3a`, `e2 = 3a^2 - 3B^2` (both `delta`-blind), `e3 = a^3 - 3aB^2 +
+2B^3 cos(3 delta)`, all even in `delta`, with `e3` of period `2 pi/3`; the
+registrable delta-content folds to `[0, pi/3]` on the `cos(3 delta)` channel
+(S3). (F3) On the determinant-class character `chi_k(z)=exp(i k arg z)`, orbit
+constancy forces `k=0` (S5). (F4) The constant-magnitude family `|delta|=c`,
+`c in (0, pi/3)`, satisfies every formal constraint for all five hostile
+candidates, so the formal layer selects **no** value (S4). (F5) Within the
+AB/Lefschetz fixed-locus density class with the 3-cycle's own transverse
+weights `(1,2)` (forced as the cycle's eigenvalues), the density is the unique
+value `L3(1,2) = 2/9` (S6).
+
+The formal theorem is exactly (F1)-(F5). The map from this formal object to
+the physical charged-lepton surface, and the identification of the registered
+`|delta|` with the fixed-locus density read in radians (the atom `A_R-eta`),
+are **conditional/open** physical hypotheses routed through the unaudited
+carrier gate and R-eta source; they are not part of the formal theorem and are
+not claimed derived.
 
 ## Statement
 
@@ -194,16 +265,19 @@ isolated as the atom.
 
 An auditor should read this note as: *a bounded structural theorem that
 re-partitions the content of an existing Tier-A sub-admission, with all
-load-bearing algebra re-derived in an exact 49-check runner, and with the
+load-bearing algebra re-derived in an exact 55-check runner, and with the
 admitted residual restated in a strictly smaller, named form (`A_R-eta` =
 h-class + h-unit, one real parameter of load).* The note's value is the
 honest split, not a value derivation. Soft spots an auditor should press:
 
 1. the identification of the runner's 3x3 circulant with the physical
    charged-lepton surface routes through the carrier gate
-   (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`, unaudited) and the
-   Tier-A K-orbit note's L2 form (audited_conditional) — the narrowing is
-   conditional on that context;
+   (`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03`, **unaudited**) and the
+   Tier-A K-orbit note's L2 form (**retained_bounded** on origin/main as of
+   2026-06-20; one-hop authority for the formal circulant form only). The
+   *physical* identification is conditional on the unaudited carrier-gate
+   context; the formal H(delta) algebra of section "Formal theorem (H(delta)
+   layer)" depends on the retained circulant form alone;
 2. "weights forced" is forced *within* the AB/Lefschetz class — class
    membership is h-class, i.e. still admitted; the note does not hide this;
 3. the additive+even sign-strip is re-derived here, but its application to
@@ -224,9 +298,13 @@ honest split, not a value derivation. Soft spots an auditor should press:
 - [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
   — **retained_bounded** (the fixed-locus arithmetic this runner
   cross-checks; also where R2 is named LIVE).
-- `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
-  — **audited_conditional** (the circulant form L2 and the K/CPT sign-flip
-  context; consumed here as supplied context, not retained-grade authority).
+- [`TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)
+  — **retained_bounded** (one-hop authority for the circulant form L2 and the
+  K/CPT sign-flip context: `H(delta) = a I + B e^{i delta} C + B e^{-i delta}
+  C^T` and `conj(H(delta)) = H(-delta)`. Re-verified effective_status on
+  origin/main 2026-06-20: `retained_bounded` — the 2026-06-11 in-file label
+  `audited_conditional` was stale. The formal H(delta) algebra below is a
+  finite re-derivation on this retained circulant form).
 - `CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md`
   — **retained_pending_chain** (the bounded Tier-A surface for the delta
   admission this note narrows; target surface, not authority for this proof).

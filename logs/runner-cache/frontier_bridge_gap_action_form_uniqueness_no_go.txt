@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_bridge_gap_action_form_uniqueness_no_go.py
+runner_sha256: 88bdb672aff8c6d06a61820816bda665cb3458b18da02f96b30e1a6061b4c572
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+BRIDGE-GAP ACTION-FORM UNIQUENESS NO-GO VERIFIER
+==============================================================================
+canonical beta_W = 6.000000
+canonical t_HK = 1.000000
+canonical beta_M = 1.000000
+Wilson one-plaquette value = 0.4225317396
+HK one-plaquette value = 0.5134171190
+
+[PASS] target note exists -- docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md
+[PASS] later HK diffusion note exists -- docs/HEAT_KERNEL_UNIQUE_DIFFUSION_KERNEL_AMONG_CANDIDATE_GAUGE_ACTIONS_NARROW_THEOREM_NOTE_2026-06-08.md
+[PASS] record semigroup boundary note exists -- docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md
+[PASS] candidate set Wilson/HK/Manton is named
+[PASS] accepted-premise and retained support stack is enumerated
+[PASS] canonical parameter matching recomputes -- beta_W=6.0, t_HK=1.0, beta_M=1.0
+[PASS] note records same continuum-leading match
+[PASS] finite-beta Wilson/HK values are distinct -- delta=0.0908853794
+[PASS] HK value agrees with retained Casimir fundamental C2=4/3 -- exp(-2/3)=0.5134171190
+[PASS] note states finite-beta action-form ambiguity
+[PASS] note marks no-go as current-stack/no-new-premise scoped
+[PASS] note forbids action selection while preserving escape routes
+[PASS] later HK theorem sharpens but does not close the residual
+[PASS] record boundary names the missing generator/rate law
+
+==============================================================================
+SUMMARY
+==============================================================================
+TOTAL: PASS=14, FAIL=0
+Verified scoped no-go: current accepted premises and retained support leave Wilson/HK action form ambiguous at finite beta; HK diffusion uniqueness is a sharp conditional route, not an already-realized action selection.
+
+----- stderr -----
+

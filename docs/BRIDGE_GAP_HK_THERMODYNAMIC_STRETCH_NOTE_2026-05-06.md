@@ -12,6 +12,15 @@ input is still needed.
 **Authority role:** stretch-attempt source note. Audit verdict and
 downstream status are set only by the independent audit lane.
 
+Primary runner: `scripts/frontier_hk_thermodynamic_stretch_source_packet.py`
+
+Primary cache: `logs/runner-cache/frontier_hk_thermodynamic_stretch_source_packet.txt`
+
+The runner checks this note as a source-level open-gate packet: Block 01's
+`t(6)=1`, Block 02's exact single-plaquette `exp(-2/3)`, the Block 03
+multi-plaquette factorization/obstruction, and the later Block 06 finite-cube
+HK Perron comparator. It does not assign an audit verdict or retained status.
+
 ## Question
 
 Given Block 01's `t(6) = 1` and Block 02's exact closed-form for
@@ -147,7 +156,8 @@ lacks: each L_s contributes a Casimir-suppressed term, and the Casimir
 spectrum gives an EXPONENTIAL DECAY in correlation length per plaquette.
 But translating this into a rigorous thermodynamic-limit theorem
 requires cluster-decomposition machinery + an exponential-decay
-estimate, neither of which is currently a retained framework primitive.
+estimate, neither of which is currently supplied by the approved primitive
+or retained-premise surface.
 
 ### Obstruction (O3.2): convergence of the (λ_p)-sum at t=1
 
@@ -167,12 +177,12 @@ at t=1 by truncating to (1,0) sectors. Instead, the thermodynamic limit
 involves a **strong-coupling expansion in `Π_p exp(-C_2/2)`** that
 converges only if the Casimir gap (1,0)→(2,0) etc. compensates for
 the |P|-growth — i.e., if there's an exponential clustering bound that
-the framework's primitives don't yet provide.
+the framework's current premises do not yet provide.
 
 This is structurally **the same kind of obstruction as Wilson's
 β⁶-completion freedom** in
 [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md) —
-the framework's retained primitives don't pin the multi-plaquette
+the framework's current premises do not pin the multi-plaquette
 correlation structure tightly enough to close the thermodynamic
 limit, even for the cleaner HK action.
 
@@ -194,7 +204,8 @@ decomposition / exponential-clustering estimate on the Casimir-graded
 correlation structure.
 
 (T3.c) **Open:** the cluster-decomposition / exponential-clustering
-estimate is NOT in the framework's current retained primitive stack;
+estimate is NOT in the framework's current approved primitive or
+retained-premise surface;
 it is a non-perturbative input analogous to the Wilson β⁶-completion
 freedom.
 
@@ -205,8 +216,8 @@ freedom.
 This open gate inherits the Block 01-02 conditionals and adds the
 Block-03 obstruction: the thermodynamic value on `Λ -> infinity`
 depends on a controlled cluster-decomposition or exponential-clustering
-estimate that is not in the framework's current retained primitive
-stack.
+estimate that is not in the framework's current approved primitive
+or retained-premise surface.
 
 The note closes only the structural factorization of the multi-plaquette
 heat-kernel expression. It does not derive a thermodynamic value.
@@ -228,9 +239,13 @@ heat-kernel expression. It does not derive a thermodynamic value.
 
 - A specific closed-form value for `⟨P⟩_HK(6)` in the thermodynamic
   limit. The factorization (T3.a) is exact but uncomputed.
-- An L_s=2 finite-cube computation analogous to the Wilson case, which
-  could be done via direct adaptation of `frontier_su3_cube_full_rho_perron_2026_05_04.py`
-  to HK weights. (Recommended next-cycle task.)
+- The L_s=2 finite-cube computation analogous to the Wilson case has now
+  been done in
+  [`BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md):
+  `P_cube_HK(L_s=2,t=1)=0.5223243151`. This closes Path A as a
+  finite-volume comparator only; Block 03's named obstruction stands because
+  the result remains fixed-volume and still needs an `L_s -> infinity`
+  cluster-decomposition / exponential-clustering estimate.
 - The cluster-decomposition / exponential-clustering estimate that
   bounds `|⟨P⟩_HK(6) - ⟨P⟩_HK,Λ_finite(6)|`.
 - Block 04's action-form uniqueness question — Wilson vs HK uniqueness
@@ -252,10 +267,10 @@ A clean L_s=2 HK computation should close to a specific value via the
 same character-truncation machinery.
 
 **Path B (analytic, thermodynamic):** derive the cluster-decomposition
-/ exponential-clustering estimate from retained primitives (A11 RP,
-Lieb-Robinson, single-clock, per-site Cl(3) dim 2). If retained
-primitives suffice, the thermodynamic limit closes; if not, identify
-the missing primitive as the next research target.
+/ exponential-clustering estimate from approved premises (reflection
+positivity, Lieb-Robinson, single-clock, per-site Cl(3) dim 2). If those
+premises suffice, the thermodynamic limit closes; if not, identify the
+missing premise as the next research target.
 
 Both paths are next-cycle work, scoped beyond this stretch attempt's
 ~90m deep block.
@@ -263,8 +278,10 @@ Both paths are next-cycle work, scoped beyond this stretch attempt's
 ## Cross-references
 
 - Predecessor (this loop): [`BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md) (Block 02)
+- Time-normalization predecessor: [`BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md) (Block 01)
 - Sister Wilson L_s=2: [`SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md`](SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md) (Wilson L_s=2 = 0.4291)
 - Wilson β⁶-completion freedom: [`GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md`](GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md)
 - Existing cube Perron infra: [`scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py`](../scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py)
-- Casimir retained: [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)
+- Completed Path A comparator: [`BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md)
+- Casimir authority: [`SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md`](SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md)
 - Standard methodology: same as Block 01-02 (Drouffe-Zuber 1983 "Strong coupling and mean field methods in lattice gauge theories" Phys Rep 102 contains the heat-kernel multi-plaquette character expansion in detail)

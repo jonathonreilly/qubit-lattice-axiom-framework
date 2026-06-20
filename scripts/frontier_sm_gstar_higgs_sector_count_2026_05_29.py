@@ -70,6 +70,9 @@ NOTE_PATH = (
 HUNIT_NO_GO_PATH = (
     ROOT / "docs" / "HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md"
 )
+HUNIT_ORBIT_SUPPORT_PATH = (
+    ROOT / "docs" / "SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md"
+)
 SM_DOF_PATH = ROOT / "docs" / "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md"
 AUDIT_LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
@@ -329,6 +332,21 @@ def section_2hdm_exclusion() -> None:
         and "audit-status change" in text
         and "Independent audit should re-check" in text,
     )
+    check("H_unit supplied-doublet radial/orbit support note exists", HUNIT_ORBIT_SUPPORT_PATH.exists())
+    orbit_text = HUNIT_ORBIT_SUPPORT_PATH.read_text(encoding="utf-8") if HUNIT_ORBIT_SUPPORT_PATH.exists() else ""
+    check(
+        "radial/orbit support is cited as support only, not field-content authority",
+        HUNIT_ORBIT_SUPPORT_PATH.name in text
+        and "supplied-doublet radial/orbit support" in text
+        and "not as field-content authority" in text
+        and "support only" in orbit_text
+        and "does not derive the one-complex `SU(2)_L` EWSB thermal doublet from" in orbit_text,
+    )
+    check(
+        "radial/orbit support keeps the one-doublet inventory premise load-bearing",
+        "one-doublet thermal field content remains supplied by the retained-bounded" in text
+        and "retained-bounded declared-inventory premise" in orbit_text,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -340,6 +358,7 @@ def section_note_checks() -> None:
     cited = [
         "YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
         "HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md",
+        "SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md",
         "YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md",
         "CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md",
         "DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md",

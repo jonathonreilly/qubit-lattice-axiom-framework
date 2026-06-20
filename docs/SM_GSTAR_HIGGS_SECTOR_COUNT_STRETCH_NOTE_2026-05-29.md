@@ -60,6 +60,26 @@ retained-bounded declared Standard-Model inventory premise. The direct route
 "derive the full thermal doublet from `H_unit` singlet uniqueness" is now
 marked as representation-forbidden, not merely missing.
 
+## 2026-06-18 supplied-doublet radial/orbit support: the positive half of the boundary
+
+The support packet
+[`SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md`](SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md)
+records what remains positively usable after the representation no-go. Once a
+one-complex-`SU(2)_L` Higgs doublet surface is supplied independently, every
+nonzero doublet `H in C^2` has an invariant radius
+`rho = sqrt(H^\dag H)` and an `SU(2)` gauge representative on the neutral ray
+`(0,rho)^T`. The scalar/radial carrier is therefore compatible with the Ward
+`H_unit` scalar-singlet support inside the supplied one-doublet surface.
+
+This is deliberately not field-content authority. The orbit/radial lemma
+proves that `H_unit`-compatible support can align with the neutral/radial
+coordinate after the doublet is already present; it does not derive the four
+real thermal components of the full doublet from `H_unit`. For this row, the
+one-doublet thermal field content remains supplied by the retained-bounded
+declared-inventory premise, while the new support note prevents the native
+`H_unit` support from being either overclaimed as a full bridge or discarded as
+irrelevant.
+
 ## Purpose
 
 The framework-structure `g_*` census note
@@ -139,6 +159,9 @@ Minimal premises actually used:
   `Y_H = 1/2`, neutral vacuum `<H> = (0, v/sqrt(2))^T`) as a scoped
   bookkeeping authority, not as a retained derivation that `H_unit` is that
   thermal census field.
+- the supplied-doublet radial/orbit support note as native support that
+  `H_unit`-compatible scalar/radial carrier language is valid only inside an
+  already supplied one-doublet surface, not as field-content authority.
 
 **Forbidden imports** (none used as hidden proof inputs): no unregistered
 Standard-Model relativistic census is taken as a premise; the declared
@@ -352,6 +375,9 @@ recorded in §6.
 - It does **not** promote the retained "two-Higgs" reduction, the EW Higgs
   gauge-mass note, the Ward theorem, or any cited note's status; effective
   status is pipeline-owned.
+- It does **not** use the supplied-doublet radial/orbit support note as
+  field-content authority; that note only validates the scalar/radial support
+  interpretation inside an already supplied doublet.
 - It does **not** establish that a SUSY/2HDM completion of `Cl(3)/Z^3` is
   impossible — only that it is **not framework-native / not retained**, so it
   cannot be a proof input to a framework-native census count.
@@ -430,6 +456,10 @@ Load-bearing arithmetic / support authorities:
   inventory includes one complex Higgs doublet as four real scalar components;
   this is the load-bearing bounded premise for the thermal field-content count
   in this row (retained_bounded).
+- [`SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md`](SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md)
+  — supplied-doublet radial/orbit support for the `H_unit`-compatible neutral
+  carrier. This is source-side support only, not field-content authority for
+  the full thermal doublet.
 
 Cited unaudited / convention-bearing framework authorities (written as plain
 text so the citation-graph builder does not parse them as load-bearing retained

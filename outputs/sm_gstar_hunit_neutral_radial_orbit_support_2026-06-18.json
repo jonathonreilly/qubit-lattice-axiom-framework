@@ -1,0 +1,26 @@
+{
+  "census_boundary": {
+    "second_doublet_shift": "4",
+    "single_doublet_gstar": "427/4",
+    "two_doublet_gstar": "443/4"
+  },
+  "fail_count": 0,
+  "pass_count": 67,
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "The supplied-doublet radial/orbit support closes a support ambiguity, but H_unit still does not derive the full one-complex SU(2)_L thermal doublet.",
+  "reachability_to_target": "supports",
+  "review_surface": [
+    "docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md",
+    "scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py",
+    "outputs/sm_gstar_hunit_neutral_radial_orbit_support_2026-06-18.json"
+  ],
+  "status": "exact support: supplied-doublet neutral/radial orbit support; no field-content closure",
+  "trace_class": "upstream_support",
+  "upstream_statuses": {
+    "ew_mass_status": "retained",
+    "gstar_status": "retained_bounded",
+    "hunit_no_go_status": "retained_no_go",
+    "sm_dof_status": "retained_bounded",
+    "ward_status": "retained_bounded"
+  }
+}

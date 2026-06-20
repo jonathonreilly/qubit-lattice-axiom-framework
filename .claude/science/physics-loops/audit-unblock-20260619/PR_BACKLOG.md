@@ -4,8 +4,8 @@
 
 - Branch: `physics-loop/audit-unblock-block101-20260620`
 - Base: `main`
-- Status: pending feature-branch push
-- PR URL: pending
+- Status: opened
+- PR URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4467
 - Title:
   `[physics-loop][review-loop] audit-unblock block101: bounded-support source measure trace prototype`
 
@@ -62,4 +62,3 @@ repairing source-side boundaries and current row-count checks.
 - No push to `main`.
 - No README, lane registry, active review queue, or source publication-control
   weaving.
-

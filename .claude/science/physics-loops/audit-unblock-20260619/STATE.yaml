@@ -1,0 +1,76 @@
+loop_slug: audit-unblock-20260619
+block: 117
+mode: campaign
+date: "2026-06-20"
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block117-20260620
+branch: physics-loop/audit-unblock-block117-20260620
+base_ref: origin/main
+base_commit: 2ecad94fe4a165413c2b004ac7dfbe7dc3151ecd
+target_claim_id: qcd_low_energy_running_bridge_note_2026-05-01
+target_status: bounded_theorem metadata repair
+actual_current_surface_status: bounded-support
+effective_status_after_pipeline: unaudited
+trace_class: upstream_support
+reachability_to_target: supports
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: false
+repo_lock:
+  mode: degraded_branch_local
+  status_command: python3 scripts/automation_lock.py status
+  failure: "[Errno 13] Permission denied: '/Users/jonreilly'"
+claim_row_after_pipeline:
+  claim_type: bounded_theorem
+  claim_type_author_hint_raw: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  criticality: critical
+  load_bearing_score: 18.342
+  direct_in_degree: 9
+  transitive_descendants: 917
+  deps: []
+  audit_queue_index_zero_based: 8
+  audit_queue_entry_has_serialized_queue_index: false
+  audit_queue_ready: true
+source_repair:
+  note_claim_type_before: missing
+  note_claim_type_after: bounded_theorem
+  note_type_before: bounded_theorem
+  note_type_after: bounded_theorem
+  runner_checks_added:
+    - canonical bounded_theorem metadata and independent audit authority
+verification:
+  py_compile: pass
+  target_runner: "SUMMARY: PASS=28 FAIL=0; CHECK CLASSES A=22 B=4 D=2"
+  pipeline: pass
+  precompute_audit_runners: "1 ok, 0 nonzero_exit"
+  audit_packet_script_deps: "pass; known 386 pending helper-import packet risk"
+  strict_audit_lint: "139 notices, 0 errors"
+  git_diff_check: pass
+  generated_clean_gate_after_commit: pass
+review_loop:
+  disposition: "PASS WITH BOUNDED CLAIM"
+  iterations: 1
+  subagents: "not spawned; local review-loop compatibility checks applied"
+  no_audit_verdicts_applied: true
+  audit_loop_run: false
+hashes:
+  note_sha256: 19f37ad25f62ed4c049caf1e7e3f44c8509b57832e769a80b2aab3acf947fe3b
+  runner_sha256: ce0356d0304716bc5f8504a26b7eebdbaa2127fdc0f7a48eef82f36ba3f88e95
+  runner_cache_sha256: f4c14b3491bcc22d276e36bfbca1818221655099f014d6b8f199073eaeb6583b
+  audit_ledger_sha256: cd8b1be2f94e5c4e00869e40fbba2c4d70b325d7515f4e6deffaa568fa4fd046
+  audit_queue_sha256: a1733960df18184dac67211de9a40b68d3f73a2798edfeb6a90cf39ab0b3bbf3
+  audit_packet_script_deps_txt_sha256: fff69943709dfa4bc6726533601b6faec3c5d5c453b3e3d23c55f7eaaf59a0fa
+  audit_packet_script_deps_json_sha256: 8c2f16d098f71d63c668fe46e8b52d98c58994f6e4efeb6b87b6256983fdf886
+pr:
+  status: open
+  number: 4487
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4487
+  head_commit: bf068bbe8669fd13c5ab06c4f1c37d0fbddd6f8f
+  base: main
+  head: physics-loop/audit-unblock-block117-20260620
+  mergeable: MERGEABLE
+  status_checks: "audit-lane/audit_pipeline in progress at packet update"
+next_exact_action: "Refresh the opportunity queue from current origin/main, choose the next source-side audit-unblock candidate with missing/noncanonical claim metadata, and open the next dedicated PR."
+

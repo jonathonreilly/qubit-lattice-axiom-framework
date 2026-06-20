@@ -43,3 +43,14 @@ gh pr create --base physics-loop/single-clock-baxis-wall-block01-20260620 \
 ```
 
 (Subsequent blocks appended below as they close.)
+
+## Block 03 — consumer firewall widening (stacked on block02)  ✅ committed (see git log)
+
+```bash
+cd "/Users/jonBridger/tp-audit-bridge-20260620"
+git push -u origin physics-loop/single-clock-baxis-wall-block03-20260620
+gh pr create --base physics-loop/single-clock-baxis-wall-block02-20260620 \
+  --head physics-loop/single-clock-baxis-wall-block03-20260620 \
+  --title "[physics-loop] single-clock-baxis-wall block03: B-AXIS consumer firewall widening (11 consumers repointed, coverage PASS=34)" \
+  --body-file .claude/science/physics-loops/single-clock-baxis-wall/PR_BODY_block03.md
+```

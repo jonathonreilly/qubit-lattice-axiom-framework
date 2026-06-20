@@ -44,6 +44,8 @@ It does not by itself derive the physical-species / SM-generation reading.
 | LN | Lattice Noether fermion-number Q̂ on H_phys | retained per [`AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) |
 | SC | Axis-conditional single-clock codimension-1 evolution (unitary one-parameter group under B-AXIS) | conditional source boundary in [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md); not retained authority for temporal-axis selection |
 
+> B-AXIS premise note (added 2026-06-20): the axis-conditional single-clock codimension-1 evolution imported as premise SC is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis selection (B-AXIS) remains a premise, not a derived result.
+
 ### Forbidden imports
 
 - NO PDG observed values

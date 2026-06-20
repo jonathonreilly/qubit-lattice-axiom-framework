@@ -30,6 +30,9 @@ The framework is **`d=3+1`** (3 spatial `Z^3` directions + 1 EMERGENT
 time, with the native dynamics a single-clock strongly-continuous
 one-parameter **unitary** group `U(t) = exp(-itH)`, `t in R` continuous;
 [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)).
+
+> B-AXIS premise note (added 2026-06-20): the single-clock unitary one-parameter group `U(t) = exp(-itH)` used as the load-bearing native-dynamics premise here is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis selection (B-AXIS) remains a premise, not a derived result.
+
 The decisive question this note answers by direct computation:
 
 > Does the framework's **native** `d=3+1` Lorentzian (real-time,

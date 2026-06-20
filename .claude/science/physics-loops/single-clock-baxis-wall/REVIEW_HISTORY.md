@@ -320,3 +320,17 @@ The note is a sound, honestly-scoped `no_go` (negative_route_pruning over B-AXIS
 N2b/N4/N5, plus the N2a exact-support pin). It is **shippable to the audit lane** as a
 branch-local review artifact. The independent audit lane remains the sole status authority;
 this review sets no status.
+
+## Block 03 review (firewall widening — local spot-check)
+
+**Disposition: pass.** Block 03 is a mechanical consumer-firewall-coverage block;
+the heavy adversarial review was applied to the block02 no_go note it cites. Local
+checks: (1) all 11 consumer-doc edits verified PURELY ADDITIVE via
+`git diff --numstat` (insertions only, 0 deletions); (2) coverage runner
+`single_clock_baxis_consumer_firewall_coverage_2026_06_20.py` reproduces PASS=34
+FAIL=0; (3) inserted B-AXIS-premise blockquotes cite the unified obstruction note
+and correctly state B-AXIS is consumed as a declared premise, not derived;
+(4) the 9 already-firewalled docs were NOT re-edited (conflict avoidance with the
+unmerged firewall branch) and are flagged repoint-to-unified-pending-integration;
+(5) no forbidden audit-lane/publication file touched. Triage method sound (reverse
+dep-edge BFS over the read-only ledger; 24 direct / 960 cone matches the ~959 target).

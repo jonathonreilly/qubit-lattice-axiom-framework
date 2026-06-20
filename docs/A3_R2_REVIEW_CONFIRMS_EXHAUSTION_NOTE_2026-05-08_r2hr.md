@@ -53,6 +53,8 @@ The kinematic-primitive attack class is exhausted at 31+ vectors with high confi
 | LR | Lieb-Robinson microcausality; v_LR = 2erJ | upstream authority: [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md) |
 | CPT | CPT exact preservation in framework | upstream proposal: [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md) |
 
+> B-AXIS premise note (added 2026-06-20): the axis-conditional single-clock codimension-1 evolution imported as premise SC is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis selection (B-AXIS) remains a premise here, not a derived result.
+
 ### Forbidden imports
 
 - NO PDG observed values

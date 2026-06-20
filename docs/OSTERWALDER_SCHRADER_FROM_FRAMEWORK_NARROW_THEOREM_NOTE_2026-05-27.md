@@ -232,6 +232,8 @@ Load-bearing:
   the framework's internal finite-dimensional (P-OS) bridge. Current
   audit status on main: `unaudited`.
 
+> B-AXIS premise note (added 2026-06-20): the (C-Sc) single-clock Step-1 import that supplies the (P-OS) accepted-premise packet entry is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis selection (B-AXIS) remains a premise, not a derived result.
+
 Non-load-bearing cross-references:
 
 - (C-KMS) `AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md`

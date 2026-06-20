@@ -23,6 +23,7 @@ boundary-condition asymmetry (antiperiodic-`τ`/periodic-space breaks `W`
 exactly; symmetric BCs restore it exactly) — or an equivalent declared
 registration-direction bridge tying the record event order to one
 lattice axis. (B-AXIS.1) and (B-AXIS.3) (= N2/N5) are untouched.
+> B-AXIS premise note (added 2026-06-20): this no-go on the axis-label component of (B-AXIS.2) is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis selection (B-AXIS) remains a declared premise, not a derived result.
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome; audit verdict and effective status
 are set only by the independent audit lane.

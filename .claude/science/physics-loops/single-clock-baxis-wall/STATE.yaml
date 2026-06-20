@@ -11,10 +11,23 @@ deadline_epoch: 1782006241          # 2026-06-20 21:44 EDT
 worktree: /Users/jonBridger/tp-audit-bridge-20260620
 base_commit: 9469e8251
 
-cycle_count: 1
-block_count: 1
-active_block: 02
-active_block_branch: physics-loop/single-clock-baxis-wall-block02-20260620
+cycle_count: 3
+block_count: 3
+active_block: 04
+active_block_branch: physics-loop/single-clock-baxis-wall-block04-20260620
+block03_result: >
+  CLOSED. Consumer-firewall widening. Keystone has 24 direct dependents, cone 960
+  (≈959). 19 direct-claiming: 8 already firewalled by in-flight branch (+1 deeper,
+  not re-edited), 11 additionally repointed here (purely additive blockquotes
+  citing the unified note). 5 non-claiming, ~936 transitive-covered. Coverage
+  runner PASS=34/0. Review: pass (additive-only spot-check). Commit pending.
+block02_result: >
+  CLOSED. Unified B-AXIS obstruction no_go note (13 sections) consolidating ~8
+  in-flight branches + block01. Consolidated runner PASS=32/0 (S4-transitivity
+  computed). N1-N8 PASS per clause. Adversarial review passed_with_notes (could
+  not reject; computed-S4 hardening folded in). Source discipline clean. Commit
+  9210aaa75. PR backlogged (auth). Note:
+  docs/SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md
 block01_result: >
   CLOSED. 4 genuine fresh attempts, 91 PASS / 0 FAIL, NO CRACK. R-N5-IRR walled
   (T̂² maximally factorized, factors not gauge → needs (L_s−1)-param admission ray);
@@ -25,13 +38,15 @@ block01_result: >
   outside A_min). Review: passed_with_notes (3 fixes folded in). Commit 1384247ea.
   PR backlogged (GitHub auth down). N1 ≥5-route + N7 steelman now honestly closed.
 active_route: >
-  Block 02 = author the UNIFIED B-AXIS obstruction note (N2/N4/N5) absorbing all
-  in-flight runners + block01 results, WITH the per-clause N1-N8 No-Go Discipline
-  Gate included, one consolidated verification runner (recompute headline facts;
-  source discipline — no blind cite of conditional parent), CLAIM_STATUS_CERTIFICATE_block02.
+  Block 03 = consumer-firewall widening. Triage the 959 descendants of the
+  keystone (from the read-only audit ledger) into direct-B-AXIS-claiming /
+  transitive-covered / non-claiming; extend the firewall runner to cover all
+  direct claiming consumers; repoint their B-AXIS citations to the unified
+  obstruction note; absorb the in-flight firewall branch's 9-consumer work +
+  G_NEWTON withdrawal (cite, do not redo). Conservative additive edits only.
 hard_residual_being_attacked: >
-  Consolidating the three named walls into one citable retained_no_go-grade
-  obstruction note that passes N1-N8 on its own surface.
+  Making the 959 descendants explicitly consume B-AXIS as a premise citing the
+  unified note, so audit readiness drains without claiming derivation.
 
 revised_block_plan:
   - block01: DONE — DEEP WORK fresh attempts (no crack; 91 PASS)

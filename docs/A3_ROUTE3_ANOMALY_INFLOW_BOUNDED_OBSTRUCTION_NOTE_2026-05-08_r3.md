@@ -121,6 +121,8 @@ anomaly carriers act on H_{hw=1} as C_3-symmetric operators.
 | StagC | Staggered chirality `C(x) = (-1)^{x+y+z}`; `{C, H_phys} = 0`; `(-1)^{hw}` per BZ corner | [`STAGGERED_CHIRAL_SYMMETRY_SPECTRUM_THEOREM_NOTE_2026-05-02.md`](STAGGERED_CHIRAL_SYMMETRY_SPECTRUM_THEOREM_NOTE_2026-05-02.md), [`CPT_EXACT_NOTE.md`](CPT_EXACT_NOTE.md) |
 | Sub4ac | Substep4ac Lemma: C_3-symmetric self-adjoint H ⇒ equal corner-basis expectations | [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md) |
 
+> B-AXIS premise note (added 2026-06-20): the single-clock codimension-1 evolution imported as premise SC is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis selection (B-AXIS) is a premise here, not a derived result.
+
 ### Forbidden imports
 
 - NO PDG observed values

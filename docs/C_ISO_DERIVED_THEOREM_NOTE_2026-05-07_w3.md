@@ -41,6 +41,7 @@ selected by the framework primitives.
   for the Lieb-Robinson velocity form.
 - [`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`](AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
   for the single-clock transfer-matrix surface.
+  B-AXIS premise note (added 2026-06-20): this single-clock import is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis (B-AXIS) and preferred time-step remain premises, not derived results.
 
 These dependencies are allowed imports for an `open_gate` boundary. They are
 not used here to lift C-iso to a retained or bounded closure.

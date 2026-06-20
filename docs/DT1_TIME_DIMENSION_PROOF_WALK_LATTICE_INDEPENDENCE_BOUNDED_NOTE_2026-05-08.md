@@ -29,6 +29,8 @@ only:
 - the cited Clifford-volume / sublattice-parity chirality grading;
 - the cited single-clock codimension-1 evolution structure.
 
+> B-AXIS premise note (added 2026-06-20): the cited single-clock codimension-1 evolution structure (used at Step 4 to exclude `d_t > 1`) is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis selection (B-AXIS) remains a premise, not a derived result.
+
 This is a bounded proof-walk of an existing theorem note. It does not
 add a new axiom, a new repo-wide theory class, or a retained status
 claim. It does not propose a status promotion.

@@ -73,6 +73,8 @@ proof and
 Step 4) — is enough to break the `P_1`/`P_3` Hodge degeneracy and
 supply the missing first-order boundary/orientation principle.
 
+> B-AXIS premise note (added 2026-06-20): the cited single-clock Step-4 time-asymmetry / temporal-reflection import is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis selection (B-AXIS) remains a premise, not a derived result.
+
 ## Answer
 
 **Yes, conditionally.** Under the cited {RP staggered phase rule;

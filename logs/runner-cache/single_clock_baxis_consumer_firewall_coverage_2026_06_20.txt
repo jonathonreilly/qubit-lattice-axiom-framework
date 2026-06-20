@@ -1,0 +1,62 @@
+========================================================================
+B-AXIS consumer firewall coverage — block03 (2026-06-20)
+keystone: axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03
+unified authority: docs/SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md
+========================================================================
+
+[AUTHORITY] canonical unified B-AXIS-premise note present
+  [PASS] docs/SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md exists — present
+  [PASS] unified note declares B_AXIS_DERIVED = FALSE
+  [PASS] unified note declares B_AXIS_CONSUMED_AS_PREMISE = TRUE
+
+[REPOINTED-BLOCK03] additive repoint to unified authority (11 consumers)
+  [PASS] A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md carries B-AXIS-premise marker
+  [PASS] A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md cites unified authority note
+  [PASS] A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md carries B-AXIS-premise marker
+  [PASS] A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md cites unified authority note
+  [PASS] A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md carries B-AXIS-premise marker
+  [PASS] A3_R2_REVIEW_CONFIRMS_EXHAUSTION_NOTE_2026-05-08_r2hr.md cites unified authority note
+  [PASS] C_ISO_DERIVED_THEOREM_NOTE_2026-05-07_w3.md carries B-AXIS-premise marker
+  [PASS] C_ISO_DERIVED_THEOREM_NOTE_2026-05-07_w3.md cites unified authority note
+  [PASS] DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md carries B-AXIS-premise marker
+  [PASS] DT1_TIME_DIMENSION_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-08.md cites unified authority note
+  [PASS] OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md carries B-AXIS-premise marker
+  [PASS] OSTERWALDER_SCHRADER_FROM_FRAMEWORK_NARROW_THEOREM_NOTE_2026-05-27.md cites unified authority note
+  [PASS] P2_NATIVE_LORENTZIAN_MAGNITUDE_TEST_2026-06-05.md carries B-AXIS-premise marker
+  [PASS] P2_NATIVE_LORENTZIAN_MAGNITUDE_TEST_2026-06-05.md cites unified authority note
+  [PASS] PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md carries B-AXIS-premise marker
+  [PASS] PLANCK_ORIENTATION_PRINCIPLE_BOUNDED_NOTE_2026-05-10_planckP3.md cites unified authority note
+  [PASS] SIGNED_GRAVITY_PARITY_GRADING_ESCAPE_DICHOTOMY_NARROW_THEOREM_NOTE_2026-06-11.md carries B-AXIS-premise marker
+  [PASS] SIGNED_GRAVITY_PARITY_GRADING_ESCAPE_DICHOTOMY_NARROW_THEOREM_NOTE_2026-06-11.md cites unified authority note
+  [PASS] SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md carries B-AXIS-premise marker
+  [PASS] SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md cites unified authority note
+  [PASS] STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md carries B-AXIS-premise marker
+  [PASS] STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md cites unified authority note
+
+[ALREADY-FIREWALLED] cite keystone; FLAG repoint-to-unified pending integration (9 consumers)
+  [PASS] A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md cites keystone
+  [FLAG] A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md — repoint-to-unified pending integration
+  [PASS] A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md cites keystone
+  [FLAG] A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md — repoint-to-unified pending integration
+  [PASS] CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md cites keystone
+  [FLAG] CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md — repoint-to-unified pending integration
+  [PASS] G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md cites keystone
+  [FLAG] G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md — repoint-to-unified pending integration
+  [PASS] KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md cites keystone
+  [FLAG] KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md — repoint-to-unified pending integration
+  [PASS] P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md cites keystone
+  [FLAG] P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md — repoint-to-unified pending integration
+  [PASS] STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md cites keystone
+  [FLAG] STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md — repoint-to-unified pending integration
+  [PASS] STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md cites keystone
+  [FLAG] STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md — repoint-to-unified pending integration
+  [PASS] CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md cites keystone
+  [FLAG] CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md — repoint-to-unified pending integration
+
+========================================================================
+Boundary flags:
+  B_AXIS_DERIVED            = FALSE
+  B_AXIS_CONSUMED_AS_PREMISE = TRUE
+  AUDIT_LEDGER_WRITTEN      = FALSE
+========================================================================
+TOTAL: PASS=34 FAIL=0

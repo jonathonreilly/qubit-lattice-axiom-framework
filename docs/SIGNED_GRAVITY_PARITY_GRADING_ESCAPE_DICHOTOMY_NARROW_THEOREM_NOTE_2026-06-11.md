@@ -173,6 +173,8 @@ witness locally and does not inherit a retained status from it),
 `SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md` (the
 `audited_conditional` consumer; status unchanged by this note).
 
+> B-AXIS premise note (added 2026-06-20): the single-clock transfer-log-generator witness family (P3) reused above is governed by the canonical B-AXIS-premise authority [`SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md`](SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md); the temporal-axis selection (B-AXIS) remains a premise, not a derived result.
+
 ## Admitted-context inputs
 
 Standard finite-dimensional linear algebra; matrix exponential and

@@ -139,9 +139,15 @@ def part0_source_scope_firewall() -> None:
     check(
         "Source note identifies the open-gate selector diagnostic",
         "**Type:** open_gate" in NOTE_TEXT
+        and "**Claim type:** open_gate" in NOTE_TEXT
         and "**Type:** bounded_theorem" not in NOTE_TEXT
         and "open selector gate" in NOTE_TEXT
         and "not a selector theorem" in NOTE_FLAT,
+    )
+    check(
+        "Source note preserves independent audit authority",
+        "**Status authority:** independent audit lane only." in NOTE_FLAT
+        and "does not set or predict an audit outcome" in NOTE_FLAT,
     )
     check(
         "Source note registers primary runner and cached output",

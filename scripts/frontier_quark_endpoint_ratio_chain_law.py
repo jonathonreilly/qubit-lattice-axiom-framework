@@ -249,8 +249,22 @@ def part4_anchored_quark_branch(d_chain: float) -> None:
     anchored = solve_anchored_surface()
     a_u_chain = anchored_a_u_from_denominator(d_chain)
     a_u_live = anchored_a_u_from_denominator(endpoint_readout().ratio_be_bt_abs)
-    eval_chain = evaluate_candidate("21/8", "ratio-chain", a_u_chain, anchored.r_uc, anchored.r_ct)
-    eval_live = evaluate_candidate("|b_E/b_T|", "bounded-endpoint", a_u_live, anchored.r_uc, anchored.r_ct)
+    eval_chain = evaluate_candidate(
+        "21/8",
+        "ratio-chain",
+        a_u_chain,
+        anchored.r_uc,
+        anchored.r_ct,
+        run_refit=False,
+    )
+    eval_live = evaluate_candidate(
+        "|b_E/b_T|",
+        "bounded-endpoint",
+        a_u_live,
+        anchored.r_uc,
+        anchored.r_ct,
+        run_refit=False,
+    )
 
     print(f"\n  chain-implied amplitude      = {a_u_chain:.12f}")
     print(f"  live bounded amplitude       = {a_u_live:.12f}")

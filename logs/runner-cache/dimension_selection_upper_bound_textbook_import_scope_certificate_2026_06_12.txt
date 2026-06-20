@@ -3,7 +3,7 @@ runner: scripts/dimension_selection_upper_bound_textbook_import_scope_certificat
 runner_sha256: 80b34c06abe33ed394e00a26a8a63cee2265cdbcf808f48c9d3b237ae14c2909
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Dimension upper-bound textbook-import wrapper scope certificate

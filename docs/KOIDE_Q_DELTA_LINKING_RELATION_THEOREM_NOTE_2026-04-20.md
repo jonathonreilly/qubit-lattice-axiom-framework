@@ -23,6 +23,31 @@ Promotion beyond renaming support requires deriving either `Q_d` or
 `Delta_d` from retained framework inputs, or attaching the formal identity to
 a retained parent claim that supplies independent scientific content.
 
+## Citation firewall (2026-06-18)
+
+Direct citations to this note are allowed only for the definition-level
+identity
+
+```text
+Delta_d = Q_d / d
+```
+
+after the two formal definitions `Q_d = 2/d` and `Delta_d = 2/d^2` have
+already been stated. Direct citations must not use this note as authority for:
+
+- a Koide selector;
+- a Berry/radian bridge;
+- a PDG or observed-mass comparator;
+- a physical charged-lepton offset theorem;
+- a retained derivation of either `Q_d` or `Delta_d`.
+
+The paired runner now scans direct source citations to this file and rejects
+contexts that still present the row as retained physical `delta = 2/9`, a
+partial physical closure, a PDG comparator, or a live radian-bridge authority.
+Historical notes that need the old residual-postulate `P` language should cite
+the explicit radian-bridge no-go notes instead; this repaired note is only the
+formal ratio identity.
+
 ## Actual claim
 
 For any integer `d >= 1`, define the two formal dimensionless quantities:
@@ -118,5 +143,5 @@ Expected result:
 
 ```text
 Koide Q-delta formal ratio repair
-TOTAL: PASS=39 FAIL=0
+TOTAL: PASS=106 FAIL=0
 ```

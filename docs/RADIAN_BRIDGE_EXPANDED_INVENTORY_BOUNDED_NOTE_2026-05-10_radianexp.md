@@ -20,10 +20,11 @@ promote any downstream theorem.
 
 ## Naming convention
 
-- **`P`** = radian-bridge primitive. Per
+- **`P`** = radian-bridge primitive. The current repaired
   [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-  §4: identification of the dimensionless character-algebra ratio
-  `2/d² = 2/9` with the literal radian value `2/9 rad`.
+  is formal-only and does not carry `P`; this inventory studies the separate
+  identification of the dimensionless character-algebra ratio `2/d² = 2/9`
+  with the literal radian value `2/9 rad`.
 - **Probe 30** =
   [`KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md`](KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md):
   Buckingham-Pi closure on the 7 dimensional constants
@@ -589,7 +590,8 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===` (achieved: PASS=31).
 - [`G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md`](G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md)
   — `g_bare = 1` retained.
 - [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-  §4 — names primitive `P`.
+  — formal-only Q-Delta identity; context only, not the live authority for
+  primitive `P`.
 - [`KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`](KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md)
   — closing-input list (a)/(b)/(c).
 - [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)

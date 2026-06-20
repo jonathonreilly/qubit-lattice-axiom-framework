@@ -1,11 +1,65 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py
-runner_sha256: cd426862a28340fd219e678b288fc3396cac75dfc397a4cfa358843fa77934bb
+runner_sha256: 4b4f2e60183c76184013d9d5371e6dbb77b033b5d5380834c423e8014bc253ff
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.49
+elapsed_sec: 7.66
 status: ok
 ----- stdout -----
+Gauge-vacuum first-sector 3+1 line-helper source firewall
+
+========================================================================================
+Static helper contract
+========================================================================================
+[PASS] original retained weights are the four retained corners
+[PASS] ordered line basis is boundary-first
+[PASS] boundary-first weights are the ordered retained weights
+
+========================================================================================
+Line geometry contract
+========================================================================================
+[PASS] normalize_line returns a unit vector
+[PASS] normalize_line rejects the zero vector
+[PASS] positive angle chart round-trips a sample line
+[PASS] ordered slice has shape 4x3
+[PASS] ordered slice columns are orthonormal
+[PASS] ordered slice is orthogonal to the complement line
+
+========================================================================================
+Live helper contract
+========================================================================================
+[PASS] selected retained block has shape 4x4
+[PASS] selected retained block is finite
+[PASS] compressed local block has shape 3x3
+[PASS] compressed local block is finite
+[PASS] response vector is finite
+[PASS] live response vector is finite
+[PASS] compression basis is orthonormal
+[PASS] rho1/rho2 projection distances are finite nonnegative
+[PASS] invalid reference slice labels are rejected
+[PASS] boundary-anchor Krylov complement line is unit
+
+========================================================================================
+Source-note boundary
+========================================================================================
+[PASS] note contains citation firewall marker: 'Citation/use firewall (2026-06-18)'
+[PASS] note contains citation firewall marker: 'helper-interface registration function'
+[PASS] note contains citation firewall marker: 'may not be used as:'
+[PASS] note contains citation firewall marker: 'one-hop dependency uses'
+[PASS] note contains citation firewall marker: 'independent audit remains responsible for any effective-status movement'
+[PASS] note avoids promotion phrase: 'This helper derives the complement-line frame'
+[PASS] note avoids promotion phrase: 'This helper derives the selected_line selector'
+[PASS] note avoids promotion phrase: 'This helper closes downstream gauge-vacuum-plaquette theorems'
+
+========================================================================================
+Direct citation firewall
+========================================================================================
+[PASS] all direct source citations qualify the helper note as helper-interface / one-hop authority (docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md, docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_ORIENTATION_THEOREM_NOTE_2026-04-20.md, docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_REDUCED_PACKET_COMPLEX_GIVENS_SELECTOR_THEOREM_NOTE_2026-04-20.md)
+[PASS] direct source citations avoid complement-line-frame and selector-derivation language (docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md, docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_ORIENTATION_THEOREM_NOTE_2026-04-20.md, docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_REDUCED_PACKET_COMPLEX_GIVENS_SELECTOR_THEOREM_NOTE_2026-04-20.md)
+
+========================================================================================
+TOTAL: PASS=29 FAIL=0
+========================================================================================
 
 ----- stderr -----
 

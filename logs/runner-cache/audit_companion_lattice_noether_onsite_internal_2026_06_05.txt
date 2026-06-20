@@ -3,7 +3,7 @@ runner: scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
 runner_sha256: 81b4a7a47556e426102a7ebfb392cd635ce6a34b453a7aa7767715bd653e7819
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ==========================================================================

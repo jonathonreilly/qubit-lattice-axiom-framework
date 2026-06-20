@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/distance_law_finite_table_diagnostic_firewall_2026_06_17.py
+runner_sha256: 2be3f97803ef95eaf5be1bc48e91c848ed9440ec08ce6ac9c5ae1f629dc20bb2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: note finite-table diagnostic boundary -- missing=[]
+PASS: note removes old closure wording -- present=[]
+PASS: runner diagnostic firewall text -- missing=[]
+PASS: runner removes old retained-style output -- present=[]
+PASS: heavy runner cache is fresh -- status=fresh
+PASS: cache carries diagnostic values and caveats -- missing=[]
+PASS: cache removes old closure output -- present=[]
+
+TOTAL PASS: 7
+TOTAL FAIL: 0
+Verdict: finite-table diagnostic split verified; no estimator-selection or retained inverse-square closure is claimed.
+
+----- stderr -----
+

@@ -4,8 +4,14 @@
 **Type:** bounded bridge theorem
 **Claim type:** bounded_theorem
 **Status:** exact-support branch-local, conditional on the finite pointer-record
-model premises listed below; audit_required_before_effective_retained=true;
+model premises listed below — in particular conditional on the already-supplied
+projective record-write premise (the ideal pointer-label write isometry is a
+supplied premise, not derived here from the finite controlled-copy/fresh-fragment
+record-formation dynamics); audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
+
+Status authority: independent audit lane only. This source note does not set or
+predict an audit outcome.
 **Primary runner:**
 [`scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py`](../scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py)
 **Cached log:**
@@ -39,8 +45,12 @@ Condition on:
 - the finite pointer-non-demolition record-formation bridge, so the pointer
   sectors are stable record sectors in the model;
 - a blank finite record register `H_record` with orthonormal labels `{|r>}`;
-- an ideal record-write step that copies the stable pointer sector label to
-  the record register without rotating the pointer sector.
+- **the projective record-write premise** (supplied, not derived here): an ideal
+  record-write step that copies the stable pointer sector label to the record
+  register without rotating the pointer sector. This premise hands us the
+  projective write directly; deriving it from the finite controlled-copy/
+  fresh-fragment record-formation dynamics is a separate open bridge, not
+  supplied here.
 
 Define
 
@@ -61,9 +71,12 @@ Then:
 5. The realized record labels are orthogonal one-hot atoms, so the exact
    post-record word/count layer can consume them as realized symbols.
 
-This is an exact finite-model bridge from the pointer-formation layer to the
-Kraus-instrument algebra. It does not solve the general physical production
-problem.
+This is an exact finite-model bridge **from the supplied projective record-write
+premise** to the Kraus-instrument algebra: given that premise, the isometry `W`
+and its projective Kraus blocks follow exactly. The bridge does NOT derive the
+projective write premise (the isometry `W`) from the finite controlled-copy/
+fresh-fragment record-formation dynamics — that derivation is an open bridge, not
+supplied here — and it does not solve the general physical production problem.
 
 ## Proof
 
@@ -114,8 +127,11 @@ evolution is equivalent to a conserved pointer:
 ```
 
 That result supplies stable pointer sectors for the bounded model. This note
-then supplies the ideal record-write isometry whose blocks are those sectors'
-projectors.
+then takes the projective record-write premise — the ideal pointer-label write
+whose blocks are those sectors' projectors — as supplied, and proves the exact
+Kraus-instrument algebra that follows from it. The note does not derive that
+write premise (the isometry `W`) from the finite controlled-copy/fresh-fragment
+record-formation dynamics; that derivation is an open bridge.
 
 The composition is:
 
@@ -123,19 +139,27 @@ The composition is:
 finite quantum-Darwinism pointer model
   + pointer-non-demolition record formation
   + blank orthonormal record register
-  + ideal pointer-label write
-    => normalized W
-    => projective Kraus instrument
+  + ideal pointer-label write                  [SUPPLIED PREMISE]
+    --[open bridge: dynamics => W not supplied here]-->
+    => normalized W                            [given the premise]
+    => projective Kraus instrument             [exact, given the premise]
     => realized record atom for post-record word/count dynamics.
 ```
 
-The first and third-plus-fourth inputs are bridge/model premises. The algebra
-after those premises is exact.
+The first three-plus-fourth inputs are bridge/model premises; in particular the
+ideal pointer-label write is the supplied projective write premise. The step from
+the finite controlled-copy/fresh-fragment dynamics to that premise (`dynamics =>
+W`) is an open bridge, not supplied here. The algebra after the premises — `W` is
+a normalized isometry, `K_r = P_r`, and the projective Kraus instrument — is
+exact.
 
 ## What this buys
 
 - It narrows the open "record dynamics to Kraus instrument" gap for the
-  projective finite pointer model.
+  projective finite pointer model: given the supplied projective record-write
+  premise, the Kraus-instrument algebra is exact. The residual open step is the
+  bridge from the finite controlled-copy/fresh-fragment dynamics to that write
+  premise (`dynamics => W`), which this note does not supply.
 - It gives a concrete interface between bounded formation dynamics and exact
   post-record information dynamics.
 - It explains the pre-record/post-record distinction without making it an
@@ -157,12 +181,29 @@ after those premises is exact.
   or beta value.
 - It does not derive arbitrary persistent-record dynamics into a normalized
   isometry.
+- It does not derive the ideal pointer-label record-write isometry from the
+  finite controlled-copy/fresh-fragment record-formation dynamics. That write is
+  the supplied projective record-write premise; deriving it from the dynamics is
+  an open bridge, not supplied here.
 - It does not derive a Born rule or probability law from post-record counts.
   Branch weights are read from the pre-record density matrix through the
   supplied projective instrument.
 - It does not select a generation or Koide dial location. The dial remains a
   separate stable-location question, not a forced selection.
 - It does not apply any audit verdict.
+
+## Repair history
+
+### 2026-06-19 — missing_bridge_theorem repair (narrowing alternative)
+
+Rescoped the bridge to be conditional on the already-supplied projective
+record-write premise. The note now states that, GIVEN the projective
+record-write premise (the ideal pointer-label write isometry `W`), the Kraus
+isometry bridge holds exactly (`W^dagger W = I`, `K_r = P_r`, projective Kraus
+instrument). The derivation of that premise from the finite controlled-copy/
+fresh-fragment record-formation dynamics (`dynamics => W`) is marked an open
+bridge, not supplied here. No claim that the isometry is derived from the
+dynamics is made. No derived value changed.
 
 ## Status certificate
 

@@ -51,6 +51,12 @@ review_loop:
   no_audit_verdicts_applied: true
   audit_loop_run: false
 pr:
-  status: pending
-  url: pending
-next_exact_action: "Commit Block103, push branch, open review PR, patch packet with PR URL, then continue with a fresh block from current origin/main."
+  status: open
+  number: 4470
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4470
+  head_commit: a90a4837bc479ee1ffee9e60b5cc57f13c4c2d76
+  base: main
+  head: physics-loop/audit-unblock-block103-20260620
+  mergeable: MERGEABLE
+  status_checks: "audit-lane/audit_pipeline in progress at PR creation"
+next_exact_action: "Continue the campaign from a fresh worktree based on current origin/main; select the next source-side audit unblock target and package it as Block104."

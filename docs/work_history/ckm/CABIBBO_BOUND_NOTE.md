@@ -19,6 +19,24 @@ Promotion beyond numerical-match support requires deriving the mass inputs and
 NNI coefficients from retained framework dynamics without fitting to CKM/PDG
 targets.
 
+## Source-edge repair (2026-06-17)
+
+The live one-hop source for the algebraic NNI identities used by this note is
+now:
+
+- [CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md](../../CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md)
+- [frontier_ckm_mass_basis_nni_structural_identities_2026_06_17.py](../../../scripts/frontier_ckm_mass_basis_nni_structural_identities_2026_06_17.py)
+
+That source proves only the structural identities T1-T4 for arbitrary positive
+masses and arbitrary positive NNI coefficients. It does not derive the
+calibrated value `|V_us| = 0.2251`.
+
+The calibrated Cabibbo number remains an imports-dependent output of
+`scripts/frontier_ckm_mass_basis_nni.py`, because that runner still imports
+quark masses, fitted NNI coefficients, and PDG comparators. The earlier
+work-history mass-basis route remains route history and is not the live
+one-hop source for the algebraic identities.
+
 ## Summary
 
 The safe current Cabibbo statement on `main` is:
@@ -68,15 +86,17 @@ That combined route note is kept in work history only:
 
 - [work_history/CABIBBO_JARLSKOG_ROUTE_NOTE_2026-04-12.md](work_history/CABIBBO_JARLSKOG_ROUTE_NOTE_2026-04-12.md)
 
-The active main-branch Cabibbo surface is instead:
+The active source split for this work-history note is:
 
-- [CKM_MASS_BASIS_NNI_NOTE.md](CKM_MASS_BASIS_NNI_NOTE.md)
-- [scripts/frontier_ckm_mass_basis_nni.py](../scripts/frontier_ckm_mass_basis_nni.py)
+- structural identities:
+  [CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md](../../CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md)
+- calibrated bounded illustration:
+  [frontier_ckm_mass_basis_nni.py](../../../scripts/frontier_ckm_mass_basis_nni.py)
 
 ## Relationship To Other Flavor Notes
 
 - current CKM magnitude package:
-  [CKM_MASS_BASIS_NNI_NOTE.md](CKM_MASS_BASIS_NNI_NOTE.md)
+  [CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md](../../CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md)
 - current bounded Jarlskog companion:
   `JARLSKOG_PHASE_BOUND_NOTE.md` (sibling artifact; cross-reference only — not a one-hop dep of this note)
 - historical combined route note:

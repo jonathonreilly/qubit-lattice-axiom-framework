@@ -81,6 +81,17 @@ plain-text context handles rather than citation-graph dependencies:
   `9.7x` above the required `alpha_s = 0.1033038`; therefore ordinary
   mean-field link un-freezing is refuted as the supplier for the
   `alpha_s`-per-decoupling attachment rule.
+- `HIERARCHY_DELTA0_S3_FIXED_GAP_SPECTRUM_NO_GO_NOTE_2026-06-18.md`
+  — context-only pruning, not a load-bearing dependency for this
+  note: on the lattice-gauge-only NJL surface, the active-taste gap
+  equation gives `sigma_n^2 = nG - 4u_0^2`; at the leading-order
+  Kawamoto-Smit value `G = 1/(2N_c) = 1/6`, all `1 <= n <= 16`
+  are symmetric-phase, so no S3 threshold mass spectrum exists there.
+  Even granting a common broken-phase fixed `G`, requiring
+  `sigma_{n-1}/sigma_n = alpha_LM` forces a different `G_*(n)` at
+  each adjacent step. This prunes the fixed-`G` lattice-gauge-only
+  S3 arm and leaves threshold-dependent, electroweak-driven, and
+  non-NJL direct transport mechanisms open.
 
 The zero-induced-shift result forecloses quadratic-block-algebra
 closure routes at frozen links. After Block04, the ordinary

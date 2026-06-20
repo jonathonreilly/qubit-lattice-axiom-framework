@@ -2,8 +2,16 @@
 
 **Date:** 2026-04-20
 **Lane:** Charged-lepton Koide phase `delta = 2/9`.
-**Status:** bounded - bounded or caveated result note
-`δ = Q/d` from the doublet conjugate-pair charge `n_eff = 2` and `d = 3 = |C_3|`.
+**Claim type:** bounded_theorem
+**Claim scope:** bounded conditional phase reduction: the source proves the
+structural doublet conjugate-pair charge `n_eff = 2`, the group-order input
+`d = 3 = |C_3|`, and the exact algebraic implication
+`delta_formal = n_eff/d^2 = Q/d = 2/9` once the Koide-ratio input `Q=2/3`
+is supplied. It does not derive `Q=2/3`, does not close the physical-base
+radian bridge `P`, and does not claim a standalone physical derivation of the
+Brannen phase.
+**Status:** bounded conditional reduction; no standalone physical
+`delta=2/9` derivation.
 The cycle-2 linking theorem and direct no-go sharpen the remaining load-bearing
 step: on the physical selected-line CP¹ base, the structural ratio `2/d²`
 still has to be identified with the physical Berry holonomy in radians
@@ -29,7 +37,8 @@ important reduction route, not as the final standalone discharge of I2.
 
 ## 0. Executive summary
 
-The Brannen phase `delta = 2/9` is currently a retained observational input.
+The Brannen phase `delta = 2/9` is treated here as a conditional target, not
+as an independently derived physical value.
 The Berry theorem identifies `delta(m)` as the Berry holonomy of the
 tautological CP^1 line on the actual selected charged-lepton route (for all
 `m`), but does not by itself force the VALUE `delta = 2/9` on the physical
@@ -47,13 +56,14 @@ delta = n_eff / d^2 = 2/9
 where the second equality holds because `Q = n_eff / d = 2/3` is the Koide ratio.
 
 The derivation of `n_eff = 2` is structural and independent of `Q`. The step
-`Q = 2/3` is the retained observational input (I1). Given `Q`, `delta = Q/d = 2/9`
-follows uniquely from the doublet structure and C_3 order. Therefore:
+`Q = 2/3` is a supplied Koide-ratio input (I1), not derived in this note.
+Given `Q`, the algebraic relation `delta = Q/d = 2/9` follows uniquely from
+the doublet structure and C_3 order. Therefore:
 
 > **This note provides the conditional `δ = Q/d` route.** The cycle-2
 > companion notes sharpen the remaining live gap as the physical-base
-> radian-bridge postulate `P`. So once `I1` is derived and `P` is closed, I2
-> closes automatically via `δ = Q/d`.
+> radian-bridge postulate `P`. So once `I1` is derived or explicitly admitted
+> and `P` is closed, I2 closes automatically via `δ = Q/d`.
 
 ---
 
@@ -262,14 +272,16 @@ Therefore Route 3 also reduces to I1.
 >
 > - `n_eff = 2`: structurally derived (conjugate-pair forcing, Section 1).
 > - `d = 3`: structurally derived (|C_3|).
-> - `Q = 2/3`: retained observational (I1, open).
+> - `Q = 2/3`: supplied Koide-ratio input (I1, open in this note).
 > - `delta = Q/d = n_eff/d^2 = 2/9`: derived from the above three.
 >
-> Closing I1 (Q = 2/3) closes I2 (delta = 2/9) automatically. I2 does not
-> require an independent derivation once I1 is in hand.
+> Closing I1 (Q = 2/3) closes the formal `delta = Q/d` algebra automatically.
+> The physical radian-valued I2 reading still requires the separate
+> physical-base bridge `P`.
 
-The remaining gap is entirely in I1. The Brannen phase derivation is a
-one-formula corollary of the Koide ratio.
+The algebraic remaining gap is entirely in I1. The physical radian-valued
+reading still also requires the physical-base radian bridge `P`; the Brannen
+phase reduction itself is a one-formula corollary of the Koide ratio.
 
 ---
 
@@ -284,9 +296,11 @@ one-formula corollary of the Koide ratio.
    the Brannen normalization uniquely gives `delta = n_eff/d^2 = Q/d`. There is
    no free parameter.
 
-3. **All three candidate routes are exhausted and shown to reduce to I1.** This
-   sharpens the open import register: I2 is not independently open; it is a
-   corollary of I1.
+3. **All three candidate routes are exhausted and shown to reduce to I1 for the
+   formal algebraic value.** This sharpens the open import register: the
+   algebraic reduction `delta = Q/d` is not independently open once I1 is in
+   hand, while the physical radian-valued reading still requires the separate
+   physical-base bridge `P`.
 
 4. **The Koide ratio identity Q = n_eff/d.** The formula `Q = n_eff/d = 2/3` is
    a representation-theoretic reading of the Koide ratio: it equals the doublet
@@ -304,16 +318,14 @@ one-formula corollary of the Koide ratio.
 2. d = 3 from C_3 order.
 3. Formula: delta = n_eff/d^2 = 2/9 (exact rational).
 4. Equivalence: Q = n_eff/d = 2/3 (Koide ratio identity).
-5. Berry holonomy at physical point matches formula: delta_obs = 2/9.
-6. Positivity threshold check: delta(m_pos) = pi/12 (structural, not 2/9).
-7. Route 2 flat-connection obstruction: A = d(theta) has zero curvature on
+5. Route 2 flat-connection obstruction: A = d(theta) has zero curvature on
    the equator; all closed Z_3 orbits give trivial holonomy.
-8. Route 1 bundle obstruction: physical Koide base is interval (c_1 = 0);
+6. Route 1 bundle obstruction: physical Koide base is interval (c_1 = 0);
    ambient S^2 gives c_1 = n_eff = 2 and delta = 2/9.
-9. Conditional closure: given Q = 2/3, delta = Q/d = 2/9 is exact.
-10. Counterfactual: for any other Q' != 2/3, delta' = Q'/d != 2/9.
+7. Conditional closure: given Q = 2/3, delta = Q/d = 2/9 is exact.
+8. Counterfactual: for any other Q' != 2/3, delta' = Q'/d != 2/9.
 
-Expected: PASS=N, FAIL=0.
+Expected: PASS=16, FAIL=0.
 
 ---
 

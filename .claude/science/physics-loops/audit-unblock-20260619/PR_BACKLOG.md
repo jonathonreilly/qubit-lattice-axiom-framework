@@ -1,8 +1,14 @@
 # PR Backlog
 
-PR creation is pending for Block105.
+PR creation completed for Block105.
 
-Expected command:
+Opened PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4472
+```
+
+Command used:
 
 ```bash
 gh pr create \
@@ -12,5 +18,4 @@ gh pr create \
   --body-file .claude/science/physics-loops/audit-unblock-20260619/PR_BODY.md
 ```
 
-If GitHub auth or network fails, keep this file as the recovery backlog and
-record the failure in `HANDOFF.md`. Do not push to `main`.
+No recovery backlog is needed for this block. Do not push to `main`.

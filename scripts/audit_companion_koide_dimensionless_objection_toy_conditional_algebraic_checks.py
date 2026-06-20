@@ -83,6 +83,11 @@ def part_t0_source_boundary() -> None:
     check("note forbids retained propagation without a bridge theorem",
           "cannot propagate a retained Koide closure" in note_flat
           and "separate bridge theorem for the admissions" in note_flat)
+    check("note records the 2026-06-20 conditional-in-toy-algebra-only scoping",
+          "2026-06-20 audit-conditional repair: conditional-in-toy-algebra-only scoping" in note_text
+          and "keep this row scoped as conditional in-toy algebra only" in note_flat
+          and "this note makes **no claim of retained-grade propagation**" in note_flat
+          and "No retained-grade propagation." in note_text)
 
 
 def q_toy(s: Fraction, z: Fraction) -> Fraction:

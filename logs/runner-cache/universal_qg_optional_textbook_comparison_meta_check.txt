@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/universal_qg_optional_textbook_comparison_meta_check.py
-runner_sha256: 1d5afec0d8e537d0eceb5d60e8c418d1b6c7f15d510fdebdb10255d41de82e62
+runner_sha256: 3fbdece80a784fc3782f9ceb4c99d9fcf9ffdf6fc59feb051c482cdbfb0b31db
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.61
 status: ok
 ----- stdout -----
 ========================================================================
@@ -13,14 +13,16 @@ UNIVERSAL QG OPTIONAL TEXTBOOK COMPARISON META CHECK
 [PASS (A)] Type field is exactly meta: meta
 [PASS (A)] Status field negates theorem, claim, and new authority roles: audit-checkable packaging hub for optional textbook-comparison crosswalks against the universal-QG canonical textbook closure target. **Not** a theorem, claim, or new authority surface.
 [PASS (A)] Authority role is zero: zero — this row exists only to anchor a citation hub for downstream universal-QG notes that need a stable target for "optional textbook comparison" callouts.
-[PASS (A)] Primary runner points to this replay script: `scripts/universal_qg_optional_textbook_comparison_meta_check.py` (metadata invariant check only; no physics derivation).
+[PASS (A)] Primary runner points to this replay script: `scripts/universal_qg_optional_textbook_comparison_meta_check.py`
+[PASS (A)] Runner cache points to the cached replay transcript: `logs/runner-cache/universal_qg_optional_textbook_comparison_meta_check.txt`
+[PASS (A)] Audit-readiness metadata repair preserves zero-authority scope: source-side cache metadata is not a status promotion
 [PASS (A)] Source note has no markdown links to other docs: none
 [PASS (A)] Source note has no authority-style Citations section: Citations heading absent
 [PASS (A)] Informational cross-reference rows exist as separate claim files: all present as code spans
 [PASS (A)] Own-row substantive comparison firewall is explicit: claim-row firewall present
-[PASS (B)] Inbound mentions are guarded as optional packaging callouts: 22 mentions checked
+[PASS (B)] Inbound mentions are guarded as optional packaging callouts: 21 mentions checked
 ------------------------------------------------------------------------
-SUMMARY: PASS A=9 B=1 C=0 D=0 total_pass=10
+SUMMARY: PASS A=11 B=1 C=0 D=0 total_pass=12
 
 ----- stderr -----
 

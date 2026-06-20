@@ -1,16 +1,30 @@
 #!/usr/bin/env python3
-"""Companion sanity checks for the Lattice + Quantum + Record axiom memo.
+"""Boundary checks for the Lattice + Quantum + Record axiom memo.
 
-This runner checks only elementary algebra/notation facts referenced by
-docs/MINIMAL_AXIOMS_2026-06-05.md. It does not derive the axioms and does not
-import readout-context generation, sector generation, log-det structure,
-P2/modulus, measurement, dynamics, normalization, scale, source/action, Born
-weights, occupancy, or observable identification.
+This runner checks elementary algebra/notation facts plus source/registry
+firewalls for docs/MINIMAL_AXIOMS_2026-06-05.md. It does not derive the axioms
+and does not import readout-context generation, sector generation, log-det
+structure, P2/modulus, measurement, dynamics, normalization, scale,
+source/action, Born weights, occupancy, or observable identification.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+POLICY = ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md"
+REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
+TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
+PURITY_GUARD = ROOT / "docs" / "audit" / "scripts" / "check_axiom_premise_clean.py"
+RUNNER = "scripts/audit_companion_three_axiom_clean_base_exact.py"
+CLAIM_ID = "minimal_axioms"
 
 
 Matrix2 = tuple[tuple[complex, complex], tuple[complex, complex]]
@@ -27,6 +41,26 @@ class Check:
     name: str
     ok: bool
     detail: str
+
+
+def rel(path: Path) -> str:
+    return path.relative_to(ROOT).as_posix()
+
+
+def read(path: Path) -> str:
+    return path.read_text(encoding="utf-8")
+
+
+def load_json(path: Path) -> dict:
+    return json.loads(read(path))
+
+
+def normalize(text: str) -> str:
+    return " ".join(text.split())
+
+
+def contains(text: str, phrase: str) -> bool:
+    return normalize(phrase) in normalize(text)
 
 
 def add(a: Matrix2, b: Matrix2) -> Matrix2:
@@ -69,8 +103,100 @@ def kcpt_orbit(label: str, conjugation: dict[str, str]) -> frozenset[str]:
     return frozenset({label, partner})
 
 
+def source_boundary_checks() -> list[Check]:
+    note = read(NOTE)
+    policy = read(POLICY)
+    registry = load_json(REGISTRY)
+    tier_a = load_json(TIER_A)
+    node = (registry.get("nodes") or {}).get(CLAIM_ID, {})
+    aliases = set(node.get("aliased_paths") or [])
+    legacy_ids = set(node.get("legacy_claim_ids") or [])
+    derivation_targets = tier_a.get("derivation_targets") or {}
+    record_reclass = (tier_a.get("reclassified_primitives") or {}).get("minimal_axioms_record", {})
+
+    checks = [
+        Check("Source note exists", NOTE.exists(), rel(NOTE)),
+        Check("Policy exists", POLICY.exists(), rel(POLICY)),
+        Check("Axiom-premise registry exists", REGISTRY.exists(), rel(REGISTRY)),
+        Check("Tier-A registry exists", TIER_A.exists(), rel(TIER_A)),
+        Check("Source type is meta", "**Type:** meta" in note, "framework memo, not theorem row"),
+        Check(
+            "Source status is current public framework axiom memo",
+            "**Status:** current public framework axiom memo" in note,
+            "audit status remains independent",
+        ),
+        Check("Source cites owner approval authority", "AXIOM_MINIMALITY_POLICY.md" in note, "section 6"),
+        Check("Source registers primary runner", RUNNER in note, RUNNER),
+        Check("Registry canonical ids include minimal_axioms", CLAIM_ID in registry.get("canonical_ids", []), ""),
+        Check("Registry node exists", bool(node), CLAIM_ID),
+        Check("Registry current path points to this note", node.get("current_path") == rel(NOTE), str(node.get("current_path"))),
+        Check("Registry aliases current 2026-06-05 memo", rel(NOTE) in aliases, str(sorted(aliases))),
+        Check("Registry aliases prior 2026-06-04 Record memo", "docs/MINIMAL_AXIOMS_2026-06-04.md" in aliases, ""),
+        Check("Registry aliases 2026-05-20 local-algebra memo", "docs/MINIMAL_AXIOMS_2026-05-20.md" in aliases, ""),
+        Check(
+            "Registry does not alias superseded 2026-04-11 four-input stack",
+            "docs/MINIMAL_AXIOMS_2026-04-11.md" not in aliases and "minimal_axioms_2026-04-11" not in legacy_ids,
+            "prevents stale A4/g_bare laundering",
+        ),
+        Check(
+            "Registry does not alias restored 2026-05-03 transition memo",
+            "docs/MINIMAL_AXIOMS_2026-05-03.md" not in aliases and "minimal_axioms_2026-05-03" not in legacy_ids,
+            "keeps transition memo separate",
+        ),
+        Check(
+            "Registry note blocks observable-principle laundering",
+            "observable_principle_from_axiom_note is not an axiom-premise node" in node.get("note", ""),
+            "",
+        ),
+        Check(
+            "Registry note records Record no-supply boundary",
+            "supplies no readout context" in node.get("note", "")
+            and "downstream theory consequence" in node.get("note", ""),
+            "",
+        ),
+        Check("Policy records 2026-06-05 Record refinement", "2026-06-05 -- Record axiom refinement" in policy, ""),
+        Check(
+            "Policy no-laundering clause lists forbidden Record imports",
+            contains(policy, "Record does not supply the readout context, central decomposition, `K`/CPT structure, sector-generation rule, weighting, normalization, probability, measurement/decoherence dynamics, time metric"),
+            "",
+        ),
+        Check("Tier-A genuine admitted input count remains two", tier_a.get("genuine_admitted_input_count") == 2, str(tier_a.get("genuine_admitted_input_count"))),
+        Check("minimal_axioms is not a Tier-A derivation target", CLAIM_ID not in derivation_targets, ""),
+        Check("Tier-A registry records Record as reclassified primitive", bool(record_reclass), ""),
+        Check("Tier-A Record reclassification source is current memo", record_reclass.get("source") == rel(NOTE), str(record_reclass.get("source"))),
+        Check(
+            "Tier-A Record boundary forbids P2/log-det/source-action laundering",
+            "P2/modulus" in record_reclass.get("boundary", "")
+            and "log-det" in record_reclass.get("boundary", "")
+            and "source/action" in record_reclass.get("boundary", ""),
+            "",
+        ),
+        Check("Note names exactly three framework axioms", "1. **Lattice**" in note and "2. **Quantum**" in note and "3. **Record**" in note, ""),
+        Check("Lattice no-supply clause is present", "does\nnot supply a dynamics" in note and "physical unit conversion" in note, ""),
+        Check("Quantum no-supply clause is present", "does not supply a\ndynamics" in note and "gauge group" in note and "physical observable bridge" in note, ""),
+        Check("Record no-supply clause is present", "record supplies no readout context" in note and "occupancy rule" in note, ""),
+        Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
+        Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
+        Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
+        Check("Open gates outside axioms include theta", "strong-CP theta admission" in note, ""),
+        Check("Open gates outside axioms include g_bare", "`g_bare = 1` convention handling" in note, ""),
+        Check("Open gates outside axioms include scale self-consistency", "natural unit equals the Planck length" in note, ""),
+    ]
+
+    guard = subprocess.run(
+        [sys.executable, str(PURITY_GUARD)],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    detail = guard.stdout.strip().splitlines()[-1] if guard.stdout.strip() else guard.stderr.strip()
+    checks.append(Check("Axiom/primitive purity guard passes", guard.returncode == 0, detail))
+    return checks
+
+
 def run_checks() -> list[Check]:
-    checks: list[Check] = []
+    checks: list[Check] = source_boundary_checks()
     pauli = [SIGMA_X, SIGMA_Y, SIGMA_Z]
 
     ok_pauli = True
@@ -168,11 +294,20 @@ def run_checks() -> list[Check]:
 
 def main() -> int:
     checks = run_checks()
+    pass_count = 0
+    fail_count = 0
     for item in checks:
         status = "PASS" if item.ok else "FAIL"
+        if item.ok:
+            pass_count += 1
+        else:
+            fail_count += 1
         print(f"{status}: {item.name}")
         print(f"      {item.detail}")
-    if all(item.ok for item in checks):
+    print()
+    print(f"runner_check_breakdown = {{A: {pass_count}, B: 0, C: 0, D: 0, total_pass: {pass_count}}}")
+    print(f"TOTAL: PASS={pass_count} FAIL={fail_count}")
+    if fail_count == 0:
         print("RESULT: PASS")
         return 0
     print("RESULT: FAIL")

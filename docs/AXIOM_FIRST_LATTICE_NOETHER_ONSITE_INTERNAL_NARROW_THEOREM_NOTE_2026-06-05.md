@@ -334,4 +334,36 @@ No load-bearing broad-gate dependency is recorded here. The prior
 staggered-realization parent link has been removed because the onsite/internal
 Noether theorem reconstructs the finite bilinear carrier/exhibit it needs and
 delegates only to retained abstract bilinear and substep-1 authorities.
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- staggered-Dirac realization gate (file `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`):
+  plain-text non-authority pointer only — NOT a one-hop markdown-link
+  authority and NOT a citation-graph dependency edge. The realization gate is
+  the downstream physical realization/readout bridge described in §0 and §6 and
+  is **not consumed** by this row's derivation.
+
+### 2026-06-20 dependency-edge repair
+
+This source-side repair removes the markdown dependency edge to the
+staggered-Dirac realization gate because that gate is non-load-bearing here. The
+edge in question was a one-hop markdown link whose link text was
+`staggered_dirac_realization_gate_note_2026-05-03` and whose target was the file
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`; it previously closed the
+"Audit dependency repair links" list and created a citation-graph edge to the
+realization-gate note.
+
+That edge is **non-load-bearing**. The "Hypothesis set used" in the Source-note
+boundary lists exactly five inputs — (1) the axiom node, (2) the retained
+abstract bilinear continuity theorem, (3) the retained substep-1
+finite-Grassmann carrier, (4) the finite staggered Kawamoto-Smit exhibit
+**constructed in this note and runner**, and (5) the onsite U(1) number-density
+operator — none of which is the realization gate. The runner builds its own
+finite staggered carrier (`build_M_pure_staggered`, Parts C/D) and consumes no
+gate authority. §0 already states the broad physical realization is "a
+downstream realization-gate bridge, not a load-bearing input to this row," and
+the list header above already declared "the prior staggered-realization parent
+link has been removed"; the live markdown link contradicted that statement and
+re-introduced the edge. The repair demotes that one-hop markdown-link authority
+to a plain-text non-authority pointer (the bullet above), so the row no longer
+carries that dependency edge. No derived value, claim, or scope changes.
+
+**Status authority:** independent audit lane only. This repair does not set
+status; it only removes the citation-graph edge on the source side.

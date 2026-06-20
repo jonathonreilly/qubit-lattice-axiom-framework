@@ -10,7 +10,7 @@ from pathlib import Path
 
 NOTE_PATH = Path("docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md")
 PARENT_PATH = Path("docs/ALPHA_S_4LOOP_RUNNING_DERIVATION_PARTIAL_NOTE_2026-05-10_4loop.md")
-EXPECTED_SUMMARY = "SUMMARY: PASS=26 FAIL=0"
+EXPECTED_SUMMARY = "SUMMARY: PASS=27 FAIL=0"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -79,7 +79,15 @@ def beta_a_two_loop(a: float, n_f: int) -> float:
 def main() -> int:
     print("=== Source-boundary checks ===")
     note_text = NOTE_PATH.read_text(encoding="utf-8")
+    note_flat = " ".join(note_text.split())
     parent_text = PARENT_PATH.read_text(encoding="utf-8")
+    check(
+        "note declares canonical positive_theorem metadata and independent audit authority",
+        "**Type:** positive_theorem" in note_text
+        and "**Claim type:** positive_theorem" in note_text
+        and "**Status authority:** independent audit lane only." in note_flat
+        and "does not set or predict an audit outcome" in note_flat,
+    )
     required = [
         "universal two-loop beta-kernel",
         "This note does not derive beta_2, beta_3, MSbar counterterms, or four-loop running.",

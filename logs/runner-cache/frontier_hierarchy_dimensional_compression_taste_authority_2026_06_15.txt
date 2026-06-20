@@ -3,7 +3,7 @@ runner: scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_
 runner_sha256: 6ebb86e3d696ed7020cf3c01357f05e1513f9a289fe2df315b2e1961c982a842
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 Hierarchy dimensional-compression diagnostic

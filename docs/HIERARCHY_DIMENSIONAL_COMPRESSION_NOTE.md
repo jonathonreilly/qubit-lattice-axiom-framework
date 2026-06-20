@@ -22,6 +22,11 @@ proves the fixed-density coefficient-to-scale bridge: for a positive D=4
 density surface `rho_* = A(L) v(L)^4`, the endpoint scale ratio is
 `v(L) / v(L_ref) = (A_ref / A(L))^(1/4)`. That supplies the exponent,
 inverse/direct placement, sign, and normalization for the coefficient readout.
+The 2026-06-18 hardening makes that bridge verifier recompute the endpoint
+coefficient ratios `A_2/A_4 = 7/8` and `A_inf/A_2 = 2/sqrt(3)` directly from
+the APBC small-m coefficient formula, so this parent row no longer waits on
+the live audit-ledger status of `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
+for those endpoint ratios.
 It still does not identify the electroweak VEV with that fixed-density
 readout, select the physical order parameter, or promote this parent row.
 
@@ -291,8 +296,9 @@ Graph-visible retained one-hop dependencies for the taste-count repair:
   — retained bounded `2^4 = 16` BZ-corner/Hamming-staircase combinatorics.
 - [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
   — source-side fixed-density coefficient-to-scale bridge for exponent,
-  inverse/direct placement, sign, and `L_t = 2` normalization. This is a new
-  source proposal pending independent audit, not an audit-ratified status.
+  inverse/direct placement, sign, `L_t = 2` normalization, and locally
+  recomputed endpoint ratios. This is a new source proposal pending
+  independent audit, not an audit-ratified status.
 - [`HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md`](HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md)
   — source-side EW neutral order-parameter coordinate bridge for a supplied
   positive quartic D=4 density. This partially closes the physical
@@ -435,6 +441,11 @@ proposal_allowed_reason: "D=4 arithmetic support, a source-side fixed-density co
   density uses the retained EW `v` coordinate as its fourth-root scale. This
   leaves endpoint coefficient to physical Higgs density selection as the
   remaining open target.
+- **2026-06-18 endpoint-algebra hardening.** The D=4 bridge verifier now
+  recomputes `A_2/A_4 = 7/8` and `A_inf/A_2 = 2/sqrt(3)` inside the bridge
+  packet, removing the endpoint-note ledger-status import from this parent
+  row's source-side runner path. The physical order-parameter/readout
+  identification remains open.
 
 ## 2026-06-15 audit-unlock residual certificate
 

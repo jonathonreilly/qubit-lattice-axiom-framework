@@ -11,12 +11,27 @@ deadline_epoch: 1782006241          # 2026-06-20 21:44 EDT
 worktree: /Users/jonBridger/tp-audit-bridge-20260620
 base_commit: 9469e8251
 
-cycle_count: 4
-block_count: 4
-active_block: 04
-active_block_branch: physics-loop/single-clock-baxis-wall-block04-20260620
+cycle_count: 5
+block_count: 5
+active_block: 05
+active_block_branch: physics-loop/single-clock-baxis-wall-block05-20260620
 single_clock_target: ACHIEVED (4 blocks; ~1.5h of 12h). See HANDOFF.md.
 next_opportunity: anomaly_forces_time ABJ bridge (fanout 1105) — see OPPORTUNITY_QUEUE.md
+block05_result: >
+  CLOSED. Exercise (baxis-wall-break) reassessment of the block02 unified no_go.
+  Five exercise-surfaced routes verified (aggregate PASS=143/0, no crack, no
+  closure). Reassessment note
+  docs/SINGLE_CLOCK_BAXIS_WALL_REASSESSMENT_NOTE_2026-06-20.md + consolidated
+  runner scripts/single_clock_baxis_reassessment_2026_06_20.py (PASS=34/0).
+  Block02 no_go ADDITIVELY corrected (appended CORRECTION section, originals left
+  verbatim): C-1 N5 linear-span -> {f(Ĥ)} functional calculus (wrong algebra;
+  wall STANDS because Ĥ degenerate, room = 2^Ls−#distinct not (L_s−1)); C-2 N5
+  L_s-fold tower is the free/integrable signature, ray -> one non-integrability
+  bit; C-3 N4-label over-specified for the sole 959 consumer (reads only the
+  S₄-invariant count d_t≤1); C-4 scope hardened to A_min + four approved
+  primitives (Beth/Svenonius independence theorem, NO CRACK; N2b 6th column).
+  Verdict unchanged: B-AXIS not derivable, all residuals on emergent-dynamics
+  open gate. No new axiom/primitive. Independent audit lane sole authority.
 block04_result: >
   CLOSED. Owner/audit-lane decision packet (7 decisions) at
   docs/SINGLE_CLOCK_BAXIS_OWNER_DECISION_PACKET_2026-06-20.md: register B-AXIS

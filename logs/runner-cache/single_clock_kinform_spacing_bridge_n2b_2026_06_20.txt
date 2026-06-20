@@ -1,0 +1,68 @@
+
+========================================================================
+SECTION 1 -- derive c_t, c_s from the free Euclidean quadratic form
+========================================================================
+[PASS] bare lattice dispersion k^2-coeff is 1 on EVERY axis (spacing-free)  resid=(0, 0)
+  [Conv A measure-weighted] c_t=a_s**3*a_tau/2  c_s=a_s**3*a_tau/2  c_t/c_s=1
+  [Conv B bare hopping]     c_t=a_s**3/a_tau  c_s=a_s*a_tau  c_t/c_s=a_s**2/a_tau**2
+  [Conv C no-measure]       c_t=a_tau**(-2)  c_s=a_s**(-2)  c_t/c_s=a_s**2/a_tau**2
+[PASS] c_t/c_s spacing-dependence is CONVENTION-DEPENDENT (A gives 1, B gives (a_s/a_tau)^2)  resid=-a_s**2/a_tau**2 + 1  (=> no convention-free form<->spacing function exists)
+
+========================================================================
+SECTION 2 -- test the HOPED identity  c_t/c_s == a_tau/a_s (all conventions)
+========================================================================
+  a_tau/a_s (hoped target) = a_tau/a_s
+  would-be discharge residual [A] = (a_s - a_tau)/a_s
+  would-be discharge residual [B] = a_s**2/a_tau**2 - a_tau/a_s
+  would-be discharge residual [C] = a_s**2/a_tau**2 - a_tau/a_s
+[PASS] NO CRACK[A]: c_t/c_s != a_tau/a_s  (discharge identity absent)  resid=(a_s - a_tau)/a_s  (a FAIL here would mean N2b DISCHARGED)
+[PASS] NO CRACK[B]: c_t/c_s != a_tau/a_s  (discharge identity absent)  resid=a_s**2/a_tau**2 - a_tau/a_s  (a FAIL here would mean N2b DISCHARGED)
+[PASS] NO CRACK[C]: c_t/c_s != a_tau/a_s  (discharge identity absent)  resid=a_s**2/a_tau**2 - a_tau/a_s  (a FAIL here would mean N2b DISCHARGED)
+[PASS] Conv B/C ratio == (a_s/a_tau)^2  (NOT a_tau/a_s)  resid=0
+
+========================================================================
+SECTION 3 -- WHICH spacing relation does c_t=c_s force, per convention?
+========================================================================
+  [A] c_t=c_s solved for a_tau: []  (identity -> all a_tau allowed)
+[PASS] Conv A: c_t=c_s is a tautology -> pins NO spacing (a_tau free)  (form isotropy automatic; says nothing about a_tau)
+  [B] c_t=c_s solved for a_tau: [a_s]
+[PASS] Conv B/C: c_t=c_s implies a_tau = a_s (positive root)  (holds ONLY in conventions B/C -- itself a choice, see S4)
+[PASS] spacing conclusion (a_tau=a_s) is convention-SELECTED, not derived  (A: tautology/no constraint;  B/C: a_tau=a_s;  choice not supplied)
+
+========================================================================
+SECTION 4 -- CONVENTION ROBUSTNESS: is the bridge a THEOREM or an artifact?
+========================================================================
+[PASS] overall coupling Z leaves c_t/c_s invariant (harmless convention)  resid=0
+  c_t/c_s with free aniso weights = a_s**2*kappa_t/(a_tau**2*kappa_s)
+  c_t=c_s solvable by weights: kappa_t/kappa_s = a_tau**2/a_s**2
+[PASS] EXTRA INPUT NEEDED: c_t=c_s satisfiable at a_tau != a_s via free weights  resid=a_tau**2/a_s**2  (form isotropy does NOT force spacing equality without kappa_t=kappa_s)
+  DEMO: at a_tau=2*a_s, kappa_t/kappa_s = 4 restores c_t=c_s with a_tau != a_s
+[PASS] DEMO countermodel: isotropic form at a_tau=2*a_s (spacings unequal)  resid=0
+
+========================================================================
+SECTION 5 -- is 'kappa_t = kappa_s' itself derivable, or = the primitive?
+========================================================================
+[PASS] bridge holds in canonical convention (kappa_t=kappa_s=1) at a_tau=a_s
+[PASS] free kinetic coeffs: spatial O_h -> 2, 4D hypercubic -> 1 (matches no-go)
+
+========================================================================
+SECTION 6 -- scale_reference leg (units-only; cannot supply the ratio)
+========================================================================
+[PASS] scale_reference pins a_s = 1/M_Pl but NOT a_tau (no dimensionless content)
+[PASS] a_tau = 1/M_Pl FOLLOWS ONLY through the (un-derived) form<->spacing bridge  (conditional on Section-4 extra input kappa_t=kappa_s)
+
+========================================================================
+VERDICT
+========================================================================
+  Derived relation: c_t/c_s = (a_s/a_tau)^2  -- NOT a_tau/a_s.
+  In the CANONICAL convention (equal hopping weights kappa_t=kappa_s)
+  c_t=c_s does imply a_tau=a_s. BUT that convention is NOT supplied by the
+  kinetic-isotropy primitive (which grants only the FORM ratio and
+  explicitly disavows the spacing ratio). With the genuinely-free
+  anisotropic weights the SPATIAL_CUBIC no-go proves are unfixed, c_t=c_s
+  is satisfiable at a_tau != a_s. So the form<->spacing identity is NOT a
+  theorem from A_min + the form primitive; it needs the EXTRA input
+  kappa_t=kappa_s, which is the SAME content as c_t=c_s (circular /
+  double-counting). => N2b STAYS OPEN. Sharper no-go shipped.
+
+TOTAL: PASS=16 FAIL=0

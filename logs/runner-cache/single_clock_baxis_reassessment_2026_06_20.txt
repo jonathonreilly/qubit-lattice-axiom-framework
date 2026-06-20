@@ -1,0 +1,52 @@
+========================================================================
+Block 05 consolidated B-AXIS REASSESSMENT runner (2026-06-20)
+Re-exercises the load-bearing CORRECTED facts of the 5 verified routes.
+========================================================================
+
+[FC] R-FC-N5 -- functional-calculus reachability + H-degeneracy
+[FC] PASS: Ls=4: dim{f(H)}=#distinct eigs >> dim span{I,H}=2  | dim=16, #distinct=9 (span{I,H}=2; undercount=7)
+[FC] PASS: Ls=4: second-clock room = 2^Ls - #distinct (degeneracy room) > (Ls-1)  | room=7 vs block02 (L_s-1)=3
+[FC] PASS: Ls=4: 0 of Ls factor dirs are functions of H (all n_p ∉ {f(H)})  | reachable=0/4, min fc-resid=1.414
+[FC] PASS: Ls=4: single-mode dispersion degenerate via reflection p<->Ls-p  | distinct single-mode E=2 of 4
+[FC] PASS: Ls=6: dim{f(H)}=#distinct eigs >> dim span{I,H}=2  | dim=64, #distinct=15 (span{I,H}=2; undercount=13)
+[FC] PASS: Ls=6: second-clock room = 2^Ls - #distinct (degeneracy room) > (Ls-1)  | room=49 vs block02 (L_s-1)=5
+[FC] PASS: Ls=6: 0 of Ls factor dirs are functions of H (all n_p ∉ {f(H)})  | reachable=0/6, min fc-resid=2.828
+[FC] PASS: Ls=6: single-mode dispersion degenerate via reflection p<->Ls-p  | distinct single-mode E=2 of 6
+[FC] PASS: Ls=8: dim{f(H)}=#distinct eigs >> dim span{I,H}=2  | dim=256, #distinct=45 (span{I,H}=2; undercount=43)
+[FC] PASS: Ls=8: second-clock room = 2^Ls - #distinct (degeneracy room) > (Ls-1)  | room=211 vs block02 (L_s-1)=7
+[FC] PASS: Ls=8: 0 of Ls factor dirs are functions of H (all n_p ∉ {f(H)})  | reachable=0/8, min fc-resid=5.657
+[FC] PASS: Ls=8: single-mode dispersion degenerate via reflection p<->Ls-p  | distinct single-mode E=3 of 8
+[FC] PASS: FALSIFIER: generic NON-degenerate generator -> spectrum non-degenerate  | #distinct=16=2^4 (fully non-degenerate)
+[FC] PASS: FALSIFIER: generic non-degenerate -> every n_p = f(H) exactly (room 0)  | max fc-resid=0.00e+00 -> single clock outright
+
+[CNT] R-COUNT-N4 -- label-free count S4-invariance
+[CNT] PASS: |G_bare| (signed hyperoctahedral B4) = 384  | |G|=384 = 24 perms x 16 signs
+[CNT] PASS: every g in G_bare maps D_a -> +-D_{pi(a)} exactly (count equivariant)  | max resid over 384x4 = 0.00e+00
+[CNT] PASS: orbit of axis 0 under S4 image = {0,1,2,3} (single orbit, label-free count)  | orbit(axis0)=[0, 1, 2, 3]
+[CNT] PASS: label is genuine data: D_0 != D_1 before quotient  | ||D_0 - D_1|| = 1.414
+[CNT] PASS: count is S4-invariant: W_{0,1} carries D_0 onto D_1 exactly (label quotiented)  | ||W01 D_0 - D_1|| = 0.00e+00
+[CNT] PASS: COUNT cap d_t<=1 is axis-uniform (the only N4 content the 959 consumer reads)  | cap per axis = [1, 1, 1, 1] (uniform), so N4-as-LABEL over-specified for consumer
+
+[INT] R-DICHOTOMY-N5 -- integrability collapse under A_min-admissible interaction
+[INT] PASS: clean NN chain L=5: free mode tower {n_k} all commute with H0  | max ||[H0,n_k]|| = 6.03e-16
+[INT] PASS: V = g sum_x n_x n_{x+1} is A_min-admissible (Hermitian, [V,N]=0)  | ||V-V^dag||=0.00e+00, ||[V,N]||=0.00e+00
+[INT] PASS: interaction DESTROYS the free tower: every mode charge decommutes  | min ||[Hint,n_k]|| = 0.165 (was ~0 free)
+[INT] PASS: bilinear conserved-charge span collapses (clean NN L=5)  | free dim=9 -> interacting dim=1 (toward {I,N,H})
+[INT] PASS: tower collapse is GENERIC in g (g in {0.01,0.1,1.0}), not fine-tuned  | every tested g decommutes the free tower
+[INT] PASS: corrected N5: holds CONDITIONAL on non-integrability (one bit, not (L_s-1)-param ray)  | the L_s-fold tower is the FREE/integrable signature; generic A_min dynamics collapses it
+
+[KIN] R-KINFORM-N2b -- form<->spacing separation (exact sympy)
+[KIN] PASS: bare-dispersion k^2 coefficient is 1 on every axis (spacing-independent)  | c2_t=1, c2_s=1
+[KIN] PASS: Conv B: c_t/c_s = (a_s/a_tau)^2, NOT a_tau/a_s (hoped bridge is false)  | c_t/c_s = a_s**2/a_tau**2
+[KIN] PASS: Conv A: c_t/c_s = 1 (tautology) -- form ratio convention-DEPENDENT  | c_t/c_s = 1 (vs Conv B (a_s/a_tau)^2)
+[KIN] PASS: form<->spacing identity c_t/c_s == a_tau/a_s holds in NO convention  | false in Conv A (=1) and Conv B (=(a_s/a_tau)^2)
+[KIN] PASS: countermodel: c_t=c_s satisfiable at a_tau != a_s via unfixed weights  | at a_tau=2 a_s, kappa_t/kappa_s = 4 restores c_t=c_s (resid 0)
+[KIN] PASS: recovering a_tau=a_s requires kappa_t=kappa_s == the form primitive (circular)  | kappa_t=kappa_s => a_tau in [a_s] (= a_s); the bridge IS the primitive
+[KIN] PASS: scale_reference is units-only: pins one spacing, never the ratio a_tau/a_s  | a_s = 1/M_Pl carries no dimensionless content; a_tau=1/M_Pl needs the un-derived bridge
+[KIN] PASS: VERDICT: N2b STAYS OPEN; form primitive grants form ratio, not spacing ratio  | approved primitives do not discharge the absolute clock unit; sharper 6th N2b column
+
+========================================================================
+TOTAL: PASS=34 FAIL=0
+B_AXIS_DERIVED=false  SECOND_PHYSICAL_CLOCK_EXCLUDED=false  NEW_AXIOM_ADDED=false
+Independent audit lane is the sole status authority.
+========================================================================

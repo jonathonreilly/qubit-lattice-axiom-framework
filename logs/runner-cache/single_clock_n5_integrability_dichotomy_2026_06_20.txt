@@ -1,0 +1,114 @@
+========================================================================
+R-DICHOTOMY-N5: the L_s-fold commuting tower is the FREE-FERMION
+integrable charge-tower signature, not a generic A_min obstruction
+========================================================================
+
+########################################################################
+# L_s=3 FINITE-SIZE DEGENERACY (documented scope caveat, not a c/example)
+########################################################################
+  [PASS][L3DEGEN] 3-site periodic NN interaction = complete graph = (g/2)(N²-N)  -- ||V_ring - (g/2)(N²-N)||=0.00e+00
+  [PASS][L3DEGEN] => on L=3 ring V is number-only, so it CANNOT break the tower (finite-size, requires L_s>=4)  -- documented scope caveat; primary surfaces use L_s>=4
+
+########################################################################
+# SUPPLIED STAGGERED SURFACE: L_s=4, m=0.3
+########################################################################
+
+------------------------------------------------------------------------
+[LABEL] Ĥ = Σ_p E(p) n_p is a FREE-FERMION H; {n_p} is its charge tower
+------------------------------------------------------------------------
+  [PASS][LABEL] Ĥ is QUADRATIC: Ĥ = Σ_xy h_xy c_x† c_y (free-fermion form)  -- resid=6.16e-33
+  [PASS][LABEL] single-particle spectrum of h equals the supplied dispersion E(p)  -- max|Δ|=4.44e-16
+  [PASS][LABEL] every block02 mode charge n_p commutes with Ĥ (free tower)  -- max ||[Ĥ,n_p]||=1.81e-16
+  [PASS][LABEL] block02 mode-tower span has dimension L_s (free signature)  -- rank=4, L_s=4
+
+------------------------------------------------------------------------
+[TOWER] interaction V=g Σ n_x n_{x+1}: block02 mode tower {n_p} is destroyed
+------------------------------------------------------------------------
+  [PASS][TOWER] every block02 mode charge n_p STOPS commuting with Ĥ_int  -- min ||[Ĥ_int,n_p]||=0.185 (free value was ~0)
+  [PASS][TOWER] bilinear conserved-charge span collapses (free > interacting)  -- free bilinear-commutant dim=8 -> interacting=4
+  [PASS][TOWER] total number N still conserved under V (trivial survivor, not the tower)  -- ||[Ĥ_int,N]||=0.00e+00
+
+------------------------------------------------------------------------
+[ADMIN] V = g Σ n_x n_{x+1} is A_min-admissible local dynamics
+------------------------------------------------------------------------
+  [PASS][ADMIN] V is Hermitian (legitimate evolution generator)  -- ||V-V†||=0.00e+00
+  [PASS][ADMIN] n_x = (I - Z_x)/2 is an on-site M_2(C) operator (Quantum-supplied)  -- resid=0.00e+00
+  [PASS][ADMIN] V is number-preserving ([V,N]=0): a symmetry-respecting local term  -- ||[V,N]||=0.00e+00
+  [PASS][ADMIN] g is a dimensionless coupling (NOT scale/kinetic-isotropy/realized-state)  -- interaction strength is generic dynamical content A_min does not forbid
+  [PASS][ADMIN] tower is destroyed for ALL tested couplings (generic, not fine-tuned)  -- g in {0.01,0.1,1.0} all break the mode tower
+
+########################################################################
+# SUPPLIED STAGGERED SURFACE: L_s=5, m=0.5
+########################################################################
+
+------------------------------------------------------------------------
+[LABEL] Ĥ = Σ_p E(p) n_p is a FREE-FERMION H; {n_p} is its charge tower
+------------------------------------------------------------------------
+  [PASS][LABEL] Ĥ is QUADRATIC: Ĥ = Σ_xy h_xy c_x† c_y (free-fermion form)  -- resid=1.33e-15
+  [PASS][LABEL] single-particle spectrum of h equals the supplied dispersion E(p)  -- max|Δ|=2.22e-16
+  [PASS][LABEL] every block02 mode charge n_p commutes with Ĥ (free tower)  -- max ||[Ĥ,n_p]||=3.63e-16
+  [PASS][LABEL] block02 mode-tower span has dimension L_s (free signature)  -- rank=5, L_s=5
+
+------------------------------------------------------------------------
+[TOWER] interaction V=g Σ n_x n_{x+1}: block02 mode tower {n_p} is destroyed
+------------------------------------------------------------------------
+  [PASS][TOWER] every block02 mode charge n_p STOPS commuting with Ĥ_int  -- min ||[Ĥ_int,n_p]||=0.165 (free value was ~0)
+  [PASS][TOWER] bilinear conserved-charge span collapses (free > interacting)  -- free bilinear-commutant dim=9 -> interacting=1
+  [PASS][TOWER] total number N still conserved under V (trivial survivor, not the tower)  -- ||[Ĥ_int,N]||=0.00e+00
+
+------------------------------------------------------------------------
+[ADMIN] V = g Σ n_x n_{x+1} is A_min-admissible local dynamics
+------------------------------------------------------------------------
+  [PASS][ADMIN] V is Hermitian (legitimate evolution generator)  -- ||V-V†||=0.00e+00
+  [PASS][ADMIN] n_x = (I - Z_x)/2 is an on-site M_2(C) operator (Quantum-supplied)  -- resid=0.00e+00
+  [PASS][ADMIN] V is number-preserving ([V,N]=0): a symmetry-respecting local term  -- ||[V,N]||=0.00e+00
+  [PASS][ADMIN] g is a dimensionless coupling (NOT scale/kinetic-isotropy/realized-state)  -- interaction strength is generic dynamical content A_min does not forbid
+  [PASS][ADMIN] tower is destroyed for ALL tested couplings (generic, not fine-tuned)  -- g in {0.01,0.1,1.0} all break the mode tower
+
+########################################################################
+# LOCAL CONSERVED-CHARGE DICHOTOMY (rigorous: bounded-support span)
+########################################################################
+
+------------------------------------------------------------------------
+[LOCAL-stag] supplied staggered surface: local conserved-charge dim (L=6, kmax=3)
+------------------------------------------------------------------------
+  [PASS][LOCAL-stag] local conserved-charge span COLLAPSES under interaction  -- free local tower dim=8 -> interacting=2 (excl I)
+  [PASS][LOCAL-stag] free local tower is EXTENSIVE (>1: integrable signature)  -- free dim=8 (>1 confirms the free tower)
+
+------------------------------------------------------------------------
+[LOCAL-stag] supplied staggered surface: local conserved-charge dim (L=4, kmax=3)
+------------------------------------------------------------------------
+  [PASS][LOCAL-stag] local conserved-charge span COLLAPSES under interaction  -- free local tower dim=8 -> interacting=6 (excl I)
+  [PASS][LOCAL-stag] free local tower is EXTENSIVE (>1: integrable signature)  -- free dim=8 (>1 confirms the free tower)
+
+------------------------------------------------------------------------
+[LOCAL-nn] clean nearest-neighbour free chain (unambiguous 'local'): (L=5, kmax=3)
+------------------------------------------------------------------------
+  [PASS][LOCAL-nn] free NN chain carries an EXTENSIVE local tower (>1)  -- free local conserved-charge dim=4
+  [PASS][LOCAL-nn] generic interaction COLLAPSES the tower toward the trivial survivors  -- free=4 -> interacting=1 (excl I; survivors are I,N,H-type)
+
+########################################################################
+# HONEST STATUS
+########################################################################
+
+------------------------------------------------------------------------
+[HONEST] conditional shrinkage of N5 (NOT a closure)
+------------------------------------------------------------------------
+  [PASS][HONEST] A_min supplies NO dynamics (emergent-dynamics OPEN GATE)  -- cannot assert the emergent dynamics IS non-integrable
+  [PASS][HONEST] the (L_s-1)-param tower is the SPECIAL free/integrable surface  -- free-fermion charge tower; collapses under generic local V
+  [PASS][HONEST] corrected N5: holds CONDITIONAL on non-integrability  -- far weaker premise than a bespoke (L_s-1)-param admission ray
+  [PASS][HONEST] no new axiom / primitive / scale / selector introduced  -- V is A_min-admissible dynamics; collapse is operator-algebraic
+  [PASS][HONEST] result is realized-state-INDEPENDENT (span statement, counterfactual-safe)  -- not evaluated at a realized state; invariant over law-admissible family
+
+========================================================================
+TOTAL: PASS=37 FAIL=0
+========================================================================
+VERDICT (honest):
+  TOWER_IS_FREE_FERMION_SIGNATURE        = TRUE   (Ĥ quadratic; {n_p} = free charge tower)
+  GENERIC_LOCAL_V_COLLAPSES_TOWER        = TRUE   (local conserved-charge span drops toward {I,N,H})
+  V_IS_A_MIN_ADMISSIBLE                  = TRUE   (Hermitian, on-site M_2(C), number-preserving, no new axiom)
+  N5_CLOSED_UNCONDITIONALLY              = FALSE  (A_min supplies NO dynamics; open gate)
+  N5_CORRECTED                           = 'holds CONDITIONAL on non-integrability'
+  BLOCK02_OVERCLAIM_CORRECTED            = TRUE   (tower is the SPECIAL free surface, not a generic A_min obstruction)
+  B_AXIS_DERIVED = FALSE   SECOND_PHYSICAL_CLOCK_EXCLUDED = FALSE
+  AUDIT_LEDGER_WRITTEN = FALSE   NEW_AXIOM_ADDED = FALSE

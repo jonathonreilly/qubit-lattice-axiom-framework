@@ -1,0 +1,53 @@
+==============================================================================
+R-DEFINABILITY: Beth/Svenonius independence theorem for B-AXIS (N2b/N4/N5)
+==============================================================================
+
+------------------------------------------------------------------------
+[AUT] Section A: the automorphism group of the A_min structure 𝔄
+------------------------------------------------------------------------
+[AUT] PASS: G3 signed-exchange axis image acts TRANSITIVELY on the 4 axes (S_4)  (orbit(axis0)=[0, 1, 2, 3], |image|=24)
+[AUT] PASS: bare UNSIGNED tau<->x_1 swap is NOT a symmetry (signed W needed)  (resid=22.627)
+[AUT] PASS: T̂² = exp(-2 a_τ H) reconstructed from supplied dispersion  (resid=3.18e-17)
+[AUT] PASS: G1 tau-rescale (a_τ->c a_τ, H->H/c) leaves T̂² invariant (gauge)  (max Δ=3.47e-17)
+[AUT] PASS: G2 the L_s per-mode clocks {n_p} pairwise COMMUTE (factor structure)  (max comm resid=0.00e+00)
+[AUT] PASS: G2 factor-clock generator span has dim L_s (S_{L_s} permutes them)  (rank=3 (=L_s=3))
+
+------------------------------------------------------------------------
+[DEF] Section B: Svenonius definability -- each B-AXIS symbol
+------------------------------------------------------------------------
+[DEF] PASS: N2b: a_τ is MOVED by G1 automorphism => UNDEFINABLE from A_min  (a_τ moves; dimensionless E_p·a_τ fixed (Δ=0.00e+00))
+[DEF] PASS: N4: the time-axis LABEL is MOVED by G3 (transitive S_4) => UNDEFINABLE  (every axis is in the orbit of axis0 ([0, 1, 2, 3]))
+[DEF] PASS: N4: an explicit signed exchange W carries axis0->axis1, hop-invariant  (signed-W hop resid=0.00e+00)
+[DEF] PASS: N5: relative factor flow is NON-gauge (n_0 escapes span{I,H})  (residual=1.370 > 0)
+[DEF] PASS: N5: the preferred clock-RAY is MOVED by G2 (S_{L_s}) => UNDEFINABLE  (L_s=3 commuting independent clock-rays)
+
+------------------------------------------------------------------------
+[CRACK] Section C: does any approved primitive SHRINK Aut(𝔄) to FIX
+        a previously-free B-AXIS quantity?
+------------------------------------------------------------------------
+[CRACK] PASS: C1 scale_reference fixes SPATIAL a only; G1 tau-rescale SURVIVES  (T̂² still invariant under a_τ->c a_τ with a fixed (Δ=3.40e-17))
+[CRACK] PASS: C1 NO CRACK: fixing a_τ needs a spacing ratio a_τ/a the primitive FORBIDS  (scale_reference is units-only, no dimensionless content, no spacing ratio)
+[CRACK] PASS: C2 anisotropic c_t!=c_s form WOULD select the time axis (S_3-fixing-one)  (aniso fixes axes [0], permutes [1, 2, 3])
+[CRACK] PASS: C2 isotropic c_t=c_s form (what primitive GRANTS) has TRANSITIVE S_4 image  (iso orbit(axis0)=[0, 1, 2, 3] -> no axis fixed)
+[CRACK] PASS: C2 NO CRACK: primitive grants the SYMMETRIC form, which PRESERVES S_4  (c_t=c_s is the hypercubic case; the axis-selecting datum is c_t!=c_s, NOT supplied)
+[CRACK] PASS: C3 realized state at W-FIXED diagonal locus: exchange PRESERVED (control)  (||W-transport - profile||=4.56e-15)
+[CRACK] PASS: C3 realized state at ASYMMETRIC locus DOES break the exchange  (||W-transport - profile||=4.243 != 0)
+[CRACK] PASS: C3 the two asymmetric record loci are W-conjugate (resid 0)  (||W P_(1000) W^T - P_(0100)||=0.00e+00)
+[CRACK] PASS: C3 NO CRACK: selected axis VARIES over law-admissible loci => REGISTERED DATA  (counterfactual clause: state-dependent axis is data, not a derivation (a W-orbit of loci))
+
+------------------------------------------------------------------------
+[THM] Section D: independence theorem (Svenonius corollary)
+------------------------------------------------------------------------
+[THM] PASS: N2b a_τ UNDEFINABLE from A_min + scale_reference (G1 survives)  (tau-rescale R_{>0} is still an automorphism)
+[THM] PASS: N4 time-axis UNDEFINABLE from A_min + kinetic_isotropy (S_4 survives)  (isotropic form keeps transitive S_4)
+[THM] PASS: N5 clock-ray UNDEFINABLE from A_min + realized_state (G2 survives, state=data)  (S_{L_s} factor permutation untouched; realized axis is data)
+[THM] PASS: [SCOPE] odd-L falsifier: signed exchange NOT a symmetry on L=(3,3,3,3)  (odd-block exchange resid=no sign field)
+
+==============================================================================
+VERDICT: NO CRACK. Independence theorem ships: a_τ (N2b), the time-axis
+label (N4), and the preferred clock-ray (N5) are each moved by an
+automorphism that SURVIVES adjoining scale_reference + kinetic_isotropy +
+realized_state, hence are UNDEFINABLE from A_min + approved primitives
+(Svenonius). This is strictly stronger than route-exhaustion.
+TOTAL: PASS=24 FAIL=0
+==============================================================================

@@ -78,3 +78,27 @@ results; N2b is route-honest (joint construction built, ratio-only). N1
 ≥5-route enumeration and N7 steelman weak points are closed for B-AXIS; a later
 consolidated no-go is no longer premature. Independent audit lane is sole status
 authority.
+
+## Block 05 exercise reassessment (2026-06-20 — baxis-wall-break exercise)
+
+Five exercise-surfaced routes were genuinely verified (each its own max-rigor
+runner; aggregate **PASS=143 FAIL=0, NO CRACK, NO CLOSURE**). Reassessment note:
+`docs/SINGLE_CLOCK_BAXIS_WALL_REASSESSMENT_NOTE_2026-06-20.md`; consolidated
+runner `scripts/single_clock_baxis_reassessment_2026_06_20.py` (PASS=34/0);
+certificate `CLAIM_STATUS_CERTIFICATE_block05.md`. The block02 unified no_go was
+**additively corrected** (appended CORRECTION section; originals left verbatim).
+These routes are NOT pruned-and-done — they CORRECTED the existing walls' shape;
+do not re-walk them as fresh attacks.
+
+| route | clause | outcome | corrected fact (do not re-walk) | runner PASS/FAIL |
+|---|---|---|---|---|
+| R-FC-N5 | N5 | confirms_wall_sharper | block02's "escapes span{I,Ĥ} ⇒ independent clock" is the WRONG algebra; right test is `n_p ∉ {f(Ĥ)}` (`{Ĥ}''`, dim=#distinct eigs: 2^Ls=16/64/256 → 9/15/45). Wall STANDS only because supplied Ĥ is DEGENERATE (reflection E(p)=E(Ls−p) + energy-sum collisions); room = 2^Ls−#distinct = 7/49/211, NOT (L_s−1). Generic non-degenerate ⇒ room 0, single clock. | 50/0 |
+| R-COUNT-N4 | N4 | corrects_overclaim | the sole 959 consumer (ANOMALY_FORCES_TIME) reads only the codim-1 COUNT cap d_t≤1, which is S₄-invariant / label-free (one orbit; g∈G_bare maps D_a→±D_{π(a)} resid 0). The axis LABEL is genuine non-derivable data but OVER-SPECIFIED for the cone. N4-label-derivation still walled; N2b/N5 untouched. | 16/0 |
+| R-DICHOTOMY-N5 | N5 | shrinks_wall | the L_s-fold tower {n_p} is the FREE-FERMION conserved-charge tower (integrable signature), not a generic A_min obstruction; minimal A_min-admissible V=g Σ n_x n_{x+1} destroys it (bilinear span clean-NN 9→1). Corrected N5 holds CONDITIONAL on non-integrability — one bit, not (L_s−1)-param ray. Dynamics gate stays open. L_s=3 excluded (ring=K₃). | 37/0 |
+| R-KINFORM-N2b | N2b | confirms_wall_sharper | the form↔spacing identity c_t/c_s == a_τ/a_s is FALSE (=(a_s/a_τ)² at best, convention-dependent); kinetic_isotropy grants only the FORM ratio, never the spacing ratio; recovering a_τ=a_s needs κ_t=κ_s = the form primitive (circular). N2b stays open; sharper 6th N2b column (additive). | 16/0 |
+| R-DEFINABILITY | N2b+N4+N5 | confirms_wall_sharper | Beth/Svenonius independence theorem: a_τ, axis-label, clock-ray each undefinable from A_min + all three approved primitives. NO CRACK: kinetic_isotropy grants the isotropic c_t=c_s form (transitive S₄), the axis-selector c_t≠c_s is exactly what it does NOT grant — closes REFRAMING A1. Additive sharpening of §5.2. | 24/0 |
+
+Verdict unchanged: B-AXIS (N2b/N4/N5) not derivable from A_min + the four
+approved primitives; all residuals on the emergent-dynamics / boundary-condition
+OPEN GATE; no new axiom or primitive. Independent audit lane is sole status
+authority.

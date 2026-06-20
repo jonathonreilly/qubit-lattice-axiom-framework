@@ -65,3 +65,14 @@ gh pr create --base physics-loop/single-clock-baxis-wall-block03-20260620 \
   --title "[physics-loop] single-clock-baxis-wall block04: B-AXIS owner/audit-lane decision packet (the 959-drain unlock)" \
   --body-file docs/SINGLE_CLOCK_BAXIS_OWNER_DECISION_PACKET_2026-06-20.md
 ```
+
+## Block 05 — exercise reassessment + block02 correction (stacked on block04)  ✅ committed (see git log)
+
+```bash
+cd "/Users/jonBridger/tp-audit-bridge-20260620"
+git push -u origin physics-loop/single-clock-baxis-wall-block05-20260620
+gh pr create --base physics-loop/single-clock-baxis-wall-block04-20260620 \
+  --head physics-loop/single-clock-baxis-wall-block05-20260620 \
+  --title "[physics-loop] single-clock-baxis-wall block05: exercise reassessment + block02 no_go correction (143 PASS, no crack)" \
+  --body-file .claude/science/physics-loops/single-clock-baxis-wall/PR_BODY_block05.md
+```

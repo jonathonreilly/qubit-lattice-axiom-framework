@@ -1,0 +1,131 @@
+========================================================================
+R-FC-N5: functional-calculus correction of the block02 N5 'second clock'
+========================================================================
+
+########################################################################
+# SUPPLIED SURFACE: L_s=4 spatial modes, mass m=0.3
+########################################################################
+
+------------------------------------------------------------------------
+[SPEC] supplied Ĥ spectrum + per-eigenvalue degeneracy multiplicities
+------------------------------------------------------------------------
+  [PASS][SPEC] single-mode dispersion is degenerate via reflection p<->L_s-p (E(p)=E(L_s-p))  -- distinct single-mode E = 2 of 4 (reflection pairs collapse)
+  [PASS][SPEC] Ĥ spectrum recomputed; report distinct eigenvalues + multiplicities  -- dim=16, distinct_eigs=9, mults=[1, 2, 1, 2, 4, 2, 1, 2, 1]
+  [PASS][SPEC] dim {f(Ĥ)} (functional-calculus algebra) = #distinct eigenvalues, NOT 2  -- dim{f(Ĥ)}=9 vs dim span{I,Ĥ}=2 (the linear-span test undercounts by 7)
+  [PASS][SPEC] genuine second-clock room = (diagonal algebra dim) - (#distinct eigs), lives only in degenerate eigenspaces  -- diagonal_dim=16, fc_reachable=9, second_clock_room=7, #degenerate_eigenvalues=5
+
+------------------------------------------------------------------------
+[FC] for each mode n_p, attempt n_p = f_p(Ĥ) by Lagrange/spectral fit
+------------------------------------------------------------------------
+  [PASS][FC] n_0: ||n_0 - f_0(Ĥ)|| (functional-calculus residual)  -- resid=1.414e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_1: ||n_1 - f_1(Ĥ)|| (functional-calculus residual)  -- resid=1.414e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_2: ||n_2 - f_2(Ĥ)|| (functional-calculus residual)  -- resid=1.414e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_3: ||n_3 - f_3(Ĥ)|| (functional-calculus residual)  -- resid=1.414e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] functional-calculus dichotomy: every n_p is EITHER f(Ĥ) OR distinguishes a degenerate Ĥ-eigenspace  -- reachable(=re-clockings) = 0, not-reachable(=degenerate-room) = 4 of 4
+
+------------------------------------------------------------------------
+[CORRECT] block02 reasoning vs conclusion: linear span IS wrong algebra,
+          but supplied Ĥ is degenerate so the second-clock room is REAL
+------------------------------------------------------------------------
+  [PASS][CORRECT] block02 linear-span finding reproduced: n_0 NOT in span{I,Ĥ}  -- span{I,Ĥ} residual=0.647 (block02 read this as 'independent clock')
+  [PASS][CORRECT] supplied Ĥ is DEGENERATE: n_0 is NOT f(Ĥ) even under the correct algebra (fc residual > 0)  -- ||n_0 - f_0(Ĥ)||=1.414e+00 (>0) vs span residual 0.647; block02's CONCLUSION survives the corrected test, its REASONING (linear span) does not
+  [PASS][CORRECT] corrected clock-count: second-clock room is (diag-algebra dim - #distinct eigs), NOT (L_s-1)  -- block02 said (L_s-1)=3; corrected room dim = 7 (=16-9); of the L_s factor dirs, 0 are f(Ĥ) re-clockings and 4 escape {f(Ĥ)}
+  [PASS][CORRECT] CORRECTED N5: single clock iff Ĥ non-degenerate; supplied Ĥ IS degenerate => real second-clock room (wall stands, sharper)  -- non-degenerate => 0 room (single clock outright); supplied surface: room dim=7 in Ĥ-degenerate eigenspaces
+
+########################################################################
+# SUPPLIED SURFACE: L_s=6 spatial modes, mass m=0.2
+########################################################################
+
+------------------------------------------------------------------------
+[SPEC] supplied Ĥ spectrum + per-eigenvalue degeneracy multiplicities
+------------------------------------------------------------------------
+  [PASS][SPEC] single-mode dispersion is degenerate via reflection p<->L_s-p (E(p)=E(L_s-p))  -- distinct single-mode E = 2 of 6 (reflection pairs collapse)
+  [PASS][SPEC] Ĥ spectrum recomputed; report distinct eigenvalues + multiplicities  -- dim=64, distinct_eigs=15, mults=[1, 2, 1, 4, 8, 4, 6, 12, 6, 4, 8, 4, 1, 2, 1]
+  [PASS][SPEC] dim {f(Ĥ)} (functional-calculus algebra) = #distinct eigenvalues, NOT 2  -- dim{f(Ĥ)}=15 vs dim span{I,Ĥ}=2 (the linear-span test undercounts by 13)
+  [PASS][SPEC] genuine second-clock room = (diagonal algebra dim) - (#distinct eigs), lives only in degenerate eigenspaces  -- diagonal_dim=64, fc_reachable=15, second_clock_room=49, #degenerate_eigenvalues=11
+
+------------------------------------------------------------------------
+[FC] for each mode n_p, attempt n_p = f_p(Ĥ) by Lagrange/spectral fit
+------------------------------------------------------------------------
+  [PASS][FC] n_0: ||n_0 - f_0(Ĥ)|| (functional-calculus residual)  -- resid=2.828e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_1: ||n_1 - f_1(Ĥ)|| (functional-calculus residual)  -- resid=3.464e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_2: ||n_2 - f_2(Ĥ)|| (functional-calculus residual)  -- resid=3.464e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_3: ||n_3 - f_3(Ĥ)|| (functional-calculus residual)  -- resid=2.828e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_4: ||n_4 - f_4(Ĥ)|| (functional-calculus residual)  -- resid=3.464e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_5: ||n_5 - f_5(Ĥ)|| (functional-calculus residual)  -- resid=3.464e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] functional-calculus dichotomy: every n_p is EITHER f(Ĥ) OR distinguishes a degenerate Ĥ-eigenspace  -- reachable(=re-clockings) = 0, not-reachable(=degenerate-room) = 6 of 6
+
+------------------------------------------------------------------------
+[CORRECT] block02 reasoning vs conclusion: linear span IS wrong algebra,
+          but supplied Ĥ is degenerate so the second-clock room is REAL
+------------------------------------------------------------------------
+  [PASS][CORRECT] block02 linear-span finding reproduced: n_0 NOT in span{I,Ĥ}  -- span{I,Ĥ} residual=0.620 (block02 read this as 'independent clock')
+  [PASS][CORRECT] supplied Ĥ is DEGENERATE: n_0 is NOT f(Ĥ) even under the correct algebra (fc residual > 0)  -- ||n_0 - f_0(Ĥ)||=2.828e+00 (>0) vs span residual 0.620; block02's CONCLUSION survives the corrected test, its REASONING (linear span) does not
+  [PASS][CORRECT] corrected clock-count: second-clock room is (diag-algebra dim - #distinct eigs), NOT (L_s-1)  -- block02 said (L_s-1)=5; corrected room dim = 49 (=64-15); of the L_s factor dirs, 0 are f(Ĥ) re-clockings and 6 escape {f(Ĥ)}
+  [PASS][CORRECT] CORRECTED N5: single clock iff Ĥ non-degenerate; supplied Ĥ IS degenerate => real second-clock room (wall stands, sharper)  -- non-degenerate => 0 room (single clock outright); supplied surface: room dim=49 in Ĥ-degenerate eigenspaces
+
+########################################################################
+# SUPPLIED SURFACE: L_s=8 spatial modes, mass m=0.25
+########################################################################
+
+------------------------------------------------------------------------
+[SPEC] supplied Ĥ spectrum + per-eigenvalue degeneracy multiplicities
+------------------------------------------------------------------------
+  [PASS][SPEC] single-mode dispersion is degenerate via reflection p<->L_s-p (E(p)=E(L_s-p))  -- distinct single-mode E = 3 of 8 (reflection pairs collapse)
+  [PASS][SPEC] Ĥ spectrum recomputed; report distinct eigenvalues + multiplicities  -- dim=256, distinct_eigs=45, mults=[1, 2, 1, 4, 2, 8, 4, 4, 6, 2, 8, 12, 1, 16, 6, 2, 4, 8, 12, 1, 8, 4, 24, 4, 8, 1, 12, 8, 4, 2, 6, 16, 1, 12, 8, 2, 6, 4, 4, 8, 2, 4, 1, 2, 1]
+  [PASS][SPEC] dim {f(Ĥ)} (functional-calculus algebra) = #distinct eigenvalues, NOT 2  -- dim{f(Ĥ)}=45 vs dim span{I,Ĥ}=2 (the linear-span test undercounts by 43)
+  [PASS][SPEC] genuine second-clock room = (diagonal algebra dim) - (#distinct eigs), lives only in degenerate eigenspaces  -- diagonal_dim=256, fc_reachable=45, second_clock_room=211, #degenerate_eigenvalues=37
+
+------------------------------------------------------------------------
+[FC] for each mode n_p, attempt n_p = f_p(Ĥ) by Lagrange/spectral fit
+------------------------------------------------------------------------
+  [PASS][FC] n_0: ||n_0 - f_0(Ĥ)|| (functional-calculus residual)  -- resid=5.657e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_1: ||n_1 - f_1(Ĥ)|| (functional-calculus residual)  -- resid=6.928e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_2: ||n_2 - f_2(Ĥ)|| (functional-calculus residual)  -- resid=5.657e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_3: ||n_3 - f_3(Ĥ)|| (functional-calculus residual)  -- resid=6.928e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_4: ||n_4 - f_4(Ĥ)|| (functional-calculus residual)  -- resid=5.657e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_5: ||n_5 - f_5(Ĥ)|| (functional-calculus residual)  -- resid=6.928e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_6: ||n_6 - f_6(Ĥ)|| (functional-calculus residual)  -- resid=5.657e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] n_7: ||n_7 - f_7(Ĥ)|| (functional-calculus residual)  -- resid=6.928e+00 -> NOT f(Ĥ) (lives in a degenerate eigenspace)
+  [PASS][FC] functional-calculus dichotomy: every n_p is EITHER f(Ĥ) OR distinguishes a degenerate Ĥ-eigenspace  -- reachable(=re-clockings) = 0, not-reachable(=degenerate-room) = 8 of 8
+
+------------------------------------------------------------------------
+[CORRECT] block02 reasoning vs conclusion: linear span IS wrong algebra,
+          but supplied Ĥ is degenerate so the second-clock room is REAL
+------------------------------------------------------------------------
+  [PASS][CORRECT] block02 linear-span finding reproduced: n_0 NOT in span{I,Ĥ}  -- span{I,Ĥ} residual=0.654 (block02 read this as 'independent clock')
+  [PASS][CORRECT] supplied Ĥ is DEGENERATE: n_0 is NOT f(Ĥ) even under the correct algebra (fc residual > 0)  -- ||n_0 - f_0(Ĥ)||=5.657e+00 (>0) vs span residual 0.654; block02's CONCLUSION survives the corrected test, its REASONING (linear span) does not
+  [PASS][CORRECT] corrected clock-count: second-clock room is (diag-algebra dim - #distinct eigs), NOT (L_s-1)  -- block02 said (L_s-1)=7; corrected room dim = 211 (=256-45); of the L_s factor dirs, 0 are f(Ĥ) re-clockings and 8 escape {f(Ĥ)}
+  [PASS][CORRECT] CORRECTED N5: single clock iff Ĥ non-degenerate; supplied Ĥ IS degenerate => real second-clock room (wall stands, sharper)  -- non-degenerate => 0 room (single clock outright); supplied surface: room dim=211 in Ĥ-degenerate eigenspaces
+
+------------------------------------------------------------------------
+[GENERIC] generic NON-degenerate generator => every n_p IS f(Ĥ) (single clock)
+------------------------------------------------------------------------
+  [PASS][GENERIC] generic generator has NON-degenerate many-body spectrum  -- distinct eigs=64 of dim=64
+  [PASS][GENERIC] EVERY n_p IS f(Ĥ) on a non-degenerate spectrum => single clock, no room  -- max_p ||n_p - f_p(Ĥ)|| = 0.00e+00 -> the 'L_s factor clocks' are ALL spectral re-clockings of the ONE clock
+
+------------------------------------------------------------------------
+[FALSIFIER] a genuine second clock: two INDEPENDENT supplied operators
+------------------------------------------------------------------------
+  [PASS][FALSIFIER] ONE generator, NON-degenerate spectrum => commuting n_A IS f(Ĥ) (NO second clock)  -- distinct eigs=4 (non-degenerate), ||n_A - f(H)||=0.00e+00
+  [PASS][FALSIFIER] DEGENERATE spectrum (H_A=H_B) => n_A is NOT f(Ĥ): the genuine second-clock room  -- distinct eigs=3 (degenerate), ||n_A - f(H)||=0.707 -> second clock lives ONLY in the degenerate eigenspace
+  [PASS][FALSIFIER] => a genuine second clock needs a SECOND independent supplied transfer OR an Ĥ-degeneracy; not merely 'escapes span{I,Ĥ}'  -- linear-span escape is necessary but FAR from sufficient
+
+========================================================================
+TOTAL: PASS=50 FAIL=0
+========================================================================
+VERDICT (honest):
+  BLOCK02_LINEAR_SPAN_TEST_IS_WRONG_ALGEBRA = TRUE
+    (span{I,Ĥ} is 2-d; 'function of Ĥ' = {f(Ĥ)}, dim = #distinct eigs)
+  BLOCK02_REASONING_WRONG (linear span{I,Ĥ} is the wrong algebra) = TRUE
+    (span{I,Ĥ} is 2-d; 'function of Ĥ' = {f(Ĥ)}, dim = #distinct eigs >> 2)
+  BUT_BLOCK02_CONCLUSION_SURVIVES_THE_CORRECT_TEST = TRUE
+    (supplied many-body Ĥ is HEAVILY degenerate: 2^L_s collapses to
+     #distinct eigs; NO n_p is a function of Ĥ -- real second-clock room)
+  GENUINE_SECOND_CLOCK_ROOM = Ĥ-DEGENERATE EIGENSPACES, dim = 2^L_s - #distinct
+    (LARGER than block02's (L_s-1); reflection p<->L_s-p is only part of it)
+  CORRECTED_N5: single clock IFF Ĥ non-degenerate; on a non-degenerate
+    spectrum N5 holds with a single clock outright (falsifier leg confirms).
+    The supplied surface IS degenerate, so the N5 wall STANDS (sharper).
+  N5_STILL_NOT_DERIVED_FROM_A_MIN (degeneracy is real room) = TRUE
+  NEW_AXIOM_ADDED = FALSE

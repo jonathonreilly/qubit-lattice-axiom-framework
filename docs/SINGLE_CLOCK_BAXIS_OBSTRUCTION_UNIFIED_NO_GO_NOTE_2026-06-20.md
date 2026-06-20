@@ -771,3 +771,122 @@ no bare "retained"/"promoted" in any status line. Cited upstream statuses
 here. `proposal_allowed=false`; `bare_retained_allowed=false`;
 `audit_required_before_effective_retained=true`. The independent audit lane is the sole
 status authority.
+
+---
+
+## CORRECTION (2026-06-20, block05 exercise reassessment)
+
+**This is an ADDITIVE correction, appended — not a silent rewrite.** The original
+sections 1–13 above are left verbatim so the audit trail is honest. The
+`baxis-wall-break` exercise (packet
+`.claude/science/exercises/baxis-wall-break/`) surfaced five attack routes; each
+was verified by an independent max-rigor route author with its own runner. The
+block05 synthesis is
+`docs/SINGLE_CLOCK_BAXIS_WALL_REASSESSMENT_NOTE_2026-06-20.md`
+(consolidated runner `scripts/single_clock_baxis_reassessment_2026_06_20.py`,
+PASS=34 FAIL=0; five per-route runners aggregate PASS=143 FAIL=0). It found the
+no_go's **verdict correct (B-AXIS not derivable; no clause closes; no crack)**
+but **three overclaims in the supporting reasoning/scope** that this section
+amends. NO clause status changes; NO new axiom or primitive; A_min remains
+Lattice + Quantum + Record + the four approved primitives.
+
+### C-1. N5 algebra — §6.1, §6.2 `[GAUGE]`, Witness W-1: linear-span is the wrong test
+
+**Original claim (amended, not deleted).** §6.1(2), §6.2 `[GAUGE]`, and Witness
+W-1 argue the per-mode factor flows are "not gauge ⇒ independent second clocks"
+because their generators **escape `span{I,Ĥ}`** (resid ≈0.65), concluding a
+**`(L_s−1)`-parameter physical-clock-admission ray**.
+
+**Correction (R-FC-N5, runner `single_clock_n5_functional_calculus_one_clock_2026_06_20.py`
+PASS=50/0).** "Function of the single generator `Ĥ`" is NOT "in the 2-d linear
+span `{I,Ĥ}`"; the correct algebra is `{Ĥ}'' = {f(Ĥ)}` (spectral functions),
+of dimension = **#distinct eigenvalues of `Ĥ`** (recomputed: `2^{L_s}`=16/64/256
+collapse to 9/15/45 distinct eigs at `L_s`=4/6/8), generally ≫ 2. Escaping
+`span{I,Ĥ}` is **necessary but far from sufficient** (`Ĥ²`, `√Ĥ`, every spectral
+projector escape it yet are single-clock); the correct discriminator is
+`n_p ∉ {f(Ĥ)}`. The genuine second-clock room is the **`Ĥ`-degeneracy room**
+`2^{L_s} − #distinct` = **7/49/211**, NOT `(L_s−1)`=3/5/7. The wall STANDS only
+because the supplied many-body `Ĥ` IS degenerate (reflection `E(p)=E(L_s−p)`
+plus energy-sum collisions; every `n_p` has fc-resid >0, 0 of `L_s` reachable);
+on a non-degenerate spectrum the room is 0 and N5 holds with a single clock
+outright (falsifier leg, max resid 0). **So §6 got the right answer (live wall)
+for the wrong reason (linear span).** Replace the "escapes `span{I,Ĥ}` ⇒
+independent clock, `(L_s−1)`-param ray" wording with: *single clock iff `Ĥ`
+non-degenerate; genuine room = `Ĥ`-degeneracy room (`2^{L_s}−#distinct`)*.
+
+### C-2. N5 cause — §6.1: the `L_s`-fold tower is the integrable signature, not generic
+
+**Original claim (amended).** §6.1 anchors the N5 wall on the maximal `⊗_p`
+factorization (span dim `L_s`) as the obstruction, with the `(L_s−1)`-param ray
+as the missing supplier.
+
+**Correction (R-DICHOTOMY-N5, runner
+`single_clock_n5_integrability_dichotomy_2026_06_20.py` PASS=37/0).**
+`Ĥ = Σ_p E(p) n_p` is a **free-fermion `H`** and `{n_p}` is its **free
+conserved-charge tower** — the integrable signature, NOT a generic A_min
+obstruction. A minimal A_min-admissible local interaction `V = g Σ_x n_x n_{x+1}`
+(Hermitian, on-site `M_2(ℂ)`, number-preserving, dimensionless `g`) **destroys
+the tower** (every mode charge decommutes; bilinear conserved-charge span
+collapses 9→1 toward `{I,N,Ĥ}` on a clean NN chain, generically in `g`).
+**Corrected missing supplier:** N5 holds **conditional on non-integrability** of
+the emergent dynamics — a **one-bit generic-position premise, not an
+`(L_s−1)`-parameter admission ray** (that count is just the dimension of the FREE
+tower). The relocation-to-open-gate conclusion is unchanged; N5 stays LIVE
+(dynamics unsupplied). `L_s=3` is excluded (the ring is `K₃`, `V` is number-only).
+
+### C-3. N4 consumer-relevance — §2 table, §9 firewall: label is over-specified for the sole consumer
+
+**Original claim (amended).** §2's table lists N4 (axis LABEL) as a load-bearing
+"open (declared premise)" wall for the 959 cone, and §9's consumer firewall
+demotes every consumer to consume B-AXIS as one opaque premise (the coverage
+runner checks only a single B-AXIS marker per consumer; it does not split count
+from label).
+
+**Correction (R-COUNT-N4, runner `single_clock_count_label_free_n4_2026_06_20.py`
+PASS=16/0).** The keystone's **only** consumer
+(`docs/ANOMALY_FORCES_TIME_THEOREM.md`) reads from B-AXIS exactly the codim-1
+**COUNT** cap `d_t ≤ 1` ("one admitted clock factor"), never the axis LABEL (its
+conclusion is the pure signature `(3,1)`). The count is **S₄-invariant /
+label-free**: the four per-axis codim-1 constructions form ONE inequivalence
+class modulo S₄ (every `g ∈ G_bare` maps `D_a → ±D_{π(a)}` resid 0; single orbit
+`{0,1,2,3}`). The LABEL is genuine non-derivable data (`‖D_0−D_1‖=16` per the
+route's surface) but **over-specified for this consumer**. So **N4-as-a-LABEL
+wall shrinks for the 959 cone**; N4-LABEL-derivation stays walled (S₄-transitive,
+recomputed), N2b and N5 untouched. This sharpens — does not contradict — §5.3's
+"count-not-label firewall" (which only said the anomaly cannot *supply* the
+label; the dual is that the consumer does not *need* it).
+
+### C-4. Scope — A_min now = Lattice + Quantum + Record + the FOUR approved primitives
+
+**Original framing (amended).** Sections 1–13 phrase the obstruction as "not
+derivable from A_min = Lattice + Quantum + Record." The reassessment hardens this
+to the **four approved primitives** (`scale_reference`, `kinetic_isotropy`,
+`realized_state`) as legitimate premises.
+
+**Correction (R-DEFINABILITY PASS=24/0; R-KINFORM-N2b PASS=16/0).** A Beth/
+Svenonius independence theorem shows `a_τ` (N2b), the axis label (N4), and the
+clock-ray (N5) are each undefinable from **A_min + all three approved primitives**
+— **NO CRACK** on any primitive: `scale_reference` is spatial-units-only (the
+spacing ratio `a_τ/a` is disclaimed); `kinetic_isotropy` grants the **isotropic**
+`c_t=c_s` form whose axis image is transitive S₄ (the axis-selector `c_t≠c_s` is
+exactly what it does NOT grant — closing the REFRAMING A1 lead); `realized_state`
+gives only pointwise evaluation (the realized axis is registered data by the
+counterfactual clause). Additionally R-KINFORM-N2b adds a **6th N2b column**: the
+form↔spacing identity `c_t/c_s == a_τ/a_s` is FALSE (it is `(a_s/a_τ)²` at best,
+convention-dependent), so the primitives do not pin the absolute clock unit.
+**Sharpening of §5.2:** a one-axis-selecting (S₃) enrichment DOES exist
+(anisotropic `c_t≠c_s`); it is excluded because the approved primitive sets the
+form to the symmetric `S₄` value — strictly stronger than "no S₃ enrichment
+found."
+
+### C-5. Net disposition of this correction
+
+The no_go's **verdict and direction stand** (B-AXIS not derivable; all residuals
+on the emergent-dynamics open gate; no closure; no new axiom). What is amended is
+the **shape, size, and consumer-relevance** of three walls: N5's reasoning
+(span→`{f(Ĥ)}`) and ray size (`(L_s−1)`→degeneracy room / one non-integrability
+bit), and N4's label (over-specified for the sole consumer). No boundary flag
+flips. Full reassessment, scope, and runner index:
+`docs/SINGLE_CLOCK_BAXIS_WALL_REASSESSMENT_NOTE_2026-06-20.md`.
+`proposal_allowed=false`; `audit_required_before_effective_retained=true`; the
+independent audit lane is the sole status authority.

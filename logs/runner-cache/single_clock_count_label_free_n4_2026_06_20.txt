@@ -1,0 +1,75 @@
+==============================================================================
+R-COUNT-N4: the count d_t<=1 is LABEL-FREE -> N4-as-label is
+over-specified for the keystone's only consumer
+==============================================================================
+
+------------------------------------------------------------------------------
+[VERB] consumer (ANOMALY_FORCES_TIME) reads the count, not the label
+------------------------------------------------------------------------------
+[VERB] PASS: consumer states VERBATIM it constrains only the count d_t, 'not which axis is temporal' (non-circularity sec, item 2)  (matched: constrain only the *count* `d_t` (parity and positivity), not which ax...)
+[VERB] PASS: consumer's upper bound is the COUNT cap 'one admitted clock factor -> d_t <= 1' (proof Step 4 / upper bound)  (count-cap sentence present)
+[VERB] PASS: consumer attributes the LABEL to the B-AXIS premise but the argument itself 'never selects a direction' -> label is carried, not consumed by the count cap  (both phrases present)
+
+------------------------------------------------------------------------------
+[SURF] bare codim-1 surface + G_bare (the standing N4 LABEL wall)
+------------------------------------------------------------------------------
+[SURF] PASS: |G_bare| = 384 (signed hyperoctahedral B_4)  (|G_bare|=384)
+[SURF] PASS: axis-permutation image of G_bare = all of S_4 (the LABEL wall: the axis cannot be derived, only declared)  (|axis image|=24 (S_4=24))
+[SURF] PASS: S_4 acts TRANSITIVELY: axis 0 reaches every axis (orbit = {0,1,2,3})  (orbit of axis 0 = [0, 1, 2, 3])
+
+------------------------------------------------------------------------------
+[COUNT-INV] the count of admitted clock factors is S_4-invariant
+------------------------------------------------------------------------------
+[COUNT-INV] PASS: G_bare is EQUIVARIANT on the per-axis hop sectors: every g maps the axis-a construction D_a exactly onto the axis-(g.a) construction (+-D_{pi(a)}) -> conjugating the whole codim-1 construction by g just RELABELS the axis  (all 384 g x 4 axes equivariant)
+[COUNT-INV] PASS: all four per-axis hop sectors are unitarily equivalent (identical spectra) -> every axis-invariant count functional (incl. the admitted-clock-factor count) is axis-UNIFORM  (max spec diff = 1.26e-14)
+
+------------------------------------------------------------------------------
+[ORBIT] inequivalent codim-1 constructions modulo S_4 = 1
+------------------------------------------------------------------------------
+[ORBIT] PASS: the four per-axis codim-1 RP/transfer constructions form EXACTLY ONE inequivalence class modulo S_4 (one single orbit) -> 'd_t <= 1' is a single-orbit, LABEL-FREE statement  (#inequivalent constructions mod S_4 = 1 (class reps = [0]))
+[ORBIT] PASS: every axis label lies in the single orbit (axis 0 is S_4-equivalent to axes 1,2,3) -> the label is the orbit coordinate, not part of the orbit-invariant count  (axis 0 ~ {1,2,3} under G_bare)
+
+------------------------------------------------------------------------------
+[CAP] the cap value (one admitted clock factor) is the same per axis
+------------------------------------------------------------------------------
+[CAP] PASS: the consumer's count cap (one admitted clock factor -> d_t <= 1) takes the SAME value for every axis label -> the cap is a function of the COUNT only, the label is a free orbit coordinate  (cap per axis = {0: 1, 1: 1, 2: 1, 3: 1})
+
+------------------------------------------------------------------------------
+[SEP] label is distinct data BEFORE quotient, identical AFTER quotient
+------------------------------------------------------------------------------
+[SEP] PASS: BEFORE the S_4 quotient: axis-0 and axis-1 constructions are DISTINCT operators (the label is genuine, non-vacuous data) -> N4 is non-vacuous as a premise  (||D_0-D_1||=16.00, ||D_0+D_1||=16.00)
+[SEP] PASS: AFTER the S_4 quotient: the signed exchange W_{0,1} in G_bare carries the axis-0 construction exactly onto the axis-1 construction -> the two LABELS are the same point modulo S_4  (||W01 D_0 W01^T -/+ D_1|| min = 0.00e+00)
+[SEP] PASS: THEREFORE: label != count.  The label is real data the count quotients away; the consumer reads only the count (label-free); so the LABEL clause N4 (B-AXIS.2) is OVER-SPECIFIED *for this consumer* (it supplies information the count cap never reads)  (distinct-before + carried-after + cap-uniform all hold)
+
+------------------------------------------------------------------------------
+[SCOPE] even-extent guard; count cap survives where LABEL transport fails
+------------------------------------------------------------------------------
+[SCOPE] PASS: ODD L=(3,3,3,3): the signed exchange (LABEL transport) does NOT preserve the hop (resid ~6) -> the exact S_4 LABEL transport is EVEN-extent only (inherited scope)  (||W M W^T - M||_odd = 6.000)
+[SCOPE] PASS: HONESTY/sharper: on the ODD block the per-axis hop spectra are STILL axis-uniform -> the COUNT cap (d_t<=1) is axis-uniform even where the exact LABEL transport W fails.  The count the consumer reads is robust beyond the even-extent W-transport scope of the no_go's LABEL wall  (max odd-block spec diff = 5.21e-15)
+
+==============================================================================
+VERDICT
+==============================================================================
+- The consumer (ANOMALY_FORCES_TIME) reads ONLY the codim-1 COUNT cap
+  d_t <= 1; its non-circularity section states this verbatim.
+- The count is S_4-INVARIANT: the four per-axis codim-1 constructions
+  form exactly ONE inequivalence class modulo S_4 (one orbit), so the
+  count cap is a LABEL-FREE statement.
+- The LABEL (which axis) is genuine data BEFORE the quotient but is
+  quotiented away by S_4; it never enters the count cap.
+- CONCLUSION: the axis-LABEL clause N4 (B-AXIS.2) is OVER-SPECIFIED for
+  this consumer.  The consumer consumes only the count (already supplied,
+  S_4-invariant).  The 'A_min cannot derive the axis label' obstruction
+  does NOT block the 959 cone via this consumer -- the cone reads the
+  count, not the label.  N4-as-a-LABEL-wall is dissolved FOR THE CONSUMER;
+  N4-as-a-LABEL remains a real (non-derivable) premise only if a
+  DIRECTIONAL claim downstream actually reads the label (none in this cone).
+
+  NB this does NOT close N4 from A_min, and does NOT touch N2b or N5:
+  N5 (the count cap itself, <=1 clock factor) and N2b (the unit) remain
+  genuine walls; only the over-specified LABEL portion of N4 dissolves
+  for the count-only consumer.
+
+==============================================================================
+TOTAL: PASS=16 FAIL=0
+==============================================================================

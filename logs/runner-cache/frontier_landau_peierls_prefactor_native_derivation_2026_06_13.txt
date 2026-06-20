@@ -3,7 +3,7 @@ runner: scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.p
 runner_sha256: c72cd5d81db33b2aa76b9a24f6b1cda32b6d1e57f655e8f21f37ba8b52fd943d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.24
+elapsed_sec: 2.19
 status: ok
 ----- stdout -----
 Landau-Peierls native prefactor derivation

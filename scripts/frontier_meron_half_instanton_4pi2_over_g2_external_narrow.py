@@ -1,16 +1,24 @@
 #!/usr/bin/env python3
 """Runner for the meron / fractional-instanton half-action external gate.
 
-The note records the half-instanton action scale 4 pi^2 / g^2 only in
-regularized meron-pair / capped-core or fractional-instanton boundary
-contexts. It explicitly does not assert a standalone finite-action
-theorem for the singular unregularized single meron on R^4. The runner
-verifies the algebraic half-action identity in exact symbolic form,
-evaluates the half-action scale and exp(-S_half) at three values of
-g^2, checks that fractional Q = 1/2 is boundary/twist conditioned, and
-enforces the source-note disclaimers excluding framework substrate
-identification, hierarchy closure, scale ratio derivation, and
-alpha_LM^16 closure overclaims.
+After the 2026-06-20 source-scope repair, the note is a PURE ALGEBRAIC
+DECORATION of the source half-action core: its only
+load-bearing content is the half-action arithmetic
+S_half = (1/2) S_inst = 4 pi^2 / g^2 (given the retained-bounded
+topological-instanton BPST 8 pi^2 / g^2 normalization and a supplied
+half-charge sector |Q| = 1/2).
+The specific regulator / twist / patching / fractional-instanton SECTOR
+construction is recorded as an explicitly CONDITIONAL / open premise that
+the note does NOT supply. The runner verifies the algebraic half-action
+identity in exact symbolic form, evaluates the half-action scale and
+exp(-S_half) at three values of g^2, and -- in the SEGREGATED sector check
+(T5) -- verifies that the fractional Q = 1/2 / regulator / patching sector
+is recorded as conditional/open and NOT supplied, rather than asserted as a
+result. It explicitly does not assert a standalone finite-action theorem
+for the singular unregularized single meron on R^4. It enforces the
+source-note disclaimers excluding framework substrate identification,
+hierarchy closure, scale ratio derivation, and alpha_LM^16 closure
+overclaims. No derived value is changed by the repair.
 """
 
 from __future__ import annotations
@@ -153,41 +161,69 @@ def test_T4_exp_suppression() -> None:
     )
 
 
-def test_T5_fractional_Q_structure() -> None:
-    section("T5: fractional topological charge Q = 1/2 structure is boundary-conditioned")
+def test_T5_fractional_Q_sector_is_conditional_open_not_supplied() -> None:
+    section(
+        "T5: fractional Q = 1/2 / regulator / patching SECTOR is recorded as "
+        "CONDITIONAL/open and NOT supplied (segregated sector-claim check)"
+    )
+    # SEGREGATED CHECK. This packet was split (2026-06-20 source-scope repair) to a
+    # pure algebraic decoration of the source half-action core. The
+    # fractional Q = 1/2 / boundary / meron-pair material is therefore an
+    # OPEN PREMISE the note does not supply, NOT a positive note claim. This
+    # check verifies the conditional/open framing rather than asserting the
+    # sector as a result. It does NOT supply the regulator/twist/patching
+    # authority and does NOT assert that any meron / pair / lattice realizes
+    # the sector.
     text = NOTE.read_text(encoding="utf-8")
-    has_half_charge = (
-        "Q_meron = 1/2" in text
-        or "Q = 1/2" in text
-        or "`1/2`" in text
-        or "`Q = 1/2`" in text
+    lower = text.lower()
+    flat_lower = " ".join(text.split()).lower()
+
+    # The fractional charge value is still mentioned (as the conditional input
+    # the arithmetic is conditioned on), but only as an open premise.
+    mentions_half_charge = (
+        "q = 1/2" in lower
+        or "|q| = 1/2" in lower
+        or "`1/2`" in lower
     )
-    has_boundary_condition = (
-        "half the relevant volume" in text.lower()
-        or "hemisphere" in text.lower()
-        or "half-space" in text.lower()
-        or "twisted-boundary" in text.lower()
-        or "boundary/twist" in text.lower()
+    # The note must carry an explicit "Conditional / Open Premise (NOT
+    # Supplied)" demotion of the sector construction.
+    has_conditional_open_block = (
+        "conditional / open premise (not supplied)" in lower
+        or ("conditional / open" in lower and "not supplied" in lower)
     )
-    has_pair_sums_to_one = (
-        "sum to integer" in text.lower()
-        or "two such half-units" in text.lower()
-        or "meron pair" in text.lower()
+    # The sector / regulator / patching construction must be named as the OPEN
+    # GATE that this note does not close, not as a discharged boundary.
+    sector_is_open_gate = (
+        "the **open gate** this note does not close" in text
+        or "regulator/twist/patching construction is the **open gate**" in text
+        or ("open gate" in lower and "not close" in lower)
+    )
+    # The note must explicitly state it does NOT supply the sector.
+    does_not_supply_sector = (
+        "does **not** supply" in text
+        or "is not supplied" in lower
+        or "not provided by this note" in lower
+        or "does not supply the sector" in lower
     )
     check(
-        "note states fractional topological charge Q = 1/2",
-        has_half_charge,
-        "Q = 1/2 stated explicitly",
+        "fractional Q = 1/2 mentioned only as the conditional input",
+        mentions_half_charge,
+        "Q = 1/2 appears as the supplied/conditional sector value",
     )
     check(
-        "note conditions Q = 1/2 on boundary/twist/half-volume data",
-        has_boundary_condition,
-        "boundary, twist, hemisphere, or half-volume convention recorded",
+        "note carries an explicit Conditional / Open Premise (NOT Supplied) block",
+        has_conditional_open_block,
+        "sector construction demoted to an open premise, not a note claim",
     )
     check(
-        "note records that two merons (a pair) sum to integer Q = 1",
-        has_pair_sums_to_one,
-        "meron pair / sum to integer convention recorded",
+        "regulator/twist/patching sector is named as the OPEN GATE, not discharged",
+        sector_is_open_gate,
+        "sector construction recorded as the open gate this note does not close",
+    )
+    check(
+        "note explicitly does NOT supply the sector construction",
+        does_not_supply_sector,
+        "regulator/twist/patching sector authority explicitly not provided here",
     )
 
 
@@ -433,7 +469,7 @@ def main() -> int:
     test_T2_half_action_identity()
     test_T3_numerical_meron_action_values()
     test_T4_exp_suppression()
-    test_T5_fractional_Q_structure()
+    test_T5_fractional_Q_sector_is_conditional_open_not_supplied()
     test_T6_singular_meron_boundary()
     test_T7_lattice_realization_references()
     test_T8_open_gate_declaration()

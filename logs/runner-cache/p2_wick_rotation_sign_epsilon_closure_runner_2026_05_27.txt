@@ -1,21 +1,33 @@
 ===== runner cache v1 =====
 runner: scripts/p2_wick_rotation_sign_epsilon_closure_runner_2026_05_27.py
-runner_sha256: 63bde96646e21526fd34c8fde82dd6a2a0aff39477bc99ee3a22c09a179b6195
+runner_sha256: 49943438ad3b1f6ceca187e8d4f01a2000a1b0c07ed94916292c968edb96d844
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27
 Goal: sympy verification of the composition (C-Ext)+(C-Sc)+(C-Aft)+(C-RP)
-      + (P-OS) → ε = -1 (Lorentzian Cl(3, 1) on reconstructed-Wightman side)
+      + finite spectral transfer bridge → ε = -1
+      (Lorentzian Cl(3, 1) on the reconstructed real-time side)
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
 Part 1: (W1) Euclidean Z^4 lattice phases produce Cl(4, 0) cell
 ----------------------------------------------------------------------------------------
+  [PASS (A)] (W1) Euclidean E_1^2 = +I_8
+  [PASS (A)] (W1) Euclidean E_2^2 = +I_8
+  [PASS (A)] (W1) Euclidean E_3^2 = +I_8
+  [PASS (A)] (W1) Euclidean E_4^2 = +I_8
+  [PASS (A)] (W1) Euclidean {E_1, E_2} = 0
+  [PASS (A)] (W1) Euclidean {E_1, E_3} = 0
+  [PASS (A)] (W1) Euclidean {E_1, E_4} = 0
+  [PASS (A)] (W1) Euclidean {E_2, E_3} = 0
+  [PASS (A)] (W1) Euclidean {E_2, E_4} = 0
+  [PASS (A)] (W1) Euclidean {E_3, E_4} = 0
+  [PASS (A)] (W1) Euclidean Cl(4, 0) cell has 16 independent monomials  (direct 8x8 real matrix check, no table import)
   [PASS (A)] (W1) Γ_1^2 = +I_4
   [PASS (A)] (W1) Γ_2^2 = +I_4
   [PASS (A)] (W1) Γ_3^2 = +I_4
@@ -28,7 +40,7 @@ Part 1: (W1) Euclidean Z^4 lattice phases produce Cl(4, 0) cell
   [PASS (A)] (W1->W2 bridge) {Γ_4^(L), Γ_3} = 0
 
 ----------------------------------------------------------------------------------------
-Part 2: (W2.a) Spectral-expansion Wick-rotation correspondence
+Part 2: (W2.a) Finite spectral transfer-to-unitary bridge
 ----------------------------------------------------------------------------------------
   [PASS (A)] (W2.a) λ_1 = 1/2 > 0
   [PASS (A)] (W2.a) λ_2 = 3/5 > 0
@@ -65,31 +77,32 @@ Part 3: (W2.b) Lorentzian Cl(3, 1) anticommutation
 Part 4: (W2 contradiction) Cl(4, 0) on R^4 gives contraction semigroup
 ----------------------------------------------------------------------------------------
   [PASS (A)] (W2-contradiction) Contraction semigroup |exp(-t E_1)|^2 = exp(-2 t E_1) ≠ 1  (ε = +1 (Cl(4, 0)) gives a contraction semigroup, not unitary)
+  [PASS (A)] (W2-contradiction) Contraction sample has norm strictly below 1  (|exp(-E_1)|^2 = 1/4)
   [PASS (A)] (W2-contradiction) ε = +1 incompatible with (C-Sc) unitary one-parameter group  (contraction semigroup |·| < 1 vs unitary group |·| = 1)
 
 ----------------------------------------------------------------------------------------
 Part 5: (W3) Side-by-side ε = ±1 selection on reconstructed side
 ----------------------------------------------------------------------------------------
   [PASS (A)] (W3) Lorentzian Cl(3, 1) on R^4: γ_4^2 = -I_4 forces ε = -1
-  [PASS (A)] (W3) Cl(3, 1) on R^4 acts faithfully (all 16 monomials lin. indep.)  (follows from (C-Ext) §5.3 + (C-CL31))
-  [PASS (A)] (W3) ε = -1 selected by composition (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) + (P-OS)  (bounded closure of P2 binary sign question)
+  [PASS (A)] (W3) Cl(3, 1) on R^4 acts faithfully (all 16 monomials linearly independent)  (direct 4x4 real matrix check, no table import)
+  [PASS (A)] (W3) ε = -1 selected by composition (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) plus finite spectral bridge  (bounded closure of P2 binary sign question)
 
 ----------------------------------------------------------------------------------------
 Part 6: Composition — load-bearing companion file existence
 ----------------------------------------------------------------------------------------
-  [PASS (A)] Composition (C-Ext) present at docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md  (/private/tmp/cl3-review-open-20260527-hnkyam/docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md)
-  [PASS (A)] Composition (C-Sc) present at docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md  (/private/tmp/cl3-review-open-20260527-hnkyam/docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
-  [PASS (A)] Composition (C-Aft) present at docs/ANOMALY_FORCES_TIME_THEOREM.md  (/private/tmp/cl3-review-open-20260527-hnkyam/docs/ANOMALY_FORCES_TIME_THEOREM.md)
-  [PASS (A)] Composition (C-RP) present at docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md  (/private/tmp/cl3-review-open-20260527-hnkyam/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
-  [PASS (A)] Composition (C-Ext-runner) present at scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py  (/private/tmp/cl3-review-open-20260527-hnkyam/scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py)
-  [PASS (A)] (P-OS) Wick-rotation reference present inline in (C-Sc) text  (text contains 'Wick-rotation' + 'Euclidean' + 'Lorentzian')
-  [PASS (A)] Self-existence: P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md  (/private/tmp/cl3-review-open-20260527-hnkyam/docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md)
+  [PASS (A)] Composition (C-Ext) present at docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md  (docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md)
+  [PASS (A)] Composition (C-Sc) present at docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md  (docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md)
+  [PASS (A)] Composition (C-Aft) present at docs/ANOMALY_FORCES_TIME_THEOREM.md  (docs/ANOMALY_FORCES_TIME_THEOREM.md)
+  [PASS (A)] Composition (C-RP) present at docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md  (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md)
+  [PASS (A)] Composition (C-Ext-runner) present at scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py  (scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py)
+  [PASS (A)] (P2 bridge) current C-Sc finite transfer-to-unitary bridge present  (checks R-STONE/RP transfer, U(t), and T^n = U(-inτ))
+  [PASS (A)] Self-existence: P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md  (docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md)
 
 ========================================================================================
-TOTAL: PASS=48 FAIL=0
+TOTAL: PASS=60 FAIL=0
 VERDICT: bounded P2 sign-`ε` closure narrow theorem verified;
-         (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) + (P-OS) → ε = -1
-         (Lorentzian Cl(3, 1) on reconstructed-Wightman side).
+         (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) plus finite spectral bridge → ε = -1
+         (Lorentzian Cl(3, 1) on the reconstructed real-time side).
 ========================================================================================
 
 ----- stderr -----

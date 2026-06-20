@@ -12,15 +12,15 @@ companions:
   (C-Aft) ANOMALY_FORCES_TIME_THEOREM
   (C-RP)  AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29
 
-plus the (P-OS) Osterwalder-Schrader Wick-rotation correspondence
-already used inline by (C-Sc) Step 1 lines 261-266.
+plus the finite-dimensional transfer-to-unitary spectral bridge now
+recorded in (C-Sc)/(R-STONE).
 
 The script verifies, at exact rational precision via sympy:
 
   (1) (W1) Z^4 lattice phases η_μ(x)^2 = +1 for μ = 1, 2, 3, 4 produce
       a real-Clifford-algebra extension of Cl(3, 0) by a generator
-      squaring to +I, i.e., the (4, 0) Cartan-Bott cell.
-  (2) (W2.a) Spectral-expansion Wick rotation: for a positive Hermitian
+      squaring to +I, i.e., the (4, 0) sign cell.
+  (2) (W2.a) Finite spectral transfer bridge: for a positive Hermitian
       transfer matrix T with eigenvalues λ_k > 0, the analytically-
       continued group U(t) = Σ_k exp(-i t E_k) |k><k| is unitary for
       every real t, with E_k = -(1/a_τ) log(λ_k).
@@ -40,18 +40,20 @@ The script verifies, at exact rational precision via sympy:
 
 Companion role: not a new claim row, not a new source note status
 promotion. Provides audit-friendly evidence that the bounded
-composition (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) + (P-OS) → ε = -1
+composition (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) plus the finite spectral
+transfer bridge → ε = -1
 holds at exact symbolic precision.
 """
 
 from __future__ import annotations
 
+from itertools import combinations
 from pathlib import Path
 import sys
 
 try:
     import sympy
-    from sympy import Matrix, Rational, eye, zeros, simplify, exp, I, Symbol, log, sqrt
+    from sympy import Matrix, Rational, eye, zeros, simplify, exp, I, Symbol, log
 except ImportError:
     print("FAIL: sympy required for exact algebra")
     sys.exit(1)
@@ -108,12 +110,33 @@ def kron(A: Matrix, B: Matrix) -> Matrix:
     return out
 
 
+def kron_many(*matrices: Matrix) -> Matrix:
+    out = matrices[0]
+    for matrix in matrices[1:]:
+        out = kron(out, matrix)
+    return out
+
+
+def clifford_monomial_rank(generators: list[Matrix]) -> int:
+    """Rank of the 2^n ordered Clifford monomials in the ambient matrix space."""
+    dim = generators[0].rows
+    columns = []
+    for degree in range(len(generators) + 1):
+        for indexes in combinations(range(len(generators)), degree):
+            monomial = eye(dim)
+            for index in indexes:
+                monomial = monomial * generators[index]
+            columns.append(Matrix([monomial[i, j] for i in range(dim) for j in range(dim)]))
+    return Matrix.hstack(*columns).rank()
+
+
 def main() -> int:
     print("=" * 88)
     print("Audit companion (exact-symbolic) for")
     print("P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27")
     print("Goal: sympy verification of the composition (C-Ext)+(C-Sc)+(C-Aft)+(C-RP)")
-    print("      + (P-OS) → ε = -1 (Lorentzian Cl(3, 1) on reconstructed-Wightman side)")
+    print("      + finite spectral transfer bridge → ε = -1")
+    print("      (Lorentzian Cl(3, 1) on the reconstructed real-time side)")
     print("=" * 88)
 
     # =========================================================================
@@ -122,47 +145,39 @@ def main() -> int:
     # The four staggered-Dirac lattice phases satisfy η_μ(x)^2 = +1 for
     # μ = 1, 2, 3, 4 and anticommute pairwise across distinct directions
     # (after the Kawamoto-Smit staggered-phase mapping to spinor sectors).
-    # We construct explicit 4x4 real matrices realizing the Cl(4, 0)
-    # extension of the three Cl(3, 0) generators by a fourth generator
-    # squaring to +I_4.
-    #
-    # Same first three generators as in (C-Ext) §5.3 / §5.2 to facilitate
-    # side-by-side (W3) comparison.
+    # We construct both reachable sign cells directly rather than importing
+    # the n=4 Cartan-Bott table: an 8x8 real representation of Cl(4, 0)
+    # and a 4x4 real representation of Cl(3, 1).
 
     I2 = eye(2)
     I4 = eye(4)
+    I8 = eye(8)
     sigma_x = Matrix([[0, 1], [1, 0]])
     sigma_z = Matrix([[1, 0], [0, -1]])
     eps_mat = Matrix([[0, -1], [1, 0]])  # iσ_y as a real matrix (squares to -I_2)
 
-    # Standard real Majorana basis for Cl(3, 1) ≅ M_4(R):
-    # Take 3 spatial generators squaring to +I_4 and a fourth time-like
-    # generator squaring to -I_4, all real 4x4, mutually anticommuting.
-    #
-    # Construction (verified below):
-    #   Γ_1 = σ_x ⊗ I_2     (squares to +I_4)
-    #   Γ_2 = σ_z ⊗ I_2     (squares to +I_4)
-    #   Γ_3 = ε   ⊗ σ_x     (squares to +I_4 because ε^2 = -I_2 and σ_x^2 = I_2,
-    #                        so (ε ⊗ σ_x)^2 = ε^2 ⊗ σ_x^2 = -I_2 ⊗ I_2 = -I_4)
-    # No good — Γ_3 above squares to -I_4. Need a Γ_3 with square +I_4
-    # anticommuting with Γ_1 = σ_x ⊗ I_2 and Γ_2 = σ_z ⊗ I_2.
-    #
-    # In left factor, any matrix M anticommutes with σ_x and σ_z iff M
-    # anticommutes with both. The only 2x2 matrix anticommuting with both
-    # σ_x and σ_z (up to scalar) is σ_y = i ε, which is imaginary.
-    # So no REAL Γ_3 anticommutes with both σ_x ⊗ I and σ_z ⊗ I.
-    #
-    # This is the algebraic obstruction: Cl(2, 0) on R^2 is fine (two
-    # anticommuting reals squaring to +I), but Cl(3, 0) does NOT embed
-    # faithfully in M_2(R) — it's M_2(C). On R^4 we need a more
-    # symmetric tensor structure.
-    #
-    # Use the standard chiral Majorana basis for Cl(3, 1):
-    #   γ_0 = ε ⊗ I_2        (squares to -I_4 → time-like, ε = -1)
-    #   γ_1 = σ_x ⊗ σ_x       (squares to +I_4)
-    #   γ_2 = σ_x ⊗ σ_z       (squares to +I_4)
-    #   γ_3 = σ_z ⊗ I_2       (squares to +I_4)
-    # Verify all anticommutators below.
+    Gamma_1_euclid = kron_many(sigma_x, I2, I2)
+    Gamma_2_euclid = kron_many(sigma_z, sigma_x, I2)
+    Gamma_3_euclid = kron_many(sigma_z, sigma_z, sigma_x)
+    Gamma_4_euclid = kron_many(sigma_z, sigma_z, sigma_z)
+    gamma_euclid = [Gamma_1_euclid, Gamma_2_euclid, Gamma_3_euclid, Gamma_4_euclid]
+
+    for i, generator in enumerate(gamma_euclid, start=1):
+        check(f"(W1) Euclidean E_{i}^2 = +I_8", mat_eq(generator * generator, I8))
+    for i in range(4):
+        for j in range(i + 1, 4):
+            check(
+                f"(W1) Euclidean {{E_{i+1}, E_{j+1}}} = 0",
+                mat_zero(gamma_euclid[i] * gamma_euclid[j] + gamma_euclid[j] * gamma_euclid[i]),
+            )
+    check(
+        "(W1) Euclidean Cl(4, 0) cell has 16 independent monomials",
+        clifford_monomial_rank(gamma_euclid) == 16,
+        detail="direct 8x8 real matrix check, no table import",
+    )
+
+    # Standard real Majorana basis for Cl(3, 1): three spatial generators
+    # square to +I_4 and the fourth time-like generator squares to -I_4.
     Gamma_1 = kron(sigma_x, sigma_x)        # squares to +I_4
     Gamma_2 = kron(sigma_x, sigma_z)        # squares to +I_4
     Gamma_3 = kron(sigma_z, I2)             # squares to +I_4
@@ -206,7 +221,7 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 2: (W2.a) Spectral-expansion Wick-rotation correspondence")
+    section("Part 2: (W2.a) Finite spectral transfer-to-unitary bridge")
     # =========================================================================
     # Given a positive Hermitian 4x4 transfer matrix T = diag(λ_1, ..., λ_4)
     # with λ_k > 0, the analytic continuation U(t) = exp(-itH) with
@@ -237,23 +252,29 @@ def main() -> int:
 
     # Unitarity of U(t): |exp(-i t E_k)|^2 = 1 for all real t and real E_k.
     # Symbolically, exp(-i t E) * exp(+i t E) = exp(0) = 1.
+    unitary_mode_checks = []
     for k, Ek in enumerate(energies):
         product = exp(-I * t * Ek) * exp(I * t * Ek)
         product_simplified = simplify(product)
+        unitary_mode_ok = product_simplified == 1
+        unitary_mode_checks.append(unitary_mode_ok)
         check(
             f"(W2.a) |exp(-i t E_{k+1})|^2 = 1 (unitarity of U(t) on eigenmode {k+1})",
-            product_simplified == 1,
+            unitary_mode_ok,
             detail=f"exp(-i t E_{k+1}) * exp(+i t E_{k+1}) = {product_simplified}",
         )
 
     # Group property: U(s) * U(t) = U(s+t) on each eigenmode.
     s = Symbol("s", real=True)
+    group_property_checks = []
     for k, Ek in enumerate(energies):
         lhs = exp(-I * s * Ek) * exp(-I * t * Ek)
         rhs = exp(-I * (s + t) * Ek)
+        group_ok = simplify(lhs - rhs) == 0
+        group_property_checks.append(group_ok)
         check(
             f"(W2.a) U(s) U(t) = U(s+t) on eigenmode {k+1}",
-            simplify(lhs - rhs) == 0,
+            group_ok,
         )
 
     # =========================================================================
@@ -297,17 +318,28 @@ def main() -> int:
     # sympy `simplify` may write the value as exp(-2*t*E1) or another
     # equivalent form; we check the algebraic identity exp(a)*exp(a) = exp(2a).
     expected_form = exp(2 * (-t * E1))
+    contraction_formula_ok = simplify(contraction_norm_sq_simplified - expected_form) == 0
     check(
         "(W2-contradiction) Contraction semigroup |exp(-t E_1)|^2 = exp(-2 t E_1) ≠ 1",
-        simplify(contraction_norm_sq_simplified - expected_form) == 0,
+        contraction_formula_ok,
         detail="ε = +1 (Cl(4, 0)) gives a contraction semigroup, not unitary",
+    )
+    contraction_sample = simplify(contraction_norm_sq_simplified.subs({t: 1, a_tau: 1}))
+    contraction_strict = bool(contraction_sample < 1)
+    check(
+        "(W2-contradiction) Contraction sample has norm strictly below 1",
+        contraction_strict,
+        detail=f"|exp(-E_1)|^2 = {contraction_sample}",
     )
 
     # Equivalently: ε = +1 is incompatible with the (C-Sc) unitarity output.
     # Only ε = -1 (Lorentzian Cl(3, 1)) supports unitary one-parameter group.
     check(
         "(W2-contradiction) ε = +1 incompatible with (C-Sc) unitary one-parameter group",
-        True,
+        contraction_formula_ok
+        and contraction_strict
+        and all(unitary_mode_checks)
+        and all(group_property_checks),
         detail="contraction semigroup |·| < 1 vs unitary group |·| = 1",
     )
 
@@ -328,20 +360,24 @@ def main() -> int:
     # The factor of i is precisely the algebraic content of "time generator
     # squares to -1".
 
+    lorentz_time_square_ok = mat_eq(Gamma_4_lorentz * Gamma_4_lorentz, -I4)
+    lorentz_rank = clifford_monomial_rank(gamma)
     check(
         "(W3) Lorentzian Cl(3, 1) on R^4: γ_4^2 = -I_4 forces ε = -1",
-        mat_eq(Gamma_4_lorentz * Gamma_4_lorentz, -I4),
+        lorentz_time_square_ok,
     )
     check(
-        "(W3) Cl(3, 1) on R^4 acts faithfully (all 16 monomials lin. indep.)",
-        # Quick check via dimension: span of the 16 standard monomials should
-        # have rank 16 in M_4(R) which is 16-dimensional.
-        True,
-        detail="follows from (C-Ext) §5.3 + (C-CL31)",
+        "(W3) Cl(3, 1) on R^4 acts faithfully (all 16 monomials linearly independent)",
+        lorentz_rank == 16,
+        detail="direct 4x4 real matrix check, no table import",
     )
     check(
-        "(W3) ε = -1 selected by composition (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) + (P-OS)",
-        True,
+        "(W3) ε = -1 selected by composition (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) plus finite spectral bridge",
+        lorentz_time_square_ok
+        and lorentz_rank == 16
+        and contraction_strict
+        and all(unitary_mode_checks)
+        and all(group_property_checks),
         detail="bounded closure of P2 binary sign question",
     )
 
@@ -364,25 +400,28 @@ def main() -> int:
         check(
             f"Composition {label} present at {relpath}",
             exists,
-            detail=str(full_path) if exists else "MISSING",
+            detail=relpath if exists else "MISSING",
         )
 
-    # Verify the (C-Sc) inline Wick-rotation reference (lines 261-266)
+    # Verify the current (C-Sc) finite transfer-to-unitary bridge.  Earlier
+    # versions named this as an inline Wick-rotation paragraph; current main
+    # routes it through R-STONE/R-RP2/R-SC2 text instead.
     c_sc_path = ROOT / "docs" / "AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md"
     if c_sc_path.exists():
         text = c_sc_path.read_text()
-        contains_wick = (
-            "Wick-rotation" in text
-            and "Euclidean" in text
-            and "Lorentzian" in text
+        contains_transfer_unitary_bridge = (
+            "R-STONE" in text
+            and "positive Hermitian blocked transfer" in text
+            and "U(t) = exp(-itH)" in text
+            and "T^n = U(-inτ)" in text
         )
         check(
-            "(P-OS) Wick-rotation reference present inline in (C-Sc) text",
-            contains_wick,
-            detail="text contains 'Wick-rotation' + 'Euclidean' + 'Lorentzian'",
+            "(P2 bridge) current C-Sc finite transfer-to-unitary bridge present",
+            contains_transfer_unitary_bridge,
+            detail="checks R-STONE/RP transfer, U(t), and T^n = U(-inτ)",
         )
     else:
-        check("(P-OS) Wick-rotation reference present inline in (C-Sc) text",
+        check("(P2 bridge) current C-Sc finite transfer-to-unitary bridge present",
               False, detail="(C-Sc) note missing — cannot verify")
 
     # Verify own note exists
@@ -390,7 +429,7 @@ def main() -> int:
     check(
         f"Self-existence: {NOTE_PATH.name}",
         self_exists,
-        detail=str(NOTE_PATH),
+        detail=str(NOTE_PATH.relative_to(ROOT)),
     )
 
     # =========================================================================
@@ -399,8 +438,8 @@ def main() -> int:
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print("VERDICT: bounded P2 sign-`ε` closure narrow theorem verified;")
-        print("         (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) + (P-OS) → ε = -1")
-        print("         (Lorentzian Cl(3, 1) on reconstructed-Wightman side).")
+        print("         (C-Ext) + (C-Sc) + (C-Aft) + (C-RP) plus finite spectral bridge → ε = -1")
+        print("         (Lorentzian Cl(3, 1) on the reconstructed real-time side).")
     else:
         print("VERDICT: FAIL — composition step did not verify symbolically.")
     print("=" * 88)

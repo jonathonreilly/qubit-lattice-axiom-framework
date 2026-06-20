@@ -10,7 +10,7 @@ new axiom.
 load-bearing authority for this bounded core.
 **Primary runner:** [`scripts/poisson_self_field_supplied_branch_core_2026_06_18.py`](../scripts/poisson_self_field_supplied_branch_core_2026_06_18.py)
 **Runner cache:** [`logs/runner-cache/poisson_self_field_supplied_branch_core_2026_06_18.txt`](../logs/runner-cache/poisson_self_field_supplied_branch_core_2026_06_18.txt)
-**Computation source:** [`scripts/poisson_self_field.py`](../scripts/poisson_self_field.py)
+**Helper runners (audit packet must include):** [`scripts/poisson_self_field.py`](../scripts/poisson_self_field.py) — SHA-pinned cache [`logs/runner-cache/poisson_self_field.txt`](../logs/runner-cache/poisson_self_field.txt). The primary runner dynamically loads this helper via `importlib.util.spec_from_file_location("poisson_self_field", scripts/poisson_self_field.py)` (see `load_parent()`), so the load-bearing computation lives here. The primary runner calls the helper's `grow`, `_make_poisson_field` (which internally calls `_solve_poisson_2d`), `_prop_beam`, `_cz`, and `_dp`, plus the constants `H, K, NL, PW, MASS_Z, S, FAMILIES`. This helper source plus its cache must be in the restricted audit packet for the load-bearing calls to be verifiable.
 
 ## Authority disclaimer
 
@@ -103,3 +103,32 @@ consequences follow?" Broader gravity derivation questions remain open.
 
 This split adds no repo-wide axiom and no new physical postulate. It is a
 source-boundary repair around an already supplied numerical branch.
+
+## Repair Log
+
+### 2026-06-20 — runner_artifact_issue repair
+
+Included the `scripts/poisson_self_field.py` helper source plus its SHA-pinned
+cache excerpt (load-bearing functions `grow`, `_make_poisson_field` →
+`_solve_poisson_2d`, `_prop_beam`, `_cz`, `_dp`, and the supplied constants
+`H, K, NL, PW, MASS_Z, S, FAMILIES`) in the restricted packet, addressing the
+re-audit `runner_artifact_issue` ("include scripts/poisson_self_field.py in
+the restricted packet and re-audit the primary runner's load-bearing calls").
+The "Helper runners (audit packet must include)" reference above now names the
+helper source and its SHA-pinned cache so the audit packet builder ships them.
+No derived value changed — the primary runner cache still reports
+`SUMMARY: PASS=18 FAIL=0`, and the helper cache still reports the same residual
+budget, TOWARD shifts, `F~M` slopes, Born ratio, and `s=0` null.
+
+The primary runner loads the helper via
+`importlib.util.spec_from_file_location` (a dynamic load inside
+`load_parent()`), not via `from scripts import poisson_self_field`. The
+import-form parser fix landed in PR #4424 targets the `from scripts import X`
+static form, so it does **not** auto-populate `helper_runner_paths` for this
+dynamic load. The audit packet must therefore include this helper via the
+note-side reference above (the same packaging convention used by other notes
+whose helpers are loaded dynamically).
+
+Status authority: independent audit lane only. This repair sets no
+`audit_status`, `effective_status`, ledger tag, or retained status; it is the
+exact audit-named packaging repair and nothing more.

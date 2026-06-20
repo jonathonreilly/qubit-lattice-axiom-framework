@@ -19,10 +19,16 @@ ledger, queue, or publication-status surfaces.
 audit status of any dependency or parent row. The independent audit lane owns
 status.
 
+**Cycle-edge hygiene (2026-06-18):** the parent claim id above is
+context-only trace metadata, not a load-bearing dependency of this obstruction.
+This note proves only the source-side obstruction below from its own cited
+current-surface inputs and does not consume the parent determinant theorem as a
+premise.
+
 ## Purpose
 
-The latest audit review of
-[`KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md`](KOIDE_Q_REDUCED_OBSERVABLE_RESTRICTION_THEOREM_2026-04-22.md)
+The latest audit review of the parent reduced-observable restriction row
+(`koide_q_reduced_observable_restriction_theorem_2026-04-22`, context only)
 accepts the determinant algebra on the normalized two-slot reduced carrier as
 support, but does not retain the physical bridge because the packet does not
 derive:

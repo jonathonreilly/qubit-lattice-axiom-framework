@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_higgs_mass_hierarchy_correction.py
+runner_sha256: c888ab29a97fd80cbb64c73919262a5807ec044659ad3c67f7a915dac6a60d70
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+==============================================================================
+HIGGS HIERARCHY-CORRECTION NEGATIVE VERIFIER
+==============================================================================
+u0 = 0.877681381199
+L_t=2 |lambda_hop|^2 = 4.000000000000
+L_t=4 |lambda_hop|^2 = 3.500000000000
+A4/A2 = 1.142857142857
+m_H(L_t=2) = 140.267303 GeV
+m_H(L_t=4) = 149.952054 GeV
+false first-power branch = 122.733890 GeV
+
+[PASS] note exists -- docs/HIGGS_MASS_HIERARCHY_CORRECTION_NOTE.md
+[PASS] L_t=2 eigenvalue sum is 4
+[PASS] L_t=4 eigenvalue sum is 7/2
+[PASS] eigenvalue-squared ratio is 7/8
+[PASS] L_t=2 curvature is 1/(4 u0^2)
+[PASS] L_t=4 curvature is 2/(7 u0^2)
+[PASS] curvature ratio A4/A2 is 8/7
+[PASS] L_t=4 mass is larger than L_t=2 mass -- 149.952 > 140.267
+[PASS] L_t=2 mass matches note value 140.3 GeV -- 140.267
+[PASS] L_t=4 mass matches note value 150.0 GeV -- 149.952
+[PASS] first-power branch is a numerical near miss only -- 122.734 vs observed 125.250
+[PASS] C_APBC is the fourth-root hierarchy factor
+[PASS] note explicitly rejects first-power derivation
+[PASS] note states correction increases rather than reduces m_H
+[PASS] note preserves dependency links
+
+==============================================================================
+SUMMARY
+==============================================================================
+TOTAL: PASS=15, FAIL=0
+Verified negative result: the L_t=4 hierarchy/APBC replacement raises m_H, so it cannot close the Higgs 140-to-125 GeV gap.
+
+----- stderr -----
+

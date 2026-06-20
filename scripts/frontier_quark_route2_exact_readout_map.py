@@ -31,6 +31,7 @@ from __future__ import annotations
 
 import math
 from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
 
@@ -42,6 +43,14 @@ from frontier_quark_endpoint_readout_constraints import endpoint_readout
 PASS_COUNT = 0
 FAIL_COUNT = 0
 EXACT_TOL = 1.0e-12
+NOTE_PATH = Path("docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md")
+SOURCE_BOUNDARY_PHRASES = [
+    "**Type:** open_gate",
+    "**Claim type:** open_gate",
+    "open gate / exact carrier-readout reduction plus exact missing-map obstruction",
+    "exact missing-map obstruction rather than an exact readout theorem",
+    "The unresolved theorem step is the readout map entry",
+]
 
 
 def check(name: str, condition: bool, detail: str = "") -> None:
@@ -56,6 +65,15 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     if detail:
         line += f"  ({detail})"
     print(line)
+
+
+def check_source_boundary() -> None:
+    print("\n" + "=" * 72)
+    print("SOURCE BOUNDARY")
+    print("=" * 72)
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    for phrase in SOURCE_BOUNDARY_PHRASES:
+        check(f"note declares boundary: {phrase}", phrase in note_text)
 
 
 @dataclass(frozen=True)
@@ -373,6 +391,7 @@ def main() -> int:
     print("Route-2 exact readout-map theorem attempt")
     print("=" * 72)
 
+    check_source_boundary()
     data = restricted_readout_data()
     part1_exact_carrier_readout_setup(data)
     theorem_lands = part2_endpoint_chain_attempt(data)

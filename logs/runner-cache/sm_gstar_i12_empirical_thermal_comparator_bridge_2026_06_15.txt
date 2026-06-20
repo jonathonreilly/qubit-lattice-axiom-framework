@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
-runner_sha256: 931705dba84979d3f45371a044b1caed6e6670a103cf7f84d4074b17330c74c0
+runner_sha256: 6e44a55df841aff572e59f7bce351d2e558005503e02a97fe3ceb59fc0014c4b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 SM GSTAR I12 EMPIRICAL THERMAL COMPARATOR BRIDGE
@@ -26,10 +26,24 @@ PASS: note contains boundary phrase: does not derive small neutrino mass
 PASS: note contains boundary phrase: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
 PASS: note contains boundary phrase: `0.6 eV` edge remains more than three decades below it
 PASS: note contains boundary phrase: new approved framework primitive
-PASS: parent carries I12 phrase: empirical small `m_nu`
-PASS: parent carries I12 phrase: Gamma_nu_R  ~  y_nu^2  T
-PASS: parent carries I12 phrase: g_* = 106.75
-PASS: parent carries I12 phrase: g_* = 112
+PASS: note contains 2026-06-20 narrowing phrase: 2026-06-20 Audit-Scope Repair (pure-arithmetic narrowing)
+PASS: note contains 2026-06-20 narrowing phrase: narrow the row to pure arithmetic over explicitly admitted premises
+PASS: note contains 2026-06-20 narrowing phrase: narrowed to pure arithmetic over explicitly ADMITTED
+PASS: note contains 2026-06-20 narrowing phrase: ADMITTED-1  (empirical m_nu comparator value)
+PASS: note contains 2026-06-20 narrowing phrase: ADMITTED-3  (thermalization estimate)
+PASS: note contains 2026-06-20 narrowing phrase: ADMITTED-4  (radiation-era expansion estimate)
+PASS: note contains 2026-06-20 narrowing phrase: ADMITTED inputs to this packet
+PASS: note contains 2026-06-20 narrowing phrase: not derived here
+PASS: note contains 2026-06-20 narrowing phrase: not retained authorities
+PASS: note contains 2026-06-20 narrowing phrase: not Tier-A admissions
+PASS: note contains 2026-06-20 narrowing phrase: not accepted premise nodes
+PASS: note contains 2026-06-20 narrowing phrase: Bridge to retained authority: OPEN
+PASS: note contains 2026-06-20 narrowing phrase: does **not** supply retained authority
+PASS: note contains 2026-06-20 narrowing phrase: Closing that bridge
+PASS: note contains 2026-06-20 narrowing phrase: is left open
+PASS: parent exists and is non-empty
+PASS: parent names shared admitted premise: empirical small `m_nu`
+PASS: parent names shared admitted premise: Gamma_nu_R  ~  y_nu^2  T
 PASS: 0.05 eV gives y_nu between 2e-13 and 4e-13 (2.874e-13)
 PASS: 0.1 eV gives y_nu between 5e-13 and 7e-13 (5.747e-13)
 PASS: 0.6 eV generous edge stays below 4e-12 (3.448e-12)
@@ -50,7 +64,7 @@ PASS: note keeps small mnu derivation excluded
 PASS: note keeps thermal-rate derivation excluded
 PASS: downstream citation rule prevents retained authority use
 PASS: note denies new axiom
-TOTAL: PASS=43 FAIL=0
+TOTAL: PASS=57 FAIL=0
 VERDICT: bounded comparator bridge passes
 
 ----- stderr -----

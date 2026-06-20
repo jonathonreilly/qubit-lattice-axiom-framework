@@ -80,14 +80,42 @@ def main() -> int:
     for phrase in required_note_phrases:
         check(f"note contains boundary phrase: {phrase}", phrase in note)
 
-    required_parent_phrases = [
+    # 2026-06-20 narrowing: the row is pure arithmetic over EXPLICITLY ADMITTED
+    # premises. These checks verify the note labels the empirical m_nu comparator
+    # value and the thermalization estimate as ADMITTED inputs (not derived, not
+    # retained) and marks the bridge to retained authority as OPEN.
+    required_narrowing_phrases = [
+        "2026-06-20 Audit-Scope Repair (pure-arithmetic narrowing)",
+        "narrow the row to pure arithmetic over explicitly admitted premises",
+        "narrowed to pure arithmetic over explicitly ADMITTED",
+        "ADMITTED-1  (empirical m_nu comparator value)",
+        "ADMITTED-3  (thermalization estimate)",
+        "ADMITTED-4  (radiation-era expansion estimate)",
+        "ADMITTED inputs to this packet",
+        "not derived here",
+        "not retained authorities",
+        "not Tier-A admissions",
+        "not accepted premise nodes",
+        "Bridge to retained authority: OPEN",
+        "does **not** supply retained authority",
+        "Closing that bridge",
+        "is left open",
+    ]
+    for phrase in required_narrowing_phrases:
+        check(f"note contains 2026-06-20 narrowing phrase: {phrase}", phrase in note)
+
+    # The bridge row is now scoped to its own admitted premises, not to the
+    # parent's conclusion. We require only that the parent still EXISTS and names
+    # the same admitted inputs this packet isolates (the m_nu comparator and the
+    # Gamma_nuR estimate). The parent's g_* conclusion is NOT a load-bearing
+    # input to this pure-arithmetic row, so it is no longer asserted here.
+    check("parent exists and is non-empty", len(parent) > 0)
+    required_parent_premise_phrases = [
         "empirical small `m_nu`",
         "Gamma_nu_R  ~  y_nu^2  T",
-        "g_* = 106.75",
-        "g_* = 112",
     ]
-    for phrase in required_parent_phrases:
-        check(f"parent carries I12 phrase: {phrase}", phrase in parent)
+    for phrase in required_parent_premise_phrases:
+        check(f"parent names shared admitted premise: {phrase}", phrase in parent)
 
     y_005 = y_from_mnu(0.05)
     y_01 = y_from_mnu(0.1)

@@ -208,6 +208,28 @@ still must not be promoted by this source edit because the live-DM
 plaquette/eta-omega constants and packet-completeness/selector premise remain
 outside the closed one-hop chain.
 
+## 2026-06-18 Live-Constant Edge Certificate
+
+[`DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md`](DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md)
+adds a bounded support certificate for the live-DM constants edge. The paired
+runner verifies that the helper constants used here agree with
+`scripts/canonical_plaquette_surface.py` and with the bounded canonical
+plaquette arithmetic certificate:
+
+- `PLAQ_MC`, `u0`, `alpha_bare`, and `ALPHA_LM` in
+  `scripts/dm_leptogenesis_exact_common.py`;
+- `ALPHA_LO = CANONICAL_ALPHA_LM`;
+- `ALPHA_HI = -log(1 - (pi^2/3) alpha_bare)/(pi^2/3)`;
+- `omega_b_from_eta(ETA_OBS)`, `OMEGA_DM_OBS`, and the displayed
+  `Omega_DM/Omega_b` target arithmetic.
+
+This source-side certificate partially reduces the live-constant blocker by
+making the arithmetic edge visible and runner-checked. It does not derive
+`CANONICAL_PLAQUETTE = 0.5934`, `ETA_OBS`, or `OMEGA_DM_OBS`; it also does
+not close the selector / packet-completeness premise. Independent audit owns
+whether this bounded support certificate is accepted as a one-hop authority
+for the constants edge.
+
 Open upstream gaps registered for independent audit:
 
 - the live-DM plaquette / eta-omega constants;

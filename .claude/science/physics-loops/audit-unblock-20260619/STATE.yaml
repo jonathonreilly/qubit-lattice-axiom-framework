@@ -1,0 +1,61 @@
+loop_slug: audit-unblock-20260619
+block: 99
+updated_utc: "2026-06-20T15:52:00Z"
+branch: physics-loop/audit-unblock-block99-20260620
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block99-20260620
+base_ref: origin/main
+base_commit: 2d4619ca4
+mode: campaign
+user_boundary: "Do not run audit-loop or apply audit verdicts; produce source-side repair branches and PR-ready packets only."
+lock:
+  mode: degraded_branch_local
+  automation_lock_status: "failed"
+  automation_lock_error: "[Errno 13] Permission denied: '/Users/jonreilly'"
+active_route:
+  title: Post-record admitted sample target-vector source boundary
+  trace_class: direct_blocker_closure
+  reachability_to_target: partially_closes
+  target_claim_id: post_record_admitted_sample_target_vector_interface_2026-06-06
+  blocker_source: audit_ledger
+  blocker_text: "Source note declared an admitted finite-sample interface but carried a methodology / positive theorem claim-type hint, so the row was previously audited as positive_theorem."
+files_changed:
+  source_notes:
+    - docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md
+    - docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md
+  runner_caches:
+    - logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt
+    - logs/runner-cache/audit_packet_script_deps.txt
+  pipeline_generated: true
+  pipeline_generated_note: "Current-main pipeline again invalidated hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18 because a dependency weakened; no manual verdict was applied."
+verification:
+  py_compile: "target runner -> pass"
+  direct_runner: "SUMMARY: PASS=30 FAIL=0"
+  precompute: "ok=1 nonzero_exit=0 timeout=0 error=0 missing=0"
+  packet_deps: "pending helper-import claims 356 / 1443"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh -> complete; total pending 1557; ready 75"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK, 139 notices, no errors"
+post_pipeline_row:
+  claim_id: post_record_admitted_sample_target_vector_interface_2026-06-06
+  claim_type: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  criticality: medium
+  ready: true
+  helper_runner_paths: []
+  open_dependency_paths: []
+  note_hash: 96e73d01c9ea0159989c48534218fe315212b69670d2dd897f83275af23e164f
+  firewall_note_sha256: 52b40df37e4560139f6ff0322354a5b1fd53a7f50815953eb7cdea2da50dcf7c
+  runner_sha256: e1041e13a56cf6af61a1f946d9857baaa5f4751b705196626dcb1962253b9141
+  runner_cache_sha256: 55b7a182116925b98b8420311a7b63afe96db268a03040d6871370e4fedb1d56
+pr_status:
+  commit: branch_head_after_packet_amend
+  pre_amend_commit: abd2aa201
+  push: failed_https_auth
+  push_error: "fatal: could not read Username for 'https://github.com': Device not configured"
+  pr: blocked_until_feature_branch_push_succeeds
+  recovery_commands:
+    - "git push -u origin physics-loop/audit-unblock-block99-20260620"
+    - "gh pr create --base main --head physics-loop/audit-unblock-block99-20260620 --title \"[physics-loop][review-loop] audit-unblock block99: bounded-support admitted sample interface\" --body-file .claude/science/physics-loops/audit-unblock-20260619/PR_BACKLOG.md"
+next_exact_action: "From this worktree, push the feature branch and open the review PR with the recovery commands above."
+stop_condition: "Runtime exhausted after this coherent block."

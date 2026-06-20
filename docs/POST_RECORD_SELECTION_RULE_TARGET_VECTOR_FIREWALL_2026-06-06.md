@@ -61,6 +61,7 @@ bare_retained_allowed: false
 - Does not edit `docs/audit/data`.
 - Does not apply or predict audit verdicts.
 - Does not promote any row.
+- Record does not derive the target vector or weights.
 - Does not claim a broad Record-alone no-go for every possible target-vector or
   weight derivation.
 - Does not derive a physical arrow from Record.

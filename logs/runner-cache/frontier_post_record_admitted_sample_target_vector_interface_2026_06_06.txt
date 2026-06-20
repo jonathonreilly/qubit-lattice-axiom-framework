@@ -3,7 +3,7 @@ runner: scripts/frontier_post_record_admitted_sample_target_vector_interface_202
 runner_sha256: e1041e13a56cf6af61a1f946d9857baaa5f4751b705196626dcb1962253b9141
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 

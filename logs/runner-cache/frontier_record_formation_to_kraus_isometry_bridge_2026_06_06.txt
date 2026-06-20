@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py
-runner_sha256: 1328e681e1e26eecbddf8fc2265a9c040399fc615ac562dcfaef5ce1f21a566f
+runner_sha256: e9a9ee33578833576432b686ee0dac7070a9ab03989f4b8d607319a1e62ba2a8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -14,8 +14,16 @@ PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md exists
 PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: actual_current_surface_status: exact-support
 PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: trace_class: upstream_support
 PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: audit_required_before_effective_retained: true
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: controlled-copy/fresh-fragment write-isometry theorem
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: The ideal write isometry is no longer an
 PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: It does not derive arbitrary persistent-record dynamics into a normalized
 PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: It does not select a generation or Koide dial location.
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md exists
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: Controlled-Copy Write-Isometry Theorem
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: U_cc(pi/4)(|psi> tensor |0>_R)
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: <eta_0|eta_1> = 0
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: K_r = <r|W = P_r
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md contains: What This Does Not Close
 PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md exists
 PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: pointer-non-demolition
 PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: [H_int, Pi_S] = 0
@@ -79,13 +87,14 @@ PASS single-label write can be an isometry
 PASS single-label write is not a two-outcome record split
 PASS duplicating the whole state into two outcomes is not normalized
 PASS projector block split is the normalized two-record write
+PASS controlled-copy to W derived for explicit finite model flag is true
 PASS general persistent dynamics to W derived flag is false
 PASS physical Hamiltonian/coupling selected flag is false
 PASS probability law from post-record counts flag is false
 PASS generation/Koide dial selected flag is false
 PASS audit verdict applied flag is false
 
-SUMMARY: PASS=66 FAIL=0
+SUMMARY: PASS=75 FAIL=0
 RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE=EXACT_SUPPORT_UNDER_FINITE_POINTER_MODEL
 GENERAL_PERSISTENT_RECORD_DYNAMICS_TO_W_DERIVED=FALSE
 POST_RECORD_COUNTS_SELECT_PROBABILITY_OR_DIAL=FALSE

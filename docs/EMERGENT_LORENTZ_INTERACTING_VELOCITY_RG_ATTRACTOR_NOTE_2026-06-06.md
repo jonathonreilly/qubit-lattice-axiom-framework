@@ -29,6 +29,22 @@ IR-attractive, the `O_h` spatial split is one scalar, and canonical time
 reduces the Collins gate to one conditional scalar. No new axiom, primitive,
 Tier-A admission, or audit status change is introduced.
 
+## 2026-06-18 partial source-side support: spatial-BZ channel only
+
+[`EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md`](EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md)
+proves one narrow structural part of residual D directly on the
+continuous-time / spatial-`Z^3` surface: the central-difference spatial
+artifact begins as `sum_i k_i^4`; its quadratic projection has zero time
+component; and the `O_h` orbit average leaves one spatial scalar channel.
+
+This reduces the supplied "spatial-only power-divergent mixing" phrase to an
+exact source-side channel theorem plus a still-open coefficient. It does not
+derive the interacting one-loop velocity RG, the physical coefficient
+multiplying the spatial channel, the fixed-point anomalous dimension, or
+sufficiency against Lorentz-violation bounds. The parent row therefore remains
+conditional until those remaining bridges are supplied and independently
+audited.
+
 ## 2026-06-09 surface-scope update
 
 Residual D below (the power-divergent UV regeneration of the marginal anisotropy)

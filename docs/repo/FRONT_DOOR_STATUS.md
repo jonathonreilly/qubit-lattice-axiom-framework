@@ -11,20 +11,20 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3445 |
-| Applied audit verdicts | 1588 |
-| Retained-grade rows, including boxed decorations | 1492 |
-| Retained positive theorems | 218 |
+| Ledger rows | 3452 |
+| Applied audit verdicts | 1573 |
+| Retained-grade rows, including boxed decorations | 1489 |
+| Retained positive theorems | 217 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 999 |
+| Retained bounded rows | 997 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 36 |
-| Unaudited rows | 1531 |
+| Unaudited rows | 1553 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 23 |
+| Audited conditional rows | 10 |
 | Audited renaming rows | 25 |
 | Audited numerical-match rows | 12 |
-| Citation cycles detected | 8 |
+| Citation cycles detected | 7 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1535 |
-| Ready rows | 60 |
-| Cycle-break targets | 8 |
-| Critical pending | 315 |
-| High pending | 274 |
-| Medium pending | 437 |
-| Leaf pending | 509 |
+| Total pending rows | 1556 |
+| Ready rows | 74 |
+| Cycle-break targets | 7 |
+| Critical pending | 327 |
+| High pending | 273 |
+| Medium pending | 438 |
+| Leaf pending | 518 |
 
 Next ready rows by queue order:
 
+- [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; unaudited
+- [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; unaudited
+- [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
+- [`abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`](../../docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md) - critical; unaudited
+- [`observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
+- [`observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md) - critical; unaudited
 - [`qcd_low_energy_running_bridge_note_2026-05-01`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) - critical; unaudited
-- [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - critical; unaudited
-- [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
-- [`koide_q_delta_linking_relation_theorem_note_2026-04-20`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md) - critical; unaudited
-- [`lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
-- [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
-- [`hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - critical; audit_in_progress
-- [`hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18`](../../docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md) - high; unaudited
+- [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,12 +61,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 175 |
+| critical | `unaudited` | 176 |
 | high | `unaudited` | 154 |
 | medium | `unaudited` | 86 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
-| critical | `audited_conditional` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_numerical_match` | 1 |
@@ -78,19 +77,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3587 |
-| Critical nodes | 584 |
-| High nodes | 516 |
-| Medium nodes | 940 |
-| Leaf nodes | 1547 |
+| Citation-graph nodes | 3597 |
+| Critical nodes | 592 |
+| High nodes | 517 |
+| Medium nodes | 938 |
+| Leaf nodes | 1550 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1678 descendants; score 152.713
-- `three_generation_observable_theorem_note` - critical; 1059 descendants; score 67.050
-- `graph_first_su3_integration_note` - critical; 1431 descendants; score 60.984
-- `observable_principle_from_axiom_note` - critical; 917 descendants; score 60.342
-- `plaquette_self_consistency_note` - critical; 1023 descendants; score 54.000
-- `minimal_axioms_2026-05-03` - critical; 1037 descendants; score 49.520
-- `key_terminology` - critical; 1130 descendants; score 47.643
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 929 descendants; score 45.361
+- `minimal_axioms` - critical; 1683 descendants; score 153.718
+- `three_generation_observable_theorem_note` - critical; 1061 descendants; score 67.053
+- `graph_first_su3_integration_note` - critical; 1436 descendants; score 60.989
+- `observable_principle_from_axiom_note` - critical; 921 descendants; score 60.349
+- `plaquette_self_consistency_note` - critical; 1027 descendants; score 54.006
+- `minimal_axioms_2026-05-03` - critical; 1040 descendants; score 48.524
+- `key_terminology` - critical; 1133 descendants; score 46.647
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 932 descendants; score 44.366

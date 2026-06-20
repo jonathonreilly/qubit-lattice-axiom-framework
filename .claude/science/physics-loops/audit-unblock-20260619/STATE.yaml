@@ -1,0 +1,59 @@
+loop_slug: audit-unblock-20260619
+block: 97
+updated_utc: "2026-06-20T15:44:00Z"
+branch: physics-loop/audit-unblock-block97-20260620
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block97-20260620
+base_ref: origin/main
+base_commit: 2d4619ca4
+mode: campaign
+user_boundary: "Do not run audit-loop or apply audit verdicts; produce source-side repair branches and PR-ready packets only."
+lock:
+  mode: degraded_branch_local
+  automation_lock_status: "failed"
+  automation_lock_error: "[Errno 13] Permission denied: '/Users/jonreilly'"
+active_route:
+  title: Post-record supplied concentration certificate source boundary
+  trace_class: direct_blocker_closure
+  reachability_to_target: partially_closes
+  target_claim_id: post_record_supplied_concentration_certificate_interface_2026-06-06
+  blocker_source: audit_ledger
+  blocker_text: "Source note declared a supplied finite law-scoped certificate interface but carried a positive_theorem claim-type hint, so the row was previously audited as positive_theorem."
+files_changed:
+  source_notes:
+    - docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md
+  runner_caches:
+    - logs/runner-cache/frontier_post_record_supplied_concentration_certificate_interface_2026_06_06.txt
+    - logs/runner-cache/audit_packet_script_deps.txt
+  pipeline_generated: true
+  pipeline_generated_note: "Current-main pipeline again invalidated hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18 because a dependency weakened; no manual verdict was applied."
+verification:
+  py_compile: "target runner -> pass"
+  direct_runner: "SUMMARY: PASS=45 FAIL=0"
+  precompute: "ok=1 nonzero_exit=0 timeout=0 error=0 missing=0"
+  packet_deps: "pending helper-import claims 356 / 1442"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh -> complete; total pending 1556; ready 74"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK, 139 notices, no errors"
+post_pipeline_row:
+  claim_id: post_record_supplied_concentration_certificate_interface_2026-06-06
+  claim_type: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  criticality: leaf
+  ready: true
+  helper_runner_paths: []
+  open_dependency_paths: []
+  note_hash: 8f5ac27753ac7d06538c254c9b5a4ed95e5d60293eb2ef7684023e27286eedc9
+  runner_sha256: aa336be6aab6de2221428e05899976fb929b7014bcb1a5ddb982b05235cf4218
+  runner_cache_sha256: d14658ea6aae8936e46e1c127f23cf3796ace942c92c8196ba1e062a66ed665a
+pr_status:
+  commit: branch_head_after_packet_amend
+  pre_amend_commit: f0c79deee
+  push: failed_https_auth
+  push_error: "fatal: could not read Username for 'https://github.com': Device not configured"
+  pr: blocked_until_feature_branch_push_succeeds
+  recovery_commands:
+    - "git push -u origin physics-loop/audit-unblock-block97-20260620"
+    - "gh pr create --base main --head physics-loop/audit-unblock-block97-20260620 --title \"[physics-loop][review-loop] audit-unblock block97: bounded-support post-record concentration interface\" --body-file .claude/science/physics-loops/audit-unblock-20260619/PR_BACKLOG.md"
+next_exact_action: "From this worktree, push the feature branch and open the review PR with the recovery commands above."
+stop_condition: "Runtime nearly exhausted after this coherent block."

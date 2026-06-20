@@ -26,6 +26,11 @@ This archived packet is historical / diagnostic and retired as evidence. It is
 not a retained h=0.125 failure derivation, not a quantified root-cause
 diagnosis, and not authority for the printed detector-probability or SNR rows.
 
+**Firewall runner:**
+[`scripts/h0125_archive_firewall_2026_06_16.py`](../../scripts/h0125_archive_firewall_2026_06_16.py)
+(`PASS: h0125 archive firewall holds`; cached at
+[`logs/runner-cache/h0125_archive_firewall_2026_06_16.txt`](../../logs/runner-cache/h0125_archive_firewall_2026_06_16.txt)).
+
 The old negative story is also not the current live h=0.125 status. The live
 computable reduced-family lane is documented separately in
 `docs/LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md` with

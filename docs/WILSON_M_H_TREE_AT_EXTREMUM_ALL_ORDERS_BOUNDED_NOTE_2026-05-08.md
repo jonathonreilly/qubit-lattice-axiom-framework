@@ -108,6 +108,18 @@ matching readout (4) is conditional on:
 
 Any of (1)–(3) failing voids the matching readout.
 
+## Post-audit algebraic-core split (2026-06-18)
+
+The clean finite-sum curvature algebra in eq. (2) is split into
+[`WILSON_M_H_TREE_AT_EXTREMUM_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md`](WILSON_M_H_TREE_AT_EXTREMUM_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md).
+That note is the B1-synced diagnostic-core artifact: it keeps
+`r` and `u_0` symbolic for the theorem, uses the current B1
+`u_0 = <P>^(1/4) = 0.877681381...` only for numerical diagnostic
+checks, and excludes the physical Higgs-pole readout, external
+mass-comparison matching equation, uniform-channel physical selection,
+and nonzero-`r` derivation from scope. The physical matching content of
+this older note remains conditional on the admissions listed above.
+
 ## Proof-Walk
 
 | Step | Load-bearing input | Lattice-action input? |

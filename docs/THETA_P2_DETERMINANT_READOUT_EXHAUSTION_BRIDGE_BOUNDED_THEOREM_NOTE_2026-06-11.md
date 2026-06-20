@@ -10,7 +10,7 @@ set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
 **Primary runner:**
 [`scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py`](../scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py)
-(TOTAL: PASS=41 FAIL=0; cached:
+(TOTAL: PASS=44 FAIL=0; cached:
 [`logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt`](../logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt))
 
 ---
@@ -51,6 +51,45 @@ carry a separate W2/action-level theorem or remain explicitly conditional.
 No new axiom, Tier-A admission, audit verdict, ledger tag, or publication
 status is introduced by this firewall.
 
+## 2026-06-20 Conditional-Scoping Repair (audit-named fallback path)
+
+The re-audit named the cheapest next repair verbatim:
+
+> missing_bridge_theorem: cheapest next repair is a retained W2
+> physical-registrability plus action-level theta_eff determinant-entry
+> theorem, or keep all downstream strong-CP use explicitly conditional on
+> those supplied premises.
+
+This repair takes the **second** path — it does **not** derive the W2
+physical-registrability theorem or the action-level `theta_eff`
+determinant-entry theorem. Instead it states explicitly that the theorem, and
+all downstream strong-CP use of it, are **conditional on exactly those two
+supplied/admitted premises**:
+
+- **(i) W2 physical-registrability** — that the physical mass-surface readout
+  context satisfies the Record registrability constraints (additivity + orbit
+  constancy). Supplied/admitted here, not derived. Open bridge.
+- **(ii) action-level `theta_eff` determinant-entry** — that the physical
+  mass-orientation dependence of the vacuum weight reduces, on the supplied
+  per-plaquette-plus-Gaussian-fermion action class, to the `theta_eff` datum
+  `arg det(M_u M_d)`. Supplied/admitted here, not derived. Open bridge.
+
+The Statement's conditional clause now carries (i) and (ii) explicitly, part
+(5) is flagged as conditional on (ii), and the conclusion paragraph below
+restates that any downstream strong-CP consumer inherits the conditionality.
+No language in this note presents (i) or (ii) as derived, retained, or
+established within the framework; each is the named, unsupplied bridge the
+audit verdict identified. No new axiom, import, comparator, Tier-A admission,
+audit verdict, ledger tag, or publication status is introduced.
+
+**Downstream strong-CP use is explicitly conditional.** Any consumer that uses
+this note's conclusion — that the supplied `arg det(M_u M_d)` datum carries zero
+Record-registrable phase content and is exhausted by the `k = 0`
+determinant-character readout — to assert a physical strong-CP / `theta`
+outcome must additionally carry, or itself remain conditional on, premises (i)
+and (ii). This note supplies neither; it proves only the supplied-context
+algebra that follows once (i) and (ii) are granted.
+
 ## 2026-06-15 Supplied-Boundary Repair
 
 The current audit verdict asked for a retained action-level bridge reducing
@@ -82,9 +121,14 @@ decomposition; the fixed `K`/CPT conjugation acting on the central determinant
 data by complex conjugation; a per-record determinant datum map `e -> z(e)`
 in `C^x` that is multiplicative over disjoint records
 (`z(e_1 cup e_2) = z(e_1) z(e_2)`), with the scalar readout a function of that
-datum, `I(e) = F(z(e))`. Conditional on the supplied readout context satisfying
-the Record registrability constraints (the quarantined premise W2), and — for part
-(v) — on the supplied per-plaquette-plus-Gaussian-fermion action class:
+datum, `I(e) = F(z(e))`. The theorem is conditional on two supplied/admitted
+premises that are **not** derived in this note (each is an open bridge named in
+the Boundary section): **(i) W2 physical-registrability** — the supplied readout
+context satisfies the Record registrability constraints; and **(ii) the
+action-level `theta_eff` determinant-entry premise** — that the physical
+mass-orientation dependence of the vacuum weight reduces, on the supplied
+per-plaquette-plus-Gaussian-fermion action class, to the `theta_eff` datum
+`arg det(M_u M_d)` (used only in part (v)). Conditional on (i) and (ii):
 
 1. **(Orbit)** The `K`/CPT orbit of the datum `z = det(M_u M_d)` is
    `{z, conj z}`: `|z|` is fixed and `arg z -> -arg z`.
@@ -113,19 +157,21 @@ the Record registrability constraints (the quarantined premise W2), and — for 
    supplied character family. On the finite models in the runner this is
    verified as a complete solution-space computation (nullspace dimension
    count), not on a hand-picked family.
-5. **(Supplied action-level entry characterization)** On the supplied
-   strong-CP selected Gaussian surface, the fermion integral is exact, so the
-   admitted vacuum-weight dependence on the mass datum is the determinant
-   `det(D + M)`; its orientation-sensitive part is `arg det`, which is the
-   per-sector-additive phase datum of parts (2)-(4). The supplied
-   per-plaquette gauge class contains no local cross-plane `F Ftilde` slot
-   that could host an independent orientation-sensitive action-level datum
+5. **(Supplied action-level entry characterization, conditional on premise (ii))**
+   *Under the supplied/admitted action-level `theta_eff` determinant-entry
+   premise (ii)*: on the supplied strong-CP selected Gaussian surface, the
+   fermion integral is exact, so the admitted vacuum-weight dependence on the
+   mass datum is the determinant `det(D + M)`; its orientation-sensitive part is
+   `arg det`, which is the per-sector-additive phase datum of parts (2)-(4). The
+   supplied per-plaquette gauge class contains no local cross-plane `F Ftilde`
+   slot that could host an independent orientation-sensitive action-level datum
    (composition with the retained_bounded cross-plane note). Hence, within
-   the supplied action class and the `theta_eff` vacuum-weight premise, the
-   only orientation-sensitive action-level entry admitted by this supplied
-   action class is `arg det(M_u M_d)` — and parts (2)-(4) erase it at
-   registration. The
-   pieces this part does **not** cover are named in the Boundary section.
+   the supplied action class and the admitted `theta_eff` vacuum-weight premise
+   (ii), the only orientation-sensitive action-level entry admitted by this
+   supplied action class is `arg det(M_u M_d)` — and parts (2)-(4) erase it at
+   registration. Premise (ii) itself — that the physical action reduces the
+   mass-orientation datum to `arg det(M_u M_d)` — is admitted, not derived here;
+   the pieces this part does **not** cover are named in the Boundary section.
 
 ## Setup and derivation
 
@@ -403,12 +449,16 @@ miniature here, with source insertions explicitly excluded; (4) that the
 unaudited prior note is not load-bearing (all used legs re-derived and
 re-checked in this note's runner); (5) that no claim is made beyond the
 registrable class, the supplied context, and the supplied action class; (6) that
-W2 and the action-level `arg det` reduction are quarantined premises, not
-derived conclusions. The claim is a conditional bounded theorem: if those named
-premises hold, the supplied `arg det(M_u M_d)` datum is exhausted by the
-multiplicative determinant-character readout (its `k = 0` members), and no
-phase-sensitive non-multiplicative or supplied-class action-level datum of the
-mass orientation remains within the stated surfaces.
+W2 (premise (i)) and the action-level `arg det` reduction (premise (ii)) are
+quarantined/admitted premises, not derived conclusions. The claim is a
+conditional bounded theorem: if those two named premises hold, the supplied
+`arg det(M_u M_d)` datum is exhausted by the multiplicative
+determinant-character readout (its `k = 0` members), and no phase-sensitive
+non-multiplicative or supplied-class action-level datum of the mass orientation
+remains within the stated surfaces. Any downstream strong-CP use inherits this
+conditionality: a consumer that turns this conclusion into a physical
+strong-CP / `theta` statement must carry premises (i) and (ii) itself or remain
+explicitly conditional on them (see the 2026-06-20 Conditional-Scoping Repair).
 
 ## Dependencies
 

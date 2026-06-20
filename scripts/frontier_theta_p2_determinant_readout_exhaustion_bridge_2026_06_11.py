@@ -128,8 +128,25 @@ def main() -> int:
         and "Downstream physical strong-CP use must carry a separate W2/action-level theorem" in note_flat,
     )
     check(
+        "2026-06-20 conditional-scoping repair names BOTH supplied premises (i) W2 and (ii) theta_eff entry",
+        "2026-06-20 Conditional-Scoping Repair" in note_text
+        and "(i) W2 physical-registrability" in note_flat
+        and "(ii) action-level `theta_eff` determinant-entry" in note_text
+        and "Supplied/admitted here, not derived. Open bridge." in note_flat,
+    )
+    check(
+        "2026-06-20 repair keeps downstream strong-CP use explicitly conditional on (i) and (ii)",
+        "Downstream strong-CP use is explicitly conditional" in note_text
+        and "must additionally carry, or itself remain conditional on, premises (i)\nand (ii)".replace("\n", " ") in note_flat,
+    )
+    check(
+        "2026-06-20 repair takes the audit fallback path, does NOT derive the two premises",
+        "it does **not** derive the W2\nphysical-registrability theorem".replace("\n", " ") in note_flat
+        and "action-level `theta_eff`\ndeterminant-entry theorem".replace("\n", " ") in note_flat,
+    )
+    check(
         "source note expected scorecard matches runner count",
-        "TOTAL: PASS=41 FAIL=0" in note_text,
+        "TOTAL: PASS=44 FAIL=0" in note_text,
     )
 
     # ------------------------------------------------------------------

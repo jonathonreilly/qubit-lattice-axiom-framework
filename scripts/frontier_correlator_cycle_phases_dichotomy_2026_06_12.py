@@ -276,7 +276,7 @@ def main() -> int:
         "thermal beta=4": (False, False, state_class),
     }
     exactly_one = all(sum(bool(x) for x in row) == 1 for row in class_rows.values())
-    check("dichotomy: tested classes fall in exactly one of {readback, blind, state-contingent}", exactly_one, str(class_rows))
+    check("dichotomy (tested classes only, not surface exhaustion): each tested class falls in exactly one of {readback, blind, state-contingent}", exactly_one, str(class_rows))
 
     section("B-checks - note firewall, open targets, links, and status")
     note_text = NOTE.read_text(encoding="utf-8")
@@ -336,6 +336,18 @@ def main() -> int:
         "carrier-class exhaustion theorem" in flat_lower
         and "not supplied here" in flat_lower
         and "does not exhaust all possible state-independent carrier-angle middlemen" in flat_lower,
+    )
+    check(
+        "B12: title and N2 are scoped to the tested classes, not surface-wide exhaustion",
+        "tested identity/projector/thermal correlator cycle phases" in flat_lower
+        and "for the three tested classes" in flat_lower
+        and "not a claim that every carrier on this surface falls into one of these three faces" in flat_lower,
+    )
+    check(
+        "B13: 2026-06-20 repair section narrows to the bounded checks and frames exhaustion as an open bridge",
+        "## repair (2026-06-20): narrowed to the tested bounded checks only" in flat_lower
+        and "remains an open bridge" in flat_lower
+        and "does not attempt the carrier-class exhaustion theorem" in flat_lower,
     )
 
     section("Manual git diff --stat equivalent (no git invoked)")

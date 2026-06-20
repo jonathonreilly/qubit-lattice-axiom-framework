@@ -1,4 +1,4 @@
-# Correlator Cycle Phases on the Circulant Surface Are Readback, Blind, or State-Contingent (Bounded)
+# Tested Identity/Projector/Thermal Correlator Cycle Phases on the Circulant Surface Are Readback, Blind, or State-Contingent (Bounded)
 
 **Date:** 2026-06-12
 **Claim type:** bounded_theorem
@@ -8,7 +8,7 @@ set or predict an audit outcome and does not edit any audit-lane-owned
 registry, ledger, queue, or publication-status surface.
 **Primary runner:** `scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py`
 **Status:** source proposal; the audit lane grades. Runner
-`PASS=28 FAIL=0`.
+`PASS=30 FAIL=0`.
 
 ## Boundary
 
@@ -149,8 +149,9 @@ multiset-to-geometry routes.
 **N2 - Wall-independence audit.** The wall set collapses to one surface-local
 tested-class wall: none of the tested circulant phase carriers supplies a
 state-independent derived-angle middleman. Readback, projector blindness, and
-thermal state contingency are three faces of that one wall on this surface, not
-three independent framework admissions.
+thermal state contingency are three faces of that one wall for the three tested
+classes, not three independent framework admissions, and not a claim that every
+carrier on this surface falls into one of these three faces.
 
 **N3 - Hidden-wall scan.** "Supplied surface" is load-bearing and explicit;
 "registered state data" is exactly the realized-state primitive boundary and
@@ -185,6 +186,44 @@ the direct bridge remains open. This note preserves that distinction.
 
 Gate outcome: PASS for the narrowed tested-class surface-local boundary; no
 carrier-class exhaustion theorem and no global R-eta no-go are asserted.
+
+## Repair (2026-06-20): narrowed to the tested bounded checks only
+
+The audit lane re-audit asked for either a retained or packet-included
+carrier-class exhaustion theorem, or a narrowing of the claim to the
+identity/projector/thermal bounded checks only. This repair takes the narrowing
+alternative; it does not attempt the carrier-class exhaustion theorem, which
+remains an open bridge.
+
+What changed:
+
+- The title now reads "Tested Identity/Projector/Thermal Correlator Cycle
+  Phases on the Circulant Surface Are Readback, Blind, or State-Contingent
+  (Bounded)" instead of "Correlator Cycle Phases on the Circulant Surface Are
+  Readback, Blind, or State-Contingent (Bounded)". The earlier title could be
+  read as a trichotomy over every cycle-phase carrier on the surface; the new
+  title scopes the trichotomy to the three classes actually computed and
+  verified by the runner.
+- The N2 wall-independence sentence now says the three behaviors are three faces
+  of one wall "for the three tested classes ... and not a claim that every
+  carrier on this surface falls into one of these three faces", instead of
+  "three faces of that one wall on this surface". The earlier phrasing implied
+  surface-wide coverage; the new phrasing restricts the trichotomy to the tested
+  classes.
+
+What did not change: every derived value, residual, and check in the runner is
+unchanged. The carrier-class exhaustion question is framed throughout as an open
+bridge that this packet does not supply, not as a theorem that is assumed. The
+bounded facts verified are exactly the identity-readback case, the
+spectral-projector blind case, the strictly mixing thermal state-contingent
+case, and the direct symmetric inversion of `|delta|` on the stated branch.
+
+The runner's dichotomy check is correspondingly stated only over the tested
+classes (identity, rank-one/rank-two band projectors, thermal `beta in {1,4}`),
+with no assertion that these classes exhaust the carrier-angle constructions on
+the surface.
+
+This source note does not set or predict an audit outcome.
 
 ## Does NOT
 

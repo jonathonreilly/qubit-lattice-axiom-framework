@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/cubic_anisotropy_sections_so3_frame_2026_06_17.py
+runner_sha256: b40120662d989ec7649001d763004afa3090dc3f6fa01f0e4828436331498426
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.27
+status: ok
+----- stdout -----
+[REP] PASS: |O| cubic rotation group = 24  (24)
+[REP] PASS: O_h-invariant quadratic weights on spin-2 are 2-DIM (Frobenius + cubic harmonic)  (dim=2)
+[REP] PASS: SO(3)-invariant weights are 1-DIM by Lie-generator equations (Frobenius only)  (dim=1)
+[REP] PASS: the SO(3)-invariant weight is the Frobenius identity (proportional to I_5)
+[REP] PASS: CONTRAST: O_h-invariant weights on the spin-1 vector block are 1-DIM = SO(3) (T1 irreducible, Schur-forced isotropic) -> cubic background does NOT section vector modes; the spin-2 sectioning is mode-SPECIFIC, not a tautology  (O=1, SO(3)=1)
+[REP] PASS: a 2nd O_h-invariant weight exists that is NOT proportional to identity (G_aniso)
+[SPLIT] PASS: G_aniso has exactly two distinct eigenvalues (the E vs T2 weight split)  (eigs={np.float64(-0.365148): 3, np.float64(0.547723): 2})
+[SPLIT] PASS: with multiplicities {2, 3} = (E=2) + (T2=3)  (mults=[2, 3])
+[SPLIT] PASS: normalized E/T2 eigenvalues match +sqrt(3/10) on E and -sqrt(2/15) on T2  (eigs=[-0.365148 -0.365148 -0.365148  0.547723  0.547723])
+[SPLIT] PASS: G_aniso is traceless (orthogonal to Frobenius identity) -> genuinely anisotropic  (tr=1.11e-16)
+[FLAT] PASS: ISOTROPIC (Frobenius) complement energy is SO(3)-orbit-FLAT (reproduces retained thm)  (max orbit-var=1.22e-15)
+[FLAT] PASS: O_h-ANISOTROPIC (Frobenius+cubic) complement energy is NOT orbit-flat -> opens the channel  (max orbit-var=0.1934 (>0))
+[FLAT] PASS: the anisotropic weight W is itself EXACTLY O_h-invariant (breaking is within the O_h class)
+[LATTICE] PASS: the cubic axis 4-tensor C_ijkl (=lattice l=4 anisotropy) gives a graviton weight whose anisotropic part IS the orbit-flat-breaking direction G_aniso  (||Gcub_dev - 1.0954 G_aniso||=1.84e-16)
+[LATTICE] PASS: the l=4 cubic harmonic is NONZERO on the active lattice shells (the c_aniso witness)  (H4={'(3,3,0)': -32.4, '(4,1,0)': 83.6, '(3,2,2)': -60.4, '(4,1,1)': 63.6})
+[LATTICE] PASS: lattice dispersion w(k)=6-2 sum cos(k_i) has quartic coefficient -(1/12) sum k_i^4 in independent directions  (quartic={'axis': -0.083333, 'face-diagonal': -0.166666, 'body-diagonal': -0.249999})
+[LATTICE] PASS: sum k_i^4 decomposes as (3/5)|k|^4 + H4(k), so the quartic anisotropy is the same l=4 cubic-harmonic channel
+[NOTE] PASS: companion note uses canonical bounded_theorem metadata
+[NOTE] PASS: companion note links the cached runner output
+[NOTE] PASS: unaudited lattice-shell sibling is reader context only, not a markdown graph dependency
+[NOTE] PASS: companion note preserves GR-value/action/frame-bundle boundaries
+[NOTE] PASS: companion note does not author audit-lane status
+
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

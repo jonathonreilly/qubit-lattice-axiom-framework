@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time.py
-runner_sha256: c7458bca0787097110a92ecb9da1992efc0bc56fa5d2469962ec444b782394b4
+runner_sha256: 7463158a3b1e3b66d113cb15ec9bda608a7925747d107329d32b77898c5eee00
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.53
 status: ok
 ----- stdout -----
 ========================================================================
@@ -18,7 +18,7 @@ and B-AXIS. See the paired note.
 STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)
 ========================================================================
 
-  Cited: NATIVE_GAUGE_LEFT_HANDED_ABELIAN_SURFACE_BOUNDED_NOTE_2026-05-23
+  Cited authority: GRAPH_FIRST_SU3_INTEGRATION_NOTE
   For each selected taste axis, the residual complementary-axis swap
   tau on C^8 gives Pi_+ rank 6, Pi_- rank 2, and
   Y_like = (1/3) Pi_+ - Pi_- with spectrum {+1/3 x6, -1 x2}.
@@ -36,6 +36,10 @@ STEP 0: ABELIAN EIGENVALUE SURFACE (recompute cited construction)
 
   P-HY (declared, not computed): identifying Y_like with the anomaly-
   relevant U(1) hypercharge of the emergent gauge theory.
+
+  [PASS][B] HY source edge: parent theorem cites GRAPH_FIRST_SU3_INTEGRATION_NOTE for HY-surface  (graph-first parent contains the gl(3)+gl(1) split and traceless u(1) spectrum)
+  [PASS][B] HY source edge: split-out abelian packaging is absent from parent theorem source text  (prevents this parent theorem from carrying the packaging as a source dependency)
+  [PASS][B] P-HY remains declared: physical hypercharge identification is not derived by STEP 0  (graph-first parent supplies the spectrum only; U(1)_Y remains a boundary)
 
 ========================================================================
 STEP 1: LEFT-HANDED CONTENT ALONE IS ANOMALOUS (exact rationals)
@@ -227,11 +231,11 @@ STEP 6: COMPOSITION WITH LOCAL B-AXIS CLOCK PREMISE
     axis/transfer construction, and no admitted independent commuting
     transfer factor as a second clock.
   NON-CIRCULARITY: B-AXIS contains no anomaly input; this note never
-  defines time via the anomaly. The single-clock note remains provenance
-  context in prose only, not a runner input or citation-graph dependency.
+  defines time via the anomaly. The prior single-clock source remains
+  provenance context only and is not named by source path or claim id.
 
   [PASS][B] source sync: anomaly note declares B-AXIS locally, not the withdrawn unique-RP-axis claim  (cap is conditional on B-AXIS in this bounded source note)
-  [PASS][B] source sync: no markdown dependency edge to the single-clock note remains  (plain-code provenance references do not enter the citation graph)
+  [PASS][B] source sync: no single-clock source slug remains in the parent theorem  (B-AXIS is local to this theorem; prior single-clock source is context only)
   [PASS][B] declared B-AXIS d_t <= 1 cap intersected with computed odd set gives {1}  (lower bound computed in Steps 1-4; upper bound is local declared B-AXIS)
   [PASS][B] conclusion: d_t = 1, total dimension 3 + 1 = 4, signature (3,1)
 
@@ -261,8 +265,8 @@ STEP 7: COUNTERFACTUAL — CANCEL THE ANOMALY, LOSE THE FORCING
   falsification behaviour a genuine forcing theorem must show.
 
 ========================================================================
-CLASS BREAKDOWN: A=47 B=4 C=36 D=0
-TOTAL: PASS=87 FAIL=0
+CLASS BREAKDOWN: A=47 B=7 C=36 D=0
+TOTAL: PASS=90 FAIL=0
 ========================================================================
 
 VERDICT: bounded anomaly/B-AXIS bridge verified. Computed: exact

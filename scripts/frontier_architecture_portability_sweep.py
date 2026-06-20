@@ -29,6 +29,7 @@ from __future__ import annotations
 import math
 import time
 from collections import deque
+from pathlib import Path
 
 import numpy as np
 from scipy.sparse import csc_matrix, csr_matrix, eye as speye, lil_matrix
@@ -46,6 +47,14 @@ REG = 1e-3
 
 # Source amplitudes for mass sweep
 SOURCE_AMPLITUDES = (0.4, 0.6, 0.8, 1.0, 1.5)
+NOTE_PATH = Path("docs/ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md")
+SOURCE_BOUNDARY_PHRASES = [
+    "**Type:** bounded_theorem",
+    "**Claim type:** bounded_theorem",
+    "bounded support / source-side audit unlock candidate",
+    "This is a bounded portability companion, not a standalone Newton closure.",
+    "The mass exponent beta measures deflection proportional to source mass",
+]
 
 
 # ============================================================================
@@ -734,7 +743,21 @@ def born_rule_test_staggered(side: int) -> float:
 # Main: run all architectures
 # ============================================================================
 
-def main() -> None:
+def _check_source_boundary() -> bool:
+    print("=" * 90)
+    print("SOURCE BOUNDARY")
+    print("=" * 90)
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    ok = True
+    for phrase in SOURCE_BOUNDARY_PHRASES:
+        hit = phrase in text
+        print(f"  [{'PASS' if hit else 'FAIL'}] note declares boundary: {phrase}")
+        ok = ok and hit
+    print()
+    return ok
+
+
+def main() -> int:
     t0 = time.time()
     print("=" * 90)
     print("ARCHITECTURE PORTABILITY SWEEP")
@@ -743,6 +766,7 @@ def main() -> None:
     print(f"Source amplitudes: {SOURCE_AMPLITUDES}")
     print("Goal: beta ~ 1.0, attractive force, I_3 ~ 0 where measured")
     print()
+    source_boundary_ok = _check_source_boundary()
 
     all_results = []
 
@@ -878,6 +902,7 @@ def main() -> None:
     print(f"  OVERALL: {'PASS — bounded source-mass portability companion established' if overall else 'FAIL — see details above'}")
     print()
     print(f"Elapsed: {time.time() - t0:.1f}s")
+    return 0 if overall and source_boundary_ok else 1
 
 
 def _print_sweep(res: dict) -> None:
@@ -892,4 +917,4 @@ def _print_sweep(res: dict) -> None:
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

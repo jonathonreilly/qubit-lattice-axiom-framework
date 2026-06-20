@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py
-runner_sha256: c9c666709f2808216b0e629bf33f7bb39464f40f5b41348487d0f91ff5fa6a14
+runner_sha256: 2c81d2c0a0ad0ab7e1596515ec08999638e1c503084b904c52bee153e0d1e804
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 3.31
 status: ok
 ----- stdout -----
 W8a statistics atom reduction runner
@@ -46,6 +46,7 @@ PASS: B5 note quotes the Busch m(E)=Tr form
 PASS: B6 MINIMAL_AXIOMS contains the non-supply clause
 PASS: B7 note quotes the MINIMAL_AXIOMS non-supply clause
 PASS: B7b product-form weakening dependency proves outcome factorization is enough
+PASS: B7c companion no-go prunes Born-marginals-alone repair route
 PASS: B8 firewall sentences present
 PASS: B9 closing/adoption overclaim language absent
 PASS: B10 markdown link inventory is exactly the four requested dependencies
@@ -62,14 +63,14 @@ PASS: B16 source does not call the outcome-factorization premise retained
 git diff --stat
 ========================================================================================
 (computed without invoking git, per the no-git rule)
- docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md | 211 +
- scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py | 430 +
- 2 files changed, 641 insertions(+)
+ docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md | 227 +
+ scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py | 444 +
+ 2 files changed, 671 insertions(+)
 
 SUMMARY:
-K1-K4 verified symbolically; note firewall, dependency links, supplied-outcome-factorization boundary, backticked context, and No-promotion statement verified.
+K1-K4 verified symbolically; note firewall, dependency links, supplied-outcome-factorization boundary, companion no-go, backticked context, and No-promotion statement verified.
 The only non-retained ingredient isolated by the computation is the named outcome-factorization premise.
-TOTAL: PASS=29 FAIL=0
+TOTAL: PASS=30 FAIL=0
 CHAIN: {'k1': True, 'k2': True, 'k3': True, 'k4': True}
 
 ----- stderr -----

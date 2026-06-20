@@ -4,8 +4,8 @@
 
 - Branch: `physics-loop/audit-unblock-block100-20260620`
 - Base: `main`
-- Status: pending feature-branch push
-- PR URL: pending
+- Status: opened
+- PR URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4466
 - Title:
   `[physics-loop][review-loop] audit-unblock block100: bounded-support persistent record bridge`
 
@@ -59,4 +59,3 @@ repairing the source-side claim-type boundary only.
 - No push to `main`.
 - No README, lane registry, active review queue, or source publication-control
   weaving.
-

@@ -23,9 +23,13 @@ Block100 repairs the source-side classification boundary for
   because current `origin/main` contained additional stale/generated audit
   state; strict lint passes with notices only.
 
+## PR
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4466
+- Branch: `physics-loop/audit-unblock-block100-20260620`
+- Base: `main`
+
 ## Exact Next Action
 
-Push `physics-loop/audit-unblock-block100-20260620`, open a PR against `main`,
-record the PR URL in this packet, then start a fresh worktree from current
-`origin/main` for the next source-boundary candidate.
-
+Verify PR #4466, then start a fresh worktree from current `origin/main` for the
+next source-boundary candidate.

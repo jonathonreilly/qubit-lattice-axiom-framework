@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py
-runner_sha256: 1328e681e1e26eecbddf8fc2265a9c040399fc615ac562dcfaef5ce1f21a566f
+runner_sha256: 61f95ae2e46fd6e6c5a5155bd454b6d6f654832778e83e6af04b883acdc77a12
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 
@@ -16,6 +16,8 @@ PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: trac
 PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: audit_required_before_effective_retained: true
 PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: It does not derive arbitrary persistent-record dynamics into a normalized
 PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: It does not select a generation or Koide dial location.
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: the supplied projective record-write premise
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md contains: It does not derive the ideal pointer-label record-write isometry from the
 PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md exists
 PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: pointer-non-demolition
 PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md contains: [H_int, Pi_S] = 0
@@ -80,12 +82,13 @@ PASS single-label write is not a two-outcome record split
 PASS duplicating the whole state into two outcomes is not normalized
 PASS projector block split is the normalized two-record write
 PASS general persistent dynamics to W derived flag is false
+PASS controlled-copy/fresh-fragment dynamics to W derived flag is false (W is the supplied projective write premise; dynamics=>W is an open bridge)
 PASS physical Hamiltonian/coupling selected flag is false
 PASS probability law from post-record counts flag is false
 PASS generation/Koide dial selected flag is false
 PASS audit verdict applied flag is false
 
-SUMMARY: PASS=66 FAIL=0
+SUMMARY: PASS=69 FAIL=0
 RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE=EXACT_SUPPORT_UNDER_FINITE_POINTER_MODEL
 GENERAL_PERSISTENT_RECORD_DYNAMICS_TO_W_DERIVED=FALSE
 POST_RECORD_COUNTS_SELECT_PROBABILITY_OR_DIAL=FALSE

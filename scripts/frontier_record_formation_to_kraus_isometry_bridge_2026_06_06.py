@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """Bridge certificate: finite pointer record formation to Kraus isometry.
 
-This runner verifies a narrow exact statement:
+This runner verifies a narrow exact statement that is CONDITIONAL on the
+already-supplied projective record-write premise (the ideal pointer-label write
+isometry is a supplied premise, not derived here):
 
   stable finite pointer projectors + orthonormal record labels
-  + ideal pointer-label write
+  + ideal pointer-label write          [SUPPLIED PROJECTIVE WRITE PREMISE]
     => W|psi> = sum_r (P_r|psi>) tensor |r> is an isometry
     => extracted K_r are the projectors P_r
     => the projective Kraus instrument is CPTP and repeat-readable.
 
-It does not derive W from arbitrary persistent-record dynamics, does not select
-a Hamiltonian/coupling/rate, does not derive a probability law from post-record
-counts, and does not select a generation/Koide dial.
+It does NOT derive W (the projective write premise) from the finite
+controlled-copy/fresh-fragment record-formation dynamics — that derivation
+(`dynamics => W`) is an open bridge, not supplied here. It also does not derive W
+from arbitrary persistent-record dynamics, does not select a Hamiltonian/
+coupling/rate, does not derive a probability law from post-record counts, and
+does not select a generation/Koide dial.
 """
 
 from __future__ import annotations
@@ -119,6 +124,8 @@ def source_anchor_checks() -> None:
             "audit_required_before_effective_retained: true",
             "It does not derive arbitrary persistent-record dynamics into a normalized",
             "It does not select a generation or Koide dial location.",
+            "the supplied projective record-write premise",
+            "It does not derive the ideal pointer-label record-write isometry from the",
         ],
     )
     require_text(
@@ -237,11 +244,17 @@ def boundary_controls() -> None:
     report("projector block split is the normalized two-record write", close(dagger(np.vstack([p0, p1])) @ np.vstack([p0, p1]), ident))
 
     general_dynamics_to_W_derived = False
+    controlled_copy_fresh_fragment_dynamics_to_W_derived = False
     physical_hamiltonian_selected = False
     probability_law_derived_from_counts = False
     generation_or_koide_dial_selected = False
     audit_verdict_applied = False
     report("general persistent dynamics to W derived flag is false", not general_dynamics_to_W_derived)
+    report(
+        "controlled-copy/fresh-fragment dynamics to W derived flag is false "
+        "(W is the supplied projective write premise; dynamics=>W is an open bridge)",
+        not controlled_copy_fresh_fragment_dynamics_to_W_derived,
+    )
     report("physical Hamiltonian/coupling selected flag is false", not physical_hamiltonian_selected)
     report("probability law from post-record counts flag is false", not probability_law_derived_from_counts)
     report("generation/Koide dial selected flag is false", not generation_or_koide_dial_selected)

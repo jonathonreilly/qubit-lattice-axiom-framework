@@ -12,21 +12,11 @@ The post-pipeline row is `claim_type=bounded_theorem`,
 `claim_type_provenance=author_hint`, `audit_status=unaudited`,
 `effective_status=unaudited`, and `ready=true`.
 
-Recovery:
+PR:
 
-```bash
-git push -u origin physics-loop/audit-unblock-block99-20260620
-gh pr create --base main --head physics-loop/audit-unblock-block99-20260620 --title "[physics-loop][review-loop] audit-unblock block99: bounded-support admitted sample interface" --body-file .claude/science/physics-loops/audit-unblock-20260619/PR_BACKLOG.md
-```
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4454
 
-## Push Failure
+## Delivery
 
-Commit: branch HEAD after packet amendment. Pre-amend commit was `abd2aa201`;
-the final amended commit hash is intentionally reported outside this committed
-packet to avoid a self-referential hash mismatch.
-
-Feature-branch push was attempted and failed before PR creation:
-
-```text
-fatal: could not read Username for 'https://github.com': Device not configured
-```
+Feature-branch push succeeded after GitHub auth refresh, and PR #4454 was
+opened and verified by head branch.

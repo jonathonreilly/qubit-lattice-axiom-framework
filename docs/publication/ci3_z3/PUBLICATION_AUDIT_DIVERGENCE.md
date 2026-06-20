@@ -17,12 +17,11 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 175 |
+| critical | `unaudited` | 176 |
 | high | `unaudited` | 154 |
 | medium | `unaudited` | 86 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
-| critical | `audited_conditional` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_numerical_match` | 1 |
@@ -125,7 +124,7 @@ publication tables phrase it.
 | critical | `neutrino_majorana_z3_nonactivation_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `neutrino_mass_reduction_to_dirac_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `neutrino_two_amplitude_last_mile_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `observable_principle_from_axiom_note` | `audited_conditional` | `audited_conditional` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
+| critical | `observable_principle_from_axiom_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `one_generation_matter_closure_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `one_parameter_reduced_shell_law_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `planck_boundary_density_extension_theorem_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |

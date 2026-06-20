@@ -3,7 +3,7 @@ runner: scripts/frontier_post_record_supplied_kernel_selection_rule_interface_20
 runner_sha256: 992b979094ffcfef97fa4453f3a433ef539841d900c9e364d7b648cfa87eeb05
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 

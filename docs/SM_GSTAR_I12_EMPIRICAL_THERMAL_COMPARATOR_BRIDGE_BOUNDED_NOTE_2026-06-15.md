@@ -69,6 +69,64 @@ verifies the numerical inequalities. A re-audit can therefore judge the row as
 a declared-premise arithmetic bridge without looking for a hidden
 framework-native neutrino-mass or collision-operator derivation.
 
+## 2026-06-20 Audit-Scope Repair (pure-arithmetic narrowing)
+
+The re-audit re-states the same blocker verbatim:
+
+```text
+missing_bridge_theorem: provide retained or accepted authority for the
+empirical m_nu comparator and the Gamma_nuR/H thermalization estimate, or
+narrow the row to pure arithmetic over explicitly admitted premises.
+```
+
+This repair takes the second path again and makes it explicit and exclusive.
+The row is hereby **narrowed to pure arithmetic over explicitly ADMITTED
+premises**. No new comparator value, authority, or import is added: the
+existing comparator band and the thermalization estimate stay exactly as
+they are, re-labelled as ADMITTED inputs (fenced below), not as proof inputs
+and not as retained-derived quantities.
+
+### Admitted premises (inputs, not derived, not retained)
+
+The following are ADMITTED inputs to this packet. They are not derived here,
+not retained authorities, and not framework primitives. They are quoted as
+declared comparator premises and are the only non-arithmetic content of the
+row:
+
+```text
+ADMITTED-1  (empirical m_nu comparator value):
+            m_nu in {0.05 eV, 0.1 eV, 0.6 eV}  (declared comparator band)
+ADMITTED-2  (Higgs/Yukawa convention):
+            <H> = 174 GeV ;  y_nu = m_nu / <H>  (Dirac comparator)
+ADMITTED-3  (thermalization estimate):
+            Gamma_nuR ~ y_nu^2 T               (order-of-magnitude estimate)
+ADMITTED-4  (radiation-era expansion estimate):
+            H ~ 1.66 sqrt(g_*) T^2 / M_Pl ,  g_* = 427/4
+```
+
+### Load-bearing claim after narrowing (pure arithmetic only)
+
+```text
+PURE ARITHMETIC: given ADMITTED-1..4 verbatim, the deterministic threshold
+arithmetic computes y_nu = m_nu/<H>, y_thr(T) = sqrt(1.66 sqrt(g_*) T/M_Pl),
+and Gamma/H = y_nu^2 M_Pl / (1.66 sqrt(g_*) T), and verifies that at
+T = 100 GeV the admitted band lies at least three decades below y_thr, with
+the gap widening at higher T. No derived value is changed; the row asserts
+only the arithmetic over the admitted inputs.
+```
+
+### Bridge to retained authority: OPEN
+
+The bridge from these admitted inputs to retained or accepted framework
+authority is **OPEN**. This packet does **not** supply retained authority for
+the empirical `m_nu` comparator value (ADMITTED-1) or for the `Gamma_nuR/H`
+thermalization estimate (ADMITTED-3/ADMITTED-4); it does not derive them, and
+it does not claim a retained bridge to them. Closing that bridge — a
+framework-native derivation of small `m_nu`, or a framework-native collision
+operator / equilibration criterion — is left open for the neutrino-mass and
+cosmology lanes. Until that bridge is closed, the row stands only as pure
+arithmetic over the four admitted premises.
+
 ## Claim
 
 Given the declared comparator-premise packet:
@@ -116,9 +174,9 @@ This note does **not**:
 
 | Item | Role | Class | Load-bearing? | Disposition |
 |---|---|---|---|---|
-| small `m_nu` comparator | fixes small Dirac Yukawa scale | declared empirical comparator | yes | explicit conditioning input |
-| `Gamma_nuR ~ y_nu^2 T` | thermalization rate comparator | standard thermal estimate | yes | order-of-magnitude comparator |
-| radiation-era `H` | expansion comparator | standard cosmology estimate | yes | order-of-magnitude comparator |
+| small `m_nu` comparator (ADMITTED-1) | fixes small Dirac Yukawa scale | declared empirical comparator | yes | ADMITTED input; bridge to retained authority OPEN |
+| `Gamma_nuR ~ y_nu^2 T` (ADMITTED-3) | thermalization rate comparator | standard thermal estimate | yes | ADMITTED input; bridge to retained authority OPEN |
+| radiation-era `H` (ADMITTED-4) | expansion comparator | standard cosmology estimate | yes | ADMITTED input; bridge to retained authority OPEN |
 | `g_* = 427/4` | value in the threshold estimate | finite declared-inventory arithmetic certificate | yes for this comparator | sourced from [`SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md`](SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md) |
 
 ## Downstream Citation Rule
@@ -148,6 +206,6 @@ PYTHONPATH=scripts python3 scripts/sm_gstar_i12_empirical_thermal_comparator_bri
 Expected:
 
 ```text
-TOTAL: PASS=43 FAIL=0
+TOTAL: PASS=55 FAIL=0
 VERDICT: bounded comparator bridge passes
 ```

@@ -1,0 +1,72 @@
+loop_slug: audit-unblock-20260619
+block: 123
+mode: campaign
+date: "2026-06-20"
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block123-20260620
+branch: physics-loop/audit-unblock-block123-20260620
+base_ref: origin/main
+base_commit: 6d837f97a3f285b6ee9e088deeb0cb8f3310bcba
+source_commit: 50c7e947e7739245910f53f8f72ea0587b83e8a9
+target_claim_id: null
+target_system: audit-packet helper_runner_paths completeness
+target_status: tooling/methodology audit-unblock
+actual_current_surface_status: open
+effective_status_after_pipeline: not_applicable
+trace_class: methodology
+reachability_to_target: supports
+audit_required_before_effective_retained: false
+bare_retained_allowed: false
+proposal_allowed: false
+repo_lock:
+  mode: degraded_branch_local
+  status_command: python3 scripts/automation_lock.py status
+  failure: "[Errno 13] Permission denied: '/Users/jonreilly'"
+systemic_repair:
+  problem: "Audit packets could omit helper sources loaded through _frontier_loader.load_frontier(..., \"X.py\") because citation-graph helper_runner_paths only saw static imports."
+  fix:
+    - docs/audit/scripts/build_citation_graph.py parses load_frontier calls in AST call nodes.
+    - Both positional filename and filename= keyword forms are covered.
+    - The helper is accepted only when the corresponding scripts/<stem>.py file exists.
+    - docs/audit/scripts/tests/test_audit_pipeline.py covers both forms.
+  parity_after_patch:
+    queue_deps_not_in_helper_runner_paths: 0
+    ledger_deps_not_in_helper_runner_paths: 3
+    remaining_ledger_mismatches_are_terminal_nonqueued: true
+    terminal_nonqueued_rows:
+      - causal_propagating_field_note
+      - portable_card_extension_note
+      - shapiro_five_family_portability_note
+diagnostics:
+  audit_packet_script_deps: "Pending claims with helper imports (would trigger class-C bug): 387 / 1579"
+verification:
+  py_compile: pass
+  unit_tests: "python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.BuildCitationGraphParserTest: 6 tests OK"
+  pipeline: "pass; strict lint inside pipeline reported 139 notices, 0 errors"
+  audit_packet_script_deps: "pass; 387 / 1579 pending helper-import claims diagnosed"
+  strict_audit_lint: "139 notices, 0 errors"
+  git_diff_check: pass
+  generated_clean_gate_after_commit: pass
+review_loop:
+  disposition: "PASS WITH TOOLING/METHODOLOGY BOUNDARY"
+  iterations: 1
+  reviewers: "local CodeRunner, RepoGovernance, AuditCompatibility, and claim-boundary passes; parallel subagents not spawned"
+  no_audit_verdicts_applied: true
+  audit_loop_run: false
+hashes:
+  build_citation_graph_sha256: b3b8ee30be69f25a488d81b59d0c90f589bdc25774c45794d441ff616d17f996
+  test_audit_pipeline_sha256: d8cd3602069650effa6e17b9ea88aba19cc38d6c5758f290592ce7252d29b833
+  citation_graph_sha256: e089b32f0b4947dfe40ff7e7817067d171d19af309b010b375b8c2597097c50c
+  audit_ledger_sha256: bfe3f746584139059df6701cd9940449157471870c152dca021b016fe36b1572
+  audit_queue_sha256: 29d4ea9076dc5c97d474493e59f388b2df6d972d9921064a91d594c0ac3f45d3
+  audit_packet_script_deps_txt_sha256: 8c65362074e487609ec4b021410635b31ead609412ba729e67d06882f254250e
+  audit_packet_script_deps_json_sha256: 69c4b0b29b7cc95482a24d23f63a00066f17ebd236228579dd9b9691290948fa
+pr:
+  status: open
+  number: 4493
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4493
+  source_head_commit_at_pr_creation: 50c7e947e7739245910f53f8f72ea0587b83e8a9
+  base: main
+  head: physics-loop/audit-unblock-block123-20260620
+  mergeable: MERGEABLE
+  status_checks: "audit-lane/audit_pipeline in progress at packet update"
+next_exact_action: "Refresh from current origin/main, choose the next source-side audit-unblock surface not already covered by an open PR, and open the next dedicated physics-loop PR."

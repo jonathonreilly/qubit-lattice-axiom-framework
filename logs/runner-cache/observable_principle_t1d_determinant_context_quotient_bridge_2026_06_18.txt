@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py
+runner_sha256: a8a4847f690becc75ac248772d84c77032faa5c48955a1b8bc72c750c9912280
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+[PASS] same determinant witness is nontrivial: det=4 trace_pair=(5,4)
+[PASS] determinant context identifies same-det sectors: sector(A)=4 sector(B)=4
+[PASS] determinant quotient removes trace countermodel datum: W_det(A)=1.386294361120 W_det(B)=1.386294361120
+[PASS] trace-deformed additive readout is rejected by determinant quotient: W_eps differs on the same determinant fiber
+[PASS] second same-det witness also collapses: det=9 traces=(10,6)
+[PASS] direct sum determinant multiplies: det(A+E)=24 det(A)det(E)=24
+[PASS] log readout is additive on direct sums: W(A+E)=3.178053830348
+[PASS] scaled log family remains additive: c=5/3 representative satisfies the same product-to-sum law
+[PASS] unit determinant fixes additive baseline: W(1)=0.000000000000
+[PASS] context assigns distinct atoms to distinct source labels: atoms=['record:A', 'record:E', 'record:F']
+[PASS] disjoint source records have empty pairwise intersections: three labels give three record atoms
+[PASS] context rejects noninjective source labels: duplicate source label raises before Record additivity is invoked
+[PASS] noninjective source-to-record map is not the determinant context: shared-record assignment remains a separate no-go witness
+[PASS] trace-deformed readout is still direct-sum additive: additivity alone does not imply determinant quotient
+[PASS] trace-deformed readout fails quotient despite additivity: the quotient clause is independent and load-bearing
+[PASS] injective atom assignment does not force determinant quotient: blocks-to-records and determinant-only are independent clauses
+[PASS] finite product/additivity table passes: cases=4
+[PASS] context has fewer sectors than raw positive blocks when determinant fibers coincide: blocks=6 sectors=4
+[PASS] the bridge uses no fitted empirical constants: only exact positive rational blocks and the scale parameter c are used
+[PASS] runner preserves T1-d no-go boundary: minimal Record does not supply this determinant-sector context
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

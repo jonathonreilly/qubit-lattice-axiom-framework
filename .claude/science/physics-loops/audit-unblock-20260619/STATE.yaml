@@ -1,0 +1,66 @@
+loop_slug: audit-unblock-20260619
+block: 105
+mode: campaign
+date: "2026-06-20"
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block105-20260620
+branch: physics-loop/audit-unblock-block105-20260620
+base_ref: origin/main
+base_commit: dfcf72228ab7377d91f947be55196f6a43d387ba
+target_claim_id: emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18
+target_status: bounded-support source-side repair
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: false
+repo_lock:
+  mode: degraded_branch_local
+  status_command: python3 scripts/automation_lock.py status
+  failure: "[Errno 13] Permission denied: '/Users/jonreilly'"
+  safety_note: independent temporary worktree and dedicated branch used
+claim_row_after_pipeline:
+  claim_type: bounded_theorem
+  claim_type_author_hint_raw: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  criticality: leaf
+  load_bearing_score: 2.5
+  direct_in_degree: 1
+  transitive_descendants: 3
+  queue_index: 1094
+  queue_ready: true
+  audit_independence_required: any_non_self
+source_repair:
+  note_claim_type_before: exact_support_theorem_unrecognized
+  note_claim_type_after: bounded_theorem
+  note_type_before: exact_support_unrecognized
+  note_type_after: bounded_theorem
+  runner_checks_added: "source note declares audit-canonical bounded_theorem metadata"
+verification:
+  py_compile: pass
+  target_runner: "TOTAL: PASS=13 FAIL=0"
+  pipeline: pass
+  precompute_audit_runners: "1 ok, 0 nonzero_exit"
+  audit_packet_script_deps: pass
+  strict_audit_lint: "139 notices, 0 errors"
+  git_diff_check: pass
+review_loop:
+  disposition: "PASS WITH BOUNDED CLAIMS"
+  iterations: 1
+  subagents: "not spawned; user did not explicitly request delegated agents"
+  no_audit_verdicts_applied: true
+  audit_loop_run: false
+hashes:
+  note_sha256: 76988b419e1d9a01f67a20b4c8070db1b9652e50f4c66d449e0e901555bd0881
+  runner_sha256: e364a76d5c59126ae75f4631c588f69d5e0701e5b560e8e425900712e28ae97b
+  runner_cache_sha256: 89bf7671e35d101432ed2fda32ca2ffb92a0b7cc1436d52a0313a7777b6b043f
+  audit_ledger_sha256: 4922c54cd3bbab750603f09c7e7087f81a244c7af6ba8ee3f0aaa8607369f780
+  audit_queue_sha256: 90bf4cfd9b1fe0c831b6fa2f084fec7276191933a906a7f651d5507340d229da
+  audit_packet_script_deps_sha256: 54daf95005f8d1422690be6f000b3bd5d4856ec4ed714d12eaf8dbed239ca972
+pr:
+  status: pending
+  url: pending
+next_exact_action: "Commit Block105, push branch, open review PR, patch packet with PR URL, then continue with a fresh block from current origin/main."

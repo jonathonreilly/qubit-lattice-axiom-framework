@@ -233,3 +233,18 @@ spatial-only power-divergent mixing theorem, and the physical anomalous
 dimension/sufficiency bound. Without those, this row remains conditional
 support only. This repair introduces no custodial symmetry, observed bound,
 new axiom, or status promotion.
+
+## 2026-06-18 velocity-RG exchange-matrix support
+
+[`EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md`](EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md)
+supplies an exact exchange-matrix theorem for the algebraic one-loop
+velocity-flow form: given positive mutual-drag coefficients `a,b`, the
+common-speed line is fixed, `b v_F + a v_B` is invariant, and the
+speed-difference mode has eigenvalue `-(a+b)`.
+
+This retires the algebraic exchange-matrix step in the supplied RG packet. It
+does not derive the physical one-loop coefficients from framework
+interactions, the spatial-only power-divergent coefficient, the physical
+anomalous dimension, or LV-bound sufficiency. No audit status changes here;
+the row remains conditional support / open gate until those physical bridges
+are supplied and independently audited.

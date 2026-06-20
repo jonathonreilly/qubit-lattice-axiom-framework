@@ -26,7 +26,8 @@ full physical premise (4) bridge. Instead it:
 
 - exposes `H -> H + phi` as supplied by the retained-bounded
   [`SELF_CONSISTENCY_FORCES_POISSON_NOTE.md`](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md)
-  authority;
+  authority. The later 2026-06-18 repair below replaces this implicit routing
+  with an explicit scalar-shift sign and fixed-energy normalization bridge;
 - treats the Fermat identification `n = k/k_0` as the eikonal/WKB
   interpretation of a fixed-energy scalar dispersion packet, not as a new
   retained physical bridge;
@@ -71,6 +72,31 @@ nonlinear metric theorem, arbitrary-graph WKB closure, or an audit-ratified
 status change. Independent audit remains responsible for any effective-status
 movement.
 
+## 2026-06-18 Scalar-Shift Sign and Normalization Bridge Repair
+
+The latest fixed-energy bridge repair made the scalar generator step explicit:
+
+```text
+H_s = H_0 + s I.
+```
+
+This revision wires premise (4) to the one-hop source packet
+[`GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md`](GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md).
+That packet derives the `+s I` sign and the fixed-energy action normalization
+on the bounded one-axis scalar dispersion packet:
+
+```text
+phi_action = c_E s,
+c_E = 1/(k0 lambda_axis'(k0)).
+```
+
+Thus this premise-4 packet no longer asks audit to infer `H -> H + phi`
+directly from the older Poisson/source note. The scalar-shift bridge supplies
+the generator-sign and normalization step; the eikonal note supplies the
+phase-count step; the physical Newton normalization, arbitrary-graph WKB
+closure, nonlinear metric sector, and any effective-status change remain
+outside this source repair.
+
 The clean-chain note
 [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](GRAVITY_CLEAN_DERIVATION_NOTE.md)
 (retained_bounded) lists **premise (4)** — the weak-field test-mass response
@@ -105,9 +131,11 @@ observable was a different (Kubo) object.
 ## Theorem (bounded source-side repair proposal, runner-verified)
 
 Hypotheses for T1-T6: use the retained-bounded weak-field source-response
-bridge named above for the scalar source/action sign and the fixed-energy
-eikonal index bridge for the phase-count identity
-`n = k(phi)/k(0)` on this scalar dispersion packet. Under those bounded
+bridge named above for the scalar source/action sign, the 2026-06-18
+scalar-shift sign and fixed-energy normalization bridge for
+`H_s=H_0+sI` and `phi_action=c_E s`, and the fixed-energy eikonal index
+bridge for the phase-count identity `n = k(s)/k(0)` on this scalar dispersion
+packet. Under those bounded
 source-side bridge hypotheses:
 
 - **(T1)** dispersion shift: on `λ(k)=6−2Σ_μ cos k_μ`, solving `λ(k)+φ=E` gives
@@ -125,7 +153,7 @@ source-side bridge hypotheses:
   as a retained-bounded comparison authority for object separation, not as a
   dependency that supplies the physical Fermat bridge.
 
-`TOTAL: PASS=26 FAIL=0`.
+`TOTAL: PASS=30 FAIL=0`.
 
 ## What This Supplies / Does Not Claim
 
@@ -165,7 +193,8 @@ source-side bridge hypotheses:
 | `self_consistency_forces_poisson_note` | retained_bounded | Supplies the field-shift/Hamiltonian-response context. |
 | `finite_rank_source_to_metric_theorem_note` | retained_bounded | Supplies the exterior `phi_eff=a/r` source-potential packet. |
 | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | retained_bounded | Supplies the weak-field scalar source/action sign and test-source response boundary. |
-| `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | source-side repair proposal in this PR | Proves `n=k/k_0` as fixed-energy phase-count identity for the bounded scalar ray packet; independent audit must ratify any status effect. |
+| `gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18` | source-side repair proposal | Proves `H_s=H_0+sI` and `phi_action=c_E s` on the bounded fixed-energy scalar packet; independent audit must ratify any status effect. |
+| `gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16` | source-side repair proposal | Proves `n=k/k_0` as fixed-energy phase-count identity for the bounded scalar ray packet; independent audit must ratify any status effect. |
 | `lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07` | retained_bounded | Support-only heat-kernel route toward `1/(4πr)`. |
 | `lensing_exponent_is_a_dipole_crossover_resolution_bounded_theorem_note_2026-06-07` | retained_bounded | Comparison-only Kubo-vs-geometric distinction for T6; it does not supply the Fermat/eikonal bridge. |
 

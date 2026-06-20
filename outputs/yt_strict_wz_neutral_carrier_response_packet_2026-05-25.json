@@ -9,15 +9,19 @@
     "symbolic_top_response_row_present": true
   },
   "fail_count": 0,
-  "pass_count": 47,
+  "layer_split": {
+    "layer1_clean_ew_derivative_corollary": "standalone exact-support scope",
+    "layer2_carrier_source_identification": "conditional on unsupplied same-surface bridge (open bridge)"
+  },
+  "pass_count": 48,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "The W/Z denominator response closes and the symbolic top row is present, but the top coefficient, retained one-Higgs/hypercharge authority, and physical-scale g_2 authority remain open.",
+  "proposal_allowed_reason": "The layer-1 W/Z denominator response closes and the symbolic top row is present, but the layer-2 carrier-source identification depends on an unsupplied same-surface bridge, and the top coefficient, retained one-Higgs/hypercharge authority, and physical-scale g_2 authority remain open.",
   "review_surface": [
     "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
     "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py",
     "outputs/yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json"
   ],
-  "status": "exact support: strict W/Z denominator response rows on neutral carrier ray",
+  "status": "layer-1 exact support: strict W/Z denominator response rows on a stipulated local neutral EW radial coordinate; layer-2 carrier-source identification CONDITIONAL on an unsupplied same-surface bridge",
   "strict_wz_denominator_response_closed": true,
   "upstream_statuses": {
     "ew_coupling_status": "unaudited",

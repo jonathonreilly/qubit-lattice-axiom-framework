@@ -26,7 +26,10 @@ closure claim from this row.
 The clean claim of this note is the bounded demotion / bridge-corollary
 statement:
 
-- the MRU `SO(2)` quotient is not derived by the current framework surface;
+- the displayed spectral-observable route (Path A, Section 1) does not
+  derive the MRU `SO(2)` quotient; this note checks Path A only and does
+  not claim to have exhausted every alternative attack route against the
+  quotient — other routes remain open, not closed;
 - the spectrum-operator bridge gives the exact algebraic corollary from
   spectrum-side Koide `Q = 2/3` to operator-side `kappa = 2`;
 - the block-total Frobenius calculation is independent bounded support, but
@@ -50,6 +53,29 @@ Thus the non-`SO(2)`-invariant phase term is proportional to
 
 No audit verdict, ledger status, publication status, or repo-wide authority
 surface is changed by this source-side repair.
+
+## 2026-06-19 scope_too_broad repair
+
+Narrowed the no-go to the explicit Path A failure plus the
+bridge-corollary (`kappa = 2`) algebra; remaining attack routes are framed
+as open, not exhausted; no derived value changed.
+
+Concretely, the verdict in Section 1.2, the demotion item in Section 3, the
+clean-claim bullet in the 2026-06-18 repair, and the not-claimed item in
+Section 6 previously read as if the SO(2)-quotient were not derivable by
+any retained framework theorem. This note actually checks only Path A —
+the displayed spectral-observable route from the retained observable
+principle — and the audited content is exactly: (i) Path A does not derive
+the SO(2)-quotient (spectrum-native scalar observables are not
+SO(2)-invariant on `Herm_circ(3)` in general), and (ii) the
+spectrum-operator bridge corollary carries spectrum-side Koide
+`Q = 2/3` to operator-side `kappa = 2` with symbolic zero residual. The
+broader "alternative attack routes are exhausted" reading was not checked
+and has been removed; other attack routes against the quotient remain
+open, not closed.
+
+Status authority: independent audit lane only. This source note does not
+set or predict an audit outcome.
 
 ## Cited authorities (one hop)
 
@@ -176,9 +202,13 @@ choice — it is exactly the same SO(2) postulate written in a different
 coordinate system ("use only `arg(b)`-independent invariants"). That is
 the circular restatement the reviewer audit flagged.
 
-**Verdict.** Path A cannot close at the Nature bar. The SO(2)-quotient
-is not a corollary of any retained framework theorem currently on main
-or on this branch.
+**Verdict.** Path A — the displayed spectral-observable route from the
+retained observable principle — cannot close at the Nature bar: the
+SO(2)-quotient is not a corollary of the retained observable principle
+along this route. This note checks Path A only; it does not survey or
+exhaust every alternative attack route against the SO(2)-quotient. Other
+attack routes (for example a future result that decouples the
+`cos(3 arg b)` channel, cf. Section 6) remain open, not closed.
 
 ---
 
@@ -280,11 +310,13 @@ Effective from this note:
    reclassified as **supplementary / alternative-framing support**
    rather than load-bearing theorems.
 
-2. **The MRU closure argument assumes a postulate not derivable from
-   retained framework theorems.** Specifically, the scalar-lane
-   SO(2)-quotient of the doublet frame is not a consequence of the
-   retained observable principle (spectrum-native scalar observables
-   are **not** SO(2)-invariant on `Herm_circ(3)` in general).
+2. **The MRU closure argument assumes a postulate that the displayed
+   Path A route does not derive.** Specifically, along Path A the
+   scalar-lane SO(2)-quotient of the doublet frame is not a consequence
+   of the retained observable principle (spectrum-native scalar
+   observables are **not** SO(2)-invariant on `Herm_circ(3)` in general).
+   This is the Path-A finding; it does not assert that no other attack
+   route could derive the quotient — alternative routes are left open.
 
 3. **The spectrum-operator bridge theorem is the primary exact
    bridge-corollary route** for operator-side `kappa = 2`. It carries the
@@ -354,8 +386,10 @@ in mind:
 1. This note does not claim that the SO(2)-quotient is **false**. It
    may still be physically correct — e.g. if a future retained result
    establishes that the charged-lepton scalar lane decouples the
-   `cos(3 arg b)` channel. What is claimed is only that no currently
-   retained framework theorem delivers it.
+   `cos(3 arg b)` channel. What is claimed is only that the displayed
+   Path A route (Section 1) does not deliver it. This note does not
+   exhaust the alternative attack routes against the quotient; those
+   remain open.
 2. This note does not invalidate the two MRU notes as technical
    documents. Their calculations remain correct within the conditional
    "assume SO(2)-quotient, then...". What changes is only their status

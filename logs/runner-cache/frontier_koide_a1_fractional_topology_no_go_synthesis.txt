@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_a1_fractional_topology_no_go_synthesis.py
+runner_sha256: c12c388df888c7ac5ebf1bf104e97c23ec127663d2ee2f85054f1b06082804e6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
+Koide A1 fractional-topology no-go synthesis aggregate verifier
+==============================================================================
+Scope: aggregate the five existing PASS-only obstruction probes.
+Status: runner certificate only; independent audit owns verdicts.
+
+[PASS] O13 Cheeger-Simons R/Z period inheritance: return=0; PASS=49; FAIL=0; expected_PASS=49
+[PASS] O14 orbifold-Chern pi-factor inheritance: return=0; PASS=54; FAIL=0; expected_PASS=54
+[PASS] O15 eta mod-Z vs phase mod-2pi gap: return=0; PASS=47; FAIL=0; expected_PASS=47
+[PASS] O16 many-body promotion cost: return=0; PASS=59; FAIL=0; expected_PASS=59
+[PASS] O17 cyclotomic exponent vs rational mismatch: return=0; PASS=34; FAIL=0; expected_PASS=34
+
+FRACTIONAL_TOPOLOGY_PACKET=5_PROBES_ALL_OBSTRUCTION_CONFIRMED
+LOAD_BEARING_ROLE=no-go packet aggregation, not new status authority
+TOTAL: PASS=5, FAIL=0
+
+----- stderr -----
+

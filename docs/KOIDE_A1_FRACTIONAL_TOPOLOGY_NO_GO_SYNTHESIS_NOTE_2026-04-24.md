@@ -7,6 +7,10 @@ focused math-literature audit on fractional-rational topological invariants.
 **Status:** **5 probes, all NO-GO.** The audit note's residual primitive
 `P_A1` is sharpened from "Type-B rational-to-radian observable law" to a
 one-line statement of a single convention choice.
+**Claim type:** no_go
+**Status authority:** independent audit lane only; this source note and
+its runner do not set or predict an audit verdict.
+**Primary runner:** `scripts/frontier_koide_a1_fractional_topology_no_go_synthesis.py`
 **Runners (all PASS = obstruction-confirmed):**
 - `scripts/frontier_koide_a1_orbifold_chern_probe.py` (54/54)
 - `scripts/frontier_koide_a1_eta_to_radian_lift_probe.py` (47/47)
@@ -237,6 +241,53 @@ P_A1_IF_DELTA_IS_READ_DIRECTLY_REQUIRES_PERIOD_1_RAD_CONVENTION=TRUE
 ROUND_10_FRACTIONAL_TOPOLOGY_PROBES=5_ALL_NO_GO
 NEW_OBSTRUCTION_CLASSES_THIS_ROUND=O13,O14,O15,O16,O17
 ```
+
+---
+
+## No-Go Discipline Gate
+
+This gate is source-side scope control, not an audit verdict. The negative
+claim is only that the five audited fractional-topology routes do not derive
+the literal `2/9` radian bridge without restating `P_A1`.
+
+**N1 -- Alternative routes.** Five attack routes were tested: orbifold Chern,
+eta-to-radian lift, fractional-QH analogy, twisted equivariant K-theory, and
+Cheeger-Simons R/Z characters. Each route has an existing PASS-only probe in
+the aggregate runner and fails for the obstruction class named above.
+
+**N2 -- Wall independence.** The collapsed wall is the Type-B-to-literal-radian
+period convention. The five probes are independent formalisms, but they all
+reduce to the same missing period-identification bridge rather than five new
+axioms or five independent primitives.
+
+**N3 -- Hidden-wall scan.** The tempting hidden moves are stripping the
+canonical `2π`, importing an unretained `Z_3 x Z_3`, treating a rational
+topological invariant as a literal radian, or moving from a mod-Z invariant to
+a phase angle without the canonical exponential. Each is named in the probes.
+
+**N4 -- Residual matching.** The residual is the Koide A1 radian bridge:
+turning the Type-B rational `2/9` into the Type-A literal Yukawa phase
+`2/9` radians. The note does not attack unrelated Koide routes.
+
+**N5 -- Rhetoric audit.** "All no-go" means all five named fractional-topology
+routes fail. It does not mean every imaginable future mathematics route or
+owner-approved primitive is closed.
+
+**N6 -- Partial-closure path scan.** A legitimate closure path would derive or
+explicitly approve the period-1 radian convention for this observable, or find
+a different retained bridge that supplies a literal rational radian without
+canonical `2π` phase normalization. This note does not propose such an
+approval.
+
+**N7 -- Steelman.** A future theory might supply a framework-native period-1
+character for the selected Yukawa phase, making `χ'(c)=exp(i c)` a retained
+observable convention rather than a postulate. That would be a real repair;
+none of the five audited fractional-topology formalisms supplies it.
+
+**N8 -- Cross-cycle echo.** This is the same structural pattern as earlier
+radian-bridge and Lindemann-wall no-gos: rational topological data are real,
+but canonical phase extraction gives rational multiples of `π`, not pure
+rational radians.
 
 ---
 

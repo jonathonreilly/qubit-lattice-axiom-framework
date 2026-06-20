@@ -1,24 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_interacting_matter_build_2026_05_30.py
-runner_sha256: c593f6ee47231ce67e3cdc606ef37d361a35742741f0300fcc69ee57f5e7b861
+runner_sha256: 8dc46adcaa741b72e7fcbc4743a7b837383dfb26b36d251ded743a6d0900bc1d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-FLAVOR INTERACTING MATTER BUILD: EXECUTABLE CORE SPLIT
-scope: exact epsilon/Q/C3 finite algebra; external interacting branches are context only
+FLAVOR INTERACTING MATTER BUILD: AUDIT-NAMED SPLIT (verified epsilon/Q core | conditional C3-wall)
+scope: verified core = exact epsilon/Q finite algebra; C3-wall + interacting branches are conditional/diagnostic
+
+--- VERIFIED CORE: epsilon/Q finite algebra (load-bearing) ---
 [PASS] E1 epsilon is constant on the hw=1 generation orbit -- eps(hw1)=[-1, -1, -1]
 [PASS] E2 epsilon as the (pi,pi,pi) shift maps hw=1 out of the triplet to hw=2 -- shifted Hamming weights=[2, 2, 2]
-[PASS] E3 C3 cycle has order 3
-[PASS] E4 C3-invariant diagonal generation operators are scalar -- diagonal invariant dimension=1
-[PASS] E5 non-scalar diagonal orbit splitting requires C3 breaking -- commutator norm=2.449
 [PASS] Q formula holds for r=0.000 -- Q=0.333333
 [PASS] Q formula holds for r=0.400 -- Q=0.600000
 [PASS] Q formula holds for r=0.500 -- Q=0.666667
 [PASS] Q formula holds for r=0.535 -- Q=0.690000
 
-Contextual r values converted through the checked Q formula:
+--- CONDITIONAL / DIAGNOSTIC: C3-wall obstruction (NOT load-bearing) ---
+[PASS] C3-1 C3 cycle has order 3
+[PASS] C3-2 C3-invariant diagonal generation operators are scalar -- diagonal invariant dimension=1
+[PASS] C3-3 non-scalar diagonal orbit splitting requires C3 breaking -- commutator norm=2.449
+
+Contextual r values converted through the checked Q formula (context only):
   natural C3-symmetric/self-dual input: r=0.000000, Q=0.333333
   reported SD/Fierz off-self-dual input: r=0.400000, Q=0.600000
   reported two-channel onset input: r=0.535000, Q=0.690000
@@ -28,7 +32,10 @@ CONTEXT ONLY: this runner does not derive the three interacting builds,
 critical coupling, continuous r(g) curve, or b!=0 branch. Those remain
 external build summaries until a first-principles matter-action runner lands.
 
-SCORECARD PASS=9 FAIL=0
+VERIFIED-CORE SUBTOTAL  PASS=6 FAIL=0
+CONDITIONAL SUBTOTAL    PASS=3 FAIL=0
+
+TOTAL SUMMARY PASS=9 FAIL=0
 
 ----- stderr -----
 

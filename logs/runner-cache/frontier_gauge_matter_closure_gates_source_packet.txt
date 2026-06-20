@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_matter_closure_gates_source_packet.py
+runner_sha256: c70baa2be3f2aaf60f45ba0d9f13c2eadfb0de26bb75f6de3ccb866f7c962aef
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+GAUGE/MATTER CLOSURE GATES SOURCE PACKET
+==============================================================================
+
+Question: is the old gates memo auditable as a superseded route
+memo, with canonical replacement authorities and guardrails named?
+
+[PASS] gates note title is present: # Gauge/Matter Closure Gates
+[PASS] gates note is explicitly superseded: superseded route memo
+[PASS] gates note is not canonical authority: no longer the canonical main-branch authority
+[PASS] primary runner metadata names this verifier: Primary runner: `scripts/frontier_gauge_matter_closure_gates_source_packet.py`
+[PASS] primary cache metadata names this verifier output: logs/runner-cache/frontier_gauge_matter_closure_gates_source_packet.txt
+[PASS] historical closed-language firewall is present: historical route-memo language
+[PASS] closed/paper-ready/retained-core terms are historical only: not current
+audit-status claims
+[PASS] audit authority firewall is present: independent audit lane
+[PASS] LEFT_HANDED_CHARGE_MATCHING_NOTE.md exists: docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md
+[PASS] LEFT_HANDED_CHARGE_MATCHING_NOTE.md named by gates memo: LEFT_HANDED_CHARGE_MATCHING_NOTE.md
+[PASS] ONE_GENERATION_MATTER_CLOSURE_NOTE.md exists: docs/ONE_GENERATION_MATTER_CLOSURE_NOTE.md
+[PASS] ONE_GENERATION_MATTER_CLOSURE_NOTE.md named by gates memo: ONE_GENERATION_MATTER_CLOSURE_NOTE.md
+[PASS] THREE_GENERATION_STRUCTURE_NOTE.md exists: docs/THREE_GENERATION_STRUCTURE_NOTE.md
+[PASS] THREE_GENERATION_STRUCTURE_NOTE.md named by gates memo: THREE_GENERATION_STRUCTURE_NOTE.md
+[PASS] left-handed note refuses retained promotion: does not
+propose a retained / positive_theorem promotion
+[PASS] left-handed note names scale-free scope: structural eigenvalue ratio
+[PASS] left-handed note keeps convention boundary: Normalization-convention boundary
+[PASS] one-generation note is bounded theorem typed: **Type:** bounded_theorem
+[PASS] one-generation note is bounded conditional: bounded conditional one-generation completion
+[PASS] one-generation note keeps branch convention boundary: Neutral-singlet branch-selection boundary
+[PASS] three-generation note is bounded theorem typed: **Type:** bounded_theorem
+[PASS] three-generation note has narrowed claim scope: No-rooting,
+physical-species interpretation
+[PASS] three-generation note has explicit non-claims: ## Explicit Non-Claims
+[PASS] scripts/frontier_graph_first_su3_integration.py exists: scripts/frontier_graph_first_su3_integration.py
+[PASS] logs/runner-cache/frontier_graph_first_su3_integration.txt exists: logs/runner-cache/frontier_graph_first_su3_integration.txt
+[PASS] scripts/frontier_graph_first_su3_integration.py cache names same runner: scripts/frontier_graph_first_su3_integration.py
+[PASS] scripts/frontier_graph_first_su3_integration.py cache status ok: ok
+[PASS] scripts/frontier_graph_first_su3_integration.py cache exit code zero: 0
+[PASS] scripts/frontier_graph_first_su3_integration.py cache sha is fresh: cache=d6a4d0a631b91dca9350689476b8e180b0f8d32033564c4da239ad2b8557ff58
+[PASS] scripts/frontier_graph_first_su3_integration.py cache contains required fragment: PASS=111 FAIL=0
+[PASS] scripts/frontier_graph_first_su3_integration.py cache contains required fragment: graph-first route to the color lane
+[PASS] scripts/frontier_anomaly_forces_time.py exists: scripts/frontier_anomaly_forces_time.py
+[PASS] logs/runner-cache/frontier_anomaly_forces_time.txt exists: logs/runner-cache/frontier_anomaly_forces_time.txt
+[PASS] scripts/frontier_anomaly_forces_time.py cache names same runner: scripts/frontier_anomaly_forces_time.py
+[PASS] scripts/frontier_anomaly_forces_time.py cache status ok: ok
+[PASS] scripts/frontier_anomaly_forces_time.py cache exit code zero: 0
+[PASS] scripts/frontier_anomaly_forces_time.py cache sha is fresh: cache=7463158a3b1e3b66d113cb15ec9bda608a7925747d107329d32b77898c5eee00
+[PASS] scripts/frontier_anomaly_forces_time.py cache contains required fragment: TOTAL: PASS=90 FAIL=0
+[PASS] scripts/frontier_anomaly_forces_time.py cache contains required fragment: Declared imports (never computed here)
+[PASS] scripts/frontier_right_handed_sector.py exists: scripts/frontier_right_handed_sector.py
+[PASS] logs/runner-cache/frontier_right_handed_sector.txt exists: logs/runner-cache/frontier_right_handed_sector.txt
+[PASS] scripts/frontier_right_handed_sector.py cache names same runner: scripts/frontier_right_handed_sector.py
+[PASS] scripts/frontier_right_handed_sector.py cache status ok: ok
+[PASS] scripts/frontier_right_handed_sector.py cache exit code zero: 0
+[PASS] scripts/frontier_right_handed_sector.py cache sha is fresh: cache=9a848a6197d3867d7f15593607de55b1e405eaf48b19fcaa780ed4c237bb76b9
+[PASS] scripts/frontier_right_handed_sector.py cache contains required fragment: Passed: 61
+[PASS] scripts/frontier_right_handed_sector.py cache contains required fragment: Failed: 0
+[PASS] scripts/frontier_right_handed_sector.py cache contains required fragment: neutral-singlet
+     branch convention
+[PASS] scripts/frontier_three_generation_structure_narrow_spectrum.py exists: scripts/frontier_three_generation_structure_narrow_spectrum.py
+[PASS] logs/runner-cache/frontier_three_generation_structure_narrow_spectrum.txt exists: logs/runner-cache/frontier_three_generation_structure_narrow_spectrum.txt
+[PASS] scripts/frontier_three_generation_structure_narrow_spectrum.py cache names same runner: scripts/frontier_three_generation_structure_narrow_spectrum.py
+[PASS] scripts/frontier_three_generation_structure_narrow_spectrum.py cache status ok: ok
+[PASS] scripts/frontier_three_generation_structure_narrow_spectrum.py cache exit code zero: 0
+[PASS] scripts/frontier_three_generation_structure_narrow_spectrum.py cache sha is fresh: cache=acfc459efc1a8a8fb8d28f9bfd2c519169f4b9b4ccc207d5b31cd78c6bab3774
+[PASS] scripts/frontier_three_generation_structure_narrow_spectrum.py cache contains required fragment: PASS=15 FAIL=0
+[PASS] scripts/frontier_three_generation_structure_narrow_spectrum.py cache contains required fragment: This row does not claim physical-lattice necessity
+[PASS] scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py exists: scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py
+[PASS] logs/runner-cache/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.txt exists: logs/runner-cache/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.txt
+[PASS] scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py cache names same runner: scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py
+[PASS] scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py cache status ok: ok
+[PASS] scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py cache exit code zero: 0
+[PASS] scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py cache sha is fresh: cache=b11cd56dd254c3518e2d29713b2ad9f5ecd36cc130b33e885e617cf42505563b
+[PASS] scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py cache contains required fragment: TOTAL: PASS=26, FAIL=0
+[PASS] scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py cache contains required fragment: Discrete e_R <-> nu_R relabelling branch is anomaly-consistent
+
+==============================================================================
+SUMMARY: PASS=64 FAIL=0
+==============================================================================
+
+Verdict: bounded source-packet support. The old gates memo is
+runner-backed as a superseded route memo pointing to canonical
+bounded/conditional replacement authorities. No audit verdict or
+retained status is assigned.
+
+----- stderr -----
+

@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_reduced_a2_subleading_sign_rung_nineteen_bounded_2026_06_12.py
+runner_sha256: 53c119862f34865e17b392c3759a653e5ad3e9426cb683e13fb25eccd46def5c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.82
+status: ok
+----- stdout -----
+Native gauge-transfer reduced-A2 subleading-sign rung nineteen runner
+Finite spectral rows are fenced witnesses; algebraic checks carry the note.
+
+PASS: note carries exact status-authority line
+PASS: note declares controlled claim type and source-side boundary
+PASS: note refuses imports and value-from-target promotion
+PASS: one-hop authority links are present
+PASS: quote anchors include retained correction and leading equality clauses
+PASS: note gives explicit T1 and T2 saddle-surrogate formulas
+PASS: note names exact Wilson caveat before sign claim
+PASS: note does not claim half-integer cancellation or subleading sign
+PASS: note includes both ambiguity readings
+PASS: note differentiates new material from prior notes
+PASS: note includes no-go discipline gate
+PASS: note avoids forbidden overreach phrases
+PASS: note avoids audit-grade/status assertions
+exact_falsifier_values
+  leading virial constant: 3/2
+  correct derivative k=3 at (10,20,100): 79/10
+  wrong derivative k=2 at (10,20,100): 38/5
+PASS: leading virial constant is exact 3/2
+PASS: correct fixed-weight derivative sample is exact 79/10
+PASS: wrong saddle correction visibly changes derivative sample
+local_saddle_correction_values_at_x1_y2
+  correct P1: -41/2
+  wrong N_c=2 P1: -23/2
+  wrong dimension omitted P1: -27
+  correct P2: 135/2
+  wrong N_c=2 P2: 39/2
+  wrong dimension omitted P2: 243/2
+PASS: correct P1 sample is exact -41/2
+PASS: wrong N_c changes P1 visibly
+PASS: wrong dimension omission changes P1 visibly
+PASS: correct P2 sample is exact 135/2
+PASS: wrong N_c changes P2 visibly
+PASS: wrong dimension omission changes P2 visibly
+PASS: swap parity preserves P1 rather than cancelling it
+      P1(1,2)-P1(2,1)=0, P1(1,2)=-41/2
+PASS: symbolic expansion gives retained P1
+PASS: symbolic expansion gives retained P2
+PASS: P1 is mixed-degree, so scalar homogeneity does not repeat W97
+      degrees=[2, 4]
+PASS: P2 is mixed-degree, so beta^-1 Ward step needs more data
+      degrees=[1, 3, 5]
+PASS: symbolic P1 is swap-even
+PASS: [D,L] = -2L on polynomial test
+PASS: [D,C4] = -4C4 on polynomial test
+PASS: heat side has no beta^-1/2 term in the paired six-neighbor expansion
+PASS: C4 exact coefficient row is present
+fenced_w90_style_witness_rows
+  beta= 30 shell=21 cJ_minus_cD=0.054996208392 beta_times_margin=1.649886251770
+  beta= 60 shell=28 cJ_minus_cD=0.027650892544 beta_times_margin=1.659053552666
+  beta=120 shell=37 cJ_minus_cD=0.014369272446 beta_times_margin=1.724312693536
+PASS: finite witness margins are positive on the small W90-style grid
+PASS: finite beta*(margin) rows are printed as witnesses, not proof inputs
+      beta*(margin)=[1.649886, 1.659054, 1.724313]
+PASS: runner contains no fitted target machinery
+PASS: exact rationals are constructed from integer Fraction inputs, not floats
+PASS: final note scope excludes continuum, beta=6, Clay, and audit outcome claims
+
+TOTAL: PASS=37, FAIL=0
+
+----- stderr -----
+

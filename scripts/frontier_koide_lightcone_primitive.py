@@ -40,9 +40,15 @@ consumed; the runner verifies only the algebraic equivalence.
 
 from __future__ import annotations
 
+from pathlib import Path
 import sys
 
 import sympy as sp
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md"
+NOTE_TEXT = NOTE_PATH.read_text(encoding="utf-8")
+NOTE_FLAT = " ".join(NOTE_TEXT.split())
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -423,6 +429,14 @@ def main() -> int:
     print("LCC is the null cone in (1, 2)-signature: a² - x² - y² = 0")
     print("with x = √2 Re(b), y = √2 Im(b).")
     print()
+
+    check(
+        "(0) source note declares canonical positive_theorem metadata and independent audit authority",
+        "**Type:** positive_theorem" in NOTE_TEXT
+        and "**Claim type:** positive_theorem" in NOTE_TEXT
+        and "**Status authority:** independent audit lane only." in NOTE_FLAT
+        and "does not set or predict an audit outcome" in NOTE_FLAT,
+    )
 
     part1_cyclic_shift()
     part2_z3_equivariant_operator()

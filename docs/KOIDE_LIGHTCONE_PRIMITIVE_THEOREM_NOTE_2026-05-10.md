@@ -3,6 +3,7 @@
 **Date:** 2026-05-10
 
 **Type:** positive_theorem
+**Claim type:** positive_theorem
 **Claim scope:** for any positive real 3-vector `v = (v_1, v_2, v_3) ∈ R^3_{>0}`,
 if `v` is the eigenvalue vector of a Z_3-equivariant Hermitian operator
 `A` on a 3-dimensional space (i.e., `A = a I + b R + c R²` where R is the

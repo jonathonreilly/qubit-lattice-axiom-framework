@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_acphilambda_r_eta_w2_registrability_context_bridge_2026_06_18.py
+runner_sha256: 9a73b87fc4381f8adcbeb0c59f0e289c75be11605019ad78c32be68de604231d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.40
+status: ok
+----- stdout -----
+
+========================================================================================
+A0 - target blocker and source boundaries
+========================================================================================
+[PASS] parent names the W2-type standing premise this packet targets
+[PASS] minimal Record axiom supplies additivity/orbit but no readout context
+[PASS] realized-state primitive is pointwise and supplies no selector
+
+========================================================================================
+A1 - supplied three-sector circulant context
+========================================================================================
+[PASS] H(delta) is Hermitian
+[PASS] K/CPT conjugation sends H(delta) to H(-delta)
+[PASS] Fourier P_k are finite orthogonal idempotents, sum to I, and commute with H
+[PASS] K/CPT conjugates sectors by k -> -k
+
+========================================================================================
+A2 - finite Record additivity on the supplied sector family
+========================================================================================
+[PASS] scalar readout over finite disjoint sector collections is additive -- all disjoint subset pairs checked
+[PASS] additivity check is record additivity only, not probability/Born/dynamics -- no weights are interpreted as probabilities or derived physical values
+
+========================================================================================
+A3 - K-even symmetric readout and K-odd orientation line
+========================================================================================
+[PASS] e1,e2,e3 are K-even symmetric readout data
+[PASS] e3 carries delta only through cos(3 delta) -- e3=2*B**3*cos(3*delta) - 3*B**2*a + a**3
+[PASS] unique degree-three orientation line is proportional to sin(3 delta) -- u-v=-6*sqrt(3)*B**3*sin(3*delta)
+[PASS] orientation line is K-odd and has zero additive-plus-even content
+
+========================================================================================
+A4 - hw-complement readings preserve registrable scalar content
+========================================================================================
+[PASS] complement maps hw=1 to hw=2 and commutes with C3 rotation
+[PASS] hw=1/hw=2 complement readings have the same unordered spectrum/symmetric functions
+
+========================================================================================
+A5 - supplied context plus realized records makes assignment registered data
+========================================================================================
+[PASS] nondegenerate realized records leave exactly one sector-to-pattern assignment
+[PASS] K-conjugate realized record is law-admissible and changes assignment data -- k=1 and k=2 exchanged; pointwise assignment is registered data
+[PASS] assignment classification uses realized-state primitive without deriving a selector -- context + records determine the registered assignment; no state-selection rule is supplied
+
+========================================================================================
+A6 - note firewall and dependency sanity
+========================================================================================
+[PASS] note carries required boundary phrase: source-side bounded support only
+[PASS] note carries required boundary phrase: closes only piece 1
+[PASS] note carries required boundary phrase: Piece 2 remains the named carrier-gate / chirality-gate residual
+[PASS] note carries required boundary phrase: The value atom `A_R-eta` remains admitted
+[PASS] note carries required boundary phrase: No new axiom, primitive, admission, normalization, probability rule
+[PASS] note carries required boundary phrase: does not set or predict the downstream status
+[PASS] note carries required boundary phrase: physical carrier/context realization plus R-eta value
+[PASS] overclaim phrase absent: Status: retained
+[PASS] overclaim phrase absent: proposed_retained
+[PASS] overclaim phrase absent: promote the parent
+[PASS] overclaim phrase absent: retire `A_R-eta` outright
+[PASS] overclaim phrase absent: we derive `|delta| = 2/9`
+[PASS] overclaim phrase absent: this moves the parent R-eta claim to unbounded
+[PASS] dependency source exists: REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md
+[PASS] dependency source exists: ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md
+[PASS] dependency source exists: ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md
+[PASS] dependency source exists: ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+
+========================================================================================
+TOTAL: PASS=35 FAIL=0
+========================================================================================
+
+----- stderr -----
+

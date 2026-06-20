@@ -257,6 +257,18 @@ isolated as the atom.
 - **No comparator consumed.** No PDG/fitted/measured value enters; the
   sibling chain note's mass comparator (E4) is not used.
 
+## Source-side W2/readout-context bridge (2026-06-18)
+
+[`ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md`](ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md)
+is a later source-side bounded support packet for one soft spot named below:
+the standing W2-type premise that the supplied charged-lepton readout context
+satisfies Record registrability constraints. That bridge checks the supplied
+finite AC_phi_lambda slot/circulant context as a Record-registrable context and
+therefore narrows the residual to the physical carrier/context realization
+plus the unchanged `A_R-eta` h-class/h-unit value atom. It does not retire this
+admission, derive `|delta| = 2/9`, edit the Tier-A registry, or set/predict any
+downstream status.
+
 ## Honest-auditor-read
 
 An auditor should read this note as: *a bounded structural theorem that

@@ -11,9 +11,9 @@ deadline_epoch: 1782006241
 base_commit: 9469e8251
 
 cycle_count: 1
-block_count: 3
-active_block: 03
-active_block_branch: physics-loop/anomaly-abj-bridge-block03-20260620
+block_count: 5
+active_block: 05
+active_block_branch: physics-loop/anomaly-abj-bridge-block05-20260620
 block01_result: >
   CLOSED. Per-edge fresh attempts (P-HY/P-COMP/P-REC/P-ABJ) + bankability check.
   NO CRACK. 5 runners 222 PASS / 0 FAIL. THREE bankable arithmetic cores
@@ -35,6 +35,7 @@ revised_block_plan:
   - block02: DONE — exercise-route verification (PR-A/B/D + synthesis PASS=29); 1 partial reframe, 2 sharper KILLs
   - block03: DONE — ASSEMBLY: 3 deps-all-retained keystone-decoupled bank notes (P-HY PASS=63, P-COMP PASS=40, P-REC PASS=40) + unified four-edge hybrid obstruction note + consolidated verification runner PASS=94/0
   - block04: PENDING — owner/audit packaging (Decisions A bank cores / H alpha-convention lemma / I P-ABJ external) + final report
+  - block05: DONE — FRONTIER: two live supply-side rays (Decision F) attacked decisive-failure-first. NO crack. S1 (P-REC supply, real Cl(3,1)=M4(R)+Record J) PASS=40/0 + P-ABJ chi!=0 (A_min-native curvature) PASS=23/0 = two sharper walls + registered-data classification of induced holonomy. Deliverable note + CLAIM_STATUS_CERTIFICATE_block05 + NO_GO_LEDGER append.
 
 block03_result: >
   CLOSED. Three deps-all-retained, keystone-decoupled bounded-theorem banks
@@ -50,9 +51,34 @@ block03_result: >
   keystone; four identification walls stand; ONE partial unlock. No protected
   surface edited; no git ops.
 
+block05_result: >
+  CLOSED. FRONTIER: the two live supply-side rays of the 1105 cone (Decision F)
+  attacked decisive-failure-first. NO CRACK of the keystone on either; both honest
+  frontier negatives (trace_class=frontier_discovery/negative_route_pruning), sharper
+  walls not closures. RAY S1 (P-REC SUPPLY side): the single-taste selector is NOT
+  derivable from the real Majorana reduction Cl(3,1)=M4(R) + Record's antilinear K/CPT
+  J — the K-real taste form is the quaternionic M2(H) with ZERO rank-4 single-taste
+  idempotents (count 0, never 1 across the J=U_J*K family => family-invariant
+  negative); SHARPER than block01/02 (selector intrinsically complex and DELETED, not
+  merely ambiguous); consumer reframe untouched and reinforced (Gamma5^spin K-fixed/
+  J-invariant). Runner frontier_abj_prec_supply_side_majorana_J_real_selector PASS=40/0.
+  RAY P-ABJ chi!=0 (A_min-native curvature, internal route): NO native chi!=0/Q!=0 —
+  Z_tau/twisted gluing leave chi=0 (gluing-invariant cell count), induced holonomy is
+  realized-state REGISTERED DATA with no native topological charge (any winding is
+  path-choice data), the only positive chi!=0 objects are admitted curvature; wall
+  sharpened/broadened to flat-cubic + TRANSLATION-INVARIANT Lattice axiom. Runner
+  frontier_abj_chi_native_curvature_routes PASS=23/0. Deliverable
+  docs/ANOMALY_FORCES_TIME_ABJ_FRONTIER_RAYS_NOTE_2026-06-20.md +
+  CLAIM_STATUS_CERTIFICATE_block05.md + NO_GO_LEDGER append + this STATE update. All
+  block01/02/03 + absorbed runners cited by path+PASS, not rebuilt. Keystone + parent
+  CONTEXT-ONLY (unaudited). No new axiom/primitive; no empirical inputs; no protected
+  surface edited (docs/audit/data READ-ONLY); no git ops. Neither ray unlocks the cone;
+  no owner-packet crack-addendum warranted; no exercise-skill run warranted on either
+  new wall (both fully worked, N1>=5 + N7 met). Independent audit lane sole authority.
 next_exact_action: >
   Block04 — owner/audit packaging: route the three deps-all-retained bank notes to
   the independent audit lane (retained_pending_chain shape, SM_ANOMALY_CLOSURE
   precedent); record Decisions A (bank cores) / H (alpha-convention lemma) /
-  I (P-ABJ external admission); final report.
+  I (P-ABJ external admission) / F (two supply-side rays = sharper walls, no crack);
+  final report.
 stop_condition: runtime/deadline ~21:44 EDT, all blocks closed, or a crack pivots.

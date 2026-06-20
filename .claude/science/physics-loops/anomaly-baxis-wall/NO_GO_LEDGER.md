@@ -294,3 +294,98 @@ Block 03 sets no row/effective status, asserts no "retained"/"promoted" standing
 (Type:/Claim type: only), and does not edit `docs/audit/**`, AUDIT_LEDGER/QUEUE,
 MISSING_DERIVATION_PROMPTS, or `docs/publication/**`. `docs/audit/data/` parsed
 READ-ONLY. The independent audit lane is the sole authority.
+
+---
+
+# Block 05 (frontier) — Two Live Supply-Side Rays (2026-06-20)
+
+Branch `physics-loop/anomaly-abj-bridge-block05-20260620`. Per Decision-F, the two
+live supply-side rays of the 1105 cone were attacked decisive-failure-first. NO
+crack of the keystone on either; both are honest frontier negatives
+(`trace_class = frontier_discovery / negative_route_pruning`) — sharper walls, not
+closures. Deliverable note:
+`docs/ANOMALY_FORCES_TIME_ABJ_FRONTIER_RAYS_NOTE_2026-06-20.md`
+(Type: frontier_discovery + negative_route_pruning; Claim type: no_go; non-bare
+Status; proposal_allowed=false; audit_required_before_effective_retained=true;
+independent_audit_lane_sole_authority=true). Keystone + parent CONTEXT-ONLY (both
+unaudited); all load-bearing facts recomputed in-tree.
+
+## RAY S1 — P-REC SUPPLY-SIDE single-taste selector under the real Majorana reduction (SHARPER no-go; no crack)
+
+- **No-go (sharper wall; supply side — distinct from the block02 consumer reframe):**
+  the single-taste / irreducible-Dirac-factor selector is NOT derivable from the
+  real reduction `Cl(3,1)=M₄(R)` + Record's antilinear K/CPT `J`. Imposing `J`-reality
+  on the `M₄(C)` taste commutant yields **ZERO** `J`-real rank-4 single-taste
+  projectors (not 1 ⇒ no crack; not ≥2 ⇒ not even the block01 ambiguity). The K-real
+  taste form is the **quaternionic `M₂(H)`** (Artin–Wedderburn degenerate M4(R)/M2(H)
+  at dim_R 16, tiebroken by minimal real idempotent rank = 8, Kramers `[8,8]`), where
+  rank-4 Dirac idempotents are FORBIDDEN. The rank-4 single-taste object is
+  intrinsically complex and DELETED by the reduction.
+- **Registered-data check (DECISIVE, load-bearing):** count is 0 for the canonical
+  `K` and **never 1** across the admissible family `J=U_J*K` (distinct counts `[0]`)
+  ⇒ a law-admissible-family-invariant NEGATIVE (derivation of non-derivability), not
+  a realized-state datum. Guard recorded so a future cherry-picked `J` cannot launder
+  a unique projector (none appeared) as a derivation. Independent cross-check (separate
+  method): `min ||conj(P)−P||` over 12000 candidate rank-4 commutant projectors =
+  0.277 > 0.
+  realized_state_primitive counterfactual clause applied.
+- **Wall left standing (SHARPENED, not cracked):** the supply-side selector stays
+  walled — and the locus moves from "an unforced choice among several" (block01/02
+  registered data on `C`) to "no rank-4 single-taste object exists in the real form at
+  all" (M₂(H)). The block02 CONSUMER reframe is UNTOUCHED and reinforced: the
+  taste-singlet `Γ₅^spin` is K-fixed and `J`-invariant — the only chirality object
+  surviving the real reduction. `minimal_axioms` withholds the single-taste data.
+- **Authority:** `CL3_TO_CL31` (M₄(R) vs M₂(H), both → M₄(C)),
+  `CPT_EXACT_REAL_ANTI_HERMITIAN_D` (`εDε=−D`), `LORENTZ_BOOST_FREE_STAGGERED` —
+  all recomputed in-tree, CONTEXT-ONLY. Section
+  `.claude/science/physics-loops/anomaly-baxis-wall/block05_section_S1.md`; runner
+  `scripts/frontier_abj_prec_supply_side_majorana_J_real_selector_2026_06_20.py`
+  **PASS=40/0** (cache present). Absorbed by path+PASS: r4_taste 43, consumer_reframe
+  35, spin_taste_clifford 40.
+- **Exercise-skill:** **no** — this ray IS the exercise-grade attack on the
+  highest-value supply route (abj-walls-break SUMMARY ranks S1 rank-4); steelmanned
+  (N2), decisive-failure-first (N3), defeated with a runner-verified structural reason;
+  N1≥5 + N7 met; no unworked residual sub-wall.
+
+## RAY P-ABJ χ≠0 — A_min-native curvature (internal route) (SHARPER no-go + registered-data; no crack)
+
+- **No-go (sharper, broader wall):** NO A_min-native mechanism gives `χ≠0` / `Q≠0`
+  without admitting external curved geometry. (A) The Z_τ emergent time circle and any
+  twisted gluing (Klein bottle) leave `χ=0` — torus and Klein bottle on the same 4×4
+  block share f-vector `[16,32,16]`; `χ=Σ(−1)^k f_k` is a gluing-invariant cell count.
+  (B) Induced holonomy gives only a LOCAL, continuous, non-quantized curvature `C` with
+  NO native topological charge. (C) The cube surface (square cells) genuinely has
+  `χ=+2` (Gauss–Bonnet `8·(1−3/4)=2` in-tree) but BREAKS translation invariance
+  (vertex link=3, not 4); all 16 faithful flat-cubic tori (L=3..6) have `χ=0`, links=4.
+- **Registered-data check (DECISIVE, explicit):** induced-holonomy `C` is NOT invariant
+  over the law-admissible realized-state family (`C=0` on the sea, `≈0.73` off it,
+  spread `≈0.93`) ⇒ REGISTERED DATA (realized_state_primitive counterfactual clause),
+  not a derivation. Any induced winding `Q` is realized-PATH / choice data (single-state
+  winding 0; rank `{1,2,4,5}`→windings `{1,−1,−1,0}`). The law-admissible INVARIANTS
+  (gluing-invariance of `χ`; the 16-tori enumeration) are derivations and say `χ=0`.
+- **Wall left standing (SHARPENED):** re-localized from PR-D's "flat-cubic Lattice
+  axiom" to the fuller **"flat-cubic + TRANSLATION-INVARIANT Lattice axiom"** — a single
+  named geometric admission now also fencing the Z_τ/twisted-gluing route and the
+  square-celled-disclination route. External B2 (Adler–Bell–Jackiw) stays categorically
+  external, untouched.
+- **Authority:** `ABJ_RESIDUAL_GW_NOT_NECESSARY` (re-target), PR-D KD-index=χ anchor —
+  recomputed in-tree, CONTEXT-ONLY. Section
+  `.claude/science/physics-loops/anomaly-baxis-wall/block05_section_CHI.md`; runner
+  `scripts/frontier_abj_chi_native_curvature_routes_2026_06_20.py` **PASS=23/0** (cache
+  present). Absorbed by path+PASS: kd_index_chi 45, internal_chi_escape 34,
+  induced_holonomy 12, obstruction_unified.
+- **Exercise-skill:** **no** — the three named internal fronts are each closed with an
+  in-tree structural reason; the wall is a single named geometric admission. The
+  remaining open object (external B2) is categorically external by policy, not an
+  A_min-native wall an exercise run would attack.
+
+## Do Not Apply Audit Verdicts (reaffirmed — Block 05)
+
+Block 05 sets no row/effective status, asserts no "retained"/"promoted"/"bare
+retained" standing (Type:/Claim type: only), and does not edit `docs/audit/**`,
+AUDIT_LEDGER/QUEUE, MISSING_DERIVATION_PROMPTS, or `docs/publication/**`.
+`docs/audit/data/` parsed READ-ONLY. No git ops (orchestrator owns git). No new
+axiom or primitive; no empirical/PDG/fitted inputs. NO crack of the keystone;
+neither ray unlocks the 1105 cone; no supply-side unlock to flag for an
+owner-packet addendum on a crack basis. The independent audit lane is the sole
+authority.

@@ -1,0 +1,51 @@
+==============================================================================
+PART A -- Z_tau / nontrivial cycles: does a twisted time-gluing create chi?
+==============================================================================
+  [PASS] A0 KD machinery LIVE: chain complex valid (bnd.bnd=0) on curved closed S^2
+  [PASS] A0 KD graded-kernel index = chi = +2 on S^2 (recomputed in-tree, Betti [1, 0, 1]); non-vacuity anchor -- chi!=0 IS reachable on SOME complex  (kd_index=2, chi=2)
+  [PASS] A1a DEGENERACY GUARD: an embedded cubical torus needs every edge length>=3; at L=2 parallel plaquette edges coincide (f=[4, 4, 4], chi=4 is a DEGENERATE artifact, NOT a faithful torus). The faithful family is L>=3; the PR-D algebraic cubical-set convention keeps L=2 distinct and gives chi=0 either way  (L=2 degenerate f=[4, 4, 4] chi=4 (artifact))
+  [PASS] A1 faithful product cubical torus 3x3 (Z x Z_tau footing): chi=0, KD index=0, f=[9, 18, 9] (PR-D control replayed)
+  [PASS] A1 faithful product cubical torus 4x3 (Z x Z_tau footing): chi=0, KD index=0, f=[12, 24, 12] (PR-D control replayed)
+  [PASS] A1 faithful product cubical torus 5x4 (Z x Z_tau footing): chi=0, KD index=0, f=[20, 40, 20] (PR-D control replayed)
+  [PASS] A2 TWISTED time-gluing -> Klein bottle 3x4: chi=0, KD index=0 (f=[12, 24, 12]); a NON-product closed surface, yet chi UNMOVED  (chi=0, kd=0)
+  [PASS] A2 TWISTED time-gluing -> Klein bottle 4x4: chi=0, KD index=0 (f=[16, 32, 16]); a NON-product closed surface, yet chi UNMOVED  (chi=0, kd=0)
+  [PASS] A2 TWISTED time-gluing -> Klein bottle 4x6: chi=0, KD index=0 (f=[24, 48, 24]); a NON-product closed surface, yet chi UNMOVED  (chi=0, kd=0)
+  [PASS] A3 SHARPER NO-GO (prong A): torus and Klein bottle on the SAME 4x4 square block have IDENTICAL f-vectors => IDENTICAL chi=0; gluing/twisting the Z_tau circle changes orientability, NEVER chi (chi is a cell COUNT)  (f_torus=[16, 32, 16] f_klein=[16, 32, 16])
+==============================================================================
+PART B -- induced holonomy: C(state); Q monodromy; registered-data test
+==============================================================================
+  [PASS] B1 induced-holonomy recomputed: closed-shell SEA is FLAT (C=0 exactly); generic OFF-SEA realized state has C>0 (state-dependent curvature -- the candidate native source)  (C_sea=0.0e+00, off-sea mean C=0.73, min=0.59)
+  [PASS] B2 induced-holonomy TOPOLOGICAL CHARGE Q is NOT native: a single realized state carries ZERO winding (one induced Hol element, one det-phase mod 2pi); a nonzero winding appears ONLY for a NON-CONTRACTIBLE loop through OTHER states and is PATH-dependent (different loops give different integer windings [1, -1, -1, 0]). Q is realized-PATH / choice data, not a state invariant and not an A_min derivation -- the strongest registered-data verdict  (single-state winding=0 (phase/2pi=0.335); path-dependent loop windings=[1, -1, -1, 0])
+  [PASS] B3 REGISTERED-DATA VERDICT (counterfactual clause): C is NOT invariant over the law-admissible realized-state family -- it is 0 on the sea and >0 off it (spread ~0.93). The off-sea curvature is REGISTERED DATA (realized_state primitive), NOT an A_min-native derivation: the LAW (A_min) admits both flat and curved states; the value is fixed by WHICH state is realized, not by the law.  (C spread over state family = 0.93 (state-dependent => registered data))
+  [PASS] B4 induced C is a LOCAL connection invariant, NOT a quantized topological index: continuously perturbing the off-sea state moves C CONTINUOUSLY (smooth, non-integer response; no quantized jumps). A native chi/Q would be integer-valued and locally constant -- C is neither. Induced holonomy gives state-dependent LOCAL curvature, never a native global index  (C(base)=0.709; dC at eps=.02/.05/.1/.2 = [np.float64(0.004), np.float64(0.03), np.float64(0.021), np.float64(0.066)])
+==============================================================================
+PART C -- lattice disclination: chi!=0 square complex; native or admitted?
+==============================================================================
+  [PASS] C1 DISCLINATION witness: cube SURFACE (6 square faces, vertex links = 3 squares = angular deficit) has chi=2, KD index=+2 (f=[8, 12, 6], Betti [1, 0, 1]); a square-celled chi!=0 surface, NOT a product torus  (chi=2, kd=2)
+  [PASS] C2 combinatorial Gauss-Bonnet: sum_v (1 - faces_at_v / 4) = chi for the square complex -- cube surface: 8 vertices x (1 - 3/4) = 2 = chi. chi!=0 IS concentrated disclination curvature (angular deficit), computed in-tree  (sum deficit = 2.000 = chi = 2)
+  [PASS] C3 HONESTY GUARD: the flat-cubic A_min torus has EVERY vertex link = 4 squares (zero angular deficit => chi=0); a disclination is a vertex with != 4 squares => it BREAKS the translation-invariant flat-cubic Lattice axiom. chi!=0 from disclinations exists but is ADMITTED curvature, NOT native (same verdict as PR-D's S^2, now for SQUARE cells)  (flat torus links all=4: True; cube links: [3])
+  [PASS] C4 enumerated 16 FAITHFUL flat-cubic A_min tori (edge lengths 3..6): EVERY one has chi=0 AND every vertex link = 4 squares (zero deficit). chi!=0 is UNREACHABLE inside the translation-invariant flat-cubic family  (16 tori, all chi=0 and all deg-4)
+==============================================================================
+SYNTHESIS -- sharper no-go: chi!=0 is forced outside the flat-cubic axiom
+==============================================================================
+  [PASS] S1 PRONG A: the Z_tau time circle and any twisted (Klein/Mobius) gluing of it leave chi=0 -- chi is a cell COUNT invariant under gluing; nontrivial cycles change orientability/homology, NEVER the Euler characteristic. NO native crack from the time circle or reachable identifications
+  [PASS] S2 PRONG B: induced holonomy gives a state-dependent LOCAL curvature C (0 on the sea, >0 off it) but (i) no native topological charge -- a single state has winding 0 and any nonzero winding is PATH-CHOICE data (varies with the loop) and (ii) C is NOT law-admissible-invariant => REGISTERED DATA (realized_state counterfactual), not an A_min derivation, and not a global index. NO native crack
+  [PASS] S3 PRONG C: a disclined SQUARE complex (cube surface) genuinely has chi=+2 (a NEW square-celled witness beyond PR-D's tetra-S^2), but a disclination is a vertex with != 4 face-links => it BREAKS the translation-invariant flat-cubic Lattice axiom => ADMITTED curvature, not native. NO native crack
+  [PASS] S4 DECISIVE: across ALL THREE A_min-native fronts (time-circle gluings, induced-holonomy states, lattice disclinations) chi!=0 / Q!=0 is either UNREACHABLE (gluings, enumerated flat family) or REGISTERED DATA (induced holonomy) or ADMITTED curvature (disclination). The internal route is NOT cracked; the wall is SHARPENED and re-confirmed: chi=0 is FORCED by the flat-cubic + translation-invariant Lattice axiom, and the induced-holonomy curvature is realized-state registered data
+  [PASS] S5 HONESTY: every chi!=0 object here is read off its OWN f-vector with ZERO gauge field (no injected triangulation/boundary twist/transition function); Q is the winding of the DERIVED induced holonomy with zero injected twist (block02 R-C discipline preserved). B2 external ABJ implication UNTOUCHED
+==============================================================================
+TOTAL: PASS=23 FAIL=0
+==============================================================================
+RAY VERDICT: SHARPER NO-GO (no A_min-native chi!=0 crack).
+  PRONG A (Z_tau / twisted gluings): chi is a cell-count invariant under
+    gluing; the time circle and Klein/Mobius identifications leave chi=0.
+  PRONG B (induced holonomy): state-dependent LOCAL curvature C; no native
+    charge (single-state winding 0; any winding is path-choice data); C
+    NOT law-invariant => REGISTERED DATA, not a derivation.
+  PRONG C (disclination): a square-celled chi=+2 cube surface EXISTS but a
+    disclination breaks the translation-invariant flat-cubic Lattice axiom
+    => ADMITTED curvature, not native (a 2nd witness confirming PR-D).
+  NET: the P-ABJ internal-route wall is re-localized & sharpened onto the
+    FLAT-CUBIC + TRANSLATION-INVARIANT Lattice axiom; induced-holonomy chi/
+    curvature is realized-state registered data. B2 external implication
+    untouched. No new axiom/primitive; no crack sold as closure.

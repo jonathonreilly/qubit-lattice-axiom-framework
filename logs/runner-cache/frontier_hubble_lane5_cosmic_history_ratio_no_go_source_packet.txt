@@ -1,0 +1,114 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.py
+runner_sha256: 23686c9a16f096a908919a8c42848b06ce58c387609d9a6154948c7f44193916
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+========================================================================================
+LANE 5 COSMIC-HISTORY-RATIO NO-GO SOURCE PACKET
+========================================================================================
+
+Question:
+  Is the Lane 5 no-go packaged with current premise boundaries,
+  one-hop authorities, N1-N8 discipline, and a replayable C1/C2/C3
+  closure taxonomy for independent re-audit?
+
+Answer:
+  Yes for source-packet readiness. This runner does not retire C1,
+  C2, or C3 and does not apply an audit verdict.
+
+----------------------------------------------------------------------------------------
+Part 1: parent source-packet metadata
+----------------------------------------------------------------------------------------
+  [PASS] parent note exists  (docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md)
+  [PASS] parent declares this primary runner
+  [PASS] parent declares this runner cache
+  [PASS] parent remains a no-go/program-boundary source note
+  [PASS] parent scope is baseline plus units primitive
+  [PASS] parent records no audit verdict
+
+----------------------------------------------------------------------------------------
+Part 2: dependency links and fingerprints
+----------------------------------------------------------------------------------------
+  [PASS] minimal_axioms: linked from parent
+  [PASS] minimal_axioms: file exists  (docs/MINIMAL_AXIOMS_2026-06-05.md)
+  [PASS] scale_reference_primitive: linked from parent
+  [PASS] scale_reference_primitive: file exists  (docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+  [PASS] cosmology_open_number_reduction_theorem_note_2026-04-26: linked from parent
+  [PASS] cosmology_open_number_reduction_theorem_note_2026-04-26: file exists  (docs/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md)
+  [PASS] omega_lambda_derivation_note: linked from parent
+  [PASS] omega_lambda_derivation_note: file exists  (docs/OMEGA_LAMBDA_DERIVATION_NOTE.md)
+  [PASS] cosmology_scale_identification_and_reduction_note: linked from parent
+  [PASS] cosmology_scale_identification_and_reduction_note: file exists  (docs/COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md)
+  [PASS] omega_lambda_matter_bridge_theorem_note_2026-04-22: linked from parent
+  [PASS] omega_lambda_matter_bridge_theorem_note_2026-04-22: file exists  (docs/OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md)
+  [PASS] planck_scale_lane_status_note_2026-04-23: linked from parent
+  [PASS] planck_scale_lane_status_note_2026-04-23: file exists  (docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
+  [PASS] hubble_lane5_planck_c1_gate_audit_note_2026-04-26: linked from parent
+  [PASS] hubble_lane5_planck_c1_gate_audit_note_2026-04-26: file exists  (docs/HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md)
+  [PASS] hubble_lane5_eta_retirement_gate_audit_note_2026-04-26: linked from parent
+  [PASS] hubble_lane5_eta_retirement_gate_audit_note_2026-04-26: file exists  (docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md)
+  [PASS] minimal axiom source is current Lattice/Quantum/Record baseline
+  [PASS] scale-reference primitive is units-only and non-bounding
+  [PASS] open-number theorem reduces late-time variables to H0 and L
+  [PASS] omega cascade is explicitly bounded and depends on eta/cascade inputs
+  [PASS] scale note supplies H_inf/R_Lambda identities and leaves the ratio open
+  [PASS] matter bridge supplies Omega_Lambda equals scale ratio
+  [PASS] C1 gate note preserves scale-reference boundary
+  [PASS] C2 gate note remains an open eta-retirement gate
+  [PASS] parent prose names current dependency authorities
+
+----------------------------------------------------------------------------------------
+Part 3: C1/C2/C3 finite closure model
+----------------------------------------------------------------------------------------
+  closure rule: H0 closes iff C1 and (C2 or C3)
+  rule: scale-reference primitive is a units conversion, not C1
+  C1=False C2=False C3=False -> L=False H0=False
+  C1=False C2=False C3=True -> L=True H0=False
+  C1=False C2=True C3=False -> L=True H0=False
+  C1=False C2=True C3=True -> L=True H0=False
+  C1=True C2=False C3=False -> L=False H0=False
+  C1=True C2=False C3=True -> L=True H0=True
+  C1=True C2=True C3=False -> L=True H0=True
+  C1=True C2=True C3=True -> L=True H0=True
+  [PASS] parent states C1 scale route is required
+  [PASS] parent states the scale primitive is not C1
+  [PASS] parent states one of C2/C3 is required for L
+  [PASS] parent states no fourth class exists
+  [PASS] only packets with C1 and one L-class close H0
+  [PASS] C1 alone fails because L remains open
+  [PASS] C2/C3 without C1 fail because the scale route remains open
+  [PASS] parent route map assigns reviewed routes into C1/C2/C3 taxonomy
+
+----------------------------------------------------------------------------------------
+Part 4: no-go discipline gate
+----------------------------------------------------------------------------------------
+  [PASS] N1: present
+  [PASS] N2: present
+  [PASS] N3: present
+  [PASS] N4: present
+  [PASS] N5: present
+  [PASS] N6: present
+  [PASS] N7: present
+  [PASS] N8: present
+  [PASS] N1 names at least five distinct routes
+  [PASS] N6 preserves partial closure paths and primitive boundary
+  [PASS] gate result is narrowed rather than anti-C1/C2/C3
+
+----------------------------------------------------------------------------------------
+Part 5: no-go boundary and falsifier
+----------------------------------------------------------------------------------------
+  [PASS] scale-route no-go is scoped to baseline plus units primitive
+  [PASS] cosmic-history-ratio no-go is scoped to baseline plus units primitive
+  [PASS] falsifier targets baseline-plus-units-primitive counterexample
+  [PASS] boundary names classification, not premise retirement
+  [PASS] boundary says C1/C2/C3 remain live
+
+========================================================================================
+PASS=57 FAIL=0
+========================================================================================
+
+----- stderr -----
+

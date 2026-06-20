@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_reduced_a2_discriminant_conjugation_rung_seventeen_bounded_2026_06_12.py
+runner_sha256: bac0943611f2113c013f4451959da1cdd4344b5e455f258ddf06516c4baf90c5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.20
+status: ok
+----- stdout -----
+W96 reduced-A2 discriminant conjugation bounded runner
+Exact algebra only; finite rung-eleven rows remain fenced witnesses, not inputs.
+
+PASS: note carries exact status-authority sentence
+PASS: note is a source-side boundary declaration, not an audit verdict
+PASS: note names exactly the requested runner and cache
+PASS: load-bearing one-hop authorities are markdown linked
+PASS: quote anchors are present in the cited authority files
+PASS: note refuses imports, fits, target values, and comparator promotion
+PASS: note avoids forbidden overreach phrases
+PASS: H equals one half of the A2 discriminant
+PASS: u,v transform gives retained H and Q forms
+      H_uv=u*(u - v)*(u + v)/8, Q_uv=(3*u**2 + v**2)/4
+PASS: L transform gives (1/3)d_uu + d_vv
+      L(u^2+v^2)=8/3
+normalization_falsifier_values
+  correct_L_on_u2_plus_v2=8/3
+  raw_unnormalized_second_difference=8
+PASS: wrong L normalization is visibly different
+PASS: simple A2 wall reflections preserve Q and flip delta
+delta_parity_falsifier_values
+  delta(1,2)=6
+  delta(s_x(1,2))=-6
+  delta(swap(1,2))=6
+PASS: x<->y is recorded as diagram-swap ambiguity, not a sign-flip proof
+PASS: degree-three anti-invariant space is one-dimensional and spanned by delta
+      nullities_deg_0_1_2=[0, 0, 0], deg3_basis=x*y*(x + y)
+PASS: anti-invariant polynomials factor as delta times an invariant quotient
+PASS: delta is L-harmonic
+PASS: delta-Doob generator identity holds on polynomial basis degree <= 3
+      cx=-(x**2 - 2*x*y - 2*y**2)/(3*x*y*(x + y)), cy=(2*x**2 + 2*x*y - y**2)/(3*x*y*(x + y))
+PASS: conjugated generator sends Q to exact constant 4
+PASS: note states the explicit conjugated heat-sandwich operator on g
+full_plane_multiplier_parity_values
+  signed_delta_times_anti_at_(1,2)=36
+  signed_delta_times_anti_at_sx(1,2)=36
+  abs_delta_times_anti_at_(1,2)=36
+  abs_delta_times_anti_at_sx(1,2)=-36
+PASS: signed full-plane delta multiplier changes the Weyl parity sector
+PASS: note names the exact missing identity after conjugation
+commutator_falsifier_values
+  exp(Q)*[L,M_Hexp(-Q)]1=x*y*(x + y)*(x**2 + x*y + y**2 - 4)/2
+  at_(1,2)_scaled=9
+  at_(1,2)_actual=9*exp(-7)
+PASS: commutator with the retained multiplier is nonzero
+wrong_root_system_falsifier_values
+  A2_delta(1,2)=6
+  B2_degree4_product(1,2)=30
+  G2_degree6_product(1,2)=1680
+  A1_single_root_product(1,2)=1
+PASS: wrong B2/G2/A1 substitutions visibly break H=delta/2
+PASS: note does not promote closed-form spectral constants
+PASS: note gives both ambiguity readings
+PASS: note differentiates new material from prior rungs
+PASS: no-go discipline gate is visible for the named obstruction
+PASS: N1 lists five attempted routes
+PASS: verification section names this runner total
+
+TOTAL: PASS=29, FAIL=0
+
+----- stderr -----
+

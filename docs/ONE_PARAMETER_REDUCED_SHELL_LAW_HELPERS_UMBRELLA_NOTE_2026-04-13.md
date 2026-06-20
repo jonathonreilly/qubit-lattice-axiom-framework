@@ -47,8 +47,10 @@ Direct citations to this note may not be used as:
 
 The companion runner now checks the source tree for direct citations that lack
 this helper-wrapper / one-hop-registry qualifier. This is a source-side
-firewall only; independent audit remains responsible for any effective-status
-movement.
+firewall only; generated queue snapshots such as
+`docs/repo/FRONT_DOOR_STATUS.md` are not source-claim citations and are
+excluded from that firewall. Independent audit remains responsible for any
+effective-status movement.
 
 ## Purpose
 

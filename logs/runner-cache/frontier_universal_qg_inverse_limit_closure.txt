@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_inverse_limit_closure.py
+runner_sha256: a7707b316749c883b8ee22728de041c90dc4d7edff50652816b177c330fcd3d2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[EXACT] PASS: the branch already has the exact canonical refinement net, UV-finite partition family, and exact Schur/projective compatibility
+    the inverse-limit theorem starts from an exact discrete refinement/projective family already closed on the route
+[EXACT] PASS: nested Schur pushforwards define one consistent finite-dimensional Gaussian family on the directed barycentric-dyadic net
+    min effective eigenvalue=9.898118e-01, max operator/source/covariance consistency error=8.882e-16
+[EXACT] PASS: the exact stationary sections form a compatible inverse-limit section
+    max stationary-section compatibility error=2.776e-17
+[EXACT] PASS: all cylindrical linear and quadratic observables are refinement-independent on the consistent family
+    max linear observable error=1.388e-17, max quadratic observable error=2.220e-16
+[EXACT] PASS: the remaining stronger continuum issue is therefore not inverse-limit existence but continuum-equivalence / smooth interpretation
+    the exact discrete route now supports a canonical projective-limit Gaussian cylinder family with compatible stationary section; what remains is equivalence to an external continuum formulation
+UNIVERSAL QG INVERSE-LIMIT CLOSURE
+==============================================================================
+min effective eigenvalue             = 9.898118e-01
+max stationary compatibility error   = 2.776e-17
+max operator/covariance consistency  = 8.882e-16
+max linear observable error          = 1.388e-17
+max quadratic observable error       = 2.220e-16
+
+Verdict:
+The canonical barycentric-dyadic refinement family on the project route now closes as a consistent inverse-limit Gaussian cylinder system: Schur pushforwards agree on overlaps, stationary sections are compatible, and cylindrical observables are refinement-independent.
+So the remaining stronger issue is no longer existence of the projective-limit object itself. It is the identification of that exact discrete inverse-limit family with an external continuum / smooth GR-QG interpretation.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=5 FAIL=0 TOTAL=5
+
+----- stderr -----
+

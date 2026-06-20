@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_pl_sobolev_interface.py
+runner_sha256: d21a62da6fa494ae0f302b3447aa423e776fdc336341a4eeee3ead0f27509983
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[EXACT] PASS: the route already has an exact PL field carrier and an exact PL weak/Dirichlet system
+    this theorem starts from the exact project-native PL carrier and exact weak/Dirichlet structure already present on the route
+[EXACT] PASS: canonical refinement prolongation preserves the underlying continuous PL field exactly
+    max PL field mismatch across refinement=8.882e-16
+[EXACT] PASS: the same project-native PL field has a refinement-invariant first-order weak-field norm
+    max H1-type norm mismatch=8.882e-16, min sampled H1-type norm=4.740181e-02
+[EXACT] PASS: the directed PL ladder therefore already sits inside one exact project-native H1-type carrier
+    the canonical barycentric-dyadic refinement net already supplies one project-native first-order weak-field interface for the Gaussian/Dirichlet system
+[EXACT] PASS: the remaining stronger issue is therefore comparison to more canonical external continuum Sobolev/measure targets, not missing project-native Sobolev carrier
+    the exact discrete route already has a project-native H1-type weak-field carrier and a chosen external smooth FE/Galerkin realization; what remains is comparison to more canonical external continuum Sobolev / measure formulations
+UNIVERSAL QG PL SOBOLEV INTERFACE
+==============================================================================
+max PL field mismatch           = 8.882e-16
+max H1-type norm mismatch       = 8.882e-16
+min sampled H1-type norm        = 4.740181e-02
+
+Verdict:
+The exact project-native PL weak/Dirichlet system already has a canonical H1-type field-space interface on the refinement net. So the remaining stronger continuum issue is not missing a project-native Sobolev carrier, but comparison to more canonical external continuum Sobolev/measure targets.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=5 FAIL=0 TOTAL=5
+
+----- stderr -----
+

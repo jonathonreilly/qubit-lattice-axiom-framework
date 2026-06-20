@@ -57,6 +57,12 @@ hashes:
   audit_ledger_sha256: 6b34c67639ce0002e00034e5c4a67c04f6154f12d38c1248bdecace2b6b7f83d
   audit_queue_sha256: a255831213ed18d6d6b033ed1464bc7b7375edd16b12099777e8bee615a24dfa
 pr:
-  status: pending
-  url: pending
-next_exact_action: "Commit Block106, push branch, open review PR, patch packet with PR URL, then continue with a fresh block from current origin/main."
+  status: open
+  number: 4473
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4473
+  head_commit: 9d01a6aa68deca21348105b4d0c8b9c0faead816
+  base: main
+  head: physics-loop/audit-unblock-block106-20260620
+  mergeable: MERGEABLE
+  status_checks: "audit-lane/audit_pipeline in progress at PR creation"
+next_exact_action: "Continue the campaign from a fresh worktree based on current origin/main; select the next source-side audit unblock target and package it as Block107."

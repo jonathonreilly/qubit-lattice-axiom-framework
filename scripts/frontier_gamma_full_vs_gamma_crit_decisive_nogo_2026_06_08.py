@@ -40,9 +40,15 @@ Run: python3 scripts/frontier_gamma_full_vs_gamma_crit_decisive_nogo_2026_06_08.
 """
 from __future__ import annotations
 import sys
+from pathlib import Path
 import numpy as np
 
 PASS, FAIL = 0, 0
+NOTE = (
+    Path(__file__).resolve().parents[1]
+    / "docs"
+    / "GAMMA_FULL_VS_GAMMA_CRIT_DECISIVE_NOGO_NOTE_2026-06-08.md"
+)
 
 
 def check(label, ok, detail=""):
@@ -170,6 +176,57 @@ def main():
     both_tight = all(0.85 < gcrit[k] < 1.45 and 0.85 < gcrit_normB[k] < 1.45 for k in ("photon", "electron", "nucleon"))
     check("(F5) two delta_v_UV normalizations (0.2*alpha_s vs 0.013*C_F) BOTH put the tight gamma_crit in ~0.9-1.4 -- the no-go margin is normalization-independent",
           both_tight, detail=f"normA photon={gcrit['photon']:.2f}, normB photon={gcrit_normB['photon']:.2f}")
+
+    # =====================================================================
+    section("Part G: audit-unlock guardrails -- no parent promotion, no hidden new axiom, no status change")
+    note_text = NOTE.read_text(encoding="utf-8")
+    note_one_line = " ".join(note_text.split())
+    required_scope = [
+        "2026-06-18 audit-unlock hardening",
+        "physical anomalous-dimension / Lorentz-violation-bound sufficiency comparison",
+        "does **not** prove the framework-specific interacting one-loop velocity RG",
+        "does **not** derive the spatial-only power-divergent mixing coefficient",
+        "does **not** choose the physical `ξ = 1` versus `ξ → ∞` surface",
+    ]
+    missing_scope = [phrase for phrase in required_scope if phrase not in note_one_line]
+    check("(G1) source note names the exact sub-blocker and preserves the two remaining Lorentz parent blockers",
+          not missing_scope,
+          detail="missing: " + ", ".join(missing_scope) if missing_scope else "all audit-unlock scope phrases present")
+
+    required_trace = [
+        "The attractor note is the trace target for this no-go, not proof authority",
+        "prune only the `ξ → ∞` flow-suppression escape route",
+        "the interacting Lorentz parent remains conditional",
+        "one-loop RG derivation",
+        "spatial-power-divergence coefficient",
+        "physical-surface selector",
+    ]
+    missing_trace = [phrase for phrase in required_trace if phrase not in note_one_line]
+    check("(G2) trace target is separated from proof authority and parent-clean wording is forbidden",
+          not missing_trace,
+          detail="missing: " + ", ".join(missing_trace) if missing_trace else "trace/pruning guardrails present")
+
+    required_status = [
+        "adds no new axiom, primitive, Tier-A admission, audit verdict, or status change",
+        "negative route audit-ready",
+        "computed no-go",
+        "retained positive Lorentz-naturalness theorem",
+    ]
+    missing_status = [phrase for phrase in required_status if phrase not in note_one_line]
+    forbidden_status = [
+        "promotes the attractor note",
+        "retained positive theorem",
+        "sets the audit status",
+        "proves Lorentz naturalness",
+    ]
+    present_forbidden = [phrase for phrase in forbidden_status if phrase in note_one_line]
+    check("(G3) source note keeps the no-go audit-ready without adding axioms or audit/status claims",
+          not missing_status and not present_forbidden,
+          detail=(
+              "missing: " + ", ".join(missing_status)
+              if missing_status
+              else ("forbidden present: " + ", ".join(present_forbidden) if present_forbidden else "status guardrails present")
+          ))
 
     # =====================================================================
     section("Verdict and honest scope (narration -- not tests)")

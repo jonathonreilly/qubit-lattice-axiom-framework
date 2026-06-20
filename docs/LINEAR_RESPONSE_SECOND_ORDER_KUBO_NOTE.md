@@ -167,10 +167,12 @@ propagator has reached an asymptotic regime where the path-sum
 structure is well-defined. With only 5 layers, the propagator is
 dominated by boundary effects and never enters that regime.
 `kubo₂ = 0.08` is essentially zero — the second-order correction
-is negligible — but the measured ratio sits at ~2 throughout. The
-factor of 2 is a finite-size offset, not a Taylor-series correction.
-The computed second-order correction does not move the family into the
-linearity regime.
+is negligible — but the measured ratio sits at ~2 throughout. At the
+computed order the factor of 2 looks like a finite-size offset rather
+than a second-order Taylor correction; whether some higher Taylor order
+recovers it is not established here (no third-or-higher-order
+computation is supplied). The computed second-order correction does not
+move the family into the linearity regime.
 
 ### 2. Structural cancellation — `G2_asym_z`
 
@@ -201,9 +203,12 @@ the second-order replay.
 This is a **clean second-order negative** with a finite binding scope:
 
 - The first-order Kubo derivation works on the **linearity regime**:
-  15 / 41 families where the linear term dominates and the higher-order
-  Taylor corrections are small. On these, F~M ≈ 1 (mean |F~M − 1| =
-  0.0069) and gravity sign is correctly predicted.
+  15 / 41 families where the linear term dominates at the checked
+  strengths (the measured-vs-linear ratio stays within the 10 % band at
+  all four strengths). On these, F~M ≈ 1 (mean |F~M − 1| =
+  0.0069) and gravity sign is correctly predicted. Whether the
+  higher-order Taylor corrections remain small beyond the computed
+  second order is not established here.
 - The second-order Kubo extension does **not** generalize the
   derivation to the other 26 / 41 families at the checked order and
   strengths.
@@ -328,3 +333,59 @@ listed cited authorities.
 This rigorization edit does not promote terminal status, edit generated
 audit surfaces, or add the missing convergence theorem. It only narrows
 the citable source claim to the finite second-order replay.
+
+## Scope-narrowing repair (2026-06-20)
+
+This dated revision implements the source-side narrowing route for the
+re-audit flag *"scope_too_broad: remove or segregate the residual
+all-orders Taylor / no-higher-order language in the conclusion sections,
+or add a retained remainder / non-analyticity / higher-order computation
+covering the failing families."* It removes/segregates the residual
+language — it does **not** add the remainder/non-analyticity computation
+(path (ii) above remains open). No derived value changes; only the
+prose/print scope is narrowed to the computed second order.
+
+Residual overbroad phrasings narrowed in the conclusion sections:
+
+- **§"Three observed second-order pathology categories" → finite-size
+  case `K3_NL5`.** Before: *"The factor of 2 is a finite-size offset,
+  not a Taylor-series correction."* This categorically asserted the
+  offset is unreachable by any Taylor order (an all-orders claim).
+  After: *"At the computed order the factor of 2 looks like a
+  finite-size offset rather than a second-order Taylor correction;
+  whether some higher Taylor order recovers it is not established here
+  (no third-or-higher-order computation is supplied)."* The claim is now
+  scoped to the computed second order, with higher orders explicitly
+  marked open.
+
+- **§"What this finite replay supports" → linearity-regime bullet.**
+  Before: *"15 / 41 families where the linear term dominates and the
+  higher-order Taylor corrections are small."* The clause "the
+  higher-order Taylor corrections are small" asserts about all higher
+  Taylor orders, none of which is computed beyond the second. After: the
+  regime is defined by the **observed** measured-vs-linear ratio staying
+  within the 10 % band at the four checked strengths, and a sentence
+  explicitly marks whether higher-order corrections remain small beyond
+  the computed second order as *not established here*.
+
+Runner narrowing (per the audit instruction "if a runner check asserts
+the overbroad all-orders claim, narrow it to the computed-orders
+statement"): the executed NULL-branch verdict string in
+`scripts/linear_response_second_order_kubo.py` previously printed
+*"Failing families need either much higher orders or a different
+framework."* — an assertion about higher-order behavior the runner does
+not compute. It now prints a strictly computed-second-order statement
+that the failing families are not brought into the linearity regime at
+the computed second order, with higher orders / a different framework
+marked *not established here (not computed)*. No numeric output, no
+derived value, and no PASS/FAIL accounting changed (the runner has no
+PASS/FAIL gate to alter).
+
+The safe read after this repair is exactly the finite second-order
+replay (computed §Result) plus the three observed second-order pathology
+categories. The all-orders Taylor question remains explicitly open.
+
+**Status authority:** the independent audit lane on origin/main is the
+sole authority for the terminal/effective status of this row. This
+source-side edit narrows the citable claim only; it does not author or
+alter any audit grade or verdict.

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/assumption_derivation_ledger_meta_check.py
-runner_sha256: 4d2e6202e1bb6c68c93ca261f028e25b1b7ec0153f32bdedf5a38fbe641320a9
+runner_sha256: 662b12736fe7b4411a71bc93047be6464430212585e545c754aa277fb8c01736
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -11,7 +11,9 @@ ASSUMPTION DERIVATION LEDGER META FIREWALL
 ========================================================================
   source type is meta: PASS
   source claim scope is metadata: PASS
+  source registers this primary runner: PASS
   YAML author hint is meta: PASS
+  YAML registers this runner: PASS
   not a bounded theorem: PASS
   declares non-authoritative roadmap: PASS
   sets no audit status: PASS
@@ -19,8 +21,12 @@ ASSUMPTION DERIVATION LEDGER META FIREWALL
   no current-status table remains: PASS
   says labels are non-load-bearing: PASS
   keeps authority in audit ledger/source notes: PASS
+  conflicts defer to authority notes: PASS
+  R_conn row is narrowed to F_adj exact algebra: PASS
+  physical selector remains conditional: PASS
+  theorem-grade wiring is explicitly out of scope: PASS
 ========================================================================
-  TOTAL: PASS=10 FAIL=0
+  TOTAL: PASS=16 FAIL=0
   OVERALL: PASS
 
 ----- stderr -----

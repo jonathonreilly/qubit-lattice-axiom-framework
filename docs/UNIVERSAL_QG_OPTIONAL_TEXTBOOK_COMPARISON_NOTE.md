@@ -10,7 +10,15 @@ crosswalks against the universal-QG canonical textbook closure target.
 for downstream universal-QG notes that need a stable target for "optional
 textbook comparison" callouts.
 **Primary runner:** `scripts/universal_qg_optional_textbook_comparison_meta_check.py`
-(metadata invariant check only; no physics derivation).
+**Runner cache:** `logs/runner-cache/universal_qg_optional_textbook_comparison_meta_check.txt`
+
+The runner is a metadata invariant check only; it is not a physics
+derivation.
+
+**Audit-readiness metadata repair (2026-06-17).** This source-side repair
+exposes the runner and cache in plain header fields and makes the runner fail
+if the cache metadata is removed. It does not change this row's zero-authority
+role and does not assert an audit outcome.
 
 ## 0. Scope retag (2026-05-05)
 

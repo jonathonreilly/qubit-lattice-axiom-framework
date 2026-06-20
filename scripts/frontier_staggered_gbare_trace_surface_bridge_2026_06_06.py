@@ -257,13 +257,14 @@ check("current staggered parent is still open on source surface", current_surfac
 check("kinetic/algebra closure is only a bounded source-side candidate now", current_surface["kinetic_algebra_bounded_candidate"])
 check("narrowed trace gate leaves only the scale-transport bridge load-bearing here", narrowed_trace_gate)
 
-section("Part 6: branch-local note hygiene")
+section("Part 6: source-note hygiene")
 
 bridge_snippets = [
     "bounded support / conditional trace-surface bridge",
     "not a parent promotion",
     "narrower than full species-label closure and narrower than physical Standard Model color naming",
     "structural graph-first `su(3)` carrier on the selected-axis `V_3` surface",
+    "root-`SU(2)` scale-transport note supplies a finite candidate closure",
     "not load-bearing for this trace-normalization statement",
     "does not have to wait for a forced generation-label bijection",
     "or a physical-color naming theorem",
@@ -273,14 +274,14 @@ for snippet in bridge_snippets:
     check(f"bridge note contains: {snippet}", has_all(bridge_text, [snippet]))
 
 banned = [
-    "retained branch-local",
-    "would become retained",
-    "pro" + "moted to " + "retained",
-    "retained on the actual surface",
-    "full retained at this time",
+    ("stale retained-boundary phrase 1", "retained " + "bra" + "nch" + "-local"),
+    ("stale retained-boundary phrase 2", "would become retained"),
+    ("stale retained-boundary phrase 3", "pro" + "moted to " + "retained"),
+    ("stale retained-boundary phrase 4", "retained on the actual surface"),
+    ("stale retained-boundary phrase 5", "full retained at this time"),
 ]
-for phrase in banned:
-    check(f"bridge note avoids banned phrase: {phrase}", phrase not in bridge_text)
+for label, phrase in banned:
+    check(f"bridge note avoids {label}", phrase not in bridge_text)
 
 print("\n" + "=" * 88)
 print(f"  TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

@@ -1,8 +1,10 @@
 # Alpha_s Heavy-Threshold Matching Kernel Theorem Note (2026-06-18)
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
 **Status:** exact support theorem / source-side audit unlock candidate
 **Primary runner:** `scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py`
-**Runner summary:** `SUMMARY: PASS=24 FAIL=0`
+**Runner summary:** `SUMMARY: PASS=26 FAIL=0`
 **Parent audit pressure:** `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02`
 
 ## 1. Purpose
@@ -148,8 +150,8 @@ close the audited alpha_s row by itself. Remaining bridge work includes:
 - pure-gauge-to-full-QCD transfer;
 - the separate `g_bare`/normalization dependency surface.
 
-The intended downstream use is as a retained/native kernel that future alpha_s
-repairs can cite in parallel with standard QCD references, rather than
+The intended downstream use is as a bounded/native kernel that future alpha_s
+repairs can cite after independent audit review, rather than
 importing the threshold-continuity rule as an unproved black box.
 
 ## 9. Reproducibility
@@ -163,7 +165,7 @@ python3 scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py
 Expected summary:
 
 ```text
-SUMMARY: PASS=24 FAIL=0
+SUMMARY: PASS=26 FAIL=0
 ```
 
 The cached output is recorded at

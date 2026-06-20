@@ -1,0 +1,20 @@
+# gravity generator-shift eikonal bridge runner  (block01 GRAV, 2026-06-20)
+# target row: gravity_premise4_refractive_index_from_dispersion (audited_conditional)
+# residual under test: H_s = H_0 + s*I  (sign + normalization)
+
+PASS: (A1) H_0 = -Delta_lat is symmetric (asym=0.00e+00)
+PASS: (A2) H_0 is PSD with one constant zero mode (lambda0=-9.94e-16, lambda1=2.0000)
+PASS: (B1) symmetric-Trotter generator -> H_0 + V (additive shift) (dtau=0.025, ||gen-(H0+V)||_inf=8.17e-05)
+PASS: (B2) shift residual is O(dtau^2) (ratio ~ 4 under halving) (ratio=3.97)
+PASS: (B3) generator coefficient on V is exactly 1 (normalization) (c=1.00006)
+PASS: (C1) uniform shift s*I moves every eigenvalue by exactly +s (max|shift-s|=1.14e-14)
+PASS: (C2) sign is POSITIVE (higher field => higher generator energy) (min shift=0.3700)
+PASS: (C3) control: coefficient 2 (c!=1) is rejected (bad shift=0.7400 != s=0.37)
+PASS: (D1) retained per-step action weight matches generator c=1 (diff=0.00e+00)
+PASS: (D2) control: c=0.5 mis-normalization fails the action weight (diff=0.0074)
+PASS: (E1) (H_0+sI) fixed-energy reading lambda(k)+phi=E reproduces premise4 map (cos k(phi) = 1-(E-phi)/2)
+PASS: (E2) refractive index leading term is 1 (n->1 as phi->0) (lead=1)
+PASS: (E3) linear-in-phi coefficient is real and negative (n<1, attractive) (dn/dphi|0 (E=0.02) = -25.042)
+PASS: (E4) numeric n=k_s/k0 matches premise4 small-k form 1-phi/(2E) (n=0.97464 vs 0.97500)
+
+TOTAL: PASS=14 FAIL=0

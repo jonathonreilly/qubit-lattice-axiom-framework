@@ -1,0 +1,58 @@
+loop_slug: closable-backups
+block: block01
+date: "2026-06-20"
+mode: run
+branch: physics-loop/closable-backups-block01-20260620
+base_ref: origin/main
+base_sha: ae83112e819da9042197b86163bfcee1a074c3e9
+target_status: bounded-support
+current_goal: "Attempt positive clean bounded_theorem closure of two fanout-1 audit rows (GL-F I-4 and GRAV generator-shift eikonal bridge) under A_min; ship honest narrower status where the promotion value gate fails."
+cycle_count: 1
+fanout: 1
+targets_attempted: 2
+targets_closed_clean: 0
+active_route: "GL-F: search retained set + Tier-A registry + four primitives for an I-4 matter-functional supplier. GRAV: recompute H_s=H_0+s*I sign+normalization in-tree from the retained weak-field action coupling."
+hard_residual: "No branch-local retained claim is made; independent audit lane still owns final status on both rows. GL-F I-4 and GRAV WKB/Fermat n=k/k0 are named premises A_min withholds."
+outcomes:
+  gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11:
+    outcome: named_premise
+    closes_clean: false
+    residual: "I-4: physical matter correlation functional = Berezin/RP OS functional"
+    promotion_value_gate: fail
+    runner_total: "PASS=39 FAIL=0"
+  gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07:
+    outcome: named_premise
+    closes_clean: partial
+    residual: "WKB/Fermat eikonal identification n=k/k0 (geometric-optics reading)"
+    promotion_value_gate: fail
+    runner_total: "PASS=14 FAIL=0"
+files_touched:
+  - docs/GL_F_IDENTIFICATION_BRIDGE_I4_OS_FUNCTIONAL_CLOSURE_NOTE_2026-06-20.md
+  - scripts/gl_f_identification_bridge_i4_os_functional_closure_2026_06_20.py
+  - logs/runner-cache/gl_f_identification_bridge_i4_os_functional_closure_2026_06_20.txt
+  - docs/GRAVITY_GENERATOR_SHIFT_BRIDGE_CLOSURE_NOTE_2026-06-20.md
+  - scripts/gravity_generator_shift_bridge_2026_06_20.py
+  - logs/runner-cache/gravity_generator_shift_bridge_2026_06_20.txt
+  - .claude/science/physics-loops/closable-backups/block01_section_GL-F.md
+  - .claude/science/physics-loops/closable-backups/block01_section_GRAV.md
+  - .claude/science/physics-loops/closable-backups/CLAIM_STATUS_CERTIFICATE_block01.md
+  - .claude/science/physics-loops/closable-backups/STATE.yaml
+  - .claude/science/physics-loops/closable-backups/GOAL.md
+open_imports:
+  - "GL-F I-4: physical matter sector = Berezin/RP OS functional is an admitted identification premise; no retained supplier exists; not a Tier-A admission; the action surface is itself supplied/conditional."
+  - "GL-F: standard OS/Berezin algebra supplies only the Berezin<->operator representation dictionary (already discharged as clause I-3), which is silent on physical-sector identification."
+  - "GRAV: the operator-shift sub-step (static diagonal action coupling -> additive diagonal generator term) is standard Lie-Trotter/transfer-matrix math the audit lane could complete; not new derivational content."
+  - "GRAV: WKB/Fermat n=k/k0 geometric-optics reading remains an admitted physical premise not closable by standard algebra over the retained primitives."
+no_go_routes:
+  - "Do not promote GL-F I-4 by treating the Berezin<->operator representation equality as if it asserted the physical-sector identification."
+  - "Do not import an observed/empirical matter-functional identification as a hidden premise to manufacture the GL-F closure."
+  - "Do not promote GRAV by claiming the textbook operator-shift completion as new derivational content; recomputation fixes sign/norm only."
+  - "G_Newton stays registered data; do not import it as a derivation."
+trace_gate_classification: named_premise_isolation
+review_disposition: "Local pass for named-premise / partial scope on both rows; zero clean closures. Independent audit lane still required before any status movement."
+parent_rows_status_unchanged:
+  - "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11: unchanged"
+  - "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07: audited_conditional / chain_closes=false, unchanged"
+pr_status: pending
+next_exact_action: "Hand the two notes + runners + this certificate to the independent audit lane; no row status, Tier-A, or ledger edits to make."
+stop_condition: "Stop after synthesis certificate written and vocab_lint clean; orchestrator owns git."

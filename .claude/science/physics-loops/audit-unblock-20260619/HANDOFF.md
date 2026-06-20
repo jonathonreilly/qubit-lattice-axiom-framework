@@ -55,13 +55,15 @@ audit_queue_ready=true
 
 ## PR Status
 
-Pending.
+Open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4481
 
-After opening the PR, patch this section and `STATE.yaml` with the PR URL,
-number, verified mergeability, and final head commit.
+- PR #4481 is based on `main`.
+- Head branch: `physics-loop/audit-unblock-block113-20260620`.
+- Head commit at creation: `d7a4e60dab0c20db7196588f29c1c62273ddaa2d`.
+- `gh pr view` reported `OPEN`, non-draft, `MERGEABLE`.
+- GitHub audit-lane `audit_pipeline` check was queued at creation.
 
 ## Next Exact Action
 
-Commit Block113, push `physics-loop/audit-unblock-block113-20260620`, open the
-review PR using `PR_BODY.md`, patch the PR URL into this packet, then refresh
+Push the metadata commit, verify PR #4481 still targets `main`, then refresh
 the opportunity queue from current `origin/main` and begin Block114.

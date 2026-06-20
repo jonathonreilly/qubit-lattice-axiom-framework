@@ -1,0 +1,84 @@
+========================================================================
+CLUSTER 2 READOUT-CONTEXT / OBJECTIVITY / SECTOR-MEASURE  (2026-06-20)
+NO AXIOM ADOPTED -- conditional supplier-discharge witnesses only
+========================================================================
+
+[R1] Koide r=1/2 equal-block MEASURE:
+     no_go = pointer/orthogonality fix #terms not the weight ratio t;
+     supplier = equal-block (1,1) measure pins t=1 => r*=1/2, Q=2/3.
+  [PASS] capacity max r*=w_p/(2w_s): (w_s,w_p)=(1,0) -> r*=0.0000, Q=0.3333  -- closed=0.0000 numeric=0.0000
+  [PASS] capacity max r*=w_p/(2w_s): (w_s,w_p)=(1,1) -> r*=0.5000, Q=0.6667  -- closed=0.5000 numeric=0.5000
+  [PASS] capacity max r*=w_p/(2w_s): (w_s,w_p)=(1,2) -> r*=1.0000, Q=1.0000  -- closed=1.0000 numeric=1.0000
+  [PASS] capacity max r*=w_p/(2w_s): (w_s,w_p)=(2,1) -> r*=0.2500, Q=0.5000  -- closed=0.2500 numeric=0.2500
+  [PASS] capacity max r*=w_p/(2w_s): (w_s,w_p)=(1,3) -> r*=1.5000, Q=1.3333  -- closed=1.5000 numeric=1.5000
+  [PASS] NO-GO leg: r* is a CONTINUOUS function of the free weight ratio t=w_p/w_s (pointer fixes #terms only)  -- distinct t -> distinct r*; #blocks=2 is shared by all t
+  [PASS] SUPPLIER (cond.): equal-block (1,1) measure pins t=1 => r*=1/2, Q=2/3 EXACTLY  -- r*=0.5, Q=0.666667
+  [PASS] falsification leg: rank/Born (1,2) measure gives Q=1 (distinct, empirically excluded) -> proposal non-vacuous  -- Q(1,2)=1 != Q(1,1)=2/3
+
+[R2] Koide r=1/2 OBJECTIVITY selector:
+     no_go = QD/SBS objectivity fixes the pointer BASIS not the weight;
+     supplier = max-objective-information over the OBJECTIVE LABEL ALPHABET picks uniform.
+  [PASS] NO-GO leg: SBS objectivity plateau = H(weights)=1.0000 bits exists for weights (0.5, 0.5) (objectivity present for ALL weights)  -- objectivity is a readout of the supplied weights, not a selector
+  [PASS] NO-GO leg: SBS objectivity plateau = H(weights)=0.9183 bits exists for weights (0.333, 0.667) (objectivity present for ALL weights)  -- objectivity is a readout of the supplied weights, not a selector
+  [PASS] NO-GO leg: SBS objectivity plateau = H(weights)=0.7219 bits exists for weights (0.2, 0.8) (objectivity present for ALL weights)  -- objectivity is a readout of the supplied weights, not a selector
+  [PASS] NO-GO leg: tracial reference I/3 through (rank1,rank2) -> (1/3,2/3) => r=1, NOT (1/2,1/2)  -- objectivity/basis fact does not pick the uniform sector weight
+  [PASS] SUPPLIER (cond.): max-information over the 2 objective LABELS -> uniform (1/2,1/2) (=1 bit) => r=1/2  -- H(unif)=1.0000 bit > H(rank)=0.9183; argmax over alphabet = uniform
+  [PASS] SUPPLIER (cond.): uniform LABEL weights = equal-block (1,1) => same t=1 pin as R1 (one choice)  -- label-count selector and equal-block measure coincide
+
+[R3] Koide W_t-INDEPENDENCE countermodel (the dephasing/relaxation route):
+     objectivity-as-DYNAMICS (einselection fixed point) gives the RANK channel, NOT equal.
+     => the axiom must be exactly what pins t=1; it is NOT delivered by record dynamics.
+  [PASS] R3 countermodel: einselection/relaxation fixed point I/3 -> weights (1/3,2/3)  -- weights=(np.float64(0.3333), np.float64(0.6667))
+  [PASS] R3 countermodel: einselection fixed point gives r=1, Q=1 -- NOT r=1/2 (record-dynamics axiom does NOT pin t=1)  -- r_fp=1.0000, Q=1.0000
+  [PASS] R3 conclusion: the weight ratio t=W_t is INDEPENDENT of the record-production/decoherence axiom (Cluster 1)  -- Cluster 1 dynamics + objectivity-as-dynamics => t=2 (rank), not t=1 (equal)
+  [PASS] R3 => the readout-context measure axiom is EXACTLY the missing pin for t=1 (distinct from Cluster 1)  -- what pins equal weights is a READOUT CRITERION, not the existence of einselecting dynamics
+
+[SKa] SKEPTICAL: is equal-block (1,1) FORCED by a symmetry the campaign missed?
+      Test U(3)-invariance, K-reality/CPT, Z3-equivariance -> none force equal weights.
+  [PASS] SKa(U3): I/3 is U(3)-invariant; the uniform-SECTOR state is NOT -> symmetry picks RANK, not equal  -- 30 conjugation samples; U(3)-invariance => (1/3,2/3) not (1/2,1/2)
+  [PASS] SKa(U3): the equal-block reference is NOT U(3)-invariant (so no continuous symmetry forces it)  -- equal-block state breaks U(3); it is a choice, not a symmetry consequence
+  [PASS] SKa(K/CPT): conjugation fixes BOTH sector projectors and induces NO rank-swap -> no forced uniform count  -- K-real route fixes basis, leaves weight free
+  [PASS] SKa(Z3): a Z3-equivariant (circulant) operator COMMUTES with the singlet/doublet grading (cannot split orbit -> cannot set weight)  -- ||[C,P_s]||=0.00e+00, ||[C,P_d]||=8.99e-17
+  [PASS] SKa VERDICT: no missed symmetry forces equal-block; the wall is REAL (genuine free measure choice)  -- U(3)->rank, K/CPT->basis only, Z3-equivariance->cannot split. A new readout-context premise is needed.
+
+[R4/SKb] observable_principle T1-d det-READOUT identification:
+      SKb: det FORM is a no-new-axiom THEOREM (multiplicative character);
+      only the Z<->record IDENTIFICATION is the readout-context residual.
+  [PASS] SKb: det is multiplicative under operator COMPOSITION det(A.S)=det A . det S (character; FORM half is a theorem)  -- GL(n) abelianization
+  [PASS] SKb: trace FAILS the composition character tr(A.S)!=tr A . tr S (so det-not-tr is no-new-axiom)  -- tr is not a multiplicative character
+  [PASS] SKb: det multiplicative over independent blocks det(A(+)B)=det A . det B  -- direct-sum multiplicativity
+  [PASS] SKb VERDICT: T1-d FORM (det) needs NO axiom; the residual is ONLY the readout IDENTIFICATION  -- the 887 fanout is not all a new axiom: the form half is a theorem
+  [PASS] R4 residual: with the ONE readout-context IDENTIFICATION clause, additivity => Cauchy => W=c log det (c=1 conv.)  -- max|W(Z1 Z2)-W(Z1)-W(Z2)|=4.44e-16 for W=log det
+  [PASS] R4: det(D+mI) > 0 on the zero-source staggered surface (log|det|=log det; real Cauchy domain holds)  -- det=1.408e-06
+  [PASS] R4 SUPPLIER (cond.): the readout-context IDENTIFICATION clause is the same gate as R1/R2 (one cluster)  -- 'a record reads out its central-sector scalar' is the readout-context primitive shared with the measure
+
+[R5] P-REC single-taste POINTER:
+     per-site gamma_5 is impossible (omega=iI in M_2(C)) -> the taste/chirality
+     selector CANNOT be on-site; it is a READOUT-CONTEXT choice of 'one slot per
+     irreducible record outcome' (same atom-share/orbit-occupancy choice).
+  [PASS] R5: Cl(3) volume element omega = s1 s2 s3 = i*I in M_2(C) (central scalar) -> no per-site gamma_5  -- omega=0.00+1.00j,0.00+1.00j (== iI)
+  [PASS] R5: NO nonzero on-site operator anticommutes with all 3 Pauli generators (per-site chirality empty)  -- the taste/chirality pointer cannot live on the qubit; it is a readout-context selector
+  [PASS] R5: slot counts -- sector(real-components)=3 vs orbit(record-outcomes)=2 (a 2:1 K/CPT covering)  -- M_sector vs M_orbit exhibited models
+  [PASS] R5 SUPPLIER (cond.): 'one slot per irreducible record outcome' = single-taste pointer = orbit-occupancy = t=1 pin  -- P-REC pointer, atom-share measure, and orbit-occupancy are the SAME readout-context choice
+
+[SKc] UNIFYING MINIMALITY: equal-block measure == objectivity-label-count
+      == orbit-occupancy (slots-per-outcome) == single-taste pointer == ONE choice
+      that pins t=1. The primitive supplies NO weight/probability number.
+  [PASS] SKc: M_sector -> r=1 (Q=1); M_orbit -> r=1/2 (Q=2/3) -- the two consistent horns  -- r_sector=1.000, r_orbit=0.500
+  [PASS] SKc: convention-free occupancy fiber r_sector/r_orbit = Z_sector/Z_orbit = 2 (the count-twice factor)  -- the cell ratio IS the 2:1 occupancy factor, normalization-independent
+  [PASS] SKc minimality: the supplied object is BINARY (count outcomes vs components); outputs are exact fractions, NO fitted number  -- Q in {2/3, 1}; the primitive supplies the criterion, never a weight/probability value
+  [PASS] SKc: ONE readout-context primitive discharges R1,R2,R3-pin,R4,R5 (single science-level decision)  -- equal-block = label-count = orbit-occupancy = single-taste pointer = readout of outcomes
+
+[POLICY] minimality / no-laundering self-checks (AXIOM_MINIMALITY_POLICY conformance)
+  [PASS] POLICY: lands in an OPEN gate (readout context / sector measure / objectivity / occupancy), not a reword of an existing axiom  -- MINIMAL_AXIOMS_2026-06-05 lists this gate as outside axiom content
+  [PASS] POLICY: supplies criterion/measure ONLY -- no weight, probability, normalization, Born rule, or mass number  -- Record's non-supply clause is respected; the primitive adds the measure CLASS, not values
+  [PASS] POLICY: recorded as an UNMADE science-level decision (hypothetical_axiom_status), adopts nothing  -- owner/governance decision; audit lane is sole status authority
+
+========================================================================
+TOTAL: PASS=41 FAIL=0
+========================================================================
+
+Every SUPPLIER (cond.) line is CONDITIONAL on the UNADOPTED candidate
+readout-context primitive. hypothetical_axiom_status: 'conditional on
+accepted new axiom; not retained on the actual current surface.' This
+runner adopts NOTHING and sets no audit verdict.

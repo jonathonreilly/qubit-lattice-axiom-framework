@@ -1,0 +1,76 @@
+========================================================================
+CLUSTER 1 -- RECORD-PRODUCTION DYNAMICS as the common sink for B-AXIS
+            (single-clock N2b / N4 / N5 + the arrow)   2026-06-20
+========================================================================
+
+Posture: skeptical no-new-axiom re-attack FIRST; propose the minimal
+dynamics primitive ONLY for the residual that genuinely walls; every
+[COND] line is conditional on an UNADOPTED candidate primitive.
+
+------------------------------------------------------------------------
+[0] B-AXIS exchange baseline (recomputed; the wall is genuine)
+------------------------------------------------------------------------
+  [PASS] W is orthogonal (W W^T = I)  -- N=64 sites
+  [PASS] N4 wall is real: periodic staggered surface is EXACTLY W-invariant (no retained structure breaks the tau<->x_1 exchange)  -- ||W M W^T - M|| = 0.00e+00 (axis label underivable from this surface)
+  [PASS] the certificate is non-trivial: plain swap WITHOUT the sign field fails  -- ||W_plain M W_plain^T - M|| = 11.3137 >> 0
+
+------------------------------------------------------------------------
+[1] SKEPTICAL CRACK: consumer-need decomposition (no new axiom)
+------------------------------------------------------------------------
+  [PASS] CRACK(N4-label): chirality grading eps(x)=(-1)^{sum x} is EXACTLY W-invariant -> the anomaly chain (the ~1049 consumer) is axis-LABEL-blind  -- ||W E W^T - E|| = 0.00e+00
+  [PASS] CRACK(N4-label): chiral anticommutation {D_hop, eps}=0 holds AND is W-transported -> 'which axis is temporal' is not in anything the anomaly reads  -- ||{D,eps}||=0.00e+00, transported=0.00e+00
+  [PASS] CRACK CONCLUSION (no axiom): the axis-LABEL half of N4 is OVER-SPECIFIED for fanout -- the anomaly cap consumes d_t<=1 (count), not the label  -- matches ANOMALY_FORCES_TIME 'constrain only the count d_t, not which axis is temporal'
+  [PASS] N5 wall is real: two commuting tensor-factor transfers survive Stone (H_prod = H_A(x)I + I(x)H_B; product transfer has the SUMMED generator)  -- ||H_prod - H_sum|| = 4.44e-16
+  [PASS] N5 wall is real: the two factor generators COMMUTE (a genuine 2nd one-parameter group survives; no state-blind algebra removes it)  -- ||[H_A,H_B]|| = 0.00e+00  (N5 does NOT crack algebraically)
+  [PASS] N2b wall is real: T reconstructs for tau=1.0 with H ~ 1/tau (T fixes only tau*H, not H)  -- H(tau=1.0) = (1/1.0) H(1); same T
+  [PASS] N2b wall is real: T reconstructs for tau=2.0 with H ~ 1/tau (T fixes only tau*H, not H)  -- H(tau=2.0) = (1/2.0) H(1); same T
+  [PASS] N2b wall is real: T reconstructs for tau=0.7 with H ~ 1/tau (T fixes only tau*H, not H)  -- H(tau=0.7) = (1/0.7) H(1); same T
+  [PASS] N2b RELOCATION (not this cluster): the tick value 2a_tau is flagged SK-1 -- covered by scale_reference x kinetic_isotropy, a no-new-axiom crack  -- the DYNAMICS cluster only needs the generator's STEP, see PART 3
+
+------------------------------------------------------------------------
+[2] WALL (no crack): record formation is NOT forced by Lattice+Quantum+Record
+------------------------------------------------------------------------
+  [PASS] WALL: H=0 preserves system off-diagonal coherence -> NO record  -- |coh| frozen = 0.500
+  [PASS] WALL: decoupled H = H_S(x)I + I(x)H_E preserves system coherence -> NO record despite non-trivial dynamics  -- phases are local; reduced system off-diagonals keep |coh|=0.5
+  [PASS] WALL: an energy eigenstate is stationary -> coherence frozen, NO record (the baseline fixes no state, so an eigenstate is admissible)  -- stationary => no monotone record accumulation
+  [PASS] WALL CONCLUSION (no crack): unconditional record formation needs an imported decoherence/record-production premise -- exactly what Record excludes  -- this is the genuine DYNAMICS floor under B-AXIS-N4, N5, N2b-step, arrow
+
+------------------------------------------------------------------------
+[3] CONDITIONAL on the minimal record-production primitive (UNADOPTED)
+------------------------------------------------------------------------
+  [PASS] [COND] ARROW: the record-monotone R is non-decreasing along e^{tL} (t>=0) -> the semigroup ORIENTATION defines the evolution direction  -- record proxy = [0.0, 1.0, 1.0, 1.0, 1.0, 1.0] (rises as |coh| falls)
+  [PASS] [COND] ARROW is in the GENERATOR's irreversibility, not smuggled: a unitary step has |coh| constant (no monotone) -- only the CPTP L orients time  -- consistent with ARROW_FROM_RECORD_FORMATION: sign=boundary, existence=L
+  [PASS] [COND] N5 DISCHARGES: one record-production generator yields ONE monotone record order even across two factors (joint coherence monotone) -> a single production clock, excluding the independent 2nd commuting clock as a RECORD stream  -- joint |coh|/0.5 = [0.5, 0.467, 0.376, 0.248, 0.113, 0.0] (single monotone, one clock)
+  [PASS] [COND] N5 minimality: the primitive excludes the 2nd clock ONLY as a record-producing stream; it does NOT forbid commuting algebra (gauge/redundant factors survive) -- it supplies scope-boundary N5, nothing more  -- weaker than 'no commuting tensor factor exists'
+  [PASS] [COND] N4 DISCHARGES: a per-axis registration-direction datum (realized as antiperiodic-tau / periodic-space) breaks the exchange EXACTLY -> selects ONE temporal axis (the produced event-order axis)  -- ||W M_ap W^T - M_ap|| = 8.0000 > 0 (axis label now derivable)
+  [PASS] [COND] N4 falsification leg: SYMMETRIC BCs (both antiperiodic) RESTORE the exchange -> the selecting content is the per-axis registration ASYMMETRY, exactly what one record-production direction supplies  -- ||W M_both W^T - M_both|| = 0.00e+00 (restored)
+  [PASS] [COND] N4 discriminator is relabeling-invariant: with the registration datum the temporal(apbc) and spatial(pbc) 1D hop kernels have DIFFERENT dimension -> no exchange map of ANY kind can identify the axes  -- dim ker: temporal(apbc)=0, x_1(pbc)=2
+  [PASS] [COND] N2b-step DISCHARGES: the generator carries a production rate gamma with a well-defined record half-life -> the generator's STEP is the record-stream tick (dynamics side; geometric tick stays SK-1)  -- record half-life at t=0.415 for gamma=1.0
+  [PASS] [COND] N2b minimality: the primitive supplies only that a step EXISTS, NOT its dimensionful value (that remains scale_reference/kinetic_isotropy + realized-state data); it does NOT grant a kernel/weight  -- existence of a tick, not a number
+  [PASS] [COND] FLOOR DISCHARGES: |coh| -> 0 monotonically as #environment copies grows -> a durable, redundantly-broadcast record (einselection)  -- |coh|(N=1,2,4,16,64) = [0.3536, 0.25, 0.125, 0.002, 0.0]
+
+------------------------------------------------------------------------
+[4] MINIMALITY: what the candidate primitive does NOT grant
+------------------------------------------------------------------------
+  [PASS] does NOT grant a past hypothesis: arrow DIRECTION still needs a low-record boundary (realized_state_primitive forbids atypicality) -- strictly weaker  -- ARROW_FROM_RECORD_FORMATION: existence of low-record initial = separate, stronger input
+  [PASS] does NOT grant a specific kernel/Kraus/weight: only EXISTENCE of one CPTP production generator + a record-monotone (rates/kernels stay supplied)  -- POST_RECORD dynamics rows keep their supplied bridges
+  [PASS] does NOT grant Born weights / probability / normalization (those remain outside, in the readout-context/measure gate = Cluster 2)  -- no probability rule added
+  [PASS] does NOT grant the dimensionful tick value (SK-1: scale_reference x kinetic_isotropy) nor a fourth spatial dimension  -- supplies the STEP's existence, not its number
+  [PASS] does NOT contradict any RETAINED no-go: it SUPPLIES scope-boundary N4/N5 and the record-formation floor's named import -- consistent, additive  -- scope-boundary, record-formation no-go, axis-selection no-go all name this supplier
+  [PASS] CONSISTENCY with realized_state_primitive: the primitive supplies the production-dynamics SLOT (existence), evaluated at the realized state; it supplies no state, measure, or typicality  -- slot, not content
+
+------------------------------------------------------------------------
+[5] Fanout bookkeeping (carried; cross-checked vs load_bearing_summary)
+------------------------------------------------------------------------
+  [PASS] B-AXIS shared fanout ~959; gated path to anomaly_forces_time ~1049 (node transitive_descendants in load_bearing_summary.json)  -- record floor + B-AXIS (registration-direction route)
+  [PASS] CRACK reduces the AXIOM-bearing residual: the ~959 fanout needs the COUNT (N5+N2+N4-construction); only the axis LABEL is the registration-direction datum -- both supplied by ONE dynamics primitive  -- weakest sufficient: existence of one record-production generator
+
+========================================================================
+TOTAL: PASS=34 FAIL=0
+========================================================================
+
+Every [COND] line is CONDITIONAL on an UNADOPTED candidate primitive
+(one CPTP record-production generator + a record-monotone). This runner
+adopts NOTHING; hypothetical_axiom_status: conditional on accepted new
+axiom; not retained on the actual current surface. Status authority:
+independent audit lane / owner only.

@@ -1,0 +1,67 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+========================================================================
+WALL-TO-GATE MAP VERIFICATION  (2026-06-20)  -- NO AXIOM ADOPTED
+========================================================================
+
+[W1] B-AXIS N4 axis label: no_go holds (W-transport) + BC supplier breaks it
+  [PASS] W is orthogonal  -- ||WW^T-I||=0.00e+00
+  [PASS] NO-GO leg: periodic surface is W-invariant (axis underivable)  -- resid=0.00e+00
+  [PASS] certificate non-trivial: plain swap (no sign field) FAILS  -- resid=11.314
+  [PASS] SUPPLIER (cond.): per-axis Z2 BC-asymmetry breaks W exactly  -- resid=8.000
+  [PASS] falsification leg: antiperiodic BOTH axes restores W-symmetry  -- resid=0.00e+00
+
+[W2] B-AXIS N2 clock unit: T fixes only tau*H (no_go) + unit bridge supplier
+  [PASS] T reconstructed for tau=1.0 (H rescales as 1/tau)  -- ||Trec-T||=0.00e+00
+  [PASS] T reconstructed for tau=2.0 (H rescales as 1/tau)  -- ||Trec-T||=0.00e+00
+  [PASS] T reconstructed for tau=0.7 (H rescales as 1/tau)  -- ||Trec-T||=1.11e-16
+  [PASS] NO-GO: tau*H invariant, H itself not fixed (H2 = H1/2)  -- tauH fixed; H free
+  [PASS] SUPPLIER (cond.): supplying one tau value pins H uniquely  -- one block-spacing datum -> unique generator (Stone)
+
+[W3] B-AXIS N5 second clock: commuting tensor factors survive Stone (no_go)
+  [PASS] NO-GO: two commuting transfer factors lift to product (Stone non-unique factorization)  -- factor groups survive; product Stone doesn't erase them
+  [PASS] the two factor generators commute (independent clocks)  -- ||[HA,HB]||=0.00e+00
+  [PASS] SUPPLIER (cond.): a no-independent-commuting-factor premise excludes the 2nd clock  -- single-factor transfer premise
+
+[W4] ABJ P-ABJ internal index: square-block => A_t=0 (no_go) + imbalance supplier
+  [PASS] NO-GO: equal-sublattice even torus index = 0 for all flux q in {-2..2}  -- square bipartite block forces A_t=0
+  [PASS] SUPPLIER (cond.): imbalanced complex (odd 3x3, unequal sublattices) gives NONZERO signed heat trace  -- A_t(3x3,q=1)=0.8381  (chi!=0 / unequal-sublattice escape)
+
+[W5] Koide r=1/2 measure: equal-block (1,1) vs rank (1,2) (no_go on forcing) + supplier
+  [PASS] NO-GO: general max is r* = w_p/(2 w_s) (weight ratio undetermined by pointer)  -- two-block pointer fixes #terms not weights
+  [PASS] SUPPLIER (cond.) equal-block (1,1) measure => r* = 1/2 => Q=2/3  -- r*=0.5, Q=0.6667
+  [PASS] contrast: rank/Born (1,2) measure => r* = 1 => Q=1 (different physics)  -- r*=1.0, Q=1.0000
+
+[W6] Koide objectivity selector: QD objectivity fixes basis not weight (no_go) + supplier
+  [PASS] NO-GO: tracial reference I/3 -> rank-weighted (1/3,2/3) => r=1, NOT (1/2,1/2)  -- objectivity plateau = H(weights), reports not selects
+  [PASS] I/3 invariant under sampled U(3) (tracial is the conjugation-stable reference)  -- 20 samples
+  [PASS] SUPPLIER (cond.): max-information over 2 objective labels -> uniform (1/2,1/2) => r=1/2  -- H(unif)=0.6931 > H(rank)=0.6365
+
+[W7/C1] observable T1-d: form half (det) IS a theorem; only IDENTIFICATION is the bridge
+  [PASS] C1 CRACK: det is multiplicative over independent blocks (FORM half = theorem, no axiom)  -- det(A1+A2 block)=det A1 . det A2
+  [PASS] C1: trace is NOT multiplicative (so log-trace is not the additive character)  -- trace additive not multiplicative
+  [PASS] T1-d domain: det(M_KS+mI) > 0 on zero-source surface (log|det|=log det, real Cauchy domain)  -- det=1.408e-06
+  [PASS] WALL T1-d (residual): Record additivity -> generator additivity in Z=det needs the IDENTIFICATION bridge  -- Cauchy: continuous W(Z) + disjoint-block additivity => W=c log det (c=1)
+
+[W8] observable FS: fermion vs hard-core boson share dim 2 (no_go) + parity supplier
+  [PASS] NO-GO: per-site number op n has spectrum {0,1} for both fermion and hard-core boson (dim 2 shared)  -- dim/algebra blind to statistics
+  [PASS] hard-core boson ladders COMMUTE across sites (bosonic frame admissible)  -- ||[b0,b1]||=0.00e+00
+  [PASS] SUPPLIER (cond.): JW/CAR frame -> ladders ANTICOMMUTE (fermion-parity superselection forces CAR)  -- ||{c0,c1}||=0.00e+00
+
+[W9] record formation: H=0 / decoupled / eigenstate preserve coherence (no_go) + coupling supplier
+  [PASS] NO-GO: H=0 preserves system off-diagonal coherence (no record)  -- coherence frozen
+  [PASS] NO-GO: decoupled H!=0 keeps system coherence nonzero (no record despite dynamics)  -- |coh|=0.500
+  [PASS] SUPPLIER (cond.): S-E coupling + env superposition => system coherence = 0 exactly at t=pi/4 (record formed)  -- |coh|(t=pi/4)=6.67e-17 (which-path record; vs frozen no-go witnesses)
+  [PASS] SUPPLIER (cond.): einselection -- |coh| -> 0 monotonically as #environment copies grows (durable record)  -- |coh|(N=1,2,4,16,64)=[np.float64(0.8253), np.float64(0.6812), np.float64(0.464), np.float64(0.0464), np.float64(0.0)]
+
+========================================================================
+TOTAL: PASS=32 FAIL=0
+========================================================================
+
+Note: every SUPPLIER (cond.) line is CONDITIONAL on an UNADOPTED candidate
+axiom/primitive. This runner adopts NOTHING; it maps walls to the minimal
+supplier shape that would discharge each, for the owner governance decision.

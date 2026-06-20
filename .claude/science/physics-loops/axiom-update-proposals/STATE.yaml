@@ -1,0 +1,123 @@
+loop_slug: axiom-update-proposals
+mode: axiom-update-proposal
+target_status: best-honest-status (no-new-axiom cracks preferred; else candidate axiom-update proposals)
+launch_date: "2026-06-20"
+last_checkpoint_utc: "2026-06-20T17:40:00Z"
+current_branch: physics-loop/axiom-update-proposals-block01-20260620
+status_authority: independent audit lane / owner only
+hypothetical_axiom_status: "conditional on accepted new axiom; not retained on the actual current surface"
+
+posture: >
+  Owner authorized going beyond the no-new-axiom rule to deliver either new
+  no-new-axiom derivations OR axiom-update proposals. Every wall got a genuine
+  skeptical no-new-axiom re-attack FIRST; only residuals that still wall were
+  escalated to candidate primitives, always the weakest sufficient one. Nothing is
+  adopted; the audit lane / owner is the sole status authority.
+
+governance:
+  proposal_allowed: false   # owner governance decision required
+  adopts_axiom: false
+  sets_audit_verdict: false
+  edits_axiom_premise_nodes: false
+  read_only_paths: ["docs/audit/data/"]
+  approval_route: "docs/audit/AXIOM_MINIMALITY_POLICY.md section 6"
+
+current_status: >
+  Synthesis complete. Three candidate axiom-update proposals consolidated into
+  docs/AXIOM_UPDATE_PROPOSALS_CONSOLIDATED_2026-06-20.md, each in exactly one open
+  gate from MINIMAL_AXIOMS_2026-06-05.md. Five no-new-axiom cracks flagged
+  (higher value than proposals). 128 runner checks pass (0 fail) across four
+  runners; all reproduce deterministically. Pack (consolidated note + certificate
+  + STATE + GOAL) written. vocab_lint clean. No forbidden file touched.
+
+candidate_set:
+  - block_id: C1
+    id: RP-DYN
+    gate: arrow/measurement/decoherence/record-production dynamics
+    strength: weak
+    walls_discharged: [record-formation floor, B-AXIS N4, B-AXIS N5, B-AXIS N2b-step, arrow existence]
+    fanout: "record floor (transitive) + ~959 (B-AXIS -> anomaly cap path 1049)"
+    note: docs/AXIOM_UPDATE_PROPOSAL_RECORD_PRODUCTION_DYNAMICS_2026-06-20.md
+    runner_total: "PASS=34 FAIL=0"
+  - block_id: C2
+    id: READOUT-MEASURE
+    gate: readout context/sector measure/objectivity/occupancy
+    strength: weak-medium
+    walls_discharged: [Koide r=1/2 measure (R1), Koide r=1/2 objectivity (R2), W_t-independence demarcation (R3), observable T1-d det-readout identification (R4), P-REC readout selection (R5)]
+    fanout: "~1 (Koide direct) + koide cone 327 + observable identification half of 887 + flavor readout rows"
+    note: docs/AXIOM_UPDATE_PROPOSAL_READOUT_CONTEXT_OBJECTIVITY_2026-06-20.md
+    runner_total: "PASS=41 FAIL=0"
+  - block_id: C3
+    id: PIN-GAUGE-CONTENT
+    gate: gauge group/particle content/species (+ source/action via FS)
+    strength: heavy
+    walls_discharged: [ABJ P-HY, ABJ P-COMP, "(folded) observable FS", "feeds P-ABJ(a/b) consistency + P-REC factor existence"]
+    fanout: "~1049 (anomaly chain) + native-gauge cone 1361 (abelian/charge half) + AC gate 927 (overlapping)"
+    note: docs/AXIOM_UPDATE_PROPOSAL_GAUGE_CONTENT_2026-06-20.md
+    runner_total: "PASS=21 FAIL=0"
+
+no_new_axiom_cracks:
+  - id: N4-LABEL
+    status: crack (partial, no axiom; landed in C1 re-attack)
+    detail: "anomaly chain imports only count d_t<=1 and is axis-label-blind; chirality eps and {D_hop,eps} exactly W-invariant (resid 0)"
+  - id: SK-1
+    status: candidate crack (attempt before proposing)
+    detail: "2a_tau plausibly derivable from scale_reference x kinetic_isotropy; N2b NOT a fourth cluster"
+  - id: SK-2
+    status: candidate crack (attempt; would shrink C3)
+    detail: "P-ABJ route (c): imbalanced/curved emergent complex chi!=0 gives nonzero signed heat trace (3x3 A_t=0.838); geometry not axiom"
+  - id: SK-3
+    status: crack (FORM half, no axiom)
+    detail: "det-vs-trace FORM already a theorem (multiplicative character); observable 887 fanout not a missing axiom; only thin identification clause remains (-> C2/R4)"
+  - id: SK-4
+    status: crack (minimality, no axiom)
+    detail: "Koide measure and objectivity are ONE physical choice (atom-share = label-count)"
+
+walls_surviving_attack:
+  - "SKa: no U(3)/K-CPT/Z3 symmetry forces the Koide equal-block measure -> WALLS"
+  - "P-HY/P-COMP: 4 gauging discriminators blind; every native completion vector-like -> WALL"
+  - "record-formation: H=0/decoupled/eigenstate exact no-record witnesses; Record excludes decoherence -> WALL"
+
+ranking_fanout_per_unit_strength: "C2 ~= C1 > C3"
+recommended_sequence: "C1 then C2 (weak, high-leverage); defer C3 until SK-2/SK-1/SK-3 attempted"
+
+verification:
+  aggregate: "PASS=128 FAIL=0 across four runners (34 + 41 + 21 + 32)"
+  reproduced_utc: "2026-06-20T17:38:00Z"
+  no_empirical_import: true
+  deterministic: true
+  runners:
+    - {path: scripts/axiom_update_record_production_dynamics_cluster_2026_06_20.py, total: "PASS=34 FAIL=0"}
+    - {path: scripts/axiom_update_proposal_readout_context_objectivity_runner_2026_06_20.py, total: "PASS=41 FAIL=0"}
+    - {path: scripts/axiom_update_proposal_gauge_content_2026_06_20.py, total: "PASS=21 FAIL=0"}
+    - {path: logs/runner-cache/axiom_update_proposals_wall_to_gate_runner_2026_06_20.py, total: "PASS=32 FAIL=0"}
+
+sourcing_caveat: >
+  The exact 2026-06-20 campaign notes and exercise packets named in the task prompt
+  (SINGLE_CLOCK_BAXIS_..._NO_GO_NOTE, ANOMALY_FORCES_TIME_ABJ_..._NOTE,
+  KOIDE_RECORDS_OBJECTIVITY_DERIVATION_ATTEMPT_NOTE, OWNER_DECISION_PACKETs,
+  FRONTIER_RAYS, .claude/science/exercises/{baxis-wall-break,abj-walls-break}/) do
+  not exist in this checkout (verified by exhaustive find). The proposals were
+  reconstructed from the landed campaign no_go / bounded-theorem notes that do
+  exist and that name the supplier shapes and gates verbatim.
+
+files_written:
+  - docs/AXIOM_UPDATE_PROPOSALS_CONSOLIDATED_2026-06-20.md
+  - .claude/science/physics-loops/axiom-update-proposals/CLAIM_STATUS_CERTIFICATE_block01.md
+  - .claude/science/physics-loops/axiom-update-proposals/STATE.yaml
+  - .claude/science/physics-loops/axiom-update-proposals/GOAL.md
+
+pre_existing_component_files:
+  - docs/AXIOM_UPDATE_PROPOSAL_RECORD_PRODUCTION_DYNAMICS_2026-06-20.md
+  - docs/AXIOM_UPDATE_PROPOSAL_READOUT_CONTEXT_OBJECTIVITY_2026-06-20.md
+  - docs/AXIOM_UPDATE_PROPOSAL_GAUGE_CONTENT_2026-06-20.md
+  - .claude/science/physics-loops/axiom-update-proposals/WALL_TO_GATE_MAP.md
+  - .claude/science/physics-loops/axiom-update-proposals/block01_section_DYNAMICS.md
+  - .claude/science/physics-loops/axiom-update-proposals/block01_section_READOUT.md
+  - .claude/science/physics-loops/axiom-update-proposals/block01_section_GAUGE.md
+
+next_exact_action: >
+  Owner governance decision on the candidate set (sequence C1 then C2; defer C3),
+  AND/OR attempt the no-new-axiom cracks SK-1 / SK-2 / SK-3 (a crack retires the
+  corresponding proposal). Independent audit lane to set status.
+stop_condition: "synthesis delivered; awaiting owner governance decision / audit-lane review"

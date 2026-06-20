@@ -1,0 +1,80 @@
+==========================================================================
+AXIOM-UPDATE PROPOSAL -- GAUGE-CONTENT / PARTICLE-CONTENT cluster (2026-06-20)
+NO AXIOM ADOPTED.  Conditional results carry hypothetical_axiom_status.
+==========================================================================
+
+--- HALF A: skeptical no-new-axiom re-attack (the walls are genuine) ---
+
+[A1] P-HY no-new-axiom crack FAILS: the four gauging-selection
+     discriminators do not select 'Y_like is gauged'.
+  [PASS] disc#2 d_abc is one-sided (su2 d=0, su3 d!=0): a FILTER not a selector  -- |d|_su2=0.00e+00, max|d|_su3=0.289
+  [PASS] disc#1 maximality blind: irreducible action => commutant=CI (dim 1) for both su(3) and a full irreducible u(6)-type set  -- comm(su3)=1, comm(irr6)=1
+  [PASS] disc#3 chirality grading commutes with color generators (blind to which factor is chirally gauged)  -- max||[eps,T]||=0.00e+00
+  [PASS] disc#4 reality bilinear distinguishes complex color (3!=3bar, not self-conj) from a real spin-1 vector (self-conj), but does not select a gauged U(1)  -- color self-conj=False, real spin-1 self-conj=True
+  [PASS] [A1 verdict] all four published discriminators are blind/one-sided/circular => 'Y_like is gauged' is NOT no-new-axiom forced (P-HY walls)  -- open gate per GAUGE_ALGEBRA_SUPPLIED_CARRIER note
+
+[A2] P-COMP no-new-axiom crack FAILS, vector-like trap #1:
+     the naive CPT-mirror of the LH content is VECTOR-LIKE (inert).
+  [PASS] naive CPT-mirror cancels ALL six conditions (vector-like): {'Tr[Y]': '0', 'Tr[Y^3]': '0', 'Tr[SU3^2 Y]': '0', 'Tr[SU2^2 Y]': '0', 'SU3^3': '0', 'Witten(even?)': 'True'}  -- Tr[Y]=0,Tr[Y^3]=0,Tr[SU3^2Y]=0,Tr[SU2^2Y]=0,SU3^3=0,Witten even
+  [PASS] naive mirror is genuinely VECTOR-LIKE: spectrum == its CPT conjugate (every (rep,Y) paired with conj) -> supplies NO new chirality class  -- block02 lesson: naive CPT-mirror => vectorlike, not chiral
+
+[A3] P-COMP no-new-axiom crack FAILS, vector-like trap #2:
+     the native taste-cube complementation gives a TRIVIAL (vector-like)
+     chirality survivor admissible on {Lattice,Quantum,Record}.
+  [PASS] native complementation c(b)=1-b maps Hamming L_k -> L_{3-k} (opposite-weight pairing)  -- L0<->L3, L1<->L2 (substep3 H7)
+  [PASS] single-bond: TRIVIAL gamma5=+-I (vector-like) is a valid survivor (>=2 classes) => chirality is a FREE SELECTOR (not forced)  -- survivors=[(1, 1, False), (1, -1, True), (-1, 1, True), (-1, -1, False)]
+  [PASS] [A3 verdict] native RH template of the REQUIRED opposite-chirality class is NOT forced from {Lattice,Quantum,Record} (block02 KILLED Hamming-odd native-RH)  -- the chiral anticommutation must be IMPOSED
+
+[A4] The wall is real: the LH content ALONE is anomalous, so a
+     completion IS needed -- but only vector-like ones are native.
+  [PASS] LH-only gauge traces: 3 are nonzero (Tr[Y^3]=-16/9, Tr[SU3^2 Y]=+1/3, SU3^3=+2) => LH theory is anomalous  -- Tr[Y^3]=-16/9, Tr[SU3^2Y]=1/3, SU3^3=2
+  [PASS] LH-only Tr[Y]=0 and Tr[SU2^2 Y]=0 and Witten even (the always-OK ones)  -- consistent with the cited theorem table
+
+--- HALF B: conditional derivation under candidate axiom (hypothetical_axiom_status) ---
+    CANDIDATE (PIN-GAUGE-CONTENT): (i) Y_like is a GAUGED U(1)  [P-HY];
+    (ii) completion = opposite-chirality (RH) SU(2)-singlet template,
+         chirality STIPULATED (not the vector-like mirror), Y_nuR=0 [P-COMP].
+
+[B1] Conditional: the chiral RH template cancels all six EXACTLY.
+  [PASS] [cond] all six anomaly conditions vanish exactly for (4/3,-2/3,-2,0): Tr[Y]=0, Tr[Y^3]=0, Tr[SU3^2 Y]=0, Tr[SU2^2 Y]=0, SU3^3=0, Witten(even?)=True  -- hypothetical_axiom_status: conditional on accepted new axiom
+
+[B2] Conditional: the completion is genuinely CHIRAL (not the A2 mirror).
+  [PASS] [cond] full content is CHIRAL (spectrum != its CPT conjugate) => realizes a genuine second chirality class, and the RH template differs from the inert vector-like mirror  -- this is the precise specification block02 warns is required
+
+[B3] Conditional: closed-form completion parametric in n_color; n_color=3 -> SM branch (existence witness).
+  [PASS] [cond] SHIFT relation Y_uR=a+1, Y_dR=a-1, Y_eR=b-1, Y_nuR=b+1 at n_color=3 gives SM branch (4/3,-2/3,-2,0)  -- {'u_R': Fraction(4, 3), 'd_R': Fraction(-2, 3), 'e_R': Fraction(-2, 1), 'nu_R': Fraction(0, 1)}
+  [PASS] [cond] color-anomaly closed form Y_uR+Y_dR=2a holds for all n_color (parametric existence)  -- nc in {2,3,5,7}
+
+[B4] Conditional: with Y_like GAUGED (i), the three nonzero LH traces
+     are GAUGE anomalies -> their cancellation is a consistency demand
+     (P-ABJ bites) -> anomaly_forces_time lower bound d_t odd follows.
+  [PASS] [cond] LH-only gauge anomalies nonzero AND completed gauge anomalies zero => P-ABJ (conditional on gauging) makes the completion mandatory  -- feeds the d_t-odd lower bound
+  [PASS] [cond] genuine 2nd chirality class + EVEN-dimension Clifford theorem => d_s+d_t even; with d_s=3 => d_t odd (>=1). (lower bound discharged)  -- d_t<=1 cap is supplied separately by Cluster 1 / single-clock
+
+--- FALSIFICATION legs (discharge is non-trivial) ---
+  [PASS] F1 wrong completion (Y_nuR=1) FAILS cancellation  -- Tr[Y]=-1, Tr[Y^3]=-1
+  [PASS] F2 e_R<->nu_R relabelling is equally anomaly-consistent (named discrete convention, not a 2nd axiom)  -- the branch choice Y_nuR=0 is a convention; the gauge-content axiom is the supplier
+  [PASS] F3 vector-like mirror cancels anomalies but is chirally INERT => no second chirality class => no d_t-odd lower bound (why the axiom must STIPULATE chirality)  -- minimality: the axiom adds chirality, not just 'a completion'
+
+==========================================================================
+CLASS BREAKDOWN: HALF-A (skeptical re-attack, no axiom) + HALF-B (conditional) + FALSIFICATION
+TOTAL: PASS=21 FAIL=0
+==========================================================================
+
+VERDICT (no audit status set; for owner governance only):
+  * P-HY and P-COMP each WALL on the no-new-axiom surface (HALF A): the four
+    published gauging discriminators do not select 'Y_like gauged'; the only
+    native completions (naive CPT-mirror; taste-cube complementation) are
+    VECTOR-LIKE, admissible on {Lattice,Quantum,Record} -- so no CHIRAL RH
+    template is forced (block02 vectorlike/Hamming-odd lesson reproduced).
+  * The minimal gauge-content candidate axiom (PIN-GAUGE-CONTENT: Y_like is a
+    gauged U(1) + opposite-chirality SU(2)-singlet RH template with chirality
+    STIPULATED) DISCHARGES both walls (HALF B): the SM-branch RH template
+    cancels all six anomaly conditions exactly, is genuinely chiral (not the
+    inert mirror), is parametric in n_color, and (with gauging) makes the
+    cancellation a consistency demand feeding the d_t-odd lower bound.
+  * Falsification legs confirm the discharge is non-vacuous and that the axiom
+    must STIPULATE chirality (the vector-like mirror cancels but is inert).
+  hypothetical_axiom_status: conditional on accepted new axiom; not retained on
+  the actual current surface.
+

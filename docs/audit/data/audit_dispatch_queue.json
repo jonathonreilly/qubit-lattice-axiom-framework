@@ -1,8 +1,99 @@
 {
-  "live": [],
-  "live_count": 0,
+  "live": [
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "retained_bounded",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md"
+      ],
+      "audit_question": "Fresh-context re-audit: ignoring the archived failed causal_propagating_field_note row and stale 0.63 / 0.45 table, does the current live bounded finite replay in CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md audit clean under its narrowed configured-family scope?",
+      "blocked_by_group_ids": [],
+      "claim_id": "causal_propagating_field_live_packet_note_2026-06-05",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "the live re-audit bridge note as evidence",
+        "PR #4317 discussion as evidence",
+        "the archived causal_propagating_field_note as live evidence",
+        "the archived 0.63 / 0.45 table as evidence",
+        "prior audit verdicts as evidence",
+        "prior assistant discussion"
+      ],
+      "generated_order": 1,
+      "group_id": "causal_field_live_packet_fresh_context",
+      "group_order": 1,
+      "helper_runner_paths": [
+        "scripts/evolving_network_prototype_v6.py"
+      ],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md",
+      "queue_order": 1,
+      "ready": true,
+      "ready_blocker": null,
+      "runner_path": "scripts/causal_propagating_field.py",
+      "source_json_path": "docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
+        "docs/UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md"
+      ],
+      "audit_question": "Fresh-context review target: does UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md supply the route-exhaustion gate requested for UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes?",
+      "blocked_by_group_ids": [],
+      "claim_id": "universal_gr_polarization_frame_bundle_blocker_note",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "s3_anomaly_spacetime_lift_note",
+        "universal_gr_tensor_variational_candidate_note",
+        "universal_gr_tensor_quotient_uniqueness_note"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "PR #4313 discussion as evidence",
+        "prior assistant discussion",
+        "prior audit verdicts as evidence",
+        "generated audit queue output as evidence"
+      ],
+      "generated_order": 1,
+      "group_id": "universal_gr_picurv_parent_reaudit",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
+      "queue_order": 2,
+      "ready": false,
+      "ready_blocker": "blocked_by_dependency:observable_principle_from_axiom_note:unaudited,s3_anomaly_spacetime_lift_note:unaudited,universal_gr_tensor_variational_candidate_note:unaudited,universal_gr_tensor_quotient_uniqueness_note:unaudited",
+      "runner_path": "scripts/frontier_universal_gr_polarization_frame_bundle.py",
+      "source_json_path": "docs/audit/data/universal_gr_picurv_parent_reaudit_queue_2026-06-18.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    }
+  ],
+  "live_count": 2,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 0,
+  "ready_count": 1,
   "resolved_or_invalid": [
     {
       "actual_audit_status": "audited_clean",
@@ -1242,9 +1333,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "no_go",
-      "actual_effective_status": "unaudited",
+      "actual_audit_status": null,
+      "actual_claim_type": null,
+      "actual_effective_status": null,
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1276,15 +1367,15 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "archive_unlanded/stale-frames-2026-04-30/CL4C_CARRIER_AXIOM_CONSEQUENCE_MAP_NOTE_2026-04-28.md",
-      "runner_path": "scripts/frontier_cl4c_carrier_axiom_consequence_map.py",
+      "runner_path": null,
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
+      "state": "invalid_missing_claim_id"
     },
     {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "no_go",
-      "actual_effective_status": "unaudited",
+      "actual_audit_status": null,
+      "actual_claim_type": null,
+      "actual_effective_status": null,
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1316,15 +1407,15 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_A5_MINIMAL_CARRIER_AXIOM_AUDIT_NOTE_2026-04-28.md",
-      "runner_path": "scripts/frontier_hubble_c1_a5_minimal_carrier_axiom_audit.py",
+      "runner_path": null,
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
+      "state": "invalid_missing_claim_id"
     },
     {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "no_go",
-      "actual_effective_status": "unaudited",
+      "actual_audit_status": null,
+      "actual_claim_type": null,
+      "actual_effective_status": null,
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
@@ -1356,10 +1447,10 @@
       "helper_runner_paths": [],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "archive_unlanded/stale-frames-2026-04-30/HUBBLE_LANE5_C1_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md",
-      "runner_path": "scripts/frontier_hubble_c1_stuck_fanout_synthesis.py",
+      "runner_path": null,
       "source_json_path": "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
       "source_schema": "promotion_reaudit_queue.v1",
-      "state": "resolved_or_superseded"
+      "state": "invalid_missing_claim_id"
     },
     {
       "actual_audit_status": "unaudited",
@@ -2830,9 +2921,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "audited_conditional",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "audited_conditional",
+      "actual_effective_status": "unaudited",
       "audit_question": "g_bare=1 forced only relative to admitted trace normalization N_F=1/2, a free convention under the current one-qubit/Z^3 baseline; conditional algebraic core already retained via abstract restatements; closure gated on open staggered-Dirac realization.",
       "claim_id": "g_bare_derivation_note",
       "expected_current_audit_status": "audited_clean",
@@ -3045,10 +3136,12 @@
     "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
     "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
     "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-29.json",
+    "docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json",
     "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
     "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
     "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
-    "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json"
+    "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
+    "docs/audit/data/universal_gr_picurv_parent_reaudit_queue_2026-06-18.json"
   ],
   "unsupported_source_json": []
 }

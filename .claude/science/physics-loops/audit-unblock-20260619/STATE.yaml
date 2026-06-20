@@ -1,0 +1,56 @@
+loop_slug: audit-unblock-20260619
+block: 95
+updated_utc: "2026-06-20T16:55:00Z"
+branch: physics-loop/audit-unblock-block95-20260620
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block95-20260620
+base_ref: origin/main
+base_commit: ce301cba0
+mode: campaign
+user_boundary: "Do not run audit-loop or apply audit verdicts; produce source-side repair branches and PR-ready packets only."
+lock:
+  mode: degraded_branch_local
+  automation_lock_status: "failed"
+  automation_lock_error: "[Errno 13] Permission denied: '/Users/jonreilly'"
+active_route:
+  title: Emergent Lorentz spatial-BZ boundary type hint
+  trace_class: direct_blocker_closure
+  reachability_to_target: partially_closes
+  target_claim_id: emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18
+  blocker_source: audit_ledger
+  blocker_text: "Source note declared exact-support prose but not controlled claim_type, so the row defaulted to positive_theorem."
+files_changed:
+  source_notes:
+    - docs/EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md
+  runner_caches:
+    - logs/runner-cache/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.txt
+    - logs/runner-cache/audit_packet_script_deps.txt
+  pipeline_generated: true
+  pipeline_generated_note: "Current-main pipeline again invalidated hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18 because a dependency weakened; no manual verdict was applied."
+verification:
+  py_compile: "target runner -> pass"
+  direct_runner: "TOTAL: PASS=12 FAIL=0"
+  precompute: "ok=1 nonzero_exit=0 timeout=0 error=0 missing=0"
+  packet_deps: "pending helper-import claims 356 / 1440"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh -> complete; total pending 1554; ready 72"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK, 139 notices, no errors"
+post_pipeline_row:
+  claim_id: emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18
+  claim_type: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  ready: true
+  note_hash: d84685abc815d2519178d66b6e5fb41ccc079893f58aeaacbd88822dfc2d8836
+  runner_sha256: df9ba436aaec00e3c51cecb283c55e29a61b55e48821b8ecd1842e915e9dd1de
+  runner_cache_sha256: 61bbeb2b65cb5f8b30ee55cf05b2762ced4f3eb619738b2f880a76d7bbfc114b
+pr_status:
+  commit: branch_head_after_packet_amend
+  pre_amend_commit: b9ad1dcf9
+  push: failed_https_auth
+  push_error: "fatal: could not read Username for 'https://github.com': Device not configured"
+  pr: blocked_until_feature_branch_push_succeeds
+  recovery_commands:
+    - "git push -u origin physics-loop/audit-unblock-block95-20260620"
+    - "gh pr create --base main --head physics-loop/audit-unblock-block95-20260620 --title \"[physics-loop][review-loop] audit-unblock block95: direct_blocker_closure lorentz bz boundary\" --body-file .claude/science/physics-loops/audit-unblock-20260619/PR_BACKLOG.md"
+next_exact_action: "From this worktree, push the feature branch and open the review PR with the recovery commands above."
+stop_condition: "Runtime nearly exhausted after this coherent block."

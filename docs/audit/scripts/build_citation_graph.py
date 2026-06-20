@@ -261,11 +261,12 @@ def extract_section(body: str, start: int) -> str:
 def _parse_script_imports(script_path: Path) -> set[str]:
     """Return basenames of scripts/*.py that this script imports.
 
-    Handles `from scripts.X import ...`, `import scripts.X`, relative
-    imports inside `scripts/` (`from .X import ...`, `from . import X`),
-    and bare PYTHONPATH-style imports (`from X import ...`, `import X`)
-    where `scripts/X.py` exists — common in this repo because runners are
-    invoked with `PYTHONPATH=scripts python3 scripts/X.py`.
+    Handles `from scripts.X import ...`, `from scripts import X [as Y]`,
+    `import scripts.X`, relative imports inside `scripts/`
+    (`from .X import ...`, `from . import X`), and bare PYTHONPATH-style
+    imports (`from X import ...`, `import X`) where `scripts/X.py` exists —
+    common in this repo because runners are invoked with
+    `PYTHONPATH=scripts python3 scripts/X.py`.
 
     Filters to imports that exist as scripts/<name>.py, so third-party
     libraries (numpy, scipy, etc.) are excluded.
@@ -290,6 +291,12 @@ def _parse_script_imports(script_path: Path) -> set[str]:
             module = node.module or ""
             if module.startswith("scripts."):
                 helpers.add(module.removeprefix("scripts."))
+            elif module == "scripts" and node.level == 0:
+                # `from scripts import X [as Y]` -> the imported NAMES are the
+                # helper modules (X), not the package `scripts`. Use alias.name
+                # (the real module name), never alias.asname (the local alias).
+                for alias in node.names:
+                    helpers.add(alias.name)
             elif node.level >= 1 and module:
                 helpers.add(module)
             elif node.level >= 1 and not module:

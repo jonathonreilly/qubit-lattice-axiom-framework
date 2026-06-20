@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/gate_b_context_independence_no_go_2026_06_17.py
+runner_sha256: 3dce511b5a86ab9e052e71108bb580a7e0933edbbc18510ef9fd264ef1f70dc1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Gate B context independence no-go
+========================================================================
+[PASS] base Lattice patch has fixed Z^3 nearest-neighbor adjacency  (|V|=18 |E_nn|=33)
+[PASS] two generated-connectivity completions share the same base lattice patch  (same labels and same underlying Z^3 patch)
+[PASS] generated-connectivity rule is underdetermined by the base lattice  (|G_A|=21 |G_B|=18)
+[PASS] both generated rules are finite and layer-forward supplied structures  (neither rule is selected by nearest-neighbor Z^3 adjacency)
+[PASS] Gate-B scalar normalization/regulator is freely variable over the same base data  (phi_A=0.380952 phi_B=0.618182)
+[PASS] linear weak-field action form does not select the scalar normalization  (S_A=3.095238 S_B=1.909091)
+[PASS] propagation/readout semantics are not fixed by the Lattice axiom  (narrow=1.000000 wide=3.000000)
+[PASS] model-pair contradiction blocks any axiom-only derivation of I_GateB  (same Lattice+Quantum+Record surface, different GB-S1b-b/S2b/S3b)
+[PASS] source note states the negative boundary without claiming Gate B closure  (note wording guard)
+[PASS] Gate B status note cites the independence no-go and stays open-gate  (Gate B status guard)
+[PASS] no new axiom or Tier-A admission is claimed
+[PASS] audit surfaces are read-only
+[PASS] positive Gate B dynamics theorem is explicitly outside this artifact
+[PASS] bounded generated-geometry source index remains useful
+[PASS] terminal closeout markers are declared in the source note
+========================================================================
+GATE_B_CONTEXT_INDEPENDENCE_NO_GO=TRUE
+GB_S1BB_S2B_S3B_NOT_DERIVED_FROM_LATTICE=TRUE
+PASS=15 FAIL=0
+
+----- stderr -----
+

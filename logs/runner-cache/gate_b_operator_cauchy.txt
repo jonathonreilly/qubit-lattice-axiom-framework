@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_operator_cauchy.py
-runner_sha256: 0b7727ea159c4301d824c3915175bd40ffc047c966b78170d525010b4b8f9df6
+runner_sha256: 783d2a3c400f736c744b66423751966423599d340ecaa2988d69b48d8cfd3052
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 5.06
+elapsed_sec: 5.43
 status: ok
 ----- stdout -----
 ==============================================================================================================
-GATE B FAMILY OPERATOR-CAUCHY CONTINUUM-BRIDGE PROBE
+GATE B TESTED-AXIS OPERATOR-CAUCHY CONTINUUM-BRIDGE PROBE
 ==============================================================================================================
   rows targeted:
     - gate_b_connectivity_tolerance_note     (numerical bounded replay)
@@ -28,8 +28,8 @@ PART 1: lattice-resolution refinement (ordered fixed-connectivity)
 
   r= 1  N_layers= 13  half= 4  K_eff= 5.000  field=5.00e-05  y_free/r= -0.0000  wallclock=  0.0s
   r= 2  N_layers= 25  half= 8  K_eff= 2.500  field=2.50e-05  y_free/r= -0.0000  wallclock=  0.2s
-  r= 3  N_layers= 37  half=12  K_eff= 1.667  field=1.67e-05  y_free/r= -0.0000  wallclock=  0.7s
-  r= 4  N_layers= 49  half=16  K_eff= 1.250  field=1.25e-05  y_free/r= +0.0000  wallclock=  1.7s
+  r= 3  N_layers= 37  half=12  K_eff= 1.667  field=1.67e-05  y_free/r= -0.0000  wallclock=  0.8s
+  r= 4  N_layers= 49  half=16  K_eff= 1.250  field=1.25e-05  y_free/r= +0.0000  wallclock=  1.8s
 
     r  observable vector (first 5 components shown; 15 total)
     1  [-1.5038e-16  -7.1183e-05  -7.1183e-05  +1.8084e-05  +9.9518e-01, ...]
@@ -55,7 +55,7 @@ PART 2: ensemble refinement (jittered fixed-connectivity)
   jitter=0.3 (worst-case point from the source-note jitter sweep)
   N_LAYERS=13, HALF=5; K and field at base values
 
-  measured 64 seeds in 2.3s (36 ms/seed)
+  measured 64 seeds in 2.5s (38 ms/seed)
 
      N1 ->    N2   ||vec(N1) - vec(N2)||_2
       2 ->     4               1.464839e+00
@@ -118,7 +118,7 @@ VERDICT
   ensemble-refinement   (Part 2):  FAIL
   strong-field closure  (Part 3):  N/A (algebraic finite-box theorem; operator-Cauchy mismatched)
 
-  Operator-Cauchy continuum-bridge method does NOT extend cleanly to the Gate B family.
+  Operator-Cauchy continuum-bridge method does NOT extend cleanly to the tested Gate B axes.
 
   Structural reasons for the bounded scope:
     - Part 1: refining the lattice resolution while holding
@@ -141,14 +141,15 @@ VERDICT
       finite-box algebraic theorem; the operator-Cauchy
       method has no continuum axis to attack.
 
-  This is a SHARP BOUNDED NULL-RESULT: the Gate B family's
-  bounded scope is structural to its construction.  This
+  This is a SHARP BOUNDED TESTED-AXIS NULL-RESULT: the
+  sampled Gate B Cauchy axes have structural bounded scope. This
   mirrors the alt-connectivity negative companion
   and confirms that the operator-Cauchy bridge method is
-  a feature of the rescaled-NN lane, not of every
-  physical Cl(3) on Z^3 harness.
+  not automatically transferable from the rescaled-NN lane
+  to every physical Cl(3) on Z^3 harness.
 
-  Expected no-go check (both tested Cauchy gates fail): PASS
+  Scope certificate: family_exhaustion_claim=False; tested_cauchy_axes=2; strong_field_method_mismatch=True
+  Expected bounded-null check (both tested Cauchy gates fail): PASS
 
   Total wallclock: 5s
 

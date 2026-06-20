@@ -1,10 +1,11 @@
 # Post-Record Dynamics Campaign Closeout Index
 
 **Date:** 2026-06-06
-**Type:** exact support / closeout index
-**Claim type:** methodology
-**Status:** exact-support branch-local for indexing the final dynamics stack;
-audit_required_before_effective_retained=true; bare_retained_allowed=false.
+**Type:** meta
+**Claim type:** meta
+**Status:** meta / closeout index for campaign bookkeeping only. This note
+does not derive a physics theorem, set an audit verdict, or promote any
+effective status.
 **Primary runner:**
 [`scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py`](../scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py)
 **Cached log:**
@@ -54,8 +55,8 @@ map for review.
 ## Status certificate
 
 ```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
+actual_current_surface_status: meta
+trace_class: methodology
 reachability_to_target: supports
 conditional_surface_status: "six-PR dynamics stack is indexed for handoff"
 hypothetical_axiom_status: null
@@ -98,4 +99,10 @@ Run:
 
 ```text
 python3 scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
+```
+
+Expected summary:
+
+```text
+SUMMARY: PASS=55 FAIL=0
 ```

@@ -1,15 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py
-runner_sha256: 096985e1f310df4aa2abff9d4f4da1b6a199b811871481ddd5d7c66d51dc2670
+runner_sha256: beeb254041890cc0ae9307d6f6059c111013ef823fb628e7f2d917ad60f386da
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
 ------------------------------------------------------------------------------
 Closeout index checks
 ------------------------------------------------------------------------------
+PASS index declares meta Type metadata
+PASS index declares meta Claim type metadata
+PASS index status says bookkeeping only
 PASS six PR stack entries are expected
 PASS index contains PR #2850
 PASS index contains title fragment for #2850
@@ -75,7 +78,7 @@ PASS sample-is-probability-law flag is false
 PASS generation/Koide dial selected flag is false
 PASS stable setting selects dial flag is false
 
-SUMMARY: PASS=52 FAIL=0
+SUMMARY: PASS=55 FAIL=0
 POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX=TRUE
 DYNAMICS_STACK_PRS=6
 DYNAMICS_STACK_EXACT_SUPPORT=4

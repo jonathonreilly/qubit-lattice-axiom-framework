@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: e1c48d3511bc2dac59d649382997a5133065f357121b78e0c63d7f3d79829451
+runner_sha256: 3a875abf69c74747161181093e055f146bf2cb0e50b0bc1943be79fab6bf0878
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 Plaquette beta=6 perturbative-derivation admitted-input diagnostic runner
@@ -13,7 +13,7 @@ Plaquette beta=6 perturbative-derivation admitted-input diagnostic runner
 ==============================================================================
 T0: admitted-input runner-local diagnostic license
 ==============================================================================
-PASS: note records 2026-06-12 audit-named demotion
+PASS: note records 2026-06-12 source-boundary demotion
       demotion and admitted-input sections present
 PASS: note records admitted finite packet I_PT
       packet names beta, coefficient list, MC comparator, and F2 comparator
@@ -24,7 +24,13 @@ PASS: note excludes actual beta=6 surface and non-perturbative route claims
 PASS: note firewalls retained beta=6 surface claim after demotion
       source repair remains demotion-only
 PASS: note explicitly elects admitted-input diagnostic option
-      auditor's second repair option is source-locked
+      source-boundary second option is source-locked
+PASS: note scopes row as non-downstream-licensed runner-local diagnostic only
+      source-boundary non-downstream-licensed scoping present; not a citeable bridge/derivation
+PASS: note records all four promotion authorities as unsupplied/open
+      NSPT packet, beta=6 normalization, MC comparator, F2 comparator all open; row not promotable
+PASS: note keeps 0.5934 MC value fenced as comparator-only, never a proof input
+      MC value stays a fenced comparator, never a derivation/proof input
 PASS: note blocks downstream reuse of admitted beta=6 inputs
       downstream authority must come from a separate retained/effective-bounded row
 PASS: note keeps non-perturbative routes open
@@ -272,7 +278,7 @@ PASS: admitted MC comparator 0.5934 enters only as comparator (not derivation in
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
 PASS: note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-      length = 17921 chars
+      length = 20675 chars
 PASS: note declares Status authority: independent audit lane only
       audit-lane authority pattern present
 PASS: note declares no new axioms / no new primitives
@@ -280,7 +286,7 @@ PASS: note declares no new axioms / no new primitives
 PASS: note declares admitted MC comparator 0.5934 as comparator only
       admitted comparator pattern present
 
-TOTAL: PASS=32, FAIL=0
+TOTAL: PASS=35, FAIL=0
 
 ----- stderr -----
 

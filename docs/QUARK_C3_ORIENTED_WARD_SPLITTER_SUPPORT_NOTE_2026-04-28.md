@@ -8,7 +8,14 @@
 **Non-load-bearing physical-provenance boundary:** the broader
 staggered-Dirac physical-realization program remains outside this local
 matrix theorem. This note does not use that open physical-carrier provenance
-as a proof input for the `C3` Ward normal form.
+as a proof input for the `C3` Ward normal form. In particular,
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is named here only as a
+plain-text non-load-bearing provenance pointer, not as a markdown one-hop
+authority for this theorem.
+
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome; the audit pipeline recomputes
+`effective_status` and any conditional/retained grade on `origin/main`.
 
 **Status:** exact support/boundary theorem for Lane 3 target 3C. This
 block-06 artifact identifies the smallest local source/readout primitive that
@@ -182,7 +189,7 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_c3_oriented_ward_splitter_supp
 Expected result:
 
 ```text
-TOTAL: PASS=51, FAIL=0
+TOTAL: PASS=58, FAIL=0
 VERDICT: oriented C3 supplies an exact local splitter primitive, but leaves
 the Lane 3 quark-mass Ward source/readout law open.
 ```
@@ -221,6 +228,50 @@ physical-carrier or source/readout bridge.
 For a source-side audit-unlock split that isolates this algebraic core from
 physical-carrier provenance, see
 [`QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md`](QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md).
+
+## Dependency repair (2026-06-20)
+
+A prior conditional re-audit recorded:
+
+> `dependency_not_retained`: audit and retain
+> `docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`, or remove it as a
+> load-bearing dependency by citing only the retained finite-dimensional `C3`
+> operator surface.
+
+This repair takes the second, source-side option: it removes the unaudited
+`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` as a load-bearing one-hop
+authority and cites only the retained finite-dimensional `C3` operator surface.
+
+The actual derivation in Sections 3-6 needs exactly two supplied objects: a
+three-dimensional complex operator surface `V = C^3` and an oriented order-three
+cycle `C` with `C^3 = I`. Both are supplied by the **retained** finite-dimensional
+matrix theorem
+[`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
+(its load-bearing surface is, per its own narrowing, purely algebraic on
+`H_hw=1 = C^3` and retained-grade). No fermion-field, staggered-action,
+Grassmann/CAR, or physical-carrier content enters the commutant computation
+`W(a,b,c) = a I + b(C + C^2) + c(C - C^2)/(i sqrt(3))`, the Fourier spectrum, or
+the diagonal-readout boundary.
+
+Concretely:
+
+1. the load-bearing carrier authority is re-cited as the retained
+   `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` (one-hop markdown link);
+2. `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` is demoted to a
+   plain-text non-load-bearing provenance pointer (no markdown link) and is no
+   longer listed among the audit dependency repair links;
+3. the primary runner reads only the retained carrier/support surfaces
+   (`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`,
+   `QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md`,
+   `S3_TASTE_CUBE_DECOMPOSITION_NOTE.md`,
+   `Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md`) and never reads the staggered
+   gate; a runner check now positively asserts that the staggered gate is not a
+   markdown one-hop authority of this note.
+
+This is a citation-graph repair only. It does not change any derived value, does
+not broaden the claim scope, and does not set an audit grade.
+
+**Status authority:** independent audit lane only.
 
 ## Audit dependency repair links
 

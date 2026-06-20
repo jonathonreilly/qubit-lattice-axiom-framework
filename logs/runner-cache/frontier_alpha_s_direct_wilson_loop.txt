@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_alpha_s_direct_wilson_loop.py
-runner_sha256: 2fff9304a25f1d57ba54c0f7b7b3335b8f5c6fb4234294cdc80f6de7213dce59
+runner_sha256: 45b4945dfcc3ac8fe96027997e063ff9574c34bafa7273ad1c6ed07644cf6d48
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -30,8 +30,10 @@ certificate: outputs/alpha_s_direct_wilson_loop_certificate_2026-04-30.json
   [PASS] [CONSISTENCY-ONLY] existing alpha_LM/u0 chain numerically cross-checks the direct result  (direct=0.11799627326949744, existing=0.1181)
   [PASS] [SOURCE-BOUNDARY] source-boundary firewall names allowed and forbidden downstream uses  (all required phrases present)
   [PASS] [SOURCE-BOUNDARY] source-boundary firewall forbids broad alpha_s(M_Z) promotion reuse  (runner PASS remains bounded-support/status-boundary only)
+  [PASS] [SOURCE-BOUNDARY] source-boundary firewall retires the stale April minimal-axioms normalization citation  (current baseline is not a g_bare=1 authority; April memo is historical only)
+  [PASS] [SOURCE-BOUNDARY] source-boundary firewall keeps April minimal-axioms memo off the citation graph  (historical memo is a context handle only)
 
-SUMMARY: PASS=20  FAIL=0
+SUMMARY: PASS=22  FAIL=0
 Strict gate passed: direct Wilson-loop alpha_s route remains bounded-support/source-boundary only.
 
 ----- stderr -----

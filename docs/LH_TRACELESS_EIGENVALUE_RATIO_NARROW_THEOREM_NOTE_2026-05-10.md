@@ -2,6 +2,7 @@
 
 **Date:** 2026-05-10
 **Type:** bounded_theorem
+**Claim type:** bounded_theorem
 **Claim scope:** the standalone algebraic implication that, given any positive integer count
 `n_color` and any nonzero pair `(a, b) != (0, 0)` of real numbers with
 `2 n_color * a + 2 * b = 0` (the ratio being read projectively, with the degenerate

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py
-runner_sha256: e42092156023d4baadd83b1eb05f13511b8cfc5c59b1654fcbd08b5187cd3a85
+runner_sha256: 800fb6d6a2d4b039df349b61ae9e82bb9644bff2c7e321bfa73a66123dd42cc5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.47
+elapsed_sec: 0.25
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -18,6 +18,11 @@ Part 0: symbolic setup
 ----------------------------------------------------------------------------------------
   symbolic n_color = n_color, eigenvalues a, b real
   trace equation (L1): 2 n_color a + 2 b = 0
+
+----------------------------------------------------------------------------------------
+Part 0b: source-boundary metadata
+----------------------------------------------------------------------------------------
+  [PASS (B)] source note declares canonical bounded_theorem metadata and independent audit authority  (source note sets no audit outcome)
 
 ----------------------------------------------------------------------------------------
 Part 1: (R1) parametric eigenvalue ratio a : b = 1 : (-n_color)
@@ -109,7 +114,7 @@ Summary
     Parity rule via sympy gcd identity across both parities
 
 ========================================================================================
-TOTAL: PASS=38, FAIL=0
+TOTAL: PASS=39, FAIL=0
 ========================================================================================
 
 ----- stderr -----

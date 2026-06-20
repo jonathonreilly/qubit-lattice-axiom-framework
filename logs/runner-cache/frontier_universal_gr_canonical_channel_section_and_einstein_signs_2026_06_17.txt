@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_canonical_channel_section_and_einstein_signs_2026_06_17.py
+runner_sha256: e048a78f23542ef6a20cdf92487a01248f1ed5060b01dd85936fd763362ceede
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+==============================================================================
+STEP 0  reproduce the gate baseline (anisotropic d=(2,3,5,7)):
+  frame_delta_BASIS = 6.767361e-02   (gate reports 6.767e-2)  -> the obstruction, REPRODUCED
+
+==============================================================================
+STEP 1  THE CRACK: canonical irreducible-CHANNEL projectors are frame-INDEPENDENT
+  (P_c built from the canonical frame vs the rotated frame -- same projector?)
+  background = anisotropic (2,3,5,7)
+     ||P_c^canon - P_c^rot||  channel tt(h00)                  = 0.000e+00
+     ||P_c^canon - P_c^rot||  channel ts(h0i)                  = 1.665e-16
+     ||P_c^canon - P_c^rot||  channel s-trace                  = 0.000e+00
+     ||P_c^canon - P_c^rot||  channel s2 spin-2 (graviton)     = 3.331e-16
+     => frame_delta_CHANNEL (max over channels) = 3.331e-16
+
+  background = ISOTROPIC physical (1,1,1,1)
+     ||P_c^canon - P_c^rot||  channel tt(h00)                  = 0.000e+00
+     ||P_c^canon - P_c^rot||  channel ts(h0i)                  = 2.776e-17
+     ||P_c^canon - P_c^rot||  channel s-trace                  = 0.000e+00
+     ||P_c^canon - P_c^rot||  channel s2 spin-2 (graviton)     = 5.551e-17
+     => frame_delta_CHANNEL (max over channels) = 5.551e-17
+
+==============================================================================
+STEP 2  on the ISOTROPIC background the channels are mutually B-orthogonal + s2 is SO(3)-IRREDUCIBLE
+  max |B(channel_a, channel_b)| across distinct channels = 0.00e+00  (=> mutually orthogonal)
+  s2 channel: SO(3) orbit stays in s2 (max leave=2.2e-16); orbit rank=5 (=5 => irreducible spin-2)
+
+HONEST SCOPE: this closes the POINT-WISE frame ambiguity -- the canonical irreducible-channel
+projectors are frame-independent (the gate's frame_delta was a within-channel BASIS artifact);
+the 5-dim s2 is the canonical graviton channel. NOT yet closed: the bundle CONNECTION across
+points + the 5->2 transverse-traceless reduction (needs a propagation direction k).
+VALIDATION: linearized Einstein tensor is gauge-invariant  G_lin(p.xi + xi.p) = 0
+   max|G_lin(gauge)| = 1.80e-16   -> operator validated (it IS linearized Einstein)
+
+NULL-CONE sanity check (non-diagnostic for kinetic signs):
+   on-shell TT h_+ coefficient = +0.0000 (zero as expected for a free null wave)
+   on-shell TT h_x coefficient = +0.0000 (zero as expected for a free null wave)
+   The sign-pattern comparison is made below from off-shell channel stiffnesses.
+
+==============================================================================
+STEP 3  OFF-SHELL channel stiffness signs (the kinetic-term signs)
+  p = [1.3 0.  0.  0.4], p^2 = -1.530 (off-shell)
+  spin-2 h_+  : G_lin(h_+) = mu*h_+ ? True;  mu_TT = +0.7650
+  spin-2 h_x  : G_lin(h_x) = mu*h_x ? True;  mu_TT = +0.7650
+  spin-0 conformal (h=phi*eta): scalar stiffness mu_conf = -1.1475
+
+  TT and conformal OPPOSITE sign (the Einstein conformal-factor structure)? True
+    => linearized Einstein: TT = +,  conformal = -
+    => emergent Regge:      l=2 = +9.96 (+),  breathing = -5.18 (-)   [OPPOSITE]
+  SIGN PATTERN of emergent channels MATCHES linearized Einstein: True
+
+----- stderr -----
+

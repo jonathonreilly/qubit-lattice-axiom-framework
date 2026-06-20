@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_cp_carrier_slot_minimality_2026_06_17.py
+runner_sha256: e9831fc8f345efbda2063a4a7893f3fbff7666b9bd4eb5ed55af691efa07687f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+Quark CP carrier slot minimality verifier
+==============================================================================
+
+Part A: phase-gauge rank
+  [PASS] fixed Schur-NNI tree has no phase invariant
+  [PASS] three-edge Hermitian support has one cycle invariant
+  [PASS] both connected supports have vertex-rephasing rank two
+
+Part B: unique one-edge completion of the fixed tree
+  [PASS] the only off-tree edge on three generations is 1-3
+  [PASS] a one-edge Hermitian extension of the fixed tree is therefore the 1-3 carrier slot
+
+Part C: gauge fixing and cycle phase
+  [PASS] sample 1: tree phases gauge-fix to zero
+  [PASS] sample 1: cycle phase is rephasing invariant
+  [PASS] sample 1: residual 1-3 phase equals the negative cycle phase
+  [PASS] sample 2: tree phases gauge-fix to zero
+  [PASS] sample 2: cycle phase is rephasing invariant
+  [PASS] sample 2: residual 1-3 phase equals the negative cycle phase
+  [PASS] sample 3: tree phases gauge-fix to zero
+  [PASS] sample 3: cycle phase is rephasing invariant
+  [PASS] sample 3: residual 1-3 phase equals the negative cycle phase
+  [PASS] sample 4: tree phases gauge-fix to zero
+  [PASS] sample 4: cycle phase is rephasing invariant
+  [PASS] sample 4: residual 1-3 phase equals the negative cycle phase
+  [PASS] sample 5: tree phases gauge-fix to zero
+  [PASS] sample 5: cycle phase is rephasing invariant
+  [PASS] sample 5: residual 1-3 phase equals the negative cycle phase
+  [PASS] sample 6: tree phases gauge-fix to zero
+  [PASS] sample 6: cycle phase is rephasing invariant
+  [PASS] sample 6: residual 1-3 phase equals the negative cycle phase
+
+Part D: determinant-phase neutrality
+  [PASS] Hermitian 1-3 carrier leaves determinant phase real
+  [PASS] determinant equals the real closed-form cycle-cosine expression
+  [PASS] the 1-3 phase is physically visible through the cycle cosine
+
+Part E: source boundary checks
+  [PASS] new note states the fixed-tree/Hermitian one-edge boundary
+  [PASS] parent note points to the exact-support slot-minimality companion
+  [PASS] no retained-status overclaim in the new note
+
+Summary
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

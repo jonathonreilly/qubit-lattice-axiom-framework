@@ -20,10 +20,13 @@ The runner checks four bounded facts about the Brannen delta lane.
    observational comparator `delta ~= 0.22223 rad`, close to the bare rational
    `2/9`. The masses are comparator data, not proof inputs.
 3. The finite angle objects already in the lane do not equal the bare-radian
-   comparator: the Plancherel-step angle is `(2/9)pi`, the eta-holonomy angle is
-   `2pi(2/9)`, the spin-Dirac eta for `(1,2)` is zero, the tested finite eta is
-   integer-valued, and the circulant `H(theta)` has fixed Fourier eigenvectors
-   with zero Berry connection.
+   value `delta = 2/9`: the Plancherel-step angle is `(2/9)pi`, the eta-holonomy
+   angle is `2pi(2/9)`, the spin-Dirac eta for `(1,2)` is zero, the tested finite
+   eta is integer-valued, and the circulant `H(theta)` has fixed Fourier
+   eigenvectors with zero Berry connection. The exact one-factor-of-pi comparison
+   `(2/9)pi = pi * (2/9)` is taken against the bare framework rational `2/9`, not
+   against the empirical PDG-derived angle (which differs from `2/9` at order
+   `1e-4`).
 4. The formula `(N^2-1)/(12N)` for the Lefschetz/Molien family equals the rank
    fraction `(N-1)/N^2` only at `N=3`; the shared `2/9` is not a family identity.
 
@@ -63,3 +66,20 @@ notes; this note only localizes it for the Brannen delta lane.
 [KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
 [KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
 [NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md](NEW_PARITY_IS_CIRCULANT_PHASE_NARROW_THEOREM_NOTE_2026-05-23.md)
+
+## Status Authority
+
+Status authority: independent audit lane only. This note sets no verdict; the
+effective status is determined exclusively by the independent audit lane on
+`origin/main`.
+
+## Repair Log
+
+**2026-06-20 — runner_artifact_issue repair.** Clarified the pi-factor comparison
+wording is against bare `2/9`, not the empirical PDG angle; not load-bearing for
+the verdict; no value changed. The Section C labels and the bare-rational comment
+in `frontier_brannen_delta_spectral_asymmetry_convention_isolation.py` now state
+explicitly that the exact `(2/9)pi = pi * (2/9)` comparison is taken against the
+bare framework rational `delta = 2/9`, not the empirical PDG-derived angle (which
+differs at order `1e-4`). The comparison itself and all numeric values are
+unchanged; the runner still reports 16/16 checks passed.

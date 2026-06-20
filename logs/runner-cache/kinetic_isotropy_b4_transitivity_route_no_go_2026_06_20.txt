@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_b4_transitivity_route_no_go_2026_06_20.py
+runner_sha256: 86511901800fd765d6e2cd581956973f2b7ffd7d83e7f85ec4c4609fa8d80bf2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.75
+status: ok
+----- stdout -----
+
+============================================================================
+C1  invariant-dimension wall:  O_h -> 2,  B4 -> 1
+============================================================================
+[PASS] |O_h| = 48 -- got 48
+[PASS] |B4| = 384 -- got 384
+[PASS] O_h invariant symmetric-matrix dim = 2 -- got 2
+[PASS] B4 invariant symmetric-matrix dim = 1 -- got 1
+[PASS] O_h invariant DIAGONAL-form dim = 2 (c_t, c_s independent) -- got 2
+[PASS] B4 invariant DIAGONAL-form dim = 1 (c_t = c_s forced) -- got 1
+[PASS] G = diag(c_t,c_s,c_s,c_s) is O_h-invariant for symbolic c_t != c_s -- every spatial signed-perm fixes G
+
+============================================================================
+C2  circularity certificate:  time-space swap symmetric  <=>  c_t = c_s
+============================================================================
+[PASS] spatial swap x<->y is a G-symmetry for ALL (c_t,c_s) [O_h automatic] -- defect identically 0
+[PASS] spatial swap is in B4 and in O_h
+[PASS] time-space swap defect  W^T G W - G = diag(c_s-c_t, c_t-c_s, 0, 0) -- defect = [[c_s - c_t, 0, 0, 0], [0, -c_s + c_t, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+[PASS] defect vanishes IFF c_t = c_s -- substituting c_t->c_s kills the defect; nonzero otherwise
+[PASS] time-space swap is in B4 but NOT in O_h (the missing generator)
+
+============================================================================
+C3  positive-transfer witness: c_t != c_s is RP-positive on a square lattice
+============================================================================
+[PASS] anisotropic (c_t=2.5, c_s=1): transfer eigenvalue lambda(k) in (0,1) for all modes -- positive one-step transfer
+[PASS] anisotropic: OS reflection Gram PSD for all modes (reflection positive) -- worst min-eigenvalue = -1.96e-16
+[PASS] isotropic (c_t=c_s=1.7) also RP-positive -> positivity is not unique to isotropy -- positive-transfer witness stays non-selective
+[PASS] anisotropy is genuinely Lorentz-violating: front-speed^2 = c_s/c_t != 1 -- speed^2 = 0.4
+
+============================================================================
+SOURCE NOTE GUARD
+============================================================================
+[PASS] source note states the narrow route no-go and preserves the primitive -- note wording guard
+[PASS] source note does not ship primitive-reduction or admission-ladder language -- governance wording guard
+
+============================================================================
+SUMMARY
+============================================================================
+C1: the diagonal-form invariant space is 2-dim under O_h, 1-dim under B4 ->
+    deriving c_t=c_s == supplying the O_h->B4 (time-space) generator.
+C2: that generator is a metric symmetry IFF c_t=c_s -> every B4/S4-
+    transitivity argument for isotropy is CIRCULAR as a class.
+C3: a c_t!=c_s free-scalar witness is reflection-positive on a square
+    lattice, so square geometry plus RP does not select c_t=c_s.
+NET: the B4/S4 transitivity route is circular as a derivation of kinetic
+     isotropy. The approved primitive is unchanged and not retired here.
+
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/audit_runner_path_canonicalization_guard_2026_06_17.py
+runner_sha256: 96e31a325654830e1433c3c347c8799ef783ce62caf511b87e0847cc0b22b68a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: codex_audit_runner canonicalizes frontier_staggered_cycle_battery.py -- scripts/frontier_staggered_cycle_battery.py
+PASS: codex_audit_runner canonical target exists -- scripts/frontier_staggered_cycle_battery.py
+PASS: audit_packet_script_deps canonicalizes frontier_staggered_cycle_battery.py -- scripts/frontier_staggered_cycle_battery.py
+PASS: audit_packet_script_deps canonical target exists -- scripts/frontier_staggered_cycle_battery.py
+PASS: codex_audit_runner canonicalizes frontier_gravitational_time_dilation.py -- scripts/frontier_gravitational_time_dilation.py
+PASS: codex_audit_runner canonical target exists -- scripts/frontier_gravitational_time_dilation.py
+PASS: audit_packet_script_deps canonicalizes frontier_gravitational_time_dilation.py -- scripts/frontier_gravitational_time_dilation.py
+PASS: audit_packet_script_deps canonical target exists -- scripts/frontier_gravitational_time_dilation.py
+PASS: codex_audit_runner canonicalizes frontier_lorentz_derived.py -- scripts/frontier_lorentz_derived.py
+PASS: codex_audit_runner canonical target exists -- scripts/frontier_lorentz_derived.py
+PASS: audit_packet_script_deps canonicalizes frontier_lorentz_derived.py -- scripts/frontier_lorentz_derived.py
+PASS: audit_packet_script_deps canonical target exists -- scripts/frontier_lorentz_derived.py
+PASS: current missing_runner_file inventory is basename-recoverable -- checked=55 unresolved=0
+PASS: render_prompt exposes canonical runner path
+PASS: render_prompt reads runner source through canonical path
+PASS: render_prompt preserves no-runner stdout suppression
+SUMMARY: stale runner references resolve to checked-in scripts before audit prompt rendering.
+
+----- stderr -----
+

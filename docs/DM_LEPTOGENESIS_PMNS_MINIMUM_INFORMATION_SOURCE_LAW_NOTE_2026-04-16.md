@@ -1,8 +1,11 @@
 # DM Leptogenesis PMNS Minimum-Information Source Law
 
 **Type:** open_gate
+**Claim type:** open_gate
 **Claim boundary:** post-axiom selector diagnostic / open selector gate; not a
 selector theorem and not retained PMNS-branch authority
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome.
 **Date:** 2026-04-16; 2026-06-12 numerical-match firewall repair; 2026-06-18
 open-gate source repair
 **Primary runner:** [`scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py`](../scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py)

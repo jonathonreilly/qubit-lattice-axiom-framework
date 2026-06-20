@@ -3,7 +3,7 @@ runner: scripts/poisson_self_field.py
 runner_sha256: 1c0e140b3bc17b18e25aa175800e12ce59c3d3e2046854c878e66c10f4774180
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 90.86
+elapsed_sec: 79.55
 status: ok
 ----- stdout -----
 ======================================================================

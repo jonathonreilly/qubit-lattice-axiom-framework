@@ -2,6 +2,7 @@
 
 **Date:** 2026-06-04
 **Type:** no_go
+**Claim type:** no_go
 **Claim scope:** within the `C3`-circulant generation Yukawa family
 `H = a I + b C + b-bar C^2`, the Koide value `r = |b|^2/a^2 = 1/2`
 (equivalently `Q = 2/3`) is not fixed by the tested symmetry-protection routes:
@@ -192,7 +193,8 @@ Primary runner
 `r = 1/2` iff `E_+ = E_perp`; (3) `S3`-symmetric Yukawa has multiplicities
 `{1, 2}` (degenerate); (4) `C3` leaves `r` free; (5) the `1 != 2` irrep-dim
 obstruction to a singlet/doublet swap; (6) `C3`-compatible coefficient
-rephasing / doublet-basis rotation preserves `|b|^2/a^2`.
+rephasing / doublet-basis rotation preserves `|b|^2/a^2`; (7) source
+metadata declares `no_go` with independent audit authority.
 
 ## Cross-references
 

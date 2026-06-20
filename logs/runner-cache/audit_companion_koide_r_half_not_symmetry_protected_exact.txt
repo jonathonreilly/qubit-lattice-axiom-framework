@@ -1,11 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py
-runner_sha256: 5d31f21cba4b95f09f621d6806edc9375d6a808c66ec286161301453c2de6940
+runner_sha256: ae940d07a5ccec8188e13d2c2855696e87bc27ccca347128de47a0a172b62132
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
+PASS - (0) source note declares canonical no_go metadata and independent audit authority
 PASS - (1a) Q = (1 + (q/p)^2)/3 for the C3 decomposition (singlet p, doublet q)
 PASS - (1b) Q = 2/3  <=>  q = p  <=>  sqrt(m) at 45deg to (1,1,1) (equal singlet/doublet split)
 PASS - (2)  r = 1/2  <=>  E+ (=3a^2) = E_perp (=6|b|^2)  (equal singlet/doublet channel energy)
@@ -14,7 +15,7 @@ PASS - (4)  C3 leaves r free: Q=(1+2r)/3 is non-constant in r (Q'(r)=2/3 != 0), 
 PASS - (5)  dim(singlet)=1 != 2=dim(doublet): no unitary swaps them -> r=1/2 is a norm-balance, not a symmetry
 PASS - (6)  C3-compatible coefficient rephasing/doublet-basis rotation preserves |b|^2 and r=|b|^2/a^2, so it cannot force r=1/2
 
-7 PASS, 0 FAIL
+8 PASS, 0 FAIL
 
 NO-GO verified: r=1/2 (Q=2/3) is the equal-singlet/doublet-energy / 45-degree condition (1,2); it
 is NOT fixed by the tested C3/S3 unitary symmetry routes -- S3 forces degeneracy (3), C3 leaves

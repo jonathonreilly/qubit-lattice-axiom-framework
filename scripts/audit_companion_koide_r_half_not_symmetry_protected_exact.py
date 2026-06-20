@@ -19,11 +19,25 @@ Reproven by finite algebra; no external mass values, no fits, no imported author
 """
 import sympy as sp
 from sympy import Rational, sqrt, eye, ones, Matrix, symbols
+from pathlib import Path
 
 R = []
 def chk(l, o):
     assert o, l
     R.append((l, bool(o)))
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md"
+NOTE_TEXT = NOTE_PATH.read_text(encoding="utf-8")
+NOTE_FLAT = " ".join(NOTE_TEXT.split())
+
+chk(
+    "(0) source note declares canonical no_go metadata and independent audit authority",
+    "**Type:** no_go" in NOTE_TEXT
+    and "**Claim type:** no_go" in NOTE_TEXT
+    and "**Status authority:** independent audit lane only." in NOTE_FLAT
+    and "predict an audit outcome" in NOTE_FLAT,
+)
 
 # (1) THE GEOMETRIC CHARACTERIZATION: Q = 1/(3 cos^2 theta), theta = angle(sqrt(m), (1,1,1)).
 #     Write v = p*uhat + q*what (uhat = (1,1,1)/sqrt3, what perp unit). Then Q = (1+(q/p)^2)/3.

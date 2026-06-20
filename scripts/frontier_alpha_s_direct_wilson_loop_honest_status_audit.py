@@ -48,6 +48,7 @@ def section(title):
 section("Part 1: audit-packet structure and citations")
 
 note_text = NOTE_PATH.read_text()
+note_flat = " ".join(note_text.split())
 required = [
     "α_s Direct Wilson-Loop Honest-Status Audit",
     "demotion / status-correction packet",
@@ -57,10 +58,15 @@ required = [
     "4-loop QCD beta function",
     "bounded support theorem",
     "proposal_allowed: false",
+    "MINIMAL_AXIOMS_2026-06-05.md",
+    "stable `minimal_axioms` premise node",
+    "MINIMAL_AXIOMS_2026-04-11.md` is historical only",
+    "does not supply `g_bare = 1`",
+    "not a live normalization authority",
 ]
 for s in required:
     check(f"audit packet contains required substring: {s!r}",
-          s in note_text, detail=f"len(note)={len(note_text)}")
+          s in note_text or s in note_flat, detail=f"len(note)={len(note_text)}")
 
 forbidden = [
     "\nStatus: retained\n",
@@ -89,8 +95,8 @@ try:
     if pass_match:
         n_pass = int(pass_match.group(1))
         n_fail = int(pass_match.group(2))
-        check(f"parent strict runner PASS=18 FAIL=0 (re-verified)",
-              n_pass == 18 and n_fail == 0,
+        check(f"parent strict runner PASS=22 FAIL=0 (re-verified)",
+              n_pass == 22 and n_fail == 0,
               detail=f"observed PASS={n_pass} FAIL={n_fail}")
         check("parent strict runner final-line gate",
               "Strict gate passed" in out,
@@ -160,11 +166,22 @@ for lit in literature_imports:
 retention_steps = [
     "framework-derived scale anchor",
     "framework-native running",
-    "G_BARE_* family closure",
+    "g_bare = 1` / beta=6 Wilson normalization gate",
 ]
 for step in retention_steps:
     check(f"audit packet documents retention-path step: {step}",
           step in note_text)
+
+stale_normalization_claims = [
+    "conditional dependency providing g_bare=1 normalization",
+    "Lift `minimal_axioms_2026-04-11` to retained",
+]
+for stale in stale_normalization_claims:
+    check(f"audit packet avoids stale normalization-authority claim: {stale}",
+          stale not in note_text)
+
+check("audit packet keeps April minimal-axioms memo off the citation graph",
+      "](MINIMAL_AXIOMS_2026-04-11.md)" not in note_text)
 
 # ---------------------------------------------------------------------------
 # Summary

@@ -6,6 +6,9 @@
 **Status:** source note awaiting independent audit handling.
 **Primary runner:** [`scripts/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.py`](../scripts/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.py)
 **Cached output:** [`logs/runner-cache/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.txt`](../logs/runner-cache/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.txt)
+**Kernel support:** [`FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md`](FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md)
+**Kernel runner/cache:** [`scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py`](../scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py),
+[`logs/runner-cache/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.txt`](../logs/runner-cache/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.txt)
 
 ## Claim
 
@@ -41,17 +44,40 @@ data has r_coloured > r_lepton. **The gauge-holonomy channel gives the wrong ord
 the spread source.** This note forces **no** value of r: r₀ is a free bare coupling and the result is
 the inequality r_R ≤ r₀.
 
+## 2026-06-18 finite kernel update
+
+[`FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md`](FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md)
+isolates the framework-native part of the argument. On the retained finite
+link surface it proves directly that the fibre-averaged generation-hop
+coefficient is multiplied by `chi_R(U)/d_R`, and that
+
+```text
+    d_R^2 - |chi_R(U)|^2 = sum_{i<j}|z_i-z_j|^2 >= 0
+```
+
+for the unit-modulus eigenvalues of the finite unitary link representation.
+This replaces the prior appeal to a standard lattice-gauge character
+suppression fact with an on-surface finite proof and runner/cache.
+
+This update closes only the character-suppression kernel. The physical
+sector-to-representation/readout bridge remains open: it does not derive the
+colourless-lepton/trivial-representation or coloured-quark/nontrivial-representation
+assignment, and it does not turn the observed sector ordering into a
+framework-native readout.
+
 ## The no-go
 
 **(N-bound) The character inequality caps coloured r at the leptonic value.** For any rep R and any
-unitary background U, |χ_R(U)| ≤ χ_R(I) = d_R (the eigenvalues of U in rep R all have modulus 1).
+unitary background U, |χ_R(U)| ≤ χ_R(I) = d_R (proved in the 2026-06-18 finite
+kernel note from the eigenvalue identity
+`d_R^2 - |χ_R(U)|^2 = sum_{i<j}|z_i-z_j|^2 >= 0`).
 The on-site a-term carries no link (a_eff = a, independent of U; verified in the runner), while the
 hop-return b-term carries the link, so the gauge-invariant effective doublet coupling is
 character-normalized: b_eff = b·χ_R(U)/d_R. Hence r_R = r₀·|χ_R(U)/d_R|² ≤ r₀, with equality only for
 a centre element. The runner confirms r_R ≤ r₀ over 800 random unitaries across reps d ∈ {1,2,3,8},
-the equality-iff-centre dichotomy, and strict suppression for generic backgrounds. (This is the
-standard lattice-gauge fact that gauge-invariant coloured hopping amplitudes are character-suppressed
-relative to colourless ones.)
+the equality-iff-centre dichotomy, and strict suppression for generic backgrounds. The separate
+kernel runner checks the finite identity and the fibre-average coefficient directly on deterministic
+phase grids, so the suppression step is not an imported textbook input.
 
 **(N-order) The observed spread violates the cap.** The colourless leptons realize the unsuppressed
 bound r_lep = r₀; any coloured sector is bounded by r_coloured ≤ r₀ = r_lep. The observed ordering is
@@ -90,7 +116,9 @@ measure/partner channel; the gauge-holonomy avenue for the spread is closed.
 - Uses the standard identification "colourless lepton ↔ trivial rep, coloured quark ↔ nontrivial rep."
   The bound r_R ≤ r₀ is rep-agnostic (any nontrivial rep is capped by the trivial one), so the
   conclusion is robust to the precise rep assignment; only the labelling of which sector is
-  unsuppressed uses the identification.
+  unsuppressed uses the identification. The 2026-06-18 kernel update makes this boundary sharper:
+  the character-suppression theorem is framework-native, while the physical
+  sector-to-representation/readout bridge remains open.
 - The fibre-average is the gauge-invariant (colour-singlet) effective generation operator; an
   un-traced coloured amplitude is gauge-variant (not a registered observable). A colour-*resolved*
   spectral/conjugacy-class reading is a distinct gauge-invariant object that does not equal the
@@ -108,6 +136,9 @@ Dependency edges (retained):
 - [`koide_circulant_character_bridge`](KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md) and [`koide_kappa_spectrum_operator_bridge`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) — H = aI + bC + b̄C², r = |b|²/a², Q = 1/3 + 2r/3.
 - [`three_generation_observable_theorem`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) — the gauge-uniform shared M₃(ℂ) generation carrier (the link acts on the fibre, not the generation index).
 
+Source-side kernel support (audit required before any effective status change):
+- [`flavor_gauge_holonomy_character_suppression_kernel`](FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md) — finite proof and runner/cache for the normalized-character suppression kernel on the retained link surface.
+
 Context (no edge): `flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial` (unaudited;
 the note whose open "colour-dressed" path this closes in its holonomy form);
 `flavor_hw1_staggered_projection_democratic_r0` (retained_no_go; the bare undressed generation hop
@@ -117,6 +148,8 @@ gives r = 0 — the r₀ → 0 endpoint the suppression points toward).
 
 No new axiom. The covariant-hopping vehicle is retained (not an admission). The background link U is a
 free probe (the gauge action that would set its value is unaudited — but the bound r_R ≤ r₀ holds for
-*every* U, so no background value is assumed or fitted). The observed r values enter only as anchors
+*every* U, so no background value is assumed or fitted). The character-suppression kernel is proved
+directly on the finite link representation, not imported from textbook lattice gauge theory. The
+observed r values enter only as anchors
 for the ordering contradiction, never as derivation inputs. r₀ and the per-sector couplings are free
 symbols; no r value is computed or forced; Q = 1/3 + 2r/3 is the standard Koide-block relation.

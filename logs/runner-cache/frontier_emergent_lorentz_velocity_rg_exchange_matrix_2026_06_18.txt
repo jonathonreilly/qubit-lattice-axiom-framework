@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_lorentz_velocity_rg_exchange_matrix_2026_06_18.py
+runner_sha256: 1c2617a2ba8e4ec04c1039c6764a4fd3978afde110c109d3e58690f302cbf69b
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+========================================================================================
+Emergent Lorentz velocity RG exchange-matrix exact support
+========================================================================================
+[PASS] source note is exact support, not retained closure
+[PASS] source note preserves the physical one-loop coefficient residual
+[PASS] parent note has the source-side pointer without claiming status movement
+[PASS] S1: characteristic data are exact: trace=-(a+b), determinant=0 -- a=1/7, b=2/5, trace=-19/35
+[PASS] S1: common-speed line is fixed
+[PASS] S1: weighted common speed b*v_F+a*v_b is invariant -- left null vector=(b,a)=(2/5,1/7)
+[PASS] S1: difference mode obeys d(v_F-v_b)/dl=-(a+b)(v_F-v_b)
+[PASS] S1: ratio eta=1/3 flows toward 1 -- d eta/dl = 58/315
+[PASS] S1: ratio eta=7/10 flows toward 1 -- d eta/dl = 111/875
+[PASS] S1: ratio eta=3/2 flows toward 1 -- d eta/dl = -13/35
+[PASS] S1: ratio eta=4 flows toward 1 -- d eta/dl = -183/35
+[PASS] S2: characteristic data are exact: trace=-(a+b), determinant=0 -- a=2/3, b=5/11, trace=-37/33
+[PASS] S2: common-speed line is fixed
+[PASS] S2: weighted common speed b*v_F+a*v_b is invariant -- left null vector=(b,a)=(5/11,2/3)
+[PASS] S2: difference mode obeys d(v_F-v_b)/dl=-(a+b)(v_F-v_b)
+[PASS] S2: ratio eta=1/3 flows toward 1 -- d eta/dl = 6/11
+[PASS] S2: ratio eta=7/10 flows toward 1 -- d eta/dl = 13/44
+[PASS] S2: ratio eta=3/2 flows toward 1 -- d eta/dl = -89/132
+[PASS] S2: ratio eta=4 flows toward 1 -- d eta/dl = -82/11
+[PASS] S3: characteristic data are exact: trace=-(a+b), determinant=0 -- a=13/17, b=3/8, trace=-155/136
+[PASS] S3: common-speed line is fixed
+[PASS] S3: weighted common speed b*v_F+a*v_b is invariant -- left null vector=(b,a)=(3/8,13/17)
+[PASS] S3: difference mode obeys d(v_F-v_b)/dl=-(a+b)(v_F-v_b)
+[PASS] S3: ratio eta=1/3 flows toward 1 -- d eta/dl = 121/204
+[PASS] S3: ratio eta=7/10 flows toward 1 -- d eta/dl = 4191/13600
+[PASS] S3: ratio eta=3/2 flows toward 1 -- d eta/dl = -361/544
+[PASS] S3: ratio eta=4 flows toward 1 -- d eta/dl = -231/34
+[PASS] S4: characteristic data are exact: trace=-(a+b), determinant=0 -- a=4/9, b=7/6, trace=-29/18
+[PASS] S4: common-speed line is fixed
+[PASS] S4: weighted common speed b*v_F+a*v_b is invariant -- left null vector=(b,a)=(7/6,4/9)
+[PASS] S4: difference mode obeys d(v_F-v_b)/dl=-(a+b)(v_F-v_b)
+[PASS] S4: ratio eta=1/3 flows toward 1 -- d eta/dl = 5/9
+[PASS] S4: ratio eta=7/10 flows toward 1 -- d eta/dl = 227/600
+[PASS] S4: ratio eta=3/2 flows toward 1 -- d eta/dl = -79/72
+[PASS] S4: ratio eta=4 flows toward 1 -- d eta/dl = -46/3
+[PASS] U1: row-sum-zero + mutual-drag signs uniquely identify positive exchange coefficients -- M=[[-2/5,2/5],[3/7,-3/7]] -> a=2/5, b=3/7
+[PASS] U2: row-sum-zero + mutual-drag signs uniquely identify positive exchange coefficients -- M=[[-5/4,5/4],[1/6,-1/6]] -> a=5/4, b=1/6
+========================================================================================
+Interpretation:
+- The exact exchange matrix supplies the algebraic one-loop RG form.
+- The remaining Nature-grade input is physical: derive positive a,b from
+  the framework's actual interacting matter/gauge vertices and compare the
+  resulting coefficient/gamma against Lorentz-violation bounds.
+TOTAL: PASS=37 FAIL=0
+========================================================================================
+
+----- stderr -----
+

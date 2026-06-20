@@ -282,8 +282,30 @@ def main() -> int:
     note_text = NOTE.read_text(encoding="utf-8")
     lower = note_text.lower()
     flat_lower = " ".join(lower.split())
-    check("B1: firewall and open-target sentences are present", all(s in lower for s in ("does not close", "the next paths", "registered state data", "no universality", "open-target update")))
-    forbidden = ("closes", "exhausted", "only path", "only route", "underivable theorem")
+    check(
+        "B1: firewall and open-target sentences are present",
+        all(
+            s in flat_lower
+            for s in (
+                "do not close",
+                "the next paths",
+                "registered state data",
+                "no universality",
+                "open-target update",
+                "tested classes",
+                "do not provide a carrier-class exhaustion theorem",
+            )
+        ),
+    )
+    forbidden = (
+        "closes",
+        "exhausted",
+        "only path",
+        "only route",
+        "underivable theorem",
+        "carrier-class elimination pattern",
+        "removes a state-independent carrier-angle middleman",
+    )
     check("B2: forbidden overclaim phrases are absent", not any(s in lower for s in forbidden), "checked=" + ", ".join(forbidden))
     check("B3: R-eta firewall is explicit and no fixed r value is used", "makes no r-eta claim either way" in flat_lower and "no fixed value of `r`" in flat_lower)
     check("B4: No-promotion statement present", "**No-promotion statement:**" in note_text)
@@ -305,8 +327,15 @@ def main() -> int:
     check(
         "B10: No-Go Discipline Gate is present and surface-local",
         "## No-Go Discipline Gate" in note_text
-        and "surface-local negative" in flat_lower
+        and "tested-class surface-local boundary" in flat_lower
+        and "not a carrier-class exhaustion theorem" in flat_lower
         and "not a global no-go for r-eta" in flat_lower,
+    )
+    check(
+        "B11: carrier-class exhaustion remains explicit future work",
+        "carrier-class exhaustion theorem" in flat_lower
+        and "not supplied here" in flat_lower
+        and "does not exhaust all possible state-independent carrier-angle middlemen" in flat_lower,
     )
 
     section("Manual git diff --stat equivalent (no git invoked)")

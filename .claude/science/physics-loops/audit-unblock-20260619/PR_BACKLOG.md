@@ -2,14 +2,10 @@
 
 Branch: `physics-loop/audit-unblock-block95-20260620`
 Base: `main`
-Commit: branch HEAD after packet amendment; pre-amend commit was `b9ad1dcf9`.
-Status: feature-branch push failed before PR creation.
-
-Push failure:
-
-```text
-fatal: could not read Username for 'https://github.com': Device not configured
-```
+Commit: branch HEAD after delivery-status update; pre-update commit was
+`ceb76d363`.
+Status: PR opened and verified.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4450
 
 Proposed title:
 
@@ -17,7 +13,7 @@ Proposed title:
 [physics-loop][review-loop] audit-unblock block95: direct_blocker_closure lorentz bz boundary
 ```
 
-Recovery commands:
+Original recovery commands:
 
 ```bash
 git push -u origin physics-loop/audit-unblock-block95-20260620

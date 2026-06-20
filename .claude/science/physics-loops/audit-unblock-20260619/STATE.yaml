@@ -44,13 +44,11 @@ post_pipeline_row:
   runner_sha256: df9ba436aaec00e3c51cecb283c55e29a61b55e48821b8ecd1842e915e9dd1de
   runner_cache_sha256: 61bbeb2b65cb5f8b30ee55cf05b2762ced4f3eb619738b2f880a76d7bbfc114b
 pr_status:
-  commit: branch_head_after_packet_amend
-  pre_amend_commit: b9ad1dcf9
-  push: failed_https_auth
-  push_error: "fatal: could not read Username for 'https://github.com': Device not configured"
-  pr: blocked_until_feature_branch_push_succeeds
-  recovery_commands:
-    - "git push -u origin physics-loop/audit-unblock-block95-20260620"
-    - "gh pr create --base main --head physics-loop/audit-unblock-block95-20260620 --title \"[physics-loop][review-loop] audit-unblock block95: direct_blocker_closure lorentz bz boundary\" --body-file .claude/science/physics-loops/audit-unblock-20260619/PR_BACKLOG.md"
-next_exact_action: "From this worktree, push the feature branch and open the review PR with the recovery commands above."
+  commit: branch_head_after_delivery_update
+  pre_delivery_update_commit: ceb76d363
+  push: succeeded_after_auth_refresh
+  pr: opened
+  pr_number: 4450
+  pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4450"
+next_exact_action: "PR #4450 is open for review; continue campaign from updated origin/main."
 stop_condition: "Runtime nearly exhausted after this coherent block."

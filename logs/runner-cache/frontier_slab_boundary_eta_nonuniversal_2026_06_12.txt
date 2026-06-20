@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_slab_boundary_eta_nonuniversal_2026_06_12.py
-runner_sha256: 91bbdd79e66fccef78ae01ed375f5f7b4acde11884f04170cb98e440a5cf6b19
+runner_sha256: 1e8afedf80b8c3dde39ebdf44f50c296e041898a7385e86d817995b1d6db3aed
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.51
+elapsed_sec: 3.68
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -24,7 +24,8 @@ S2 global zero, eps stability, and L convergence
   [PASS] [S2] all total quantities vanish at L_h=128, eps=0.05  (max abs = 7.105e-14)
   [PASS] [S2] eps tail |eps0.02 - eps0.05| is zero for totals  (max tail = 8.527e-14)
   [PASS] [S2] L tail |L128 - L64| is zero for totals  (max tail = 6.173e-14)
-  [PASS] [S2] full eps/L/parameter/boundary-condition grid is globally zero  (grid max = 1.563e-13)
+  [PASS] [S2] full eps/L/parameter grid is globally zero on the open-uniform slab  (grid max = 1.563e-13)
+  [PASS] [S2] the 'sharp domain wall' label is computationally inert (reproduces the open-uniform slab); the sharp-domain-wall boundary condition is NOT computed  (max label diff = 0.000e+00)
 
 ============================================================================================
 S3 per-edge nonzero, parameter-dependent, and non-2/9
@@ -63,9 +64,9 @@ B-checks: note wiring, firewall, links, and map
   [PASS] [B9] dependencies are the requested two markdown links
   [PASS] [B10] primary runner and runner cache links are present
 
-SUMMARY/TOTAL: PASS=26 FAIL=0
-SUMMARY: PASS=26 FAIL=0
-TOTAL: PASS=26 FAIL=0
+SUMMARY/TOTAL: PASS=27 FAIL=0
+SUMMARY: PASS=27 FAIL=0
+TOTAL: PASS=27 FAIL=0
 
 ----- stderr -----
 

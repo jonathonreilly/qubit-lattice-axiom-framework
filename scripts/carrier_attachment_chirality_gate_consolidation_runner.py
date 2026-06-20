@@ -1,30 +1,33 @@
 """
-The half-integer matter-field carrier residual is NOT a new independent admission:
-it consolidates into the framework's single recurring chirality import.
+Finite carrier-attachment no-go plus chirality-boundary guardrail.
 
 13-agent find-the-escape panel verdict (this session): the candidate escape "the qubit's
 Cl(3,0)->Cl(3,1) IS the emergent spacetime Clifford, so the spinor module supplies the j=1/2
 STATE law" is REFUTED -- it is blind to the faithful-vs-trivial selection exactly as the
 boost-covariance was blind to S(2pi)=-1. CL3_TO_CL31 sec 8 (retained) confines the Cl(3,1)=M_4(R)
-action to the abstract algebra, NOT the per-site C^2 module. So the carrier residual genuinely reduces to the
-unaudited Kawamoto-Smit -- OR, via the kernel-covariance route, consolidates into the one chirality
-import the flavor sector already pays once.
+action to the abstract algebra, NOT the per-site C^2 module. So the carrier residual remains on the
+separate Kawamoto-Smit / physical-state-law route.
 
 This runner records the panel's two results:
   (i) REFUTATION (rotation-level twin of the retained_no_go boost note): the operator-frame
       conjugation U(R) sigma_i U(R)^dag = R_ij sigma_j factors through Aut(M_2(C))=SO(3) and is
       BLIND to the SU(2) cover; the trivial scalar lift V(R)=I_2 satisfies every operator-frame
       constraint AND yields identical measured numbers -- so the j=1/2 STATE law is a separate datum.
-  (ii) CONSOLIDATION: the spin-blind scalar mass-shell kernel H*I commutes with sigma_i (the scalar
-      attachment is kernel-compatible); the ONLY kernel excluding the trivial scalar is the spinful
-      one, whose staggered {eps, D}=0 CHIRAL structure IS the framework's recurring chirality gate
-      (the same {eps,D}=0 / generation-ID / r=1/2-chirality import). So the carrier residual is NOT a new independent
-      carrier pin: it collapses onto the single chirality import.
+  (ii) BOUNDARY: the spin-blind scalar mass-shell kernel H*I commutes with sigma_i (the scalar
+      attachment is kernel-compatible); a spinful kernel is the displayed selector that excludes
+      the trivial scalar. The staggered {eps, D}=0 calculation is a local Dirac/staggered
+      chirality surface, not a proof of the KS/Grassmann physical-state-law bridge and not the
+      Koide/generation r=1/2 gate.
 
 No new axiom. Class-A finite-dimensional checks. TOTAL: PASS=N FAIL=0 expected.
 """
+from pathlib import Path
+
 import numpy as np
 expm = __import__("scipy.linalg", fromlist=["expm"]).expm
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md"
 
 PASS = 0; FAIL = 0
 def check(name, ok, detail=""):
@@ -103,11 +106,11 @@ check("the selector that excludes the trivial scalar is the spinful sigma.p kern
 
 print()
 print("=" * 78)
-print("Chirality gate: the spinful selector is staggered {eps, D} = 0")
+print("Staggered boundary: the displayed D has {eps, D} = 0")
 print("=" * 78)
-# the spinful kernel emerges (Kahler-Dirac spin-diagonalization, retained substep2) from the staggered
-# Dirac operator D, whose CHIRAL structure {eps, D}=0 (eps(x)=(-1)^{x+y+z}) IS the framework's recurring
-# chirality import (= the generation-ID gate = r=1/2's chirality pin). Build D on a small Z^3 torus.
+# The displayed staggered Dirac operator D has the local chirality property
+# {eps, D}=0. This is a boundary/supply-route fact here, not a closure of the
+# physical matter-state-law bridge.
 L = 4
 def idx(x, y, z): return (x % L) * L * L + (y % L) * L + z % L
 n = L**3
@@ -126,23 +129,27 @@ anticomm = eps @ D + D @ eps
 chiral = np.allclose(anticomm, 0)                            # {eps, D} = 0 : the chirality gate
 antiherm = np.allclose(D, -D.T)
 print(f"   staggered D anti-Hermitian: {antiherm};  {{eps, D}} = 0 (chiral): {chiral}")
-print(f"   => the spinful selector = the chiral staggered D (via Kahler-Dirac spin-diag, retained substep2)")
-check("the matter-attachment selector consolidates into the recurring chirality import {eps,D}=0",
-      chiral and antiherm, "same chirality gate as generation-ID + r=1/2's carrier gate, NOT a new pin")
+print("   => this is the local Dirac/staggered chirality surface used by the open KS route")
+check("the displayed staggered D has the local chirality boundary {eps,D}=0",
+      chiral and antiherm, "does not by itself close KS/Grassmann physical-state-law selection")
 
 print()
 print("=" * 78)
-print("Consolidation summary")
+print("Source-boundary guardrail")
 print("=" * 78)
-print("   the half-integer matter-field carrier residual is NOT a new independent carrier admission.")
-print("   Operator-frame (adjoint, retained merger) under-determines the STATE law;")
-print("   the only kernel excluding the trivial scalar is the spinful sigma.p; that spinful")
-print("   kernel IS the chiral staggered D, {eps,D}=0 = the framework's single recurring")
-print("   chirality import (generation-ID gate = r=1/2's carrier gate). So the residual collapses onto the")
-print("   one chirality gate already paid once; it is not a separate carrier cost.")
-consolidated = True
-check("the carrier residual consolidates into the single recurring chirality import (no separate pin)",
-      consolidated, "no-go on the escape stands; the live carrier residual = the chirality gate")
+note = NOTE.read_text(encoding="utf-8")
+note_flat = " ".join(note.split())
+required_boundaries = [
+    "does not prove the KS/Grassmann physical-state-law bridge",
+    "does not identify the Dirac/staggered chirality gate with the Koide/generation",
+    "not the Koide/generation `r=1/2` gate",
+    "supply a retained KS/Grassmann-to-physical-matter-state-law bridge",
+    "CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08",
+]
+boundary_ok = all(" ".join(phrase.split()) in note_flat for phrase in required_boundaries)
+print("   source note forbids treating this as closed KS/Grassmann or generation/r=1/2 consolidation:", boundary_ok)
+check("source boundary prevents overclaiming the unresolved chirality/state-law bridge",
+      boundary_ok, "runner verifies the repair target introduced by the conditional audit")
 
 print()
 print(f"runner_check_breakdown = {{A: {PASS}, B: 0, C: 0, D: 0, total_pass: {PASS}}}")

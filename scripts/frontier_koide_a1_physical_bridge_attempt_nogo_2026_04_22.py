@@ -1,5 +1,5 @@
 """
-Frontier runner — Koide A1 physical bridge attempt: four no-go theorems.
+Frontier runner — Koide A1 physical bridge attempt: four negative checks.
 
 Companion to `docs/KOIDE_A1_PHYSICAL_BRIDGE_ATTEMPT_2026-04-22.md`.
 
@@ -9,7 +9,7 @@ equivalently block-total Frobenius equipartition on `Herm_circ(3)`)
 from standard QFT / statistical-mechanics functionals, and concludes
 that each attempt FAILS.  This runner makes those four failure
 calculations executable as symbolic identities so the parent note's
-no-go boundary is auditable.
+open-gate negative-attempt boundary is auditable.
 
 The runner does NOT supply the missing physical bridge.  It only
 verifies, by symbolic computation on circulant `H = a I + b C + bbar C^2`,
@@ -69,12 +69,12 @@ def section(title: str) -> None:
 
 def main() -> int:
     section(
-        "Koide A1 physical bridge attempt — four no-go theorems (2026-04-22 note)"
+        "Koide A1 physical bridge attempt — four negative checks (2026-04-22 note)"
     )
     print()
     print("Verifies that four standard QFT / statistical-mechanics functionals")
     print("do NOT extremize at the A1 condition |b|/a = 1/sqrt(2). The runner")
-    print("makes the parent note's no-go boundary executable.")
+    print("makes the parent note's open-gate negative-attempt boundary executable.")
 
     # Common symbols for the circulant H = a I + b C + bbar C^2 with real b.
     a, b = sp.symbols("a b", real=True, positive=True)
@@ -354,9 +354,9 @@ def main() -> int:
         print("VERDICT: the four attempted physical bridges (W[J=0] = log|det H|,")
         print("Coleman-Weinberg V_CW, Gaussian max-ent at fixed Frobenius, and")
         print("3-eigenvalue simplex max-ent) all fail to extremize at A1 by")
-        print("symbolic verification on circulant H. The parent note's no-go")
-        print("boundary is executable. The physical source-law selecting the")
-        print("block-total Frobenius functional remains the open audit gate.")
+        print("symbolic verification on circulant H. The parent note's open-gate")
+        print("negative-attempt boundary is executable. The physical source-law")
+        print("selecting the block-total Frobenius functional remains open.")
     else:
         print("VERDICT: verification has FAILs.")
 

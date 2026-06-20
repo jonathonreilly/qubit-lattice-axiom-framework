@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/propagator_family_scaffold_bridge.py
+runner_sha256: 01b32e2b6d8d48cbf475c8d0180a7029a3ac6fa93087f17be68e3868fc8a70b0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+============================================================================================
+PROPAGATOR FAMILY SCAFFOLD BRIDGE
+  bounded source-level certificate for a scalar edge-update scaffold
+  no audit verdicts; independent audit lane remains authoritative
+============================================================================================
+
+Certified bridge surface
+- scalar fields are built outside the propagator, then sampled at edge endpoints
+- edge updates keep a geometry-first path-sum prefactor
+- the scalar enters only the edge action/attenuation slot
+- exact same-row sign/complex sharing is delegated to FIXED_FIELD_FAMILY_UNIFICATION
+- no continuum, full-EM, self-gravity, or geometry-generic conclusion is certified
+
+[PASS] W1 wavefield uses endpoint-averaged scalar field :: scripts/minimal_source_driven_field_probe.py
+[PASS] W2 wavefield phase action is L times scalar deformation :: scripts/minimal_source_driven_field_probe.py
+[PASS] W3 wavefield update factorizes phase and geometry prefactor :: scripts/minimal_source_driven_field_probe.py
+[PASS] W4 mechanism runner feeds instantaneous, same-site, and finite-speed fields to same propagator :: scripts/source_resolved_wavefield_mechanism.py
+[PASS] C1 complex-action uses endpoint-averaged scalar field :: scripts/complex_action_grown_companion.py
+[PASS] C2 complex-action real phase is L times scalar deformation :: scripts/complex_action_grown_companion.py
+[PASS] C3 complex-action imaginary part is scalar edge attenuation :: scripts/complex_action_grown_companion.py
+[PASS] C4 complex-action update factorizes phase, attenuation, and geometry prefactor :: scripts/complex_action_grown_companion.py
+[PASS] E1 electrostatics source field is scalar charge superposition :: scripts/electrostatics_card.py
+[PASS] E2 electrostatics uses endpoint-averaged scalar field :: scripts/electrostatics_card.py
+[PASS] E3 electrostatics signed phase action is L times scalar deformation :: scripts/electrostatics_card.py
+[PASS] E4 electrostatics update factorizes phase and geometry prefactor :: scripts/electrostatics_card.py
+[PASS] F1 fixed-field runner feeds sign and complex summaries from the same grown row :: scripts/FIXED_FIELD_FAMILY_UNIFICATION.py
+[PASS] F2 fixed-field sign branch uses the same scalar edge-action slot :: scripts/FIXED_FIELD_FAMILY_UNIFICATION.py
+[PASS] F3 fixed-field complex branch uses the same scalar edge-action slot :: scripts/FIXED_FIELD_FAMILY_UNIFICATION.py
+[PASS] N1 synthesis note declares this primary runner :: docs/PROPAGATOR_FAMILY_UNIFICATION_NOTE.md
+[PASS] N2 synthesis note links the paired cache :: docs/PROPAGATOR_FAMILY_UNIFICATION_NOTE.md
+[PASS] N3 synthesis note preserves the bounded non-closure firewall :: docs/PROPAGATOR_FAMILY_UNIFICATION_NOTE.md
+
+SUMMARY: PASS=18 FAIL=0
+
+----- stderr -----
+

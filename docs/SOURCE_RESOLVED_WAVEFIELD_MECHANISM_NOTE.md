@@ -1,12 +1,15 @@
 # Source-Resolved Wavefield Mechanism Note
 
-**Date:** 2026-04-05  
-**Status:** proposed_retained exact-lattice wavefield mechanism probe on the larger exact family
+**Date:** 2026-04-05 (runner metadata refresh: 2026-06-17)
+**Status:** exact-lattice wavefield mechanism probe on the larger exact family; independent audit lane authoritative
+
+**Primary runner:** `scripts/source_resolved_wavefield_mechanism.py`
+**Cached runner output:** [`logs/runner-cache/source_resolved_wavefield_mechanism.txt`](../logs/runner-cache/source_resolved_wavefield_mechanism.txt)
 
 ## Artifact chain
 
-- [`scripts/source_resolved_wavefield_mechanism.py`](/Users/jonreilly/Projects/Physics/scripts/source_resolved_wavefield_mechanism.py)
-- [`logs/2026-04-05-source-resolved-wavefield-mechanism.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-05-source-resolved-wavefield-mechanism.txt)
+- [`scripts/source_resolved_wavefield_mechanism.py`](../scripts/source_resolved_wavefield_mechanism.py)
+- [`logs/runner-cache/source_resolved_wavefield_mechanism.txt`](../logs/runner-cache/source_resolved_wavefield_mechanism.txt)
 
 ## Question
 
@@ -41,13 +44,14 @@ This mechanism probe asks the harder question:
 If yes, that is a better bridge to causal-field intuition than a pure
 amplitude-law fit.
 
-## Retained result
+## Runner-backed result
 
 This probe does not add a new law fit. It adds a mechanism control:
 the detector-line phase-ramp steepens as the source moves closer to the
 detector plane, while the weak-field `F~M` class stays near unity.
-It remains on the retained exact-family `TOWARD` branch established by the
-parent wavefield cards.
+It remains on the exact-family `TOWARD` branch established by the
+parent wavefield cards. This source note records runner evidence only;
+effective status is set by the independent audit lane.
 
 Measured on the retained exact family at `h = 0.25`:
 
@@ -102,6 +106,9 @@ lane:
   depth as well as source strength
 - if it does, that is the cleanest exact-lattice step toward a causal-field
   interpretation
+
+This branch verdict is not an audit verdict and does not promote the row
+before independent audit.
 
 ## Audit dependency repair links
 

@@ -178,3 +178,17 @@ These dependencies close only the source-graph route to the Wilson
 transfer-kernel/RP setting used by the conditional reduction. They do not prove
 the no-second-order-bulk-critical-point premise, do not propagate a small-beta
 gap to `beta=6`, and do not turn this row into an unconditional gap theorem.
+
+## 2026-06-17 restricted packet verifier
+
+The re-audit packet is now pinned by
+[`scripts/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py`](../scripts/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py),
+with cached output at
+[`logs/runner-cache/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.txt`](../logs/runner-cache/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.txt).
+
+The verifier checks that this parent reduction, the explicit-constant
+analyticity floor, and the Wilson transfer-kernel/RP support notes remain
+SHA-fresh and keep their non-promotion boundary language. It deliberately
+packages only bounded source support: it does not prove the missing
+no-second-order-bulk-criticality theorem on the remaining window, does not
+claim a beta=6 gap, and does not retag any ledger row.

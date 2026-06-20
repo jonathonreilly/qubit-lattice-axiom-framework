@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
-"""
-Route 2 assessment: S^3 topology + anomaly-forced time spacetime lift.
+"""Route-2 assessment: S^3 topology plus anomaly-forced time.
 
-This is not a full GR proof. It checks whether the current retained stack
-already gives a clean kinematic background candidate and whether the atlas
-contains an exact dynamics bridge for that candidate.
+The source note is an `open_gate` route survey, not a full GR proof. This
+runner verifies the current honest boundary:
+
+* the cited topology/time ingredients support a `PL S^3 x R` kinematic
+  background candidate only at the weakest inherited tier;
+* the source note preserves the upstream `S^3` non-overclaim and
+  anomaly-admission inheritance; and
+* no unique metric/tensor/Einstein-field dynamics theorem is claimed here.
 """
 
 from __future__ import annotations
 
-from pathlib import Path
 import sys
+from pathlib import Path
 
 
 PASS = 0
@@ -51,10 +55,10 @@ def main() -> int:
     s3_general_note = first_existing([
         docs / "S3_GENERAL_R_DERIVATION_NOTE.md",
     ])
-    s3_boundary_note = first_existing([
+    boundary_link_note = first_existing([
         docs / "S3_BOUNDARY_LINK_THEOREM_NOTE.md",
     ])
-    s3_cap_note = first_existing([
+    cap_note = first_existing([
         docs / "S3_CAP_UNIQUENESS_NOTE.md",
     ])
     anomaly_note = first_existing([
@@ -66,51 +70,76 @@ def main() -> int:
 
     atlas_text = read_text(atlas)
     s3_general_text = read_text(s3_general_note)
-    s3_boundary_text = read_text(s3_boundary_note)
-    s3_cap_text = read_text(s3_cap_note)
+    boundary_link_text = read_text(boundary_link_note)
+    cap_text = read_text(cap_note)
     anomaly_text = read_text(anomaly_note)
     lift_text = read_text(lift_note)
+    lift_lower = lift_text.lower()
 
     print("Route 2: S^3 + anomaly-forced time spacetime lift")
     print("=" * 72)
     print("  Candidate background: PL S^3 x R")
+    print("  Scope: kinematic open-gate route survey, not GR closure")
     print()
 
     check(
-        "S^3 compactification support is present with bounded/conditional scope",
+        "source note is explicitly scoped as an open route survey",
+        "open route survey" in lift_lower
+        and "full-gr closure" in lift_lower
+        and "**Type:** open_gate" in lift_text,
+        "the parent note preserves the open-gate boundary",
+    )
+    check(
+        "S3 boundary-link and cap-uniqueness sources are present",
+        "S^3 Boundary-Link" in boundary_link_text
+        and "S^3 Cap" in cap_text
+        and "S3_BOUNDARY_LINK_THEOREM_NOTE.md" in lift_text
+        and "S3_CAP_UNIQUENESS_NOTE.md" in lift_text,
+        "the topology side is cited as a two-source PL compactification family",
+    )
+    check(
+        "S3 compactification tier and non-overclaim guard are preserved",
         "retained_bounded" in lift_text
         and "audited_conditional" in lift_text
-        and "No proof that the compactified lattice is `PL S^3`" in s3_general_text,
-        "boundary-link is retained-bounded, cap uniqueness is conditional, and the general-R note does not overclaim PL S^3 closure",
+        and "No proof that the compactified lattice" in s3_general_text
+        and "`PL S^3`" in s3_general_text,
+        "boundary-link is retained-bounded, cap uniqueness is conditional, and the general-R note still refuses PL S3 closure",
     )
     check(
         "Anomaly-forced time theorem is present with admission-inherited bounded scope",
-        "d_t = 1" in anomaly_text
+        "d_t" in anomaly_text
         and "bounded_theorem" in anomaly_text
-        and "admission" in lift_text,
+        and "ANOMALY_FORCES_TIME_THEOREM.md" in lift_text
+        and "Admission inheritance from `ANOMALY_FORCES_TIME_THEOREM`" in lift_text,
         "the route consumes d_t = 1 as a bounded kinematic input and preserves upstream admission inheritance",
     )
     check(
-        "Atlas contains both ingredients as reusable tools",
-        "`S^3` cap uniqueness" in atlas_text and "Anomaly-forced time" in atlas_text,
-        "the atlas exposes the required topology/time primitives",
+        "atlas exposes the route as a kinematic spacetime lift, not a solved dynamics bridge",
+        "Route 2 spacetime lift `PL S^3 x R`" in atlas_text
+        and "remaining issue on that route is dynamics" in atlas_text,
+        "publication atlas points to the same kinematic/dynamics split",
     )
     check(
-        "Combined kinematic background is documented at the inherited weaker tier",
+        "combined PL S3 x R kinematic background is the route candidate",
         "PL S^3 x R" in lift_text and "kinematic background candidate" in lift_text,
-        "PL S^3 x R is the documented route-2 background candidate, not a dynamics theorem",
+        "composition of S3 topology and anomaly-forced time is the candidate background",
     )
     check(
-        "No exact dynamics bridge is present in the atlas (gap documented)",
+        "no exact dynamics bridge is present in the source note",
         "no exact `S^3`-to-curvature law is present" in lift_text
         and "no exact anomaly-to-Einstein-field-equation derivation is present" in lift_text,
-        "no exact S^3 -> curvature / anomaly -> Einstein-field theorem yet exists on main; gap is documented in the spacetime-lift note",
+        "no exact S3 -> curvature / anomaly -> Einstein-field theorem is claimed",
+    )
+    check(
+        "runner preserves the honest open-gate endpoint",
+        "This row is `open_gate` and remains so until" in lift_text,
+        "the missing dynamics theorem is still the named blocker",
     )
 
     print()
     print("Summary:")
-    print("  Kinematic lift: yes, at inherited bounded/conditional scope")
-    print("  Dynamical lift / GR closure: blocked")
+    print("  Kinematic background candidate: yes, at inherited bounded/conditional scope")
+    print("  Dynamical lift / GR closure: open")
     print("  Missing theorem: exact dynamics bridge from PL S^3 x R to the metric law")
     print()
     print(f"PASS={PASS} FAIL={FAIL}")

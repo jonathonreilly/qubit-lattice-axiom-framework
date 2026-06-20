@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_anomaly_spacetime_lift_downstream_fix.py
-runner_sha256: 5aff31409f8bd3079f154a884cd0fd541c86df7f20b30f7ff13fd39786dbde64
+runner_sha256: 49518f4d58598ac1749dc7fdb2e653d86c92d7bfccb086eeb095df463670e3f3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
 AUDIT-PREP VERIFIER — s3_anomaly_spacetime_lift_downstream_fix
 ==============================================================================
   [PASS] [A] Parent note exists  (path = docs/S3_ANOMALY_SPACETIME_LIFT_NOTE.md)
-  [PASS] [A] Fix record exists  (path = docs/S3_ANOMALY_SPACETIME_LIFT_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+  [PASS] [A] Fix record exists  (path = docs/S3_ANOMALY_SPACETIME_LIFT_NOTE_2026-05-17.md)
   [INFO] Upstream F-B note on disk: True (forward link; not a precondition)
 
 PART F-A — boundary-link tier-citation correction:

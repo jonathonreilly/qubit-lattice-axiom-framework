@@ -186,10 +186,12 @@ The current ranking still stands:
 
 Primary runner:
 [`scripts/frontier_s3_anomaly_spacetime_lift.py`](../scripts/frontier_s3_anomaly_spacetime_lift.py)
-(`PASS=5 FAIL=0` after the 2026-06-17 source-side registration repair).
-The runner does not attempt a GR closure; it checks that the route ingredients
-are present with their current bounded/conditional source tiers and that the
-missing dynamics bridge remains explicitly open.
+(`PASS=8 FAIL=0` after the 2026-06-20 open-gate verifier repair).
+The runner does not attempt a GR closure. It checks that this note is still
+scoped as a kinematic `open_gate` route survey, verifies the cited
+topology/time ingredients and their current bounded/conditional source tiers,
+preserves the upstream `S^3` non-overclaim and anomaly-admission inheritance,
+and confirms that the missing dynamics bridge remains explicitly open.
 
 The route ingredients live on the cited upstream authorities and are
 individually audited there:

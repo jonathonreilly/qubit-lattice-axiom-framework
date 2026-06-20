@@ -90,7 +90,7 @@ The real open gate is the **order** of the generation determinant:
 | framework supplies grading `ε`, not the coupling or readout rule | open gate (AC_φλ corner realization; no retained bridge supplied here) |
 | **derive r=1/2** | **open — gated on the corner-mass L-R coupling** |
 
-The contribution is to **localize the only viable first-order escape precisely** (a chiral L-R coupling, not
+The contribution is to **localize the explicit first-order escape tested here** (a chiral L-R coupling, not
 a symmetry, not a static `J`/`ε`, not SUSY) and to **clear two red-herring walls** (U(1)_b; "index can't give
 a continuous ratio"). It does **not** derive `r=1/2`; the framework does not currently supply the coupling,
 and the native (C₃-diagonal, Berry-flat) generation mass remains on the commuting/second-order side of the
@@ -167,6 +167,38 @@ Accordingly this note should be re-audited as bounded algebraic localization
 and no-go demarcation, not as a retained positive theorem deriving the physical
 Koide `r=1/2` branch.
 
+## 2026-06-18 bounded-localization re-audit packet
+
+The companion certificate
+[`KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md`](./KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md)
+chooses the bounded-localization repair branch named by the conditional audit:
+keep downstream use strictly bounded to the finite algebraic localization
+surface, rather than claiming a physical selector bridge.
+
+Load-bearing theorem surface:
+
+1. `Q=(1+2r)/3` is delta-independent, so continuous `U(1)_b` is not the
+   selector mechanism.
+2. The discrete `C3` clock character has multiplicities `(1,1,1)`, so the
+   `(1,1)` block-balance algebra is available without violating `C^3=I`.
+3. Inside the native circulant `R^3` generation family,
+   `comm(C) cap anticomm(Gamma_chi) = {0}`.
+4. On a separate `R^3 tensor C^2` chirality factor, a nonzero algebraic
+   factor-crossing anticommuting shape exists.
+5. The native circulant mass has b-independent Fourier eigenvectors and stays
+   on the Berry-flat/commuting side of the finite comparison.
+
+Non-load-bearing open gates:
+
+- the physical `AC_phi_lambda -> M(b) tensor sigma_+` action term;
+- the physical first-order/readout weighting rule;
+- any derivation of the Koide `r=1/2` branch.
+
+Thus this row should not be consumed as a retained physical selector. It is a
+bounded algebraic localization and route-pruning theorem whose positive value
+is that it names the explicit first-order escape isolated by the finite
+analysis and removes the native `R^3`/continuous-symmetry routes.
+
 ## Dependencies (citation-graph visible)
 
 - [`MINIMAL_AXIOMS_2026-06-05.md`](./MINIMAL_AXIOMS_2026-06-05.md)
@@ -174,5 +206,6 @@ Koide `r=1/2` branch.
 - [`KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md`](./KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md)
 - [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](./KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md)
 - [`STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`](./STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+- [`KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md`](./KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md)
 
 **Independent audit required.** This note asserts no effective-status change.

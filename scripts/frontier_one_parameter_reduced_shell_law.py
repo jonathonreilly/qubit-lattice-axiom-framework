@@ -196,6 +196,8 @@ def source_files_for_umbrella_firewall() -> list[Path]:
                 continue
             if rel.startswith("docs/audit/"):
                 continue
+            if rel == "docs/repo/FRONT_DOOR_STATUS.md":
+                continue
             if rel.startswith("docs/publication/ci3_z3/") and (
                 rel.endswith("_EFFECTIVE_STATUS.md")
                 or rel.endswith("PUBLICATION_AUDIT_DIVERGENCE.md")

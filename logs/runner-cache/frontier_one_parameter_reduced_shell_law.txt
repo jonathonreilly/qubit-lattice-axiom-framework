@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_one_parameter_reduced_shell_law.py
-runner_sha256: b4d910b15b6d23e40322ada3f35a5ed06abd5dfef5f0fe122bf11fb50ef0eca5
+runner_sha256: c7217808b8396455f273981146ccedbecaac835b0c5ea4bae603252d2c06982f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.95
+elapsed_sec: 1.36
 status: ok
 ----- stdout -----
 Exact one-parameter reduced sewing-shell law

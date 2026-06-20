@@ -1,0 +1,121 @@
+
+============================================================================
+PART A -- P-HY: scale-free LH anomaly trace tuple (recomputed in-tree)
+============================================================================
+[PASS] A0 LH surface = 8 Weyl states (6 at +a, 2 at -3a)  // got=8 want=8 residual=0
+[PASS] A0 traceless ratio Y(Q_L):Y(L_L) = -1/3 (the only load-bearing number)  // got=-1/3 want=-1/3 residual=0
+[PASS] A1 Tr[Y] = 0           (a=1/3)  // got=0 want=0 residual=0
+[PASS] A2 Tr[Y^3] = -48 a^3   (a=1/3)  // got=-16/9 want=-16/9 residual=0
+[PASS] A3 Tr[SU3^2 Y] = a     (a=1/3)  // got=1/3 want=1/3 residual=0
+[PASS] A4 Tr[SU2^2 Y] = 0     (a=1/3)  // got=0 want=0 residual=0
+[PASS] A5 Tr[SU3^3]_LH = 2    (a=1/3)  // got=2 want=2 residual=0
+[PASS] A1 Tr[Y] = 0           (a=1)  // got=0 want=0 residual=0
+[PASS] A2 Tr[Y^3] = -48 a^3   (a=1)  // got=-48 want=-48 residual=0
+[PASS] A3 Tr[SU3^2 Y] = a     (a=1)  // got=1 want=1 residual=0
+[PASS] A4 Tr[SU2^2 Y] = 0     (a=1)  // got=0 want=0 residual=0
+[PASS] A5 Tr[SU3^3]_LH = 2    (a=1)  // got=2 want=2 residual=0
+[PASS] A1 Tr[Y] = 0           (a=-2/5)  // got=0 want=0 residual=0
+[PASS] A2 Tr[Y^3] = -48 a^3   (a=-2/5)  // got=384/125 want=384/125 residual=0
+[PASS] A3 Tr[SU3^2 Y] = a     (a=-2/5)  // got=-2/5 want=-2/5 residual=0
+[PASS] A4 Tr[SU2^2 Y] = 0     (a=-2/5)  // got=0 want=0 residual=0
+[PASS] A5 Tr[SU3^3]_LH = 2    (a=-2/5)  // got=2 want=2 residual=0
+[PASS] A1 Tr[Y] = 0           (a=7)  // got=0 want=0 residual=0
+[PASS] A2 Tr[Y^3] = -48 a^3   (a=7)  // got=-16464 want=-16464 residual=0
+[PASS] A3 Tr[SU3^2 Y] = a     (a=7)  // got=7 want=7 residual=0
+[PASS] A4 Tr[SU2^2 Y] = 0     (a=7)  // got=0 want=0 residual=0
+[PASS] A5 Tr[SU3^3]_LH = 2    (a=7)  // got=2 want=2 residual=0
+[PASS] A1 Tr[Y] = 0           (a=-1)  // got=0 want=0 residual=0
+[PASS] A2 Tr[Y^3] = -48 a^3   (a=-1)  // got=48 want=48 residual=0
+[PASS] A3 Tr[SU3^2 Y] = a     (a=-1)  // got=-1 want=-1 residual=0
+[PASS] A4 Tr[SU2^2 Y] = 0     (a=-1)  // got=0 want=0 residual=0
+[PASS] A5 Tr[SU3^3]_LH = 2    (a=-1)  // got=2 want=2 residual=0
+[PASS] A6 a=1/3 -> keystone B1 Tr[Y^3] = -16/9  // got=-16/9 want=-16/9 residual=0
+[PASS] A6 a=1/3 -> keystone B1 Tr[SU3^2 Y] = 1/3  // got=1/3 want=1/3 residual=0
+[PASS] A7 su(3) T(fund)=1/2 from Tr[T3 T3]  // got=0.5 want=0.5 residual=0.000e+00
+[PASS] A7 su(2) T(doublet)=1/2 from Tr[tz tz]  // got=0.5 want=0.5 residual=0.000e+00
+
+============================================================================
+PART B -- P-COMP: forced RH classification {4a,-2a,-6a,0} (sympy in-tree)
+============================================================================
+[PASS] B1 anomaly cancellation forces {x,y}={4a,-2a} (roots of t^2-2a t-8a^2)  // found={-2*sa, 4*sa}
+[PASS] B2 z forced to -6a (linear/grav with n=0)  // z=-6*sa
+[PASS] B3 SU(3)^3 color cubic cancels (2-1-1=0) -> exactly two RH triplet slots
+[PASS] B4 a=1/3 reproduces keystone B3 witness (4/3,-2/3,-2,0)
+[PASS] B5 (lemma B1) free-n_R family {4a+t,-2a-t,-6a-t,t} cancels all anomalies for all t -> n=0 is a SELECTION
+[PASS] B6 (lemma B2) vectorlike pair (t,-t) adds 0 to Tr[Y], Tr[Y^3], Tr[SU3^2 Y] -> content NOT anomaly-unique
+[PASS] B7 (lemma B3) Y->lam Y preserves every zero (homogeneous deg 1/1/3) -> absolute scale is convention
+[PASS] B8 HONEST FLAG (arithmetic-only): template EXISTENCE/minimality NOT banked (block02 Hamming-odd = vectorlike fiber-flip, not native 3bar)
+
+============================================================================
+PART C -- P-REC: taste-singlet Gamma5^spin + parity-of-n + dial-invariance
+============================================================================
+[PASS] C1 alpha_mu form Cl_4 on the 2^4 carrier ({a,a}=2 delta)  // got=0.0 want=0.0 residual=0.000e+00
+[PASS] C2 Gamma5^spin^2 = +I  // got=0.0 want=0.0 residual=0.000e+00
+[PASS] C3 {Gamma5^spin, alpha_mu} = 0 for all mu  // got=0.0 want=0.0 residual=0.000e+00
+[PASS] C4 taste commutant dim = 16 = M_4(C)  // dim=16
+[PASS] C5 Gamma5^spin commutes with ALL of M_4(C) (taste-SINGLET)  // got=1.0824674490095276e-15 want=0.0 residual=1.082e-15
+[PASS] C6 n=2: irrep nullity = 1 (gamma5 exists)  // nullity=1
+[PASS] C6 n=3: irrep nullity = 0 (none)  // nullity=0
+[PASS] C6 n=4: irrep nullity = 1 (gamma5 exists)  // nullity=1
+[PASS] C6 n=5: irrep nullity = 0 (none)  // nullity=0
+[PASS] C6 n=6: irrep nullity = 1 (gamma5 exists)  // nullity=1
+[PASS] C7 DECISIVE: NO n in 2..6, m in 1,2,4 flips gamma5 existence (parity-of-n, irrep-INDEPENDENT)
+[PASS] C8 taste algebra splits into 4 rank-4 sectors summing to I  // sectors=4
+[PASS] C9 gamma5 exists on EVERY single-taste sector (dial-invariant)  // got=0.0 want=0.0 residual=0.000e+00
+[PASS] C10 per-sector anomaly trace IDENTICAL across 4 sectors (degenerate replicas)  // got=9.506284648352903e-16 want=0.0 residual=9.506e-16
+[PASS] C11 PARTIAL UNLOCK: B4/B5/B6 consumer discharged by gamma5-existence alone; single-taste selector MOOT (not derived)
+
+============================================================================
+PART D -- P-ABJ: KD index = chi; A_min-native cubical tori are flat (chi=0)
+============================================================================
+[PASS] D1 KD index = chi = 2 on curved closed S^2 (tetra boundary)  // got=2 want=2 residual=0
+[PASS] D1 chi(S^2) from f-vector (4-6+4) = 2  // got=2 want=2 residual=0
+[PASS] D2 A_min-native cubical torus T^3 2x2x2: chi = 0 (flat)  // got=0 want=0 residual=0
+[PASS] D2 A_min-native cubical torus T^3 3x2x2: chi = 0 (flat)  // got=0 want=0 residual=0
+[PASS] D2 A_min-native cubical torus Z^3xZ_tau 2^4: chi = 0 (flat)  // got=0 want=0 residual=0
+[PASS] D3 KD index on full cubical T^3 complex = chi = 0  // got=0 want=0 residual=0
+[PASS] D4 HONESTY GUARD: EVERY A_min-native cubical torus has chi=0 (enumerated 28 tori, dim 2..4) -> chi!=0 is ADMITTED not native
+[PASS] D5 SHARPER NO-GO: KD index DOES track chi and IS nonzero on S^2, but A_min's flat-cubic Lattice axiom withholds chi!=0; B2 external implication untouched
+
+============================================================================
+PART E -- SOURCE DISCIPLINE + BANK-DEP check (ledger parsed READ-ONLY)
+============================================================================
+[PASS] E1 source-discipline: anomaly_forces_time_abj_inconsistency_accepted_p... is unaudited -> CONTEXT-ONLY  // effective_status=unaudited
+[PASS] E1 source-discipline: anomaly_forces_time_theorem... is unaudited -> CONTEXT-ONLY  // effective_status=unaudited
+[PASS] E2 [P-HY trace core] dep graph_first_su3_integration_note: retained-grade (retained)  // effective_status=retained chain_closes=True
+[PASS] E2 [P-HY trace core] dep native_gauge_left_handed_abelian_surface_bound: retained-grade (decoration_under_graph_first_su3_integration_note)  // effective_status=decoration_under_graph_first_su3_integration_note chain_closes=True
+[PASS] E2 [P-HY trace core] dep lh_doublet_traceless_abelian_eigenvalue_ratio_: retained-grade (decoration_under_graph_first_su3_integration_note)  // effective_status=decoration_under_graph_first_su3_integration_note chain_closes=True
+[PASS] E3 [P-HY trace core] deps-all-retained = TRUE
+[PASS] E4 [P-HY trace core] keystone-decoupled: dep set EXCLUDES keystone + parent
+[PASS] E2 [P-COMP classification core] dep one_generation_anomaly_singlet_completion_narr: retained-grade (retained_bounded)  // effective_status=retained_bounded chain_closes=True
+[PASS] E2 [P-COMP classification core] dep cl3_complexification_split_narrow_theorem_note: retained-grade (retained)  // effective_status=retained chain_closes=True
+[PASS] E2 [P-COMP classification core] dep lh_traceless_eigenvalue_ratio_narrow_theorem_n: retained-grade (retained_bounded)  // effective_status=retained_bounded chain_closes=True
+[PASS] E2 [P-COMP classification core] dep cl3_color_automorphism_theorem: retained-grade (retained_bounded)  // effective_status=retained_bounded chain_closes=True
+[PASS] E3 [P-COMP classification core] deps-all-retained = TRUE
+[PASS] E4 [P-COMP classification core] keystone-decoupled: dep set EXCLUDES keystone + parent
+[PASS] E2 [P-REC spin/taste core] dep clifford_volume_chirality_even_dimension_narro: retained-grade (retained)  // effective_status=retained chain_closes=True
+[PASS] E2 [P-REC spin/taste core] dep no_per_site_chirality_theorem_note_2026-05-02: retained-grade (retained_no_go)  // effective_status=retained_no_go chain_closes=True
+[PASS] E2 [P-REC spin/taste core] dep lorentz_boost_free_staggered_fermion_2point_so: retained-grade (retained_bounded)  // effective_status=retained_bounded chain_closes=True
+[PASS] E3 [P-REC spin/taste core] deps-all-retained = TRUE
+[PASS] E4 [P-REC spin/taste core] keystone-decoupled: dep set EXCLUDES keystone + parent
+[PASS] E5 existence supplier rh_completion_color_anti_fundamental_narro: unaudited (NOT retained) -> existence not bankable  // effective_status=unaudited
+[PASS] E5 existence supplier su3_anomaly_forced_3bar_completion_theorem: unaudited (NOT retained) -> existence not bankable  // effective_status=unaudited
+[PASS] E5 existence supplier su3_dabc_symmetric_theorem_note_2026-05-02: audited_failed (NOT retained) -> existence not bankable  // effective_status=audited_failed
+
+============================================================================
+PART F -- ABSORB block01/02/03 runners by PATH + PASS (cite, NOT rebuilt)
+============================================================================
+[PASS] F-absorb frontier_abj_phy_identification_routes_2026_06_20.txt present + TOTAL: PASS=41 FAIL=0
+[PASS] F-absorb frontier_abj_arithmetic_cores_bankability_2026_06_20.txt present + TOTAL: PASS=55 FAIL=0
+[PASS] F-absorb frontier_abj_block02_synthesis_verification_2026_06_20.txt present + TOTAL: PASS=29 FAIL=0
+[PASS] F-absorb frontier_abj_pcomp_block01_template_existence_2026_06_20.txt present + TOTAL: PASS=49 FAIL=0
+[PASS] F-absorb frontier_abj_pcomp_hamming_odd_sector_2026_06_20.txt present + TOTAL: PASS=31 FAIL=0
+[PASS] F-absorb frontier_abj_prec_r4_taste_reconstruction_2026_06_20.txt present + TOTAL: PASS=43 FAIL=0
+[PASS] F-absorb frontier_abj_prec_consumer_reframe_2026_06_20.txt present + TOTAL: PASS=35 FAIL=0
+[PASS] F-absorb frontier_abj_phy_core_bank_2026_06_20.txt present + TOTAL: PASS=63 FAIL=0
+[PASS] F-absorb frontier_abj_pcomp_classification_bank_2026_06_20.txt present + TOTAL: PASS=40 FAIL=0
+[PASS] F-absorb frontier_abj_prec_spin_taste_clifford_core_bank_2026_06_20.txt present + TOTAL: PASS=40 FAIL=0
+[PASS] F-absorb frontier_abj_pabj_kd_index_chi_tracking_2026_06_20.json present + pass=45 fail=0
+
+TOTAL: PASS=94 FAIL=0
+VERDICT: four-edge ABJ obstruction headlines recomputed in-tree (P-HY scale-free traces; P-COMP forced {4a,-2a,-6a,0}; P-REC taste-singlet Gamma5^spin + parity-of-n + dial-invariance partial unlock; P-ABJ KD index=chi with A_min flat-cubic chi=0). Source discipline: keystone + parent unaudited, kept CONTEXT-ONLY; each banked core deps-all-retained and keystone-decoupled (ledger READ-ONLY). All 12 block01/02/03 runners absorbed by path+PASS.

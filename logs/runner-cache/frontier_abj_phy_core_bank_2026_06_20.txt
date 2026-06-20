@@ -1,0 +1,101 @@
+
+========================================================================
+PART 0 -- the surface itself (ratio note + graph_first), recomputed
+========================================================================
+[PASS] 0.1 surface multiplicity at +1/3 = 6: got=6 want=6 residual=0
+[PASS] 0.2 surface multiplicity at -1   = 2: got=2 want=2 residual=0
+[PASS] 0.3 total LH Weyl states (one generation surface) = 8: got=8 want=8 residual=0
+[PASS] 0.4 traceless ratio Y(Q_L):Y(L_L) = 1:(-3)  i.e. -1/3: got=-1/3 want=-1/3 residual=0  // the ONLY load-bearing number; alpha is a free scale (Part C)
+
+========================================================================
+PART A -- the BANKED CORE: scale-free LH anomaly trace tuple (in-tree)
+========================================================================
+       Recomputed exactly with fractions over a grid of scales a; the SHAPE (zeros and the a-dependence) is what is banked, not the a=1/3 numbers.
+[PASS] A.1 Tr[Y] = 0                 (a=1/3): got=0 want=0 residual=0
+[PASS] A.2 Tr[Y^3] = -48 a^3         (a=1/3): got=-16/9 want=-16/9 residual=0
+[PASS] A.3 Tr[SU(3)^2 Y] = a         (a=1/3): got=1/3 want=1/3 residual=0
+[PASS] A.4 Tr[SU(2)^2 Y] = 0         (a=1/3): got=0 want=0 residual=0
+[PASS] A.5 Tr[SU(3)^3]_LH = 2        (a=1/3): got=2 want=2 residual=0
+[PASS] A.1 Tr[Y] = 0                 (a=1): got=0 want=0 residual=0
+[PASS] A.2 Tr[Y^3] = -48 a^3         (a=1): got=-48 want=-48 residual=0
+[PASS] A.3 Tr[SU(3)^2 Y] = a         (a=1): got=1 want=1 residual=0
+[PASS] A.4 Tr[SU(2)^2 Y] = 0         (a=1): got=0 want=0 residual=0
+[PASS] A.5 Tr[SU(3)^3]_LH = 2        (a=1): got=2 want=2 residual=0
+[PASS] A.1 Tr[Y] = 0                 (a=-2/5): got=0 want=0 residual=0
+[PASS] A.2 Tr[Y^3] = -48 a^3         (a=-2/5): got=384/125 want=384/125 residual=0
+[PASS] A.3 Tr[SU(3)^2 Y] = a         (a=-2/5): got=-2/5 want=-2/5 residual=0
+[PASS] A.4 Tr[SU(2)^2 Y] = 0         (a=-2/5): got=0 want=0 residual=0
+[PASS] A.5 Tr[SU(3)^3]_LH = 2        (a=-2/5): got=2 want=2 residual=0
+[PASS] A.1 Tr[Y] = 0                 (a=7): got=0 want=0 residual=0
+[PASS] A.2 Tr[Y^3] = -48 a^3         (a=7): got=-16464 want=-16464 residual=0
+[PASS] A.3 Tr[SU(3)^2 Y] = a         (a=7): got=7 want=7 residual=0
+[PASS] A.4 Tr[SU(2)^2 Y] = 0         (a=7): got=0 want=0 residual=0
+[PASS] A.5 Tr[SU(3)^3]_LH = 2        (a=7): got=2 want=2 residual=0
+[PASS] A.1 Tr[Y] = 0                 (a=-1): got=0 want=0 residual=0
+[PASS] A.2 Tr[Y^3] = -48 a^3         (a=-1): got=48 want=48 residual=0
+[PASS] A.3 Tr[SU(3)^2 Y] = a         (a=-1): got=-1 want=-1 residual=0
+[PASS] A.4 Tr[SU(2)^2 Y] = 0         (a=-1): got=0 want=0 residual=0
+[PASS] A.5 Tr[SU(3)^3]_LH = 2        (a=-1): got=2 want=2 residual=0
+       => the THREE nonzero traces (Tr[Y^3], Tr[SU(3)^2 Y], Tr[SU(3)^3]) are nonzero for EVERY a != 0; forced by the native 1:(-3) ratio alone.
+
+========================================================================
+PART B -- specialization at a=1/3 = the exact keystone B1 tuple
+========================================================================
+[PASS] B.1 Tr[Y]          = 0: got=0 want=0 residual=0
+[PASS] B.2 Tr[Y^3]        = -16/9: got=-16/9 want=-16/9 residual=0
+[PASS] B.3 Tr[SU(3)^2 Y]  = 1/3: got=1/3 want=1/3 residual=0
+[PASS] B.4 Tr[SU(2)^2 Y]  = 0: got=0 want=0 residual=0
+[PASS] B.5 Tr[SU(3)^3]_LH = 2: got=2 want=2 residual=0
+       These five values are the step-B1 LH anomaly tuple of the keystone, recomputed in-tree (NOT cited from the unaudited bridge).
+
+========================================================================
+PART C -- HOMOGENEITY LEMMA (block01 B2): alpha is NOT load-bearing
+========================================================================
+       Each anomaly polynomial is homogeneous in Y: degree-1 (Tr[Y], Tr[SU^2 Y]) scale by lambda, degree-3 (Tr[Y^3]) by lambda^3. Hence {all anomalies = 0} is invariant under Y -> lambda Y, so the absolute scale a (=> alpha=1/3) is a free convention for the anomaly test.
+[PASS] C.1 Tr[Y] scales by lambda     (lam=2): got=0 want=0 residual=0
+[PASS] C.2 Tr[SU3^2 Y] scales by lam   (lam=2): got=2/3 want=2/3 residual=0
+[PASS] C.3 Tr[Y^3] scales by lambda^3  (lam=2): got=-128/9 want=-128/9 residual=0
+[PASS] C.4 Tr[SU(3)^3]_LH invariant     (lam=2): got=2 want=2 residual=0
+[PASS] C.1 Tr[Y] scales by lambda     (lam=-5): got=0 want=0 residual=0
+[PASS] C.2 Tr[SU3^2 Y] scales by lam   (lam=-5): got=-5/3 want=-5/3 residual=0
+[PASS] C.3 Tr[Y^3] scales by lambda^3  (lam=-5): got=2000/9 want=2000/9 residual=0
+[PASS] C.4 Tr[SU(3)^3]_LH invariant     (lam=-5): got=2 want=2 residual=0
+[PASS] C.1 Tr[Y] scales by lambda     (lam=1/7): got=0 want=0 residual=0
+[PASS] C.2 Tr[SU3^2 Y] scales by lam   (lam=1/7): got=1/21 want=1/21 residual=0
+[PASS] C.3 Tr[Y^3] scales by lambda^3  (lam=1/7): got=-16/3087 want=-16/3087 residual=0
+[PASS] C.4 Tr[SU(3)^3]_LH invariant     (lam=1/7): got=2 want=2 residual=0
+       => {anomalies=0} is Y->lambda Y invariant. alpha=1/3 stays a NAMED, non-load-bearing convention; the bank's load-bearing content is the scale-free SHAPE only. (hypercharge_identification / alpha-bridge are NOT in the load-bearing dep set.)
+
+========================================================================
+PART D -- representation content recomputed (su(3), su(2)) label-free
+========================================================================
+       Confirm the index normalizations the traces use, from explicit matrices, so NO Dynkin/cubic-index value is taken on faith.
+[PASS] D.1 su(3) T(fund) from Tr[T0 T0] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.1 su(3) T(fund) from Tr[T1 T1] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.1 su(3) T(fund) from Tr[T2 T2] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.1 su(3) T(fund) from Tr[T3 T3] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.1 su(3) T(fund) from Tr[T4 T4] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.1 su(3) T(fund) from Tr[T5 T5] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.1 su(3) T(fund) from Tr[T6 T6] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.1 su(3) T(fund) from Tr[T7 T7] = 1/2: got=0.5000000000000001 want=0.5 residual=1.110e-16
+[PASS] D.2 su(3) closes: [T1,T2] = i T3: got=0.0 want=0.0 residual=0.000e+00
+[PASS] D.3 su(3) symmetric d_118 = 1/sqrt(3) (cubic anomaly nonvanishing): got=0.5773502691896258 want=0.5773502691896258 residual=0.000e+00  // nonzero d_abc => SU(3)^3 anomaly is genuine (A(fund)=+1 norm)
+[PASS] D.4 su(2) T(doublet) from Tr[tx tx] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.4 su(2) T(doublet) from Tr[ty ty] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.4 su(2) T(doublet) from Tr[tz tz] = 1/2: got=0.5 want=0.5 residual=0.000e+00
+[PASS] D.5 su(2) closes: [tx,ty] = i tz: got=0.0 want=0.0 residual=0.000e+00
+
+========================================================================
+PART E -- bankability self-audit (deps-all-retained; keystone-decoupled)
+========================================================================
+       Load-bearing dep set (verified retained-grade by read-only ledger parse):
+         graph_first_su3_integration_note                -> retained
+         native_gauge_left_handed_abelian_surface_..._05-23 -> decoration_under_graph_first
+         lh_doublet_traceless_abelian_eigenvalue_ratio_..._05-02 -> decoration_under_graph_first
+       KEPT NAMED, NOT load-bearing: hypercharge_identification_note; hypercharge_alpha_third_normalization_bridge_2026-05-25 (alpha=1/3).
+       KEYSTONE-DECOUPLED: anomaly_forces_time_abj_..._bridge_2026-05-26 and anomaly_forces_time_theorem are both unaudited; NO load-bearing fact here routes through them (all traces recomputed above).
+[PASS] E.1 deps-all-retained (3 retained-grade load-bearing deps): got=True want=True residual=0
+[PASS] E.2 keystone-decoupled (no load-bearing edge to bridge/parent): got=True want=True residual=0
+[PASS] E.3 alpha kept out of load-bearing set (homogeneity lemma, Part C): got=True want=True residual=0
+
+TOTAL: PASS=63 FAIL=0

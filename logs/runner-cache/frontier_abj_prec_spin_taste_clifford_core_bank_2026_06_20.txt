@@ -1,0 +1,67 @@
+BANK RUNNER (block03): P-REC spin/taste Clifford core + consumer-reframe partial unlock
+note: docs/ABJ_PREC_SPIN_TASTE_CLIFFORD_CORE_DEPS_RETAINED_BOUNDED_THEOREM_NOTE_2026-06-20.md
+deps (all retained, recomputed in-tree): clifford_volume_chirality_even (retained), no_per_site_chirality (retained_no_go, M_2(C)-only), lorentz_boost_free_staggered_2point (retained_bounded)
+keystone+parent: CONTEXT-ONLY (unaudited), no load-bearing edge
+absorbed (NOT rebuilt): frontier_abj_prec_r4_taste_reconstruction (PASS=43), frontier_abj_prec_consumer_reframe (PASS=35)
+
+==============================================================================
+PART A -- spin/taste Clifford core recomputed in-tree (blocked even 2^4 carrier)
+==============================================================================
+[PASS] A1: alpha_mu form Cl_4 on the 2^4 carrier ({a_mu,a_nu}=2 d_munu)  residual=0.000e+00   # blocked even 2^4 carrier, recomputed in-tree
+[PASS] A2: Gamma_5^spin^2 = +I  residual=0.000e+00   # chirality squares to +I
+[PASS] A3: {Gamma_5^spin, alpha_mu} = 0 for all mu (residual ~1e-15)  residual=0.000e+00   # anticommutes every Clifford generator
+[PASS] A4: taste commutant dim = 16 = M_4(C) (spectator taste algebra)  residual=0.000e+00   # the 4 tastes <-> M_4(C) spectator
+[PASS] A5: Gamma_5^spin commutes with ALL of M_4(C) (taste-SINGLET, ~1e-15)  residual=1.082e-15   # ONE chirality object valid for every taste -- no taste picked
+
+==============================================================================
+PART B(i) -- gamma_5-existence is PARITY-OF-n only (irrep-INDEPENDENT)
+==============================================================================
+[PASS] B(i) n=2: IRREP anticommutant-nullity = 1 (even->gamma_5 exists)  residual=0.000e+00   # recomputes clifford_volume_chirality_even (retained) parity law
+[PASS] B(i) n=2, mult m=1: existence verdict SAME as irrep (exists)  residual=1.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=2, mult m=2: existence verdict SAME as irrep (exists)  residual=4.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=2, mult m=4: existence verdict SAME as irrep (exists)  residual=1.600e+01   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=3: IRREP anticommutant-nullity = 0 (odd->none)  residual=0.000e+00   # recomputes clifford_volume_chirality_even (retained) parity law
+[PASS] B(i) n=3, mult m=1: existence verdict SAME as irrep (none)  residual=0.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=3, mult m=2: existence verdict SAME as irrep (none)  residual=0.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=3, mult m=4: existence verdict SAME as irrep (none)  residual=0.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=4: IRREP anticommutant-nullity = 1 (even->gamma_5 exists)  residual=0.000e+00   # recomputes clifford_volume_chirality_even (retained) parity law
+[PASS] B(i) n=4, mult m=1: existence verdict SAME as irrep (exists)  residual=1.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=4, mult m=2: existence verdict SAME as irrep (exists)  residual=4.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=4, mult m=4: existence verdict SAME as irrep (exists)  residual=1.600e+01   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=5: IRREP anticommutant-nullity = 0 (odd->none)  residual=0.000e+00   # recomputes clifford_volume_chirality_even (retained) parity law
+[PASS] B(i) n=5, mult m=1: existence verdict SAME as irrep (none)  residual=0.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=5, mult m=2: existence verdict SAME as irrep (none)  residual=0.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=5, mult m=4: existence verdict SAME as irrep (none)  residual=0.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=6: IRREP anticommutant-nullity = 1 (even->gamma_5 exists)  residual=0.000e+00   # recomputes clifford_volume_chirality_even (retained) parity law
+[PASS] B(i) n=6, mult m=1: existence verdict SAME as irrep (exists)  residual=1.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=6, mult m=2: existence verdict SAME as irrep (exists)  residual=4.000e+00   # reducibility scales nullity but never flips existence
+[PASS] B(i) n=6, mult m=4: existence verdict SAME as irrep (exists)  residual=1.600e+01   # reducibility scales nullity but never flips existence
+[PASS] B(i) DECISIVE: NO n in 2..6, m in 1,2,4 flips gamma_5 existence (reframe would FAIL if it did)  residual=0.000e+00   # gamma_5 existence = parity-of-n, irreducible-rep-INDEPENDENT
+
+==============================================================================
+PART B(ii) -- consumed quantities are taste-dial-INVARIANT over M_4(C)
+==============================================================================
+[PASS] B(ii) taste algebra splits into 4 rank-4 sectors (degenerate replicas)  residual=0.000e+00
+[PASS] B(ii) sum of 4 taste projectors = I (completeness)  residual=6.661e-16
+[PASS] B(ii-c1) gamma_5 exists on EVERY single-taste sector (dial-invariant)  residual=3.331e-15   # B4 predicate true on every taste dial -> single-taste not load-bearing
+[PASS] B(ii-c2-pre) representative anomaly insertion O is taste-singlet  residual=9.714e-16
+[PASS] B(ii-c2) per-sector anomaly trace IDENTICAL across all 4 sectors  residual=9.506e-16   # tastes are degenerate replicas
+[PASS] B(ii-c2) sum of single-taste traces = full taste-summed trace  residual=6.384e-16
+[PASS] B(ii-c2) each sector = (1/4) x full trace (exact replica)  residual=1.110e-15   # consumed anomaly quantity is a taste-dial CONSTANT up to replica factor
+
+==============================================================================
+PART C -- dep discipline: retained deps recomputed, no per-site collision
+==============================================================================
+[PASS] C1: no_per_site_chirality NOT collided -- Gamma_5^spin needs carrier dim>=4 (>M_2(C) dim 2); lives in 2^4 doubled carrier  residual=0.000e+00   # scope-noted M_2(C)-only no-go does not bind the doubled carrier
+[PASS] C2: clifford_volume_chirality_even recomputed -- n=4 even => gamma_5 exists (nullity 1)  residual=0.000e+00   # retained positive_theorem reproven, not cited blind
+[PASS] C3: lorentz_boost_free_staggered spin(x)taste factorisation -- carrier 16 = spin 4 x taste 4  residual=0.000e+00   # retained_bounded SO(4) spin(x)taste structure underpins the carrier
+[PASS] C4: keystone + parent are CONTEXT-ONLY (no load-bearing edge to either)  residual=0.000e+00   # all facts recomputed in-tree; banked core is keystone-decoupled
+
+==============================================================================
+PART D -- BANK synthesis
+==============================================================================
+[PASS] BANK: spin/taste Clifford core holds (taste-singlet Gamma_5^spin)  residual=0.000e+00   # Gamma_5^2=+I, {Gamma_5,a_mu}=0, taste-singlet over M_4(C)
+[PASS] BANK: consumer edge B4->B5/EVEN->B6 discharged by gamma_5-EXISTENCE alone  residual=0.000e+00   # parity-of-n (irrep-independent) + taste-dial-invariant => no single-taste selector
+[PASS] BANK: PARTIAL UNLOCK of the 1105 cone (B4/B5/B6 edge); NOT a single-taste derivation; single-taste stays a moot supplier statement  residual=0.000e+00   # no new axiom/primitive; no single-taste admission; keystone context-only
+
+TOTAL: PASS=40 FAIL=0

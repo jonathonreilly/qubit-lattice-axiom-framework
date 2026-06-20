@@ -11,9 +11,9 @@ deadline_epoch: 1782006241
 base_commit: 9469e8251
 
 cycle_count: 1
-block_count: 1
-active_block: 01
-active_block_branch: physics-loop/anomaly-abj-bridge-block01-20260620
+block_count: 3
+active_block: 03
+active_block_branch: physics-loop/anomaly-abj-bridge-block03-20260620
 block01_result: >
   CLOSED. Per-edge fresh attempts (P-HY/P-COMP/P-REC/P-ABJ) + bankability check.
   NO CRACK. 5 runners 222 PASS / 0 FAIL. THREE bankable arithmetic cores
@@ -31,12 +31,28 @@ exercise_warranted_walls:
 
 revised_block_plan:
   - block01: DONE — per-edge fresh attempts + bankability (no crack; 3 bankable cores)
-  - block01b: EXERCISE skill on the 3 flagged hard walls (user standing directive) before fencing N1/N7
-  - block02: bank the 3 cores as keystone-decoupled bounded theorems + unified four-edge hybrid obstruction note (N1-N8, incl exercise results)
-  - block03: consumer-firewall widening over the 1105 cone (re-expose P-HY; do not inherit dep-reroute laundering)
-  - block04: owner/audit packaging (Decisions A bank cores / H alpha-convention lemma / I P-ABJ external) + final report
+  - block01b: DONE — EXERCISE skill on the 3 flagged hard walls (P-COMP existence computed no-go; P-REC consumer reframe; P-ABJ N7 chi!=0 witness)
+  - block02: DONE — exercise-route verification (PR-A/B/D + synthesis PASS=29); 1 partial reframe, 2 sharper KILLs
+  - block03: DONE — ASSEMBLY: 3 deps-all-retained keystone-decoupled bank notes (P-HY PASS=63, P-COMP PASS=40, P-REC PASS=40) + unified four-edge hybrid obstruction note + consolidated verification runner PASS=94/0
+  - block04: PENDING — owner/audit packaging (Decisions A bank cores / H alpha-convention lemma / I P-ABJ external) + final report
+
+block03_result: >
+  CLOSED. Three deps-all-retained, keystone-decoupled bounded-theorem banks
+  authored + independently verified (P-HY scale-free trace tuple PASS=63; P-COMP
+  arithmetic classification {4a,-2a,-6a,0} PASS=40 [arithmetic-only,
+  circular-on-parent]; P-REC taste-singlet Gamma5^spin + consumer partial unlock
+  of the 1105 B4/B5/B6 edge PASS=40 [no single-taste admission]). Unified
+  four-edge hybrid obstruction note (10 sections, N1-N8 per edge) + consolidated
+  verification runner scripts/anomaly_abj_obstruction_unified_2026_06_20.py
+  recomputing all four headlines in-tree + source-discipline + bank-dep checks:
+  TOTAL PASS=94 FAIL=0. Keystone + parent kept CONTEXT-ONLY (unaudited, ledger
+  READ-ONLY). All 12 block01/02/03 runners absorbed by path+PASS. NO crack of the
+  keystone; four identification walls stand; ONE partial unlock. No protected
+  surface edited; no git ops.
 
 next_exact_action: >
-  Commit block01; run the exercise skill on the 3 flagged walls (block01b);
-  then bank cores + unified note (block02).
+  Block04 — owner/audit packaging: route the three deps-all-retained bank notes to
+  the independent audit lane (retained_pending_chain shape, SM_ANOMALY_CLOSURE
+  precedent); record Decisions A (bank cores) / H (alpha-convention lemma) /
+  I (P-ABJ external admission); final report.
 stop_condition: runtime/deadline ~21:44 EDT, all blocks closed, or a crack pivots.

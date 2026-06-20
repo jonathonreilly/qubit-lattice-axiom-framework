@@ -1,0 +1,45 @@
+
+=== P-COMP block03 BANK residuals ===
+[PASS] A1 mixed-color Tr[SU(3)^2 Y]=0 gives x+y=2a
+[PASS] A2 cubic with n=0 forces product x*y=-8a^2
+[PASS] A3 linear/grav with n=0 forces z=-6a
+[PASS] A4 FORCED template {x,y,z,n}={4a,-2a,-6a,0} unique up to x<->y swap
+[PASS] A5 SU(3)^3 color cubic cancels (2-1-1=0) -> exactly two RH triplet slots
+[PASS] A6 all anomalies vanish at forced template, a=1/3
+[PASS] A6 all anomalies vanish at forced template, a=2/5
+[PASS] A6 all anomalies vanish at forced template, a=7/4
+[PASS] A6 all anomalies vanish at forced template, a=-1/2
+[PASS] A7 a=1/3 reproduces keystone (B3) witness (4/3,-2/3,-2,0)
+[PASS] A8 ambiguity is EXACTLY the u_R<->d_R triplet swap (two roots of one quadratic)
+[PASS] B1 free-n_R family {4a+t,-2a-t,-6a-t,t} cancels Tr[Y] for all t
+[PASS] B1 free-n_R family cancels Tr[SU(3)^2 Y] for all t
+[PASS] B1 free-n_R family cancels Tr[Y^3] for all t
+[PASS] B1 => neutral branch n=0 is a SELECTION, not an anomaly consequence
+[PASS] B1-CE non-neutral model (0,2a,-2a,-4a) cancels Tr[Y], Tr[SU(3)^2 Y], Tr[Y^3]
+[PASS] B1-CE the counterexample has n=-4a != 0 for a!=0 -> n=0 is LOAD-BEARING
+[PASS] B2 vectorlike pair (t,-t) adds 0 to Tr[Y]  (t + (-t))
+[PASS] B2 vectorlike pair adds 0 to Tr[Y^3]  (t^3 + (-t)^3)
+[PASS] B2 vectorlike color triplet pair adds 0 to Tr[SU(3)^2 Y]  (1/2)(t-t)
+[PASS] B2 => matter content is NOT anomaly-unique; uniqueness/minimality is NOT supplied by the anomaly algebra
+[PASS] B3 Tr[Y] homogeneous deg 1 -> Tr[lam*Y]=lam*Tr[Y]=0
+[PASS] B3 Tr[Y^3] homogeneous deg 3 -> Tr[(lam Y)^3]=lam^3*Tr[Y^3]=0
+[PASS] B3 Tr[SU(3)^2 Y] homogeneous deg 1 in Y -> rescale preserves zero
+[PASS] B3 => the absolute Y-scale (the value of a) is a CONVENTION; only the ratios (1:-3 LH; 4:-2:-6:0 RH) are content
+[PASS] C-dep one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10: retained-grade (retained_bounded), chain_closes=True
+[PASS] C-dep cl3_complexification_split_narrow_theorem_note_2026-05-10: retained-grade (retained), chain_closes=True
+[PASS] C-support lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10: retained-grade (retained_bounded)
+[PASS] C-support cl3_color_automorphism_theorem: retained-grade (retained_bounded)
+[PASS] C-decouple anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26 is unaudited -> CONTEXT-ONLY, not load-bearing
+[PASS] C-decouple anomaly_forces_time_theorem is unaudited -> CONTEXT-ONLY, not load-bearing
+[PASS] C-decouple dep set does NOT contain the keystone or its parent
+[PASS] C-exist rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17 is unaudited (NOT retained) -> existence not bankable
+[PASS] C-exist su3_anomaly_forced_3bar_completion_theorem_note_2026-05-02 is unaudited (NOT retained) -> existence not bankable
+[PASS] C-exist su3_dabc_symmetric_theorem_note_2026-05-02 is audited_failed (NOT retained) -> existence not bankable
+[PASS] D-flag(i) ARITHMETIC ONLY: existence/minimality NOT banked (block02 computed no-go: Hamming-odd sector = vectorlike fiber-flip)
+[PASS] D-flag(ii) circular-on-parent persists: the SM witness consumed by (B3) is the conditional OUTPUT, not an independent matter-existence supplier
+[PASS] D-conditional banked statement is GIVEN-template (premises kept explicit: {template existence, P-HY identification, n=0 branch})
+[PASS] E-absorb frontier_abj_pcomp_block01_template_existence_2026_06_20.py present + PASS=49 FAIL=0
+[PASS] E-absorb frontier_abj_pcomp_hamming_odd_sector_2026_06_20.py present + PASS=31 FAIL=0
+
+TOTAL: PASS=40 FAIL=0
+VERDICT: P-COMP ARITHMETIC core BANKED as a deps-all-retained, keystone-decoupled, conditional bounded theorem (SM_ANOMALY_CLOSURE shape). Given the template, anomaly cancellation forces {4a,-2a,-6a,0} up to triplet swap. Negative lemmas B1/B2/B3 re-derived in-tree. HONEST FLAGS carried: (i) existence/minimality NOT banked (block02 computed no-go); (ii) circular-on-parent persists.

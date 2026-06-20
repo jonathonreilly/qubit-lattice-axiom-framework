@@ -199,3 +199,98 @@ READ-ONLY.
   (retained_bounded; the re-target ray). Catterall–Butt / Becher–Joos–Rabin literature
   CONTEXT-ONLY. Runner PASS=45/0; synthesis runner D1–D7.
 - **Exercise-skill:** DISCHARGED — N7 steelman settled with an in-tree χ≠0 witness.
+
+---
+
+# Block 03 append — assembly: three deps-all-retained bank cores + unified note (2026-06-20)
+
+Block 03 is the ASSEMBLY block: it banks the three bankable arithmetic/algebraic
+cores as deps-all-retained, keystone-DECOUPLED bounded theorems (SM_ANOMALY_CLOSURE
+shape), authors the unified four-edge hybrid obstruction note, and ships a single
+consolidated verification runner. No new no-go is opened; the four identification
+walls are carried forward verbatim. ONE partial unlock (P-REC consumer B4/B5/B6)
+is recorded. NO crack of the keystone.
+
+## Consolidated verification (source discipline + bank-dep retainability)
+
+- **Runner:** `scripts/anomaly_abj_obstruction_unified_2026_06_20.py`
+  (`TOTAL: PASS=94 FAIL=0`; cache
+  `logs/runner-cache/anomaly_abj_obstruction_unified_2026_06_20.txt`).
+- Recomputes IN-TREE the headline of all four edges (P-HY scale-free trace tuple;
+  P-COMP forced {4a,−2a,−6a,0} + B1/B2/B3 lemmas; P-REC taste-singlet Γ₅^spin +
+  parity-of-n dichotomy + taste-dial invariance; P-ABJ KD index=χ and A_min
+  flat-cubic χ=0). Imports NO route/bank runner; absorbs all 12 block01/02/03
+  runners by path + PASS only.
+- **Source-discipline check (Part E1):** keystone
+  `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26`
+  and parent `anomaly_forces_time_theorem` confirmed **unaudited** by READ-ONLY
+  ledger parse → kept CONTEXT-ONLY; no load-bearing edge.
+- **Bank-dep check (Part E2–E4):** each banked core's dep set is retained-grade
+  and EXCLUDES the keystone + parent (deps-all-retained, keystone-decoupled).
+
+## Bank A — P-HY trace core (deps-all-retained, keystone-decoupled bounded theorem)
+
+- **Banked (NOT a no-go):** scale-free LH ABJ trace tuple
+  {Tr[Y]=0, Tr[Y³]=−48a³, Tr[SU3²Y]=a, Tr[SU2²Y]=0, Tr[SU3³]_LH=2}, forced for
+  every a≠0 by the native 1:(−3) ratio; a=1/3 → keystone B1 {0,−16/9,1/3,0,2}.
+  alpha=1/3 kept OUT of the load-bearing set by the homogeneity lemma.
+- **Wall left standing:** the single named **is-gauged** predicate (P) — funnels to
+  the MINIMAL_AXIOMS gauge-group/which-symmetry-is-gauged withholding gate.
+- **Authority:** graph_first_su3_integration_note (retained) + two retained
+  decorations. Note: `docs/ABJ_PHY_ANOMALY_TRACE_CORE_DEPS_RETAINED_BOUNDED_THEOREM_NOTE_2026-06-20.md`;
+  runner `scripts/frontier_abj_phy_core_bank_2026_06_20.py` PASS=63/0.
+
+## Bank B — P-COMP arithmetic classification core (conditional, arithmetic-only)
+
+- **Banked (conditional):** GIVEN the RH SU(2)-singlet template + n=0, anomaly
+  cancellation FORCES {x,y,z,n}={4a,−2a,−6a,0} unique up to the u_R↔d_R swap;
+  a=1/3 → keystone B3 (4/3,−2/3,−2,0). B1/B2/B3 negative lemmas re-derived in-tree.
+- **No-go carried (NOT bankable):** template **existence/minimality** — block02
+  computed no-go (Hamming-odd sector = vectorlike SU(2) fiber-flip, not native 3̄);
+  existence suppliers `rh_completion_color_anti_fundamental` (unaudited),
+  `su3_anomaly_forced_3bar` (unaudited), `su3_dabc_symmetric` (audited_failed).
+  **circular-on-parent** persists.
+- **Authority:** one_generation_anomaly_singlet_completion (retained_bounded),
+  cl3_complexification_split (retained) + retained supports. Note:
+  `docs/ABJ_PCOMP_COMPLETION_CLASSIFICATION_CORE_DEPS_RETAINED_BOUNDED_THEOREM_NOTE_2026-06-20.md`;
+  runner `scripts/frontier_abj_pcomp_classification_bank_2026_06_20.py` PASS=40/0.
+
+## Bank C — P-REC spin/taste Clifford core + consumer partial unlock
+
+- **Banked (NOT a no-go):** on the blocked even 2⁴ staggered carrier the taste-
+  SINGLET Γ₅^spin = α₀α₁α₂α₃ satisfies Γ₅²=+I, {Γ₅,α_μ}=0, and commutes with the
+  full M₄(C) taste commutant (residuals ~1e-15). γ₅-existence is parity-of-n
+  (irrep-INDEPENDENT) and taste-dial-invariant.
+- **PARTIAL UNLOCK of the 1105 cone (B4/B5/B6 edge ONLY):** the keystone consumer
+  edge B4→B5/EVEN→B6 (chirality + even dimension) is DISCHARGED by γ₅-existence
+  alone — NO single-taste admission, NO new axiom/primitive.
+- **Wall left standing (rendered MOOT for the consumer):** the single-taste /
+  irreducible-Dirac-factor **selector** stays a walled supplier statement; even-2⁴
+  carrier / odd-L scope caveat and the d_t=1 pin (SC/(B-AXIS)) carried.
+- **Authority:** clifford_volume_chirality_even (retained), no_per_site_chirality
+  (retained_no_go, M₂(C)-only), lorentz_boost_free_staggered_2point
+  (retained_bounded). Note:
+  `docs/ABJ_PREC_SPIN_TASTE_CLIFFORD_CORE_DEPS_RETAINED_BOUNDED_THEOREM_NOTE_2026-06-20.md`;
+  runner `scripts/frontier_abj_prec_spin_taste_clifford_core_bank_2026_06_20.py` PASS=40/0.
+
+## P-ABJ — carried forward unchanged (sharper internal no-go + external B2)
+
+- No new banking. The bankable artifact remains the SHARPER internal-route no-go
+  (KD index=χ, χ≠0 only on admitted curved geometry; every A_min-native closed
+  complex is a flat cubical torus χ=0). External B2 (Adler–Bell–Jackiw) stays
+  categorically external. Recomputed in the consolidated runner Part D (KD index=χ
+  on S², flat-cubic χ=0 enumeration).
+
+## Unified note
+
+`docs/ANOMALY_FORCES_TIME_ABJ_PREMISE_OBSTRUCTION_UNIFIED_NOTE_2026-06-20.md`
+(Type: no_go + bounded-core-banking; Claim type: no_go + bounded_theorem;
+non-bare Status). HYBRID: ONE partial unlock + THREE bankable cores + FOUR walls.
+Keystone + parent CONTEXT-ONLY; all load-bearing facts recomputed in-tree.
+
+## Do Not Apply Audit Verdicts (reaffirmed)
+
+Block 03 sets no row/effective status, asserts no "retained"/"promoted" standing
+(Type:/Claim type: only), and does not edit `docs/audit/**`, AUDIT_LEDGER/QUEUE,
+MISSING_DERIVATION_PROMPTS, or `docs/publication/**`. `docs/audit/data/` parsed
+READ-ONLY. The independent audit lane is the sole authority.

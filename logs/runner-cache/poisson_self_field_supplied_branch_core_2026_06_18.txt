@@ -3,7 +3,7 @@ runner: scripts/poisson_self_field_supplied_branch_core_2026_06_18.py
 runner_sha256: abe66b167f86d4468ee576f3123e39a1bab3e0fee10c960410f6683482ca21f9
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 80.17
+elapsed_sec: 70.22
 status: ok
 ----- stdout -----
 ========================================================================

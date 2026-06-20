@@ -1,0 +1,45 @@
+
+--- RH-template vs Hamming-ODD-sector quantum-number table ---
+object                            RH template (B3)          Hamming-ODD sector        
+chirality (omega +-i block?)      OPPOSITE (RH)             NOT a chirality block (omega flips parity)
+SU(2)_weak rep                    singlet (T(F)=0)          DOUBLET-half (T3=+-1/2)       
+color rep (well-defined?)         3bar  (A=-1)              carrier color = 3 (A=+1); odd not an SU(3) subrep
+Y spectrum                        {4/3,-2/3,-2,0}           {+1/3,+1/3,+1/3,-1}           
+relation to even sector           independent adjoined      SU(2)_weak fiber-flip image (vectorlike)
+neutral n=0 ray                   present (n_R)             absent (Y has no 0 eigenvalue)
+
+=== PR-B (P-COMP Hamming-odd) + S4 residuals ===
+[PASS] 0.1 Cl(3) carrier {Gamma_i,Gamma_j}=2 delta_ij I8 (recomputed in-tree)  -- V=(C^2)^x3 dim 8; matches CL3_SM_EMBEDDING_THEOREM
+[PASS] 0.2 omega^2 = -I8 and [omega,Gamma_i]=0 (central pseudoscalar, K1)  -- omega is the central chirality element of CL3_COMPLEXIFICATION_SPLIT
+[PASS] 0.3 even-parity L-sector = {|000>,|011>,|101>,|110>} (block01's sector)  -- even hw in {0,2}: ['|000>', '|011>', '|101>', '|110>']
+[PASS] 0.4 odd-parity COMPLEMENT = {|001>,|010>,|100>,|111>} (the 4_- block)  -- odd hw in {1,3}: ['|001>', '|010>', '|100>', '|111>']
+[PASS] 0.5 DECISIVE-FAILURE #0 (kill confirmed): omega=Gamma_1Gamma_2Gamma_3 is ANTI-diagonal (bit-complement) -> it MAPS Hamming-even<->odd and is ZERO within each parity block => the Hamming-parity split is NOT the chirality split; the Hamming-ODD sector is NOT 'the 4_- chirality block' the route assumed  -- omega|b1b2b3> ~ |~b1~b2~b3|, hw->3-hw; route's structural premise FALSE
+[PASS] 0.6 the true omega chirality (+-i) eigenspaces are 50/50 even/odd mixtures (NOT Hamming sectors): every omega-eigenvector has equal even/odd support  -- omega eig=[np.complex128(-1j), np.complex128(1j)]; max|w_even-w_odd|=2.22e-16 => chirality split != parity split
+[PASS] 0.7 the route's stated sector {|001>,|010>,|100>,|111>} is studied as the Hamming-odd SUBSPACE (well-defined for Y, SU(2), SU(3) reps below) but is explicitly NOT an opposite-chirality block -- already weakens 'native RH'  -- proceeding to read its gauge quantum numbers as the route requests
+[PASS] A0 SWAP_{b1,b2} is an involution (P12^2=I, P12=P12^dag)
+[PASS] A1 full Y spectrum = {+1/3 x6, -1 x2} (retained surface, recomputed)  -- +1/3 x6, -1 x2
+[PASS] A2 [Y, P_parity]=0: Y is block-diagonal in parity => Y_odd well-defined  -- Y commutes with Hamming parity (it is built from base SWAP, fiber-trivial)
+[PASS] A3 even-sector Y eigenvalues (block01's LH surface fragment)  -- Y_even eig = [-1.0, 0.333333, 0.333333, 0.333333]
+[PASS] A4 odd-sector Y eigenvalues (the NEW complementary read)  -- Y_odd eig = [-1.0, 0.333333, 0.333333, 0.333333]
+[PASS] A5 DECISIVE-FAILURE #2 (kill confirmed): the lifted retained Y on the ODD sector does NOT reproduce the RH template hypercharges {4/3,-2/3,-2,0} (it carries the SAME {+1/3 x3,-1} as the even LH surface)  -- odd-sector Y eig=[-1.0, 0.333333, 0.333333, 0.333333]; RH template={4/3,-2/3,-2,0} -> NO MATCH (Y is parity-blind: odd sector carries the SAME {+1/3,-1} surface, NOT the RH hypercharges)
+[PASS] B0 fiber SU(2)_weak closes: [Jf1,Jf2]=i Jf3 (recomputed)
+[PASS] B1 SU(2)_weak (fiber sigma_1 on b3) FLIPS Hamming parity => it MIXES even<->odd sectors (odd sector is NOT SU(2)-invariant)  -- sigma_1 on b3 changes b3 => changes hw parity by 1
+[PASS] B2 DECISIVE-FAILURE #3 (kill confirmed): the ODD sector is NOT an SU(2)_weak singlet -- it is a fiber DOUBLET-half (Casimir=3/4 per fiber, T3=+-1/2), so it CANNOT be the SU(2)-singlet RH template  -- odd-sector SU(2) Casimir eig=[0.25, 0.25, 0.25, 0.25], T3 eig=[-0.5, -0.5, 0.5, 0.5] -> NOT a singlet: the odd sector carries T3=+-1/2 (it is a fiber DOUBLET, like the LH even sector). The RH template requires SU(2)-singlets; the odd sector is a DOUBLET => MISMATCH
+[PASS] C0 SU(3) color closes [T1,T2]=i f^{123}T^3 (recomputed)  -- [T^1,T^2]=i T^3 (f^{123}=1)
+[PASS] C1 [SU(3), Y]=0 and [SU(3), SU(2)_weak]=0 (recomputed)  -- tensor-product commutativity, matches CL3_COLOR_AUTOMORPHISM_THEOREM
+[PASS] C2 KEY: SU(3) color does NOT preserve the Hamming-parity blocks (it acts on the base-symmetric subspace which mixes both parities) => 'the odd sector's color rep' is NOT a well-defined SU(3) subrep  -- parity-block-diagonal = False; the well-defined color carrier is the base-symmetric 3D subspace (x) fiber, read next
+[PASS] C3 fundamental anomaly index A(3)=+1 (calibration, in-tree d-symbol)  -- A(3)=1.0000
+[PASS] C4 DECISIVE-FAILURE #1 (kill confirmed): the carrier's color rep is the FUNDAMENTAL 3 (A=+1), NOT the anti-fundamental 3bar (A=-1) the RH completion requires (RH_COMPLETION_COLOR_ANTI_FUNDAMENTAL: u_R^c,d_R^c in 3bar). The carrier supplies color-3 LH quarks only; no native 3bar.  -- A(carrier color)=+1.0000 = +1 (fundamental 3); RH template needs 3bar (A=-1) => MISMATCH. Set A_odd context-only below.
+[PASS] C5 DECISIVE-FAILURE #1b (kill confirmed): the carrier's net SU(3)^3 = +2 (two color-3 quark Weyls); cancelling it needs 2 ADJOINED RH 3bar's (A=-1), which the carrier does NOT contain -> SU(3)^3 does NOT cancel within the carrier  -- A(carrier SU(3)^3)=+2.0; needs adjoined 2x3bar => no native vectorlike color closure
+[PASS] D1 even and odd sectors carry the SAME Y spectrum (parity-blind Y)  -- Y_even=[-1.0, 0.333333, 0.333333, 0.333333], Y_odd=[-1.0, 0.333333, 0.333333, 0.333333] -> identical => odd sector is the fiber/SU(2) partner of the even sector, NOT an independent opposite-Y RH set
+[PASS] D2 the odd sector = SU(2)_weak fiber-flip image of the even sector (sigma_1 on b3 maps even<->odd): they are ONE SU(2) doublet tower  -- fiber flip is an SU(2)_weak group element (a symmetry), NOT a chirality flip => even+odd is SU(2)-vectorlike, not LH (+) opposite-chirality RH
+[PASS] D3 DECISIVE PR-B VERDICT (kill confirmed): NOT all four match => P-COMP existence is NOT native on the Hamming-odd sector. The odd sector is NOT an omega-chirality block, is an SU(2)_weak DOUBLET-half, the carrier color rep is 3 (not 3bar), and Y is the SAME {+1/3,-1} as the even LH sector -- it is the SU(2) fiber partner of the LH content (the carrier is SU(2)-vectorlike), NOT the opposite-chirality SU(2)-singlet 3bar RH template. P-COMP existence stays WALLED.  -- template_match=False (a crack would require True)
+[PASS] D4 even-sector saturation: the EVEN sector already realizes the full {+1/3 x6,-1 x2} LH surface; the odd sector is its SU(2) partner, so the carrier supplies NO independent opposite-chirality 3bar RH matter natively  -- the 8-dim carrier is one LH SU(2)-doublet generation; no native RH-singlet block => the RH completion must still be ADJOINED (block01 conclusion stands)
+[PASS] E-S4(i) DECISIVE: J=CPT image of an LH SU(2) DOUBLET is a DOUBLET (Casimir=3/4), NOT an SU(2)-singlet (SU(2) pseudoreal, 2bar~2)  -- conj-doublet Casimir eig=[0.75, 0.75] => CPT of the LH doublet is NOT the SU(2)-SINGLET RH template
+[PASS] E-S4(ii) DECISIVE: J=CPT gives Y -> -Y, i.e. {-1/3 x6, +1 x2}, which is NOT the RH template {4/3,-2/3,-2,0}  -- J-image Y multiset (signs flipped) != RH template; J gives the CPT MIRROR of the LH doublet, not the RH SU(2)-singlet set
+[PASS] E-S4(iii) DECISIVE: the J-fixed / neutral ray n=0 does NOT exist in the carrier -- Y has NO zero eigenvalue (spectrum {+1/3,-1}); the neutral singlet n=0 is an ADJOINED template slot, not a carrier J-fixed ray  -- Y spectrum=[-1.0, 0.333333]; no 0 => n=0 not native
+[PASS] E-S4 VERDICT: J/CPT conjugation gives a VECTORLIKE CPT-mirror (doublet, Y->-Y, no n=0), NOT a chiral RH SU(2)-singlet completion with n=0 fixed  -- S4 fails all three legs => no crack from the Record/CPT route either
+[PASS] F1 conditional arithmetic core re-derived: GIVEN template+n=0, anomalies force {4a,-2a,-6a,0} (the bankable part stands; only EXISTENCE was at issue)  -- matches keystone (B3) witness at a=1/3
+
+TOTAL: PASS=31 FAIL=0
+VERDICT: The complementary Hamming-ODD sector {|001>,|010>,|100>,|111>} is the SU(2)_weak fiber-flip image of the even LH sector: it is an SU(2)-DOUBLET half (NOT a singlet), color rep 3 with A=+1 (NOT the 3bar RH template), and carries the SAME {+1/3,-1} Y spectrum (NOT {4/3,-2/3,-2,0}). The 8-dim carrier is ONE SU(2)-vectorlike LH generation; it supplies NO native opposite-chirality SU(2)-singlet 3bar RH-completion block. S4 (Record/CPT J=K) yields the CPT mirror (doublet, Y->-Y, no n=0 ray), also not the RH template. DECISIVE-FAILURE: P-COMP existence is NOT native => the route is KILLED; P-COMP existence stays WALLED -> register-as-premise. The block01 conclusion (RH completion must be adjoined) STANDS, now proven by direct computation of the complementary chirality block.

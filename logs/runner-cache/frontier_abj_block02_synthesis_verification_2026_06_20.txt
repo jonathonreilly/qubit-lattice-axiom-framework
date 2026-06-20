@@ -1,0 +1,72 @@
+======================================================================
+PART B (PR-B / P-COMP): Hamming-odd complementary sector is NOT
+the opposite-chirality SU(2)-singlet 3bar RH template -> KILL
+======================================================================
+[PASS] B0 Cl(3) carrier {Gi,Gj}=2delta on dim-8 (C^2)^x3  residual=0.000e+00
+[PASS] B1 omega=G1G2G3 satisfies omega^2 = -I (pseudoscalar)  residual=0.000e+00
+[PASS] B2 omega is signed-permutation flipping Hamming parity (even<->odd)
+[PASS] B3 omega vanishes WITHIN each Hamming block => Hamming != chirality split  residual=0.000e+00
+[PASS] B4 omega spectrum is {+i x4, -i x4}
+[PASS] B5 the +i chirality eigenSPACE is 50/50 even/odd (not a Hamming sector)  residual=0.000e+00
+[PASS] B6 Y spectrum on carrier = {+1/3 x6, -1 x2} (retained LH surface)
+[PASS] B7 Y commutes with Hamming-parity (parity-blind hypercharge)  residual=0.000e+00
+[PASS] B8 odd-sector Y spectrum == even-sector Y spectrum (same {+1/3 x3,-1})  residual=0.000e+00
+[PASS] B9 odd-sector Y spectrum != RH template {4/3,-2/3,-2,0} (DECISIVE KILL)
+[PASS] B10 carrier Y has NO zero eigenvalue => no native neutral n=0 ray  residual=3.333e-01
+[PASS] B11 SU(2)_weak group element sigma1 on fiber maps even->odd (fiber-flip image)
+[PASS] B12 SU(2)_weak Casimir = 3/4 I (fiber is a doublet, not a singlet)  residual=0.000e+00
+[PASS] B13 S4 J=CPT gives Y->-Y mirror {-1/3 x6,+1 x2}, NOT RH template
+[PASS] B14 S4 J=CPT mirror has NO zero eigenvalue => no native n=0 from Record/CPT  residual=3.333e-01
+
+VERDICT B: PR-B is a decisive KILL. odd sector = SU(2)_weak fiber-flip image
+of even LH (doublet-half, same {+1/3,-1} Y, no n=0); S4 = CPT mirror. P-COMP
+existence NOT native -> wall STANDS -> register-as-premise. cracked=no.
+
+======================================================================
+PART A (PR-A / P-REC): consumer reframe. The decisive-FAILURE probe
+(reducibility flips gamma5 existence verdict?) is recomputed FIRST.
+======================================================================
+  n | irrep null | m=2 | m=4   (verdict gamma5 exists = null>0)
+  2 |    1      |  4  | 16
+  3 |    0      |  0  | 0
+  4 |    1      |  4  | 16
+  5 |    0      |  0  | 0
+  6 |    1      |  4  | 16
+[PASS] A1 EVEN nullity dichotomy is parity-of-n (nonzero=even, zero=odd) on irrep
+[PASS] A2 DECISIVE-FAILURE PROBE: NO reducibility-induced flip of gamma5 verdict (non-vacuous; would FAIL the reframe if a flip existed)
+[PASS] A3 Gamma5^spin^2 = +I on the reducible 4-taste carrier  residual=0.000e+00
+[PASS] A4 {Gamma5^spin, alpha_mu}=0 (E satisfied on FULL reducible carrier, no taste selection)  residual=0.000e+00
+[PASS] A5 Gamma5^spin commutes with the M4(C) taste commutant (taste-singlet)  residual=0.000e+00
+[PASS] A6 4 taste projectors sum to I_16 (dial partition)  residual=0.000e+00
+[PASS] A7 R-DIAL: per-taste-sector trace identical across 4 degenerate replicas (taste-dial invariant)  residual=0.000e+00
+
+VERDICT A: PR-A is a PARTIAL crack (reframe). B4/B5/EVEN consume only
+gamma5-EXISTENCE (parity-of-n, irrep-independent, no reducibility flip);
+the taste-singlet Gamma5^spin discharges the edge; consumed quantity is
+taste-dial invariant. P-REC reframes UNNECESSARY for the 1105 consumer.
+No single-taste admission. Scope: B4/B5/B6 edge ONLY.
+
+======================================================================
+PART D (PR-D / P-ABJ): KD index = chi; nonzero only on ADMITTED curved
+geometry; every A_min-native closed complex is a flat cubical torus -> KILL
+======================================================================
+[PASS] D1 tetra-boundary S^2 f-vector (4,6,4) gives chi = +2
+[PASS] D2 S^2 Betti numbers (b0,b1,b2)=(1,0,1) via Hodge Laplacians
+[PASS] D3 KD index = sum (-1)^k b_k = chi = +2 on S^2 (in-tree, not imported)
+[PASS] D4 ALL 28 A_min-native cubical tori (dim 2..4, L in {2,3}) have chi=0
+[PASS] D5 full cubical Z^3 x Z_tau (A_min substrate w/ kinetic-isotropy time edge) has chi = 0 (flat)
+[PASS] D6 the chi!=0 carrier (S^2) is NOT a flat cubical torus => geometry is ADMITTED, not native (DECISIVE no-go)
+[PASS] D7 block01 square-block GRAPH index = 0 on balanced even torus (4,2,2,2)
+
+VERDICT D: PR-D is a SHARPER NO-GO (KILL of the candidate crack). KD index
+= chi (verified in-tree), nonzero (+2) ONLY on the curved closed S^2 which
+is ADMITTED not native; every A_min closed complex is a flat cubical torus
+(chi=0). Wall re-localized onto A_min's flat-cubic Lattice axiom. cracked=no.
+
+======================================================================
+TOTAL: PASS=29 FAIL=0
+======================================================================
+SYNTHESIS: PR-B P-COMP = KILL (register-as-premise); PR-A P-REC = PARTIAL
+crack/reframe (B4/B5/B6 edge unnecessary, no admission); PR-D P-ABJ = sharper
+no-go (walled, flat-cubic Lattice axiom). Independent recomputation confirms
+the three route runners. No protected surface touched.

@@ -1,0 +1,69 @@
+ROUTE PR-A: P-REC consumer reframe runner
+keystone: anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26
+parent:   anomaly_forces_time_theorem
+question: does B4/B5 + parent EVEN parity law consume an IRREDUCIBLE gamma_5 or only a taste-singlet one?
+
+==============================================================================
+PART 0 - REUSE block01 spin/taste core (alpha_mu, Gamma_5^spin, taste M_4(C))
+==============================================================================
+[PASS] alpha_mu form Cl_4 (REUSED spintaste-core)  residual=0.000e+00   # blocked staggered carrier, residual 0 in block01
+[PASS] Gamma_5^spin^2 = +I (REUSED witness)  residual=0.000e+00
+[PASS] {Gamma_5^spin, alpha_mu} = 0 for all mu (REUSED witness, residual 0.0)  residual=0.000e+00   # the EXACT block01 residual-0 taste-singlet witness
+[PASS] taste commutant dim = 16 = M_4(C) (REUSED)  residual=0.000e+00   # spectator taste algebra
+[PASS] Gamma_5^spin commutes with ALL of M_4(C) (taste-SINGLET, REUSED)  residual=1.082e-15   # Gamma_5^spin is taste-singlet: a single object for all tastes
+
+==============================================================================
+PART (a) - B4/B5 as existence predicate E; taste-singlet witness discharges it
+==============================================================================
+[PASS] E(full 4-tasted carrier) TRUE: taste-singlet Gamma_5^spin witnesses B4  residual=0.000e+00   # B4 predicate satisfied on the REDUCIBLE carrier, no taste picked
+[PASS] EVEN parity law on FULL carrier (n=4 even): omega anticommutes all gens  residual=0.000e+00   # EVEN law holds on the reducible carrier identically
+
+==============================================================================
+PART (b) - PARITY-LAW irreducibility test: nullity dichotomy irrep vs reducible
+==============================================================================
+[PASS] n=2: IRREP anticommutant-nullity = 1 (even)  residual=0.000e+00   # reproduces parent EVEN law on the irrep
+[PASS] n=2, mult m=2: reducible carrier has gamma_5 (nullity>0) -> SAME parity verdict  residual=4.000e+00   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] n=2, mult m=4: reducible carrier has gamma_5 (nullity>0) -> SAME parity verdict  residual=1.600e+01   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] n=3: IRREP anticommutant-nullity = 0 (odd)  residual=0.000e+00   # reproduces parent EVEN law on the irrep
+[PASS] n=3, mult m=2: reducible carrier has gamma_5 (nullity=0) -> SAME parity verdict  residual=0.000e+00   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] n=3, mult m=4: reducible carrier has gamma_5 (nullity=0) -> SAME parity verdict  residual=0.000e+00   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] n=4: IRREP anticommutant-nullity = 1 (even)  residual=0.000e+00   # reproduces parent EVEN law on the irrep
+[PASS] n=4, mult m=2: reducible carrier has gamma_5 (nullity>0) -> SAME parity verdict  residual=4.000e+00   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] n=4, mult m=4: reducible carrier has gamma_5 (nullity>0) -> SAME parity verdict  residual=1.600e+01   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] n=5: IRREP anticommutant-nullity = 0 (odd)  residual=0.000e+00   # reproduces parent EVEN law on the irrep
+[PASS] n=5, mult m=2: reducible carrier has gamma_5 (nullity=0) -> SAME parity verdict  residual=0.000e+00   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] n=5, mult m=4: reducible carrier has gamma_5 (nullity=0) -> SAME parity verdict  residual=0.000e+00   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] n=6: IRREP anticommutant-nullity = 1 (even)  residual=0.000e+00   # reproduces parent EVEN law on the irrep
+[PASS] n=6, mult m=2: reducible carrier has gamma_5 (nullity>0) -> SAME parity verdict  residual=4.000e+00   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] n=6, mult m=4: reducible carrier has gamma_5 (nullity>0) -> SAME parity verdict  residual=1.600e+01   # even/odd EXISTENCE dichotomy identical on reducible carrier
+[PASS] DECISIVE(b): EVEN existence dichotomy is PARITY-OF-n only, irrep-independent (no irreducibility consumed)  residual=0.000e+00   # B5/EVEN needs n even, NOT a de-tasted single irreducible gamma_5
+[PASS] DECISIVE-FAILURE PROBE(b): NO n where reducibility flips the gamma_5 existence verdict (if it did, reframe FAILS)  residual=0.000e+00   # reducibility never changes existence -> parity law does not need irreducibility
+
+==============================================================================
+PART (c) - R-DIAL: taste-dial invariance of the consumed quantities
+==============================================================================
+[PASS] (c1) gamma_5 EXISTS on EVERY single-taste sector (dial-invariant existence)  residual=3.914e-15   # B4 predicate true on every taste dial -> single-taste choice not load-bearing for B4/B5
+
+==============================================================================
+PART (c2) - anomaly trace is identical across taste sectors (degenerate replicas)
+==============================================================================
+[PASS] (c2-pre) representative anomaly insertion O is taste-singlet  residual=9.714e-16
+[PASS] (c2) per-taste-sector anomaly trace IDENTICAL across all 4 sectors  residual=6.379e-16   # tastes are degenerate replicas -> single-taste trace = (1/4) full trace, sector-independent
+[PASS] (c2) sum of single-taste traces = full taste-summed trace (consistency)  residual=1.001e-15
+[PASS] (c2) each single-taste sector = (1/4) x full trace (exact replica)  residual=8.882e-16   # the consumed anomaly quantity is a taste-dial CONSTANT (up to overall replica factor)
+
+==============================================================================
+PART (d) - downstream-need audit: nothing consumes irreducibility beyond P-REC's own declaration
+==============================================================================
+[PASS] (d) no downstream step needs an IRREDUCIBLE gamma_5 (only n-even, supplied by taste-singlet witness)  residual=0.000e+00   # irreducibility appears ONLY in P-REC's own declaration + EVEN's parenthetical, not as a consumer
+
+==============================================================================
+PART (e) - VERDICT synthesis for ROUTE PR-A
+==============================================================================
+[PASS] SYNTHESIS: B4/B5 consume only EXISTENCE of a taste-singlet gamma_5  residual=0.000e+00
+[PASS] SYNTHESIS: parent EVEN parity law does NOT need an irreducible gamma_5 (parity-of-n only)  residual=0.000e+00
+[PASS] SYNTHESIS: consumed quantity (existence + anomaly trace) is taste-dial-INVARIANT  residual=0.000e+00
+[PASS] SYNTHESIS: P-REC REFRAMES TO UNNECESSARY for the 1105 consumer (partial unlock; NO single-taste admission)  residual=0.000e+00   # single-taste selection is a within-sector dial, not load-bearing for B4/B5/B6
+[PASS] SCOPE FENCE: unlock is the B4/B5/B6 chirality+even-dim edge ONLY; P-ABJ/P-COMP/P-HY untouched  residual=0.000e+00   # partial unlock of the 1105 cone, no new admission
+
+TOTAL: PASS=35 FAIL=0

@@ -114,3 +114,88 @@ Every load-bearing fact above was recomputed in-tree (source discipline). The
 unaudited keystone and unaudited parent are NOT cited as authority for any
 load-bearing claim. SM_ANOMALY_CLOSURE_RETAINED_ANCHORS_DECOUPLED
 (retained_pending_chain) is the banking precedent shape.
+
+---
+
+# Block 02 append — exercise-surfaced route verification (2026-06-20)
+
+Three exercise-portfolio routes taken to decisive finite runners. ONE partial
+reframe-crack (P-REC, no admission); TWO decisive KILLs that SHARPEN their walls
+(P-COMP existence, P-ABJ internal route). Independent synthesis verification runner
+`scripts/frontier_abj_block02_synthesis_verification_2026_06_20.py` (PASS=29 FAIL=0)
+re-derives all three route-killing / reframe facts from scratch (caught + fixed 3
+real residual bugs mid-cycle). No protected surface edited; docs/audit/data
+READ-ONLY.
+
+## P-COMP — complementary-block existence no-go (PR-B; decisive KILL; NOT a bare no-go)
+
+- **No-go (now COMPUTED, was steelman-defeat):** the candidate native RH supplier —
+  the complementary Hamming-ODD sector {|001>,|010>,|100>,|111>} of Λ(C³)=(C²)^⊗3,
+  uninspected by block01 — is provably NOT the opposite-chirality SU(2)-singlet 3̄
+  RH template. Direct finite computation: (#0) ω=Γ₁Γ₂Γ₃ flips Hamming parity, so the
+  odd sector is NOT a chirality block (the +i eigenspace is 50/50 even/odd);
+  (#1) carrier color = fundamental 3 (A=+1), not 3̄ (A=−1); (#2) Y is parity-blind so
+  the odd sector carries the SAME {+1/3 ×3,−1} as the even LH, not {4/3,−2/3,−2,0};
+  (#3) the odd sector is an SU(2)_weak fiber doublet-half (Casimir 3/4, T₃=±1/2),
+  reached from the even sector by the SU(2) element σ₁ — vectorlike, not chiral.
+- **S4 (Record/CPT J=K):** gives only a vectorlike CPT mirror (Y→−Y, doublet, no
+  native n=0 ray — Y has no zero eigenvalue). Record/CPT is a CONSUMER of chirality,
+  not a source of the opposite-chirality singlet sector (CHIRALITY_RECORD_TYPING_INTERFACE
+  made quantitative).
+- **Verdict:** the 8-dim carrier is ONE SU(2)-vectorlike LH generation; it supplies
+  NO native opposite-chirality SU(2)-singlet 3̄ RH block. Block01's "RH completion
+  must be adjoined" is now PROVEN by direct computation. P-COMP existence is NOT
+  native → register-as-premise. Only the block01 arithmetic core banks; existence
+  suppliers (rh_completion_color_anti_fundamental, su3_anomaly_forced_3bar) unaudited;
+  su3_dabc_symmetric audited_failed; circular-on-parent persists.
+- **Authority (recomputed in-tree):** cl3_color_automorphism_theorem (retained_bounded),
+  cl3_complexification_split_narrow_theorem_note_2026-05-10 (retained).
+  Runner PASS=31/0; synthesis runner B0–B14.
+- **Exercise-skill:** DISCHARGED — the existence steelman is now a computed no-go on
+  the complementary block, not an open hunt.
+
+## P-REC — selector wall rendered UNNECESSARY for the consumer (PR-A; PARTIAL CRACK)
+
+- **NOT a no-go — a partial reframe-crack.** The single-taste/irreducible SELECTOR
+  wall STANDS as a supplier statement, but it is rendered UNNECESSARY for the 1105
+  consumer: B4 → B5/EVEN → B6 consumes only γ₅-EXISTENCE (parity-of-n,
+  irreducible-representation-INDEPENDENT), and the consumed quantity is taste-dial
+  invariant. The taste-singlet Γ₅^spin discharges the edge with NO single-taste
+  admission, NO new axiom/primitive.
+- **Decisive-FAILURE probe (run first, non-vacuous):** searched n=2..6, m∈{1,2,4}
+  for any reducibility-induced flip of the γ₅ existence verdict — NONE found (a flip
+  would have FAILED the reframe). Nullity is parity-of-n (1/0/1/0/1 on irrep), scales
+  by m² on reducible carriers, never flips.
+- **Scope fence:** B4/B5/B6 chirality+even-dim edge ONLY; does NOT touch
+  P-ABJ/P-COMP/P-HY; d_t=1 still needs SC/(B-AXIS).
+- **Authority (recomputed in-tree, CONTEXT-ONLY):** CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10
+  (retained; nullity law recomputed on irrep AND reducible carriers),
+  NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02 (retained_no_go). Reused block01
+  P-REC core (not rebuilt). Runner PASS=35/0; synthesis runner A1–A7.
+- **Exercise-skill:** DISCHARGED via consumer reframe (the selector is not load-bearing
+  for B4/B5/B6).
+
+## P-ABJ — internal route re-localized onto the flat-cubic Lattice axiom (PR-D; sharper no-go)
+
+- **No-go (SHARPER, full-complex not graph):** the taste-singlet Kähler–Dirac index
+  on the FULL cochain complex DOES track χ (Catterall–Butt; verified in-tree via
+  combinatorial Hodge Laplacians, NOT imported blind) and IS nonzero (+2) on a curved
+  closed S² (tetra boundary) — the campaign's first χ≠0, a genuine non-vacuous escape
+  MECHANISM. BUT every A_min-native closed complex is a flat cubical torus (χ=0 by the
+  product law χ(S¹)^n=0; 28 tori dim 2..4 enumerated; full cubical Z³×Z_τ complex χ=0
+  at every size/dimension — higher cells do NOT create χ).
+- **Honesty guard (decisive):** the χ≠0 carrier (S²) is read off its OWN f-vector with
+  ZERO gauge field, so it is NOT block01 R-C's injected gauge topological charge Q —
+  it is an ADMITTED curved GEOMETRY, categorically outside A_min's flat-cubic Lattice
+  axiom. NO non-vacuity crack.
+- **Verdict:** re-localizes the P-ABJ internal-route wall from block01's diffuse GRAPH
+  framing (χ≠0 ⇔ all-odd ⇔ grading destroyed) to a single named geometric admission —
+  the flat-cubic Lattice axiom. The N7 steelman ("a curved/non-hypercubic complex
+  witnesses a nonzero index") is settled: yes such a complex exists, no it is not
+  A_min-native. External P-ABJ implication (B2, Adler–Bell–Jackiw) untouched —
+  categorically external admission.
+- **Authority (recomputed in-tree / CONTEXT-ONLY):** ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30
+  (retained_no_go; A_t=0 reproduced), ABJ_RESIDUAL_GW_NOT_NECESSARY_NARROW_THEOREM_NOTE_2026-05-28
+  (retained_bounded; the re-target ray). Catterall–Butt / Becher–Joos–Rabin literature
+  CONTEXT-ONLY. Runner PASS=45/0; synthesis runner D1–D7.
+- **Exercise-skill:** DISCHARGED — N7 steelman settled with an in-tree χ≠0 witness.

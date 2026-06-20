@@ -1,0 +1,63 @@
+PR-D / P-ABJ internal route: taste-singlet Kaehler-Dirac index vs chi
+First chi != 0 runner of the campaign. Absorbs block01 square-block GRAPH no-go (recomputed in-tree) and tests the FULL-COMPLEX KD/chi index.
+
+=== PART 0: recompute block01 square-block GRAPH eps-index = 0 ===
+[PASS] P0 (4, 2, 2, 2): GRAPH eps-sublattices balanced (chi_graph_index=0 setup)  N+=16 N-=16
+[PASS] P0 (4, 2, 2, 2): 1-skeleton staggered index A_t = 0 (square-block wall)  max|A_t|=0.00e+00
+[PASS] P0 (4, 4, 4, 4): GRAPH eps-sublattices balanced (chi_graph_index=0 setup)  N+=128 N-=128
+[PASS] P0 (4, 4, 4, 4): 1-skeleton staggered index A_t = 0 (square-block wall)  max|A_t|=4.66e-15
+  NOTE: the above is the GRAPH index (block01). PR-D below tests the FULL cochain-complex KD index = chi, a DIFFERENT object.
+
+=== PART 1: KD (Dirac-Kaehler) index = Euler characteristic chi ===
+[PASS] P1 point: chi (f-vector) = 1  f={0: 1}, chi=1
+[PASS] P1 point: KD index = chi = 1  KD index=1
+[PASS] P1 point: Hodge chi = sum (-1)^k b_k = 1  betti={0: 1}, chi_betti=1
+[PASS] P1 interval: chi (f-vector) = 1  f={0: 2, 1: 1}, chi=1
+[PASS] P1 interval: KD index = chi = 1  KD index=1
+[PASS] P1 interval: Hodge chi = sum (-1)^k b_k = 1  betti={0: 1, 1: 0}, chi_betti=1
+[PASS] P1 circle C5 (S^1): chi (f-vector) = 0  f={0: 5, 1: 5}, chi=0
+[PASS] P1 circle C5 (S^1): KD index = chi = 0  KD index=0
+[PASS] P1 circle C5 (S^1): Hodge chi = sum (-1)^k b_k = 0  betti={0: 1, 1: 1}, chi_betti=0
+[PASS] P1 circle C8 (S^1): chi (f-vector) = 0  f={0: 8, 1: 8}, chi=0
+[PASS] P1 circle C8 (S^1): KD index = chi = 0  KD index=0
+[PASS] P1 circle C8 (S^1): Hodge chi = sum (-1)^k b_k = 0  betti={0: 1, 1: 1}, chi_betti=0
+[PASS] P1 filled triangle (disk): chi (f-vector) = 1  f={0: 3, 1: 3, 2: 1}, chi=1
+[PASS] P1 filled triangle (disk): KD index = chi = 1  KD index=1
+[PASS] P1 filled triangle (disk): Hodge chi = sum (-1)^k b_k = 1  betti={0: 1, 1: 0, 2: 0}, chi_betti=1
+[PASS] P1 tetra boundary (S^2): chi (f-vector) = 2  f={0: 4, 1: 6, 2: 4}, chi=2
+[PASS] P1 tetra boundary (S^2): KD index = chi = 2  KD index=2
+[PASS] P1 tetra boundary (S^2): Hodge chi = sum (-1)^k b_k = 2  betti={0: 1, 1: 0, 2: 1}, chi_betti=2
+[PASS] P1 cubical T^2 3x3: chi (f-vector) = 0  f={0: 9, 1: 18, 2: 9}, chi=0
+[PASS] P1 cubical T^2 3x3: KD index = chi = 0  KD index=0
+[PASS] P1 cubical T^2 3x3: Hodge chi = sum (-1)^k b_k = 0  betti={0: 1, 1: 2, 2: 1}, chi_betti=0
+[PASS] P1 cubical T^2 4x5: chi (f-vector) = 0  f={0: 20, 1: 40, 2: 20}, chi=0
+[PASS] P1 cubical T^2 4x5: KD index = chi = 0  KD index=0
+[PASS] P1 cubical T^2 4x5: Hodge chi = sum (-1)^k b_k = 0  betti={0: 1, 1: 2, 2: 1}, chi_betti=0
+
+=== PART 2: FAMILY flat-torus (chi=0) -> S^2 (chi=2) : index tracks chi ===
+[PASS] P2 flat T^2 2x2: KD taste-singlet index = chi = 0  index=0
+[PASS] P2 flat T^2 3x3: KD taste-singlet index = chi = 0  index=0
+[PASS] P2 CURVED S^2 (tetra boundary): KD taste-singlet index = chi = 2  index=2
+[PASS] P2 flat T^2 4x4: KD taste-singlet index = chi = 0  index=0
+[PASS] P2 CRACK-OF-OBJECT: KD index is NONZERO (= +2) on the curved S^2 while all flat tori give 0 -- the index TRACKS chi (first chi!=0 in campaign)  index(S^2)=2, index(tori)=[0, 0, 0]
+[PASS] P2 HONESTY: the chi=2 comes from the complex's OWN combinatorics (f0-f1+f2 = 4-6+4), NO injected gauge boundary twist anywhere  f-vector={0: 4, 1: 6, 2: 4}
+
+=== PART 3: CONTROL full cubical cochain complex on Z^3 x Z_tau ===
+[PASS] P3 cubical T^3 (2, 2, 2): full-complex chi = 0 (closed cubic = flat)  f={0: 8, 1: 24, 2: 24, 3: 8}, chi=0
+[PASS] P3 cubical T^3 (3, 2, 2): full-complex chi = 0 (closed cubic = flat)  f={0: 12, 1: 36, 2: 36, 3: 12}, chi=0
+[PASS] P3 cubical T^3 (3, 3, 2): full-complex chi = 0 (closed cubic = flat)  f={0: 18, 1: 54, 2: 54, 3: 18}, chi=0
+[PASS] P3 cubical Z^3 x Z_tau (2,2,2,2): full-complex chi = 0 (A_min substrate is flat -- the kinetic-isotropy time edge keeps it flat)  f={0: 16, 1: 64, 2: 96, 3: 64, 4: 16}, chi=0
+[PASS] P3 KD index on the full cubical T^3 complex = chi = 0 (no taste-singlet index on the A_min-native flat-cubic complex)  KD index=0
+
+=== PART 4: off-substrate non-vacuity witnesses ===
+[PASS] P4 (block01 control): open 3x3 GRAPH staggered index = N+-N- = 1 (needs a BOUNDARY A_min withholds)  A_inf=1.0000, N+-N-=1
+[PASS] P4 (KD witness): S^2 is CLOSED (every edge bounds exactly 2 faces) yet KD index = 2 -- curvature/topology, NOT a boundary, drives chi!=0  index=2, all-edges-in-2-faces=True
+
+=== PART 5: HONESTY GUARD -- is chi!=0 A_min-native or admitted? ===
+[PASS] P5 W (native): EVERY A_min-native cubical torus has chi = 0 (enumerated 28 tori in dim 2..4, edges in {2,3})  cubic Z^n periodic closure is flat: chi(product of circles) = 0
+[PASS] P5 (structural): chi(cubical torus) = 0 by the product law chi(S^1)^n=0 (verified T^2 and T^3)  chi(T2)=0, chi(T3)=0
+[PASS] P5 DECISIVE: the chi!=0 geometry (S^2, chi=2) is ADMITTED, NOT A_min-native -- A_min supplies only flat cubical complexes (chi=0). The KD index DOES track chi, but A_min's Lattice axiom withholds chi!=0.  wall localizes onto the flat-cubic Lattice axiom; consumer must ADMIT the curved geometry (named wall)
+[PASS] P5 HONESTY vs block01 R-C: chi is read from the complex's f-vector with ZERO gauge field -- the admitted datum is the curved GEOMETRY, not an injected gauge topological charge Q  chi(S^2)=2 combinatorially
+
+TOTAL: PASS=45 FAIL=0
+VERDICT: The taste-singlet Kaehler-Dirac index on the FULL cochain complex DOES equal the Euler characteristic chi (Catterall-Butt; verified P1) and DOES become nonzero -- index = +2 on the curved closed S^2 (tetra boundary), the first chi != 0 of the campaign (P2). BUT the honesty guard is decisive (P5): every A_min-native closed complex is a cubical torus, which is FLAT (chi = 0 by the product law chi(S^1)^n = 0), enumerated over dim 2..4. The full cubical cochain complex on Z^3 x Z_tau (the A_min substrate WITH the kinetic-isotropy time edge) has chi = 0 at every size and in every dimension (P3) -- adding plaquettes/cubes to block01's 1-skeleton graph does NOT create chi. The chi != 0 geometry (S^2) is ADMITTED, not native: it is read off the complex's OWN f-vector with NO gauge field (so it is NOT block01 R-C's injected boundary twist), but A_min's Lattice axiom (cubic nearest-neighbor adjacency) supplies only flat cubical complexes. OUTCOME: a SHARPER NO-GO that localizes the P-ABJ internal-route wall onto A_min's flat-cubic Lattice axiom -- the consumer must ADMIT the curved geometry, a named wall. The KD/chi index is a genuine non-vacuous escape MECHANISM (index tracks chi, witnessed off-substrate on S^2), but it is unavailable internally to A_min.

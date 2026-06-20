@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/architecture_portability_live_reaudit_bridge_2026_06_18.py
+runner_sha256: 968bbee77b58c19c455dd1092d8144ab2fa58fa95c0d9a5823f52b97df302082
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+========================================================================================
+ARCHITECTURE PORTABILITY LIVE REAUDIT BRIDGE
+========================================================================================
+[PASS] path exists: archive_unlanded/work-history-unverifiable-portability-2026-04-30/ARCHITECTURE_PORTABILITY_AUDIT_2026-04-11.md
+[PASS] path exists: docs/ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md
+[PASS] path exists: docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md
+[PASS] path exists: scripts/frontier_architecture_portability_sweep.py
+[PASS] path exists: logs/runner-cache/frontier_architecture_portability_sweep.txt
+[PASS] path exists: scripts/archive_architecture_portability_firewall_2026_06_16.py
+[PASS] archive boundary phrase: RETRACTED 2026-04-30
+[PASS] archive boundary phrase: archived `audited_failed` / retracted
+[PASS] archive boundary phrase: not a live authority
+[PASS] archive boundary phrase: must not be
+[PASS] archive boundary phrase: ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md
+[PASS] live note phrase: scripts/frontier_architecture_portability_sweep.py
+[PASS] live note phrase: Architecture Portability Sweep
+[PASS] live note phrase: ordered 3D cubic
+[PASS] live note phrase: staggered 3D cubic
+[PASS] live note phrase: Wilson 3D cubic
+[PASS] live note phrase: Random geometric
+[PASS] live note phrase: This is a portability companion, not a standalone Newton closure.
+[PASS] live note phrase: Wilson Born rule is not measured
+[PASS] live note phrase: mass exponent beta measures deflection proportional to source mass
+[PASS] bridge boundary phrase: source-side re-audit bridge
+[PASS] bridge boundary phrase: old archived row remains a failed historical packet
+[PASS] bridge boundary phrase: bounded finite configured sweep
+[PASS] bridge boundary phrase: does not edit audit results
+[PASS] bridge boundary phrase: standalone Newton closure
+[PASS] bridge boundary phrase: Wilson Born-rule measurement
+[PASS] bridge boundary phrase: retained or retained-bounded effective status
+[PASS] runner substantive marker: class Ordered3D
+[PASS] runner substantive marker: class Staggered3D
+[PASS] runner substantive marker: class Wilson3D
+[PASS] runner substantive marker: class RandomGeometric
+[PASS] runner substantive marker: SOURCE_AMPLITUDES
+[PASS] runner substantive marker: born_rule_i3
+[PASS] runner substantive marker: overall = gate_beta and gate_attract and gate_born
+[PASS] firewall checks archive retirement
+[PASS] cache points to primary runner
+[PASS] cache exits cleanly
+[PASS] cache status ok
+[PASS] cache sha matches runner
+[PASS] cache result phrase: ARCHITECTURE PORTABILITY SWEEP
+[PASS] cache result phrase: ordered_3d               0.9999
+[PASS] cache result phrase: staggered_3d             1.0125
+[PASS] cache result phrase: wilson_3d                1.0005
+[PASS] cache result phrase: random_geometric         0.9989
+[PASS] cache result phrase: beta within 10% of 1.0: 4/4 architectures
+[PASS] cache result phrase: Attractive force:       4/4 architectures
+[PASS] cache result phrase: Born rule I_3 < 1e-6:   all measured pass
+[PASS] cache result phrase: OVERALL: PASS
+[PASS] cache result phrase: bounded source-mass portability companion established
+[PASS] random geometric row is scoped to 2D mass-only
+[PASS] Wilson row has no Born I3 measurement
+========================================================================================
+SUMMARY: ARCHITECTURE PORTABILITY LIVE REAUDIT BRIDGE PASS=51 FAIL=0
+========================================================================================
+
+----- stderr -----
+

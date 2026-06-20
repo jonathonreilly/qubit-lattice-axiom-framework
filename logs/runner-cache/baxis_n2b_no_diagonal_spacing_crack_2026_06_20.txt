@@ -1,0 +1,42 @@
+
+==============================================================================
+BLOCK A -- state the no-diagonal clause precisely; A_min-native status and TOPOLOGICAL character (with the Lattice axiom's metric disavowal)
+==============================================================================
+  [PASS] A1 the no-diagonal clause = Lattice axiom 'nearest-neighbor cubic adjacency' (6 axis neighbors, no face/body diagonals) -- A_min-NATIVE (part of the Lattice axiom, not a separate primitive/admission)  --  supplier named by KINETIC_ISOTROPY note is A_min itself
+  [PASS] A2 the clause is a TOPOLOGICAL adjacency statement: 6 axis offsets allowed, the 12 face + 8 body diagonal offsets FORBIDDEN  --  allowed=6 (axis), forbidden diagonals=20 (12 face + 8 body)
+  [PASS] A3 the Lattice axiom VERBATIM disavows metric content: 'does not supply a ... metric scale, lattice spacing, ... causal cone, ... or physical unit conversion' -> the clause that supplies adjacency cannot supply a spacing  --  the same axiom that gives the no-diagonal clause forbids reading a metric out of it
+
+==============================================================================
+BLOCK B -- ADJACENCY METRIC-BLINDNESS (decisive): the no-diagonal PROPERTY is invariant under every spacing ratio a_tau/a_s
+==============================================================================
+  [PASS] B1 the no-diagonal edge SET (topology: which offsets are edges) is IDENTICAL for a_tau/a_s = 1, 10, and 0.137  --  adjacency is the same set of 6 axis edges for every spacing ratio
+  [PASS] B2 the METRIC time-edge length moves with a_tau/a_s (1.0, 10.0, 0.137) while the topology is fixed -> spacing ratio is a FREE metric parameter  --  time-edge length: iso=1.0, stretch=10.0, squash=0.137
+  [PASS] B3 the no-diagonal adjacency predicate |dx|+|dy|+|dz| = 1 has free symbols {dx,dy,dz} ONLY -- a_tau, a_s do NOT appear; the spacing ratio is absent from the topology  --  predicate free symbols = ['dx', 'dy', 'dz']
+  [PASS] B4 => forbidding diagonal hops constrains a_tau/a_s NOT AT ALL: the spacing ratio a_tau/a_s remains FREE for every nearest-neighbor-only adjacency (adjacency metric-blindness, the mirror of SK-1's FORM blindness)  --  spacing_ratio=a_tau/a_s is unconstrained by the no-diagonal clause
+
+==============================================================================
+BLOCK C -- COUNT vs METRIC: 'one tick = one edge, Euclidean reach 1.000' is a COUNT in edge units (presupposes the edge AS the unit), not a metric
+==============================================================================
+  [PASS] C1 BFS reproduces the note: 6-NN one tick reaches 6 sites at graph-distance 1 (one HOP/edge); 26-NN reaches 26 sites (diagonals decouple the COUNT geometry)  --  6-NN d1 count=6, 26-NN d1 count=26
+  [PASS] C2 the HOP COUNT per tick is 1 for every temporal metric weight lambda (topological), while the METRIC reach = lambda varies -> 'Euclidean reach 1.000 edge' is a tautology of setting a_s = a_tau = 1, NOT a metric result  --  count=1 always; metric reach in edge units = {1.0: 1.0, 0.137: 0.137, 10.0: 10.0}
+  [PASS] C3 => the note's 'one tick = one edge' fixes the COUNT ratio (1 hop / tick), which is a_tau/a_s ONLY IF the time edge is ALREADY declared equal in metric length to the space edge -- i.e. it ASSUMES a_tau/a_s = 1, it does not DERIVE it  --  1 hop/tick is the conformal-CLASS count; the metric spacing is the free conformal factor
+
+==============================================================================
+BLOCK D -- the min-time-step note's OTHER inputs are NOT A_min-native: tick/edge time bridge = audited_renaming; c-normalization = SI admission
+==============================================================================
+  [PASS] D1 the min-time-step note's tick/time identification (record tick = the physical time coordinate, hence a_tau as a time edge) is AUDITED_RENAMING -- a naming bridge, NOT a retained A_min derivation; the note itself says the ratio closes 'only after that tick/time identification is accepted'  --  the a_tau/a_s = 1/v_front ratio is CONDITIONAL on an admitted (not derived) bridge
+  [PASS] D2 the c-normalization is the SI value c = 299792458 m/s (an external physical-unit conversion), NOT an A_min-native quantity; the note states it 'does not derive the emergent-Lorentz-to-physical-c bridge'  --  the Planck-time arithmetic a_tau = l_P/c rests on an admitted unit, not A_min
+  [PASS] D3 => the conditional Planck-time closure (a_tau = l_P/c = t_P) requires (i) the audited_renaming tick/time bridge and (ii) the SI c admission -- NEITHER is A_min-native; and the ratio it identifies is the metric-blind COUNT ratio, not a derived metric spacing  --  both load-bearing inputs are admitted, exactly the same admitted tick-edge tie
+
+==============================================================================
+BLOCK E -- VERDICT: does the no-diagonal clause CRACK a_tau/a_s?
+==============================================================================
+  [PASS] E1 the no-diagonal clause is ADJACENCY METRIC-BLIND: it is A_min-native but topological; forbidding diagonals leaves a_tau/a_s free (the mirror of SK-1's kinetic-FORM metric-blindness)  --  topology fixed for all ratios; predicate carries no a_tau,a_s
+  [PASS] E2 the only path from the clause to a_tau/a_s = 1 reads the topological COUNT (1 hop/tick) AS a metric spacing -- which requires the time edge to be DECLARED metric-equal to the space edge (an extra spacing datum), or the admitted tick/time bridge + SI c; NONE supplied by A_min + primitives  --  reading count as metric = the same mis-citation pattern (rule 5) SK-1 found
+  [PASS] E3 WALL STANDS: a_tau/a_s is NOT derivable from A_min + the four approved primitives via the no-diagonal clause. The clause supplies the CONFORMAL CLASS (one hop per tick, metric-blind); the metric spacing ratio (the conformal factor) is a SEPARATE datum no axiom/primitive supplies  --  N2b's metric residual a_tau needs a minimal spacing primitive (strictly weaker than C1)
+  [PASS] E4 CONSEQUENCE: the proposal set is CONFIRMED COMPLETE on this axis -- the a_tau residual needs a minimal SPACING primitive (one dimensionless number a_tau/a_s), strictly weaker than the C1 RP-DYN dynamics axiom and disjoint from kinetic_isotropy's FORM content and scale_reference's single anchor  --  no-diagonal lead exhausted: it is the conformal class, not the conformal factor
+
+==============================================================================
+TOTAL: PASS=17 FAIL=0
+==============================================================================
+FINDING (NODIAG): the no-diagonal clause named by KINETIC_ISOTROPY_NOTE as the spacing-ratio supplier is the Lattice axiom's nearest-neighbor cubic adjacency -- A_min-NATIVE, but a TOPOLOGICAL adjacency statement. The same Lattice axiom verbatim disavows 'metric scale, lattice spacing, ... causal cone'. The no-diagonal PROPERTY (which offsets are edges) is INVARIANT under every spacing ratio a_tau/a_s: the adjacency predicate |dx|+|dy|+|dz| = 1 contains no a_tau, a_s. Forbidding diagonal hops therefore constrains a_tau/a_s NOT AT ALL -- adjacency is METRIC-BLIND, the exact mirror of SK-1's kinetic-FORM metric-blindness. The min-time-step note's 'one tick = one edge, Euclidean reach 1.000 edge' is a COUNT in edge units that ASSUMES a_tau = a_s (a tautology of the unit), not a derivation; and its conditional Planck-time closure rests on an AUDITED_RENAMING tick/time bridge + the SI c = 299792458 m/s admission, NEITHER A_min-native. VERDICT: the no-diagonal clause supplies the CONFORMAL CLASS (one hop per tick) but NOT the conformal FACTOR (the metric spacing). WALL STANDS -- a_tau/a_s is NOT derivable from A_min + the four approved primitives. CONSEQUENCE: the proposal set is confirmed complete; the N2b metric residual a_tau needs a minimal SPACING primitive (one dimensionless a_tau/a_s), strictly weaker than C1.

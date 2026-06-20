@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py
+runner_sha256: ffe31f8af07c4acef8e963887da6fde49f04aae40fb2a56cd0c9f6542813fc5e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Hierarchy fixed-density physical selector no-go
+==============================================================================
+  [PASS] no-go note declares source-side negative route pruning
+  [PASS] no-go note forbids new axiom/status/readout injection
+  [PASS] fixed-density bridge supplies map but not endpoint selection
+  [PASS] EW coordinate bridge supplies coordinate but leaves endpoint selection open
+  [PASS] parent note still names endpoint-selection residual as open
+  [PASS] endpoint coefficients are positive
+         {'A2': 0.125, 'A4': 0.14285714285714285, 'Ainf': 0.14433756729740646}
+  [PASS] A2/A4 endpoint ratio equals 7/8
+         A2/A4=0.875000000000
+  [PASS] Ainf/A2 endpoint ratio equals 2/sqrt(3)
+         Ainf/A2=1.154700538379
+  [PASS] fixed-density bridge reproduces v4/v2=(A2/A4)^(1/4)
+         v4/v2=0.967168210134
+  [PASS] fixed-density bridge reproduces vinf/v2=(A2/Ainf)^(1/4)
+         vinf/v2=0.964678629960
+  [PASS] absolute-density scaling rescales all v_i by lambda
+         A2:3.700000000000, A4:3.700000000000, Ainf:3.700000000000
+  [PASS] absolute-density scaling leaves all endpoint ratios unchanged
+  [PASS] each endpoint can be normalized as reference without violating fixed-density algebra
+         A2->v_ref=1.0, A4->v_ref=1.0, Ainf->v_ref=1.0
+  [PASS] different endpoint references give distinct compatible readout triples
+         {'A2': (1.0, 0.967168210134, 0.96467862996), 'A4': (1.033946307914, 1.0, 0.997425907771), 'Ainf': (1.036614649628, 1.002580735279, 1.0)}
+  [PASS] no-go runner uses no observed electroweak target selector
+  [PASS] no-go note preserves future positive physical-selector routes
+  [PASS] no-go note targets the exact hierarchy audit blocker
+  [PASS] no-go discipline N1-N8 gate is visible
+
+SUMMARY: HIERARCHY FIXED-DENSITY SELECTOR NO-GO PASS=18 FAIL=0
+
+----- stderr -----
+

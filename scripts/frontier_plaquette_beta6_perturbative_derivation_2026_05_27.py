@@ -182,6 +182,32 @@ def test_source_boundary_manifest() -> None:
         "auditor's second repair option is source-locked",
     )
     check(
+        "note scopes row as non-downstream-licensed runner-local diagnostic only",
+        "## 2026-06-20 audit-boundary repair: non-downstream-licensed scoping" in body
+        and "non-downstream-licensed runner-local diagnostic only." in flat
+        and "No downstream row may cite this row as a retained or effective-bounded bridge or as a derivation" in flat,
+        "audit-named non-downstream-licensed scoping present; not a citeable bridge/derivation",
+    )
+    check(
+        "note records all four promotion authorities as unsupplied/open",
+        "named as required *for promotion* are explicitly **unsupplied / open** here" in flat
+        and "NSPT coefficient packet" in flat
+        and "beta=6 Wilson normalization" in flat
+        and "MC comparator" in flat
+        and "F2 comparator" in flat
+        and flat.count("is supplied (open)") >= 4
+        and "not promotable" in flat
+        and "not licensed as a citeable bridge/derivation" in flat,
+        "NSPT packet, beta=6 normalization, MC comparator, F2 comparator all open; row not promotable",
+    )
+    check(
+        "note keeps 0.5934 MC value fenced as comparator-only, never a proof input",
+        "0.5934" in body
+        and "never a proof input" in flat
+        and "no comparator number in this note is licensed for downstream reuse" in flat,
+        "MC value stays a fenced comparator, never a derivation/proof input",
+    )
+    check(
         "note blocks downstream reuse of admitted beta=6 inputs",
         "cannot cite this row for anything beyond the runner-local\ndiagnostic over the supplied packet" in body
         and "Downstream rows that need a beta=6 Wilson/Haar plaquette value" in body,

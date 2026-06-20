@@ -50,6 +50,18 @@ sector datum. This does not alter the conditional theorem here; it explains why
 the P-dep premise must either remain explicit or be supplied by a separate
 physical-readout/extensionality theorem.
 
+**2026-06-20 conditional-scoping repair.** Re-audit named the source-side
+alternative: "keep this row explicitly conditional on P-dep" (the other arm —
+deriving P-dep from retained Record/readout structure — is the open bridge and
+is deliberately **not** attempted here). The factorization claim **(B1)** is
+now tagged "conditional on P-dep" at the point of the claim itself, with the
+unconditional part (the no-cross-term split from Additivity, L1) separated from
+the P-dep-dependent part (each contribution a function of the registered datum,
+L2). No derived value or symbol identification is changed; B2's power-sum
+registrability and B3's flip-invariance are untouched (their P-dep dependence
+flows through B1). The runner's source-scope check H1 now additionally requires
+the B1-level conditional tag.
+
 ## Setting: the supplied readout context (G1 — all of it is input)
 
 The theorem is stated on a **supplied** readout context; the Record axiom
@@ -125,12 +137,15 @@ the explicit P-dep conditional premise. With `M(delta)` denoting the
 `M(delta) = {{ ([k], lambda_k(delta)) : k in Lambda }}` (`[k]` the `K`/CPT
 label orbit, so within-orbit order is erased by construction):
 
-> **(B1 — factorization / upper bound.)** Every Record-registrable scalar
+> **(B1 — factorization / upper bound, conditional on P-dep.)** Under the
+> explicit P-dep premise, every Record-registrable scalar
 > readout equals a sum of per-record contributions with no cross terms, each
 > contribution a function of `([k], lambda_k)`; hence every registrable
 > readout factors through `M(delta)`. Sector labels beyond their orbit —
 > in particular the order within the doublet orbit `{1, 2}` — are not
-> registrable.
+> registrable. (Additivity supplies the no-cross-term split L1
+> unconditionally; P-dep is what makes each contribution a function of the
+> registered datum L2 — without it B1 is not a factorization theorem.)
 >
 > **(B2 — exactness / lower bound.)** The power-sum readouts
 > `p_m = sum_k lambda_k(delta)^m` (`m = 1, 2, 3`) and the orbit-class

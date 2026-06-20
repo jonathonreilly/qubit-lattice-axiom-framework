@@ -1,6 +1,7 @@
 # The Mass-Side Strong-CP Phase Is Real on the Staggered Realization for Every Gauge Background: ε-Hermiticity Discharges the Determinant-Readout Bridge at the Bilinear Matter Level (Bounded Theorem)
 
-**Date:** 2026-06-11
+**Date:** 2026-06-11 (SU(3) seeded-background verifier added
+2026-06-18)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome, does not retire or re-grade any Tier-A
@@ -56,14 +57,15 @@ premise holds on the realization:
 
 - the gauge-dressed staggered operator satisfies
   `εD(U)ε = −D(U) = D(U)†` for **every** unitary link configuration —
-  verified on three U(1) and two SU(2) seeded backgrounds, and the hop
-  structure makes the argument gauge-group-independent (check 3);
+  verified on three U(1), two SU(2), and two SU(3) seeded backgrounds;
+  the hop structure makes the argument gauge-group-independent
+  (check 3);
 - the enumerated **ε-graded K-real** bilinear coupling classes preserve
   the premise:
   real site-diagonal taste/generation channels (`m₀I + m₁ε + c_με_μ` —
   including the hw=1↔hw=2 mixing classes) and anti-Hermitian
   h.c.-paired one-link taste channels (the gauge-covariant kinetic-class
-  dressing). Across 15 background × parameter combinations,
+  dressing). Across 21 background × parameter combinations,
   `det(D(U)+A)` is real to `|Im det|/|det| < 5×10⁻¹⁶` (checks 4–5).
 
 The exact classification (check 6): ε-**even** channels must be

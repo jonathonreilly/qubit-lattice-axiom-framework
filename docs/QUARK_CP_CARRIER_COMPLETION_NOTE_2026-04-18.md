@@ -34,6 +34,15 @@ this boundary as `audited_numerical_match`; after this source edit, independent
 re-audit owns the current status. The remaining structural gaps are recorded
 below in "What remains open (load-bearing gaps)".
 
+The companion
+`QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md` closes the
+small-correction reading negatively for the current completion: the shipped
+`xi_u`, `xi_d` pair is non-perturbative relative to the Schur `1-3` base, and
+small capped carriers on the parent slice do not recover the target `J`.
+That companion does not derive the carriers or promote this row; it removes
+the small-correction interpretation as a safe upgrade path for the current
+fit.
+
 A scope-narrowing companion already records the same boundary explicitly:
 `QUARK_CP_CARRIER_COMPLETION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`.
 A complementary reduced-closure attempt with fewer free parameters is in
@@ -175,14 +184,19 @@ none of which the present runner addresses:
    maps the imported observational values onto framework-defined readouts.
    The present note imports these values directly from atlas/observation
    conventions.
-4. **Derive a small-correction interpretation**, or accept that the
+4. **Small-correction route closed negatively for the current completion.**
+   `QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md` checks the exact
+   fitted-carrier ratios and a bounded capped-carrier parent-slice scan. The
    completion is non-perturbative relative to the Schur `1-3` base
-   (`|xi_u|/c13_u^{base} ~ 102`, `|xi_d|/c13_d^{base} ~ 6.6`) and is
-   therefore not a retained small correction but a bounded completion
-   ansatz of comparable magnitude to the base term.
+   (`|xi_u|/c13_u^{base} ~ 102`, `|xi_d|/c13_d^{base} ~ 6.6`) and should not
+   be read as a retained small correction. A future positive upgrade would need
+   a framework-native derivation of the non-perturbative carrier normalization
+   or a different first-principles carrier, not a reinterpretation of this
+   fitted pair as small.
 
-All four are theorem/derivation problems and are out of scope for this
-note. The note therefore stops at the bounded numerical-match claim and
+The first three items remain theorem/derivation problems and are out of scope
+for this note. The fourth item is now a negative boundary for the current
+completion. The note therefore stops at the bounded numerical-match claim and
 does not attempt to upgrade beyond it.
 
 ## Audit history

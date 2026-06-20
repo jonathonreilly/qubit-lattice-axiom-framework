@@ -1,20 +1,31 @@
 ===== runner cache v1 =====
 runner: scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
-runner_sha256: 1caf8f8d25f7a679ee19dc65519ac787260c08e933c8995b9da2697300a31655
+runner_sha256: 931705dba84979d3f45371a044b1caed6e6670a103cf7f84d4074b17330c74c0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 SM GSTAR I12 EMPIRICAL THERMAL COMPARATOR BRIDGE
-PASS: note contains boundary phrase: admitted empirical small-neutrino-mass observation
+PASS: note contains boundary phrase: Actual current-surface status:** conditional-support arithmetic over explicit
+PASS: note contains boundary phrase: Trace class:** upstream_support
+PASS: note contains boundary phrase: Proposal allowed:** false
+PASS: note contains boundary phrase: Bare retained allowed:** false
+PASS: note contains boundary phrase: 2026-06-18 Audit-Scope Repair
+PASS: note contains boundary phrase: the row to be narrowed to pure arithmetic over explicit declared comparator
+PASS: note contains boundary phrase: This source repair takes the second path
+PASS: note contains boundary phrase: None of these comparator premises is derived here
+PASS: note contains boundary phrase: not Tier-A admissions
+PASS: note contains boundary phrase: framework primitives
+PASS: note contains boundary phrase: conditional arithmetic over declared empirical m_nu and thermal-rate
+PASS: note contains boundary phrase: declared empirical small-neutrino-mass comparator
 PASS: note contains boundary phrase: Gamma_nuR ~ y_nu^2 T
 PASS: note contains boundary phrase: H ~ 1.66 sqrt(g_*) T^2 / M_Pl
 PASS: note contains boundary phrase: not a framework-native derivation
 PASS: note contains boundary phrase: does not derive small neutrino mass
 PASS: note contains boundary phrase: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
 PASS: note contains boundary phrase: `0.6 eV` edge remains more than three decades below it
-PASS: note contains boundary phrase: new axiom
+PASS: note contains boundary phrase: new approved framework primitive
 PASS: parent carries I12 phrase: empirical small `m_nu`
 PASS: parent carries I12 phrase: Gamma_nu_R  ~  y_nu^2  T
 PASS: parent carries I12 phrase: g_* = 106.75
@@ -33,9 +44,13 @@ PASS: 0.6 eV generous edge is more than three decades below threshold (3.54)
 PASS: thermalization at 100 GeV implies m_nu above 1 keV (2.063e+03 eV)
 PASS: thermalization at 100 GeV is above 0.6 eV comparator by > 1000x
 PASS: note does not claim audit-retained status
+PASS: note does not allow bare retained wording
+PASS: note marks the arithmetic as conditional-support
 PASS: note keeps small mnu derivation excluded
+PASS: note keeps thermal-rate derivation excluded
+PASS: downstream citation rule prevents retained authority use
 PASS: note denies new axiom
-TOTAL: PASS=28 FAIL=0
+TOTAL: PASS=43 FAIL=0
 VERDICT: bounded comparator bridge passes
 
 ----- stderr -----

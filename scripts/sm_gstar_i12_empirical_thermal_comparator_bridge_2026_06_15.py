@@ -57,14 +57,25 @@ def main() -> int:
     print("SM GSTAR I12 EMPIRICAL THERMAL COMPARATOR BRIDGE")
 
     required_note_phrases = [
-        "admitted empirical small-neutrino-mass observation",
+        "Actual current-surface status:** conditional-support arithmetic over explicit",
+        "Trace class:** upstream_support",
+        "Proposal allowed:** false",
+        "Bare retained allowed:** false",
+        "2026-06-18 Audit-Scope Repair",
+        "the row to be narrowed to pure arithmetic over explicit declared comparator",
+        "This source repair takes the second path",
+        "None of these comparator premises is derived here",
+        "not Tier-A admissions",
+        "framework primitives",
+        "conditional arithmetic over declared empirical m_nu and thermal-rate",
+        "declared empirical small-neutrino-mass comparator",
         "Gamma_nuR ~ y_nu^2 T",
         "H ~ 1.66 sqrt(g_*) T^2 / M_Pl",
         "not a framework-native derivation",
         "does not derive small neutrino mass",
         "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
         "`0.6 eV` edge remains more than three decades below it",
-        "new axiom",
+        "new approved framework primitive",
     ]
     for phrase in required_note_phrases:
         check(f"note contains boundary phrase: {phrase}", phrase in note)
@@ -109,7 +120,11 @@ def main() -> int:
 
     flat = " ".join(note.split())
     check("note does not claim audit-retained status", "audit-retained" not in flat)
+    check("note does not allow bare retained wording", "Bare retained allowed:** false" in note)
+    check("note marks the arithmetic as conditional-support", "conditional-support arithmetic" in flat)
     check("note keeps small mnu derivation excluded", "derive the small neutrino mass" in flat and "does **not**" in flat)
+    check("note keeps thermal-rate derivation excluded", "derive the Boltzmann collision operator" in flat and "does **not**" in flat)
+    check("downstream citation rule prevents retained authority use", "must not cite it as retained authority" in flat)
     check("note denies new axiom", "new axiom" in flat)
 
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

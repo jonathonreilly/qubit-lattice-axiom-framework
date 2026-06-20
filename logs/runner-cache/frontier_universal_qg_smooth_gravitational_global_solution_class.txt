@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_smooth_gravitational_global_solution_class.py
+runner_sha256: a25ecca962e0d2ad5d2a6b14071793d8d0c2eb0d478a55a6ed01f5edc8e861d9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+[EXACT] PASS: the route already has exact canonical textbook weak/measure closure, smooth local identification, finite-atlas smooth patching, and canonical refinement/projective closure
+    this theorem starts from the already-closed canonical weak/Gaussian object, the already-closed local/global smooth gravitational patching, and the already-closed refinement/projective closure
+[EXACT] PASS: the canonical time-slab exhaustion carries an exact projective Schur reduction of the smooth gravitational operator family
+    max Schur operator error=2.220e-16, max Schur source error=1.110e-16
+[EXACT] PASS: the stationary sections project exactly along the exhaustion
+    max stationary projection error=2.132e-13
+[EXACT] PASS: the Gaussian covariances project exactly along the exhaustion
+    max covariance projection error=6.133e-14
+[EXACT] PASS: the chartwise smooth representatives remain overlap-covariant on every exhaustion level
+    max chart stationary error=1.315e-13, max chart covariance error=6.750e-14
+[EXACT] PASS: the canonical textbook weak/Gaussian object therefore defines a smooth global weak gravitational stationary/Gaussian solution class on the chosen smooth realization
+    the exact local smooth gravitational object already patches on finite atlases and now closes as a projective global weak/Gaussian gravitational solution class along the canonical time-slab exhaustion
+UNIVERSAL QG SMOOTH GRAVITATIONAL GLOBAL SOLUTION CLASS
+==============================================================================
+slab dimensions                         = [30, 34, 38, 42]
+max Schur operator error                = 2.220e-16
+max Schur source error                  = 1.110e-16
+max stationary projection error         = 2.132e-13
+max covariance projection error         = 6.133e-14
+max chart stationary error              = 1.315e-13
+max chart covariance error              = 6.750e-14
+
+Verdict:
+The canonical textbook weak/Gaussian object of the direct-universal route already closes as a smooth global weak gravitational stationary/Gaussian solution class on the chosen smooth realization of PL S^3 x R.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=6 FAIL=0 TOTAL=6
+
+----- stderr -----
+

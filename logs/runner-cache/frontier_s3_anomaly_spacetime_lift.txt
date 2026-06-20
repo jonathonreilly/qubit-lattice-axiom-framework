@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_anomaly_spacetime_lift.py
+runner_sha256: 503b550c1796271c69dbf58618bab12cd4b96150de48f9294028929c961226bb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Route 2: S^3 + anomaly-forced time spacetime lift
+========================================================================
+  Candidate background: PL S^3 x R
+
+  [PASS] S^3 compactification support is present with bounded/conditional scope (boundary-link is retained-bounded, cap uniqueness is conditional, and the general-R note does not overclaim PL S^3 closure)
+  [PASS] Anomaly-forced time theorem is present with admission-inherited bounded scope (the route consumes d_t = 1 as a bounded kinematic input and preserves upstream admission inheritance)
+  [PASS] Atlas contains both ingredients as reusable tools (the atlas exposes the required topology/time primitives)
+  [PASS] Combined kinematic background is documented at the inherited weaker tier (PL S^3 x R is the documented route-2 background candidate, not a dynamics theorem)
+  [PASS] No exact dynamics bridge is present in the atlas (gap documented) (no exact S^3 -> curvature / anomaly -> Einstein-field theorem yet exists on main; gap is documented in the spacetime-lift note)
+
+Summary:
+  Kinematic lift: yes, at inherited bounded/conditional scope
+  Dynamical lift / GR closure: blocked
+  Missing theorem: exact dynamics bridge from PL S^3 x R to the metric law
+
+PASS=5 FAIL=0
+
+----- stderr -----
+

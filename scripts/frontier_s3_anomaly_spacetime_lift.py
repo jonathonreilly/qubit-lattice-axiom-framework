@@ -48,8 +48,14 @@ def main() -> int:
     atlas = first_existing([
         root / "docs" / "publication" / "ci3_z3" / "DERIVATION_ATLAS.md",
     ])
-    s3_note = first_existing([
+    s3_general_note = first_existing([
         docs / "S3_GENERAL_R_DERIVATION_NOTE.md",
+    ])
+    s3_boundary_note = first_existing([
+        docs / "S3_BOUNDARY_LINK_THEOREM_NOTE.md",
+    ])
+    s3_cap_note = first_existing([
+        docs / "S3_CAP_UNIQUENESS_NOTE.md",
     ])
     anomaly_note = first_existing([
         docs / "ANOMALY_FORCES_TIME_THEOREM.md",
@@ -59,7 +65,9 @@ def main() -> int:
     ])
 
     atlas_text = read_text(atlas)
-    s3_text = read_text(s3_note)
+    s3_general_text = read_text(s3_general_note)
+    s3_boundary_text = read_text(s3_boundary_note)
+    s3_cap_text = read_text(s3_cap_note)
     anomaly_text = read_text(anomaly_note)
     lift_text = read_text(lift_note)
 
@@ -69,15 +77,18 @@ def main() -> int:
     print()
 
     check(
-        "S^3 topology theorem is present and closed",
-        "PL homeomorphic to S^3" in s3_text or "Status:** CLOSED" in s3_text,
-        "S^3 compactification is already a retained topology tool",
+        "S^3 compactification support is present with bounded/conditional scope",
+        "retained_bounded" in lift_text
+        and "audited_conditional" in lift_text
+        and "No proof that the compactified lattice is `PL S^3`" in s3_general_text,
+        "boundary-link is retained-bounded, cap uniqueness is conditional, and the general-R note does not overclaim PL S^3 closure",
     )
     check(
-        "Anomaly-forced time theorem is present and exact",
-        "d_t = 1 uniquely" in anomaly_text
-        or "single-clock codimension-1 evolution excludes d_t > 1" in anomaly_text,
-        "single-clock closure is already a retained time tool",
+        "Anomaly-forced time theorem is present with admission-inherited bounded scope",
+        "d_t = 1" in anomaly_text
+        and "bounded_theorem" in anomaly_text
+        and "admission" in lift_text,
+        "the route consumes d_t = 1 as a bounded kinematic input and preserves upstream admission inheritance",
     )
     check(
         "Atlas contains both ingredients as reusable tools",
@@ -85,9 +96,9 @@ def main() -> int:
         "the atlas exposes the required topology/time primitives",
     )
     check(
-        "Combined kinematic background is admissible",
-        True,
-        "PL S^3 x R is the clean background candidate from the two exact inputs",
+        "Combined kinematic background is documented at the inherited weaker tier",
+        "PL S^3 x R" in lift_text and "kinematic background candidate" in lift_text,
+        "PL S^3 x R is the documented route-2 background candidate, not a dynamics theorem",
     )
     check(
         "No exact dynamics bridge is present in the atlas (gap documented)",
@@ -98,7 +109,7 @@ def main() -> int:
 
     print()
     print("Summary:")
-    print("  Kinematic lift: yes")
+    print("  Kinematic lift: yes, at inherited bounded/conditional scope")
     print("  Dynamical lift / GR closure: blocked")
     print("  Missing theorem: exact dynamics bridge from PL S^3 x R to the metric law")
     print()

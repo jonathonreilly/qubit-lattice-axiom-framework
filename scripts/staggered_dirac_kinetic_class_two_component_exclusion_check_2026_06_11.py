@@ -8,8 +8,8 @@ Narrow bounded theorem: on the Quantum + Lattice baseline (one qubit /
 Cl(3,0) operator algebra per site on Z^3) PLUS the substep-1
 matter-statistics clause (single-mode Grassmann partition: ONE pair
 (chi_x, chibar_x) per site on the dim-2 per-site Cl(3) module), the
-2-component naive-Dirac rival exhibited by realization-gate runner
-check 18 is EXCLUDED:
+self-contained 2-component naive-Dirac rival
+D_2c = sum_mu sigma_mu tensor nabla_mu is EXCLUDED:
 
   (i)   realizing the 2-component naive operator as a Grassmann
         quadratic form needs TWO Grassmann pairs per site (one per
@@ -36,9 +36,9 @@ check 18 is EXCLUDED:
         convention remain open and are printed as RESIDUAL lines
         below at the point where each is load-bearing.
 
-Consistency legs: the 2-component operator is rebuilt EXACTLY as
-realization-gate check 18 builds it (kernel dim 16 on the 4^3 torus,
-factorizing as 2 spinor components x 8 Z^3 corners) and the realized
+Consistency legs: the 2-component operator is built directly on the
+periodic 4^3 torus (kernel dim 16, factorizing as 2 spinor components
+x 8 Z^3 corners) and the realized
 one-component staggered operator is rebuilt from the extracted
 Kawamoto-Smit scalarization phases (kernel dim 8).  An explicit
 non-conflation guard records that the rival's 16 (= 2 x 2^3, a 3D
@@ -47,18 +47,21 @@ kernel dimension) and the hierarchy lane's exponent-16 surface
 NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_
 2026-05-10) are DIFFERENT surfaces; no bridge is computed or claimed.
 
-Deterministic, numpy only (matches the realization-gate runner's
-dependency profile), no network, no randomness, runtime well under one
-minute.  PASS/FAIL per check; final line: TOTAL: PASS=<n> FAIL=<m>;
+Deterministic, numpy only, no network, no randomness, runtime well under
+one minute.  PASS/FAIL per check; final line: TOTAL: PASS=<n> FAIL=<m>;
 exit 0 iff FAIL == 0.
 """
 
 import sys
+from pathlib import Path
+
 import numpy as np
 
 L = 4                     # box side (even, so corner momenta are exact)
 N = L ** 3                # number of sites
 TOL = 1e-9
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md"
 
 _pass = 0
 _fail = 0
@@ -183,7 +186,7 @@ def car_relations(cs, d):
 print("=" * 72)
 print("Staggered-Dirac kinetic class -- two-component rival exclusion")
 print("box: Z^3 torus, L =", L, "(periodic; same instantiation as the")
-print("realization-gate synthesis runner)")
+print("self-contained D_2c finite-torus construction)")
 print("=" * 72)
 
 # ===== [A] substep-1 single-mode per-site surface (the declared premise)
@@ -288,10 +291,10 @@ check(9, "NO-EMBEDDING OBSTRUCTION: any nonzero *-homomorphism "
          "into the per-site algebra exists", ok,
       "16 > 4 (per-site dims computed by checks 3 and 6)")
 
-# ===== [C] the rival of gate check 18, rebuilt + mode counting ==========
-print("\n--- [C] the 2-component naive rival (gate check 18), rebuilt")
+# ===== [C] the self-contained D_2c rival, rebuilt + mode counting ==========
+print("\n--- [C] the self-contained 2-component naive rival D_2c, rebuilt")
 
-# translations and central differences, exactly as the gate runner
+# translations and central differences for the self-contained D_2c operator
 Tmat = []
 for mu, e in enumerate(EMU):
     T = np.zeros((N, N))
@@ -305,9 +308,9 @@ Dnaive = sum(np.kron(SIG[mu], nabla[mu]) for mu in range(3))
 svn = np.linalg.svd(Dnaive, compute_uv=False)
 ker_naive = int(np.sum(svn < 1e-9))
 ok = (ker_naive == 16)
-check(10, "2-component naive operator rebuilt EXACTLY as realization-gate "
-          "check 18 (D = sum_mu sigma_mu kron nabla_mu on the 4^3 "
-          "torus): kernel dim = 16 by SVD", ok,
+check(10, "2-component naive operator built directly as self-contained "
+          "D_2c = sum_mu sigma_mu kron nabla_mu on the 4^3 torus: "
+          "kernel dim = 16 by SVD", ok,
       f"computed naive kernel dim = {ker_naive}, matrix {2 * N}x{2 * N}")
 
 ok = True
@@ -411,7 +414,8 @@ ok = scalar_ok and np.allclose(D, -D.T)
 check(15, "Kawamoto-Smit scalarization T(x)+ sigma_mu T(x+mu) = eta*I "
           f"re-extracted at all {N * 3} (site,mu) pairs and equal to "
           "the KS law; the realized one-component staggered operator D "
-          "is real antisymmetric (interface to gate checks 5-6, 11)",
+          "is real antisymmetric (same finite-torus convention as the "
+          "self-contained rival check)",
       ok, f"matrix {N}x{N}")
 
 svs = np.linalg.svd(D, compute_uv=False)
@@ -425,9 +429,8 @@ check(16, "realized staggered operator: kernel dim = 8 by SVD -- ONE "
       f"spectral gap to first nonzero sv = {gap:.4f}")
 residual("the boundary-holonomy convention (APBC vs PBC, wrap signs) is "
          "untouched by this note: the corner readings above are "
-         "computed in the periodic sector, exactly as in the "
-         "realization-gate runner (its check 19 exposes the APBC "
-         "residual).")
+         "computed in the periodic sector; APBC wrap signs remain an "
+         "external downstream convention residual.")
 
 ok = (dim_car1 == 4 and dim_car2 == 16 and ideal_ok and 16 > 4
       and ker_naive == 16 and all(c == 2 for c in per_site_counts)
@@ -440,8 +443,8 @@ check(17, "EXCLUSION COMPOSITION [theorem point (iii)]: the substep-1 "
           "escape (check 14); the realized one-component staggered "
           "operator needs exactly one pair per site and survives "
           "(check 16) -- so WITHIN Quantum + Lattice + the substep-1 "
-          "single-mode surface, the 2-component naive rival of "
-          "realization-gate check 18 is EXCLUDED", ok)
+          "single-mode surface, the self-contained 2-component naive "
+          "rival D_2c is EXCLUDED", ok)
 residual("this exclusion removes the NAMED rival only: "
          "non-nearest-neighbor kinetic operators, the flux-(+1) scalar "
          "class K0 of STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_"
@@ -465,11 +468,36 @@ print("WARNING (non-conflation, repeated on purpose): nothing in this "
       "runner affects the hierarchy exponent-16 surface; only the "
       "realization gate's kinetic-class residual is narrowed.")
 
+# ===== [E] source-edge dependency firewall ==================================
+print("\n--- [E] source-edge firewall: no realization-gate upstream dependency")
+
+note_text = NOTE.read_text(encoding="utf-8")
+note_norm = " ".join(note_text.split())
+forbidden_dependency_markers = [
+    "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)",
+    "- staggered_dirac_realization_gate_note_2026-05-03",
+]
+hits = [marker for marker in forbidden_dependency_markers if marker in note_text]
+check(19, "source-edge firewall: realization gate is absent from markdown/YAML "
+          "upstream dependencies", not hits,
+      "forbidden markers absent" if not hits else "; ".join(hits))
+
+required_boundary_phrases = [
+    "The broad realization gate is a downstream consumer of this narrow result, not a",
+    "The proof is self-contained on the finite rival operator reconstructed here",
+    "consumer/context only. Its check-18 rival is the same finite operator",
+    "self-contained 2-component naive rival `D_2c`",
+]
+missing = [phrase for phrase in required_boundary_phrases if phrase not in note_norm]
+check(20, "source-edge firewall: note states self-contained rival and downstream-only "
+          "gate role", not missing,
+      "all required boundary phrases present" if not missing else "; ".join(missing))
+
 # ----------------------------------------------------------------------
 print()
 print(f"TOTAL: PASS={_pass} FAIL={_fail}")
 if _fail == 0:
-    print("VERDICT: 2-component naive rival (realization-gate check 18)")
+    print("VERDICT: self-contained 2-component naive rival D_2c")
     print("         EXCLUDED within Quantum + Lattice + the substep-1")
     print("         single-mode surface (CAR dimension obstruction,")
     print("         computed); the kinetic-class residual NARROWS, it")

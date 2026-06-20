@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py
+runner_sha256: 8866f15862d269cd6818751d56f56953a18be695df3569fab0b836f5ef4cac1f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.45
+status: ok
+----- stdout -----
+==============================================================================
+SM GSTAR H_UNIT NEUTRAL/RADIAL ORBIT SUPPORT
+==============================================================================
+
+Part 1: source anchors and status scope
+[PASS] docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md exists
+[PASS] docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md exists
+[PASS] docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md exists
+[PASS] docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md exists
+[PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md exists
+[PASS] docs/audit/data/audit_ledger.json exists
+[PASS] support note contains section: Claim
+[PASS] support note contains section: Orbit And Radial Lemma
+[PASS] support note contains section: Relation To `H_unit`
+[PASS] support note contains section: Consequence For The `g_*` Higgs-Sector Row
+[PASS] support note contains section: What This Closes
+[PASS] support note contains section: What This Does Not Close
+[PASS] support note contains section: Review Boundary Certificate
+[PASS] SM finite inventory premise is retained_bounded
+[PASS] downstream gstar row is not promoted by this branch
+[PASS] Ward H_unit theorem is retained_bounded support
+[PASS] EW one-doublet bookkeeping is retained
+[PASS] H_unit no-go remains audit-lane scoped
+
+Part 2: nonzero supplied doublet gauges to the neutral ray
+[PASS] sample 1: U is unitary: [[ 0.+0.j -1.-0.j]
+ [ 1.-0.j  0.-0.j]]
+[PASS] sample 1: det(U)=1: (1+0j)
+[PASS] sample 1: U H = (0,rho): [0.+0.j 1.+0.j]
+[PASS] sample 1: H^dag H invariant
+[PASS] sample 2: U is unitary: [[ 1.+0.j -0.-0.j]
+ [ 0.-0.j  1.-0.j]]
+[PASS] sample 2: det(U)=1: (1+0j)
+[PASS] sample 2: U H = (0,rho): [0.+0.j 2.+0.j]
+[PASS] sample 2: H^dag H invariant
+[PASS] sample 3: U is unitary: [[-0.79471941+0.13245324j -0.26490647-0.52981294j]
+ [ 0.26490647-0.52981294j -0.79471941-0.13245324j]]
+[PASS] sample 3: det(U)=1: (1.0000000000000002-2.148542216246389e-17j)
+[PASS] sample 3: U H = (0,rho): [0.        +0.j 3.77491722+0.j]
+[PASS] sample 3: H^dag H invariant
+[PASS] sample 4: U is unitary: [[ 0.86066297-0.43033148j  0.0860663 -0.25819889j]
+ [-0.0860663 -0.25819889j  0.86066297+0.43033148j]]
+[PASS] sample 4: det(U)=1: (1+1.2594923403361585e-17j)
+[PASS] sample 4: U H = (0,rho): [1.11022302e-16+2.22044605e-16j 2.90473751e+00+0.00000000e+00j]
+[PASS] sample 4: H^dag H invariant
+[PASS] neutral representative is Q-neutral: Matrix([[0], [0]])
+[PASS] upper representative has Q-charge +1
+
+Part 3: radial carrier is one direction inside a four-real-component field
+[PASS] C^2 has four real components
+[PASS] fixed-norm nonzero doublet orbit has S^3 dimension three
+[PASS] radial plus orbit dimensions recover four
+[PASS] radial carrier alone is not the full doublet
+[PASS] a second independent doublet would add four real scalar dof
+[PASS] rho^2 depends on all four real components: [2*h1r, 2*h1i, 2*h2r, 2*h2i]
+
+Part 4: H_unit scalar support does not derive the fundamental doublet
+[PASS] H_unit has unit Hilbert-Schmidt norm on Q_L
+[PASS] H_unit commutes with SU(2)_L generator 1
+[PASS] H_unit commutes with SU(2)_L generator 2
+[PASS] H_unit commutes with SU(2)_L generator 3
+[PASS] fundamental generator stack has no invariant vector
+[PASS] Hom_SU(2)(trivial,fundamental) dimension is zero
+
+Part 5: gstar census boundary
+[PASS] single supplied doublet gives g_* = 427/4: 427/4
+[PASS] second independent doublet gives g_* = 443/4: 443/4
+[PASS] second independent doublet shift is +4: 4
+[PASS] radial support does not add a second doublet
+
+Part 6: note and downstream firewall checks
+[PASS] support note firewall phrase present: does not derive the one-complex `SU(2)_L` EWSB thermal doublet from
+[PASS] support note firewall phrase present: does not promote the `g_*` Higgs-sector row
+[PASS] support note firewall phrase present: does not introduce a new axiom
+[PASS] support note firewall phrase present: retained-bounded declared-inventory premise
+[PASS] support note firewall phrase present: neutral/radial carrier
+[PASS] support note firewall phrase present: not field-content authority
+[PASS] downstream gstar note cites this support note
+[PASS] downstream citation keeps support-only scope
+[PASS] no-go note remains compatible with support route
+[PASS] forbidden overclaim absent: **Status:** retained
+[PASS] forbidden overclaim absent: proposed_retained
+[PASS] forbidden overclaim absent: promoted to retained
+[PASS] forbidden overclaim absent: fully derives the doublet
+[PASS] forbidden overclaim absent: field-content authority from H_unit
+
+wrote outputs/sm_gstar_hunit_neutral_radial_orbit_support_2026-06-18.json
+SUMMARY: PASS=67 FAIL=0
+
+----- stderr -----
+

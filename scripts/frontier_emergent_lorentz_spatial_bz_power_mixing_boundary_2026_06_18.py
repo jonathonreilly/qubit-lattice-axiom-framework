@@ -125,6 +125,16 @@ def main() -> int:
 
     print("\nPART 5: source-boundary guards")
     check(
+        "source note declares canonical bounded theorem metadata",
+        "**Type:** bounded_theorem" in note_text
+        and "**Claim type:** bounded_theorem" in note_text,
+    )
+    check(
+        "source note keeps exact-support boundary out of audit status",
+        "bounded theorem / exact support boundary" in note_flat
+        and "does not derive the one-loop coefficient" in note_flat,
+    )
+    check(
         "source note names parent as trace target without markdown back-edge",
         "`EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`" in note_text
         and "](EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md)" not in note_text,

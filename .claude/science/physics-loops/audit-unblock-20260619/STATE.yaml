@@ -1,0 +1,71 @@
+loop_slug: audit-unblock-20260619
+block: 114
+mode: campaign
+date: "2026-06-20"
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block114-20260620
+branch: physics-loop/audit-unblock-block114-20260620
+base_ref: origin/main
+base_commit: 570889a63370fdc9ab5ce6913feb603ece01bba5
+target_claim_id: emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18
+target_status: bounded source-side repair
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: false
+repo_lock:
+  mode: degraded_branch_local
+  status_command: python3 scripts/automation_lock.py status
+  failure: "[Errno 13] Permission denied: '/Users/jonreilly'"
+claim_row_after_pipeline:
+  claim_type: bounded_theorem
+  claim_type_author_hint_raw: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  criticality: leaf
+  load_bearing_score: 2.5
+  direct_in_degree: 1
+  transitive_descendants: 3
+  audit_queue_index: 1105
+  audit_queue_ready: true
+source_repair:
+  note_claim_type_before: default_positive_from_exact_support_hint
+  note_claim_type_after: bounded_theorem
+  note_type_before: exact_support
+  note_type_after: bounded_theorem
+  runner_checks_added: "note declares canonical bounded metadata and exact-support boundary"
+verification:
+  py_compile: pass
+  target_runner: "TOTAL: PASS=14 FAIL=0"
+  pipeline: pass
+  precompute_audit_runners: "1 ok, 0 nonzero_exit"
+  audit_packet_script_deps: pass
+  strict_audit_lint: "139 notices, 0 errors"
+  git_diff_check: pass
+review_loop:
+  disposition: "PASS WITH BOUNDED CLAIMS"
+  iterations: 1
+  subagents: "not spawned; local review-loop checks applied"
+  no_audit_verdicts_applied: true
+  audit_loop_run: false
+hashes:
+  note_sha256: 1501fb365c9ca54f7092333bfceda9ab0560107f91e305096f7fbc77a9522294
+  runner_sha256: bd4972d7b762bfab18e1046072e68009002d5f277868544281258a392a412af2
+  runner_cache_sha256: ea3992408c8d2ac3f0cb49339102cc8b4fcdd7f18ba2e89850a0aea10b37bf04
+  audit_ledger_sha256: 1cc738df3193e0adc08fb51c704496b54f9da9959917528e78a477262d9c6bad
+  audit_queue_sha256: 070149b6173846941ed1bf7dcd74cd596a727f70c489367ea660007ad35afeac
+  audit_packet_script_deps_txt_sha256: 2f8abbd6fa899f80d86f2488583b0040f1806f1a944a65a3ad2bfd4ed3b28cc0
+  audit_packet_script_deps_json_sha256: d9661ae4354b5f9521bcceac75255c0dd85a10fbcc0e6e3084fd5d3640c457c5
+pr:
+  status: pending
+  number: null
+  url: null
+  head_commit: null
+  base: main
+  head: physics-loop/audit-unblock-block114-20260620
+  mergeable: null
+  status_checks: null
+next_exact_action: "Commit Block114, push the branch, open the review PR, patch the PR URL into this packet, then refresh the opportunity queue from current origin/main and start Block115."

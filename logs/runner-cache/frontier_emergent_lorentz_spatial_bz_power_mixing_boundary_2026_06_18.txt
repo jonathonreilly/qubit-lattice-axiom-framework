@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py
+runner_sha256: bd4972d7b762bfab18e1046072e68009002d5f277868544281258a392a412af2
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
 ========================================================================================
 Spatial-BZ power-mixing boundary: spatial-only scalar channel
 ========================================================================================
@@ -20,11 +28,16 @@ PASS: projected four-dimensional channel has equal spatial coefficients -- Matri
 PASS: the theorem fixes the support channel, not the physical coefficient -- delta c_t = 0, delta c_s = lambda remains an open coefficient
 
 PART 5: source-boundary guards
+PASS: source note declares canonical bounded theorem metadata
+PASS: source note keeps exact-support boundary out of audit status
 PASS: source note names parent as trace target without markdown back-edge
 PASS: parent note records spatial-BZ channel addendum
 PASS: source note keeps coefficient, gamma, and LV sufficiency open
 
 ========================================================================================
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=14 FAIL=0
 ========================================================================================
 VERDICT: exact support for a spatial-only O_h-scalar marginal mixing channel; one-loop coefficient/gamma/LV sufficiency remain open.
+
+----- stderr -----
+

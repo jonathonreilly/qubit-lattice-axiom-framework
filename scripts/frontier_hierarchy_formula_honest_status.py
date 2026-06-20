@@ -95,6 +95,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = REPO_ROOT / "docs" / "HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md"
 KINETIC_PRIMITIVE_PATH = REPO_ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+B3_STAGGERED_SUPPLIER = REPO_ROOT / "docs" / "HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md"
 AXIOM_PREMISE_NODES = REPO_ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -529,7 +530,8 @@ def section_b():
                if not (REPO_ROOT / "docs" / l).exists()
                and not (REPO_ROOT / l).exists()]
     check("B", "all markdown-linked note citations resolve on disk",
-          not missing and len(set(links)) == 5,
+          not missing and len(set(links)) == 6
+          and B3_STAGGERED_SUPPLIER.exists(),
           f"links = {sorted(set(links))}" if not missing
           else f"missing: {missing}")
 

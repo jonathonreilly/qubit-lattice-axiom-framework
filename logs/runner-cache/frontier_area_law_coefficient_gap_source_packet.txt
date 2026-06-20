@@ -1,0 +1,98 @@
+===== runner cache v1 =====
+runner: scripts/frontier_area_law_coefficient_gap_source_packet.py
+runner_sha256: f9305cda294378d9b008adbcda133d34b44a997518f27007f4cc83f219e69d10
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+AREA-LAW COEFFICIENT-GAP SOURCE PACKET
+==============================================================================
+
+Question: is the coefficient-gap synthesis now runner-backed enough
+for independent re-audit without pretending that the CAR/CIP
+premise is already retained?
+
+[PASS] source note title is present: # Area-Law Coefficient Gap Audit
+[PASS] primary runner metadata names this verifier: Primary runner: `scripts/frontier_area_law_coefficient_gap_source_packet.py`
+[PASS] primary cache metadata names this verifier output: logs/runner-cache/frontier_area_law_coefficient_gap_source_packet.txt
+[PASS] note keeps ledger authority firewall: independent audit lane remains
+[PASS] note states this packet is not an audit verdict: does not assign an audit verdict
+[PASS] primitive action trace is exactly 1/4: 4/16=1/4
+[PASS] simple-fiber Widom ceiling is exactly 1/6: 2/12=1/6
+[PASS] quarter target requires average crossing count three: 3/12=1/4
+[PASS] parity-gated tangent channel supplies the missing 1/12: 1/6+1/12=1/4
+[PASS] PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md exists: docs/PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md
+[PASS] PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md cited by coefficient-gap note: PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md
+[PASS] PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md exists: docs/PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md
+[PASS] PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md cited by coefficient-gap note: PLANCK_BOUNDARY_DENSITY_EXTENSION_THEOREM_NOTE_2026-04-24.md
+[PASS] AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md exists: docs/AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md
+[PASS] AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md cited by coefficient-gap note: AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md
+[PASS] AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md exists: docs/AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md
+[PASS] AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md cited by coefficient-gap note: AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md
+[PASS] AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md exists: docs/AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md
+[PASS] AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md cited by coefficient-gap note: AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md
+[PASS] AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md exists: docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md
+[PASS] AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md cited by coefficient-gap note: AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md
+[PASS] BH_ENTROPY_DERIVED_NOTE.md exists: docs/BH_ENTROPY_DERIVED_NOTE.md
+[PASS] BH_ENTROPY_DERIVED_NOTE.md cited by coefficient-gap note: BH_ENTROPY_DERIVED_NOTE.md
+[PASS] BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md exists: docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md
+[PASS] BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md cited by coefficient-gap note: BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md
+[PASS] BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md exists: docs/BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md
+[PASS] BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md cited by coefficient-gap note: BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md
+[PASS] HOLOGRAPHIC_PROBE_NOTE_2026-04-11.md exists: docs/HOLOGRAPHIC_PROBE_NOTE_2026-04-11.md
+[PASS] HOLOGRAPHIC_PROBE_NOTE_2026-04-11.md cited by coefficient-gap note: HOLOGRAPHIC_PROBE_NOTE_2026-04-11.md
+[PASS] negative half of archived load-bearing step is explicit: existing free-fermion / Dirac-sea diagnostics do
+not derive the Planck `1/4` coefficient
+[PASS] positive half of archived load-bearing step is explicit: two-orbital CAR / Laplacian-gated edge carrier
+[PASS] CIP is named as the remaining premise: (CIP)  P_A H_cell
+[PASS] note does not derive action-side 1/4 locally: derive the action-side `c_cell = 1/4` here
+[PASS] note does not derive CIP from the minimal axiom surface alone: derive (CIP) from the minimal axiom surface alone
+[PASS] source packet does not close cited conditional rows: close any of the cited audit_conditional rows
+[PASS] scripts/frontier_area_law_quarter_broader_no_go.py exists: scripts/frontier_area_law_quarter_broader_no_go.py
+[PASS] logs/runner-cache/frontier_area_law_quarter_broader_no_go.txt exists: logs/runner-cache/frontier_area_law_quarter_broader_no_go.txt
+[PASS] scripts/frontier_area_law_quarter_broader_no_go.py cache names same runner: scripts/frontier_area_law_quarter_broader_no_go.py
+[PASS] scripts/frontier_area_law_quarter_broader_no_go.py cache status ok: ok
+[PASS] scripts/frontier_area_law_quarter_broader_no_go.py cache exit code zero: 0
+[PASS] scripts/frontier_area_law_quarter_broader_no_go.py cache sha is fresh: cache=7eb1bbf87b2b1f2657e5d591d8053351bd492d1740a92cd8fb3a6d5b39660cf4
+[PASS] scripts/frontier_area_law_quarter_broader_no_go.py summary has expected pass count: PASS=24 FAIL=0
+[PASS] scripts/frontier_area_law_quarter_broader_no_go.py verdict boundary is present: simple-fiber Widom class cannot deliver c_inf = 1/4
+[PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py exists: scripts/frontier_area_law_primitive_parity_gate_carrier.py
+[PASS] logs/runner-cache/frontier_area_law_primitive_parity_gate_carrier.txt exists: logs/runner-cache/frontier_area_law_primitive_parity_gate_carrier.txt
+[PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache names same runner: scripts/frontier_area_law_primitive_parity_gate_carrier.py
+[PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache status ok: ok
+[PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache exit code zero: 0
+[PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py cache sha is fresh: cache=e15939581f2ba67de0db9f8feaa8e13210d2260338c77fd01b23f53e56e65a24
+[PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py summary has expected pass count: PASS=40 FAIL=0
+[PASS] scripts/frontier_area_law_primitive_parity_gate_carrier.py verdict boundary is present: conditional
+positive carrier
+[PASS] scripts/frontier_area_law_primitive_car_edge_identification.py exists: scripts/frontier_area_law_primitive_car_edge_identification.py
+[PASS] logs/runner-cache/frontier_area_law_primitive_car_edge_identification.txt exists: logs/runner-cache/frontier_area_law_primitive_car_edge_identification.txt
+[PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache names same runner: scripts/frontier_area_law_primitive_car_edge_identification.py
+[PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache status ok: ok
+[PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache exit code zero: 0
+[PASS] scripts/frontier_area_law_primitive_car_edge_identification.py cache sha is fresh: cache=8c28cbebc939bd1151ec1af1cd53b0ef8ac041ac2e413a92c652cbcf2c72b6d1
+[PASS] scripts/frontier_area_law_primitive_car_edge_identification.py summary has expected pass count: PASS=36 FAIL=0
+[PASS] scripts/frontier_area_law_primitive_car_edge_identification.py verdict boundary is present: remaining
+status question
+[PASS] scripts/frontier_area_law_native_car_semantics_tightening.py exists: scripts/frontier_area_law_native_car_semantics_tightening.py
+[PASS] logs/runner-cache/frontier_area_law_native_car_semantics_tightening.txt exists: logs/runner-cache/frontier_area_law_native_car_semantics_tightening.txt
+[PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache names same runner: scripts/frontier_area_law_native_car_semantics_tightening.py
+[PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache status ok: ok
+[PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache exit code zero: 0
+[PASS] scripts/frontier_area_law_native_car_semantics_tightening.py cache sha is fresh: cache=0681ceb6bd12e0cc0a533b43a53889ad943f991ca8e5787eebcd41fcda13ccc6
+[PASS] scripts/frontier_area_law_native_car_semantics_tightening.py summary has expected pass count: PASS=23 FAIL=0
+[PASS] scripts/frontier_area_law_native_car_semantics_tightening.py verdict boundary is present: rank four alone is
+underdetermined
+
+==============================================================================
+SUMMARY: PASS=67 FAIL=0
+==============================================================================
+
+Verdict: bounded source-packet support. The synthesis is runner-backed
+and re-auditable, but the rank-four CAR/CIP premise remains explicit;
+this runner does not assign an audit verdict or retained status.
+
+----- stderr -----
+

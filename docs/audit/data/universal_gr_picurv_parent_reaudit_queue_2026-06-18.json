@@ -1,0 +1,37 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
+    "docs/UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "PR #4313 discussion as evidence",
+    "prior assistant discussion",
+    "prior audit verdicts as evidence",
+    "generated audit queue output as evidence"
+  ],
+  "generated_date": "2026-06-18",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "universal_gr_picurv_parent_reaudit",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Fresh-context review target: does UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md supply the route-exhaustion gate requested for UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes?",
+          "claim_id": "universal_gr_polarization_frame_bundle_blocker_note",
+          "current_audit_status": "unaudited",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "unaudited",
+          "note_path": "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

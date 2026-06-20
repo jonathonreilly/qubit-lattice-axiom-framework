@@ -57,6 +57,26 @@ surface is changed by this source-side repair.
 This note now claims the exact finite frame-orbit support result, not a
 universal impossibility theorem.
 
+## 2026-06-18 source-side route-exhaustion repair pointer
+
+The source-side repair packet
+`UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md` adds the
+route-exhaustion gate that this older packet did not contain. It
+does not change audit status, does not retag this row, and does not claim a
+framework-level GR closure. Its narrower role is to separate:
+
+- the exact finite frame-delta/orbit witness already in this packet;
+- the exact A1 and Casimir/block projectors already present elsewhere;
+- supplied-atlas or supplied-action positive GR routes; and
+- the still-missing full `Pi_curv` object on the current direct-universal
+  `PL S^3 x R` surface.
+
+The repair note is therefore compatible with later positive channel/projector
+work: it is a current-stack no-go for deriving full `Pi_curv` without an
+additional distinguished connection, TT-reduction, source-coupling law, or
+supplied geometric action/atlas input. Independent audit remains the authority
+on whether that new packet satisfies the conditional row's re-audit request.
+
 The current axiom-first stack gives:
 
 - an exact scalar observable generator from the observable principle

@@ -11,37 +11,48 @@ deadline_epoch: 1782006241          # 2026-06-20 21:44 EDT
 worktree: /Users/jonBridger/tp-audit-bridge-20260620
 base_commit: 9469e8251
 
-cycle_count: 0
-block_count: 0
-active_block: 01
-active_block_branch: physics-loop/single-clock-baxis-wall-block01-20260620
+cycle_count: 1
+block_count: 1
+active_block: 02
+active_block_branch: physics-loop/single-clock-baxis-wall-block02-20260620
+block01_result: >
+  CLOSED. 4 genuine fresh attempts, 91 PASS / 0 FAIL, NO CRACK. R-N5-IRR walled
+  (T̂² maximally factorized, factors not gauge → needs (L_s−1)-param admission ray);
+  R-N4-REGDIR relocated to record-production open gate; R-N2b-JOINT walled (exact
+  1-param gauge a_τ→c·a_τ, ratio-only, malformed rescaling moves count 0.50);
+  R-N4-AUT walled (every A_min enrichment S₄-isotropic OR trivial symmetric
+  non-selecting W-break; only E7 BC datum one-axis-selecting, S₄-transportable +
+  outside A_min). Review: passed_with_notes (3 fixes folded in). Commit 1384247ea.
+  PR backlogged (GitHub auth down). N1 ≥5-route + N7 steelman now honestly closed.
 active_route: >
-  Block 01 = DEEP WORK / FRESH ATTEMPTS. Genuinely attack the never-attempted
-  positive routes before any no-go consolidation: R-N5-IRR (T̂² irreducibility),
-  R-N4-REGDIR (derived non-transportable registration-direction bridge),
-  R-N2b-JOINT (joint rate-gate clock unit), R-N4-AUT (non-W automorphism steelman).
+  Block 02 = author the UNIFIED B-AXIS obstruction note (N2/N4/N5) absorbing all
+  in-flight runners + block01 results, WITH the per-clause N1-N8 No-Go Discipline
+  Gate included, one consolidated verification runner (recompute headline facts;
+  source discipline — no blind cite of conditional parent), CLAIM_STATUS_CERTIFICATE_block02.
 hard_residual_being_attacked: >
-  Whether ANY axis-selector / second-clock-exclusion / clock-unit is derivable
-  from A_min once the never-attempted record-production-dynamics routes are tried.
+  Consolidating the three named walls into one citable retained_no_go-grade
+  obstruction note that passes N1-N8 on its own surface.
 
 revised_block_plan:
-  - block01: DEEP WORK fresh attempts (R-N5-IRR, R-N4-REGDIR, R-N2b-JOINT, R-N4-AUT) → honest outcomes; pivot if any cracks
-  - block02: unified obstruction note skeleton + N4 core (absorb S4/W/transport runners, pruned-supplier table, sharpened pin)
-  - block03: N2 (N2a/N2b split) + N5 (factor-boundary countermodel + admission inventory) absorbed
-  - block04: per-clause N1-N8 No-Go Discipline Gate incorporating block01 results → makes note shippable
-  - block05: consumer-firewall widening (triage ~950 descendants, extend runner, repoint citations)
-  - block06: owner/audit packaging (B-AXIS premise-node proposal, opportunity rows, source-narrowing decision, submit to audit lane)
+  - block01: DONE — DEEP WORK fresh attempts (no crack; 91 PASS)
+  - block02: unified obstruction note (N2/N4/N5) + per-clause N1-N8 gate + consolidated runner
+  - block03: consumer-firewall widening (triage ~959 descendants, extend runner, repoint citations to unified note)
+  - block04: owner/audit packaging (B-AXIS premise-node proposal, opportunity rows, source-narrowing decision) + final report
+  # N1-N8 folded into block02 (the no-go note must carry its own discipline gate); blocks compressed 6→4
 
-files_touched: []
+files_touched:
+  - docs/SINGLE_CLOCK_BAXIS_FRESH_ATTEMPTS_STRETCH_NOTE_2026-06-20.md
+  - scripts/single_clock_{n5_irreducibility,registration_direction_bridge_n4_regdir,n2b_joint_clock_unit,n4_aut_enrichment_stabilizer}_2026_06_20.py
 open_imports: []
-no_go_routes_pruned: see NO_GO_LEDGER.md (15 routes already pruned in-flight)
+no_go_routes_pruned: see NO_GO_LEDGER.md (15 in-flight + 4 block01 fresh attempts)
 trace_gate_class: negative_route_pruning (target_claim_id = single_clock keystone; target_blocker = B-AXIS premise edge)
-review_disposition: n/a (no artifact yet)
-pr_status: none
+review_disposition: block01 = passed_with_notes (fixed)
+pr_status: block01 committed 1384247ea, PR backlogged (auth) — see PR_BACKLOG.md
 
 next_exact_action: >
-  Launch block01 fresh-attempts workflow (4 routes in parallel, distinct files),
-  synthesize honest outcomes, commit + push + PR, run review-loop, checkpoint.
+  Launch block02 unified-note workflow (parallel section authors: N4 core, N2,
+  N5, non-vacuity+relocation+cert-index, N1-N8 gate; synthesis assembles note +
+  consolidated runner). Commit, review, checkpoint, proceed to firewall block03.
 stop_condition: >
-  runtime/deadline reached, or all 6 blocks closed with PRs, or a fresh route
-  in block01 cracks the wall (pivot to closure campaign).
+  runtime/deadline (~21:44 EDT) reached, or all 4 blocks closed, or a crack
+  pivots the campaign (none in block01).

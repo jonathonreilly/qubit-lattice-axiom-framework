@@ -31,4 +31,15 @@ gh pr create --base main --head physics-loop/single-clock-baxis-wall-block01-202
   --body-file .claude/science/physics-loops/single-clock-baxis-wall/PR_BODY_block01.md
 ```
 
+## Block 02 — unified B-AXIS obstruction no_go note (stacked on block01)  ✅ committed (see git log)
+
+```bash
+cd "/Users/jonBridger/tp-audit-bridge-20260620"
+git push -u origin physics-loop/single-clock-baxis-wall-block02-20260620
+gh pr create --base physics-loop/single-clock-baxis-wall-block01-20260620 \
+  --head physics-loop/single-clock-baxis-wall-block02-20260620 \
+  --title "[physics-loop] single-clock-baxis-wall block02: unified B-AXIS obstruction no_go note (consolidated, N1-N8 PASS)" \
+  --body-file .claude/science/physics-loops/single-clock-baxis-wall/PR_BODY_block02.md
+```
+
 (Subsequent blocks appended below as they close.)

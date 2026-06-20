@@ -1,0 +1,51 @@
+============================================================================
+UNIFIED B-AXIS OBSTRUCTION -- consolidated verification runner (2026-06-20)
+A_min = Lattice + Quantum + Record only; no new axiom/primitive.
+============================================================================
+
+=== [N4] axis-label: S_4-transitivity of the bare surface ===
+[PASS] N4-W: signed exchange conjugates staggered hop to itself (even block) :: resid 0.00e+00
+[PASS] N4-W: W is orthogonal (W W^T = I) :: resid 0.00e+00
+[PASS] N4-S4: adjacent exchanges (0,1),(1,2),(2,3) preserve hop => S_4 transitive :: orbit [0, 1, 2, 3]
+[PASS] N4-S4c: bare (unsigned) non-adjacent (0<->2) swap does NOT preserve hop :: resid 27.713 (expected ~28-32, clearly nonzero)
+[PASS] N4-S4c: composed signed (0<->2) = W01.W12.W01 DOES preserve hop (resid ~0) :: resid 0.00e+00
+[PASS] N4-S4c: composed signed 3-cycle (0 1 2) = W01.W12 preserves hop (resid ~0) :: resid 0.00e+00
+[PASS] N4-S4c: composed signed 4-cycle (0 1 2 3) = W01.W12.W23 preserves hop (resid ~0) :: resid 0.00e+00
+[PASS] N4-S4c: COMPUTED S_4-transitivity -- full orbit reached by composition (not imported) :: bare02 27.713 vs comp02 0.00e+00
+[PASS] N4-E2: cubic Laplacian enrichment is broken by the signed W (W-break is genuine) :: Laplacian break resid 2.26e+01
+[PASS] N4-E2: plain swap keeps Laplacian but breaks the staggered hop :: keepLap 0.00e+00, breakHop 1.13e+01
+[PASS] N4-BC: W maps APBC-tau hop onto APBC-x1 hop (BC datum is transportable) :: resid 0.00e+00
+[PASS] N4-BC: asymmetric APBC-tau breaks W (a genuine one-axis selector) :: break resid 8.00e+00
+
+=== [N5] no-second-clock: maximal factorization of supplied T_hat^2 ===
+[PASS] N5-SURF: T_hat^2 = exp(-2 a_tau H_hat) (Stone identity) :: resid 3.14e-17
+[PASS] N5-SURF: per-mode factor generators commute pairwise :: max comm resid 0.00e+00
+[PASS] N5-SURF: generator span dim = L_s (maximal factorization, not 1 orbit) :: rank 3 (L_s=3)
+[PASS] N5-GAUGE: n_0 escapes span{I, H_hat} (factor flow not gauge) :: best-fit resid 1.319
+
+=== [N2] N2a forced denominator + N2b joint-rescale gauge ===
+[PASS] N2a: 1/(2 a_tau) reconstruction recovers H (FORCED, exact-support) :: resid 0.00e+00
+[PASS] N2a: 1/a_tau denominator is the factor-two falsifier (H_wrong = 2 H) :: resid 0.00e+00
+[PASS] N2b: joint a_tau->c a_tau, H->H/c, Q->Q/c is an exact 1-param gauge :: max Delta over c in {0.5,1.3,2,5} = 2.37e-16
+[PASS] N2b: dimensionless datum (gap * a_tau) is c-invariant (ratio-only) :: r0 0.630000, rc 0.630000
+[PASS] N2b: malformed rescaling (a_tau scaled, Q not) MOVES the record datum :: move 1.567
+
+=== [SRC] source-discipline + forbidden-file guards ===
+[PASS] SRC: unified note file exists :: /Users/jonBridger/tp-audit-bridge-20260620/docs/SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md
+[PASS] SRC: note carries an explicit source-discipline statement
+[PASS] SRC: note disclaims load-bearing edge to the conditional parent keystone
+[PASS] SRC: note disclaims load-bearing edge to the unaudited finite-speed cone note
+[PASS] SRC: note disclaims load-bearing edge to the downstream ANOMALY_FORCES_TIME consumer
+[PASS] SRC: ANOMALY_FORCES_TIME never used as a derivation authority :: violations 0
+[PASS] SRC: note states B_AXIS_DERIVED = FALSE
+[PASS] SRC: unified note is NOT written under any forbidden audit/publication path :: docs/SINGLE_CLOCK_BAXIS_OBSTRUCTION_UNIFIED_NO_GO_NOTE_2026-06-20.md
+
+=== [SCOPE] even-extent only (odd-L falsifier) ===
+[PASS] SCOPE: even block (4,4,4,4) -- W preserves hop (resid 0) :: resid 0.00e+00
+[PASS] SCOPE: odd block (3,3,3,3) -- W FAILS (odd-L falsifier, resid > 1) :: resid 6.000
+[PASS] SCOPE: even/odd asymmetry confirms exact-zeros are even-extent only
+
+============================================================================
+TOTAL: PASS=32 FAIL=0
+============================================================================
+RESULT: B-AXIS (N2b/N4/N5) headline obstruction facts RECOMPUTED in-tree; source-discipline + even-extent scope checks clear. No status set; independent audit lane is the sole status authority.

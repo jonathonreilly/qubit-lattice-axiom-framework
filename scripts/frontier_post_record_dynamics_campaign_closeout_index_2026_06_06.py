@@ -66,6 +66,14 @@ def read_rel(path: str) -> str:
 def index_checks() -> None:
     section("Closeout index checks")
     text = read_rel("docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md")
+    report("index declares meta Type metadata", "**Type:** meta" in text)
+    report("index declares meta Claim type metadata", "**Claim type:** meta" in text)
+    report(
+        "index status says bookkeeping only",
+        "meta / closeout index for campaign bookkeeping only" in text
+        and "does not derive a physics theorem" in text
+        and "does not derive a new physics result" in text,
+    )
     report("six PR stack entries are expected", len(STACK) == 6)
     for item in STACK:
         report(f"index contains PR #{item.number}", f"/pull/{item.number}" in text)

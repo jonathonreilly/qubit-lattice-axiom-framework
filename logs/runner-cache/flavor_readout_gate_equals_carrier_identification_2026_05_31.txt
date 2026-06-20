@@ -1,11 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py
-runner_sha256: 10e7bace1fd61ce979bff78fac5f2c45f809c1f582f207f3e5f9d9cfda6c4497
+runner_sha256: a0e76cdb69462cecb7ed90396ce696770b0ed1d72b933edadf965b8b2215fafa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
+[PASS] S1 note is explicitly open_gate, not bounded_theorem
+[PASS] S2 note forbids retained-derivation use
+[PASS] S3 note registers primary runner and cached output
+[PASS] S4 source repair states the remaining premise is still open
 [PASS] A1 eig(C|R^3) = {1, omega, omega^2} and det(I-C) = 0  =>  [111] is a FIXED LINE, not isolated
        eig(C)=[-0.5-0.866j -0.5+0.866j  1. +0.j   ]; det(I-C)=0.00e+00
 [PASS] A2 isolated-fixed-point Atiyah-Bott lives on the TRANSVERSE doublet: det(1-dg|doublet)=(1-w)(1-w^2)=3
@@ -21,13 +25,13 @@ status: ok
 [PASS] D1 A2 admits BOTH: extensive sum L*(2/9) (quasi-local, A2-compatible) AND intensive 2/9; A2 selects NEITHER
        L=5: extensive=1.1111, intensive=0.2222; the carrier choice (R^3 vs lattice) IS the gate
 
-SCORECARD PASS=7 FAIL=0
-VERDICT: gate_is_identification_bridge_relabeled. No identification-independent forcing of 2/9
-as THE observable exists in framework baseline+retained. The readout gate = the generation-carrier
-identification (open_gate lepton_brannen_bae_delta_two_ninths) = the zero-section pick of
-retained_no_go koide_q_delta_residual_cohomology_obstruction. THREE apparent gates collapse to
-ONE, pinned precisely. New verified negative: J_cs is silent on r (the Q-setting parameter), so
-the Schur-forced complex structure does NOT select det_C over det_R as the Koide readout.
+SCORECARD PASS=11 FAIL=0
+VERDICT: open_gate_support. No identification-independent forcing of 2/9
+as THE observable exists in framework baseline+retained. The readout gate, generation-carrier
+identification, and zero-section pick are one remaining physical carrier/basepoint premise,
+not three independently closed theorems. New verified negative: J_cs is silent on r
+(the Q-setting parameter), so the Schur-forced complex structure does NOT select det_C
+over det_R as the Koide readout.
 Provenance (verified vs origin/main 2026-05-31): open_gate lepton_brannen_bae_delta_two_ninths;
 retained_no_go koide_q_delta_residual_cohomology_obstruction; retained_bounded koide_z3_
 equivariant_anticommuting_no_go. No load-bearing on unaudited closure_c_staggered_dirac_gate /

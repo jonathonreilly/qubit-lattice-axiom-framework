@@ -367,6 +367,27 @@ class BuildCitationGraphParserTest(unittest.TestCase):
             m.REPO_ROOT = original
         self.assertEqual(helpers, {"gate_b_connectivity_tolerance", "plain_helper"})
 
+    def test_load_frontier_dynamic_filename_is_detected(self):
+        # Gravity/quark shell runners load helpers through
+        # `_frontier_loader.load_frontier(...)`; the audit packet must include
+        # those helper sources even though they are not static imports.
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("dynamic_helper", "value = 6\n")
+            self._write("kw_dynamic_helper", "value = 7\n")
+            primary = self._write(
+                "primary",
+                "from _frontier_loader import load_frontier\n"
+                "mod = load_frontier('dyn', 'dynamic_helper.py')\n"
+                "mod2 = load_frontier('kw', filename='kw_dynamic_helper.py')\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"dynamic_helper", "kw_dynamic_helper"})
+
 
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):

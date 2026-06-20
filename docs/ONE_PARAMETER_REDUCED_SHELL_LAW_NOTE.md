@@ -12,7 +12,7 @@ reduced-shell surface** — given the five imported helper modules
 coarse_grained_exterior_law, sewing_shell_source,
 radial_shell_matching_law; all wrapped via
 ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md
-in PR #1520), the seven star-support point-Green columns reproduce
+as a helper-wrapper registry only in PR #1520), the seven star-support point-Green columns reproduce
 the exact reduced one-parameter law
 `sigma_red(Q) = Q · (k_rad + c_aniso · m_orb)` with
 `c_aniso = 0.081435402995901`, and the two exact source families
@@ -191,7 +191,7 @@ Open registration targets (class D gaps):
 The five class-D registration targets now have a citeable one-hop
 authority via the bounded umbrella wrapper added 2026-05-17:
 
-- [ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md](ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) — bounded umbrella wrapper documenting the five frontier helper modules above (exterior projector / source-family constructors / coarse-grained exterior law / sewing-shell projection / radial DtN kernel) so the citation graph carries an explicit one-hop edge.
+- [ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md](ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) — bounded umbrella wrapper documenting the five frontier helper modules above (exterior projector / source-family constructors / coarse-grained exterior law / sewing-shell projection / radial DtN kernel) as a helper-wrapper registry only, so the citation graph carries an explicit one-hop edge without treating the wrapper as a helper derivation.
 
 The runner-checked content of this note (seven point-Green columns
 carrying unit total charge to machine precision; identical radial
@@ -241,7 +241,7 @@ cite-chain pattern used by the
 ## 2026-06-16 audit-packet helper-source repair
 
 The post-audit blocker on this row became narrower after the bounded
-umbrella wrapper was retained: the remaining mechanical issue was that
+umbrella wrapper was added and explicitly scoped: the remaining mechanical issue was that
 the audit packet dependency resolver exposed only `_frontier_loader.py`
 for this runner, so the restricted packet still treated the five
 frontier helper modules as opaque dynamic imports.

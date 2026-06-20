@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_one_parameter_reduced_shell_law.py
-runner_sha256: 36ac3194345224fdf5d9ddb2a31249ce801c08c852fc316945da651faa77bab6
+runner_sha256: b4d910b15b6d23e40322ada3f35a5ed06abd5dfef5f0fe122bf11fb50ef0eca5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.09
+elapsed_sec: 1.95
 status: ok
 ----- stdout -----
 Exact one-parameter reduced sewing-shell law
@@ -29,11 +29,23 @@ max family-vs-reference c_aniso difference = 4.163e-17
     radial=5.551e-16, orbit=1.804e-16, shell=2.602e-18, aniso=1.952e-18, c_diff=4.163e-17
 [BOUNDED] PASS: on the reduced surface the sewing-shell law behaves like one isotropic shell density plus one cubic shear mode tied to total charge
     c_aniso = 0.081435402995901
+[BOUNDARY] PASS: umbrella source note contains citation firewall marker: 'Citation/use firewall (2026-06-18)'
+[BOUNDARY] PASS: umbrella source note contains citation firewall marker: 'helper-wrapper registry'
+[BOUNDARY] PASS: umbrella source note contains citation firewall marker: 'one-hop dependency handle'
+[BOUNDARY] PASS: umbrella source note contains citation firewall marker: 'may not be used as:'
+[BOUNDARY] PASS: umbrella source note contains citation firewall marker: 'independent audit remains responsible for any effective-status movement'
+[BOUNDARY] PASS: umbrella source note avoids status-promotion phrase: 'wrapper was retained'
+[BOUNDARY] PASS: umbrella source note avoids status-promotion phrase: 'This wrapper is retained'
+[BOUNDARY] PASS: umbrella source note avoids status-promotion phrase: 'retained helper wrapper'
+[BOUNDARY] PASS: all direct umbrella citations are qualified as helper-wrapper / one-hop registry uses
+    docs/ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md, docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md
+[BOUNDARY] PASS: direct umbrella citations avoid helper-derivation and status-promotion language
+    docs/ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md, docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md
 
 ========================================================================
 SUMMARY
 ========================================================================
-PASS=7 FAIL=0 TOTAL=7
+PASS=17 FAIL=0 TOTAL=17
 All checks passed.
 
 ----- stderr -----

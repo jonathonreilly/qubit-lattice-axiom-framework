@@ -4,6 +4,7 @@
 narrowed 2026-05-25); repaired 2026-06-10 (re-scoped to the transfer-map
 kernel theorem; numerical-match structure removed)
 **Type:** bounded_theorem
+**Claim type:** bounded_theorem
 **Claim scope:** A kernel theorem (K1)-(K5), quantified over the whole
 admissible domain `D = [0.085, 0.130]`, about the `alpha_s` transfer map
 `T : alpha_s(v) -> alpha_s(M_Z)` defined by the declared imports below.
@@ -184,7 +185,7 @@ Two falsification legs show the theorem has teeth:
 ## What the runner checks (test -> claim map)
 
 `scripts/frontier_qcd_low_energy_running_bridge.py`, deterministic,
-runs in about a second, `SUMMARY: PASS=27 FAIL=0`. Every check is tagged:
+runs in about a second, `SUMMARY: PASS=28 FAIL=0`. Every check is tagged:
 
 | Part | Checks | Class | Claim leg |
 |------|--------|-------|-----------|
@@ -194,10 +195,10 @@ runs in about a second, `SUMMARY: PASS=27 FAIL=0`. Every check is tagged:
 | 4 | 5 | A | (K3) exact `T_1` Jacobian identity; `T_2` grid monotonicity; grid-secanted expansivity with center Jacobian `J_2 = 1.328`; center inverse round-trip |
 | 5 | 2 | A | (K4) single-parameter and joint 5% auxiliary variations `< 3.1e-6` |
 | 6 | 4 | A | (K5) envelope `+5.7e-4`; derived threshold bracket; threshold-removal and sign-flip falsification legs |
-| 7 | 3 | B | note/runner manifest sync (same `L`, same domain, same scales; boundary value confined to appendix) |
+| 7 | 4 | B | note/runner manifest sync (canonical metadata, same `L`, same domain, same scales; boundary value confined to appendix) |
 | 8 | 2 | D | labeled PDG comparator appendix (below) — **not load-bearing** |
 
-Check-class mix: **A=22, B=3, D=2**. The class-D comparators are a
+Check-class mix: **A=22, B=4, D=2**. The class-D comparators are a
 labeled minority; the previous revision's majority-load-bearing PDG
 comparisons (0 C-passes, 8 D-passes) are gone. No class-C
 (first-principles-from-axioms) claim is made anywhere: this is a bounded

@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/lattice_3d_inverse_square_kernel_helper_fidelity_2026_06_17.py
+runner_sha256: 9c8f40f82f0db8c9bccea907a0b5b390286c5d670730d90a9416d848b5710f58
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+3D inverse-square helper implementation-fidelity verifier
+========================================================================
+PASS: note names implementation-fidelity packet
+PASS: note preserves wrapper-only boundary
+PASS: note links verifier runner
+PASS: note links verifier cache
+PASS: scripts/lattice_3d_inverse_square_kernel.py defines barrier_metrics
+PASS: scripts/lattice_3d_inverse_square_kernel.py exposes callable barrier_metrics
+PASS: scripts/lattice_3d_inverse_square_kernel.py defines build_family
+PASS: scripts/lattice_3d_inverse_square_kernel.py exposes callable build_family
+PASS: scripts/lattice_3d_inverse_square_kernel.py defines fit_power
+PASS: scripts/lattice_3d_inverse_square_kernel.py exposes callable fit_power
+PASS: scripts/lattice_3d_inverse_square_kernel.py defines make_field
+PASS: scripts/lattice_3d_inverse_square_kernel.py exposes callable make_field
+PASS: scripts/lattice_3d_inverse_square_kernel.py defines no_barrier_distance
+PASS: scripts/lattice_3d_inverse_square_kernel.py exposes callable no_barrier_distance
+PASS: scripts/lattice_3d_inverse_square_kernel.py defines propagate_inverse_square
+PASS: scripts/lattice_3d_inverse_square_kernel.py exposes callable propagate_inverse_square
+PASS: scripts/lattice_3d_inverse_square_kernel.py constant PHYS_L -- live=12.0
+PASS: scripts/lattice_3d_inverse_square_kernel.py constant PHYS_W -- live=6.0
+PASS: scripts/lattice_3d_inverse_square_kernel.py constant PHYS_CONNECTIVITY -- live=3.0
+PASS: scripts/lattice_3d_inverse_square_kernel.py constant STRENGTH -- live=5e-05
+PASS: scripts/lattice_3d_inverse_square_kernel.py constant MASS_Z_VALUES -- live=[2.0, 3.0, 4.0, 5.0, 6.0, 7.0]
+PASS: scripts/lattice_3d_inverse_square_kernel.py constant H_VALUES -- live=[1.0, 0.5]
+PASS: scripts/lattice_3d_inverse_square_kernel.py constant SLITS_PHYS -- live=[(2.0, 0.0), (-2.0, 0.0), (0.0, 1.0)]
+PASS: propagator uses inverse-square free-kernel attenuation
+PASS: propagator preserves spent-delay action form
+PASS: source helper uses declared finite field regularization
+PASS: build_family h=1.0 uses width-6 geometry -- nl=13, hw=6, span=3, det=169
+PASS: build_family h=1.0 declares three slit indices
+PASS: build_family h=1.0 blocks barrier except slits -- blocked=166, barrier=169, slits=3
+PASS: fit_power recovers exact inverse-square exponent on synthetic data -- slope=-2.000000000000, r2=1.000000000000
+PASS: main runner cache records runner path -- runner=scripts/lattice_3d_inverse_square_kernel.py
+PASS: main runner cache exits zero -- exit_code=0
+PASS: main runner cache status ok -- status=ok
+PASS: main runner cache sha matches source -- cache=9172beafd55bf6360b287081d646b044345f9d508f564bbb901eb7956a075591, live=9172beafd55bf6360b287081d646b044345f9d508f564bbb901eb7956a075591
+PASS: main runner cache contains '3D INVERSE-SQUARE KERNEL BRANCH'
+PASS: main runner cache contains 'New propagator branch: same 3D ordered family, same spent-delay action, kernel w/L^2.'
+PASS: main runner cache contains 'h=1.0'
+PASS: main runner cache contains 'h=0.5'
+PASS: main runner cache contains 'fit=b^(0.25)'
+PASS: main runner cache contains 'keep it isolated'
+========================================================================
+TOTAL: PASS=40 FAIL=0
+Implementation-fidelity packet is complete; audit/review owns status movement.
+
+----- stderr -----
+

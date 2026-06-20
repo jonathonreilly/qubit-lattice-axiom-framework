@@ -60,12 +60,12 @@ hashes:
   audit_packet_script_deps_txt_sha256: 554f28cac7a950b6f7f48698275366914534cce504cc35d32239c793e7dd2d97
   audit_packet_script_deps_json_sha256: dafa7a1b37220a58535798c708b254db90b06fe5b25976f6b2f3620494597b69
 pr:
-  status: pending
-  number: null
-  url: null
-  head_commit: null
+  status: open
+  number: 4485
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4485
+  head_commit: d8c921d00149c5c40b483b5c4aa56649f6a4b871
   base: main
   head: physics-loop/audit-unblock-block115-20260620
-  mergeable: null
-  status_checks: null
+  mergeable: MERGEABLE
+  status_checks: "audit-lane/audit_pipeline queued at PR creation"
 next_exact_action: "Commit Block115, push the branch, open the review PR, patch the PR URL into this packet, then refresh the opportunity queue from current origin/main and continue."

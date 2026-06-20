@@ -1,0 +1,27 @@
+GAUGE FACTOR-LOCAL SELECTOR NORMALIZER THEOREM
+========================================================================
+[PASS] local factor-preserving span has dimension 12 = 8 + 3 + 1
+       rank(local)=12
+[PASS] cross-factor tensors have dimension 24
+       rank(cross)=24
+[PASS] local plus cross spans full u(6), dimension 36
+       rank(local+cross)=36; rank(u6)=36
+[PASS] factor-algebra preservation constraints have nullity 12 inside u(6)
+       constraint_rank=24; nullity=12
+[PASS] every local generator preserves both factor observable algebras
+       max residual=1.855e-15
+[PASS] every nonzero su(3) x su(2) cross tensor fails factor-algebra preservation
+       minimum cross residual=4.000e+00
+[PASS] local factor-preserving span is Lie closed
+       max Lie residual=1.351e-15
+[PASS] su(3) x I_2 and I_3 x su(2) commute inside the selected local span
+       max commutator norm=0.000e+00
+[PASS] source-note firewall present: does **not** supply that physical bridge
+[PASS] source-note firewall present: It does not derive why gauge generators must preserve the factor observable
+[PASS] source-note firewall present: It does not derive chiral `su(2)_L`
+[PASS] source-note firewall present: It does not update audit ledgers
+[PASS] source note names parent as trace target without markdown back-edge
+[PASS] parent note records the factor-local normalizer addendum
+========================================================================
+SCORECARD PASS=14 FAIL=0
+VERDICT (exact-support boundary): on the supplied C^3 x C^2 carrier, factor-observable preservation has the unique 12-dimensional normalizer su(3)+su(2)+u(1). The 24 cross tensors are precisely the nonlocal complement to full u(6). This proves the finite algebra once a factor-local rule is supplied; it does not derive MR_color, the rule's physical source, chiral su(2)_L, or any audit status.

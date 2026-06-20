@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_delta0_b4_current_bank_alpha_attachment_no_go_2026_06_18.py
+runner_sha256: 2316fd370bee8635a37b3ea3600cd799971df67234b0d9adf81a6998cf62328e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.35
+status: ok
+----- stdout -----
+
+================================================================================
+Current-bank partition
+================================================================================
+  [PASS][A] K1-K8 aggregate candidate count is 91  (total=91)
+  [PASS][A] genuine candidate-readout rows total 50  (readout_total=50)
+  [PASS][A] supplier/no-mechanism rows total 41  (supplier_total=41)
+  [PASS][A] every alpha-bearing current-bank row is non-mechanistic  (K2 IR-slope dressing grid:supplier_chain_grid, K5 alpha_bare scalar row:supplier_chain_identity)
+  [PASS][A] every genuine readout block has alpha exponent zero  (K1 determinant/share readouts, K3 Matsubara density readouts, K4 static-potential screening shares, K5 plaquette-action genuine rows, K6 equal-share mode-sum ratios, K7 threshold screening exponentials, K8 per-taste BZ log-det shares)
+  [PASS][A] the bank still contains alpha-bearing supplier rows  (K2 grid plus K5 alpha_bare scalar row)
+
+================================================================================
+Factor-signature firewall
+================================================================================
+  [PASS][B] alpha_s has signature (1, -2)  (Signature(alpha_exp=1, u0_exp=-2))
+  [PASS][B] sixteen-taste missing transport has signature (16, -32)  (Signature(alpha_exp=16, u0_exp=-32))
+  [PASS][B] universal invariant: genuine-readout products keep alpha exponent zero
+  [PASS][B] sampled finite readout closure has only alpha exponent zero  (sample_size=1)
+  [PASS][B] alpha_s is absent from genuine-readout closure
+  [PASS][B] alpha_s^16 is absent from genuine-readout closure
+  [PASS][B] reaching nonzero alpha exponent requires supplier-chain rows  (K2 IR-slope dressing grid, K5 alpha_bare scalar row)
+  [PASS][B] sixteen-taste target would require sixteen alpha-bearing supplier insertions  (alpha exponent=16)
+
+================================================================================
+Source markers and boundary discipline
+================================================================================
+  [PASS][C] new note contains marker: **Claim type:** no_go
+  [PASS][C] new note contains marker: **Claim-strength label:** exact current-bank no-go theorem
+  [PASS][C] new note contains marker: does not edit the audit ledger
+  [PASS][C] new note contains marker: does not supply that positive attachment theorem
+  [PASS][C] new note contains marker: genuine readout mechanisms with alpha exponent zero
+  [PASS][C] new note contains marker: alpha-bearing supplier-chain identities with no readout mechanism
+  [PASS][C] new note contains marker: ## No-Go Discipline Gate
+  [PASS][C] new note contains marker: N1 -- alternative route enumeration
+  [PASS][C] new note contains marker: N2 -- wall independence
+  [PASS][C] new note contains marker: N3 -- hidden-wall scan
+  [PASS][C] new note contains marker: N4 -- residual matching
+  [PASS][C] new note contains marker: N5 -- rhetoric audit
+  [PASS][C] new note contains marker: N6 -- partial-closure path scan
+  [PASS][C] new note contains marker: N7 -- steelman
+  [PASS][C] new note contains marker: N8 -- cross-cycle echo
+  [PASS][C] new note contains marker: Gate result: PASS for the narrowed current-bank no-go
+  [PASS][C] new note contains marker: outside-K1-K8
+  [PASS][C] new note contains marker: a new axiom
+  [PASS][C] new note omits forbidden overclaim: This note closes the DELTA0 hierarchy gate
+  [PASS][C] new note omits forbidden overclaim: This is a global B4 no-go
+  [PASS][C] new note omits forbidden overclaim: audit verdict: retained
+  [PASS][C] new note omits forbidden overclaim: effective status is retained
+  [PASS][C] new note omits forbidden overclaim: hierarchy formula closure is proved
+  [PASS][C] parent gate contains context marker: named gap: B4 attachment-observable identification
+  [PASS][C] parent gate contains context marker: not a shipped global no-go
+  [PASS][C] parent gate contains context marker: Surviving routes run through beyond-mean-field link fluctuations
+  [PASS][C] parent gate contains context marker: current-bank alpha-attachment no-go
+  [PASS][D] enumeration source contains marker: 91 candidate rows
+  [PASS][D] enumeration source contains marker: NO candidate READOUT lands in the window with a
+  [PASS][D] enumeration source contains marker: DEFINITIONAL cells with zero mechanism content
+  [PASS][D] enumeration source contains marker: not among the K1-K8 declared readouts
+  [PASS][D] S1-prime source contains marker: ONLY the **observable identification** remains
+  [PASS][D] S1-prime source contains marker: attaching MULTIPLICATIVELY per decoupling in the ratio-normalized partition function
+  [PASS][D] S1-prime source contains marker: one factor `alpha_s = alpha_bare/u_0^2
+  [PASS][D] ratio-normalized source contains marker: one factor `alpha_s` per taste decoupling
+  [PASS][D] ratio-normalized source contains marker: the `alpha_s` PER-DECOUPLING ATTACHMENT rule
+  [PASS][D] ratio-normalized source contains marker: UNSUPPLIED
+
+CLASS_COUNTS: {'A': 6, 'B': 8, 'C': 27, 'D': 10}
+VERDICT: hierarchy DELTA0 B4 current-bank alpha-attachment no-go checks pass.
+TOTAL: PASS=51, FAIL=0
+
+----- stderr -----
+

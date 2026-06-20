@@ -1,11 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_taste_cube_cyclic_source_descent.py
-runner_sha256: 01ed6f3189c0015169b45d2749d31bc9ff451c05e0784472abcc70360a6ca08f
+runner_sha256: 39050828c5a799c046ed6608f2cccb73390990984c723d1db949a19eeac1ac8a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
+========================================================================================
+PART 0: source-boundary guard for the finite descent theorem
+========================================================================================
+  [PASS] No broad realization-gate source slug remains in the finite descent note  (the broad gate is context only, not a proof input)
+  [PASS] The note states the finite C^8 source boundary at top level
+  [PASS] The note names the load-bearing finite objects reconstructed by this runner
 ========================================================================================
 PART 1: full-cube C_3 averaging descends exactly to the same T_1 projector
 ========================================================================================
@@ -47,7 +53,7 @@ Interpretation:
   to derive the microscopic full-cube source law for those channels, and
   then the selector law that would put them on the Koide cone.
 
-PASS=16 FAIL=0
+PASS=19 FAIL=0
 
 ----- stderr -----
 

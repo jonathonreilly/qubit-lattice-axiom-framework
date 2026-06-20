@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_formal_ratio_repair.py
-runner_sha256: 14cacf71bf8e627de6a09a1dcba030861ace633741c308de7815a6e5d6092afd
+runner_sha256: 14e239fc14dfb417f14d9be3427f26986be72a406c3195e6d5efb173954bc0c4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 Koide Q-delta formal ratio repair
@@ -48,8 +48,8 @@ Direct citation firewall
   [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:30 citation avoids forbidden authority language
   [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:659 citation is explicitly formal/open/contextual
   [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:659 citation avoids forbidden authority language
-  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md:21 citation is explicitly formal/open/contextual
-  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md:21 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md:29 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md:29 citation avoids forbidden authority language
   [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md:34 citation is explicitly formal/open/contextual
   [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md:34 citation avoids forbidden authority language
   [PASS] docs/KOIDE_DELTA_DIMENSIONLESS_CLOSURE_VIA_V8_THEOREM_NOTE_2026-04-29.md:24 citation is explicitly formal/open/contextual

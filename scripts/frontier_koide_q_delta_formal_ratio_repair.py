@@ -90,6 +90,8 @@ def is_source_scan_path(path: Path) -> bool:
         return False
     if rel_s.startswith("docs/audit/"):
         return False
+    if rel_s == "docs/repo/FRONT_DOOR_STATUS.md":
+        return False
     if rel.name == "KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md":
         return False
     if rel_s.startswith("docs/publication/ci3_z3/") and rel.name.endswith("_EFFECTIVE_STATUS.md"):

@@ -1,0 +1,59 @@
+loop_slug: audit-unblock-20260619
+block: 96
+updated_utc: "2026-06-20T15:40:00Z"
+branch: physics-loop/audit-unblock-block96-20260620
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block96-20260620
+base_ref: origin/main
+base_commit: 2d4619ca4
+mode: campaign
+user_boundary: "Do not run audit-loop or apply audit verdicts; produce source-side repair branches and PR-ready packets only."
+lock:
+  mode: degraded_branch_local
+  automation_lock_status: "failed"
+  automation_lock_error: "[Errno 13] Permission denied: '/Users/jonreilly'"
+active_route:
+  title: Post-record supplied orientation bridge source boundary
+  trace_class: direct_blocker_closure
+  reachability_to_target: partially_closes
+  target_claim_id: post_record_supplied_orientation_bridge_interface_2026-06-06
+  blocker_source: audit_ledger
+  blocker_text: "Source note declared a supplied exact-support interface but carried a methodology / positive theorem claim-type hint, so the row was previously audited as positive_theorem."
+files_changed:
+  source_notes:
+    - docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md
+  runner_caches:
+    - logs/runner-cache/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.txt
+    - logs/runner-cache/audit_packet_script_deps.txt
+  pipeline_generated: true
+  pipeline_generated_note: "Current-main pipeline again invalidated hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18 because a dependency weakened; no manual verdict was applied."
+verification:
+  py_compile: "target runner -> pass"
+  direct_runner: "SUMMARY: PASS=37 FAIL=0"
+  precompute: "ok=1 nonzero_exit=0 timeout=0 error=0 missing=0"
+  packet_deps: "pending helper-import claims 356 / 1442"
+  pipeline: "bash docs/audit/scripts/run_pipeline.sh -> complete; total pending 1556; ready 74"
+  strict_lint: "python3 docs/audit/scripts/audit_lint.py --strict -> OK, 139 notices, no errors"
+post_pipeline_row:
+  claim_id: post_record_supplied_orientation_bridge_interface_2026-06-06
+  claim_type: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  criticality: leaf
+  ready: true
+  helper_runner_paths: []
+  open_dependency_paths: []
+  note_hash: 5936a21edeb8caf1faaae0a42166e9436b7df87ea69c9d3c1aa7914a7edb10e4
+  runner_sha256: 635af6fdf7ea4e65e4e7e890eb70a974c82a632805f4f16595b01945711d605e
+  runner_cache_sha256: 3624b4274cf23a1b8be4ed771765e102dae9c9d1e9d4aeda9ce221bdf8ea3852
+pr_status:
+  commit: branch_head_after_packet_amend
+  pre_amend_commit: fd939b7d5
+  push: failed_https_auth
+  push_error: "fatal: could not read Username for 'https://github.com': Device not configured"
+  pr: blocked_until_feature_branch_push_succeeds
+  recovery_commands:
+    - "git push -u origin physics-loop/audit-unblock-block96-20260620"
+    - "gh pr create --base main --head physics-loop/audit-unblock-block96-20260620 --title \"[physics-loop][review-loop] audit-unblock block96: bounded-support post-record orientation interface\" --body-file .claude/science/physics-loops/audit-unblock-20260619/PR_BACKLOG.md"
+next_exact_action: "From this worktree, push the feature branch and open the review PR with the recovery commands above."
+stop_condition: "Runtime nearly exhausted after this coherent block."

@@ -3,7 +3,7 @@ runner: scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_
 runner_sha256: 635af6fdf7ea4e65e4e7e890eb70a974c82a632805f4f16595b01945711d605e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 

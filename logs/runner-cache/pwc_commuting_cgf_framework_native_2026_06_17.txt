@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/pwc_commuting_cgf_framework_native_2026_06_17.py
+runner_sha256: 3ab2c6676444898f66fbb9b3f7f2ee0f0d274965d3743bd24bd51914fb720d81
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+PWC commuting-source cumulant-generator finite proof
+========================================================================
+
+[A] exact derivative/cumulant identities
+[PASS] W[0] = 0 for the unnormalized finite state
+[PASS] first derivative carries the fixed source sign: d_x W(0) = -E[X]
+       d_x=-46/17, -E[X]=-46/17
+[PASS] first derivative in second source: d_y W(0) = -E[Y]
+       d_y=-36/17, -E[Y]=-36/17
+[PASS] second mixed derivative gives connected covariance
+       d_xy=673/289, cov=673/289
+[PASS] second same-source derivative gives variance
+       d_xx=604/289, var=604/289
+[PASS] third derivative has (-1)^3 cumulant sign
+       d_xxx=11334/4913, -kappa=11334/4913
+[PASS] third mixed derivative has (-1)^3 connected cumulant sign
+       d_xxy=-1137/4913, -kappa=-1137/4913
+
+[B] trace form equals the joint spectral-measure form
+[PASS] commuting trace formula reduces exactly to the joint spectral measure
+[PASS] normalized and unnormalized formulas differ only by the -log Tr(rho) shift
+
+[C] falsifiers: the logarithm and connected form are load-bearing
+[PASS] dropping log gives the raw moment, not the connected covariance
+       raw d_xy=137/17, E[XY]=137/17, connected=673/289
+[PASS] moving log inside/linearizing loses the connected second cumulant
+       linearized d_xy=0, connected=673/289
+
+[D] source-boundary checks
+[PASS] source note cites this finite proof runner
+[PASS] source note makes textbook references parallel, not load-bearing
+[PASS] source note keeps rho_ref and noncommuting ordering out of scope
+
+========================================================================
+TOTAL: PASS=14 FAIL=0
+========================================================================
+
+----- stderr -----
+

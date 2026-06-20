@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Proton Lifetime -- First-Principles Derivation from Cl(3) on Z^3
-=================================================================
+Proton Lifetime -- Bounded Conditional Prediction from Cl(3) on Z^3
+===================================================================
 
-CLAIM: tau_p ~ 10^{47.6} years, derived from the framework axioms.
+CLAIM: tau_p ~ 10^{47.6} years under the Planck-scale package pin.
 
 STATUS: bounded prediction (sharp falsifiable, but uses the standard
         dimension-6 operator scaling imported from EFT).
 
-DERIVATION CHAIN (every step traced to Cl(3) on Z^3):
+SUPPORT CHAIN:
 
   Step 1: The framework is Cl(3) on Z^3. The taste Hilbert space is
           (C^2)^3 = C^8. Under Hamming-weight grading this decomposes
@@ -25,9 +25,9 @@ DERIVATION CHAIN (every step traced to Cl(3) on Z^3):
           singlet subspaces -- these are leptoquark operators.
 
   Step 4: The leptoquark operators are NOT part of the gauge sector.
-          They arise from the full lattice algebra at the lattice
-          cutoff scale. In the framework, the lattice spacing is the
-          Planck length, so M_X = M_Planck ~ 1.22 x 10^19 GeV.
+          They arise from the full lattice algebra. This bounded
+          scenario adopts the Planck-scale package pin, so
+          M_X = M_Planck ~ 1.22 x 10^19 GeV.
 
   Step 5: Baryon number B (= 1/3 on triplets, 0 on singlets) commutes
           with all SU(3) generators but NOT with SU(2) generators.
@@ -46,7 +46,7 @@ DERIVATION CHAIN (every step traced to Cl(3) on Z^3):
   FALSIFIABILITY:
   - Current Super-K bound: tau > 1.6 x 10^34 years  => CONSISTENT
   - Hyper-K projected: tau ~ 10^35 years             => CONSISTENT
-  - If proton decay is seen at tau < 10^40: FRAMEWORK RULED OUT
+  - If proton decay is seen at tau < 10^40: package-pin scenario ruled out
 
 PStack experiment: proton-lifetime-derived
 Self-contained: numpy only.
@@ -291,38 +291,40 @@ def step3_leptoquark_operators(P_S0, P_T1, P_T2, P_S3):
 
 
 # =============================================================================
-# STEP 4: Mediating scale = M_Planck (lattice cutoff)
+# STEP 4: Mediating scale under the Planck-scale package pin
 # =============================================================================
 
 def step4_mediating_scale():
     """
-    The leptoquark operators arise at the lattice scale. In the framework,
-    the lattice is the Planck lattice, so M_X = M_Planck.
+    The leptoquark operators arise from the full lattice algebra. The
+    Planck-scale mediator value is a package pin, not a consequence of the
+    minimal axioms or the scale-reference primitive.
     """
     print("\n" + "=" * 78)
-    print("STEP 4: MEDIATING SCALE = M_PLANCK")
+    print("STEP 4: MEDIATING SCALE UNDER THE PLANCK-SCALE PACKAGE PIN")
     print("=" * 78)
 
     print(f"""
   The leptoquark operators are NOT gauge bosons -- they are operators in the
   full Cl(3) algebra that sit OUTSIDE the SU(3) x SU(2) x U(1) gauge sector.
 
-  In the framework, these operators arise from the lattice structure itself.
-  The lattice spacing is a = l_Planck, so the natural mass scale for processes
-  mediated by these operators is:
+  This bounded scenario adopts the Planck-scale package pin. That pin sets the
+  mass scale used for processes mediated by these operators:
 
     M_X = 1/a = M_Planck = {M_PLANCK:.4e} GeV
+
+  The pin is not supplied by the minimal axioms or the scale-reference primitive.
 
   Compare with GUT models:
     SU(5):    M_X = M_GUT  ~ {M_GUT_SU5:.0e} GeV
     SO(10):   M_X = M_GUT  ~ 10^16 GeV
-    Framework: M_X = M_Planck ~ {M_PLANCK:.2e} GeV
+    Package-pin scenario: M_X = M_Planck ~ {M_PLANCK:.2e} GeV
 
   The ratio (M_Planck / M_GUT)^4 controls the lifetime ratio:
     (M_Pl / M_GUT)^4 = ({M_PLANCK / M_GUT_SU5:.2e})^4 = {(M_PLANCK / M_GUT_SU5)**4:.2e}
 
-  This is the KEY reason the framework predicts a much longer proton lifetime
-  than standard GUTs: the mediating scale is 10^{{3.6}} higher.
+  This is the KEY reason the package-pin scenario predicts a much longer proton
+  lifetime than standard GUTs: the mediating scale is 10^{{3.6}} higher.
 """)
 
     ratio = M_PLANCK / M_GUT_SU5
@@ -454,8 +456,9 @@ def step6_proton_lifetime():
 
     This is the standard EFT formula for dimension-6 baryon-number-violating
     operators. The use of this formula is an imported physics input -- we are
-    NOT deriving the EFT machinery from the lattice. What IS derived from
-    the lattice is M_X = M_Planck.
+    NOT deriving the EFT machinery from the lattice. The value M_X = M_Planck
+    is a Planck-scale package pin, not a theorem of the minimal axioms or the
+    scale-reference primitive.
     """
     print("\n" + "=" * 78)
     print("STEP 6: PROTON LIFETIME COMPUTATION")
@@ -493,35 +496,35 @@ def step6_proton_lifetime():
             'mx': mx, 'Gamma': Gamma_GeV, 'tau_yr': tau_yr, 'log_tau': log_tau
         }
 
-    # The framework prediction
-    tau_framework = results["M_Planck (full)"]['tau_yr']
-    log_framework = results["M_Planck (full)"]['log_tau']
+    # The Planck-scale package-pin prediction
+    tau_package_pin = results["M_Planck (full)"]['tau_yr']
+    log_package_pin = results["M_Planck (full)"]['log_tau']
     tau_su5 = results["M_GUT (SU(5))"]['tau_yr']
     log_su5 = results["M_GUT (SU(5))"]['log_tau']
 
-    print(f"\n  FRAMEWORK PREDICTION: tau_p = {tau_framework:.2e} years")
-    print(f"                        log10(tau_p) = {log_framework:.2f}")
+    print(f"\n  PACKAGE-PIN SCENARIO: tau_p = {tau_package_pin:.2e} years")
+    print(f"                        log10(tau_p) = {log_package_pin:.2f}")
 
     # Verify the claimed value
-    check(abs(log_framework - 47.6) < 0.5,
-          f"log10(tau_p) = {log_framework:.2f} ~ 47.6", exact=False)
+    check(abs(log_package_pin - 47.6) < 0.5,
+          f"log10(tau_p) = {log_package_pin:.2f} ~ 47.6", exact=False)
 
     # Check consistency with Super-K bound
-    check(tau_framework > TAU_SUPERK,
-          f"tau_framework = 10^{log_framework:.1f} > tau_SuperK = 10^{math.log10(TAU_SUPERK):.1f}",
+    check(tau_package_pin > TAU_SUPERK,
+          f"tau_package_pin = 10^{log_package_pin:.1f} > tau_SuperK = 10^{math.log10(TAU_SUPERK):.1f}",
           exact=False)
 
     # Check it is MUCH longer than SU(5)
-    gap = log_framework - log_su5
+    gap = log_package_pin - log_su5
     check(gap > 13,
-          f"Framework tau is 10^{gap:.1f} longer than SU(5)", exact=False)
+          f"Package-pin tau is 10^{gap:.1f} longer than SU(5)", exact=False)
 
     # Ratio explanation
     ratio_mx = M_PLANCK / M_GUT_SU5
     print(f"\n  Why the lifetime is so much longer:")
     print(f"    M_Pl / M_GUT = {ratio_mx:.2e}")
     print(f"    (M_Pl / M_GUT)^4 = {ratio_mx**4:.2e}")
-    print(f"    tau scales as M_X^4, so the framework lifetime is")
+    print(f"    tau scales as M_X^4, so the package-pin lifetime is")
     print(f"    (M_Pl/M_GUT)^4 ~ 10^{4*math.log10(ratio_mx):.1f} times the SU(5) value.")
 
     return results
@@ -543,7 +546,7 @@ def step7_falsifiability(results):
     log_red = results["M_Planck (reduced)"]['log_tau']
 
     print(f"""
-  PREDICTION:
+  PACKAGE-PIN PREDICTION:
     tau_p = 10^{{{log_fw:.1f}}} years  (M_X = M_Planck)
     tau_p = 10^{{{log_red:.1f}}} years  (M_X = M_Planck_reduced)
 
@@ -553,9 +556,9 @@ def step7_falsifiability(results):
 
   FALSIFICATION CONDITION:
     If Hyper-K (or any future experiment) observes proton decay at
-    tau < 10^40 years, the framework is RULED OUT.
+    tau < 10^40 years, this package-pin proton-lifetime scenario is RULED OUT.
 
-    The framework prediction of tau ~ 10^47 is:
+    The package-pin prediction of tau ~ 10^47 is:
     - 10^{{{log_fw - math.log10(TAU_SUPERK):.0f}}} above the current Super-K bound
     - 10^{{{log_fw - math.log10(TAU_HYPERK_PROJ):.0f}}} above Hyper-K projected sensitivity
     - Effectively unreachable by any foreseeable experiment
@@ -565,8 +568,8 @@ def step7_falsifiability(results):
     -------------------------------------------------
     Minimal SU(5)            ~31              EXCLUDED
     SUSY SU(5)               ~34              TESTABLE at Hyper-K
-    Framework (M_Pl)         ~{log_fw:.0f}              SAFE (effectively stable)
-    Framework (M_Pl,red)     ~{log_red:.0f}              SAFE (effectively stable)
+    Package pin (M_Pl)       ~{log_fw:.0f}              SAFE (effectively stable)
+    Package pin (M_Pl,red)   ~{log_red:.0f}              SAFE (effectively stable)
     Absolute stability       infinity         SAFE
 
   KEY DISTINCTION FROM GUTs:
@@ -576,7 +579,8 @@ def step7_falsifiability(results):
     In the Cl(3)-on-Z^3 framework, quarks (triplets T1/T2) and leptons
     (singlets S0/S3) occupy SEPARATE Hamming-weight subspaces. Operators
     connecting them exist in the full Cl(3) algebra but are not part of
-    the gauge sector. They arise at the lattice cutoff M_X = M_Planck.
+    the gauge sector. This scenario evaluates them at the package-pinned
+    cutoff M_X = M_Planck.
 """)
 
     check(True, "Falsification condition is well-defined and sharp", exact=False)
@@ -590,11 +594,12 @@ def main():
     t0 = time.time()
 
     print("=" * 78)
-    print("PROTON LIFETIME -- FIRST-PRINCIPLES DERIVATION FROM Cl(3) ON Z^3")
+    print("PROTON LIFETIME -- BOUNDED CONDITIONAL PREDICTION FROM Cl(3) ON Z^3")
     print("=" * 78)
     print(f"\nCLAIM: tau_p ~ 10^47.6 years")
     print(f"STATUS: bounded prediction (sharp falsifiable)")
-    print(f"WHAT IS DERIVED: M_X = M_Planck from the lattice structure")
+    print("WHAT IS PACKAGE-PINNED: M_X = M_Planck; not derived from minimal axioms")
+    print("                        or the scale-reference primitive")
     print(f"WHAT IS IMPORTED: dimension-6 EFT decay formula, alpha_GUT = 1/25")
 
     P_S0, P_T1, P_T2, P_S3 = step1_taste_decomposition()
@@ -614,14 +619,14 @@ def main():
     log_tau = results["M_Planck (full)"]['log_tau']
 
     print(f"""
-  DERIVATION CHAIN (Cl(3) on Z^3 -> tau_p):
+  SUPPORT CHAIN (Cl(3) on Z^3 plus package pin/imports -> tau_p):
 
     1. [EXACT]   (C^2)^3 = C^8 decomposes as 1 + 3 + 3* + 1 by Hamming weight
     2. [EXACT]   SU(3) generators preserve the triplet/singlet subspaces
     3. [EXACT]   {n_lq} leptoquark operators exist in the full 64-dim operator
                  algebra, connecting triplet (quark) and singlet (lepton) sectors
     4. [EXACT]   These operators are OUTSIDE the gauge sector SU(3)xSU(2)xU(1)
-    5. [FRAMEWORK] The lattice scale is M_Planck, so M_X = M_Planck
+    5. [PACKAGE PIN] Adopt M_X = M_Planck for this bounded scenario
     6. [IMPORTED] Dimension-6 EFT formula: Gamma = alpha^2 * m_p^5 / M_X^4
     7. [IMPORTED] alpha_GUT ~ 1/25 at unification scale
     8. [COMPUTED] tau_p = hbar / Gamma = 10^{{{log_tau:.1f}}} years
@@ -629,9 +634,11 @@ def main():
   WHAT IS PROVED FROM THE LATTICE:
     - The existence of leptoquark operators (exact Cl(3) algebra fact)
     - Their location outside the gauge sector (exact)
-    - The mediating scale M_X = M_Planck (framework axiom: lattice = Planck)
     - B-L six-trace anomaly cancellation on the retained 16-state content
     - B+L violation by SU(2) instantons (sphaleron structure)
+
+  WHAT IS PACKAGE-PINNED:
+    - The mediator scale M_X = M_Planck for this bounded scenario
 
   WHAT IS IMPORTED:
     - The dimension-6 decay rate formula (standard EFT)

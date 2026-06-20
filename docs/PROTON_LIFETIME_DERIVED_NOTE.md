@@ -1,32 +1,40 @@
-# Proton Lifetime Derived from Cl(3) on Z^3
+# Proton Lifetime Bounded Conditional Prediction from Cl(3) on Z^3
+
+**Primary runner:** `scripts/frontier_proton_lifetime_derived.py`
+**Claim type:** bounded_theorem
 
 ## Status
 
 **Bounded prediction** -- sharp falsifiable.
 
-The numerical result tau_p ~ 10^{47.6} years is a bounded prediction: the
-lattice-derived ingredients (leptoquark operators, mediating scale M_X = M_Planck)
-are exact framework consequences, but the decay rate formula and coupling constant
-are imported from standard EFT / gauge unification.
+The numerical result tau_p ~ 10^{47.6} years is a bounded conditional
+prediction: the leptoquark-operator structure is an exact algebraic result,
+while the mediator scale `M_X = M_Planck` is a Planck-scale package-pin input,
+not a consequence of the minimal axioms or the scale-reference primitive. The
+decay-rate formula and coupling constant are imported from standard EFT /
+gauge unification.
 
 **Current publication disposition:** bounded companion only. Not on the
 retained flagship claim surface.
 
 ## Theorem / Claim
 
-**Claim:** The Cl(3)-on-Z^3 framework predicts the proton lifetime
+**Claim:** Under the Planck-scale package pin and the imported standard EFT
+decay-rate inputs, the Cl(3)-on-Z^3 framework gives the proton lifetime
 
     tau_p ~ 4 x 10^47 years   (log10 ~ 47.6)
 
 This is 10^{13.5} longer than minimal SU(5) GUT predictions, and 10^{13} above
-the current Super-K bound. It is a sharp falsifiable prediction: observation of
-proton decay at tau < 10^40 years would rule out the framework.
+the current Super-K bound. It is a sharp falsifiable package-pin prediction:
+observation of proton decay at tau < 10^40 years would rule out this
+Planck-scale mediator scenario.
 
 ## Assumptions
 
-1. **Framework package pin:** The physical theory is `Cl(3)` on `Z^3`, and on
-   the accepted physical-lattice reading the absolute spacing is carried as the
-   current package pin `a^(-1) = M_Pl`.
+1. **Planck-scale package pin:** The physical theory is `Cl(3)` on `Z^3`, and
+   this bounded scenario additionally adopts the package pin
+   `a^(-1) = M_Pl`. This pin is not supplied by the minimal axioms or by the
+   scale-reference primitive.
 
 2. **Taste space decomposition:** (C^2)^3 = C^8 decomposes under Hamming-weight
    grading as 8 = 1 + 3 + 3* + 1, where the triplets are the quark sector and
@@ -40,9 +48,9 @@ proton decay at tau < 10^40 years would rule out the framework.
    singlet subspaces. These are leptoquark operators. **[EXACT]**
 
 5. **Mediating scale:** Since the leptoquark operators arise from the full lattice
-   algebra (not the gauge sector), their effective mass is taken at the lattice
-   cutoff `M_X = M_Pl ~ 1.22 x 10^19 GeV` on the current Planck-scale package
-   pin. **[PACKAGE PIN, not yet a derived theorem]**
+   algebra (not the gauge sector), their effective mass is taken at the
+   package-pinned cutoff `M_X = M_Pl ~ 1.22 x 10^19 GeV`. **[PACKAGE PIN,
+   not a derived theorem]**
 
 6. **Decay rate formula:** The standard dimension-6 EFT formula applies:
    Gamma = alpha^2 * m_p^5 / M_X^4. **[IMPORTED from EFT]**
@@ -61,7 +69,7 @@ proton decay at tau < 10^40 years would rule out the framework.
   It does not mix quarks and leptons.
 
 - There exist operators in the full Cl(3) algebra that DO mix quarks and leptons.
-  The script finds 36 such leptoquark operators out of 64 total operators in the
+  The script finds 48 such leptoquark operators out of 64 total operators in the
   tensor-product Pauli basis.
 
 - Baryon number B (= 1/3 on triplets, 0 on singlets) commutes with all SU(3)
@@ -75,10 +83,11 @@ proton decay at tau < 10^40 years would rule out the framework.
   slot is load-bearing for the linear and cubic B-L traces. See
   [`BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md`](BMINUSL_ANOMALY_FREEDOM_THEOREM_NOTE_2026-04-24.md).
 
-### Framework-dependent results:
+### Package-pin-dependent result:
 
-- `M_X = M_Pl`. This follows from the current Planck-scale package pin for the
-  physical lattice. It is not yet derived from dynamics.
+- `M_X = M_Pl`. This follows only after adopting the current Planck-scale
+  package pin. It is not derived from dynamics, the minimal axioms, or the
+  scale-reference primitive.
 
 ### Imported physics:
 
@@ -147,13 +156,13 @@ Hamming-weight grading: 8 = 1 + 3 + 3* + 1
 SU(3)xSU(2)xU(1) preserves subspaces  (gauge sector)
     |
     v
-Full Cl(3) algebra contains 36 leptoquark operators
+Full Cl(3) algebra contains 48 leptoquark operators
     |       (operators mixing quark <-> lepton subspaces)
     v
-These operators are OUTSIDE gauge sector => effective mass = lattice cutoff
+These operators are OUTSIDE gauge sector => effective mass set by package pin
     |
     v
-M_X = M_Planck ~ 1.22 x 10^19 GeV
+M_X = M_Planck ~ 1.22 x 10^19 GeV      [Planck-scale package pin]
     |
     v
 Gamma = alpha^2 * m_p^5 / M_X^4        [imported EFT formula]
@@ -163,5 +172,6 @@ tau_p = hbar / Gamma ~ 4 x 10^47 years
     |
     v
 FALSIFIABLE: tau_p >> 10^35 (Hyper-K)
-             If proton decay seen at tau < 10^40 => framework ruled out
+             If proton decay seen at tau < 10^40 => this package-pin
+             proton-lifetime scenario is ruled out
 ```

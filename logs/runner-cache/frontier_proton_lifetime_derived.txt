@@ -1,0 +1,247 @@
+===== runner cache v1 =====
+runner: scripts/frontier_proton_lifetime_derived.py
+runner_sha256: 2c8339a432a63c6b29c8bd4a3e6c15672af374ae55889db7379ac949aeb34ba9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+==============================================================================
+PROTON LIFETIME -- BOUNDED CONDITIONAL PREDICTION FROM Cl(3) ON Z^3
+==============================================================================
+
+CLAIM: tau_p ~ 10^47.6 years
+STATUS: bounded prediction (sharp falsifiable)
+WHAT IS PACKAGE-PINNED: M_X = M_Planck; not derived from minimal axioms
+                        or the scale-reference primitive
+WHAT IS IMPORTED: dimension-6 EFT decay formula, alpha_GUT = 1/25
+
+==============================================================================
+STEP 1: TASTE SPACE DECOMPOSITION  8 = 1 + 3 + 3* + 1
+==============================================================================
+
+  Cl(3) on Z^3 gives taste Hilbert space (C^2)^3 = C^8.
+  Hamming-weight grading decomposes this as:
+    S0 (weight 0): [(0, 0, 0)]   -- singlet (lepton sector)
+    T1 (weight 1): [(1, 0, 0), (0, 1, 0), (0, 0, 1)]   -- triplet (quark sector)
+    T2 (weight 2): [(0, 1, 1), (1, 1, 0), (1, 0, 1)]   -- anti-triplet (quark sector)
+    S3 (weight 3): [(1, 1, 1)]   -- singlet (lepton sector)
+    [EXACT] PASS  dim(S0) = 1
+    [EXACT] PASS  dim(T1) = 3
+    [EXACT] PASS  dim(T2) = 3
+    [EXACT] PASS  dim(S3) = 1
+    [EXACT] PASS  1 + 3 + 3 + 1 = 8
+    [EXACT] PASS  P_S0 + P_T1 + P_T2 + P_S3 = I_8
+    [EXACT] PASS  S0 perp T1
+    [EXACT] PASS  S0 perp T2
+    [EXACT] PASS  T1 perp S3
+    [EXACT] PASS  T2 perp S3
+    [EXACT] PASS  T1 perp T2
+
+==============================================================================
+STEP 2: GAUGE ALGEBRA PRESERVES HAMMING-WEIGHT SUBSPACES
+==============================================================================
+
+  SU(3) generators (8 Gell-Mann-like on T1):
+    [EXACT] PASS  All 8 SU(3) generators have zero quark<->lepton block
+    [EXACT] PASS  [B, SU(3)_a] = 0  for all a = 1..8
+
+==============================================================================
+STEP 3: LEPTOQUARK OPERATORS IN THE FULL Cl(3) ALGEBRA
+==============================================================================
+
+  Total operators in (sigma_a x sigma_b x sigma_c): 64
+  Operators mixing quark <-> lepton subspaces:       48
+  Operators preserving subspaces (gauge-like):       16
+    [EXACT] PASS  Leptoquark operators exist (48 found)
+    [EXACT] PASS  Gauge-like (subspace-preserving) operators exist (16 found)
+
+  Example leptoquark operators (first 5):
+    00x:  ||quark->lepton|| = 1.4142, ||lepton->quark|| = 1.4142
+    00y:  ||quark->lepton|| = 1.4142, ||lepton->quark|| = 1.4142
+    0x0:  ||quark->lepton|| = 1.4142, ||lepton->quark|| = 1.4142
+    0xx:  ||quark->lepton|| = 1.4142, ||lepton->quark|| = 1.4142
+    0xy:  ||quark->lepton|| = 1.4142, ||lepton->quark|| = 1.4142
+
+  These operators connect quarks (T1/T2) to leptons (S0/S3).
+  They are the framework's analog of GUT leptoquark (X, Y) bosons.
+  They exist in the full Cl(3) algebra but NOT in the gauge sector.
+
+==============================================================================
+STEP 4: MEDIATING SCALE UNDER THE PLANCK-SCALE PACKAGE PIN
+==============================================================================
+
+  The leptoquark operators are NOT gauge bosons -- they are operators in the
+  full Cl(3) algebra that sit OUTSIDE the SU(3) x SU(2) x U(1) gauge sector.
+
+  This bounded scenario adopts the Planck-scale package pin. That pin sets the
+  mass scale used for processes mediated by these operators:
+
+    M_X = 1/a = M_Planck = 1.2209e+19 GeV
+
+  The pin is not supplied by the minimal axioms or the scale-reference primitive.
+
+  Compare with GUT models:
+    SU(5):    M_X = M_GUT  ~ 3e+15 GeV
+    SO(10):   M_X = M_GUT  ~ 10^16 GeV
+    Package-pin scenario: M_X = M_Planck ~ 1.22e+19 GeV
+
+  The ratio (M_Planck / M_GUT)^4 controls the lifetime ratio:
+    (M_Pl / M_GUT)^4 = (4.07e+03)^4 = 2.74e+14
+
+  This is the KEY reason the package-pin scenario predicts a much longer proton
+  lifetime than standard GUTs: the mediating scale is 10^{3.6} higher.
+
+    [BOUNDED] PASS  M_Planck / M_GUT = 4.1e+03 >> 1
+    [BOUNDED] PASS  (M_Pl/M_GUT)^4 = 2.7e+14 >> 10^13
+
+==============================================================================
+STEP 5: B-L ANOMALY PACKET, B+L SPHALERON VIOLATION
+==============================================================================
+
+  [B, SU(2)] = 0?  False
+  B does NOT commute with SU(2) -- this is the sphaleron mechanism.
+  SU(2) instantons can violate B (and L) individually.
+    ||[B, S_x]|| = 0.577350
+    ||[B, S_y]|| = 0.577350
+    ||[B, S_z]|| = 0.000000
+    [EXACT] PASS  [B, SU(2)] != 0 -- B is violated by SU(2) instantons (sphalerons)
+
+  [B-L, SU(2)] = 0?  False
+
+  Taste-space B-L check (8 left-handed taste states):
+    Sum(B-L)   = 6*(1/3) + 2*(-1) = 0.0000
+    Sum(B-L)^3 = 6*(1/3)^3 + 2*(-1)^3 = -1.7778
+    [EXACT] PASS  Linear B-L anomaly cancels: Sum(B-L) = 0.0
+
+  Full 16-state B-L anomaly packet:
+    grav^2(B-L)     = 0
+    (B-L)^3         = 0
+    SU(3)^2(B-L)    = 0
+    SU(2)^2(B-L)    = 0
+    Y^2(B-L)        = 0
+    Y(B-L)^2        = 0
+    [EXACT] PASS  Full six-trace B-L anomaly packet cancels with retained nu_R
+    [EXACT] PASS  Without nu_R, the linear and cubic B-L traces both fail by -1
+
+==============================================================================
+STEP 6: PROTON LIFETIME COMPUTATION
+==============================================================================
+
+  Dimension-6 proton decay formula:
+    Gamma = alpha^2 * m_p^5 / M_X^4
+    tau   = hbar / Gamma
+
+  Inputs:
+    alpha = alpha_GUT = 0.0400  (= 1/25, unified coupling)
+    m_p   = 0.938272 GeV
+    hbar  = 6.582119e-25 GeV*s
+
+  --- M_X = M_Planck (full) = 1.2209e+19 GeV ---
+    Gamma  = 5.2365e-80 GeV
+    tau    = 1.2570e+55 s
+    tau    = 3.9831e+47 years
+    log10(tau/yr) = 47.60
+
+  --- M_X = M_Planck (reduced) = 2.4350e+18 GeV ---
+    Gamma  = 3.3095e-77 GeV
+    tau    = 1.9888e+52 s
+    tau    = 6.3022e+44 years
+    log10(tau/yr) = 44.80
+
+  --- M_X = M_GUT (SU(5)) = 3.0000e+15 GeV ---
+    Gamma  = 1.4364e-65 GeV
+    tau    = 4.5823e+40 s
+    tau    = 1.4521e+33 years
+    log10(tau/yr) = 33.16
+
+  PACKAGE-PIN SCENARIO: tau_p = 3.98e+47 years
+                        log10(tau_p) = 47.60
+    [BOUNDED] PASS  log10(tau_p) = 47.60 ~ 47.6
+    [BOUNDED] PASS  tau_package_pin = 10^47.6 > tau_SuperK = 10^34.2
+    [BOUNDED] PASS  Package-pin tau is 10^14.4 longer than SU(5)
+
+  Why the lifetime is so much longer:
+    M_Pl / M_GUT = 4.07e+03
+    (M_Pl / M_GUT)^4 = 2.74e+14
+    tau scales as M_X^4, so the package-pin lifetime is
+    (M_Pl/M_GUT)^4 ~ 10^14.4 times the SU(5) value.
+
+==============================================================================
+STEP 7: SHARP FALSIFIABLE PREDICTION
+==============================================================================
+
+  PACKAGE-PIN PREDICTION:
+    tau_p = 10^{47.6} years  (M_X = M_Planck)
+    tau_p = 10^{44.8} years  (M_X = M_Planck_reduced)
+
+  EXPERIMENTAL STATUS:
+    Super-K bound (p -> e+ pi0):    tau > 1.6 x 10^34 years     CONSISTENT
+    Hyper-K projected (~2030s):     tau ~ 10^35 years            CONSISTENT
+
+  FALSIFICATION CONDITION:
+    If Hyper-K (or any future experiment) observes proton decay at
+    tau < 10^40 years, this package-pin proton-lifetime scenario is RULED OUT.
+
+    The package-pin prediction of tau ~ 10^47 is:
+    - 10^{13} above the current Super-K bound
+    - 10^{13} above Hyper-K projected sensitivity
+    - Effectively unreachable by any foreseeable experiment
+
+  COMPARISON TABLE:
+    Model                    log10(tau/yr)    Status
+    -------------------------------------------------
+    Minimal SU(5)            ~31              EXCLUDED
+    SUSY SU(5)               ~34              TESTABLE at Hyper-K
+    Package pin (M_Pl)       ~48              SAFE (effectively stable)
+    Package pin (M_Pl,red)   ~45              SAFE (effectively stable)
+    Absolute stability       infinity         SAFE
+
+  KEY DISTINCTION FROM GUTs:
+    In SU(5)/SO(10) GUTs, quarks and leptons sit in the SAME multiplet.
+    Leptoquark X,Y bosons have mass M_GUT ~ 10^15-16 GeV.
+
+    In the Cl(3)-on-Z^3 framework, quarks (triplets T1/T2) and leptons
+    (singlets S0/S3) occupy SEPARATE Hamming-weight subspaces. Operators
+    connecting them exist in the full Cl(3) algebra but are not part of
+    the gauge sector. This scenario evaluates them at the package-pinned
+    cutoff M_X = M_Planck.
+
+    [BOUNDED] PASS  Falsification condition is well-defined and sharp
+
+==============================================================================
+SUMMARY
+==============================================================================
+
+  SUPPORT CHAIN (Cl(3) on Z^3 plus package pin/imports -> tau_p):
+
+    1. [EXACT]   (C^2)^3 = C^8 decomposes as 1 + 3 + 3* + 1 by Hamming weight
+    2. [EXACT]   SU(3) generators preserve the triplet/singlet subspaces
+    3. [EXACT]   48 leptoquark operators exist in the full 64-dim operator
+                 algebra, connecting triplet (quark) and singlet (lepton) sectors
+    4. [EXACT]   These operators are OUTSIDE the gauge sector SU(3)xSU(2)xU(1)
+    5. [PACKAGE PIN] Adopt M_X = M_Planck for this bounded scenario
+    6. [IMPORTED] Dimension-6 EFT formula: Gamma = alpha^2 * m_p^5 / M_X^4
+    7. [IMPORTED] alpha_GUT ~ 1/25 at unification scale
+    8. [COMPUTED] tau_p = hbar / Gamma = 10^{47.6} years
+
+  WHAT IS PROVED FROM THE LATTICE:
+    - The existence of leptoquark operators (exact Cl(3) algebra fact)
+    - Their location outside the gauge sector (exact)
+    - B-L six-trace anomaly cancellation on the retained 16-state content
+    - B+L violation by SU(2) instantons (sphaleron structure)
+
+  WHAT IS PACKAGE-PINNED:
+    - The mediator scale M_X = M_Planck for this bounded scenario
+
+  WHAT IS IMPORTED:
+    - The dimension-6 decay rate formula (standard EFT)
+    - The numerical value alpha_GUT ~ 1/25 (from gauge coupling unification)
+    - QCD matrix elements (hadronic physics, not computed here)
+
+  Time: 0.0s
+  PASS=25  FAIL=0
+
+
+----- stderr -----
+

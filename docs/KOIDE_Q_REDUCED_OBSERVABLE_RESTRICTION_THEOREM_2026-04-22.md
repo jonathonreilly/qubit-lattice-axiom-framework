@@ -365,3 +365,21 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [koide_q_readout_factorization_theorem_2026-04-22](KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
 - [koide_q_minimal_scale_free_selector_note_2026-04-22](KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md)
 - [koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12](KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md)
+
+### 8.3 2026-06-17 restricted packet verifier
+
+The restricted packet now has a compact verifier:
+[`scripts/koide_q_reduced_reaudit_packet_verifier_2026_06_17.py`](../scripts/koide_q_reduced_reaudit_packet_verifier_2026_06_17.py).
+It checks that the three source-side pieces needed for re-audit are present,
+cached, and boundary-scoped:
+
+1. this parent reduced determinant theorem and its cached algebra runner;
+2. the physical carrier/readout obstruction note and cached runner; and
+3. the `D_red = I_2` normalization-freedom no-go note and cached runner.
+
+The verifier is deliberately non-promotional. It does not promote this row,
+does not update audit-owned files, and does not claim the physical
+charged-lepton observable carrier/readout or the absolute `D_red = I_2`
+normalization has been derived. Its purpose is to make the current source
+state unambiguous: exact determinant support is preserved, while both
+audit-named live blockers are explicit and separately cached.

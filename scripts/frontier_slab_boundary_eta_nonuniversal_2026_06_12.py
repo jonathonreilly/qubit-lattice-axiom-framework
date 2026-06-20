@@ -205,7 +205,26 @@ def run_s2_global() -> None:
     for height in HEIGHT_GRID:
         for eps in EPS_GRID:
             grid_max = max(grid_max, max_total_abs(height, eps))
-    check("S2", "full eps/L/parameter/boundary-condition grid is globally zero", grid_max < TOL_ZERO, f"grid max = {grid_max:.3e}")
+    check("S2", "full eps/L/parameter grid is globally zero on the open-uniform slab", grid_max < TOL_ZERO, f"grid max = {grid_max:.3e}")
+    # Scope narrowing (2026-06-20): the runner only computes the open-uniform
+    # slab. The 'sharp domain wall' label is computationally inert -- it builds
+    # no distinct mass profile and reproduces the open-uniform totals exactly.
+    # This check verifies that inertness, so the note's "sharp-domain-wall not
+    # computed" claim is runner-verified rather than asserted.
+    label_diff = 0.0
+    for height in HEIGHT_GRID:
+        for eps in EPS_GRID:
+            for r_value, m0 in PARAM_GRID:
+                q_open = total_quantities(height, r_value, m0, eps, "open uniform")
+                q_wall = total_quantities(height, r_value, m0, eps, "sharp domain wall")
+                for key in q_open:
+                    label_diff = max(label_diff, abs(q_open[key] - q_wall[key]))
+    check(
+        "S2",
+        "the 'sharp domain wall' label is computationally inert (reproduces the open-uniform slab); the sharp-domain-wall boundary condition is NOT computed",
+        label_diff == 0.0,
+        f"max label diff = {label_diff:.3e}",
+    )
 
 
 def run_s3_per_edge() -> None:

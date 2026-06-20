@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py
-runner_sha256: 29ddab4ee2efb2cdbdd8b70cfd0bc9436177afc745f68966928b3586b8a70d76
+runner_sha256: b3e3b36286267b8d91c8440501429289b8ace7a6e6c3d7c66bd2c5e7f6f42d49
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.77
+elapsed_sec: 0.70
 status: ok
 ----- stdout -----
 
@@ -50,7 +50,7 @@ Cos(3 delta) inversion and dichotomy assembly
 PASS inversion-symbolic: determinant has derived coefficient 3 via cos(3 delta)
 PASS inversion-numeric: e3 symmetric data recover |delta| on (0, pi/3) :: max residual=2.065e-14
 PASS inversion-uniqueness: cos(3 delta) is strictly monotone on (0, pi/3) :: max derivative=-9.000e-04
-PASS dichotomy: tested classes fall in exactly one of {readback, blind, state-contingent} :: {'identity': (True, False, False), 'rank-one/rank-two projectors': (False, True, False), 'thermal beta=1': (False, False, True), 'thermal beta=4': (False, False, True)}
+PASS dichotomy (tested classes only, not surface exhaustion): each tested class falls in exactly one of {readback, blind, state-contingent} :: {'identity': (True, False, False), 'rank-one/rank-two projectors': (False, True, False), 'thermal beta=1': (False, False, True), 'thermal beta=4': (False, False, True)}
 
 ========================================================================================
 B-checks - note firewall, open targets, links, and status
@@ -66,13 +66,15 @@ PASS B8: context references are backticked
 PASS B9: target files exist and no runner cache path is declared
 PASS B10: No-Go Discipline Gate is present and surface-local
 PASS B11: carrier-class exhaustion remains explicit future work
+PASS B12: title and N2 are scoped to the tested classes, not surface-wide exhaustion
+PASS B13: 2026-06-20 repair section narrows to the bounded checks and frames exhaustion as an open bridge
 
 ========================================================================================
 Manual git diff --stat equivalent (no git invoked)
 ========================================================================================
- docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md | 222 +
- scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py | 365 +
- 2 files changed, 587 insertions(+)
+ docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md | 262 +
+ scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py | 377 +
+ 2 files changed, 639 insertions(+)
 
 SUMMARY:
   Identity phases are readback: phi=3 delta exactly.
@@ -80,7 +82,7 @@ SUMMARY:
   Thermal phases are K-odd and state-contingent registered data, not universal readout identifications.
   Symmetric data recover |delta| through the derived cos(3 delta) inversion, leaving the named next paths open.
 
-TOTAL: PASS=28 FAIL=0
+TOTAL: PASS=30 FAIL=0
 
 ----- stderr -----
 

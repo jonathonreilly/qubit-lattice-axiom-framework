@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_context_generator_nonidentifiability_no_go_2026_06_17.py
+runner_sha256: b9a3b1d839c86c88867481a49231e556f013321b7fcd792186be28ec6eafdb60
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.51
+status: ok
+----- stdout -----
+Record context/generator nonidentifiability no-go
+status: exact negative boundary; source-side only; independent audit owns effective status
+
+A. source anchors and firewalls
+[PASS] note declares exact negative boundary
+[PASS] note forbids bare retained status
+[PASS] note names direct blocker
+[PASS] note carries direct minimal-axiom link
+[PASS] note carries direct projective authority link
+[PASS] note carries direct Lueders authority link
+[PASS] note records no-go discipline pass
+[PASS] minimal axioms exclude measurement/Born/readout context
+[PASS] source gate is bounded supplied-context finite algebra
+[PASS] source gate does not derive physical Markov generator
+[PASS] clock/rate gate requires supplied generators
+[PASS] post-record dynamics does not select the next atom
+[PASS] projective authority supplies K_r = P_r, not a context selector
+[PASS] Lueders authority supplies branch form, not a context selector
+
+B. same pre-record state, distinct complete readout contexts
+[PASS] rho is the same normalized pure one-qubit state -- rho=Matrix([[2/3, sqrt(2)/3], [sqrt(2)/3, 1/3]])
+[PASS] Z context is complete and projective
+[PASS] X context is complete and projective
+[PASS] Y context is complete and projective
+[PASS] Z probabilities are normalized -- p_z=[2/3, 1/3]
+[PASS] X probabilities are normalized -- p_x=[sqrt(2)/3 + 1/2, 1/2 - sqrt(2)/3]
+[PASS] Y probabilities are normalized -- p_y=[1/2, 1/2]
+[PASS] Z context gives (2/3, 1/3) -- p_z=[2/3, 1/3]
+[PASS] X context gives a different kernel -- p_x=[sqrt(2)/3 + 1/2, 1/2 - sqrt(2)/3]
+[PASS] Y context gives a third allowed kernel -- p_y=[1/2, 1/2]
+[PASS] same rho plus same projective algebra does not select the context
+
+C. realized post-record grammar is context-independent after selection
+[PASS] outcome 0 count update is integral
+[PASS] outcome 1 count update is integral
+[PASS] same one-hot update grammar applies for every context
+[PASS] ensemble expectations depend on context and are not realized atoms
+[PASS] post-record layer consumes realized atom, not the probability vector
+
+D. production vector does not identify a physical kernel or generator
+[PASS] two candidate stochastic kernels are valid
+[PASS] candidate kernels have the same ready-state production row
+[PASS] candidate kernels disagree after the atom is present
+[PASS] Q1 is a valid row Markov generator
+[PASS] Q5 is a distinct valid row Markov generator
+[PASS] both generators stabilize the same probability vector
+[PASS] distinct rate/clock pairs have the same dimensionless product
+[PASS] same product gives same one-step write probability -- p=1/3
+
+E. exact no-go conclusion
+[PASS] note keeps readout context underived
+[PASS] note keeps physical kernel/generator underived
+[PASS] note keeps clock/rate unit underived
+[PASS] source gate cannot be cited as production-generator closure
+
+SCORECARD: PASS=42 FAIL=0
+VERDICT: exact negative boundary. The supplied-context finite gate is self-consistent, but the same state/algebra admits multiple readout contexts and the resulting one-step probability vector does not identify the physical kernel, generator, or clock/rate.
+
+----- stderr -----
+

@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_reduced_a2_eigenvalue_ratio_eps_cancellation_rung_twenty_bounded_2026_06_12.py
+runner_sha256: bb4f9cb93d3c1da9616bd18f0fb622276d7223cb2bcd0ace1544c313a5cd8510
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 31.71
+status: ok
+----- stdout -----
+PASS: note declares controlled claim type and source-side boundary
+PASS: note separates derived eps-cancellation from computed eps^2 sign support
+PASS: note keeps the fully a-priori sign open
+PASS: note uses durable repo references, not scratch paths
+PASS: note includes the no-go discipline gate for the sign boundary
+PASS: note avoids audit-outcome assertions
+[Part 1] symbolic identities
+PASS: R(H exp(-Q)) = P_1 exp(-Q)  [T_1 = translation of leading multiplier]
+PASS: [R, L] = 0 on a generic polynomial  (=> [R, exp(L/2)] = 0)
+PASS: coeff_eps( log(lambda_1/lambda_0) ) = mu_1^(1)/mu_1 - mu_0^(1)/mu_0
+PASS: C_4 = (1/8) L^2  [heat correction identity]
+PASS: P_2 exp(-Q) = (1/2) R^2[H exp(-Q)] + 3 H exp(-Q)
+PASS: W99-bug: R(Q H exp(-Q)) exp(Q) = 3u H + Q P_1  (the dropped translation-of-Q term)
+PASS: W99-bug: the dropped term 3u H is nonzero (= 27 at (1,2))
+PASS: P_1(1,2) = -41/2
+PASS: P_2(1,2) = 135/2
+PASS: falsifier: A1 (N_c=2) discriminant is degree 1 (!= A2 cubic H, degree 3)
+[Part 2] lattice commutator identity (no boundary assumption)
+PASS: <v|[C,T_0]|v> = 0 for every eigenvector of symmetric T_0, ANY C  (<1e-10)
+[Part 3] exact-Wilson eps-cancellation witness (b ~ 0) and a_2 ~ 1.66
+  beta=  60.0 shell= 33  Lambda=log(l1/l0)=-1.61321855
+  beta=  90.0 shell= 40  Lambda=log(l1/l0)=-1.62243244
+  beta= 120.0 shell= 46  Lambda=log(l1/l0)=-1.62704426
+  beta= 150.0 shell= 51  Lambda=log(l1/l0)=-1.62981289
+  beta= 200.0 shell= 59  Lambda=log(l1/l0)=-1.63258264
+  fit: L_inf=-1.640879  b(eps)=-0.000820  a2=1.676878  a3=-0.084310
+  force b=0: a2=1.668435
+PASS: eps-cancellation witness: |b (beta^-1/2 coeff)| < 0.02  (~0)
+PASS: eps^2 margin a_2 in (1.55, 1.75)  [matches W90 fence ~1.66, sign POSITIVE]
+PASS: computed a_2 witness is positive (Route-A monotonicity direction support)
+  shell-convergence beta=120: ratio delta(shell, shell+4) rel=2.98e-09
+PASS: shell convergence: lambda_1/lambda_0 stable to <1e-5 (shell vs shell+4)
+[Part 4] a_2^heat = (1/4)(||L Phi_1||^2 - ||L Phi_0||^2) > 0 witness
+  ||L Phi_0||^2=2.036878  ||L Phi_1||^2=6.037156  a_2^heat=1.000070
+PASS: a_2^heat = (1/4)(||L Phi_1||^2 - ||L Phi_0||^2) > 0 (excited state more L-curved)
+  (W97 leading virial c_J=c_D already established; a_2^heat is the eps^2 piece.)
+
+TOTAL: PASS=22, FAIL=0
+
+----- stderr -----
+

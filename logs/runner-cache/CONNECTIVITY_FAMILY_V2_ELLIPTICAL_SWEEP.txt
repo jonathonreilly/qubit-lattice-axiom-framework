@@ -3,7 +3,7 @@ runner: scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py
 runner_sha256: 48f71df733166a4192974df880f47d179c68d6a6df728c658432830d88d7757d
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 483.15
+elapsed_sec: 436.58
 status: ok
 ----- stdout -----
 ================================================================================================

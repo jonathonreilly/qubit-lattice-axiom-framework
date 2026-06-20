@@ -11,7 +11,7 @@ from pathlib import Path
 NOTE_PATH = Path("docs/ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md")
 PARENT_PATH = Path("docs/SOMMER_SCALE_FROM_WILSON_CHAIN_PARTIAL_NOTE_2026-05-10_sommer.md")
 CERT_PATH = Path("outputs/alpha_s_direct_wilson_loop_certificate_2026-04-30.json")
-EXPECTED_SUMMARY = "SUMMARY: PASS=23 FAIL=0"
+EXPECTED_SUMMARY = "SUMMARY: PASS=25 FAIL=0"
 SOMMER_TARGET = 1.65
 
 PASS_COUNT = 0
@@ -47,6 +47,8 @@ def main() -> int:
     note_text = NOTE_PATH.read_text(encoding="utf-8")
     parent_text = PARENT_PATH.read_text(encoding="utf-8")
     required = [
+        "**Claim type:** bounded_theorem",
+        "**Type:** bounded_theorem",
         "dimensionless Sommer root kernel",
         "This note does not derive the physical anchor r0 = 0.5 fm.",
         "This note does not promote alpha_s(M_Z) to retained status.",

@@ -1,4 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_sommer_static_potential_root_kernel_2026_06_18.py
+runner_sha256: 19cb7db14e48eef8c07639f15dc34e50d967221dec05fa8d9ccca9d4cf5b8762
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
 === Source-boundary checks ===
+[PASS] note declares boundary: **Claim type:** bounded_theorem
+[PASS] note declares boundary: **Type:** bounded_theorem
 [PASS] note declares boundary: dimensionless Sommer root kernel
 [PASS] note declares boundary: This note does not derive the physical anchor r0 = 0.5 fm.
 [PASS] note declares boundary: This note does not promote alpha_s(M_Z) to retained status.
@@ -33,4 +43,7 @@
 [PASS] falsifier detects using the wrong Sommer target :: wrong=3.623126441193114
 [PASS] domain guard rejects nonpositive sigma
 
-SUMMARY: PASS=23 FAIL=0
+SUMMARY: PASS=25 FAIL=0
+
+----- stderr -----
+

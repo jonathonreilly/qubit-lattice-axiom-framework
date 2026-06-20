@@ -82,6 +82,11 @@ if NOTE.exists():
         "must not cite this packet as a retained derivation of",
         "physical `M(b)⊗σ₊` tensor coupling",
         "not as a retained positive theorem deriving the physical",
+        "2026-06-18 bounded-localization re-audit packet",
+        "Load-bearing theorem surface:",
+        "Non-load-bearing open gates:",
+        "bounded algebraic localization and route-pruning theorem",
+        "KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md",
         "Independent audit required",
     ]
     banned=[

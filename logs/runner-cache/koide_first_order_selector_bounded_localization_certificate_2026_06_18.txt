@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/koide_first_order_selector_bounded_localization_certificate_2026_06_18.py
+runner_sha256: 484a5c6ddc1cab525361e553ad5babc4d49faa21c230d1ba580331a3c3e46d3b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.10
+status: ok
+----- stdout -----
+KOIDE FIRST-ORDER SELECTOR BOUNDED-LOCALIZATION CERTIFICATE
+
+========================================================================================
+1. finite algebraic localization surface
+========================================================================================
+PASS: C is a three-cycle
+PASS: Gamma_chi is circulant
+PASS: Gamma_chi has one singlet and two doublet eigenvalues
+PASS: native circulant anticomm(Gamma_chi) intersection is zero
+PASS: Q is delta-independent
+PASS: Q=(1+2r)/3 under bmod^2/a^2=r
+PASS: C3 clock character multiplicities are (1,1,1)
+PASS: separate-factor escape commutes with C tensor I
+PASS: separate-factor escape anticommutes with I tensor sigma_z
+PASS: native circulant mass has b-independent Fourier eigenvectors
+
+========================================================================================
+2. note and certificate firewalls
+========================================================================================
+PASS: dependency/certificate exists: KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md
+PASS: dependency/certificate exists: KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md
+PASS: dependency/certificate exists: KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md
+PASS: dependency/certificate exists: KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md
+PASS: dependency/certificate exists: KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md
+PASS: dependency/certificate exists: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md
+PASS: required firewall marker present: Status authority
+PASS: required firewall marker present: 2026-06-18 bounded-localization re-audit packet
+PASS: required firewall marker present: Load-bearing theorem surface:
+PASS: required firewall marker present: Non-load-bearing open gates:
+PASS: required firewall marker present: bounded algebraic localization and route-pruning theorem
+PASS: required firewall marker present: explicit first-order escape isolated by the finite analysi
+PASS: required firewall marker present: physical `AC_phi_lambda -> M(b) tensor sigma_+` action ter
+PASS: required firewall marker present: physical first-order/readout weighting rule
+PASS: required firewall marker present: not as a retained positive theorem deriving the physical
+PASS: required firewall marker present: not be consumed as a retained physical selector
+PASS: required firewall marker present: bounded-localization certificate
+PASS: required firewall marker present: source-side bounded-localization certificate
+PASS: required firewall marker present: not a claim that the framework already supplies that gate
+PASS: required firewall marker present: ## No-Go Discipline Gate
+PASS: required firewall marker present: Status: PASS
+PASS: required firewall marker present: N1 alternative routes
+PASS: required firewall marker present: continuous `U(1)_b`
+PASS: required firewall marker present: discrete `C3` clock index
+PASS: required firewall marker present: native circulant anticommuting operator
+PASS: required firewall marker present: static grading or complex structure
+PASS: required firewall marker present: separate chiral factor
+PASS: required firewall marker present: N2 wall independence
+PASS: required firewall marker present: N3 hidden-wall scan
+PASS: required firewall marker present: N4 residual matching
+PASS: required firewall marker present: N5 rhetoric audit
+PASS: required firewall marker present: N6 partial-closure path scan
+PASS: required firewall marker present: N7 steelman
+PASS: required firewall marker present: N8 cross-cycle echo
+PASS: forbidden overclaim absent: is a retained physical selector
+PASS: forbidden overclaim absent: derives the physical Koide `r=1/2` selector
+PASS: forbidden overclaim absent: AC_phi_lambda supplies the physical
+PASS: forbidden overclaim absent: framework supplies the physical coupling
+PASS: forbidden overclaim absent: is a retained Koide `r=1/2` derivation
+PASS: forbidden overclaim absent: asserts an effective-status change
+PASS: forbidden overclaim absent: only surviving escape requires
+PASS: forbidden overclaim absent: only surviving first-order escape
+PASS: forbidden overclaim absent: only viable first-order escape
+PASS: certificate enumerates five load-bearing statements
+PASS: verification stanza points at this runner
+
+TOTAL: PASS=55 FAIL=0
+VERDICT: bounded localization certificate passes; physical L-R coupling/readout remains open.
+
+----- stderr -----
+

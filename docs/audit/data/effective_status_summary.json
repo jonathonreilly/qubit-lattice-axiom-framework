@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1753,
+    "bounded_theorem": 1772,
     "decoration": 62,
-    "meta": 329,
-    "no_go": 351,
-    "open_gate": 160,
-    "positive_theorem": 751
+    "meta": 328,
+    "no_go": 354,
+    "open_gate": 167,
+    "positive_theorem": 762
   },
   "cycle_examples": [
     [
@@ -39,12 +39,11 @@
       "quark_five_sixths_scale_selection_boundary_note_2026-04-28"
     ]
   ],
-  "cycles_detected": 7,
+  "cycles_detected": 8,
   "effective_status_counts": {
-    "audited_conditional": 62,
-    "audited_failed": 2,
+    "audited_conditional": 23,
     "audited_numerical_match": 12,
-    "audited_renaming": 30,
+    "audited_renaming": 25,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
     "decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29": 1,
     "decoration_under_cl3_color_automorphism_theorem": 8,
@@ -81,12 +80,12 @@
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 322,
-    "open_gate": 37,
-    "retained": 220,
-    "retained_bounded": 1010,
-    "retained_no_go": 219,
+    "open_gate": 36,
+    "retained": 218,
+    "retained_bounded": 999,
+    "retained_no_go": 215,
     "retained_pending_chain": 4,
-    "unaudited": 1428
+    "unaudited": 1531
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

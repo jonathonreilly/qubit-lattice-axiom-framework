@@ -1,0 +1,84 @@
+slug: koide-records-objectivity
+campaign: koide-records-objectivity
+block: block01
+date: 2026-06-20
+
+mode: run
+target: best-honest-status
+target_claim_type: no_go            # independence synthesis; audit lane owns status
+actual_current_surface_status: conditional   # target note is bounded_theorem/conditional
+attempted_flip_to: unconditional_retained
+flip_achieved: false
+audit_required_before_effective_retained: true
+proposal_allowed: false
+bare_retained_allowed: false
+status_authority: independent_audit_lane
+
+start_branch_base: origin/main
+science_branch: physics-loop/koide-records-objectivity-block01-20260620
+
+target_note: docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md
+deliverable: docs/KOIDE_RECORDS_OBJECTIVITY_DERIVATION_ATTEMPT_NOTE_2026-06-20.md
+
+scope:
+  axioms: [Lattice, Quantum, Record]
+  primitives: [minimal_axioms, scale_reference_primitive, kinetic_isotropy_primitive, realized_state_primitive]
+
+outcome:
+  derives_input_1_equal_block: false
+  derives_input_2_objectivity_selector: false
+  r_half_grade: independent_of_A_min      # explicit countermodel family W_t -> r*(t)=t/2
+  closes_clean: false
+  verdict: named_premise / no_go_for_closure
+
+routes:
+  - id: R1
+    target: input(1) equal-block measure
+    method: dephasing fixed point + block-exchange invariance
+    outcome: named_premise
+    runner: scripts/koide_records_objectivity_block_exchange_dephasing_2026_06_20.py
+    result: "TOTAL: PASS=17 FAIL=0"
+    wall: equal-block = dimension-blind isotype-label-counting measure; block-exchange impossible (dims 1 vs 2); A_min measures dimension-aware -> Q=1
+  - id: R2
+    target: input(2) objectivity selector
+    method: SBS / quantum-Darwinism objectivity functional
+    outcome: named_premise
+    runner: scripts/frontier_koide_objectivity_selector_record_derivation_2026_06_20.py
+    result: "TOTAL: PASS=15 FAIL=0"
+    wall: SBS objectivity weight-blind (fixes basis not weight); r=1/2-selector is separate max-entropy/indifference rule
+  - id: R3
+    target: independence probe on r=1/2
+    method: explicit Record-compatible countermodel family W_t
+    outcome: no_go
+    runner: scripts/koide_records_objectivity_independence_probe_R3_2026_06_20.py
+    result: "TOTAL: PASS=17 FAIL=0"
+    wall: isotype block-weight ratio t=w_p/w_s free; r*(t)=t/2 for all t>0; realized-state DATA
+
+named_premises:
+  - equal-block = dimension-blind isotype-label-counting (equal-a-priori) readout measure
+  - objectivity selector = SBS/local-observability bridge (open) + max-entropy indifference over sector labels
+  collapse_to: single auditable object — dimension-blind label-counting readout context over singlet/doublet alphabet
+
+guards:
+  non_import_empirical_koide: held    # Q=2/3 output-only; (1,2)/t=2 branch -> Q=1 same machinery
+  new_axiom_or_primitive_introduced: false
+  bare_grade_asserted: false
+
+artifacts:
+  certificate: .claude/science/physics-loops/koide-records-objectivity/CLAIM_STATUS_CERTIFICATE_block01.md
+  sections: [block01_section_R1.md, block01_section_R2.md, block01_section_R3.md]
+  caches:
+    - logs/runner-cache/koide_records_objectivity_block_exchange_dephasing_2026_06_20.txt
+    - logs/runner-cache/frontier_koide_objectivity_selector_record_derivation_2026_06_20.txt
+    - logs/runner-cache/koide_records_objectivity_independence_probe_R3_2026_06_20.txt
+
+exercise_skill_warranted: false   # clean independence reached; no hard mid-cycle wall needing exercise
+
+pr_status: pending
+next_exact_action: |
+  Hand block01 deliverable + certificate to independent audit lane. Future
+  positive work must supply a dimension-blind label-counting (equal-a-priori)
+  readout context as an independently audited structure, OR select the rank/trace
+  (Q=1) route. Do not re-attempt derivation inside scoped A_min + four primitives
+  (R3 countermodel forecloses it).
+stop_condition: block01 records one independence/no_go synthesis in one PR

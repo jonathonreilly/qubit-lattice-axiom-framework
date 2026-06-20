@@ -1,0 +1,84 @@
+
+========================================================================================
+ROUTE R1 — can block-exchange invariance of the Record readout force equal-block (1,1) weighting from the dephasing fixed point?
+========================================================================================
+
+========================================================================================
+R1.A — dephasing channel D: CPTP, idempotent, fixed set = functions of C
+========================================================================================
+[PASS] R1.A.1 dephasing is trace-preserving (sum_k Pk^† Pk = I)
+       ||sum Pk^†Pk - I|| = 8.78e-16
+[PASS] R1.A.2 dephasing is idempotent (D∘D = D)
+       ||D(D(rho)) - D(rho)|| = 2.09e-16
+[PASS] R1.A.3 I/3 is a dephasing fixed point and commutes with C
+       ||D(I/3) - I/3|| = 1.92e-16
+[PASS] R1.A.4 every dephased state commutes with C (fixed set ⊆ C-diagonal)
+       ||[C, D(rho)]|| = 2.10e-16
+
+========================================================================================
+R1.B — the C-invariant max-entropy dephasing fixed point I/3 -> RANK weights (1/3,2/3)
+========================================================================================
+[PASS] R1.B.1 I/3 block weights are the DIMENSION/Plancherel weights (1/3, 2/3)
+       p_singlet=0.333333, p_doublet=0.666667  -> ratio 1:2 (rank/dimension)
+[PASS] R1.B.2 dimension-weighted (1,2) capacity (the dephasing channel) peaks at r=1 -> Q=1
+       (1,2) max at r=[1] -> Q=1.  CONFIRMS: dephasing fixed point => Q=1, NOT Q=2/3.
+
+========================================================================================
+R1.C — BLOCK-EXCHANGE TEST: is there a *-automorphism swapping singlet<->doublet?
+========================================================================================
+[PASS] R1.C.1 the two isotype blocks have UNEQUAL dimensions (1 vs 2)
+       dim(singlet)=1, dim(doublet)=2.  A unitary/*-isomorphism preserves block dimension, so a block-exchange map U with U P_s U^† = P_d CANNOT exist.
+[PASS] R1.C.2 NO unitary maps the rank-1 singlet projector onto the rank-2 doublet projector (block-exchange is not realizable in A_min)
+       best achieved similarity over 200 random unitaries = 0.286 (<1: rank mismatch is an obstruction; equal-block is NOT forced by an algebra symmetry).
+[PASS] R1.C.3 the genuine grading-preserving symmetry (C-equivariance) has the DIMENSION-weighted invariant measure (1,2), reproducing R1.B (Q=1)
+       C-equivariant CPTP maps have I/3 as their canonical invariant state -> rank weights. There is no further algebra symmetry of A_min that promotes (1,1) over (1,2).
+
+========================================================================================
+R1.D — equal-block (1,1) = ISOTYPE-LABEL-COUNTING measure (dimension-blind)
+========================================================================================
+[PASS] R1.D.1 dimension measure = (1/3,2/3); label-counting measure = (1/2,1/2): DISTINCT
+       dimension=[0.33333333 0.66666667], label-count=[0.5 0.5]
+[PASS] R1.D.2 label-counting (1,1) capacity peaks at r=1/2 -> Q=2/3 (the OUTPUT of this branch)
+       (1,1) max at r=[1/2] -> Q=2/3.  2/3 is OUTPUT, never input.
+[PASS] R1.D.3 r* = w_p/(2 w_s): equal-block r=1/2 requires w_s=w_p EXACTLY (a dimension-BLIND, label-counting weight)
+       r* = w_p/(2*w_s); needs w_s=w_p (NOT the dimension ratio 1:2).
+
+========================================================================================
+R1.E — does A_min (Record axiom + primitives) SUPPLY the label-counting measure?
+========================================================================================
+[PASS] R1.E.1 Record axiom supplies record readout/registration but NO weighting/measure (per axiom_premise_nodes recorded content)
+       minimal_axioms note: '...supplies no readout context, sector-generation rule, weighting, normalization, probability, dynamics, or downstream theory consequence.'
+[PASS] R1.E.2 realized_state_primitive supplies a SLOT, never a measure/weighting/typicality
+       realized_state_primitive: 'no state, state-selection rule, measure, typicality/genericity assumption, weighting, probability rule...'
+[PASS] R1.E.3 => label-counting (1,1) is NOT supplied by A_min: it is an extra readout-context choice (which isotype labels are registered with equal a-priori weight)
+       A_min's only intrinsic measures on the grading are the trace/dimension (Plancherel) ones -> (1,2). Equal-label-counting is an ADDITIONAL named input. NAMED-PREMISE outcome.
+
+========================================================================================
+R1.F — NON-IMPORT GUARD: r=1/2 / Q=2/3 entered only as OUTPUTS
+========================================================================================
+[PASS] R1.F.1 counterfactual separation: (1,1)->Q=2/3 and (1,2)->Q=1 from the SAME capacity machinery (so 2/3 is selected by the weight, not imported)
+       (1,1)->Q=2/3;  (1,2)->Q=1.  Different outputs => non-circular.
+[PASS] R1.F.2 the empirical Koide value was never used as a premise anywhere above
+       No check substitutes r=1/2 or Q=2/3 as an assumption; both appear only as solved outputs.
+
+========================================================================================
+SUMMARY
+========================================================================================
+  TOTAL: PASS=17  FAIL=0  (of 17 checks)
+
+  ROUTE R1 OUTCOME: NAMED-PREMISE SPLIT (no clean derivation of equal-block).
+    * The dephasing channel's maximally-symmetric fixed point is I/3, whose
+      singlet/doublet weights are the RANK/DIMENSION measure (1/3,2/3) -> Q=1.
+    * A block-EXCHANGE symmetry that would force equal weighting does NOT exist:
+      the singlet (dim 1) and doublet (dim 2) blocks have unequal dimension, so no
+      *-automorphism / unitary of A_min's readout algebra swaps them.
+    * Equal-block (1,1) is precisely the ISOTYPE-LABEL-COUNTING (dimension-blind)
+      measure; r* = w_p/(2 w_s) forces w_s=w_p for r=1/2.
+    * A_min (Record axiom + four primitives) supplies record readout/registration
+      and a realized-state slot, but NO sector measure/weighting. The label-counting
+      measure is therefore a NAMED ADDITIONAL INPUT, not derived. The row stays
+      CONDITIONAL: equal-block is not forced by dephasing/block-exchange in A_min.
+    * Q=2/3 appears only as the OUTPUT of the (1,1) branch; (1,2) gives Q=1 from the
+      same machinery -> non-circular, no empirical import.
+
+ALL CHECKS PASSED

@@ -1,0 +1,93 @@
+
+========================================================================================
+ROUTE R3 -- independence probe: is r=1/2 PINNED or FREE under A_min + primitives?
+========================================================================================
+
+========================================================================================
+P0 -- anchors: the four approved primitives are loaded; weight is realized-state data
+========================================================================================
+[PASS] P0.1 all four approved primitive ids present in axiom_premise_nodes.json
+[PASS] P0.2 Record axiom (via minimal_axioms note) supplies NO weighting/normalization
+       minimal_axioms node note: Record '...supplies no readout context, sector-generation rule, weighting, normalization, probability, dynamics...'
+[PASS] P0.3 realized_state_primitive supplies the slot, never the measure/weighting/value
+       the per-sector weight r is realized-state DATA, not forced (register item 4).
+
+========================================================================================
+F1 -- genuine isotype block energies E_+ = 3 a^2, E_perp = 6 |b|^2 (numeric)
+========================================================================================
+[PASS] F1.1 E_+ = 3 a^2 (singlet block energy by isotype projection)
+       E_+ num = 5.070000, 3a^2 = 5.070000
+[PASS] F1.2 E_perp = 6 |b|^2 (doublet block energy by isotype projection)
+       E_perp num = 1.335000, 6|b|^2 = 1.335000
+[PASS] F1.3 doublet has TWO distinct real masses (no conjugate-pair 'fusion' to one slot)
+       the 2-block grading is a genuine 2-channel structure, not a fused single channel.
+
+========================================================================================
+F2 -- explicit Record-compatible block-additive COUNTERMODEL family W_t
+========================================================================================
+[PASS] F2.1 family extremum r*(w_s,w_p) = w_p/(2 w_s)  [CONTINUOUS, non-constant]
+       r* = w_p/(2*w_s)
+[PASS] F2.2 reparam by ratio t=w_p/w_s: r*(t) = t/2  -> NOT pinned (varies with t)
+       r*(t) = t/2
+[PASS] F2.3 three admissible members -> three DISTINCT r* (r is FREE, not pinned)
+       t=1 (equal-block (1,1)): r* = 1/2, Q = (1+2r)/3 = 2/3
+       t=2 (rank/dimension (1,2)): r* = 1, Q = (1+2r)/3 = 1
+       t=1/2 (singlet-heavy (2,1)): r* = 1/4, Q = (1+2r)/3 = 1/2
+
+========================================================================================
+F3 -- admissibility: every member is continuous, block-additive, Record-compatible, PD
+========================================================================================
+[PASS] F3.1 continuity in state: W_t smooth (C^infty) on E_+,E_perp > 0 for every t
+       W_t = w_s log E_+ + w_p log E_perp ; dW/dE exist on the open energy cone.
+[PASS] F3.2 block-additive: exactly TWO log channels (matches the 2-block Record pointer)
+       #log channels = 2 (one per resolved isotype block)
+[PASS] F3.3 Record-compatible: I_t finitely additive over disjoint blocks, I_t(empty)=0, durable -- for EVERY weight (incl. unequal)
+       the Record axiom fixes additivity over the two disjoint central-sector records; it does NOT fix the per-sector scalar weight -> unequal-weight members are Record-OK.
+[PASS] F3.4 PD + Ad-invariant member with UNEQUAL block weights exists (isotype-split no-go example alpha=beta=1)
+       B_(1,1): scalar weight = 4.0, traceless weight = 1.0 -> PD, Ad-invariant, Record-additive, block-additive, yet w_s != w_p.
+
+========================================================================================
+F4 -- pin-test: is there an A_min + primitive predicate that forces t=1 (r=1/2)?
+========================================================================================
+[PASS] F4.1 every A_min + primitive constraint is SATISFIED at t=2 (r*=1, Q=1) -- no predicate forces t=1
+       constraints checked: Lattice (Z^3 adjacency), Quantum (M2/Cl3 carrier), Record additivity I(empty)=0, finite-additive, Record durability, PD on Herm(3), Ad-invariance, scale_reference (units only), kinetic_isotropy (c_t=c_s), realized_state (pointwise eval)
+[PASS] F4.2 t is pinned ONLY by an extra equal-weight / objectivity-max selector (NOT in A_min + primitives) -> r=1/2 is INDEPENDENT of the baseline
+       no member of {Lattice,Quantum,Record,scale,kinetic,realized_state} sets w_p/w_s.
+
+========================================================================================
+F5 -- read-only: which family member matches empirical Koide (LABEL only, post hoc)
+========================================================================================
+[PASS] F5.1 empirical Koide Q=2/3 LABELS the t=1 member (r=1/2) -- post hoc, not a selector
+       r_emp = (3Q-1)/2 = 0.5, t_emp = 1.0.  GUARD: empirical value used only to name the matching member; it did NOT enter F2-F4 construction or the pin-test.
+
+========================================================================================
+VERDICT
+========================================================================================
+[PASS] R3.VERDICT  r is FREE under A_min + primitives (countermodel family exists): r=1/2 is INDEPENDENT -> clean NO-GO for closure
+       An explicit continuous, block-additive, Record-compatible, PD, Ad-invariant family W_t (= isotype bilinear B_{alpha,beta}) gives r*(t)=t/2 for ALL t>0; every member satisfies A_min + all four primitives; only an EXTRA selector pins t=1. Therefore the two named inputs (equal-block metric + objectivity-max) cannot BOTH be derived from the baseline. The row stays CONDITIONAL / named-premise.
+
+========================================================================================
+SUMMARY -- explicit residuals
+========================================================================================
+  PASS  P0.1 all four approved primitive ids present in axiom_premise_nodes.json
+  PASS  P0.2 Record axiom (via minimal_axioms note) supplies NO weighting/normalization
+  PASS  P0.3 realized_state_primitive supplies the slot, never the measure/weighting/value
+  PASS  F1.1 E_+ = 3 a^2 (singlet block energy by isotype projection)
+  PASS  F1.2 E_perp = 6 |b|^2 (doublet block energy by isotype projection)
+  PASS  F1.3 doublet has TWO distinct real masses (no conjugate-pair 'fusion' to one slot)
+  PASS  F2.1 family extremum r*(w_s,w_p) = w_p/(2 w_s)  [CONTINUOUS, non-constant]
+  PASS  F2.2 reparam by ratio t=w_p/w_s: r*(t) = t/2  -> NOT pinned (varies with t)
+  PASS  F2.3 three admissible members -> three DISTINCT r* (r is FREE, not pinned)
+  PASS  F3.1 continuity in state: W_t smooth (C^infty) on E_+,E_perp > 0 for every t
+  PASS  F3.2 block-additive: exactly TWO log channels (matches the 2-block Record pointer)
+  PASS  F3.3 Record-compatible: I_t finitely additive over disjoint blocks, I_t(empty)=0, durable -- for EVERY weight (incl. unequal)
+  PASS  F3.4 PD + Ad-invariant member with UNEQUAL block weights exists (isotype-split no-go example alpha=beta=1)
+  PASS  F4.1 every A_min + primitive constraint is SATISFIED at t=2 (r*=1, Q=1) -- no predicate forces t=1
+  PASS  F4.2 t is pinned ONLY by an extra equal-weight / objectivity-max selector (NOT in A_min + primitives) -> r=1/2 is INDEPENDENT of the baseline
+  PASS  F5.1 empirical Koide Q=2/3 LABELS the t=1 member (r=1/2) -- post hoc, not a selector
+  PASS  R3.VERDICT  r is FREE under A_min + primitives (countermodel family exists): r=1/2 is INDEPENDENT -> clean NO-GO for closure
+
+TOTAL: PASS=17 FAIL=0
+
+Residual (load-bearing): the equal-weight ratio t=1 (r=1/2) is NOT a consequence of Lattice+Quantum+Record or any approved primitive; it is the same block-weight freedom named by KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS and is realized-state data per the realized_state_primitive register (item 4: r in {0,1/2,1} are sector data, never forced).
+OUTCOME: NO-GO for closure -- r=1/2 is INDEPENDENT of A_min + primitives. The note stays conditional/named-premise; both inputs remain separate selectors.

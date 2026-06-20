@@ -1,0 +1,93 @@
+
+========================================================================================
+ROUTE R2: can objectivity-MAXIMIZATION over the Record readout DERIVE r=1/2?
+========================================================================================
+
+========================================================================================
+S0 - provenance / scope guards (no hidden r=1/2 or empirical Q import)
+========================================================================================
+[PASS] S0.1 r and Q appear only as OUTPUTS of the weight map, never injected as premises
+       no premise-assignment binds r or Q to 0.5 / Rational(1,2) / 2/3; r is a sympy unknown solved from the weight, never set to the empirical value.
+[PASS] S0.2 all four approved primitive nodes load from axiom_premise_nodes.json
+       canonical_ids = ['minimal_axioms', 'scale_reference_primitive', 'kinetic_isotropy_primitive', 'realized_state_primitive']
+[PASS] S0.3 conditional note keeps objectivity selector as a NAMED input (target to derive)
+
+========================================================================================
+S1 - K/CPT sector alphabet and the weight<->r reparametrization
+========================================================================================
+[PASS] S1.1 K/CPT gives exactly 2 sector orbits of C3: singlet {1} and doublet {w,w_bar}
+       conj(w)=w^2 ? True; alphabet = 2 symbols (rank1, rank2)
+[PASS] S1.2 doublet share p_perp = 2r/(1+2r), singlet share p_+ = 1/(1+2r) (1-1 in r)
+       p_+ = 1/(2*r + 1), p_perp = 2*r/(2*r + 1)
+[PASS] S1.3 uniform weight (1/2,1/2) <=> r=1/2 (det-symmetric E_+=E_perp); dimension (1/3,2/3) <=> r=1
+       r=1/2 is the determinant-symmetric / equal-weight point; r=1 is dimension weight
+
+========================================================================================
+S2 - SBS / quantum-Darwinism objectivity is FULL for ANY weight (weight-blind)
+========================================================================================
+[PASS] S2.1 SBS objectivity FULL for EVERY weight: each fragment recovers H(p), two fragments add nothing (redundancy plateau) -> objectivity is WEIGHT-BLIND
+       p=(0.5, 0.5): H(p)=0.6931, I(S:E1)=0.6931 (=H(p)? True), I(S:E1E2)=0.6931 (plateau? True)
+       p=(0.3333333333333333, 0.6666666666666666): H(p)=0.6365, I(S:E1)=0.6365 (=H(p)? True), I(S:E1E2)=0.6365 (plateau? True)
+       p=(0.2, 0.8): H(p)=0.5004, I(S:E1)=0.5004 (=H(p)? True), I(S:E1E2)=0.5004 (plateau? True)
+       p=(0.9, 0.1): H(p)=0.3251, I(S:E1)=0.3251 (=H(p)? True), I(S:E1E2)=0.3251 (plateau? True)
+[PASS] S2.2 therefore the objectivity PROPERTY (redundant broadcast) does not select r: it holds at r=1/2, r=1, and every interior r
+       objectivity fixes the sector BASIS/alphabet, NOT the weight (=> not r). (reproduces FLAVOR_QD_OBJECTIVITY_FIXES_BASIS_NOT_WEIGHT)
+
+========================================================================================
+S3 - the functional that PEAKS at r=1/2 is H(weights) (indifference), not redundancy
+========================================================================================
+[PASS] S3.1 plateau value H(p(r)) is maximized at r=1/2 (uniform weights), strict max
+       argmax_r H(p) = [1/2]; H(p) at r=1/2 = log(2) (= log2 = 1 bit); d2/dr2 = -1 < 0
+[PASS] S3.2 redundancy MULTIPLICITY (n fragments carrying the record) is weight-INDEPENDENT in ideal SBS -> the genuine objectivity observable does NOT peak at uniform
+       p=(0.5, 0.5): redundancy-multiplicity=4, I(S:E1)=0.6931, H(p)=0.6931
+       p=(0.3333333333333333, 0.6666666666666666): redundancy-multiplicity=4, I(S:E1)=0.6365, H(p)=0.6365
+       p=(0.2, 0.8): redundancy-multiplicity=4, I(S:E1)=0.5004, H(p)=0.5004
+[PASS] S3.3 SPLIT: 'objectivity-maximization -> r=1/2' = (broadcast objectivity: WEIGHT-BLIND) + (maximize Shannon entropy of readout weights: a SEPARATE indifference selector)
+       the r=1/2-selecting half is the indifference / equal-a-priori rule over sector LABELS, NOT the redundancy/broadcast objectivity of the Record.
+
+========================================================================================
+S4 - Record additivity is weight-blind; primitives forbid the indifference weight
+========================================================================================
+[PASS] S4.1 Record additivity is BLIND to the weight: distinct weightings -> identical additive scalar I (I(empty)=0) -> additivity does not select the uniform weight
+       I_total identical (4==4) under relabelled disjoint records; I(empty)=0
+[PASS] S4.2 realized-state primitive bans 'typical/generic' weighting + averaging; the counterfactual test marks weight-contingent r as registered DATA, not derivation
+       => the four primitives supply NO state/measure/weight/probability -> cannot supply the uniform sector weight.
+[PASS] S4.3 minimal_axioms node: Record supplies NO weighting/normalization/probability/readout context -> the SBS-objectivity selector is outside axiom content
+       (reproduces DARWINISM_BRIDGE_RESIDUAL open gate: local-observability / SBS objectivity is a NAMED open premise, not {Lattice,Quantum,Record}).
+
+========================================================================================
+S5 - comparator: Record-invariant tracial reference I/3 -> (1/3,2/3) -> r=1
+========================================================================================
+[PASS] S5.1 tracial/dimension reference I/3 is U(3)-invariant (Record-invariant) and gives block weights (1/3,2/3) -> r=1, a DIFFERENT point from r=1/2
+       I/3 invariant? True; tracial weight (1/3,2/3) -> r=1 (Q=1). So uniform weight is a genuine CHOICE; dephasing fixed point points to r=1.
+
+========================================================================================
+RESIDUALS (load-bearing)
+========================================================================================
+  RESIDUAL-1 (objectivity weight-blindness): SBS objectivity is FULL for all weights
+             => objectivity fixes BASIS not WEIGHT; does not select r. [S2]
+  RESIDUAL-2 (selector identity): the r=1/2-selecting functional is H(weights),
+             i.e. a max-entropy / indifference rule over sector LABELS, which is
+             NOT redundancy/broadcast objectivity. [S3]
+  RESIDUAL-3 (supplier gap): Record additivity + the four primitives supply no
+             weight/measure/probability; SBS objectivity is itself an open
+             local-observability bridge. [S4]  Comparator tracial -> r=1. [S5]
+
+========================================================================================
+SUMMARY
+========================================================================================
+  TOTAL: PASS=15 FAIL=0
+
+  R2 OUTCOME = NAMED-PREMISE SPLIT (objectivity selector NOT derived from Record):
+    * objectivity / SBS broadcast over the K/CPT sector alphabet is WEIGHT-BLIND
+      (full for every r) -> it fixes the sector BASIS, not r.
+    * the functional that selects r=1/2 is H(readout weights) = a max-entropy /
+      indifference (equal-a-priori) rule over sector LABELS, which is a SEPARATE
+      admitted readout-context choice, NOT redundancy/objectivity, NOT in Record.
+    * neither Record additivity/determinacy nor the four primitives supply that
+      weight; SBS objectivity is itself the open local-observability bridge.
+    => the objectivity-maximization selector is a SEPARATE READOUT-CONTEXT INPUT,
+       the same readout-context bridge A_min withholds (T1-d observable wall).
+       r and Q remain OUTPUTS conditional on that admitted selector.
+
+ALL CHECKS PASSED (the logical claims of the named-premise split all hold)

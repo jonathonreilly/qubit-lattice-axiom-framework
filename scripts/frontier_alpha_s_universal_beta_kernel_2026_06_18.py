@@ -10,7 +10,7 @@ from pathlib import Path
 
 NOTE_PATH = Path("docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md")
 PARENT_PATH = Path("docs/ALPHA_S_4LOOP_RUNNING_DERIVATION_PARTIAL_NOTE_2026-05-10_4loop.md")
-EXPECTED_SUMMARY = "SUMMARY: PASS=26 FAIL=0"
+EXPECTED_SUMMARY = "SUMMARY: PASS=28 FAIL=0"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -81,6 +81,8 @@ def main() -> int:
     note_text = NOTE_PATH.read_text(encoding="utf-8")
     parent_text = PARENT_PATH.read_text(encoding="utf-8")
     required = [
+        "**Claim type:** bounded_theorem",
+        "**Type:** bounded_theorem",
         "universal two-loop beta-kernel",
         "This note does not derive beta_2, beta_3, MSbar counterterms, or four-loop running.",
         "This note does not derive physical threshold masses.",

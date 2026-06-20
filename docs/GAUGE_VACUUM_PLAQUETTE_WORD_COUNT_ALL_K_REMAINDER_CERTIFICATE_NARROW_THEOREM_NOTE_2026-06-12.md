@@ -33,6 +33,12 @@ scoped surfaces.
 - [GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md](GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_THETA_IDENTIFICATION_TWO_TERM_ASYMPTOTIC_NARROW_THEOREM_NOTE_2026-06-12.md)
   supplies the theta identity, paired source coefficient, and source
   asymptotic inputs.
+- [GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RESCALED_TAIL_SUPPORT_NOTE_2026-06-18.md](GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RESCALED_TAIL_SUPPORT_NOTE_2026-06-18.md)
+  supplies bounded support for the post-window tail: it rescales the finite
+  entrywise-power packet, recomputes the tail rows in high precision, and
+  shows the sampled `||e_k||_1 / alpha^k` tail decreases from `k = 19` through
+  `k = 40`. It does not close the all-k bridge; the analytic monotone/Neumann
+  tail proof for every later `k` remains open.
 
 ```yaml
 claim_id: gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_theorem_note_2026-06-12
@@ -42,6 +48,7 @@ audit_authority: independent audit lane only
 declared_one_hop_deps:
   - gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_theorem_note_2026-06-12
   - gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_narrow_theorem_note_2026-06-12
+  - gauge_vacuum_plaquette_word_count_rescaled_tail_support_note_2026-06-18
 proposal_allowed: false
 audit_required_before_effective_retained: true
 ```

@@ -11,20 +11,20 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3406 |
-| Applied audit verdicts | 1653 |
-| Retained-grade rows, including boxed decorations | 1509 |
-| Retained positive theorems | 220 |
-| Retained no-go rows | 219 |
-| Retained bounded rows | 1010 |
+| Ledger rows | 3445 |
+| Applied audit verdicts | 1588 |
+| Retained-grade rows, including boxed decorations | 1492 |
+| Retained positive theorems | 218 |
+| Retained no-go rows | 215 |
+| Retained bounded rows | 999 |
 | Boxed decorations under retained parents | 60 |
-| Open gates | 37 |
-| Unaudited rows | 1428 |
+| Open gates | 36 |
+| Unaudited rows | 1531 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 62 |
-| Audited renaming rows | 30 |
+| Audited conditional rows | 23 |
+| Audited renaming rows | 25 |
 | Audited numerical-match rows | 12 |
-| Citation cycles detected | 7 |
+| Citation cycles detected | 8 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,39 +33,44 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1431 |
-| Ready rows | 0 |
-| Cycle-break targets | 7 |
-| Critical pending | 307 |
-| High pending | 264 |
-| Medium pending | 411 |
-| Leaf pending | 449 |
+| Total pending rows | 1535 |
+| Ready rows | 60 |
+| Cycle-break targets | 8 |
+| Critical pending | 315 |
+| High pending | 274 |
+| Medium pending | 437 |
+| Leaf pending | 509 |
 
 Next ready rows by queue order:
 
-- none
+- [`qcd_low_energy_running_bridge_note_2026-05-01`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) - critical; unaudited
+- [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - critical; unaudited
+- [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
+- [`koide_q_delta_linking_relation_theorem_note_2026-04-20`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md) - critical; unaudited
+- [`lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
+- [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
+- [`hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - critical; audit_in_progress
+- [`hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18`](../../docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **424**.
+- Non-retained-grade cited rows in publication tables: **425**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 173 |
-| high | `unaudited` | 153 |
-| medium | `unaudited` | 85 |
+| critical | `unaudited` | 175 |
+| high | `unaudited` | 154 |
+| medium | `unaudited` | 86 |
 | critical | `audited_numerical_match` | 3 |
 | critical | `open_gate` | 2 |
 | critical | `audited_conditional` | 1 |
-| critical | `audited_renaming` | 1 |
-| high | `audited_conditional` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
-| medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
+| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 
@@ -73,19 +78,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3548 |
-| Critical nodes | 581 |
-| High nodes | 508 |
-| Medium nodes | 927 |
-| Leaf nodes | 1532 |
+| Citation-graph nodes | 3587 |
+| Critical nodes | 584 |
+| High nodes | 516 |
+| Medium nodes | 940 |
+| Leaf nodes | 1547 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1657 descendants; score 147.695
-- `three_generation_observable_theorem_note` - critical; 1050 descendants; score 65.538
-- `graph_first_su3_integration_note` - critical; 1422 descendants; score 60.975
-- `observable_principle_from_axiom_note` - critical; 909 descendants; score 60.330
-- `plaquette_self_consistency_note` - critical; 1015 descendants; score 52.989
-- `minimal_axioms_2026-05-03` - critical; 1032 descendants; score 50.013
-- `key_terminology` - critical; 1124 descendants; score 47.636
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 924 descendants; score 45.353
+- `minimal_axioms` - critical; 1678 descendants; score 152.713
+- `three_generation_observable_theorem_note` - critical; 1059 descendants; score 67.050
+- `graph_first_su3_integration_note` - critical; 1431 descendants; score 60.984
+- `observable_principle_from_axiom_note` - critical; 917 descendants; score 60.342
+- `plaquette_self_consistency_note` - critical; 1023 descendants; score 54.000
+- `minimal_axioms_2026-05-03` - critical; 1037 descendants; score 49.520
+- `key_terminology` - critical; 1130 descendants; score 47.643
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 929 descendants; score 45.361

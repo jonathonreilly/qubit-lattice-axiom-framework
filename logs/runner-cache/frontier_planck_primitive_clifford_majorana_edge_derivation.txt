@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py
-runner_sha256: f2a94dd30edf146532e1b61e29f7bf8a558cac050c3e96f7c4a80cbe36238a6c
+runner_sha256: 38db48a54676fdae58a3b6ce0acfc24b69789582aa338a2d91c99aa81e8d0351
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
 PLANCK PRIMITIVE CLIFFORD-MAJORANA EDGE CONSISTENCY CHECK
-(bounded scope: P_A carrier admitted from upstream candidate authority)
+(bounded scope: P_A carrier sourced from a conditional bridge)
 ==============================================================================
 
 Question (narrowed after two audited_renaming verdicts):
@@ -19,7 +19,8 @@ Question (narrowed after two audited_renaming verdicts):
 
 Not in scope: substrate forcing of P_A (see SUBSTRATE_TO_P_A_FORCING
 and FIRST_ORDER_COFRAME_UNCONDITIONALITY no-gos; conditional repair
-route in PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING is unaudited).
+route in PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING is
+bounded/conditional on its action-source premise).
 
 [PASS (C)] 1. explicit Hermitian Cl_4 generators on C^4: Hermitian=0.00e+00, square=0.00e+00, Clifford=0.00e+00
 [PASS (C)] 2. generated algebra is faithful and irreducible: span rank=16=dim M_4(C), commutant dimension=1
@@ -32,7 +33,7 @@ route in PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING is unaudited).
 
 Summary: PASS=8  FAIL=0
 
-Verdict: PASS (bounded scope). GIVEN the admitted carrier K = P_A H_cell, the explicit Cl_4(C) construction on C^4 is algebraically consistent: it realizes the irreducible complex Cl_4 module, the two-mode CAR algebra F(C^2) by oriented Majorana pairing, and cross-checks c_Widom=c_cell=1/4. This is a renaming-class consistency theorem, not a substrate-forcing derivation of P_A. Substrate-to-P_A provenance remains conditional on the cited unaudited link-local first-variation candidate authority. Audit ratification remains separate.
+Verdict: PASS (bounded scope). GIVEN the admitted carrier K = P_A H_cell, the explicit Cl_4(C) construction on C^4 is algebraically consistent: it realizes the irreducible complex Cl_4 module, the two-mode CAR algebra F(C^2) by oriented Majorana pairing, and cross-checks c_Widom=c_cell=1/4. This is a renaming-class consistency theorem, not a substrate-forcing derivation of P_A. Substrate-to-P_A provenance remains conditional on the cited bounded/conditional link-local first-variation bridge and its action-source premise. Audit ratification remains separate.
 
 ----- stderr -----
 

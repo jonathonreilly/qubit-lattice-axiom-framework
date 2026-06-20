@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py
+runner_sha256: 502da3a16e58ff4a86e448946ab3bec2da14829e83cb976774b4ba6409a3a3ee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py
+
+== Part 0: source firewall ==
+PASS: note contains marker: **Actual current surface status:** bounded-support / exact condition
+PASS: note contains marker: does not set or predict an audit outcome
+PASS: note contains marker: a != 0
+PASS: note contains marker: {x, y, z, n} = {4a, -2a, -6a, 0}
+PASS: note contains marker: At the existing `a = 1/3` normalization
+PASS: note contains marker: If the neutral singlet condition `n = 0` is removed, uniqueness fail
+PASS: note contains marker: does not derive full `P-COMP`
+PASS: note contains marker: does not consume PDG values
+PASS: note contains marker: scripts/frontier_abj_pcomp_scale_free_singlet_completion_classificat
+PASS: note avoids overclaim phrase: audited_clean
+PASS: note avoids overclaim phrase: effective retained
+PASS: note avoids overclaim phrase: full `P-COMP` is derived
+PASS: note avoids overclaim phrase: this derives `P-HY`
+PASS: note avoids overclaim phrase: this derives `P-ABJ`
+PASS: note avoids overclaim phrase: this derives `P-REC`
+PASS: note avoids overclaim phrase: this derives `B-AXIS`
+PASS: ABJ bridge has source-side pointer to this P-COMP classification
+PASS: ABJ bridge still states it does not derive P-HY, P-ABJ, full P-COMP, P-REC, or B-AXIS
+
+== Part 1: scale-free LH anomaly traces ==
+PASS: Tr[Y]_LH = 0 (0)
+PASS: Tr[Y^3]_LH = -48 a^3 (-48*a**3)
+PASS: Tr[SU(3)^2 Y]_LH = a (a)
+PASS: Tr[SU(2)^2 Y]_LH = 0 (0)
+PASS: Tr[SU(3)^3]_LH = 2 (2)
+PASS: sample a=1/3: cubic trace matches -48a^3
+PASS: sample a=2/5: cubic trace matches -48a^3
+PASS: sample a=-1/2: cubic trace matches -48a^3
+
+== Part 2: exact singlet-completion classification ==
+PASS: mixed color anomaly gives x + y = 2a
+PASS: linear anomaly with n=0 gives z = -6a
+PASS: cubic equation reduces to 3(x^3+y^3)-168a^3=0 (0)
+PASS: product xy forced to -8a^2 ([-8*a**2])
+PASS: quadratic factors as (t-4a)(t+2a) ((-4*a + t)*(2*a + t))
+PASS: roots are {-2a, 4a} ([-2*a, 4*a])
+PASS: direct solve at a=1/3 gives swapped SM-scale pair ({(-2/3, 4/3, -2), (4/3, -2/3, -2)})
+PASS: direct solve at a=2/5 gives swapped SM-scale pair ({(8/5, -4/5, -12/5), (-4/5, 8/5, -12/5)})
+PASS: direct solve at a=7/4 gives swapped SM-scale pair ({(-7/2, 7, -21/2), (7, -7/2, -21/2)})
+
+== Part 3: full anomaly cancellation checks ==
+PASS: a=1/3, branch=(Fraction(4, 3), Fraction(-2, 3), Fraction(-2, 1), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+PASS: a=1/3, branch=(Fraction(-2, 3), Fraction(4, 3), Fraction(-2, 1), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+PASS: a=2/5, branch=(Fraction(8, 5), Fraction(-4, 5), Fraction(-12, 5), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+PASS: a=2/5, branch=(Fraction(-4, 5), Fraction(8, 5), Fraction(-12, 5), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+PASS: a=7/4, branch=(Fraction(7, 1), Fraction(-7, 2), Fraction(-21, 2), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+PASS: a=7/4, branch=(Fraction(-7, 2), Fraction(7, 1), Fraction(-21, 2), Fraction(0, 1)): all anomaly traces cancel ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+PASS: a=1/3 gives standard witness exactly ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+
+== Part 4: counterfactuals expose remaining P-COMP residuals ==
+PASS: without n=0, cubic leaves q-p=8a^2 relation
+PASS: a=1/3: non-neutral counterexample also cancels anomalies ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+PASS: a=1/3: counterexample has no neutral singlet (n=-4/3)
+PASS: a=2/5: non-neutral counterexample also cancels anomalies ({'Tr[Y]': Fraction(0, 1), 'Tr[Y^3]': Fraction(0, 1), 'Tr[SU(3)^2 Y]': Fraction(0, 1), 'Tr[SU(2)^2 Y]': Fraction(0, 1), 'Tr[SU(3)^3]': Fraction(0, 1)})
+PASS: a=2/5: counterexample has no neutral singlet (n=-8/5)
+PASS: one RH color triplet would leave SU(3)^3 residual 1
+PASS: two RH color triplets cancel SU(3)^3 by slot count
+
+TOTAL: PASS=49 FAIL=0
+VERDICT: bounded-support exact P-COMP singlet-completion classification.
+
+----- stderr -----
+

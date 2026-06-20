@@ -1,0 +1,84 @@
+===== runner cache v1 =====
+runner: scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py
+runner_sha256: d2decc18872c7d67fbd3d8afa095a46b284ee5b3b5950fd347b04bc3e804e12c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+========================================================================================
+REGISTRABLE READOUT DETERMINANT-CHARACTER ALGEBRAIC CORE SPLIT
+========================================================================================
+
+----------------------------------------------------------------------------------------
+T1 - finite central idempotents are disjoint record labels
+----------------------------------------------------------------------------------------
+  [PASS] e_j^2 = e_j
+  [PASS] e_j e_k = 0 for j != k
+  [PASS] sum_j e_j = I
+
+----------------------------------------------------------------------------------------
+T2 - Record finite additivity removes cross-record interference
+----------------------------------------------------------------------------------------
+  [PASS] cross term c in I(e1 union e2)=I(e1)+I(e2)+c is forced to zero
+  [PASS] finite iteration gives a per-record sum -- no infinite or measure-theoretic premise
+
+----------------------------------------------------------------------------------------
+T3 - determinant phase is additive on sector products
+----------------------------------------------------------------------------------------
+  [PASS] arg(prod_j z_j) = sum_j arg(z_j) modulo 2pi on random sector products
+  [PASS] homomorphism boundary is explicit and not inferred from Record additivity
+
+----------------------------------------------------------------------------------------
+T4 - additive R-valued phase functionals are odd
+----------------------------------------------------------------------------------------
+  [PASS] additivity at zero forces g(0)=0
+  [PASS] g(x)+g(-x)=0 forces g(-x)=-g(x)
+
+----------------------------------------------------------------------------------------
+T5 - K/CPT even plus additive odd forces zero phase
+----------------------------------------------------------------------------------------
+  [PASS] even g(-t)=g(t) and odd g(-t)=-g(t) force g(t)=0
+  [PASS] determinant-character phase index k=0 follows inside the supplied homomorphism class
+
+----------------------------------------------------------------------------------------
+T6 - hostile guards: K-even phase functions are not erased by Record alone
+----------------------------------------------------------------------------------------
+  [PASS] cos(theta) is K/CPT-even
+  [PASS] cos(theta) is not a phase-group homomorphism -- gap=-cos(phi) - cos(theta) + cos(phi + theta)
+  [PASS] sum_j cos(theta_j) is K/CPT-even over records
+  [PASS] sum_j cos(theta_j) remains outside the homomorphism boundary
+  [PASS] hostile guard is preserved in split note
+
+----------------------------------------------------------------------------------------
+T7 - modulus/log-modulus survives
+----------------------------------------------------------------------------------------
+  [PASS] log|z| is additive on products
+  [PASS] log|z| is K/CPT-even
+
+----------------------------------------------------------------------------------------
+T8 - source-boundary guard
+----------------------------------------------------------------------------------------
+  [PASS] split note carries boundary phrase: (context handle, not a citation-graph dependency)
+  [PASS] split note carries boundary phrase: MINIMAL_AXIOMS_2026-06-05.md
+  [PASS] split note carries boundary phrase: does not identify the physical strong-CP mass-orientation readout
+  [PASS] split note carries boundary phrase: does not identify AC_phi_lambda species data
+  [PASS] split note carries boundary phrase: does not derive the determinant-character/log-character boundary
+  [PASS] split note carries boundary phrase: bare_retained_allowed: false
+  [PASS] split note has no markdown dependency edge to parent target
+  [PASS] parent still names conditional boundary: post-audit source firewall removes bridge-discharge language
+  [PASS] parent still names conditional boundary: physical-readout
+  [PASS] parent still names conditional boundary: determinant-character / log-character
+  [PASS] bridge-discharge wording absent: discharges the physical
+  [PASS] bridge-discharge wording absent: closes strong-CP
+  [PASS] bridge-discharge wording absent: closes AC_phi_lambda
+  [PASS] bridge-discharge wording absent: retire any Tier-A admission
+  [PASS] bridge-discharge wording absent: promoted to retained
+  [PASS] bridge-discharge wording absent: retained on the actual surface
+
+========================================================================================
+TOTAL: PASS=34 FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -15,20 +15,24 @@ holds identically on Herm_circ(3). Therefore spectrum-side Koide
 (equivalently `a^2 = 2 |b|^2`). No independent operator-side primitive
 is needed once the spectrum-side closure is accepted.
 
-Tasks exercised by the runner (T1 .. T9) use sympy for the symbolic
+Tasks exercised by the runner (T1 .. T21) use sympy for the symbolic
 bridge identity, a numerical realization at PDG charged-lepton masses,
-and a random-matrix family scan to rule out coincidence. Every PASS is
-keyed to a substantive computation; there are no hard-coded True values.
+random-matrix scans to rule out coincidence, and source-boundary checks
+against the paired notes. Every PASS is keyed to a substantive computation or
+an explicit source-boundary phrase; there are no hard-coded True values.
 
   T1 Hermitian circulant construction is algebraically closed
   T2 Eigenvalues lam_k = a + b omega^k + bbar omega^{-k} are real
   T3 Bridge  a_0 = sqrt(3) a  (exact symbolic)
   T4 Bridge  |z|^2 = 3 |b|^2  (exact symbolic)
   T5 Bridge identity a_0^2 - 2|z|^2 = 3 (a^2 - 2 |b|^2)  (exact symbolic)
-  T6 PDG charged-lepton Q ~ 2/3
-  T7 PDG numerical kappa = a^2/|b|^2 ~ 2
-  T8 Bridge holds pointwise on 200 random Herm_circ(3) samples
-  T9 Bridge residual collapses Koide-closure equivalence
+  T6 Correct cubic-trace phase diagnostic for the demotion note
+  T7 PDG charged-lepton Q ~ 2/3
+  T8 PDG numerical kappa = a^2/|b|^2 ~ 2
+  T9 Bridge holds pointwise on 200 random Herm_circ(3) samples
+  T10 Bridge residual collapses Koide-closure equivalence
+  T11..T17 Demotion-note source-boundary checks
+  T18..T21 Bridge-note source-boundary checks
 """
 
 from __future__ import annotations
@@ -44,7 +48,22 @@ PASS = 0
 FAIL = 0
 
 ROOT = Path(__file__).resolve().parents[1]
+BRIDGE_NOTE = ROOT / "docs" / "KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md"
 DEMOTION_NOTE = ROOT / "docs" / "KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md"
+BRIDGE_REQUIRED_PHRASES = [
+    "**Type:** bounded_theorem",
+    "**Claim type:** bounded_theorem",
+    "bounded theorem / exact bridge-corollary support",
+    "This note does not prove spectrum-side `Q = 2/3`",
+    "does not set retained status",
+    "bounded bridge corollary with zero symbolic residual",
+]
+BRIDGE_FORBIDDEN_PHRASES = [
+    "proposed_retained positive theorem",
+    "Berry + Brannen already close the spectrum side",
+    "operator-side closure comes free",
+    "second independent closure route",
+]
 
 
 def check(label: str, cond: bool, detail: str = "") -> bool:
@@ -283,6 +302,28 @@ check(
     and "alternative attack routes remain open" in demotion_norm
     and "no currently retained framework theorem delivers it" not in demotion_norm
     and "not a corollary of any retained framework theorem currently" not in demotion_norm,
+)
+
+print("\nSection F — bridge note source-boundary checks")
+
+bridge_note = BRIDGE_NOTE.read_text(encoding="utf-8")
+bridge_norm = normalize(bridge_note)
+
+check(
+    "T18 bridge note declares bounded_theorem metadata",
+    all(phrase in bridge_note for phrase in BRIDGE_REQUIRED_PHRASES[:2]),
+)
+check(
+    "T19 bridge note states bridge-corollary support boundary",
+    all(phrase.lower() in bridge_norm for phrase in BRIDGE_REQUIRED_PHRASES[2:]),
+)
+check(
+    "T20 bridge note removes old retained-route overclaim phrases",
+    all(phrase.lower() not in bridge_norm for phrase in BRIDGE_FORBIDDEN_PHRASES),
+)
+check(
+    "T21 bridge note runner transcript is current",
+    "TOTAL: PASS=21 FAIL=0" in bridge_note,
 )
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

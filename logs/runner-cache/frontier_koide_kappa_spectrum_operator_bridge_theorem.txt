@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py
-runner_sha256: 90f0ae4ebc238675fd241e43283c02c30bb666c0ea842c73f3a92137a7cf0fe2
+runner_sha256: c3736c5e0b12d8c1af2603b333bc225788669068dd17dfde30faad2f4e28376a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 Section A — symbolic Hermitian circulant and Fourier bridge
@@ -33,7 +33,13 @@ Section E — MRU demotion source-boundary checks
   [PASS] T16 demotion note narrows the SO(2) quotient failure to Path A
   [PASS] T17 demotion note leaves alternative quotient attack routes open
 
-TOTAL: PASS=17 FAIL=0
+Section F — bridge note source-boundary checks
+  [PASS] T18 bridge note declares bounded_theorem metadata
+  [PASS] T19 bridge note states bridge-corollary support boundary
+  [PASS] T20 bridge note removes old retained-route overclaim phrases
+  [PASS] T21 bridge note runner transcript is current
+
+TOTAL: PASS=21 FAIL=0
 
 ----- stderr -----
 

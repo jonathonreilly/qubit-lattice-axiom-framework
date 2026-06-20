@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/complex_action_kernel_vs_gravity.py
-runner_sha256: 55b3d7b69cbac0a20814d0933bce8ca6746b7fdd3ab5cb5495acea5acd19047b
+runner_sha256: bde1bb69a44750c46001f01762a51581c39d5f0b46e2b2de7709f762e6a49ae8
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 126.25
+elapsed_sec: 83.72
 status: ok
 ----- stdout -----
 ===========================================================================
-COMPLEX ACTION: KERNEL-GENERIC vs GRAVITY-SPECIFIC
+COMPLEX ACTION: LOCAL KERNEL DAMPING vs DETECTOR ESCAPE
 drift=0.2, restore=0.7
 ===========================================================================
 
@@ -45,17 +45,29 @@ FIELD: GRAVITY (s=0.004)
 
 SEPARATION OF EFFECTS
 
-  KERNEL-GENERIC (escape < 1 at gamma > 0):
-    present for UNIFORM field (no spatial structure)
-    present for GRAVITY field
-    NOT present for ZERO field
-    mechanism: exp(-k*gamma*L*f) < 1 whenever f > 0
+  LOCAL KERNEL DAMPING:
+    exp(-k*gamma*L*f_ij) < 1 for each link with f_ij > 0 and gamma > 0
+    this is local link attenuation, not a detector-escape theorem
+
+  DETECTOR ESCAPE (tested finite setup):
+    gamma=0.5 suppresses total detector escape for the tested nonzero fields
+    gamma=0.1 and gamma=0.2 do not uniformly suppress total detector escape
 
   GRAVITY-SPECIFIC (deflection TOWARD -> AWAY):
-    present ONLY for GRAVITY field (1/r spatial structure)
-    NOT present for UNIFORM field (no gradient)
-    NOT present for ZERO field
+    tested 1/r field flips TOWARD at gamma=0 to AWAY by gamma=0.2
+    uniform controls do not show that crossover
     mechanism: 1/r gradient couples to beam centroid
+
+BOUNDARY CHECKS
+PASS: local attenuation factor is below one for f>0 and gamma>0 -- exp(-5*0.1*1*0.005)=0.997503122397
+PASS: zero field leaves detector escape and centroid unchanged
+PASS: gamma=0.5 suppresses detector escape for all tested nonzero fields -- UNIFORM (f=0.005): 0.7888, UNIFORM (f=0.01): 0.6229, GRAVITY (s=0.004): 0.9608
+PASS: small-gamma detector-escape overclaim is explicitly blocked -- UNIFORM (f=0.005)@0.1: 1.1065, UNIFORM (f=0.005)@0.2: 1.0167, UNIFORM (f=0.01)@0.1: 1.2245, UNIFORM (f=0.01)@0.2: 1.0340, GRAVITY (s=0.004)@0.1: 1.0157, GRAVITY (s=0.004)@0.2: 1.0017
+PASS: tested gravity field has TOWARD -> AWAY centroid crossover by gamma=0.2
+PASS: uniform controls do not carry the gravity centroid crossover
+PASS: archived note states the narrowed boundary
+TOTAL: PASS=7 FAIL=0
+VERDICT: THRESHOLDED DETECTOR-ESCAPE BOUNDARY VERIFIED
 
 ----- stderr -----
 

@@ -44,6 +44,8 @@ already been stated. Direct citations must not use this note as authority for:
 The paired runner now scans direct source citations to this file and rejects
 contexts that still present the row as retained physical `delta = 2/9`, a
 partial physical closure, a PDG comparator, or a live radian-bridge authority.
+Generated queue snapshots such as `docs/repo/FRONT_DOOR_STATUS.md` are not
+source-claim citations and are excluded from this firewall.
 Historical notes that need the old residual-postulate `P` language should cite
 the explicit radian-bridge no-go notes instead; this repaired note is only the
 formal ratio identity.

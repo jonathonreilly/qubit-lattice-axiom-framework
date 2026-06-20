@@ -37,6 +37,24 @@ supplied-context algebra above.
 No new axiom, Tier-A admission, measurement primitive, probability axiom,
 arbitrary readout principle, or audit-status change is introduced.
 
+## 2026-06-17 paired no-go: context/generator nonidentifiability
+
+The companion no-go
+[`RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md`](RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md)
+makes the supplied-input boundary executable.
+
+It proves on the same one-qubit source state that the cited projective/Lueders
+finite algebra admits multiple complete readout contexts with different
+probability vectors, while the post-record realized atom/count update remains
+the same one-hot grammar after selection. It also exhibits finite stochastic
+and Markov-generator witnesses showing that a one-step production probability
+vector does not identify the physical kernel, generator, or clock/rate unit.
+
+Therefore this row remains exactly a supplied-context finite algebra theorem.
+It may not be cited as an endogenous readout-context theorem or physical
+record-production generator theorem unless a separate retained authority is
+added by later review/audit.
+
 ## 2026-06-12 audit firewall: no retained production-kernel promotion
 
 No further repair is needed for the stated supplied-context finite algebra:

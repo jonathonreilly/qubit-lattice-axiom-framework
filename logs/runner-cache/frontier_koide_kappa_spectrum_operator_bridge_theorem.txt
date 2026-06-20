@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py
-runner_sha256: e6cdcf0375a4a0bd634474aaff4c9013e2d697230e26ec9cb67e1855fb573c51
+runner_sha256: 8405dde5cf35b7d3b344c1c0a5596b098e570adc2f8fd101faa355aa6a3bd1b6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 Section A — symbolic Hermitian circulant and Fourier bridge
@@ -30,8 +30,10 @@ Section E — MRU demotion source-boundary checks
   [PASS] T13 block-total route is bounded support, not standalone closure
   [PASS] T14 demotion note prints the corrected cubic trace diagnostic
   [PASS] T15 demotion note removes old retained-route overclaim phrases
+  [PASS] T16 demotion note records the 2026-06-19 scope_too_broad repair (Path-A narrowing)
+  [PASS] T17 demotion note does not assert the no-go exhausts all attack routes
 
-TOTAL: PASS=15 FAIL=0
+TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----
 

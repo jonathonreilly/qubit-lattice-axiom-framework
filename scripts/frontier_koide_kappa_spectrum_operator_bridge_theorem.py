@@ -270,6 +270,21 @@ check(
     and "two retained independent routes" not in demotion_norm
     and "independent second closure route" not in demotion_norm,
 )
+check(
+    "T16 demotion note records the 2026-06-19 scope_too_broad repair (Path-A narrowing)",
+    "## 2026-06-19 scope_too_broad repair" in demotion_note
+    and "path a does not derive the so(2)-quotient" in demotion_norm
+    and "remaining attack routes are framed as open, not exhausted"
+    in demotion_norm,
+)
+check(
+    "T17 demotion note does not assert the no-go exhausts all attack routes",
+    "not derivable from retained framework theorems" not in demotion_norm
+    and "is not a corollary of any retained framework theorem" not in demotion_norm
+    and "no currently retained framework theorem delivers it" not in demotion_norm
+    and "other attack routes" in demotion_norm
+    and "remain open, not closed" in demotion_norm,
+)
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
 if FAIL > 0:

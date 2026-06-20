@@ -12,7 +12,7 @@ from typing import Iterable
 
 NOTE_PATH = Path("docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md")
 QCD_LOW_NOTE_PATH = Path("docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md")
-EXPECTED_SUMMARY = "SUMMARY: PASS=24 FAIL=0"
+EXPECTED_SUMMARY = "SUMMARY: PASS=26 FAIL=0"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -160,6 +160,8 @@ def main() -> int:
     note_text = NOTE_PATH.read_text(encoding="utf-8")
     qcd_low_text = QCD_LOW_NOTE_PATH.read_text(encoding="utf-8")
     required_note_phrases = [
+        "**Claim type:** bounded_theorem",
+        "**Type:** bounded_theorem",
         "leading-order continuity matching kernel",
         "This note does not derive physical threshold masses.",
         "This note does not supply higher-loop MSbar decoupling constants.",

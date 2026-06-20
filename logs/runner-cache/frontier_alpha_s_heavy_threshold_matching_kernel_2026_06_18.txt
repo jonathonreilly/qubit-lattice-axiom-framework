@@ -1,4 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py
+runner_sha256: 410709a6a7ee4fc7bf918369d23dd464829697b22ab65b40e714be071fbed6aa
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
 === Source-boundary checks ===
+[PASS] note declares boundary: **Claim type:** bounded_theorem
+[PASS] note declares boundary: **Type:** bounded_theorem
 [PASS] note declares boundary: leading-order continuity matching kernel
 [PASS] note declares boundary: This note does not derive physical threshold masses.
 [PASS] note declares boundary: This note does not supply higher-loop MSbar decoupling constants.
@@ -34,4 +44,7 @@
 [PASS] domain guard rejects skipped flavor crossings
 [PASS] falsifier detects a non-continuous threshold jump
 
-SUMMARY: PASS=24 FAIL=0
+SUMMARY: PASS=26 FAIL=0
+
+----- stderr -----
+

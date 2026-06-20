@@ -1,11 +1,83 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_three_axiom_clean_base_exact.py
-runner_sha256: b4c069928b8e45a63d1c433546f9b42bc5f3f04bfd3ea6c43b3760dc08e23810
+runner_sha256: 0f3b12b2d698e7a9c67cdc1546bc8b2f8eaf230bd46fa0266a90b1634973ed60
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
+PASS: Source note exists
+      docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: Policy exists
+      docs/audit/AXIOM_MINIMALITY_POLICY.md
+PASS: Axiom-premise registry exists
+      docs/audit/data/axiom_premise_nodes.json
+PASS: Tier-A registry exists
+      docs/audit/data/tier_a_admissions.json
+PASS: Source type is meta
+      framework memo, not theorem row
+PASS: Source status is current public framework axiom memo
+      audit status remains independent
+PASS: Source cites owner approval authority
+      section 6
+PASS: Source registers primary runner
+      scripts/audit_companion_three_axiom_clean_base_exact.py
+PASS: Registry canonical ids include minimal_axioms
+      
+PASS: Registry node exists
+      minimal_axioms
+PASS: Registry current path points to this note
+      docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: Registry aliases current 2026-06-05 memo
+      ['docs/MINIMAL_AXIOMS_2026-05-20.md', 'docs/MINIMAL_AXIOMS_2026-06-04.md', 'docs/MINIMAL_AXIOMS_2026-06-05.md']
+PASS: Registry aliases prior 2026-06-04 Record memo
+      
+PASS: Registry aliases 2026-05-20 local-algebra memo
+      
+PASS: Registry does not alias superseded 2026-04-11 four-input stack
+      prevents stale A4/g_bare laundering
+PASS: Registry does not alias restored 2026-05-03 transition memo
+      keeps transition memo separate
+PASS: Registry note blocks observable-principle laundering
+      
+PASS: Registry note records Record no-supply boundary
+      
+PASS: Policy records 2026-06-05 Record refinement
+      
+PASS: Policy no-laundering clause lists forbidden Record imports
+      
+PASS: Tier-A genuine admitted input count remains two
+      2
+PASS: minimal_axioms is not a Tier-A derivation target
+      
+PASS: Tier-A registry records Record as reclassified primitive
+      
+PASS: Tier-A Record reclassification source is current memo
+      docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: Tier-A Record boundary forbids P2/log-det/source-action laundering
+      
+PASS: Note names exactly three framework axioms
+      
+PASS: Lattice no-supply clause is present
+      
+PASS: Quantum no-supply clause is present
+      
+PASS: Record no-supply clause is present
+      
+PASS: Audit-pipeline treatment says chain-satisfy without bounding
+      
+PASS: Observable-principle parent is explicitly outside the axiom node
+      
+PASS: Open gates outside axioms include staggered realization
+      
+PASS: Open gates outside axioms include theta
+      
+PASS: Open gates outside axioms include g_bare
+      
+PASS: Open gates outside axioms include scale self-consistency
+      
+PASS: Axiom/primitive purity guard passes
+        OK   realized_state_primitive (docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md): pure premise content
 PASS: Quantum: Pauli generators satisfy the Cl(3,0) anticommutator table
       {sigma_i, sigma_j} = 2 delta_ij I checked as 2x2 complex matrices
 PASS: Quantum: no nonzero 2x2 complex matrix anticommutes with all three Pauli generators
@@ -20,6 +92,9 @@ PASS: Record: durable means the recorded outcome is fixed once registered
       re-reading the stored outcome does not resample, reselect, or change it
 PASS: Boundary: runner imports no context-generation/log-det/P2/measurement/dynamics/scale conclusion
       script checks only algebraic notation, graph adjacency, finite orbits, durability bookkeeping, and finite additivity
+
+runner_check_breakdown = {A: 43, B: 0, C: 0, D: 0, total_pass: 43}
+TOTAL: PASS=43 FAIL=0
 RESULT: PASS
 
 ----- stderr -----

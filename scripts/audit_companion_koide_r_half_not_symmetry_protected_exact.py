@@ -2,14 +2,21 @@
 Audit companion (exact, sympy) for
 KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md
 
-No-go: within the C3-circulant generation Yukawa family, the Koide value
-r = |b|^2/a^2 = 1/2 (Q = 2/3) is not fixed by the tested C3/S3 unitary
-symmetry-protection routes. It is a norm-balance condition (equal energy in the
-C3 singlet and doublet channels). Full axis-permutation symmetry S3 forces TWO
-DEGENERATE masses; C3 leaves r free; there is no intermediate C3 < G < S3
-subgroup; and the 1-dim singlet and 2-dim doublet cannot be swapped by a
-unitary isomorphism. Dynamical, variational, nonunitary, and extra-structure
-mechanisms are left open.
+Bounded algebraic support identity over the four explicitly-checked C3/S3
+unitary routes. Within the C3-circulant generation Yukawa family, the Koide
+value r = |b|^2/a^2 = 1/2 (Q = 2/3) is not fixed by any of these four checked
+routes: (i) C3 invariance, (ii) S3 axis-permutation enhancement, (iii) the
+intermediate C3 < G < S3 subgroup, (iv) a unitary singlet/doublet swap. For
+those four routes it is a norm-balance condition (equal energy in the C3 singlet
+and doublet channels). Full axis-permutation symmetry S3 forces TWO DEGENERATE
+masses; C3 leaves r free; there is no intermediate C3 < G < S3 subgroup; and the
+1-dim singlet and 2-dim doublet cannot be swapped by a unitary isomorphism.
+
+This runner verifies ONLY these four routes. It does NOT claim the four exhaust
+the space of symmetry-protection mechanisms: other symmetry routes, and
+dynamical, variational, nonunitary, and extra-structure mechanisms, are left
+open. The note makes no claim that r = 1/2 is forced or derived; r = 1/2 is a
+stable dial setting.
 
 Reproven by finite algebra; no external mass values, no fits, no imported authorities.
 """
@@ -75,8 +82,10 @@ print("\n%d PASS, %d FAIL" % (P, F))
 if F:
     raise SystemExit(1)
 print(
-    "\nNO-GO verified: r=1/2 (Q=2/3) is the equal-singlet/doublet-energy / 45-degree condition (1,2); it\n"
-    "is NOT fixed by the tested C3/S3 unitary symmetry routes -- S3 forces degeneracy (3), C3 leaves\n"
-    "r free (4), and the 1-vs-2-dim irreps cannot be swapped (5). Any positive derivation must enter\n"
-    "through dynamics or extra structure rather than through those symmetry routes."
+    "\nBOUNDED SUPPORT IDENTITY verified over the four explicitly-checked C3/S3 unitary routes:\n"
+    "r=1/2 (Q=2/3) is the equal-singlet/doublet-energy / 45-degree condition (1,2); it is NOT fixed\n"
+    "by any of these four checked routes -- S3 forces degeneracy (3), C3 leaves r free (4), and the\n"
+    "1-vs-2-dim irreps cannot be swapped (5). These four routes are NOT asserted to exhaust the\n"
+    "symmetry-protection space; other symmetry routes are left open. Any positive derivation must\n"
+    "enter through dynamics, extra structure, or a symmetry route other than the four checked here."
 )

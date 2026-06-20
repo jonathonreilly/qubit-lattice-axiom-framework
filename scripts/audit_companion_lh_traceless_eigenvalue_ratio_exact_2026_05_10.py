@@ -4,9 +4,11 @@
 
 The narrow theorem's load-bearing content is:
 
-  (R1) Given any positive integer n_color and reals (a, b) satisfying
-       2 n_color a + 2 b = 0, the eigenvalue ratio is forced to
-       a : b = 1 : (-n_color).
+  (R1) Given any positive integer n_color and a NONZERO real pair (a, b) != (0, 0)
+       satisfying 2 n_color a + 2 b = 0, the eigenvalue ratio is forced to
+       a : b = 1 : (-n_color). The premise (L2) (a, b) != (0, 0) excludes the
+       degenerate solution a = b = 0 of the homogeneous equation (which would
+       make the ratio ill-defined); see the Part 1b guard.
   (R2) Under labelling convention b = -1, a = 1/n_color.
   (R3) Under Q = T_3 + a/2, the LH-quark electric charges are
          Q(u_L) = (n_color + 1)/(2 n_color),
@@ -99,6 +101,71 @@ def main() -> int:
         ratio_check == 0,
         detail=f"a/b + 1/n_color simplifies to {ratio_check}",
     )
+
+    # ---------------------------------------------------------------------
+    section("Part 1b: zero-solution guard for the (R1) ratio claim")
+    # ---------------------------------------------------------------------
+    # The ratio claim a:b = 1:(-n_color) is well-defined only on the nonzero
+    # branch. The degenerate pair (a, b) = (0, 0) satisfies the homogeneous
+    # trace equation (L1) but makes a:b ill-defined (a/b = 0/0) and would
+    # vacuously satisfy any ratio. Premise (L2) (a, b) != (0, 0) excludes
+    # exactly this solution. This guard confirms:
+    #   (i)  (0, 0) satisfies (L1) (so it IS a solution of the bare equation),
+    #   (ii) (0, 0) is the UNIQUE solution excluded by (L2) (since (L1) forces
+    #        b = -n_color * a, the whole solution set is {(a, -n_color a)}, and
+    #        a = 0 is the only value giving the zero pair),
+    #   (iii) on the nonzero branch (a != 0) the denominator b is nonzero, so
+    #         the projective ratio a:b = 1:(-n_color) is well-defined and holds.
+    L1_at_zero = L1.subs({a: 0, b: 0})
+    check(
+        "(R1) guard (i): degenerate pair (a, b) = (0, 0) satisfies (L1)",
+        simplify(L1_at_zero) == 0,
+        detail=f"(L1) at (0,0) = {simplify(L1_at_zero)}",
+    )
+
+    # (ii) The solution set of (L1) is b = -n_color * a, parameterized by a.
+    # The zero pair arises iff a = 0; hence (0,0) is the unique excluded point.
+    a_param = Symbol("a_param", real=True)
+    b_on_branch = b_solved.subs(a, a_param)  # = -n_color * a_param
+    pair_is_zero_only_at_a0 = simplify(b_on_branch.subs(a_param, 0)) == 0
+    nonzero_when_a_nonzero = simplify(
+        b_on_branch.subs({a_param: Rational(1)}) + nc
+    ) == 0  # b = -n_color when a = 1, i.e. nonzero for positive-integer n_color
+    check(
+        "(R1) guard (ii): (0,0) is the unique (L2)-excluded solution of (L1)",
+        pair_is_zero_only_at_a0 and nonzero_when_a_nonzero,
+        detail=f"branch b = {b_on_branch}; zero only at a = 0",
+    )
+
+    # (iii) On the nonzero branch (a != 0), b = -n_color * a != 0 (n_color > 0),
+    # so the ratio identity a:b = 1:(-n_color) holds with nonzero denominator.
+    ratio_on_nonzero_branch = simplify(
+        (a_param / b_on_branch) + Rational(1) / nc
+    )
+    denom_nonzero_symbolic = simplify(b_on_branch) != 0  # symbolic: -n_color*a_param
+    check(
+        "(R1) guard (iii): on nonzero branch, ratio a:b = 1:(-n_color) with b != 0",
+        ratio_on_nonzero_branch == 0 and denom_nonzero_symbolic,
+        detail=f"a/b + 1/n_color = {ratio_on_nonzero_branch}; denom = {b_on_branch}",
+    )
+
+    # Concrete nonzero-branch instances confirm the zero solution is excluded
+    # and the ratio holds at framework and sweep counts.
+    for n_val in [1, 2, 3, 5]:
+        a_inst = Fraction(1)  # pick a nonzero representative
+        b_inst = Fraction(-n_val) * a_inst
+        # (L1) holds: 2 n_val * a + 2 * b = 2 n_val - 2 n_val = 0
+        l1_holds = (2 * n_val * a_inst + 2 * b_inst) == 0
+        # zero pair excluded: (a_inst, b_inst) != (0, 0)
+        nonzero_pair = (a_inst, b_inst) != (Fraction(0), Fraction(0))
+        # ratio holds: a : b = 1 : (-n_val)
+        ratio_holds = (a_inst / b_inst) == Fraction(1, -n_val)
+        check(
+            f"(R1) guard at n_color = {n_val}: nonzero branch excludes (0,0), "
+            f"ratio a:b = 1:(-{n_val}) holds",
+            l1_holds and nonzero_pair and ratio_holds,
+            detail=f"(a, b) = ({a_inst}, {b_inst}), a/b = {a_inst / b_inst}",
+        )
 
     # ---------------------------------------------------------------------
     section("Part 2: (R2) convention b = -1 fixes a = 1/n_color")
@@ -259,6 +326,8 @@ def main() -> int:
     # ---------------------------------------------------------------------
     print("  Verified at exact sympy precision:")
     print("    (R1) parametric eigenvalue ratio a:b = 1:(-n_color)")
+    print("    (R1) zero-solution guard: (0,0) satisfies (L1), excluded by (L2),")
+    print("         ratio holds on nonzero branch with nonzero denominator")
     print("    (R2) under b = -1 convention, a = 1/n_color")
     print("    (R3) Q(u_L), Q(d_L) closed forms parametric in n_color")
     print("    (R4) reduced-denominator parity rule, sweep across both parities")

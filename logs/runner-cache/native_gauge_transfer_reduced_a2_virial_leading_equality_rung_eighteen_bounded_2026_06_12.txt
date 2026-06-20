@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_reduced_a2_virial_leading_equality_rung_eighteen_bounded_2026_06_12.py
+runner_sha256: d29e1b73209c2523b35e6603f5e3d595ec0cae399b57e49eb6b67cc2c31663e3
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 7.12
+status: ok
+----- stdout -----
+W97 reduced-A2 virial leading-equality runner
+Exact constants are symbolic; finite rows are witnesses only.
+
+PASS: D H = 3 H exactly
+PASS: D Q = 2 Q exactly
+PASS: D(H exp(-Q)) = (3 - 2Q) H exp(-Q) exactly
+PASS: [D,L] = -2 L on an inhomogeneous polynomial sample
+PASS: commutator expectation solves to A_i + B_i/mu_i = 3/2
+      solved=3/2
+PASS: virial relation forces c_J = c_D at leading order
+wrong_signed_combo_sample state0=-7/2 state1=-11/2
+PASS: wrong signed combination A_i - B_i/mu_i is visibly state-dependent
+wrong_confiner_point_residual_at_1_2=-12*exp(-9)
+PASS: wrong confiner breaks the retained Q-insertion virial clause
+wrong_Nc_sample correct_3C2_over_beta=79/10 wrong_2C2_over_beta=79/15
+PASS: wrong N_c changes the fixed-weight derivative value exactly
+wrong_L_normalization_sample retained_A_plus_B_over_mu=5/2
+PASS: wrong L normalization breaks the retained A_i + B_i/mu_i = 3/2 value
+finite_saddle_virial_witness_rows
+  beta=100 shell=40 state=0 A=-1.290798912766 B_over_mu=2.755652576071 A_plus_B=1.464853663305 wrong_A_minus_B=-4.046451488837
+  beta=100 shell=40 state=1 A=-2.151998282794 B_over_mu=3.606747544655 A_plus_B=1.454749261861 wrong_A_minus_B=-5.758745827449
+  beta=100 shell=40 state=2 A=-2.589099302807 B_over_mu=4.039899721918 A_plus_B=1.450800419111 wrong_A_minus_B=-6.628999024724
+  beta=200 shell=56 state=0 A=-1.291236319020 B_over_mu=2.773674167092 A_plus_B=1.482437848072 wrong_A_minus_B=-4.064910486112
+  beta=200 shell=56 state=1 A=-2.152667529414 B_over_mu=3.630073278816 A_plus_B=1.477405749402 wrong_A_minus_B=-5.782740808230
+  beta=200 shell=56 state=2 A=-2.589352962915 B_over_mu=4.064797896326 A_plus_B=1.475444933410 wrong_A_minus_B=-6.654150859241
+  beta=400 shell=80 state=0 A=-1.291455921731 B_over_mu=2.782677559326 A_plus_B=1.491221637595 wrong_A_minus_B=-4.074133481057
+  beta=400 shell=80 state=1 A=-2.153001967920 B_over_mu=3.641711932886 A_plus_B=1.488709964966 wrong_A_minus_B=-5.794713900806
+  beta=400 shell=80 state=2 A=-2.589481254749 B_over_mu=4.077212992329 A_plus_B=1.487731737580 wrong_A_minus_B=-6.666694247078
+finite_plus_errors=['0.049200', '0.024555', '0.012268']
+finite_plus_state_spreads=['0.014053', '0.006993', '0.003490']
+finite_wrong_combo_spreads=['2.582548', '2.589240', '2.592561']
+finite_leading_margins_state0_state1=['0.010104', '0.005032', '0.002512']
+PASS: finite saddle A_i+B_i/mu_i errors decrease toward 3/2
+PASS: finite saddle state spread of A_i+B_i/mu_i decreases
+PASS: wrong finite combination remains visibly state-dependent
+PASS: finite leading c_J-c_D margin between states shrinks toward zero
+PASS: note carries the exact status-authority sentence
+PASS: note declares controlled claim type and source-side boundary
+PASS: note links the runner and SHA-pinned cache path
+PASS: one-hop authorities are markdown links
+PASS: quote anchors for H, Q, L, T, c_J, c_D, and subleading warning are present
+PASS: note fences W90 witnesses and avoids comparator promotion
+PASS: note states the exact subleading stopping step
+PASS: note differentiates new material from W96/W95/W86/W90
+PASS: note avoids forbidden overreach phrases
+PASS: note includes the no-go discipline gate for the subleading obstruction
+PASS: note records both ambiguity readings
+PASS: cache path is canonical for this runner
+PASS: runner uses no fit helpers
+PASS: no suspicious float-to-Fraction exact constants are used
+
+TOTAL: PASS=28, FAIL=0
+
+----- stderr -----
+

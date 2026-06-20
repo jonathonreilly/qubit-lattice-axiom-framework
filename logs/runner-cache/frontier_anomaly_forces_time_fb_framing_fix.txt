@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_anomaly_forces_time_fb_framing_fix.py
-runner_sha256: 25c5a8d0f31a39eec575cfe86cb445606b149b8cac2f615fb4089985e5386efa
+runner_sha256: 0fdaf8db1d3fac9ed5612818e2a8c16e4108434a56d90796566a41370368f7e3
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -9,17 +9,31 @@ status: ok
 ==============================================================================
 ANOMALY_FORCES_TIME F-B framing fix verifier
 ==============================================================================
-  [PASS] [A] Parent note exists  (ANOMALY_FORCES_TIME_THEOREM.md, 25235 bytes)
+  [PASS] [A] F-B meta note exists  (ANOMALY_FORCES_TIME_FB_NOTE_2026-05-17.md, 5549 bytes)
+  [PASS] [A] Parent note exists  (ANOMALY_FORCES_TIME_THEOREM.md, 26203 bytes)
 
-PART 1: F-B Remark is present
-  [PASS] [A] Remark mentions F-B finding identifier
-  [PASS] [A] Remark dated 2026-05-17
-  [PASS] [A] Remark uses 'derived vs inherited' framing
-  [PASS] [A] Remark says Step 3 alone does not select d_t = 1
-  [PASS] [A] Remark says admission (iv) presupposes real-time Lorentzian
-  [PASS] [A] Remark explicitly says neither step alone forces d_t = 1
+PART 1: source-boundary registration on the F-B meta note
+  [PASS] [A] Meta note declares claim type meta
+  [PASS] [A] Meta note keeps independent-audit status authority
+  [PASS] [A] Meta note says it is not a new science claim
+  [PASS] [A] Meta note declares primary runner
+  [PASS] [A] Meta note declares cached output
+  [PASS] [A] Meta note records current mainline reconciliation
+  [PASS] [A] Meta note says single-clock source is context-only
 
-PART 2: proof structure unchanged (still 5 steps + conclusion d_t = 1)
+PART 2: current parent theorem preserves the F-B repair
+  [PASS] [A] Parent theorem names F-B history
+  [PASS] [A] Parent Step 3 preserves odd-time lower bound
+  [PASS] [A] Parent claim scope says lower bound is computed
+  [PASS] [A] Parent Step 4 is explicitly B-AXIS conditional
+  [PASS] [A] B-AXIS declares exactly one supplied blocked time step
+  [PASS] [A] B-AXIS forbids an admitted independent second clock
+  [PASS] [A] Parent says it does not derive B-AXIS
+  [PASS] [A] Load-bearing statement separates lower bound from B-AXIS cap
+  [PASS] [A] Single-clock source is context-only, not load-bearing
+  [PASS] [A] No markdown dependency edge to single-clock source note
+
+PART 3: proof structure unchanged (still 5 steps + conclusion d_t = 1)
   [PASS] [A] Step 1 heading present
   [PASS] [A] Step 2 heading present
   [PASS] [A] Step 3 heading present
@@ -28,17 +42,19 @@ PART 2: proof structure unchanged (still 5 steps + conclusion d_t = 1)
   [PASS] [A] Final conclusion: signature (3,1)
   [PASS] [A] d_t in {1, 3, 5, ...} statement preserved
 
-PART 3: theorem status unchanged (still bounded_theorem submission)
+PART 4: theorem status unchanged (still bounded_theorem submission)
   [PASS] [A] Submission still bounded_theorem
-  [PASS] [A] Load-bearing class still B
   [PASS] [A] Independent audit ratification still required
+  [PASS] [A] Parent does not propose retained status
+  [PASS] [A] Meta note says theorem status is unchanged
 
 ==============================================================================
-SUMMARY: 17 PASS / 0 FAIL  (Class-A: 17)
+SUMMARY: 30 PASS / 0 FAIL  (Class-A: 30)
 ==============================================================================
 
 F-B FRAMING FIX VERIFIED
-  Step-4 Remark in place with derived-vs-inherited decomposition
+  Current parent theorem separates Step-3 lower bound from B-AXIS cap
+  Single-clock source is provenance context, not a dependency edge
   Proof structure unchanged (5 steps, d_t = 1 conclusion)
   Theorem status unchanged (bounded_theorem, class B)
 

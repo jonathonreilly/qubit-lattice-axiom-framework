@@ -1,8 +1,11 @@
 # Higgs Mass: Hierarchy Correction Analysis (Negative Result)
 
 **Date:** 2026-04-14
-**Status:** bounded - bounded or caveated result note
-direction. No hierarchy correction chain reduces m_H from 140.3 toward 125.
+**Status:** bounded-support negative result. No hierarchy correction chain
+reduces m_H from 140.3 toward 125.
+
+**Script:** `scripts/frontier_higgs_mass_hierarchy_correction.py`
+(source-side negative-result verifier; PASS=15 FAIL=0 on current source)
 
 ---
 
@@ -15,6 +18,37 @@ observed 125.25 GeV?
 **Answer: No.** The correction increases m_H. Full derivation below.
 
 ---
+
+## Negative-Result Discipline Gate
+
+This note is scoped only to the hierarchy/APBC correction route.
+
+- N1 route enumeration: replacing the L_t=2 curvature block with L_t=4 fails
+  because it raises the mass; applying the first-power `(7/8)` factor is a
+  numerical near miss but has no derivation; reapplying the fourth-root
+  hierarchy factor double-counts the correction already present in `v`; using
+  eigenvalue magnitude rather than curvature uses the wrong quantity; two-loop
+  CW, lattice-spacing convergence, and taste-breaking are separate open routes,
+  not hierarchy-chain closures.
+- N2 wall independence: the collapsed wall for the near-125 hierarchy route is
+  the missing derivation of an additional correction factor acting on `m_H/v`.
+- N3 hidden-wall scan: `u_0`, `v`, and the observed Higgs mass are explicit
+  inputs/comparators from the cited upstream surfaces; they are not supplied by
+  this negative result.
+- N4 residual matching: this note attacks only the claim that the hierarchy
+  correction chain reduces 140.3 GeV toward 125.25 GeV. It does not attack
+  loop, spacing, or taste-breaking corrections.
+- N5 rhetoric audit: the negative result holds for the L_t=4 APBC correction
+  and first-power near-miss described here, not for every possible Higgs-mass
+  repair route.
+- N6 partial-closure scan: a future retained derivation of a loop, spacing, or
+  taste-breaking correction could still close the Higgs gap; no new axiom or
+  primitive is inferred here.
+- N7 steelman: the strongest counterargument is the numerically close
+  first-power `(7/8)` branch. It remains a failed route here because no
+  framework derivation selects that power.
+- N8 cross-cycle echo: numerical-near-miss routes have caused overclaims
+  elsewhere; this note keeps the near miss only as a negative control.
 
 ## 1. Eigenvalue spectrum on the minimal APBC blocks
 
@@ -191,9 +225,9 @@ m_H/v.
 
 ---
 
-## 8. What DOES reduce m_H from 140.3 GeV?
+## 8. Separate candidate routes for reducing m_H from 140.3 GeV
 
-The 12% gap between 140.3 and 125.25 must close through:
+Separate candidate routes for the 12% gap between 140.3 and 125.25 include:
 
 1. **2-loop CW corrections.** The dominant O(alpha_s) correction to the
    top loop reduces m_H^2 by ~10-15%. Estimate:
@@ -207,7 +241,8 @@ The 12% gap between 140.3 and 125.25 must close through:
    into a (1,4,6,4,1) staircase, changing the effective N_taste in the
    per-channel curvature formula.
 
-None of these involve the hierarchy L_t=4 correction.
+These are separate open routes; none is supplied by the hierarchy L_t=4
+correction analyzed here.
 
 ---
 
@@ -224,7 +259,7 @@ mass formula, m_H goes UP to 150 GeV.
 close to 124.4, but there is no derivation justifying a first-power
 correction. The hierarchy uses (7/8)^{1/4}, which already enters v.
 
-**(c)** The previous agent likely confused the eigenvalue magnitude ratio
+**(c)** The prior branch likely confused the eigenvalue magnitude ratio
 (7/8)^{1/2} with the curvature ratio 8/7, and applied the wrong power
 to generate a number close to 125.
 
@@ -239,9 +274,10 @@ to generate a number close to 125.
 | per-taste curvature | 1/(4 u_0^2) | 1/(3.5 u_0^2) | 8/7 |
 | m_H (with v=246 GeV) | 140.3 | 150.0 | sqrt(8/7) |
 
-**m_H = v/(2 u_0) = 140.3 GeV remains the correct zero-parameter prediction.**
-The +12% gap to 125.25 GeV must close through 2-loop CW and lattice
-spacing convergence, not through hierarchy corrections.
+**m_H = v/(2 u_0) = 140.3 GeV remains the baseline value on this note's input
+surface.** The +12% gap to 125.25 GeV is not closed by the hierarchy/APBC
+correction analyzed here; separate loop, spacing, or taste-breaking routes
+remain open.
 
 ---
 

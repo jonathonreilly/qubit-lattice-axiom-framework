@@ -64,10 +64,10 @@ temporary worktree.
 
 ## PR Status
 
-Pending. After PR creation, update this file and `STATE.yaml` with the PR URL.
+Open:
+
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4469
 
 ## Next Exact Action
 
-Commit Block102, push the branch, open the review PR, patch this packet with
-the PR URL, then continue the campaign from a fresh worktree based on current
-`origin/main`.
+Continue the campaign from a fresh worktree based on current `origin/main`.

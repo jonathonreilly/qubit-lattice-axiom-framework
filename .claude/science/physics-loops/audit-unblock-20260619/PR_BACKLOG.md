@@ -2,14 +2,10 @@
 
 Branch: `physics-loop/audit-unblock-block98-20260620`
 Base: `main`
-Commit: branch HEAD after packet amendment; pre-amend commit was `9c71478d3`.
-Status: feature-branch push failed before PR creation.
-
-Push failure:
-
-```text
-fatal: could not read Username for 'https://github.com': Device not configured
-```
+Commit: branch HEAD after delivery-status update; pre-update commit was
+`18d5d62ff`.
+Status: PR opened and verified.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4451
 
 Proposed title:
 
@@ -17,7 +13,7 @@ Proposed title:
 [physics-loop][review-loop] audit-unblock block98: bounded-support post-record kernel-selection interface
 ```
 
-Recovery commands:
+Original recovery commands:
 
 ```bash
 git push -u origin physics-loop/audit-unblock-block98-20260620

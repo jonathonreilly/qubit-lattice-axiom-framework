@@ -138,8 +138,8 @@ def test_source_boundary_manifest() -> None:
     flat = " ".join(body.split())
     flat_lower = flat.lower()
     check(
-        "note records 2026-06-12 audit-named demotion",
-        "2026-06-12 Audit-Named Demotion" in body
+        "note records 2026-06-12 source-boundary demotion",
+        "2026-06-12 Source-Boundary Demotion" in body
         and "Admitted Inputs (runner-local diagnostic license)" in body,
         "demotion and admitted-input sections present",
     )
@@ -168,18 +168,44 @@ def test_source_boundary_manifest() -> None:
     )
     check(
         "note firewalls retained beta=6 surface claim after demotion",
-        "## 2026-06-12 audit firewall: no retained beta=6 surface claim" in body
+        "## 2026-06-12 source firewall: no retained beta=6 surface claim" in body
         and "do not derive the actual `beta = 6`\nplaquette" in body
         and "do not\nlicense any downstream beta=6 Wilson/Haar surface claim" in body
-        and "no retained/effective-bounded bridge,\nnew axiom, external comparator authority, or audit status" in body,
+        and "no retained/effective-bounded bridge,\nnew axiom, external comparator authority, or downstream status" in body,
         "source repair remains demotion-only",
     )
     check(
         "note explicitly elects admitted-input diagnostic option",
-        "## 2026-06-15 audit-boundary repair: second option elected" in body
+        "## 2026-06-15 source-boundary repair: second option elected" in body
         and "keep the row as\nan admitted-input runner-local diagnostic only" in body
         and "not a retained or\neffective-bounded authority" in body,
-        "auditor's second repair option is source-locked",
+        "source-boundary second option is source-locked",
+    )
+    check(
+        "note scopes row as non-downstream-licensed runner-local diagnostic only",
+        "## 2026-06-20 source-boundary repair: non-downstream-licensed scoping" in body
+        and "non-downstream-licensed runner-local diagnostic only." in flat
+        and "No downstream row may cite this row as a retained or effective-bounded bridge or as a derivation" in flat,
+        "source-boundary non-downstream-licensed scoping present; not a citeable bridge/derivation",
+    )
+    check(
+        "note records all four promotion authorities as unsupplied/open",
+        "authorities required *for promotion* are explicitly **unsupplied / open** here" in flat
+        and "NSPT coefficient packet" in flat
+        and "beta=6 Wilson normalization" in flat
+        and "MC comparator" in flat
+        and "F2 comparator" in flat
+        and flat.count("is supplied (open)") >= 4
+        and "not promotable" in flat
+        and "not licensed as a citeable bridge/derivation" in flat,
+        "NSPT packet, beta=6 normalization, MC comparator, F2 comparator all open; row not promotable",
+    )
+    check(
+        "note keeps 0.5934 MC value fenced as comparator-only, never a proof input",
+        "0.5934" in body
+        and "never a proof input" in flat
+        and "no comparator number in this note is licensed for downstream reuse" in flat,
+        "MC value stays a fenced comparator, never a derivation/proof input",
     )
     check(
         "note blocks downstream reuse of admitted beta=6 inputs",

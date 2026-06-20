@@ -2,7 +2,13 @@
 
 **Date:** 2026-04-28
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
-**Admitted context inputs:** staggered-Dirac realization derivation target (canonical parent: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`).
+**Load-bearing carrier input:** the retained finite-dimensional
+`H_hw=1 = C^3` operator surface and induced `C3[111]` cycle from
+[`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md).
+**Non-load-bearing physical-provenance boundary:** the broader
+staggered-Dirac physical-realization program remains outside this local
+matrix theorem. This note does not use that open physical-carrier provenance
+as a proof input for the `C3` Ward normal form.
 
 **Status:** exact support/boundary theorem for Lane 3 target 3C. This
 block-06 artifact identifies the smallest local source/readout primitive that
@@ -182,25 +188,44 @@ the Lane 3 quark-mass Ward source/readout law open.
 ```
 
 
-## Hypothesis set used (axiom-reset 2026-05-03)
+## Dependency rewire (2026-06-18)
 
-Per `MINIMAL_AXIOMS_2026-05-03.md`, this note depends on the **staggered-Dirac realization derivation target**, which is currently an open gate. The note's load-bearing claim defines or relies on fermion fields, fermion-number operators, fermion correlators, fermion bilinears, the staggered Dirac action, the BZ-corner doubler structure, the `hw=1` triplet, charged-lepton sector content, neutrino sector content, quark / hadron content, the Koide / PMNS / CKM observable surfaces, or the Grassmann CAR boundary structure — all of which depend on the staggered-Dirac realization derivation target listed in `MINIMAL_AXIOMS_2026-05-03.md`.
+The local theorem in this note needs only a supplied three-dimensional
+operator surface and a supplied oriented order-three cycle. That surface is
+now supplied by the retained finite-dimensional matrix theorem in
+[`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md):
 
-Canonical parent note: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (`claim_type: open_gate`). In-flight supporting work (see `MINIMAL_AXIOMS_2026-05-03.md`):
+1. `V = H_hw=1 = span(X1,X2,X3) = C^3`;
+2. three rank-one translation-character projectors that distinguish
+   `X1`, `X2`, and `X3`;
+3. the induced oriented `C3[111]` cycle
+   `X1 -> X2 -> X3 -> X1`;
+4. the statement that these projectors and the cycle generate the full
+   finite matrix algebra `M_3(C)`.
 
-- `PHYSICAL_LATTICE_NECESSITY_NOTE.md`
-- `THREE_GENERATION_STRUCTURE_NOTE.md`
-- `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`
-- `scripts/frontier_generation_rooting_undefined.py`
-- `GENERATION_AXIOM_BOUNDARY_NOTE.md` (preserved)
+This support note then proves a different finite-dimensional fact on that
+surface: the Hermitian commutant of the oriented cycle is the
+three-real-parameter family
 
-Therefore `claim_type: bounded_theorem` until that gate closes. When that gate closes, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
+```text
+W(a,b,c) = a I + b (C + C^2) + c (C - C^2)/(i sqrt(3)).
+```
+
+The physical origin of the retained `C^3` surface, species semantics,
+fermion fields, staggered action, Grassmann/CAR realization, charged-lepton
+sector content, neutrino sector content, quark/hadron content, and the
+Koide/PMNS/CKM observable surfaces are not part of this note's proof. A
+future theorem that uses those physical meanings must cite its own retained
+physical-carrier or source/readout bridge.
+
+For a source-side audit-unlock split that isolates this algebraic core from
+physical-carrier provenance, see
+[`QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md`](QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md).
 
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
 - [three_generation_observable_theorem_note](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md)
 - [quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28](QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md)
 - [s3_taste_cube_decomposition_note](S3_TASTE_CUBE_DECOMPOSITION_NOTE.md)

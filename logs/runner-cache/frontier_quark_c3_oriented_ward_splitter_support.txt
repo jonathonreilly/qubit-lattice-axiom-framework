@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_c3_oriented_ward_splitter_support.py
-runner_sha256: b3e8581f8e63aa58c4fdf55393ebf876ee68c7b19e22f8fdd6f1e5800813ceda
+runner_sha256: 3c7e3c15463df095bace2e6ac7ffe66d3a0e45da1fe82e29c3ed29cfbab9bb25
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================

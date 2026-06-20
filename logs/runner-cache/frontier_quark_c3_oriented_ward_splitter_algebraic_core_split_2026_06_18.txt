@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_c3_oriented_ward_splitter_algebraic_core_split_2026_06_18.py
+runner_sha256: e6740378ea7740a8700ad6bbcff8f255acab7a240b230bdb6631c1055d0aadac
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+========================================================================================
+QUARK C3-ORIENTED WARD SPLITTER ALGEBRAIC CORE SPLIT
+========================================================================================
+
+A. Source and authority surfaces
+------------------------------------------------------------------------
+PASS: QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md exists -- docs/QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
+PASS: QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md exists -- docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md
+PASS: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md exists -- docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
+PASS: QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md
+PASS: split note records target blocker text
+PASS: split note keeps parent target as context handle
+PASS: three-generation note fences to finite C^3 algebra
+PASS: three-generation source supplies induced C3[111]
+PASS: block-05 no-go supplies S3 doublet residual
+
+B. Source-side rewire guards
+------------------------------------------------------------------------
+PASS: parent no longer cites staggered gate filename
+PASS: split note does not cite staggered gate filename
+PASS: parent names three-generation theorem as load-bearing carrier
+PASS: parent records non-load-bearing physical-provenance boundary
+PASS: parent points to algebraic core split note
+PASS: split note names exact-support status
+PASS: split note blocks bare retained wording
+PASS: split note requires later audit
+PASS: split note introduces no new axiom
+PASS: split note forbids quark mass closure
+PASS: split note keeps source/readout laws open
+
+C. C3 cycle, reflection, and commutants
+------------------------------------------------------------------------
+PASS: C is unitary
+PASS: C has order three
+PASS: C maps X1 to X2
+PASS: C maps X2 to X3
+PASS: C maps X3 to X1
+PASS: reflection squares to identity
+PASS: reflection conjugates C to C^2
+PASS: C+C^2 is reflection even
+PASS: K_C3 is Hermitian
+PASS: K_C3 is reflection odd
+PASS: complex C3 commutant has dimension 3 -- dim=3
+PASS: Hermitian C3 commutant has real dimension 3 -- dim=3
+PASS: Hermitian S3 commutant has real dimension 2 -- dim=2
+PASS: I commutes with C
+PASS: C+C^2 commutes with C
+PASS: K_C3 commutes with C
+PASS: W(a,b,c) sample is Hermitian
+PASS: W(a,b,c) sample commutes with C
+PASS: W(a,b,c) coefficient recovery is exact -- [ 1.7  -0.4   0.25]
+PASS: generic c nonzero breaks reflection
+PASS: c=0 restores reflection
+
+D. Spectrum and diagonal readout boundary
+------------------------------------------------------------------------
+PASS: closed-form eigenvalues match numerical spectrum -- got=[0.8999999999999988, 1.8500000000000003, 2.3499999999999996]
+PASS: generic c nonzero gives three values
+PASS: c=0 gives the S3 doublet two-value spectrum
+PASS: c=+3b accidental degeneracy is recorded
+PASS: c=-3b accidental degeneracy is recorded
+PASS: scalar diagonal readout commutes with C
+PASS: non-scalar diagonal readout fails C3 covariance
+PASS: only scalar tested diagonal readout is C3-equivariant -- [True, False, False]
+
+E. Import firewall
+------------------------------------------------------------------------
+PASS: proof inputs are disjoint from forbidden imports -- ['Hermitian_matrix_algebra', 'finite_dimensional_C3_cycle', 'finite_spectral_algebra', 'retained_three_generation_C3_parent']
+PASS: split text forbids observed quark masses
+PASS: split text forbids fitted values
+PASS: runner defines no observed quark mass constants
+PASS: runner defines no CKM input constants
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=54, FAIL=0
+VERDICT: exact local C3 Ward splitter algebra is isolated on the
+retained finite-dimensional three-generation C^3 parent surface;
+physical carrier provenance and quark source/readout laws remain open.
+
+----- stderr -----
+

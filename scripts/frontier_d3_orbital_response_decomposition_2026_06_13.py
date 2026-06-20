@@ -10,14 +10,15 @@ Anti-fabrication constraints followed here:
   * the finite-torus reference is computed only from the Peierls Hamiltonian spectrum;
   * the LP value is computed from the analytic band and Fermi derivative;
   * the single-band interband term is fixed to zero, not proxied;
-  * the normalization is the theoretical spinless unit-flux value -1/12,
-    fixed before computation and not fitted to the finite-torus reference;
+  * the LP normalization is consumed from the companion native-prefactor
+    derivation runner, not fitted to the finite-torus reference;
   * all tolerances below are frozen constants declared before any results.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
+from fractions import Fraction
 import math
 from pathlib import Path
 import sys
@@ -25,9 +26,14 @@ from typing import Iterable
 
 import numpy as np
 
+from frontier_landau_peierls_prefactor_native_derivation_2026_06_13 import (
+    derive_symbolic_prefactor,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 PARENT_NOTE_PATH = ROOT / "docs/D3_ORBITAL_RESPONSE_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-13.md"
+NATIVE_PREFACTOR_NOTE_PATH = ROOT / "docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md"
 NORMALIZATION_NOTE_PATH = ROOT / "docs/D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md"
 NORMALIZATION_CACHE_PATH = ROOT / "logs/runner-cache/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.txt"
 
@@ -40,11 +46,9 @@ FLUX_QUANTA_COARSE = 2
 LP_GRID_N = 176
 CURVE_MUS = (-4.5, -3.0, -1.5, 0.0, 1.5, 3.0, 4.5)
 
-# Fixed cell normalization for the grand-potential second derivative with
-# dimensionless Peierls flux B per plaquette, spinless charge/hbar/c/a = 1.
-# Source-side derivation:
-# docs/D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md
-CELL_NORMALIZATION = -1.0 / 12.0
+# Sentinel for the companion theorem's exported rational.  The LP integral
+# below consumes the derived value, not this sentinel.
+EXPECTED_NATIVE_PREFACTOR = Fraction(-1, 12)
 CHI_INTER_SINGLE_BAND = 0.0
 
 # Frozen gates. These are intentionally labeled and set before any spectrum or
@@ -209,7 +213,12 @@ def fermi_prime(energy: np.ndarray, mu: float, temperature: float) -> np.ndarray
     return out
 
 
-def landau_peierls_chi(mu: float, temperature: float, nk: int) -> float:
+def landau_peierls_chi(
+    mu: float,
+    temperature: float,
+    nk: int,
+    cell_normalization: float,
+) -> float:
     k = 2.0 * math.pi * (np.arange(nk, dtype=np.float64) + 0.5) / float(nk)
     c = np.cos(k)
     cx = c[:, None]
@@ -223,7 +232,7 @@ def landau_peierls_chi(mu: float, temperature: float, nk: int) -> float:
         total += float(np.sum(fermi_prime(energy, mu, temperature) * hessian_det_xy))
 
     bz_average = total / float(nk**3)
-    return float(CELL_NORMALIZATION * bz_average)
+    return float(cell_normalization * bz_average)
 
 
 def sign_label(value: float) -> str:
@@ -250,12 +259,17 @@ def text_contains_all(text: str, snippets: Iterable[str]) -> tuple[bool, list[st
 
 
 def main() -> int:
+    gates = Gates()
+    symbolic_prefactor = derive_symbolic_prefactor()
+    prefactor_fraction = Fraction(str(symbolic_prefactor.lp_prefactor))
+    cell_normalization = float(prefactor_fraction)
+
     print("d=3 orbital-response decomposition runner")
     print(
         "frozen_parameters "
         f"L={L_EXACT} mu_ref={REFERENCE_MU:+.6f} T={TEMPERATURE:.6f} "
         f"p_fine={FLUX_QUANTA_FINE} p_coarse={FLUX_QUANTA_COARSE} "
-        f"LP_GRID_N={LP_GRID_N} cell_norm={CELL_NORMALIZATION:+.12e}"
+        f"LP_GRID_N={LP_GRID_N} derived_cell_norm={cell_normalization:+.12e}"
     )
     print(
         "frozen_tolerances "
@@ -265,7 +279,17 @@ def main() -> int:
         f"sign_floor={SIGN_ACTIVE_FLOOR:.3e}"
     )
 
-    gates = Gates()
+    gates.check(
+        "native LP prefactor companion is consumed",
+        prefactor_fraction == EXPECTED_NATIVE_PREFACTOR
+        and symbolic_prefactor.target_residual == 0
+        and symbolic_prefactor.divergence_residual == 0,
+        (
+            f"prefactor={prefactor_fraction}, "
+            f"target_residual={symbolic_prefactor.target_residual}, "
+            f"divergence_residual={symbolic_prefactor.divergence_residual}"
+        ),
+    )
 
     normalization_note = NORMALIZATION_NOTE_PATH.read_text()
     parent_note = PARENT_NOTE_PATH.read_text()
@@ -280,12 +304,12 @@ def main() -> int:
         ),
     )
     gates.check(
-        "S-1 source normalization note anchors the -1/12 factor without new axioms",
+        "source normalization note anchors the -1/12 factor without new axioms",
         source_ok,
         "source-boundary phrases present" if source_ok else f"missing={source_missing}",
     )
     gates.check(
-        "S-1 source normalization runner cache passes",
+        "source normalization runner cache passes",
         "TOTAL: PASS=9 FAIL=0" in normalization_cache and "status: ok" in normalization_cache,
         "normalization cache status ok with PASS=9 FAIL=0",
     )
@@ -294,11 +318,13 @@ def main() -> int:
         "does not derive the Landau-Peierls formula from the repo " + "axioms",
     )
     gates.check(
-        "S-1 parent note no longer leaves LP normalization as a naked theory import",
+        "parent note cites prefactor dependencies and omits naked-import phrasing",
         all(phrase not in parent_note for phrase in old_import_phrases)
+        and NATIVE_PREFACTOR_NOTE_PATH.name in parent_note
+        and f"]({NATIVE_PREFACTOR_NOTE_PATH.name})" in parent_note
         and NORMALIZATION_NOTE_PATH.name in parent_note
         and f"]({NORMALIZATION_NOTE_PATH.name})" in parent_note,
-        "parent markdown-cites source normalization dependency and omits old import-boundary phrasing",
+        "parent markdown-cites native-prefactor and normalization-boundary dependencies",
     )
 
     B_fine = flux_from_quanta(FLUX_QUANTA_FINE, L_EXACT)
@@ -367,7 +393,12 @@ def main() -> int:
         f"|chi_fine-chi_coarse|={step_halving_error:.12e}",
     )
 
-    chi_lp = landau_peierls_chi(REFERENCE_MU, TEMPERATURE, LP_GRID_N)
+    chi_lp = landau_peierls_chi(
+        REFERENCE_MU,
+        TEMPERATURE,
+        LP_GRID_N,
+        cell_normalization,
+    )
     chi_total_decomposition = chi_lp + CHI_INTER_SINGLE_BAND
     residual = chi_total_decomposition - chi_reference
     abs_residual = abs(residual)
@@ -406,7 +437,12 @@ def main() -> int:
             TEMPERATURE,
             L_EXACT,
         )
-        lp_value = landau_peierls_chi(mu, TEMPERATURE, LP_GRID_N)
+        lp_value = landau_peierls_chi(
+            mu,
+            TEMPERATURE,
+            LP_GRID_N,
+            cell_normalization,
+        )
         curve_residual = lp_value - exact_value
         curve_rows.append((mu, exact_value, lp_value, curve_residual))
         if abs(exact_value) > SIGN_ACTIVE_FLOOR:

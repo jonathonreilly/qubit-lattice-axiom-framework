@@ -10,8 +10,10 @@ DEGENERATE masses; C3 leaves r free; there is no intermediate C3 < G < S3
 subgroup; and the 1-dim singlet and 2-dim doublet cannot be swapped by a
 unitary isomorphism. A C3-compatible coefficient rephasing / doublet-basis
 rotation also preserves |b|^2/a^2, so it cannot calibrate arbitrary r to 1/2.
-Dynamical, variational, nonunitary, and extra-structure mechanisms are left
-open.
+The listed routes are not asserted to exhaust the symmetry-protection space.
+Dynamical, variational, nonunitary, extra-structure, and untested symmetry
+mechanisms are left open. The note makes no claim that r = 1/2 is forced or
+derived; here it remains a stable dial setting.
 
 Reproven by finite algebra; no external mass values, no fits, no imported authorities.
 """
@@ -94,6 +96,7 @@ print(
     "\nNO-GO verified: r=1/2 (Q=2/3) is the equal-singlet/doublet-energy / 45-degree condition (1,2); it\n"
     "is NOT fixed by the tested C3/S3 unitary symmetry routes -- S3 forces degeneracy (3), C3 leaves\n"
     "r free (4), the 1-vs-2-dim irreps cannot be swapped (5), and C3-compatible coefficient\n"
-    "rephasing/doublet-basis calibration preserves |b|^2/a^2 (6). Any positive derivation must enter\n"
-    "through dynamics or extra structure rather than through those symmetry/calibration routes."
+    "rephasing/doublet-basis calibration preserves |b|^2/a^2 (6). These routes are not asserted to\n"
+    "exhaust the symmetry-protection space; any positive derivation must enter through dynamics,\n"
+    "extra structure, or another route not checked here rather than through those symmetry/calibration routes."
 )

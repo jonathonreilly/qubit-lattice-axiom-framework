@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/unordered_mass_pdep_record_independence_no_go_2026_06_18.py
+runner_sha256: 7d61d990daaffebedbef2e18eb17f2d5d921332476507c95c16a69e757433d98
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================================
+UNORDERED MASS P-DEP RECORD-INDEPENDENCE NO-GO
+========================================================================================
+[PASS] sigma is an involution
+[PASS] sigma fixes exactly the singlet label
+[PASS] orbits are singlet plus doublet
+[PASS] lambda_{sigma(k)}(-delta) == lambda_k(delta)
+[PASS] I_q is finitely additive over disjoint sector records
+[PASS] I_q(empty) = 0
+[PASS] I_q is constant on K/CPT-related single-sector records
+[PASS] I_q is orbit-constant on singlet and doublet record collections
+[PASS] two contexts have identical registered datum: ((0,), 2.937585629454)
+[PASS] the witness datum is nonzero: I_1=2.93758562945
+[PASS] different unregistered q gives different readout value: I_1=2.93758562945, I_2=5.87517125891
+[PASS] doublet witness also changes under unregistered q: I_1=-0.837585629454, I_2=-1.67517125891
+[PASS] note boundary phrase: Record alone cannot derive P-dep
+[PASS] note boundary phrase: extra extensionality/readout-identification premise
+[PASS] note boundary phrase: introduces no new axiom
+[PASS] note boundary phrase: does not edit audit results
+[PASS] note boundary phrase: does not dispute the existing conditional theorem
+[PASS] parent note links the P-dep independence no-go
+========================================================================================
+SUMMARY: UNORDERED MASS P-DEP RECORD-INDEPENDENCE NO-GO PASS=18 FAIL=0
+========================================================================================
+
+----- stderr -----
+

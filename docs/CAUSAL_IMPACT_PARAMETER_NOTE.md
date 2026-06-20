@@ -1,7 +1,10 @@
 # Causal Impact-Parameter Note
 
 **Date:** 2026-04-06; realized-impact repair 2026-06-18
-**Status:** bounded realized-impact-parameter replay on the center growth-rule family
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status:** bounded theorem / realized-impact-parameter replay on the center growth-rule family
+**Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.
 
 ## Artifact Chain
 
@@ -52,6 +55,9 @@ and the fit uses the measured source-to-detector separation?
 | realized b is strictly ordered | `PASS` | 5.001195, 5.991468, 6.983559, 7.979958, 10.008751 |
 | all fields point toward source side | `PASS` | instantaneous=5/5; forward-only=5/5; dynamic(c=1)=5/5; dynamic(c=0.5)=5/5 |
 | realized-b inverse-power fit is stable | `PASS` | min R^2=0.944; least-negative alpha=-1.898 |
+| canonical claim metadata is present | `PASS` | bounded_theorem Type/Claim type |
+| audit authority remains independent | `PASS` | source note sets no audit outcome |
+| status line is bounded theorem scoped | `PASS` | bounded theorem, not audit-retained status |
 
 ## Safe Read
 

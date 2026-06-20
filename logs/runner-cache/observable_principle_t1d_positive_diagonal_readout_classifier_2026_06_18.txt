@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py
+runner_sha256: 64399cacda60df32ea1f67a1457a9600a8896cdef9fceb843499143b44cdab27
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+== T1: direct-sum additive readouts decompose into one-site sums ==
+[PASS] recursive split W_2=W_1+W_1 for symbolic one-site phi
+[PASS] recursive split W_3=W_1+W_2 for symbolic one-site phi
+[PASS] recursive split W_4=W_2+W_2 for symbolic one-site phi
+[PASS] recursive split W_5=W_2+W_3 for symbolic one-site phi
+[PASS] recursive split W_6=W_3+W_3 for symbolic one-site phi
+[PASS] one-site sum is permutation invariant for polynomial one-site readout
+[PASS] one-site sum is permutation invariant for log-plus-trace readout
+== T2: classifier family is exactly direct-sum additive ==
+[PASS] log x readout is additive under diagonal block direct sum
+[PASS] log x + epsilon x readout is additive under diagonal block direct sum
+[PASS] x^2 + 3x readout is additive under diagonal block direct sum
+[PASS] a log x + k readout is additive under diagonal block direct sum
+[PASS] smooth one-site functions remain smooth on R_{>0}  -- d/dx = epsilon + 2*x + 1/x
+[PASS] positive diagonal determinant is the product coordinate
+== T3: determinant-only quotient selects the log family ==
+[PASS] c log x satisfies the multiplicative-to-additive equation
+[PASS] log family is determinant-only on same-determinant blocks  -- diag(4,1) and diag(2,2) both have determinant 4
+[PASS] log-plus-trace one-site function violates determinant-only Cauchy law  -- gap at x=2,y=3 is epsilon
+[PASS] same determinant witness detects non-log one-site invariant  -- W(diag(4,1))-W(diag(2,2)) = epsilon
+[PASS] dimension constant is invisible at fixed dimension and fixed determinant
+[PASS] dimension constant is not global determinant-only data  -- W(diag(4))-W(diag(2,2)) = -k
+[PASS] global determinant-only readout forces phi(1)=0  -- otherwise det=1 blocks carry an extra dimension label
+== T4: source-to-record disjointness is a separate bridge ==
+[PASS] positive diagonal source blocks may be disjoint  -- A={1, 2}, B={3, 4}
+[PASS] non-injective source-to-record assignment remains logically possible  -- A->r0, B->r0
+[PASS] classifier does not derive source-blocks-to-records clause  -- the readout-context bridge must still rule this out
+== T5: source-note guardrails and parent discoverability ==
+[PASS] parent still declares T1-d as an explicit Boundary
+[PASS] parent cites the positive-diagonal classifier
+[PASS] parent says classifier does not derive T1-d from Record
+[PASS] classifier states bounded-support rather than an audit verdict
+[PASS] classifier forbids treating T1-d as Record-derived
+[PASS] classifier names both remaining T1-d bridge pieces
+[PASS] classifier links its proof-surface dependencies
+[PASS] classifier does not claim to close the parent audit row
+[PASS] prior no-go still supplies the independence wall
+[PASS] minimal axiom memo withholds source/action and physical-observable identification
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

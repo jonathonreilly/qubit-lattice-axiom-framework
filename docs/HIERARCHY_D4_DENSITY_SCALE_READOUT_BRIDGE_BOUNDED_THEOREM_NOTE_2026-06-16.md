@@ -8,6 +8,31 @@ ratifies effective status.
 set or predict an audit outcome.
 **Primary runner:** `scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py`
 
+## 2026-06-18 endpoint-algebra hardening
+
+This repair removes the bridge runner's dependence on the audit-ledger status
+of `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`. The endpoint note remains
+useful context, but the load-bearing endpoint ratios used here are now
+recomputed inside this packet from the APBC small-m coefficient formula
+
+```text
+A(L_t) = (1 / (2 L_t u_0^2)) * Sum_omega 1 / (3 + sin^2 omega).
+```
+
+The verifier checks directly that
+
+```text
+A_2 = 1/(8 u_0^2),      A_4 = 1/(7 u_0^2),
+A_inf = 1/(4 sqrt(3) u_0^2),
+```
+
+and hence `A_2/A_4 = 7/8` and `A_inf/A_2 = 2/sqrt(3)`. These are source-side
+algebraic checks in this bridge packet, not an audit-status import from the
+endpoint row. The upstream Matsubara free-energy formula and the physical
+electroweak order-parameter/VEV identification remain separately scoped; no
+new axiom, Tier-A admission, observed target, fitted coefficient, or audit
+verdict is introduced.
+
 ## Claim
 
 This note supplies the narrow source-side bridge requested by the current
@@ -75,8 +100,9 @@ reals plus the retained `D = 4` fourth-root dimensional theorem.
 
 ## Endpoint Applications
 
-The endpoint coefficient values are supplied by existing framework surfaces.
-This note uses them only as applications of the fixed-density bridge.
+The endpoint coefficient ratios are recomputed in this packet from the APBC
+small-m coefficient formula. Existing endpoint notes are cited in parallel for
+context; their live audit status is not load-bearing on this bridge verifier.
 
 ### L_t = 4 Matsubara Endpoint
 
@@ -129,10 +155,6 @@ Graph-visible dependencies:
 
 - [`HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md)
   -- retained dimensional algebra for the `D = 4` fourth-root exponent.
-- [`HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`](HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md)
-  -- retained-bounded endpoint algebra for `A_2`, `A_4`, and `A_inf`.
-- [`SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md`](SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md)
-  -- retained scalar endpoint ratio `A_inf / A_2 = 2 / sqrt(3)`.
 
 Downstream target:
 
@@ -141,6 +163,16 @@ Downstream target:
   a graph-visible dependency. This bridge supplies the
   coefficient-to-scale insertion algebra for re-audit, but it does not itself
   promote that parent row.
+
+Parallel context pointers, not load-bearing status dependencies:
+
+- `HIERARCHY_MATSUBARA_FREE_ENERGY_DENSITY_NARROW_THEOREM_NOTE_2026-05-16.md`
+  -- derivation of the APBC free-energy density formula used as upstream
+  formula context.
+- `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
+  -- prior endpoint-algebra packet for `A_2`, `A_4`, and `A_inf`.
+- `SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md`
+  -- independent retained scalar endpoint ratio `A_inf / A_2 = 2/sqrt(3)`.
 
 ## Boundary
 
@@ -171,7 +203,7 @@ PYTHONPATH=scripts python3 scripts/frontier_hierarchy_d4_density_scale_readout_b
 Expected final line:
 
 ```text
-TOTAL: PASS=13 FAIL=0
+TOTAL: PASS=17 FAIL=0
 ```
 
 ## Audit Handoff
@@ -187,8 +219,6 @@ audit_required_before_effective_status_change: true
 
 graph_visible_one_hop_deps:
   - hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10
-  - hierarchy_effective_potential_endpoint_note
-  - scalar_3plus1_temporal_ratio_note
 
 target_consumer:
   - hierarchy_dimensional_compression_note

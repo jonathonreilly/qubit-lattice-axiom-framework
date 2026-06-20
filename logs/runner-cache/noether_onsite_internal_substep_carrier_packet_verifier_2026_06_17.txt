@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/noether_onsite_internal_substep_carrier_packet_verifier_2026_06_17.py
+runner_sha256: 8a34a360b17ef428239229cc529194d3930c0a1c9184999499f0c38229242530
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+Noether onsite/internal substep-carrier packet verifier
+status authority: source-side verifier only; no audit verdicts are applied
+
+A. source-boundary checks
+[PASS] packet verifier is registered in the note
+[PASS] broad realization gate has no markdown dependency edge
+[PASS] old admitted-context section is absent
+[PASS] finite carrier exhibit section is present
+[PASS] physical realization/readout bridge is not consumed
+[PASS] no audit verdict language is applied
+[PASS] abstract bilinear authority is cited
+[PASS] substep-1 Grassmann authority is cited
+[PASS] det positivity authority is cited
+[PASS] runner boundary uses finite carrier language
+[PASS] runner no longer requires physical charge-density wording
+
+B. finite Kawamoto-Smit carrier checks
+[PASS] massless KS exhibit is real antisymmetric -- err=0.000e+00
+[PASS] iM is Hermitian on the finite exhibit -- err=0.000e+00
+[PASS] support is nearest-neighbour only -- edges=384
+[PASS] onsite U(1) generator commutes with the finite carrier -- err=0.000e+00
+
+C. continuity sign checks
+[PASS] 1D continuity replay has Hermitian iM -- err=0.000e+00
+[PASS] d rho/dt is nonzero in the replay -- norm=5.000e-01
+[PASS] formula-(4*) sign satisfies d rho/dt + div j = 0 -- err=0.000e+00
+[PASS] flipped sign violates continuity -- err=1.000e+00
+
+SCORECARD: PASS=19 FAIL=0
+VERDICT: source-side packet is ready for reviewer/auditor re-check: the onsite/internal Noether theorem uses a constructed finite carrier exhibit and no broad realization-gate dependency edge.
+
+----- stderr -----
+

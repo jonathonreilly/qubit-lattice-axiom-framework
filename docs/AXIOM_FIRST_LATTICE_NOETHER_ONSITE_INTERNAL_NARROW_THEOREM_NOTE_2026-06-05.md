@@ -12,6 +12,10 @@ claim-boundary declaration, not an audit verdict.
 with cache
 [`logs/runner-cache/audit_companion_lattice_noether_onsite_internal_2026_06_05.txt`](../logs/runner-cache/audit_companion_lattice_noether_onsite_internal_2026_06_05.txt)
 (`TOTAL: 14 PASS / 0 FAIL`).
+**Packet verifier:**
+[`scripts/noether_onsite_internal_substep_carrier_packet_verifier_2026_06_17.py`](../scripts/noether_onsite_internal_substep_carrier_packet_verifier_2026_06_17.py)
+with cache
+[`logs/runner-cache/noether_onsite_internal_substep_carrier_packet_verifier_2026_06_17.txt`](../logs/runner-cache/noether_onsite_internal_substep_carrier_packet_verifier_2026_06_17.txt).
 
 ## Purpose
 
@@ -66,15 +70,15 @@ not a load-bearing input to this row.
 >   all-to-all bilinear has an all-to-all current envelope; a finite-range
 >   bilinear has a finite-range current envelope; and the finite staggered
 >   nearest-neighbour carrier has a nearest-neighbour bond current. On that
->   staggered carrier the physical Hermitian outflow current is, with the sign
+>   staggered carrier the Hermitian U(1) outflow current is, with the sign
 >   fixed below,
 >
 >   ```text
 >       j^mu_x  =  -(1/2) eta_mu(x) [ chibar_x chi_{x+mu} + chibar_{x+mu} chi_x ].   (4*)
 >   ```
 >
-> - **(P2) Sign fixed by the continuity equation.** With the physical number
->   density `rho_x := chibar_x chi_x`, the lattice continuity equation
+> - **(P2) Sign fixed by the continuity equation.** With the onsite U(1)
+>   number-density operator `rho_x := chibar_x chi_x`, the lattice continuity equation
 >
 >   ```text
 >       d rho_x / dt  +  (div^L j)_x  =  0,
@@ -108,7 +112,7 @@ conventional on the supplied exhibit.
   sign was set by an explicit convention step ("real current `:= -i times` the
   imaginary-generator current", parent Step 4a). The audit flagged this. Here
   the sign is fixed instead by requiring the lattice continuity equation `(C)`
-  with the physical number density `rho_x = chibar_x chi_x`. The runner
+  with the onsite U(1) number-density operator `rho_x = chibar_x chi_x`. The runner
   (Part C) confirms `(C)` holds for the formula-(4*) sign and **fails** for the
   flipped sign on an exact finite Fock space, so the sign is determined.
 - On-shell *conservation alone* does not fix the sign (a current `j` is
@@ -205,7 +209,7 @@ shift `S^{(a)}`. The runner (Part B) verifies:
                                       + chibar_{x+mu} (t) chi_x ].
   ```
 
-With `t=i`, this variational coefficient is imaginary. The physical Hermitian
+With `t=i`, this variational coefficient is imaginary. The Hermitian U(1)
 number-current entering the continuity equation is `J_num = i j_var`, giving
 formula (4*) with the `-1/2` prefactor. The current is manifestly **local**
 (supported on the bond `x, x+mu`). This is the clean nearest-neighbour
@@ -250,7 +254,7 @@ restriction:
 identity to theorem grade) for site-mixing generators — in particular the
 `(2Z)^3` sublattice translation current — is **not** established here. The
 parent note treats this branch separately as the exact two-step Ward identity
-on the admitted carrier; theorem-grade identification of the `(2Z)^3` momentum
+on the finite carrier exhibit; theorem-grade identification of the `(2Z)^3` momentum
 density remains open there and is **out of scope** for this onsite/internal
 narrow theorem.
 
@@ -285,13 +289,17 @@ narrow theorem.
   conditional row; this note states an independent corrected/narrowed theorem
   and does not consume the parent as authority.
 
-**Admitted context input (open gate, named, not a retained dependency):**
+**Finite carrier exhibit (constructed here, not a broad-gate dependency):**
 
-- `staggered_dirac_realization_gate` / the Kawamoto-Smit phase form
-  `eta_1 = +1`, `eta_2 = (-1)^{x_1}`, `eta_3 = (-1)^{x_1+x_2}`: the staggered
-  carrier and its phase structure are admitted, exactly as in the parent. This
-  note does not derive them; the U(1) current (4*), the sign fix, and the
-  onsite/internal locality close on the admitted carrier.
+- The Kawamoto-Smit phase form
+  `eta_1 = +1`, `eta_2 = (-1)^{x_1}`, `eta_3 = (-1)^{x_1+x_2}` is used only to
+  build the finite nearest-neighbour bilinear exhibit checked by the runner and
+  packet verifier. This note does not consume the broad
+  `staggered_dirac_realization_gate` as a load-bearing authority. It proves the
+  U(1) current formula, sign fix, support envelope, and onsite/internal
+  restriction for the constructed finite bilinear carrier. The downstream
+  physical claim that this carrier is the framework's realized matter kinetic
+  remains outside this row.
 
 **External mathematics (comparator only, not a derivation input):**
 
@@ -367,3 +375,17 @@ carries that dependency edge. No derived value, claim, or scope changes.
 
 **Status authority:** independent audit lane only. This repair does not set
 status; it only removes the citation-graph edge on the source side.
+
+## 2026-06-17 packet verifier
+
+The 2026-06-17 packet verifier checks the repaired source boundary directly:
+
+- no markdown dependency edge to
+  `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`;
+- required retained-grade source anchors are still cited;
+- the finite Kawamoto-Smit carrier is constructed in the verifier, with
+  nearest-neighbour support, real antisymmetry, Hermitian `iM`, U(1) invariance,
+  and the exact sign-selected continuity equation;
+- the note does not consume the physical realization/readout bridge.
+
+This verifier does not edit audit data, apply a verdict, or predict retention.

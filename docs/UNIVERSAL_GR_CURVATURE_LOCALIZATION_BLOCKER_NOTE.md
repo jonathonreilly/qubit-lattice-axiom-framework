@@ -8,6 +8,8 @@
 path after the exact scalar observable generator, exact `3+1` lift, exact
 tensor-valued variational candidate, and unique symmetric quotient kernel are
 already in hand
+**Script:** `scripts/frontier_universal_gr_curvature_localization_blocker.py`
+(source-side verifier; PASS=10 FAIL=0 on current source)
 
 ## Verdict
 

@@ -3,7 +3,7 @@ runner: scripts/frontier_universal_gr_constraint_action_stationarity.py
 runner_sha256: 065f839f62a79c556fc0b623b4f5969b2e16c0f026fbff2ff8dae8711bb03cd5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 UNIVERSAL GR CONSTRAINT / ACTION-STATIONARITY AUDIT

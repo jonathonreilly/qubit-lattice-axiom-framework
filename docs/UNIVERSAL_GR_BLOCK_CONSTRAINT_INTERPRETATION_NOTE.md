@@ -5,6 +5,8 @@
 **Branch:** `codex/review-active`  
 **Role:** direct universal route / constraint interpretation test  
 **Ownership:** universal constraint interpretation only
+**Script:** `scripts/frontier_universal_gr_block_constraint_interpretation.py`
+(source-side verifier; PASS=13 FAIL=0 on current source)
 
 **Status authority and audit hygiene (2026-05-16):**
 The audit lane has classified this row `audited_conditional`

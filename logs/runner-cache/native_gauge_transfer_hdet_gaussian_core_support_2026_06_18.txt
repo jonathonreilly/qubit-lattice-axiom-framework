@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_hdet_gaussian_core_support_2026_06_18.py
+runner_sha256: d2ca9ba0b57e7d473456b7fdf6a2c4fa8d5cb13b16035ba7856fec7b1cce6d46
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 2.73
+status: ok
+----- stdout -----
+Native gauge transfer H_det Gaussian-core support runner
+This is upstream support only: no fitted K_W(A), no proof of H_spec.
+
+PASS: source note exists
+      docs/NATIVE_GAUGE_TRANSFER_HDET_GAUSSIAN_CORE_SUPPORT_NOTE_2026-06-18.md
+PASS: source note contains the required boundary markers
+PASS: one-hop source notes exist
+      assembly and scalar local-CLT notes are present
+PASS: downstream assembly note wires H_det_core without closing H_det
+PASS: source note avoids closure/promotional wording
+      scanned closure/promotional fragments
+gaussian_core_symmetry beta= 48 pair=( 4, 3) c00=2.477118788544e-06 r_pq=27.393818659171 r_qp=27.393818659171 diff=3.908e-14
+gaussian_core_symmetry beta= 96 pair=( 6, 5) c00=1.646843036926e-07 r_pq=75.783881433444 r_qp=75.783881433444 diff=0.000e+00
+gaussian_core_symmetry beta=192 pair=(10, 8) c00=1.061755229028e-08 r_pq=210.962562923219 r_qp=210.962562923219 diff=2.842e-13
+PASS: Gaussian determinant denominator is positive on witness rows
+PASS: Gaussian determinant ratio is conjugation symmetric on witness rows
+      max diff=2.842e-13
+selected_gaussian_core_to_saddle_rows
+  beta= 48 (p,q)=( 4, 3) core=27.393818659171 saddle=26.882522035981 rel=+1.901967e-02 sqrt_beta_scaled_diff=1.065201e-02
+  beta= 96 (p,q)=( 6, 5) core=75.783881433444 saddle=75.023779892741 rel=+1.013147e-02 sqrt_beta_scaled_diff=7.917724e-03
+  beta=192 (p,q)=(10, 8) core=210.962562923219 saddle=209.688188327461 rel=+6.077474e-03 sqrt_beta_scaled_diff=6.637368e-03
+  beta=384 (p,q)=(12,10) core=561.238653132214 saddle=560.012784751081 rel=+2.189001e-03 sqrt_beta_scaled_diff=3.192366e-03
+PASS: selected Gaussian-core rows approach the saddle diagonal
+      sampled support only; no K_W(A) is fitted
+active_window_gaussian_core_rows
+  beta= 48 cap= 8 max_sqrt_beta_scaled_diff=1.761683e-02 at=(6,5) rel=4.101416e-02 core=21.463071454203 saddle=20.617463550895
+    max_relative_error_on_window=8.059374e-02
+  beta= 96 cap=12 max_sqrt_beta_scaled_diff=1.226940e-02 at=(8,8) rel=1.968354e-02 core=61.017826571867 saddle=59.839963996822
+    max_relative_error_on_window=4.169272e-02
+  beta=192 cap=17 max_sqrt_beta_scaled_diff=8.534372e-03 at=(12,12) rel=1.029593e-02 core=160.788745669591 saddle=159.150146204250
+    max_relative_error_on_window=1.987027e-02
+PASS: active-window Gaussian-core saddle error decreases on sampled windows
+      finite active-window certificate, not a global theorem
+exact_bessel_to_gaussian_core_rows
+  beta= 48 cap= 8 max_sqrt_beta_scaled_exact_minus_core=4.459121e-02 at=(5,5) rel=8.536210e-02 exact=22.933725650190 core=25.074103879555
+  beta= 96 cap=12 max_sqrt_beta_scaled_exact_minus_core=3.083020e-02 at=(8,7) rel=4.416326e-02 exact=64.057542259306 core=67.017241887554
+  beta=192 cap=17 max_sqrt_beta_scaled_exact_minus_core=2.172844e-02 at=(11,11) rel=2.235504e-02 exact=182.446424036561 core=186.618283902193
+PASS: exact-to-Gaussian correction decreases but remains a separate H_scalar/remainder wall
+      this is the remaining scalar/remainder contribution, not closed here
+tail_cap_check beta= 96 pair=(6,5) rel_change_extra20_to_40=0.000e+00
+tail_cap_check beta=192 pair=(10,8) rel_change_extra20_to_40=0.000e+00
+PASS: Gaussian determinant mode cap is stable on witness rows
+falsifier_rows_beta_96_pair_6_5
+  gaussian core normalized: 0.080569375104
+  correct SU3 saddle:       0.079761275743
+  wrong N_c=2 saddle:       0.122681758828
+  wrong N_c=4 saddle:       0.051856618041
+  wrong no-dimension row:   0.000292165845
+PASS: wrong color constants visibly separate from the Gaussian core
+PASS: wrong dimension prefactor visibly separates from the Gaussian core
+
+TOTAL: PASS=13, FAIL=0
+
+----- stderr -----
+

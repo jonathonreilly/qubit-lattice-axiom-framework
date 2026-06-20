@@ -238,7 +238,8 @@ The branch now carries two complementary results:
    shows that the candidate route `δ = Q/d` reduces the Brannen phase to the
    Koide relation.
 2. **Cycle-2 linking theorem + direct no-go.**
-   `docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md` and
+   `docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md` (formal-only
+   Q-Delta arithmetic) and
    `docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md` sharpen the
    remaining load-bearing step as one named residual statement:
 
@@ -296,7 +297,8 @@ category where a closure law could still live. See
    `W_{Z_3}^{d²} = exp(2i) 1`.
 
 See `docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md`,
-`docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`, and
+`docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md` (formal-only
+Q-Delta arithmetic), and
 `docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`.
 
 ### Priority 3: Selected-line physical point
@@ -408,7 +410,7 @@ register itself, not promoted by it):
 - [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
   — currently `unaudited` (audit row:
   `koide_q_delta_linking_relation_theorem_note_2026-04-20`).
-  Sibling bounded-theorem note sharpening the load-bearing residual
+  Sibling formal-only bounded-theorem note sharpening the load-bearing residual
   statement to `Q_structural = 2/d`, `δ_structural = 2/d²`,
   `δ/Q = 1/d`, and isolating the physical-base postulate `P` named
   in the present register.

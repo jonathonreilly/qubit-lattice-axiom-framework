@@ -128,5 +128,6 @@ SCORECARD: PASS=27 FAIL=0
   - admitted Brannen form and `delta = 2/9` input.
 - [Koide APS eta parity route](KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md)
   - real `eta(1,2;3) = 2/9` phase-route surface.
-- [Koide Q-delta linking relation](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-  - real-ratio `delta = Q/3` relation.
+- [Koide Q-delta formal identity](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
+  - formal-only `Delta_3 = Q_3/3` arithmetic; not a physical Brannen-phase
+    or charged-lepton offset authority.

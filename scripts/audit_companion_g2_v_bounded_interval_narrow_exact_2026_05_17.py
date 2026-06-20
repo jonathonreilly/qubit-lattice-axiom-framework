@@ -80,6 +80,7 @@ PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md"
+BRIDGE_NOTE = ROOT / "docs" / "SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -120,6 +121,7 @@ def main() -> int:
     section("Part 0: source-packet dependency repair checks")
     # ------------------------------------------------------------------
     note_text = NOTE.read_text(encoding="utf-8")
+    bridge_text = BRIDGE_NOTE.read_text(encoding="utf-8")
     check("source note exists", NOTE.exists(), detail=str(NOTE.relative_to(ROOT)))
     check(
         "(X4) source note cites the retained_bounded SU2 lattice-alpha anchor",
@@ -145,6 +147,11 @@ def main() -> int:
     check(
         "(X1) source note says X1 is not a row-local literature admission",
         "not a row-local literature admission" in note_text,
+    )
+    check(
+        "(X6) bridge includes direct ruler/current-v scale-log hardening",
+        "current value-surface cross-check" in bridge_text
+        and "ln(1.22e19 / 246.282818290129)" in bridge_text,
     )
     check(
         "(X7) source note no longer registers one-loop RGE as a row-local named admission",

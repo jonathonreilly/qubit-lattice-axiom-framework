@@ -586,7 +586,8 @@ sympy `Rational` / `simplify` / `Numeric` arithmetic:
 1. Source-packet repair checks: the note cites the retained_bounded SU2
    lattice-alpha anchor, does not leave YT/G_BARE as load-bearing markdown
    edges, states that the coupling input is not rederived here, consumes
-   the 2026-06-15 framework-local scale/RGE bridge for `(X6/X7)`, and
+   the 2026-06-15 framework-local scale/RGE bridge for `(X6/X7)`, including
+   the 2026-06-18 direct Planck-ruler / current-`v` hardening, and
    routes `(X1)` through the native 2026-06-18 SU(2) beta=16
    one-plaquette bridge.
 2. `(X4)` one-hop lattice-alpha anchor: `1 / α_2^bare |_lattice = 16π`;
@@ -611,7 +612,7 @@ sympy `Rational` / `simplify` / `Numeric` arithmetic:
    counterfactual `u_0 = 1`, and the running surface's lower-bound
    sanity (g_lo > 0.6).
 
-Expected output: `PASS=32 FAIL=0`.
+Expected output: `PASS=33 FAIL=0`.
 
 ## Open derivation gap
 
@@ -623,7 +624,8 @@ Expected output: `PASS=32 FAIL=0`.
   matching or another framework-native non-perturbative bridge.
 - The scale-ratio and inverse-alpha integration imports `(X6/X7)` are
   no longer row-local external admissions; they are supplied by the
-  framework-local 2026-06-15 bridge. That bridge still does not derive
+  framework-local 2026-06-15 bridge, hardened on 2026-06-18 with a direct
+  Planck-ruler / current-`v` check. That bridge still does not derive
   continuum perturbative QFT from Cl(3) alone; it proves the calculus
   integration and the scale-log arithmetic over already-isolated
   authority surfaces.

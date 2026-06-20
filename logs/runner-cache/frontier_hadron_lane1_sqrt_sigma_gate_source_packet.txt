@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.py
+runner_sha256: 161730a4125601027f5069f8538a37fe5641f45789b85ff01b92caed686e29a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+========================================================================================
+LANE 1 SQRT(SIGMA) RETENTION-GATE SOURCE PACKET
+========================================================================================
+
+Question:
+  Is the parent sqrt(sigma) gate row now packaged with dependency
+  links and a replayable budget/source verifier for independent re-audit?
+
+Answer:
+  Yes for re-audit readiness. No retained promotion is made here;
+  B2 dynamical screening and B5 framework-to-standard-QCD linkage
+  remain explicit gates on the current repo surface.
+
+----------------------------------------------------------------------------------------
+Part 1: parent source-packet metadata
+----------------------------------------------------------------------------------------
+  [PASS] parent note exists  (docs/HADRON_LANE1_SQRT_SIGMA_RETENTION_GATE_AUDIT_SUPPORT_NOTE_2026-04-27.md)
+  [PASS] parent declares this primary runner
+  [PASS] parent declares this runner cache
+  [PASS] parent remains support/open-gate, not a theorem promotion
+  [PASS] parent boundary refuses sqrt(sigma) promotion
+
+----------------------------------------------------------------------------------------
+Part 2: dependency links and fingerprints
+----------------------------------------------------------------------------------------
+  [PASS] confinement_string_tension_note: linked from parent
+  [PASS] confinement_string_tension_note: file exists  (docs/CONFINEMENT_STRING_TENSION_NOTE.md)
+  [PASS] alpha_s_derived_note: linked from parent
+  [PASS] alpha_s_derived_note: file exists  (docs/ALPHA_S_DERIVED_NOTE.md)
+  [PASS] hadron_mass_lane1_theorem_plan_support_note_2026-04-27: linked from parent
+  [PASS] hadron_mass_lane1_theorem_plan_support_note_2026-04-27: file exists  (docs/HADRON_MASS_LANE1_THEOREM_PLAN_SUPPORT_NOTE_2026-04-27.md)
+  [PASS] minimal_axioms: linked from parent
+  [PASS] minimal_axioms: file exists  (docs/MINIMAL_AXIOMS_2026-06-05.md)
+  [PASS] confinement dependency supplies beta=6 and bounded Method 2 constants
+  [PASS] confinement dependency marks standard lattice inputs as bounded
+  [PASS] alpha_s dependency exposes alpha_s(M_Z) arithmetic
+  [PASS] Lane 1 roadmap names target 3E sqrt(sigma) promotion gates
+  [PASS] minimal axiom note uses current Lattice/Quantum/Record authority
+  [PASS] minimal axiom note chain-satisfies without sourcing bounded status
+  [PASS] parent prose names the four dependency authorities
+
+----------------------------------------------------------------------------------------
+Part 3: replayed residual-budget arithmetic
+----------------------------------------------------------------------------------------
+  sqrt(sigma)_quenched(Method 2) = 484.11 MeV
+  rough x0.96 screened value     = 464.75 MeV
+  note central gap vs 440 MeV     = 5.68%
+  alpha precision budget          = 1.20%
+  PDG central factor vs quenched   = 0.9089
+  PDG one-sigma factor band        = [0.8676, 0.9502]
+  [PASS] Method 2 replay gives the recorded quenched scale
+  [PASS] rough screening replay gives the recorded 465 MeV scale
+  [PASS] central-value gap is the note's approximately 5.6 percent gap
+  [PASS] alpha_s precision propagation is about 1.2 percent
+  [PASS] rough x0.96 remains outside the one-sigma central-factor band
+
+----------------------------------------------------------------------------------------
+Part 4: B2/B5 retention-gate checks
+----------------------------------------------------------------------------------------
+  [PASS] B1 is classified as precision propagation
+  [PASS] B2 is named as the dominant open dynamical-screening residual
+  [PASS] B3/B4 are methodological, not the load-bearing current residual
+  [PASS] B5 is named as the open framework-to-standard-QCD bridge
+  [PASS] parent states promotion is gated on B2 plus the B5 bridge budget
+
+----------------------------------------------------------------------------------------
+Part 5: existing sibling boundary artifacts stay non-promotional
+----------------------------------------------------------------------------------------
+  [PASS] b2_gate_repair: file exists  (docs/HADRON_LANE1_SQRT_SIGMA_B2_GATE_REPAIR_AUDIT_NOTE_2026-04-30.md)
+  [PASS] b2_static_energy_bridge: file exists  (docs/HADRON_LANE1_SQRT_SIGMA_B2_STATIC_ENERGY_BRIDGE_SCOUT_NOTE_2026-04-30.md)
+  [PASS] b5_framework_link: file exists  (docs/HADRON_LANE1_SQRT_SIGMA_B5_FRAMEWORK_LINK_AUDIT_NOTE_2026-04-30.md)
+  [PASS] B2 gate repair forbids rough-factor promotion
+  [PASS] static-energy bridge states current-surface no-go
+  [PASS] B5 framework-link artifact keeps B5 open on current surface
+
+========================================================================================
+PASS=36 FAIL=0
+========================================================================================
+
+----- stderr -----
+

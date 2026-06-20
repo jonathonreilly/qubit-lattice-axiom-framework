@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_tensor_variational_candidate.py
-runner_sha256: 414527977f8e46d0fc0b695ea525713ea65dd50465ab9741bcb5423a164a4ef3
+runner_sha256: 6447e23484a84766f8cca4f93d2a20436517e395c3b258ec25b3e45b7a3d2cd1
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-UNIVERSAL GR TENSOR VARIATIONAL CANDIDATE AUDIT
+UNIVERSAL GR TENSOR VARIATIONAL CANDIDATE VERIFIER
 ==============================================================================
 [PASS] scalar generator source is present
     observable-principle note gives the scalar generator surface

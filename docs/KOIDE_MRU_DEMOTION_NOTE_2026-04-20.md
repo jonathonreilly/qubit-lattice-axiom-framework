@@ -2,40 +2,54 @@
 
 **Date:** 2026-04-20
 **Lane:** Charged-lepton Koide / kappa = 2
-**Status:** bounded-support source note. Effective status is set only by
-independent audit; this source note does not set or predict it.
-**Claim scope:** demotes the MRU `SO(2)`-quotient closure route to
-supplementary conditional support, and records the exact spectrum-operator
-bridge corollary for operator-side `kappa = 2`. The block-total Frobenius
-calculation remains bounded support, not a standalone physical scalar-measure
-closure claim from this row.
-**Primary exact bridge-corollary route:**
+**Status:** support - structural/meta repair note. This note demotes
+the `SO(2)`-quotient MRU closure route to supplementary /
+alternative-framing support and keeps the spectrum-operator bridge as
+the only graph-visible retained authority for the operator-side
+bridge corollary
+`spectrum-side Q = 2/3 => operator-side kappa = 2`.
+It does not claim an independent block-total closure route.
+**Status authority:** independent audit lane only. This source note
+does not set or predict an audit outcome.
+**Primary runner:**
+`scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py`
+**Graph-visible retained authority:**
 `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`
 (runner PASS=9, symbolic zero residual).
-**Independent bounded-support route:**
+**Bounded context, not a closure route here:**
 `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`
-(runner PASS=16).
+(runner PASS=16, retained-bounded algebraic support with the canonical
+scalar-measure bridge still open).
 **Demoted route:**
 `docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md` +
 `docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`.
 
 ---
 
+## Graph-visible source authority (one hop)
+
+This note's load-bearing one-hop citation registered to the audit-graph
+builder:
+
+- [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
+  — retained spectrum-operator bridge identity that carries operator-side
+  `kappa = 2` as a corollary of spectrum-side `Q = 2/3` with symbolic zero
+  residue. This is the retained authority used by the present demotion note.
+
+Non-load-bearing context pointers, intentionally left as backticked plain
+text rather than graph-visible dependency edges:
+
+- `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`
+  is bounded algebraic support for the block-total Frobenius branch. Its
+  own source boundary leaves the canonical physical scalar-measure bridge
+  open, so this demotion note does not use it as an independent retained
+  closure route.
+- `KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md` is the
+  demoted MRU theorem note.
+- `KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
+  — the companion MRU obstruction note co-demoted by this reclassification.
+
 ## 2026-06-18 source-boundary repair
-
-The clean claim of this note is the bounded demotion / bridge-corollary
-statement:
-
-- the MRU `SO(2)` quotient is not derived by the current framework surface;
-- the spectrum-operator bridge gives the exact algebraic corollary from
-  spectrum-side Koide `Q = 2/3` to operator-side `kappa = 2`;
-- the block-total Frobenius calculation is independent bounded support, but
-  this note does not use it as a standalone full physical scalar-measure
-  closure theorem; stated plainly, it is not a standalone full physical
-  scalar-measure closure theorem in this row;
-- the MRU notes remain conditional exposition: if the `SO(2)` quotient is
-  supplied, their reduced-carrier extremum gives `kappa = 2`, but they do not
-  derive the quotient.
 
 This repair also corrects the cubic trace diagnostic below. For
 `H = a I + b C + bbar C^2`,
@@ -48,35 +62,14 @@ Thus the non-`SO(2)`-invariant phase term is proportional to
 `b^3 + bbar^3 = 2 |b|^3 cos(3 arg b)`, not to
 `a (b^3 + bbar^3)`.
 
-No audit verdict, ledger status, publication status, or repo-wide authority
-surface is changed by this source-side repair.
+No new axiom, Tier-A admission, audit verdict, or physical scalar-measure
+bridge is introduced here.
 
-## Cited authorities (one hop)
-
-This note's load-bearing one-hop citations registered to the audit-graph
-builder:
-
-- [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
-  — exact spectrum-operator bridge identity that carries operator-side
-  `kappa = 2` as a corollary of spectrum-side `Q = 2/3` with symbolic zero
-  residue. This is the primary bridge-corollary route used by the present
-  demotion note.
-- [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md)
-  — independent bounded-support route via real-isotype multiplicity counting
-  on the block-total Frobenius-squared functional. Cited for completeness as
-  the alternative non-MRU support route; not promoted here to a standalone
-  physical scalar-measure closure theorem.
-- [`KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`](KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md)
-  — the demoted MRU theorem note whose closure status this note formally
-  reclassifies to supplementary / alternative-framing support.
-- `KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
-  — the companion MRU obstruction note co-demoted by this reclassification.
-
-These citations register the one-hop load-bearing dependency edges so the
-citation-graph builder picks them up on the next pipeline run. The repair
-addresses the `notes_for_re_audit_if_any` request to "add one-hop
-dependencies for the spectrum-operator bridge theorem, block-total
-Frobenius theorem" in the prior audit verdict on this note.
+The clean claim is bounded demotion / bridge-corollary support. The primary
+exact bridge-corollary route is the graph-visible spectrum-operator bridge.
+The block-total Frobenius result remains independent bounded support in its
+own source note, but it is not a standalone full physical scalar-measure
+closure theorem here.
 
 ---
 
@@ -98,10 +91,13 @@ structural open import behind the MRU closure route for Koide kappa:
 > not the physical claim that the lane observables **factor through**
 > that radius.
 
-That is a correct source-boundary finding. This note accepts it, attempts the
-framework derivation (Path A), documents why it does not close, and formally
-repositions the stack so the MRU route is not load-bearing for the
-bridge-corollary statement.
+That is a correct audit finding. This note accepts it, attempts the
+retained-framework derivation (Path A), documents why it does not close,
+and formally repositions the stack so the operator-side `kappa = 2`
+statement is carried only as the spectrum-operator bridge corollary of
+spectrum-side `Q = 2/3`. The block-total Frobenius branch remains
+bounded algebraic context until a retained canonical scalar-measure
+bridge exists.
 
 ---
 
@@ -182,13 +178,15 @@ or on this branch.
 
 ---
 
-## 2. Path B: formal demotion of MRU, bridge-corollary support
+## 2. Path B: formal demotion of MRU, bridge-corollary replacement
 
-Path B observes that the MRU route is **not needed** for the exact
-spectrum-to-operator bridge corollary. Two non-MRU source routes support
-operator-side `kappa = 2` without any SO(2)-quotient assumption: the exact
-spectrum-operator bridge corollary and the bounded block-total Frobenius
-calculation.
+Path B observes that the MRU route is **not needed** for the
+operator-side bridge corollary. The retained spectrum-operator bridge
+shows that, on `Herm_circ(3)`, the operator-side equation
+`a^2 = 2 |b|^2` is exactly the spectrum-side equation
+`a_0^2 = 2 |z|^2` written in cyclic-compression coordinates. This
+does not derive spectrum-side `Q = 2/3`; it transfers that condition to
+operator-side `kappa = 2` with zero symbolic residue.
 
 ### 2.1 Primary route — spectrum-operator bridge
 
@@ -220,7 +218,7 @@ reduced carrier.
 Runner: `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py`,
 `PASS = 9, FAIL = 0`.
 
-### 2.2 Independent second route — block-total Frobenius measure
+### 2.2 Bounded context — block-total Frobenius measure is not a second closure route here
 
 Source: `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`.
 
@@ -248,24 +246,24 @@ dimension for which the multiplicity pattern is exactly
 Runner: `scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py`,
 `PASS = 16, FAIL = 0`.
 
-### 2.3 What the two routes collectively support
+Boundary. This branch is not used by the present demotion note as an
+independent retained closure route. Its own source note says the
+canonical physical scalar-lane measure / `SO(2)`-quotient bridge is
+still open. It is retained-bounded algebraic support for a possible
+future scalar-measure theorem, not an unbounded closure of operator-side
+`kappa = 2` by itself.
 
-Both routes land at `kappa = 2`. Neither uses the SO(2)-quotient.
+### 2.3 What this note carries
 
-- The bridge gives a **symbolic equivalence** (zero residual) from
-  spectrum-side to operator-side. It is a corollary route: when the
-  spectrum-side Koide premise is available, the operator-side
-  `kappa = 2` identity follows with zero residual and no new
-  operator-side primitive.
-- The block-total Frobenius measure gives the `(1, 1)` weights
-  **directly** from Frobenius reciprocity multiplicity counting. This is
-  independent bounded support, but this note does not use it as a standalone
-  full physical scalar-measure closure theorem.
+This note carries three restricted statements:
 
-The clean source-side conclusion is therefore narrower: the MRU quotient is
-demoted out of the load-bearing bridge-corollary path, and the block-total
-route remains bounded support unless a separate physical scalar-measure bridge
-is supplied.
+1. The MRU/SO(2)-quotient route is demoted because the quotient is not
+   derived from retained observable-principle inputs.
+2. The spectrum-operator bridge gives a retained algebraic corollary:
+   if spectrum-side `Q = 2/3` holds, then operator-side `kappa = 2`
+   holds on the cyclic-compression carrier.
+3. The block-total Frobenius route remains bounded context and is not
+   advertised as an independent retained closure route here.
 
 ---
 
@@ -286,15 +284,15 @@ Effective from this note:
    retained observable principle (spectrum-native scalar observables
    are **not** SO(2)-invariant on `Herm_circ(3)` in general).
 
-3. **The spectrum-operator bridge theorem is the primary exact
-   bridge-corollary route** for operator-side `kappa = 2`. It carries the
-   algebraic implication with symbolic zero residual once the spectrum-side
-   premise is supplied.
+3. **The spectrum-operator bridge theorem is the primary graph-visible
+   retained authority** for the operator-side bridge corollary. It
+   carries `spectrum-side Q = 2/3 => operator-side kappa = 2` with
+   symbolic zero residual and no new operator-side axiom.
 
-4. **The block-total Frobenius measure theorem is independent bounded
-   support.** It produces the `(1, 1)` weight pattern from Frobenius
-   reciprocity multiplicity without any frame postulate. This note does not
-   promote it to a standalone physical scalar-measure closure theorem.
+4. **The block-total Frobenius measure theorem is not an independent
+   retained closure route in this note.** It produces the `(1, 1)`
+   weight pattern from Frobenius reciprocity multiplicity, but its own
+   boundary leaves the canonical scalar-lane measure bridge open.
 
 5. **The MRU notes retain their role as alternative pedagogical
    framings.** They correctly capture the content that, *if one
@@ -306,32 +304,35 @@ Effective from this note:
 
 ## 4. Scientific consequence for the scalar-selector cycle 1 stack
 
-The source-side structural import is isolated via Path B: the postulate is
-**not** promoted to a theorem, and the MRU route it sat under is demoted out
-of the bridge-corollary path.
+The strict-reviewer audit's structural open import (I6) is handled by
+demotion rather than promotion: the postulate is **not** promoted to a
+theorem, and the MRU route it sat under is demoted out of the closure
+stack.
 
-Operator-side `kappa = 2` is supported **without any SO(2)-quotient
-postulate** by the exact bridge corollary plus independent bounded
-block-total support. This row does not set the effective status of that
-support stack.
+Operator-side `kappa = 2` is not supplied here by an independent
+operator-side scalar-measure postulate. It is inherited from
+spectrum-side `Q = 2/3` through the exact spectrum-operator bridge,
+without any SO(2)-quotient postulate.
 
 The remaining load-bearing input for the full charged-lepton Koide
-closure is the **spectrum-side** `Q = 2/3` (Berry + Brannen), which is
-outside this demotion note and is not affected by this source-boundary repair.
+closure is the **spectrum-side** `Q = 2/3` route itself. This note does
+not audit, alter, or strengthen that spectrum-side route; it only says
+the operator-side equation is the same condition transported through
+the retained bridge.
 
 ---
 
 ## 5. Effect on cross-references
 
-The following retained notes currently reference the MRU route as if
+The following source notes currently reference the MRU route as if
 it were a primary closure path and should be read with this demotion
 in mind:
 
 - `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`
-  supplies independent bounded support and flags the measure-choice residue
-  as minor (section 4).
-  The "MRU real-isotype quotient closure" paragraph in its preamble
-  should be read as an alternative supplementary framing.
+  is bounded algebraic support. Any wording that makes it sound like
+  an unbounded independent closure route should be read through its own
+  measure-choice boundary: the canonical physical scalar-lane measure
+  bridge remains open.
 - `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`
   already states correctly (section 3) that the operator-side framing
   is a **corollary** of the spectrum-side closure via the bridge
@@ -367,16 +368,17 @@ in mind:
 
 ## 7. Reproduction
 
-No new runner is required for this note. The load-bearing checks are:
+The source-side demotion checks are:
 
 ```bash
+PYTHONPATH=scripts python3 scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py
 PYTHONPATH=scripts python3 scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py
-PYTHONPATH=scripts python3 scripts/frontier_koide_kappa_block_total_frobenius_measure_theorem.py
 ```
 
-Both must continue to PASS cleanly on this branch. The MRU runners
-continue to verify their own internal conditional statements but are
-no longer load-bearing for operator-side `kappa = 2` closure.
+Both must continue to PASS cleanly on this branch. The block-total and
+MRU runners continue to verify their own internal bounded or
+conditional statements, but they are no longer load-bearing for this
+note's operator-side bridge corollary.
 
 ---
 
@@ -384,11 +386,10 @@ no longer load-bearing for operator-side `kappa = 2` closure.
 
 | Route | Status | Requires SO(2)-quotient? |
 |---|---|---|
-| Spectrum-operator bridge (PASS=9, zero symbolic residue) | **Primary exact bridge-corollary route** | No |
-| Block-total Frobenius measure (PASS=16) | **Independent bounded support** | No |
+| Spectrum-operator bridge (PASS=9, zero symbolic residue) | **Graph-visible retained authority for the bridge corollary** | No |
+| Block-total Frobenius measure (PASS=16) | **Bounded algebraic context; not a closure route here** | No for its bounded algebra, but yes for physical scalar-measure closure |
 | MRU + weight-class obstruction | **Supplementary / alternative framing** | Yes (not derivable from retained theorems) |
 
-The `kappa = 2` bridge-corollary path does not require the SO(2)-quotient
-postulate. The MRU route is kept as supplementary support but is not
-load-bearing, and the block-total route remains bounded support rather than a
-standalone full physical scalar-measure closure theorem in this row.
+The operator-side `kappa = 2` statement is carried here only as the
+retained spectrum-operator bridge corollary of spectrum-side `Q = 2/3`.
+The MRU route is kept as supplementary support but is not load-bearing.

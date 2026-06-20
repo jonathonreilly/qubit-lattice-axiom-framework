@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py
+runner_sha256: 2ef034368d7874164add7d76c4c78cc39d2b839c5ee2ab1bea9de7a3e63ce7c3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.59
+status: ok
+----- stdout -----
+Koide MRU demotion bridge-corollary source runner
+==============================================================================
+  [PASS] note registers the dedicated demotion runner
+  [PASS] note states the bridge is the only graph-visible retained authority
+  [PASS] note explicitly rejects an independent block-total closure route
+  [PASS] note preserves no-new-axiom / no-audit-verdict boundary
+  [PASS] note keeps MRU as supplementary conditional support
+  [PASS] block-total and MRU context pointers are not graph-visible markdown edges
+  [PASS] old overbroad two-route closure claims are absent
+  [PASS] block-total source authority itself declares bounded support
+  [PASS] block-total source authority leaves canonical scalar-measure bridge open
+
+Trace/SO(2) obstruction checks
+------------------------------------------------------------------------------
+  [PASS] tr(H^3) exact formula has phase term 3(b^3+bbar^3), not a-scaled phase
+         tr(H^3) = 3*a**3 + 18*a*x**2 + 18*a*y**2 + 6*x**3 - 18*x*y**2
+  [PASS] phase survives at a=0, so it cannot be proportional to a(b^3+bbar^3)
+         phase_at_a0=6*x*(x**2 - 3*y**2)
+  [PASS] generic SO(2) phase rotation changes scalar spectral observables
+         tr3: 17.826000 vs 15.768000; det: 0.650000 vs -0.036000
+
+Spectrum-operator bridge corollary checks
+------------------------------------------------------------------------------
+  [PASS] bridge gives a0 = sqrt(3) a exactly
+  [PASS] bridge gives |z|^2 = 3 |b|^2 exactly
+  [PASS] spectrum residual equals three times operator residual exactly
+  [PASS] operator kappa=2 sample points imply spectrum residual zero
+         max_spectrum_residual=8.882e-16
+
+SUMMARY: KOIDE MRU DEMOTION BRIDGE-COROLLARY PASS=16 FAIL=0
+
+----- stderr -----
+

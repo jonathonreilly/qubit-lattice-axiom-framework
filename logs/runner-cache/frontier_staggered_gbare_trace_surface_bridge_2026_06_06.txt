@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py
-runner_sha256: 753bbc3852a7b4617967ea4d6999956569bc4effecabb6f57fb58e04d2978afc
+runner_sha256: 2d99d56df2c6938e756299de8032026bbc978b10b3259e5c45c1db7743640543
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 
@@ -99,24 +99,25 @@ Part 5: lane classifier
   [PASS] narrowed trace gate leaves only the scale-transport bridge load-bearing here
 
 ----------------------------------------------------------------------------------------
-Part 6: branch-local note hygiene
+Part 6: source-note hygiene
 ----------------------------------------------------------------------------------------
   [PASS] bridge note contains: bounded support / conditional trace-surface bridge
   [PASS] bridge note contains: not a parent promotion
   [PASS] bridge note contains: narrower than full species-label closure and narrower than physical Standard Model color naming
   [PASS] bridge note contains: structural graph-first `su(3)` carrier on the selected-axis `V_3` surface
+  [PASS] bridge note contains: root-`SU(2)` scale-transport note supplies a finite candidate closure
   [PASS] bridge note contains: not load-bearing for this trace-normalization statement
   [PASS] bridge note contains: does not have to wait for a forced generation-label bijection
   [PASS] bridge note contains: or a physical-color naming theorem
   [PASS] bridge note contains: No parent `g_bare` promotion is claimed
-  [PASS] bridge note avoids banned phrase: retained branch-local
-  [PASS] bridge note avoids banned phrase: would become retained
-  [PASS] bridge note avoids banned phrase: promoted to retained
-  [PASS] bridge note avoids banned phrase: retained on the actual surface
-  [PASS] bridge note avoids banned phrase: full retained at this time
+  [PASS] bridge note avoids stale retained-boundary phrase 1
+  [PASS] bridge note avoids stale retained-boundary phrase 2
+  [PASS] bridge note avoids stale retained-boundary phrase 3
+  [PASS] bridge note avoids stale retained-boundary phrase 4
+  [PASS] bridge note avoids stale retained-boundary phrase 5
 
 ========================================================================================
-  TOTAL: PASS=84, FAIL=0
+  TOTAL: PASS=85, FAIL=0
 ========================================================================================
 
 ----- stderr -----

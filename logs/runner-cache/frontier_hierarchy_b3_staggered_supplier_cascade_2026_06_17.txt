@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py
+runner_sha256: 3913e133288ad1627437afbdd1e747b90072256ad563a7fea63028bffc9d6b3d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+========================================================================
+Hierarchy B3 staggered supplier cascade verifier
+========================================================================
+
+== Exact B3 carrier math ==
+[PASS] 2^d corner count gives d=4 -> N=16 and d=3 -> 8 falsification leg ({2: 4, 3: 8, 4: 16, 5: 32})
+[PASS] d=4 Hamming staircase is 1,4,6,4,1 ([1, 4, 6, 4, 1])
+[PASS] minimal 2^4 eta-phase block has D^2 = -4 I and D antisymmetric
+[PASS] char poly is (lambda^2 + 4)^8
+[PASS] determinant u0-degree equals the carrier count 16
+
+== Read-only current supplier grades ==
+[PASS] naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10 has retained-grade current status (status=retained)
+[PASS] hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10 has retained-grade current status (status=retained_no_go)
+[PASS] p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11 has retained-grade current status (status=retained_bounded)
+[PASS] axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26 has retained-grade current status (status=retained_bounded)
+[PASS] staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11 has retained-grade current status (status=retained)
+[PASS] staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17 has retained-grade current status (status=retained_bounded)
+[PASS] staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16 has retained-grade current status (status=retained_bounded)
+[PASS] staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17 has retained-grade current status (status=retained)
+[PASS] staggered kinetic-class source is visible at its current status (status=unaudited)
+[PASS] P-FLUX composer and Z certificate are retained-grade inputs
+
+== Source wiring and firewall ==
+[PASS] kinetic_isotropy_primitive is registered as an axiom-premise node
+[PASS] new B3 note is markdown-linked from hierarchy note
+[PASS] hierarchy note still keeps B4 and B5 open
+[PASS] hierarchy runner knows about the new B3 supplier packet
+[PASS] hierarchy markdown dependency set has six source notes after this repair (['HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md', 'HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md', 'HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md', 'KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md', 'NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md', 'PLAQUETTE_SELF_CONSISTENCY_NOTE.md'])
+[PASS] forbidden overclaim/status phrases absent ([])
+[PASS] full staggered parent remains plain context, not a markdown dependency
+[PASS] labeling residual is mentioned only as excluded/non-load-bearing scope
+[PASS] B3 supplier note states the audit/status firewall explicitly
+
+========================================================================
+TOTAL: PASS=24 FAIL=0
+========================================================================
+
+----- stderr -----
+

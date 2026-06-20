@@ -23,4 +23,4 @@ separate limits note.
 
 ## Upstream authority
 
-- [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) — line-helper utilities (`compressed_local_block_from_line`, `normalize_line`, `projection_frobenius_distance`).
+- [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) — line-helper utilities / helper-interface only (`compressed_local_block_from_line`, `normalize_line`, `projection_frobenius_distance`); the selector argument is supplied by this theorem, not by the helper wrapper.

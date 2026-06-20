@@ -1,0 +1,42 @@
+==============================================================================
+ROUTE R-N2b-JOINT : absolute clock unit from JOINED rate gates
+==============================================================================
+
+[A] GATE-S and GATE-R objects build correctly (A_min surface)
+  [PASS] GATE-S: T_hat^2 positive Hermitian, spectrum in (0, M_T]
+  [PASS] GATE-S: 1/(2 a_tau) reconstruction recovers H (N2a forced) :: resid 0.0e+00
+  [PASS] GATE-R: generator columns sum to zero
+  [PASS] GATE-R: Q stabilizes supplied dial (Q pi = 0) :: ||Q pi|| 2.8e-17
+
+[B] JOINT rescaling a_tau->c a_tau, H->H/c, Q->Q/c : invariance test
+  [PASS] transfer object T_hat^2 invariant under joint rescaling :: max delta 5.6e-17
+  [PASS] record-block kernel K=exp(2 a_tau Q) invariant under joint rescaling :: max delta 3.3e-16
+  [PASS] FULL joint per-block evolution (T2 (x) K) invariant -> a_tau is gauge :: max delta 3.3e-16
+
+[C] Joint gates fix DIMENSIONLESS RATIOS, not the absolute unit
+  [PASS] DIMENSIONFUL mass gap CHANGES under rescaling (carries the unit) :: gap0 0.4000
+  [PASS] DIMENSIONFUL relaxation rate CHANGES under rescaling (carries unit) :: relax0 1.0000
+  [PASS] DIMENSIONLESS ratio (m_gap / relax) is INVARIANT (the fixed datum) :: ratio 0.400000, max dev 5.6e-17
+  [PASS] equivalently m_gap * relaxation_TIME is the c-invariant the gates pin
+
+[D] STEELMAN: explicit record-rate datum cannot supply the unit
+  [PASS] record COUNT-per-block datum is clock-free: invariant under the CORRECT joint rescaling (a_tau->c a_tau, Q->Q/c) :: max dev 2.2e-16
+  [PASS] ...and the check DISCRIMINATES: a MALFORMED rescaling (a_tau scaled, Q not) MOVES the same count datum (so the 0 above is a real computed gauge) :: max malformed dev 0.5000
+  [PASS] converting it to a per-time rate REQUIRES a_tau in seconds (circular) :: the 1/time rate only changes because we INSERTED a_tau; not an A_min observable
+  [PASS] no A_min observable returns a unit-bearing 1/time number -> c free (DERIVED: every invariant observable is dimensionless; every 1/time quantity moves only via the hand-inserted a_tau) :: count-gauge dev 2.2e-16; inserted-rate moves True
+
+[E] rescaling is an exact 1-parameter symmetry group of the joint data
+  [PASS] c=1 is identity on (a_tau, H, Q)
+  [PASS] composition c1*c2 leaves observables (T2,K) at fixed point
+  [PASS] observable stabilizer is full R_{>0} (no preferred a_tau) :: every c maps observable data to itself -> absolute unit undetermined
+
+==============================================================================
+TOTAL: PASS=18 FAIL=0
+==============================================================================
+
+VERDICT: a_tau -> c a_tau (H->H/c, Q->Q/c) is an EXACT 1-parameter
+gauge of the JOINT (GATE-S + GATE-R) construction. Both retained rate
+gates together fix only DIMENSIONLESS ratios (m_gap * relaxation-time,
+counts-per-block). No A_min observable returns a unit-bearing 1/time
+number, so the absolute clock unit a_tau is NOT pinned -- RATIO-ONLY.
+N2b stays WALLED by no-metric-scale (Lattice) + no-time-metric (Record).

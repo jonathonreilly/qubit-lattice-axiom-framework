@@ -1,0 +1,34 @@
+# PR_BACKLOG — single-clock-baxis-wall
+
+**Reason PRs not opened live:** GitHub auth unavailable in this unattended run.
+`git push` → `fatal: could not read Username for 'https://github.com'`;
+`gh auth status` → `Failed to log in to github.com account JONbridgerapps`.
+Per physics-loop SKILL.md this is a delivery degradation, not a science stop —
+work is committed to local block branches and listed here for batch delivery.
+
+## To restore delivery (run when GitHub auth is back)
+
+```bash
+# 1. re-authenticate
+gh auth login            # or: gh auth refresh
+
+# 2. push + open each block PR (commands per block below)
+```
+
+All branches base off `origin/main` unless marked stacked. PR titles carry
+`[physics-loop]`, the block slug, and honest status. Do NOT merge; leave for the
+independent audit lane / review.
+
+---
+
+## Block 01 — fresh attempts (stretch / no-go-supporting)  ✅ committed `d60f597ee`
+
+```bash
+cd "/Users/jonBridger/tp-audit-bridge-20260620"
+git push -u origin physics-loop/single-clock-baxis-wall-block01-20260620
+gh pr create --base main --head physics-loop/single-clock-baxis-wall-block01-20260620 \
+  --title "[physics-loop] single-clock-baxis-wall block01: B-AXIS axis-selector fresh attempts (stretch, no-go-supporting)" \
+  --body-file .claude/science/physics-loops/single-clock-baxis-wall/PR_BODY_block01.md
+```
+
+(Subsequent blocks appended below as they close.)

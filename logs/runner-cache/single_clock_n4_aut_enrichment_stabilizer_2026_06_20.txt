@@ -1,0 +1,87 @@
+============================================================================
+R-N4-AUT: enrichment-stabilizer search for a sub-S_4 axis selector
+============================================================================
+
+bare surface: even cubic block (4, 4, 4, 4), N = 256 sites, mass = 0.3
+
+----------------------------------------------------------------------------
+[G] full automorphism group of the BARE staggered surface (the wall)
+----------------------------------------------------------------------------
+[G] PASS: bare-surface automorphism group projects ONTO all of S_4 (transitive on the 4 axes -- the standing N4 wall)  (|G|=384, |axis image|=24 (S_4 has 24))
+[G] PASS: S_4 image is transitive: axis 0 maps to every axis  (orbit of axis 0 = [0, 1, 2, 3])
+
+----------------------------------------------------------------------------
+[E1] sublattice-parity / reality-CPT grading  eps = (-1)^{sum x}
+----------------------------------------------------------------------------
+[E1] PASS: grading is preserved by the FULL S_4 axis image (S_4-isotropic) -> selects NO axis  (|axis image of Stab|=24 (S_4=24); common fixed axes=[]; selected axis=None)
+
+----------------------------------------------------------------------------
+[E2] bare cubic adjacency (graph Laplacian) -- pure Lattice axiom
+----------------------------------------------------------------------------
+[E2a] PASS: cubic adjacency Laplacian alone is S_4-isotropic (every plain axis permutation preserves it) -> the Lattice graph carries no axis  (plain-perm symmetries = 24 (S_4=24))
+[E2] PASS: joint (staggered-hop + Laplacian) stabilizer is TRIVIAL (identity-only): W IS BROKEN by this A_min enrichment (plain swap keeps the Laplacian but breaks the hop; dressed W keeps the hop but breaks the Laplacian; no non-identity B_4 element keeps both), but the break is axis-SYMMETRIC -> selects NO axis (NOT S4-isotropic; trivial joint stab)  (|axis image of joint Stab|=1 (trivial=1); common fixed axes=[0, 1, 2, 3]; selected axis=None)
+
+----------------------------------------------------------------------------
+[E3] staggered eta hop sectors {D_0..D_3} as an unordered family
+----------------------------------------------------------------------------
+[E3] PASS: the unordered staggered hop-sector family is preserved by the FULL S_4 (sectors permute among themselves) -> selects NO axis  (|axis image of Stab|=24; common fixed axes=[]; selected axis=None)
+
+----------------------------------------------------------------------------
+[E4] STW crossing-link RP invariant P_a(x) per axis
+----------------------------------------------------------------------------
+[E4] PASS: crossing-link RP invariant P_a takes the SAME value-set on every axis -> S_d-isotropic, carries no axis label  (P_a value-sets = [[1], [1], [1], [1]])
+
+----------------------------------------------------------------------------
+[E5] eta-curvature 2-cocycle on plaquettes (per plane)
+----------------------------------------------------------------------------
+[E5] PASS: eta-curvature 2-cocycle is IDENTICAL in temporal (0,i) and spatial (i,j) planes -> S_4-isotropic, no time-singling  (temporal=[-1, -1, -1], spatial=[-1, -1, -1])
+
+----------------------------------------------------------------------------
+[E6] Record additive scalar readout (diagonal occupancy counter)
+----------------------------------------------------------------------------
+[E6] PASS: the additive record readout is the scalar identity weighting -> commutes with ALL of G (Record supplies no axis-weighted readout)  (|axis image of Stab|=24; uniform additive readout is S_4-fixed)
+
+----------------------------------------------------------------------------
+[E7] per-axis Z_2 BC datum bc=(A,P,P,P) -- sub-S_4 but NOT A_min
+----------------------------------------------------------------------------
+[E7] PASS: the BC datum (A,P,P,P) HAS a sub-S_4 stabilizer that selects EXACTLY axis 0 and acts as S_3 on the spatial axes (the sharpened pin: a genuine axis selector)  (|axis image of Stab|=6 (<24); common fixed axes=[0]; selected axis=0)
+[E7] PASS: ...but that datum is S_4-TRANSPORTABLE (a bare-group element maps (A,P,P,P) onto (P,A,P,P)) AND is a SUPPLIED boundary input, not A_min-derivable -> fails the A_min test (does NOT crack)  (||W01 M_appp W01^T - M_pappp|| transport resid < TOL: True)
+
+----------------------------------------------------------------------------
+[E8] richer cubic graph: + face-diagonal links (isotropic enrichment)
+----------------------------------------------------------------------------
+[E8a] PASS: face-diagonal-enriched cubic graph alone is STILL S_4-isotropic (every plain permutation preserves it; an isotropic graph enrichment respects cubic symmetry) -> selects no axis  (plain-perm symmetries = 24 (S_4=24))
+[E8] PASS: joint (staggered-hop + diagonal-graph) stabilizer is TRIVIAL (identity-only): W IS BROKEN by this A_min enrichment, but the break is axis-SYMMETRIC -> selects NO axis (NOT S4-isotropic; trivial joint stab)  (|axis image of joint Stab|=1 (trivial=1); common fixed axes=[0, 1, 2, 3]; selected axis=None)
+
+----------------------------------------------------------------------------
+[SCOPE] even-extent requirement (odd-L falsifier)
+----------------------------------------------------------------------------
+[SCOPE] PASS: ODD cubic L=(3,3,3,3): signed exchange does NOT preserve the hop (resid 6) -> S_4-transitivity exact-zeros are EVEN-extent only  (||W M W^T - M||_odd = 6.000 (matches the s4-branch falsifier))
+[SCOPE] PASS: ...EVEN L=(4,4,4,4) recap: exact (resid 0)
+
+============================================================================
+VERDICT: enrichment / stabilizer table
+============================================================================
+id   enrichment                     |img|  sel   class                            A_min? 
+E1   reality/CPT parity grading     24     None  S4-isotropic                     yes    
+E2   cubic adjacency Laplacian      1      None  trivial-joint(symmetric-break)   yes    
+E3   staggered hop-sector family    24     None  S4-isotropic                     yes    
+E4   STW crossing-link RP invariant 24     None  S4-isotropic                     yes    
+E5   eta-curvature 2-cocycle        24     None  S4-isotropic                     yes    
+E6   Record additive scalar readout 24     None  S4-isotropic                     yes    
+E7   per-axis Z_2 BC datum (A,P,P,P) 6      0     one-axis-selecting(S3)           NO     
+E8   diagonal-link cubic graph      1      None  trivial-joint(symmetric-break)   yes    
+
+classification key: every A_min enrichment's JOINT stabilizer with the
+staggered hop is either S4-isotropic (full S_4, fixes none) or trivial
+(identity-only -> a SYMMETRIC, NON-axis-selecting break of W: W is broken,
+but no axis is singled out). NONE is one-axis-selecting(S3). The only
+one-axis-selecting enrichment is E7 (per-axis Z_2 BC datum), which is
+S4-transportable AND outside A_min.
+[VERDICT] PASS: every A_min enrichment's JOINT stabilizer with the staggered hop is either ALL of S_4 (isotropic) or TRIVIAL (a symmetric, non-axis-selecting break of W); NO A_min enrichment is one-axis-selecting(S3); the only one-axis-selecting enrichment is the per-axis Z_2 BC datum (E7), which is S_4-transportable and outside A_min  (A_min classes={'E1': 'S4-isotropic', 'E2': 'trivial-joint(symmetric-break)', 'E3': 'S4-isotropic', 'E4': 'S4-isotropic', 'E5': 'S4-isotropic', 'E6': 'S4-isotropic', 'E8': 'trivial-joint(symmetric-break)'}; E7 one-axis-selecting=True)
+[VERDICT] PASS: NO A_min-available enrichment SELECTS an axis -> the S_4 orbit is EXHAUSTIVE, steelman FAILS, wall CONFIRMED  (A_min-crackers found = [])
+
+============================================================================
+TOTAL: PASS=17 FAIL=0
+============================================================================
+RESULT: wall CONFIRMED -- every A_min enrichment's joint stabilizer with the staggered hop is either all of S_4 (isotropic) or trivial (a symmetric, non-axis-selecting W-break); NO A_min enrichment has a one-axis-selecting (S_3) stabilizer. The only one-axis-selecting enrichment is the per-axis Z_2 BC datum (E7), which is S_4-transportable and outside A_min.

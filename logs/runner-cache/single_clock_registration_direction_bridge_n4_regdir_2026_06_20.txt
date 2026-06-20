@@ -1,0 +1,72 @@
+========================================================================
+R-N4-REGDIR: REGISTRATION-DIRECTION BRIDGE ATTEMPT (2026-06-20)
+========================================================================
+
+Question: does record-accumulation as a Lieb-Robinson / causal-cone
+monotone single out a UNIQUE evolution-generating direction WITHOUT
+presupposing a generator, breaking the tau<->x_1 exchange W?
+Honest answer computed below: NO. The A_min-only monotone is a
+direction-symmetric BALL (W-transports); a genuine LR cone REQUIRES a
+supplied generator (which itself W-transports); the accumulation arrow
+is the past-hypothesis OPEN GATE; and an axis-symmetric record-
+production map is W-covariant -- production breaks W only when handed an
+asymmetric pointer/readout-axis DATUM, which is the registration-
+direction bridge itself, UNDISCHARGED. => relocates to the emergent-
+dynamics / record-production OPEN GATE; B-AXIS stays live.
+
+  surface: block (4, 4, 2, 2), N = 64 sites, mass = 0.3, periodic BCs
+
+------------------------------------------------------------------------
+[W] THE STANDING WALL: exact tau<->x_1 exchange certificate (recomputed)
+------------------------------------------------------------------------
+  [PASS][C] W = P_{tau<->1} diag((-1)^{x_tau x_1}) is orthogonal  -- N = 64 sites, mass = 0.3
+  [PASS][C] exact static surface invariance ||W M_KS W^T - M_KS|| = 0: no Euclidean-surface structure selects the time axis (the wall R-N4-REGDIR tries to break with a record-production layer)  -- resid = 0.00e+00
+  [PASS][D] falsifier: plain axis swap WITHOUT the sign field fails (certificate is non-trivial; the right exchange is the SIGNED W)  -- resid = 5.6569
+
+------------------------------------------------------------------------
+[BALL] A_min RECORD-ACCUMULATION MONOTONE: it is a BALL, not a cone
+------------------------------------------------------------------------
+  [PASS][C] the record-accumulation ball B_r is invariant under reflection in EVERY axis (x_mu -> -x_mu): graph-distance carries no forward/backward orientation, so an 'accumulation along d' has no preferred sign and no preferred axis -- it is a BALL, not a directed cone  -- max ||R_mu B R_mu^T - B|| over mu = 0.0e+00
+  [PASS][C] W transports the accumulation ball exactly (W B_r W^T = B_r): the registered-outcome count within graph-distance r is identical along the tau-rooted and x_1-rooted readings -- no axis label emerges from counting  -- resid = 0.0e+00
+  [PASS][A] Record finite additivity over disjoint graph-distance shells gives I(ball) = sum_k I(shell_k); shells are undirected (graph distance), so the additive readout supplies a magnitude, never an axis (Record: 'no time metric, no occupancy rule')  -- ||(shell0+shell1) - ball1|| = 0.0e+00
+    => RELOCATION 1: the A_min-only record-accumulation monotone is direction-free.
+       To make it a CONE one must add a generator and a time variable, both outside A_min.
+
+------------------------------------------------------------------------
+[DYN] LIEB-ROBINSON DYNAMICAL CONE: needs a generator, and W transports it
+------------------------------------------------------------------------
+  [PASS][A] WITHOUT dynamics (t=0) the cone is a single POINT: [O_x,O_y]=0 for all y!=0 by raw equal-time tensor locality (M1), nonzero only at the source site -- the equal-time monotone has no propagation front and selects no direction  -- equal-time cone = [2.0, 0.0, 0.0, 0.0, 0.0]
+  [PASS][C] WITH a supplied generator H the cone is non-trivial and spreads from the source site -- a genuine LR front exists ONLY once a Hamiltonian is supplied (M2 'requires a Hamiltonian ... Heisenberg evolution, out of scope' for A_min)  -- cone(t=0.6) = [1.821, 0.822, 0.072, 0.002, 0.0]
+  [PASS][C] the W-conjugate generator H' = P_pi H P_pi^T gives a LIEB-ROBINSON CONE that is IDENTICAL after relabeling (same front, same cone constants): the dynamical cone TRANSPORTS with the generator -- supplying H to make the cone non-degenerate also supplies the axis it would 'select', so the cone consumes B-AXIS to derive B-AXIS (circular)  -- max |cone - relabeled cone| = 6.7e-16
+    => RELOCATION 2: a genuine LR cone REQUIRES a generator; the generator is the supplied
+       dynamics (OPEN GATE). Any generator's cone is W-transportable to the swapped axis.
+
+------------------------------------------------------------------------
+[ARROW] THE MONOTONICITY DIRECTION IS A SUPPLIED BOUNDARY, NOT AN AXIOM
+------------------------------------------------------------------------
+  [PASS][A] a record monotone needs a DIRECTION of accumulation; the SAME (time-symmetric) update gives an increasing profile from a low-record boundary and a decreasing one from a high-record boundary -- the arrow is the boundary's, so 'accumulation' imports a directionality A_min does not supply  -- low-start monotone up = True, high-start monotone down = True
+  [PASS][B] ARROW note (bounded, retained reading): record formation derives the arrow's DIRECTION = 'away from the low-record boundary' but its existence is '**in the initial condition, not the dynamics**' = the past hypothesis = a universal-floor OPEN input -- so the registration direction is a supplied boundary datum, not derived from Lattice/Quantum/Record  -- ARROW note quotes present
+  [PASS][B] MINIMAL_AXIOMS lists 'arrow, measurement, decoherence, record-production dynamics' as OUTSIDE axiom content (open gates); a registration-direction bridge built on any of these relocates there  -- open-gate list present
+    => RELOCATION 3: the accumulation arrow is the past-hypothesis OPEN GATE, not an A_min consequence.
+
+------------------------------------------------------------------------
+[PROD] CRACK ATTEMPT: can record-PRODUCTION break W intrinsically? (NO)
+------------------------------------------------------------------------
+  [PASS][C] axis-AGNOSTIC record-production (site-diagonal registration / dephasing map D) is EXACTLY W-covariant: D(W M W^T) = W D(M) W^T -- a production map that registers a per-site realized outcome identically at every site carries NO axis label and cannot break W  -- resid = 0.0e+00
+  [PASS][C] the uniform realized-outcome broadcast POVM {P_a (x) P_b} is complete (sum K^dag K = I) and is permuted into itself by the site-swap (covariant) -- an A_min record-production map symmetric over sites is exchange-symmetric, so it does NOT single out a registration direction  -- completeness resid = 0.0e+00, swap-covariant = True
+  [PASS][D] FALSIFIER / the WALL: a production map that registers along ONE distinguished register axis only (asymmetric pointer basis) BREAKS the swap-covariance -- but that axis is a SUPPLIED readout-context / pointer-basis datum (the registration-direction DATUM), exactly the input Record withholds ('A record supplies no readout context, decomposition')  -- swap-covariance break = 3.440 (only after an axis datum is injected)
+    => THE WALL: record-production breaks W ONLY when handed an asymmetric pointer/readout-axis
+       datum. A_min withholds that datum; it is the registration-direction bridge itself, undischarged.
+
+------------------------------------------------------------------------
+[D] DISCIPLINE: A_min boundary, source quotes, honest outcome
+------------------------------------------------------------------------
+  [PASS][B] Record axiom withholds exactly the registration-direction inputs: 'no readout context, decomposition, ... measurement/decoherence dynamics, time metric, ... or occupancy rule' (verbatim) -- so a non-transportable registration direction cannot come from Record alone  -- Record withhold list present
+  [PASS][B] Lattice supplies adjacency but 'does not supply a dynamics, ... causal cone, ...' (verbatim) -- a Lieb-Robinson cone is NOT in Lattice content  -- Lattice withhold list (incl. causal cone) present
+  [PASS][B] post-record clock/rate no-go: 'Without the supplied tau, the same record history supports many inequivalent rates' -- record event ORDER carries no lattice-axis label and no clock direction without a supplied clock map  -- clock/rate interface quote present
+  [PASS][D] scope-boundary N4 consumed verbatim (axis/transfer uniqueness is the clause this route attacks) and Stone uniqueness is transfer- and tau-relative  -- N4 + Stone-relativity lines present
+  [PASS][D] honest outcome: the route did NOT derive a non-transportable registration direction; every A_min monotone is W-transportable or imports an OPEN-GATE datum (generator / arrow boundary / pointer-axis). The result RELOCATES N4 to the record-production-dynamics OPEN GATE; it does NOT close B-AXIS and sets no audit status  -- relocation recorded, not a closure
+
+========================================================================
+TOTAL: PASS=20 FAIL=0
+========================================================================

@@ -1,0 +1,47 @@
+loop_slug: single-clock-baxis-wall
+mode: campaign
+goal: >
+  Wall-consolidation of the single_clock B-AXIS missing bridge (fanout 959):
+  honestly earn + consolidate the N2b/N4/N5 obstruction into one citable
+  retained_no_go-grade note, widen the consumer firewall, package owner decisions.
+target_status: best-honest-status
+runtime_budget_hours: 12
+started_epoch: 1781963041            # 2026-06-20 09:44 EDT
+deadline_epoch: 1782006241          # 2026-06-20 21:44 EDT
+worktree: /Users/jonBridger/tp-audit-bridge-20260620
+base_commit: 9469e8251
+
+cycle_count: 0
+block_count: 0
+active_block: 01
+active_block_branch: physics-loop/single-clock-baxis-wall-block01-20260620
+active_route: >
+  Block 01 = DEEP WORK / FRESH ATTEMPTS. Genuinely attack the never-attempted
+  positive routes before any no-go consolidation: R-N5-IRR (T̂² irreducibility),
+  R-N4-REGDIR (derived non-transportable registration-direction bridge),
+  R-N2b-JOINT (joint rate-gate clock unit), R-N4-AUT (non-W automorphism steelman).
+hard_residual_being_attacked: >
+  Whether ANY axis-selector / second-clock-exclusion / clock-unit is derivable
+  from A_min once the never-attempted record-production-dynamics routes are tried.
+
+revised_block_plan:
+  - block01: DEEP WORK fresh attempts (R-N5-IRR, R-N4-REGDIR, R-N2b-JOINT, R-N4-AUT) → honest outcomes; pivot if any cracks
+  - block02: unified obstruction note skeleton + N4 core (absorb S4/W/transport runners, pruned-supplier table, sharpened pin)
+  - block03: N2 (N2a/N2b split) + N5 (factor-boundary countermodel + admission inventory) absorbed
+  - block04: per-clause N1-N8 No-Go Discipline Gate incorporating block01 results → makes note shippable
+  - block05: consumer-firewall widening (triage ~950 descendants, extend runner, repoint citations)
+  - block06: owner/audit packaging (B-AXIS premise-node proposal, opportunity rows, source-narrowing decision, submit to audit lane)
+
+files_touched: []
+open_imports: []
+no_go_routes_pruned: see NO_GO_LEDGER.md (15 routes already pruned in-flight)
+trace_gate_class: negative_route_pruning (target_claim_id = single_clock keystone; target_blocker = B-AXIS premise edge)
+review_disposition: n/a (no artifact yet)
+pr_status: none
+
+next_exact_action: >
+  Launch block01 fresh-attempts workflow (4 routes in parallel, distinct files),
+  synthesize honest outcomes, commit + push + PR, run review-loop, checkpoint.
+stop_condition: >
+  runtime/deadline reached, or all 6 blocks closed with PRs, or a fresh route
+  in block01 cracks the wall (pivot to closure campaign).

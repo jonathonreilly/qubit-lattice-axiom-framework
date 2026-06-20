@@ -1,0 +1,92 @@
+========================================================================
+R-N5-IRR: irreducibility / gauge-redundancy of factor-clock
+decompositions of the SUPPLIED two-step transfer T̂²  (clause N5)
+========================================================================
+
+########################################################################
+# SOURCE SURFACE: L_s=3 spatial modes, mass m=0.5
+########################################################################
+
+------------------------------------------------------------------------
+[SURF] the supplied T̂² is a tensor product of per-mode factor clocks
+------------------------------------------------------------------------
+  [PASS][SURF] T̂² = exp(-2 a_τ H_hat) exactly (supplied (R-SC2) identity)  -- resid=2.78e-17, dim=8
+  [PASS][SURF] T̂² = ∏_p (lifted per-mode factor) exactly  -- resid=0.00e+00
+  [PASS][SURF] every lifted per-mode factor transfer is positive-definite  -- L_s=3 factors
+  [PASS][SURF] all per-mode factor transfers commute pairwise (resid 0)  -- max comm resid=0.00e+00
+  [PASS][SURF] factor-generator tangent span has dimension L_s (maximal reducibility)  -- rank=3, L_s=3
+  [PASS][SURF] two distinct mode generators n_p, n_q are linearly independent (>1 clock direction)  -- rank(n_0,n_1)=2
+
+------------------------------------------------------------------------
+[GAUGE] closure attempt: are relative factor flows unobservable (gauge)?
+------------------------------------------------------------------------
+  [PASS][GAUGE] gauge-collapse hypothesis (all n_q in span{I,H_hat}) is FALSIFIED  -- 3 of 3 mode generators lie OUTSIDE span(I,H_hat) (would need 0 for gauge closure); base_rank=2
+  [PASS][GAUGE] => N5 closure via gauge-redundancy FAILS (factor directions are independent)  -- 3 independent escaping directions -> N5 not closed by gauge
+  [PASS][GAUGE] explicit single-mode clock n_0 is NOT c·H_hat + b·I (irreducible direction)  -- best-fit residual=0.6727 (>0 => genuinely independent generator)
+
+------------------------------------------------------------------------
+[CONTENT] independent-content: factor flows produce records H_hat cannot
+------------------------------------------------------------------------
+  [PASS][CONTENT] alt clock G_alt = n_0 commutes with H_hat (joint diagonal)  -- resid=0.00e+00
+  [PASS][CONTENT] factor clock FREEZES durable record <n_1> (mode 1 untouched)  -- <n_1>: init=0.5000 -> alt=0.5000
+  [PASS][CONTENT] single H_hat clock MOVES durable record <n_1> (cannot freeze it)  -- <n_1>: init=0.5000 -> H_hat=0.0424
+  [PASS][CONTENT] NO single-clock time t reproduces the alt clock's durable record pair  -- min over t of ||(<n_0>,<n_1>)_t - alt|| = 0.3995 (>0 => independent content)
+  [PASS][CONTENT] durable occupation RECORD PROFILE differs between the two clocks  -- L1 distance of normalized record profiles = 1.9837
+  [PASS][CONTENT] alt-clock record projectors commute (durable, additive)  -- resid=0.00e+00
+  [PASS][CONTENT] scalar readout additive on disjoint records I(P0)+I(P1)=I(P0+P1)
+
+------------------------------------------------------------------------
+[BRIDGE] the missing supplier: a physical-clock-admission datum
+------------------------------------------------------------------------
+  [PASS][BRIDGE] physical-clock admission is a FREE ray choice in span_{>=0}{n_p}  -- two admissible clock rays differ by 1.155
+  [PASS][BRIDGE] admission carries (L_s - 1) undetermined parameters (not fixed by A_min)  -- free clock-ray parameters = 2
+
+########################################################################
+# SOURCE SURFACE: L_s=4 spatial modes, mass m=0.3
+########################################################################
+
+------------------------------------------------------------------------
+[SURF] the supplied T̂² is a tensor product of per-mode factor clocks
+------------------------------------------------------------------------
+  [PASS][SURF] T̂² = exp(-2 a_τ H_hat) exactly (supplied (R-SC2) identity)  -- resid=5.55e-17, dim=16
+  [PASS][SURF] T̂² = ∏_p (lifted per-mode factor) exactly  -- resid=0.00e+00
+  [PASS][SURF] every lifted per-mode factor transfer is positive-definite  -- L_s=4 factors
+  [PASS][SURF] all per-mode factor transfers commute pairwise (resid 0)  -- max comm resid=0.00e+00
+  [PASS][SURF] factor-generator tangent span has dimension L_s (maximal reducibility)  -- rank=4, L_s=4
+  [PASS][SURF] two distinct mode generators n_p, n_q are linearly independent (>1 clock direction)  -- rank(n_0,n_1)=2
+
+------------------------------------------------------------------------
+[GAUGE] closure attempt: are relative factor flows unobservable (gauge)?
+------------------------------------------------------------------------
+  [PASS][GAUGE] gauge-collapse hypothesis (all n_q in span{I,H_hat}) is FALSIFIED  -- 4 of 4 mode generators lie OUTSIDE span(I,H_hat) (would need 0 for gauge closure); base_rank=2
+  [PASS][GAUGE] => N5 closure via gauge-redundancy FAILS (factor directions are independent)  -- 4 independent escaping directions -> N5 not closed by gauge
+  [PASS][GAUGE] explicit single-mode clock n_0 is NOT c·H_hat + b·I (irreducible direction)  -- best-fit residual=0.6467 (>0 => genuinely independent generator)
+
+------------------------------------------------------------------------
+[CONTENT] independent-content: factor flows produce records H_hat cannot
+------------------------------------------------------------------------
+  [PASS][CONTENT] alt clock G_alt = n_0 commutes with H_hat (joint diagonal)  -- resid=0.00e+00
+  [PASS][CONTENT] factor clock FREEZES durable record <n_1> (mode 1 untouched)  -- <n_1>: init=0.5000 -> alt=0.5000
+  [PASS][CONTENT] single H_hat clock MOVES durable record <n_1> (cannot freeze it)  -- <n_1>: init=0.5000 -> H_hat=0.0389
+  [PASS][CONTENT] NO single-clock time t reproduces the alt clock's durable record pair  -- min over t of ||(<n_0>,<n_1>)_t - alt|| = 0.4407 (>0 => independent content)
+  [PASS][CONTENT] durable occupation RECORD PROFILE differs between the two clocks  -- L1 distance of normalized record profiles = 1.9988
+  [PASS][CONTENT] alt-clock record projectors commute (durable, additive)  -- resid=0.00e+00
+  [PASS][CONTENT] scalar readout additive on disjoint records I(P0)+I(P1)=I(P0+P1)
+
+------------------------------------------------------------------------
+[BRIDGE] the missing supplier: a physical-clock-admission datum
+------------------------------------------------------------------------
+  [PASS][BRIDGE] physical-clock admission is a FREE ray choice in span_{>=0}{n_p}  -- two admissible clock rays differ by 1.500
+  [PASS][BRIDGE] admission carries (L_s - 1) undetermined parameters (not fixed by A_min)  -- free clock-ray parameters = 3
+
+========================================================================
+TOTAL: PASS=36 FAIL=0
+========================================================================
+VERDICT (honest):
+  N5_NAIVE_IRREDUCIBILITY_HOLDS = FALSE   (supplied T̂² is MAXIMALLY factorized: ⊗_p per-mode clocks)
+  FACTOR_FLOWS_ARE_GAUGE        = FALSE   (closure attempt fails: directions escape span{I,H_hat})
+  FACTOR_FLOWS_CARRY_INDEP_RECORD_CONTENT = TRUE  (distinct durable occupation records; H_hat orbit cannot reproduce)
+  N5_CLOSED_BY_A_MIN            = FALSE   (exclusion needs a physical-clock-admission ray NOT supplied by
+                                          Lattice/Quantum/Record)
+  B_AXIS_DERIVED = FALSE   SECOND_PHYSICAL_CLOCK_EXCLUDED = FALSE
+  AUDIT_LEDGER_WRITTEN = FALSE   NEW_AXIOM_ADDED = FALSE

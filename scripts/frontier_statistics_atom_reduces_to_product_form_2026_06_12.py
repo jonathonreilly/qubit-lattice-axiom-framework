@@ -42,6 +42,9 @@ OUTCOME_NO_GO = ROOT / "docs" / (
     "STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_"
     "NARROW_NO_GO_NOTE_2026-06-18.md"
 )
+PRODUCT_INSTANCE = ROOT / "docs" / (
+    "STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md"
+)
 
 PASS = 0
 FAIL = 0
@@ -253,6 +256,7 @@ def textual_checks() -> None:
     minimal = MINIMAL.read_text(encoding="utf-8")
     product = PRODUCT_FORM.read_text(encoding="utf-8")
     outcome_no_go = OUTCOME_NO_GO.read_text(encoding="utf-8")
+    product_instance = PRODUCT_INSTANCE.read_text(encoding="utf-8")
 
     note_n = normalize(note)
     gleason_n = normalize(gleason)
@@ -260,6 +264,7 @@ def textual_checks() -> None:
     minimal_n = normalize(minimal)
     product_n = normalize(product)
     outcome_no_go_n = normalize(outcome_no_go)
+    product_instance_n = normalize(product_instance)
 
     h_lambda_phrase = (
         "specific Hilbert space `H_Λ = ⊗_{x ∈ Λ} ℂ²` for finite `Λ ⊂ Z^3`"
@@ -317,7 +322,14 @@ def textual_checks() -> None:
         and "do not force the two-registration outcome-factorization law" in outcome_no_go_n
         and "false repair route" in note_n,
     )
-
+    check(
+        "B7d product-instance criterion bridge is linked without claiming physical independence",
+        PRODUCT_INSTANCE.name in note
+        and "Statistics Product-Instance Criterion Bridge" in product_instance
+        and "product-effect criterion" in product_instance_n
+        and "does not derive physical independence" in product_instance_n
+        and "exact product-instance criterion" in note_n,
+    )
     firewall_phrases = [
         "the outcome-factorization premise is the supplied bounded premise for this row",
         "it is named, not derived or retained",
@@ -327,6 +339,7 @@ def textual_checks() -> None:
         "`r` is never fixed",
         "state-level product form is an overstrong sufficient witness only",
         "finite odds chart `p_s > 0`",
+        "physical outcome-factorization premise itself remains open",
     ]
     missing = [phrase for phrase in firewall_phrases if phrase not in note_n]
     check("B8 firewall sentences present", not missing, ", ".join(missing))
@@ -357,10 +370,11 @@ def textual_checks() -> None:
         "[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)",
         "[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)",
         "[`PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md`](PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md)",
+        "[`STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md`](STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md)",
         "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)",
     ]
     check(
-        "B10 markdown link inventory is exactly the four requested dependencies",
+        "B10 markdown link inventory is exactly the five requested dependencies",
         links == expected_links,
         f"found={links}",
     )
@@ -409,19 +423,20 @@ def textual_checks() -> None:
 def print_stat_and_summary(results: dict[str, bool]) -> None:
     section("git diff --stat")
     print("(computed without invoking git, per the no-git rule)")
-    files = [NOTE, Path(__file__).resolve()]
+    files = [NOTE, PRODUCT_INSTANCE, Path(__file__).resolve()]
     total_lines = 0
     for path in files:
         rel = path.relative_to(ROOT)
         lines = path.read_text(encoding="utf-8").count("\n")
         total_lines += lines
         print(f" {rel} | {lines} +")
-    print(f" 2 files changed, {total_lines} insertions(+)")
+    print(f" 3 files changed, {total_lines} insertions(+)")
     print()
     print("SUMMARY:")
     print(
         "K1-K4 verified symbolically; note firewall, dependency links, "
-        "supplied-outcome-factorization boundary, companion no-go, backticked context, and No-promotion statement verified."
+        "supplied-outcome-factorization boundary, product-instance bridge, "
+        "companion no-go, backticked context, and No-promotion statement verified."
     )
     print(
         "The only non-retained ingredient isolated by the computation is the "

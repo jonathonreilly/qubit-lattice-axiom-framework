@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py
-runner_sha256: 74626901e5c6bf4811a8d061de821ee570561b49acd6353a71d4475a292a63d7
+runner_sha256: 7e9ee6a6f94664a1161843eeac83f26d265c7b1ca9052ed23cf274baa1348167
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 # Meron / fractional-instanton 4 pi^2 / g^2 external gate runner
@@ -107,7 +107,16 @@ T11: downstream source-boundary firewall
   [PASS] firewall forbids framework-substrate, finite-action, and hierarchy overclaims
          framework substrate, finite-action singular meron, hierarchy, alpha_LM^16, and v/M_Pl closures excluded
 
-=== TOTAL: PASS=27, FAIL=0 ===
+==============================================================================
+T12: 2026-06-18 algebra-core split and upstream authority boundary
+==============================================================================
+  [PASS] parent cites the 2026-06-18 half-action algebra core split
+  [PASS] parent says the split is action-arithmetic only
+  [PASS] old regulator/twist/patching authority overclaim is removed
+  [PASS] upstream infrastructure boundary excludes meron regulator/substrate bridge
+  [PASS] core note bars meron existence and boundary-construction use
+
+=== TOTAL: PASS=32, FAIL=0 ===
 
 ----- stderr -----
 

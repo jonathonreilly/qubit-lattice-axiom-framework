@@ -16,6 +16,29 @@ status set by `compute_effective_status.py`.
 **Runner:** [`scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py`](../scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.txt`](../logs/runner-cache/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.txt)
 
+## 2026-06-18 Audit-Scope Repair: Algebra Core Split
+
+The paired source split
+[`MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md)
+extracts the closed half-action algebra core:
+
+```text
+bounded topological-instanton normalization + supplied |Q| = 1/2
+  => S_half = 4*pi^2/g^2.
+```
+
+That split is only bounded support for the arithmetic. It does not derive
+the meron regulator, cap, twist, patching, existence, framework substrate, or
+observable bridge. The parent row therefore remains an external open gate for
+the boundary-conditioned meron/fractional-instanton sector.
+The regulator/twist/patching construction remains open.
+
+Downstream citations may cite the split note for the action arithmetic only.
+They must not cite this parent or the split note as a finite-action singular
+meron theorem, retained meron/fractional-instanton existence theorem,
+framework substrate bridge, hierarchy bridge, `alpha_LM^16` closure, or
+`v/M_Pl` scale-ratio closure.
+
 ## Claim
 
 Let `A_μ(x)` be a Euclidean SU(2) gauge connection on `R^4` with field
@@ -216,9 +239,15 @@ symbolic and numerical surrogates where needed):
     not a framework substrate theorem, finite-action singular meron
     theorem, positive hierarchy bridge, `alpha_LM^16` closure, or
     `v/M_Pl` closure.
+12. **T12**: algebra-core split — runner checks that this parent cites the
+    2026-06-18 half-action core note, that the core note is arithmetic-only,
+    and that the parent no longer presents the topological-instanton
+    infrastructure as authority for the full regulator/twist/patching
+    construction.
 
 Expected runner result: `PASS=N`, `FAIL=0`.
 
 ## Upstream authority
 
-- [TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md) — bounded named-import umbrella wrapper covering Luescher admissibility / gradient-flow lattice charge and twisted-`T^4` `'t Hooft / van Baal` fractional `Q = k / N` sectors. Provides the one-hop authority for the regulator / twist / patching construction yielding the `Q = 1/2`, `S = 4 pi^2 / g^2` meron half-action sector.
+- [MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md](MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md) — bounded support for the arithmetic core `S_half = 4*pi^2/g^2` once `|Q| = 1/2` is supplied.
+- [TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md) — bounded Hodge/Bogomolny, BPST `8*pi^2`, and twisted-`T^4` `Q=k/N` arithmetic certificate, with external topology references cited in parallel. It does **not** supply a retained meron regulator, cap, twist, patching, existence, framework-substrate, or observable bridge for this parent row.

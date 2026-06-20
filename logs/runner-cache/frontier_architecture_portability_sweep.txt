@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_architecture_portability_sweep.py
-runner_sha256: 0157676f7911f7335d5567f4a73eea429a259c2e76678a5c6d7fed0196341be4
+runner_sha256: c80de49e4f1cbc18a262b06582b139f6e7e374fcc33c097b45947e6f43400137
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.02
+elapsed_sec: 13.49
 status: ok
 ----- stdout -----
 ==========================================================================================
@@ -12,6 +12,15 @@ ARCHITECTURE PORTABILITY SWEEP
 MASS=0.3, DT=0.08, N_STEPS=15, REG=0.001
 Source amplitudes: (0.4, 0.6, 0.8, 1.0, 1.5)
 Goal: beta ~ 1.0, attractive force, I_3 ~ 0 where measured
+
+==========================================================================================
+SOURCE BOUNDARY
+==========================================================================================
+  [PASS] note declares boundary: **Type:** bounded_theorem
+  [PASS] note declares boundary: **Claim type:** bounded_theorem
+  [PASS] note declares boundary: bounded support / source-side audit unlock candidate
+  [PASS] note declares boundary: This is a bounded portability companion, not a standalone Newton closure.
+  [PASS] note declares boundary: The mass exponent beta measures deflection proportional to source mass
 
 ------------------------------------------------------------------------------------------
 ARCHITECTURE 1: Ordered 3D Cubic (side=14)
@@ -80,7 +89,7 @@ ACCEPTANCE GATE
 
   OVERALL: PASS — bounded source-mass portability companion established
 
-Elapsed: 11.6s
+Elapsed: 13.3s
 
 ----- stderr -----
 

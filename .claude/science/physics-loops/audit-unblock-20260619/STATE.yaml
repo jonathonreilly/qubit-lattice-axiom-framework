@@ -1,0 +1,81 @@
+loop_slug: audit-unblock-20260619
+block: 102
+mode: campaign
+date: "2026-06-20"
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block102-20260620
+branch: physics-loop/audit-unblock-block102-20260620
+base_ref: origin/main
+base_commit: 7d4bb3cd1b917d5f3f4d25899ee5ff8e81abeb39
+target_claim_id: post_record_flow_thermal_stable_setting_certificate_2026-06-06
+target_status: bounded-support source-side repair
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: false
+repo_lock:
+  mode: degraded_branch_local
+  status_command: python3 scripts/automation_lock.py status
+  failure: "[Errno 13] Permission denied: '/Users/jonreilly'"
+  safety_note: independent temporary worktree and dedicated branch used
+claim_row_after_pipeline:
+  claim_type: bounded_theorem
+  claim_type_author_hint_raw: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  queue_ready: true
+  helper_runner_paths:
+    - scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
+    - scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
+count_stack:
+  audit_ledger_rows: 3468
+  evidence_ladder:
+    scoped_rows: 1789
+    touched_rows: 411
+    append_count_ready: 0
+    finite_law_or_certificate_needed: 11
+    not_record_ladder_relevant: 1378
+    production_dynamics_needed: 6
+    record_type_support_only: 0
+    selector_or_dial_needed: 347
+    simulation_support_only: 47
+  selector_dial:
+    total: 347
+    koide_or_generation_selector: 125
+    stability_or_dynamics_selector: 146
+    measure_weight_normalization: 73
+    generic_selector_rule: 3
+  stability_dynamics:
+    total: 146
+    flow_or_thermal_stability: 90
+    arrow_or_dynamics_bridge: 56
+  flow_thermal:
+    total: 90
+    bounded_obstruction_or_no_selection: 21
+    flow_or_records_stable_feature: 9
+    generation_or_koide_stable_feature: 4
+    generic_stable_feature: 30
+    thermal_or_score_stable_feature: 26
+verification:
+  py_compile: pass
+  evidence_runner: "SUMMARY: PASS=44 FAIL=0"
+  selector_runner: "SUMMARY: PASS=28 FAIL=0"
+  stability_runner: "SUMMARY: PASS=37 FAIL=0"
+  flow_runner: "SUMMARY: PASS=55 FAIL=0"
+  pipeline: pass
+  precompute_audit_runners: "4 ok, 0 nonzero_exit"
+  audit_packet_script_deps: pass
+  strict_audit_lint: "139 notices, 0 errors"
+  git_diff_check: pass
+review_loop:
+  disposition: "PASS WITH BOUNDED CLAIMS"
+  iterations: 1
+  no_audit_verdicts_applied: true
+  audit_loop_run: false
+pr:
+  status: pending
+  url: pending
+next_exact_action: "Commit Block102, push branch, open review PR, patch packet with PR URL, then continue with a fresh block from current origin/main."

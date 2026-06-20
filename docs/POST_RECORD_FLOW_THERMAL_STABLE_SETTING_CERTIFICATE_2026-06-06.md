@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / supplied stability interface
-**Claim type:** positive_theorem
+**Claim type:** bounded_theorem
 **Status:** exact-support source-side for supplied stable-setting certificate
 semantics; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
@@ -51,17 +51,17 @@ on a dial without forcing that location to be the selected physical value.
 ## Current row map
 
 On the current ledger snapshot, the upstream stability/dynamics subdivision has
-`88` `flow_or_thermal_stability` rows. This block classifies them as:
+`90` `flow_or_thermal_stability` rows. This block classifies them as:
 
 | Stable-setting lane | Rows |
 |---|---:|
 | `bounded_obstruction_or_no_selection` | 21 |
-| `flow_or_records_stable_feature` | 10 |
-| `generation_or_koide_stable_feature` | 5 |
-| `generic_stable_feature` | 27 |
-| `thermal_or_score_stable_feature` | 25 |
+| `flow_or_records_stable_feature` | 9 |
+| `generation_or_koide_stable_feature` | 4 |
+| `generic_stable_feature` | 30 |
+| `thermal_or_score_stable_feature` | 26 |
 
-Total: `88` rows.
+Total: `90` rows.
 
 ## Meaning
 
@@ -120,7 +120,7 @@ The runner verifies:
 - exact finite examples for a supplied score minimum, a supplied flow
   separatrix, and a supplied thermal root;
 - selected-dial status remains blocked without a selector rule;
-- the current `flow_or_thermal_stability` row count is `58`;
+- the current `flow_or_thermal_stability` row count is `90`;
 - row-lane counts match the current snapshot;
 - representative rows are present in each lane;
 - the audit ledger hash is unchanged after the scan;

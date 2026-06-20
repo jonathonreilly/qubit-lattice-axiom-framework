@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py
-runner_sha256: ff5341f1774f2b0d5d9aa4222643bdf8acb9f64cd9a65b02cc72bcc9ed0e351f
+runner_sha256: 97ebe1f01557369bdf06e4894c4220f73b6bad39f0874797c8dd9080962c31cf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.95
+elapsed_sec: 0.93
 status: ok
 ----- stdout -----
 
@@ -12,9 +12,9 @@ Source-anchor checks
 ------------------------------------------------------------------------------
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md exists
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: read-only scanner
-PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: scans `1680` bounded/conditional
-PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: touches `385` rows
-PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: `selector_or_dial_needed` | 322
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: scans `1789` bounded/conditional
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: touches `411` rows
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: `selector_or_dial_needed` | 347
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: bounded/conditional-scope rows
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: bucket counts sum to the scoped count
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: audit ledger hash is unchanged
@@ -37,29 +37,29 @@ PASS docs/RECORD_HISTORY_COUNT_AUDIT_UNLOCK_SCAN_2026-06-05.md contains: Does no
 Ledger bucketing checks
 ------------------------------------------------------------------------------
 PASS audit ledger has rows object
-PASS ledger row count matches current map :: 3295
-PASS bounded/conditional scope count matches current map :: 1680
-PASS each scoped row gets one bucket :: Counter({'not_record_ladder_relevant': 1295, 'selector_or_dial_needed': 322, 'simulation_support_only': 44, 'finite_law_or_certificate_needed': 12, 'production_dynamics_needed': 7})
-PASS bucket counts match current source map :: Counter({'not_record_ladder_relevant': 1295, 'selector_or_dial_needed': 322, 'simulation_support_only': 44, 'finite_law_or_certificate_needed': 12, 'production_dynamics_needed': 7, 'append_count_ready': 0, 'record_type_support_only': 0})
-PASS touched ladder rows match current source map :: 385
-PASS selector/dial bucket nonempty :: 322
-PASS production/dynamics bucket nonempty :: 7
-PASS finite-law/certificate bucket nonempty :: 12
+PASS ledger row count matches current map :: 3468
+PASS bounded/conditional scope count matches current map :: 1789
+PASS each scoped row gets one bucket :: Counter({'not_record_ladder_relevant': 1378, 'selector_or_dial_needed': 347, 'simulation_support_only': 47, 'finite_law_or_certificate_needed': 11, 'production_dynamics_needed': 6})
+PASS bucket counts match current source map :: Counter({'not_record_ladder_relevant': 1378, 'selector_or_dial_needed': 347, 'simulation_support_only': 47, 'finite_law_or_certificate_needed': 11, 'production_dynamics_needed': 6, 'append_count_ready': 0, 'record_type_support_only': 0})
+PASS touched ladder rows match current source map :: 411
+PASS selector/dial bucket nonempty :: 347
+PASS production/dynamics bucket nonempty :: 6
+PASS finite-law/certificate bucket nonempty :: 11
 PASS append/count bucket matches current source zero
 PASS record-type support bucket matches current source map
 PASS representative row present in selector_or_dial_needed :: architecture_note_directional_measure
 PASS representative row present in production_dynamics_needed :: persistent_record_overlap_kernel_note
 PASS representative row present in finite_law_or_certificate_needed :: poisson_self_gravity_born_audit_note
-PASS audit ledger hash is unchanged :: a2de3b7512118d206d90efce05be59ac8d4dc25e22244067248414c5348b09e9
+PASS audit ledger hash is unchanged :: cbd192f57d321cfbb58e6b7fa74d0ca71781e0c7ab403d24974007c29224c9c9
 
 Bucket counts:
   append_count_ready: 0
-  finite_law_or_certificate_needed: 12
-  not_record_ladder_relevant: 1295
-  production_dynamics_needed: 7
+  finite_law_or_certificate_needed: 11
+  not_record_ladder_relevant: 1378
+  production_dynamics_needed: 6
   record_type_support_only: 0
-  selector_or_dial_needed: 322
-  simulation_support_only: 44
+  selector_or_dial_needed: 347
+  simulation_support_only: 47
 
 [append_count_ready]
 
@@ -68,12 +68,12 @@ Bucket counts:
 [finite_law_or_certificate_needed]
   dirac_decoherence_probe_note | audited_clean | retained_bounded | bounded_theorem | docs/DIRAC_DECOHERENCE_PROBE_NOTE.md
   fifth_family_radial_boundary_note | audited_clean | retained_bounded | bounded_theorem | docs/FIFTH_FAMILY_RADIAL_BOUNDARY_NOTE.md
-  gate_b_dynamics_note | audited_conditional | audited_conditional | open_gate | docs/GATE_B_DYNAMICS_NOTE.md
   gw_echo_null_result_note | unaudited | unaudited | bounded_theorem | docs/GW_ECHO_NULL_RESULT_NOTE.md
   inverse_problem_note | audited_clean | retained_bounded | bounded_theorem | docs/INVERSE_PROBLEM_NOTE.md
   persistent_object_blended_readout_transfer_sweep_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_BLENDED_READOUT_TRANSFER_SWEEP_NOTE_2026-04-16.md
   poisson_self_gravity_born_audit_note | audited_clean | retained_bounded | bounded_theorem | docs/POISSON_SELF_GRAVITY_BORN_AUDIT_NOTE.md
-  record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md
+  self_consistency_structured_null_note_2026-04-11 | audited_clean | retained_bounded | bounded_theorem | docs/SELF_CONSISTENCY_STRUCTURED_NULL_NOTE_2026-04-11.md
 
 [simulation_support_only]
   blocking_isometry_reduces_to_pointer_frame_admission_narrow_theorem_note_2026-06-09 | audited_clean | retained_bounded | bounded_theorem | docs/BLOCKING_ISOMETRY_REDUCES_TO_POINTER_FRAME_ADMISSION_NARROW_THEOREM_NOTE_2026-06-09.md
@@ -88,16 +88,15 @@ Bucket counts:
 [selector_or_dial_needed]
   a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
   acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
-  acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11 | audited_conditional | audited_conditional | bounded_theorem | docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
+  acphilambda_r_eta_w2_registrability_context_bridge_note_2026-06-18 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md
   action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md
   alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26 | unaudited | unaudited | bounded_theorem | docs/ALPHA_BARE_FOUR_PI_FROM_Z3_PLANCHEREL_BRIDGE_BOUNDED_NOTE_2026-05-26.md
   architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
   arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md
-  axiom_first_cluster_decomposition_theorem_note_2026-04-29 | audited_clean | retained_bounded | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
 
 [production_dynamics_needed]
   chiral_3plus1d_boundary_phase_note | audited_clean | retained_bounded | bounded_theorem | docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md
-  ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07 | audited_conditional | audited_conditional | open_gate | docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md
   persistent_object_adaptive_readout_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_ADAPTIVE_READOUT_NOTE.md
   persistent_object_readout_localization_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_OBJECT_READOUT_LOCALIZATION_NOTE.md
   persistent_record_matched_compare_note | audited_clean | retained_bounded | bounded_theorem | docs/PERSISTENT_RECORD_MATCHED_COMPARE_NOTE.md
@@ -117,8 +116,8 @@ PASS simulation calibrated flag is false
 PASS generation/Koide dial selected flag is false
 
 SUMMARY: PASS=44 FAIL=0
-SCOPED_ROWS=1680
-TOUCHED_ROWS=385
+SCOPED_ROWS=1789
+TOUCHED_ROWS=411
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE

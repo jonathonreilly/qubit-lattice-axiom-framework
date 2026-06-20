@@ -1,0 +1,69 @@
+loop_slug: audit-unblock-20260619
+block: 109
+mode: campaign
+date: "2026-06-20"
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block109-20260620
+branch: physics-loop/audit-unblock-block109-20260620
+base_ref: origin/main
+base_commit: 126cc7ca0a7b475f0c7a395ec3114a0f81f931c8
+target_claim_id: alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18
+target_status: bounded source-side repair
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: false
+repo_lock:
+  mode: degraded_branch_local
+  status_command: python3 scripts/automation_lock.py status
+  failure: "[Errno 13] Permission denied: '/Users/jonreilly'"
+claim_row_after_pipeline:
+  claim_type: bounded_theorem
+  claim_type_author_hint_raw: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  criticality: leaf
+  load_bearing_score: 1.5
+  direct_in_degree: 1
+  transitive_descendants: 1
+  audit_queue_index: 1106
+  audit_queue_ready: true
+source_repair:
+  note_claim_type_before: positive_theorem_by_default
+  note_claim_type_after: bounded_theorem
+  note_type_before: missing
+  note_type_after: bounded_theorem
+  runner_checks_added: "note declares audit-canonical Type and Claim type metadata"
+verification:
+  py_compile: pass
+  target_runner: "SUMMARY: PASS=25 FAIL=0"
+  pipeline: pass
+  precompute_audit_runners: "1 ok, 0 nonzero_exit"
+  audit_packet_script_deps: pass
+  strict_audit_lint: "139 notices, 0 errors"
+  git_diff_check: pass
+review_loop:
+  disposition: "PASS WITH BOUNDED CLAIMS"
+  iterations: 1
+  subagents: "not spawned; user did not explicitly request delegated agents"
+  no_audit_verdicts_applied: true
+  audit_loop_run: false
+hashes:
+  note_sha256: 90a132c212eb945c8bce48d4fb04c431f5eebb5ef13558dcbfe3509d038d6aba
+  runner_sha256: 19cb7db14e48eef8c07639f15dc34e50d967221dec05fa8d9ccca9d4cf5b8762
+  runner_cache_sha256: 88a6484ef08c30db00ea0b79f5bca37833f34444373ff7d9e8007df246a84920
+  audit_ledger_sha256: d1b27a1b6c9f374273822cf965bd27cb065625f346ea435f10e4ccac67d40c94
+  audit_queue_sha256: 7dd0db881bfb5ce0386083adb928eb77545611ad0099a1a2fa69aa99489e74f1
+pr:
+  status: pending_create
+  number: null
+  url: null
+  head_commit: null
+  base: main
+  head: physics-loop/audit-unblock-block109-20260620
+  mergeable: unknown
+  status_checks: unknown
+next_exact_action: "Commit and push Block109, open a PR against main, patch the PR URL into this packet, then continue the campaign from a fresh worktree for Block110."

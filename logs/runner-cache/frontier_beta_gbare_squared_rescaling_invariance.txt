@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_beta_gbare_squared_rescaling_invariance.py
-runner_sha256: 533c62a2a50a80500c98c6ea5be1cb679eddd1b1f5a5764c11de20635ea2644e
+runner_sha256: 3a9bb4ac56a0ee7804c5329bf82c601c76b3e4803ddb4d21ce7229104d04a110
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -9,34 +9,42 @@ status: ok
 frontier_beta_gbare_squared_rescaling_invariance.py
 
 ----------------------------------------------------------------------------------------
-note structure and repaired scope
+note structure and narrowed (abstract-algebra) scope
 ----------------------------------------------------------------------------------------
-  [PASS] contains marker: Claim type:** bounded support note
-  [PASS] contains marker: Type:** conditional / support
-  [PASS] contains marker: explicitly conditional arithmetic lemma
-  [PASS] contains marker: WM:  β = 2 N_c / g_bare²
-  [PASS] contains marker: not imported from any Ward-route coupling-closure note
-  [PASS] contains marker: BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_202
-  [PASS] contains marker: G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03
+  [PASS] contains marker: Abstract Joint-Rescaling Algebra Lemma
+  [PASS] contains marker: abstract-algebra
+narrowing: 2026-06-20
+  [PASS] contains marker: Status authority:** independent audit lane only
+  [PASS] contains marker: abstract joint-rescaling algebra
+  [PASS] contains marker: symbolic relabeling only
   [PASS] contains marker: conditional bounded arithmetic lemma
   [PASS] contains marker: fractions.Fraction
-  [PASS] forbidden old authority/framing absent: Claim type:** bounded_theorem
-  [PASS] forbidden old authority/framing absent: Type:** bounded_theorem
   [PASS] forbidden old authority/framing absent: Proposal allowed:
   [PASS] forbidden old authority/framing absent: source-note proposal only
   [PASS] forbidden old authority/framing absent: G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18
   [PASS] forbidden old authority/framing absent: carried by G_BARE_TWO_WARD_CLOSURE
-  [PASS] forbidden old authority/framing absent: supplies the Wilson small-`a` matching relation
   [PASS] forbidden old authority/framing absent: canonical `g_bare² = 1` value carried
-  [PASS] forbidden old authority/framing absent: is a retained conclusion of this row
   [PASS] forbidden old authority/framing absent: Wilson matching is proved here
+  [PASS] no g_bare=1 derivation claim: g_bare = 1 follows
+  [PASS] no g_bare=1 derivation claim: derives g_bare = 1
+  [PASS] no g_bare=1 derivation claim: g_bare = 1 is forced
   [PASS] forbidden framing absent: continuum-limit class
   [PASS] forbidden framing absent: Wilson asymptotic universality
   [PASS] forbidden framing absent: lattice-realization-invariant
   [PASS] boundary says no status promotion
 
 ----------------------------------------------------------------------------------------
-dependency files and scoped authority checks
+narrowing: physical Wilson-surface induction quarantined as open
+----------------------------------------------------------------------------------------
+  [PASS] 2026-06-20 repair section present
+  [PASS] abstract joint-rescaling algebra named as load-bearing
+  [PASS] physical Wilson action-surface induction marked open / not supplied
+  [PASS] open bridge names the T_a -> c T_a Wilson-surface induction
+  [PASS] WM kept as symbolic naming only, not physical action-surface statement
+  [PASS] physical Wilson-surface interpretation stated conditional and open
+
+----------------------------------------------------------------------------------------
+load-bearing dependency and reader-context file checks
 ----------------------------------------------------------------------------------------
   [PASS] dependency exists: docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md
   [PASS] dependency exists: docs/G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03.md
@@ -44,24 +52,22 @@ dependency files and scoped authority checks
   [PASS] abstract identity has no load-bearing dependencies
   [PASS] abstract identity proves beta(g/c,N)=c^2 beta(g,N)
   [PASS] abstract identity proves product invariance
-  [PASS] rescaling note explicitly treats Wilson matching as an input
-  [PASS] rescaling note does not claim to derive Wilson matching
-  [PASS] rescaling note carries T_a -> c T_a map
-  [PASS] rescaling note carries beta -> c^2 beta under scoped WM
+  [PASS] reader-context rescaling note carries T_a -> c T_a scalar rescaling map
+  [PASS] rescaling note does NOT supply the beta-routing (open bridge stays open)
+  [PASS] rescaling note does not claim to derive Wilson matching / action-surface uniqueness
 
 ----------------------------------------------------------------------------------------
-explicit Wilson-matching premise firewall
+symbolic-naming / Wilson-surface firewall
 ----------------------------------------------------------------------------------------
-  [PASS] WM is stated as an assumption, not a theorem
+  [PASS] physical WM stated as not proved here
   [PASS] WM formula is present in normalized text
-  [PASS] Ward-route closure is not a load-bearing authority
-  [PASS] physical interpretation remains conditional
+  [PASS] Ward-route closure is not a load-bearing authority for the Wilson reading
 
 ----------------------------------------------------------------------------------------
 representative exact rational table at N_c = 3, g_bare^2 = 1
 ----------------------------------------------------------------------------------------
-  [PASS] assuming WM gives beta = 6 at representative q=1 (6)
-  [PASS] assuming WM gives beta * q = 2 N_c (6)
+  [PASS] abstract naming gives beta = 6 at representative q=1 (6)
+  [PASS] abstract naming gives beta * q = 2 N_c (6)
   [PASS] c = 1/2: beta'(c) matches note table (beta'=3/2)
   [PASS] c = 1/2: g_bare'^2(c) matches note table (g_bare'^2=4)
   [PASS] c = 1/2: beta'(c) * g_bare'^2(c) = 2 N_c (product=6)
@@ -80,93 +86,93 @@ representative exact rational table at N_c = 3, g_bare^2 = 1
   [PASS] c = 3: c^2 powers cancel exactly (c^2=9)
 
 ----------------------------------------------------------------------------------------
-conditional identity for arbitrary positive rational g_bare^2
+abstract joint-rescaling invariance for arbitrary positive rational g^2
 ----------------------------------------------------------------------------------------
-  [PASS] WM product at N_c=3, g_bare^2=1 (product=6)
+  [PASS] abstract product at N_c=3, g^2=1 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1, c=1/2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1, c=1 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1, c=2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1, c=3 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1, c=7/5 (product=6)
-  [PASS] WM product at N_c=3, g_bare^2=3/4 (product=6)
+  [PASS] abstract product at N_c=3, g^2=3/4 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=3/4, c=1/2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=3/4, c=1 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=3/4, c=2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=3/4, c=3 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=3/4, c=7/5 (product=6)
-  [PASS] WM product at N_c=3, g_bare^2=5/7 (product=6)
+  [PASS] abstract product at N_c=3, g^2=5/7 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=5/7, c=1/2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=5/7, c=1 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=5/7, c=2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=5/7, c=3 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=5/7, c=7/5 (product=6)
-  [PASS] WM product at N_c=3, g_bare^2=11/13 (product=6)
+  [PASS] abstract product at N_c=3, g^2=11/13 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=11/13, c=1/2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=11/13, c=1 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=11/13, c=2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=11/13, c=3 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=11/13, c=7/5 (product=6)
-  [PASS] WM product at N_c=3, g_bare^2=1/100 (product=6)
+  [PASS] abstract product at N_c=3, g^2=1/100 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1/100, c=1/2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1/100, c=1 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1/100, c=2 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1/100, c=3 (product=6)
   [PASS] joint rescaling invariance at N_c=3, q=1/100, c=7/5 (product=6)
-  [PASS] WM product at N_c=5, g_bare^2=1 (product=10)
+  [PASS] abstract product at N_c=5, g^2=1 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1, c=1/2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1, c=1 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1, c=2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1, c=3 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1, c=7/5 (product=10)
-  [PASS] WM product at N_c=5, g_bare^2=3/4 (product=10)
+  [PASS] abstract product at N_c=5, g^2=3/4 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=3/4, c=1/2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=3/4, c=1 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=3/4, c=2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=3/4, c=3 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=3/4, c=7/5 (product=10)
-  [PASS] WM product at N_c=5, g_bare^2=5/7 (product=10)
+  [PASS] abstract product at N_c=5, g^2=5/7 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=5/7, c=1/2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=5/7, c=1 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=5/7, c=2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=5/7, c=3 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=5/7, c=7/5 (product=10)
-  [PASS] WM product at N_c=5, g_bare^2=11/13 (product=10)
+  [PASS] abstract product at N_c=5, g^2=11/13 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=11/13, c=1/2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=11/13, c=1 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=11/13, c=2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=11/13, c=3 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=11/13, c=7/5 (product=10)
-  [PASS] WM product at N_c=5, g_bare^2=1/100 (product=10)
+  [PASS] abstract product at N_c=5, g^2=1/100 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1/100, c=1/2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1/100, c=1 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1/100, c=2 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1/100, c=3 (product=10)
   [PASS] joint rescaling invariance at N_c=5, q=1/100, c=7/5 (product=10)
-  [PASS] WM product at N_c=7/2, g_bare^2=1 (product=7)
+  [PASS] abstract product at N_c=7/2, g^2=1 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=1, c=1/2 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=1, c=1 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=1, c=2 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=1, c=3 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=1, c=7/5 (product=7)
-  [PASS] WM product at N_c=7/2, g_bare^2=3/4 (product=7)
+  [PASS] abstract product at N_c=7/2, g^2=3/4 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=3/4, c=1/2 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=3/4, c=1 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=3/4, c=2 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=3/4, c=3 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=3/4, c=7/5 (product=7)
-  [PASS] WM product at N_c=7/2, g_bare^2=5/7 (product=7)
+  [PASS] abstract product at N_c=7/2, g^2=5/7 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=5/7, c=1/2 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=5/7, c=1 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=5/7, c=2 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=5/7, c=3 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=5/7, c=7/5 (product=7)
-  [PASS] WM product at N_c=7/2, g_bare^2=11/13 (product=7)
+  [PASS] abstract product at N_c=7/2, g^2=11/13 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=11/13, c=1/2 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=11/13, c=1 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=11/13, c=2 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=11/13, c=3 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=11/13, c=7/5 (product=7)
-  [PASS] WM product at N_c=7/2, g_bare^2=1/100 (product=7)
+  [PASS] abstract product at N_c=7/2, g^2=1/100 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=1/100, c=1/2 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=1/100, c=1 (product=7)
   [PASS] joint rescaling invariance at N_c=7/2, q=1/100, c=2 (product=7)
@@ -177,7 +183,7 @@ conditional identity for arbitrary positive rational g_bare^2
 boundary clauses present
 ----------------------------------------------------------------------------------------
   [PASS] boundary clause present: conditional bounded arithmetic lemma only
-  [PASS] boundary clause present: Wilson matching `β = 2 N_c / g_bare²` from the framework axiom
+  [PASS] boundary clause present: physical Wilson action-surface induction
   [PASS] boundary clause present: Wilson plaquette action selector
   [PASS] boundary clause present: any retention or promotion
   [PASS] boundary clause present: Ward-route coupling-closure theorem carries the Wilson matchin
@@ -186,10 +192,12 @@ boundary clauses present
   [PASS] boundary clause present: canonical Cl(3) connection normalization
   [PASS] boundary clause present: parent theorem/status promotion
 
-TOTAL: PASS=154 FAIL=0
-VERDICT: conditional bounded arithmetic lemma passes; assuming WM,
-beta * g_bare^2 = 2 N_c is invariant under the scoped joint rescaling
-for c in {1/2, 1, 2, 3} at exact rational precision.
+TOTAL: PASS=155 FAIL=0
+VERDICT: abstract joint-rescaling algebra lemma passes; with the abstract
+naming (g, N) = (g_bare, N_c), beta * g_bare^2 = 2 N_c is invariant under
+the abstract joint rescaling for c in {1/2, 1, 2, 3} at exact rational
+precision; the physical Wilson-action-surface induction is the open bridge
+and is not asserted.
 
 ----- stderr -----
 

@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_b4_determinant_only_factor_signature_no_go_2026_06_17.py
+runner_sha256: b560174a762faeae2166cfbfafb7fbd82e968505951a09493eceb7ca3685657f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+
+================================================================================
+Exact factor-signature algebra
+================================================================================
+  [PASS][A] determinant side has signature (0, 16)  (FactorSignature(alpha_bare_exp=0, u0_exp=16))
+  [PASS][A] alpha_LM has signature (1, -1)  (FactorSignature(alpha_bare_exp=1, u0_exp=-1))
+  [PASS][A] alpha_LM^16 has signature (16, -16)  (FactorSignature(alpha_bare_exp=16, u0_exp=-16))
+  [PASS][A] alpha_s has signature (1, -2)  (FactorSignature(alpha_bare_exp=1, u0_exp=-2))
+  [PASS][A] determinant times alpha_s^16 equals alpha_LM^16  (FactorSignature(alpha_bare_exp=16, u0_exp=-16))
+  [PASS][A] missing multiplier relative to u_0^16 is alpha_s^16  (FactorSignature(alpha_bare_exp=16, u0_exp=-32))
+  [PASS][A] finite determinant products keep alpha exponent zero  ([(0, 0), (0, 16), (0, 32), (0, 48), (0, 64), (0, 80), (0, 96)])
+  [PASS][A] target is absent from determinant-product family
+  [PASS][A] even determinant quotients keep alpha exponent zero  ([(0, -96), (0, -80), (0, -64), (0, -48), (0, -32)] ...)
+  [PASS][A] target is absent from determinant-quotient family
+  [PASS][A] determinant inverse has the right u_0 sign but still misses alpha_bare^16  (FactorSignature(alpha_bare_exp=0, u0_exp=-16))
+
+================================================================================
+Canonical-surface numeric sanity checks
+================================================================================
+  [PASS][C] u_0^16 equals <P>^4 at the B1 surface  (0.123991001507)
+  [PASS][C] alpha_LM^16 equals alpha_bare^16 u_0^-16  (2.085700800015e-17)
+  [PASS][C] target/determinant equals alpha_s^16  (1.682138844484e-16)
+  [PASS][C] using u_0^16 instead of alpha_LM^16 displaces by more than 10^15  (ratio=5.944812e+15)
+  [PASS][C] alpha_bare^16 supplies the coupling-power magnitude scale  (alpha_bare^16=2.586081e-18)
+  [PASS][C] u_0^-16 is order-unity rather than a hierarchy source  (u_0^-16=8.065101)
+
+================================================================================
+Source-note boundary markers
+================================================================================
+  [PASS][B] new note contains marker: **Claim type:** no_go
+  [PASS][B] new note contains marker: **Claim-strength label:** exact boundary theorem on open gate
+  [PASS][B] new note contains marker: independent audit lane only
+  [PASS][B] new note contains marker: determinant-only repair of B4
+  [PASS][B] new note contains marker: sig(alpha_LM^16) = (16, -16)
+  [PASS][B] new note contains marker: alpha_LM^16 / u_0^16
+  [PASS][B] new note contains marker: alpha_s^16
+  [PASS][B] new note contains marker: Non-determinant attachment-observable routes remain open
+  [PASS][B] new note contains marker: does not edit the audit ledger
+  [PASS][B] new note contains marker: exhaustion of every possible future B4 mechanism
+  [PASS][B] new note omits forbidden marker: This packet closes B4
+  [PASS][B] new note omits forbidden marker: retained closure
+  [PASS][B] new note omits forbidden marker: EW VEV prediction.
+  [PASS][B] new note omits forbidden marker: audit verdict: retained
+  [PASS][B] new note omits forbidden marker: the only possible B4 route
+  [PASS][B] parent hierarchy note contains marker: B4 is unchanged and remains open
+  [PASS][B] parent hierarchy note contains marker: the determinant supplies `u_0^16`
+  [PASS][B] parent hierarchy note contains marker: `alpha_LM^16 = alpha_bare^16 u_0^(-16)`
+  [PASS][B] parent hierarchy note contains marker: not by the determinant power
+  [PASS][B] parent hierarchy note contains marker: not a determinant identity
+  [PASS][B] open-gate note contains marker: named gap: B4 attachment-observable identification
+  [PASS][B] open-gate note contains marker: not a shipped global no-go
+  [PASS][B] open-gate note contains marker: does not claim that every possible future mechanism is closed
+  [PASS][B] open-gate note contains marker: Surviving routes run through beyond-mean-field link fluctuations
+  [PASS][B] open-gate note contains marker: Green-kernel
+  [PASS][B] open-gate note contains marker: non-link transport rule
+
+CLASS_COUNTS: {'A': 11, 'B': 26, 'C': 6}
+VERDICT: hierarchy B4 determinant-only factor-signature no-go checks pass.
+TOTAL: PASS=43, FAIL=0
+
+----- stderr -----
+

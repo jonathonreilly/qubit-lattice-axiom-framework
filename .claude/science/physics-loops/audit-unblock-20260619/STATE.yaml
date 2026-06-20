@@ -1,0 +1,79 @@
+loop_slug: audit-unblock-20260619
+block: 124
+mode: campaign
+date: "2026-06-20"
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block124-20260620
+branch: physics-loop/audit-unblock-block124-20260620
+base_ref: origin/main
+base_commit: f28823e2b53503f975589e0f41fbeeb53f33c679
+source_commit: fce8ca7b84c40681cab9b6d9f0e235c23ccbf4b0
+target_claim_id: one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13
+target_status: bounded helper-wrapper firewall repair
+actual_current_surface_status: source-side bounded helper-wrapper repair
+effective_status_after_pipeline: unaudited
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: false
+repo_lock:
+  mode: degraded_branch_local
+  status_command: python3 scripts/automation_lock.py status
+  failure: "[Errno 13] Permission denied: '/Users/jonreilly'"
+claim_row_after_pipeline:
+  claim_type: bounded_theorem
+  claim_type_author_hint_raw: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  criticality: medium
+  load_bearing_score: 7.976
+  direct_in_degree: 3
+  transitive_descendants: 88
+  deps:
+    - coarse_grained_exterior_law_helper_note_2026-04-14
+    - lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16
+  note_path: docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md
+  runner_path: scripts/frontier_one_parameter_reduced_shell_law.py
+  helper_runner_paths_count: 6
+  audit_queue_ready: true
+  queue_reason: unaudited
+source_repair:
+  before: "Direct runner failed PASS=16 FAIL=1 because generated docs/repo/FRONT_DOOR_STATUS.md cited the ready row without helper-wrapper qualifier."
+  after: "Direct runner passes PASS=17 FAIL=0 TOTAL=17; generated front-door snapshot is explicitly outside source-claim citation firewall."
+  note_change: "State that generated queue snapshots are not source-claim citations for this firewall."
+  runner_change: "Skip docs/repo/FRONT_DOOR_STATUS.md in source_files_for_umbrella_firewall()."
+verification:
+  py_compile: pass
+  target_runner_before_patch: "PASS=16 FAIL=1"
+  target_runner_after_patch: "PASS=17 FAIL=0 TOTAL=17"
+  pipeline: "pass; strict lint inside pipeline reported 139 notices, 0 errors"
+  precompute_audit_runners: "1 ok, 0 nonzero_exit"
+  audit_packet_script_deps: "pass; 388 / 1582 pending helper-import claims diagnosed"
+  strict_audit_lint: "139 notices, 0 errors"
+  git_diff_check: pass
+  generated_clean_gate_after_commit: pass
+review_loop:
+  disposition: "PASS WITH BOUNDED HELPER-WRAPPER FIREWALL BOUNDARY"
+  iterations: 1
+  reviewers: "local CodeRunner, RepoGovernance, AuditCompatibility, and claim-boundary passes; parallel subagents not spawned"
+  no_audit_verdicts_applied: true
+  audit_loop_run: false
+hashes:
+  note_sha256: 10f36ab2488de86c6a9ccdbb0852018350c80e09ec23e271d168213727175d72
+  runner_sha256: c7217808b8396455f273981146ccedbecaac835b0c5ea4bae603252d2c06982f
+  runner_cache_sha256: 2d6fab7c3c1362d35805a8e355f7272315fef582895634d51ddfef2f9cc40573
+  audit_ledger_sha256: c6ac2985b89cb2a96efd5c319f255fed71fcbd2c52f56401b9a8ad12c7e82e9b
+  audit_queue_sha256: afcdd61212f15a57bc60618ab7d4a98f21c63af8a97758ee656fd2e59e2681b6
+  audit_packet_script_deps_json_sha256: 9c787615b882616536f648aff2d2970556f0dd1814c381d132d051d8d06cc38c
+  audit_packet_script_deps_txt_sha256: 27f6c4d5643634128ca9c4ff2d1a29f4cb8d15ea05988d248d9901dc2c8e1ba3
+pr:
+  status: open
+  number: 4494
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4494
+  source_head_commit_at_pr_creation: fce8ca7b84c40681cab9b6d9f0e235c23ccbf4b0
+  base: main
+  head: physics-loop/audit-unblock-block124-20260620
+  mergeable: MERGEABLE
+  status_checks: "audit-lane/audit_pipeline in progress at packet update"
+next_exact_action: "Refresh from current origin/main, inspect the new top ready rows after the current generated-state shift, skip already-open PR targets, and open the next dedicated physics-loop PR."

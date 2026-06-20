@@ -1,0 +1,98 @@
+loop_slug: audit-unblock-20260619
+block: 101
+updated_utc: "2026-06-20T20:03:19Z"
+mode: campaign
+objective: "Unblock the audit queue by making source-side repairs only, then opening review PRs."
+branch: physics-loop/audit-unblock-block101-20260620
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block101-20260620
+base_ref: origin/main
+base_commit: 1f5f55c79d832990e073ae663322081f12611c77
+remote: https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git
+target_claim_id: post_record_source_measure_trace_normalization_prototype_2026-06-06
+target_note: docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md
+target_runner: scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py
+active_route: "source-side claim-type and row-count boundary for supplied source-measure trace prototype"
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+automation_lock:
+  mode: degraded_branch_local
+  command: python3 scripts/automation_lock.py status
+  result: "error: [Errno 13] Permission denied: '/Users/jonreilly'"
+files_touched:
+  - docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md
+  - scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py
+  - logs/runner-cache/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.txt
+  - logs/runner-cache/audit_packet_script_deps.txt
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/audit_dispatch_queue.json
+  - docs/audit/data/audit_packet_script_deps.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/cycle_inventory.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/load_bearing_summary.json
+  - docs/audit/data/runner_classification.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/AUDIT_DISPATCH_QUEUE.md
+  - docs/repo/FRONT_DOOR_STATUS.md
+  - docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/FULL_CLAIM_LEDGER_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+  - docs/publication/ci3_z3/PUBLICATION_MATRIX_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md
+target_before:
+  claim_type: positive_theorem
+  claim_type_author_hint_raw: "methodology / positive theorem"
+  claim_type_provenance: audited
+  audit_status: audited_clean
+  effective_status: retained
+  note_hash: e6a650132aa0aecae6e708bc565a68f413cb0021e9cc1f146d19c009f6081f7b
+target_after:
+  claim_type: bounded_theorem
+  claim_type_author_hint_raw: bounded_theorem
+  claim_type_author_hint: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  note_hash: 9a6243f3d9cd15bf2d4ed97f1a5f93d601a6a80d6db718be8a52ac85c181ebcf
+  queue_reason: unaudited
+  ready: true
+  audit_independence_required: any_non_self
+runner_count_repair:
+  previous_source_measure_or_rn_bridge_rows: 15
+  previous_trace_normalization_reference_rows: 6
+  previous_total_source_trace_rows: 21
+  current_source_measure_or_rn_bridge_rows: 16
+  current_trace_normalization_reference_rows: 10
+  current_total_source_trace_rows: 26
+verification:
+  py_compile: pass
+  first_target_runner_after_claim_type_edit: "PASS=45 FAIL=4; stale counts exposed"
+  final_target_runner: "PASS=49 FAIL=0"
+  precompute_target_runner: pass
+  audit_packet_script_deps: pass
+  run_pipeline: pass
+  audit_lint_strict: "pass; 139 notices; 0 errors"
+hashes:
+  note_sha256: 9a6243f3d9cd15bf2d4ed97f1a5f93d601a6a80d6db718be8a52ac85c181ebcf
+  runner_sha256: 1bcfadf10d38a9fbd778405028b407eb726984372930dcd6a3efe297359a5222
+  runner_cache_sha256: f8f718f4d189ef94f7600dbebe38693866eee3f9a93a23facc2043cfcfcc2998
+  script_deps_log_sha256: ab2aff986e174baaa0aa862fba2977f8e9cc3e73f0cede7a4bb50f96346ee7b4
+  audit_ledger_sha256: de87e1b3577e8198b79f700a8421cb24db2f4340c9a5cd8bcd4afdb8d0bc7499
+  audit_queue_sha256: 638392fe09a428858b909ae6dd2dc179c5b21e67dfacc9523b743d8430b06ae9
+review_disposition: "local source-boundary checks pass; independent review requested by PR"
+pr_status: pending_feature_branch_push
+pr_url: null
+next_exact_action: "Commit, push this branch, open one review PR, record the PR URL, then pivot to the next source-boundary candidate from current origin/main."
+

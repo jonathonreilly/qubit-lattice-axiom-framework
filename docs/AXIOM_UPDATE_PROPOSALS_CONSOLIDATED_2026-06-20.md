@@ -518,3 +518,54 @@ gauge/anomaly — `ANOMALY_FORCES_TIME_THEOREM.md`,
 `ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md`,
 `RH_SECTOR_ANOMALY_CANCELLATION_IDENTITIES_NOTE_2026-05-02.md`,
 `CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md`.
+
+---
+
+## BLOCK02 CRACK RESOLUTION (additive, 2026-06-20)
+
+> **Additive dated correction — does not rewrite §3 above.** Block01 §3 flagged
+> **SK-1** and **SK-2** as *CANDIDATE* no-new-axiom cracks ("✅ CANDIDATE CRACK")
+> each with an explicit ACTION ("attempt the derivation BEFORE proposing"). Block02
+> carried out both ACTIONs with dedicated runners. **Result: both WALL.** The
+> optimistic "✅ CANDIDATE CRACK" flags in the §3 table are **superseded** by the
+> ⛔ outcomes recorded here; the §3 "Net of the cracks" line ("SK-1 likely removes
+> N2b … SK-2 may shrink Cluster 3") is **downgraded** accordingly.
+> Full resolution: `docs/AXIOM_PROPOSALS_OPEN_CRACKS_RESOLUTION_NOTE_2026-06-20.md`.
+
+```yaml
+hypothetical_axiom_status: "not invoked — SK-1 and SK-2 both WALL; the corresponding C1/C3 clauses are CONFIRMED needed, not adopted"
+proposal_allowed: false   # owner governance decision required
+adopts_axiom: false
+sets_audit_verdict: false
+status_authority: independent audit lane / owner only
+```
+
+| Tag | Block01 flag | Block02 attempt (harder than prior block) | Runner | Block02 outcome |
+|---|---|---|---|---|
+| **SK-1** | ✅ candidate crack — `2 a_τ` from `scale_reference × kinetic_isotropy`; "likely removes N2b" | the **"same FORM edge object"** join (not the disavowed spacing-ratio identity): does `c_t=c_s` + absolute `a` force `a_τ = a`? | `scripts/sk1_baxis_n2b_kinform_scale_join_2026_06_20.py` **PASS=28 FAIL=0** | ⛔ **WALL STANDS.** `c_t/c_s = 1` is a dimensionless single point true for **every** `a_τ` (`a_τ,a_s` absorbed into physical `ω,k`); the range-1 FORM adjacency topology is identical for `a_τ=a_s` and `a_τ=10 a_s`; the join gives the absolute anchor + the form ratio but **NOT** the spacing ratio `a_τ/a_s`. Both notes reserve spacing to its own derivation row (kinetic_isotropy names the no-diagonal clause as supplier) ⇒ reading FORM as SPACING **mis-cites a primitive** (rule 5). **Banked no-axiom progress:** the factor **2** in `2 a_τ` is the structural 2-step block count (single-step non-positive; `T̂² = T_odd·T_even`, eig `exp(±2E)`), so the axiom-bearing residual shrinks to the single metric edge `a_τ`. |
+| **SK-2** | ✅ candidate crack (route c) — imbalanced/curved complex `χ≠0`; "Cluster 3 shrinks" | the **OPEN/boundaried EVALUATION complex** (the path the prior block omitted): all-odd box gives `\|N_+−N_-\|=1` curvature-free | `scripts/frontier_abj_pabj_evaluation_complex_imbalance_2026_06_20.py` **PASS=75 FAIL=0** | ⛔ **WALL STANDS.** The open all-odd box is a live `χ≠0` surface (`A_t = N_+−N_- = +1`, gauge-robust) — but its index **flips** `0 → ±1` across A_min-admissible boundary conditions (open vs periodic) and extent-parity, both **regulator** choices A_min does not supply; the occupied-region imbalance is realized-state **REGISTERED DATA**; the closed all-odd torus is **non-bipartite** (`{ε,D}=0` breaks) so not a valid `ε`-index surface. No primitive supplies the boundary/occupancy selection ⇒ not A_min-native. |
+
+**Net (block02): neither crack lands; no axiom is retired.** The two block01
+candidate proposals the cracks would have retired are **CONFIRMED needed** (not
+adopted):
+
+- **C1 (RP-DYN) — N2b clause confirmed needed.** SK-1 walls. The absolute clock
+  unit `2 a_τ` still requires either a no-axiom spacing-row derivation from the
+  no-diagonal clause (untested lead, flagged for a follow-up block) or a primitive.
+  **Narrowing (banked, no axiom):** the factor `2` is structural; the residual is
+  the single metric edge `a_τ` (equivalently the dimensionless `a_τ/a_s`). C1's own
+  minimality (proposes the *dynamics-side existence* of a step, never the
+  dimensionful `2 a_τ`) is **vindicated**, and SK-1 confirms the C1↔N2b division of
+  labor: the dynamics tick (rate γ, C1) and the metric clock unit (`a_τ`) are
+  separate residuals. Weakest sufficient home for `a_τ`, if the no-diagonal lead
+  walls: a single time-edge spacing datum (one dimensionless `a_τ/a_s`), strictly
+  weaker than C1 and disjoint from the FORM content `kinetic_isotropy` supplies.
+- **C3 (PIN-GAUGE-CONTENT) — P-ABJ clause confirmed needed.** SK-2 walls; Cluster 3
+  is **unchanged**. The full ABJ fanout (~1105) remains attributed to C3. The
+  P-ABJ wall stands on all of routes (a)/(b)/(c); the wall is **sharpened** onto
+  the boundary-condition / finite-region / occupancy selection — the
+  gauge-/particle-content gate `MINIMAL_AXIOMS_2026-06-05.md` lists as open.
+
+**Recommended owner sequencing is unaffected:** C1 then C2, defer C3. The block01
+"a crack always beats a proposal" stance is honored: both cracks were genuinely
+attempted and honestly walled, so the C1/C3 residuals are real.

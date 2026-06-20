@@ -2,8 +2,8 @@ loop_slug: axiom-update-proposals
 mode: axiom-update-proposal
 target_status: best-honest-status (no-new-axiom cracks preferred; else candidate axiom-update proposals)
 launch_date: "2026-06-20"
-last_checkpoint_utc: "2026-06-20T17:40:00Z"
-current_branch: physics-loop/axiom-update-proposals-block01-20260620
+last_checkpoint_utc: "2026-06-20T19:30:00Z"
+current_branch: physics-loop/axiom-update-proposals-block02-20260620
 status_authority: independent audit lane / owner only
 hypothetical_axiom_status: "conditional on accepted new axiom; not retained on the actual current surface"
 
@@ -61,11 +61,24 @@ no_new_axiom_cracks:
     status: crack (partial, no axiom; landed in C1 re-attack)
     detail: "anomaly chain imports only count d_t<=1 and is axis-label-blind; chirality eps and {D_hop,eps} exactly W-invariant (resid 0)"
   - id: SK-1
-    status: candidate crack (attempt before proposing)
-    detail: "2a_tau plausibly derivable from scale_reference x kinetic_isotropy; N2b NOT a fourth cluster"
+    status: WALL STANDS (block02 attempted the ACTION; does NOT crack; C1 N2b clause confirmed needed)
+    detail: >
+      block02: the "same FORM edge object" join of scale_reference x kinetic_isotropy
+      does NOT force a_tau = a. c_t/c_s = 1 is a dimensionless single point true for
+      every a_tau; the join supplies the absolute anchor + form ratio but NOT the
+      spacing ratio a_tau/a_s; reading FORM as SPACING mis-cites a primitive (rule 5).
+      Banked no-axiom: factor 2 in 2 a_tau is structural; residual is metric edge a_tau.
+      Runner scripts/sk1_baxis_n2b_kinform_scale_join_2026_06_20.py PASS=28 FAIL=0.
   - id: SK-2
-    status: candidate crack (attempt; would shrink C3)
-    detail: "P-ABJ route (c): imbalanced/curved emergent complex chi!=0 gives nonzero signed heat trace (3x3 A_t=0.838); geometry not axiom"
+    status: WALL STANDS (block02 attempted the ACTION; does NOT crack; C3 P-ABJ clause confirmed needed, Cluster 3 unchanged)
+    detail: >
+      block02: the OPEN all-odd EVALUATION complex is a live chi!=0 surface
+      (A_t = N_+ - N_- = +1, gauge-robust) where route (c) would close, BUT the index
+      flips 0 -> +/-1 across A_min-admissible boundary conditions and extent parity
+      (regulator choices A_min does not supply); occupied-region imbalance is
+      realized-state REGISTERED DATA; closed all-odd torus is non-bipartite
+      ({eps,D}=0 breaks). Not A_min-native; no primitive mis-cited.
+      Runner scripts/frontier_abj_pabj_evaluation_complex_imbalance_2026_06_20.py PASS=75 FAIL=0.
   - id: SK-3
     status: crack (FORM half, no axiom)
     detail: "det-vs-trace FORM already a theorem (multiplicative character); observable 887 fanout not a missing axiom; only thin identification clause remains (-> C2/R4)"
@@ -116,8 +129,38 @@ pre_existing_component_files:
   - .claude/science/physics-loops/axiom-update-proposals/block01_section_READOUT.md
   - .claude/science/physics-loops/axiom-update-proposals/block01_section_GAUGE.md
 
+block02:
+  scope: "honest resolution of the two open candidate cracks (SK-1, SK-2) flagged with an ACTION in block01 section 3"
+  outcome: "both WALL; no crack lands; no axiom retired; C1 N2b clause and C3 P-ABJ clause CONFIRMED needed"
+  banked_no_axiom_progress: "SK-1: factor 2 in 2 a_tau is structural (2-step block); axiom-bearing residual shrinks to the single metric edge a_tau"
+  honest_open_lead: "SK-1: derive a_tau/a_s from the no-diagonal clause (spacing supplier kinetic_isotropy names) -- untested no-axiom lead for a follow-up block"
+  verification:
+    aggregate: "PASS=103 FAIL=0 across two block02 runners (28 + 75)"
+    reproduced_utc: "2026-06-20"
+    reproduced: true
+    no_empirical_import: true
+    deterministic: true
+    no_forbidden_file_touched: true
+    runners:
+      - {path: scripts/sk1_baxis_n2b_kinform_scale_join_2026_06_20.py, total: "PASS=28 FAIL=0"}
+      - {path: scripts/frontier_abj_pabj_evaluation_complex_imbalance_2026_06_20.py, total: "PASS=75 FAIL=0"}
+  files_written:
+    - docs/AXIOM_PROPOSALS_OPEN_CRACKS_RESOLUTION_NOTE_2026-06-20.md
+    - docs/AXIOM_UPDATE_PROPOSALS_CONSOLIDATED_2026-06-20.md   # additive dated BLOCK02 CRACK RESOLUTION section appended
+    - .claude/science/physics-loops/axiom-update-proposals/CLAIM_STATUS_CERTIFICATE_block02.md
+    - .claude/science/physics-loops/axiom-update-proposals/STATE.yaml
+  pre_existing_block02_files:
+    - .claude/science/physics-loops/axiom-update-proposals/block02_section_SK1.md
+    - .claude/science/physics-loops/axiom-update-proposals/block02_section_SK2.md
+    - scripts/sk1_baxis_n2b_kinform_scale_join_2026_06_20.py
+    - scripts/frontier_abj_pabj_evaluation_complex_imbalance_2026_06_20.py
+    - logs/runner-cache/sk1_baxis_n2b_kinform_scale_join_2026_06_20.txt
+    - logs/runner-cache/frontier_abj_pabj_evaluation_complex_imbalance_2026_06_20.txt
+
 next_exact_action: >
-  Owner governance decision on the candidate set (sequence C1 then C2; defer C3),
-  AND/OR attempt the no-new-axiom cracks SK-1 / SK-2 / SK-3 (a crack retires the
-  corresponding proposal). Independent audit lane to set status.
-stop_condition: "synthesis delivered; awaiting owner governance decision / audit-lane review"
+  Owner governance decision on the candidate set (sequence C1 then C2; defer C3).
+  SK-1 / SK-2 are now resolved (both WALL; C1 N2b and C3 P-ABJ clauses confirmed
+  needed). Optional follow-up block: attempt the SK-1 no-diagonal-clause spacing
+  derivation for a_tau (the only remaining no-axiom lead for N2b). Independent
+  audit lane to set status.
+stop_condition: "block02 open-cracks resolution delivered; both walls confirmed; awaiting owner governance decision / audit-lane review"

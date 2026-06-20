@@ -1,0 +1,112 @@
+SK-2 -- P-ABJ route (c): is the EVALUATION complex forced imbalanced
+(chi!=0) by A_min-NATIVE structure?  Decisive honesty runner.
+
+==============================================================================
+PART A -- balance criterion: N_+ = N_- iff some extent is EVEN
+==============================================================================
+[PASS] A: Z4^4 (all even) dims=(4, 4, 4, 4): balance<->some-even consistent  N_+=128 N_-=128 imbalance=0 any_even=True
+[PASS] A: Z4xZ2^3 (all even) dims=(4, 2, 2, 2): balance<->some-even consistent  N_+=16 N_-=16 imbalance=0 any_even=True
+[PASS] A: all odd 3^4 dims=(3, 3, 3, 3): balance<->some-even consistent  N_+=41 N_-=40 imbalance=1 any_even=False
+[PASS] A: all odd, d_t=1 (single-clock) dims=(3, 3, 3, 1): balance<->some-even consistent  N_+=14 N_-=13 imbalance=1 any_even=False
+[PASS] A: all odd dims=(5, 3, 3, 3): balance<->some-even consistent  N_+=68 N_-=67 imbalance=1 any_even=False
+[PASS] A: one even extent dims=(3, 4, 3, 3): balance<->some-even consistent  N_+=54 N_-=54 imbalance=0 any_even=True
+[PASS] A: 3d all odd dims=(3, 3, 3): balance<->some-even consistent  N_+=14 N_-=13 imbalance=1 any_even=False
+[PASS] A: 3d all odd, time=1 dims=(3, 3, 1): balance<->some-even consistent  N_+=5 N_-=4 imbalance=1 any_even=False
+[PASS] A: 3d one even dims=(4, 3, 3): balance<->some-even consistent  N_+=18 N_-=18 imbalance=0 any_even=True
+[PASS] A: all-odd 3^4 has |imbalance|=1 (chi-like, no curvature)  imbalance=1
+[PASS] A: all-odd 5x3^3 has |imbalance|=1 (chi-like, no curvature)  imbalance=1
+[PASS] A: all-odd 3^3 has |imbalance|=1 (chi-like, no curvature)  imbalance=1
+[PASS] A: all-odd 3x3x1 has |imbalance|=1 (chi-like, no curvature)  imbalance=1
+[PASS] A: all-odd 5^3 has |imbalance|=1 (chi-like, no curvature)  imbalance=1
+
+==============================================================================
+PART B -- PERIODIC odd extent: odd cycle not bipartite => eps grading
+          and {eps,D}=0 BREAK (all-odd periodic torus is NOT a valid
+          epsilon-index surface)
+==============================================================================
+[PASS] B: Z4^4 all-even periodic: {eps,D}=0 holds IFF all-even (here all_even=True)  max|eps D eps + D|=0.000e+00
+[PASS] B: Z4xZ2^3 all-even periodic: {eps,D}=0 holds IFF all-even (here all_even=True)  max|eps D eps + D|=0.000e+00
+[PASS] B: 3^4 all-ODD periodic: {eps,D}=0 holds IFF all-even (here all_even=False)  max|eps D eps + D|=1.000e+00
+[PASS] B: 3^3 all-ODD periodic: {eps,D}=0 holds IFF all-even (here all_even=False)  max|eps D eps + D|=1.000e+00
+[PASS] B: one-odd-among-even periodic: {eps,D}=0 holds IFF all-even (here all_even=False)  max|eps D eps + D|=1.000e+00
+[PASS] B: staggered eta periodicity fails iff extent odd (L0=3)  eta flips under wrap=True
+[PASS] B: staggered eta periodicity fails iff extent odd (L0=5)  eta flips under wrap=True
+[PASS] B: staggered eta periodicity fails iff extent odd (L0=4)  eta flips under wrap=False
+[PASS] B: staggered eta periodicity fails iff extent odd (L0=6)  eta flips under wrap=False
+
+==============================================================================
+PART C -- OPEN (Dirichlet) all-odd box: {eps,D}=0 holds, B RECTANGULAR,
+          A_t = N_+ - N_- != 0  (a live chi!=0 evaluation surface)
+==============================================================================
+[PASS] C: open 3^4: {eps,D}=0 holds (open, no wraparound)  max=0.000e+00
+[PASS] C: open 3^4: diagonal parity blocks vanish  max=0.000e+00
+[PASS] C: open 3^4: block B is RECTANGULAR (N_+ != N_-)  B shape=(41, 40), imbalance=1
+[PASS] C: open 3^4: A_t is t-independent  spread=3.331e-15
+[PASS] C: open 3^4: A_t != 0 (nonzero signed heat trace)  A_t=+1.000000
+[PASS] C: open 3^4: A_t == imbalance N_+-N_- (open chi)  A_t=+1.000000 vs imbalance=1
+[PASS] C: open 3^4: analytic index n_+-n_- == imbalance  index=1 imbalance=1
+[PASS] C: open 3^3 x 1 (single-clock d_t=1): {eps,D}=0 holds (open, no wraparound)  max=0.000e+00
+[PASS] C: open 3^3 x 1 (single-clock d_t=1): diagonal parity blocks vanish  max=0.000e+00
+[PASS] C: open 3^3 x 1 (single-clock d_t=1): block B is RECTANGULAR (N_+ != N_-)  B shape=(14, 13), imbalance=1
+[PASS] C: open 3^3 x 1 (single-clock d_t=1): A_t is t-independent  spread=8.882e-16
+[PASS] C: open 3^3 x 1 (single-clock d_t=1): A_t != 0 (nonzero signed heat trace)  A_t=+1.000000
+[PASS] C: open 3^3 x 1 (single-clock d_t=1): A_t == imbalance N_+-N_- (open chi)  A_t=+1.000000 vs imbalance=1
+[PASS] C: open 3^3 x 1 (single-clock d_t=1): analytic index n_+-n_- == imbalance  index=1 imbalance=1
+[PASS] C: open 3^3: {eps,D}=0 holds (open, no wraparound)  max=0.000e+00
+[PASS] C: open 3^3: diagonal parity blocks vanish  max=0.000e+00
+[PASS] C: open 3^3: block B is RECTANGULAR (N_+ != N_-)  B shape=(14, 13), imbalance=1
+[PASS] C: open 3^3: A_t is t-independent  spread=8.882e-16
+[PASS] C: open 3^3: A_t != 0 (nonzero signed heat trace)  A_t=+1.000000
+[PASS] C: open 3^3: A_t == imbalance N_+-N_- (open chi)  A_t=+1.000000 vs imbalance=1
+[PASS] C: open 3^3: analytic index n_+-n_- == imbalance  index=1 imbalance=1
+[PASS] C: open 5x3x3: {eps,D}=0 holds (open, no wraparound)  max=0.000e+00
+[PASS] C: open 5x3x3: diagonal parity blocks vanish  max=0.000e+00
+[PASS] C: open 5x3x3: block B is RECTANGULAR (N_+ != N_-)  B shape=(23, 22), imbalance=1
+[PASS] C: open 5x3x3: A_t is t-independent  spread=2.442e-15
+[PASS] C: open 5x3x3: A_t != 0 (nonzero signed heat trace)  A_t=+1.000000
+[PASS] C: open 5x3x3: A_t == imbalance N_+-N_- (open chi)  A_t=+1.000000 vs imbalance=1
+[PASS] C: open 5x3x3: analytic index n_+-n_- == imbalance  index=1 imbalance=1
+[PASS] C: open 3x3x1: {eps,D}=0 holds (open, no wraparound)  max=0.000e+00
+[PASS] C: open 3x3x1: diagonal parity blocks vanish  max=0.000e+00
+[PASS] C: open 3x3x1: block B is RECTANGULAR (N_+ != N_-)  B shape=(5, 4), imbalance=1
+[PASS] C: open 3x3x1: A_t is t-independent  spread=6.661e-16
+[PASS] C: open 3x3x1: A_t != 0 (nonzero signed heat trace)  A_t=+1.000000
+[PASS] C: open 3x3x1: A_t == imbalance N_+-N_- (open chi)  A_t=+1.000000 vs imbalance=1
+[PASS] C: open 3x3x1: analytic index n_+-n_- == imbalance  index=1 imbalance=1
+[PASS] C: open 3^3 with random U(1): A_t still == imbalance (gauge-robust)  A_t=+1.000000 vs 1
+
+==============================================================================
+PART D -- DECISIVE: is the imbalance A_min-FORCED, or a regulator /
+          realized-state choice?  (the honesty gate)
+==============================================================================
+
+-- D1: index flips with boundary condition (BC is NOT A_min-fixed) --
+[PASS] D1: even periodic torus -> index 0 (square block)  A_t(periodic)=+0.000000
+[PASS] D1: SAME even site set OPEN box -> index 0 too (even=balanced)  A_t(open even)=-0.000000  (N_+=128=N_-)
+[PASS] D1: all-odd OPEN box -> index = +/-1 (the only nonzero route)  A_t(open odd)=+1.000000 = N_+-N_-=1
+[PASS] D1: VERDICT index is regulator-selected (BC+parity), not A_min-forced  even-periodic=0, odd-open=+/-1 on A_min-admissible regulators
+
+-- D2: open even box index 0 vs open odd box index +/-1 (region choice) --
+[PASS] D2: open 4^3 even: |A_t|=0 matches extent-parity (=|N_+-N_-|)  A_t=-0.000000, imbalance=0
+[PASS] D2: open 3^3 odd: |A_t|=1 matches extent-parity (=|N_+-N_-|)  A_t=+1.000000, imbalance=1
+[PASS] D2: open 4x3x3 mixed: |A_t|=0 matches extent-parity (=|N_+-N_-|)  A_t=-0.000000, imbalance=0
+[PASS] D2: open 5x3x3 odd: |A_t|=1 matches extent-parity (=|N_+-N_-|)  A_t=+1.000000, imbalance=1
+[PASS] D2: VERDICT imbalance is a finite-region/extent choice, A_min supplies no finite extent (infinite Z^3) -> not forced  open-even=0, open-odd=1; both A_min-admissible regions
+
+-- D3: realized-state occupied region: imbalance is state-contingent --
+[PASS] D3: two law-admissible occupied regions, EQUAL particle number N=8  |alpha|=8 |beta|=8
+[PASS] D3: their parity-imbalance DIFFERS across the state family  imbalance(alpha)=0  imbalance(beta)=4
+[PASS] D3: underlying A_min box is BALANCED (N_+=N_-): nothing forces an occupied imbalance  N_+=32=N_-=32
+[PASS] D3: VERDICT occupied-region imbalance changes under another admissible state -> REGISTERED DATA (realized_state counterfactual clause)  state-contingent => not an A_min derivation
+
+==============================================================================
+PRIMITIVE-DISAVOWAL CHECK (no mis-citation)
+==============================================================================
+[PASS] PD: Lattice axiom grants Z^3 adjacency but DISAVOWS boundary condition & finite extent -> open/periodic & extent-parity are NOT A_min-granted  MINIMAL_AXIOMS_2026-06-05: 'does not supply a boundary condition'
+[PASS] PD: realized_state grants pointwise eval, DISAVOWS any value that would differ for another admissible state -> occupied imbalance = registered  REALIZED_STATE_PRIMITIVE_NOTE: counterfactual clause
+[PASS] PD: scale_reference (units-only) & kinetic_isotropy (OS0 form c_t=c_s) grant NO topological/cardinality content -> cannot supply chi!=0  both notes: 'no selector', 'no dimensionless content' / form only
+
+==============================================================================
+TOTAL: PASS=75 FAIL=0
+==============================================================================
+VERDICT: WALL STANDS (no A_min-native crack). The square-block no-go needs only N_+ = N_- (balanced sublattices). Imbalance N_+ != N_- (the chi!=0 door) is reachable ONLY via: (i) an OPEN/boundaried region with all-odd extents -- but A_min's Lattice axiom supplies NO boundary condition and NO finite extent, so open-vs-periodic and extent-parity are regulator choices, not A_min-forced: the index FLIPS 0 -> +/-1 across A_min-admissible regulators (Part D1/D2); (ii) curvature/disclination -- already adjudicated ADMITTED by the prior block (breaks translation-invariant flat-cubic Lattice); or (iii) a realized-state occupied region -- whose parity imbalance changes under another law-admissible state = REGISTERED DATA per the realized_state counterfactual clause (Part D3). The all-odd PERIODIC torus -- the only way an imbalance could be 'closed & translation-invariant' -- is NOT a valid epsilon-index surface at all: an odd cycle is non-bipartite, so the eps grading and {eps,D}=0 BREAK (Part B). Therefore chi!=0 is NOT forced by A_min-native structure; P-ABJ route (c) does NOT crack without either an external boundary/regulator-occupancy premise or the P-ABJ premise itself. The wall stands; the gauge-content/boundary axiom is needed.

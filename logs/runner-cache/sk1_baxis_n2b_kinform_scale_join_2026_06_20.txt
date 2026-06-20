@@ -1,0 +1,57 @@
+
+==============================================================================
+BLOCK A -- construct the staggered kinetic form Q(p) with EXPLICIT, INDEPENDENT lattice spacings a_tau (time edge) and a_s (space edge)
+==============================================================================
+  [PASS] A1 temporal form coefficient c_t = coeff(omega^2) is computed = 1 (edge-graded difference -> unit physical omega^2 form)  --  c_t = 1
+  [PASS] A2 spatial form coefficient c_s = coeff(k^2) is computed = 1 (edge-graded difference -> unit physical k^2 form)  --  c_s = 1
+  [PASS] A3 mass term is (m/a_tau)^2 in PHYSICAL units (carries the edge)  --  mass_term = m**2/a_tau**2
+  [PASS] A4 form ratio c_t/c_s = 1 is a DIMENSIONLESS pure number (both a_tau and a_s absorbed into physical omega,k)  --  c_t/c_s = 1, free symbols = []
+
+==============================================================================
+BLOCK B -- DECISIVE DISAVOWAL TEST: c_t = c_s holds for a CONTINUUM of a_tau values, so kinetic-isotropy form cannot pin a_tau
+==============================================================================
+  [PASS] B1 c_t/c_s = 1 (form isotropy) holds at EVERY tested a_tau in ['1/3', '1', '7/2', '10'] (a_s fixed = 1)  --  ratios = ['1', '1', '1', '1']
+  [PASS] B2 => kinetic-isotropy (c_t=c_s) is satisfied for a CONTINUUM of a_tau; it does NOT select a value of a_tau  --  form isotropy is a single point c_t/c_s=1, true for all temporal edges
+  [PASS] B3 the SPACING condition a_tau/a_s = 1 is a distinct equation that selects exactly ONE a_tau (= a_s) -- this is the content N2b needs  --  a_tau solving spacing=1: [a_s]
+  [PASS] B4 form ratio (c_t/c_s) and spacing ratio (a_tau/a_s) are DIFFERENT functions: the form ratio is constant 1, the spacing ratio is a_tau/a_s  --  form_ratio=1 (const) vs spacing_ratio=a_tau/a_s (varies)
+
+==============================================================================
+BLOCK C -- THE 'SAME EDGE OBJECT' PUSH: does 'one tick is one edge in FORM' force a_tau = a_s? Count the form legs explicitly.
+==============================================================================
+  [PASS] C1 temporal hop is range-1 in time EDGES (form: one tick = one edge)
+  [PASS] C2 spatial hop is range-1 in space EDGES (cubic adjacency analogue)
+  [PASS] C3 'same edge object in FORM' (equal leg count) is ALREADY satisfied: 1 == 1, time vs space  --  form-level identification holds with NO metric input
+  [PASS] C4 the range-1 form (adjacency TOPOLOGY) is identical for a_tau=a_s and a_tau=10 a_s; only the METRIC weight differs  --  form (=topology) is metric-blind; spacing is the metric weight
+  [PASS] C5 => 'one tick is one edge in FORM' does NOT force a_tau = a_s: the form leg count is 1 for ALL a_tau; the metric identity a_tau=a_s is EXTRA content (a spacing datum)  --  treating the time edge as the same FORM object leaves its LENGTH free
+  [PASS] C6 the join {scale_reference} x {kinetic_isotropy} supplies {absolute anchor a^{-1}} and {form ratio c_t/c_s=1}, but NOT the dimensionless spacing ratio a_tau/a_s -- the exact object N2b needs  --  join supplies ['c_t/c_s = 1 (dimensionless FORM ratio only)', 'one dimensionful anchor a^{-1} (ZERO dimensionless content)']; still missing ['a_tau/a_s (a dimensionless spacing ratio)']
+
+==============================================================================
+BLOCK D -- the 2 a_tau Stone denominator: factor 2 is structural (2-step block, no axiom); a_tau remains the free metric edge
+==============================================================================
+  [PASS] D1 single-step staggered transfer is non-positive (complex spectrum off the positive axis) -> a 2-step BLOCK is structurally required  --  min|Im eig| over BZ = 0.375 (matches note's 0.562-scale)
+  [PASS] D2 2-step monodromy eigenvalues = exp(+-2 E(p)) EXACTLY (staggered dispersion E=arcsinh sqrt(m^2+sin^2 p))  --  max dispersion residual = 5.33e-15
+  [PASS] D3 the Stone denominator factors as (block_count) x (a_tau) = 2 * a_tau; block_count=2 is a counted structural integer (derivable, no axiom), a_tau is the metric edge  --  2 = #temporal edges per positive block; a_tau still requires a spacing datum
+  [PASS] D4 functional-calculus check: for EVERY a_tau, H_hat=-log(T^2)/(2 a_tau) reconstructs the SAME T^2 -- so the transfer fixes only 2 a_tau * H_hat, never a_tau (the clock unit) [scope-boundary N2 reproduced]  --  exp(-2 a_tau H)=T^2 for all a_tau; a_tau is free given T
+
+==============================================================================
+BLOCK E -- PRIMITIVE DISAVOWAL LEDGER (verbatim) -- the wall test
+==============================================================================
+  [PASS] E1 KINETIC_ISOTROPY NOTE: 'this primitive fixes only the ONE DIMENSIONLESS graining ratio relating that emergent time to space' -> grants a dimensionless ratio, not a length
+  [PASS] E2 KINETIC_ISOTROPY NOTE: 'the ABSOLUTE scale belongs to the single approved scale-reference primitive' -> a_tau's length is NOT here
+  [PASS] E3 KINETIC_ISOTROPY NOTE: 'any SPACING ratio or reachability claim lives in its OWN derivation row' -> the spacing a_tau/a_s is RESERVED elsewhere (explicit disavowal of the SK-1 object)
+  [PASS] E4 KINETIC_ISOTROPY NOTE: 'It does not supply ... the spacing ratio (derived from the no-diagonal clause); it supplies only the kinetic-form isotropy' -> spacing has its OWN supplier (the no-diagonal clause), NOT scale x kinetic-isotropy
+  [PASS] E5 SCALE_REFERENCE NOTE: 'It carries ZERO dimensionless content' -> scale_reference cannot supply the dimensionless ratio a_tau/a_s = 1
+  [PASS] E6 SCALE_REFERENCE NOTE: 'does not assert a/l_P = 1 as a derived theorem' -> even the ONE anchor is not a derived equality; a SECOND such equality (a_tau = a) is a fortiori not supplied
+
+==============================================================================
+BLOCK F -- VERDICT LOGIC: does SK-1 crack N2b?
+==============================================================================
+  [PASS] F1 the SK-1 'same edge object' reading would require reading kinetic_isotropy's FORM ratio AS the metric spacing ratio  --  form ratio (const 1) and spacing ratio (a_tau/a_s) are provably different functions (B4); identifying them mis-cites the primitive
+  [PASS] F2 mis-citing a primitive (reading granted FORM as disavowed SPACING) violates registry rule 5 (forbidden) -> SK-1 does NOT crack with the current primitive grants
+  [PASS] F3 WALL STANDS: 2 a_tau is NOT derivable from scale_reference x kinetic_isotropy; the absolute time-edge LENGTH a_tau is a SEPARATE spacing datum (its own derivation row), exactly as both NOTES state  --  the factor 2 is structural (no axiom); a_tau is the residual that walls
+  [PASS] F4 HONEST DEMARCATION: what DID move forward -- the factor 2 (2-step block) is no-axiom structural; the form-vs-spacing SEPARATION is now computed exactly; the residual axiom-bearing object is precisely a_tau  --  partial structural progress; the dimensionful tick value still needs a spacing-row derivation or a primitive
+
+==============================================================================
+TOTAL: PASS=28 FAIL=0
+==============================================================================
+FINDING (SK-1): kinetic_isotropy supplies the DIMENSIONLESS kinetic-FORM ratio c_t/c_s = 1 (a single point, true for EVERY a_tau); scale_reference supplies ONE dimensionful anchor with ZERO dimensionless content. The absolute blocked time-step 2 a_tau factors as (structural 2) x (metric edge a_tau). The factor 2 is no-axiom structural (2-step staggered block). The edge LENGTH a_tau requires the dimensionless spacing ratio a_tau/a_s, which BOTH primitive notes EXPLICITLY reserve to a separate derivation row (kinetic_isotropy: 'any spacing ratio ... lives in its own derivation row', 'supplies only the kinetic-form isotropy'; scale_reference: 'zero dimensionless content'). Reading the granted FORM ratio as the disavowed SPACING ratio would mis-cite a primitive (registry rule 5, forbidden). VERDICT: SK-1 does NOT crack N2b from the approved surface; the wall STANDS and the candidate (a spacing-row derivation, or a primitive) is needed for the absolute clock unit. Partial no-axiom progress: the factor 2 is structural and the form/spacing separation is now exact.

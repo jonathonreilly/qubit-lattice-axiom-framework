@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/signed_gravity_product_grading_source_activation_obstruction_2026_06_17.py
+runner_sha256: e9c876cc9e59fb45e6ce11ffac57dab93cd009f6af02e6591f87b45280728f35
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+========================================================================================
+SIGNED GRAVITY PRODUCT-GRADING SOURCE-ACTIVATION OBSTRUCTION
+  exact two-sector source-action split; not a physical signed-gravity claim
+========================================================================================
+
+[PASS] upstream product-grading note derives the opposite eta label pair
+[PASS] companion note records source activation as the remaining boundary
+[PASS] product grading Gamma is an odd involution
+[PASS] identity source is orientation-even
+[PASS] Gamma source is orientation-odd
+[PASS] generic I+Gamma coefficient is neither invariant nor pure odd
+[PASS] orientation-even scalar source gives only [+,+]  (active=[2.75 2.75])
+[PASS] spectator eta label gives no active source  (active=[0. 0.])
+[PASS] Gamma source-line coefficient gives exactly [+,-]  (active=[ 2.75 -2.75])
+[PASS] even/spectator source basis cannot span signed source  (residual=3.889e+00, weights=[-0.  0.])
+[PASS] adding the odd Gamma coefficient spans the signed source uniquely  (weights=[-0.    0.    2.75])
+[PASS] identity source/identity response fails locked table  (ATTRACT,ATTRACT,ATTRACT,ATTRACT)
+[PASS] Gamma source only fails action-reaction locked table  (ATTRACT,UNBALANCED,UNBALANCED,REPEL)
+[PASS] Gamma response only fails action-reaction locked table  (ATTRACT,UNBALANCED,UNBALANCED,REPEL)
+[PASS] Gamma source plus Gamma response gives locked table  (ATTRACT,REPEL,REPEL,ATTRACT)
+
+INTERPRETATION
+  The product grading supplies the odd label carrier Gamma.
+  It does not by itself authorize the scalar action to use the odd
+  coefficient. In the finite linear source class, the desired signed
+  source is exactly the Gamma coefficient, so the remaining premise is
+  the active source-line/section rule, not a missing sign label.
+
+SUMMARY: PASS=15 FAIL=0
+FINAL_TAG: PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION
+
+----- stderr -----
+

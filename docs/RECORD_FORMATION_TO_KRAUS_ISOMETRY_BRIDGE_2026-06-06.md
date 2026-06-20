@@ -30,6 +30,11 @@ persistent record dynamics
 This note supplies a narrow bridge for the explicit finite pointer model used
 in
 [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md).
+The missing source-side ideal-write step is now supplied by
+[`RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md`](RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md):
+inside the same explicit controlled-copy/fresh-fragment model, the
+controlled-copy kick at `t = pi/(4g)` induces the ideal pointer-label
+record-write isometry after a fixed record-register basis calibration.
 
 Condition on:
 
@@ -38,9 +43,10 @@ Condition on:
   `P_r P_s = delta_rs P_r`, `P_r^dagger = P_r`, and `sum_r P_r = I`;
 - the finite pointer-non-demolition record-formation bridge, so the pointer
   sectors are stable record sectors in the model;
-- a blank finite record register `H_record` with orthonormal labels `{|r>}`;
-- an ideal record-write step that copies the stable pointer sector label to
-  the record register without rotating the pointer sector.
+- a blank finite record register `H_record` initialized as a fresh fragment;
+- the controlled-copy/fresh-fragment write-isometry theorem, which derives the
+  ideal pointer-label write from the controlled-copy kick rather than leaving
+  it as an unqualified premise.
 
 Define
 
@@ -113,29 +119,39 @@ evolution is equivalent to a conserved pointer:
 [H_int, Pi_S] = 0.
 ```
 
-That result supplies stable pointer sectors for the bounded model. This note
-then supplies the ideal record-write isometry whose blocks are those sectors'
-projectors.
+That result supplies stable pointer sectors for the bounded model. The
+2026-06-18 controlled-copy write-isometry theorem now supplies the ideal
+record-write isometry from the explicit controlled-copy/fresh-fragment
+dynamics: `U_cc(pi/4)(|psi>|0>) = sum_r P_r|psi>|eta_r>`, with orthogonal
+record labels `|eta_r>`, so a fixed record-basis calibration gives the
+projective `W`.
 
 The composition is:
 
 ```text
 finite quantum-Darwinism pointer model
   + pointer-non-demolition record formation
-  + blank orthonormal record register
-  + ideal pointer-label write
+  + blank fresh record fragment
+  + controlled-copy write-isometry bridge
     => normalized W
     => projective Kraus instrument
     => realized record atom for post-record word/count dynamics.
 ```
 
-The first and third-plus-fourth inputs are bridge/model premises. The algebra
-after those premises is exact.
+The quantum-Darwinism record reading and explicit finite controlled-copy model
+remain bounded bridge/model premises. The ideal write isometry is no longer an
+additional free premise within that model.
+Equivalently: the ideal pointer-label write is supplied by the controlled-copy
+write-isometry theorem for the explicit finite model, not by an additional
+framework axiom.
 
 ## What this buys
 
 - It narrows the open "record dynamics to Kraus instrument" gap for the
   projective finite pointer model.
+- It retires the source-side ideal-write subpremise for the explicit
+  controlled-copy/fresh-fragment model: the write isometry is the calibrated
+  controlled-copy dynamics.
 - It gives a concrete interface between bounded formation dynamics and exact
   post-record information dynamics.
 - It explains the pre-record/post-record distinction without making it an
@@ -157,6 +173,8 @@ after those premises is exact.
   or beta value.
 - It does not derive arbitrary persistent-record dynamics into a normalized
   isometry.
+- It does not derive the bounded quantum-Darwinism record reading from the
+  minimal axioms.
 - It does not derive a Born rule or probability law from post-record counts.
   Branch weights are read from the pre-record density matrix through the
   supplied projective instrument.
@@ -169,7 +187,7 @@ after those premises is exact.
 ```yaml
 actual_current_surface_status: exact-support
 trace_class: upstream_support
-reachability_to_target: supports
+reachability_to_target: closes_source_side_blocker_for_the_finite_model
 conditional_surface_status: bounded-support for the finite
   pointer-non-demolition record model
 hypothetical_axiom_status: null
@@ -186,6 +204,7 @@ The runner verifies:
 
 - source-anchor boundaries in the formation, finite-isometry, instrument, and
   dynamics-reconciliation notes;
+- the controlled-copy write-isometry bridge note and runner markers;
 - exact projector primitives in the qubit pointer model;
 - construction of `W` as the projective block-column isometry;
 - extraction `K_r = P_r`;

@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py
+runner_sha256: ca2526e48ce1a312a5d5a5ad5c3942fe8d5b0598e179142f5c2d3680d0c97d99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+========================================================================================
+RECORD FORMATION CONTROLLED-COPY WRITE-ISOMETRY THEOREM
+========================================================================================
+
+------------------------------------------------------------------------------
+Source and authority checks
+------------------------------------------------------------------------------
+PASS docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md exists
+PASS docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md exists
+PASS docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md exists
+PASS docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md exists
+PASS new theorem contains marker: Controlled-Copy Write-Isometry Theorem
+PASS new theorem contains marker: U_cc(pi/4)(|psi> tensor |0>_R)
+PASS new theorem contains marker: <eta_0|eta_1> = 0
+PASS new theorem contains marker: fixed record-register calibration
+PASS new theorem contains marker: K_r = <r|W = P_r
+PASS new theorem contains marker: What This Does Not Close
+PASS target bridge cites controlled-copy write-isometry theorem
+PASS target bridge no longer leaves ideal write as an unqualified premise
+PASS new theorem names target bridge without markdown back-edge
+PASS formation source carries controlled-copy construction
+PASS finite Kraus source carries isometry-to-Kraus algebra
+
+------------------------------------------------------------------------------
+Single fresh-fragment controlled-copy write
+------------------------------------------------------------------------------
+PASS controlled-copy U is unitary
+PASS eta_0 and eta_1 are normalized
+PASS eta_0 and eta_1 are orthogonal at theta=pi/4 :: (2.220446049250313e-16+0j)
+PASS record calibration C_R is unitary
+PASS C_R eta_0 = |0>
+PASS C_R eta_1 = |1>
+PASS calibrated controlled-copy isometry equals ideal W :: [[1.00000000e+00+0.j 0.00000000e+00+0.j]
+ [0.00000000e+00+0.j 2.22044605e-16+0.j]
+ [2.22044605e-16+0.j 0.00000000e+00+0.j]
+ [0.00000000e+00+0.j 1.00000000e+00+0.j]]
+PASS dynamic W^dagger W = I
+PASS extracted K_0 equals P_0
+PASS extracted K_1 equals P_1
+PASS Kraus resolution closes
+PASS generic coherent input maps to orthogonal pointer-label superposition
+
+------------------------------------------------------------------------------
+Fresh-fragment chain and idle completed labels
+------------------------------------------------------------------------------
+PASS two fresh fragments carry matching pointer labels :: [4.47213595e-01+0.00000000e+00j 7.02166694e-17+0.00000000e+00j
+ 9.93013661e-17+0.00000000e+00j 5.51233315e-33+0.00000000e+00j
+ 0.00000000e+00-1.10246663e-32j 0.00000000e+00-1.98602732e-16j
+ 0.00000000e+00-1.40433339e-16j 0.00000000e+00-8.94427191e-01j]
+PASS later fresh-fragment kick commutes with completed E1 eta_0 label
+PASS later fresh-fragment kick commutes with completed E1 eta_1 label
+
+------------------------------------------------------------------------------
+Boundary controls
+------------------------------------------------------------------------------
+PASS controlled-copy to projective W is derived for explicit model
+PASS arbitrary persistent dynamics to W remains false
+PASS quantum-Darwinism record reading remains a bounded model bridge
+PASS physical Hamiltonian/coupling selection remains false
+PASS Born rule from post-record counts remains false
+PASS generation/Koide dial selection remains false
+PASS audit verdict applied remains false
+
+wrote outputs/record_formation_controlled_copy_write_isometry_2026_06_18.json
+SUMMARY: PASS=37 FAIL=0
+
+----- stderr -----
+

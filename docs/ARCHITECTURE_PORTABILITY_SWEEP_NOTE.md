@@ -1,6 +1,7 @@
 # Architecture Portability Sweep
 
 **Primary runner:** [`scripts/frontier_architecture_portability_sweep.py`](../scripts/frontier_architecture_portability_sweep.py)
+**Live re-audit bridge:** `docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md`
 
 ## Purpose
 
@@ -63,3 +64,8 @@ lattices (3-slit barrier configuration, side=12).
 - The mass exponent beta measures deflection proportional to source mass
   (F proportional to M), not the full Newton law F = GMm/r^2 which requires
   both-masses and distance-law closure on each architecture separately.
+- The archived
+  `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11`
+  row remains failed historical evidence; this live note supplies the separate
+  runner-backed bounded sweep that can be independently re-audited under the
+  finite scope above.

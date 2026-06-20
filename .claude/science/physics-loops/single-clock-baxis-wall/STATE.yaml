@@ -11,10 +11,18 @@ deadline_epoch: 1782006241          # 2026-06-20 21:44 EDT
 worktree: /Users/jonBridger/tp-audit-bridge-20260620
 base_commit: 9469e8251
 
-cycle_count: 3
-block_count: 3
+cycle_count: 4
+block_count: 4
 active_block: 04
 active_block_branch: physics-loop/single-clock-baxis-wall-block04-20260620
+single_clock_target: ACHIEVED (4 blocks; ~1.5h of 12h). See HANDOFF.md.
+next_opportunity: anomaly_forces_time ABJ bridge (fanout 1105) — see OPPORTUNITY_QUEUE.md
+block04_result: >
+  CLOSED. Owner/audit-lane decision packet (7 decisions) at
+  docs/SINGLE_CLOCK_BAXIS_OWNER_DECISION_PACKET_2026-06-20.md: register B-AXIS
+  premise node (proposed JSON snippet), land unified no_go to retained_no_go,
+  source-narrow N5, adjudicate 2 co-cycle deps, approve firewall width, register
+  4 opportunity rows, confirm even-extent scope. Commit pending.
 block03_result: >
   CLOSED. Consumer-firewall widening. Keystone has 24 direct dependents, cone 960
   (≈959). 19 direct-claiming: 8 already firewalled by in-flight branch (+1 deeper,

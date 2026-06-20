@@ -355,7 +355,10 @@ def _render_note(
         "# Causal Impact-Parameter Note",
         "",
         "**Date:** 2026-04-06; realized-impact repair 2026-06-18",
-        "**Status:** bounded realized-impact-parameter replay on the center growth-rule family",
+        "**Type:** bounded_theorem",
+        "**Claim type:** bounded_theorem",
+        "**Status:** bounded theorem / realized-impact-parameter replay on the center growth-rule family",
+        "**Status authority:** independent audit lane only. This source note does not set or predict an audit outcome.",
         "",
         "## Artifact Chain",
         "",
@@ -529,9 +532,42 @@ def _runner_checks(
     ]
 
 
+def _source_boundary_checks(rendered_note: str) -> list[RunnerCheck]:
+    return [
+        RunnerCheck(
+            "canonical claim metadata is present",
+            "**Type:** bounded_theorem" in rendered_note
+            and "**Claim type:** bounded_theorem" in rendered_note,
+            "bounded_theorem Type/Claim type",
+        ),
+        RunnerCheck(
+            "audit authority remains independent",
+            "**Status authority:** independent audit lane only. This source note does not set or predict an audit outcome."
+            in rendered_note,
+            "source note sets no audit outcome",
+        ),
+        RunnerCheck(
+            "status line is bounded theorem scoped",
+            "**Status:** bounded theorem / realized-impact-parameter replay on the center growth-rule family"
+            in rendered_note
+            and "**Status:** bounded realized-impact-parameter replay" not in rendered_note,
+            "bounded theorem, not audit-retained status",
+        ),
+    ]
+
+
 def main() -> int:
     summaries, zero_max_delta, zero_max_field, field_values, anchor_diagnostics = _measure_family(FAMILY)
     checks = _runner_checks(summaries, zero_max_delta, zero_max_field, anchor_diagnostics)
+    rendered = _render_note(
+        summaries,
+        zero_max_delta,
+        zero_max_field,
+        field_values,
+        anchor_diagnostics,
+        checks,
+    )
+    checks = checks + _source_boundary_checks(rendered)
     rendered = _render_note(
         summaries,
         zero_max_delta,

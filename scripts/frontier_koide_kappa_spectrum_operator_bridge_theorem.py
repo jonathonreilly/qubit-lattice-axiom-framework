@@ -4,7 +4,7 @@ Frontier runner — Koide kappa spectrum-operator bridge theorem.
 Companion to
 `docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`.
 
-Claim.  On the retained cyclic-compression bridge
+Claim.  On the cyclic-compression bridge
 `H = a I + b C + bbar C^2  <->  circulant operator with Fourier eigenvalues
 a_0, z, zbar`, the exact symbolic identity
 
@@ -13,7 +13,7 @@ a_0, z, zbar`, the exact symbolic identity
 holds identically on Herm_circ(3). Therefore spectrum-side Koide
 `Q = 2/3` (equivalently `a_0^2 = 2 |z|^2`) IS operator-side `kappa = 2`
 (equivalently `a^2 = 2 |b|^2`). No independent operator-side primitive
-is needed once the spectrum-side closure is accepted.
+is needed once the spectrum-side condition is supplied.
 
 Tasks exercised by the runner (T1 .. T9) use sympy for the symbolic
 bridge identity, a numerical realization at PDG charged-lepton masses,
@@ -28,7 +28,7 @@ keyed to a substantive computation; there are no hard-coded True values.
   T6 PDG charged-lepton Q ~ 2/3
   T7 PDG numerical kappa = a^2/|b|^2 ~ 2
   T8 Bridge holds pointwise on 200 random Herm_circ(3) samples
-  T9 Bridge residual collapses Koide-closure equivalence
+  T9 Bridge residual collapses Koide-condition equivalence
 """
 
 from __future__ import annotations
@@ -44,6 +44,7 @@ PASS = 0
 FAIL = 0
 
 ROOT = Path(__file__).resolve().parents[1]
+BRIDGE_NOTE = ROOT / "docs" / "KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md"
 DEMOTION_NOTE = ROOT / "docs" / "KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md"
 
 
@@ -207,10 +208,10 @@ check(
 )
 
 # ---------------------------------------------------------------------------
-# T10 — closure-equivalence
+# T10 — condition-equivalence
 # ---------------------------------------------------------------------------
 
-print("\nSection D — closure equivalence under bridge")
+print("\nSection D — condition equivalence under bridge")
 
 # Check that: spectrum-side Koide Q = 2/3 iff operator-side kappa = 2.
 # We test by sampling values that satisfy one side and verify they satisfy the other.
@@ -244,6 +245,8 @@ print("\nSection E — MRU demotion source-boundary checks")
 
 demotion_note = DEMOTION_NOTE.read_text(encoding="utf-8")
 demotion_norm = normalize(demotion_note)
+bridge_note = BRIDGE_NOTE.read_text(encoding="utf-8")
+bridge_norm = normalize(bridge_note)
 
 check(
     "T11 demotion note records the 2026-06-18 source-boundary repair",
@@ -283,6 +286,20 @@ check(
     and "alternative attack routes remain open" in demotion_norm
     and "no currently retained framework theorem delivers it" not in demotion_norm
     and "not a corollary of any retained framework theorem currently" not in demotion_norm,
+)
+check(
+    "T18 bridge note declares bounded_theorem source claim type",
+    "**Type:** bounded_theorem" in bridge_note
+    and "**Claim type:** bounded_theorem" in bridge_note
+    and "bounded bridge-corollary support" in bridge_norm,
+)
+check(
+    "T19 bridge note removes retained-proposal and independent-closure overclaim phrases",
+    ("proposed_" + "retained positive theorem") not in bridge_norm
+    and "second independent closure route" not in bridge_norm
+    and "closure comes free" not in bridge_norm
+    and "does not independently derive the spectrum-side koide condition" in bridge_norm
+    and "does not apply or predict an audit verdict" in bridge_norm,
 )
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

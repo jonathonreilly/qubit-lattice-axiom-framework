@@ -1,0 +1,65 @@
+loop_slug: audit-unblock-20260619
+block: 104
+mode: campaign
+date: "2026-06-20"
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block104-20260620
+branch: physics-loop/audit-unblock-block104-20260620
+base_ref: origin/main
+base_commit: d53861f0c8b024a7903440356279c79b9f1b0d43
+target_claim_id: koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19
+target_status: bounded-support source-side repair
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+proposal_allowed: false
+repo_lock:
+  mode: degraded_branch_local
+  status_command: python3 scripts/automation_lock.py status
+  failure: "[Errno 13] Permission denied: '/Users/jonreilly'"
+  safety_note: independent temporary worktree and dedicated branch used
+claim_row_after_pipeline:
+  claim_type: bounded_theorem
+  claim_type_author_hint_raw: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  criticality: critical
+  load_bearing_score: 14.022
+  direct_in_degree: 12
+  transitive_descendants: 259
+  queue_index: 17
+  queue_ready: true
+  audit_independence_required: fresh_context_or_stronger_with_cross_confirmation
+source_repair:
+  note_type_before: default_positive_theorem
+  note_type_after: bounded_theorem
+  boundary_added: "bounded bridge-corollary support; no independent derivation of Q=2/3; no audit verdict"
+  runner_checks_added: "T18/T19 verify bounded_theorem source metadata and absence of retained-proposal / independent-closure overclaim phrases"
+verification:
+  py_compile: pass
+  target_runner: "TOTAL: PASS=19 FAIL=0"
+  pipeline: pass
+  precompute_audit_runners: "1 ok, 0 nonzero_exit"
+  audit_packet_script_deps: pass
+  strict_audit_lint: "139 notices, 0 errors"
+  git_diff_check: pass
+review_loop:
+  disposition: "PASS WITH BOUNDED CLAIMS"
+  iterations: 1
+  subagents: "not spawned; user did not explicitly request delegated agents"
+  no_audit_verdicts_applied: true
+  audit_loop_run: false
+hashes:
+  note_sha256: 9ba06361424f8c27c42752686bc5b61171390473680a4342dea9b00d90ff36d4
+  runner_sha256: eff3f154cddc1a4ae96b04bd5b82f01f6345e8705a866423dca933818b7f07c7
+  runner_cache_sha256: a6ac3aa83e4f1e9d00864a7c56c868284f21b8cdbd403fabe51407af6c547537
+  audit_ledger_sha256: 167d6d27556d1775cca96542d522c34309d8645c47c63d52c6d26f645ae86d52
+  audit_queue_sha256: f2b24ff2f9a02d8830a42523e8e3931fd841792cc452f73b767b35e2d2a09f80
+  audit_packet_script_deps_sha256: 85da4d41fb21d7816d80b9c906b264fabb195cec6d610d046b3fd934be40ad16
+pr:
+  status: pending
+  url: pending
+next_exact_action: "Commit Block104, push branch, open review PR, patch packet with PR URL, then continue with a fresh block from current origin/main."

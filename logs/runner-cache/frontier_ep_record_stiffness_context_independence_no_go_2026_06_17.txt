@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ep_record_stiffness_context_independence_no_go_2026_06_17.py
+runner_sha256: 0e5da4bf170c4c513f331ea7244efb51c010bfc99ba6f8da514ee8e4a4675d6a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+EP Record-stiffness context independence no-go
+========================================================================
+[PASS] Record scalar readout is finitely additive on the supplied finite context  (I(S)=|S| over three records)
+[PASS] two completions can share Record data but have different stiffness  (V_A''=m**2; V_B''=lambda*m**2)
+[PASS] inertial rest gaps vary with the supplied stiffness while Record facts stay fixed  (gap_B/gap_A=lambda)
+[PASS] source/inertial ratio is a free supplied coefficient, not a Record consequence  (ratio_A=gamma_A; ratio_B=gamma_B)
+[PASS] same Record model admits WEP and non-WEP source normalizations  (gamma_A=1, gamma_B=2 both preserve finite additivity)
+[PASS] Record additivity constraints contain no continuous stiffness/source symbols  (record labels and continuous parameters are independent)
+[PASS] model-pair contradiction blocks any Record-only unique stiffness or WEP theorem  (lambda=3 changes stiffness; gamma=3 changes source ratio)
+[PASS] source note states no-go boundary without claiming EP closure  (note wording guard)
+[PASS] conditional template cites the independence no-go and stays conditional  (template boundary guard)
+[PASS] no new axiom or Tier-A admission is claimed
+[PASS] audit surfaces are not named as write targets  (read-only audit posture)
+[PASS] positive EP closure is explicitly outside this artifact
+========================================================================
+RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO=TRUE
+EP_SHARED_COUPLING_NOT_DERIVED_FROM_RECORD=TRUE
+PASS=12 FAIL=0
+
+----- stderr -----
+

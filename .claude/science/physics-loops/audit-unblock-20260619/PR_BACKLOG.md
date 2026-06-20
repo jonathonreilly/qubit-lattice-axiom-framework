@@ -1,8 +1,14 @@
 # PR Backlog
 
-PR creation pending for Block111.
+PR creation completed for Block111.
 
-Planned command:
+Opened PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4478
+```
+
+Command used:
 
 ```bash
 gh pr create \

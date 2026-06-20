@@ -233,6 +233,18 @@ theorem about declared imports.
   status. A downstream row that feeds a boundary value through this
   kernel must cite its own retained-grade boundary authority.
 
+### Adjacent threshold-kernel extension
+
+`ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md`
+proves the exact leading-order heavy-threshold continuity kernel on the same
+SU(3) one-loop running surface. That extension is intentionally abstract: it
+uses arbitrary positive threshold scales and proves the matching/composition
+law, while leaving physical threshold placement and higher-loop MSbar
+decoupling constants outside scope. This QCD-low bridge therefore remains a
+`v -> M_Z` transfer-map theorem, but downstream alpha_s repair work can cite
+the 2026-06-18 note for the native threshold-matching kernel instead of
+importing that kernel as textbook machinery.
+
 ## Reuse rule
 
 Downstream lanes may cite this note as the registered one-hop authority

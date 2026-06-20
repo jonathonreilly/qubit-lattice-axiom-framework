@@ -16,6 +16,16 @@ the independent audit lane.
 **Primary runner:** [`scripts/cl3_sommer_scale_from_wilson_chain_2026_05_10_sommer.py`](../scripts/cl3_sommer_scale_from_wilson_chain_2026_05_10_sommer.py)
 **Cached output:** [`logs/runner-cache/cl3_sommer_scale_from_wilson_chain_2026_05_10_sommer.txt`](../logs/runner-cache/cl3_sommer_scale_from_wilson_chain_2026_05_10_sommer.txt)
 
+## 2026-06-18 standalone finite-root bridge
+
+[`ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md`](ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md)
+isolates the finite Wilson/static-potential part of the Sommer-scale question:
+the certificate-native dimensionless root `r0/a =
+sqrt((1.65 - e)/sigma)`. It does not change this note's broader partial
+verdict and does not derive the physical `r0 = 0.5 fm` anchor. Its role is to
+give the reviewer/auditor a clean one-hop bridge for the finite root kernel
+without importing the physical scale-setting convention.
+
 ## Authority disclaimer
 
 This is a source-note proposal. Pipeline-derived status is generated

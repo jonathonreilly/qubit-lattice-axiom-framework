@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18.py
+runner_sha256: 95f3ac40e9763e9b227090c76debf05ac1610885fba89e4f6dba41e7dd841b3b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.47
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette word-count rescaled tail support
+Source-side bounded support only; no audit status is set here.
+No new import: the runner reuses the finite packet already on main.
+packet weights=25
+theta=0.263745855973467
+alpha=0.482546354923910
+theta*alpha=0.127269601426283
+theta*gamma=0.106772973260081
+theta^2=0.069561876543177
+PASS: tail scale separation is visible on the finite packet
+      theta*alpha=0.127269601426283
+finite_scan_q_l1_alpha_constant=5.664730598492354e+01 at k=2
+PASS: old finite scan maximum is reproduced and occurs at k=2
+      best=5.664730598492354e+01, k=2
+high_precision_tail_rows
+  k=19 q_l1=3.91641238973101321e-6 q_l1/alpha^k=4.03317129516350649 delta_l1/theta^(k-1)=1.29822544325571894
+  k=20 q_l1=1.87939769580492291e-6 q_l1/alpha^k=4.01086368815541409 delta_l1/theta^(k-1)=1.29822340624102501
+  k=24 q_l1=1.00410457916496004e-7 q_l1/alpha^k=3.95222810809581134 delta_l1/theta^(k-1)=1.29822162725378713
+  k=30 q_l1=1.25566173623093168e-9 q_l1/alpha^k=3.91472697818150262 delta_l1/theta^(k-1)=1.29822152809899095
+  k=36 q_l1=1.57966298824259254e-11 q_l1/alpha^k=3.90084797305440686 delta_l1/theta^(k-1)=1.29822152685912584
+  k=40 q_l1=8.52234005296532082e-13 q_l1/alpha^k=3.88147938506695016 delta_l1/theta^(k-1)=1.29822152684418144
+PASS: rescaled high-precision rows stay below 4.05 alpha^k on the sampled tail
+      ceiling=4.05
+PASS: sampled high-precision tail ratio is monotone decreasing
+PASS: sampled high-precision tail is far below the k=2 finite-scan envelope
+      tail_max=4.03317129516350649
+double_vs_high_precision k= 2 max_diff=2.220e-15
+PASS: high precision agrees with the existing double path at k=2
+double_vs_high_precision k=10 max_diff=1.101e-20
+PASS: high precision agrees with the existing double path at k=10
+double_vs_high_precision k=18 max_diff=5.726e-21
+PASS: high precision agrees with the existing double path at k=18
+k20_cancellation_probe high_precision_q=1.87939769580492291e-6 double_path_q=2.75618845721462215e-12
+PASS: high precision exposes the k=20 post-leading tail lost by the double path
+PASS: support note exists
+      /private/tmp/cl3-review-openprs-pgPvx7/repo/docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_RESCALED_TAIL_SUPPORT_NOTE_2026-06-18.md
+PASS: support note keeps the closure boundary explicit
+PASS: support note records the sampled tail rows
+PASS: parent note exists
+      /private/tmp/cl3-review-openprs-pgPvx7/repo/docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_ALL_K_REMAINDER_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md
+PASS: parent note links the rescaled tail support without claiming closure
+remaining blocker: analytic monotone/Neumann tail proof for every k beyond the sampled high-precision window.
+TOTAL: PASS=14, FAIL=0
+
+----- stderr -----
+

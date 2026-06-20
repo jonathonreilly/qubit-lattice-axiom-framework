@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
-runner_sha256: 7cde295c37f261aa3d38891ba396605edf00041540f00233c67fc6fe1666d208
+runner_sha256: f458713debd9562537367c12ec5d000afef542fa4e640cffec36c501ddfcb28b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.73
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 
@@ -15,6 +15,9 @@ PASS: W2 physical-registrability identification is quarantined
 PASS: action-level determinant datum is supplied, not derived
 PASS: physical/non-registrable/multi-plaquette exclusions remain non-claims
 PASS: source note is scoped as supplied-context algebra only
+PASS: 2026-06-20 conditional-scoping repair names BOTH supplied premises (i) W2 and (ii) theta_eff entry
+PASS: 2026-06-20 repair keeps downstream strong-CP use explicitly conditional on (i) and (ii)
+PASS: 2026-06-20 repair does NOT derive the two supplied premises
 PASS: source note expected scorecard matches runner count
 
 ------------------------------------------------------------------------------
@@ -73,7 +76,7 @@ PASS: BOUNDARY: fermion-source/insertion observables carry (D+M)^{-1} dependence
 PASS: BOUNDARY: prior additive+even core note is cited as prior statement (currently unaudited); its legs are re-derived self-contained here  [no unaudited dependency is load-bearing for this runner's checks]
 
 ==============================================================================
-TOTAL: PASS=41 FAIL=0
+TOTAL: PASS=44 FAIL=0
 ==============================================================================
 
 ----- stderr -----

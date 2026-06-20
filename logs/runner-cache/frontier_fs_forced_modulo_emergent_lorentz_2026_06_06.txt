@@ -1,14 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py
-runner_sha256: fcfce48c3eb68b9c6b3b0daf6e29c96347104cc872dded1b231112e11fcc91e1
+runner_sha256: 0ec146e9fd08e673c4d663135ae51c7900ca17a83791d6a1e91ae0e3fc6d2549
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ============================================================================================
 FS stress-test: conditional 'forced-modulo emergent-Lorentz + R' route map
 ============================================================================================
+  [PASS] note declares open_gate / conditional-support stress-test
+  [PASS] note no longer declares bounded_theorem claim type
+  [PASS] note has 2026-06-18 open-gate source-scope repair
+  [PASS] note source-scope certificate keeps actual surface open
+  [PASS] note forbids branch-local retained proposal
   [PASS] note has 2026-06-16 post-audit scope firewall
   [PASS] note says runner does not derive realization/Lorentz/R residuals
   [PASS] note declares route map/stress-test, not FS closure or new axiom
@@ -37,13 +42,13 @@ FS stress-test: conditional 'forced-modulo emergent-Lorentz + R' route map
   [PASS] NOT currently forced: the continuum/R route remains open => do not invoke it prematurely
 
 [BLOCK 5] Owner bottom line
-  [PASS] the current FS route adds no new axiom beyond the existing Planck primitive  --  it remains conditional on realization-gate identification + emergent Lorentz + R
+  [PASS] the current FS route adds no new axiom or primitive  --  it remains conditional on realization-gate identification + emergent Lorentz + R
   [PASS] route map only: 'forced-modulo realization gate + emergent-Lorentz + R' is conditional, not closure
   [PASS] if a principle were ever forced, it is graded-locality/parity-superselection, not Record itself
   [PASS] no new axiom invented; all four FS no-gos remain concordant for the STATIC baseline only
 
 ============================================================================================
-SCORECARD:  PASS = 18   FAIL = 0
+SCORECARD:  PASS = 23   FAIL = 0
 ============================================================================================
 
 ----- stderr -----

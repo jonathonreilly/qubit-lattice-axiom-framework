@@ -1,16 +1,52 @@
 # FS Stress-Test: the Fermion Sign is Forced-Modulo Realization Gate + Emergent-Lorentz + R
 
 **Date:** 2026-06-06
-**Claim type:** bounded_theorem (exercise stress-test; reclassifies a prior verdict)
-**Status:** review-loop source proposal. Adds **no axiom**, no fitted input, no audit
-verdict. Reclassifies (does not overturn the static reading of) the same-day
-`SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06`.
+**Claim type:** open_gate / conditional-support stress-test
+**Status authority:** independent audit lane only. This source note adds **no
+axiom**, no fitted input, and no audit verdict. It records a conditional route
+map and finite stress-test for the same-day
+`SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06`, not a closed
+FS-forcing theorem.
 **Primary runner:**
 [`scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py`](../scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py)
 **Cached runner output:**
 [`logs/runner-cache/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.txt`](../logs/runner-cache/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.txt)
 
 ---
+
+## 2026-06-18 Open-Gate Source-Scope Repair
+
+The current audit blocker is the top-level posture, not the finite stress-test
+itself. The runner verifies route-map text, a toy spin-1/2 CCR/CAR
+energy-sign witness, and multi-loop statistics-blindness witnesses. It does
+not derive the realization-gate/external-spacetime identification, emergent
+Lorentz/positivity/microcausality, or a non-circular OS-to-Wightman
+reconstruction `R`.
+
+This repair therefore makes the auditable source claim an `open_gate`
+conditional-support stress-test:
+
+```yaml
+actual_current_surface_status: open
+conditional_surface_status: conditional-support
+target_claim_type: open_gate
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+The surviving statement is exactly:
+
+```text
+if Link-B realization-gate/external-spacetime identification,
+   emergent Lorentz/positivity/microcausality,
+   and non-circular reconstruction R
+are supplied, then the comparator spin-statistics engine selects the
+fermionic sign; meanwhile the finite graph-braid opening is statistics-blind.
+```
+
+No FS closure, new axiom, new primitive, accepted-premise registration, or
+effective-status movement is claimed here.
 
 ## 2026-06-16 Post-Audit Scope Firewall
 
@@ -43,7 +79,7 @@ The repo's `/exercise` skill (5-subagent fan-out + literature) run as a
 is an irreducible admission," under the owner constraint: **introduce no new
 axiom or primitive** unless genuinely forced.
 
-## Refined verdict (runner SCORECARD 15/15 PASS)
+## Refined route map (runner SCORECARD 23/23 PASS)
 
 **The current route adds no new axiom or primitive.** It reclassifies from
 "irreducible admission" to **forced-modulo realization gate + emergent-Lorentz + R**:
@@ -130,10 +166,12 @@ is not a free-standing new-axiom admission).
 
 ## Honest scope
 
-Reclassification + refutation of the multi-loop opening + the cheapest-principle
-classification — **not** a closure of FS (the reconstruction `R` and emergent Lorentz
-remain to be built/audited). No new axiom; literature (Pauli, Streater–Wightman,
-emergent-Lorentz fixed points, Levin–Wen) is comparator only.
+Conditional route-map stress-test + refutation of the multi-loop opening +
+the cheapest-principle classification — **not** a closure of FS (the
+realization-gate/external-spacetime identification, reconstruction `R`, and
+emergent Lorentz remain to be built/audited). No new axiom; literature
+(Pauli, Streater–Wightman, emergent-Lorentz fixed points, Levin–Wen) is
+comparator only.
 
 ## Reprove-and-cite ledger
 

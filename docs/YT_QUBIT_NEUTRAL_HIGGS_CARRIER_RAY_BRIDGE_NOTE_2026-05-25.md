@@ -13,20 +13,23 @@ direct_effective_status_change_allowed_from_this_note: false
 **Primary runner:** `scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py`
 **Generated output:** `outputs/yt_qubit_neutral_higgs_carrier_ray_bridge_2026-05-25.json`
 
-2026-06-18 audit-scope repair: this note no longer claims that the qubit
-readout basis and the electroweak Higgs doublet basis are the same physical
-carrier surface.  The closed content is the algebra core split out in
+2026-06-18 audit-scope repair: this note split the lower-projector algebra out
+from the physical same-surface carrier question. The algebra core is
 [`YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md`](YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md):
 the signed record is affinely equivalent to lower-projector occupation inside
 the one-site qubit algebra, and the lower ray is neutral inside the retained
-one-Higgs electroweak bookkeeping.  The physical same-surface carrier theorem
-connecting those two surfaces remains open.
+one-Higgs electroweak bookkeeping. The separate same-surface carrier repair is
+now supplied by
+[`YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md`](YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md):
+the qubit `P_-` source ray and the neutral EW Higgs ray are the same
+charge-spectral projector `1_0(Q_H)` on the one-Higgs carrier.
 
 The result is useful because the top/W response-ratio route already proves
-that an unknown nonzero source-coordinate scale cancels once a later
-same-surface source is supplied.  It is still not a full Y_T derivation: this
-note preserves algebraic compatibility only, not physical transfer-surface
-response rows or the physical-scale `g_2(v)`.
+that an unknown nonzero source-coordinate scale cancels once a same-surface
+source is supplied. The same-surface carrier side is now supplied, but this is
+still not a full Y_T derivation: this note preserves source-side compatibility
+only, not physical transfer-surface response rows or the physical-scale
+`g_2(v)`.
 
 ## Cited Authority Surface
 
@@ -39,13 +42,17 @@ Load-bearing one-hop authorities:
 - [`EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md`](EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md)
   supplies the retained one-Higgs electroweak doublet bookkeeping:
   `H_0 = (0, v/sqrt(2))^T`, `Y_H = 1/2`, and `Q = T_3 + Y`.
+- [`YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md`](YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md)
+  supplies the same-surface spectral-projector theorem identifying the qubit
+  `P_-` source ray with the neutral EW Higgs ray as
+  `P_neut = 1_0(Q_H)` on the same one-Higgs carrier.
 - [`YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md`](YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md)
   supplies the already-landed support fact that a common top/W response ratio
   is invariant under local source reparameterization.
 - [`YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md`](YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md)
   supplies the source-side repair split: the closed lower-projector algebra is
-  citable bounded support, while the physical same-surface carrier bridge
-  remains open.
+  citable bounded support, while the physical same-surface carrier bridge is
+  supplied by the spectral-projector theorem above.
 
 ## Theorem
 
@@ -116,9 +123,10 @@ one-Higgs EW bookkeeping:
   lower doublet ray <-> neutral ray.
 ```
 
-They do not by themselves identify the qubit readout `P_-` and the EW Higgs
-doublet `P_-` as the same physical carrier.  The same-surface carrier theorem
-required for that identification remains open.
+By themselves, those coordinate facts do not identify the qubit readout
+`P_-` and the EW Higgs doublet `P_-` as the same physical carrier. The separate
+same-surface theorem cited above supplies that missing step by functional
+calculus of `Q_H`: `P_- = P_neut = 1_0(Q_H)` on the one-Higgs carrier.
 
 For a local radial coordinate `s`,
 
@@ -134,8 +142,8 @@ dH/ds = (0, v'(s)/sqrt(2))^T,
 
 which stays in the same EW lower ray and is annihilated by `Q`.  The unknown
 Jacobian `v'(s)` is exactly the kind of source-coordinate scale already shown
-to cancel in the same-source top/W response ratio, conditional on a later
-same-surface source theorem.
+to cancel in the same-source top/W response ratio, conditional on the
+same-surface source theorem and a later top-response row.
 
 ## What This Closes
 
@@ -149,12 +157,16 @@ signed-record algebra:
 one-Higgs EW bookkeeping:
   P_- H_0 = H_0
   Q H_0 = 0.
+
+same-surface carrier repair:
+  P_- is the charge-spectral projector 1_0(Q_H) on the one-Higgs carrier
 ```
 
 This is not a fitted choice and it does not use observed masses.  It is finite
-Pauli/projector algebra plus one-Higgs EW neutral-ray bookkeeping.  It does
-not retire the same-surface carrier theorem that would be needed to say the
-qubit readout source is physically the neutral EW radial source.
+Pauli/projector algebra plus one-Higgs EW neutral-ray bookkeeping. The
+same-surface carrier repair is source-side support only; it does not supply a
+top coefficient, a top transfer-response row, scalar normalization, or
+physical-scale `g_2(v)`.
 
 ## What This Still Does Not Close
 
@@ -166,8 +178,6 @@ This note does not derive positive retained `Y_T` closure.  It does not claim:
 - strict `C_ss/C_sH/C_HH` source-Higgs pole rows;
 - canonical scalar LSZ normalization;
 - retained physical-scale `g_2(v)`;
-- a retained same-surface carrier theorem identifying qubit readout `P_-` with
-  EW Higgs doublet `P_-`;
 - the one-Higgs top Yukawa carrier as retained authority;
 - hypercharge uniqueness as retained authority;
 - `m_t`, `y_t`, or `v = 246 GeV`.
@@ -178,10 +188,10 @@ The current positive route is now narrower:
 closed support:
   signed record -> P_- occupation inside the qubit source algebra
   + EW lower ray is neutral inside the one-Higgs bookkeeping
-  + source-coordinate scale cancellation if a later same-surface source is supplied
+  + P_- is the charge-spectral projector 1_0(Q_H) on the same EW carrier
+  + source-coordinate scale cancellation for a same-surface top/W ratio
 
 still open:
-  same-surface theorem identifying the qubit source ray with the EW radial source
   top coefficient theorem or direct top response measurement
   + retained top carrier / hypercharge support
   + retained or bounded physical-scale g_2 bridge
@@ -223,11 +233,10 @@ hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
 proposal_allowed_reason: |
-  The lower-projector algebra and EW neutral-ray bookkeeping close as bounded
-  support, but the same-surface theorem identifying the qubit source ray with
-  the EW radial source remains open, as do the top coefficient, retained
+  The lower-projector algebra, EW neutral-ray bookkeeping, and same-surface
+  carrier repair close as bounded support, but the top coefficient, retained
   one-Higgs/top carrier authority, retained hypercharge authority, and
-  physical-scale g_2 authority.
+  physical-scale g_2 authority remain open.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -238,10 +247,10 @@ This packet does not use `H_unit`, `yt_ward_identity`, `y_t_bare`, observed top/
 observed masses, `alpha_LM`, plaquette/u0, package-v, Planck, alpha_s, or a
 fitted selector as load-bearing input.
 
-It also does not claim that the qubit readout basis and the EW Higgs doublet
-basis are the same physical source surface; future downstream uses must cite a
-separate same-surface carrier theorem before treating the signed record as a
-physical neutral EW/Higgs source.
+It also does not claim that the same-surface carrier repair is a top-response
+or physical-scale theorem; future downstream uses must still cite separate
+top-response, scalar-normalization, and `g_2(v)` authority before treating this
+support layer as a positive `Y_T` derivation.
 
 ## Verification
 

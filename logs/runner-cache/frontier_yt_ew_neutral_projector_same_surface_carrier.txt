@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py
+runner_sha256: bbe0032655d273f14abba4b6fd2bf766e35a77f100682a4d05fd075c4028d4f9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+========================================================================================
+Y_T EW NEUTRAL-PROJECTOR SAME-SURFACE CARRIER THEOREM
+========================================================================================
+
+Part 1: authority surface and source boundary
+[PASS] docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md exists
+[PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
+[PASS] docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-06-05.md exists
+[PASS] docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] note contains required marker: Claim
+[PASS] note contains required marker: Cited Authority Surface
+[PASS] note contains required marker: Frame Invariance
+[PASS] note contains required marker: What This Closes
+[PASS] note contains required marker: What This Does Not Close
+[PASS] EW Higgs source contains marker: Y_H = 1/2
+[PASS] EW Higgs source contains marker: H_0 = (0, v/sqrt(2))^T
+[PASS] EW Higgs source contains marker: Q = T_3 + Y
+[PASS] source-action packet contains marker: epsilon_x in {-1, +1}
+[PASS] source-action packet contains marker: source-coupled site-diagonal local action
+[PASS] source-action packet contains marker: support only
+[PASS] source-coordinate gate contains marker: same local source coordinate
+[PASS] source-coordinate gate contains marker: ratio is unchanged
+[PASS] source-coordinate gate contains marker: same-source top/W ratio
+[PASS] minimal axioms supply one-qubit algebra language
+[PASS] minimal axioms do not supply particle content
+[PASS] minimal axioms do not supply gauge group
+[PASS] note contains independent-audit boundary
+[PASS] new theorem explicitly does not derive the Higgs sector from minimal axioms
+
+Part 2: charge spectral projectors on the EW doublet
+[PASS] Q_H = diag(1,0): Matrix([[1, 0], [0, 0]])
+[PASS] P_ch is a projector: Matrix([[1, 0], [0, 0]])
+[PASS] P_neut is a projector: Matrix([[0, 0], [0, 1]])
+[PASS] P_ch and P_neut are orthogonal: Matrix([[0, 0], [0, 0]])
+[PASS] P_ch + P_neut = I: Matrix([[1, 0], [0, 1]])
+[PASS] P_ch equals Pauli P_+: Matrix([[1, 0], [0, 0]])
+[PASS] P_neut equals Pauli P_-: Matrix([[0, 0], [0, 1]])
+[PASS] P_neut is the zero spectral projector of Q_H: Matrix([[0, 0], [0, 0]])
+[PASS] P_ch is the unit spectral projector of Q_H: Matrix([[1, 0], [0, 0]])
+
+Part 3: neutral ray and radial tangent
+[PASS] P_neut fixes H_0: Matrix([[0], [sqrt(2)*v/2]])
+[PASS] P_ch kills H_0: Matrix([[0], [0]])
+[PASS] Q_H annihilates H_0: Matrix([[0], [0]])
+[PASS] charged upper ray has charge 1: Matrix([[1], [0]])
+[PASS] neutral nullspace is one-dimensional: [Matrix([
+[0],
+[1]])]
+[PASS] P_neut fixes H(s): Matrix([[0], [sqrt(2)*v(s)/2]])
+[PASS] P_neut fixes dH/ds: Matrix([[0], [sqrt(2)*Derivative(v(s), s)/2]])
+[PASS] Q_H annihilates dH/ds: Matrix([[0], [0]])
+
+Part 4: signed source equals neutral occupation source up to affine coordinate
+[PASS] epsilon_H = 2 Q_H - I: Matrix([[1, 0], [0, -1]])
+[PASS] epsilon_H = I - 2 P_neut: Matrix([[1, 0], [0, -1]])
+[PASS] epsilon_H equals Pauli sigma_z: Matrix([[1, 0], [0, -1]])
+[PASS] exp(h epsilon_H) weights equal exp(h) exp(-2h P_neut) weights: Matrix([[exp(h)], [exp(-h)]])
+[PASS] normalized source families are identical: Matrix([[exp(2*h)/(exp(2*h) + 1)], [1/(exp(2*h) + 1)]])
+[PASS] source-coordinate change is j=-2h
+
+Part 5: unitary frame invariance
+[PASS] frame 1: transformed Q remains a projector
+[PASS] frame 1: transformed neutral projector is I-Q
+[PASS] frame 1: transformed epsilon is 2Q-I
+[PASS] frame 1: transformed projectors remain orthogonal
+[PASS] frame 2: transformed Q remains a projector
+[PASS] frame 2: transformed neutral projector is I-Q
+[PASS] frame 2: transformed epsilon is 2Q-I
+[PASS] frame 2: transformed projectors remain orthogonal
+
+Part 6: target bridge wiring and firewalls
+[PASS] target bridge cites the new same-surface theorem
+[PASS] target bridge names the spectral-projector repair
+[PASS] target bridge keeps no-positive-Y_T boundary
+[PASS] new theorem avoids overclaim: 'This note derives y_t'
+[PASS] new theorem avoids overclaim: 'retained Y_T closure has been obtained'
+[PASS] new theorem avoids overclaim: 'observed top/W/Z/Higgs masses as proof inputs'
+[PASS] new theorem avoids overclaim: 'PDG comparator as proof input'
+[PASS] new theorem avoids overclaim: 'fitted selector as proof input'
+[PASS] new theorem contains firewall marker: does not derive positive Y_T closure
+[PASS] new theorem contains firewall marker: no `H_unit`
+[PASS] new theorem contains firewall marker: no `yt_ward_identity`
+[PASS] new theorem contains firewall marker: no `y_t_bare`
+[PASS] new theorem contains firewall marker: no `alpha_LM`
+[PASS] new theorem contains firewall marker: no plaquette/u0 input
+[PASS] new theorem contains firewall marker: no PDG comparator
+
+wrote outputs/yt_ew_neutral_projector_same_surface_carrier_2026-06-18.json
+SUMMARY: PASS=71 FAIL=0
+
+----- stderr -----
+

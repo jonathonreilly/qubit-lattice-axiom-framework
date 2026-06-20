@@ -38,6 +38,14 @@ authority that no hidden `(C1)` route remains.
 The safe residue is route-local only: use the separately audited/narrow
 route-no-go cluster for route-local boundaries, not this wrapper.
 
+## 2026-06-18 registered-runner contract
+
+The registered runner for this archived row is a firewall witness only. It
+verifies this note's current-surface certificate, retraction, and archive
+boundary. It must not be used to re-prove the historical global-exhaustion
+wrapper. A PASS does not certify global exhaustion, close `(G1)`, `(G2)`, or
+`(C1)`, or provide Axiom* minimality support.
+
 ## 0. Historical context (retracted)
 
 Cycles 2–5 closed the audit's `A1`, `A2`, `A4` frames negatively

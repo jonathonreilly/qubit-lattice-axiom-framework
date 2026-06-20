@@ -236,7 +236,7 @@ short algebraic bridge): a retained upstream theorem deriving the
 physical charged-lepton observable carrier/readout and the
 `D_red = I_2` normalization from retained upstream framework inputs.
 
-Four candidate supplier notes already exist on disk in this branch;
+Four candidate supplier notes already exist on disk in this repo;
 their respective load-bearing inferences target the two halves of the
 audit-named bridge (carrier identification and baseline normalization)
 on the admitted normalized reduced carrier used in this note. They are
@@ -267,8 +267,13 @@ propagate retention to this row:
    map `L : R^4 → Diag_3(R)`, `L(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}` on
    the retained `Γ_1 / T_1` grammar. Establishes that the readout
    map factors through the species-resolving diagonal carrier with a
-   unique unreachable slot, supplying the algebraic skeleton of the
-   two-generator block reduction used in this note's Sections 1–2.
+   unique unreachable slot, and now proves the first-live
+   kernel-invariance substep inside that admitted grammar: every
+   scalar selector admitted as first-live factors through `L` and is
+   constant on `span(e_z)`. This supplies the algebraic skeleton of
+   the two-generator block reduction used in this note's Sections
+   1–2. It still does not prove that the physical charged-lepton
+   selector must belong to that first-live grammar.
 4. `KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`
    — exact uniqueness of the scale-free `C_3`-invariant selector
    ratio on the admitted second-order returned carrier (no nontrivial
@@ -293,8 +298,9 @@ independently accepted, would be:
 > diagonal carrier; the source-derivative content of any admissible
 > scalar generator on a real-D block coincides with that of
 > `W = log|det(D+J)| - log|det D|` up to overall scale; the readout
-> map `L` factors through the species-resolving diagonal target; and
-> the normalized scale-free selector on the admitted carrier is
+> map `L` factors through the species-resolving diagonal target, so
+> first-live scalars are kernel-invariant on `span(e_z)`; and the
+> normalized scale-free selector on the admitted carrier is
 > already unique. The reduced two-generator block carrier with
 > baseline `D_red = I_2` is therefore the framework-forced reading,
 > rather than a free admitted choice.
@@ -322,8 +328,9 @@ coarse-grained readout of the retained finite `C3` generation data, not the
 retained physical charged-lepton carrier itself. The current Record/Quantum
 axioms do not supply the missing readout context, the cited real-D uniqueness
 theorem starts after its block-family class is supplied, the readout
-factorization theorem keeps admissibility-implies-constancy conditional, and
-the selector theorem starts after the second-order carrier is admitted.
+factorization theorem closes first-live kernel-invariance only inside its
+admitted first-live grammar, and the selector theorem starts after the
+second-order carrier is admitted.
 
 It also records the normalization boundary:
 

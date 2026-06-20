@@ -167,7 +167,7 @@ The audit-stated repair target is a `missing_bridge_theorem`
 derivation that the physical charged-lepton selector is the source-free
 (`K = 0`) point on the normalized second-order reduced carrier.
 
-Four candidate supplier notes already exist on disk in this branch.
+Four candidate supplier notes already exist on disk in this repo.
 Their respective load-bearing inferences target the carrier-identification
 and source-law halves of the audit-named bridge on the same admitted
 normalized reduced carrier that the present batch sits on. They are
@@ -199,8 +199,12 @@ one supplier is independently determined by the audit lane.
    `L : R^4 → Diag_3(R)`, `L(W) = P_{T_1} Γ_1 W Γ_1 P_{T_1}` on the
    retained `Γ_1 / T_1` grammar. Establishes that the readout map
    factors through the species-resolving diagonal carrier with a
-   unique unreachable slot, supplying the algebraic skeleton of the
-   reduced two-block carrier used in the batch.
+   unique unreachable slot, and now proves the first-live
+   kernel-invariance substep inside that admitted grammar: every
+   scalar selector admitted as first-live factors through `L` and is
+   constant on `span(e_z)`. This supplies the algebraic skeleton of
+   the reduced two-block carrier used in the batch, while leaving the
+   physical-selector-membership bridge open.
 
 4. `KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`
    — exact uniqueness of the scale-free `C_3`-invariant selector
@@ -216,7 +220,8 @@ The combined load-bearing inference of this chain is:
 > diagonal carrier; the source-derivative content of any admissible
 > scalar generator on a real-`D` block coincides with that of
 > `W = log|det(D + J)| - log|det D|`; the readout map factors through
-> the species-resolving diagonal target; and the normalized
+> the species-resolving diagonal target, so first-live scalars are
+> kernel-invariant on `span(e_z)`; and the normalized
 > scale-free selector on the admitted carrier is unique. The
 > reduced two-generator block carrier with baseline `D_red = I_2`
 > and the source-free point `K = 0` is then the framework-forced

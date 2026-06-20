@@ -11,20 +11,20 @@ It is not a physics claim surface and should not be edited by hand.
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3445 |
-| Applied audit verdicts | 1588 |
-| Retained-grade rows, including boxed decorations | 1492 |
-| Retained positive theorems | 218 |
-| Retained no-go rows | 215 |
-| Retained bounded rows | 999 |
-| Boxed decorations under retained parents | 60 |
-| Open gates | 36 |
-| Unaudited rows | 1531 |
+| Ledger rows | 3467 |
+| Applied audit verdicts | 1508 |
+| Retained-grade rows, including boxed decorations | 1438 |
+| Retained positive theorems | 211 |
+| Retained no-go rows | 211 |
+| Retained bounded rows | 960 |
+| Boxed decorations under retained parents | 56 |
+| Open gates | 34 |
+| Unaudited rows | 1631 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 23 |
-| Audited renaming rows | 25 |
-| Audited numerical-match rows | 12 |
-| Citation cycles detected | 8 |
+| Audited conditional rows | 8 |
+| Audited renaming rows | 22 |
+| Audited numerical-match rows | 7 |
+| Citation cycles detected | 7 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -33,43 +33,40 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1535 |
-| Ready rows | 60 |
-| Cycle-break targets | 8 |
-| Critical pending | 315 |
-| High pending | 274 |
-| Medium pending | 437 |
-| Leaf pending | 509 |
+| Total pending rows | 1636 |
+| Ready rows | 90 |
+| Cycle-break targets | 7 |
+| Critical pending | 322 |
+| High pending | 291 |
+| Medium pending | 475 |
+| Leaf pending | 548 |
 
 Next ready rows by queue order:
 
-- [`qcd_low_energy_running_bridge_note_2026-05-01`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) - critical; unaudited
-- [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - critical; unaudited
-- [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
-- [`koide_q_delta_linking_relation_theorem_note_2026-04-20`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md) - critical; unaudited
-- [`lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
-- [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
-- [`hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - critical; audit_in_progress
-- [`hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18`](../../docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md) - high; unaudited
+- [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; unaudited
+- [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; unaudited
+- [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
+- [`abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`](../../docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md) - critical; unaudited
+- [`quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) - critical; unaudited
+- [`observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
+- [`observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md) - critical; unaudited
+- [`quark_route2_exact_readout_map_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **425**.
+- Non-retained-grade cited rows in publication tables: **435**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 175 |
-| high | `unaudited` | 154 |
-| medium | `unaudited` | 86 |
-| critical | `audited_numerical_match` | 3 |
+| critical | `unaudited` | 172 |
+| high | `unaudited` | 164 |
+| medium | `unaudited` | 94 |
 | critical | `open_gate` | 2 |
-| critical | `audited_conditional` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
-| medium | `audited_numerical_match` | 1 |
 | medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
@@ -78,19 +75,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 3587 |
-| Critical nodes | 584 |
-| High nodes | 516 |
-| Medium nodes | 940 |
-| Leaf nodes | 1547 |
+| Citation-graph nodes | 3612 |
+| Critical nodes | 570 |
+| High nodes | 530 |
+| Medium nodes | 957 |
+| Leaf nodes | 1555 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1678 descendants; score 152.713
-- `three_generation_observable_theorem_note` - critical; 1059 descendants; score 67.050
-- `graph_first_su3_integration_note` - critical; 1431 descendants; score 60.984
-- `observable_principle_from_axiom_note` - critical; 917 descendants; score 60.342
-- `plaquette_self_consistency_note` - critical; 1023 descendants; score 54.000
-- `minimal_axioms_2026-05-03` - critical; 1037 descendants; score 49.520
-- `key_terminology` - critical; 1130 descendants; score 47.643
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 929 descendants; score 45.361
+- `minimal_axioms` - critical; 1694 descendants; score 157.227
+- `three_generation_observable_theorem_note` - critical; 1026 descendants; score 67.004
+- `graph_first_su3_integration_note` - critical; 1437 descendants; score 62.490
+- `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
+- `plaquette_self_consistency_note` - critical; 1028 descendants; score 54.007
+- `minimal_axioms_2026-05-03` - critical; 1041 descendants; score 48.525
+- `key_terminology` - critical; 1134 descendants; score 46.648
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 897 descendants; score 44.311

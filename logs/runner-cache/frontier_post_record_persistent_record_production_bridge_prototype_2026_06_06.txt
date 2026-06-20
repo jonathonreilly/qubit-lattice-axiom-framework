@@ -3,7 +3,7 @@ runner: scripts/frontier_post_record_persistent_record_production_bridge_prototy
 runner_sha256: 229b0645950559d7252b41b6150d067fd10e309104cd9b36d19c0a134ac33a0c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.91
+elapsed_sec: 0.87
 status: ok
 ----- stdout -----
 
@@ -36,8 +36,8 @@ PASS docs/PERSISTENT_RECORD_MATCHED_COMPARE_NOTE.md contains: matched bounded sl
 ------------------------------------------------------------------------------
 Production-row checks
 ------------------------------------------------------------------------------
-PASS persistent-record production row count is current snapshot :: {'persistent_record_overlap_kernel_note', 'persistent_record_matched_compare_note', 'persistent_record_refinement_note'}
-PASS persistent-record production row ids match :: {'persistent_record_overlap_kernel_note', 'persistent_record_matched_compare_note', 'persistent_record_refinement_note'}
+PASS persistent-record production row count is current snapshot :: {'persistent_record_refinement_note', 'persistent_record_overlap_kernel_note', 'persistent_record_matched_compare_note'}
+PASS persistent-record production row ids match :: {'persistent_record_refinement_note', 'persistent_record_overlap_kernel_note', 'persistent_record_matched_compare_note'}
 
 ------------------------------------------------------------------------------
 Supplied bridge checks

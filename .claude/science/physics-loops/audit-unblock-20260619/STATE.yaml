@@ -1,0 +1,89 @@
+loop_slug: audit-unblock-20260619
+block: 100
+updated_utc: "2026-06-20T19:56:41Z"
+mode: campaign
+objective: "Unblock the audit queue by making source-side repairs only, then opening review PRs."
+branch: physics-loop/audit-unblock-block100-20260620
+worktree: /private/tmp/cl3-physics-loop-audit-unblock-block100-20260620
+base_ref: origin/main
+base_commit: 62a0ca823aecd5138f00b2b49919d9935dcbfe62
+remote: https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git
+target_claim_id: post_record_persistent_record_production_bridge_prototype_2026-06-06
+target_note: docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md
+target_runner: scripts/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.py
+active_route: "source-side claim-type boundary for supplied persistent-record production bridge prototype"
+actual_current_surface_status: bounded-support
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+automation_lock:
+  mode: degraded_branch_local
+  command: python3 scripts/automation_lock.py status
+  result: "error: [Errno 13] Permission denied: '/Users/jonreilly'"
+files_touched:
+  - docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md
+  - logs/runner-cache/frontier_post_record_persistent_record_production_bridge_prototype_2026_06_06.txt
+  - logs/runner-cache/audit_packet_script_deps.txt
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/audit_dispatch_queue.json
+  - docs/audit/data/audit_packet_script_deps.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/cycle_inventory.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/load_bearing_summary.json
+  - docs/audit/data/runner_classification.json
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/AUDIT_DISPATCH_QUEUE.md
+  - docs/repo/FRONT_DOOR_STATUS.md
+  - docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/FULL_CLAIM_LEDGER_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+  - docs/publication/ci3_z3/PUBLICATION_MATRIX_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md
+target_before:
+  claim_type: positive_theorem
+  claim_type_author_hint_raw: "methodology / positive theorem"
+  claim_type_provenance: audited
+  audit_status: audited_clean
+  effective_status: retained
+  note_hash: 87c90e756589a9709b39d69a1a770325dd7c82b9ce3b441a1177b832db352248
+target_after:
+  claim_type: bounded_theorem
+  claim_type_author_hint_raw: bounded_theorem
+  claim_type_author_hint: bounded_theorem
+  claim_type_provenance: author_hint
+  audit_status: unaudited
+  effective_status: unaudited
+  effective_status_reason: awaiting_audit
+  note_hash: 064fe90546825c8afebf9f024c305b0c21efb3ebe2b4fdc3c0d78887b5ab2de1
+  queue_reason: unaudited
+  ready: true
+  audit_independence_required: any_non_self
+verification:
+  py_compile: pass
+  target_runner: "PASS=44 FAIL=0"
+  precompute_target_runner: pass
+  audit_packet_script_deps: pass
+  run_pipeline: pass
+  audit_lint_strict: "pass; 139 notices; 0 errors"
+hashes:
+  note_sha256: 064fe90546825c8afebf9f024c305b0c21efb3ebe2b4fdc3c0d78887b5ab2de1
+  runner_sha256: 229b0645950559d7252b41b6150d067fd10e309104cd9b36d19c0a134ac33a0c
+  runner_cache_sha256: 593368b28aa3acb3e5737dc2be6aec38f2480505e092a0083ce989302b0b928f
+  script_deps_log_sha256: f233858c0bd62773f0f6606bbcf2460919c4c0c88cdc2802c66ed39a95d98434
+  audit_ledger_sha256: 0b33b327a0bfa366638bf70e572bd9e304fcf4913ccc425f6a9b89918a2ab301
+  audit_queue_sha256: a4e9e187e304fc4c588ac4ddfe98931e68f44601a0300c9b5b5b578635a7a0ec
+review_disposition: "local source-boundary checks pass; independent review requested by PR"
+pr_status: pending_feature_branch_push
+pr_url: null
+next_exact_action: "Commit, push this branch, open one review PR, record the PR URL, then pivot to the next source-boundary candidate from current origin/main."
+

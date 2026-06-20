@@ -1,13 +1,20 @@
 {
-  "audit_required_before_effective_status_change": true,
-  "claim": "Y_T source-action primitive signed RN source record equals native LSP Pauli signed readout",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "bridge_authorities": [
+    "MINIMAL_AXIOMS_2026-06-05.md",
+    "LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
+    "YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md"
+  ],
+  "claim": "Y_T source-action signed RN source record is the coordinate function on the native LSP Pauli joint spectral readout space",
   "claim_type_author_hint": "bounded_theorem",
   "direct_effective_status_change_allowed_from_this_note": false,
   "fail_count": 0,
-  "generated_at": "2026-05-24T00:00:00Z",
-  "pass_count": 53,
+  "generated_at": "2026-06-17T00:00:00Z",
+  "pass_count": 66,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "Readout carrier support only; source/action authority, canonical O_H, scalar LSZ, strict pole rows or W/Z bypass, and matching/running remain open.",
-  "source_boundary": "signed_record_readout_support_only",
+  "proposal_allowed_reason": "Exact signed-record readout support only; source/action authority as a neutral EW/Higgs surface, canonical O_H, scalar LSZ, strict pole rows or W/Z bypass, and matching/running remain open.",
+  "source_boundary": "signed_record_readout_exact_support_only",
+  "source_support_label": "exact-support",
   "status_authority": "independent_audit_lane_only"
 }

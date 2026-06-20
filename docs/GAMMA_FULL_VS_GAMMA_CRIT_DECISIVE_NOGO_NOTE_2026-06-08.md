@@ -89,6 +89,29 @@ no-go **stronger**.
   and **not** a proof of framework inconsistency. It is a computed bound that the named
   attractor exponent does not reach `γ_crit` for an asymptotically-free gauge sector.
 
+## 2026-06-18 audit-unlock hardening
+
+This packet is an audit candidate for one named sub-blocker of
+`EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md`: the
+physical anomalous-dimension / Lorentz-violation-bound sufficiency comparison.
+It does **not** prove the framework-specific interacting one-loop velocity RG,
+does **not** derive the spatial-only power-divergent mixing coefficient, and
+does **not** choose the physical `ξ = 1` versus `ξ → ∞` surface.
+
+The attractor note is the trace target for this no-go, not proof authority for
+a stronger positive claim. The proof checked here consumes the displayed
+supplied velocity-RG matrix, the `SU(3)` colour factors, the asymptotic-freedom
+scope, and comparator LV thresholds. If this no-go passes independent audit, it
+should prune only the `ξ → ∞` flow-suppression escape route: the interacting
+Lorentz parent remains conditional until the one-loop RG derivation,
+spatial-power-divergence coefficient, and physical-surface selector are supplied
+or separately closed.
+
+This hardening adds no new axiom, primitive, Tier-A admission, audit verdict, or
+status change. It exists to make the negative route audit-ready and to avoid
+re-auditing the parent as if this computed no-go were a retained positive
+Lorentz-naturalness theorem.
+
 ## No-go discipline gate
 
 - **N1 Alternative routes:** tested or bounded routes are the physical one-loop

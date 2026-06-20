@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_primitive_boundary_check_2026_06_09.py
+runner_sha256: b74fe9b92ba386447a4883f590a99d800ac4417ffad34577c44bdb42ce89b0f6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+==============================================================================
+KINETIC-ISOTROPY PRIMITIVE BOUNDARY CHECK
+==============================================================================
+Scope: primitive registry/source firewall only; no downstream theorem.
+
+[PASS] source note exists -- docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] policy exists -- docs/audit/AXIOM_MINIMALITY_POLICY.md
+[PASS] registry exists -- docs/audit/data/axiom_premise_nodes.json
+[PASS] source type is meta
+[PASS] source declares framework primitive status
+[PASS] registry canonical ids include kinetic primitive
+[PASS] registry node exists
+[PASS] registry current path points at source note -- docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+[PASS] registry note records dimensionless structural premise
+[PASS] registry note forbids dynamical-content laundering
+[PASS] policy records owner approval section
+[PASS] policy records kinetic primitive approval
+[PASS] policy records no-laundering boundary
+[PASS] policy records emergent-time boundary
+[PASS] note states c_t = c_s
+[PASS] note states OS0/hypercubic graining
+[PASS] note says no dimensionless dynamical content
+[PASS] note says it is not a fourth spatial dimension
+[PASS] note says it does not add or amend an axiom
+[PASS] note says it does not re-axiomatize time
+[PASS] note says no audit verdict changes
+[PASS] note cites premise registry
+[PASS] note cites purity guard
+[PASS] forbidden overclaim absent: m_t\s*=
+[PASS] forbidden overclaim absent: y_t\s*=
+[PASS] forbidden overclaim absent: mixing angle is derived
+[PASS] forbidden overclaim absent: retained Lorentz restoration
+[PASS] forbidden overclaim absent: physical observable is supplied
+[PASS] forbidden overclaim absent: dimensionless dynamical quantity is supplied
+[PASS] axiom/primitive purity guard passes --   OK   realized_state_primitive (docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md): pure premise content
+
+SUMMARY: KINETIC ISOTROPY PRIMITIVE BOUNDARY PASS=30 FAIL=0
+
+----- stderr -----
+

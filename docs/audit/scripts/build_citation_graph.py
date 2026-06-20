@@ -9,7 +9,8 @@ Walks every .md file under docs/ (excluding docs/audit/), extracts:
   - cited authorities (markdown links to other .md files in docs/)
   - primary runner script path
   - helper runner script paths (transitive `from scripts.X import` imports
-    of the primary runner; needed by the audit packet builder so the
+    and `_frontier_loader.load_frontier(..., "X.py")` dynamic loads of the
+    primary runner; needed by the audit packet builder so the
     auditor sees the full source chain and doesn't fall back to class C
     on missing-helper grounds)
   - note hash (sha256 of body)
@@ -310,6 +311,27 @@ def _parse_script_imports(script_path: Path) -> set[str]:
                     helpers.add(alias.name.removeprefix("scripts."))
                 else:
                     helpers.add(alias.name.split(".")[0])
+        elif isinstance(node, ast.Call):
+            func_name = ""
+            if isinstance(node.func, ast.Name):
+                func_name = node.func.id
+            elif isinstance(node.func, ast.Attribute):
+                func_name = node.func.attr
+            if func_name != "load_frontier":
+                continue
+
+            filename_node = None
+            if len(node.args) >= 2:
+                filename_node = node.args[1]
+            else:
+                for kw in node.keywords:
+                    if kw.arg == "filename":
+                        filename_node = kw.value
+                        break
+            if isinstance(filename_node, ast.Constant) and isinstance(filename_node.value, str):
+                helper_path = Path(filename_node.value)
+                if helper_path.suffix == ".py":
+                    helpers.add(helper_path.stem)
     return {h for h in helpers if (scripts_dir / f"{h}.py").exists()}
 
 

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py
+runner_sha256: 000218b0644fde19da4ea60d12628846f3d3c8f0279d4fef64b896fa3093c34b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+== T1: current supplier status and scope ==
+[PASS] hypercharge_identification_note is retained-grade on this branch base  -- retained_bounded
+[PASS] hypercharge_identification_note remains a theorem supplier  -- bounded_theorem
+[PASS] ledger scope includes the (2,3)/(2,1) LH-doublet surface
+[PASS] ledger scope explicitly keeps full-spectrum boundaries
+== T2: source-note wiring and guardrails ==
+[PASS] ABJ note cites the new P-HY supplier wiring note
+[PASS] ABJ note routes B1 through retained-bounded P-HY supplier
+[PASS] ABJ note keeps P-COMP and P-REC open
+[PASS] ABJ note refuses to widen P-HY to full physical hypercharge
+[PASS] supplier note names the exact target blocker
+[PASS] supplier note forbids new axioms or admissions
+[PASS] supplier note keeps remaining ABJ blockers explicit
+[PASS] hypercharge note supplies the bounded LH identification surface
+[PASS] hypercharge note declares normalization and full-spectrum boundaries
+== T3: exact B1 anomaly arithmetic from supplied LH Y values ==
+[PASS] Tr[Y] LH = 0  -- 0
+[PASS] Tr[Y^3] LH = -16/9  -- -16/9
+[PASS] Tr[SU(3)^2 Y] LH = 1/3  -- 1/3
+[PASS] Tr[SU(2)^2 Y] LH = 0  -- 0
+[PASS] Tr[SU(3)^3] LH = 2  -- 2
+[PASS] B1 still has exactly three nonzero ABJ-relevant traces
+== T4: path and status firewall ==
+[PASS] new source paths avoid authority surface docs/audit/
+[PASS] new source paths avoid authority surface docs/publication/ci3_z3/
+[PASS] new source paths avoid authority surface docs/repo/FRONT_DOOR_STATUS.md
+[PASS] new source paths avoid authority surface docs/repo/LANE_REGISTRY.yaml
+[PASS] new source paths avoid authority surface docs/repo/ACTIVE_REVIEW_QUEUE.md
+[PASS] new source paths avoid authority surface docs/work_history/repo/LANE_STATUS_BOARD.md
+[PASS] supplier note uses bounded-support status rather than bare retained
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

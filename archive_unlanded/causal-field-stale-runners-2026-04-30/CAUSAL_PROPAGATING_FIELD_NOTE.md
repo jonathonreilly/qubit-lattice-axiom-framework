@@ -31,6 +31,11 @@ The current source for the finite configured replay is
 [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
 with primary runner
 [`scripts/causal_propagating_field.py`](../../scripts/causal_propagating_field.py).
+The source-side bridge
+[`docs/CAUSAL_PROPAGATING_FIELD_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md)
+records the re-audit handoff boundary: this archived note remains failed
+historical evidence, and the live packet is the only narrowed source target for
+any future re-audit.
 That live packet explicitly does not restore the archived `0.63 / 0.45`
 positive table. This archived note must not be listed as live evidence for
 downstream causal-field, Shapiro, diamond/NV, or retarded-field claims.

@@ -71,6 +71,15 @@ The block-total Frobenius result remains independent bounded support in its
 own source note, but it is not a standalone full physical scalar-measure
 closure theorem here.
 
+## 2026-06-20 scope-boundary repair
+
+The Path A failure below is deliberately route-local. It shows that the
+displayed spectral-observable route from the retained observable principle
+does not derive the scalar-lane `SO(2)` quotient. It does not claim to exhaust
+every alternative attack route against that quotient; other routes remain
+open, not closed. No derived value, audit verdict, ledger status, publication
+status, or repo-wide authority surface is changed by this source repair.
+
 ---
 
 ## 0. Why this note exists
@@ -91,13 +100,12 @@ structural open import behind the MRU closure route for Koide kappa:
 > not the physical claim that the lane observables **factor through**
 > that radius.
 
-That is a correct audit finding. This note accepts it, attempts the
-retained-framework derivation (Path A), documents why it does not close,
-and formally repositions the stack so the operator-side `kappa = 2`
-statement is carried only as the spectrum-operator bridge corollary of
-spectrum-side `Q = 2/3`. The block-total Frobenius branch remains
-bounded algebraic context until a retained canonical scalar-measure
-bridge exists.
+That is a correct audit finding. This note accepts it, attempts the displayed
+framework derivation (Path A), documents why that route does not close, and
+formally repositions the stack so the operator-side `kappa = 2` statement is
+carried only as the spectrum-operator bridge corollary of spectrum-side
+`Q = 2/3`. The block-total Frobenius branch remains bounded algebraic context
+until a retained canonical scalar-measure bridge exists.
 
 ---
 
@@ -172,9 +180,12 @@ choice — it is exactly the same SO(2) postulate written in a different
 coordinate system ("use only `arg(b)`-independent invariants"). That is
 the circular restatement the reviewer audit flagged.
 
-**Verdict.** Path A cannot close at the Nature bar. The SO(2)-quotient
-is not a corollary of any retained framework theorem currently on main
-or on this branch.
+**Verdict.** Path A cannot close at the Nature bar: the `SO(2)` quotient is
+not a corollary of the retained observable principle along the displayed
+spectral-observable route. This note checks Path A only; it does not survey or
+exhaust every alternative attack route against the quotient. Other attack
+routes, such as a future result that decouples the `cos(3 arg b)` channel,
+remain open, not closed.
 
 ---
 
@@ -278,11 +289,13 @@ Effective from this note:
    reclassified as **supplementary / alternative-framing support**
    rather than load-bearing theorems.
 
-2. **The MRU closure argument assumes a postulate not derivable from
-   retained framework theorems.** Specifically, the scalar-lane
-   SO(2)-quotient of the doublet frame is not a consequence of the
-   retained observable principle (spectrum-native scalar observables
-   are **not** SO(2)-invariant on `Herm_circ(3)` in general).
+2. **The MRU closure argument assumes a postulate that Path A does not
+   derive.** Specifically, along the displayed spectral-observable route, the
+   scalar-lane `SO(2)` quotient of the doublet frame is not a consequence of
+   the retained observable principle (spectrum-native scalar observables are
+   **not** `SO(2)`-invariant on `Herm_circ(3)` in general). This is the Path-A
+   finding; it does not assert that no other attack route could derive the
+   quotient.
 
 3. **The spectrum-operator bridge theorem is the primary graph-visible
    retained authority** for the operator-side bridge corollary. It
@@ -355,8 +368,8 @@ in mind:
 1. This note does not claim that the SO(2)-quotient is **false**. It
    may still be physically correct — e.g. if a future retained result
    establishes that the charged-lepton scalar lane decouples the
-   `cos(3 arg b)` channel. What is claimed is only that no currently
-   retained framework theorem delivers it.
+   `cos(3 arg b)` channel. What is claimed is only that the displayed
+   Path A route does not deliver it; alternative attack routes remain open.
 2. This note does not invalidate the two MRU notes as technical
    documents. Their calculations remain correct within the conditional
    "assume SO(2)-quotient, then...". What changes is only their status

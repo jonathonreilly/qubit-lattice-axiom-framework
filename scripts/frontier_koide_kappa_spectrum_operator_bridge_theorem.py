@@ -270,6 +270,20 @@ check(
     and "two retained independent routes" not in demotion_norm
     and "independent second closure route" not in demotion_norm,
 )
+check(
+    "T16 demotion note narrows the SO(2) quotient failure to Path A",
+    "path a cannot close" in demotion_norm
+    and "displayed spectral-observable route" in demotion_norm
+    and "checks path a only" in demotion_norm,
+)
+check(
+    "T17 demotion note leaves alternative quotient attack routes open",
+    "other attack routes" in demotion_norm
+    and "remain open, not closed" in demotion_norm
+    and "alternative attack routes remain open" in demotion_norm
+    and "no currently retained framework theorem delivers it" not in demotion_norm
+    and "not a corollary of any retained framework theorem currently" not in demotion_norm,
+)
 
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
 if FAIL > 0:

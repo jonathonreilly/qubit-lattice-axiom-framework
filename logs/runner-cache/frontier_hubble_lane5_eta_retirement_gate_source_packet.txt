@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hubble_lane5_eta_retirement_gate_source_packet.py
+runner_sha256: d93cf802f0d07a67acfa774181b1e5239f8475ede30fcac7736271f7a01f93a4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+========================================================================================
+HUBBLE LANE 5 ETA-RETIREMENT GATE SOURCE PACKET
+========================================================================================
+
+Question:
+  Is the Cycle 4 eta-retirement gate packaged with source anchors,
+  a replayable single-gate inventory, and a non-promotion boundary?
+
+Answer:
+  Yes for source-packet readiness. This runner does not retire eta,
+  close C2, close H0, or apply an audit verdict.
+
+----------------------------------------------------------------------------------------
+Part 1: parent source-packet metadata
+----------------------------------------------------------------------------------------
+  [PASS] parent note exists  (docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md)
+  [PASS] parent declares this primary runner
+  [PASS] parent declares this runner cache
+  [PASS] parent remains an open-gate support source packet
+  [PASS] source-packet boundary says it is not a theorem
+  [PASS] source-packet boundary forbids promotion claims
+
+----------------------------------------------------------------------------------------
+Part 2: dependency links and source fingerprints
+----------------------------------------------------------------------------------------
+  [PASS] dm_leptogenesis_transport_status_note_2026-04-16: linked from parent
+  [PASS] dm_leptogenesis_transport_status_note_2026-04-16: file exists  (docs/DM_LEPTOGENESIS_TRANSPORT_STATUS_NOTE_2026-04-16.md)
+  [PASS] dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16: linked from parent
+  [PASS] dm_leptogenesis_pmns_reduced_surface_selector_support_note_2026-04-16: file exists  (docs/DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md)
+  [PASS] dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16: linked from parent
+  [PASS] dm_leptogenesis_pmns_reduction_exhaustion_theorem_note_2026-04-16: file exists  (docs/DM_LEPTOGENESIS_PMNS_REDUCTION_EXHAUSTION_THEOREM_NOTE_2026-04-16.md)
+  [PASS] dm_leptogenesis_pmns_microscopic_d_last_mile_note_2026-04-16: linked from parent
+  [PASS] dm_leptogenesis_pmns_microscopic_d_last_mile_note_2026-04-16: file exists  (docs/DM_LEPTOGENESIS_PMNS_MICROSCOPIC_D_LAST_MILE_NOTE_2026-04-16.md)
+  [PASS] omega_lambda_derivation_note: linked from parent
+  [PASS] omega_lambda_derivation_note: file exists  (docs/OMEGA_LAMBDA_DERIVATION_NOTE.md)
+  [PASS] r_base_group_theory_derivation_theorem_note_2026-04-24: linked from parent
+  [PASS] r_base_group_theory_derivation_theorem_note_2026-04-24: file exists  (docs/R_BASE_GROUP_THEORY_DERIVATION_THEOREM_NOTE_2026-04-24.md)
+  [PASS] hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26: linked from parent
+  [PASS] hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26: file exists  (docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md)
+  [PASS] transport status names undershoot and exact support branch
+  [PASS] transport status isolates the right-sensitive doublet-block law
+  [PASS] transport status records the local selected slice as subcritical
+  [PASS] reduced-surface note supplies exact eta-support witness only
+  [PASS] reduction exhaustion note is part of the PMNS route boundary
+  [PASS] D-last-mile note remains quantitative support, not eta retirement
+  [PASS] Omega cascade remains bounded and does not retain Omega_Lambda
+  [PASS] R_base theorem supplies an observation-free 31/9 identity
+  [PASS] Lane 5 no-go supplies the C1/C2/C3 closure taxonomy
+
+----------------------------------------------------------------------------------------
+Part 3: single residual eta-retirement gate
+----------------------------------------------------------------------------------------
+  [PASS] parent identifies a single residual microscopic selector law
+  [PASS] gate object is the right-sensitive Z3 doublet-block law
+  [PASS] odd-slot readout is explicitly named
+  [PASS] local diagonal route is recorded as transport-subcritical
+  [PASS] closed shortcut routes are inventoried
+  [PASS] parent explicitly says it does not close DM-lane work
+
+----------------------------------------------------------------------------------------
+Part 4: finite non-promotion model
+----------------------------------------------------------------------------------------
+  rule: eta retires only if the right-sensitive selector is retained
+  rule: C2 numeric closure also needs the separate alpha_GUT lane
+  rule: H0 closure still needs the C1 scale route
+  [PASS] actual current packet does not retire eta
+  [PASS] selector gate alone retires eta but not full C2 numerics
+  [PASS] full C2-plus-scale packet would close the modeled route
+  [PASS] parent records alpha_GUT as a separate remaining cascade dependency
+  [PASS] parent records C1 as separately required for H0
+  [PASS] runner boundary forbids audit-result mutation
+
+========================================================================================
+PASS=41 FAIL=0
+========================================================================================
+
+----- stderr -----
+

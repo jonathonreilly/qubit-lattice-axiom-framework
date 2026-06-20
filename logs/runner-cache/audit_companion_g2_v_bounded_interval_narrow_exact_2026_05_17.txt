@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
-runner_sha256: d7db5e6886079611d4ce43b7dbd8de92026a1a9bb38e6b2dae53ca7c91566d41
+runner_sha256: ddcddaa49c97e53ade486b9d6e6e69d8f465af6c78ff51657b75ff35ffe20c8e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -31,6 +31,7 @@ Part 0: source-packet dependency repair checks
   [PASS (A)] (X6/X7) source note cites the framework-local scale/RGE bridge
   [PASS (A)] (X1) source note cites the native SU2 beta=16 u0 interval bridge
   [PASS (A)] (X1) source note says X1 is not a row-local literature admission
+  [PASS (A)] (X6) bridge includes direct ruler/current-v scale-log hardening
   [PASS (A)] (X7) source note no longer registers one-loop RGE as a row-local named admission
   [PASS (A)] (X1) source note no longer claims [0.96,0.98] brackets 0.988
   [PASS (A)] (X1) source note says 0.988 is outside the parent interval
@@ -116,11 +117,11 @@ Part 8: forbidden-import audit
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
-  PASS = 32
+  PASS = 33
   FAIL = 0
   g_2(v_cand approx 246.28 GeV) in [0.659392836186702, 0.682834304553707]
   interval width = 0.0234414683670046
-  PASS=32 FAIL=0
+  PASS=33 FAIL=0
 
 ----- stderr -----
 

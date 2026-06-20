@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py
-runner_sha256: 118ee47163b0d58ca7640496860060b1a17813cb65f62e4bf0b6eadc8af8b58d
+runner_sha256: 906f40fc787b390a63703473c14a6c4a1f7148c6939b05f82d8271c1c15a2d4a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -21,6 +21,10 @@ Part 0: source packet checks
   [PASS (A)] bridge cites HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md
   [PASS (A)] bridge explicitly leaves u0(SU2) open
   [PASS (A)] g2 note cites this bridge
+  [PASS (A)] scale primitive declares the Planck ruler and no dimensionless content
+  [PASS (A)] unit-conversion runner records the direct Planck-ruler decimal
+  [PASS (A)] reusable-values index records v = 246.282818290129 GeV
+  [PASS (A)] observable note displays the same EW-scale readout
 
 ----------------------------------------------------------------------------------------
 Part 1: inverse-alpha calculus
@@ -40,13 +44,21 @@ Part 2: hierarchy candidate scale-log arithmetic
   [PASS (A)] L=3844/100 is a close rounded surrogate for L_cand  (|L_cand-38.44|=0.002224515163121)
 
 ----------------------------------------------------------------------------------------
+Part 2b: direct value-surface scale-log cross-check
+----------------------------------------------------------------------------------------
+  [PASS (A)] direct log ln(1.22e19 / 246.282818290129) matches displayed value  (L_direct=38.441487082215616)
+  [PASS (A)] direct value-surface log is within 0.002 of rounded L=38.44  (|L_direct-38.44|=0.001487082215618)
+  [PASS (A)] candidate-map log and direct current-value log differ by less than 0.001  (|L_cand-L_direct|=0.000737432947503)
+  [PASS (A)] using the hierarchy runner Planck decimal reproduces L_cand  (L_precise_direct=38.442224515163119)
+
+----------------------------------------------------------------------------------------
 Part 3: g2 denominator sanity with rounded versus candidate log
 ----------------------------------------------------------------------------------------
   [PASS (A)] rounded-log g2 interval is well formed  ([0.659392836186702, 0.682834304553707])
   [PASS (A)] candidate-log g2 interval is well formed  ([0.659405625973412, 0.682848507470297])
   [PASS (A)] using L_cand instead of 38.44 moves endpoints by less than 2e-5  (max_shift=1.420291659037787e-05)
 
-TOTAL: PASS=19 FAIL=0
+TOTAL: PASS=27 FAIL=0
 
 ----- stderr -----
 

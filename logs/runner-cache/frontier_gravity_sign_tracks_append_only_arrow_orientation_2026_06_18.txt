@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gravity_sign_tracks_append_only_arrow_orientation_2026_06_18.py
+runner_sha256: dc96dad76ba8e83b566db93800d3c76e8f437e85d8c891f23f25752f4181325d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+FRONTIER iter-2 (consistency picture): on the minimal e_4 carrier the orientation label is net-zero / isospectral / NON-SELECTING -- exhibiting why the gravity sign is not derived (no gauge-invariant sign); the weld rests on the companion runner.
+
+== N0: pure staggered ring (no defect) => eta = 0 (the landed null label) ==
+[PASS] Gamma5 H Gamma5 = -H (uniform staggered ring is parity-odd)
+[PASS] => +/- symmetric spectrum => eta = 0 (matches KODD trivial +1 / empty crossing) :: eta = 0.0
+
+== A1: domain wall binds a JR chiral mode; kink & antikink carry OPPOSITE chirality; NET label = 0 (the arrow selects no gauge-invariant observable) ==
+   arrow s=+1: near-zero (chir,COM)=[(-1.0, 10.0), (1.0, 30.5)]  NET=+0.00
+   arrow s=-1: near-zero (chir,COM)=[(-1.0, 30.0), (1.0, 10.5)]  NET=-0.00
+[PASS] a domain wall binds a Jackiw-Rebbi chiral mode (|chirality| = 1 at each defect)
+[PASS] kink and antikink carry OPPOSITE chirality (chi(q1) = -chi(q3) at fixed arrow)
+[PASS] the NET near-zero chirality = 0 for BOTH arrow directions (a kink+antikink pair carries no net orientation) => the arrow selects NO gauge-invariant observable :: NET(+)=+0.00, NET(-)=-0.00
+[PASS] injecting s merely RELABELS which defect is the kink: chi(q1) flips with s, and the identical flip is produced at FIXED s by reading q3 instead of q1 :: chi_q1(+)=-1.0, chi_q1(-)=+1.0, chi_q3(+)=+1.0
+
+== D1: uniformly dimerized ring (parity-odd, no wall) binds NO mid-gap mode ==
+[PASS] uniformly dimerized ring is parity-odd (Gamma5 H Gamma5 = -H) and gapped :: min|E| = 1.000
+[PASS] => NO mid-gap mode: a domain WALL is required to bind a chiral mode (the standard Jackiw-Rebbi dichotomy; this isolates 'you need a wall', not selection) :: near-zero modes = 0
+
+== R1: the two arrows are isospectral & net-zero => the arrow is the admitted residual (not derived) ==
+[PASS] the two arrow directions are ISOSPECTRAL (no energetic/spectral datum selects s) => the selection IS the admitted arrow / Past-Hypothesis residual, not a derivation
+
+==== 9 passed, 0 failed ====
+
+----- stderr -----
+

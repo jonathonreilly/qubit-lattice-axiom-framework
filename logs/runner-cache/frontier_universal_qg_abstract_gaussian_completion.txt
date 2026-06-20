@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_abstract_gaussian_completion.py
+runner_sha256: 3734ba2988c2ccc5ae51bf492bb31d98cdef7cbb8c8a6bc18533b0d2ca4bd8fe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[EXACT] PASS: the exact inverse-limit Gaussian cylinder family is already closed on the canonical refinement net
+    this theorem starts from the exact projective-limit Gaussian family already present on the discrete route
+[EXACT] PASS: the covariance bilinear form on cylindrical observables is refinement-independent
+    max covariance-pairing mismatch=8.882e-16
+[EXACT] PASS: the compatible stationary section defines a refinement-independent mean functional
+    max mean-functional mismatch=1.110e-16
+[EXACT] PASS: the covariance form is positive and therefore yields a pre-Hilbert quotient on cylindrical observables
+    min covariance eigenvalue=6.880409e-02, min sampled cylindrical norm=9.775819e-01
+[EXACT] PASS: the remaining stronger issue is therefore not existence of the abstract Gaussian completion, but only later textbook geometric/action and continuum-gravitational closures already discharged elsewhere on the branch
+    the exact discrete route already determines one abstract Gaussian/Cameron-Martin completion with a compatible mean functional; later notes close the smooth weak/Gaussian identifications, the geometric/action comparison, and the canonical textbook continuum gravitational closure built on this step
+UNIVERSAL QG ABSTRACT GAUSSIAN COMPLETION
+==============================================================================
+max covariance-pairing mismatch   = 8.882e-16
+max mean-functional mismatch      = 1.110e-16
+min covariance eigenvalue         = 6.880409e-02
+min sampled cylindrical norm      = 9.775819e-01
+
+Verdict:
+The exact inverse-limit Gaussian cylinder family already determines a refinement-independent covariance bilinear form and compatible stationary mean functional on cylindrical observables. Quotienting by covariance-null directions therefore yields one exact abstract Gaussian / Cameron-Martin completion on the project route.
+So the remaining stronger continuum issue is not existence of the abstract limit object. Later notes already close the smooth weak/Gaussian identifications built on it, the project-native smooth geometric/action comparison, and the canonical textbook continuum gravitational closure; what remains beyond that is only optional comparison against alternative textbook packaging conventions.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=5 FAIL=0 TOTAL=5
+
+----- stderr -----
+

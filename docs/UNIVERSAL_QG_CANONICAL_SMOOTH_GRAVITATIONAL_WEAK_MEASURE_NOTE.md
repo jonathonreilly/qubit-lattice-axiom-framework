@@ -3,6 +3,8 @@
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / canonical smooth gravitational
 weak-form and Gaussian-measure theorem
+**Script:** `scripts/frontier_universal_qg_canonical_smooth_gravitational_weak_measure.py`
+(source-side verifier; PASS=5 FAIL=0 on current source)
 
 ## Verdict
 

@@ -41,16 +41,20 @@ except ImportError:
 
 PASS = 0
 FAIL = 0
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md"
+NOTE_TEXT = NOTE_PATH.read_text(encoding="utf-8")
+NOTE_FLAT = " ".join(NOTE_TEXT.split())
 
 
-def check(label: str, ok: bool, detail: str = "") -> None:
+def check(label: str, ok: bool, detail: str = "", kind: str = "A") -> None:
     global PASS, FAIL
     if ok:
         PASS += 1
-        tag = "PASS (A)"
+        tag = f"PASS ({kind})"
     else:
         FAIL += 1
-        tag = "FAIL (A)"
+        tag = f"FAIL ({kind})"
     suffix = f"  ({detail})" if detail else ""
     print(f"  [{tag}] {label}{suffix}")
 
@@ -78,6 +82,19 @@ def main() -> int:
 
     print(f"  symbolic n_color = {nc}, eigenvalues a, b real")
     print(f"  trace equation (L1): 2 n_color a + 2 b = 0")
+
+    # ---------------------------------------------------------------------
+    section("Part 0b: source-boundary metadata")
+    # ---------------------------------------------------------------------
+    check(
+        "source note declares canonical bounded_theorem metadata and independent audit authority",
+        "**Type:** bounded_theorem" in NOTE_TEXT
+        and "**Claim type:** bounded_theorem" in NOTE_TEXT
+        and "**Status authority:** independent audit lane only." in NOTE_FLAT
+        and "predict an audit outcome" in NOTE_FLAT,
+        detail="source note sets no audit outcome",
+        kind="B",
+    )
 
     # Trace equation as sympy expression set to zero
     L1 = 2 * nc * a + 2 * b

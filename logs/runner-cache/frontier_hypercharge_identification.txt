@@ -1,14 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hypercharge_identification.py
-runner_sha256: eb1e3d37c589abb192fc559a2dc0ffb80bfcd0e8940cafe9e388186c1190f750
+runner_sha256: 3a0675d3598f9b88f05fc3c19a2a26d2ab02d6b2a54ae1f4d86dc187820e148c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ========================================================================
 HYPERCHARGE U(1)_Y IDENTIFICATION (CHAIN VERIFICATION)
 ========================================================================
+
+Source boundary firewall: 10 required markers present; 3 stale-promotion markers absent
 
 Setup: C^8 = (C^2)^{x3}, SU(2)_weak on factor 1, SWAP_{23} on factors 2,3
 Commutant of {SU(2), SWAP_{23}} = gl(3,C) + gl(1,C)  [upstream]
@@ -20,7 +22,8 @@ CHAIN UNDER VERIFICATION:
   (L2) [CHAIN-L2]    Sym^2 -> SU(3) fundamental, Anti^2 -> SU(3) singlet
                      -- supplied by LHCM_MATTER_ASSIGNMENT_FROM_SU3_
                         REPRESENTATION_NOTE_2026-05-02
-  (L3) [CHAIN-L3]    alpha = 1/3 (admitted SM convention, LHCM repair (2))
+  (L3) [CHAIN-L3]    alpha = 1/3 (bounded bridge if retained;
+                     otherwise admitted SM convention)
 
 ========================================================================
 PART 1: The U(1) generator from the commutant  [STRUCTURAL + CHAIN-L3]
@@ -290,7 +293,8 @@ PART 8: No other traceless U(1) exists on this surface  [STRUCTURAL]
 
   Under chain L2 (LHCM matter assignment): Sym^2 sector = Q_L (color
   triplet), Anti^2 sector = L_L (color singlet).
-  Under chain L3 (admitted SM convention): alpha = 1/3.
+  Under chain L3 (normalization bridge if retained; otherwise admitted
+  SM convention): alpha = 1/3.
   Combined: Y(Q_L) = +1/3, Y(L_L) = -1.   [CHAIN-L2 + CHAIN-L3]
 
   PROOF OF STRUCTURAL UNIQUENESS:
@@ -358,8 +362,9 @@ FINAL SUMMARY  (chain-claim verification)
   WHAT IS NOT CLAIMED:
     * Internal derivation of (Sym^2 = SU(3)-fundamental) -- chained
       to LHCM matter-assignment note (its own audit row)
-    * Derivation of alpha = 1/3 from framework -- still-open LHCM
-      repair item (2); admitted as SM convention here
+    * Internal derivation of alpha = 1/3 in this parent -- chained to
+      the bounded normalization bridge if retained, otherwise admitted
+      as an SM convention here
     * Internal SM-Y identification step; the rewrite removes it from
       the load-bearing chain and routes matter assignment through L2
 

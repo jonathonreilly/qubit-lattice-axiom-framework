@@ -39,6 +39,14 @@ The safe residue is archive recovery history only. Any future carrier-axiom
 analysis must start from a fresh proof surface rather than this failed wrapper
 frame.
 
+## 2026-06-18 registered-runner contract
+
+The registered runner for this archived row is a firewall witness only. It
+verifies this note's current-surface certificate, retraction, and archive
+boundary. It must not be used to re-prove the historical minimal-carrier
+theorem. A PASS does not certify a minimal carrier axiom, close `(G1)` or
+`(C1)`, or provide live support for the failed wrapper frame.
+
 ## 0. Historical context (retracted)
 
 Cycles 2-4 closed `A1`, `A2`, `A4` negatively. `A5` is the audit's

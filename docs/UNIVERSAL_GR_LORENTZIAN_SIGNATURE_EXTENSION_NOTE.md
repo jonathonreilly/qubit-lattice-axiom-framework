@@ -4,6 +4,8 @@
 **Date:** 2026-04-14  
 **Branch:** `codex/review-active`  
 **Role:** direct universal route / signature-class extension
+**Script:** `scripts/frontier_universal_gr_lorentzian_signature_extension.py`
+(source-side verifier; PASS=6 FAIL=0 on current source)
 
 ## Verdict
 

@@ -10,6 +10,8 @@ ingredients above, not a derivation closing them.
 **Date:** 2026-04-14 (audit-narrowing refresh: 2026-05-10)  
 **Branch:** `codex/review-active`  
 **Role:** direct universal route / structural-assembly step
+**Script:** `scripts/frontier_universal_gr_isotropic_glue_operator.py`
+(source-side verifier; PASS=5 FAIL=0 on current source)
 **Claim type:** bounded_theorem
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane. The

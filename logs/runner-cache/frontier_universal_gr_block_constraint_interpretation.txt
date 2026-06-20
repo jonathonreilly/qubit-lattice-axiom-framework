@@ -3,7 +3,7 @@ runner: scripts/frontier_universal_gr_block_constraint_interpretation.py
 runner_sha256: e3ba363bdc3bf31e9594aa1e3a176e95667503ab2960541e5fbe60f1c84580cf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 UNIVERSAL GR BLOCK-CONSTRAINT INTERPRETATION AUDIT

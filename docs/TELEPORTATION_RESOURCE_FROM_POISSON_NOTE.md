@@ -26,6 +26,63 @@ faster-than-light transport. The only audited object is a quantum state
 teleportation resource extracted from the two-species ground state used by
 `scripts/frontier_bell_inequality.py`.
 
+**Status authority: independent audit lane only.** This note records source-side
+content and does not author, alter, or assert any audit grade or effective
+status. Effective status is set exclusively by the independent audit lane on
+`origin/main`.
+
+## 2026-06-20 Source Repair: Narrow To The Bounded Finite Extraction Core
+
+The 2026-06-20 re-audit verdict (verbatim) is:
+
+> *"missing_bridge_theorem: prove and audit the native preparation/readout and
+> apparatus bridge for the retained-axis Poisson resource, then re-audit the
+> parent; otherwise leave the bounded finite extraction core as the citeable
+> theorem."*
+
+This repair takes the named **second alternative**: leave the citeable content
+as the **bounded finite extraction core** and mark the native
+preparation/readout/apparatus bridge explicitly **conditional/open** (not
+supplied here). No new native bridge theorem is proved in this repair.
+
+**Citeable theorem (bounded finite extraction core).** On the two default
+audited surfaces (`1D N=8` and `2D 4x4`), the runner certifies, with a final
+`TOTAL: PASS=N FAIL=0`:
+
+- the Poisson/CHSH helper source is present and hashed;
+- the retained-axis finite operator algebra (RALA) source is present and
+  retained-bounded on the ledger, supplying `Z_axis`, `X_axis`, the axis Bell
+  projectors, the fixed pair-hop `X` membership, and the finite teleportation
+  closure;
+- the last-taste-bit logical carrier algebra is verified per surface
+  (`X` is the last-taste logical flip; `Z_last` is a logical Pauli);
+- the standard Bell teleportation convention passes an ideal-`Phi+` sanity
+  check;
+- the `G=0` null control does **not** yield a high-fidelity logical resource,
+  while both Poisson/CHSH cases do (high traced Bell overlap, positive
+  negativity, high ideal state-teleportation fidelity).
+
+This bounded offline finite extraction is the only object cited as a theorem.
+The derived diagnostics (Bell overlap, traced/full CHSH, negativity,
+teleportation fidelity) and the `G=0` vs Poisson contrast are unchanged by this
+repair.
+
+**Conditional/open (NOT part of the citeable theorem).** The native
+preparation/readout and apparatus bridge — a physical deterministic
+teleportation apparatus realizing the offline retained-axis last-taste carrier
+(native preparation Hamiltonian/schedule, physical detector/readout path,
+endogenous durable records, apparatus dynamics) — is **not supplied here**. It
+remains an admitted, not-derived input, conditional on a separate derivation and
+re-audit. The runner segregates this bridge: the prep/readout/apparatus
+firewall report is printed in a clearly labelled
+`=== CONDITIONAL BRIDGE (... NOT part of citeable theorem) ===` block as an
+`INFO:` line only, and it does **not** contribute to the core `TOTAL`/`SUMMARY`.
+
+This repair introduces no new axiom, primitive, import, comparator, or approved
+bridge, and makes no status promotion. The parent row therefore remains a
+source-side open gate for the physical deterministic resource, with the bounded
+finite extraction core as the citeable theorem.
+
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
 The 2026-05-28 audit verdict was `audited_conditional`:

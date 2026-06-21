@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 212 |
+| **retained** | 213 |
 | **retained_no_go** | 216 |
 | **retained_bounded** | 979 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1572 |
+| unaudited | 1571 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1423 |
+| `audited_clean` | 1424 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1898 |
+| `unaudited` | 1897 |
 
 | claim_type | count |
 |---|---:|
@@ -755,6 +755,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `interacting_rp_full_algebra_fixed_a_gauge_invariant_four_fermion_bounded_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `interacting_transfer_matter_gap_and_gauge_reduction_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `inverse_problem_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -10704,6 +10705,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since H_hop[U] is anti-Hermitian, lambda_j(U) is real and E_j[U]=arcsinh(sqrt(m^2+lambda_j(U)^2)) >= arcsinh(m)>0, hence Delta_T^matter >= arcsinh(m)/a_tau uniformly in U and volume.  _(class `A`)_
 - **chain closes:** True — The per-background dispersion and anti-Hermitian-hop spectrum are supplied by the cited authorities; the inequality follows from real lambda_j, sqrt(m^2+lambda_j^2)>=m, and monotonicity of arcsinh. No cited input proves the full pure-gauge/coupled gap, and the note does not claim it.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs in the restricted packet, not a definition or tuned numerical match. The runner source constructs random staggered SU(3) spatial hops, checks anti-Hermiticity, the arcsinh(m) floor, the transfer-eigenvalue cap, and a non-anti-Hermitian control; it does not hard-code the contested bound. The beta=6 pure-gauge/coupling issue remains an open gate by the note's own scope, so it is not part of the closed theorem.
+- **auditor confidence:** high
+
+### `interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`
+
+- **Note:** [`INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact algebraic structure of delta in the Hamming single-hop model: free axis-separable dynamics has zero occupation curvature, a symmetric pair coupling gives delta=U and the stated regime-scoped Schur sign law, and realizing that curvature as a one-body lattice term would require forbidden face-diagonal hopping.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because H=eps*N+t*sum_mu X_mu factorizes into per-axis two-level Hamiltonians, the free energy is affine in occupation number so delta=E_2-2E_1+E_0 vanishes, while a pair term U*sum_{i<j}n_i n_j gives delta=U and K_off=t^2*(1/eps-1/(eps+U)).  _(class `A`)_
+- **chain closes:** True — The load-bearing statements are algebraic identities on the supplied finite-dimensional operators: factorization/sumset, finite second differences, Schur denominators, and the product-to-sum diagonal-hop identity. The mediator sign/scale route is explicitly left open and is outside this audited structure claim.
+- **rationale:** The runner source genuinely constructs the finite Hamming-space operators, diagonalizes the free Hamiltonian for L=3,4,5, checks the second-difference identities, evaluates the Schur off-diagonal formula including the denominator-boundary counterexample, and verifies the face-diagonal trigonometric identity. These checks match the source note and do not hard-code a contested physical value for delta; they verify only the structure and regime-scoped sign law. All cited upstream authorities are retained-grade or retained_bounded, and the note does not claim the open mediator-derived value of delta.
 - **auditor confidence:** high
 
 ### `internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27`

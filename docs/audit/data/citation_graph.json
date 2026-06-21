@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
         "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
         "causal_cone_speed_map_note",
         "causal_impact_parameter_note",
         "causal_source_placement_robustness_note",
         "connectivity_family_v2_elliptical_duplicate_note",
-        "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12"
+        "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12",
+        "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4150537a1412fbf695e6bbbd3c69db9ffbaabec8f7e4299a00d3d1dd0c0d7fd4",
+      "note_hash": "dbd86306a5795045781b81af4b222a4801657748e1840b3679003daaa83acd33",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

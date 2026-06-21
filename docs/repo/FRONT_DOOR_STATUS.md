@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1594 |
+| Applied audit verdicts | 1595 |
 | Retained-grade rows, including boxed decorations | 1478 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
 | Retained bounded rows | 990 |
 | Boxed decorations under retained parents | 59 |
 | Open gates | 38 |
-| Unaudited rows | 1552 |
+| Unaudited rows | 1551 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 37 |
+| Audited conditional rows | 38 |
 | Audited renaming rows | 28 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1554 |
-| Ready rows | 62 |
+| Total pending rows | 1553 |
+| Ready rows | 61 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 538 |
+| Leaf pending | 537 |
 
 Next ready rows by queue order:
 
-- [`bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`](../../docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md) - medium; unaudited
 - [`beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 - [`causal_cone_speed_map_note`](../../docs/CAUSAL_CONE_SPEED_MAP_NOTE.md) - medium; unaudited
 - [`causal_impact_parameter_note`](../../docs/CAUSAL_IMPACT_PARAMETER_NOTE.md) - medium; unaudited
 - [`causal_source_placement_robustness_note`](../../docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md) - medium; unaudited
 - [`connectivity_family_v2_elliptical_duplicate_note`](../../docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md) - medium; unaudited
 - [`continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12`](../../docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
-- [`correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12`](../../docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12`](../../docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17`](../../docs/CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 983 |
-| Leaf nodes | 1551 |
+| Medium nodes | 981 |
+| Leaf nodes | 1553 |
 
 Top load-bearing rows by graph score:
 

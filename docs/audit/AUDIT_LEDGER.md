@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 208 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 942 |
+| **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1648 |
+| unaudited | 1647 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 26 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1371 |
+| `audited_clean` | 1372 |
 | `audited_conditional` | 15 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1974 |
+| `unaudited` | 1973 |
 
 | claim_type | count |
 |---|---:|
@@ -1138,6 +1138,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -15991,6 +15992,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the stated finite S+E model and quantum-Darwinism record convention, persistent pointer records require pointer non-demolition [H_int, Pi_S] = 0, and the nonzero local controlled-copy Hamiltonian g sigma_z(S) tensor sum_k sigma_x(E_k) at t = pi/(4g) suffices to form redundant objective records.  _(class `C`)_
 - **chain closes:** True — Within the explicitly bounded finite model, the Heisenberg commutator criterion and the controlled-copy record calculation close. The runner constructs the Hilbert-space operators, unitaries, partial traces, pointer Holevo information, redundancy, counterexamples, and transfer commutators rather than hard-coding a target result.
 - **rationale:** The note does not claim to derive the Darwinism record bridge, physical dynamics, beta value, or OS record channel; those are either explicit bounded inputs or excluded. The load-bearing finite-model claims are directly checked by dense matrix computation and elementary commutator algebra, with QND-alone counterexamples preventing the main overclaim. The retained-bounded companion and accepted minimal-axiom premise introduce no open dependency downgrade for this scoped bounded theorem.
+- **auditor confidence:** high
+
+### `record_formation_to_kraus_isometry_bridge_2026-06-06`
+
+- **Note:** [`RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md`](../../docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-model bridge: retained bounded pointer sectors plus the controlled-copy/fresh-fragment write isometry give the projective record-write W, whose extracted blocks form the projective Kraus/CPTP instrument.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-record_formation_to_kraus_isometry_bridge_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using P_r P_s = delta_rs P_r and <r|s> = delta_rs, W^dagger W = sum_r P_r = I and <r|W = P_r, so the induced map is rho -> sum_r P_r rho P_r.  _(class `A`)_
+- **chain closes:** True — Within the declared finite pointer model, the controlled-copy authority supplies the orthogonal calibrated write isometry W and the finite Kraus authority supplies the normalized-isometry-to-instrument algebra. The remaining target-note step is direct projector algebra, and it does not claim arbitrary persistent-record dynamics or a probability law from counts.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade bounded inputs: orthogonal projectors and orthonormal record labels make W an isometry and give K_r = P_r. The runner source actually constructs the qubit projectors, W, extracted blocks, Choi positivity, dephasing channel, selective branches, and repeat-read checks; its hard-coded boundary flags are scope guards, not load-bearing derivations. The clean verdict applies only to the explicitly bounded finite controlled-copy/pointer model stated in the claim scope.
 - **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`

@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/dm_eta_g1_fierz_channel_narrative_correction_probe.py
+runner_sha256: c5cae338da845f46846e1f6230d033bac03e88e06dc60b5a455737bbd3867c8c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+DM-ETA G1 FIERZ CHANNEL NARRATIVE CORRECTION PROBE
+
+  [PASS] claim type is bounded theorem (audit row stays bounded)
+  [PASS] runner metadata names this probe (audit parser can attach the narrative-correction verifier)
+  [PASS] status authority remains independent (branch does not write audit verdicts)
+  [PASS] narrative correction is scoped (note corrects channel attribution without changing the mass result)
+  [PASS] adjoint-channel overclaim is explicitly removed (note keeps the contradiction visible)
+  [PASS] support runner exits cleanly (returncode=0)
+  [PASS] support runner passes all tests (Coleman-Weinberg support runner reports 17/17)
+  [PASS] support runner confirms singlet channel (runner output supports the narrative correction)
+  [PASS] support runner keeps bounded status (no status promotion is claimed)
+
+SUMMARY: PASS=9 FAIL=0
+BOUNDARY: bounded narrative-correction verifier only; no DM-eta status promotion.
+
+----- stderr -----
+

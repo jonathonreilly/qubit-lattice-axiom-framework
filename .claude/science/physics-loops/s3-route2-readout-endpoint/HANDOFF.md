@@ -43,4 +43,13 @@ Status is `bounded-support` / negative route pruning. This block does not derive
 
 ## Next Action
 
-After PR handoff, pivot to a direct typed E-center source/readout selector attempt. The candidate must evaluate the E-center column without importing `21/4`, `15/8`, observed quark masses, or nearest-rational matching.
+## PR
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4566
+- Branch: `physics-loop/s3-route2-readout-endpoint-block36-20260621`
+- Base: `main`
+- Status: open, identity verified only. Conflict/mergeability was not checked.
+
+## Next Action
+
+Pivot to a direct typed E-center source/readout selector attempt. The candidate must evaluate the E-center column without importing `21/4`, `15/8`, observed quark masses, or nearest-rational matching.

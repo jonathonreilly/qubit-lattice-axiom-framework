@@ -43,4 +43,23 @@ interior windows for `N=17` and `N=19`; tails sit near `1`.
 - overclaim scan: no matches
 - ASCII scan: no matches
 
-PR URL pending.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4587
+
+Remote branch:
+
+```text
+physics-loop/s3-route2-ecenter-finite-size-bridge-block56-20260621
+```
+
+Identity-only PR check:
+
+```json
+{"number":4587,"state":"OPEN","baseRefName":"main","headRefName":"physics-loop/s3-route2-ecenter-finite-size-bridge-block56-20260621","title":"[physics-loop] s3-route2-ecenter-finite-size-bridge block56 no-go"}
+```
+
+## Next Exact Action
+
+Continue the campaign on the independent nonblind Route-2 source/readout
+primitive target.  The finite-size route now has a clear gate: without a
+predeclared schedule/selector theorem, finite-size evidence is not the route
+that retires `beta_E / alpha_E = 21/4`.

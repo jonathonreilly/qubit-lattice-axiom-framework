@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "dm_neutrino_weak_vector_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
-        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
+        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1f444a0fbac6fbb3f67b503dc08089904eb7efdbb8dbb965a929fb4701a6ae50",
+      "note_hash": "530687a6fd22709ea47dce2432fbdefd238badf0ceae21a032cbc9dc2930f601",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

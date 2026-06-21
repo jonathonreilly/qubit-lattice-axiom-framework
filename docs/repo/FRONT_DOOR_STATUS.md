@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1498 |
-| Retained-grade rows, including boxed decorations | 1412 |
+| Applied audit verdicts | 1499 |
+| Retained-grade rows, including boxed decorations | 1413 |
 | Retained positive theorems | 208 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 942 |
+| Retained bounded rows | 943 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1648 |
+| Unaudited rows | 1647 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 15 |
 | Audited renaming rows | 26 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1650 |
+| Total pending rows | 1649 |
 | Ready rows | 114 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 284 |
-| Medium pending | 486 |
+| Medium pending | 485 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`record_formation_to_kraus_isometry_bridge_2026-06-06`](../../docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md) - medium; unaudited
+- [`luders_rule_from_composition_consistency_note_2026-05-20`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md) - high; unaudited
 - [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) - medium; unaudited
 - [`ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`](../../docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited

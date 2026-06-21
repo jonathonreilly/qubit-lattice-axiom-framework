@@ -37,5 +37,11 @@ python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_runti
 python3 scripts/audit_runner_path_canonicalization_guard_2026_06_17.py
 python3 -m py_compile scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py scripts/runner_cache.py
 python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline
+bash docs/audit/scripts/run_pipeline.sh
 git diff --check
 ```
+
+`run_pipeline.sh` completed and its lint stage was OK with 139 notices. It
+produced unrelated generated front-door/audit-data churn in the local worktree;
+that PR-only advisory diff was discarded so this stacked PR remains limited to
+the source guard, cache transcript, and loop pack.

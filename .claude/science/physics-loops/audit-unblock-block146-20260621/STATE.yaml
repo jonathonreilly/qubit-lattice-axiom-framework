@@ -1,0 +1,55 @@
+slug: audit-unblock-block146-20260621
+mode: campaign
+date: 2026-06-21
+branch: physics-loop/audit-unblock-block146-20260621
+base_ref: origin/main
+base_oid: 11e4e2b9a7e7380fe9459ab617d20bd4d058a3e8
+target_claim_id: dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_note_2026-04-18
+target_note: docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_POSITIVE_CLOSURE_MANIFOLD_THEOREM_NOTE_2026-04-18.md
+runner: scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py
+runner_cache: logs/runner-cache/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.txt
+actual_current_surface_status: open
+pipeline_audit_status: unaudited
+pipeline_effective_status: unaudited
+claim_type: bounded_theorem
+trace_class: methodology
+reachability_to_target: supports
+runner_dominant_class: B
+runner_assert_count: 3
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_loop_disposition: deferred_to_review_lane
+lock_mode: degraded_branch_local
+files_touched:
+  - docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_POSITIVE_CLOSURE_MANIFOLD_THEOREM_NOTE_2026-04-18.md
+  - scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py
+  - logs/runner-cache/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/runner_classification.json
+checks:
+  - command: python3 scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py
+    result: "PASS: SUMMARY: PASS=12 FAIL=0"
+  - command: python3 scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_2026_04_18.py
+    result: "PASS: SUMMARY: PASS=24 FAIL=0"
+  - command: python3 scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_certificate_2026_04_18.py
+    result: "PASS: SUMMARY: PASS=10 FAIL=0"
+  - command: bash docs/audit/scripts/run_pipeline.sh
+    result: "PASS: completed with no invalidations; strict lint step OK"
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py --push-mode none --allow-non-main
+    result: "PASS: refreshed wrapper cache"
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py --check-only --push-mode none --allow-non-main
+    result: "PASS: explicit cache fresh"
+  - command: python3 docs/audit/scripts/audit_lint.py --strict
+    result: "PASS: 3474 rows checked; 139 notices; no errors"
+  - command: python3 -m py_compile scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_2026_04_18.py scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_certificate_2026_04_18.py docs/audit/scripts/build_citation_graph.py docs/audit/scripts/seed_audit_ledger.py docs/audit/scripts/classify_runner_passes.py
+    result: "PASS"
+  - command: python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --push-mode none --allow-non-main
+    result: "PASS: all relevant caches fresh"
+  - command: git diff --check
+    result: "PASS"
+next_exact_action: "Commit, push, open the review PR, then inspect the next unaudited runner-registration candidate."
+

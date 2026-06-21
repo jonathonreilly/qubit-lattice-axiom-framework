@@ -53470,11 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
@@ -70112,9 +70112,9 @@
         "dm_wilson_direct_descendant_constructive_positive_closure_multiplicity_theorem_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fd74e163ba00892fec8bb707434723f101cf4eee278068e3ebd736a7960c1ca8",
+      "note_hash": "cc92b4398e277e9e05519fb69ca6dc3414f929dfce7ed68e00e004187bde9313",
       "path": "docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_POSITIVE_CLOSURE_MANIFOLD_THEOREM_NOTE_2026-04-18.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py",
       "title": "DM Wilson Direct-Descendant Constructive Positive Closure Manifold Support"
     },
     "dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_note_2026-04-18_note_2026-05-17": {
@@ -103180,8 +103180,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
         "axiom_first_lattice_noether_theorem_note_2026-04-29",
+        "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "yt_vertex_power_derivation",
         "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
@@ -103190,7 +103190,7 @@
         "dm_neutrino_weak_vector_theorem_note_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1fef713b3e9e32eafe6000538be4c860f92242aa3d2e87557f35e5181e7ed7d8",
+      "note_hash": "941754313be09fab7fbc8fa5dfeabb024b4c566d05e324fa7a8f662fdf5f6c5a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118607,6 +118607,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

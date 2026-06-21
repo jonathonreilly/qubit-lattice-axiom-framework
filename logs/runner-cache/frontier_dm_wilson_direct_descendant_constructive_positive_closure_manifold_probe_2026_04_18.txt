@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py
+runner_sha256: f7877e72db4e19d8462fbe77e3abc233e10433b7940f1b3523fdaf99ae79ca85
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.66
+status: ok
+----- stdout -----
+DM WILSON POSITIVE-CLOSURE MANIFOLD SUPPORT PROBE
+
+  [PASS] claim type is bounded (the source row stays support/bounded, not a flagship closeout)
+  [PASS] runner metadata names this probe (audit parser can attach the wrapper runner)
+  [PASS] component runners remain named (both theorem and Krawczyk certificate artifacts are visible)
+  [PASS] fixed-kernel boundary is explicit (certificate is scoped to the fixed e-independent transport kernel)
+  [PASS] final closeout is not claimed (note preserves the open-selector boundary)
+  [PASS] manifold theorem runner exits cleanly (returncode=0)
+  [PASS] manifold theorem runner scorecard passes (local exact-closure family witness remains reproducible)
+  [PASS] manifold theorem keeps non-isolated boundary (runner reports support for an open selector condition, not closure)
+  [PASS] Krawczyk certificate runner exits cleanly (returncode=0)
+  [PASS] Krawczyk certificate scorecard passes (certificate sign-change, derivative, and contraction checks pass)
+  [PASS] Krawczyk certificate bottom line is present (regular-root certificate is the support artifact)
+  [PASS] certificate JSON exists with expected provenance (certificate file records the Krawczyk/Davis-Kahan provenance)
+
+SUMMARY: PASS=12 FAIL=0
+BOUNDARY: support for local non-isolation on a fixed kernel; no final selector or DM flagship closeout.
+
+----- stderr -----
+

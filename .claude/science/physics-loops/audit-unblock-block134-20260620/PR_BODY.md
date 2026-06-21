@@ -9,12 +9,12 @@ empty/no-runner path instead of becoming the literal string `"None"`.
 
 Refreshed packet-deps summary:
 
-- total claims in ledger: 3472
-- pending audits in queue: 1668
-- claims with runner path: 3241
-- claims with no runner declared: 231
+- total claims in ledger: 3474
+- pending audits in queue: 1689
+- claims with runner path: 3242
+- claims with no runner declared: 232
 - claims whose runner file is missing: 0
-- pending claims with helper imports: 389 / 1593
+- pending claims with helper imports: 390 / 1614
 
 ## Boundary
 

@@ -17,7 +17,7 @@ read as an audit verdict, claim promotion, or retained-status proposal.
 Post-rebase verification note: targeted guard, cache, path-canonicalization,
 py-compile, unittest, and whitespace checks pass. Strict audit lint currently
 fails on the same 30 retained-row note-hash drift errors, 3 stale-dispatch
-warnings, and 261 notices on detached `origin/main`; that baseline drift is not
+warnings, and 264 notices on detached `origin/main`; that baseline drift is not
 introduced by this PR.
 
 PR:
@@ -26,7 +26,7 @@ PR:
 - Base: `main`
 - Head: `physics-loop/audit-unblock-block129-20260620`
 - Rebase checkpoint: replayed the block129 guard work onto
-  `origin/main` at `ca3f6f8d3` so the PR remains independent of block128.
+  `origin/main` at `678b38ce7` so the PR remains independent of block128.
 
 Next exact action: commit this post-rebase metadata, push the rebased branch,
 update PR #4499 base/body, then continue with the next independent

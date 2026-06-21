@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1466 |
-| Retained-grade rows, including boxed decorations | 1396 |
-| Retained positive theorems | 205 |
+| Applied audit verdicts | 1462 |
+| Retained-grade rows, including boxed decorations | 1391 |
+| Retained positive theorems | 203 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 933 |
+| Retained bounded rows | 930 |
 | Boxed decorations under retained parents | 53 |
 | Open gates | 34 |
-| Unaudited rows | 1675 |
+| Unaudited rows | 1680 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 22 |
@@ -33,19 +33,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1682 |
-| Ready rows | 121 |
+| Total pending rows | 1686 |
+| Ready rows | 119 |
 | Cycle-break targets | 9 |
 | Critical pending | 306 |
 | High pending | 302 |
-| Medium pending | 490 |
-| Leaf pending | 584 |
+| Medium pending | 491 |
+| Leaf pending | 587 |
 
 Next ready rows by queue order:
 
-- [`koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`flavor_asymmetry_2over9_forced_weight_2026-05-31`](../../docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md) - critical; audit_in_progress
 - [`koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
+- [`koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`koide_aps_block_by_block_forcing_note_2026-04-21`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md) - critical; audit_in_progress
 - [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
@@ -57,13 +57,13 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **435**.
+- Non-retained-grade cited rows in publication tables: **436**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 167 |
 | high | `unaudited` | 166 |
-| medium | `unaudited` | 95 |
+| medium | `unaudited` | 96 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
 | critical | `audited_renaming` | 1 |

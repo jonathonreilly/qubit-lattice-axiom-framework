@@ -38,7 +38,13 @@ verification:
   exact_readout_map_parent: "PASS=11 FAIL=0"
   py_compile: pass
 review_verdict: branch_local_pass_no_audit
-pr_status: pending
-pr_identity: null
-next_exact_action: "publish block30 PR and record identity"
+pr_status: open
+pr_identity:
+  number: 4559
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4559
+  title: "[physics-loop] s3-route2-readout-endpoint block30 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block30-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "attack W1 directly or search for an equivalent E-center primitive"
 stop_condition: null

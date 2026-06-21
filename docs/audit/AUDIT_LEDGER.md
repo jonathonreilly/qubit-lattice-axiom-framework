@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 203 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 947 |
+| **retained_bounded** | 948 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1664 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 20 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1360 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1361 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -195,6 +193,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_cluster_decomposition_temporal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2313,6 +2312,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Near k=0, E_k ~ |k|^2, so I_d(L) has the continuum scaling proxy integral_{1/L}^1 r^{d-3} dr, giving linear/log divergences for d=1,2 and finite behavior for d>=3.  _(class `A`)_
 - **chain closes:** True — The small-k expansion 2(1-cos k_mu) ~ k_mu^2 and the radial integral test give the stated threshold. The finite table entries are actually computed by the runner and independently match the displayed values; no Ward normalization, no-SSB theorem, D9 kernel authority, or substrate-minimality conclusion is imported.
 - **rationale:** The narrowed claim is a mathematical IR-sum scaling statement from the displayed lattice dispersion and standard integral comparison, not an external Coleman-Mermin-Wagner theorem. The runner source enumerates the lattice sums rather than printing constants, and its E0-E3 checks all pass. The formula inventory check finds the displayed small-k scaling, radial exponent, divergence classes, and quantitative table entries consistent with the note's definitions. The explicit non-claims prevent the earlier Ward/SSB/D9/substrate-minimality gaps from being load-bearing here.
+- **auditor confidence:** high
+
+### `axiom_first_cpt_theorem_stretch_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-matrix theorem for the explicitly supplied pure KS carrier M=mI+M_KS on finite even 4D blocks with periodic/APBC wrap signs: Θ_CPT is an involution and satisfies Θ_CPT M Θ_CPT^{-1}=M^*, with the fermion-sector determinant/action/Theta_CPT-odd expectation consequences on that carrier only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-axiom_first_cpt_theorem_stretch_note_2026-04-29-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The corrected composition Θ_CPT := (E Σ_PT R_b)K gives Θ_CPT M Θ_CPT^{-1} = E(Σ_PT R_b M R_b^{-1}Σ_PT)E = E M^T E = M = M^*.  _(class `A`)_
+- **chain closes:** True — The finite-matrix algebra closes from the explicit carrier definitions: E anticommutes with the hop part, the signed bond-centered reflection transposes M with the stated boundary convention, and their composition lands at M^*. The supplied runner source constructs the matrices on non-degenerate blocks, checks the boundary/sign identities, and includes falsifiers rather than merely printing expected PASS lines.
+- **rationale:** The load-bearing step is a direct algebraic identity over the explicitly defined finite KS matrix family, not a numerical match or definition substitution. The only framework authority used as baseline context is the accepted minimal-axiom premise; the staggered realization and SU(3) gauge-sector material is kept non-load-bearing for this in-block theorem. The runner source matches the proof surface by testing nonzero KS hopping, APBC/periodic boundary conventions, the corrected E-including composition, determinant reality, and falsification legs.
 - **auditor confidence:** high
 
 ### `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`

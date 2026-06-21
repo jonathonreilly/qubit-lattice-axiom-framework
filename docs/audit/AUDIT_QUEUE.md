@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1677
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 120
+**Total pending:** 1676
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 121
 
 By criticality:
-- `critical`: 318
+- `critical`: 317
 - `high`: 301
 - `medium`: 485
 - `leaf`: 573
@@ -15,8 +15,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | audit_in_progress | critical | 384 | 12.09 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cpt_check.py` |
-| 2 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | critical | 382 | 16.58 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py` |
+| 1 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | critical | 382 | 16.58 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py` |
+| 2 | `axiom_first_kms_condition_theorem_note_2026-05-01` | positive_theorem | unaudited | critical | 378 | 12.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_kms_condition_check.py` |
 | 3 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | audit_in_progress | critical | 374 | 12.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py` |
 | 4 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | unaudited | critical | 373 | 16.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py` |
 | 5 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | unaudited | critical | 371 | 15.54 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hw1_second_order_return_shape_theorem.py` |

@@ -1,0 +1,83 @@
+Route-2 dual-compliance bridge conditional-support checker
+Status: open / conditional-support; not an audit verdict.
+TRACE: upstream_support
+
+PART 1: current Route-2 surface markers
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: beta_E / alpha_E = 21/4
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: P(rho_E)
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: E-center = (1, 0, 1/6, 0)
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: exact missing-map obstruction
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md exists
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: inverse-square characterization
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: projector weights
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: 9/4
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: realized by no named functional
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md contains marker: source-domain rule that fixes the E-center endpoint weight
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md contains marker: readout-map primitive
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md contains marker: gamma_E(center)/gamma_E(shell) = 15/8
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md exists
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: open_gate route survey
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: readout-map endpoint triple is not yet derived
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: conditional Route-2 coupling family
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md exists
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md contains marker: valid for every admissible readout in the 1-parameter family
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md contains marker: Does **not** derive the readout-triple
+
+PART 2: same-domain Oh channel weights
+PASS: six-arm Oh support decomposes as A1 + E + T1
+PASS: A1 per-arm projector weight is 1/6
+      1/6
+PASS: E per-arm projector weight is 1/3
+      1/3
+PASS: T1 per-arm projector weight is 1/2
+      1/2
+PASS: same-domain leverage kappa=w_T/w_E is 3/2
+      3/2
+PASS: kappa squared is the target covariance ratio 9/4
+      9/4
+
+PART 3: dual-compliance conditional bridge
+PASS: dual-compliance exponent is explicitly p=2
+PASS: inverse-square channel law gives lambda_E/T = (w_E/w_T)^-2 = 9/4
+      9/4
+PASS: lambda_E/T equals kappa^2
+      9/4 vs 9/4
+PASS: granted T-side q_T remains 5/6
+      5/6
+PASS: q_E = q_T * lambda_E/T = 15/8
+      15/8
+PASS: rho_E = 6*(q_E-1) = 21/4
+      21/4
+PASS: rho_E/6 is the E-center lift increment 7/8
+      7/8
+PASS: c_TE = -2*q_T/q_E = -8/9
+      -8/9
+
+PART 4: wrong-exponent falsifiers
+PASS: only exponent p=2 hits lambda_E/T=9/4 in the tested local exponent window
+      {-3: Fraction(8, 27), -2: Fraction(4, 9), -1: Fraction(2, 3), 0: Fraction(1, 1), 1: Fraction(3, 2), 2: Fraction(9, 4), 3: Fraction(27, 8)}
+PASS: uniform exponent p=0 gives lambda_E/T=1, not target
+      1
+PASS: one-power dual exponent p=1 gives lambda_E/T=3/2, not target
+      3/2
+PASS: ordinary projector-square direction p=-2 gives lambda_E/T=4/9, not target
+      4/9
+PASS: current surface does not select p=2 from the exponent family
+
+PART 5: companion note hygiene
+PASS: QUARK_ROUTE2_DUAL_COMPLIANCE_BRIDGE_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md exists
+PASS: note contains marker: Actual current-surface status: open / conditional-support
+PASS: note contains marker: conditional on the dual-compliance premise
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not close the parent S3/Route-2 gate
+PASS: note contains marker: does not derive the endpoint triple on the current surface
+PASS: note contains marker: upstream_support
+PASS: note avoids overclaim: parent closure
+PASS: note avoids overclaim: unconditional endpoint derivation
+PASS: note avoids overclaim: bare retained
+PASS: note avoids overclaim: audit verdict
+
+TOTAL: PASS=51, FAIL=0
+VERDICT: conditional on a new dual-compliance p=2 readout primitive, the Route-2 endpoint triple follows exactly. The current surface still does not derive or adopt that premise.

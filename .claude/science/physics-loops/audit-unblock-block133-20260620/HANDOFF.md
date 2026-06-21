@@ -26,17 +26,16 @@ edit ledger rows, or assert retained status.
 
 - `python3 scripts/audit_runner_path_canonicalization_guard_2026_06_17.py` -> OK.
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.PrecomputeAuditRunnersTest` -> OK, 3 tests.
-- `python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_path_canonicalization_guard_2026_06_17.py --force --push-mode none --allow-non-main` -> OK, refreshed guard cache.
+- `python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_path_canonicalization_guard_2026_06_17.py --check-only --allow-non-main` -> OK, guard cache fresh.
 - `python3 scripts/precompute_audit_runners.py --pr-diff origin/physics-loop/audit-unblock-block132-20260620 --check-only --allow-non-main` -> OK.
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 80 tests passed.
-- `python3 docs/audit/scripts/audit_lint.py --strict` -> OK, notices only.
-- `python3 -m py_compile scripts/precompute_audit_runners.py scripts/audit_packet_script_deps.py scripts/codex_audit_runner.py scripts/audit_runner_path_canonicalization_guard_2026_06_17.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK.
+- `python3 -m py_compile scripts/precompute_audit_runners.py scripts/runner_cache.py scripts/audit_packet_script_deps.py scripts/codex_audit_runner.py scripts/audit_runner_path_canonicalization_guard_2026_06_17.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK.
 - `git diff --check` -> OK.
 
 ## Next Exact Action
 
-Monitor PR #4503 audit-lane check, then continue to the next audit-unblock
-target.
+Force-push the restacked branch, update PR #4503 body, then continue to the
+next stacked cleanup PR.
 
 ## PR
 

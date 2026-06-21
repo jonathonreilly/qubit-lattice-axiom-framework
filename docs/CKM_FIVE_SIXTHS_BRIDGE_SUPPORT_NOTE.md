@@ -145,15 +145,17 @@ This note upgrades the down-type mass-ratio lane in two ways:
 2. the scale qualifier is no longer just an unexplained PDG convention
    coincidence.
 
-The lane is still bounded, but it now carries an explicit current-main support
-stack:
+The lane is still bounded, but it now sits next to an explicit current-main
+support stack. The first and third bullets below are non-authority peer or
+downstream pointers for orientation; they are deliberately not one-hop
+dependencies of this `5/6` bridge support note.
 
-- GST support:
-  [CKM_FROM_MASS_HIERARCHY_NOTE.md](./CKM_FROM_MASS_HIERARCHY_NOTE.md)
+- GST support peer:
+  `CKM_FROM_MASS_HIERARCHY_NOTE.md`
 - `5/6` bridge support:
   this note
-- down-type extraction:
-  [DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md](./DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md)
+- down-type extraction downstream:
+  `DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md`
 
 ## What is not claimed
 

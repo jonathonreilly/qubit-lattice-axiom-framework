@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1489 |
+| Applied audit verdicts | 1490 |
 | Retained-grade rows, including boxed decorations | 1408 |
 | Retained positive theorems | 208 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 938 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1657 |
+| Unaudited rows | 1656 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 13 |
+| Audited conditional rows | 14 |
 | Audited renaming rows | 23 |
 | Audited numerical-match rows | 8 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1659 |
-| Ready rows | 118 |
+| Total pending rows | 1658 |
+| Ready rows | 117 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 289 |
+| High pending | 288 |
 | Medium pending | 490 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`ckm_five_sixths_bridge_support_note`](../../docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) - high; unaudited
 - [`yt_lsp_signed_record_source_readout_support_note_2026-05-24`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md) - high; unaudited
 - [`diamond_ideal_lockin_detector_theorem_note_2026-06-17`](../../docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md) - high; unaudited
 - [`native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 - [`flavor_readout_gate_equals_carrier_identification_2026-05-31`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md) - medium; unaudited
 - [`record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18`](../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
+- [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,13 +62,13 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 163 |
-| high | `unaudited` | 161 |
+| high | `unaudited` | 160 |
 | medium | `unaudited` | 95 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
+| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 1 |
-| high | `audited_conditional` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
-| High nodes | 511 |
-| Medium nodes | 971 |
+| High nodes | 510 |
+| Medium nodes | 972 |
 | Leaf nodes | 1562 |
 
 Top load-bearing rows by graph score:
@@ -93,5 +93,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
-- `key_terminology` - critical; 1126 descendants; score 46.638
+- `key_terminology` - critical; 1127 descendants; score 46.640
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

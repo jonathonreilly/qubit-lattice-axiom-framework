@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1657 |
+| unaudited | 1656 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 23 |
-| ~~audited_conditional~~ | 13 |
+| ~~audited_conditional~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1367 |
-| `audited_conditional` | 13 |
+| `audited_conditional` | 14 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1983 |
+| `unaudited` | 1982 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 509 |
-| `medium` | 928 |
+| `high` | 508 |
+| `medium` | 929 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -108,7 +108,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1127 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
 | 10 | `native_gauge_closure_note` | positive_theorem | critical | 1400 | 40.45 | `audited_clean` | **retained** |
@@ -1503,6 +1503,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -3535,6 +3536,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting w_A1=1/n_quark, w_perp=(n_quark-1)/n_quark, r^2=1/n_quark, lambda^2=alpha_s/n_pair, and A^2=n_pair/n_color forces rho=1/n_quark, eta=sqrt(n_quark-1)/n_quark, the stated phase identities, and J_0=alpha_s^3 sqrt(n_quark-1)/(n_pair^2 n_color n_quark).  _(class `A`)_
 - **chain closes:** True — Within the note's explicitly bounded scope, every claimed expression follows by direct substitution and simplification from the listed hypotheses. No excluded physical bridge, numerical alpha_s value, or external comparator is needed for this scoped theorem.
 - **rationale:** The audited claim is deliberately narrow: it asserts only algebraic consequences of stated symbolic hypotheses. The runner checks the same algebra at exact symbolic precision and reports 26 class-A passes with no failures. Because the note explicitly excludes derivation of the projector weights, CP radius, Wolfenstein inputs, physical CKM identification, and PDG comparison, those missing bridges do not block the scoped claim.
+- **auditor confidence:** high
+
+### `ckm_five_sixths_bridge_support_note`
+
+- **Note:** [`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`](../../docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded support claim that the asserted 5/6 CKM-to-down-mass bridge gives a +0.20% threshold-local self-scale match and a much worse same-scale match.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-ckm_five_sixths_bridge_support_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bounded bridge asserts |V_cb| = (m_s/m_b)^(5/6), so [alpha_s(v)/sqrt(6)]^(6/5) is compared to m_s(2 GeV)/m_b(m_b).  _(class `D`)_
+- **chain closes:** False — The arithmetic and runner checks close only after accepting the CKM-to-mass-ratio bridge and the threshold-local scale surface. The restricted packet does not derive either the bridge |V_cb| = (m_s/m_b)^(5/6) or the scale-selection rule from an axiom or retained input.
+- **rationale:** Issue: the note's only non-exact step is the physical bridge |V_cb| = (m_s/m_b)^(5/6), and the scale surface is selected by numerical comparison rather than derived. Why this blocks: the runner verifies algebra and comparator agreement, but does not compute the bridge or scale rule from framework primitives. Repair target: a theorem deriving the CKM-to-mass-ratio bridge and the threshold-local scale-selection rule, with a runner that constructs them rather than assuming them. Claim boundary until fixed: the note supports a bounded numerical coherence check, not a closed derivation.
 - **auditor confidence:** high
 
 ### `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10`

@@ -18,13 +18,13 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 163 |
-| high | `unaudited` | 161 |
+| high | `unaudited` | 160 |
 | medium | `unaudited` | 95 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
+| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 1 |
-| high | `audited_conditional` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |
@@ -228,7 +228,7 @@ publication tables phrase it.
 | high | `ckm_egyptian_bernoulli_closures_koide_bridge_support_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `ckm_ew_lattice_a4_bridge_retained_identity_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `ckm_first_row_magnitudes_theorem_note_2026-04-24` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
-| high | `ckm_five_sixths_bridge_support_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
+| high | `ckm_five_sixths_bridge_support_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | high | `ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `ckm_kaon_epsilon_k_jarlskog_decomposition_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |
 | high | `ckm_moduli_only_unitarity_jarlskog_area_certificate_theorem_note_2026-04-26` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md, USABLE_DERIVED_VALUES_INDEX.md |

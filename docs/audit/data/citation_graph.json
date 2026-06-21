@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "post_record_supplied_concentration_certificate_interface_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "post_record_supplied_orientation_bridge_interface_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12",
         "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12",
         "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
         "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
         "post_record_flow_thermal_stable_setting_certificate_2026-06-06",
         "post_record_persistent_record_production_bridge_prototype_2026-06-06",
         "post_record_source_measure_trace_normalization_prototype_2026-06-06",
-        "post_record_supplied_concentration_certificate_interface_2026-06-06"
+        "post_record_supplied_concentration_certificate_interface_2026-06-06",
+        "post_record_supplied_orientation_bridge_interface_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "305402cd41ecc999062a5232f0931d013d0b1896cfc31f0e57dd6ee1e6db2b3b",
+      "note_hash": "7ca5b016af2e2ae2fb514b3c595600c56925486e5f67db58bf4f097a09a86f39",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

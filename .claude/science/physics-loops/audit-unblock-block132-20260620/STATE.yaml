@@ -1,0 +1,48 @@
+loop: audit-unblock-block132-20260620
+campaign: audit-unblock-20260619
+block: 132
+mode: physics-loop
+branch: physics-loop/audit-unblock-block132-20260620
+base: physics-loop/audit-unblock-block131-20260620
+base_commit: 40de8d13a
+user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
+target_claim_id: null
+target_scope: "verified orphan runner-cache cleanup"
+target_status: open
+actual_current_surface_status: open
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: methodology
+reachability_to_target: supports
+artifact_role: tooling
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+lock_mode: degraded_branch_local
+lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
+current_result: "Deleted the 8 cache files that remained orphaned after header-runner and repo-reference safety guards; post-cleanup dry run reports 0 orphan candidates."
+pre_cleanup_state:
+  dry_run_candidates: 8
+  full_ledger_runner_state: "fresh=3120 stale=0 missing=0"
+post_cleanup_state:
+  dry_run_candidates: 0
+  full_ledger_runner_state: "fresh=3120 stale=0 missing=0"
+deleted_cache_files:
+  - logs/runner-cache/cl3_exact_tier_ewitness_2026_05_07_ewitness_pathB3.txt
+  - logs/runner-cache/cl3_exact_tier_ewitness_2026_05_07_ewitness_isotropic.txt
+  - logs/runner-cache/cl3_exact_tier_ewitness_2026_05_07_ewitness_pathB6.txt
+  - logs/runner-cache/cl3_c_iso_su3_nlo_2026_05_08_pathB_xi8_4cubed.txt
+  - logs/runner-cache/cl3_exact_tier_ewitness_2026_05_07_ewitness_pathC.txt
+  - logs/runner-cache/frontier_koide_dimensionless_objection_closure_review_2026_06_07.txt
+  - logs/runner-cache/cl3_exact_tier_ewitness_2026_05_07_ewitness_pathA.txt
+  - logs/runner-cache/cl3_c_iso_su3_nlo_2026_05_08_pathB_xi16_4cubed.txt
+files_touched:
+  - logs/runner-cache/*.txt
+  - .claude/science/physics-loops/audit-unblock-block132-20260620/*
+review_disposition: pass
+verification_status: pass
+pr_status: pending
+pr_url: null
+next_exact_action: "Commit, push branch, and open a stacked PR against physics-loop/audit-unblock-block131-20260620."
+stop_condition: "Block132 PR opened and verified; campaign continues to the next audit-unblock target while runtime remains."

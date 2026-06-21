@@ -1,9 +1,201 @@
 {
-  "live": [],
-  "live_count": 0,
+  "live": [
+    {
+      "actual_audit_status": "audited_clean",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "retained_bounded",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md"
+      ],
+      "audit_question": "Fresh-context re-audit: ignoring the archived failed causal_propagating_field_note row and stale 0.63 / 0.45 table, does the current live bounded finite replay in CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md audit clean under its narrowed configured-family scope?",
+      "blocked_by_group_ids": [],
+      "claim_id": "causal_propagating_field_live_packet_note_2026-06-05",
+      "deps": [],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "audited_clean",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "retained_bounded",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "the live re-audit bridge note as evidence",
+        "PR #4317 discussion as evidence",
+        "the archived causal_propagating_field_note as live evidence",
+        "the archived 0.63 / 0.45 table as evidence",
+        "prior audit verdicts as evidence",
+        "prior assistant discussion"
+      ],
+      "generated_order": 1,
+      "group_id": "causal_field_live_packet_fresh_context",
+      "group_order": 1,
+      "helper_runner_paths": [
+        "scripts/evolving_network_prototype_v6.py"
+      ],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md",
+      "queue_order": 1,
+      "ready": true,
+      "ready_blocker": null,
+      "runner_path": "scripts/causal_propagating_field.py",
+      "source_json_path": "docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
+        "docs/UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md"
+      ],
+      "audit_question": "Fresh-context review target: does UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md supply the route-exhaustion gate requested for UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes?",
+      "blocked_by_group_ids": [],
+      "claim_id": "universal_gr_polarization_frame_bundle_blocker_note",
+      "deps": [
+        "observable_principle_from_axiom_note",
+        "s3_anomaly_spacetime_lift_note",
+        "universal_gr_tensor_variational_candidate_note",
+        "universal_gr_tensor_quotient_uniqueness_note"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "PR #4313 discussion as evidence",
+        "prior assistant discussion",
+        "prior audit verdicts as evidence",
+        "generated audit queue output as evidence"
+      ],
+      "generated_order": 1,
+      "group_id": "universal_gr_picurv_parent_reaudit",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
+      "queue_order": 2,
+      "ready": false,
+      "ready_blocker": "blocked_by_dependency:observable_principle_from_axiom_note:audited_conditional,s3_anomaly_spacetime_lift_note:unaudited,universal_gr_tensor_variational_candidate_note:unaudited,universal_gr_tensor_quotient_uniqueness_note:unaudited",
+      "runner_path": "scripts/frontier_universal_gr_polarization_frame_bundle.py",
+      "source_json_path": "docs/audit/data/universal_gr_picurv_parent_reaudit_queue_2026-06-18.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    },
+    {
+      "actual_audit_status": "unaudited",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "unaudited",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+        "docs/ANOMALY_FORCES_TIME_BRIDGE_PREMISE_MANIFEST_RECHECK_NOTE_2026-06-17.md",
+        "docs/ANOMALY_FORCES_TIME_THEOREM.md",
+        "docs/ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md"
+      ],
+      "audit_question": "Fresh-context audit target after the bridge resolves: does ANOMALY_FORCES_TIME_THEOREM.md close only the d_t odd/parity result under its explicit bridge and retained dependencies, while leaving the d_t = 1 single-generator cap to the emergent-dynamics open gate?",
+      "blocked_by_group_ids": [
+        "anomaly_forces_time_bridge_fresh_context"
+      ],
+      "claim_id": "anomaly_forces_time_theorem",
+      "deps": [
+        "native_gauge_closure_note",
+        "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+        "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
+        "abj_epsilon_index_square_block_no_go_note_2026-05-30",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "the premise-manifest recheck note as audit verdict evidence",
+        "PR #4225 discussion as evidence",
+        "prior assistant discussion",
+        "prior audit verdicts as evidence",
+        "generated audit queue output as evidence"
+      ],
+      "generated_order": 2,
+      "group_id": "anomaly_forces_time_parent_after_bridge",
+      "group_order": 2,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md",
+      "queue_order": 3,
+      "ready": false,
+      "ready_blocker": "blocked_by_dependency:anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26:audited_conditional",
+      "runner_path": "scripts/frontier_anomaly_forces_time.py",
+      "source_json_path": "docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "live"
+    }
+  ],
+  "live_count": 3,
   "policy": "target_selection_only_not_audit_evidence",
-  "ready_count": 0,
+  "ready_count": 1,
   "resolved_or_invalid": [
+    {
+      "actual_audit_status": "audited_conditional",
+      "actual_claim_type": "bounded_theorem",
+      "actual_effective_status": "audited_conditional",
+      "allowed_context_paths": [
+        "docs/audit/README.md",
+        "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+        "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+        "docs/ANOMALY_FORCES_TIME_BRIDGE_PREMISE_MANIFEST_RECHECK_NOTE_2026-06-17.md",
+        "docs/ANOMALY_FORCES_TIME_THEOREM.md",
+        "docs/ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md"
+      ],
+      "audit_question": "Fresh-context re-audit target: under the current dependency-edge repair and premise manifest, does the anomaly-forces-time ABJ bridge validate as a bounded_theorem over explicit premises P-ABJ, P-HY, P-COMP, and P-REC without crediting native_gauge_closure for hypercharge, abelian values, or matter completion?",
+      "blocked_by_group_ids": [],
+      "claim_id": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
+      "deps": [
+        "native_gauge_closure_note",
+        "native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
+      ],
+      "dispatch_instruction": "Use this entry only to select the target claim. Do not pass the dispatcher manifest itself as audit evidence. Audit the target source note under restricted context and apply any retag through apply_audit.py.",
+      "dispatch_kind": "promotion_reaudit",
+      "expected_current_audit_status": "unaudited",
+      "expected_current_claim_type": "bounded_theorem",
+      "expected_current_effective_status": "unaudited",
+      "forbidden_context": [
+        "this dispatcher manifest as evidence",
+        "the premise-manifest recheck note as audit verdict evidence",
+        "PR #4225 discussion as evidence",
+        "prior assistant discussion",
+        "prior audit verdicts as evidence",
+        "generated audit queue output as evidence"
+      ],
+      "generated_order": 1,
+      "group_id": "anomaly_forces_time_bridge_fresh_context",
+      "group_order": 1,
+      "helper_runner_paths": [],
+      "must_not_use_manifest_as_evidence": true,
+      "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+      "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
+      "source_json_path": "docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json",
+      "source_schema": "promotion_reaudit_queue.v1",
+      "state": "resolved_or_superseded"
+    },
     {
       "actual_audit_status": "audited_clean",
       "actual_claim_type": "positive_theorem",
@@ -3042,13 +3234,16 @@
   ],
   "schema": "audit_dispatch_queue.v1",
   "source_json_paths": [
+    "docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json",
     "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json",
     "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json",
     "docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-29.json",
+    "docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json",
     "docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json",
     "docs/audit/data/promotion_reaudit_queue_2026-05-22.json",
     "docs/audit/data/provenance_reaudit_queue_2026-05-23.json",
-    "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json"
+    "docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json",
+    "docs/audit/data/universal_gr_picurv_parent_reaudit_queue_2026-06-18.json"
   ],
   "unsupported_source_json": []
 }

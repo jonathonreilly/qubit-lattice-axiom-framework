@@ -2,24 +2,31 @@
 
 This queue is generated from machine-readable dispatcher manifests. It is a target-selection surface only: dispatcher manifests must not be passed to auditors as evidence.
 
-**Live entries:** 0
-**Ready entries:** 0
+**Live entries:** 3
+**Ready entries:** 1
 **Resolved (post-manifest re-audit) entries:** 18
-**Resolved/invalid entries:** 43
+**Resolved/invalid entries:** 44
 **Retired entries:** 19
 
 Source sidecars:
+- `docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json`
 - `docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json`
 - `docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json`
 - `docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-29.json`
+- `docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json`
 - `docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json`
 - `docs/audit/data/promotion_reaudit_queue_2026-05-22.json`
 - `docs/audit/data/provenance_reaudit_queue_2026-05-23.json`
 - `docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json`
+- `docs/audit/data/universal_gr_picurv_parent_reaudit_queue_2026-06-18.json`
 
 ## Live Dispatch Entries
 
-_No live dispatch entries._
+| # | ready | group | claim_id | current | source note | audit question | ready_blocker |
+|---:|:---:|---|---|---|---|---|---|
+| 1 | Y | `causal_field_live_packet_fresh_context` | `causal_propagating_field_live_packet_note_2026-06-05` | bounded_theorem / audited_clean / retained_bounded | `docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md` | Fresh-context re-audit: ignoring the archived failed causal_propagating_field_note row and stale 0.63 / 0.45 table, does the current live bounded finite replay in CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md audit clean under its narrowed configured-family scope? |  |
+| 2 |  | `universal_gr_picurv_parent_reaudit` | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem / unaudited / unaudited | `docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md` | Fresh-context review target: does UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md supply the route-exhaustion gate requested for UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes? | blocked_by_dependency:observable_principle_from_axiom_note:audited_conditional,s3_anomaly_spacetime_lift_note:unaudited,universal_gr_tensor_variational_candidate_note:unaudited,universal_gr_tensor_quotient_uniqueness_note:unaudited |
+| 3 |  | `anomaly_forces_time_parent_after_bridge` | `anomaly_forces_time_theorem` | bounded_theorem / unaudited / unaudited | `docs/ANOMALY_FORCES_TIME_THEOREM.md` | Fresh-context audit target after the bridge resolves: does ANOMALY_FORCES_TIME_THEOREM.md close only the d_t odd/parity result under its explicit bridge and retained dependencies, while leaving the d_t = 1 single-generator cap to the emergent-dynamics open gate? | blocked_by_dependency:anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26:audited_conditional |
 
 ## Resolved By Post-Manifest Re-Audit
 
@@ -50,49 +57,50 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 
 | # | state | claim_id | current |
 |---:|---|---|---|
-| 1 | resolved_or_superseded | `native_gauge_closure_note` | positive_theorem / audited_clean / retained |
-| 2 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / audited_clean / retained |
-| 3 | resolved_or_superseded | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem / audited_clean / retained |
-| 4 | resolved_or_superseded | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem / audited_clean / retained |
-| 5 | resolved_or_superseded | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | positive_theorem / audited_clean / retained |
-| 6 | resolved_or_superseded | `scalar_3plus1_temporal_ratio_note` | positive_theorem / audited_clean / retained |
-| 7 | resolved_or_superseded | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem / audited_clean / retained |
-| 8 | resolved_or_superseded | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem / audited_clean / retained |
-| 9 | resolved_or_superseded | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem / audited_clean / retained |
-| 10 | resolved_or_superseded | `s3_taste_cube_decomposition_note` | positive_theorem / audited_clean / retained |
-| 11 | resolved_or_superseded | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem / audited_clean / retained |
-| 12 | resolved_or_superseded | `three_generation_observable_theorem_note` | positive_theorem / audited_clean / retained |
-| 13 | resolved_or_superseded | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 14 | resolved_or_superseded | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 15 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
-| 16 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | positive_theorem / unaudited / unaudited |
-| 17 | resolved_or_superseded | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / audited_clean / retained_bounded |
-| 18 | resolved_or_superseded | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | positive_theorem / unaudited / unaudited |
-| 19 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 20 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 21 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 22 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
-| 23 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
-| 24 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
-| 25 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
-| 26 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
-| 27 | resolved_or_superseded | `action_normalization_note` | no_go / audited_clean / retained_no_go |
-| 28 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
-| 29 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
-| 30 | resolved_or_superseded | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go / unaudited / unaudited |
-| 31 | resolved_or_superseded | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go / unaudited / unaudited |
-| 32 | resolved_or_superseded | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
-| 33 | resolved_or_superseded | `linear_response_second_order_kubo_note` | bounded_theorem / unaudited / unaudited |
-| 34 | resolved_or_superseded | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem / audited_renaming / audited_renaming |
-| 35 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
-| 36 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem / audited_clean / retained |
-| 37 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 |
-| 38 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 39 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
-| 40 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
-| 41 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 42 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 43 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 1 | resolved_or_superseded | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem / audited_conditional / audited_conditional |
+| 2 | resolved_or_superseded | `native_gauge_closure_note` | positive_theorem / audited_clean / retained |
+| 3 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / audited_clean / retained |
+| 4 | resolved_or_superseded | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem / audited_clean / retained |
+| 5 | resolved_or_superseded | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem / audited_clean / retained |
+| 6 | resolved_or_superseded | `gauge_vacuum_plaquette_reduction_existence_theorem_note` | positive_theorem / audited_clean / retained |
+| 7 | resolved_or_superseded | `scalar_3plus1_temporal_ratio_note` | positive_theorem / audited_clean / retained |
+| 8 | resolved_or_superseded | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | positive_theorem / audited_clean / retained |
+| 9 | resolved_or_superseded | `gauge_vacuum_plaquette_spectral_measure_theorem_note` | positive_theorem / audited_clean / retained |
+| 10 | resolved_or_superseded | `su3_wigner_intertwiner_block2_theorem_note_2026-05-03` | positive_theorem / audited_clean / retained |
+| 11 | resolved_or_superseded | `s3_taste_cube_decomposition_note` | positive_theorem / audited_clean / retained |
+| 12 | resolved_or_superseded | `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` | positive_theorem / audited_clean / retained |
+| 13 | resolved_or_superseded | `three_generation_observable_theorem_note` | positive_theorem / audited_clean / retained |
+| 14 | resolved_or_superseded | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 15 | resolved_or_superseded | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 16 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
+| 17 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | positive_theorem / unaudited / unaudited |
+| 18 | resolved_or_superseded | `luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22` | bounded_theorem / audited_clean / retained_bounded |
+| 19 | resolved_or_superseded | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | positive_theorem / unaudited / unaudited |
+| 20 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 21 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 22 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 23 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
+| 24 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
+| 25 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
+| 26 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
+| 27 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
+| 28 | resolved_or_superseded | `action_normalization_note` | no_go / audited_clean / retained_no_go |
+| 29 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
+| 30 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
+| 31 | resolved_or_superseded | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go / unaudited / unaudited |
+| 32 | resolved_or_superseded | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go / unaudited / unaudited |
+| 33 | resolved_or_superseded | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
+| 34 | resolved_or_superseded | `linear_response_second_order_kubo_note` | bounded_theorem / unaudited / unaudited |
+| 35 | resolved_or_superseded | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem / audited_renaming / audited_renaming |
+| 36 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
+| 37 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem / audited_clean / retained |
+| 38 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 |
+| 39 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 40 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
+| 41 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
+| 42 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 43 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 44 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
 
 ## Retired Dispatch Targets
 

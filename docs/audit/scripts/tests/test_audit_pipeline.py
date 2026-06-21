@@ -175,6 +175,34 @@ class PrecomputeAuditRunnersTest(unittest.TestCase):
         self.assertTrue(valid_cache.exists())
         self.assertFalse(gone_cache.exists())
 
+    def test_cleanup_orphans_preserves_cache_referenced_outside_cache_dir(self):
+        m = _import_precompute_audit_runners()
+        m.REPO_ROOT = self.tmp_root
+        m.CACHE_DIR = self.tmp_root / "logs" / "runner-cache"
+        m.CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+        referenced_cache = m.CACHE_DIR / "referenced_runner.txt"
+        referenced_cache.write_text("legacy cache without a live runner\n", encoding="utf-8")
+        unreferenced_cache = m.CACHE_DIR / "unreferenced_runner.txt"
+        unreferenced_cache.write_text("legacy cache without a live runner\n", encoding="utf-8")
+
+        note = self.tmp_root / "docs" / "REFERENCED_CACHE_NOTE.md"
+        note.parent.mkdir(parents=True, exist_ok=True)
+        note.write_text(
+            "The frozen evidence is `logs/runner-cache/referenced_runner.txt`.\n",
+            encoding="utf-8",
+        )
+
+        dry_run_orphans = m.cleanup_orphans(set(), dry_run=True)
+        self.assertEqual(dry_run_orphans, [unreferenced_cache])
+        self.assertTrue(referenced_cache.exists())
+        self.assertTrue(unreferenced_cache.exists())
+
+        deleted_orphans = m.cleanup_orphans(set(), dry_run=False)
+        self.assertEqual(deleted_orphans, [unreferenced_cache])
+        self.assertTrue(referenced_cache.exists())
+        self.assertFalse(unreferenced_cache.exists())
+
 
 class ApplyAuditTest(unittest.TestCase):
     def setUp(self):

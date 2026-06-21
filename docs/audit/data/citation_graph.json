@@ -53470,11 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
@@ -53483,6 +53483,10 @@
     {
       "from": "repo.front_door_status",
       "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_vertex_power_derivation"
     },
     {
       "from": "repo.front_door_status",
@@ -53495,10 +53499,6 @@
     {
       "from": "repo.front_door_status",
       "to": "dm_neutrino_weak_vector_theorem_note_2026-04-15"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
+        "yt_vertex_power_derivation",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "dm_neutrino_weak_vector_theorem_note_2026-04-15",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+        "dm_neutrino_weak_vector_theorem_note_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "983f1d1a9ac802c99fcc7ca669bdf06e4160b6bffdf4bae9c19573a31ca5d54d",
+      "note_hash": "490653f579d64b9f369f539e5abea0944a06dfcc0832c761f46a7d0a53385df3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

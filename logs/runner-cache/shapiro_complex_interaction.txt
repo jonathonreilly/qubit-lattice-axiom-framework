@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/shapiro_complex_interaction.py
-runner_sha256: 4b79832190efcbfed2ad1dcecd81d14e0f4a36ce38b8a362e666541b1cea0985
+runner_sha256: 61dbb71d849a9ea6a85a0d7e18e6b26950682b8b99b317345b6cf6a524c50a41
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 # Shapiro Complex Interaction Note
@@ -15,7 +15,7 @@ status: ok
 
 - [`scripts/shapiro_complex_interaction.py`](../scripts/shapiro_complex_interaction.py)
 - [`docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`](../docs/SHAPIRO_DIAMOND_BRIDGE_NOTE.md)
-- [`docs/CAUSAL_PROPAGATING_FIELD_NOTE.md`](../docs/CAUSAL_PROPAGATING_FIELD_NOTE.md)
+- [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
 - [`docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
 - [`docs/CAUSAL_MOVING_UNIFICATION_NOTE.md`](../docs/CAUSAL_MOVING_UNIFICATION_NOTE.md)
 - [`docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md`](../docs/CLAUDE_COMPLEX_ACTION_GROWN_COMPANION_NOTE.md)

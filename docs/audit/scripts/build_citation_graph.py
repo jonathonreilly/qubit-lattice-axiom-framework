@@ -88,6 +88,8 @@ RUNNER_SECTION_RE = re.compile(
 )
 HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
+SECTION_HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$", re.MULTILINE)
+CITATION_SKIP_SECTION_TITLES = {"cross-references (non-load-bearing)"}
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     # The atomic work-history note's primary runner is a packet verifier. Its
@@ -430,9 +432,33 @@ def resolve_link_target(link_target: str, source_path: Path) -> Path | None:
     return candidate
 
 
+def strip_citation_skip_sections(body: str) -> str:
+    """Remove non-load-bearing reference sections before link extraction."""
+    headings = list(SECTION_HEADING_RE.finditer(body))
+    if not headings:
+        return body
+
+    pieces: list[str] = []
+    cursor = 0
+    for i, heading in enumerate(headings):
+        title = heading.group(2).strip().lower()
+        if title not in CITATION_SKIP_SECTION_TITLES:
+            continue
+        pieces.append(body[cursor:heading.start()])
+        level = len(heading.group(1))
+        end = len(body)
+        for next_heading in headings[i + 1 :]:
+            if len(next_heading.group(1)) <= level:
+                end = next_heading.start()
+                break
+        cursor = end
+    pieces.append(body[cursor:])
+    return "".join(pieces)
+
+
 def extract_citations(body: str, source_path: Path) -> list[Path]:
     seen: dict[Path, None] = {}
-    for raw_target in LINK_RE.findall(body):
+    for raw_target in LINK_RE.findall(strip_citation_skip_sections(body)):
         target_path = resolve_link_target(raw_target, source_path)
         if target_path is None or target_path == source_path:
             continue

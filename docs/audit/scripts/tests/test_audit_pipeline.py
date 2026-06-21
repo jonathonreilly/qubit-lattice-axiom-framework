@@ -49,6 +49,34 @@ def _import_codex_audit_runner():
     return module
 
 
+def _import_precompute_audit_runners():
+    """Import the repo-root runner-cache precompute helper."""
+    module_name = "precompute_audit_runners_under_test"
+    if module_name in sys.modules:
+        del sys.modules[module_name]
+    scripts_dir = PROJECT_ROOT / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    spec = importlib.util.spec_from_file_location(
+        module_name, scripts_dir / "precompute_audit_runners.py"
+    )
+    module = importlib.util.module_from_spec(spec)
+    assert spec and spec.loader
+    spec.loader.exec_module(module)
+    return module
+
+
+def _import_repo_script(module_name: str, rel_path: str):
+    """Import a repo-root script by path without changing sys.path."""
+    if module_name in sys.modules:
+        del sys.modules[module_name]
+    spec = importlib.util.spec_from_file_location(module_name, PROJECT_ROOT / rel_path)
+    module = importlib.util.module_from_spec(spec)
+    assert spec and spec.loader
+    spec.loader.exec_module(module)
+    return module
+
+
 class CleanLedgerFixture:
     """Build a minimal but valid audit_ledger.json + citation_graph.json
     on a temporary REPO_ROOT for unit-style testing."""
@@ -366,6 +394,79 @@ class BuildCitationGraphParserTest(unittest.TestCase):
         finally:
             m.REPO_ROOT = original
         self.assertEqual(helpers, {"gate_b_connectivity_tolerance", "plain_helper"})
+
+    def test_cross_reference_section_links_are_not_citation_edges(self):
+        m = _import("build_citation_graph")
+        original_repo = m.REPO_ROOT
+        original_docs = m.DOCS_DIR
+        try:
+            m.REPO_ROOT = self.tmp_root.resolve()
+            m.DOCS_DIR = (self.tmp_root / "docs").resolve()
+            m.DOCS_DIR.mkdir(parents=True, exist_ok=True)
+            source = m.DOCS_DIR / "SOURCE.md"
+            live = m.DOCS_DIR / "LIVE.md"
+            skipped = m.DOCS_DIR / "SKIPPED.md"
+            after = m.DOCS_DIR / "AFTER.md"
+            for path in (source, live, skipped, after):
+                path.write_text(f"# {path.stem}\n", encoding="utf-8")
+
+            body = (
+                "# Source\n\n"
+                "[Live](LIVE.md)\n\n"
+                "## Cross-references (non-load-bearing)\n\n"
+                "[Skipped](SKIPPED.md)\n\n"
+                "### Details\n\n"
+                "[Still skipped](SKIPPED.md)\n\n"
+                "## Proof\n\n"
+                "[After](AFTER.md)\n"
+            )
+
+            citations = m.extract_citations(body, source)
+        finally:
+            m.REPO_ROOT = original_repo
+            m.DOCS_DIR = original_docs
+
+        self.assertEqual(citations, [live, after])
+
+
+class SourceGraphRepairPassTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.docs_dir = self.tmp_root / "docs"
+        self.data_dir = self.docs_dir / "audit" / "data"
+        self.data_dir.mkdir(parents=True, exist_ok=True)
+
+    def _module(self):
+        m = _import_repo_script(
+            "source_graph_repair_pass_under_test",
+            "scripts/source_graph_repair_pass.py",
+        )
+        m.REPO_ROOT = self.tmp_root.resolve()
+        m.DOCS_DIR = self.docs_dir.resolve()
+        m.AUDIT_DATA = self.data_dir.resolve()
+        return m
+
+    def test_apply_repair_deactivates_live_link_and_adds_cross_reference(self):
+        source = self.docs_dir / "SOURCE_NOTE.md"
+        source.write_text(
+            "# Source\n\n"
+            "The context cites [Target](TARGET_NOTE.md) but does not depend on it.\n",
+            encoding="utf-8",
+        )
+        (self.docs_dir / "TARGET_NOTE.md").write_text("# Target\n", encoding="utf-8")
+        m = self._module()
+
+        result = m.apply_repair_for_note(source, {"target_note"})
+
+        updated = source.read_text(encoding="utf-8")
+        self.assertTrue(result["changed"])
+        self.assertEqual(result["links_rewritten"], 1)
+        self.assertIn("`Target` but does not depend on it", updated)
+        self.assertIn("## Cross-references (non-load-bearing)", updated)
+        self.assertIn("- [Target](TARGET_NOTE.md)", updated)
+        self.assertEqual(m.find_markdown_links_to(updated, "target_note"), [])
 
 
 class SeedLedgerTest(unittest.TestCase):

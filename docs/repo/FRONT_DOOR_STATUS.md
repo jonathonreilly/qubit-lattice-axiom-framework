@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1627 |
-| Retained-grade rows, including boxed decorations | 1502 |
+| Applied audit verdicts | 1628 |
+| Retained-grade rows, including boxed decorations | 1503 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
-| Retained bounded rows | 1008 |
+| Retained bounded rows | 1009 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 39 |
-| Unaudited rows | 1519 |
+| Unaudited rows | 1518 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 45 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1521 |
-| Ready rows | 29 |
+| Total pending rows | 1520 |
+| Ready rows | 28 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 505 |
+| Leaf pending | 504 |
 
 Next ready rows by queue order:
 
-- [`lattice_total_momentum_conservation_theorem_note_2026-05-02`](../../docs/LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17`](../../docs/N5_SINGLE_GENERATOR_CLOCK_EXCHANGE_INVARIANCE_NARROW_NO_GO_NOTE_2026-06-17.md) - medium; unaudited
 - [`native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02`](../../docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - medium; unaudited
 - [`post_record_flow_thermal_stable_setting_certificate_2026-06-06`](../../docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md) - medium; unaudited
-- [`post_record_persistent_record_production_bridge_prototype_2026-06-06`](../../docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md) - leaf; unaudited
+- [`post_record_persistent_record_production_bridge_prototype_2026-06-06`](../../docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md) - medium; unaudited
+- [`post_record_source_measure_trace_normalization_prototype_2026-06-06`](../../docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -89,10 +89,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
-- `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
-- `observable_principle_from_axiom_note` - critical; 921 descendants; score 63.349
-- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
-- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
-- `minimal_axioms_2026-05-03` - critical; 1034 descendants; score 49.015
-- `key_terminology` - critical; 1127 descendants; score 47.640
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 899 descendants; score 45.314
+- `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
+- `observable_principle_from_axiom_note` - critical; 920 descendants; score 63.347
+- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
+- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
+- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
+- `key_terminology` - critical; 1126 descendants; score 47.638
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312

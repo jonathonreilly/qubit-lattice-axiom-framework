@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 962 |
+| **retained_bounded** | 963 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1609 |
+| unaudited | 1608 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1398 |
+| `audited_clean` | 1399 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1935 |
+| `unaudited` | 1934 |
 
 | claim_type | count |
 |---|---:|
@@ -365,6 +365,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `dimension_selection_upper_bound_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dirac_decoherence_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4962,6 +4963,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The runner table reports that d=1,2 fail the attractive-gravity/beta lower-bound criteria while d=3,4,5 pass them, and the finite-k derivative bridge certifies the same d<=2 away versus d>=3 toward sign transition for the runner centroid observable.  _(class `C`)_
 - **chain closes:** True — The primary runner and exposed helpers compute the finite-k centroid derivative, finite-M centroid replay, beta fits, alpha entries, and I3 check for the stated runner inputs. An independent direct matrix-recursion check reproduces the displayed sign transition and table values within numerical tolerance.
 - **rationale:** The cited finite-k bridge is retained-bounded and directly supplies the runner-specific sign certificate, while the helper sources expose the original beta/I3 computation and cache freshness checks. The source note explicitly narrows the claim to finite-runner lower-bound support and disclaims unique d=3 selection, framework-internal derivation of the all-d potential family, and any axiom rewrite. Within that bounded scope, the computation closes without external comparator input or definition substitution.
+- **auditor confidence:** high
+
+### `dimension_selection_upper_bound_textbook_import_note_2026-05-17`
+
+- **Note:** [`DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md`](../../docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-set upper-bound wrapper: compose the retained-bounded lower packet {3,4,5} with the native stable-circular-orbit upper edge d <= 3, while treating Coulomb scaling as weaker companion support only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-dimension_selection_upper_bound_textbook_import_note_2026-05-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the current finite packet, L_runner = {3,4,5} and the native stable-orbit upper edge U_stable = {d : d <= 3}, so L_runner intersect U_stable = {3}.  _(class `A`)_
+- **chain closes:** True — The cited lower-bound packet supplies L_runner = {3,4,5}, and the cited native stable-orbit support supplies the d <= 3 edge for the checked packet. Their finite intersection is exactly {3}; the Coulomb companion gives only {3,4} and is correctly not used as the selector.
+- **rationale:** The decisive operation is a finite-set algebraic composition over retained-bounded inputs, not a new first-principles derivation of dimension selection. The runner mostly verifies dependency/prose boundaries and cache surfaces, plus the simple set intersections; this matches the wrapper scope and does not overclaim a framework-native Bertrand theorem, hydrogen spectrum, or atomic-stability theorem. Within that bounded scope, the conclusion follows from the cited inputs without a load-bearing textbook import.
 - **auditor confidence:** high
 
 ### `dimensional_gravity_table`

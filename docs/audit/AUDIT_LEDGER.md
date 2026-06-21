@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1664 |
+| unaudited | 1663 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
-| `decoration_under_cl3_color_automorphism_theorem` | 6 |
+| `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_cpt_exact_note` | 4 |
@@ -63,16 +63,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 10 |
 | `audited_clean` | 1360 |
 | `audited_conditional` | 11 |
-| `audited_decoration` | 53 |
+| `audited_decoration` | 54 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1990 |
+| `unaudited` | 1989 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1809 |
-| `decoration` | 54 |
+| `bounded_theorem` | 1808 |
+| `decoration` | 55 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
@@ -1529,6 +1529,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `gate_b_weak_field_source_action_interface_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | cross_family | codex-gpt-5.5 | A | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
@@ -7380,6 +7381,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Equating the two abstract constraints F^2 = c0 and F^2 = g^2/(2N) gives g^2 = 2 N c0, so on the positive branch g = sqrt(2 N c0) when c0 > 0.  _(class `A`)_
 - **chain closes:** True — The theorem follows by direct substitution and multiplication by 2N over the stated positive-real domain, with the c0=0 boundary explicitly excluded by g>0. The runner verifies the symbolic identity, positive branch, rational instances, non-unit counterexamples, and scope disclaimers with PASS=39, FAIL=0.
 - **rationale:** The scoped claim closes as pure algebra: the two hypotheses give c0 = g^2/(2N), hence g^2 = 2Nc0, and the positive branch is unique for c0>0. The specific g=1 result is correctly limited to pairs satisfying 2Nc0=1, with the note and runner showing that other pairs such as (N,c0)=(1,1) force different values. This audit does not ratify the physical Ward-route premises or any claim that those abstract variables are fixed by Cl(3), Wilson, or SU(N_c) structure.
+- **auditor confidence:** high
+
+### `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07`
+
+- **Note:** [`G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md`](../../docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Bounded algebraic R1-R3 only: on the retained algebraic SU(3) triplet trace-form surface, the Hilbert-Schmidt form is unique up to scalar and scalar generator dilations preserve both trace Gram and Casimir only for c = +/-1.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_color_automorphism_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A scalar dilation T_a -> c T_a sends both B_HS(T_a,T_b) and sum_a T_a T_a to c^2 times their original values, so preserving the trace Gram and quadratic Casimir forces c^2 = 1.  _(class `A`)_
+- **chain closes:** True — Within the narrowed algebraic scope, the conclusion follows from the retained SU(3) triplet embedding and trace normalization plus standard simplicity/Killing-form and Casimir linear algebra. The out-of-scope Wilson, connection-equivalence, physical-color, and absolute g_bare readings are not used.
+- **rationale:** The R1-R3 algebra is correct as a finite Lie-algebra consequence of the retained CL3 color automorphism triplet trace-normalization surface, with the graph-first SU(3) note only corroborating the same carrier. The runner constructs the Gell-Mann matrices and verifies trace Gram, Casimir scaling, sampled Ad-invariance, and source-scope firewall checks; it uses no external comparator or tuned data. Because the audited content is an exact algebraic corollary of the upstream SU(3) triplet surface plus standard Killing/Casimir mathematics, it is decoration rather than an independent clean theorem.
+- **decoration parent:** `cl3_color_automorphism_theorem`
 - **auditor confidence:** high
 
 ### `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`

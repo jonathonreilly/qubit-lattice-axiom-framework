@@ -103190,7 +103190,7 @@
         "dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2c937b38c54d0a0e4e8b2accf9099bac852cacb68e2968490c1e3e1b150ad2b3",
+      "note_hash": "cbb454287fa253381f27cae7513ab805933b4329e963ee3ff8d00d11f5ca4775",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 204 |
+| **retained** | 205 |
 | **retained_no_go** | 205 |
 | **retained_bounded** | 931 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1678 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1351 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1352 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 22 |
@@ -124,9 +123,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
-| 23 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
-| 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
-| 25 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | critical | 1005 | 30.97 | `audited_clean` | **retained** |
+| 23 | `left_handed_charge_matching_note` | decoration | critical | 1131 | 32.65 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
+| 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
 
 
 ## Applied audits
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1295,6 +1293,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
+| `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18094,6 +18093,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the uniform-pairing ansatz, the runner computes the L_s=2 cube index graph with 8 components and 24 links, giving d_lambda^(-16) and P_candidate(6)=0.4291049969, below P_target(6)=0.5935306800 by 0.1644256831.  _(class `C`)_
 - **chain closes:** True — The controlling runner does more than compare two supplied numbers: it constructs the finite cube plaquette/index graph, computes the SU(3) character coefficients, forms the candidate rho profile, and solves the Perron problem. The hard-coded expected constants are regression checks against the computed result, not the source of the Perron value. The source note is narrowly scoped to the uniform-pairing shortcut route, so the no-go does not overclaim actual Wigner/intertwiner trace failure or bridge-theorem closure.
 - **rationale:** The controlling runner does more than compare two supplied numbers: it constructs the finite cube plaquette/index graph, computes the SU(3) character coefficients, forms the candidate rho profile, and solves the Perron problem. The hard-coded expected constants are regression checks against the computed result, not the source of the Perron value. The source note is narrowly scoped to the uniform-pairing shortcut route, so the no-go does not overclaim actual Wigner/intertwiner trace failure or bridge-theorem closure.
+- **auditor confidence:** high
+
+### `su3_cubic_anomaly_cancellation_theorem_note_2026-04-24`
+
+- **Note:** [`SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md`](../../docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact SU(3)^3 cubic anomaly cancellation on the scoped one-generation color-sector carrier Q_L:3 with weak multiplicity 2 and u_R^c,d_R^c:3bar.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-su3_cubic_anomaly_cancellation_theorem_note_2026-04-24-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the scoped left-handed conjugate color carrier, the SU(3)^3 anomaly index is sum_i m_i A(R_i) = +2 - 1 - 1 = 0.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade inputs supply the SU(3) carrier, Q_L weak-doublet color triplet block, scoped u_R/d_R color-sector slots, and A(3bar) = -1 conjugate-index map. Finite trace linearity then gives the displayed integer cancellation; full matter closure, branch selection, and uniqueness are outside the audited scope.
+- **rationale:** The load-bearing step is a finite algebraic anomaly-index sum over retained-grade scoped inputs, not a definition, renaming, tuned numerical match, or external comparator. The runner verifies the Gell-Mann trace normalization, the conjugate-index sign, the integer matter-content sum, extension controls, and source-boundary wording; it hard-codes the scoped carrier, but that carrier is the declared input surface rather than a derived conclusion. Residual questions about deriving the full right-handed sector, neutral branch, absolute hypercharge labelling, chirality/time selection, or uniqueness among all anomaly-free color completions are explicitly excluded from this claim.
 - **auditor confidence:** high
 
 ### `su3_dabc_symmetric_theorem_note_2026-05-02`

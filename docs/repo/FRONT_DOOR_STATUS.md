@@ -12,9 +12,9 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1466 |
-| Retained-grade rows, including boxed decorations | 1393 |
-| Retained positive theorems | 204 |
+| Applied audit verdicts | 1467 |
+| Retained-grade rows, including boxed decorations | 1394 |
+| Retained positive theorems | 205 |
 | Retained no-go rows | 205 |
 | Retained bounded rows | 931 |
 | Boxed decorations under retained parents | 53 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1682 |
-| Ready rows | 127 |
+| Total pending rows | 1681 |
+| Ready rows | 126 |
 | Cycle-break targets | 9 |
-| Critical pending | 301 |
+| Critical pending | 300 |
 | High pending | 302 |
 | Medium pending | 491 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`su3_cubic_anomaly_cancellation_theorem_note_2026-04-24`](../../docs/SU3_CUBIC_ANOMALY_CANCELLATION_THEOREM_NOTE_2026-04-24.md) - critical; audit_in_progress
 - [`koide_aps_block_by_block_forcing_note_2026-04-21`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md) - critical; audit_in_progress
 - [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
 - [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
@@ -51,13 +50,14 @@ Next ready rows by queue order:
 - [`quark_route2_exact_readout_map_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - critical; unaudited
 - [`koide_q_readout_factorization_theorem_2026-04-22`](../../docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md) - high; unaudited
 - [`dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md) - high; unaudited
+- [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **436**.
+- Non-retained-grade cited rows in publication tables: **435**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -66,7 +66,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 96 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |

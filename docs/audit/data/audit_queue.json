@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 292,
-    "high": 284,
+    "high": 283,
     "leaf": 588,
     "medium": 478
   },
@@ -8462,41 +8462,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
-        "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
-        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
-        "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
-        "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-        "plaquette_self_consistency_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
-        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
-        "scripts/dm_leptogenesis_exact_common.py"
-      ],
-      "load_bearing_score": 8.172,
-      "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
-      "transitive_descendants": 50
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17735,17 +17700,17 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/action_power_canonical_harness.py"
       ],
-      "load_bearing_score": 4.407,
+      "load_bearing_score": 5.585,
       "note_path": "docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/lattice_3d_inverse_square_kernel.py",
-      "transitive_descendants": 14
+      "transitive_descendants": 23
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49243,6 +49208,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 110,
-  "total_pending": 1642
+  "ready_count": 109,
+  "total_pending": 1641
 }

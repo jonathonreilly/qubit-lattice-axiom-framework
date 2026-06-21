@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1640 |
+| unaudited | 1639 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 16 |
+| ~~audited_conditional~~ | 17 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1376 |
-| `audited_conditional` | 16 |
+| `audited_conditional` | 17 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1966 |
+| `unaudited` | 1965 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 510 |
-| `medium` | 927 |
+| `high` | 509 |
+| `medium` | 928 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -1514,6 +1514,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -5275,6 +5276,23 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** alpha_bare < alpha_lo < alpha_hi, R(alpha_lo)_hi < R(alpha_hi)_lo, and Omega_DM(alpha_lo)_hi < Omega_DM(alpha_hi)_lo.  _(class `A`)_
 - **chain closes:** True — Within the stated boundary, the conclusion follows directly from the helper-computed/displayed numeric intervals and strict inequality checks. The packet does not close any stronger claim about endpoint selection, helper completeness, or independent retained status of the helper layer, but those claims are explicitly excluded.
 - **rationale:** The load-bearing step is a bounded arithmetic certificate over supplied helper-defined outputs, not a first-principles selector derivation. The primary runner calls the included helper functions, checks endpoint ordering and interval disjointness, and the cached run reports PASS=8 FAIL=0 with values matching the note. The cited dependency links are retained-bounded bookkeeping links and are not used to broaden the audited scope.
+- **auditor confidence:** high
+
+### `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17`
+
+- **Note:** [`DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional supplied-premise interval-composition certificate for same-surface DM thermal endpoint bounds and admitted one-scalar root bracketing, using retained-bounded thermal/channel authorities plus supplied live constants and selector/packet premises.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the endpoint constants and certified helper enclosures, the interval arithmetic, disjointness, target bracketing, and one-scalar root bracketing all close in the visible runner.  _(class `B`)_
+- **chain closes:** False — The local interval arithmetic and bracketing close over the supplied helper packet, but the restricted packet still imports the live plaquette/eta/Omega constants and packet-completeness/selector premise. The provided primitive registry does not supply those DM constants or selector bridge.
+- **rationale:** The runner does real interval/bracketing work and the displayed endpoint/root checks pass, but it imports load-bearing helper constants and certified-enclosure routines rather than deriving the live DM packet from framework primitives. The live constants edge certificate is only bounded support and explicitly does not derive CANONICAL_PLAQUETTE = 0.5934, ETA_OBS, or OMEGA_DM_OBS; PLAQUETTE_SELF_CONSISTENCY_NOTE likewise withholds the canonical 0.5934 value. The packet-completeness/selector premise remains open even on the source note's own terms, so the row is a valid conditional interval certificate rather than a clean closure theorem.
+- **open / conditional deps cited:**
+  - `DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md`
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md`
 - **auditor confidence:** high
 
 ### `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16`

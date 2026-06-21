@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "diamond_ideal_lockin_detector_theorem_note_2026-06-17"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
         "single_axiom_hilbert_note",
         "ckm_five_sixths_bridge_support_note",
-        "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
+        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
+        "diamond_ideal_lockin_detector_theorem_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a4ae872236696060179ed438e8f43f648de39b8f4360693931e96d5a8200ad84",
+      "note_hash": "bf14ac484a4fce7b02c4003baef12b12afb363b8e56d688e4952ed99a99bb572",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

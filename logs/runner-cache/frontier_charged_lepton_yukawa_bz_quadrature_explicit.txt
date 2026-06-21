@@ -1,0 +1,156 @@
+===== runner cache v1 =====
+runner: scripts/frontier_charged_lepton_yukawa_bz_quadrature_explicit.py
+runner_sha256: da7075db85ba69d2ebd5cc57f7c745a011f0d47d6dcbe4e4af7f02a0d445a7b2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+
+========================================================================================
+Charged-Lepton Yukawa BZ Matching Boundary Cross-Check
+========================================================================================
+
+The identification y_τ^bare = α_LM/(4π) · C_τ is a RETAINED TREE-
+LEVEL IDENTIFICATION, not a 1-loop BZ integral. This runner:
+  - Confirms the retained YT_P1 BZ machinery runs and converges on
+    the scalar-vertex matching coefficient I_v_scalar.
+  - Shows the current BZ coefficient is large, not a small correction.
+  - Keeps y_τ = α_LM/(4π) · C_τ as a separate tree-level
+    bounded identification from α_LM, 1/(4π), and C_τ = 1.
+
+
+========================================================================================
+Part A — Import retained YT_P1 BZ quadrature machinery
+========================================================================================
+  Retained primitives imported from YT_P1 BZ quadrature:
+    ALPHA_LM           = 0.090668
+    u_0 (tadpole)      = 0.877681
+    C_F (SU(3) color)  = 1.333333  (used by top quark, NOT by lepton)
+    4π                 = 12.566371
+
+  BZ grid at N=8: shape (4, 8, 8, 8, 8), dk = 2.441406e-04
+[PASS] A.1 Retained YT_P1 BZ quadrature machinery imports successfully
+       build_bz_grid, D_psi_full, D_gluon_full, F_scalar_ps_per_mu,
+       integrate_I_v_scalar_full all available from retained runner.
+
+========================================================================================
+Part B — Run retained scalar-vertex BZ integral (I_loop convergence)
+========================================================================================
+  Evaluating the 4D BZ integral at grid sizes N = 16, 24, 32.
+  (At N=48, 64 the calculation is ~5 min; these sizes are tractable
+   and show grid convergence of the physical matching coefficient.)
+
+    N = 16:  I_v_scalar(lattice) = 32.170410
+    N = 24:  I_v_scalar(lattice) = 32.359271
+    N = 32:  I_v_scalar(lattice) = 32.408675
+
+  Grid convergence: N=16 → N=24 → N=32:
+    Δ(16→24) = 0.584%
+    Δ(24→32) = 0.152%
+    Monotone convergence as expected for smooth integrand.
+[PASS] B.1 BZ integral converges under grid refinement (<2% N=24→32)
+       Δ(N=24→N=32) = 0.152% < 2% target (retained systematic 5%)
+
+  YT_P1 matching coefficient structure at N=32:
+    Total I_v_scalar = 32.4087
+    Continuum offset = 2.0 (I_S^CL)
+    Lattice artifact = 30.4087
+    (the lattice artifact is what the BZ quadrature computes;
+     the continuum offset is a retained analytical value)
+[PASS] B.2 I_v_scalar is outside the old small-coefficient range [4, 10]
+       I_v_scalar(N=32) = 32.4087; this is not in [4, 10].
+       The BZ integral is a large matching coefficient on the current normalization.
+
+========================================================================================
+Part C — Framework tree-level y_τ = α_LM/(4π) + retained matching
+========================================================================================
+  Framework identification on retained canonical surface:
+
+    y_τ^bare = α_LM / (4π) · C_τ   (TREE-LEVEL retained)
+            = 0.09066783601728631 / (4π) · 1
+            = 0.0072151171
+
+  This identification does NOT require a separate BZ-quadrature
+  verification — α_LM and 1/(4π) are retained primitives and the
+  Casimir C_τ = 1 is explicit (gauge-by-gauge enumeration).
+
+  Framework tree-level y_τ^bare        = 0.0072151171
+  Observed y_τ = m_τ/v_EW              = 0.0072147136
+  m_τ (tree-level)  = 1776.96 MeV
+  PDG m_τ           = 1776.86 MeV
+  Deviation: 0.0056%
+[PASS] C.1 Framework tree-level y_τ^bare = α_LM/(4π) · C_τ matches PDG at <0.01%
+       y_τ^bare = 7.215117e-03, y_τ^obs = 7.214714e-03
+       m_τ prediction: 1776.96 MeV vs PDG 1776.86 MeV (0.0056%)
+
+  Retained YT_P1 matching-coefficient context:
+    I_v_scalar (BZ, N=32) = 32.4087
+    Lattice artifact     = 30.4087 (large vs continuum 2.0)
+  This is a boundary result: the current BZ integral is not a
+  small per-channel correction explaining the 0.006% observed deviation.
+
+  Matching correction scale:
+    Δy_τ / y_τ^bare ~ (α_LM/(4π)) · I_v_scalar · C_τ
+                    ~ 0.0072 · 32.41 · 1
+                    ~ 23.38%
+    Observed deviation: 0.0056%
+    → observed is 4181× smaller than systematic
+[PASS] C.2 BZ matching scale is too large to explain the 0.006% PDG match
+       Matching correction scale: 23.38%
+       Observed y_τ deviation:   0.0056%
+       The small observed agreement is not evidence that this BZ integral is the retained tau correction.
+
+========================================================================================
+Part D — Richardson extrapolation of retained matching coefficient
+========================================================================================
+  Retained I_v_scalar (with I_S^CL = 2 continuum offset):
+    I(N=24) = 32.359271
+    I(N=32) = 32.408675
+    Richardson coeff c (O(1/N²)) = -65.0447
+    I_∞ (extrapolated) = 32.472196
+
+  Continuum-limit I_v_scalar: 32.472196
+  Expected I_S^CL offset:     2.00 (retained analytical)
+  Lattice artifact at N→∞:    30.4722
+[PASS] D.1 Richardson-extrapolated I_v_scalar remains outside [4, 10]
+       I_v_scalar(∞) = 32.4722; this remains outside the old [4, 10] bracket.
+       The large-coefficient boundary is stable under the N=24,32 extrapolation.
+
+========================================================================================
+SUMMARY
+========================================================================================
+PASSED: 6/6
+  [PASS] A.1 Retained YT_P1 BZ quadrature machinery imports successfully
+  [PASS] B.1 BZ integral converges under grid refinement (<2% N=24→32)
+  [PASS] B.2 I_v_scalar is outside the old small-coefficient range [4, 10]
+  [PASS] C.1 Framework tree-level y_τ^bare = α_LM/(4π) · C_τ matches PDG at <0.01%
+  [PASS] C.2 BZ matching scale is too large to explain the 0.006% PDG match
+  [PASS] D.1 Richardson-extrapolated I_v_scalar remains outside [4, 10]
+
+VERDICT: BZ machinery verified; small-correction framing rejected.
+
+Correct framing of the radiative/Yukawa support lane:
+
+  y_τ^bare = α_LM / (4π) · C_τ    (TREE-LEVEL RETAINED)
+         |         |       |
+         |         |       └── Casimir enumeration (= 1)
+         |         └── 1-loop phase-space factor (universal)
+         └── retained lattice coupling from PLAQ_MC → u_0 → α_LM
+
+The current BZ coefficient is too large to be cited as the small
+matching correction behind the 0.006% tau agreement.
+
+No citation remains. The only retained inputs are:
+  1. α_LM (retained from PLAQ_MC)
+  2. v_EW = M_Pl · (7/8)^(1/4) · α_LM^16 (retained hierarchy)
+  3. C_τ = 1 (gauge-by-gauge Casimir enumeration)
+  4. BZ quadrature machinery as a boundary check, not a small-correction proof
+
+All of these are either retained primitives or explicit calculations
+on retained primitives. This strengthens the charged-lepton
+radiative/Yukawa support lane but does not by itself close
+the Koide bridges.
+
+----- stderr -----
+

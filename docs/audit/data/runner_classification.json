@@ -17700,6 +17700,18 @@
       "dominant_class": "A",
       "runner": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py"
     },
+    "koide_axiom_native_support_batch_note_2026-04-22": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_koide_lane_regression.py"
+    },
     "koide_bae_30_probe_campaign_note_2026-05-09": {
       "assert_count": 1,
       "counts": {
@@ -61774,6 +61786,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_koide_lane_regression.py": {
+      "assert_count": 0,
+      "claims": [
+        "koide_axiom_native_support_batch_note_2026-04-22"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_koide_lightcone_primitive.py": {
       "assert_count": 5,
       "claims": [
@@ -85878,11 +85905,11 @@
       "A": 462,
       "B": 555,
       "C": 1233,
-      "D": 422,
+      "D": 423,
       "none": 451
     },
-    "runners_classified": 3123,
+    "runners_classified": 3124,
     "runners_with_C": 1675,
-    "runners_with_D": 991
+    "runners_with_D": 992
   }
 }

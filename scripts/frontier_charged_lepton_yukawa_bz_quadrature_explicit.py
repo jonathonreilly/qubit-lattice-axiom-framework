@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Charged-lepton Yukawa — retained matching-coefficient cross-check
+Charged-lepton Yukawa — BZ matching-coefficient boundary cross-check
 
 The Koide-lane claim y_τ^bare = α_LM/(4π) is a FRAMEWORK TREE-LEVEL
 identification on the retained canonical surface, NOT a 1-loop BZ-
@@ -12,25 +12,27 @@ quadrature result that needs separate verification. Specifically:
   - C_τ = 1 is the Casimir combination (explicit enumeration in
     frontier_charged_lepton_yukawa_diagrammatic_enumeration.py)
 
-What the retained YT_P1 BZ quadrature computes is the lattice-to-MSbar
-MATCHING COEFFICIENT (Δ_R for the top, analogous Δ_τ for the lepton).
-This matching coefficient is a SMALL CORRECTION at the 5% per-channel
-systematic level — not the dominant factor.
+What the retained YT_P1 BZ quadrature computes is a lattice-to-MSbar
+matching coefficient (Δ_R for the top, analogous Δ_τ for the lepton).
+On the current implementation, the scalar-vertex integral converges near
+32, not in the old small-coefficient bracket [4, 10]. Therefore this
+runner is a boundary check: it verifies the BZ machinery runs, and it
+prevents the Koide support package from using that integral as evidence
+for a small radiative correction to the tree-level tau identification.
 
 This runner verifies the retained YT_P1 machinery works on the lepton
 channel and shows:
 
-  1. The scalar-density matching coefficient I_v_scalar (retained YT_P1
-     output) is a well-defined finite number with monotone grid
-     convergence — this is the retained primitive.
+  1. The scalar-density matching coefficient I_v_scalar (YT_P1 output)
+     is a well-defined finite number with monotone grid convergence.
 
   2. For the top quark, I_v_scalar is multiplied by C_F (color) to enter
      Δ_R. For the charged lepton, the color factor is absent; only the
      EW Casimir C_τ = 1 enters.
 
-  3. The top-vs-lepton comparison shows the LATTICE MACHINERY is the
-     same; only the Casimirs differ. This is the "retained + explicit
-     C_τ" route to y_τ = α_LM/(4π).
+  3. The large value means this BZ integral is not the small correction
+     that explains the 0.006% PDG agreement. The tree-level identity
+     y_τ = α_LM/(4π) remains separate and bounded.
 
 Inputs (retained primitives, imported directly):
   - scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py provides
@@ -52,9 +54,8 @@ What this runner does NOT claim:
 
 What this runner DOES claim:
   - The retained YT_P1 BZ machinery runs correctly and converges
-  - The matching coefficient has the expected ~2 value (top convention)
-    whose lattice-artifact piece is small (~few % of continuum value)
-  - This is consistent with y_τ^bare = α_LM/(4π) + small matching corrections
+  - The matching coefficient is large on the current normalization
+  - This does not support the old small-correction framing for y_τ^bare
 """
 
 import math
@@ -170,10 +171,10 @@ def part_B(integrate_I_v_scalar_full):
     print(f"     the continuum offset is a retained analytical value)")
 
     record(
-        "B.2 I_v_scalar in retained literature range I_S ∈ [4, 10]",
-        3.8 < results[32] < 10.0,
-        f"I_v_scalar(N=32) = {results[32]:.4f}, expected [4, 10] (YT_P1 retained)\n"
-        f"Central literature value ~6; N=32 gives ~{results[32]:.2f}, within range.",
+        "B.2 I_v_scalar is outside the old small-coefficient range [4, 10]",
+        results[32] > 10.0,
+        f"I_v_scalar(N=32) = {results[32]:.4f}; this is not in [4, 10].\n"
+        "The BZ integral is a large matching coefficient on the current normalization.",
     )
 
     return results[32], results
@@ -225,15 +226,14 @@ def part_C(I_v_scalar_N32, results, ALPHA_LM, FOUR_PI):
     print()
     print("  Retained YT_P1 matching-coefficient context:")
     print(f"    I_v_scalar (BZ, N=32) = {I_v_scalar_N32:.4f}")
-    print(f"    Lattice artifact     = {I_v_scalar_N32 - 2.0:.4f} (small vs continuum 2.0)")
-    print("  Per-channel matching corrections at ~5% (YT_P1 retained systematic),")
-    print("  consistent with 0.006% observed deviation being within band.")
+    print(f"    Lattice artifact     = {I_v_scalar_N32 - 2.0:.4f} (large vs continuum 2.0)")
+    print("  This is a boundary result: the current BZ integral is not a")
+    print("  small per-channel correction explaining the 0.006% observed deviation.")
 
     # The I_v_scalar matching coefficient enters the MS-bar-to-lattice
-    # correction at order (α_LM/(4π)) · I_v_scalar. For α_LM/(4π) ~ 0.0072
-    # and I_v_scalar ~ 4, the FULL matching correction is
-    #   Δy_τ / y_τ^bare ~ 0.0072 · 4 · C_τ ~ 3%
-    # which is the expected ~5% retained per-channel systematic.
+    # correction at order (α_LM/(4π)) · I_v_scalar. With the current
+    # I_v_scalar near 32, that scale is large, so it must not be cited as
+    # a small retained matching correction for the tau mass.
     matching_correction_percent = (ALPHA_LM / FOUR_PI) * I_v_scalar_N32 * 100
     print(f"\n  Matching correction scale:")
     print(f"    Δy_τ / y_τ^bare ~ (α_LM/(4π)) · I_v_scalar · C_τ")
@@ -243,11 +243,11 @@ def part_C(I_v_scalar_N32, results, ALPHA_LM, FOUR_PI):
     print(f"    → observed is {matching_correction_percent/dev_tree:.0f}× smaller than systematic")
 
     record(
-        "C.2 Retained matching correction scale (~3%) accommodates 0.006% PDG match",
-        matching_correction_percent < 10.0 and dev_tree < matching_correction_percent,
+        "C.2 BZ matching scale is too large to explain the 0.006% PDG match",
+        matching_correction_percent > 10.0 and dev_tree < matching_correction_percent,
         f"Matching correction scale: {matching_correction_percent:.2f}%\n"
         f"Observed y_τ deviation:   {dev_tree:.4f}%\n"
-        "Observed is well inside the retained systematic band.",
+        "The small observed agreement is not evidence that this BZ integral is the retained tau correction.",
     )
 
 
@@ -274,25 +274,24 @@ def part_D(results):
     print(f"  Expected I_S^CL offset:     2.00 (retained analytical)")
     print(f"  Lattice artifact at N→∞:    {I_inf - 2.0:.4f}")
 
-    # Extrapolated value should stay in the retained literature range [4, 10]
     record(
-        "D.1 Richardson-extrapolated I_v_scalar within retained literature range [4, 10]",
-        3.8 < I_inf < 10.0,
-        f"I_v_scalar(∞) = {I_inf:.4f}, retained range [4, 10]\n"
-        "Consistent with the YT_P1 matching coefficient literature bracket.",
+        "D.1 Richardson-extrapolated I_v_scalar remains outside [4, 10]",
+        I_inf > 10.0,
+        f"I_v_scalar(∞) = {I_inf:.4f}; this remains outside the old [4, 10] bracket.\n"
+        "The large-coefficient boundary is stable under the N=24,32 extrapolation.",
     )
 
 
 def main() -> int:
-    section("Charged-Lepton Yukawa Retained Matching Cross-Check")
+    section("Charged-Lepton Yukawa BZ Matching Boundary Cross-Check")
     print()
     print("The identification y_τ^bare = α_LM/(4π) · C_τ is a RETAINED TREE-")
     print("LEVEL IDENTIFICATION, not a 1-loop BZ integral. This runner:")
     print("  - Confirms the retained YT_P1 BZ machinery runs and converges on")
     print("    the scalar-vertex matching coefficient I_v_scalar.")
-    print("  - Shows the lattice artifact is small vs continuum (retained ~5%).")
-    print("  - Re-establishes that y_τ = α_LM/(4π) · C_τ follows from retained")
-    print("    primitives (α_LM, 1/(4π)) + Casimir enumeration (C_τ = 1).")
+    print("  - Shows the current BZ coefficient is large, not a small correction.")
+    print("  - Keeps y_τ = α_LM/(4π) · C_τ as a separate tree-level")
+    print("    bounded identification from α_LM, 1/(4π), and C_τ = 1.")
     print()
 
     integrate_I_v_scalar_full, ALPHA_LM, U_0, FOUR_PI = part_A()
@@ -311,7 +310,7 @@ def main() -> int:
     print()
     all_pass = n_pass == n_total
     if all_pass:
-        print("VERDICT: retained YT_P1 BZ machinery verified on lepton channel.")
+        print("VERDICT: BZ machinery verified; small-correction framing rejected.")
         print()
         print("Correct framing of the radiative/Yukawa support lane:")
         print()
@@ -321,15 +320,14 @@ def main() -> int:
         print("         |         └── 1-loop phase-space factor (universal)")
         print("         └── retained lattice coupling from PLAQ_MC → u_0 → α_LM")
         print()
-        print("Lattice matching corrections (at YT_P1 retained ~5% systematic) are")
-        print("consistent with the observed PDG match at 0.006%; the observed value")
-        print("lies well inside the retained systematic band.")
+        print("The current BZ coefficient is too large to be cited as the small")
+        print("matching correction behind the 0.006% tau agreement.")
         print()
         print("No citation remains. The only retained inputs are:")
         print("  1. α_LM (retained from PLAQ_MC)")
         print("  2. v_EW = M_Pl · (7/8)^(1/4) · α_LM^16 (retained hierarchy)")
         print("  3. C_τ = 1 (gauge-by-gauge Casimir enumeration)")
-        print("  4. BZ quadrature machinery (retained YT_P1)")
+        print("  4. BZ quadrature machinery as a boundary check, not a small-correction proof")
         print()
         print("All of these are either retained primitives or explicit calculations")
         print("on retained primitives. This strengthens the charged-lepton")

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "qcd_low_energy_running_bridge_note_2026-05-01"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -82786,17 +82786,17 @@
     },
     "koide_axiom_native_support_batch_note_2026-04-22": {
       "claim_id": "koide_axiom_native_support_batch_note_2026-04-22",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "koide_brannen_geometry_dirac_support_note_2026-04-22",
         "koide_q_second_order_support_batch_note_2026-04-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "43d4061139c8e2657362bed5d637068626a69b906b006eaa26c4a8bc220ec698",
+      "note_hash": "b847d11c479bea7f02f54e2f44076efb155efc6a4686c16125b7c4809df89c07",
       "path": "docs/KOIDE_AXIOM_NATIVE_SUPPORT_BATCH_NOTE_2026-04-22.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_koide_lane_regression.py",
       "title": "Koide April 22 Axiom-Native Support Batch"
     },
     "koide_bae_30_probe_campaign_note_2026-05-09": {
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "qcd_low_energy_running_bridge_note_2026-05-01",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "dm_neutrino_weak_vector_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
-        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+        "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b5368f4ea8a0044556ab737654894c2fac029b1196149954c6dee3f09e30e6e2",
+      "note_hash": "d0e00fafef1e7a9336daf1549384905140d1341b01adb66b52eeff85c2f36907",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118586,11 +118586,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1379,
+      "bounded_theorem": 1380,
       "decoration": 2,
       "meta": 288,
       "no_go": 208,
-      "none": 1428,
+      "none": 1427,
       "open_gate": 118,
       "positive_theorem": 196
     },
@@ -118607,6 +118607,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

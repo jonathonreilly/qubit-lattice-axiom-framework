@@ -1,0 +1,61 @@
+loop: audit-unblock-block151-20260621
+campaign: physics-loop audit-unblock
+mode: campaign
+block: 151
+target_claim_id: koide_axiom_native_support_batch_note_2026-04-22
+target_note: docs/KOIDE_AXIOM_NATIVE_SUPPORT_BATCH_NOTE_2026-04-22.md
+branch: physics-loop/audit-unblock-block151-20260621
+base: origin/main
+base_oid: 071428106ffdd0d9166d9b545caf9e84ca9d4b41
+actual_current_surface_status: bounded-support
+ledger_claim_type: bounded_theorem
+ledger_audit_status: unaudited
+ledger_effective_status: unaudited
+criticality: high
+runner: scripts/frontier_koide_lane_regression.py
+runner_cache: logs/runner-cache/frontier_koide_lane_regression.txt
+runner_result: "TOTAL: 398/398"
+boundary_runner: scripts/frontier_charged_lepton_yukawa_bz_quadrature_explicit.py
+boundary_runner_result: "PASSED: 6/6"
+runner_classification:
+  dominant_class: D
+  assert_count: 0
+  counts:
+    A: 0
+    B: 0
+    C: 0
+    D: 1
+  decoration_candidate: false
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/KOIDE_AXIOM_NATIVE_SUPPORT_BATCH_NOTE_2026-04-22.md
+  - scripts/frontier_charged_lepton_yukawa_bz_quadrature_explicit.py
+  - scripts/frontier_koide_lane_regression.py
+  - logs/runner-cache/frontier_charged_lepton_yukawa_bz_quadrature_explicit.txt
+  - logs/runner-cache/frontier_koide_lane_regression.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/runner_classification.json
+  - .claude/science/physics-loops/audit-unblock-block151-20260621/
+commands_run:
+  - "python3 scripts/frontier_charged_lepton_yukawa_bz_quadrature_explicit.py"
+  - "python3 scripts/frontier_koide_dimensionless_objection_closure_review.py"
+  - "python3 scripts/frontier_koide_lane_regression.py"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_lane_regression.py,scripts/frontier_charged_lepton_yukawa_bz_quadrature_explicit.py --push-mode none --allow-non-main"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_lane_regression.py,scripts/frontier_charged_lepton_yukawa_bz_quadrature_explicit.py --check-only --push-mode none --allow-non-main"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+  - "python3 -m py_compile scripts/frontier_charged_lepton_yukawa_bz_quadrature_explicit.py scripts/frontier_koide_lane_regression.py docs/audit/scripts/build_citation_graph.py docs/audit/scripts/seed_audit_ledger.py docs/audit/scripts/classify_runner_passes.py"
+  - "git diff --check"
+review_loop_disposition: pass
+review_loop_note: "Local review only: high-priority bounded support row gets a current aggregate runner; BZ subrunner was narrowed to a large-coefficient negative boundary; row remains unaudited/effective unaudited."
+lock_mode: branch-local degraded
+next_exact_action: "Commit, push branch, open PR #pending, then stop if runtime budget is exhausted."
+stop_condition: "Runtime exhausted or no viable source-side unblock target remains after queue refresh."

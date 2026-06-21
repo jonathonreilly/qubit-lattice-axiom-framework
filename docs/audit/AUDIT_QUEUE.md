@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18` | no_go | unaudited | critical | 250 | 8.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py` |
+| 1 | `hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18` | no_go | audit_in_progress | critical | 250 | 8.97 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py` |
 | 2 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | audit_in_progress | critical | 101 | 19.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_exact_readout_map.py` |
 | 3 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | unaudited | critical | 1119 | 10.63 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |
 | 4 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1118 | 12.13 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |

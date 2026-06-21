@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 990 |
+| **retained_bounded** | 991 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1550 |
+| unaudited | 1549 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1435 |
+| `audited_clean` | 1436 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1876 |
+| `unaudited` | 1875 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 938 |
-| `leaf` | 1461 |
+| `medium` | 939 |
+| `leaf` | 1460 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -247,6 +247,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3306,6 +3307,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Operator-frame conjugation factors through SO(3) and is blind to the SU(2) center, while the trivial scalar lift V(R)=I2 satisfies the same operator-frame constraints and the scalar kernel remains compatible.  _(class `A`)_
 - **chain closes:** True — The scoped no-go follows from finite Pauli/Spin(3) algebra plus the retained boundary authorities: adjoint covariance loses the SU(2) center, the trivial state lift remains compatible, and the scalar kernel is not excluded. The missing KS/Grassmann physical-state-law bridge is explicitly outside the audited conclusion rather than imported as support.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs, not a definition, fitted comparator, or numerical match. The runner source performs finite matrix checks for cover blindness, scalar-lift compatibility, scalar-kernel compatibility, staggered anticommutation, and the source guardrail; it does not hard-code an empirical target. The N1-N8 no-go discipline is present and the claim is narrowly scoped to refuting the spinor-module escape, while preserving the KS/state-law residual as open downstream work.
+- **auditor confidence:** high
+
+### `causal_cone_speed_map_note`
+
+- **Note:** [`CAUSAL_CONE_SPEED_MAP_NOTE.md`](../../docs/CAUSAL_CONE_SPEED_MAP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite cone-speed proxy scan for the configured center grown family at drift/restore 0.2/0.7, seeds 0..5, source strength 5.0e-05, and c values 0.10 through 1.50.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-causal_cone_speed_map_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The c-sweep on the center retained family is structured but non-monotone, with the largest response near c = 1.0 and a turnover afterward.  _(class `C`)_
+- **chain closes:** True — The primary runner computes the zero-source control, instantaneous reference, and dynamic cone fields from the included helper growth/propagation code; the reported non-monotone ratios match the runner output. The conclusion is explicitly limited to this finite proxy scan and excludes physical wave-speed interpretation.
+- **rationale:** The runner does not hard-code the contested c-sweep table; it builds the configured grown family, selects the source anchor, computes fields for each c, propagates amplitudes, and measures detector-centroid deltas. The helper source needed for the load-bearing path is present, and it supplies actual growth and propagation routines rather than importing the audited result from another note. The cited authorities are retained_bounded and the source note keeps the conclusion bounded to the center-family proxy scan, so the chain closes within that scope.
 - **auditor confidence:** high
 
 ### `causal_distance_tail_note`

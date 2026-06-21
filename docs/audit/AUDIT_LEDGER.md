@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 209 |
-| **retained_no_go** | 208 |
+| **retained_no_go** | 209 |
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1644 |
+| unaudited | 1643 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 27 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1373 |
+| `audited_clean` | 1374 |
 | `audited_conditional` | 16 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1970 |
+| `unaudited` | 1969 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 508 |
-| `medium` | 929 |
+| `high` | 509 |
+| `medium` | 928 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -805,6 +805,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -11244,6 +11245,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The block determinant identity for n=3 gives det D = -det(M Mdag), and det(M Mdag)=|det M|^2, so the Hermitian corner-Dirac reading is modulus-squared with paired singular values. The Pfaffian and uniform determinant-power variants reduce to determinant magnitude or unchanged ratios, while the note explicitly leaves non-tested selector routes open.
 - **rationale:** The load-bearing result is a direct algebraic identity for the supplied finite matrix, independently checkable from the block determinant theorem and singular-value pairing. The runner source actually constructs the matrices and verifies the identities rather than importing fitted numbers or external comparators. The no-go discipline gate is satisfied only for the narrow determinant-family route-pruning claim because the packet names and preserves open non-tracial, chiral, finite-gap, explicit block-measure, and other readout routes.
 - **auditor confidence:** medium
+
+### `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`
+
+- **Note:** [`KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Within H=aI+bC+bbar C^2, r=1/2 is the 45-degree/equal-channel-energy condition and is not forced by the listed C3/S3 unitary symmetry or coefficient-calibration routes while keeping three distinct masses.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The listed C3/S3 symmetry routes and C3-compatible coefficient rephasing do not force r=1/2: C3 leaves r free, S3 forces {1,2} degeneracy, there is no C3<G<S3 subgroup, singlet/doublet dimensions differ, and rephasing preserves |b|^2/a^2.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from finite algebra over the provided packet: C3 leaves r variable, S3 gives a twofold eigenvalue multiplicity, no subgroup exists strictly between C3 and S3, no unitary equivalence swaps 1D and 2D irreps, and allowed doublet rotations preserve |b|^2/a^2. The note is explicitly route-local and leaves dynamical, nonunitary, variational, enlarged-structure, and untested symmetry routes open.
+- **rationale:** The load-bearing facts are exact algebraic and representation-theoretic checks, not fitted comparisons or symbol renamings. The runner substantively verifies the Q/angle relation, equal Frobenius energy condition, S3 degeneracy, C3 freedom, dimension obstruction, and rephasing invariance; the omitted explicit subgroup enumeration follows immediately because C3 has index 2 in S3. The no-go discipline scope is satisfied because the claim names five tested routes, keeps the walls route-local, and explicitly preserves the live dynamical/extra-structure residuals.
+- **auditor confidence:** high
 
 ### `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15`
 

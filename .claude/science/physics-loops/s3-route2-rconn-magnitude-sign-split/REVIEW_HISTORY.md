@@ -21,3 +21,13 @@ Checks performed:
   paired note.
 
 Independent review and later audit remain outside this branch.
+
+## 2026-06-21 PR Handoff
+
+Opened PR #4582:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4582
+```
+
+Identity-only check passed.  No mergeability or conflict fields were queried.

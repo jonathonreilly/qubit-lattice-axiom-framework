@@ -1,0 +1,48 @@
+S3-time Route-2 E-center consumer ambiguity firewall
+========================================================================
+
+========================================================================
+PART 1: source-note and authority boundary
+========================================================================
+  [PASS] firewall note is exact-support and not endpoint closure  (status and scope firewall are explicit)
+  [PASS] parent consumer still names the missing readout-map endpoint triple  (block08 does not edit the parent open gate)
+  [PASS] upstream readout authority exposes the one-parameter family P(rho_E)  (one missing E-channel map entry is the source ambiguity)
+  [PASS] upstream time authority supplies the conditional Xi_P family  (time dynamics are conditional on the readout map)
+
+========================================================================
+PART 2: exact readout support formula
+========================================================================
+  E-shell       delta = (Fraction(0, 1), Fraction(0, 1)), expected = (Fraction(0, 1), Fraction(0, 1))
+  E-center      delta = (Fraction(7, 8), Fraction(0, 1)), expected = (Fraction(7, 8), Fraction(0, 1))
+  T-shell       delta = (Fraction(0, 1), Fraction(0, 1)), expected = (Fraction(0, 1), Fraction(0, 1))
+  T-center      delta = (Fraction(0, 1), Fraction(0, 1)), expected = (Fraction(0, 1), Fraction(0, 1))
+  mixed         delta = (Fraction(147, 44), Fraction(0, 1)), expected = (Fraction(147, 44), Fraction(0, 1))
+  delta-E-blind delta = (Fraction(0, 1), Fraction(0, 1)), expected = (Fraction(0, 1), Fraction(0, 1))
+  [PASS] for every checked carrier, P(rho_target)c - P(rho_zero)c = ((rho_target-rho_zero) delta_E, 0)  (the ambiguity is supported only on the E-center/center-excess coordinate)
+  [PASS] changing rho_E never changes the T-readout row on the restricted carrier class  (the unresolved endpoint is an E-channel ambiguity, not a T-channel ambiguity)
+  [PASS] rho_E=0 and rho_E=21/4 agree at E-shell but differ at E-center by 7/8  (E-shell normalization cannot select the endpoint value)
+  [PASS] rho_E=21/4 gives q_E=15/8 while rho_E=0 gives q_E=1  (the target lift is exactly the unresolved E-channel ratio)
+
+========================================================================
+PART 3: exact Theta_R -> Lambda_R consumer factorization
+========================================================================
+  E-shell       tensor delta = ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+  E-center      tensor delta = ((Fraction(39, 20), Fraction(-13, 40), Fraction(39, 56)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+  T-shell       tensor delta = ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+  T-center      tensor delta = ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+  mixed         tensor delta = ((Fraction(819, 110), Fraction(-273, 220), Fraction(117, 44)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+  delta-E-blind tensor delta = ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+  [PASS] Delta Xi_P(t;c) factorizes as ((rho_b-rho_a) delta_E, 0) tensor V_R(t)  (the downstream ambiguity is rank-one in the E-readout amplitude)
+
+========================================================================
+PART 4: blind and sensitive consumer sectors
+========================================================================
+  [PASS] all carriers with delta_E=0 are invariant under changes of rho_E  (shell columns and T-only center columns cannot see the missing E endpoint)
+  [PASS] readout post-functionals with zero E-readout component are blind for all carriers  (T-only downstream consumers are rho_E-independent)
+  [PASS] an E-readout-sensitive consumer on a carrier with delta_E != 0 distinguishes rho_E values  (unique E-center coupling still needs rho_E=21/4 or an equivalent primitive)
+
+========================================================================
+SUMMARY
+========================================================================
+Status: exact-support consumer firewall; endpoint rho_E remains open.
+PASS=12 FAIL=0

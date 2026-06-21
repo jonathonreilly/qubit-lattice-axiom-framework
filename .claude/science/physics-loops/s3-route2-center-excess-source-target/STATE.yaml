@@ -7,8 +7,8 @@ block: 66
 branch: physics-loop/s3-route2-center-excess-source-target-block66-20260621
 base: origin/main
 base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
-local_science_commit: pending
-remote_science_commit: pending
+local_science_commit: 369a6451f055df37ae57dd737a143d5911376afe
+remote_science_commit: 8158c31c5fbfaaf4f82ca4189986a0a5a944453e
 worktree: /private/tmp/cl3-physics-loop-s3-route2-center-excess-source-target-block66-20260621
 date: 2026-06-21
 mode: campaign
@@ -64,10 +64,11 @@ open_imports:
   - "A typed current-surface source theorem deriving b_E/a_E=7/2."
   - "Or a no-go showing the current source bank cannot produce that E-only center-excess tilt."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending_creation
-pr_number: pending
-pr_url: pending
-pr_identity_view: pending
+pr_status: open
+pr_number: 4597
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4597
+pr_identity_view: >-
+  {"baseRefName":"main","headRefName":"physics-loop/s3-route2-center-excess-source-target-block66-20260621","number":4597,"state":"OPEN","title":"[physics-loop] s3-route2-center-excess-source-target block66 bounded-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4597"}
 next_exact_action: >-
   Search the current source bank for a typed primitive that can produce the
   E-only center-excess tilt b_E/a_E=7/2, or prove a bounded no-go over that bank.

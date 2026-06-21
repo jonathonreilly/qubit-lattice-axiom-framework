@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 292,
     "high": 280,
-    "leaf": 492,
+    "leaf": 491,
     "medium": 444
   },
   "cycle_break_target_count": 9,
@@ -17457,28 +17457,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "quark_route2_e_center_blindness_no_go_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_quark_route2_e_center_blindness_no_go.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17626,6 +17604,41 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "sm_relativistic_dof_count_import_note_2026-05-17",
+        "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
+        "graph_first_su3_integration_note",
+        "cl3_color_automorphism_theorem",
+        "native_gauge_closure_note",
+        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
+        "left_handed_charge_matching_note",
+        "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
+        "three_generation_observable_theorem_note",
+        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
+        "per_site_su2_spin_half_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py",
       "transitive_descendants": 15
     },
     {
@@ -31190,41 +31203,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sm_relativistic_dof_count_import_note_2026-05-17",
-        "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28",
-        "graph_first_su3_integration_note",
-        "cl3_color_automorphism_theorem",
-        "native_gauge_closure_note",
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-        "left_handed_charge_matching_note",
-        "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_theorem_note",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-        "spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10",
-        "per_site_su2_spin_half_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45709,6 +45687,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 16,
-  "total_pending": 1508
+  "ready_count": 15,
+  "total_pending": 1507
 }

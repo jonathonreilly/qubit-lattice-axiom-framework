@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_cp_small_correction_boundary_note_2026-06-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "quark_route2_e_center_blindness_no_go_note_2026-06-17"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "quark_cp_small_correction_boundary_note_2026-06-17",
         "quark_route2_e_center_blindness_no_go_note_2026-06-17",
         "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
         "regge_ok4_frame_section_narrow_theorem_note_2026-06-17",
         "s3_time_tensor_build_memo",
         "signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17",
         "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17",
-        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
+        "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
+        "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "122b461c57fa52b010e54c50b5b1352670d027aca558bccd068aaf58cb0f06b4",
+      "note_hash": "860a85657033e9395b38eceab983e09f4c0362166ac9fe3945e89356eddea853",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

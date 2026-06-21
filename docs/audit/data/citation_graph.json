@@ -64527,10 +64527,13 @@
         "retarded_field_delay_proxy_note",
         "source_resolved_wavefield_escalation_note"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "a8bce61c6fdfdf4df0310c6a36b68ea77ea57e10d65e8c3c6bee5bd41a35f41b",
+      "helper_runner_paths": [
+        "scripts/diamond_ideal_lockin_detector_theorem.py",
+        "scripts/diamond_sensor_protocol_probe.py"
+      ],
+      "note_hash": "ad6d6e0b0edcbd73c79da4cbae89ee70a045097531cf2bb17f622b1e3dd111e4",
       "path": "docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/diamond_sensor_protocol_bounded_probe.py",
       "title": "Diamond Sensor Protocol Note"
     },
     "diamond_signal_budget_hardening_note": {
@@ -103190,7 +103193,7 @@
         "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "22209fc1f59dd2b1ab0a53da86aae4eb950d4e09f59e7921ff66617fbb574e72",
+      "note_hash": "c511a68033adad1c079c3670b4a0bf077ae4833c60f6d7a0711fc2ebb8cef08a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118607,6 +118610,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

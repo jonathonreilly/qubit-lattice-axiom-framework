@@ -29309,12 +29309,15 @@
       ],
       "direct_in_degree": 3,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
+      "helper_runner_paths": [
+        "scripts/diamond_ideal_lockin_detector_theorem.py",
+        "scripts/diamond_sensor_protocol_probe.py"
+      ],
       "load_bearing_score": 4.307,
       "note_path": "docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/diamond_sensor_protocol_bounded_probe.py",
       "transitive_descendants": 6
     },
     {

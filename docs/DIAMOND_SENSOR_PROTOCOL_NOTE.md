@@ -6,6 +6,7 @@
 **Status:** bounded lab-facing discriminator protocol, intentionally
 bounded; **not** a closed NV prediction.
 **Status authority:** independent audit lane only.
+**Runner:** `scripts/diamond_sensor_protocol_bounded_probe.py`
 **Authority role:** records, but does not close, a bounded discriminator
 protocol (lock-in `X`, `Y`, `phi`, widefield phase ramp; minimal control
 stack; qualitative ordering table) for a diamond/NV collaborator. The

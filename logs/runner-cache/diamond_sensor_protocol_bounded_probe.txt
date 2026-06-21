@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/diamond_sensor_protocol_bounded_probe.py
+runner_sha256: 521155fc65648a261667143541e682049176874414c8ce0db5a49b325530cd69
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+DIAMOND SENSOR PROTOCOL BOUNDED PROBE
+Target note: docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md
+Protocol card runner: scripts/diamond_sensor_protocol_probe.py
+Ideal detector theorem runner: scripts/diamond_ideal_lockin_detector_theorem.py
+
+[PASS] note_exists: docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md
+[PASS] claim_type_bounded: bounded_theorem metadata present
+[PASS] status_authority_independent: audit lane owns status
+[PASS] runner_metadata: scripts/diamond_sensor_protocol_bounded_probe.py
+[PASS] no_closed_nv_prediction: explicit non-closure boundary
+[PASS] no_calibrated_signal_budget: explicit signal-budget boundary
+[PASS] protocol_probe_cited: scripts/diamond_sensor_protocol_probe.py
+[PASS] ideal_detector_runner_cited: scripts/diamond_ideal_lockin_detector_theorem.py
+[PASS] card_standard_null: standard null named
+[PASS] card_protocol_table: protocol table present
+[PASS] card_interpretation_rule: calibration and pi-control rule present
+[PASS] card_no_amplitude_budget: no amplitude-budget claim
+[PASS] six_scan_classes: scan classes=6
+[PASS] all_standard_null_columns: all scan classes keep null Y/phi near zero
+[PASS] drive_ordering_present: low,low,mid,mid,high,high
+[PASS] high_far_best_candidate: best candidate for coherent Y / phase ramp
+[PASS] ideal_lockin_detector_assertions: analytic lock-in formula max_abs_error=5.995e-15 tol=1.0e-10; small-delay law Y/X=6.283186134022e-04 tan(omega*tau)=6.283186134014e-04 omega*tau=6.283185307180e-04
+
+SUMMARY: PASS=17 FAIL=0
+Scope: bounded discriminator protocol only; no absolute NV/lab detectability claim.
+
+----- stderr -----
+

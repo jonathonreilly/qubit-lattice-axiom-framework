@@ -1,21 +1,33 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_staggered_dirac_substep1_u4_conditional_single_module_2026_05_17.py
-runner_sha256: 403da57f6057f71be5c2b4a01bf779d5878d8c36565e1abf22b3ce3ce66a5aea
+runner_sha256: 6b0c3de4034fdb748a8a1f90f17b330c6da70a75e960bb026e279a5ad5896e63
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.03
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 ========================================================================================
 Audit companion (exact-symbolic) for
 staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17
-Goal: sympy verification of (M1)-(M2), (C1)-(C2), and the
-  counter-example surface k >= 2 ruling out unconditional U4 closure
+Goal: sympy verification of current-surface Q1, abstract
+  (M1)-(M2), (C1)-(C2), and the k >= 2 counterexample surface
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
 Part 0: Pauli realization and positive/negative chirality
 ----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+Part -1: Current-source surface guard
+----------------------------------------------------------------------------------------
+  [PASS (A)] source note has current minimal-axiom dependency  (current Quantum axiom supplies one-qubit carrier)
+  [PASS (A)] source note states current-framework Q1 sub-claim  (not just historical conditional C1)
+  [PASS (A)] source note keeps abstract representation counterexample surface  (counterexamples survive if Quantum axiom is dropped)
+  [PASS (A)] source note classifies k>=2 as spectator relative to one qubit  (multi-copy reps are not current physical one-site carriers)
+  [PASS (A)] old bare non-closure wording removed  (full realization gate remains separate)
+  [PASS (A)] current one-qubit carrier has multiplicity k=1  (dim_C H_x = 2)
+  [PASS (A)] multi-copy faithful modules are larger than the primitive carrier  (k>=2 gives dim_C >= 4)
+  [PASS (A)] Pauli basis spans M_2(C) as the one-qubit operator algebra  (rank{I,sigma_1,sigma_2,sigma_3}=4)
   [PASS (A)] Pauli ρ_+ satisfies Cl(3) relations
   [PASS (A)] Pauli ρ_- satisfies Cl(3) relations
   [PASS (A)] ω(ρ_+) = +i I_2
@@ -63,14 +75,14 @@ Part 4: Conditional sub-claim (C2): canonical chirality ⇒ Pauli
   [PASS (A)] (C2) Pauli realization ρ_+(γ_i) = σ_i on ℂ²  (trivial identity check)
 
 ----------------------------------------------------------------------------------------
-Part 5: Counter-example surface k >= 2 (no unconditional U4)
+Part 5: Counter-example surface k >= 2 (no Cl(3)-algebra-only closure)
 ----------------------------------------------------------------------------------------
-  [PASS (A)] k=2 counterexample (n_+, n_-) = (2, 0): faithful Cl(3) module of dim_C = 4  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
-  [PASS (A)] k=2 counterexample (n_+, n_-) = (0, 2): faithful Cl(3) module of dim_C = 4  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
-  [PASS (A)] k=2 counterexample (n_+, n_-) = (1, 1): faithful Cl(3) module of dim_C = 4  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
-  [PASS (A)] k=3 counterexample (n_+, n_-) = (3, 0): faithful Cl(3) module of dim_C = 6  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
-  [PASS (A)] k=3 counterexample (n_+, n_-) = (2, 1): faithful Cl(3) module of dim_C = 6  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
-  [PASS (A)] k=4 counterexample (n_+, n_-) = (4, 0): faithful Cl(3) module of dim_C = 8  (witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1)
+  [PASS (A)] k=2 counterexample (n_+, n_-) = (2, 0): faithful Cl(3) module of dim_C = 4  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=2 counterexample (n_+, n_-) = (0, 2): faithful Cl(3) module of dim_C = 4  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=2 counterexample (n_+, n_-) = (1, 1): faithful Cl(3) module of dim_C = 4  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=3 counterexample (n_+, n_-) = (3, 0): faithful Cl(3) module of dim_C = 6  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=3 counterexample (n_+, n_-) = (2, 1): faithful Cl(3) module of dim_C = 6  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=4 counterexample (n_+, n_-) = (4, 0): faithful Cl(3) module of dim_C = 8  (witnesses that Cl(3) representation theory alone does not force k=1)
 
 ----------------------------------------------------------------------------------------
 Part 6: Bridge identity to substep-1 sister theorems
@@ -87,20 +99,21 @@ Part 7: No-k-from-Schur-alone counterexample
 Part 8: Enumeration table consistency
 ----------------------------------------------------------------------------------------
   [PASS (C)] enumeration row k=0: dim_C = 0 (zero-rep)  (non-Clifford (zero-rep))
-  [PASS (C)] enumeration row k=1: dim_C = 2k = 2 via (n_+,n_-)=(1,0)  (conditional U4 closure under single-module selection)
-  [PASS (C)] enumeration row k=2: dim_C = 2k = 4 via (n_+,n_-)=(2,0)  (counter-example to unconditional U4)
-  [PASS (C)] enumeration row k=3: dim_C = 2k = 6 via (n_+,n_-)=(3,0)  (counter-example to unconditional U4)
-  [PASS (C)] enumeration row k=4: dim_C = 2k = 8 via (n_+,n_-)=(4,0)  (counter-example to unconditional U4)
+  [PASS (C)] enumeration row k=1: dim_C = 2k = 2 via (n_+,n_-)=(1,0)  (current minimal-Quantum carrier; conditional C1 on abstract surface)
+  [PASS (C)] enumeration row k=2: dim_C = 2k = 4 via (n_+,n_-)=(2,0)  (counter-example to Cl(3)-algebra-only closure)
+  [PASS (C)] enumeration row k=3: dim_C = 2k = 6 via (n_+,n_-)=(3,0)  (counter-example to Cl(3)-algebra-only closure)
+  [PASS (C)] enumeration row k=4: dim_C = 2k = 8 via (n_+,n_-)=(4,0)  (counter-example to Cl(3)-algebra-only closure)
 
 ----------------------------------------------------------------------------------------
-Part 9: Final consistency — conditional vs unconditional U4
+Part 9: Final consistency — current surface vs abstract surface
 ----------------------------------------------------------------------------------------
-  [PASS (A)] Conditional (C1) verified: k=1 ⇒ dim_C = 2  (closed on retained Cl(3) classification)
-  [PASS (A)] Unconditional U4 NOT closed (counter-examples k>=2 admissible)  (multiplicity selection requires external admitted-context input)
-  [PASS (B)] Open admission identity: single-module-per-site selection = staggered-Dirac substep 1  (cited parent: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03)
+  [PASS (A)] Current minimal-Quantum (Q1) verified: one-qubit carrier has k=1 and dim_C = 2  (current-surface single-module closure)
+  [PASS (A)] Abstract conditional (C1) verified: k=1 ⇒ dim_C = 2  (closed on retained Cl(3) classification)
+  [PASS (A)] Cl(3) algebra alone does not select k=1 (counter-examples k>=2 admissible)  (multi-copy reps reappear when the one-qubit axiom is dropped)
+  [PASS (B)] Remaining open gates are realization gates beyond the single-module carrier  (Grassmann/JW/Kawamoto-Smit/physical-species rows remain separate)
 
 ========================================================================================
-PASS=46  FAIL=0
+PASS=55  FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 945 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 34 |
-| Unaudited rows | 1670 |
+| Unaudited rows | 1669 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 10 |
 | Audited renaming rows | 19 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) - critical; unaudited
+- [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) - critical; audit_in_progress
 - [`dm_neutrino_weak_vector_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md) - critical; unaudited
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
@@ -61,11 +61,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 170 |
+| critical | `unaudited` | 169 |
 | high | `unaudited` | 166 |
 | medium | `unaudited` | 95 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
+| critical | `audit_in_progress` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |
 

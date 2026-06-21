@@ -138,22 +138,22 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-      "claim_scope": null,
+      "claim_scope": "Exact tree-level SU(2)_L x U(1)_Y one-Higgs-doublet gauge-boson mass diagonalization, charge generator, electric coupling identity, rho_tree identity, and optional scalar Hessian, conditional on the declared EW-Higgs input boundary.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [],
       "direct_in_degree": 26,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 22.47,
       "note_path": "docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_ew_higgs_gauge_mass_diagonalization.py",
       "transitive_descendants": 708
@@ -328,15 +328,15 @@
         "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
       ],
-      "direct_in_degree": 9,
+      "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.043,
+      "load_bearing_score": 16.547,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
-      "transitive_descendants": 372
+      "transitive_descendants": 373
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

@@ -41,11 +41,17 @@ Verification:
 - E-channel naturality parent: `TOTAL: PASS=28, FAIL=0`
 - `git diff --check`: clean before staging
 - Overclaim scan: clean
-- PR: pending
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4582
+- Identity-only PR view:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-rconn-magnitude-sign-split-block52-20260621","number":4582,"state":"OPEN","title":"[physics-loop] s3-route2-rconn-magnitude-sign-split block52 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4582"}
+```
+
+No mergeability/conflict check was run.
 
 Next exact action:
 
 ```text
-Publish this block as a PR, record the PR identity-only handoff, then start a
-new science block on the typed magnitude bridge |center T/E| = R_conn.
+Start a new science block on the typed magnitude bridge |center T/E| = R_conn.
 ```

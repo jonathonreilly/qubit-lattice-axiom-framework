@@ -46,8 +46,9 @@ verification:
   overclaim_scan: clean
   diff_check: clean
 pr:
-  status: pending
-  number: null
-  url: null
-next_exact_action: "Commit block52, publish the branch, open a review PR, record the PR handoff, then pivot to the typed magnitude bridge target."
+  status: open
+  number: 4582
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4582"
+  identity_json: '{"baseRefName":"main","headRefName":"physics-loop/s3-route2-rconn-magnitude-sign-split-block52-20260621","number":4582,"state":"OPEN","title":"[physics-loop] s3-route2-rconn-magnitude-sign-split block52 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4582"}'
+next_exact_action: "Pivot to a new science block on the typed magnitude bridge |center T/E| = R_conn."
 stop_condition: "Continue campaign until runtime or viable science queue is exhausted; do not mark goal complete from this support-only block."

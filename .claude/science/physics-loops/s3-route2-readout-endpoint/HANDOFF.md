@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block31-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4560
+```
+
+Identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block31-20260621","number":4560,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block31 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4560"}
+```
+
 Block31 packages an expanded W1 one-hop authority sweep. It tests whether the
 current expanded Route-2/Rconn bank already contains a positive paragraph for:
 
@@ -50,5 +62,6 @@ future explicit authority typing the color scalar as c_TE=-8/9
 
 ## Next Action
 
-Publish this science branch, open a PR, record the PR identity, then continue
-the campaign without checking PR conflicts.
+Continue the campaign by attempting a constructive W1 theorem or an equivalent
+E-center primitive. Do not refresh existing PR branches and do not check PR
+conflicts or mergeability.

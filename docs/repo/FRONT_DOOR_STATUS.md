@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1569 |
-| Retained-grade rows, including boxed decorations | 1462 |
+| Applied audit verdicts | 1570 |
+| Retained-grade rows, including boxed decorations | 1463 |
 | Retained positive theorems | 212 |
 | Retained no-go rows | 215 |
-| Retained bounded rows | 978 |
+| Retained bounded rows | 979 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 38 |
-| Unaudited rows | 1577 |
+| Unaudited rows | 1576 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 29 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1579 |
+| Total pending rows | 1578 |
 | Ready rows | 80 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 563 |
+| Leaf pending | 562 |
 
 Next ready rows by queue order:
 
-- [`fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18`](../../docs/FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - medium; unaudited
 - [`g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06`](../../docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11`](../../docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16`](../../docs/GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - medium; unaudited
 - [`interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_records_objectivity_conditional_note_2026-05-31`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md) - medium; unaudited
-- [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - leaf; unaudited
+- [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - medium; unaudited
+- [`landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13`](../../docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

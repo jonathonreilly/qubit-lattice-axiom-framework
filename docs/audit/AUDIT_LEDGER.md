@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 212 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 978 |
+| **retained_bounded** | 979 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1577 |
+| unaudited | 1576 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1421 |
+| `audited_clean` | 1422 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1903 |
+| `unaudited` | 1902 |
 
 | claim_type | count |
 |---|---:|
@@ -552,6 +552,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fourth_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | B | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7587,6 +7588,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The cached current runner completes and computes the quadrant-reflection connectivity, source propagation, detector centroid shifts, and row gate rather than printing preset outcomes. It confirms a nonempty narrow basin: the note's quick subset has 5/9 passing rows and the current full default sweep has 23/45 passing rows, so the bounded non-universal claim closes.
 - **rationale:** The load-bearing claim is bounded to existence of a narrow computational basin, not family-wide or geometry-generic closure. The runner constructs the quadrant-reflection adjacency rule, evaluates zero, plus, minus, neutral, and double-source responses, and counts passing rows under explicit gates; it does not hard-code the pass count or target response signs. The note overstates the representative drift=0.50 quick row as mostly passing, but that wording is not needed for the audited bounded conclusion and the current runner output still supports the stated safe read. Residual risk is limited to the unexpanded imported grown-slice generator, which was not a listed one-hop note in the restricted packet.
 - **auditor confidence:** medium
+
+### `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18`
+
+- **Note:** [`FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](../../docs/FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded action-core algebra for fractional twisted-sector charge, deriving only the coefficient S_frac(k,N) = (8*pi^2/g^2)|k/N| and excluding dilute-gas, condensate, substrate, and hierarchy claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substitute the retained twisted-sector charge Q = k/N into the retained normalization S_E >= (8*pi^2/g^2)|Q| to obtain S_frac(k,N) = (8*pi^2/g^2)|k/N| for a saturated sector.  _(class `A`)_
+- **chain closes:** True — The one-hop authorities are both marked retained_bounded and supply the fractional charge arithmetic and the Euclidean action normalization. Within the note's stated bounded scope, the conclusion is just exact substitution plus elementary numerical evaluation.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade bounded inputs: Q = k/N and S_E >= (8*pi^2/g^2)|Q|. The runner source computes the exact rational coefficient, checks the integer and half-charge limits, verifies the displayed g^2 = 1 Boltzmann factors, and separately checks that the note and parent preserve the open dilute-gas and hierarchy boundaries. The clean verdict applies only to the bounded action-core split, not to fractional-instanton existence, dilute-gas convergence, condensate formation, substrate identification, or any physical scale prediction.
+- **auditor confidence:** high
 
 ### `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25`
 

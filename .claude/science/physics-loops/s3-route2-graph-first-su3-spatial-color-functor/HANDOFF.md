@@ -45,10 +45,17 @@ Review disposition:
 - The status remains a current-bank no-go for this graph-first/color escape;
   the endpoint triple remains open.
 
+PR identity:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4603
+- Number: 4603
+- State: OPEN
+- Base: `main`
+- Head: `physics-loop/s3-route2-spatial-color-functor-block72-20260621`
+- Title: `[physics-loop] s3-route2-graph-first-spatial-color-functor block72 no-go`
+
 Next exact action:
 
-- Commit, publish branch, and open the block72 PR.
-- Record PR identity here after creation.
 - Continue campaign with the next independent Route-2 target: the non-color
   E-center source primitive behind `q_E/q_T = (w_E/w_T1)^-2` and
   `b_E/a_E = 7/2`.

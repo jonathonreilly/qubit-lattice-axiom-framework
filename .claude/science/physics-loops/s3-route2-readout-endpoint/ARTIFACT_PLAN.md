@@ -6,5 +6,5 @@
 - [x] Add source note.
 - [x] Capture runner output.
 - [x] Run overclaim scan.
-- [ ] Commit and publish branch.
-- [ ] Open PR.
+- [x] Commit and publish branch.
+- [x] Open PR.

@@ -17,8 +17,8 @@ repo_authority_edits: false
 audit_or_verdicts_run: false
 mergeability_or_conflict_checks_run: false
 remote_pr:
-  number: null
-  url: null
+  number: 4577
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4577"
 created_files:
   - docs/QUARK_ROUTE2_POSITIVE_SOURCE_FUNCTIONAL_CONE_NO_GO_NOTE_2026-06-21.md
   - scripts/frontier_quark_route2_positive_source_functional_cone_no_go_2026_06_21.py
@@ -39,4 +39,4 @@ verification:
   diff_check: pass
   overclaim_scan: pass
 lock_status: "repo automation lock failed with permission error on /Users/jonreilly; branch-local lock discipline used"
-next_exact_action: "Commit block47, publish the branch, and open the PR."
+next_exact_action: "Continue campaign with block48: try to construct a concrete p=-2 density-square primitive for the Route-2 endpoint, or sharply constrain why the current surface cannot supply one."

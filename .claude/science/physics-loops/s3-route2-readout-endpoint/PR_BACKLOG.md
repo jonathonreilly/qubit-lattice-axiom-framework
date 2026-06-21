@@ -1,8 +1,12 @@
 # PR Backlog
 
-PR not opened yet.
+No backlog item remains for block26. PR opened:
 
-Planned command:
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4555
+```
+
+Command used:
 
 ```bash
 gh pr create \
@@ -12,8 +16,8 @@ gh pr create \
   --body-file .claude/science/physics-loops/s3-route2-readout-endpoint/PR_BODY.md
 ```
 
-After PR creation, verify only:
+Identity verification used:
 
-```bash
-gh pr view <number> --json number,url,title,headRefName,baseRefName,state
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block26-20260621","number":4555,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block26 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4555"}
 ```

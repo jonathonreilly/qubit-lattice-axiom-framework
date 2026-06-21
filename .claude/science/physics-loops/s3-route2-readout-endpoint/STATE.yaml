@@ -42,6 +42,13 @@ verification:
   rconn_matching_rule_parent: "PASS=30 FAIL=0"
   py_compile: pass
 review_verdict: not_run_by_user_constraint
-pr_status: pending
-next_exact_action: "commit block26, push the branch, open an identity-verified PR, then pivot to the direct-consumer readout ambiguity packet"
+pr_status: open
+pr_identity:
+  number: 4555
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4555
+  title: "[physics-loop] s3-route2-readout-endpoint block26 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block26-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "pivot to the direct-consumer readout ambiguity packet without refreshing existing PRs or checking conflicts"
 stop_condition: null

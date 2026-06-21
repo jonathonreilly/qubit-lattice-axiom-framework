@@ -10,7 +10,13 @@ The branch records exact support for that equivalence and an import boundary:
 hierarchy, thermal, APBC, and color-complement seven-eighths appearances are
 not currently typed to the Route-2 E-center excess role.
 
-Current status: verification passed. PR creation pending.
+Current status: verification passed. PR open.
+
+PR identity:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block34-20260621","number":4564,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block34 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4564"}
+```
 
 Checks:
 
@@ -24,6 +30,6 @@ Checks:
 - new runner py_compile: pass
 - branch-local overclaim scan: no matches
 
-Next exact action after PR: attack the typed bridge from one specific
+Next exact action: attack the typed bridge from one specific
 seven-eighths anchor to `route2_e_E_7_8`, or pivot to the measured-calibration
 box-size parameterization if no bridge route passes the dramatic-step gate.

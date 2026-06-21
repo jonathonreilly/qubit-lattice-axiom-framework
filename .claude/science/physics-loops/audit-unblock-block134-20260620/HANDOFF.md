@@ -36,5 +36,9 @@ edit ledger rows by hand, or assert retained status.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked PR against
-`physics-loop/audit-unblock-block133-20260620`.
+Monitor PR #4504 audit-lane check, then continue to the next audit-unblock
+target.
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4504

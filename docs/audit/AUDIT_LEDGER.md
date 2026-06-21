@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 998 |
+| **retained_bounded** | 999 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1542 |
+| unaudited | 1541 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1443 |
+| `audited_clean` | 1444 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1868 |
+| `unaudited` | 1867 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 942 |
-| `leaf` | 1457 |
+| `medium` | 943 |
+| `leaf` | 1456 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -432,6 +432,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `dm_neutrino_operator_selection_obstruction_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -6022,6 +6023,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** With P_23 S P_23 = S^2, the exchange leaves I and S + S^2 invariant and flips the sign of i(S - S^2), so c_odd is the unique residual-Z2-odd local slot; Im[(K_01)^2] = 2 c_even c_odd.  _(class `A`)_
 - **chain closes:** True — The claim is a finite-dimensional algebraic decomposition once S, S^2, P23, K, and the local CP-kernel readout Im[(K01)^2] are specified. The note does not claim a nonzero activation law for c_odd, and the runner verifies the bounded local statements directly.
 - **rationale:** The load-bearing theorem is an exact algebraic identity on a specified Hermitian circulant coefficient space, not a numerical fit or a physical bridge to an external observable. The cached runner completes with PASS=10 FAIL=0 and checks the P23 generator exchange, even/odd decomposition, coefficient readout, CP-kernel algebra, and U_Z3 1+2 even-slice construction. Residual risk is only scope discipline: this clean verdict covers the local slot theorem and zero-odd-slice statement, not any future nonzero c_odd activation law or independent derivation of leptogenesis phenomenology.
+- **auditor confidence:** high
+
+### `dm_neutrino_operator_selection_obstruction_note_2026-04-14`
+
+- **Note:** [`DM_NEUTRINO_OPERATOR_SELECTION_OBSTRUCTION_NOTE_2026-04-14.md`](../../docs/DM_NEUTRINO_OPERATOR_SELECTION_OBSTRUCTION_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic inequivalence of `Gamma_1 = G1` and `Xi_5 = G1 G2 G3 G4` in the provided 16x16 Clifford/KS realization, including chirality, hop-distance, and orbit-block-rank checks; not the current post-2026-04-15 selector or normalization status.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-dm_neutrino_operator_selection_obstruction_note_2026-04-14-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `Gamma_1` and `Xi_5` have different 3+1 chirality behavior, hop order, and spatial-orbit action, so they are not two descriptions of the same operator surface.  _(class `A`)_
+- **chain closes:** True — The runner constructs the stated matrices and projectors directly and computes the commutators, anticommutators, ranks, and Hamming-distance actions supporting the inequivalence. The broader live-blocker language is superseded in scope by the retained Dirac Bridge authority, but the audited obstruction fact itself closes.
+- **rationale:** For the narrowed obstruction claim, the chain closes as exact algebra over the provided operator definitions and branch conventions. The runner source performs real matrix computations rather than print-only PASS output, and it does not depend on an external comparator or tuned numerical input. The source note should not be used as final authority on the later local `Gamma_1` versus `Xi_5` selection question, because the provided retained Dirac Bridge note explicitly supersedes that part.
 - **auditor confidence:** high
 
 ### `dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07`

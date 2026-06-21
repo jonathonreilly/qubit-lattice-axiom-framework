@@ -1,7 +1,11 @@
 # Source-Resolved Wavefield Mechanism Note
 
-**Date:** 2026-04-05 (runner metadata refresh: 2026-06-17)
-**Status:** exact-lattice wavefield mechanism probe on the larger exact family; independent audit lane authoritative
+**Date:** 2026-04-05 (runner metadata refresh: 2026-06-17; bounded-boundary repair: 2026-06-17)
+**Status:** bounded support theorem / bounded depth-mechanism probe on the declared larger exact-lattice family.
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note records
+runner evidence; it does not set or predict an audit outcome.
 
 **Primary runner:** `scripts/source_resolved_wavefield_mechanism.py`
 **Cached runner output:** [`logs/runner-cache/source_resolved_wavefield_mechanism.txt`](../logs/runner-cache/source_resolved_wavefield_mechanism.txt)
@@ -13,12 +17,12 @@
 
 ## Question
 
-Can the strongest retained exact-lattice wavefield lane be pushed one step
+Can the larger exact-lattice wavefield lane be pushed one step
 past a pure source-strength law and into a more structural mechanism question?
 
 This probe asks whether the detector-line phase-ramp observable depends not
-just on source strength, but also on source-detector depth on the retained
-exact family.
+just on source strength, but also on source-detector depth on the declared
+runner-defined exact-lattice family.
 
 This stays narrow:
 
@@ -27,9 +31,22 @@ This stays narrow:
 - one instantaneous `1/r` control
 - one same-site-memory control
 - one finite-speed wavefield candidate
-- a small source-layer scan on the retained family
-- the promoted observable:
+- a small source-layer scan on the declared family
+- the tracked observable:
   detector-line phase-ramp slope and span, plus their depth dependence
+
+## Claim boundary
+
+This note replays the depth-dependence of the detector-line phase-ramp
+observable on the same declared parameter envelope as the parent escalation.
+The finite-speed update rule and parameters
+(`wave_lag_blend=0.72`, `wave_speed2=0.16`, `damp=0.18`,
+`source_blend=0.52`, `mix=0.9`, `mu=0.08`, `eps=0.5`) are runner-selected
+and are not derived here from the framework baseline.
+
+Therefore this is bounded support for a source-depth mechanism on the declared
+exact-lattice family. It is not a framework-derived wavefield rule, a
+continuum theorem, or an absolute experimental-transfer claim.
 
 ## Mechanistic idea
 
@@ -44,16 +61,15 @@ This mechanism probe asks the harder question:
 If yes, that is a better bridge to causal-field intuition than a pure
 amplitude-law fit.
 
-## Runner-backed result
+## Bounded Result
 
 This probe does not add a new law fit. It adds a mechanism control:
 the detector-line phase-ramp steepens as the source moves closer to the
 detector plane, while the weak-field `F~M` class stays near unity.
-It remains on the exact-family `TOWARD` branch established by the
-parent wavefield cards. This source note records runner evidence only;
-effective status is set by the independent audit lane.
+It remains on the declared exact-lattice `TOWARD` branch established by the
+parent wavefield cards.
 
-Measured on the retained exact family at `h = 0.25`:
+Measured on the declared exact-lattice family at `h = 0.25`:
 
 - exact zero-source reduction survives
   - same-site shift span: `+0.000000e+00 .. +0.000000e+00`
@@ -72,11 +88,11 @@ Measured on the retained exact family at `h = 0.25`:
   - slope exponent `-2.77`
   - span exponent `-2.65`
 
-The retained interpretation is narrow:
+The bounded interpretation is narrow:
 
 - the phase-ramp observable remains coherent
 - the ramp coefficient depends systematically on source depth
-- weak-field mass scaling stays near linear on the same exact family
+- weak-field mass scaling stays near linear on the same declared family
 - this is a mechanism-level refinement of the exact-lattice wavefield lane,
   not a continuum theorem or a generated-geometry transfer claim
 
@@ -85,7 +101,7 @@ The retained interpretation is narrow:
 The claim surface should stay narrow:
 
 - exact zero-source reduction must survive
-- `TOWARD` must survive on the retained exact family
+- `TOWARD` must survive on the declared exact-lattice family
 - `F~M` must remain near unity
 - the phase-ramp observable should remain coherent
 - the new ingredient is a source-depth dependence of the ramp coefficient
@@ -96,22 +112,23 @@ What this is not:
 - not generated-geometry transfer
 - not an absolute amplitude claim for experiment
 
-## Branch Verdict
+## Mechanism Interpretation
 
 Treat this as a mechanism-level refinement of the exact-lattice wavefield
 lane:
 
-- the detector-line phase ramp remains the promoted observable
+- the detector-line phase ramp remains the tracked observable
 - the new question is whether its coefficient depends systematically on source
   depth as well as source strength
 - if it does, that is the cleanest exact-lattice step toward a causal-field
   interpretation
 
-This branch verdict is not an audit verdict and does not promote the row
+This interpretation is not an audit verdict and does not promote the row
 before independent audit.
 
-## Audit dependency repair links
+## Source Dependency Links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This graph-bookkeeping section records the source dependency used by this
+bounded support note. It does not change repository status tagging.
 
 - [source_resolved_wavefield_escalation_note](SOURCE_RESOLVED_WAVEFIELD_ESCALATION_NOTE.md)

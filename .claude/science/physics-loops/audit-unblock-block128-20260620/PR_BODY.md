@@ -1,7 +1,7 @@
 ## Summary
 
 Refreshes the 10 stale/corrupt full-ledger runner-cache transcripts currently
-present on `origin/main` at `7fc79bd4`.
+present on `origin/main` at `678b38ce7`.
 
 Before refresh:
 
@@ -37,8 +37,8 @@ status.
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 77 tests passed
 - `git diff --check` -> OK
 
-After rebasing onto `7fc79bd4`, the same full-ledger cache check still reports
+After rebasing onto `678b38ce7`, the same full-ledger cache check still reports
 `fresh: 3050`, `stale to refresh: 0`, `missing on disk: 0` on this branch. A
-detached `origin/main` check at `7fc79bd4` reports 10 stale/corrupt runner
-caches before this PR; `frontier_alpha_s_universal_beta_kernel_2026_06_18.py`
+detached `origin/main` check at `678b38ce7` reports the same 10 stale/corrupt
+runner caches before this PR; `frontier_alpha_s_universal_beta_kernel_2026_06_18.py`
 is already fresh on current main and is no longer part of this PR scope.

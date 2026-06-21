@@ -2,8 +2,8 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / supplied production bridge prototype
-**Claim type:** methodology / positive theorem
-**Status:** exact-support branch-local for supplied finite record-writing bridge
+**Claim type:** bounded_theorem
+**Status:** bounded-support interface for supplied finite record-writing bridge
 semantics; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**

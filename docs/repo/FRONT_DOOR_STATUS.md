@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1639 |
+| Applied audit verdicts | 1640 |
 | Retained-grade rows, including boxed decorations | 1509 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
 | Retained bounded rows | 1014 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 39 |
-| Unaudited rows | 1507 |
+| Unaudited rows | 1506 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 49 |
+| Audited conditional rows | 50 |
 | Audited renaming rows | 29 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1509 |
-| Ready rows | 17 |
+| Total pending rows | 1508 |
+| Ready rows | 16 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 493 |
+| Leaf pending | 492 |
 
 Next ready rows by queue order:
 
-- [`quark_cp_small_correction_boundary_note_2026-06-17`](../../docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md) - medium; unaudited
 - [`quark_route2_e_center_blindness_no_go_note_2026-06-17`](../../docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md) - medium; unaudited
 - [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - medium; unaudited
 - [`regge_ok4_frame_section_narrow_theorem_note_2026-06-17`](../../docs/REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`s3_time_tensor_build_memo`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md) - medium; unaudited
 - [`signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION_NOTE_2026-06-17.md) - medium; unaudited
 - [`single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17`](../../docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
-- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - leaf; unaudited
+- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
+- [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,16 +83,16 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 982 |
-| Leaf nodes | 1552 |
+| Medium nodes | 983 |
+| Leaf nodes | 1551 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
 - `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 63.347
-- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
+- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
-- `key_terminology` - critical; 1126 descendants; score 47.638
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312
+- `minimal_axioms_2026-05-03` - critical; 1034 descendants; score 49.015
+- `key_terminology` - critical; 1127 descendants; score 47.640
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 899 descendants; score 45.314

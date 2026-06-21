@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 954 |
+| **retained_bounded** | 955 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1623 |
+| unaudited | 1622 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1388 |
+| `audited_clean` | 1389 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1949 |
+| `unaudited` | 1948 |
 
 | claim_type | count |
 |---|---:|
@@ -956,6 +956,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `multisite_pauli_group_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
@@ -13482,6 +13483,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The cited graph-first SU3 integration note already supplies the selected-axis residual swap, the 3 plus 1 base split, and the doubled 6 plus 2 abelian eigenvalue surface. The present note only isolates that finite-dimensional algebraic consequence with the stated phenomenological exclusions.
 - **rationale:** The runner genuinely constructs the residual swap on the eight cube vertices for all three selected axes, forms the projectors, and checks ranks, trace, Hermiticity, and eigenvalue multiplicities. The dependency checks are ledger/status checks rather than physics derivations, while the load-bearing eigenvalue calculation is algebraic over the retained graph-first SU3 integration parent. Because the same abelian eigenvalue surface is already explicitly contained in that parent and this note deliberately narrows scope rather than adding a new theorem, the appropriate conservative verdict is decoration, not a new bounded theorem.
 - **decoration parent:** `graph_first_su3_integration_note`
+- **auditor confidence:** high
+
+### `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-block product-rule/Hellmann-Feynman derivative split for T_beta = E_beta D_beta E_beta, shifted-scalar cancellation in lambda_1/lambda_0, and finite-grid post-peak diagnostic witnesses; no eventual monotonicity, half-line gap theorem, or physical beta = 6 claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The product rule gives dT_beta/dbeta = (1/2)(J T_beta + T_beta J) + E_beta D_beta' E_beta, and Hellmann-Feynman converts the log-ratio derivative target into Delta_J + Delta_D <= 0 on the finite block.  _(class `A`)_
+- **chain closes:** True — Within the declared finite-block scope, the derivative split follows algebraically from the cited J recurrence and source-sector factorization under simple isolated eigenvalues, and the runner recomputes the stated finite-grid sign witnesses from the matrix operator. The uniform H8-J/H8-D domination and shell/tail transfer steps are explicitly outside the audited conclusion.
+- **rationale:** The load-bearing step is class A: differentiating E_beta D_beta E_beta and applying Hellmann-Feynman gives the displayed decomposition, while the scalar shift cancels in the ratio derivative. The cited authorities are retained-grade or retained_bounded, and no cited authority carries an open identification needed for this finite-block identity. The runner builds J, computes Wilson coefficient tables through the helper, checks the derivative recurrence, verifies the matrix split against direct differentiation and finite differences, and reports finite-grid signs without external comparators or tuned inputs. This clean verdict is only for the bounded finite-block decomposition and witnessed grid; eventual monotonicity remains unproved.
 - **auditor confidence:** high
 
 ### `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/mass_spectrum_derived_bounded_probe.py
+runner_sha256: fec13669307b8c819d00e06871fb53e610e679664b86107956d72e4994ce0017
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+MASS SPECTRUM DERIVED BOUNDED PROBE
+
+  [PASS] claim type is bounded theorem (audit row stays bounded)
+  [PASS] runner metadata names this probe (audit parser can attach the bounded verifier)
+  [PASS] status authority remains independent (branch does not write audit verdicts)
+  [PASS] machine-local plan path removed (touched note is repo-relative / source-contained)
+  [PASS] full-closure denials remain explicit (note preserves cannot-claim boundaries)
+  [PASS] open/imported blockers remain explicit (eta and alpha_GUT are not hidden as derivations)
+  [PASS] validation total refreshed (note matches current validation runners)
+  [PASS] quark packet runner exits cleanly (returncode=0)
+  [PASS] quark packet runner total is current (observed=(46, 0), expected=(46, 0))
+  [PASS] quark packet boundary markers present (runner output preserves bounded/open/imported read)
+  [PASS] charged lepton cross-reference runner exits cleanly (returncode=0)
+  [PASS] charged lepton cross-reference runner total is current (observed=(11, 0), expected=(11, 0))
+  [PASS] charged lepton cross-reference boundary markers present (runner output preserves bounded/open/imported read)
+  [PASS] neutrino sector runner exits cleanly (returncode=0)
+  [PASS] neutrino sector runner total is current (observed=(19, 0), expected=(19, 0))
+  [PASS] neutrino sector boundary markers present (runner output preserves bounded/open/imported read)
+  [PASS] cosmology cascade runner exits cleanly (returncode=0)
+  [PASS] cosmology cascade runner total is current (observed=(23, 0), expected=(23, 0))
+  [PASS] cosmology cascade boundary markers present (runner output preserves bounded/open/imported read)
+  [PASS] aggregate validation total is current (aggregate_pass=99)
+
+SUMMARY: PASS=20 FAIL=0
+BOUNDARY: bounded verifier only; no full mass-spectrum retention.
+
+----- stderr -----
+

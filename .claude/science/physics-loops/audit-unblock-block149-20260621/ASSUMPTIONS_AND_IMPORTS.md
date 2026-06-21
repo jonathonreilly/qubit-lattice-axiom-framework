@@ -1,0 +1,13 @@
+# Assumptions And Imports
+
+| Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
+|---|---|---|---|---|---|---|---|
+| Down-type quark mass-ratio packet | Phase 1 bounded support | computed lattice input / bounded support | `scripts/frontier_quark_mass_ratio_review.py` via `scripts/frontier_mass_ratio_ckm_dual.py` | yes for phase accounting | no for full retained mass-spectrum closure | audit phase note independently | Runner packet passes `PASS=46 FAIL=0` |
+| Up-type quark partition | Phase 2 bounded support | support-only / conditional partition | `scripts/frontier_quark_mass_ratio_review.py` via `scripts/frontier_mass_ratio_up_sector.py` | yes for phase accounting | yes for full quark closure | theorem deriving `(f_12, f_23)` from promoted structure | Still bounded; wrapper checks this boundary |
+| Charged-lepton hierarchy | Phase 3 bounded cross-reference | observational pin / support-only | `scripts/frontier_mass_ratio_lepton_sector.py` | yes for phase accounting | yes for full mass-spectrum closure | derive named missing primitives or keep bounded | Runner passes `PASS=11 FAIL=0`; no charged-lepton derivation claimed |
+| Neutrino sector | Phase 4 retained-plus-bounded package | mixed retained support and bounded PMNS/solar support | `scripts/frontier_neutrino_mass_derived.py` | yes for phase accounting | partially | close solar gap and PMNS point predictions | Runner passes `PASS=19 FAIL=0`; solar/PMNS gaps remain bounded |
+| Baryon-to-photon ratio `eta` | Phase 5 cosmology input | observational comparator / imported input with support | `scripts/frontier_cosmology_from_mass_spectrum.py` | yes for cosmology cascade | yes for retained cosmology closure | promote eta from DM-gate support to retained theorem | Still imported on live cosmology surface |
+| `alpha_GUT` / Sommerfeld continuation | Phase 5 bounded cosmology parameter | bounded support | `scripts/frontier_cosmology_from_mass_spectrum.py` | yes for cosmology cascade | yes for retained cosmology closure | retained unification/Sommerfeld derivation | Still bounded |
+| Independent audit ratification | Authority for `audit_status` and effective retained status | human/system authority | audit lane | yes for effective status | yes for repo status promotion | independent audit worker/reviewer process | Not performed here |
+
+No new observational value, fitted selector, or external literature input is introduced by this block. Existing observation-facing quantities remain comparators/imports as already disclosed in the note and phase runners.

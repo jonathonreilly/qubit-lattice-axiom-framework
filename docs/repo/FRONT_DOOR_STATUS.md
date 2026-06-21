@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1574 |
-| Retained-grade rows, including boxed decorations | 1464 |
-| Retained positive theorems | 212 |
+| Applied audit verdicts | 1575 |
+| Retained-grade rows, including boxed decorations | 1465 |
+| Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
 | Retained bounded rows | 979 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 38 |
-| Unaudited rows | 1572 |
+| Unaudited rows | 1571 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 31 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1574 |
+| Total pending rows | 1573 |
 | Ready rows | 77 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 558 |
+| Leaf pending | 557 |
 
 Next ready rows by queue order:
 
-- [`interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06`](../../docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_records_objectivity_conditional_note_2026-05-31`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md) - medium; unaudited
 - [`koide_taste_cube_cyclic_source_descent_note_2026-04-18`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md) - medium; unaudited
 - [`landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13`](../../docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`linear_response_second_order_kubo_note`](../../docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md) - medium; unaudited
 - [`native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28`](../../docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
-- [`poisson_self_field_supplied_branch_core_bounded_note_2026-06-18`](../../docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md) - leaf; unaudited
+- [`poisson_self_field_supplied_branch_core_bounded_note_2026-06-18`](../../docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
+- [`qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02`](../../docs/QCD_BETA_3_PURE_GAUGE_VS_FULL_SM_NARROW_THEOREM_NOTE_2026-06-02.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -20,7 +20,7 @@ Both headers name existing runners under `scripts/corrections/`.
 After the fix, full-ledger cleanup dry run reports 9 candidates instead of 11,
 and the full-ledger runner cache check remains clean:
 
-- `fresh: 3120`
+- `fresh: 3123`
 - `stale to refresh: 0`
 - `missing on disk: 0`
 
@@ -40,5 +40,9 @@ verdict, delete cache files, or assert retained status.
 
 ## Next Exact Action
 
-Push this branch and open a stacked PR against
-`physics-loop/audit-unblock-block128-20260620`.
+Monitor PR #4500 audit-lane check, then continue to the next audit-unblock
+target.
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4500

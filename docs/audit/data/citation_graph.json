@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_interacting_matter_build_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_first_order_selector_bounded_localization_certificate_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_interacting_matter_build_note_2026-05-30",
         "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
         "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
         "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10",
         "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20",
         "koide_carrier_locus_decomposition_note_2026-06-01",
         "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
-        "koide_first_order_selector_bounded_localization_certificate_2026-06-18"
+        "koide_first_order_selector_bounded_localization_certificate_2026-06-18",
+        "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "41f61c092fdf1516dd7428fbe8d9303b8e7312fbd337ff768e58188a451cc963",
+      "note_hash": "f7d37f59f2fe2a6d964ed4451fa24016186d9ce5fffb0a706ce2cab00128824f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

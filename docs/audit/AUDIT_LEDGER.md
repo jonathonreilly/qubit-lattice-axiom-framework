@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1001 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1535 |
+| unaudited | 1534 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1448 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1861 |
+| `unaudited` | 1860 |
 
 | claim_type | count |
 |---|---:|
@@ -1600,6 +1600,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7927,6 +7928,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Substitute the retained twisted-sector charge Q = k/N into the retained normalization S_E >= (8*pi^2/g^2)|Q| to obtain S_frac(k,N) = (8*pi^2/g^2)|k/N| for a saturated sector.  _(class `A`)_
 - **chain closes:** True — The one-hop authorities are both marked retained_bounded and supply the fractional charge arithmetic and the Euclidean action normalization. Within the note's stated bounded scope, the conclusion is just exact substitution plus elementary numerical evaluation.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade bounded inputs: Q = k/N and S_E >= (8*pi^2/g^2)|Q|. The runner source computes the exact rational coefficient, checks the integer and half-charge limits, verifies the displayed g^2 = 1 Boltzmann factors, and separately checks that the note and parent preserve the open dilute-gas and hierarchy boundaries. The clean verdict applies only to the bounded action-core split, not to fractional-instanton existence, dilute-gas convergence, condensate formation, substrate identification, or any physical scale prediction.
+- **auditor confidence:** high
+
+### `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** External open gate recording the fractional-instanton action arithmetic on twisted T^4 as an algebraic decoration, with the dilute-gas/condensate and hierarchy bridge left open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The retained-bounded action normalization plus twisted Q = k/N arithmetic gives S_frac(k,N) = (8*pi^2/g^2)|k/N|, while the dilute-gas determinant/measure/coupling-scale/convergence bridge is explicitly not supplied.  _(class `A`)_
+- **chain closes:** False — The action-core arithmetic closes as a class-A substitution from retained-bounded inputs. The broader dilute-gas/condensate mechanism does not close because the determinant, measure, phase-space density, coupling-scale prescription, validity regime, convergence, and condensate criterion are explicitly unsupplied.
+- **rationale:** The runner source performs symbolic arithmetic and source-boundary checks, and its PASS=44 output is consistent with the note's narrowed action-core decoration. However, the note itself keeps the dilute-gas and condensate bridge open and the cited retained-bounded authorities expressly support only the action-core arithmetic. This is therefore not a closed positive theorem for a condensate, hierarchy bridge, determinant prescription, or framework substrate/observable identification.
 - **auditor confidence:** high
 
 ### `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25`

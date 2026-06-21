@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 292,
     "high": 280,
-    "leaf": 521,
+    "leaf": 520,
     "medium": 444
   },
   "cycle_break_target_count": 9,
@@ -17457,31 +17457,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
-        "topological_instanton_textbook_infrastructure_import_note_2026-05-17"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17648,6 +17623,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/koide_first_order_selector_bounded_localization_certificate_2026_06_18.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+        "minimal_axioms",
+        "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py",
       "transitive_descendants": 15
     },
     {
@@ -31212,33 +31214,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
-        "minimal_axioms",
-        "koide_r_half_index_readout_non_susy_staggered_dirac_gate_meta_note_2026-06-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -46467,6 +46442,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 45,
-  "total_pending": 1537
+  "ready_count": 44,
+  "total_pending": 1536
 }

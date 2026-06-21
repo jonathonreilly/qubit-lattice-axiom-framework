@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 212 |
 | **retained_no_go** | 212 |
-| **retained_bounded** | 973 |
+| **retained_bounded** | 974 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1586 |
+| unaudited | 1585 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,22 +63,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1412 |
+| `audited_clean` | 1413 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1912 |
+| `unaudited` | 1911 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1805 |
+| `bounded_theorem` | 1806 |
 | `decoration` | 60 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 747 |
+| `positive_theorem` | 746 |
 
 | criticality | count |
 |---|---:|
@@ -169,6 +169,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `anderson_phase_mu2_0001_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `angular_kernel_orbit_class_underdetermination_narrow_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `angular_kernel_underdetermination_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `architecture_portability_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -2197,6 +2198,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The tested smoke/table results hold at the fixed tuned point beta = 0.8, while beta itself is an empirical input rather than a derived constant.  _(class `G`)_
 - **chain closes:** True — The runner source performs finite fixture computations through the directional path-measure helpers and reports PASS=6/6 at beta = 0.8. This closes only the fixed-beta numerical support claim, not a derivation of beta or a general theorem beyond the tested fixtures.
 - **rationale:** Issue: the load-bearing result uses beta = 0.8 as a hard-coded tuned setting. Why this blocks clean status: the cited retained no-go supports the not-derived boundary, and the runner verifies only fixture behavior at that supplied value. Repair target: derive beta within a retained framework route and rerun the table without treating beta as calibrated input. Claim boundary until fixed: bounded numerical support at beta = 0.8 only.
+- **auditor confidence:** medium
+
+### `architecture_portability_sweep_note`
+
+- **Note:** [`ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md`](../../docs/ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite runner-backed portability sweep for source-mass scaling and attraction sign on the four specified small architectures, with Born-rule I_3 checked only on ordered and staggered 3D lattices; not a Newton-law or distance-law closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-architecture_portability_sweep_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner varies source amplitude across five values, fits |displacement| versus source mass, and reports beta within 10%, attraction on all four architectures, and I_3 < 1e-6 where measured.  _(class `C`)_
+- **chain closes:** True — Within the stated finite protocol, the runner constructs the lattices, Poisson solves, Hamiltonians, evolutions, free controls, fits, and Sorkin I_3 checks rather than printing hard-coded target values. The conclusion closes only for the bounded sweep described in the note.
+- **rationale:** The runner source genuinely computes the load-bearing numerical checks from the specified finite lattice systems and its cached stdout matches the source note to rounding. The note's own boundary correctly excludes standalone Newton closure, Wilson Born-rule closure, random-geometric distance-law comparability, and large-volume/asymptotic claims. Residual risk is confined to the stated modeling choices and finite-size protocol, not to a missing computation inside the audited scope.
 - **auditor confidence:** medium
 
 ### `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25`

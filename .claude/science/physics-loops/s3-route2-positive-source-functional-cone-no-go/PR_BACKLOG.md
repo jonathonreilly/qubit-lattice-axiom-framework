@@ -1,6 +1,15 @@
 # PR Backlog
 
-No PR backlog is expected. If GitHub PR creation fails, use:
+PR opened:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4577
+```
+
+Identity-only PR verification passed. No mergeability or conflict checks were
+run.
+
+If this PR needs to be recreated, use:
 
 ```bash
 gh pr create \

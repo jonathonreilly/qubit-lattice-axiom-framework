@@ -46,13 +46,25 @@ Open escapes:
 
 ## PR
 
-Pending.
+Opened:
 
-Planned title:
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4577
+```
+
+Title:
 
 ```text
 [physics-loop] s3-route2-positive-source-functional block47 no-go
 ```
+
+Identity-only verification passed:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-positive-source-functional-no-go-block47-20260621","number":4577,"state":"OPEN","title":"[physics-loop] s3-route2-positive-source-functional block47 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4577"}
+```
+
+No mergeability or conflict checks were run.
 
 ## Next Exact Science Action
 

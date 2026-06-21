@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1580 |
-| Retained-grade rows, including boxed decorations | 1469 |
+| Applied audit verdicts | 1581 |
+| Retained-grade rows, including boxed decorations | 1470 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
-| Retained bounded rows | 983 |
+| Retained bounded rows | 984 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 38 |
-| Unaudited rows | 1566 |
+| Unaudited rows | 1565 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 32 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1568 |
-| Ready rows | 73 |
+| Total pending rows | 1567 |
+| Ready rows | 72 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 552 |
+| Leaf pending | 551 |
 
 Next ready rows by queue order:
 
-- [`p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28`](../../docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
 - [`poisson_self_field_supplied_branch_core_bounded_note_2026-06-18`](../../docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02`](../../docs/QCD_BETA_3_PURE_GAUGE_VS_FULL_SM_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18`](../../docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15`](../../docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md) - medium; unaudited
 - [`staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17`](../../docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
-- [`statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17`](../../docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md) - leaf; unaudited
+- [`statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17`](../../docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
+- [`su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

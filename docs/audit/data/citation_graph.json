@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "teleportation_resource_from_poisson_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "architecture_portability_sweep_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "teleportation_resource_from_poisson_note",
         "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
         "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18",
         "diamond_signal_budget_hardening_note",
         "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
         "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
         "alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18",
-        "architecture_portability_sweep_note"
+        "architecture_portability_sweep_note",
+        "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5389cc6200477c9b2dc09249bc0256efcfc1759cb229a16bbb7eb657b7553b62",
+      "note_hash": "ac18dd6415daae20ea029c148e0e3d2e11771fbdac97346430aab315b5fe90a0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 292,
     "high": 280,
-    "leaf": 578,
+    "leaf": 577,
     "medium": 444
   },
   "cycle_break_target_count": 9,
@@ -17457,35 +17457,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
-        "higgs_mass_from_axiom_note",
-        "wilson_vtaste_extremum_leading_order_in_r_bounded_note_2026-05-08",
-        "wilson_corrected_v_taste_tree_level_bounded_note_2026-05-08",
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
-        "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_wilson_m_h_per_channel_closure.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17629,6 +17600,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_architecture_portability_sweep.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
+        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
+        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
+        "koide_q_readout_factorization_theorem_2026-04-22",
+        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py",
       "transitive_descendants": 16
     },
     {
@@ -31193,34 +31192,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
-        "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
-        "koide_q_readout_factorization_theorem_2026-04-22",
-        "new_parity_is_circulant_phase_narrow_theorem_note_2026-05-23"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -47962,6 +47933,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 88,
-  "total_pending": 1594
+  "ready_count": 87,
+  "total_pending": 1593
 }

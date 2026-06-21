@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 208 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 939 |
+| **retained_bounded** | 940 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1654 |
+| unaudited | 1653 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 24 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1368 |
+| `audited_clean` | 1369 |
 | `audited_conditional` | 14 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1980 |
+| `unaudited` | 1979 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1030 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1127 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
@@ -946,6 +946,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `multisite_pauli_group_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
@@ -13233,6 +13234,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** The runner genuinely constructs the residual swap on the eight cube vertices for all three selected axes, forms the projectors, and checks ranks, trace, Hermiticity, and eigenvalue multiplicities. The dependency checks are ledger/status checks rather than physics derivations, while the load-bearing eigenvalue calculation is algebraic over the retained graph-first SU3 integration parent. Because the same abelian eigenvalue surface is already explicitly contained in that parent and this note deliberately narrows scope rather than adding a new theorem, the appropriate conservative verdict is decoration, not a new bounded theorem.
 - **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** high
+
+### `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded numerical characterization of the repo-native discrete SU(3) half-slice packet operator: finite-shell large-beta ratios, a 1/beta extrapolated large-beta ratio near 0.1938058, and a saddle-diagonal cross-check, excluding physical beta=6, continuum, and uniform half-line claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The runner forms the scaled half-slice operator v -> exp((beta/2)(J-I))[r(beta) * exp((beta/2)(J-I))v], computes stable finite-shell top-two eigenvalue ratios, and Richardson-extrapolates the exact-Wilson and saddle-diagonal routes to lambda_1/lambda_0 = 0.1938058.  _(class `C`)_
+- **chain closes:** True — The restricted packet closes the scoped bounded claim: the runner instantiates the six-neighbor J, Wilson diagonal, scaled half-slice action, sparse eigensolve, shell checks, saddle-diagonal comparison, and normalization falsifiers without hard-coding the target ratio. The operator-norm remainder lemma and all-beta/physical statements remain open but are explicitly outside the claim boundary.
+- **rationale:** The cited authorities retain the recurrence, half-slice factorization surface, and Wilson coefficient positivity needed for the native packet construction. The primary runner and helper source compute the numerical object from framework-local operators and coefficient evaluation rather than importing an external comparator or fitted target, and the cache matches the note tables. Residual risk is confined to the explicitly disclaimed uniform large-beta operator-norm remainder and tail/eigenvalue-isolation proof, not to the bounded numerical characterization audited here.
+- **auditor confidence:** medium
 
 ### `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23`
 

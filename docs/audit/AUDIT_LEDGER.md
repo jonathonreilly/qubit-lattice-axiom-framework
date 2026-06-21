@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 935 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1685 |
+| unaudited | 1684 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 7 |
+| ~~audited_conditional~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -61,12 +61,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1346 |
-| `audited_conditional` | 7 |
+| `audited_conditional` | 8 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2011 |
+| `unaudited` | 2010 |
 
 | claim_type | count |
 |---|---:|
@@ -1495,6 +1495,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
@@ -9597,6 +9598,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substitute the retained 6+2 traceless ratio beta = -3 alpha and explicit P1-P4 into Q(e_L) = T_3(e_L) + Y(L_L)/2, giving -1 = -1/2 + (-3 alpha)/2, hence alpha = 1/3.  _(class `A`)_
 - **chain closes:** True — The supplied direct dependencies are retained and audited_clean for the selected-axis graph-first 6+2 structural surface. The non-framework premises P1-P4 are not treated as axioms or derived facts; they are explicit antecedents in the bounded implication. Under that exact antecedent set, the conclusion is a rational arithmetic consequence with no hidden physical identification outside scope.
 - **rationale:** Audited clean is warranted only as a bounded theorem/implication. The note honestly exposes the physical/readout inputs as P1-P4, states that they are not derived or registry-accepted premises, and keeps the parent hypercharge identification and electroweak/matter-assignment claims outside the load-bearing chain. The runner output independently checks the source firewall, the beta/alpha = -3 traceless ratio on the 6+2 split, and the exact Fraction solve alpha = 1/3 with TOTAL PASS=15 FAIL=0. No numerical fit, quark-charge cross-check, lattice-action input, or downstream status promotion is load-bearing.
+- **auditor confidence:** high
+
+### `hypercharge_identification_note`
+
+- **Note:** [`HYPERCHARGE_IDENTIFICATION_NOTE.md`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional chain assembly: given the traceless U(1) ratio, the LHCM SU(3) representation-to-matter assignment, and the alpha=1/3 normalization/GMN readout, the LH-doublet hypercharge and charge tables match the SM values.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-hypercharge_identification_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The combined SM-Y matching follows from the +1:(-3) ratio plus the LHCM Sym^2/Anti^2 matter assignment once the alpha=1/3 normalization/readout convention is fixed.  _(class `A`)_
+- **chain closes:** True — The algebraic chain closes on its stated conditional inputs: alpha(P_sym-3P_anti) gives (+1/3,-1) at alpha=1/3, and GMN then gives the displayed charges. It does not close as an unconditional derivation because the matter-label/readout and normalization premises remain admitted inputs.
+- **rationale:** Issue: The algebraic assembly is correct only after accepting the LHCM matter-assignment convention and the alpha=1/3/GMN/electron-charge premise packet, and those readout and normalization premises are explicitly not derived in the restricted packet. Why this blocks: the runner computes projector, trace, commutation, and charge consistency, but it imports the physical readout and normalization rather than deriving them. Repair target: derive or formally ratify the Anti^2-as-L_L readout, GMN relation, T3(e_L), and Q(e_L) premise packet as retained or accepted inputs; claim boundary until fixed is conditional LH-doublet chain assembly.
+- **open / conditional deps cited:**
+  - `LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`
+  - `HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`
 - **auditor confidence:** high
 
 ### `i1_native_quadratic_static_source_normalization_bridge_2026-06-08`

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1017 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1501 |
+| unaudited | 1500 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1467 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1827 |
+| `unaudited` | 1826 |
 
 | claim_type | count |
 |---|---:|
@@ -1651,6 +1651,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -18760,6 +18761,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The four admitted inputs are packaged under the phrase "a finite Hilbert space with local tensor product structure," and the runner then mechanically evaluates the four consequences under that package.  _(class `E`)_
 - **chain closes:** True — The narrowed admitted-input chain closes only as an operational/definitional package: the runner performs finite matrix and support checks after the four inputs are supplied. It does not close as a derivation from a bare tensor-product Hilbert-space axiom; deriving the local Hamiltonian, locality restriction, Born readout, and graph-extraction rule would be the missing stronger step.
 - **rationale:** Issue: the source's load-bearing move is to bundle local d, local Hermitian H, Born readout, and support-as-edges into a named Hilbert packet. Why this blocks clean derivation status: the runner verifies finite consequences only after those premises are supplied, so it is not a first-principles computation from the bare tensor-product structure or from MINIMAL_AXIOMS. Repair target: derive the local Hamiltonian/locality restriction, Born readout, and graph-extraction rule from retained inputs; until then the safe claim is the narrowed operational check under admitted inputs.
+- **auditor confidence:** high
+
+### `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17`
+
+- **Note:** [`SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md`](../../docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-matrix S4 transport and parity-grading invariance on the supplied L=(4,4,4,4), m=0.3 staggered block, with the odd L=(3,3,3,3) falsifier.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For each adjacent pair, W_{a,a+1} preserves M_per and maps M_ap(a) exactly to M_ap(a+1), so adjacent transpositions generate one S4 orbit of the antiperiodic-axis label.  _(class `A`)_
+- **chain closes:** False — The included runner/source closes the L=(4,4,4,4) finite matrix identities. It does not close the broader stated robustness/even-block scope because the supplied code/stdout do not test m=1.7, L=(6,6,6,6), an equivalent phase convention, or a symbolic all-even-L proof.
+- **rationale:** Issue: the core L=(4,4,4,4) transport calculation is a genuine exact algebraic check, but the source note also claims runner coverage at m=1.7, L=(6,6,6,6), and an equivalent phase convention that is absent from the supplied code/stdout. Why this blocks: one finite L=4 computation plus an odd-block falsifier does not by itself establish the broader even cubic-symmetric theorem as written. Repair target: add a generic link-wise proof or runner artifact covering the stated robustness surface, or narrow the note to the computed L=4 surface. Claim boundary until fixed: the included artifacts support exact S4 transport of the antiperiodic-axis datum and W-inert parity grading for the displayed L=4 staggered block.
 - **auditor confidence:** high
 
 ### `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16`

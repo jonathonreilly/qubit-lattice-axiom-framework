@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 292,
     "high": 280,
-    "leaf": 487,
+    "leaf": 486,
     "medium": 444
   },
   "cycle_break_target_count": 9,
@@ -17457,30 +17457,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.5,
-      "note_path": "docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17639,6 +17615,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/three_family_card_missing_distance_live_bridge_2026_06_18.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.5,
+      "note_path": "docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py",
       "transitive_descendants": 15
     },
     {
@@ -31203,30 +31203,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py",
-      "transitive_descendants": 0
     },
     {
       "audit_independence_required": "any_non_self",
@@ -45587,6 +45563,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 11,
-  "total_pending": 1503
+  "ready_count": 10,
+  "total_pending": 1502
 }

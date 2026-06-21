@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_q_delta_linking_relation_theorem_note_2026-04-20"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
         "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
         "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
         "hw1_second_order_return_shape_theorem_note",
-        "su3_casimir_fundamental_theorem_note_2026-05-02"
+        "su3_casimir_fundamental_theorem_note_2026-05-02",
+        "koide_q_delta_linking_relation_theorem_note_2026-04-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a9fe91a9eec8d64c13c23b2cc5f5537d2768c38352aa6050f35d5d16611007c1",
+      "note_hash": "3bf7e2250c263b32af8585dac010f56539d2af77b638a31b77eba77208d3e3fa",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

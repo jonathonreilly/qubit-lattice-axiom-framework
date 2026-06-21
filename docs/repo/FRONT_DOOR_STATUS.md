@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1470 |
+| Applied audit verdicts | 1471 |
 | Retained-grade rows, including boxed decorations | 1408 |
 | Retained positive theorems | 203 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 947 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 34 |
-| Unaudited rows | 1666 |
+| Unaudited rows | 1665 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 10 |
+| Audited conditional rows | 11 |
 | Audited renaming rows | 20 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1678 |
-| Ready rows | 121 |
+| Total pending rows | 1677 |
+| Ready rows | 120 |
 | Cycle-break targets | 9 |
-| Critical pending | 319 |
+| Critical pending | 318 |
 | High pending | 301 |
 | Medium pending | 485 |
 | Leaf pending | 573 |
 
 Next ready rows by queue order:
 
-- [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
 - [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; unaudited
 - [`wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`](../../docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07`](../../docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`hw1_second_order_return_shape_theorem_note`](../../docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md) - critical; unaudited
 - [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`koide_q_delta_linking_relation_theorem_note_2026-04-20`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md) - critical; unaudited
+- [`staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23`](../../docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

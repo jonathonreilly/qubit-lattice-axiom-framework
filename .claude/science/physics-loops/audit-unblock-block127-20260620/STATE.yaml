@@ -1,0 +1,60 @@
+loop: audit-unblock-block127-20260620
+campaign: audit-unblock-20260619
+block: 127
+mode: physics-loop
+branch: physics-loop/audit-unblock-block127-20260620
+base: origin/main
+base_commit: 618f3debbb3d88f76eac27714026b8ed5b1ebe30
+user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
+target_claim_id: frozen_stars_rigorous_note
+target_runner: scripts/frontier_frozen_stars_rigorous.py
+target_cache: logs/runner-cache/frontier_frozen_stars_rigorous.txt
+target_status: open
+actual_current_surface_status: open
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: methodology
+reachability_to_target: supports
+artifact_role: runner_certificate
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+lock_mode: degraded_branch_local
+lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
+current_result: "Refreshed a stale ok-but-empty runner cache into a full frozen-stars runner transcript under the declared 1800s timeout."
+target_row_after_pipeline:
+  audit_status: unaudited
+  effective_status: unaudited
+  claim_type: bounded_theorem
+  criticality: leaf
+  load_bearing_score: 0.0
+  queue_ready: false
+dependencies_still_blocking:
+  - gw_echo_null_result_note
+  - work_history.gw_echo_timing_route_note
+files_touched:
+  - docs/audit/AUDIT_DISPATCH_QUEUE.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_dispatch_queue.json
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_packet_script_deps.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/cycle_inventory.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/load_bearing_summary.json
+  - docs/audit/data/runner_classification.json
+  - docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+  - docs/repo/FRONT_DOOR_STATUS.md
+  - logs/runner-cache/audit_packet_script_deps.txt
+  - logs/runner-cache/frontier_frozen_stars_rigorous.txt
+  - .claude/science/physics-loops/audit-unblock-block127-20260620/*
+review_disposition: pass
+verification_status: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open the block127 PR."
+stop_condition: "Block127 PR opened and verified; campaign may then pivot to the next independent audit-unblock target."

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_reality_type_permitted_not_forced_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_records_pointer_grounds_block_channel_note_2026-05-31"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_reality_type_permitted_not_forced_note_2026-05-30",
         "koide_records_pointer_grounds_block_channel_note_2026-05-31",
         "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
         "koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3",
         "lattice_total_momentum_conservation_theorem_note_2026-05-02",
         "n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17",
         "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12",
-        "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12"
+        "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12",
+        "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "db0acf8c9dd4c7801cc15dcafcbc668cb0a66b795a79dd7a9db1d7c778649f35",
+      "note_hash": "edb2fb6734fdc16765b429be79fa22801effe27ab35b89327faba79e8e3b7cd6",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

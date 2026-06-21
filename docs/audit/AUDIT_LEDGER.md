@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1006 |
+| **retained_bounded** | 1007 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1522 |
+| unaudited | 1521 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1456 |
+| `audited_clean` | 1457 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1848 |
+| `unaudited` | 1847 |
 
 | claim_type | count |
 |---|---:|
@@ -868,6 +868,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_reality_type_permitted_not_forced_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_record_sign_agnostic_eta_refuted_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `koide_records_pointer_grounds_block_channel_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -12454,6 +12455,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Under the supplied equal-block (1,1) log functional/objectivity selector, maximizing log E_+ + log E_perp at fixed E_+ + E_perp gives E_+ = E_perp, i.e. r=1/2 and Q=(1+2r)/3=2/3.  _(class `A`)_
 - **chain closes:** False — The algebra closes after the two selector inputs are assumed. It does not close from the cited retained authorities alone because the equal-block metric and the records/objectivity maximization principle remain supplied premises.
 - **rationale:** Issue: the load-bearing algebra is correct, but it depends on the explicitly supplied equal-block (1,1) metric and records/objectivity maximization selector. Why this blocks: the cited authorities establish the block algebra, weighting frontier, isotype-weight freedom, and trace comparison boundaries, but do not derive either selector input. Repair target: derive or explicitly admit the equal-block sector measure and the objectivity selector in separate retained authority. Claim boundary until fixed: this is a non-circular conditional certificate, not an unconditional Record-axiom or framework derivation of Koide.
+- **auditor confidence:** high
+
+### `koide_records_pointer_grounds_block_channel_note_2026-05-31`
+
+- **Note:** [`KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md`](../../docs/KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3 pointer/trace bookkeeping: S=C+C^2 resolves singlet/doublet blocks, commutes with Gamma_chi, Jcs squares to -P_doublet, trace weights the doublet by dimension, and the stated fixed-total log-functionals have extrema r=1/2 and r=1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_records_pointer_grounds_block_channel_note_2026-05-31-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite C3 algebra gives a two-block observable S=C+C^2 while the trace block totals E_+=3a^2 and E_perp=6|b|^2 make equal-weight and dimension-weighted log extrema land at r=1/2 and r=1 respectively.  _(class `A`)_
+- **chain closes:** True — The audited claim is restricted to finite matrix identities and elementary constrained extrema. It does not import the open records/objectivity dynamics or claim selection of the equal-weight extremum.
+- **rationale:** The runner source actually instantiates the C3 matrices and checks the spectrum, commutators, Jcs square, and the two symbolic Lagrange extrema rather than merely printing constants. Independent algebra agrees: S has eigenvalues 2,-1,-1; Gamma_chi is co-diagonal with S; Jcs has eigenvalues 0,±i and squares to -P_doublet; and E_+=E_perp gives r=1/2 while E_perp=2E_+ gives r=1. The cited authorities are retained-grade for the algebraic identities used, and the note explicitly excludes the unresolved dynamics/readout-selection question from its claim boundary.
 - **auditor confidence:** high
 
 ### `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16`

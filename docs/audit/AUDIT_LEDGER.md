@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 208 |
 | **retained_no_go** | 208 |
-| **retained_bounded** | 938 |
+| **retained_bounded** | 939 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1655 |
+| unaudited | 1654 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 24 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1367 |
+| `audited_clean` | 1368 |
 | `audited_conditional` | 14 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1981 |
+| `unaudited` | 1980 |
 
 | claim_type | count |
 |---|---:|
@@ -357,6 +357,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `diamond_ideal_lockin_detector_theorem_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dimension_selection_lower_bound_bridge_v2_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dimension_selection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4812,6 +4813,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** With the predicted exact-tone sets W_o, the K=6 state reaches capture >=0.99 at o*=4 while the K=3 and K=4 states do not reach 0.99 through o=8, so the tested family has mixed state-dependent harmonic depth and no state-independent 0.99 capture depth <=8.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite L=3 unitary route, seeded rank projectors, exact tone sets, det-phase increments, and least-squares projections rather than importing the contested result. An independent direct raw-tone least-squares recomputation matches the W_o sizes, capture table, ceilings, and o*=4 saturation for K=6.
 - **rationale:** The cited realized-state primitive is an approved premise in the packet and is used only for pointwise evaluation of supplied state data, not as a selector, weighting rule, or genericity claim. The load-bearing numeric pattern is computed from the scoped finite state family and exact-tone projection, with no external comparator or tuned empirical import. The source claim is bounded to the tested family, and the independent math check confirms the displayed capture entries and stated saturation/non-saturation conclusions.
+- **auditor confidence:** high
+
+### `diamond_ideal_lockin_detector_theorem_note_2026-06-17`
+
+- **Note:** [`DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md`](../../docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Ideal detector-map theorem for a stipulated delayed sinusoid under integer-cycle lock-in averaging; no source-dynamics, NV coupling, absolute calibration, noise, or detectability claim was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-diamond_ideal_lockin_detector_theorem_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the ideal detector, the integer-cycle averages give X_z = A_z cos(omega tau_z), Y_z = A_z sin(omega tau_z), phi_z = atan2(Y_z, X_z) = omega tau_z mod 2*pi, and affine tau_z gives d phi / dz = omega kappa after unwrapping.  _(class `A`)_
+- **chain closes:** True — Expanding cos(omega(t - tau_z)) and using integer-cycle averages <cos^2>=<sin^2>=1/2 and <sin cos>=0 yields the stated X and Y channels; atan2 then gives the delayed phase modulo 2*pi for nonzero amplitude, and an affine delay differentiates to omega kappa on an unwrapped window. The runner source numerically integrates the stated definitions and checks the controls without importing an external comparator or source-to-NV bridge.
+- **rationale:** The note is explicitly scoped to an ideal lock-in detector map with the delayed sinusoid supplied as the theorem input. Within that scope, the load-bearing step is a direct algebraic cycle-average identity, and the runner independently computes the averages from the definitions rather than merely printing constants. The excluded physical bridges are not used to prove the bounded detector statement and therefore do not block this scoped audit.
 - **auditor confidence:** high
 
 ### `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25`

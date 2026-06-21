@@ -1,13 +1,8 @@
 # PR Backlog
 
-No PR backlog yet. GitHub delivery is expected for this block.
+No PR backlog for block22. GitHub delivery succeeded.
 
-If PR creation fails, use:
-
-```bash
-gh pr create \
-  --base main \
-  --head physics-loop/s3-route2-readout-endpoint-block22-20260621 \
-  --title "[physics-loop] s3-route2-readout-endpoint block22 no-go" \
-  --body-file .claude/science/physics-loops/s3-route2-readout-endpoint/PR_BODY.md
+```text
+PR #4551
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4551
 ```

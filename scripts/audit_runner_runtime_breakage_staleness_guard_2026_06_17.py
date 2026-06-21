@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Verify runtime-failure runner breakage entries against current caches.
+"""Verify runner breakage inventory entries against current caches.
 
 This is a source-side audit-unblock guard. It does not edit audit results or
 rerun heavy science runners. It checks whether entries currently labelled
-`timeout` or `nonzero_exit` in `runner_breakage_inventory.json` still represent
-live evidence blockers under the current SHA-pinned runner-cache policy.
+`timeout`, `nonzero_exit`, or `missing_runner_file` in
+`runner_breakage_inventory.json` still represent live evidence blockers under
+the current SHA-pinned runner-cache policy.
 """
 from __future__ import annotations
 
@@ -15,12 +16,42 @@ import runner_cache as rc
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INVENTORY = REPO_ROOT / "docs/audit/data/runner_breakage_inventory.json"
-TARGET_REASONS = ("nonzero_exit", "timeout")
+TARGET_REASONS = ("missing_runner_file", "nonzero_exit", "timeout")
+
+
+def canonical_runner_path(runner_path: str | Path) -> str:
+    """Map legacy runner refs to checked-in ``scripts/<basename>.py`` files."""
+    raw = str(runner_path).strip()
+    if not raw:
+        return raw
+    raw_path = Path(raw)
+    basename = raw_path.name
+
+    candidates: list[str] = []
+    if raw_path.is_absolute():
+        if basename.endswith(".py"):
+            candidates.append(f"scripts/{basename}")
+    elif raw.startswith("scripts/"):
+        candidates.append(raw)
+    else:
+        candidates.extend([raw, f"scripts/{raw}"])
+    if basename.endswith(".py"):
+        candidates.append(f"scripts/{basename}")
+
+    seen: set[str] = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        path = REPO_ROOT / candidate
+        if path.exists():
+            return path.relative_to(REPO_ROOT).as_posix()
+    return raw
 
 
 def repo_relative_runner(raw: str) -> str:
-    """Return a normalized repo-relative scripts/ path, or raise ValueError."""
-    p = Path(raw)
+    """Return a canonical repo-relative scripts/ path, or raise ValueError."""
+    p = Path(canonical_runner_path(raw))
     if p.is_absolute():
         try:
             p = p.resolve().relative_to(REPO_ROOT)
@@ -90,13 +121,12 @@ def main() -> int:
         return 1
 
     print(
-        "PASS: all timeout/nonzero_exit inventory entries have fresh "
-        "status=ok caches on the current source tree."
+        "PASS: all missing_runner_file/timeout/nonzero_exit inventory entries "
+        "resolve to fresh status=ok caches on the current source tree."
     )
     print(
-        "Scope note: missing_runner_file entries are intentionally out of "
-        "scope for this guard; they are path-resolution issues, not runtime "
-        "timeout/nonzero evidence."
+        "Scope note: this guard verifies source/cache evidence only; it does "
+        "not apply or change audit verdicts."
     )
     return 0
 

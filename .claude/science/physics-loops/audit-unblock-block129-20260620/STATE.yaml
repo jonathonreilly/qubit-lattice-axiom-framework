@@ -1,0 +1,29 @@
+loop_slug: audit-unblock-block129-20260620
+mode: campaign
+local_timestamp: "2026-06-20 20:51:30 EDT"
+objective: "Unblock audit execution by repairing source-side runner evidence surfaces; do not audit claims or push to main."
+branch: physics-loop/audit-unblock-block129-20260620
+base_branch_intended: physics-loop/audit-unblock-block128-20260620
+base_reason: "Stack on block128 to avoid duplicating its generated full-ledger strict-lint/cache refresh surfaces."
+actual_current_surface_status: open
+trace_class: methodology
+artifact_role: tooling
+cycle: 129
+active_route: runner_breakage_inventory_staleness_guard
+hard_residual: "runner_breakage_inventory.json still reports 55 missing_runner_file entries even though current audit prompt tooling canonicalizes those legacy paths."
+lock_mode: degraded
+lock_note: "python3 scripts/automation_lock.py status failed with Permission denied: '/Users/jonreilly'; continuing in isolated worktree."
+files_touched:
+  - scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py
+  - logs/runner-cache/audit_runner_runtime_breakage_staleness_guard_2026_06_17.txt
+  - .claude/science/physics-loops/audit-unblock-block129-20260620/
+commands_run:
+  - "python3 scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py -> PASS; 94 inventory rows checked, including 55 missing_runner_file rows."
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py --push-mode none --allow-non-main -> refreshed cache."
+imports_retired: []
+imports_exposed: []
+audit_verdicts_changed: false
+repo_authority_surfaces_changed: false
+pr_status: pending
+next_exact_action: "Run verification, commit, push branch, and open stacked PR."
+stop_condition: "Continue campaign after block PR is opened unless runtime budget expires or no independent unblockers remain."

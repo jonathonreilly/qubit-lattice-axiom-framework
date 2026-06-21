@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1585 |
+| Applied audit verdicts | 1586 |
 | Retained-grade rows, including boxed decorations | 1473 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
 | Retained bounded rows | 987 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 38 |
-| Unaudited rows | 1561 |
+| Unaudited rows | 1560 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 33 |
+| Audited conditional rows | 34 |
 | Audited renaming rows | 28 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1563 |
-| Ready rows | 69 |
+| Total pending rows | 1562 |
+| Ready rows | 68 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 547 |
+| Leaf pending | 546 |
 
 Next ready rows by queue order:
 
-- [`sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15`](../../docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md) - medium; unaudited
 - [`staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17`](../../docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17`](../../docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31`](../../docs/Z_N_ASYMMETRY_RESIDUAL_1_FINITE_VS_CONTINUUM_NOTE_2026-05-31.md) - medium; unaudited
 - [`accessible_prediction_note`](../../docs/ACCESSIBLE_PREDICTION_NOTE.md) - medium; unaudited
 - [`alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`](../../docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
-- [`architecture_portability_live_reaudit_bridge_note_2026-06-18`](../../docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md) - leaf; unaudited
+- [`architecture_portability_live_reaudit_bridge_note_2026-06-18`](../../docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md) - medium; unaudited
+- [`bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`](../../docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 980 |
-| Leaf nodes | 1554 |
+| Medium nodes | 981 |
+| Leaf nodes | 1553 |
 
 Top load-bearing rows by graph score:
 
@@ -93,6 +93,6 @@ Top load-bearing rows by graph score:
 - `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
-- `minimal_axioms_2026-05-03` - critical; 1034 descendants; score 49.015
-- `key_terminology` - critical; 1127 descendants; score 47.640
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 899 descendants; score 45.314
+- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
+- `key_terminology` - critical; 1126 descendants; score 47.638
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312

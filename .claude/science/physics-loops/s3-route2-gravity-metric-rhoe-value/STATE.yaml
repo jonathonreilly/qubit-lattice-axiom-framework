@@ -37,6 +37,14 @@ verification:
     - "PASS: frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py: PASS=11 FAIL=0"
     - "PASS: frontier_s3_time_theta_to_slice_coupling.py: PASS=12 FAIL=0"
 review_disposition: "pass: branch-local science review; no audit verdicts applied"
-pr_status: pending_create
-next_exact_action: "Commit block76, push the science branch, and open the review PR without checking mergeability/conflicts."
+pr_status: open
+pr:
+  number: 4607
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4607"
+  title: "[physics-loop] s3-route2-gravity-metric-rhoe block76 bounded-support"
+  head: physics-loop/s3-route2-gravity-metric-rhoe-value-block76-20260621
+  base: main
+  state: OPEN
+  conflict_check: "not run per campaign instruction"
+next_exact_action: "Pivot to the next campaign target: independent E/T channel-selecting observable, unless a higher-ranked route is selected after fresh grounding."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable targets are globally blocked."

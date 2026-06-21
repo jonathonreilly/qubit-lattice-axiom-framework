@@ -17,8 +17,8 @@ repo_authority_edits: false
 audit_or_verdicts_run: false
 mergeability_or_conflict_checks_run: false
 remote_pr:
-  number: null
-  url: null
+  number: 4576
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4576
 created_files:
   - docs/QUARK_ROUTE2_SOURCE_READOUT_DENSITY_PRIMITIVE_INVENTORY_NO_GO_NOTE_2026-06-21.md
   - scripts/frontier_quark_route2_source_readout_density_primitive_inventory_no_go_2026_06_21.py
@@ -39,4 +39,4 @@ verification:
   diff_check: pass
   overclaim_scan: pass
 lock_status: "repo automation lock failed with permission error on /Users/jonreilly; branch-local lock discipline used"
-next_exact_action: "Commit, publish branch, open PR, then continue the density-primitive search."
+next_exact_action: "Continue the campaign: try to derive the inverse-square density primitive from a concrete tensor/source theorem, or broaden the no-go to nonlinear observables."

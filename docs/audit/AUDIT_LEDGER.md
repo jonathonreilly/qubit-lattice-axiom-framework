@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 959 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1613 |
+| unaudited | 1612 |
 | meta | 326 |
-| ~~audited_numerical_match~~ | 9 |
+| ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 23 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -66,9 +66,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 23 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
-| `audited_numerical_match` | 9 |
+| `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1939 |
+| `unaudited` | 1938 |
 
 | claim_type | count |
 |---|---:|
@@ -1632,6 +1632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `koide_gamma_orbit_exponential_value_law_candidate_note_2026-04-18` | positive_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `quark_e_channel_endpoint_quotient_law_note_2026-04-19` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -5153,6 +5154,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The load-bearing content is the finite breakpoint table: the per-family alpha and direction rows, with causal architecture-feature attribution explicitly split off as non-load-bearing.  _(class `E`)_
 - **chain closes:** False — The primary runner does not compute alpha values, direction fractions, or breakpoint classes, and it does not read or assert the cited authorities; it defines BreakpointRow constants and prints them. The packet therefore supports only a reprinted table, not a closed bounded theorem from the supplied inputs.
 - **rationale:** Issue: the runner's load-bearing path is the hard-coded ROWS constant table, not a computation or cross-note verifier. Why this blocks: the current packet can define or reprint the finite breakpoint rows and labels, but it does not derive or verify them as a bounded theorem. Repair target: replace the constant-table runner with a verifier that consumes retained family outputs, or add matched-ablation computations if the causal feature diagnosis is to become load-bearing. Claim boundary until fixed: documented finite summary only, with causal diagnosis excluded.
+- **auditor confidence:** high
+
+### `distance_law_definitive_note`
+
+- **Note:** [`DISTANCE_LAW_DEFINITIVE_NOTE.md`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite ordered-cubic Dirichlet Poisson/path-sum diagnostic table for N=31..96, the selected scaled-window N>=56 weighted mean, and the N=64 mass-independence check.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-distance_law_definitive_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the selected N >= 56 scaled-window weighted-mean diagnostic, the exponent is numerically consistent with alpha = -1 at 0.1% precision.  _(class `G`)_
+- **chain closes:** False — The runner genuinely computes the finite Dirichlet Poisson/path-sum table and the N=64 mass-independence check, and the quoted numbers match the cache. The inverse-square conclusion does not close because the selected N>=56 scaled-window weighted mean is not independently selected over extrapolation families in the same output that miss -1 by several percent.
+- **rationale:** Issue: the 0.1% agreement comes from the selected scaled-window N>=56 weighted mean, not from a theorem selecting that estimator. Why this blocks: other reported extrapolations give alpha_inf values several percent away from -1, so the inverse-square interpretation depends on the chosen estimator. Repair target: provide an independent estimator-selection theorem or a pre-registered protocol selecting this window before seeing the result. Claim boundary until fixed: finite-table numerical support for the stated ordered-cubic Dirichlet diagnostic only.
 - **auditor confidence:** high
 
 ### `distance_law_note`

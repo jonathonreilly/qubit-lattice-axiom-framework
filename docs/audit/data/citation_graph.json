@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_route2_exact_time_coupling_note_2026-04-19"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_dimensional_compression_note"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "single_axiom_hilbert_note"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "quark_route2_exact_time_coupling_note_2026-04-19",
         "hierarchy_dimensional_compression_note",
         "koide_mru_demotion_note_2026-04-20",
         "koide_q_readout_factorization_theorem_2026-04-22",
         "dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17",
         "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
-        "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
+        "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
+        "single_axiom_hilbert_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d9ee5b75ea4a53e52e48a942d190f29f71e6656b6d1dd1b8965ea301fa77ed45",
+      "note_hash": "e40a818415850756431d11e5959c8f8f2b6b7125098a10d2503c104671c536ef",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

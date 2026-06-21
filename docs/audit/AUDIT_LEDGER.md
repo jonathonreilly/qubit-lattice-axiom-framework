@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 935 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
-| unaudited | 1670 |
+| unaudited | 1669 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
-| ~~audited_conditional~~ | 11 |
+| ~~audited_conditional~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1360 |
-| `audited_conditional` | 11 |
+| `audited_conditional` | 12 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1996 |
+| `unaudited` | 1995 |
 
 | claim_type | count |
 |---|---:|
@@ -1502,6 +1502,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -9353,6 +9354,22 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **open / conditional deps cited:**
   - `HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`
   - `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
+- **auditor confidence:** high
+
+### `hierarchy_dimensional_compression_note`
+
+- **Note:** [`HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional D=4 arithmetic on the computed condensate-density ratio R: the supplied quartic fixed-density readout maps a supplied positive coefficient ratio to R^(-1/4), distinguishes it from the D=16 root, and checks the D=4 identity 1/D = 4/2^D; physical endpoint selection and absolute EW scale closure were not audited as closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_dimensional_compression_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the fixed positive D=4 density-coefficient readout rho_* = A(L)v(L)^4, if R is the endpoint coefficient ratio relative to L_t=2, the scale readout is forced to the inverse fourth-root compression R^(-1/4).  _(class `A`)_
+- **chain closes:** False — The conditional algebra from a supplied positive coefficient ratio to the inverse fourth-root readout closes. The physical hierarchy/VEV chain does not close because the packet still lacks a theorem selecting the hierarchy Matsubara endpoint coefficient surface as the physical Higgs density surface and fixing the absolute normalization.
+- **rationale:** The runner genuinely builds the finite staggered Dirac operator, computes the condensate-density ratio, and checks the D=4 versus D=16 arithmetic without using the printed observed EW context in PASS gates. The fixed-density and EW-coordinate bridges support the fourth-root readout for a supplied positive quartic density, and the taste-count dependencies are retained-grade. However, both the parent note and cited bridge/no-go packet explicitly leave endpoint coefficient to physical Higgs density selection and absolute scale open, so retained status cannot propagate to a physical hierarchy closure.
+- **open / conditional deps cited:**
+  - `HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`
+  - `HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md`
 - **auditor confidence:** high
 
 ### `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`

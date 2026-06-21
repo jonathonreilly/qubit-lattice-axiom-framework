@@ -24,7 +24,9 @@ no_go_routes_reused:
   - "E-center-blind endpoint constraints cannot select rho_E"
 proposal_allowed: false
 audit_required_before_effective_retained: true
-pr_status: pending
+pr_status: open
+pr_number: 4565
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4565"
 checks:
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py -> PASS=51 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py -> PASS=62 FAIL=0"
@@ -33,5 +35,5 @@ checks:
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py -> PASS=11 FAIL=0"
   - "python3 -m py_compile scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py -> pass"
   - "branch-local overclaim scan -> no matches"
-next_exact_action: "Commit, publish branch, open PR, then continue to the next positive route."
+next_exact_action: "Continue the campaign by pivoting to measured-calibration box-size parameterization or the hierarchy/APBC seven-eighths bridge."
 stop_condition: "Do not stop campaign on this block; pivot after PR handling while runtime remains."

@@ -1,0 +1,62 @@
+loop: audit-unblock-block150-20260621
+campaign: physics-loop audit-unblock
+mode: campaign
+block: 150
+target_claim_id: dm_eta_g1_fierz_channel_narrative_correction_note_2026-05-27
+target_note: docs/DM_ETA_G1_FIERZ_CHANNEL_NARRATIVE_CORRECTION_NOTE_2026-05-27.md
+branch: physics-loop/audit-unblock-block150-20260621
+base: origin/main
+base_oid: 44f69669dabd370c355181ff1b36c08fd9534c81
+actual_current_surface_status: bounded-support
+ledger_claim_type: bounded_theorem
+ledger_audit_status: unaudited
+ledger_effective_status: unaudited
+criticality: leaf
+runner: scripts/dm_eta_g1_fierz_channel_narrative_correction_probe.py
+runner_cache: logs/runner-cache/dm_eta_g1_fierz_channel_narrative_correction_probe.txt
+runner_result: "SUMMARY: PASS=9 FAIL=0"
+support_runner: scripts/frontier_dm_eta_g1_coleman_weinberg_2026_05_06.py
+support_runner_result: "PASS = 17, FAIL = 0"
+runner_classification:
+  dominant_class: B
+  assert_count: 1
+  counts:
+    A: 0
+    B: 1
+    C: 0
+    D: 0
+  decoration_candidate: true
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/DM_ETA_G1_FIERZ_CHANNEL_NARRATIVE_CORRECTION_NOTE_2026-05-27.md
+  - scripts/dm_eta_g1_fierz_channel_narrative_correction_probe.py
+  - logs/runner-cache/dm_eta_g1_fierz_channel_narrative_correction_probe.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/runner_classification.json
+  - .claude/science/physics-loops/audit-unblock-block150-20260621/
+commands_run:
+  - "python3 scripts/frontier_koide_lane_regression.py"
+  - "python3 scripts/frontier_dm_eta_g1_coleman_weinberg_2026_05_06.py"
+  - "python3 scripts/dm_eta_g1_fierz_channel_narrative_correction_probe.py"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/dm_eta_g1_fierz_channel_narrative_correction_probe.py --push-mode none --allow-non-main"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/dm_eta_g1_fierz_channel_narrative_correction_probe.py --check-only --push-mode none --allow-non-main"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+  - "python3 -m py_compile scripts/dm_eta_g1_fierz_channel_narrative_correction_probe.py scripts/frontier_dm_eta_g1_coleman_weinberg_2026_05_06.py docs/audit/scripts/build_citation_graph.py docs/audit/scripts/seed_audit_ledger.py docs/audit/scripts/classify_runner_passes.py"
+  - "git diff --check"
+skipped_candidate:
+  claim_id: koide_axiom_native_support_batch_note_2026-04-22
+  reason: "Integrated regression currently exits nonzero: TOTAL: 395/381, with one real 3/6 subrunner failure and one stale expected-count mismatch."
+review_loop_disposition: pass
+review_loop_note: "Local review only: bounded narrative-correction wording, runner assertions, parser discoverability, cache, and generated audit surfaces are consistent. The reviewer lane owns PR refresh/cherry-pick against fast-moving main."
+lock_mode: branch-local degraded
+next_exact_action: "Commit, push branch, open PR #pending, then stop if runtime budget is exhausted."
+stop_condition: "Runtime exhausted or no viable source-side unblock target remains after queue refresh."

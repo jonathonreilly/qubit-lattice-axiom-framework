@@ -17,6 +17,7 @@ of `End(C^N_c)`.
 
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
+**Runner:** [`scripts/dm_eta_g1_fierz_channel_narrative_correction_probe.py`](../scripts/dm_eta_g1_fierz_channel_narrative_correction_probe.py)
 **Affects:** three landed G1 chain notes from 2026-05-06.
 **Does not affect:** arithmetic identity `8/3 = (N_c^2-1)/N_c`, the
 runner-verified `PASS = 17/17, 15/15, 12/12` test counts, or the

@@ -4,8 +4,8 @@ block: 128
 mode: physics-loop
 branch: physics-loop/audit-unblock-block128-20260620
 base: main
-base_commit: 81a3eea94b29cc108f3b774569206c3c35912cef
-rebuilt_at: "2026-06-21 00:15:47 EDT"
+base_commit: ca3f6f8d3d415c4464c962fb58456b57849e7a8d
+rebuilt_at: "2026-06-21 00:22:58 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "full-ledger runner-cache freshness"
@@ -18,7 +18,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed earlier with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "Rebuilt PR #4498 from current origin/main and refreshed the 11 stale/corrupt full-ledger runner caches."
+current_result: "Rebuilt PR #4498 from current origin/main and refreshed the 11 stale/corrupt full-ledger runner caches; rebasing onto ca3f6f8d3 did not require additional cache changes."
 cache_refresh:
   before: "3039 fresh, 11 stale/corrupt, 0 missing across 3050 ledger runners"
   after: "3050 fresh, 0 stale, 0 missing across 3050 ledger runners"
@@ -39,5 +39,5 @@ verification_status: pass
 review_disposition: pass
 pr_status: open_needs_force_push
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4498
-next_exact_action: "Commit refreshed cache transcripts, force-push PR #4498, update PR body, then continue to the next audit-unblock target."
+next_exact_action: "Force-push the rebased PR #4498 branch, update PR body, then continue to the stacked orphan-cache cleanup PR."
 stop_condition: "Continue campaign after PR #4498 is updated."

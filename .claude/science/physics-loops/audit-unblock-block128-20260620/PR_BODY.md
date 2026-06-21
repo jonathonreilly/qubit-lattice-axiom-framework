@@ -1,7 +1,7 @@
 ## Summary
 
 Refreshes the 11 stale/corrupt full-ledger runner-cache transcripts currently
-present on `origin/main` at `81a3eea94`.
+present on `origin/main` at `ca3f6f8d3`.
 
 Before refresh:
 
@@ -36,3 +36,8 @@ status.
 - `python3 -m py_compile scripts/precompute_audit_runners.py scripts/runner_cache.py` -> OK
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 77 tests passed
 - `git diff --check` -> OK
+
+After rebasing onto `ca3f6f8d3`, the same full-ledger cache check still reports
+`fresh: 3050`, `stale to refresh: 0`, `missing on disk: 0` on this branch. A
+detached `origin/main` check at `ca3f6f8d3` still reports the same 11
+stale/corrupt runner caches before this PR.

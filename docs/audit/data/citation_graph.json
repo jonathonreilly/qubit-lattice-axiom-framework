@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_q_readout_factorization_theorem_2026-04-22"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
         "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
         "koide_aps_block_by_block_forcing_note_2026-04-21",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
         "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
         "quark_route2_exact_readout_map_note_2026-04-19",
-        "koide_q_readout_factorization_theorem_2026-04-22"
+        "koide_q_readout_factorization_theorem_2026-04-22",
+        "dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a5f157a036219c6c9b9c9ab4ba6c3549b70b6b8157b7a40cc57503757373d7da",
+      "note_hash": "2c937b38c54d0a0e4e8b2accf9099bac852cacb68e2968490c1e3e1b150ad2b3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

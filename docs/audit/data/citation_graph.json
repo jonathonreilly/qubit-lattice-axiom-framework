@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23"
+      "to": "primitive_p_lh_content_proposal_note_2026-05-10_pplh"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "primitive_p_lh_content_proposal_note_2026-05-10_pplh"
+      "to": "distance_law_preserving_third_family_note"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+        "primitive_p_lh_content_proposal_note_2026-05-10_pplh",
         "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
         "koide_lightcone_primitive_theorem_note_2026-05-10",
         "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
         "distance_law_definitive_note",
         "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
         "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
-        "primitive_p_lh_content_proposal_note_2026-05-10_pplh"
+        "distance_law_preserving_third_family_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "63ccc182cd8bfeb96b0bfb5a25b28201fe0993890fa6c8986b7d99075f90cb2d",
+      "note_hash": "d558f317d221d90d60c071377ba4f2c8b69a02e9d1bc48de65d60c21c796f540",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

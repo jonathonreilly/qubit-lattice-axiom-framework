@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 958 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1618 |
+| unaudited | 1617 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 21 |
+| ~~audited_conditional~~ | 22 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1392 |
-| `audited_conditional` | 21 |
+| `audited_conditional` | 22 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1944 |
+| `unaudited` | 1943 |
 
 | claim_type | count |
 |---|---:|
@@ -1543,6 +1543,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15694,6 +15695,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For H=aI+bC+conj(b)C^2, Tr(pi_plus(H))=3a and Tr(pi_perp(H))=b Tr(C)+conj(b) Tr(C^2)=0, so tau_M(H)=Tr(H)=3a and the literal linear trace form cannot distinguish doublet amplitude.  _(class `A`)_
 - **chain closes:** True — The degeneracy follows from elementary C3 circulant algebra: C and C^2 are traceless, so the doublet part contributes zero to the linear trace functional. The runner's M1 subcheck verifies zero tau-minus-trace delta, C/C^2 tracelessness, and the separate BAE saddle ratio for the log-functional candidate; broader P-BAE primitive closure is excluded.
 - **rationale:** The no-go is local and exact: the proposed linear trace functional is just ordinary trace on Hermitian C3 circulants, hence it is blind to doublet amplitude at fixed a and cannot supply the required block-weight distinction. The proof does not need the open target proposal or review PR as authority; it follows from Tr(C)=Tr(C^2)=0 and the displayed decomposition. The runner's relevant M1 subtest passes and the note explicitly withholds any retained claim for the broader P-BAE primitive program.
+- **auditor confidence:** high
+
+### `primitive_p_lh_content_proposal_note_2026-05-10_pplh`
+
+- **Note:** [`PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md`](../../docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate design map of P-LH-1, P-LH-2, and P-LH-3 for SM LH/RH content selection, with the audited scope limited to the negative source-boundary claim that no candidate is currently an approved framework-native single-primitive derivation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-primitive_p_lh_content_proposal_note_2026-05-10_pplh-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** None of the three candidates is a clean single-primitive solution on the existing physical Cl(3)/Z^3 inputs alone; the strongest route is the imported NCG packet with order-one, KO-dim-6 J, and the finite algebra C ⊕ Cl⁺(3) ⊕ M_3(C).  _(class `A`)_
+- **chain closes:** False — The packet supports the open-gate/firewall conclusion, but it does not close a framework-derived SM LH/RH selector. The missing step is a retained bridge theorem or approved primitive registration for the finite algebra, order-one condition, and KO-dim-6 real structure, or a different approved selector route.
+- **rationale:** The substantive runner checks are finite Pauli/block algebra consistency checks; many verdict/table/pass lines hard-code the candidate status or source-boundary caveats rather than deriving the NCG primitives from the baseline. The primitive registry supplied in the packet approves minimal_axioms, scale_reference_primitive, kinetic_isotropy_primitive, and realized_state_primitive only; it does not approve order-one, KO-dim-6 J, or the finite algebra as primitives. The retained-bounded 2026-06-18 boundary reinforces that the no-new-axioms route is underdetermined, so the safe audited result is conditional/open rather than clean closure.
+- **open / conditional deps cited:**
+  - `P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md`
 - **auditor confidence:** high
 
 ### `product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`

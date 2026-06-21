@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 292,
-    "high": 281,
+    "high": 280,
     "leaf": 588,
     "medium": 459
   },
@@ -8462,31 +8462,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "primitive_p_lh_content_proposal_note_2026-05-10_pplh",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.892,
-      "note_path": "docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py",
-      "transitive_descendants": 20
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17641,17 +17616,17 @@
       "deps": [
         "distance_law_portability_note"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/gate_b_grown_joint_package.py"
       ],
-      "load_bearing_score": 3.0,
+      "load_bearing_score": 5.748,
       "note_path": "docs/DISTANCE_LAW_PRESERVING_THIRD_FAMILY_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/DISTANCE_LAW_PRESERVING_THIRD_FAMILY.py",
-      "transitive_descendants": 3
+      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "any_non_self",
@@ -48634,6 +48609,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 102,
-  "total_pending": 1620
+  "ready_count": 101,
+  "total_pending": 1619
 }

@@ -8,9 +8,17 @@ Branch:
 physics-loop/s3-route2-source-scalar-prep-gate-block65-20260621
 ```
 
-PR: pending.
+PR:
 
-Remote science commit: pending.
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4596
+```
+
+Remote science commit:
+
+```text
+5b0d83f5ce49aac945c173869e765336cc5d31dd
+```
 
 Claim-state movement:
 
@@ -74,7 +82,9 @@ PASS
 
 ## PR Identity
 
-Pending.
+```text
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-source-scalar-prep-gate-block65-20260621","number":4596,"state":"OPEN","title":"[physics-loop] s3-route2-source-scalar-prep-gate block65 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4596"}
+```
 
 ## Next Exact Action
 

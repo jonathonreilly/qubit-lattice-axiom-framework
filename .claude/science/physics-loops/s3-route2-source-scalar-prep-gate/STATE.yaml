@@ -7,8 +7,8 @@ block: 65
 branch: physics-loop/s3-route2-source-scalar-prep-gate-block65-20260621
 base: origin/main
 base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
-local_science_commit: pending
-remote_science_commit: pending
+local_science_commit: 5cb876d610ed4fa8a6d582ee0fa427ecd352013d
+remote_science_commit: 5b0d83f5ce49aac945c173869e765336cc5d31dd
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-scalar-prep-gate-block65-20260621
 date: 2026-06-21
 mode: campaign
@@ -64,10 +64,11 @@ open_imports:
   - "A typed center-excess nonuniform S_dual source-preparation theorem."
   - "Or a readout-only inverse-square coefficient theorem fixing p=2 without endpoint target fitting."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending_creation
-pr_number: pending
-pr_url: pending
-pr_identity_view: pending
+pr_status: open
+pr_number: 4596
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4596
+pr_identity_view: >-
+  {"baseRefName":"main","headRefName":"physics-loop/s3-route2-source-scalar-prep-gate-block65-20260621","number":4596,"state":"OPEN","title":"[physics-loop] s3-route2-source-scalar-prep-gate block65 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4596"}
 next_exact_action: >-
   Construct the center-excess nonuniform S_dual theorem, or prove a readout-only
   inverse-square coefficient theorem if source-preparation remains unsupported.

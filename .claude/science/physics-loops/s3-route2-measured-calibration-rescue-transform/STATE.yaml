@@ -39,6 +39,13 @@ verification_results:
     - "frontier_quark_route2_e_center_blindness_no_go.py: TOTAL: PASS=14, FAIL=0"
 review_disposition: pass
 review_notes: "Local branch self-review only; no audit verdicts applied and no repo-wide authority surfaces edited."
-pr_status: pending
-next_exact_action: "Commit, push, open the block74 PR, record PR identity only, then pivot to nonlinear E-center tensor observable block75."
+pr_status: open
+pr:
+  number: 4605
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4605"
+  title: "[physics-loop] s3-route2-measured-calibration-rescue block74 no-go"
+  base: main
+  head: physics-loop/s3-route2-measured-calibration-discriminator-block74-20260621
+  state: OPEN
+next_exact_action: "Pivot to nonlinear E-center tensor observable block75 from a fresh worktree on current origin/main."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable targets are globally blocked."

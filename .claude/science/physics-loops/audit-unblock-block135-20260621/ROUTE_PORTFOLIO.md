@@ -12,5 +12,5 @@
 
 3. Apply source-note cycle repairs in the same PR.
    - Deferred.
-   - Reason: exploratory pipeline regeneration on bare `origin/main` mixed in a
-     broad unrelated support-surface refresh, including 55 hard resets.
+   - Reason: keep this PR tooling-only; apply source-note repairs in the
+     follow-up PR so reviewers can isolate the graph hygiene diff.

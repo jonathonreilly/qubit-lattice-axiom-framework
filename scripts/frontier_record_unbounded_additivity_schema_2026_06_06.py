@@ -10,6 +10,8 @@ exact algebraic consequence relevant to the "bounded vs unbounded" question:
   finite cap once nonzero produced records are supplied;
 * finite words/counts and the Z^3 arbitrary finite-slot construction are
   checked directly here, without importing the record-history monoid parent;
+* local readout-atom availability is checked through the paired 2026-06-17
+  theorem, without deriving production or physical context selection;
 * post-record counts are realized information, not a probability law.
 """
 
@@ -25,6 +27,7 @@ FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md"
 MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+LOCAL_ATOM_AVAILABILITY = ROOT / "docs" / "RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -103,7 +106,7 @@ def main() -> int:
     print("reachability_to_target: supports")
     print("proposal_allowed: false")
     print("audit_required_before_effective_retained: true")
-    print("dependency_repair: minimal_axioms + self-contained finite word/count/Z^3 proof")
+    print("dependency_repair: minimal_axioms + local_finite_readout_atom_availability_2026-06-17 + self-contained finite word/count/Z^3 proof")
     print("record_history_monoid_parent_load_bearing: false")
     print()
 
@@ -185,7 +188,8 @@ def main() -> int:
     print("\nE. audit-lane classifier consequences")
     gate_status = {
         "fixed_finite_prefix": "exact",
-        "arbitrary_finite_prefix_schema": "requires_supplied_readout_context_and_supplied_nonzero_records",
+        "arbitrary_finite_prefix_schema": "requires_local_readout_atom_availability_and_supplied_realized_records",
+        "local_readout_atom_availability": "external_dependency",
         "record_history_monoid_parent": "parallel_context_only",
         "production_kernel": "open",
         "probability_law": "open",
@@ -195,9 +199,10 @@ def main() -> int:
     }
     check("fixed finite prefix additivity is exact", gate_status["fixed_finite_prefix"] == "exact")
     check(
-        "unbounded schema carries supplied-context boundary",
-        gate_status["arbitrary_finite_prefix_schema"] == "requires_supplied_readout_context_and_supplied_nonzero_records",
+        "unbounded schema carries local-availability and supplied-record boundary",
+        gate_status["arbitrary_finite_prefix_schema"] == "requires_local_readout_atom_availability_and_supplied_realized_records",
     )
+    check("local readout-atom availability remains a separate dependency", gate_status["local_readout_atom_availability"] == "external_dependency")
     check("record-history monoid is parallel context only", gate_status["record_history_monoid_parent"] == "parallel_context_only")
     check("unbounded schema is not a production claim", gate_status["production_kernel"] == "open")
     check("production kernel remains open", gate_status["production_kernel"] == "open")
@@ -209,12 +214,16 @@ def main() -> int:
     print("\nF. dependency-edge and supplied-context firewall")
     note = NOTE.read_text(encoding="utf-8")
     minimal = MINIMAL_AXIOMS.read_text(encoding="utf-8")
+    local_atoms = LOCAL_ATOM_AVAILABILITY.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
+    note_flat_lower = note_flat.lower()
     minimal_flat = " ".join(minimal.split())
+    local_atoms_flat = " ".join(local_atoms.split())
     check("source note states open_gate / conditional-support status", "**Claim type:** open_gate" in note and "actual_current_surface_status: conditional-support" in note)
     check("source note has post-audit claim-type repair", "2026-06-16 Post-Audit Claim-Type Repair" in note)
     check("source note has dependency-edge firewall", "Dependency-Edge Repair And Supplied-Context Firewall" in note)
     check("source note cites current minimal axiom memo", "MINIMAL_AXIOMS_2026-06-05.md" in note)
+    check("source note cites local finite readout-atom availability theorem", "RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md" in note)
     monoid_name = "RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md"
     forbidden_dependency_markers = [
         "- [`" + monoid_name + "`",
@@ -231,7 +240,7 @@ def main() -> int:
         "forbidden dependency markers absent" if not forbidden_hits else "; ".join(forbidden_hits),
     )
     check("record-history monoid is named as parallel context only", "Parallel context only, not a load-bearing dependency" in note)
-    check("downstream citation rule is explicit", "requires_supplied_readout_context_and_supplied_nonzero_records" in note)
+    check("downstream citation rule is explicit", "requires_local_readout_atom_availability_and_supplied_realized_records" in note)
     check("minimal Record language supplies durable realized outcome", "A record is the durable registration of the realized outcome." in minimal)
     check(
         "minimal Record language withholds readout context and dynamics",
@@ -239,9 +248,23 @@ def main() -> int:
     )
     check("source note locally proves finite word/count surface", "finite histories are finite words" in note_flat and "forgetting order gives finite count vectors" in note_flat)
     check("source note locally proves arbitrary finite Z^3 slots", "for every finite `N`, the lattice sites" in note_flat and "pairwise distinct" in note_flat)
+    check(
+        "local availability theorem supplies nonzero readout atoms",
+        "record-eligible readout atoms" in local_atoms_flat
+        and "declared unit-count readout" in local_atoms_flat,
+    )
+    check(
+        "local availability theorem does not claim production or physical selection",
+        "record production or realization dynamics" in local_atoms_flat
+        and "does not physically select" in note_flat,
+    )
     check("source note says Record does not supply producer/readout/probability", "does not supply the producer" in note_flat and "probability weights" in note_flat)
-    check("source note says Record does not supply normalization/lower-bound bridge", "unit normalization or a positive lower bound" in note_flat)
-    check("source note says production is not inferred from slots", "does not infer production from the existence of lattice slots" in note_flat)
+    check(
+        "source note says physical context selection remains open",
+        "does not physically select a readout context" in note_flat_lower
+        or "does not physically select that context" in note_flat_lower,
+    )
+    check("source note says production is not inferred from slots/readout atoms", "does not infer production from the existence of lattice slots or readout atoms" in note_flat)
     check("downstream retained-authority firewall is explicit", "must not cite this row as retained authority" in note_flat)
 
     print()
@@ -251,8 +274,9 @@ def main() -> int:
             "VERDICT: Record finite additivity gives exact finite-prefix "
             "readout. The finite word/count and Z^3 arbitrary finite-slot "
             "surface is proved locally here, so the record-history monoid "
-            "parent is not load-bearing. The schema still requires a supplied "
-            "readout context and supplied nonzero realized records; this "
+            "parent is not load-bearing. The schema uses the local finite "
+            "readout-atom availability theorem and still requires supplied "
+            "realized records; this "
             "runner does not derive production, probability, IID, rates, or a dial."
         )
         return 0

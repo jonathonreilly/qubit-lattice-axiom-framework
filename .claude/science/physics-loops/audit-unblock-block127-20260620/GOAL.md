@@ -16,7 +16,6 @@ This is not an audit verdict, not a retained-status proposal, and not a claim th
 ready. The row remains unaudited and dependency-blocked until the audit process handles its
 upstream dependencies.
 
-As in block126, strict audit lint on the narrow cache-only diff exposed stale retained-grade
-ledger hashes already present on the base. The block therefore also carries deterministic
-output from `docs/audit/scripts/run_pipeline.sh` and `scripts/audit_packet_script_deps.py`.
-No audit worker was run and no verdict was applied by hand.
+After rebasing onto current `main`, this block is intentionally narrowed to the runner-cache
+evidence artifact plus branch-local loop metadata. Broader audit-support regeneration and
+helper-accounting repairs are left to later PRs.

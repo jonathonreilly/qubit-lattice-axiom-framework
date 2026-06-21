@@ -11,17 +11,13 @@ The refreshed cache records the full runner transcript:
 - timeout: `1800` seconds
 - elapsed: `387.45` seconds
 
-The block also includes deterministic generated outputs from:
-
-- `docs/audit/scripts/run_pipeline.sh`
-- `scripts/audit_packet_script_deps.py`
-
-This was necessary because strict audit lint on a cache-only branch exposed stale retained-grade
-ledger hashes already present on the base.
+After rebasing onto current `main` at `678b38ce7`, this block is narrowed to
+the target runner transcript plus branch-local loop metadata. Broader generated
+audit-support refreshes are left to later PRs.
 
 ## Boundary
 
-This is a runner-certificate / methodology artifact plus generated audit-support refresh. It
+This is a runner-certificate / methodology artifact. It
 does not audit the claim, does not hand-apply a verdict, does not claim retained status, and
 does not make the target row ready.
 
@@ -40,9 +36,7 @@ continued in a dedicated branch/worktree:
 
 - `python3 scripts/precompute_audit_runners.py --runners scripts/frontier_frozen_stars_rigorous.py --force --push-mode none --allow-non-main` -> OK, elapsed `387.4s`.
 - `python3 scripts/precompute_audit_runners.py --runners scripts/frontier_frozen_stars_rigorous.py --check-only --push-mode none --allow-non-main` -> fresh.
-- `bash docs/audit/scripts/run_pipeline.sh` -> complete; lint stage OK.
-- `python3 scripts/audit_packet_script_deps.py | tee logs/runner-cache/audit_packet_script_deps.txt` -> exit 0.
-- `python3 docs/audit/scripts/audit_lint.py --strict` -> OK, notices only.
+- `python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --allow-non-main` -> no changed ledger primary runners, no stale caches, no missing caches.
 - `python3 -m py_compile scripts/frontier_frozen_stars_rigorous.py scripts/precompute_audit_runners.py scripts/runner_cache.py` -> OK.
 - `git diff --check` -> OK.
 

@@ -40,5 +40,11 @@ commands_run:
 open_imports:
   - "A non-invariant typed source line or approved readout-map primitive remains open."
 next_exact_action: "Commit, publish, and open the block38 PR."
-pr_status: pending
+pr_status:
+  number: 4568
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4568"
+  title: "[physics-loop] s3-route2-readout-endpoint block38 no-go"
+  head: physics-loop/s3-route2-readout-endpoint-block38-20260621
+  base: main
+  state: OPEN
 stop_condition: "None; campaign remains active after PR handoff."

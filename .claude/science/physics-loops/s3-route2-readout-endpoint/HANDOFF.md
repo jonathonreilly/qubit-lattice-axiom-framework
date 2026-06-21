@@ -34,3 +34,14 @@ Completed focused checks:
 ## Scope
 
 This does not rule out a future non-invariant typed source line or stronger readout-map primitive.
+
+## PR
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4568
+- Branch: `physics-loop/s3-route2-readout-endpoint-block38-20260621`
+- Base: `main`
+- Status: open, identity verified only. Conflict/mergeability was not checked.
+
+## Next Action
+
+Search for non-invariant source/support geometry that can type the adjoint line, or pivot to a stronger readout-map theorem beyond the restricted carrier.

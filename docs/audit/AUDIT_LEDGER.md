@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1002 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1528 |
+| unaudited | 1527 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1451 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1854 |
+| `unaudited` | 1853 |
 
 | claim_type | count |
 |---|---:|
@@ -1616,6 +1616,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_first_order_selector_bounded_localization_certificate_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11660,6 +11661,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
   - `KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md`
+- **auditor confidence:** high
+
+### `koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`
+
+- **Note:** [`KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3 algebraic localization only: Q is delta-independent, the clock character can encode the conditional (1,1) block balance, the native circulant R^3 route has no nonzero Gamma_chi-anticommuting C3-equivariant operator, and a separate chirality factor admits the algebraic escape shape; no physical M(b) tensor sigma_+ action/readout bridge or r=1/2 derivation is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Inside the native R^3 circulant family, comm(C) cap anticomm(Gamma_chi) = {0}, while on a separate R^3 tensor C^2 chirality factor a nonzero factor-crossing operator commutes with C tensor I and anticommutes with I tensor sigma_z.  _(class `A`)_
+- **chain closes:** False — The finite matrix algebra in the runner closes exactly, and the runner source actually computes the relevant identities. The full row still cites a non-retained meta route-boundary dependency and explicitly leaves the physical AC_phi_lambda-to-M(b) tensor sigma_+ coupling and r-weighting/readout bridge open.
+- **rationale:** Issue: the bounded algebraic checks close, but the row lists a non-retained meta dependency and its physical L-R coupling/readout interpretation remains explicitly unsupplied. Why this blocks: retained status cannot propagate through an open physical identification, so the packet supports only finite C3/R^3/R^3 tensor C^2 route-pruning, not a retained physical selector theorem. Repair target: either remove or audit the non-retained meta dependency while keeping the row strictly algebraic, or supply a retained bridge theorem deriving the physical L-R coupling and r-weighting rule. Claim boundary until fixed: bounded algebraic localization only.
+- **open / conditional deps cited:**
+  - `KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md`
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`

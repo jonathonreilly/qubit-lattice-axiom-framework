@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_first_order_selector_bounded_localization_certificate_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_records_pointer_grounds_block_channel_note_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_first_order_selector_bounded_localization_certificate_2026-06-18",
         "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
         "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
         "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
         "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
         "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
         "koide_reality_type_permitted_not_forced_note_2026-05-30",
-        "koide_records_pointer_grounds_block_channel_note_2026-05-31"
+        "koide_records_pointer_grounds_block_channel_note_2026-05-31",
+        "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "67bfa9eb5168a87dda5e6cb19dbb1358b70203873806c3ec72bbf67aefb18ccb",
+      "note_hash": "6f4a296e83a6760ebb757197df61b51032a6e9e6d8dfcf487fd2f1aab1e305ef",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

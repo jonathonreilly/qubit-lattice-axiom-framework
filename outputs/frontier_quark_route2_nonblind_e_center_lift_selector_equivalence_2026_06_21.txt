@@ -1,0 +1,57 @@
+==============================================================================
+FRONTIER: Route-2 nonblind E-center lift selector equivalence
+==============================================================================
+
+==============================================================================
+PART 1: Exact selector equivalences
+==============================================================================
+  q_T = 5/6
+  q_E = 15/8
+  lambda = q_E/q_T = 9/4
+  center T/E = -8/9
+  [PASS] Granted T-side rho_T=-1 gives q_T=5/6  (5/6)
+  [PASS] rho_E=21/4 gives q_E=15/8  (15/8)
+  [PASS] rho_E=21/4 gives lambda=q_E/q_T=9/4  (9/4)
+  [PASS] rho_E=21/4 gives center T/E=-8/9  (-8/9)
+  [PASS] q_E=15/8 solves back to rho_E=21/4
+  [PASS] center T/E=-8/9 solves q_E=15/8 and rho_E=21/4
+  [PASS] lambda=9/4 solves q_E=15/8 and rho_E=21/4
+
+==============================================================================
+PART 2: Typed bridge support and wrong-structure falsifiers
+==============================================================================
+  [PASS] R_conn at N_c=3 is 8/9  (8/9)
+  [PASS] If the typed bridge center T/E=-R_conn is supplied, rho_E=21/4 follows  (q_E=15/8, rho_E=21/4)
+  [PASS] Wrong color count N_c=2 gives rho_E=22/3, not 21/4  (R_conn=3/4, rho_E=22/3)
+  [PASS] Wrong center denominator 5 gives rho_E=4  (q_T=4/5, q_E=9/5, rho_E=4)
+  [PASS] Wrong center denominator 12 gives rho_E=51/4  (q_T=11/12, q_E=33/16, rho_E=51/4)
+  [PASS] No E-center lift gives center T/E=-5/3, not -8/9  (-5/3)
+
+==============================================================================
+PART 3: Nonblind E-center access is necessary but not sufficient
+==============================================================================
+  rho_E=-1: E-center=(Fraction(5, 6), Fraction(0, 1)), q_E=5/6, center T/E=-2
+  rho_E=0: E-center=(Fraction(1, 1), Fraction(0, 1)), q_E=1, center T/E=-5/3
+  rho_E=1: E-center=(Fraction(7, 6), Fraction(0, 1)), q_E=7/6, center T/E=-10/7
+  rho_E=21/4: E-center=(Fraction(15, 8), Fraction(0, 1)), q_E=15/8, center T/E=-8/9
+  rho_E=8: E-center=(Fraction(7, 3), Fraction(0, 1)), q_E=7/3, center T/E=-5/7
+  [PASS] Evaluating E-center exposes a continuum of q_E values  (q_E values=(Fraction(5, 6), Fraction(1, 1), Fraction(7, 6), Fraction(15, 8), Fraction(7, 3)))
+  [PASS] The granted T-side data stay fixed across the same continuum
+  [PASS] Positive E-center readout only gives the bound rho_E>-6 and still does not select 21/4
+  [PASS] Only one sampled nonblind value hits the target center ratio
+
+==============================================================================
+PART 4: Current authority-surface scope checks
+==============================================================================
+  [PASS] E-center lift derivation attempt names the exact missing computation
+  [PASS] Source-domain bridge note says the typed R_conn -> center-ratio bridge is missing
+  [PASS] Measured calibration is comparator/support, not a derivation
+  [PASS] Box-size scan closes the bulk-limit promotion of the N=15 coincidence
+  [PASS] Exact readout note still names beta_E/alpha_E as the missing map entry
+  [PASS] Theta-to-slice parent remains blocked by the endpoint triple
+
+==============================================================================
+TOTAL: PASS=23, FAIL=0
+==============================================================================
+
+VERDICT: exact-support boundary. The nonblind E-center selector can be stated equivalently as rho_E=21/4, q_E=15/8, lambda=9/4, or center T/E=-8/9; if the typed R_conn bridge is supplied, the same arithmetic forces the endpoint. Current authority surfaces still do not supply that selector or typed bridge.

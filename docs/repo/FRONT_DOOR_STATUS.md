@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1502 |
-| Retained-grade rows, including boxed decorations | 1414 |
+| Applied audit verdicts | 1503 |
+| Retained-grade rows, including boxed decorations | 1415 |
 | Retained positive theorems | 209 |
-| Retained no-go rows | 208 |
+| Retained no-go rows | 209 |
 | Retained bounded rows | 943 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1644 |
+| Unaudited rows | 1643 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 16 |
 | Audited renaming rows | 27 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1646 |
-| Ready rows | 112 |
+| Total pending rows | 1645 |
+| Ready rows | 111 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 283 |
-| Medium pending | 483 |
+| High pending | 284 |
+| Medium pending | 481 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
-- [`work_history.ckm.cabibbo_bound_note`](../../docs/work_history/ckm/CABIBBO_BOUND_NOTE.md) - medium; unaudited
+- [`work_history.ckm.cabibbo_bound_note`](../../docs/work_history/ckm/CABIBBO_BOUND_NOTE.md) - high; unaudited
 - [`dm_live_constants_canonical_edge_certificate_note_2026-06-18`](../../docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md) - medium; unaudited
 - [`u1_fermion_number_conservation_theorem_note_2026-05-02`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`gauge_factor_local_selector_normalizer_theorem_note_2026-06-18`](../../docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25`](../../docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md) - medium; unaudited
 - [`registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
+- [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,8 +62,8 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 163 |
-| high | `unaudited` | 159 |
-| medium | `unaudited` | 95 |
+| high | `unaudited` | 160 |
+| medium | `unaudited` | 94 |
 | high | `audited_conditional` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
-| High nodes | 510 |
-| Medium nodes | 972 |
+| High nodes | 511 |
+| Medium nodes | 971 |
 | Leaf nodes | 1562 |
 
 Top load-bearing rows by graph score:

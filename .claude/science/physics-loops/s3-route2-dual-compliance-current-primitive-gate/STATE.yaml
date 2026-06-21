@@ -7,6 +7,8 @@ block: 60
 branch: physics-loop/s3-route2-dual-compliance-premise-block60-20260621
 base: origin/main
 base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
+local_science_commit: a5443157fe4442b86aa8e4656e8f46c614d0e763
+remote_science_commit: 5344e2dd6a210c0cb55e28ea9e1f4443d91aec7a
 worktree: /private/tmp/cl3-physics-loop-s3-route2-dual-compliance-premise-block60-20260621
 date: 2026-06-21
 mode: campaign
@@ -61,8 +63,11 @@ open_imports:
   - "A new same-domain source/readout theorem deriving dual-compliance p=2."
   - "Or a different same-domain theorem fixing the E-center lift."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending
+pr_status: open
+pr_number: 4591
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4591
+pr_identity_view: >-
+  {"baseRefName":"main","headRefName":"physics-loop/s3-route2-dual-compliance-premise-block60-20260621","number":4591,"state":"OPEN","title":"[physics-loop] s3-route2-dual-compliance-current-primitive-gate block60 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4591"}
 next_exact_action: >-
-  Commit, publish, open PR, then continue to a direct derivation attempt for
-  the p=2 source/readout law.
+  Continue to a direct derivation attempt for the p=2 source/readout law.
 stop_condition: none

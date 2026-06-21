@@ -1,6 +1,6 @@
 # Opportunity Queue
 
-1. Update PR #4498 with the current 11-cache refresh.
+1. Update PR #4498 with the current 10-cache refresh.
    - status: selected.
    - movement: full-ledger cache check now reports 3050 fresh, 0 stale, 0
      missing.

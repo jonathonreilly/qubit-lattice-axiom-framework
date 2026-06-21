@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-dual-compliance-p2-derivation-block61-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4592
+```
+
+Remote science commit:
+
+```text
+f299bd8ce291abf14dd15c23893f3b6e536e447c
+```
+
 Claim-state movement:
 
 ```text
@@ -68,5 +80,5 @@ PASS
 
 ## Next Exact Action
 
-Publish this block, then either derive the dual-compliance premise from current
-primitives or pivot to a finite-degree nonlinear no-go.
+Either derive the dual-compliance premise from current primitives or pivot to a
+finite-degree nonlinear no-go.

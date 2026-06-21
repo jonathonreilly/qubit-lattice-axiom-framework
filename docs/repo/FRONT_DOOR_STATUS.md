@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1451 |
+| Applied audit verdicts | 1452 |
 | Retained-grade rows, including boxed decorations | 1393 |
 | Retained positive theorems | 201 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 935 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 34 |
-| Unaudited rows | 1685 |
+| Unaudited rows | 1684 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 7 |
+| Audited conditional rows | 8 |
 | Audited renaming rows | 19 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1697 |
-| Ready rows | 111 |
+| Total pending rows | 1696 |
+| Ready rows | 110 |
 | Cycle-break targets | 9 |
-| Critical pending | 338 |
+| Critical pending | 337 |
 | High pending | 301 |
 | Medium pending | 485 |
 | Leaf pending | 573 |
 
 Next ready rows by queue order:
 
-- [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; unaudited
 - [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; unaudited
 - [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`](../../docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
 - [`observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md) - critical; unaudited
+- [`qcd_low_energy_running_bridge_note_2026-05-01`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,10 +61,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 172 |
+| critical | `unaudited` | 171 |
 | high | `unaudited` | 166 |
 | medium | `unaudited` | 95 |
 | critical | `open_gate` | 2 |
+| critical | `audited_conditional` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |
 

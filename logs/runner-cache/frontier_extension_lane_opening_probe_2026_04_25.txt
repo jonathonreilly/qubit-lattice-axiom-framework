@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/frontier_extension_lane_opening_probe_2026_04_25.py
+runner_sha256: 5e53c7a114ed4f22ba925d99b53e9c52b751a83044b5b3f93211f3ab080a49e7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+FRONTIER EXTENSION LANE-OPENING PROBE
+
+  [PASS] claim type is open gate (lane opening stays an open_gate row)
+  [PASS] runner metadata names this probe (audit parser can attach the lane-opening boundary verifier)
+  [PASS] note is planning-only (the note does not itself claim theorem, prediction, or publication status)
+  [PASS] all three lanes remain named (frontier extension scope remains the three accepted bounded lanes)
+  [PASS] promotion gates remain explicit (the note keeps promotion out of the lane-opening artifact)
+  [PASS] teleportation protocol exits cleanly (returncode=0)
+  [PASS] teleportation protocol gates pass (first-artifact taste teleportation gates remain reproducible)
+  [PASS] teleportation resource exits cleanly (returncode=0)
+  [PASS] teleportation resource summary passes (Poisson/CHSH finite extraction core remains bounded and passing)
+  [PASS] teleportation resource keeps open bridge (resource runner does not close native apparatus/readout)
+  [PASS] teleportation channel exits cleanly (returncode=0)
+  [PASS] teleportation channel gates pass (explicit classical record channel remains causal)
+  [PASS] signed-gravity status exits cleanly (returncode=0)
+  [PASS] signed-gravity status scorecard passes (signed-response boundaries remain reproducible)
+  [PASS] signed-gravity physical sector remains unretained (lane status stays a boundary artifact, not physical-sector promotion)
+
+SUMMARY: PASS=15 FAIL=0
+BOUNDARY: lane-opening/open-gate verifier only; no theorem, prediction, or retained status.
+
+----- stderr -----
+

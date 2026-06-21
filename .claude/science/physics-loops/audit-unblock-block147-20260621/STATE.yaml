@@ -1,0 +1,58 @@
+slug: audit-unblock-block147-20260621
+mode: campaign
+date: 2026-06-21
+branch: physics-loop/audit-unblock-block147-20260621
+base_ref: origin/main
+base_oid: 3359b4f8a0853cceb1a739e9571a170dad91b4c3
+target_claim_id: frontier_extension_lane_opening_note_2026-04-25
+target_note: docs/FRONTIER_EXTENSION_LANE_OPENING_NOTE_2026-04-25.md
+runner: scripts/frontier_extension_lane_opening_probe_2026_04_25.py
+runner_cache: logs/runner-cache/frontier_extension_lane_opening_probe_2026_04_25.txt
+actual_current_surface_status: open
+pipeline_audit_status: unaudited
+pipeline_effective_status: unaudited
+claim_type: open_gate
+trace_class: methodology
+reachability_to_target: supports
+runner_dominant_class: B
+runner_assert_count: 3
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_loop_disposition: deferred_to_review_lane
+lock_mode: degraded_branch_local
+files_touched:
+  - docs/FRONTIER_EXTENSION_LANE_OPENING_NOTE_2026-04-25.md
+  - scripts/frontier_extension_lane_opening_probe_2026_04_25.py
+  - logs/runner-cache/frontier_extension_lane_opening_probe_2026_04_25.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/runner_classification.json
+checks:
+  - command: python3 scripts/frontier_extension_lane_opening_probe_2026_04_25.py
+    result: "PASS: SUMMARY: PASS=15 FAIL=0"
+  - command: python3 scripts/frontier_teleportation_protocol.py
+    result: "PASS: acceptance gates pass"
+  - command: python3 scripts/frontier_teleportation_resource_from_poisson.py
+    result: "PASS: SUMMARY PASS=9 FAIL=0"
+  - command: python3 scripts/frontier_teleportation_causal_channel.py
+    result: "PASS: causal channel gates pass"
+  - command: python3 scripts/frontier_signed_gravity_response_lane_status.py
+    result: "PASS: TOTAL: PASS=20, FAIL=0"
+  - command: bash docs/audit/scripts/run_pipeline.sh
+    result: "PASS: completed with no invalidations; strict lint step OK"
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_extension_lane_opening_probe_2026_04_25.py --push-mode none --allow-non-main
+    result: "PASS: refreshed wrapper cache"
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_extension_lane_opening_probe_2026_04_25.py --check-only --push-mode none --allow-non-main
+    result: "PASS: explicit cache fresh"
+  - command: python3 docs/audit/scripts/audit_lint.py --strict
+    result: "PASS: 3474 rows checked; 139 notices; no errors"
+  - command: python3 -m py_compile scripts/frontier_extension_lane_opening_probe_2026_04_25.py scripts/frontier_teleportation_protocol.py scripts/frontier_teleportation_resource_from_poisson.py scripts/frontier_teleportation_causal_channel.py scripts/frontier_signed_gravity_response_lane_status.py docs/audit/scripts/build_citation_graph.py docs/audit/scripts/seed_audit_ledger.py docs/audit/scripts/classify_runner_passes.py
+    result: "PASS"
+  - command: python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --push-mode none --allow-non-main
+    result: "PASS: all relevant caches fresh"
+  - command: git diff --check
+    result: "PASS"
+next_exact_action: "Commit, push, open the review PR, then re-scan for remaining safe runner-registration targets."
+

@@ -1,8 +1,11 @@
 # Frontier Extension Lane Opening Note
 
 **Date:** 2026-04-25
+**Claim type:** open_gate
 **Status:** accepted lane-opening note; planning only, not a science claim
 surface
+**Status authority:** independent audit lane only.
+**Runner:** [`scripts/frontier_extension_lane_opening_probe_2026_04_25.py`](../scripts/frontier_extension_lane_opening_probe_2026_04_25.py)
 **Scope:** open three bounded framework-extension lanes:
 native teleportation, chronology protection, and signed gravitational response.
 

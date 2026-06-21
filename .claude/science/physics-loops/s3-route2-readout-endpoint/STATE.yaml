@@ -1,0 +1,44 @@
+loop_slug: s3-route2-readout-endpoint
+block: 38
+date: 2026-06-21
+mode: campaign
+target_status: best-honest-status
+branch: physics-loop/s3-route2-readout-endpoint-block38-20260621
+base: origin/main
+base_commit: 3cd8202ec2ab49b7c3579d03ffd18683a30fb250
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block38-20260621
+user_constraints:
+  - "Do not audit or apply verdicts."
+  - "Make PRs for coherent science blocks; do not push to main."
+  - "Do not refresh existing PRs onto main."
+  - "Do not check whether PRs conflict."
+repo_lock:
+  mode: degraded_branch_local
+  reason: "scripts/automation_lock.py status failed with Permission denied for /Users/jonreilly."
+active_route:
+  name: current_bank_single_adjoint_line_no_go
+  route_type: no-go/obstruction
+  hard_residual: "Can current SU(3)-equivariant source geometry type the single adjoint line needed by the block37 conditional primitive?"
+current_result:
+  actual_current_surface_status: no-go
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  summary: "Exact SU(3) adjoint linear algebra gives no invariant line, scalar commutant, and only rank 0/8 invariant idempotent projectors; rank 1/7 selector requires a new non-invariant typed source datum."
+files_touched:
+  - docs/QUARK_ROUTE2_SINGLE_ADJOINT_LINE_CURRENT_BANK_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py
+  - outputs/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-readout-endpoint/
+commands_run:
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py -> PASS=20 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py > outputs/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.txt"
+  - "python3 -m py_compile scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py -> pass"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py -> PASS=103 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_rconn_kappa_ew_register_not_read.py -> PASS=20 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_ew_current_fierz_channel_decomposition.py -> PASS=31 FAIL=0"
+  - "branch-local positive-overclaim scan over 16 changed files -> 0 hits"
+open_imports:
+  - "A non-invariant typed source line or approved readout-map primitive remains open."
+next_exact_action: "Commit, publish, and open the block38 PR."
+pr_status: pending
+stop_condition: "None; campaign remains active after PR handoff."

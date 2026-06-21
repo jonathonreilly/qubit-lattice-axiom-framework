@@ -1,0 +1,61 @@
+loop: audit-unblock-block149-20260621
+campaign: physics-loop audit-unblock
+mode: campaign
+block: 149
+target_claim_id: mass_spectrum_derived_note
+target_note: docs/MASS_SPECTRUM_DERIVED_NOTE.md
+branch: physics-loop/audit-unblock-block149-20260621
+base: origin/main
+base_oid: 19d54361f91657af6a49865054ccd0d6bfaaf3d1
+actual_current_surface_status: bounded-support
+ledger_claim_type: bounded_theorem
+ledger_audit_status: unaudited
+ledger_effective_status: unaudited
+runner: scripts/mass_spectrum_derived_bounded_probe.py
+runner_cache: logs/runner-cache/mass_spectrum_derived_bounded_probe.txt
+runner_result: "SUMMARY: PASS=20 FAIL=0"
+validation_total: "PASS=99 FAIL=0"
+runner_classification:
+  dominant_class: B
+  assert_count: 3
+  counts:
+    A: 0
+    B: 1
+    C: 0
+    D: 1
+  decoration_candidate: false
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/MASS_SPECTRUM_DERIVED_NOTE.md
+  - scripts/mass_spectrum_derived_bounded_probe.py
+  - logs/runner-cache/mass_spectrum_derived_bounded_probe.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/load_bearing_summary.json
+  - docs/audit/data/runner_classification.json
+  - .claude/science/physics-loops/audit-unblock-block149-20260621/
+commands_run:
+  - "python3 scripts/frontier_quark_mass_ratio_review.py"
+  - "python3 scripts/frontier_mass_ratio_lepton_sector.py"
+  - "python3 scripts/frontier_neutrino_mass_derived.py"
+  - "python3 scripts/frontier_cosmology_from_mass_spectrum.py"
+  - "python3 scripts/mass_spectrum_derived_bounded_probe.py"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/mass_spectrum_derived_bounded_probe.py --push-mode none --allow-non-main"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/mass_spectrum_derived_bounded_probe.py --check-only --push-mode none --allow-non-main"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+  - "python3 -m py_compile scripts/mass_spectrum_derived_bounded_probe.py scripts/frontier_quark_mass_ratio_review.py scripts/frontier_mass_ratio_lepton_sector.py scripts/frontier_neutrino_mass_derived.py scripts/frontier_cosmology_from_mass_spectrum.py docs/audit/scripts/build_citation_graph.py docs/audit/scripts/seed_audit_ledger.py docs/audit/scripts/classify_runner_passes.py"
+  - "git diff --check"
+review_loop_disposition: pass
+review_loop_note: "Local review only: bounded wording, explicit imported/open blockers, parser discoverability, runner cache, and generated audit surfaces are consistent. The reviewer lane owns PR refresh/cherry-pick against fast-moving main."
+lock_mode: branch-local degraded
+lock_note: "Repo/global automation lock path is unavailable on this machine; campaign continues in isolated worktrees."
+next_exact_action: "Commit, push branch, open PR #pending. If runtime remains, inspect the next independent no-runner bounded/open-gate row rather than refreshing existing PRs."
+stop_condition: "Runtime exhausted or no viable source-side unblock target remains after queue refresh."

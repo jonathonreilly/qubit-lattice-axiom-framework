@@ -327,15 +327,15 @@
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
         "assumption_derivation_ledger"
       ],
-      "direct_in_degree": 6,
+      "direct_in_degree": 7,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.585,
+      "load_bearing_score": 12.089,
       "note_path": "docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_cpt_check.py",
-      "transitive_descendants": 383
+      "transitive_descendants": 384
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -26722,7 +26722,7 @@
       "claim_id": "mass_spectrum_derived_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -26741,7 +26741,7 @@
       "note_path": "docs/MASS_SPECTRUM_DERIVED_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/mass_spectrum_derived_bounded_probe.py",
       "transitive_descendants": 19
     },
     {

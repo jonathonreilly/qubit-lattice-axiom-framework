@@ -1,12 +1,15 @@
 # Mass Spectrum Derived — Five-Phase Attack Closure
 
 **Date:** 2026-04-19
+**Claim type:** bounded_theorem
 **Status:** bounded - bounded or caveated result note
 lane on `main`. Mixed closure: two bounded quark phases (Phase 1 down-type
 dual and Phase 2 up sector), one bounded cross-reference (Phase 3 charged
 leptons), one retained seesaw scale + bounded solar/PMNS (Phase 4 neutrino),
 one bounded/conditional cosmology cascade (Phase 5).
-**Attack plan:** `/Users/jonBridger/.claude/plans/zesty-nibbling-pretzel.md`
+**Status authority:** independent audit lane only.
+**Runner:** [`scripts/mass_spectrum_derived_bounded_probe.py`](../scripts/mass_spectrum_derived_bounded_probe.py)
+**Attack plan:** historical local plan artifact; not required for audit reproduction.
 **Framework convention:** "axiom" means only the single framework
 axiom `Cl(3)` on `Z^3`.
 
@@ -273,8 +276,8 @@ Expected result on `main`:
 - `frontier_quark_mass_ratio_review.py`: `PASS=46 FAIL=0`
 - `frontier_mass_ratio_lepton_sector.py`: `PASS=11 FAIL=0`
 - `frontier_neutrino_mass_derived.py`: `PASS=19 FAIL=0`
-- `frontier_cosmology_from_mass_spectrum.py`: `PASS=14 FAIL=0`
-- **Total: `PASS=90 FAIL=0`**
+- `frontier_cosmology_from_mass_spectrum.py`: `PASS=23 FAIL=0`
+- **Total: `PASS=99 FAIL=0`**
 
 ## Safe wording
 

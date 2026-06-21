@@ -46,6 +46,13 @@ Attempted but not included as a branch gate:
 
 - `PYTHONPATH=scripts python3 scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py` -> `PASS=13 FAIL=1` due to a tiny current-main `t_balance` tolerance drift. Not modified here.
 
+## PR
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4569
+- Head: `physics-loop/s3-route2-readout-endpoint-block39-20260621`
+- Base: `main`
+- State: `OPEN` by identity-only `gh pr view`; conflict/mergeability state was not checked.
+
 ## Scope
 
 This does not derive the endpoint triple on the actual current surface. It

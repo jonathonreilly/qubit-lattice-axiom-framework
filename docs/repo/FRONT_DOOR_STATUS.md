@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1452 |
-| Retained-grade rows, including boxed decorations | 1393 |
+| Applied audit verdicts | 1453 |
+| Retained-grade rows, including boxed decorations | 1394 |
 | Retained positive theorems | 201 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 935 |
+| Retained bounded rows | 936 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 34 |
 | Unaudited rows | 1683 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1696 |
-| Ready rows | 110 |
+| Total pending rows | 1695 |
+| Ready rows | 109 |
 | Cycle-break targets | 9 |
-| Critical pending | 337 |
+| Critical pending | 336 |
 | High pending | 301 |
 | Medium pending | 485 |
 | Leaf pending | 573 |
 
 Next ready rows by queue order:
 
-- [`abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md) - critical; audit_in_progress
 - [`abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`](../../docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md) - critical; unaudited
 - [`staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18`](../../docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md) - critical; unaudited
 - [`qcd_low_energy_running_bridge_note_2026-05-01`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md) - critical; unaudited
+- [`ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`](../../docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -4,7 +4,7 @@ block: 133
 mode: physics-loop
 branch: physics-loop/audit-unblock-block133-20260620
 base: physics-loop/audit-unblock-block132-20260620
-base_commit: 43c17a773
+base_commit: 021fc2300
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "nested absolute runner-path canonicalization"
@@ -38,7 +38,7 @@ files_touched:
   - .claude/science/physics-loops/audit-unblock-block133-20260620/*
 review_disposition: pass
 verification_status: pass
-pr_status: pending
-pr_url: null
-next_exact_action: "Commit, push branch, and open a stacked PR against physics-loop/audit-unblock-block132-20260620."
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4503
+next_exact_action: "Monitor PR #4503 audit-lane check, then continue to the next audit-unblock target."
 stop_condition: "Block133 PR opened and verified; campaign continues to the next audit-unblock target while runtime remains."

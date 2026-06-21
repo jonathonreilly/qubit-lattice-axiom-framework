@@ -1,0 +1,49 @@
+loop_slug: s3-route2-readout-endpoint
+block: 28
+date: 2026-06-21
+branch: physics-loop/s3-route2-readout-endpoint-block28-20260621
+base: main
+base_commit: b80fa78ed
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block28-20260621
+mode: campaign
+user_constraints:
+  - do_not_run_audit_or_apply_verdicts
+  - make_prs_only
+  - do_not_push_to_main
+  - do_not_refresh_existing_prs_to_main
+  - do_not_check_pr_conflicts_or_mergeability
+active_route: quark_up_amplitude_scalar_bypass_firewall
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+artifact_role: runner_certificate
+target_blocker: "can non-Route-2 up-amplitude scalar routes bypass selected P_R for the S3/Route-2 endpoint?"
+claim_movement: "prunes the scalar-bypass route and classifies which up-amplitude routes are rho_E-free support versus endpoint-readout-sensitive support"
+files_touched:
+  - docs/QUARK_UP_AMPLITUDE_SCALAR_BYPASS_FIREWALL_NOTE_2026-06-21.md
+  - scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py
+  - scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py
+  - outputs/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.txt
+  - outputs/frontier_quark_route2_exact_readout_map_block28.txt
+  - outputs/frontier_quark_route2_exact_time_coupling_block28.txt
+  - outputs/frontier_quark_up_amplitude_tensor_endpoint_resolution_block28.txt
+  - outputs/frontier_quark_up_amplitude_scalar_comparison_bridge_block28.txt
+  - outputs/frontier_quark_up_amplitude_rpsr_mass_retention_boundary_block28.txt
+  - .claude/science/physics-loops/s3-route2-readout-endpoint/
+open_imports:
+  - selected readout map P_R
+  - E-center endpoint ratio
+  - typed reduced-amplitude-to-readout edge
+  - source-domain rule or stronger readout-map theorem
+verification:
+  block_runner: "PASS=33 FAIL=0"
+  route2_exact_readout_map_parent: "PASS=11 FAIL=0"
+  route2_exact_time_coupling_parent: "PASS=8 FAIL=0"
+  tensor_endpoint_resolution_parent: "PASS=16 FAIL=0"
+  scalar_comparison_bridge_parent: "PASS=11 FAIL=0"
+  rpsr_mass_retention_boundary_parent: "PASS=50 FAIL=0"
+  py_compile: pass
+review_verdict: not_run_by_user_constraint
+pr_status: pending
+next_exact_action: "commit, push, open a PR for block28; then continue the campaign toward either an E-center lift attempt or a typed reduced-amplitude-to-readout edge"
+stop_condition: null

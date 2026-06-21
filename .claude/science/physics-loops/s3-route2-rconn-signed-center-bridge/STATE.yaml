@@ -46,6 +46,13 @@ verification_results:
   - "frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py: TOTAL PASS=46 FAIL=0"
   - "frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py: PASS=11 FAIL=0"
   - "frontier_route2_readout_record_positivity_no_go.py: TOTAL PASS=8 FAIL=0"
-pr_status: "pending commit and PR creation"
-next_exact_action: "Stage, run diff/overclaim/ASCII hygiene, commit, publish branch, and open the block71 PR."
+pr_status: "open"
+pr:
+  number: 4602
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4602"
+  title: "[physics-loop] s3-route2-rconn-signed-center-bridge block71 no-go"
+  headRefName: physics-loop/s3-route2-rconn-center-bridge-block71-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "Continue campaign by attacking the direct typed spatial/color functor or pivoting to the next E-center source primitive."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable targets are globally blocked."

@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 941 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1650 |
+| unaudited | 1649 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
-| ~~audited_renaming~~ | 25 |
+| ~~audited_renaming~~ | 26 |
 | ~~audited_conditional~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
@@ -67,8 +67,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
-| `audited_renaming` | 25 |
-| `unaudited` | 1976 |
+| `audited_renaming` | 26 |
+| `unaudited` | 1975 |
 
 | claim_type | count |
 |---|---:|
@@ -1608,6 +1608,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `gauge_scalar_temporal_observable_bridge_implicit_flow_theorem_note_2026-05-03` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -6974,6 +6975,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the supplied map g(r)=sqrt(r/2), r=1/2 is a fixed point with g'(1/2)=1/2<1, so the prior repeller under S(r)=2r^2 becomes stable for this named reverse map.  _(class `A`)_
 - **chain closes:** True — The bounded map claim closes algebraically: g(1/2)=1/2 and g'(r)=1/(2*sqrt(2r)) gives g'(1/2)=1/2. The note explicitly leaves the physical identification of charged-lepton evolution with this map outside the theorem.
 - **rationale:** The source and runner prove a scoped mathematical statement about a supplied map, not a framework-derived thermalizing arrow. Independent checks of the displayed formulas agree: S'(1/2)=2, g'(1/2)=1/2, HS equipartition gives 3a^2=6|b|^2 iff |b|^2/a^2=1/2, endpoint spectra match, and Q=1/3+(2/3)r gives Q=2/3 at r=1/2. Because the physical-arrow and partition-selection gates are explicitly excluded from the claim scope, they do not prevent the bounded theorem from closing.
+- **auditor confidence:** high
+
+### `flavor_readout_gate_equals_carrier_identification_2026-05-31`
+
+- **Note:** [`FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the open-gate map: the finite C3 algebra and J_cs-silent-on-r negative are supported, but the physical readout/carrier/basepoint identification is an unclosed named identification.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-flavor_readout_gate_equals_carrier_identification_2026-05-31-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The readout gate, generation-carrier identification, and zero-section/basepoint pick are asserted to be the same single remaining physical carrier/basepoint premise.  _(class `F`)_
+- **chain closes:** False — The runner verifies the finite algebraic facts, including the fixed line, transverse-doublet Lefschetz values, and J_cs commutation/silence on r. It does not derive the physical carrier/readout/basepoint bridge from baseline or retained inputs; it names that bridge as the remaining gate.
+- **rationale:** Issue: the load-bearing gate-collapse step identifies three existing open choices rather than deriving the physical observable bridge. Why this blocks: the algebra supports the negative that J_cs does not select r, but it does not force the intensive 2/9 readout as the charged-lepton flavor observable over the extensive index. Repair target: a retained bridge theorem deriving the carrier, readout, and z=0 basepoint selection from baseline/retained inputs. Claim boundary until fixed: the note may record the finite algebra and the single named open gate, not a retained derivation of the physical flavor observable.
 - **auditor confidence:** high
 
 ### `flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026-06-02`

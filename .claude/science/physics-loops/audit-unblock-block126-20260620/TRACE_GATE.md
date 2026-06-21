@@ -20,6 +20,5 @@ making the runner evidence inspectable:
 - remaining dependencies: `neutrino_dirac_z3_support_trichotomy_note`,
   `dm_neutrino_dirac_bridge_theorem_note_2026-04-15`
 
-The trace class is methodology because the changed artifacts are cached runner evidence and
-generated audit-support surfaces rather than a theorem, proof note, no-go, or retained-status
-proposal.
+The trace class is methodology because the changed artifact is cached runner evidence rather
+than a theorem, proof note, no-go, or retained-status proposal.

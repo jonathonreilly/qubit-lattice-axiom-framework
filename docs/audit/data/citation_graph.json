@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "distance_law_preserving_third_family_note"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "post_record_selection_rule_target_vector_firewall_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "post_record_supplied_kernel_selection_rule_interface_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
         "distance_law_preserving_third_family_note",
         "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
         "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18",
         "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
         "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
         "post_record_admitted_sample_target_vector_interface_2026-06-06",
-        "post_record_selection_rule_target_vector_firewall_2026-06-06"
+        "post_record_selection_rule_target_vector_firewall_2026-06-06",
+        "post_record_supplied_kernel_selection_rule_interface_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4eeff76a615282a344a26ae3d32f60be32f8899225a25487ed3cc9335e7b1f9a",
+      "note_hash": "27e99650bebc611a8d2f0c45aa3f606de75b0a921d48061bfbf262c8c1775714",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

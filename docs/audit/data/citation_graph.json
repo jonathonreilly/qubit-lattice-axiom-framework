@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_neutrino_weak_vector_theorem_note_2026-04-15"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "dm_neutrino_weak_vector_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
         "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
-        "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17"
+        "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
+        "su3_casimir_fundamental_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c492d2804090b2e30ff5de1823bd8734241fa837e1e95bf60682ad7270f90063",
+      "note_hash": "595e7e9c8b66c04a68ef71fea7914a1c4194843c0da8a7251b99b1aca414b65d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

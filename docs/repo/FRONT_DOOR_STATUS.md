@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1493 |
-| Retained-grade rows, including boxed decorations | 1410 |
+| Applied audit verdicts | 1494 |
+| Retained-grade rows, including boxed decorations | 1411 |
 | Retained positive theorems | 208 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 940 |
+| Retained bounded rows | 941 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1653 |
+| Unaudited rows | 1652 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 14 |
 | Audited renaming rows | 24 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1655 |
-| Ready rows | 115 |
+| Total pending rows | 1654 |
+| Ready rows | 117 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 285 |
-| Medium pending | 490 |
+| Medium pending | 489 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`causal_field_reconciliation_note`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md) - medium; unaudited
+- [`shapiro_delay_note`](../../docs/SHAPIRO_DELAY_NOTE.md) - high; unaudited
 - [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 - [`flavor_readout_gate_equals_carrier_identification_2026-05-31`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md) - medium; unaudited
 - [`record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18`](../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md) - medium; unaudited

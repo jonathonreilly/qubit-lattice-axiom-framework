@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 206 |
+| **retained** | 207 |
 | **retained_no_go** | 206 |
 | **retained_bounded** | 935 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1670 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -62,8 +61,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1359 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1360 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 22 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `quark_route2_exact_time_coupling_note_2026-04-19` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1108,6 +1106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `quark_route2_exact_time_coupling_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -15430,6 +15429,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** With the T-side candidates granted, the reduced family P(rho_E) has identical E-shell normalization for rho_E=0 and rho_E=21/4 but gives different E-center lifts, so the carrier algebra alone does not fix beta_E/alpha_E.  _(class `A`)_
 - **chain closes:** True — The obstruction closes on the stated restricted class: multiplying the displayed carrier columns by P(rho_E) gives shell E readout 1 for all rho_E and center E readout 1+rho_E/6. The note does not claim the exact readout triple is derived; it correctly identifies rho_E=21/4 as the missing map entry.
 - **rationale:** The load-bearing step is exact matrix algebra over the displayed carrier columns and reduced readout family, and the independent hand check matches the runner: rho_E=0 and rho_E=21/4 are both allowed by shell normalization but differ at center E. The endpoint-ratio equivalence also checks algebraically: q_T=5/6, s_TE=-2, c_TE=-8/9 imply q_E=15/8 and rho_E=21/4. The live endpoint replay is used only to show the current surface misses the exact triple, not to prove the obstruction.
+- **auditor confidence:** high
+
+### `quark_route2_exact_time_coupling_note_2026-04-19`
+
+- **Note:** [`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](../../docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact Route-2 conditional time-coupling on the restricted carrier class, plus the induced non-uniqueness obstruction from the unresolved E-channel readout entry.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-quark_route2_exact_time_coupling_note_2026-04-19-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The reduced family P(rho_E) gives identical E-shell coupling for rho_E=0 and rho_E=21/4 but different E-center coupling, and since the slice factor exp(-t Lambda_R)u_* is exact and nonzero this blocks a unique Theta_R -> Lambda_R time-coupling law.  _(class `A`)_
+- **chain closes:** True — The carrier columns and P(rho_E) family algebraically give P(0)E-shell=P(21/4)E-shell and P(0)E-center != P(21/4)E-center. Tensoring by the independently computed nonzero slice seed preserves that ambiguity, so the stated conditional family and obstruction follow from the retained readout-map authority plus the runner's slice-backbone computation.
+- **rationale:** The load-bearing obstruction is an algebraic closure over the retained readout-map note: the missing rho_E entry changes the source factor at the center while leaving shell normalization fixed. The primary runner does not claim to derive rho_E=21/4; it uses the two exact witness maps to show non-uniqueness and separately recomputes the nonzero SPD slice backbone. No external comparator, tuned empirical scale, or hidden closed readout theorem is needed for the scoped conclusion.
 - **auditor confidence:** high
 
 ### `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28`

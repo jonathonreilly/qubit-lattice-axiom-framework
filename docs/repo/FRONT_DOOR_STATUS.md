@@ -12,9 +12,9 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1475 |
-| Retained-grade rows, including boxed decorations | 1401 |
-| Retained positive theorems | 206 |
+| Applied audit verdicts | 1476 |
+| Retained-grade rows, including boxed decorations | 1402 |
+| Retained positive theorems | 207 |
 | Retained no-go rows | 206 |
 | Retained bounded rows | 935 |
 | Boxed decorations under retained parents | 54 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1673 |
+| Total pending rows | 1672 |
 | Ready rows | 127 |
 | Cycle-break targets | 9 |
-| Critical pending | 293 |
+| Critical pending | 292 |
 | High pending | 301 |
 | Medium pending | 491 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`quark_route2_exact_time_coupling_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) - critical; audit_in_progress
 - [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 - [`koide_mru_demotion_note_2026-04-20`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md) - high; unaudited
 - [`koide_q_readout_factorization_theorem_2026-04-22`](../../docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md) - high; unaudited
@@ -51,13 +50,14 @@ Next ready rows by queue order:
 - [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
 - [`quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) - high; unaudited
+- [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **433**.
+- Non-retained-grade cited rows in publication tables: **432**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -66,7 +66,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 96 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 293,
+    "critical": 292,
     "high": 301,
     "leaf": 588,
     "medium": 491
@@ -136,37 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "quark_route2_exact_time_coupling_note_2026-04-19",
-      "claim_scope": "Exact Route-2 slice semigroup and conditional Xi_P family; unresolved readout-map freedom induces non-unique Theta_R -> Lambda_R time coupling on the restricted carrier.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "quark_route2_exact_readout_map_note_2026-04-19"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/_frontier_loader.py",
-        "scripts/frontier_oh_schur_boundary_action.py",
-        "scripts/frontier_quark_endpoint_readout_constraints.py",
-        "scripts/frontier_quark_route2_exact_readout_map.py",
-        "scripts/frontier_same_source_metric_ansatz_scan.py",
-        "scripts/frontier_tensor_support_center_excess_law.py"
-      ],
-      "load_bearing_score": 15.615,
-      "note_path": "docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_quark_route2_exact_time_coupling.py",
-      "transitive_descendants": 97
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -34793,6 +34762,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "s3_time_tensor_build_memo",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "quark_route2_exact_readout_map_note_2026-04-19",
+        "quark_route2_exact_time_coupling_note_2026-04-19"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/S3_TIME_TENSOR_BUILD_MEMO.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -47568,31 +47562,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "s3_time_tensor_build_memo",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "quark_route2_exact_readout_map_note_2026-04-19",
-        "quark_route2_exact_time_coupling_note_2026-04-19"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/S3_TIME_TENSOR_BUILD_MEMO.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "scalar_selector_proof_chains_2026-04-19",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -50096,5 +50065,5 @@
     }
   ],
   "ready_count": 127,
-  "total_pending": 1673
+  "total_pending": 1672
 }

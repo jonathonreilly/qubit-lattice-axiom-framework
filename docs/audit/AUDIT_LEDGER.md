@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1001 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1537 |
+| unaudited | 1536 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1447 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1863 |
+| `unaudited` | 1862 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 944 |
-| `leaf` | 1455 |
+| `medium` | 943 |
+| `leaf` | 1456 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1598,6 +1598,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7377,6 +7378,21 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Fibre-averaging the link-dressed hop gives b_eff = b*chi_R(U)/d_R and a_eff = a, hence r_R = r0*|chi_R(U)/d_R|^2 <= r0 by |chi_R(U)| <= d_R.  _(class `A`)_
 - **chain closes:** True — The retained/retained-bounded cited authorities supply the hop/on-site separation and the finite normalized-character suppression kernel. The conditional lepton/quark ordering statement is explicitly excluded from the audited source content.
 - **rationale:** The finite algebra closes: once b_eff = b*chi_R(U)/d_R and a_eff = a are supplied, the identity d_R^2 - |chi_R(U)|^2 = sum_{i<j}|z_i-z_j|^2 gives the cap directly. The runner constructs the tensor operator and fibre average rather than merely printing the target inequality. The observed lepton/quark checks are conditional comparator arithmetic and are not load-bearing for the clean cap-only verdict.
+- **auditor confidence:** high
+
+### `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15`
+
+- **Note:** [`FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md`](../../docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional counting no-go: under the standard SM sector-representation premise, the generation-scalar plus non-abelian colour-representation channel cannot source the within-doublet sector r-spread.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Generation-uniform scalar actions cancel in r=|b|^2/a^2 and any function of the non-abelian colour representation gives only a colourless/coloured 2-class partition, so it cannot reproduce r_up != r_down within the coloured class.  _(class `A`)_
+- **chain closes:** False — The algebraic invariance and colour two-class count close conditionally. The restricted packet does not derive the SM sector-representation assignment or the physical sector-to-carrier/readout bridge, so the unconditional framework no-go does not follow from cited retained inputs alone.
+- **rationale:** Issue: the A+B counting argument is valid once the standard SM sector-to-representation/readout premise is supplied, but that premise is explicitly left open by the packet. Why this blocks: the cited generation-uniform core supports only degree-zero inertness and states that SM representation assignment, electroweak partner structure, and physical readout are not derived. Repair target: add an audited retained bridge for the sector representation/readout assignment, or keep this row explicitly conditional. Claim boundary until fixed: a conditional colour/generation-scalar two-class no-go, not an unconditional framework no-go.
+- **open / conditional deps cited:**
+  - `FLAVOR_GAUGE_REPRESENTATION_GENERATION_UNIFORM_CORE_NARROW_THEOREM_NOTE_2026-06-18.md`
 - **auditor confidence:** high
 
 ### `flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18`

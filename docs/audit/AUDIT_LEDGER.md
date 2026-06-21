@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 988 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1556 |
+| unaudited | 1555 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 8 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1433 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1882 |
+| `unaudited` | 1881 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
@@ -121,14 +121,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
 | 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 35.82 | `audited_clean` | **retained_bounded** |
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
 
 
@@ -1571,6 +1571,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -1796,6 +1797,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cited parent supplies the 6/2 split and 1:-3 traceless abelian ratio; the audited note only rescales that ratio and evaluates standard finite anomaly sums. The completion branch is an explicit algebraic witness whose displayed traces match the left-handed values with the stated opposite-chirality sign.
 - **rationale:** The load-bearing work is exact algebra over the single retained-grade decorated parent and standard T(F)=1/2 normalization. The runner source performs symbolic and rational arithmetic for the anomaly identities and witness, while the remaining PASS checks are source-firewall string checks rather than independent physics derivations. No external comparator, fitted normalization, or tuned scale is used. Because the chain is a class-A corollary of one upstream surface rather than a new first-principles computation, the conservative verdict is audited_decoration.
 - **decoration parent:** `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23`
+- **auditor confidence:** high
+
+### `accessible_prediction_note`
+
+- **Note:** [`ACCESSIBLE_PREDICTION_NOTE.md`](../../docs/ACCESSIBLE_PREDICTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the bounded conditional scenario packet: if P1..P6 are supplied as premises, the listed scenario formulas and scale estimates are algebraic consequences, not framework-derived predictions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-accessible_prediction_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the named premises P1..P6, compute the corresponding experimental scale or algebraic companion bound.  _(class `A`)_
+- **chain closes:** False — The conditional arithmetic closes under the supplied P1..P6 assumptions, but the chain does not close as a framework theorem because P1..P6 are explicitly not derived in the note or cited authority. The missing steps are the bridge theorems deriving rho=|psi|^2 Poisson sourcing, branch dynamics, and the Born-gravity cross-link from retained primitives.
+- **rationale:** The note correctly narrows its scope to conditional scenarios and withdraws uniqueness, falsification, and audited-framework-prediction language. The runner likewise computes downstream scenario arithmetic after P1..P6 are supplied; it does not derive those premises from framework primitives. ACTION_NORMALIZATION_NOTE is retained_no_go, but it explicitly says the scalar-potential and Poisson source normalization conventions are not convention-free derived, so retained status does not close P1. Therefore the reduced conditional packet is coherent, but it remains conditional on missing bridge theorems.
+- **open / conditional deps cited:**
+  - `ACTION_NORMALIZATION_NOTE.md`
 - **auditor confidence:** high
 
 ### `acphilambda_hw_complementation_equivariance_support_note_2026-06-09`

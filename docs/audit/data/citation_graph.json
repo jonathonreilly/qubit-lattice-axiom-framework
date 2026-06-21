@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "accessible_prediction_note"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "causal_cone_speed_map_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "causal_impact_parameter_note"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
         "accessible_prediction_note",
         "alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18",
         "architecture_portability_live_reaudit_bridge_note_2026-06-18",
         "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
         "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08",
-        "causal_cone_speed_map_note"
+        "causal_cone_speed_map_note",
+        "causal_impact_parameter_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dea354fd9eeb0c663a59ddb98eb7462fe47b94a98f2063a30b6ef9ab445d1111",
+      "note_hash": "c326d2a5644d1996262169fda8e942666b86f5397029bf06cee8f943b7cc4e77",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118604,7 +118604,7 @@
       "positive_theorem": 583
     },
     "edge_count": 13474,
-    "leaf_count": 1147,
+    "leaf_count": 1146,
     "node_count": 3619,
     "root_count": 1090,
     "runners_with_path": 3252

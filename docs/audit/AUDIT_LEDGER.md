@@ -22,9 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 207 |
 | **retained_bounded** | 936 |
 | _retained_pending_chain_ | 4 |
-| open_gate | 34 |
+| open_gate | 35 |
 | unaudited | 1665 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -62,8 +61,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1362 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1363 |
 | `audited_conditional` | 12 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -683,6 +681,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | ~~audited_clean~~ | open_gate | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9316,6 +9315,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For fixed positive alpha != 1 and nonzero C, if N_species(R) != N_species(R') then C * alpha^(N_species(R)) != C * alpha^(N_species(R')).  _(class `A`)_
 - **chain closes:** True — The algebra closes because the ratio of two bridge outputs is alpha^(N_R-N_R'), which cannot equal 1 for positive alpha != 1 and N_R != N_R'; the nonzero prefactor cancels. This audits only the bounded conditional obstruction, not B1/B2 as derived regulator physics.
 - **rationale:** The source note’s actual no-go is restricted to the abstract exponent-difference step, and that step is a valid algebraic closure over the stated fixed-alpha, fixed-prefactor assumptions. The runner source computes that algebra and separately checks or hard-codes witness/boundary data; it does not derive B1/B2, but the note explicitly keeps those packets non-load-bearing. The N1-N8 no-go discipline is satisfied for the bounded reading because O1/O2/O3 remain named residual routes rather than being claimed impossible.
+- **auditor confidence:** high
+
+### `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`
+
+- **Note:** [`HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Delta-zero local open gate: the provided block determinant/condensate forms are u0-only while alpha_LM^16 carries alpha_bare^16 by algebraic relabeling, leaving the B4 attachment-observable transport rule unsupplied.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The checked block observables do not by themselves supply the (4 pi)^-16 coupling-power magnitude; the transport source for that magnitude remains open on the current delta = 0 baseline.  _(class `A`)_
+- **chain closes:** True — For the audited open-gate boundary, the packet verifies the relevant block forms contain u0 but no explicit alpha_bare, and the alpha_LM power identity is algebraic. The attachment-observable identification is not supplied and is correctly left outside formula closure.
+- **rationale:** The note claims an open gate rather than a hierarchy-formula closure. The load-bearing facts are class-A symbolic/algebraic checks: alpha_LM^16 = alpha_bare^16 u0^-16, while the checked determinant and condensate expressions have no alpha_bare symbol. The runner source does not derive the block operator from first principles, but it does verify the narrowed algebraic obstruction surface claimed here, and the cited retained-bounded parent supplies the determinant context.
 - **auditor confidence:** high
 
 ### `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26`

@@ -32,7 +32,6 @@
   ],
   "cycles_detected": 9,
   "effective_status_counts": {
-    "audit_in_progress": 1,
     "audited_conditional": 12,
     "audited_numerical_match": 6,
     "audited_renaming": 22,
@@ -67,7 +66,7 @@
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "meta": 326,
-    "open_gate": 34,
+    "open_gate": 35,
     "retained": 207,
     "retained_bounded": 936,
     "retained_no_go": 207,

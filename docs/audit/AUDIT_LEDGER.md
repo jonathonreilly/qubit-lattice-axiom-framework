@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 971 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1590 |
+| unaudited | 1589 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -48,6 +48,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_mirror_mutual_information_chokepoint_note` | 1 |
+| `decoration_under_moving_source_retarded_portability_note` | 1 |
 | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | 1 |
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_plaquette_self_consistency_note` | 1 |
@@ -64,16 +65,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1409 |
 | `audited_conditional` | 29 |
-| `audited_decoration` | 58 |
+| `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1916 |
+| `unaudited` | 1915 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1806 |
-| `decoration` | 59 |
+| `bounded_theorem` | 1805 |
+| `decoration` | 60 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
@@ -1587,6 +1588,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | algebraic_corollary_of_parent | `cpt_exact_note` |
 | `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
 | `cpt_squared_is_identity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | claude-opus | A | `cpt_exact_note` |
+| `diamond_signal_budget_hardening_note` | decoration | ~~audited_decoration~~ | `decoration_under_moving_source_retarded_portability_note` | cross_family | codex-gpt-5.5 | A | `moving_source_retarded_portability_note` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `g_bare_canonical_convention_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -4955,6 +4957,20 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the ideal detector, the integer-cycle averages give X_z = A_z cos(omega tau_z), Y_z = A_z sin(omega tau_z), phi_z = atan2(Y_z, X_z) = omega tau_z mod 2*pi, and affine tau_z gives d phi / dz = omega kappa after unwrapping.  _(class `A`)_
 - **chain closes:** True — Expanding cos(omega(t - tau_z)) and using integer-cycle averages <cos^2>=<sin^2>=1/2 and <sin cos>=0 yields the stated X and Y channels; atan2 then gives the delayed phase modulo 2*pi for nonzero amplitude, and an affine delay differentiates to omega kappa on an unwrapped window. The runner source numerically integrates the stated definitions and checks the controls without importing an external comparator or source-to-NV bridge.
 - **rationale:** The note is explicitly scoped to an ideal lock-in detector map with the delayed sinusoid supplied as the theorem input. Within that scope, the load-bearing step is a direct algebraic cycle-average identity, and the runner independently computes the averages from the definitions rather than merely printing constants. The excluded physical bridges are not used to prove the bounded detector statement and therefore do not block this scoped audit.
+- **auditor confidence:** high
+
+### `diamond_signal_budget_hardening_note`
+
+- **Note:** [`DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md`](../../docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic proxy-budget corollary converting the cited moving-source proxy row's weakest nonzero centroid and phase residues into 3σ proxy-noise targets for one stated geometry.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_moving_source_retarded_portability_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-diamond_signal_budget_hardening_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The weakest nonzero proxy centroid and phase residues from the moving-source row are divided by three to state conservative 3σ proxy-noise targets.  _(class `A`)_
+- **chain closes:** True — For the bounded proxy card, the moving-source authority supplies the geometry and proxy rows; the note takes the weakest nonzero absolute values and divides by three. The excluded transfer coefficient would be needed only for the disclaimed absolute NV lab budget.
+- **rationale:** The load-bearing computation is arithmetic over values already present in the retained_bounded moving-source note; the runner hard-codes those rows and computes minima plus 3σ divisions. The result is a valid proxy-budget corollary inside the stated scope, not an independent diamond/NV amplitude theorem. The missing transfer coefficient is acknowledged and excluded, so it prevents stronger lab-budget readings but does not block the scoped proxy statement.
+- **decoration parent:** `moving_source_retarded_portability_note`
 - **auditor confidence:** high
 
 ### `dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25`

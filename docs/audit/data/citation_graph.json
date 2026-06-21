@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "diamond_signal_budget_hardening_note"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "causal_distance_tail_note"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18",
         "diamond_signal_budget_hardening_note",
         "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
         "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
         "alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18",
         "architecture_portability_sweep_note",
         "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
-        "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06"
+        "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06",
+        "causal_distance_tail_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6853a91cd552dfa4fff76ced5c04119a60f53ed3b106c6947d1aab6fed30096e",
+      "note_hash": "40ea2cd633bcec6e3b62a5d2a9a1b6726c3099fc28163477cd1b139b8d4b4c01",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

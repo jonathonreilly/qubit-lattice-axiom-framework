@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
         "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
         "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15",
         "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
         "flavor_interacting_matter_build_note_2026-05-30",
         "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
         "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
-        "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10"
+        "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10",
+        "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7affc580f27350fafec285fbea710600c887bd10fcbaf02d6448031efedbf97c",
+      "note_hash": "b27edabfb307238e8fccef94d3ca85eb5d2ad1892329b93cc06b82ce00ebb2ba",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

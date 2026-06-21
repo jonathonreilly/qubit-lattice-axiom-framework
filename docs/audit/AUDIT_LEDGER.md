@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 996 |
+| **retained_bounded** | 997 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1544 |
+| unaudited | 1543 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1441 |
+| `audited_clean` | 1442 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1870 |
+| `unaudited` | 1869 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 940 |
-| `leaf` | 1459 |
+| `medium` | 942 |
+| `leaf` | 1457 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -342,6 +342,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `critical_exponents_topology_live_scout_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `critical_exponents_topology_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cross_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cubic_coxeter_regge_ok4_lattice_fingerprint_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cubic_coxeter_regge_second_variation_equals_linearized_eh_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4735,6 +4736,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** At H=0.5, the dispersion runner computes seed-mean omega(p) for Fam1/Fam2/Fam3 and finds Schrödinger/KG R² gaps below 0.01 with m_eff values 5.98, 5.90, and 5.88.  _(class `C`)_
 - **chain closes:** True — The provided runner source constructs each grown DAG from the stated family parameters, propagates plane waves, measures omega(p), fits the seed-mean dispersion curves, and prints the claimed R² gaps and m_eff values. This closes only the narrowed dispersion finite-runner claim, not the non-load-bearing lensing or fine-H universality language.
 - **rationale:** The live runner output matches the narrowed dispersion claims: all three families have Δ(Schrödinger-KG) below 0.01 and seed-mean effective masses within the stated 1.7% spread. The runner source performs an actual simulation and fit from fixed generator parameters and seeds, with no helper imports or hard-coded expected output values. The clean verdict is limited to the finite H=0.5 dispersion-runner result; the note's older lensing and broader universality wording is explicitly non-load-bearing or out of scope.
+- **auditor confidence:** high
+
+### `cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17`
+
+- **Note:** [`CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md`](../../docs/CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded structural claim that on Sym^2_0(R^3) the cubic O_h-invariant anisotropic quadratic weight G_aniso exists, splits spin-2 as E⊕T2, is not SO(3)-orbit-flat, and is the same l=4 axis-tensor channel supplied by the nearest-neighbor cubic lattice dispersion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cubic axis fourth-tensor from the lattice has traceless graviton quadratic form proportional to the same G_aniso that splits spin-2 into E(2)⊕T2(3), so an O_h-invariant anisotropic weight is not SO(3)-orbit-flat.  _(class `A`)_
+- **chain closes:** True — The finite-dimensional invariant-form calculation gives the 2D vs 1D invariant spaces and the E/T2 eigenvalue split; the dispersion Taylor expansion and axis-tensor projection give the lattice l=4 component proportional to G_aniso. The only upstream inputs are retained or retained_bounded authorities plus the minimal Lattice axiom as an accepted premise.
+- **rationale:** The core result is finite-dimensional linear algebra over retained or accepted inputs: spin-2 restricts to E⊕T2 under the cubic action, giving exactly one non-isotropic invariant quadratic form, and that form is not SO(3)-invariant. The lattice part is computed from the nearest-neighbor dispersion expansion and the axis fourth-order tensor; the runner verifies the proportionality to G_aniso rather than importing it. The claim is properly bounded to the structural orbit-flat-breaking channel and does not rely on the unaudited shell-localization sibling or on physical GR-value/action completion.
 - **auditor confidence:** high
 
 ### `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10`

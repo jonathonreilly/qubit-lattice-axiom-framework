@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1577 |
-| Retained-grade rows, including boxed decorations | 1466 |
+| Applied audit verdicts | 1578 |
+| Retained-grade rows, including boxed decorations | 1467 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
-| Retained bounded rows | 980 |
+| Retained bounded rows | 981 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 38 |
-| Unaudited rows | 1569 |
+| Unaudited rows | 1568 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 32 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1571 |
-| Ready rows | 75 |
+| Total pending rows | 1570 |
+| Ready rows | 74 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 555 |
+| Leaf pending | 554 |
 
 Next ready rows by queue order:
 
-- [`landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13`](../../docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md) - medium; unaudited
 - [`linear_response_second_order_kubo_note`](../../docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md) - medium; unaudited
 - [`native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28`](../../docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md) - medium; unaudited
 - [`poisson_self_field_supplied_branch_core_bounded_note_2026-06-18`](../../docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02`](../../docs/QCD_BETA_3_PURE_GAUGE_VS_FULL_SM_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
-- [`sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18`](../../docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md) - leaf; unaudited
+- [`sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18`](../../docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
+- [`sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15`](../../docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -93,6 +93,6 @@ Top load-bearing rows by graph score:
 - `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
-- `key_terminology` - critical; 1126 descendants; score 47.638
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312
+- `minimal_axioms_2026-05-03` - critical; 1034 descendants; score 49.015
+- `key_terminology` - critical; 1127 descendants; score 47.640
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 899 descendants; score 45.314

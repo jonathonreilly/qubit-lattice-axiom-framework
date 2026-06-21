@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_taste_cube_cyclic_source_descent_note_2026-04-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
         "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13",
         "linear_response_second_order_kubo_note",
         "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
         "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
         "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
         "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02",
-        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
+        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
+        "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "55682c7e8b0a749eabbc6e691e9c0496666d5f1fc58684a72fa388221dba72b1",
+      "note_hash": "7412b290c37e6dfa112db84776cfdaf78f3c158ad812939ef827417661953d0e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

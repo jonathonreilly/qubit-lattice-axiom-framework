@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 980 |
+| **retained_bounded** | 981 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1569 |
+| unaudited | 1568 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1425 |
+| `audited_clean` | 1426 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1895 |
+| `unaudited` | 1894 |
 
 | claim_type | count |
 |---|---:|
@@ -109,23 +109,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 49.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1126 | 47.64 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 45.31 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 44.18 | `audited_clean` | **retained_bounded** |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1034 | 49.02 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1127 | 47.64 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 899 | 45.31 | `unaudited` | unaudited |
+| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 822 | 44.19 | `audited_clean` | **retained_bounded** |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 39.29 | `unaudited` | unaudited |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 884 | 39.29 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
-| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 35.82 | `audited_clean` | **retained_bounded** |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
+| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 902 | 35.82 | `audited_clean` | **retained_bounded** |
+| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1099 | 35.60 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
@@ -862,6 +862,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_fam2_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -12222,6 +12223,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The implication from linear response to F~M = 1 closes as standard log-log slope algebra once the upstream Kubo coefficient and the runner's selected linearity subset are accepted. It does not establish an independent positive theorem because the F~M result is forced by the same measured linearity condition used to define the subset.
 - **rationale:** Issue: the decisive step is the algebraic identity that a response proportional to s has log-log slope 1. Why this blocks: the runner's headline 15/41 subset is selected by measured linearity ratios across the same strengths used to fit F~M, so the near-1 F~M result is a corollary of the subset definition rather than an independent derivation of a new battery condition. Repair target: present this as a bounded range-of-validity diagnostic under the true-Kubo parent, or add an independent criterion that does not mathematically enforce the F~M slope. Claim boundary until fixed: the runner supports that its selected linearity-regime families have the reported F~M statistics, conditional on the upstream Kubo coefficient.
 - **decoration parent:** `linear_response_true_kubo_note`
+- **auditor confidence:** high
+
+### `landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13`
+
+- **Note:** [`LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md`](../../docs/LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the stated smooth one-band 2D magnetic Peierls/Moyal star-product expansion on a periodic Brillouin torus, the Landau-Peierls response prefactor -1/12 is derived and checked against non-fitted square-lattice Peierls diagonalization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The magnetic star-power recursion gives the local B^2 density, and the checked periodic divergence identity converts the G'''(E)Q term into -2 G''(E) det Hess(E), yielding c2=-(1/24) integral G''(E) det Hess(E) and chi=2c2=-(1/12) integral f'(E) det Hess(E).  _(class `C`)_
+- **chain closes:** True — The source explicitly scopes the theorem to the supplied magnetic star product, and the runner computes the B^2 coefficient by symbolic star-power recursion plus a separately verified divergence identity. The finite-lattice Hofstadter diagonalization is independent of the LP formula and supports the sign/factor convention rather than supplying a fitted prefactor.
+- **rationale:** The runner source does not hard-code the contested -1/12 as an input; it derives the prefactor from the symbolic B^2 star expansion and checks that a nearby wrong prefactor leaves a residual. The periodic-torus reduction of the Q term is explicitly verified symbolically, and the direct Peierls diagonalization is a separate finite-lattice comparator within the stated convention. This clean verdict is bounded to the supplied one-band Peierls/Moyal expansion and does not audit derivation of that expansion from broader framework axioms or a universal thermodynamic-limit theorem.
 - **auditor confidence:** high
 
 ### `lanes.generated-geometry.readme`

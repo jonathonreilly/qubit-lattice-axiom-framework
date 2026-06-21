@@ -1,0 +1,47 @@
+loop_slug: s3-route2-readout-endpoint
+mode: campaign
+runtime_requested: 12h
+block: 03
+branch: physics-loop/s3-route2-readout-endpoint-block03-20260621
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block03-20260621
+base_at_creation: a2117bf79
+base_label: origin/main at block03 worktree creation
+lock_status:
+  mode: degraded_branch_local
+  command: python3 scripts/automation_lock.py status
+  result: "error: [Errno 13] Permission denied: '/Users/jonreilly'"
+user_constraints:
+  do_not_audit: true
+  do_not_apply_verdicts: true
+  do_not_push_main: true
+  do_not_refresh_prs_to_main: true
+  do_not_check_pr_conflicts: true
+active_target: s3_time_theta_to_slice_coupling_note
+hard_residual: "derive or sharply constrain (-1, -2, 21/4), especially rho_E = 21/4"
+current_block_route: color_covariance_bridge_equivalence_support
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+artifact_role: theorem
+files_touched:
+  - docs/QUARK_ROUTE2_COLOR_COVARIANCE_BRIDGE_EQUIVALENCE_SUPPORT_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py
+  - logs/runner-cache/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-readout-endpoint/
+open_imports:
+  - "No derivation of lambda=kappa^2 is supplied."
+  - "No derivation of c_TE=-F_adj is supplied."
+  - "No derivation of rho_E=21/4 is supplied."
+review_disposition: pass_with_exact_support_boundary
+pr_status: pending
+verification:
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py -> TOTAL: PASS=23, FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py -> TOTAL: PASS=7 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py -> TOTAL: PASS=62, FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py -> PASS=11 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py -> pass"
+review_notes:
+  - "Focused review-loop pass only; audit pipeline/verdict scripts intentionally not run under the no-audit campaign boundary."
+  - "Claim narrowed to exact bridge-equivalence support; no typed bridge or endpoint-triple derivation claimed."
+next_exact_action: "Commit, push, and open block 03 PR without refreshing branch to main or checking conflict state."
+stop_condition: "Runtime not exhausted; continue after block 03 PR delivery."

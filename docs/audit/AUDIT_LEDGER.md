@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 931 |
+| **retained_bounded** | 932 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1677 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1353 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1354 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 22 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -682,6 +680,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9304,6 +9303,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The spectral-vanishing claim follows from the stated staggered chirality anticommutation and exact +/- spectrum pairing on the specified finite operator. The identity-collapse claim follows by exact arithmetic from the retained seven-eighths Riemann-Dirichlet anchor.
 - **rationale:** The runner source constructs the finite staggered Hermitian matrices, checks Hermiticity, Gamma_5 anticommutation, eigenvalue pairing, signed sums, and the relevant rational identities; it is not merely printing expected PASS lines. The cited seven-eighths authority is retained, and the Matsubara determinant authority is a retained-parent decoration, so the one-hop dependency chain is retained-grade. The note keeps the conclusion bounded to the exact bare massless mean-field closed-torus surface and explicitly does not claim a broad APS no-go.
 - **auditor confidence:** high
+
+### `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`
+
+- **Note:** [`HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded source-side B3 dependency repair: the hierarchy exponent carrier N = 16 is sourced by the kinetic-isotropy primitive, retained 2^d species-count theorem, retained regulator-dependence boundary no-go, and retained-bounded P-FLUX within-surface branch selection, without claiming hierarchy formula closure or using labeled-generation residuals.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-hierarchy_b3_staggered_supplier_cascade_note_2026-06-17-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the four-direction OS0 block, the hierarchy B3 exponent carrier is the unlabeled 2^4 = 16 count and matching determinant u0-degree 16, while the full staggered-Dirac parent gate's generation-labeling residual is not consumed.  _(class `A`)_
+- **chain closes:** True — The chain closes within the stated bounded B3 surface. The packet supplies accepted or retained-grade authorities for the graining, count, boundary policing, and branch selection, and the runner source performs exact finite algebra for the count, Hamming staircase, characteristic polynomial, and determinant degree.
+- **rationale:** The load-bearing step is an algebraic closure over retained-grade and accepted-primitive inputs, not an empirical comparator, tuned numerical match, or symbol renaming. The source and runner explicitly preserve the firewall: B4 and B5 remain open, regulator-independent promotion is blocked by the retained no-go, and the parent staggered realization gate's labeling residual is non-load-bearing. The bounded conclusion follows from the restricted packet without importing external physics or a full hierarchy closure.
+- **auditor confidence:** medium
 
 ### `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`
 

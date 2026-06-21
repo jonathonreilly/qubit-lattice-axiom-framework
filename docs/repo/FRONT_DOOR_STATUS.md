@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1468 |
-| Retained-grade rows, including boxed decorations | 1394 |
+| Applied audit verdicts | 1469 |
+| Retained-grade rows, including boxed decorations | 1395 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 931 |
+| Retained bounded rows | 932 |
 | Boxed decorations under retained parents | 53 |
 | Open gates | 34 |
 | Unaudited rows | 1677 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1680 |
+| Total pending rows | 1679 |
 | Ready rows | 125 |
 | Cycle-break targets | 9 |
-| Critical pending | 299 |
+| Critical pending | 298 |
 | High pending | 302 |
 | Medium pending | 491 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; audit_in_progress
+- [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
 - [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
 - [`hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - critical; unaudited
 - [`quark_route2_exact_readout_map_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - critical; unaudited

@@ -53478,15 +53478,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "yt_vertex_power_derivation"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
       "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "yt_vertex_power_derivation"
     },
     {
       "from": "repo.front_door_status",
@@ -103182,15 +103182,15 @@
       "deps": [
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
         "axiom_first_lattice_noether_theorem_note_2026-04-29",
+        "yt_vertex_power_derivation",
         "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
-        "yt_vertex_power_derivation",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "dm_neutrino_weak_vector_theorem_note_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "490653f579d64b9f369f539e5abea0944a06dfcc0832c761f46a7d0a53385df3",
+      "note_hash": "1fef713b3e9e32eafe6000538be4c860f92242aa3d2e87557f35e5181e7ed7d8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

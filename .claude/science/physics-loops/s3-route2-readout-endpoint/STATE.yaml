@@ -31,7 +31,9 @@ trace_gate:
   reachability_to_target: prunes
   artifact_role: no_go
 pr:
-  status: pending
+  status: open
+  number: 4553
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4553
   title: "[physics-loop] s3-route2-readout-endpoint block24 no-go"
-next_exact_action: "Commit, push, and open the block24 review PR."
+next_exact_action: "Continue campaign with typed magnitude theorem or current-bank no-go."
 stop_condition: "Continue campaign if runtime remains after PR handoff."

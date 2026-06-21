@@ -66,11 +66,11 @@
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "meta": 326,
     "open_gate": 34,
-    "retained": 205,
-    "retained_bounded": 933,
+    "retained": 203,
+    "retained_bounded": 930,
     "retained_no_go": 205,
     "retained_pending_chain": 4,
-    "unaudited": 1675
+    "unaudited": 1680
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

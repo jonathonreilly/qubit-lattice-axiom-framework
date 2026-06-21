@@ -24,6 +24,25 @@ This supports the endpoint theorem by isolating the exact primitive needed, but 
 
 Do not push to main. Do not refresh previous PR branches to main. Do not check conflict or mergeability status. The reviewer will cherry-pick science. Verify only PR identity fields after PR creation.
 
+## PR
+
+Opened PR #4536:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4536
+```
+
+Identity-only verification:
+
+```text
+number=4536
+url=https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4536
+title=[physics-loop] s3-route2-readout-endpoint block07 conditional-support
+headRefName=physics-loop/s3-route2-readout-endpoint-block07-20260621
+baseRefName=main
+state=OPEN
+```
+
 ## Next Exact Action
 
-Run checks, commit, push this branch, create one PR, verify identity fields only, then continue the campaign to the next ranked science target if runtime remains.
+Continue the campaign to the next ranked science target if runtime remains. Best next target: derive the two reciprocal local projector-weight factors from source normalization plus readout or Schur-dual response; fallback to the direct `Theta_R -> Lambda_R` consumer ambiguity packet.

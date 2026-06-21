@@ -36,9 +36,10 @@ checks:
     - "git diff --check: pass"
     - "local wording firewall: pass; only intended does-not-derive scope text matched"
 pr:
-  status: pending
-  number: null
-  url: null
+  status: open
+  number: 4537
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4537
 next_exact_action: >
-  Commit, push, open a review PR, and verify identity fields only.
+  Continue the campaign with the next ranked science target; do not refresh
+  existing PR branches or check conflict state.
 stop_condition: runtime_or_campaign_queue_exhaustion

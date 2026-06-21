@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_vertex_power_derivation"
     },
     {
@@ -53487,6 +53483,10 @@
     {
       "from": "repo.front_door_status",
       "to": "qcd_low_energy_running_bridge_note_2026-05-01"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "yt_vertex_power_derivation",
         "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "qcd_low_energy_running_bridge_note_2026-05-01",
+        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "dm_neutrino_weak_vector_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f2aaf35b65f2e4eb7a46e64e91a85c080ef00999f677a69fd4530dccb85c4b95",
+      "note_hash": "3c1a2792e0e9eacdd8ba824125a56a18e65e1ad55c00dd8683a9c24502044dd8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

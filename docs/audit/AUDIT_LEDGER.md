@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 940 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1677 |
+| unaudited | 1676 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
-| ~~audited_conditional~~ | 8 |
+| ~~audited_conditional~~ | 9 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -62,12 +62,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1352 |
-| `audited_conditional` | 8 |
+| `audited_conditional` | 9 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2003 |
+| `unaudited` | 2002 |
 
 | claim_type | count |
 |---|---:|
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
 | 23 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
 | 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
-| 25 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | critical | 1005 | 30.97 | `audited_clean` | **retained** |
+| 25 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | critical | 1006 | 30.98 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -1504,6 +1504,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_vertex_power_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
@@ -20654,6 +20655,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yt_vertex_power_derivation`
+
+- **Note:** [`YT_VERTEX_POWER_DERIVATION.md`](../../docs/YT_VERTEX_POWER_DERIVATION.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the operator-structural exponent on the stated adjacency-licensed SU(3)-gauged nearest-neighbor staggered-Dirac surface, with the link-exponential convention, quadratic-response channel choice, and tree-level coupling split treated as assumptions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-yt_vertex_power_derivation-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the edge-only covariant hop f(U)=cU, the coupling-defining current-current quadratic response Tr[D^{-1}D'D^{-1}D'] has two single-link vertex insertions, so its computed link degree is n_link=2.  _(class `C`)_
+- **chain closes:** False — The Schur equivariance argument and runner source support the local operator count: one link per D' and link degree 2 for the current-current quadratic channel. The full alpha_s(v)=alpha_bare/u_0^2 claim still relies on unclosed realization and convention inputs, especially the SU(3) minimal-coupling surface, B-CONV, B-CHAN, and B-SPLIT.
+- **rationale:** Issue: the runner genuinely computes the link-degree core and does not appear to hard-code the strong-coupling target, but the physical coupling conclusion depends on named conventions and realization gates that are not derived or supplied as retained/accepted premises in the packet. Why this blocks: B-CONV, B-CHAN, and B-SPLIT choose how gauge insertions define and dress the coupling, and B-GATE supplies the gauged SU(3) surface. Repair target: provide retained or approved-premise authorities for those normalization/realization choices, or split the row to the clean operator-count statement conditional on them. Claim boundary until fixed: n_link=2 is supported for the current-current operator insertion pair under the stated conventions, not as an unconditioned framework derivation of the physical alpha_s(v) map.
 - **auditor confidence:** high
 
 ### `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`

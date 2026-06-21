@@ -7,8 +7,8 @@ block: 68
 branch: physics-loop/s3-route2-readout-inverse-square-gate-block68-20260621
 base: origin/main
 base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
-local_science_commit: pending
-remote_science_commit: pending
+local_science_commit: 59e30e4d44c48983f209ae3a043170a875efb4ec
+remote_science_commit: 8581b1c1d85f017500045235f4611284dd9b2e49
 worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-inverse-square-gate-block68-20260621
 date: 2026-06-21
 mode: campaign
@@ -45,6 +45,9 @@ commands_run:
   - "git diff --cached --check"
   - "staged overclaim scan"
   - "staged ASCII scan"
+  - "GitHub Git API branch publish"
+  - "gh pr create --repo jonathonreilly/qubit-lattice-axiom-framework --base main --head physics-loop/s3-route2-readout-inverse-square-gate-block68-20260621 --title \"[physics-loop] s3-route2-readout-inverse-square-gate block68 no-go\" --body-file .claude/science/physics-loops/s3-route2-readout-inverse-square-gate/PR_BODY.md"
+  - "gh pr view 4599 --repo jonathonreilly/qubit-lattice-axiom-framework --json number,url,title,headRefName,baseRefName,state"
 command_results:
   - "automation_lock status unavailable: Permission denied on /Users/jonreilly; continuing under degraded branch-local lock"
   - "block68 runner: TOTAL: PASS=61, FAIL=0"
@@ -59,18 +62,20 @@ command_results:
   - "git diff --cached --check: pass"
   - "staged overclaim scan: pass (no matches)"
   - "staged ASCII scan: pass (no matches)"
+  - "GitHub Git API branch publish: created physics-loop/s3-route2-readout-inverse-square-gate-block68-20260621 at 8581b1c1d85f017500045235f4611284dd9b2e49"
+  - "PR created: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4599"
+  - "PR identity view: {\"baseRefName\":\"main\",\"headRefName\":\"physics-loop/s3-route2-readout-inverse-square-gate-block68-20260621\",\"number\":4599,\"state\":\"OPEN\",\"title\":\"[physics-loop] s3-route2-readout-inverse-square-gate block68 no-go\",\"url\":\"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4599\"}"
 imports_retired:
   - "The shortcut that the current named readout/Schur/registration bank already supplies the readout-only inverse-square coefficient theorem."
 open_imports:
   - "A new readout-only coefficient theorem bridging inverse_square_value_9_4 to rho_E=21/4."
   - "Or a new typed source-excess theorem deriving b_E/a_E=7/2."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending_creation
-pr_number: pending
-pr_url: pending
-pr_identity_view: pending
+pr_status: open
+pr_number: 4599
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4599
+pr_identity_view: "{\"baseRefName\":\"main\",\"headRefName\":\"physics-loop/s3-route2-readout-inverse-square-gate-block68-20260621\",\"number\":4599,\"state\":\"OPEN\",\"title\":\"[physics-loop] s3-route2-readout-inverse-square-gate block68 no-go\",\"url\":\"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4599\"}"
 next_exact_action: >-
-  Stage, hygiene-check, commit, publish, and open the block68 PR; then search
-  for a new coefficient theorem outside the current bank or pivot to a broader
-  direct-consumer packet that narrows the remaining readout ambiguity.
+  Search for a new coefficient theorem outside the current bank or pivot to a
+  broader direct-consumer packet that narrows the remaining readout ambiguity.
 stop_condition: none

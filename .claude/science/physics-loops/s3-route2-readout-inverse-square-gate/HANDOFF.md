@@ -8,9 +8,13 @@ Branch:
 physics-loop/s3-route2-readout-inverse-square-gate-block68-20260621
 ```
 
-PR: pending.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4599
 
-Remote science commit: pending.
+Local science commit:
+`59e30e4d44c48983f209ae3a043170a875efb4ec`.
+
+Remote science commit:
+`8581b1c1d85f017500045235f4611284dd9b2e49`.
 
 Claim-state movement:
 
@@ -52,7 +56,9 @@ Local firewall disposition:
 
 ## PR Identity
 
-Pending.
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-inverse-square-gate-block68-20260621","number":4599,"state":"OPEN","title":"[physics-loop] s3-route2-readout-inverse-square-gate block68 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4599"}
+```
 
 ## Next Exact Action
 

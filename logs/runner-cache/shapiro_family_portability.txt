@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/shapiro_family_portability.py
-runner_sha256: 9b86ff8149bd85bfc733dc3d49e640311f0b3026f9aff8633743a8992cdf47cb
+runner_sha256: a47ffad1d06d692263f113207e41abf7f5b34ede192f2b1a0b58053ec6e44c15
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 247.28
+elapsed_sec: 89.03
 status: ok
 ----- stdout -----
 ===============================================================================
@@ -61,14 +61,24 @@ STATIC BASELINE
 
 SAFE READ
   - exact zero-source control stays exact on all three families
-  - the c-dependent phase lag is stable across families to sub-percent scale
-  - this is a portability statement for the phase observable, not an absolute NV calibration
-  - the cleanest retained readout is the phase lag itself; the static baseline is only the reference
+  - the c-dependent proxy phase table is stable across families to sub-percent scale
+  - this is a bounded portability statement for the proxy phase observable, not an absolute NV calibration
+  - the static-cone no-go remains load-bearing; this is not a unique causal discriminator
+
+RUNNER CHECKS
+  [PASS] exact zero-source control on all three families
+  [PASS] family spread below 2.5e-4 rad at every finite c
+  [PASS] per-family mean phase increases monotonically as c decreases
+  [PASS] source note is bounded and has no retained/proposed-retained wording
+  [PASS] source note has no failed archived bridge dependency
+  [PASS] source note excludes lab, physical-speed, and unique-causality claims
 
 NARROW CONCLUSION
-  The Shapiro-style phase lag reproduces cleanly across the three portable grown families.
-  It is a geometry-independent property of the propagator + action in this retained proxy.
-  The claim remains proxy-level; absolute NV units still require external calibration.
+  The Shapiro-style proxy phase table reproduces across the three configured portable grown families.
+  This is a bounded finite replay inside the declared harness, not a retained physical Shapiro package.
+  Absolute NV units, physical field speed, and uniqueness against static cone-shape effects remain outside this claim.
+
+ASSERTIONS: PASS
 
 ----- stderr -----
 

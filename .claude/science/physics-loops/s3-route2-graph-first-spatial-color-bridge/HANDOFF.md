@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-color-support-bridge-attempt-block58-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4589
+```
+
+Remote science commit:
+
+```text
+02141737e20213ceb305bf2783f791717f55beae
+```
+
 Claim-state movement:
 
 ```text

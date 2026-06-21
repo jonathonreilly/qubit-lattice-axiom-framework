@@ -62,8 +62,11 @@ open_imports:
   - "A target-free E-center selector deriving gamma_T(center)/gamma_E(center)=-8/9 or beta_E/alpha_E=21/4."
   - "A nonblind source/readout primitive that is not a comparator, fitted selector, or cross-domain color fraction."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending
+pr_status: open
+pr_number: 4589
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4589
+remote_science_commit: 02141737e20213ceb305bf2783f791717f55beae
 next_exact_action: >-
-  Commit the coherent block, publish the branch, open the no-go PR, then pivot
-  to the same-domain typed E/T2 source/readout bridge stretch attempt.
+  Pivot to the same-domain typed E/T2 source/readout bridge stretch attempt in
+  the next science block.
 stop_condition: none

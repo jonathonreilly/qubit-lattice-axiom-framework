@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1004 |
+| **retained_bounded** | 1005 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1524 |
+| unaudited | 1523 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1454 |
+| `audited_clean` | 1455 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1850 |
+| `unaudited` | 1849 |
 
 | claim_type | count |
 |---|---:|
@@ -859,6 +859,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -12309,6 +12310,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **rationale:** All displayed projector, trace, diagonal-compression, and quotient identities check by direct finite linear algebra, including diag(Z)=-I/3 and Tr(Z)=-1. The runner source uses exact rational matrix operations and note-boundary checks, with no external comparator, tuned numerical input, or definition-only substitution carrying the theorem. The staggered-Dirac carrier remains a bounded Tier-A admission for the carrier-named reading, so this clean verdict is for the bounded descent theorem and does not promote retained native Koide closure.
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+- **auditor confidence:** high
+
+### `koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25`
+
+- **Note:** [`KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Assuming the retained C_3 circulant eigenvalue algebra and the retained equal-weight Frobenius extremum a^2 = 2|b|^2, the signed algebraic ratio Q_alg(lambda) equals 2/3; positive-vector Koide interpretation is chamber-limited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At the scoped equal-weight Frobenius extremum a^2 = 2|b|^2, the Fourier identities give lambda_0^2+lambda_1^2+lambda_2^2 = 6a^2 and (lambda_0+lambda_1+lambda_2)^2 = 9a^2, hence Q_alg(lambda)=2/3.  _(class `A`)_
+- **chain closes:** True — The cited circulant theorem supplies the needed Fourier sums, and the cited Frobenius theorem supplies the scoped extremum a^2 = 2|b|^2. Substitution gives the claimed ratio exactly, with the denominator excluded by the stated domain/positive-energy extremum scope.
+- **rationale:** The load-bearing step is exact algebra over retained-grade cited inputs, not a definition, external comparator, or tuned numerical match. The runner checks the same rational formula under several exact extremal and non-extremal cases and includes chamber-boundary sanity checks; it does not import PDG data or a physical charged-lepton readout. The open question in the Frobenius authority concerns canonical physical weighting selection, but this row explicitly confines itself to the scoped equal-weight algebraic extremum and signed ratio.
 - **auditor confidence:** high
 
 ### `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10`

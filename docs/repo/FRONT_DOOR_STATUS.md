@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1469 |
-| Retained-grade rows, including boxed decorations | 1395 |
+| Applied audit verdicts | 1470 |
+| Retained-grade rows, including boxed decorations | 1396 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 932 |
+| Retained bounded rows | 933 |
 | Boxed decorations under retained parents | 53 |
 | Open gates | 34 |
 | Unaudited rows | 1676 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1679 |
+| Total pending rows | 1678 |
 | Ready rows | 125 |
 | Cycle-break targets | 9 |
-| Critical pending | 298 |
+| Critical pending | 297 |
 | High pending | 302 |
 | Medium pending | 491 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; audit_in_progress
 - [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
 - [`hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - critical; unaudited
 - [`quark_route2_exact_readout_map_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md) - high; unaudited
 - [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
+- [`quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

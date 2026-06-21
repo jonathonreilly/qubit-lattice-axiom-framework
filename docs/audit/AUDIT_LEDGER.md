@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1016 |
+| **retained_bounded** | 1017 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1502 |
+| unaudited | 1501 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1466 |
+| `audited_clean` | 1467 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1828 |
+| `unaudited` | 1827 |
 
 | claim_type | count |
 |---|---:|
@@ -1285,6 +1285,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `signed_gravity_native_transfer_kernel_twist_sufficiency_test_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `signed_gravity_response_lane_status_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5 | C | - |
 | `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -18707,6 +18708,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the `eps=s` sector, `I x A(a) x eps` restricts to `s A(a) x I_2`, so `eta_delta^(s)=2s eta_delta(A(a))`, and the spectral half-integer cutoff gives `eta_delta(A(a))=+1` on `a in (0,1/2)` and `-1` on `a in (-1/2,0)`.  _(class `A`)_
 - **chain closes:** True — The sector-label result follows by exact Clifford-sector projection plus the floor-count formula for the spectrally truncated tower. T1 and T4 are direct matrix/tensor algebra identities over the stated inputs; twist existence, eta-sector dynamics, and the source action are outside the audited scope.
 - **rationale:** The load-bearing step is exact finite-dimensional algebra over retained Clifford inputs and the explicitly scoped twisted spectral tower, not a definition, external comparator, or tuned numerical match. The runner source constructs the Clifford matrices, sector projections, spectral counts, commutators, and falsifiers rather than merely printing the claimed result. Independent formula checks of the conjugation signs and the floor-count identity agree with the note and runner within the bounded theorem surface.
+- **auditor confidence:** high
+
+### `signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17`
+
+- **Note:** [`SIGNED_GRAVITY_PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION_NOTE_2026-06-17.md`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite two-sector scalar-source classification showing that the product grading supplies the odd label carrier but does not itself activate the odd Gamma coefficient in the scalar source/response action.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the class C=aI+bGamma with R Gamma R^-1=-Gamma, orientation-even invariance forces b=0, while the target source vector M(1,-1) uniquely solves to a=0,b=1.  _(class `A`)_
+- **chain closes:** True — The algebra closes within the stated bounded class: even coefficients give only proportional (1,1) or zero sources, the signed target is the unique odd Gamma direction, and the mixed-pair table passes only when Gamma is used on both source and response. The retained_bounded upstream authority supplies the product-grading label carrier; no derivation of S_int is claimed.
+- **rationale:** The load-bearing step is exact finite-dimensional algebra over the stated two-sector coefficient class and the retained_bounded product-grading input. The runner source performs the variation, least-squares span checks, exchange-parity checks, and locked-table checks rather than merely printing the cached PASS lines; its only cross-note checks are non-load-bearing confirmation of the upstream label and the companion note boundary. The no-go boundary is narrow: it does not assert signed gravity is impossible, only that product grading alone does not authorize active use of Gamma in S_int.
 - **auditor confidence:** high
 
 ### `signed_gravity_response_lane_status_note_2026-04-26`

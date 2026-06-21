@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1644 |
-| Retained-grade rows, including boxed decorations | 1512 |
+| Applied audit verdicts | 1645 |
+| Retained-grade rows, including boxed decorations | 1513 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
-| Retained bounded rows | 1016 |
+| Retained bounded rows | 1017 |
 | Boxed decorations under retained parents | 63 |
 | Open gates | 39 |
-| Unaudited rows | 1502 |
+| Unaudited rows | 1501 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 51 |
 | Audited renaming rows | 29 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1504 |
-| Ready rows | 12 |
+| Total pending rows | 1503 |
+| Ready rows | 11 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 488 |
+| Leaf pending | 487 |
 
 Next ready rows by queue order:
 
-- [`signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION_NOTE_2026-06-17.md) - medium; unaudited
 - [`single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17`](../../docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
 - [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - medium; unaudited
 - [`staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18`](../../docs/STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md) - medium; unaudited
-- [`three_family_card_missing_distance_live_bridge_note_2026-06-18`](../../docs/THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md) - leaf; unaudited
+- [`three_family_card_missing_distance_live_bridge_note_2026-06-18`](../../docs/THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md) - medium; unaudited
+- [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

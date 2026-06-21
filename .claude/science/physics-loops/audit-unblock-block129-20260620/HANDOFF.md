@@ -14,11 +14,20 @@ Current evidence:
 This block should be reviewed as a tooling/evidence guard. It should not be
 read as an audit verdict, claim promotion, or retained-status proposal.
 
+Post-rebase verification note: targeted guard, cache, path-canonicalization,
+py-compile, unittest, and whitespace checks pass. Strict audit lint currently
+fails on the same 30 retained-row note-hash drift errors and 3 stale-dispatch
+warnings on clean `origin/main`; that baseline drift is not introduced by this
+PR.
+
 PR:
 
 - https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4499
-- Base: `physics-loop/audit-unblock-block128-20260620`
+- Base: `main`
 - Head: `physics-loop/audit-unblock-block129-20260620`
+- Rebase checkpoint: replayed the block129 guard work onto
+  `origin/main` at `dea100014` so the PR no longer depends on block128.
 
-Next exact action: monitor PR #4499 checks, then continue with the next
-independent audit-unblock block if runtime remains.
+Next exact action: commit this post-rebase metadata, push the rebased branch, update PR
+#4499 base/body, then continue with the next independent audit-unblock block if
+runtime remains.

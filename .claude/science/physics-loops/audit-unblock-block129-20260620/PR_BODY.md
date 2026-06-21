@@ -15,11 +15,10 @@ The refreshed transcript shows:
 
 No audit verdicts or claim-status rows are edited.
 
-## Stack Note
+## Base Note
 
-This PR is stacked on block128 / PR #4498 to avoid duplicating the generated
-strict-lint and full-ledger cache refresh surfaces carried there. The code fix
-itself is independent.
+This PR is now rebased directly on `main` at `dea100014`. It does not depend on
+block128 / PR #4498.
 
 ## Artifacts
 
@@ -34,14 +33,17 @@ itself is independent.
 ```bash
 python3 scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py
 python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py --check-only --allow-non-main
+python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --allow-non-main
 python3 scripts/audit_runner_path_canonicalization_guard_2026_06_17.py
 python3 -m py_compile scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py scripts/runner_cache.py
 python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline
-bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
 git diff --check
 ```
 
-`run_pipeline.sh` completed and its lint stage was OK with 139 notices. It
-produced unrelated generated front-door/audit-data churn in the local worktree;
-that PR-only advisory diff was discarded so this stacked PR remains limited to
-the source guard, cache transcript, and loop pack.
+Post-rebase results: the guard, cache freshness checks, path canonicalization
+guard, py-compile, unittest suite, and `git diff --check` pass. Strict
+`audit_lint.py --strict` currently fails on the same current-main baseline
+drift in a clean `origin/main` worktree: 3 stale-dispatch warnings and 30
+retained-row `note_hash` drift errors. This PR does not edit those audit rows or
+apply any audit verdicts.

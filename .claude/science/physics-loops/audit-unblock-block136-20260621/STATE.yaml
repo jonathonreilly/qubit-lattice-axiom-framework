@@ -4,8 +4,8 @@ block: 136
 mode: physics-loop
 branch: physics-loop/audit-unblock-block136-20260621
 base: physics-loop/audit-unblock-block135-20260621
-base_commit: 366c32956590b5e64834fc1594670309ab072667
-rebuilt_at: "2026-06-21 00:31:44 EDT"
+base_commit: 1104043f122ced1b74e5a237597687054e9c0da0
+rebuilt_at: "2026-06-21 01:10:11 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "source-graph cycle repair apply pass"
@@ -22,7 +22,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed earlier with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "Rebuilt on the current block135 branch, applied the source-graph repair workflow in two passes, regenerated audit support surfaces, and reached zero cycle inventory with 118 ready queue entries after rebasing onto the refreshed block135 branch."
+current_result: "Rebuilt on the current block135 branch, applied the source-graph repair workflow in two passes, regenerated audit support surfaces, and reached zero cycle inventory with 117 ready queue entries after rebasing onto the refreshed block135 branch."
 apply_result:
   pass_1:
     pre_apply_cycles_named: 8
@@ -44,15 +44,15 @@ apply_result:
   total_live_markdown_links_rewritten: 13
 pipeline_result:
   ledger_rows: 3474
-  pending_audits: 1695
-  ready_entries: 118
+  pending_audits: 1694
+  ready_entries: 117
   cycles: 0
   first_pipeline_hard_resets: 72
   second_pipeline_hard_resets: 0
   post_rebase_pipeline_hard_resets: 0
   lint_notices: 138
   pr_diff_runner_cache_state: "fresh=0 stale=0 missing=0"
-  full_runner_cache_baseline: "3123 considered; 3112 fresh, 11 stale/corrupt, 0 missing; unrelated to this PR diff"
+  full_runner_cache_baseline: "3123 considered; 3113 fresh, 10 stale/corrupt, 0 missing; unrelated to this PR diff and covered by PR #4498"
 post_apply_dry_run:
   cycles_named: 0
   unique_source_notes: 0

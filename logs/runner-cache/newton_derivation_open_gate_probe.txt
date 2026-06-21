@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/newton_derivation_open_gate_probe.py
+runner_sha256: 7de310de17fed22a60459ede77ca64cfde2b6163af4c9f5626d5b2183a05804c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 59.51
+status: ok
+----- stdout -----
+NEWTON DERIVATION OPEN-GATE PROBE
+
+  [PASS] claim type is open gate (Newton row stays open_gate)
+  [PASS] runner metadata names this probe (audit parser can attach the open-gate verifier)
+  [PASS] open residual gate remains explicit (the remaining gate is the external-field compact-object equivalence step)
+  [PASS] architecture-independent closure is disclaimed (note keeps Newtonian derivation closure out of scope)
+  [PASS] machine-local link targets removed from touched note (artifact links are repo-relative)
+  [PASS] equivalence harness exits cleanly (returncode=0)
+  [PASS] equivalence harness preserves bounded read (amplitude-level equivalence remains bounded, not persistent mass closure)
+  [PASS] 3D additivity harness exits cleanly (returncode=0)
+  [PASS] 3D additivity harness preserves bounded read (3D weak-field test-particle additivity remains bounded)
+  [PASS] 2D additivity harness exits cleanly (returncode=0)
+  [PASS] 2D additivity harness preserves bounded read (2D cross-family additivity does not close the persistent-pattern gate)
+  [PASS] top4 bridge runner exits cleanly (returncode=0)
+  [PASS] top4 bridge gates pass (top4 self-sourcing bridge remains admissible)
+  [PASS] top4 bridge keeps external-field gate open (bridge does not close the final external-field generator-invariance step)
+
+SUMMARY: PASS=14 FAIL=0
+BOUNDARY: open-gate verifier only; no retained Newtonian derivation.
+
+----- stderr -----
+

@@ -92193,8 +92193,8 @@
     },
     "newton_derivation_note": {
       "claim_id": "newton_derivation_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
       "deps": [
         "equivalence_principle_harness_note",
@@ -92202,9 +92202,9 @@
         "matter_inertial_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3263a71da9781c0e19748cd9040368b16fad4588595f8d48b53e89c7d2ccba5d",
+      "note_hash": "bab3c0d7ba7624d8c7501107d93302002a1ccb97449f42ad15bc50e59b59b722",
       "path": "docs/NEWTON_DERIVATION_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/newton_derivation_open_gate_probe.py",
       "title": "Newtonian Mass Scaling from Four Principles (bounded family-law note)"
     },
     "newton_derivation_note_2026-05-17": {
@@ -103190,7 +103190,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "58e7d5ccb4f6dd7547b55d149317ff7ef2fc9fd6008c70e9abf7a2df055f0bb1",
+      "note_hash": "f2aaf35b65f2e4eb7a46e64e91a85c080ef00999f677a69fd4530dccb85c4b95",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118590,8 +118590,8 @@
       "decoration": 2,
       "meta": 288,
       "no_go": 208,
-      "none": 1428,
-      "open_gate": 118,
+      "none": 1427,
+      "open_gate": 119,
       "positive_theorem": 196
     },
     "claim_type_seed_hint_counts": {
@@ -118607,6 +118607,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

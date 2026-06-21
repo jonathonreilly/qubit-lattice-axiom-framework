@@ -25860,7 +25860,7 @@
       "claim_id": "newton_derivation_note",
       "claim_scope": null,
       "claim_type": "open_gate",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -25876,7 +25876,7 @@
       "note_path": "docs/NEWTON_DERIVATION_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/newton_derivation_open_gate_probe.py",
       "transitive_descendants": 26
     },
     {

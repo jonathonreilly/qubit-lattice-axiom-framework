@@ -35,7 +35,13 @@ verification:
   source_domain_bridge_parent: "PASS=103 FAIL=0 (output not carried; historical generated text trips broad wording scans)"
   py_compile: pass
 review_verdict: branch_local_pass_no_audit
-pr_status: pending
-pr_identity: null
-next_exact_action: "publish block33 PR and record identity"
+pr_status: open
+pr_identity:
+  number: 4562
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4562
+  title: "[physics-loop] s3-route2-readout-endpoint block33 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block33-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "search for an E-center shear-breaking primitive or non-shear-invariant magnitude theorem"
 stop_condition: null

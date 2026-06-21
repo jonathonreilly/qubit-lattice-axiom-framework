@@ -1,0 +1,7 @@
+{
+  "owner": "physics-loop",
+  "purpose": "s3-route2-readout-endpoint block36",
+  "mode": "branch-local degraded lock",
+  "reason": "repo automation_lock.py could not read its configured lock path",
+  "date": "2026-06-21"
+}

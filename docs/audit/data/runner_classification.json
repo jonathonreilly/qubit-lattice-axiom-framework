@@ -6132,6 +6132,18 @@
       "dominant_class": null,
       "runner": "scripts/diamond_phase_ramp_bridge_card.py"
     },
+    "diamond_sensor_prediction_note": {
+      "assert_count": 7,
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/diamond_sensor_prediction_probe.py"
+    },
     "diamond_signal_budget_hardening_note": {
       "assert_count": 0,
       "counts": {
@@ -46254,6 +46266,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/diamond_sensor_prediction_probe.py": {
+      "assert_count": 7,
+      "claims": [
+        "diamond_sensor_prediction_note"
+      ],
+      "counts": {
+        "A": 3,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/diamond_signal_budget_hardening.py": {
       "assert_count": 0,
       "claims": [
@@ -85875,14 +85902,14 @@
   "stats": {
     "decoration_candidates": 624,
     "dominant_class_distribution": {
-      "A": 462,
+      "A": 463,
       "B": 555,
       "C": 1233,
       "D": 422,
       "none": 451
     },
-    "runners_classified": 3123,
+    "runners_classified": 3124,
     "runners_with_C": 1675,
-    "runners_with_D": 991
+    "runners_with_D": 992
   }
 }

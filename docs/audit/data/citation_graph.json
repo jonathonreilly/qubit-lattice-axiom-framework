@@ -64511,9 +64511,9 @@
         "source_resolved_wavefield_escalation_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6d13656cba44c1527d1c9ff6e55c3643aed8baa3e6673cd354a9c65fa2c1352b",
+      "note_hash": "072a5a603cb287ed8f29c7f7df26c769ed3b33c837b1e6653b24188f09935861",
       "path": "docs/DIAMOND_SENSOR_PREDICTION_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/diamond_sensor_prediction_probe.py",
       "title": "Diamond Sensor Prediction Note"
     },
     "diamond_sensor_protocol_note": {
@@ -103190,7 +103190,7 @@
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b0e2324b1036a49829d887b15e7a1110310c3cebe79c3c71f61092ea193511f4",
+      "note_hash": "e2cc8a984f04dbfdf5bbdc63b9223b022a48aeab03605a9a8e11dc8af96a251a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118607,6 +118607,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

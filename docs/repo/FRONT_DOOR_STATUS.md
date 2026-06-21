@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1613 |
-| Retained-grade rows, including boxed decorations | 1492 |
+| Applied audit verdicts | 1614 |
+| Retained-grade rows, including boxed decorations | 1493 |
 | Retained positive theorems | 213 |
-| Retained no-go rows | 217 |
+| Retained no-go rows | 218 |
 | Retained bounded rows | 1002 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 39 |
-| Unaudited rows | 1533 |
+| Unaudited rows | 1532 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 41 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1535 |
-| Ready rows | 43 |
+| Total pending rows | 1534 |
+| Ready rows | 42 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 519 |
+| Leaf pending | 518 |
 
 Next ready rows by queue order:
 
-- [`gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10`](../../docs/GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md) - medium; unaudited
 - [`kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20`](../../docs/KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md) - medium; unaudited
 - [`koide_carrier_locus_decomposition_note_2026-06-01`](../../docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md) - medium; unaudited
 - [`koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`koide_first_order_selector_bounded_localization_certificate_2026-06-18`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md) - medium; unaudited
 - [`koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md) - medium; unaudited
 - [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
-- [`koide_kahler_dirac_silent_on_measure_note_2026-05-30`](../../docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md) - leaf; unaudited
+- [`koide_kahler_dirac_silent_on_measure_note_2026-05-30`](../../docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md) - medium; unaudited
+- [`koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

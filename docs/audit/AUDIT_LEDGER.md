@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 201 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 935 |
+| **retained_bounded** | 936 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1683 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
@@ -60,8 +59,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1346 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1347 |
 | `audited_conditional` | 8 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 22 |
@@ -132,7 +131,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -146,6 +144,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
@@ -1612,6 +1611,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** After epsilon-parity ordering, D[U] has square bipartite form [[0,B],[-B^dag,0]], so D[U]^dag D[U]=diag(BB^dag,B^dagB) and the two sector heat traces have identical spectra including zero modes.  _(class `A`)_
 - **chain closes:** True — Nearest-neighbor staggered hopping flips epsilon parity and unitary link phases do not alter the bipartite support pattern. For square B, BB^dag and B^dagB have the same singular-value-square spectrum and equal nullity, so Tr(exp(-t BB^dag))-Tr(exp(-t B^dagB))=0.
 - **rationale:** The load-bearing step is a genuine finite-dimensional algebraic closure, not a renaming, numerical fit, or external comparator check. The runner source constructs staggered Dirac matrices for representative random and flux U(1) backgrounds and verifies the same block, spectrum, zero-mode, and heat-trace identities rather than merely printing constants. The no-go discipline gate is satisfied because the claim is narrow: it excludes only the standard equal-sublattice epsilon-index route and explicitly leaves continuum ABJ, taste-singlet/Adams/overlap, imbalanced or curved complexes, and accepted-premise routes outside its scope.
+- **auditor confidence:** high
+
+### `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18`
+
+- **Note:** [`ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md`](../../docs/ABJ_P_COMP_SCALE_FREE_SINGLET_COMPLETION_CLASSIFICATION_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the stated left-handed surface, the narrow opposite-chirality singlet completion template, and the neutral singlet n = 0, exact anomaly cancellation forces the completion charges up to the x/y label swap.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substituting x + y = 2a and z = -6a into the cubic anomaly gives x^3 + y^3 = 56a^3, hence xy = -8a^2 and the roots are {4a, -2a}.  _(class `A`)_
+- **chain closes:** True — The finite anomaly equations reduce to x + y = 2a, z = -6a, and xy = -8a^2, so the quadratic for the two color-triplet singlet charges has only roots 4a and -2a. The physical existence or minimality of the P-COMP template is explicitly outside the audited scope.
+- **rationale:** The audited claim is a bounded conditional classification, not a derivation of the P-COMP premise itself. Within that scope, the load-bearing step is exact algebra over the stated anomaly equations, and the runner source genuinely verifies the symbolic reduction, sample exact solutions, full anomaly cancellation, and counterfactual non-uniqueness without external comparator data. The a = 1/3 normalization is checked only as an example, not used to tune the scale-free result.
 - **auditor confidence:** high
 
 ### `abj_residual_gw_not_necessary_narrow_theorem_note_2026-05-28`

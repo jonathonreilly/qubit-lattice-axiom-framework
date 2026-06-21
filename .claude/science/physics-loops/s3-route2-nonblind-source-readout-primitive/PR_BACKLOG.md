@@ -1,6 +1,10 @@
 # PR Backlog
 
-No backlog yet. GitHub publishing is pending for this block.
+No backlog. PR opened:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4588
+```
 
 If PR creation fails, use:
 

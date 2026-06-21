@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "causal_field_reconciliation_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
         "single_axiom_hilbert_note",
         "ckm_five_sixths_bridge_support_note",
         "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
         "diamond_ideal_lockin_detector_theorem_note_2026-06-17",
         "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12",
-        "causal_field_reconciliation_note"
+        "causal_field_reconciliation_note",
+        "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4f6175dc3fcb6e198485b54623c38732f984b5d03bc51e437fc5e72c964238c1",
+      "note_hash": "4fe4ddb280adf795d70ea6eead1e5ac199e4da9f32cf8b07570254262dc4559c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

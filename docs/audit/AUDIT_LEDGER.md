@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 207 |
-| **retained_no_go** | 207 |
+| **retained_no_go** | 208 |
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1662 |
+| unaudited | 1661 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1365 |
+| `audited_clean` | 1366 |
 | `audited_conditional` | 13 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1988 |
+| `unaudited` | 1987 |
 
 | claim_type | count |
 |---|---:|
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
 
 
@@ -1109,6 +1109,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_time_coupling_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15522,6 +15523,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For nonzero-sum triples in the C3 circulant parametrization, Q = (sum x_k^2)/(sum x_k)^2 gives |b|^2/a^2 = (3Q - 1)/2, so the packet-local quark comparators need not share the charged-lepton BAE value.  _(class `A`)_
 - **chain closes:** True — Independently summing the C3 cosine parametrization gives sum x_k = 3a and sum x_k^2 = 3a^2 + 6|b|^2, hence Q = 1/3 + (2/3)|b|^2/a^2 and the displayed ratio formula. The quark numbers are correctly scoped as external, scheme-dependent comparators, so the closed result is only the no-transfer open-gate boundary, not a quark-mass theorem.
 - **rationale:** The algebraic identity used by the note is a direct C3/Koide closure from retained algebraic inputs and checks independently. The displayed comparator values reproduce the runner's Q and apparent |b|^2/a^2 numbers, but they are explicitly treated as external scheme-dependent comparators rather than framework-native quark data. The source does not claim a quark mass, quark phase, quark amplitude-ratio theorem, CKM-to-mass bridge, or charged-lepton BAE transfer.
+- **auditor confidence:** high
+
+### `quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`
+
+- **Note:** [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](../../docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Within the exact restricted Route-2 carrier/readout family, after granting rho_T = -1 and alpha_T/alpha_E = -2, minimal carrier naturality leaves rho_E free; rho_E = 21/4 requires an additional E-center endpoint ratio or equivalent primitive.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For P(rho_E) = [[1,0,rho_E,0],[0,-2,0,2]], the E-shell image is fixed as (1,0) while the E-center image is (1 + rho_E/6, 0), so shell normalization and the granted T-side data do not select rho_E.  _(class `A`)_
+- **chain closes:** True — The no-go closes by direct linear algebra on the displayed reduced family: rho_E is unconstrained by the E-shell and T-side conditions, and distinct admissible values such as 0 and 21/4 remain possible. The equivalence between rho_E = 21/4, q_E = 15/8, and c_TE = -8/9 is algebraic but does not supply the missing E-center ratio.
+- **rationale:** The load-bearing step is a genuine class A algebraic closure over the reduced restricted-family inputs, not a numerical fit or definition substitution. The runner source verifies non-uniqueness of rho_E and keeps the live endpoint only as comparator evidence behind a firewall, not as a proof input. The no-go is narrow enough to pass the negative-claim discipline: it enumerates five attempted frames, names the missing E-center lift, and does not claim to block future source-domain or tensor-readout primitives.
 - **auditor confidence:** high
 
 ### `quark_route2_eta_floor_hf_boundary_note`

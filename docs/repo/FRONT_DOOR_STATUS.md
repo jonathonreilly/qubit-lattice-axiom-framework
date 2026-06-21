@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1484 |
-| Retained-grade rows, including boxed decorations | 1406 |
+| Applied audit verdicts | 1485 |
+| Retained-grade rows, including boxed decorations | 1407 |
 | Retained positive theorems | 207 |
-| Retained no-go rows | 207 |
+| Retained no-go rows | 208 |
 | Retained bounded rows | 938 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1662 |
+| Unaudited rows | 1661 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 13 |
 | Audited renaming rows | 22 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1664 |
-| Ready rows | 120 |
+| Total pending rows | 1663 |
+| Ready rows | 122 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 293 |
+| High pending | 292 |
 | Medium pending | 491 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) - high; unaudited
 - [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited
+- [`quark_e_channel_endpoint_quotient_law_note_2026-04-19`](../../docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md) - high; unaudited
+- [`quark_endpoint_ratio_chain_law_note_2026-04-19`](../../docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md) - high; unaudited
 - [`ckm_five_sixths_bridge_support_note`](../../docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) - high; unaudited
 - [`yt_lsp_signed_record_source_readout_support_note_2026-05-24`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md) - high; unaudited
 - [`diamond_ideal_lockin_detector_theorem_note_2026-06-17`](../../docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md) - high; unaudited
 - [`native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md) - high; unaudited
 - [`causal_field_reconciliation_note`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md) - medium; unaudited
-- [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

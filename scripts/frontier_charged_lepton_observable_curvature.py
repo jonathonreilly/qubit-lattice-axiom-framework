@@ -3,20 +3,21 @@
 Charged-lepton hw=1 observable-principle curvature runner
 =========================================================
 
-STATUS: exact attempt / first results on the Koide-cone weakest link
+STATUS: exact support / bounded downstream reuse on the Koide-cone weakest link
 
 Target behavior:
-  On the retained Cl(3)/Z^3 framework, derive whether the charged-lepton
+  On the named Cl(3)/Z^3 hw=1 carrier, test whether the charged-lepton
   mass-square-root spectral vector lambda = (lambda_1, lambda_2, lambda_3)
   evaluated on the hw=1 triplet through the observable-principle curvature
   kernel K is *forced* onto the Koide cone a_0^2 = 2|z|^2 (equivalently
-  Q = 2/3) by the retained surface, rather than merely allowed to sit
+  Q = 2/3) by the current source surface, rather than merely allowed to sit
   there.
 
 The runner re-validates Steps 1-5 of
 docs/../.claude/science/derivations/charged-lepton-koide-cone-2026-04-17.md
 and then symbolically tests the three forcing candidates (A, B, C) for
-Step 6.
+Step 6. It also checks that the source note is scoped as exact support
+with bounded downstream reuse, not retained/proposed-retained closure.
 
 Dependencies: sympy + numpy + stdlib only. No observed mass imports.
 Only framework-native canonical values (alpha_LM, <P>, u_0) are allowed
@@ -28,6 +29,7 @@ PStack experiment: frontier-charged-lepton-hw1-observable-curvature
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 from typing import Tuple
 
 import numpy as np
@@ -37,9 +39,10 @@ np.set_printoptions(precision=10, linewidth=120, suppress=True)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+NOTE_PATH = Path(__file__).resolve().parents[1] / "docs" / "CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md"
 
 
-def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT", cls: str = "D") -> bool:
+def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT", cls: str = "A") -> bool:
     global PASS_COUNT, FAIL_COUNT
     status = "PASS" if condition else "FAIL"
     if condition:
@@ -55,7 +58,7 @@ def check(name: str, condition: bool, detail: str = "", kind: str = "EXACT", cls
 
 
 # ---------------------------------------------------------------------------
-# Part 1: retained hw=1 primitives (re-validation of authority structure)
+# Part 1: named hw=1 primitives (carrier-structure validation)
 # ---------------------------------------------------------------------------
 
 
@@ -79,9 +82,9 @@ def build_c3() -> sp.Matrix:
     return sp.Matrix([[0, 0, 1], [1, 0, 0], [0, 1, 0]])
 
 
-def part1_retained_primitives():
+def part1_carrier_primitives():
     print("=" * 88)
-    print("PART 1: retained hw=1 primitives (three-generation observable theorem)")
+    print("PART 1: named hw=1 carrier primitives (three-generation observable theorem)")
     print("=" * 88)
 
     Tx, Ty, Tz = build_translations()
@@ -495,7 +498,7 @@ def candidate_B_character_symmetry():
     print("  places the spectral vector on the trivial-character axis and off")
     print("  the Koide cone. Promoting character symmetry to 'alpha = beta with")
     print("  b != 0' would require a non-minimal block and is NOT implied by")
-    print("  the retained additive-CPT-even unique-generator chain on the")
+    print("  the current additive-CPT-even unique-generator chain on the")
     print("  minimal surface alone.")
     print("  Therefore Candidate B does NOT close Step 6 on the minimal block.")
     print()
@@ -553,7 +556,7 @@ def candidate_C_selector():
     depends on Candidate B succeeding at the structural half (yes, the
     observable-principle kernel produces uniform weight across the three
     C_3 characters). Since Candidate B fails on the minimal block,
-    Candidate C's weight-1/3 assumption is unsupported on the retained
+    Candidate C's weight-1/3 assumption is unsupported on the current
     surface.
     """
     print("=" * 88)
@@ -589,7 +592,7 @@ def candidate_C_selector():
     # BUT: the equal-weight assumption requires nontrivial-character weight
     # to be nonzero on the observable-principle kernel. On the minimal L_t=4
     # APBC block this is exactly b=0 (Candidate B failure), so the equal-weight
-    # orbit is not realized on the retained minimal surface.
+    # orbit is not realized on the current minimal surface.
     check(
         "equal-weight assumption REQUIRES nontrivial-character weight != 0 on the kernel",
         True,
@@ -610,6 +613,47 @@ def candidate_C_selector():
 
 
 # ---------------------------------------------------------------------------
+# Part 8: source status firewall
+# ---------------------------------------------------------------------------
+
+
+def part8_source_status_firewall():
+    print("=" * 88)
+    print("PART 8: source status firewall")
+    print("=" * 88)
+
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+
+    check(
+        "source note declares exact-support actual current surface status",
+        "actual_current_surface_status: exact-support" in text
+        and "trace_class: upstream_support" in text,
+        cls="B",
+    )
+    check(
+        "source note forbids retained/proposed-retained proposal language",
+        "proposal_allowed: false" in text
+        and "bare_retained_allowed: false" in text
+        and "proposed_retained" not in text,
+        cls="B",
+    )
+    check(
+        "source note records that cone forcing remains unresolved",
+        "KOIDE_FORCING_RESOLVED=FALSE" in text
+        and "does not derive Koide" in flat,
+        cls="B",
+    )
+    check(
+        "paper-safe wording is algebra-only and does not force the cone",
+        "does not derive the vector" in flat
+        and "force the" in flat
+        and "Koide cone" in flat,
+        cls="B",
+    )
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -620,14 +664,14 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  Does the retained Cl(3)/Z^3 surface FORCE the charged-lepton")
+    print("  Does the named Cl(3)/Z^3 hw=1 carrier FORCE the charged-lepton")
     print("  spectral vector onto the Koide cone a_0^2 = 2|z|^2 (Q = 2/3),")
     print("  or does the minimal block permit it merely as one option among")
     print("  several?")
     print()
 
-    # Part 1: retained primitives
-    Tx, Ty, Tz, P, C = part1_retained_primitives()
+    # Part 1: carrier primitives
+    Tx, Ty, Tz, P, C = part1_carrier_primitives()
     print()
 
     # Part 2: species curvature on L_t=4
@@ -646,6 +690,8 @@ def main() -> int:
     passA = candidate_A_c3_breaking(alpha, beta)
     passB = candidate_B_character_symmetry()
     passC = candidate_C_selector()
+    part8_source_status_firewall()
+    print()
 
     # Explicit verdict lines
     print("=" * 88)
@@ -673,7 +719,7 @@ def main() -> int:
     print("=" * 88)
     print()
     print("  Steps 1-5 of the derivation are confirmed symbolically on the")
-    print("  retained hw=1 triplet: translations + C3 generate M_3(C),")
+    print("  named hw=1 triplet: translations + C3 generate M_3(C),")
     print("  K is C_3-invariant and circulant with 2 parameters (a,b),")
     print("  Plancherel |lambda|^2 = a_0^2 + 2|z|^2 holds, and the Koide")
     print("  equivalence 3 sum l^2 = 2 (sum l)^2  <=>  a_0^2 = 2|z|^2 is")
@@ -682,7 +728,7 @@ def main() -> int:
     print("  Step 6 (forcing onto the cone) remains open on the minimal block:")
     print("  none of Candidate A, B, or C independently forces a_0^2 = 2|z|^2")
     print("  without importing an independent equality (alpha = beta with b != 0)")
-    print("  that is itself a structural claim beyond the retained additive-")
+    print("  that is itself a structural claim beyond the current additive-")
     print("  CPT-even unique-generator chain on the minimal L_t=4 APBC block.")
     print()
     print("  Open structural obstructions:")
@@ -694,6 +740,7 @@ def main() -> int:
     print("     minimum of the C_3-equivariant free energy at b = 0.")
     print()
     print(f"  KOIDE_FORCING_RESOLVED={resolved}")
+    print("  SOURCE_SURFACE_STATUS=exact-support / bounded downstream reuse")
     print()
     print(f"  TOTAL: PASS = {PASS_COUNT}, FAIL = {FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

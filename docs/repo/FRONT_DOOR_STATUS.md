@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1641 |
-| Retained-grade rows, including boxed decorations | 1509 |
+| Applied audit verdicts | 1642 |
+| Retained-grade rows, including boxed decorations | 1510 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
 | Retained bounded rows | 1014 |
-| Boxed decorations under retained parents | 62 |
+| Boxed decorations under retained parents | 63 |
 | Open gates | 39 |
-| Unaudited rows | 1505 |
+| Unaudited rows | 1504 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 51 |
 | Audited renaming rows | 29 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1507 |
-| Ready rows | 15 |
+| Total pending rows | 1506 |
+| Ready rows | 14 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 491 |
+| Leaf pending | 490 |
 
 Next ready rows by queue order:
 
-- [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - medium; unaudited
 - [`regge_ok4_frame_section_narrow_theorem_note_2026-06-17`](../../docs/REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`s3_time_tensor_build_memo`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md) - medium; unaudited
 - [`signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION_NOTE_2026-06-17.md) - medium; unaudited
 - [`single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17`](../../docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - medium; unaudited
 - [`sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29`](../../docs/SM_GSTAR_R_MATTER_RESIDUAL_REDUCTION_BOUNDED_NOTE_2026-05-29.md) - medium; unaudited
-- [`staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
+- [`staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

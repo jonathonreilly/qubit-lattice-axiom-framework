@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "linear_response_second_order_kubo_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "linear_response_second_order_kubo_note",
         "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
         "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
         "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
         "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02",
         "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
         "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
-        "sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15"
+        "sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15",
+        "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "617144d3b0a6f990e4f2952a49e89faf1402a7a07b882312642afa326a99800f",
+      "note_hash": "0b210c9a5493e746893ca7e106dbac17ccf75a3ab8beea58b159af1fd1fd292c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

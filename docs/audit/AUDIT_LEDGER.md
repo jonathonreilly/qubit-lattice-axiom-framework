@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 982 |
+| **retained_bounded** | 983 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1567 |
+| unaudited | 1566 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1427 |
+| `audited_clean` | 1428 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1893 |
+| `unaudited` | 1892 |
 
 | claim_type | count |
 |---|---:|
@@ -987,6 +987,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | A | - |
 | `neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | A | - |
@@ -14027,6 +14028,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The restricted packet closes the scoped bounded claim: the runner instantiates the six-neighbor J, Wilson diagonal, scaled half-slice action, sparse eigensolve, shell checks, saddle-diagonal comparison, and normalization falsifiers without hard-coding the target ratio. The operator-norm remainder lemma and all-beta/physical statements remain open but are explicitly outside the claim boundary.
 - **rationale:** The cited authorities retain the recurrence, half-slice factorization surface, and Wilson coefficient positivity needed for the native packet construction. The primary runner and helper source compute the numerical object from framework-local operators and coefficient evaluation rather than importing an external comparator or fitted target, and the cache matches the note tables. Residual risk is confined to the explicitly disclaimed uniform large-beta operator-norm remainder and tail/eigenvalue-isolation proof, not to the bounded numerical characterization audited here.
 - **auditor confidence:** medium
+
+### `native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_STRONG_COUPLING_GAP_NARROW_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded strong-coupling SU(3) Wilson character coefficient-transfer gap lambda_1/lambda_0 <= (2/3) beta for 0 <= beta <= 1, with the 25-state half-slice packet treated only as a finite numerical consistency check.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For nontrivial lambda, m_lambda^(n) <= 6^n/d_lambda, so c_lambda(beta)/c_(0,0)(beta) <= (1/d_lambda) sum_{n>=1} beta^n/n! <= (2/3) beta on 0 <= beta <= 1.  _(class `A`)_
+- **chain closes:** True — The cited recurrence supplies nonnegative SU(3) character multiplicities, and evaluating Y^n at the identity gives the dimension bound m_lambda^(n) d_lambda <= 6^n. Together with d_lambda >= 3, c_(0,0) >= 1, and the elementary exponential majorant, the claimed ratio bound follows within the stated strong-coupling scope.
+- **rationale:** The proof is a bounded algebraic majorant on Wilson character coefficients, not a physical beta=6 environment solve or continuum claim. The retained-grade one-hop inputs cover the character recurrence and coefficient positivity support needed for this scoped result, and the open beta=6 Perron/environment identifications are explicitly outside the theorem. The primary runner computes recurrence layers, exact rational leading coefficients and tails, and finite Bessel packet checks; the helper's hard-coded beta=6 comparator diagnostics are not used in the load-bearing path.
+- **auditor confidence:** high
 
 ### `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23`
 

@@ -76492,9 +76492,9 @@
     },
     "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17": {
       "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
         "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
@@ -76504,7 +76504,7 @@
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7174a3470a185938bba11f4a4287874db12bc27cd1ebd78b56b29b230ea4347f",
+      "note_hash": "6bd6d2ad7f8800a3073842ee569d86c581732603d2e02bec732d5ee814f0ee15",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
       "title": "Gauge-Vacuum Plaquette Residual-Environment All-Weight Convolution Identification Narrow Theorem"
@@ -84382,12 +84382,12 @@
     },
     "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": {
       "claim_id": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "7643171da9610e1f02a9dfc6b712d6cc09991f8e23e2b5b78de6ca1600f72429",
+      "note_hash": "9ba06361424f8c27c42752686bc5b61171390473680a4342dea9b00d90ff36d4",
       "path": "docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md",
       "runner_path": "scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py",
       "title": "Koide kappa Spectrum-Operator Bridge Theorem"
@@ -96921,7 +96921,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "7a8e7f63c146c3fab2e23f859daa4c8f83edd5d42c098de0cb8e6dd9bf0111f4",
+      "note_hash": "bef0b177f4772d55c5c42456c967ddbe3736effd859693057f23ab6ed7f6ec11",
       "path": "docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06.py",
       "title": "Post-Record Audit Evidence Ladder Row Bucketing"
@@ -97128,15 +97128,15 @@
     },
     "post_record_flow_thermal_stable_setting_certificate_2026-06-06": {
       "claim_id": "post_record_flow_thermal_stable_setting_certificate_2026-06-06",
-      "claim_type_author_hint": "positive_theorem",
-      "claim_type_author_hint_raw": "positive_theorem",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [
         "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
         "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py"
       ],
-      "note_hash": "51080040c8e3c7ad54a090a558f3e6a7ef4339e6b06265740a4bcc961cc8626c",
+      "note_hash": "36d85b65316c162560b9ab18d3ace1a1101179f4278471a39af8bd8ca6a3de9d",
       "path": "docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py",
       "title": "Post-Record Flow/Thermal Stable-Setting Certificate"
@@ -97248,7 +97248,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "8ee2a0295b990abb293b3a1fc2ae597f5534804f4f39945efe5fc2b25713109b",
+      "note_hash": "00ce5f7bf21df7d3969fbc2a65a35b773e0e3944e87144533278eedc0e48df20",
       "path": "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py",
       "title": "Post-Record Selector/Dial Bucket Subdivision"
@@ -97292,7 +97292,7 @@
       "helper_runner_paths": [
         "scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py"
       ],
-      "note_hash": "f74743ee99441c804366c5b3e04e4d434e17aa7a0b8ec3b98ebeac3c3158ba9f",
+      "note_hash": "a8df64c9ad1878e051449f7a235bb06ddb909606825363d2740dabc02604ee15",
       "path": "docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
       "title": "Post-Record Stability/Dynamics Selector Subdivision"
@@ -103127,7 +103127,7 @@
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "67fb42ee02c351d2c00dfcbcc9e7b3642cacd2b7996033dd229dfa8a76c28c34",
+      "note_hash": "bfe8a1769ce7a3969639d263618ee2207bbfa32b38894168fdfb82f780dbaacf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118521,22 +118521,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1374,
+      "bounded_theorem": 1377,
       "decoration": 2,
       "meta": 287,
       "no_go": 208,
-      "none": 1432,
+      "none": 1431,
       "open_gate": 118,
-      "positive_theorem": 198
+      "positive_theorem": 196
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1776,
+      "bounded_theorem": 1779,
       "decoration": 2,
       "meta": 287,
       "no_go": 313,
       "none": 460,
       "open_gate": 192,
-      "positive_theorem": 589
+      "positive_theorem": 586
     },
     "edge_count": 13461,
     "leaf_count": 1161,

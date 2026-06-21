@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1694
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 117
+**Total pending:** 1695
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 118
 
 By criticality:
 - `critical`: 333
 - `high`: 303
 - `medium`: 485
-- `leaf`: 573
+- `leaf`: 574
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -33,7 +33,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 16 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 359 | 19.99 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/su3_casimir_fundamental_check.py` |
 | 17 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | critical | 344 | 15.93 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py` |
 | 18 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | audit_in_progress | critical | 336 | 8.90 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py` |
-| 19 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | positive_theorem | unaudited | critical | 335 | 12.89 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py` |
+| 19 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | unaudited | critical | 335 | 12.89 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py` |
 | 20 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | unaudited | critical | 325 | 13.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
 | 21 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | critical | 308 | 15.77 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_axis_symmetry_s3_discriminator.py` |
 | 22 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | audit_in_progress | critical | 302 | 16.24 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py` |
@@ -43,7 +43,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 26 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | critical | 287 | 16.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py` |
 | 27 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | unaudited | critical | 286 | 9.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py` |
 | 28 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | critical | 268 | 15.07 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_aps_block_by_block_forcing.py` |
-| 29 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | positive_theorem | unaudited | critical | 259 | 14.02 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py` |
+| 29 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | unaudited | critical | 259 | 14.02 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py` |
 | 30 | `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | unaudited | critical | 251 | 9.48 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py` |
 | 31 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | unaudited | critical | 100 | 18.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_exact_readout_map.py` |
 | 32 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | unaudited | critical | 1110 | 10.62 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |

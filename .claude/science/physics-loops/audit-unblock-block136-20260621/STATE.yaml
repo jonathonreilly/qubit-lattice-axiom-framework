@@ -4,8 +4,8 @@ block: 136
 mode: physics-loop
 branch: physics-loop/audit-unblock-block136-20260621
 base: physics-loop/audit-unblock-block135-20260621
-base_commit: f00847ae46c6e6a57d187900fa9b54b84ba3bd08
-rebuilt_at: "2026-06-21 00:11:26 EDT"
+base_commit: 366c32956590b5e64834fc1594670309ab072667
+rebuilt_at: "2026-06-21 00:31:44 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "source-graph cycle repair apply pass"
@@ -22,7 +22,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed earlier with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "Rebuilt on the current block135 branch, applied the source-graph repair workflow in two passes, regenerated audit support surfaces, and reached zero cycle inventory with 117 ready queue entries."
+current_result: "Rebuilt on the current block135 branch, applied the source-graph repair workflow in two passes, regenerated audit support surfaces, and reached zero cycle inventory with 118 ready queue entries after rebasing onto the refreshed block135 branch."
 apply_result:
   pass_1:
     pre_apply_cycles_named: 8
@@ -44,14 +44,15 @@ apply_result:
   total_live_markdown_links_rewritten: 13
 pipeline_result:
   ledger_rows: 3474
-  pending_audits: 1694
-  ready_entries: 117
+  pending_audits: 1695
+  ready_entries: 118
   cycles: 0
   first_pipeline_hard_resets: 72
   second_pipeline_hard_resets: 0
+  post_rebase_pipeline_hard_resets: 0
   lint_notices: 138
   pr_diff_runner_cache_state: "fresh=0 stale=0 missing=0"
-  full_runner_cache_baseline: "3112 fresh, 11 stale/corrupt, 0 missing; unrelated to this PR diff"
+  full_runner_cache_baseline: "3123 considered; 3112 fresh, 11 stale/corrupt, 0 missing; unrelated to this PR diff"
 post_apply_dry_run:
   cycles_named: 0
   unique_source_notes: 0
@@ -75,5 +76,5 @@ review_disposition: pass
 verification_status: pass
 pr_status: open
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4506
-next_exact_action: "Commit rebuilt block136, force-push PR #4506, update PR body, then continue to the next audit-unblock target."
+next_exact_action: "Commit post-rebase generated support refresh, force-push PR #4506, update PR body, then continue to the next audit-unblock target."
 stop_condition: "Block136 source-graph repair apply PR opened; campaign continues to next audit-unblock target while runtime remains."

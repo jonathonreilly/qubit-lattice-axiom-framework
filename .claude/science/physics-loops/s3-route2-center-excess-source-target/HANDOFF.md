@@ -8,9 +8,17 @@ Branch:
 physics-loop/s3-route2-center-excess-source-target-block66-20260621
 ```
 
-PR: pending.
+PR:
 
-Remote science commit: pending.
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4597
+```
+
+Remote science commit:
+
+```text
+8158c31c5fbfaaf4f82ca4189986a0a5a944453e
+```
 
 Claim-state movement:
 
@@ -79,7 +87,9 @@ PASS
 
 ## PR Identity
 
-Pending.
+```text
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-center-excess-source-target-block66-20260621","number":4597,"state":"OPEN","title":"[physics-loop] s3-route2-center-excess-source-target block66 bounded-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4597"}
+```
 
 ## Next Exact Action
 

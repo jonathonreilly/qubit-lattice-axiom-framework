@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1479 |
-| Retained-grade rows, including boxed decorations | 1403 |
+| Applied audit verdicts | 1480 |
+| Retained-grade rows, including boxed decorations | 1404 |
 | Retained positive theorems | 207 |
-| Retained no-go rows | 206 |
+| Retained no-go rows | 207 |
 | Retained bounded rows | 936 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 34 |
-| Unaudited rows | 1667 |
+| Unaudited rows | 1666 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 12 |
 | Audited renaming rows | 22 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1669 |
+| Total pending rows | 1668 |
 | Ready rows | 124 |
 | Cycle-break targets | 9 |
-| Critical pending | 292 |
-| High pending | 298 |
+| Critical pending | 293 |
+| High pending | 296 |
 | Medium pending | 491 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md) - high; unaudited
+- [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - critical; unaudited
+- [`dm_leptogenesis_pmns_transport_extremal_source_candidate_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md) - high; unaudited
 - [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
 - [`quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28`](../../docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) - high; unaudited
 - [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited
 - [`ckm_five_sixths_bridge_support_note`](../../docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) - high; unaudited
 - [`yt_lsp_signed_record_source_readout_support_note_2026-05-24`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md) - high; unaudited
-- [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -78,8 +78,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3619 |
-| Critical nodes | 575 |
-| High nodes | 510 |
+| Critical nodes | 576 |
+| High nodes | 509 |
 | Medium nodes | 972 |
 | Leaf nodes | 1562 |
 
@@ -89,7 +89,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
 - `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
-- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
+- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
 - `key_terminology` - critical; 1126 descendants; score 46.638
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

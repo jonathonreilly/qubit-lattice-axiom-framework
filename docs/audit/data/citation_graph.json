@@ -53470,15 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_asymmetry_2over9_forced_weight_2026-05-31"
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
       "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "quark_route2_exact_readout_map_note_2026-04-19"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_asymmetry_2over9_forced_weight_2026-05-31",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
         "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
         "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
         "koide_aps_block_by_block_forcing_note_2026-04-21",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+        "quark_route2_exact_readout_map_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7f1770ccda106b6544e1b6faefbfdf7fdebe225cf562c7dc47a08390306e07b3",
+      "note_hash": "5b6dfd866688472e0bc82180f73eb50e20c70105a07193d916def9c347142594",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

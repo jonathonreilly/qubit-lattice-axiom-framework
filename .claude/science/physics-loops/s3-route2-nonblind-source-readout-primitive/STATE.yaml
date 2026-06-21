@@ -46,6 +46,9 @@ checks:
   - "explicit ASCII scan -> no matches"
 review_disposition: pass
 review_notes: "branch-local science self-review only; no audit verdicts applied"
-pr_status: pending
-next_exact_action: "commit, publish branch, open PR, then pivot to the next Route-2/S3 consumer if campaign continues"
+pr_status: open
+pr_number: 4588
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4588"
+remote_science_commit: e137c1cd9809277a93e16ed8f012a12990672d23
+next_exact_action: "pivot to the next ranked Route-2/S3 positive route if campaign continues"
 stop_condition: "none; campaign continues after block PR"

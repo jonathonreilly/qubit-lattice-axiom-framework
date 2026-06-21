@@ -47,9 +47,21 @@ The block proceeded in degraded branch-local mode on an independent worktree.
 
 ## PR Status
 
-Pending.
+Open:
+
+```text
+PR #4588: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4588
+branch: physics-loop/s3-route2-nonblind-source-readout-primitive-block57-20260621
+base: main
+remote science commit: e137c1cd9809277a93e16ed8f012a12990672d23
+```
+
+Identity-only PR verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-nonblind-source-readout-primitive-block57-20260621","number":4588,"state":"OPEN","title":"[physics-loop] s3-route2-nonblind-source-readout-primitive block57 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4588"}
+```
 
 ## Next Exact Action
 
-Commit, publish this branch, open a PR, then continue the campaign with the
-highest-ranked remaining positive route.
+Continue the campaign with the highest-ranked remaining positive route.

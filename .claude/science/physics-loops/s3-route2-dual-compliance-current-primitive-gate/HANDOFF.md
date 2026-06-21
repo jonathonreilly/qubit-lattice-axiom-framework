@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-dual-compliance-premise-block60-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4591
+```
+
+Remote science commit:
+
+```text
+5344e2dd6a210c0cb55e28ea9e1f4443d91aec7a
+```
+
 Claim-state movement:
 
 ```text
@@ -80,5 +92,5 @@ PASS
 
 ## Next Exact Action
 
-After PR, start a new block trying to construct a genuinely new same-domain
-source/readout theorem for `p=2`.
+Start a new block trying to construct a genuinely new same-domain source/readout
+theorem for `p=2`.

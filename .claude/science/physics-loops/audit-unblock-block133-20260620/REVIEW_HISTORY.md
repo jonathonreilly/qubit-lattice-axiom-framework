@@ -23,4 +23,4 @@ Checks:
 - `python3 -m py_compile scripts/precompute_audit_runners.py scripts/runner_cache.py scripts/audit_packet_script_deps.py scripts/codex_audit_runner.py scripts/audit_runner_path_canonicalization_guard_2026_06_17.py docs/audit/scripts/tests/test_audit_pipeline.py` -> pass.
 - `git diff --check` -> pass.
 
-Restacked on PR #4502 at `21fd22ac` after the cache-stack refresh.
+Restacked on PR #4502 at `faf42c76c` after the 678 cache-stack refresh.

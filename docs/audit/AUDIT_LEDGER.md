@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 979 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1576 |
+| unaudited | 1575 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 29 |
+| ~~audited_conditional~~ | 30 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -64,12 +64,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1422 |
-| `audited_conditional` | 29 |
+| `audited_conditional` | 30 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1902 |
+| `unaudited` | 1901 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 940 |
-| `leaf` | 1459 |
+| `medium` | 939 |
+| `leaf` | 1460 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1566,6 +1566,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -7789,6 +7790,23 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For a shell closed under signed permutations, the coordinate-square sums are equal and add to n q, so each axis sum is n q / 3.  _(class `A`)_
 - **chain closes:** True — Within the stated ideal finite kinetic stress setup, the conclusion follows by finite orbit symmetry and elementary pressure/energy algebra. The note does not import or claim closure of the full FRW backdrop or actual cosmological-fluid application.
 - **rationale:** The load-bearing argument is an algebraic identity over finite signed-permutation shells, and the massless, rest-massive, and nonzero-massive formulas follow with the stated kinetic stress definitions. The runner source performs genuine finite orbit and rational arithmetic checks, with only non-load-bearing parent-note string checks in class B and no external comparator. The runner examples are not the whole proof, but the source note's general orbit-sum argument closes the bounded claim as written.
+- **auditor confidence:** high
+
+### `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`
+
+- **Note:** [`FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Open-gate conditional-support stress-test: the finite packet checks source-scope guards, a toy CCR/CAR spin-statistics witness, and statistics-blindness of the multi-loop graph-braid cocycle, while leaving FS closure conditional on Link-B external-spacetime identification, emergent Lorentz/positivity/microcausality, and non-circular R.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If Link-B realization-gate/external-spacetime identification, emergent Lorentz/positivity/microcausality, and non-circular reconstruction R are supplied, then the comparator spin-statistics engine selects the fermionic sign; meanwhile the finite graph-braid opening is statistics-blind.  _(class `D`)_
+- **chain closes:** False — The chain does not close to FS selection from the provided retained inputs because the source explicitly leaves the realization-gate/external-spacetime identification, Lorentz/positivity/microcausality, and reconstruction R unsupplied. The runner verifies the conditional route-map posture and finite witnesses, not the missing bridges.
+- **rationale:** Issue: the decisive FS selection is conditional on unsupplied Link-B external-spacetime identification, emergent Lorentz/positivity/microcausality, and a non-circular OS-to-Wightman R, while the direct realization-gate authority is unaudited. Why this blocks: the runner mostly verifies source-scope wording and toy comparator witnesses; it does not construct those bridges or turn the standard spin-statistics theorem into a repo-local retained derivation. Repair target: land retained-grade bridge theorems for Link B, Lorentz/positivity/microcausality, and R, then re-audit the conditional implication. Claim boundary until fixed: this is an open route map/stress-test; the finite multi-loop cocycle is statistics-blind, and no FS closure or new axiom is established.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+  - `emergent_lorentz_invariance (path not provided in restricted packet)`
+  - `free_field_os_wightman_reconstruction (path not provided in restricted packet)`
 - **auditor confidence:** high
 
 ### `fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28`

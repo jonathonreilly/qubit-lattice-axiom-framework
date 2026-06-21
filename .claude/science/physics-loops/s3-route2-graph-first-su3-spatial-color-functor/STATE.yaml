@@ -43,6 +43,13 @@ verification_results:
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py: PASS=11 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py: PASS=12 FAIL=0"
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Commit, publish branch, open PR, record PR identity, then pivot to non-color E-center source primitive."
+pr_status: open
+pr:
+  number: 4603
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4603"
+  title: "[physics-loop] s3-route2-graph-first-spatial-color-functor block72 no-go"
+  base: main
+  head: physics-loop/s3-route2-spatial-color-functor-block72-20260621
+  state: OPEN
+next_exact_action: "Pivot to non-color E-center source primitive."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable targets are globally blocked."

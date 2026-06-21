@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block29-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4558
+```
+
+Identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block29-20260621","number":4558,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block29 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4558"}
+```
+
 Block29 delivers an E-center-visible selector fan-out no-go. It tests exact
 endpoint-matrix selectors that see the unknown E-center lift `q_E` and shows
 that none of the non-bridge selectors land the target. The target appears only

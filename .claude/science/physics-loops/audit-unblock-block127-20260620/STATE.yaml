@@ -55,6 +55,7 @@ files_touched:
   - .claude/science/physics-loops/audit-unblock-block127-20260620/*
 review_disposition: pass
 verification_status: pass
-pr_status: pending
-next_exact_action: "Commit, push, and open the block127 PR."
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4497
+next_exact_action: "Verify PR #4497, then continue the campaign by selecting the next independent audit-unblock target."
 stop_condition: "Block127 PR opened and verified; campaign may then pivot to the next independent audit-unblock target."

@@ -14,5 +14,11 @@ Current evidence:
 This block should be reviewed as a tooling/evidence guard. It should not be
 read as an audit verdict, claim promotion, or retained-status proposal.
 
-Next exact action: run final checks, push the branch, and open a stacked PR
-against `physics-loop/audit-unblock-block128-20260620`.
+PR:
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4499
+- Base: `physics-loop/audit-unblock-block128-20260620`
+- Head: `physics-loop/audit-unblock-block129-20260620`
+
+Next exact action: monitor PR #4499 checks, then continue with the next
+independent audit-unblock block if runtime remains.

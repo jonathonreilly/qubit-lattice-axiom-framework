@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 212 |
-| **retained_bounded** | 972 |
+| **retained_bounded** | 973 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1588 |
+| unaudited | 1587 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1410 |
+| `audited_clean` | 1411 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1914 |
+| `unaudited` | 1913 |
 
 | claim_type | count |
 |---|---:|
@@ -1277,6 +1277,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `spin_statistics_cardinality_pauli_exclusion_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `spin_statistics_fs_admission_located_exercise_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `stable_post_record_dial_location_certificate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -18262,6 +18263,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The finite-dimensional identities Tr([a,a†]) = 0 while Tr(I_H) = D rule out CCR for D >= 1, and the CAR relations give {a†,a†} = 2(a†)^2 = 0 plus n^2 = a†aa†a = n.  _(class `A`)_
 - **chain closes:** True — The algebraic statements follow from cyclic trace, explicit 2x2 CAR matrices, and same-mode CAR identities. The abstract Cl(3) dimension match is supplied by retained-grade one-hop authorities, and no physical per-site Hilbert-space identification is used.
 - **rationale:** (C1)-(P2) are finite-dimensional trace, matrix, and CAR algebra identities, and the runner source genuinely instantiates symbolic matrices and the concrete CAR carrier. The only load-bearing upstream use is the abstract Cl(3) dimension-2 readout; the supplied authorities are retained-grade, including the decoration-under retained parent. The source explicitly excludes the physical lattice identification and open staggered-Dirac bridge, so the audited narrow scope closes.
+- **auditor confidence:** high
+
+### `spin_statistics_fs_admission_located_exercise_note_2026-06-06`
+
+- **Note:** [`SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md`](../../docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded location certificate only: the Pauli/Cl(3) obstruction, the order-two sign dichotomy without sign selection, and the Record no-within-sector-data boundary once a central parity label is supplied; no CAR derivation, global spin-statistics closure, multi-loop no-go, continuum bridge, or 3x3x2 H1 verification is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-spin_statistics_fs_admission_located_exercise_note_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Cl(3) vector grade is not an inner Z2 CAR grading on the qubit because omega^2 = -I and the only operator anticommuting all three Paulis is 0; topology supplies at most the Hom(Z2,U(1)) = {+1,-1} dichotomy, and Record supplies no within-sector exchange-sign datum once the parity label is in place.  _(class `C`)_
+- **chain closes:** True — Within the narrowed scope, the Pauli obstruction is directly computed, Hom(Z2,U(1)) gives the elementary two-sign alternative, and the Record axiom explicitly withholds within-sector data. The broader FS/spin-statistics routes are expressly left open and are not part of the audited conclusion.
+- **rationale:** The runner genuinely instantiates the one-site Pauli algebra and computes the pseudoscalar and all-Pauli anticommutant obstruction rather than only printing expected constants. The topology portion is only the elementary sign dichotomy and the note guards against using it as sign selection; the Record portion is a direct axiom-boundary application, not a derivation of CAR. Clean status applies only to this scoped location certificate, not to the open multi-loop, continuum, or 3x3x2 witness routes.
 - **auditor confidence:** high
 
 ### `stable_post_record_dial_location_certificate_2026-06-06`

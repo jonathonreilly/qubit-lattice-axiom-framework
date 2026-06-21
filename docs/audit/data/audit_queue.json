@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 292,
     "high": 280,
-    "leaf": 574,
+    "leaf": 573,
     "medium": 444
   },
   "cycle_break_target_count": 9,
@@ -17457,34 +17457,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "car_from_positivity_neutrality_note_2026-06-02",
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02",
-        "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17633,6 +17605,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_neutrino_vsel_curvature_transport_obstruction.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
+        "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
+        "rconn_derived_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ew_kappa_self_energy_object_pin.py",
       "transitive_descendants": 16
     },
     {
@@ -31202,32 +31200,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
-        "rconn_derived_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_ew_kappa_self_energy_object_pin.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -31328,6 +31300,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/fractional_instanton_action_core_split_2026_06_18.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
+        "axiom_first_spin_statistics_theorem_note_2026-04-29",
+        "fermion_parity_z2_grading_theorem_note_2026-05-02",
+        "minimal_axioms",
+        "scale_reference_primitive",
+        "staggered_dirac_realization_gate_note_2026-05-03"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py",
       "transitive_descendants": 1
     },
     {
@@ -35141,35 +35142,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_frw_c3_kinetic_component_fluid_lift_2026_06_18.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02",
-        "minimal_axioms",
-        "scale_reference_primitive",
-        "staggered_dirac_realization_gate_note_2026-05-03"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_fs_forced_modulo_emergent_lorentz_2026_06_06.py",
       "transitive_descendants": 1
     },
     {
@@ -47857,5 +47829,5 @@
     }
   ],
   "ready_count": 85,
-  "total_pending": 1590
+  "total_pending": 1589
 }

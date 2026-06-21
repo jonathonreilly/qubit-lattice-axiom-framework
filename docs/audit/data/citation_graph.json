@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "spin_statistics_fs_admission_located_exercise_note_2026-06-06"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
         "spin_statistics_fs_admission_located_exercise_note_2026-06-06",
         "alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18",
         "architecture_portability_sweep_note",
         "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
         "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06",
         "causal_distance_tail_note",
-        "dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07"
+        "dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07",
+        "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f9dc174fd756bf4c75d44c3d4c289c169f19320f09b06d5ee3359bbff8b159bd",
+      "note_hash": "f387eae8bac38c95950a62324a4375457c4732e2e05aeff424948fe2b36ef71c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

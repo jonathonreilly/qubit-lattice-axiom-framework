@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_lane_regression.py
+runner_sha256: f755b01c62670a520a25a1c0ff4c8debee48e6c962c48511a28b9f8df1c3ada2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 10.57
+status: ok
+----- stdout -----
+========================================================================================
+Koide Lane — full regression verification
+========================================================================================
+
+Running 29 runners. Expected total: 398/398 PASS.
+
+  [PASS] frontier_koide_equivariant_berry_aps_selector.py            15/15 (expected 15)
+  [PASS] frontier_koide_dirac_zero_mode_phase_theorem.py             10/10 (expected 10)
+  [PASS] frontier_koide_brannen_route3_geometry_support.py           30/30 (expected 30)
+  [PASS] frontier_koide_brannen_dirac_support.py                     11/11 (expected 11)
+  [PASS] frontier_charged_lepton_radiative_yukawa_theorem.py         11/11 (expected 11)
+  [PASS] frontier_koide_eta_lefschetz_spectral_flow.py               8/8 (expected 8)
+  [PASS] frontier_charged_lepton_yukawa_diagrammatic_enumeration.py  8/8 (expected 8)
+  [PASS] frontier_charged_lepton_yukawa_bz_quadrature_explicit.py    6/6 (expected 6)
+  [PASS] frontier_koide_mass_assignment_derivation.py                7/7 (expected 7)
+  [PASS] frontier_koide_z3_weight_uniqueness.py                      6/6 (expected 6)
+  [PASS] frontier_koide_hierarchy_derivation_audit.py                9/9 (expected 9)
+  [PASS] frontier_koide_as_pin_replaces_h_star_witness.py            5/5 (expected 5)
+  [PASS] frontier_koide_real_irrep_block_democracy.py                8/8 (expected 8)
+  [PASS] frontier_koide_q_equals_lefschetz_sum.py                    5/5 (expected 5)
+  [PASS] frontier_koide_p1_sqrtm_amplitude_derivation.py             6/6 (expected 6)
+  [PASS] frontier_koide_selected_line_axis_fourier_bridge.py         5/5 (expected 5)
+  [PASS] frontier_koide_positive_parent_operator_construction.py     9/9 (expected 9)
+  [PASS] frontier_koide_name_free_set_equality.py                    5/5 (expected 5)
+  [PASS] frontier_koide_a1_quartic_potential_derivation.py           5/5 (expected 5)
+  [PASS] frontier_koide_a1_n3_structural_uniqueness.py               5/5 (expected 5)
+  [PASS] frontier_koide_a1_cv_equals_one.py                          4/4 (expected 4)
+  [PASS] frontier_koide_a1_block_democracy_max_entropy.py            5/5 (expected 5)
+  [PASS] frontier_koide_pointed_origin_exhaustion_theorem.py         15/15 (expected 15)
+  [PASS] frontier_koide_dimensionless_objection_closure_review.py    38/38 (expected 38)
+  [PASS] frontier_koide_q_background_zero_z_erasure_criterion.py     25/25 (expected 25)
+  [PASS] frontier_koide_q_onsite_source_domain_no_go_synthesis.py    23/23 (expected 23)
+  [PASS] frontier_koide_q_source_domain_canonical_descent.py         55/55 (expected 55)
+  [PASS] frontier_koide_q_so2_phase_erasure_support.py               23/23 (expected 23)
+  [PASS] frontier_koide_a1_radian_bridge_irreducibility_audit.py     36/36 (expected 36)
+
+========================================================================================
+TOTAL: 398/398
+VERDICT: all Koide-lane support runners pass. Support batch verified.
+
+Support-batch summary:
+  - M_Pl, α_LM      : retained primitives
+  - (7/8)^(1/4)      : Stefan-Boltzmann fermion/boson (textbook)
+  - 16 = 2^4         : taste doublers in 4D staggered (structural)
+  - v_EW             : M_Pl · (7/8)^(1/4) · α_LM^16, PDG match 0.025%
+  - Z_3 (1, 2)       : structurally unique on V_3
+  - |η_AS| = 2/9     : ambient APS value fixed exactly
+  - zero-mode / APS  : strengthened candidate bridge to physical δ
+  - Brannen geometry : exact selected-line rotation / octahedral-domain
+                      support on the retained first branch
+  - finite-lattice   : explicit L=3 Wilson-Dirac descent illustration
+                      for the ambient 2/9 value
+  - C_τ = 1 route    : explicit radiative/Yukawa support calculation
+  - Q = 2/3 support  : exact identities, A1 audits, bridge candidates
+  - positive-parent, selected-line, and set-equality tools
+                      : added as support diagnostics and atlas tools
+  - pointed-origin    : exhaustion theorem shows origin-free retained data
+                      cannot select the closing representative
+  - objection review  : source-domain closure demoted to conditional
+                      support with explicit Q and delta residuals
+  - Q Z-erasure       : exact criterion K=0 <=> Z-erasure <=> Q=2/3
+                      on the admitted reduced carrier
+  - Q source domain   : onsite C3 scalar sources erase Z conditionally,
+                      but retained commutant/projected sources still admit Z
+  - Q descent         : unique trace-preserving onsite descent is diagonal
+                      compression and erases reduced Z modulo common scalar
+  - Q SO(2) erasure   : Brannen carrier gives Q=(c^2+2)/6,
+                      independent of scale and phase; support only
+  - A1/radian audit   : retained phase sources remain q*pi; Type-B
+                      rational-to-radian readout remains primitive
+
+Open package status is unchanged:
+  - physical source-domain / source-free reduced-carrier selection behind Q = 2/3 remains open
+  - selected-line local boundary source plus based endpoint behind δ = 2/9 remains open
+  - Type-B rational-to-radian readout behind δ = 2/9 remains open
+  - overall scale lane v_0 remains separate support
+
+----- stderr -----
+

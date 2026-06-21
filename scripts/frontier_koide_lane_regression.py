@@ -44,7 +44,7 @@ RUNNERS = [
     ("frontier_koide_a1_cv_equals_one.py", 4),
     ("frontier_koide_a1_block_democracy_max_entropy.py", 5),
     ("frontier_koide_pointed_origin_exhaustion_theorem.py", 15),
-    ("frontier_koide_dimensionless_objection_closure_review.py", 21),
+    ("frontier_koide_dimensionless_objection_closure_review.py", 38),
     ("frontier_koide_q_background_zero_z_erasure_criterion.py", 25),
     ("frontier_koide_q_onsite_source_domain_no_go_synthesis.py", 23),
     ("frontier_koide_q_source_domain_canonical_descent.py", 55),

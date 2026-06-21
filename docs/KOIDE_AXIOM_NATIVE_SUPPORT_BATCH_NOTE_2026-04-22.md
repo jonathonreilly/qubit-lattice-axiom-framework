@@ -3,8 +3,11 @@
 **Date:** 2026-04-22  
 **Scope:** Charged-lepton Koide support additions landed after the April 21
 review package.  
+**Claim type:** bounded_theorem
 **Status:** Bounded support batch. This note does **not** promote charged-lepton
 Koide closure.
+**Status authority:** independent audit lane only.
+**Runner:** [`scripts/frontier_koide_lane_regression.py`](../scripts/frontier_koide_lane_regression.py)
 
 ## Cited authorities (one hop)
 
@@ -135,7 +138,7 @@ state in which `scripts/frontier_koide_q_so2_phase_erasure_support.py`
 failed one of its onsite source-domain synthesis checks. That subrunner
 was repaired at commit `5097b492` (2026-04-30) and now passes 23/23. The
 integrated regression `scripts/frontier_koide_lane_regression.py` reports
-`TOTAL: 381/381` and prints `VERDICT: all Koide-lane support runners
+`TOTAL: 398/398` and prints `VERDICT: all Koide-lane support runners
 pass. Support batch verified.`
 
 Per scope: this batch remains a **bounded support expansion**, not a

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "qcd_low_energy_running_bridge_note_2026-05-01"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "qcd_low_energy_running_bridge_note_2026-05-01",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "dm_neutrino_weak_vector_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
-        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+        "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b5368f4ea8a0044556ab737654894c2fac029b1196149954c6dee3f09e30e6e2",
+      "note_hash": "d0e00fafef1e7a9336daf1549384905140d1341b01adb66b52eeff85c2f36907",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

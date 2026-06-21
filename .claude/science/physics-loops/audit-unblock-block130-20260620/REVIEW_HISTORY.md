@@ -20,5 +20,5 @@ Checks:
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 78 tests passed.
 - `git diff --check` -> pass.
 
-The refreshed branch is stacked on PR #4498 at `aaf625532`, where the full
+The refreshed branch is stacked on PR #4498 at `060759dbc`, where the full
 ledger cache check is already clean.

@@ -1,15 +1,21 @@
 # PR Backlog
 
-No PR opened yet for block05.
+No backlog item remains for block05. PR opened:
 
-Expected branch:
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4534
+```
+
+Branch:
 
 ```text
 physics-loop/s3-route2-readout-endpoint-block05-20260621
 ```
 
-Expected title:
+Title:
 
 ```text
 [physics-loop] s3-route2-readout-endpoint block05 bounded-support
 ```
+
+Identity-only verification was completed with fields `number,url,title,headRefName,baseRefName,state`.

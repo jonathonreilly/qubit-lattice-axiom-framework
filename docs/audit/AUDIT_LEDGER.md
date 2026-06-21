@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 988 |
+| **retained_bounded** | 989 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1554 |
+| unaudited | 1553 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1433 |
+| `audited_clean` | 1434 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1880 |
+| `unaudited` | 1879 |
 
 | claim_type | count |
 |---|---:|
@@ -171,6 +171,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `anderson_phase_mu2_0001_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `angular_kernel_orbit_class_underdetermination_narrow_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `angular_kernel_underdetermination_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `architecture_portability_live_reaudit_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `architecture_portability_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -2260,6 +2261,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source performs finite fixture computations through the directional path-measure helpers and reports PASS=6/6 at beta = 0.8. This closes only the fixed-beta numerical support claim, not a derivation of beta or a general theorem beyond the tested fixtures.
 - **rationale:** Issue: the load-bearing result uses beta = 0.8 as a hard-coded tuned setting. Why this blocks clean status: the cited retained no-go supports the not-derived boundary, and the runner verifies only fixture behavior at that supplied value. Repair target: derive beta within a retained framework route and rerun the table without treating beta as calibrated input. Claim boundary until fixed: bounded numerical support at beta = 0.8 only.
 - **auditor confidence:** medium
+
+### `architecture_portability_live_reaudit_bridge_note_2026-06-18`
+
+- **Note:** [`ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md`](../../docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Source-side bridge establishing that the old April 11 architecture-portability packet remains failed historical evidence while the live sweep is an executable bounded finite source-mass and attraction portability companion over the four configured rows, with Born I_3 only for ordered and staggered rows.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-architecture_portability_live_reaudit_bridge_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The live packet repairs the archived audit blocker at the source-artifact level by supplying a bounded configured sweep, cached runner output, per-architecture measurements, and explicit finite-scope boundaries.  _(class `B`)_
+- **chain closes:** True — The cited Architecture Portability Sweep authority is retained_bounded and states exactly the finite scope, measurements, gates, and exclusions used by the bridge. The bridge runner verifies the archive boundary, live-note boundary, cache status, runner SHA, and scoped cache results rather than asserting stronger Newton, Wilson Born-rule, or effective-status claims.
+- **rationale:** The claim is clean only as a source-side bridge: it does not independently rederive the architecture-portability physics, and it does not claim full Newton closure or retained effective status. The load-bearing work is cross-artifact verification against a retained_bounded cited sweep plus SHA-pinned cache output, so class B is the right classification rather than first-principles class C. Within that narrowed scope, the cache, boundary language, and exclusions match the source note and no open dependency is imported.
+- **auditor confidence:** high
 
 ### `architecture_portability_sweep_note`
 

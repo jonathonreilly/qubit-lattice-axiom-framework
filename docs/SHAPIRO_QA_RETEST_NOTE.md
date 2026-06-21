@@ -1,93 +1,75 @@
 # Shapiro QA Retest Note
 
-**Date:** 2026-04-06
-**Status:** bounded - bounded or caveated result note
-**Primary runner:** [`scripts/shapiro_phase_lag_probe.py`](../scripts/shapiro_phase_lag_probe.py) (positive: portable, seed-stable discrete Shapiro-delay observable with exact zero control and family spread <2e-4 rad)
+**Date:** 2026-04-06; bounded-source repair 2026-06-17
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status:** bounded QA cache-verifier over existing Shapiro replay caches;
+independent audit required before any effective status change
+**Primary runner:** [`scripts/shapiro_qa_retest_boundary.py`](../scripts/shapiro_qa_retest_boundary.py)
+**Cached runner output:** [`logs/runner-cache/shapiro_qa_retest_boundary.txt`](../logs/runner-cache/shapiro_qa_retest_boundary.txt)
 
-## Cited authorities (one hop)
+## Cited Authorities
 
-The 2026-05-03 citation-graph repair registers the load-bearing one-hop deps
-listed under §Scope as proper markdown links. The two archive_unlanded
-references in §Scope are intentionally not registered as audit-graph
-authorities (archived narrative, no active claim).
-
-- [`SHAPIRO_DELAY_NOTE.md`](SHAPIRO_DELAY_NOTE.md)
-  — retained Shapiro-phase delay reference whose canonical replay this
-  note QA-confirms.
+- [`SHAPIRO_DELAY_NOTE.md`](SHAPIRO_DELAY_NOTE.md) — phase-lag replay context,
+  used only within bounded proxy scope.
+- [`logs/runner-cache/shapiro_phase_lag_probe.txt`](../logs/runner-cache/shapiro_phase_lag_probe.txt)
+  — numeric phase-lag replay cache checked by the QA runner.
 - [`SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md`](SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md)
-  — retained static-discriminator boundary reference whose smallest
-  control this note replays.
+  — static-cone no-unique-discriminator boundary.
+- [`logs/runner-cache/shapiro_static_discriminator.txt`](../logs/runner-cache/shapiro_static_discriminator.txt)
+  — numeric static-discriminator cache checked by the QA runner.
 - [`SHAPIRO_FAMILY_PORTABILITY_NOTE.md`](SHAPIRO_FAMILY_PORTABILITY_NOTE.md)
-  — portable-family scope used in the QA replay control.
+  — family-portability context, used only within bounded proxy scope.
+
+Archived failed complex-interaction and diamond-bridge notes are not live
+dependencies for this QA row.
 
 ## Scope
 
-Focused QA pass on the Shapiro-phase lane:
+This is a focused QA retest over cached Shapiro-phase artifacts:
 
-- `scripts/shapiro_phase_lag_probe.py`
-- `scripts/shapiro_static_discriminator.py`
-- retained notes:
-  - `docs/SHAPIRO_DELAY_NOTE.md`
-  - `docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md`
-  - `archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_COMPLEX_INTERACTION_NOTE.md`
-  - `docs/SHAPIRO_FAMILY_PORTABILITY_NOTE.md`
-  - `archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_DIAMOND_BRIDGE_NOTE.md`
+- `scripts/shapiro_phase_lag_probe.py`;
+- `scripts/shapiro_static_discriminator.py`;
+- `scripts/shapiro_qa_retest_boundary.py`.
 
-The goal was to replay the smallest controls, check for source-placement or
-static-shape loopholes, and only file a tracker issue if a concrete defect
-showed up.
+The QA question is whether the cached phase-lag replay and cached static-cone
+boundary remain mutually consistent, without promoting either cache into a
+retained physical Shapiro package.
 
 ## Retest
 
-### Canonical phase lag replay
+### Phase-Lag Replay Cache
 
-`python3 scripts/shapiro_phase_lag_probe.py --format text`
+The QA runner checks that
+[`logs/runner-cache/shapiro_phase_lag_probe.txt`](../logs/runner-cache/shapiro_phase_lag_probe.txt)
+exits cleanly, contains the exact instantaneous zero-control text, and reports
+finite-row family spread bounded by `2.5e-4 rad`. It also verifies the cache
+is SHA-fresh for the phase-lag runner, then checks that the cached numeric
+replay is consistent with the static-discriminator boundary.
 
-This replay is clean and matches the retained note:
+### Static-Discriminator Cache
 
-- `c = inst`: `+0.0000 rad`
-- `c = 2.0`: mean `+0.0401 rad`, spread `0.0001 rad`
-- `c = 1.0`: mean `+0.0500 rad`, spread `0.0002 rad`
-- `c = 0.5`: mean `+0.0621 rad`, spread `0.0002 rad`
-- `c = 0.25`: mean `+0.0679 rad`, spread `0.0000 rad`
+The QA runner checks that
+[`logs/runner-cache/shapiro_static_discriminator.txt`](../logs/runner-cache/shapiro_static_discriminator.txt)
+exits cleanly and is SHA-fresh for the static-discriminator runner. It parses
+the displayed mean curves and verifies:
 
-The zero control is exact, and the portable family spread stays at or below
-`2e-4 rad`.
-
-### Small static-discriminator control
-
-I replayed the smallest boundary check on one retained family
-(`Fam1 = drift 0.20, restore 0.70`) using the internal discriminator helpers.
-
-Observed result:
-
-- zero control: exact `0.0`
-- causal lag:
-  - `c = 2.0`: `+0.0373`
-  - `c = 1.0`: `+0.0448`
-  - `c = 0.5`: `+0.0569`
-  - `c = 0.25`: `+0.0659`
-- static cone shape:
-  - exact match to the causal curve at the same `c` values
-- static scheduling:
-  - near-flat response around `+0.0445` to `+0.0450`
-
-This confirms the boundary stated in `docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md`:
-the phase lag is a real portable observable, but static cone-shape effects can
-reproduce it exactly. Static scheduling does not.
+- static cone vs causal RMSE: `0.0000`;
+- static scheduling vs causal RMSE: `0.0128`;
+- static cone-shape remains the no-unique-discriminator boundary.
 
 ## QA Read
 
-- No source-placement bug was found in the retained phase-lag replay.
-- No static-shape loophole was found beyond the already documented boundary:
-  static cone shape is a lookalike, not a defect.
-- The static-discriminator script is computationally heavier than the canonical
-  phase-lag probe, but that is a cost characteristic, not a correctness issue.
+- No source-placement bug is exposed by the checked caches.
+- No new static-shape loophole is exposed beyond the already documented
+  static-cone boundary.
+- The static-discriminator script is computationally heavier than the
+  phase-lag probe, but this QA row now checks the SHA-pinned cache rather than
+  re-running that heavy sweep.
 
-## Conclusion
+## Claim Boundary
 
-**clean retest discipline confirmed**
-
-The Shapiro-phase lane replays correctly, the exact zero controls survive, and
-the static-cone boundary result remains consistent with the retained notes.
-No concrete tracker issue was added.
+This row may support bounded QA consistency if audit accepts the cache-backed
+verifier and scope. It is not a retained physical Shapiro package, not a unique
+causal discriminator, not a lab calibration, and not a status authority for its
+upstream rows.

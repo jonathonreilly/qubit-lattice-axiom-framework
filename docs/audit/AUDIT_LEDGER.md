@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 934 |
+| **retained_bounded** | 935 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1673 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -62,8 +61,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1356 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1357 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 22 |
@@ -135,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -686,6 +684,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9377,6 +9376,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Conditional on the Matsubara free-energy density formula, A(L_t) = (1/(2 L_t u_0^2)) sum_omega 1/(3 + sin^2 omega), with endpoints A_2 = 1/(8 u_0^2), A_4 = 1/(7 u_0^2), and A_inf = 1/(4 sqrt(3) u_0^2).  _(class `A`)_
 - **chain closes:** True — The endpoint identities follow by Taylor expanding log(1+x) at small m and evaluating the finite APBC sums at L_t=2 and L_t=4 plus the standard continuum average integral for L_t -> infinity. The open dimension-4 insertion bridge is explicitly outside the scoped algebraic claim.
 - **rationale:** The load-bearing algebra closes from the retained-grade Matsubara free-energy density authority, whose effective status is decoration_under a retained parent, plus standard finite-sum and integral identities. The runner genuinely computes the coefficient, endpoint formulas, and ratio checks, while its two observed-prefactor checks are external comparator evidence and are not needed for the scoped algebraic theorem. The note correctly leaves the physical det -> v insertion theorem open, so the clean verdict applies only to the bounded endpoint algebra and formal C_inf^(4D) factor, not to hierarchy closure.
+- **auditor confidence:** high
+
+### `hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18`
+
+- **Note:** [`HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md`](../../docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the retained one-Higgs neutral EW surface and a supplied positive quartic D=4 density, the audited claim is the algebraic q=v^2 substitution and resulting inverse fourth-root fixed-density readout for v ratios, with endpoint selection and absolute EW scale outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the neutral one-Higgs surface, q(H(v)) = 2 H^dagger H = v^2, so any positive quartic D=4 density rho_* = A(L) q(H(v(L)))^2 is exactly rho_* = A(L) v(L)^4.  _(class `A`)_
+- **chain closes:** True — Within the bounded scope, the EW authority supplies the neutral Higgs coordinate H(v), and the D4 bridge supplies the fixed-density fourth-root algebra. Substituting q(H(v))=v^2 gives rho_*=A v^4 and v(L)/v_ref=(A_ref/A(L))^(1/4) without importing an observed EW value.
+- **rationale:** The load-bearing step is a direct algebraic identity over the cited retained-grade EW surface and the retained-grade D4 density readout bridge. The runner performs sample rational checks of q=v^2, rho=A v^4, inverse placement, D4-vs-D16 distinction, and EW mass-ratio compatibility, plus source-boundary text checks; it does not use PDG values or fitted targets. The note explicitly limits itself to the supplied positive quartic density and does not claim endpoint selection, hierarchy-to-physical-Higgs-density identification, or an absolute EW scale.
 - **auditor confidence:** high
 
 ### `hierarchy_formula_honest_status_note_2026-05-10`

@@ -1,0 +1,25 @@
+loop: audit-unblock-block139-20260621
+branch: physics-loop/audit-unblock-block139-20260621
+base: origin/main
+base_commit: 678b38ce758905a08a532638618bbbfee0e22e09
+mode: campaign
+block: 139
+status: ready_for_pr
+actual_current_surface_status: open
+trace_class: methodology
+reachability_to_target: supports
+audit_worker_run: false
+apply_audit_run: false
+main_push: false
+review_loop_status: deferred_to_reviewer_lane_per_user_instruction
+changed_surface:
+  - generated audit graph, ledger, queue, dispatch queue, reliability, and publication effective-status views
+  - branch-local loop handoff
+movement:
+  - strict audit lint becomes error-free after generated pipeline refresh
+  - citation graph and ledger attach 47 runner paths that current source notes already expose
+  - current retained note-hash drift is converted into re-audit queue state by pipeline invalidation logic
+  - dispatch queue expands to five live targets and two ready targets
+external_not_in_scope:
+  - ten full-ledger stale/corrupt runner caches remain; covered by the existing cache-refresh PR path
+next_exact_action: open PR for generated pipeline refresh, then continue with a fresh source-side unblock target

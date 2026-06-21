@@ -40,6 +40,13 @@ Completed focused checks:
 
 This block does not derive the single adjoint line from current primitives. It identifies the exact primitive that would work and records falsifiers for that primitive.
 
+## PR
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4567
+- Branch: `physics-loop/s3-route2-readout-endpoint-block37-20260621`
+- Base: `main`
+- Status: open, identity verified only. Conflict/mergeability was not checked.
+
 ## Next Action
 
 Try to derive the single adjoint line from current source/support geometry. If absent, prove the sharp no-go for current source-bank line selectors.

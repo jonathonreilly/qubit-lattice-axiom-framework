@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "causal_source_placement_robustness_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "connectivity_family_v2_elliptical_duplicate_note"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "causal_source_placement_robustness_note",
         "connectivity_family_v2_elliptical_duplicate_note",
         "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12",
         "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12",
         "cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17",
         "d3_native_stable_orbit_upper_bound_composition_note_2026-06-09",
         "dm_neutrino_operator_selection_obstruction_note_2026-04-14",
-        "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07"
+        "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
+        "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9c826f861f8fbd7959209ee147f94047879e03565b39d84459b51778b858512b",
+      "note_hash": "2a48ef32e2b8246bf24045a602cb4b5dbb49116e58ac1e8db55504b50324f475",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

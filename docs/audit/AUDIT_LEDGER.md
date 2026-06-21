@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 993 |
+| **retained_bounded** | 994 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1547 |
+| unaudited | 1546 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1438 |
+| `audited_clean` | 1439 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1873 |
+| `unaudited` | 1872 |
 
 | claim_type | count |
 |---|---:|
@@ -327,6 +327,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `complex_selectivity_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `connectivity_family_v2_elliptical_duplicate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4494,6 +4495,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** Under the family-adequacy gate, every seed clears at every adequate k: seed 4242 through k=6, seed 99 through k=4, and seed 7 through k=7, with all higher-k entries reported as family-inadequate.  _(class `C`)_
 - **chain closes:** True — The runner constructs the finite L=3 Fock/Born tree, computes prefix statistics and seeded permutation-null p95 values, applies the adequacy gate, and reports that every adequate row has theorem_clears=true. Independent table arithmetic against the printed rows and gate gives adequate kmax values 6, 4, and 7, with all higher-k rows flagged family-inadequate.
 - **rationale:** The runner source does not merely print the claim: it builds the finite Hilbert-space machinery, evolves the branch tree, computes determinant phases, prefix-family statistics, null quantiles, adequacy flags, and cap-stability checks. The displayed adequate sets match the claimed theorem-grade clear sets, and non-clearing or singleton/empty-sector rows are outside the adequacy gate rather than counted as theorem wins. The no-exhaustion language is bounded to fixed L=3, k<=8, selected rows, and the adequate-family range, so it does not overclaim asymptotic or higher-k closure.
+- **auditor confidence:** high
+
+### `connectivity_family_v2_elliptical_duplicate_note`
+
+- **Note:** [`CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md`](../../docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite cached parity-tapered elliptical-shell sweep on the no-restore grown slice: 25/45 rows pass the signed-control surface, with the result scoped as a duplicate diagnostic inside the retained_bounded parent gate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-connectivity_family_v2_elliptical_duplicate_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The cached 45-row elliptical-shell runner records a 25/45 pass surface whose failures are sign-orientation failures, so the sweep is a bounded diagnostic duplicate of the parent sign-portability gate rather than a second independent retained family.  _(class `C`)_
+- **chain closes:** True — The packet includes the runner source, its load-bearing helper, and the SHA-pinned cache; the code constructs the grown geometry, replaces connectivity with the elliptical-shell rule, propagates signed fields, and computes the reported row table. The cited parent is retained_bounded and is used only to bound the interpretation, not to claim a universal portability theorem.
+- **rationale:** The runner is not a print-only or hard-coded certificate: it computes the geometry, adjacency, signed-source propagation, centroid shifts, and exponent values row by row. The note's pass inventory, 25/45 total, drift coverage, and mean passing exponent 0.999826 match the supplied cache. The conclusion is clean only at the bounded diagnostic scope: it records a finite duplicate of the parent sign-law surface and explicitly does not promote the elliptical rule to a universal or independent family theorem.
 - **auditor confidence:** high
 
 ### `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10`

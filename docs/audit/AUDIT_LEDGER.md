@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 943 |
+| **retained_bounded** | 944 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1671 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1355 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1356 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
@@ -144,7 +143,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `staggered_dirac_grassmann_forcing_theorem_note_2026-05-07` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1257,6 +1255,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
+| `staggered_dirac_grassmann_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -17369,6 +17368,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The edge-flip rule propagates a basepoint sign along paths, and coordinate-square evenness makes the path parity x_1+x_2+x_3 mod 2, so s(x)=s(0)(-1)^(x_1+x_2+x_3).  _(class `A`)_
 - **chain closes:** True — The controlling step is a graph-parity algebra identity on the nearest-neighbor Z^3 coordinate-edge graph, followed by direct Pauli matrix and diagonal-grading identities. The runner source performs actual finite rank, Pauli pseudoscalar, and edgewise anticommutation checks, and there are no cited open dependencies or external comparator values. The result is clean within the stated narrow bridge scope, but its derivation class is better classified as A than C because it is not a first-principles numerical compute producing a new framework number.
 - **rationale:** The controlling step is a graph-parity algebra identity on the nearest-neighbor Z^3 coordinate-edge graph, followed by direct Pauli matrix and diagonal-grading identities. The runner source performs actual finite rank, Pauli pseudoscalar, and edgewise anticommutation checks, and there are no cited open dependencies or external comparator values. The result is clean within the stated narrow bridge scope, but its derivation class is better classified as A than C because it is not a first-principles numerical compute producing a new framework number.
+- **auditor confidence:** high
+
+### `staggered_dirac_grassmann_forcing_theorem_note_2026-05-07`
+
+- **Note:** [`STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`](../../docs/STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded three-part substep-1 claim: free-CCR bosons are excluded on the retained dim-2 per-site space within the two-candidate surface; Grassmann/CAR is selected within {free boson, hard-core boson, Grassmann/CAR} conditional on GL(F); unconditional statistics forcing is false.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_grassmann_forcing_theorem_note_2026-05-07-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Exactly one of the explicit three candidates passes {dim_C H_x = 2} and GL(F), namely the Grassmann/CAR class, while removing GL(F) restores the hard-core/Grassmann tie.  _(class `C`)_
+- **chain closes:** True — The supplied runner source genuinely instantiates the Pauli, CCR truncation, hard-core, JW/CAR, parity-grading, and generated-algebra computations rather than merely printing expected values. The one-hop authorities are retained-grade or the accepted minimal-axiom premise, and the unclosed GL(F) input is kept inside the stated conditional rather than used to claim unconditional forcing.
+- **rationale:** The load-bearing discriminator is a first-principles finite tensor-product computation from the one-qubit site algebra plus the explicit GL(F) hypothesis. T1, T2, and T3 are all runner-visible: the CCR trace obstruction excludes only the free boson, GL(F) selects CAR conditionally, and the hard-core tie returns without GL(F). The claim is scoped honestly as a bounded theorem and does not overconsume the no-go or spin-statistics authorities.
 - **auditor confidence:** high
 
 ### `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03`

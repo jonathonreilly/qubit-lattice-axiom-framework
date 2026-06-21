@@ -23,7 +23,13 @@ gives the target `lambda=9/4` only by supplying the missing primitive.
 
 ## PR
 
-Pending.
+PR #4543: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4543
+
+Identity-only check:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block14-20260621","number":4543,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block14 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4543"}
+```
 
 ## Verification
 

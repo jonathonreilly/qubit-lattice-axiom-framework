@@ -9,8 +9,8 @@ base: origin/main
 base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
 local_science_commit: 4b98c1f89f3ba27dec0e306b59f61fb7753f983f
 remote_science_commit: 65d83f638a095d79580e8fc38f06489bbbff716e
-local_handoff_commit: pending
-remote_handoff_commit: pending
+local_handoff_commit: 5bfd902d0ec43e52071d1d455fec4035195f7557
+remote_handoff_commit: 5ae83082b2d1fed8d1b34c5ef2eaa7d6b57d74b3
 worktree: /private/tmp/cl3-physics-loop-s3-route2-coefficient-theorem-sweep-block69-20260621
 date: 2026-06-21
 mode: campaign

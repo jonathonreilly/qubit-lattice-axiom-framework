@@ -14,6 +14,10 @@ Local science commit: `4b98c1f89f3ba27dec0e306b59f61fb7753f983f`
 
 Remote science commit: `65d83f638a095d79580e8fc38f06489bbbff716e`
 
+Local handoff commit: `5bfd902d0ec43e52071d1d455fec4035195f7557`
+
+Remote handoff commit: `5ae83082b2d1fed8d1b34c5ef2eaa7d6b57d74b3`
+
 Claim-state movement:
 
 ```text

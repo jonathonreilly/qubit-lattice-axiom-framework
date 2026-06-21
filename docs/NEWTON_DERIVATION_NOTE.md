@@ -1,7 +1,10 @@
 # Newtonian Mass Scaling from Four Principles (bounded family-law note)
 
 **Date:** 2026-04-04 (scope-documentation refresh 2026-05-16)
+**Claim type:** open_gate
 **Status:** open_gate. Additivity strengthens Principle 3 on the retained ordered-lattice family, and the 2026-05-07 multistage compact-object bridge operationally satisfies the *self-sourcing* half of Principle 3 on the audit-clean `top4` family; the residual gate is the *external-field* generator-invariant inertial-mass step on a persistent compact-object family. See the new "Open Gate Scope" section below for the precise audit boundary.
+**Status authority:** independent audit lane only.
+**Runner:** [`scripts/newton_derivation_open_gate_probe.py`](../scripts/newton_derivation_open_gate_probe.py)
 
 ## The Claim
 
@@ -61,14 +64,14 @@ What is now frozen:
 
 Artifact chains:
 
-- [`scripts/equivalence_principle_harness.py`](/Users/jonreilly/Projects/Physics/scripts/equivalence_principle_harness.py)
-- [`logs/2026-04-04-equivalence-principle-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-equivalence-principle-harness.txt)
-- [`docs/EQUIVALENCE_PRINCIPLE_HARNESS_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/EQUIVALENCE_PRINCIPLE_HARNESS_NOTE.md)
-- [`scripts/composite_source_additivity_harness.py`](/Users/jonreilly/Projects/Physics/scripts/composite_source_additivity_harness.py)
-- [`logs/2026-04-04-composite-source-additivity-harness.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-composite-source-additivity-harness.txt)
+- [`scripts/equivalence_principle_harness.py`](../scripts/equivalence_principle_harness.py)
+- [`logs/2026-04-04-equivalence-principle-harness.txt`](../logs/2026-04-04-equivalence-principle-harness.txt)
+- [`docs/EQUIVALENCE_PRINCIPLE_HARNESS_NOTE.md`](EQUIVALENCE_PRINCIPLE_HARNESS_NOTE.md)
+- [`scripts/composite_source_additivity_harness.py`](../scripts/composite_source_additivity_harness.py)
+- [`logs/2026-04-04-composite-source-additivity-harness.txt`](../logs/2026-04-04-composite-source-additivity-harness.txt)
 - `docs/COMPOSITE_SOURCE_ADDITIVITY_NOTE.md` (sibling artifact in same lane; cross-reference only — not a one-hop dep of this note)
-- [`scripts/composite_source_additivity_2d_cross_family.py`](/Users/jonreilly/Projects/Physics/scripts/composite_source_additivity_2d_cross_family.py)
-- [`logs/2026-04-04-composite-source-additivity-2d-cross-family.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-composite-source-additivity-2d-cross-family.txt)
+- [`scripts/composite_source_additivity_2d_cross_family.py`](../scripts/composite_source_additivity_2d_cross_family.py)
+- [`logs/2026-04-04-composite-source-additivity-2d-cross-family.txt`](../logs/2026-04-04-composite-source-additivity-2d-cross-family.txt)
 - `docs/COMPOSITE_SOURCE_ADDITIVITY_2D_NOTE.md` (sibling artifact in same
   lane; cross-reference only — not a one-hop dep of this note)
 

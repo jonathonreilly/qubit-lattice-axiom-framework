@@ -35,11 +35,18 @@ Verification:
 - `git diff --check`: clean
 - Overclaim scan: clean
 - ASCII scan on new files: clean
-- PR: pending
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4584
+- Identity-only PR view:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-ecenter-fingerprint-block54-20260621","number":4584,"state":"OPEN","title":"[physics-loop] s3-route2-ecenter-fingerprint block54 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4584"}
+```
+
+No mergeability/conflict check was run.
 
 Next exact action:
 
 ```text
-Run hygiene checks, publish this block as a PR, then target a derivation or
-refutation of the measured-calibration/infinite-volume E-center lift route.
+Target a derivation or refutation of the measured-calibration/infinite-volume
+E-center lift route.
 ```

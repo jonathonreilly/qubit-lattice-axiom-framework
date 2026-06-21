@@ -48,8 +48,9 @@ verification:
   overclaim_scan: clean
   diff_check: clean
 pr:
-  status: pending
-  number: null
-  url: null
-next_exact_action: "Commit/publish block54, open a PR, then target a derivation or refutation of the fingerprint from the measured-calibration/infinite-volume route."
+  status: open
+  number: 4584
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4584"
+  identity_json: '{"baseRefName":"main","headRefName":"physics-loop/s3-route2-ecenter-fingerprint-block54-20260621","number":4584,"state":"OPEN","title":"[physics-loop] s3-route2-ecenter-fingerprint block54 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4584"}'
+next_exact_action: "Target a derivation or refutation of the fingerprint from the measured-calibration/infinite-volume route."
 stop_condition: "Continue campaign; this block supplies support, not endpoint closure."

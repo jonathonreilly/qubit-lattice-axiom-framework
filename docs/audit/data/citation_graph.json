@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "shapiro_delay_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "u1_fermion_number_conservation_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "shapiro_delay_note",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "flavor_readout_gate_equals_carrier_identification_2026-05-31",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
         "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17",
         "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
-        "u1_fermion_number_conservation_theorem_note_2026-05-02"
+        "u1_fermion_number_conservation_theorem_note_2026-05-02",
+        "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8d331e20c7dfbf40a019e8a80c8765ed02876d8f80335721957049d083106b2d",
+      "note_hash": "8fdbe9384f81aa999cb5e32b026802cd0e7fe4280897f0cb95690dc6e6bbc71b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1495 |
+| Applied audit verdicts | 1496 |
 | Retained-grade rows, including boxed decorations | 1411 |
 | Retained positive theorems | 208 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 941 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1651 |
+| Unaudited rows | 1650 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 15 |
-| Audited renaming rows | 24 |
+| Audited renaming rows | 25 |
 | Audited numerical-match rows | 8 |
 | Citation cycles detected | 9 |
 
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1653 |
-| Ready rows | 116 |
+| Total pending rows | 1652 |
+| Ready rows | 115 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 284 |
-| Medium pending | 489 |
+| Medium pending | 488 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 - [`flavor_readout_gate_equals_carrier_identification_2026-05-31`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md) - medium; unaudited
 - [`record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18`](../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) - medium; unaudited
 - [`ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`](../../docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
+- [`koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
 - [`dm_live_constants_canonical_edge_certificate_note_2026-06-18`](../../docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md) - medium; unaudited
 - [`u1_fermion_number_conservation_theorem_note_2026-05-02`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
-- [`koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
+- [`gauge_factor_local_selector_normalizer_theorem_note_2026-06-18`](../../docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

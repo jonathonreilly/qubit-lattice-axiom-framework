@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1639 |
+| unaudited | 1638 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 17 |
+| ~~audited_conditional~~ | 18 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1376 |
-| `audited_conditional` | 17 |
+| `audited_conditional` | 18 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1965 |
+| `unaudited` | 1964 |
 
 | claim_type | count |
 |---|---:|
@@ -110,8 +110,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
-| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
+| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1400 | 40.45 | `audited_clean` | **retained** |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_clean` | **retained_bounded** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
@@ -1527,6 +1527,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `u1_fermion_number_conservation_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_vertex_power_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -19878,6 +19879,22 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows by substituting the retained K4 dimensional readout dim_C V = 2 into the stated tadpole convention. The proof does not require any numerical plaquette value or downstream running input.
 - **rationale:** The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `u1_fermion_number_conservation_theorem_note_2026-05-02`
+
+- **Note:** [`U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the claimed conservation of total U(1) fermion number across time slices, its promotion to a Hilbert-space commutator with H, and the asserted non-negative integer spectrum of Q̂_total.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-u1_fermion_number_conservation_theorem_note_2026-05-02-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Sum N2's on-shell local lattice divergence over a periodic spatial slice so spatial terms telescope and the temporal part gives Q_total(t)-Q_total(t-1)=0, then promote this to [Q̂_total,H]=0 and an integer number-operator spectrum.  _(class `A`)_
+- **chain closes:** False — The classical slice-sum conservation follows algebraically from cited N2 plus periodic telescoping. The full claim does not close because the packet does not supply a retained bridge from the Grassmann current Q=sum chi_bar chi to a physical Hilbert-space number operator and reconstructed Hamiltonian commutator.
+- **rationale:** Issue: Step 3's quantum promotion and Step 4's integer-spectrum claim use a classical-to-quantum/Hilbert-space number-operator bridge that is not closed by the cited N2 packet. Why this blocks: the runner assumes Q is diagonal by occupation number and assumes a U(1)-symmetric H is block-diagonal, so it checks consistency after the contested operator/Hamiltonian bridge has been imposed. Repair target: cite or prove a retained theorem identifying the integrated Grassmann U(1) charge with Q̂_total on H_phys and deriving the reconstructed H action/commutator from the cited lattice dynamics. Claim boundary until fixed: the on-shell classical lattice slice conservation on the admitted N2 carrier remains supported.
+- **open / conditional deps cited:**
+  - `AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md`
+  - `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md`
 - **auditor confidence:** high
 
 ### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`

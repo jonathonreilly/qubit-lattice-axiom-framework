@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "qcd_low_energy_running_bridge_note_2026-05-01"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "dm_neutrino_weak_vector_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29",
+        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fdb18d31e6135c7f46266d76839a5c9e1f1640b225d40920a4ba723e79472395",
+      "note_hash": "90b164ca6703f9b66289b8aa274e037f233e791e1ecf59b4089e11b0d113498f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,0 +1,55 @@
+loop_slug: s3-route2-readout-endpoint
+block: 37
+date: 2026-06-21
+mode: campaign
+target_status: best-honest-status
+branch: physics-loop/s3-route2-readout-endpoint-block37-20260621
+base: origin/main
+base_commit: 46249450267b867ef93c66557ee7a74e39fdd064
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block37-20260621
+user_constraints:
+  - "Do not audit or apply verdicts."
+  - "Make PRs for coherent science blocks; do not push to main."
+  - "Do not refresh existing PRs onto main."
+  - "Do not check whether PRs conflict."
+repo_lock:
+  mode: degraded_branch_local
+  reason: "scripts/automation_lock.py status failed with Permission denied for /Users/jonreilly."
+active_route:
+  name: single_adjoint_line_source_selector
+  route_type: constructive conditional theorem
+  hard_residual: "Can a typed E-center/source readout primitive force e_E=7/8 and hence rho_E=21/4 without importing the endpoint target?"
+  A_min:
+    - "Exact Route-2 endpoint algebra q_E=1+(beta_E/alpha_E)/6."
+    - "SU(3) adjoint dimension 8."
+    - "Hypothetical typed source selector: one distinguished adjoint line; E-center excess reads complement rank."
+  forbidden_imports:
+    - "observed quark masses"
+    - "fitted Yukawa values"
+    - "CKM/J target minimization"
+    - "nearest-rational selection"
+    - "measured-calibration fitting"
+current_result:
+  actual_current_surface_status: conditional-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  summary: "If a typed source-domain primitive selects one adjoint line and reads its complement rank, e_E=7/8, q_E=15/8, rho_E=21/4, and c_TE=-8/9 follow exactly. Rank 7 is unique among integer adjoint-projector ranks. The primitive is absent from the current source bank."
+files_touched:
+  - docs/QUARK_ROUTE2_E_CENTER_SINGLE_ADJOINT_LINE_SELECTOR_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py
+  - outputs/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-readout-endpoint/
+commands_run:
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py -> PASS=27 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py > outputs/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.txt"
+  - "python3 -m py_compile scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py -> pass"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py -> PASS=103 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py -> PASS=14 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py -> PASS=24 FAIL=0"
+  - "branch-local positive-overclaim scan over 16 changed files -> 0 hits"
+open_imports:
+  - "No current-source derivation of the single-adjoint-line selector."
+  - "No proof that Route-2 E-center readout should use complement rank rather than line rank/full adjoint/F_adj-as-excess."
+next_exact_action: "Commit, publish, and open the block37 PR. Then attack whether current source geometry can type the single adjoint line."
+pr_status: pending
+stop_condition: "None; campaign remains active after PR handoff."

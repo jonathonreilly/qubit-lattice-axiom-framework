@@ -53470,35 +53470,35 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "qcd_low_energy_running_bridge_note_2026-05-01"
+      "to": "hypercharge_identification_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
+      "to": "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16"
+      "to": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_q_delta_linking_relation_theorem_note_2026-04-20"
+      "to": "abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
-      "to": "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
+      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
+      "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18"
+      "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "qcd_low_energy_running_bridge_note_2026-05-01",
-        "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
-        "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
-        "koide_q_delta_linking_relation_theorem_note_2026-04-20",
-        "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
-        "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18"
+        "hypercharge_identification_note",
+        "abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18",
+        "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
+        "abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
+        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "48fe29de106d910aaee2e93f959de6dd32ce33bf4fa0f32aca9b2e1e4028d555",
+      "note_hash": "4e863ddc839336db46a4cb061a85bec3b5ab91c948a78aa735d611ed6c75dbb5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

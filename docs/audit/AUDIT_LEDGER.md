@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 201 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 939 |
+| **retained_bounded** | 935 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1682 |
+| unaudited | 1686 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -60,27 +60,27 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 12 |
-| `audited_clean` | 1350 |
+| `audited_clean` | 1346 |
 | `audited_conditional` | 7 |
 | `audited_decoration` | 51 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2008 |
+| `unaudited` | 2012 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1813 |
-| `decoration` | 55 |
+| `bounded_theorem` | 1811 |
+| `decoration` | 52 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 744 |
+| `positive_theorem` | 749 |
 
 | criticality | count |
 |---|---:|
-| `critical` | 568 |
-| `high` | 507 |
+| `critical` | 567 |
+| `high` | 508 |
 | `medium` | 929 |
 | `leaf` | 1470 |
 
@@ -102,29 +102,29 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
-| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 64.35 | `unaudited` | unaudited |
-| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
+| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 49.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1126 | 47.64 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 45.31 | `unaudited` | unaudited |
-| 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 44.18 | `audited_clean` | **retained_bounded** |
-| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 44.12 | `unaudited` | unaudited |
-| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 42.84 | `unaudited` | unaudited |
-| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
-| 13 | `native_gauge_closure_note` | positive_theorem | critical | 1400 | 40.45 | `audited_clean` | **retained** |
-| 14 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 39.29 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
+| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1400 | 40.45 | `audited_clean` | **retained** |
+| 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_clean` | **retained_bounded** |
+| 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
+| 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
+| 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 37.03 | `unaudited` | unaudited |
-| 18 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 35.82 | `unaudited` | unaudited |
-| 20 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
-| 21 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 35.53 | `unaudited` | unaudited |
-| 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 337 | 34.90 | `unaudited` | unaudited |
-| 23 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
-| 24 | `ckm_atlas_axiom_closure_note` | positive_theorem | critical | 775 | 33.10 | `unaudited` | unaudited |
-| 25 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `unaudited` | unaudited |
+| 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
+| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
+| 23 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
+| 24 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
+| 25 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | critical | 1005 | 30.97 | `audited_clean` | **retained** |
 
 
 ## Applied audits
@@ -238,13 +238,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
-| `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
-| `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `causal_propagating_field_live_packet_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `causal_source_placement_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `causal_propagating_field_live_packet_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_born_dense_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_born_largen_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2919,32 +2915,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner source constructs the HCB and JW operators directly on finite qubit tensor products and computes commutators, ranks, Gram spectra, transfer spectra, correlators, and ring spectra rather than printing hard-coded conclusions. An independent algebra check agrees with the load-bearing signs: open nearest-neighbor JW strings cancel bond-by-bond, while the closed boundary string remains as a loop datum; positivity of exp(-tau H) follows for each finite Hermitian H. The cited minimal-axiom authority is an accepted premise, and the note explicitly limits the no-go to the tested finite positivity route rather than claiming a global spin-statistics or graded-locality obstruction.
 - **auditor confidence:** high
 
-### `causal_cone_speed_map_note`
-
-- **Note:** [`CAUSAL_CONE_SPEED_MAP_NOTE.md`](../../docs/CAUSAL_CONE_SPEED_MAP_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite configured cone-speed sweep on the center grown family with drift/restore 0.20/0.70, seeds 0..5, source strength 5.0e-05, and c values 0.10 through 1.50, interpreted only as a proxy observable.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-101136-c6f729f5-causal_cone_speed_map_note-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The c-sweep is structured but not monotone across the whole range, with the largest response near c = 1.0, so c is a structured but noisy/non-monotone proxy knob on this family.  _(class `C`)_
-- **chain closes:** True — The primary runner actually constructs the configured grown family, computes the zero control, instantaneous reference, and dynamic cone fields for each c using the included helper source; the note's table matches the cached output. The conclusion is bounded to this finite proxy sweep and explicitly avoids a physical wave-speed claim.
-- **rationale:** The runner is not a print-only or hard-coded expected-value check: it computes the field values, propagates amplitudes, forms centroid shifts, and derives the non-monotone classification from the computed ratios. The cited authorities are retained_bounded and the source note keeps the claim within the configured center-family proxy setting, so their explicit boundaries do not block this bounded conclusion. The arithmetic and classification are internally consistent with the provided stdout: the ratios rise to c = 1.0 and then turn over, excluding a smooth monotone law for this scan.
-- **auditor confidence:** high
-
-### `causal_distance_tail_note`
-
-- **Note:** [`CAUSAL_DISTANCE_TAIL_NOTE.md`](../../docs/CAUSAL_DISTANCE_TAIL_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite configured runner result on three structured-growth families: zero-source controls vanish, broad causal-field variants fit steep high-R2 distance tails, and dynamic c=0.5 gives a much steeper mixed-toward tail on the declared b-grid.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-causal_distance_tail_note-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The broad field cases keep a clear but non-Newtonian distance-law tail on the tested families, while dynamic c=0.5 collapses the tail further and marks the configured boundary diagnostic.  _(class `C`)_
-- **chain closes:** True — The primary runner constructs the declared families, fields, propagations, centroid shifts, and log-log fits directly, and the supplied output matches the source note. The helper source used for growth and propagation is included; no external comparator or imported fitted exponent is used.
-- **rationale:** The code does not hard-code the reported alpha, R^2, or TOWARD counts; it computes them from the configured field rules over seeds, b-values, and families. Both cited authorities are retained_bounded, which is retained-grade for this bounded diagnostic, and the source note explicitly disclaims universal causal-field and physical wave-speed claims. The clean result is therefore only the finite replay statement, not a physical derivation of the causal carrier or a universal Newtonian-distance theorem.
-- **auditor confidence:** high
-
 ### `causal_escape_window_note`
 
 - **Note:** [`CAUSAL_ESCAPE_WINDOW_NOTE.md`](../../docs/CAUSAL_ESCAPE_WINDOW_NOTE.md)
@@ -2970,30 +2940,17 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cached runner output matches the note's null-control values, family rows, and ratio spreads, and the primary runner computes them from the helper implementation rather than hard-coding the reported values. The retained-bounded one-hop helper note is sufficient as an algorithm-source dependency for this bounded replay because the source note does not claim physical carrier, metric, threshold, or portability-theorem closure.
 - **rationale:** The bounded claim closes exactly as a finite diagnostic: the runner constructs the three configured grown families, selects source anchors, computes instantaneous/forward/dynamic fields, propagates amplitudes, and measures detector-centroid shifts against the free baseline. The note keeps the conclusion at the observed exact-null survival and family-split ratios, and explicitly excludes cross-family portability, field-theory derivation, and framework selection of the carrier/metric/threshold. Residual boundary: any future claim that the carrier, readout, metric, threshold, or portability law is physically derived would require a separate retained theorem.
 
-### `causal_field_reconciliation_note`
-
-- **Note:** [`CAUSAL_FIELD_RECONCILIATION_NOTE.md`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Audited only the bounded fixed-anchor cross-family replay diagnostic: exact-null survives while configured forward-only and dynamic-cone ratios split across the three grown families; the archived 0.45 center-family result and source-placement-cause theorem are out of scope.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-023644-3b04cce6-causal_field_reconciliation_note-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** The low-SNR cross-family replay is trustworthy only as a diagnosis of the fixed-anchor replay harness boundary, not as a refutation of the archived center-family causal-field result.  _(class `C`)_
-- **chain closes:** True — The supplied runner and helper source actually build the three configured families, select the fixed source anchor, compute the field cases, and produce the cited centroid-shift ratios. The narrowed conclusion follows from the retained_bounded live packet and portability diagnostic without asserting the stale archived 0.45 observable.
-- **rationale:** The primary runner is not just printing constants: it computes the configured fixed-anchor replay through the included growth, propagation, field, and centroid routines. The output matches the cited family rows and supports the bounded diagnostic that the ratios split across families while the zero control remains exact. Both one-hop cited authorities are marked retained_bounded in the restricted packet, which is retained-grade for this bounded theorem scope. This verdict does not validate the archived 0.45 table or any broader physical field-speed claim.
-- **auditor confidence:** high
-
 ### `causal_propagating_field_live_packet_note_2026-06-05`
 
 - **Note:** [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** Finite replay of scripts/causal_propagating_field.py for drift=0.20, restore=0.70, seeds 0-5, source_layer=8, strengths 1e-5/5e-5/1e-4, and zero/instantaneous/forward/dynamic c=1.0/c=0.5 field cases.
+- **claim_scope:** Finite configured replay for drift=0.20, restore=0.70, seeds 0-5, source layer 8, strengths 1e-5/5e-5/1e-4, and zero/instantaneous/forward-only/dynamic c=1.0/c=0.5 field cases.
 - **audit_status:** ~~audited_clean~~
 - **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260605-200838-d0d78f680b-causal_propagating_field_liv`  (codex-gpt-5.5; independence=cross_family)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-causal_propagating_field_live_packet_note_2026-06-05-reaudit`  (codex-gpt-5.5; independence=fresh_context)
 - **load-bearing step:** In this configured center-family runner, finite cone fields produce stable strength-independent proxy ratios, and the archived 0.45 dynamic row is stale.  _(class `C`)_
-- **chain closes:** True — The included primary and helper sources compute the seeded geometry, field masks, propagation amplitudes, detector centroids, and ratios from configured constants rather than printing a preloaded table. An independent reimplementation of the displayed formulas reproduces the runner table to the printed precision within the bounded finite scope.
-- **rationale:** The runner is not a definition substitution or hard-coded numerical match: it constructs the finite families, applies the field definitions, propagates amplitudes, and measures centroid shifts. The cached stdout matches the source note, and an independent formula-level recomputation reproduces the means, standard-error convention, strength scaling, and ratios. The note explicitly excludes physical wave-speed, carrier, retarded-field, geometry-independence, and portability claims, so the audited clean result is only the configured finite replay.
+- **chain closes:** True — Within the declared configured-family scope, the runner constructs the structured-growth family, computes the field cases, propagates amplitudes, and measures centroid ratio readouts. The current live ratios are computed rather than imported or hard-coded; the archived 0.45 value is used only as a rejected stale comparator.
+- **rationale:** The primary runner and helper source are included and the load-bearing path genuinely computes the finite replay from the configured growth, field, propagation, and centroid routines. The stdout values match the note's narrowed safe read, and the code does not claim a physical wave speed, derived carrier, self-consistent retarded field, or cross-family portability law. The conclusion therefore closes only as a bounded configured-runner fact, not as the archived 0.63/0.45 positive table or a broader physics theorem.
 - **auditor confidence:** high
 
 ### `causal_propagating_field_note`
@@ -3012,19 +2969,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `runner_output_empty`
   - `archived_session_log_or_named_numeric_output_missing`
   - `seed_strength_and_geometry_independence_sweeps_not_reproducible`
-- **auditor confidence:** high
-
-### `causal_source_placement_robustness_note`
-
-- **Note:** [`CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md`](../../docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded finite robustness diagnostic for the declared three-family, three-placement causal-field replay using the supplied runner, helper implementation, and cached output.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-causal_source_placement_robustness_note-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Family-aware source placement changes the measured causal ratios, but it does not restore a clean portable causal-field signal across all three families.  _(class `C`)_
-- **chain closes:** True — The primary runner and helper source compute the declared source selectors, fields, propagation, detector-centroid shifts, zero controls, and placement-ratio table rather than hard-coding the conclusion. The conclusion is limited to the configured finite replay and does not claim a physical field law or cross-family portability theorem.
-- **rationale:** The cached runner output matches the source note's exact-zero control and placement comparison table, and the source code computes the relevant quantities through the supplied growth, propagation, and centroid routines. The cited authorities are supplied as retained_bounded and are used only to frame the bounded causal-field replay and fixed-anchor boundary, not to import the disclaimed archived 0.45 result or a portability law. Within that bounded scope, the computed ratios plainly vary by family and placement, so the stated deeper placement-sensitive boundary follows.
 - **auditor confidence:** high
 
 ### `central_band_born_dense_sweep_note`

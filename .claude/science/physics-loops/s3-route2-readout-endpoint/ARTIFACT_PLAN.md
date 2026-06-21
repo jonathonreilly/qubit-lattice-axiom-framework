@@ -6,8 +6,8 @@
 - [x] Capture runner output under `outputs/`.
 - [x] Add a source note with bounded status and explicit route-pruning scope.
 - [x] Check overclaim wording and status firewall.
-- [ ] Commit and publish branch.
-- [ ] Open PR.
+- [x] Commit and publish branch.
+- [x] Open PR.
 
 ## Next Block
 

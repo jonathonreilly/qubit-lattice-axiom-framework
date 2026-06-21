@@ -51,5 +51,11 @@ open_imports:
   - "No source-domain rule or stronger readout-map primitive supplied."
   - "Finite p-grid/N-grid only; not a theorem about all radius paths."
 next_exact_action: "Commit, publish the block36 branch, and open a PR. Then pivot to a direct typed E-center source/readout selector attempt."
-pr_status: pending
+pr_status:
+  number: 4566
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4566"
+  title: "[physics-loop] s3-route2-readout-endpoint block36 bounded-support"
+  head: physics-loop/s3-route2-readout-endpoint-block36-20260621
+  base: main
+  state: OPEN
 stop_condition: "None; campaign remains active after PR handoff."

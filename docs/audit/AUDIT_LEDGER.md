@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 959 |
+| **retained_bounded** | 960 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1612 |
+| unaudited | 1611 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1395 |
+| `audited_clean` | 1396 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1938 |
+| `unaudited` | 1937 |
 
 | claim_type | count |
 |---|---:|
@@ -771,6 +771,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_factor_split_does_not_force_carrier_value_bridge_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_faithfulness_rotation_scalar_excluded_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_fisher_rao_spherical_reorganization_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_full_lattice_schur_inheritance_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
@@ -10839,6 +10840,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With J_i = σ_i/2 ≠ 0, K_i = 0 makes [K_i,K_j] = 0 while the so(3,1) or so(4) bracket requires [K_i,K_j] = ± i ε_ijk J_k, so K=0 is not a completion.  _(class `A`)_
 - **chain closes:** True — The retained merger supplies the operator-frame spatial rotation generators J_i=σ_i/2, and the Lie-bracket contradiction for K=0 is immediate. The chain does not close full matter faithfulness; the missing step is the matter-field-index attachment bridge, which the note explicitly disclaims.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: for any off-diagonal pair, ε_ijk J_k is nonzero, so K=0 cannot satisfy either sign of the [K,K] bracket. An independent algebra check also gives the listed same-carrier completions K_i=aJ_i with a^2=-1 for so(3,1) and a^2=+1 for so(4). The runner's section E uses hard-coded scope assertions, so those are not treated as proof; the clean verdict rests on the bracket algebra and the cited operator-frame merger only.
+- **auditor confidence:** high
+
+### `koide_fisher_rao_spherical_reorganization_note_2026-06-01`
+
+- **Note:** [`KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md`](../../docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the Fisher-Rao square-root mass sphere coordinate identity, the Brannen phase as the corresponding spherical azimuth, and the bounded metric-only demarcation that Fisher-Rao geometry does not select the longitude value 2/9; PDG masses are comparator data only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_fisher_rao_spherical_reorganization_note_2026-06-01-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The sqrt-mass spherical identity cos^2(theta_p) = (sum_k sqrt(m_k))^2/(3 sum_k m_k) = 1/(3Q), together with the round Fisher-Rao metric g_phi_phi = sin^2(theta) being independent of phi, shows that Q fixes the polar angle while the metric leaves the azimuth as a Killing direction.  _(class `A`)_
+- **chain closes:** True — The polar identity is direct algebra from the normalized sqrt-mass vector and the democratic axis, and the azimuthal-isometry claim follows from the round sphere metric. The PDG proximity, drift, and shifted-tau checks are non-load-bearing comparators, not premises for the theorem.
+- **rationale:** The bounded claim closes as an algebraic and spherical-geometry reorganization: the runner source symbolically checks the polar identity and the phi-independence of the Fisher-Rao metric, while the PDG calculations are clearly marked as comparator/drift checks. The no-go boundary is narrow, only excluding metric-alone longitude selection, and the note explicitly leaves non-isometric source functionals open. The cited authorities are retained-grade for the limited roles consumed here, and no open physical mass or radian bridge is imported as a derivation premise.
 - **auditor confidence:** high
 
 ### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`

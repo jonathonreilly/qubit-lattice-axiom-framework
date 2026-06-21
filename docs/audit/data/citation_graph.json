@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18"
     },
     {
@@ -53483,6 +53479,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30"
+      "to": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+        "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
         "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "distance_law_definitive_note",
-        "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30"
+        "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9d1155ba9c8ca3557b7303804f6b91f5caa9b3c3432e53fd1e4fcca0d5795d6c",
+      "note_hash": "dae18a9afc52689154835fba68a873a4c8cbb5b20a4b9a0f2fdc09d8c1f297ed",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

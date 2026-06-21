@@ -1,18 +1,18 @@
 {
   "bucket": "flow_or_thermal_stability",
-  "generated_on": "2026-06-17",
+  "generated_on": "2026-06-20",
   "lane_counts": {
     "bounded_obstruction_or_no_selection": 21,
-    "flow_or_records_stable_feature": 10,
+    "flow_or_records_stable_feature": 9,
     "generation_or_koide_stable_feature": 5,
-    "generic_stable_feature": 27,
+    "generic_stable_feature": 31,
     "thermal_or_score_stable_feature": 25
   },
   "ledger_path": "docs/audit/data/audit_ledger.json",
-  "ledger_sha256": "49f667c79e1bbfda8c4bc8e5b3568b63e6ae3d6bccaeef7ac2e21ecadf2e6f04",
+  "ledger_sha256": "2ac5344278b0e37ee6419068aa1e0588600fbc98d8ed55d56650fb4b0e555b83",
   "ledger_sha256_unchanged": true,
   "parent_runner": "scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py",
-  "row_count": 88,
+  "row_count": 91,
   "row_fields": [
     "claim_id",
     "audit_status",
@@ -57,15 +57,6 @@
       "claim_type": "bounded_theorem",
       "note_path": "docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md",
       "runner_path": "scripts/flavor_find_J_round1_jcs_measure_neutral_2026_06_02.py",
-      "stable_setting_lane": "bounded_obstruction_or_no_selection"
-    },
-    {
-      "claim_id": "flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15",
-      "audit_status": "audited_conditional",
-      "effective_status": "audited_conditional",
-      "claim_type": "no_go",
-      "note_path": "docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md",
-      "runner_path": "scripts/frontier_max_record_entropy_sector_blind_2026_06_15.py",
       "stable_setting_lane": "bounded_obstruction_or_no_selection"
     },
     {
@@ -177,6 +168,15 @@
       "stable_setting_lane": "bounded_obstruction_or_no_selection"
     },
     {
+      "claim_id": "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md",
+      "runner_path": "scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py",
+      "stable_setting_lane": "bounded_obstruction_or_no_selection"
+    },
+    {
       "claim_id": "koide_occupancy_kernel_coefficient_not_fixed_by_retained_corner_measure_bounded_note_2026-06-12",
       "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
@@ -249,15 +249,6 @@
       "stable_setting_lane": "flow_or_records_stable_feature"
     },
     {
-      "claim_id": "gate_b_dynamics_note",
-      "audit_status": "audited_conditional",
-      "effective_status": "audited_conditional",
-      "claim_type": "open_gate",
-      "note_path": "docs/GATE_B_DYNAMICS_NOTE.md",
-      "runner_path": "scripts/gate_b_connectivity_tolerance.py",
-      "stable_setting_lane": "flow_or_records_stable_feature"
-    },
-    {
       "claim_id": "koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02",
       "audit_status": "unaudited",
       "effective_status": "unaudited",
@@ -285,12 +276,12 @@
       "stable_setting_lane": "flow_or_records_stable_feature"
     },
     {
-      "claim_id": "record_unbounded_finite_additivity_schema_2026-06-06",
-      "audit_status": "audited_conditional",
-      "effective_status": "audited_conditional",
+      "claim_id": "theta_emergent_q_weighting_reality_rg_stable_bounded_theorem_note_2026-06-13",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
       "claim_type": "bounded_theorem",
-      "note_path": "docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md",
-      "runner_path": "scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py",
+      "note_path": "docs/THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STABLE_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+      "runner_path": "scripts/frontier_theta_emergent_q_cp_rg_stability_2026_06_13.py",
       "stable_setting_lane": "flow_or_records_stable_feature"
     },
     {
@@ -537,6 +528,15 @@
       "stable_setting_lane": "generic_stable_feature"
     },
     {
+      "claim_id": "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
+      "audit_status": "audited_renaming",
+      "effective_status": "audited_renaming",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md",
+      "runner_path": null,
+      "stable_setting_lane": "generic_stable_feature"
+    },
+    {
       "claim_id": "record_dominated_pointer_sector_transport_generator_vacuous_link_bounded_theorem_note_2026-06-09",
       "audit_status": "unaudited",
       "effective_status": "unaudited",
@@ -555,12 +555,39 @@
       "stable_setting_lane": "generic_stable_feature"
     },
     {
+      "claim_id": "record_formation_to_kraus_isometry_bridge_2026-06-06",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md",
+      "runner_path": "scripts/frontier_record_formation_to_kraus_isometry_bridge_2026_06_06.py",
+      "stable_setting_lane": "generic_stable_feature"
+    },
+    {
+      "claim_id": "record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/RECORD_POINTER_CONTROLLED_COUPLING_FINITE_EXAMPLE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
+      "runner_path": "scripts/record_pointer_controlled_coupling_finite_example_2026_06_15.py",
+      "stable_setting_lane": "generic_stable_feature"
+    },
+    {
       "claim_id": "record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15",
       "audit_status": "audited_clean",
       "effective_status": "retained_bounded",
       "claim_type": "bounded_theorem",
       "note_path": "docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md",
       "runner_path": "scripts/frontier_record_preservation_conserves_within_sector_measure_2026_06_15.py",
+      "stable_setting_lane": "generic_stable_feature"
+    },
+    {
+      "claim_id": "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md",
+      "runner_path": "scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py",
       "stable_setting_lane": "generic_stable_feature"
     },
     {
@@ -633,6 +660,15 @@
       "claim_type": "bounded_theorem",
       "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md",
       "runner_path": "scripts/frontier_dm_full_closure_same_surface_converged_thermal_selector_support.py",
+      "stable_setting_lane": "thermal_or_score_stable_feature"
+    },
+    {
+      "claim_id": "emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08",
+      "audit_status": "unaudited",
+      "effective_status": "unaudited",
+      "claim_type": "bounded_theorem",
+      "note_path": "docs/EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "runner_path": "scripts/frontier_emergent_gauge_weight_heat_kernel_clt_fixed_point_2026_06_08.py",
       "stable_setting_lane": "thermal_or_score_stable_feature"
     },
     {
@@ -726,15 +762,6 @@
       "stable_setting_lane": "thermal_or_score_stable_feature"
     },
     {
-      "claim_id": "koide_q_minimal_scale_free_selector_note_2026-04-22",
-      "audit_status": "audited_clean",
-      "effective_status": "retained_bounded",
-      "claim_type": "bounded_theorem",
-      "note_path": "docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md",
-      "runner_path": "scripts/frontier_koide_q_minimal_scale_free_selector.py",
-      "stable_setting_lane": "thermal_or_score_stable_feature"
-    },
-    {
       "claim_id": "koide_r_half_durability_stationarity_conditional_chain_bounded_theorem_note_2026-06-11",
       "audit_status": "unaudited",
       "effective_status": "unaudited",
@@ -762,12 +789,12 @@
       "stable_setting_lane": "thermal_or_score_stable_feature"
     },
     {
-      "claim_id": "post_record_measure_weight_normalization_subdivision_2026-06-06",
-      "audit_status": "audited_conditional",
-      "effective_status": "audited_conditional",
+      "claim_id": "post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
       "claim_type": "bounded_theorem",
-      "note_path": "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
-      "runner_path": "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py",
+      "note_path": "docs/POST_RECORD_FINITE_SUPPLIED_WEIGHT_NORMALIZATION_LEMMA_NOTE_2026-06-16.md",
+      "runner_path": "scripts/frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16.py",
       "stable_setting_lane": "thermal_or_score_stable_feature"
     },
     {
@@ -799,8 +826,8 @@
     },
     {
       "claim_id": "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
-      "audit_status": "unaudited",
-      "effective_status": "unaudited",
+      "audit_status": "audited_clean",
+      "effective_status": "retained_bounded",
       "claim_type": "bounded_theorem",
       "note_path": "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md",
       "runner_path": "scripts/frontier_wilson_bz_corner_hamming_staircase_closed_form_certificate_2026_05_09.py",

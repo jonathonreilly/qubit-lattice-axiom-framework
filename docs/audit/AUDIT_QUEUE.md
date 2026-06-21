@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | unaudited | critical | 287 | 10.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py` |
+| 1 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | critical | 287 | 10.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py` |
 | 2 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | critical | 269 | 12.58 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_aps_block_by_block_forcing.py` |
 | 3 | `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | unaudited | critical | 269 | 9.08 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py` |
 | 4 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | unaudited | critical | 260 | 14.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py` |

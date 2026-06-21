@@ -30,3 +30,9 @@ TOTAL: PASS=14, FAIL=0
 ```
 
 Disposition before diff/overclaim gates: `local_gates_passed`.
+
+PR identity-only check:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-nonblind-e-center-lift-block51-20260621","number":4581,"state":"OPEN","title":"[physics-loop] s3-route2-nonblind-e-center-lift block51 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4581"}
+```

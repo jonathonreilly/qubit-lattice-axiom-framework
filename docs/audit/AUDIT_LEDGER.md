@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 971 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1591 |
+| unaudited | 1590 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 29 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1409 |
-| `audited_conditional` | 28 |
+| `audited_conditional` | 29 |
 | `audited_decoration` | 58 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1917 |
+| `unaudited` | 1916 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1030 | 54.01 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 49.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 47.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 45.31 | `unaudited` | unaudited |
@@ -117,10 +117,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 39.29 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 760 | 38.07 | `audited_clean` | **retained_no_go** |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
 | 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 35.82 | `audited_clean` | **retained_bounded** |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1099 | 35.60 | `audited_clean` | **retained_bounded** |
+| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
@@ -1544,6 +1544,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2022,6 +2023,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** From the definitions alpha_LM := alpha_bare/u_0 and alpha_s(v) := alpha_bare/u_0^2, the stated identities follow by direct algebra over positive reals.  _(class `A`)_
 - **chain closes:** True — The conclusions are algebraic consequences of the two displayed definitions with positivity supplying division, square-root uniqueness, and logarithm domains. No cited authority or hidden numerical input is needed for the audited abstract scope.
 - **rationale:** Independent symbolic checking confirms T1-T6: the vertex-power identities, geometric-mean/log form, constant-ratio chain, u_0=1 boundary, unique positive inverse, and P^(1/4) substitution all reduce to zero residuals under the stated positivity assumptions. The runner source performs genuine symbolic and numerical algebra checks rather than hard-coding a contested physical value, and its documentary scope guards do not enter the load-bearing proof. The verdict is clean only for the narrow abstract algebraic theorem, not for any parent alpha_s(M_Z), plaquette, Wilson-action, or bare-normalization claim.
+- **auditor confidence:** high
+
+### `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18`
+
+- **Note:** [`ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md`](../../docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact SU(3) substitution and coupling-convention normalization of the stated universal one- and two-loop QCD beta-kernel formulas, excluding beta_2, beta_3, threshold matching, and any physical alpha_s(M_Z) running claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note asserts the universal QCD coefficients beta_0(n_f) = (11/3) C_A - (4/3) T_F n_f and beta_1(n_f) = (34/3) C_A^2 - 4 C_F T_F n_f - (20/3) C_A T_F n_f.  _(class `A`)_
+- **chain closes:** False — The runner exactly checks the SU(3) algebra, active-flavor values, convention conversions, and falsifiers after the beta_0 and beta_1 formulas have already been inserted. The restricted packet gives no cited authority or first-principles derivation for those universal QCD coefficient formulas themselves.
+- **rationale:** Issue: the load-bearing universal beta_0 and beta_1 QCD coefficient formulas are asserted directly rather than derived from an axiom or supplied by a retained one-hop authority. Why this blocks: the runner's successful checks are exact algebra and source-boundary verification, not a first-principles computation of the loop coefficients. Repair target: add a retained derivation or explicit retained authority for the universal one- and two-loop QCD beta coefficients on the declared SU(3), T_F = 1/2 surface. Claim boundary until fixed: the packet supports exact normalization and substitution of the stated formulas, not native derivation of the universal beta-kernel.
 - **auditor confidence:** high
 
 ### `alt_connectivity_family_basin_note`

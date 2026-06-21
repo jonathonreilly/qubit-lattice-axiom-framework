@@ -45,6 +45,13 @@ verification:
   exact_time_parent: "PASS=8 FAIL=0"
   py_compile: pass
 review_verdict: not_run_by_user_constraint
-pr_status: pending
-next_exact_action: "commit block27, push the branch, open an identity-verified PR, then refresh the opportunity queue"
+pr_status: open
+pr_identity:
+  number: 4556
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4556
+  title: "[physics-loop] s3-route2-readout-endpoint block27 exact-support"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block27-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "choose between a physical/canonical gate selector search and an independent non-Route-2 scalar route without refreshing existing PRs or checking conflicts"
 stop_condition: null

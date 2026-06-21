@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block27-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4556
+```
+
+Identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block27-20260621","number":4556,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block27 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4556"}
+```
+
 Block27 delivers a direct-consumer readout ambiguity packet for the S3-time
 Route-2 gate. It proves that immediate consumers split into:
 
@@ -55,6 +67,6 @@ physical/canonical gate readout selector
 
 ## Next Action
 
-Open the block27 PR, verify only identity fields, then choose between a
-physical/canonical gate selector search and an independent non-Route-2 scalar
-route.
+Choose between a physical/canonical gate selector search and an independent
+non-Route-2 scalar route. Do not refresh existing PRs and do not check PR
+conflicts.

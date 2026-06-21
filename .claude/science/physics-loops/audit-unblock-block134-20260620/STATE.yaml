@@ -4,7 +4,8 @@ block: 134
 mode: physics-loop
 branch: physics-loop/audit-unblock-block134-20260620
 base: physics-loop/audit-unblock-block133-20260620
-base_commit: 5e77b6d65
+base_commit: 45dfcfb441bd93f0f6ed60d364f1e38cad9a3b1c
+rebuilt_at: "2026-06-21 00:41:53 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "audit packet dependency map refresh and null-runner canonicalization"
@@ -21,15 +22,15 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "Refreshed audit_packet_script_deps.json/cache after latest main and canonicalization fixes; null runner paths now remain no-runner rows instead of becoming missing file 'None'."
+current_result: "Refreshed audit_packet_script_deps.json/cache after the refreshed stack and canonicalization fixes; null runner paths now remain no-runner rows instead of becoming missing file 'None'."
 packet_deps_summary:
-  total_claims_in_ledger: 3474
-  pending_audits_in_queue: 1689
-  claims_with_runner_path: 3242
-  claims_with_no_runner_declared: 232
+  total_claims_in_ledger: 3445
+  pending_audits_in_queue: 1535
+  claims_with_runner_path: 3168
+  claims_with_no_runner_declared: 277
   claims_whose_runner_file_is_missing: 0
-  pending_claims_with_helper_imports: 390
-  pending_claims_with_runner: 1614
+  pending_claims_with_helper_imports: 355
+  pending_claims_with_runner: 1421
 files_touched:
   - scripts/codex_audit_runner.py
   - scripts/audit_packet_script_deps.py
@@ -44,5 +45,5 @@ review_disposition: pass
 verification_status: pass
 pr_status: open
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4504
-next_exact_action: "Monitor PR #4504 audit-lane check, then continue to the next audit-unblock target."
+next_exact_action: "Commit refreshed packet-deps output, force-push PR #4504, update PR body, then continue to the next audit-unblock target."
 stop_condition: "Block134 PR opened and verified; campaign continues to the next audit-unblock target while runtime remains."

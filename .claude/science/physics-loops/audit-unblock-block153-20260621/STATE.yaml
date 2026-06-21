@@ -1,0 +1,58 @@
+loop: audit-unblock-block153-20260621
+campaign: physics-loop audit-unblock
+mode: campaign
+block: 153
+target_claim_id: diamond_sensor_protocol_note
+target_note: docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md
+branch: physics-loop/audit-unblock-block153-20260621
+base: origin/main
+base_oid: 6e774082a3dc5a4cc9d9f03cee98e8297330c8ad
+actual_current_surface_status: bounded-support
+ledger_claim_type: bounded_theorem
+ledger_audit_status: unaudited
+ledger_effective_status: unaudited
+criticality: medium
+runner: scripts/diamond_sensor_protocol_bounded_probe.py
+runner_cache: logs/runner-cache/diamond_sensor_protocol_bounded_probe.txt
+runner_result: "SUMMARY: PASS=17 FAIL=0"
+runner_classification:
+  dominant_class: B
+  assert_count: 1
+  counts:
+    A: 0
+    B: 1
+    C: 0
+    D: 0
+  decoration_candidate: true
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md
+  - scripts/diamond_sensor_protocol_bounded_probe.py
+  - logs/runner-cache/diamond_sensor_protocol_bounded_probe.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/runner_classification.json
+  - .claude/science/physics-loops/audit-unblock-block153-20260621/
+commands_run:
+  - "python3 scripts/diamond_sensor_protocol_bounded_probe.py"
+  - "python3 scripts/diamond_sensor_protocol_probe.py"
+  - "python3 scripts/diamond_ideal_lockin_detector_theorem.py"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/diamond_sensor_protocol_bounded_probe.py --push-mode none --allow-non-main"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/diamond_sensor_protocol_bounded_probe.py --check-only --push-mode none --allow-non-main"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+  - "python3 -m py_compile scripts/diamond_sensor_protocol_bounded_probe.py scripts/diamond_sensor_protocol_probe.py scripts/diamond_ideal_lockin_detector_theorem.py docs/audit/scripts/build_citation_graph.py docs/audit/scripts/seed_audit_ledger.py docs/audit/scripts/classify_runner_passes.py"
+  - "git diff --check"
+review_loop_disposition: pass
+review_loop_note: "Local review only: bounded Diamond protocol row gets a current wrapper runner; row remains unaudited/effective unaudited."
+lock_mode: branch-local degraded
+next_exact_action: "Commit, push branch, open PR, then stop if runtime is exhausted."
+stop_condition: "Runtime exhausted or no viable source-side unblock target remains after queue refresh."

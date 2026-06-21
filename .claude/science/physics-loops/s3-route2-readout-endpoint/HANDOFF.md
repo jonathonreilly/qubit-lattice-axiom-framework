@@ -18,6 +18,25 @@ This prunes only endpoint-blind/separable finite-box renormalization. It does no
 
 Do not push to main. Do not refresh previous PR branches to main. Do not check conflict or mergeability status. The reviewer will cherry-pick science. Verify only PR identity fields after PR creation.
 
+## PR
+
+Opened PR #4535:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4535
+```
+
+Identity-only verification:
+
+```text
+number=4535
+url=https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4535
+title=[physics-loop] s3-route2-readout-endpoint block06 no-go
+headRefName=physics-loop/s3-route2-readout-endpoint-block06-20260621
+baseRefName=main
+state=OPEN
+```
+
 ## Next Exact Action
 
-Run checks, commit, push this branch, create one PR, verify identity fields only, then continue the campaign to the next ranked science target if runtime remains.
+Continue the campaign to the next ranked science target if runtime remains. Best next target: derive a nonseparable E/T center-shell covariance primitive; fallback to the direct `Theta_R -> Lambda_R` consumer ambiguity packet.

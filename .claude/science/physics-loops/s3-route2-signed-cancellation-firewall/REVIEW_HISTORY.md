@@ -17,3 +17,4 @@ Pre-PR self-firewall status:
 - Audit verdicts were not run or applied.
 - PR mergeability and conflict checks were not run.
 - Staged diff and overclaim scans passed before commit.
+- PR #4579 identity-only verification passed after creation.

@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 205 |
-| **retained_no_go** | 205 |
+| **retained_no_go** | 206 |
 | **retained_bounded** | 935 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1671 |
-| audit_in_progress | 2 |
+| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -62,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 1357 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 1358 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 22 |
@@ -135,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -688,6 +687,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -9392,6 +9392,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** On the neutral one-Higgs surface, q(H(v)) = 2 H^dagger H = v^2, so any positive quartic D=4 density rho_* = A(L) q(H(v(L)))^2 is exactly rho_* = A(L) v(L)^4.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope, the EW authority supplies the neutral Higgs coordinate H(v), and the D4 bridge supplies the fixed-density fourth-root algebra. Substituting q(H(v))=v^2 gives rho_*=A v^4 and v(L)/v_ref=(A_ref/A(L))^(1/4) without importing an observed EW value.
 - **rationale:** The load-bearing step is a direct algebraic identity over the cited retained-grade EW surface and the retained-grade D4 density readout bridge. The runner performs sample rational checks of q=v^2, rho=A v^4, inverse placement, D4-vs-D16 distinction, and EW mass-ratio compatibility, plus source-boundary text checks; it does not use PDG values or fitted targets. The note explicitly limits itself to the supplied positive quartic density and does not claim endpoint selection, hierarchy-to-physical-Higgs-density identification, or an absolute EW scale.
+- **auditor confidence:** high
+
+### `hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18`
+
+- **Note:** [`HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md`](../../docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-local no-go that fixed D=4 fixed-density coefficient-to-scale algebra, even with the EW coordinate bridge for a supplied quartic density, cannot by itself select a physical endpoint coefficient surface or an absolute electroweak scale.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For any lambda > 0, rho_star -> lambda^4 rho_star and v_i -> lambda v_i leave all endpoint ratios unchanged, while multiple positive endpoint coefficient surfaces remain compatible with the same fixed-density algebra and no predicate selects the physical Higgs-density endpoint.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from exact positive-real algebra: absolute density rescaling preserves all endpoint ratios, and the supplied fixed-density map admits multiple positive endpoint coefficients without a selector predicate. No observed EW value, fitted selector, or physical VEV identification is used.
+- **rationale:** The proof is an algebraic invariance and non-selection result over the cited fixed-density readout, not a positive physical identification. The D4 bridge is retained-grade via decoration-under-retained status, and the EW bridge is retained_bounded; the no-go uses their explicit boundary rather than importing an open selector as a premise. The runner mixes cross-note boundary checks with exact algebraic consistency checks and uses no external comparator. The N1-N8 no-go gate is present and the claim remains narrow: it blocks only reuse of fixed-density algebra alone, not future independent selector theorems.
 - **auditor confidence:** high
 
 ### `hierarchy_formula_honest_status_note_2026-05-10`

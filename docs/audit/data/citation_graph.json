@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
+      "to": "quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18"
+      "to": "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
+        "quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18",
         "post_record_selection_rule_target_vector_firewall_2026-06-06",
         "post_record_supplied_kernel_selection_rule_interface_2026-06-06",
         "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
         "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
         "teleportation_resource_from_poisson_note",
         "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
-        "quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18"
+        "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d3e98e45cb5df8677c3008c1d011125e08d951bdbf0cb0cc4635c74323c9813c",
+      "note_hash": "6cb8b8d5e9e58e5a0d1c55f452885f074365c3c3a314a1781364318b58812cce",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

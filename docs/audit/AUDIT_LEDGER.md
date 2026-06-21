@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 204 |
+| **retained** | 205 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1666 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 21 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 11 |
-| `audited_clean` | 1359 |
+| `audit_in_progress` | 10 |
+| `audited_clean` | 1360 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
@@ -137,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `hw1_second_order_return_shape_theorem_note` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -718,6 +716,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c1_a6_bilinear_active_block_support_boundary_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch_note_2026-04-29` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `i1_native_quadratic_static_source_normalization_bridge_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9775,6 +9774,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** selector route; no `eta`, `Omega_Lambda`, or `H_0` numerical claim.  _(class `B`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 1 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified B-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `hw1_second_order_return_shape_theorem_note`
+
+- **Note:** [`HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md`](../../docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact affine second-order Gamma_1 return on the specified hw=1 generation species block: weighted O0 plus T2 intermediate projectors produce diag(w_O0,w_a,w_b), with w_c absent; no charged-lepton weight values are audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-hw1_second_order_return_shape_theorem_note-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The single-projector identities P_T1 Gamma_1 P_O0 Gamma_1 P_T1 = diag(1,0,0), P_T1 Gamma_1 P_(1,1,0) Gamma_1 P_T1 = diag(0,1,0), P_T1 Gamma_1 P_(1,0,1) Gamma_1 P_T1 = diag(0,0,1), and P_T1 Gamma_1 P_(0,1,1) Gamma_1 P_T1 = 0, with linearity in the weights, give diag(w_O0,w_a,w_b).  _(class `A`)_
+- **chain closes:** True — On the supplied basis, Gamma_1 flips the first spatial bit, so each T1 species returns through exactly the stated intermediate projector and the fourth T2 state is not reached. The retained cited authorities supply the Gamma_1/T1 surface, and the runner independently constructs the 16x16 matrices supporting the projector identities.
+- **rationale:** The load-bearing identities are exact finite-dimensional algebra on the supplied Gamma_1 bit-flip and spatial projectors. Both one-hop authorities are retained-grade for the scoped carrier/generation surface, and the runner source actually constructs the Clifford/projector matrices rather than printing constants. The runner's UNDERDETERMINED hierarchy verdict is consistent with the note's boundary because the note does not claim to derive the three weight values.
 - **auditor confidence:** high
 
 ### `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 313,
+    "critical": 312,
     "high": 302,
     "leaf": 576,
     "medium": 486
@@ -136,31 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "hw1_second_order_return_shape_theorem_note",
-      "claim_scope": "The finite-dimensional axis-1 Cl(3) projector identity for the weighted second-order return on the hw=1 species block; no derivation of the weights or charged-lepton mass values was audited.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
-        "three_generation_observable_theorem_note"
-      ],
-      "direct_in_degree": 14,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.539,
-      "note_path": "docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_hw1_second_order_return_shape_theorem.py",
-      "transitive_descendants": 371
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -33789,6 +33764,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "hw1_second_order_return_shape_theorem_note",
+        "staggered_self_consistent_two_body_note_2026-04-11",
+        "wilson_two_body_open_refined_note_2026-04-11"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/interaction_asymmetry_delta_occupation_curvature_runner.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -37764,33 +37766,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": null,
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "hw1_second_order_return_shape_theorem_note",
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "wilson_two_body_open_refined_note_2026-04-11"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/interaction_asymmetry_delta_occupation_curvature_runner.py",
       "transitive_descendants": 1
     },
     {
@@ -50170,5 +50145,5 @@
     }
   ],
   "ready_count": 121,
-  "total_pending": 1677
+  "total_pending": 1676
 }

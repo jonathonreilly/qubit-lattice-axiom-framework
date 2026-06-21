@@ -12,9 +12,9 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1471 |
-| Retained-grade rows, including boxed decorations | 1405 |
-| Retained positive theorems | 204 |
+| Applied audit verdicts | 1472 |
+| Retained-grade rows, including boxed decorations | 1406 |
+| Retained positive theorems | 205 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 943 |
 | Boxed decorations under retained parents | 51 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1677 |
+| Total pending rows | 1676 |
 | Ready rows | 121 |
 | Cycle-break targets | 9 |
-| Critical pending | 313 |
+| Critical pending | 312 |
 | High pending | 302 |
 | Medium pending | 486 |
 | Leaf pending | 576 |
 
 Next ready rows by queue order:
 
-- [`hw1_second_order_return_shape_theorem_note`](../../docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md) - critical; audit_in_progress
 - [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`koide_q_delta_linking_relation_theorem_note_2026-04-20`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md) - critical; unaudited
 - [`staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23`](../../docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md) - critical; audit_in_progress
@@ -51,13 +50,14 @@ Next ready rows by queue order:
 - [`flavor_operator_realization_local_density_2026-05-31`](../../docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md) - critical; audit_in_progress
 - [`koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`flavor_asymmetry_2over9_forced_weight_2026-05-31`](../../docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md) - critical; audit_in_progress
+- [`koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **436**.
+- Non-retained-grade cited rows in publication tables: **435**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -66,7 +66,6 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | medium | `unaudited` | 95 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
-| critical | `audit_in_progress` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |
 

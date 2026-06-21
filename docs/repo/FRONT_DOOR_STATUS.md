@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1648 |
-| Retained-grade rows, including boxed decorations | 1515 |
+| Applied audit verdicts | 1649 |
+| Retained-grade rows, including boxed decorations | 1516 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
-| Retained bounded rows | 1019 |
+| Retained bounded rows | 1020 |
 | Boxed decorations under retained parents | 63 |
 | Open gates | 39 |
-| Unaudited rows | 1498 |
+| Unaudited rows | 1497 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 52 |
 | Audited renaming rows | 29 |
@@ -33,24 +33,23 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1500 |
-| Ready rows | 8 |
+| Total pending rows | 1499 |
+| Ready rows | 7 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 484 |
+| Leaf pending | 483 |
 
 Next ready rows by queue order:
 
-- [`staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18`](../../docs/STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md) - medium; unaudited
 - [`three_family_card_missing_distance_live_bridge_note_2026-06-18`](../../docs/THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md) - medium; unaudited
 - [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`unordered_mass_pdep_record_independence_no_go_note_2026-06-18`](../../docs/UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
-- [`yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25`](../../docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md) - leaf; unaudited
+- [`yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25`](../../docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -89,7 +88,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
-- `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
+- `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 63.347
 - `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008

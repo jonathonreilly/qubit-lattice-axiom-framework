@@ -103190,7 +103190,7 @@
         "qcd_low_energy_running_bridge_note_2026-05-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1efe6bea47865cf042a04f98f55a5f94806ddbe257a26882dddc14164b610a7c",
+      "note_hash": "03810eb3eb87ace3f5e6815a8fd834b3629e4ff5004a9f794372c2f555e03142",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -104038,9 +104038,9 @@
         "anomaly_forces_time_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cf60ffb63ea358865ec18175bbf234af338da9c5d328d912479a8e7244d1f9c9",
+      "note_hash": "6b0c4e4b610939e3dee41b9f47a89008b35627c4f654d3749f16f859acf085f1",
       "path": "docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_s3_time_tensorized_schur_primitive_downstream_fix.py",
       "title": "Route 2 Tensorized Schur/Dirichlet Primitive"
     },
     "s3_time_tensorized_schur_primitive_note_2026-05-17": {
@@ -118607,6 +118607,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

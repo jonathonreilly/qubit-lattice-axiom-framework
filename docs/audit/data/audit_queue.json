@@ -22376,7 +22376,7 @@
       "note_path": "docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/frontier_s3_time_tensorized_schur_primitive_downstream_fix.py",
       "transitive_descendants": 56
     },
     {

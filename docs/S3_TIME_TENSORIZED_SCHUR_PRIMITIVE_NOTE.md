@@ -5,6 +5,7 @@
 **Purpose:** build the smallest tensorized Schur/Dirichlet boundary primitive
 compatible with the current exact scalar Schur backbone and the existing
 bounded two-channel tensor prototype
+**Runner:** [`scripts/frontier_s3_time_tensorized_schur_primitive_downstream_fix.py`](../scripts/frontier_s3_time_tensorized_schur_primitive_downstream_fix.py)
 
 ## Verdict
 

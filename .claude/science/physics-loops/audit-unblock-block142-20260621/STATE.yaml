@@ -1,0 +1,22 @@
+loop: audit-unblock-block142-20260621
+branch: physics-loop/audit-unblock-block142-20260621
+base: origin/main
+base_commit: 699bbce1dca7b522db67f436a7c566e812ddfd35
+mode: campaign
+block: 142
+status: ready_for_pr
+actual_current_surface_status: open
+trace_class: methodology
+reachability_to_target: supports
+audit_worker_run: false
+apply_audit_run: false
+main_push: false
+review_loop_status: deferred_to_reviewer_lane_per_user_instruction
+target_claim_id: s3_time_tensorized_schur_primitive_note
+runner_registered: scripts/frontier_s3_time_tensorized_schur_primitive_downstream_fix.py
+runner_result: 38 PASS / 0 FAIL
+movement:
+  - adds parser-facing Runner metadata to the unaudited tensorized Schur primitive note
+  - regenerates graph, ledger, audit queue, ledger markdown, and runner classification
+  - refreshes the runner cache for the newly registered verifier
+next_exact_action: open PR for block142, then continue with another fresh source-side unblock target

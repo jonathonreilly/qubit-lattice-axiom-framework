@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 292,
-    "high": 300,
+    "high": 299,
     "leaf": 588,
     "medium": 491
   },
@@ -8467,30 +8467,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_mru_demotion_note_2026-04-20",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.407,
-      "note_path": "docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py",
-      "transitive_descendants": 239
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_q_readout_factorization_theorem_2026-04-22",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -8650,17 +8626,17 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
-      "load_bearing_score": 8.587,
+      "load_bearing_score": 9.109,
       "note_path": "docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_ckm_five_sixths_bridge_support.py",
-      "transitive_descendants": 67
+      "transitive_descendants": 68
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -50036,6 +50012,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 126,
-  "total_pending": 1671
+  "ready_count": 125,
+  "total_pending": 1670
 }

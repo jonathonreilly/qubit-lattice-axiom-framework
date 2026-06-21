@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1470 |
-| Retained-grade rows, including boxed decorations | 1402 |
+| Applied audit verdicts | 1468 |
+| Retained-grade rows, including boxed decorations | 1399 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 937 |
+| Retained bounded rows | 934 |
 | Boxed decorations under retained parents | 53 |
 | Open gates | 34 |
-| Unaudited rows | 1669 |
+| Unaudited rows | 1672 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 22 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1678 |
+| Total pending rows | 1680 |
 | Ready rows | 121 |
 | Cycle-break targets | 9 |
-| Critical pending | 308 |
+| Critical pending | 307 |
 | High pending | 302 |
-| Medium pending | 488 |
-| Leaf pending | 580 |
+| Medium pending | 490 |
+| Leaf pending | 581 |
 
 Next ready rows by queue order:
 
-- [`hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26`](../../docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`flavor_operator_realization_local_density_2026-05-31`](../../docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md) - critical; audit_in_progress
 - [`koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`flavor_asymmetry_2over9_forced_weight_2026-05-31`](../../docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`koide_aps_block_by_block_forcing_note_2026-04-21`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md) - critical; audit_in_progress
 - [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
+- [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -84,7 +84,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1700 descendants; score 159.732
+- `minimal_axioms` - critical; 1701 descendants; score 159.733
 - `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
 - `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347

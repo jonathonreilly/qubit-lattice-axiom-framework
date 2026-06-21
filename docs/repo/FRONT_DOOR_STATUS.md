@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1507 |
+| Applied audit verdicts | 1508 |
 | Retained-grade rows, including boxed decorations | 1417 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 944 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1639 |
+| Unaudited rows | 1638 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 17 |
+| Audited conditional rows | 18 |
 | Audited renaming rows | 27 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1641 |
-| Ready rows | 109 |
+| Total pending rows | 1640 |
+| Ready rows | 108 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 283 |
-| Medium pending | 478 |
+| High pending | 284 |
+| Medium pending | 476 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`u1_fermion_number_conservation_theorem_note_2026-05-02`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02`](../../docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md) - high; unaudited
 - [`gauge_factor_local_selector_normalizer_theorem_note_2026-06-18`](../../docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25`](../../docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md) - medium; unaudited
 - [`registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
-- [`alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02`](../../docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md) - medium; unaudited
+- [`observable_principle_p1_p2_from_qubit_trace_note_2026-05-20`](../../docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -63,16 +63,16 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 |---|---|---:|
 | critical | `unaudited` | 163 |
 | high | `unaudited` | 159 |
-| medium | `unaudited` | 93 |
-| high | `audited_conditional` | 4 |
+| medium | `unaudited` | 92 |
+| high | `audited_conditional` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
 | high | `audited_numerical_match` | 2 |
+| medium | `audited_conditional` | 2 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_numerical_match` | 1 |
-| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

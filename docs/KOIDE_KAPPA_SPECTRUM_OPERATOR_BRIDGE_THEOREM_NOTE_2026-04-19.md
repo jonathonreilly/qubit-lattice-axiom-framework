@@ -2,32 +2,36 @@
 
 **Date:** 2026-04-19
 **Lane:** Charged-lepton Koide / MRU
-**Status:** proposed_retained positive theorem. Spectrum-side Koide `Q = 2/3`
-implies operator-side `kappa = 2` via an exact symbolic identity on the
-retained cyclic-compression bridge, with zero new axiom cost. The
-operator-side `kappa = 2` content is a corollary, not an independent
-primitive.
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status:** bounded bridge-corollary support. Conditional on the
+spectrum-side Koide condition `Q = 2/3`, the exact cyclic-compression
+Fourier identity transfers that condition to operator-side `kappa = 2`
+with zero symbolic residue. This note does not independently derive
+`Q = 2/3`, and it does not claim an audit-ratified retained result.
+The operator-side `kappa = 2` content is a corollary, not an
+independent primitive.
 **Primary runner:** `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py`
 
 ---
 
 ## 0. Executive summary
 
-On the retained hw=1 cyclic compression, a generic Hermitian circulant
+On the `hw=1` cyclic-compression surface, a generic Hermitian circulant
 `H` admits the parametrization
 
 ```text
 H = a I + b C + bbar C^2,   a in R, b in C.
 ```
 
-The retained cyclic-compression bridge gives the eigenvalues `lambda_k`
+The cyclic-compression bridge gives the eigenvalues `lambda_k`
 in closed form:
 
 ```text
 lambda_k = a + b omega^k + bbar omega^{-k},   omega = exp(2 pi i / 3).
 ```
 
-Under the retained P1 square-root identification `lambda_k = sqrt(m_k)`,
+Under the P1 square-root identification `lambda_k = sqrt(m_k)`,
 the sqrt-mass vector `v = (sqrt(m_e), sqrt(m_mu), sqrt(m_tau))` is the
 eigenvalue triple `(lambda_0, lambda_1, lambda_2)`. Its C_3 Fourier
 decomposition is
@@ -47,9 +51,9 @@ a_0^2 - 2 |z|^2  =  3 (a^2 - 2 |b|^2).
 Both sides vanish simultaneously. The spectrum-side statement
 `a_0^2 = 2 |z|^2` (equivalently Koide `Q = 2/3`) is therefore
 **exactly equivalent** to the operator-side statement `a^2 = 2 |b|^2`
-(equivalently `kappa = 2`). No new operator-side axiom is introduced —
-the operator-side closure is inherited from the spectrum-side closure
-via the retained cyclic-compression Fourier dictionary.
+(equivalently `kappa = 2`). No new operator-side axiom is introduced:
+the operator-side equation is the spectrum-side condition rewritten
+through the cyclic-compression Fourier dictionary.
 
 At PDG charged-lepton masses:
 
@@ -60,17 +64,29 @@ kappa = a^2 / |b|^2 = 2.000037     (target 2)
 ```
 
 All three match within `3e-4`, which is the residual floor of PDG
-numerical input. The bridge identity symbolically closes with exact
-zero residual.
+numerical input. The bridge identity has exact symbolic zero residual.
 
 **Positioning vis-a-vis the branch.** The MRU weight-class obstruction
 theorem (`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19`)
 named the missing operator-side object as "a retained 1:1 real-isotype
 measure". This bridge theorem shows the operator-side `kappa = 2`
-content is redundant: once Berry + Brannen close the spectrum-side
-`Q = 2/3` at machine precision, the operator-side `kappa = 2` follows
-for free from the retained Fourier dictionary. The "separate operator
-side primitive" is not needed.
+content is not a separate primitive on this surface: if the
+spectrum-side `Q = 2/3` condition is supplied, the operator-side
+`kappa = 2` condition follows from the Fourier dictionary. The
+"separate operator side primitive" is not supplied by this note.
+
+## Source boundary
+
+This is a bounded bridge-corollary packet. It proves the exact algebraic
+equivalence
+
+```text
+a_0^2 = 2 |z|^2  <=>  a^2 = 2 |b|^2
+```
+
+on `Herm_circ(3)`. It does not independently derive the spectrum-side
+Koide condition `Q = 2/3`, does not supply a physical scalar-measure
+closure, and does not apply or predict an audit verdict.
 
 ---
 
@@ -96,7 +112,7 @@ The eigenvalues of `H` on this basis are `lambda_k` as above.
 
 ### 1.2 Sqrt-mass vector and its Fourier decomposition
 
-The retained P1 square-root amplitude principle sets
+The P1 square-root amplitude principle sets
 `v_k = sqrt(m_k) = lambda_k`. The Plancherel identity on the
 charged-lepton sqrt-mass vector is
 
@@ -119,7 +135,7 @@ sigma := a_0^2 / |v|^2 = 1/2,   i.e. a_0^2 = 2 |z|^2.
 
 ### 1.3 Operator-side MRU condition
 
-On the Hermitian-circulant parametrization `(a, b)`, the retained
+On the Hermitian-circulant parametrization `(a, b)`, the
 block-total Frobenius decomposition gives
 
 ```text
@@ -189,21 +205,20 @@ the cyclic-compression bridge, with residue EXACTLY zero.
 
 ---
 
-## 3. Implication for the Koide closure stack
+## 3. Implication for the Koide bridge stack
 
 Before this theorem, the operator-side MRU was carried as a candidate
-principle requiring a retained 1:1 real-isotype measure. The MRU
-weight-class obstruction theorem observed that the retained
+principle requiring a 1:1 real-isotype measure. The MRU
+weight-class obstruction theorem observed that the
 `log|det|` law on the unreduced circulant gives weights `(1, 2)` and
 lands at `kappa = 1`, not `kappa = 2`.
 
 This theorem shows the operator-side framing is not an **independent**
-primitive: once the spectrum-side Koide condition `sigma = 1/2` is
-accepted, the operator-side `kappa = 2` content follows for free.
-Berry + Brannen already close the spectrum side at machine precision;
-hence the operator-side closure comes free.
+primitive: if the spectrum-side Koide condition `sigma = 1/2` is
+accepted, the operator-side `kappa = 2` content follows by exact
+coordinate transfer.
 
-**Net axiom cost of operator-side kappa = 2 given spectrum-side closure:**
+**Net axiom cost of operator-side kappa = 2 given spectrum-side input:**
 zero.
 
 **What remains.** The single remaining load-bearing input is the
@@ -238,7 +253,7 @@ bridge identity.
 ## 5. Runner — expected output
 
 ```
-TOTAL: PASS=9 FAIL=0
+TOTAL: PASS=19 FAIL=0
 ```
 
 The runner verifies:
@@ -253,6 +268,9 @@ The runner verifies:
 - `T8` Identity on 200 random `Herm_circ(3)` samples (max residual
   `< 1e-10`).
 - `T9` Closure equivalence on kappa = 2 sample set gives zero residual.
+- The MRU demotion note source-boundary checks remain in force.
+- This bridge note declares `bounded_theorem` and no longer claims
+  retained-proposal status or an independent closure route.
 
 No hard-coded True values. All PASSes are keyed to substantive
 symbolic or numerical computations.
@@ -261,17 +279,17 @@ symbolic or numerical computations.
 
 ## 6. Cross-references
 
-**Retained branch material:**
+**Related branch material:**
 
 - `docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
-  — the obstruction theorem this note positively closes on the
-  operator side.
+  — the obstruction theorem whose operator-side condition this note
+  rewrites as a spectrum-side bridge corollary.
 - `docs/KOIDE_MOMENT_RATIO_UNIFORMITY_THEOREM_NOTE_2026-04-19.md`
   — the MRU statement at d = 3.
 - `docs/KOIDE_BERRY_PHASE_THEOREM_NOTE_2026-04-19.md`
-  — spectrum-side `delta = 2/9` closure.
+  — spectrum-side `delta = 2/9` context.
 - `docs/KOIDE_SELECTED_LINE_CYCLIC_RESPONSE_BRIDGE_NOTE_2026-04-18.md`
-  — retained cyclic-compression bridge.
+  — cyclic-compression bridge.
 - `docs/KOIDE_SQRTM_AMPLITUDE_PRINCIPLE_NOTE_2026-04-18.md`
   — P1 square-root identification `lambda_k = sqrt(m_k)`.
 - `docs/CHARGED_LEPTON_KOIDE_CONE_ALGEBRAIC_EQUIVALENCE_NOTE.md`
@@ -282,8 +300,8 @@ symbolic or numerical computations.
 **Companion note this cycle:**
 
 - `docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_MEASURE_THEOREM_NOTE_2026-04-19.md`
-  — second independent closure route naming the 1:1 real-isotype
-  measure explicitly.
+  — bounded algebraic context naming the 1:1 real-isotype measure
+  explicitly; not an independent closure route here.
 
 ---
 
@@ -296,13 +314,13 @@ normalization. What this theorem establishes is:
 - Under the cyclic-compression bridge, operator-side `kappa = 2` is a
   direct corollary of spectrum-side `Q = 2/3` (and vice versa), with
   zero residual.
-- The "two closures" (spectrum-side and operator-side) collapse to one
+- The two equations (spectrum-side and operator-side) collapse to one
   content at `d = 3`.
 - The MRU weight-class obstruction's named operator-side gap
-  ("missing 1:1 real-isotype measure") is now closed from the
-  spectrum-side side of the bridge: the closure is inherited, not
-  separately required.
+  ("missing 1:1 real-isotype measure") is transferred to the
+  spectrum-side condition through the bridge; this packet does not
+  separately close the spectrum-side condition.
 
-The operator-side multiplicity-weighted realization of the 1:1 measure
-is given independently by the companion block-total Frobenius measure
-theorem.
+The companion block-total Frobenius measure theorem remains bounded
+algebraic context for the 1:1 measure; it is not an independent
+closure route in this packet.

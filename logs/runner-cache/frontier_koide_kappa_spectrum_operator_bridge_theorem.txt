@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py
-runner_sha256: 90f0ae4ebc238675fd241e43283c02c30bb666c0ea842c73f3a92137a7cf0fe2
+runner_sha256: eff3f154cddc1a4ae96b04bd5b82f01f6345e8705a866423dca933818b7f07c7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.63
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 Section A — symbolic Hermitian circulant and Fourier bridge
@@ -21,7 +21,7 @@ Section B — PDG charged-lepton numerical realization
 Section C — random Herm_circ(3) sample scan
   [PASS] T9 bridge identity holds on 200 random samples (max residual < 1e-10)  (max residual = 2.842e-14)
 
-Section D — closure equivalence under bridge
+Section D — condition equivalence under bridge
   [PASS] T10 operator kappa = 2 implies spectrum a_0^2 = 2|z|^2 (zero residual on sample set)  (|spectrum residual| = 0.000e+00)
 
 Section E — MRU demotion source-boundary checks
@@ -32,8 +32,10 @@ Section E — MRU demotion source-boundary checks
   [PASS] T15 demotion note removes old retained-route overclaim phrases
   [PASS] T16 demotion note narrows the SO(2) quotient failure to Path A
   [PASS] T17 demotion note leaves alternative quotient attack routes open
+  [PASS] T18 bridge note declares bounded_theorem source claim type
+  [PASS] T19 bridge note removes retained-proposal and independent-closure overclaim phrases
 
-TOTAL: PASS=17 FAIL=0
+TOTAL: PASS=19 FAIL=0
 
 ----- stderr -----
 

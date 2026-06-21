@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1470 |
+| Applied audit verdicts | 1471 |
 | Retained-grade rows, including boxed decorations | 1405 |
 | Retained positive theorems | 204 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 943 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 34 |
-| Unaudited rows | 1668 |
+| Unaudited rows | 1667 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 11 |
-| Audited renaming rows | 20 |
+| Audited renaming rows | 21 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 9 |
 
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1678 |
-| Ready rows | 122 |
+| Total pending rows | 1677 |
+| Ready rows | 121 |
 | Cycle-break targets | 9 |
-| Critical pending | 314 |
+| Critical pending | 313 |
 | High pending | 302 |
 | Medium pending | 486 |
 | Leaf pending | 576 |
 
 Next ready rows by queue order:
 
-- [`gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; unaudited
 - [`hw1_second_order_return_shape_theorem_note`](../../docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md) - critical; unaudited
 - [`su3_casimir_fundamental_theorem_note_2026-05-02`](../../docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
 - [`koide_q_delta_linking_relation_theorem_note_2026-04-20`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26`](../../docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`flavor_operator_realization_local_density_2026-05-31`](../../docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md) - critical; audit_in_progress
 - [`koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
+- [`flavor_asymmetry_2over9_forced_weight_2026-05-31`](../../docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

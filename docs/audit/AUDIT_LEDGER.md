@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 984 |
+| **retained_bounded** | 985 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1564 |
+| unaudited | 1563 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1429 |
+| `audited_clean` | 1430 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1890 |
+| `unaudited` | 1889 |
 
 | claim_type | count |
 |---|---:|
@@ -1146,6 +1146,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
@@ -16329,6 +16330,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since the embedded rank-one projections n_x commute on distinct tensor factors, they admit a joint binary eigenbasis and Q_total has eigenvalue sum_x nu_x on each binary string.  _(class `A`)_
 - **chain closes:** True — The Quantum axiom supplies A_x ~= M_2(C), and the remaining argument is finite-dimensional spectral algebra on the stipulated finite tensor product. Rank-one projections have eigenvalues 0 and 1, tensor embeddings commute, and binary-string counting gives the stated spectrum and multiplicities.
 - **rationale:** The proof does not identify the occupation count with physical charge or import a fitted numerical target. The only upstream authority is an accepted axiom premise supplying the one-site qubit algebra, and the audited conclusion follows by standard finite-dimensional linear algebra plus binomial counting. The runner source genuinely constructs representative matrices and tensor embeddings for N=4, but the theorem itself is established analytically rather than by relying on that finite sample.
+- **auditor confidence:** high
+
+### `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`QCD_BETA_3_PURE_GAUGE_VS_FULL_SM_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/QCD_BETA_3_PURE_GAUGE_VS_FULL_SM_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the stated retained/bounded count inputs and the named admitted SU(N) one-loop beta-coefficient formula, the audited claim is the exact algebraic derivation of b_3 = (11 N_color - 2 N_quark)/3, b_3(0)=11, b_3(6)=7, Delta b_3=4, and the listed algebraic corollaries.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting C_2(adj SU(3)) = N_color and T(F) = 1/2 into the admitted Peskin-Schroeder formula gives b_3 = (11 N_color - 2 N_quark) / 3, then (3,0) -> 11 and (3,6) -> 7.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by exact substitution into the admitted beta-function formula and integer/rational arithmetic. The source does not claim to derive the upstream counts or the textbook beta formula within this row.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the stated inputs: (11/3)N_color - (4/3)(1/2)N_quark simplifies to (11 N_color - 2 N_quark)/3. The provided runner source performs exact Sympy Rational checks for the parametric expression, both framework instances, the difference, per-sector decomposition, and corollaries, with no PDG/lattice comparator or tuned numerical input. The clean verdict is bounded to the declared implication and does not promote the admitted Peskin-Schroeder formula or upstream count derivations into results of this note.
 - **auditor confidence:** high
 
 ### `qcd_low_energy_running_bridge_note_2026-05-01`

@@ -8,6 +8,12 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block13-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4542
+```
+
 Block13 proves the exact source-side Gram collapse:
 
 ```text
@@ -52,7 +58,11 @@ branch-local status/overclaim rg scan
 no matches
 ```
 
-Pending before PR: commit, push, PR creation.
+PR identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block13-20260621","number":4542,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block13 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4542"}
+```
 
 ## Remaining Nature-Grade Blocker
 
@@ -62,4 +72,6 @@ current `K_R` source-side Gram contractions.
 
 ## Exact Next Action
 
-Commit, push, and open the block13 review PR.
+Continue the campaign with the channel metric/normalization primitive target,
+or a new nonseparable total-degree-2 primitive outside current `K_R`
+source-side Gram contractions.

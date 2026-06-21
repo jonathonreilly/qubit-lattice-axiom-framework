@@ -8,7 +8,7 @@
 ## Verification
 
 - Post-cleanup dry run must report 0 orphan cache files.
-- Full-ledger runner-cache check must remain `fresh=3120`, `stale=0`,
+- Full-ledger runner-cache check must remain `fresh=3123`, `stale=0`,
   `missing=0`.
 - Full audit pipeline unit suite.
 - Strict audit lint.

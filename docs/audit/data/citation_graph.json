@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_kms_condition_theorem_note_2026-05-01"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
         "axiom_first_kms_condition_theorem_note_2026-05-01",
         "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
         "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
         "hw1_second_order_return_shape_theorem_note",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
         "koide_q_delta_linking_relation_theorem_note_2026-04-20",
-        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f51f4f53e0ebd4eb6481368ce7b7167f547efcccbb1b29fef441899f07caeb79",
+      "note_hash": "e5695d0dc9c95a9ed70e6ab320f7118e8d30885a9bc60da1c709d0e131c679db",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

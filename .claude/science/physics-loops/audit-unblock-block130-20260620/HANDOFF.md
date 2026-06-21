@@ -20,9 +20,12 @@ Both headers name existing runners under `scripts/corrections/`.
 After the fix, full-ledger cleanup dry run reports 9 candidates instead of 11,
 and the full-ledger runner cache check remains clean:
 
-- `fresh: 3123`
+- `fresh: 3050`
 - `stale to refresh: 0`
 - `missing on disk: 0`
+
+The branch is restacked on PR #4498 at `aaf625532`, which refreshes the
+full-ledger cache baseline.
 
 ## Boundary
 
@@ -35,13 +38,12 @@ verdict, delete cache files, or assert retained status.
 - `python3 scripts/precompute_audit_runners.py --cleanup-orphans-dry-run --all --check-only --allow-non-main` -> OK, 9 candidates.
 - `python3 -m py_compile scripts/precompute_audit_runners.py scripts/runner_cache.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK.
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 78 tests passed.
-- `python3 docs/audit/scripts/audit_lint.py --strict` -> OK, notices only.
 - `git diff --check` -> OK.
 
 ## Next Exact Action
 
-Monitor PR #4500 audit-lane check, then continue to the next audit-unblock
-target.
+Force-push the restacked branch, update PR #4500 body, monitor audit-lane
+check, then continue to the next audit-unblock target.
 
 ## PR
 

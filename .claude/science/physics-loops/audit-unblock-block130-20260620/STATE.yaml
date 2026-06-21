@@ -4,7 +4,8 @@ block: 130
 mode: physics-loop
 branch: physics-loop/audit-unblock-block130-20260620
 base: physics-loop/audit-unblock-block128-20260620
-base_commit: 609cc8fab
+base_commit: aaf625532036a83b28252a5c4aba76e141389068
+rebuilt_at: "2026-06-21 00:24:58 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "runner-cache orphan cleanup safety"
@@ -21,7 +22,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "cleanup_orphans now preserves cache files whose header names an existing nested runner before falling back to legacy shallow stem probing."
+current_result: "cleanup_orphans now preserves cache files whose header names an existing nested runner before falling back to legacy shallow stem probing; branch is restacked on refreshed PR #4498."
 observed_pre_fix_cleanup_risk:
   dry_run_candidates_before_fix: 11
   false_positive_nested_runner_caches:
@@ -29,7 +30,7 @@ observed_pre_fix_cleanup_risk:
     - logs/runner-cache/yt_p1_fermion_regulator_verification_memsafe.txt
 observed_post_fix_cleanup_result:
   dry_run_candidates_after_fix: 9
-  full_ledger_runner_state: "fresh=3123 stale=0 missing=0"
+  full_ledger_runner_state: "fresh=3050 stale=0 missing=0"
 files_touched:
   - scripts/precompute_audit_runners.py
   - docs/audit/scripts/tests/test_audit_pipeline.py
@@ -38,5 +39,5 @@ review_disposition: pass
 verification_status: pass
 pr_status: open
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4500
-next_exact_action: "Monitor PR #4500 audit-lane check, then continue to the next audit-unblock target."
-stop_condition: "Block130 PR opened and verified; campaign continues to the next audit-unblock target while runtime remains."
+next_exact_action: "Force-push the restacked PR #4500 branch, update PR body, then monitor audit-lane check and continue to the next audit-unblock target."
+stop_condition: "Block130 PR updated and verified; campaign continues to the next audit-unblock target while runtime remains."

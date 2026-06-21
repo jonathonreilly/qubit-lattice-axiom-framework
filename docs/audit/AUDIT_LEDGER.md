@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1021 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1491 |
+| unaudited | 1490 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
@@ -64,22 +64,23 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_three_generation_observable_theorem_note` | 3 |
 | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
+| `decoration_under_yt_ew_color_projection_theorem` | 1 |
 
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1473 |
 | `audited_conditional` | 55 |
-| `audited_decoration` | 65 |
+| `audited_decoration` | 66 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1817 |
+| `unaudited` | 1816 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1803 |
-| `decoration` | 66 |
+| `bounded_theorem` | 1802 |
+| `decoration` | 67 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
@@ -89,8 +90,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 931 |
-| `leaf` | 1468 |
+| `medium` | 930 |
+| `leaf` | 1469 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1732,6 +1733,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | cross_family | codex-gpt-5.5 | A | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` |
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
+| `yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_yt_ew_color_projection_theorem` | cross_family | codex-gpt-5.5 | A | `yt_ew_color_projection_theorem` |
 | `yt_zero_import_chain_note` | decoration | ~~audited_decoration~~ | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | cross_family | codex-gpt-5.5 | A | `yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -23315,6 +23317,20 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** From T_3=diag(1/2,-1/2) and Y_H=(1/2)I, Q_H=T_3+Y_H=diag(1,0), so P_neut=1_0(Q_H)=I-Q_H=P_-.  _(class `A`)_
 - **chain closes:** True — The conclusion follows by finite-dimensional spectral calculus from the retained_bounded EW Higgs input Q=T_3+Y with Y_H=1/2. The source-coordinate statement is the exact exponential identity exp(h epsilon_H)=exp(h)exp(-2h P_neut), with no numerical comparator or positive Y_T closure imported.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the cited EW doublet inputs, not a fitted numerical match or external comparator. The runner instantiates the matrices, projectors, radial tangent, source exponential, and frame-conjugation identities rather than merely printing a pass count; its cross-note checks are dependency and firewall checks. The audited scope remains bounded support only: it does not derive top response, top coefficient, scalar LSZ normalization, physical-scale g_2, or positive Y_T closure.
+- **auditor confidence:** high
+
+### `yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25`
+
+- **Note:** [`YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md`](../../docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Audited only the algebraic preservation of sin^2(theta_W)=g_Y^2/(g_Y^2+g_2^2) under a universal nonzero EW coupling rescaling K_EW(kappa_EW).
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_yt_ew_color_projection_theorem`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the universal EW correction into sin^2(theta_W) gives a common nonzero multiplicative factor in numerator and denominator, so the factor cancels.  _(class `A`)_
+- **chain closes:** True — The cancellation follows directly from the cited universal common rescaling and the cited SM Weinberg-angle definition. The open kappa_EW=0 selector is not needed for this scoped invariance claim.
+- **rationale:** The runner genuinely performs an exact Sympy algebra check of the common-factor cancellation, with no external comparator or numerical tuning. However, the load-bearing content is only a class-A corollary of the upstream EW color-projection family plus the standard Weinberg-angle definition, and the parent authority already states weak-angle preservation under the common rescaling. This is therefore valid as an algebraic decoration, not an independent bounded theorem.
+- **decoration parent:** `yt_ew_color_projection_theorem`
 - **auditor confidence:** high
 
 ### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`

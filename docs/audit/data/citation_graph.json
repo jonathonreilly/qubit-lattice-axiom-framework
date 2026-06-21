@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25"
     },
     {
@@ -103156,11 +103152,10 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
         "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "13954f462b9c1e8a8db58a1c106d56c97de2fe1ed90e348818bc549cfe0f6dda",
+      "note_hash": "e3de8a6979823363de544a2081590ef06e9ca51417d0f56c1656e45996b4e4aa",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118573,8 +118568,8 @@
       "open_gate": 192,
       "positive_theorem": 583
     },
-    "edge_count": 13468,
-    "leaf_count": 1152,
+    "edge_count": 13467,
+    "leaf_count": 1153,
     "node_count": 3619,
     "root_count": 1090,
     "runners_with_path": 3252

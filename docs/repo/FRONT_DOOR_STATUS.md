@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1599 |
-| Retained-grade rows, including boxed decorations | 1482 |
+| Applied audit verdicts | 1600 |
+| Retained-grade rows, including boxed decorations | 1483 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
-| Retained bounded rows | 993 |
+| Retained bounded rows | 994 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 38 |
-| Unaudited rows | 1547 |
+| Unaudited rows | 1546 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 38 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1549 |
-| Ready rows | 57 |
+| Total pending rows | 1548 |
+| Ready rows | 56 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 533 |
+| Leaf pending | 532 |
 
 Next ready rows by queue order:
 
-- [`connectivity_family_v2_elliptical_duplicate_note`](../../docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md) - medium; unaudited
 - [`continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12`](../../docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12`](../../docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17`](../../docs/CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`d3_native_stable_orbit_upper_bound_composition_note_2026-06-09`](../../docs/D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md) - medium; unaudited
 - [`dm_neutrino_operator_selection_obstruction_note_2026-04-14`](../../docs/DM_NEUTRINO_OPERATOR_SELECTION_OBSTRUCTION_NOTE_2026-04-14.md) - medium; unaudited
 - [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
-- [`equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12`](../../docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12`](../../docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08`](../../docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

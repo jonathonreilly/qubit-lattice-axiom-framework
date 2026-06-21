@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 209 |
+| **retained** | 210 |
 | **retained_no_go** | 210 |
 | **retained_bounded** | 958 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1617 |
+| unaudited | 1616 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1392 |
+| `audited_clean` | 1393 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1943 |
+| `unaudited` | 1942 |
 
 | claim_type | count |
 |---|---:|
@@ -82,9 +82,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 509 |
-| `medium` | 928 |
-| `leaf` | 1470 |
+| `high` | 508 |
+| `medium` | 930 |
+| `leaf` | 1469 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1155,6 +1155,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_formation_to_kraus_isometry_bridge_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_preservation_conserves_the_within_sector_measure_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -16334,6 +16335,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Two exact two-record joint laws have the same one-step marginals p=(2/3,1/3) but different count/frequency distributions.  _(class `A`)_
 - **chain closes:** True — The packet gives an explicit finite-probability counterexample: the IID and locked couplings share both one-step marginals but yield different N_0 distributions and variances. Therefore the claimed shortcut from one-shot probabilities to IID frequencies is invalid without an added sequence law.
 - **rationale:** The load-bearing step is an elementary algebraic counterexample, not a definition substitution or tuned numerical match. Independent recomputation confirms the displayed marginals, count laws, expectations, and variances. The clean no-go is narrow: it blocks only deriving IID/frequency/typicality from the one-step vector alone, while leaving supplied sequence-law routes open.
+- **auditor confidence:** high
+
+### `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17`
+
+- **Note:** [`RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md`](../../docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For each finite n, a declared local diagonal M_2(C) readout context on distinct Z^3 sites supplies n pairwise support-disjoint nonzero K-fixed record-eligible atoms with context-local unit-count value n; no production, probability, or physical context selector is derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-record_local_finite_atom_availability_narrow_theorem_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For finite n, choose distinct sites x_k=(k,0,0), tag the K-fixed nonzero atom P_1 at each site as r_k, and use finite additivity of the declared unit-count functional to get I({r_0,...,r_{n-1}})=n.  _(class `C`)_
+- **chain closes:** True — The registered minimal-axiom premise supplies Z^3 sites and one-site M_2(C) algebras, and the note's projector construction is exact finite matrix algebra inside a declared readout context. The unit-count readout is explicitly scoped as a declared finite Boolean normalization, not a canonical or physically selected Record normalization.
+- **rationale:** The dependency on MINIMAL_AXIOMS_2026-06-05.md is covered by the axiom-premise carve-out, and the proof correctly uses only its Lattice, Quantum, and supplied-context Record content. The runner source directly checks the projector identities, K-fixity, noncentrality in full M_2(C), finite distinct supports, and finite additivity rather than importing an external comparator or tuned number. The source boundary preserves the open gates for production, probability, physical context selection, clock/rate, dial selection, and canonical normalization.
 - **auditor confidence:** high
 
 ### `record_markov_generator_embeddability_boundary_2026-06-06`

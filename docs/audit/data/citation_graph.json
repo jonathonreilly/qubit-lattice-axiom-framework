@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
         "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
         "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
         "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15",
         "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
         "flavor_interacting_matter_build_note_2026-05-30",
         "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16",
-        "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28"
+        "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28",
+        "gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b0e0d07edb0d28b328e13f06404c76860e5a69acfcd173e045f4d7c2f44e53cb",
+      "note_hash": "7affc580f27350fafec285fbea710600c887bd10fcbaf02d6448031efedbf97c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

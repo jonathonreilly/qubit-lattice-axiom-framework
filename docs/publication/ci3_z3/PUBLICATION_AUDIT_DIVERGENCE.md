@@ -18,12 +18,12 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 163 |
-| high | `unaudited` | 160 |
+| high | `unaudited` | 159 |
 | medium | `unaudited` | 94 |
 | high | `audited_conditional` | 3 |
+| high | `audited_numerical_match` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
-| high | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
@@ -368,7 +368,7 @@ publication tables phrase it.
 | high | `vacuum_critical_stability_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `vector_gauge_field_kk_tower_theorem_note_2026-04-24` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `w_mass_derived_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md |
-| high | `work_history.ckm.cabibbo_bound_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| high | `work_history.ckm.cabibbo_bound_note` | `audited_numerical_match` | `audited_numerical_match` | DERIVATION_ATLAS.md |
 | high | `yt_ew_delta_r_retention_analysis_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, QUANTITATIVE_SUMMARY_TABLE.md, RESULTS_INDEX.md |
 | medium | `abcc_cp_phase_no_go_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | medium | `baryon_charge_integrality_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

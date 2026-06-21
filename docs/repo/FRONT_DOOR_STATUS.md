@@ -12,18 +12,18 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1503 |
+| Applied audit verdicts | 1504 |
 | Retained-grade rows, including boxed decorations | 1415 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 209 |
 | Retained bounded rows | 943 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1643 |
+| Unaudited rows | 1642 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 16 |
 | Audited renaming rows | 27 |
-| Audited numerical-match rows | 8 |
+| Audited numerical-match rows | 9 |
 | Citation cycles detected | 9 |
 
 Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1645 |
-| Ready rows | 111 |
+| Total pending rows | 1644 |
+| Ready rows | 110 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 284 |
+| High pending | 283 |
 | Medium pending | 481 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`work_history.ckm.cabibbo_bound_note`](../../docs/work_history/ckm/CABIBBO_BOUND_NOTE.md) - high; unaudited
 - [`dm_live_constants_canonical_edge_certificate_note_2026-06-18`](../../docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md) - medium; unaudited
 - [`u1_fermion_number_conservation_theorem_note_2026-05-02`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`gauge_factor_local_selector_normalizer_theorem_note_2026-06-18`](../../docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
+- [`ew_current_traceless_generator_selector_no_go_note_2026-05-03`](../../docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,12 +62,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 163 |
-| high | `unaudited` | 160 |
+| high | `unaudited` | 159 |
 | medium | `unaudited` | 94 |
 | high | `audited_conditional` | 3 |
+| high | `audited_numerical_match` | 3 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
-| high | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |

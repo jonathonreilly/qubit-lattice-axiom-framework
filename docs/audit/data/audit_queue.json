@@ -3,7 +3,7 @@
     "critical": 292,
     "high": 284,
     "leaf": 588,
-    "medium": 479
+    "medium": 478
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -8467,27 +8467,36 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
+      "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
       "claim_scope": null,
-      "claim_type": "no_go",
+      "claim_type": "open_gate",
       "claim_type_provenance": "author_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+        "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+        "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
+        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
+        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
+        "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
+        "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
+        "plaquette_self_consistency_note"
       ],
       "direct_in_degree": 5,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.454,
-      "note_path": "docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py",
+        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
+        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+        "scripts/dm_leptogenesis_exact_common.py"
+      ],
+      "load_bearing_score": 8.172,
+      "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_ew_current_traceless_generator_selector_no_go.py",
-      "transitive_descendants": 30
+      "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
+      "transitive_descendants": 50
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17562,41 +17571,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
-        "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-        "dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17",
-        "dm_full_closure_64_to_1_channel_weight_bridge_narrow_theorem_note_2026-06-02",
-        "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
-        "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-        "plaquette_self_consistency_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py",
-        "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
-        "scripts/dm_full_closure_same_surface_thermal_support_common.py",
-        "scripts/dm_leptogenesis_exact_common.py"
-      ],
-      "load_bearing_score": 7.644,
-      "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py",
-      "transitive_descendants": 49
     },
     {
       "audit_independence_required": "any_non_self",
@@ -32557,6 +32531,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
+        "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
+        "rconn_derived_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ew_kappa_self_energy_object_pin.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -36215,32 +36215,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_erosion_mobius_derivative_law_2026_06_12.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
-        "rconn_derived_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_ew_kappa_self_energy_object_pin.py",
       "transitive_descendants": 1
     },
     {
@@ -49270,5 +49244,5 @@
     }
   ],
   "ready_count": 110,
-  "total_pending": 1643
+  "total_pending": 1642
 }

@@ -53470,7 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_live_constants_canonical_edge_certificate_note_2026-06-18"
+      "to": "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17"
     },
     {
       "from": "repo.front_door_status",
@@ -53495,10 +53499,6 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
+        "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
+        "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
         "u1_fermion_number_conservation_theorem_note_2026-05-02",
         "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
         "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
-        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
-        "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
+        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a74572dd54d6190607fdb05c8e49ec54cecec653ad9915719d22b46f47b1d0ae",
+      "note_hash": "03e1a650f807f0e75dd940d1abc2391a66363d0fa3caa28fa97a151fbc2f8a56",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

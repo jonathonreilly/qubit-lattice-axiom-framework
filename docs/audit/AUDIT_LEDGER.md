@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 209 |
-| **retained_no_go** | 209 |
+| **retained_no_go** | 210 |
 | **retained_bounded** | 944 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1641 |
+| unaudited | 1640 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1375 |
+| `audited_clean` | 1376 |
 | `audited_conditional` | 16 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1967 |
+| `unaudited` | 1966 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 509 |
-| `medium` | 928 |
+| `high` | 510 |
+| `medium` | 927 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -110,7 +110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
-| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
+| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
 | 10 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_clean` | **retained_bounded** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
@@ -454,6 +454,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `evolving_network_prototype_v6_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ew_current_matching_ozi_suppression_theorem_note_2026-04-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `ew_current_traceless_generator_selector_no_go_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6159,6 +6160,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Completion A with kappa_EW=0 and Completion B with kappa_EW=1 share the retained Fierz ratio, color-blind CMT scaling, and O(1/N_c^2) disconnected size, but give different EW matching factors 9/8 and 1.  _(class `A`)_
 - **chain closes:** True — The chain closes as an algebraic independence witness over the stated restricted packet: the two completions agree on all listed retained primitive data while disagreeing on K_EW. The cited Fierz authority supplies the exact 8/9 channel fraction and explicitly does not derive the matching selector.
 - **rationale:** The load-bearing step is class A rather than a numerical match: the runner recomputes rational channel fractions, CMT cancellation, OZI boundedness, and the two-completion witness. The cited authority is retained-grade for the Fierz/channel ratio, and the source does not import the open matching rule as a premise; it shows that the listed premises do not select it. The no-go gate passes on the restricted packet: attack routes through Fierz arithmetic, CMT scaling, bounded OZI, excluding full-trace readout, and convention or structural-input ratification all require adding a selector not present in the packet.
+- **auditor confidence:** high
+
+### `ew_current_traceless_generator_selector_no_go_note_2026-05-03`
+
+- **Note:** [`EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md`](../../docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow route-specific no-go: internal EW-generator tracelessness removes ordinary Wick-disconnected one-current loops but does not derive the connected-trace EW readout selector kappa_EW=0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-ew_current_traceless_generator_selector_no_go_note_2026-05-03-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Tr_internal(Q_EW)=0 can coexist with a nonzero connected color Fierz singlet contribution weighted by Tr_internal(Q_EW^2), so it cannot imply kappa_EW=0.  _(class `A`)_
+- **chain closes:** True — The counterexample closes algebraically: with Q_EW=T3 and M=I_color, Tr(Q_EW)=0 while Tr(Q_EW^2)S(I_color)=3/2 and C(I_color)=0. Thus the trace-based route targets the wrong disconnected object.
+- **rationale:** The proof is an exact algebraic counterexample over the cited Fierz decomposition and the gate's kappa_EW parametrization. The runner computes the rational trace and channel values directly and separately verifies source/gate wording; it uses no external comparator or tuned numerical input. The cited authorities are retained-grade for this narrow use, and the source note explicitly leaves broader positive EW matching routes open.
 - **auditor confidence:** high
 
 ### `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`

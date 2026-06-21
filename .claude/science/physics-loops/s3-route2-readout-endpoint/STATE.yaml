@@ -33,7 +33,10 @@ open_imports:
   - "No physical connected-selector derivation xi=0 is supplied."
   - "No derivation of rho_E=21/4 is supplied on the actual current surface."
 review_disposition: pass_with_exact_support_selector_boundary
-pr_status: pending
+pr_status: open
+pr_number: 4533
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4533
+pr_identity_verified_without_conflict_check: true
 verification:
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py -> TOTAL: PASS=44, FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py -> PASS=11 FAIL=0"
@@ -44,5 +47,5 @@ verification:
 review_notes:
   - "Focused local review only; audit pipeline/verdict scripts intentionally not run under the no-audit campaign boundary."
   - "Claim narrowed to exact source-count support plus selector-boundary; no typed bridge or endpoint-triple derivation claimed."
-next_exact_action: "Commit, push, and open block 04 PR without refreshing branch to main or checking conflict state."
+next_exact_action: "Start the next block on the finite-box E-center lift extrapolation route or directly attack the typed selector theorem c_TE=-R_phys(0), without refreshing existing PRs or checking conflict state."
 stop_condition: "Runtime not exhausted; continue after block 04 PR delivery."

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Object-level verifier for the EW Higgs gauge-mass diagonalization theorem.
 
-This runner audits the algebra in
+This runner verifies the bounded algebra in
 docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md.
 It does not use numerical electroweak pole masses, RGE inputs, or Higgs-mass
 fits.  The checks are exact symbolic checks of the one-doublet tree-level
@@ -58,19 +58,34 @@ def audit_note_surface(audit: Audit) -> None:
     audit.check("theorem note exists", NOTE.exists(), str(NOTE.relative_to(ROOT)))
 
     text = read(NOTE)
+    flat_text = " ".join(text.split())
     status_match = re.search(r"\*\*Status:\*\*\s*(.+?)\n\n", text, re.S)
     status = status_match.group(1).replace("\n", " ") if status_match else ""
 
     audit.check("status extracted", bool(status), status[:140])
+    audit.check(
+        "status is bounded support over declared EW-Higgs inputs",
+        "bounded support theorem" in status
+        and "declared EW-Higgs input boundary" in status
+        and "not retained or proposed_retained" in status,
+    )
+    audit.check("claim type metadata is bounded_theorem", "**Claim type:** bounded_theorem" in text)
+    audit.check("status authority belongs to independent audit lane", "**Status authority:** independent audit lane only" in text)
     audit.check(
         "status is scoped to one-doublet EW/Higgs gauge-mass theorem",
         "one `SU(2)_L` Higgs doublet" in status
         and "tree-level gauge-boson mass spectrum and charge normalization" in status,
     )
     audit.check("status limits theorem to tree-level gauge-boson spectrum", "tree-level gauge-boson mass spectrum" in status)
-    audit.check("status does not promote Higgs/top/CKM lanes", "does not modify, promote, or close" in status)
+    audit.check("note does not promote Higgs/top/CKM lanes", "does not modify, promote, or close" in flat_text)
     audit.check("primary runner is named in note", "frontier_ew_higgs_gauge_mass_diagonalization.py" in text)
+    audit.check("claim-boundary section present", "## 0. Claim Boundary" in text)
+    audit.check("EW gauge group is declared input", "the electroweak gauge group `SU(2)_L x U(1)_Y`" in text)
+    audit.check("Higgs hypercharge is declared input", "the hypercharge assignment `Y_H = 1/2`" in text)
+    audit.check("neutral vacuum is declared input", "the neutral vacuum `<H> = (0, v/sqrt(2))^T`" in text)
+    audit.check("covariant derivative is declared input", "the standard covariant derivative" in text)
     audit.check("what-this-does-not-claim section present", "## 10. What This Does Not Claim" in text)
+    audit.check("minimal-framework derivation is not claimed", "does not derive the EW gauge group" in text)
     audit.check("no pole-mass derivation claimed", "It does not compute pole masses" in text)
     audit.check("bounded W mass lane not promoted", "does not promote the bounded `M_W`" in text)
 
@@ -219,7 +234,7 @@ def main() -> int:
     if audit.failed:
         print("VERDICT: FAIL")
         return 1
-    print("VERDICT: CLOSED")
+    print("VERDICT: BOUNDED_SUPPORT")
     return 0
 
 

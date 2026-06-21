@@ -1,21 +1,56 @@
 # Electroweak Higgs Gauge-Mass Diagonalization Theorem
 
-**Date:** 2026-04-26
+**Date:** 2026-04-26; 2026-06-17 bounded-boundary repair
 
-**Status:** proposed_retained - explicit strong derivation claim pending audit
-the exact tree-level gauge-boson mass spectrum and charge normalization
-forced by one `SU(2)_L` Higgs doublet of hypercharge `Y_H = 1/2`. It is a
-structural guardrail for the lattice-scale EW normalization identities,
-the matching-rule conditional EW normalization package, and bounded `M_W`
-same-surface notes. It does not modify, promote, or close any Higgs-mass,
-top-Yukawa, `alpha_s`, CKM, PMNS, dark-sector, cosmology, time-travel,
-teleportation, or antigravity lane.
+**Status:** bounded support theorem / exact symbolic verifier over a declared
+EW-Higgs input boundary. Given one `SU(2)_L` Higgs doublet of hypercharge
+`Y_H = 1/2`, a neutral vacuum, and the standard covariant derivative, the
+tree-level gauge-boson mass spectrum and charge normalization are computed
+exactly. This source note is not retained or proposed_retained; the independent
+audit lane owns any later status change.
+
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does not
+set or predict an audit outcome; effective status is pipeline-derived after
+independent audit and dependency closure.
+
+It is a structural guardrail for the
+lattice-scale EW normalization identities, the matching-rule conditional EW
+normalization package, and bounded `M_W` same-surface notes. It does not
+modify, promote, or close any Higgs-mass, top-Yukawa, `alpha_s`, CKM, PMNS,
+dark-sector, cosmology, time-travel, teleportation, or antigravity lane.
 
 **Primary runner:** `scripts/frontier_ew_higgs_gauge_mass_diagonalization.py`
 
+## 0. Claim Boundary
+
+This note proves an exact algebraic theorem **over** declared electroweak
+Higgs inputs. The load-bearing inputs are:
+
+- the electroweak gauge group `SU(2)_L x U(1)_Y`;
+- a single Higgs doublet `H = (H^+, H^0)^T`;
+- the hypercharge assignment `Y_H = 1/2`;
+- the neutral vacuum `<H> = (0, v/sqrt(2))^T`, with `v > 0`;
+- the standard covariant derivative
+  `D_mu = partial_mu - i g (tau^a/2) W_mu^a - i g_Y Y B_mu`;
+- the GUT-normalization convention `g_Y = sqrt(3/5) g_1_GUT` where repo
+  dictionary statements need it.
+
+The runner verifies the exact symbolic consequences of those inputs: charged
+and neutral mass matrices, the photon/Z rotation, the unbroken generator
+`Q = T_3 + Y`, the electric coupling identity, `rho_tree = 1`, and the
+optional one-doublet scalar Hessian bookkeeping.
+
+Out of scope: deriving the EW gauge group, the one-doublet Higgs carrier,
+`Y_H = 1/2`, the neutral vacuum, the covariant derivative, or the numerical
+values of `g_2(v)`, `g_1_GUT(v)`, `v`, or `lambda(v)` from the minimal
+framework. Pole masses, loop corrections, RGE running, threshold matching,
+and precision comparisons remain downstream lanes.
+
 ## 1. Claim
 
-Let the electroweak gauge group be
+Given the declared electroweak input boundary, let the gauge group be
 
 ```text
 SU(2)_L x U(1)_Y
@@ -28,7 +63,7 @@ doublet
 H = (H^+, H^0)^T,          Y_H = 1/2.
 ```
 
-Assume a neutral Higgs vacuum
+Take as declared input a neutral Higgs vacuum
 
 ```text
 <H> = H_0 = (0, v/sqrt(2))^T,        v > 0,
@@ -90,7 +125,7 @@ For this repo's GUT-normalized convention, set
 g_Y = sqrt(3/5) g_1_GUT.
 ```
 
-The theorem then gives the exact tree-level dictionary used by the EW and
+The bounded theorem then gives the exact tree-level dictionary used by the EW and
 `M_W` notes:
 
 ```text
@@ -413,7 +448,7 @@ g_1_GUT = sqrt(5/3) g_Y,
 g_Y     = sqrt(3/5) g_1_GUT.
 ```
 
-With the retained EW notation
+With the repo EW notation
 
 ```text
 g = g_2,
@@ -438,7 +473,8 @@ systematics.
 
 ## 9. What This Claims
 
-- A single neutral Higgs doublet with `Y_H = 1/2` breaks
+- Given the declared one-doublet EW-Higgs input boundary, a single neutral
+  Higgs doublet with `Y_H = 1/2` breaks
   `SU(2)_L x U(1)_Y` to `U(1)_em`.
 - The unbroken generator is `Q = T_3 + Y`.
 - The photon is exactly massless at tree level.
@@ -454,6 +490,8 @@ systematics.
 
 - It does not derive the framework's retained values of `g_2(v)`,
   `g_1_GUT(v)`, `v`, or `lambda(v)`.
+- It does not derive the EW gauge group, one Higgs doublet, `Y_H = 1/2`,
+  the neutral vacuum, or the covariant derivative from the minimal framework.
 - It does not compute pole masses or electroweak radiative corrections.
 - It does not promote the bounded `M_W` same-surface consistency probe into
   a retained precision prediction.
@@ -482,6 +520,6 @@ python3 -m py_compile scripts/frontier_ew_higgs_gauge_mass_diagonalization.py
 Expected verifier status:
 
 ```text
-TOTAL: PASS=46, FAIL=0
-VERDICT: CLOSED
+TOTAL: PASS=55, FAIL=0
+VERDICT: BOUNDED_SUPPORT
 ```

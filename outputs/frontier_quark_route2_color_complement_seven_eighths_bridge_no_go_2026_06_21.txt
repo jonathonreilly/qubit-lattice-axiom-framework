@@ -1,0 +1,68 @@
+Route-2 color-complement seven-eighths bridge no-go
+========================================================================================
+PASS: docs/QUARK_ROUTE2_COLOR_COMPLEMENT_SEVEN_EIGHTHS_BRIDGE_NO_GO_NOTE_2026-06-21.md exists
+PASS: docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md exists
+PASS: docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md exists
+PASS: docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists
+PASS: docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists
+PASS: docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists
+PASS: docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md exists
+PASS: docs/MINIMAL_AXIOMS_2026-06-05.md exists
+
+A. Source-note status and scope
+PASS: note declares no-go current status
+PASS: note declares negative route pruning
+PASS: note blocks proposal language
+PASS: note states the route being pruned
+PASS: note avoids broad overclaim phrases
+
+B. Exact color and Route-2 arithmetic
+PASS: SU(3) q-qbar total dimension is 9
+PASS: SU(3) adjoint dimension is 8
+PASS: F_adj is 8/9 -- 8/9
+PASS: adjoint-minus-one complement is 7/8 -- 7/8
+PASS: Route-2 E-center excess target is 7/8 -- 7/8
+PASS: target excess gives q_E=15/8 -- 15/8
+PASS: target q_E gives c_TE=-8/9 under granted T-side data -- -8/9
+
+C. SU(3) adjoint invariant-selector obstruction
+PASS: eight adjoint generators were constructed
+PASS: sample structure constants match SU(3)
+PASS: stacked adjoint action has full rank, so there is no fixed adjoint vector
+PASS: adjoint commutant has dimension one
+PASS: the commutant basis is the identity
+PASS: scalar idempotents have ranks 0 or 8 only
+PASS: there is no invariant rank-seven adjoint projector
+
+D. Current authority surface separation
+PASS: Fierz note supplies 1 plus adjoint channel split
+PASS: Fierz note supplies F_adj=8/9, not the adjoint-minus-one candidate
+PASS: Fierz note does not define Route-2 E-center excess
+PASS: Rconn typed note says F_adj is not a Route-2 readout coefficient
+PASS: source bridge note names missing color-to-Route-2 edge
+PASS: readout map defines q_E through beta_E/alpha_E
+PASS: naturality note names the E-center lift target
+PASS: S3 gate names the endpoint triple
+PASS: minimal axioms do not supply readout context
+
+E. Reachability and no-go boundary
+PASS: color-complement candidate has no current path to route2_e_E_7_8
+PASS: adjoining the missing typed bridge would reach rho_E
+PASS: the invariant line-selector premise is absent from current graph
+PASS: note leaves non-invariant or Route-2 direct routes open
+
+F. Note consistency
+PASS: N1 no-go discipline item is present
+PASS: N2 no-go discipline item is present
+PASS: N3 no-go discipline item is present
+PASS: N4 no-go discipline item is present
+PASS: N5 no-go discipline item is present
+PASS: N6 no-go discipline item is present
+PASS: N7 no-go discipline item is present
+PASS: N8 no-go discipline item is present
+PASS: note states no invariant one-dimensional line
+PASS: note states no invariant rank-seven projector
+PASS: note records boundary exclusions
+
+========================================================================================
+TOTAL: PASS=51 FAIL=0

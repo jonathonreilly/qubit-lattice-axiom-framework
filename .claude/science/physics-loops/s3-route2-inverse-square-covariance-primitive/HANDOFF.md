@@ -59,17 +59,24 @@ Branch-local gates:
 
 - staged `git diff --check`: pass
 - overclaim scan: pass, no banned status wording matched
-- PR creation: pending
+- PR creation: pass
 
 ## PR
 
-Pending.
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4571
+- Number: 4571
+- State: open
+- Base: `main`
+- Head: `physics-loop/s3-route2-inverse-square-covariance-primitive-block41-20260621`
 
-Planned title:
+Title:
 
 ```text
 [physics-loop] s3-route2-inverse-square-covariance-primitive block41 conditional-support
 ```
+
+Identity-only `gh pr view` passed for number, URL, title, head, base, and
+state. No conflict or mergeability check was run.
 
 ## Next Exact Science Action
 

@@ -1,0 +1,95 @@
+Route-2 channel-scalar source-preparation gate
+Status: no-go for channel-scalar source preparation; not an audit verdict.
+TRACE: negative_route_pruning
+
+PART 1: current authority markers
+PASS: authority file exists: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: authority file exists: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
+PASS: authority file exists: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: authority file exists: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: E-shell  = (1, 0, 0,   0)
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: E-center = (1, 0, 1/6, 0)
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: T-shell  = (0, 1, 0,   0)
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: T-center = (0, 1, 0, 1/6)
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: P_R = [[alpha_E, 0, beta_E, 0]
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: q_E   := gamma_E(center) / gamma_E(shell) = 1 + (beta_E / alpha_E) / 6
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: beta_E / alpha_E = 21/4
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: irreducible missing map entry
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: Given any admissible readout map `P_R`
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: Xi_P(t ; c) = (P_R c)
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: lacks is a theorem that selects one unique `P_R`
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: (beta_T / alpha_T, alpha_T / alpha_E, beta_E / alpha_E) = (-1, -2, 21/4)
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: exact conditional readout-to-slice family
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains marker: The next theorem target is the missing readout-map endpoint triple
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md contains marker: `|| (P_R c) ||` factor cancels
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md contains marker: right factor `V_R(t)`
+PASS: current authority bank does not already name source slot: S_dual
+PASS: current authority bank does not already name source slot: source-preparation map
+PASS: current authority bank does not already name source slot: source preparation map
+PASS: current authority bank does not already name source slot: source slot
+PASS: current authority bank does not already name source slot: S_R c
+PASS: current authority bank does not already name source slot: P_R S
+
+PART 2: endpoint algebra target
+PASS: rho_T=-1 gives q_T=5/6
+PASS: rho_E=21/4 gives q_E=15/8
+PASS: target shell and center ratios give center T/E=-8/9
+PASS: rho_E=21/4 is equivalent to q_E=15/8
+PASS: inverse Schur square ratio is (w_E/w_T)^-2 = 9/4
+
+PART 3: channel-scalar source-preparation invariance
+  S=diag(1,1,1,1): rho_E'=3/2, rho_T'=-1, shell T/E'=-2, q_E'=5/4, q_T'=5/6
+PASS: channel scalar 1,1 leaves q_E invariant
+      q_E=5/4
+PASS: channel scalar 1,1 leaves q_T invariant
+      q_T=5/6
+PASS: channel scalar 1,1 changes only shell T/E by a_T/a_E
+  S=diag(3,2,3,2): rho_E'=3/2, rho_T'=-1, shell T/E'=-4/3, q_E'=5/4, q_T'=5/6
+PASS: channel scalar 3,2 leaves q_E invariant
+      q_E=5/4
+PASS: channel scalar 3,2 leaves q_T invariant
+      q_T=5/6
+PASS: channel scalar 3,2 changes only shell T/E by a_T/a_E
+  S=diag(7,5,7,5): rho_E'=3/2, rho_T'=-1, shell T/E'=-10/7, q_E'=5/4, q_T'=5/6
+PASS: channel scalar 7,5 leaves q_E invariant
+      q_E=5/4
+PASS: channel scalar 7,5 leaves q_T invariant
+      q_T=5/6
+PASS: channel scalar 7,5 changes only shell T/E by a_T/a_E
+  S=diag(5,7,5,7): rho_E'=3/2, rho_T'=-1, shell T/E'=-14/5, q_E'=5/4, q_T'=5/6
+PASS: channel scalar 5,7 leaves q_E invariant
+      q_E=5/4
+PASS: channel scalar 5,7 leaves q_T invariant
+      q_T=5/6
+PASS: channel scalar 5,7 changes only shell T/E by a_T/a_E
+PASS: canonical inverse Schur channel source keeps rho_E at the readout value
+      rho_E remains 3/2, not 21/4
+PASS: canonical inverse Schur channel source changes shell T/E from -2 to -4/3
+PASS: no channel scalar can turn readout-only rho_E=3/2 into rho_E=21/4
+
+PART 4: center-excess nonuniform condition
+PASS: identity nonuniform prep reproduces base q_E
+PASS: identity nonuniform prep reproduces base q_T
+PASS: keeping q_T=5/6 with rho_T=-1 forces b_T/a_T=1
+PASS: hitting q_E=15/8 from readout-only rho_E=3/2 requires b_E/a_E=7/2
+PASS: the nonuniform condition is rho_E*(b_E/a_E)=21/4
+PASS: if the readout map already has rho_E=21/4, no source excess tilt is needed
+
+PART 5: note and status firewall
+PASS: note contains marker: Actual current-surface status: no-go for channel-scalar source-preparation shortcut
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not resolve the parent gate
+PASS: note contains marker: S(a_E,a_T) = diag(a_E, a_T, a_E, a_T)
+PASS: note contains marker: leaves q_E and q_T unchanged
+PASS: note contains marker: rho_E * (b_E/a_E) = 21/4
+PASS: note avoids overclaim marker: status-authority phrase
+PASS: note avoids overclaim marker: parent-closure phrase
+PASS: note avoids overclaim marker: current-surface endpoint-derivation phrase
+PASS: note avoids overclaim marker: audit-ratification phrase
+PASS: note avoids overclaim marker: branch-local status-promotion phrase
+PASS: note avoids overclaim marker: future-retention phrase
+PASS: note avoids overclaim marker: promotion-to-retention phrase
+PASS: note avoids overclaim marker: no-future-theorem phrase
+
+TOTAL: PASS=66, FAIL=0
+VERDICT: channel-scalar source preparation cannot supply the missing Route-2 endpoint factor. A source-side theorem must be center-excess nonuniform, or the readout map must supply the inverse-square law.

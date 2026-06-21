@@ -44,6 +44,13 @@ Current-bank no-go:
 - `PYTHONPATH=scripts python3 scripts/frontier_rconn_kappa_ew_register_not_read.py` -> `PASS=20 FAIL=0`
 - `PYTHONPATH=scripts python3 scripts/frontier_z3_character_isomorphism_color_generation.py` -> `PASS=22 FAIL=0`
 
+## PR
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4570
+- Head: `physics-loop/s3-route2-color-ray-source-primitive-block40-20260621`
+- Base: `main`
+- State: `OPEN` by identity-only `gh pr view`; conflict/mergeability state was not checked.
+
 ## Scope
 
 This does not derive the endpoint triple on the actual current surface. It

@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block28-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4557
+```
+
+Identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block28-20260621","number":4557,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block28 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4557"}
+```
+
 Block28 delivers a scalar-bypass firewall for the S3/Route-2 readout endpoint.
 It proves that current-main quark up-amplitude scalar routes do not bypass the
 selected `P_R` ambiguity:

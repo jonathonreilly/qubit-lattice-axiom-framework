@@ -1,3 +1,7 @@
 # PR Backlog
 
-No PR backlog yet. Block28 is ready for commit, push, and PR creation.
+No backlog. Block28 PR is open:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4557
+```

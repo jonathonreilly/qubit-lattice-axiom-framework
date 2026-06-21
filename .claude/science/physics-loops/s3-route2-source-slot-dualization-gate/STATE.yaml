@@ -7,6 +7,8 @@ block: 64
 branch: physics-loop/s3-route2-source-slot-dualization-gate-block64-20260621
 base: origin/main
 base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
+local_science_commit: 6f6aa74763fe33592961595fcba8bf411ca4d052
+remote_science_commit: 33e4a0077ae99dd9cdbc1e85fa80b817ff9ff517
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-slot-dualization-gate-block64-20260621
 date: 2026-06-21
 mode: campaign
@@ -62,8 +64,12 @@ open_imports:
   - "A typed S_dual source-preparation theorem on the Route-2 Schur frame."
   - "Or a readout-only inverse-square coefficient theorem fixing p=2 without endpoint target fitting."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending
+pr_status: open
+pr_number: 4595
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4595
+pr_identity_view: >-
+  {"baseRefName":"main","headRefName":"physics-loop/s3-route2-source-slot-dualization-gate-block64-20260621","number":4595,"state":"OPEN","title":"[physics-loop] s3-route2-source-slot-dualization-gate block64 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4595"}
 next_exact_action: >-
-  Run verification, commit, publish via GitHub API, open PR, then record PR
-  identity without checking conflicts or mergeability.
+  Try to construct a typed S_dual source-preparation map, or derive a
+  readout-only inverse-square coefficient theorem if the source-map route stalls.
 stop_condition: none

@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-source-slot-dualization-gate-block64-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4595
+```
+
+Remote science commit:
+
+```text
+33e4a0077ae99dd9cdbc1e85fa80b817ff9ff517
+```
+
 Claim-state movement:
 
 ```text
@@ -67,7 +79,13 @@ ASCII scan over changed files
 PASS
 ```
 
+## PR Identity
+
+```text
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-source-slot-dualization-gate-block64-20260621","number":4595,"state":"OPEN","title":"[physics-loop] s3-route2-source-slot-dualization-gate block64 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4595"}
+```
+
 ## Next Exact Action
 
-Commit, publish a branch, open a PR, and record PR identity without checking
-conflicts or mergeability.
+Try to construct a typed `S_dual` source-preparation map, or derive a
+readout-only inverse-square coefficient theorem if the source-map route stalls.

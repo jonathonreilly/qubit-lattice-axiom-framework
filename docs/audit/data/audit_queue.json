@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 304,
+    "critical": 303,
     "high": 302,
     "leaf": 588,
     "medium": 491
@@ -136,40 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": "Narrow A/B only: given the C_3 generator as cyclic axis relabelling and the trace-free C_3-singlet complement carrier, the fixed locus is the body diagonal with transverse weights (1,2), and the local Lefschetz density formula evaluates to 2/9. Local/global ABSS applicability, PL S^3 x R identification, and physical single-summand readout are not audited as claims here.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "three_generation_observable_theorem_note",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "flavor_asymmetry_2over9_forced_weight_2026-05-31",
-        "flavor_operator_realization_local_density_2026-05-31",
-        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
-        "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16",
-        "s3_cap_uniqueness_note",
-        "pl_topology_infrastructure_textbook_import_note_2026-05-17",
-        "s3_general_r_derivation_note"
-      ],
-      "direct_in_degree": 11,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.675,
-      "note_path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
-      "transitive_descendants": 288
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -8796,15 +8762,15 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 9,
+      "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.214,
+      "load_bearing_score": 12.721,
       "note_path": "docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_q_readout_factorization_theorem.py",
-      "transitive_descendants": 209
+      "transitive_descendants": 210
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -50410,6 +50376,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 124,
-  "total_pending": 1685
+  "ready_count": 123,
+  "total_pending": 1684
 }

@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 1348 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 1349 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 22 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -733,6 +732,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -10101,6 +10101,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using {H,Γχ}=0 and Hv=λv, the two evaluations give λ⟨v|Γχ|v⟩=-λ⟨v|Γχ|v⟩, so since λ≠0, ⟨v|Γχ|v⟩=0.  _(class `A`)_
 - **chain closes:** True — The implication follows directly from Hermiticity, anti-commutation, and the nonzero eigenvalue hypothesis. The conversion from zero Γχ expectation to Q=2/3 is an explicit quadratic identity, with no external physics input needed.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the hypotheses stated in the note. The runner source performs symbolic matrix checks and explicit eigenvector checks rather than importing empirical masses, calibrated constants, or prior contested premises. No cited authority is needed for the main implication, and the note correctly limits the framework-realization question as open rather than claiming closure.
+- **auditor confidence:** high
+
+### `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Parts A/B only: the cyclic axis permutation forces a one-dimensional fixed locus, transverse C3 weights (1,2)/(2,1), and exact local Lefschetz density 2/9; ABSS/global PL identification and physical readout are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The C3[111] cyclic permutation has fixed line (1,1,1), transverse eigenvalues {omega, omega^2} read as weights (1,2), and the unique trace-free pair gives L3(1,2)=2/9 via (omega-1)(omega^2-1)=3.  _(class `A`)_
+- **chain closes:** True — The narrowed A/B statement follows by exact finite linear algebra and the exact C3 Lefschetz-density sum, with the trace-free-complement input supplied by retained_bounded flavor authorities. The global PL S3 x R and single-summand physical readout bridges are explicitly outside this audited scope.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: char polynomial, fixed-locus rank, transverse weights, trace-free pair enumeration, and L3(1,2)=2/9 all check exactly. The runner source computes these identities with sympy/numpy rather than merely printing a pass string, and an independent hand check confirms the key factors and the 2/9 density. The retained_bounded upstream flavor notes supply the trace-free-complement interpretation; the open ABSS/global topology material is labelled diagnostic and is not used to prove the narrowed claim.
 - **auditor confidence:** high
 
 ### `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04`

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "work_history.ckm.cabibbo_bound_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_live_constants_canonical_edge_certificate_note_2026-06-18"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "work_history.ckm.cabibbo_bound_note",
         "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
         "u1_fermion_number_conservation_theorem_note_2026-05-02",
         "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
         "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
-        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
+        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+        "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ac4467ae4c8c19fb490009af9fe6de249301b2c67d6e109a8801e714eacdd328",
+      "note_hash": "a74572dd54d6190607fdb05c8e49ec54cecec653ad9915719d22b46f47b1d0ae",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

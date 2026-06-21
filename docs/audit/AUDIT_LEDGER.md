@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 935 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1686 |
+| unaudited | 1685 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 18 |
+| ~~audited_renaming~~ | 19 |
 | ~~audited_conditional~~ | 7 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 5 |
@@ -65,8 +65,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 51 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 18 |
-| `unaudited` | 2012 |
+| `audited_renaming` | 19 |
+| `unaudited` | 2011 |
 
 | claim_type | count |
 |---|---:|
@@ -1593,6 +1593,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_markov_generator_premise_classifier_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -19122,6 +19123,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The conclusion follows by substituting the retained K4 dimensional readout dim_C V = 2 into the stated tadpole convention. The proof does not require any numerical plaquette value or downstream running input.
 - **rationale:** The proof's only load-bearing work is exact algebraic substitution and simplification. The runner source checks Pauli-matrix identities and symbolic fourth-root substitutions, and it does not import PDG values, lattice numerical comparators, or tuned scales. Since the row adds only an algebraic specialization of a single retained parent dimensional readout plus the stated convention, it is decoration rather than an independent theorem.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the narrow alias that the current Quantum axiom's one-qubit-per-site premise identifies the former U4 k=1 per-site Cl(3) module bridge via M_2(C) ~= Cl(3,0), without closing downstream staggered-Dirac gates.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the qubit-per-site baseline, the older U4 bridge is no longer a separate input because the baseline's one qubit per site is precisely the single faithful complex Cl(3) module selection k(x)=1.  _(class `F`)_
+- **chain closes:** True — The restricted packet supports the alias: the accepted Quantum axiom supplies one qubit/M_2(C) per site, and the retained CL3 split authority supplies the M_2(C) ~= Cl(3,0) and 2-dimensional irreducible-module facts. What closes is an identification of existing concepts, not a new first-principles derivation.
+- **rationale:** The note's own boundary is alias/renaming support: it maps the old U4 k=1 bridge onto the accepted one-qubit-per-site axiom wording. This is not audited_decoration under cl3_complexification_split because the load-bearing move does not reduce to a single retained algebraic parent plus ordinary algebra; it depends on the accepted Quantum axiom and asserts identity between two framework descriptions. The runner confirms the textual boundary and Pauli/M_2(C) algebra, but it does not turn the alias into a class C computation.
 - **auditor confidence:** high
 
 ### `unification_basin_failure_note`

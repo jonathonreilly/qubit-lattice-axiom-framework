@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 211 |
+| **retained** | 212 |
 | **retained_no_go** | 212 |
 | **retained_bounded** | 973 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1587 |
+| unaudited | 1586 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1411 |
+| `audited_clean` | 1412 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1913 |
+| `unaudited` | 1912 |
 
 | claim_type | count |
 |---|---:|
@@ -157,6 +157,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alt_connectivity_family_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `alt_connectivity_family_complex_failure_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2014,6 +2015,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note is not eligible for candidate retained-grade because the Sommer scale, QCD running/threshold bridge, and g_bare=1/beta=6 normalization are not closed by the supplied retained surface.  _(class `A`)_
 - **chain closes:** True — The supplied parent authority is already narrowed to a bounded Wilson-loop/static-potential certificate and explicitly excludes the physical alpha_s(M_Z) bridge. The minimal-axiom and Wilson-matching authorities also explicitly do not supply g_bare=1, so the open-gate/status-correction conclusion follows from the restricted packet.
 - **rationale:** The audited claim is the demotion/source-boundary claim, not a retained physical alpha_s(M_Z) derivation. The runner verifies the finite certificate and firewall text while leaving PDG agreement, Sommer scale setting, and QCD running as non-authoritative context checks. The cited authorities support exactly that boundary: graph-first SU(3) supplies the structural surface, the current axioms do not supply g_bare=1, and the Wilson small-a theorem supplies only beta=2Nc/g_bare^2 inside a supplied action surface.
+- **auditor confidence:** high
+
+### `alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18`
+
+- **Note:** [`ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md`](../../docs/ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The audited claim is the dimensionless Sommer root r0/a extracted algebraically from the certificate's Cornell fit fields sigma and e, with the physical r0=0.5 fm anchor kept out of the proof.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the Cornell convention V(R)=V0+sigma R-e/R, the Sommer equation gives r0/a = sqrt((1.65 - e) / sigma).  _(class `A`)_
+- **chain closes:** True — Differentiating the stated Cornell potential gives F(R)=sigma+e/R^2, so F(r0)r0^2=1.65 reduces to sigma*(r0/a)^2+e=1.65. The quoted sigma and e evaluate to r0/a=5.005676254205751 and the physical anchor is only used afterward for a_fm.
+- **rationale:** The load-bearing step is a direct algebraic closure over the scoped certificate fields, not a definition substitution or an external comparator. The runner source computes the root from sigma and e, checks the force equation, checks agreement with the certificate fields, and exercises falsifiers for omitted e, wrong sign, wrong target, and nonpositive sigma. The verdict is clean only for the dimensionless root kernel; it does not derive the physical Sommer anchor, physical units, QCD running, or alpha_s(M_Z).
 - **auditor confidence:** high
 
 ### `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`

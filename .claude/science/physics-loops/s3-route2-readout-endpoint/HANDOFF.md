@@ -34,7 +34,13 @@ derived source/readout split.
 
 ## PR
 
-Pending.
+PR #4546: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4546
+
+Identity-only check:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block17-20260621","number":4546,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block17 conditional-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4546"}
+```
 
 ## Verification
 
@@ -70,5 +76,4 @@ selects `lambda=9/4` without importing the target.
 
 ## Next Exact Action
 
-After opening the block17 PR, create block18 for the coefficient-selection
-principle.
+Create block18 for the coefficient-selection principle.

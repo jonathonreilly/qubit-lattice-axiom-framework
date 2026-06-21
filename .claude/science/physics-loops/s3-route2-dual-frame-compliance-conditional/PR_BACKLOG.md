@@ -1,8 +1,20 @@
 # PR Backlog
 
-PR status: pending local verification and publish.
+PR status: opened.
 
-Expected command:
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4592
+```
+
+Identity-only view:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-dual-compliance-p2-derivation-block61-20260621","number":4592,"state":"OPEN","title":"[physics-loop] s3-route2-dual-frame-compliance block61 conditional-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4592"}
+```
+
+Command used:
 
 ```bash
 gh pr create \

@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 202 |
+| **retained** | 203 |
 | **retained_no_go** | 207 |
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1667 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1359 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1360 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -410,6 +408,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
@@ -5378,6 +5377,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For the explicit matrices, det(m I_4 + j S_cls)/m^4 = det(m I_3 + j T_gamma)/m^3 = det(m I_2 + j Z_odd)/m^2 = 1 - j^2/m^2, hence the baseline-subtracted log-determinant responses all equal log|1 - j^2/m^2|.  _(class `A`)_
 - **chain closes:** True — The source note gives explicit finite matrices and the determinant/spectral identities follow by direct algebra. No cited upstream authority or external physical comparator is required for the bounded scalar-baseline claim.
 - **rationale:** The load-bearing step is a genuine class (A) algebraic identity over explicit matrices, not a definition, renaming, or numerical comparator. The runner source instantiates the matrices directly and computes spectra, cubic identities, symbolic determinants, ratios, curvature, and a non-scalar-baseline counterfactual with exact SymPy operations rather than printing hard-coded pass lines. The clean verdict is limited to the stated finite-dimensional scalar-baseline theorem and does not ratify the parent normalization, branch convention, or observable-principle selection rule.
+- **auditor confidence:** high
+
+### `dm_neutrino_dirac_bridge_theorem_note_2026-04-15`
+
+- **Note:** [`DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md`](../../docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the local C^16 Clifford-algebra claim that the admitted M(phi) family is chiral off-diagonal and that Xi_5 is chiral diagonal in the stated convention.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-dm_neutrino_dirac_bridge_theorem_note_2026-04-15-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The spatial family M(phi)=sum_i phi_i Gamma_i anticommutes with gamma_5, hence P_L M(phi) P_L = P_R M(phi) P_R = 0, while Xi_5 commutes with gamma_5 and is not a chiral off-diagonal Dirac surface.  _(class `A`)_
+- **chain closes:** True — Within the declared algebraic scope, the explicit Clifford packet gives {Gamma_i,gamma_5}=0 for the spatial generators, so the projector block identities follow directly. The selector, weak-axis choice, and upstream derivation of the family are treated only as admitted out-of-scope context.
+- **rationale:** The load-bearing algebra closes from the finite matrix definitions and standard Clifford identities, and the runner source actually instantiates the 16x16 tensor-product operators rather than merely printing expected values. The Xi_5 exclusion also closes algebraically because Xi_5 commutes with gamma_5 and has no LR bridge block. The runner's coarse simplex scan is not an exact proof of the continuous V_sel minima, but the source explicitly excludes that selector derivation from the audited load-bearing scope.
 - **auditor confidence:** high
 
 ### `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17`

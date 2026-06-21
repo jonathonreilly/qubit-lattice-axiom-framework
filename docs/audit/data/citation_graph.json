@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "flavor_readout_gate_equals_carrier_identification_2026-05-31"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "flavor_readout_gate_equals_carrier_identification_2026-05-31",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
         "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17",
         "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
         "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
         "u1_fermion_number_conservation_theorem_note_2026-05-02",
-        "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18"
+        "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
+        "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6873bf931a0fc93497abd7f028ccde44a921d5f336a102c4612faf17647507b4",
+      "note_hash": "a47bb916ca0e71e0e18e2df4bd80b245831e673279ad56eef0e112135e93476d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

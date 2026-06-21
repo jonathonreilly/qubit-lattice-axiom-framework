@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1544 |
-| Retained-grade rows, including boxed decorations | 1444 |
+| Applied audit verdicts | 1545 |
+| Retained-grade rows, including boxed decorations | 1445 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 211 |
-| Retained bounded rows | 968 |
+| Retained bounded rows | 969 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 37 |
-| Unaudited rows | 1602 |
+| Unaudited rows | 1601 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 23 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1604 |
+| Total pending rows | 1603 |
 | Ready rows | 96 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
-| Medium pending | 447 |
+| Medium pending | 446 |
 | Leaf pending | 585 |
 
 Next ready rows by queue order:
 
-- [`emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18`](../../docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`post_record_admitted_sample_target_vector_interface_2026-06-06`](../../docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md) - medium; unaudited
 - [`post_record_selection_rule_target_vector_firewall_2026-06-06`](../../docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md) - medium; unaudited
 - [`post_record_supplied_kernel_selection_rule_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 - [`wilson_m_h_per_channel_closure_bounded_note_2026-05-09`](../../docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md) - medium; unaudited
+- [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

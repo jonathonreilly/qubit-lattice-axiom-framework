@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 968 |
+| **retained_bounded** | 969 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1602 |
+| unaudited | 1601 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1405 |
+| `audited_clean` | 1406 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1928 |
+| `unaudited` | 1927 |
 
 | claim_type | count |
 |---|---:|
@@ -440,6 +440,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_lorentz_invariance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_product_law_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6032,6 +6033,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The quartic artifact A4 is independent of p0 and its signed-permutation O_h orbit-averaged spatial Hessian is 4(kx^2+ky^2+kz^2) I_3.  _(class `A`)_
 - **chain closes:** True — The central-difference expansion, p0-independence, Hessian entries, and signed-permutation average are exact algebraic consequences of the kinetic expression stated in the theorem. The conclusion is only the bounded structural channel delta c_t=0, delta c_s=lambda, so no one-loop coefficient, anomalous dimension, or LV-bound sufficiency is imported.
 - **rationale:** The load-bearing result is a direct symbolic/algebraic check: the runner computes the series, Hessian, and O_h average rather than merely printing constants. The one cross-note runner guard concerns parent-note bookkeeping and is not part of the theorem's mathematical closure. Within the note's explicitly bounded continuous-time/spatial-central-difference surface, the claimed spatial-only O_h-scalar channel follows without external comparator, tuned numerical input, or hidden coefficient claim.
+- **auditor confidence:** high
+
+### `emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18`
+
+- **Note:** [`EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md`](../../docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic exchange-matrix theorem for any positive two-sector mutual-drag velocity flow, including the fixed common-speed line, invariant weighted speed, and attractive speed-difference/ratio mode.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given a linear mutual-drag two-speed flow with a,b>0 and no common-speed source, the matrix is [[-a,a],[b,-b]], so d(v_F-v_B)/dl=-(a+b)(v_F-v_B).  _(class `A`)_
+- **chain closes:** True — The row-sum-zero fixed-line condition and mutual-drag sign hypotheses uniquely give rows (-a,a) and (b,-b), and direct calculation gives invariant b v_F+a v_B and eigenvalues 0 and -(a+b). Thus the stated attraction follows for positive a,b; deriving physical a,b remains a downstream bridge outside this audited scope.
+- **rationale:** The audited claim is the bounded algebraic implication, not the physical derivation of the one-loop coefficients. The runner source uses exact Fraction arithmetic to check the exchange matrix invariants, difference eigenmode, ratio-flow sign, and uniqueness under row-sum-zero plus mutual-drag signs; the non-algebra pass lines only police source/parent scope. No cited authority or registered primitive is needed for this narrow matrix theorem, while the physical positivity/coefficient and LV-bound residuals remain explicitly outside scope.
 - **auditor confidence:** high
 
 ### `emergent_product_law_audit_2026-04-11`

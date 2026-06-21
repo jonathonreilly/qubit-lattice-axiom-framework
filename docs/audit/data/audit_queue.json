@@ -3,7 +3,7 @@
     "critical": 292,
     "high": 280,
     "leaf": 585,
-    "medium": 447
+    "medium": 446
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17457,28 +17457,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.248,
-      "note_path": "docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_emergent_lorentz_velocity_rg_exchange_matrix_2026_06_18.py",
-      "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "post_record_admitted_sample_target_vector_interface_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17651,14 +17629,44 @@
         "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08",
         "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.67,
       "note_path": "docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_wilson_m_h_per_channel_closure.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18",
+        "kinetic_isotropy_primitive",
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "emergent_lorentz_invariance_note",
+        "minimal_axioms",
+        "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py",
       "transitive_descendants": 2
     },
     {
@@ -30341,36 +30349,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_normalized_schur_determinant_selector_2026_04_19.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18",
-        "kinetic_isotropy_primitive",
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "emergent_lorentz_invariance_note",
-        "minimal_axioms",
-        "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py",
       "transitive_descendants": 2
     },
     {
@@ -48223,5 +48201,5 @@
     }
   ],
   "ready_count": 96,
-  "total_pending": 1604
+  "total_pending": 1603
 }

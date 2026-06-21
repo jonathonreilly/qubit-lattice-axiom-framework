@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08"
+      "to": "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18"
+      "to": "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
+        "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18",
         "post_record_admitted_sample_target_vector_interface_2026-06-06",
         "post_record_selection_rule_target_vector_firewall_2026-06-06",
         "post_record_supplied_kernel_selection_rule_interface_2026-06-06",
         "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
         "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10",
         "teleportation_resource_from_poisson_note",
-        "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18"
+        "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "099351fcc033810d4fd6db5d00aac4f52fc5d6767d5d5788585edeff80848864",
+      "note_hash": "560deab50f34a31cff38686ffc8d6584f2e2be4c15b516ea1f54014417e3733e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

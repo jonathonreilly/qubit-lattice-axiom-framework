@@ -30,11 +30,20 @@ python3 -m py_compile scripts/frontier_s3_time_theta_to_slice_readout_witness_cr
 Focused review disposition: PASS WITH BOUNDED CLAIMS. The audit pipeline was
 not run and no audit verdicts were applied.
 
-Commit, push this branch, and open a review PR without refreshing it to main
-and without checking PR conflict state.
+PR opened:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4530
+```
+
+The PR identity was verified without querying mergeability or conflict state.
 
 ## Remaining blocker
 
 The next positive target is still a typed E-center source/readout primitive
 that supplies `q_E = 15/8` or the equivalent `c_TE = -8/9` without using fitted
 endpoint data.
+
+Recommended next campaign action: try the typed E-center source/readout
+primitive first; if it hits the same wall, try the typed `R_conn`/`F_adj`
+center bridge with the witness criterion as the acceptance test.

@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1665 |
+| unaudited | 1664 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 21 |
+| ~~audited_renaming~~ | 22 |
 | ~~audited_conditional~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 6 |
@@ -66,8 +66,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 53 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 21 |
-| `unaudited` | 1991 |
+| `audited_renaming` | 22 |
+| `unaudited` | 1990 |
 
 | claim_type | count |
 |---|---:|
@@ -1602,6 +1602,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_residual_environment_finite_box_bounded_coefficient_narrow_note_2026-05-10` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `higgs_mass_from_axiom_status_correction_audit_note_2026-05-02` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -10873,6 +10874,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
 - **rationale:** The runner source performs symbolic algebra for the cyclic power equivalence, coordinate substitution, Brannen-envelope Koide ratio, and simple representation face constants; it does not merely print pass text. The source note repeatedly limits the conclusion to arithmetic/representation-theoretic collapse and explicitly excludes the physical/source-law bridge, so that open bridge is not part of the ratified scoped claim. Within that bounded scope, the conclusion follows as class A algebra over the packet's stated inputs.
 - **auditor confidence:** judicial
+
+### `koide_q_delta_linking_relation_theorem_note_2026-04-20`
+
+- **Note:** [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](../../docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal definition-level identity: for integer d >= 1, with Q_d = 2/d and Delta_d = 2/d^2, Delta_d = Q_d/d, giving Q_3 = 2/3, Delta_3 = 2/9, and Delta_3/Q_3 = 1/3.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-koide_q_delta_linking_relation_theorem_note_2026-04-20-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note defines Q_d = 2/d and Delta_d = 2/d^2, then substitutes those definitions to obtain Delta_d = Q_d/d.  _(class `E`)_
+- **chain closes:** True — After the two definitions are accepted, Q_d/d = (2/d)/d = 2/d^2 = Delta_d. The packet does not derive or physically interpret either defined quantity, so closure is formal only.
+- **rationale:** Issue: the load-bearing work is the substitution of the definitions Q_d = 2/d and Delta_d = 2/d^2, so the result is a definition-level formal identity rather than an independent derivation of either quantity. Why this blocks clean: audited_clean requires class C or class A over independent retained-grade inputs, and no retained framework input derives Q_d or Delta_d here. Repair target: derive either Q_d or Delta_d from retained framework premises or attach this algebra as a corollary to a retained parent with independent content. Claim boundary until fixed: the row supports only Delta_d = Q_d/d and the rational d = 3 values.
+- **auditor confidence:** high
 
 ### `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`
 

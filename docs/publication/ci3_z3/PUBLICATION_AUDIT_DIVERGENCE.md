@@ -17,11 +17,12 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 168 |
+| critical | `unaudited` | 167 |
 | high | `unaudited` | 166 |
 | medium | `unaudited` | 95 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
+| critical | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |
 
@@ -101,7 +102,7 @@ publication tables phrase it.
 | critical | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | critical | `koide_q_delta_closure_package_readme_2026-04-21` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
-| critical | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| critical | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | `audited_renaming` | `audited_renaming` | DERIVATION_ATLAS.md |
 | critical | `lepton_shared_higgs_universality_collapse_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `lepton_shared_higgs_universality_underdetermination_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `lepton_single_higgs_pmns_triviality_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

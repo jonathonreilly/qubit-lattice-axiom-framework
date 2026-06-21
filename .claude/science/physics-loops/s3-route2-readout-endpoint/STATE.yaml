@@ -1,0 +1,41 @@
+loop_slug: s3-route2-readout-endpoint
+block: 21
+date: 2026-06-21
+branch: physics-loop/s3-route2-readout-endpoint-block21-20260621
+base: origin/main
+base_commit: 4f39c3f36
+mode: campaign_science_block
+actual_current_surface_status: exact-support
+target_claim: s3_time_theta_to_slice_coupling_note
+active_route: direct_consumer_ecenter_dependency_classification
+hard_residual: unresolved_E_center_readout_entry_rho_E
+automation_lock:
+  mode: degraded_branch_local
+  note: "repo automation lock status failed with permission error at /Users/jonreilly; independent worktree used"
+files_touched:
+  - docs/S3_TIME_DIRECT_CONSUMER_ECENTER_DEPENDENCY_CLASSIFICATION_NOTE_2026-06-21.md
+  - scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py
+  - outputs/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-readout-endpoint/
+verification:
+  new_runner: "TOTAL: PASS=29, FAIL=0"
+  e_center_blindness_parent: "TOTAL: PASS=14, FAIL=0"
+  primitive_chain_parent: "TOTAL: PASS=24, FAIL=0"
+  exact_readout_parent: "PASS=11 FAIL=0"
+  exact_time_parent: "PASS=8 FAIL=0"
+  py_compile: pass
+  diff_check: pass
+  wording_scan: pass
+open_imports:
+  - E-center/source/readout rule selecting rho_E
+  - final physical readout primitive
+  - Einstein/Regge final dynamics bridge
+trace_gate:
+  trace_class: upstream_support
+  reachability_to_target: supports
+  artifact_role: runner_certificate
+pr:
+  status: pending
+  title: "[physics-loop] s3-route2-readout-endpoint block21 exact-support"
+next_exact_action: "Commit, push, and open the block21 review PR."
+stop_condition: "Only after PR handoff is complete, then continue the campaign if runtime remains."

@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block25-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4554
+```
+
+Identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block25-20260621","number":4554,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block25 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4554"}
+```
+
 Block25 isolates the scalar-to-Route-2 typecast normalization as the exact
 remaining theorem for this route.
 
@@ -62,5 +74,5 @@ su3_R_conn_8_9 -> route2_rho_E_21_4
 
 ## Next Action
 
-Open the block25 PR, verify only identity fields, then start block26 on the
-rank-1 opportunity: E-center functoriality / typed landing theorem.
+Start block26 on the rank-1 opportunity: E-center functoriality / typed
+landing theorem. Do not refresh existing PRs and do not check PR conflicts.

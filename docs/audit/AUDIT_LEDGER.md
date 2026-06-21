@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 207 |
+| **retained** | 208 |
 | **retained_no_go** | 208 |
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1658 |
+| unaudited | 1657 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 23 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1366 |
+| `audited_clean` | 1367 |
 | `audited_conditional` | 13 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 23 |
-| `unaudited` | 1984 |
+| `unaudited` | 1983 |
 
 | claim_type | count |
 |---|---:|
@@ -796,6 +796,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_dred_normalization_freedom_no_go_note_2026-06-15` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q_minimal_scale_free_selector_note_2026-04-22` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11071,6 +11072,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For every c > 0, the baseline D_red = c I_2 satisfies the same split, additivity, and determinant restriction structure after a source-coordinate rescaling.  _(class `A`)_
 - **chain closes:** True — The determinant calculation gives W_c = log(1+k_+/c)+log(1+k_perp/c), and substituting u_i = k_i/c recovers the same normalized law for every c > 0. The zero-source derivative 1/c shows that only an externally fixed source unit can distinguish c, which is outside the audited two-slot algebra.
 - **rationale:** The load-bearing step is an exact finite-dimensional algebraic counterfamily, not a numerical match or a symbol renaming. The runner source genuinely computes the split projectors, determinant identity, source rescaling, derivatives, and dual stationary source with Sympy; the final narrative PASS checks are not load-bearing. The conclusion is narrow: it only says the reduced split/determinant algebra cannot derive the normalization c = 1, while leaving an external physical response-unit theorem or convention as the possible repair.
+- **auditor confidence:** high
+
+### `koide_q_minimal_scale_free_selector_note_2026-04-22`
+
+- **Note:** [`KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the abstract real three-slot C3 invariant-count theorem and the algebraic normalization bridge E_perp/E_+=2/kappa; no physical carrier identification or value-law selection is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_q_minimal_scale_free_selector_note_2026-04-22-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** At quadratic order, the C3-invariant scalar space is exactly two-dimensional, Q(x)=A r0^2+C(r1^2+r2^2), so quotienting by overall scale leaves exactly one nontrivial ratio rho_Q=E_perp/E_+.  _(class `A`)_
+- **chain closes:** True — The invariant-count step closes by elementary C3 permutation-invariant quadratic-form algebra: invariant symmetric matrices have one diagonal and one off-diagonal parameter, equivalently the r0^2 and r1^2+r2^2 basis. The retained cited Frobenius theorem supplies E_+=3a^2 and E_perp=6|b|^2, and the stated coordinate substitution gives E_perp/E_+=2/kappa exactly.
+- **rationale:** The load-bearing step is a genuine algebraic closure over the explicit carrier, not a physical import or definition substitution. The runner source actually solves the linear and quadratic invariance equations and checks the normalization bridge; it does not import a fitted value or hard-code the physical carrier premise. The only cited upstream authority is marked retained, and the note explicitly excludes the open physical carrier-identification and value-law choices from the audited scope.
 - **auditor confidence:** high
 
 ### `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25`

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1488 |
-| Retained-grade rows, including boxed decorations | 1407 |
-| Retained positive theorems | 207 |
+| Applied audit verdicts | 1489 |
+| Retained-grade rows, including boxed decorations | 1408 |
+| Retained positive theorems | 208 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 938 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1658 |
+| Unaudited rows | 1657 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 13 |
 | Audited renaming rows | 23 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1660 |
-| Ready rows | 119 |
+| Total pending rows | 1659 |
+| Ready rows | 118 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 290 |
+| High pending | 289 |
 | Medium pending | 490 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`koide_q_minimal_scale_free_selector_note_2026-04-22`](../../docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md) - high; unaudited
 - [`ckm_five_sixths_bridge_support_note`](../../docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) - high; unaudited
 - [`yt_lsp_signed_record_source_readout_support_note_2026-05-24`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md) - high; unaudited
 - [`diamond_ideal_lockin_detector_theorem_note_2026-06-17`](../../docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md) - high; unaudited
@@ -51,18 +50,19 @@ Next ready rows by queue order:
 - [`causal_field_reconciliation_note`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md) - medium; unaudited
 - [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 - [`flavor_readout_gate_equals_carrier_identification_2026-05-31`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md) - medium; unaudited
+- [`record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18`](../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **431**.
+- Non-retained-grade cited rows in publication tables: **430**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 163 |
-| high | `unaudited` | 162 |
+| high | `unaudited` | 161 |
 | medium | `unaudited` | 95 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |

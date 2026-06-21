@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 988 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1555 |
+| unaudited | 1554 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 8 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1433 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1881 |
+| `unaudited` | 1880 |
 
 | claim_type | count |
 |---|---:|
@@ -1572,6 +1572,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `z_n_spectral_asymmetry_physical_identification_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -2063,6 +2064,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The note is not eligible for candidate retained-grade because the Sommer scale, QCD running/threshold bridge, and g_bare=1/beta=6 normalization are not closed by the supplied retained surface.  _(class `A`)_
 - **chain closes:** True — The supplied parent authority is already narrowed to a bounded Wilson-loop/static-potential certificate and explicitly excludes the physical alpha_s(M_Z) bridge. The minimal-axiom and Wilson-matching authorities also explicitly do not supply g_bare=1, so the open-gate/status-correction conclusion follows from the restricted packet.
 - **rationale:** The audited claim is the demotion/source-boundary claim, not a retained physical alpha_s(M_Z) derivation. The runner verifies the finite certificate and firewall text while leaving PDG agreement, Sommer scale setting, and QCD running as non-authoritative context checks. The cited authorities support exactly that boundary: graph-first SU(3) supplies the structural surface, the current axioms do not supply g_bare=1, and the Wilson small-a theorem supplies only beta=2Nc/g_bare^2 inside a supplied action surface.
+- **auditor confidence:** high
+
+### `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`
+
+- **Note:** [`ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md`](../../docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Algebraic one-loop SU(3) piecewise running and Lambda-transition consequences conditional on imposing continuity of alpha_s across abstract heavy-flavor thresholds.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Continuity at the threshold, alpha_s^hi(M) = alpha_s^lo(M), imposes b0(n_f_hi) log(M/Lambda_hi) = b0(n_f_lo) log(M/Lambda_lo), yielding Lambda_lo = M * (Lambda_hi / M) ** [b0(n_f_hi) / b0(n_f_lo)].  _(class `A`)_
+- **chain closes:** False — The algebra from an imposed continuity condition to the Lambda transition and summed-log piecewise map is correct. The restricted packet does not derive the threshold continuity condition itself from the declared SU(3) one-loop running surface.
+- **rationale:** Issue: the equality alpha_s^hi(M) = alpha_s^lo(M) is imposed as the leading-order matching rule, not derived from cited retained inputs. Why this blocks: the one-loop beta equation fixes fixed-n_f segment slopes but not the finite jump or no-jump boundary condition at a threshold, and the runner sets x_below = current_x before checking continuity. Repair target: a retained/native LO decoupling theorem or approved premise deriving continuity across the heavy-threshold effective theories. Claim boundary until fixed: the packet supports only algebraic consequences of assumed continuity matching.
 - **auditor confidence:** high
 
 ### `alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18`

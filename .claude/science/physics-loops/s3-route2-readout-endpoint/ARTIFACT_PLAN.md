@@ -6,8 +6,8 @@
 - [x] Add conditional support note.
 - [x] Capture runner output.
 - [x] Run focused verification and overclaim scan.
-- [ ] Commit and publish branch.
-- [ ] Open PR.
+- [x] Commit and publish branch.
+- [x] Open PR.
 
 ## Next Block
 

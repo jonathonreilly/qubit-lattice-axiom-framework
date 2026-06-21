@@ -51,5 +51,11 @@ open_imports:
   - "No current-source derivation of the single-adjoint-line selector."
   - "No proof that Route-2 E-center readout should use complement rank rather than line rank/full adjoint/F_adj-as-excess."
 next_exact_action: "Commit, publish, and open the block37 PR. Then attack whether current source geometry can type the single adjoint line."
-pr_status: pending
+pr_status:
+  number: 4567
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4567"
+  title: "[physics-loop] s3-route2-readout-endpoint block37 conditional-support"
+  head: physics-loop/s3-route2-readout-endpoint-block37-20260621
+  base: main
+  state: OPEN
 stop_condition: "None; campaign remains active after PR handoff."

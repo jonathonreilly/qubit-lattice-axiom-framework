@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_lightcone_primitive_theorem_note_2026-05-10"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "record_unbounded_finite_additivity_schema_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
         "koide_lightcone_primitive_theorem_note_2026-05-10",
         "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
         "distance_law_definitive_note",
         "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
         "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
         "distance_law_preserving_third_family_note",
-        "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
+        "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
+        "record_unbounded_finite_additivity_schema_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "82b44772c2a73bd3c0f39a661d9a4d65561e46d0441f50cec08d55c19b022f91",
+      "note_hash": "e68644b44e1f46b3a37c779bdf05819ca6619040feec2bd37eec43b245d4e6da",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

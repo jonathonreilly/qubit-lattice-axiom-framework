@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 210 |
+| **retained** | 211 |
 | **retained_no_go** | 210 |
 | **retained_bounded** | 958 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1616 |
+| unaudited | 1615 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1393 |
+| `audited_clean` | 1394 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1942 |
+| `unaudited` | 1941 |
 
 | claim_type | count |
 |---|---:|
@@ -782,6 +782,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10978,6 +10979,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For each k, rho(C^k)=Omega^{-1} C^k Omega=omega^k C^k, so the C^k line carries character k and Hermiticity pairs k with d-k into real doublets.  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from the explicit matrices C and Omega plus root-of-unity algebra; the retained cited authority is contextual for the d=3 carrier and not needed for the C1-C5 representation-theory proof. No physical readout, selector, numerical comparator, or unretained bridge is imported.
 - **rationale:** The load-bearing bridge is a direct algebraic matrix identity, not a definition substitution or symbol renaming. The runner source constructs C, Omega, rho, the Hermitian basis pieces, and the multiplicity table, then checks the actual matrix identities rather than printing constants or importing a contested premise. The proof and runner also correctly distinguish the nontrivial clock-conjugation action from trivial shift-conjugation. Residual risk is only convention-level, such as rechecking the chosen shift orientation and corresponding rotation-matrix sign.
+- **auditor confidence:** high
+
+### `koide_lightcone_primitive_theorem_note_2026-05-10`
+
+- **Note:** [`KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md`](../../docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure algebraic equivalence between Q(v)=2/3 for the eigenvalues of a Hermitian Z3-equivariant 3x3 operator and a²=|b|²+|c|² for A=aI+bR+cR² with c=b*.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_lightcone_primitive_theorem_note_2026-05-10-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Q(v) = (3a² + 6β²)/9a² = 1/3 + (2/3)(β/a)², so Q(v)=2/3 iff β²=a²/2 iff a²=|b|²+|c|².  _(class `A`)_
+- **chain closes:** True — Using λ_g=a+2βcos(φ+2πg/3), the Z3 cosine sums give Σv_g=3a and Σv_g²=3a²+6β². Since v is positive, a>0, so the Koide residual vanishes exactly when a²=2β²=|b|²+|c|².
+- **rationale:** The proof is a direct algebraic computation in the specified Z3-circulant basis. The runner source constructs R and A, verifies the eigenvalue parametrization and sum identities, and reduces the Koide residual to the negative of the LCC residual without importing empirical masses or upstream notes. The note explicitly does not claim a physical derivation of Koide, and within this narrowed algebraic scope the chain closes.
 - **auditor confidence:** high
 
 ### `koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02`

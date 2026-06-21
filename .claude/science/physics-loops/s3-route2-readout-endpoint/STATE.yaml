@@ -1,0 +1,59 @@
+loop: s3-route2-readout-endpoint
+mode: campaign
+date: 2026-06-21
+branch: physics-loop/s3-route2-readout-endpoint-block17-20260621
+base: origin/main
+base_commit: 2ddaf0ccf
+block: 17
+active_route: finite_frame_riesz_dual_leg_count_boundary
+target_triple: "(-1, -2, 21/4)"
+target_residual: "rho_E = beta_E/alpha_E = 21/4, equivalently lambda = q_E/q_T = 9/4"
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+bare_retained_allowed: false
+audit_actions: none
+main_push_actions: none
+pr_conflict_checks: none
+lock_mode: degraded
+lock_degraded_reason: "repo automation lock helper previously errored on /Users/jonreilly path; branch-local independent worktree used"
+files_touched:
+  - docs/QUARK_ROUTE2_FINITE_FRAME_DUAL_LEG_COUNT_BOUNDARY_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.py
+  - logs/runner-cache/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-readout-endpoint/
+claim_state_movement:
+  summary: "Conditional-support / no-go boundary: two reciprocal unit-frame analysis legs reproduce lambda=9/4 and rho_E=21/4, but Parseval frames, canonical Riesz reconstruction, and one analysis leg do not; the exact readout map observes only product lambda and does not derive leg_count=2 or a source/readout split."
+  import_retired: []
+  imports_exposed:
+    - "A theorem selecting two independent reciprocal unit-frame analysis legs remains open."
+    - "A theorem selecting a source/readout split rather than only the product lambda remains open."
+prior_pending_blocks_not_main_dependencies:
+  - "PR #4537 block08 exact-support: E-center carrier firewall"
+  - "PR #4538 block09 no-go: reciprocal projector degree no-go"
+  - "PR #4539 block10 conditional-support: finite-frame/Riesz one-factor boundary"
+  - "PR #4540 block11 no-go: source/readout split gauge-underdetermined"
+  - "PR #4541 block12 no-go: rank-one K_R leg factorization"
+  - "PR #4542 block13 no-go: K_R source-side Gram/tensor-power route"
+  - "PR #4543 block14 no-go: channel metric Schur-free ratio"
+  - "PR #4544 block15 no-go: nonseparable quadratic equivariant map coefficient freedom"
+  - "PR #4545 block16 exact-support: theta-to-slice rho_E dependency firewall"
+verification:
+  new_runner: "PASS=9 FAIL=0"
+  exact_readout_map: "PASS=11 FAIL=0"
+  kappa_covariance_no_go: "PASS=7 FAIL=0"
+  quadratic_covariance_no_go: "PASS=11 FAIL=0"
+  e_center_lift_attempt: "PASS=46 FAIL=0"
+  exact_time_coupling: "PASS=8 FAIL=0"
+  parent_theta_to_slice_runner: "PASS=12 FAIL=0"
+  bilinear_tensor_carrier: "PASS=4 FAIL=0"
+  py_compile: pass
+  git_diff_check: pass
+  overclaim_scan: pass
+pr:
+  number: null
+  url: null
+  state: not_opened_yet
+next_exact_action: "Run focused verification, open block17 PR, then pivot to the coefficient-selection principle."
+stop_condition: "Do not stop campaign merely because this block is conditional-support; continue while runtime remains."

@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1680
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 120
+**Total pending:** 1679
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 122
 
 By criticality:
-- `critical`: 321
+- `critical`: 320
 - `high`: 301
 - `medium`: 485
 - `leaf`: 573
@@ -15,13 +15,13 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | critical | 681 | 18.41 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_neutrino_dirac_bridge_theorem.py` |
-| 2 | `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 515 | 13.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py` |
-| 3 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | unaudited | critical | 504 | 13.98 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py` |
-| 4 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | unaudited | critical | 384 | 12.09 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cpt_check.py` |
-| 5 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | critical | 382 | 16.58 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py` |
-| 6 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | audit_in_progress | critical | 374 | 12.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py` |
-| 7 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | unaudited | critical | 373 | 16.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py` |
+| 1 | `g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 515 | 13.01 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py` |
+| 2 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | unaudited | critical | 504 | 13.98 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py` |
+| 3 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | unaudited | critical | 384 | 12.09 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cpt_check.py` |
+| 4 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | critical | 382 | 16.58 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py` |
+| 5 | `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | audit_in_progress | critical | 374 | 12.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py` |
+| 6 | `gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17` | bounded_theorem | unaudited | critical | 373 | 16.55 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py` |
+| 7 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | unaudited | critical | 370 | 15.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hw1_second_order_return_shape_theorem.py` |
 | 8 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 361 | 20.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/su3_casimir_fundamental_check.py` |
 | 9 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | unaudited | critical | 325 | 13.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
 | 10 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | critical | 308 | 15.77 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_axis_symmetry_s3_discriminator.py` |

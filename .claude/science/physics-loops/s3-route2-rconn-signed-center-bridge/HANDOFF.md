@@ -2,6 +2,9 @@
 
 Block71 package:
 
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4602
+- PR identity:
+  `{"baseRefName":"main","headRefName":"physics-loop/s3-route2-rconn-center-bridge-block71-20260621","number":4602,"state":"OPEN","title":"[physics-loop] s3-route2-rconn-signed-center-bridge block71 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4602"}`
 - Note: `docs/QUARK_ROUTE2_RCONN_SIGNED_CENTER_BRIDGE_SELECTOR_FIREWALL_NOTE_2026-06-21.md`
 - Runner: `scripts/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.py`
 - Output: `outputs/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.txt`

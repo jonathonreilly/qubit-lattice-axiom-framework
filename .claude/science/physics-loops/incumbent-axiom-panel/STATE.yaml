@@ -2,18 +2,21 @@ loop_slug: incumbent-axiom-panel
 mode: blind-expert-panel-review (meta / governance)
 target_status: honest first-principles verdict on the EXISTING foundation
 launch_date: "2026-06-20"
-last_checkpoint_utc: "2026-06-21T06:30:00Z"
-current_branch: physics-loop/incumbent-axiom-panel-block01-20260620
+last_checkpoint_utc: "2026-06-21T07:10:00Z"
+current_block: block02-clean
+current_branch: physics-loop/incumbent-axiom-panel-block02-clean-20260620
 status_authority: independent audit lane / owner only
 
 posture: >
-  A single blind ten-physicist panel judged the framework's six EXISTING
-  foundation items (A1 Lattice, A2 Quantum, A3 Record; P1 scale_reference,
-  P2 kinetic_isotropy, P3 realized_state) from first principles, NOT deferring
-  to the framework's self-justification or admissibility rulings. The governance
-  question: are the incumbents held to the same standard that just rejected the
-  four proposed adds (block05 companion)? Nothing here is adopted, demoted,
-  split, or re-graded; the audit lane / owner is the sole status authority.
+  Two blind ten-physicist panels judged the framework's six EXISTING foundation
+  items (A1 Lattice, A2 Quantum, A3 Record; P1 scale-reference, P2 kinetic-
+  isotropy, P3 realized-state) from first principles. block01 (anchored) gave the
+  panel the AXIOM_MINIMALITY_POLICY, the machine registry, and the source notes.
+  block02 (CLEAN, this checkpoint) gave the panel ONLY the bare statements — no
+  policy, no registry, no source notes, no repo files — so its verdicts are
+  first-principles physics judgments suitable for informing a policy rewrite
+  without circularity. Nothing is adopted, demoted, split, or re-graded; the
+  audit lane / owner is the sole status authority.
 
 governance:
   proposal_allowed: false   # owner governance decision required
@@ -22,60 +25,84 @@ governance:
   splits_axiom: false
   sets_audit_verdict: false
   edits_axiom_premise_nodes: false
+  context_supplied_to_panel_block02: none   # bare statements only
   read_only_paths: ["docs/audit/data/", "docs/MINIMAL_AXIOMS_2026-06-05.md", "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md", "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md", "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"]
   approval_route: "docs/audit/AXIOM_MINIMALITY_POLICY.md section 6"
 
 current_status: >
-  block01 blind incumbent-foundation panel review complete. Ten physicists judged
-  the six existing items COLD from first principles. Per-panel system verdicts:
-  8 needs_revision, 2 sound_with_concerns, 0 sound, 0 unsound. Synthesized
-  verdict: NEEDS_REVISION, driven entirely by P2 and the A3 K/CPT-orbit clause —
-  not by the clean core. Held to the same standard that block05 used to reject
-  the four proposed adds, two incumbents would fail: P2 (grandfathered emergent-
-  Lorentz answer) and A3's K/CPT-orbit clause (smuggled superselection/CPT/
-  occupancy). Review note + block01 certificate + STATE + GOAL written.
-  vocab_lint --fix run. No forbidden file touched.
+  block02 CLEAN incumbent-foundation panel review complete. Ten physicists judged
+  the six existing items COLD from the bare statements only — NO policy / registry
+  / source notes / repo. Per-panel system verdicts: 10 needs_revision, 0
+  sound_with_concerns, 0 sound, 0 unsound (vs block01 anchored: 8 / 2 / 0 / 0).
+  Synthesized verdict: NEEDS_REVISION. The two headline findings reproduce WITHOUT
+  policy and harden: A3's disclaimer-vs-definition contradiction (10/10) and P2's
+  emergent-Lorentz-answer-as-premise + unsupplied-time-axis (10/10 mis-tiered).
+  New clean teeth: M_2(C) is a factor -> trivial center -> no central
+  decomposition. New system finding: a dynamics and a time axis are presupposed by
+  P2/A3 but posited nowhere. P3 is harsher clean (0 pass/10 concern) because its
+  counterfactual-test guard lives in the source note, invisible to a bare-text
+  panel. Clean review note + block02 certificate + STATE updated. vocab_lint --fix
+  run. No forbidden audit/publication file touched.
 
 per_item_tally:
-  A1_Lattice:        {muster: {pass: 9, concern: 1, fail: 0}, tiered: {yes: 10, no: 0}, verdict: PASSES}
-  A2_Quantum:        {muster: {pass: 7, concern: 3, fail: 0}, tiered: {yes: 10, no: 0}, verdict: PASSES (Cl(3,0) caveat)}
-  A3_Record:         {muster: {pass: 0, concern: 9, fail: 1}, tiered: {yes: 3, no: 7}, verdict: DOES NOT CLEANLY PASS -> split}
-  P1_scale_reference:{muster: {pass: 10, concern: 0, fail: 0}, tiered: {yes: 10, no: 0}, verdict: PASSES CLEANLY (unanimous)}
-  P2_kinetic_isotropy:{muster: {pass: 0, concern: 2, fail: 8}, tiered: {yes: 1, no: 9}, verdict: FAILS -> Tier-A}
-  P3_realized_state: {muster: {pass: 5, concern: 5, fail: 0}, tiered: {yes: 10, no: 0}, verdict: PASSES (usage concerns)}
+  A1_Lattice:        {muster: {pass: 8,  concern: 2,  fail: 0}, tiered: {yes: 10, no: 0}, verdict: PASSES}
+  A2_Quantum:        {muster: {pass: 9,  concern: 1,  fail: 0}, tiered: {yes: 10, no: 0}, verdict: PASSES (Cl(3,0) caveat)}
+  A3_Record:         {muster: {pass: 0,  concern: 2,  fail: 8}, tiered: {yes: 0,  no: 10}, verdict: FAILS / DOES NOT PASS -> split}
+  P1_scale_reference:{muster: {pass: 10, concern: 0,  fail: 0}, tiered: {yes: 10, no: 0}, verdict: PASSES CLEANLY (unanimous)}
+  P2_kinetic_isotropy:{muster: {pass: 0, concern: 6,  fail: 4}, tiered: {yes: 0,  no: 10}, verdict: DOES NOT PASS -> demote / re-tier}
+  P3_realized_state: {muster: {pass: 0,  concern: 10, fail: 0}, tiered: {yes: 4,  no: 6},  verdict: PASSES with reservations}
 
 system:
   synthesized_verdict: needs_revision
-  minimal: false       # A3 bundles 2 premises; P2 mis-tiered (chain-satisfies without bounding)
-  independent: false   # P2 = emergent-Lorentz output of the others; A3 K/CPT clause depends on A2's Cl(3,0) conjugation
+  minimal: false       # A3 bundles >=2 premises; P2 mis-tiered; set under-complete (missing dynamics + time axis)
+  independent: false   # P2 = emergent-Lorentz output of the others; A3 K/CPT clause depends on A2's Cl(3,0) conjugation; P3 not independent of A3's "realized"
   non_redundant:
     kinetic_isotropy_vs_scale_reference: NOT redundant (dimensionless ratio vs dimensionful anchor)
     realized_state_vs_Record: NOT redundant in content; double-use "realized"; single-realized datum encoded twice
-    kinetic_isotropy_vs_A1: partial overlap (one regulator-symmetry posit priced across two tiers)
+    kinetic_isotropy_vs_A1: partial overlap (one regulator-symmetry posit; analogy is a category error)
+  missing_load_bearing_posits:
+    - "dynamics / time-evolution (transfer matrix / Hamiltonian / action + reflection positivity) — presupposed by P2 and A3, posited nowhere (6/10)"
+    - "emergent time direction / 1+3 split — presupposed by P2, supplied by nothing (9/10)"
+    - "many-site composition / quasi-local tensor structure — implicit under A2 'lattice placement' (3/10)"
   smuggling_consensus:
-    - "P2 installs emergent-Lorentz answer c_t=c_s as a non-bounding primitive via self-certified circularity (policy §1/§4) — 10/10"
-    - "P2 is a dimensionless DYNAMICAL coupling mis-labeled structural; cubic-adjacency analogy is a category error — 9/10"
     - "A3 K/CPT-orbit clause USES a fixed K/CPT conjugation + finite central decomposition while disclaiming both — 10/10 contradiction"
-    - "A3 presupposes superselection / objectification / CPT antiunitary / occupancy multiplicity — 3-6/10"
-    - "A2 =Cl(3,0) silently fixes the real form / conjugation A3 re-posits as 'fixed' — 7/10"
-    - "A1 cubic O_h point group upgraded to isotropy downstream, used as P2 precedent — 6/10"
-  held_to_same_standard_as_four_rejected_adds: NO (P2 + A3-K/CPT would fail block05 test; P2 grandfathered)
+    - "P2 c_t=c_s IS the emergent-Lorentz / light-cone-isotropy answer installed as a free premise — 10/10"
+    - "A3 central-sector decomposition presupposes a nontrivial center; M_2(C) is a factor (trivial center) — 9/10"
+    - "A3 'durable = fixed once registered' smuggles irreversibility / an arrow of time — 9/10"
+    - "P2 presupposes an emergent TIME DIRECTION nothing in spatial-only A1 / A2 / A3 supplies — 9/10"
+    - "P3 'the realized state' presupposes a single actualized state / definite outcome with no measure — 9/10"
+    - "A3 imports CPT as a primitive though CPT is a theorem of Lorentz-invariant local QFT — 8/10"
+    - "A2 =Cl(3,0) fixes the real form / conjugation A3 re-posits as 'fixed' — 8/10"
+    - "P3 + A3 jointly install a single-actual-history selection / double-use 'realized' — 8/10"
+    - "A1 cubic adjacency = O_h/B_3 point group + L1 graph metric, NOT continuous isotropy / NOT metric-free — 7/10"
+
+delta_vs_block01_anchored:
+  - "block01 supplied policy + registry + source notes; block02 supplied NONE — first-principles, non-circular with the policy it would inform"
+  - "A3 contradiction (10/10) and P2 mis-tier (10/10) reproduce WITHOUT policy and harden; P2 now reached from bare emergent-Lorentz / renormalized-anisotropy physics, NOT from policy §1/§4/§6 vocabulary"
+  - "NEW clean teeth: M_2(C) is a factor -> trivial center -> no central decomposition (sharper than block01's 'finite atomic center' phrasing)"
+  - "system verdict 8/2 -> 10/0 needs_revision; block01's two sound_with_concerns seats (GR, philosopher) flip to needs_revision with policy framing removed"
+  - "P3 harsher clean (0 pass/10 concern vs 5/5): good standing DEPENDS on the source-note counterfactual-test guard, invisible to a bare-text panel -> rewrite should fold the guard into the primitive's statement"
+  - "block01 governance-symmetry argument (vs 4 rejected block05 adds) is a policy/registry overlay, absent here by design; keep in governance note, not physics rationale"
 
 recommended_changes:
-  - DEMOTE P2 kinetic_isotropy -> Tier-A admitted derivation target (no-go portfolio; retained_bounded dependents)
-  - SPLIT A3 -> A3a additivity axiom + A3b conditional K/CPT-orbit identification (Tier-A)
-  - AMEND A2: Cl(3,0) -> downstream identification row; A3 cites A2 as single conjugation source
-  - ANNOTATE A1 ledger: supplies cubic O_h point group + dim 3, NOT continuous isotropy
-  - TIGHTEN P3: state single-world commitment; enforce+log counterfactual test (flag sector r); cross-link A3<->P3 "realized"
+  - SPLIT A3 -> A3a additivity axiom + A3b conditional K/CPT-orbit identification (named external inputs; CPT -> neutral antiunitary K; durable -> separate irreversibility posit)
+  - DEMOTE / RE-TIER P2 -> admitted empirical/tuning input (xi_R=1) or derived IR-fixed-point target; drop "free structural datum / analogue of cubic adjacency" framing
+  - ADD a dynamics + time-emergence posit (load-bearing for P2 and A3; currently unstated)
+  - AMEND A2: Cl(3,0) -> downstream identification row; declare R-vs-C scalar; A3 cites A2 as single conjugation source
+  - ANNOTATE A1 ledger: supplies cubic O_h point group + dim 3 + a graph metric, NOT continuous isotropy / NOT metric-free
+  - DISAMBIGUATE P3: strip "realized" to pure evaluation notation OR own a single-realized-world actualization posit; cross-link A3<->P3
   - P1 unchanged (passes cleanly; optional abstract anchor name)
 
-clean_core_that_holds: [A1, A2-carrier, A3-additivity, P1, P3]
+clean_core_that_holds: [A1, A2-carrier, A3-additivity, P1, P3-slot]
 
 deliverables:
-  review_note: docs/INCUMBENT_AXIOMS_PRIMITIVES_PHYSICIST_PANEL_REVIEW_2026-06-20.md
-  certificate: .claude/science/physics-loops/incumbent-axiom-panel/CLAIM_STATUS_CERTIFICATE_block01.md
+  review_note_block02_clean: docs/INCUMBENT_AXIOMS_PRIMITIVES_CLEAN_FIRST_PRINCIPLES_PANEL_2026-06-20.md
+  certificate_block02: .claude/science/physics-loops/incumbent-axiom-panel/CLAIM_STATUS_CERTIFICATE_block02.md
+  certificate_block01: .claude/science/physics-loops/incumbent-axiom-panel/CLAIM_STATUS_CERTIFICATE_block01.md
+  review_note_block01_anchored: docs/INCUMBENT_AXIOMS_PRIMITIVES_PHYSICIST_PANEL_REVIEW_2026-06-20.md
   goal: .claude/science/physics-loops/incumbent-axiom-panel/GOAL.md
   state: .claude/science/physics-loops/incumbent-axiom-panel/STATE.yaml
 
 forbidden_files_touched: none
 vocab_lint: run (--fix)
+stop_condition: packaged_for_review_pr

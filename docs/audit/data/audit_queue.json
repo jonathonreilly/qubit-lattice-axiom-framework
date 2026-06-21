@@ -1,7 +1,7 @@
 {
   "by_criticality": {
-    "critical": 294,
-    "high": 302,
+    "critical": 295,
+    "high": 301,
     "leaf": 588,
     "medium": 491
   },
@@ -140,16 +140,41 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "quark_route2_exact_readout_map_note_2026-04-19",
+      "claim_id": "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
       "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
       "cross_confirmation_status": null,
+      "deps": [
+        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.972,
+      "note_path": "docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py",
+      "transitive_descendants": 250
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
+      "claim_id": "quark_route2_exact_readout_map_note_2026-04-19",
+      "claim_scope": "Audited the restricted Route-2 carrier/readout reduction, the algebraic equivalence between the endpoint ratio chain and the readout triple, and the exact non-uniqueness obstruction for the missing E-channel map entry; not an exact live readout theorem.",
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [],
       "direct_in_degree": 25,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
         "scripts/frontier_quark_endpoint_readout_constraints.py",
@@ -158,7 +183,7 @@
       ],
       "load_bearing_score": 19.172,
       "note_path": "docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_quark_route2_exact_readout_map.py",
       "transitive_descendants": 101
@@ -8520,31 +8545,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
-        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.466,
-      "note_path": "docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py",
-      "transitive_descendants": 249
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

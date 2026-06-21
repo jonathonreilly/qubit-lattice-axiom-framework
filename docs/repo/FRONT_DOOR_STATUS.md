@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 935 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 34 |
-| Unaudited rows | 1673 |
+| Unaudited rows | 1672 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 22 |
@@ -36,15 +36,15 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 | Total pending rows | 1675 |
 | Ready rows | 127 |
 | Cycle-break targets | 9 |
-| Critical pending | 294 |
-| High pending | 302 |
+| Critical pending | 295 |
+| High pending | 301 |
 | Medium pending | 491 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`quark_route2_exact_readout_map_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - critical; unaudited
-- [`hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18`](../../docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md) - high; unaudited
+- [`hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18`](../../docs/HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md) - critical; unaudited
+- [`quark_route2_exact_readout_map_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - critical; audit_in_progress
 - [`koide_mru_demotion_note_2026-04-20`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md) - high; unaudited
 - [`koide_q_readout_factorization_theorem_2026-04-22`](../../docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md) - high; unaudited
 - [`dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md) - high; unaudited
@@ -62,10 +62,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | high | `unaudited` | 166 |
-| critical | `unaudited` | 165 |
+| critical | `unaudited` | 164 |
 | medium | `unaudited` | 96 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |
@@ -77,8 +78,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3619 |
-| Critical nodes | 575 |
-| High nodes | 510 |
+| Critical nodes | 576 |
+| High nodes | 509 |
 | Medium nodes | 972 |
 | Leaf nodes | 1562 |
 

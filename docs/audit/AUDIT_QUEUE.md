@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1676
+**Total pending:** 1675
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 121
 
 By criticality:
-- `critical`: 312
+- `critical`: 311
 - `high`: 302
 - `medium`: 486
 - `leaf`: 576
@@ -15,14 +15,14 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `su3_casimir_fundamental_theorem_note_2026-05-02` | bounded_theorem | unaudited | critical | 361 | 20.50 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/su3_casimir_fundamental_check.py` |
-| 2 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | unaudited | critical | 326 | 13.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
+| 1 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | unaudited | critical | 326 | 13.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_q_delta_formal_ratio_repair.py` |
+| 2 | `g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07` | bounded_theorem | unaudited | critical | 317 | 22.31 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_g_bare_hs_rigidity_narrow.py` |
 | 3 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | critical | 309 | 16.28 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_axis_symmetry_s3_discriminator.py` |
 | 4 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | audit_in_progress | critical | 303 | 16.75 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py` |
 | 5 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | audit_in_progress | critical | 295 | 14.71 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_operator_realization_local_density_2026_05_31.py` |
 | 6 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | critical | 289 | 13.18 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py` |
 | 7 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | audit_in_progress | critical | 289 | 12.18 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/flavor_asymmetry_2over9_forced_weight_2026_05_31.py` |
-| 8 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | critical | 287 | 16.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py` |
+| 8 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | critical | 288 | 16.68 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py` |
 | 9 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | unaudited | critical | 286 | 9.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py` |
 | 10 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | critical | 268 | 15.07 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_aps_block_by_block_forcing.py` |
 | 11 | `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | unaudited | critical | 268 | 8.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py` |

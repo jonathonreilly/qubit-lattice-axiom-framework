@@ -10,8 +10,8 @@ Score:
 - Audit-unblock value: high, because the target is ready, critical, and direct
   runner execution failed before the patch.
 - Science risk: low, because the branch does not change the formal identity.
-- Blast radius: medium, because note hash changes trigger pipeline
-  regeneration.
+- Blast radius: low after rebase narrowing, because generated audit and
+  publication surfaces are excluded from the PR diff.
 
 ## Rejected Route: Treating Front Door As Formal Context
 

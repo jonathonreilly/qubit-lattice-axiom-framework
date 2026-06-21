@@ -23,6 +23,11 @@ The fix keeps the bounded claim boundary narrow:
 - The target runner cache was refreshed and now records
   `TOTAL: PASS=106 FAIL=0`.
 
+After rebasing onto current `main` at `678b38ce7`, the branch is intentionally
+narrowed to the source firewall repair, the refreshed target runner cache, and
+the branch-local loop packet. Generated audit, publication, and front-door
+surfaces are excluded from this PR.
+
 ## Boundary
 
 - No audit-loop run.
@@ -31,14 +36,24 @@ The fix keeps the bounded claim boundary narrow:
 - This is a source-side runner/firewall repair for an already-ready unaudited
   bounded row.
 
+## Current queue snapshot
+
+- claim_type: `bounded_theorem`
+- audit_status: `unaudited`
+- effective_status: `unaudited`
+- criticality: `critical`
+- load_bearing_score: `13.34`
+- direct_in_degree: `10`
+- transitive_descendants: `323`
+- deps: `[]`
+- ready: `true`
+
 ## Verification
 
 - `python3 -m py_compile scripts/frontier_koide_q_delta_formal_ratio_repair.py`
 - Direct runner before patch: `TOTAL: PASS=107 FAIL=1`
-- Direct runner after patch: `TOTAL: PASS=106 FAIL=0`
-- `bash docs/audit/scripts/run_pipeline.sh`: complete; strict lint reported 139 notices, 0 errors
-- `python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_q_delta_formal_ratio_repair.py --force --push-mode none --allow-non-main`: 1 ok, 0 failures
-- `python3 scripts/audit_packet_script_deps.py`: 388 / 1582 pending helper-import claims
-- `python3 docs/audit/scripts/audit_lint.py --strict`: 139 notices, 0 errors
-- `git diff --check`
-- post-commit generated-clean check: clean
+- `python3 scripts/frontier_koide_q_delta_formal_ratio_repair.py` -> `TOTAL: PASS=106 FAIL=0`
+- `python3 scripts/precompute_audit_runners.py --runners scripts/frontier_koide_q_delta_formal_ratio_repair.py --check-only --push-mode none --allow-non-main` -> `fresh: 1`, `stale to refresh: 0`, `missing on disk: 0`
+- `python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --allow-non-main` -> `fresh: 1`, `stale to refresh: 0`, `missing on disk: 0`
+- `python3 -m py_compile scripts/frontier_koide_q_delta_formal_ratio_repair.py scripts/precompute_audit_runners.py scripts/runner_cache.py` -> OK
+- `git diff --check` -> OK

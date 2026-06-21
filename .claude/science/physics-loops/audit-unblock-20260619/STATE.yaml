@@ -5,12 +5,13 @@ date: "2026-06-20"
 worktree: /private/tmp/cl3-physics-loop-audit-unblock-block125-20260620
 branch: physics-loop/audit-unblock-block125-20260620
 base_ref: origin/main
-base_commit: 2197074350bc4636e2760b0f3272a94a956f2411
-source_commit: df5109c334013aac49babe00e02e577f7c345ee9
+base_commit: 678b38ce7d8f9c092a7e19bf8272847f03bd799f
+rebuilt_at: "2026-06-21 01:24:06 EDT"
+source_commit: 7e0b89c27
 target_claim_id: koide_q_delta_linking_relation_theorem_note_2026-04-20
 target_status: bounded formal identity citation-firewall repair
-actual_current_surface_status: source-side bounded firewall repair
-effective_status_after_pipeline: unaudited
+actual_current_surface_status: open
+effective_status_current_main: unaudited
 trace_class: direct_blocker_closure
 reachability_to_target: closes
 audit_required_before_effective_retained: true
@@ -20,20 +21,19 @@ repo_lock:
   mode: degraded_branch_local
   status_command: python3 scripts/automation_lock.py status
   failure: "[Errno 13] Permission denied: '/Users/jonreilly'"
-claim_row_after_pipeline:
+current_main_queue_snapshot:
   claim_type: bounded_theorem
-  claim_type_author_hint_raw: bounded_theorem
   claim_type_provenance: author_hint
   audit_status: unaudited
   effective_status: unaudited
   criticality: critical
-  load_bearing_score: 17.853
-  direct_in_degree: 11
-  transitive_descendants: 326
+  load_bearing_score: 13.34
+  direct_in_degree: 10
+  transitive_descendants: 323
   deps: []
   note_path: docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md
   runner_path: scripts/frontier_koide_q_delta_formal_ratio_repair.py
-  helper_runner_paths_count: 0
+  helper_runner_paths: []
   audit_queue_ready: true
   queue_reason: unaudited
 source_repair:
@@ -45,12 +45,9 @@ verification:
   py_compile: pass
   target_runner_before_patch: "TOTAL: PASS=107 FAIL=1"
   target_runner_after_patch: "TOTAL: PASS=106 FAIL=0"
-  pipeline: "pass; strict lint inside pipeline reported 139 notices, 0 errors"
-  precompute_audit_runners: "1 ok, 0 nonzero_exit"
-  audit_packet_script_deps: "pass; 388 / 1582 pending helper-import claims diagnosed"
-  strict_audit_lint: "139 notices, 0 errors"
+  explicit_cache_check: "fresh: 1, stale to refresh: 0, missing on disk: 0"
+  pr_diff_cache_check: "fresh: 1, stale to refresh: 0, missing on disk: 0"
   git_diff_check: pass
-  generated_clean_gate_after_commit: pass
 review_loop:
   disposition: "PASS WITH BOUNDED FORMAL-IDENTITY FIREWALL BOUNDARY"
   iterations: 1
@@ -61,17 +58,12 @@ hashes:
   note_sha256: 0c4042808a8f19f124af8cbbda86960edf9c42232d196310f9cbf1ace9a1c628
   runner_sha256: 14e239fc14dfb417f14d9be3427f26986be72a406c3195e6d5efb173954bc0c4
   runner_cache_sha256: 45804c4c7983fbb793e47c1688fed5ff8a66e9d6c2551e68ffffd2e4f9e6188d
-  audit_ledger_sha256: b87ea223ffc8f287b34c0371b06c605063c179294198cb4019f0b3d62659b255
-  audit_queue_sha256: afcdd61212f15a57bc60618ab7d4a98f21c63af8a97758ee656fd2e59e2681b6
-  audit_packet_script_deps_json_sha256: 9c787615b882616536f648aff2d2970556f0dd1814c381d132d051d8d06cc38c
-  audit_packet_script_deps_txt_sha256: b8d53617813bec01bca7110d9f975c117fd22451eeb040f51ce318861cb2241a
 pr:
   status: open
   number: 4495
   url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4495
-  source_head_commit_at_pr_creation: df5109c334013aac49babe00e02e577f7c345ee9
   base: main
   head: physics-loop/audit-unblock-block125-20260620
-  mergeable: MERGEABLE
-  status_checks: "audit-lane/audit_pipeline in progress at packet update"
-next_exact_action: "Refresh from current origin/main, continue scanning ready rows for generated-snapshot firewall failures or other source-side runner blockers, skip already-open PR targets, and open the next dedicated physics-loop PR."
+  mergeable: pending_after_rebase_push
+  status_checks: pending_after_rebase_push
+next_exact_action: "Force-push the rebased/narrowed branch, update PR #4495, then continue with the next dirty audit-unblock PR."

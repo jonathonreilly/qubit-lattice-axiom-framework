@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1467 |
-| Retained-grade rows, including boxed decorations | 1406 |
+| Applied audit verdicts | 1468 |
+| Retained-grade rows, including boxed decorations | 1407 |
 | Retained positive theorems | 202 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 946 |
+| Retained bounded rows | 947 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 34 |
 | Unaudited rows | 1668 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1681 |
+| Total pending rows | 1680 |
 | Ready rows | 120 |
 | Cycle-break targets | 9 |
-| Critical pending | 322 |
+| Critical pending | 321 |
 | High pending | 301 |
 | Medium pending | 485 |
 | Leaf pending | 573 |
 
 Next ready rows by queue order:
 
-- [`dm_neutrino_weak_vector_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md) - critical; audit_in_progress
+- [`dm_neutrino_dirac_bridge_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md) - critical; unaudited
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) - critical; unaudited
 - [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; unaudited

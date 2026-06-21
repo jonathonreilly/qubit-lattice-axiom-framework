@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 946 |
+| **retained_bounded** | 947 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1668 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1358 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1359 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
@@ -133,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
@@ -415,6 +413,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_pmns_asymptotic_source_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5442,6 +5441,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** active-space matching route. The later bosonic-normalization theorem selects  _(class `C`)_
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 11 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **auditor confidence:** high
+
+### `dm_neutrino_weak_vector_theorem_note_2026-04-15`
+
+- **Note:** [`DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md`](../../docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-packet theorem that the explicit chiral bridges Y_i=P_R Gamma_i P_L transform as a weak spin-1 vector under the derived SU(2) bivectors, with spin-1 adjoint Casimir, trace orthogonality, and homogeneous rescaling covariance.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-dm_neutrino_weak_vector_theorem_note_2026-04-15-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Because gamma_5 anticommutes with each spatial Gamma_i, every even product Gamma_m Gamma_n commutes with gamma_5, so [B_a,Y_b]=P_R[B_a,Gamma_b]P_L=i sum_c eps_{abc}Y_c.  _(class `A`)_
+- **chain closes:** True — The Clifford commutator identity gives the vector law for Gamma_i, and commutation of B_a with the chiral projectors lifts the law directly to Y_i. The finite trace and Casimir identities follow in the same explicit matrix packet; no external authority is needed for the bounded representation statement.
+- **rationale:** The runner source genuinely constructs the Pauli/Kronecker matrices and checks the Clifford relations, SU(2) closure, vector commutators, double-commutator Casimir, trace Gram matrices, and rescaling invariance; it is not merely printing expected constants. The manual algebra agrees with the signs and factors in the note, including B_a=-(i/4) eps_{amn} Gamma_m Gamma_n and the spin-1 double commutator. The audited scope is bounded to representation covariance and trace normalization of the explicit bridge family, not a physical Yukawa coefficient or base-normalization theorem.
 - **auditor confidence:** high
 
 ### `dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15`

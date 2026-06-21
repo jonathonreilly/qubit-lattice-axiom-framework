@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 322,
+    "critical": 321,
     "high": 301,
     "leaf": 573,
     "medium": 485
@@ -138,25 +138,27 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "dm_neutrino_weak_vector_theorem_note_2026-04-15",
-      "claim_scope": "For the explicit Pauli/Clifford packets on C^8 and C^16, the derived bivectors form su(2), Gamma_i and Y_i = P_R Gamma_i P_L transform as exact spin-1 weak vectors, and Tr(Y_i^dag Y_j)=8 delta_ij; no physical coefficient normalization is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
+      "cross_confirmation_status": null,
+      "deps": [
+        "dm_neutrino_weak_vector_theorem_note_2026-04-15"
+      ],
+      "direct_in_degree": 17,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.916,
-      "note_path": "docs/DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 17.912,
+      "note_path": "docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_dm_neutrino_weak_vector_theorem.py",
-      "transitive_descendants": 682
+      "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py",
+      "transitive_descendants": 680
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -2158,30 +2160,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_p1_color_factor_retention.py",
       "transitive_descendants": 681
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "dm_neutrino_weak_vector_theorem_note_2026-04-15"
-      ],
-      "direct_in_degree": 17,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.912,
-      "note_path": "docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py",
-      "transitive_descendants": 680
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -50261,5 +50239,5 @@
     }
   ],
   "ready_count": 120,
-  "total_pending": 1681
+  "total_pending": 1680
 }

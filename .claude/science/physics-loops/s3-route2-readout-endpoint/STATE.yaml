@@ -33,7 +33,10 @@ open_imports:
   - "No derivation of c_TE=-F_adj is supplied."
   - "No derivation of rho_E=21/4 is supplied."
 review_disposition: pass_with_exact_support_boundary
-pr_status: pending
+pr_status: open
+pr_number: 4532
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4532
+pr_identity_verified_without_conflict_check: true
 verification:
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py -> TOTAL: PASS=23, FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py -> TOTAL: PASS=7 FAIL=0"
@@ -43,5 +46,5 @@ verification:
 review_notes:
   - "Focused review-loop pass only; audit pipeline/verdict scripts intentionally not run under the no-audit campaign boundary."
   - "Claim narrowed to exact bridge-equivalence support; no typed bridge or endpoint-triple derivation claimed."
-next_exact_action: "Commit, push, and open block 03 PR without refreshing branch to main or checking conflict state."
-stop_condition: "Runtime not exhausted; continue after block 03 PR delivery."
+next_exact_action: "Start block 04 from a clean worktree and attempt direct typed source/readout semantics for c_TE=s_TE/kappa^2 without refreshing existing PRs or checking conflict state."
+stop_condition: "Runtime not exhausted; continue to block 04."

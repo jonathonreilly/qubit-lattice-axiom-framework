@@ -1,0 +1,54 @@
+slug: audit-unblock-block145-20260621
+mode: campaign
+date: 2026-06-21
+branch: physics-loop/audit-unblock-block145-20260621
+base_ref: origin/main
+base_oid: 771aad626516b683c0bf0721eeba80da5535cfd4
+target_claim_id: continuum_convergence_note
+target_note: docs/CONTINUUM_CONVERGENCE_NOTE.md
+runner: scripts/continuum_convergence_note_probe.py
+runner_cache: logs/runner-cache/continuum_convergence_note_probe.txt
+actual_current_surface_status: open
+pipeline_audit_status: unaudited
+pipeline_effective_status: unaudited
+claim_type: bounded_theorem
+trace_class: methodology
+reachability_to_target: supports
+runner_dominant_class: B
+runner_assert_count: 2
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_loop_disposition: deferred_to_review_lane
+lock_mode: degraded_branch_local
+files_touched:
+  - docs/CONTINUUM_CONVERGENCE_NOTE.md
+  - scripts/continuum_convergence_note_probe.py
+  - logs/runner-cache/continuum_convergence_note_probe.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/runner_classification.json
+checks:
+  - command: python3 scripts/continuum_convergence_note_probe.py
+    result: "PASS: SUMMARY: PASS=15 FAIL=0"
+  - command: python3 scripts/lattice_3d_l2_tail_stats.py
+    result: "PASS: SCORECARD PASS=32 FAIL=0"
+  - command: python3 scripts/lattice_kernel_transfer_norm_probe.py
+    result: "PASS: p=1.50 ranked closest to measured-norm marginality; p=2.00 next"
+  - command: bash docs/audit/scripts/run_pipeline.sh
+    result: "PASS: completed with no invalidations; strict lint step OK"
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/continuum_convergence_note_probe.py --push-mode none --allow-non-main
+    result: "PASS: refreshed continuum_convergence_note_probe cache"
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/continuum_convergence_note_probe.py --check-only --push-mode none --allow-non-main
+    result: "PASS: explicit cache fresh"
+  - command: python3 docs/audit/scripts/audit_lint.py --strict
+    result: "PASS: 3474 rows checked; 139 notices; no errors"
+  - command: python3 -m py_compile scripts/continuum_convergence_note_probe.py scripts/lattice_3d_l2_tail_stats.py scripts/lattice_kernel_transfer_norm_probe.py docs/audit/scripts/build_citation_graph.py docs/audit/scripts/seed_audit_ledger.py docs/audit/scripts/classify_runner_passes.py
+    result: "PASS"
+  - command: python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --push-mode none --allow-non-main
+    result: "PASS: all relevant caches fresh"
+  - command: git diff --check
+    result: "PASS"
+next_exact_action: "Commit, push, open the review PR, then inspect the next unaudited runner-registration candidate."
+

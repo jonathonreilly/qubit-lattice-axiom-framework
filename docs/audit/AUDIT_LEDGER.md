@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 949 |
+| **retained_bounded** | 950 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1629 |
+| unaudited | 1628 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1383 |
+| `audited_clean` | 1384 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1955 |
+| `unaudited` | 1954 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 509 |
-| `medium` | 928 |
+| `high` | 508 |
+| `medium` | 929 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -123,7 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
@@ -1505,6 +1505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -21397,6 +21398,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The unique S_6-permutation-invariant unit vector on the six Q_L color-isospin components is (1,1,1,1,1,1)/sqrt(6), so each component amplitude is 1/sqrt(6).  _(class `A`)_
 - **chain closes:** True — The invariant-vector calculation closes as standard linear algebra once the six-component Q_L carrier and full S_6 democracy are taken as the stated setup. The physical bridge equating this amplitude with the top Yukawa response is explicitly outside the audited load-bearing scope.
 - **rationale:** The repaired note cleanly limits its load-bearing claim to the finite-dimensional S_6-invariant unit-vector lemma. The runner source actually performs symbolic checks of equality constraints, normalization, component amplitudes, and permutation invariance rather than merely printing constants. The note explicitly admits that the response bridge to y_33 remains open and does not use that bridge as a load-bearing step.
+- **auditor confidence:** high
+
+### `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded source-side support: signed-record epsilon source is affinely equivalent to lower-projector occupation, and the lower projector is the neutral charge-spectral projector on the retained one-Higgs carrier; no positive Y_T, top-response, scalar-normalization, or physical-scale g_2 closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same-surface carrier theorem supplies the missing step by functional calculus of Q_H: P_- = P_neut = 1_0(Q_H) on the one-Higgs carrier, so the signed-record source epsilon = I - 2P_- is affinely equivalent to neutral-ray occupation on that bounded support surface.  _(class `A`)_
+- **chain closes:** True — The scoped bounded claim follows from finite Pauli/projector algebra plus the retained-bounded EW neutral-projector same-surface carrier theorem and source-coordinate ratio gate. The remaining top coefficient, top transfer row, scalar normalization, and physical-scale g_2 questions are explicitly outside this claim scope.
+- **rationale:** The load-bearing step is algebraic closure over retained-grade bounded authorities, with the minimal-axiom citation covered by the registered premise carve-out. The runner does real symbolic matrix checks for the Pauli projectors, EW charge projector, radial tangent neutrality, and top/W Jacobian cancellation, while its cross-note checks enforce the bounded boundary and firewall language. No external comparator, tuned numerical input, or positive Y_T closure is used.
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

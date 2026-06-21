@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dm_neutrino_weak_vector_theorem_note_2026-04-15"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "yt_vertex_power_derivation",
         "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "qcd_low_energy_running_bridge_note_2026-05-01",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "dm_neutrino_weak_vector_theorem_note_2026-04-15"
+        "dm_neutrino_weak_vector_theorem_note_2026-04-15",
+        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2bef296a73b82f22d9892f47d99365d8ee4b75af9a68cb405d865d9067ae9e36",
+      "note_hash": "58e7d5ccb4f6dd7547b55d149317ff7ef2fc9fd6008c70e9abf7a2df055f0bb1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "post_record_flow_thermal_stable_setting_certificate_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
         "koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3",
         "lattice_total_momentum_conservation_theorem_note_2026-05-02",
         "n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17",
         "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12",
         "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12",
         "pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02",
-        "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27"
+        "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27",
+        "post_record_flow_thermal_stable_setting_certificate_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "14e39f59df59e1cd57367cb72f4054477c44e81e4c5507f56fd7a99ef0bbeda8",
+      "note_hash": "272d047238f0143f70d9acc964694a3773c9c329cc1dda8a857b387f9682e559",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

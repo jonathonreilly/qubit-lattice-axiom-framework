@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1007 |
+| **retained_bounded** | 1008 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1520 |
+| unaudited | 1519 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1457 |
+| `audited_clean` | 1458 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1846 |
+| `unaudited` | 1845 |
 
 | claim_type | count |
 |---|---:|
@@ -108,29 +108,29 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 921 | 60.35 | `unaudited` | unaudited |
+| 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 921 | 63.35 | `unaudited` | unaudited |
+| 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1030 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1034 | 49.02 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1127 | 47.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 899 | 45.31 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 822 | 44.19 | `audited_clean` | **retained_bounded** |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
-| 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1115 | 40.12 | `unaudited` | unaudited |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 884 | 39.29 | `unaudited` | unaudited |
-| 14 | `alpha_s_derived_note` | bounded_theorem | critical | 915 | 38.84 | `unaudited` | unaudited |
+| 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1115 | 43.12 | `unaudited` | unaudited |
+| 11 | `alpha_s_derived_note` | bounded_theorem | critical | 915 | 41.84 | `unaudited` | unaudited |
+| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
+| 13 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
+| 14 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 884 | 39.29 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 760 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
-| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 902 | 35.82 | `audited_clean` | **retained_bounded** |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1099 | 35.60 | `audited_clean` | **retained_bounded** |
-| 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 290 | 34.69 | `unaudited` | unaudited |
-| 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 741 | 33.03 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
-| 23 | `left_handed_charge_matching_note` | decoration | critical | 1131 | 32.65 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
-| 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 738 | 31.53 | `unaudited` | unaudited |
+| 17 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 290 | 37.69 | `unaudited` | unaudited |
+| 18 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
+| 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 741 | 36.03 | `unaudited` | unaudited |
+| 20 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 902 | 35.82 | `audited_clean` | **retained_bounded** |
+| 21 | `three_generation_structure_note` | bounded_theorem | critical | 1099 | 35.60 | `audited_clean` | **retained_bounded** |
+| 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 738 | 34.53 | `unaudited` | unaudited |
+| 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 338 | 33.91 | `unaudited` | unaudited |
+| 24 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
+| 25 | `left_handed_charge_matching_note` | decoration | critical | 1131 | 32.65 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 
 
 ## Applied audits
@@ -882,6 +882,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_z3_joint_projector_identity_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -12652,6 +12653,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The displayed generator T_m satisfies T_m^2 = I_3, so Tr(T_m^2)=3 and Tr(T_m^3)=Tr(T_m)=1, fixing the m^2 and m^3 coefficients in the stipulated scalar potential as g_2=3/2 and g_3=1/6.  _(class `A`)_
 - **chain closes:** True — The in-scope coefficient claim follows by direct matrix multiplication and trace algebra from the displayed T_m plus the stated potential normalization. The broader mass-tower and physical selected-point language is explicitly excluded from the audited scope and is not needed for the local coefficient result.
 - **rationale:** The load-bearing algebra is local: T_m is displayed, T_m^2=I_3 is directly checkable, Tr(T_m^2)=3 and Tr(T_m^3)=1 then fix the quadratic and cubic coefficients under the note's stated potential normalization. No one-hop dependencies are wired for this row, and no runner is required because the audited claim is an exact finite matrix calculation. Residual risk is scope drift: the title and later mass-table material must not be cited as an audited derivation of the charged-lepton mass tower or physical m_* selector.
+- **auditor confidence:** high
+
+### `koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3`
+
+- **Note:** [`KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md`](../../docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the accepted Lattice Z^3 surface with the cited BZ-corner and C_3[111] support, the hw=1 carrier has cardinality 3 and no proper nonzero quotient preserving the D_3 projectors plus C_3[111] cycle reduces it; no SM species map or sector propagation is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the Lattice axiom's Z^3 BZ-corner surface and the named C_3[111] action on H_hw=1, the hw=1 carrier has cardinality 3 and admits no nonzero algebra-preserving quotient reducing that cardinality.  _(class `A`)_
+- **chain closes:** True — The cardinality follows from finite {0,1}^3 Hamming-weight enumeration and the cited retained-grade BZ/C_3 support; the no-quotient step follows from retained D_3 + C_3 irreducibility on C^3. Species labels, quark/neutrino sector propagation, and the SM-cardinality comparator are explicitly non-load-bearing.
+- **rationale:** The load-bearing result is a finite algebraic closure over accepted/retained-grade inputs: Z^3 fixes three hw=1 BZ corners, C_3[111] acts as a single 3-cycle, and the retained projector-plus-cycle algebra rules out proper nonzero algebra-preserving quotients. The runner source performs the relevant finite enumeration, Fourier/cycle checks, and invariant-subspace enumeration rather than merely printing the target conclusion. The one external SM-generation comparison is reported as a bounded cross-check and is not used to derive the substrate count.
 - **auditor confidence:** high
 
 ### `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`

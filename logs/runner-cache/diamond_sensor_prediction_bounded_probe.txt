@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/diamond_sensor_prediction_bounded_probe.py
+runner_sha256: e5101e685c208d5f2cf6e7c774a3664583abf12f52f179e8cae6735bce7b9974
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+DIAMOND SENSOR PREDICTION BOUNDED PROBE
+Target note: docs/DIAMOND_SENSOR_PREDICTION_NOTE.md
+Prediction card runner: scripts/diamond_sensor_prediction_probe.py
+Ideal detector theorem runner: scripts/diamond_ideal_lockin_detector_theorem.py
+
+[PASS] note_exists: docs/DIAMOND_SENSOR_PREDICTION_NOTE.md
+[PASS] claim_type_bounded: bounded_theorem metadata present
+[PASS] status_authority_independent: audit lane owns status
+[PASS] runner_metadata: scripts/diamond_sensor_prediction_bounded_probe.py
+[PASS] no_closed_lab_prediction: explicit non-closure boundary
+[PASS] no_calibrated_signal_budget: explicit amplitude-budget boundary
+[PASS] prediction_probe_cited: scripts/diamond_sensor_prediction_probe.py
+[PASS] ideal_detector_runner_cited: scripts/diamond_ideal_lockin_detector_theorem.py
+[PASS] card_standard_null: standard null named
+[PASS] card_toy_scaling: toy scaling law named
+[PASS] zero_delay_phase_zero: zero delay gives zero phase
+[PASS] phase_grows_with_frequency: 3.600e-03 < 3.600e-02 < 3.600e-01
+[PASS] phase_grows_with_delay: 3.600e-02 < 3.600e-01
+[PASS] ideal_lockin_detector_assertions: analytic lock-in formula max_abs_error=5.995e-15 tol=1.0e-10; small-delay law Y/X=6.283186134022e-04 tan(omega*tau)=6.283186134014e-04 omega*tau=6.283185307180e-04
+
+SUMMARY: PASS=14 FAIL=0
+Scope: bounded discriminator design only; no absolute NV/lab detectability claim.
+
+----- stderr -----
+

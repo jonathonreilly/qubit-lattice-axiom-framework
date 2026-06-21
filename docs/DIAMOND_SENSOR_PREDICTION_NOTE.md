@@ -6,6 +6,7 @@
 **Status:** bounded experiment-facing discriminator design, intentionally
 bounded; **not** a closed lab prediction.
 **Status authority:** independent audit lane only.
+**Runner:** `scripts/diamond_sensor_prediction_bounded_probe.py`
 **Authority role:** records, but does not close, a bounded discriminator
 design (lock-in `X`, `Y`, `phi`, widefield phase ramp) for a diamond/NV
 setup. The ideal lock-in detector map is supplied by

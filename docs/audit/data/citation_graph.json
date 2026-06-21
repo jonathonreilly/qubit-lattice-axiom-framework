@@ -73687,8 +73687,8 @@
     },
     "frontier_extension_lane_opening_note_2026-04-25": {
       "claim_id": "frontier_extension_lane_opening_note_2026-04-25",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
       "claim_type_seed_hint": "open_gate",
       "deps": [
         "single_axiom_hilbert_note",
@@ -73707,9 +73707,9 @@
         "signed_gravity_response_lane_status_note_2026-04-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "22f253f2be66fcb2e79db7e3e01061820fca3109a4e6fddcd2e893c918b9ac10",
+      "note_hash": "95091473e38524583fe30ed209d7f1520a08498ac48fcfbc9ade9587d903c80b",
       "path": "docs/FRONTIER_EXTENSION_LANE_OPENING_NOTE_2026-04-25.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_extension_lane_opening_probe_2026_04_25.py",
       "title": "Frontier Extension Lane Opening Note"
     },
     "frozen_stars_rigorous_note": {
@@ -103190,7 +103190,7 @@
         "dm_neutrino_weak_vector_theorem_note_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "941754313be09fab7fbc8fa5dfeabb024b4c566d05e324fa7a8f662fdf5f6c5a",
+      "note_hash": "2bef296a73b82f22d9892f47d99365d8ee4b75af9a68cb405d865d9067ae9e36",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118590,8 +118590,8 @@
       "decoration": 2,
       "meta": 288,
       "no_go": 208,
-      "none": 1428,
-      "open_gate": 118,
+      "none": 1427,
+      "open_gate": 119,
       "positive_theorem": 196
     },
     "claim_type_seed_hint_counts": {
@@ -118607,6 +118607,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

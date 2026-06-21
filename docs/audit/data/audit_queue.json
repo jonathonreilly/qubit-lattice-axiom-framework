@@ -12831,7 +12831,7 @@
       "claim_id": "frontier_extension_lane_opening_note_2026-04-25",
       "claim_scope": null,
       "claim_type": "open_gate",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "high",
       "criticality_rank": 2,
       "cross_confirmation_status": null,
@@ -12858,7 +12858,7 @@
       "note_path": "docs/FRONTIER_EXTENSION_LANE_OPENING_NOTE_2026-04-25.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/frontier_extension_lane_opening_probe_2026_04_25.py",
       "transitive_descendants": 83
     },
     {

@@ -4,8 +4,8 @@ block: 131
 mode: physics-loop
 branch: physics-loop/audit-unblock-block131-20260620
 base: physics-loop/audit-unblock-block130-20260620
-base_commit: 2d251fe3b0ad685cc1fffc8bedcc7d52ebc6d302
-rebuilt_at: "2026-06-21 00:49:58 EDT"
+base_commit: eab9c843d0700d497ad7e2e3716cb4f2f24a8100
+rebuilt_at: "2026-06-21 00:56:41 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "runner-cache orphan cleanup referenced-evidence safety"
@@ -22,7 +22,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "cleanup_orphans now preserves cache files still referenced outside logs/runner-cache so cleanup does not create broken evidence links; branch is restacked on refreshed PR #4500."
+current_result: "cleanup_orphans now preserves cache files still referenced outside logs/runner-cache so cleanup does not create broken evidence links; branch is restacked on refreshed PR #4500 at eab9c843d."
 observed_pre_fix_cleanup_risk:
   dry_run_candidates_before_fix: 9
   referenced_cache_false_positive:
@@ -39,5 +39,5 @@ review_disposition: pass
 verification_status: pass
 pr_status: open
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4501
-next_exact_action: "Force-push the restacked PR #4501 branch, update PR body, then continue with the next stacked cleanup PR."
+next_exact_action: "Run targeted verification on the eab9c843d stack, force-push the restacked PR #4501 branch, update PR body, then continue with the next stacked cleanup PR."
 stop_condition: "Block131 PR opened and verified; campaign continues to the next audit-unblock target while runtime remains."

@@ -19,7 +19,7 @@ substrate bridge.
 ## Purpose
 
 The audited parent row
-[`MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)
+`MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`
 was conditional because it mixed a closed half-action algebra calculation with
 an open boundary-construction gate. This note splits out the closed algebraic
 core.
@@ -113,3 +113,9 @@ Expected:
 ```text
 TOTAL: PASS=19 FAIL=0
 ```
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
+- [`MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`](MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md)

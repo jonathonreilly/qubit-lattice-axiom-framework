@@ -23,7 +23,7 @@ axiom, Tier-A admission, WEP closure, or audit-status change is introduced.
 
 ## 2026-06-17 Record-only independence no-go
 
-[`EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md`](EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md)
+`EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md`
 proves that the firewall above is a real independence boundary: two completions
 can share the same Lattice + Quantum + Record data and the same finite additive
 record readout while assigning different continuous stiffnesses and different
@@ -134,3 +134,9 @@ The live blocker is the framework-native origin of that context: a derivation
 of the continuous local energy/action functional, inertial rest-gap readout,
 and shared gravitational source coefficient from the record framework. This
 repair introduces none of those as axioms or admitted retained facts.
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
+- [`EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md`](EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md)

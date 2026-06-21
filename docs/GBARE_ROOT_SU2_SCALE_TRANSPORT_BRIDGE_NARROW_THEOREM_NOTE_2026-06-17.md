@@ -32,7 +32,7 @@ spin double cover.
   source separation that combines native cubic `Cl(3)` / `su(2)` with the
   graph-first structural `su(3)` while excluding Wilson dynamics and
   phenomenology.
-- [`STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md`](STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md)
+- `STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md`
   isolates this bridge as the remaining scale gate for the `g_bare`
   trace-normalization route.
 
@@ -112,3 +112,9 @@ Expected summary:
 ```text
 TOTAL: PASS=91, FAIL=0
 ```
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
+- [`STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md`](STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md)

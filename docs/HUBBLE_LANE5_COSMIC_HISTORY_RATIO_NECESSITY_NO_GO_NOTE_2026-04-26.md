@@ -331,4 +331,10 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [omega_lambda_matter_bridge_theorem_note_2026-04-22](OMEGA_LAMBDA_MATTER_BRIDGE_THEOREM_NOTE_2026-04-22.md)
 - [planck_scale_lane_status_note_2026-04-23](PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
 - [hubble_lane5_planck_c1_gate_audit_note_2026-04-26](HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md)
+- `hubble_lane5_eta_retirement_gate_audit_note_2026-04-26`
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
 - [hubble_lane5_eta_retirement_gate_audit_note_2026-04-26](HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md)

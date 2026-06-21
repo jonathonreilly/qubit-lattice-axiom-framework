@@ -46,7 +46,7 @@ fit.
 A scope-narrowing companion already records the same boundary explicitly:
 `QUARK_CP_CARRIER_COMPLETION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md`.
 A new exact-support companion,
-[`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`](QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md),
+`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`,
 repairs the slot-choice part of the old ansatz boundary under the fixed
 Schur-NNI-tree/Hermitian one-edge-extension assumptions: the `1-3` edge is the
 unique off-tree carrier slot and its phase is the unique cycle invariant. The
@@ -185,7 +185,7 @@ none of which the present runner addresses:
    than choosing it by ansatz. Other carrier slots (different index pairs,
    different determinant-charge sectors, non-Hermitian completions) are
    not ruled out by the present note. The exact-support companion
-   [`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`](QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md)
+   `QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`
    now closes the fixed-Schur-NNI-tree/Hermitian one-edge version of this gap:
    the `1-3` edge is the unique off-tree carrier slot and its phase is the
    unique cycle invariant after tree gauge-fixing. It does not derive
@@ -255,3 +255,9 @@ Current expected results on this branch:
 - `frontier_quark_jarlskog_closure_scan.py`: `PASS=5 FAIL=0`
 - `frontier_quark_cp_primitive_projector_scan.py`: summary scan with strongest
   candidate `J/J_atlas = 1.075`
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
+- [`QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md`](QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md)

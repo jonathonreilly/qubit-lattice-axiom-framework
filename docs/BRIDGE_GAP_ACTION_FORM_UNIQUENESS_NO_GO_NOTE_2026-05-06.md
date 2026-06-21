@@ -316,10 +316,16 @@ or select a preferred action form.
 
 ## Cross-references
 
-- Predecessor (this loop): [`BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md) (Block 03 stretch + named obstruction)
+- Predecessor (this loop): `BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md` (Block 03 stretch + named obstruction)
 - Block 02 deliverable: [`BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md) (HK 1-plaq closed form)
 - Block 01 deliverable: [`BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md) (HK time)
 - New-physics opening: [`BRIDGE_GAP_NEW_PHYSICS_OPENING_NOTE_2026-05-06.md`](BRIDGE_GAP_NEW_PHYSICS_OPENING_NOTE_2026-05-06.md)
 - Wilson-as-import: [`G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md`](G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md)
 - Sister no-gos: [`BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026-05-06.md`](BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026-05-06.md)
 - Standard methodology: Drouffe-Zuber 1983 Phys. Rep. 102 ("Strong coupling and mean field methods in lattice gauge theories"); Menotti-Onofri 1981 Nucl. Phys. B190; Helgason 1978 (bi-invariant metrics)
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
+- [`BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md)

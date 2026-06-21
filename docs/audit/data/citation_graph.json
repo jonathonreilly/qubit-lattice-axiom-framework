@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12",
         "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12",
         "cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17",
         "d3_native_stable_orbit_upper_bound_composition_note_2026-06-09",
         "dm_neutrino_operator_selection_obstruction_note_2026-04-14",
         "dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07",
         "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
-        "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08"
+        "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
+        "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7115572a42d04f168effa6347c4e045fa7cb9ec828c8c41eace5fc7e65b95f45",
+      "note_hash": "9ba35a9be0f1422edb9f199664bd3f69e68037a419382f1ec1689cd7628765de",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

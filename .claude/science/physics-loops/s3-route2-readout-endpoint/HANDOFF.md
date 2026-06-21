@@ -3,7 +3,8 @@
 **Updated:** 2026-06-21T14:01:08Z
 **Block:** 20
 **Branch:** `physics-loop/s3-route2-readout-endpoint-block20-20260621`
-**Status:** verification complete; PR creation pending
+**Status:** PR opened
+**PR:** https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4549
 
 ## Claim-State Movement
 
@@ -65,6 +66,11 @@ source/readout theorem, a safe convention boundary, or a sharper no-go.
 
 ## Next Exact Action
 
-Commit, push the branch, open a review PR, then move to the top opportunity: a
-direct E-center source/readout primitive stretch attempt or a direct-consumer
-packet using the `delta_E` split.
+Move to the top opportunity: a direct E-center source/readout primitive
+stretch attempt or a direct-consumer packet using the `delta_E` split.
+
+## PR Identity
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block20-20260621","number":4549,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block20 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4549"}
+```

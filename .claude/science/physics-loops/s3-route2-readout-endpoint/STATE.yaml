@@ -8,7 +8,7 @@ base: origin/main
 base_commit: "01b080108 audit: quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18 audited_decoration"
 lock_status: degraded
 lock_note: "automation_lock.py status failed with permission denied on /Users/jonreilly in this worktree; continuing branch-local."
-current_phase: block20_verified_pr_pending
+current_phase: block20_pr_opened
 active_route: factor_rigidity_readout_primitive_split
 active_hard_residual: "E-center readout/source primitive selecting rho_E after T-side normalization."
 files_touched:
@@ -31,5 +31,12 @@ claim_state_movement:
   - "Exact split: (P(rho_b)-P(rho_a))c = ((rho_b-rho_a) delta_E, 0)."
   - "delta_E=0 consumers are rho_E-blind; E-center remains conditional."
   - "Factor-rigidity supports time-channel universality but not readout primitive selection."
-next_exact_action: "Commit, push, open PR, then start the next ranked opportunity."
 stop_condition: "Do not stop the campaign for block20 completion; pivot after PR handling unless a global stop condition appears."
+pr:
+  number: 4549
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4549"
+  title: "[physics-loop] s3-route2-readout-endpoint block20 exact-support"
+  headRefName: "physics-loop/s3-route2-readout-endpoint-block20-20260621"
+  baseRefName: "main"
+  state: "OPEN"
+next_exact_action: "Start block21 from opportunity queue rank 1 or rank 2."

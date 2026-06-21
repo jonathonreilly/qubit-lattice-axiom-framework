@@ -56237,12 +56237,12 @@
     },
     "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18": {
       "claim_id": "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "c3310865a8de2643956977f0a3934da174f7a12708a72ae330ab9aaf9d44d234",
+      "note_hash": "24919086f4346b863a2aa8f688933c777468bc397cbe48889877ee49cfb1a28a",
       "path": "docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py",
       "title": "Alpha_s Universal Two-Loop Beta-Kernel Theorem Note (2026-06-18)"
@@ -64959,16 +64959,16 @@
     },
     "distance_law_preserving_third_family_note": {
       "claim_id": "distance_law_preserving_third_family_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "distance_law_portability_note"
       ],
       "helper_runner_paths": [
         "scripts/gate_b_grown_joint_package.py"
       ],
-      "note_hash": "13f7e5ca73d566cd902eb1762a004857e0ac62768a66387425f3603c22927cd0",
+      "note_hash": "e80a694eb52f6235ec2ef6befe4edf58abf3653fab063e63d15c4f31e46c4429",
       "path": "docs/DISTANCE_LAW_PRESERVING_THIRD_FAMILY_NOTE.md",
       "runner_path": "scripts/DISTANCE_LAW_PRESERVING_THIRD_FAMILY.py",
       "title": "Distance Law Preserving Third Family Note"
@@ -71071,7 +71071,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "d84685abc815d2519178d66b6e5fb41ccc079893f58aeaacbd88822dfc2d8836",
+      "note_hash": "df27236febdc3e20ea37fa710e790c3e223c9f3cfa99d58c9618fa12c973efb2",
       "path": "docs/EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md",
       "runner_path": "scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py",
       "title": "Emergent Lorentz Spatial-BZ Power-Mixing Boundary Theorem"
@@ -97021,12 +97021,12 @@
     },
     "post_record_dynamics_campaign_closeout_index_2026-06-06": {
       "claim_id": "post_record_dynamics_campaign_closeout_index_2026-06-06",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": "methodology",
-      "claim_type_seed_hint": "positive_theorem",
+      "claim_type_author_hint": "meta",
+      "claim_type_author_hint_raw": "meta",
+      "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "0ab3b80a81a71a5b144bda555aadda29cb8c0668df573d88deae18d27ae042c8",
+      "note_hash": "0900eeb45987534c2fb0c27d448a59704fd6356ad426f23dd0d050dd25a01353",
       "path": "docs/POST_RECORD_DYNAMICS_CAMPAIGN_CLOSEOUT_INDEX_2026-06-06.md",
       "runner_path": "scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py",
       "title": "Post-Record Dynamics Campaign Closeout Index"
@@ -103127,7 +103127,7 @@
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bfe8a1769ce7a3969639d263618ee2207bbfa32b38894168fdfb82f780dbaacf",
+      "note_hash": "abf769dd6d491698de571df9dae98eabd41d478502f6b683abfd73440c2a19d8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118521,22 +118521,22 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1377,
+      "bounded_theorem": 1379,
       "decoration": 2,
-      "meta": 287,
+      "meta": 288,
       "no_go": 208,
-      "none": 1431,
+      "none": 1428,
       "open_gate": 118,
       "positive_theorem": 196
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1779,
+      "bounded_theorem": 1781,
       "decoration": 2,
-      "meta": 287,
+      "meta": 288,
       "no_go": 313,
       "none": 460,
       "open_gate": 192,
-      "positive_theorem": 586
+      "positive_theorem": 583
     },
     "edge_count": 13461,
     "leaf_count": 1161,

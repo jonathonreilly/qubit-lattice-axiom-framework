@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 939 |
 | Boxed decorations under retained parents | 50 |
 | Open gates | 34 |
-| Unaudited rows | 1683 |
+| Unaudited rows | 1682 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 7 |
 | Audited renaming rows | 18 |
@@ -33,13 +33,13 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1695 |
-| Ready rows | 118 |
+| Total pending rows | 1694 |
+| Ready rows | 117 |
 | Cycle-break targets | 0 |
 | Critical pending | 333 |
 | High pending | 303 |
 | Medium pending | 485 |
-| Leaf pending | 574 |
+| Leaf pending | 573 |
 
 Next ready rows by queue order:
 

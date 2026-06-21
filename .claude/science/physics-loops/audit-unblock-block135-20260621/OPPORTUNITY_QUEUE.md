@@ -1,7 +1,7 @@
 # Opportunity Queue
 
 1. Open block135 tooling PR.
-   - status: rebased on main at `ca3f6f8d3`.
+   - status: rebased on main at `678b38ce7`.
    - reason: enables safe source-note cycle repair without touching verdicts.
 
 2. Follow-up source-note cycle repair PR on top of block135.

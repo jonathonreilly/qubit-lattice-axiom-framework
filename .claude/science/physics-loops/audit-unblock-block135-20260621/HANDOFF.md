@@ -11,7 +11,7 @@ Block135 makes the source-graph cycle repair workflow executable:
   live links into that skipped cross-reference section.
 - tests cover both behaviors.
 
-The live dry-run after rebasing onto `origin/main` at `ca3f6f8d3` reports:
+The live dry-run after rebasing onto `origin/main` at `678b38ce7` reports:
 
 - cycles named: 8
 - unique source notes: 4
@@ -39,8 +39,8 @@ audit-support churn. The final branch intentionally keeps only tooling/tests.
 
 ## Next Exact Action
 
-Monitor PR #4505 after the current-main rebase. If it stays clean, rebase the
-follow-up source-note repair PR on top of this tooling branch.
+Force-push PR #4505 after the current-main rebase. If it stays clean, rebase
+the follow-up source-note repair PR on top of this tooling branch.
 
 ## PR
 

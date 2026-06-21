@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-typed-source-readout-bridge-block59-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4590
+```
+
+Remote science commit:
+
+```text
+67cab437d98e354ee1b754c328fb1cf4a0cafbf9
+```
+
 Claim-state movement:
 
 ```text

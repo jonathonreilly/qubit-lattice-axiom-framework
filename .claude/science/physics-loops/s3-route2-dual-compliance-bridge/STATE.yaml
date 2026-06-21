@@ -64,8 +64,11 @@ open_imports:
   - "Show the p=2 law follows from accepted Route-2 source/readout primitives rather than being supplied."
   - "If p=2 fails, find a different source/readout law that fixes the E-center lift."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending
+pr_status: open
+pr_number: 4590
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4590
+remote_science_commit: 67cab437d98e354ee1b754c328fb1cf4a0cafbf9
 next_exact_action: >-
-  Commit, publish the branch, open the review PR, then continue with a direct
-  derivation or no-go for the dual-compliance p=2 premise.
+  Continue with a direct derivation or no-go for the dual-compliance p=2
+  premise.
 stop_condition: none

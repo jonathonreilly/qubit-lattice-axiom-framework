@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 216 |
+| **retained_no_go** | 217 |
 | **retained_bounded** | 1001 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1538 |
+| unaudited | 1537 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1446 |
+| `audited_clean` | 1447 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1864 |
+| `unaudited` | 1863 |
 
 | claim_type | count |
 |---|---:|
@@ -530,6 +530,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -7363,6 +7364,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For unitary eigenvalues z_i, the fibre-averaged hop coefficient is b_eff = b*(sum_i z_i)/d and d^2 - |sum_i z_i|^2 = sum_{i<j}|z_i-z_j|^2 >= 0, so |chi_R(U)/d_R| <= 1.  _(class `A`)_
 - **chain closes:** True — The cited retained-grade inputs supply the generation circulant/hop coefficient readout and finite unitary link-representation setting; the remaining step is the elementary unitary-eigenvalue trace bound. The proof and runner do not select a physical sector-to-representation readout or any observed r value.
 - **rationale:** The load-bearing suppression inequality is genuine finite algebra over the supplied unitary representation, not a fitted numerical comparison or symbol renaming. The runner source actually constructs the dressed generation matrix, takes the fibre trace blockwise, checks the normalized-character formula, verifies the triangle identity on deterministic phase grids, and tests several free r0 values. The clean verdict is for the bounded kernel only; the source correctly leaves physical sector-to-representation/readout assignment outside the claim.
+- **auditor confidence:** high
+
+### `flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15`
+
+- **Note:** [`FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md`](../../docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Cap-only algebraic no-go: for a unitary link representation dressing only the hop coefficient and a fibre-averaged generation operator readout, r_R <= r0; no physical sector-to-representation or registered-Koide-dial bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Fibre-averaging the link-dressed hop gives b_eff = b*chi_R(U)/d_R and a_eff = a, hence r_R = r0*|chi_R(U)/d_R|^2 <= r0 by |chi_R(U)| <= d_R.  _(class `A`)_
+- **chain closes:** True — The retained/retained-bounded cited authorities supply the hop/on-site separation and the finite normalized-character suppression kernel. The conditional lepton/quark ordering statement is explicitly excluded from the audited source content.
+- **rationale:** The finite algebra closes: once b_eff = b*chi_R(U)/d_R and a_eff = a are supplied, the identity d_R^2 - |chi_R(U)|^2 = sum_{i<j}|z_i-z_j|^2 gives the cap directly. The runner constructs the tensor operator and fibre average rather than merely printing the target inequality. The observed lepton/quark checks are conditional comparator arithmetic and are not load-bearing for the clean cap-only verdict.
 - **auditor confidence:** high
 
 ### `flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18`

@@ -17,8 +17,8 @@ repo_authority_edits: false
 audit_or_verdicts_run: false
 mergeability_or_conflict_checks_run: false
 remote_pr:
-  number: null
-  url: null
+  number: 4574
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4574
 created_files:
   - docs/QUARK_ROUTE2_THETA_SLICE_CHANNEL_DENSITY_NO_GO_NOTE_2026-06-21.md
   - scripts/frontier_quark_route2_theta_slice_channel_density_no_go_2026_06_21.py
@@ -38,4 +38,4 @@ verification:
   diff_check: pass
   overclaim_scan: pass
 lock_status: "repo automation lock not acquired in this branch; branch-local lock discipline used"
-next_exact_action: "Run staged diff/firewall checks, commit, publish branch, open PR, then pivot to source/readout density normalization."
+next_exact_action: "Pivot to source/readout density normalization or no-go the current polynomial carrier as a source of channel-weight division."

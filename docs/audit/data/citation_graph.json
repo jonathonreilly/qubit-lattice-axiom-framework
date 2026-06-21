@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_kahler_dirac_silent_on_measure_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lattice_total_momentum_conservation_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
         "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
         "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
         "koide_reality_type_permitted_not_forced_note_2026-05-30",
         "koide_records_pointer_grounds_block_channel_note_2026-05-31",
         "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25",
         "koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3",
-        "lattice_total_momentum_conservation_theorem_note_2026-05-02"
+        "lattice_total_momentum_conservation_theorem_note_2026-05-02",
+        "n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7aaba7c37fdd3e13396f8f204868f09488f7baa99585b3faf39dbfe95a6a34d3",
+      "note_hash": "38cfe5d29a21a7504132d8e66d736243c1eae6fb847e78a9c723521a82c192d0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

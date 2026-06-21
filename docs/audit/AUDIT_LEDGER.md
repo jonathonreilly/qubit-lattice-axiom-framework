@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1003 |
+| **retained_bounded** | 1004 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1525 |
+| unaudited | 1524 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1453 |
+| `audited_clean` | 1454 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1851 |
+| `unaudited` | 1850 |
 
 | claim_type | count |
 |---|---:|
@@ -831,6 +831,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_lightcone_primitive_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -11913,6 +11914,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The native single-component D is spin-blind on the per-site C^2, the merger proves only adjoint operator-frame covariance, and Omega(x) only identifies the Kawamoto-Smit scalarization bridge, leaving the physical matter-state spinor law as a separate bridge.  _(class `A`)_
 - **chain closes:** True — The retained-grade inputs and runner establish the exact matrix facts: D is single-component/spin-blind, the merger is adjoint covariance on operators, and Omega maps Pauli kinetic matrices to scalar staggered phases. Those facts do not assert a fundamental rotation action on the matter ket, so the stated residual follows within the note's bounded scope.
 - **rationale:** The load-bearing content is class A algebra over retained or retained-bounded inputs, with the runner checking the relevant commutators, adjoint action, KS scalarization identity, and scalar sign-field gauge equivalence. The note does not promote KS or Grassmann suppliers beyond their bounded scopes and explicitly withholds the KS-to-physical-state-law bridge. The negative/localization wording is narrow rather than a universal no-go: elementary state-law and KS-to-state-law routes remain open residuals.
+- **auditor confidence:** high
+
+### `koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal two-slot reduced-carrier algebra: the log-volume extremum, positive square reparametrization E_i = rho_i^2, and retained Frobenius identities imply a^2 = 2|b|^2 and kappa = 2, with no physical SO(2), charged-lepton readout, or mass-identification bridge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting E_i = rho_i^2 turns the reduced critical point into E_+ = E_perp = E_tot/2, and substituting E_+ = 3a^2, E_perp = 6|b|^2 gives a^2 = 2|b|^2 and kappa = 2.  _(class `A`)_
+- **chain closes:** True — Within the declared formal scope, the reduced log-volume extremum fixes rho_+^2 = rho_perp^2 = E_tot/2, and the retained Frobenius identities then algebraically force 3a^2 = 6|b|^2. The note explicitly excludes the physical charged-lepton bridge, so no unclosed physical identification is needed for the audited claim.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs: the retained reduced two-slot extremum and the retained Frobenius block-total identities. The runner source symbolically verifies the Lagrange systems, reparametrization, Frobenius identities, and counterfactual tilts rather than merely printing constants. No external comparator, fitted value, or physical charged-lepton identification is used inside the binding claim. The result remains bounded to the formal carrier scope stated in the note.
 - **auditor confidence:** high
 
 ### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`

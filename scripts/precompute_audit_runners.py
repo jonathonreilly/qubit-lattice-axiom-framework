@@ -73,12 +73,12 @@ CACHE_DIR = rc.CACHE_DIR
 # script just calls into it.
 
 def canonical_runner_path(runner_path: str | Path) -> str:
-    """Repair legacy runner references to repo-local `scripts/<basename>.py`.
+    """Repair legacy runner references to repo-local checked-out scripts.
 
     Some old rows and triage artifacts carry bare script names or absolute
-    paths from temporary worktrees. Precompute should execute the checked-out
-    repo runner when that basename exists under `scripts/`; truly absent
-    historical runners stay missing.
+    paths from temporary worktrees. Precompute should execute the current
+    checkout's runner when the embedded `scripts/...` path or basename exists;
+    truly absent historical runners stay missing.
     """
     raw = str(runner_path).strip()
     if not raw:
@@ -89,6 +89,10 @@ def canonical_runner_path(runner_path: str | Path) -> str:
     candidates: list[str] = []
     if raw_path.is_absolute():
         if basename.endswith(".py"):
+            parts = raw_path.parts
+            if "scripts" in parts:
+                scripts_idx = len(parts) - 1 - list(reversed(parts)).index("scripts")
+                candidates.append(Path(*parts[scripts_idx:]).as_posix())
             candidates.append(f"scripts/{basename}")
     elif raw.startswith("scripts/"):
         candidates.append(raw)

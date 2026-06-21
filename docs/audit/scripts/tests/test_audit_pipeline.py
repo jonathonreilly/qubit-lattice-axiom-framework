@@ -203,6 +203,19 @@ class PrecomputeAuditRunnersTest(unittest.TestCase):
         self.assertTrue(referenced_cache.exists())
         self.assertFalse(unreferenced_cache.exists())
 
+    def test_precompute_canonical_runner_path_preserves_absolute_scripts_subpath(self):
+        m = _import_precompute_audit_runners()
+        m.REPO_ROOT = self.tmp_root
+        nested_runner = self.tmp_root / "scripts" / "corrections" / "valid_nested.py"
+        nested_runner.parent.mkdir(parents=True, exist_ok=True)
+        nested_runner.write_text("print('ok')\n", encoding="utf-8")
+
+        raw = "/tmp/old-worktree/scripts/corrections/valid_nested.py"
+        self.assertEqual(
+            m.canonical_runner_path(raw),
+            "scripts/corrections/valid_nested.py",
+        )
+
 
 class ApplyAuditTest(unittest.TestCase):
     def setUp(self):

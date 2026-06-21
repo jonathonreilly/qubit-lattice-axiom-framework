@@ -484,8 +484,8 @@ def canonical_runner_path(runner_path: str | Path) -> str:
 
     Historical ledger rows may carry bare script names or absolute paths from
     temporary worktrees. For audit prompt rendering, use the current checkout's
-    ``scripts/<basename>.py`` when it exists; truly absent historical runners
-    remain missing.
+    embedded ``scripts/...`` path or ``scripts/<basename>.py`` when either
+    exists; truly absent historical runners remain missing.
     """
     raw = str(runner_path).strip()
     if not raw:
@@ -496,6 +496,10 @@ def canonical_runner_path(runner_path: str | Path) -> str:
     candidates: list[str] = []
     if raw_path.is_absolute():
         if basename.endswith(".py"):
+            parts = raw_path.parts
+            if "scripts" in parts:
+                scripts_idx = len(parts) - 1 - list(reversed(parts)).index("scripts")
+                candidates.append(Path(*parts[scripts_idx:]).as_posix())
             candidates.append(f"scripts/{basename}")
     elif raw.startswith("scripts/"):
         candidates.append(raw)

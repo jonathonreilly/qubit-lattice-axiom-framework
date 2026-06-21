@@ -8,9 +8,13 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+SCRIPTS_DIR = ROOT / "scripts"
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
 
 
 def load_module(name: str, rel: str):
@@ -32,16 +36,19 @@ def check(label: str, ok: bool, detail: str = "") -> None:
 def main() -> int:
     audit_runner = load_module("codex_audit_runner_under_test", "scripts/codex_audit_runner.py")
     deps = load_module("audit_packet_script_deps_under_test", "scripts/audit_packet_script_deps.py")
+    precompute = load_module("precompute_audit_runners_under_test", "scripts/precompute_audit_runners.py")
 
     cases = {
         "frontier_staggered_cycle_battery.py": "scripts/frontier_staggered_cycle_battery.py",
         "/Users/jonreilly/Projects/Physics/.claude/worktrees/sleepy-cerf/scripts/frontier_gravitational_time_dilation.py": "scripts/frontier_gravitational_time_dilation.py",
+        "/tmp/old-worktree/scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py": "scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py",
         "scripts/frontier_lorentz_derived.py": "scripts/frontier_lorentz_derived.py",
     }
     for raw, expected in cases.items():
         for module_name, module in [
             ("codex_audit_runner", audit_runner),
             ("audit_packet_script_deps", deps),
+            ("precompute_audit_runners", precompute),
         ]:
             got = module.canonical_runner_path(raw)
             check(f"{module_name} canonicalizes {Path(raw).name}", got == expected, got)

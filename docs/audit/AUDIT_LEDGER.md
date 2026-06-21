@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 221 |
+| **retained_no_go** | 222 |
 | **retained_bounded** | 1021 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1493 |
+| unaudited | 1492 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1472 |
+| `audited_clean` | 1473 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1819 |
+| `unaudited` | 1818 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 933 |
-| `leaf` | 1466 |
+| `medium` | 932 |
+| `leaf` | 1467 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1520,6 +1520,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universality_classifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `unordered_mass_pdep_record_independence_no_go_note_2026-06-18` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `valley_linear_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `valley_linear_asymptotic_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -22196,6 +22197,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Under the explicit P-dep premise, Additivity gives R(total)=sum_k r_k and each r_k is a function only of the registered datum ([k], lambda_k), so R factors through M(delta).  _(class `A`)_
 - **chain closes:** True — The finite algebra closes on the stated conditional inputs: Additivity removes cross terms, P-dep supplies per-record dependence on registered data, and K/CPT covariance erases within-orbit order. The closure is conditional because P-dep is not derived from the Minimal Axioms packet.
 - **rationale:** Issue: B1's factorization is load-bearing on the explicit P-dep premise. Why this blocks clean status: the cited Minimal Axioms Record clause supplies additivity and K/CPT orbit registration, but it explicitly does not supply P-dep, a readout-context bridge, or exclusion of all unregistered context-scale dependencies. Repair target: prove or register a retained bridge deriving P-dep for this supplied readout class, or keep downstream uses explicitly conditional on P-dep. Claim boundary until fixed: the runner and note support the finite algebraic multiset and flip-invariance theorem only under the stated supplied context plus P-dep.
+- **auditor confidence:** high
+
+### `unordered_mass_pdep_record_independence_no_go_note_2026-06-18`
+
+- **Note:** [`UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md`](../../docs/UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Record finite additivity plus K/CPT orbit constancy alone do not derive P-dep for the unordered-mass registered datum; P-dep is an extra extensionality/readout-identification premise.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-unordered_mass_pdep_record_independence_no_go_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** There are Record-compatible contexts with the same registered ([k], lambda_k) data but different unregistered K-even q, and I_q(S, delta) = q * sum_{k in S} lambda_k(delta) satisfies Record finite additivity and K/CPT orbit constancy while assigning different values to the same registered datum.  _(class `A`)_
+- **chain closes:** True — The cited Record axiom explicitly supplies additivity and orbit constancy but no weighting, normalization, or readout-identification rule. A q-scaled additive orbit-constant readout with q outside the registered datum is a countermodel to derivability of P-dep from Record alone.
+- **rationale:** The load-bearing step is an algebraic countermodel over the accepted Record axiom, not a definition, renaming, tuned numerical match, or external comparator. For each fixed q, the runner verifies finite additivity, I(empty)=0, and K/CPT orbit constancy on the C3 surface; comparing q=1 and q=2 then gives different readout values at the same ([k], lambda_k) datum. The no-go is scoped only to Record-alone derivability and explicitly leaves physical-readout/extensionality theorems or governance-approved P-dep premise routes open, so it does not overclaim a broader impossibility.
 - **auditor confidence:** high
 
 ### `uv_gauge_to_yukawa_bridge_sc_vs_pert_note`

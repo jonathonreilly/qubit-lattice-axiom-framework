@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "unordered_mass_pdep_record_independence_no_go_note_2026-06-18"
     },
     {
@@ -103164,13 +103160,12 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
         "unordered_mass_pdep_record_independence_no_go_note_2026-06-18",
         "yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17",
         "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0b00a3582a5e87b1a429c6123c0f006deec1e787f449b3293488ddaa43262334",
+      "note_hash": "becd47e11e70b50c930ac58b9ca8d11a87e82be93926e9a6fe8690e10914b3b4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118583,8 +118578,8 @@
       "open_gate": 192,
       "positive_theorem": 583
     },
-    "edge_count": 13470,
-    "leaf_count": 1150,
+    "edge_count": 13469,
+    "leaf_count": 1151,
     "node_count": 3619,
     "root_count": 1090,
     "runners_with_path": 3252

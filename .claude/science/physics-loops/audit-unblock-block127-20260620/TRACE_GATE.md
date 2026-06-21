@@ -20,6 +20,5 @@ making the runner evidence inspectable:
 - remaining dependencies: `gw_echo_null_result_note`, `work_history.gw_echo_timing_route_note`
 - scope: leaf; no direct downstream retained-grade chain movement
 
-The trace class is methodology because the changed artifacts are cached runner evidence and
-generated audit-support surfaces rather than a theorem, proof note, no-go, or retained-status
-proposal.
+The trace class is methodology because the changed artifact is cached runner evidence rather
+than a theorem, proof note, no-go, or retained-status proposal.

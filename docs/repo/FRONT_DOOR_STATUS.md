@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 931 |
 | Boxed decorations under retained parents | 53 |
 | Open gates | 34 |
-| Unaudited rows | 1678 |
+| Unaudited rows | 1677 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 22 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
+- [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; audit_in_progress
 - [`koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md) - critical; unaudited
 - [`hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md) - critical; unaudited
 - [`quark_route2_exact_readout_map_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - critical; unaudited
@@ -85,7 +85,7 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
-- `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
+- `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
 - `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008

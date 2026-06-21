@@ -49,9 +49,11 @@ parent_check_results:
   exact_readout_map: "PASS=11 FAIL=0"
   primitive_chain_reaudit: "TOTAL: PASS=24, FAIL=0"
 review_disposition: local_gates_passed
-pr_status: pending
+pr_status: opened
+pr_number: 4580
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4580
 next_exact_action: >-
-  Run parent checks, py_compile, diff/overclaim gates, then commit, publish the
-  science branch, open a PR, and record the PR handoff without checking
-  conflicts or mergeability.
+  Continue the campaign with the nonblind E-center lift primitive as the next
+  direct positive target, unless redirected. Do not check PR conflicts or
+  mergeability.
 stop_condition: runtime_remaining_continue_campaign_after_pr

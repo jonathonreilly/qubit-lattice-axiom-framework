@@ -19,14 +19,18 @@ Current runner result:
 TOTAL: PASS=31, FAIL=0
 ```
 
+PR:
+
+```text
+#4580 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4580
+head: physics-loop/s3-route2-nonlinear-tensor-observable-block50-20260621
+base: main
+state: OPEN
+```
+
 Next exact action:
 
-1. Run py_compile, parent checks, diff check, and overclaim scan.
-2. Commit and publish
-   `physics-loop/s3-route2-nonlinear-tensor-observable-block50-20260621`.
-3. Open a PR against `main`.
-4. Record the PR URL here and in `PR_BACKLOG.md`.
-5. Continue the campaign with the nonblind E-center lift primitive as the
+1. Continue the campaign with the nonblind E-center lift primitive as the
    next highest-value target unless the user redirects.
 
 Do not push to main. Do not refresh existing PRs to main. Do not check PR

@@ -8,9 +8,17 @@ Branch:
 physics-loop/s3-route2-source-excess-bank-gap-block67-20260621
 ```
 
-PR: pending.
+PR:
 
-Remote science commit: pending.
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4598
+```
+
+Remote science commit:
+
+```text
+46ac99182800de08cbab72af521143b78ef7e337
+```
 
 Claim-state movement:
 
@@ -78,7 +86,9 @@ PASS
 
 ## PR Identity
 
-Pending.
+```text
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-source-excess-bank-gap-block67-20260621","number":4598,"state":"OPEN","title":"[physics-loop] s3-route2-source-excess-bank-gap block67 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4598"}
+```
 
 ## Next Exact Action
 

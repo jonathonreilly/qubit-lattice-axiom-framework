@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | unaudited | critical | 30 | 12.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py` |
+| 1 | `hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30` | open_gate | audit_in_progress | critical | 30 | 12.45 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py` |
 | 2 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | unaudited | critical | 1119 | 10.63 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |
 | 3 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1118 | 12.13 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
 | 4 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1114 | 40.12 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |

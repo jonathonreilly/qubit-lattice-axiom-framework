@@ -1,0 +1,36 @@
+Route-2 nonseparable quadratic equivariant primitive no-go
+========================================================================================
+[PASS] O_h signed-permutation group has order 48
+       order=48
+[PASS] six-arm representation decomposes as A1 (+) E (+) T1 with weights (1/6,1/3,1/2)
+       ranks=(1, 2, 3), weights=(1/6, 1/3, 1/2)
+[PASS] identity characters are dim(A1,E,T1)=(1,2,3)
+       chars=(1, 2, 3)
+[PASS] Sym^2(E) contains A1 (+) E and no T1 output channel
+       dim=3, mult(A1,E,T1)=(1, 1, 0)
+[PASS] E tensor T1 contributes one T1 readout channel and no A1/E channel
+       dim=6, mult(A1,E,T1)=(0, 0, 1)
+[PASS] Sym^2(T1) contains A1 (+) E and no T1 output channel
+       dim=6, mult(A1,E,T1)=(1, 1, 0)
+[PASS] Sym^2(E (+) T1) contains two A1 scalars, two E channels, and one T1 channel
+       dim=15, mult(A1,E,T1)=(2, 2, 1)
+[PASS] Hom_Oh(Sym^2(E (+) T1), E (+) T1) has dimension 3
+       two E-output reduced coefficients + one T1-output coefficient = 3
+[PASS] even after fixing one T-output normalization, at least two reduced coefficients remain free
+       free_after_T_norm=2, scalar_invariants=2
+[PASS] readout-relevant multiplicities account for 9 of 15 dimensions; remaining 6 are non-readout T2-type channels
+       accounted=9, leftover=6
+[PASS] lambda=9/4 is equivalent to q_E=15/8, rho_E=21/4, c_TE=-8/9 under the granted T-side
+       q_E,rho_E,c_TE=(Fraction(15, 8), Fraction(21, 4), Fraction(-8, 9))
+[PASS] free reduced coefficients can realize comparison lambdas 1, 3/2, 9/4, and 7/3; symmetry does not select one
+       lambda=1: rho_E=-1; lambda=3/2: rho_E=3/2; lambda=9/4: rho_E=21/4; lambda=7/3: rho_E=17/3
+
+========================================================================================
+PASS=12 FAIL=0
+
+VERDICT: no-go for the pure O_h nonseparable quadratic primitive route.
+O_h allows quadratic maps Sym^2(E (+) T1) -> E (+) T1, including a genuinely
+mixed E tensor T1 -> T1 channel, but the map is not unique: there are two
+independent E-output reduced coefficients and one T-output coefficient. The
+endpoint lambda=9/4 is therefore not selected by the representation content;
+it still requires an additional coefficient-selection or normalization primitive.

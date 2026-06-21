@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_carrier_locus_decomposition_note_2026-06-01"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_reality_type_permitted_not_forced_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_carrier_locus_decomposition_note_2026-06-01",
         "koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16",
         "koide_first_order_selector_bounded_localization_certificate_2026-06-18",
         "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05",
         "koide_gamma5_factor_bridge_no_go_note_2026-06-06",
         "koide_kahler_dirac_silent_on_measure_note_2026-05-30",
         "koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17",
-        "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25"
+        "koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25",
+        "koide_reality_type_permitted_not_forced_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b09e2041c5db7501c60fb8311344f3298e0ac6b8f0066fa5717e5f8d0b021441",
+      "note_hash": "00593732a3eba3f78b8d14c6af856f19ad85762a0dd1de2f26ff659859ba543f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

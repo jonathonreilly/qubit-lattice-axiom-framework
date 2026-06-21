@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1511 |
+| Applied audit verdicts | 1512 |
 | Retained-grade rows, including boxed decorations | 1419 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 946 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 36 |
-| Unaudited rows | 1635 |
+| Unaudited rows | 1634 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 18 |
+| Audited conditional rows | 19 |
 | Audited renaming rows | 27 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1637 |
-| Ready rows | 109 |
+| Total pending rows | 1636 |
+| Ready rows | 108 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 283 |
-| Medium pending | 474 |
+| Medium pending | 473 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
+- [`charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30`](../../docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 - [`observable_principle_p1_p2_from_qubit_trace_note_2026-05-20`](../../docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
 - [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
-- [`charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30`](../../docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
+- [`koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

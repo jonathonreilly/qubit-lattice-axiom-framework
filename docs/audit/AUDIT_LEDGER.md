@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 955 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1622 |
+| unaudited | 1621 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 20 |
+| ~~audited_conditional~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1389 |
-| `audited_conditional` | 20 |
+| `audited_conditional` | 21 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1948 |
+| `unaudited` | 1947 |
 
 | claim_type | count |
 |---|---:|
@@ -119,8 +119,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
-| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1099 | 35.60 | `audited_clean` | **retained_bounded** |
+| 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 902 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
@@ -1542,6 +1542,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `u1_fermion_number_conservation_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_vertex_power_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -18758,6 +18759,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The load-bearing step is the trace identity Tr[T_adj^a T_adj^b] = sum_{c,d} f^{acd} f^{bcd} = N delta^{ab} = 3 delta^{ab}, which fixes the adjoint Casimir eigenvalue by tracing C2(adj).  _(class `A`)_
 - **chain closes:** True — The chain closes for the bounded algebraic scope: the retained-bounded cited authority supplies SU(3) with Tr(T^a T^b)=1/2 delta^{ab} and f^{abc}, and standard adjoint/Jacobi algebra gives the adjoint representation. The SU(3) trace identity gives C_A=3, centrality plus irreducibility/direct scalarity gives C2(adj)=c I_8, and the trace fixes c=3 without using the deferred physical-color bridge.
 - **rationale:** The cited authority is retained_bounded and is used only for the algebraic SU(3) normalization; its open physical-color identification is not load-bearing for this scoped claim. Independent factor checks give Hermitian T_adj=-i f, Tr(T_adj^a T_adj^b)=sum f^{acd}f^{bcd}=3 delta^{ab}, Tr C2=8*3, C2(fund)=4/3, and ratio 9/4. The runner computes f from lambda/2 and builds the adjoint matrices rather than merely printing constants; the hard-coded expected values are comparison targets, not the derivation source.
+- **auditor confidence:** high
+
+### `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`
+
+- **Note:** [`SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional fixed-lattice SU(3) Wilson-axis reduction: if the standard fixed-lattice Wilson transfer/gap setting and no second-order bulk critical point for 0 < beta <= 6 are supplied, then the lattice-units 0++ gap at beta=6 is positive; runner checks only bounded diagnostics and guardrails.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In infinite volume the gap is m(beta)=1/xi(beta), so a zero gap at beta=6 would require a divergent correlation length, which is excluded only if the no-second-order-bulk-critical-point premise is supplied.  _(class `A`)_
+- **chain closes:** False — The algebraic reduction is coherent, but the restricted packet does not prove the no-second-order bulk critical point premise or an equivalent retained bridge propagating a small-beta positive gap to beta=6. The cited retained-bounded support only supplies bounded Wilson transfer-kernel/RP and diagnostic context, not the missing criticality theorem.
+- **rationale:** Issue: the decisive no-second-order-bulk-critical-point premise on the 4D SU(3) fundamental-Wilson axis through beta=6 is assumed, not derived. Why this blocks: without that theorem, m(6)>0 does not follow from the provided dependencies, because a correlation-length divergence on the path is exactly the remaining obstruction. Repair target: prove a framework-native no-criticality theorem on 0 < beta <= 6 or an equivalent retained transfer-matrix/gap bridge from the strong-coupling positive-gap regime to beta=6. Claim boundary until fixed: the note remains a conditional fixed-lattice reduction plus supporting one-plaquette, strong-coupling, positive-kernel, and comparator guardrail diagnostics.
 - **auditor confidence:** high
 
 ### `su3_bridge_pr525_flaw_fix_note_2026-05-05`

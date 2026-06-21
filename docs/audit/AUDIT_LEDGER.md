@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 941 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1652 |
+| unaudited | 1651 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 24 |
-| ~~audited_conditional~~ | 14 |
+| ~~audited_conditional~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1370 |
-| `audited_conditional` | 14 |
+| `audited_conditional` | 15 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 24 |
-| `unaudited` | 1978 |
+| `unaudited` | 1977 |
 
 | claim_type | count |
 |---|---:|
@@ -1518,6 +1518,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `yt_vertex_power_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -16663,6 +16664,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `COMPLEX_SELECTIVITY_PREDICTOR_NOTE.md`
   - `DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`
 - **auditor confidence:** high
+
+### `shapiro_delay_note`
+
+- **Note:** [`SHAPIRO_DELAY_NOTE.md`](../../docs/SHAPIRO_DELAY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite three-family/two-seed proxy phase replay over the declared Shapiro delay harness, including the asserted inherited static-cone non-uniqueness boundary and excluding physical Shapiro-law, lab-calibration, and field-speed claims.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-shapiro_delay_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The primary runner recomputes the bounded c-dependent phase table from scripts/shapiro_delay_portable.py and asserts exact zero control, small family spread, monotone phase increase as c decreases, table agreement, and bounded non-physical scope.  _(class `C`)_
+- **chain closes:** False — The finite phase-lag replay itself closes from the included runner/helper source and completed cache. The full scoped claim does not close because the cited static-cone discriminator's exact-mimic table has different phase values from the repaired table, and no updated static-cone replay or theorem bridges that retained no-go result to this repaired curve.
+- **rationale:** Issue: the finite replay table is computed rather than printed, but the source also says a static cone shape can reproduce the same phase curve. Why this blocks: the supplied retained_no_go static-discriminator authority shows a different causal/static curve than the repaired table, and the primary runner only text-checks that the boundary is mentioned. Repair target: rerun or prove the static-cone discriminator against the repaired shapiro_delay_portable table, or narrow the note to say only that no uniqueness claim is made. Claim boundary until fixed: the bounded finite c-dependent replay with exact zero control, small family spread, and monotone phase is supported; the exact same-curve static mimic for this repaired table is not closed by the packet.
+- **auditor confidence:** medium
 
 ### `shapiro_diamond_bridge_note`
 

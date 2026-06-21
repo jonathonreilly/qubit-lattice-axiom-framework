@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 292,
-    "high": 285,
+    "high": 284,
     "leaf": 588,
     "medium": 489
   },
@@ -8462,34 +8462,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "shapiro_delay_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "causal_propagating_field_live_packet_note_2026-06-05",
-        "causal_field_reconciliation_note",
-        "shapiro_static_discriminator_note"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/shapiro_delay_portable.py"
-      ],
-      "load_bearing_score": 9.492,
-      "note_path": "docs/SHAPIRO_DELAY_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/shapiro_phase_lag_probe.py",
-      "transitive_descendants": 89
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -49591,6 +49563,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 117,
-  "total_pending": 1654
+  "ready_count": 116,
+  "total_pending": 1653
 }

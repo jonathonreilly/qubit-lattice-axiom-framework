@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "causal_field_reconciliation_note"
+      "to": "shapiro_delay_note"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "causal_field_reconciliation_note",
+        "shapiro_delay_note",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "flavor_readout_gate_equals_carrier_identification_2026-05-31",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
@@ -103190,7 +103190,7 @@
         "u1_fermion_number_conservation_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2d8650912cc99f433c776d58c0e827361aef6db6f9e9a899593a64d6f51d9a5e",
+      "note_hash": "8d331e20c7dfbf40a019e8a80c8765ed02876d8f80335721957049d083106b2d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

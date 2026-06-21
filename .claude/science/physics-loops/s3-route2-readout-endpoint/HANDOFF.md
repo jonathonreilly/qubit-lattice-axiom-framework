@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block26-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4555
+```
+
+Identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block26-20260621","number":4555,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block26 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4555"}
+```
+
 Block26 proves a source-augmented E-center functor no-go. The same signature
 
 ```text
@@ -57,5 +69,5 @@ direct q_E theorem: gamma_E(center)/gamma_E(shell) = 15/8
 
 ## Next Action
 
-Open the block26 PR, verify only identity fields, then pivot to the direct
-consumer readout ambiguity packet.
+Pivot to the direct consumer readout ambiguity packet. Do not refresh existing
+PRs and do not check PR conflicts.

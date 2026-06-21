@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 971 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1596 |
+| unaudited | 1595 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -55,7 +55,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
 | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 3 |
-| `decoration_under_three_generation_observable_theorem_note` | 2 |
+| `decoration_under_three_generation_observable_theorem_note` | 3 |
 | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
 
@@ -64,16 +64,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1409 |
 | `audited_conditional` | 24 |
-| `audited_decoration` | 57 |
+| `audited_decoration` | 58 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1922 |
+| `unaudited` | 1921 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1807 |
-| `decoration` | 58 |
+| `bounded_theorem` | 1806 |
+| `decoration` | 59 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 939 |
-| `leaf` | 1460 |
+| `medium` | 940 |
+| `leaf` | 1459 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1610,6 +1610,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_hw1_response_column_schur_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_hw1_source_transfer_boundary_note` | cross_family | codex-gpt-5.5 | A | `pmns_hw1_source_transfer_boundary_note` |
 | `pmns_sole_axiom_free_point_identity_block_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | cross_family | codex-gpt-5.5 | A | `pmns_oriented_cycle_channel_value_law_note` |
 | `quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
+| `quark_c3_oriented_ward_splitter_support_note_2026-04-28` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
 | `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
@@ -16095,6 +16096,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The complex commutant of the order-three cyclic permutation on C^3 is the circulant algebra u I + v C + w C^2, and Hermiticity imposes u real and w = conjugate(v).  _(class `A`)_
 - **chain closes:** True — The retained cited parent supplies the C^3 carrier, translation-character basis, and cyclic C3 action. The stated normal form, reflection parity, spectrum, and scalar readout condition then follow by standard finite-dimensional matrix algebra without importing physical quark carrier, source, readout, or mass data.
 - **rationale:** The algebra is correct on the restricted packet: the commutant is the circulant algebra, the Hermitian basis and Fourier eigenvalues follow with the stated normalization, and the diagonal readout scalar condition follows from commuting with a transitive cycle. The runner source performs real matrix checks rather than merely printing constants, and it includes firewall checks against quark masses, fitted Yukawas, CKM inputs, and physical source laws. Under the rubric tie-breaker, all load-bearing work is class A with no external comparator checks and reduces to one retained upstream parent plus standard mathematics, so the proper audit status is decoration rather than an independent clean theorem.
+- **decoration parent:** `three_generation_observable_theorem_note`
+- **auditor confidence:** high
+
+### `quark_c3_oriented_ward_splitter_support_note_2026-04-28`
+
+- **Note:** [`QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md`](../../docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic C3 Hermitian commutant normal form, Fourier spectrum, reflection-odd splitter, and scalar diagonal-readout boundary on the retained V=C^3 cycle surface; no quark-mass source/readout law is audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_three_generation_observable_theorem_note`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-quark_c3_oriented_ward_splitter_support_note_2026-04-28-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Every complex endomorphism commuting with C is uI+vC+wC^2, and Hermiticity imposes u real and w=conjugate(v), yielding W(a,b,c)=aI+b(C+C^2)+c(C-C^2)/(i sqrt(3)).  _(class `A`)_
+- **chain closes:** True — The retained three-generation observable theorem supplies V=C^3 and the C3[111] cycle, and the normal form, spectrum, and diagonal-readout boundary follow by standard finite cyclic linear algebra. The source explicitly confines the result to local algebraic support, so no physical quark Yukawa derivation is part of the audited claim.
+- **rationale:** The load-bearing mathematics is a correct class-A algebraic calculation: the commutant of a three-cycle is the circulant algebra, Hermiticity gives the stated real basis, and the eigenvalue/readout statements follow directly. After the dependency repair, the only load-bearing carrier input is the retained three-generation observable surface plus standard cyclic representation theory. With no external comparator or independent physical bridge in scope, the algebraic-decoration tie-breaker applies rather than audited_clean.
 - **decoration parent:** `three_generation_observable_theorem_note`
 - **auditor confidence:** high
 

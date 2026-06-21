@@ -31,7 +31,9 @@ parent_check_results:
   exact_readout_map: "PASS=11 FAIL=0"
   e_center_blindness: "TOTAL: PASS=14, FAIL=0"
 verification_status: local_gates_passed
-pr_status: pending
+pr_status: opened
+pr_number: 4581
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4581
 next_exact_action: >-
-  Run parent checks, package gates, commit, publish branch, open PR, and record
-  handoff without checking conflicts or mergeability.
+  Continue the campaign by attacking the typed R_conn bridge derivation or
+  direct E-channel source row. Do not check PR conflicts or mergeability.

@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 987 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1560 |
+| unaudited | 1559 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -55,6 +55,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_plaquette_self_consistency_note` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
+| `decoration_under_staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
 | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 3 |
 | `decoration_under_three_generation_observable_theorem_note` | 3 |
@@ -66,20 +67,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1432 |
 | `audited_conditional` | 34 |
-| `audited_decoration` | 59 |
+| `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1886 |
+| `unaudited` | 1885 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1806 |
-| `decoration` | 60 |
+| `decoration` | 61 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 746 |
+| `positive_theorem` | 745 |
 
 | criticality | count |
 |---|---:|
@@ -1650,6 +1651,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cpt_exact_note` | cross_family | codex-gpt-5.5 | A | `cpt_exact_note` |
+| `staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17` | decoration | ~~audited_decoration~~ | `decoration_under_staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | cross_family | codex-gpt-5.5 | A | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `strong_cp_theta_zero_audited_scope_narrow_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_strong_cp_theta_zero_note` | weak | codex-gpt-5.5 | A | `strong_cp_theta_zero_note` |
@@ -18933,6 +18935,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Covariance forces a uniform real plaquette flux and, on simply connected regions, flux classifies site-local U(1) frame orbits, leaving exactly K0 and K1; Pauli anticommutation then forces every site-local absorbing frame into K1 while K0 remains a valid countermodel.  _(class `C`)_
 - **chain closes:** True — The cited axiom premise supplies the Z^3 nearest-neighbor lattice and one-qubit C^2 carrier, while retained Cl(3), tensor-product translation, and parity authorities supply the algebraic surfaces used. The runner and proof compute the flux classification, CAR(2) no-spectator obstruction, Pauli absorbing-frame identities, and K0 countermodel without importing an external selector.
 - **rationale:** The load-bearing step is a framework-internal computation over the lattice, U(1) edge phases, Pauli/Cl(3) matrices, and finite Fock operators, not a definition substitution or tuned numerical comparison. The runner source constructs the group action, gauge/flux invariants, cohomology certificates, CAR(2) algebra, absorbing frame, countermodel, and falsification legs rather than merely printing expected PASS lines. The negative component is narrowly stated: K0 proves only that the specified constraint set does not force the flux(-1) selector, while future selector principles remain explicitly outside the claim.
+- **auditor confidence:** high
+
+### `staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17`
+
+- **Note:** [`STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md`](../../docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Finite CAR local-density bridge: on the retained one-mode Grassmann/CAR surface, rho_x = chibar_x chi_x is the canonical number projection/U(1) generator and satisfies the finite-lattice matrix-unit density commutator.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the retained finite CAR representation chi_x -> a_x and chibar_x -> a_x^dag, direct matrix/Jordan-Wigner algebra shows rho_x = chibar_x chi_x maps to n_x = a_x^dag a_x, the unique normalized U(1) generator/projection, with [E_xy,rho_p] = delta_yp E_xp - delta_px E_py.  _(class `A`)_
+- **chain closes:** True — From the retained single-mode CAR/Berezin raising-lowering surface, finite matrix algebra establishes the number projection, U(1) generator, commuting densities, and bilinear density commutator. The broader Kawamoto-Smit realization and statistics-selection gates are explicitly outside scope and are not used.
+- **rationale:** The restricted packet closes the advertised finite-CAR algebra: the runner constructs one-site matrices and finite Jordan-Wigner operators and verifies the projection, generator, neutrality, and commutator identities. However the audited result is an exact algebraic readout corollary of the single retained Grassmann/CAR parent plus standard finite CAR/Jordan-Wigner mathematics, with no external comparator and no independent framework-baseline computation. Under the decoration tie-breaker, it should inherit as decoration under that parent rather than count as a separate clean physical theorem.
+- **decoration parent:** `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`

@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 210 |
 | **retained_bounded** | 949 |
 | _retained_pending_chain_ | 4 |
-| open_gate | 36 |
-| unaudited | 1630 |
+| open_gate | 37 |
+| unaudited | 1629 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1382 |
+| `audited_clean` | 1383 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1956 |
+| `unaudited` | 1955 |
 
 | claim_type | count |
 |---|---:|
@@ -1180,6 +1180,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_mass_matrix_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `s3_taste_cube_decomposition_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `s3_time_constructed_support_tensor_primitive_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `s3_time_primitive_chain_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `scalar_3plus1_temporal_ratio_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `scalar_kg_rerun_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -16663,6 +16664,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Xi_R^(0) := (Theta_R^(0)(e0) - Theta_R^(0)(s/sqrt(6))) / (delta_A1(e0) - delta_A1(s/sqrt(6))).  _(class `A`)_
 - **chain closes:** True — The cited retained_bounded dependency supplies the exact seven-site A1 support scalar and the bounded affine gamma_E/gamma_T staging surface to stated tolerances. The note derives only the finite-difference/affine-response Jacobian over those inputs and explicitly excludes an exact tensor observable, endpoint coefficient theorem, support-to-slice time coupling, and GR closure.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained bounded inputs: the denominator is the retained support scalar endpoint gap, and the numerator is the current bounded Theta_R^(0) endpoint pair. The runner computes Xi_R^(0) from live support_delta and gamma_pair endpoint values, reports PASS=7 FAIL=0, and checks canonical plus audited-family affine compatibility to the note's tolerances. The result is clean only inside the bounded staging scope; citing it as an exact tensor observable, exact endpoint coefficient theorem, time-coupling law, or GR closure would exceed the audited claim.
+- **auditor confidence:** high
+
+### `s3_time_primitive_chain_note`
+
+- **Note:** [`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](../../docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The S3 primitive-chain note is an open gate: retained Route-2 carrier/readout/time authorities reduce the obstruction to beta_E/alpha_E, and the restricted class does not uniquely select 21/4.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-s3_time_primitive_chain_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** After granting the two T-side entries, the restricted Route-2 carrier/readout class leaves beta_E/alpha_E free, so beta_E/alpha_E = 21/4 is an open primitive rather than a derived readout theorem.  _(class `A`)_
+- **chain closes:** True — The cited retained readout and time-coupling notes reduce the unresolved theorem to the readout map entry rho_E. The retained naturality no-go and the reduced-family algebra show rho_E remains free in the restricted class, so the open-gate conclusion follows.
+- **rationale:** The audited claim is not the positive 21/4 theorem; it is the narrower open-gate and firewall statement. The load-bearing algebra is exact: P(rho_E) fixes E-shell normalization while changing the E-center lift by 1 + rho_E/6, so rho_E = 0 and rho_E = 21/4 are both admissible without an extra E-center/source/readout primitive. The direct cited authorities are retained or retained_no_go, and the runner checks 21/4 only as one family member/comparator, not as a derived premise.
 - **auditor confidence:** high
 
 ### `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23`

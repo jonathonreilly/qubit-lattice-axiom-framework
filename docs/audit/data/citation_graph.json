@@ -53470,7 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
+      "to": "s3_time_primitive_chain_note"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
     },
     {
       "from": "repo.front_door_status",
@@ -53495,10 +53499,6 @@
     {
       "from": "repo.front_door_status",
       "to": "distance_law_definitive_note"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "s3_time_primitive_chain_note"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+        "s3_time_primitive_chain_note",
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
         "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
         "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
         "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12",
-        "distance_law_definitive_note",
-        "s3_time_primitive_chain_note"
+        "distance_law_definitive_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ab2cc0747df7ee811f1ca018b7e4630103881454843cd4c06a549eec011f1bed",
+      "note_hash": "29da8bb9cbc74fbc9010fcbd948c2240675d7135719dee8e11441a54be0075bb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

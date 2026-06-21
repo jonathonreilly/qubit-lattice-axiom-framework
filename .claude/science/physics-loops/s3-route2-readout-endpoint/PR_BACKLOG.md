@@ -1,13 +1,11 @@
 # PR Backlog
 
-Block19 PR is pending until the branch is pushed.
+No backlog. PR #4548 is open:
 
-Expected command:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4548
 
-```bash
-gh pr create \
-  --base main \
-  --head physics-loop/s3-route2-readout-endpoint-block19-20260621 \
-  --title "[physics-loop] s3-route2-readout-endpoint block19 exact-support" \
-  --body-file .claude/science/physics-loops/s3-route2-readout-endpoint/PR_BODY.md
+Identity-only check:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block19-20260621","number":4548,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block19 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4548"}
 ```

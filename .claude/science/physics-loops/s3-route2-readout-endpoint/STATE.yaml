@@ -51,8 +51,8 @@ verification:
   git_diff_check: pass
   overclaim_scan: pass
 pr:
-  number: null
-  url: null
-  state: not_opened_yet
-next_exact_action: "Run focused verification and open block19 PR, then select the next direct consumer or stop only if the active runtime budget is exhausted."
+  number: 4548
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4548"
+  state: OPEN
+next_exact_action: "Search for a concrete downstream delta_E=0 consumer to package, or pick the next highest-ranked Route-2/S3 direct consumer."
 stop_condition: "Do not stop campaign merely because this support packet does not close the endpoint; continue while runtime remains."

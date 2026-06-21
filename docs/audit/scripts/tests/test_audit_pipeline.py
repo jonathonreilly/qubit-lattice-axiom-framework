@@ -49,6 +49,23 @@ def _import_codex_audit_runner():
     return module
 
 
+def _import_precompute_audit_runners():
+    """Import the repo-root runner-cache precompute helper."""
+    module_name = "precompute_audit_runners_under_test"
+    if module_name in sys.modules:
+        del sys.modules[module_name]
+    scripts_dir = PROJECT_ROOT / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    spec = importlib.util.spec_from_file_location(
+        module_name, scripts_dir / "precompute_audit_runners.py"
+    )
+    module = importlib.util.module_from_spec(spec)
+    assert spec and spec.loader
+    spec.loader.exec_module(module)
+    return module
+
+
 class CleanLedgerFixture:
     """Build a minimal but valid audit_ledger.json + citation_graph.json
     on a temporary REPO_ROOT for unit-style testing."""
@@ -110,6 +127,53 @@ def _patch_repo_root(module, tmp_root: Path) -> None:
         module.SUMMARY_PATH = module.DATA_DIR / "effective_status_summary.json"
     if hasattr(module, "OUTPUT_PATH"):
         module.OUTPUT_PATH = module.DATA_DIR / "auditor_reliability.json"
+
+
+class PrecomputeAuditRunnersTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+
+    def test_cleanup_orphans_preserves_nested_runner_named_in_cache_header(self):
+        m = _import_precompute_audit_runners()
+        m.REPO_ROOT = self.tmp_root
+        m.CACHE_DIR = self.tmp_root / "logs" / "runner-cache"
+        m.CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+        nested_runner = self.tmp_root / "scripts" / "corrections" / "valid_nested.py"
+        nested_runner.parent.mkdir(parents=True, exist_ok=True)
+        nested_runner.write_text("print('ok')\n", encoding="utf-8")
+
+        valid_cache = m.CACHE_DIR / "valid_nested.txt"
+        valid_cache.write_text(
+            "\n".join([
+                "===== runner cache v1 =====",
+                "runner: scripts/corrections/valid_nested.py",
+                f"runner_sha256: {'0' * 64}",
+                "timeout_sec: 120",
+                "exit_code: 0",
+                "elapsed_sec: 0.01",
+                "status: ok",
+                "----- stdout -----",
+                "ok",
+                "----- stderr -----",
+                "",
+            ]),
+            encoding="utf-8",
+        )
+        gone_cache = m.CACHE_DIR / "gone_runner.txt"
+        gone_cache.write_text("legacy cache without a parseable header\n", encoding="utf-8")
+
+        dry_run_orphans = m.cleanup_orphans(set(), dry_run=True)
+        self.assertEqual(dry_run_orphans, [gone_cache])
+        self.assertTrue(valid_cache.exists())
+        self.assertTrue(gone_cache.exists())
+
+        deleted_orphans = m.cleanup_orphans(set(), dry_run=False)
+        self.assertEqual(deleted_orphans, [gone_cache])
+        self.assertTrue(valid_cache.exists())
+        self.assertFalse(gone_cache.exists())
 
 
 class ApplyAuditTest(unittest.TestCase):

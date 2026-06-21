@@ -24,7 +24,6 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1674 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -39,6 +38,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | 1 |
+| `decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
@@ -61,10 +61,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 1356 |
 | `audited_conditional` | 11 |
-| `audited_decoration` | 54 |
+| `audited_decoration` | 55 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 22 |
@@ -72,8 +72,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1808 |
-| `decoration` | 55 |
+| `bounded_theorem` | 1807 |
+| `decoration` | 56 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1524,6 +1523,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_weak_field_source_action_interface_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | cross_family | codex-gpt-5.5 | A | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` |
 | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | decoration | ~~audited_decoration~~ | `decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | cross_family | codex-gpt-5.5 | A | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` |
 | `gellmann_completeness_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
+| `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
 | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
@@ -9320,6 +9320,20 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **chain closes:** True — The chain closes within the stated bounded B3 surface. The packet supplies accepted or retained-grade authorities for the graining, count, boundary policing, and branch selection, and the runner source performs exact finite algebra for the count, Hamming staircase, characteristic polynomial, and determinant degree.
 - **rationale:** The load-bearing step is an algebraic closure over retained-grade and accepted-primitive inputs, not an empirical comparator, tuned numerical match, or symbol renaming. The source and runner explicitly preserve the firewall: B4 and B5 remain open, regulator-independent promotion is blocked by the retained no-go, and the parent staggered realization gate's labeling residual is non-load-bearing. The bounded conclusion follows from the restricted packet without importing external physics or a full hierarchy closure.
 - **auditor confidence:** medium
+
+### `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`
+
+- **Note:** [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic corollary that a positive fixed D=4 density readout rho_* = A(L)v(L)^4 maps coefficient ratios to inverse fourth-root scale ratios, with reference normalization and sign; no physical VEV identification is ratified.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16-panel1-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** From rho_* = A_ref v_ref^4 = A(L) v(L)^4 with all quantities positive, v(L)/v_ref = (A_ref / A(L))^(1/4).  _(class `A`)_
+- **chain closes:** False — The source claim closes as exact positive-real algebra once the fixed-density readout and retained D=4 fourth-root exponent are granted. It does not add a first-principles physical derivation or close the electroweak order-parameter bridge. Under the stated tie-break rule, class-A algebra over the single retained dimensional parent with no external comparator checks is audited_decoration rather than audited_clean.
+- **rationale:** The source claim closes as exact positive-real algebra once the fixed-density readout and retained D=4 fourth-root exponent are granted. It does not add a first-principles physical derivation or close the electroweak order-parameter bridge. Under the stated tie-break rule, class-A algebra over the single retained dimensional parent with no external comparator checks is audited_decoration rather than audited_clean.
+- **decoration parent:** `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** judicial
 
 ### `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10`
 

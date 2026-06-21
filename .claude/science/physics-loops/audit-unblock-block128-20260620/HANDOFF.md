@@ -2,7 +2,7 @@
 
 ## Summary
 
-PR #4498 has been rebuilt from current `origin/main` at `7fc79bd4`.
+PR #4498 has been rebuilt from current `origin/main` at `678b38ce7`.
 
 The current full-ledger runner-cache check initially reported:
 
@@ -17,9 +17,9 @@ After refreshing the 10 listed runners, the check reports:
 - 0 stale
 - 0 missing
 
-The branch was rebased from `ca3f6f8d3` to `7fc79bd4`. The alpha_s universal
-beta cache is now fresh on main, so this PR drops that file from its refresh
-scope and keeps the remaining 10 cache refreshes.
+The branch was rebased from `ca3f6f8d3` through `7fc79bd4` to `678b38ce7`. The
+alpha_s universal beta cache is now fresh on main, so this PR drops that file
+from its refresh scope and keeps the remaining 10 cache refreshes.
 
 ## Boundary
 
@@ -29,5 +29,5 @@ plus branch-local loop-pack metadata.
 
 ## Next Exact Action
 
-Force-push the rebuilt branch, update PR #4498 body, then restack block130 on
-the updated cache-refresh branch.
+Run freshness verification, force-push the rebuilt branch, update PR #4498
+body, then restack block130 on the updated cache-refresh branch.

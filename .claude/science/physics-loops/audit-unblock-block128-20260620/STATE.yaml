@@ -4,8 +4,8 @@ block: 128
 mode: physics-loop
 branch: physics-loop/audit-unblock-block128-20260620
 base: main
-base_commit: 7fc79bd4bf0229faf167bc3f3ddf4c48050d4b7c
-rebuilt_at: "2026-06-21 00:46:57 EDT"
+base_commit: 678b38ce7d8f9c092a7e19bf8272847f03bd799f
+rebuilt_at: "2026-06-21 00:54:44 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "full-ledger runner-cache freshness"
@@ -18,7 +18,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed earlier with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "Rebuilt PR #4498 from current origin/main and refreshed the 10 stale/corrupt full-ledger runner caches; rebasing onto 7fc79bd4 dropped the now-current alpha_s universal beta cache from this PR scope."
+current_result: "Rebuilt PR #4498 from current origin/main and refreshed the 10 stale/corrupt full-ledger runner caches; rebasing through 7fc79bd4 and 678b38ce kept the scope at the same 10 stale/corrupt cache transcripts."
 cache_refresh:
   before: "3040 fresh, 10 stale/corrupt, 0 missing across 3050 ledger runners"
   after: "3050 fresh, 0 stale, 0 missing across 3050 ledger runners"
@@ -38,5 +38,5 @@ verification_status: pass
 review_disposition: pass
 pr_status: open_needs_force_push
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4498
-next_exact_action: "Commit the 7fc79bd4 scope refresh, force-push PR #4498, update PR body, then restack dependent cleanup PRs if needed."
+next_exact_action: "Run freshness verification on the 678b38ce stack, commit the metadata refresh, force-push PR #4498, update the PR body, then restack dependent cleanup PRs."
 stop_condition: "Continue campaign after PR #4498 is updated."

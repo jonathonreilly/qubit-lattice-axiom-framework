@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_time_tensorized_schur_primitive_downstream_fix.py
-runner_sha256: 58543e6ee774688843181af41a0d9094875b97935b5cff21784c3171130cf312
+runner_sha256: ec752c6d6f1f5a95130cb778b5b6e6223fd58562124fde70cc34e54e14abe334
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ==============================================================================
 AUDIT-PREP VERIFIER — s3_time_tensorized_schur_primitive_downstream_fix
 ==============================================================================
   [PASS] [A] Parent note exists  (path = docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE.md)
-  [PASS] [A] Fix record exists  (path = docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_DOWNSTREAM_FIX_NOTE_2026-05-17.md)
+  [PASS] [A] Fix record exists  (path = docs/S3_TIME_TENSORIZED_SCHUR_PRIMITIVE_NOTE_2026-05-17.md)
 
 PART F-A — heading + bullets:
   [PASS] [A] Section heading 'Exact scalar backbone' retired (heading now 'Cited scalar backbone')

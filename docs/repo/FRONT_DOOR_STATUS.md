@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1526 |
-| Retained-grade rows, including boxed decorations | 1429 |
+| Applied audit verdicts | 1527 |
+| Retained-grade rows, including boxed decorations | 1430 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 956 |
+| Retained bounded rows | 957 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 37 |
-| Unaudited rows | 1620 |
+| Unaudited rows | 1619 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 21 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1622 |
+| Total pending rows | 1621 |
 | Ready rows | 101 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
-| Medium pending | 462 |
+| Medium pending | 461 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18`](../../docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md) - medium; unaudited
 - [`positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23`](../../docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md) - medium; unaudited
 - [`record_local_finite_atom_availability_narrow_theorem_note_2026-06-17`](../../docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`koide_lightcone_primitive_theorem_note_2026-05-10`](../../docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
 - [`koide_fisher_rao_spherical_reorganization_note_2026-06-01`](../../docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md) - medium; unaudited
 - [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`primitive_p_lh_content_proposal_note_2026-05-10_pplh`](../../docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

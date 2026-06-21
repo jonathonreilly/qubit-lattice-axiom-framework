@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_fisher_rao_spherical_reorganization_note_2026-06-01"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02",
         "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
         "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
         "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
         "koide_lightcone_primitive_theorem_note_2026-05-10",
         "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
         "distance_law_definitive_note",
-        "koide_fisher_rao_spherical_reorganization_note_2026-06-01"
+        "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
+        "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5fb3f099dc7a2252ae3f2580fa49deae92e97d576657a14a848b64fcb792c5ba",
+      "note_hash": "39cffbbb7c6218f46bbf53e0e30fc44cd60f10e1f3d690a6870625fb4aeaa7ac",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

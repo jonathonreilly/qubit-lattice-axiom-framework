@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 956 |
+| **retained_bounded** | 957 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1620 |
+| unaudited | 1619 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1390 |
+| `audited_clean` | 1391 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1946 |
+| `unaudited` | 1945 |
 
 | claim_type | count |
 |---|---:|
@@ -1010,6 +1010,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -14246,6 +14247,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The retained FSB-K theorem supplies the finite-g_eff conclusion for every (Z) kernel, and the retained Z certificate supplies K1's exact (Z) data plus K0's zero-surface violation. Independent checks of the SB coefficient, cone determinant weights, K0 L=4 zero count, and divergence exponents agree with the packet; the residual thermal-probe and two-class-surface limits are declared scope boundaries.
 - **rationale:** The load-bearing computation is not a renaming or tuned numerical match: the runner reconstructs the two kernels, verifies the geometry/thermal discriminator, and reads the flux only after selection. The one-hop retained-grade inputs are sufficient for the bounded composition, with minimal axioms treated as accepted premises and retained_bounded rows eligible under the rubric. The conclusion is clean only at the stated bounded grade: it does not derive thermal equilibrium, make either normalization canonical, or retire P-KIN beyond the two-class surface.
 - **auditor confidence:** medium
+
+### `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18`
+
+- **Note:** [`P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md`](../../docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite Pauli/Cl(3) current-minimal-baseline boundary that the P-LH NCG finite algebra, KO-dim-6 real structure, and order-one data are not selected without an added derivation or approved primitive.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Lattice + Quantum + Record do not determine the NCG finite algebra, order-one condition, or KO-dim-6 real structure used by the P-LH route.  _(class `A`)_
+- **chain closes:** True — The cited minimal axiom premise supplies only the one-site M_2(C)/Cl(3) carrier and explicitly omits gauge group, particle content, readout bridge, real structure, and finite Dirac data. The runner constructs the Pauli block and exhibits alternative compatible finite-action, J, and D/order-one choices, so the scoped underdetermination conclusion follows.
+- **rationale:** The runner source is substantive rather than a PASS printer: it instantiates Pauli matrices, projectors, antiunitary choices, and finite D choices, then checks the relevant commutator and noncommutator witnesses. The only upstream authority is the registered minimal-axiom premise, which is accepted under the rubric and does not contain the NCG packet. Within the note's stated finite Pauli/current-baseline scope, the negative boundary closes; the note does not claim to derive or rule out all SM LH/RH routes.
+- **auditor confidence:** high
 
 ### `packet_memory_note`
 

@@ -17,8 +17,8 @@ repo_authority_edits: false
 audit_or_verdicts_run: false
 mergeability_or_conflict_checks_run: false
 remote_pr:
-  number: null
-  url: null
+  number: 4573
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4573
 created_files:
   - docs/QUARK_ROUTE2_TWO_POLE_DENSITY_COVARIANCE_PRIMITIVE_CANDIDATE_NOTE_2026-06-21.md
   - scripts/frontier_quark_route2_two_pole_density_covariance_candidate_2026_06_21.py
@@ -40,4 +40,4 @@ verification:
   diff_check: pass
   overclaim_scan: pass
 lock_status: "repo automation lock not acquired in this branch; branch-local lock discipline used"
-next_exact_action: "Run staged diff/firewall checks, commit, publish branch, open PR, then pivot to deriving the density-normalization step."
+next_exact_action: "Pivot to deriving the density-normalization step or proving a no-go for the current polynomial carrier."

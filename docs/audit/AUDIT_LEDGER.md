@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 937 |
+| **retained_bounded** | 938 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1663 |
+| unaudited | 1662 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1364 |
+| `audited_clean` | 1365 |
 | `audited_conditional` | 13 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1989 |
+| `unaudited` | 1988 |
 
 | claim_type | count |
 |---|---:|
@@ -118,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
@@ -791,6 +791,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_pointer_record_degeneracy_d3_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_positive_parent_axis_obstruction_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_q23_block_weight_frontier_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_q23_k0_real_block_equivalence_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q23_oh_covariance_nogo_note_2026-04-22` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_bridge_single_primitive_note_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -10988,6 +10989,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** With E_+ = 3a^2 and E_perp = 6|b|^2, Q = 1/3 + (2/3)|b|^2/a^2, so equal-block power p_+ = 1/2 gives Q = 2/3 while dimension/Plancherel power p_+ = 1/3 gives Q = 1.  _(class `A`)_
 - **chain closes:** True — The audited bounded claim closes from retained algebraic Koide recastings plus the retained_bounded C_3-equivariant anticommuting disjointness result. The physical selection of the equal-block rule remains an explicitly open downstream bridge and is not claimed here.
 - **rationale:** The displayed Q formulas, energy ratios, and table entries check out under the unnormalized character convention E_+=3a^2 and E_perp=6|b|^2, equivalent to the cited normalized Fourier statements. The runner source performs finite matrix and scalar algebra checks and does not hard-code or import a contested physical Koide selection as a premise. Because the audited scope is only the bounded algebra/frontier localization and not charged-lepton Koide closure, the retained and retained_bounded inputs suffice.
+- **auditor confidence:** high
+
+### `koide_q23_k0_real_block_equivalence_note_2026-05-30`
+
+- **Note:** [`KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic characterization that the Z_3 generation carrier admits a K0-real equal-real-block weighting yielding Q=2/3 and a K0-complex/dimension weighting yielding Q=1, with the qubit Cl(3) central i not selecting between those conventions.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_q23_k0_real_block_equivalence_note_2026-05-30-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For Z_3, R[Z_3] = R (+) C has two real Wedderburn blocks while C[Z_3] = C^3 has three complex blocks; counting each real block once gives r=1/2 and Q=2/3, while dimension/trace weighting gives r=1 and Q=1, and the Cl(3) pseudoscalar acts as scalar iI_3 on generations rather than as the doublet Schur complex structure.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade inputs and the runner support the finite Z_3 real/complex Wedderburn count, the Q(r) algebra, the circulant check, and the scalar-versus-doublet distinction for the qubit pseudoscalar. The claim explicitly does not derive the physical measure selection, so no missing selection theorem is needed for the audited bounded scope.
+- **rationale:** The load-bearing content is finite-dimensional algebra over the supplied Z_3 and Cl(3) inputs, not an external comparator, tuned numerical match, or definition-only substitution. The runner source performs substantive checks of the Frobenius-Schur fork, the scalar action of qubit i on generations, the coherent-state identity, the Q=2/3 versus Q=1 weighting algebra, and the C^3=I symmetry-versus-measure distinction. The result is clean only as a bounded equivalence/localization: it leaves the physical convention slot open as the note states.
 - **auditor confidence:** high
 
 ### `koide_q23_oh_covariance_nogo_note_2026-04-22`

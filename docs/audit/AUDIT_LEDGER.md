@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1017 |
+| **retained_bounded** | 1018 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1500 |
+| unaudited | 1499 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1467 |
+| `audited_clean` | 1468 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1826 |
+| `unaudited` | 1825 |
 
 | claim_type | count |
 |---|---:|
@@ -1295,6 +1295,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sixth_family_sheared_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_fm_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
+| `sm_gstar_higgs_sector_count_stretch_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_residual_retirement_fsb_u1y_bounded_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -18878,6 +18879,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The parity-sheared shell sweep passes 12/21 sampled rows, with exact zero-source and neutral controls, sign orientation on the passing subset, drift coverage [0.0, 0.05, 0.1, 0.15, 0.2, 0.3], and mean exponent 0.999895, so the construction is a narrow sixth-family basin rather than a generic theorem.  _(class `B`)_
 - **chain closes:** True — SIXTH_FAMILY_SHEARED_SWEEP.py currently reproduces the note's pass count, drift coverage, exact zero/neutral controls, and mean weak-field exponent. The note's conclusion is bounded and selective, matching the data rather than claiming family-wide closure.
 - **rationale:** The sheared basin note closes at bounded tier: the runner verifies the exact pass/fail structure and the note states the correct narrow interpretation. It neither expands the result into a universal connectivity theorem nor hides the failed rows. Residual risk is only missing ledger runner attachment; the local sweep script is the direct evidence surface.
+- **auditor confidence:** high
+
+### `sm_gstar_higgs_sector_count_stretch_note_2026-05-29`
+
+- **Note:** [`SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded theorem over the retained-bounded SM finite-inventory premise: the Higgs-sector census uses one complex doublet, the retained flavor-sector two-Higgs texture does not add Fock-space scalar dof, and g_* is 106.75 rather than 110.75 unless an independent second doublet is admitted.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-sm_gstar_higgs_sector_count_stretch_note_2026-05-29-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the retained-bounded declared-inventory premise, one complex SU(2)_L doublet contributes four scalar dof, while the retained two-Higgs reduction is a Yukawa-texture parameter count and adds no thermalized dof, so g_* = 28 + (7/8)*90 = 427/4.  _(class `A`)_
+- **chain closes:** True — The one-doublet thermal field content is not derived from H_unit; it is explicitly supplied by the retained-bounded declared-inventory authority. Given that premise, the dof arithmetic and the flavor-vs-Fock distinction close by exact algebra over retained-grade inputs.
+- **rationale:** The load-bearing step is an algebraic closure over the retained-bounded inventory premise, not a first-principles H_unit-to-doublet derivation. The runner computes the rational census arithmetic, checks the Yukawa-texture algebra distinguishing coupling parameters from thermal field content, and verifies the cited retained-bounded inventory/no-go/support boundaries. No external comparator, tuned numerical input, or unclosed native H_unit bridge is used as a proof input.
 - **auditor confidence:** high
 
 ### `sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18`

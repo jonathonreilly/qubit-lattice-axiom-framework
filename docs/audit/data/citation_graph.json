@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "sm_gstar_higgs_sector_count_stretch_note_2026-05-29"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "unordered_mass_pdep_record_independence_no_go_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17",
         "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
         "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
         "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
         "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
         "statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18",
         "three_family_card_missing_distance_live_bridge_note_2026-06-18",
-        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11"
+        "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
+        "unordered_mass_pdep_record_independence_no_go_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4e7f377e5332726403acf0285ef67a3418dc3da6b54f8d098503ab11c4e0255b",
+      "note_hash": "a919c8b50da9688574930a6f50f21b083d6e4e629abe43893432ff598fa34f26",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

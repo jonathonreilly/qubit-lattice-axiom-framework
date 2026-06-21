@@ -42,13 +42,25 @@ later derived or admitted.
 
 ## PR
 
-Pending.
+Opened:
 
-Planned title:
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4579
+```
+
+Title:
 
 ```text
 [physics-loop] s3-route2-signed-cancellation-firewall block49 no-go
 ```
+
+Identity-only verification passed:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-signed-cancellation-firewall-block49-20260621","number":4579,"state":"OPEN","title":"[physics-loop] s3-route2-signed-cancellation-firewall block49 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4579"}
+```
+
+No mergeability or conflict checks were run.
 
 ## Next Exact Science Action
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 212 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 974 |
+| **retained_bounded** | 975 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1583 |
+| unaudited | 1582 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1415 |
+| `audited_clean` | 1416 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1909 |
+| `unaudited` | 1908 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 938 |
-| `leaf` | 1461 |
+| `medium` | 939 |
+| `leaf` | 1460 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -108,23 +108,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
-| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 49.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1126 | 47.64 | `unaudited` | meta |
-| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 45.31 | `unaudited` | unaudited |
+| 6 | `minimal_axioms_2026-05-03` | meta | critical | 1034 | 49.02 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1127 | 47.64 | `unaudited` | meta |
+| 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 899 | 45.31 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 44.18 | `audited_clean` | **retained_bounded** |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
-| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 39.29 | `unaudited` | unaudited |
+| 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 884 | 39.29 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
-| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
+| 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
-| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 35.82 | `audited_clean` | **retained_bounded** |
-| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
+| 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 902 | 35.82 | `audited_clean` | **retained_bounded** |
+| 19 | `three_generation_structure_note` | bounded_theorem | critical | 1099 | 35.60 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
@@ -242,6 +242,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3190,6 +3191,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The scoped no-go follows from finite Pauli/Spin(3) algebra plus the retained boundary authorities: adjoint covariance loses the SU(2) center, the trivial state lift remains compatible, and the scalar kernel is not excluded. The missing KS/Grassmann physical-state-law bridge is explicitly outside the audited conclusion rather than imported as support.
 - **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs, not a definition, fitted comparator, or numerical match. The runner source performs finite matrix checks for cover blindness, scalar-lift compatibility, scalar-kernel compatibility, staggered anticommutation, and the source guardrail; it does not hard-code an empirical target. The N1-N8 no-go discipline is present and the claim is narrowly scoped to refuting the spinor-module escape, while preserving the KS/state-law residual as open downstream work.
 - **auditor confidence:** high
+
+### `causal_distance_tail_note`
+
+- **Note:** [`CAUSAL_DISTANCE_TAIL_NOTE.md`](../../docs/CAUSAL_DISTANCE_TAIL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Configured finite replay in scripts/causal_distance_tail_probe.py over the three declared structured-growth families, seeds 0-5, fixed source-placement rule, distance anchors, and the four declared field cases.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-causal_distance_tail_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact zero-source control stays exact on every family, while instantaneous/forward-only/dynamic c=1 retain high-R^2 distance-tail fits and dynamic c=0.5 collapses to a much steeper, partly non-toward tail.  _(class `C`)_
+- **chain closes:** True — The primary runner computes the families, fields, propagation, centroid-z deltas, zero control, and log-log power-law fits directly from the included helper source; the reported table matches the runner output and is not hard-coded. Closure is only for this bounded configured replay, not for a universal causal-field or physical field-speed theorem.
+- **rationale:** The load-bearing finite diagnostic is computed by the runner from explicit configured inputs and the included helper implementation, with no external comparator or imported target value. The cited authorities are retained_bounded and explicitly limit the claim to bounded causal-field diagnostics, which matches the source note's stated boundary. The runner does not derive a physical carrier or universal portability law, but the note does not claim those stronger results.
+- **auditor confidence:** medium
 
 ### `causal_escape_window_note`
 

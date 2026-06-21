@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 942 |
+| **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1672 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1354 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1355 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
@@ -144,7 +143,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
-| `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1262,6 +1260,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
+| `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17447,6 +17446,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The qubit-ladder generators and the JW-fermion generators generate the same full ungraded matrix algebra on each finite tensor block, while the hard-core-boson site has the same two-dimensional per-site space as a fermion.  _(class `C`)_
 - **chain closes:** True — The cited minimal axiom premise supplies the one-qubit local algebra on the Z^3 substrate, and standard finite tensor-product algebra closes the hard-core-boson and JW-CAR computations. No additional retained selector is needed for this scoped negative conclusion; possible future graded-locality or spin-statistics selectors are outside the claim.
 - **rationale:** The runner source actually constructs Pauli tensor operators, JW strings, generated-algebra ranks, hard-core/free-boson dimension checks, and finite ordering obstructions; it is not merely printing expected constants. Independent algebra confirms that disjoint bare ladders commute, JW-dressed ladders satisfy CAR, and both generator sets recover the same full matrix algebra, so ungraded algebra and dimension data cannot distinguish the statistics frame. The no-go is properly scoped to forcing from those baseline data and does not claim that every possible future graded-locality or spin-statistics principle is excluded.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the explicit {free boson, hard-core boson, Grassmann/CAR} substep-1 candidate list, retained dim/algebra/grading/hopping predicates are frame-blind, while the explicitly assumed cross-site GL(F) predicate selects Grassmann/CAR conditionally; removing GL(F) restores the retained no-go tie.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** GL(F) is non-constant across the explicit candidates: the JW/Grassmann realization passes, the hard-core realization fails, and with the retained dim-2 free-boson exclusion exactly one candidate passes {dim = 2} AND GL(F), namely Grassmann/CAR.  _(class `C`)_
+- **chain closes:** True — The cited authorities provide the one-qubit carrier, retained parity grading, free-CCR exclusion, and hard-core-vs-CAR no-go boundary. The runner/source then compute the hard-core and JW matrix families directly, showing GL(F) is the only tested non-constant predicate and that the conditional selection and falsification leg follow on the stated surface.
+- **rationale:** The runner constructs the Pauli tensor-product hard-core fields, JW/CAR fields, parity operator, generated algebras, and hopping matrices, then checks the anticommutators and tie-restoration leg rather than merely printing constants. All load-bearing cited authorities are retained-grade or the accepted minimal axiom premise, and the theorem is explicitly bounded to conditional selection under GL(F), not an unconditional statistics derivation. The boundary diagnostics do not overreach into a global supplier survey, so the stated bounded theorem closes.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`

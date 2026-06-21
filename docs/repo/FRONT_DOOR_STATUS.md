@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1485 |
+| Applied audit verdicts | 1486 |
 | Retained-grade rows, including boxed decorations | 1407 |
 | Retained positive theorems | 207 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 938 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1661 |
+| Unaudited rows | 1660 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 13 |
-| Audited renaming rows | 22 |
+| Audited renaming rows | 23 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 9 |
 
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1663 |
-| Ready rows | 122 |
+| Total pending rows | 1662 |
+| Ready rows | 121 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 292 |
+| High pending | 291 |
 | Medium pending | 491 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited
 - [`quark_e_channel_endpoint_quotient_law_note_2026-04-19`](../../docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md) - high; unaudited
 - [`quark_endpoint_ratio_chain_law_note_2026-04-19`](../../docs/QUARK_ENDPOINT_RATIO_CHAIN_LAW_NOTE_2026-04-19.md) - high; unaudited
 - [`ckm_five_sixths_bridge_support_note`](../../docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`diamond_ideal_lockin_detector_theorem_note_2026-06-17`](../../docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md) - high; unaudited
 - [`native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md) - high; unaudited
 - [`causal_field_reconciliation_note`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md) - medium; unaudited
+- [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,13 +61,14 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| high | `unaudited` | 164 |
 | critical | `unaudited` | 163 |
+| high | `unaudited` | 163 |
 | medium | `unaudited` | 96 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
 | critical | `audited_renaming` | 1 |
 | high | `audited_conditional` | 1 |
+| high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |
 

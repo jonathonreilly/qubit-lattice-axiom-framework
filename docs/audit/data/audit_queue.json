@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 292,
     "high": 280,
-    "leaf": 565,
+    "leaf": 564,
     "medium": 444
   },
   "cycle_break_target_count": 9,
@@ -17457,34 +17457,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "three_generation_observable_theorem_note",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/FLAVOR_GAUGE_REPRESENTATION_GENERATION_UNIFORM_CORE_NARROW_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_gauge_representation_generation_uniform_core_2026_06_18.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17642,6 +17614,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
+        "hw1_second_order_return_shape_theorem_note",
+        "staggered_self_consistent_two_body_note_2026-04-11",
+        "wilson_two_body_open_refined_note_2026-04-11"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/interaction_asymmetry_delta_occupation_curvature_runner.py",
       "transitive_descendants": 16
     },
     {
@@ -31211,33 +31210,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_r_half_is_the_records_flow_separatrix_2026-06-02",
-        "hw1_second_order_return_shape_theorem_note",
-        "staggered_self_consistent_two_body_note_2026-04-11",
-        "wilson_two_body_open_refined_note_2026-04-11"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/INTERACTION_ASYMMETRY_DELTA_OCCUPATION_CURVATURE_TWO_BODY_STRUCTURE_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/interaction_asymmetry_delta_occupation_curvature_runner.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -32085,6 +32057,37 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18",
+        "three_generation_observable_theorem_note",
+        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
+        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
+        "flavor_hw1_staggered_projection_democratic_r0_2026-06-02"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_rep_channel_cannot_source_spread_2026_06_15.py",
       "transitive_descendants": 0
     },
     {
@@ -39058,37 +39061,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/flavor_det_character_selection_audit_ready_2026_06_04.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18",
-        "three_generation_observable_theorem_note",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-        "charged_lepton_koide_cone_algebraic_equivalence_narrow_theorem_note_2026-05-10",
-        "flavor_hw1_staggered_projection_democratic_r0_2026-06-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_gauge_rep_channel_cannot_source_spread_2026_06_15.py",
       "transitive_descendants": 0
     },
     {
@@ -47620,5 +47592,5 @@
     }
   ],
   "ready_count": 81,
-  "total_pending": 1581
+  "total_pending": 1580
 }

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 212 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 976 |
+| **retained_bounded** | 977 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1579 |
+| unaudited | 1578 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1419 |
+| `audited_clean` | 1420 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1905 |
+| `unaudited` | 1904 |
 
 | claim_type | count |
 |---|---:|
@@ -514,6 +514,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_hw1_staggered_projection_democratic_r0_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_hw_clifford_does_not_constrain_r_2026-06-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_idempotent_u1_collapses_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7077,6 +7078,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For unitary eigenvalues z_i, the fibre-averaged hop coefficient is b_eff = b*(sum_i z_i)/d and d^2 - |sum_i z_i|^2 = sum_{i<j}|z_i-z_j|^2 >= 0, so |chi_R(U)/d_R| <= 1.  _(class `A`)_
 - **chain closes:** True — The cited retained-grade inputs supply the generation circulant/hop coefficient readout and finite unitary link-representation setting; the remaining step is the elementary unitary-eigenvalue trace bound. The proof and runner do not select a physical sector-to-representation readout or any observed r value.
 - **rationale:** The load-bearing suppression inequality is genuine finite algebra over the supplied unitary representation, not a fitted numerical comparison or symbol renaming. The runner source actually constructs the dressed generation matrix, takes the fibre trace blockwise, checks the normalized-character formula, verifies the triangle identity on deterministic phase grids, and tests several free r0 values. The clean verdict is for the bounded kernel only; the source correctly leaves physical sector-to-representation/readout assignment outside the claim.
+- **auditor confidence:** high
+
+### `flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18`
+
+- **Note:** [`FLAVOR_GAUGE_REPRESENTATION_GENERATION_UNIFORM_CORE_NARROW_THEOREM_NOTE_2026-06-18.md`](../../docs/FLAVOR_GAUGE_REPRESENTATION_GENERATION_UNIFORM_CORE_NARROW_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the retained three-generation circulant/Koide parameter surface, uniform nonzero scalar multiplication of both a and b leaves the ratio r = |b|^2/a^2 invariant; no SM sector assignment, electroweak splitter, or value of r is derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If the singlet coefficient a and doublet coefficient b are both multiplied by the same shared gauge-sector scalar s, then r' = |s b|^2 / |s a|^2 = |b|^2 / a^2 = r.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade authorities supply the finite generation surface and the Koide/circulant ratio readout. The claimed invariance is then a direct algebraic cancellation on the domain where the ratio is defined.
+- **rationale:** The load-bearing step is a genuine class A algebraic identity over retained-grade inputs, not a numerical match or definition substitution. The runner samples the uniform-scaling invariance and a non-uniform control, while the remaining checks verify dependency/firewall discipline and conditional parent-context wording. The source note explicitly excludes the SM sector-representation derivation and the selection of any value of r, so those broader claims are not part of the audited scope.
 - **auditor confidence:** high
 
 ### `flavor_hw1_staggered_projection_democratic_r0_2026-06-02`

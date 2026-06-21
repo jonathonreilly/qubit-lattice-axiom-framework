@@ -2,23 +2,24 @@
 
 ## Summary
 
-PR #4498 has been rebuilt from current `origin/main` at `ca3f6f8d3`.
+PR #4498 has been rebuilt from current `origin/main` at `7fc79bd4`.
 
 The current full-ledger runner-cache check initially reported:
 
 - 3050 ledger runners considered
-- 3039 fresh
-- 11 stale/corrupt
+- 3040 fresh
+- 10 stale/corrupt
 - 0 missing
 
-After refreshing the 11 listed runners, the check reports:
+After refreshing the 10 listed runners, the check reports:
 
 - 3050 fresh
 - 0 stale
 - 0 missing
 
-The branch was rebased cleanly from `81a3eea94` to `ca3f6f8d3`; the new main
-commit did not add any additional stale or missing runner-cache entries.
+The branch was rebased from `ca3f6f8d3` to `7fc79bd4`. The alpha_s universal
+beta cache is now fresh on main, so this PR drops that file from its refresh
+scope and keeps the remaining 10 cache refreshes.
 
 ## Boundary
 

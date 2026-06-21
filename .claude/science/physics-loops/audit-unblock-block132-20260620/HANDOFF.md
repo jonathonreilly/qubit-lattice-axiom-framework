@@ -38,8 +38,8 @@ ledger rows, or assert retained status.
 
 ## Next Exact Action
 
-Force-push the restacked branch, update PR #4502 body, then continue to the
-next stacked cleanup PR.
+Run final verification, force-push the restacked branch, update PR #4502 body,
+then restack block133 on this branch.
 
 ## PR
 

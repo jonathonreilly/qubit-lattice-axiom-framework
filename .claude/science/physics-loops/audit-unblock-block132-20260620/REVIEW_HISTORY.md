@@ -20,4 +20,4 @@ Checks:
 - `python3 -m py_compile scripts/precompute_audit_runners.py scripts/runner_cache.py docs/audit/scripts/tests/test_audit_pipeline.py` -> pass.
 - `git diff --check` -> pass.
 
-Restacked on PR #4501 at `e30a2f708` after the cache-stack refresh.
+Restacked on PR #4501 at `938593eef` after the 678 cache-stack refresh.

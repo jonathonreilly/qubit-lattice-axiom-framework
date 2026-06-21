@@ -43,15 +43,17 @@ commands_run:
   - "PYTHONPATH=scripts python3 scripts/frontier_fierz_singlet_selector_weight_not_partition_2026_06_08.py -> PASS=14 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_rconn_kappa_ew_register_not_read.py -> PASS=20 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_z3_character_isomorphism_color_generation.py -> PASS=22 FAIL=0"
+  - "gh pr create -> https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4570"
+  - "gh pr view 4570 --json number,url,title,headRefName,baseRefName,state -> OPEN, identity-only verification"
 open_imports:
   - "Physical color ray / gauge-frame source-line primitive remains absent."
   - "Endpoint triple still lacks actual current-surface derivation."
-next_exact_action: "Commit, publish, open PR, then continue campaign with the next target: stronger Route-2 readout-map theorem beyond color-ray selectors."
+next_exact_action: "Continue campaign with the next target: stronger Route-2 readout-map theorem beyond color-ray selectors."
 pr_status:
-  number: null
-  url: null
-  title: null
+  number: 4570
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4570
+  title: "[physics-loop] s3-route2-color-ray-source-primitive block40 no-go"
   head: physics-loop/s3-route2-color-ray-source-primitive-block40-20260621
   base: main
-  state: not_created_yet
+  state: OPEN
 stop_condition: "None; campaign remains active after PR handoff."

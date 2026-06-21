@@ -267,10 +267,29 @@ def run_one(runner_path: str) -> dict:
     return result
 
 
+def cache_header_runner_exists(cache_path: Path) -> bool:
+    """Return True when a cache header names a runner that still exists."""
+    try:
+        text = cache_path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return False
+    header = rc.parse_cache_header(text)
+    if not header:
+        return False
+    runner_path = header.get("runner_path")
+    if not runner_path:
+        return False
+    return runner_file_path(runner_path).is_file()
+
+
 def cleanup_orphans(known_runners: set[str], dry_run: bool = False) -> list[Path]:
-    """Delete cache files whose runner is not in known_runners and whose
-    runner file is missing from disk. Returns the list of paths deleted
-    (or that would be deleted in dry_run)."""
+    """Delete cache files whose runner is not known and is missing on disk.
+
+    The cache filename is only `<runner-stem>.txt`, so a nested runner such
+    as `scripts/corrections/foo.py` cannot be recovered from the filename
+    alone. Prefer the cache header's runner path before falling back to the
+    legacy shallow `scripts/<stem>.py` probe.
+    """
     if not CACHE_DIR.is_dir():
         return []
     known_stems = {Path(r).stem for r in known_runners}
@@ -281,7 +300,9 @@ def cleanup_orphans(known_runners: set[str], dry_run: bool = False) -> list[Path
         stem = p.stem
         if stem in known_stems:
             continue
-        # Look for a runner with that stem on disk
+        if cache_header_runner_exists(p):
+            continue
+        # Legacy fallback for old cache files whose header cannot be parsed.
         candidate = REPO_ROOT / "scripts" / f"{stem}.py"
         if candidate.exists():
             continue

@@ -4,6 +4,7 @@
 **Date:** 2026-04-17
 **Branch:** `codex/dm-selector-rebuild-2026-04-17`
 **Final verdict:** `obstruction`.
+**Runner:** [`scripts/frontier_dm_selector_branch_conclusion.py`](../scripts/frontier_dm_selector_branch_conclusion.py)
 
 ## Summary
 

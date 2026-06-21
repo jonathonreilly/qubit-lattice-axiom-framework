@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py
+runner_sha256: 7b5f440ac95f3a1ed79fcb3c46522e124811b453a9370f994134feb44c0d640a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 === Source-boundary checks ===
 [PASS] note declares boundary: leading-order continuity matching kernel
 [PASS] note declares boundary: This note does not derive physical threshold masses.
@@ -35,3 +43,6 @@
 [PASS] falsifier detects a non-continuous threshold jump
 
 SUMMARY: PASS=24 FAIL=0
+
+----- stderr -----
+

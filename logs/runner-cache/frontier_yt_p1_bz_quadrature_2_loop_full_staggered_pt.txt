@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_p1_bz_quadrature_2_loop_full_staggered_pt.py
-runner_sha256: bd58b6796d2edaf4c71c1dae7f765e6e176a2e9e145f61702336bf3cc0a1300e
+runner_sha256: 2ef6e34531f777d4dbbe2738bf1a44424b6de3dd526e206f0a67fcbbdc40c3f5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 11.31
+elapsed_sec: 4.68
 status: ok
 ----- stdout -----
 ========================================================================

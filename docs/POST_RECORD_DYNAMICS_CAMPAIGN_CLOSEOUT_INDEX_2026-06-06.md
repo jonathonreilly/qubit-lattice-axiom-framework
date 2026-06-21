@@ -1,9 +1,9 @@
 # Post-Record Dynamics Campaign Closeout Index
 
 **Date:** 2026-06-06
-**Type:** exact support / closeout index
-**Claim type:** methodology
-**Status:** exact-support branch-local for indexing the final dynamics stack;
+**Type:** meta
+**Claim type:** meta
+**Status:** closeout index / handoff map for indexing the final dynamics stack;
 audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py`](../scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py)

@@ -23,9 +23,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1643 |
+| unaudited | 1642 |
 | meta | 326 |
-| ~~audited_numerical_match~~ | 8 |
+| ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
 | ~~audited_conditional~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -66,9 +66,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_conditional` | 16 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
-| `audited_numerical_match` | 8 |
+| `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1969 |
+| `unaudited` | 1968 |
 
 | claim_type | count |
 |---|---:|
@@ -125,7 +125,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
 
 
@@ -1611,6 +1611,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_exact_green_pocket_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `source_resolved_exact_green_self_consistent_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
+| `work_history.ckm.cabibbo_bound_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `ai_methodology.raw.canonical_framing_paragraph` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `distance_law_breakpoint_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `flavor_readout_gate_equals_carrier_identification_2026-05-31` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -21041,6 +21042,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The preserved helper runners instantiate the finite-box Z^3 graph-Laplacian Coulomb Hamiltonians and their SHA-pinned caches produce the quoted hydrogen ratios, helium Hartree row, Hartree pair-normalization guard, and Jastrow/VMC improvement.  _(class `C`)_
 - **chain closes:** True — Within the narrowed finite-box scope, the helper sources compute from the cited graph-Laplacian and Coulomb-kernel operators rather than merely printing constants, and the current zero-exit caches are SHA-matched to those sources. The Hartree one-density pair normalization and Jastrow cusp factor also pass direct source-level factor checks; broader physics claims are explicitly outside scope.
 - **rationale:** The restricted packet now includes full helper sources, SHA-current cached outputs, and a packet verifier tying the source note to those artifacts. The cited upstream authorities are retained-grade or accepted axiom premises under the rubric, and the load-bearing computation is the finite-box numerical evaluation of the declared operators, not an external comparator match. Historical Hartree/full-CI and Rydberg-style targets are checkpoints only; they are not needed for the scoped claim to close.
+- **auditor confidence:** high
+
+### `work_history.ckm.cabibbo_bound_note`
+
+- **Note:** [`work_history/ckm/CABIBBO_BOUND_NOTE.md`](../../docs/work_history/ckm/CABIBBO_BOUND_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** At imported PDG quark masses and fitted NNI coefficients, the mass-basis NNI runner outputs |V_us| ≈ 0.2251 versus PDG 0.2243; the cited retained authority supplies only the structural identities T1-T4.
+- **audit_status:** ~~audited_numerical_match~~
+- **effective_status:** ~~audited_numerical_match~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-work_history.ckm.cabibbo_bound_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The reported |V_us| = 0.2251 is a Cabibbo-scale consistency result inside the mass-basis NNI package that load-bears PDG quark masses, PDG comparators, and calibrated NNI/flavor coefficients.  _(class `G`)_
+- **chain closes:** True — The bounded numerical-match chain closes on its own stated terms: the runner source and cache compute |V_us| = 0.225117 from explicit imported masses and fitted coefficients. It does not close a first-principles derivation of quark masses, NNI coefficients, or the CKM matrix, which the source note explicitly excludes.
+- **rationale:** The retained cited authority supports only algebraic NNI identities T1-T4 for arbitrary positive masses and coefficients. The Cabibbo value is produced in the calibrated runner block using hard-coded PDG quark masses, PDG CKM comparators, and fitted O(1) NNI coefficients, so the load-bearing step is class G rather than class C. The source note correctly scopes the result as bounded/import-dependent numerical support and does not justify promotion beyond that boundary.
 - **auditor confidence:** high
 
 ### `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11`

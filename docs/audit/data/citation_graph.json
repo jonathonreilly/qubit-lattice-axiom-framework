@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "work_history.ckm.cabibbo_bound_note"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
         "work_history.ckm.cabibbo_bound_note",
         "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
         "u1_fermion_number_conservation_theorem_note_2026-05-02",
         "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
         "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
-        "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18"
+        "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
+        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "05d54fc58ab3fa7cf3e537f04c2fdf7129ee08f57635fa79b7b092d6bb7a3bfb",
+      "note_hash": "ac4467ae4c8c19fb490009af9fe6de249301b2c67d6e109a8801e714eacdd328",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

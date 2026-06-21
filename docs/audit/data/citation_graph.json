@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "causal_field_reconciliation_note"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "dm_live_constants_canonical_edge_certificate_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "u1_fermion_number_conservation_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12",
         "causal_field_reconciliation_note",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "flavor_readout_gate_equals_carrier_identification_2026-05-31",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
         "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19",
         "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17",
-        "dm_live_constants_canonical_edge_certificate_note_2026-06-18"
+        "dm_live_constants_canonical_edge_certificate_note_2026-06-18",
+        "u1_fermion_number_conservation_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b370ab583bfa0274ad6be600ad12c0d6b515eb3c5f14125bd98b61fd1935cb25",
+      "note_hash": "2d8650912cc99f433c776d58c0e827361aef6db6f9e9a899593a64d6f51d9a5e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

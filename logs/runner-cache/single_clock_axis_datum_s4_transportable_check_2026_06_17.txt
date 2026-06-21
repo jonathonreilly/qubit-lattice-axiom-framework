@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py
+runner_sha256: d9787ecab5c4a8152be97ba08a14c57a045802068f15b3c9865d1c0ce8337d30
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+[S] PASS: W01 orthogonal (W W^T = I)  (||WW^T-I||=0.00e+00)
+[S] PASS: signed exchange W01 preserves the periodic staggered hop exactly  (||W M W^T - M||=0.00e+00)
+[S] PASS: plain swap (no sign field) is NOT a symmetry -> certificate non-trivial  (||P M P^T - M||=22.627 (>1 required))
+[T] PASS: W_01 orthogonal
+[T] PASS: W_01 preserves periodic staggered hop  (res=0.00e+00)
+[T] PASS: W_01 maps antiperiodic-axis-0 EXACTLY onto antiperiodic-axis-1  (||W M_ap0 W^T - M_ap1||=0.00e+00)
+[T] PASS: W_01 genuinely MOVES the antiperiodic axis (not a fixed point)  (||W M_ap0 W^T - M_ap0||=16.000 (>1 required))
+[T] PASS: W_12 orthogonal
+[T] PASS: W_12 preserves periodic staggered hop  (res=0.00e+00)
+[T] PASS: W_12 maps antiperiodic-axis-1 EXACTLY onto antiperiodic-axis-2  (||W M_ap1 W^T - M_ap2||=0.00e+00)
+[T] PASS: W_12 genuinely MOVES the antiperiodic axis (not a fixed point)  (||W M_ap1 W^T - M_ap1||=16.000 (>1 required))
+[T] PASS: W_23 orthogonal
+[T] PASS: W_23 preserves periodic staggered hop  (res=0.00e+00)
+[T] PASS: W_23 maps antiperiodic-axis-2 EXACTLY onto antiperiodic-axis-3  (||W M_ap2 W^T - M_ap3||=0.00e+00)
+[T] PASS: W_23 genuinely MOVES the antiperiodic axis (not a fixed point)  (||W M_ap2 W^T - M_ap2||=16.000 (>1 required))
+[T] NOTE: (0,1),(1,2),(2,3) generate S_4, which acts TRANSITIVELY on the 4 axes; the antiperiodic-axis label is therefore a single 4-element orbit.
+[SCOPE] PASS: EVEN extent is required: at ODD cubic L=(3,3,3,3) W01 does NOT preserve the periodic hop (falsifier; claim scope is EVEN cubic)  (||W M_per W^T - M_per||_odd=6.000 (>1: even-extent boundary))
+[SCOPE] PASS: ...while at EVEN L=(4,4,4,4) it is exact (recap of [S])
+[REST] PASS: antiperiodic-axis-0 ALONE breaks the fixed W01 (the pin)  (||W M_ap0 W^T - M_ap0||=16.000 (>1 required))
+[REST] PASS: antiperiodic in BOTH 0,1 restores W01 exactly (symmetric -> symmetry returns)  (||W M_ap01 W^T - M_ap01||=0.00e+00)
+[R] PASS: W01 is a REAL operator (commutes with K = complex conjugation)
+[R] PASS: sublattice-parity grading anticommutes with the hop: eps D eps = -D  (||eps D eps + D||=0.00e+00)
+[R] PASS: the grading eps is EXACTLY W-invariant (W eps W^T = eps) -> W-inert, no axis label  (||W eps W^T - eps||=0.00e+00)
+
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 312,
+    "critical": 311,
     "high": 302,
     "leaf": 576,
     "medium": 486
@@ -140,30 +140,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_casimir_fundamental_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 20.5,
-      "note_path": "docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/su3_casimir_fundamental_check.py",
-      "transitive_descendants": 361
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_q_delta_linking_relation_theorem_note_2026-04-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -181,6 +157,33 @@
       "ready": true,
       "runner_path": "scripts/frontier_koide_q_delta_formal_ratio_repair.py",
       "transitive_descendants": 326
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "physical_lattice_necessity_note",
+        "cl3_color_automorphism_theorem",
+        "graph_first_su3_integration_note",
+        "su3_casimir_fundamental_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 28,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 22.313,
+      "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_g_bare_hs_rigidity_narrow.py",
+      "transitive_descendants": 317
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -332,15 +335,15 @@
         "pl_topology_infrastructure_textbook_import_note_2026-05-17",
         "s3_general_r_derivation_note"
       ],
-      "direct_in_degree": 10,
+      "direct_in_degree": 11,
       "effective_status": "retained_bounded",
       "helper_runner_paths": [],
-      "load_bearing_score": 16.17,
+      "load_bearing_score": 16.675,
       "note_path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
-      "transitive_descendants": 287
+      "transitive_descendants": 288
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -6480,33 +6483,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_yt_p3_k2_integrals.py",
       "transitive_descendants": 318
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "physical_lattice_necessity_note",
-        "cl3_color_automorphism_theorem",
-        "graph_first_su3_integration_note",
-        "su3_casimir_fundamental_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 28,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 22.313,
-      "note_path": "docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_g_bare_hs_rigidity_narrow.py",
-      "transitive_descendants": 317
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -50145,5 +50121,5 @@
     }
   ],
   "ready_count": 121,
-  "total_pending": 1676
+  "total_pending": 1675
 }

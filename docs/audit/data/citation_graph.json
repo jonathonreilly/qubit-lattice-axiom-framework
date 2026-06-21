@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hw1_second_order_return_shape_theorem_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "su3_casimir_fundamental_theorem_note_2026-05-02"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "flavor_asymmetry_2over9_forced_weight_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hw1_second_order_return_shape_theorem_note",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
         "koide_q_delta_linking_relation_theorem_note_2026-04-20",
         "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
         "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
         "flavor_operator_realization_local_density_2026-05-31",
         "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
-        "flavor_asymmetry_2over9_forced_weight_2026-05-31"
+        "flavor_asymmetry_2over9_forced_weight_2026-05-31",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c64658a796c7351b66fb75565b9ff0ef9d0ec8e50247f17a99a2760f936c67a9",
+      "note_hash": "651267e67e6e2ec48ec8f5c780c73515709b9578028c1b1c4fa66139e495dcfa",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

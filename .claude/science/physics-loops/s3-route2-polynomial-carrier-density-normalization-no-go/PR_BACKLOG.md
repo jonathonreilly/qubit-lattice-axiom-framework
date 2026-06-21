@@ -1,6 +1,16 @@
 # PR Backlog
 
-No PR backlog is expected. If GitHub PR creation fails, use:
+PR created:
+
+```text
+#4575 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4575
+```
+
+Identity-only PR verification passed for `number`, `url`, `title`,
+`headRefName`, `baseRefName`, and `state`. No mergeability or conflict check
+was run.
+
+Original recovery command, if the PR ever needs to be recreated:
 
 ```bash
 gh pr create \

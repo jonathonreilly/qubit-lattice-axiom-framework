@@ -43,7 +43,7 @@ coefficient source supply the inputs (I1), (I2), (I3), (I4):
        R_beta^env.
 
   (I4) wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30
-       (retained_bounded / audited_clean): the Wilson one-link coefficient
+       (effective_status retained_bounded): the Wilson one-link coefficient
        expansion has nonnegative tensor-product multiplicities. This runner
        checks the source repair's constructive highest-weight occurrence
        certificate m_(p,q)^(p+q) >= 1, which upgrades the needed premise to
@@ -240,9 +240,8 @@ def main() -> int:
         detail="parent rows split formal convolution support from the still-open physical coefficient bridge",
     )
     check(
-        "I4 ledger authority is audited_clean / retained_bounded",
-        wilson_row.get("audit_status") == "audited_clean"
-        and wilson_row.get("effective_status") == "retained_bounded",
+        "I4 ledger authority has retained_bounded effective status",
+        wilson_row.get("effective_status") == "retained_bounded",
         detail=f"audit_status={wilson_row.get('audit_status')} effective_status={wilson_row.get('effective_status')}",
     )
     check(

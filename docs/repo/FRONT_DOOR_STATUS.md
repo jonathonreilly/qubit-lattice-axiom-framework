@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1629 |
-| Retained-grade rows, including boxed decorations | 1503 |
+| Applied audit verdicts | 1630 |
+| Retained-grade rows, including boxed decorations | 1504 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
-| Retained bounded rows | 1009 |
+| Retained bounded rows | 1010 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 39 |
-| Unaudited rows | 1517 |
+| Unaudited rows | 1516 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 46 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1519 |
-| Ready rows | 27 |
+| Total pending rows | 1518 |
+| Ready rows | 26 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 503 |
+| Leaf pending | 502 |
 
 Next ready rows by queue order:
 
-- [`native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02`](../../docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - medium; unaudited
 - [`post_record_flow_thermal_stable_setting_certificate_2026-06-06`](../../docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md) - medium; unaudited
 - [`post_record_persistent_record_production_bridge_prototype_2026-06-06`](../../docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`post_record_source_measure_trace_normalization_prototype_2026-06-06`](../../docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md) - medium; unaudited
-- [`post_record_supplied_concentration_certificate_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md) - leaf; unaudited
+- [`post_record_supplied_concentration_certificate_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md) - medium; unaudited
+- [`post_record_supplied_orientation_bridge_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

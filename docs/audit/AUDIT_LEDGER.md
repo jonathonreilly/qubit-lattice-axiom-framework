@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1009 |
+| **retained_bounded** | 1010 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1517 |
+| unaudited | 1516 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1459 |
+| `audited_clean` | 1460 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1843 |
+| `unaudited` | 1842 |
 
 | claim_type | count |
 |---|---:|
@@ -1014,6 +1014,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -14589,6 +14590,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The product rule gives dT_beta/dbeta = (1/2)(J T_beta + T_beta J) + E_beta D_beta' E_beta, and Hellmann-Feynman converts the log-ratio derivative target into Delta_J + Delta_D <= 0 on the finite block.  _(class `A`)_
 - **chain closes:** True — Within the declared finite-block scope, the derivative split follows algebraically from the cited J recurrence and source-sector factorization under simple isolated eigenvalues, and the runner recomputes the stated finite-grid sign witnesses from the matrix operator. The uniform H8-J/H8-D domination and shell/tail transfer steps are explicitly outside the audited conclusion.
 - **rationale:** The load-bearing step is class A: differentiating E_beta D_beta E_beta and applying Hellmann-Feynman gives the displayed decomposition, while the scalar shift cancels in the ratio derivative. The cited authorities are retained-grade or retained_bounded, and no cited authority carries an open identification needed for this finite-block identity. The runner builds J, computes Wilson coefficient tables through the helper, checks the derivative recurrence, verifies the matrix split against direct differentiation and finite differences, and reports finite-grid signs without external comparators or tuned inputs. This clean verdict is only for the bounded finite-block decomposition and witnessed grid; eventual monotonicity remains unproved.
+- **auditor confidence:** high
+
+### `native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12`
+
+- **Note:** [`NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded spectral-gap certification for the repo-native half-slice SU(3) dominant-weight packet operator on B_14, with integer frontier beta=22 and fixed-shell stop by beta=45/2 and beta=23.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Rows are certified when the exact rational block upper bound plus the path-count tail radius satisfies (block_lambda1_upper + tail_radius) / lambda0_lower < 1.  _(class `C`)_
+- **chain closes:** True — The cited retained-grade inputs supply the character recurrence, half-slice factorization surface, and coefficient positivity. The runner then constructs the finite block, rational coefficient/half-slice bounds, Hilbert-Schmidt deflation, and tail majorant directly rather than importing the certified frontier values.
+- **rationale:** The claim is carefully scoped to a bounded fixed-packet certificate and explicitly excludes continuum, physical beta=6 environment, and Clay-style mass-gap claims. The primary runner source performs nontrivial rational recurrence, block, deflation, and tail computations; the printed frontier is not a hard-coded comparator match. The helper module is used for float diagnostics and finite-box witness checks, while the load-bearing certificate path remains the primary runner's exact rational construction.
 - **auditor confidence:** high
 
 ### `native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`

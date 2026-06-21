@@ -21,4 +21,4 @@ Checks:
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 79 tests passed.
 - `git diff --check` -> pass.
 
-Restacked on PR #4500 at `2d251fe3b` after the 7fc cache-base refresh.
+Restacked on PR #4500 at `eab9c843d` after the 678 cache-base refresh.

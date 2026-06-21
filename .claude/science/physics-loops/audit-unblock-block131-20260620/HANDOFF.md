@@ -18,7 +18,7 @@ full-ledger cleanup dry run reports 8 candidates instead of 9:
 - `stale to refresh: 0`
 - `missing on disk: 0`
 
-The branch is restacked on PR #4500 at `2d251fe3b`.
+The branch is restacked on PR #4500 at `eab9c843d`.
 
 ## Boundary
 
@@ -35,8 +35,8 @@ verdict, delete cache files, or assert retained status.
 
 ## Next Exact Action
 
-Force-push the restacked branch, update PR #4501 body, then continue to the
-next stacked cleanup PR.
+Run targeted verification, force-push the restacked branch, update PR #4501
+body, then continue to the next stacked cleanup PR.
 
 ## PR
 

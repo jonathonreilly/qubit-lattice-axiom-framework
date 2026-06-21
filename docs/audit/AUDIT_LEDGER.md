@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 989 |
+| **retained_bounded** | 990 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1553 |
+| unaudited | 1552 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1434 |
+| `audited_clean` | 1435 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 61 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1879 |
+| `unaudited` | 1878 |
 
 | claim_type | count |
 |---|---:|
@@ -86,8 +86,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 941 |
-| `leaf` | 1458 |
+| `medium` | 940 |
+| `leaf` | 1459 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
@@ -195,6 +195,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_kms_condition_theorem_note_2026-05-01` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2572,6 +2573,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Using [E_ij,E_pp] = delta_jp E_ip - delta_pi E_pj, the expansion i[H,rho_p] = i sum_i c_ip E_ip - i sum_j c_pj E_pj equals sum_{q != p} i(c_qp E_qp - c_pq E_pq) after the q=p term cancels.  _(class `A`)_
 - **chain closes:** True — The commutator identity directly gives the local continuity equation for arbitrary finite I, and summing over p cancels every oriented pair. The support-envelope and antisymmetry claims follow immediately from the displayed definition of J_{p<-q}.
 - **rationale:** The load-bearing step is a genuine algebraic closure from the stated matrix-unit commutator, not a definition substitution or imported physical bridge. An independent manual expansion verifies the sign, the q=p cancellation, global cancellation, and the dependence only on c_pq and c_qp. The runner source performs actual symbolic dictionary algebra and concrete matrix-unit checks without external comparators, hard-coded contested values, or helper opacity. The note explicitly excludes the staggered carrier and physical density bridge, so no open carrier-specific dependency is imported into this scoped claim.
+- **auditor confidence:** high
+
+### `axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite onsite/internal U(1) lattice Noether packet: arbitrary finite-bilinear number continuity/support envelope plus the sign-fixed nearest-neighbour staggered U(1) current, with site-mixing generators excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With rho_x = chibar_x chi_x mapped to the CAR number projection, the finite staggered current with the -1/2 sign satisfies d rho_x/dt + div^L j_x = 0 operator-exactly while the flipped sign violates it, and the general support envelope is the retained abstract bilinear continuity identity.  _(class `A`)_
+- **chain closes:** True — The arbitrary-bilinear continuity and support-envelope step is supplied by the retained abstract bilinear theorem, while the local density readout is supplied by the decoration-under-retained CAR bridge. The runner source constructs the finite CAR/staggered operators and checks the fixed sign against the flipped sign, so the bounded U(1) carrier-specific claim closes without the realization gate or site-mixing current.
+- **rationale:** The load-bearing work is exact algebra over retained-grade or accepted-premise inputs, not a definition substitution or tuned numerical comparison. The runner is not merely printing PASS lines: it verifies the bilinear commutator on finite CAR Fock space, symbolic continuity for arbitrary coefficients, the onsite local variational current, and the operator continuity sign test with a flipped-sign falsifier. The clean verdict applies only to the stated bounded scope: U(1)/number onsite-internal current and finite staggered exhibit, not a broad physical realization theorem or a current theorem for site-mixing generators.
 - **auditor confidence:** high
 
 ### `axiom_first_lattice_noether_theorem_note_2026-04-29`

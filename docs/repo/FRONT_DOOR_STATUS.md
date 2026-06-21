@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1593 |
-| Retained-grade rows, including boxed decorations | 1477 |
+| Applied audit verdicts | 1594 |
+| Retained-grade rows, including boxed decorations | 1478 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
-| Retained bounded rows | 989 |
+| Retained bounded rows | 990 |
 | Boxed decorations under retained parents | 59 |
 | Open gates | 38 |
-| Unaudited rows | 1553 |
+| Unaudited rows | 1552 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 37 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1555 |
-| Ready rows | 63 |
+| Total pending rows | 1554 |
+| Ready rows | 62 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 539 |
+| Leaf pending | 538 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
 - [`bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`](../../docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md) - medium; unaudited
 - [`beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 - [`causal_cone_speed_map_note`](../../docs/CAUSAL_CONE_SPEED_MAP_NOTE.md) - medium; unaudited
 - [`causal_impact_parameter_note`](../../docs/CAUSAL_IMPACT_PARAMETER_NOTE.md) - medium; unaudited
 - [`causal_source_placement_robustness_note`](../../docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md) - medium; unaudited
 - [`connectivity_family_v2_elliptical_duplicate_note`](../../docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md) - medium; unaudited
-- [`continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12`](../../docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12`](../../docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12`](../../docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,13 +83,13 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 984 |
-| Leaf nodes | 1550 |
+| Medium nodes | 983 |
+| Leaf nodes | 1551 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
-- `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
+- `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
 - `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008

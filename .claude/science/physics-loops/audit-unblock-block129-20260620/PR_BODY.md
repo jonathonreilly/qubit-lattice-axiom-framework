@@ -17,7 +17,7 @@ No audit verdicts or claim-status rows are edited.
 
 ## Base Note
 
-This PR is now rebased directly on `main` at `dea100014`. It does not depend on
+This PR is now rebased directly on `main` at `ca3f6f8d3`. It does not depend on
 block128 / PR #4498.
 
 ## Artifacts
@@ -44,6 +44,6 @@ git diff --check
 Post-rebase results: the guard, cache freshness checks, path canonicalization
 guard, py-compile, unittest suite, and `git diff --check` pass. Strict
 `audit_lint.py --strict` currently fails on the same current-main baseline
-drift in a clean `origin/main` worktree: 3 stale-dispatch warnings and 30
-retained-row `note_hash` drift errors. This PR does not edit those audit rows or
-apply any audit verdicts.
+drift in a detached `origin/main` worktree: 3 stale-dispatch warnings, 261
+notices, and 30 retained-row `note_hash` drift errors. This PR does not edit
+those audit rows or apply any audit verdicts.

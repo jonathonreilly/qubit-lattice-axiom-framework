@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1651 |
-| Retained-grade rows, including boxed decorations | 1517 |
+| Applied audit verdicts | 1652 |
+| Retained-grade rows, including boxed decorations | 1518 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 221 |
-| Retained bounded rows | 1020 |
+| Retained bounded rows | 1021 |
 | Boxed decorations under retained parents | 63 |
 | Open gates | 39 |
-| Unaudited rows | 1495 |
+| Unaudited rows | 1494 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 53 |
 | Audited renaming rows | 29 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1497 |
-| Ready rows | 5 |
+| Total pending rows | 1496 |
+| Ready rows | 4 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
-| Medium pending | 442 |
+| Medium pending | 441 |
 | Leaf pending | 483 |
 
 Next ready rows by queue order:
 
-- [`three_family_card_missing_distance_live_bridge_note_2026-06-18`](../../docs/THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md) - medium; unaudited
 - [`unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11`](../../docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`unordered_mass_pdep_record_independence_no_go_note_2026-06-18`](../../docs/UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17`](../../docs/YT_BOUNDARY_BC_TRANSFER_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
@@ -80,8 +79,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 978 |
-| Leaf nodes | 1556 |
+| Medium nodes | 977 |
+| Leaf nodes | 1557 |
 
 Top load-bearing rows by graph score:
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 221 |
-| **retained_bounded** | 1020 |
+| **retained_bounded** | 1021 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1495 |
+| unaudited | 1494 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1471 |
+| `audited_clean` | 1472 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1821 |
+| `unaudited` | 1820 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 935 |
-| `leaf` | 1464 |
+| `medium` | 934 |
+| `leaf` | 1465 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1471,6 +1471,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `third_grown_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `third_grown_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `three_family_card_missing_distance_live_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `three_generation_local_algebra_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_no_proper_quotient_via_burnside_characters_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -21429,6 +21430,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The row's load-bearing packet is only P_THOOFT_REG: a pure syntactic vocabulary registration and open-gate boundary for abelian-projection, monopole/dual-superconductor, center-vortex, symbolic action-form, and Wilson-loop area-law notation.  _(class `E`)_
 - **chain closes:** True — The restricted packet closes only the definitional registration and boundary disclaimer. It does not close any physical confinement mechanism or framework bridge, and the note explicitly excludes those conclusions.
 - **rationale:** Issue: the load-bearing move is the definition/registration of P_THOOFT_REG plus boundary disclaimers, while the runner verifies text presence and tautological symbolic identities. Why this blocks: no retained authority or derivation establishes monopole condensation, center-vortex percolation, Wilson-loop area law, positive string tension, or a framework observable bridge. Repair target: add retained one-hop authorities or retained bridge theorems before using this row as theorem input. Claim boundary until fixed: pure syntactic open-gate vocabulary catalogue.
+- **auditor confidence:** high
+
+### `three_family_card_missing_distance_live_bridge_note_2026-06-18`
+
+- **Note:** [`THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md`](../../docs/THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the source-side bridge that imports the retained_bounded third-family distance result into the missing Family 3 distance-alpha slot while preserving the archive boundary.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-three_family_card_missing_distance_live_bridge_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The live result supports only the bounded Family 3 direct distance tail slot: alpha = -1.150, R^2 = 0.971, and 5/5 toward for drift=0.50, restore=0.90.  _(class `B`)_
+- **chain closes:** True — The cited retained_bounded distance note and SHA-pinned completed cache supply the bounded third-family distance-tail result, and the bridge runner verifies the archive boundary plus cache consistency. The closure is only for this missing-distance slot, not for all-nine card repair, three-family equality, or geometry independence.
+- **rationale:** The bridge is not a first-principles physics recomputation; it is a bounded cross-note/cache bridge from a retained_bounded upstream result. The runner checks paths, archive-retirement language, scoped boundary language, the distance-runner SHA-pinned cache, and the reported alpha/R^2/toward values, with 51/51 checks passing. Because the source note explicitly excludes all-nine repair, geometry independence, holdout-family checks, and effective-status propagation, the conclusion follows within the declared narrow scope.
 - **auditor confidence:** high
 
 ### `three_family_card_note`

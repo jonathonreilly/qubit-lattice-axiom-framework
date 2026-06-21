@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 969 |
+| **retained_bounded** | 970 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1601 |
+| unaudited | 1600 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1406 |
+| `audited_clean` | 1407 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1927 |
+| `unaudited` | 1926 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 937 |
-| `leaf` | 1462 |
+| `medium` | 938 |
+| `leaf` | 1461 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -118,12 +118,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 760 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
 | 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 35.82 | `audited_clean` | **retained_bounded** |
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1099 | 35.60 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
@@ -1096,6 +1096,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_admitted_sample_target_vector_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_clock_rate_interface_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15488,6 +15489,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The det=+1 elements of the S_3 permutation representation are exactly A_3 = C_3 = {id, (012), (021)}, while the transpositions have det=-1.  _(class `A`)_
 - **chain closes:** True — The determinant signs, subgroup closure, and generic degeneracy lift are standard finite-group and linear-algebra facts and are directly checked by the runner. The physical bridge from the framework's positivity principle to this orientation criterion is explicitly excluded from the audited claim.
 - **rationale:** The runner genuinely computes permutation matrices, restricted E-block determinants, subgroup closure, and a C_3-averaged Hermitian example rather than merely printing constants. The audited claim is conditional and bounded: it proves selection by an admitted determinant-orientation criterion, not that the framework's positivity principle supplies that criterion. Within that stated scope, the chain closes by algebraic identity checks and contains no external numerical comparator, fitted input, or hidden upstream authority.
+- **auditor confidence:** high
+
+### `post_record_admitted_sample_target_vector_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For a supplied finite admitted post-record sample and supplied statistic set, exact finite counting yields the stated empirical statistic vector without deriving a probability law, weights, selection rule, or kernel.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-post_record_admitted_sample_target_vector_interface_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** supplied finite post-record sample plus supplied statistic set + exact counting => admitted empirical target vector  _(class `A`)_
+- **chain closes:** True — Within the bounded premise that the sample and statistic set are supplied, the vector entries are finite indicator averages and the example fractions follow by exact arithmetic. The claim does not attempt to derive the sample, a probability law, weights, a selection rule, or a production kernel.
+- **rationale:** The load-bearing step is class A finite arithmetic over supplied inputs, not a first-principles physics derivation. The runner source actually computes the empirical vector using exact Fractions and explicit statistic functions, and manual enumeration of AA, AB, BA, BA gives 1/4, 1/2, and 1/4. The source boundaries keep the sample as admitted observation data and leave weights, rules, kernels, Born-law content, and dial choices outside the audited claim scope.
 - **auditor confidence:** high
 
 ### `post_record_arrow_orientation_firewall_2026-06-06`

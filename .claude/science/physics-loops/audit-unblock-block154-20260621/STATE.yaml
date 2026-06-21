@@ -1,0 +1,59 @@
+loop: audit-unblock-block154-20260621
+campaign: physics-loop audit-unblock
+mode: campaign
+block: 154
+target_claim_id: diamond_nv_phase_ramp_signal_budget_note
+target_note: docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md
+branch: physics-loop/audit-unblock-block154-20260621
+base: origin/main
+base_oid: fe2454a6aa1cc972af1bc26bee8bd23ec47ee45b
+actual_current_surface_status: bounded-support
+ledger_claim_type: bounded_theorem
+ledger_audit_status: unaudited
+ledger_effective_status: unaudited
+criticality: medium
+runner: scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py
+runner_cache: logs/runner-cache/diamond_nv_phase_ramp_signal_budget_bounded_probe.txt
+runner_result: "SUMMARY: PASS=20 FAIL=0"
+runner_classification:
+  dominant_class: B
+  assert_count: 1
+  counts:
+    A: 0
+    B: 1
+    C: 0
+    D: 0
+  decoration_candidate: true
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md
+  - scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py
+  - logs/runner-cache/diamond_nv_phase_ramp_signal_budget_bounded_probe.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/runner_classification.json
+  - .claude/science/physics-loops/audit-unblock-block154-20260621/
+commands_run:
+  - "python3 scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py"
+  - "python3 scripts/diamond_signal_budget_hardening.py"
+  - "python3 scripts/diamond_phase_ramp_bridge_card.py"
+  - "python3 scripts/diamond_ideal_lockin_detector_theorem.py"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py --push-mode none --allow-non-main"
+  - "bash docs/audit/scripts/run_pipeline.sh"
+  - "python3 scripts/precompute_audit_runners.py --runners scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py --check-only --push-mode none --allow-non-main"
+  - "python3 docs/audit/scripts/audit_lint.py --strict"
+  - "python3 -m py_compile scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py scripts/diamond_signal_budget_hardening.py scripts/diamond_phase_ramp_bridge_card.py scripts/diamond_ideal_lockin_detector_theorem.py docs/audit/scripts/build_citation_graph.py docs/audit/scripts/seed_audit_ledger.py docs/audit/scripts/classify_runner_passes.py"
+  - "git diff --check"
+review_loop_disposition: pass
+review_loop_note: "Local review only: bounded proxy signal-budget row gets a current wrapper runner; row remains unaudited/effective unaudited."
+lock_mode: branch-local degraded
+next_exact_action: "Commit, push branch, open PR, then stop; remaining candidates are broad/risky for this runtime."
+stop_condition: "Runtime effectively exhausted and remaining source-side unblock targets require broader review."

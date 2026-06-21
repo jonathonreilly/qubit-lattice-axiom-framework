@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py
+runner_sha256: 8aca7446d32c0b4a168aab551a80e6591570035eebb56baae8799217df760c7f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+DIAMOND NV PHASE-RAMP SIGNAL-BUDGET BOUNDED PROBE
+Target note: docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md
+Proxy budget runner: scripts/diamond_signal_budget_hardening.py
+Phase-ramp bridge runner: scripts/diamond_phase_ramp_bridge_card.py
+Ideal detector theorem runner: scripts/diamond_ideal_lockin_detector_theorem.py
+
+[PASS] note_exists: docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md
+[PASS] claim_type_bounded: bounded_theorem metadata present
+[PASS] status_authority_independent: audit lane owns status
+[PASS] runner_metadata: scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py
+[PASS] not_closed_signal_budget: explicit non-closure boundary
+[PASS] qualitative_not_absolute: qualitative budget boundary
+[PASS] open_transfer_bridge: open physical transfer bridge named
+[PASS] budget_runner_cited: scripts/diamond_signal_budget_hardening.py
+[PASS] ramp_runner_cited: scripts/diamond_phase_ramp_bridge_card.py
+[PASS] ideal_detector_runner_cited: scripts/diamond_ideal_lockin_detector_theorem.py
+[PASS] budget_report_transfer_gap: absolute NV transfer coefficient remains missing
+[PASS] budget_geometry_fixed: seeds=6 h=0.5
+[PASS] budget_zero_velocity_null: zero-velocity proxy null present
+[PASS] budget_signed_centroid: centroid sign changes with velocity sign
+[PASS] budget_phase_positive_nonzero: nonzero proxy phase lags are positive magnitudes
+[PASS] ramp_strength_rows: strength rows=4
+[PASS] ramp_slope_grows_with_strength: 0.1215,0.2444,0.4925,1.0274
+[PASS] ramp_r2_high: all ramp R^2 >= 0.95
+[PASS] ramp_report_proxy_scope: proxy-level bridge card
+[PASS] ideal_lockin_detector_assertions: analytic lock-in formula max_abs_error=5.995e-15 tol=1.0e-10; small-delay law Y/X=6.283186134022e-04 tan(omega*tau)=6.283186134014e-04 omega*tau=6.283185307180e-04
+
+SUMMARY: PASS=20 FAIL=0
+Scope: bounded proxy discriminator card only; no calibrated NV/lab detectability claim.
+
+----- stderr -----
+

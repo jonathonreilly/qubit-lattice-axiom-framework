@@ -42,3 +42,11 @@ python3 -m py_compile scripts/frontier_quark_route2_source_count_selector_bridge
 
 Focused review disposition: PASS WITH EXACT SUPPORT / SELECTOR BOUNDARY.
 The audit pipeline was not run and no audit verdicts were applied.
+
+## PR
+
+Opened PR #4533:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4533
+
+Identity was verified with `gh pr view` using only number, URL, title, head,
+base, and state fields. Mergeability/conflict state was not queried.

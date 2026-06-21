@@ -1,0 +1,22 @@
+loop: audit-unblock-block140-20260621
+branch: physics-loop/audit-unblock-block140-20260621
+base: origin/main
+base_commit: 175906c859074f1906d6f8520f7427852758d7f4
+mode: campaign
+block: 140
+status: ready_for_pr
+actual_current_surface_status: open
+trace_class: methodology
+reachability_to_target: supports
+audit_worker_run: false
+apply_audit_run: false
+main_push: false
+review_loop_status: deferred_to_reviewer_lane_per_user_instruction
+target_claim_id: s3_time_theta_to_slice_coupling_factor_rigidity_note_2026-05-17
+runner_registered: scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py
+runner_result: PASS=64 FAIL=0
+movement:
+  - adds parser-facing Runner metadata to the high-priority unaudited S3 time factor-rigidity note
+  - regenerates graph, ledger, audit queue, ledger markdown, and runner classification for that registration
+  - classifies the runner as dominant_class C with C=9 and D=4 heuristic hits
+next_exact_action: open PR for block140, then continue with another fresh source-side unblock target

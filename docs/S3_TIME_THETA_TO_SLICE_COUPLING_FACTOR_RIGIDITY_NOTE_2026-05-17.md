@@ -11,6 +11,7 @@ conditional `Theta_R -> Lambda_R` coupling family that holds under any
 admissible readout in the 1-parameter family `P(rho_E)`.  Names the
 upstream readout-triple as the still-open theorem target.
 **Status authority:** independent audit lane only.
+**Runner:** [`scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py`](../scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py)
 
 ## Scope and audit boundary
 

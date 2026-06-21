@@ -1,0 +1,33 @@
+loop_slug: s3-route2-readout-endpoint
+block: block05
+branch: physics-loop/s3-route2-readout-endpoint-block05-20260621
+base_commit: 71f38d07a
+actual_current_surface_status: bounded-support
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+target_claim_id: s3_time_theta_to_slice_coupling_note
+target_blocker_text: "Route-2 endpoint still needs beta_E/alpha_E = 21/4, equivalently q_E = 15/8."
+active_route: e_center_lift_size_scan_boundary
+hard_residual: "Turn the 15^3 measured E-center calibration into, or separate it from, a size-stable q_E(N) theorem."
+files_touched:
+  - docs/QUARK_ROUTE2_E_CENTER_LIFT_SIZE_SCAN_BOUNDARY_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py
+  - logs/runner-cache/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.txt
+open_imports:
+  - "A size-stable Schur/shell/tensor family proving q_E(N) -> 15/8 is still absent."
+  - "No non-finite-box covariance bridge deriving q_E = 15/8 has been supplied."
+no_go_routes:
+  - "Naive route pruned: SIZE=15 measured match alone cannot be cited as finite-size convergence evidence."
+pr_policy:
+  push_to_main: false
+  refresh_prs_to_main: false
+  check_pr_conflicts: false
+  pr_identity_fields_only:
+    - number
+    - url
+    - title
+    - headRefName
+    - baseRefName
+    - state
+next_exact_action: "Run checks, commit, push branch, open one review PR, verify identity fields only."
+stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable science targets are blocked."

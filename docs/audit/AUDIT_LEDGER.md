@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 981 |
+| **retained_bounded** | 982 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1568 |
+| unaudited | 1567 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1426 |
+| `audited_clean` | 1427 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1894 |
+| `unaudited` | 1893 |
 
 | claim_type | count |
 |---|---:|
@@ -916,6 +916,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `light_cone_framing_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
@@ -13021,6 +13022,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The detector-only heuristic `kubo_heuristic = cz_weighted - cz_free`, computed from free detector amplitudes reweighted by `1/|z-z_src|`, is compared against the finite-difference measured response across the frozen 44-family log.  _(class `A`)_
 - **chain closes:** True — For the declared open-gate scope, the chain closes: the runner parses the frozen 44-family log and recomputes the reported correlations, sign counts, threshold summary, measured-response ceiling, and source-boundary firewall. It does not close, and does not claim to close, the literal `<z*deltaH>_0` Kubo theorem.
 - **rationale:** The primary runner source is a frozen-log verifier, not a first-principles derivation runner, and its checks match that limited role: `SCORECARD PASS=15 FAIL=0`. The source note preserves the no-fit versus tuned split and repeatedly forbids reuse as a literal first-order Kubo theorem or closed compact-principle derivation. The clean verdict is therefore clean only at `open_gate` scope: a reproducible detector-only heuristic record with explicit downstream firewall.
+- **auditor confidence:** high
+
+### `linear_response_second_order_kubo_note`
+
+- **Note:** [`LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md`](../../docs/LINEAR_RESPONSE_SECOND_ORDER_KUBO_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite second-order Kubo replay on the named 44-family runner panel at strengths s in {0.001, 0.002, 0.004, 0.008}; no all-orders Taylor or alternative-basepoint claim is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-linear_response_second_order_kubo_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Adding the computed second-order term 0.5*kubo2*s^2 to the first-order Kubo prediction leaves the strict linearity-regime subset at 15/44 and increases the aggregate absolute residual at s=0.008 from 5.6090 to 5.7221.  _(class `C`)_
+- **chain closes:** True — The primary runner source genuinely computes the A, B, and C propagators, regenerates the 44-family panel through the supplied helper generators, measures centroid shifts at the four strengths, and derives the reported ratios, residuals, and linearity counts without hard-coding the contested outcome. The cached stdout matches the narrowed source claim.
+- **rationale:** Within the narrowed finite-computation scope, the chain closes from the supplied runner and helper code. The runner does not merely print constants: it constructs the family panel, computes kubo1 and kubo2, evaluates measured finite-strength responses, and reports the null result. The source note explicitly excludes the broader all-orders Taylor no-go, so the absence of a higher-order remainder theorem is not a defect in the audited claim.
 - **auditor confidence:** high
 
 ### `linear_response_true_kubo_note`

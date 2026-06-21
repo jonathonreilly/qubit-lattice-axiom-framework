@@ -1473,9 +1473,9 @@
       "state": "invalid_missing_claim_id"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_clean",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "retained_bounded",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

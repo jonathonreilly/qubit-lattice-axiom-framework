@@ -1,0 +1,48 @@
+loop: audit-unblock-block134-20260620
+campaign: audit-unblock-20260619
+block: 134
+mode: physics-loop
+branch: physics-loop/audit-unblock-block134-20260620
+base: physics-loop/audit-unblock-block133-20260620
+base_commit: 8a506ceb6
+user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
+target_claim_id: null
+target_scope: "audit packet dependency map refresh and null-runner canonicalization"
+target_status: open
+actual_current_surface_status: open
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: methodology
+reachability_to_target: supports
+artifact_role: tooling
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+lock_mode: degraded_branch_local
+lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
+current_result: "Refreshed audit_packet_script_deps.json/cache after latest main and canonicalization fixes; null runner paths now remain no-runner rows instead of becoming missing file 'None'."
+packet_deps_summary:
+  total_claims_in_ledger: 3472
+  pending_audits_in_queue: 1668
+  claims_with_runner_path: 3241
+  claims_with_no_runner_declared: 231
+  claims_whose_runner_file_is_missing: 0
+  pending_claims_with_helper_imports: 389
+  pending_claims_with_runner: 1593
+files_touched:
+  - scripts/codex_audit_runner.py
+  - scripts/audit_packet_script_deps.py
+  - scripts/precompute_audit_runners.py
+  - scripts/audit_runner_path_canonicalization_guard_2026_06_17.py
+  - docs/audit/data/audit_packet_script_deps.json
+  - docs/audit/scripts/tests/test_audit_pipeline.py
+  - logs/runner-cache/audit_packet_script_deps.txt
+  - logs/runner-cache/audit_runner_path_canonicalization_guard_2026_06_17.txt
+  - .claude/science/physics-loops/audit-unblock-block134-20260620/*
+review_disposition: pass
+verification_status: pass
+pr_status: pending
+pr_url: null
+next_exact_action: "Commit, push branch, and open a stacked PR against physics-loop/audit-unblock-block133-20260620."
+stop_condition: "Block134 PR opened and verified; campaign continues to the next audit-unblock target while runtime remains."

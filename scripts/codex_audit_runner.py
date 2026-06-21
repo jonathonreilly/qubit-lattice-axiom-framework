@@ -479,7 +479,7 @@ def runner_timeout_for(runner_path: str, default_sec: int) -> int:
     return rc.runner_timeout_for(runner_path, default_sec=default_sec)
 
 
-def canonical_runner_path(runner_path: str | Path) -> str:
+def canonical_runner_path(runner_path: str | Path | None) -> str:
     """Map legacy runner references to checked-out repo-local runners.
 
     Historical ledger rows may carry bare script names or absolute paths from
@@ -487,6 +487,8 @@ def canonical_runner_path(runner_path: str | Path) -> str:
     embedded ``scripts/...`` path or ``scripts/<basename>.py`` when either
     exists; truly absent historical runners remain missing.
     """
+    if runner_path is None:
+        return ""
     raw = str(runner_path).strip()
     if not raw:
         return raw

@@ -72,7 +72,7 @@ CACHE_DIR = rc.CACHE_DIR
 # falling back to a small legacy substring map and finally 120s. This
 # script just calls into it.
 
-def canonical_runner_path(runner_path: str | Path) -> str:
+def canonical_runner_path(runner_path: str | Path | None) -> str:
     """Repair legacy runner references to repo-local checked-out scripts.
 
     Some old rows and triage artifacts carry bare script names or absolute
@@ -80,6 +80,8 @@ def canonical_runner_path(runner_path: str | Path) -> str:
     checkout's runner when the embedded `scripts/...` path or basename exists;
     truly absent historical runners stay missing.
     """
+    if runner_path is None:
+        return ""
     raw = str(runner_path).strip()
     if not raw:
         return raw

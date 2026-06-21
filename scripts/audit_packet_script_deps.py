@@ -51,8 +51,10 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
 }
 
 
-def canonical_runner_path(runner_path: str | Path) -> str:
+def canonical_runner_path(runner_path: str | Path | None) -> str:
     """Map legacy runner refs to checked-in repo-local script files."""
+    if runner_path is None:
+        return ""
     raw = str(runner_path).strip()
     if not raw:
         return raw

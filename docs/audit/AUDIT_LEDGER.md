@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1661 |
+| unaudited | 1660 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
-| ~~audited_renaming~~ | 22 |
+| ~~audited_renaming~~ | 23 |
 | ~~audited_conditional~~ | 13 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
@@ -67,8 +67,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
-| `audited_renaming` | 22 |
-| `unaudited` | 1987 |
+| `audited_renaming` | 23 |
+| `unaudited` | 1986 |
 
 | claim_type | count |
 |---|---:|
@@ -1617,6 +1617,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_retained_unbounded_dynamics_gate_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `record_markov_generator_premise_classifier_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `single_axiom_hilbert_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
@@ -16737,6 +16738,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** [PASS] strict local/taste-cell chi selector is absent (strict=[], conserved_neutral_count=3); [PASS] local signed source primitive is blocked (physical_candidates=[]); FINAL_TAGS include NO_GO_STRICT_SELECTOR, SOURCE_PRIMITIVE_BLOCKED_LOCAL, and SIGNED_GRAVITY_PHYSICAL_SECTOR_NOT_RETAINED.  _(class `C`)_
 - **chain closes:** True — The restricted packet contains closed finite/local negative results, not merely an unresolved frontier note: the cached SHA-pinned runner completes and verifies absence of a strict local selector, absence of a native local signed source primitive, and non-retention of a physical signed-gravity sector. Under the judicial standard, those are retained negative boundaries, so no_go is the correct claim type. The load-bearing status is carried by finite runner checks over the local selector/source surface rather than by source-note status prose, so class C is the correct class.
 - **rationale:** The restricted packet contains closed finite/local negative results, not merely an unresolved frontier note: the cached SHA-pinned runner completes and verifies absence of a strict local selector, absence of a native local signed source primitive, and non-retention of a physical signed-gravity sector. Under the judicial standard, those are retained negative boundaries, so no_go is the correct claim type. The load-bearing status is carried by finite runner checks over the local selector/source surface rather than by source-note status prose, so class C is the correct class.
+- **auditor confidence:** high
+
+### `single_axiom_hilbert_note`
+
+- **Note:** [`SINGLE_AXIOM_HILBERT_NOTE.md`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under the admitted local factor dimensions, stipulated local Hermitian Hamiltonian, Born p=2 readout, and support-as-edges extraction rule, the runner checks four small-system operational consequences; no derivation of those inputs is audited.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-single_axiom_hilbert_note-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The four admitted inputs are packaged under the phrase "a finite Hilbert space with local tensor product structure," and the runner then mechanically evaluates the four consequences under that package.  _(class `E`)_
+- **chain closes:** True — The narrowed admitted-input chain closes only as an operational/definitional package: the runner performs finite matrix and support checks after the four inputs are supplied. It does not close as a derivation from a bare tensor-product Hilbert-space axiom; deriving the local Hamiltonian, locality restriction, Born readout, and graph-extraction rule would be the missing stronger step.
+- **rationale:** Issue: the source's load-bearing move is to bundle local d, local Hermitian H, Born readout, and support-as-edges into a named Hilbert packet. Why this blocks clean derivation status: the runner verifies finite consequences only after those premises are supplied, so it is not a first-principles computation from the bare tensor-product structure or from MINIMAL_AXIOMS. Repair target: derive the local Hamiltonian/locality restriction, Born readout, and graph-extraction rule from retained inputs; until then the safe claim is the narrowed operational check under admitted inputs.
 - **auditor confidence:** high
 
 ### `single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16`

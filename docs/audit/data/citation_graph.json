@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "ckm_five_sixths_bridge_support_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "ckm_five_sixths_bridge_support_note",
         "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
         "diamond_ideal_lockin_detector_theorem_note_2026-06-17",
         "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12",
         "causal_field_reconciliation_note",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "flavor_readout_gate_equals_carrier_identification_2026-05-31",
-        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
+        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
+        "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6dc4870ddfbb88ac49425566aa9cde4ab7598af22e94efae6b6bbb3a6d287fd7",
+      "note_hash": "f3bf92668b01aaf8ddefe8ee9a8162401d6a1bb33558c9027cb486ca73d3ab4d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

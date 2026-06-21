@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1656 |
+| unaudited | 1655 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
-| ~~audited_renaming~~ | 23 |
+| ~~audited_renaming~~ | 24 |
 | ~~audited_conditional~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
@@ -67,8 +67,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
-| `audited_renaming` | 23 |
-| `unaudited` | 1982 |
+| `audited_renaming` | 24 |
+| `unaudited` | 1981 |
 
 | claim_type | count |
 |---|---:|
@@ -1625,6 +1625,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -20999,6 +21000,21 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **chain closes:** True — The cited retained no-go parent supplies the open selector boundary, and the cited decoration authority supplies only the finite-dimensional SU(3) channel fraction. The source note does not claim an absolute finite-N_c impossibility or an exhaustive no-go over future selectors.
 - **rationale:** The restricted packet cleanly supports the narrowed no-go boundary: F_adj = (N_c^2 - 1) / N_c^2 gives 8/9 at N_c = 3, and no selector deriving physical R_conn = 8/9 is supplied. Independent formula checks of the kappa-family, Fierz normalization, channel dimensions, and listed specializations found no coefficient or normalization defect. The no-go discipline gate passes because the note explicitly limits itself to current-packet absence, leaves future non-perturbative selector routes open, and avoids absolute no-go rhetoric.
 - **auditor confidence:** high
+
+### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`
+
+- **Note:** [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-block carrier identification of the Y_T product-RN signed record with the coordinate function on the Pauli joint spectral readout outcome set, plus the associated RN score/composition algebra; no Higgs or Yukawa closure.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-yt_lsp_signed_record_source_readout_support_note_2026-05-24-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The finite source-record space is defined to be the Pauli joint spectral outcome set, so the Y_T source-action signed source record epsilon_x is identified with the coordinate function of the LSP sharp-projective Pauli readout at site x.  _(class `F`)_
+- **chain closes:** False — The Pauli projector algebra, joint-coordinate recovery, RN score, and source-family composition checks close after the carrier is chosen. The missing derivational step is a retained theorem forcing the Y_T packet's primitive signed-record carrier to be the LSP Pauli readout carrier rather than identifying it by definition.
+- **rationale:** Issue: the load-bearing equality between the Y_T signed source record and the LSP Pauli spectral coordinate is obtained by defining/identifying the source-record carrier with the joint spectral outcome set. Why this blocks clean: the runner verifies the downstream Pauli and RN algebra, but it does not derive the carrier map from the cited authorities. Repair target: a retained source/readout bridge theorem constructing the Y_T packet's primitive signed record as the Pauli readout coordinate without definitional identification. Claim boundary until fixed: exact carrier-compatible RN/source-readout bookkeeping, not an independent source/readout derivation or Y_T closure.
+- **open / conditional deps cited:**
+  - `YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md`
+- **auditor confidence:** medium
 
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`
 

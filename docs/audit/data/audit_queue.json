@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 292,
-    "high": 288,
+    "high": 287,
     "leaf": 588,
     "medium": 490
   },
@@ -8462,32 +8462,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
-        "yt_source_action_support_packet_note_2026-05-22"
-      ],
-      "direct_in_degree": 14,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.17,
-      "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
-      "transitive_descendants": 35
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17786,7 +17760,7 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/dm_leptogenesis_exact_common.py",
@@ -17828,12 +17802,12 @@
         "scripts/frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19.py",
         "scripts/frontier_perron_frobenius_step2_nilpotent_chain_source_response_calculus_2026_04_19.py"
       ],
-      "load_bearing_score": 7.255,
+      "load_bearing_score": 7.781,
       "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py",
-      "transitive_descendants": 53
+      "transitive_descendants": 54
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49694,6 +49668,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 117,
-  "total_pending": 1658
+  "ready_count": 116,
+  "total_pending": 1657
 }

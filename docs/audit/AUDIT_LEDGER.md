@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 204 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 929 |
-| _retained_pending_chain_ | 4 |
+| **retained_bounded** | 931 |
+| _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1679 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
-| `audited_clean` | 1349 |
+| `audit_in_progress` | 4 |
+| `audited_clean` | 1350 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 22 |
@@ -86,7 +85,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 929 |
 | `leaf` | 1470 |
 
-- **Retained pending chain closure:** 4
+- **Retained pending chain closure:** 3
 - **Citation cycles detected:** 9
 
 ### Runner classification (static heuristic)
@@ -135,9 +134,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
+| `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -862,6 +860,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lh_template_retained_substrate_i3_independence_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -11907,6 +11906,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** By tensor distributivity, C² ⊗ (Sym² ⊕ Anti²) = (2,3) ⊕ (2,1), with dimensions 6 and 2, and no eigenvalue-ratio input is used in B1-B3.  _(class `A`)_
 - **chain closes:** True — The cited retained authorities supply the selected-axis surface, Sym²/Anti² split, gl(3)⊕gl(1) commutant with su(3) on the 3-block, and weak/color product structure. The claimed template and dimensions then follow by standard tensor-product distributivity, while the +1:(-3) traceless-U(1) ratio is only a separate corollary.
 - **rationale:** Both cited authorities in the restricted packet are marked retained, and no cited open or conditional dependency is needed for the audited scope. The runner source performs explicit finite-dimensional linear algebra checks for the tau split, embedded Gell-Mann su(3), Anti² singlet action, weak/color commutation, and block dimensions; it does not import PDG values, fitted inputs, or the contested I3 ratio for the template. The load-bearing step is a genuine algebraic closure over retained inputs rather than a definition or renaming.
+- **auditor confidence:** high
+
+### `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic audit of the forced projective eigenvalue ratio from the trace equation, the b = -1 convention-fixed charge formulas, and the odd/even reduced-denominator rule for positive integer n_color.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Solving 2 n_color * a + 2 * b = 0 gives b = -n_color * a, hence a:b = 1:(-n_color) on the nonzero branch; reducing (n_color + 1)/(2 n_color) and (1 - n_color)/(2 n_color) by gcd with 2 gives the parity denominator rule.  _(class `A`)_
+- **chain closes:** True — The conclusions follow from the stated homogeneous trace equation, the explicit nonzero-pair premise, and the named conventions b = -1 and Q = T_3 + a/2. Independently, the nonzero branch has a != 0 and b = -n_color a != 0, while gcd(n_color + 1, 2 n_color) and gcd(1 - n_color, 2 n_color) reduce to parity checks against 2.
+- **rationale:** The proof is elementary algebra over the hypotheses stated inside the note: a single linear equation fixes the ratio up to scale, the b = -1 convention fixes a = 1/n_color, and the denominator claim is exactly the parity of n_color. The runner source performs actual symbolic and exact-rational checks rather than merely printing constants; its finite parity sweep is supplemented by the note's general gcd argument. No cited authorities, external comparator values, or fitted inputs are used in the audited scope.
 - **auditor confidence:** high
 
 ### `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10`

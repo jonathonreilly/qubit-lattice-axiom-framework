@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/DISTANCE_LAW_PRESERVING_THIRD_FAMILY.py
-runner_sha256: 4ec9e317a69c116c085031000112936adb8b2bacc3b6dd80868034402496368d
+runner_sha256: a5131acf6198d1d1a3ee19b1585938c4b09ce5d1d5ee6215e9b5e69cb2cb3b70
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 214.22
+elapsed_sec: 186.05
 status: ok
 ----- stdout -----
 ================================================================================================
@@ -23,7 +23,16 @@ SAFE READ
   the high-drift/high-restore third family preserves both the signed-source package
   and the near-Newtonian distance tail on this direct test
 
-{'family': {'drift': 0.5, 'restore': 0.9}, 'seeds': [0, 1, 2, 3, 4, 5], 'distance_bs': [5, 6, 7, 8, 10], 'summary': {'zero': 0.0, 'plus': 0.00017643293128056028, 'minus': -0.00017643762578985143, 'neutral': 0.0, 'double': 0.0003528609988530753, 'exponent': 0.9999809599947574, 'tail_alpha': -1.1501244371653223, 'tail_r2': 0.9713658329628312, 'toward': 5, 'total': 5}, 'sign_ok': True, 'tail_ok': True}
+{'family': {'drift': 0.5, 'restore': 0.9}, 'seeds': [0, 1, 2, 3, 4, 5], 'distance_bs': [5, 6, 7, 8, 10], 'summary': {'zero': 0.0, 'plus': 0.00017643293128053483, 'minus': -0.0001764376257898586, 'neutral': 0.0, 'double': 0.00035286099885272577, 'exponent': 0.999980959993653, 'tail_alpha': -1.150124437165294, 'tail_r2': 0.9713658329618666, 'toward': 5, 'total': 5}, 'sign_ok': True, 'tail_ok': True}
+
+================================================================================================
+SOURCE BOUNDARY
+================================================================================================
+  [PASS] note declares boundary: **Type:** bounded_theorem
+  [PASS] note declares boundary: **Claim type:** bounded_theorem
+  [PASS] note declares boundary: bounded support on the high-drift/high-restore third family
+  [PASS] note declares boundary: This does **not** imply a universal theorem across all grown families.
+  [PASS] note declares boundary: This note only supplies the live missing Family 3
 
 ----- stderr -----
 

@@ -60,6 +60,14 @@ SIGN_SOURCE_Z = 3.0
 DISTANCE_BS = [5, 6, 7, 8, 10]
 SEEDS = [0, 1, 2, 3, 4, 5]
 TARGET_FAMILY = (0.50, 0.90)
+NOTE_PATH = Path(ROOT) / "docs/DISTANCE_LAW_PRESERVING_THIRD_FAMILY_NOTE.md"
+SOURCE_BOUNDARY_PHRASES = [
+    "**Type:** bounded_theorem",
+    "**Claim type:** bounded_theorem",
+    "bounded support on the high-drift/high-restore third family",
+    "This does **not** imply a universal theorem across all grown families.",
+    "This note only supplies the live missing Family 3",
+]
 
 
 @dataclass(frozen=True)
@@ -327,6 +335,20 @@ def _render_log(summary: RowSummary, drift: float, restore: float) -> str:
     return "\n".join(lines)
 
 
+def _check_source_boundary() -> bool:
+    print()
+    print("=" * 96)
+    print("SOURCE BOUNDARY")
+    print("=" * 96)
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    ok = True
+    for phrase in SOURCE_BOUNDARY_PHRASES:
+        hit = phrase in text
+        print(f"  [{'PASS' if hit else 'FAIL'}] note declares boundary: {phrase}")
+        ok = ok and hit
+    return ok
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--write-log", type=str, default="", help="optional path to write the rendered report")
@@ -354,7 +376,13 @@ def main() -> int:
         # Keep the structured payload available on stdout for ad hoc parsing.
         print()
         print(payload)
-    return 0
+
+    source_boundary_ok = _check_source_boundary()
+    claim_gate_ok = summary.sign_ok and summary.tail_ok
+    if not claim_gate_ok:
+        print()
+        print("CLAIM GATE: FAIL")
+    return 0 if claim_gate_ok and source_boundary_ok else 1
 
 
 if __name__ == "__main__":

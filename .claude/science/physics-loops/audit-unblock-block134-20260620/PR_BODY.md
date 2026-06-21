@@ -9,12 +9,12 @@ empty/no-runner path instead of becoming the literal string `"None"`.
 
 Refreshed packet-deps summary:
 
-- total claims in ledger: 3474
-- pending audits in queue: 1689
-- claims with runner path: 3242
-- claims with no runner declared: 232
+- total claims in ledger: 3445
+- pending audits in queue: 1535
+- claims with runner path: 3168
+- claims with no runner declared: 277
 - claims whose runner file is missing: 0
-- pending claims with helper imports: 390 / 1614
+- pending claims with helper imports: 355 / 1421
 
 ## Boundary
 
@@ -40,6 +40,5 @@ assembly support data.
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.PrecomputeAuditRunnersTest` -> 4 tests passed
 - `python3 scripts/precompute_audit_runners.py --pr-diff origin/physics-loop/audit-unblock-block133-20260620 --check-only --allow-non-main` -> `stale to refresh: 0`, `missing on disk: 0`
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 81 tests passed
-- `python3 docs/audit/scripts/audit_lint.py --strict` -> `OK: no errors` with notices only
-- `python3 -m py_compile scripts/precompute_audit_runners.py scripts/audit_packet_script_deps.py scripts/codex_audit_runner.py scripts/audit_runner_path_canonicalization_guard_2026_06_17.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK
+- `python3 -m py_compile scripts/precompute_audit_runners.py scripts/runner_cache.py scripts/audit_packet_script_deps.py scripts/codex_audit_runner.py scripts/audit_runner_path_canonicalization_guard_2026_06_17.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK
 - `git diff --check` -> OK

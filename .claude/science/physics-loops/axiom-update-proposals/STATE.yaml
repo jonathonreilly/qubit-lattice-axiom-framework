@@ -3,7 +3,7 @@ mode: axiom-update-proposal
 target_status: best-honest-status (no-new-axiom cracks preferred; else candidate axiom-update proposals)
 launch_date: "2026-06-20"
 last_checkpoint_utc: "2026-06-20T19:30:00Z"
-current_branch: physics-loop/axiom-update-proposals-block04-20260620
+current_branch: physics-loop/axiom-update-proposals-block05-20260620
 status_authority: independent audit lane / owner only
 hypothetical_axiom_status: "conditional on accepted new axiom; not retained on the actual current surface"
 
@@ -23,12 +23,15 @@ governance:
   approval_route: "docs/audit/AXIOM_MINIMALITY_POLICY.md section 6"
 
 current_status: >
-  Synthesis complete. Three candidate axiom-update proposals consolidated into
-  docs/AXIOM_UPDATE_PROPOSALS_CONSOLIDATED_2026-06-20.md, each in exactly one open
-  gate from MINIMAL_AXIOMS_2026-06-05.md. Five no-new-axiom cracks flagged
-  (higher value than proposals). 128 runner checks pass (0 fail) across four
-  runners; all reproduce deterministically. Pack (consolidated note + certificate
-  + STATE + GOAL) written. vocab_lint clean. No forbidden file touched.
+  block05 blind physicist-panel review complete. Four independent ten-physicist
+  panels judged the block04 minimized set {U, W, S, C3} COLD. Verdict:
+  UNANIMOUS NO for axiom or primitive (0 accept / 1 conditional / 39 reject;
+  0 axiom-grade, 0 primitive-grade across 40 reviewers). All four smuggle
+  content the current surface withholds; the block04 minimization claim does not
+  survive a cold panel. Each reclassified to a bounded derivation target / no-go
+  row. Review note + block05 certificate + STATE written. vocab_lint clean. No
+  forbidden file touched. (Prior: block04 minimized {U, W, S, C3}; blocks 01-03
+  proposed/walled the candidates.)
 
 candidate_set:
   - block_id: C1
@@ -226,11 +229,60 @@ block04:
     - logs/runner-cache/axiom_update_unified_measurement_axiom_sufficiency_2026_06_21.txt
     - logs/runner-cache/axiom_update_unified_axiom_minimality_independence_2026_06_21.txt
 
+block05:
+  scope: >
+    BLIND PHYSICIST-PANEL REVIEW of the block04 minimized candidate set
+    {U=MEAS-REC-READOUT, W=C2-WEIGHT, S=SPACING, C3=PIN-GAUGE-CONTENT}. Four
+    independent ten-physicist panels judged each addition COLD (unanchored):
+    each panel saw only the current framework surface (3 axioms + 3 approved
+    primitives + AXIOM_MINIMALITY_POLICY + PRIMITIVE_REGISTRY_CHECK) plus the
+    one proposed addition, NOT the campaign proposal / derivation notes.
+  outcome: >
+    UNANIMOUS NO admission as axiom or primitive. Across 40 reviewers: 0 accept,
+    1 conditional (one S vote), 39 reject; 0 votes for axiom grade and 0 for
+    primitive grade on any proposal. Every addition smuggles content the current
+    surface is written to withhold; the block04 "minimized / strictly-weaker /
+    policy-preferred" claim does NOT survive a cold panel (re-labeling, not
+    de-smuggling); "weak / weak-medium" strengths rejected as understated.
+  per_proposal:
+    - "U (MEAS-REC-READOUT): 0/0/10 reject. Smuggles arrow EXISTENCE / past hypothesis (oriented monotone einselecting semigroup, 10/10) + pointer basis = K/CPT readout context Record withholds (10/10) + SBS objectivity bridge (9/10) + registration-axis selector (8/10) + decoherence dynamics + metric time (8/10) + measurement-problem resolution (7/10) + 4-5 gates bundled (6/10). NOT axiom/primitive/Tier-A-as-unit -> unbundle to derivation targets; contentless residue already covered by Record + realized_state_primitive."
+    - "W (C2-WEIGHT): 0/0/10 reject. Smuggles Born-rule-class measure over central-sector readout (10/10) + empirical r=1/2, Q=2/3 back-selected (10/10) + Laplace/MaxEnt indifference prior (10/10) + occupancy/weighting Record+realized_state disclaim (~9/10) + dimensionless-dynamical selector (~9/10, already filed primitive-INELIGIBLE 2026-06-11) + partition-dependence (6/10). -> bounded Tier-A admission / derivation target."
+    - "S (SPACING): 0/1/9 reject (operative derivation_target 7/10). Smuggles time metric / clock-unit by fiat = dimensionless dynamical content (~9/10) + re-axiomatizes an existing DERIVATION TARGET (7/10) + absolute-scale double-count vs scale_reference (5/10) + empirical isotropic answer in '=1' (6/10) + redundancy with kinetic_isotropy c_t=c_s (4/10). -> derivation_target row; derive a_tau/a_s from no-diagonal clause; strip absolute-scale language and '=1'."
+    - "C3 (PIN-GAUGE-CONTENT): 0/0/10 reject. Smuggles gauging-by-fiat (10/10) + chirality against the K/CPT mirror (10/10) + SM particle content / neutral singlet (10/10) + reverse-engineered to anomaly chain (9/10) + forced Lorentzian signature (6/10). -> reject; keep only 'a traceless u(1) eigen-direction exists'; gauging + chiral completion + handedness each to separate bounded no-go targets; chirality must be DERIVED consistent with K/CPT."
+  tier_reclassification: >
+    None of {U, W, S, C3} is an axiom or a primitive. Each carries dynamical /
+    selector / measurement / empirical content the three named axioms and the
+    kinetic-isotropy admissibility boundary exclude. Each routes to a bounded
+    derivation target / no-go row (policy section 4), recorded as an unmade
+    science-level decision; audit lane / owner sole authority.
+  governance_recommendation: >
+    Do not adopt any of {U, W, S, C3} as an axiom or primitive. Record each as
+    an unmade science-level decision and unbundle its atoms to existing honest
+    homes: U -> arrow/past-hypothesis residual + registration-direction target +
+    einselection/SBS/pointer-basis bounded derivation targets; W -> bounded
+    Tier-A admission "IF equal-block THEN r=1/2, Q=2/3" (empirics quarantined);
+    S -> a_tau/a_s derivation row; C3 -> keep only the eigen-direction
+    existence, gauging/chirality/completion each a separate bounded no-go.
+  verification:
+    source: "four panel-chair aggregates (10 physicists each), synthesized"
+    new_runner_introduced: false   # governance review; reuses block04 reproduced runners (PASS=39/0, PASS=28/0)
+    block04_runners_reproduced_utc: "2026-06-21"
+    no_empirical_import: true
+    no_forbidden_file_touched: true   # docs/audit/data/ read-only; no axiom_premise_nodes.json / tier_a_admissions.json edit; no publication surface; no git ops
+    vocab_lint_clean: true
+  files_written:
+    - docs/AXIOM_PROPOSALS_PHYSICIST_PANEL_REVIEW_2026-06-20.md
+    - .claude/science/physics-loops/axiom-update-proposals/CLAIM_STATUS_CERTIFICATE_block05.md
+    - .claude/science/physics-loops/axiom-update-proposals/STATE.yaml
+
 next_exact_action: >
   Owner governance decision on the MINIMIZED candidate set
-  {MEAS-REC-READOUT, C2-WEIGHT, SPACING, PIN-GAUGE-CONTENT} (block04 unification):
-  prefer the unified operational axiom (one act folding C1 + C2-basis, strictly
-  weaker than C1+C2) plus the two isolated residual data (equal-block weight;
-  a_tau/a_s spacing), with C3 categorically separate and unchanged. All UNADOPTED;
+  {MEAS-REC-READOUT, C2-WEIGHT, SPACING, PIN-GAUGE-CONTENT}. block05 blind
+  physicist-panel review returns UNANIMOUS NO for axiom or primitive grade
+  (0 accept / 1 conditional / 39 reject across 40 reviewers; 0 axiom, 0
+  primitive votes); all four smuggle content the current surface withholds.
+  Recommended owner action: do NOT adopt any as axiom/primitive; record each as
+  an unmade science-level decision and route its atoms to bounded derivation
+  targets / no-go rows per AXIOM_MINIMALITY_POLICY section 4. All UNADOPTED;
   independent audit lane to set status.
-stop_condition: "block04 unification synthesis delivered (PARTIAL COLLAPSE; PASS=67 FAIL=0); minimal set {U, W, S, C3} recorded; awaiting owner governance decision / audit-lane review"
+stop_condition: "block05 blind physicist-panel review delivered (0 accept / 1 conditional / 39 reject; 0 axiom-grade, 0 primitive-grade); all four additions smuggle; reclassified to bounded derivation targets / no-go rows; awaiting owner governance decision / audit-lane review"

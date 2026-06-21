@@ -666,3 +666,25 @@ weakest-sufficient / non-redundant / independent / no-laundering target, the blo
 legs of the block01 cluster runners; deterministic; numpy + stdlib only; no
 empirical import. All UNADOPTED; no axiom retired; no audit verdict set; the owner /
 audit lane is the sole authority.
+
+## BLOCK05 PANEL VERDICT (additive, 2026-06-20) — supersedes the adoption framing above
+
+A blind 40-physicist panel (10 diverse lenses x 4 proposals), each given ONLY
+today's axioms + four approved primitives + one verbatim add, judged the set:
+**0 accept / 1 conditional / 39 reject; 0 axiom-grade votes, 0 primitive-grade
+votes.** None of {U, W, S, C3} is acceptable as an axiom or a primitive. Headline
+smuggling (>= panel-consensus): U imports the arrow's existence / past hypothesis
+(oriented monotone einselecting semigroup) + the K/CPT readout context Record
+withholds; W imports a Born-class measure + the empirical r=1/2, Q=2/3 it is
+back-selected to hit; S imports a time metric by fiat and re-axiomatizes a quantity
+the framework ALREADY files as a derivation target; C3 imports gauging-by-fiat +
+chirality against the K/CPT mirror + Standard-Model particle content. The block04
+"minimized / strictly-weaker / policy-preferred" framing does NOT survive the cold
+panel — it re-labels the bundling without removing the smuggled content.
+
+GOVERNANCE: do NOT adopt any of {U, W, S, C3} as axiom or primitive. Keep each as an
+UNMADE science decision and unbundle its atoms to derivation targets / bounded
+Tier-A admissions (with the empirical numbers quarantined), per AXIOM_MINIMALITY_POLICY
+sec 4. Full record + per-proposal smuggling tallies:
+docs/AXIOM_PROPOSALS_PHYSICIST_PANEL_REVIEW_2026-06-20.md. proposal_allowed=false;
+independent audit lane / owner sole authority.

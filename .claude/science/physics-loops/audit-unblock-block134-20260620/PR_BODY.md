@@ -7,6 +7,9 @@ canonicalization fixes.
 Also fixes null runner-path canonicalization: `runner_path: null` now stays an
 empty/no-runner path instead of becoming the literal string `"None"`.
 
+Also stabilizes the text report for tied helper-frequency rows by sorting ties
+by helper name, avoiding cache churn when the same dependency counts rerender.
+
 Refreshed packet-deps summary:
 
 - total claims in ledger: 3445
@@ -35,7 +38,8 @@ assembly support data.
 
 ## Verification
 
-- `python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_path_canonicalization_guard_2026_06_17.py,scripts/audit_packet_script_deps.py --force --push-mode none --allow-non-main` -> 2 OK
+- `python3 scripts/precompute_audit_runners.py --runners scripts/audit_packet_script_deps.py --force --push-mode none --allow-non-main` -> 1 OK
+- `python3 scripts/audit_packet_script_deps.py` -> 3445 total, 1535 pending, 3168 runner paths, 277 no-runner, 0 missing runners, 355/1421 pending helper-import claims
 - `python3 scripts/audit_runner_path_canonicalization_guard_2026_06_17.py` -> OK
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.PrecomputeAuditRunnersTest` -> 4 tests passed
 - `python3 scripts/precompute_audit_runners.py --pr-diff origin/physics-loop/audit-unblock-block133-20260620 --check-only --allow-non-main` -> `stale to refresh: 0`, `missing on disk: 0`

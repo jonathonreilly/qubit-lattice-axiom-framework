@@ -267,7 +267,7 @@ def main() -> int:
 
     # Most common helpers
     print("Top 20 most-imported helper scripts:")
-    for helper, count in sorted(helper_freq.items(), key=lambda kv: kv[1], reverse=True)[:20]:
+    for helper, count in sorted(helper_freq.items(), key=lambda kv: (-kv[1], kv[0]))[:20]:
         print(f"  {count:4d}x  scripts/{helper}.py")
     print()
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 212 |
-| **retained_bounded** | 970 |
+| **retained_bounded** | 971 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1597 |
+| unaudited | 1596 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1408 |
+| `audited_clean` | 1409 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1923 |
+| `unaudited` | 1922 |
 
 | claim_type | count |
 |---|---:|
@@ -1114,6 +1114,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_stable_kernel_count_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_expected_frequency_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_family_lift_certificate_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_supplied_kernel_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_transition_kernel_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_two_state_markov_stability_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15793,6 +15794,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** A supplied projective ladder and supplied stable predicate can be checked mechanically, but no family-lift authority is applied.  _(class `A`)_
 - **chain closes:** True — Direct inspection gives pi_1(C2)=C1, pi_2(C3)=C2, pi_3(C4)=C3; each word begins with 1, while densities are 1, 1/2, 2/3, 3/4 and are not constant. No additional family-lift theorem is needed for this bounded finite-interface claim because no unbounded lift is asserted.
 - **rationale:** The runner source hard-codes the supplied finite ladder and performs finite algebraic/data-consistency checks rather than a first-principles physics computation. An independent manual check of the displayed projections, predicate values, and density fractions agrees with the note and runner. The clean verdict is limited to the bounded compatibility witness; it does not certify any future family-lift rule or unbounded retained law.
+- **auditor confidence:** high
+
+### `post_record_supplied_kernel_selection_rule_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact bounded interface for selecting a unique candidate from a supplied finite kernel family using a supplied source, orientation/clock bridge, and rational selection rule; no Record-derived production kernel is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-post_record_supplied_kernel_selection_rule_interface_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the supplied finite candidate family and supplied rational scoring rule, k4 has score 0 while k3 has score 1/2, giving a unique selected candidate inside that supplied rule.  _(class `A`)_
+- **chain closes:** True — Within the supplied-input scope, the exact rational score calculation gives a unique minimum at k4, and the endpoint-only weakening ties k3 and k4 as claimed. The boundary claims are negative guardrails only: the packet does not derive a physical arrow, Born law, candidate family, or selection rule from Record.
+- **rationale:** The runner source performs the relevant finite Markov-law and quadratic-score calculations with Fraction arithmetic, and an independent hand check reproduces k4=0 and k3=1/2 for the informative rule. The target values and candidate family are supplied hypotheses, not hidden derivation outputs, and the audited scope is explicitly limited to the supplied-rule interface. The cross-note anchor checks in the runner are not needed for the load-bearing selection calculation and do not upgrade the result into a Record-derived dynamics claim.
 - **auditor confidence:** high
 
 ### `post_record_supplied_selection_rule_interface_2026-06-06`

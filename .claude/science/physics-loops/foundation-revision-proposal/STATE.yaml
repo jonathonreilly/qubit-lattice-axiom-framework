@@ -1,0 +1,57 @@
+loop_slug: foundation-revision-proposal
+campaign: foundation-revision-proposal-block01-20260620
+block: block01
+cycle: 1
+date: 2026-06-21
+branch: physics-loop/foundation-revision-proposal-block01-20260620
+goal: |
+  Draft CORRECTED FOUNDATION LANGUAGE as a governance PROPOSAL resolving the
+  clean first-principles panel's 10/10 needs_revision findings on
+  Lattice/Quantum/Record + primitives P1/P2/P3, apply the four adversarial
+  re-check fixes, and write the final proposal doc plus governance pack.
+  This is a PROPOSAL, not an adoption.
+target_status: proposal
+runtime_used: <1h
+cycles_completed: 1
+active_route: finalize (apply re-check fixes -> write final proposal)
+hard_residual_attacked: |
+  Foundation axiom/primitive mis-tiering: A3 Record welds a clean valuation to
+  an illegitimate K/CPT-orbit selector; P2 kinetic-isotropy is a renormalized
+  dynamical condition mis-registered as a primitive; dynamics + emergent time
+  axis presupposed but posited nowhere.
+files_touched:
+  - docs/FOUNDATION_REVISION_PROPOSAL_2026-06-20.md
+  - .claude/science/physics-loops/foundation-revision-proposal/DRAFT_revised_language.md
+  - .claude/science/physics-loops/foundation-revision-proposal/CLAIM_STATUS_CERTIFICATE_block01.md
+  - .claude/science/physics-loops/foundation-revision-proposal/STATE.yaml
+  - .claude/science/physics-loops/foundation-revision-proposal/GOAL.md
+canonical_surfaces_NOT_edited:
+  - docs/MINIMAL_AXIOMS_2026-06-05.md
+  - docs/audit/data/axiom_premise_nodes.json
+open_imports:
+  - "G-DYN/G-SECT/G-TIME/G-ARROW required open gates (flagged, undischarged)"
+  - "P2 route selection (admitted-input primary vs derived-target) — owner call"
+no_go_routes:
+  - "adding a dynamics axiom (forbidden by AXIOM_MINIMALITY_POLICY sec 1/4)"
+review_findings: |
+  Four adversarial re-checks all returned revision_sound_with_notes; all
+  demanded fixes applied (see CLAIM_STATUS_CERTIFICATE_block01.md sec 'Re-check
+  fixes applied').
+pr_status: pending owner/audit-lane decision
+next_exact_action: |
+  Owner governance decision: adopt / amend / reject. If adopt, the audit lane
+  edits MINIMAL_AXIOMS + axiom_premise_nodes.json + tier_a_admissions.json +
+  AXIOM_MINIMALITY_POLICY sec 6, then re-audits all hash-guard dependents.
+stop_condition: |
+  Final proposal doc + governance pack written; vocab_lint clean; canonical
+  surfaces verified untouched. Reached.
+status_fields:
+  actual_current_surface_status: proposal
+  target_claim_type: governance_proposal
+  conditional_surface_status: null
+  hypothetical_axiom_status: proposed
+  proposal_allowed: false
+  admitted_observation_status: null
+  audit_required_before_effective_retained: true
+  bare_retained_allowed: false
+  owner_and_audit_lane_sole_authority: true

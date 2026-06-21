@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1492 |
-| Retained-grade rows, including boxed decorations | 1409 |
+| Applied audit verdicts | 1493 |
+| Retained-grade rows, including boxed decorations | 1410 |
 | Retained positive theorems | 208 |
 | Retained no-go rows | 208 |
-| Retained bounded rows | 939 |
+| Retained bounded rows | 940 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1654 |
+| Unaudited rows | 1653 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 14 |
 | Audited renaming rows | 24 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1656 |
-| Ready rows | 116 |
+| Total pending rows | 1655 |
+| Ready rows | 115 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 286 |
+| High pending | 285 |
 | Medium pending | 490 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_LARGE_BETA_GAP_RUNG_SIX_BOUNDED_NOTE_2026-06-12.md) - high; unaudited
 - [`causal_field_reconciliation_note`](../../docs/CAUSAL_FIELD_RECONCILIATION_NOTE.md) - medium; unaudited
 - [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 - [`flavor_readout_gate_equals_carrier_identification_2026-05-31`](../../docs/FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) - medium; unaudited
 - [`ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`](../../docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`dm_live_constants_canonical_edge_certificate_note_2026-06-18`](../../docs/DM_LIVE_CONSTANTS_CANONICAL_EDGE_CERTIFICATE_NOTE_2026-06-18.md) - medium; unaudited
+- [`u1_fermion_number_conservation_theorem_note_2026-05-02`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -91,7 +91,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
 - `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
-- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
+- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
 - `key_terminology` - critical; 1127 descendants; score 46.640
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

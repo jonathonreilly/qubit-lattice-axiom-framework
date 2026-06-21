@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1510 |
-| Retained-grade rows, including boxed decorations | 1418 |
+| Applied audit verdicts | 1511 |
+| Retained-grade rows, including boxed decorations | 1419 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 945 |
+| Retained bounded rows | 946 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 36 |
-| Unaudited rows | 1636 |
+| Unaudited rows | 1635 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 18 |
 | Audited renaming rows | 27 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1638 |
-| Ready rows | 107 |
+| Total pending rows | 1637 |
+| Ready rows | 109 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 283 |
-| Medium pending | 475 |
+| Medium pending | 474 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25`](../../docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md) - medium; unaudited
+- [`gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`observable_principle_p1_p2_from_qubit_trace_note_2026-05-20`](../../docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md) - medium; unaudited
-- [`gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md) - medium; unaudited
 - [`lattice_3d_inverse_square_kernel_helper_note_2026-04-04`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md) - medium; unaudited
 - [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
+- [`charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30`](../../docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -90,9 +90,9 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
 - `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
-- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
+- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
-- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
+- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
-- `key_terminology` - critical; 1126 descendants; score 46.638
+- `key_terminology` - critical; 1127 descendants; score 46.640
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

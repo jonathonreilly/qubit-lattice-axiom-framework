@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_local_density_readout_bridge_2026_06_17.py
+runner_sha256: 4db5194aba602db0f54faaf77b0546f2f921f608c2fe8953cef17c3b80a1ac06
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+========================================================================
+Staggered-Dirac local density/readout bridge
+========================================================================
+
+=== One-site CAR density ===
+[PASS] single-mode CAR: a^2=0 and {a,a^dag}=I
+[PASS] rho = a^dag a is Hermitian
+[PASS] rho is a projection, rho^2=rho
+[PASS] rho has spectrum {0,1}  [spectrum=[0.0, 1.0]]
+[PASS] rho generates local U(1): [rho,a]=-a and [rho,a^dag]=a^dag
+
+=== Unique normalized onsite U(1) generator ===
+[PASS] linear commutator equations have a unique normalized solution  [solution=[{r00: 0, r01: 0, r10: 0, r11: 1}]]
+
+=== Finite-lattice CAR density ===
+[PASS] Jordan-Wigner operators satisfy finite CAR for all sites
+[PASS] local densities commute
+[PASS] each local density remains a projection
+[PASS] Q=sum_x rho_x generates global U(1) on all a_x, a_x^dag
+[PASS] number-conserving bilinears E_xy=a_x^dag a_y are U(1)-neutral
+[PASS] [E_xy,rho_p] equals the matrix-unit density commutator
+
+=== Source-status firewall ===
+[PASS] bridge note declares positive-theorem source status
+[PASS] bridge note proves density as local number projection
+[PASS] bridge note excludes full realization-gate claims
+[PASS] Noether note cites the density bridge
+[PASS] Noether note no longer keeps the realization gate as markdown dependency repair link
+[PASS] Noether note keeps KS carrier as supplied exhibit, not status promotion
+
+========================================================================
+TOTAL: PASS=18 FAIL=0
+========================================================================
+
+----- stderr -----
+

@@ -53470,11 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+      "to": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
     },
     {
       "from": "repo.front_door_status",
-      "to": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+      "to": "axiom_first_kms_condition_theorem_note_2026-05-01"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,8 +103180,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
+        "axiom_first_kms_condition_theorem_note_2026-05-01",
         "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
         "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
         "hw1_second_order_return_shape_theorem_note",
@@ -103190,7 +103190,7 @@
         "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a440f30fd0f948248827c7de4a717257e2f9a5171b49d8efeeab0e5375855f31",
+      "note_hash": "f51f4f53e0ebd4eb6481368ce7b7167f547efcccbb1b29fef441899f07caeb79",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

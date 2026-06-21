@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 300,
+    "critical": 299,
     "high": 302,
     "leaf": 588,
     "medium": 491
@@ -136,32 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-      "claim_scope": "Bounded local C_3 density only: the cyclic body-diagonal operator has order p=3, transverse weights (1,2) up to swap, and the stated local Lefschetz density is 2/9; global PL S^3 x R/ABSS applicability and physical selected-line readout are outside scope.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "s3_cap_uniqueness_note",
-        "pl_topology_infrastructure_textbook_import_note_2026-05-17",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.577,
-      "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
-      "transitive_descendants": 269
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -8738,15 +8712,15 @@
         "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
         "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.858,
+      "load_bearing_score": 12.454,
       "note_path": "docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py",
-      "transitive_descendants": 115
+      "transitive_descendants": 123
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -50303,6 +50277,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 126,
-  "total_pending": 1681
+  "ready_count": 125,
+  "total_pending": 1680
 }

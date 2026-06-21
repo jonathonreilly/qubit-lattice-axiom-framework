@@ -1,0 +1,25 @@
+Route-2 E-center current source-bank no-go verifier
+========================================================================
+PASS: note scopes the result as a bounded current-bank obstruction
+PASS: center-excess authority supplies the 1/6 support step
+PASS: bilinear primitive authority is definition-only under admitted inputs
+PASS: readout authority supplies the rho_E endpoint algebra
+PASS: ell_E note keeps the magnitude open after positivity/sign separation
+PASS: O_h shell leverage supplies kappa but not the covariance bridge
+PASS: Rconn typed bridge note keeps F_adj -> c_TE as the missing edge
+PASS: measured calibration is comparator evidence, not a derivation
+PASS: rho_E=0 and rho_E=21/4 have identical current source-bank invariants (bank=CurrentSourceBank(delta_step=Fraction(1, 6), q_t=Fraction(5, 6), s_te=Fraction(-2, 1), f_adj=Fraction(8, 9), kappa=Fraction(3, 2), kappa_squared=Fraction(9, 4), hom_e_t1_zero=True, positive_e_family=True, sign_correct=True))
+PASS: the same two rows have different q_E values (q_E(0)=1, q_E(target)=15/8)
+PASS: the same two rows have different center T/E ratios (c_TE(0)=-5/3, c_TE(target)=-8/9)
+PASS: both rows satisfy the positive sign-correct family
+PASS: sign-only information does not pin the magnitude
+PASS: F_adj alone is identical across the counter-witness pair
+PASS: kappa-squared alone is identical across the counter-witness pair
+PASS: adding c_TE=-F_adj would conditionally pin rho_E=21/4 (rho=21/4)
+PASS: adding q_E/q_T=kappa^2 would conditionally pin rho_E=21/4 (rho=21/4)
+PASS: adding q_E=15/8 would conditionally pin rho_E=21/4
+PASS: wrong color count falsifies an untyped F_adj recipe (N_c=2 recipe gives rho=22/3)
+PASS: a third positive sample shares the bank but gives a third E-center value
+PASS: note records the exact counter-witness pair
+========================================================================
+TOTAL: PASS=21, FAIL=0

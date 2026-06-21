@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1478 |
-| Retained-grade rows, including boxed decorations | 1402 |
+| Applied audit verdicts | 1479 |
+| Retained-grade rows, including boxed decorations | 1403 |
 | Retained positive theorems | 207 |
 | Retained no-go rows | 206 |
-| Retained bounded rows | 935 |
+| Retained bounded rows | 936 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 34 |
-| Unaudited rows | 1668 |
+| Unaudited rows | 1667 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 12 |
 | Audited renaming rows | 22 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1670 |
-| Ready rows | 125 |
+| Total pending rows | 1669 |
+| Ready rows | 124 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 299 |
+| High pending | 298 |
 | Medium pending | 491 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`koide_q_readout_factorization_theorem_2026-04-22`](../../docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md) - high; unaudited
 - [`dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17`](../../docs/DM_LEPTOGENESIS_PMNS_TRANSPORT_SELECTOR_FIREWALL_NOTE_2026-06-17.md) - high; unaudited
 - [`flavor_carrier_from_axioms_momentum_forced_2026-05-31`](../../docs/FLAVOR_CARRIER_FROM_AXIOMS_MOMENTUM_FORCED_2026-05-31.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
@@ -51,17 +50,18 @@ Next ready rows by queue order:
 - [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited
 - [`ckm_five_sixths_bridge_support_note`](../../docs/CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) - high; unaudited
 - [`yt_lsp_signed_record_source_readout_support_note_2026-05-24`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md) - high; unaudited
+- [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **432**.
+- Non-retained-grade cited rows in publication tables: **431**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| high | `unaudited` | 165 |
+| high | `unaudited` | 164 |
 | critical | `unaudited` | 163 |
 | medium | `unaudited` | 96 |
 | critical | `audited_conditional` | 2 |

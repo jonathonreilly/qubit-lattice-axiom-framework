@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 207 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 935 |
+| **retained_bounded** | 936 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1668 |
+| unaudited | 1667 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1360 |
+| `audited_clean` | 1361 |
 | `audited_conditional` | 12 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 22 |
-| `unaudited` | 1994 |
+| `unaudited` | 1993 |
 
 | claim_type | count |
 |---|---:|
@@ -793,6 +793,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `koide_q_dred_normalization_freedom_no_go_note_2026-06-15` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -11006,6 +11007,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The exact intersection is only the common scalar: onsite local functions cap End_C3(V) = span{I}; onsite source functions erase Z, while the retained central/projected commutant source grammar keeps it visible.  _(class `A`)_
 - **chain closes:** True — The scoped no-go closes as exact finite-dimensional algebra: C diag(a,b,c) C^(-1)=diag(a,b,c) forces a=b=c, while Z=P_plus-P_perp commutes with C, squares to I, is not diagonal in the site basis, and the onsite/commutant intersection is only span{I}. With the note's stated reduced-carrier readout, the admitted commutant value z=-1/3 gives Q=1, so the current commutant/projected source grammar does not force Q=2/3.
 - **rationale:** The load-bearing result is not a numerical Koide fit or a physical-source closure claim; it is the source-domain separation and no-go that the broader commutant/projected grammar leaves a non-onsite Z direction available. The cached runner completed successfully and verifies the finite C3 matrix algebra, the onsite/commutant intersection, the non-onsite nature of Z, and the counterdomain value z=-1/3 -> Q=1. The runner also includes documentation guardrails confirming the note explicitly rejects native retained Q closure and identifies the remaining source-domain theorem. Residual risk is confined to any later attempt to promote the onsite source domain to the physical undeformed charged-lepton source domain, which this scoped claim explicitly does not assert.
+- **auditor confidence:** high
+
+### `koide_q_readout_factorization_theorem_2026-04-22`
+
+- **Note:** [`KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md`](../../docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact bounded quotient and kernel-invariance statement for the defined Gamma_1/T_1 first-live readout map L: R^4 -> Diag_3(R).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_q_readout_factorization_theorem_2026-04-22-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The single-slot images give L(u,v,w,z)=diag(u,v,w), and any admitted first-live selector factors as S(W)=Phi(L(W)).  _(class `A`)_
+- **chain closes:** True — The finite operator calculation yields the four slot images e1, e2, e3, and 0, so the rank, kernel, image, and quotient follow by exact linear algebra. Given the declared first-live admissibility as factorization through the returned operator, invariance under e_z shifts follows from ker L = span(e_z).
+- **rationale:** The runner source performs a real finite-dimensional operator check for the single-slot images, not merely stdout-only pass reporting; the subsequent rank, kernel, fiber, covariance, and selector-invariance checks are exact symbolic algebra. The selector statement is clean only at the note's bounded scope: admitted first-live selectors are scalars on the returned operator, while physical charged-lepton selector identification is explicitly excluded. No cited authority is non-retained, and no external comparator or tuned numerical input is used.
 - **auditor confidence:** high
 
 ### `koide_q_source_domain_canonical_descent_theorem_note_2026-04-25`

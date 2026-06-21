@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1623 |
-| Retained-grade rows, including boxed decorations | 1498 |
+| Applied audit verdicts | 1624 |
+| Retained-grade rows, including boxed decorations | 1499 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
-| Retained bounded rows | 1005 |
+| Retained bounded rows | 1006 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 39 |
-| Unaudited rows | 1523 |
+| Unaudited rows | 1522 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 45 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1525 |
-| Ready rows | 33 |
+| Total pending rows | 1524 |
+| Ready rows | 32 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 509 |
+| Leaf pending | 508 |
 
 Next ready rows by queue order:
 
-- [`koide_reality_type_permitted_not_forced_note_2026-05-30`](../../docs/KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md) - medium; unaudited
 - [`koide_records_pointer_grounds_block_channel_note_2026-05-31`](../../docs/KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md) - medium; unaudited
 - [`koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25`](../../docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - medium; unaudited
 - [`koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3`](../../docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md) - medium; unaudited
 - [`lattice_total_momentum_conservation_theorem_note_2026-05-02`](../../docs/LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17`](../../docs/N5_SINGLE_GENERATOR_CLOCK_EXCHANGE_INVARIANCE_NARROW_NO_GO_NOTE_2026-06-17.md) - medium; unaudited
 - [`native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
-- [`native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md) - leaf; unaudited
+- [`native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_TWO_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
+- [`pauli_exclusion_from_spin_statistics_theorem_note_2026-05-02`](../../docs/PAULI_EXCLUSION_FROM_SPIN_STATISTICS_THEOREM_NOTE_2026-05-02.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 980 |
-| Leaf nodes | 1554 |
+| Medium nodes | 981 |
+| Leaf nodes | 1553 |
 
 Top load-bearing rows by graph score:
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1005 |
+| **retained_bounded** | 1006 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1523 |
+| unaudited | 1522 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1455 |
+| `audited_clean` | 1456 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1849 |
+| `unaudited` | 1848 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 937 |
-| `leaf` | 1462 |
+| `medium` | 938 |
+| `leaf` | 1461 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -866,6 +866,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_readout_channel_map_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_readout_lane_demarcation_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_real_rep_block_count_permitted_not_forced_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_reality_type_permitted_not_forced_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_record_sign_agnostic_eta_refuted_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -12414,6 +12415,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The Hilbert-Schmidt Gram witness diag(3,6,6) realizes the (1,2) weighting while remaining real, positive-definite, C_3-invariant, and Theta-invariant, so the listed constraints do not forbid (1,2).  _(class `A`)_
 - **chain closes:** True — A single admissible (1,2) witness satisfying every listed retained constraint is enough to refute the proposed forcing route. The runner source actually computes the invariant Gram cone, Theta residuals, Hermitian eigenvalue form, Q compatibility, determinant weighting, and witness invariance rather than merely printing constants.
 - **rationale:** All cited authorities are retained-grade under the rubric, and no open or support-status dependency is used load-bearing. The load-bearing step is a genuine algebraic counterexample over the stated finite matrices, not a definition, renaming, fitted numerical match, or external comparator. The no-go is narrowly scoped and leaves the SO(2)/U(1)_b quotient/readout-factorization handle open, so the negative conclusion does not overreach the tested route.
+- **auditor confidence:** high
+
+### `koide_reality_type_permitted_not_forced_note_2026-05-30`
+
+- **Note:** [`KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md`](../../docs/KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite C3/Jcs linear-algebra audit that real anti-Hermitian D permits both Pfaffian/per-block and determinant/per-dimension countings and therefore does not by itself force the per-block Koide reading.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_reality_type_permitted_not_forced_note_2026-05-30-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A single real anti-Hermitian D on an explicitly complex space supports both the real antisymmetric Pfaffian bilinear and the Hermitian determinant bilinear, so real-matrix reality does not select the field-reality/Wick face.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade inputs and the runner establish the finite algebra: Jcs is real anti-Hermitian, supplies both bilinear structures, and the Pfaffian/determinant degrees differ. The missing Wick-face/measure selector is explicitly outside the claim rather than used to prove it.
+- **rationale:** The load-bearing step is a genuine finite algebraic counterexample to the overclaim that real D alone selects the real/Pfaffian face. The runner source computes the relevant matrix, commutator, Pfaffian-degree, determinant-degree, and Q(r) checks rather than merely printing constants, and no helper imports are missing. The no-go boundary is narrow: it says only that D-reality is necessary-not-sufficient, while explicitly leaving a future Berry/WZ or matter-action selector open.
 - **auditor confidence:** high
 
 ### `koide_record_sign_agnostic_eta_refuted_2026-06-04`

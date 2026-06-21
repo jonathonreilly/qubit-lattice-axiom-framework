@@ -43,7 +43,8 @@ verification:
   git_diff_check: pass
   overclaim_scan: "pass; only negative-boundary 'does not derive/close' firewall hits"
 pr:
-  number: pending
-  url: pending
-next_exact_action: "Run focused verification, commit, push branch, open PR, then pivot to a nonseparable degree-2 primitive or finite-frame dual-leg derivation attempt."
+  number: 4543
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4543"
+  state: OPEN
+next_exact_action: "Pivot to a nonseparable degree-2 primitive or finite-frame dual-leg derivation attempt."
 stop_condition: "Do not stop campaign merely because this route is a no-go; continue to next ranked science opportunity while runtime remains."

@@ -79,6 +79,43 @@ def format_card(points: list[PredictionPoint]) -> str:
     return "\n".join(lines)
 
 
+def verify_points(points: list[PredictionPoint]) -> int:
+    """Check the bounded toy-law properties printed by the card."""
+    by_delay: dict[float, list[PredictionPoint]] = {}
+    by_frequency: dict[float, list[PredictionPoint]] = {}
+    for p in points:
+        by_delay.setdefault(p.delay_s, []).append(p)
+        by_frequency.setdefault(p.frequency_hz, []).append(p)
+
+    checks = 0
+    for p in points:
+        assert abs(p.phase_rad - math.atan(p.omega_tau)) <= 1e-15
+        checks += 1
+        if p.delay_s == 0.0:
+            assert abs(p.phase_rad) <= 1e-15
+            checks += 1
+        else:
+            assert p.phase_rad > 0.0
+            checks += 1
+
+    for delay_s, delay_points in by_delay.items():
+        ordered = sorted(delay_points, key=lambda p: p.frequency_hz)
+        for prev, cur in zip(ordered, ordered[1:]):
+            if delay_s == 0.0:
+                assert abs(cur.phase_rad - prev.phase_rad) <= 1e-15
+            else:
+                assert cur.phase_rad > prev.phase_rad
+            checks += 1
+
+    for frequency_hz, freq_points in by_frequency.items():
+        ordered = sorted(freq_points, key=lambda p: p.delay_s)
+        for prev, cur in zip(ordered, ordered[1:]):
+            assert cur.phase_rad >= prev.phase_rad
+            checks += 1
+
+    return checks
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Print a bounded diamond/NV phase-sensitive prediction card."
@@ -103,7 +140,10 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     points = build_points(args.freq_hz, [d * 1e-6 for d in args.delay_us])
+    checks = verify_points(points)
     print(format_card(points))
+    print("")
+    print(f"ASSERTIONS: PASS={checks} FAIL=0")
     return 0
 
 

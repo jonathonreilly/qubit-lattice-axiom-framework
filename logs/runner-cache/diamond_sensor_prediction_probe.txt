@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/diamond_sensor_prediction_probe.py
-runner_sha256: 01e733652a8dede3506103ec0b4c973db781e6ed7bd200f835a9ac015990741a
+runner_sha256: cd886b88b8c5109278fe345f60c1c56b67843afb0ca22958121cf4ba1a66835b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Diamond/NV phase-sensitive prediction card
@@ -37,6 +37,8 @@ Toy scaling law:
 | 100 | 1.000 | 6.283e-04 | 3.600e-02 |
 | 1000 | 1.000 | 6.283e-03 | 3.600e-01 |
 | 10000 | 1.000 | 6.283e-02 | 3.595e+00 |
+
+ASSERTIONS: PASS=30 FAIL=0
 
 ----- stderr -----
 

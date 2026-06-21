@@ -1,0 +1,23 @@
+loop: audit-unblock-block141-20260621
+branch: physics-loop/audit-unblock-block141-20260621
+base: origin/main
+base_commit: 9044f7c69194e99f419932b8f74f22f55101af3a
+mode: campaign
+block: 141
+status: ready_for_pr
+actual_current_surface_status: open
+trace_class: methodology
+reachability_to_target: supports
+audit_worker_run: false
+apply_audit_run: false
+main_push: false
+review_loop_status: deferred_to_reviewer_lane_per_user_instruction
+target_claim_id: diamond_sensor_prediction_note
+runner_registered: scripts/diamond_sensor_prediction_probe.py
+runner_result: ASSERTIONS PASS=30 FAIL=0
+movement:
+  - adds parser-facing Runner metadata to the high-priority unaudited Diamond sensor prediction note
+  - upgrades the existing prediction probe with deterministic toy-law assertions
+  - refreshes the runner cache for the changed probe
+  - regenerates graph, ledger, audit queue, ledger markdown, and runner classification
+next_exact_action: open PR for block141, then continue with another fresh source-side unblock target

@@ -1,76 +1,139 @@
 #!/usr/bin/env python3
-"""Shapiro unique discriminator v2.
+"""Bounded Shapiro unique-discriminator boundary verifier.
 
-This is a narrow report generator for the best remaining boundary in the
-Shapiro-style causal-phase lane. The detector-line phase lag is real and
-portable, but a static cone-shape proxy reproduces the same curve exactly.
+This runner reads the SHA-pinned `shapiro_static_discriminator` cache instead
+of hand-entering the phase curves. It verifies the narrow boundary result: the
+detector-line proxy phase is reproduced by a static cone-shape lookalike, while
+static scheduling remains separated. This is not a retained physical Shapiro
+package and not a unique causal-propagation discriminator.
 """
 
 from __future__ import annotations
 
+import hashlib
 import math
+import re
+from pathlib import Path
 
 
-C_VALUES = [2.0, 1.0, 0.5, 0.25]
-
-# Mean curves lifted from the retained Shapiro static-discriminator result.
-CAUSAL_CURVE = [0.0372, 0.0446, 0.0569, 0.0662]
-STATIC_CONE_CURVE = [0.0372, 0.0446, 0.0569, 0.0662]
-STATIC_SCHED_CURVE = [0.0446, 0.0445, 0.0446, 0.0450]
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "SHAPIRO_UNIQUE_DISCRIMINATOR_V2_NOTE.md"
+STATIC_RUNNER = ROOT / "scripts" / "shapiro_static_discriminator.py"
+STATIC_CACHE = ROOT / "logs" / "runner-cache" / "shapiro_static_discriminator.txt"
 
 
-def rmse(left: list[float], right: list[float]) -> float:
+def _sha(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _extract_header_value(cache_text: str, key: str) -> str | None:
+    m = re.search(rf"^{re.escape(key)}:\s*(.+)$", cache_text, re.MULTILINE)
+    return m.group(1).strip() if m else None
+
+
+def _extract_curve(cache_text: str, label: str) -> list[float]:
+    m = re.search(rf"^\s*{re.escape(label)}:\s*(.+)$", cache_text, re.MULTILINE)
+    if not m:
+        raise AssertionError(f"missing curve line: {label}")
+    return [float(x) for x in re.findall(r"[+-]\d+\.\d+", m.group(1))]
+
+
+def _rmse(left: list[float], right: list[float]) -> float:
     return math.sqrt(sum((a - b) ** 2 for a, b in zip(left, right)) / len(left))
 
 
-def main() -> None:
+def _checks(cache_text: str, note_text: str) -> tuple[list[tuple[str, bool]], dict[str, list[float] | float]]:
+    causal = _extract_curve(cache_text, "causal mean curve")
+    static_cone = _extract_curve(cache_text, "static cone curve")
+    static_schedule = _extract_curve(cache_text, "static schedule curve")
+    cone_rmse = _rmse(causal, static_cone)
+    schedule_rmse = _rmse(causal, static_schedule)
+    header_sha = _extract_header_value(cache_text, "runner_sha256")
+
+    checks = [
+        ("static-discriminator cache exits cleanly", _extract_header_value(cache_text, "exit_code") == "0" and _extract_header_value(cache_text, "status") == "ok"),
+        ("static-discriminator cache is SHA-fresh", header_sha == _sha(STATIC_RUNNER)),
+        ("causal and static-cone curves match to displayed precision", cone_rmse <= 5e-5),
+        ("static scheduling remains separated from causal curve", schedule_rmse >= 5e-3),
+        (
+            "source note is bounded and does not use retained-chain wording",
+            "**Claim type:** no_go" in note_text
+            and "bounded no-unique-discriminator boundary verifier" in note_text
+            and "retained Shapiro chain" not in note_text
+            and "retained c-dependent" not in note_text
+            and "proposed_retained" not in note_text,
+        ),
+        (
+            "source note has no failed archive bridge dependency",
+            "archive_unlanded" not in note_text
+            and "SHAPIRO_COMPLEX_INTERACTION_NOTE" not in note_text
+            and "SHAPIRO_DIAMOND_BRIDGE_NOTE" not in note_text,
+        ),
+        (
+            "source note preserves the no-unique-causality boundary",
+            "not a unique causal-propagation discriminator" in note_text
+            and "static cone-shape" in note_text,
+        ),
+    ]
+    payload: dict[str, list[float] | float] = {
+        "causal": causal,
+        "static_cone": static_cone,
+        "static_schedule": static_schedule,
+        "cone_rmse": cone_rmse,
+        "schedule_rmse": schedule_rmse,
+    }
+    return checks, payload
+
+
+def _fmt_curve(values: list[float]) -> str:
+    return " ".join(f"{v:+10.4f}" for v in values)
+
+
+def main() -> int:
+    cache_text = STATIC_CACHE.read_text(encoding="utf-8")
+    note_text = NOTE.read_text(encoding="utf-8")
+    checks, payload = _checks(cache_text, note_text)
+    causal = payload["causal"]
+    static_cone = payload["static_cone"]
+    static_schedule = payload["static_schedule"]
+    assert isinstance(causal, list)
+    assert isinstance(static_cone, list)
+    assert isinstance(static_schedule, list)
+    cone_rmse = float(payload["cone_rmse"])
+    schedule_rmse = float(payload["schedule_rmse"])
+    ok = all(flag for _label, flag in checks)
+
     print("=" * 88)
-    print("SHAPIRO UNIQUE DISCRIMINATOR V2")
-    print("  strongest remaining boundary for the retained c-dependent phase lag")
+    print("SHAPIRO UNIQUE DISCRIMINATOR V2: BOUNDED BOUNDARY VERIFIER")
+    print("  cache-backed check against the static-cone no-go boundary")
     print("=" * 88)
     print()
-    print("Question:")
-    print("  Can anything stronger than the detector phase lag alone separate the")
-    print("  causal propagating-field lane from static lookalikes?")
-    print()
-    print("Exact controls:")
-    print("  - exact zero control stays exact")
-    print("  - the phase-lag curve is portable across the retained grown families")
+    print("Source cache:")
+    print("  logs/runner-cache/shapiro_static_discriminator.txt")
     print()
     print(f"{'mode':>20s} {'c=2.0':>10s} {'c=1.0':>10s} {'c=0.5':>10s} {'c=0.25':>10s}")
     print("-" * 72)
-    print(
-        f"{'causal dynamic cone':>20s} "
-        f"{CAUSAL_CURVE[0]:+10.4f} {CAUSAL_CURVE[1]:+10.4f} "
-        f"{CAUSAL_CURVE[2]:+10.4f} {CAUSAL_CURVE[3]:+10.4f}"
-    )
-    print(
-        f"{'static cone shape':>20s} "
-        f"{STATIC_CONE_CURVE[0]:+10.4f} {STATIC_CONE_CURVE[1]:+10.4f} "
-        f"{STATIC_CONE_CURVE[2]:+10.4f} {STATIC_CONE_CURVE[3]:+10.4f}"
-    )
-    print(
-        f"{'static scheduling':>20s} "
-        f"{STATIC_SCHED_CURVE[0]:+10.4f} {STATIC_SCHED_CURVE[1]:+10.4f} "
-        f"{STATIC_SCHED_CURVE[2]:+10.4f} {STATIC_SCHED_CURVE[3]:+10.4f}"
-    )
+    print(f"{'causal dynamic cone':>20s} {_fmt_curve(causal)}")
+    print(f"{'static cone shape':>20s} {_fmt_curve(static_cone)}")
+    print(f"{'static scheduling':>20s} {_fmt_curve(static_schedule)}")
     print()
     print("Boundary diagnostics:")
-    print(f"  causal vs static-cone RMSE: {rmse(CAUSAL_CURVE, STATIC_CONE_CURVE):.4f}")
-    print(f"  causal vs static-schedule RMSE: {rmse(CAUSAL_CURVE, STATIC_SCHED_CURVE):.4f}")
+    print(f"  causal vs static-cone RMSE: {cone_rmse:.4f}")
+    print(f"  causal vs static-schedule RMSE: {schedule_rmse:.4f}")
+    print()
+    print("RUNNER CHECKS")
+    for label, flag in checks:
+        print(f"  [{'PASS' if flag else 'FAIL'}] {label}")
     print()
     print("Safe read:")
-    print("  - the detector-line phase lag is a real, portable observable")
-    print("  - a static cone-shape proxy reproduces the same curve exactly")
-    print("  - static scheduling does not reproduce the curve and stays near-flat")
-    print("  - no stronger discriminator appeared in the retained data")
+    print("  - the detector-line proxy phase is not a unique causal-propagation discriminator")
+    print("  - the static cone-shape proxy reproduces the displayed curve")
+    print("  - static scheduling remains separated and near-flat")
+    print("  - a stricter discriminator needs a second observable beyond this phase line")
     print()
-    print("Conclusion:")
-    print("  The best remaining boundary is that the Shapiro-style phase lag is")
-    print("  portable and proxy-level, but not unique against static field-shape")
-    print("  effects. A unique causal-propagation discriminator will need another")
-    print("  observable beyond the detector-line phase lag alone.")
+    print(f"ASSERTIONS: {'PASS' if ok else 'FAIL'}")
+    return 0 if ok else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

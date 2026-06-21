@@ -69388,9 +69388,9 @@
         "dm_neutrino_source_surface_carrier_side_conclusion_note_2026-04-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b5247be73f51b988aedf0603f71802fb78af3249bd53aec42562577b39c9c0c1",
+      "note_hash": "712ebd099bcff101d30861c9da47ab16fecf814dc7b9bbb58d9c52c3ec1932ca",
       "path": "docs/DM_SELECTOR_BRANCH_CONCLUSION_NOTE_2026-04-17.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_dm_selector_branch_conclusion.py",
       "title": "DM Selector Branch Conclusion"
     },
     "dm_selector_first_shoulder_exit_threshold_support_criticality_bump_hygiene_companion_note_2026-06-04": {
@@ -103190,7 +103190,7 @@
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3fa5b57077b036ce80a7c1fa54de2c70d305496d0146b6db38c379913e1d8470",
+      "note_hash": "d6ffa7a20d6d6ad2dc40b78e287bf134de19628cfb80c50d3b4c287573914d7e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118607,6 +118607,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

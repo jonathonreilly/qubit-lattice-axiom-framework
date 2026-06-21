@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_selector_branch_conclusion.py
+runner_sha256: c1d113407e7c018cacec37d62b5cef4e16a5ecd6fb7655929930979b76d726d0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.80
+status: ok
+----- stdout -----
+========================================================================================
+DM SELECTOR BRANCH CONCLUSION
+========================================================================================
+
+Replaying accepted authority spine:
+  [PASS] The representation runner exits successfully  (returncode=0)
+  [PASS] The representation runner emits its expected authority result  (SUMMARY: PASS=)
+  [PASS] The observable obstruction runner exits successfully  (returncode=0)
+  [PASS] The observable obstruction runner emits its expected authority result  (RESULT: obstruction at observable-grammar exhaustion / intrinsic-family descent)
+  [PASS] The global dominance obstruction runner exits successfully  (returncode=0)
+  [PASS] The global dominance obstruction runner emits its expected authority result  (RESULT: obstruction at exact-carrier completeness / global dominance)
+  [PASS] The branch conclusion note records the final verdict as obstruction
+  [PASS] The branch conclusion note names both exact blockers explicitly
+  [PASS] The branch conclusion note records the sharper compact-branch carrier picture on split-2
+  [PASS] The branch conclusion note records the one-dimensional split-2 edge interval and preferred slack margin
+  [PASS] The branch conclusion note records that tested broad-window pressure now collapses entirely to split-2 edge data
+  [PASS] The branch conclusion note records the split-2 transport-lane incompatibility sharpening
+  [PASS] The branch conclusion note records the broader split-2 low-slack incompatibility sharpening
+  [PASS] The branch conclusion note records the upper-m ridge sharpening of the residual carrier pressure
+  [PASS] The branch conclusion note records the two explicit split-2 upper-face extremals
+  [PASS] The branch conclusion note records that the carrier side is now exhausted to two explicit local upper-face neighborhoods
+  [PASS] The branch conclusion note records the selector-side threshold-law nonrealization sharpening
+
+========================================================================================
+BRANCH RESULT
+========================================================================================
+  BRANCH RESULT: obstruction
+  Exact blockers:
+    - observable-grammar exhaustion / intrinsic-family descent
+    - exact-carrier completeness / global dominance
+
+SUMMARY: PASS=17 FAIL=0
+
+----- stderr -----
+

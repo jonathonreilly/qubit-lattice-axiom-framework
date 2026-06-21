@@ -1,0 +1,47 @@
+slug: audit-unblock-block143-20260621
+mode: campaign
+date: 2026-06-21
+branch: physics-loop/audit-unblock-block143-20260621
+base_ref: origin/main
+base_oid: 41cde8d931a092b7aaeb6a42965b2a970f36ed28
+target_claim_id: dm_selector_branch_conclusion_note_2026-04-17
+target_note: docs/DM_SELECTOR_BRANCH_CONCLUSION_NOTE_2026-04-17.md
+runner: scripts/frontier_dm_selector_branch_conclusion.py
+runner_cache: logs/runner-cache/frontier_dm_selector_branch_conclusion.txt
+actual_current_surface_status: open
+pipeline_audit_status: unaudited
+pipeline_effective_status: unaudited
+claim_type: bounded_theorem
+trace_class: methodology
+reachability_to_target: supports
+proposal_allowed: false
+audit_required_before_effective_retained: true
+review_loop_disposition: deferred_to_review_lane
+lock_mode: degraded_branch_local
+files_touched:
+  - docs/DM_SELECTOR_BRANCH_CONCLUSION_NOTE_2026-04-17.md
+  - logs/runner-cache/frontier_dm_selector_branch_conclusion.txt
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/runner_classification.json
+checks:
+  - command: python3 scripts/frontier_dm_selector_branch_conclusion.py
+    result: "PASS: SUMMARY: PASS=17 FAIL=0"
+  - command: bash docs/audit/scripts/run_pipeline.sh
+    result: "PASS: completed with no invalidations; strict lint step OK"
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_dm_selector_branch_conclusion.py --push-mode none --allow-non-main
+    result: "PASS: refreshed frontier_dm_selector_branch_conclusion cache"
+  - command: python3 scripts/precompute_audit_runners.py --runners scripts/frontier_dm_selector_branch_conclusion.py --check-only --push-mode none --allow-non-main
+    result: "PASS: explicit cache fresh"
+  - command: python3 docs/audit/scripts/audit_lint.py --strict
+    result: "PASS: 3474 rows checked; 139 notices; no errors"
+  - command: python3 -m py_compile scripts/frontier_dm_selector_branch_conclusion.py docs/audit/scripts/build_citation_graph.py docs/audit/scripts/seed_audit_ledger.py docs/audit/scripts/classify_runner_passes.py
+    result: "PASS"
+  - command: python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --push-mode none --allow-non-main
+    result: "PASS: all relevant caches fresh"
+  - command: git diff --check
+    result: "PASS"
+next_exact_action: "Commit, push, open the review PR, then pivot to the next unaudited target with an existing verifier."
+

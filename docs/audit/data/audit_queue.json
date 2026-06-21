@@ -24490,7 +24490,7 @@
       "note_path": "docs/DM_SELECTOR_BRANCH_CONCLUSION_NOTE_2026-04-17.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/frontier_dm_selector_branch_conclusion.py",
       "transitive_descendants": 48
     },
     {

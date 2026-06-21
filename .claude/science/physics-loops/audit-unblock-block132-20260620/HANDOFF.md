@@ -9,7 +9,7 @@ Before cleanup, guarded dry run reported 8 candidates. After cleanup, guarded
 dry run reports:
 
 - `Would delete 0 orphan cache file(s)`
-- `fresh: 3120`
+- `fresh: 3123`
 - `stale to refresh: 0`
 - `missing on disk: 0`
 
@@ -39,5 +39,9 @@ ledger rows, or assert retained status.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked PR against
-`physics-loop/audit-unblock-block131-20260620`.
+Monitor PR #4502 audit-lane check, then continue to the next audit-unblock
+target.
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4502

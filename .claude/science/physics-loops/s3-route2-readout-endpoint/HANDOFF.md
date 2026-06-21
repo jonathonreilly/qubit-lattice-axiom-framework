@@ -23,7 +23,13 @@ select the endpoint coefficient.
 
 ## PR
 
-Pending.
+PR #4544: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4544
+
+Identity-only check:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block15-20260621","number":4544,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block15 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4544"}
+```
 
 ## Verification
 

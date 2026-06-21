@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1677
+**Total pending:** 1676
 **Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 127
 
 By criticality:
-- `critical`: 296
+- `critical`: 295
 - `high`: 302
 - `medium`: 491
 - `leaf`: 588
@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | audit_in_progress | critical | 252 | 9.98 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py` |
+| 1 | `hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18` | bounded_theorem | unaudited | critical | 251 | 9.48 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py` |
 | 2 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | unaudited | critical | 101 | 19.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_exact_readout_map.py` |
 | 3 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | unaudited | critical | 1119 | 10.63 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |
 | 4 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1118 | 12.13 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |

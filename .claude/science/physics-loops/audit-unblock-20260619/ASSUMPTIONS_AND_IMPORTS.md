@@ -10,7 +10,8 @@
 
 ## Imports Exposed
 
-The target formal identity row has no ledger dependencies after pipeline:
+The current-main audit queue records the target formal identity row with no
+ledger dependencies:
 
 ```text
 deps=[]

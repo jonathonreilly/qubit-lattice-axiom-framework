@@ -11,9 +11,9 @@
 ## Verification Artifacts
 
 - `logs/runner-cache/frontier_koide_q_delta_formal_ratio_repair.txt`
-- `logs/runner-cache/audit_packet_script_deps.txt`
 
-## Generated Artifacts
+## Excluded Generated Artifacts
 
-Pipeline regeneration updates audit ledger/queue/data, publication
-effective-status views, and the generated front-door status snapshot.
+After the current-main rebase, generated audit ledger/queue/data,
+publication effective-status views, packet-dependency outputs, and
+`docs/repo/FRONT_DOOR_STATUS.md` are excluded from this PR.

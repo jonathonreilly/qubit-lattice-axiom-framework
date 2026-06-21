@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_aps_block_by_block_forcing_note_2026-04-21"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_aps_block_by_block_forcing_note_2026-04-21",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
         "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
         "quark_route2_exact_readout_map_note_2026-04-19",
         "koide_q_readout_factorization_theorem_2026-04-22",
         "dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17",
-        "flavor_carrier_from_axioms_momentum_forced_2026-05-31"
+        "flavor_carrier_from_axioms_momentum_forced_2026-05-31",
+        "koide_q23_k0_real_block_equivalence_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8244b9c5b20c248e9e7bf492cd25f56a700f666bdb00bccaacb70f55fe1f7b00",
+      "note_hash": "057d0ee30acc89c4060f2828b361b599a6df7ed9b63373ecc71f7899ac9159f9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

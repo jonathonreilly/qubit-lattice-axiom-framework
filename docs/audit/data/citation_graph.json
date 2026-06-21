@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
+      "to": "hierarchy_formula_honest_status_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
+        "hierarchy_formula_honest_status_note_2026-05-10",
         "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
         "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
         "quark_route2_exact_readout_map_note_2026-04-19",
@@ -103190,7 +103190,7 @@
         "koide_q23_k0_real_block_equivalence_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "31b802b73e811b9c5c1e9ec72d7c0c5a69692129f0137d0f6e6350cde130634e",
+      "note_hash": "8b5f2507cc3a0c23b207a6d3191f3ad20c67fd54e20085530df3305115ce1665",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

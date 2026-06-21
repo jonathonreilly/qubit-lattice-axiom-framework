@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | unaudited | critical | 267 | 17.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
+| 1 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | audit_in_progress | critical | 268 | 18.07 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_formula_honest_status.py` |
 | 2 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | unaudited | critical | 260 | 14.53 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py` |
 | 3 | `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | unaudited | critical | 252 | 9.98 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py` |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | unaudited | critical | 101 | 19.17 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_quark_route2_exact_readout_map.py` |

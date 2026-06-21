@@ -22,7 +22,13 @@ of `rho_E`; the slice backbone is outside the ambiguity.
 
 ## PR
 
-Pending.
+PR #4545: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4545
+
+Identity-only check:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block16-20260621","number":4545,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block16 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4545"}
+```
 
 ## Verification
 

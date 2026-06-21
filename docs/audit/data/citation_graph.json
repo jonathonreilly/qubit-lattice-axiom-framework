@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "accessible_prediction_note"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02",
         "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
         "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
         "sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15",
         "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17",
         "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
         "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
-        "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31"
+        "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
+        "accessible_prediction_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "98eec3da2f1ac1f1e3fdb792dc9566aa6eb8f7b9bc3e33bbb18d2f221718e55b",
+      "note_hash": "186f3d65f3bf0aa5d2e34e6fd16e9007816b256b1d0dde8acc00b022281b0abe",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118604,7 +118604,7 @@
       "positive_theorem": 583
     },
     "edge_count": 13474,
-    "leaf_count": 1154,
+    "leaf_count": 1153,
     "node_count": 3619,
     "root_count": 1090,
     "runners_with_path": 3252

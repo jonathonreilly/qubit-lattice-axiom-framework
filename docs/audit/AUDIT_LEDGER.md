@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1020 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1497 |
+| unaudited | 1496 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 52 |
+| ~~audited_conditional~~ | 53 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -69,12 +69,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1470 |
-| `audited_conditional` | 52 |
+| `audited_conditional` | 53 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1823 |
+| `unaudited` | 1822 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 938 |
-| `leaf` | 1461 |
+| `medium` | 937 |
+| `leaf` | 1462 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1656,6 +1656,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_resource_from_poisson_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -20251,6 +20252,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using K = U Sigma V^dag, unitary block conjugation reduces M = [[alpha I,K],[-K^dag,alpha I]] to direct two-by-two blocks [[alpha,sigma_i],[-sigma_i,alpha]], so det(M)=prod_i(alpha^2+sigma_i^2)>0 for alpha>0.  _(class `A`)_
 - **chain closes:** True — The algebra closes independently of the runner: with W=diag(U,V), W^dag M W has off-diagonal Sigma and -Sigma, and a permutation of basis exposes the 2x2 block direct sum. Each factor alpha^2+sigma_i^2 is strictly positive because alpha>0 and sigma_i>=0.
 - **rationale:** The determinant formula is a standard finite-dimensional algebraic identity once the balanced eps decomposition and supplied alpha I diagonal surface are assumed. The note explicitly does not claim that M_W = r d I is framework-forced, does not cover the standard Wilson nearest-neighbour Laplacian, and does not assert parent-row reflection positivity or Wilson-sector sign-problem closure. On that scoped supplied surface, no open dependency or hidden bridge theorem is imported. The runner source performs actual finite-matrix construction and factorisation checks, but the clean verdict rests on the independent SVD/block determinant argument.
+- **auditor confidence:** high
+
+### `statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12`
+
+- **Note:** [`STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md`](../../docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded reduction: retained one-copy Born weights plus a supplied two-registration quotient factorization imply the agreement-conditioned map `p_i' = p_i^2/(p_s^2+p_d^2)`, `x -> x^2`, and `r -> 2r^2`.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Supply the quotient-level premise `m(j,k)=p_j p_k` for `j,k in {s,d}`, so agreement conditioning gives `p_i' = p_i^2/(p_s^2 + p_d^2)` and hence `x -> x^2`.  _(class `A`)_
+- **chain closes:** False — The algebra downstream of `m(j,k)=p_j p_k` closes and the runner implements substantive symbolic checks. The restricted packet does not derive or retain the quotient-factorization premise itself, so the full chain from retained Born/Busch authorities alone is missing that step.
+- **rationale:** K1-K4 are algebraically correct within the declared bounded setting: the retained Born/Busch surfaces provide one-copy weights, the product-to-outcome weakening and product-instance bridge are retained_bounded, and the runner checks the conditioning flow plus the correlated control witness. `MINIMAL_AXIOMS_2026-06-05.md` is explicitly flagged as an accepted axiom-premise node and does not downgrade under the registry carve-out. The row still imports the outcome-level factorization `m(j,k)=p_j p_k` as a supplied premise and explicitly says it is not discharged; therefore the claim cannot be `audited_clean` as an unconditional reduction from retained inputs.
 - **auditor confidence:** high
 
 ### `statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17`

@@ -1,8 +1,20 @@
 # PR Backlog
 
-PR status: pending local verification and publish.
+PR status: opened.
 
-Expected command:
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4593
+```
+
+Identity-only view:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-finite-schur-law-p2-gate-block62-20260621","number":4593,"state":"OPEN","title":"[physics-loop] s3-route2-finite-schur-law-p2-gate block62 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4593"}
+```
+
+Command used:
 
 ```bash
 gh pr create \

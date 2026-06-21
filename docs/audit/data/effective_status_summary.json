@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1806,
-    "decoration": 59,
+    "bounded_theorem": 1805,
+    "decoration": 60,
     "meta": 332,
     "no_go": 359,
     "open_gate": 171,
@@ -55,6 +55,7 @@
     "decoration_under_lattice_nn_deterministic_rescale_note": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_mirror_mutual_information_chokepoint_note": 1,
+    "decoration_under_moving_source_retarded_portability_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_plaquette_self_consistency_note": 1,
@@ -71,7 +72,7 @@
     "retained_bounded": 971,
     "retained_no_go": 212,
     "retained_pending_chain": 4,
-    "unaudited": 1590
+    "unaudited": 1589
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

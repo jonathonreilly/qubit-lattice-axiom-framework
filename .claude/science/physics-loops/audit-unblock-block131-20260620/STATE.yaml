@@ -4,8 +4,8 @@ block: 131
 mode: physics-loop
 branch: physics-loop/audit-unblock-block131-20260620
 base: physics-loop/audit-unblock-block130-20260620
-base_commit: b0e53d573b722eaa80cf2540b42d62526acef774
-rebuilt_at: "2026-06-21 00:34:57 EDT"
+base_commit: 2d251fe3b0ad685cc1fffc8bedcc7d52ebc6d302
+rebuilt_at: "2026-06-21 00:49:58 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "runner-cache orphan cleanup referenced-evidence safety"

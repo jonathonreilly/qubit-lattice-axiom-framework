@@ -18,7 +18,7 @@ full-ledger cleanup dry run reports 8 candidates instead of 9:
 - `stale to refresh: 0`
 - `missing on disk: 0`
 
-The branch is restacked on PR #4500 at `b0e53d573`.
+The branch is restacked on PR #4500 at `2d251fe3b`.
 
 ## Boundary
 

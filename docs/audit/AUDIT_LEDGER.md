@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 983 |
+| **retained_bounded** | 984 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1566 |
+| unaudited | 1565 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1428 |
+| `audited_clean` | 1429 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1892 |
+| `unaudited` | 1891 |
 
 | claim_type | count |
 |---|---:|
@@ -1038,6 +1038,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_packet_reidentification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -14748,6 +14749,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For each seed, the free-stage packet was compressed to its top-5 support bins and relaunched on the same ordered-lattice family, producing high relaunch carry overlaps on the fixed h=0.5, W=8, L=12 harness.  _(class `C`)_
 - **chain closes:** True — The runner instantiates the ordered-lattice propagation, constructs the packets, reidentifies top-k detector support, relaunches the surrogate, and computes the reported overlaps and centroid shifts. The note does not claim persistent mass, family-genericity, or a closed inertial-response theorem.
 - **rationale:** The load-bearing result is a first-principles numerical computation on the fixed retained ordered-lattice harness, not a definition, renaming, external comparator, or hard-coded numerical replay. The primary runner and helper source compute the lattice propagation and reported metrics directly from the stated parameters. The conclusion is appropriately bounded to support/compression control and explicitly denies persistent-mass or family-generic claims.
+- **auditor confidence:** high
+
+### `p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28`
+
+- **Note:** [`P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md`](../../docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite even-L_t free staggered 1+1d zero-source surface with eta_0=1, eta_1(t)=(-1)^t, antiperiodic temporal and periodic spatial boundary conditions: det(M_KS+mI) factors into a positive vacuum normalization times a positive free-Fock trace, making the modulus automatic on that bounded surface.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The zero-source free staggered determinant factorizes as det(M_KS + m I) = Z_vac * Tr(e^{-beta H_hat}) with Z_vac > 0 and H_hat = H_hat^dag >= 0, so det(M_KS + m I) is positive real and log|det| = log det on this surface.  _(class `C`)_
+- **chain closes:** True — The packet gives the free staggered temporal recurrence, the two-step dispersion, and the determinant/transfer-trace factorization, and the runner independently builds the finite Dirac matrix and Fock-space transfer Hamiltonian rather than merely printing the result. The conclusion is restricted to the zero-source free staggered surface and does not claim the broader source-dependent or interacting/gauge P2 bridge.
+- **rationale:** The load-bearing bridge is a first-principles finite-lattice computation: the runner constructs M_KS+mI, the action-derived two-step kernel, H_hat, Z_vac, and the Fock trace, then checks the determinant equality, positivity, and log-modulus equality. The cited authorities are retained-grade for audit purposes, and no non-retained dependency is needed for the narrowed free zero-source claim. The broader scalar-generator P2, arbitrary sources J, and interacting/gauge realization are explicitly outside the audited scope, so they do not block this bounded theorem.
 - **auditor confidence:** high
 
 ### `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`

@@ -11,7 +11,7 @@ Block135 makes the source-graph cycle repair workflow executable:
   live links into that skipped cross-reference section.
 - tests cover both behaviors.
 
-The live dry-run after rebasing onto `origin/main` at `dea100014` reports:
+The live dry-run after rebasing onto `origin/main` at `ca3f6f8d3` reports:
 
 - cycles named: 8
 - unique source notes: 4

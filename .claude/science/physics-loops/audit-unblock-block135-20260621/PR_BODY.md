@@ -3,7 +3,7 @@
 Enables the source-graph cycle repair workflow without applying any audit
 verdicts or source-note rewrites in this PR.
 
-Base note: this PR is now rebased directly on `main` at `dea100014`.
+Base note: this PR is now rebased directly on `main` at `ca3f6f8d3`.
 
 Changes:
 

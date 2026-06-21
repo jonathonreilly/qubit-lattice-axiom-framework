@@ -7,6 +7,7 @@ Checks run:
 - `git rebase --onto origin/main 66889cadc` -> one conflict in
   `docs/audit/scripts/tests/test_audit_pipeline.py`; resolved by keeping the
   block135 helper imports in the current main test file.
+- `git rebase origin/main` -> passed without conflicts on `ca3f6f8d3`.
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.BuildCitationGraphParserTest docs.audit.scripts.tests.test_audit_pipeline.SourceGraphRepairPassTest` -> 7 tests passed.
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 79 tests passed.
 - `python3 -m py_compile docs/audit/scripts/build_citation_graph.py scripts/source_graph_repair_pass.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK.

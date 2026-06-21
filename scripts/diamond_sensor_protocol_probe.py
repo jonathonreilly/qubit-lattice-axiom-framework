@@ -20,6 +20,8 @@ from __future__ import annotations
 import argparse
 from dataclasses import dataclass
 
+AUDIT_TIMEOUT_SEC = 120
+
 
 @dataclass(frozen=True)
 class ScanClass:
@@ -29,6 +31,13 @@ class ScanClass:
     null_y: str
     null_phi: str
     proxy_expectation: str
+
+
+@dataclass(frozen=True)
+class AssertionResult:
+    label: str
+    passed: bool
+    detail: str
 
 
 SCAN_CLASSES = [
@@ -83,6 +92,83 @@ SCAN_CLASSES = [
 ]
 
 
+def protocol_assertions(card: str) -> list[AssertionResult]:
+    assertions: list[AssertionResult] = []
+
+    def expect(label: str, condition: bool, detail: str) -> None:
+        assertions.append(AssertionResult(label=label, passed=condition, detail=detail))
+
+    expect(
+        "card names lock-in observables",
+        all(token in card for token in ("quadrature Y", "phi = atan2(Y, X)", "widefield phase ramp")),
+        "Y, phi, and widefield phase ramp are the protocol observables",
+    )
+    expect(
+        "standard null is quasi-static",
+        "quasi-static / instantaneous coupling -> Y ~ 0, phi ~ 0, flat phase" in card,
+        "null baseline remains zero quadrature and flat phase after calibration",
+    )
+    expect(
+        "proxy expectation is nonzero phase-sensitive response",
+        "nonzero Y, nonzero phi, and a spatial phase ramp" in card,
+        "bounded discriminator expectation is phase-sensitive rather than amplitude-budgeted",
+    )
+    expect(
+        "ideal detector bridge is referenced",
+        "scripts/diamond_ideal_lockin_detector_theorem.py" in card,
+        "protocol depends on the ideal lock-in detector theorem",
+    )
+    expect(
+        "minimal controls are explicit",
+        all(
+            token in card
+            for token in (
+                "drive off",
+                "source retracted or dummy load",
+                "pi reference flip",
+                "static-source baseline",
+            )
+        ),
+        "drive-off, retraction/dummy-load, pi-flip, and static controls are named",
+    )
+    expect(
+        "protocol table has every scan class",
+        all(f"| {row.drive_band} | {row.separation_band} |" in card for row in SCAN_CLASSES),
+        "six drive/separation scan classes are printed",
+    )
+    expect(
+        "all null columns stay bounded",
+        all(row.null_x == "dominant" and row.null_y == "~0" and row.null_phi == "~0" for row in SCAN_CLASSES),
+        "the table never turns the standard null into a positive signal",
+    )
+    expect(
+        "high-far row is strongest candidate",
+        any(
+            row.drive_band == "high"
+            and row.separation_band == "far"
+            and "best candidate" in row.proxy_expectation
+            for row in SCAN_CLASSES
+        ),
+        "qualitative ordering identifies high-drive/far-separation as strongest candidate",
+    )
+    expect(
+        "interpretation demands calibration survival",
+        "survive calibration" in card and "flip sign under the pi control" in card,
+        "a hit must survive calibration and flip under the pi control",
+    )
+    expect(
+        "absolute amplitude budget is disclaimed",
+        "not an absolute gravity amplitude budget" in card,
+        "the protocol does not claim calibrated detectability",
+    )
+    expect(
+        "null-beating claim is disclaimed",
+        "not a claim that the null is already beat" in card,
+        "the protocol is a discriminator card, not an experimental result",
+    )
+    return assertions
+
+
 def format_card() -> str:
     lines: list[str] = []
     lines.append("Diamond/NV phase-sensitive protocol card")
@@ -127,8 +213,18 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     parse_args()
-    print(format_card())
-    return 0
+    card = format_card()
+    print(card)
+    print("")
+    print("Protocol card assertions:")
+    assertions = protocol_assertions(card)
+    passed = sum(result.passed for result in assertions)
+    failed = len(assertions) - passed
+    for result in assertions:
+        status = "PASS" if result.passed else "FAIL"
+        print(f"  [{status}] {result.label} ({result.detail})")
+    print(f"SUMMARY: PASS={passed} FAIL={failed}")
+    return 0 if failed == 0 else 1
 
 
 if __name__ == "__main__":

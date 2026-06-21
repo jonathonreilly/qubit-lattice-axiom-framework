@@ -4,8 +4,8 @@ block: 135
 mode: physics-loop
 branch: physics-loop/audit-unblock-block135-20260621
 base: main
-base_commit: ca3f6f8d3d415c4464c962fb58456b57849e7a8d
-rebased_at: "2026-06-21 00:29:32 EDT"
+base_commit: 678b38ce7d8f9c092a7e19bf8272847f03bd799f
+rebased_at: "2026-06-21 01:07:03 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "cycle source-graph repair tooling"
@@ -22,7 +22,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed earlier with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "Implemented source-graph repair apply support and taught the citation graph to ignore non-load-bearing cross-reference sections; did not apply source-note rewrites in this PR; rebased cleanly onto ca3f6f8d3."
+current_result: "Implemented source-graph repair apply support and taught the citation graph to ignore non-load-bearing cross-reference sections; did not apply source-note rewrites in this PR; rebased cleanly onto 678b38ce7."
 dry_run_result:
   cycles_named: 8
   unique_source_notes: 4

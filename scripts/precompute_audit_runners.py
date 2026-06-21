@@ -51,6 +51,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import re
 import subprocess
 import sys
 import time
@@ -282,23 +284,106 @@ def cache_header_runner_exists(cache_path: Path) -> bool:
     return runner_file_path(runner_path).is_file()
 
 
+_CACHE_REFERENCE_RE = re.compile(
+    r"(?:\.\./)*logs/runner-cache/[A-Za-z0-9_.-]+\.txt"
+)
+_REFERENCE_SCAN_SKIP_DIRS = {
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".tox",
+    "__pycache__",
+    "node_modules",
+}
+_REFERENCE_SCAN_TEXT_SUFFIXES = {
+    ".csv",
+    ".json",
+    ".md",
+    ".py",
+    ".rst",
+    ".sh",
+    ".toml",
+    ".tsv",
+    ".txt",
+    ".yaml",
+    ".yml",
+}
+
+
+def _normalize_cache_reference(cache_ref: str) -> str:
+    while cache_ref.startswith("../"):
+        cache_ref = cache_ref[3:]
+    return cache_ref
+
+
+def collect_referenced_cache_paths() -> set[str]:
+    """Return cache paths referenced outside the cache directory itself."""
+    if not REPO_ROOT.is_dir():
+        return set()
+
+    refs: set[str] = set()
+    try:
+        cache_dir_rel = CACHE_DIR.relative_to(REPO_ROOT).as_posix()
+    except ValueError:
+        cache_dir_rel = None
+
+    for root_str, dirnames, filenames in os.walk(REPO_ROOT):
+        root = Path(root_str)
+        try:
+            root_rel = root.relative_to(REPO_ROOT)
+        except ValueError:
+            continue
+
+        kept_dirnames: list[str] = []
+        for dirname in dirnames:
+            child_rel = (root_rel / dirname).as_posix()
+            if dirname in _REFERENCE_SCAN_SKIP_DIRS:
+                continue
+            if cache_dir_rel and (
+                child_rel == cache_dir_rel
+                or child_rel.startswith(f"{cache_dir_rel}/")
+            ):
+                continue
+            kept_dirnames.append(dirname)
+        dirnames[:] = kept_dirnames
+
+        for filename in filenames:
+            path = root / filename
+            if path.suffix not in _REFERENCE_SCAN_TEXT_SUFFIXES:
+                continue
+            try:
+                text = path.read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                continue
+            for match in _CACHE_REFERENCE_RE.finditer(text):
+                refs.add(_normalize_cache_reference(match.group(0)))
+    return refs
+
+
 def cleanup_orphans(known_runners: set[str], dry_run: bool = False) -> list[Path]:
     """Delete cache files whose runner is not known and is missing on disk.
 
     The cache filename is only `<runner-stem>.txt`, so a nested runner such
     as `scripts/corrections/foo.py` cannot be recovered from the filename
     alone. Prefer the cache header's runner path before falling back to the
-    legacy shallow `scripts/<stem>.py` probe.
+    legacy shallow `scripts/<stem>.py` probe. Also preserve cache files that
+    are still referenced elsewhere in the repository so cleanup does not leave
+    broken evidence links.
     """
     if not CACHE_DIR.is_dir():
         return []
     known_stems = {Path(r).stem for r in known_runners}
+    referenced_caches = collect_referenced_cache_paths()
     orphans: list[Path] = []
     for p in CACHE_DIR.iterdir():
         if not p.is_file() or not p.name.endswith(".txt"):
             continue
         stem = p.stem
         if stem in known_stems:
+            continue
+        rel_cache_path = p.relative_to(REPO_ROOT).as_posix()
+        if rel_cache_path in referenced_caches:
             continue
         if cache_header_runner_exists(p):
             continue

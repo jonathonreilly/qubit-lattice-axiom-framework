@@ -5,6 +5,8 @@
   block129 guard and PR-status commits.
 - Rebased again onto `origin/main` at `ca3f6f8d3`; `git rebase origin/main`
   passed without conflicts.
+- Rebased again onto `origin/main` at `678b38ce7`; `git rebase origin/main`
+  passed without conflicts.
 - Deterministic guard run:
   `python3 scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py`
   passed with 94 covered inventory rows:
@@ -27,6 +29,6 @@
   passed 77 tests.
 - `python3 docs/audit/scripts/audit_lint.py --strict` failed with the same
   current-main baseline drift reproduced in a detached `origin/main` worktree:
-  3 stale-dispatch warnings, 261 notices, and 30 retained-row note_hash drift
+  3 stale-dispatch warnings, 264 notices, and 30 retained-row note_hash drift
   errors. This branch does not edit those rows or apply verdicts.
 - `git diff --check` passed.

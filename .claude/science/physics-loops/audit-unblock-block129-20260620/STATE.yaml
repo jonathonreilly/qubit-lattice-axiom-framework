@@ -1,10 +1,10 @@
 loop_slug: audit-unblock-block129-20260620
 mode: campaign
-local_timestamp: "2026-06-21 00:27:03 EDT"
+local_timestamp: "2026-06-21 01:05:06 EDT"
 objective: "Unblock audit execution by repairing source-side runner evidence surfaces; do not audit claims or push to main."
 branch: physics-loop/audit-unblock-block129-20260620
 base_branch_intended: main
-base_commit: ca3f6f8d3d415c4464c962fb58456b57849e7a8d
+base_commit: 678b38ce7d8f9c092a7e19bf8272847f03bd799f
 base_reason: "Rebased onto current origin/main so PR #4499 can land independently of block128."
 actual_current_surface_status: open
 trace_class: methodology
@@ -21,6 +21,7 @@ files_touched:
 commands_run:
   - "git rebase --onto origin/main 609cc8fab -> PASS; replayed only the block129 guard and PR-status commits onto dea100014."
   - "git rebase origin/main -> PASS; replayed the independent block129 commits onto ca3f6f8d3."
+  - "git rebase origin/main -> PASS; replayed the independent block129 commits onto 678b38ce7."
   - "python3 scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py -> PASS; 94 inventory rows checked, including 55 missing_runner_file rows."
   - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py --push-mode none --allow-non-main -> refreshed cache."
   - "python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py --check-only --allow-non-main -> fresh: 1, stale: 0."
@@ -28,7 +29,7 @@ commands_run:
   - "python3 scripts/audit_runner_path_canonicalization_guard_2026_06_17.py -> PASS."
   - "python3 -m py_compile scripts/audit_runner_runtime_breakage_staleness_guard_2026_06_17.py scripts/runner_cache.py -> PASS."
   - "python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline -> 77 tests passed."
-  - "python3 docs/audit/scripts/audit_lint.py --strict -> FAIL on current-main baseline: 3 stale-dispatch warnings, 261 notices, and 30 retained-row note_hash drift errors; reproduced on detached origin/main worktree."
+  - "python3 docs/audit/scripts/audit_lint.py --strict -> FAIL on current-main baseline: 3 stale-dispatch warnings, 264 notices, and 30 retained-row note_hash drift errors; reproduced on detached origin/main worktree."
   - "git diff --check -> PASS."
 imports_retired: []
 imports_exposed: []
@@ -36,5 +37,5 @@ audit_verdicts_changed: false
 repo_authority_surfaces_changed: false
 pr_status: opened; rebased_independent_pending_push
 pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4499"
-next_exact_action: "Commit refreshed post-rebase metadata, force-push PR #4499 branch, update PR base/body, then continue campaign with the next independent source-side unblocker."
+next_exact_action: "Commit refreshed 678b38ce7 metadata, force-push PR #4499 branch, update PR base/body, then continue campaign with the next independent source-side unblocker."
 stop_condition: "Continue campaign after block PR is opened unless runtime budget expires or no independent unblockers remain."

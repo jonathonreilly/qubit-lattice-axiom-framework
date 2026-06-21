@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1619 |
-| Retained-grade rows, including boxed decorations | 1494 |
+| Applied audit verdicts | 1620 |
+| Retained-grade rows, including boxed decorations | 1495 |
 | Retained positive theorems | 213 |
-| Retained no-go rows | 219 |
+| Retained no-go rows | 220 |
 | Retained bounded rows | 1002 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 39 |
-| Unaudited rows | 1527 |
+| Unaudited rows | 1526 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 45 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1529 |
-| Ready rows | 37 |
+| Total pending rows | 1528 |
+| Ready rows | 36 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 513 |
+| Leaf pending | 512 |
 
 Next ready rows by queue order:
 
-- [`koide_gamma5_factor_bridge_no_go_note_2026-06-06`](../../docs/KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_kahler_dirac_silent_on_measure_note_2026-05-30`](../../docs/KOIDE_KAHLER_DIRAC_SILENT_ON_MEASURE_NOTE_2026-05-30.md) - medium; unaudited
 - [`koide_moment_ratio_uniformity_reduced_carrier_narrow_theorem_note_2026-05-17`](../../docs/KOIDE_MOMENT_RATIO_UNIFORMITY_REDUCED_CARRIER_NARROW_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`koide_q_two_thirds_frobenius_extremum_bridge_bounded_note_2026-05-25`](../../docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - medium; unaudited
 - [`koide_reality_type_permitted_not_forced_note_2026-05-30`](../../docs/KOIDE_REALITY_TYPE_PERMITTED_NOT_FORCED_NOTE_2026-05-30.md) - medium; unaudited
 - [`koide_records_pointer_grounds_block_channel_note_2026-05-31`](../../docs/KOIDE_RECORDS_POINTER_GROUNDS_BLOCK_CHANNEL_NOTE_2026-05-31.md) - medium; unaudited
 - [`koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25`](../../docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md) - medium; unaudited
-- [`koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3`](../../docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md) - leaf; unaudited
+- [`koide_z_substrate_generation_z3_note_2026-05-08_probez_substrate_generation_z3`](../../docs/KOIDE_Z_SUBSTRATE_GENERATION_Z3_NOTE_2026-05-08_probeZ_substrate_generation_z3.md) - medium; unaudited
+- [`lattice_total_momentum_conservation_theorem_note_2026-05-02`](../../docs/LATTICE_TOTAL_MOMENTUM_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3619 |
-| Critical nodes | 576 |
-| High nodes | 509 |
+| Critical nodes | 575 |
+| High nodes | 510 |
 | Medium nodes | 982 |
 | Leaf nodes | 1552 |
 

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 212 |
-| **retained_no_go** | 214 |
+| **retained_no_go** | 215 |
 | **retained_bounded** | 975 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1581 |
+| unaudited | 1580 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1417 |
+| `audited_clean` | 1418 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1907 |
+| `unaudited` | 1906 |
 
 | claim_type | count |
 |---|---:|
@@ -469,6 +469,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_current_matching_rule_open_gate_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `ew_current_traceless_generator_selector_no_go_note_2026-05-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `exact_fixed_energy_schur_decimation_free_chain_form_migration_one_step_map_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6472,6 +6473,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Taking |D_mu H_0|^2 gives the charged term g^2 v^2[(W^1)^2+(W^2)^2]/8 and the neutral mass matrix v^2/4 [[g^2,-g g_Y],[-g g_Y,g_Y^2]], whose eigenvalues are 0 and (g^2+g_Y^2)v^2/4.  _(class `A`)_
 - **chain closes:** True — Within the declared EW-Higgs input boundary, the Pauli-matrix actions, mass matrices, Weinberg rotation, charge generator, and scalar Hessian all follow by exact algebra. The declared EW group, Higgs representation, hypercharge, vacuum, and covariant derivative are assumptions of the bounded theorem, not downstream conclusions.
 - **rationale:** The load-bearing step is exact algebra over the declared one-doublet EW-Higgs inputs, not a numerical fit, renaming, or external comparator. The runner source constructs the Pauli matrices and symbolic mass matrices directly with SymPy and verifies the charged masses, neutral eigenvectors, photon/Z rotation, electric coupling identity, GUT-normalization dictionary, and scalar Hessian without importing empirical constants. The result is clean only at the stated bounded theorem scope: it does not derive the EW input boundary or any loop, pole-mass, or precision observable.
+- **auditor confidence:** high
+
+### `ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08`
+
+- **Note:** [`EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md`](../../docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For the retained color-blind EW-current packet, the lattice/MC channel data pin the bare full-trace object S+C and the 8/9 gauge-orbit fraction but do not select the external readout weight kappa_EW.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Both Pi_phys(kappa_EW=0)=C and Pi_phys(kappa_EW=1)=S+C are functions of the same measured channel data {S,C,T}, so no Monte-Carlo observable is a function of kappa_EW alone.  _(class `A`)_
+- **chain closes:** True — The cited retained no-gos already leave kappa_EW as an unfixed readout coefficient, and the runner/source algebra verifies that the color-blind connected correlator computes S+C while the gauge-orbit split gives S/T=1/N_c^2. From those inputs, the MC-undecidability conclusion follows without importing a continuum readout selector.
+- **rationale:** The load-bearing step is an algebraic underdetermination argument over retained-grade no-go inputs plus explicit linear-algebra checks, not a tuned numerical comparison or a definition-as-derivation. The runner source actually computes the SU(N) Fierz identity, color-blind factorization, staggered reflection check, gauge-orbit average identity, and kappa cancellation rather than merely printing PASS. The no-go discipline gate is satisfied for the scoped claim: five alternate routes are named, the residual is collapsed to the missing readout functional, cited residuals match, and the source explicitly leaves future continuum readout theorems as reopen conditions.
 - **auditor confidence:** high
 
 ### `ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09`

@@ -16,15 +16,13 @@ Score: unnecessary.
 The runner completed under its declared timeout. A source rewrite would add risk without
 retiring a current blocker.
 
-## Included Route: Queue/Ledger Refresh
+## Deferred Route: Queue/Ledger Refresh
 
-Score: required for strict-lint cleanliness.
+Score: superseded by later audit-support PRs.
 
-The narrow cache-only diff passed cache freshness and whitespace checks, but strict audit lint
-failed on stale retained-grade ledger hashes already present on the base. Running the canonical
-pipeline regenerated the audit queue, ledger, helper-dependency map, publication effective-status
-views, and front-door status. These are generated support surfaces, not hand-applied audit
-verdicts.
+The original branch carried generated audit-support surfaces, but the current-main rebase
+narrowed block126 back to its direct runner-cache evidence artifact. Later PRs handle the
+generated audit-support refreshes.
 
 ## Rejected Route: Audit Verdict Application
 

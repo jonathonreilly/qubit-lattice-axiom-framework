@@ -8,7 +8,7 @@ conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "This block refreshes runner-cache evidence and generated audit-support surfaces; the target row remains unaudited and dependency-blocked."
+proposal_allowed_reason: "This block refreshes runner-cache evidence; the target row remains unaudited and dependency-blocked."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass
@@ -26,9 +26,9 @@ The target remains blocked by upstream dependencies:
 
 Independent audit remains required before any effective status change.
 
-## Pipeline Result
+## Target Status Snapshot
 
-After regeneration, the target row remains:
+After the cache refresh, the target row remains:
 
 - `audit_status: unaudited`
 - `effective_status: unaudited`

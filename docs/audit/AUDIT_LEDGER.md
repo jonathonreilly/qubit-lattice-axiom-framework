@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 211 |
-| **retained_no_go** | 211 |
+| **retained_no_go** | 212 |
 | **retained_bounded** | 970 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1598 |
+| unaudited | 1597 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1407 |
+| `audited_clean` | 1408 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 57 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1924 |
+| `unaudited` | 1923 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 938 |
-| `leaf` | 1461 |
+| `medium` | 939 |
+| `leaf` | 1460 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1110,6 +1110,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_finite_target_kernel_stability_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `post_record_model_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `post_record_selection_rule_target_vector_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_count_audit_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_stable_kernel_expected_frequency_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_supplied_family_lift_certificate_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15725,6 +15726,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Exact enumeration over finite objects does not by itself provide a law over an unbounded family, so the unbounded move is a separate gate requiring a supplied or derived family principle.  _(class `E`)_
 - **chain closes:** True — The note and runner consistently define and check the finite gate-map/firewall declarations. The closure is definitional rather than a derivation of the upstream dynamics rows or an unbounded-family principle.
 - **rationale:** Issue: the runner hard-codes the gate rows, statuses, and firewall booleans, then checks document presence and consistency. Why this blocks: that verifies a declared methodology/gate map, but it does not derive any retained status, physical dynamics bridge, production kernel, dial selection, probability law, or unbounded-family lift. Repair target: if a theorem is intended, provide retained upstream authorities or a runner that derives the relevant bridge/family principle rather than defining gate rows. Claim boundary until fixed: cite only the finite gate discipline and the explicitly open unbounded/effective-retained gates.
+- **auditor confidence:** high
+
+### `post_record_selection_rule_target_vector_firewall_2026-06-06`
+
+- **Note:** [`POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md`](../../docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Inside the finite supplied kernel-selection rule interface, target values and loss weights are supplied rule data; the exact witness shows one shared target selecting different kernels under different supplied weights and blocking selection when target or weights are absent.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-post_record_selection_rule_target_vector_firewall_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same rational target vector can select different kernels under different supplied weight choices, so target values and loss weights are supplied rule inputs rather than outputs of the finite selection algebra.  _(class `A`)_
+- **chain closes:** True — The finite witness computes the Markov laws, statistic vectors, weighted squared losses, and unique minimizers exactly. This closes only the scoped supplied-rule firewall, not any broader Record-alone target or weight derivation claim.
+- **rationale:** The runner genuinely computes the finite algebra with exact rational arithmetic; independently, the endpoint-heavy rule selects k4 and the second-coordinate-heavy rule selects k3 for the same target vector. The cited supplied-rule interface and directed-certificate kernel firewall are retained-grade inputs for this bounded surface. The clean verdict is limited to the finite supplied-rule interface and does not assert a broad Record-alone impossibility theorem for every possible target or weight derivation.
 - **auditor confidence:** high
 
 ### `post_record_selector_tangent_readout_weight_prototype_2026-06-06`

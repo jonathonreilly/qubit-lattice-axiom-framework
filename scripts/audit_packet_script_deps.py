@@ -52,7 +52,7 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
 
 
 def canonical_runner_path(runner_path: str | Path) -> str:
-    """Map legacy runner refs to checked-in ``scripts/<basename>.py`` files."""
+    """Map legacy runner refs to checked-in repo-local script files."""
     raw = str(runner_path).strip()
     if not raw:
         return raw
@@ -62,6 +62,10 @@ def canonical_runner_path(runner_path: str | Path) -> str:
     candidates: list[str] = []
     if raw_path.is_absolute():
         if basename.endswith(".py"):
+            parts = raw_path.parts
+            if "scripts" in parts:
+                scripts_idx = len(parts) - 1 - list(reversed(parts)).index("scripts")
+                candidates.append(Path(*parts[scripts_idx:]).as_posix())
             candidates.append(f"scripts/{basename}")
     elif raw.startswith("scripts/"):
         candidates.append(raw)

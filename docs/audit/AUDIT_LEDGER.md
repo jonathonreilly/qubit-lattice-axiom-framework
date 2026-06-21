@@ -23,13 +23,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 990 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1551 |
+| unaudited | 1550 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
+| `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 8 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -67,16 +68,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1435 |
 | `audited_conditional` | 38 |
-| `audited_decoration` | 61 |
+| `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1877 |
+| `unaudited` | 1876 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1806 |
-| `decoration` | 62 |
+| `bounded_theorem` | 1805 |
+| `decoration` | 63 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
@@ -1613,6 +1614,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
+| `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
 | `cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
@@ -2913,6 +2915,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Direct substitution gives β(g/c,N)=2N/(g/c)^2=2Nc^2/g^2=c^2β(g,N).  _(class `A`)_
 - **chain closes:** True — The conclusions follow from direct algebraic substitution and cancellation with g,c nonzero. T3 follows because c>0 and c≠1 imply c^2≠1, and the map g↦2N0/g^2 is injective on positive g when N0≠0.
 - **rationale:** The load-bearing step is a genuine class A algebraic identity over the stated variables, with no cited upstream authority or physical import needed. The runner source actually computes the symbolic residuals with sympy and exact rational checks rather than merely printing expected results. The note’s Wilson, Cl(3), SU(Nc), and g_bare language is explicitly non-load-bearing for this narrow claim.
+- **auditor confidence:** high
+
+### `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`
+
+- **Note:** [`BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Pure algebraic invariance of beta(g,N) g^2 = 2N under the abstract joint rescaling (g,beta)->(g/c,c^2 beta), specialized only by the symbolic names (g,N)=(g_bare,N_c).
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the abstract joint rescaling (g, beta) -> (g/c, c^2 beta), (c^2 beta)(g^2/c^2)=beta g^2=2N, with (g,N) only symbolically relabeled as (g_bare,N_c).  _(class `A`)_
+- **chain closes:** True — The product cancellation follows directly from the retained upstream abstract identity and ordinary rational algebra. The row adds symbolic naming and boundary clauses, so it closes only as an algebraic corollary of the parent, not as an independent Wilson-surface result.
+- **rationale:** The cited upstream authority is retained and already proves the abstract beta(g/c,N)=c^2 beta(g,N) identity and product invariance. The present note repeats that exact algebra with the variable names (g_bare,N_c) and expressly keeps any physical Wilson action-surface interpretation outside the audited scope. With zero comparator checks and no independent physical computation, the row is an algebraic decoration of the retained parent rather than an independent clean theorem.
+- **decoration parent:** `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 
 ### `beyond_lattice_qcd_note`

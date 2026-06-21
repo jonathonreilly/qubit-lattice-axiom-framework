@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1595 |
-| Retained-grade rows, including boxed decorations | 1478 |
+| Applied audit verdicts | 1596 |
+| Retained-grade rows, including boxed decorations | 1479 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
 | Retained bounded rows | 990 |
-| Boxed decorations under retained parents | 59 |
+| Boxed decorations under retained parents | 60 |
 | Open gates | 38 |
-| Unaudited rows | 1551 |
+| Unaudited rows | 1550 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 38 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1553 |
-| Ready rows | 61 |
+| Total pending rows | 1552 |
+| Ready rows | 60 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 537 |
+| Leaf pending | 536 |
 
 Next ready rows by queue order:
 
-- [`beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 - [`causal_cone_speed_map_note`](../../docs/CAUSAL_CONE_SPEED_MAP_NOTE.md) - medium; unaudited
 - [`causal_impact_parameter_note`](../../docs/CAUSAL_IMPACT_PARAMETER_NOTE.md) - medium; unaudited
 - [`causal_source_placement_robustness_note`](../../docs/CAUSAL_SOURCE_PLACEMENT_ROBUSTNESS_NOTE.md) - medium; unaudited
 - [`connectivity_family_v2_elliptical_duplicate_note`](../../docs/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_DUPLICATE_NOTE.md) - medium; unaudited
 - [`continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12`](../../docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12`](../../docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
-- [`cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17`](../../docs/CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md) - leaf; unaudited
+- [`cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17`](../../docs/CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
+- [`d3_native_stable_orbit_upper_bound_composition_note_2026-06-09`](../../docs/D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1605 |
+| Applied audit verdicts | 1606 |
 | Retained-grade rows, including boxed decorations | 1488 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
 | Retained bounded rows | 999 |
 | Boxed decorations under retained parents | 60 |
 | Open gates | 38 |
-| Unaudited rows | 1541 |
+| Unaudited rows | 1540 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 38 |
+| Audited conditional rows | 39 |
 | Audited renaming rows | 28 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1543 |
-| Ready rows | 51 |
+| Total pending rows | 1542 |
+| Ready rows | 50 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 527 |
+| Leaf pending | 526 |
 
 Next ready rows by queue order:
 
-- [`dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md) - medium; unaudited
 - [`equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12`](../../docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08`](../../docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_HOLONOMY_SUPPRESSES_R_BELOW_LEPTONIC_WRONG_ORDERING_NARROW_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15`](../../docs/FLAVOR_GAUGE_REPRESENTATION_CHANNEL_CANNOT_SOURCE_THE_SECTOR_R_SPREAD_NARROW_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`flavor_interacting_matter_build_note_2026-05-30`](../../docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md) - medium; unaudited
 - [`fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16`](../../docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
-- [`g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`](../../docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md) - leaf; unaudited
+- [`g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`](../../docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
+- [`gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10`](../../docs/GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

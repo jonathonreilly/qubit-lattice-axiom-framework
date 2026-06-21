@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 999 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1541 |
+| unaudited | 1540 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1444 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1867 |
+| `unaudited` | 1866 |
 
 | claim_type | count |
 |---|---:|
@@ -115,8 +115,8 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `key_terminology` | meta | critical | 1126 | 47.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 45.31 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 44.18 | `audited_clean` | **retained_bounded** |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
-| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1400 | 40.45 | `audited_clean` | **retained** |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
+| 11 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 39.29 | `unaudited` | unaudited |
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
@@ -1592,6 +1592,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
+| `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -6049,6 +6050,24 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The kinetic staggered operator D_kin vanishes on the hw=1 generation corners, so the projected generation-sector D block is zero/non-invertible and outside the det-uniqueness X1 domain requiring invertible real anti-Hermitian D.  _(class `C`)_
 - **chain closes:** True — The cited det-uniqueness authority applies only to invertible real anti-Hermitian D with real-symmetric source J, while an independent Fourier action check gives D_kin e_k proportional to sin(k_mu) terms that vanish at k_mu in {0, pi}. The bridge authority explicitly firewalles the mI determinant surfaces as scalar-baseline diagnostics, so they do not reopen the det-uniqueness route.
 - **rationale:** The runner source genuinely constructs the finite staggered kinetic operator and checks the corner projection, non-invertibility, off-corner control, and scalar-baseline diagnostics rather than merely printing expected values. The load-bearing corner-vanishing also checks independently from the finite-difference Fourier action using sin(0)=sin(pi)=0. Both cited authorities are retained-grade, and the no-go is properly scoped to the det-uniqueness route, not to all possible future readout derivations.
+- **auditor confidence:** high
+
+### `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07`
+
+- **Note:** [`DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md`](../../docs/DM_NEUTRINO_SCHUR_SUPPRESSION_NAMED_ADMISSIONS_BOUNDED_THEOREM_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-algebra support for the Schur substitution y_nu^eff=j^2/m=g^2/64, together with graph-shift V_sel=32 narrowing and the determinant-domain mismatch, conditional on ADM-1/ADM-2/ADM-3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given ADM-1 (j=g/sqrt2), ADM-2 (g is the physical coupling), and ADM-3 for transporting m_perp=32, the retained Schur return gives y_nu^eff=j^2/m=(g/sqrt2)^2/32=g^2/64.  _(class `A`)_
+- **chain closes:** False — The finite Schur algebra and runner checks close after the three admissions are granted. The packet does not close the physical coefficient from retained inputs alone because it lacks the mI physical readout bridge, a native physical-g derivation, and a graph-shift-to-Dirac-Higgs phi-space transport theorem.
+- **rationale:** Issue: the Schur algebra is exact, but the coefficient uses ADM-1, ADM-2, and ADM-3 as explicit inputs rather than retained consequences. Why this blocks: the retained bosonic-normalization row proves only a raw Frobenius ratio, the observable-principle theorem excludes D=mI by domain, the weak coupling is a comparator, and the native even-trace Dirac-Higgs route does not transport the graph-shift selector. Repair target: provide retained bridge theorems for the mI physical readout and graph-shift-to-Dirac-Higgs phi-space identification, plus a native derivation of the physical g coefficient if claiming import-free closure. Claim boundary until fixed: bounded conditional algebra over named admissions, not an audit-clean physical coefficient theorem.
+- **open / conditional deps cited:**
+  - `DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
+  - `DM_NEUTRINO_WEAK_VECTOR_THEOREM_NOTE_2026-04-15.md`
+  - `DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md`
+  - `DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md`
 - **auditor confidence:** high
 
 ### `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17`

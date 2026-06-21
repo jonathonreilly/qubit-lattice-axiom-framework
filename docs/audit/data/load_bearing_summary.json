@@ -73,14 +73,14 @@
     {
       "claim_id": "cl3_color_automorphism_theorem",
       "criticality": "critical",
-      "load_bearing_score": 41.45,
-      "transitive_descendants": 988
+      "load_bearing_score": 41.451,
+      "transitive_descendants": 989
     },
     {
       "claim_id": "native_gauge_closure_note",
       "criticality": "critical",
-      "load_bearing_score": 40.452,
-      "transitive_descendants": 1400
+      "load_bearing_score": 40.453,
+      "transitive_descendants": 1401
     },
     {
       "claim_id": "anomaly_forces_time_theorem",

@@ -1,6 +1,12 @@
 # PR Backlog
 
-No PR backlog item yet.  The intended PR is:
+PR opened:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4586
+```
+
+Recovery command if the branch ever needs a replacement PR:
 
 ```sh
 gh pr create \
@@ -12,4 +18,3 @@ gh pr create \
 ```
 
 If GitHub PR creation fails, keep this file as the exact recovery command.
-

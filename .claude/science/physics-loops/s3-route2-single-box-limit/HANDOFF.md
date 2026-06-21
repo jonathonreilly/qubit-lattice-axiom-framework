@@ -39,7 +39,19 @@ datum is support but not an exact infinite-volume theorem.
 - overclaim scan: no matches
 - ASCII scan: no matches
 
-PR URL pending.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4586
+
+Remote branch:
+
+```text
+physics-loop/s3-route2-single-box-limit-block55-20260621
+```
+
+Identity-only PR check:
+
+```json
+{"number":4586,"state":"OPEN","baseRefName":"main","headRefName":"physics-loop/s3-route2-single-box-limit-block55-20260621","title":"[physics-loop] s3-route2-single-box-limit block55 no-go"}
+```
 
 ## Next Target
 

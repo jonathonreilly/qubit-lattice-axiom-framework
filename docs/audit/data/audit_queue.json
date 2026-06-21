@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 292,
-    "high": 282,
+    "high": 283,
     "leaf": 588,
-    "medium": 471
+    "medium": 469
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -8467,6 +8467,67 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "s3_time_primitive_chain_note",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
+        "quark_route2_exact_readout_map_note_2026-04-19",
+        "quark_route2_exact_time_coupling_note_2026-04-19"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/_frontier_loader.py",
+        "scripts/frontier_quark_endpoint_readout_constraints.py",
+        "scripts/frontier_quark_route2_exact_readout_map.py",
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_tensor_support_center_excess_law.py"
+      ],
+      "load_bearing_score": 6.959,
+      "note_path": "docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_s3_time_primitive_chain_reaudit.py",
+      "transitive_descendants": 21
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+        "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
+        "minimal_axioms",
+        "yt_source_action_support_packet_note_2026-05-22",
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+      ],
+      "direct_in_degree": 8,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.0,
+      "note_path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",
+      "transitive_descendants": 15
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "koide_a1_probe_gravity_phase_bounded_obstruction_note_2026-05-08_probe3",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -16215,35 +16276,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
-        "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
-        "minimal_axioms",
-        "yt_source_action_support_packet_note_2026-05-22",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.0,
-      "note_path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",
-      "transitive_descendants": 15
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gravity_signed_source_density_boundary_note",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17512,32 +17544,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "yt_source_action_support_packet_note_2026-05-22",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.0,
-      "note_path": "docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py",
-      "transitive_descendants": 31
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17694,38 +17700,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_distance_law_definitive.py",
       "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "s3_time_primitive_chain_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28",
-        "quark_route2_exact_readout_map_note_2026-04-19",
-        "quark_route2_exact_time_coupling_note_2026-04-19"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/_frontier_loader.py",
-        "scripts/frontier_quark_endpoint_readout_constraints.py",
-        "scripts/frontier_quark_route2_exact_readout_map.py",
-        "scripts/frontier_same_source_metric_ansatz_scan.py",
-        "scripts/frontier_tensor_support_center_excess_law.py"
-      ],
-      "load_bearing_score": 4.807,
-      "note_path": "docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_s3_time_primitive_chain_reaudit.py",
-      "transitive_descendants": 6
     },
     {
       "audit_independence_required": "any_non_self",
@@ -48996,5 +48970,5 @@
     }
   ],
   "ready_count": 106,
-  "total_pending": 1633
+  "total_pending": 1632
 }

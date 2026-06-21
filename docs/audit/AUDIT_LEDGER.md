@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 948 |
+| **retained_bounded** | 949 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 36 |
-| unaudited | 1631 |
+| unaudited | 1630 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1381 |
+| `audited_clean` | 1382 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1957 |
+| `unaudited` | 1956 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 508 |
-| `medium` | 929 |
+| `high` | 509 |
+| `medium` | 928 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -1505,6 +1505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -21395,6 +21396,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** A nonzero color-singlet one-Higgs Yukawa insertion has color matrix proportional to I_color, whose Hilbert-Schmidt singlet weight is 1, while kappa_Y = 0 under the direct projection diagnostic would require a nonzero traceless color insertion.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from SU(N) color-singlet invariance, trace algebra, and the retained kappa-family target in the cited color-projection correction. The note keeps alternative matching theorems and nonstandard scalar insertions out of scope rather than claiming a global impossibility theorem.
 - **rationale:** The load-bearing step is ordinary finite-dimensional color algebra, not a definition, numerical fit, or external comparator. The cited upstream authority is retained_no_go and supplies the conditional kappa_Y family that this note targets; the current note does not import the open kappa_Y selector as a premise. The restricted packet satisfies the no-go gate: it enumerates six routes, collapses independent walls, scans hidden assumptions, matches the cited residual, narrows rhetoric, leaves partial closure paths open, gives a steelman, and uses same-packet cross-cycle evidence.
+- **auditor confidence:** high
+
+### `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`
+
+- **Note:** [`YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact bounded algebra showing the signed two-point source is affinely equivalent to lower-projector occupation and that the lower one-Higgs doublet ray is neutral, without identifying the qubit and EW carrier surfaces.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Inside the signed-record qubit algebra, epsilon = sigma_z = P_+ - P_- = I - 2P_-, while in the one-Higgs EW bookkeeping P_- H_0 = H_0 and Q H_0 = 0.  _(class `A`)_
+- **chain closes:** True — The displayed projector, exponential-weight, and neutral-ray identities follow by direct 2x2 matrix algebra from the supplied signed-record and one-Higgs EW inputs. The note explicitly stops before the open same-surface qubit/Higgs physical carrier identification, so that bridge is not part of the audited claim.
+- **rationale:** The load-bearing mathematics is class A algebra over declared two-dimensional inputs: sigma_z projectors give epsilon = I - 2P_- and exp(h epsilon) = exp(h) exp(-2hP_-) on eigenweights, while the EW matrices give P_-H_0 = H_0 and QH_0 = 0. The runner computes these identities with SymPy and separately checks boundary/firewall text; no numerical comparator, tuned scale, or physical same-surface bridge is used. The residual open work is correctly excluded from the claim scope rather than imported as a premise.
 - **auditor confidence:** high
 
 ### `yt_source_action_support_packet_note_2026-05-22`

@@ -30,7 +30,11 @@ sectors that still need `rho_E = 21/4`.
 
 ## PR
 
-Pending.
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4537
+- Branch: `physics-loop/s3-route2-readout-endpoint-block08-20260621`
+- Commit: `2dcb76657`
+- Identity-only verification: PR #4537, base `main`, head
+  `physics-loop/s3-route2-readout-endpoint-block08-20260621`, state `OPEN`.
 
 ## Verification
 
@@ -46,5 +50,5 @@ No audit runner was run. No existing PR branch was refreshed or conflict-checked
 
 ## Next Action
 
-Commit, push, and open the review PR. Do not refresh older PRs and do not check
-conflict state.
+Continue the campaign with the next ranked science target. Do not refresh older
+PRs and do not check conflict state.

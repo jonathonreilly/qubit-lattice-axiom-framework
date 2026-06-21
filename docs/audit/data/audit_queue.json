@@ -1,8 +1,8 @@
 {
   "by_criticality": {
-    "critical": 306,
+    "critical": 305,
     "high": 302,
-    "leaf": 587,
+    "leaf": 588,
     "medium": 491
   },
   "cycle_break_target_count": 9,
@@ -138,30 +138,27 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "flavor_asymmetry_2over9_forced_weight_2026-05-31",
-      "claim_scope": "Bounded operator-side statement that the retained d=3 C3 carrier forces the transverse weight multiset {1,2} and hence the finite-KS local fixed-point density L3(1,2)=2/9; the physical charged-lepton single-summand readout is outside scope.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "three_generation_observable_theorem_note",
-        "three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10",
-        "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02",
-        "flavor_operator_realization_local_density_2026-05-31"
+        "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05"
       ],
-      "direct_in_degree": 2,
-      "effective_status": "retained_bounded",
+      "direct_in_degree": 19,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.18,
-      "note_path": "docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 17.675,
+      "note_path": "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/flavor_asymmetry_2over9_forced_weight_2026_05_31.py",
-      "transitive_descendants": 289
+      "runner_path": "scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py",
+      "transitive_descendants": 288
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -196,30 +193,6 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
       "transitive_descendants": 288
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 18,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 17.17,
-      "note_path": "docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py",
-      "transitive_descendants": 287
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -34168,6 +34141,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_continuum_equivariant_eta_delta_firewall_2026_06_12.py",
       "transitive_descendants": 0
     },
     {

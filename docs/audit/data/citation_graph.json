@@ -53470,15 +53470,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "flavor_asymmetry_2over9_forced_weight_2026-05-31"
     },
     {
       "from": "repo.front_door_status",
       "to": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,9 +103180,9 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
         "flavor_asymmetry_2over9_forced_weight_2026-05-31",
         "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10",
         "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10",
         "koide_aps_block_by_block_forcing_note_2026-04-21",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
@@ -103190,7 +103190,7 @@
         "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b36df18e26f6406f567f7298b3c2a2586c9f4c9bb6f3775b112a4962aac50c8f",
+      "note_hash": "7f1770ccda106b6544e1b6faefbfdf7fdebe225cf562c7dc47a08390306e07b3",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

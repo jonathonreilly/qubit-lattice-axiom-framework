@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 203 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 930 |
+| **retained_bounded** | 929 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1680 |
+| unaudited | 1681 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -60,14 +60,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
+| `audit_in_progress` | 5 |
 | `audited_clean` | 1347 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 22 |
-| `unaudited` | 2006 |
+| `unaudited` | 2007 |
 
 | claim_type | count |
 |---|---:|
@@ -132,7 +132,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -314,7 +313,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `connes_kreimer_partial_sum_rb_b4_external_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
-| `continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `coulomb_stability_upper_bound_support_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -478,6 +476,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_a1prime_debt_and_data_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_block_count_native_via_jcs_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_both_readings_charge_selects_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4121,19 +4120,6 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **rationale:** The scoped theorem is external algebra plus an explicit boundary statement, and the dependency is provided as retained. The runner's alpha_LM^16 check is hard-coded, but the note labels that as an imported character value and not a derivation, so it supports the boundary rather than inflating the claim.
 - **auditor confidence:** high
 
-### `continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12`
-
-- **Note:** [`CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md`](../../docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** Bounded audit of the standard-form localization evaluation on C3[111] weights and the supplied C3-circulant chiral mass-family scan showing no delta selection on this tested surface; not an R-eta derivation, refutation, or universal no-go.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained_bounded**  (reason: `self`)
-- **auditor:** `codex-cli-gpt-5.5-20260618-112229-b3680374-continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12-first`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Evaluating the standard Lefschetz/cotangent localization formulas on the retained C3[111] transverse weights (1,2) gives 2/9, and those formulas have no a, B, delta, or operator-coupling input.  _(class `A`)_
-- **chain closes:** True — Given the retained fixed-locus weights and the note's explicitly supplied standard localization formulas, the exact arithmetic closes to 2/9 and the formula-level delta firewall follows. The runner source also performs a finite matrix scan for the tested chiral circulant family, with spectral flow 0 and flat eta in that bounded setup.
-- **rationale:** The load-bearing step is an algebraic evaluation over retained-grade inputs, not a fitted numerical match or symbol renaming. The runner source genuinely computes the localization expressions and the finite tested-family scan, and no helper imports are missing. The cited retained_bounded authorities are used only within their closed weight/Kahler-Dirac scope; their separately declared exclusions are not consumed by this bounded claim.
-- **auditor confidence:** high
-
 ### `continuum_limit_note`
 
 - **Note:** [`CONTINUUM_LIMIT_NOTE.md`](../../docs/CONTINUUM_LIMIT_NOTE.md)
@@ -6380,6 +6366,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The finite algebra closes directly: I+g+g^2=J, and the normalized trace pairing makes the group-element basis orthonormal, giving coefficients (0,1,1). The comparator checks are arithmetic on supplied external inputs and are explicitly not used as framework-native derivations.
 - **rationale:** Independent inspection confirms the load-bearing support count without relying on the runner implementation. The runner source genuinely computes the Gram matrix, coefficient projection, finite order-three phase restriction, and signed-Q identity rather than merely printing constants. The mass, neutrino, and CKM checks are class-D external comparator arithmetic, but the source note scopes them as stress tests and leaves source-certification bridges open rather than claiming native derivation.
 - **auditor confidence:** high
+
+### `flavor_asymmetry_2over9_forced_weight_2026-05-31`
+
+- **Note:** [`FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md`](../../docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded operator-side claim that the retained d=3 C3 carrier forces the trace-free transverse weights (1,2) and, with the retained_bounded finite-KS local-density bridge, yields the local fixed-point density L_3(1,2)=2/9; the physical single-summand charged-lepton readout is excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-flavor_asymmetry_2over9_forced_weight_2026-05-31-panel1-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** d=3 forced + (1,2) weight forced + finite-KS operator realization implies 2/9 is forced as a local fixed-point density on this bounded surface.  _(class `A`)_
+- **chain closes:** True — The source note expressly bounds the claim to forced local fixed-point density and repeatedly leaves the physical charged-lepton readout outside the closed result. Within that scope, the cited d=3 carrier authorities and the finite-KS local-density authority are retained-grade for the bounded surface, and the remaining weight selection is standard C3 representation algebra: the regular representation splits into a singlet plus trace-free doublet with weights (1,2), giving L_3(1,2)=2/9. The runner checks the arithmetic and guise separation; the finite-KS operator bridge is supplied by the cited retained_bounded authority rather than by the primary runner.
+- **rationale:** The source note expressly bounds the claim to forced local fixed-point density and repeatedly leaves the physical charged-lepton readout outside the closed result. Within that scope, the cited d=3 carrier authorities and the finite-KS local-density authority are retained-grade for the bounded surface, and the remaining weight selection is standard C3 representation algebra: the regular representation splits into a singlet plus trace-free doublet with weights (1,2), giving L_3(1,2)=2/9. The runner checks the arithmetic and guise separation; the finite-KS operator bridge is supplied by the cited retained_bounded authority rather than by the primary runner.
+- **auditor confidence:** judicial
 
 ### `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30`
 

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10"
     },
     {
@@ -53494,11 +53490,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28"
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
+      "to": "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
         "su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10",
         "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31",
         "accessible_prediction_note",
         "alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18",
         "architecture_portability_live_reaudit_bridge_note_2026-06-18",
+        "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05",
         "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28",
-        "axiom_first_lattice_noether_onsite_internal_narrow_theorem_note_2026-06-05"
+        "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b13c3636c4ab1172552c608324c8a9b61bf78795708835030d2b58ebcd494537",
+      "note_hash": "1ebbd1b22d8e8d65c21234e4f99f1351069490d5ef1813efedc1f9171d756f25",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118604,7 +118604,7 @@
       "positive_theorem": 583
     },
     "edge_count": 13474,
-    "leaf_count": 1149,
+    "leaf_count": 1148,
     "node_count": 3619,
     "root_count": 1090,
     "runners_with_path": 3252

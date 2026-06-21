@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 212 |
-| **retained_bounded** | 971 |
+| **retained_bounded** | 972 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1589 |
+| unaudited | 1588 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1409 |
+| `audited_clean` | 1410 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1915 |
+| `unaudited` | 1914 |
 
 | claim_type | count |
 |---|---:|
@@ -705,6 +705,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9882,6 +9883,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The monotonicity-based integer uniqueness: (eta(s)/zeta(s))^(1/s) = (7/8)^(1/4) among integer s >= 2 iff s = 4.  _(class `A`)_
 - **chain closes:** True — The eta/zeta identity follows from the odd-even splitting of the absolutely convergent series. Strict monotonicity closes by the log-series comparison with u=2^(-s), since each right-side term (s+1)(2u)^k/k exceeds s u^k/k, and uniqueness at s=4 follows immediately.
 - **rationale:** Independent of the runner, the displayed load-bearing math checks out: g(s+1)>g(s) reduces to s[-log(1-u)] < (s+1)[-log(1-2u)] with u=2^(-s), and the Taylor-series terms compare strictly for every k >= 1 and integer s >= 2. The value g(4)=(1-2^(-3))^(1/4)=(7/8)^(1/4) is exact, so monotonicity gives the claimed integer uniqueness. The dimensional-analysis component is only the exponent bookkeeping [f]=d -> f^(1/d), not an imported framework observable or numerical comparator.
+- **auditor confidence:** high
+
+### `hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06`
+
+- **Note:** [`HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md`](../../docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-algebra audit of the two-bit decomposition on the supplied C3 corner surface: Bit A determinant exponent, Bit B block-weight arithmetic and J_cs measure-neutrality, plus g_bare and chirality orthogonality; no audit of AC_phi_lambda closure or Bit B physical selection.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the supplied C3 corner surface, the selector separates into Bit A, the Berezin determinant power det(M)^{+1}, and Bit B, the block-weight readout choice (1,1) versus (1,2), with J_cs making the count-once reading available but not selecting it.  _(class `A`)_
+- **chain closes:** True — The bounded conclusion follows from exact finite algebra and retained-grade cited authorities. The packet expressly does not claim the physical selector for the count-once Bit B setting.
+- **rationale:** The load-bearing arithmetic and matrix identities are genuine class-A algebra over the supplied surface and retained-grade inputs. The runner source computes the relevant weight ratios, C3/J_cs identities, chirality intersection, and Berezin determinant check rather than importing empirical values. One bosonic-contrast PASS line is hard-coded rather than computed, but it is not load-bearing for the bounded theorem.
 - **auditor confidence:** high
 
 ### `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10`

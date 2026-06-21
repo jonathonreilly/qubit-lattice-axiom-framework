@@ -81,8 +81,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 567 |
-| `high` | 508 |
+| `critical` | 568 |
+| `high` | 507 |
 | `medium` | 929 |
 | `leaf` | 1470 |
 
@@ -91,8 +91,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3123
-- runners with (C) first-principles compute hits: 1675
+- runners classified: 3124
+- runners with (C) first-principles compute hits: 1676
 - runners with (D) external comparator hits: 991
 - decoration candidates (no C, no D): 624
 
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1030 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
@@ -123,7 +123,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |

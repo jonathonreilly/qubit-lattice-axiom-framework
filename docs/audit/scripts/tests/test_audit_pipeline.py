@@ -367,6 +367,19 @@ class BuildCitationGraphParserTest(unittest.TestCase):
             m.REPO_ROOT = original
         self.assertEqual(helpers, {"gate_b_connectivity_tolerance", "plain_helper"})
 
+    def test_legacy_primary_runner_override_is_normalized(self):
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("frontier_gravity_full_self_consistency", "print('ok')\n")
+            runner = m.explicit_primary_runner_path_for_claim(
+                "gravity_full_self_consistency_note"
+            )
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(runner, "scripts/frontier_gravity_full_self_consistency.py")
+
 
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):

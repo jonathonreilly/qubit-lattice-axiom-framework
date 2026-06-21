@@ -111,6 +111,14 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     ],
 }
 
+EXPLICIT_PRIMARY_RUNNER_PATHS = {
+    # Legacy audited note: the source names this runner only in its bottom
+    # "Commands Run" block, which is intentionally not parsed as primary
+    # metadata. Keep the audited note hash stable while exposing the runner
+    # source and cache to future packets.
+    "gravity_full_self_consistency_note": "scripts/frontier_gravity_full_self_consistency.py",
+}
+
 
 AXIOM_PREMISE_NODES_PATH = AUDIT_DATA_DIR / "axiom_premise_nodes.json"
 
@@ -362,6 +370,13 @@ def helper_runner_paths_for_claim(claim_id: str,
     return paths
 
 
+def explicit_primary_runner_path_for_claim(claim_id: str) -> str | None:
+    path = EXPLICIT_PRIMARY_RUNNER_PATHS.get(claim_id)
+    if not path:
+        return None
+    return normalize_runner_path(path)
+
+
 def extract_runner(body: str, rel_path: str | None = None) -> str | None:
     if rel_path and rel_path.startswith("ai_methodology/raw/"):
         return None
@@ -476,7 +491,10 @@ def build_graph() -> dict:
         raw_type, claim_type_hint = extract_claim_type_hint(body)
         legacy_status_hint = extract_legacy_status_claim_type(body)
         claim_type_seed_hint = claim_type_hint or legacy_status_hint
-        primary_runner = extract_runner(body, rel.as_posix())
+        primary_runner = (
+            extract_runner(body, rel.as_posix())
+            or explicit_primary_runner_path_for_claim(cid)
+        )
         nodes[cid] = {
             "claim_id": cid,
             "path": note_path.relative_to(REPO_ROOT).as_posix(),

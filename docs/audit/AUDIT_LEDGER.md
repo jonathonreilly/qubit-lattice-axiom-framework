@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 205 |
+| **retained** | 206 |
 | **retained_no_go** | 206 |
 | **retained_bounded** | 935 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1671 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -62,8 +61,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1358 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1359 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 55 |
 | `audited_failed` | 22 |
@@ -120,7 +119,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1099 | 35.60 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1107,6 +1105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_generation_stratified_ward_free_matrix_no_go_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_mass_spectrum_koide_scheme_open_gate_note_2026-05-26` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -15417,6 +15416,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The provided runner source traces the implemented code path from support eta_floor to tensor_metrics to family_block to e_spatial_tf, scans the relevant functions for eigensolver calls, and dynamically checks endpoint equality to the max-entry observable. That is sufficient for the narrow implementation-boundary claim that the live chain lacks A(phi), lambda_min, and psi.
 - **rationale:** The load-bearing step is a class A implementation identity check, not a first-principles physics computation or an external numerical comparison. The runner is not merely printing PASS lines: its source performs source-text, AST, dynamic endpoint, and exposed-attribute checks that match the note's narrowed conclusion. The No-Go Discipline section is appropriately scoped: it blocks only the Hellmann-Feynman route for the current eta-floor object and explicitly leaves spectral-operator and nonspectral-envelope derivative routes open.
 - **auditor confidence:** medium
+
+### `quark_route2_exact_readout_map_note_2026-04-19`
+
+- **Note:** [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](../../docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact restricted Route-2 carrier/readout reduction, exact endpoint-ratio algebra, and the algebraic non-uniqueness obstruction leaving rho_E=beta_E/alpha_E unfixed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-quark_route2_exact_readout_map_note_2026-04-19-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** With the T-side candidates granted, the reduced family P(rho_E) has identical E-shell normalization for rho_E=0 and rho_E=21/4 but gives different E-center lifts, so the carrier algebra alone does not fix beta_E/alpha_E.  _(class `A`)_
+- **chain closes:** True — The obstruction closes on the stated restricted class: multiplying the displayed carrier columns by P(rho_E) gives shell E readout 1 for all rho_E and center E readout 1+rho_E/6. The note does not claim the exact readout triple is derived; it correctly identifies rho_E=21/4 as the missing map entry.
+- **rationale:** The load-bearing step is exact matrix algebra over the displayed carrier columns and reduced readout family, and the independent hand check matches the runner: rho_E=0 and rho_E=21/4 are both allowed by shell normalization but differ at center E. The endpoint-ratio equivalence also checks algebraically: q_T=5/6, s_TE=-2, c_TE=-8/9 imply q_E=15/8 and rho_E=21/4. The live endpoint replay is used only to show the current surface misses the exact triple, not to prove the obstruction.
+- **auditor confidence:** high
 
 ### `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28`
 

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_records_objectivity_conditional_note_2026-05-31"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06",
         "koide_records_objectivity_conditional_note_2026-05-31",
         "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
         "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13",
         "linear_response_second_order_kubo_note",
         "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12",
         "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
-        "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18"
+        "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
+        "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7c74990dca44554b501226d0a507c4fa0509521fc2f7d251bf993a6e901ad32f",
+      "note_hash": "d31c23a56da9285de5946ff33611fdf6ec9a8edd6f43ff0fea4d2128b85a07f1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

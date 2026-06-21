@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 937 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1682 |
+| unaudited | 1681 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
@@ -47,6 +47,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_mirror_mutual_information_chokepoint_note` | 1 |
+| `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | 1 |
 | `decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_plaquette_self_consistency_note` | 1 |
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
@@ -62,16 +63,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 12 |
 | `audited_clean` | 1348 |
 | `audited_conditional` | 8 |
-| `audited_decoration` | 51 |
+| `audited_decoration` | 52 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 19 |
-| `unaudited` | 2008 |
+| `unaudited` | 2007 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1811 |
-| `decoration` | 52 |
+| `bounded_theorem` | 1810 |
+| `decoration` | 53 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
@@ -1499,6 +1500,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
@@ -1651,6 +1653,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the free staggered operator with eps D eps = -D, K = eps D gives H(m)^2 = K^2 + m^2 I, and the flat-background trace A[1,1] = Tr[eps exp(-t D^dag D)] vanishes.  _(class `A`)_
 - **chain closes:** True — The runner source explicitly constructs the free staggered D and eps grading and verifies the anticommutation, Hermiticity, H(m)^2 identity, spectral gap away from m=0, and vanishing heat-kernel trace. The note does not claim to close P1' or exhibit a nonzero-index background.
 - **rationale:** The load-bearing internal facts are exact finite-dimensional algebra plus direct first-principles matrix checks, with no hard-coded contested premise and no external comparator. CPT_EXACT is retained-grade for the relevant eps-anticommutation pattern, and the runner independently instantiates the free 4D staggered operator used in this note. The external GW-demolition citations are confined to removing a necessity misstatement and are not used to import a nonzero-index construction into the framework chain.
+- **auditor confidence:** high
+
+### `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`
+
+- **Note:** [`ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md`](../../docs/ABJ_SCALE_FREE_NATIVE_ABELIAN_ANOMALY_CORE_BOUNDARY_NOTE_2026-06-18.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Scale-free algebraic anomaly identities and the displayed SU(2)-singlet cancellation witness on the retained graph-first 6+2 left-handed abelian surface, excluding physical U(1) gauging and downstream bridge claims.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the 6 and 2 multiplicities with charges a and -3a gives Tr[Y_a]=0, Tr[Y_a^3]=-48a^3, Tr[SU(3)^2Y_a]=a, Tr[SU(2)^2Y_a]=0, and substituting (4a,-2a,-6a,0) gives matching opposite-chirality anomalies.  _(class `A`)_
+- **chain closes:** True — The cited parent supplies the 6/2 split and 1:-3 traceless abelian ratio; the audited note only rescales that ratio and evaluates standard finite anomaly sums. The completion branch is an explicit algebraic witness whose displayed traces match the left-handed values with the stated opposite-chirality sign.
+- **rationale:** The load-bearing work is exact algebra over the single retained-grade decorated parent and standard T(F)=1/2 normalization. The runner source performs symbolic and rational arithmetic for the anomaly identities and witness, while the remaining PASS checks are source-firewall string checks rather than independent physics derivations. No external comparator, fitted normalization, or tuned scale is used. Because the chain is a class-A corollary of one upstream surface rather than a new first-principles computation, the conservative verdict is audited_decoration.
+- **decoration parent:** `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23`
 - **auditor confidence:** high
 
 ### `acphilambda_hw_complementation_equivariance_support_note_2026-06-09`

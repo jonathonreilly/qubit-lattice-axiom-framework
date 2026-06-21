@@ -18,3 +18,4 @@ Pre-PR self-firewall status:
 - A parent bridge-assessment verifier had a current-main `1.06 * EXACT_TOL`
   cross-module replay difference; the branch repairs only that tolerance.
 - Staged diff and overclaim scans passed before commit.
+- PR #4578 identity-only verification passed after creation.

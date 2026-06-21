@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 203 |
+| **retained** | 204 |
 | **retained_no_go** | 205 |
 | **retained_bounded** | 929 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1680 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 6 |
-| `audited_clean` | 1347 |
+| `audit_in_progress` | 5 |
+| `audited_clean` | 1348 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 22 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -764,6 +762,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10506,6 +10505,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every circulant mass operator H = aI + bC + conj(b)C^2 commutes with Jcs for all r, so orienting Jcs does not choose the modulus.  _(class `A`)_
 - **chain closes:** True — The key identities close by polynomial algebra in C: Jcs^2 = -P_doublet and [aI + bC + conj(b)C^2, Jcs] = 0 because both are in the circulant algebra. The anticommuting subclaim also closes in the Gamma_chi eigenspace block form, where a symmetric anticommutant has spectrum {-s, 0, +s}.
 - **rationale:** All cited authorities in the restricted packet are retained-grade, and the source uses them only for bounded algebraic support and for preserving the open measure-selector residual. Independent checks reproduce the signs and factors for Jcs, P_doublet, the holomorphic projector, the Frobenius-Schur indicator, Q(r) = (1 + 2r)/3, and the r = 1/2 versus r = 1 measure fork. The runner source mostly computes the finite identities directly; its narrative measure-fork line is not treated as authority, but the same formula follows from the displayed block-energy algebra.
+- **auditor confidence:** high
+
+### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Pure linear algebra on Herm_circ(3): the projector decomposition, Frobenius block totals, equal-weight log extremum at kappa = 2, and d = 3 uniqueness of the clock-action real-irrep pattern among d in {2,3,4,5,6}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Trace-orthogonality of the circulant powers gives the orthogonal real decomposition H = aI + (bC + bbar C^2), the Frobenius totals E_+ = 3a^2 and E_perp = 6|b|^2, and the equal-weight positive-simplex extremum therefore occurs at E_+ = E_perp, i.e. kappa = 2.  _(class `A`)_
+- **chain closes:** True — T1-T3 close by direct trace, Frobenius, and Lagrange-multiplier identities for the stated circulant Hermitian family. T4 closes from the retained clock-action character decomposition plus the finite d = 2..6 multiplicity count.
+- **rationale:** The load-bearing content is exact matrix algebra and elementary finite cyclic representation counting. The runner source symbolically checks the projector identities, Frobenius totals, Lagrange equations, Hessian signs, and finite multiplicity table, with PASS=67 FAIL=0 and all checks class A. The only cited authority is marked retained and supplies the nontrivial clock-action character bridge needed for the isotype labels. The note explicitly excludes the F1-vs-F3 weighting-selection and physical charged-lepton identification questions, so no open physical bridge or empirical comparator is load-bearing.
 - **auditor confidence:** high
 
 ### `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19`

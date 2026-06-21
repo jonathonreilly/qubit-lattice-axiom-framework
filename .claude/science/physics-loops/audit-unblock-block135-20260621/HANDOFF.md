@@ -11,13 +11,13 @@ Block135 makes the source-graph cycle repair workflow executable:
   live links into that skipped cross-reference section.
 - tests cover both behaviors.
 
-The live dry-run on the current stacked base reports:
+The live dry-run after rebasing onto `origin/main` at `dea100014` reports:
 
-- cycles named: 9
-- unique source notes: 9
-- total cycle edges to process: 10
-- live markdown links found: 9
-- missing/not-found planned links: 1
+- cycles named: 8
+- unique source notes: 4
+- total cycle edges to process: 12
+- live markdown links found: 2
+- missing/not-found planned links: 10
 
 ## Boundary
 
@@ -30,18 +30,17 @@ audit-support churn. The final branch intentionally keeps only tooling/tests.
 
 ## Verification
 
-- `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.BuildCitationGraphParserTest docs.audit.scripts.tests.test_audit_pipeline.SourceGraphRepairPassTest docs.audit.scripts.tests.test_audit_pipeline.PrecomputeAuditRunnersTest` -> 11 tests passed.
-- `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 83 tests passed.
+- `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.BuildCitationGraphParserTest docs.audit.scripts.tests.test_audit_pipeline.SourceGraphRepairPassTest` -> 7 tests passed.
+- `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 79 tests passed.
 - `python3 -m py_compile docs/audit/scripts/build_citation_graph.py scripts/source_graph_repair_pass.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK.
 - `python3 scripts/source_graph_repair_pass.py` -> dry-run complete.
-- `python3 scripts/precompute_audit_runners.py --all --check-only --allow-non-main` -> `fresh: 3123`, `stale to refresh: 0`, `missing on disk: 0`.
+- `python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --allow-non-main` -> `fresh: 0`, `stale to refresh: 0`, `missing on disk: 0`.
 - `git diff --check` -> OK.
 
 ## Next Exact Action
 
-Monitor PR #4505. After the support-refresh stack lands or can be used as a
-base, create a follow-up source-note repair PR that runs `--apply` and
-regenerates the pipeline with a narrow diff.
+Monitor PR #4505 after the current-main rebase. If it stays clean, rebase the
+follow-up source-note repair PR on top of this tooling branch.
 
 ## PR
 

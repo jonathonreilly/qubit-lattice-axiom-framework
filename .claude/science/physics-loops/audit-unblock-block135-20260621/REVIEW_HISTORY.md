@@ -4,11 +4,14 @@ Status: pass.
 
 Checks run:
 
-- `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.BuildCitationGraphParserTest docs.audit.scripts.tests.test_audit_pipeline.SourceGraphRepairPassTest docs.audit.scripts.tests.test_audit_pipeline.PrecomputeAuditRunnersTest` -> 11 tests passed.
-- `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 83 tests passed.
+- `git rebase --onto origin/main 66889cadc` -> one conflict in
+  `docs/audit/scripts/tests/test_audit_pipeline.py`; resolved by keeping the
+  block135 helper imports in the current main test file.
+- `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.BuildCitationGraphParserTest docs.audit.scripts.tests.test_audit_pipeline.SourceGraphRepairPassTest` -> 7 tests passed.
+- `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 79 tests passed.
 - `python3 -m py_compile docs/audit/scripts/build_citation_graph.py scripts/source_graph_repair_pass.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK.
-- `python3 scripts/source_graph_repair_pass.py` -> dry-run complete; 9 cycles named, 9 source notes, 9 live links found.
-- `python3 scripts/precompute_audit_runners.py --all --check-only --allow-non-main` -> `fresh=3123`, `stale=0`, `missing=0`.
+- `python3 scripts/source_graph_repair_pass.py` -> dry-run complete; 8 cycles named, 4 source notes, 2 live links found, 10 planned links already absent.
+- `python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --allow-non-main` -> `fresh=0`, `stale=0`, `missing=0`.
 - `git diff --check` -> OK.
 
 Review notes:

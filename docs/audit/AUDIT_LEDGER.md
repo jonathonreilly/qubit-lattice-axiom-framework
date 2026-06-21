@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 997 |
+| **retained_bounded** | 998 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1543 |
+| unaudited | 1542 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1442 |
+| `audited_clean` | 1443 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1869 |
+| `unaudited` | 1868 |
 
 | claim_type | count |
 |---|---:|
@@ -362,6 +362,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d3_native_stable_orbit_upper_bound_composition_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5010,6 +5011,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** False — The Bernoulli coefficient, oscillator determinant algebra, sign, and cubic Hessian substitution close once the magnetic degeneracy and level-sampling bridge are granted. The restricted packet does not derive or cite the Peierls magnetic-translation degeneracy B/(2*pi), finite-torus counting, or saddle-patch analytic continuation needed for the full Brillouin-zone formula.
 - **rationale:** Issue: the load-bearing normalization step uses degeneracy B/(2*pi) and analytic continuation of the elliptic oscillator coefficient to saddle patches without a cited retained theorem or runner construction from the Peierls translation algebra. Why this blocks: the -1/12 full-Brillouin-zone coefficient depends on those physical bridge inputs, while the runner mostly verifies exact algebra after the bridge is assumed and includes one hard-coded parent-reference comparison. Repair target: add a restricted-packet theorem or finite-torus/Peierls runner deriving the degeneracy and continuation within the declared spinless single-band scope. Claim boundary until fixed: the midpoint Euler-Maclaurin and Hessian determinant algebra are internally consistent and support the elliptic local coefficient conditional on those bridge premises.
 - **auditor confidence:** medium
+
+### `d3_native_stable_orbit_upper_bound_composition_note_2026-06-09`
+
+- **Note:** [`D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md`](../../docs/D3_NATIVE_STABLE_ORBIT_UPPER_BOUND_COMPOSITION_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded source-side finite-set composition: the checked lower packet {3,4,5} combined with the native stable-circular-orbit edge d <= 3 selects {3}, while the Coulomb d <= 4 companion remains non-selective.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-d3_native_stable_orbit_upper_bound_composition_note_2026-06-09-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** L_runner intersect U_stable = {3,4,5} intersect {d : d <= 3} = {3}.  _(class `A`)_
+- **chain closes:** True — The cited retained-bounded lower note supplies L_runner = {3,4,5}, and the retained-bounded stable-orbit support supplies the scoped upper edge d <= 3. The claimed singleton result is the direct set intersection, with the Coulomb edge correctly kept companion-only.
+- **rationale:** The load-bearing step is class A finite-set algebra over retained-bounded one-hop authorities, not a new first-principles physics derivation. The runner source checks packet/citation/cache consistency and executes the relevant set intersections; it does not use an external comparator or tuned numerical match. The note's non-claims keep the audited scope to the additive bounded composition and do not consume the full Bertrand closed-orbit theorem, a hydrogenic spectrum theorem, or a full framework dimension-selection theorem.
+- **auditor confidence:** high
 
 ### `d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13`
 

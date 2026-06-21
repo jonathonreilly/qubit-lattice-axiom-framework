@@ -3,7 +3,7 @@ mode: axiom-update-proposal
 target_status: best-honest-status (no-new-axiom cracks preferred; else candidate axiom-update proposals)
 launch_date: "2026-06-20"
 last_checkpoint_utc: "2026-06-20T19:30:00Z"
-current_branch: physics-loop/axiom-update-proposals-block02-20260620
+current_branch: physics-loop/axiom-update-proposals-block04-20260620
 status_authority: independent audit lane / owner only
 hypothetical_axiom_status: "conditional on accepted new axiom; not retained on the actual current surface"
 
@@ -157,10 +157,80 @@ block02:
     - logs/runner-cache/sk1_baxis_n2b_kinform_scale_join_2026_06_20.txt
     - logs/runner-cache/frontier_abj_pabj_evaluation_complex_imbalance_2026_06_20.txt
 
+block03:
+  scope: "last untested no-axiom lead for the B-AXIS N2b spacing residual a_tau/a_s — the no-diagonal clause kinetic_isotropy names as the spacing-ratio supplier"
+  outcome: "WALL; no crack lands; the a_tau/a_s spacing residual is real (-> block04 SPACING primitive)"
+  verification:
+    runners:
+      - {path: scripts/baxis_n2b_no_diagonal_spacing_crack_2026_06_20.py, total: "PASS=17 FAIL=0"}
+  files_written:
+    - docs/BAXIS_N2B_ATAU_NO_DIAGONAL_CRACK_ATTEMPT_NOTE_2026-06-20.md
+    - .claude/science/physics-loops/axiom-update-proposals/block03_section_NODIAG.md
+
+block04:
+  scope: >
+    AXIOM MINIMIZATION / UNIFICATION — does ONE operational measurement-with-readout
+    axiom subsume BOTH C1 (dynamics/arrow) AND C2 (readout-context/objectivity)? Is
+    it strictly weaker than C1+C2, policy-preferred, and independent of its residuals?
+    Does C3 fold? Optimizes AXIOM_MINIMALITY_POLICY.md (weakest sufficient,
+    non-redundant, independent, no-laundering).
+  unified_axiom_id: MEAS-REC-READOUT
+  collapse_verdict: partial_collapse
+  outcome: >
+    PARTIAL COLLAPSE. One unified operational axiom MEAS-REC-READOUT folds C1's FULL
+    discharge set (B-AXIS N4 registration-direction + N5 single-clock + arrow +
+    N2b-step + record-formation floor) AND C2's basis/identification half (observable
+    T1-d det-readout W=c log det + P-REC single-taste pointer + Koide objectivity-BASIS
+    / 2-outcome alphabet). It is STRICTLY WEAKER than C1+C2 stated separately
+    (Cons(U) 9-atom STRICT subset of Cons(C1-sep AND C2-sep) 10-atom; single missing
+    atom = equal_block_weight; converse fails; U admits strictly more models) and is
+    PREFERRED by AXIOM_MINIMALITY_POLICY.md on all four criteria. {U, W, S} mutually
+    independent by countermodel; W and S orthogonal dials. C3 does NOT fold (gauge
+    content = gate-3 category, distinct from measurement existence = gates 1/2).
+  does_not_collapse:
+    - "C2-WEIGHT: equal-block (1,1) sector-MEASURE weight t=1 (pins Koide r=1/2). DECISIVE per koide block02 R2/R3 weight-blindness: SBS objectivity weight-blind (plateau=H(weights) for both (1/2,1/2) and (1/3,2/3)) AND einselection fixed point I/3 -> (1/3,2/3) -> r=1 gives t=2 (wrong). Separate max-entropy/indifference datum."
+    - "SPACING: time-edge spacing a_tau/a_s (Lattice disavows spacing; block02 SK-1 + block03 NODIAG walled; 6-NN adjacency metric-blind). One dimensionless ratio."
+  final_minimal_set:
+    - "MEAS-REC-READOUT (U) — unified operational measurement-with-readout axiom (folds C1 + C2-basis); strictly weaker than C1+C2; weak-medium"
+    - "C2-WEIGHT (W) — equal-block/indifference sector-measure weight t=1; independent of U; weak"
+    - "SPACING (S) — time-edge spacing a_tau/a_s; independent of U and W; weak"
+    - "PIN-GAUGE-CONTENT (C3/G) — gauge content; categorically separate; does NOT fold; heavy; unchanged from block01"
+  coverage_vs_3axiom: >
+    SAME coverage, MORE minimal. {U, W, S, C3} discharges the IDENTICAL walls as
+    block01 {C1, C2} with no coverage loss / no over-reach; two operational axioms
+    become ONE strictly-weaker operational axiom, the equal-block weight (C2 silently
+    bundled) and the spacing (implicit C1-N2b residual) are NAMED and ISOLATED as the
+    weakest separate data. Owner should PREFER block04 {U, W, S, C3}. C3 identical.
+  verification:
+    aggregate: "PASS=67 FAIL=0 across two block04 runners (39 + 28)"
+    reproduced_utc: "2026-06-21"
+    reproduced: true
+    no_empirical_import: true
+    deterministic: true
+    no_forbidden_file_touched: true   # docs/audit/data/ read-only; no axiom_premise_nodes.json edit; no git ops
+    reuses_block01_runner_legs: true
+    runner_bug_caught: "minimality runner first draft double-counted color in Tr[SU3^2 Y] (extra n_color); FOLD(ii) FAILed and exposed it; fixed -> banked LH traces reproduce (-16/9, +1/3, +2)"
+    runners:
+      - {path: scripts/axiom_update_unified_measurement_axiom_sufficiency_2026_06_21.py, total: "PASS=39 FAIL=0"}
+      - {path: scripts/axiom_update_unified_axiom_minimality_independence_2026_06_21.py, total: "PASS=28 FAIL=0"}
+  files_written:
+    - docs/AXIOM_UPDATE_PROPOSAL_UNIFIED_OPERATIONAL_MEASUREMENT_2026-06-20.md
+    - docs/AXIOM_UPDATE_PROPOSALS_CONSOLIDATED_2026-06-20.md   # additive dated BLOCK04 UNIFICATION section appended
+    - .claude/science/physics-loops/axiom-update-proposals/CLAIM_STATUS_CERTIFICATE_block04.md
+    - .claude/science/physics-loops/axiom-update-proposals/STATE.yaml
+  pre_existing_block04_files:
+    - .claude/science/physics-loops/axiom-update-proposals/block04_section_SUFFICIENCY.md
+    - .claude/science/physics-loops/axiom-update-proposals/block04_section_MINIMALITY.md
+    - scripts/axiom_update_unified_measurement_axiom_sufficiency_2026_06_21.py
+    - scripts/axiom_update_unified_axiom_minimality_independence_2026_06_21.py
+    - logs/runner-cache/axiom_update_unified_measurement_axiom_sufficiency_2026_06_21.txt
+    - logs/runner-cache/axiom_update_unified_axiom_minimality_independence_2026_06_21.txt
+
 next_exact_action: >
-  Owner governance decision on the candidate set (sequence C1 then C2; defer C3).
-  SK-1 / SK-2 are now resolved (both WALL; C1 N2b and C3 P-ABJ clauses confirmed
-  needed). Optional follow-up block: attempt the SK-1 no-diagonal-clause spacing
-  derivation for a_tau (the only remaining no-axiom lead for N2b). Independent
-  audit lane to set status.
-stop_condition: "block02 open-cracks resolution delivered; both walls confirmed; awaiting owner governance decision / audit-lane review"
+  Owner governance decision on the MINIMIZED candidate set
+  {MEAS-REC-READOUT, C2-WEIGHT, SPACING, PIN-GAUGE-CONTENT} (block04 unification):
+  prefer the unified operational axiom (one act folding C1 + C2-basis, strictly
+  weaker than C1+C2) plus the two isolated residual data (equal-block weight;
+  a_tau/a_s spacing), with C3 categorically separate and unchanged. All UNADOPTED;
+  independent audit lane to set status.
+stop_condition: "block04 unification synthesis delivered (PARTIAL COLLAPSE; PASS=67 FAIL=0); minimal set {U, W, S, C3} recorded; awaiting owner governance decision / audit-lane review"

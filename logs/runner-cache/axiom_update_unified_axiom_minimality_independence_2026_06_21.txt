@@ -1,0 +1,71 @@
+========================================================================
+BLOCK04 -- MINIMALITY + RESIDUAL-ISOLATION: is the UNIFIED measurement
+           axiom strictly weaker, policy-preferred, and INDEPENDENT of the
+           residual data primitives? does C3 fold? (expect NO)   2026-06-21
+========================================================================
+
+Post-unification candidate set (all UNADOPTED):
+  U  = MEAS-REC-READOUT (one measurement-with-readout existence slot;
+        folds C1 dynamics/arrow + C2 basis/identification half)
+  W  = C2-WEIGHT  (equal-block (1,1) sector-measure weight t=1; indifference datum)
+  S  = SPACING    (one dimensionless time-edge spacing a_tau/a_s)
+  G  = PIN-GAUGE-CONTENT / C3 (gauge group + chirality template; tested for folding)
+
+------------------------------------------------------------------------
+[0] STRICTLY WEAKER: logical content / consequence-set comparison
+------------------------------------------------------------------------
+  [PASS] Cons(U) is a SUBSET of Cons(C1-sep AND C2-sep) -- the unified axiom entails NO consequence the two separate axioms do not (no over-reach)  -- Cons(U) has 9 atoms, all inside the 10-atom two-axiom set
+  [PASS] Cons(U) is a STRICT subset (the two-axiom conjunction entails STRICTLY MORE) -> U is strictly WEAKER by consequence-set content  -- the two-axiom set entails ['equal_block_weight'] which U does NOT
+  [PASS] the single witnessing extra consequence is the equal-block WEIGHT (C2-sep's R1 face carries t=1; U is weight-blind) -> exactly ONE atom of extra logical content distinguishes them  -- extra content = ['equal_block_weight'] (the C2-WEIGHT residual, isolated)
+  [PASS] MODEL-COUNT sense: a logically weaker axiom admits MORE models (constrains less). U fixes fewer atoms (9) than C1&C2 (10) => U admits >= as many models  -- #models(U)=2^1=2 >= #models(C1&C2)=2^0=1
+  [PASS] CONVERSE FAILS: C1-sep AND C2-sep is NOT derivable from U alone (U does not entail the weight atom) -> U is strictly weaker, not equivalent  -- U |/= equal_block_weight, so {C1-sep & C2-sep} carries content U lacks
+
+------------------------------------------------------------------------
+[1] INDEPENDENCE by COUNTERMODEL: none of {U, W, S} derivable from A_min + the others
+------------------------------------------------------------------------
+  [PASS] [CM] U INDEPENDENT of {A_min,W,S}: the H=0 (no-dynamics) baseline is A_min-consistent and supplies NO record floor (|coh| frozen at 0.5 for all #env) -- yet it is compatible with ANY weight t and ANY spacing a_tau/a_s  -- |coh|(N=1..64)=[0.5, 0.5, 0.5, 0.5, 0.5] (no einselection => U not forced)
+  [PASS] [CM] U INDEPENDENT: setting the weight to equal-block (t=1) and the spacing to any ratio does NOT create record-producing dynamics -> {A_min, W, S} does not entail U (the unified axiom adds genuinely new dynamics content)  -- weight + spacing are static data; neither sources a CPTP einselecting generator
+  [PASS] [CM] W INDEPENDENT of {A_min,U,S} (i): with U in force, SBS objectivity is weight-blind -- plateau = H(weights) is objective for BOTH t=1 and t=2 -> U does not select t  -- H(t=1)=1.0000 bit, H(t=2)=0.9183 bit; both objective
+  [PASS] [CM] W INDEPENDENT of {A_min,U,S} (ii): the einselection FIXED POINT (U's dynamics clause) lands at the RANK weights (1/3,2/3) => t=2 (r=1), NOT the equal-block t=1 -> U's dynamics gives the WRONG value, so W is a SEPARATE datum  -- fixed-point weights=(np.float64(0.3333), np.float64(0.6667)), r=1.0000 (t=2, not t=1)
+  [PASS] [CM] W INDEPENDENT of {A_min,U,S}: a countermodel with U+S satisfied but the weight set to the rank face (t=2) is A_min-consistent and VIOLATES W (t!=1) -> W not derivable from {A_min,U,S}  -- model {U on, S any, t=2} satisfies A_min+U+S but not W => independence
+  [PASS] [CM] S INDEPENDENT of {A_min,U,W}: the 6-NN adjacency edge set is IDENTICAL for a_tau/a_s = 1, 10, 0.137 (predicate |dx|+|dy|+|dz|=1 carries no spacing) -> the value of a_tau/a_s is unconstrained by A_min + U + W  -- edge set size=6 for every ratio (Lattice disavows spacing; block03 NODIAG)
+  [PASS] [CM] S INDEPENDENT of {A_min,U,W}: the measurement rate gamma (U clause a) fixes a half-life in DYNAMICS TICKS, not the dimensionful a_tau -> a model with U+W on at any a_tau/a_s satisfies A_min+U+W and VIOLATES a fixed S value  -- ticks (dynamics) vs metric edge (geometry) are orthogonal => S not derivable
+  [PASS] [CM] MUTUAL INDEPENDENCE of {U, W, S}: each has a countermodel (A_min + the other two satisfied, the target violated) -> the three are mutually independent, none derivable from A_min + the others  -- U: no-record baseline; W: rank-face model (t=2); S: any-ratio model
+
+------------------------------------------------------------------------
+[2] ORTHOGONAL DIALS: t and a_tau/a_s independent dials; measurement witnesses blind to both
+------------------------------------------------------------------------
+  [PASS] [ORTH] vary the WEIGHT dial t in {1/2,1,2,7/3}: the SPACING witness (adjacency edge set) is UNCHANGED -> t does not leak into the spacing  -- the metric adjacency predicate is independent of the sector weight ratio
+  [PASS] [ORTH] vary the SPACING dial a_tau/a_s in {1,10,0.137,3.3}: the WEIGHT witness Koide r*=w_p/(2w_s) at t=1 is UNCHANGED (=0.5) -> spacing does not leak into the weight  -- r*(t=1)=0.5000 for every spacing ratio
+  [PASS] [ORTH] vary BOTH dials (t and a_tau/a_s) arbitrarily: the MEASUREMENT witnesses are UNCHANGED -- arrow monotone, einselection floor->0, pointer alphabet=2 outcomes -> the measurement axiom reads NEITHER dial  -- arrow rises=True, floor->1.2e-10, alphabet=2
+  [PASS] [ORTH] the three dials are mutually orthogonal: {measurement existence}, {sector weight t}, {spacing a_tau/a_s} -- each observable depends on exactly ONE primitive's datum and is blind to the other two  -- no cross-leakage among the three independent data => clean residual isolation
+
+------------------------------------------------------------------------
+[3] C3 FOLD TEST: can PIN-GAUGE-CONTENT fold into U? (expect NO -- categorically distinct)
+------------------------------------------------------------------------
+  [PASS] [FOLD] (i) MEASUREMENT blind to GAUGE: the einselection/arrow/floor witnesses are computed from the dephasing dynamics + central decomposition ONLY -- they do NOT read the chirality grading E or any anomaly trace  -- the measurement act fixes basis+dynamics+objectivity; it says nothing about gauge content
+  [PASS] [FOLD] (i) the gauging-SELECTION discriminators are blind to the measurement act: the chirality grading commutes with color generators (||[E,T]||=0) -- adding U changes none of the four published discriminators  -- ||[E,lambda3]||=0.0e+00, ||[E,lambda8]||=0.0e+00 (gauging gate stays open under U)
+  [PASS] [FOLD] (ii) GAUGE content blind to MEASUREMENT: the LH one-generation anomaly traces are fixed rationals (Tr[Y^3]=-16/9, Tr[SU3^2 Y]=+1/3, SU3^3=+2) computed with NO measurement object -> the content gate is not a measurement question  -- Tr[Y^3]=-16/9, Tr[SU3^2 Y]=1/3, SU3^3=2 (anomalous; pure content)
+  [PASS] [FOLD] (ii) the COMPLETION's chirality (P-COMP) is a pure content fact: the SM chiral RH template (4/3,-2/3,-2,0) cancels all six AND is genuinely chiral (not vector-like) -- decided with NO measurement object  -- all six cancel=True, vector-like=False (chiral content, not a pointer fact)
+  [PASS] [FOLD] DECISIVE: gauge group + chiral matter REPRESENTATIONS are a content-choice datum (gate 3), categorically distinct from a measurement-interaction EXISTENCE datum (gates 1/2). Neither's witnesses move the other's -> C3 does NOT fold into U  -- measurement |/= a choice of gauge reps; gauge content |/= a measurement interaction
+  [PASS] [FOLD] folding C3 into U would be a CATEGORY ERROR (and policy-laundering): it would smuggle a particle-content choice into an operational axiom -> PIN-GAUGE-CONTENT stays a SEPARATE candidate, exactly as expected (NO fold)  -- C3 remains its own gate-3 candidate; the unification touches only gates 1/2
+
+------------------------------------------------------------------------
+[4] POLICY minimality: weakest sufficient / non-redundant / independent / no laundering
+------------------------------------------------------------------------
+  [PASS] WEAKEST SUFFICIENT: U is the weakest single axiom that derives the dynamics + pointer-basis + objectivity-basis content (PART 0 strict-subset); dropping any clause loses a discharge, strengthening it over-reaches (and would clash with weight-blindness)  -- weakest sufficient for gates 1/2; carries no weight/probability/spacing/sign
+  [PASS] NON-REDUNDANT: U does NOT subsume W or S (PART 1 countermodels) -> the three data are each load-bearing and none is redundant given the others + A_min  -- the unified axiom + two residual data are a non-redundant generating set
+  [PASS] INDEPENDENT: {U, W, S} are mutually independent (PART 1) and C3 is categorically separate (PART 3) -> the four candidates are pairwise independent, no laundering of one into another  -- policy 'independent' criterion met for the whole post-unification set
+  [PASS] ADMISSIBILITY / NO LAUNDERING: U adds content the MINIMAL_AXIOMS memo declares OUTSIDE axiom content (gates 1+2), recorded as an unmade science-level decision (policy section 1/4); it does NOT reword Lattice/Quantum/Record and edits no registry  -- Record verbatim declines dynamics+weighting+occupancy; U supplies the dynamics+basis as a separate decision
+  [PASS] NET MINIMAL SET (count): block01 {C1,C2,C3} -> post-unification {U, W, S, C3} where the MEASUREMENT ACT is one axiom and the two things it provably cannot supply (weight; spacing) are isolated as their own weakest data  -- weakest-sufficient/non-redundant/independent target met; nothing adopted
+
+========================================================================
+TOTAL: PASS=28 FAIL=0
+========================================================================
+
+Every [COND] line is conditional on an UNADOPTED primitive; every [CM] line
+exhibits an INDEPENDENCE COUNTERMODEL; every [ORTH] line a dial-orthogonality
+check; every [FOLD] line a C3 categorical-distinctness check. This runner
+adopts NOTHING and sets no audit verdict. hypothetical_axiom_status:
+conditional on accepted new axiom; not retained on the actual current
+surface. Status authority: independent audit lane / owner only.

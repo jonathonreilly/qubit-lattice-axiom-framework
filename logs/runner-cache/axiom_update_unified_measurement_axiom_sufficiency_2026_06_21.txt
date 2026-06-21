@@ -1,0 +1,90 @@
+========================================================================
+BLOCK04 -- UNIFICATION: one MEASUREMENT-WITH-READOUT axiom vs C1 (+) C2
+            sufficiency + the residual that does NOT collapse  2026-06-21
+========================================================================
+
+Candidate UNIFIED axiom MEAS-REC-READOUT (UNADOPTED): a system-environment
+measurement interaction producing durable records, supplying AT ONCE
+  (a) einselecting CPTP dynamics e^{tL} with ORIENTATION  (= C1)
+  (b) pointer BASIS = central-sector / K-CPT decomposition (= C2 context)
+  (c) OBJECTIVITY / SBS broadcast readout criterion, BASIS (= C2 selector).
+Test: does ONE axiom derive BOTH C1's and C2's discharge sets? And what is
+NOT supplied (per koide R2 weight-blindness + the N2b spacing primitive)?
+
+------------------------------------------------------------------------
+[0] PRE-CHECK: dynamics gate and readout gate are distinct open gates
+------------------------------------------------------------------------
+  [PASS] the two block01 candidates live in DIFFERENT open gates of MINIMAL_AXIOMS_2026-06-05 (dynamics gate vs readout-context gate)  -- C1 gate = arrow/measurement/decoherence/record-production dynamics; C2 gate = readout context/sector measure/objectivity/occupancy
+  [PASS] the unification is non-trivial: neither gate's content is derivable from the other on the current surface (R3 below shows dynamics does NOT pin the measure; the measure does NOT supply dynamics)  -- a single axiom spanning both is a genuine reduction of axiom COUNT, not a reword
+
+------------------------------------------------------------------------
+[1] MEAS-REC-READOUT => C1 discharge set (B-AXIS N4 / N5 / arrow [+N2b-step])
+------------------------------------------------------------------------
+  [PASS] baseline (wall genuine): periodic staggered surface is EXACTLY W-invariant (axis label underivable from the static surface)  -- ||W M W^T - M|| = 0.00e+00
+  [PASS] [COND] C1.arrow DISCHARGES from clause (a): the einselecting CPTP dynamics' ORIENTATION is the record-monotone direction (a unitary step has no monotone)  -- record proxy = [0.0, 1.0, 1.0, 1.0, 1.0, 1.0] (rises as |coh| falls)
+  [PASS] [COND] C1.N5 DISCHARGES from clause (a): ONE measurement generator yields ONE monotone record order even across two factors -> a single production clock  -- joint |coh|/0.5 = [0.5, 0.467, 0.376, 0.248, 0.113, 0.0] (single monotone)
+  [PASS] [COND] C1.N4 DISCHARGES from clause (a): the measurement ORIENTATION is the registration direction (PIN-REG); a per-axis registration datum breaks the exchange EXACTLY -> selects ONE temporal axis  -- ||W M_ap W^T - M_ap|| = 8.0000 > 0
+  [PASS] [COND] C1.N4 falsification leg: SYMMETRIC BCs RESTORE the exchange -> the selecting content is the per-axis registration ASYMMETRY (one orientation)  -- ||W M_both W^T - M_both|| = 0.00e+00 (restored)
+  [PASS] [COND] C1.N2b-STEP DISCHARGES from clause (a): the generator carries a rate gamma with a well-defined record half-life (the dynamics-side STEP EXISTS)  -- record half-life at t=0.415
+  [PASS] [COND] C1.floor DISCHARGES from clause (a): |coh| -> 0 as #env copies grows (durable, redundantly-broadcast record = einselection / Quantum Darwinism)  -- |coh|(N=1,2,4,16,64) = [0.3536, 0.25, 0.125, 0.002, 0.0]
+  [PASS] [COND] C1 SET fully discharged by clauses (a)+(c) of the SINGLE unified axiom (no separate dynamics axiom needed beyond MEAS-REC-READOUT)  -- arrow + N5 + N4 + N2b-step + floor all follow from the one measurement act
+
+------------------------------------------------------------------------
+[2] MEAS-REC-READOUT => C2 set: T1-d det-readout, P-REC pointer, objectivity-BASIS of Koide (BASIS only)
+------------------------------------------------------------------------
+  [PASS] [COND] C2.R4 (form half, theorem): det multiplicative under composition det(A.S)=detA.detS; trace is NOT a character (SKb, no axiom)  -- GL(n) abelianization
+  [PASS] [COND] C2.R4 DISCHARGES from clauses (b)+(c): the readout-context IDENTIFICATION + Record-additivity over disjoint records => Cauchy => W = c log det (c=1 conv.)  -- max|W(Z1 Z2)-W(Z1)-W(Z2)| = 8.88e-16 for W=log det
+  [PASS] [COND] C2.R5 (no-go leg): Cl(3) volume omega = s1 s2 s3 = iI is central in M_2(C) -> no per-site gamma_5 (the taste pointer cannot be on-site)  -- omega = 0.00+1.00j,0.00+1.00j (== iI)
+  [PASS] [COND] C2.R5 DISCHARGES from clause (b): no on-site anticommutant of the Pauli triple -> the single-taste pointer is the MEASUREMENT pointer basis (one outcome per irreducible Dirac/taste factor)  -- the taste/chirality pointer is exactly clause (b)'s central decomposition
+  [PASS] [COND] Koide BASIS leg: SBS broadcast (clause c) gives full redundant objectivity (plateau = H=1.0000 bits) over the 2 K-real outcomes for weights (0.5, 0.5)  -- objectivity establishes the 2-OUTCOME pointer alphabet (the basis), all weights
+  [PASS] [COND] Koide BASIS leg: SBS broadcast (clause c) gives full redundant objectivity (plateau = H=0.9183 bits) over the 2 K-real outcomes for weights (0.333, 0.667)  -- objectivity establishes the 2-OUTCOME pointer alphabet (the basis), all weights
+  [PASS] [COND] Koide BASIS leg: SBS broadcast (clause c) gives full redundant objectivity (plateau = H=0.7219 bits) over the 2 K-real outcomes for weights (0.2, 0.8)  -- objectivity establishes the 2-OUTCOME pointer alphabet (the basis), all weights
+  [PASS] [COND] Koide OBJECTIVITY-BASIS DISCHARGES from clauses (b)+(c): the central decomposition + SBS broadcast fix the pointer alphabet = 2 outcomes (singlet | doublet) = the #blocks (= 2 terms in the capacity lever)  -- the BASIS / alphabet part of Koide is supplied; the WEIGHT is NOT (PART 3)
+  [PASS] [COND] C2 SET (basis/identification half) discharged by clauses (b)+(c): T1-d det-readout + P-REC pointer + Koide objectivity-BASIS all follow from the one measurement-with-readout act  -- the pointer-basis / readout-context / objectivity-basis content is unified
+
+------------------------------------------------------------------------
+[3] RESIDUAL (does NOT collapse): the equal-block (1,1) sector-MEASURE WEIGHT
+------------------------------------------------------------------------
+  [PASS] [RESIDUAL] capacity max r* = w_p/(2w_s): (w_s,w_p)=(1,0) -> r*=0.0000, Q=0.3333 (continuous in t)  -- the pointer basis fixes #blocks=2, never the ratio t
+  [PASS] [RESIDUAL] capacity max r* = w_p/(2w_s): (w_s,w_p)=(1,1) -> r*=0.5000, Q=0.6667 (continuous in t)  -- the pointer basis fixes #blocks=2, never the ratio t
+  [PASS] [RESIDUAL] capacity max r* = w_p/(2w_s): (w_s,w_p)=(1,2) -> r*=1.0000, Q=1.0000 (continuous in t)  -- the pointer basis fixes #blocks=2, never the ratio t
+  [PASS] [RESIDUAL] capacity max r* = w_p/(2w_s): (w_s,w_p)=(2,1) -> r*=0.2500, Q=0.5000 (continuous in t)  -- the pointer basis fixes #blocks=2, never the ratio t
+  [PASS] [RESIDUAL] R2 WEIGHT-BLINDNESS: SBS objectivity plateau = H(weights) for BOTH (1/2,1/2) and (1/3,2/3) -> clause (c) fixes the BASIS, not the WEIGHT (FLAVOR_QD_OBJECTIVITY_FIXES_BASIS_NOT_WEIGHT N6/N7)  -- H(unif)=1.0000 bit, H(rank)=0.9183 bit; both objective
+  [PASS] [RESIDUAL] R3 COUNTERMODEL: the einselection FIXED POINT (clause a) is I/3 -> weights (1/3,2/3) -> r=1, NOT r=1/2 -- the DYNAMICS clause lands at t=2  -- weights=(np.float64(0.3333), np.float64(0.6667)), r_fp=1.0000 (Q=1.0000)
+  [PASS] [RESIDUAL] DECISIVE: NEITHER clause (a) (dynamics, gives t=2) NOR clause (c) (objectivity, weight-blind) supplies the equal-block t=1 -> the (1,1) sector WEIGHT is a SEPARATE max-entropy/indifference datum the unified axiom OMITS  -- the einselection horn is r=1; objectivity is weight-blind; equal-block != either
+  [PASS] [RESIDUAL] the missing datum is the indifference / max-objective-information over LABELS (uniform = 1 bit > H(rank)) -> equal block; this is NOT the measurement act (FLAVOR_QD N7: 'coherent possible additional principle')  -- H(unif)=1.0000 > H(rank)=0.9183; a SEPARATE indifference choice
+  [PASS] [RESIDUAL] Record verbatim declines 'weighting ... or occupancy rule' -> the equal-block measure is outside BOTH Record AND the measurement act; it is a third, separate science-level decision (the residual C2-WEIGHT)  -- MINIMAL_AXIOMS_2026-06-05 Record non-supply clause
+
+------------------------------------------------------------------------
+[4] RESIDUAL (does NOT collapse): the N2b spacing primitive a_tau / a_s
+------------------------------------------------------------------------
+  [PASS] [RESIDUAL] N2b adjacency is METRIC-BLIND: the 6-NN edge set is IDENTICAL for a_tau/a_s = 1, 10, 0.137 (the predicate |dx|+|dy|+|dz|=1 carries no a_tau,a_s)  -- edge set size = 6 for every ratio (block03 NODIAG)
+  [PASS] [RESIDUAL] the measurement RATE gamma (clause a) gives the STEP's EXISTENCE, NOT the dimensionful metric edge a_tau -- the half-life is in dynamics ticks; a_tau/a_s is a metric datum the measurement act does not carry  -- C1 minimality already disclaims 2a_tau; block02 SK-1 + block03 NODIAG WALL
+  [PASS] [RESIDUAL] a_tau/a_s is a SEPARATE minimal SPACING primitive (strictly weaker than the unified axiom, disjoint from its dynamics content): the unified measurement axiom does NOT supply it  -- Lattice axiom verbatim: 'does not supply a ... metric scale, lattice spacing'
+
+------------------------------------------------------------------------
+[5] MINIMALITY of the unification (axiom COUNT reduction; no over-reach)
+------------------------------------------------------------------------
+  [PASS] the unified axiom REDUCES axiom count: C1 + C2(basis/identification half) collapse into ONE measurement-with-readout primitive (2 candidate gates -> 1)  -- dynamics + arrow + pointer-basis + objectivity-basis are one physical act
+  [PASS] non-redundancy: the unified axiom does NOT subsume the equal-block WEIGHT (PART 3) nor the spacing primitive a_tau/a_s (PART 4) -- both remain independent residuals (so the unification is PARTIAL, honestly)  -- the weakest sufficient single axiom for the dynamics+basis content, no more
+  [PASS] the unified axiom asserts EXISTENCE (a SLOT) only: one (L, pointer basis, broadcast structure) for the realized state -- no kernel/rate, no weight, no probability, no spacing, no past hypothesis (arrow SIGN still open)  -- consistent with realized_state_primitive; weaker than a past hypothesis
+  [PASS] does NOT contradict any RETAINED no-go: it SUPPLIES the imports those boundaries name (PIN-REG, the readout context, the objectivity basis) and RESPECTS weight-blindness (does not claim objectivity forces the weight)  -- additive; FLAVOR_QD N6/N7, scope-boundary N4/N5, record-formation floor
+
+------------------------------------------------------------------------
+[6] SUFFICIENCY VERDICT
+------------------------------------------------------------------------
+  [PASS] VERDICT(part 1): the SINGLE unified axiom DERIVES C1's full discharge set (N4 + N5 + arrow + N2b-step + floor)  -- PARTIAL COLLAPSE of C1 into MEAS-REC-READOUT confirmed
+  [PASS] VERDICT(part 2): the SINGLE unified axiom DERIVES C2's basis/identification half (T1-d det-readout + P-REC pointer + Koide objectivity-BASIS)  -- PARTIAL COLLAPSE of C2 (basis half) into MEAS-REC-READOUT confirmed
+  [PASS] VERDICT(residual): the equal-block (1,1) sector-MEASURE WEIGHT and the spacing primitive a_tau/a_s do NOT collapse -- both are SEPARATE data the unified axiom does not supply  -- PARTIAL collapse: weight-blindness (R2/R3) + Lattice no-spacing are real walls
+  [PASS] OVERALL: PARTIAL COLLAPSE -- C1 (+) C2-basis fold into ONE measurement axiom; the C2 equal-block WEIGHT and the N2b SPACING primitive remain independent  -- the weakest sufficient single axiom for the dynamics + pointer-basis + objectivity-basis content
+
+========================================================================
+TOTAL: PASS=39 FAIL=0
+========================================================================
+
+Every [COND] line is CONDITIONAL on the UNADOPTED MEAS-REC-READOUT axiom;
+every [RESIDUAL] line recomputes a real wall the unified axiom does NOT
+close. This runner adopts NOTHING and sets no audit verdict.
+hypothetical_axiom_status: conditional on accepted new axiom; not retained
+on the actual current surface. Status authority: independent audit lane /
+owner only.

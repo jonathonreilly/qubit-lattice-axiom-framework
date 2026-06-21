@@ -569,3 +569,100 @@ adopted):
 **Recommended owner sequencing is unaffected:** C1 then C2, defer C3. The block01
 "a crack always beats a proposal" stance is honored: both cracks were genuinely
 attempted and honestly walled, so the C1/C3 residuals are real.
+
+---
+
+## BLOCK04 UNIFICATION (additive, 2026-06-20)
+
+> **Additive dated minimization — does not rewrite §1–§7 above.** Block01 delivered
+> the three candidate proposals `{C1, C2, C3}`; block02/03 confirmed the C1-N2b and
+> C3-P-ABJ residuals genuinely wall (block03 NODIAG: the no-diagonal-clause spacing
+> lead also **walled**, runner `…no_diagonal_spacing_crack…` PASS=17 FAIL=0, so the
+> `a_tau/a_s` residual is real). Block04 runs the remaining minimization move —
+> **unification**: does **one** operational axiom subsume **both** C1 (dynamics /
+> arrow) and C2 (readout-context / objectivity)? **Result: PARTIAL COLLAPSE.** The
+> block01 ranked-set §4 ("C1, C2, C3, three weak/heavy axioms") is **refactored**
+> here into a strictly-weaker single operational axiom plus two isolated residual
+> data; nothing in §1–§7 is deleted.
+> Full synthesis:
+> `docs/AXIOM_UPDATE_PROPOSAL_UNIFIED_OPERATIONAL_MEASUREMENT_2026-06-20.md`.
+
+```yaml
+hypothetical_axiom_status: "conditional on accepted new axiom; not retained on the actual current surface"
+proposal_allowed: false   # owner governance decision required
+adopts_axiom: false
+sets_audit_verdict: false
+edits_axiom_premise_nodes: false
+status_authority: independent audit lane / owner only
+collapse_verdict: partial_collapse
+```
+
+**The unified candidate axiom (UNADOPTED).** **(MEAS-REC-READOUT)** — there is a
+system–environment measurement interaction that produces durable records and, for
+the realized state, supplies **at once**: (a) an einselecting CPTP dynamics
+`Φ_t = e^{tL}` with an **orientation** (= C1's dynamics + arrow + registration
+direction); (b) the **pointer basis = the central-sector / `K`-CPT decomposition**
+(the alphabet of distinguishable record outcomes = C2's readout context); and
+(c) the **SBS / quantum-Darwinism objectivity criterion, BASIS ONLY** (the objective
+observable is the one redundantly broadcast = C2's objectivity selector, basis
+part). **Existence/slot only** — no kernel/rate, no weight/probability/Born rule, no
+spacing, no arrow *sign*. *Strength: weak–medium.*
+
+**What collapses (conditional; two runner legs).**
+
+| | folds into U? | runner witness |
+|---|---|---|
+| **C1 full set** — arrow / B-AXIS N4 (registration-direction) / N5 (single-clock) / N2b-step / record-formation floor | **YES** | clause (a)[+(c)]; periodic `W`-exchange surface recomputed exactly invariant (`0.0`); antiperiodic-`τ` breaks `W` (`8.0`), symmetric BC restores (`0.0`); `|coh|→0` floor |
+| **C2 basis / identification half** — T1-d det-readout identification (`W = c log det`); P-REC single-taste pointer; Koide objectivity-**BASIS** (2-outcome alphabet) | **YES** | clauses (b)+(c); Cauchy residual `8.88e-16`; no on-site anticommutant of the Pauli triple; SBS plateau over 2 outcomes |
+
+**What does NOT collapse (two independent residual data — recomputed walls).**
+
+1. **C2-WEIGHT** — the equal-block `(1,1)` sector-MEASURE weight `t = w_p/w_s = 1`
+   that pins Koide `r=1/2`, `Q=2/3`. **Decisive (per the koide block02 R2/R3
+   weight-blindness finding):** SBS objectivity is **weight-blind** (plateau
+   `= H(weights)` for both `(1/2,1/2)` 1.000 bit and `(1/3,2/3)` 0.918 bit) **and**
+   the einselection fixed point `I/3 → (1/3,2/3) → r=1` lands at `t=2`, the **wrong**
+   value. Neither clause supplies `t=1`; it is a separate max-entropy / indifference
+   datum (one dimensionless binary choice).
+2. **SPACING** — the N2b time-edge spacing `a_tau/a_s` (Lattice disavows spacing;
+   block02 SK-1 + block03 NODIAG walled; 6-NN adjacency metric-blind for
+   `a_tau/a_s = 1, 10, 0.137`). One dimensionless ratio.
+
+**Minimality (runner PART [0]/[4]).** U is **strictly weaker** than C1+C2 stated
+separately: on the explicit 10-atom consequence lattice,
+`Cons(U)` (9 atoms) `⊊ Cons(C1-sep ∧ C2-sep)` (10 atoms), the single distinguishing
+atom being `equal_block_weight` (which U is weight-blind to); U admits strictly more
+models; the converse derivation fails. `AXIOM_MINIMALITY_POLICY.md` **prefers** U on
+all four criteria — weakest sufficient, non-redundant (§2 bounded composition with
+named residuals), independent, no-laundering. `{U, W, S}` are proved **mutually
+independent** by countermodel, with W and S verified **orthogonal dials**. **C3 does
+NOT fold** (gauge representations vs measurement existence = category error / gate 3
+vs gates 1/2; measurement witnesses blind to the anomaly traces / chirality template
+and vice versa).
+
+**FINAL MINIMAL PROPOSAL SET:** block01 `{C1, C2, C3}` → block04
+**`{MEAS-REC-READOUT, C2-WEIGHT, SPACING, PIN-GAUGE-CONTENT}`** — the measurement
+act is **one** weak–medium operational axiom, the two things it provably cannot
+supply (the sector weight; the metric spacing) are isolated as their own weakest
+dimensionless data, and C3 stays the one categorically distinct heavy addition,
+**unchanged**.
+
+**Coverage vs the 3-axiom version: SAME coverage, MORE minimal.** The block04 set
+discharges the **identical** walls as the block01 `{C1, C2}` pair (no coverage loss,
+no over-reach); the difference is purely structural — two operational axioms become
+**one strictly-weaker** operational axiom, and the equal-block weight (which C2
+silently bundled) plus the spacing (an implicit C1-N2b residual) are **named and
+isolated** as the weakest separate data. If the owner's goal is the policy's
+weakest-sufficient / non-redundant / independent / no-laundering target, the block04
+`{U, W, S, C3}` set **should be preferred** over the block01 `{C1, C2, C3}` set
+(C3 identical in both).
+
+| Runner | TOTAL | Reproduced 2026-06-21 |
+|---|---|---|
+| `scripts/axiom_update_unified_measurement_axiom_sufficiency_2026_06_21.py` | PASS=39 FAIL=0 | yes (exit 0, `-W error` clean) |
+| `scripts/axiom_update_unified_axiom_minimality_independence_2026_06_21.py` | PASS=28 FAIL=0 | yes (exit 0, `-W error` clean; caught + fixed a real color-double-counting bug in the LH anomaly trace mid-cycle) |
+
+**Aggregate block04: PASS=67 FAIL=0 (39 + 28).** Both reuse the exact load-bearing
+legs of the block01 cluster runners; deterministic; numpy + stdlib only; no
+empirical import. All UNADOPTED; no axiom retired; no audit verdict set; the owner /
+audit lane is the sole authority.

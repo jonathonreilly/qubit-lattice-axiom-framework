@@ -30,8 +30,10 @@ retained/proposed-retained status. It only narrows the cleanup deletion guard.
 ## Verification
 
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.PrecomputeAuditRunnersTest` -> 2 tests passed
-- `python3 scripts/precompute_audit_runners.py --cleanup-orphans-dry-run --all --check-only --allow-non-main` -> `Would delete 8 orphan cache file(s)`, `fresh: 3123`, `stale to refresh: 0`, `missing on disk: 0`
-- `python3 -m py_compile scripts/precompute_audit_runners.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK
+- `python3 scripts/precompute_audit_runners.py --cleanup-orphans-dry-run --all --check-only --allow-non-main` -> `Would delete 8 orphan cache file(s)`, `fresh: 3050`, `stale to refresh: 0`, `missing on disk: 0`
+- `python3 -m py_compile scripts/precompute_audit_runners.py scripts/runner_cache.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 79 tests passed
-- `python3 docs/audit/scripts/audit_lint.py --strict` -> `OK: no errors` with notices only
 - `git diff --check` -> OK
+
+This branch is stacked on PR #4500, whose base includes the refreshed
+full-ledger cache baseline from PR #4498.

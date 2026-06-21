@@ -4,7 +4,8 @@ block: 131
 mode: physics-loop
 branch: physics-loop/audit-unblock-block131-20260620
 base: physics-loop/audit-unblock-block130-20260620
-base_commit: f804bbabd
+base_commit: b0e53d573b722eaa80cf2540b42d62526acef774
+rebuilt_at: "2026-06-21 00:34:57 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "runner-cache orphan cleanup referenced-evidence safety"
@@ -21,7 +22,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "cleanup_orphans now preserves cache files still referenced outside logs/runner-cache so cleanup does not create broken evidence links."
+current_result: "cleanup_orphans now preserves cache files still referenced outside logs/runner-cache so cleanup does not create broken evidence links; branch is restacked on refreshed PR #4500."
 observed_pre_fix_cleanup_risk:
   dry_run_candidates_before_fix: 9
   referenced_cache_false_positive:
@@ -29,7 +30,7 @@ observed_pre_fix_cleanup_risk:
     reference: docs/CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md
 observed_post_fix_cleanup_result:
   dry_run_candidates_after_fix: 8
-  full_ledger_runner_state: "fresh=3123 stale=0 missing=0"
+  full_ledger_runner_state: "fresh=3050 stale=0 missing=0"
 files_touched:
   - scripts/precompute_audit_runners.py
   - docs/audit/scripts/tests/test_audit_pipeline.py
@@ -38,5 +39,5 @@ review_disposition: pass
 verification_status: pass
 pr_status: open
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4501
-next_exact_action: "Monitor PR #4501 audit-lane check, then continue to the next audit-unblock target."
+next_exact_action: "Force-push the restacked PR #4501 branch, update PR body, then continue with the next stacked cleanup PR."
 stop_condition: "Block131 PR opened and verified; campaign continues to the next audit-unblock target while runtime remains."

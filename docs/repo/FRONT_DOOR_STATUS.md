@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1523 |
-| Retained-grade rows, including boxed decorations | 1427 |
+| Applied audit verdicts | 1524 |
+| Retained-grade rows, including boxed decorations | 1428 |
 | Retained positive theorems | 209 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 954 |
+| Retained bounded rows | 955 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 37 |
-| Unaudited rows | 1623 |
+| Unaudited rows | 1622 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 20 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1625 |
-| Ready rows | 104 |
+| Total pending rows | 1624 |
+| Ready rows | 103 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
-| Medium pending | 465 |
+| Medium pending | 464 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12`](../../docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02`](../../docs/KOIDE_MATTER_ATTACHMENT_GRADED_STATISTICS_GATE_NARROW_THEOREM_NOTE_2026-06-02.md) - medium; unaudited
 - [`p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18`](../../docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md) - medium; unaudited
 - [`positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23`](../../docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md) - medium; unaudited
 - [`record_local_finite_atom_availability_narrow_theorem_note_2026-06-17`](../../docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
-- [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
 - [`koide_lightcone_primitive_theorem_note_2026-05-10`](../../docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
+- [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
+- [`wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09`](../../docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

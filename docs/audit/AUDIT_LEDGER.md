@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1007 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1521 |
+| unaudited | 1520 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -43,7 +43,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_hierarchy_matsubara_decomposition_note` | 1 |
 | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | 1 |
-| `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 1 |
+| `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 2 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
 | `decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | 1 |
 | `decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | 1 |
@@ -68,16 +68,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1457 |
 | `audited_conditional` | 45 |
-| `audited_decoration` | 62 |
+| `audited_decoration` | 63 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1847 |
+| `unaudited` | 1846 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1806 |
-| `decoration` | 63 |
+| `bounded_theorem` | 1805 |
+| `decoration` | 64 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
@@ -1670,6 +1670,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `koide_mru_demotion_note_2026-04-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `koide_kappa_spectrum_operator_bridge_theorem_2026-04-19` |
+| `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | decoration | ~~audited_decoration~~ | `decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | cross_family | codex-gpt-5.5 | A | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
@@ -12481,6 +12482,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Each retained generator D, U, U^dagger, and every spectral projector P_lambda(D) restricts to a scalar multiple of the identity on M_zeta, so every polynomial in them restricts to a scalar.  _(class `A`)_
 - **chain closes:** True — The algebraic closure follows directly: on M_zeta, D is zero, U and U^dagger are scalar by the eigenspace definition, and D-spectral projectors are either identity for lambda=0 or zero for lambda nonzero. Polynomial combinations of scalar restrictions remain scalar.
 - **rationale:** The load-bearing step is a genuine class-A finite-dimensional algebraic closure over the stated retained inputs, not a definition substitution or numerical fit. The runner checks the scalar restrictions for generators and sampled polynomial words at r=1.0 and r=1.425, and also verifies a non-retained rank-one projector is non-scalar. The conclusion does not use PDG data, charged-lepton masses, Koide targets, or an external comparator.
+- **auditor confidence:** high
+
+### `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25`
+
+- **Note:** [`KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](../../docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Given the retained C_3 circulant surface H = aI + bC + bbar C^2 with b in C, the selected-coordinate real-DOF ratio dim_R(b) / dim_R(Herm_3) is 2/9.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** rho_delta_C3 is the ratio dim_R({b}) / dim_R(Herm_3) = 2 / 9, since b is a complex coordinate and dim_R(Herm_3) = 9.  _(class `A`)_
+- **chain closes:** True — The cited retained authority supplies the C_3 surface and the fact that b is a complex coordinate. Standard finite-dimensional real dimension counting gives dim_R(C)=2 and dim_R(Herm_3)=9, so the bounded arithmetic ratio closes.
+- **rationale:** The runner source computes the Hermitian dimension formula and exact Fraction(2,9), rather than merely printing pass lines. No external comparator, physical Koide readout, radian bridge, or generalized C_d theorem is imported. The result is exact class-A arithmetic over one retained parent claim plus standard linear algebra, so the conservative classification is algebraic decoration rather than an independent retained theorem.
+- **decoration parent:** `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09`
 - **auditor confidence:** high
 
 ### `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20`

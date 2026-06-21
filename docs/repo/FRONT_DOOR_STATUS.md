@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1529 |
-| Retained-grade rows, including boxed decorations | 1431 |
-| Retained positive theorems | 209 |
+| Applied audit verdicts | 1530 |
+| Retained-grade rows, including boxed decorations | 1432 |
+| Retained positive theorems | 210 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 958 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 37 |
-| Unaudited rows | 1617 |
+| Unaudited rows | 1616 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 22 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1619 |
+| Total pending rows | 1618 |
 | Ready rows | 101 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
-| Medium pending | 459 |
+| Medium pending | 458 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`record_local_finite_atom_availability_narrow_theorem_note_2026-06-17`](../../docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`koide_lightcone_primitive_theorem_note_2026-05-10`](../../docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09`](../../docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md) - medium; unaudited
 - [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`distance_law_preserving_third_family_note`](../../docs/DISTANCE_LAW_PRESERVING_THIRD_FAMILY_NOTE.md) - medium; unaudited
 - [`dimension_selection_upper_bound_textbook_import_note_2026-05-17`](../../docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
+- [`record_unbounded_finite_additivity_schema_2026-06-06`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,9 +82,9 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
-| High nodes | 511 |
-| Medium nodes | 971 |
-| Leaf nodes | 1562 |
+| High nodes | 510 |
+| Medium nodes | 973 |
+| Leaf nodes | 1561 |
 
 Top load-bearing rows by graph score:
 

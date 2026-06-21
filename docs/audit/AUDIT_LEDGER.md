@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 933 |
+| **retained_bounded** | 934 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1675 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1355 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1356 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 22 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -767,6 +765,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_import_two_bit_decomposition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10589,6 +10588,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For H = a I + b C + bbar C^2, the block-total Frobenius slots are E_+ = 3 a^2 and E_perp = 6 |b|^2, so maximizing log E_+ + log E_perp at fixed E_+ + E_perp gives E_+ = E_perp and hence kappa = a^2/|b|^2 = 2.  _(class `A`)_
 - **chain closes:** True — The Frobenius norm formulas, constrained log extremum, and Hermitian-circulant multiplicity formula are exact algebra within the stipulated block-total carrier. The physical canonical-measure or scalar-lane quotient claim is explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a direct algebraic computation and optimization, not a numerical comparator or symbol renaming. The runner source visibly computes the projector identities, Frobenius formulas, finite multiplicity scan, synthetic consistency checks, and law separation; its PDG line is diagnostic only and not a PASS gate. The cited retained_bounded authorities are used only for the MRU weight context, while the source itself excludes physical canonicity of the block-total carrier from the theorem.
+- **auditor confidence:** high
+
+### `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic bridge identity on Herm_circ(3), and equivalence of a_0^2 = 2|z|^2 with a^2 = 2|b|^2 under the stated eigenvalue/sqrt-mass identification; no derivation of Q = 2/3 itself is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substituting the Hermitian-circulant Fourier eigenvalues gives a_0 = sqrt(3) a and z = sqrt(3) b, hence a_0^2 - 2|z|^2 = 3(a^2 - 2|b|^2).  _(class `A`)_
+- **chain closes:** True — The roots-of-unity sums independently give a_0 = sqrt(3)a and z = sqrt(3)b, so the displayed polynomial identity follows with zero residue. Within that scoped bridge, the spectrum-side and operator-side equations vanish together; the spectrum-side Koide value remains an input, not an output.
+- **rationale:** The load-bearing step is a direct algebraic identity on the stated Hermitian-circulant parametrization, and the runner source genuinely computes the symbolic Fourier coefficients rather than hard-coding the bridge residue. The PDG checks are external numerical illustrations, not the proof of the theorem. The scoped bounded claim is careful not to assert an independent derivation of Q = 2/3, so the algebraic bridge closes as written. A second auditor should keep the kappa ratio phrasing tied to the nondegenerate |b| != 0 domain; the polynomial equation form covers the degenerate zero case.
 - **auditor confidence:** high
 
 ### `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05`

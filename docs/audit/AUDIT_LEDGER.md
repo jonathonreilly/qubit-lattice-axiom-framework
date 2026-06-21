@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 212 |
-| **retained_no_go** | 212 |
+| **retained_no_go** | 213 |
 | **retained_bounded** | 974 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1584 |
+| unaudited | 1583 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1414 |
+| `audited_clean` | 1415 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1910 |
+| `unaudited` | 1909 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 937 |
-| `leaf` | 1462 |
+| `medium` | 938 |
+| `leaf` | 1461 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -119,14 +119,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
 | 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 35.82 | `audited_clean` | **retained_bounded** |
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
 
 
@@ -241,6 +241,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
+| `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_portability_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_field_reconciliation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3175,6 +3176,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** In the tested finite hopping models, the open-chain hard-core-boson and Jordan-Wigner Hamiltonians are identical matrices, so the same positive transfer operator and Stone spectrum are obtained, while the closed-loop sign changes spectra without making either transfer operator non-positive.  _(class `C`)_
 - **chain closes:** True — The finite one-qubit tensor-product construction closes the scoped result: adjacent open-chain Jordan-Wigner strings cancel in the hopping Hamiltonian, so T=exp(-tau H) and the Stone spectrum cannot discriminate the frames. On the ring the uncancelled loop string changes the spectrum, but finite Hermitian Hamiltonians still give strictly positive transfer operators in both frames.
 - **rationale:** The runner source constructs the HCB and JW operators directly on finite qubit tensor products and computes commutators, ranks, Gram spectra, transfer spectra, correlators, and ring spectra rather than printing hard-coded conclusions. An independent algebra check agrees with the load-bearing signs: open nearest-neighbor JW strings cancel bond-by-bond, while the closed boundary string remains as a loop datum; positivity of exp(-tau H) follows for each finite Hermitian H. The cited minimal-axiom authority is an accepted premise, and the note explicitly limits the no-go to the tested finite positivity route rather than claiming a global spin-statistics or graded-locality obstruction.
+- **auditor confidence:** high
+
+### `carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06`
+
+- **Note:** [`CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md`](../../docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite rotation-level no-go: the operator-frame/Clifford data do not force the per-site C^2 matter-state j=1/2 transformation law; the staggered {epsilon,D}=0 route is only a boundary for a separate KS/physical-state-law bridge, not a Koide/generation r=1/2 closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Operator-frame conjugation factors through SO(3) and is blind to the SU(2) center, while the trivial scalar lift V(R)=I2 satisfies the same operator-frame constraints and the scalar kernel remains compatible.  _(class `A`)_
+- **chain closes:** True — The scoped no-go follows from finite Pauli/Spin(3) algebra plus the retained boundary authorities: adjoint covariance loses the SU(2) center, the trivial state lift remains compatible, and the scalar kernel is not excluded. The missing KS/Grassmann physical-state-law bridge is explicitly outside the audited conclusion rather than imported as support.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade inputs, not a definition, fitted comparator, or numerical match. The runner source performs finite matrix checks for cover blindness, scalar-lift compatibility, scalar-kernel compatibility, staggered anticommutation, and the source guardrail; it does not hard-code an empirical target. The N1-N8 no-go discipline is present and the claim is narrowly scoped to refuting the spinor-module escape, while preserving the KS/state-law residual as open downstream work.
 - **auditor confidence:** high
 
 ### `causal_escape_window_note`

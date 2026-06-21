@@ -11,7 +11,13 @@ one-dimensional line and no invariant rank-seven projector, so current
 Fierz/Rconn color data cannot source `route2_e_E_7_8` by removing one adjoint
 direction.
 
-Current status: verification passed. PR creation pending.
+Current status: verification passed. PR open.
+
+PR identity:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block35-20260621","number":4565,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block35 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4565"}
+```
 
 Checks:
 
@@ -23,5 +29,5 @@ Checks:
 - new runner py_compile: pass
 - branch-local overclaim scan: no matches
 
-Next exact action after PR: pivot to measured-calibration box-size
+Next exact action: pivot to measured-calibration box-size
 parameterization or the hierarchy/APBC seven-eighths bridge.

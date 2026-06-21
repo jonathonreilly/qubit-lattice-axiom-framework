@@ -15,3 +15,9 @@ Checks run:
 - branch-local overclaim scan -> no matches
 
 No audit verdict was applied. The claim remains a narrow route-specific no-go.
+
+PR identity verified without checking conflicts:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block35-20260621","number":4565,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block35 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4565"}
+```

@@ -1,13 +1,15 @@
 # PR Backlog
 
-No PR backlog yet. Block11 PR creation is pending final focused verification.
+No backlog for block11.
 
-If GitHub PR creation fails, use:
+Opened PR:
 
-```bash
-gh pr create \
-  --base main \
-  --head physics-loop/s3-route2-readout-endpoint-block11-20260621 \
-  --title "[physics-loop] s3-route2-readout-endpoint block11 no-go" \
-  --body-file /tmp/block11-pr-body.md
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4540
+```
+
+Identity-only verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block11-20260621","number":4540,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block11 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4540"}
 ```

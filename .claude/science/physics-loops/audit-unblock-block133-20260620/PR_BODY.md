@@ -37,9 +37,8 @@ canonicalization.
 
 - `python3 scripts/audit_runner_path_canonicalization_guard_2026_06_17.py` -> OK
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.PrecomputeAuditRunnersTest` -> 3 tests passed
-- `python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_path_canonicalization_guard_2026_06_17.py --force --push-mode none --allow-non-main` -> 1 OK
+- `python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_path_canonicalization_guard_2026_06_17.py --check-only --allow-non-main` -> `fresh: 1`, `stale to refresh: 0`, `missing on disk: 0`
 - `python3 scripts/precompute_audit_runners.py --pr-diff origin/physics-loop/audit-unblock-block132-20260620 --check-only --allow-non-main` -> `stale to refresh: 0`, `missing on disk: 0`
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 80 tests passed
-- `python3 docs/audit/scripts/audit_lint.py --strict` -> `OK: no errors` with notices only
-- `python3 -m py_compile scripts/precompute_audit_runners.py scripts/audit_packet_script_deps.py scripts/codex_audit_runner.py scripts/audit_runner_path_canonicalization_guard_2026_06_17.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK
+- `python3 -m py_compile scripts/precompute_audit_runners.py scripts/runner_cache.py scripts/audit_packet_script_deps.py scripts/codex_audit_runner.py scripts/audit_runner_path_canonicalization_guard_2026_06_17.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK
 - `git diff --check` -> OK

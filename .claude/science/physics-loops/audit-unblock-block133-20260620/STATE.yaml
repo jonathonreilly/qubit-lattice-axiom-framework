@@ -4,7 +4,8 @@ block: 133
 mode: physics-loop
 branch: physics-loop/audit-unblock-block133-20260620
 base: physics-loop/audit-unblock-block132-20260620
-base_commit: 021fc2300
+base_commit: 21fd22ac87b8e755a974bafd810ec97a690cc6cb
+rebuilt_at: "2026-06-21 00:39:03 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "nested absolute runner-path canonicalization"
@@ -21,7 +22,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "codex_audit_runner, audit_packet_script_deps, and precompute_audit_runners now recover embedded scripts/... subpaths from stale absolute worktree runner paths."
+current_result: "codex_audit_runner, audit_packet_script_deps, and precompute_audit_runners now recover embedded scripts/... subpaths from stale absolute worktree runner paths; branch is restacked on refreshed PR #4502."
 observed_pre_fix_risk:
   stale_absolute_nested_path: "/tmp/old-worktree/scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py"
   pre_fix_result: "/tmp/old-worktree/scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py"
@@ -40,5 +41,5 @@ review_disposition: pass
 verification_status: pass
 pr_status: open
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4503
-next_exact_action: "Monitor PR #4503 audit-lane check, then continue to the next audit-unblock target."
+next_exact_action: "Force-push the restacked PR #4503 branch, update PR body, then continue with the next stacked cleanup PR."
 stop_condition: "Block133 PR opened and verified; campaign continues to the next audit-unblock target while runtime remains."

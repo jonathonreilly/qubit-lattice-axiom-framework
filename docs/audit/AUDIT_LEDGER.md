@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1019 |
+| **retained_bounded** | 1020 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1498 |
+| unaudited | 1497 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1469 |
+| `audited_clean` | 1470 |
 | `audited_conditional` | 52 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1824 |
+| `unaudited` | 1823 |
 
 | claim_type | count |
 |---|---:|
@@ -109,7 +109,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 63.35 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
@@ -119,11 +119,11 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 44.18 | `audited_clean` | **retained_bounded** |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 43.12 | `unaudited` | unaudited |
 | 11 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 41.84 | `unaudited` | unaudited |
-| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
+| 12 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
 | 13 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 14 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 39.29 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
-| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
+| 16 | `yt_ew_color_projection_theorem` | no_go | critical | 760 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 37.68 | `unaudited` | unaudited |
 | 18 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
 | 19 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 36.03 | `unaudited` | unaudited |
@@ -132,7 +132,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 22 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 34.53 | `unaudited` | unaudited |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 337 | 33.90 | `unaudited` | unaudited |
 | 24 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
-| 25 | `left_handed_charge_matching_note` | decoration | critical | 1131 | 32.65 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
+| 25 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 
 
 ## Applied audits
@@ -1360,6 +1360,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -19778,6 +19779,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Covariance forces a uniform real plaquette flux and, on simply connected regions, flux classifies site-local U(1) frame orbits, leaving exactly K0 and K1; Pauli anticommutation then forces every site-local absorbing frame into K1 while K0 remains a valid countermodel.  _(class `C`)_
 - **chain closes:** True — The cited axiom premise supplies the Z^3 nearest-neighbor lattice and one-qubit C^2 carrier, while retained Cl(3), tensor-product translation, and parity authorities supply the algebraic surfaces used. The runner and proof compute the flux classification, CAR(2) no-spectator obstruction, Pauli absorbing-frame identities, and K0 countermodel without importing an external selector.
 - **rationale:** The load-bearing step is a framework-internal computation over the lattice, U(1) edge phases, Pauli/Cl(3) matrices, and finite Fock operators, not a definition substitution or tuned numerical comparison. The runner source constructs the group action, gauge/flux invariants, cohomology certificates, CAR(2) algebra, absorbing frame, countermodel, and falsification legs rather than merely printing expected PASS lines. The negative component is narrowly stated: K0 proves only that the specified constraint set does not force the flux(-1) selector, while future selector principles remain explicitly outside the claim.
+- **auditor confidence:** high
+
+### `staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the accepted one-qubit Z^3 baseline plus the retained/bounded substep-1 single-mode Grassmann clause, the self-contained two-component naive operator D_2c on the periodic 4^3 torus is excluded on the same site set by the CAR dimension obstruction; other one-mode-compatible kinetic forms and the inherited substep-1 boundary remain outside the closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The two-mode CAR algebra is exactly M_4(C), simple of dimension 16, and any nonzero *-homomorphism to the per-site M_2(C) would be injective and require 16 <= 4, which is impossible.  _(class `C`)_
+- **chain closes:** True — The cited axiom supplies M_2(C) per site, and the substep-1 authorities supply one Grassmann pair per site at their declared grade. The runner/source compute that D_2c has an irreducible two-component site index, requires two pairs per site, gives CAR(2)=M_4(C), admits no nonzero embedding into M_2(C), and has no same-site-set global CAR packaging escape.
+- **rationale:** The load-bearing step is a first-principles finite linear-algebra computation from the stated baseline and scoped substep-1 premise, not a definition, external comparator, or tuned numerical match. The runner constructs the Pauli, CAR, Jordan-Wigner, D_2c, and staggered operators directly and verifies the algebra dimensions, simplicity core, mode count, kernel checks, global obstruction, and source-edge firewall. The conclusion is clean only in the note's bounded scope: the named two-component rival on the same site set is excluded, while the note does not claim closure of the broader kinetic-class residual or upgrade the substep-1 premise.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md`
 - **auditor confidence:** high
 
 ### `staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17`

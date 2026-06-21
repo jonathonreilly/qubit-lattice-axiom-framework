@@ -9,13 +9,15 @@ are cite-only / non-load-bearing. This tool:
   2. For each (source, target), locates the markdown link in the source
      file
   3. EITHER prints the planned change (dry-run, default)
-     OR rewrites the source markdown to move the link into a
-     "## Cross-references (non-load-bearing)" section (--apply mode)
+     OR rewrites the source markdown so live markdown links become
+     non-live backticked references in place, while the original live links
+     are copied into a "## Cross-references (non-load-bearing)" section
+     (--apply mode)
 
 The audit pipeline's build_citation_graph.py extracts ALL markdown links
 to other docs/*.md notes as citation edges. To stably strip cite-only
-edges without losing the information, we move them into a section the
-citation graph builder can be taught to skip (Step 2 of the repair plan).
+edges without losing the information, we keep non-live references inline and
+copy the original links into a section the citation graph builder skips.
 
 This tool is read-only by default. Pass --apply to actually modify source
 notes. Pass --limit N to process only the first N source notes (useful
@@ -58,6 +60,8 @@ CROSS_REF_SECTION_PREAMBLE = (
     " from the audit citation graph when this section is recognized by the"
     " graph builder."
 )
+SECTION_HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$", re.MULTILINE)
+CROSS_REF_SECTION_TITLE = CROSS_REF_SECTION_HEADER.removeprefix("## ").lower()
 
 
 def claim_id_to_note_path(claim_id: str) -> Path | None:
@@ -81,23 +85,47 @@ def claim_id_to_note_path(claim_id: str) -> Path | None:
     return None
 
 
-def find_markdown_links_to(content: str, target_claim_id: str) -> list[tuple[int, int, str]]:
+def cross_ref_section_spans(content: str) -> list[tuple[int, int]]:
+    """Return spans occupied by the non-load-bearing cross-reference section."""
+    spans: list[tuple[int, int]] = []
+    headings = list(SECTION_HEADING_RE.finditer(content))
+    for i, heading in enumerate(headings):
+        if heading.group(2).strip().lower() != CROSS_REF_SECTION_TITLE:
+            continue
+        level = len(heading.group(1))
+        end = len(content)
+        for next_heading in headings[i + 1 :]:
+            if len(next_heading.group(1)) <= level:
+                end = next_heading.start()
+                break
+        spans.append((heading.start(), end))
+    return spans
+
+
+def in_spans(index: int, spans: list[tuple[int, int]]) -> bool:
+    return any(start <= index < end for start, end in spans)
+
+
+def find_markdown_links_to(content: str, target_claim_id: str) -> list[tuple[int, int, str, str, str]]:
     """Find all markdown links in `content` whose URL points to a note
     matching `target_claim_id`.
 
-    Returns list of (start, end, link_text) for each match.
+    Returns list of (start, end, link_text, label, url) for each match.
     """
     # Match [text](path.md) and [text](path.md#anchor)
     link_pattern = re.compile(r"\[([^\]]+)\]\(([^)\s]+\.md)(?:#[^)]*)?\)")
     target_upper = target_claim_id.upper()
     target_lower = target_claim_id.lower()
+    skip_spans = cross_ref_section_spans(content)
 
     matches = []
     for m in link_pattern.finditer(content):
+        if in_spans(m.start(), skip_spans):
+            continue
         url = m.group(2)
         url_basename = Path(url).stem
         if url_basename.upper() == target_upper or url_basename.lower() == target_lower:
-            matches.append((m.start(), m.end(), m.group(0)))
+            matches.append((m.start(), m.end(), m.group(0), m.group(1), url))
     return matches
 
 
@@ -151,7 +179,7 @@ def plan_repair_for_note(
         if matches:
             # Get a small context snippet for each match
             contexts = []
-            for start, end, link_text in matches:
+            for start, end, link_text, _label, _url in matches:
                 line_start = content.rfind("\n", 0, start) + 1
                 line_end = content.find("\n", end)
                 if line_end == -1:
@@ -166,6 +194,70 @@ def plan_repair_for_note(
         "source_path": str(rel),
         "targets_found": targets_found,
         "targets_missing": targets_missing,
+    }
+
+
+def non_live_reference(label: str, url: str) -> str:
+    text = label.strip() or Path(url).name
+    if text.startswith("`") and text.endswith("`"):
+        return text
+    return f"`{text}`"
+
+
+def ensure_cross_ref_links(content: str, links: list[str]) -> str:
+    unique_links = [link for link in dict.fromkeys(links) if link not in content]
+    if not unique_links:
+        return content
+
+    section_body = "\n".join(f"- {link}" for link in unique_links) + "\n"
+    spans = cross_ref_section_spans(content)
+    if not spans:
+        if not content.endswith("\n"):
+            content += "\n"
+        return (
+            content
+            + "\n"
+            + CROSS_REF_SECTION_HEADER
+            + "\n\n"
+            + CROSS_REF_SECTION_PREAMBLE
+            + "\n\n"
+            + section_body
+        )
+
+    _start, end = spans[-1]
+    prefix = "" if content[:end].endswith("\n") else "\n"
+    return content[:end] + prefix + section_body + content[end:]
+
+
+def apply_repair_for_note(source_path: Path, target_claim_ids: set[str]) -> dict:
+    """Rewrite one source note by deactivating live cycle links."""
+    content = source_path.read_text(encoding="utf-8")
+    replacements: list[tuple[int, int, str]] = []
+    cross_ref_links: list[str] = []
+    missing: list[str] = []
+
+    for target_id in sorted(target_claim_ids):
+        matches = find_markdown_links_to(content, target_id)
+        if not matches:
+            missing.append(target_id)
+            continue
+        for start, end, link_text, label, url in matches:
+            replacements.append((start, end, non_live_reference(label, url)))
+            cross_ref_links.append(link_text)
+
+    updated = content
+    for start, end, replacement in sorted(replacements, reverse=True):
+        updated = updated[:start] + replacement + updated[end:]
+    updated = ensure_cross_ref_links(updated, cross_ref_links)
+
+    if updated != content:
+        source_path.write_text(updated, encoding="utf-8")
+
+    return {
+        "source_path": str(source_path.resolve().relative_to(REPO_ROOT.resolve())),
+        "links_rewritten": len(replacements),
+        "targets_missing": missing,
+        "changed": updated != content,
     }
 
 
@@ -279,13 +371,12 @@ def main() -> int:
         if len(top["targets_found"]) > 5:
             print(f"      ... and {len(top['targets_found']) - 5} more")
 
-    print()
-    print("=" * 78)
-    print("DRY-RUN COMPLETE — no files modified" if not args.apply else "APPLY MODE")
-    print("=" * 78)
-    print()
-
     if not args.apply:
+        print()
+        print("=" * 78)
+        print("DRY-RUN COMPLETE — no files modified")
+        print("=" * 78)
+        print()
         print("To actually apply the repair (modify source notes):")
         print(f"  python3 {Path(__file__).relative_to(REPO_ROOT)} --apply")
         print()
@@ -299,20 +390,28 @@ def main() -> int:
         print("     cycles vanished and how many items became ready")
         print("  6. Commit the source-note edits + the regenerated audit data")
         print("  7. Open a single PR for the repair pass + pipeline regen")
+        return 0
 
-    # Note: --apply mode is NOT yet implemented in this initial version.
-    # It is intentionally deferred so the user can authorize the actual
-    # modification after reviewing the dry-run.
-    if args.apply:
-        print()
-        print("ERROR: --apply mode is NOT yet implemented in this initial")
-        print("version. The dry-run output above shows what WOULD be modified.")
-        print("Implementing --apply requires:")
-        print("  - decision on move-vs-delete policy")
-        print("  - section-aware markdown editing")
-        print("  - safe-write semantics (backup + atomic replace)")
-        print("Build this in a follow-up commit after reviewing the dry-run.")
-        return 1
+    apply_results = []
+    for source_id, target_ids in sources_sorted:
+        source_path = claim_id_to_note_path(source_id)
+        if not source_path:
+            continue
+        apply_results.append(apply_repair_for_note(source_path, target_ids))
+
+    changed_count = sum(1 for result in apply_results if result["changed"])
+    rewritten_count = sum(result["links_rewritten"] for result in apply_results)
+    print()
+    print("=" * 78)
+    print("APPLY COMPLETE")
+    print("=" * 78)
+    print()
+    print(f"  Source notes changed: {changed_count}")
+    print(f"  Live markdown links rewritten: {rewritten_count}")
+    print()
+    for result in apply_results:
+        if result["changed"]:
+            print(f"  changed: {result['source_path']} ({result['links_rewritten']} link(s))")
 
     return 0
 

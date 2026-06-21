@@ -1,0 +1,36 @@
+loop: audit-unblock-block135-20260621
+campaign: audit-unblock-20260619
+block: 135
+mode: physics-loop
+branch: physics-loop/audit-unblock-block135-20260621
+base: physics-loop/audit-unblock-block134-20260620
+base_commit: 66889cadc
+user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
+target_claim_id: null
+target_scope: "cycle source-graph repair tooling"
+target_status: open
+actual_current_surface_status: open
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: methodology
+reachability_to_target: supports
+artifact_role: tooling
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+lock_mode: degraded_branch_local
+lock_note: "Repo automation lock status failed earlier with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
+current_result: "Implemented source-graph repair apply support and taught the citation graph to ignore non-load-bearing cross-reference sections; did not apply source-note rewrites in this PR."
+dry_run_result:
+  cycles_named: 9
+  unique_source_notes: 9
+  total_edges_to_process: 10
+  edges_found_in_source_markdown: 9
+  edges_not_found_in_source_markdown: 1
+verification_status: pass
+review_disposition: pass
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4505
+next_exact_action: "Monitor PR #4505 audit-lane check; after support-refresh stack settles, create a follow-up source-note apply PR if the pipeline blast radius is narrow."
+stop_condition: "Block135 PR opened; campaign continues to next audit-unblock target."

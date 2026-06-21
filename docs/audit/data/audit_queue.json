@@ -3,7 +3,7 @@
     "critical": 292,
     "high": 283,
     "leaf": 588,
-    "medium": 484
+    "medium": 483
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17541,28 +17541,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.755,
-      "note_path": "docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_ckm_mass_basis_nni_structural_identities_2026_06_17.py",
-      "transitive_descendants": 53
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17583,6 +17561,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py",
+      "transitive_descendants": 51
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "work_history.ckm.cabibbo_bound_note",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.7,
+      "note_path": "docs/work_history/ckm/CABIBBO_BOUND_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ckm_mass_basis_nni.py",
       "transitive_descendants": 51
     },
     {
@@ -17729,15 +17731,15 @@
         "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
         "minimal_axioms"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
+      "load_bearing_score": 6.0,
       "note_path": "docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py",
-      "transitive_descendants": 16
+      "transitive_descendants": 31
     },
     {
       "audit_independence_required": "any_non_self",
@@ -21604,30 +21606,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_koide_q_normalized_second_order_effective_action.py",
-      "transitive_descendants": 51
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "work_history.ckm.cabibbo_bound_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.7,
-      "note_path": "docs/work_history/ckm/CABIBBO_BOUND_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_ckm_mass_basis_nni.py",
       "transitive_descendants": 51
     },
     {
@@ -49371,5 +49349,5 @@
     }
   ],
   "ready_count": 112,
-  "total_pending": 1647
+  "total_pending": 1646
 }

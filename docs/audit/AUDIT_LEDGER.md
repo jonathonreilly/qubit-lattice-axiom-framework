@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 208 |
+| **retained** | 209 |
 | **retained_no_go** | 208 |
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1645 |
+| unaudited | 1644 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 27 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1372 |
+| `audited_clean` | 1373 |
 | `audited_conditional` | 16 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1971 |
+| `unaudited` | 1970 |
 
 | claim_type | count |
 |---|---:|
@@ -275,6 +275,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_chiral_cube_wilson_hop_doubling_foreclosed_narrow_no_go_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -3599,6 +3600,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substitute the four parametric input identities into the five Wolfenstein-leading squared-magnitude formulas and apply n_quark = n_pair * n_color.  _(class `A`)_
 - **chain closes:** True — The scoped claim is purely algebraic and all substitutions close from the stated hypotheses. No cited external authority, numerical alpha_s value, physical CKM identification, or comparator is needed.
 - **rationale:** The correct audited object is a bounded theorem: exact closed forms follow conditionally from explicitly supplied identities and the count constraint. The runner's own PASS labels identify the load-bearing operations as Pattern A algebraic substitution; the provided automated classifier breakdown conflicts with those labels but does not expose a failed algebraic step. Because the note disclaims derivation of the hypotheses and physical/comparator interpretation, there are no hidden dependencies within the scoped row.
+- **auditor confidence:** high
+
+### `ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`
+
+- **Note:** [`CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md`](../../docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact algebraic identities T1-T4 for positive masses and arbitrary positive geometric-basis NNI coefficients under the displayed definitions c_13^geom=c_12 c_23 and Phi_ij(c)=c sqrt(m_i/m_j).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With c_13^geom = c_12 c_23 and Phi_ij(c_ij^geom)=c_ij^geom sqrt(m_i/m_j), Phi_13(c_13^geom)=Phi_12(c_12) Phi_23(c_23) by sqrt(m_1/m_3)=sqrt(m_1/m_2)sqrt(m_2/m_3).  _(class `A`)_
+- **chain closes:** True — The identities follow directly from the displayed definitions and cancellation of positive square-root factors. No cited authority, external mass value, CKM comparator, fitted coefficient, or empirical bridge is used.
+- **rationale:** The load-bearing step is a genuine algebraic identity over the note's stated variables and definitions, not a numerical comparison or imported physical premise. The runner source constructs the same symbolic expressions with positive SymPy symbols, checks the identities and coefficient independence, and supplements them with exact rational controls. The remaining three runner passes are textual boundary checks rather than derivation evidence, but they are consistent with the note's restricted scope. Residual risk is only convention drift if a downstream Cabibbo note reuses these identities outside the stated mass-basis NNI normalization.
 - **auditor confidence:** high
 
 ### `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26`

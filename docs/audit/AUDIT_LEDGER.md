@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1015 |
+| **retained_bounded** | 1016 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1503 |
+| unaudited | 1502 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1465 |
+| `audited_clean` | 1466 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1829 |
+| `unaudited` | 1828 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 940 |
-| `leaf` | 1459 |
+| `medium` | 939 |
+| `leaf` | 1460 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1259,6 +1259,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `s3_taste_cube_decomposition_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `s3_time_constructed_support_tensor_primitive_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `s3_time_primitive_chain_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `s3_time_tensor_build_memo` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `scalar_3plus1_temporal_ratio_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18234,6 +18235,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** After granting the two T-side entries, the restricted Route-2 carrier/readout class leaves beta_E/alpha_E free, so beta_E/alpha_E = 21/4 is an open primitive rather than a derived readout theorem.  _(class `A`)_
 - **chain closes:** True — The cited retained readout and time-coupling notes reduce the unresolved theorem to the readout map entry rho_E. The retained naturality no-go and the reduced-family algebra show rho_E remains free in the restricted class, so the open-gate conclusion follows.
 - **rationale:** The audited claim is not the positive 21/4 theorem; it is the narrower open-gate and firewall statement. The load-bearing algebra is exact: P(rho_E) fixes E-shell normalization while changing the E-center lift by 1 + rho_E/6, so rho_E = 0 and rho_E = 21/4 are both admissible without an extra E-center/source/readout primitive. The direct cited authorities are retained or retained_no_go, and the runner checks 21/4 only as one family member/comparator, not as a derived premise.
+- **auditor confidence:** high
+
+### `s3_time_tensor_build_memo`
+
+- **Note:** [`S3_TIME_TENSOR_BUILD_MEMO.md`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded Route-2 synthesis: retained readout/time authorities imply an exact K_R/Lambda_R backbone, exact restricted P_R reduction, exact endpoint algebra, and an exact conditional Xi_P(t;c) family, with uniqueness blocked by the unresolved E-channel readout entry.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-s3_time_tensor_build_memo-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The exact conditional family exists for supplied admissible P_R, but the rho_E family has identical E-shell normalization and different E-center factors, so the missing beta_E/alpha_E entry blocks a unique Theta_R -> Lambda_R coupling.  _(class `A`)_
+- **chain closes:** True — The fraction algebra checks: q_T=5/6 gives beta_T/alpha_T=-1, s_TE=-2 with c_TE=-8/9 gives q_E=15/8, and hence beta_E/alpha_E=21/4. The rho_E=0 and rho_E=21/4 maps agree on E-shell but differ on E-center, so the scoped non-uniqueness conclusion follows from the cited retained inputs.
+- **rationale:** The note is correctly scoped as a bounded conditional-family and obstruction synthesis, not as a derivation of beta_E/alpha_E, a unique P_R, or an Einstein/Regge dynamics identification. The runner is not first-principles physics, but it does independently verify the exact finite algebra and boundary text needed for this scoped class-A closure over retained authorities. The clean verdict applies only to that bounded claim scope.
 - **auditor confidence:** high
 
 ### `s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23`

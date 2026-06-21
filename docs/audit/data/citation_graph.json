@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "regge_ok4_frame_section_narrow_theorem_note_2026-06-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "s3_time_tensor_build_memo"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "regge_ok4_frame_section_narrow_theorem_note_2026-06-17",
         "s3_time_tensor_build_memo",
         "signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17",
         "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17",
         "sm_gstar_higgs_sector_count_stretch_note_2026-05-29",
         "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29",
         "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
-        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
+        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
+        "statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "eac35d7882bbca0bfd89f6a4f9a8f0e9259e98952f265c57867143f07eb306f4",
+      "note_hash": "8a677f80eec82e84f52c51e0a4d3fce1700aaecdd204727df21285c867a7acdb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

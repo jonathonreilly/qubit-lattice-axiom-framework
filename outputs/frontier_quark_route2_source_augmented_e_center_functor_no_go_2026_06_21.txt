@@ -1,0 +1,50 @@
+Route-2 source-augmented E-center functor no-go
+==============================================================================
+PASS: QUARK_ROUTE2_SOURCE_AUGMENTED_E_CENTER_FUNCTOR_NO_GO_NOTE_2026-06-21.md exists -- docs/QUARK_ROUTE2_SOURCE_AUGMENTED_E_CENTER_FUNCTOR_NO_GO_NOTE_2026-06-21.md
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md exists -- docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: RCONN_DERIVED_NOTE.md exists -- docs/RCONN_DERIVED_NOTE.md
+PASS: QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md exists -- docs/QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md
+
+A. Source anchors
+------------------------------------------------------------------------------
+PASS: new note records the source-augmented blind-signature target
+PASS: S3 gate names endpoint triple as the open theorem target
+PASS: E-center blindness note requires an E-center-seeing primitive
+PASS: source-domain bridge note names the missing typed edge
+PASS: Rconn note supplies F_adj as source scalar
+PASS: E-center lift attempt names the required typed E-channel computation
+
+B. Source-augmented blind-signature invariance
+------------------------------------------------------------------------------
+PASS: rho_E=-1 has the same source-augmented blind signature -- q_E=5/6, |c_TE|=2
+PASS: rho_E=0 has the same source-augmented blind signature -- q_E=1, |c_TE|=5/3
+PASS: rho_E=1 has the same source-augmented blind signature -- q_E=7/6, |c_TE|=10/7
+PASS: rho_E=21/4 has the same source-augmented blind signature -- q_E=15/8, |c_TE|=8/9
+PASS: rho_E=9 has the same source-augmented blind signature -- q_E=5/2, |c_TE|=2/3
+PASS: same source-augmented blind signature supports multiple E-center lifts
+PASS: same source-augmented blind signature supports multiple center magnitudes
+PASS: rho_E=0 and rho_E=21/4 are indistinguishable to any blind-signature selector
+
+C. What the missing typed landing would add
+------------------------------------------------------------------------------
+PASS: target q_E is 15/8 -- 15/8
+PASS: target center magnitude is F_adj -- 8/9
+PASS: |c_TE|=F_adj would select the target inside endpoint algebra -- 21/4
+PASS: rho_E=-1 shares the blind signature but fails |c_TE|=F_adj -- |c_TE|=2
+PASS: rho_E=0 shares the blind signature but fails |c_TE|=F_adj -- |c_TE|=5/3
+PASS: rho_E=1 shares the blind signature but fails |c_TE|=F_adj -- |c_TE|=10/7
+PASS: rho_E=9 shares the blind signature but fails |c_TE|=F_adj -- |c_TE|=2/3
+
+D. Typed-edge reachability
+------------------------------------------------------------------------------
+PASS: base typed bank has no source-to-center landing path -- path=0
+PASS: base typed bank has no source-to-rho landing path -- path=0
+PASS: adding the missing typed landing reaches the target -- route2_center_TE_minus_8_9 -> route2_q_E_15_8 -> route2_rho_E_21_4
+PASS: missing typed landing is not already in the current bank
+
+Summary
+------------------------------------------------------------------------------
+TOTAL: PASS=31, FAIL=0
+VERDICT: adding source scalar F_adj to E-center-blind data still leaves the E-center lift free; a typed landing edge is required.

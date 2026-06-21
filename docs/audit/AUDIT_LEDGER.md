@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 944 |
+| **retained_bounded** | 945 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 36 |
-| unaudited | 1637 |
+| unaudited | 1636 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1377 |
+| `audited_clean` | 1378 |
 | `audited_conditional` | 18 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1963 |
+| `unaudited` | 1962 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 509 |
-| `medium` | 928 |
+| `high` | 508 |
+| `medium` | 929 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -104,9 +104,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1030 | 54.01 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
@@ -586,6 +586,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_strong_field_observable_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_weak_connectivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_factor_local_selector_normalizer_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -8068,6 +8069,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The scoped GB-S1a claim closes by direct algebraic instantiation of the cited weak-field response theorem with phi specialized to phi_GB. The broader Gate B source packet remains outside this audited scope.
 - **rationale:** The cited weak-field authority already provides S_test(phi;x)=L_test(1-phi(x)); the source note's load-bearing move is to substitute the runner-local phi_GB and observe the identical linear action shape. The runner source confirms this is not a first-principles Gate B source derivation: it performs textual dependency checks plus exact algebraic identity, additivity, and normalization-degeneracy checks. Because the scoped result adds no independent physical bridge beyond the retained-bounded parent theorem and explicitly excludes the rest of the Gate B packet, the correct classification is algebraic decoration rather than a new bounded theorem.
 - **decoration parent:** `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`
+- **auditor confidence:** high
+
+### `gauge_factor_local_selector_normalizer_theorem_note_2026-06-18`
+
+- **Note:** [`GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md`](../../docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-matrix normalizer theorem on the supplied H = C^3 x C^2 carrier under the supplied factor-observable preservation rule; it does not derive MR_color, the physical source of the rule, or chiral su(2)_L.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-gauge_factor_local_selector_normalizer_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If i[X, End(C^3) x I_2] and i[X, I_3 x End(C^2)] preserve the two supplied factor observable algebras, then X is exactly in u(3) x I_2 + I_3 x u(2), with shared identity counted once.  _(class `A`)_
+- **chain closes:** True — The finite algebra closes: expanding in product matrix bases, any nonlocal su(3) x su(2) component violates factor-algebra preservation, leaving precisely the 12-dimensional local span. The runner computes the constraint nullity, span ranks, complement, and Lie closure rather than merely printing the expected result.
+- **rationale:** The audited claim is a bounded class-A matrix-algebra theorem over explicitly supplied finite carrier and factor algebras. The cited no-go authority is retained_no_go and is compatible with this positive bounded result: invariant carrier data cannot select the embedding, while a supplied factor-observable preservation rule can. The clean verdict applies only to the exact normalizer consequence of that supplied rule, not to any derivation of the physical bridge, MR_color, gauge dynamics, or chirality.
 - **auditor confidence:** high
 
 ### `gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`

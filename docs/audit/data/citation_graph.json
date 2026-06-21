@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18"
     },
     {
@@ -53494,11 +53490,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lattice_3d_inverse_square_kernel_helper_note_2026-04-04"
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20"
+      "to": "distance_law_definitive_note"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02",
         "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
         "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25",
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
-        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20"
+        "distance_law_definitive_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c2fa09b08b3298ec252ff529e98043dc9417f88972e0e1f9ba8011918baee400",
+      "note_hash": "9f90edc84922e0ed7a1e29a83cc9efd991f5308892d82feb684bccd08a4f3d6d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

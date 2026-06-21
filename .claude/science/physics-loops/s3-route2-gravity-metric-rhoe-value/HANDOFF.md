@@ -42,7 +42,17 @@ Review disposition:
 - No repo-wide authority surfaces were updated.
 - PR conflicts/mergeability were not checked.
 
+PR:
+
+- Number: #4607
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4607
+- Title: `[physics-loop] s3-route2-gravity-metric-rhoe block76 bounded-support`
+- Head: `physics-loop/s3-route2-gravity-metric-rhoe-value-block76-20260621`
+- Base: `main`
+- State: `OPEN`
+- Conflict/mergeability check: not run per campaign instruction.
+
 Next exact action:
 
-- Commit, publish branch, and open the block76 PR.
-- Then pivot to the next campaign target if runtime remains.
+- Pivot to the next campaign target if runtime remains.
+- Highest-value next target: independent E/T channel-selecting observable.

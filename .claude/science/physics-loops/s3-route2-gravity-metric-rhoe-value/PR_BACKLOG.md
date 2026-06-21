@@ -11,7 +11,16 @@ gh pr create \
   --body-file .claude/science/physics-loops/s3-route2-gravity-metric-rhoe-value/PR_BODY.md
 ```
 
-Status: pending create.
+Status: opened.
+
+Identity:
+
+- Number: #4607
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4607
+- Title: `[physics-loop] s3-route2-gravity-metric-rhoe block76 bounded-support`
+- Head: `physics-loop/s3-route2-gravity-metric-rhoe-value-block76-20260621`
+- Base: `main`
+- State: `OPEN`
 
 Notes:
 

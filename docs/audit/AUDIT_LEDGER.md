@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 220 |
-| **retained_bounded** | 1014 |
+| **retained_bounded** | 1015 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1504 |
+| unaudited | 1503 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1464 |
+| `audited_clean` | 1465 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1830 |
+| `unaudited` | 1829 |
 
 | claim_type | count |
 |---|---:|
@@ -1231,6 +1231,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_production_interface_principle_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_production_kernel_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
+| `regge_ok4_frame_section_narrow_theorem_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `registration_reinstates_chirality_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -17837,6 +17838,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using S_+(Theta x)=S_+(x) and F(Theta x)=overline{F(x)}, the integrand exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) becomes exp(-2S_+(x)) |F(x)|^2 = |psi^2(x) F(x)|^2.  _(class `A`)_
 - **chain closes:** True — Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted source proves a direct pointwise algebraic identity followed by integration: exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) = exp(-2S_+(x)) |F(x)|^2 = |psi^2 F|^2, so the reflected integral is a real nonnegative weighted-L2 norm square and the associated form is Hermitian PSD. The runner exits cleanly with PASS=27 FAIL=0, all class-A checks, but the proof does not depend on the runner. The ratified claim is the exact conditional mathematical theorem under stated hypotheses; it does not assert that the framework Wilson/gauge/fermion action satisfies those hypotheses.
 - **rationale:** Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted source proves a direct pointwise algebraic identity followed by integration: exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) = exp(-2S_+(x)) |F(x)|^2 = |psi^2 F|^2, so the reflected integral is a real nonnegative weighted-L2 norm square and the associated form is Hermitian PSD. The runner exits cleanly with PASS=27 FAIL=0, all class-A checks, but the proof does not depend on the runner. The ratified claim is the exact conditional mathematical theorem under stated hypotheses; it does not assert that the framework Wilson/gauge/fermion action satisfies those hypotheses.
+- **auditor confidence:** high
+
+### `regge_ok4_frame_section_narrow_theorem_note_2026-06-17`
+
+- **Note:** [`REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md`](../../docs/REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded flat-atlas audit of the retained Regge O(k^4) cubic-harmonic tail as finite O_h frame-section support with lattice-fixed axis/face/body amplitudes, while O(k^2) remains isotropic.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-regge_ok4_frame_section_narrow_theorem_note_2026-06-17-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the retained O(k^4) tail alpha(n) = -(1 + sum_a n_a^4)/12, the cubic functional f(n)=sum_a n_a^4 has only the 6 axis, 8 body-diagonal, and 12 face-diagonal critical directions, and the associated de-traced cubic axis 4-tensor splits spin-2 as E(2) plus T2(3) with non-orbit-flat cubic-weighted energy.  _(class `A`)_
+- **chain closes:** True — The O(k^4) alpha formula is supplied by a retained_bounded upstream theorem, and the new critical-set, Hessian-signature, and E plus T2 split claims are finite algebra/calculus checks over that input. The runner does not recompute the original Regge H=6I-A amplitude, so closure is as an algebraic synthesis over retained inputs, not a new first-principles Regge derivation of alpha.
+- **rationale:** The load-bearing mathematics independently checks out: the alpha values and spread follow arithmetically from the retained alpha formula, the S^2 critical set follows from the Lagrange multiplier condition that all nonzero coordinates have equal magnitude, and the cubic tensor restricted to traceless symmetric tensors has the expected 2 plus 3 eigenvalue split. The O(k^2) covariance input and orbit-flat criterion are retained-grade, and the minimal-axiom citation is an accepted premise rather than a downgrade. No empirical comparator or tuned numerical input is used; the open curved-background, physical preferred-frame, and dimensionful calibration questions are explicitly outside the audited scope.
 - **auditor confidence:** high
 
 ### `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10`

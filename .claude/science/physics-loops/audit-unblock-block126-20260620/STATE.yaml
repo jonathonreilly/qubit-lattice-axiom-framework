@@ -1,0 +1,66 @@
+loop: audit-unblock-block126-20260620
+campaign: audit-unblock-20260619
+block: 126
+mode: physics-loop
+branch: physics-loop/audit-unblock-block126-20260620
+base: origin/main
+base_commit: cd9cf25180e17c46706a73341144ee1b71a1c7d2
+user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
+target_claim_id: dm_neutrino_source_surface_perturbative_uniqueness_theorem_note_2026-04-17
+target_runner: scripts/frontier_dm_neutrino_source_surface_perturbative_uniqueness_theorem.py
+target_cache: logs/runner-cache/frontier_dm_neutrino_source_surface_perturbative_uniqueness_theorem.txt
+target_status: open
+actual_current_surface_status: open
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+trace_class: methodology
+reachability_to_target: supports
+artifact_role: runner_certificate
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+lock_mode: degraded_branch_local
+lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
+current_result: "Refreshed a stale ok-but-empty runner cache into a full runner transcript: PASS=46 FAIL=0 under the declared 1800s timeout."
+dependencies_still_blocking:
+  - neutrino_dirac_z3_support_trichotomy_note
+  - dm_neutrino_dirac_bridge_theorem_note_2026-04-15
+files_touched:
+  - docs/audit/AUDIT_DISPATCH_QUEUE.md
+  - docs/audit/AUDIT_LEDGER.md
+  - docs/audit/AUDIT_QUEUE.md
+  - docs/audit/data/audit_dispatch_queue.json
+  - docs/audit/data/audit_ledger.json
+  - docs/audit/data/audit_packet_script_deps.json
+  - docs/audit/data/audit_queue.json
+  - docs/audit/data/auditor_reliability.json
+  - docs/audit/data/citation_graph.json
+  - docs/audit/data/cycle_inventory.json
+  - docs/audit/data/effective_status_summary.json
+  - docs/audit/data/load_bearing_summary.json
+  - docs/audit/data/runner_classification.json
+  - docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md
+  - docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+  - docs/repo/FRONT_DOOR_STATUS.md
+  - logs/runner-cache/audit_packet_script_deps.txt
+  - logs/runner-cache/frontier_dm_neutrino_source_surface_perturbative_uniqueness_theorem.txt
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/STATE.yaml
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/GOAL.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/ASSUMPTIONS_AND_IMPORTS.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/ROUTE_PORTFOLIO.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/OPPORTUNITY_QUEUE.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/NO_GO_LEDGER.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/LITERATURE_BRIDGES.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/ARTIFACT_PLAN.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/TRACE_GATE.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/CLAIM_STATUS_CERTIFICATE.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/REVIEW_HISTORY.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/HANDOFF.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/PR_BACKLOG.md
+  - .claude/science/physics-loops/audit-unblock-block126-20260620/PR_BODY.md
+review_disposition: pass
+verification_status: pass
+pr_status: pending
+next_exact_action: "Commit, push, and open the block126 PR."
+stop_condition: "Block126 PR opened and verified; campaign may then pivot to the next independent audit-unblock target."

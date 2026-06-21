@@ -6120,6 +6120,18 @@
       "dominant_class": null,
       "runner": "scripts/diamond_ideal_lockin_detector_theorem.py"
     },
+    "diamond_nv_phase_ramp_signal_budget_note": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "runner": "scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py"
+    },
     "diamond_phase_ramp_bridge_card_note": {
       "assert_count": 0,
       "counts": {
@@ -46239,6 +46251,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py": {
+      "assert_count": 1,
+      "claims": [
+        "diamond_nv_phase_ramp_signal_budget_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/diamond_phase_ramp_bridge_card.py": {
       "assert_count": 0,
       "claims": [
@@ -85873,15 +85900,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 624,
+    "decoration_candidates": 625,
     "dominant_class_distribution": {
       "A": 462,
-      "B": 555,
+      "B": 556,
       "C": 1233,
       "D": 422,
       "none": 451
     },
-    "runners_classified": 3123,
+    "runners_classified": 3124,
     "runners_with_C": 1675,
     "runners_with_D": 991
   }

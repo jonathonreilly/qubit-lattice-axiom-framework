@@ -30177,12 +30177,16 @@
       ],
       "direct_in_degree": 3,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
+      "helper_runner_paths": [
+        "scripts/diamond_ideal_lockin_detector_theorem.py",
+        "scripts/diamond_phase_ramp_bridge_card.py",
+        "scripts/diamond_signal_budget_hardening.py"
+      ],
       "load_bearing_score": 4.085,
       "note_path": "docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py",
       "transitive_descendants": 5
     },
     {

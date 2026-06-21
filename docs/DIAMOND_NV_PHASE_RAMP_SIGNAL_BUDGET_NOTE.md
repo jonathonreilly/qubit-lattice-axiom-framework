@@ -6,6 +6,10 @@
 **Status:** narrow experiment-facing **discriminator** card for the
 phase-sensitive lane; **not** a closed signal budget.
 **Status authority:** independent audit lane only.
+**Runner:** `scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py`
+**Helper runners:** `scripts/diamond_signal_budget_hardening.py`;
+`scripts/diamond_phase_ramp_bridge_card.py`;
+`scripts/diamond_ideal_lockin_detector_theorem.py`.
 **Authority role:** records, but does not close, a bounded discriminator
 card naming the lock-in observables (`X`, `Y`, `phi`, widefield phase
 ramp), the qualitative ordering with drive frequency / separation, and

@@ -64473,10 +64473,14 @@
         "diamond_sensor_protocol_note",
         "diamond_sensor_prediction_note"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "cd8bccdfd97f51e32b5da410f14ff15074cf085589bdde7d660572611354bd98",
+      "helper_runner_paths": [
+        "scripts/diamond_ideal_lockin_detector_theorem.py",
+        "scripts/diamond_phase_ramp_bridge_card.py",
+        "scripts/diamond_signal_budget_hardening.py"
+      ],
+      "note_hash": "eff9bd858a5aa661a8aa33bc0014f3e50759d2e4519c7e518a815cd2ca955ccc",
       "path": "docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/diamond_nv_phase_ramp_signal_budget_bounded_probe.py",
       "title": "Diamond / NV Phase-Ramp Signal Budget Note"
     },
     "diamond_phase_ramp_bridge_card_note": {
@@ -103190,7 +103194,7 @@
         "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "06c44dc156effe310094b619799c15a7678dadaedad11b990037bde9cbbc4dd6",
+      "note_hash": "c492d2804090b2e30ff5de1823bd8734241fa837e1e95bf60682ad7270f90063",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118607,6 +118611,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

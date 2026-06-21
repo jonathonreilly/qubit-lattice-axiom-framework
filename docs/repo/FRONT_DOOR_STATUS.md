@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1610 |
+| Applied audit verdicts | 1611 |
 | Retained-grade rows, including boxed decorations | 1491 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 217 |
 | Retained bounded rows | 1001 |
 | Boxed decorations under retained parents | 60 |
-| Open gates | 38 |
-| Unaudited rows | 1536 |
+| Open gates | 39 |
+| Unaudited rows | 1535 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 40 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1538 |
-| Ready rows | 46 |
+| Total pending rows | 1537 |
+| Ready rows | 45 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 522 |
+| Leaf pending | 521 |
 
 Next ready rows by queue order:
 
-- [`flavor_interacting_matter_build_note_2026-05-30`](../../docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md) - medium; unaudited
 - [`fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16`](../../docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
 - [`g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28`](../../docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md) - medium; unaudited
 - [`gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10`](../../docs/GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md) - medium; unaudited
 - [`kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20`](../../docs/KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md) - medium; unaudited
 - [`koide_carrier_locus_decomposition_note_2026-06-01`](../../docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md) - medium; unaudited
 - [`koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16`](../../docs/KOIDE_DIMENSIONLESS_OBJECTION_TOY_CONDITIONAL_ALGEBRAIC_CHECKS_NARROW_THEOREM_NOTE_2026-05-16.md) - medium; unaudited
-- [`koide_first_order_selector_bounded_localization_certificate_2026-06-18`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md) - leaf; unaudited
+- [`koide_first_order_selector_bounded_localization_certificate_2026-06-18`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md) - medium; unaudited
+- [`koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05`](../../docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,18 +81,18 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3619 |
-| Critical nodes | 575 |
-| High nodes | 510 |
-| Medium nodes | 986 |
-| Leaf nodes | 1548 |
+| Critical nodes | 576 |
+| High nodes | 509 |
+| Medium nodes | 984 |
+| Leaf nodes | 1550 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
 - `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
 - `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
-- `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
-- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
-- `key_terminology` - critical; 1126 descendants; score 47.638
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312
+- `observable_principle_from_axiom_note` - critical; 921 descendants; score 60.349
+- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
+- `minimal_axioms_2026-05-03` - critical; 1034 descendants; score 49.015
+- `key_terminology` - critical; 1127 descendants; score 47.640
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 899 descendants; score 45.314

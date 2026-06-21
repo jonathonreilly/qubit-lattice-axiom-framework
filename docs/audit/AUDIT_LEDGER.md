@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 941 |
+| **retained_bounded** | 942 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1673 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1353 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1354 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
@@ -143,7 +142,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
-| `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1099,6 +1097,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `qnm_hardening_feasibility_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `quantum_horizon_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
@@ -15112,6 +15111,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Since the embedded rank-one projections n_x commute on distinct tensor factors, they admit a joint binary eigenbasis and Q_total has eigenvalue sum_x nu_x on each binary string.  _(class `A`)_
 - **chain closes:** True — The Quantum axiom supplies A_x ~= M_2(C), and the remaining argument is finite-dimensional spectral algebra on the stipulated finite tensor product. Rank-one projections have eigenvalues 0 and 1, tensor embeddings commute, and binary-string counting gives the stated spectrum and multiplicities.
 - **rationale:** The proof does not identify the occupation count with physical charge or import a fitted numerical target. The only upstream authority is an accepted axiom premise supplying the one-site qubit algebra, and the audited conclusion follows by standard finite-dimensional linear algebra plus binomial counting. The runner source genuinely constructs representative matrices and tensor embeddings for N=4, but the theorem itself is established analytically rather than by relying on that finite sample.
+- **auditor confidence:** high
+
+### `qcd_low_energy_running_bridge_note_2026-05-01`
+
+- **Note:** [`QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md`](../../docs/QCD_LOW_ENERGY_RUNNING_BRIDGE_NOTE_2026-05-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded alpha_s(v) -> alpha_s(M_Z) transfer-map kernel under the declared SM RGE, scale, threshold, and auxiliary-tuple imports on D = [0.085, 0.130]; PDG comparisons are appendix-only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-qcd_low_energy_running_bridge_note_2026-05-01-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The exact 1-loop map satisfies 1/T_1(a) = 1/a - L with the stated threshold constant, and the 2-loop matched map T_2 is grid-certified on D for well-definedness, monotonicity, expansivity, and center inverse round-trip.  _(class `A`)_
+- **chain closes:** True — Within the declared bounded scope, the runner computes the SU(3) group factors, derives b0 and L, checks the exact T_1 formula independently against integration, and numerically certifies the stated T_2 grid properties. No preferred alpha_s(v) boundary value or PDG comparison is load-bearing.
+- **rationale:** The claim is not a first-principles derivation of alpha_s or the SM RGE; it is a bounded theorem about the transfer map defined by declared imports. The runner source does real computation rather than merely printing constants: it recomputes SU(3) factors, integrates the 1-loop and 2-loop systems, checks independent integrator agreement, and separates the two PDG comparator checks as class D appendix material. The historical boundary value 0.103304 is not used in the load-bearing K1-K5 theorem surface, so the repaired claim is not a tuned numerical match.
 - **auditor confidence:** high
 
 ### `qnm_control_hardening_note`

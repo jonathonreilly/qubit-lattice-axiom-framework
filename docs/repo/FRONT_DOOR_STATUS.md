@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1474 |
-| Retained-grade rows, including boxed decorations | 1407 |
+| Applied audit verdicts | 1475 |
+| Retained-grade rows, including boxed decorations | 1408 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 207 |
 | Retained bounded rows | 943 |
-| Boxed decorations under retained parents | 52 |
+| Boxed decorations under retained parents | 53 |
 | Open gates | 34 |
-| Unaudited rows | 1664 |
+| Unaudited rows | 1663 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 22 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1674 |
-| Ready rows | 120 |
+| Total pending rows | 1673 |
+| Ready rows | 119 |
 | Cycle-break targets | 9 |
-| Critical pending | 310 |
+| Critical pending | 309 |
 | High pending | 302 |
 | Medium pending | 486 |
 | Leaf pending | 576 |
 
 Next ready rows by queue order:
 
-- [`g_bare_hilbert_schmidt_rigidity_theorem_note_2026-05-07`](../../docs/G_BARE_HILBERT_SCHMIDT_RIGIDITY_THEOREM_NOTE_2026-05-07.md) - critical; unaudited
 - [`staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23`](../../docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md) - critical; audit_in_progress
 - [`hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26`](../../docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`flavor_operator_realization_local_density_2026-05-31`](../../docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`flavor_asymmetry_2over9_forced_weight_2026-05-31`](../../docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md) - critical; audit_in_progress
 - [`koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
+- [`koide_aps_block_by_block_forcing_note_2026-04-21`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md) - critical; audit_in_progress
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -1,53 +1,73 @@
 loop_slug: foundation-revision-proposal
-campaign: foundation-revision-proposal-block01-20260620
-block: block01
+campaign: foundation-revision-changeset-block02-20260620
+block: block02
 cycle: 1
 date: 2026-06-21
-branch: physics-loop/foundation-revision-proposal-block01-20260620
+branch: physics-loop/foundation-revision-changeset-block02-20260620
 goal: |
-  Draft CORRECTED FOUNDATION LANGUAGE as a governance PROPOSAL resolving the
-  clean first-principles panel's 10/10 needs_revision findings on
-  Lattice/Quantum/Record + primitives P1/P2/P3, apply the four adversarial
-  re-check fixes, and write the final proposal doc plus governance pack.
-  This is a PROPOSAL, not an adoption.
-target_status: proposal
+  Assemble a READY-TO-APPLY foundation-revision CHANGESET as a DRAFT for the
+  owner's review (nothing adopted): the proposed revised axiom memo, an
+  applyable registry patch (kinetic_isotropy_primitive demotion), the apply-order
+  README, and the block02 claim-status certificate. Incorporate the independent
+  Codex/gpt-5.5 cross-check's two additions: the missing global
+  composition/state-space (its #1) and the P1 keep-vs-convention owner choice.
+target_status: changeset_draft
 runtime_used: <1h
 cycles_completed: 1
-active_route: finalize (apply re-check fixes -> write final proposal)
+active_route: assemble changeset draft from block01 proposal + Codex cross-check
 hard_residual_attacked: |
-  Foundation axiom/primitive mis-tiering: A3 Record welds a clean valuation to
-  an illegitimate K/CPT-orbit selector; P2 kinetic-isotropy is a renormalized
-  dynamical condition mis-registered as a primitive; dynamics + emergent time
-  axis presupposed but posited nowhere.
+  Foundation mis-tiering already diagnosed in block01 (A3 weld; P2 renormalized
+  dynamical condition mis-registered as primitive; dynamics+time presupposed
+  nowhere). block02 residual: turning that diagnosis into an applyable artifact
+  without mutating the forbidden audit-lane surfaces, and closing the two gaps
+  Codex flagged that the Claude panel missed (global composition/state-space;
+  P1-as-convention).
 files_touched:
-  - docs/FOUNDATION_REVISION_PROPOSAL_2026-06-20.md
-  - .claude/science/physics-loops/foundation-revision-proposal/DRAFT_revised_language.md
-  - .claude/science/physics-loops/foundation-revision-proposal/CLAIM_STATUS_CERTIFICATE_block01.md
+  - docs/MINIMAL_AXIOMS_2026-06-21_PROPOSED.md
+  - .claude/science/physics-loops/foundation-revision-proposal/registry_changeset.patch
+  - docs/FOUNDATION_REVISION_CHANGESET_README_2026-06-21.md
+  - .claude/science/physics-loops/foundation-revision-proposal/CLAIM_STATUS_CERTIFICATE_block02.md
   - .claude/science/physics-loops/foundation-revision-proposal/STATE.yaml
-  - .claude/science/physics-loops/foundation-revision-proposal/GOAL.md
 canonical_surfaces_NOT_edited:
   - docs/MINIMAL_AXIOMS_2026-06-05.md
   - docs/audit/data/axiom_premise_nodes.json
+  - docs/audit/data/tier_a_admissions.json
+codex_additions_incorporated:
+  - "G-COMPOSE: global composition / state-space folded into the Quantum axiom (finite-region tensor product + infinite quasi-local C*-algebra A = UHF/hyperfinite inductive limit + state space) AND added as a gate; A stays a factor so G-SECT still required (Codex #1 change)"
+  - "P1 keep-vs-convention: presented as an explicit OPEN OWNER CHOICE (Framing K keep-as-primitive per Claude clean panel vs Framing C reclassify-as-convention per Codex); changeset does not move P1"
+registry_patch:
+  file: .claude/science/physics-loops/foundation-revision-proposal/registry_changeset.patch
+  verified: "git apply --check EXIT 0; trial-applied in scratch copy, both JSON parse valid"
+  axiom_premise_nodes: "remove kinetic_isotropy_primitive from canonical_ids + nodes (approved primitives 3 -> 2)"
+  tier_a_admissions: "add kinetic_isotropy_renormalized_anisotropy_target_2026-06-21 (label xi_R); genuine_admitted_input_count 2 -> 3"
+  route: "admitted-input (registry-of-record); derived-target alternative noted in-entry"
+  applied: false
 open_imports:
-  - "G-DYN/G-SECT/G-TIME/G-ARROW required open gates (flagged, undischarged)"
+  - "G-DYN/G-SECT/G-TIME/G-ARROW/G-COMPOSE required open gates (flagged, undischarged)"
   - "P2 route selection (admitted-input primary vs derived-target) — owner call"
+  - "P1 keep-as-primitive vs reclassify-as-convention — owner call (Claude vs Codex)"
 no_go_routes:
   - "adding a dynamics axiom (forbidden by AXIOM_MINIMALITY_POLICY sec 1/4)"
+  - "mutating docs/audit/data/*.json or docs/MINIMAL_AXIOMS_2026-06-05.md (forbidden; emit patch + new dated memo instead)"
 review_findings: |
-  Four adversarial re-checks all returned revision_sound_with_notes; all
-  demanded fixes applied (see CLAIM_STATUS_CERTIFICATE_block01.md sec 'Re-check
-  fixes applied').
-pr_status: pending owner/audit-lane decision
+  block01's four adversarial re-checks all returned revision_sound_with_notes;
+  Codex/gpt-5.5 independently confirmed A3-split + P2-retier + system
+  under-completeness and added global composition/state-space (#1) and
+  P1-as-convention. block02 folded both Codex additions in.
+pr_status: pending owner/audit-lane decision (orchestrator owns git)
 next_exact_action: |
-  Owner governance decision: adopt / amend / reject. If adopt, the audit lane
-  edits MINIMAL_AXIOMS + axiom_premise_nodes.json + tier_a_admissions.json +
-  AXIOM_MINIMALITY_POLICY sec 6, then re-audits all hash-guard dependents.
+  Owner governance decision: adopt / amend / reject the changeset. If adopt:
+  promote MINIMAL_AXIOMS_2026-06-21_PROPOSED.md to canonical; git apply
+  registry_changeset.patch; record P2 reversal + the nine criteria in
+  AXIOM_MINIMALITY_POLICY sec 6; resolve the P1 keep-vs-convention and P2
+  route choices; hash-guard re-audit all dependents.
 stop_condition: |
-  Final proposal doc + governance pack written; vocab_lint clean; canonical
-  surfaces verified untouched. Reached.
+  Changeset draft (proposed memo + verified registry patch + apply-order README +
+  block02 certificate) written; STATE updated; vocab_lint clean; canonical memo
+  + registry JSON verified untouched. Reached.
 status_fields:
   actual_current_surface_status: proposal
-  target_claim_type: governance_proposal
+  target_claim_type: governance_changeset_draft
   conditional_surface_status: null
   hypothetical_axiom_status: proposed
   proposal_allowed: false

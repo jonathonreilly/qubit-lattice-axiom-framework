@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 205 |
-| **retained_bounded** | 932 |
+| **retained_bounded** | 933 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 34 |
 | unaudited | 1676 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 22 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1354 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1355 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 54 |
 | `audited_failed` | 22 |
@@ -134,7 +133,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -685,6 +683,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9359,6 +9358,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** Conditional on the Matsubara free-energy density formula, A(L_t) = (1/(2 L_t u_0^2)) sum_omega 1/(3 + sin^2 omega), with endpoints A_2 = 1/(8 u_0^2), A_4 = 1/(7 u_0^2), and A_inf = 1/(4 sqrt(3) u_0^2).  _(class `A`)_
 - **chain closes:** True — The endpoint identities follow by Taylor expanding log(1+x) at small m and evaluating the finite APBC sums at L_t=2 and L_t=4 plus the standard continuum average integral for L_t -> infinity. The open dimension-4 insertion bridge is explicitly outside the scoped algebraic claim.
 - **rationale:** The load-bearing algebra closes from the retained-grade Matsubara free-energy density authority, whose effective status is decoration_under a retained parent, plus standard finite-sum and integral identities. The runner genuinely computes the coefficient, endpoint formulas, and ratio checks, while its two observed-prefactor checks are external comparator evidence and are not needed for the scoped algebraic theorem. The note correctly leaves the physical det -> v insertion theorem open, so the clean verdict applies only to the bounded endpoint algebra and formal C_inf^(4D) factor, not to hierarchy closure.
+- **auditor confidence:** high
+
+### `hierarchy_formula_honest_status_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded structural-support theorem T1 plus D1/C1 as declared candidate-map and numeric-readout appendices; not a closure of B3b, B4, B5, and not an EW VEV prediction.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-hierarchy_formula_honest_status_note_2026-05-10-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** T1 recomputes from local algebra that the four-direction naive surface has species count 16, the minimal all-APBC block determinant has matching u_0-degree 16, the selector is exactly (7/8)^(1/4), and the resulting K and sensitivities follow over the declared B1 input.  _(class `C`)_
+- **chain closes:** True — The local species-count, determinant-degree, selector, K, and sensitivity claims close from the provided algebra, retained-grade authorities, and the registered kinetic-isotropy primitive. The formula-closure and observable-identification gates are explicitly fenced outside the audited load-bearing claim.
+- **rationale:** The runner source performs substantive local computations: exact corner enumeration, Fraction-matrix staggered-operator algebra, determinant/characteristic-polynomial checks, exact eta/zeta algebra, and finite-difference sensitivity checks. The helper only hard-codes the licensed plaquette surface for B1 verification, which is a retained_bounded input under the rubric, and the kinetic-isotropy dependency is an accepted primitive used within its declared scope. PDG comparison and the open B3b/B4/B5 formula-closure surfaces are quarantined from the load-bearing T1 result, so the bounded claim closes at its stated scope.
 - **auditor confidence:** high
 
 ### `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`

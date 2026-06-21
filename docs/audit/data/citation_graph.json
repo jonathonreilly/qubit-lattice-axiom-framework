@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "dm_neutrino_weak_vector_theorem_note_2026-04-15"
     },
     {
       "from": "repo.repo_organization",
@@ -64528,9 +64528,9 @@
         "source_resolved_wavefield_escalation_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a8bce61c6fdfdf4df0310c6a36b68ea77ea57e10d65e8c3c6bee5bd41a35f41b",
+      "note_hash": "4cc9aba76ce9f1645ff5c86f1a7452844600349a46015d85b45223dc41dd011e",
       "path": "docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/diamond_sensor_protocol_probe.py",
       "title": "Diamond Sensor Protocol Note"
     },
     "diamond_signal_budget_hardening_note": {
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
         "abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18",
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
         "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "qcd_low_energy_running_bridge_note_2026-05-01",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "dm_neutrino_weak_vector_theorem_note_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d6ffa7a20d6d6ad2dc40b78e287bf134de19628cfb80c50d3b4c287573914d7e",
+      "note_hash": "11259dbfa3ce6fc456cba3586804618c94ab554ab02b2a5cb9792d531e9e7c73",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118607,6 +118607,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

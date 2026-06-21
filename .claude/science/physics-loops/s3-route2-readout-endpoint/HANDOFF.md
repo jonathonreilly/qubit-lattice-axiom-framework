@@ -58,7 +58,22 @@ pass
 
 ## PR Status
 
-Pending commit, push, and PR creation.
+Open:
+
+```text
+PR #4552
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4552
+title: [physics-loop] s3-route2-readout-endpoint block23 exact-support
+head: physics-loop/s3-route2-readout-endpoint-block23-20260621
+base: main
+state: OPEN
+```
+
+Identity-only verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block23-20260621","number":4552,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block23 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4552"}
+```
 
 ## Next Target
 

@@ -31,7 +31,9 @@ trace_gate:
   reachability_to_target: supports
   artifact_role: theorem
 pr:
-  status: pending
+  status: open
+  number: 4552
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4552
   title: "[physics-loop] s3-route2-readout-endpoint block23 exact-support"
-next_exact_action: "Commit, push, and open the block23 review PR."
+next_exact_action: "Continue campaign with magnitude/typecast theorem or no-go."
 stop_condition: "Continue campaign if runtime remains after PR handoff."

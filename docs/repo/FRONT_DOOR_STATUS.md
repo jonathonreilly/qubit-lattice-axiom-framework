@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1655 |
-| Retained-grade rows, including boxed decorations | 1519 |
+| Applied audit verdicts | 1656 |
+| Retained-grade rows, including boxed decorations | 1520 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 222 |
 | Retained bounded rows | 1021 |
-| Boxed decorations under retained parents | 63 |
+| Boxed decorations under retained parents | 64 |
 | Open gates | 39 |
-| Unaudited rows | 1491 |
+| Unaudited rows | 1490 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 55 |
 | Audited renaming rows | 29 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1493 |
-| Ready rows | 1 |
+| Total pending rows | 1492 |
+| Ready rows | 0 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
-| Medium pending | 438 |
+| Medium pending | 437 |
 | Leaf pending | 483 |
 
 Next ready rows by queue order:
 
-- [`yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25`](../../docs/YT_EW_SIN_SQ_THETA_W_PRESERVATION_BOUNDED_NOTE_2026-05-25.md) - medium; unaudited
+- none
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -76,8 +76,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 974 |
-| Leaf nodes | 1560 |
+| Medium nodes | 973 |
+| Leaf nodes | 1561 |
 
 Top load-bearing rows by graph score:
 

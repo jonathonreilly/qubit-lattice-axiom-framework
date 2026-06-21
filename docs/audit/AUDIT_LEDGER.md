@@ -23,7 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 947 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1668 |
+| unaudited | 1667 |
+| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
@@ -60,14 +61,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
+| `audit_in_progress` | 13 |
 | `audited_clean` | 1359 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 19 |
-| `unaudited` | 1994 |
+| `unaudited` | 1993 |
 
 | claim_type | count |
 |---|---:|
@@ -132,6 +133,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
+| `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |

@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dm_neutrino_weak_vector_theorem_note_2026-04-15"
+      "to": "dm_neutrino_dirac_bridge_theorem_note_2026-04-15"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "dm_neutrino_weak_vector_theorem_note_2026-04-15",
+        "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
@@ -103190,7 +103190,7 @@
         "su3_casimir_fundamental_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0fcaec6921fe06d57d9ec0c2946bbbd64ed44c3eadc50265b7df8907a0d71f66",
+      "note_hash": "1292d9b53009cd49ade6207d3b4f6c7fd2e6549a17a7c711c48d4b3db67a5b46",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

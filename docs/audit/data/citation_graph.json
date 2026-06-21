@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_unbounded_finite_additivity_schema_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "record_unbounded_finite_additivity_schema_2026-06-06",
         "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09",
         "distance_law_definitive_note",
         "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
         "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
         "distance_law_preserving_third_family_note",
         "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
-        "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18"
+        "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18",
+        "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a2b068e3642157ddd9aa65b502b283802f8eae2a32d61591adca6ee20a8c1f9a",
+      "note_hash": "1d60f1f27738a1ad2946d59ba09c2865c7ed2ce82bef5a6b833a7b31622f47e8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

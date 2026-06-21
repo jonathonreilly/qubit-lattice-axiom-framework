@@ -51,6 +51,13 @@ checks_run:
   - command: branch-local status/overclaim rg scan
     result: no matches
 review_status: local_review_pass
-pr_status: pending
-next_exact_action: commit, push, open identity-verified PR
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4540"
+pr_identity:
+  number: 4540
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4540
+  title: "[physics-loop] s3-route2-readout-endpoint block11 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block11-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: continue campaign with the leg-level source/readout factorization primitive target
 stop_condition: continue campaign while runtime remains

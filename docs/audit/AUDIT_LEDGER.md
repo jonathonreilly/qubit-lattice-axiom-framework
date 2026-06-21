@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1011 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1514 |
+| unaudited | 1513 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1461 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 64 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1840 |
+| `unaudited` | 1839 |
 
 | claim_type | count |
 |---|---:|
@@ -1632,6 +1632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -15915,6 +15916,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The scoped claim closes. The retained one-hop dependencies supply the well-defined finite periodic SU(3) Wilson plaquette observable, the accepted 3+1D Wilson surface combinatorics, and the boundary that analytic P(6) and constant-lift closure remain unavailable. The runner source and SHA-pinned cache align on seed 42, beta=6, periodic 4D finite volumes, cold-start SU(3) links, Gell-Mann Metropolis updates, and broad L=2/L=3 plaquette support checks.
 - **rationale:** Clean for the stated bounded theorem. The source note, one-hop retained dependencies, runner source, and cached output align on the same finite-volume 3+1D periodic Wilson plaquette computation. The claim uses 0.5934 only as contextual comparator and does not overclaim analytic P(6), autocorrelation-controlled thermodynamic extrapolation, or infinite-volume closure.
 - **auditor confidence:** medium_high
+
+### `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`
+
+- **Note:** [`PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Non-downstream-licensed admitted-input runner-local diagnostic: the tested finite weak-coupling/tadpole/Pade grid over the supplied packet misses the admitted comparator; no actual beta=6 plaquette surface or non-perturbative route is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the source-wired Wilson coefficient relation, the diagnostic beta=6 specialization, and the admitted NSPT/MC/F2 inputs, the tested finite PT, tadpole, Pade, and tadpole-Pade envelope stays in the ~0.91 band and does not reach the admitted MC comparator.  _(class `D`)_
+- **chain closes:** False — The runner recomputes the finite residuals from hard-coded admitted data, and the cited Wilson note closes only beta = 2 N_c/g_bare^2 inside its boundary. The retained chain lacks authority for the NSPT packet, beta=6 action-surface/physical-selection and g_bare=1 specialization, and MC/F2 comparator values.
+- **rationale:** Issue: The load-bearing obstruction compares computed finite-route values to admitted NSPT, MC, and F2 inputs, while the only retained-bounded upstream authority closes the Wilson coefficient relation. Why this blocks: the runner supports the local arithmetic but does not derive the packet, the beta=6 surface/g_bare=1 specialization, or comparator authorities. Repair target: add retained or effective-bounded authority for those admitted inputs, or keep the row explicitly non-downstream-licensed. Claim boundary until fixed: it supports only the conditional runner-local statement that the tested finite perturbative envelope misses the admitted comparator.
+- **auditor confidence:** high
 
 ### `plaquette_beta6_strong_coupling_character_narrow_theorem_note_2026-05-27`
 

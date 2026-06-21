@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1632 |
+| Applied audit verdicts | 1633 |
 | Retained-grade rows, including boxed decorations | 1506 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
 | Retained bounded rows | 1011 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 39 |
-| Unaudited rows | 1514 |
+| Unaudited rows | 1513 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 46 |
+| Audited conditional rows | 47 |
 | Audited renaming rows | 28 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1516 |
-| Ready rows | 24 |
+| Total pending rows | 1515 |
+| Ready rows | 23 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 500 |
+| Leaf pending | 499 |
 
 Next ready rows by queue order:
 
-- [`plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27`](../../docs/PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md) - medium; unaudited
 - [`post_record_flow_thermal_stable_setting_certificate_2026-06-06`](../../docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md) - medium; unaudited
 - [`post_record_persistent_record_production_bridge_prototype_2026-06-06`](../../docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`post_record_source_measure_trace_normalization_prototype_2026-06-06`](../../docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`post_record_supplied_concentration_certificate_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md) - medium; unaudited
 - [`post_record_supplied_orientation_bridge_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md) - medium; unaudited
 - [`pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
-- [`quark_cp_small_correction_boundary_note_2026-06-17`](../../docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md) - leaf; unaudited
+- [`quark_cp_small_correction_boundary_note_2026-06-17`](../../docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md) - medium; unaudited
+- [`quark_route2_e_center_blindness_no_go_note_2026-06-17`](../../docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

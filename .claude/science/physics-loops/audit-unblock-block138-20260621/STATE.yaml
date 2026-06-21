@@ -1,0 +1,51 @@
+loop: audit-unblock-block138-20260621
+campaign: audit-unblock-20260619
+block: 138
+mode: physics-loop
+branch: physics-loop/audit-unblock-block138-20260621
+base: origin/main
+base_commit: 678b38ce7d8f9c092a7e19bf8272847f03bd799f
+created_at: "2026-06-21 01:44:00 EDT"
+user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main. Do not refresh existing PRs just to chase fast-moving main; reviewer lane cherry-picks useful work."
+target_claim_id: null
+target_system: audit dispatch queue target-selection surface
+target_status: methodology
+actual_current_surface_status: open
+trace_class: methodology
+reachability_to_target: supports
+artifact_role: tooling
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: false
+lock_mode: degraded_branch_local
+lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
+current_result: "Regenerated audit_dispatch_queue from current dispatcher sidecars so live sidecar targets are visible to audit-loop target selection."
+dispatch_snapshot_after_refresh:
+  live_count: 3
+  ready_count: 1
+  resolved_targets: 18
+  resolved_or_invalid: 44
+  retired: 19
+  ready_live_target: causal_propagating_field_live_packet_note_2026-06-05
+  blocked_live_targets:
+    - claim_id: universal_gr_polarization_frame_bundle_blocker_note
+      ready_blocker: "blocked_by_dependency:observable_principle_from_axiom_note:audited_conditional,s3_anomaly_spacetime_lift_note:unaudited,universal_gr_tensor_variational_candidate_note:unaudited,universal_gr_tensor_quotient_uniqueness_note:unaudited"
+    - claim_id: anomaly_forces_time_theorem
+      ready_blocker: "blocked_by_dependency:anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26:audited_conditional"
+files_touched:
+  - docs/audit/AUDIT_DISPATCH_QUEUE.md
+  - docs/audit/data/audit_dispatch_queue.json
+  - .claude/science/physics-loops/audit-unblock-block138-20260621/*
+verification_status: pass
+verification:
+  compute_dispatch_queue: "live dispatch entries: 3; ready dispatch entries: 1; resolved entries: 18; retired entries: 19"
+  audit_lint: "audit_dispatch_queue_stale warnings cleared; strict lint still exits 1 on 30 retained note_hash drift errors requiring independent re-audit"
+  py_compile: pass
+  git_diff_check: pass
+hashes:
+  audit_dispatch_queue_md_sha256: 426c04890a11b3f5857739830cd86cdf548547af8f4909df6fa45bfab3cbe049
+  audit_dispatch_queue_json_sha256: 74ab976f8af2923f0a7c5c20ec3fc6e4d7fc69860ca3d8c60630e908735d29ec
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit, push, open PR, then continue with a fresh source-side unblock target rather than refreshing existing PRs."
+stop_condition: "Block138 PR opened and verified; campaign may then pivot to the next independent audit-unblock target."

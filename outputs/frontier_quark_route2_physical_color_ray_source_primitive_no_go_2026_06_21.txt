@@ -1,0 +1,41 @@
+Route-2 physical color-ray source primitive current-bank no-go
+Scope: no current-source derivation; conditional ray consequence only
+
+PART 1: supplied physical color ray gives the target line
+PASS: H_psi is traceless
+PASS: H_psi is nonzero in adjoint coordinates
+PASS: selected adjoint line projector has rank 1 and trace 1
+PASS: adjoint complement has rank 7 -- rank=7
+PASS: complement fraction is exactly 7/8
+PASS: Route-2 endpoint arithmetic gives rho_E=21/4 and c_TE=-8/9
+
+PART 2: invariant/scalar current-bank data cannot select an adjoint line
+PASS: Gell-Mann basis has Tr(T_a T_b)=delta_ab/2
+PASS: commutant of the fundamental SU(3) generators is one-dimensional -- dim=1
+PASS: ad-invariant traceless subspace is zero-dimensional
+PASS: scalar/depolarized density has zero traceless adjoint vector
+PASS: a color-ray line is gauge-covariant, not gauge-invariant
+
+PART 3: Fierz channel count supplies an 8-block, not one line inside it
+PASS: 3 x 3bar channel dimensions split as 1+8=9
+PASS: F_adj is exactly 8/9 at N_c=3
+PASS: isotropic adjoint block has rank 8, not rank 1
+PASS: isotropic adjoint block has no distinguished eigenline -- multiplicity 8
+
+PART 4: current-bank typed reachability
+PASS: current bank has no path to a physical color-ray source line
+PASS: current bank has no path to a Route-2 adjoint line selector
+PASS: current bank has no path to rho_E=21/4 through this route
+PASS: a supplied physical color ray reaches rho_E=21/4 conditionally
+PASS: adding exactly the missing primitive makes the target reachable
+
+PART 5: current source-bank quote anchors
+PASS: quote anchors present: color orientation retired -- all anchors found
+PASS: quote anchors present: depolarization kills traceless mean -- all anchors found
+PASS: quote anchors present: Fierz support is channel algebra -- all anchors found
+PASS: quote anchors present: Rconn/readout selector open gate -- all anchors found
+PASS: quote anchors present: Z3 color/generation bridge open -- all anchors found
+PASS: quote anchors present: Route-2 E-center primitive remains open -- all anchors found
+
+PASS=26 FAIL=0 TOTAL=26
+VERDICT: current source bank does not supply a physical color-ray source primitive; adding such a primitive would conditionally reach rho_E=21/4 through the adjoint-line complement route.

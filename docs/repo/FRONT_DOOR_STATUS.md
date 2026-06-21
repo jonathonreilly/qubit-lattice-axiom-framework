@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1531 |
+| Applied audit verdicts | 1532 |
 | Retained-grade rows, including boxed decorations | 1433 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 210 |
 | Retained bounded rows | 958 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 37 |
-| Unaudited rows | 1615 |
+| Unaudited rows | 1614 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 22 |
+| Audited conditional rows | 23 |
 | Audited renaming rows | 28 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1617 |
-| Ready rows | 101 |
+| Total pending rows | 1616 |
+| Ready rows | 100 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
-| Medium pending | 457 |
+| Medium pending | 456 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`record_unbounded_finite_additivity_schema_2026-06-06`](../../docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md) - medium; unaudited
 - [`wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09`](../../docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_CLOSED_FORM_NOTE_2026-05-09.md) - medium; unaudited
 - [`distance_law_definitive_note`](../../docs/DISTANCE_LAW_DEFINITIVE_NOTE.md) - medium; unaudited
 - [`koide_fisher_rao_spherical_reorganization_note_2026-06-01`](../../docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`distance_law_preserving_third_family_note`](../../docs/DISTANCE_LAW_PRESERVING_THIRD_FAMILY_NOTE.md) - medium; unaudited
 - [`dimension_selection_upper_bound_textbook_import_note_2026-05-17`](../../docs/DIMENSION_SELECTION_UPPER_BOUND_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
 - [`gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18`](../../docs/GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
+- [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-18
 **Claim type:** bounded_theorem
-**Type:** exact support
+**Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome, and it does not edit audit/status surfaces.
 **Primary runner:**
@@ -129,6 +129,6 @@ python3 scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_
 Expected:
 
 ```text
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=13 FAIL=0
 VERDICT: exact support for a spatial-only O_h-scalar marginal mixing channel; one-loop coefficient/gamma/LV sufficiency remain open.
 ```

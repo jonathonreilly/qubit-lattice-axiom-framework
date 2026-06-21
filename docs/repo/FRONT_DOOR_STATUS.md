@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1540 |
-| Retained-grade rows, including boxed decorations | 1440 |
+| Applied audit verdicts | 1541 |
+| Retained-grade rows, including boxed decorations | 1441 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 211 |
-| Retained bounded rows | 964 |
+| Retained bounded rows | 965 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 37 |
-| Unaudited rows | 1606 |
+| Unaudited rows | 1605 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 23 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1608 |
+| Total pending rows | 1607 |
 | Ready rows | 97 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 448 |
-| Leaf pending | 588 |
+| Leaf pending | 587 |
 
 Next ready rows by queue order:
 
-- [`koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`wilson_m_h_tree_at_extremum_algebraic_core_split_note_2026-06-18`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 - [`post_record_admitted_sample_target_vector_interface_2026-06-06`](../../docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md) - medium; unaudited
 - [`post_record_selection_rule_target_vector_firewall_2026-06-06`](../../docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md) - medium; unaudited
 - [`post_record_supplied_kernel_selection_rule_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md) - medium; unaudited
 - [`signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_WILSON_MASS_HOLONOMY_TWISTED_EDGE_REALIZATION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
-- [`wilson_m_h_tree_at_extremum_algebraic_core_split_note_2026-06-18`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - leaf; unaudited
+- [`emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18`](../../docs/EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 978 |
-| Leaf nodes | 1556 |
+| Medium nodes | 979 |
+| Leaf nodes | 1555 |
 
 Top load-bearing rows by graph score:
 
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
 - `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
-- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
-- `minimal_axioms_2026-05-03` - critical; 1034 descendants; score 49.015
-- `key_terminology` - critical; 1127 descendants; score 47.640
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 899 descendants; score 45.314
+- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
+- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
+- `key_terminology` - critical; 1126 descendants; score 47.638
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312

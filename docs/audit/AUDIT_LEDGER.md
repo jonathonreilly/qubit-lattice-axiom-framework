@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1002 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1531 |
+| unaudited | 1530 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 41 |
+| ~~audited_conditional~~ | 42 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -67,12 +67,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1451 |
-| `audited_conditional` | 41 |
+| `audited_conditional` | 42 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1857 |
+| `unaudited` | 1856 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 568 |
 | `high` | 507 |
-| `medium` | 940 |
-| `leaf` | 1459 |
+| `medium` | 939 |
+| `leaf` | 1460 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1613,6 +1613,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_carrier_locus_decomposition_note_2026-06-01` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11329,6 +11330,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **chain closes:** True — The conclusion follows from the stated `3 x 3` cyclic-shift algebra and the retained order-three generation surface by direct matrix identities. The negative scope is properly narrow: it closes only the scalar generator-rephasing route and explicitly leaves non-circulant or tensor-factor routes open.
 - **rationale:** The load-bearing step is a genuine algebraic identity, not a definition, numerical fit, or external comparator check. The displayed rotation formulas for `B1,B2`, the cube-root quantization, the commuting-centralizer claim, and the diagonal phase proportionality criterion all check under the note's conventions. The runner source performs the relevant finite-dimensional matrix computations rather than merely printing constants, and its extra Koide-context checks are not needed for the audited obstruction. The no-go discipline gate is satisfied at the narrow route level because the note does not claim a global absence of continuous doublet actions.
 - **auditor confidence:** high
+
+### `koide_carrier_locus_decomposition_note_2026-06-01`
+
+- **Note:** [`KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md`](../../docs/KOIDE_CARRIER_LOCUS_DECOMPOSITION_NOTE_2026-06-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded decomposition correcting the staggered/Wilson/hw-label mislabels and localizing remaining matter-sector choices to the scoped matter operator M plus a residual Hodge-orientation sign, not any derivation of M or a Koide value.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_carrier_locus_decomposition_note_2026-06-01-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The two knobs couple on the sign of the cross-site hopping bilinear c_x^dag c_y, so both imports reduce to the scoped frame statement that M is the first-order, cross-site-anticommuting, chiral {epsilon,D}=0 staggered operator.  _(class `A`)_
+- **chain closes:** False — The packet closes the finite algebraic subchecks for all-corner staggered zeros, Wilson hw=0 lifting, S3-invariant hw labels, hard-core-boson native ladders, single-mode count, epsilon-odd nearest-neighbour D, and the 2x2 Pfaffian sign. It does not derive that the L1 statistics choice and L3 first-order/range choice are a single shared sign degree of freedom on c_x^dag c_y, nor that this exhausts the full carrier-locus residual beyond the checked toy block.
+- **rationale:** All cited authorities are retained-grade, and the runner performs useful finite algebraic checks rather than a numerical comparator. However, the runner and cited packet do not prove the main localization step that the statistics frame and range frame collapse to one operator-level sign, and the printed conclusion about that coupling is not independently computed. The claim is therefore a plausible bounded decomposition conditional on a missing bridge theorem for the shared-sign reduction and residual-exhaustion statement.
+- **auditor confidence:** medium
 
 ### `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02`
 

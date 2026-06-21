@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py
+runner_sha256: df9ba436aaec00e3c51cecb283c55e29a61b55e48821b8ecd1842e915e9dd1de
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
 ========================================================================================
 Spatial-BZ power-mixing boundary: spatial-only scalar channel
 ========================================================================================
@@ -28,3 +36,6 @@ PASS: source note keeps coefficient, gamma, and LV sufficiency open
 TOTAL: PASS=12 FAIL=0
 ========================================================================================
 VERDICT: exact support for a spatial-only O_h-scalar marginal mixing channel; one-loop coefficient/gamma/LV sufficiency remain open.
+
+----- stderr -----
+

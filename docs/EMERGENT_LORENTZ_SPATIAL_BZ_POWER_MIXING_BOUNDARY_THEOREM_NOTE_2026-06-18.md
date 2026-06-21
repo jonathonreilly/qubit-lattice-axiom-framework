@@ -1,12 +1,14 @@
 # Emergent Lorentz Spatial-BZ Power-Mixing Boundary Theorem
 
 **Date:** 2026-06-18
-**Claim type:** exact support theorem
+**Claim type:** bounded_theorem
 **Type:** exact support
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome, and it does not edit audit/status surfaces.
 **Primary runner:**
 [`scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py`](../scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py)
+**Cached runner:**
+[`logs/runner-cache/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.txt`](../logs/runner-cache/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.txt)
 
 ## Claim Scope
 

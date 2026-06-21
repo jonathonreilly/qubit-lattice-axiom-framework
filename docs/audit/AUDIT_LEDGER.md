@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 971 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1595 |
+| unaudited | 1594 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 24 |
+| ~~audited_conditional~~ | 25 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1409 |
-| `audited_conditional` | 24 |
+| `audited_conditional` | 25 |
 | `audited_decoration` | 58 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1921 |
+| `unaudited` | 1920 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 940 |
-| `leaf` | 1459 |
+| `medium` | 939 |
+| `leaf` | 1460 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1565,6 +1565,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_unbounded_finite_additivity_schema_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `u1_fermion_number_conservation_theorem_note_2026-05-02` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_vertex_power_derivation` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -17526,6 +17527,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The restricted packet contains closed finite/local negative results, not merely an unresolved frontier note: the cached SHA-pinned runner completes and verifies absence of a strict local selector, absence of a native local signed source primitive, and non-retention of a physical signed-gravity sector. Under the judicial standard, those are retained negative boundaries, so no_go is the correct claim type. The load-bearing status is carried by finite runner checks over the local selector/source surface rather than by source-note status prose, so class C is the correct class.
 - **rationale:** The restricted packet contains closed finite/local negative results, not merely an unresolved frontier note: the cached SHA-pinned runner completes and verifies absence of a strict local selector, absence of a native local signed source primitive, and non-retention of a physical signed-gravity sector. Under the judicial standard, those are retained negative boundaries, so no_go is the correct claim type. The load-bearing status is carried by finite runner checks over the local selector/source surface rather than by source-note status prose, so class C is the correct class.
 - **auditor confidence:** high
+
+### `signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`SIGNED_GRAVITY_WILSON_MASS_HOLONOMY_TWISTED_EDGE_REALIZATION_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/SIGNED_GRAVITY_WILSON_MASS_HOLONOMY_TWISTED_EDGE_REALIZATION_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** W0 pure-staggered mirror-spectrum theorem on even closed tori with arbitrary U(1) links, plus Wilson-mass cylinder edge-label checks at theta = 0, +/-0.7, pi with the listed localization, trivial-window, and size-stability controls.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The explicit staggered Hamiltonian has exact Gamma_5 anticommutation for arbitrary U(1) nearest-neighbor links, while the explicit Wilson-mass cylinder spectrum is computed to have localized in-gap edge levels whose eta_delta labels match the holonomy-twisted table.  _(class `C`)_
+- **chain closes:** False — W0 closes algebraically, and the runner genuinely computes the stated finite matrix spectra for the sampled holonomies. The broader W1/W2 wording for theta in whole open intervals and orientation pairing at every theta needs an analytic interval proof or certified exhaustive holonomy sweep beyond the finite samples in the packet.
+- **rationale:** The runner is substantive rather than print-only: it constructs the staggered and Wilson/QWZ matrices, diagonalizes them, and checks localization, eta/h labels, edge pairing, the trivial-window control, and size growth. Those checks support the sampled finite-dimensional claims and the W0 theorem. They do not by themselves prove the continuum holonomy-label table or top/bottom pairing for all generic theta as written, and the note supplies only a narrative spectral-flow explanation for that extension.
+- **auditor confidence:** medium
 
 ### `single_axiom_hilbert_note`
 

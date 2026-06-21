@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block30-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4559
+```
+
+Identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block30-20260621","number":4559,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block30 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4559"}
+```
+
 Block30 packages a two-gate factorization for the Rconn/source-domain bridge.
 It separates:
 
@@ -56,5 +68,11 @@ separate W2 plus W1 theorem pair
 
 ## Next Action
 
-Publish this science branch, open a PR, record the PR identity, then continue
-the campaign without checking PR conflicts.
+Continue the campaign by attacking W1 directly:
+
+```text
+su3_R_conn_8_9 -> route2_center_TE_minus_8_9
+```
+
+or search for an equivalent E-center primitive. Do not refresh existing PR
+branches and do not check PR conflicts or mergeability.

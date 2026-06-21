@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 212 |
 | **retained_bounded** | 974 |
 | _retained_pending_chain_ | 4 |
-| open_gate | 37 |
-| unaudited | 1585 |
+| open_gate | 38 |
+| unaudited | 1584 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1413 |
+| `audited_clean` | 1414 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1911 |
+| `unaudited` | 1910 |
 
 | claim_type | count |
 |---|---:|
@@ -232,6 +232,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `branch_entanglement_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3043,6 +3044,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The Hermitian commutant of the supplied 3x3 cyclic shift C is exactly the three-real-dimensional set H = aI + bC + conj(b)C^T, with a real and b complex.  _(class `A`)_
 - **chain closes:** True — The algebra closes: the cyclic shift has distinct eigenvalues, so its complex commutant is span{I,C,C^2}; Hermiticity imposes the paired coefficients a in R and C^2 coefficient conj(b). Since S=C+C^2 is also a polynomial in C, every such H commutes with S.
 - **rationale:** The runner source performs an actual finite-dimensional commutator/nullspace computation and reconstructs the resulting basis as Brannen circulants, rather than merely printing expected constants. An independent algebraic check gives the same result from the centralizer of the cyclic shift and the Hermiticity condition, and the pointer non-demolition statement follows because S is a polynomial in C. The result uses only supplied C3 action, locality/displacement structure, Hermiticity, and supplied pointer data; it does not claim to select the action, pointer, r, delta, or any coupling value.
+- **auditor confidence:** high
+
+### `brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31`
+
+- **Note:** [`BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md`](../../docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the bounded open-gate claim that the finite C3 weight is exactly 2/9, the listed finite angle/eta/Berry/family routes do not derive bare 2/9 radians, and the PDG mass reduction is only an observational comparator.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The same rational 2/9 appears on the same finite C3 doublet lane, but the step from a dimensionless rational to the bare-radian phase remains a convention/input boundary.  _(class `A`)_
+- **chain closes:** True — The finite comparisons close as algebraic checks over retained-grade cited inputs and the runner source. The period-normalization bridge is explicitly left outside scope rather than consumed as a premise.
+- **rationale:** The note does not claim a derivation of delta = 2/9 rad; it localizes the remaining convention/input boundary. The runner computes the finite C3 weight, q*pi angle comparisons, eta/Berry failures, and N-family nonidentity, while the two PDG checks are D-class comparator checks explicitly marked non-load-bearing. The cited authorities are retained-grade for the bounded algebra/no-go context, and the open radian bridge is preserved rather than treated as closed.
 - **auditor confidence:** high
 
 ### `broad_gravity_derivation_note`

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "architecture_portability_sweep_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "architecture_portability_sweep_note",
         "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
         "carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06",
         "causal_distance_tail_note",
         "dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07",
         "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
         "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
-        "flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18"
+        "flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18",
+        "flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "20e53b142c07d7903a8d18fe9b8e1fb47948e68938aeb1e80c5f12715ee09953",
+      "note_hash": "510e037e7bc347308e2377960edd86f5401d04a717ef9f4a20ca87f4678dfe0d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

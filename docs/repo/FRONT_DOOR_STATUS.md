@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 935 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 34 |
-| Unaudited rows | 1671 |
+| Unaudited rows | 1670 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 22 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`quark_route2_exact_time_coupling_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) - critical; unaudited
+- [`quark_route2_exact_time_coupling_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) - critical; audit_in_progress
 - [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 - [`koide_mru_demotion_note_2026-04-20`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md) - high; unaudited
 - [`koide_q_readout_factorization_theorem_2026-04-22`](../../docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md) - high; unaudited
@@ -62,10 +62,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | high | `unaudited` | 166 |
-| critical | `unaudited` | 164 |
+| critical | `unaudited` | 163 |
 | medium | `unaudited` | 96 |
 | critical | `audited_conditional` | 2 |
 | critical | `open_gate` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `open_gate` | 1 |

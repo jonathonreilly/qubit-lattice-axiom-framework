@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quark_route2_exact_readout_map_note_2026-04-19"
+      "to": "quark_route2_exact_time_coupling_note_2026-04-19"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "quark_route2_exact_readout_map_note_2026-04-19",
+        "quark_route2_exact_time_coupling_note_2026-04-19",
         "hierarchy_dimensional_compression_note",
         "koide_mru_demotion_note_2026-04-20",
         "koide_q_readout_factorization_theorem_2026-04-22",
@@ -103190,7 +103190,7 @@
         "quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d1d49225eae7edec653e3f5039084ff85fe6eacacc26bfa09e5b2e78d419f055",
+      "note_hash": "f4c8866ceac26a969acb53e7520080e41610f6dc0ba655b26898ad0bdc3d5f2a",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

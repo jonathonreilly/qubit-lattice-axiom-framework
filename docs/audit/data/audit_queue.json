@@ -138,20 +138,20 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "quark_route2_exact_time_coupling_note_2026-04-19",
-      "claim_scope": null,
+      "claim_scope": "Exact Route-2 slice semigroup and conditional Xi_P family; unresolved readout-map freedom induces non-unique Theta_R -> Lambda_R time coupling on the restricted carrier.",
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "quark_route2_exact_readout_map_note_2026-04-19"
       ],
-      "direct_in_degree": 17,
-      "effective_status": "unaudited",
+      "direct_in_degree": 18,
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
         "scripts/frontier_oh_schur_boundary_action.py",
@@ -160,12 +160,12 @@
         "scripts/frontier_same_source_metric_ansatz_scan.py",
         "scripts/frontier_tensor_support_center_excess_law.py"
       ],
-      "load_bearing_score": 15.1,
+      "load_bearing_score": 15.615,
       "note_path": "docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_quark_route2_exact_time_coupling.py",
-      "transitive_descendants": 96
+      "transitive_descendants": 97
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

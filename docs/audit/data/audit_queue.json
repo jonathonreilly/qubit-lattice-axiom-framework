@@ -1,9 +1,9 @@
 {
   "by_criticality": {
-    "critical": 308,
+    "critical": 307,
     "high": 302,
-    "leaf": 580,
-    "medium": 488
+    "leaf": 581,
+    "medium": 490
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -136,31 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
-      "claim_scope": "Bounded scoping theorem on the exact bare bulk staggered-Dirac surface: for the massless mean-field Hermitian staggered Dirac operator on the L_s=2, L_t in {2,4}, APBC closed-torus Z^3 x S^1 substrate, the APS signed spectral asymmetry sum is zero by +/- spectral pairing; and the candidate 1/8 expressions 2^(1-d), 1/(2d), and 1-eta(d)/zeta(d) coincide at d=4 only through the existing integer-alignment identity 2^(d-2)=d. Broad APS mechanisms with Wilson/domain-wall mass, nontrivial gauge background, boundary geometry, spectral flow, or residue corrections remain open and are excluded.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation_after_criticality_bump",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10",
-        "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "retained_bounded",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.748,
-      "note_path": "docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py",
-      "transitive_descendants": 303
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
@@ -340,15 +315,15 @@
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.571,
+      "load_bearing_score": 9.077,
       "note_path": "docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py",
-      "transitive_descendants": 268
+      "transitive_descendants": 269
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -19195,6 +19170,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.5,
+      "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
+      "transitive_descendants": 3
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "distance_law_preserving_third_family_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -19336,6 +19338,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/SIGNED_GRAVITY_WILSON_MASS_HOLONOMY_TWISTED_EDGE_REALIZATION_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/signed_gravity_wilson_mass_holonomy_twisted_edge_2026_06_11.py",
       "transitive_descendants": 2
     },
     {
@@ -32748,7 +32775,7 @@
       "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -34225,6 +34252,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "flavor_interacting_matter_build_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -34859,30 +34911,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/signed_gravity_product_grading_source_activation_obstruction_2026_06_17.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -34901,31 +34929,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SLAB_BOUNDARY_ETA_GLOBALLY_ZERO_PER_EDGE_NONUNIVERSAL_NO_FRACTIONAL_CARRIER_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_slab_boundary_eta_nonuniversal_2026_06_12.py",
       "transitive_descendants": 0
     },
     {
@@ -38796,7 +38799,7 @@
       "claim_id": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint_after_invalidation",
+      "claim_type_provenance": "author_hint",
       "criticality": "leaf",
       "criticality_rank": 0,
       "cross_confirmation_status": null,
@@ -47935,6 +47938,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION_NOTE_2026-06-17.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/signed_gravity_product_grading_source_activation_obstruction_2026_06_17.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "sin2thetaw_proof_walk_lattice_independence_bounded_note_2026-05-08",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -48051,6 +48078,31 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/SIXTH_FAMILY_DISTANCE_LAW_THIRD_VS_SIXTH_QUICK.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SLAB_BOUNDARY_ETA_GLOBALLY_ZERO_PER_EDGE_NONUNIVERSAL_NO_FRACTIONAL_CARRIER_BOUNDED_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/frontier_slab_boundary_eta_nonuniversal_2026_06_12.py",
       "transitive_descendants": 0
     },
     {
@@ -50221,5 +50273,5 @@
     }
   ],
   "ready_count": 121,
-  "total_pending": 1678
+  "total_pending": 1680
 }

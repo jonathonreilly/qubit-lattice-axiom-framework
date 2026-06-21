@@ -1,6 +1,13 @@
 # PR Backlog
 
-PR status: pending.
+PR status: opened.
+
+```text
+#4580 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4580
+head: physics-loop/s3-route2-nonlinear-tensor-observable-block50-20260621
+base: main
+state: OPEN
+```
 
 Intended command:
 

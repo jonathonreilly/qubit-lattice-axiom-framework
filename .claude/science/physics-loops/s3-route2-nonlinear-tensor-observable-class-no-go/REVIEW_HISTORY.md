@@ -39,3 +39,9 @@ Review constraints:
 - no main push;
 - no PR conflict or mergeability check;
 - branch-local science packet only.
+
+PR identity-only check:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-nonlinear-tensor-observable-block50-20260621","number":4580,"state":"OPEN","title":"[physics-loop] s3-route2-nonlinear-tensor-observable block50 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4580"}
+```

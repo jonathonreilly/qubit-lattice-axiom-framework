@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 953 |
+| **retained_bounded** | 954 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1625 |
+| unaudited | 1624 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 27 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1387 |
+| `audited_clean` | 1388 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1951 |
+| `unaudited` | 1950 |
 
 | claim_type | count |
 |---|---:|
@@ -115,7 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_clean` | **retained_bounded** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
-| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
@@ -782,6 +782,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_native_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
@@ -10969,6 +10970,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** For each k, rho(C^k)=Omega^{-1} C^k Omega=omega^k C^k, so the C^k line carries character k and Hermiticity pairs k with d-k into real doublets.  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from the explicit matrices C and Omega plus root-of-unity algebra; the retained cited authority is contextual for the d=3 carrier and not needed for the C1-C5 representation-theory proof. No physical readout, selector, numerical comparator, or unretained bridge is imported.
 - **rationale:** The load-bearing bridge is a direct algebraic matrix identity, not a definition substitution or symbol renaming. The runner source constructs C, Omega, rho, the Hermitian basis pieces, and the multiplicity table, then checks the actual matrix identities rather than printing constants or importing a contested premise. The proof and runner also correctly distinguish the nontrivial clock-conjugation action from trivial shift-conjugation. Residual risk is only convention-level, such as rechecking the chosen shift orientation and corresponding rotation-matrix sign.
+- **auditor confidence:** high
+
+### `koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded localization that native D plus the operator-frame SU(2)/Spin(3) merger does not by itself force the physical matter-state spinor attachment; the KS surface is only the named bridge target, not a completed state-law theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The native single-component D is spin-blind on the per-site C^2, the merger proves only adjoint operator-frame covariance, and Omega(x) only identifies the Kawamoto-Smit scalarization bridge, leaving the physical matter-state spinor law as a separate bridge.  _(class `A`)_
+- **chain closes:** True — The retained-grade inputs and runner establish the exact matrix facts: D is single-component/spin-blind, the merger is adjoint covariance on operators, and Omega maps Pauli kinetic matrices to scalar staggered phases. Those facts do not assert a fundamental rotation action on the matter ket, so the stated residual follows within the note's bounded scope.
+- **rationale:** The load-bearing content is class A algebra over retained or retained-bounded inputs, with the runner checking the relevant commutators, adjoint action, KS scalarization identity, and scalar sign-field gauge equivalence. The note does not promote KS or Grassmann suppliers beyond their bounded scopes and explicitly withholds the KS-to-physical-state-law bridge. The negative/localization wording is narrow rather than a universal no-go: elementary state-law and KS-to-state-law routes remain open residuals.
 - **auditor confidence:** high
 
 ### `koide_moment_ratio_uniformity_theorem_note_2026-04-19`

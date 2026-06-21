@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02"
     },
     {
@@ -53494,11 +53490,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "distance_law_definitive_note"
     },
     {
       "from": "repo.front_door_status",
-      "to": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23"
+      "to": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
         "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
         "lattice_3d_inverse_square_kernel_helper_note_2026-04-04",
         "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12",
         "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
         "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
         "distance_law_definitive_note",
-        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23"
+        "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f0ae30afe1c4343845bb50e643d1667b18dcd0f936b33bd08707a8ced9d1041c",
+      "note_hash": "40d02101f002c71b5c51a6d325dbaa8f5a65699650ec98af84baa4bb009c446f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

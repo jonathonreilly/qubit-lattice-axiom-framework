@@ -55,17 +55,24 @@ Branch-local gates:
 
 - staged `git diff --check`: pass
 - overclaim scan: pass, no banned status wording matched
-- PR creation: pending
+- PR creation: pass
 
 ## PR
 
-Pending.
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4572
+- Number: 4572
+- State: open
+- Base: `main`
+- Head: `physics-loop/s3-route2-inverse-square-origin-block42-20260621`
 
-Planned title:
+Title:
 
 ```text
 [physics-loop] s3-route2-one-pole-channel-volume block42 no-go
 ```
+
+Identity-only `gh pr view` passed for number, URL, title, head, base, and
+state. No conflict or mergeability check was run.
 
 ## Next Exact Science Action
 

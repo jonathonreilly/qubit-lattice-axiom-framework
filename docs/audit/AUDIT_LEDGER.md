@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 940 |
+| **retained_bounded** | 941 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
 | unaudited | 1674 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 19 |
@@ -61,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 13 |
-| `audited_clean` | 1352 |
+| `audit_in_progress` | 12 |
+| `audited_clean` | 1353 |
 | `audited_conditional` | 10 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
@@ -142,7 +141,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -989,6 +987,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `oh_schur_boundary_action_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -13534,6 +13533,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The countermodel W_epsilon(S)=log det(S)+epsilon Tr(S) is continuous and direct-sum additive, but diag(4,1) and diag(2,2) have the same determinant and different W_epsilon values for nonzero epsilon.  _(class `A`)_
 - **chain closes:** True — The exact countermodel satisfies the cited additivity, continuity, and determinant-multiplicativity inputs while violating determinant-only dependence, so the determinant quotient is not forced. Record additivity applies only after disjoint records are supplied, and a non-injective source-to-record assignment shows source disjointness alone does not supply that premise.
 - **rationale:** The load-bearing step is exact finite algebra over the accepted Record/minimal-axiom premise and the retained_bounded real-positive determinant/log branch authority. The runner source genuinely computes the symbolic additivity, equal-determinant/different-trace witness, determinant multiplicativity, and non-injective record assignment rather than printing constants; the remaining runner checks are guardrail text checks. The no-go is narrowly scoped to T1-d independence and the source note's N1-N8 gate names alternate routes, wall independence, hidden-wall handling, partial-closure paths, and a steelman without overclaiming an observable-principle no-go.
+- **auditor confidence:** high
+
+### `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md`](../../docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite positive diagonal direct-sum additive scalar readout families are one-site sums, and the cross-dimension determinant-only quotient is exactly the continuous logarithmic family, with a dimension constant only when n is supplied separately.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-054531-f51f6887-observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For n=2, determinant-only gives phi(x)+phi(y)=F(xy)=phi(xy), so continuity makes phi a multiplicative-to-additive homomorphism and hence phi(x)=c log x.  _(class `A`)_
+- **chain closes:** True — The stated mathematical classifier closes on its finite positive-diagonal scope by induction for direct-sum additivity and the continuous Cauchy equation for determinant-only readout. The note does not claim to derive the physical readout context or source-to-record clause.
+- **rationale:** The load-bearing step is standard exact algebra/analysis over the supplied finite positive diagonal surface, not a definition substitution or numerical match. The retained no-go authority is used only to preserve the boundary that T1-d is not Record-derived, while the accepted Minimal Axioms premise is cited correctly for what Record withholds. The runner performs symbolic and finite witness checks for the algebra and separate textual guardrail checks; it does not hard-code a contested physical bridge as if it were derived.
 - **auditor confidence:** high
 
 ### `occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12`

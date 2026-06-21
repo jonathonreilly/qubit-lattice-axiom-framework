@@ -52,8 +52,15 @@ Review disposition:
 - The status remains a current-bank no-go for this non-color source/readout
   primitive route; the endpoint triple remains open.
 
+PR identity:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4604
+- Number: 4604
+- State: OPEN
+- Base: `main`
+- Head: `physics-loop/s3-route2-e-center-source-primitive-block73-20260621`
+- Title: `[physics-loop] s3-route2-non-color-e-center-source block73 no-go`
+
 Next exact action:
 
-- Commit, publish branch, and open the block73 PR.
-- Record PR identity here after creation.
 - Continue campaign with the next ranked opportunity after PR handoff.

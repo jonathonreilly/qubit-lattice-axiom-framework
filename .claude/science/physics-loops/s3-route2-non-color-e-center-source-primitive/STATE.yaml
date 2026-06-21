@@ -45,6 +45,13 @@ verification_results:
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.py: TOTAL PASS=6 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_oh_seven_site_star_shell_leverage_positive_theorem_2026_06_10.py: TOTAL PASS=5 FAIL=0"
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Commit, publish branch, open PR, record PR identity, then pivot to the next campaign opportunity."
+pr_status: open
+pr:
+  number: 4604
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4604"
+  title: "[physics-loop] s3-route2-non-color-e-center-source block73 no-go"
+  base: main
+  head: physics-loop/s3-route2-e-center-source-primitive-block73-20260621
+  state: OPEN
+next_exact_action: "Pivot to the next ranked campaign opportunity."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable targets are globally blocked."

@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1559 |
-| Retained-grade rows, including boxed decorations | 1453 |
-| Retained positive theorems | 211 |
+| Applied audit verdicts | 1560 |
+| Retained-grade rows, including boxed decorations | 1454 |
+| Retained positive theorems | 212 |
 | Retained no-go rows | 212 |
 | Retained bounded rows | 973 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 37 |
-| Unaudited rows | 1587 |
+| Unaudited rows | 1586 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 29 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1589 |
-| Ready rows | 85 |
+| Total pending rows | 1588 |
+| Ready rows | 84 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 573 |
+| Leaf pending | 572 |
 
 Next ready rows by queue order:
 
-- [`alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18`](../../docs/ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`architecture_portability_sweep_note`](../../docs/ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md) - medium; unaudited
 - [`brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31`](../../docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md) - medium; unaudited
 - [`carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06`](../../docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md) - medium; unaudited
 - [`causal_distance_tail_note`](../../docs/CAUSAL_DISTANCE_TAIL_NOTE.md) - medium; unaudited
 - [`dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07`](../../docs/DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md) - medium; unaudited
 - [`ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08`](../../docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md) - medium; unaudited
-- [`flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18`](../../docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md) - leaf; unaudited
+- [`flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18`](../../docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
+- [`flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18`](../../docs/FLAVOR_GAUGE_REPRESENTATION_GENERATION_UNIFORM_CORE_NARROW_THEOREM_NOTE_2026-06-18.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

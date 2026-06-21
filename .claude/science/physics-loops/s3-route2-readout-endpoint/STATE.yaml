@@ -52,8 +52,8 @@ verification:
   git_diff_check: pass
   overclaim_scan: pass
 pr:
-  number: null
-  url: null
-  state: not_opened_yet
-next_exact_action: "Run focused verification, open block17 PR, then pivot to the coefficient-selection principle."
+  number: 4546
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4546"
+  state: OPEN
+next_exact_action: "Create block18 for the coefficient-selection principle."
 stop_condition: "Do not stop campaign merely because this block is conditional-support; continue while runtime remains."

@@ -291,12 +291,26 @@
     "primary_basename": "frontier_adm2_global_su3_symmetry_reduction_2026_06_08",
     "primary_runner": "scripts/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.py"
   },
+  "admitted_input_registry_tier_a_note_2026-05-23": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "admitted_input_registry_tier_a_boundary_check",
+    "primary_runner": "scripts/admitted_input_registry_tier_a_boundary_check.py"
+  },
   "affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02": {
     "helper_runner_paths": [],
     "helper_runners": [],
     "is_pending": false,
     "primary_basename": "frontier_affine_imaginary_slot_invariance_narrow",
     "primary_runner": "scripts/frontier_affine_imaginary_slot_invariance_narrow.py"
+  },
+  "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_allorders_b4_marginal_protection_twoloop_2026_06_14",
+    "primary_runner": "scripts/frontier_allorders_b4_marginal_protection_twoloop_2026_06_14.py"
   },
   "alpha_bare_four_pi_from_z3_plancherel_bridge_bounded_note_2026-05-26": {
     "helper_runner_paths": [],
@@ -372,9 +386,23 @@
   "alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_alpha_s_direct_wilson_loop",
     "primary_runner": "scripts/frontier_alpha_s_direct_wilson_loop.py"
+  },
+  "alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18",
+    "primary_runner": "scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py"
+  },
+  "alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_alpha_s_sommer_static_potential_root_kernel_2026_06_18",
+    "primary_runner": "scripts/frontier_alpha_s_sommer_static_potential_root_kernel_2026_06_18.py"
   },
   "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": {
     "helper_runner_paths": [],
@@ -382,6 +410,13 @@
     "is_pending": false,
     "primary_basename": "frontier_alpha_s_tadpole_improvement_vertex_power_narrow",
     "primary_runner": "scripts/frontier_alpha_s_tadpole_improvement_vertex_power_narrow.py"
+  },
+  "alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_alpha_s_universal_beta_kernel_2026_06_18",
+    "primary_runner": "scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py"
   },
   "alt_connectivity_family_basin_note": {
     "helper_runner_paths": [
@@ -507,6 +542,13 @@
     "primary_basename": "anomaly_forces_time_abj_inconsistency_accepted_premise_runner",
     "primary_runner": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py"
   },
+  "anomaly_forces_time_fb_note_2026-05-17": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_anomaly_forces_time_fb_framing_fix",
+    "primary_runner": "scripts/frontier_anomaly_forces_time_fb_framing_fix.py"
+  },
   "anomaly_forces_time_theorem": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -545,10 +587,17 @@
     "primary_basename": "architecture_directional_measure_table_runner_2026_05_03",
     "primary_runner": "scripts/architecture_directional_measure_table_runner_2026_05_03.py"
   },
+  "architecture_portability_live_reaudit_bridge_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "architecture_portability_live_reaudit_bridge_2026_06_18",
+    "primary_runner": "scripts/architecture_portability_live_reaudit_bridge_2026_06_18.py"
+  },
   "architecture_portability_sweep_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_architecture_portability_sweep",
     "primary_runner": "scripts/frontier_architecture_portability_sweep.py"
   },
@@ -621,6 +670,13 @@
     "is_pending": false,
     "primary_basename": "frontier_arrow_from_record_formation_2026_06_05",
     "primary_runner": "scripts/frontier_arrow_from_record_formation_2026_06_05.py"
+  },
+  "assumption_derivation_ledger": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "assumption_derivation_ledger_meta_check",
+    "primary_runner": "scripts/assumption_derivation_ledger_meta_check.py"
   },
   "asymmetry_persistence_born_note": {
     "helper_runner_paths": [
@@ -1094,7 +1150,7 @@
   "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner",
     "primary_runner": "scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py"
   },
@@ -1281,7 +1337,7 @@
   "beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_beta_gbare_squared_rescaling_invariance",
     "primary_runner": "scripts/frontier_beta_gbare_squared_rescaling_invariance.py"
   },
@@ -1515,7 +1571,7 @@
   "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_brannen_delta_spectral_asymmetry_convention_isolation",
     "primary_runner": "scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py"
   },
@@ -1664,6 +1720,24 @@
     "primary_basename": "frontier_campaign_consistency_survey_2026_05_10_meta",
     "primary_runner": "scripts/frontier_campaign_consistency_survey_2026_05_10_meta.py"
   },
+  "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
+    "helper_runner_paths": [
+      "scripts/canonical_plaquette_surface.py"
+    ],
+    "helper_runners": [
+      "canonical_plaquette_surface"
+    ],
+    "is_pending": false,
+    "primary_basename": "frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16",
+    "primary_runner": "scripts/frontier_canonical_plaquette_alpha_lm_value_certificate_2026_06_16.py"
+  },
+  "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_capture_tail_exact_law_2026_06_12",
+    "primary_runner": "scripts/frontier_capture_tail_exact_law_2026_06_12.py"
+  },
   "car_from_positivity_neutrality_note_2026-06-02": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -1743,7 +1817,7 @@
     "helper_runners": [
       "evolving_network_prototype_v6"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "causal_impact_parameter_probe",
     "primary_runner": "scripts/causal_impact_parameter_probe.py"
   },
@@ -1977,7 +2051,7 @@
   "charged_lepton_brannen_bae_delta_tier_a_bounded_theorem_note_2026-05-30": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier",
     "primary_runner": "scripts/frontier_charged_lepton_brannen_bae_delta_tier_a_bounded_verifier.py"
   },
@@ -2491,7 +2565,7 @@
   "ckm_down_type_scale_convention_support_note_2026-04-22": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_ckm_down_type_scale_convention_support",
     "primary_runner": "scripts/frontier_ckm_down_type_scale_convention_support.py"
   },
@@ -2728,7 +2802,7 @@
   "cl3_baryon_qqq_color_singlet_theorem_note_2026-05-02": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "cl3_baryon_qqq_color_singlet_check",
     "primary_runner": "scripts/cl3_baryon_qqq_color_singlet_check.py"
   },
@@ -2868,7 +2942,7 @@
   "cl4c_carrier_axiom_consequence_map_note_2026-04-28": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_cl4c_carrier_axiom_consequence_map",
     "primary_runner": "scripts/frontier_cl4c_carrier_axiom_consequence_map.py"
   },
@@ -3115,7 +3189,7 @@
   "color_link_sym2_endpoint_projection_2026-06-05": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_color_link_sym2_endpoint_projection_2026_06_05",
     "primary_runner": "scripts/frontier_color_link_sym2_endpoint_projection_2026_06_05.py"
   },
@@ -3164,9 +3238,23 @@
   "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_color_su3_bridge_from_record_2026_06_05",
     "primary_runner": "scripts/frontier_color_su3_bridge_from_record_2026_06_05.py"
+  },
+  "commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_commensuration_general_lemma_2026_06_12",
+    "primary_runner": "scripts/frontier_commensuration_general_lemma_2026_06_12.py"
+  },
+  "commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_commensuration_unconditional_lemma_2026_06_12",
+    "primary_runner": "scripts/frontier_commensuration_unconditional_lemma_2026_06_12.py"
   },
   "complete_prediction_chain_2026_04_15": {
     "helper_runner_paths": [
@@ -3196,7 +3284,7 @@
   "complex_selectivity_predictor_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "COMPLEX_SELECTIVITY_PREDICTOR_SCAN",
     "primary_runner": "scripts/COMPLEX_SELECTIVITY_PREDICTOR_SCAN.py"
   },
@@ -3300,6 +3388,13 @@
     "primary_basename": "frontier_connes_kreimer_partial_sum_rb_b4_external_bounded",
     "primary_runner": "scripts/frontier_connes_kreimer_partial_sum_rb_b4_external_bounded.py"
   },
+  "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_continuum_equivariant_eta_delta_firewall_2026_06_12",
+    "primary_runner": "scripts/frontier_continuum_equivariant_eta_delta_firewall_2026_06_12.py"
+  },
   "continuum_identification_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -3341,6 +3436,20 @@
     "is_pending": true,
     "primary_basename": "frontier_corner_fork_resolution_layer_record_dynamics_2026_06_12",
     "primary_runner": "scripts/frontier_corner_fork_resolution_layer_record_dynamics_2026_06_12.py"
+  },
+  "corner_transfer_extends_to_fixed_gauge_backgrounds_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_corner_transfer_fixed_gauge_background_2026_06_12",
+    "primary_runner": "scripts/frontier_corner_transfer_fixed_gauge_background_2026_06_12.py"
+  },
+  "correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_correlator_cycle_phases_dichotomy_2026_06_12",
+    "primary_runner": "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py"
   },
   "cosmological_constant_result_2026-04-12": {
     "helper_runner_paths": [],
@@ -3715,6 +3824,13 @@
     "primary_basename": "frontier_d3_checkerboard_step1_parity_lemma_2026_06_12",
     "primary_runner": "scripts/frontier_d3_checkerboard_step1_parity_lemma_2026_06_12.py"
   },
+  "d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_d3_landau_peierls_single_band_normalization_2026_06_18",
+    "primary_runner": "scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py"
+  },
   "d3_lower_bound_source_packet_gate_note_2026-06-06": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -3725,9 +3841,20 @@
   "d3_native_stable_orbit_upper_bound_composition_note_2026-06-09": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "d3_native_stable_orbit_upper_bound_composition_2026_06_09",
     "primary_runner": "scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py"
+  },
+  "d3_orbital_response_decomposition_bounded_theorem_note_2026-06-13": {
+    "helper_runner_paths": [
+      "scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py"
+    ],
+    "helper_runners": [
+      "frontier_landau_peierls_prefactor_native_derivation_2026_06_13"
+    ],
+    "is_pending": true,
+    "primary_basename": "frontier_d3_orbital_response_decomposition_2026_06_13",
+    "primary_runner": "scripts/frontier_d3_orbital_response_decomposition_2026_06_13.py"
   },
   "d3_pinch_native_upper_leg_dimension_selection_composition_bounded_theorem_note_2026-06-11": {
     "helper_runner_paths": [],
@@ -3735,6 +3862,13 @@
     "is_pending": true,
     "primary_basename": "d3_pinch_native_upper_leg_composition_2026_06_11",
     "primary_runner": "scripts/d3_pinch_native_upper_leg_composition_2026_06_11.py"
+  },
+  "d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_d3_staggered_two_band_orbital_2026_06_13",
+    "primary_runner": "scripts/frontier_d3_staggered_two_band_orbital_2026_06_13.py"
   },
   "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12": {
     "helper_runner_paths": [],
@@ -3788,7 +3922,7 @@
   "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_darwinism_bridge_residual_2026_06_05",
     "primary_runner": "scripts/frontier_darwinism_bridge_residual_2026_06_05.py"
   },
@@ -3854,6 +3988,27 @@
     "is_pending": false,
     "primary_basename": "channel_count_guarded_prune",
     "primary_runner": "scripts/channel_count_guarded_prune.py"
+  },
+  "depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_depth_branch_corrected_closed_form_2026_06_13",
+    "primary_runner": "scripts/frontier_depth_branch_corrected_closed_form_2026_06_13.py"
+  },
+  "depth_laurent_root_closed_form_bounded_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_depth_laurent_root_closed_form_2026_06_12",
+    "primary_runner": "scripts/frontier_depth_laurent_root_closed_form_2026_06_12.py"
+  },
+  "det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_det_holonomy_trivial_hermitian_positive_circulant_2026_06_12",
+    "primary_runner": "scripts/frontier_det_holonomy_trivial_hermitian_positive_circulant_2026_06_12.py"
   },
   "det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12": {
     "helper_runner_paths": [],
@@ -4217,7 +4372,7 @@
   "distance_law_breakpoint_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "DISTANCE_LAW_BREAKPOINT_COMPARE",
     "primary_runner": "scripts/DISTANCE_LAW_BREAKPOINT_COMPARE.py"
   },
@@ -4259,7 +4414,7 @@
     "helper_runners": [
       "gate_b_grown_joint_package"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "DISTANCE_LAW_PRESERVING_THIRD_FAMILY",
     "primary_runner": "scripts/DISTANCE_LAW_PRESERVING_THIRD_FAMILY.py"
   },
@@ -4439,7 +4594,7 @@
     "helper_runners": [
       "canonical_plaquette_surface"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_dm_eta_bounded_prediction_from_supplied_nsites_v",
     "primary_runner": "scripts/frontier_dm_eta_bounded_prediction_from_supplied_nsites_v.py"
   },
@@ -5188,7 +5343,7 @@
       "frontier_dm_leptogenesis_pmns_active_projector_reduction",
       "frontier_dm_leptogenesis_pmns_projector_interface"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_dm_leptogenesis_pmns_mininfo_source_law",
     "primary_runner": "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py"
   },
@@ -5520,6 +5675,23 @@
     "is_pending": false,
     "primary_basename": "frontier_sigma_hier_uniqueness_theorem",
     "primary_runner": "scripts/frontier_sigma_hier_uniqueness_theorem.py"
+  },
+  "dm_live_constants_canonical_edge_certificate_note_2026-06-18": {
+    "helper_runner_paths": [
+      "scripts/canonical_plaquette_surface.py",
+      "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
+      "scripts/dm_full_closure_same_surface_thermal_support_common.py",
+      "scripts/dm_leptogenesis_exact_common.py"
+    ],
+    "helper_runners": [
+      "canonical_plaquette_surface",
+      "dm_full_closure_minimal_reduced_cycle_extension_map_common",
+      "dm_full_closure_same_surface_thermal_support_common",
+      "dm_leptogenesis_exact_common"
+    ],
+    "is_pending": true,
+    "primary_basename": "frontier_dm_live_constants_canonical_edge_2026_06_18",
+    "primary_runner": "scripts/frontier_dm_live_constants_canonical_edge_2026_06_18.py"
   },
   "dm_m_dm_inverse_band_gauge_audit_bounded_note_2026-05-09": {
     "helper_runner_paths": [],
@@ -9194,7 +9366,7 @@
   "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06",
     "primary_runner": "scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py"
   },
@@ -9211,6 +9383,20 @@
     "is_pending": false,
     "primary_basename": "frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08",
     "primary_runner": "scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py"
+  },
+  "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18",
+    "primary_runner": "scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py"
+  },
+  "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_emergent_lorentz_velocity_rg_exchange_matrix_2026_06_18",
+    "primary_runner": "scripts/frontier_emergent_lorentz_velocity_rg_exchange_matrix_2026_06_18.py"
   },
   "emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06": {
     "helper_runner_paths": [],
@@ -9254,12 +9440,40 @@
     "primary_basename": "frontier_ep_record_stiffness_conditional_template_2026_06_07",
     "primary_runner": "scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py"
   },
+  "ep_record_stiffness_weak_field_source_readout_interface_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16",
+    "primary_runner": "scripts/frontier_ep_record_stiffness_weak_field_source_readout_interface_2026_06_16.py"
+  },
   "epsilon1_from_cp_chain_note_2026-05-03": {
     "helper_runner_paths": [],
     "helper_runners": [],
     "is_pending": true,
     "primary_basename": "frontier_epsilon1_from_cp_chain",
     "primary_runner": "scripts/frontier_epsilon1_from_cp_chain.py"
+  },
+  "epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_epsstar_coefficient_richardson_moff0_2026_06_12",
+    "primary_runner": "scripts/frontier_epsstar_coefficient_richardson_moff0_2026_06_12.py"
+  },
+  "epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_epsstar_curve_pt_boundary_2026_06_12",
+    "primary_runner": "scripts/frontier_epsstar_curve_pt_boundary_2026_06_12.py"
+  },
+  "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_epsstar_sommerfeld_derivation_2026_06_12",
+    "primary_runner": "scripts/frontier_epsstar_sommerfeld_derivation_2026_06_12.py"
   },
   "equivalence_principle_harness_note": {
     "helper_runner_paths": [
@@ -9271,6 +9485,13 @@
     "is_pending": false,
     "primary_basename": "equivalence_principle_harness",
     "primary_runner": "scripts/equivalence_principle_harness.py"
+  },
+  "equivariant_wilson_eta_densities_vanish_on_tested_window_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_equivariant_wilson_eta_densities_vanish_2026_06_12",
+    "primary_runner": "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py"
   },
   "erosion_exact_recurrence_path_product_threshold_obstruction_bounded_theorem_note_2026-06-12": {
     "helper_runner_paths": [],
@@ -9285,6 +9506,20 @@
     "is_pending": true,
     "primary_basename": "frontier_erosion_rate_closed_form_2026_06_12",
     "primary_runner": "scripts/frontier_erosion_rate_closed_form_2026_06_12.py"
+  },
+  "erosion_mobius_derivative_chain_rule_law_bounded_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_erosion_mobius_derivative_law_2026_06_12",
+    "primary_runner": "scripts/frontier_erosion_mobius_derivative_law_2026_06_12.py"
+  },
+  "erosion_rapidity_abelianization_complete_law_bounded_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_erosion_rapidity_abelianization_2026_06_12",
+    "primary_runner": "scripts/frontier_erosion_rapidity_abelianization_2026_06_12.py"
   },
   "erosion_rate_table_no_tested_closed_form_bounded_theorem_note_2026-06-12": {
     "helper_runner_paths": [],
@@ -9685,6 +9920,13 @@
     "primary_basename": "lensing_fine_h_batch",
     "primary_runner": "scripts/lensing_fine_h_batch.py"
   },
+  "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_finite_cell_two_band_closed_form_2026_06_13",
+    "primary_runner": "scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py"
+  },
   "finite_rank_gravity_residual_helper_note_2026-04-14": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -9818,9 +10060,16 @@
   "flavor_carrier_from_axioms_momentum_forced_2026-05-31": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "flavor_carrier_from_axioms_momentum_forced_2026_05_31",
     "primary_runner": "scripts/flavor_carrier_from_axioms_momentum_forced_2026_05_31.py"
+  },
+  "flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "flavor_carrier_momentum_type_from_translation_2026_06_15",
+    "primary_runner": "scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py"
   },
   "flavor_carrier_not_derived_two_inputs_2026-05-31": {
     "helper_runner_paths": [],
@@ -9934,6 +10183,34 @@
     "primary_basename": "flavor_frontier_form_vs_value_2026_05_29",
     "primary_runner": "scripts/flavor_frontier_form_vs_value_2026_05_29.py"
   },
+  "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "flavor_gauge_holonomy_character_suppression_kernel_2026_06_18",
+    "primary_runner": "scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py"
+  },
+  "flavor_gauge_holonomy_suppresses_r_below_leptonic_wrong_ordering_narrow_no_go_note_2026-06-15": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15",
+    "primary_runner": "scripts/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.py"
+  },
+  "flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_gauge_rep_channel_cannot_source_spread_2026_06_15",
+    "primary_runner": "scripts/frontier_gauge_rep_channel_cannot_source_spread_2026_06_15.py"
+  },
+  "flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "flavor_gauge_representation_generation_uniform_core_2026_06_18",
+    "primary_runner": "scripts/flavor_gauge_representation_generation_uniform_core_2026_06_18.py"
+  },
   "flavor_generation_space_bridge_reduces_to_open_gate_2026-05-31": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -9972,7 +10249,7 @@
   "flavor_interacting_matter_build_note_2026-05-30": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "flavor_interacting_matter_build_2026_05_30",
     "primary_runner": "scripts/flavor_interacting_matter_build_2026_05_30.py"
   },
@@ -9992,7 +10269,7 @@
       "frontier_action_normalization",
       "frontier_koide_frobenius_isotype_split_uniqueness"
     ],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31",
     "primary_runner": "scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py"
   },
@@ -10153,7 +10430,7 @@
   "flavor_readout_gate_equals_carrier_identification_2026-05-31": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "flavor_readout_gate_equals_carrier_identification_2026_05_31",
     "primary_runner": "scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py"
   },
@@ -10216,7 +10493,7 @@
   "flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "native_arrow_resolution",
     "primary_runner": "scripts/native_arrow_resolution.py"
   },
@@ -10304,10 +10581,17 @@
     "primary_basename": "frontier_fractional_charge_denominator_from_n_c",
     "primary_runner": "scripts/frontier_fractional_charge_denominator_from_n_c.py"
   },
+  "fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "fractional_instanton_action_core_split_2026_06_18",
+    "primary_runner": "scripts/fractional_instanton_action_core_split_2026_06_18.py"
+  },
   "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_fractional_instanton_dilute_gas_condensate_external_narrow",
     "primary_runner": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py"
   },
@@ -10437,9 +10721,30 @@
   "frw_adiabatic_expansion_cosmological_backdrop_open_gate_note_2026-05-28": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate",
     "primary_runner": "scripts/frontier_frw_adiabatic_expansion_cosmological_backdrop_open_gate.py"
+  },
+  "frw_c2_source_free_entropy_bookkeeping_bounded_support_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_frw_c2_entropy_bookkeeping_2026_06_18",
+    "primary_runner": "scripts/frontier_frw_c2_entropy_bookkeeping_2026_06_18.py"
+  },
+  "frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_frw_c3_eos_component_labels_kinetic_bridge_2026_06_18",
+    "primary_runner": "scripts/frontier_frw_c3_eos_component_labels_kinetic_bridge_2026_06_18.py"
+  },
+  "frw_c3_kinetic_component_perfect_fluid_lift_bounded_support_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_frw_c3_kinetic_component_fluid_lift_2026_06_18",
+    "primary_runner": "scripts/frontier_frw_c3_kinetic_component_fluid_lift_2026_06_18.py"
   },
   "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06": {
     "helper_runner_paths": [],
@@ -10493,7 +10798,7 @@
   "g_2_v_bounded_interval_narrow_theorem_note_2026-05-17": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17",
     "primary_runner": "scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py"
   },
@@ -10535,7 +10840,7 @@
   "g_bare_derivation_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_g_bare_derivation",
     "primary_runner": "scripts/frontier_g_bare_derivation.py"
   },
@@ -10714,7 +11019,7 @@
   "g_star_sm_content_at_leptogenesis_from_supplied_thermal_inventory_bounded_theorem_note_2026-05-28": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_g_star_sm_content_from_supplied_thermal_inventory",
     "primary_runner": "scripts/frontier_g_star_sm_content_from_supplied_thermal_inventory.py"
   },
@@ -10756,7 +11061,7 @@
   "gate_b_dynamics_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "gate_b_connectivity_tolerance",
     "primary_runner": "scripts/gate_b_connectivity_tolerance.py"
   },
@@ -10773,6 +11078,20 @@
     "is_pending": false,
     "primary_basename": "gate_b_farfield_harness",
     "primary_runner": "scripts/gate_b_farfield_harness.py"
+  },
+  "gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "gate_b_finite_path_sum_propagation_bridge_2026_06_18",
+    "primary_runner": "scripts/gate_b_finite_path_sum_propagation_bridge_2026_06_18.py"
+  },
+  "gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "gate_b_finite_radial_scalar_bridge_2026_06_18",
+    "primary_runner": "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py"
   },
   "gate_b_grown_distance_law_note": {
     "helper_runner_paths": [],
@@ -10876,6 +11195,13 @@
     "primary_basename": "gate_b_h025_joint_package",
     "primary_runner": "scripts/gate_b_h025_joint_package.py"
   },
+  "gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "gate_b_local_stencil_connectivity_bridge_2026_06_18",
+    "primary_runner": "scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py"
+  },
   "gate_b_no_restore_farfield_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -10946,7 +11272,7 @@
   "gate_b_operator_cauchy_note_2026-05-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "gate_b_operator_cauchy",
     "primary_runner": "scripts/gate_b_operator_cauchy.py"
   },
@@ -10975,6 +11301,13 @@
     "primary_basename": "gate_b_weak_connectivity_harness",
     "primary_runner": "scripts/gate_b_weak_connectivity_harness.py"
   },
+  "gate_b_weak_field_source_action_interface_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "gate_b_weak_field_source_action_interface_2026_06_16",
+    "primary_runner": "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py"
+  },
   "gate_rp_reground_staggered_only_narrow_theorem_note_2026-05-23": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -10985,9 +11318,23 @@
   "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "gauge_algebra_supplied_carrier_2026_06_08",
     "primary_runner": "scripts/gauge_algebra_supplied_carrier_2026_06_08.py"
+  },
+  "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "gauge_factor_local_selector_normalizer_2026_06_18",
+    "primary_runner": "scripts/gauge_factor_local_selector_normalizer_2026_06_18.py"
+  },
+  "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "gauge_gauging_selection_conjugation_independence_2026_06_16",
+    "primary_runner": "scripts/gauge_gauging_selection_conjugation_independence_2026_06_16.py"
   },
   "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02": {
     "helper_runner_paths": [],
@@ -11085,6 +11432,13 @@
     "is_pending": false,
     "primary_basename": "gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12",
     "primary_runner": "scripts/gauge_vacuum_plaquette_adjacent_word_contraction_derived_2026_06_12.py"
+  },
+  "gauge_vacuum_plaquette_adjacent_word_scorecard_freshness_companion_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "audit_companion_gauge_vacuum_plaquette_adjacent_word_scorecard_freshness_2026_06_16",
+    "primary_runner": "scripts/audit_companion_gauge_vacuum_plaquette_adjacent_word_scorecard_freshness_2026_06_16.py"
   },
   "gauge_vacuum_plaquette_beta6_evaluation_seam_reduction_science_only_note_2026-04-17": {
     "helper_runner_paths": [],
@@ -11638,7 +11992,7 @@
       "frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19",
       "frontier_perron_frobenius_step2_nilpotent_chain_source_response_calculus_2026_04_19"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19",
     "primary_runner": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py"
   },
@@ -11911,6 +12265,33 @@
     "primary_basename": "frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20",
     "primary_runner": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py"
   },
+  "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_note_2026-04-19": {
+    "helper_runner_paths": [
+      "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py",
+      "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
+      "scripts/frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19.py",
+      "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py",
+      "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+      "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+      "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
+      "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
+      "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py"
+    ],
+    "helper_runners": [
+      "frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19",
+      "frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19",
+      "frontier_gauge_vacuum_plaquette_first_sector_truncated_environment_packet_theorem_2026_04_19",
+      "frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19",
+      "frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17",
+      "frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17",
+      "frontier_gauge_vacuum_plaquette_perron_reduction_theorem",
+      "frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17",
+      "frontier_gauge_vacuum_plaquette_spatial_environment_character_measure"
+    ],
+    "is_pending": false,
+    "primary_basename": "frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19",
+    "primary_runner": "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py"
+  },
   "gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19": {
     "helper_runner_paths": [
       "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
@@ -12118,6 +12499,19 @@
     "primary_basename": "frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17",
     "primary_runner": "scripts/frontier_gauge_vacuum_plaquette_full_slice_rim_lift_integral_identification_2026_04_17.py"
   },
+  "gauge_vacuum_plaquette_hf_identification_diagnostic_bounded_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+      "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+    ],
+    "helper_runners": [
+      "frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer",
+      "frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve"
+    ],
+    "is_pending": true,
+    "primary_basename": "gauge_vacuum_plaquette_hf_identification_diagnostic_2026_06_12",
+    "primary_runner": "scripts/gauge_vacuum_plaquette_hf_identification_diagnostic_2026_06_12.py"
+  },
   "gauge_vacuum_plaquette_hierarchy_obstruction_lemmas_bounded_note_2026-05-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -12184,6 +12578,21 @@
     "is_pending": false,
     "primary_basename": "frontier_gauge_vacuum_plaquette_perron_reduction_theorem",
     "primary_runner": "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py"
+  },
+  "gauge_vacuum_plaquette_readout_form_trace_vs_perron_bounded_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+      "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+      "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
+    ],
+    "helper_runners": [
+      "frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer",
+      "frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve",
+      "gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11"
+    ],
+    "is_pending": true,
+    "primary_basename": "gauge_vacuum_plaquette_readout_form_trace_vs_perron_bounded_2026_06_12",
+    "primary_runner": "scripts/gauge_vacuum_plaquette_readout_form_trace_vs_perron_bounded_2026_06_12.py"
   },
   "gauge_vacuum_plaquette_reduction_existence_theorem_note": {
     "helper_runner_paths": [
@@ -12751,6 +13160,29 @@
     "primary_basename": "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12",
     "primary_runner": "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py"
   },
+  "gauge_vacuum_plaquette_word_count_rescaled_tail_support_note_2026-06-18": {
+    "helper_runner_paths": [
+      "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
+      "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+      "scripts/gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11.py",
+      "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
+      "scripts/gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12.py",
+      "scripts/gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12.py",
+      "scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py"
+    ],
+    "helper_runners": [
+      "frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer",
+      "frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve",
+      "gauge_vacuum_plaquette_tensor_word_multiword_perron_ladder_2026_06_11",
+      "gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11",
+      "gauge_vacuum_plaquette_word_count_all_k_remainder_certificate_narrow_2026_06_12",
+      "gauge_vacuum_plaquette_word_count_power_block_birkhoff_certificate_narrow_2026_06_12",
+      "gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12"
+    ],
+    "is_pending": true,
+    "primary_basename": "gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18",
+    "primary_runner": "scripts/gauge_vacuum_plaquette_word_count_rescaled_tail_support_2026_06_18.py"
+  },
   "gauge_vacuum_plaquette_word_count_rung_four_deep_rim_bounded_note_2026-06-12": {
     "helper_runner_paths": [
       "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
@@ -12831,6 +13263,13 @@
     "is_pending": false,
     "primary_basename": "audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07",
     "primary_runner": "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py"
+  },
+  "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "gauged_log_transfer_quasilocality_combes_thomas_2026_06_13",
+    "primary_runner": "scripts/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.py"
   },
   "gbare_wilson_action_internal_proof_walk_bounded_note_2026-05-08": {
     "helper_runner_paths": [],
@@ -12978,7 +13417,7 @@
   "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "gl_f_identification_bridge_check_2026_06_11",
     "primary_runner": "scripts/gl_f_identification_bridge_check_2026_06_11.py"
   },
@@ -13214,6 +13653,13 @@
     "primary_basename": "frontier_gravity_cosmology_tower_lambda_spectral_bridge",
     "primary_runner": "scripts/frontier_gravity_cosmology_tower_lambda_spectral_bridge.py"
   },
+  "gravity_fixed_energy_eikonal_index_bridge_bounded_theorem_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16",
+    "primary_runner": "scripts/frontier_gravity_fixed_energy_eikonal_index_bridge_2026_06_16.py"
+  },
   "gravity_law_cleanup_note": {
     "helper_runner_paths": [
       "scripts/generative_causal_dag_interference.py"
@@ -13252,9 +13698,16 @@
   "gravity_premise4_refractive_index_from_dispersion_bounded_theorem_note_2026-06-07": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_gravity_premise4_refractive_index_from_dispersion",
     "primary_runner": "scripts/frontier_gravity_premise4_refractive_index_from_dispersion.py"
+  },
+  "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_gravity_scalar_shift_sign_normalization_2026_06_18",
+    "primary_runner": "scripts/frontier_gravity_scalar_shift_sign_normalization_2026_06_18.py"
   },
   "gravity_sign_audit_2026-04-10": {
     "helper_runner_paths": [],
@@ -13380,7 +13833,7 @@
     "helper_runners": [
       "gate_b_grown_joint_package"
     ],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "GROWN_TRANSFER_BASIN_SWEEP",
     "primary_runner": "scripts/GROWN_TRANSFER_BASIN_SWEEP.py"
   },
@@ -13393,7 +13846,7 @@
       "GROWN_TRANSFER_BASIN_SWEEP",
       "gate_b_grown_joint_package"
     ],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "GROWN_TRANSFER_BASIN_TARGETED",
     "primary_runner": "scripts/GROWN_TRANSFER_BASIN_TARGETED.py"
   },
@@ -13647,6 +14100,13 @@
     "primary_basename": "frontier_depth_weight_distribution_2026_06_12",
     "primary_runner": "scripts/frontier_depth_weight_distribution_2026_06_12.py"
   },
+  "harmonic_ladder_origin_of_capture_deficit_bounded_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_harmonic_ladder_origin_2026_06_12",
+    "primary_runner": "scripts/frontier_harmonic_ladder_origin_2026_06_12.py"
+  },
   "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -13685,7 +14145,7 @@
   "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate",
     "primary_runner": "scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py"
   },
@@ -13728,6 +14188,13 @@
     "primary_basename": "frontier_hierarchy_bosonic_bilinear_selector",
     "primary_runner": "scripts/frontier_hierarchy_bosonic_bilinear_selector.py"
   },
+  "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16",
+    "primary_runner": "scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py"
+  },
   "hierarchy_delta0_attachment_mean_field_feedback_probe_note_2026-06-11": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -13748,6 +14215,13 @@
     "is_pending": true,
     "primary_basename": "frontier_hierarchy_delta0_b4_attachment_observable_enumeration_2026_06_11",
     "primary_runner": "scripts/frontier_hierarchy_delta0_b4_attachment_observable_enumeration_2026_06_11.py"
+  },
+  "hierarchy_delta0_b4_current_bank_alpha_attachment_no_go_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_hierarchy_delta0_b4_current_bank_alpha_attachment_no_go_2026_06_18",
+    "primary_runner": "scripts/frontier_hierarchy_delta0_b4_current_bank_alpha_attachment_no_go_2026_06_18.py"
   },
   "hierarchy_delta0_b4_taste_transfer_ladder_theory_probe_note_2026-06-11": {
     "helper_runner_paths": [],
@@ -13798,6 +14272,13 @@
     "primary_basename": "frontier_hierarchy_delta0_s2_readout_dressing_leading_order_probe_2026_06_11",
     "primary_runner": "scripts/frontier_hierarchy_delta0_s2_readout_dressing_leading_order_probe_2026_06_11.py"
   },
+  "hierarchy_delta0_s3_fixed_gap_spectrum_no_go_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_hierarchy_delta0_s3_fixed_gap_spectrum_no_go_2026_06_18",
+    "primary_runner": "scripts/frontier_hierarchy_delta0_s3_fixed_gap_spectrum_no_go_2026_06_18.py"
+  },
   "hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -13808,7 +14289,7 @@
   "hierarchy_dimensional_compression_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15",
     "primary_runner": "scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py"
   },
@@ -13829,6 +14310,20 @@
     "is_pending": false,
     "primary_basename": "frontier_hierarchy_effective_potential_endpoint",
     "primary_runner": "scripts/frontier_hierarchy_effective_potential_endpoint.py"
+  },
+  "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18",
+    "primary_runner": "scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py"
+  },
+  "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18",
+    "primary_runner": "scripts/frontier_hierarchy_fixed_density_physical_selector_no_go_2026_06_18.py"
   },
   "hierarchy_formula_ew_vev_observable_identification_bridge_bounded_note_2026-05-26": {
     "helper_runner_paths": [],
@@ -14013,7 +14508,7 @@
   "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_higgs_lattice_eigenvalue_ratio_narrow",
     "primary_runner": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py"
   },
@@ -14210,6 +14705,20 @@
     "primary_basename": "higher_symmetry_joint_validation",
     "primary_runner": "scripts/higher_symmetry_joint_validation.py"
   },
+  "hkd_correspondence_general_charts_bounded_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_hkd_correspondence_general_charts_2026_06_12",
+    "primary_runner": "scripts/frontier_hkd_correspondence_general_charts_2026_06_12.py"
+  },
+  "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_hkd_entry_sum_full_l_closure_2026_06_12",
+    "primary_runner": "scripts/frontier_hkd_entry_sum_full_l_closure_2026_06_12.py"
+  },
   "hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -14305,7 +14814,7 @@
   "hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_hubble_c1_a5_minimal_carrier_axiom_audit",
     "primary_runner": "scripts/frontier_hubble_c1_a5_minimal_carrier_axiom_audit.py"
   },
@@ -14333,7 +14842,7 @@
   "hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_hubble_c1_stuck_fanout_synthesis",
     "primary_runner": "scripts/frontier_hubble_c1_stuck_fanout_synthesis.py"
   },
@@ -14382,7 +14891,7 @@
   "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "hunit_to_ewsb_doublet_representation_no_go_2026_06_15",
     "primary_runner": "scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py"
   },
@@ -14392,6 +14901,13 @@
     "is_pending": false,
     "primary_basename": "frontier_hw1_second_order_return_shape_theorem",
     "primary_runner": "scripts/frontier_hw1_second_order_return_shape_theorem.py"
+  },
+  "hw_complement_equivalence_extends_to_free_corner_transfer_dynamics_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_hw_equivalence_free_transfer_dynamics_2026_06_12",
+    "primary_runner": "scripts/frontier_hw_equivalence_free_transfer_dynamics_2026_06_12.py"
   },
   "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": {
     "helper_runner_paths": [],
@@ -14533,7 +15049,7 @@
     "helper_runners": [
       "frontier_interacting_rp_mass_link_reflection_controls_2026_06_09"
     ],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_interacting_rp_full_algebra_2026_06_05",
     "primary_runner": "scripts/frontier_interacting_rp_full_algebra_2026_06_05.py"
   },
@@ -14645,6 +15161,13 @@
     "primary_basename": "render_controlled_vocabulary",
     "primary_runner": "scripts/render_controlled_vocabulary.py"
   },
+  "kinetic_bw_os0_identification_bridge_interface_no_go_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "kinetic_bw_os0_identification_bridge_interface_2026_06_16",
+    "primary_runner": "scripts/kinetic_bw_os0_identification_bridge_interface_2026_06_16.py"
+  },
   "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -14662,14 +15185,14 @@
   "kinetic_isotropy_from_strict_license_chiral_quantization_bounded_theorem_note_2026-06-09": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09",
     "primary_runner": "scripts/kinetic_isotropy_from_strict_license_chiral_quantization_2026_06_09.py"
   },
   "kinetic_isotropy_primitive_irreducibility_support_2026-06-09": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "kinetic_isotropy_primitive_irreducibility_support_2026_06_09",
     "primary_runner": "scripts/kinetic_isotropy_primitive_irreducibility_support_2026_06_09.py"
   },
@@ -15005,7 +15528,7 @@
   "koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "berezin_detc_detr_fork_2026_06_04",
     "primary_runner": "scripts/berezin_detc_detr_fork_2026_06_04.py"
   },
@@ -15335,7 +15858,7 @@
   "koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25",
     "primary_runner": "scripts/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.py"
   },
@@ -15428,17 +15951,24 @@
     "primary_basename": "koide_finite_beta_weight_is_the_partition_bit_2026_06_02",
     "primary_runner": "scripts/koide_finite_beta_weight_is_the_partition_bit_2026_06_02.py"
   },
+  "koide_first_order_selector_bounded_localization_certificate_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "koide_first_order_selector_bounded_localization_certificate_2026_06_18",
+    "primary_runner": "scripts/koide_first_order_selector_bounded_localization_certificate_2026_06_18.py"
+  },
   "koide_first_order_selector_is_the_chiral_lr_coupling_not_a_symmetry_narrow_note_2026-06-05": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact",
     "primary_runner": "scripts/audit_companion_koide_first_order_selector_is_chiral_lr_coupling_exact.py"
   },
   "koide_fisher_rao_spherical_reorganization_note_2026-06-01": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_koide_fisher_rao_spherical_reorganization",
     "primary_runner": "scripts/frontier_koide_fisher_rao_spherical_reorganization.py"
   },
@@ -15623,7 +16153,7 @@
   "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_koide_kappa_spectrum_operator_bridge_theorem",
     "primary_runner": "scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py"
   },
@@ -15651,7 +16181,7 @@
   "koide_lightcone_primitive_theorem_note_2026-05-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_koide_lightcone_primitive",
     "primary_runner": "scripts/frontier_koide_lightcone_primitive.py"
   },
@@ -15672,14 +16202,14 @@
   "koide_matter_attachment_graded_statistics_gate_narrow_theorem_note_2026-06-02": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_koide_matter_attachment_graded_statistics_gate",
     "primary_runner": "scripts/frontier_koide_matter_attachment_graded_statistics_gate.py"
   },
   "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_koide_matter_attachment_reduces_to_ks",
     "primary_runner": "scripts/frontier_koide_matter_attachment_reduces_to_ks.py"
   },
@@ -15736,8 +16266,8 @@
     "helper_runner_paths": [],
     "helper_runners": [],
     "is_pending": true,
-    "primary_basename": "frontier_koide_kappa_spectrum_operator_bridge_theorem",
-    "primary_runner": "scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py"
+    "primary_basename": "frontier_koide_mru_demotion_bridge_corollary_2026_06_18",
+    "primary_runner": "scripts/frontier_koide_mru_demotion_bridge_corollary_2026_06_18.py"
   },
   "koide_mru_weight_class_obstruction_theorem_note_2026-04-19": {
     "helper_runner_paths": [],
@@ -15879,7 +16409,7 @@
   "koide_pointer_record_degeneracy_d3_note_2026-05-31": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_koide_pointer_record_degeneracy_d3",
     "primary_runner": "scripts/frontier_koide_pointer_record_degeneracy_d3.py"
   },
@@ -15942,7 +16472,7 @@
   "koide_q_delta_linking_relation_theorem_note_2026-04-20": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_koide_q_delta_formal_ratio_repair",
     "primary_runner": "scripts/frontier_koide_q_delta_formal_ratio_repair.py"
   },
@@ -15966,6 +16496,13 @@
     "is_pending": false,
     "primary_basename": "frontier_koide_q_delta_residual_cohomology_obstruction_no_go",
     "primary_runner": "scripts/frontier_koide_q_delta_residual_cohomology_obstruction_no_go.py"
+  },
+  "koide_q_dred_normalization_freedom_no_go_note_2026-06-15": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "koide_q_dred_normalization_freedom_no_go_2026_06_15",
+    "primary_runner": "scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py"
   },
   "koide_q_eq_3delta_identity_note_2026-04-21": {
     "helper_runner_paths": [],
@@ -16030,10 +16567,17 @@
     "primary_basename": "frontier_koide_q_readout_factorization_theorem",
     "primary_runner": "scripts/frontier_koide_q_readout_factorization_theorem.py"
   },
+  "koide_q_reduced_carrier_physical_identification_obstruction_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12",
+    "primary_runner": "scripts/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.py"
+  },
   "koide_q_reduced_observable_restriction_theorem_2026-04-22": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_koide_q_reduced_observable_restriction_theorem",
     "primary_runner": "scripts/frontier_koide_q_reduced_observable_restriction_theorem.py"
   },
@@ -16117,7 +16661,7 @@
   "koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "audit_companion_koide_r_half_not_symmetry_protected_exact",
     "primary_runner": "scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py"
   },
@@ -16165,14 +16709,14 @@
   "koide_readout_lane_demarcation_note_2026-05-30": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_koide_readout_lane_demarcation_2026_05_30",
     "primary_runner": "scripts/frontier_koide_readout_lane_demarcation_2026_05_30.py"
   },
   "koide_real_rep_block_count_permitted_not_forced_note_2026-05-30": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30",
     "primary_runner": "scripts/frontier_koide_real_rep_block_count_permitted_not_forced_2026_05_30.py"
   },
@@ -16249,7 +16793,7 @@
   "koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "koide_rho_delta_dimensionless_dof_ratio_runner",
     "primary_runner": "scripts/koide_rho_delta_dimensionless_dof_ratio_runner.py"
   },
@@ -16396,7 +16940,7 @@
   "koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "koide_signed_readout_is_not_chirality",
     "primary_runner": "scripts/koide_signed_readout_is_not_chirality.py"
   },
@@ -16693,6 +17237,13 @@
     "primary_basename": "kraus_choi_normalization_convention_check_2026_06_05",
     "primary_runner": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py"
   },
+  "kreality_predicate_one_shared_atom_one_consumer_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_kreality_one_shared_atom_one_consumer_2026_06_12",
+    "primary_runner": "scripts/frontier_kreality_one_shared_atom_one_consumer_2026_06_12.py"
+  },
   "ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -16773,6 +17324,13 @@
     "is_pending": true,
     "primary_basename": "cl3_l3a_v3_check_2026_05_07_l3a",
     "primary_runner": "scripts/cl3_l3a_v3_check_2026_05_07_l3a.py"
+  },
+  "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_landau_peierls_prefactor_native_derivation_2026_06_13",
+    "primary_runner": "scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py"
   },
   "lanes.action-law.readme": {
     "helper_runner_paths": [],
@@ -17049,6 +17607,13 @@
     "is_pending": false,
     "primary_basename": "lattice_kernel_transfer_norm_probe",
     "primary_runner": "scripts/lattice_kernel_transfer_norm_probe.py"
+  },
+  "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "lattice_laplacian_shell_localization_2026_06_16",
+    "primary_runner": "scripts/lattice_laplacian_shell_localization_2026_06_16.py"
   },
   "lattice_nn_continuum_note": {
     "helper_runner_paths": [],
@@ -17468,7 +18033,7 @@
   "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10",
     "primary_runner": "scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py"
   },
@@ -17554,7 +18119,7 @@
       "independent_generators_heldout",
       "universality_classifier"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "linear_response_second_order_kubo",
     "primary_runner": "scripts/linear_response_second_order_kubo.py"
   },
@@ -17885,10 +18450,17 @@
     "primary_basename": "mermin_wagner_bogoliubov_bounded_certificate",
     "primary_runner": "scripts/mermin_wagner_bogoliubov_bounded_certificate.py"
   },
+  "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "meron_half_action_core_split_2026_06_18",
+    "primary_runner": "scripts/meron_half_action_core_split_2026_06_18.py"
+  },
   "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_meron_half_instanton_4pi2_over_g2_external_narrow",
     "primary_runner": "scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py"
   },
@@ -18069,7 +18641,7 @@
   "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "min_time_step_is_planck_time_from_scale_reference_primitive_runner",
     "primary_runner": "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py"
   },
@@ -18346,6 +18918,13 @@
     "primary_basename": "frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23",
     "primary_runner": "scripts/frontier_native_gauge_left_handed_abelian_surface_bounded_2026_05_23.py"
   },
+  "native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_2026_06_12.py"
+  },
   "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12": {
     "helper_runner_paths": [
       "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
@@ -18357,6 +18936,59 @@
     "primary_basename": "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12",
     "primary_runner": "scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py"
   },
+  "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+    ],
+    "helper_runners": [
+      "frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve"
+    ],
+    "is_pending": false,
+    "primary_basename": "native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_certified_gap_rung_two_bounded_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+    ],
+    "helper_runners": [
+      "frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve"
+    ],
+    "is_pending": false,
+    "primary_basename": "native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_diagonal_domination_rung_nine_bounded_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
+      "scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py"
+    ],
+    "helper_runners": [
+      "frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve",
+      "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12"
+    ],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_diagonal_domination_rung_nine_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_diagonal_domination_rung_nine_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_hdet_gaussian_core_support_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_hdet_gaussian_core_support_2026_06_18",
+    "primary_runner": "scripts/native_gauge_transfer_hdet_gaussian_core_support_2026_06_18.py"
+  },
+  "native_gauge_transfer_large_beta_gap_rung_six_bounded_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+    ],
+    "helper_runners": [
+      "frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve"
+    ],
+    "is_pending": false,
+    "primary_basename": "native_gauge_transfer_large_beta_gap_rung_six_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_large_beta_gap_rung_six_bounded_2026_06_12.py"
+  },
   "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_note_2026-06-12": {
     "helper_runner_paths": [
       "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
@@ -18367,6 +18999,91 @@
     "is_pending": false,
     "primary_basename": "native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12",
     "primary_runner": "scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_reduced_a2_discriminant_conjugation_rung_seventeen_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_reduced_a2_discriminant_conjugation_rung_seventeen_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_reduced_a2_discriminant_conjugation_rung_seventeen_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_reduced_a2_eigenvalue_ratio_eps_cancellation_rung_twenty_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_reduced_a2_eigenvalue_ratio_eps_cancellation_rung_twenty_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_reduced_a2_eigenvalue_ratio_eps_cancellation_rung_twenty_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_reduced_a2_spectral_domination_rung_eleven_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_reduced_a2_spectral_domination_rung_eleven_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_reduced_a2_spectral_domination_rung_eleven_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_reduced_a2_subleading_sign_rung_nineteen_bounded_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/native_gauge_transfer_reduced_a2_spectral_domination_rung_eleven_bounded_2026_06_12.py"
+    ],
+    "helper_runners": [
+      "native_gauge_transfer_reduced_a2_spectral_domination_rung_eleven_bounded_2026_06_12"
+    ],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_reduced_a2_subleading_sign_rung_nineteen_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_reduced_a2_subleading_sign_rung_nineteen_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_reduced_a2_virial_leading_equality_rung_eighteen_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_reduced_a2_virial_leading_equality_rung_eighteen_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_reduced_a2_virial_leading_equality_rung_eighteen_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_strong_coupling_gap_narrow_theorem_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+    ],
+    "helper_runners": [
+      "frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve"
+    ],
+    "is_pending": false,
+    "primary_basename": "native_gauge_transfer_strong_coupling_gap_narrow_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_strong_coupling_gap_narrow_2026_06_12.py"
+  },
+  "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_weyl_determinant_tail_domination_rung_eleven_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "native_gauge_transfer_weyl_determinant_tail_domination_rung_eleven_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_weyl_determinant_tail_domination_rung_eleven_bounded_2026_06_12.py"
+  },
+  "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_2026_06_12",
+    "primary_runner": "scripts/native_gauge_transfer_wilson_to_saddle_uniform_rung_nine_bounded_2026_06_12.py"
   },
   "native_holonomy_plaquette_center_flux_no_go_note_2026-05-23": {
     "helper_runner_paths": [],
@@ -19369,6 +20086,13 @@
     "primary_basename": "frontier_observable_principle_source_coupled_local_action_admission",
     "primary_runner": "scripts/frontier_observable_principle_source_coupled_local_action_admission.py"
   },
+  "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16",
+    "primary_runner": "scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py"
+  },
   "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -19469,7 +20193,7 @@
   "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10",
     "primary_runner": "scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py"
   },
@@ -19501,7 +20225,7 @@
       "frontier_sewing_shell_source",
       "frontier_star_shell_projector"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_one_parameter_reduced_shell_law",
     "primary_runner": "scripts/frontier_one_parameter_reduced_shell_law.py"
   },
@@ -19526,7 +20250,7 @@
       "frontier_sewing_shell_source",
       "frontier_star_shell_projector"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_one_parameter_reduced_shell_law",
     "primary_runner": "scripts/frontier_one_parameter_reduced_shell_law.py"
   },
@@ -19671,6 +20395,13 @@
     "is_pending": false,
     "primary_basename": "p_flux_selection_via_fsb_k_check_2026_06_11",
     "primary_runner": "scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py"
+  },
+  "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_p_lh_ncg_primitive_underdetermination_2026_06_18",
+    "primary_runner": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py"
   },
   "p_lh_order_one_staggered_dirac_open_gate_note_2026-05-10_pplh_order_one": {
     "helper_runner_paths": [],
@@ -20108,6 +20839,13 @@
     "primary_basename": "frontier_pl_s3_atlas_refinement_compatibility",
     "primary_runner": "scripts/frontier_pl_s3_atlas_refinement_compatibility.py"
   },
+  "pl_s3_regge_offround_canonical_narrow_theorem_note_2026-06-17": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "pl_s3_regge_offround_canonical_2026_06_17",
+    "primary_runner": "scripts/pl_s3_regge_offround_canonical_2026_06_17.py"
+  },
   "pl_topology_infrastructure_textbook_import_note_2026-05-17": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -20317,6 +21055,20 @@
     "is_pending": true,
     "primary_basename": "frontier_plaquette_c6_derivation_framework_su3_narrow",
     "primary_runner": "scripts/frontier_plaquette_c6_derivation_framework_su3_narrow.py"
+  },
+  "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "plaquette_environment_contraction_cost_verification_bounded_2026_06_12",
+    "primary_runner": "scripts/plaquette_environment_contraction_cost_verification_bounded_2026_06_12.py"
+  },
+  "plaquette_environment_quotient_equivariance_narrow_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "plaquette_environment_quotient_equivariance_narrow_theorem_2026_06_12",
+    "primary_runner": "scripts/plaquette_environment_quotient_equivariance_narrow_theorem_2026_06_12.py"
   },
   "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10": {
     "helper_runner_paths": [],
@@ -21125,9 +21877,16 @@
   "poisson_self_field_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "poisson_self_field",
     "primary_runner": "scripts/poisson_self_field.py"
+  },
+  "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "poisson_self_field_supplied_branch_core_2026_06_18",
+    "primary_runner": "scripts/poisson_self_field_supplied_branch_core_2026_06_18.py"
   },
   "poisson_self_gravity_born_audit_note": {
     "helper_runner_paths": [
@@ -21310,14 +22069,14 @@
   "post_record_dynamics_campaign_closeout_index_2026-06-06": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_post_record_dynamics_campaign_closeout_index_2026_06_06",
     "primary_runner": "scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py"
   },
   "post_record_dynamics_family_lift_closeout_index_2026-06-06": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06",
     "primary_runner": "scripts/frontier_post_record_dynamics_family_lift_closeout_index_2026_06_06.py"
   },
@@ -21341,6 +22100,13 @@
     "is_pending": false,
     "primary_basename": "frontier_post_record_finite_null_audit_interface_2026_06_06",
     "primary_runner": "scripts/frontier_post_record_finite_null_audit_interface_2026_06_06.py"
+  },
+  "post_record_finite_supplied_weight_normalization_lemma_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16",
+    "primary_runner": "scripts/frontier_post_record_finite_supplied_weight_normalization_lemma_2026_06_16.py"
   },
   "post_record_finite_target_kernel_stability_2026-06-06": {
     "helper_runner_paths": [],
@@ -21446,7 +22212,7 @@
       "frontier_post_record_measure_weight_normalization_subdivision_2026_06_06",
       "frontier_post_record_selector_dial_bucket_subdivision_2026_06_06"
     ],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06",
     "primary_runner": "scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py"
   },
@@ -21590,7 +22356,7 @@
   "primitive_p_lh_content_proposal_note_2026-05-10_pplh": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "cl3_primitive_p_lh_2026_05_10_pPlh",
     "primary_runner": "scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py"
   },
@@ -21632,14 +22398,14 @@
   "qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_qcd_beta_3_pure_gauge_vs_full_sm_narrow_exact_2026_06_02",
     "primary_runner": "scripts/frontier_qcd_beta_3_pure_gauge_vs_full_sm_narrow_exact_2026_06_02.py"
   },
   "qcd_low_energy_running_bridge_note_2026-05-01": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_qcd_low_energy_running_bridge",
     "primary_runner": "scripts/frontier_qcd_low_energy_running_bridge.py"
   },
@@ -21760,6 +22526,13 @@
     "is_pending": false,
     "primary_basename": "frontier_quark_c3_circulant_source_law_boundary",
     "primary_runner": "scripts/frontier_quark_c3_circulant_source_law_boundary.py"
+  },
+  "quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_quark_c3_oriented_ward_splitter_algebraic_core_split_2026_06_18",
+    "primary_runner": "scripts/frontier_quark_c3_oriented_ward_splitter_algebraic_core_split_2026_06_18.py"
   },
   "quark_c3_oriented_ward_splitter_support_note_2026-04-28": {
     "helper_runner_paths": [],
@@ -22224,6 +22997,13 @@
     "primary_basename": "frontier_quark_projector_ray_phase_completion",
     "primary_runner": "scripts/frontier_quark_projector_ray_phase_completion.py"
   },
+  "quark_route2_e_center_lift_derivation_attempt_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12",
+    "primary_runner": "scripts/frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py"
+  },
   "quark_route2_e_center_lift_measured_calibration_narrow_theorem_note_2026-06-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -22277,6 +23057,13 @@
     "is_pending": false,
     "primary_basename": "frontier_quark_route2_e_channel_readout_naturality_no_go",
     "primary_runner": "scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py"
+  },
+  "quark_route2_ell_e_structural_narrowing_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "quark_route2_ell_e_structural_narrowing_bounded_2026_06_12",
+    "primary_runner": "scripts/quark_route2_ell_e_structural_narrowing_bounded_2026_06_12.py"
   },
   "quark_route2_endpoint_step_free_active_branch_slopes_bounded_note_2026-06-12": {
     "helper_runner_paths": [
@@ -22593,6 +23380,55 @@
     "primary_basename": "frontier_quark_route2_rconn_center_ratio_bridge_obstruction",
     "primary_runner": "scripts/frontier_quark_route2_rconn_center_ratio_bridge_obstruction.py"
   },
+  "quark_route2_rconn_typed_bridge_derivation_bounded_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/_frontier_loader.py",
+      "scripts/frontier_coarse_grained_exterior_law.py",
+      "scripts/frontier_discrete_dtn_shell_kernel.py",
+      "scripts/frontier_finite_rank_gravity_residual.py",
+      "scripts/frontier_flux_fixed_matching_theorem.py",
+      "scripts/frontier_microscopic_dirichlet_bridge_principle.py",
+      "scripts/frontier_oh_schur_boundary_action.py",
+      "scripts/frontier_one_parameter_reduced_shell_law.py",
+      "scripts/frontier_quark_endpoint_readout_constraints.py",
+      "scripts/frontier_quark_route2_exact_readout_map.py",
+      "scripts/frontier_quark_route2_source_domain_bridge_no_go.py",
+      "scripts/frontier_radial_shell_matching_law.py",
+      "scripts/frontier_same_source_metric_ansatz_scan.py",
+      "scripts/frontier_sewing_shell_source.py",
+      "scripts/frontier_star_shell_projector.py",
+      "scripts/frontier_tensor_boundary_drive_two_channel.py",
+      "scripts/frontier_tensor_support_center_excess_law.py",
+      "scripts/frontier_tensor_universal_kernel.py",
+      "scripts/frontier_tensorial_einstein_regge_completion.py",
+      "scripts/frontier_universal_shell_profile.py"
+    ],
+    "helper_runners": [
+      "_frontier_loader",
+      "frontier_coarse_grained_exterior_law",
+      "frontier_discrete_dtn_shell_kernel",
+      "frontier_finite_rank_gravity_residual",
+      "frontier_flux_fixed_matching_theorem",
+      "frontier_microscopic_dirichlet_bridge_principle",
+      "frontier_oh_schur_boundary_action",
+      "frontier_one_parameter_reduced_shell_law",
+      "frontier_quark_endpoint_readout_constraints",
+      "frontier_quark_route2_exact_readout_map",
+      "frontier_quark_route2_source_domain_bridge_no_go",
+      "frontier_radial_shell_matching_law",
+      "frontier_same_source_metric_ansatz_scan",
+      "frontier_sewing_shell_source",
+      "frontier_star_shell_projector",
+      "frontier_tensor_boundary_drive_two_channel",
+      "frontier_tensor_support_center_excess_law",
+      "frontier_tensor_universal_kernel",
+      "frontier_tensorial_einstein_regge_completion",
+      "frontier_universal_shell_profile"
+    ],
+    "is_pending": true,
+    "primary_basename": "frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12",
+    "primary_runner": "scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py"
+  },
   "quark_route2_source_domain_bridge_no_go_note_2026-04-28": {
     "helper_runner_paths": [
       "scripts/_frontier_loader.py",
@@ -22636,9 +23472,23 @@
       "frontier_tensorial_einstein_regge_completion",
       "frontier_universal_shell_profile"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_quark_route2_source_domain_bridge_no_go",
     "primary_runner": "scripts/frontier_quark_route2_source_domain_bridge_no_go.py"
+  },
+  "quark_route2_t_balance_exact_algebraic_value_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "quark_route2_t_balance_exact_algebraic_value_bounded_2026_06_12",
+    "primary_runner": "scripts/quark_route2_t_balance_exact_algebraic_value_bounded_2026_06_12.py"
+  },
+  "quark_route2_t_side_endpoint_theorem_attempt_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "quark_route2_t_side_endpoint_theorem_attempt_bounded_2026_06_12",
+    "primary_runner": "scripts/quark_route2_t_side_endpoint_theorem_attempt_bounded_2026_06_12.py"
   },
   "quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28": {
     "helper_runner_paths": [],
@@ -23126,14 +23976,14 @@
   "record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_record_conditional_law_period_scaling_2026_06_11",
     "primary_runner": "scripts/frontier_record_conditional_law_period_scaling_2026_06_11.py"
   },
   "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_record_conditional_law_three_point_period_series_2026_06_11",
     "primary_runner": "scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py"
   },
@@ -23213,6 +24063,13 @@
     "is_pending": true,
     "primary_basename": "frontier_record_finite_time_reset_semigroup_no_go_2026_06_05",
     "primary_runner": "scripts/frontier_record_finite_time_reset_semigroup_no_go_2026_06_05.py"
+  },
+  "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_record_formation_controlled_copy_write_isometry_2026_06_18",
+    "primary_runner": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py"
   },
   "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06": {
     "helper_runner_paths": [],
@@ -23347,6 +24204,13 @@
     "primary_basename": "frontier_record_pointer_broadcast_hamiltonian_2026_06_05",
     "primary_runner": "scripts/frontier_record_pointer_broadcast_hamiltonian_2026_06_05.py"
   },
+  "record_pointer_controlled_coupling_finite_example_bounded_theorem_note_2026-06-15": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "record_pointer_controlled_coupling_finite_example_2026_06_15",
+    "primary_runner": "scripts/record_pointer_controlled_coupling_finite_example_2026_06_15.py"
+  },
   "record_prerecord_instrument_kernel_gate_2026-06-06": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -23427,7 +24291,7 @@
   "record_unbounded_finite_additivity_schema_2026-06-06": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_record_unbounded_additivity_schema_2026_06_06",
     "primary_runner": "scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py"
   },
@@ -23445,6 +24309,20 @@
     "primary_basename": "audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10",
     "primary_runner": "scripts/audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10.py"
   },
+  "regge_curved_prism_tick_dispersion_narrow_theorem_note_2026-06-17": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "regge_curved_prism_tick_dispersion_2026_06_17",
+    "primary_runner": "scripts/regge_curved_prism_tick_dispersion_2026_06_17.py"
+  },
+  "regge_ok4_frame_section_narrow_theorem_note_2026-06-17": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "regge_ok4_frame_section_2026_06_17",
+    "primary_runner": "scripts/regge_ok4_frame_section_2026_06_17.py"
+  },
   "register_not_read_scope_correction_panel_verdict_2026-06-06": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -23455,9 +24333,16 @@
   "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_registrable_readout_additive_even_phase_free_2026_06_10",
     "primary_runner": "scripts/frontier_registrable_readout_additive_even_phase_free_2026_06_10.py"
+  },
+  "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18",
+    "primary_runner": "scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py"
   },
   "registration_reinstates_chirality_no_go_note_2026-06-07": {
     "helper_runner_paths": [],
@@ -23493,6 +24378,13 @@
     "is_pending": true,
     "primary_basename": "reproduction_audit_harness",
     "primary_runner": "scripts/reproduction_audit_harness.py"
+  },
+  "residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_residual_d_power_divergent_cs_regeneration_b4_2026_06_13",
+    "primary_runner": "scripts/frontier_residual_d_power_divergent_cs_regeneration_b4_2026_06_13.py"
   },
   "restricted_strong_field_closure_note": {
     "helper_runner_paths": [],
@@ -23565,7 +24457,7 @@
   "rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17",
     "primary_runner": "scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py"
   },
@@ -23909,6 +24801,67 @@
     "primary_basename": "frontier_s3_time_primitive_chain_reaudit",
     "primary_runner": "scripts/frontier_s3_time_primitive_chain_reaudit.py"
   },
+  "s3_time_readout_primitive_bridge_assessment_bounded_note_2026-06-12": {
+    "helper_runner_paths": [
+      "scripts/_frontier_loader.py",
+      "scripts/canonical_plaquette_surface.py",
+      "scripts/frontier_coarse_grained_exterior_law.py",
+      "scripts/frontier_discrete_dtn_shell_kernel.py",
+      "scripts/frontier_finite_rank_gravity_residual.py",
+      "scripts/frontier_flux_fixed_matching_theorem.py",
+      "scripts/frontier_microscopic_dirichlet_bridge_principle.py",
+      "scripts/frontier_oh_schur_boundary_action.py",
+      "scripts/frontier_one_parameter_reduced_shell_law.py",
+      "scripts/frontier_quark_endpoint_readout_constraints.py",
+      "scripts/frontier_quark_mass_ratio_full_solve.py",
+      "scripts/frontier_quark_projector_parameter_audit.py",
+      "scripts/frontier_quark_projector_ray_phase_completion.py",
+      "scripts/frontier_quark_route2_exact_readout_map.py",
+      "scripts/frontier_quark_up_amplitude_candidate_scan.py",
+      "scripts/frontier_quark_up_amplitude_tensor_endpoint_bridge.py",
+      "scripts/frontier_radial_shell_matching_law.py",
+      "scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py",
+      "scripts/frontier_same_source_metric_ansatz_scan.py",
+      "scripts/frontier_sewing_shell_source.py",
+      "scripts/frontier_star_shell_projector.py",
+      "scripts/frontier_tensor_boundary_drive_two_channel.py",
+      "scripts/frontier_tensor_support_center_excess_law.py",
+      "scripts/frontier_tensor_universal_kernel.py",
+      "scripts/frontier_tensorial_einstein_regge_completion.py",
+      "scripts/frontier_universal_shell_profile.py"
+    ],
+    "helper_runners": [
+      "_frontier_loader",
+      "canonical_plaquette_surface",
+      "frontier_coarse_grained_exterior_law",
+      "frontier_discrete_dtn_shell_kernel",
+      "frontier_finite_rank_gravity_residual",
+      "frontier_flux_fixed_matching_theorem",
+      "frontier_microscopic_dirichlet_bridge_principle",
+      "frontier_oh_schur_boundary_action",
+      "frontier_one_parameter_reduced_shell_law",
+      "frontier_quark_endpoint_readout_constraints",
+      "frontier_quark_mass_ratio_full_solve",
+      "frontier_quark_projector_parameter_audit",
+      "frontier_quark_projector_ray_phase_completion",
+      "frontier_quark_route2_exact_readout_map",
+      "frontier_quark_up_amplitude_candidate_scan",
+      "frontier_quark_up_amplitude_tensor_endpoint_bridge",
+      "frontier_radial_shell_matching_law",
+      "frontier_s3_time_theta_to_slice_coupling_factor_rigidity",
+      "frontier_same_source_metric_ansatz_scan",
+      "frontier_sewing_shell_source",
+      "frontier_star_shell_projector",
+      "frontier_tensor_boundary_drive_two_channel",
+      "frontier_tensor_support_center_excess_law",
+      "frontier_tensor_universal_kernel",
+      "frontier_tensorial_einstein_regge_completion",
+      "frontier_universal_shell_profile"
+    ],
+    "is_pending": true,
+    "primary_basename": "frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12",
+    "primary_runner": "scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py"
+  },
   "s3_time_spacetime_observable_route_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -23960,6 +24913,13 @@
     "is_pending": true,
     "primary_basename": "frontier_s3_time_spacetime_tensor_primitive",
     "primary_runner": "scripts/frontier_s3_time_spacetime_tensor_primitive.py"
+  },
+  "s3_time_tensor_build_memo": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_s3_time_tensor_build_memo_rescope_2026_06_16",
+    "primary_runner": "scripts/frontier_s3_time_tensor_build_memo_rescope_2026_06_16.py"
   },
   "s3_time_tensor_primitive_prototype_note": {
     "helper_runner_paths": [
@@ -24358,8 +25318,12 @@
     "primary_runner": "scripts/shapiro_complex_interaction.py"
   },
   "shapiro_delay_note": {
-    "helper_runner_paths": [],
-    "helper_runners": [],
+    "helper_runner_paths": [
+      "scripts/shapiro_delay_portable.py"
+    ],
+    "helper_runners": [
+      "shapiro_delay_portable"
+    ],
     "is_pending": true,
     "primary_basename": "shapiro_phase_lag_probe",
     "primary_runner": "scripts/shapiro_phase_lag_probe.py"
@@ -24414,8 +25378,12 @@
     "primary_runner": "scripts/shapiro_five_family_portability.py"
   },
   "shapiro_qa_retest_note": {
-    "helper_runner_paths": [],
-    "helper_runners": [],
+    "helper_runner_paths": [
+      "scripts/shapiro_delay_portable.py"
+    ],
+    "helper_runners": [
+      "shapiro_delay_portable"
+    ],
     "is_pending": true,
     "primary_basename": "shapiro_phase_lag_probe",
     "primary_runner": "scripts/shapiro_phase_lag_probe.py"
@@ -24491,7 +25459,7 @@
       "SECOND_GROWN_FAMILY_SIGN_SWEEP",
       "gate_b_nonlabel_connectivity_v1"
     ],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "SIGN_PORTABILITY_INVARIANT_COMPARE",
     "primary_runner": "scripts/SIGN_PORTABILITY_INVARIANT_COMPARE.py"
   },
@@ -25066,6 +26034,13 @@
     "primary_basename": "single_clock_axis_selection_check_2026_06_11",
     "primary_runner": "scripts/single_clock_axis_selection_check_2026_06_11.py"
   },
+  "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "single_clock_kms_apbc_axis_supplier_no_go_2026_06_16",
+    "primary_runner": "scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py"
+  },
   "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -25109,6 +26084,13 @@
     "primary_basename": "SIXTH_FAMILY_DISTANCE_LAW_THIRD_VS_SIXTH_QUICK",
     "primary_runner": "scripts/SIXTH_FAMILY_DISTANCE_LAW_THIRD_VS_SIXTH_QUICK.py"
   },
+  "slab_boundary_eta_globally_zero_per_edge_nonuniversal_no_fractional_carrier_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_slab_boundary_eta_nonuniversal_2026_06_12",
+    "primary_runner": "scripts/frontier_slab_boundary_eta_nonuniversal_2026_06_12.py"
+  },
   "slow_variables_derived_one_body_closure_link_is_a_coordinate_bounded_theorem_note_2026-06-09": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -25133,21 +26115,35 @@
   "sm_gstar_higgs_sector_count_stretch_note_2026-05-29": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_sm_gstar_higgs_sector_count_2026_05_29",
     "primary_runner": "scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py"
+  },
+  "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18",
+    "primary_runner": "scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py"
+  },
+  "sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15",
+    "primary_runner": "scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py"
   },
   "sm_gstar_i12_nur_thermal_exclusion_bounded_note_2026-05-29": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29",
     "primary_runner": "scripts/frontier_sm_gstar_i12_nur_thermal_exclusion_2026_05_29.py"
   },
   "sm_gstar_r_matter_residual_reduction_bounded_note_2026-05-29": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_sm_gstar_r_matter_reduction_2026_05_29",
     "primary_runner": "scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py"
   },
@@ -25647,6 +26643,13 @@
     "primary_basename": "frontier_slab_bridge_spatial_Tx_real_2026_05_19",
     "primary_runner": "scripts/frontier_slab_bridge_spatial_Tx_real_2026_05_19.py"
   },
+  "species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_species_bridge_minimum_decomposition_2026_06_13",
+    "primary_runner": "scripts/frontier_species_bridge_minimum_decomposition_2026_06_13.py"
+  },
   "spectral_closure_2026-04-09": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -25755,7 +26758,7 @@
   "stack_spectral_transcription_weak_registration_faithful_limit_bounded_theorem_note_2026-06-11": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "stack_spectral_transcription_weak_registration_2026_06_11",
     "primary_runner": "scripts/stack_spectral_transcription_weak_registration_2026_06_11.py"
   },
@@ -26397,9 +27400,16 @@
   "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_statistics_atom_reduces_to_product_form_2026_06_12",
     "primary_runner": "scripts/frontier_statistics_atom_reduces_to_product_form_2026_06_12.py"
+  },
+  "statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_statistics_outcome_factorization_not_forced_2026_06_18",
+    "primary_runner": "scripts/frontier_statistics_outcome_factorization_not_forced_2026_06_18.py"
   },
   "strc_lo_collinearity_theorem_note_2026-04-19": {
     "helper_runner_paths": [],
@@ -26558,6 +27568,13 @@
     "primary_basename": "frontier_su2_double_use_reduces_to_pairing_admission_2026_06_08",
     "primary_runner": "scripts/frontier_su2_double_use_reduces_to_pairing_admission_2026_06_08.py"
   },
+  "su2_u0_single_plaquette_beta16_native_interval_bounded_support_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "su2_u0_single_plaquette_beta16_native_interval_2026_06_18",
+    "primary_runner": "scripts/su2_u0_single_plaquette_beta16_native_interval_2026_06_18.py"
+  },
   "su2_weak_alpha_lattice_one_over_sixteen_pi_anchor_narrow_theorem_note_2026-05-28": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -26568,7 +27585,7 @@
   "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10",
     "primary_runner": "scripts/audit_companion_su2_weak_beta_coefficient_narrow_exact_2026_05_10.py"
   },
@@ -26582,7 +27599,7 @@
   "su2_weak_one_loop_inverse_alpha_scale_log_bridge_narrow_theorem_note_2026-06-15": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15",
     "primary_runner": "scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py"
   },
@@ -26860,9 +27877,20 @@
     "primary_basename": "frontier_taste_scalar_isotropy",
     "primary_runner": "scripts/frontier_taste_scalar_isotropy.py"
   },
-  "teleportation_3d1_causal_record_channel_note": {
+  "taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13": {
     "helper_runner_paths": [],
     "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_taste_sector_marginal_lv_b4_2026_06_13",
+    "primary_runner": "scripts/frontier_taste_sector_marginal_lv_b4_2026_06_13.py"
+  },
+  "teleportation_3d1_causal_record_channel_note": {
+    "helper_runner_paths": [
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
+    ],
+    "helper_runners": [
+      "teleportation_boundary_checks_2026_06_13"
+    ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_3d1_causal_record_channel",
     "primary_runner": "scripts/frontier_teleportation_3d1_causal_record_channel.py"
@@ -26890,7 +27918,8 @@
       "scripts/frontier_teleportation_operator_consistent_end_to_end.py",
       "scripts/frontier_teleportation_resource_fidelity.py",
       "scripts/frontier_teleportation_resource_from_poisson.py",
-      "scripts/frontier_teleportation_taste_readout_operator_model.py"
+      "scripts/frontier_teleportation_taste_readout_operator_model.py",
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
     ],
     "helper_runners": [
       "frontier_bell_inequality",
@@ -26899,7 +27928,8 @@
       "frontier_teleportation_operator_consistent_end_to_end",
       "frontier_teleportation_resource_fidelity",
       "frontier_teleportation_resource_from_poisson",
-      "frontier_teleportation_taste_readout_operator_model"
+      "frontier_teleportation_taste_readout_operator_model",
+      "teleportation_boundary_checks_2026_06_13"
     ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_3d_operator_consistent_end_to_end",
@@ -26907,10 +27937,12 @@
   },
   "teleportation_3d_readout_convention_note": {
     "helper_runner_paths": [
-      "scripts/frontier_teleportation_taste_readout_operator_model.py"
+      "scripts/frontier_teleportation_taste_readout_operator_model.py",
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
     ],
     "helper_runners": [
-      "frontier_teleportation_taste_readout_operator_model"
+      "frontier_teleportation_taste_readout_operator_model",
+      "teleportation_boundary_checks_2026_06_13"
     ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_3d_readout_convention_audit",
@@ -26992,8 +28024,12 @@
     "primary_runner": "scripts/frontier_teleportation_apparatus_dynamics_closure.py"
   },
   "teleportation_bell_measurement_circuit_note": {
-    "helper_runner_paths": [],
-    "helper_runners": [],
+    "helper_runner_paths": [
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
+    ],
+    "helper_runners": [
+      "teleportation_boundary_checks_2026_06_13"
+    ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_bell_measurement_circuit",
     "primary_runner": "scripts/frontier_teleportation_bell_measurement_circuit.py"
@@ -27031,8 +28067,12 @@
     "primary_runner": "scripts/frontier_teleportation_dynamical_resource_generation.py"
   },
   "teleportation_encoding_portability_note": {
-    "helper_runner_paths": [],
-    "helper_runners": [],
+    "helper_runner_paths": [
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
+    ],
+    "helper_runners": [
+      "teleportation_boundary_checks_2026_06_13"
+    ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_encoding_portability",
     "primary_runner": "scripts/frontier_teleportation_encoding_portability.py"
@@ -27054,20 +28094,35 @@
     "primary_basename": "frontier_teleportation_end_to_end_poisson",
     "primary_runner": "scripts/frontier_teleportation_end_to_end_poisson.py"
   },
+  "teleportation_finite_gapped_preparation_path_support_note_2026-06-16": {
+    "helper_runner_paths": [
+      "scripts/frontier_bell_inequality.py",
+      "scripts/frontier_teleportation_resource_from_poisson.py"
+    ],
+    "helper_runners": [
+      "frontier_bell_inequality",
+      "frontier_teleportation_resource_from_poisson"
+    ],
+    "is_pending": false,
+    "primary_basename": "teleportation_finite_gapped_preparation_path_support_2026_06_16",
+    "primary_runner": "scripts/teleportation_finite_gapped_preparation_path_support_2026_06_16.py"
+  },
   "teleportation_hard_blocker_attack_note": {
     "helper_runner_paths": [
       "scripts/frontier_bell_inequality.py",
       "scripts/frontier_teleportation_native_record_apparatus.py",
       "scripts/frontier_teleportation_remaining_blocker_reduction.py",
       "scripts/frontier_teleportation_resource_from_poisson.py",
-      "scripts/frontier_teleportation_taste_readout_operator_model.py"
+      "scripts/frontier_teleportation_taste_readout_operator_model.py",
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
     ],
     "helper_runners": [
       "frontier_bell_inequality",
       "frontier_teleportation_native_record_apparatus",
       "frontier_teleportation_remaining_blocker_reduction",
       "frontier_teleportation_resource_from_poisson",
-      "frontier_teleportation_taste_readout_operator_model"
+      "frontier_teleportation_taste_readout_operator_model",
+      "teleportation_boundary_checks_2026_06_13"
     ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_hard_blocker_attack",
@@ -27111,19 +28166,25 @@
   "teleportation_microscopic_closure_note": {
     "helper_runner_paths": [
       "scripts/frontier_teleportation_native_record_apparatus.py",
-      "scripts/frontier_teleportation_taste_readout_operator_model.py"
+      "scripts/frontier_teleportation_taste_readout_operator_model.py",
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
     ],
     "helper_runners": [
       "frontier_teleportation_native_record_apparatus",
-      "frontier_teleportation_taste_readout_operator_model"
+      "frontier_teleportation_taste_readout_operator_model",
+      "teleportation_boundary_checks_2026_06_13"
     ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_microscopic_closure",
     "primary_runner": "scripts/frontier_teleportation_microscopic_closure.py"
   },
   "teleportation_native_axioms_scope_split_source_theorem_note_2026-05-16": {
-    "helper_runner_paths": [],
-    "helper_runners": [],
+    "helper_runner_paths": [
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
+    ],
+    "helper_runners": [
+      "teleportation_boundary_checks_2026_06_13"
+    ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_native_axioms_scope_split_2026-05-16",
     "primary_runner": "scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py"
@@ -27162,14 +28223,16 @@
       "scripts/frontier_teleportation_native_record_apparatus.py",
       "scripts/frontier_teleportation_remaining_blocker_reduction.py",
       "scripts/frontier_teleportation_resource_from_poisson.py",
-      "scripts/frontier_teleportation_taste_readout_operator_model.py"
+      "scripts/frontier_teleportation_taste_readout_operator_model.py",
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
     ],
     "helper_runners": [
       "frontier_bell_inequality",
       "frontier_teleportation_native_record_apparatus",
       "frontier_teleportation_remaining_blocker_reduction",
       "frontier_teleportation_resource_from_poisson",
-      "frontier_teleportation_taste_readout_operator_model"
+      "frontier_teleportation_taste_readout_operator_model",
+      "teleportation_boundary_checks_2026_06_13"
     ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_nature_grade_push",
@@ -27195,14 +28258,16 @@
       "scripts/frontier_teleportation_native_record_apparatus.py",
       "scripts/frontier_teleportation_remaining_blocker_reduction.py",
       "scripts/frontier_teleportation_resource_from_poisson.py",
-      "scripts/frontier_teleportation_taste_readout_operator_model.py"
+      "scripts/frontier_teleportation_taste_readout_operator_model.py",
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
     ],
     "helper_runners": [
       "frontier_bell_inequality",
       "frontier_teleportation_native_record_apparatus",
       "frontier_teleportation_remaining_blocker_reduction",
       "frontier_teleportation_resource_from_poisson",
-      "frontier_teleportation_taste_readout_operator_model"
+      "frontier_teleportation_taste_readout_operator_model",
+      "teleportation_boundary_checks_2026_06_13"
     ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_open_item_attack",
@@ -27215,7 +28280,8 @@
       "scripts/frontier_teleportation_end_to_end_poisson.py",
       "scripts/frontier_teleportation_resource_fidelity.py",
       "scripts/frontier_teleportation_resource_from_poisson.py",
-      "scripts/frontier_teleportation_taste_readout_operator_model.py"
+      "scripts/frontier_teleportation_taste_readout_operator_model.py",
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
     ],
     "helper_runners": [
       "frontier_bell_inequality",
@@ -27223,11 +28289,25 @@
       "frontier_teleportation_end_to_end_poisson",
       "frontier_teleportation_resource_fidelity",
       "frontier_teleportation_resource_from_poisson",
-      "frontier_teleportation_taste_readout_operator_model"
+      "frontier_teleportation_taste_readout_operator_model",
+      "teleportation_boundary_checks_2026_06_13"
     ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_operator_consistent_end_to_end",
     "primary_runner": "scripts/frontier_teleportation_operator_consistent_end_to_end.py"
+  },
+  "teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18": {
+    "helper_runner_paths": [
+      "scripts/frontier_bell_inequality.py",
+      "scripts/frontier_teleportation_resource_from_poisson.py"
+    ],
+    "helper_runners": [
+      "frontier_bell_inequality",
+      "frontier_teleportation_resource_from_poisson"
+    ],
+    "is_pending": false,
+    "primary_basename": "teleportation_poisson_finite_extraction_core_2026_06_18",
+    "primary_runner": "scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py"
   },
   "teleportation_poisson_resource_sweep_note": {
     "helper_runner_paths": [
@@ -27285,13 +28365,15 @@
       "scripts/frontier_bell_inequality.py",
       "scripts/frontier_teleportation_native_record_apparatus.py",
       "scripts/frontier_teleportation_resource_from_poisson.py",
-      "scripts/frontier_teleportation_taste_readout_operator_model.py"
+      "scripts/frontier_teleportation_taste_readout_operator_model.py",
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
     ],
     "helper_runners": [
       "frontier_bell_inequality",
       "frontier_teleportation_native_record_apparatus",
       "frontier_teleportation_resource_from_poisson",
-      "frontier_teleportation_taste_readout_operator_model"
+      "frontier_teleportation_taste_readout_operator_model",
+      "teleportation_boundary_checks_2026_06_13"
     ],
     "is_pending": true,
     "primary_basename": "frontier_teleportation_remaining_blocker_reduction",
@@ -27352,8 +28434,12 @@
     "primary_runner": "scripts/frontier_teleportation_retention_theorem_attack.py"
   },
   "teleportation_taste_readout_operator_model_note": {
-    "helper_runner_paths": [],
-    "helper_runners": [],
+    "helper_runner_paths": [
+      "scripts/teleportation_boundary_checks_2026_06_13.py"
+    ],
+    "helper_runners": [
+      "teleportation_boundary_checks_2026_06_13"
+    ],
     "is_pending": false,
     "primary_basename": "frontier_teleportation_taste_readout_operator_model",
     "primary_runner": "scripts/frontier_teleportation_taste_readout_operator_model.py"
@@ -27641,6 +28727,13 @@
     "primary_basename": "frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09",
     "primary_runner": "scripts/frontier_theta_cross_plane_term_absent_per_plaquette_class_2026_06_09.py"
   },
+  "theta_emergent_q_weighting_reality_rg_stable_bounded_theorem_note_2026-06-13": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_theta_emergent_q_cp_rg_stability_2026_06_13",
+    "primary_runner": "scripts/frontier_theta_emergent_q_cp_rg_stability_2026_06_13.py"
+  },
   "theta_gauge_substrate_no_winding_carrier_emergent_q_bridge_bounded_theorem_note_2026-06-11": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -27731,6 +28824,13 @@
     "primary_basename": "frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow",
     "primary_runner": "scripts/frontier_thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow.py"
   },
+  "three_family_card_missing_distance_live_bridge_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "three_family_card_missing_distance_live_bridge_2026_06_18",
+    "primary_runner": "scripts/three_family_card_missing_distance_live_bridge_2026_06_18.py"
+  },
   "three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -27818,7 +28918,7 @@
   "tick_unitarity_from_spectrum_reflection_conjugacy_bounded_theorem_note_2026-06-10": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "tick_unitarity_from_spectrum_reflection_conjugacy_2026_06_10",
     "primary_runner": "scripts/tick_unitarity_from_spectrum_reflection_conjugacy_2026_06_10.py"
   },
@@ -27885,6 +28985,24 @@
     "is_pending": true,
     "primary_basename": "frontier_trYsquared_proof_walk_lattice_independence",
     "primary_runner": "scripts/frontier_trYsquared_proof_walk_lattice_independence.py"
+  },
+  "two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13": {
+    "helper_runner_paths": [
+      "scripts/frontier_finite_cell_two_band_closed_form_2026_06_13.py"
+    ],
+    "helper_runners": [
+      "frontier_finite_cell_two_band_closed_form_2026_06_13"
+    ],
+    "is_pending": false,
+    "primary_basename": "frontier_two_band_lattice_moyal_full_b2_2026_06_13",
+    "primary_runner": "scripts/frontier_two_band_lattice_moyal_full_b2_2026_06_13.py"
+  },
+  "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_two_band_orbital_closed_form_2026_06_12",
+    "primary_runner": "scripts/frontier_two_band_orbital_closed_form_2026_06_12.py"
   },
   "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": {
     "helper_runner_paths": [],
@@ -27953,6 +29071,13 @@
     "primary_basename": "u1_fermion_number_conservation_check",
     "primary_runner": "scripts/u1_fermion_number_conservation_check.py"
   },
+  "u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_u_integration_reading_dictionary_blind_2026_06_12",
+    "primary_runner": "scripts/frontier_u_integration_reading_dictionary_blind_2026_06_12.py"
+  },
   "unification_basin_failure_note": {
     "helper_runner_paths": [
       "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
@@ -27999,7 +29124,7 @@
   "universal_gr_3plus1_constraint_multiplier_structure_derived_fiber_metric_bounded_theorem_note_2026-06-09": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_3plus1_constraint_fiber_metric_2026_06_09",
     "primary_runner": "scripts/frontier_universal_gr_3plus1_constraint_fiber_metric_2026_06_09.py"
   },
@@ -28016,6 +29141,13 @@
     "is_pending": false,
     "primary_basename": "frontier_universal_gr_bd_congruence_invariance",
     "primary_runner": "scripts/frontier_universal_gr_bd_congruence_invariance.py"
+  },
+  "universal_gr_canonical_channel_section_and_einstein_signs_narrow_theorem_note_2026-06-17": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_universal_gr_canonical_channel_section_and_einstein_signs_2026_06_17",
+    "primary_runner": "scripts/frontier_universal_gr_canonical_channel_section_and_einstein_signs_2026_06_17.py"
   },
   "universal_gr_casimir_block_localization_note": {
     "helper_runner_paths": [],
@@ -28034,28 +29166,28 @@
   "universal_gr_conformal_mode_sign_diagnostic_bounded_theorem_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_conformal_mode_sign_diagnostic",
     "primary_runner": "scripts/frontier_universal_gr_conformal_mode_sign_diagnostic.py"
   },
   "universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_bounded_theorem_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_2026_06_08",
     "primary_runner": "scripts/frontier_universal_gr_cubic_diffeo_ward_finite_lattice_scaling_support_2026_06_08.py"
   },
   "universal_gr_cubic_diffeo_ward_operator_telescope_bounded_theorem_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_cubic_diffeo_ward_operator_telescope",
     "primary_runner": "scripts/frontier_universal_gr_cubic_diffeo_ward_operator_telescope.py"
   },
   "universal_gr_cubic_graviton_seagull_vertex_bounded_theorem_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_cubic_graviton_seagull_vertex",
     "primary_runner": "scripts/frontier_universal_gr_cubic_graviton_seagull_vertex.py"
   },
@@ -28073,7 +29205,7 @@
     "helper_runners": [
       "frontier_universal_gr_quadratic_mode_gluing_derivation_2026_06_09"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go",
     "primary_runner": "scripts/frontier_universal_gr_degenerate_supermetric_graviton_sign_no_go.py"
   },
@@ -28087,7 +29219,7 @@
   "universal_gr_einstein_hilbert_closure_synthesis_bounded_theorem_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_einstein_hilbert_closure_synthesis",
     "primary_runner": "scripts/frontier_universal_gr_einstein_hilbert_closure_synthesis.py"
   },
@@ -28143,7 +29275,7 @@
   "universal_gr_metric_reparametrized_vertex_operator_lift_boundary_bounded_theorem_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_metric_reparam_operator_lift_boundary",
     "primary_runner": "scripts/frontier_universal_gr_metric_reparam_operator_lift_boundary.py"
   },
@@ -28157,14 +29289,14 @@
   "universal_gr_polarization_frame_bundle_attempt": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_polarization_frame_bundle",
     "primary_runner": "scripts/frontier_universal_gr_polarization_frame_bundle.py"
   },
   "universal_gr_polarization_frame_bundle_blocker_note": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_polarization_frame_bundle",
     "primary_runner": "scripts/frontier_universal_gr_polarization_frame_bundle.py"
   },
@@ -28210,10 +29342,17 @@
     "primary_basename": "frontier_universal_gr_round_pl_s3_regge_hessian_2026_06_10",
     "primary_runner": "scripts/frontier_universal_gr_round_pl_s3_regge_hessian_2026_06_10.py"
   },
+  "universal_gr_sakharov_gnewton_induced_residual_is_metric_dof_posit_narrow_theorem_note_2026-06-17": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_universal_gr_sakharov_gnewton_induced_scale_2026_06_17",
+    "primary_runner": "scripts/frontier_universal_gr_sakharov_gnewton_induced_scale_2026_06_17.py"
+  },
   "universal_gr_scalar_generator_tt_kernel_sharpening_bounded_theorem_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_scalar_generator_tt_kernel_sharpening",
     "primary_runner": "scripts/frontier_universal_gr_scalar_generator_tt_kernel_sharpening.py"
   },
@@ -28234,7 +29373,7 @@
   "universal_gr_staggered_tt_projected_stress_triangle_support_bounded_note_2026-06-08": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_staggered_tt_graviton_triangle",
     "primary_runner": "scripts/frontier_universal_gr_staggered_tt_graviton_triangle.py"
   },
@@ -28276,7 +29415,7 @@
   "universal_gr_w_hessian_identification_full_finite_k_channel_table_bounded_theorem_note_2026-06-09": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_universal_gr_w_hessian_identification_full_channel_table_2026_06_09",
     "primary_runner": "scripts/frontier_universal_gr_w_hessian_identification_full_channel_table_2026_06_09.py"
   },
@@ -28325,9 +29464,16 @@
   "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_unordered_mass_multiset_registrability_bridge_2026_06_11",
     "primary_runner": "scripts/frontier_unordered_mass_multiset_registrability_bridge_2026_06_11.py"
+  },
+  "unordered_mass_pdep_record_independence_no_go_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "unordered_mass_pdep_record_independence_no_go_2026_06_18",
+    "primary_runner": "scripts/unordered_mass_pdep_record_independence_no_go_2026_06_18.py"
   },
   "unraveled_record_trajectories_supply_nondegenerate_step_distribution_bounded_theorem_note_2026-06-10": {
     "helper_runner_paths": [],
@@ -29005,7 +30151,7 @@
   "wilson_bz_corner_hamming_staircase_closed_form_note_2026-05-09": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": true,
+    "is_pending": false,
     "primary_basename": "frontier_wilson_bz_corner_hamming_staircase_closed_form_certificate_2026_05_09",
     "primary_runner": "scripts/frontier_wilson_bz_corner_hamming_staircase_closed_form_certificate_2026_05_09.py"
   },
@@ -29016,12 +30162,33 @@
     "primary_basename": "frontier_wilson_corrected_v_taste_tree_level",
     "primary_runner": "scripts/frontier_wilson_corrected_v_taste_tree_level.py"
   },
+  "wilson_extremum_curvature_readout_boundary_certificate_2026-06-15": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "wilson_extremum_curvature_readout_boundary_2026_06_15",
+    "primary_runner": "scripts/wilson_extremum_curvature_readout_boundary_2026_06_15.py"
+  },
+  "wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "wilson_generator_rescaling_beta_transformation_2026_06_16",
+    "primary_runner": "scripts/wilson_generator_rescaling_beta_transformation_2026_06_16.py"
+  },
   "wilson_m_h_per_channel_closure_bounded_note_2026-05-09": {
     "helper_runner_paths": [],
     "helper_runners": [],
     "is_pending": true,
     "primary_basename": "frontier_wilson_m_h_per_channel_closure",
     "primary_runner": "scripts/frontier_wilson_m_h_per_channel_closure.py"
+  },
+  "wilson_m_h_tree_at_extremum_algebraic_core_split_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_wilson_m_h_tree_at_extremum_algebraic_core_split_2026_06_18",
+    "primary_runner": "scripts/frontier_wilson_m_h_tree_at_extremum_algebraic_core_split_2026_06_18.py"
   },
   "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08": {
     "helper_runner_paths": [],
@@ -29061,6 +30228,13 @@
     "is_pending": false,
     "primary_basename": "audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07",
     "primary_runner": "scripts/audit_companion_wilson_small_a_matching_beta_gbare_2026_06_07.py"
+  },
+  "wilson_staggered_minimal_block_spectrum_bridge_note_2026-06-13": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_wilson_staggered_minimal_block_spectrum_bridge_2026_06_13",
+    "primary_runner": "scripts/frontier_wilson_staggered_minimal_block_spectrum_bridge_2026_06_13.py"
   },
   "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30": {
     "helper_runner_paths": [],
@@ -29510,6 +30684,13 @@
     "primary_basename": "frontier_yt_ew_matching_rule_m_current_packet_boundary",
     "primary_runner": "scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py"
   },
+  "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "frontier_yt_ew_neutral_projector_same_surface_carrier",
+    "primary_runner": "scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py"
+  },
   "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25": {
     "helper_runner_paths": [],
     "helper_runners": [],
@@ -29744,6 +30925,17 @@
     "primary_basename": "frontier_yt_p1_delta_r_2_loop_extension",
     "primary_runner": "scripts/frontier_yt_p1_delta_r_2_loop_extension.py"
   },
+  "yt_p1_delta_r_fermion_regulator_dependence_and_scalar_ntaste_resolution_note_2026-06-16": {
+    "helper_runner_paths": [
+      "scripts/canonical_plaquette_surface.py"
+    ],
+    "helper_runners": [
+      "canonical_plaquette_surface"
+    ],
+    "is_pending": true,
+    "primary_basename": "frontier_yt_p1_bz_quadrature_full_staggered_pt",
+    "primary_runner": "scripts/frontier_yt_p1_bz_quadrature_full_staggered_pt.py"
+  },
   "yt_p1_delta_r_master_assembly_theorem_note_2026-04-18": {
     "helper_runner_paths": [
       "scripts/canonical_plaquette_surface.py"
@@ -29784,9 +30976,16 @@
     "helper_runners": [
       "canonical_plaquette_surface"
     ],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_yt_p1_i_s_reaudit_packet_2026_06_12",
     "primary_runner": "scripts/frontier_yt_p1_i_s_reaudit_packet_2026_06_12.py"
+  },
+  "yt_p1_i_s_native_kernel_settled_bounded_theorem_note_2026-06-16": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": true,
+    "primary_basename": "yt_p1_i_s_native_kernel_settled_2026_06_16",
+    "primary_runner": "scripts/yt_p1_i_s_native_kernel_settled_2026_06_16.py"
   },
   "yt_p1_i_s_revision_verification_note_2026-04-17": {
     "helper_runner_paths": [
@@ -29959,7 +31158,7 @@
   "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_yt_qubit_neutral_higgs_carrier_ray_bridge",
     "primary_runner": "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py"
   },
@@ -30022,6 +31221,13 @@
     "is_pending": true,
     "primary_basename": "frontier_yt_signed_linear_democratic_tangent_physical_bridge_attempt",
     "primary_runner": "scripts/frontier_yt_signed_linear_democratic_tangent_physical_bridge_attempt.py"
+  },
+  "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18": {
+    "helper_runner_paths": [],
+    "helper_runners": [],
+    "is_pending": false,
+    "primary_basename": "frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18",
+    "primary_runner": "scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py"
   },
   "yt_source_action_route_exhaustion_summary_note_2026-05-22": {
     "helper_runner_paths": [],
@@ -30110,7 +31316,7 @@
   "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25": {
     "helper_runner_paths": [],
     "helper_runners": [],
-    "is_pending": false,
+    "is_pending": true,
     "primary_basename": "frontier_yt_strict_wz_neutral_carrier_response_packet",
     "primary_runner": "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py"
   },

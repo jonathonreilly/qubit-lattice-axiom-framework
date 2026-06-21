@@ -43,15 +43,17 @@ commands_run:
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py -> PASS=8 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py -> PASS=64 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py -> PASS=13 FAIL=1 (pre-existing tiny t_balance tolerance drift; not modified)"
+  - "gh pr create -> https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4569"
+  - "gh pr view 4569 --json number,url,title,headRefName,baseRefName,state -> OPEN, identity-only verification"
 open_imports:
   - "Physical color ray / gauge-frame source-line primitive is not supplied on the current source surface."
   - "Endpoint triple still lacks actual current-surface derivation."
-next_exact_action: "Commit, publish, open PR, then continue campaign with the next target: derive/deny a physical color-ray source primitive or pivot to a stronger readout-map theorem."
+next_exact_action: "Continue campaign with the next target: derive/deny a physical color-ray source primitive or pivot to a stronger readout-map theorem."
 pr_status:
-  number: null
-  url: null
-  title: null
+  number: 4569
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4569
+  title: "[physics-loop] s3-route2-readout-endpoint block39 conditional-support"
   head: physics-loop/s3-route2-readout-endpoint-block39-20260621
   base: main
-  state: not_created_yet
+  state: OPEN
 stop_condition: "None; campaign remains active after PR handoff."

@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 954 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1624 |
+| unaudited | 1623 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
-| ~~audited_renaming~~ | 27 |
+| ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
@@ -67,8 +67,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
-| `audited_renaming` | 27 |
-| `unaudited` | 1950 |
+| `audited_renaming` | 28 |
+| `unaudited` | 1949 |
 
 | claim_type | count |
 |---|---:|
@@ -118,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
@@ -1643,6 +1643,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_delta_linking_relation_theorem_note_2026-04-20` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `koide_r_is_the_weighting_principle_dial_record_dynamics_weighting_blind_bounded_theorem_note_2026-06-15` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `lanes.generated-geometry.readme` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
+| `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -11796,6 +11797,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the ordered 3D dense spent-delay family, the live sweep shows z = 2 through 6 remain attractive, z = 7 is mixed/signal-free, detector-window widening preserves z = 6's sign, and wider slit thresholds do not extend the window further.  _(class `C`)_
 - **chain closes:** True — The live script reproduces the source table and decision on the same declared family, action, geometry, slit threshold, detector-window scan, and z range; the source keeps the conclusion bounded and does not promote an all-distance or new-action theorem.
 - **rationale:** The source claim is a bounded computational extension, and the live artifact reproduces the canonical z sweep, detector-window sensitivity rows, slit-threshold spot checks, Born companion value, MI/decoherence values, and final bounded-extension decision. The conclusion is limited to the ordered 3D dense spent-delay family with the declared geometry and explicitly excludes all-distance, 4D, NN, and action-law claims, so the runner checks the load-bearing step without hidden promotion. Residual risk is only ordinary finite-sweep scope: this clean audit does not say anything beyond the tested family and parameter grid.
+- **auditor confidence:** high
+
+### `lattice_3d_inverse_square_kernel_helper_note_2026-04-04`
+
+- **Note:** [`LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md`](../../docs/LATTICE_3D_INVERSE_SQUARE_KERNEL_HELPER_NOTE_2026-04-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Wrapper-level module-interface and implementation-fidelity scope: documented width-6 constants, helper entry points, and the coded w/L^2 propagation factor, with no derivation of the inverse-square kernel or tail law.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-lattice_3d_inverse_square_kernel_helper_note_2026-04-04-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The wrapper note provides citeable one-hop authority for the width-6 comparator constants and the build_family, barrier_metrics, no_barrier_distance, and fit_power helper functions in scripts/lattice_3d_inverse_square_kernel.py.  _(class `E`)_
+- **chain closes:** True — Within the declared wrapper boundary, the included runner source confirms the documented constants, helper functions, and w/(L*L) propagator factor while preserving the spent-delay action expression. This closes only the interface/documentation claim, not a physics derivation of the kernel or downstream asymptotics.
+- **rationale:** Issue: the load-bearing move is a wrapper/interface declaration, not a derivation from axioms. Why this blocks: downstream use may cite this row for constants and helper names, but not as authority for inverse-square physics or tail statistics. Repair target: a separate retained derivation or implementation-fidelity theorem would be needed to promote the kernel law itself. Claim boundary until fixed: cite only the module interface and coded branch behavior.
 - **auditor confidence:** high
 
 ### `lattice_3d_l2_numpy_h0125_audit_note`

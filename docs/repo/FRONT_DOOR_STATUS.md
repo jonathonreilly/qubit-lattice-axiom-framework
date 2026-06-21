@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1584 |
-| Retained-grade rows, including boxed decorations | 1472 |
+| Applied audit verdicts | 1585 |
+| Retained-grade rows, including boxed decorations | 1473 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 216 |
-| Retained bounded rows | 986 |
+| Retained bounded rows | 987 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 38 |
-| Unaudited rows | 1562 |
+| Unaudited rows | 1561 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 33 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1564 |
+| Total pending rows | 1563 |
 | Ready rows | 69 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 548 |
+| Leaf pending | 547 |
 
 Next ready rows by queue order:
 
-- [`sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18`](../../docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15`](../../docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md) - medium; unaudited
 - [`staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17`](../../docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17`](../../docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10`](../../docs/SU3_CASIMIR_FUNDAMENTAL_ALGEBRAIC_K1_K3_NARROW_PROOF_WALK_BOUNDED_NOTE_2026-05-10.md) - medium; unaudited
 - [`z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31`](../../docs/Z_N_ASYMMETRY_RESIDUAL_1_FINITE_VS_CONTINUUM_NOTE_2026-05-31.md) - medium; unaudited
 - [`accessible_prediction_note`](../../docs/ACCESSIBLE_PREDICTION_NOTE.md) - medium; unaudited
-- [`alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`](../../docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md) - leaf; unaudited
+- [`alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`](../../docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
+- [`architecture_portability_live_reaudit_bridge_note_2026-06-18`](../../docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

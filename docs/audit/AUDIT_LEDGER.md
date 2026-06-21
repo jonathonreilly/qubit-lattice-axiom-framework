@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 213 |
 | **retained_no_go** | 216 |
-| **retained_bounded** | 979 |
+| **retained_bounded** | 980 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1570 |
+| unaudited | 1569 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -64,13 +64,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1424 |
+| `audited_clean` | 1425 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1896 |
+| `unaudited` | 1895 |
 
 | claim_type | count |
 |---|---:|
@@ -105,7 +105,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
@@ -120,7 +120,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
 | 15 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
 | 18 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 35.82 | `audited_clean` | **retained_bounded** |
 | 19 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
@@ -847,6 +847,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_selected_line_local_radian_bridge_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `koide_taste_cube_cyclic_source_descent_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_three_measures_three_observables_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_transport_gap_constant_no_go_note_2026-04-20` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11998,6 +11999,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The Brannen signed-eigenvalue Q=2/3 readout belongs to the Gamma_chi-commuting C3 circulant class, while Gamma_chi-anticommuting Hermitian operators have sign-symmetric {-lambda,0,+lambda} eigenvalue readout and comm(R) intersect anticomm(Gamma_chi) = {0}.  _(class `A`)_
 - **chain closes:** True — The discriminator follows from retained-grade algebraic inputs: Gamma_chi is circulant, circulants commute, no nonzero circulant anticommutes with Gamma_chi, and anticommuting Hermitian H has zero-sum sign-symmetric eigenvalues. The note does not need to derive r=1/2, physical charged-lepton masses, or a global chirality mechanism.
 - **rationale:** The load-bearing step is a genuine class-A algebraic closure over retained or retained-bounded authorities, not a definition or numerical match. The runner source constructs the two operator classes and checks the commute/anticommute split, signed/singular readout contrast, eigenvalue/eigenvector readout distinction, and sign-grade steelman without importing external data. The source note's N1-N8 no-go gate is scoped narrowly and explicitly leaves multi-factor chirality and dynamics routes open, so the negative claim is not overbroad.
+- **auditor confidence:** high
+
+### `koide_taste_cube_cyclic_source_descent_note_2026-04-18`
+
+- **Note:** [`KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md`](../../docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite C^8 taste-cube statement that C3[111] averaging, T1 compression, and Schur-compatible charged-sector reduction land in the same real cyclic Hermitian span {B0,B1,B2}, excluding the physical charged-lepton readout bridge and Koide selector.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-koide_taste_cube_cyclic_source_descent_note_2026-04-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because T1 is invariant under U, P1 commutes with U and U|T1=C, giving P1 A8(X) P1 = A3(P1 X P1); the Schur block covariance then gives C S(M)=S(M) C.  _(class `A`)_
+- **chain closes:** True — All load-bearing objects are defined inside the packet: the finite basis, cycle U, projector P1, T1 cycle C, averaging maps, cyclic basis, and Schur complement. The descent identity follows by finite matrix algebra, and the Schur-compatible response factorization follows from block covariance and cyclic-basis orthogonality.
+- **rationale:** The central descent is a genuine algebraic identity over explicitly defined finite matrices, not a physical bridge or numerical fit. The runner source constructs the cycle, projector, matrix units, orbit channels, and Schur samples directly, with no imported contested value or external comparator; the exact matrix-unit checks substantiate the averaging/compression identity. The physical charged-lepton carrier/readout interpretation, microscopic source law, selector law, and mass readout are explicitly outside the audited scope, so they do not block this bounded finite theorem.
 - **auditor confidence:** high
 
 ### `koide_three_measures_three_observables_note_2026-05-31`

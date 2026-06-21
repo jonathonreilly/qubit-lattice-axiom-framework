@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 292,
     "high": 280,
-    "leaf": 556,
+    "leaf": 555,
     "medium": 444
   },
   "cycle_break_target_count": 9,
@@ -17457,28 +17457,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_taste_cube_cyclic_source_descent_note_2026-04-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_taste_cube_cyclic_source_descent.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17626,6 +17604,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_qcd_beta_3_pure_gauge_vs_full_sm_narrow_exact_2026_06_02.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_scalar_i_real_generation_k_parity_separation.py",
       "transitive_descendants": 16
     },
     {
@@ -31190,32 +31194,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_scalar_i_real_generation_k_parity_separation.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -47373,6 +47351,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 76,
-  "total_pending": 1572
+  "ready_count": 75,
+  "total_pending": 1571
 }

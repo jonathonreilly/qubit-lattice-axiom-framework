@@ -103190,7 +103190,7 @@
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4e863ddc839336db46a4cb061a85bec3b5ab91c948a78aa735d611ed6c75dbb5",
+      "note_hash": "b0e2324b1036a49829d887b15e7a1110310c3cebe79c3c71f61092ea193511f4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -104069,10 +104069,17 @@
         "quark_route2_exact_readout_map_note_2026-04-19",
         "s3_time_theta_to_slice_coupling_note"
       ],
-      "helper_runner_paths": [],
-      "note_hash": "64a167573020decda57f01a6f9e832add0b075714a0c9839056637a45057a3b1",
+      "helper_runner_paths": [
+        "scripts/_frontier_loader.py",
+        "scripts/frontier_oh_schur_boundary_action.py",
+        "scripts/frontier_quark_endpoint_readout_constraints.py",
+        "scripts/frontier_quark_route2_exact_readout_map.py",
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_tensor_support_center_excess_law.py"
+      ],
+      "note_hash": "e48ad6d33cf4128f8405569d8d0c4953fae580ce7fa12ba598b36910a5dcc1ea",
       "path": "docs/S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md",
-      "runner_path": null,
+      "runner_path": "scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py",
       "title": "s3-Time Theta_R -> Lambda_R Coupling: Factor-Rigidity Theorem"
     },
     "s3_time_theta_to_slice_coupling_note": {
@@ -118607,6 +118614,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

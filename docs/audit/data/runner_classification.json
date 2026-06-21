@@ -29976,6 +29976,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_s3_time_tensor_primitive_prototype.py"
     },
+    "s3_time_theta_to_slice_coupling_factor_rigidity_note_2026-05-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py"
+    },
     "s3_time_theta_to_slice_coupling_note": {
       "assert_count": 1,
       "counts": {
@@ -69874,6 +69886,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py": {
+      "assert_count": 1,
+      "claims": [
+        "s3_time_theta_to_slice_coupling_factor_rigidity_note_2026-05-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/frontier_s3_time_transfer_matrix_bridge.py": {
       "assert_count": 1,
       "claims": [
@@ -85877,12 +85904,12 @@
     "dominant_class_distribution": {
       "A": 462,
       "B": 555,
-      "C": 1233,
+      "C": 1234,
       "D": 422,
       "none": 451
     },
-    "runners_classified": 3123,
-    "runners_with_C": 1675,
-    "runners_with_D": 991
+    "runners_classified": 3124,
+    "runners_with_C": 1676,
+    "runners_with_D": 992
   }
 }

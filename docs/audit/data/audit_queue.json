@@ -18360,12 +18360,19 @@
       ],
       "direct_in_degree": 5,
       "effective_status": "unaudited",
-      "helper_runner_paths": [],
+      "helper_runner_paths": [
+        "scripts/_frontier_loader.py",
+        "scripts/frontier_oh_schur_boundary_action.py",
+        "scripts/frontier_quark_endpoint_readout_constraints.py",
+        "scripts/frontier_quark_route2_exact_readout_map.py",
+        "scripts/frontier_same_source_metric_ansatz_scan.py",
+        "scripts/frontier_tensor_support_center_excess_law.py"
+      ],
       "load_bearing_score": 6.2,
       "note_path": "docs/S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py",
       "transitive_descendants": 12
     },
     {

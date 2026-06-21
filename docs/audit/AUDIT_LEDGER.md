@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 966 |
+| **retained_bounded** | 967 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1604 |
+| unaudited | 1603 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1403 |
+| `audited_clean` | 1404 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1930 |
+| `unaudited` | 1929 |
 
 | claim_type | count |
 |---|---:|
@@ -439,6 +439,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_lorentz_invariance_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `emergent_product_law_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -6017,6 +6018,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The B4 invariant space of diagonal quadratic kinetic forms is one-dimensional, so c_t = c_s is forced.  _(class `A`)_
 - **chain closes:** True — The four diagonal coefficients form one orbit under B4, while spatial O_h has a time singleton plus one spatial orbit, so the marginal anisotropic diagonal operator is not B4-invariant. The one-loop equality follows by finite relabeling under a B4-invariant measure/action, and the primitive dependencies supply only the accepted OS0 surface and units conversion used by the scoped estimate.
 - **rationale:** The load-bearing step is a genuine finite-group algebraic closure, not a symbol definition or numerical tuning. The kinetic-isotropy and scale-reference inputs are approved primitive premises in the restricted packet, and the other cited authorities are retained-grade for the structural dimension-6 support used here. An independent check confirmed the invariant dimensions, the sine-dispersion coefficient -a^2/3, and the 1 GeV estimate 2.24e-39; the clean verdict is limited to the stated diagonal quadratic and B4-symmetric one-loop scope, not full Lorentz closure or interacting all-n-point dynamics.
+- **auditor confidence:** high
+
+### `emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18`
+
+- **Note:** [`EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md`](../../docs/EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the continuous-time/spatial-Z^3 central-difference kinetic surface, the leading quartic spatial artifact has zero time Hessian components and projects under O_h to one spatial scalar marginal channel, with the coefficient left undetermined.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The quartic artifact A4 is independent of p0 and its signed-permutation O_h orbit-averaged spatial Hessian is 4(kx^2+ky^2+kz^2) I_3.  _(class `A`)_
+- **chain closes:** True — The central-difference expansion, p0-independence, Hessian entries, and signed-permutation average are exact algebraic consequences of the kinetic expression stated in the theorem. The conclusion is only the bounded structural channel delta c_t=0, delta c_s=lambda, so no one-loop coefficient, anomalous dimension, or LV-bound sufficiency is imported.
+- **rationale:** The load-bearing result is a direct symbolic/algebraic check: the runner computes the series, Hessian, and O_h average rather than merely printing constants. The one cross-note runner guard concerns parent-note bookkeeping and is not part of the theorem's mathematical closure. Within the note's explicitly bounded continuous-time/spatial-central-difference surface, the claimed spatial-only O_h-scalar channel follows without external comparator, tuned numerical input, or hidden coefficient claim.
 - **auditor confidence:** high
 
 ### `emergent_product_law_audit_2026-04-11`

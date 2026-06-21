@@ -8,8 +8,8 @@ block: 70
 branch: physics-loop/s3-route2-e-center-qe-15-8-block70-20260621
 base: origin/main
 base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
-local_science_commit: pending
-remote_science_commit: pending
+local_science_commit: ea7af1b378f1620b3a99427bfec1f879714a5052
+remote_science_commit: fdb1e44613051c888ac154d236866cd658a36572
 worktree: /private/tmp/cl3-physics-loop-s3-route2-e-center-qe-15-8-block70-20260621
 date: 2026-06-21
 mode: campaign
@@ -73,10 +73,12 @@ open_imports:
   - "A typed signed color/support bridge, if the proof routes through R_conn."
   - "An explicit owner convention selecting a readout map, if the route becomes conventional rather than derived."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending_creation
-pr_number: pending
-pr_url: pending
-pr_identity_view: pending
+pr_status: open
+pr_number: 4601
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4601
+pr_identity_view: >-
+  {"baseRefName":"main","headRefName":"physics-loop/s3-route2-e-center-qe-15-8-block70-20260621","number":4601,"state":"OPEN","title":"[physics-loop] s3-route2-e-center-inverse-square-source-law block70 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4601"}
 next_exact_action: >-
-  Run staged hygiene, then commit, publish, and open the block70 review PR.
+  Pivot to the signed R_conn center bridge theorem or a direct derivation of
+  the inverse-square source/readout law.
 stop_condition: none

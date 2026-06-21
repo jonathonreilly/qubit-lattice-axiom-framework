@@ -27792,7 +27792,7 @@
       "claim_id": "continuum_convergence_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -27807,7 +27807,7 @@
       "note_path": "docs/CONTINUUM_CONVERGENCE_NOTE.md",
       "queue_reason": "unaudited",
       "ready": false,
-      "runner_path": null,
+      "runner_path": "scripts/continuum_convergence_note_probe.py",
       "transitive_descendants": 12
     },
     {

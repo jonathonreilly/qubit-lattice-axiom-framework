@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/continuum_convergence_note_probe.py
+runner_sha256: 8412028923457218209f9850874e36fba93ce0bfe2442dfc0dbbb69d48f3389c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 20.99
+status: ok
+----- stdout -----
+CONTINUUM CONVERGENCE NOTE PROBE
+
+  [PASS] claim type is bounded (continuum note remains a bounded_theorem row)
+  [PASS] runner metadata names this probe (audit parser can attach the note-boundary verifier)
+  [PASS] old 3D 1/L branch is rejected (the note preserves the failed-refinement boundary)
+  [PASS] new kernel is only a candidate (candidate wording does not become a continuum theorem)
+  [PASS] transfer norm remains under reconciliation (the local transfer-norm discriminator is not promoted)
+  [PASS] distance-law direction is not Newtonian (the note keeps the distance-law warning visible)
+  [PASS] closure claims are explicitly banned (the note lists the overclaims it must not be used to make)
+  [PASS] no machine-local link targets remain (links are repo-relative for audit portability)
+  [PASS] no uppercase retained status marker remains (touched note avoids bare status-authority wording)
+  [PASS] tail-stats dependency exits cleanly (returncode=0)
+  [PASS] tail-stats dependency scorecard passes (finite width-6/width-8 tail-fit verifier remains reproducible)
+  [PASS] tail-stats dependency keeps finite boundary (dependency does not claim asymptotic closure)
+  [PASS] transfer-norm dependency exits cleanly (returncode=0)
+  [PASS] transfer-norm ranking keeps p=1.5 closest to stable (local transfer-norm discriminator remains a warning against unique p=2 promotion)
+  [PASS] transfer-norm output is explicitly marginality-ranked (dependency output is the bounded comparison named by the note)
+
+SUMMARY: PASS=15 FAIL=0
+BOUNDARY: bounded note verifier only; no continuum theorem or kernel-selection promotion.
+
+----- stderr -----
+

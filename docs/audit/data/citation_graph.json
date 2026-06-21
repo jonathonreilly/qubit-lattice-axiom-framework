@@ -63039,17 +63039,17 @@
     },
     "continuum_convergence_note": {
       "claim_id": "continuum_convergence_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [
         "lattice_3d_l2_tail_stats_note",
         "lattice_kernel_transfer_norm_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "03cf03048f339f8432ec3af8f120cd5575c53294dcfe6914898c0e4c715900df",
+      "note_hash": "9c6e34375c5367bbe8f8e8b4de35e3a4b9d094dab2146c61dc950df08746fe92",
       "path": "docs/CONTINUUM_CONVERGENCE_NOTE.md",
-      "runner_path": null,
+      "runner_path": "scripts/continuum_convergence_note_probe.py",
       "title": "Continuum Convergence Note"
     },
     "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12": {
@@ -103190,7 +103190,7 @@
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "56aad8a905671e33e0b352966309349b72ce3ae0cb77aa03dacbf2c620b25638",
+      "note_hash": "983f1d1a9ac802c99fcc7ca669bdf06e4160b6bffdf4bae9c19573a31ca5d54d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118586,11 +118586,11 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1379,
+      "bounded_theorem": 1380,
       "decoration": 2,
       "meta": 288,
       "no_go": 208,
-      "none": 1428,
+      "none": 1427,
       "open_gate": 118,
       "positive_theorem": 196
     },
@@ -118607,6 +118607,6 @@
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,
-    "runners_with_path": 3252
+    "runners_with_path": 3253
   }
 }

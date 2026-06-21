@@ -5064,6 +5064,18 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_connes_kreimer_partial_sum_rb_b4_external_bounded.py"
     },
+    "continuum_convergence_note": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/continuum_convergence_note_probe.py"
+    },
     "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12": {
       "assert_count": 2,
       "counts": {
@@ -46044,6 +46056,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/continuum_convergence_note_probe.py": {
+      "assert_count": 2,
+      "claims": [
+        "continuum_convergence_note"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/coupled_field_generated_family_probe.py": {
       "assert_count": 0,
       "claims": [
@@ -85876,13 +85903,13 @@
     "decoration_candidates": 624,
     "dominant_class_distribution": {
       "A": 462,
-      "B": 555,
+      "B": 556,
       "C": 1233,
       "D": 422,
       "none": 451
     },
-    "runners_classified": 3123,
+    "runners_classified": 3124,
     "runners_with_C": 1675,
-    "runners_with_D": 991
+    "runners_with_D": 992
   }
 }

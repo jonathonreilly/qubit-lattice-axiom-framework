@@ -1,7 +1,10 @@
 # Continuum Convergence Note
 
 **Date:** 2026-04-04  
+**Claim type:** bounded_theorem
 **Status:** bounded - bounded or caveated result note
+**Status authority:** independent audit lane only.
+**Runner:** [`scripts/continuum_convergence_note_probe.py`](../scripts/continuum_convergence_note_probe.py)
 
 This note collects the current dimension-dependent-kernel results on the
 ordered-lattice family. It is intentionally narrower than the branch-history
@@ -47,21 +50,21 @@ This is the most important new exploratory branch.
 On the tested ordered-lattice family:
 
 - TOWARD gravity survives from `h = 0.5` through the current `h = 0.125` run
-- the branch remains Born-clean at machine precision on the retained checks
+- the branch remains Born-clean at machine precision on the bounded checks
 - the barrier card stays nontrivial on MI / decoherence / `d_TV`
 - a frozen `h = 0.25` eight-property card now exists on `main`
 - the no-barrier post-peak tail fit improves when the `h = 0.25` lattice is
   widened:
-  - earlier retained read: `b^(-0.53)`
-  - wider retained read: `b^(-0.70)`, `R^2 = 0.955`
+  - earlier branch read: `b^(-0.53)`
+  - wider branch read: `b^(-0.70)`, `R^2 = 0.955`
 
 Primary branch artifacts:
 
-- [`scripts/lattice_3d_l2_fast.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_fast.py)
-- [`scripts/lattice_3d_l2_canonical_card.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_canonical_card.py)
-- [`scripts/lattice_3d_inverse_square_kernel.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_inverse_square_kernel.py)
-- [`scripts/lattice_3d_l2_tail_stats.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_l2_tail_stats.py)
-- [`docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md)
+- [`scripts/lattice_3d_l2_fast.py`](../scripts/lattice_3d_l2_fast.py)
+- [`scripts/lattice_3d_l2_canonical_card.py`](../scripts/lattice_3d_l2_canonical_card.py)
+- [`scripts/lattice_3d_inverse_square_kernel.py`](../scripts/lattice_3d_inverse_square_kernel.py)
+- [`scripts/lattice_3d_l2_tail_stats.py`](../scripts/lattice_3d_l2_tail_stats.py)
+- [`docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md`](LATTICE_3D_L2_TAIL_STATS_NOTE.md)
 
 ### 4. 4D ordered lattice with `1/L^3`
 
@@ -87,11 +90,11 @@ Current branch evidence does **not** yet support:
 There are currently two different transfer-style reads on `main`:
 
 1. the bounded local probe:
-   - [`docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md)
+   - [`docs/LATTICE_KERNEL_TRANSFER_NORM_NOTE.md`](LATTICE_KERNEL_TRANSFER_NORM_NOTE.md)
    - this local measure-corrected discriminator leaned closer to `p = 1.5`
      than `p = 2.0` in 3D
 2. the imported branch transfer story:
-   - [`scripts/transfer_norm_and_born.py`](/Users/jonreilly/Projects/Physics/scripts/transfer_norm_and_born.py)
+   - [`scripts/transfer_norm_and_born.py`](../scripts/transfer_norm_and_born.py)
    - this is a different observable and should not be read as already
      superseding the bounded local probe
 
@@ -106,13 +109,13 @@ So the review-safe wording is:
 The branch has a real RG-style stabilization story for gravity magnitude, but
 the current safe separation is:
 
-- sign persistence under refinement (RETAINED)
+- sign persistence under refinement (supported in the cited branch artifacts)
 - post-peak tail steepening: **CORRECTED** — at same width (W=10), the
   tail from z>=5 is -0.82 at h=0.5 and -0.63 at h=0.25 (shallower, not
   steeper). The tail from peak onward is -0.82 (h=0.5, peak z=5) vs
   -0.52 (h=0.25, peak z=4). The exponent gets SHALLOWER with finer h.
   The earlier “-0.35 → -0.53 steepening” compared different lattice widths.
-- finite-magnitude RG control (RETAINED)
+- finite-magnitude RG control (supported in the cited branch artifacts)
 
 Those are related, but they are not the same claim and should not be collapsed
 into one blanket “continuum solved” statement. The distance law direction is

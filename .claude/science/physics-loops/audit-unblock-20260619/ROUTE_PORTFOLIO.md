@@ -10,8 +10,8 @@ Score:
 - Audit-unblock value: high, because the row is ready and the direct runner
   failed on current main before the patch.
 - Science risk: low, because the branch does not change the theorem content.
-- Blast radius: medium, because the note hash changes and the audit pipeline
-  regenerates ledger, queue, publication, and front-door outputs.
+- Blast radius: low after rebase narrowing, because generated audit and
+  publication surfaces are excluded from the PR diff.
 
 ## Rejected Route: Hand-Editing Front-Door Status
 
@@ -21,6 +21,5 @@ in generated queue prose.
 
 ## Deferred Route: Next Ready Rows
 
-After pipeline regeneration the next ready rows shifted substantially. The
-next block should rescan current `origin/main` rather than relying on the
+The next block should rescan current `origin/main` rather than relying on the
 pre-block124 queue order.

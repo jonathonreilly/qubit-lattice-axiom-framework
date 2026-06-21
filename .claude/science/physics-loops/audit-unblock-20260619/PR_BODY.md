@@ -23,6 +23,11 @@ The fix keeps the claim boundary narrow:
 - The target runner cache was refreshed and now records
   `PASS=17 FAIL=0 TOTAL=17`.
 
+After rebasing onto current `main` at `678b38ce7`, the branch is intentionally
+narrowed to the source firewall repair, the refreshed target runner cache, and
+the branch-local loop packet. Generated audit, publication, and front-door
+surfaces are excluded from this PR.
+
 ## Boundary
 
 - No audit-loop run.
@@ -30,17 +35,26 @@ The fix keeps the claim boundary narrow:
 - No effective-status promotion.
 - This is a source-side runner/firewall repair for an already-ready unaudited
   bounded row.
-- Generated audit/publication/front-door artifacts are pipeline outputs from
-  current main state.
+
+## Current queue snapshot
+
+- claim_type: `bounded_theorem`
+- audit_status: `unaudited`
+- effective_status: `unaudited`
+- criticality: `critical`
+- load_bearing_score: `10.353`
+- direct_in_degree: `2`
+- transitive_descendants: `653`
+- deps: `coarse_grained_exterior_law_helper_note_2026-04-14`, `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`
+- helper_runner_paths: `6`
+- ready: `true`
 
 ## Verification
 
 - `python3 -m py_compile scripts/frontier_one_parameter_reduced_shell_law.py`
 - Direct runner before patch: `PASS=16 FAIL=1`
-- Direct runner after patch: `PASS=17 FAIL=0 TOTAL=17`
-- `bash docs/audit/scripts/run_pipeline.sh`: complete; strict lint reported 139 notices, 0 errors
-- `python3 scripts/precompute_audit_runners.py --runners scripts/frontier_one_parameter_reduced_shell_law.py --force --push-mode none --allow-non-main`: 1 ok, 0 failures
-- `python3 scripts/audit_packet_script_deps.py`: 388 / 1582 pending helper-import claims
-- `python3 docs/audit/scripts/audit_lint.py --strict`: 139 notices, 0 errors
-- `git diff --check`
-- post-commit generated-clean check: clean
+- `python3 scripts/frontier_one_parameter_reduced_shell_law.py` -> `PASS=17 FAIL=0 TOTAL=17`
+- `python3 scripts/precompute_audit_runners.py --runners scripts/frontier_one_parameter_reduced_shell_law.py --check-only --push-mode none --allow-non-main` -> `fresh: 1`, `stale to refresh: 0`, `missing on disk: 0`
+- `python3 scripts/precompute_audit_runners.py --pr-diff origin/main --check-only --allow-non-main` -> `fresh: 1`, `stale to refresh: 0`, `missing on disk: 0`
+- `python3 -m py_compile scripts/frontier_one_parameter_reduced_shell_law.py scripts/precompute_audit_runners.py scripts/runner_cache.py` -> OK
+- `git diff --check` -> OK

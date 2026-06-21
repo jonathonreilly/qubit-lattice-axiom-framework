@@ -4,8 +4,8 @@ block: 130
 mode: physics-loop
 branch: physics-loop/audit-unblock-block130-20260620
 base: physics-loop/audit-unblock-block128-20260620
-base_commit: 060759dbc5cb77745c134facff181c97ba65b543
-rebuilt_at: "2026-06-21 00:49:09 EDT"
+base_commit: a432af2ee6fcdf615733aa6dd49db210f4dfff12
+rebuilt_at: "2026-06-21 00:55:40 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "runner-cache orphan cleanup safety"
@@ -22,7 +22,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "cleanup_orphans now preserves cache files whose header names an existing nested runner before falling back to legacy shallow stem probing; branch is restacked on refreshed PR #4498."
+current_result: "cleanup_orphans now preserves cache files whose header names an existing nested runner before falling back to legacy shallow stem probing; branch is restacked on refreshed PR #4498 at a432af2ee."
 observed_pre_fix_cleanup_risk:
   dry_run_candidates_before_fix: 11
   false_positive_nested_runner_caches:
@@ -39,5 +39,5 @@ review_disposition: pass
 verification_status: pass
 pr_status: open
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4500
-next_exact_action: "Force-push the restacked PR #4500 branch, update PR body, then monitor audit-lane check and continue to the next audit-unblock target."
+next_exact_action: "Run targeted verification on the a432af2ee stack, force-push the restacked PR #4500 branch, update PR body, then restack block131."
 stop_condition: "Block130 PR updated and verified; campaign continues to the next audit-unblock target while runtime remains."

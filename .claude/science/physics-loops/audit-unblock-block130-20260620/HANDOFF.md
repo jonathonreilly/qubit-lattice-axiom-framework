@@ -24,7 +24,7 @@ and the full-ledger runner cache check remains clean:
 - `stale to refresh: 0`
 - `missing on disk: 0`
 
-The branch is restacked on PR #4498 at `060759dbc`, which refreshes the
+The branch is restacked on PR #4498 at `a432af2ee`, which refreshes the
 full-ledger cache baseline.
 
 ## Boundary
@@ -42,8 +42,8 @@ verdict, delete cache files, or assert retained status.
 
 ## Next Exact Action
 
-Force-push the restacked branch, update PR #4500 body, monitor audit-lane
-check, then continue to the next audit-unblock target.
+Run targeted verification, force-push the restacked branch, update PR #4500
+body, then restack block131 on this branch.
 
 ## PR
 

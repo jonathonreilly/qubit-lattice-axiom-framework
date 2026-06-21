@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 1011 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1512 |
+| unaudited | 1511 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29` | 1 |
@@ -68,12 +68,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1461 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 64 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1838 |
+| `unaudited` | 1837 |
 
 | claim_type | count |
 |---|---:|
@@ -88,8 +88,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 937 |
-| `leaf` | 1462 |
+| `medium` | 938 |
+| `leaf` | 1461 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -108,7 +108,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
 | 3 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 63.35 | `unaudited` | unaudited |
 | 4 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
@@ -1634,6 +1634,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
+| `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_lh_content_proposal_note_2026-05-10_pplh` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `record_unbounded_finite_additivity_schema_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16723,6 +16724,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For a realized word and supplied finite candidate laws, the likelihood vector is only a score vector and does not contain a prior, loss/threshold, tie-breaker, admissibility rule, extension rule, or physical interpretation.  _(class `A`)_
 - **chain closes:** True — The finite probability examples independently show the required non-uniqueness: posterior winners can reverse under different priors, maximum likelihood can tie, candidate-family extension can change the winner, and likelihood-ratio decisions depend on thresholds. This closes only the scoped score-alone firewall, not any route that supplies an explicit decision interface.
 - **rationale:** The load-bearing step is an elementary finite-probability obstruction, not a definition, renaming, external comparator, or tuned numerical match. The runner source actually constructs normalized finite laws and exact rational counterexamples; independently checking the displayed arithmetic confirms the likelihoods 4/625 and 27/256, the posterior reversal, the 1/4 tie, the spike-family extension, and the ratio 16875/1024. The source-anchor checks against other notes are not needed for the audited mathematical scope. The no-go discipline gate is satisfied because the claim is explicitly scoped to scores alone and preserves the conditional route with supplied priors, thresholds, tie-breakers, admissibility rules, and physical interpretation.
+- **auditor confidence:** high
+
+### `post_record_persistent_record_production_bridge_prototype_2026-06-06`
+
+- **Note:** [`POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md`](../../docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite supplied pre-record/post-record bridge prototype for the three persistent_record_production_overlap rows, including exact pushforward and overlap arithmetic, not a derivation of the production law or kernel.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-post_record_persistent_record_production_bridge_prototype_2026-06-06-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** supplied pre-record word law + supplied record-writing update + supplied persistence rule + supplied overlap kernel on post-record states + exact pushforward/enumeration => law-scoped post-record distribution and overlap certificate  _(class `A`)_
+- **chain closes:** False — The runner's finite arithmetic closes: the supplied law is normalized, the monotone update yields post-record tuples without internal probabilities, and the supplied kernel gives expected overlap 169/320. The chain does not close as a derived production bridge because the word law, record-writing update/persistence rule, and overlap kernel are supplied rather than derived from any cited retained authority or registered primitive.
+- **rationale:** Issue: the finite pushforward and overlap arithmetic are valid for the runner's supplied word law, update, persistence rule, and kernel, but those bridge inputs are assumed rather than derived from the axiom packet. Why this blocks: with no cited retained authority or primitive supplying those inputs, the claim cannot close as a production-record bridge beyond the supplied finite witness. Repair target: a retained theorem deriving or explicitly admitting the record-writing law, persistence/readout rule, and overlap-kernel/production-time bridge. Claim boundary until fixed: the safe result is an exact finite supplied-bridge prototype with law-scoped expected overlap 169/320 and no internal probability field in realized post-record tuples.
 - **auditor confidence:** high
 
 ### `post_record_production_dynamics_needed_row_map_2026-06-06`

@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1634 |
+| Applied audit verdicts | 1635 |
 | Retained-grade rows, including boxed decorations | 1506 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
 | Retained bounded rows | 1011 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 39 |
-| Unaudited rows | 1512 |
+| Unaudited rows | 1511 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 47 |
+| Audited conditional rows | 48 |
 | Audited renaming rows | 29 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1514 |
-| Ready rows | 22 |
+| Total pending rows | 1513 |
+| Ready rows | 21 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 498 |
+| Leaf pending | 497 |
 
 Next ready rows by queue order:
 
-- [`post_record_persistent_record_production_bridge_prototype_2026-06-06`](../../docs/POST_RECORD_PERSISTENT_RECORD_PRODUCTION_BRIDGE_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`post_record_source_measure_trace_normalization_prototype_2026-06-06`](../../docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md) - medium; unaudited
 - [`post_record_supplied_concentration_certificate_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_CONCENTRATION_CERTIFICATE_INTERFACE_2026-06-06.md) - medium; unaudited
 - [`post_record_supplied_orientation_bridge_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md) - medium; unaudited
 - [`pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`quark_cp_small_correction_boundary_note_2026-06-17`](../../docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md) - medium; unaudited
 - [`quark_route2_e_center_blindness_no_go_note_2026-06-17`](../../docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md) - medium; unaudited
-- [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - leaf; unaudited
+- [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - medium; unaudited
+- [`regge_ok4_frame_section_narrow_theorem_note_2026-06-17`](../../docs/REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,13 +83,13 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 980 |
-| Leaf nodes | 1554 |
+| Medium nodes | 981 |
+| Leaf nodes | 1553 |
 
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
-- `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
+- `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 63.347
 - `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008

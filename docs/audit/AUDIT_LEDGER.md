@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 218 |
+| **retained_no_go** | 219 |
 | **retained_bounded** | 1002 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1532 |
+| unaudited | 1531 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1450 |
+| `audited_clean` | 1451 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1858 |
+| `unaudited` | 1857 |
 
 | claim_type | count |
 |---|---:|
@@ -87,8 +87,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 568 |
 | `high` | 507 |
-| `medium` | 941 |
-| `leaf` | 1458 |
+| `medium` | 940 |
+| `leaf` | 1459 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -780,6 +780,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `irregular_directional_observable_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `irregular_sign_core_packet_gate_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `k_dependence_review_safe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -11159,6 +11160,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Kernel-generic absorption occurs under any nonzero field for gamma > 0, while only the localized 1/r gravity field produces the TOWARD -> AWAY deflection crossover.  _(class `C`)_
 - **chain closes:** False — The live runner supports the gravity-specific crossover and gamma=0.5 escape suppression, but it contradicts the source's stronger detector-escape claim for any gamma > 0: several nonzero-field rows at gamma=0.1 or 0.2 still have escape ratios above 1.
 - **rationale:** Issue: the source conflates link-level imaginary-action damping with the detector escape observable. The factor exp(-k gamma L f) is below 1 for f > 0 and gamma > 0, but the runner's detector escape ratios are still above 1 for UNIFORM f=0.005 at gamma=0.1 and 0.2, UNIFORM f=0.01 at gamma=0.1 and 0.2, and GRAVITY at gamma=0.1 and 0.2. Why this blocks: the retained separation claim says kernel-generic absorption occurs under any nonzero field at gamma > 0, but the measured observable used by the note only shows suppression at sufficiently large gamma in this setup. Repair target: distinguish local per-link attenuation from total detector escape, or add a theorem/runner proving a thresholded escape-suppression criterion across gamma and field families. Claim boundary until fixed: safely claim only that gamma=0.5 suppresses detector escape for the tested nonzero fields, and that the 1/r gravity field uniquely shows the tested TOWARD -> AWAY centroid crossover by gamma=0.2.
+- **auditor confidence:** high
+
+### `kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20`
+
+- **Note:** [`KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md`](../../docs/KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the narrow route no-go that B4/S4 axis-transitivity cannot derive OS0 kinetic isotropy because the missing time-space metric swap is equivalent to c_t = c_s, with a finite positive-transfer/RP anisotropic witness against square-geometry-plus-positivity selection.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The time-space swap extending spatial O_h to B4 satisfies W^T G W - G = diag(c_s-c_t, c_t-c_s, 0, 0), so treating that swap as a metric symmetry already assumes c_t = c_s.  _(class `A`)_
+- **chain closes:** True — The exact O_h/B4 invariant-space ranks and the swap-defect identity establish the circularity of the B4/S4 transitivity route. The anisotropic finite-mode positive-transfer witness supports the separately scoped claim that square geometry plus the tested RP route does not select c_t = c_s.
+- **rationale:** The load-bearing C1/C2 results are exact finite-dimensional group and matrix algebra, and the runner computes the Reynolds ranks and swap defect rather than merely printing constants. C3 supplies a finite positive-transfer anisotropic witness, so the scoped RP-plus-square route is not selective. The kinetic-isotropy primitive is a registered accepted premise and the note preserves it rather than using it to prove the no-go; no cited dependency is non-retained. The packet's N1-N8 no-go gate is narrow enough because it closes only the B4/S4 transitivity route and tested positivity route while leaving future metric-layer derivations open.
 - **auditor confidence:** high
 
 ### `klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26`

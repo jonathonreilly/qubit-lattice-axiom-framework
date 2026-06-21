@@ -26,7 +26,13 @@ theorem.
 
 ## PR
 
-Pending.
+PR #4547: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4547
+
+Identity-only check:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block18-20260621","number":4547,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block18 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4547"}
+```
 
 ## Verification
 
@@ -57,5 +63,4 @@ useful campaign move is endpoint-independent consumer inventory.
 
 ## Next Exact Action
 
-Run focused verification, open block18 PR, then pivot to endpoint-independent
-consumer inventory unless a stronger selector route appears.
+Create block19 for endpoint-independent consumer inventory.

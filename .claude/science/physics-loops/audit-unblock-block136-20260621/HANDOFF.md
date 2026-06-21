@@ -28,15 +28,17 @@ Combined apply result:
 After `run_pipeline.sh`:
 
 - ledger rows: 3474
-- pending audits: 1694
-- ready entries: 117
+- pending audits: 1695
+- ready entries: 118
 - cycles: 0
 - first pipeline pass hard resets: 72 stale audit invalidations from current-main
   hash drift
 - second pipeline pass hard resets: 0
+- post-rebase pipeline hard resets: 0
 - strict lint: OK, 138 notices
 - PR-diff runner cache check: 0 changed ledger runners, 0 stale, 0 missing
-- full-ledger runner cache baseline still has 11 unrelated stale/corrupt caches
+- full-ledger runner cache baseline considers 3123 runners and still has 11
+  unrelated stale/corrupt caches
 
 ## Boundary
 
@@ -47,5 +49,5 @@ new clean/retained verdict was authored.
 
 ## Next Exact Action
 
-Update PR #4506 stacked on the current block135 branch, then continue to the
+Update PR #4506 stacked on the refreshed block135 branch, then continue to the
 next audit-unblock target.

@@ -17,8 +17,8 @@ repo_authority_edits: false
 audit_or_verdicts_run: false
 mergeability_or_conflict_checks_run: false
 remote_pr:
-  number: null
-  url: null
+  number: 4572
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4572
 created_files:
   - docs/QUARK_ROUTE2_ONE_POLE_CHANNEL_VOLUME_NO_GO_NOTE_2026-06-21.md
   - scripts/frontier_quark_route2_one_pole_channel_volume_no_go_2026_06_21.py
@@ -43,4 +43,4 @@ verification:
   diff_check: pass
   overclaim_scan: pass
 lock_status: "repo automation lock not acquired in this branch; branch-local lock discipline used"
-next_exact_action: "Run staged diff/firewall checks, commit, publish branch, open PR, then pivot to the two-pole inverse-square origin target."
+next_exact_action: "Pivot to the two-pole inverse-square origin target or expand the nonlinear no-go class."

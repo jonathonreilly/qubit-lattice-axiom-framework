@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 934 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 34 |
-| Unaudited rows | 1674 |
+| Unaudited rows | 1673 |
 | Retained-pending-chain rows | 3 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 22 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18`](../../docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - critical; unaudited
+- [`hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18`](../../docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md) - critical; audit_in_progress
 - [`quark_route2_exact_readout_map_note_2026-04-19`](../../docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - critical; unaudited
 - [`koide_mru_demotion_note_2026-04-20`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md) - high; unaudited
 - [`koide_q_readout_factorization_theorem_2026-04-22`](../../docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md) - high; unaudited

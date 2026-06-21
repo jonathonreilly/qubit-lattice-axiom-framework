@@ -4,8 +4,8 @@ block: 134
 mode: physics-loop
 branch: physics-loop/audit-unblock-block134-20260620
 base: physics-loop/audit-unblock-block133-20260620
-base_commit: 45dfcfb441bd93f0f6ed60d364f1e38cad9a3b1c
-rebuilt_at: "2026-06-21 00:41:53 EDT"
+base_commit: e9bac7310ced0251b04798c1b367023db3aeffa4
+rebuilt_at: "2026-06-21 01:02:30 EDT"
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "audit packet dependency map refresh and null-runner canonicalization"
@@ -22,7 +22,7 @@ bare_retained_allowed: false
 audit_required_before_effective_retained: true
 lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
-current_result: "Refreshed audit_packet_script_deps.json/cache after the refreshed stack and canonicalization fixes; null runner paths now remain no-runner rows instead of becoming missing file 'None'."
+current_result: "Refreshed audit_packet_script_deps.json/cache after the refreshed stack and canonicalization fixes; null runner paths now remain no-runner rows instead of becoming missing file 'None', and tied helper-frequency report rows now sort deterministically by helper name."
 packet_deps_summary:
   total_claims_in_ledger: 3445
   pending_audits_in_queue: 1535
@@ -45,5 +45,5 @@ review_disposition: pass
 verification_status: pass
 pr_status: open
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4504
-next_exact_action: "Commit refreshed packet-deps output, force-push PR #4504, update PR body, then continue to the next audit-unblock target."
+next_exact_action: "Run final verification on the e9bac7310 stack, commit refreshed packet-deps output, force-push PR #4504, update PR body, then continue to the next audit-unblock target."
 stop_condition: "Block134 PR opened and verified; campaign continues to the next audit-unblock target while runtime remains."

@@ -16,7 +16,9 @@ The refreshed packet-deps cache reports:
 
 The first attempted refresh exposed a bug where null runner paths became the
 literal string `"None"`. This PR fixes that before committing the generated
-packet-deps output.
+packet-deps output. The refresh also exposed equal-count helper rows swapping
+order between runs, so the helper-frequency report now breaks ties by helper
+name.
 
 ## Boundary
 
@@ -35,8 +37,8 @@ edit ledger rows by hand, or assert retained status.
 
 ## Next Exact Action
 
-Commit refreshed packet-deps output, force-push PR #4504, update PR body, then
-continue to the next audit-unblock target.
+Run final verification, commit refreshed packet-deps output, force-push PR
+#4504, update PR body, then continue to the next audit-unblock target.
 
 ## PR
 

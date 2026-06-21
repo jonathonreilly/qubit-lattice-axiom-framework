@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_packet_script_deps.py
-runner_sha256: 9c390e5e82682caf14aa645551f99d26cf39a14995c016f581568a7c7bcd2aa3
+runner_sha256: 1836b771170ac220f46be8072e0a8a98fc2eeecd12709a0706ea052332e59437
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.97
+elapsed_sec: 12.63
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -37,8 +37,8 @@ Top 20 most-imported helper scripts:
     59x  scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py
     48x  scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py
     46x  scripts/minimal_source_driven_field_probe.py
-    45x  scripts/frontier_finite_rank_gravity_residual.py
     45x  scripts/_frontier_loader.py
+    45x  scripts/frontier_finite_rank_gravity_residual.py
     45x  scripts/frontier_same_source_metric_ansatz_scan.py
 
 Sample claims that would trigger class-C from missing helpers:

@@ -209,7 +209,7 @@ any retained-grade claim.
 
 ## Cross-references
 
-- Predecessor (this loop): [`BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md) (Block 03 — Path A target)
+- Predecessor (this loop): `BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md` (Block 03 — Path A target)
 - Wilson cube reference: [`SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md`](SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md) (Wilson cube L_s=2 = 0.4291)
 - Adapted runner base: [`scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py`](../scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py)
 - Block 02 1-plaq: [`BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md)
@@ -224,3 +224,9 @@ python3 scripts/probe_hk_cube_perron_l2_2026_05_06.py
 
 Expected output: convergent stable value 0.5223243151 at NMAX ≥ 7,
 plus comparators against Wilson cube, HK 1-plaq, and MC thermo.
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
+- [`BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md`](BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md)

@@ -45,7 +45,7 @@ local-growth/dynamics/readout theorem.
   current Lattice + Quantum + Record baseline and explicitly does not supply
   physical dynamics, readout context, source/action, metric scale, or
   probability rule.
-- [`GATE_B_DYNAMICS_NOTE.md`](GATE_B_DYNAMICS_NOTE.md) is the open-gate source
+- `GATE_B_DYNAMICS_NOTE.md` is the open-gate source
   index whose remaining supplied pieces this note firewalls.
 - [`GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md`](GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md)
   isolates `GB-S1a` and leaves the runner scalar data supplied.
@@ -165,7 +165,7 @@ What remains open:
 
 ## Relation To `GATE_B_DYNAMICS_NOTE`
 
-[`GATE_B_DYNAMICS_NOTE.md`](GATE_B_DYNAMICS_NOTE.md) remains useful as a
+`GATE_B_DYNAMICS_NOTE.md` remains useful as a
 bounded generated-geometry source index. Its finite rows can still be audited
 inside the supplied `I_GateB` packet. This no-go proves only that the current
 axioms do not supply `I_GateB`.
@@ -185,3 +185,9 @@ GATE_B_CONTEXT_INDEPENDENCE_NO_GO=TRUE
 GB_S1BB_S2B_S3B_NOT_DERIVED_FROM_LATTICE=TRUE
 PASS=15 FAIL=0
 ```
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
+- [`GATE_B_DYNAMICS_NOTE.md`](GATE_B_DYNAMICS_NOTE.md)

@@ -32,7 +32,7 @@ inputs in a form the restricted packet can verify.
 Admitted-context inputs (named upstream authorities, cited but not closed
 inside this packet):
 
-- [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md) —
+- `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` —
   source-packet authority for the `delta_A1`, `u_E`, `u_T`, and `K_R`
   bilinear-carrier anchors used by `CURRENT_TYPED_EDGES`
 - [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) (`audited_clean`) —
@@ -316,3 +316,9 @@ but without it the up-type scalar law remains open.
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
+- [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)

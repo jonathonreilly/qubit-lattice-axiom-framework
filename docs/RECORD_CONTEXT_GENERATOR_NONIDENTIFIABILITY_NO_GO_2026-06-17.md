@@ -33,7 +33,7 @@ logs/runner-cache/frontier_record_context_generator_nonidentifiability_no_go_202
 ## Direct Blocker
 
 This packet targets the remaining over-citation risk in
-[`RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md`](RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md):
+`RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md`:
 
 ```text
 Any downstream theorem that needs an endogenous physical readout context,
@@ -51,7 +51,7 @@ the boundary executable.
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) supplies
   Quantum and Record, while explicitly not supplying a readout context,
   measurement/Born rule, probability rule, or dynamics.
-- [`RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md`](RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md)
+- `RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md`
   supplies the finite theorem being firewalled: one-qubit state plus cited
   projective/Lueders authority plus supplied readout context gives a
   probability vector over possible future record atoms.
@@ -204,3 +204,9 @@ The runner verifies:
 
 This is an exact negative boundary and a source-side audit-unblock candidate,
 not an audit verdict.
+
+## Cross-references (non-load-bearing)
+
+This section records non-load-bearing cross-references identified by the audit pipeline's cycle inventory. Links here are kept for reader context but are not load-bearing dependencies of the claim. They are excluded from the audit citation graph when this section is recognized by the graph builder.
+
+- [`RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md`](RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md)

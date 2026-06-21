@@ -40,6 +40,13 @@ verification_results:
     - "frontier_tensor_support_center_excess_law.py: PASS=5 FAIL=0 TOTAL=5"
 review_disposition: pass
 review_notes: "Local branch self-review only; no audit verdicts applied and no repo-wide authority surfaces edited."
-pr_status: pending
-next_exact_action: "Commit, push, open the block75 PR, record PR identity only, then pivot to the next queued Route-2 target."
+pr_status: open
+pr:
+  number: 4606
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4606"
+  title: "[physics-loop] s3-route2-nonlinear-e-center-tensor block75 no-go"
+  base: main
+  head: physics-loop/s3-route2-nonlinear-e-center-tensor-observable-block75-20260621
+  state: OPEN
+next_exact_action: "Pivot to the next queued Route-2 target from a fresh worktree on current origin/main."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable targets are globally blocked."

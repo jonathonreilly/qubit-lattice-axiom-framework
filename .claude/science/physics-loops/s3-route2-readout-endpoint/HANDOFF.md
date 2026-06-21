@@ -8,6 +8,12 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block12-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4541
+```
+
 Block12 proves the exact current-carrier leg factorization:
 
 ```text
@@ -52,7 +58,11 @@ branch-local status/overclaim rg scan
 no matches
 ```
 
-Pending before PR: commit, push, PR creation.
+PR identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block12-20260621","number":4541,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block12 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4541"}
+```
 
 ## Remaining Nature-Grade Blocker
 
@@ -62,4 +72,6 @@ reducible to the current rank-one carrier factorization.
 
 ## Exact Next Action
 
-Commit, push, and open the block12 review PR.
+Continue the campaign with the additional leg-level normalization primitive
+target, or the nonseparable total-degree-2 primitive if the separable route
+remains blocked.

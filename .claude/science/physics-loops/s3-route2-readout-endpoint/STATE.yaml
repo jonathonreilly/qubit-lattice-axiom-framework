@@ -1,0 +1,41 @@
+loop_slug: s3-route2-readout-endpoint
+block: 33
+date: 2026-06-21
+branch: physics-loop/s3-route2-readout-endpoint-block33-20260621
+base: main
+base_commit: 587d1c04b
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block33-20260621
+mode: campaign
+user_constraints:
+  - do_not_run_audit_or_apply_verdicts
+  - make_prs_only
+  - do_not_push_to_main
+  - do_not_refresh_existing_prs_to_main
+  - do_not_check_pr_conflicts_or_mergeability
+active_route: magnitude_source_e_center_shear_no_go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+artifact_role: no_go
+target_blocker: "can shear-invariant shell/T-side/color data select |c_TE|=F_adj?"
+claim_movement: "prunes shear-invariant magnitude sources and localizes the next target to an E-center shear-breaking primitive"
+files_touched:
+  - docs/QUARK_ROUTE2_MAGNITUDE_SOURCE_E_CENTER_SHEAR_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_magnitude_source_e_center_shear_no_go_2026_06_21.py
+  - outputs/frontier_quark_route2_magnitude_source_e_center_shear_no_go_2026_06_21.txt
+  - outputs/frontier_quark_route2_exact_readout_map_block33.txt
+  - .claude/science/physics-loops/s3-route2-readout-endpoint/
+open_imports:
+  - E-center shear-breaking primitive
+  - non-shear-invariant magnitude theorem
+verification:
+  block_runner: "PASS=51 FAIL=0"
+  exact_readout_parent: "PASS=11 FAIL=0"
+  e_channel_naturality_parent: "PASS=28 FAIL=0 (output not carried; historical generated text trips broad wording scans)"
+  source_domain_bridge_parent: "PASS=103 FAIL=0 (output not carried; historical generated text trips broad wording scans)"
+  py_compile: pass
+review_verdict: branch_local_pass_no_audit
+pr_status: pending
+pr_identity: null
+next_exact_action: "publish block33 PR and record identity"
+stop_condition: null

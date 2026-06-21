@@ -14,9 +14,11 @@ This PR makes cleanup scan repository text references outside
 `logs/runner-cache/` and preserve matching cache files. After the fix, the
 full-ledger cleanup dry run reports 8 candidates instead of 9:
 
-- `fresh: 3123`
+- `fresh: 3050`
 - `stale to refresh: 0`
 - `missing on disk: 0`
+
+The branch is restacked on PR #4500 at `b0e53d573`.
 
 ## Boundary
 
@@ -27,15 +29,14 @@ verdict, delete cache files, or assert retained status.
 
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.PrecomputeAuditRunnersTest` -> OK, 2 tests.
 - `python3 scripts/precompute_audit_runners.py --cleanup-orphans-dry-run --all --check-only --allow-non-main` -> OK, 8 candidates.
-- `python3 -m py_compile scripts/precompute_audit_runners.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK.
+- `python3 -m py_compile scripts/precompute_audit_runners.py scripts/runner_cache.py docs/audit/scripts/tests/test_audit_pipeline.py` -> OK.
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline` -> 79 tests passed.
-- `python3 docs/audit/scripts/audit_lint.py --strict` -> OK, notices only.
 - `git diff --check` -> OK.
 
 ## Next Exact Action
 
-Monitor PR #4501 audit-lane check, then continue to the next audit-unblock
-target.
+Force-push the restacked branch, update PR #4501 body, then continue to the
+next stacked cleanup PR.
 
 ## PR
 

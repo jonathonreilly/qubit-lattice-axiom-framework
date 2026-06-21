@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/diamond_sensor_protocol_probe.py
-runner_sha256: 1053ce4f610f0dc883dc5277a8843b9bd87e52152b6f41cc64797bddc02427dd
+runner_sha256: bd96716107f62b8c3feaf8cef1426e12b28bdaef5666db28c58f407167bf492b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Diamond/NV phase-sensitive protocol card
@@ -16,6 +16,9 @@ Standard null:
 
 Cited proxy expectation:
   a retarded / wave-like lane should produce nonzero Y, nonzero phi, and a spatial phase ramp
+
+Ideal detector bridge:
+  scripts/diamond_ideal_lockin_detector_theorem.py verifies the X/Y/phi map, controls, and widefield slope
 
 Minimal controls:
   drive off; source retracted or dummy load; pi reference flip; static-source baseline

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/diamond_signal_budget_hardening.py
-runner_sha256: 593a2e13976ac6928fe4dcbd67350d24e927e846b1c9133a8b171fa0fca600f2
+runner_sha256: 2c80463e777d5e4fcfa4f516f99088301769a259a230294356a78ef4933a6c92
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -37,12 +37,12 @@ PROXY BUDGET
   conservative 3-sigma phase-noise target = 4.363583e-06 rad
 
 DIAGNOSIS
-  the centroid sign flip is the sharper retained observable; the phase lag is a weaker secondary residue
+  the centroid sign flip is the sharper proxy observable; the phase lag is a weaker secondary residue
   a real absolute lab budget is still blocked by the missing transfer coefficient from proxy units to NV readout units
   until that calibration exists, this remains a proxy-budget card rather than a lab-ready amplitude claim
 
 FINAL VERDICT
-  retained narrow hardening: one explicit source geometry, one signed scaling map, and one proxy budget
+  bounded proxy hardening: one explicit source geometry, one signed scaling map, and one proxy budget
 
 ----- stderr -----
 

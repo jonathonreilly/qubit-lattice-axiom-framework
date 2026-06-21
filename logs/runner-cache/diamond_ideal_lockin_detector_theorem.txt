@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/diamond_ideal_lockin_detector_theorem.py
+runner_sha256: 3615fedb25de4c93fe2ae49237c7712da11823de126d60a96cf15ce437715bcc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+DIAMOND IDEAL LOCK-IN DETECTOR THEOREM
+ASSERTIONS: PASS
+
+Scope:
+  ideal lock-in detector map only; no NV transfer coefficient or lab noise model
+  no claim that repo source dynamics already produce the delayed field
+
+Definitions:
+  signal_z(t) = A_z cos(omega * (t - tau_z))
+  X_z = 2 <signal_z(t) cos(omega t)> over integer drive cycles
+  Y_z = 2 <signal_z(t) sin(omega t)> over integer drive cycles
+
+Theorem:
+  X_z = A_z cos(omega tau_z)
+  Y_z = A_z sin(omega tau_z)
+  phi_z = atan2(Y_z, X_z) = omega tau_z mod 2*pi
+  if tau_z = tau_0 + kappa z and phases are unwrapped, dphi/dz = omega kappa
+
+Numerical cycle-average checks:
+  analytic lock-in formula max_abs_error=5.995e-15 tol=1.0e-10
+  small-delay law Y/X=6.283186134022e-04 tan(omega*tau)=6.283186134014e-04 omega*tau=6.283185307180e-04
+  drive-off/static-source controls max_abs_channel=2.029e-16
+  pi-reference flip sign_error=1.141e-16
+  widefield phase slope fit=1.256637061436e-03 expected=1.256637061436e-03 error=0.000e+00
+  widefield phases z=-2:+0.000000e+00, z=-1:+1.256637e-03, z=+0:+2.513274e-03, z=+1:+3.769911e-03, z=+2:+5.026548e-03
+
+| f (Hz) | tau (us) | omega*tau | X | Y | phi (rad) |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 100 | 0.100 | 6.283185e-05 | +1.000000e+00 | +6.283185e-05 | +6.283185e-05 |
+| 1000 | 0.100 | 6.283185e-04 | +9.999998e-01 | +6.283185e-04 | +6.283185e-04 |
+| 10000 | 1.000 | 6.283185e-02 | +9.980267e-01 | +6.279052e-02 | +6.283185e-02 |
+
+Conclusion:
+  the ideal detector bridge from a delayed driven source to X, Y, phi, and a widefield phase slope is closed at this bounded mathematical scope
+
+----- stderr -----
+

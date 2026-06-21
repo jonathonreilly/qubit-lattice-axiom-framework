@@ -3,11 +3,11 @@
 
 This is a small theory harness, not an experimental simulator.
 
-It prints the narrowest lab-facing protocol we can defend from the cited
-retarded / wavefield proxy lanes:
+It prints the narrowest lab-facing protocol we can defend from the ideal
+lock-in detector theorem and the cited retarded / wavefield proxy lanes:
 
 - standard null: calibrated quasi-static coupling gives Y ~ 0 and flat phase
-- cited proxy expectation: a phase-sensitive / lock-in readout should show a
+- ideal detector map: a phase-sensitive / lock-in readout should show a
   nonzero quadrature channel, a nonzero phase lag, and ideally a spatial phase
   ramp in widefield mode
 
@@ -95,6 +95,9 @@ def format_card() -> str:
     lines.append("")
     lines.append("Cited proxy expectation:")
     lines.append("  a retarded / wave-like lane should produce nonzero Y, nonzero phi, and a spatial phase ramp")
+    lines.append("")
+    lines.append("Ideal detector bridge:")
+    lines.append("  scripts/diamond_ideal_lockin_detector_theorem.py verifies the X/Y/phi map, controls, and widefield slope")
     lines.append("")
     lines.append("Minimal controls:")
     lines.append("  drive off; source retracted or dummy load; pi reference flip; static-source baseline")

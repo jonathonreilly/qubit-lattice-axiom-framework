@@ -19,3 +19,13 @@ Checks:
 - ASCII scan on new files: clean
 
 Independent review and later audit remain outside this branch.
+
+## 2026-06-21 PR Handoff
+
+Opened PR #4584:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4584
+```
+
+Identity-only check passed.  No mergeability or conflict fields were queried.

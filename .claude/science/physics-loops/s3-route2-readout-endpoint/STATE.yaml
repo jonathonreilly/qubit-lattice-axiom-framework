@@ -29,5 +29,12 @@ pr_policy:
     - headRefName
     - baseRefName
     - state
-next_exact_action: "Run checks, commit, push branch, open one review PR, verify identity fields only."
+pr:
+  number: 4534
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4534"
+  title: "[physics-loop] s3-route2-readout-endpoint block05 bounded-support"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block05-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "Continue campaign with the next ranked science target: size-stable E-center lift family, non-finite-box covariance bridge, or reduced-shell anchor transition theorem."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable science targets are blocked."

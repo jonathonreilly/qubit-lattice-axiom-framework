@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1564 |
-| Retained-grade rows, including boxed decorations | 1457 |
+| Applied audit verdicts | 1565 |
+| Retained-grade rows, including boxed decorations | 1458 |
 | Retained positive theorems | 212 |
-| Retained no-go rows | 213 |
+| Retained no-go rows | 214 |
 | Retained bounded rows | 975 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 38 |
-| Unaudited rows | 1582 |
+| Unaudited rows | 1581 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 29 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1584 |
+| Total pending rows | 1583 |
 | Ready rows | 82 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 568 |
+| Leaf pending | 567 |
 
 Next ready rows by queue order:
 
-- [`dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07`](../../docs/DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md) - medium; unaudited
 - [`ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08`](../../docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md) - medium; unaudited
 - [`flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18`](../../docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18`](../../docs/FLAVOR_GAUGE_REPRESENTATION_GENERATION_UNIFORM_CORE_NARROW_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04`](../../docs/FLAVOR_SUPPLIED_HEAT_KERNEL_ARROW_R_HALF_STABILITY_BOUNDED_NOTE_2026-06-04.md) - medium; unaudited
 - [`fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18`](../../docs/FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06`](../../docs/FS_FORCED_MODULO_EMERGENT_LORENTZ_STRESS_TEST_NOTE_2026-06-06.md) - medium; unaudited
-- [`g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06`](../../docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md) - leaf; unaudited
+- [`g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06`](../../docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
+- [`gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11`](../../docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 982 |
-| Leaf nodes | 1552 |
+| Medium nodes | 983 |
+| Leaf nodes | 1551 |
 
 Top load-bearing rows by graph score:
 

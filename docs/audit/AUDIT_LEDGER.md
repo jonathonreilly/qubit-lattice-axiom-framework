@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 212 |
-| **retained_no_go** | 213 |
+| **retained_no_go** | 214 |
 | **retained_bounded** | 975 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1582 |
+| unaudited | 1581 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1416 |
+| `audited_clean` | 1417 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1908 |
+| `unaudited` | 1907 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 939 |
-| `leaf` | 1460 |
+| `medium` | 940 |
+| `leaf` | 1459 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -421,6 +421,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_readout_det_uniqueness_inapplicable_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_neutrino_z3_circulant_mass_basis_no_go_note_2026-04-15` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5820,6 +5821,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The normalized determinants of the explicit matrices satisfy det(m I_3 + j F1)/m^3 = det(m I_2 + j sqrt(3/8) Z_row)/m^2 = 1 - (3/8) j^2/m^2 and det(m I_3 + j F2)/m^3 = det(m I_2 + j (3/sqrt(8)) Z_row)/m^2 = 1 - (9/8) j^2/m^2.  _(class `A`)_
 - **chain closes:** True — The proof and runner operate only on the explicit finite matrices and reduce the spectra, trace pairings, and response identities to exact characteristic-polynomial and determinant identities. No upstream note, physical bridge, external comparator, or selection-rule premise is needed for this narrowed algebraic claim.
 - **rationale:** The runner source is not a print-only certificate: it constructs the six 3 x 3 matrices, F1/F2, and Z_row, then computes the Gram matrix, pairings, characteristic polynomials, determinant polynomials, and normalized determinant ratios exactly in SymPy. The contested downstream v_even coefficient selection is explicitly outside scope and is not imported into the algebraic proof. Since there are no cited dependencies and no external numerical or physical comparator, the bounded finite-dimensional identities close on their own terms.
+- **auditor confidence:** high
+
+### `dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07`
+
+- **Note:** [`DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md`](../../docs/DM_NEUTRINO_VSEL_CURVATURE_TASTE_TO_DIRAC_TRANSPORT_OBSTRUCTION_NO_GO_NOTE_2026-06-07.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the scoped no-go that the taste-cube selector curvature m_perp=32 does not arise as a native even trace invariant of the Cl(3) Dirac Higgs family M(phi)=sum_i phi_i Gamma_i satisfying M^2=|phi|^2 I.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given M^2=|phi|^2 I and d=Tr(I), Tr M^(2n)=d|phi|^(2n), so Tr M^4-(1/8)(Tr M^2)^2=d(1-d/8)|phi|^4 is rotationally invariant and contains no phi_i^2 phi_j^2 axis-selector.  _(class `A`)_
+- **chain closes:** True — The retained taste-cube authority supplies the anisotropic selector 32 sum_{i<j} phi_i^2 phi_j^2, while the retained Dirac authority supplies M^2=|phi|^2 I. Exact trace algebra then forces Dirac even trace invariants to be radial, so the anisotropic taste-cube Hessian cannot be transported without importing an extra axis-distinguishing structure.
+- **rationale:** The load-bearing step is exact algebra over retained inputs, not a definition, tuned numerical match, or external comparator. The runner source actually constructs the taste-cube shifts and a concrete Clifford/Pauli instance, checks the symbolic d formula, and verifies the equal-transverse-curvature diagnostic. The no-go is scoped to native even trace invariants of the stated Dirac Higgs family and explicitly leaves externally supplied axis-distinguishing structures outside the conclusion, so the N1-N8 gate does not expose a blocking overclaim.
 - **auditor confidence:** high
 
 ### `dm_neutrino_weak_matching_obstruction_note_2026-04-15`

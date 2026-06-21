@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "causal_distance_tail_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "causal_distance_tail_note",
         "dm_neutrino_vsel_curvature_taste_to_dirac_transport_obstruction_no_go_note_2026-06-07",
         "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
         "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
         "flavor_gauge_representation_generation_uniform_core_narrow_theorem_note_2026-06-18",
         "flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04",
         "fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
-        "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06"
+        "fs_forced_modulo_emergent_lorentz_stress_test_note_2026-06-06",
+        "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3e593c6397aef2fce0837d95ab52c56860c8586215cb36f2998410e10f76b38d",
+      "note_hash": "84b15ee64ad3b02eb8769e33448e44bb6fee82eb754b807479d55af1a2798838",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

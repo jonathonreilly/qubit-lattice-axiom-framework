@@ -1,19 +1,29 @@
 # Shapiro Family Portability Note
 
-**Date:** 2026-04-06  
-**Status:** proposed_retained positive - the c-dependent phase lag reproduces cleanly across the three portable grown families
+**Date:** 2026-04-06; bounded-source repair 2026-06-17
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status:** bounded finite cross-family replay / source-support packet;
+independent audit required before any effective status change
+**Primary runner:** [`scripts/shapiro_family_portability.py`](../scripts/shapiro_family_portability.py)
+**Cached runner output:** [`logs/runner-cache/shapiro_family_portability.txt`](../logs/runner-cache/shapiro_family_portability.txt)
 
 ## Artifact Chain
 
-- [`scripts/shapiro_family_portability.py`](/Users/jonreilly/Projects/Physics/scripts/shapiro_family_portability.py)
-- [`logs/2026-04-06-shapiro-family-portability.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-shapiro-family-portability.txt)
-- [`docs/SHAPIRO_DELAY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/SHAPIRO_DELAY_NOTE.md)
-- [`archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_COMPLEX_INTERACTION_NOTE.md`](/Users/jonreilly/Projects/Physics/archive_unlanded/shapiro-static-renderers-and-failed-bridges-2026-04-30/SHAPIRO_COMPLEX_INTERACTION_NOTE.md)
-- [`docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/DIAMOND_PHASE_RAMP_BRIDGE_CARD_NOTE.md)
+- [`scripts/shapiro_family_portability.py`](../scripts/shapiro_family_portability.py)
+- [`logs/runner-cache/shapiro_family_portability.txt`](../logs/runner-cache/shapiro_family_portability.txt)
+- [`SHAPIRO_DELAY_NOTE.md`](SHAPIRO_DELAY_NOTE.md)
+- [`SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md`](SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md)
+
+The archived complex-interaction renderer and diamond bridge rows are not live
+dependencies for this bounded cross-family replay. The base Shapiro phase-lag
+row must itself be accepted only within its bounded proxy scope before this
+family-portability row can be used downstream.
 
 ## Question
 
-Does the retained c-dependent phase-lag observable reproduce cleanly across the three portable grown families with the same seed-stable values?
+Does the c-dependent proxy phase table reproduce across the three configured
+portable grown families with exact zero controls and small cross-family spread?
 
 ## Exact Controls
 
@@ -23,7 +33,7 @@ The zero-source control is exact on all three families:
 - Fam2: zero lag = `+0.000e+00`
 - Fam3: zero lag = `+0.000e+00`
 
-That is the first gate for the portability claim, and it passes cleanly.
+That is the first gate for the bounded portability replay, and it passes.
 
 ## Cross-Family Phase Table
 
@@ -36,18 +46,38 @@ That is the first gate for the portability claim, and it passes cleanly.
 | 0.25 | +0.0679 | +0.0679 | +0.0679 | 0.0001 |
 
 The seed rows remain stable within each family:
-- the two retained seeds differ only at the `1e-4` to `1e-3` rad level
-- the family means agree to within `0.0002 rad` at every `c`
-- the phase lag grows monotonically as `c` decreases
+
+- the two seeds differ only at the `1e-4` to `1e-3` rad level;
+- the family means agree below `2.5e-4 rad` at every finite `c`;
+- the proxy phase grows monotonically as `c` decreases.
+
+## Runner Checks
+
+The primary runner asserts:
+
+- exact zero-source control on all three configured families;
+- family spread below `2.5e-4 rad` at every finite `c`;
+- monotone phase increase as `c` decreases;
+- bounded source status and no retained/proposed-retained wording;
+- no failed archived bridge dependency in this live source note;
+- no absolute diamond/NV calibration, physical field-speed measurement, or
+  unique causal-discriminator claim.
 
 ## Safe Read
 
-- the Shapiro-style phase lag is reproducible across all three portable grown families
-- the zero-source control remains exact
-- the portability statement is about the phase observable, not an absolute NV calibration
-- the retained claim is proxy-level and family-portable, not a claim about a new value of `c`
+- the Shapiro-style proxy phase table is reproducible across the three
+  configured portable grown families;
+- the zero-source control remains exact;
+- this is a bounded portability replay for the proxy phase observable, not an
+  absolute NV calibration;
+- the static-cone no-go remains load-bearing: this row does not make the phase
+  lag a unique causal discriminator;
+- the claim is family-portable inside the configured proxy harness, not a
+  physical Shapiro law and not a new value of `c`.
 
-## Final Verdict
+## Claim Boundary
 
-**retained positive: the c-dependent phase lag reproduces cleanly across the three portable grown families with seed-stable values, and the exact zero control survives on all three**
-
+This row may support bounded source-side portability for the proxy phase table
+if audit accepts the computation and scope. It does not retain the physical
+Shapiro package, the failed diamond bridge rows, the complex-interaction
+renderer, or any unique-causality claim.

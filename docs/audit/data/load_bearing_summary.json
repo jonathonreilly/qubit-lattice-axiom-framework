@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 575,
     "high": 510,
-    "leaf": 1553,
-    "medium": 981
+    "leaf": 1552,
+    "medium": 982
   },
   "flagship_signal_used": false,
   "node_count": 3619,
@@ -157,8 +157,8 @@
     {
       "claim_id": "kinetic_isotropy_primitive",
       "criticality": "critical",
-      "load_bearing_score": 32.944,
-      "transitive_descendants": 984
+      "load_bearing_score": 32.945,
+      "transitive_descendants": 985
     },
     {
       "claim_id": "left_handed_charge_matching_note",

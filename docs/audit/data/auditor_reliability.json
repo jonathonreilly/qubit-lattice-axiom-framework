@@ -65,7 +65,7 @@
     },
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
-        "A": 853,
+        "A": 854,
         "B": 26,
         "C": 492,
         "D": 10,
@@ -82,7 +82,7 @@
         "critical": 248,
         "high": 183,
         "leaf": 567,
-        "medium": 423
+        "medium": 424
       },
       "cross_confirmation_agreement_rate": 0.817,
       "cross_confirmation_outcomes": {
@@ -100,11 +100,11 @@
       "third_pass_decisions_n": 122,
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 1421,
-      "verdict_changed_after_re_audit": 1257,
+      "total_audits": 1422,
+      "verdict_changed_after_re_audit": 1259,
       "verdict_counts": {
         "audited_clean": 1272,
-        "audited_conditional": 48,
+        "audited_conditional": 49,
         "audited_decoration": 61,
         "audited_failed": 1,
         "audited_numerical_match": 10,
@@ -134,7 +134,7 @@
   "totals": {
     "auditor_families_observed": 3,
     "overall_agreement_rate": 0.824,
-    "total_audits_recorded": 1635,
+    "total_audits_recorded": 1636,
     "total_cross_confirmation_family_participations": 441,
     "total_cross_confirmation_pairs": 398,
     "total_third_pass_decisions": 134

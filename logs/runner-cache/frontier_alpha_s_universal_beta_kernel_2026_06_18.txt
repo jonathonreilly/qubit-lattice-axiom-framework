@@ -1,4 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py
+runner_sha256: 05bc3a6a7f24745031c75154851c047d8172de0a79a173b3ee583ea0458f146a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 === Source-boundary checks ===
+[PASS] note declares boundary: **Claim type:** bounded_theorem
+[PASS] note declares boundary: **Type:** bounded_theorem
 [PASS] note declares boundary: universal two-loop beta-kernel
 [PASS] note declares boundary: This note does not derive beta_2, beta_3, MSbar counterterms, or four-loop running.
 [PASS] note declares boundary: This note does not derive physical threshold masses.
@@ -36,4 +46,7 @@
 [PASS] falsifier detects trace-normalization drift T_F=1 :: wrong=3, correct=7
 [PASS] falsifier detects using generation count as active quark flavor count :: wrong_nf=9
 
-SUMMARY: PASS=26 FAIL=0
+SUMMARY: PASS=28 FAIL=0
+
+----- stderr -----
+

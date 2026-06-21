@@ -1,8 +1,10 @@
 # Alpha_s Universal Two-Loop Beta-Kernel Theorem Note (2026-06-18)
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
 **Status:** exact support theorem / source-side audit unlock candidate
 **Primary runner:** `scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py`
-**Runner summary:** `SUMMARY: PASS=26 FAIL=0`
+**Runner summary:** `SUMMARY: PASS=28 FAIL=0`
 **Parent audit pressure:** `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02`
 
 ## 1. Purpose
@@ -143,7 +145,7 @@ python3 scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py
 Expected summary:
 
 ```text
-SUMMARY: PASS=26 FAIL=0
+SUMMARY: PASS=28 FAIL=0
 ```
 
 The cached output is recorded at

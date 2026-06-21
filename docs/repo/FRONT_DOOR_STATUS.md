@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1475 |
-| Retained-grade rows, including boxed decorations | 1408 |
+| Applied audit verdicts | 1470 |
+| Retained-grade rows, including boxed decorations | 1402 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 943 |
+| Retained bounded rows | 937 |
 | Boxed decorations under retained parents | 53 |
 | Open gates | 34 |
-| Unaudited rows | 1663 |
+| Unaudited rows | 1669 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 11 |
 | Audited renaming rows | 22 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1673 |
-| Ready rows | 119 |
+| Total pending rows | 1678 |
+| Ready rows | 121 |
 | Cycle-break targets | 9 |
-| Critical pending | 309 |
+| Critical pending | 308 |
 | High pending | 302 |
-| Medium pending | 486 |
-| Leaf pending | 576 |
+| Medium pending | 488 |
+| Leaf pending | 580 |
 
 Next ready rows by queue order:
 
-- [`staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23`](../../docs/STAGGERED_AXIS_SYMMETRY_IS_S3_NARROW_THEOREM_NOTE_2026-05-23.md) - critical; audit_in_progress
 - [`hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26`](../../docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md) - critical; audit_in_progress
 - [`flavor_operator_realization_local_density_2026-05-31`](../../docs/FLAVOR_OPERATOR_REALIZATION_LOCAL_DENSITY_2026-05-31.md) - critical; audit_in_progress
 - [`koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_KAPPA_ZD_ACTION_CIRCULANT_CHARACTER_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`koide_aps_block_by_block_forcing_note_2026-04-21`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md) - critical; audit_in_progress
+- [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -86,7 +86,7 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1700 descendants; score 159.732
 - `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
-- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
+- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014

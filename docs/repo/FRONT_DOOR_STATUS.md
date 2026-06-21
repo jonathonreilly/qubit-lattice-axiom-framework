@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1471 |
-| Retained-grade rows, including boxed decorations | 1408 |
+| Applied audit verdicts | 1472 |
+| Retained-grade rows, including boxed decorations | 1409 |
 | Retained positive theorems | 203 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 947 |
+| Retained bounded rows | 948 |
 | Boxed decorations under retained parents | 51 |
 | Open gates | 34 |
 | Unaudited rows | 1664 |
@@ -33,18 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1677 |
-| Ready rows | 120 |
+| Total pending rows | 1676 |
+| Ready rows | 121 |
 | Cycle-break targets | 9 |
-| Critical pending | 318 |
+| Critical pending | 317 |
 | High pending | 301 |
 | Medium pending | 485 |
 | Leaf pending | 573 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; audit_in_progress
 - [`wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`](../../docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md) - critical; audit_in_progress
+- [`axiom_first_kms_condition_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
 - [`gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07`](../../docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md) - critical; audit_in_progress
 - [`gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17`](../../docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; unaudited
 - [`hw1_second_order_return_shape_theorem_note`](../../docs/HW1_SECOND_ORDER_RETURN_SHAPE_THEOREM_NOTE.md) - critical; unaudited

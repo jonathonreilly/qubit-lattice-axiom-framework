@@ -1,0 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/causal_field_live_packet_reference_firewall_2026_06_16.py
+runner_sha256: 76bfa34c7fe6835a1d9d1c6f97446cc5d4ee981ceafbfcf60d4d1bd5cd242f88
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: causal-field live packet reference firewall holds
+
+----- stderr -----
+

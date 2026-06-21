@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py
-runner_sha256: 1498a9ef0a25e68998bac9365b879e66b4cad13536f3e3bac49b850553d31f43
+runner_sha256: 4bc13140fec7c2a48cf683a1792daf610a1c8c185d8fbd11a240aa95410e9932
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 Record unbounded finite-additivity schema
@@ -13,7 +13,7 @@ trace_class: upstream_support
 reachability_to_target: supports
 proposal_allowed: false
 audit_required_before_effective_retained: true
-dependency_repair: minimal_axioms + self-contained finite word/count/Z^3 proof
+dependency_repair: minimal_axioms + local_finite_readout_atom_availability_2026-06-17 + self-contained finite word/count/Z^3 proof
 record_history_monoid_parent_load_bearing: false
 
 A. finite Record additivity checks
@@ -61,7 +61,8 @@ D. post-record information is not a probability law
 
 E. audit-lane classifier consequences
 [PASS] fixed finite prefix additivity is exact
-[PASS] unbounded schema carries supplied-context boundary
+[PASS] unbounded schema carries local-availability and supplied-record boundary
+[PASS] local readout-atom availability remains a separate dependency
 [PASS] record-history monoid is parallel context only
 [PASS] unbounded schema is not a production claim
 [PASS] production kernel remains open
@@ -75,6 +76,7 @@ F. dependency-edge and supplied-context firewall
 [PASS] source note has post-audit claim-type repair
 [PASS] source note has dependency-edge firewall
 [PASS] source note cites current minimal axiom memo
+[PASS] source note cites local finite readout-atom availability theorem
 [PASS] record-history monoid parent is not a markdown/YAML dependency -- forbidden dependency markers absent
 [PASS] record-history monoid is named as parallel context only
 [PASS] downstream citation rule is explicit
@@ -82,13 +84,15 @@ F. dependency-edge and supplied-context firewall
 [PASS] minimal Record language withholds readout context and dynamics
 [PASS] source note locally proves finite word/count surface
 [PASS] source note locally proves arbitrary finite Z^3 slots
+[PASS] local availability theorem supplies nonzero readout atoms
+[PASS] local availability theorem does not claim production or physical selection
 [PASS] source note says Record does not supply producer/readout/probability
-[PASS] source note says Record does not supply normalization/lower-bound bridge
-[PASS] source note says production is not inferred from slots
+[PASS] source note says physical context selection remains open
+[PASS] source note says production is not inferred from slots/readout atoms
 [PASS] downstream retained-authority firewall is explicit
 
-SCORECARD: PASS=59 FAIL=0
-VERDICT: Record finite additivity gives exact finite-prefix readout. The finite word/count and Z^3 arbitrary finite-slot surface is proved locally here, so the record-history monoid parent is not load-bearing. The schema still requires a supplied readout context and supplied nonzero realized records; this runner does not derive production, probability, IID, rates, or a dial.
+SCORECARD: PASS=63 FAIL=0
+VERDICT: Record finite additivity gives exact finite-prefix readout. The finite word/count and Z^3 arbitrary finite-slot surface is proved locally here, so the record-history monoid parent is not load-bearing. The schema uses the local finite readout-atom availability theorem and still requires supplied realized records; this runner does not derive production, probability, IID, rates, or a dial.
 
 ----- stderr -----
 

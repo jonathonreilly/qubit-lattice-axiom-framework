@@ -24,7 +24,7 @@ and the full-ledger runner cache check remains clean:
 - `stale to refresh: 0`
 - `missing on disk: 0`
 
-The branch is restacked on PR #4498 at `aaf625532`, which refreshes the
+The branch is restacked on PR #4498 at `060759dbc`, which refreshes the
 full-ledger cache baseline.
 
 ## Boundary

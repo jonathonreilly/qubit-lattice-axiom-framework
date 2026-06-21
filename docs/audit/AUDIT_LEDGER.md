@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1647 |
+| unaudited | 1646 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 8 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 15 |
+| ~~audited_conditional~~ | 16 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_cl3_color_automorphism_theorem` | 7 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 6 |
@@ -63,21 +63,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1372 |
-| `audited_conditional` | 15 |
+| `audited_conditional` | 16 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 8 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1973 |
+| `unaudited` | 1972 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1807 |
+| `bounded_theorem` | 1808 |
 | `decoration` | 57 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 748 |
+| `positive_theorem` | 747 |
 
 | criticality | count |
 |---|---:|
@@ -1518,6 +1518,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_selector_tangent_readout_weight_prototype_2026-06-06` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -12521,6 +12522,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substituting the canonical dilation into the apparatus-basis Kraus formula gives K_r = sum_{r'} P_{r'} delta_{r,r'} = P_r.  _(class `A`)_
 - **chain closes:** True — The displayed construction defines an isometry from H_sys tensor |0> by orthogonal projectors, extends it to a finite-dimensional unitary, and the apparatus-basis contraction algebraically returns P_r. The twist discussion also correctly shows U P preserves the first POVM element while rotating later effects in sequential composition.
 - **rationale:** No runner was provided, so the audit is based on the note text. The load-bearing math is a direct finite-dimensional algebraic closure from the projective-measurement identities P_r P_{r'} = delta_{rr'} P_r, P_r^dagger = P_r, and sum_r P_r = I, plus the standard finite-dimensional isometry-extension fact. The cited minimal-axiom authority is flagged as an accepted axiom premise and does not create a retention downgrade; the theorem is explicitly scoped to the canonical frame and does not overclaim uniqueness of physical instruments.
+- **auditor confidence:** high
+
+### `luders_rule_from_composition_consistency_note_2026-05-20`
+
+- **Note:** [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-region projective Lueders update from supplied trace/effect probability semantics, supplied sequential joint effect M_{P,E}=PEP, and positive-probability conditioning; physical measurement semantics and the arbitrary-Kraus extension are not closed by this packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-luders_rule_from_composition_consistency_note_2026-05-20-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since Tr(sigma|_P E)=Tr(P sigma P E)/Tr(sigma P) for every effect E, equality of trace-dual functionals forces sigma|_P=(P sigma P)/Tr(P sigma P).  _(class `A`)_
+- **chain closes:** False — The finite algebraic step closes once the trace/effect probability law and PEP sequential-effect interpretation are granted. The packet does not derive those measurement-side semantics, the physical selection of M_{P,E}=PEP as the joint record effect, or the general Kraus-instrument update from the cited retained inputs.
+- **rationale:** Issue: Step 1 assumes the measurement-side trace/effect probability law, the physical sequential joint effect M_{P,E}=PEP, and the update-consistency semantics rather than deriving them from the cited inputs. Why this blocks: the PEP runner verifies finite compression positivity and trace identities only, not the physical probability interpretation, instrument selection, or arbitrary-Kraus extension. Repair target: a retained measurement-semantics bridge from Lattice/Quantum/Record to trace/effect probabilities, sequential record probabilities, and selective conditioning updates. Claim boundary until fixed: the packet gives a valid conditional algebraic Lueders posterior for projective positive-probability branches after those premises are supplied.
 - **auditor confidence:** high
 
 ### `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`

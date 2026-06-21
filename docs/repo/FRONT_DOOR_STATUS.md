@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1499 |
+| Applied audit verdicts | 1500 |
 | Retained-grade rows, including boxed decorations | 1413 |
 | Retained positive theorems | 208 |
 | Retained no-go rows | 208 |
 | Retained bounded rows | 943 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 35 |
-| Unaudited rows | 1647 |
+| Unaudited rows | 1646 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 15 |
+| Audited conditional rows | 16 |
 | Audited renaming rows | 26 |
 | Audited numerical-match rows | 8 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1649 |
-| Ready rows | 114 |
+| Total pending rows | 1648 |
+| Ready rows | 113 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
-| High pending | 284 |
+| High pending | 283 |
 | Medium pending | 485 |
 | Leaf pending | 588 |
 
 Next ready rows by queue order:
 
-- [`luders_rule_from_composition_consistency_note_2026-05-20`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md) - high; unaudited
 - [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_note_2026-04-19`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_HELPER_NOTE_2026-04-19.md) - medium; unaudited
 - [`ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`](../../docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`koide_r_half_not_symmetry_protected_dynamical_norm_balance_narrow_no_go_note_2026-06-04`](../../docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`u1_fermion_number_conservation_theorem_note_2026-05-02`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`gauge_factor_local_selector_normalizer_theorem_note_2026-06-18`](../../docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25`](../../docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md) - medium; unaudited
+- [`registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

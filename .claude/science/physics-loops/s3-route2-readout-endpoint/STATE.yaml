@@ -35,7 +35,13 @@ verification:
   source_domain_bridge_parent: "PASS=103 FAIL=0 (output not carried; historical generated text trips broad wording scans)"
   py_compile: pass
 review_verdict: branch_local_pass_no_audit
-pr_status: pending
-pr_identity: null
-next_exact_action: "publish block32 PR and record identity"
+pr_status: open
+pr_identity:
+  number: 4561
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4561
+  title: "[physics-loop] s3-route2-readout-endpoint block32 exact-support"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block32-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "attack magnitude source rule |c_TE|=F_adj or equivalent E-center primitive"
 stop_condition: null

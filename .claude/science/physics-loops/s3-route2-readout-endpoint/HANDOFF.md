@@ -8,6 +8,18 @@ Branch:
 physics-loop/s3-route2-readout-endpoint-block32-20260621
 ```
 
+PR:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4561
+```
+
+Identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block32-20260621","number":4561,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block32 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4561"}
+```
+
 Block32 packages an exact W1 sign/magnitude split. Draft result: in the
 positive E-center branch, the sign in `c_TE=-8/9` is already forced by
 `q_T=5/6` and `s_TE=-2`. The remaining load-bearing condition is:
@@ -57,5 +69,11 @@ full W1 theorem typed to the Route-2 center-ratio magnitude
 
 ## Next Action
 
-Publish this science branch, open a PR, record the PR identity, then continue
-the campaign without checking PR conflicts.
+Continue the campaign by attacking the magnitude source rule:
+
+```text
+|c_TE| = F_adj
+```
+
+or an equivalent E-center primitive `q_E=15/8`. Do not refresh existing PR
+branches and do not check PR conflicts or mergeability.

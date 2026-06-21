@@ -14,7 +14,7 @@ This PR makes cleanup scan repository text references outside
 `logs/runner-cache/` and preserve matching cache files. After the fix, the
 full-ledger cleanup dry run reports 8 candidates instead of 9:
 
-- `fresh: 3120`
+- `fresh: 3123`
 - `stale to refresh: 0`
 - `missing on disk: 0`
 
@@ -34,5 +34,9 @@ verdict, delete cache files, or assert retained status.
 
 ## Next Exact Action
 
-Commit, push, and open a stacked PR against
-`physics-loop/audit-unblock-block130-20260620`.
+Monitor PR #4501 audit-lane check, then continue to the next audit-unblock
+target.
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4501

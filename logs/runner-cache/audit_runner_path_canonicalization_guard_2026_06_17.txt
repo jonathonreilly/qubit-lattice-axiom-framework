@@ -3,7 +3,7 @@ runner: scripts/audit_runner_path_canonicalization_guard_2026_06_17.py
 runner_sha256: a62adb0aa950529d365f6d9caea32bb63c4516818448300e02d4635366dc7a86
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 PASS: codex_audit_runner canonicalizes frontier_staggered_cycle_battery.py -- scripts/frontier_staggered_cycle_battery.py

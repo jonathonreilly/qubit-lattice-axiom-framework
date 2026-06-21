@@ -4,7 +4,7 @@ block: 134
 mode: physics-loop
 branch: physics-loop/audit-unblock-block134-20260620
 base: physics-loop/audit-unblock-block133-20260620
-base_commit: 8a506ceb6
+base_commit: 5e77b6d65
 user_constraint: "Unblock audit with PR branches only; do not audit, do not run audit-loop, do not push to main."
 target_claim_id: null
 target_scope: "audit packet dependency map refresh and null-runner canonicalization"
@@ -23,13 +23,13 @@ lock_mode: degraded_branch_local
 lock_note: "Repo automation lock status failed with Permission denied on /Users/jonreilly; continued in isolated worktree/branch."
 current_result: "Refreshed audit_packet_script_deps.json/cache after latest main and canonicalization fixes; null runner paths now remain no-runner rows instead of becoming missing file 'None'."
 packet_deps_summary:
-  total_claims_in_ledger: 3472
-  pending_audits_in_queue: 1668
-  claims_with_runner_path: 3241
-  claims_with_no_runner_declared: 231
+  total_claims_in_ledger: 3474
+  pending_audits_in_queue: 1689
+  claims_with_runner_path: 3242
+  claims_with_no_runner_declared: 232
   claims_whose_runner_file_is_missing: 0
-  pending_claims_with_helper_imports: 389
-  pending_claims_with_runner: 1593
+  pending_claims_with_helper_imports: 390
+  pending_claims_with_runner: 1614
 files_touched:
   - scripts/codex_audit_runner.py
   - scripts/audit_packet_script_deps.py

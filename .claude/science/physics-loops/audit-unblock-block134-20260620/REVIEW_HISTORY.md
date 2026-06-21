@@ -14,7 +14,7 @@ Checks:
 ## Verification
 
 - `python3 scripts/precompute_audit_runners.py --runners scripts/audit_runner_path_canonicalization_guard_2026_06_17.py,scripts/audit_packet_script_deps.py --force --push-mode none --allow-non-main` -> 2 OK.
-- `rg -n "Total claims|Pending audits|Claims with runner path|Claims with no runner declared|Claims whose runner file is missing|Pending claims with helper" logs/runner-cache/audit_packet_script_deps.txt` -> 3472 total, 1668 pending, 3241 runner paths, 231 no-runner, 0 missing runners, 389/1593 pending helper-import claims.
+- `rg -n "Total claims|Pending audits|Claims with runner path|Claims with no runner declared|Claims whose runner file is missing|Pending claims with helper" logs/runner-cache/audit_packet_script_deps.txt` -> 3474 total, 1689 pending, 3242 runner paths, 232 no-runner, 0 missing runners, 390/1614 pending helper-import claims.
 - `python3 scripts/audit_runner_path_canonicalization_guard_2026_06_17.py` -> pass.
 - `python3 -m unittest docs.audit.scripts.tests.test_audit_pipeline.PrecomputeAuditRunnersTest` -> 4 tests passed.
 - `python3 scripts/precompute_audit_runners.py --pr-diff origin/physics-loop/audit-unblock-block133-20260620 --check-only --allow-non-main` -> fresh, stale 0, missing 0.

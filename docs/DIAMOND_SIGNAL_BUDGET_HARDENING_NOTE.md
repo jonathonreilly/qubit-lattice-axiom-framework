@@ -1,30 +1,34 @@
 # Diamond Signal Budget Hardening Note
 
 **Date:** 2026-04-06  
-**Status:** proposed_retained proxy-budget card for the diamond/NV phase-sensitive lane
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status:** bounded proxy-budget hardening card for the diamond/NV
+phase-sensitive lane; not an absolute lab signal budget.
 
 ## Artifact Chain
 
-- [`scripts/diamond_signal_budget_hardening.py`](/Users/jonreilly/Projects/Physics/scripts/diamond_signal_budget_hardening.py)
-- [`logs/2026-04-06-diamond-signal-budget-hardening.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-diamond-signal-budget-hardening.txt)
-- [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
+- [`scripts/diamond_signal_budget_hardening.py`](../scripts/diamond_signal_budget_hardening.py)
+- [`logs/2026-04-06-diamond-signal-budget-hardening.txt`](../logs/2026-04-06-diamond-signal-budget-hardening.txt)
+- [`docs/MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md`](MOVING_SOURCE_RETARDED_PORTABILITY_NOTE.md)
+- [`docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md`](DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md)
 
 ## Question
 
 What is the sharpest defensible diamond/NV readout budget we can state from the
-retained moving-source proxy, without pretending we already have a calibrated
+moving-source proxy, without pretending we already have a calibrated
 absolute amplitude map?
 
 This note is intentionally narrow:
 
 - one explicit source geometry
 - one signed scaling map in source velocity
-- one proxy-budget estimate from the weakest retained nonzero observables
+- one proxy-budget estimate from the weakest nonzero proxy observables
 - one explicit blocker for a real lab budget
 
 ## Explicit Source Geometry
 
-Use the retained portable grown row as the geometry anchor:
+Use the portable grown proxy row as the geometry anchor:
 
 - family: `drift = 0.2`, `restore = 0.7`
 - seeds: `6`
@@ -37,8 +41,8 @@ That is the only source geometry this note is allowed to budget against.
 
 ## Scaling Map
 
-The retained observable is the signed centroid shift relative to the matched
-static control, with phase lag as a secondary residue.
+The runner-defined proxy observable is the signed centroid shift relative to
+the matched static control, with phase lag as a secondary residue.
 
 | `v` | `delta_y vs static` | `phase lag (rad)` |
 | --- | ---: | ---: |
@@ -57,7 +61,7 @@ The clean read is:
 
 ## Proxy Budget
 
-The weakest retained nonzero point is the useful one for a hardening estimate:
+The weakest nonzero proxy point is the useful one for a hardening estimate:
 
 - smallest nonzero `|delta_y vs static| = 8.665715e-07` at `v = +0.50`
 - smallest nonzero `|phase lag| = 1.309075e-05 rad` at `v = -0.50`
@@ -67,14 +71,14 @@ Using a conservative `3σ` readout target:
 - centroid-noise target `<= 2.888572e-07`
 - phase-noise target `<= 4.363583e-06 rad`
 
-That is the narrowest proxy-budget we can honestly pin to the retained
-observables.
+That is the narrowest proxy-budget we can honestly pin to the runner-defined
+proxy observables.
 
 ## Missing Parameter
 
 The real lab budget is still blocked by one missing calibration parameter:
 
-- the transfer coefficient from the retained proxy units into the actual NV
+- the transfer coefficient from the proxy units into the actual NV
   readout units and noise floor
 
 Without that map, the current numbers stay as a proxy-budget card, not a
@@ -84,7 +88,7 @@ validated amplitude budget.
 
 The strongest defensible statement is:
 
-- the retained geometry gives one explicit source anchor
+- the proxy geometry gives one explicit source anchor
 - the moving-source proxy gives one signed scaling map
 - the centroid sign flip is the sharper discriminator
 - the phase lag is a secondary residue
@@ -98,6 +102,6 @@ What is not claimed:
 
 ## Final Verdict
 
-**retained narrow hardening: one explicit geometry, one signed scaling map,
-and one proxy-budget estimate are pinned to the diamond/NV lane; the absolute
-lab budget is blocked by the missing transfer calibration**
+**bounded proxy-budget hardening: one explicit geometry, one signed scaling
+map, and one proxy-budget estimate are pinned to the diamond/NV lane; the
+absolute lab budget is blocked by the missing transfer calibration**

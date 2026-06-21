@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 217 |
+| **retained_no_go** | 218 |
 | **retained_bounded** | 1002 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1533 |
+| unaudited | 1532 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -66,13 +66,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1449 |
+| `audited_clean` | 1450 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 62 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1859 |
+| `unaudited` | 1858 |
 
 | claim_type | count |
 |---|---:|
@@ -675,6 +675,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `generation_triplet_dimension_parity_no_faithful_z_narrow_no_go_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `geometry_lane_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `geometry_superposition_dag_ensemble_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
@@ -9565,6 +9566,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The OS functional's word values vanish on every anticommutator insertion and its vacuum is cyclic, so the exchange relations hold as operator identities in every cyclic realization; combined with irreducibility, the identification is forced up to one unitary scalar that transports parity automatically.  _(class `C`)_
 - **chain closes:** False — The kinematic subchain closes conditionally: the runner verifies cyclicity, functional-level GL(F), full matrix-algebra span, unique Schur intertwiner, and parity transport on the certified N=2,3 surfaces. The full bridge does not close because I-4, identifying the framework's physical matter correlation functional with the declared Berezin/RP OS functional, is explicitly unsupplied.
 - **rationale:** Issue: the finite reconstruction-identification certificates support I-1 through I-3 only after the matter-functional clause I-4 is granted. Why this blocks: retained bridge closure would still require a theorem or retained authority identifying the physical matter vacuum correlations with the declared Berezin/RP OS functional. Repair target: prove or retain the matter-functional bridge theorem, or keep this row scoped as an open-gate conditional decomposition. Claim boundary until fixed: the bridge is reduced to one named residual pin, not closed.
+- **auditor confidence:** high
+
+### `gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10`
+
+- **Note:** [`GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md`](../../docs/GL_F_MULTILOOP_GRADED_NET_COCYCLE_NARROW_NO_GO_NOTE_2026-06-10.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On finite Z^3 qubit blocks with the retained F grading and R1-R4 on-site data, multi-loop graded-net cocycle consistency does not force GL(F); it admits the hard-core eps==+1 frame as well as CAR.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-gl_f_multiloop_graded_net_cocycle_narrow_no_go_note_2026-06-10-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The set of exchange-sign assignments satisfying the multi-loop cocycle consistency conditions is exactly the symmetric set, which contains the commuting eps==+1 assignment alongside eps==-1.  _(class `C`)_
+- **chain closes:** True — The proof and runner establish realizability implies symmetry, explicitly realize all symmetric assignments, and certify loop consistency for symmetric assignments; eps==+1 is therefore a concrete passing countermodel to GL(F) forcing. The cited dependencies are retained-grade or accepted axiom premises, and no FS/GL(F) selector is imported.
+- **rationale:** The primary runner is not a print-only artifact: it performs dense Pauli-tensor checks, exhaustive Klein-string enumeration, S4 Cayley edge consistency, GF(2) cycle-rank computations, signed-state loop transport, multi-loop positivity batteries, and falsification checks. The load-bearing no-go follows because a jointly realized commuting assignment passes the stated consistency suite, while the algebraic Lemma 1/2 reduction prevents larger exchange-groupoid loops from adding a selector. The no-go discipline gate is satisfied in the source packet with multiple attempted routes, a collapsed single wall, explicit boundaries, and a steelman. The declared finite-block and route-pruning scope avoids claiming that GL(F) is false or that future non-loop principles are excluded.
 - **auditor confidence:** high
 
 ### `gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`

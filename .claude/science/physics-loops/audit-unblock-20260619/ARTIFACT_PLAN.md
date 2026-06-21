@@ -13,10 +13,9 @@
 
 - `logs/runner-cache/frontier_one_parameter_reduced_shell_law.txt`
   - Refreshed by `precompute_audit_runners.py`.
-- `logs/runner-cache/audit_packet_script_deps.txt`
-  - Refreshed packet dependency diagnostic.
 
-## Generated Artifacts
+## Excluded Generated Artifacts
 
-Pipeline regeneration updates audit ledger/queue/data, publication
-effective-status views, and the generated front-door status snapshot.
+After the current-main rebase, generated audit ledger/queue/data,
+publication effective-status views, packet-dependency outputs, and
+`docs/repo/FRONT_DOOR_STATUS.md` are excluded from this PR.

@@ -21,16 +21,21 @@ PASS=17 FAIL=0 TOTAL=17
 precompute: 1 ok, 0 nonzero_exit
 ```
 
-## Row After Pipeline
+After rebasing onto current `main` at `678b38ce7`, this PR is narrowed to the
+source note/runner repair, the refreshed target runner cache, and branch-local
+loop metadata. Generated audit, publication, and front-door surfaces are not in
+the PR diff.
+
+## Current Queue Snapshot
 
 ```text
 claim_type=bounded_theorem
 audit_status=unaudited
 effective_status=unaudited
-criticality=medium
-load_bearing_score=7.976
-direct_in_degree=3
-transitive_descendants=88
+criticality=critical
+load_bearing_score=10.353
+direct_in_degree=2
+transitive_descendants=653
 ready=true
 ```
 
@@ -51,11 +56,10 @@ Open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4494
 
 - PR #4494 is based on `main`.
 - Head branch: `physics-loop/audit-unblock-block124-20260620`.
-- Source commit at PR creation: `fce8ca7b84c40681cab9b6d9f0e235c23ccbf4b0`.
-- `gh pr view` reported `OPEN`, non-draft, `MERGEABLE`.
-- GitHub audit-lane `audit_pipeline` check was in progress at packet update.
+- Rebased repair commit: `e8f609e62`.
+- Rebase/metadata refresh pending push at this checkpoint.
 
 ## Next Exact Action
 
-Refresh from current `origin/main`, inspect the newly shifted top ready rows,
-skip open PR targets, and open a dedicated block125 PR.
+Force-push the rebased branch, update PR #4494, verify GitHub merge/check
+state, then continue with the next dirty audit-unblock PR.

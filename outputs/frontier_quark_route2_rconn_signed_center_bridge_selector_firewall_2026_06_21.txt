@@ -1,0 +1,113 @@
+========================================================================================
+ROUTE-2 RCONN SIGNED CENTER-BRIDGE SELECTOR FIREWALL
+========================================================================================
+
+A. Authority surfaces
+------------------------------------------------------------------------
+PASS: QUARK_ROUTE2_RCONN_SIGNED_CENTER_BRIDGE_SELECTOR_FIREWALL_NOTE_2026-06-21.md exists -- docs/QUARK_ROUTE2_RCONN_SIGNED_CENTER_BRIDGE_SELECTOR_FIREWALL_NOTE_2026-06-21.md
+PASS: RCONN_DERIVED_NOTE.md exists -- docs/RCONN_DERIVED_NOTE.md
+PASS: EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md exists -- docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md
+PASS: QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md exists -- docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md
+PASS: CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md exists -- docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md
+PASS: RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md exists -- docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: MINIMAL_AXIOMS_2026-06-05.md exists -- docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: axiom_premise_nodes.json exists -- docs/audit/data/axiom_premise_nodes.json
+
+B. New note hygiene
+------------------------------------------------------------------------
+PASS: new note declares no_go claim type
+PASS: new note denies endpoint-triple derivation
+PASS: new note names all three bridge selectors
+PASS: new note keeps kappa_EW as physical-only fourth selector
+PASS: new note avoids bare retained status line
+PASS: new note names forbidden imports
+PASS: new note records exact current-bank theorem
+PASS: new note does not claim parent-row closure
+
+C. Exact endpoint algebra
+------------------------------------------------------------------------
+PASS: F_adj at N_c=3 is exactly 8/9 -- 8/9
+PASS: negative center placement gives q_E=15/8 -- 15/8
+PASS: negative center placement gives rho_E=21/4 -- 21/4
+PASS: positive center placement gives q_E=-15/8 -- -15/8
+PASS: positive center placement gives rho_E=-69/4 -- -69/4
+PASS: sign selector is load-bearing -- 21/4 vs -69/4
+PASS: negative F_adj center law has exact N_c=2 consequence -- 22/3
+PASS: negative F_adj center law has exact N_c=3 consequence -- 21/4
+PASS: negative F_adj center law has exact N_c=4 consequence -- 14/3
+PASS: negative F_adj center law has exact N_c=5 consequence -- 53/12
+
+D. Physical Rconn/kappa branch
+------------------------------------------------------------------------
+PASS: R_phys(kappa=0) is exact F_adj -- 8/9
+PASS: R_phys(kappa=1) is total channel 1 -- 1
+PASS: negative physical branch gives target only at kappa=0 -- 21/4
+PASS: negative physical branch at kappa=1 gives rho_E=4 -- 4
+PASS: kappa selector is load-bearing on physical route
+PASS: closed form rho_E(kappa=0) matches direct algebra -- 21/4
+PASS: closed form rho_E(kappa=1/4) matches direct algebra -- 54/11
+PASS: closed form rho_E(kappa=1/2) matches direct algebra -- 78/17
+PASS: closed form rho_E(kappa=3/4) matches direct algebra -- 30/7
+PASS: closed form rho_E(kappa=1) matches direct algebra -- 4
+
+E. Slot-placement fan-out
+------------------------------------------------------------------------
+PASS: candidate center_negative is evaluated -- rho_E=21/4
+PASS: candidate center_positive is evaluated -- rho_E=-69/4
+PASS: candidate q_e_positive is evaluated -- rho_E=-2/3
+PASS: candidate q_e_negative is evaluated -- rho_E=-34/3
+PASS: candidate rho_e_positive is evaluated -- rho_E=8/9
+PASS: candidate rho_e_negative is evaluated -- rho_E=-8/9
+PASS: candidate shell_positive is evaluated -- underdetermined
+PASS: candidate shell_negative is evaluated -- underdetermined
+PASS: only negative center-slot placement hits rho_E=21/4 -- ['center_negative']
+PASS: placing 8/9 in q_E slot does not hit target
+PASS: placing -8/9 in q_E slot does not hit target
+PASS: placing 8/9 in rho_E slot does not hit target
+PASS: placing -8/9 in rho_E slot does not hit target
+PASS: shell-slot placement alone is underdetermined
+
+F. Current-bank marker scan
+------------------------------------------------------------------------
+PASS: Rconn note preserves exact F_adj support only
+PASS: Fierz note supplies exact channel-count fraction
+PASS: typed-bridge note says F_adj is not a Route-2 center readout
+PASS: source-domain note says no current typed edge supplies bridge
+PASS: center obstruction note names source-domain bridge as extra premise
+PASS: cross-domain note separates spatial c_TE from fiber color
+PASS: kappa note does not close physical selector
+PASS: readout note keeps endpoint triple not derived
+PASS: s3 note inherits readout endpoint blocker
+PASS: minimal axiom note withholds readout/weighting bridge
+PASS: primitive registry does not grant selector/readout bridge
+
+G. Typed-edge reachability
+------------------------------------------------------------------------
+PASS: current typed inventory lacks Rconn-to-center path -- path=0
+PASS: current typed inventory lacks Rconn-to-rho path -- path=0
+PASS: adjoining collapsed missing bridge reaches center -- path=1
+PASS: adjoining collapsed missing bridge reaches rho_E -- path=3
+PASS: current derived inventory still omits collapsed bridge
+PASS: collapsed bridge target endpoints are exact
+
+H. Selector independence checks
+------------------------------------------------------------------------
+PASS: no selector is marked supplied by default -- {'domain_functor': False, 'negative_sign': False, 'center_slot': False, 'kappa_zero': False}
+PASS: exact Fierz support alone is insufficient
+PASS: domain functor without sign and slot is insufficient
+PASS: domain plus sign without center slot is insufficient
+PASS: all three algebraic selectors would be sufficient for F_adj route
+PASS: physical route still needs kappa_zero selector
+PASS: physical route selector package is complete only with kappa_zero
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=78, FAIL=0
+VERDICT: current-bank no-go for the collapsed signed Rconn center bridge.
+The exact 8/9 support and endpoint algebra survive, but the domain,
+negative-sign, center-slot, and physical-kappa selectors are not all
+supplied by the current Route-2/Rconn authority bank.

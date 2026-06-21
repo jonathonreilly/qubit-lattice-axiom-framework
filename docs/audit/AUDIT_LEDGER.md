@@ -60,8 +60,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 11 |
-| `audited_clean` | 1358 |
+| `audit_in_progress` | 10 |
+| `audited_clean` | 1359 |
 | `audited_conditional` | 11 |
 | `audited_decoration` | 52 |
 | `audited_failed` | 22 |
@@ -101,7 +101,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1700 | 159.73 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
@@ -114,7 +114,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_clean` | **retained_bounded** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
-| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
@@ -135,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_asymmetry_2over9_forced_weight_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_operator_realization_local_density_2026-05-31` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -628,6 +627,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_wilson_isotropy_boundary_note_2026-05-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `generation_axiom_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `generation_corner_hf_vq_screened_poisson_bridge_narrow_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -8445,6 +8445,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** The Cl(3) pseudoscalar commutes with the three spatial generators and the staggered eta plaquette product is -1 for every plaquette orientation, so the two checked mechanisms do not derive orientation-dependent Wilson plaquette coefficients.  _(class `A`)_
 - **chain closes:** True — The independent algebra closes: omega=G1G2G3 is central in Cl(3,0), hence not a fourth anticommuting generator, and for mu<nu the staggered eta product equals -1 uniformly. Combined with the retained Wilson grammar's common plaquette coefficient, the scoped anisotropy claim is not produced by these routes.
 - **rationale:** The load-bearing work is algebraic closure over the accepted Quantum axiom content and retained Wilson-source grammar, not a definition, external comparison, or tuned numerical match. The runner source computes the Pauli anticommutation, pseudoscalar centrality, and eta-product orientation uniformity rather than merely printing constants, and the same identities check independently from the displayed definitions. The no-go is correctly scoped to the two PR #528 mechanisms and explicitly does not claim a global impossibility for all future anisotropy routes.
+- **auditor confidence:** high
+
+### `gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07`
+
+- **Note:** [`GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md`](../../docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** SU(3) Wilson one-link character coefficients are strictly positive for every dominant weight at beta > 0, the normalized eigenvalues are positive, and arbitrary all-weight sequences define only a formal diagonal convolution action on C_fin.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-075307-895da9c9-gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07-second`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** For any dominant weight (p,q), the irrep V_(p,q) occurs in Sym^p(3) tensor Sym^q(3bar) subset V^{tensor (p+q)} as its Cartan highest-weight component.  _(class `A`)_
+- **chain closes:** True — The Cartan highest-weight occurrence gives a positive witness term at n=p+q, while all tensor-power character multiplicities contribute nonnegatively. The formal convolution statement is confined to finite-character tests, so no L2, continuity, positivity-measure, or bounded-operator closure is being imported.
+- **rationale:** The positivity claim closes by exact SU(3) character algebra: finite tensor powers have nonnegative irreducible multiplicities, and the Cartan component supplies one positive monomial for every dominant weight. The formal all-weight distribution claim is scoped to the algebraic dual of C_fin, where all pairings and actions are finite coefficientwise operations. The runner is supportive rather than a full all-weight decomposition engine, but the source-note proof supplies the needed all-weight argument without an external comparator or tuned input.
 - **auditor confidence:** high
 
 ### `gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13`

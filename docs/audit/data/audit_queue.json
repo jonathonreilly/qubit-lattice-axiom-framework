@@ -3,7 +3,7 @@
     "critical": 292,
     "high": 282,
     "leaf": 588,
-    "medium": 472
+    "medium": 471
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17512,33 +17512,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "yt_source_action_support_packet_note_2026-05-22",
-        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.0,
-      "note_path": "docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py",
-      "transitive_descendants": 31
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17676,6 +17649,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
+        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
+      ],
+      "load_bearing_score": 5.524,
+      "note_path": "docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py",
+      "transitive_descendants": 22
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "distance_law_definitive_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17693,34 +17694,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_distance_law_definitive.py",
       "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-        "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note",
-        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
-      ],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py",
-      "transitive_descendants": 7
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49022,6 +48995,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 107,
-  "total_pending": 1634
+  "ready_count": 106,
+  "total_pending": 1633
 }

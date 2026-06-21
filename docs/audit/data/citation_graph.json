@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "dimension_selection_upper_bound_textbook_import_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "dimension_selection_upper_bound_textbook_import_note_2026-05-17",
         "gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18",
         "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
         "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
         "post_record_admitted_sample_target_vector_interface_2026-06-06",
         "post_record_selection_rule_target_vector_firewall_2026-06-06",
         "post_record_supplied_kernel_selection_rule_interface_2026-06-06",
-        "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11"
+        "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
+        "su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "592c0360c8f14a96a261dbec21aed804e30ac9389d3641dbd4ac10b87fc74ba8",
+      "note_hash": "74cfae23b442a412ac730eb092371678f9a635bbe0628bfd6f33521a1b8e2bfb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

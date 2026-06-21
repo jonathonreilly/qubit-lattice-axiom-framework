@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 211 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 963 |
+| **retained_bounded** | 964 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1608 |
+| unaudited | 1607 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1399 |
+| `audited_clean` | 1400 |
 | `audited_conditional` | 23 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1934 |
+| `unaudited` | 1933 |
 
 | claim_type | count |
 |---|---:|
@@ -83,8 +83,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 931 |
-| `leaf` | 1468 |
+| `medium` | 930 |
+| `leaf` | 1469 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -662,6 +662,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravity_law_cleanup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gravity_sign_audit_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_sign_bottom_is_leading_order_decouples_from_lv_real_bottom_is_emergent_metric_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9214,6 +9215,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — Within the narrowed scope, the runner stdout matches the note's signs and classifications for every ratified row. The z=2, z=4, z=6, and z=7 dense rows are explicitly outside the audited scope and are not ratified here.
 - **rationale:** The scoped claim is an algebraic sign-interpretation over runner-computed observables, and the supplied runner computes the relevant rows rather than printing fixed classifications. No one-hop authorities are listed, so no dependency-retention blocker is available inside the restricted packet. Clean status applies only to the narrowed z=3 and z=5 dense rows plus the other printed runner rows; the broader z=2..6 dense table is not part of this verdict.
 - **auditor confidence:** medium
+
+### `gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18`
+
+- **Note:** [`GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Locally constant one-axis graph-Laplacian scalar packet: the +sI generator shift lowers fixed-energy phase action and normalizes phi_action=c_E s to first order.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-gravity_scalar_shift_sign_normalization_bounded_theorem_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Differentiating lambda_axis(k_s)+s=E gives d(k_s/k0)/ds=-1/(k0 lambda_axis'(k0)), so positive s lowers k_s/k0 and the first-order action-normalized variable is phi_action=c_E s.  _(class `A`)_
+- **chain closes:** True — The cited source-response note is retained_bounded and supplies the action-lowering convention S/L=1-phi. The scalar-packet sign and coefficient follow by finite-dimensional spectral shift and differentiation on the 0<k<pi branch, with no external constants or unsupported physical units.
+- **rationale:** The proof reduces to spectral algebra for H_0+sI and differentiation of the fixed-energy equation on the positive lambda_axis' branch, so the sign and coefficient c_E follow directly. The only upstream physical input is the retained_bounded source-response convention, and the conclusion stays inside the declared locally constant one-axis packet. The runner checks the matrix spectrum shift, axis symbol, monotonicity, derivative, first-order normalization, and small-k limit; its extra eikonal/ledger checks are not load-bearing for this scoped theorem.
+- **auditor confidence:** high
 
 ### `gravity_sign_audit_2026-04-10`
 

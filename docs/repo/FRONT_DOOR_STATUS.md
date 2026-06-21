@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1638 |
-| Retained-grade rows, including boxed decorations | 1508 |
+| Applied audit verdicts | 1639 |
+| Retained-grade rows, including boxed decorations | 1509 |
 | Retained positive theorems | 213 |
 | Retained no-go rows | 220 |
-| Retained bounded rows | 1013 |
+| Retained bounded rows | 1014 |
 | Boxed decorations under retained parents | 62 |
 | Open gates | 39 |
-| Unaudited rows | 1508 |
+| Unaudited rows | 1507 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 49 |
 | Audited renaming rows | 29 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1510 |
-| Ready rows | 18 |
+| Total pending rows | 1509 |
+| Ready rows | 17 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 494 |
+| Leaf pending | 493 |
 
 Next ready rows by queue order:
 
-- [`pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 - [`quark_cp_small_correction_boundary_note_2026-06-17`](../../docs/QUARK_CP_SMALL_CORRECTION_BOUNDARY_NOTE_2026-06-17.md) - medium; unaudited
 - [`quark_route2_e_center_blindness_no_go_note_2026-06-17`](../../docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md) - medium; unaudited
 - [`rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08`](../../docs/RANK1_SINGLE_SOURCE_TEMPLATE_FROM_K_J_MINUS_I_STRUCTURE_GST_HIERARCHY_LOCATOR_NOTE_2026-06-08.md) - medium; unaudited
 - [`regge_ok4_frame_section_narrow_theorem_note_2026-06-17`](../../docs/REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`s3_time_tensor_build_memo`](../../docs/S3_TIME_TENSOR_BUILD_MEMO.md) - medium; unaudited
 - [`signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION_NOTE_2026-06-17.md) - medium; unaudited
-- [`single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17`](../../docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md) - leaf; unaudited
+- [`single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17`](../../docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
+- [`sm_gstar_higgs_sector_count_stretch_note_2026-05-29`](../../docs/SM_GSTAR_HIGGS_SECTOR_COUNT_STRETCH_NOTE_2026-05-29.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

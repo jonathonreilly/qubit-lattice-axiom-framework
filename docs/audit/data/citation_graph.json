@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "post_record_supplied_orientation_bridge_interface_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "post_record_supplied_orientation_bridge_interface_2026-06-06",
         "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22",
         "quark_cp_small_correction_boundary_note_2026-06-17",
         "quark_route2_e_center_blindness_no_go_note_2026-06-17",
         "rank1_single_source_template_from_k_j_minus_i_structure_gst_hierarchy_locator_note_2026-06-08",
         "regge_ok4_frame_section_narrow_theorem_note_2026-06-17",
         "s3_time_tensor_build_memo",
-        "signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17"
+        "signed_gravity_product_grading_source_activation_obstruction_note_2026-06-17",
+        "single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "66778b3d029eb90ea79e1a20f30673c8f2aadf393f12e0e21767c14b2bb5440d",
+      "note_hash": "27a4c22350c1eae582d4a60b85c4948e4a09e1ed486dfe886dbb2268371c94b2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

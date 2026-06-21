@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
+      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
         "dm_neutrino_weak_vector_theorem_note_2026-04-15",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
@@ -103190,7 +103190,7 @@
         "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "56935e25e0c079f5afe6fb2705e7fcef81f39a1041d20a33c30ad86632cf5d0e",
+      "note_hash": "37618c68a46b8404b6e132407dcaf8f50122eea21f91a975d833b1653cd4bcaf",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

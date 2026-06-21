@@ -16,7 +16,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
 | 1 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 936 | 19.87 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_lattice_noether_check.py` |
-| 2 | `axiom_first_spin_statistics_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 932 | 17.87 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_spin_statistics_check.py` |
+| 2 | `axiom_first_spin_statistics_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 933 | 18.37 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_spin_statistics_check.py` |
 | 3 | `yt_vertex_power_derivation` | bounded_theorem | unaudited | critical | 922 | 12.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
 | 4 | `observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18` | bounded_theorem | unaudited | critical | 922 | 10.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py` |
 | 5 | `observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18` | bounded_theorem | unaudited | critical | 922 | 10.85 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py` |

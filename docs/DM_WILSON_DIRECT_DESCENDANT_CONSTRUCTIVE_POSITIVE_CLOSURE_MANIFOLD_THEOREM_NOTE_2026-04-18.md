@@ -3,7 +3,9 @@
 **Date:** 2026-04-18 (rigorized 2026-05-09 with a Krawczyk-interval certificate)
 **Claim type:** bounded_theorem
 **Status:** support - regular-root theorem with a Krawczyk-interval certificate at the named base point on the fixed e-independent transport kernel
-**Scripts (both registered with caches):**
+**Status authority:** independent audit lane only.
+**Runner:** [`scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py`](../scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_probe_2026_04_18.py)
+**Component scripts:**
 
 - `scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_2026_04_18.py`
   (cache: `logs/runner-cache/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_2026_04_18.txt`)

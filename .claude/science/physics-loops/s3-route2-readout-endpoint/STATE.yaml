@@ -29,5 +29,12 @@ pr_policy:
     - headRefName
     - baseRefName
     - state
-next_exact_action: "Run checks, commit, push branch, open one review PR, verify identity fields only."
+pr:
+  number: 4535
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4535"
+  title: "[physics-loop] s3-route2-readout-endpoint block06 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block06-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "Continue campaign with the next ranked target: derive a nonseparable E/T center-shell covariance primitive, or pivot to the direct Theta_R -> Lambda_R consumer ambiguity packet."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable science targets are blocked."

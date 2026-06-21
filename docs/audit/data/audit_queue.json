@@ -3,7 +3,7 @@
     "critical": 292,
     "high": 280,
     "leaf": 588,
-    "medium": 468
+    "medium": 467
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17457,32 +17457,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.2,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
-      "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_matter_attachment_reduces_to_ks_audit_narrow_theorem_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17616,6 +17590,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "no_per_site_chirality_theorem_note_2026-05-02"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.392,
+      "note_path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
+      "transitive_descendants": 20
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "distance_law_definitive_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17633,32 +17633,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_distance_law_definitive.py",
       "transitive_descendants": 19
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-        "no_per_site_chirality_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.085,
-      "note_path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
-      "transitive_descendants": 5
     },
     {
       "audit_independence_required": "any_non_self",
@@ -32459,6 +32433,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+        "staggered_only_det_positivity_case_a_note_2026-05-17",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37084,32 +37084,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/one_time_dimension_dt1_reduction_check_2026_06_17.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "p2_phase_blindness_from_rp_transfer_trace_bridge_note_2026-05-28",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/P2_PHASE_BLINDNESS_FROM_RP_TRANSFER_TRACE_BRIDGE_NOTE_2026-05-28.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/p2_phase_blindness_rp_transfer_trace_bridge_2026_05_28.py",
       "transitive_descendants": 1
     },
     {
@@ -48852,5 +48826,5 @@
     }
   ],
   "ready_count": 104,
-  "total_pending": 1628
+  "total_pending": 1627
 }

@@ -2,24 +2,33 @@
 
 This queue is generated from machine-readable dispatcher manifests. It is a target-selection surface only: dispatcher manifests must not be passed to auditors as evidence.
 
-**Live entries:** 0
-**Ready entries:** 0
+**Live entries:** 5
+**Ready entries:** 2
 **Resolved (post-manifest re-audit) entries:** 18
-**Resolved/invalid entries:** 43
+**Resolved/invalid entries:** 42
 **Retired entries:** 19
 
 Source sidecars:
+- `docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json`
 - `docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-23.json`
 - `docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-28.json`
 - `docs/audit/data/bounded_to_retained_reaudit_queue_2026-05-29.json`
+- `docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json`
 - `docs/audit/data/lsp_projective_reaudit_queue_2026-05-22.json`
 - `docs/audit/data/promotion_reaudit_queue_2026-05-22.json`
 - `docs/audit/data/provenance_reaudit_queue_2026-05-23.json`
 - `docs/audit/data/r1_qubit_k1_reaudit_queue_2026-05-22.json`
+- `docs/audit/data/universal_gr_picurv_parent_reaudit_queue_2026-06-18.json`
 
 ## Live Dispatch Entries
 
-_No live dispatch entries._
+| # | ready | group | claim_id | current | source note | audit question | ready_blocker |
+|---:|:---:|---|---|---|---|---|---|
+| 1 | Y | `causal_field_live_packet_fresh_context` | `causal_propagating_field_live_packet_note_2026-06-05` | bounded_theorem / audited_clean / retained_bounded | `docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md` | Fresh-context re-audit: ignoring the archived failed causal_propagating_field_note row and stale 0.63 / 0.45 table, does the current live bounded finite replay in CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md audit clean under its narrowed configured-family scope? |  |
+| 2 | Y | `r1_substep1_chain` | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / unaudited / unaudited | `docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md` | Under the ratified k=1 qubit-per-site clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category? |  |
+| 3 |  | `anomaly_forces_time_bridge_fresh_context` | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem / unaudited / unaudited | `docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md` | Fresh-context re-audit target: under the current dependency-edge repair and premise manifest, does the anomaly-forces-time ABJ bridge validate as a bounded_theorem over explicit premises P-ABJ, P-HY, P-COMP, and P-REC without crediting native_gauge_closure for hypercharge, abelian values, or matter completion? | blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited,hypercharge_identification_note:unaudited,abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18:unaudited,abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18:unaudited,abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18:unaudited |
+| 4 |  | `universal_gr_picurv_parent_reaudit` | `universal_gr_polarization_frame_bundle_blocker_note` | bounded_theorem / unaudited / unaudited | `docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md` | Fresh-context review target: does UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md supply the route-exhaustion gate requested for UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes? | blocked_by_dependency:observable_principle_from_axiom_note:unaudited,s3_anomaly_spacetime_lift_note:unaudited,universal_gr_tensor_variational_candidate_note:unaudited,universal_gr_tensor_quotient_uniqueness_note:unaudited |
+| 5 |  | `anomaly_forces_time_parent_after_bridge` | `anomaly_forces_time_theorem` | bounded_theorem / unaudited / unaudited | `docs/ANOMALY_FORCES_TIME_THEOREM.md` | Fresh-context audit target after the bridge resolves: does ANOMALY_FORCES_TIME_THEOREM.md close only the d_t odd/parity result under its explicit bridge and retained dependencies, while leaving the d_t = 1 single-generator cap to the emergent-dynamics open gate? | blocked_by_live_group:anomaly_forces_time_bridge_fresh_context |
 
 ## Resolved By Post-Manifest Re-Audit
 
@@ -73,26 +82,25 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 21 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
 | 22 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
 | 23 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
-| 24 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
+| 24 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | positive_theorem / unaudited / unaudited |
 | 25 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
 | 26 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
 | 27 | resolved_or_superseded | `action_normalization_note` | no_go / audited_clean / retained_no_go |
 | 28 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
 | 29 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
-| 30 | resolved_or_superseded | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | no_go / unaudited / unaudited |
-| 31 | resolved_or_superseded | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | no_go / unaudited / unaudited |
-| 32 | resolved_or_superseded | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
+| 30 | invalid_missing_claim_id | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | None / None / None |
+| 31 | invalid_missing_claim_id | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | None / None / None |
+| 32 | invalid_missing_claim_id | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | None / None / None |
 | 33 | resolved_or_superseded | `linear_response_second_order_kubo_note` | bounded_theorem / unaudited / unaudited |
-| 34 | resolved_or_superseded | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | bounded_theorem / audited_renaming / audited_renaming |
-| 35 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded |
-| 36 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem / audited_clean / retained |
-| 37 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 |
-| 38 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 39 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
-| 40 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
-| 41 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 42 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 43 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 34 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem / unaudited / unaudited |
+| 35 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem / audited_clean / retained |
+| 36 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 |
+| 37 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 38 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
+| 39 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
+| 40 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 41 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 42 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
 
 ## Retired Dispatch Targets
 
@@ -103,7 +111,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 3 | `yt_ward_identity_derivation_theorem` | bounded_theorem / audited_clean / retained_bounded | deferred_normalization_convention |
 | 4 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 5 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
-| 6 | `g_bare_derivation_note` | bounded_theorem / audited_conditional / audited_conditional | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
+| 6 | `g_bare_derivation_note` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 7 | `g_bare_structural_normalization_theorem_note_2026-04-18` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 8 | `g_bare_two_ward_rep_b_independence_theorem_note_2026-04-19` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 9 | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
@@ -113,7 +121,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 13 | `wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08` | bounded_theorem / audited_clean / retained_bounded | exact_content_already_lifted_in_companion |
 | 14 | `g_bare_rigidity_theorem_note` | bounded_theorem / audited_clean / retained_bounded | load_bearing_in_open_g_bare_closure |
 | 15 | `koide_circulant_wilson_target_note_2026-04-18` | bounded_theorem / audited_clean / retained_bounded | assembler_not_source_of_exact_statement |
-| 16 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem / audited_clean / retained_bounded | exact_arithmetic_conditional_on_admitted_normalization |
+| 16 | `r_base_group_theory_derivation_theorem_note_2026-04-24` | bounded_theorem / unaudited / unaudited | exact_arithmetic_conditional_on_admitted_normalization |
 | 17 | `generation_axiom_boundary_note` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the claim. |
 | 18 | `native_gauge_closure_note` | positive_theorem / audited_clean / retained | bounded_terminal_after_dispatch_audit; positive_theorem promotion is not supported by current source scope. Future promotion requires a source PR that splits or strengthens the structural gauge-closure claim. |
 | 19 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | bounded_terminal_after_dispatch_audit; current source scope is a finite projection lemma and does not close the kappa_EW matching-rule identification. Positive-theorem promotion remains conditional on a future source repair that closes that identification. |

@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 292,
-    "high": 280,
+    "high": 281,
     "leaf": 588,
-    "medium": 461
+    "medium": 459
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -8462,6 +8462,31 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "primitive_p_lh_content_proposal_note_2026-05-10_pplh",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.892,
+      "note_path": "docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py",
+      "transitive_descendants": 20
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17457,32 +17482,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_only_det_positivity_case_a_note_2026-05-17",
-        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-        "no_per_site_chirality_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.392,
-      "note_path": "docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
-      "transitive_descendants": 20
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17632,31 +17631,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "primitive_p_lh_content_proposal_note_2026-05-10_pplh",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.585,
-      "note_path": "docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py",
-      "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "distance_law_preserving_third_family_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17755,6 +17729,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+        "three_generation_observable_theorem_note",
+        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
+        "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_delta_phase_count_one_z2_orientation.py",
       "transitive_descendants": 2
     },
     {
@@ -30995,36 +30999,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
-        "three_generation_observable_theorem_note",
-        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
-        "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_delta_phase_count_one_z2_orientation.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_hermitian_records_import_required_narrow_theorem_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -32797,6 +32771,34 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
+        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
+        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_flavor_absolute_handedness_is_gauge.py",
       "transitive_descendants": 0
     },
     {
@@ -39940,34 +39942,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/fixed_gbare_interacting_existence_ir_target_reframing_2026_06_08.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
-        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-        "three_generation_observable_theorem_note"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_flavor_absolute_handedness_is_gauge.py",
       "transitive_descendants": 0
     },
     {
@@ -48660,6 +48634,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 101,
-  "total_pending": 1621
+  "ready_count": 102,
+  "total_pending": 1620
 }

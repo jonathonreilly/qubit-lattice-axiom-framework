@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 209 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 957 |
+| **retained_bounded** | 958 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 37 |
-| unaudited | 1619 |
+| unaudited | 1618 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 9 |
 | ~~audited_renaming~~ | 28 |
@@ -62,13 +62,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1391 |
+| `audited_clean` | 1392 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 56 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 9 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1945 |
+| `unaudited` | 1944 |
 
 | claim_type | count |
 |---|---:|
@@ -82,8 +82,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 508 |
-| `medium` | 929 |
+| `high` | 509 |
+| `medium` | 928 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -1085,6 +1085,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_mechanism_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -15314,6 +15315,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SIGN_PORTABILITY_INVARIANT_NOTE.md`
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
+- **auditor confidence:** high
+
+### `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the finite S_3 one-dimensional character/sign-magnitude claim: determinant-magnitude positivity selects all of S_3, and the sign/orientation character is the one-dimensional route whose positive subset is C_3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Within the finite S_3 axis-ordering surface, det(D+mI) is constant/positive under S_3 and therefore is the trivial one-dimensional character, while the sign character has positive level set A_3=C_3.  _(class `A`)_
+- **chain closes:** True — The retained determinant-positivity input supplies det(D+mI)>0, and the retained_bounded S_3 axis-symmetry input supplies invariance under axis permutations. Finite S_3 representation theory then closes the scoped conclusion; the separate physical derivation of an orientation-sign positivity is explicitly not claimed.
+- **rationale:** The load-bearing step is standard finite group algebra plus determinant invariance over retained-grade inputs, not a fitted comparator, renaming, or new physical bridge. The runner performs the advertised finite checks and includes a scope guard excluding arbitrary class-function selectors outside the one-dimensional character/sign-magnitude claim. All cited authorities in the restricted packet are retained-grade under the rubric, and the note correctly leaves the framework-level handedness-positivity bridge open rather than importing it.
 - **auditor confidence:** high
 
 ### `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23`

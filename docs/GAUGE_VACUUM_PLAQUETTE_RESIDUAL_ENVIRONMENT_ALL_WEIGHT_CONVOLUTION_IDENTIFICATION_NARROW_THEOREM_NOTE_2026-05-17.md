@@ -8,7 +8,7 @@ premise from the load-bearing conclusion. The previous normalized form
 `R_beta^env = C_(Z_beta^env / z_(0,0)^env(beta))` is demoted to an
 explicit additional-normalization hypothesis for future work — see
 `## 2026-05-24 audit-conditional repair` below.)
-**Type:** positive_theorem
+**Type:** bounded_theorem
 **Claim scope:** the standalone per-weight-at-all-weights algebraic
 identification, on the marked-plaquette `SU(3)` class-function sector, of
 the residual source-sector operator `R_beta^env` — defined as the
@@ -46,7 +46,7 @@ retained-bounded Wilson-coefficient source repair:
   out-of-scope normalized comparisons; the load-bearing statement below
   uses the linear, unnormalized eigenvalue identity for `C_(Z_beta^env)`.
 - (I4) the retained-bounded `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`
-  (retained_bounded, audited_clean) supplying the SU(3) Wilson one-link
+  (effective_status `retained_bounded`) supplying the SU(3) Wilson one-link
   character-coefficient expansion
   `c_(p,q)(beta)=sum_n (1/n!)(beta/6)^n m_(p,q)^(n)` with
   nonnegative tensor-product multiplicities. This note adds the
@@ -535,8 +535,8 @@ coincide at every weight. ∎
   abstract `SU(3)` character algebra (retained / audited_clean).
 - Does **not** re-audit or broaden (I4). That is the retained-bounded
   `wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`
-  one-link Wilson coefficient positivity theorem (retained_bounded /
-  audited_clean); this note uses its nonnegative exponential expansion and
+  one-link Wilson coefficient positivity theorem (effective_status
+  `retained_bounded`); this note uses its nonnegative exponential expansion and
   adds only the elementary all-weight occurrence lemma needed for
   strict nonvanishing at `beta>0`.
 - Does **not** supply an analytic value for `r_(p,q)^env(beta)` or
@@ -633,7 +633,7 @@ retained-bounded on the audit ledger:
 - [`WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md`](WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md)
   (I4) — retained-bounded Wilson one-link coefficient positivity
   (`wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30`,
-  ledger reports retained_bounded / audited_clean). This note supplies
+  ledger effective_status reports `retained_bounded`). This note supplies
   the nonnegative exponential character-coefficient expansion; the
   2026-06-07 source repair above adds the constructive occurrence lemma
   `m_(p,q)^(p+q) >= 1`, upgrading the needed premise to

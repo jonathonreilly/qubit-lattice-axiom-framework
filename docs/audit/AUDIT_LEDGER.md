@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 212 |
 | **retained_no_go** | 215 |
-| **retained_bounded** | 977 |
+| **retained_bounded** | 978 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 38 |
-| unaudited | 1578 |
+| unaudited | 1577 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -63,13 +63,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1420 |
+| `audited_clean` | 1421 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 22 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1904 |
+| `unaudited` | 1903 |
 
 | claim_type | count |
 |---|---:|
@@ -126,7 +126,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
 
 
@@ -543,6 +543,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_split_the_brick_doublet_complex_structure_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_value_campaign_capstone_four_channel_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_zdet_fermionic_statistics_admission_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -7468,6 +7469,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** With grading I2 tensor Gamma_chi, the ansatz K projects as K_even = I2 tensor G_U1 and K_odd = sigma_x tensor H_chi, while diag(1,omega) is order 3 and outside the supplied Z_2 spin-factor charges.  _(class `A`)_
 - **chain closes:** True — The finite identities close directly from the supplied matrices: Gamma_chi is involutive, G_U1 commutes with Gamma_chi and C, H_chi anticommutes with Gamma_chi and is not C-equivariant, and diag(1,omega) has order 3 with determinant omega. The source explicitly excludes the broader native-status and classification claims.
 - **rationale:** The runner source performs actual finite matrix computations rather than merely printing expected outcomes, and its checks match an independent algebraic verification of the projections, commutators, anticommutator, and order/determinant facts. No cited upstream authority, external comparator, or tuned numerical input is used. Because the note confines the conclusion to the supplied Z_2 spin-factor reading and leaves the det_C/native bridge open, the bounded claim closes as stated.
+- **auditor confidence:** high
+
+### `flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04`
+
+- **Note:** [`FLAVOR_SUPPLIED_HEAT_KERNEL_ARROW_R_HALF_STABILITY_BOUNDED_NOTE_2026-06-04.md`](../../docs/FLAVOR_SUPPLIED_HEAT_KERNEL_ARROW_R_HALF_STABILITY_BOUNDED_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic route-pruning for the displayed inverse maps sharpen(r)=2r^2, thermalize(r)=sqrt(r/2), and the supplied path r(t)=tanh(t)^4: Q=2/3/r=1/2 is a transit value, not an attractor, along that supplied path.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-flavor_supplied_heat_kernel_arrow_r_half_stability_bounded_note_2026-06-04-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the supplied path r(t)=tanh(t)^4, dr/dt=4 tanh(t)^3 sech(t)^2>0 for finite t>0 with endpoints 0 and 1, so r=1/2 is crossed rather than selected as an attractor.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the conclusion follows from the retained Koide identification Q=2/3 iff r=1/2 plus exact algebra/calculus on the displayed maps and supplied path. No framework-native derivation of r(t)=tanh(t)^4 or physical arrow selection is established or needed for the narrowed claim.
+- **rationale:** The load-bearing calculation is an exact algebraic and differential check on supplied inputs: the maps are inverse branches with fixed points {0,1/2}, their multipliers at 1/2 flip stability, and tanh(t)^4 is monotone from 0 to 1 for finite t>0. The retained Koide lightcone authority supplies the only upstream identification needed, Q=2/3 iff r=1/2 on this C3-circulant line. The runner source genuinely recomputes the symbolic identities and path checks rather than merely printing expected PASS lines. This clean verdict applies only to the bounded route-pruning statement and does not ratify any unclaimed framework-native beta law or physical heat-kernel arrow selection.
 - **auditor confidence:** high
 
 ### `flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02`

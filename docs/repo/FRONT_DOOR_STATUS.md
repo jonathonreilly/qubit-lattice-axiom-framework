@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1555 |
+| Applied audit verdicts | 1556 |
 | Retained-grade rows, including boxed decorations | 1450 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 212 |
 | Retained bounded rows | 971 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 37 |
-| Unaudited rows | 1591 |
+| Unaudited rows | 1590 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 28 |
+| Audited conditional rows | 29 |
 | Audited renaming rows | 28 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1593 |
-| Ready rows | 87 |
+| Total pending rows | 1592 |
+| Ready rows | 86 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 444 |
-| Leaf pending | 577 |
+| Leaf pending | 576 |
 
 Next ready rows by queue order:
 
-- [`alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18`](../../docs/ALPHA_S_UNIVERSAL_TWO_LOOP_BETA_KERNEL_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`diamond_signal_budget_hardening_note`](../../docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md) - medium; unaudited
 - [`hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06`](../../docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md) - medium; unaudited
 - [`spin_statistics_fs_admission_located_exercise_note_2026-06-06`](../../docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md) - medium; unaudited
 - [`alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18`](../../docs/ALPHA_S_SOMMER_STATIC_POTENTIAL_ROOT_KERNEL_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`architecture_portability_sweep_note`](../../docs/ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md) - medium; unaudited
 - [`brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31`](../../docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md) - medium; unaudited
-- [`carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06`](../../docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md) - leaf; unaudited
+- [`carrier_attachment_consolidates_to_recurring_chirality_gate_sharpening_note_2026-06-06`](../../docs/CARRIER_ATTACHMENT_CONSOLIDATES_TO_RECURRING_CHIRALITY_GATE_SHARPENING_NOTE_2026-06-06.md) - medium; unaudited
+- [`causal_distance_tail_note`](../../docs/CAUSAL_DISTANCE_TAIL_NOTE.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
 - `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
-- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
+- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
 - `key_terminology` - critical; 1126 descendants; score 47.638
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312

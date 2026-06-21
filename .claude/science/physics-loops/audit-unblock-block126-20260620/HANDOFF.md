@@ -48,5 +48,8 @@ continued in a dedicated branch/worktree:
 
 ## Next Exact Action
 
-Commit, push, and open the block126 PR.
-After PR creation, continue the campaign by scanning the next stale runner-blocked pending row.
+Verify PR #4496, then continue the campaign by selecting the next stale runner-blocked pending row.
+
+## PR
+
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4496

@@ -2,8 +2,8 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / supplied source-measure trace prototype
-**Claim type:** methodology / positive theorem
-**Status:** exact-support branch-local for supplied finite source-measure and
+**Claim type:** bounded_theorem
+**Status:** bounded-support interface for supplied finite source-measure and
 trace-normalization semantics; audit_required_before_effective_retained=true;
 bare_retained_allowed=false.
 **Primary runner:**
@@ -24,10 +24,10 @@ supplied finite carrier
   => normalized source measure and trace/RN expectation identity
 ```
 
-The prototype covers the `15` `source_measure_or_rn_bridge` rows and the `6`
+The prototype covers the `16` `source_measure_or_rn_bridge` rows and the `10`
 `trace_normalization_reference` rows from the measure/weight subdivision.
 
-Total source/trace prototype rows indexed here: `21`.
+Total source/trace prototype rows indexed here: `26`.
 
 ## Meaning
 
@@ -86,8 +86,8 @@ The runner verifies:
   expectations;
 - unsupported source measures are rejected;
 - RN densities compose exactly;
-- the `15` source-measure/RN rows and `6` trace-normalization rows are present;
-- the combined source/trace prototype row count is `21`;
+- the `16` source-measure/RN rows and `10` trace-normalization rows are present;
+- the combined source/trace prototype row count is `26`;
 - the audit ledger hash is unchanged after the scan;
 - no audit verdict, audit-data write, retained/promoted claim,
   normalized-measure selector, generation/Koide selection, physical-reference

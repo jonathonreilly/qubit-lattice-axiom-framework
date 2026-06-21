@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18"
     },
     {
@@ -103176,7 +103172,6 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "statistics_atom_reduces_to_product_form_on_retained_gleason_surface_bounded_note_2026-06-12",
         "statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18",
         "three_family_card_missing_distance_live_bridge_note_2026-06-18",
         "unordered_mass_multiset_registrability_bridge_narrow_theorem_note_2026-06-11",
@@ -103185,7 +103180,7 @@
         "yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "80db0ee661b3e05472eb6a014777aa354be4ab8499953f7ed329162807557718",
+      "note_hash": "cc3e64e56139069c9b043a971bd337074d6d6fbfc3f311b9ad3e71359496a8c0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118598,8 +118593,8 @@
       "open_gate": 192,
       "positive_theorem": 583
     },
-    "edge_count": 13473,
-    "leaf_count": 1147,
+    "edge_count": 13472,
+    "leaf_count": 1148,
     "node_count": 3619,
     "root_count": 1090,
     "runners_with_path": 3252

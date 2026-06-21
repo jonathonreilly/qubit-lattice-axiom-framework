@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 213 |
-| **retained_no_go** | 220 |
+| **retained_no_go** | 221 |
 | **retained_bounded** | 1020 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 39 |
-| unaudited | 1496 |
+| unaudited | 1495 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 29 |
@@ -68,13 +68,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1470 |
+| `audited_clean` | 1471 |
 | `audited_conditional` | 53 |
 | `audited_decoration` | 65 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 29 |
-| `unaudited` | 1822 |
+| `unaudited` | 1821 |
 
 | claim_type | count |
 |---|---:|
@@ -89,8 +89,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 937 |
-| `leaf` | 1462 |
+| `medium` | 935 |
+| `leaf` | 1464 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1393,6 +1393,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_test_mass_companion_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_two_field_wave_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_epsilon_pseudotensor_oh_sign_bridge_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -20265,6 +20266,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Supply the quotient-level premise `m(j,k)=p_j p_k` for `j,k in {s,d}`, so agreement conditioning gives `p_i' = p_i^2/(p_s^2 + p_d^2)` and hence `x -> x^2`.  _(class `A`)_
 - **chain closes:** False — The algebra downstream of `m(j,k)=p_j p_k` closes and the runner implements substantive symbolic checks. The restricted packet does not derive or retain the quotient-factorization premise itself, so the full chain from retained Born/Busch authorities alone is missing that step.
 - **rationale:** K1-K4 are algebraically correct within the declared bounded setting: the retained Born/Busch surfaces provide one-copy weights, the product-to-outcome weakening and product-instance bridge are retained_bounded, and the runner checks the conditioning flow plus the correlated control witness. `MINIMAL_AXIOMS_2026-06-05.md` is explicitly flagged as an accepted axiom-premise node and does not downgrade under the registry carve-out. The row still imports the outcome-level factorization `m(j,k)=p_j p_k` as a supplied premise and explicitly says it is not discharged; therefore the claim cannot be `audited_clean` as an unconditional reduction from retained inputs.
+- **auditor confidence:** high
+
+### `statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18`
+
+- **Note:** [`STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md`](../../docs/STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Given only supplied one-copy two-outcome marginals p_s=p, p_d=1-p and finite additivity, outcome-level two-registration factorization m(j,k)=p_j p_k is not forced.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.5-20260621-095023-923e9318-statistics_outcome_factorization_not_forced_by_born_marginals_narrow_no_go_note_2026-06-18-first`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A two-registration finite-additive joint law with the fixed marginals is parameterized by a=m(s,s) in max(0,2p-1)<=a<=p, while the product law is only the single point a=p^2; for 0<p<1 other admissible choices exist.  _(class `A`)_
+- **chain closes:** True — Solving the marginal equations leaves one free coupling parameter a, and positivity leaves a nontrivial interval for every interior p. The p=1/2 correlated law and the diagonal two-qubit witness both exhibit the same marginals without product factorization.
+- **rationale:** The load-bearing step is exact finite-probability algebra, not a definition, renaming, external comparator, or tuned numerical match. The runner source constructs the table identities, concrete p=1/2 counterexamples, and diagonal Born-realizable witnesses rather than merely printing the verdict. The no-go is scoped narrowly to insufficiency of one-copy marginals plus finite additivity; the N1-N8 gate leaves future independence, stationarity, or preparation theorems open as added premises.
 - **auditor confidence:** high
 
 ### `statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17`

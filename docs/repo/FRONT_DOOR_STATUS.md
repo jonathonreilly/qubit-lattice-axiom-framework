@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1543 |
-| Retained-grade rows, including boxed decorations | 1443 |
+| Applied audit verdicts | 1544 |
+| Retained-grade rows, including boxed decorations | 1444 |
 | Retained positive theorems | 211 |
 | Retained no-go rows | 211 |
-| Retained bounded rows | 967 |
+| Retained bounded rows | 968 |
 | Boxed decorations under retained parents | 54 |
 | Open gates | 37 |
-| Unaudited rows | 1603 |
+| Unaudited rows | 1602 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 23 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1605 |
+| Total pending rows | 1604 |
 | Ready rows | 96 |
 | Cycle-break targets | 9 |
 | Critical pending | 292 |
 | High pending | 280 |
 | Medium pending | 447 |
-| Leaf pending | 586 |
+| Leaf pending | 585 |
 
 Next ready rows by queue order:
 
-- [`wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
+- [`emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18`](../../docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
 - [`post_record_admitted_sample_target_vector_interface_2026-06-06`](../../docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md) - medium; unaudited
 - [`post_record_selection_rule_target_vector_firewall_2026-06-06`](../../docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md) - medium; unaudited
 - [`post_record_supplied_kernel_selection_rule_interface_2026-06-06`](../../docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md) - medium; unaudited
 - [`signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_WILSON_MASS_HOLONOMY_TWISTED_EDGE_REALIZATION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10`](../../docs/SU2_WEAK_BETA_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md) - medium; unaudited
 - [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
-- [`emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18`](../../docs/EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md) - leaf; unaudited
+- [`wilson_m_h_per_channel_closure_bounded_note_2026-05-09`](../../docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hw1_second_order_return_shape_theorem_note"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_asymmetry_2over9_forced_weight_2026-05-31"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
         "hw1_second_order_return_shape_theorem_note",
         "su3_casimir_fundamental_theorem_note_2026-05-02",
         "koide_q_delta_linking_relation_theorem_note_2026-04-20",
         "staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23",
         "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
         "flavor_operator_realization_local_density_2026-05-31",
-        "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05"
+        "koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05",
+        "flavor_asymmetry_2over9_forced_weight_2026-05-31"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6a73f95a39cdd24696a19f35698c9f884d736493db2ecc456d58bb0a52451114",
+      "note_hash": "9557657a414110ecd2c8746f16e8413e64d51159db2c80454b4cd74829fbf94d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

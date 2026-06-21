@@ -216,6 +216,10 @@ class PrecomputeAuditRunnersTest(unittest.TestCase):
             "scripts/corrections/valid_nested.py",
         )
 
+    def test_precompute_canonical_runner_path_treats_none_as_empty(self):
+        m = _import_precompute_audit_runners()
+        self.assertEqual(m.canonical_runner_path(None), "")
+
 
 class ApplyAuditTest(unittest.TestCase):
     def setUp(self):

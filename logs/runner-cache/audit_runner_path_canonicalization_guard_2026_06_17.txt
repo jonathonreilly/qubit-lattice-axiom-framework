@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_runner_path_canonicalization_guard_2026_06_17.py
-runner_sha256: ed3ff5ed12281bed5861d10c32914c6d11975731b8e97ebb3bca8e1a8da4c2dc
+runner_sha256: a62adb0aa950529d365f6d9caea32bb63c4516818448300e02d4635366dc7a86
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -30,6 +30,9 @@ PASS: audit_packet_script_deps canonicalizes frontier_lorentz_derived.py -- scri
 PASS: audit_packet_script_deps canonical target exists -- scripts/frontier_lorentz_derived.py
 PASS: precompute_audit_runners canonicalizes frontier_lorentz_derived.py -- scripts/frontier_lorentz_derived.py
 PASS: precompute_audit_runners canonical target exists -- scripts/frontier_lorentz_derived.py
+PASS: codex_audit_runner canonicalizes empty runner path
+PASS: audit_packet_script_deps canonicalizes empty runner path
+PASS: precompute_audit_runners canonicalizes empty runner path
 PASS: current missing_runner_file inventory is basename-recoverable -- checked=55 unresolved=0
 PASS: render_prompt exposes canonical runner path
 PASS: render_prompt reads runner source through canonical path

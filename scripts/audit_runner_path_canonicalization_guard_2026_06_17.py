@@ -38,21 +38,24 @@ def main() -> int:
     deps = load_module("audit_packet_script_deps_under_test", "scripts/audit_packet_script_deps.py")
     precompute = load_module("precompute_audit_runners_under_test", "scripts/precompute_audit_runners.py")
 
-    cases = {
-        "frontier_staggered_cycle_battery.py": "scripts/frontier_staggered_cycle_battery.py",
-        "/Users/jonreilly/Projects/Physics/.claude/worktrees/sleepy-cerf/scripts/frontier_gravitational_time_dilation.py": "scripts/frontier_gravitational_time_dilation.py",
-        "/tmp/old-worktree/scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py": "scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py",
-        "scripts/frontier_lorentz_derived.py": "scripts/frontier_lorentz_derived.py",
-    }
-    for raw, expected in cases.items():
+    cases = [
+        ("frontier_staggered_cycle_battery.py", "scripts/frontier_staggered_cycle_battery.py"),
+        ("/Users/jonreilly/Projects/Physics/.claude/worktrees/sleepy-cerf/scripts/frontier_gravitational_time_dilation.py", "scripts/frontier_gravitational_time_dilation.py"),
+        ("/tmp/old-worktree/scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py", "scripts/corrections/yt_p1_delta_r_corrected_bound_memsafe.py"),
+        ("scripts/frontier_lorentz_derived.py", "scripts/frontier_lorentz_derived.py"),
+        (None, ""),
+    ]
+    for raw, expected in cases:
         for module_name, module in [
             ("codex_audit_runner", audit_runner),
             ("audit_packet_script_deps", deps),
             ("precompute_audit_runners", precompute),
         ]:
             got = module.canonical_runner_path(raw)
-            check(f"{module_name} canonicalizes {Path(raw).name}", got == expected, got)
-            check(f"{module_name} canonical target exists", (ROOT / got).exists(), got)
+            label = Path(str(raw)).name if raw else "empty runner path"
+            check(f"{module_name} canonicalizes {label}", got == expected, got)
+            if expected:
+                check(f"{module_name} canonical target exists", (ROOT / got).exists(), got)
 
     inventory_path = ROOT / "docs" / "audit" / "data" / "runner_breakage_inventory.json"
     inventory = json.loads(inventory_path.read_text(encoding="utf-8"))

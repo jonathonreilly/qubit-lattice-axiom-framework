@@ -1,0 +1,68 @@
+Route-2 source-Hessian connected-cumulant selector support
+Status: conditional-support for source-Hessian connected-cumulant selector; not an audit verdict.
+TRACE: upstream_support
+PART 1: exact source-Hessian cumulant identity
+PASS: SU(3) adjoint channel fraction is 8/9
+PASS: singlet/disconnected channel fraction is 1/9
+PASS: chosen one-point product realizes the singlet fraction
+PASS: raw second source moment reads full trace
+PASS: D^2 log Z subtracts the one-point product
+PASS: connected source Hessian keeps the adjoint fraction
+PASS: pure disconnected singlet gives kappa=0
+PASS: raw moment Hessian gives kappa=1
+
+PART 2: singlet purity classifier
+  eta=0: kappa=0, R_cumulant=8/9
+PASS: eta=0 maps to kappa=0
+PASS: eta=0 leaves exact rational readout
+  eta=1/4: kappa=1/4, R_cumulant=11/12
+PASS: eta=1/4 maps to kappa=1/4
+PASS: eta=1/4 leaves exact rational readout
+  eta=1/2: kappa=1/2, R_cumulant=17/18
+PASS: eta=1/2 maps to kappa=1/2
+PASS: eta=1/2 leaves exact rational readout
+  eta=1: kappa=1, R_cumulant=1
+PASS: eta=1 maps to kappa=1
+PASS: eta=1 leaves exact rational readout
+PASS: pure disconnected singlet is exactly kappa=0
+PASS: pure connected singlet is exactly kappa=1
+PASS: partial connected singlet gives intermediate kappa
+PASS: cumulant readout values distinguish singlet-purity assumptions
+PASS: source-Hessian algebra alone does not choose eta
+
+PART 3: typed readout reachability
+PASS: raw moment Hessian reaches full-trace selector
+PASS: log source Hessian reaches only residual kappa_eta without singlet purity
+PASS: log source Hessian does not reach kappa=0 without the missing primitive
+PASS: adding pure-disconnected singlet bridge reaches kappa=0
+PASS: the kappa=0 path uses no endpoint-value node
+
+PART 4: relation to existing no-go packets
+PASS: connected-current no-go leaves connected-current projector as target
+PASS: local-current no-go says connected-cumulant premise selects kappa=0
+PASS: graph-first bridge note leaves connected selector open
+PASS: new note is scoped as conditional support
+PASS: new note names the smaller missing primitive
+
+PART 5: document boundary
+PASS: new note contains marker: Actual current-surface status: conditional-support for source-Hessian connected-cumulant selector
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: No endpoint value is used
+PASS: new note contains marker: D^2 log Z subtracts factorizable disconnected products exactly
+PASS: new note contains marker: pure-disconnected singlet identification
+PASS: new note contains marker: Route-2 physical readout is the connected source Hessian
+PASS: new note contains marker: does not derive the missing physical readout primitive
+PASS: handoff contains marker: Block76 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: new packet avoids overclaim marker: branch-local status-promotion
+PASS: new packet avoids overclaim marker: future retention
+PASS: new packet avoids overclaim marker: promotion-to-retention
+PASS: new packet avoids overclaim marker: actual-surface retention
+PASS: new packet avoids overclaim marker: parent closure
+PASS: new packet avoids overclaim marker: current-surface endpoint derivation
+PASS: new packet avoids overclaim marker: audit ratification
+
+TOTAL: PASS=49, FAIL=0
+VERDICT: D^2 log Z gives exact disconnected subtraction and forces kappa=0 once the Route-2 singlet term is typed as a pure disconnected product for the same source/readout.  That source/readout primitive remains the open bridge.

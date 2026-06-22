@@ -1,7 +1,9 @@
 # PR Backlog
 
-Pending PR creation for:
+No pending PR backlog.
+
+Opened:
 
 ```text
-physics-loop/s3-route2-full-trace-exclusion-block71-20260622
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4657
 ```

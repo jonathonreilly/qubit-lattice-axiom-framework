@@ -46,9 +46,18 @@ No audit verdict was applied.
 
 ## PR
 
-Pending push and PR creation.
+Opened:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4657
+```
+
+Identity-only verification:
+
+```json
+{"baseRefName":"physics-loop/s3-route2-current-projector-idempotence-block70-20260622","headRefName":"physics-loop/s3-route2-full-trace-exclusion-block71-20260622","number":4657,"state":"OPEN","title":"[physics-loop] s3-route2-full-trace-exclusion block71 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4657"}
+```
 
 ## Next Exact Action
 
-Push this block, open the stacked PR, record PR identity, then pivot to the
-positive E-center readout domain theorem `q_E>0`.
+Pivot to the positive E-center readout domain theorem `q_E>0`.

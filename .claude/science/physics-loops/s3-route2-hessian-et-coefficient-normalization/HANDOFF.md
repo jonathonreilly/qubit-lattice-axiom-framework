@@ -61,7 +61,12 @@ PASS overclaim marker scan
 ## PR
 
 ```text
-PENDING
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4676
+Number: 4676
+State: OPEN
+Base: physics-loop/s3-route2-covariant-scalarization-collapse-block88-20260622
+Head: physics-loop/s3-route2-hessian-et-coefficient-normalization-block89-20260622
+Science commit: 2e2c75fde
 ```
 
 ## Next Exact Action

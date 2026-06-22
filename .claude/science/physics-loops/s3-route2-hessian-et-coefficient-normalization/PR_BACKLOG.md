@@ -24,5 +24,5 @@ an E/T coefficient normalization theorem.
 PR:
 
 ```text
-PENDING
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4676
 ```

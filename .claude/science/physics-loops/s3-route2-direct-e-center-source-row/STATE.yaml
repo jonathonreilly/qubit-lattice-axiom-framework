@@ -1,0 +1,73 @@
+loop_slug: s3-route2-direct-e-center-source-row
+block: 105
+date: 2026-06-22
+branch: physics-loop/s3-route2-direct-e-center-source-row-block105-20260622
+base: origin/physics-loop/s3-route2-power-law-coordinate-bridge-block104-20260622@00f3d5150
+stacked_on_pr: 4635
+mode: campaign
+target_status: best-honest-status
+active_route: Direct E-center homogeneous source-row degree boundary
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+hard_residual: "Derive the physical source-row degree d=-2, homogeneous source-coordinate bridge, or equivalent E-center lift primitive."
+lock_mode: branch_local_worktree
+files_touched:
+  - docs/QUARK_ROUTE2_DIRECT_E_CENTER_SOURCE_ROW_DEGREE_BOUNDARY_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_direct_e_center_source_row_degree_boundary_2026_06_22.py
+  - outputs/frontier_quark_route2_direct_e_center_source_row_degree_boundary_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-direct-e-center-source-row/
+open_imports:
+  - "No current-surface theorem derives the physical homogeneous source-row degree d=-2."
+  - "No current-surface theorem derives q_E=15/8 directly."
+no_go_routes:
+  - "Endpoint-only naturality leaves rho_E free."
+  - "E-center-blind constraints cannot derive the E-center lift."
+  - "Registration/positivity fixes norm or bounds, not the E-row direction."
+  - "The landed finite-box functional does not converge to 15/8."
+checkpoint:
+  verification_results:
+    - command: "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_direct_e_center_source_row_degree_boundary_2026_06_22.py"
+      result: "TOTAL: PASS=37, FAIL=0"
+    - command: "output agreement against outputs/frontier_quark_route2_direct_e_center_source_row_degree_boundary_2026_06_22.txt"
+      result: "output_matches"
+    - command: "python3 -m py_compile scripts/frontier_quark_route2_direct_e_center_source_row_degree_boundary_2026_06_22.py"
+      result: "pass"
+    - command: "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_power_law_coordinate_bridge_boundary_2026_06_22.py"
+      result: "TOTAL: PASS=37, FAIL=0"
+    - command: "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+      result: "PASS=11 FAIL=0"
+    - command: "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py"
+      result: "PASS=12 FAIL=0"
+    - command: "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py"
+      result: "TOTAL: PASS=14, FAIL=0"
+    - command: "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py"
+      result: "TOTAL: PASS=28, FAIL=0"
+    - command: "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py"
+      result: "TOTAL: PASS=103, FAIL=0"
+    - command: "python3 scripts/quark_route2_t_side_endpoint_theorem_attempt_bounded_2026_06_12.py"
+      result: "TOTAL: PASS=25, FAIL=0"
+    - command: "python3 scripts/frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py"
+      result: "TOTAL: PASS=46, FAIL=0"
+    - command: "logs/runner-cache/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.txt"
+      result: "TOTAL: PASS=6 FAIL=0"
+    - command: "logs/runner-cache/frontier_quark_route2_qe_box_size_scan_2026_06_10.txt"
+      result: "TOTAL: PASS=7 FAIL=0"
+    - command: "git diff --check"
+      result: "pass"
+    - command: "retained/proposal overclaim scan"
+      result: "only runner guard-string occurrences"
+  review:
+    disposition: pass
+    audit_pipeline_run: false
+  pr:
+    number: null
+    url: null
+    title: null
+    state: null
+    baseRefName: null
+    headRefName: null
+    identity_checked: false
+    conflict_mergeability_checked: false
+  next_exact_action: "Commit, push, and open stacked PR without conflict checks."
+  stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

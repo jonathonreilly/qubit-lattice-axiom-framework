@@ -71,7 +71,21 @@ No audit verdict was applied.
 
 ## PR
 
-Pending.
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4654
+```
+
+Identity-only view:
+
+```text
+{"baseRefName":"physics-loop/s3-route2-rconn-typed-bridge-factorization-block67-20260622","headRefName":"physics-loop/s3-route2-endpoint-orientation-sign-block68-20260622","number":4654,"state":"OPEN","title":"[physics-loop] s3-route2-endpoint-orientation-sign block68 bounded-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4654"}
+```
+
+Initial science commit:
+
+```text
+4a2533e52c03c8d8b1d83744c3c49c6e03e7e9e5
+```
 
 ## Next Exact Action
 

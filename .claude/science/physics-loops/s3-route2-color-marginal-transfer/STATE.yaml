@@ -7,7 +7,7 @@ block: 109
 branch: physics-loop/s3-route2-color-marginal-transfer-block109-20260622
 base: physics-loop/s3-route2-color-marginal-product-block108-20260622
 base_commit: 3820f951e
-science_commit: PENDING
+science_commit: b6078e94c
 worktree: /private/tmp/cl3-physics-loop-s3-route2-color-marginal-transfer-block109-20260622
 date: 2026-06-22
 mode: campaign
@@ -58,9 +58,12 @@ open_imports:
   - "New Route-2 same-source color-marginal readout theorem."
   - "Route-2 raw E[XY]=1 moment theorem for those same variables."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4696
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4696
+pr_title: "[physics-loop] s3-route2 color marginal transfer block109 no-go"
+pr_base: physics-loop/s3-route2-color-marginal-product-block108-20260622
+pr_head: physics-loop/s3-route2-color-marginal-transfer-block109-20260622
 next_exact_action: >-
   Construct a new Route-2 same-source color-marginal readout theorem, or
   choose a non-color same-source product theorem.

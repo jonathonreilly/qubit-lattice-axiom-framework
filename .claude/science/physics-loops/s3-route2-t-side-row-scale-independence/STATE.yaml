@@ -33,13 +33,13 @@ checkpoint:
     audit_pipeline_run: false
     note: "Branch-local review passed for scoped no-go/exact-support boundary. Audit pipeline intentionally not run; no audit verdict applied."
   pr:
-    number: null
-    url: null
+    number: 4647
+    url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4647"
     title: "[physics-loop] s3-route2-t-side-row-scale-independence block116 no-go"
-    state: pending
+    state: OPEN
     baseRefName: physics-loop/s3-route2-direct-e-center-selector-block115-20260622
     headRefName: physics-loop/s3-route2-t-side-row-scale-independence-block116-20260622
-    identity_checked: false
+    identity_checked: true
     conflict_mergeability_checked: false
   verification_results:
     - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_t_side_row_shape_shell_scale_independence_no_go_2026_06_22.py"
@@ -51,5 +51,5 @@ checkpoint:
     - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_direct_e_center_selector_boundary_2026_06_22.py"
     - "PASS: git diff --check"
     - "PASS: overclaim scan matched only runner guard strings"
-  next_exact_action: "Open stacked PR, then attempt a physical T-row selector theorem or pivot to the direct source-row degree selector."
+  next_exact_action: "Attempt a physical T-row selector theorem or pivot to the direct source-row degree selector."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

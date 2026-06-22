@@ -44,9 +44,21 @@ Audit pipeline must not be run, and no audit verdict should be applied.
 
 ## PR
 
-Pending.
+Opened:
+
+```text
+number: 4647
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4647
+title: [physics-loop] s3-route2-t-side-row-scale-independence block116 no-go
+state: OPEN
+baseRefName: physics-loop/s3-route2-direct-e-center-selector-block115-20260622
+headRefName: physics-loop/s3-route2-t-side-row-scale-independence-block116-20260622
+```
+
+Identity was checked with `number,url,title,state,baseRefName,headRefName`
+only. Conflict and mergeability checks were not run.
 
 ## Next Exact Action
 
-Open a stacked PR, then try a physical T-row selector theorem or pivot to the
-direct source-row degree selector.
+Try a physical T-row selector theorem or pivot to the direct source-row degree
+selector.

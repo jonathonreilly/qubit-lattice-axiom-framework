@@ -1,0 +1,62 @@
+loop_slug: s3-route2-source-jet-lift
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 97
+branch: physics-loop/s3-route2-source-jet-lift-block97-20260622
+base: physics-loop/s3-route2-typed-parity-bridge-cut-block96-20260622
+base_commit: ad995de06
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-source-jet-lift-block97-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Same-source source-jet lift
+hard_residual: >-
+  Determine whether the current exact finite P_R readout surface itself proves
+  the same-source E/T source-Hessian premise.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SOURCE_JET_LIFT_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-source-jet-lift/
+commands_run:
+  - python3 -m py_compile scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_typed_parity_bridge_minimal_cut_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_observable_hessian_readout_identification_no_go_2026_06_22.py
+  - git diff --check
+  - STATE.yaml parse
+  - ASCII scan
+  - overclaim scan
+command_results:
+  - PASS
+  - PASS=63 FAIL=0
+  - PASS=60 FAIL=0
+  - PASS=11 FAIL=0
+  - PASS=49 FAIL=0
+  - PASS=47 FAIL=0
+  - PASS
+  - PASS
+  - PASS
+  - PASS
+imports_retired:
+  - "The route that the current exact finite P_R readout surface itself proves the same-source E/T source-Hessian premise."
+open_imports:
+  - "Route-2 same-source source-jet lift theorem for the physical E/T readout."
+review_disposition: static_verification_passed_no_audit_or_review_worker_run
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct the Route-2 same-source source-jet lift theorem, or choose another
+  typed readout primitive.
+stop_condition: none

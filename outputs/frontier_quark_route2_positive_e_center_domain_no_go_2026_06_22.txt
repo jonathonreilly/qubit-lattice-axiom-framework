@@ -1,0 +1,69 @@
+Route-2 positive E-center readout domain boundary
+Status: no-go for deriving q_E>0 from exact reduced readout family; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: exact q_E domain boundary
+  rho_E=-7: q_E=-1/6, c_TE=10
+  rho_E=-6: q_E=0, c_TE=None
+  rho_E=-1: q_E=5/6, c_TE=-2
+  rho_E=0: q_E=1, c_TE=-5/3
+  rho_E=21/4: q_E=15/8, c_TE=-8/9
+PASS: q_E formula is 1 + rho_E/6
+PASS: rho_E=-7 gives negative q_E
+PASS: rho_E=-6 gives zero q_E boundary
+PASS: rho_E=-1 gives positive q_E but not target
+PASS: target rho_E=21/4 gives q_E=15/8
+PASS: positivity is exactly rho_E > -6 on sampled rationals
+
+PART 2: exact readout-family non-uniqueness
+PASS: all witnesses keep E-shell normalization fixed
+PASS: all witnesses share granted q_T=5/6
+PASS: all witnesses share granted shell T/E=-2
+PASS: negative witness is an exact rational admissible map on the reduced family
+PASS: zero witness shows the ratio-domain boundary is not excluded by carrier algebra
+PASS: target witness is only one exact member of the same reduced family
+
+PART 3: endpoint orientation sign dependency
+PASS: q_E<0 flips c_TE positive
+PASS: q_E>0 preserves negative c_TE sign
+PASS: q_E=0 is excluded from the center-ratio domain
+PASS: Block68 sign theorem is conditional on q_E>0
+
+PART 4: conditional Rconn selector support
+  kappa=0: q_E=15/8, rho_E=21/4
+  kappa=1/2: q_E=30/17, rho_E=78/17
+  kappa=1: q_E=5/3, rho_E=4
+PASS: nonnegative idempotent endpoints have positive q_E under oriented Rconn ansatz
+PASS: sampled physical selector interval has positive q_E
+PASS: connected endpoint gives q_E=15/8
+PASS: full-trace endpoint gives q_E=5/3
+PASS: conditional positivity does not select the connected endpoint
+
+PART 5: forbidden selector audit
+PASS: target q_E selects rho_E=21/4 only by supplying target q_E
+      [Fraction(21, 4)]
+PASS: positivity is weaker than the target value
+      [Fraction(-1, 1), Fraction(0, 1), Fraction(21, 4)]
+PASS: positive domain alone leaves multiple exact rho_E values
+PASS: using the target value as positivity proof would fit the endpoint
+
+PART 6: note and authority markers
+PASS: new note contains marker: Claim type:** no_go
+PASS: new note contains marker: Actual current-surface status: no-go for deriving q_E>0 from the exact reduced readout family
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: q_E = 1 + rho_E/6
+PASS: new note contains marker: rho_E > -6
+PASS: new note contains marker: does not close the parent
+PASS: exact readout note gives q_E formula
+PASS: orientation note states q_E positivity premise
+PASS: Block71 leaves singlet-annihilation open
+PASS: parent note still names endpoint triple blocker
+PASS: new note avoids overclaim marker: status-authority phrase
+PASS: new note avoids overclaim marker: parent closure
+PASS: new note avoids overclaim marker: current-surface endpoint derivation
+PASS: new note avoids overclaim marker: audit ratification
+PASS: new note avoids overclaim marker: branch-local status-promotion
+PASS: new note avoids overclaim marker: future retention
+PASS: new note avoids overclaim marker: promotion-to-retention
+
+TOTAL: PASS=42, FAIL=0
+VERDICT: q_E>0 is the half-line rho_E>-6.  It is conditionally supported by the oriented Rconn selector ansatz, but is not derived by the exact reduced readout family alone.

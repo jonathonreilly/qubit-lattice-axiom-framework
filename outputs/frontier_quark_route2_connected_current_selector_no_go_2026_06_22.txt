@@ -1,0 +1,86 @@
+Route-2 connected-current selector classifier
+Status: no-go for connected-current selector from equivariant two-channel data; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: two-channel packet
+PASS: SU(3) adjoint fraction is 8/9
+      F_adj=8/9
+PASS: singlet/disconnected fraction is 1/9
+      singlet=1/9
+PASS: adjoint plus singlet fractions sum to one
+PASS: kappa=0 gives connected readout R_phys=8/9
+PASS: kappa=1 gives full readout R_phys=1
+PASS: kappa=1/2 gives an exact intermediate readout
+
+PART 2: channel-respecting readout classifier
+  kappa=0: R_phys=8/9, K_EW=9/8
+PASS: kappa=0 is exact rational channel readout
+PASS: kappa=0 preserves adjoint normalization
+  kappa=1/4: R_phys=11/12, K_EW=12/11
+PASS: kappa=1/4 is exact rational channel readout
+PASS: kappa=1/4 preserves adjoint normalization
+  kappa=1/2: R_phys=17/18, K_EW=18/17
+PASS: kappa=1/2 is exact rational channel readout
+PASS: kappa=1/2 preserves adjoint normalization
+  kappa=3/4: R_phys=35/36, K_EW=36/35
+PASS: kappa=3/4 is exact rational channel readout
+PASS: kappa=3/4 preserves adjoint normalization
+  kappa=1: R_phys=1, K_EW=1
+PASS: kappa=1 is exact rational channel readout
+PASS: kappa=1 preserves adjoint normalization
+PASS: the selector family has distinct exact values
+PASS: connected projection is the kappa=0 endpoint of the family
+PASS: full trace is the kappa=1 endpoint of the family
+PASS: Fierz/channel normalization does not choose between endpoints
+
+PART 3: invariance controls
+  kappa=0: scaled readouts=[Fraction(8, 9), Fraction(8, 9), Fraction(8, 9)]
+PASS: CMT scale invariance holds for kappa=0
+  kappa=1/2: scaled readouts=[Fraction(17, 18), Fraction(17, 18), Fraction(17, 18)]
+PASS: CMT scale invariance holds for kappa=1/2
+  kappa=1: scaled readouts=[Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)]
+PASS: CMT scale invariance holds for kappa=1
+PASS: CMT scale invariance admits connected and full endpoints
+PASS: positivity admits the whole sampled interval
+PASS: monotonicity orders the family but does not select zero
+
+PART 4: OZI-size bound firewall
+  kappa=0: R_phys=8/9, K_EW=9/8
+PASS: kappa=0 obeys the OZI-size window
+  kappa=1/16: R_phys=43/48, K_EW=48/43
+PASS: kappa=1/16 obeys the OZI-size window
+  kappa=1/8: R_phys=65/72, K_EW=72/65
+PASS: kappa=1/8 obeys the OZI-size window
+PASS: a nonzero bounded singlet coefficient remains allowed
+PASS: bounded OZI-size narrows but does not derive kappa=0
+PASS: exact zero would require epsilon=0 or an annihilation theorem
+
+PART 5: Route-2 magnitude consequence
+  kappa=0: q_E=15/8, rho_E=21/4
+  kappa=1/2: q_E=30/17, rho_E=78/17
+  kappa=1: q_E=5/3, rho_E=4
+PASS: kappa=0 gives rho_E=21/4 under Block68 orientation support
+PASS: kappa=1/2 misses rho_E=21/4
+PASS: kappa=1 misses rho_E=21/4
+PASS: Route-2 magnitude closure is exactly the connected selector endpoint
+
+PART 6: note and authority markers
+PASS: new note contains marker: Claim type:** no_go
+PASS: new note contains marker: Actual current-surface status: no-go for connected-current selector from equivariant two-channel data
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: normalization fixes the adjoint coefficient but leaves `kappa` free
+PASS: new note contains marker: connected-current projector
+PASS: new note contains marker: does not close the parent
+PASS: Rconn note states kappa_EW is free
+PASS: Rconn note says current packet does not derive kappa_EW=0
+PASS: Block68 leaves magnitude to kappa=0
+PASS: parent note still names the readout endpoint blocker
+PASS: new note avoids overclaim marker: status-authority phrase
+PASS: new note avoids overclaim marker: parent closure
+PASS: new note avoids overclaim marker: current-surface endpoint derivation
+PASS: new note avoids overclaim marker: audit ratification
+PASS: new note avoids overclaim marker: branch-local status-promotion
+PASS: new note avoids overclaim marker: future retention
+PASS: new note avoids overclaim marker: promotion-to-retention
+
+TOTAL: PASS=53, FAIL=0
+VERDICT: no-go for deriving kappa=0 from the current equivariant two-channel packet.  Exact kappa=0 requires a connected-current projector or equivalent singlet-annihilation theorem.

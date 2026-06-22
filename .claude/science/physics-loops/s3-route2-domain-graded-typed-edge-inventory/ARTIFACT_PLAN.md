@@ -7,4 +7,4 @@
 | `outputs/frontier_quark_route2_domain_graded_typed_edge_inventory_2026_06_22.txt` | Captured runner output | PASS=102, FAIL=0 |
 | Loop pack | Branch-local state and handoff | review-ready |
 | `PR_BODY.md` | Stacked PR body | added |
-| Science PR | Review surface | pending |
+| Science PR | Review surface | PR #4660 open |

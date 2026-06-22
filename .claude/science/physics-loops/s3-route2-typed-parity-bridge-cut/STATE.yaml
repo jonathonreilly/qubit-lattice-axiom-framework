@@ -7,7 +7,7 @@ block: 96
 branch: physics-loop/s3-route2-typed-parity-bridge-cut-block96-20260622
 base: physics-loop/s3-route2-anti-invariant-adjoint-typing-block95-20260622
 base_commit: 2097307ad
-science_commit: PENDING
+science_commit: 3152d07cf
 worktree: /private/tmp/cl3-physics-loop-s3-route2-typed-parity-bridge-cut-block96-20260622
 date: 2026-06-22
 mode: campaign
@@ -54,9 +54,9 @@ open_imports:
   - "Route-2 same-source typed parity source-Hessian theorem on the physical E/T readout."
   - "Anti-invariant E/T normalizer for the scalar coefficient bridge."
 review_disposition: static_verification_passed_no_audit_or_review_worker_run
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4683
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4683
 next_exact_action: >-
   Construct the same-source typed parity source-Hessian theorem on the physical
   E/T readout, or choose another typed readout primitive.

@@ -42,13 +42,13 @@ checkpoint:
     audit_pipeline_run: false
     note: "Branch-local review passed for scoped no-go/exact-support boundary. Audit pipeline intentionally not run; no audit verdict applied."
   pr:
-    number: null
-    url: null
-    title: null
-    state: null
+    number: 4646
+    url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4646"
+    title: "[physics-loop] s3-route2-direct-e-center-selector block115 no-go"
+    state: OPEN
     baseRefName: physics-loop/s3-route2-trivial-character-source-unit-block114-20260622
     headRefName: physics-loop/s3-route2-direct-e-center-selector-block115-20260622
-    identity_checked: false
+    identity_checked: true
     conflict_mergeability_checked: false
   next_exact_action: "Open stacked PR, then try to derive a physical center-readout law q_E-1=7/8 or pivot to T-side entry derivation."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

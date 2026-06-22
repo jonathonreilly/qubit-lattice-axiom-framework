@@ -36,9 +36,14 @@ Result: no-go / coordinate-selector boundary.
 
 ## PR
 
-Pending.
+- PR #4618: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4618
+- Branch: `physics-loop/s3-route2-lift-coordinate-selector-block87-20260621`
+- Base: `main`
+- Identity-only view was checked.
+- Conflict and mergeability state were not checked.
 
 ## Next Exact Action
 
-Run the Block87 runner and focused checks, then commit, push, open the PR, and
-record the PR identity. Do not check PR conflict or mergeability state.
+Continue the campaign with a typed `q_X` selector theorem attempt or a
+nonlinear observable route beyond quadratic Schur. Do not check PR conflict or
+mergeability state.

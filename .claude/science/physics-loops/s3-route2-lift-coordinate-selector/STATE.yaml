@@ -33,6 +33,13 @@ files_touched:
 open_imports:
   - "typed multiplicative-lift coordinate selector"
   - "equivalent source/readout theorem proving inverse-square weights scale q_X"
-pr_status: pending
-next_exact_action: "Run the Block87 runner and focused checks, then commit, push, open the PR, and record PR identity."
+pr_status: open
+pr:
+  number: 4618
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4618"
+  title: "[physics-loop] s3-route2-lift-coordinate-selector block87 no-go"
+  head: physics-loop/s3-route2-lift-coordinate-selector-block87-20260621
+  base: main
+  state: OPEN
+next_exact_action: "Continue the campaign with a typed q_X selector theorem attempt or a nonlinear observable route beyond quadratic Schur."
 stop_condition: "Continue campaign unless runtime expires, core tooling fails globally, or the queue is globally exhausted."

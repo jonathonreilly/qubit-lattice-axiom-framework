@@ -51,7 +51,14 @@ PASS overclaim marker scan
 
 ## PR
 
-To be filled after PR creation.
+```text
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4673
+Number: 4673
+State: OPEN
+Base: physics-loop/s3-route2-scalar-extension-adjoint-no-go-block85-20260622
+Head: physics-loop/s3-route2-factorized-color-source-extension-block86-20260622
+Science commit: 43335ce1a
+```
 
 ## Next Exact Action
 

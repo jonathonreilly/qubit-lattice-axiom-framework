@@ -1,0 +1,66 @@
+loop_slug: s3-route2-hidden-adjoint-carrier
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 84
+branch: physics-loop/s3-route2-hidden-adjoint-carrier-block84-20260622
+base: physics-loop/s3-route2-same-source-color-readout-primitive-block83-20260622
+base_commit: 3d95b76d1
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-hidden-adjoint-carrier-block84-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes_hidden_adjoint_carrier_route
+active_route: Hidden adjoint carrier search
+hard_residual: >-
+  Determine whether the current Route-2 K_R definition already hides an
+  SU(3)-adjoint / End(C^3) color-source slot.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+repo_lock:
+  mode: degraded_branch_local
+  reason: "python3 scripts/automation_lock.py status fails with Permission denied on /Users/jonreilly"
+files_touched:
+  - docs/QUARK_ROUTE2_HIDDEN_ADJOINT_CARRIER_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_hidden_adjoint_carrier_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_hidden_adjoint_carrier_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-hidden-adjoint-carrier/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_hidden_adjoint_carrier_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hidden_adjoint_carrier_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_bilinear_tensor_primitive.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_same_source_color_readout_primitive_obstruction_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_su3_record_ensemble_transfer_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py"
+  - "git diff --check"
+  - "STATE.yaml parse"
+  - "ASCII scan"
+  - "overclaim marker scan"
+command_results:
+  - "PASS py_compile"
+  - "PASS Block84 hidden adjoint carrier no-go: TOTAL: PASS=60, FAIL=0"
+  - "PASS S3 bilinear tensor primitive: PASS=4 FAIL=0 TOTAL=4"
+  - "PASS Route-2 exact time coupling: PASS=8 FAIL=0"
+  - "PASS Route-2 exact readout map: PASS=11 FAIL=0"
+  - "PASS Block83 same-source color-readout primitive obstruction: TOTAL: PASS=68, FAIL=0"
+  - "PASS Block82 color-SU3 record-ensemble transfer no-go: TOTAL: PASS=64, FAIL=0"
+  - "PASS Route-2 source-domain bridge no-go: TOTAL: PASS=103, FAIL=0"
+  - "PASS static checks"
+imports_retired:
+  - "The route that the current K_R definition already hides an SU(3)-adjoint color-source slot."
+open_imports:
+  - "Route-2 adjoint color-source extension theorem."
+review_disposition: ready_for_review
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct a Route-2 adjoint color-source extension theorem outside the
+  current K_R definition, or prove a broader no-go for such extensions.
+stop_condition: none

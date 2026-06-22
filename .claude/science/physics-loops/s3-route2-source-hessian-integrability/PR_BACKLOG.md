@@ -24,5 +24,9 @@ registry.
 PR:
 
 ```text
-PENDING
+Opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4685
+Number: 4685
+Title: [physics-loop] s3-route2 source hessian integrability block98 no-go
+State: OPEN
+Science commit: 12a122f70
 ```

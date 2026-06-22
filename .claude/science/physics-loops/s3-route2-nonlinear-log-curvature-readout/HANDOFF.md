@@ -36,8 +36,18 @@ Review disposition:
 - No repo-wide authority surfaces are updated.
 - PR conflicts/mergeability are not checked.
 
+PR:
+
+- Opened PR #4613:
+  `https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4613`
+- Base: `main`.
+- Head:
+  `physics-loop/s3-route2-nonlinear-log-curvature-readout-block82-20260621`.
+- Identity-only verification passed; PR conflict/mergeability state was not
+  checked.
+
 Next exact action:
 
-- Commit, push, and open the block82 PR.
-- Then attempt to derive the log-barrier primitive or Hessian-to-readout bridge
-  if runtime remains.
+- Attempt to derive the log-barrier primitive or Hessian-to-readout bridge
+  from Route-2/Record structure.
+- Do not refresh existing PRs to `main` and do not check PR conflicts.

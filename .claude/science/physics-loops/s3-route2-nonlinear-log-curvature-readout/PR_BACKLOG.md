@@ -1,6 +1,6 @@
 # PR Backlog
 
-Planned PR:
+Opened PR:
 
 ```bash
 gh pr create \
@@ -11,7 +11,13 @@ gh pr create \
   --body-file .claude/science/physics-loops/s3-route2-nonlinear-log-curvature-readout/PR_BODY.md
 ```
 
-Status: pending create.
+Status: open.
+
+- PR: `https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4613`
+- Number: `4613`
+- Title: `[physics-loop] s3-route2-nonlinear-log-curvature block82 bounded-support`
+- Head: `physics-loop/s3-route2-nonlinear-log-curvature-readout-block82-20260621`
+- Base: `main`
 
 Notes:
 

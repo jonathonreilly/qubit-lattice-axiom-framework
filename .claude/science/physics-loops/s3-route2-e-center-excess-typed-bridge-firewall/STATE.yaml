@@ -7,6 +7,7 @@ block: 65
 branch: physics-loop/s3-route2-e-center-excess-typed-bridge-firewall-block65-20260622
 base: physics-loop/s3-route2-nonlinear-source-law-classification-block64-20260622
 base_commit: e9c6e80a6
+local_science_commit: ab04f609d595fcf376a8b6608c3ad3811d367406
 worktree: /private/tmp/cl3-physics-loop-s3-route2-e-center-excess-typed-bridge-firewall-block65-20260622
 date: 2026-06-22
 mode: campaign
@@ -62,8 +63,11 @@ open_imports:
   - "A direct E-center readout theorem deriving q_E - 1 = 7/8."
   - "A typed source-domain bridge deriving c_TE = -8/9."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending
+pr_status: open
+pr_number: 4651
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4651
+pr_identity_view: >-
+  {"baseRefName":"physics-loop/s3-route2-nonlinear-source-law-classification-block64-20260622","headRefName":"physics-loop/s3-route2-e-center-excess-typed-bridge-firewall-block65-20260622","number":4651,"state":"OPEN","title":"[physics-loop] s3-route2-e-center-excess-typed-bridge-firewall block65 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4651"}
 next_exact_action: >-
-  Commit, push, and open a stacked review PR. Then attempt a direct E-center
-  readout theorem from the restricted family.
+  Attempt a direct E-center readout theorem from the restricted family.
 stop_condition: none

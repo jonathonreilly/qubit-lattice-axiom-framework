@@ -61,13 +61,20 @@ checkpoint:
     disposition: pass
     audit_pipeline_run: false
   pr:
-    number: null
-    url: null
-    title: null
-    state: null
-    baseRefName: null
-    headRefName: null
-    identity_checked: false
+    number: 4636
+    url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4636"
+    title: "[physics-loop] s3-route2-direct-e-center-source-row block105 exact-support"
+    state: OPEN
+    baseRefName: "physics-loop/s3-route2-power-law-coordinate-bridge-block104-20260622"
+    headRefName: "physics-loop/s3-route2-direct-e-center-source-row-block105-20260622"
+    identity_checked: true
+    identity_check_fields:
+      - number
+      - url
+      - title
+      - state
+      - baseRefName
+      - headRefName
     conflict_mergeability_checked: false
-  next_exact_action: "Commit, push, and open stacked PR without conflict checks."
+  next_exact_action: "Continue campaign with the next target: derive the physical source-row degree d=-2, homogeneous coordinate bridge, or equivalent typed E-center lift primitive."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

@@ -1,0 +1,60 @@
+Route-2 R_conn typed-bridge factorization
+Status: no-go for typed R_conn bridge closure; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: exact support and target
+PASS: SU(3) adjoint fraction is 8/9
+      F_adj=8/9
+PASS: connected selector kappa=0 gives R_phys=8/9
+PASS: full selector kappa=1 gives R_phys=1
+PASS: half selector kappa=1/2 gives R_phys=17/18
+PASS: target center ratio -8/9 gives q_E=15/8
+PASS: target center ratio -8/9 gives rho_E=21/4
+
+PART 2: two-switch bridge classifier
+  sigma=-1, kappa=0: R_phys=8/9, c_TE=-8/9, q_E=15/8, rho_E=21/4
+  sigma=+1, kappa=0: R_phys=8/9, c_TE=8/9, q_E=-15/8, rho_E=-69/4
+  sigma=-1, kappa=1: R_phys=1, c_TE=-1, q_E=5/3, rho_E=4
+  sigma=+1, kappa=1: R_phys=1, c_TE=1, q_E=-5/3, rho_E=-16
+  sigma=-1, kappa=1/2: R_phys=17/18, c_TE=-17/18, q_E=30/17, rho_E=78/17
+  sigma=+1, kappa=1/2: R_phys=17/18, c_TE=17/18, q_E=-30/17, rho_E=-282/17
+PASS: only sigma=-1 with kappa=0 lands in the tested physical selector set
+      [(-1, Fraction(0, 1))]
+PASS: connected selector alone is insufficient without the negative orientation sign
+PASS: negative orientation sign alone is insufficient without the connected selector
+PASS: intermediate disconnected coefficient misses the endpoint
+PASS: wrong sign sends the connected selector to wrong signed q_E
+
+PART 3: exact solution over the selector line
+  sigma=-1 target kappa = 0
+  sigma=+1 target kappa = -16
+PASS: negative orientation requires kappa=0 exactly
+PASS: positive orientation would require unphysical kappa=-16
+PASS: physical selector interval contains only the negative-orientation solution
+PASS: target bridge is equivalent to the pair (sigma=-1, kappa=0)
+
+PART 4: import-boundary split
+PASS: RCONN repair leaves kappa_EW as a selector
+PASS: bridge obstruction names c_TE=-F_adj as the missing identification
+PASS: source-domain no-go says no current typed edge supplies the bridge
+PASS: Block66 classifies c_TE=-8/9 as a non-invariant E-center premise
+PASS: new note contains marker: Claim type:** no_go
+PASS: new note contains marker: Actual current-surface status: no-go for typed R_conn bridge closure
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: two independent switches
+PASS: new note contains marker: connected-trace selector `kappa=0`
+PASS: new note contains marker: orientation sign `sigma=-1`
+PASS: new note avoids overclaim marker: status-authority phrase
+PASS: new note avoids overclaim marker: parent closure
+PASS: new note avoids overclaim marker: current-surface endpoint derivation
+PASS: new note avoids overclaim marker: audit ratification
+PASS: new note avoids overclaim marker: branch-local status-promotion
+PASS: new note avoids overclaim marker: future retention
+PASS: new note avoids overclaim marker: promotion-to-retention
+
+PART 5: next target split
+PASS: Block67 exposes exactly two independent missing bridge switches
+PASS: proving both switches would force the endpoint algebra
+PASS: proving only one switch leaves a non-target witness
+
+TOTAL: PASS=35, FAIL=0
+VERDICT: the bridge c_TE=-R_conn requires two current-surface imports: connected selector kappa=0 and endpoint orientation sigma=-1.

@@ -23,5 +23,9 @@ Prune a bare formal source-coordinate registry as a proof of kappa=0.
 PR:
 
 ```text
-PENDING
+Opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4686
+Number: 4686
+Title: [physics-loop] s3-route2 formal source coordinate registry block99 no-go
+State: OPEN
+Science commit: 173a26afb
 ```

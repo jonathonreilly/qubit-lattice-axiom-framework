@@ -28,6 +28,7 @@ files_touched:
   - scripts/frontier_quark_route2_domain_graded_typed_edge_inventory_2026_06_22.py
   - outputs/frontier_quark_route2_domain_graded_typed_edge_inventory_2026_06_22.txt
   - .claude/science/physics-loops/s3-route2-domain-graded-typed-edge-inventory/
+science_commit: 9dea16d4d4ba7fcdb629f7f88a8514792f2c081c
 commands_run: []
 commands_run:
   - "python3 -m py_compile scripts/frontier_quark_route2_domain_graded_typed_edge_inventory_2026_06_22.py"
@@ -59,7 +60,19 @@ open_imports:
   - "The cross-domain bridge R_conn -> c_TE=-8/9."
   - "A connected-cumulant / disconnected-subtraction readout selector theorem."
 review_disposition: pass
-pr_status: pending
+pr_status: open
+pr_number: 4660
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4660
+pr_identity:
+  number: 4660
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4660
+  title: "[physics-loop] s3-route2-domain-graded-typed-edge-inventory block74 bounded-support"
+  state: OPEN
+  baseRefName: physics-loop/s3-route2-local-current-singlet-annihilation-block73-20260622
+  headRefName: physics-loop/s3-route2-domain-graded-typed-edge-inventory-block74-20260622
 next_exact_action: >-
-  Run static scans, commit, push, and open the stacked PR.
+  For the next campaign goal, attack the remaining cross-domain bridge
+  directly: R_conn -> c_TE=-8/9, or an equivalent connected-cumulant typed
+  source/readout theorem, without repeating generated-inventory or
+  local-current routes.
 stop_condition: none

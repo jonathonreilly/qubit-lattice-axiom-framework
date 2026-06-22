@@ -48,8 +48,27 @@ No audit verdict was applied.
 
 ## PR
 
-Pending.
+Open:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4660
+```
+
+Science commit:
+
+```text
+9dea16d4d4ba7fcdb629f7f88a8514792f2c081c
+```
+
+Identity-only verification:
+
+```json
+{"baseRefName":"physics-loop/s3-route2-local-current-singlet-annihilation-block73-20260622","headRefName":"physics-loop/s3-route2-domain-graded-typed-edge-inventory-block74-20260622","number":4660,"state":"OPEN","title":"[physics-loop] s3-route2-domain-graded-typed-edge-inventory block74 bounded-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4660"}
+```
 
 ## Next Exact Action
 
-Run static scans, commit, push, and open stacked PR.
+For the next campaign goal, attack the remaining cross-domain bridge directly:
+`R_conn -> c_TE=-8/9`, or an equivalent connected-cumulant typed
+source/readout theorem, without repeating generated-inventory or local-current
+routes.

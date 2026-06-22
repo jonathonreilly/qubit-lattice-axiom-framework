@@ -1,7 +1,9 @@
 # PR Backlog
 
-Pending PR creation for:
+No backlog item is active.
+
+Open PR:
 
 ```text
-physics-loop/s3-route2-domain-graded-typed-edge-inventory-block74-20260622
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4660
 ```

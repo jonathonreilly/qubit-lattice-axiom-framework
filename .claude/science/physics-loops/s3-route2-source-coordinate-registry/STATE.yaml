@@ -7,7 +7,7 @@ block: 99
 branch: physics-loop/s3-route2-source-coordinate-registry-block99-20260622
 base: physics-loop/s3-route2-source-hessian-integrability-block98-20260622
 base_commit: c16cfe50e
-science_commit: PENDING
+science_commit: 173a26afb
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-coordinate-registry-block99-20260622
 date: 2026-06-22
 mode: campaign
@@ -58,9 +58,9 @@ imports_retired:
 open_imports:
   - "Route-2 typed source-action/product registry theorem."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4686
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4686
 next_exact_action: >-
   Construct the Route-2 typed source-action/product registry theorem, or
   isolate the next missing typed readout primitive.

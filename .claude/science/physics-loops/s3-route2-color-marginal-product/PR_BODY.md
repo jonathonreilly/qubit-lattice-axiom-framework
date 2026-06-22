@@ -52,5 +52,10 @@ PASS banned overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+number: 4695
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4695
+title: [physics-loop] s3-route2 color marginal product block108 support
+base: physics-loop/s3-route2-nonbinary-product-normal-form-block107-20260622
+head: physics-loop/s3-route2-color-marginal-product-block108-20260622
+science_commit: e88852585
 ```

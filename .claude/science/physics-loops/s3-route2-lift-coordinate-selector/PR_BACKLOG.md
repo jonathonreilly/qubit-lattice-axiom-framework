@@ -1,12 +1,9 @@
 # PR Backlog
 
-PR pending. If `gh pr create` fails, use:
+No backlog entry remains for this block.
 
-```bash
-gh pr create \
-  --repo jonathonreilly/qubit-lattice-axiom-framework \
-  --base main \
-  --head physics-loop/s3-route2-lift-coordinate-selector-block87-20260621 \
-  --title "[physics-loop] s3-route2-lift-coordinate-selector block87 no-go" \
-  --body-file .claude/science/physics-loops/s3-route2-lift-coordinate-selector/PR_BODY.md
-```
+- PR #4618: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4618
+- Branch: `physics-loop/s3-route2-lift-coordinate-selector-block87-20260621`
+- Base: `main`
+- Identity-only view was checked.
+- Conflict and mergeability state were not checked.

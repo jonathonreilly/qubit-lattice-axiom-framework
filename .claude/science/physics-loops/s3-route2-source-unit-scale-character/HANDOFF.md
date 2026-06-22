@@ -48,13 +48,22 @@ Audit pipeline must not be run, and no audit verdict should be applied.
 
 ## PR
 
-Pending.
+Opened:
+
+```text
+number: 4644
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4644
+title: [physics-loop] s3-route2-source-unit-scale-character block113 no-go
+state: OPEN
+baseRefName: physics-loop/s3-route2-no-scale-curvature-coefficient-block112-20260622
+headRefName: physics-loop/s3-route2-source-unit-scale-law-block113-20260622
+```
+
+Identity was checked with `number,url,title,state,baseRefName,headRefName`
+only. Conflict and mergeability checks were not run.
 
 ## Next Exact Action
 
-Run verification, perform branch-local review, push the stacked science branch,
-and open a PR based on
-`physics-loop/s3-route2-no-scale-curvature-coefficient-block112-20260622`.
-
-After that, continue the campaign by attacking the stronger trivial-character
-source-unit theorem `chi(a)=1` or pivoting to a direct E-center theorem.
+Continue the campaign by attacking the stronger trivial-character source-unit
+theorem `chi(a)=1` from physical Route-2 source/action semantics, or pivot to
+a direct E-center theorem if that route stalls.

@@ -1,7 +1,7 @@
 # PR Backlog
 
-Pending PR creation for:
+No backlog for Block67.  PR opened:
 
 ```text
-physics-loop/s3-route2-rconn-typed-bridge-factorization-block67-20260622
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4653
 ```

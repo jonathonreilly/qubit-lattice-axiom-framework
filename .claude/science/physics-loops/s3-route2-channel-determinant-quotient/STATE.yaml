@@ -47,6 +47,9 @@ checks:
   - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py: PASS=12 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py: TOTAL PASS=14 FAIL=0"
 pr:
-  status: pending
-  url: null
-next_exact_action: "Run staged hygiene scans, then commit/push/open PR without conflict checks."
+  status: open
+  number: 4615
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4615"
+  identity_checked: true
+  conflict_or_mergeability_checked: false
+next_exact_action: "Continue campaign with the Hessian-to-E-center readout bridge or direct source-domain E-center primitive."

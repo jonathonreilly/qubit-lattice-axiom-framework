@@ -39,9 +39,15 @@ Result: no-go / conditional support boundary.
 
 ## PR
 
-Pending.
+Open:
+
+- PR #4615: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4615
+- Branch: `physics-loop/s3-route2-channel-determinant-quotient-block84-20260621`
+- Base: `main`
+- Identity-only view was checked.
+- Conflict and mergeability state were not checked.
 
 ## Next Exact Action
 
-Run staged hygiene scans, then commit, push, and open a PR without checking
-conflict or mergeability state.
+Continue the campaign with the Hessian-to-E-center readout bridge, or pivot to
+the direct source-domain E-center primitive if the Hessian route hits a wall.

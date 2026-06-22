@@ -13,3 +13,6 @@ Local review notes:
 - The no-go is narrow: determinant value alone does not select channel Hessian ratio.
 - Existing PRs are not refreshed to main.
 - PR conflict and mergeability state are not checked.
+
+PR #4615 opened for reviewer/backpressure handoff:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4615

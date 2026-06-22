@@ -7,7 +7,7 @@ block: 84
 branch: physics-loop/s3-route2-hidden-adjoint-carrier-block84-20260622
 base: physics-loop/s3-route2-same-source-color-readout-primitive-block83-20260622
 base_commit: 3d95b76d1
-science_commit: pending
+science_commit: 9e0303edd
 worktree: /private/tmp/cl3-physics-loop-s3-route2-hidden-adjoint-carrier-block84-20260622
 date: 2026-06-22
 mode: campaign
@@ -57,9 +57,16 @@ imports_retired:
 open_imports:
   - "Route-2 adjoint color-source extension theorem."
 review_disposition: ready_for_review
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4671
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4671
+pr_identity:
+  number: 4671
+  state: OPEN
+  title: "[physics-loop] s3-route2-hidden-adjoint-carrier block84 no-go"
+  baseRefName: physics-loop/s3-route2-same-source-color-readout-primitive-block83-20260622
+  headRefName: physics-loop/s3-route2-hidden-adjoint-carrier-block84-20260622
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4671
 next_exact_action: >-
   Construct a Route-2 adjoint color-source extension theorem outside the
   current K_R definition, or prove a broader no-go for such extensions.

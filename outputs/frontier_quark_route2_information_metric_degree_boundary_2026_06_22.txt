@@ -1,0 +1,58 @@
+Route-2 information-metric degree boundary
+==============================================================================
+
+A. Source-note and authority boundary
+PASS: new source note exists -- docs/QUARK_ROUTE2_INFORMATION_METRIC_DEGREE_BOUNDARY_NOTE_2026-06-22.md
+PASS: new note declares no-go status
+PASS: new note declares no_go claim type
+PASS: new note scopes the no-go to standard information metrics
+PASS: new note leaves log-barrier route open
+PASS: docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md contains required markers -- sum_i dp_i^2 / p_i, does **not** claim, physical source
+PASS: docs/RECORD_BORN_FREQUENCY_BOUNDARY_2026-06-05.md contains required markers -- derive a Born-frequency law, probability model is supplied
+PASS: docs/QUARK_ROUTE2_LOG_WEIGHT_SECOND_VARIATION_ROW_BOUNDARY_NOTE_2026-06-22.md contains required markers -- second variation gives, first variation gives degree `-1`
+PASS: docs/QUARK_ROUTE2_RECORD_ADDITIVE_SECOND_VARIATION_NO_GO_NOTE_2026-06-22.md contains required markers -- does not derive the Block107 premise, source-action, metric, log-barrier, Hessian
+PASS: docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains required markers -- endpoint triple, not yet derived
+
+B. Standard information metric degree
+PASS: Fisher coefficient has degree -1
+PASS: Shannon convex Hessian has coefficient 1/w
+PASS: local KL quadratic coefficient has coefficient 1/(2w)
+PASS: Poisson/intensity Fisher coefficient has coefficient 1/w
+PASS: information metric E/T ratio is 3/2 -- ratio=3/2
+PASS: information metric ratio misses 9/4
+
+C. Endpoint consequence
+PASS: information metric gives q_E=5/4 -- q_E=5/4
+PASS: information metric gives rho_E=3/2 -- rho_E=3/2
+PASS: information metric gives c_TE=-4/3 -- c_TE=-4/3
+PASS: information metric misses q_E=15/8
+PASS: information metric misses rho_E=21/4
+PASS: information metric misses c_TE=-8/9
+PASS: Block107 first-variation row has same ratio
+
+D. Inverse-square comparator
+PASS: inverse-square comparator has degree -2
+PASS: inverse-square E/T ratio is 9/4 -- ratio=9/4
+PASS: inverse-square route gives q_E=15/8 -- q_E=15/8
+PASS: inverse-square route gives rho_E=21/4 -- rho_E=21/4
+PASS: inverse-square route gives c_TE=-8/9 -- c_TE=-8/9
+PASS: degree gap is exactly one inverse power
+
+E. Candidate-family scan
+PASS: integer scan identifies target degree -2 -- target_degrees=[-2]
+PASS: integer scan identifies information degree -1 -- info_degrees=[-1]
+PASS: degree -1 and -2 are distinct routes
+PASS: constant metric degree 0 misses endpoint
+PASS: direct probability weight degree +1 misses endpoint
+PASS: quadratic probability weight degree +2 misses endpoint
+
+F. Current-surface boundary
+PASS: note records forbidden proof-input firewall
+PASS: note keeps endpoint target open
+PASS: note identifies the sharper positive target
+PASS: note avoids endpoint closure rhetoric
+PASS: new note has no retained proposal wording
+
+==============================================================================
+TOTAL: PASS=40, FAIL=0
+STATUS: no-go. Standard Fisher/KL/Shannon information metrics have inverse-linear degree -1 on the positive weight coordinate, giving the Block107 first-variation miss rather than the inverse-square endpoint route.

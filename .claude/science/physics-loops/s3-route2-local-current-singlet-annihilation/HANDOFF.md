@@ -51,8 +51,26 @@ No audit verdict was applied.
 
 ## PR
 
-Pending.
+Open:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4659
+```
+
+Science commit:
+
+```text
+b42ed5e43f2ca2bc4326d76d22baf3d94fa90014
+```
+
+Identity-only verification:
+
+```json
+{"baseRefName":"physics-loop/s3-route2-positive-e-center-domain-block72-20260622","headRefName":"physics-loop/s3-route2-local-current-singlet-annihilation-block73-20260622","number":4659,"state":"OPEN","title":"[physics-loop] s3-route2-local-current-singlet-annihilation block73 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4659"}
+```
 
 ## Next Exact Action
 
-Run static scans, commit, push, and open stacked PR.
+Continue the campaign by selecting a genuinely new typed source/readout target
+instead of repeating local-current, same-rational, finite-box comparator,
+direct readout-family, positive-domain, or full-trace-exclusion routes.

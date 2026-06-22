@@ -1,6 +1,12 @@
 # PR Backlog
 
-No backlog yet. Open the Block82 PR after verification:
+No backlog. Block82 PR is open:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4669
+```
+
+Recovery command if the PR must be recreated:
 
 ```text
 gh pr create --repo jonathonreilly/qubit-lattice-axiom-framework \

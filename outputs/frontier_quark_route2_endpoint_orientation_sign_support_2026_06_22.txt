@@ -1,0 +1,65 @@
+Route-2 endpoint orientation sign support
+Status: conditional-support for endpoint orientation sign; not an audit verdict.
+TRACE: upstream_support
+PART 1: endpoint sign theorem
+PASS: conditional q_T is positive
+      q_T=5/6
+PASS: conditional shell T/E orientation is negative
+      shell T/E=-2
+PASS: target q_E is positive
+      q_E=15/8
+PASS: endpoint algebra gives target c_TE=-8/9
+      c_TE=-8/9
+PASS: target center-ratio sign is negative
+PASS: target rho_E recovers 21/4
+
+PART 2: positive readout sign invariance
+  q_E=5/6: c_TE=-2, rho_E=-1
+PASS: q_E=5/6 has negative center T/E sign
+  q_E=1: c_TE=-5/3, rho_E=0
+PASS: q_E=1 has negative center T/E sign
+  q_E=15/8: c_TE=-8/9, rho_E=21/4
+PASS: q_E=15/8 has negative center T/E sign
+  q_E=2: c_TE=-5/6, rho_E=6
+PASS: q_E=2 has negative center T/E sign
+  q_E=30/17: c_TE=-17/18, rho_E=78/17
+PASS: q_E=30/17 has negative center T/E sign
+PASS: negative q_E flips sign and is excluded by the positivity premise
+PASS: zero q_E is excluded from the ratio domain
+PASS: for all positive samples, sign(c_TE)=sign(shell T/E)
+
+PART 3: magnitude remains the selector problem
+  kappa=0: c_TE=-R_phys=-8/9, q_E=15/8, rho_E=21/4
+  kappa=1/2: c_TE=-R_phys=-17/18, q_E=30/17, rho_E=78/17
+  kappa=1: c_TE=-R_phys=-1, q_E=5/3, rho_E=4
+PASS: negative orientation plus kappa=0 lands on rho_E=21/4
+PASS: negative orientation plus kappa=1/2 misses the target
+PASS: negative orientation plus kappa=1 misses the target
+PASS: sign support alone does not select magnitude
+PASS: the remaining exact selector is kappa=0
+
+PART 4: note and authority markers
+PASS: new note contains marker: Claim type:** bounded_support
+PASS: new note contains marker: Actual current-surface status: conditional-support for endpoint orientation sign
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: sign(c_TE)=sign(shell T/E)=-1
+PASS: new note contains marker: magnitude remains open
+PASS: new note contains marker: connected selector `kappa=0`
+PASS: Block67 names sigma=-1 as an exposed switch
+PASS: exact readout note gives the endpoint algebra
+PASS: parent note still names the readout endpoint blocker
+PASS: new note avoids overclaim marker: status-authority phrase
+PASS: new note avoids overclaim marker: parent closure
+PASS: new note avoids overclaim marker: current-surface endpoint derivation
+PASS: new note avoids overclaim marker: audit ratification
+PASS: new note avoids overclaim marker: branch-local status-promotion
+PASS: new note avoids overclaim marker: future retention
+PASS: new note avoids overclaim marker: promotion-to-retention
+
+PART 5: trace update
+PASS: orientation sign is conditional support, not endpoint magnitude closure
+PASS: the next target is connected selector kappa=0
+PASS: without kappa=0 the endpoint triple remains open
+
+TOTAL: PASS=38, FAIL=0
+VERDICT: sign(c_TE)=-1 is conditional endpoint-orientation support under positive readouts and shell T/E=-2; magnitude still requires the connected selector kappa=0.

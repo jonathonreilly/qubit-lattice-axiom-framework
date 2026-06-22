@@ -18,3 +18,6 @@ Optional companion runner
 returned `TOTAL: PASS=13, FAIL=1` on a `t_balance` tolerance comparison. It is
 not used as a pass gate for this block; block85 checks the relevant boundary
 directly in its own verifier.
+
+PR #4616 opened for reviewer/backpressure handoff:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4616

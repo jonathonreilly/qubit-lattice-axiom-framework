@@ -49,8 +49,22 @@ Audit pipeline must not be run, and no audit verdict should be applied.
 
 ## PR
 
-Pending.
+Opened:
+
+```text
+number: 4641
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4641
+title: [physics-loop] s3-route2-log-action-cocycle block110 exact-support
+state: OPEN
+baseRefName: physics-loop/s3-route2-info-metric-degree-boundary-block109-20260622
+headRefName: physics-loop/s3-route2-log-action-cocycle-boundary-block110-20260622
+```
+
+Identity was checked with `number,url,title,state,baseRefName,headRefName`
+only. Conflict and mergeability checks were not run.
 
 ## Next Exact Action
 
-Commit, push, and open stacked PR without conflict checks.
+Start the next science block on the Route-2 source/readout primitive: prove or
+no-go the physical source action as a multiplicative log-action cocycle plus
+Hessian-row readout in `w`.

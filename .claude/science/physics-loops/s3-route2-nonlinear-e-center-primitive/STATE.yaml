@@ -45,9 +45,13 @@ checkpoint:
     iterations: 1
     audit_pipeline_regeneration: "skipped per active no-audit/no-verdict instruction"
   pr:
-    number: null
-    url: null
-    identity_checked: false
+    number: 4629
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4629
+    title: "[physics-loop] s3-route2-nonlinear-e-center-primitive block98 no-go"
+    state: OPEN
+    baseRefName: main
+    headRefName: physics-loop/s3-route2-nonlinear-e-center-primitive-block98-20260621
+    identity_checked: true
     conflict_mergeability_checked: false
-  next_exact_action: "Run Block98 runner and adjacent checks; perform branch-local review; commit, push, and open PR without mergeability checks."
+  next_exact_action: "Continue the campaign with a first-principles stretch attempt on the typed metric/source primitive for q_X w_X^2 = 5/24; do not check PR conflict or mergeability state."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

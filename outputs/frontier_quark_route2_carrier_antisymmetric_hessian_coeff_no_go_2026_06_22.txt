@@ -1,0 +1,66 @@
+Route-2 carrier antisymmetric Hessian coefficient no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block89 leaves E/T coefficient normalization open
+PASS: Block89 names the connected-Hessian coefficient theorem
+PASS: carrier handoff has Z2 isotypic decomposition
+PASS: carrier handoff says current primitives lie in symmetric component
+PASS: carrier handoff says no exact antisymmetric primitive found
+PASS: carrier result leaves registry closure open
+PASS: carrier imports list Theta and Xi as bounded
+PASS: carrier imports list exact primitive registry as an assumption
+
+PART 2: E/T output-space decomposition
+PASS: E/T coefficient space has dimension two
+PASS: swap fixes the symmetric line
+PASS: swap flips the antisymmetric line
+PASS: symmetric and antisymmetric lines sum to dimension two
+PASS: a generic coefficient vector has both lines
+PASS: symmetric line alone does not distinguish E from T
+PASS: antisymmetric line distinguishes E from T
+
+PART 3: candidate status table
+  Theta_R_0: bounded, not_exact_coefficient_theorem
+PASS: Theta_R_0 has a tracked status
+  Xi_R_0: bounded, not_exact_coefficient_theorem
+PASS: Xi_R_0 has a tracked status
+  active_H_basis: not_directly_on_carrier_columns, not_ET_output_coefficient
+PASS: active_H_basis has a tracked status
+  exact_antisymmetric_carrier_primitive: open, missing
+PASS: exact_antisymmetric_carrier_primitive has a tracked status
+PASS: Theta is not the exact coefficient theorem
+PASS: Xi is not the exact coefficient theorem
+PASS: the exact antisymmetric primitive is missing
+PASS: no listed current candidate closes Block89
+
+PART 4: reachability
+PASS: carrier orbit result does not reach coefficient normalization
+PASS: carrier orbit result reaches no-current-primitive node
+PASS: Block89 connected Hessian reaches free coefficients
+PASS: adding exact antisymmetric primitive reaches typed bridge
+PASS: graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for deriving Hessian E/T coefficient normalization
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not perform a registry audit
+PASS: note contains marker: C^2 = C(1,1) + C(1,-1)
+PASS: note contains marker: exact antisymmetric E/T coefficient primitive
+PASS: note contains marker: Route-2 exact antisymmetric E/T Hessian-coefficient primitive
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block90 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names antisymmetric E/T primitive
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=48, FAIL=0
+VERDICT: current carrier-orbit support does not supply the exact antisymmetric E/T coefficient primitive needed for Hessian normalization.

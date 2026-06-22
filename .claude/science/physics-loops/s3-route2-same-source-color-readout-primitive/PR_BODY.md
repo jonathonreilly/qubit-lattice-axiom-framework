@@ -64,3 +64,13 @@ PASS overclaim marker scan
 - No audit verdicts were applied.
 - No endpoint value was used.
 - This is stacked on Block82 and does not push to main.
+
+## PR Identity
+
+```text
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4670
+Number: 4670
+Base: physics-loop/s3-route2-color-su3-record-ensemble-transfer-block82-20260622
+Head: physics-loop/s3-route2-same-source-color-readout-primitive-block83-20260622
+Science commit: 99f2353e3
+```

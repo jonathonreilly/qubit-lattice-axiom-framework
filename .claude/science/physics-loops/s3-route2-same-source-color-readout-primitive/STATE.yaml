@@ -7,7 +7,7 @@ block: 83
 branch: physics-loop/s3-route2-same-source-color-readout-primitive-block83-20260622
 base: physics-loop/s3-route2-color-su3-record-ensemble-transfer-block82-20260622
 base_commit: 82c5a57e5
-science_commit: pending
+science_commit: 99f2353e3
 worktree: /private/tmp/cl3-physics-loop-s3-route2-same-source-color-readout-primitive-block83-20260622
 date: 2026-06-22
 mode: campaign
@@ -65,9 +65,16 @@ open_imports:
   - "Nontrivial SU(3) action or End(C^3) variable on the Route-2 source/readout surface."
   - "Same-source scalar-line/disconnected and sl_3/connected typing for that new carrier."
 review_disposition: ready_for_review
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4670
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4670
+pr_identity:
+  number: 4670
+  state: OPEN
+  title: "[physics-loop] s3-route2-same-source-color-readout-primitive block83 no-go"
+  baseRefName: physics-loop/s3-route2-color-su3-record-ensemble-transfer-block82-20260622
+  headRefName: physics-loop/s3-route2-same-source-color-readout-primitive-block83-20260622
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4670
 next_exact_action: >-
   Construct a Route-2 adjoint color-source carrier theorem, or prove a broader
   no-go for scalar E/T Route-2 readouts without color-adjoint source slots.

@@ -56,7 +56,13 @@ PASS banned overclaim marker scan
 ## PR
 
 ```text
-PENDING
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4689
+Number: 4689
+Title: [physics-loop] s3-route2 binary product normal form block102 conditional-support
+State: OPEN
+Base: physics-loop/s3-route2-pcal-moment-realization-block101-20260622
+Head: physics-loop/s3-route2-binary-product-normal-form-block102-20260622
+Science commit: 5e6baa4a8
 ```
 
 ## Next Exact Action

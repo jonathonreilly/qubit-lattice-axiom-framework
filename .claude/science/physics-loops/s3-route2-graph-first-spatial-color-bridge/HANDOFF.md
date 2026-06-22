@@ -56,7 +56,23 @@ Passed:
 
 ## PR
 
-Pending.
+Open:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4662
+```
+
+Science commit:
+
+```text
+c4542d03c
+```
+
+Identity-only verification:
+
+```json
+{"baseRefName":"physics-loop/s3-route2-domain-graded-typed-edge-inventory-block74-20260622","headRefName":"physics-loop/s3-route2-graph-first-spatial-color-bridge-block75-20260622","number":4662,"state":"OPEN","title":"[physics-loop] s3-route2-graph-first-spatial-color-bridge block75 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4662"}
+```
 
 ## Next Exact Action
 

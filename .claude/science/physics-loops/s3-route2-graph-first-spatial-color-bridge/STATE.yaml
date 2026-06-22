@@ -28,6 +28,7 @@ files_touched:
   - scripts/frontier_quark_route2_graph_first_spatial_color_bridge_no_go_2026_06_22.py
   - outputs/frontier_quark_route2_graph_first_spatial_color_bridge_no_go_2026_06_22.txt
   - .claude/science/physics-loops/s3-route2-graph-first-spatial-color-bridge/
+science_commit: c4542d03c
 commands_run:
   - "python3 -m py_compile scripts/frontier_quark_route2_graph_first_spatial_color_bridge_no_go_2026_06_22.py"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_graph_first_spatial_color_bridge_no_go_2026_06_22.py"
@@ -63,10 +64,16 @@ open_imports:
   - "The endpoint orientation sign sigma=-1."
   - "A connected-cumulant / disconnected-subtraction readout selector theorem forcing kappa=0."
 review_disposition: pass
-pr_status: pending
-pr_number: null
-pr_url: null
-pr_identity: null
+pr_status: open
+pr_number: 4662
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4662
+pr_identity:
+  number: 4662
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4662
+  title: "[physics-loop] s3-route2-graph-first-spatial-color-bridge block75 no-go"
+  state: OPEN
+  baseRefName: physics-loop/s3-route2-domain-graded-typed-edge-inventory-block74-20260622
+  headRefName: physics-loop/s3-route2-graph-first-spatial-color-bridge-block75-20260622
 next_exact_action: >-
   Attack the missing typed graph/color-to-cubic-readout functor directly, or
   attack an independent connected-cumulant theorem forcing kappa=0.

@@ -37,11 +37,14 @@ Result: no-go / exact support boundary.
 
 ## PR
 
-Pending.
+- PR #4621: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4621
+- Branch: `physics-loop/s3-route2-time-coupling-direct-consumer-block90-20260621`
+- Base: `main`
+- Identity-only view was checked.
+- Conflict and mergeability state were not checked.
 
 ## Next Exact Action
 
-Run focused checks, commit, push, open one PR, and record PR identity without
-checking conflict or mergeability state. After that, continue the campaign by
-returning to a positive normalized-quotient readout selector attempt if one is
-visible.
+Continue the campaign by returning to a positive normalized-quotient readout
+selector attempt if one is visible. Do not check PR conflict or mergeability
+state.

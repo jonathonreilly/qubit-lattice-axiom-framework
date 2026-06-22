@@ -37,6 +37,9 @@ checks:
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py: TOTAL PASS=14 FAIL=0"
   - "optional companion not used as pass gate: frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py returned TOTAL PASS=13 FAIL=1 on t_balance tolerance"
 pr:
-  status: pending
-  url: null
-next_exact_action: "Run staged hygiene scans, then commit/push/open PR without conflict checks."
+  status: open
+  number: 4616
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4616"
+  identity_checked: true
+  conflict_or_mergeability_checked: false
+next_exact_action: "Continue campaign with a direct source-domain E-center primitive or a direct consumer ambiguity packet for S3 time coupling."

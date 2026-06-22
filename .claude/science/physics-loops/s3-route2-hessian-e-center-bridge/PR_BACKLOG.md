@@ -1,9 +1,10 @@
 # PR Backlog
 
-No PR backlog yet. `gh` is expected to be available.
+No backlog item remains for block85.
 
-If PR creation fails, use:
+Opened PR:
 
-```bash
-gh pr create --repo jonathonreilly/qubit-lattice-axiom-framework --base main --head physics-loop/s3-route2-hessian-e-center-bridge-block85-20260621 --title "[physics-loop] s3-route2-hessian-e-center-bridge block85 no-go" --body-file .claude/science/physics-loops/s3-route2-hessian-e-center-bridge/PR_BODY.md
-```
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4616
+
+Identity fields checked only: number, URL, title, head branch, base branch,
+and state. Conflict and mergeability state were not checked.

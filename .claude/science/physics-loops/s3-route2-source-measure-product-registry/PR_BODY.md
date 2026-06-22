@@ -53,5 +53,11 @@ PASS banned overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4687
+Number: 4687
+Title: [physics-loop] s3-route2 source measure product registry block100 no-go
+State: OPEN
+Base: physics-loop/s3-route2-source-coordinate-registry-block99-20260622
+Head: physics-loop/s3-route2-source-measure-product-registry-block100-20260622
+Science commit: 94a86ee07
 ```

@@ -42,7 +42,18 @@ Review disposition:
 - No repo-wide authority surfaces were updated.
 - PR conflicts/mergeability were not checked.
 
+PR:
+
+- Number: #4608
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4608
+- Title: `[physics-loop] s3-route2-independent-et-selector block77 no-go`
+- Head: `physics-loop/s3-route2-independent-et-channel-selector-block77-20260621`
+- Base: `main`
+- State: `OPEN`
+- Conflict/mergeability check: not run per campaign instruction.
+
 Next exact action:
 
-- Commit, publish branch, and open the block77 PR.
-- Then pivot to the next campaign target if runtime remains.
+- Pivot to the next campaign target if runtime remains.
+- Highest-value next targets: inverse-square coefficient-law theorem or
+  affine A1 coefficient `7/2` source-excess route.

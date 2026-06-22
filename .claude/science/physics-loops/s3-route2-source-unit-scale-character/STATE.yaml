@@ -1,0 +1,55 @@
+loop_slug: s3-route2-source-unit-scale-character
+block: 113
+date: 2026-06-22
+branch: physics-loop/s3-route2-source-unit-scale-law-block113-20260622
+base: physics-loop/s3-route2-no-scale-curvature-coefficient-block112-20260622@9854d36e3
+stacked_on_pr: 4643
+mode: campaign
+target_status: best-honest-status
+active_route: Source-unit scale-character coefficient boundary
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+hard_residual: "Derive the physical Route-2 source-unit theorem forcing the trivial coefficient character chi(a)=1, or bypass the Hessian route with a direct E-center theorem."
+lock_mode: branch_local_worktree
+files_touched:
+  - docs/QUARK_ROUTE2_SOURCE_UNIT_SCALE_CHARACTER_BOUNDARY_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_source_unit_scale_character_boundary_2026_06_22.py
+  - outputs/frontier_quark_route2_source_unit_scale_character_boundary_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-source-unit-scale-character/
+open_imports:
+  - "No current-surface theorem derives the trivial coefficient character chi(a)=1."
+  - "No current-surface theorem derives physical positive-ray source-action semantics for Route-2."
+  - "No current-surface theorem derives the endpoint triple."
+no_go_routes:
+  - "Regular scale-character covariance only gives g(w)=C w^m."
+  - "Nontrivial character weights m != 0 preserve covariance but miss the endpoint."
+  - "Endpoint matching inside the character family diagnoses m=0 but does not independently prove the source-unit law."
+checkpoint:
+  verification_results:
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_unit_scale_character_boundary_2026_06_22.py"
+    - "PASS: runner output matches outputs/frontier_quark_route2_source_unit_scale_character_boundary_2026_06_22.txt"
+    - "PASS: python3 -m py_compile scripts/frontier_quark_route2_source_unit_scale_character_boundary_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_no_scale_curvature_coefficient_no_go_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_action_primitive_boundary_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_log_action_cocycle_hessian_boundary_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+    - "PASS: git diff --check"
+    - "PASS: overclaim scan matched only runner guard strings"
+    - "NOT COUNTED: python3 scripts/frontier_source_measure_log_selection_boundary.py has an existing Tier-A registry phrase mismatch; generated cache side effect was restored."
+  review:
+    disposition: pass
+    audit_pipeline_run: false
+    note: "Branch-local review passed for scoped no-go/exact-support boundary. Audit pipeline intentionally not run; no audit verdict applied."
+  pr:
+    number: null
+    url: null
+    title: null
+    state: null
+    baseRefName: physics-loop/s3-route2-no-scale-curvature-coefficient-block112-20260622
+    headRefName: physics-loop/s3-route2-source-unit-scale-law-block113-20260622
+    identity_checked: false
+    conflict_mergeability_checked: false
+  next_exact_action: "Open stacked PR, then continue campaign by attacking the stronger trivial-character theorem chi(a)=1 or pivoting to a direct E-center theorem."
+  stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

@@ -1,0 +1,93 @@
+Route-2 same-source color-readout primitive obstruction
+Status: no-go for current P_R feature carrier as full color readout; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: current Route-2 P_R surface
+PASS: exact readout map gives channelwise P_R form
+PASS: exact readout map says carrier has disjoint E/T endpoint subspaces
+PASS: exact readout map keeps endpoint ratio theorem open
+PASS: exact readout map names missing E-channel map entry
+PASS: source-domain note separates support-side endpoint and color domains
+PASS: source-domain note says no current typed edge from color to endpoint ratio
+PASS: source-domain note keeps bridge theorem missing
+PASS: Block82 names MR_color plus Route-2 same-source theorem
+PASS: Block82 says current artifacts do not identify P_R as full color readout
+PASS: Block82 leaves full End(C^3) variation open
+
+PART 2: representation and rank obstruction
+PASS: dim End(C^3) = 9
+PASS: scalar disconnected line has dimension one
+PASS: connected color tangent sl_3 has dimension eight
+PASS: current Route-2 K_R feature carrier has dimension four
+PASS: current P_R output has dimension two
+PASS: current Route-2 feature carrier has only trivial SU(3) copies on the minimal surface
+PASS: Hom_SU3(sl_3_adjoint, trivial^4) has dimension zero
+PASS: equivariant connected color response into current K_R features is zero
+PASS: non-equivariant maps through K_R have centered rank at most four
+PASS: P_R outputs have centered color rank at most two
+PASS: current P_R feature carrier cannot be full sl_3 same-source variation
+
+PART 3: route family pruning
+PASS: MR_color_only: status is pruned
+      MR_color can assign color matter/records/link index, but it does not add an adjoint source slot to current P_R
+PASS: MR_color_only: names the needed output
+      same-source full End(C^3) P_R readout
+PASS: equivariant_map_into_current_K_R: status is pruned
+      the current K_R feature carrier is SU(3)-trivial, so the adjoint-to-trivial equivariant Hom is zero
+PASS: equivariant_map_into_current_K_R: names the needed output
+      nonzero sl_3 connected response
+PASS: non_equivariant_four_feature_selector: status is pruned
+      a four-feature selector has rank at most four and imports a color basis choice
+PASS: non_equivariant_four_feature_selector: names the needed output
+      full sl_3 tangent
+PASS: current_P_R_output_selector: status is pruned
+      the two-output E/T readout cannot preserve eight connected color directions
+PASS: current_P_R_output_selector: names the needed output
+      full sl_3 tangent
+PASS: new_adjoint_color_source_carrier: status is open
+      adding an explicit adjoint or End(C^3) source slot is the constructive primitive
+PASS: new_adjoint_color_source_carrier: names the needed output
+      same-source full End(C^3) P_R readout
+
+PART 4: reachability
+PASS: current_route2_surface does not reach full End(C^3) source
+PASS: current_route2_surface does not reach kappa=0 selector
+PASS: K_R_scalar_ET_features does not reach full End(C^3) source
+PASS: K_R_scalar_ET_features does not reach kappa=0 selector
+PASS: P_R_two_output_readout does not reach full End(C^3) source
+PASS: P_R_two_output_readout does not reach kappa=0 selector
+PASS: MR_color does not reach full End(C^3) source
+PASS: MR_color does not reach kappa=0 selector
+PASS: full End(C^3) source reaches kappa=0 when supplied
+PASS: adding adjoint source carrier lets MR_color reach full End(C^3)
+PASS: adding adjoint source carrier lets MR_color reach kappa=0
+PASS: base graph contains no endpoint-value node
+PASS: missing-edge graph contains no endpoint-value node
+
+PART 5: document and loop boundary
+PASS: new note contains marker: Actual current-surface status: no-go for the current P_R feature carrier as a same-source full color readout
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: No endpoint value is used
+PASS: new note contains marker: Hom_SU3(sl_3, trivial^4) = 0
+PASS: new note contains marker: rank at most four, not the eight-dimensional full sl_3 tangent
+PASS: new note contains marker: Route-2 adjoint color-source carrier theorem
+PASS: new note contains marker: current Route-2 feature carrier is SU(3)-trivial
+PASS: handoff contains marker: Block83 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: certificate marks bare retained wording disallowed
+PASS: trace gate records negative route pruning
+PASS: trace gate names adjoint color-source carrier
+PASS: packet avoids overclaim marker: branch-local status-promotion
+PASS: packet avoids overclaim marker: future retention
+PASS: packet avoids overclaim marker: promotion-to-retention
+PASS: packet avoids overclaim marker: actual-surface retention
+PASS: packet avoids overclaim marker: parent closure
+PASS: packet avoids overclaim marker: current-surface endpoint derivation
+PASS: packet avoids overclaim marker: audit ratification
+PASS: packet avoids overclaim marker: target-observation import
+PASS: packet avoids overclaim marker: data-tuned selector import
+
+TOTAL: PASS=68, FAIL=0
+VERDICT: the current scalar E/T P_R feature carrier cannot be the same-source full End(C^3) color readout; a Route-2 adjoint color-source carrier theorem is still missing.

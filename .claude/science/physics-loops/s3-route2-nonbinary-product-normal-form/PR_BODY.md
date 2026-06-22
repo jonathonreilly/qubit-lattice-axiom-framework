@@ -53,5 +53,10 @@ PASS banned overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+number: 4694
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4694
+title: [physics-loop] s3-route2 nonbinary product normal form block107 support
+base: physics-loop/s3-route2-log-odds-selector-stretch-block106-20260622
+head: physics-loop/s3-route2-nonbinary-product-normal-form-block107-20260622
+science_commit: 6f142bdb8
 ```

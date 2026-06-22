@@ -1,0 +1,60 @@
+loop_slug: s3-route2-invariant-scalar-output-coupling
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 87
+branch: physics-loop/s3-route2-invariant-scalar-output-coupling-block87-20260622
+base: physics-loop/s3-route2-factorized-color-source-extension-block86-20260622
+base_commit: f66244684
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-invariant-scalar-output-coupling-block87-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes_invariant_scalar_output_color_coupling
+active_route: Invariant scalar-output Route-2 color coupling
+hard_residual: >-
+  Determine whether a same-source color-dependent Route-2 readout can remain
+  a pair of invariant scalars while seeing the sl_3 connected tangent to first
+  order.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_INVARIANT_SCALAR_OUTPUT_COUPLING_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_invariant_scalar_output_coupling_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_invariant_scalar_output_coupling_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-invariant-scalar-output-coupling/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_invariant_scalar_output_coupling_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_invariant_scalar_output_coupling_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_factorized_color_source_extension_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_scalar_extension_adjoint_source_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_same_source_color_readout_primitive_obstruction_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_connected_color_source_transfer_no_go_2026_06_22.py"
+  - "git diff --check"
+  - "STATE.yaml parse"
+  - "ASCII scan"
+  - "overclaim marker scan"
+command_results:
+  - "PASS py_compile"
+  - "PASS Block87 invariant scalar-output coupling no-go: TOTAL: PASS=50, FAIL=0"
+  - "PASS Block86 factorized color-source extension no-go: TOTAL: PASS=44, FAIL=0"
+  - "PASS Block85 scalar-extension adjoint-source no-go: TOTAL: PASS=49, FAIL=0"
+  - "PASS Block83 same-source color-readout primitive obstruction: TOTAL: PASS=68, FAIL=0"
+  - "PASS Block78 connected color-source transfer no-go: TOTAL: PASS=51, FAIL=0"
+  - "PASS static checks"
+imports_retired:
+  - "The route that an invariant scalar-output P_R/E-T coupling can see the same-source sl_3 tangent to first order."
+open_imports:
+  - "Route-2 covariant color-readout family or orientation-free multi-record connected-cumulant source/readout theorem."
+review_disposition: ready_for_review
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct a covariant color-readout family or orientation-free multi-record
+  connected-cumulant source/readout theorem.
+stop_condition: none

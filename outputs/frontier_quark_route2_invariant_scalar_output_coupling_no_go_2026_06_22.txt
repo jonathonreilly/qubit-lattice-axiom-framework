@@ -1,0 +1,64 @@
+Route-2 invariant scalar-output coupling no-go
+TRACE: negative_route_pruning
+PART 1: source grounding
+PASS: exact readout note has two scalar P_R outputs
+PASS: exact readout note has four scalar feature coordinates
+PASS: Block83 says current P_R carrier cannot be full color readout
+PASS: Block83 names the adjoint color-source carrier theorem
+PASS: Block86 prunes color-blind factorized extension
+PASS: Block86 leaves color-sensitive source/readout coupling open
+PASS: Block78 supplies the positive color-source theorem only on its own source
+PASS: Block78 still needs same-source normalized color-matrix authority
+
+PART 2: invariant scalar-output representation obstruction
+PASS: End(C^3) has dimension nine
+PASS: trace scalar line has dimension one
+PASS: sl_3 connected tangent has dimension eight
+PASS: P_R/E-T scalar output has dimension two
+PASS: Hom_SU3(sl_3, C) has dimension zero
+PASS: Hom_SU3(sl_3, C^2) has dimension zero
+PASS: an imported adjoint covector would have eight choices
+PASS: imported covector is outside invariant scalar-output route
+
+PART 3: first-order scalar invariant derivatives
+PASS: Gell-Mann tangent basis has eight elements
+PASS: trace of I/3 is one
+PASS: trace of (I/3)^2 is one third
+PASS: trace of (I/3)^3 is one ninth
+PASS: every basis tangent is traceless
+PASS: first derivative of Tr(rho^1) vanishes on all sl_3 basis tangents
+PASS: first derivative of Tr(rho^2) vanishes on all sl_3 basis tangents
+PASS: first derivative of Tr(rho^3) vanishes on all sl_3 basis tangents
+PASS: an adjoint covector can make a nonzero linear response
+PASS: that response uses a supplied color orientation
+
+PART 4: route graph
+PASS: invariant scalar output does not reach kappa=0
+PASS: invariant scalar output reaches zero first-order response
+PASS: covariant readout family reaches kappa=0 route node
+PASS: multi-record cumulant route reaches kappa=0 route node
+PASS: external covector reaches response only by importing orientation
+PASS: graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for invariant scalar-output Route-2 color coupling
+PASS: note contains marker: A color-invariant scalar output has zero first-order response
+PASS: note contains marker: Hom_SU3(sl_3, C^2) = 0
+PASS: note contains marker: Route-2 covariant color-readout family or orientation-free multi-record
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block87 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names invariant scalar-output route
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=50, FAIL=0
+VERDICT: invariant scalar P_R/E-T output has zero first-order adjoint response without an added color-readout primitive.

@@ -55,10 +55,21 @@ checkpoint:
     audit_pipeline_run: false
     note: "Branch-local static review only; audit verdicts were not run or applied."
   pr:
-    number: null
-    url: null
-    identity_checked: false
+    number: 4630
+    url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4630"
+    title: "[physics-loop] s3-route2-typed-metric-source-inverse-square block99 exact-support"
+    state: OPEN
+    baseRefName: main
+    headRefName: physics-loop/s3-route2-typed-metric-source-inverse-square-block99-20260621
+    identity_checked: true
+    identity_check_fields:
+      - number
+      - url
+      - title
+      - state
+      - baseRefName
+      - headRefName
     conflict_mergeability_checked: false
-  next_exact_action: "Commit, push, and open Block99 PR without checking conflicts or mergeability; update PR identity fields afterward."
+  next_exact_action: "Continue campaign with a nonlinear Route-2 tensor/source observable deriving q_X w_X^2 = 5/24; fallback to a direct E-center-sensitive theorem deriving q_E = 15/8."
   recommended_next_campaign_target: "Attempt a nonlinear Route-2 tensor/source observable deriving q_X w_X^2 = 5/24; fallback to a direct E-center-sensitive theorem deriving q_E = 15/8."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

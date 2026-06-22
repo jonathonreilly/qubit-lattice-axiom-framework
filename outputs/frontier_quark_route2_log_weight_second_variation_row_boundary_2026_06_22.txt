@@ -1,0 +1,61 @@
+Route-2 log-weight second-variation row boundary
+==============================================================================
+
+A. Source-note and authority boundary
+PASS: new source note exists -- docs/QUARK_ROUTE2_LOG_WEIGHT_SECOND_VARIATION_ROW_BOUNDARY_NOTE_2026-06-22.md
+PASS: new note declares exact-support/open status
+PASS: new note states the positive primitive
+PASS: new note leaves physical primitive open
+PASS: new note has no retained proposal wording
+PASS: QUARK_ROUTE2_SOURCE_ROW_DEGREE_SELECTOR_NO_GO_NOTE_2026-06-22.md contains required boundary markers -- generic homogeneous source-row constraints do not select `d=-2`; degree selector is the missing import
+PASS: QUARK_ROUTE2_DIRECT_E_CENTER_SOURCE_ROW_DEGREE_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- homogeneous source-row degree `d=-2`; does not derive `d=-2`
+PASS: QUARK_ROUTE2_POWER_LAW_COORDINATE_BRIDGE_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- multiplicatively homogeneous; does not derive a homogeneous physical source coordinate
+PASS: QUARK_ROUTE2_RAY_QUOTIENT_HESSIAN_NO_SCALE_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- H(a w) = a^-2 H(w); H(w)=C/w^2
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains required boundary markers -- endpoint triple; not yet derived
+PASS: MINIMAL_AXIOMS_2026-06-05.md contains required boundary markers -- supplies no readout context
+
+B. Scale-shift second-variation theorem
+PASS: C/w^2 Hessian two-form is pullback-invariant under scale shifts
+PASS: second variation gives E/T ratio 9/4
+PASS: ordinary second derivative of log has row degree -2
+PASS: second derivative magnitude at w_E has inverse-square scaling
+PASS: second derivative magnitude at w_T has inverse-square scaling
+PASS: log second-variation coefficient ratio is 9/4
+
+C. Endpoint consequence
+PASS: second-variation row gives q_E=15/8 -- q_E=15/8
+PASS: second-variation row gives rho_E=21/4 -- rho_E=21/4
+PASS: second-variation row gives c_TE=-8/9 -- c_TE=-8/9
+PASS: endpoint triple follows under supplied T-side values
+
+D. Derivative-order falsifiers
+PASS: order 1 E/T ratio -- ratio=3/2
+PASS: order 1 q_E -- q_E=5/4
+PASS: order 1 rho_E -- rho_E=3/2
+PASS: order 1 c_TE -- c_TE=-4/3
+PASS: order 2 E/T ratio -- ratio=9/4
+PASS: order 2 q_E -- q_E=15/8
+PASS: order 2 rho_E -- rho_E=21/4
+PASS: order 2 c_TE -- c_TE=-8/9
+PASS: order 3 E/T ratio -- ratio=27/8
+PASS: order 3 q_E -- q_E=45/16
+PASS: order 3 rho_E -- rho_E=87/8
+PASS: order 3 c_TE -- c_TE=-16/27
+PASS: order 4 E/T ratio -- ratio=81/16
+PASS: order 4 q_E -- q_E=135/32
+PASS: order 4 rho_E -- rho_E=309/16
+PASS: order 4 c_TE -- c_TE=-32/81
+PASS: only derivative order 2 hits 9/4 in order scan
+PASS: note records first-variation falsifier
+PASS: note records third-variation falsifier
+
+E. Current-surface boundary
+PASS: forbidden observed/fitted imports are excluded
+PASS: note identifies the remaining import
+PASS: note preserves parent open status
+PASS: note avoids endpoint-closure rhetoric
+PASS: minimal axioms do not supply source-row primitive
+
+==============================================================================
+TOTAL: PASS=45, FAIL=0
+STATUS: exact-support/open boundary. A scale-shift-invariant second variation in the physical weight coordinate forces row degree -2 and the Route-2 endpoint, but the current surface does not derive that second-variation source-row primitive.

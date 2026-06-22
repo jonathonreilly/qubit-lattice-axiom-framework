@@ -40,7 +40,19 @@ Review disposition:
 - No repo-wide authority surfaces were updated.
 - PR conflicts/mergeability were not checked.
 
+PR:
+
+- Number: #4609
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4609
+- Title: `[physics-loop] s3-route2-inverse-square-coefficient-law block78 no-go`
+- Head: `physics-loop/s3-route2-inverse-square-coefficient-law-block78-20260621`
+- Base: `main`
+- State: `OPEN`
+- Conflict/mergeability check: not run per campaign instruction.
+
 Next exact action:
 
-- Commit, publish branch, and open the block78 PR.
-- Then pivot to the next campaign target if runtime remains.
+- Pivot to the next campaign target if runtime remains.
+- Highest-value next targets: pure inverse-square theorem attempt, signed
+  one-pole A1 coefficient `6` route, or affine A1 coefficient `7/2`
+  source-excess route.

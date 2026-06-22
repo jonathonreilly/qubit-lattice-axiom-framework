@@ -1,0 +1,66 @@
+Route-2 channel determinant quotient gate
+========================================================================================
+
+----------------------------------------------------------------------------------------
+1. Current determinant and Route-2 boundaries
+----------------------------------------------------------------------------------------
+PASS: positive-diagonal classifier leaves arbitrary one-site phi before determinant quotient
+PASS: positive-diagonal classifier says determinant-only forces log
+PASS: determinant-context bridge is conditional on a supplied context
+PASS: T1-d independence no-go says determinant quotient is not Record-derived
+PASS: Route-2 Schur note isolates inverse-square as the exact gap
+PASS: Route-2 exact readout target remains beta_E/alpha_E=21/4
+
+----------------------------------------------------------------------------------------
+2. Conditional diagonal determinant model
+----------------------------------------------------------------------------------------
+Route-2 candidate pair = (Fraction(1, 3), Fraction(1, 2))
+determinant = 1/6
+diagonal Hessian ratio = 9/4
+endpoint from candidate = q_E=15/8, rho_E=21/4, c_TE=-8/9
+PASS: O_h leverage note supplies w_E=1/3 and w_T1=1/2
+PASS: candidate diagonal determinant is 1/6
+       det=1/6
+PASS: candidate diagonal Hessian coefficients give lambda=9/4
+PASS: candidate gives q_E=15/8
+       q_E=15/8
+PASS: candidate gives rho_E=21/4
+       rho_E=21/4
+PASS: candidate gives c_TE=-8/9
+       c_TE=-8/9
+
+----------------------------------------------------------------------------------------
+3. Same-determinant fiber ambiguity
+----------------------------------------------------------------------------------------
+same-fiber pairs = ((Fraction(1, 3), Fraction(1, 2)), (Fraction(1, 4), Fraction(2, 3)), (Fraction(1, 6), Fraction(1, 1)))
+determinants = (Fraction(1, 6), Fraction(1, 6), Fraction(1, 6))
+Hessian ratios = (Fraction(9, 4), Fraction(64, 9), Fraction(36, 1))
+PASS: all witness pairs have the same determinant 1/6
+PASS: same determinant fiber has different Hessian ratios
+       ratios=(Fraction(9, 4), Fraction(64, 9), Fraction(36, 1))
+PASS: determinant scalar value alone cannot select the Route-2 Hessian ratio
+PASS: determinant-context note uses same-fiber witnesses to exclude extra data
+
+----------------------------------------------------------------------------------------
+4. Additive one-site freedom before quotient
+----------------------------------------------------------------------------------------
+same-fiber square sums = (Fraction(13, 36), Fraction(73, 144), Fraction(37, 36))
+PASS: one-site square term is additive over supplied block lists
+PASS: one-site square term is not determinant-only on the same determinant fiber
+       square sums=(Fraction(13, 36), Fraction(73, 144), Fraction(37, 36))
+PASS: classifier identifies this as the pre-quotient one-site freedom
+
+----------------------------------------------------------------------------------------
+5. Current-bank verdict
+----------------------------------------------------------------------------------------
+PASS: checked current bank does not state a Route-2 channel determinant quotient
+PASS: checked current bank does not supply a Hessian-to-E-center bridge phrase
+PASS: E-center guard still requires a primitive that evaluates the E-center column
+PASS: parent S3 note remains open on the endpoint triple
+PASS: no observed endpoint value is used as a proof input
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+TOTAL: PASS=24, FAIL=0
+VERDICT: no-go / conditional support boundary. A supplied Route-2 diagonal determinant model would give the endpoint exactly, but the current determinant-context machinery does not supply that Route-2 channel coordinate context or the Hessian-to-E-center readout bridge. Determinant value alone is insufficient.

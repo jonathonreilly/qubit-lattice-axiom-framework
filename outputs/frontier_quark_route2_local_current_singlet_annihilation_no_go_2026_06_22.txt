@@ -1,0 +1,73 @@
+Route-2 local-current singlet-annihilation stretch no-go
+Status: no-go for singlet annihilation from local-current premises; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: local-current versus connected-cumulant split
+PASS: full current is local
+PASS: full current is not a connected cumulant
+PASS: connected cumulant annihilates singlet
+PASS: connected cumulant is a subtraction/readout construction, not the bare local full current
+PASS: bounded subtracted current is local but not singlet-annihilating
+
+PART 2: local-current controls do not select kappa=0
+  local_full_current: kappa=1, R=1, rho_E=4
+PASS: local_full_current satisfies local-current premises
+  bounded_subtracted_current: kappa=1/2, R=17/18, rho_E=78/17
+PASS: bounded_subtracted_current satisfies local-current premises
+PASS: local-current premises admit full trace
+PASS: local-current premises admit nonzero bounded subtraction
+PASS: therefore local-current premises do not force singlet annihilation
+PASS: Ward normalization does not distinguish kappa=0 from kappa=1
+PASS: CMT invariance does not distinguish kappa=0 from kappa=1
+
+PART 3: connected premise equivalence
+PASS: connected-cumulant premise selects the connected endpoint
+      ['connected_cumulant']
+PASS: singlet annihilation selects the same endpoint
+      ['connected_cumulant']
+PASS: connected premise is equivalent to kappa=0 in this binary target
+PASS: full trace is excluded only after the connected-cumulant premise is supplied
+
+PART 4: Route-2 consequence
+PASS: connected cumulant gives rho_E=21/4 under oriented Route-2 chain
+      rho_E=21/4
+PASS: full current gives rho_E=4 under oriented Route-2 chain
+      rho_E=4
+PASS: bounded subtraction gives non-target rho_E
+      rho_E=78/17
+PASS: Route-2 target selects connected cumulant only if target value is used
+
+PART 5: stuck fan-out frames
+  site-locality: local full current remains admitted
+PASS: site-locality frame does not derive kappa=0 from local-current premises
+  Ward identity: normalizes the current but leaves disconnected coefficient free
+PASS: Ward identity frame does not derive kappa=0 from local-current premises
+  color-singlet EW current: supports full trace as the direct local color-scalar current
+PASS: color-singlet EW current frame does not derive kappa=0 from local-current premises
+  cluster/cumulant: selects connected only by adding disconnected subtraction
+PASS: cluster/cumulant frame does not derive kappa=0 from local-current premises
+  OZI suppression: bounds singlet size but does not give exact zero
+PASS: OZI suppression frame does not derive kappa=0 from local-current premises
+PASS: five orthogonal frames were checked
+
+PART 6: note and authority markers
+PASS: new note contains marker: Claim type:** no_go
+PASS: new note contains marker: Actual current-surface status: no-go for singlet annihilation from local-current premises
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: connected-cumulant premise
+PASS: new note contains marker: local full current remains admitted
+PASS: new note contains marker: does not close the parent
+PASS: Block71 says full trace survives current controls
+PASS: Block69 says exact zero needs annihilation theorem
+PASS: Rconn note says full trace is a live specialization
+PASS: EW gate says CMT cannot exclude full trace
+PASS: parent note still names endpoint triple blocker
+PASS: new note avoids overclaim marker: status-authority phrase
+PASS: new note avoids overclaim marker: parent closure
+PASS: new note avoids overclaim marker: current-surface endpoint derivation
+PASS: new note avoids overclaim marker: audit ratification
+PASS: new note avoids overclaim marker: branch-local status-promotion
+PASS: new note avoids overclaim marker: future retention
+PASS: new note avoids overclaim marker: promotion-to-retention
+
+TOTAL: PASS=44, FAIL=0
+VERDICT: local-current premises do not force singlet annihilation.  kappa=0 follows only after adding a connected-cumulant or disconnected-subtraction readout premise.

@@ -49,7 +49,17 @@ No audit verdict was applied.
 
 ## PR
 
-Pending push and PR creation.
+Opened:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4656
+```
+
+Identity-only verification:
+
+```json
+{"baseRefName":"physics-loop/s3-route2-connected-current-selector-block69-20260622","headRefName":"physics-loop/s3-route2-current-projector-idempotence-block70-20260622","number":4656,"state":"OPEN","title":"[physics-loop] s3-route2-current-projector-idempotence block70 bounded-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4656"}
+```
 
 ## Next Exact Action
 

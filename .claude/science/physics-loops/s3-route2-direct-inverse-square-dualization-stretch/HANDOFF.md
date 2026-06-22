@@ -89,7 +89,21 @@ No audit verdict was applied.
 
 ## PR
 
-Pending.
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4649
+```
+
+Identity-only view:
+
+```text
+{"baseRefName":"physics-loop/s3-route2-finite-schur-law-p2-gate-block62-20260621","headRefName":"physics-loop/s3-route2-direct-inverse-square-dualization-block63-20260622","number":4649,"state":"OPEN","title":"[physics-loop] s3-route2-direct-inverse-square-dualization block63 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4649"}
+```
+
+Initial science commit:
+
+```text
+77afa98d62a9603bf72ff3d35533831adc25d69d
+```
 
 ## Next Exact Action
 

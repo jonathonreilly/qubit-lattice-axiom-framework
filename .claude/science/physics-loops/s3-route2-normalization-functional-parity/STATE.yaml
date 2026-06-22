@@ -7,7 +7,7 @@ block: 92
 branch: physics-loop/s3-route2-normalization-functional-parity-block92-20260622
 base: physics-loop/s3-route2-antisymmetric-coeff-scale-block91-20260622
 base_commit: af53f4564
-science_commit: PENDING
+science_commit: c2c048151
 worktree: /private/tmp/cl3-physics-loop-s3-route2-normalization-functional-parity-block92-20260622
 date: 2026-06-22
 mode: campaign
@@ -53,9 +53,9 @@ imports_retired:
 open_imports:
   - "Route-2 anti-invariant same-source E/T normalization and purity theorem."
 review_disposition: static_verification_passed_no_audit_or_review_worker_run
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4679
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4679
 next_exact_action: >-
   Construct an anti-invariant same-source E/T normalization and purity theorem,
   or choose a different source/readout route.

@@ -107,11 +107,32 @@ The `L1` graph metric supplied here is `O_h`-invariant but **not**
 **anisotropic at the continuum level** and supplies **no** rotation-invariant
 distance. No row may cite this axiom for a rotational-distance claim.
 
-**Downstream-citation guard.** No downstream row may cite this axiom as the
-source of continuous spatial isotropy `a_x = a_y = a_z` (in the metric, not the
-graph, sense), of a relativistic/Lorentz statement, or of a kinetic-form ratio.
-Those are separate posits or derivations (see the kinetic-form condition P2 and
-the required dynamics/time gates below).
+**Supplied-vs-derived discipline (corrected 2026-06-22).** Continuous spatial
+isotropy `a_x = a_y = a_z` (in the metric, not the graph, sense), a
+relativistic/Lorentz statement, and a kinetic-form ratio are **not supplied by**
+this axiom — A1 supplies only the discrete `O_h`/`B_3` symmetry and the `L1`
+graph metric. They may, however, be **derived** as theorems that take A1 as one
+premise **together with an explicitly named** dynamics, limit, or RG argument
+(see the kinetic-form condition P2 and the required dynamics/time gates below).
+What is barred is treating continuous isotropy/Lorentz as a property **read off
+A1 alone** (an axiom-grade chain-satisfy / free pass); using A1 as a premise in a
+derivation that *proves* emergent isotropy is correct and encouraged. A row that
+currently *asserts* the lattice axiom *supplies* isotropy must be reworded to
+"…**derived** from A1 (discrete `O_h`/`B_3`) + [named dynamics/limit]".
+
+> **Reviewer context (Layer-2 migration accounting, not a panel finding).** An
+> exact triage of all 58 rows that co-locate the lattice axiom with an
+> isotropy/rotation/Lorentz claim found **zero** rows that free-ride on A1 (Class
+> A = 0): the framework already derives isotropy from named dynamics premises
+> (~14 derivations), treats it as the separate `kinetic_isotropy` primitive or a
+> Wilson-action label (~20 incidental), or is explicitly anisotropy-aware (~24
+> no-go/anisotropy notes that *support* this annotation). So this annotation
+> requires **no citation reframes**. The only downstream cost is the **236-row
+> hash-guard re-audit** (rows with `minimal_axioms` as a direct dep), which is the
+> mechanical consequence of editing the canonical memo *at all* (shared by
+> A1/A2/A3, a re-audit not a content change) — **the audit lane / owner decides
+> whether and when to run it.** Full list:
+> `docs/A1_LATTICE_REVISION_IMPACT_MANIFEST_2026-06-21.md`.
 
 ### Quantum (A2; amended — keep `M_2(C)` at axiom grade; add the composition / state-space clause)
 

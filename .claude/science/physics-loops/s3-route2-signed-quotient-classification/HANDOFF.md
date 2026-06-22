@@ -58,7 +58,12 @@ PASS banned overclaim marker scan
 ## PR
 
 ```text
-PENDING
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4691
+number: 4691
+title: [physics-loop] s3-route2 signed quotient classification block104 no-go
+base: physics-loop/s3-route2-binary-same-record-transfer-block103-20260622
+head: physics-loop/s3-route2-signed-quotient-classification-block104-20260622
+science_commit: 1f151e1cb
 ```
 
 ## Next Exact Action

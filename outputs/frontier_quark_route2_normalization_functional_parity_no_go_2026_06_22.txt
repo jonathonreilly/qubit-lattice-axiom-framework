@@ -1,0 +1,73 @@
+Route-2 normalization functional parity no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block91 has coefficient decomposition
+PASS: Block91 says antisymmetric direction fixes a line
+PASS: Block91 requires scale from same-source normalization
+PASS: Block91 requires symmetric contamination control
+PASS: Block91 uses no endpoint value
+PASS: Block90 names exact antisymmetric primitive
+PASS: Block90 leaves registry closure open
+PASS: Block89 leaves E/T coefficients free
+PASS: Block89 separates kappa support from E/T bridge
+
+PART 2: E/T parity algebra
+PASS: symmetric basis is swap fixed
+PASS: antisymmetric basis is swap odd
+PASS: symmetric and antisymmetric basis are independent
+PASS: invariant normalization has equal E/T weights
+PASS: anti-invariant normalization has opposite E/T weights
+PASS: invariant normalization annihilates antisymmetric line
+PASS: anti-invariant normalization annihilates symmetric line
+PASS: anti-invariant normalization sees antisymmetric scale
+PASS: generic normalization decomposes into invariant plus anti-invariant parts
+PASS: a generic normalization is already not neutral under E/T swap
+
+PART 3: normalization family
+  pure_antisym_s1: vector=(Fraction(1, 1), Fraction(-1, 1)), N_plus=0, N_minus=2
+PASS: pure_antisym_s1 has two output coefficients
+  pure_antisym_s2: vector=(Fraction(2, 1), Fraction(-2, 1)), N_plus=0, N_minus=4
+PASS: pure_antisym_s2 has two output coefficients
+  contaminated_same_anti_norm: vector=(Fraction(4, 1), Fraction(2, 1)), N_plus=6, N_minus=2
+PASS: contaminated_same_anti_norm has two output coefficients
+  equal_outputs: vector=(Fraction(1, 1), Fraction(1, 1)), N_plus=2, N_minus=0
+PASS: equal_outputs has two output coefficients
+PASS: neutral normalization cannot distinguish pure antisymmetric scales
+PASS: anti-invariant normalization distinguishes pure antisymmetric scales
+PASS: anti-invariant normalization is blind to symmetric contamination
+PASS: invariant normalization detects symmetric contamination
+PASS: one anti-invariant scale equation leaves symmetric family
+PASS: one invariant equation leaves antisymmetric family
+PASS: two independent equations are needed for a unique vector in C2
+PASS: no endpoint value is needed to expose the normalization freedom
+
+PART 4: reachability
+PASS: neutral normalization does not reach fixed vector
+PASS: neutral normalization reaches scale obstruction
+PASS: anti-invariant functional reaches only conditional scale fixing
+PASS: anti-invariant path still names purity need
+PASS: adding typed normalization and purity theorem reaches bridge
+PASS: graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for neutral same-source scalar normalization
+PASS: note contains marker: N_+(s(1,-1)) = 0
+PASS: note contains marker: anti-invariant component is already typed E/T orientation data
+PASS: note contains marker: Route-2 anti-invariant same-source E/T normalization and purity theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block92 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names normalization parity
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=55, FAIL=0
+VERDICT: neutral same-source normalization cannot fix the antisymmetric E/T Hessian coefficient scale.

@@ -1,0 +1,90 @@
+Route-2 anti-invariant adjoint typing no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block93 requires antisymmetric adjoint line
+PASS: Block93 leaves same-source E/T Hessian open
+PASS: Block94 isolates symmetric purity separately
+PASS: color transfer note names normalized color-matrix source tangent
+PASS: color transfer note says Route-2 readout lacks same-source authority
+PASS: color transfer note uses no endpoint value
+PASS: coefficient note says E/T coefficients remain free
+PASS: coefficient note separates kappa support from E/T bridge
+
+PART 2: output parity versus color type
+  pure_adjoint: a_adj=1, a_0=0, vector=(Fraction(1, 1), Fraction(-1, 1)), N_minus=2
+PASS: pure_adjoint is E/T anti-invariant
+PASS: pure_adjoint anti norm sees total coefficient
+PASS: pure_adjoint has tracked adjoint coefficient
+PASS: pure_adjoint has tracked non-adjoint coefficient
+  pure_nonadjoint: a_adj=0, a_0=1, vector=(Fraction(1, 1), Fraction(-1, 1)), N_minus=2
+PASS: pure_nonadjoint is E/T anti-invariant
+PASS: pure_nonadjoint anti norm sees total coefficient
+PASS: pure_nonadjoint has tracked adjoint coefficient
+PASS: pure_nonadjoint has tracked non-adjoint coefficient
+  mixed_equal: a_adj=1/2, a_0=1/2, vector=(Fraction(1, 1), Fraction(-1, 1)), N_minus=2
+PASS: mixed_equal is E/T anti-invariant
+PASS: mixed_equal anti norm sees total coefficient
+PASS: mixed_equal has tracked adjoint coefficient
+PASS: mixed_equal has tracked non-adjoint coefficient
+  mixed_unequal: a_adj=2, a_0=-1, vector=(Fraction(1, 1), Fraction(-1, 1)), N_minus=2
+PASS: mixed_unequal is E/T anti-invariant
+PASS: mixed_unequal anti norm sees total coefficient
+PASS: mixed_unequal has tracked adjoint coefficient
+PASS: mixed_unequal has tracked non-adjoint coefficient
+PASS: pure adjoint and pure non-adjoint can have same E/T vector
+PASS: anti-invariant normalization cannot distinguish adjoint from non-adjoint
+PASS: color projection would distinguish adjoint from non-adjoint
+PASS: E/T parity is not a color representation classifier
+PASS: no endpoint value is needed to expose the representation freedom
+
+PART 3: classifier table
+  adjoint_anti_invariant_connected: ('ET_anti', 'SU3_adjoint', 'wanted')
+PASS: adjoint_anti_invariant_connected has three tags
+  scalar_anti_invariant_connected: ('ET_anti', 'SU3_scalar', 'contaminant')
+PASS: scalar_anti_invariant_connected has three tags
+  other_anti_invariant_connected: ('ET_anti', 'other_nonadjoint', 'contaminant')
+PASS: other_anti_invariant_connected has three tags
+  symmetric_disconnected: ('ET_symmetric', 'factorizable', 'separate_Block94_gate')
+PASS: symmetric_disconnected has three tags
+  endpoint_value_input: ('forbidden', 'forbidden', 'forbidden')
+PASS: endpoint_value_input has three tags
+PASS: all connected anti-invariant rows share E/T parity
+PASS: only adjoint row has wanted SU3 type
+PASS: scalar anti-invariant row is a contaminant
+PASS: other nonadjoint row is a contaminant
+PASS: symmetric disconnected row is a separate gate
+PASS: endpoint input remains forbidden
+PASS: missing primitive must type color representation, not only output parity
+
+PART 4: reachability
+PASS: E/T anti-invariance alone does not reach adjoint fraction
+PASS: E/T anti-invariance reaches non-adjoint risk
+PASS: non-adjoint risk reaches contaminated anti norm
+PASS: adjoint typing theorem reaches adjoint fraction
+PASS: graph contains no endpoint-value node
+PASS: missing primitive is distinct from symmetric-line purity
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for anti-invariant E/T parity alone
+PASS: note contains marker: A_total = a_adj A_ET B_adj + a_0 A_ET C_0
+PASS: note contains marker: anti-invariant E/T normalization sees the sum
+PASS: note contains marker: Route-2 anti-invariant adjoint-line typing theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block95 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names anti-invariant adjoint typing
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=67, FAIL=0
+VERDICT: E/T anti-invariance alone does not prove the connected response is the adjoint color bilinear.

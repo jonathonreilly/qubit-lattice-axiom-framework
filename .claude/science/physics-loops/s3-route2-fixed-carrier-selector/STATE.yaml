@@ -36,9 +36,9 @@ checkpoint:
     - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py: TOTAL PASS=103 FAIL=0"
     - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py: TOTAL PASS=62 FAIL=0"
   pr:
-    number: null
-    url: null
-    identity_checked: false
+    number: 4625
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4625
+    identity_checked: true
     conflict_mergeability_checked: false
-  next_exact_action: "Run hygiene, commit, push, and open the Block94 review PR without checking conflict or mergeability."
+  next_exact_action: "Continue campaign toward a typed E-center source/readout primitive for c_TE=-8/9 or a derivation of metric/source ratio 1449/704."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

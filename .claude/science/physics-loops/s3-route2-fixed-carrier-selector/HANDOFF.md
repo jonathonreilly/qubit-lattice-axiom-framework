@@ -32,13 +32,15 @@ Result: no-go / negative route pruning.
 
 ## PR
 
-Pending.
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4625
+- Number: 4625
+- Identity fields checked: base `main`, head
+  `physics-loop/s3-route2-fixed-carrier-selector-block94-20260621`,
+  state `OPEN`.
+- Conflict/mergeability state was not checked.
 
 ## Next Exact Action
 
-Run hygiene, commit, push, and open the Block94 review PR. Do not check PR
-conflict or mergeability state.
-
-After PR creation, continue campaign toward either a typed E-center
-source/readout primitive for `c_TE=-8/9` or a derivation of the metric/source
-ratio `1449/704`.
+Continue campaign toward either a typed E-center source/readout primitive for
+`c_TE=-8/9` or a derivation of the metric/source ratio `1449/704`. Do not
+check PR conflict or mergeability state.

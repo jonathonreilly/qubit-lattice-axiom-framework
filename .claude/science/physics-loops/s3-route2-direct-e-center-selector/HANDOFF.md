@@ -43,13 +43,21 @@ Audit pipeline must not be run, and no audit verdict should be applied.
 
 ## PR
 
-Pending.
+Opened:
+
+```text
+number: 4646
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4646
+title: [physics-loop] s3-route2-direct-e-center-selector block115 no-go
+state: OPEN
+baseRefName: physics-loop/s3-route2-trivial-character-source-unit-block114-20260622
+headRefName: physics-loop/s3-route2-direct-e-center-selector-block115-20260622
+```
+
+Identity was checked with `number,url,title,state,baseRefName,headRefName`
+only. Conflict and mergeability checks were not run.
 
 ## Next Exact Action
 
-Run verification, perform branch-local review, push the stacked science branch,
-and open a PR based on
-`physics-loop/s3-route2-trivial-character-source-unit-block114-20260622`.
-
-After that, try to derive a physical center-readout law giving
-`q_E-1=7/8`, or pivot to T-side entry derivation.
+Try to derive a physical center-readout law giving `q_E-1=7/8`, or pivot to
+T-side entry derivation.

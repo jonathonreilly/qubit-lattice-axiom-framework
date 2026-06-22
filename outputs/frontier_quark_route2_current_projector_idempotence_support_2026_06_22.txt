@@ -1,0 +1,68 @@
+Route-2 current-projector idempotence support
+Status: bounded-support for idempotent current-projector dichotomy; not an audit verdict.
+TRACE: upstream_support
+PART 1: exact projector algebra
+PASS: adjoint and singlet fractions sum to one
+PASS: adjoint coefficient is normalized to one
+  kappa=0: singlet=0, composed_singlet=0, idempotent=True
+PASS: kappa=0 composition is exact
+  kappa=1/2: singlet=1/2, composed_singlet=1/4, idempotent=False
+PASS: kappa=1/2 composition is exact
+  kappa=1: singlet=1, composed_singlet=1, idempotent=True
+PASS: kappa=1 composition is exact
+PASS: kappa=0 is idempotent
+PASS: kappa=1 is idempotent
+PASS: kappa=1/2 is not idempotent
+
+PART 2: idempotence dichotomy
+  kappa=0: kappa^2-kappa=0
+  kappa=1/8: kappa^2-kappa=-7/64
+  kappa=1/4: kappa^2-kappa=-3/16
+  kappa=3/8: kappa^2-kappa=-15/64
+  kappa=1/2: kappa^2-kappa=-1/4
+  kappa=5/8: kappa^2-kappa=-15/64
+  kappa=3/4: kappa^2-kappa=-3/16
+  kappa=7/8: kappa^2-kappa=-7/64
+  kappa=1: kappa^2-kappa=0
+PASS: sampled idempotent roots are exactly 0 and 1
+      [Fraction(0, 1), Fraction(1, 1)]
+PASS: exact factorization is kappa(kappa-1)=0
+PASS: projector idempotence narrows the continuum to two endpoints
+PASS: idempotence alone does not choose connected over full
+
+PART 3: Route-2 consequence
+  connected: R=8/9, q_E=15/8, rho_E=21/4
+  full:      R=1, q_E=5/3, rho_E=4
+PASS: connected projector endpoint gives rho_E=21/4
+PASS: full projector endpoint gives rho_E=4
+PASS: the two idempotent projectors have different Route-2 magnitudes
+PASS: target Route-2 magnitude selects the connected projector among idempotents
+
+PART 4: strict suppression selector
+PASS: idempotence plus strict singlet bound kappa<1 selects kappa=0
+      [Fraction(0, 1)]
+PASS: idempotence plus only positivity leaves both endpoints
+      [Fraction(0, 1), Fraction(1, 1)]
+PASS: singlet annihilation is equivalent to kappa=0
+PASS: excluding the full-trace projector is the remaining non-arithmetic premise
+
+PART 5: note and authority markers
+PASS: new note contains marker: Claim type:** bounded_support
+PASS: new note contains marker: Actual current-surface status: bounded-support for idempotent current-projector dichotomy
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: idempotence narrows `kappa` to `{0,1}`
+PASS: new note contains marker: idempotence alone does not choose the connected endpoint
+PASS: new note contains marker: strict singlet-suppression
+PASS: Block69 exposes kappa=0 as connected-current projector
+PASS: Rconn note names full trace and connected specializations
+PASS: parent note still names the readout endpoint blocker
+PASS: new note avoids overclaim marker: status-authority phrase
+PASS: new note avoids overclaim marker: parent closure
+PASS: new note avoids overclaim marker: current-surface endpoint derivation
+PASS: new note avoids overclaim marker: audit ratification
+PASS: new note avoids overclaim marker: branch-local status-promotion
+PASS: new note avoids overclaim marker: future retention
+PASS: new note avoids overclaim marker: promotion-to-retention
+
+TOTAL: PASS=36, FAIL=0
+VERDICT: idempotence narrows kappa to {0,1}.  Selecting kappa=0 still requires strict singlet suppression or singlet annihilation.

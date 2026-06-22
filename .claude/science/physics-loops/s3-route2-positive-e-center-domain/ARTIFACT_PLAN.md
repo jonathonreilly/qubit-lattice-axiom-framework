@@ -6,4 +6,4 @@
 | `scripts/frontier_quark_route2_positive_e_center_domain_no_go_2026_06_22.py` | Exact readout-domain verifier | added |
 | `outputs/frontier_quark_route2_positive_e_center_domain_no_go_2026_06_22.txt` | Captured runner output | PASS=42, FAIL=0 |
 | Loop pack | Branch-local state and handoff | review-ready |
-| Science PR | Review surface | ready after push |
+| Science PR | Review surface | opened as PR #4658 |

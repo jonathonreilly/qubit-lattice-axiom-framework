@@ -1,0 +1,106 @@
+Route-2 nonlinear same-domain source-law classification no-go
+Status: no-go for the broad nonlinear shortcut; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: endpoint target
+PASS: weights are w_E=1/3 and w_T=1/2
+PASS: target ratio is 9/4
+PASS: target ratio gives q_E=15/8
+      q_E=15/8
+PASS: target ratio gives rho_E=21/4
+      rho_E=21/4
+
+PART 2: multiplicative power-law family
+  p=-4: ratio=16/81, rho_E=-406/81
+PASS: multiplicative covariance holds for p=-4
+  p=-3: ratio=8/27, rho_E=-122/27
+PASS: multiplicative covariance holds for p=-3
+  p=-2: ratio=4/9, rho_E=-34/9
+PASS: multiplicative covariance holds for p=-2
+  p=-1: ratio=2/3, rho_E=-8/3
+PASS: multiplicative covariance holds for p=-1
+  p=+0: ratio=1, rho_E=-1
+PASS: multiplicative covariance holds for p=+0
+  p=+1: ratio=3/2, rho_E=3/2
+PASS: multiplicative covariance holds for p=+1
+  p=+2: ratio=9/4, rho_E=21/4
+PASS: multiplicative covariance holds for p=+2
+  p=+3: ratio=27/8, rho_E=87/8
+PASS: multiplicative covariance holds for p=+3
+  p=+4: ratio=81/16, rho_E=309/16
+PASS: multiplicative covariance holds for p=+4
+PASS: integer power scan finds p=2 as the only target solution in range
+      [2]
+PASS: p=0 channel-neutral misses
+PASS: p=1 one-dual misses
+PASS: p=2 inverse-square lands
+PASS: power-law covariance alone permits non-target p values
+
+PART 3: two-bin monomial family w^a(1-w)^b
+PASS: two-bin monomial integer solve has one solution in the scan box
+      [(-2, 0)]
+PASS: the unique two-bin solution is inverse-square with no complement factor
+PASS: pure complement inverse-square misses
+      9/16
+PASS: odds inverse-square misses
+      4
+PASS: mixed complement factors do not create a second target mechanism
+
+PART 4: natural nonlinear controls
+  constant: ratio=1, rho_E=-1
+PASS: constant has exact rational ratio
+      channel-neutral
+  weight: ratio=2/3, rho_E=-8/3
+PASS: weight has exact rational ratio
+      ordinary projector
+  weight_inverse: ratio=3/2, rho_E=3/2
+PASS: weight_inverse has exact rational ratio
+      one reciprocal
+  weight_inverse_square: ratio=9/4, rho_E=21/4
+PASS: weight_inverse_square has exact rational ratio
+      inverse-square
+  complement_inverse: ratio=3/4, rho_E=-9/4
+PASS: complement_inverse has exact rational ratio
+      one complement reciprocal
+  complement_inverse_square: ratio=9/16, rho_E=-51/16
+PASS: complement_inverse_square has exact rational ratio
+      complement reciprocal-square
+  odds_inverse: ratio=2, rho_E=4
+PASS: odds_inverse has exact rational ratio
+      odds reciprocal
+  odds_inverse_square: ratio=4, rho_E=14
+PASS: odds_inverse_square has exact rational ratio
+      odds reciprocal-square
+PASS: only weight inverse-square hits among the natural controls
+      ['weight_inverse_square']
+PASS: complement reciprocal-square misses the target
+      9/16
+PASS: odds reciprocal-square misses the target
+      4
+
+PART 5: free-coefficient interpolation firewall
+PASS: affine coefficients can fit the target ratio
+      values=(9,4)
+PASS: the affine fit uses noncanonical coefficients
+PASS: a distinct quadratic can also fit the target ratio
+      values=(9,4)
+PASS: multiple coefficient fits prove underdetermination
+PASS: coefficient fitting is not a derivation
+
+PART 6: note and status firewall
+PASS: note contains marker: Claim type:** no_go
+PASS: note contains marker: Actual current-surface status: no-go for the broad nonlinear same-domain shortcut
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not close the parent
+PASS: note contains marker: two-bin monomials
+PASS: note contains marker: unique target solution
+PASS: note contains marker: does not rule out future nonlinear laws
+PASS: note avoids overclaim marker: status-authority phrase
+PASS: note avoids overclaim marker: parent closure
+PASS: note avoids overclaim marker: current-surface endpoint derivation
+PASS: note avoids overclaim marker: audit ratification
+PASS: note avoids overclaim marker: branch-local status-promotion
+PASS: note avoids overclaim marker: future retention
+PASS: note avoids overclaim marker: promotion-to-retention
+
+TOTAL: PASS=53, FAIL=0
+VERDICT: no-go for the broad nonlinear same-domain shortcut. Natural nonlinear grammars either miss, fit hidden coefficients, or reduce to target-selected inverse-square.

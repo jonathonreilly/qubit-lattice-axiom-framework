@@ -56,16 +56,23 @@ active user instruction.
 
 ## PR
 
-Pending.
+Opened:
+
+- number: 4632
+- url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4632
+- title: `[physics-loop] s3-route2-counterterm-exclusion-boundary block101 no-go`
+- state: OPEN
+- baseRefName: `physics-loop/s3-route2-dilation-covariant-hessian-source-block100-20260622`
+- headRefName: `physics-loop/s3-route2-counterterm-exclusion-boundary-block101-20260622`
+- identity_checked: true
+- identity_check_fields: `number,url,title,state,baseRefName,headRefName`
+- conflict_mergeability_checked: false
 
 This block is stacked on Block100 / PR #4631. Conflict/mergeability state must
 not be checked. The reviewer will update or cherry-pick science as needed.
 
 ## Next Exact Action
 
-Commit, push, and open the Block101 PR without checking conflict or
-mergeability state.
-
-Recommended next campaign target after this PR: attempt a no-scale
-quotient/variational theorem setting `epsilon=0`, or pivot to a direct
-E-center theorem deriving `q_E=15/8`.
+Start the next campaign target: attempt a no-scale quotient/variational
+theorem setting `epsilon=0`, or pivot to a direct E-center theorem deriving
+`q_E=15/8`.

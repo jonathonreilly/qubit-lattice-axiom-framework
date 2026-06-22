@@ -7,7 +7,7 @@ block: 100
 branch: physics-loop/s3-route2-source-measure-product-registry-block100-20260622
 base: physics-loop/s3-route2-source-coordinate-registry-block99-20260622
 base_commit: 6f953d5ca
-science_commit: PENDING
+science_commit: 94a86ee07
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-measure-product-registry-block100-20260622
 date: 2026-06-22
 mode: campaign
@@ -58,9 +58,9 @@ imports_retired:
 open_imports:
   - "Route-2 Pcal product-instantiation theorem."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4687
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4687
 next_exact_action: >-
   Construct the Route-2 Pcal product-instantiation theorem, or isolate the
   next missing same-source product/readout primitive.

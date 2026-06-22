@@ -62,7 +62,20 @@ instruction.
 
 ## PR
 
-Pending.
+Opened:
+
+- number: 4636
+- url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4636
+- title: `[physics-loop] s3-route2-direct-e-center-source-row block105 exact-support`
+- state: OPEN
+- baseRefName: `physics-loop/s3-route2-power-law-coordinate-bridge-block104-20260622`
+- headRefName: `physics-loop/s3-route2-direct-e-center-source-row-block105-20260622`
+- identity_checked: true
+- identity_check_fields: `number,url,title,state,baseRefName,headRefName`
+- conflict_mergeability_checked: false
+
+This block is stacked on Block104 / PR #4635. Conflict/mergeability state must
+not be checked. The reviewer will update or cherry-pick science as needed.
 
 ## Next Exact Action
 

@@ -1,0 +1,82 @@
+Route-2 direct E-center readout-family classifier
+Status: no-go for restricted-family-only E-center selection; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: restricted readout family
+PASS: E-shell carrier is exact
+PASS: E-center carrier has the single delta_A1 lift 1/6
+PASS: T-shell carrier is exact
+PASS: T-center carrier has the single delta_A1 lift 1/6
+PASS: conditional T-side readout gives q_T=5/6
+      q_T=5/6
+PASS: conditional shell T/E readout gives -2
+      shell T/E=-2
+PASS: rho_E controls only q_E in the reduced family
+
+PART 2: E-center gauge orbit
+PASS: E-center shift vanishes on E-shell
+PASS: E-center shift vanishes on T-shell
+PASS: E-center shift vanishes on T-center
+PASS: E-center shift is nonzero exactly on the E-center lift
+  rho_E=-1: blind_signature=((Fraction(1, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-2, 1)), (Fraction(0, 1), Fraction(-5, 3)), Fraction(5, 6), Fraction(-2, 1)), E-center=(Fraction(5, 6), Fraction(0, 1))
+  rho_E=0: blind_signature=((Fraction(1, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-2, 1)), (Fraction(0, 1), Fraction(-5, 3)), Fraction(5, 6), Fraction(-2, 1)), E-center=(Fraction(1, 1), Fraction(0, 1))
+  rho_E=1: blind_signature=((Fraction(1, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-2, 1)), (Fraction(0, 1), Fraction(-5, 3)), Fraction(5, 6), Fraction(-2, 1)), E-center=(Fraction(7, 6), Fraction(0, 1))
+  rho_E=21/4: blind_signature=((Fraction(1, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-2, 1)), (Fraction(0, 1), Fraction(-5, 3)), Fraction(5, 6), Fraction(-2, 1)), E-center=(Fraction(15, 8), Fraction(0, 1))
+  rho_E=13/3: blind_signature=((Fraction(1, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-2, 1)), (Fraction(0, 1), Fraction(-5, 3)), Fraction(5, 6), Fraction(-2, 1)), E-center=(Fraction(31, 18), Fraction(0, 1))
+PASS: all sampled rho_E values have the same shell/T-side blind signature
+PASS: the full endpoint signature is injective on sampled rho_E values
+PASS: the target rho_E is not a gauge-invariant statement
+
+PART 3: affine E-center constraint classifier
+  shell_normalization_only: a=0, b=1, c=-1, solved_rho=None, encoded_excess=None
+  no_E_center_lift: a=1, b=-1, c=0, solved_rho=0, encoded_excess=0
+  target_q_E_15_8: a=1, b=0, c=-15/8, solved_rho=21/4, encoded_excess=7/8
+  arbitrary_center_value_2: a=1, b=0, c=-2, solved_rho=6, encoded_excess=1
+PASS: E-center-blind affine equations cannot fix rho_E
+PASS: the natural no-lift affine equation fixes rho_E=0, not the target
+PASS: q_E=15/8 fixes rho_E=21/4
+PASS: q_E=15/8 encodes the target E-center excess 7/8
+PASS: a different center value fixes a different rho_E
+PASS: generic affine constraint lands on target iff it encodes excess 7/8
+      c=-159/56
+PASS: the encoded excess formula recovers 7/8 for that generic target constraint
+
+PART 4: ratio constraint classifier
+  typed_center_ratio_target_minus_8_9: c_TE=-8/9, solved_rho=21/4
+  positive_R_conn_wrong_sign: c_TE=8/9, solved_rho=-69/4
+  reuse_shell_ratio_minus_2_as_center_ratio: c_TE=-2, solved_rho=-1
+  unit_center_ratio_minus_1: c_TE=-1, solved_rho=4
+PASS: typed center ratio c_TE=-8/9 fixes rho_E=21/4
+PASS: positive R_conn=8/9 has the wrong sign for the center ratio
+PASS: reusing shell T/E=-2 as center T/E fixes rho_E=-1, not target
+PASS: unit center ratio is not the target
+
+PART 5: target equivalence and firewall
+PASS: rho_E=21/4 is equivalent to q_E=15/8
+PASS: rho_E=21/4 is equivalent to E-center excess 7/8
+PASS: rho_E=21/4 is equivalent to c_TE=-8/9 under the granted T-side values
+PASS: c_TE=-8/9 solves back to q_E=15/8
+PASS: q_E=15/8 solves back to rho_E=21/4
+PASS: restricted-family-only selection is blocked
+PASS: remaining positive routes are exactly non-invariant E-center premises
+
+PART 6: note and authority markers
+PASS: new note contains marker: Claim type:** no_go
+PASS: new note contains marker: Actual current-surface status: no-go for restricted-family-only E-center selection
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: one-dimensional E-center shift
+PASS: new note contains marker: Any direct constraint that fixes `rho_E` is therefore a non-invariant E-center premise
+PASS: new note contains marker: The next positive target is not another invariant of the restricted family
+PASS: parent note still names the endpoint triple blocker
+PASS: exact readout note names beta_E/alpha_E as the missing map entry
+PASS: E-center blindness no-go states non-evaluation leaves rho_E free
+PASS: typed firewall blocks same-rational 7/8 reuse
+PASS: new note avoids overclaim marker: status-authority phrase
+PASS: new note avoids overclaim marker: parent closure
+PASS: new note avoids overclaim marker: current-surface endpoint derivation
+PASS: new note avoids overclaim marker: audit ratification
+PASS: new note avoids overclaim marker: branch-local status-promotion
+PASS: new note avoids overclaim marker: future retention
+PASS: new note avoids overclaim marker: promotion-to-retention
+
+TOTAL: PASS=49, FAIL=0
+VERDICT: no-go for restricted-family-only E-center selection. The remaining target requires a non-invariant E-center premise: rho_E=21/4, q_E=15/8, e_E=7/8, or c_TE=-8/9.

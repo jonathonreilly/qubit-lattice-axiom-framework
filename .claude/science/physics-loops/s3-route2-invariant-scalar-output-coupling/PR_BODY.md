@@ -50,5 +50,9 @@ PASS overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4674
+Number: 4674
+Base: physics-loop/s3-route2-factorized-color-source-extension-block86-20260622
+Head: physics-loop/s3-route2-invariant-scalar-output-coupling-block87-20260622
+Science commit: a8cc764c3
 ```

@@ -1,0 +1,101 @@
+Route-2 Pcal moment-realization no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: exact readout note supplies carrier/readout reduction
+PASS: exact readout note exposes four endpoint columns
+PASS: exact readout note does not claim source moments
+PASS: Block100 names Route-2 Pcal product-instantiation theorem
+PASS: Block100 says raw and one-point registries are not supplied
+PASS: Block97 lists missing raw second source moment
+PASS: Block97 lists missing one-point product
+PASS: Pcal theorem gives connected response formula only after moments are supplied
+
+PART 2: moment realization family
+  mean=0, P(+1)=1/2, P(-1)=1/2, raw=1, product=0, connected=1, kappa=1
+PASS: mean=0 has valid probabilities
+PASS: mean=0 realizes raw second moment one
+PASS: mean=0 connected value matches 1-m^2
+PASS: mean=0 kappa is rational
+  mean=1/3, P(+1)=2/3, P(-1)=1/3, raw=1, product=1/9, connected=8/9, kappa=0
+PASS: mean=1/3 has valid probabilities
+PASS: mean=1/3 realizes raw second moment one
+PASS: mean=1/3 connected value matches 1-m^2
+PASS: mean=1/3 kappa is rational
+  mean=2/3, P(+1)=5/6, P(-1)=1/6, raw=1, product=4/9, connected=5/9, kappa=-3
+PASS: mean=2/3 has valid probabilities
+PASS: mean=2/3 realizes raw second moment one
+PASS: mean=2/3 connected value matches 1-m^2
+PASS: mean=2/3 kappa is rational
+  mean=1, P(+1)=1, P(-1)=0, raw=1, product=1, connected=0, kappa=-8
+PASS: mean=1 has valid probabilities
+PASS: mean=1 realizes raw second moment one
+PASS: mean=1 connected value matches 1-m^2
+PASS: mean=1 kappa is rational
+PASS: same raw second moment has multiple connected values
+PASS: same raw second moment has multiple kappa values
+PASS: mean 1/3 is the kappa=0 realization
+PASS: mean 0 is a kappa=1 realization
+PASS: mean 2/3 is not kappa=0
+PASS: selecting mean 1/3 is a product theorem, not a consequence of raw=1
+
+PART 3: required moment-realization fields
+  exact_P_R_endpoint_slots: present
+PASS: exact_P_R_endpoint_slots has boolean status
+  finite_record_probability_space: missing
+PASS: finite_record_probability_space has boolean status
+  route2_record_variables: missing
+PASS: route2_record_variables has boolean status
+  reference_source_measure: missing
+PASS: reference_source_measure has boolean status
+  raw_DAZ_DBZ_slot_assignment: missing
+PASS: raw_DAZ_DBZ_slot_assignment has boolean status
+  one_point_DAZ_registry: missing
+PASS: one_point_DAZ_registry has boolean status
+  symmetric_singlet_product_theorem: missing
+PASS: symmetric_singlet_product_theorem has boolean status
+  same_source_color_ET_typing: missing
+PASS: same_source_color_ET_typing has boolean status
+PASS: exact P_R slots are present
+PASS: finite probability space remains missing
+PASS: Route-2 record variables remain missing
+PASS: reference source measure remains missing
+PASS: raw slot assignment remains missing
+PASS: one-point registry remains missing
+PASS: symmetric singlet product theorem remains missing
+PASS: same-source color/E-T typing remains missing
+
+PART 4: reachability
+PASS: current exact P_R reaches product underdetermination
+PASS: current exact P_R does not reach kappa=0
+PASS: positive moment-realization theorem reaches kappa=0
+PASS: raw slot assignment is on the positive route
+PASS: one-point registry is on the positive route
+PASS: reachability graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for exact P_R slots determining the Route-2 Pcal product instantiation
+PASS: note contains marker: The same raw second moment E[XY]=1 therefore realizes multiple connected selectors
+PASS: note contains marker: The m=1/3 realization is the desired disconnected product
+PASS: note contains marker: Route-2 Pcal moment-realization theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block101 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names moment-realization theorem
+PASS: state records no audit stop condition
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=75, FAIL=0
+VERDICT: exact P_R slots do not determine the Route-2 Pcal moment realization; the one-point product remains a typed theorem.

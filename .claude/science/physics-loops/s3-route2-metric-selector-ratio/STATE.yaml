@@ -34,9 +34,9 @@ checkpoint:
     - "PYTHONPATH=scripts python3 scripts/frontier_yt_exact_hessian_selector_uniqueness.py: FINAL TALLY 4 PASS / 0 FAIL"
     - "PYTHONPATH=scripts python3 scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py: PASS=80 FAIL=1; optional adjacent snapshot row expectation stale, not used as Block95 gate"
   pr:
-    number: null
-    url: null
-    identity_checked: false
+    number: 4626
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4626
+    identity_checked: true
     conflict_mergeability_checked: false
-  next_exact_action: "Open PR, then continue campaign toward a typed source/readout primitive for c_TE=-8/9."
+  next_exact_action: "Continue campaign toward a typed source/readout primitive for c_TE=-8/9."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

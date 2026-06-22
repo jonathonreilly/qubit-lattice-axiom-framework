@@ -1,0 +1,85 @@
+Route-2 full-trace exclusion no-go
+Status: no-go for full-trace exclusion from current exact controls; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: binary idempotent projectors
+PASS: adjoint plus singlet fractions sum to one
+PASS: connected endpoint is idempotent
+PASS: full-trace endpoint is idempotent
+PASS: intermediate endpoint is not idempotent
+PASS: idempotent endpoints are exactly connected and full trace
+PASS: both idempotent endpoints are positive
+PASS: both idempotent endpoints are channel scalars
+
+PART 2: accepted controls do not exclude full trace
+  idempotence: connected=True, full=True
+PASS: idempotence admits the full-trace endpoint whenever it admits connected
+  positivity: connected=True, full=True
+PASS: positivity admits the full-trace endpoint whenever it admits connected
+  channel-scalar form: connected=True, full=True
+PASS: channel-scalar form admits the full-trace endpoint whenever it admits connected
+  positive readout: connected=True, full=True
+PASS: positive readout admits the full-trace endpoint whenever it admits connected
+  negative endpoint orientation: connected=True, full=True
+PASS: negative endpoint orientation admits the full-trace endpoint whenever it admits connected
+  OZI-size bound kappa/8 <= 1/8: connected=True, full=True
+PASS: OZI-size bound kappa/8 <= 1/8 admits the full-trace endpoint whenever it admits connected
+  CMT scale invariance: connected=True, full=True
+PASS: CMT scale invariance admits the full-trace endpoint whenever it admits connected
+PASS: accepted control signatures are identical for endpoint admission
+PASS: full trace has bounded disconnected size, not exact zero
+PASS: bounded OZI-size does not imply singlet annihilation
+
+PART 3: Route-2 endpoint consequence
+  connected: R=8/9, c_TE=-8/9, q_E=15/8, rho_E=21/4
+  full:      R=1, c_TE=-1, q_E=5/3, rho_E=4
+PASS: connected endpoint gives rho_E=21/4
+PASS: full-trace endpoint gives rho_E=4
+PASS: endpoint orientation sign is compatible with both endpoints
+PASS: target magnitude excludes full trace only after target value is supplied
+PASS: using target value as selector would be observational fitting
+
+PART 4: exact exclusion equivalences
+PASS: singlet annihilation selects kappa=0
+      [Fraction(0, 1)]
+PASS: strict singlet suppression selects kappa=0 among idempotents
+      [Fraction(0, 1)]
+PASS: explicit full-trace exclusion selects kappa=0
+      [Fraction(0, 1)]
+PASS: the target Route-2 value selects kappa=0 but is not a proof premise
+      [Fraction(0, 1)]
+PASS: full-trace exclusion is equivalent to adding a singlet-sensitive premise on the idempotent endpoints
+
+PART 5: first-principles attack frames
+  traceless color-generator frame: selects adjoint only, but changes the EW/readout observable into a color-generator insertion
+PASS: traceless color-generator frame does not derive full-trace exclusion on the current surface
+  Ward/conservation frame: constrains total current conservation, not the disconnected-channel coefficient
+PASS: Ward/conservation frame does not derive full-trace exclusion on the current surface
+  CMT/naturality frame: scales adjoint and singlet channels uniformly
+PASS: CMT/naturality frame does not derive full-trace exclusion on the current surface
+  endpoint S3 frame: fixes the sign once q_E>0, not the magnitude
+PASS: endpoint S3 frame does not derive full-trace exclusion on the current surface
+  OZI frame: bounds the singlet size class but leaves kappa=1 allowed at 1/8
+PASS: OZI frame does not derive full-trace exclusion on the current surface
+PASS: at least five orthogonal frames were checked
+
+PART 6: note and authority markers
+PASS: new note contains marker: Claim type:** no_go
+PASS: new note contains marker: Actual current-surface status: no-go for exact full-trace exclusion from current projector/control premises
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: full-trace endpoint survives
+PASS: new note contains marker: singlet-annihilation theorem
+PASS: new note contains marker: does not close the parent
+PASS: Block70 names the idempotent binary selector
+PASS: EW open gate says CMT cannot exclude full trace
+PASS: Rconn note says full trace is a live specialization
+PASS: parent note still names endpoint triple blocker
+PASS: new note avoids overclaim marker: status-authority phrase
+PASS: new note avoids overclaim marker: parent closure
+PASS: new note avoids overclaim marker: current-surface endpoint derivation
+PASS: new note avoids overclaim marker: audit ratification
+PASS: new note avoids overclaim marker: branch-local status-promotion
+PASS: new note avoids overclaim marker: future retention
+PASS: new note avoids overclaim marker: promotion-to-retention
+
+TOTAL: PASS=50, FAIL=0
+VERDICT: the full-trace endpoint survives the current exact controls.  Selecting kappa=0 requires an added singlet-annihilation or exact full-trace-exclusion theorem.

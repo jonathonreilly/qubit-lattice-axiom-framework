@@ -52,7 +52,23 @@ Passed:
 
 ## PR
 
-Pending.
+Open:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4664
+```
+
+Science commit:
+
+```text
+970d76a76
+```
+
+Identity-only verification:
+
+```json
+{"baseRefName":"physics-loop/s3-route2-source-hessian-cumulant-selector-block76-20260622","headRefName":"physics-loop/s3-route2-observable-hessian-readout-identification-block77-20260622","number":4664,"state":"OPEN","title":"[physics-loop] s3-route2-observable-hessian-readout-identification block77 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4664"}
+```
 
 ## Next Exact Action
 

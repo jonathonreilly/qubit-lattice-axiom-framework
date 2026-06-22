@@ -28,6 +28,7 @@ files_touched:
   - scripts/frontier_quark_route2_observable_hessian_readout_identification_no_go_2026_06_22.py
   - outputs/frontier_quark_route2_observable_hessian_readout_identification_no_go_2026_06_22.txt
   - .claude/science/physics-loops/s3-route2-observable-hessian-readout-identification/
+science_commit: 970d76a76
 commands_run:
   - "python3 -m py_compile scripts/frontier_quark_route2_observable_hessian_readout_identification_no_go_2026_06_22.py"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_observable_hessian_readout_identification_no_go_2026_06_22.py"
@@ -62,10 +63,16 @@ open_imports:
   - "A connected-Hessian physical readout theorem for that source."
   - "Pure-disconnected singlet typing for the 1/9 channel."
 review_disposition: pass
-pr_status: pending
-pr_number: null
-pr_url: null
-pr_identity: null
+pr_status: open
+pr_number: 4664
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4664
+pr_identity:
+  number: 4664
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4664
+  title: "[physics-loop] s3-route2-observable-hessian-readout-identification block77 no-go"
+  state: OPEN
+  baseRefName: physics-loop/s3-route2-source-hessian-cumulant-selector-block76-20260622
+  headRefName: physics-loop/s3-route2-observable-hessian-readout-identification-block77-20260622
 next_exact_action: >-
   Search for or construct a color/tensor-resolved source functional that
   couples to the Route-2 E/T readout slots and supports a connected Hessian

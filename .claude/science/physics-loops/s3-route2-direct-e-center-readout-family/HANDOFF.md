@@ -75,7 +75,21 @@ No audit verdict was applied.
 
 ## PR
 
-Pending.
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4652
+```
+
+Identity-only view:
+
+```text
+{"baseRefName":"physics-loop/s3-route2-e-center-excess-typed-bridge-firewall-block65-20260622","headRefName":"physics-loop/s3-route2-direct-e-center-readout-family-block66-20260622","number":4652,"state":"OPEN","title":"[physics-loop] s3-route2-direct-e-center-readout-family block66 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4652"}
+```
+
+Initial science commit:
+
+```text
+7e139ce28c60492050df08007ed8af8322558d1f
+```
 
 ## Next Exact Action
 

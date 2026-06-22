@@ -1,7 +1,7 @@
 # PR Backlog
 
-Pending PR creation for:
+No backlog for Block66.  PR opened:
 
 ```text
-physics-loop/s3-route2-direct-e-center-readout-family-block66-20260622
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4652
 ```

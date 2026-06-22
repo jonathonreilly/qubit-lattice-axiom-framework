@@ -7,7 +7,7 @@ block: 86
 branch: physics-loop/s3-route2-factorized-color-source-extension-block86-20260622
 base: physics-loop/s3-route2-scalar-extension-adjoint-no-go-block85-20260622
 base_commit: 45e84cdae
-science_commit: pending
+science_commit: 43335ce1a
 worktree: /private/tmp/cl3-physics-loop-s3-route2-factorized-color-source-extension-block86-20260622
 date: 2026-06-22
 mode: campaign
@@ -48,9 +48,16 @@ imports_retired:
 open_imports:
   - "Route-2 color-sensitive source/readout coupling theorem."
 review_disposition: ready_for_review
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4673
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4673
+pr_identity:
+  number: 4673
+  state: OPEN
+  title: "[physics-loop] s3-route2-factorized-color-source-extension block86 no-go"
+  baseRefName: physics-loop/s3-route2-scalar-extension-adjoint-no-go-block85-20260622
+  headRefName: physics-loop/s3-route2-factorized-color-source-extension-block86-20260622
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4673
 next_exact_action: >-
   Construct a color-sensitive same-source Route-2 readout coupling theorem.
 stop_condition: none

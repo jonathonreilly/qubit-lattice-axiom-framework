@@ -7,7 +7,7 @@ block: 106
 branch: physics-loop/s3-route2-log-odds-selector-stretch-block106-20260622
 base: physics-loop/s3-route2-sharp-record-bias-selector-block105-20260622
 base_commit: d9b73819a
-science_commit: PENDING
+science_commit: bdde0b67c
 worktree: /private/tmp/cl3-physics-loop-s3-route2-log-odds-selector-stretch-block106-20260622
 date: 2026-06-22
 mode: campaign
@@ -60,9 +60,12 @@ open_imports:
   - "Route-2 typed same-source signed record theorem."
   - "Route-2 log-odds selector theorem."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4693
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4693
+pr_title: "[physics-loop] s3-route2 log-odds selector stretch block106 no-go"
+pr_base: physics-loop/s3-route2-sharp-record-bias-selector-block105-20260622
+pr_head: physics-loop/s3-route2-log-odds-selector-stretch-block106-20260622
 next_exact_action: >-
   Construct a Route-2 log-odds selector theorem from physical source/readout
   structure, or pivot to a non-binary same-source product-readout primitive.

@@ -7,7 +7,7 @@ block: 90
 branch: physics-loop/s3-route2-carrier-antisymmetric-hessian-coeff-block90-20260622
 base: physics-loop/s3-route2-hessian-et-coefficient-normalization-block89-20260622
 base_commit: 79f684f64
-science_commit: PENDING
+science_commit: b2c00fd29
 worktree: /private/tmp/cl3-physics-loop-s3-route2-carrier-antisymmetric-hessian-coeff-block90-20260622
 date: 2026-06-22
 mode: campaign
@@ -51,9 +51,16 @@ imports_retired:
 open_imports:
   - "Route-2 exact antisymmetric E/T Hessian-coefficient primitive."
 review_disposition: ready_for_review
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4677
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4677
+pr_identity:
+  number: 4677
+  state: OPEN
+  title: "[physics-loop] s3-route2-carrier-antisymmetric-hessian-coeff block90 no-go"
+  baseRefName: physics-loop/s3-route2-hessian-et-coefficient-normalization-block89-20260622
+  headRefName: physics-loop/s3-route2-carrier-antisymmetric-hessian-coeff-block90-20260622
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4677
 next_exact_action: >-
   Construct a Route-2 exact antisymmetric E/T Hessian-coefficient primitive, or
   choose a different source/readout route.

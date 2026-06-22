@@ -45,8 +45,12 @@ imports_retired:
 open_imports:
   - "An exact full-trace exclusion / singlet-annihilation theorem selecting kappa=0 over kappa=1."
 review_disposition: pass
-pr_status: pending push and PR creation
+pr_status: opened
+pr_number: 4656
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4656
+pr_identity_json: >-
+  {"baseRefName":"physics-loop/s3-route2-connected-current-selector-block69-20260622","headRefName":"physics-loop/s3-route2-current-projector-idempotence-block70-20260622","number":4656,"state":"OPEN","title":"[physics-loop] s3-route2-current-projector-idempotence block70 bounded-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4656"}
+science_commit: ac9afcd725c2
 next_exact_action: >-
-  Push this block, open the stacked PR, record PR identity, then attempt exact
-  full-trace exclusion / singlet-annihilation theorem.
+  Attempt exact full-trace exclusion / singlet-annihilation theorem.
 stop_condition: none

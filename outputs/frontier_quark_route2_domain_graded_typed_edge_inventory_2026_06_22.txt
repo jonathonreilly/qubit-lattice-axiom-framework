@@ -1,0 +1,167 @@
+Route-2 domain-graded typed-edge inventory support/no-go
+Status: bounded-support for generated inventory; not an audit verdict.
+TRACE: upstream_support + negative_route_pruning
+PASS: route2_bilinear_carrier_K_R->route2_restricted_readout_family authority matches reference
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_bilinear_carrier_K_R->route2_restricted_readout_family has quote anchors
+      1
+PASS: route2_bilinear_carrier_K_R->route2_restricted_readout_family quote 1 is meaningful
+PASS: route2_bilinear_carrier_K_R->route2_restricted_readout_family quote 1 is present
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R authority matches reference
+      S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R has quote anchors
+      2
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R quote 1 is meaningful
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R quote 1 is present
+      S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R quote 2 is meaningful
+PASS: route2_bright_E_T->route2_bilinear_carrier_K_R quote 2 is present
+      S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 authority matches reference
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 has quote anchors
+      3
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 1 is meaningful
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 1 is present
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 2 is meaningful
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 2 is present
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 3 is meaningful
+PASS: route2_center_TE_minus_8_9->route2_q_E_15_8 quote 3 is present
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_q_E_15_8->route2_rho_E_21_4 authority matches reference
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_q_E_15_8->route2_rho_E_21_4 has quote anchors
+      3
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 1 is meaningful
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 1 is present
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 2 is meaningful
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 2 is present
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 3 is meaningful
+PASS: route2_q_E_15_8->route2_rho_E_21_4 quote 3 is present
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_restricted_readout_family->route2_endpoint_algebra authority matches reference
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_restricted_readout_family->route2_endpoint_algebra has quote anchors
+      1
+PASS: route2_restricted_readout_family->route2_endpoint_algebra quote 1 is meaningful
+PASS: route2_restricted_readout_family->route2_endpoint_algebra quote 1 is present
+      QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R authority matches reference
+      S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R has quote anchors
+      3
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 1 is meaningful
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 1 is present
+      S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 2 is meaningful
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 2 is present
+      S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 3 is meaningful
+PASS: route2_support_delta_A1->route2_bilinear_carrier_K_R quote 3 is present
+      S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 authority matches reference
+      QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 has quote anchors
+      2
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 quote 1 is meaningful
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 quote 1 is present
+      QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 quote 2 is meaningful
+PASS: route2_t_side_candidates->route2_q_T_5_6_and_shell_TE_minus_2 quote 2 is present
+      QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: su3_color_trace_channel->su3_R_conn_8_9 authority matches reference
+      RCONN_DERIVED_NOTE.md
+PASS: su3_color_trace_channel->su3_R_conn_8_9 has quote anchors
+      3
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 1 is meaningful
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 1 is present
+      RCONN_DERIVED_NOTE.md
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 2 is meaningful
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 2 is present
+      RCONN_DERIVED_NOTE.md
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 3 is meaningful
+PASS: su3_color_trace_channel->su3_R_conn_8_9 quote 3 is present
+      RCONN_DERIVED_NOTE.md
+PASS: route2_q_E_15_8->route2_center_TE_minus_8_9 authority matches reference
+      QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: route2_q_E_15_8->route2_center_TE_minus_8_9 has quote anchors
+      2
+PASS: route2_q_E_15_8->route2_center_TE_minus_8_9 quote 1 is meaningful
+PASS: route2_q_E_15_8->route2_center_TE_minus_8_9 quote 1 is present
+      QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: route2_q_E_15_8->route2_center_TE_minus_8_9 quote 2 is meaningful
+PASS: route2_q_E_15_8->route2_center_TE_minus_8_9 quote 2 is present
+      QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: route2_rho_E_21_4->route2_q_E_15_8 authority matches reference
+      QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: route2_rho_E_21_4->route2_q_E_15_8 has quote anchors
+      2
+PASS: route2_rho_E_21_4->route2_q_E_15_8 quote 1 is meaningful
+PASS: route2_rho_E_21_4->route2_q_E_15_8 quote 1 is present
+      QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: route2_rho_E_21_4->route2_q_E_15_8 quote 2 is meaningful
+PASS: route2_rho_E_21_4->route2_q_E_15_8 quote 2 is present
+      QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PART 1: quote-anchor generated inventory
+PASS: generated current edge count matches configured count
+PASS: generated derived edge count matches configured derived count
+PASS: generated current edge keys match configured keys
+PASS: generated derived edge keys match configured derived keys
+PASS: missing bridge is not generated by current anchors
+PASS: missing bridge is not generated by derived anchors
+
+PART 2: domain grading
+PASS: all inventory nodes have declared domains
+      []
+PASS: generated inventory contains no color-to-Route-2 edge
+PASS: generated inventory contains no Route-2-to-color edge
+PASS: SU(3) support edge stays inside color domain
+PASS: missing bridge is exactly color-to-Route-2
+      ('su3_color', 'route2_readout')
+PASS: missing bridge has role missing
+
+PART 3: reachability on generated inventory
+PASS: generated current inventory has no R_conn-to-rho_E path
+      (none)
+PASS: generated current+derived inventory has no R_conn-to-rho_E path
+      (none)
+PASS: adding missing bridge creates R_conn-to-rho_E path
+      su3_R_conn_8_9 -> route2_center_TE_minus_8_9 -> route2_q_E_15_8 -> route2_rho_E_21_4
+PASS: successful bridged path uses the missing bridge
+PASS: successful bridged path then uses endpoint algebra
+
+PART 4: endpoint algebra remains conditional
+PASS: SU(3) adjoint fraction is 8/9
+      R_conn=8/9
+PASS: if c_TE=-R_conn is supplied then q_E=15/8
+      q_E=15/8
+PASS: if c_TE=-R_conn is supplied then rho_E=21/4
+      rho_E=21/4
+PASS: full-current signed endpoint gives rho_E=4 instead
+PASS: therefore generated inventory support does not select the endpoint by itself
+
+PART 5: note and scope markers
+PASS: new note contains marker: Claim type:** bounded_support
+PASS: new note contains marker: Actual current-surface status: bounded-support for generated typed-edge inventory
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: domain-graded generated inventory
+PASS: new note contains marker: missing bridge remains absent
+PASS: new note contains marker: does not close the parent
+PASS: source-domain note names the configured-inventory residual
+PASS: parent still names the readout endpoint blocker
+PASS: Block73 leaves connected-cumulant selector as the open import
+PASS: new note avoids overclaim marker: status-authority phrase
+PASS: new note avoids overclaim marker: parent closure
+PASS: new note avoids overclaim marker: current-surface endpoint derivation
+PASS: new note avoids overclaim marker: audit ratification
+PASS: new note avoids overclaim marker: branch-local status-promotion
+PASS: new note avoids overclaim marker: future retention
+PASS: new note avoids overclaim marker: promotion-to-retention
+
+TOTAL: PASS=102, FAIL=0
+VERDICT: the current Route-2 typed-edge inventory is regenerated from quote-anchored authority schemas, but the generated domain-graded bank still lacks the cross-domain R_conn -> c_TE bridge.

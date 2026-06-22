@@ -83,7 +83,21 @@ No audit verdict was applied.
 
 ## PR
 
-Pending.
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4650
+```
+
+Identity-only view:
+
+```text
+{"baseRefName":"physics-loop/s3-route2-direct-inverse-square-dualization-block63-20260622","headRefName":"physics-loop/s3-route2-nonlinear-source-law-classification-block64-20260622","number":4650,"state":"OPEN","title":"[physics-loop] s3-route2-nonlinear-source-law-classification block64 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4650"}
+```
+
+Initial science commit:
+
+```text
+c0ee77b609f48b4f7eebf3608a474ba58837988a
+```
 
 ## Next Exact Action
 

@@ -7,6 +7,7 @@ block: 64
 branch: physics-loop/s3-route2-nonlinear-source-law-classification-block64-20260622
 base: physics-loop/s3-route2-direct-inverse-square-dualization-block63-20260622
 base_commit: df51efd9a
+local_science_commit: c0ee77b609f48b4f7eebf3608a474ba58837988a
 worktree: /private/tmp/cl3-physics-loop-s3-route2-nonlinear-source-law-classification-block64-20260622
 date: 2026-06-22
 mode: campaign
@@ -64,8 +65,11 @@ open_imports:
   - "A physical theorem selecting inverse-square without endpoint target fitting."
   - "A direct E-center readout theorem or typed excess bridge."
 review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
-pr_status: pending
+pr_status: open
+pr_number: 4650
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4650
+pr_identity_view: >-
+  {"baseRefName":"physics-loop/s3-route2-direct-inverse-square-dualization-block63-20260622","headRefName":"physics-loop/s3-route2-nonlinear-source-law-classification-block64-20260622","number":4650,"state":"OPEN","title":"[physics-loop] s3-route2-nonlinear-source-law-classification block64 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4650"}
 next_exact_action: >-
-  Commit, push, and open a stacked review PR. Then attempt a direct E-center
-  readout theorem or typed excess bridge.
+  Attempt a direct E-center readout theorem or typed excess bridge.
 stop_condition: none

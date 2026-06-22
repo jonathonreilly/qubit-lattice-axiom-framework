@@ -52,13 +52,13 @@ checkpoint:
     notes:
       - "Review-loop audit pipeline gate intentionally not run under active no-audit campaign instruction."
   pr:
-    number: null
-    url: null
-    title: null
-    state: null
-    baseRefName: null
-    headRefName: null
-    identity_checked: false
+    number: 4639
+    url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4639"
+    title: "[physics-loop] s3-route2-record-additive-second-variation block108 no-go"
+    state: OPEN
+    baseRefName: physics-loop/s3-route2-log-weight-second-variation-block107-20260622
+    headRefName: physics-loop/s3-route2-source-readout-second-variation-block108-20260622
+    identity_checked: true
     conflict_mergeability_checked: false
-  next_exact_action: "Commit, push, and open stacked PR without conflict checks."
+  next_exact_action: "Continue the campaign by attempting the positive physical source-action/metric bridge that makes the Route-2 source row a scale-shift-invariant second variation in w, now excluding Record additivity as the source of that premise."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

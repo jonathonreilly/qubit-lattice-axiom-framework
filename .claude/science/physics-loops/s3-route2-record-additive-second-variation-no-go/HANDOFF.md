@@ -53,8 +53,18 @@ Audit pipeline must not be run, and no audit verdict should be applied.
 
 ## PR
 
-Pending.
+- Number: 4639
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4639
+- Title: `[physics-loop] s3-route2-record-additive-second-variation block108 no-go`
+- State: OPEN
+- Base: `physics-loop/s3-route2-log-weight-second-variation-block107-20260622`
+- Head: `physics-loop/s3-route2-source-readout-second-variation-block108-20260622`
+- Identity checked: yes
+- Mergeability/conflict checked: no
 
 ## Next Exact Action
 
-Commit, push, and open stacked PR without conflict checks.
+Continue the campaign by attempting the positive physical source-action/metric
+bridge that makes the Route-2 source row a scale-shift-invariant second
+variation in `w`, now excluding Record additivity as the source of that
+premise.

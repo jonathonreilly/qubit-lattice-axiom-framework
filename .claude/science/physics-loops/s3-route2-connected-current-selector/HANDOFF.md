@@ -69,7 +69,21 @@ No audit verdict was applied.
 
 ## PR
 
-Pending.
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4655
+```
+
+Identity-only view:
+
+```text
+{"baseRefName":"physics-loop/s3-route2-endpoint-orientation-sign-block68-20260622","headRefName":"physics-loop/s3-route2-connected-current-selector-block69-20260622","number":4655,"state":"OPEN","title":"[physics-loop] s3-route2-connected-current-selector block69 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4655"}
+```
+
+Initial science commit:
+
+```text
+b0a1c68a3b24d2a59295d51d5a3ce4f574db8a70
+```
 
 ## Next Exact Action
 

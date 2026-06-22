@@ -1,7 +1,7 @@
 # PR Backlog
 
-Pending PR creation for:
+No backlog for Block69.  PR opened:
 
 ```text
-physics-loop/s3-route2-connected-current-selector-block69-20260622
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4655
 ```

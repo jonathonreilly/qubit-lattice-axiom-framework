@@ -7,6 +7,7 @@ block: 78
 branch: physics-loop/s3-route2-connected-color-source-transfer-block78-20260622
 base: physics-loop/s3-route2-observable-hessian-readout-identification-block77-20260622
 base_commit: afe7161c8
+science_commit: 6082e553b
 worktree: /private/tmp/cl3-physics-loop-s3-route2-connected-color-source-transfer-block78-20260622
 date: 2026-06-22
 mode: campaign
@@ -57,10 +58,16 @@ open_imports:
   - "Trace-one color-record source surface for Route-2."
   - "Pure-disconnected singlet typing for the 1/9 channel."
 review_disposition: ready_for_review
-pr_status: pending
-pr_number: null
-pr_url: null
-pr_identity: null
+pr_status: open
+pr_number: 4665
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4665
+pr_identity:
+  number: 4665
+  state: OPEN
+  title: "[physics-loop] s3-route2-connected-color-source-transfer block78 no-go"
+  baseRefName: physics-loop/s3-route2-observable-hessian-readout-identification-block77-20260622
+  headRefName: physics-loop/s3-route2-connected-color-source-transfer-block78-20260622
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4665
 next_exact_action: >-
   Construct or find a theorem that Route-2 P_R/E-T readout is the normalized
   connected color-matrix source tangent.

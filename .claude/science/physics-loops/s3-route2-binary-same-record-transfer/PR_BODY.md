@@ -47,5 +47,10 @@ PASS banned overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+number: 4690
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4690
+title: [physics-loop] s3-route2 binary same-record transfer block103 no-go
+base: physics-loop/s3-route2-binary-product-normal-form-block102-20260622
+head: physics-loop/s3-route2-binary-same-record-transfer-block103-20260622
+science_commit: 76b6e5381
 ```

@@ -1,0 +1,100 @@
+Route-2 source-measure product-registry transfer no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Pcal theorem states W=log M connected generator
+PASS: Pcal theorem uses finite record variables O_i
+PASS: Pcal theorem gives Mobius subtraction formula
+PASS: Pcal theorem leaves physical scalar response decision open
+PASS: RN theorem supplies normalized source cocycle when source intervention is supplied
+PASS: record-intervention theorem is record-facing finite sector
+PASS: Block99 names typed source-action/product registry theorem
+PASS: Block97 says raw second moments and one-point products are missing
+PASS: source-Hessian support requires pure-disconnected singlet identification
+
+PART 2: two-point product load
+  no_product: raw=1, one_a=0, one_b=0, connected=1, kappa=1
+PASS: no_product connected value is rational
+PASS: no_product kappa value is rational
+  route2_disconnected_product: raw=1, one_a=1/3, one_b=1/3, connected=8/9, kappa=0
+PASS: route2_disconnected_product connected value is rational
+PASS: route2_disconnected_product kappa value is rational
+  larger_product: raw=1, one_a=2/3, one_b=2/3, connected=5/9, kappa=-3
+PASS: larger_product connected value is rational
+PASS: larger_product kappa value is rational
+  asymmetric_product: raw=1, one_a=1/2, one_b=1/3, connected=5/6, kappa=-1/2
+PASS: asymmetric_product connected value is rational
+PASS: asymmetric_product kappa value is rational
+PASS: raw=1 with one-point product 1/9 gives connected 8/9
+PASS: raw=1 with zero product gives connected 1
+PASS: connected 8/9 corresponds to kappa=0
+PASS: connected 1 corresponds to kappa=1
+PASS: same raw second moment supports multiple connected values
+PASS: same raw second moment supports multiple kappa values
+PASS: one-point product registry is load-bearing
+PASS: Pcal formula alone does not choose the one-point product
+
+PART 3: support versus product instantiation
+  provided partition_lattice_mobius_formula: True
+PASS: partition_lattice_mobius_formula is provided support
+  provided log_generator_for_connected_responses: True
+PASS: log_generator_for_connected_responses is provided support
+  provided finite_record_RN_chart_template: True
+PASS: finite_record_RN_chart_template is provided support
+  provided record_facing_source_sector_support: True
+PASS: record_facing_source_sector_support is provided support
+  missing route2_record_variables: False
+PASS: route2_record_variables remains missing
+  missing route2_reference_measure: False
+PASS: route2_reference_measure remains missing
+  missing route2_raw_D2Z_slot_registry: False
+PASS: route2_raw_D2Z_slot_registry remains missing
+  missing route2_one_point_product_registry: False
+PASS: route2_one_point_product_registry remains missing
+  missing symmetric_singlet_equals_product: False
+PASS: symmetric_singlet_equals_product remains missing
+  missing same_source_ET_color_typing: False
+PASS: same_source_ET_color_typing remains missing
+PASS: provided support does not include Route-2 variables
+PASS: provided support does not include raw D2Z slot registry
+PASS: provided support does not include one-point product registry
+PASS: missing list contains all product-instantiation fields
+PASS: this boundary is narrower than full End(C^3) ensemble transfer
+
+PART 4: reachability
+PASS: generic Pcal support reaches abstract cumulant formula
+PASS: generic Pcal support reaches missing product registry
+PASS: generic Pcal support does not reach kappa=0
+PASS: Route-2 product instantiation reaches connected readout
+PASS: Route-2 product instantiation reaches kappa=0
+PASS: one-point registry is on the positive route
+PASS: raw slot registry is on the positive route
+PASS: reachability graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for generic source-measure Pcal/Mobius support supplying the Route-2 product registry
+PASS: note contains marker: The same raw second moment can give different connected Route-2 selectors
+PASS: note contains marker: Only the second line is the kappa=0 selector
+PASS: note contains marker: This block is narrower than the earlier full color-ensemble transfer no-go
+PASS: note contains marker: Route-2 Pcal product-instantiation theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block100 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names Pcal product-instantiation theorem
+PASS: state records no audit stop condition
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=72, FAIL=0
+VERDICT: generic source-measure Pcal/Mobius support gives the product-subtraction formula but not the Route-2 raw/one-point product registry.

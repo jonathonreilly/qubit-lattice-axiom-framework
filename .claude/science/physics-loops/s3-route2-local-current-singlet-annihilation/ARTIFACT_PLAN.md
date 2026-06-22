@@ -7,4 +7,4 @@
 | `outputs/frontier_quark_route2_local_current_singlet_annihilation_no_go_2026_06_22.txt` | Captured runner output | PASS=44, FAIL=0 |
 | Loop pack | Branch-local state and handoff | review-ready |
 | `PR_BODY.md` | Stacked PR body | added |
-| Science PR | Review surface | pending |
+| Science PR | Review surface | PR #4659 open |

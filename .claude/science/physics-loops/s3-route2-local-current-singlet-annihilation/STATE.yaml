@@ -28,6 +28,7 @@ files_touched:
   - scripts/frontier_quark_route2_local_current_singlet_annihilation_no_go_2026_06_22.py
   - outputs/frontier_quark_route2_local_current_singlet_annihilation_no_go_2026_06_22.txt
   - .claude/science/physics-loops/s3-route2-local-current-singlet-annihilation/
+science_commit: b42ed5e43f2ca2bc4326d76d22baf3d94fa90014
 commands_run:
   - "python3 -m py_compile scripts/frontier_quark_route2_local_current_singlet_annihilation_no_go_2026_06_22.py"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_local_current_singlet_annihilation_no_go_2026_06_22.py"
@@ -61,7 +62,19 @@ imports_retired:
 open_imports:
   - "A typed theorem selecting connected-cumulant/disconnected-subtraction readout as the physical Route-2 current readout."
 review_disposition: pass
-pr_status: pending
+pr_status: open
+pr_number: 4659
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4659
+pr_identity:
+  number: 4659
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4659
+  title: "[physics-loop] s3-route2-local-current-singlet-annihilation block73 no-go"
+  state: OPEN
+  baseRefName: physics-loop/s3-route2-positive-e-center-domain-block72-20260622
+  headRefName: physics-loop/s3-route2-local-current-singlet-annihilation-block73-20260622
 next_exact_action: >-
-  Run static scans, commit, push, and open the stacked PR.
+  Continue the campaign by selecting a genuinely new typed source/readout
+  target instead of repeating local-current, same-rational, finite-box
+  comparator, direct readout-family, positive-domain, or full-trace-exclusion
+  routes.
 stop_condition: none

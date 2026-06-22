@@ -59,7 +59,14 @@ Audit pipeline must not be run, and no audit verdict should be applied.
 
 ## PR
 
-Pending.
+- Number: 4638
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4638
+- Title: `[physics-loop] s3-route2-log-weight-second-variation block107 exact-support`
+- State: OPEN
+- Base: `physics-loop/s3-route2-source-row-degree-selector-block106-20260622`
+- Head: `physics-loop/s3-route2-log-weight-second-variation-block107-20260622`
+- Identity checked: yes
+- Mergeability/conflict checked: no
 
 ## Next Exact Action
 

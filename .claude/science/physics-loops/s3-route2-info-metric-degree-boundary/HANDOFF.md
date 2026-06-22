@@ -47,8 +47,17 @@ Audit pipeline must not be run, and no audit verdict should be applied.
 
 ## PR
 
-Pending.
+- Number: 4640
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4640
+- Title: `[physics-loop] s3-route2-info-metric-degree-boundary block109 no-go`
+- State: OPEN
+- Base: `physics-loop/s3-route2-source-readout-second-variation-block108-20260622`
+- Head: `physics-loop/s3-route2-info-metric-degree-boundary-block109-20260622`
+- Identity checked: yes
+- Mergeability/conflict checked: no
 
 ## Next Exact Action
 
-Commit, push, and open stacked PR without conflict checks.
+Continue the campaign by attempting the positive log-barrier or ray-quotient
+source-action theorem; standard information metrics are now pruned as degree
+`-1`.

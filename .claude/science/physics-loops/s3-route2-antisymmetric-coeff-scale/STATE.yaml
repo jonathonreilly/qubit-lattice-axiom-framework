@@ -1,0 +1,64 @@
+loop_slug: s3-route2-antisymmetric-coeff-scale
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 91
+branch: physics-loop/s3-route2-antisymmetric-coeff-scale-block91-20260622
+base: physics-loop/s3-route2-carrier-antisymmetric-hessian-coeff-block90-20260622
+base_commit: 4256d0b0d
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-antisymmetric-coeff-scale-block91-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes_antisymmetric_direction_as_scale_normalized_coeff_vector
+active_route: Antisymmetric E/T coefficient scale normalization
+hard_residual: >-
+  Determine whether an exact antisymmetric E/T direction alone fixes the
+  connected-Hessian coefficient vector.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_ANTISYMMETRIC_COEFF_SCALE_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_antisymmetric_coeff_scale_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_antisymmetric_coeff_scale_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-antisymmetric-coeff-scale/
+commands_run:
+  - python3 -m py_compile scripts/frontier_quark_route2_antisymmetric_coeff_scale_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_antisymmetric_coeff_scale_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_carrier_antisymmetric_hessian_coeff_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hessian_et_coefficient_normalization_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_covariant_scalarization_collapse_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+  - git diff --check
+  - STATE.yaml parse
+  - ASCII scan
+  - overclaim scan
+command_results:
+  - PASS
+  - PASS=47 FAIL=0
+  - PASS=48 FAIL=0
+  - PASS=49 FAIL=0
+  - PASS=50 FAIL=0
+  - PASS=49 FAIL=0
+  - PASS=11 FAIL=0
+  - PASS
+  - PASS
+  - PASS
+  - PASS
+imports_retired:
+  - "The route that an exact antisymmetric E/T direction alone fixes the scale-normalized connected-Hessian coefficient vector."
+open_imports:
+  - "Route-2 scale-normalized pure-antisymmetric Hessian coefficient theorem."
+review_disposition: static_verification_passed_no_audit_or_review_worker_run
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct a scale-normalized pure-antisymmetric E/T Hessian coefficient
+  theorem, or choose a different source/readout route.
+stop_condition: none

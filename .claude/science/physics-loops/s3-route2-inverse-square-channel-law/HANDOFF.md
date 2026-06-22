@@ -35,8 +35,17 @@ Review disposition:
 - No repo-wide authority surfaces are updated.
 - PR conflicts/mergeability are not checked.
 
+PR:
+
+- Opened PR #4612:
+  `https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4612`
+- Base: `main`.
+- Head:
+  `physics-loop/s3-route2-inverse-square-channel-law-block81-20260621`.
+- Identity-only verification passed; PR conflict/mergeability state was not
+  checked.
+
 Next exact action:
 
-- Commit, push, and open the block81 PR.
-- Then pivot to a nonlinear tensor readout primitive stretch target if runtime
-  remains.
+- Pivot to a nonlinear tensor readout primitive stretch target.
+- Do not refresh existing PRs to `main` and do not check PR conflicts.

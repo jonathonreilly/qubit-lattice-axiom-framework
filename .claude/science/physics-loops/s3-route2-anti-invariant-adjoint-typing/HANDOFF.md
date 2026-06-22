@@ -72,7 +72,11 @@ block; reviewer/cherry-pick handling is left to the PR review path.
 ## PR
 
 ```text
-PENDING
+PR #4682
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4682
+State: OPEN
+Base: physics-loop/s3-route2-symmetric-line-purity-block94-20260622
+Head: physics-loop/s3-route2-anti-invariant-adjoint-typing-block95-20260622
 ```
 
 ## Next Exact Action

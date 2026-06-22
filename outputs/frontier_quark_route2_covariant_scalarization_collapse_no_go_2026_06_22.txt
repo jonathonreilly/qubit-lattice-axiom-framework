@@ -1,0 +1,68 @@
+Route-2 covariant scalarization collapse no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block87 says invariant scalar output has zero first-order response
+PASS: Block87 leaves covariant color-readout family open
+PASS: source-Hessian support gives exact disconnected subtraction
+PASS: source-Hessian support leaves physical readout primitive open
+PASS: observable-Hessian no-go asks for color/tensor-resolved source functional
+PASS: observable-Hessian no-go asks for same-source identification
+PASS: connected color-source note identifies End(C^3)/CI with sl_3
+PASS: connected color-source note says Route-2 readout does not live on that source surface
+
+PART 2: scalarization algebra
+PASS: test tangent X is traceless
+PASS: quadratic invariant is nonzero on X
+PASS: quadratic invariant is even under X -> -X
+PASS: cubic invariant changes sign under X -> -X
+PASS: sl_3 connected tangent has dimension eight
+PASS: orientation-free scalar invariant generators are only scalar orbit data here
+PASS: current Route-2 carrier has four feature slots
+PASS: current P_R/E-T output has two scalar slots
+PASS: scalar orbit data do not preserve the eight adjoint tangent directions
+
+PART 3: scalarization underdetermination
+  quadratic_only: 6
+PASS: quadratic_only is a scalar orbit readout
+  cubic_only: -6
+PASS: cubic_only is a scalar orbit readout
+  quadratic_plus_cubic: 0
+PASS: quadratic_plus_cubic is a scalar orbit readout
+  quadratic_minus_cubic: 12
+PASS: quadratic_minus_cubic is a scalar orbit readout
+PASS: different invariant scalarizations give different scalar values
+PASS: the scalarization family has free coefficients before a readout theorem
+PASS: quadratic-only scalarization loses the sign of X
+PASS: cubic-only scalarization keeps an odd orbit scalar but not an E/T readout map
+PASS: no endpoint value is needed for the underdetermination
+
+PART 4: reachability
+PASS: scalarization shortcut does not reach kappa=0
+PASS: scalarization shortcut reaches lost typing
+PASS: adding the missing typed theorem reaches kappa=0
+PASS: a bare scalarization-to-Hessian shortcut would be an extra bridge
+PASS: graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for invariant scalarization of a covariant color family
+PASS: note contains marker: covariant sl_3 color-readout family
+PASS: note contains marker: invariant scalarization
+PASS: note contains marker: Route-2 covariant-family connected-Hessian E/T readout theorem
+PASS: note contains marker: This is stronger than "take the Casimir/norm of the color family
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block88 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names scalarization shortcut
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=50, FAIL=0
+VERDICT: invariant scalarization of a covariant color family loses the typed Route-2 E/T readout bridge.

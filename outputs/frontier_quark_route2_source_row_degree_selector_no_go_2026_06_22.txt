@@ -1,0 +1,56 @@
+Route-2 source-row degree selector no-go
+==============================================================================
+
+A. Source-note and authority boundary
+PASS: new source note exists -- docs/QUARK_ROUTE2_SOURCE_ROW_DEGREE_SELECTOR_NO_GO_NOTE_2026-06-22.md
+PASS: new note declares scoped no-go status
+PASS: new note states the no-go target
+PASS: new note keeps the positive route open
+PASS: new note has no retained proposal wording
+PASS: QUARK_ROUTE2_DIRECT_E_CENTER_SOURCE_ROW_DEGREE_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- homogeneous source-row degree `d=-2`; does not derive `d=-2`
+PASS: QUARK_ROUTE2_POWER_LAW_COORDINATE_BRIDGE_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- multiplicatively homogeneous; current surface does not derive
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md contains required boundary markers -- remains a free parameter; additional E-center endpoint ratio
+PASS: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md contains required boundary markers -- readout **norm**; `rho_E` is the readout's **direction**
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains required boundary markers -- endpoint triple; not yet derived
+PASS: MINIMAL_AXIOMS_2026-06-05.md contains required boundary markers -- supplies no readout context
+
+B. Generic homogeneous row constraints
+PASS: all sampled degrees satisfy generic positivity/T-normalized constraints
+PASS: all sampled degrees preserve E/T ratio under common scale
+PASS: scale covariance holds for a second scale witness
+PASS: target degree still gives 9/4
+PASS: degree -1 is admissible but non-target
+PASS: degree 0 is admissible but non-target
+PASS: degree 1 is admissible but non-target
+PASS: sampled admissible degrees give distinct E/T ratios
+
+C. Exact counter-witnesses
+PASS: degree -1 q_E counter-witness -- q_E=5/4
+PASS: degree -1 rho_E counter-witness -- rho_E=3/2
+PASS: degree -1 c_TE counter-witness -- c_TE=-4/3
+PASS: degree -1 still satisfies generic constraints
+PASS: degree 0 q_E counter-witness -- q_E=5/6
+PASS: degree 0 rho_E counter-witness -- rho_E=-1
+PASS: degree 0 c_TE counter-witness -- c_TE=-2
+PASS: degree 0 still satisfies generic constraints
+PASS: degree 1 q_E counter-witness -- q_E=5/9
+PASS: degree 1 rho_E counter-witness -- rho_E=-8/3
+PASS: degree 1 c_TE counter-witness -- c_TE=-3
+PASS: degree 1 still satisfies generic constraints
+PASS: degree 2 q_E counter-witness -- q_E=10/27
+PASS: degree 2 rho_E counter-witness -- rho_E=-34/9
+PASS: degree 2 c_TE counter-witness -- c_TE=-9/2
+PASS: degree 2 still satisfies generic constraints
+
+D. Selector independence
+PASS: target degree remains unique in integer scan -- target_degrees=[-2]
+PASS: generic constraints admit many non-target degrees -- count=16
+PASS: simple non-target degrees are admissible
+PASS: note displays simple admissible counter-witnesses
+PASS: note identifies the remaining import
+PASS: forbidden observed/fitted imports are excluded
+PASS: note preserves parent open status
+
+==============================================================================
+TOTAL: PASS=42, FAIL=0
+STATUS: scoped no-go. Generic homogeneous source-row constraints, T normalization, and positivity do not select degree -2; deriving the physical degree remains the open selector theorem.

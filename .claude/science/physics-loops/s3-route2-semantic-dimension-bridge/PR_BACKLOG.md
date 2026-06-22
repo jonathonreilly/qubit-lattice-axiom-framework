@@ -1,6 +1,6 @@
 # PR Backlog
 
-Planned PR:
+Opened PR:
 
 ```bash
 gh pr create \
@@ -11,7 +11,13 @@ gh pr create \
   --body-file .claude/science/physics-loops/s3-route2-semantic-dimension-bridge/PR_BODY.md
 ```
 
-Status: pending create.
+Status: open.
+
+- PR: `https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4611`
+- Number: `4611`
+- Title: `[physics-loop] s3-route2-semantic-dimension-bridge block80 no-go`
+- Head: `physics-loop/s3-route2-semantic-dimension-bridge-block80-20260621`
+- Base: `main`
 
 Notes:
 

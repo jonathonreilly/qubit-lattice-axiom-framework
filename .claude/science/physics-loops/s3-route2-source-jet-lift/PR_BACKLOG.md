@@ -24,5 +24,5 @@ same-source E/T source-Hessian premise.
 PR:
 
 ```text
-PENDING
+Created: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4684
 ```

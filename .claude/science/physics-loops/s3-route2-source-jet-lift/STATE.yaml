@@ -7,7 +7,7 @@ block: 97
 branch: physics-loop/s3-route2-source-jet-lift-block97-20260622
 base: physics-loop/s3-route2-typed-parity-bridge-cut-block96-20260622
 base_commit: ad995de06
-science_commit: PENDING
+science_commit: 99bcaf54d
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-jet-lift-block97-20260622
 date: 2026-06-22
 mode: campaign
@@ -53,9 +53,9 @@ imports_retired:
 open_imports:
   - "Route-2 same-source source-jet lift theorem for the physical E/T readout."
 review_disposition: static_verification_passed_no_audit_or_review_worker_run
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4684
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4684
 next_exact_action: >-
   Construct the Route-2 same-source source-jet lift theorem, or choose another
   typed readout primitive.

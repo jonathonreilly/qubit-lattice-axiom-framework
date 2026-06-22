@@ -41,13 +41,13 @@ checkpoint:
     audit_pipeline_run: false
     note: "Audit pipeline intentionally not run; no audit verdict applied."
   pr:
-    number: null
-    url: null
-    title: null
-    state: null
-    baseRefName: null
-    headRefName: null
-    identity_checked: false
+    number: 4641
+    url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4641"
+    title: "[physics-loop] s3-route2-log-action-cocycle block110 exact-support"
+    state: OPEN
+    baseRefName: physics-loop/s3-route2-info-metric-degree-boundary-block109-20260622
+    headRefName: physics-loop/s3-route2-log-action-cocycle-boundary-block110-20260622
+    identity_checked: true
     conflict_mergeability_checked: false
-  next_exact_action: "Commit, push, and open stacked PR without conflict checks."
+  next_exact_action: "Start next science block on the Route-2 source/readout primitive: prove or no-go physical log-action cocycle semantics plus Hessian-row readout in w."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

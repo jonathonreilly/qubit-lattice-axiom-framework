@@ -1,0 +1,95 @@
+Route-2 direct inverse-square dualization stretch no-go
+Status: no-go for the minimal direct dualization derivation; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: endpoint algebra
+PASS: six-arm Schur weights are w_E=1/3 and w_T=1/2
+PASS: same-domain leverage w_T/w_E is 3/2
+PASS: p=2 gives lambda=q_E/q_T=9/4
+      lambda=9/4
+PASS: p=2 gives q_E=15/8
+      q_E=15/8
+PASS: p=2 gives rho_E=21/4
+      rho_E=21/4
+PASS: p=2 gives center T/E=-8/9 when shell T/E=-2
+      center=-8/9
+
+PART 2: normalization fixes C, not p
+  p=-2: C=10/3, q_T=5/6, q_E=10/27
+PASS: normalization at q_T works for p=-2
+  p=-1: C=5/3, q_T=5/6, q_E=5/9
+PASS: normalization at q_T works for p=-1
+  p=+0: C=5/6, q_T=5/6, q_E=5/6
+PASS: normalization at q_T works for p=+0
+  p=+1: C=5/12, q_T=5/6, q_E=5/4
+PASS: normalization at q_T works for p=+1
+  p=+2: C=5/24, q_T=5/6, q_E=15/8
+PASS: normalization at q_T works for p=+2
+  p=+3: C=5/48, q_T=5/6, q_E=45/16
+PASS: normalization at q_T works for p=+3
+PASS: different normalized exponents give different q_E values
+PASS: normalization alone leaves p=0 available
+PASS: normalization alone leaves p=1 available
+PASS: normalization alone leaves p=2 available
+PASS: therefore q_T normalization is not an exponent selector
+
+PART 3: factorized source/readout split
+  neutral_exchange_symmetric: a=0, b=0, p=0, exchange=True
+PASS: neutral_exchange_symmetric has p=a+b
+  half_half_exchange_symmetric: a=1/2, b=1/2, p=1, exchange=True
+PASS: half_half_exchange_symmetric has p=a+b
+  source_only_dual: a=1, b=0, p=1, exchange=False
+PASS: source_only_dual has p=a+b
+  readout_only_dual: a=0, b=1, p=1, exchange=False
+PASS: readout_only_dual has p=a+b
+  two_sided_dual: a=1, b=1, p=2, exchange=True
+PASS: two_sided_dual has p=a+b
+PASS: exchange symmetry admits three tested exponents
+      ['neutral_exchange_symmetric', 'half_half_exchange_symmetric', 'two_sided_dual']
+PASS: exchange symmetry does not select p=2
+      {Fraction(0, 1), Fraction(1, 1), Fraction(2, 1)}
+PASS: one-sided canonical duality gives p=1 controls
+      ['source_only_dual', 'readout_only_dual']
+PASS: only the explicit two-sided unit-dual split has a=b=1
+
+PART 4: covariance and dual involution
+PASS: multiplicative covariance holds for p=-2
+PASS: multiplicative covariance holds for p=-1
+PASS: multiplicative covariance holds for p=+0
+PASS: multiplicative covariance holds for p=+1
+PASS: multiplicative covariance holds for p=+2
+PASS: multiplicative covariance holds for p=+3
+PASS: dual-involution reciprocal product is one for every tested p
+      {-3: Fraction(1, 1), -2: Fraction(1, 1), -1: Fraction(1, 1), 0: Fraction(1, 1), 1: Fraction(1, 1), 2: Fraction(1, 1), 3: Fraction(1, 1)}
+PASS: reciprocity therefore does not select p=2
+PASS: covariant power laws include the target and non-target alternatives
+
+PART 5: target-import firewall
+PASS: solving the endpoint ratio over integer p returns p=2
+      [2]
+PASS: using that solve as a premise would import q_E/q_T=9/4
+PASS: p=1 one-sided dual misses rho_E=21/4
+PASS: p=-2 projector-square direction misses rho_E=21/4
+PASS: p=0 channel-neutral control misses rho_E=21/4
+PASS: remaining positive premise is two unit dual charges
+
+PART 6: note and status firewall
+PASS: note contains marker: Actual current-surface status: no-go for the minimal direct dualization derivation
+PASS: note contains marker: A_min
+PASS: note contains marker: Forbidden proof inputs
+PASS: note contains marker: a = b
+PASS: note contains marker: p = a + b
+PASS: note contains marker: Stuck Fan-Out Synthesis
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not close the parent
+PASS: note contains marker: does not derive the endpoint triple on the actual current surface
+PASS: note contains marker: does not rule out future nonlinear source laws
+PASS: note avoids overclaim marker: status-authority phrase
+PASS: note avoids overclaim marker: parent-closure phrase
+PASS: note avoids overclaim marker: current-surface endpoint-derivation phrase
+PASS: note avoids overclaim marker: audit-ratification phrase
+PASS: note avoids overclaim marker: branch-local status-promotion phrase
+PASS: note avoids overclaim marker: future-retention phrase
+PASS: note avoids overclaim marker: promotion-to-retention phrase
+
+TOTAL: PASS=58, FAIL=0
+VERDICT: no-go for deriving p=2 from the minimal symmetry and normalization package.  The remaining positive theorem must supply two unit canonical-dual source/readout charges, or an equivalent same-domain p=2 selector that does not import the endpoint.

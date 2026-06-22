@@ -13,3 +13,6 @@ Checks performed locally:
 - The result is labeled no-go / conditional support boundary, not closure.
 - Existing PRs were not refreshed to main.
 - PR conflict and mergeability state were not checked.
+
+PR #4614 opened for reviewer/backpressure handoff:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4614

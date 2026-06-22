@@ -1,0 +1,63 @@
+loop_slug: s3-route2-typed-parity-bridge-cut
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 96
+branch: physics-loop/s3-route2-typed-parity-bridge-cut-block96-20260622
+base: physics-loop/s3-route2-anti-invariant-adjoint-typing-block95-20260622
+base_commit: 2097307ad
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-typed-parity-bridge-cut-block96-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: Typed parity bridge minimal cut
+hard_residual: >-
+  Package the exact same-source typed parity source-Hessian premises needed to
+  force kappa=0 without endpoint input.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_TYPED_PARITY_BRIDGE_MINIMAL_CUT_2026-06-22.md
+  - scripts/frontier_quark_route2_typed_parity_bridge_minimal_cut_2026_06_22.py
+  - outputs/frontier_quark_route2_typed_parity_bridge_minimal_cut_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-typed-parity-bridge-cut/
+commands_run:
+  - python3 -m py_compile scripts/frontier_quark_route2_typed_parity_bridge_minimal_cut_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_typed_parity_bridge_minimal_cut_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_anti_invariant_adjoint_typing_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_symmetric_line_purity_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_parity_source_hessian_sufficient_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py
+  - git diff --check
+  - STATE.yaml parse
+  - ASCII scan
+  - overclaim scan
+command_results:
+  - PASS
+  - PASS=60 FAIL=0
+  - PASS=67 FAIL=0
+  - PASS=67 FAIL=0
+  - PASS=70 FAIL=0
+  - PASS=49 FAIL=0
+  - PASS
+  - PASS
+  - PASS
+  - PASS
+imports_retired:
+  - "The ambiguity in which typed parity premises are jointly sufficient for kappa=0."
+open_imports:
+  - "Route-2 same-source typed parity source-Hessian theorem on the physical E/T readout."
+  - "Anti-invariant E/T normalizer for the scalar coefficient bridge."
+review_disposition: static_verification_passed_no_audit_or_review_worker_run
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct the same-source typed parity source-Hessian theorem on the physical
+  E/T readout, or choose another typed readout primitive.
+stop_condition: none

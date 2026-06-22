@@ -1,0 +1,79 @@
+Route-2 typed parity bridge minimal cut
+TRACE: upstream_support
+PART 1: grounding
+PASS: Block92 isolates anti-invariant normalizer
+PASS: Block92 says neutral normalization cannot fix antisymmetric scale
+PASS: Block93 gives sufficient typed parity theorem
+PASS: Block93 says premises are not current-surface closure
+PASS: Block94 isolates symmetric pure-disconnected premise
+PASS: Block94 prunes E/T symmetry alone
+PASS: Block95 isolates anti-invariant adjoint typing
+PASS: Block95 prunes output parity alone
+
+PART 2: truth table
+PASS: truth row classified {'same_source_hessian': False, 'symmetric_pure_disconnected': False, 'anti_invariant_adjoint': False, 'anti_invariant_normalizer': False}
+PASS: truth row classified {'same_source_hessian': False, 'symmetric_pure_disconnected': False, 'anti_invariant_adjoint': False, 'anti_invariant_normalizer': True}
+PASS: truth row classified {'same_source_hessian': False, 'symmetric_pure_disconnected': False, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': False}
+PASS: truth row classified {'same_source_hessian': False, 'symmetric_pure_disconnected': False, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': True}
+PASS: truth row classified {'same_source_hessian': False, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': False, 'anti_invariant_normalizer': False}
+PASS: truth row classified {'same_source_hessian': False, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': False, 'anti_invariant_normalizer': True}
+PASS: truth row classified {'same_source_hessian': False, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': False}
+PASS: truth row classified {'same_source_hessian': False, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': True}
+PASS: truth row classified {'same_source_hessian': True, 'symmetric_pure_disconnected': False, 'anti_invariant_adjoint': False, 'anti_invariant_normalizer': False}
+PASS: truth row classified {'same_source_hessian': True, 'symmetric_pure_disconnected': False, 'anti_invariant_adjoint': False, 'anti_invariant_normalizer': True}
+PASS: truth row classified {'same_source_hessian': True, 'symmetric_pure_disconnected': False, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': False}
+PASS: truth row classified {'same_source_hessian': True, 'symmetric_pure_disconnected': False, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': True}
+PASS: truth row classified {'same_source_hessian': True, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': False, 'anti_invariant_normalizer': False}
+PASS: truth row classified {'same_source_hessian': True, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': False, 'anti_invariant_normalizer': True}
+  {'same_source_hessian': True, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': False} -> kappa=True, scalar_bridge=False
+PASS: truth row classified {'same_source_hessian': True, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': False}
+  {'same_source_hessian': True, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': True} -> kappa=True, scalar_bridge=True
+PASS: truth row classified {'same_source_hessian': True, 'symmetric_pure_disconnected': True, 'anti_invariant_adjoint': True, 'anti_invariant_normalizer': True}
+PASS: all four premises fix scalar bridge
+PASS: removing same_source_hessian breaks kappa=0
+PASS: removing symmetric_pure_disconnected breaks kappa=0
+PASS: removing anti_invariant_adjoint breaks kappa=0
+PASS: removing normalizer preserves kappa=0
+PASS: removing normalizer breaks scalar bridge
+PASS: kappa cut has exactly three required premises
+PASS: scalar bridge cut has four required premises
+
+PART 3: minimality checks
+PASS: same_source_hessian is required for kappa=0
+      no physical same-source Hessian surface
+PASS: symmetric_pure_disconnected is required for kappa=0
+      connected symmetric eta can survive
+PASS: anti_invariant_adjoint is required for kappa=0
+      anti-invariant non-adjoint residue can contaminate
+PASS: anti_invariant_normalizer is not required for kappa=0
+      scale remains unfixed
+PASS: anti_invariant_normalizer is required for scalar bridge
+      scale remains unfixed
+PASS: the support packet does not use endpoint input
+PASS: minimal cut separates kappa route from scalar coefficient route
+PASS: same-source condition is shared by all typed premises
+
+PART 4: document boundary
+PASS: note contains marker: Actual current-surface status: exact-support
+PASS: note contains marker: To force kappa=0 without endpoint input
+PASS: note contains marker: Route-2 same-source typed parity source-Hessian theorem
+PASS: note contains marker: For the scalar E/T coefficient bridge
+PASS: note contains marker: rather than endpoint input
+PASS: handoff contains marker: Block96 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names minimal typed parity cut
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=60, FAIL=0
+VERDICT: the typed parity kappa=0 route has a three-premise minimal cut; the scalar E/T bridge adds the anti-invariant normalizer.

@@ -1,0 +1,55 @@
+loop_slug: s3-route2-t-side-row-scale-independence
+block: 116
+date: 2026-06-22
+branch: physics-loop/s3-route2-t-side-row-scale-independence-block116-20260622
+base: physics-loop/s3-route2-direct-e-center-selector-block115-20260622
+stacked_on_pr: 4646
+mode: campaign
+target_status: best-honest-status
+active_route: T-side row-shape vs shell-scale independence
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+hard_residual: "Derive both beta_T=-alpha_T and alpha_T/alpha_E=-2 from a physical T-row theorem, or supply a single non-circular primitive selecting the full relative row (1,-2,2)."
+lock_mode: branch_local_worktree
+files_touched:
+  - docs/QUARK_ROUTE2_T_SIDE_ROW_SHAPE_SHELL_SCALE_INDEPENDENCE_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_t_side_row_shape_shell_scale_independence_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_t_side_row_shape_shell_scale_independence_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-t-side-row-scale-independence/
+open_imports:
+  - "No current-surface theorem derives beta_T=-alpha_T."
+  - "No current-surface theorem derives alpha_T/alpha_E=-2."
+  - "No current-surface theorem selects the full relative T row (alpha_E,alpha_T,beta_T)=(1,-2,2)."
+no_go_routes:
+  - "T-row shape alone keeps rho_T=-1 and q_T=5/6 but leaves s_TE movable."
+  - "Shell scale/orientation alone keeps s_TE=-2 but leaves rho_T and q_T movable."
+  - "T-row scaling preserves rho_T and q_T while changing s_TE."
+  - "E-shell rescaling preserves rho_T and q_T while changing s_TE."
+  - "The common time factor cancels from endpoint ratios after P_R is supplied."
+checkpoint:
+  review:
+    disposition: pass
+    audit_pipeline_run: false
+    note: "Branch-local review passed for scoped no-go/exact-support boundary. Audit pipeline intentionally not run; no audit verdict applied."
+  pr:
+    number: null
+    url: null
+    title: "[physics-loop] s3-route2-t-side-row-scale-independence block116 no-go"
+    state: pending
+    baseRefName: physics-loop/s3-route2-direct-e-center-selector-block115-20260622
+    headRefName: physics-loop/s3-route2-t-side-row-scale-independence-block116-20260622
+    identity_checked: false
+    conflict_mergeability_checked: false
+  verification_results:
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_t_side_row_shape_shell_scale_independence_no_go_2026_06_22.py"
+    - "PASS: runner output matches outputs/frontier_quark_route2_t_side_row_shape_shell_scale_independence_no_go_2026_06_22.txt"
+    - "PASS: python3 -m py_compile scripts/frontier_quark_route2_t_side_row_shape_shell_scale_independence_no_go_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/quark_route2_t_side_endpoint_theorem_attempt_bounded_2026_06_12.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_direct_e_center_selector_boundary_2026_06_22.py"
+    - "PASS: git diff --check"
+    - "PASS: overclaim scan matched only runner guard strings"
+  next_exact_action: "Open stacked PR, then attempt a physical T-row selector theorem or pivot to the direct source-row degree selector."
+  stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

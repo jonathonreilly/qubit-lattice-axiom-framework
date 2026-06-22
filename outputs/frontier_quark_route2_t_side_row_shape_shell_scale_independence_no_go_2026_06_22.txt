@@ -1,0 +1,60 @@
+Route-2 T-side row-shape/shell-scale independence
+==============================================================================
+
+A. Source-note and dependency boundary
+PASS: new source note exists -- docs/QUARK_ROUTE2_T_SIDE_ROW_SHAPE_SHELL_SCALE_INDEPENDENCE_NO_GO_NOTE_2026-06-22.md
+PASS: new note declares scoped no-go status
+PASS: new note declares no_go claim type
+PASS: new note names independence boundary
+PASS: new note states row-shape target
+PASS: new note states shell-scale target
+PASS: new note has no forbidden proposal wording
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains required markers -- beta_T / alpha_T = -1; alpha_T / alpha_E = -2; s_TE = -2
+PASS: QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md contains required markers -- W1; W2; Missing T-row shape selector
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains required markers -- endpoint triple; not yet derived; unique exact `Theta_R -> Lambda_R`
+PASS: QUARK_ROUTE2_DIRECT_E_CENTER_SELECTOR_BOUNDARY_NOTE_2026-06-22.md contains required markers -- T-side candidates are granted; rho_E = beta_E / alpha_E = 21/4
+
+B. Exact target row
+PASS: target row gives rho_T=-1
+PASS: target row gives q_T=5/6
+PASS: target row gives s_TE=-2
+PASS: target T shell readout is -2
+PASS: target T center readout is -5/3
+PASS: target E shell readout is 1
+
+C. Coordinate independence
+PASS: T-row scaling preserves rho_T
+PASS: T-row scaling preserves q_T
+PASS: T-row scaling changes s_TE
+PASS: beta change preserves s_TE
+PASS: beta change moves rho_T
+PASS: beta change moves q_T
+PASS: E-shell rescaling preserves rho_T
+PASS: E-shell rescaling preserves q_T
+PASS: E-shell rescaling changes s_TE
+
+D. Same-surface counter-witnesses
+PASS: shape-only wrong-scale witness keeps rho_T
+PASS: shape-only wrong-scale witness keeps q_T
+PASS: shape-only wrong-scale witness breaks s_TE
+PASS: shape-only sign-flip witness keeps rho_T
+PASS: shape-only sign-flip witness keeps q_T
+PASS: shape-only sign-flip witness breaks s_TE
+PASS: scale-only flat-shape witness keeps s_TE
+PASS: scale-only flat-shape witness breaks rho_T
+PASS: scale-only flat-shape witness breaks q_T
+PASS: scale-only wrong-shape witness keeps s_TE
+PASS: scale-only wrong-shape witness breaks rho_T
+PASS: scale-only wrong-shape witness breaks q_T
+
+E. Selector firewall
+PASS: note records two-selector boundary
+PASS: note states no automatic cross-derivation
+PASS: note blocks time-factor selector
+PASS: note blocks carrier-column selector
+PASS: note records non-circular positive route
+PASS: note leaves audit authority untouched
+
+==============================================================================
+TOTAL: PASS=44, FAIL=0
+STATUS: scoped no-go/exact support. On the restricted Route-2 readout algebra, rho_T/q_T and s_TE are independent row coordinates; a theorem for beta_T=-alpha_T does not by itself derive alpha_T/alpha_E=-2, and the converse also fails.

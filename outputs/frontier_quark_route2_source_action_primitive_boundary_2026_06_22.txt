@@ -1,0 +1,69 @@
+Route-2 source-action primitive boundary
+==============================================================================
+
+A. Source-note and authority boundary
+PASS: new source note exists -- docs/QUARK_ROUTE2_SOURCE_ACTION_PRIMITIVE_BOUNDARY_NOTE_2026-06-22.md
+PASS: new note declares exact-support/open status
+PASS: new note declares open_gate claim type
+PASS: new note states tested overread
+PASS: new note states cocycle-alone nonselection
+PASS: new note states sharper positive premise
+PASS: new note has no retained proposal wording
+PASS: QUARK_ROUTE2_LOG_ACTION_COCYCLE_HESSIAN_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- multiplicative-to-additive cocycle; Hessian row readout
+PASS: QUARK_ROUTE2_LOG_WEIGHT_SECOND_VARIATION_ROW_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- scale-shift-invariant second variation; Phi''(w) = C/w^2
+PASS: QUARK_ROUTE2_RECORD_ADDITIVE_SECOND_VARIATION_NO_GO_NOTE_2026-06-22.md contains required boundary markers -- does not derive the Block107 premise; nonzero Hessian
+PASS: QUARK_ROUTE2_INFORMATION_METRIC_DEGREE_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- degree `-1`, not degree `-2`; log-barrier
+PASS: QUARK_ROUTE2_HESSIAN_COUNTERTERM_EXCLUSION_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- positive Hessian counterterms; does not exclude
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains required boundary markers -- endpoint triple; not yet derived
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains required boundary markers -- irreducible missing map entry; beta_E / alpha_E
+PASS: MINIMAL_AXIOMS_2026-06-05.md contains required boundary markers -- supplies no readout context
+
+B. Cocycle action and derivative-order family
+PASS: cocycle action is additive in exponent coordinate
+PASS: identity element has zero source action
+PASS: inverse source action changes sign
+PASS: first derivative row ratio is 3/2
+PASS: second derivative row ratio is 9/4
+PASS: third derivative row ratio is 27/8
+PASS: fourth derivative row ratio is 81/16
+PASS: integer derivative-order scan selects k=2 only after order is supplied -- orders=[2]
+
+C. Endpoint consequences and counter-witnesses
+PASS: order 1 endpoint triple -- q_E=5/4, rho_E=3/2, c_TE=-4/3
+PASS: order 2 endpoint triple -- q_E=15/8, rho_E=21/4, c_TE=-8/9
+PASS: order 3 endpoint triple -- q_E=45/16, rho_E=87/8, c_TE=-16/27
+PASS: order 4 endpoint triple -- q_E=135/32, rho_E=309/16, c_TE=-32/81
+PASS: second derivative hits the endpoint target
+PASS: first and third derivatives are exact non-target witnesses
+PASS: note displays derivative-order counter-witnesses
+PASS: note states the overread being pruned
+
+D. Affine-gauge finite-jet lemma
+PASS: value readout is not affine-gauge invariant
+PASS: first derivative readout is not affine-gauge invariant
+PASS: mixed value/first/Hessian readout is not affine-gauge invariant
+PASS: pure Hessian readout is affine-gauge invariant
+PASS: minimal nonzero invariant coefficient pattern is Hessian-only
+PASS: note records the finite-jet coefficient constraint
+PASS: note records minimal-curvature support
+
+E. Prefactor/no-scale boundary
+PASS: constant Hessian prefactor preserves target ratio
+PASS: weight prefactor g(w)=w shifts Hessian to degree -1
+PASS: weight prefactor g(w)=w^2 shifts Hessian to degree 0
+PASS: g(w)=w prefactor reproduces first-derivative miss
+PASS: note identifies the prefactor loophole
+PASS: note keeps no-scale coefficient as an open premise
+
+F. Current-surface boundary
+PASS: note records forbidden proof-input firewall
+PASS: note forbids importing Hessian row
+PASS: note preserves current-surface boundary
+PASS: note excludes fitted/observed hidden inputs
+PASS: note matches S3/Route-2 residual
+PASS: note labels positive primitive as future premise
+PASS: note leaves audit authority untouched
+
+==============================================================================
+TOTAL: PASS=51, FAIL=0
+STATUS: exact-support/open boundary. Log-action cocycle semantics selects the logarithmic source action but not finite-jet order; affine-gauge minimal local curvature would select the Hessian row, while the physical Route-2 source/readout primitive remains open.

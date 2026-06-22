@@ -73,16 +73,19 @@ bridge and dilation-covariant Hessian premise remain open.
 
 ## PR
 
-Pending.
+- Number: 4631
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4631
+- Title: `[physics-loop] s3-route2-dilation-covariant-hessian-source block100 exact-support`
+- State: OPEN
+- Base: `physics-loop/s3-route2-typed-metric-source-inverse-square-block99-20260621`
+- Head: `physics-loop/s3-route2-dilation-covariant-hessian-source-block100-20260622`
+- Identity checked: true
+- Conflict/mergeability checked: false
 
 This block is stacked on Block99 / PR #4630. Conflict/mergeability state must
 not be checked. The reviewer will update or cherry-pick science as needed.
 
 ## Next Exact Action
-
-Commit, push, and open the Block100 PR against the Block99 branch without
-checking conflict or mergeability state. Then update this handoff with PR
-identity only.
 
 Recommended next campaign target after this PR: prove the physical
 channel-weight coordinate bridge or counterterm-exclusion theorem for the

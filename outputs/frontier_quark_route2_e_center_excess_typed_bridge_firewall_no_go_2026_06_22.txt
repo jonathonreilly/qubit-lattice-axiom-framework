@@ -1,0 +1,72 @@
+Route-2 E-center excess typed-bridge firewall no-go
+Status: no-go for same-rational E-center excess import; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: target excess algebra
+PASS: E-center excess target is 7/8
+PASS: 7/8 excess gives q_E=15/8
+      q_E=15/8
+PASS: 7/8 excess gives rho_E=21/4
+      rho_E=21/4
+PASS: 7/8 excess gives center T/E=-8/9 with q_T=5/6 and shell T/E=-2
+      c_TE=-8/9
+PASS: reverse chain recovers excess from rho_E
+
+PART 2: same-rational candidate inventory
+  route2_e_center_excess: value=7/8, q_E=15/8, rho_E=21/4, c_TE=-8/9
+PASS: route2_e_center_excess has exact rational value
+      target typed slot
+  apbc_fourth_power_factor: value=7/8, q_E=15/8, rho_E=21/4, c_TE=-8/9
+PASS: apbc_fourth_power_factor has exact rational value
+      APBC / hierarchy context
+  fermi_bose_thermal_ratio: value=7/8, q_E=15/8, rho_E=21/4, c_TE=-8/9
+PASS: fermi_bose_thermal_ratio has exact rational value
+      thermal/statistical context
+  taste_weight: value=7/18, q_E=25/18, rho_E=7/3, c_TE=-6/5
+PASS: taste_weight has exact rational value
+      taste/radian inventory context
+  rconn_as_excess_control: value=8/9, q_E=17/9, rho_E=16/3, c_TE=-15/17
+PASS: rconn_as_excess_control has exact rational value
+      center-ratio color support, not excess
+PASS: only the typed Route-2 excess candidate closes the excess slot
+      ['route2_e_center_excess']
+PASS: same-rational untyped 7/8 appearances are present but not closing
+      ['apbc_fourth_power_factor', 'fermi_bose_thermal_ratio']
+PASS: taste weight used as excess misses the endpoint
+PASS: R_conn used as excess misses the endpoint
+
+PART 3: role controls
+PASS: APBC fourth root is not the rational 7/8 itself
+      (7/8)^4=2401/4096
+PASS: typed c_TE=-R_conn bridge would give q_E=15/8
+      q_E=15/8
+PASS: typed c_TE=-R_conn bridge would give rho_E=21/4
+      rho_E=21/4
+PASS: R_conn is exact as center-ratio bridge, not as excess
+PASS: using positive R_conn as center ratio gives wrong signed q_E
+      q_E=-15/8
+
+PART 4: current authority markers
+PASS: naturality note names missing E-center primitive
+PASS: naturality note leaves rho_E free
+PASS: Rconn note states bridge is conditional
+PASS: Rconn note has exact -8/9 conditional chain
+PASS: measured calibration note says no derivation of 21/4 is claimed
+PASS: hierarchy note contains APBC 7/8 in non-Route-2 context
+
+PART 5: note and status firewall
+PASS: note contains marker: Claim type:** no_go
+PASS: note contains marker: Actual current-surface status: no-go for same-rational E-center excess import
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not close the parent
+PASS: note contains marker: same rational number != same typed Route-2 readout theorem
+PASS: note contains marker: does not rule out future E-center theorems
+PASS: note avoids overclaim marker: status-authority phrase
+PASS: note avoids overclaim marker: parent closure
+PASS: note avoids overclaim marker: current-surface endpoint derivation
+PASS: note avoids overclaim marker: audit ratification
+PASS: note avoids overclaim marker: branch-local status-promotion
+PASS: note avoids overclaim marker: future retention
+PASS: note avoids overclaim marker: promotion-to-retention
+
+TOTAL: PASS=38, FAIL=0
+VERDICT: no-go for same-rational import.  The number 7/8 closes the E-center excess only when typed as q_E-1 in the Route-2 readout slot, or supplied by an equivalent typed bridge.

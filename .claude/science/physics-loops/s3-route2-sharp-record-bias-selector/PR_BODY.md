@@ -57,5 +57,10 @@ PASS banned overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+number: 4692
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4692
+title: [physics-loop] s3-route2 sharp-record bias selector block105 no-go
+base: physics-loop/s3-route2-signed-quotient-classification-block104-20260622
+head: physics-loop/s3-route2-sharp-record-bias-selector-block105-20260622
+science_commit: 772083b23
 ```

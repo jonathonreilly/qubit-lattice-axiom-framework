@@ -1,12 +1,9 @@
 # PR Backlog
 
-PR pending. If `gh pr create` fails, use:
+No backlog entry remains for this block.
 
-```bash
-gh pr create \
-  --repo jonathonreilly/qubit-lattice-axiom-framework \
-  --base main \
-  --head physics-loop/s3-route2-slice-semigroup-coordinate-block88-20260621 \
-  --title "[physics-loop] s3-route2-slice-semigroup-coordinate block88 no-go" \
-  --body-file .claude/science/physics-loops/s3-route2-slice-semigroup-coordinate/PR_BODY.md
-```
+- PR #4619: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4619
+- Branch: `physics-loop/s3-route2-slice-semigroup-coordinate-block88-20260621`
+- Base: `main`
+- Identity-only view was checked.
+- Conflict and mergeability state were not checked.

@@ -33,6 +33,13 @@ files_touched:
 open_imports:
   - "non-semigroup raw q readout primitive"
   - "alternate typed source/readout bridge to q_E=15/8"
-pr_status: pending
-next_exact_action: "Run the Block88 runner and focused checks, then commit, push, open the PR, and record PR identity."
+pr_status: open
+pr:
+  number: 4619
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4619"
+  title: "[physics-loop] s3-route2-slice-semigroup-coordinate block88 no-go"
+  head: physics-loop/s3-route2-slice-semigroup-coordinate-block88-20260621
+  base: main
+  state: OPEN
+next_exact_action: "Continue the campaign with a non-semigroup raw q readout primitive attempt or an alternate typed source/readout bridge."
 stop_condition: "Continue campaign unless runtime expires, core tooling fails globally, or the queue is globally exhausted."

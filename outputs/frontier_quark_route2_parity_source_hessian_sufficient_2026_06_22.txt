@@ -1,0 +1,94 @@
+Route-2 typed parity source-Hessian sufficient theorem
+TRACE: upstream_support
+PART 1: grounding
+PASS: Block92 names anti-invariant normalization and purity theorem
+PASS: Block92 says invariant normalization annihilates antisymmetric line
+PASS: Block92 says anti-invariant component is typed orientation data
+PASS: Block92 uses no endpoint value
+PASS: Block91 has coefficient decomposition
+PASS: Block91 requires symmetric contamination control
+PASS: source-Hessian note states D2 log Z subtracts disconnected products
+PASS: source-Hessian note names pure-disconnected singlet identification
+PASS: source-Hessian note leaves physical readout primitive open
+
+PART 2: parity cumulant algebra
+  unit_scale_with_singlet: raw=(Fraction(4, 1), Fraction(2, 1)), conn=(Fraction(1, 1), Fraction(-1, 1)), s=1, t_conn=0
+PASS: unit_scale_with_singlet raw has requested anti coefficient
+PASS: unit_scale_with_singlet raw has requested symmetric coefficient
+PASS: unit_scale_with_singlet connected subtraction preserves anti coefficient
+PASS: unit_scale_with_singlet connected subtraction kills symmetric coefficient
+  double_scale_with_singlet: raw=(Fraction(7, 1), Fraction(3, 1)), conn=(Fraction(2, 1), Fraction(-2, 1)), s=2, t_conn=0
+PASS: double_scale_with_singlet raw has requested anti coefficient
+PASS: double_scale_with_singlet raw has requested symmetric coefficient
+PASS: double_scale_with_singlet connected subtraction preserves anti coefficient
+PASS: double_scale_with_singlet connected subtraction kills symmetric coefficient
+  negative_scale_with_singlet: raw=(Fraction(3, 1), Fraction(5, 1)), conn=(Fraction(-1, 1), Fraction(1, 1)), s=-1, t_conn=0
+PASS: negative_scale_with_singlet raw has requested anti coefficient
+PASS: negative_scale_with_singlet raw has requested symmetric coefficient
+PASS: negative_scale_with_singlet connected subtraction preserves anti coefficient
+PASS: negative_scale_with_singlet connected subtraction kills symmetric coefficient
+  no_singlet: raw=(Fraction(3, 1), Fraction(-3, 1)), conn=(Fraction(3, 1), Fraction(-3, 1)), s=3, t_conn=0
+PASS: no_singlet raw has requested anti coefficient
+PASS: no_singlet raw has requested symmetric coefficient
+PASS: no_singlet connected subtraction preserves anti coefficient
+PASS: no_singlet connected subtraction kills symmetric coefficient
+PASS: connected outputs lie on antisymmetric line
+PASS: anti-invariant normalization sees connected scale
+PASS: symmetric contamination is removed before scale normalization
+PASS: kappa is zero after connected subtraction
+PASS: raw moment would have nonzero singlet coefficient
+PASS: no endpoint value is used in the cumulant algebra
+
+PART 3: sufficient premise table
+  same_source_ET_hessian: open
+PASS: same_source_ET_hessian has classified status
+  symmetric_line_pure_disconnected: open
+PASS: symmetric_line_pure_disconnected has classified status
+  D2_logZ_connected_subtraction: supported
+PASS: D2_logZ_connected_subtraction has classified status
+  antisymmetric_line_connected_adjoint: open
+PASS: antisymmetric_line_connected_adjoint has classified status
+  anti_invariant_normalization: open
+PASS: anti_invariant_normalization has classified status
+  endpoint_value_input: forbidden
+PASS: endpoint_value_input has classified status
+PASS: D2 log Z support is the only already-supported theorem premise
+PASS: endpoint input is forbidden
+PASS: same-source E/T Hessian remains open
+PASS: pure-disconnected symmetric typing remains open
+PASS: anti-invariant normalization remains open
+PASS: current surface does not yet satisfy all sufficient premises
+
+PART 4: reachability
+PASS: sufficient premises reach kappa=0
+PASS: sufficient premises reach scale-normalization condition
+PASS: current surface does not reach kappa=0 through missing-premise graph
+PASS: current surface records missing same-source E/T Hessian
+PASS: current surface records missing pure-disconnected typing
+PASS: current surface records missing anti-invariant normalizer
+PASS: graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: conditional-support
+PASS: note contains marker: H_conn = s A_ET B_adj
+PASS: note contains marker: kappa = 0
+PASS: note contains marker: does not prove that the current Route-2 physical readout satisfies the theorem premises
+PASS: note contains marker: Route-2 typed parity source-Hessian bridge theorem
+PASS: handoff contains marker: Block93 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names typed parity source-Hessian bridge
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=70, FAIL=0
+VERDICT: the typed parity source-Hessian premises are sufficient to force kappa=0 without endpoint input; those premises remain open on the current surface.

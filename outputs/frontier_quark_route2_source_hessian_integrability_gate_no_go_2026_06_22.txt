@@ -1,0 +1,76 @@
+Route-2 source-Hessian integrability gate no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block97 names source-jet lift theorem
+PASS: Block97 says finite P_R is not a source two-jet
+PASS: Block96 names same-source Hessian premise
+PASS: exact readout note has four finite endpoint slots
+PASS: exact readout note exposes channelwise P_R
+PASS: source-Hessian support supplies D2 log Z identity
+PASS: source-Hessian support does not supply Route-2 physical readout
+
+PART 2: reciprocity examples
+  valid={('E', 'E'): Fraction(1, 1), ('E', 'T'): Fraction(2, 1), ('T', 'E'): Fraction(2, 1), ('T', 'T'): Fraction(3, 1)}
+  invalid={('E', 'E'): Fraction(1, 1), ('E', 'T'): Fraction(2, 1), ('T', 'E'): Fraction(5, 1), ('T', 'T'): Fraction(3, 1)}
+  underregistered={('E', 'E'): Fraction(1, 1), ('E', 'T'): Fraction(2, 1), ('T', 'T'): Fraction(3, 1)}
+PASS: valid registry satisfies H_ET=H_TE
+PASS: invalid registry violates H_ET=H_TE
+PASS: underregistered registry cannot certify both ordered mixed slots
+PASS: four finite values can be assigned symmetrically
+PASS: four finite values can also be assigned non-integrably
+PASS: finite slot count alone does not certify Hessian reciprocity
+PASS: reciprocity uses source-index labels, not endpoint values
+
+PART 3: required registry fields
+  source_coordinate_set: missing
+PASS: source_coordinate_set has boolean status
+  ordered_to_unordered_pair_map: missing
+PASS: ordered_to_unordered_pair_map has boolean status
+  mixed_partial_reciprocity: missing
+PASS: mixed_partial_reciprocity has boolean status
+  potential_W_or_logZ: missing
+PASS: potential_W_or_logZ has boolean status
+  physical_slot_to_pair_assignment: missing
+PASS: physical_slot_to_pair_assignment has boolean status
+  finite_endpoint_slots: present
+PASS: finite_endpoint_slots has boolean status
+PASS: finite endpoint slots are present
+PASS: source coordinate set is missing
+PASS: ordered/unordered pair map is missing
+PASS: mixed-partial reciprocity proof is missing
+PASS: potential W/logZ is missing
+PASS: physical slot-to-pair assignment is missing
+PASS: current P_R surface lacks all registry fields beyond finite slots
+
+PART 4: reachability
+PASS: finite P_R slots do not reach D2 log Z lift
+PASS: finite P_R slots reach missing registry node
+PASS: source registry plus potential reaches D2 log Z lift
+PASS: D2 log Z lift reaches kappa=0 with typed parity cut
+PASS: graph contains no endpoint-value node
+PASS: integrability registry is narrower than endpoint theorem
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for assigning current finite P_R slots
+PASS: note contains marker: H_AB = D_A D_B log Z = H_BA
+PASS: note contains marker: slot(A,B) != slot(B,A)
+PASS: note contains marker: Route-2 source-Hessian integrability registry theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block98 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names integrability registry
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=53, FAIL=0
+VERDICT: current finite P_R slots do not certify the symmetric source-index registry required for a D^2 log Z lift.

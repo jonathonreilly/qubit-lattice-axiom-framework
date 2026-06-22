@@ -1,0 +1,55 @@
+loop_slug: s3-route2-no-scale-curvature-coefficient
+block: 112
+date: 2026-06-22
+branch: physics-loop/s3-route2-no-scale-curvature-coefficient-block112-20260622
+base: physics-loop/s3-route2-source-action-primitive-boundary-block111-20260622@42e9476c1
+stacked_on_pr: 4642
+mode: campaign
+target_status: best-honest-status
+active_route: No-scale curvature coefficient boundary
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+hard_residual: "Derive the physical source-unit/no-scale theorem forcing constant g in g(w) Phi''(w), or bypass the Hessian route."
+lock_mode: branch_local_worktree
+files_touched:
+  - docs/QUARK_ROUTE2_NO_SCALE_CURVATURE_COEFFICIENT_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_no_scale_curvature_coefficient_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_no_scale_curvature_coefficient_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-no-scale-curvature-coefficient/
+open_imports:
+  - "No current-surface theorem derives coefficient no-scale law g(a w)=g(w)."
+  - "No current-surface theorem derives physical positive-ray source-action cocycle semantics for Route-2."
+  - "No current-surface theorem derives the endpoint triple."
+no_go_routes:
+  - "Affine-gauge Hessian readout plus positivity does not force constant g."
+  - "Homogeneous prefactors g=w^m miss the endpoint for m != 0."
+  - "Two-point equality g_E/g_T=1 does not prove global no-scale coefficient."
+checkpoint:
+  verification_results:
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_no_scale_curvature_coefficient_no_go_2026_06_22.py"
+    - "PASS: runner output matches outputs/frontier_quark_route2_no_scale_curvature_coefficient_no_go_2026_06_22.txt"
+    - "PASS: python3 -m py_compile scripts/frontier_quark_route2_no_scale_curvature_coefficient_no_go_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_action_primitive_boundary_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_dilation_covariant_hessian_source_boundary_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hessian_counterterm_exclusion_boundary_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_log_action_cocycle_hessian_boundary_2026_06_22.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py"
+    - "PASS: PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+    - "PASS: git diff --check"
+    - "PASS: overclaim scan matched only runner guard strings"
+  review:
+    disposition: pass
+    audit_pipeline_run: false
+    note: "Audit pipeline intentionally not run; no audit verdict applied."
+  pr:
+    number: null
+    url: null
+    title: null
+    state: null
+    baseRefName: null
+    headRefName: null
+    identity_checked: false
+    conflict_mergeability_checked: false
+  next_exact_action: "Commit, push, and open stacked PR without conflict checks."
+  stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

@@ -1,0 +1,79 @@
+Route-2 color-marginal product support/no-go
+TRACE: upstream_support
+PART 1: grounding
+PASS: color projection theorem has SU3 singlet fraction 1/9
+PASS: color projection theorem keeps physical matching separate
+PASS: UV support has strong-coupling color-singlet coefficient 1/9
+PASS: Block107 names one-point product theorem
+PASS: color transfer no-go leaves Route-2 same-source color readout missing
+PASS: trace-one transfer no-go names same-source Route-2 readout theorem
+
+PART 2: exact color marginal product
+PASS: rank-one color projector has trace one
+PASS: normalized SU3 trace total is three
+PASS: rank-one color marginal is 1/3
+PASS: two color marginals have product 1/9
+PASS: raw=1 minus color product gives connected 8/9
+PASS: color product normal form gives kappa=0
+  red: <P_red> = 1/3
+PASS: red marginal is 1/3
+  green: <P_green> = 1/3
+PASS: green marginal is 1/3
+  blue: <P_blue> = 1/3
+PASS: blue marginal is 1/3
+PASS: all rank-one marginal pairs give disconnected product 1/9
+PASS: color marginal route does not require binary signed record
+
+PART 3: transfer boundary
+  uniform_SU3_color_trace: available_support
+PASS: uniform_SU3_color_trace status classified
+  rank_one_color_marginal: available_support
+PASS: rank_one_color_marginal status classified
+  Route2_same_source_color_marginal_readout: open
+PASS: Route2_same_source_color_marginal_readout status classified
+  Route2_raw_E_XY_equals_one: open
+PASS: Route2_raw_E_XY_equals_one status classified
+  P_R_endpoint_labels: available_support
+PASS: P_R_endpoint_labels status classified
+  endpoint_value: forbidden
+PASS: endpoint_value status classified
+PASS: available support is upstream only
+PASS: Route-2 same-source transfer remains open
+PASS: endpoint value remains forbidden
+
+PART 4: reachability
+PASS: color marginal support reaches disconnected product 1/9
+PASS: color marginal support would reach kappa=0 with Route-2 transfer
+PASS: current Route-2 labels do not reach kappa=0
+PASS: current Route-2 labels record missing color-marginal readout
+PASS: reachability graph contains no endpoint-value node
+PASS: reachability graph does not require full color ensemble node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: conditional-support for a color-marginal one-point product; no-go for current Route-2 transfer
+PASS: note contains marker: <P_i> = Tr(P_i) / 3 = 1/3
+PASS: note contains marker: <P_i><P_j> = 1/9
+PASS: note contains marker: Route-2 same-source color-marginal product theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block108 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names color-marginal product theorem
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=56, FAIL=0
+VERDICT: SU3 color marginals give exact 1/3 x 1/3 = 1/9 support, but Route-2 still needs a same-source color-marginal product theorem.

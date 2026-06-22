@@ -1,0 +1,69 @@
+loop_slug: s3-route2-color-marginal-product
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 108
+branch: physics-loop/s3-route2-color-marginal-product-block108-20260622
+base: physics-loop/s3-route2-nonbinary-product-normal-form-block107-20260622
+base_commit: fa6027ce1
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-color-marginal-product-block108-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: Color-marginal one-point product support
+hard_residual: >-
+  Test whether exact SU3 color-marginal one-point values 1/3 can supply the
+  Route-2 same-source product theorem E[X]E[Y]=1/9.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_COLOR_MARGINAL_PRODUCT_SUPPORT_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_color_marginal_product_support_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_color_marginal_product_support_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-color-marginal-product/
+commands_run:
+  - python3 -m py_compile scripts/frontier_quark_route2_color_marginal_product_support_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_marginal_product_support_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_nonbinary_product_normal_form_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_su3_record_ensemble_transfer_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_trace_one_color_record_transfer_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+  - python3 scripts/frontier_yukawa_color_projection_boundary.py
+  - python3 scripts/uv_gauge_to_yukawa_bridge_sc_vs_pert_scope_check.py
+  - git diff --check
+  - YAML parse for .claude/science/physics-loops/s3-route2-color-marginal-product/STATE.yaml
+  - ASCII scan for Block108 note, runner, output, and loop pack
+  - banned overclaim marker scan for Block108 note, runner, output, and loop pack
+command_results:
+  - "py_compile: PASS"
+  - "Block108 color-marginal product runner: PASS=56 FAIL=0"
+  - "Block107 non-binary product normal-form guard: PASS=70 FAIL=0"
+  - "color SU3 record ensemble transfer guard: PASS=64 FAIL=0"
+  - "trace-one color record transfer guard: PASS=52 FAIL=0"
+  - "source-Hessian cumulant selector support guard: PASS=49 FAIL=0"
+  - "exact readout map guard: PASS=11 FAIL=0"
+  - "Yukawa color projection boundary guard: PASS=40 FAIL=0"
+  - "UV gauge-to-Yukawa coefficient guard: PASS=21 FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "banned overclaim marker scan: PASS"
+imports_retired:
+  - "The route that color-marginal 1/9 support alone transfers to Route-2 P_R/E-T readout."
+open_imports:
+  - "Route-2 same-source color-marginal readout theorem."
+  - "Route-2 raw E[XY]=1 moment theorem for those same variables."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct the Route-2 same-source color-marginal product theorem, or prove
+  current P_R/E-T readout cannot supply it.
+stop_condition: none

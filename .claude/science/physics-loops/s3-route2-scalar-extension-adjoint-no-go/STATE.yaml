@@ -1,0 +1,56 @@
+loop_slug: s3-route2-scalar-extension-adjoint-no-go
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 85
+branch: physics-loop/s3-route2-scalar-extension-adjoint-no-go-block85-20260622
+base: physics-loop/s3-route2-hidden-adjoint-carrier-block84-20260622
+base_commit: 0eb733143
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-scalar-extension-adjoint-no-go-block85-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes_scalar_only_extensions
+active_route: Scalar-only Route-2 extension class
+hard_residual: >-
+  Determine whether adding scalar Route-2 features can supply an equivariant
+  SU(3)-adjoint color source.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SCALAR_EXTENSION_ADJOINT_SOURCE_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_scalar_extension_adjoint_source_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_scalar_extension_adjoint_source_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-scalar-extension-adjoint-no-go/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_scalar_extension_adjoint_source_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_scalar_extension_adjoint_source_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hidden_adjoint_carrier_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_same_source_color_readout_primitive_obstruction_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_bilinear_tensor_primitive.py"
+  - "git diff --check"
+  - "STATE.yaml parse"
+  - "ASCII scan"
+  - "overclaim marker scan"
+command_results:
+  - "PASS py_compile"
+  - "PASS Block85 scalar-extension adjoint-source no-go: TOTAL: PASS=49, FAIL=0"
+  - "PASS Block84 hidden adjoint carrier no-go: TOTAL: PASS=60, FAIL=0"
+  - "PASS Block83 same-source color-readout primitive obstruction: TOTAL: PASS=68, FAIL=0"
+  - "PASS S3 bilinear tensor primitive: PASS=4 FAIL=0 TOTAL=4"
+  - "PASS static checks"
+imports_retired:
+  - "The route that scalar-only Route-2 extensions can supply an equivariant SU(3)-adjoint color source."
+open_imports:
+  - "Route-2 nontrivial color-source extension theorem."
+review_disposition: ready_for_review
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct a nontrivial Route-2 color-source extension theorem.
+stop_condition: none

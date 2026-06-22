@@ -24,5 +24,5 @@ Route-2 E/T bridge.
 PR:
 
 ```text
-PENDING
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4675
 ```

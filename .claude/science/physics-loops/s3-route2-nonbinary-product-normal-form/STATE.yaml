@@ -1,0 +1,69 @@
+loop_slug: s3-route2-nonbinary-product-normal-form
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 107
+branch: physics-loop/s3-route2-nonbinary-product-normal-form-block107-20260622
+base: physics-loop/s3-route2-log-odds-selector-stretch-block106-20260622
+base_commit: c6491da06
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-nonbinary-product-normal-form-block107-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: Non-binary same-source one-point product normal form
+hard_residual: >-
+  Replace the binary/log-odds selector with the broader same-source one-point
+  product theorem E[X]E[Y]=1/9 under P-cal connected subtraction.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_NONBINARY_PRODUCT_NORMAL_FORM_SUPPORT_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_nonbinary_product_normal_form_support_2026_06_22.py
+  - outputs/frontier_quark_route2_nonbinary_product_normal_form_support_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-nonbinary-product-normal-form/
+commands_run:
+  - python3 -m py_compile scripts/frontier_quark_route2_nonbinary_product_normal_form_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_nonbinary_product_normal_form_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_log_odds_selector_stretch_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_sharp_record_bias_selector_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_signed_quotient_classification_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_measure_product_registry_transfer_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_pcal_moment_realization_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+  - git diff --check
+  - YAML parse for .claude/science/physics-loops/s3-route2-nonbinary-product-normal-form/STATE.yaml
+  - ASCII scan for Block107 note, runner, output, and loop pack
+  - banned overclaim marker scan for Block107 note, runner, output, and loop pack
+command_results:
+  - "py_compile: PASS"
+  - "Block107 non-binary product normal-form runner: PASS=70 FAIL=0"
+  - "Block106 log-odds selector stretch guard: PASS=80 FAIL=0"
+  - "Block105 sharp-record bias selector guard: PASS=67 FAIL=0"
+  - "Block104 signed quotient classification guard: PASS=67 FAIL=0"
+  - "source-Hessian cumulant selector support guard: PASS=49 FAIL=0"
+  - "source-measure product registry transfer guard: PASS=72 FAIL=0"
+  - "Pcal moment-realization guard: PASS=75 FAIL=0"
+  - "exact readout map guard: PASS=11 FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "banned overclaim marker scan: PASS"
+imports_retired:
+  - "The assumption that the binary/log-odds selector is the only product route."
+open_imports:
+  - "Route-2 same-source variables X,Y with raw E[XY]=1."
+  - "Route-2 same-source one-point product theorem E[X]E[Y]=1/9."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct the Route-2 same-source one-point product theorem E[X]E[Y]=1/9,
+  or prove it cannot be supplied from current physical source/readout structure.
+stop_condition: none

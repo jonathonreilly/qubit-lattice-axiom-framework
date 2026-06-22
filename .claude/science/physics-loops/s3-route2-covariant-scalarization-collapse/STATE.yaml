@@ -1,0 +1,59 @@
+loop_slug: s3-route2-covariant-scalarization-collapse
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 88
+branch: physics-loop/s3-route2-covariant-scalarization-collapse-block88-20260622
+base: physics-loop/s3-route2-invariant-scalar-output-coupling-block87-20260622
+base_commit: f1c50f2e8
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-covariant-scalarization-collapse-block88-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes_covariant_family_invariant_scalarization_shortcut
+active_route: Covariant color family invariant scalarization
+hard_residual: >-
+  Determine whether invariant scalarization of a covariant sl_3 readout family
+  already supplies the Route-2 E/T connected bridge.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_COVARIANT_SCALARIZATION_COLLAPSE_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_covariant_scalarization_collapse_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_covariant_scalarization_collapse_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-covariant-scalarization-collapse/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_covariant_scalarization_collapse_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_covariant_scalarization_collapse_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_invariant_scalar_output_coupling_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_observable_hessian_readout_identification_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_connected_color_source_transfer_no_go_2026_06_22.py"
+  - "git diff --check"
+  - "STATE.yaml parse"
+  - "ASCII scan"
+  - "overclaim marker scan"
+command_results:
+  - "PASS py_compile"
+  - "PASS Block88 covariant scalarization collapse no-go: TOTAL: PASS=50, FAIL=0"
+  - "PASS Block87 invariant scalar-output coupling no-go: TOTAL: PASS=50, FAIL=0"
+  - "PASS Block76 source-Hessian cumulant selector support: TOTAL: PASS=49, FAIL=0"
+  - "PASS Block77 observable-Hessian readout identification no-go: TOTAL: PASS=47, FAIL=0"
+  - "PASS Block78 connected color-source transfer no-go: TOTAL: PASS=51, FAIL=0"
+  - "PASS static checks"
+imports_retired:
+  - "The route that invariant scalarization of a covariant sl_3 color-readout family itself supplies the Route-2 scalar E/T bridge."
+open_imports:
+  - "Route-2 covariant-family connected-Hessian E/T readout theorem."
+review_disposition: ready_for_review
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct a same-source color/tensor-resolved connected-Hessian Route-2 E/T
+  readout theorem.
+stop_condition: none

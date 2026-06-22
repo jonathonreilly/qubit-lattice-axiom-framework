@@ -56,10 +56,21 @@ checkpoint:
     disposition: pass
     audit_pipeline_run: false
   pr:
-    number: null
-    url: null
-    identity_checked: false
+    number: 4633
+    url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4633"
+    title: "[physics-loop] s3-route2-ray-quotient-hessian-no-scale block102 exact-support"
+    state: OPEN
+    baseRefName: "physics-loop/s3-route2-counterterm-exclusion-boundary-block101-20260622"
+    headRefName: "physics-loop/s3-route2-no-scale-hessian-source-block102-20260622"
+    identity_checked: true
+    identity_check_fields:
+      - number
+      - url
+      - title
+      - state
+      - baseRefName
+      - headRefName
     conflict_mergeability_checked: false
-  next_exact_action: "Commit, push, and open a stacked Block102 PR without conflict/mergeability checks."
+  next_exact_action: "Start physical channel-weight coordinate bridge attempt, or pivot to direct E-center theorem deriving q_E=15/8."
   recommended_next_campaign_target: "If this support-only theorem remains open, attempt the physical coordinate bridge or pivot to direct E-center theorem deriving q_E=15/8."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

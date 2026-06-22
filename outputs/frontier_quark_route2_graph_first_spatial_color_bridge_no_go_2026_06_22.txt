@@ -1,0 +1,85 @@
+Route-2 graph-first spatial/color bridge no-go
+Status: no-go for graph-first spatial/color bridge closure; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: graph-first SU(3) surface
+PASS: axis 1: selected-axis basis is unitary
+PASS: axis 1: residual swap commutes with weak su(2)
+PASS: axis 1: dim Comm(weak su(2)) = 16
+PASS: axis 1: dim Comm(weak su(2), swap) = 10
+PASS: axis 1: symmetric block rank = 6
+PASS: axis 1: antisymmetric block rank = 2
+PASS: axis 1: graph-first color rank is 3
+PASS: axis 1: commutant basis has gl(3)+gl(1) dimension
+PASS: axis 2: selected-axis basis is unitary
+PASS: axis 2: residual swap commutes with weak su(2)
+PASS: axis 2: dim Comm(weak su(2)) = 16
+PASS: axis 2: dim Comm(weak su(2), swap) = 10
+PASS: axis 2: symmetric block rank = 6
+PASS: axis 2: antisymmetric block rank = 2
+PASS: axis 2: graph-first color rank is 3
+PASS: axis 2: commutant basis has gl(3)+gl(1) dimension
+PASS: axis 3: selected-axis basis is unitary
+PASS: axis 3: residual swap commutes with weak su(2)
+PASS: axis 3: dim Comm(weak su(2)) = 16
+PASS: axis 3: dim Comm(weak su(2), swap) = 10
+PASS: axis 3: symmetric block rank = 6
+PASS: axis 3: antisymmetric block rank = 2
+PASS: axis 3: graph-first color rank is 3
+PASS: axis 3: commutant basis has gl(3)+gl(1) dimension
+
+PART 2: cubic l=2 E/T2 readout surface
+PASS: proper octahedral group has order 24
+PASS: symmetric traceless l=2 model has dimension 5
+PASS: l=2 has no cubic A1 singlet
+PASS: l=2 character norm is two irreducible summands
+PASS: off-diagonal T2 block is invariant
+PASS: diagonal E block is invariant
+PASS: cubic split dimensions are E=2 and T2=3
+PASS: graph-first taste space dimension differs from l=2 tensor space
+
+PART 3: domain reachability
+PASS: generated graph-first/readout edge set has no color-to-Route2 edge
+      []
+PASS: R_conn support does not reach rho_E endpoint without bridge
+PASS: adding explicit R_conn -> c_TE bridge creates endpoint path
+PASS: adding stronger graph-first readout functor reaches the c_TE slot
+PASS: the stronger functor alone still does not select c_TE=-8/9
+
+PART 4: exact switch boundary
+PASS: graph-first SU(3) supplies the positive adjoint fraction
+PASS: target signed center ratio is not the positive adjoint fraction
+PASS: sigma=-1 is an extra orientation switch
+PASS: full-trace selector with sigma=-1 gives -1, not -8/9
+PASS: positive orientation with kappa=0 gives +8/9, not -8/9
+
+PART 5: document boundary
+PASS: graph-first note is the SU(3) commutant theorem
+PASS: graph-first note does not mention Route-2 readout marker c_TE
+PASS: graph-first note does not mention Route-2 readout marker Route-2
+PASS: graph-first note does not mention Route-2 readout marker E/T2
+PASS: graph-first note does not mention Route-2 readout marker l=2
+PASS: graph-first note does not mention Route-2 readout marker gamma_T
+PASS: graph-first note does not mention Route-2 readout marker gamma_E
+PASS: graph-first note does not mention Route-2 readout marker rho_E
+PASS: new note contains marker: Claim type:** no_go
+PASS: new note contains marker: Actual current-surface status: no-go for graph-first spatial/color bridge closure
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: graph-first SU(3) supplies color rank support, not a typed Route-2 readout map
+PASS: new note contains marker: Missing primitive
+PASS: new note contains marker: typed functor from the selected-axis graph/color commutant to the Route-2 cubic `l=2` `E/T2` center-response readout
+PASS: new note contains marker: orientation sign `sigma=-1`
+PASS: new note contains marker: connected selector `kappa=0`
+PASS: handoff contains marker: Block75 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: new packet avoids overclaim marker: branch-local status-promotion
+PASS: new packet avoids overclaim marker: future retention
+PASS: new packet avoids overclaim marker: promotion-to-retention
+PASS: new packet avoids overclaim marker: actual-surface retention
+PASS: new packet avoids overclaim marker: parent closure
+PASS: new packet avoids overclaim marker: current-surface endpoint derivation
+PASS: new packet avoids overclaim marker: audit ratification
+
+TOTAL: PASS=69, FAIL=0
+VERDICT: graph-first SU(3) supplies color-rank/adjoint-fraction support, but no current typed functor maps it to the Route-2 cubic E/T2 center readout or supplies sigma=-1 and kappa=0.

@@ -7,6 +7,7 @@ block: 81
 branch: physics-loop/s3-route2-source-measure-color-ensemble-transfer-block81-20260622
 base: physics-loop/s3-route2-finite-endpoint-source-rank-block80-20260622
 base_commit: a85604d8c
+science_commit: 051cbf521
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-measure-color-ensemble-transfer-block81-20260622
 date: 2026-06-22
 mode: campaign
@@ -61,10 +62,16 @@ open_imports:
   - "Centered score image is full sl_3, not a generic finite tangent or C6 diagonal quotient."
   - "Pure-disconnected singlet typing for the 1/9 channel."
 review_disposition: ready_for_review
-pr_status: pending
-pr_number: null
-pr_url: null
-pr_identity: null
+pr_status: open
+pr_number: 4668
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4668
+pr_identity:
+  number: 4668
+  state: OPEN
+  title: "[physics-loop] s3-route2-source-measure-color-ensemble-transfer block81 no-go"
+  baseRefName: physics-loop/s3-route2-finite-endpoint-source-rank-block80-20260622
+  headRefName: physics-loop/s3-route2-source-measure-color-ensemble-transfer-block81-20260622
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4668
 next_exact_action: >-
   Construct or find a Route-2-specific source/readout theorem instantiating
   the full trace-one End(C^3) color-record ensemble.

@@ -1,0 +1,65 @@
+Route-2 antisymmetric coefficient scale no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block90 names exact antisymmetric E/T primitive
+PASS: Block90 says carrier support does not supply the primitive
+PASS: Block90 records E/T swap decomposition
+PASS: Block90 records current carrier primitives as swap-symmetric
+PASS: Block90 records Theta/Xi as bounded candidates
+PASS: Block90 leaves registry closure open
+PASS: Block90 uses no endpoint value
+PASS: Block89 has free E/T coefficients
+PASS: Block89 separates kappa support from E/T bridge
+PASS: Block89 names coefficient normalization theorem
+
+PART 2: coefficient decomposition
+  pure_antisym_unit: (Fraction(1, 1), Fraction(-1, 1))
+PASS: pure_antisym_unit has two coefficients
+  pure_antisym_double: (Fraction(2, 1), Fraction(-2, 1))
+PASS: pure_antisym_double has two coefficients
+  symmetric_only: (Fraction(1, 1), Fraction(1, 1))
+PASS: symmetric_only has two coefficients
+  mixed: (Fraction(3, 1), Fraction(-1, 1))
+PASS: mixed has two coefficients
+PASS: unit antisymmetric direction is (1,-1)
+PASS: scale changes along the same antisymmetric line
+PASS: symmetric contamination changes the coefficient vector
+PASS: symmetric-only vector does not distinguish E and T
+PASS: mixed vector has both antisymmetric and symmetric pieces
+
+PART 3: family count
+PASS: pure antisymmetric line still has multiple scales
+PASS: mixed family has more choices than pure line
+PASS: choosing the line does not choose the scale
+PASS: excluding symmetric contamination is an extra statement
+PASS: no endpoint value is needed to expose the scale freedom
+
+PART 4: reachability
+PASS: antisymmetric direction alone does not reach fixed vector
+PASS: antisymmetric direction reaches free scale
+PASS: coefficient space reaches symmetric contamination risk
+PASS: adding scale and purity primitives reaches typed bridge
+PASS: graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for an antisymmetric E/T direction alone
+PASS: note contains marker: An antisymmetric direction fixes a line, not a scale-normalized coefficient vector
+PASS: note contains marker: (lambda_E, lambda_T) = s(1,-1) + t(1,1)
+PASS: note contains marker: Route-2 scale-normalized pure-antisymmetric Hessian coefficient theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block91 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names scale-normalized antisymmetric primitive
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=47, FAIL=0
+VERDICT: an antisymmetric E/T direction alone does not fix the scale-normalized Hessian coefficient vector.

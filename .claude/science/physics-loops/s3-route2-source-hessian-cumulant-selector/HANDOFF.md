@@ -60,7 +60,23 @@ Passed:
 
 ## PR
 
-Pending.
+Open:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4663
+```
+
+Science commit:
+
+```text
+14152b9eb
+```
+
+Identity-only verification:
+
+```json
+{"baseRefName":"physics-loop/s3-route2-graph-first-spatial-color-bridge-block75-20260622","headRefName":"physics-loop/s3-route2-source-hessian-cumulant-selector-block76-20260622","number":4663,"state":"OPEN","title":"[physics-loop] s3-route2-source-hessian-cumulant-selector block76 support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4663"}
+```
 
 ## Next Exact Action
 

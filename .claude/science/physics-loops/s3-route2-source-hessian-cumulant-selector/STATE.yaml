@@ -28,6 +28,7 @@ files_touched:
   - scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py
   - outputs/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.txt
   - .claude/science/physics-loops/s3-route2-source-hessian-cumulant-selector/
+science_commit: 14152b9eb
 commands_run:
   - "python3 -m py_compile scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py"
@@ -61,10 +62,16 @@ open_imports:
   - "The 1/9 singlet term is a pure disconnected product for the same source/readout."
   - "The cross-domain typed bridge from R_conn support to Route-2 c_TE=-8/9 remains conditional on the selector."
 review_disposition: pass
-pr_status: pending
-pr_number: null
-pr_url: null
-pr_identity: null
+pr_status: open
+pr_number: 4663
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4663
+pr_identity:
+  number: 4663
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4663
+  title: "[physics-loop] s3-route2-source-hessian-cumulant-selector block76 support"
+  state: OPEN
+  baseRefName: physics-loop/s3-route2-graph-first-spatial-color-bridge-block75-20260622
+  headRefName: physics-loop/s3-route2-source-hessian-cumulant-selector-block76-20260622
 next_exact_action: >-
   Attack the physical source/readout identification directly, or compute the
   singlet channel from accepted primitives to prove it is pure disconnected.

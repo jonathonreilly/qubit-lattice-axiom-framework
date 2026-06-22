@@ -24,5 +24,5 @@ symmetric source-Hessian line.
 PR:
 
 ```text
-PENDING
+Created: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4681
 ```

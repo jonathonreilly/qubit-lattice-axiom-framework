@@ -7,7 +7,7 @@ block: 94
 branch: physics-loop/s3-route2-symmetric-line-purity-block94-20260622
 base: physics-loop/s3-route2-parity-source-hessian-sufficient-block93-20260622
 base_commit: 7516083b6
-science_commit: PENDING
+science_commit: 0c7e80b89
 worktree: /private/tmp/cl3-physics-loop-s3-route2-symmetric-line-purity-block94-20260622
 date: 2026-06-22
 mode: campaign
@@ -53,9 +53,9 @@ imports_retired:
 open_imports:
   - "Route-2 symmetric-line pure-disconnected same-source typing theorem."
 review_disposition: static_verification_passed_no_audit_or_review_worker_run
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4681
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4681
 next_exact_action: >-
   Construct the symmetric-line pure-disconnected theorem on the physical E/T
   source-Hessian readout, or choose another typed readout primitive.

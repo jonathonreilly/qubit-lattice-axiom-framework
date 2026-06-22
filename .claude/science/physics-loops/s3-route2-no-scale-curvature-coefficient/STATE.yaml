@@ -43,13 +43,13 @@ checkpoint:
     audit_pipeline_run: false
     note: "Audit pipeline intentionally not run; no audit verdict applied."
   pr:
-    number: null
-    url: null
-    title: null
-    state: null
-    baseRefName: null
-    headRefName: null
-    identity_checked: false
+    number: 4643
+    url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4643"
+    title: "[physics-loop] s3-route2-no-scale-coefficient block112 no-go"
+    state: OPEN
+    baseRefName: physics-loop/s3-route2-source-action-primitive-boundary-block111-20260622
+    headRefName: physics-loop/s3-route2-no-scale-curvature-coefficient-block112-20260622
+    identity_checked: true
     conflict_mergeability_checked: false
-  next_exact_action: "Commit, push, and open stacked PR without conflict checks."
+  next_exact_action: "Start next science block on coefficient source-unit theorem: derive or no-go Route-2 physical principle forcing g(a w)=g(w), or pivot to direct E-center source theorem."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

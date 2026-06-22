@@ -1,0 +1,62 @@
+loop_slug: s3-route2-symmetric-line-purity
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 94
+branch: physics-loop/s3-route2-symmetric-line-purity-block94-20260622
+base: physics-loop/s3-route2-parity-source-hessian-sufficient-block93-20260622
+base_commit: 7516083b6
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-symmetric-line-purity-block94-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: E/T-symmetric line purity
+hard_residual: >-
+  Determine whether E/T symmetry alone proves the symmetric source-Hessian
+  line is pure disconnected.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SYMMETRIC_LINE_PURITY_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_symmetric_line_purity_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_symmetric_line_purity_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-symmetric-line-purity/
+commands_run:
+  - python3 -m py_compile scripts/frontier_quark_route2_symmetric_line_purity_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_symmetric_line_purity_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_parity_source_hessian_sufficient_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_connected_color_source_transfer_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_normalization_functional_parity_no_go_2026_06_22.py
+  - git diff --check
+  - STATE.yaml parse
+  - ASCII scan
+  - overclaim scan
+command_results:
+  - PASS
+  - PASS=67 FAIL=0
+  - PASS=70 FAIL=0
+  - PASS=49 FAIL=0
+  - PASS=51 FAIL=0
+  - PASS=55 FAIL=0
+  - PASS
+  - PASS
+  - PASS
+  - PASS
+imports_retired:
+  - "The route that E/T symmetry alone proves the symmetric source-Hessian line is pure disconnected."
+open_imports:
+  - "Route-2 symmetric-line pure-disconnected same-source typing theorem."
+review_disposition: static_verification_passed_no_audit_or_review_worker_run
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct the symmetric-line pure-disconnected theorem on the physical E/T
+  source-Hessian readout, or choose another typed readout primitive.
+stop_condition: none

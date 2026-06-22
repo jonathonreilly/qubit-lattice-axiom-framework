@@ -1,0 +1,89 @@
+Route-2 symmetric line purity no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block93 names pure-disconnected symmetric typing as open
+PASS: Block93 states D2 log Z subtracts factorizable singlet
+PASS: Block93 says premises are not current-surface closure
+PASS: source-Hessian note has eta classifier
+PASS: source-Hessian note says source-Hessian algebra is support-only
+PASS: source-Hessian note names pure-disconnected singlet identification
+PASS: connected color-source transfer names pure-disconnected singlet typing
+PASS: connected color-source transfer uses no endpoint value
+
+PART 2: symmetric factorization
+  pure_disconnected: d=3, eta=0, raw=(Fraction(3, 1), Fraction(3, 1)), conn=(Fraction(0, 1), Fraction(0, 1))
+PASS: pure_disconnected raw is E/T symmetric
+PASS: pure_disconnected connected residue is E/T symmetric
+PASS: pure_disconnected cumulant leaves eta coefficient
+PASS: pure_disconnected has no antisymmetric coefficient
+  small_connected_residue: d=3, eta=1/4, raw=(Fraction(13, 4), Fraction(13, 4)), conn=(Fraction(1, 4), Fraction(1, 4))
+PASS: small_connected_residue raw is E/T symmetric
+PASS: small_connected_residue connected residue is E/T symmetric
+PASS: small_connected_residue cumulant leaves eta coefficient
+PASS: small_connected_residue has no antisymmetric coefficient
+  half_connected_residue: d=2, eta=1/2, raw=(Fraction(5, 2), Fraction(5, 2)), conn=(Fraction(1, 2), Fraction(1, 2))
+PASS: half_connected_residue raw is E/T symmetric
+PASS: half_connected_residue connected residue is E/T symmetric
+PASS: half_connected_residue cumulant leaves eta coefficient
+PASS: half_connected_residue has no antisymmetric coefficient
+  all_connected_residue: d=0, eta=1, raw=(Fraction(1, 1), Fraction(1, 1)), conn=(Fraction(1, 1), Fraction(1, 1))
+PASS: all_connected_residue raw is E/T symmetric
+PASS: all_connected_residue connected residue is E/T symmetric
+PASS: all_connected_residue cumulant leaves eta coefficient
+PASS: all_connected_residue has no antisymmetric coefficient
+PASS: pure disconnected case gives kappa=0
+PASS: connected residue case gives nonzero kappa
+PASS: E/T symmetry holds in both kappa=0 and kappa nonzero cases
+PASS: parity cannot distinguish disconnected from connected symmetric terms
+PASS: factorization data, not parity data, decides what D2 log Z subtracts
+PASS: no endpoint value is needed to expose the eta freedom
+
+PART 3: classifier table
+  disconnected_symmetric_singlet: ('ET_symmetric', 'factorizable', 'subtracted')
+PASS: disconnected_symmetric_singlet has three tags
+  connected_symmetric_singlet: ('ET_symmetric', 'connected', 'survives')
+PASS: connected_symmetric_singlet has three tags
+  connected_antisymmetric_adjoint: ('ET_antisymmetric', 'connected', 'survives')
+PASS: connected_antisymmetric_adjoint has three tags
+  endpoint_value_input: ('forbidden', 'forbidden', 'forbidden')
+PASS: endpoint_value_input has three tags
+PASS: both singlet rows are E/T symmetric
+PASS: only factorizable symmetric singlet is subtracted
+PASS: connected symmetric singlet survives
+PASS: antisymmetric adjoint survives as connected signal
+PASS: endpoint input remains forbidden
+PASS: E/T parity alone is not the factorization classifier
+PASS: missing primitive must classify factorization on same-source readout
+
+PART 4: reachability
+PASS: E/T symmetry alone does not reach kappa zero
+PASS: E/T symmetry reaches connected-residue risk
+PASS: pure disconnected typing reaches kappa zero
+PASS: parity route reaches kappa-not-forced boundary
+PASS: graph contains no endpoint-value node
+PASS: missing primitive is narrower than full E/T bridge
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for E/T symmetry alone
+PASS: note contains marker: D^2 log Z: d S_ET + eta S_ET -> eta S_ET
+PASS: note contains marker: kappa=0 follows only when eta=0
+PASS: note contains marker: Route-2 symmetric-line pure-disconnected typing theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block94 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names symmetric-line purity
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=67, FAIL=0
+VERDICT: E/T symmetry alone does not prove the symmetric line is pure disconnected; same-source factorization remains the missing primitive.

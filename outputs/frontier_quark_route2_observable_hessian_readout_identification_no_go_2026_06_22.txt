@@ -1,0 +1,63 @@
+Route-2 observable-Hessian readout-identification no-go
+Status: no-go for scalar observable-Hessian to Route-2 readout identification; not an audit verdict.
+TRACE: negative_route_pruning
+PART 1: authority surface
+PASS: observable-Hessian note contains W=logdet scalar generator
+PASS: observable-Hessian note says scalar-only
+PASS: observable-Hessian note says no tensor/time-coupling law
+PASS: Route-2 exact readout map is finite carrier/readout algebra
+PASS: Route-2 exact readout map lacks source-Hessian marker log Z
+PASS: Route-2 exact readout map lacks source-Hessian marker D^2 log Z
+PASS: Route-2 exact readout map lacks source-Hessian marker connected source Hessian
+PASS: Route-2 exact readout map lacks source-Hessian marker pure-disconnected singlet
+PASS: Block76 names physical source/readout identification as open
+PASS: Block76 names pure-disconnected singlet identification as open
+
+PART 2: scalar-rank no-go
+  W''(0) for scalar jI source on diag(Fraction(2, 1), Fraction(3, 1), Fraction(5, 1)) = -361/900
+PASS: scalar logdet Hessian is one scalar number
+PASS: scalar source rank is one
+PASS: two-channel selector needs at least adjoint/singlet separation
+PASS: Route-2 restricted readout carrier has four endpoint columns
+PASS: scalar Hessian rank is below color-channel rank
+PASS: scalar Hessian rank is below Route-2 endpoint slot count
+PASS: a scalar Hessian cannot choose a singlet-purity coefficient eta
+
+PART 3: typed reachability
+PASS: scalar observable Hessian does not reach Route-2 readout
+PASS: scalar observable Hessian does not reach kappa=0
+PASS: adding all missing source/readout bridges reaches kappa=0
+PASS: Route-2 carrier path remains separate from scalar Hessian path
+PASS: the needed bridge is a typed source/readout identification
+
+PART 4: missing primitive
+PASS: four independent primitive labels are named
+PASS: scalar-only observable Hessian supplies none of the color/tensor labels
+PASS: pure-disconnected singlet remains separate from source identity
+PASS: connected Hessian readout is not the raw P_R readout
+PASS: a positive theorem must supply all labels
+
+PART 5: document boundary
+PASS: new note contains marker: Actual current-surface status: no-go for scalar observable-Hessian to Route-2 readout identification
+PASS: new note contains marker: This is not an audit verdict
+PASS: new note contains marker: No endpoint value is used
+PASS: new note contains marker: scalar source Hessian
+PASS: new note contains marker: not a color/channel-resolved Route-2 source
+PASS: new note contains marker: Missing primitive
+PASS: new note contains marker: color/tensor-resolved source functional
+PASS: new note contains marker: same-source identification
+PASS: new note contains marker: pure-disconnected singlet identification
+PASS: handoff contains marker: Block77 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: new packet avoids overclaim marker: branch-local status-promotion
+PASS: new packet avoids overclaim marker: future retention
+PASS: new packet avoids overclaim marker: promotion-to-retention
+PASS: new packet avoids overclaim marker: actual-surface retention
+PASS: new packet avoids overclaim marker: parent closure
+PASS: new packet avoids overclaim marker: current-surface endpoint derivation
+PASS: new packet avoids overclaim marker: audit ratification
+
+TOTAL: PASS=47, FAIL=0
+VERDICT: the existing scalar observable Hessian is not a typed Route-2 color/E-T connected readout.  A positive theorem still needs a color/tensor-resolved source functional, same-source identification, connected-Hessian readout, and pure-disconnected singlet typing.

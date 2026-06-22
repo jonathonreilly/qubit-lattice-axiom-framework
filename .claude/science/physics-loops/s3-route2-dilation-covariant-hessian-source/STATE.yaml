@@ -54,10 +54,21 @@ checkpoint:
     audit_pipeline_run: false
     note: "Branch-local static review only; audit verdicts were not run or applied."
   pr:
-    number: null
-    url: null
-    identity_checked: false
+    number: 4631
+    url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4631"
+    title: "[physics-loop] s3-route2-dilation-covariant-hessian-source block100 exact-support"
+    state: OPEN
+    baseRefName: physics-loop/s3-route2-typed-metric-source-inverse-square-block99-20260621
+    headRefName: physics-loop/s3-route2-dilation-covariant-hessian-source-block100-20260622
+    identity_checked: true
+    identity_check_fields:
+      - number
+      - url
+      - title
+      - state
+      - baseRefName
+      - headRefName
     conflict_mergeability_checked: false
-  next_exact_action: "Commit, push, and open Block100 PR against the Block99 branch without checking conflicts or mergeability; update PR identity fields afterward."
+  next_exact_action: "Continue campaign with the physical channel-weight coordinate bridge or counterterm-exclusion theorem; fallback to a direct E-center theorem deriving q_E=15/8."
   recommended_next_campaign_target: "Try to prove the physical channel-weight coordinate bridge for the Route-2 Hessian, or pivot to a direct E-center theorem deriving q_E=15/8."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

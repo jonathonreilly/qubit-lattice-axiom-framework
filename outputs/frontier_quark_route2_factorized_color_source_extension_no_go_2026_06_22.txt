@@ -1,0 +1,62 @@
+Route-2 factorized color-source extension no-go
+TRACE: negative_route_pruning
+PART 1: source grounding
+PASS: Block78 has positive color-source theorem
+PASS: Block78 says transfer to Route-2 still needs same-source authority
+PASS: Block85 prunes scalar-only extensions
+PASS: Block83 names color-source carrier theorem
+PASS: Block83 requires P_R/E-T to consume same source
+
+PART 2: factorized color-blind algebra
+PASS: Route-2 feature carrier has dimension four
+PASS: P_R output has dimension two
+PASS: End(C^3) has dimension nine
+PASS: scalar trace line has dimension one
+PASS: sl_3 adjoint tangent has dimension eight
+PASS: factorized carrier has dimension thirty-six
+PASS: trace sees the identity line
+PASS: trace kills the adjoint tangent
+PASS: color-blind factorized P_ext has zero adjoint response rank
+PASS: zero adjoint response cannot force kappa=0 via connected tangent
+
+PART 3: factorization route pruning
+PASS: spectator_color_factor: status is pruned
+      color source exists but is not read by P_R
+PASS: trace_normalized_color_factor: status is pruned
+      trace-one normalization kills all adjoint perturbations
+PASS: color_blind_P_R_tensor_identity: status is pruned
+      P_R acts only on Route-2 features
+PASS: nonfactorized_color_sensitive_readout: status is open
+      this is the missing constructive theorem
+PASS: the open route is color-sensitive rather than scalar-only
+PASS: the open route is not an endpoint-value insertion
+
+PART 4: reachability
+PASS: factorized color-blind extension does not reach kappa=0
+PASS: factorized color-blind extension does not reach full same-source readout
+PASS: full End(C^3) source reaches kappa=0 on its own source
+PASS: adding color-sensitive readout reaches kappa=0
+PASS: graphs contain no endpoint-value nodes
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for color-blind factorized Route-2 x color extensions
+PASS: note contains marker: A color-blind factorized extension puts the adjoint tangent in the kernel
+PASS: note contains marker: Route-2 color-sensitive source/readout coupling theorem
+PASS: note contains marker: Adding a spectator color factor is not enough
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block86 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names factorized color-blind route
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=44, FAIL=0
+VERDICT: color-blind factorized Route-2 x color extensions put the adjoint tangent in the readout kernel.

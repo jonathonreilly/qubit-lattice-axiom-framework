@@ -40,8 +40,11 @@ Disposition: pass.
 
 ## PR
 
-- PR: not opened yet.
-- Number: null.
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4628
+- Number: 4628.
+- Identity fields checked: base `main`, head
+  `physics-loop/s3-route2-inverse-square-center-lift-block97-20260621`,
+  state `OPEN`.
 - Conflict/mergeability state was not checked.
 
 ## Next Exact Action

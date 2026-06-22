@@ -1,8 +1,14 @@
 # PR Backlog
 
-PR has not been opened yet.
+PR opened:
 
-Expected command:
+- https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4628
+- Number: 4628
+- Identity checked with:
+  `gh pr view --json number,url,title,headRefName,baseRefName,state`
+- conflict_mergeability_checked: false
+
+Creation command:
 
 ```bash
 gh pr create \

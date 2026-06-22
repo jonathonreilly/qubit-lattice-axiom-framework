@@ -1,0 +1,63 @@
+Route-2 scalar-extension adjoint-source no-go
+TRACE: negative_route_pruning
+PART 1: source grounding
+PASS: Block84 says K_R has no hidden adjoint carrier
+PASS: Block84 names adjoint color-source extension theorem
+PASS: Block83 prunes current P_R scalar feature carrier
+PASS: S3 primitive defines K_R from scalar inputs
+PASS: S3 primitive has no SU(3) token
+PASS: S3 primitive has no End(C^3) token
+
+PART 2: scalar-extension theorem
+PASS: dim End(C^3)=9
+PASS: dim scalar line=1
+PASS: dim sl_3=8
+PASS: Hom_SU3(sl_3, trivial^1) = 0
+PASS: Hom_SU3(sl_3, trivial^2) = 0
+PASS: Hom_SU3(sl_3, trivial^4) = 0
+PASS: Hom_SU3(sl_3, trivial^8) = 0
+PASS: Hom_SU3(sl_3, trivial^9) = 0
+PASS: Hom_SU3(sl_3, trivial^16) = 0
+PASS: Hom_SU3(sl_3, trivial^64) = 0
+PASS: adding more scalar features does not create an adjoint representation
+PASS: scalar-only extension cannot be an equivariant full color source
+PASS: non-equivariant scalar selector would be an extra color-basis import
+
+PART 3: rank versus equivariance
+PASS: m=4: scalar rank is too small for sl_3
+PASS: m=7: scalar rank is too small for sl_3
+PASS: m=8: scalar rank alone is not an equivariant color source
+PASS: m=9: scalar rank alone is not an equivariant color source
+PASS: dimension sufficiency and typed equivariance are separate gates
+PASS: the missing primitive must add nontrivial color action, not only coordinates
+
+PART 4: reachability
+PASS: scalar extension does not reach full End(C^3)
+PASS: scalar extension does not reach kappa=0
+PASS: full End(C^3) source reaches kappa=0 if supplied
+PASS: nontrivial extension reaches full End(C^3)
+PASS: nontrivial extension reaches kappa=0
+PASS: graphs contain no endpoint-value nodes
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for scalar-only Route-2 extensions
+PASS: note contains marker: Hom_SU3(sl_3, trivial^m) = 0
+PASS: note contains marker: scalar-only Route-2 extensions cannot supply
+PASS: note contains marker: Route-2 nontrivial color-source extension theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block85 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names scalar-only route
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=49, FAIL=0
+VERDICT: scalar-only Route-2 extensions cannot supply an equivariant adjoint color source.

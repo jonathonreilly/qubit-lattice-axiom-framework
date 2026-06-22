@@ -1,0 +1,52 @@
+Route-2 dilation-covariant Hessian source boundary
+==============================================================================
+
+A. Source-note and authority boundary
+PASS: new source note exists -- docs/QUARK_ROUTE2_DILATION_COVARIANT_HESSIAN_SOURCE_BOUNDARY_NOTE_2026-06-22.md
+PASS: new note declares open-gate exact support, not endpoint closure
+PASS: new note names Block99 and the direct S3 consumer
+PASS: new note has no retained proposal wording
+PASS: QUARK_ROUTE2_TYPED_METRIC_SOURCE_INVERSE_SQUARE_BOUNDARY_NOTE_2026-06-22.md contains required boundary markers -- q_X w_X^2 = 5/24; This note does not derive the inverse-square primitive
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains required boundary markers -- the underlying readout-map endpoint triple is not yet derived; The next theorem target is the missing readout-map endpoint triple.
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains required boundary markers -- the irreducible missing map entry is the `E`-channel ratio; beta_E / alpha_E = 21/4
+PASS: OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md contains required boundary markers -- Per-arm isotypic weights are exactly `(A1, E, T1) = (1/6, 1/3, 1/2); this lemma does **not**, by itself, derive any Route-2 readout entry
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains required boundary markers -- q_X; inverse-square-of-projector-weight center lift
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md contains required boundary markers -- source-domain bridge theorem, not another endpoint-ratio manipulation; There is no current typed edge
+PASS: MINIMAL_AXIOMS_2026-06-05.md contains required boundary markers -- Record; supplies no readout context
+
+B. Dilation-covariant Hessian theorem
+PASS: inverse-square Hessian obeys H(a*w)=a^-2 H(w) -- lhs=5/6, rhs=5/6
+PASS: setting w=1 gives H(a)=a^-2 H(1)
+PASS: integrated log-barrier Hessian has Phi''=C/w^2
+PASS: monomial Hessian law has unique small-integer exponent p=-2 -- hits=[-2]
+PASS: constant Hessian p=0 misses target
+PASS: direct-weight Hessian p=1 misses target
+PASS: quadratic-weight Hessian p=2 misses target
+PASS: single-inverse Hessian p=-1 misses target
+
+C. Endpoint consequence
+PASS: dilation-covariant Hessian gives H_E/H_T=9/4 -- ratio=9/4
+PASS: T-normalized source gives q_E=15/8 -- q_E=15/8
+PASS: q_E=15/8 gives rho_E=21/4 -- rho_E=21/4
+PASS: center ratio is -8/9 under shell ratio -2 -- c_TE=-8/9
+PASS: endpoint triple is recovered exactly under the supplied premise -- triple=(-1, -2, 21/4)
+
+D. Counterterm and coordinate boundary
+PASS: zero counterterm recovers target Hessian ratio -- ratio=9/4
+PASS: positive quadratic counterterm changes Hessian ratio -- ratio=2
+PASS: positive counterterm misses endpoint -- q_E=5/3, rho_E=4
+PASS: positive counterterm breaks dilation covariance -- lhs=5, rhs=40/9
+PASS: counterterm Hessian stays positive at E and T weights
+PASS: target ratio forces counterterm epsilon=0
+PASS: constant Hessian two-point reading is an admissible non-target witness
+PASS: log-coordinate second derivative is not the w-coordinate Hessian -- d^2(-u)/du^2=0 while d^2(-log w)/dw^2=1/w^2
+
+E. Current-surface conclusion
+PASS: note states exact support/open boundary rather than endpoint closure
+PASS: minimal axioms do not supply weighting or normalization
+PASS: named current surfaces are listed as not deriving the premise
+PASS: forbidden proof imports are excluded
+
+==============================================================================
+TOTAL: PASS=36, FAIL=0
+STATUS: exact-support/open boundary. Dilation-covariant Hessian density is exactly the inverse-square source law needed by Block99, but the current surface does not derive that covariance premise.

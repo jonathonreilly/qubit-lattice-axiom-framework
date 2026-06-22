@@ -65,7 +65,12 @@ PASS banned overclaim marker scan
 ## PR
 
 ```text
-PENDING
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4697
+number: 4697
+title: [physics-loop] s3-route2 scalar partition product block110 no-go
+base: physics-loop/s3-route2-color-marginal-transfer-block109-20260622
+head: physics-loop/s3-route2-scalar-partition-product-block110-20260622
+science_commit: 8d576b830
 ```
 
 ## Next Exact Action

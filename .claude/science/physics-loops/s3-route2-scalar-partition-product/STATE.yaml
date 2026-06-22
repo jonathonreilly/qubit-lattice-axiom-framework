@@ -7,7 +7,7 @@ block: 110
 branch: physics-loop/s3-route2-scalar-partition-product-block110-20260622
 base: physics-loop/s3-route2-color-marginal-transfer-block109-20260622
 base_commit: c01c2ede1
-science_commit: PENDING
+science_commit: 8d576b830
 worktree: /private/tmp/cl3-physics-loop-s3-route2-scalar-partition-product-block110-20260622
 date: 2026-06-22
 mode: campaign
@@ -63,9 +63,12 @@ open_imports:
   - "Route-2 raw E[XY]=1 moment theorem for those same variables."
   - "Same-source P_R/E-T typing for the scalar source variables."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4697
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4697
+pr_title: "[physics-loop] s3-route2 scalar partition product block110 no-go"
+pr_base: physics-loop/s3-route2-color-marginal-transfer-block109-20260622
+pr_head: physics-loop/s3-route2-scalar-partition-product-block110-20260622
 next_exact_action: >-
   Construct a Route-2 scalar source-marginal selector theorem, or pivot to a
   color/tensor-resolved source-Hessian E/T readout theorem.

@@ -7,7 +7,7 @@ block: 101
 branch: physics-loop/s3-route2-pcal-moment-realization-block101-20260622
 base: physics-loop/s3-route2-source-measure-product-registry-block100-20260622
 base_commit: 6be5a1143
-science_commit: PENDING
+science_commit: a6f0c9001
 worktree: /private/tmp/cl3-physics-loop-s3-route2-pcal-moment-realization-block101-20260622
 date: 2026-06-22
 mode: campaign
@@ -55,9 +55,9 @@ imports_retired:
 open_imports:
   - "Route-2 Pcal moment-realization theorem."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4688
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4688
 next_exact_action: >-
   Construct the Route-2 Pcal moment-realization theorem, or isolate the next
   missing same-source moment/readout primitive.

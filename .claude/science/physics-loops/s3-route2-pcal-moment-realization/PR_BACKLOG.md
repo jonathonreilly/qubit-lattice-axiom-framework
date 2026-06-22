@@ -23,5 +23,9 @@ Prune exact P_R slots as determining the Route-2 Pcal moment realization.
 PR:
 
 ```text
-PENDING
+Opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4688
+Number: 4688
+Title: [physics-loop] s3-route2 pcal moment realization block101 no-go
+State: OPEN
+Science commit: a6f0c9001
 ```

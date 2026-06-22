@@ -50,5 +50,11 @@ PASS banned overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4688
+Number: 4688
+Title: [physics-loop] s3-route2 pcal moment realization block101 no-go
+State: OPEN
+Base: physics-loop/s3-route2-source-measure-product-registry-block100-20260622
+Head: physics-loop/s3-route2-pcal-moment-realization-block101-20260622
+Science commit: a6f0c9001
 ```

@@ -57,8 +57,12 @@ imports_retired:
 open_imports:
   - "An exact singlet-annihilation or disconnected-current-zero theorem selecting kappa=0."
 review_disposition: pass
-pr_status: pending push and PR creation
+pr_status: opened
+pr_number: 4657
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4657
+pr_identity_json: >-
+  {"baseRefName":"physics-loop/s3-route2-current-projector-idempotence-block70-20260622","headRefName":"physics-loop/s3-route2-full-trace-exclusion-block71-20260622","number":4657,"state":"OPEN","title":"[physics-loop] s3-route2-full-trace-exclusion block71 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4657"}
+science_commit: 10b8e6bcd338
 next_exact_action: >-
-  Push this block, open the stacked PR, record PR identity, then pivot to the
-  positive E-center readout domain theorem q_E>0.
+  Pivot to the positive E-center readout domain theorem q_E>0.
 stop_condition: none

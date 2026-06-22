@@ -15,7 +15,8 @@ source/readout primitive.
 - Trace class: `negative_route_pruning`
 - Does not derive `rho_E=21/4`, `q_E=15/8`, or the endpoint triple
 - Does not update audit verdicts or repo-wide authority surfaces
-- PR identity after creation: pending
+- PR identity after creation: #4627,
+  https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4627
 - Conflict/mergeability state was not checked
 
 ## Verification

@@ -37,9 +37,9 @@ checkpoint:
     - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py: PASS=11 FAIL=0"
     - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_box_size_scan_2026_06_10.py: TOTAL PASS=7 FAIL=0"
   pr:
-    number: null
-    url: null
-    identity_checked: false
+    number: 4627
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4627
+    identity_checked: true
     conflict_mergeability_checked: false
-  next_exact_action: "Open PR, then continue campaign toward a nonlinear E-center readout primitive or inverse-square center-lift law."
+  next_exact_action: "Continue campaign toward a nonlinear E-center readout primitive or inverse-square center-lift law."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

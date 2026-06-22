@@ -1,0 +1,67 @@
+Route-2 Hessian E/T coefficient normalization no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: exact readout map has E and T scalar outputs
+PASS: exact readout map has two E/T output rows
+PASS: exact readout map leaves readout triple underived
+PASS: exact readout map names coefficient ratios
+PASS: source-Hessian support gives connected source Hessian route
+PASS: source-Hessian support separates pure-disconnected singlet identification
+PASS: Block88 leaves connected-Hessian E/T readout theorem open
+PASS: Block88 rejects scalarization before E/T typing
+
+PART 2: invariant Hessian representation
+PASS: sl_3 adjoint tangent has dimension eight
+PASS: Sym^2(sl_3) has dimension thirty-six
+PASS: SU(3)-invariant symmetric adjoint bilinear is one-dimensional
+PASS: Route-2 E/T Hessian output has two scalar components
+PASS: invariant Hessian to E/T has two coefficient slots
+PASS: the two slots are output coefficients, not two color bilinears
+PASS: color covariance alone fixes the bilinear shape only up to scale
+
+PART 3: E/T coefficient family
+  equal_outputs: lambda=(1, 1), output=(Fraction(8, 9), Fraction(8, 9)), T/E=1
+PASS: equal_outputs keeps the same connected color block
+  opposite_outputs: lambda=(1, -1), output=(Fraction(8, 9), Fraction(-8, 9)), T/E=-1
+PASS: opposite_outputs keeps the same connected color block
+  T_half_E: lambda=(2, 1), output=(Fraction(16, 9), Fraction(8, 9)), T/E=1/2
+PASS: T_half_E keeps the same connected color block
+  E_only: lambda=(1, 0), output=(Fraction(8, 9), Fraction(0, 1)), T/E=0
+PASS: E_only keeps the same connected color block
+PASS: all examples use the connected color block 8/9
+PASS: different E/T coefficients give different output pairs
+PASS: different E/T coefficients give different T/E ratios
+PASS: pure disconnected subtraction can hold while E/T coefficients vary
+PASS: kappa=0 support is not an E/T coefficient normalization
+PASS: no endpoint value is needed to expose the coefficient freedom
+
+PART 4: reachability
+PASS: connected Hessian reaches kappa=0 when pure scalar line is supplied
+PASS: connected Hessian also reaches free E/T coefficients
+PASS: base graph does not reach typed Route-2 E/T bridge
+PASS: adding E/T coefficient theorem reaches typed bridge
+PASS: graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for deriving the Route-2 E/T bridge
+PASS: note contains marker: Hom_SU3(Sym^2(sl_3), C) = C
+PASS: note contains marker: H_E(X,Y) = lambda_E B(X,Y)
+PASS: note contains marker: kappa=0 support and the scalar E/T bridge are distinct
+PASS: note contains marker: Route-2 connected-Hessian E/T coefficient normalization theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block89 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names E/T coefficient normalization
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned selector import
+
+TOTAL: PASS=49, FAIL=0
+VERDICT: the connected color Hessian does not fix Route-2 E/T output coefficients without an added normalization theorem.

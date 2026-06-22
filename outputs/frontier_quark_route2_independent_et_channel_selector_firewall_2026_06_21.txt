@@ -1,0 +1,76 @@
+========================================================================================
+ROUTE-2 INDEPENDENT E/T CHANNEL-SELECTOR FIREWALL
+========================================================================================
+
+A. Authority surfaces
+------------------------------------------------------------------------
+PASS: new note surface exists -- docs/QUARK_ROUTE2_INDEPENDENT_ET_CHANNEL_SELECTOR_FIREWALL_NOTE_2026-06-21.md
+PASS: parent theta coupling surface exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: exact readout surface exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: covariance Schur no-go surface exists -- docs/QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md
+PASS: E-center blindness surface exists -- docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md
+PASS: ell_E narrowing surface exists -- docs/QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md
+PASS: rank-1 carrier surface exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_RANK1_FACTORIZATION_NOTE_2026-05-17.md
+
+B. Exact O_h channel projectors
+------------------------------------------------------------------------
+PASS: O_h signed-permutation group has 48 elements -- |O_h|=48
+PASS: central projector ranks are (A1,E,T1)=(1,2,3) -- ranks=(1, 2, 3)
+PASS: projectors are symmetric idempotents
+PASS: projectors are mutually orthogonal and sum to identity
+PASS: E and T1 projectors commute with every O_h action
+PASS: E/T projectors distinguish channels but do not mix them
+
+C. Endpoint target arithmetic
+------------------------------------------------------------------------
+PASS: target lambda=q_E/q_T is 9/4 -- lambda=9/4
+PASS: target rho_E is 21/4 -- rho_E=21/4
+PASS: target center ratio is -8/9 -- c_TE=-8/9
+PASS: projector-weight leverage kappa is 3/2 -- kappa=3/2
+PASS: the target value equals kappa squared -- kappa^2=9/4
+
+D. Channel-selector family freedom
+------------------------------------------------------------------------
+PASS: neutral coefficient ratio is an invariant positive E/T selector -- lambda=1, q_E=5/6, rho_E=-1, c_TE=-2
+PASS: one_power_inverse coefficient ratio is an invariant positive E/T selector -- lambda=3/2, q_E=5/4, rho_E=3/2, c_TE=-4/3
+PASS: target coefficient ratio is an invariant positive E/T selector -- lambda=9/4, q_E=15/8, rho_E=21/4, c_TE=-8/9
+PASS: quadratic_forward coefficient ratio is an invariant positive E/T selector -- lambda=4/9, q_E=10/27, rho_E=-34/9, c_TE=-9/2
+PASS: multiple inequivalent invariant selectors survive T normalization
+PASS: target selector and neutral selector are distinct invariant observables -- ||O_target-O_neutral||=1.767767
+PASS: existence of a target-valued selector is therefore not a derivation -- both are equally O_h-invariant
+
+E. Coefficient-law diagnostics
+------------------------------------------------------------------------
+PASS: inverse-square weight law is exactly the target -- (w_E/w_T)^-2=9/4
+PASS: one inverse power gives kappa, not the target
+PASS: neutral law gives lambda=1, not the target
+PASS: positive one-power law gives 2/3, not the target
+PASS: positive quadratic weight law gives 4/9, not the target
+PASS: among tested integer powers -2..2 only the inverse-square premise hits target
+
+F. Affine selector import test
+------------------------------------------------------------------------
+PASS: affine law through target has a=19/4 -- a=19/4
+PASS: affine law through target has slope b=-15/2 -- b=-15/2
+PASS: affine target law predicts A1 coefficient 7/2 -- c_A1=7/2
+PASS: neutral affine law is constant with A1 coefficient 1
+PASS: target affine law is not forced by endpoint normalization alone -- it imports a non-neutral slope and A1 coefficient
+PASS: affine target law is a selector theorem target, not a current derivation -- the law must explain both the decreasing slope and c_A1=7/2
+
+G. Current-bank marker and note hygiene
+------------------------------------------------------------------------
+PASS: new note declares no_go claim type
+PASS: new note says no audit verdict is applied
+PASS: new note distinguishes projector existence from coefficient-law selection
+PASS: new note records the inverse-square law as a premise target
+PASS: new note records the affine A1=7/2 import
+PASS: new note does not claim global impossibility
+PASS: exact readout surface names the missing endpoint triple
+PASS: exact readout surface reduces the blocker to beta_E/alpha_E
+PASS: covariance surface already says inverse-square is the gap
+PASS: E-center blindness surface requires a genuine E-center lift
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=47, FAIL=0
+VERDICT: exact negative boundary. O_h supplies independent E/T projectors, but projector existence is not coefficient selection. With the T channel normalized, the E:T1 selector coefficient is a free Schur parameter. The target lambda=9/4 is obtained only by adding an inverse-square coefficient law or an equivalent fitted affine law with A1 coefficient 7/2. The remaining Route-2 readout ambiguity is therefore the coefficient-law selector, not the mere existence of an E/T channel observable.

@@ -13,3 +13,9 @@ Disposition: pass for review-backlog submission.
 
 Independent review should check whether the phrase "channel-specific E source
 coefficient" is the right integration vocabulary for the later cherry-pick.
+
+## PR Record
+
+- PR #4617: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4617
+- Identity-only view: number, URL, title, head branch, base branch, and state.
+- Conflict and mergeability state were not checked.

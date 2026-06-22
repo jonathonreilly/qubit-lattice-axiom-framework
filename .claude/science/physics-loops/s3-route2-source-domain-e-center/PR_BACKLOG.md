@@ -1,12 +1,9 @@
 # PR Backlog
 
-PR pending. If `gh pr create` fails, use:
+No backlog entry remains for this block.
 
-```bash
-gh pr create \
-  --repo jonathonreilly/qubit-lattice-axiom-framework \
-  --base main \
-  --head physics-loop/s3-route2-source-domain-e-center-block86-20260621 \
-  --title "[physics-loop] s3-route2-source-domain-e-center block86 no-go" \
-  --body-file .claude/science/physics-loops/s3-route2-source-domain-e-center/PR_BODY.md
-```
+- PR #4617: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4617
+- Branch: `physics-loop/s3-route2-source-domain-e-center-block86-20260621`
+- Base: `main`
+- Identity-only view was checked.
+- Conflict and mergeability state were not checked.

@@ -70,15 +70,19 @@ Schur/quadratic authority link label matches the actual target file.
 
 ## PR
 
-Pending until the branch is pushed and the PR is opened.
+- Number: 4630
+- URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4630
+- Title: `[physics-loop] s3-route2-typed-metric-source-inverse-square block99 exact-support`
+- State: OPEN
+- Base: `main`
+- Head: `physics-loop/s3-route2-typed-metric-source-inverse-square-block99-20260621`
+- Identity checked: true
+- Conflict/mergeability checked: false
 
 Conflict/mergeability state must not be checked. The reviewer will update or
 cherry-pick science as needed.
 
 ## Next Exact Action
-
-Commit, push, and open the Block99 PR without checking conflict or
-mergeability state. Then update this handoff with PR identity only.
 
 Recommended next campaign target after this PR: attempt a genuinely nonlinear
 Route-2 tensor/source observable that derives the inverse-square center-lift

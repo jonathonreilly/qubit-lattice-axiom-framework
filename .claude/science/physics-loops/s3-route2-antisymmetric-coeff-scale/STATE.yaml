@@ -7,7 +7,7 @@ block: 91
 branch: physics-loop/s3-route2-antisymmetric-coeff-scale-block91-20260622
 base: physics-loop/s3-route2-carrier-antisymmetric-hessian-coeff-block90-20260622
 base_commit: 4256d0b0d
-science_commit: PENDING
+science_commit: e65f01999
 worktree: /private/tmp/cl3-physics-loop-s3-route2-antisymmetric-coeff-scale-block91-20260622
 date: 2026-06-22
 mode: campaign
@@ -55,9 +55,9 @@ imports_retired:
 open_imports:
   - "Route-2 scale-normalized pure-antisymmetric Hessian coefficient theorem."
 review_disposition: static_verification_passed_no_audit_or_review_worker_run
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4678
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4678
 next_exact_action: >-
   Construct a scale-normalized pure-antisymmetric E/T Hessian coefficient
   theorem, or choose a different source/readout route.

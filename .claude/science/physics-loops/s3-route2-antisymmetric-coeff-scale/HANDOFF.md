@@ -75,7 +75,11 @@ block; reviewer/cherry-pick handling is left to the PR review path.
 ## PR
 
 ```text
-PENDING
+PR #4678
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4678
+State: OPEN
+Base: physics-loop/s3-route2-carrier-antisymmetric-hessian-coeff-block90-20260622
+Head: physics-loop/s3-route2-antisymmetric-coeff-scale-block91-20260622
 ```
 
 ## Next Exact Action

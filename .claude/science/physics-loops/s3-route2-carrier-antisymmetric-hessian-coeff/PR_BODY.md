@@ -49,5 +49,9 @@ PASS overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4677
+Number: 4677
+Base: physics-loop/s3-route2-hessian-et-coefficient-normalization-block89-20260622
+Head: physics-loop/s3-route2-carrier-antisymmetric-hessian-coeff-block90-20260622
+Science commit: b2c00fd29
 ```

@@ -24,5 +24,5 @@ Hessian coefficient primitive.
 PR:
 
 ```text
-PENDING
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4677
 ```

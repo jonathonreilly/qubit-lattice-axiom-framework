@@ -63,5 +63,9 @@ PASS
 ## PR Identity
 
 ```text
-PENDING
+PR #4683
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4683
+State: OPEN
+Base: physics-loop/s3-route2-anti-invariant-adjoint-typing-block95-20260622
+Head: physics-loop/s3-route2-typed-parity-bridge-cut-block96-20260622
 ```

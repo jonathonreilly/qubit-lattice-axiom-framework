@@ -24,5 +24,5 @@ without endpoint input under explicit same-source E/T readout premises.
 PR:
 
 ```text
-PENDING
+Created: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4680
 ```

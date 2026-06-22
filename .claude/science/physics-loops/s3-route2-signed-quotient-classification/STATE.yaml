@@ -1,0 +1,66 @@
+loop_slug: s3-route2-signed-quotient-classification
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 104
+branch: physics-loop/s3-route2-signed-quotient-classification-block104-20260622
+base: physics-loop/s3-route2-binary-same-record-transfer-block103-20260622
+base_commit: 9b765141a
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-signed-quotient-classification-block104-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Signed quotient classification
+hard_residual: >-
+  Determine whether a deterministic signed quotient of the current four exact
+  P_R labels can force the Block102 binary one-point bias without a separate
+  source-measure theorem.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SIGNED_QUOTIENT_CLASSIFICATION_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_signed_quotient_classification_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_signed_quotient_classification_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-signed-quotient-classification/
+commands_run:
+  - python3 -m py_compile scripts/frontier_quark_route2_signed_quotient_classification_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_signed_quotient_classification_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_binary_same_record_transfer_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_binary_product_normal_form_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_pcal_moment_realization_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py
+  - git diff --check
+  - YAML parse for .claude/science/physics-loops/s3-route2-signed-quotient-classification/STATE.yaml
+  - ASCII scan for Block104 note, runner, output, and loop pack
+  - banned overclaim marker scan for Block104 note, runner, output, and loop pack
+command_results:
+  - "py_compile: PASS"
+  - "Block104 signed quotient classification runner: PASS=67 FAIL=0"
+  - "Block103 binary same-record transfer guard: PASS=60 FAIL=0"
+  - "Block102 binary product normal-form guard: PASS=72 FAIL=0"
+  - "Block101 Pcal moment-realization guard: PASS=75 FAIL=0"
+  - "exact readout map guard: PASS=11 FAIL=0"
+  - "source-Hessian cumulant selector support guard: PASS=49 FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "banned overclaim marker scan: PASS"
+imports_retired:
+  - "The route that deterministic signed quotient alone forces |E[X]| = 1/3."
+open_imports:
+  - "Route-2 typed signed quotient theorem."
+  - "Route-2 source-measure bias theorem."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct the Route-2 typed signed quotient plus source-measure bias theorem,
+  or pivot to a non-binary same-source product-readout primitive.
+stop_condition: none

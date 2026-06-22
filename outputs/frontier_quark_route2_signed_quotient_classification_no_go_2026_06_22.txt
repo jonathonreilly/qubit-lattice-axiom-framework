@@ -1,0 +1,91 @@
+Route-2 signed quotient classification no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: exact readout has four P_R labels
+PASS: exact readout has channelwise P_R matrix
+PASS: Block103 names binary same-record source theorem
+PASS: Block103 leaves sign map and probabilities missing
+PASS: Block102 reduces binary route to one-point bias
+PASS: Block102 forbids endpoint value input
+
+PART 2: deterministic signed quotients with uniform four-label measure
+  plus-count histogram: {0: 1, 1: 4, 2: 6, 3: 4, 4: 1}
+  uniform means, all maps: [Fraction(-1, 1), Fraction(-1, 2), Fraction(0, 1), Fraction(1, 2), Fraction(1, 1)]
+  uniform means, nonconstant maps: [Fraction(-1, 2), Fraction(0, 1), Fraction(1, 2)]
+PASS: there are 16 deterministic signed maps
+PASS: there are 14 nonconstant binary quotients
+PASS: there are 6 balanced two-plus/two-minus quotients
+PASS: there are 8 one-vs-three quotients
+PASS: uniform four-label means are classified exactly
+PASS: uniform nonconstant means exclude +/-1/3
+  channel E/T quotient: uniform mean=0
+PASS: channel E/T quotient is balanced under uniform four-label measure
+  shell/center quotient: uniform mean=0
+PASS: shell/center quotient is balanced under uniform four-label measure
+  diagonal quotient: uniform mean=0
+PASS: diagonal quotient is balanced under uniform four-label measure
+PASS: no uniform four-label quotient gives the Block102 bias
+
+PART 3: free source measure on a fixed nonconstant quotient
+  uniform_binary: p_plus=1/2, p_minus=1/2, mean=0, connected=1, kappa=1
+PASS: uniform_binary probabilities normalize
+PASS: uniform_binary mean formula is exact
+PASS: uniform_binary connected formula is exact
+PASS: uniform_binary kappa formula is exact
+  positive_two_to_one: p_plus=2/3, p_minus=1/3, mean=1/3, connected=8/9, kappa=0
+PASS: positive_two_to_one probabilities normalize
+PASS: positive_two_to_one mean formula is exact
+PASS: positive_two_to_one connected formula is exact
+PASS: positive_two_to_one kappa formula is exact
+  negative_one_to_two: p_plus=1/3, p_minus=2/3, mean=-1/3, connected=8/9, kappa=0
+PASS: negative_one_to_two probabilities normalize
+PASS: negative_one_to_two mean formula is exact
+PASS: negative_one_to_two connected formula is exact
+PASS: negative_one_to_two kappa formula is exact
+  degenerate_plus: p_plus=1, p_minus=0, mean=1, connected=0, kappa=-8
+PASS: degenerate_plus probabilities normalize
+PASS: degenerate_plus mean formula is exact
+PASS: degenerate_plus connected formula is exact
+PASS: degenerate_plus kappa formula is exact
+PASS: two-to-one and one-to-two source measures give kappa=0
+PASS: uniform binary source measure gives kappa=1
+PASS: free measure changes kappa under the same sign quotient
+PASS: the desired bias is exactly a 2:1 source-measure ratio
+
+PART 4: reachability
+PASS: current P_R labels reach signed-quotient family
+PASS: signed-quotient family reaches missing measure node
+PASS: current P_R labels do not reach kappa=0
+PASS: positive refined theorem would reach kappa=0
+PASS: source-measure bias theorem is load-bearing
+PASS: reachability graph contains no endpoint-value node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for deterministic signed quotient alone forcing the Route-2 binary one-point bias
+PASS: note contains marker: There are 16 deterministic maps and 14 nonconstant binary quotients
+PASS: note contains marker: The natural uniform four-label quotient also does not help
+PASS: note contains marker: Route-2 typed signed quotient plus source-measure bias theorem
+PASS: note contains marker: mu(sigma=+1):mu(sigma=-1) = 2:1 or 1:2
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block104 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names source-measure bias theorem
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=67, FAIL=0
+VERDICT: a deterministic signed quotient of the four P_R labels does not force the Block102 one-point bias; the missing primitive is a Route-2 typed signed quotient plus source-measure bias theorem.

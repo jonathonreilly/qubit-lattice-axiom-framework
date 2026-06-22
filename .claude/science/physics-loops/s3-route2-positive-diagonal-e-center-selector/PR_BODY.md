@@ -14,6 +14,9 @@ It does not supply an equation selecting `q_E=15/8` or `rho_E=21/4`.
 - Trace class: `negative_route_pruning`
 - Does not derive `rho_E=21/4`, `q_E=15/8`, or the endpoint triple
 - Does not update audit verdicts or repo-wide authority surfaces
+- PR identity after creation: #4624,
+  https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4624
+- Conflict/mergeability state was not checked.
 
 ## Verification
 

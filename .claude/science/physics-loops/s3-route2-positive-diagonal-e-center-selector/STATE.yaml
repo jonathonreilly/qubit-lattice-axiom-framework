@@ -36,9 +36,9 @@ checkpoint:
     - "branch changed-files overclaim scan: pass"
     - "branch changed-files ASCII scan: pass"
   pr:
-    number: null
-    url: null
-    identity_checked: false
+    number: 4624
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4624
+    identity_checked: true
     conflict_mergeability_checked: false
-  next_exact_action: "Commit, push, and open the Block93 review PR without checking mergeability."
+  next_exact_action: "Continue campaign with a typed fixed-carrier selector equation attempt; do not check PR conflict or mergeability state."
   stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

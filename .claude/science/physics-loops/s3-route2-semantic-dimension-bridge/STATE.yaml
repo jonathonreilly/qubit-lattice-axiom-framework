@@ -36,6 +36,10 @@ verification:
     - "PASS: frontier_quark_route2_e_center_blindness_no_go.py: TOTAL: PASS=14, FAIL=0"
     - "FIREWALL: frontier_ckm_wolfenstein_eta_inverse_square_gap.py: TOTAL: PASS=21, FAIL=7; exact inverse-square arithmetic passes but retained-tier authority checks fail on this main snapshot"
 review_disposition: "pass: branch-local science review; no audit verdicts applied"
-pr_status: pending_create
-next_exact_action: "Commit block80, push the science branch, and open the review PR without checking mergeability/conflicts."
+pr_status: "open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4611"
+pr_number: 4611
+pr_title: "[physics-loop] s3-route2-semantic-dimension-bridge block80 no-go"
+pr_head: physics-loop/s3-route2-semantic-dimension-bridge-block80-20260621
+pr_base: main
+next_exact_action: "Pivot to the pure Route-2 inverse-square channel-law target without refreshing existing PRs or checking PR conflicts."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable targets are globally blocked."

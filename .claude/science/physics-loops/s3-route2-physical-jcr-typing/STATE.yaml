@@ -7,7 +7,7 @@ block: 144
 branch: physics-loop/s3-route2-physical-jcr-typing-no-go-block144-20260622
 base: physics-loop/s3-route2-source-jet-exponential-family-support-block143-20260622
 base_commit: 835d9e86c
-science_commit: pending_until_commit
+science_commit: b5d851b9f
 worktree: /private/tmp/cl3-physics-loop-s3-route2-physical-jcr-typing-no-go-block144-20260622
 date: 2026-06-22
 mode: campaign
@@ -59,11 +59,10 @@ open_imports:
   - "Same-source Riesz/unit-isometry theorem."
   - "Orientation sign theorem sigma=-1 after physical source typing."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending_create
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4731
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4731
 next_exact_action: >-
-  Commit the Block144 no-go packet, push the branch, and open the stacked PR;
-  then pivot to physical J_CR construction, same-source Riesz/unit-isometry, or
+  Pivot to physical J_CR construction, same-source Riesz/unit-isometry, or
   orientation sign if campaign runtime remains.
 stop_condition: none

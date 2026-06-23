@@ -1,0 +1,110 @@
+Route-2 same-source selector clause-independence no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block147 names typed selector theorem
+PASS: Block107 supplies non-binary product normal form
+PASS: Block110 prunes scalar normalization shortcut
+PASS: Block119 names same-source covariant bridge theorem
+PASS: Block121 constructs minimal endpoint-free extension
+PASS: Block127 supplies source-readout isometry target
+PASS: Block126 prunes source-unit calibration shortcut
+PASS: endpoint sign support separates sign from magnitude
+PASS: current P_R multi-record instantiation remains absent
+PASS: physical J_CR typing remains absent
+PASS: grounding says no endpoint value is used as an input
+
+PART 2: full selector bridge bundle
+  full same_source_surface: True
+PASS: same_source_surface has boolean status
+  full raw_moment_registry: True
+PASS: raw_moment_registry has boolean status
+  full connected_subtraction_typed: True
+PASS: connected_subtraction_typed has boolean status
+  full one_point_product_selector: True
+PASS: one_point_product_selector has boolean status
+  full physical_readout_unit: True
+PASS: physical_readout_unit has boolean status
+  full orientation_sign: True
+PASS: orientation_sign has boolean status
+PASS: full clauses close kappa
+PASS: full clauses close signed bridge
+PASS: full raw moment is one
+PASS: full one-point product is one ninth
+PASS: full connected value is eight ninths
+PASS: full kappa is zero
+PASS: full signed bridge gives c_TE=-8/9
+
+PART 3: single-clause omission witnesses
+PASS: full model is the only all-true clause vector
+  omit same_source_surface: matching moments on unrelated sources do not define one physical cumulant
+PASS: same_source_surface omission flips exactly one clause
+PASS: same_source_surface omission does not close signed bridge
+PASS: same_source_surface omission does not type kappa
+  omit raw_moment_registry: numeric
+PASS: raw_moment_registry omission flips exactly one clause
+PASS: raw_moment_registry omission does not close signed bridge
+    raw=2/3, product=1/9, kappa=-3
+PASS: raw_moment_registry numeric witness misses kappa zero
+PASS: raw_moment_registry numeric witness matches expected kappa
+  omit connected_subtraction_typed: raw_readout
+PASS: connected_subtraction_typed omission flips exactly one clause
+PASS: connected_subtraction_typed omission does not close signed bridge
+    raw_readout=1, kappa=1
+PASS: connected_subtraction_typed raw-readout witness misses kappa zero
+PASS: connected_subtraction_typed raw-readout witness matches expected kappa
+  omit one_point_product_selector: numeric
+PASS: one_point_product_selector omission flips exactly one clause
+PASS: one_point_product_selector omission does not close signed bridge
+    raw=1, product=1/4, kappa=-5/4
+PASS: one_point_product_selector numeric witness misses kappa zero
+PASS: one_point_product_selector numeric witness matches expected kappa
+  omit physical_readout_unit: mu
+PASS: physical_readout_unit omission flips exactly one clause
+PASS: physical_readout_unit omission does not close signed bridge
+    mu=1/2, c_TE=-4/9
+PASS: physical_readout_unit mu witness misses signed target
+PASS: physical_readout_unit mu witness matches expected c_TE
+  omit orientation_sign: sigma
+PASS: orientation_sign omission flips exactly one clause
+PASS: orientation_sign omission does not close signed bridge
+    sigma=1, c_TE=8/9
+PASS: orientation_sign sign witness misses signed target
+PASS: orientation_sign sign witness matches expected c_TE
+
+PART 4: reachability
+PASS: current stack reaches missing selector theorem node
+PASS: current stack does not reach kappa zero
+PASS: current stack does not reach signed bridge
+PASS: full selector theorem reaches kappa zero
+PASS: full selector theorem reaches signed bridge
+PASS: current graph has no endpoint-value input node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for weakened same-source selector bridge clauses
+PASS: note contains marker: Route-2 same-source selector bridge theorem
+PASS: note contains marker: single-clause omissions
+PASS: note contains marker: same-source one-point product E[X]E[Y]=1/9
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block148 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative route pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=79, FAIL=0
+VERDICT: no weakened same-source selector bridge theorem is enough; the Route-2 proof must supply same-source typing, raw moment, connected subtraction, one-point product, unit calibration, and post-selector orientation.

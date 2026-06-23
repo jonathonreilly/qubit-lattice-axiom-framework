@@ -1,0 +1,76 @@
+loop_slug: s3-route2-same-source-selector-clause-independence
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 148
+branch: physics-loop/s3-route2-same-source-selector-bridge-block148-20260622
+base: physics-loop/s3-route2-selector-equivalence-atlas-block147-20260622
+base_commit: 1a2335eb2
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-same-source-selector-bridge-block148-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: same-source selector bridge clause independence
+hard_residual: >-
+  Determine whether a weakened same-source selector bridge theorem can force
+  kappa=0 or c_TE=-8/9 without the full physical source/readout primitive.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SAME_SOURCE_SELECTOR_CLAUSE_INDEPENDENCE_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_same_source_selector_clause_independence_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_same_source_selector_clause_independence_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-same-source-selector-clause-independence/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_same_source_selector_clause_independence_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_same_source_selector_clause_independence_no_go_2026_06_22.py | tee outputs/frontier_quark_route2_same_source_selector_clause_independence_no_go_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_selector_equivalence_atlas_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_nonbinary_product_normal_form_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_scalar_partition_product_selector_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_multi_record_bridge_hardwall_cut_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_minimal_multirecord_extension_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_current_pr_multirecord_instantiation_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_isometry_sufficient_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_unit_calibration_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_physical_jcr_typing_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_measure_bias_stretch_no_go_2026_06_22.py"
+  - "python3 YAML parse check for STATE.yaml"
+  - "git diff --check"
+  - "perl ASCII scan over Block148 artifacts"
+  - "python3 overclaim scan over Block148 artifacts"
+command_results:
+  - "py_compile: PASS"
+  - "Block148 same-source selector clause-independence runner: TOTAL PASS=79, FAIL=0"
+  - "Block147 selector-equivalence atlas guard: TOTAL PASS=113, FAIL=0"
+  - "Block107 nonbinary product normal-form guard: TOTAL PASS=70, FAIL=0"
+  - "Block110 scalar partition product selector guard: TOTAL PASS=73, FAIL=0"
+  - "Block119 multi-record bridge hardwall guard: TOTAL PASS=64, FAIL=0"
+  - "Block121 minimal multi-record extension guard: TOTAL PASS=62, FAIL=0"
+  - "Block120 current P_R multi-record instantiation guard: TOTAL PASS=48, FAIL=0"
+  - "Block127 source-readout isometry guard: TOTAL PASS=81, FAIL=0"
+  - "Block126 source-readout unit calibration guard: TOTAL PASS=55, FAIL=0"
+  - "Block144 physical J_CR typing guard: TOTAL PASS=95, FAIL=0"
+  - "Block146 source-measure bias stretch guard: TOTAL PASS=76, FAIL=0"
+  - "YAML parse clean"
+  - "git diff --check clean"
+  - "ASCII scan clean"
+  - "overclaim scan clean"
+imports_retired:
+  - "Prunes weakened same-source selector bridge statements as sufficient Route-2 closure."
+open_imports:
+  - "Full Route-2 same-source selector bridge theorem."
+  - "Physical P_R/E-T source variables X,Y on one reference source."
+  - "Physical source/readout unit calibration mu=1."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit and push the Block148 branch and open the stacked PR without checking
+  conflict or mergeability state.
+stop_condition: none

@@ -1,0 +1,105 @@
+Route-2 two-outcome probability surface no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: exact readout map has E-shell
+PASS: exact readout map has E-center
+PASS: exact readout map has T-shell
+PASS: exact readout map has T-center
+PASS: exact readout map defines q_T shell/center ratio
+PASS: Block131 requires Omega_R
+PASS: Block130 keeps probability surface missing
+PASS: Fisher theorem itself is generic finite probability geometry
+
+PART 2: two-outcome shape
+  e_t_labels: True
+PASS: e_t_labels has boolean status
+  shell_center_labels: False
+PASS: shell_center_labels has boolean status
+  four_endpoint_slots: False
+PASS: four_endpoint_slots has boolean status
+  center_ratio_readout: False
+PASS: center_ratio_readout has boolean status
+  same_source_riesz: False
+PASS: same_source_riesz has boolean status
+PASS: two-outcome surface has E/T labels
+PASS: two-outcome surface lacks shell/center labels
+PASS: two-outcome surface lacks four endpoint slots
+PASS: two-outcome surface does not support center readout
+PASS: missing clauses are exactly shell/center, four-slot, center-readout, and Riesz typing
+
+PART 3: four-slot shape as next target
+  slot=E-shell
+PASS: E-shell is a typed endpoint slot
+PASS: E-shell has E/T or shell/center marker
+  slot=E-center
+PASS: E-center is a typed endpoint slot
+PASS: E-center has E/T or shell/center marker
+  slot=T-shell
+PASS: T-shell is a typed endpoint slot
+PASS: T-shell has E/T or shell/center marker
+  slot=T-center
+PASS: T-center is a typed endpoint slot
+PASS: T-center has E/T or shell/center marker
+PASS: four-slot shape supports Route-2 center readout when all extra clauses hold
+PASS: four-slot shape has no missing shape clauses
+PASS: four-slot shape is a construction target, not current closure
+
+PART 4: single-clause failure models
+  missing e_t_labels: supports=False
+PASS: e_t_labels omission blocks center readout support
+PASS: e_t_labels omission is named exactly
+PASS: e_t_labels omission leaves no current closure
+  missing shell_center_labels: supports=False
+PASS: shell_center_labels omission blocks center readout support
+PASS: shell_center_labels omission is named exactly
+PASS: shell_center_labels omission leaves no current closure
+  missing four_endpoint_slots: supports=False
+PASS: four_endpoint_slots omission blocks center readout support
+PASS: four_endpoint_slots omission is named exactly
+PASS: four_endpoint_slots omission leaves no current closure
+  missing center_ratio_readout: supports=False
+PASS: center_ratio_readout omission blocks center readout support
+PASS: center_ratio_readout omission is named exactly
+PASS: center_ratio_readout omission leaves no current closure
+  missing same_source_riesz: supports=False
+PASS: same_source_riesz omission blocks center readout support
+PASS: same_source_riesz omission is named exactly
+PASS: same_source_riesz omission leaves no current closure
+PASS: all five shape clauses were tested
+
+PART 5: reachability
+PASS: two-outcome surface reaches shell/center missing node
+PASS: two-outcome surface does not reach center scalar line
+PASS: four-slot target reaches shell/center ratios
+PASS: four-slot target reaches center scalar line
+PASS: four-slot target reaches same-source Riesz target
+PASS: reachability graph contains no endpoint-value input
+PASS: two-outcome and four-slot targets are distinct
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for a two-outcome {E,T} sharp-record probability surface supplying the Route-2 shell/center P_R/E-T probability contract
+PASS: note contains marker: E-shell, E-center, T-shell, T-center
+PASS: note contains marker: Route-2 shell/center probability-surface theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block132 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=75, FAIL=0
+VERDICT: a two-outcome {E,T} probability surface cannot carry the Route-2 shell/center center-ratio readout; a shell/center probability surface remains required.

@@ -60,5 +60,11 @@ overclaim marker scan: PASS
 ## PR Identity
 
 ```text
-pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4714
+Number: 4714
+Title: [physics-loop] s3-route2 source readout isometry block127 exact-support
+State: OPEN
+Base: physics-loop/s3-route2-source-readout-unit-calibration-block126-20260622
+Head: physics-loop/s3-route2-source-readout-isometry-support-block127-20260622
+Science commit: 852d9f80b
 ```

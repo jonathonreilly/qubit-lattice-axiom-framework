@@ -7,7 +7,7 @@ block: 127
 branch: physics-loop/s3-route2-source-readout-isometry-support-block127-20260622
 base: physics-loop/s3-route2-source-readout-unit-calibration-block126-20260622
 base_commit: e40db21e0
-science_commit: pending
+science_commit: 852d9f80b
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-readout-isometry-support-block127-20260622
 date: 2026-06-22
 mode: campaign
@@ -62,10 +62,11 @@ open_imports:
     Current Route-2 surface still must construct Phi_ET and prove the
     source/readout unit isometry.
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4714
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4714
 next_exact_action: >-
-  Commit the Block127 support packet, push the science branch, and open the
-  stacked PR on Block126.
+  Continue the campaign by trying to construct Phi_ET on the current Route-2
+  surface, or prove the current surface lacks the primitive needed to define
+  the source/readout isometry.
 stop_condition: none

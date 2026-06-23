@@ -1,0 +1,81 @@
+Route-2 adjoint-singlet normalization no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block116 proves unique adjoint contraction up to scale
+PASS: Block116 keeps coefficient/source normalization open
+PASS: Block115 requires coefficient/source normalization
+PASS: Hessian coefficient guard keeps normalization theorem missing
+PASS: source gauge guard names gauge-fixing theorem
+
+PART 2: full 1 + adjoint invariant-form space
+  invariant full covector dim=1
+  invariant full symmetric contraction dim=2
+  invariant adjoint covector dim=0
+PASS: full source has one invariant covector
+PASS: full source invariant symmetric contractions are two-dimensional
+PASS: adjoint block still has no invariant covector
+PASS: no invariant singlet-adjoint cross term exists
+PASS: two dimensions match singlet plus adjoint blocks
+
+PART 3: independent invariant scales
+PASS: singlet-only contraction is invariant
+PASS: adjoint-only contraction is invariant
+PASS: equal-weight contraction is invariant
+PASS: skew-weight contraction is invariant
+PASS: singlet-only and adjoint-only are linearly independent
+
+PART 4: connected fraction family
+  equal_weight: alpha=1, beta=1, R=8/9, kappa=0
+PASS: equal_weight connected fraction matches expected
+  adjoint_double: alpha=1, beta=2, R=16/17, kappa=8/17
+PASS: adjoint_double connected fraction matches expected
+  singlet_double: alpha=2, beta=1, R=4/5, kappa=-4/5
+PASS: singlet_double connected fraction matches expected
+PASS: equal weights force kappa=0
+PASS: adjoint double does not force kappa=0
+PASS: singlet double does not force kappa=0
+PASS: SU3 invariance permits different normalized fractions
+
+PART 5: trace boundary
+  orientation_selector: retired_by_block116
+PASS: orientation_selector status classified
+  singlet_adjoint_cross_term: forbidden
+PASS: singlet_adjoint_cross_term status classified
+  adjoint_singlet_relative_scale: open
+PASS: adjoint_singlet_relative_scale status classified
+  invariance_only_normalization: pruned
+PASS: invariance_only_normalization status classified
+  route2_physical_normalization_theorem: missing
+PASS: route2_physical_normalization_theorem status classified
+PASS: invariance-only normalization route is pruned
+PASS: physical normalization theorem remains missing
+PASS: relative scale remains open
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for SU(3) invariance alone fixing the Route-2 adjoint/singlet normalization
+PASS: note contains marker: Hom_SU3(Sym^2(1 + adjoint), 1) = 2
+PASS: note contains marker: R(alpha,beta) = 8 beta / (alpha + 8 beta)
+PASS: note contains marker: Route-2 adjoint/singlet coefficient normalization theorem
+PASS: note contains marker: no endpoint value is used
+PASS: handoff contains marker: Block117 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative route pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=54, FAIL=0
+VERDICT: SU(3) invariance separates the singlet and adjoint contractions but leaves their relative scale free; the Route-2 adjoint/singlet coefficient normalization theorem remains a distinct missing primitive.

@@ -1,0 +1,70 @@
+loop_slug: s3-route2-adjoint-singlet-normalization
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 117
+branch: physics-loop/s3-route2-adjoint-singlet-normalization-block117-20260622
+base: physics-loop/s3-route2-adjoint-invariant-contraction-block116-20260622
+base_commit: a6a949126
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-adjoint-singlet-normalization-block117-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Adjoint-singlet invariant normalization
+hard_residual: >-
+  Test whether SU(3) invariance alone fixes the relative coefficient between
+  the disconnected identity line and connected adjoint inverse-Killing
+  contraction.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_ADJOINT_SINGLET_NORMALIZATION_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_adjoint_singlet_normalization_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_adjoint_singlet_normalization_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-adjoint-singlet-normalization/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_adjoint_singlet_normalization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_adjoint_singlet_normalization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_adjoint_invariant_contraction_uniqueness_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_covariant_multirecord_cumulant_sufficient_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hessian_et_coefficient_normalization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_coordinate_gauge_normalization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_matrix_lift_sufficient_2026_06_22.py"
+  - "git diff --check"
+  - "YAML parse .claude/science/physics-loops/s3-route2-adjoint-singlet-normalization/STATE.yaml"
+  - "ASCII scan over Block117 note, runner, output, and loop pack"
+  - "overclaim-marker scan over Block117 note, runner, output, and loop pack"
+command_results:
+  - "py_compile PASS"
+  - "Block117 runner TOTAL: PASS=54, FAIL=0"
+  - "Block116 invariant contraction guard TOTAL: PASS=55, FAIL=0"
+  - "Block115 multi-record cumulant guard TOTAL: PASS=50, FAIL=0"
+  - "Hessian E/T coefficient guard TOTAL: PASS=49, FAIL=0"
+  - "source-coordinate gauge normalization guard TOTAL: PASS=86, FAIL=0"
+  - "source-Hessian cumulant selector guard TOTAL: PASS=49, FAIL=0"
+  - "color-matrix lift guard TOTAL: PASS=53, FAIL=0"
+  - "git diff --check PASS"
+  - "YAML parse PASS"
+  - "ASCII scan PASS"
+  - "overclaim-marker scan PASS"
+imports_retired:
+  - "SU(3) invariance alone as the adjoint/singlet coefficient normalization theorem."
+open_imports:
+  - "Same-source covariant adjoint multi-record source/readout family for Route-2 P_R/E-T."
+  - "Physical E/T D_A D_B log Z typing for that family."
+  - "Pure disconnected identity line."
+  - "Physical coefficient/source normalization fixing equal singlet and adjoint unit weights."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct a physical Route-2 source/readout normalization theorem, or prove
+  the current P_R/E-T surface cannot supply one.
+stop_condition: none

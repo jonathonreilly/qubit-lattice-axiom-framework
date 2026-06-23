@@ -1,0 +1,96 @@
+Route-2 normalized color-source selector support
+TRACE: upstream_support
+PART 1: grounding
+PASS: YT theorem names normalized connected color source tangent
+PASS: YT theorem names augmentation ideal sl_N
+PASS: Route-2 transfer note keeps same-source authority missing
+PASS: trace-one transfer note keeps color-record transfer missing
+PASS: Block112 names physical connected-Hessian bridge theorem
+
+PART 2: exact normalized color-source selector
+  N=2: full=4, connected=3, identity=1, fraction=3/4
+PASS: N=2 full dimension is N^2
+PASS: N=2 connected dimension is N^2-1
+PASS: N=2 identity dimension is one
+PASS: N=2 fractions sum to one
+  N=3: full=9, connected=8, identity=1, fraction=8/9
+PASS: N=3 full dimension is N^2
+PASS: N=3 connected dimension is N^2-1
+PASS: N=3 identity dimension is one
+PASS: N=3 fractions sum to one
+  N=4: full=16, connected=15, identity=1, fraction=15/16
+PASS: N=4 full dimension is N^2
+PASS: N=4 connected dimension is N^2-1
+PASS: N=4 identity dimension is one
+PASS: N=4 fractions sum to one
+  N=5: full=25, connected=24, identity=1, fraction=24/25
+PASS: N=5 full dimension is N^2
+PASS: N=5 connected dimension is N^2-1
+PASS: N=5 identity dimension is one
+PASS: N=5 fractions sum to one
+PASS: N=3 connected fraction is 8/9
+PASS: N=3 identity fraction is 1/9
+PASS: N=3 selector kappa is zero
+
+PART 3: identity source centering
+  lambda=1, trace=1, score=0
+PASS: lambda=1 identity score vanishes on trace-one records
+  lambda=7/3, trace=1, score=0
+PASS: lambda=7/3 identity score vanishes on trace-one records
+  lambda=-5/2, trace=1, score=0
+PASS: lambda=-5/2 identity score vanishes on trace-one records
+PASS: identity score does not vanish without trace-one condition
+PASS: trace-one condition is load-bearing
+
+PART 4: Route-2 transfer firewall
+  normalized_color_source_surface: True
+PASS: normalized_color_source_surface classification is boolean
+  current_Route2_same_source_lift: False
+PASS: current_Route2_same_source_lift classification is boolean
+  trace_one_Route2_records: False
+PASS: trace_one_Route2_records classification is boolean
+  physical_E_T_D2logZ_identification: False
+PASS: physical_E_T_D2logZ_identification classification is boolean
+  coefficient_source_gauge_normalization: False
+PASS: coefficient_source_gauge_normalization classification is boolean
+PASS: support theorem exists on its own source surface
+PASS: Route-2 transfer still has four missing gates
+PASS: same-source lift remains missing
+PASS: coefficient/source gauge normalization remains missing
+
+PART 5: reachability
+PASS: support theorem reaches kappa=0 on color source
+PASS: current Route-2 P_R reaches missing lift node
+PASS: current Route-2 P_R does not reach kappa=0
+PASS: future lift theorem would transfer selector
+PASS: reachability graph contains no endpoint triple node
+PASS: reachability graph does not use finite-box comparator
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: exact-support on the normalized color-source surface; no current Route-2 transfer
+PASS: note contains marker: Exact Support On The Color-Source Surface
+PASS: note contains marker: Route-2 Transfer Boundary
+PASS: note contains marker: kappa = 0
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block113 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=68, FAIL=0
+VERDICT: normalized trace-one color-matrix sources give exact kappa=0 support on their own surface; Route-2 still needs a same-source transfer theorem.

@@ -1,0 +1,79 @@
+Route-2 source-readout unit calibration no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block121 records equal source unit weights
+PASS: Block121 derives internal R_conn=8/9
+PASS: Block122 names mu=1 as missing physical coupling
+PASS: Block123 C4 is mu_one
+PASS: coefficient no-go says output coefficients are separate gates
+
+PART 2: internal source units versus physical readout units
+  internal_identity_unit: True
+PASS: internal_identity_unit has boolean status
+  internal_adjoint_unit: True
+PASS: internal_adjoint_unit has boolean status
+  internal_equal_weights: True
+PASS: internal_equal_weights has boolean status
+  physical_readout_unit: False
+PASS: physical_readout_unit has boolean status
+  source_to_readout_calibration: False
+PASS: source_to_readout_calibration has boolean status
+  mu_one: False
+PASS: mu_one has boolean status
+PASS: internal source normalization is complete
+PASS: physical readout unit remains missing
+PASS: source-to-readout calibration remains missing
+PASS: mu=1 remains missing
+
+PART 3: endpoint-free mu family
+  mu=1/2, c_TE=-4/9
+PASS: mu=1/2 output is rational
+PASS: mu=1/2 keeps internal R_conn fixed
+  mu=1, c_TE=-8/9
+PASS: mu=1 output is rational
+PASS: mu=1 keeps internal R_conn fixed
+  mu=3/2, c_TE=-4/3
+PASS: mu=3/2 output is rational
+PASS: mu=3/2 keeps internal R_conn fixed
+  mu=2, c_TE=-16/9
+PASS: mu=2 output is rational
+PASS: mu=2 keeps internal R_conn fixed
+PASS: different mu choices give different physical magnitudes
+PASS: mu=1 is only one member of the family
+PASS: source algebra alone does not select mu
+PASS: no endpoint value is used to construct the mu family
+
+PART 4: reachability
+PASS: Block121 reaches internal R_conn
+PASS: Block121 reaches free mu node
+PASS: Block121 alone does not satisfy C4
+PASS: unit calibration theorem would satisfy C4
+PASS: reachability graph contains no endpoint-value input
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for Block121 equal source-unit weights alone fixing the physical readout coupling mu=1
+PASS: note contains marker: c_TE(mu) = -mu * (8/9)
+PASS: note contains marker: Route-2 source-readout unit calibration theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block126 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=55, FAIL=0
+VERDICT: Block121 equal source-unit weights do not fix physical source-to-readout calibration mu=1.

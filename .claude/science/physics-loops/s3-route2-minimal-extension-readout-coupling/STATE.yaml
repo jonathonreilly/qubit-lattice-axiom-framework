@@ -7,7 +7,7 @@ block: 122
 branch: physics-loop/s3-route2-minimal-extension-readout-coupling-block122-20260622
 base: physics-loop/s3-route2-minimal-multirecord-extension-block121-20260622
 base_commit: 4887bdce7
-science_commit: PENDING
+science_commit: 1afc900d0
 worktree: /private/tmp/cl3-physics-loop-s3-route2-minimal-extension-readout-coupling-block122-20260622
 date: 2026-06-22
 mode: campaign
@@ -58,9 +58,9 @@ open_imports:
   - "Route-2 minimal-extension readout-coupling theorem fixing mu=1."
   - "Physical same-source P_R/E-T typing and channel assignment for the Block121 source extension."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4709
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4709
 next_exact_action: >-
   Prove or refute the Route-2 minimal-extension readout-coupling theorem
   fixing mu=1, channel assignment, and same-source P_R/E-T typing.

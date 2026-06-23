@@ -57,5 +57,8 @@ overclaim marker scan: no hits
 ## PR Identity
 
 ```text
-pending_create
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4729
+head: physics-loop/s3-route2-pr-row-ocr-functor-no-go-block142-20260622
+base: physics-loop/s3-route2-ocr-source-coordinate-stretch-block141-20260622
+science commit: 08ddd8b6e
 ```

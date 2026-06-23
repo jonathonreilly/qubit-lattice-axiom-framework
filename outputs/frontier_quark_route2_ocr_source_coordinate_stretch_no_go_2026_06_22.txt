@@ -1,0 +1,107 @@
+Route-2 O_CR source-coordinate stretch no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block140 names O_CR source-coordinate theorem
+PASS: Block140 says physical observable is not identified
+PASS: exact readout supplies K_R to P_R surface
+PASS: source-jet no-go names missing J_A and Z
+PASS: source-jet no-go names one-point products
+PASS: isometry packet requires Phi_ET
+PASS: cumulant packet requires physical readout primitive
+PASS: grounding uses no endpoint-value theorem
+
+PART 2: A_min and forbidden imports
+PASS: A_min allows exact_KR_PR_reduction
+PASS: A_min allows four_slot_labels
+PASS: A_min allows formal_unit_layer_score
+PASS: A_min allows connected_cumulant_identity
+PASS: A_min allows block121_internal_scalar_only
+PASS: forbidden import absent: endpoint_value
+PASS: forbidden import absent: endpoint_triple
+PASS: forbidden import absent: fitted_scalar_calibration
+PASS: forbidden import absent: bare_physical_observable_assertion
+PASS: A_min contains five allowed premise classes
+PASS: forbidden import list contains four blocked classes
+
+PART 3: fan-out construction frames
+  carrier_observable: missing=('O_CR', 'J_CR', 'P_h', 'same_source_Riesz')
+PASS: carrier_observable does not complete O_CR theorem
+PASS: carrier_observable does not import endpoint
+PASS: carrier_observable missing list is exact
+  four_slot_probability: missing=('O_CR', 'J_CR', 'same_source_Riesz')
+PASS: four_slot_probability does not complete O_CR theorem
+PASS: four_slot_probability does not import endpoint
+PASS: four_slot_probability missing list is exact
+  source_jet: missing=('O_CR', 'J_CR', 'P_h', 'same_source_Riesz')
+PASS: source_jet does not complete O_CR theorem
+PASS: source_jet does not import endpoint
+PASS: source_jet missing list is exact
+  fisher_riesz: missing=('O_CR', 'J_CR', 'same_source_Riesz')
+PASS: fisher_riesz does not complete O_CR theorem
+PASS: fisher_riesz does not import endpoint
+PASS: fisher_riesz missing list is exact
+  tau_symmetry: missing=('O_CR', 'J_CR', 'same_source_Riesz')
+PASS: tau_symmetry does not complete O_CR theorem
+PASS: tau_symmetry does not import endpoint
+PASS: tau_symmetry missing list is exact
+PASS: five independent frames were tested
+PASS: no frame supplies the full theorem
+
+PART 4: non-uniqueness witnesses
+  center_indicator: response=1/2
+PASS: center_indicator response is rational
+PASS: center_indicator response is endpoint-free sample
+  shell_indicator: response=-1/2
+PASS: shell_indicator response is rational
+PASS: shell_indicator response is endpoint-free sample
+  channel_indicator: response=0
+PASS: channel_indicator response is rational
+PASS: channel_indicator response is endpoint-free sample
+  layer_score: response=1
+PASS: layer_score response is rational
+PASS: layer_score response is endpoint-free sample
+  negative_layer_score: response=-1
+PASS: negative_layer_score response is rational
+PASS: negative_layer_score response is endpoint-free sample
+PASS: responses contain more than three distinct values
+PASS: unit layer score response differs from center indicator
+PASS: channel indicator response is blind to shell-center score
+
+PART 5: synthesis wall
+PASS: current surface reaches formal covariance responses
+PASS: current surface reaches missing O_CR selection
+PASS: current surface does not reach O_CR theorem
+PASS: adding O_CR theorem reaches kappa zero
+PASS: finite P_R rows alone do not reach same-source Riesz
+PASS: synthesis graph contains no endpoint-value input
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for the current surface constructing the physical O_CR source-coordinate lift
+PASS: note contains marker: A_min
+PASS: note contains marker: Fan-Out Attempt
+PASS: note contains marker: Synthesis Wall
+PASS: note contains marker: Route-2 O_CR source-coordinate theorem
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block141 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=81, FAIL=0
+VERDICT: all construction frames hit the O_CR source-coordinate theorem as the missing primitive.

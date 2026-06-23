@@ -1,0 +1,77 @@
+loop_slug: s3-route2-ocr-source-coordinate-stretch
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 141
+branch: physics-loop/s3-route2-ocr-source-coordinate-stretch-block141-20260622
+base: physics-loop/s3-route2-covariance-score-lift-no-go-block140-20260622
+base_commit: 46c9dc9d5
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-ocr-source-coordinate-stretch-block141-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: O_CR source-coordinate stretch fan-out
+hard_residual: >-
+  Construct the physical center-ratio observable O_CR and source coordinate
+  J_CR, or isolate why the current surface cannot supply them.
+a_min:
+  - exact_KR_PR_reduction
+  - four_slot_labels
+  - formal_unit_layer_score
+  - connected_cumulant_identity
+  - block121_internal_scalar_only
+forbidden_imports:
+  - endpoint_value
+  - endpoint_triple
+  - fitted_scalar_calibration
+  - bare_physical_observable_assertion
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_OCR_SOURCE_COORDINATE_STRETCH_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_ocr_source_coordinate_stretch_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_ocr_source_coordinate_stretch_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-ocr-source-coordinate-stretch/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_ocr_source_coordinate_stretch_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_ocr_source_coordinate_stretch_no_go_2026_06_22.py | tee outputs/frontier_quark_route2_ocr_source_coordinate_stretch_no_go_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_covariance_score_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_identity_source_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_isometry_sufficient_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "python3 -c 'import yaml, pathlib; yaml.safe_load(pathlib.Path(\".claude/science/physics-loops/s3-route2-ocr-source-coordinate-stretch/STATE.yaml\").read_text()); print(\"YAML OK\")'"
+  - "git diff --check"
+  - "LC_ALL=C rg -n \"[^ -~\\t\\r\\n]\" <new Block141 files>"
+  - "rg -n -i \"<overclaim markers>\" <new Block141 files>"
+command_results:
+  - "py_compile: pass"
+  - "Block141 runner: TOTAL: PASS=81, FAIL=0"
+  - "Block140 adjacent guard: TOTAL: PASS=95, FAIL=0"
+  - "Block139 adjacent guard: TOTAL: PASS=102, FAIL=0"
+  - "Source-jet guard: TOTAL: PASS=63, FAIL=0"
+  - "Source-Hessian cumulant selector guard: TOTAL: PASS=49, FAIL=0"
+  - "Source-readout isometry guard: TOTAL: PASS=81, FAIL=0"
+  - "Exact readout guard: PASS=11 FAIL=0"
+  - "YAML parse: pass"
+  - "git diff --check: pass"
+  - "ASCII scan: no hits"
+  - "overclaim scan: no hits"
+imports_retired:
+  - "Prunes five construction frames for O_CR under A_min."
+open_imports:
+  - "Route-2 O_CR source-coordinate theorem."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Run the Block141 runner and adjacent guards, then open the stacked PR if the
+  branch-local checks pass.
+stop_condition: none

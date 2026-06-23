@@ -72,7 +72,10 @@ Review disposition: `local_pass_no_review_loop_worker`.
 ## PR
 
 ```text
-pending
+#4727
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4727
+head: physics-loop/s3-route2-covariance-score-lift-no-go-block140-20260622
+base: physics-loop/s3-route2-identity-source-lift-no-go-block139-20260622
 ```
 
 ## Next Exact Action

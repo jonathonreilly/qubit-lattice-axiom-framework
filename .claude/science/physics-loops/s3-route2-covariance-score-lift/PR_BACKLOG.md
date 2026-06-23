@@ -1,6 +1,13 @@
 # PR Backlog
 
-PR creation is pending.
+PR opened:
+
+```text
+#4727
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4727
+head: physics-loop/s3-route2-covariance-score-lift-no-go-block140-20260622
+base: physics-loop/s3-route2-identity-source-lift-no-go-block139-20260622
+```
 
 Expected command:
 

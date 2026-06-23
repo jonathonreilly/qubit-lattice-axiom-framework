@@ -7,7 +7,7 @@ block: 133
 branch: physics-loop/s3-route2-shell-center-probability-support-block133-20260622
 base: physics-loop/s3-route2-two-outcome-probability-no-go-block132-20260622
 base_commit: 97d6b2ef9
-science_commit: pending
+science_commit: 622370bffa64fac596d61a171267cf55d341071c
 worktree: /private/tmp/cl3-physics-loop-s3-route2-shell-center-probability-support-block133-20260622
 date: 2026-06-22
 mode: campaign
@@ -53,10 +53,10 @@ imports_retired:
 open_imports:
   - "Construct P0, P_h, and coordinate functions from current Route-2 primitives."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4720
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4720
 next_exact_action: >-
-  Open the stacked PR, then attack the construction of P0, P_h, and RN
-  coordinate functions for the four-slot Route-2 probability surface.
+  Attack the construction of P0, P_h, and RN coordinate functions for the
+  four-slot Route-2 probability surface.
 stop_condition: none

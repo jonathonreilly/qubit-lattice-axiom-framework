@@ -7,7 +7,7 @@ block: 145
 branch: physics-loop/s3-route2-source-measure-bias-no-go-block145-20260622
 base: physics-loop/s3-route2-physical-jcr-typing-no-go-block144-20260622
 base_commit: df88b772b
-science_commit: pending_until_commit
+science_commit: b361c80f6
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-measure-bias-no-go-block145-20260622
 date: 2026-06-22
 mode: campaign
@@ -57,11 +57,10 @@ open_imports:
   - "Physical J_CR typing theorem."
   - "Same-source Riesz/unit-isometry theorem."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending_create
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4732
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4732
 next_exact_action: >-
-  Commit the Block145 no-go packet, push the branch, and open the stacked PR;
-  then pivot to the Route-2 source-measure bias theorem or same-source
+  Pivot to the Route-2 source-measure bias theorem or same-source
   Riesz/unit-isometry if campaign runtime remains.
 stop_condition: none

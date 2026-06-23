@@ -1,0 +1,64 @@
+loop_slug: s3-route2-two-outcome-probability-no-go
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 132
+branch: physics-loop/s3-route2-two-outcome-probability-no-go-block132-20260622
+base: physics-loop/s3-route2-probability-surface-contract-block131-20260622
+base_commit: 83b684423
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-two-outcome-probability-no-go-block132-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Two-outcome E/T probability surface for Route-2 probability contract
+hard_residual: >-
+  Test whether Omega_R={E,T} can carry the Route-2 shell/center center-ratio
+  readout required by Block131.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_TWO_OUTCOME_PROBABILITY_SURFACE_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_two_outcome_probability_surface_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_two_outcome_probability_surface_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-two-outcome-probability-no-go/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_two_outcome_probability_surface_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_two_outcome_probability_surface_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_two_outcome_probability_surface_no_go_2026_06_22.py > outputs/frontier_quark_route2_two_outcome_probability_surface_no_go_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_probability_surface_contract_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_fisher_riesz_realization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "git diff --check"
+  - "STATE.yaml parse"
+  - "ASCII scan"
+  - "overclaim marker scan"
+command_results:
+  - "py_compile: PASS"
+  - "two_outcome_probability_surface_no_go: TOTAL: PASS=75, FAIL=0"
+  - "cached output generated"
+  - "probability_surface_contract_support: TOTAL: PASS=86, FAIL=0"
+  - "fisher_riesz_realization_no_go: TOTAL: PASS=88, FAIL=0"
+  - "exact_readout_map: PASS=11 FAIL=0"
+  - "source_jet_lift_no_go: TOTAL: PASS=63, FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "overclaim marker scan: PASS"
+imports_retired:
+  - "Pruned the two-outcome {E,T} probability surface shortcut."
+open_imports:
+  - "Route-2 shell/center probability-surface theorem with E/T and shell/center typed events."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit the Block132 no-go packet, push the science branch, and open the
+  stacked PR on Block131.
+stop_condition: none

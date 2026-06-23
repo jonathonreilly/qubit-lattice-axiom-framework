@@ -7,7 +7,7 @@ block: 143
 branch: physics-loop/s3-route2-source-jet-exponential-family-support-block143-20260622
 base: physics-loop/s3-route2-pr-row-ocr-functor-no-go-block142-20260622
 base_commit: b3f8c155e
-science_commit: pending_until_commit
+science_commit: 9d7f550a3
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-jet-exp-family-support-block143-20260622
 date: 2026-06-22
 mode: campaign
@@ -59,11 +59,10 @@ open_imports:
   - "Same-source Riesz/unit-isometry theorem from the formal source fraction to the physical Route-2 readout unit."
   - "Orientation sign theorem sigma=-1."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending_create
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4730
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4730
 next_exact_action: >-
-  Commit the Block143 support packet, push the branch, and open the stacked PR;
-  then pivot to physical J_CR typing or same-source Riesz/unit-isometry if
-  campaign runtime remains.
+  Pivot to physical J_CR typing or same-source Riesz/unit-isometry if campaign
+  runtime remains.
 stop_condition: none

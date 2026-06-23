@@ -53,5 +53,11 @@ overclaim marker scan: PASS
 ## PR Identity
 
 ```text
-pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4719
+Number: 4719
+Title: [physics-loop] s3-route2 two-outcome probability block132 no-go
+State: OPEN
+Base: physics-loop/s3-route2-probability-surface-contract-block131-20260622
+Head: physics-loop/s3-route2-two-outcome-probability-no-go-block132-20260622
+Science commit: 90fcf42dd
 ```

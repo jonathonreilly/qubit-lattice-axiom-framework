@@ -7,7 +7,7 @@ block: 132
 branch: physics-loop/s3-route2-two-outcome-probability-no-go-block132-20260622
 base: physics-loop/s3-route2-probability-surface-contract-block131-20260622
 base_commit: 83b684423
-science_commit: pending
+science_commit: 90fcf42dd
 worktree: /private/tmp/cl3-physics-loop-s3-route2-two-outcome-probability-no-go-block132-20260622
 date: 2026-06-22
 mode: campaign
@@ -55,10 +55,10 @@ imports_retired:
 open_imports:
   - "Route-2 shell/center probability-surface theorem with E/T and shell/center typed events."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4719
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4719
 next_exact_action: >-
-  Commit the Block132 no-go packet, push the science branch, and open the
-  stacked PR on Block131.
+  Continue the campaign by constructing a shell/center probability surface
+  carrying E-shell, E-center, T-shell, and T-center events.
 stop_condition: none

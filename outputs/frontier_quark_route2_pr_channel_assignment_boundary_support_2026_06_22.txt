@@ -1,0 +1,95 @@
+Route-2 P_R channel-assignment boundary support
+TRACE: upstream_support
+PART 1: grounding
+PASS: exact readout map names direct E/T endpoint subspaces
+PASS: exact readout map gives P_R block form
+PASS: exact readout map says endpoint ratio theorem not derived
+PASS: contract names C3 channel assignment
+PASS: contract keeps same-source and mu clauses separate
+PASS: Block122 says physical coupling map remains missing
+
+PART 2: finite P_R channel assignment
+  E-shell: (Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+PASS: E-shell is a four-slot carrier
+  E-center: (Fraction(1, 1), Fraction(0, 1), Fraction(1, 6), Fraction(0, 1))
+PASS: E-center is a four-slot carrier
+  T-shell: (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1))
+PASS: T-shell is a four-slot carrier
+  T-center: (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(1, 6))
+PASS: T-center is a four-slot carrier
+PASS: E carriers live only in E slots
+PASS: T carriers live only in T slots
+  sample P_R=((Fraction(1, 1), Fraction(0, 1), Fraction(2, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-3, 1), Fraction(0, 1), Fraction(4, 1)))
+PASS: P_R E row has zero T slots
+PASS: P_R T row has zero E slots
+PASS: finite channel assignment is exact on restricted carrier class
+
+PART 3: C3 coverage boundary
+  finite_E_T_row_labels: True
+PASS: finite_E_T_row_labels has boolean status
+  disjoint_endpoint_carrier_columns: True
+PASS: disjoint_endpoint_carrier_columns has boolean status
+  source_hessian_output_channel_assignment: False
+PASS: source_hessian_output_channel_assignment has boolean status
+  same_source_PR_ET_typing: False
+PASS: same_source_PR_ET_typing has boolean status
+  mu_one_normalization: False
+PASS: mu_one_normalization has boolean status
+PASS: finite C3 channel labels are available
+PASS: source-Hessian channel assignment remains open
+PASS: same-source typing remains open
+PASS: mu=1 normalization remains open
+
+PART 4: same channel labels, different outputs
+  target_like: matrix=((Fraction(1, 1), Fraction(0, 1), Fraction(21, 4), Fraction(0, 1)), (Fraction(0, 1), Fraction(-2, 1), Fraction(0, 1), Fraction(2, 1))), qE=15/8, qT=5/6, shell=-2, center=-8/9
+PASS: target_like keeps block diagonal channel assignment
+PASS: target_like center ratio is rational
+  orientation_only: matrix=((Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(0, 1))), qE=1, qT=1, shell=-1, center=-1
+PASS: orientation_only keeps block diagonal channel assignment
+PASS: orientation_only center ratio is rational
+  neutral: matrix=((Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1))), qE=1, qT=1, shell=1, center=1
+PASS: neutral keeps block diagonal channel assignment
+PASS: neutral center ratio is rational
+PASS: target-like map gives -8/9
+PASS: orientation-only map gives -1
+PASS: neutral map gives +1
+PASS: same channel labels permit different center-ratio outputs
+PASS: channel assignment alone does not fix mu=1
+PASS: endpoint value is not used to build the counterfamily
+
+PART 5: reachability
+PASS: finite P_R reaches finite channel support
+PASS: finite P_R reaches missing source-Hessian coupling node
+PASS: finite P_R channel support does not reach physical c_TE
+PASS: full C1-C5 contract reaches physical c_TE
+PASS: reachability graph contains no endpoint-value input
+PASS: C3 finite support is weaker than source-Hessian channel assignment
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: exact-support for finite P_R E/T channel labels; not source-Hessian readout-coupling closure
+PASS: note contains marker: P_R = [[alpha_E, 0, beta_E, 0]
+PASS: note contains marker: finite P_R E/T channel labels != same-source source-Hessian readout-coupling theorem
+PASS: note contains marker: finite E/T row labels and disjoint carrier columns are available
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block124 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=66, FAIL=0
+VERDICT: finite P_R supplies exact E/T row labels on the restricted carrier class, but not same-source source-Hessian channel coupling or mu=1 normalization.

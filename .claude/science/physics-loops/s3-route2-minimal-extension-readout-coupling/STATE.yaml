@@ -1,0 +1,67 @@
+loop_slug: s3-route2-minimal-extension-readout-coupling
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 122
+branch: physics-loop/s3-route2-minimal-extension-readout-coupling-block122-20260622
+base: physics-loop/s3-route2-minimal-multirecord-extension-block121-20260622
+base_commit: 4887bdce7
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-minimal-extension-readout-coupling-block122-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Minimal extension to physical P_R/E-T readout-coupling theorem
+hard_residual: >-
+  Determine whether Block121's internal 1+adjoint source extension alone
+  identifies the physical Route-2 P_R/E-T center-ratio readout.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_MINIMAL_EXTENSION_READOUT_COUPLING_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_minimal_extension_readout_coupling_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_minimal_extension_readout_coupling_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-minimal-extension-readout-coupling/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_minimal_extension_readout_coupling_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_minimal_extension_readout_coupling_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_minimal_extension_readout_coupling_no_go_2026_06_22.py > outputs/frontier_quark_route2_minimal_extension_readout_coupling_no_go_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_minimal_multirecord_extension_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_multi_record_bridge_hardwall_cut_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_current_pr_multirecord_instantiation_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hessian_et_coefficient_normalization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_endpoint_orientation_sign_support_2026_06_22.py"
+  - "git diff --check"
+  - "STATE.yaml parse"
+  - "ASCII scan"
+  - "overclaim marker scan"
+command_results:
+  - "py_compile: PASS"
+  - "minimal_extension_readout_coupling_no_go: TOTAL: PASS=75, FAIL=0"
+  - "cached output generated"
+  - "minimal_multirecord_extension_support: TOTAL: PASS=62, FAIL=0"
+  - "multi_record_bridge_hardwall_cut: TOTAL: PASS=64, FAIL=0"
+  - "current_pr_multirecord_instantiation_no_go: TOTAL: PASS=48, FAIL=0"
+  - "hessian_et_coefficient_normalization_no_go: TOTAL: PASS=49, FAIL=0"
+  - "endpoint_orientation_sign_support: TOTAL: PASS=38, FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "overclaim marker scan: PASS"
+imports_retired:
+  - "Pruned the shortcut that Block121 internal source algebra alone identifies the physical P_R/E-T center-ratio readout."
+open_imports:
+  - "Route-2 minimal-extension readout-coupling theorem fixing mu=1."
+  - "Physical same-source P_R/E-T typing and channel assignment for the Block121 source extension."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Prove or refute the Route-2 minimal-extension readout-coupling theorem
+  fixing mu=1, channel assignment, and same-source P_R/E-T typing.
+stop_condition: none

@@ -1,0 +1,117 @@
+Route-2 four-slot RN envelope boundary no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: exact readout map has four shell/center slots
+PASS: exact readout map supplies reduced P_R rows
+PASS: Block133 names P0, P_h, and coordinate functions
+PASS: Block130 keeps Omega/P0/P_h missing
+PASS: Fisher theorem has reference probability
+PASS: Fisher theorem has normalized RN chart
+PASS: Block121 supplies internal R_conn and kappa
+PASS: source-jet no-go separates finite readout from source data
+
+PART 2: formal four-slot RN envelope
+PASS: E-shell is shell/center typed
+PASS: P0(E-shell) is positive
+PASS: E-center is shell/center typed
+PASS: P0(E-center) is positive
+PASS: T-shell is shell/center typed
+PASS: P0(T-shell) is positive
+PASS: T-center is shell/center typed
+PASS: P0(T-center) is positive
+PASS: uniform P0 is normalized
+PASS: center contrast is zero-mean under uniform P0
+PASS: center contrast is Fisher-unit under uniform P0
+PASS: P_h at h=-0.5 is positive
+PASS: P_h at h=-0.5 is normalized
+PASS: P_h at h=0.0 is positive
+PASS: P_h at h=0.0 is normalized
+PASS: P_h at h=0.5 is positive
+PASS: P_h at h=0.5 is normalized
+PASS: E-shell indicator isolates its slot
+PASS: E-center indicator isolates its slot
+PASS: T-shell indicator isolates its slot
+PASS: T-center indicator isolates its slot
+PASS: four indicators separate all gamma-coordinate slots
+PASS: formal envelope uses no endpoint-value input
+
+PART 3: non-uniqueness of reference and unit line
+PASS: uniform reference is positive
+PASS: uniform reference is normalized
+PASS: center_heavy reference is positive
+PASS: center_heavy reference is normalized
+  uniform norm_sq=1
+  center_heavy norm_sq=8/9
+PASS: references use the same four slot labels
+PASS: uniform reference gives unit contrast
+PASS: center-heavy reference gives 8/9 contrast norm
+PASS: same raw contrast has reference-dependent Fisher norm
+PASS: same raw contrast has reference-dependent centered score
+PASS: score rescaling preserves formal typing while changing norm
+PASS: center-heavy RN path remains positive
+PASS: center-heavy RN path remains normalized
+PASS: formal envelope does not select canonical Route-2 P0
+
+PART 4: current-surface failure model
+  omega_four: True
+PASS: omega_four has boolean status
+  positive_reference: True
+PASS: positive_reference has boolean status
+  rn_source_path: True
+PASS: rn_source_path has boolean status
+  coordinate_functions: True
+PASS: coordinate_functions has boolean status
+  canonical_route2_p0: False
+PASS: canonical_route2_p0 has boolean status
+  physical_center_ratio_covariance: False
+PASS: physical_center_ratio_covariance has boolean status
+  same_source_fisher_unit: False
+PASS: same_source_fisher_unit has boolean status
+  sign_after_kappa: True
+PASS: sign_after_kappa has boolean status
+PASS: formal envelope is present
+PASS: physical bridge is not present
+PASS: missing objects are exactly canonical P0, physical covariance, and same-source unit
+PASS: formal envelope does not fix mu
+PASS: formal envelope does not output c_TE
+PASS: no endpoint value is needed to expose the construction boundary
+
+PART 5: reachability
+PASS: formal labels reach coordinate functionals
+PASS: formal labels reach formal RN envelope
+PASS: formal envelope does not reach canonical P0
+PASS: formal envelope does not reach mu_one
+PASS: Route-2 source-measure primitive reaches mu_one
+PASS: Route-2 source-measure primitive reaches physical c_TE node
+PASS: reachability graph contains no endpoint-value input
+PASS: formal envelope and physical primitive are distinct nodes
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for a formal four-slot RN envelope alone instantiating the physical Route-2 probability surface
+PASS: note contains marker: Formal Envelope
+PASS: note contains marker: Boundary
+PASS: note contains marker: Route-2 shell/center source-measure primitive
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block134 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=91, FAIL=0
+VERDICT: a formal four-slot RN envelope exists, but it does not select the physical Route-2 reference/score/unit Riesz bridge.

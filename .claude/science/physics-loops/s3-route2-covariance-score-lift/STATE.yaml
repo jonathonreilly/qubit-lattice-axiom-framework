@@ -1,0 +1,70 @@
+loop_slug: s3-route2-covariance-score-lift
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 140
+branch: physics-loop/s3-route2-covariance-score-lift-no-go-block140-20260622
+base: physics-loop/s3-route2-identity-source-lift-no-go-block139-20260622
+base_commit: 0f8b4d161
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-covariance-score-lift-no-go-block140-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Formal covariance score to physical center-ratio score
+hard_residual: >-
+  Test whether finite four-slot covariance algebra alone proves the odd
+  shell/center contrast is the physical center-ratio covariance score.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_COVARIANCE_SCORE_LIFT_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_covariance_score_lift_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_covariance_score_lift_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-covariance-score-lift/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_covariance_score_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_covariance_score_lift_no_go_2026_06_22.py | tee outputs/frontier_quark_route2_covariance_score_lift_no_go_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_identity_source_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_tau_source_lift_contract_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_shell_center_reflection_selector_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_fisher_riesz_realization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_isometry_sufficient_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "python3 -c 'import yaml, pathlib; yaml.safe_load(pathlib.Path(\".claude/science/physics-loops/s3-route2-covariance-score-lift/STATE.yaml\").read_text()); print(\"YAML OK\")'"
+  - "git diff --check"
+  - "LC_ALL=C rg -n \"[^ -~\\t\\r\\n]\" <new Block140 files>"
+  - "rg -n -i \"<overclaim markers>\" <new Block140 files>"
+command_results:
+  - "py_compile: pass"
+  - "Block140 runner: TOTAL: PASS=95, FAIL=0"
+  - "Block139 adjacent guard: TOTAL: PASS=102, FAIL=0"
+  - "Block138 adjacent guard: TOTAL: PASS=75, FAIL=0"
+  - "Block136 adjacent guard: TOTAL: PASS=119, FAIL=0"
+  - "Source-jet guard: TOTAL: PASS=63, FAIL=0"
+  - "Fisher-Riesz realization guard: TOTAL: PASS=88, FAIL=0"
+  - "Source-Hessian cumulant selector guard: TOTAL: PASS=49, FAIL=0"
+  - "Source-readout isometry guard: TOTAL: PASS=81, FAIL=0"
+  - "Exact readout guard: PASS=11 FAIL=0"
+  - "YAML parse: pass"
+  - "git diff --check: pass"
+  - "ASCII scan: no hits"
+  - "overclaim scan: no hits"
+imports_retired:
+  - "Prunes finite four-slot covariance algebra alone as a proof of the physical center-ratio score."
+open_imports:
+  - "Route-2 physical covariance score-lift theorem and same-source Fisher-unit Riesz typing."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Run the Block140 runner and adjacent guards, then open the stacked PR if the
+  branch-local checks pass.
+stop_condition: none

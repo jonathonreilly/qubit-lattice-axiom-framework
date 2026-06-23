@@ -1,0 +1,118 @@
+Route-2 covariance score-lift no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block139 leaves physical score-lift theorem missing
+PASS: Block139 separates formal contrast from physical score
+PASS: Block136 requires physical center-ratio covariance readout
+PASS: source-jet no-go names source coordinates
+PASS: source-jet no-go names same-source identification
+PASS: cumulant support supplies D2 log Z algebra
+PASS: source-readout isometry leaves typed isometry open
+PASS: grounding uses no endpoint-value theorem
+
+PART 2: formal covariance algebra
+PASS: uniform P0 is normalized
+PASS: uniform P0 is positive on every slot
+PASS: score is tau-odd on every slot
+PASS: score has zero mean
+PASS: score has unit Fisher norm
+PASS: covariance of score with itself is one
+PASS: center indicator covariance is one half
+PASS: centered center observable has unit response
+PASS: formal P_h sample h=-1/2 has positive base weights
+PASS: formal P_h sample h=0 has positive base weights
+PASS: formal P_h sample h=1/2 has positive base weights
+PASS: formal covariance algebra uses no endpoint-value input
+
+PART 3: observable non-uniqueness
+  center_indicator: covariance=1/2
+PASS: center_indicator covariance has expected value
+PASS: center_indicator covariance is rational
+  shell_indicator: covariance=-1/2
+PASS: shell_indicator covariance has expected value
+PASS: shell_indicator covariance is rational
+  E_channel_indicator: covariance=0
+PASS: E_channel_indicator covariance has expected value
+PASS: E_channel_indicator covariance is rational
+  layer_score: covariance=1
+PASS: layer_score covariance has expected value
+PASS: layer_score covariance is rational
+  negative_layer_score: covariance=-1
+PASS: negative_layer_score covariance has expected value
+PASS: negative_layer_score covariance is rational
+PASS: same formal source path gives multiple covariance responses
+PASS: unit score alone does not select the physical observable
+PASS: zero E-channel covariance shows channel labels alone do not select center ratio
+
+PART 4: current-surface model
+PASS: four_slot_space has boolean status
+PASS: invariant_p0 has boolean status
+PASS: rn_path has boolean status
+PASS: formal_covariance_identity has boolean status
+PASS: physical_center_ratio_observable has boolean status
+PASS: source_coordinates has boolean status
+PASS: same_source_riesz has boolean status
+PASS: unit_isometry has boolean status
+PASS: formal covariance score is present
+PASS: physical covariance score is not present
+PASS: same-source bridge is not present
+PASS: missing fields are exactly physical observable, source coordinates, Riesz, and isometry
+PASS: current covariance algebra alone does not fix mu
+PASS: current covariance algebra alone does not force kappa
+
+PART 5: physical clause failures
+PASS: all physical clauses would complete the bridge
+PASS: complete physical clauses would fix mu
+PASS: complete physical clauses would force kappa
+PASS: physical_center_ratio_observable omission makes bridge fail
+PASS: physical_center_ratio_observable omission is named exactly
+PASS: physical_center_ratio_observable omission blocks mu output
+PASS: source_coordinates omission makes bridge fail
+PASS: source_coordinates omission is named exactly
+PASS: source_coordinates omission blocks mu output
+PASS: same_source_riesz omission makes bridge fail
+PASS: same_source_riesz omission is named exactly
+PASS: same_source_riesz omission blocks mu output
+PASS: unit_isometry omission makes bridge fail
+PASS: unit_isometry omission is named exactly
+PASS: unit_isometry omission blocks mu output
+PASS: all four physical clauses were tested
+
+PART 6: reachability
+PASS: formal path reaches covariance identity
+PASS: formal path reaches unit odd score
+PASS: formal path reaches missing physical observable node
+PASS: formal path alone does not reach mu_one
+PASS: formal path alone does not reach kappa zero
+PASS: adding physical score/Riesz typing reaches kappa zero
+PASS: reachability graph contains no endpoint-value input
+
+PART 7: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for finite four-slot covariance algebra alone proving the physical center-ratio covariance score
+PASS: note contains marker: Formal Covariance Algebra
+PASS: note contains marker: The algebra does not identify which four-slot observable is the physical Route-2 center-ratio covariance readout
+PASS: note contains marker: Route-2 physical covariance score-lift theorem
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block140 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=95, FAIL=0
+VERDICT: four-slot covariance algebra supplies a formal unit score, but the physical center-ratio score/Riesz lift remains missing.

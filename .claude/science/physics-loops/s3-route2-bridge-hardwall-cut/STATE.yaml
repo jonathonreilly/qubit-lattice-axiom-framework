@@ -1,0 +1,72 @@
+loop_slug: s3-route2-bridge-hardwall-cut
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 119
+branch: physics-loop/s3-route2-bridge-hardwall-cut-block119-20260622
+base: physics-loop/s3-route2-singlet-residual-independence-block118-20260622
+base_commit: 8d4aa7df2
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-bridge-hardwall-cut-block119-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Multi-record bridge hard-wall cut
+hard_residual: >-
+  Determine whether the current available support stack closes R_conn ->
+  c_TE=-8/9, or name the exact missing primitive.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_MULTI_RECORD_BRIDGE_HARDWALL_CUT_2026-06-22.md
+  - scripts/frontier_quark_route2_multi_record_bridge_hardwall_cut_2026_06_22.py
+  - outputs/frontier_quark_route2_multi_record_bridge_hardwall_cut_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-bridge-hardwall-cut/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_multi_record_bridge_hardwall_cut_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_multi_record_bridge_hardwall_cut_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_covariant_multirecord_cumulant_sufficient_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_adjoint_invariant_contraction_uniqueness_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_adjoint_singlet_normalization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_singlet_residual_independence_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_endpoint_orientation_sign_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_pcal_moment_realization_no_go_2026_06_22.py"
+  - "git diff --check"
+  - "YAML parse .claude/science/physics-loops/s3-route2-bridge-hardwall-cut/STATE.yaml"
+  - "ASCII scan over Block119 note, runner, output, and loop pack"
+  - "overclaim-marker scan over Block119 note, runner, output, and loop pack"
+command_results:
+  - "py_compile PASS"
+  - "Block119 runner TOTAL: PASS=64, FAIL=0"
+  - "Block115 multi-record guard TOTAL: PASS=50, FAIL=0"
+  - "Block116 invariant contraction guard TOTAL: PASS=55, FAIL=0"
+  - "Block117 adjoint/singlet normalization guard TOTAL: PASS=54, FAIL=0"
+  - "Block118 singlet residual guard TOTAL: PASS=51, FAIL=0"
+  - "endpoint orientation sign guard TOTAL: PASS=38, FAIL=0"
+  - "source-jet lift guard TOTAL: PASS=63, FAIL=0"
+  - "Pcal moment-realization guard TOTAL: PASS=75, FAIL=0"
+  - "git diff --check PASS"
+  - "YAML parse PASS"
+  - "ASCII scan PASS"
+  - "overclaim-marker scan PASS"
+imports_retired:
+  - "Current available support stack alone as a closure of R_conn -> c_TE=-8/9."
+open_imports:
+  - "Same-source covariant adjoint multi-record source/readout family for Route-2 P_R/E-T."
+  - "Physical E/T D_A D_B log Z typing for that family."
+  - "Identity-line pure-disconnected factorization theorem D_0 D_0 Z = (D_0 Z)^2."
+  - "Physical coefficient/source normalization fixing equal singlet and adjoint unit weights."
+  - "Endpoint magnitude typing from connected selector into the Route-2 center-ratio readout."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct the same-source covariant multi-record bridge theorem, or prove
+  the current P_R/E-T surface cannot supply one.
+stop_condition: none

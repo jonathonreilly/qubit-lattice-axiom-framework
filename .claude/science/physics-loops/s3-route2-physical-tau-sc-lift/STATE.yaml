@@ -7,7 +7,7 @@ block: 137
 branch: physics-loop/s3-route2-physical-tau-sc-lift-block137-20260622
 base: physics-loop/s3-route2-shell-center-reflection-selector-block136-20260622
 base_commit: 6322ca415
-science_commit: pending
+science_commit: fb2b5db971e07b46256dda575b51ee946efd1feb
 worktree: /private/tmp/cl3-physics-loop-s3-route2-physical-tau-sc-lift-block137-20260622
 date: 2026-06-22
 mode: campaign
@@ -63,10 +63,10 @@ open_imports:
   - "Prove P0 is invariant under that physical automorphism."
   - "Type the physical center-ratio covariance score as tau_sc-odd and same-source Fisher-unit Riesz."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4724
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4724
 next_exact_action: >-
-  Open the stacked PR, then search for a source-measure sample-space lift of
-  tau_sc or prove that lift absent from current surfaces.
+  Search for a source-measure sample-space lift of tau_sc or prove that lift
+  absent from current surfaces.
 stop_condition: none

@@ -1,0 +1,70 @@
+loop_slug: s3-route2-probability-surface-contract
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 131
+branch: physics-loop/s3-route2-probability-surface-contract-block131-20260622
+base: physics-loop/s3-route2-fisher-riesz-realization-no-go-block130-20260622
+base_commit: aafc3de6f
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-probability-surface-contract-block131-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: Route-2 probability-surface contract for Fisher-Riesz realization
+hard_residual: >-
+  State the exact probability-surface clauses needed to feed Block129's
+  Fisher-Riesz metric pullback theorem.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_PROBABILITY_SURFACE_CONTRACT_SUPPORT_2026-06-22.md
+  - scripts/frontier_quark_route2_probability_surface_contract_support_2026_06_22.py
+  - outputs/frontier_quark_route2_probability_surface_contract_support_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-probability-surface-contract/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_probability_surface_contract_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_probability_surface_contract_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_probability_surface_contract_support_2026_06_22.py > outputs/frontier_quark_route2_probability_surface_contract_support_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_fisher_riesz_realization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_fisher_riesz_isometry_sufficient_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_phi_et_isometry_gap_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_measure_color_ensemble_transfer_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "git diff --check"
+  - "STATE.yaml parse"
+  - "ASCII scan"
+  - "overclaim marker scan"
+command_results:
+  - "py_compile: PASS"
+  - "probability_surface_contract_support: TOTAL: PASS=86, FAIL=0"
+  - "cached output generated"
+  - "fisher_riesz_realization_no_go: TOTAL: PASS=88, FAIL=0"
+  - "fisher_riesz_isometry_sufficient_support: TOTAL: PASS=86, FAIL=0"
+  - "phi_et_isometry_gap_no_go: TOTAL: PASS=93, FAIL=0"
+  - "source_measure_color_ensemble_transfer_no_go: TOTAL: PASS=58, FAIL=0"
+  - "exact_readout_map: PASS=11 FAIL=0"
+  - "source_jet_lift_no_go: TOTAL: PASS=63, FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "overclaim marker scan: PASS"
+imports_retired:
+  - >-
+    Supplies an exact conditional contract for the Route-2 probability surface
+    required after Block130.
+open_imports:
+  - "Construct Omega_R, P0, and P_h satisfying P1-P7 from framework Route-2 primitives."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit the Block131 support packet, push the science branch, and open the
+  stacked PR on Block130.
+stop_condition: none

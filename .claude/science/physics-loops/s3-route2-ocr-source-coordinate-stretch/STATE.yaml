@@ -7,7 +7,7 @@ block: 141
 branch: physics-loop/s3-route2-ocr-source-coordinate-stretch-block141-20260622
 base: physics-loop/s3-route2-covariance-score-lift-no-go-block140-20260622
 base_commit: 46c9dc9d5
-science_commit: pending
+science_commit: 555972498
 worktree: /private/tmp/cl3-physics-loop-s3-route2-ocr-source-coordinate-stretch-block141-20260622
 date: 2026-06-22
 mode: campaign
@@ -68,10 +68,11 @@ imports_retired:
 open_imports:
   - "Route-2 O_CR source-coordinate theorem."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4728
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4728
 next_exact_action: >-
-  Run the Block141 runner and adjacent guards, then open the stacked PR if the
-  branch-local checks pass.
+  Continue from the O_CR theorem wall: prove a narrower obstruction for
+  current finite P_R rows supplying O_CR, or pivot to a different
+  retained-positive Route-2 bridge primitive.
 stop_condition: none

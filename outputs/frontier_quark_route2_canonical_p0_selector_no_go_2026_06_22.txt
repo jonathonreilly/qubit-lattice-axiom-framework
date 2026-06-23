@@ -1,0 +1,112 @@
+Route-2 canonical P0 selector no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: exact readout map has four slot labels
+PASS: Block134 names canonical P0 as missing
+PASS: Block133 requires positive reference
+PASS: Block130 says finite P_R does not provide P0
+PASS: source-coordinate gauge no-go keeps source normalization open
+PASS: Fisher theorem needs a reference probability
+PASS: grounding uses no endpoint-value theorem
+
+PART 2: E/T-symmetric P0 family
+  uniform: {'E-shell': Fraction(1, 4), 'E-center': Fraction(1, 4), 'T-shell': Fraction(1, 4), 'T-center': Fraction(1, 4)}
+PASS: uniform reference is positive
+PASS: uniform reference is normalized
+PASS: uniform reference is E/T invariant
+  shell_heavy: {'E-shell': Fraction(1, 3), 'E-center': Fraction(1, 6), 'T-shell': Fraction(1, 3), 'T-center': Fraction(1, 6)}
+PASS: shell_heavy reference is positive
+PASS: shell_heavy reference is normalized
+PASS: shell_heavy reference is E/T invariant
+  center_heavy: {'E-shell': Fraction(1, 6), 'E-center': Fraction(1, 3), 'T-shell': Fraction(1, 6), 'T-center': Fraction(1, 3)}
+PASS: center_heavy reference is positive
+PASS: center_heavy reference is normalized
+PASS: center_heavy reference is E/T invariant
+PASS: examples give distinct P0 choices
+PASS: shell totals are not fixed by E/T symmetry
+PASS: E/T family has one free shell/center parameter
+
+PART 3: zero-mean raw score selector
+  uniform: raw_mean=0, centered_norm_sq=1
+PASS: uniform centered score is zero mean
+PASS: uniform centered score has positive norm
+  shell_heavy: raw_mean=-1/3, centered_norm_sq=8/9
+PASS: shell_heavy centered score is zero mean
+PASS: shell_heavy centered score has positive norm
+  center_heavy: raw_mean=1/3, centered_norm_sq=8/9
+PASS: center_heavy centered score is zero mean
+PASS: center_heavy centered score has positive norm
+PASS: raw shell/center means differ across valid references
+PASS: centered Fisher norms are not all equal
+PASS: raw zero-mean condition selects uniform among examples
+PASS: raw zero-mean is equivalent to shell/center balance in E/T family
+
+PART 4: added shell/center balance
+PASS: uniform P0(E-shell) is 1/4
+PASS: uniform P0(E-center) is 1/4
+PASS: uniform P0(T-shell) is 1/4
+PASS: uniform P0(T-center) is 1/4
+PASS: uniform P0 is positive
+PASS: uniform P0 is normalized
+PASS: uniform P0 is E/T invariant
+PASS: uniform P0 is shell/center balanced
+PASS: shell/center balance is an extra selector premise
+
+PART 5: current-surface selector model
+  slot_typing: True
+PASS: slot_typing has boolean status
+  positivity_normalization: True
+PASS: positivity_normalization has boolean status
+  et_channel_symmetry: True
+PASS: et_channel_symmetry has boolean status
+  shell_center_balance: False
+PASS: shell_center_balance has boolean status
+  physical_source_measure: False
+PASS: physical_source_measure has boolean status
+  same_source_riesz: False
+PASS: same_source_riesz has boolean status
+PASS: current selector has typed E/T-symmetric family
+PASS: current selector does not give canonical P0
+PASS: current selector does not complete bridge
+PASS: missing objects are shell/center balance, physical measure, and Riesz line
+PASS: current selector does not fix mu
+
+PART 6: reachability
+PASS: current typing reaches E/T-symmetric family
+PASS: current typing reaches free shell/center parameter
+PASS: current typing does not reach canonical P0
+PASS: current typing does not reach mu_one
+PASS: selector primitive reaches canonical P0
+PASS: selector primitive reaches mu_one
+PASS: reachability graph contains no endpoint-value input
+PASS: current family and selector primitive are distinct
+
+PART 7: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for slot typing plus E/T channel symmetry selecting a unique physical four-slot P0
+PASS: note contains marker: E/T-symmetric references
+PASS: note contains marker: Route-2 shell/center source-measure selector
+PASS: note contains marker: same-source Fisher-unit Riesz line
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block135 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=82, FAIL=0
+VERDICT: slot typing plus E/T symmetry leaves a shell/center P0 parameter; a source-measure selector remains missing.

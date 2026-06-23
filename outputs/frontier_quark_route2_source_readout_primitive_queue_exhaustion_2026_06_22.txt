@@ -1,0 +1,113 @@
+Route-2 source/readout primitive queue exhaustion
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block147 is support-only selector atlas
+PASS: Block148 prunes weakened selector clauses
+PASS: Block149 prunes current candidate instantiations
+PASS: Block142 prunes finite P_R rows to O_CR
+PASS: Block101 prunes Pcal moment realization from exact P_R slots
+PASS: Block144 prunes formal J_CR physical typing
+PASS: Block146 prunes source-measure bias from minimal premises
+PASS: Block140 prunes covariance score lift
+PASS: Block100 prunes generic product registry support
+PASS: Block126 prunes source-unit to readout-unit calibration
+PASS: Block130 prunes generic Fisher-Riesz realization
+
+PART 2: queue classification
+  formal_selector_atlas: status=support_only, guard=Block147, missing=physical typed selector theorem
+PASS: formal_selector_atlas has classified status
+PASS: formal_selector_atlas names a guard block
+PASS: formal_selector_atlas names missing primitive
+  weakened_selector_bridge: status=pruned, guard=Block148, missing=full same-source selector bridge theorem
+PASS: weakened_selector_bridge has classified status
+PASS: weakened_selector_bridge names a guard block
+PASS: weakened_selector_bridge names missing primitive
+  current_candidate_instantiation: status=pruned, guard=Block149, missing=physical same-source selector realization theorem
+PASS: current_candidate_instantiation has classified status
+PASS: current_candidate_instantiation names a guard block
+PASS: current_candidate_instantiation names missing primitive
+  finite_pr_rows_to_ocr_or_moments: status=pruned, guard=Block142/101, missing=P_R-to-O_CR and Pcal moment-realization theorems
+PASS: finite_pr_rows_to_ocr_or_moments has classified status
+PASS: finite_pr_rows_to_ocr_or_moments names a guard block
+PASS: finite_pr_rows_to_ocr_or_moments names missing primitive
+  formal_jcr_source_jet: status=pruned, guard=Block144, missing=physical J_CR source typing theorem
+PASS: formal_jcr_source_jet has classified status
+PASS: formal_jcr_source_jet names a guard block
+PASS: formal_jcr_source_jet names missing primitive
+  source_measure_bias: status=pruned, guard=Block145/146, missing=Route-2 source-measure 2:1 bias theorem
+PASS: source_measure_bias has classified status
+PASS: source_measure_bias names a guard block
+PASS: source_measure_bias names missing primitive
+  covariance_score: status=pruned, guard=Block140, missing=physical covariance score-lift theorem
+PASS: covariance_score has classified status
+PASS: covariance_score names a guard block
+PASS: covariance_score names missing primitive
+  generic_pcal_fisher_unit: status=pruned, guard=Block100/126/130, missing=Route-2 objects and unit calibration theorem
+PASS: generic_pcal_fisher_unit has classified status
+PASS: generic_pcal_fisher_unit names a guard block
+PASS: generic_pcal_fisher_unit names missing primitive
+PASS: eight route families classified
+PASS: exactly one support-only route remains
+PASS: all other route families are pruned
+
+PART 3: missing primitive
+  primitive clause: Omega_R
+PASS: primitive clause recorded: Omega_R
+  primitive clause: P_0
+PASS: primitive clause recorded: P_0
+  primitive clause: P_h
+PASS: primitive clause recorded: P_h
+  primitive clause: physical readout variables X,Y
+PASS: primitive clause recorded: physical readout variables X,Y
+  primitive clause: raw moment E[XY]=1
+PASS: primitive clause recorded: raw moment E[XY]=1
+  primitive clause: connected-subtraction typing
+PASS: primitive clause recorded: connected-subtraction typing
+  primitive clause: one-point product E[X]E[Y]=1/9
+PASS: primitive clause recorded: one-point product E[X]E[Y]=1/9
+  primitive clause: source/readout unit calibration mu=1
+PASS: primitive clause recorded: source/readout unit calibration mu=1
+  primitive clause: orientation sign after kappa=0
+PASS: primitive clause recorded: orientation sign after kappa=0
+PASS: primitive has nine clauses
+PASS: primitive includes probability source law
+PASS: primitive includes product selector
+PASS: primitive includes unit calibration
+
+PART 4: reachability
+PASS: current queue reaches missing primitive node
+PASS: current queue does not reach kappa zero
+PASS: current queue does not reach signed bridge
+PASS: new primitive theorem would reach kappa zero
+PASS: new primitive theorem would reach signed bridge
+PASS: current queue graph has no endpoint-value input node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for the current non-duplicative Route-2 source/readout routes
+PASS: note contains marker: Route-2 physical same-source selector realization theorem
+PASS: note contains marker: No current non-duplicative route remains
+PASS: note contains marker: The next useful proof target is exactly the physical source/readout realization theorem
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block150 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative route pruning
+PASS: state records global queue stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=82, FAIL=0
+VERDICT: the current campaign queue is exhausted for non-duplicative source/readout routes; the remaining open primitive is the physical same-source selector realization theorem.

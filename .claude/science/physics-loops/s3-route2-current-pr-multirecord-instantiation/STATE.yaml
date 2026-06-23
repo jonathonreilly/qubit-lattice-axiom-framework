@@ -1,0 +1,72 @@
+loop_slug: s3-route2-current-pr-multirecord-instantiation
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 120
+branch: physics-loop/s3-route2-current-pr-multirecord-instantiation-block120-20260622
+base: physics-loop/s3-route2-bridge-hardwall-cut-block119-20260622
+base_commit: a1672a52b
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-current-pr-multirecord-instantiation-block120-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Current P_R multi-record bridge instantiation
+hard_residual: >-
+  Test whether the existing finite P_R/E-T surface supplies any clause of the
+  Block119 same-source covariant multi-record bridge theorem.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_CURRENT_PR_MULTI_RECORD_INSTANTIATION_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_current_pr_multirecord_instantiation_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_current_pr_multirecord_instantiation_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-current-pr-multirecord-instantiation/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_current_pr_multirecord_instantiation_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_current_pr_multirecord_instantiation_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_multi_record_bridge_hardwall_cut_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hidden_adjoint_carrier_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_finite_endpoint_source_rank_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_pcal_moment_realization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_adjoint_singlet_normalization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_endpoint_orientation_sign_support_2026_06_22.py"
+  - "git diff --check"
+  - "YAML parse .claude/science/physics-loops/s3-route2-current-pr-multirecord-instantiation/STATE.yaml"
+  - "ASCII scan over Block120 note, runner, output, and loop pack"
+  - "overclaim-marker scan over Block120 note, runner, output, and loop pack"
+command_results:
+  - "py_compile PASS"
+  - "Block120 runner TOTAL: PASS=48, FAIL=0"
+  - "Block119 hard-wall cut guard TOTAL: PASS=64, FAIL=0"
+  - "hidden adjoint carrier guard TOTAL: PASS=60, FAIL=0"
+  - "finite endpoint source-rank guard TOTAL: PASS=46, FAIL=0"
+  - "source-jet lift guard TOTAL: PASS=63, FAIL=0"
+  - "Pcal moment-realization guard TOTAL: PASS=75, FAIL=0"
+  - "adjoint/singlet normalization guard TOTAL: PASS=54, FAIL=0"
+  - "endpoint orientation sign guard TOTAL: PASS=38, FAIL=0"
+  - "git diff --check PASS"
+  - "YAML parse PASS"
+  - "ASCII scan PASS"
+  - "overclaim-marker scan PASS"
+imports_retired:
+  - "Existing finite P_R/E-T surface as an instantiation of the Block119 bridge theorem."
+open_imports:
+  - "New same-source covariant adjoint multi-record source/readout family for Route-2 P_R/E-T."
+  - "Physical E/T D_A D_B log Z typing for that family."
+  - "Identity-line pure-disconnected factorization theorem D_0 D_0 Z = (D_0 Z)^2."
+  - "Physical coefficient/source normalization fixing equal singlet and adjoint unit weights."
+  - "Endpoint magnitude typing from connected selector into the Route-2 center-ratio readout."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Add a new same-source covariant multi-record source/readout theorem, or pivot
+  to a different non-Route-2 retained-positive opportunity.
+stop_condition: none

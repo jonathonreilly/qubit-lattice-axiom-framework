@@ -64,7 +64,12 @@ PASS banned overclaim marker scan
 ## PR
 
 ```text
-PENDING
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4701
+number: 4701
+title: [physics-loop] s3-route2 color matrix lift block114 conditional-support
+base: physics-loop/s3-route2-normalized-color-source-support-block113-20260622
+head: physics-loop/s3-route2-color-matrix-lift-sufficient-block114-20260622
+science_commit: f31b166e3
 ```
 
 ## Next Exact Action

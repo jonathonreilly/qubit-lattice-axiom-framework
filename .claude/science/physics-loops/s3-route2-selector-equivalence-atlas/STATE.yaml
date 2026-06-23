@@ -7,7 +7,7 @@ block: 147
 branch: physics-loop/s3-route2-selector-equivalence-atlas-block147-20260622
 base: physics-loop/s3-route2-source-measure-bias-stretch-block146-20260622
 base_commit: 2e683f9cf
-science_commit: pending
+science_commit: 58b4798a0
 worktree: /private/tmp/cl3-physics-loop-s3-route2-selector-equivalence-atlas-block147-20260622
 date: 2026-06-22
 mode: campaign
@@ -68,10 +68,11 @@ open_imports:
   - "Physical O_CR/J_CR construction or equivalent covariance-score lift."
   - "Same-source Fisher-unit Riesz identification where needed."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4734
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4734
 next_exact_action: >-
-  Commit and push the Block147 branch, then open the stacked PR without
-  checking conflict or mergeability state.
+  Continue the campaign with the next Route-2 physical same-source selector
+  target; do not refresh this PR to main and do not check conflict or
+  mergeability state.
 stop_condition: none

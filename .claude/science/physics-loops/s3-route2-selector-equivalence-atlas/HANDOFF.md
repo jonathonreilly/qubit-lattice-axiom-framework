@@ -54,12 +54,14 @@ overclaim scan: clean
 ## PR
 
 ```text
-pending
+PR #4734
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4734
+base: physics-loop/s3-route2-source-measure-bias-stretch-block146-20260622
+head: physics-loop/s3-route2-selector-equivalence-atlas-block147-20260622
 ```
 
 ## Next Exact Action
 
-Commit and push this branch, then open the stacked PR without checking
-conflict or mergeability state. If the campaign continues, attack the physical
-same-source selector theorem that would realize one atlas selector on the
-Route-2 P_R/E-T surface.
+Continue the campaign by attacking the physical same-source selector theorem
+that would realize one atlas selector on the Route-2 P_R/E-T surface. Do not
+refresh this PR to main and do not check conflict or mergeability state.

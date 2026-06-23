@@ -1,0 +1,62 @@
+loop_slug: s3-route2-shell-center-probability-support
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 133
+branch: physics-loop/s3-route2-shell-center-probability-support-block133-20260622
+base: physics-loop/s3-route2-two-outcome-probability-no-go-block132-20260622
+base_commit: 97d6b2ef9
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-shell-center-probability-support-block133-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: Four-slot shell/center probability surface
+hard_residual: >-
+  State the exact four-slot shell/center probability theorem target surviving
+  Block132.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SHELL_CENTER_PROBABILITY_SURFACE_SUPPORT_2026-06-22.md
+  - scripts/frontier_quark_route2_shell_center_probability_surface_support_2026_06_22.py
+  - outputs/frontier_quark_route2_shell_center_probability_surface_support_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-shell-center-probability-support/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_shell_center_probability_surface_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_shell_center_probability_surface_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_two_outcome_probability_surface_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_probability_surface_contract_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "python3 - <<'PY' ... yaml.safe_load(STATE.yaml) ... PY"
+  - "git diff --check"
+  - "LC_ALL=C rg -n '[^\\\\x00-\\\\x7F]' <Block133 files>"
+  - "rg -n '<overclaim markers>' <Block133 files>"
+command_results:
+  - "py_compile: pass"
+  - "Block133 runner: TOTAL: PASS=85, FAIL=0"
+  - "Block132 adjacent guard: TOTAL: PASS=75, FAIL=0"
+  - "Block131 adjacent guard: TOTAL: PASS=86, FAIL=0"
+  - "Exact readout guard: PASS=11 FAIL=0"
+  - "Source-jet adjacent guard: TOTAL: PASS=63, FAIL=0"
+  - "STATE.yaml parse: pass"
+  - "git diff --check: pass"
+  - "ASCII scan: pass"
+  - "Overclaim marker scan: pass"
+imports_retired:
+  - "Supplies a conditional four-slot theorem target after the two-outcome no-go."
+open_imports:
+  - "Construct P0, P_h, and coordinate functions from current Route-2 primitives."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Open the stacked PR, then attack the construction of P0, P_h, and RN
+  coordinate functions for the four-slot Route-2 probability surface.
+stop_condition: none

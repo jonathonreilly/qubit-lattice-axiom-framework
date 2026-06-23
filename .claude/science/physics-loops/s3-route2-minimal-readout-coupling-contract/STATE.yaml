@@ -7,7 +7,7 @@ block: 123
 branch: physics-loop/s3-route2-minimal-readout-coupling-contract-block123-20260622
 base: physics-loop/s3-route2-minimal-extension-readout-coupling-block122-20260622
 base_commit: d6464b890
-science_commit: PENDING
+science_commit: eed587280
 worktree: /private/tmp/cl3-physics-loop-s3-route2-minimal-readout-coupling-contract-block123-20260622
 date: 2026-06-22
 mode: campaign
@@ -58,9 +58,9 @@ open_imports:
   - "Proof of C1-C5 on the current Route-2 surface."
   - "Same-source P_R/E-T typing and mu=1 normalization."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4710
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4710
 next_exact_action: >-
   Prove or refute C1-C5 on the current Route-2 surface, starting with
   same-source P_R/E-T typing or mu=1 normalization.

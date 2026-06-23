@@ -81,5 +81,10 @@ PASS banned overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+number: 4699
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4699
+title: [physics-loop] s3-route2 connected hessian stretch block112 no-go
+base: physics-loop/s3-route2-source-gauge-normalization-block111-20260622
+head: physics-loop/s3-route2-connected-hessian-stretch-block112-20260622
+science_commit: e674c1d1d
 ```

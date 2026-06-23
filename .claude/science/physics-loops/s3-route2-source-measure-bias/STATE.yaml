@@ -1,0 +1,67 @@
+loop_slug: s3-route2-source-measure-bias
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 145
+branch: physics-loop/s3-route2-source-measure-bias-no-go-block145-20260622
+base: physics-loop/s3-route2-physical-jcr-typing-no-go-block144-20260622
+base_commit: df88b772b
+science_commit: pending_until_commit
+worktree: /private/tmp/cl3-physics-loop-s3-route2-source-measure-bias-no-go-block145-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: ordinary binary source-measure controls to Route-2 2:1 bias
+hard_residual: >-
+  Test whether normalization, positivity, RN absolute continuity, and signed
+  quotient data force the binary source measure bias needed for kappa=0.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SOURCE_MEASURE_BIAS_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_source_measure_bias_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_source_measure_bias_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-source-measure-bias/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_source_measure_bias_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_measure_bias_no_go_2026_06_22.py | tee outputs/frontier_quark_route2_source_measure_bias_no_go_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_physical_jcr_typing_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_signed_quotient_classification_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_binary_product_normal_form_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_binary_same_record_transfer_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py"
+  - "python3 -c \"import pathlib, yaml; yaml.safe_load(pathlib.Path('.claude/science/physics-loops/s3-route2-source-measure-bias/STATE.yaml').read_text()); print('STATE.yaml parse OK')\""
+  - "git diff --check"
+  - "perl non-ascii scan over Block145 packet"
+  - "rg overclaim marker scan over Block145 packet"
+command_results:
+  - "py_compile: pass"
+  - "Block145 runner: TOTAL PASS=87 FAIL=0"
+  - "Block144 guard: TOTAL PASS=95 FAIL=0"
+  - "signed quotient guard: TOTAL PASS=67 FAIL=0"
+  - "binary normal form guard: TOTAL PASS=72 FAIL=0"
+  - "binary same-record guard: TOTAL PASS=60 FAIL=0"
+  - "source-Hessian cumulant guard: TOTAL PASS=49 FAIL=0"
+  - "STATE.yaml parse OK"
+  - "git diff --check: pass"
+  - "ASCII scan: no hits"
+  - "overclaim marker scan: no hits"
+imports_retired:
+  - "Prunes ordinary binary source-measure controls as a proof of the Route-2 2:1 bias."
+open_imports:
+  - "Route-2 source-measure 2:1 bias theorem."
+  - "Physical J_CR typing theorem."
+  - "Same-source Riesz/unit-isometry theorem."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending_create
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit the Block145 no-go packet, push the branch, and open the stacked PR;
+  then pivot to the Route-2 source-measure bias theorem or same-source
+  Riesz/unit-isometry if campaign runtime remains.
+stop_condition: none

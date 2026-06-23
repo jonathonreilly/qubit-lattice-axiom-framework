@@ -52,10 +52,13 @@ overclaim marker scan: no hits
 ## PR
 
 ```text
-pending_create
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4732
+head: physics-loop/s3-route2-source-measure-bias-no-go-block145-20260622
+base: physics-loop/s3-route2-physical-jcr-typing-no-go-block144-20260622
+science commit: b361c80f6
 ```
 
 ## Next Exact Action
 
-Open the stacked Block145 PR, then pivot to the Route-2 source-measure bias
-theorem or same-source Riesz/unit-isometry if campaign runtime remains.
+Pivot to the Route-2 source-measure bias theorem or same-source
+Riesz/unit-isometry if campaign runtime remains.

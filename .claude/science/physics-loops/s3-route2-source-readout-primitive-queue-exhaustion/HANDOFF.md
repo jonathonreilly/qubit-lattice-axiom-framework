@@ -58,12 +58,15 @@ overclaim scan: pass across 17 files
 ## PR
 
 ```text
-pending
+PR: #4737
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4737
+Head: physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
+Base: physics-loop/s3-route2-physical-selector-instantiation-fanout-block149-20260622
+Science commit: 247564aa48d2b58292073808e77f6ce8b3c795e7
 ```
 
 ## Next Exact Action
 
-Commit the Block150 packet, push the science branch, open the stacked PR, and
-patch PR identity into this loop pack. If the branch lands, do not reopen
-pruned source/readout routes unless a new physical source/readout primitive
-appears.
+Hand PR #4737 to the review/cherry-pick path. If the branch lands, do not
+reopen pruned source/readout routes unless a new physical source/readout
+primitive appears.

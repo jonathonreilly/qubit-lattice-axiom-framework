@@ -1,0 +1,93 @@
+Route-2 P_R row to O_CR functor no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: exact readout gives P_R row form
+PASS: exact readout gives restricted carrier basis
+PASS: Block141 names carrier observable frame failure
+PASS: Block141 names O_CR source-coordinate theorem
+PASS: Block140 says physical observable not identified
+PASS: source-jet no-go keeps source coordinates missing
+PASS: grounding uses no endpoint-value theorem
+
+PART 2: scalarization non-uniqueness
+  E_channel_indicator: covariance=0
+PASS: E_channel_indicator covariance matches expected value
+PASS: E_channel_indicator covariance is rational
+  T_channel_indicator: covariance=0
+PASS: T_channel_indicator covariance matches expected value
+PASS: T_channel_indicator covariance is rational
+  center_indicator: covariance=1/2
+PASS: center_indicator covariance matches expected value
+PASS: center_indicator covariance is rational
+  E_center_indicator: covariance=1/4
+PASS: E_center_indicator covariance matches expected value
+PASS: E_center_indicator covariance is rational
+  layer_score: covariance=1
+PASS: layer_score covariance matches expected value
+PASS: layer_score covariance is rational
+PASS: same row labels admit multiple scalar covariance responses
+PASS: E/T row indicators are shell-center blind
+PASS: center score and center indicator are distinct choices
+
+PART 3: current-surface model
+PASS: finite_pr_rows has boolean status
+PASS: row_labels has boolean status
+PASS: scalar_observable_choice has boolean status
+PASS: source_coordinate has boolean status
+PASS: rn_path has boolean status
+PASS: same_source_riesz has boolean status
+PASS: unit_isometry has boolean status
+PASS: current surface has finite P_R row surface
+PASS: current surface does not have O_CR functor
+PASS: current surface does not complete bridge
+PASS: missing fields are scalar observable, source coordinate, RN path, Riesz, and isometry
+
+PART 4: clause failures
+PASS: all clauses complete the functor bridge
+PASS: scalar_observable_choice omission makes bridge fail
+PASS: scalar_observable_choice omission is named exactly
+PASS: source_coordinate omission makes bridge fail
+PASS: source_coordinate omission is named exactly
+PASS: rn_path omission makes bridge fail
+PASS: rn_path omission is named exactly
+PASS: same_source_riesz omission makes bridge fail
+PASS: same_source_riesz omission is named exactly
+PASS: unit_isometry omission makes bridge fail
+PASS: unit_isometry omission is named exactly
+PASS: all five physical functor clauses were tested
+
+PART 5: reachability
+PASS: finite rows reach many scalarizations
+PASS: finite rows reach missing Phi_OCR node
+PASS: finite rows alone do not reach O_CR source coordinate
+PASS: adding Phi_OCR theorem reaches kappa zero
+PASS: reachability graph contains no endpoint-value input
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for current finite P_R rows alone constructing the physical O_CR observable
+PASS: note contains marker: Non-Uniqueness
+PASS: note contains marker: Route-2 P_R-to-O_CR functor theorem
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block142 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=72, FAIL=0
+VERDICT: finite P_R rows do not canonically construct O_CR; Phi_OCR remains missing.

@@ -7,7 +7,7 @@ block: 118
 branch: physics-loop/s3-route2-singlet-residual-independence-block118-20260622
 base: physics-loop/s3-route2-adjoint-singlet-normalization-block117-20260622
 base_commit: a405181dc
-science_commit: PENDING
+science_commit: 75158747c
 worktree: /private/tmp/cl3-physics-loop-s3-route2-singlet-residual-independence-block118-20260622
 date: 2026-06-22
 mode: campaign
@@ -60,9 +60,9 @@ open_imports:
   - "Identity-line pure-disconnected factorization theorem D_0 D_0 Z = (D_0 Z)^2."
   - "Physical coefficient/source normalization fixing equal singlet and adjoint unit weights."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: opened
+pr_number: 4705
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4705
 next_exact_action: >-
   Construct the Route-2 identity-line pure-disconnected factorization theorem
   D_0 D_0 Z = (D_0 Z)^2, or prove the current P_R/E-T surface cannot supply it.

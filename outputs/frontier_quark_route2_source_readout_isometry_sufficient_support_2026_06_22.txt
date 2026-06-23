@@ -1,0 +1,111 @@
+Route-2 source-readout isometry sufficient support
+TRACE: upstream_support
+PART 1: grounding
+PASS: Block121 supplies internal R_conn=8/9
+PASS: Block121 records kappa=0
+PASS: Block123 C4 is mu_one
+PASS: Block123 contract has C1-C5
+PASS: Block125 names Phi_ET as missing typed functor
+PASS: Block126 leaves a free mu family
+PASS: coefficient normalization remains a separate gate
+PASS: sign support leaves magnitude open
+
+PART 2: sufficient isometry contract
+  phi_et: True
+PASS: phi_et has boolean status
+  source_norm_fixed: True
+PASS: source_norm_fixed has boolean status
+  readout_norm_fixed: True
+PASS: readout_norm_fixed has boolean status
+  unit_preserving: True
+PASS: unit_preserving has boolean status
+  sign_after_kappa: True
+PASS: sign_after_kappa has boolean status
+  complete=True, missing=(), mu=1, c_TE=-8/9
+PASS: I1-I4 form an isometric calibration
+PASS: complete contract has no missing clauses
+PASS: isometric calibration fixes mu=1
+PASS: complete contract yields c_TE=-8/9
+PASS: internal source fraction remains 8/9
+PASS: contract consumes no endpoint value input
+
+PART 3: free mu when isometry clauses are missing
+  missing_source_norm: missing=('source_norm_fixed',), outputs=(Fraction(-4, 9), Fraction(-8, 9), Fraction(-4, 3))
+PASS: missing_source_norm is not a complete isometric calibration
+PASS: missing_source_norm does not fix mu
+PASS: missing_source_norm leaves a three-member rational family
+PASS: missing_source_norm outputs have different magnitudes
+  missing_readout_norm: missing=('readout_norm_fixed',), outputs=(Fraction(-4, 9), Fraction(-8, 9), Fraction(-4, 3))
+PASS: missing_readout_norm is not a complete isometric calibration
+PASS: missing_readout_norm does not fix mu
+PASS: missing_readout_norm leaves a three-member rational family
+PASS: missing_readout_norm outputs have different magnitudes
+  missing_unit_preserving: missing=('unit_preserving',), outputs=(Fraction(-4, 9), Fraction(-8, 9), Fraction(-4, 3))
+PASS: missing_unit_preserving is not a complete isometric calibration
+PASS: missing_unit_preserving does not fix mu
+PASS: missing_unit_preserving leaves a three-member rational family
+PASS: missing_unit_preserving outputs have different magnitudes
+PASS: mu=1 is one admissible rational member before isometry
+PASS: non-unit mu choices remain endpoint-free before isometry
+PASS: free family does not alter internal R_conn
+
+PART 4: single-clause failure models
+  missing phi_et: complete=False, mu=None, c_TE=None
+PASS: phi_et omission makes contract incomplete
+PASS: phi_et omission is named exactly
+PASS: phi_et omission blocks c_TE output
+  missing source_norm_fixed: complete=False, mu=None, c_TE=None
+PASS: source_norm_fixed omission makes contract incomplete
+PASS: source_norm_fixed omission is named exactly
+PASS: source_norm_fixed omission blocks c_TE output
+  missing readout_norm_fixed: complete=False, mu=None, c_TE=None
+PASS: readout_norm_fixed omission makes contract incomplete
+PASS: readout_norm_fixed omission is named exactly
+PASS: readout_norm_fixed omission blocks c_TE output
+  missing unit_preserving: complete=False, mu=None, c_TE=None
+PASS: unit_preserving omission makes contract incomplete
+PASS: unit_preserving omission is named exactly
+PASS: unit_preserving omission blocks c_TE output
+  missing sign_after_kappa: complete=False, mu=1, c_TE=None
+PASS: sign_after_kappa omission makes contract incomplete
+PASS: sign_after_kappa omission is named exactly
+PASS: sign_after_kappa omission blocks c_TE output
+PASS: all five isometry clauses were tested
+
+PART 5: reachability
+PASS: current path reaches open C4 node
+PASS: current path does not reach physical c_TE
+PASS: isometry theorem reaches mu_one
+PASS: isometry theorem reaches physical c_TE
+PASS: isometry path satisfies Block123 C4
+PASS: reachability graph contains no endpoint-value input
+PASS: reachability graph names Phi_ET explicitly
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: exact-support for a conditional source-readout isometry theorem; not current-surface closure
+PASS: note contains marker: Route-2 Source-Readout Isometry Sufficient Theorem
+PASS: note contains marker: mu = 1
+PASS: note contains marker: c_TE = sigma * mu * R_* = (-1) * 1 * (8/9) = -8/9
+PASS: note contains marker: The theorem is sufficient only after the typed isometry is proven
+PASS: handoff contains marker: Block127 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=81, FAIL=0
+VERDICT: A typed unit-preserving Phi_ET isometry would satisfy Block123 C4 by fixing mu=1; the current surface still has to prove that isometry.

@@ -64,7 +64,13 @@ audit companion runners: not run
 ## PR
 
 ```text
-pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4716
+Number: 4716
+Title: [physics-loop] s3-route2 fisher-riesz isometry block129 exact-support
+State: OPEN
+Base: physics-loop/s3-route2-phi-et-isometry-gap-block128-20260622
+Head: physics-loop/s3-route2-fisher-riesz-isometry-support-block129-20260622
+Science commit: 0887dddb8
 ```
 
 ## Next Exact Action

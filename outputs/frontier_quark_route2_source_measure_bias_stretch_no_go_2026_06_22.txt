@@ -1,0 +1,101 @@
+Route-2 source-measure bias stretch no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block145 names source-measure 2:1 bias theorem
+PASS: Block145 says ordinary controls leave q free
+PASS: Block144 leaves physical J_CR theorem missing
+PASS: signed quotient note says quotient alone lacks measure
+PASS: grounding uses no endpoint-value theorem
+
+PART 2: A_min and forbidden imports
+PASS: A_min allows binary_measure_q
+PASS: A_min allows block145_boundary
+PASS: A_min allows connected_cumulant_identity
+PASS: A_min allows four_labels
+PASS: A_min allows normalization_positivity
+PASS: A_min allows signed_quotient
+PASS: forbidden import absent: assert_physical_q_2_3
+PASS: forbidden import absent: endpoint_triple
+PASS: forbidden import absent: endpoint_value
+PASS: forbidden import absent: fitted_scalar_calibration
+PASS: forbidden import absent: observed_comparator
+PASS: A_min has six allowed premise classes
+PASS: forbidden import list has five classes
+
+PART 3: fan-out frames
+  label_count: missing=('selects_bias',)
+PASS: label_count avoids endpoint import
+PASS: label_count does not select the 2:1 bias
+PASS: label_count missing list is exact
+  signed_quotient: missing=('supplies_measure', 'selects_bias')
+PASS: signed_quotient avoids endpoint import
+PASS: signed_quotient does not select the 2:1 bias
+PASS: signed_quotient missing list is exact
+  rn_positivity: missing=('supplies_signs', 'selects_bias')
+PASS: rn_positivity avoids endpoint import
+PASS: rn_positivity does not select the 2:1 bias
+PASS: rn_positivity missing list is exact
+  neutral_measure: missing=('supplies_signs', 'selects_bias')
+PASS: neutral_measure avoids endpoint import
+PASS: neutral_measure does not select the 2:1 bias
+PASS: neutral_measure missing list is exact
+  sign_reversal: missing=('supplies_measure', 'selects_bias')
+PASS: sign_reversal avoids endpoint import
+PASS: sign_reversal does not select the 2:1 bias
+PASS: sign_reversal missing list is exact
+PASS: five independent frames were tested
+PASS: no frame supplies the full theorem
+
+PART 4: exact control checks
+PASS: uniform four-label means exclude one third
+PASS: uniform four-label means exclude negative one third
+  q=1/2, kappa=1
+PASS: q=1/2 kappa is rational
+  q=1/3, kappa=0
+PASS: q=1/3 kappa is rational
+  q=2/3, kappa=0
+PASS: q=2/3 kappa is rational
+  q=3/4, kappa=-5/4
+PASS: q=3/4 kappa is rational
+PASS: neutral q=1/2 gives kappa one
+PASS: 2:1 q=2/3 gives kappa zero
+PASS: 1:2 q=1/3 gives kappa zero
+PASS: q=3/4 misses kappa zero
+
+PART 5: reachability
+PASS: A_min reaches a family of q values
+PASS: A_min reaches missing bias theorem
+PASS: A_min alone does not reach kappa zero
+PASS: adding bias theorem reaches kappa zero
+PASS: reachability graph contains no endpoint-value input
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for deriving the Route-2 2:1 source-measure bias from the minimal current premises
+PASS: note contains marker: A_min
+PASS: note contains marker: Fan-Out Attempt
+PASS: note contains marker: Synthesis Wall
+PASS: note contains marker: Route-2 source-measure 2:1 bias theorem
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block146 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=76, FAIL=0
+VERDICT: all first-principles frames hit the missing Route-2 source-measure 2:1 bias theorem.

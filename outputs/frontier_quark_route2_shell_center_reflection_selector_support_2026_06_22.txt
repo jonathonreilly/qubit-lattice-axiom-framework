@@ -1,0 +1,151 @@
+Route-2 shell/center reflection selector support
+TRACE: upstream_support
+PART 1: grounding
+PASS: Block135 leaves shell/center source-measure selector missing
+PASS: Block134 leaves canonical P0 missing
+PASS: Block133 names four-slot P0/P_h target
+PASS: exact readout map supplies four shell/center slots
+PASS: Fisher theorem supplies finite RN chart once score is supplied
+PASS: Block121 supplies internal connected source fraction
+PASS: grounding uses no endpoint-value theorem
+
+PART 2: shell/center reflection structure
+  tau(E-shell)=E-center
+PASS: tau maps E-shell to a slot
+PASS: tau preserves E-shell channel
+PASS: tau swaps E-shell layer
+PASS: tau is involutive on E-shell
+PASS: score is tau-odd on E-shell
+  tau(E-center)=E-shell
+PASS: tau maps E-center to a slot
+PASS: tau preserves E-center channel
+PASS: tau swaps E-center layer
+PASS: tau is involutive on E-center
+PASS: score is tau-odd on E-center
+  tau(T-shell)=T-center
+PASS: tau maps T-shell to a slot
+PASS: tau preserves T-shell channel
+PASS: tau swaps T-shell layer
+PASS: tau is involutive on T-shell
+PASS: score is tau-odd on T-shell
+  tau(T-center)=T-shell
+PASS: tau maps T-center to a slot
+PASS: tau preserves T-center channel
+PASS: tau swaps T-center layer
+PASS: tau is involutive on T-center
+PASS: score is tau-odd on T-center
+PASS: tau has no fixed slots
+PASS: tau preserves E/T channel partition
+
+PART 3: invariant reference selection
+PASS: selected P0(E-shell) is 1/4
+PASS: selected P0(E-center) is 1/4
+PASS: selected P0(T-shell) is 1/4
+PASS: selected P0(T-center) is 1/4
+PASS: selected P0 is positive
+PASS: selected P0 is normalized
+PASS: selected P0 is tau-invariant
+PASS: selected P0 is E/T invariant
+PASS: tau plus E/T invariance selects one common weight
+PASS: common weight is forced by normalization
+
+PART 4: unit score and RN path
+PASS: tau-odd score has zero mean
+PASS: tau-odd score has unit Fisher norm
+PASS: score separates shell from center
+PASS: P_h at h=-0.5 is positive
+PASS: P_h at h=-0.5 is normalized
+PASS: P_h at h=0.0 is positive
+PASS: P_h at h=0.0 is normalized
+PASS: P_h at h=0.5 is positive
+PASS: P_h at h=0.5 is normalized
+PASS: unit score construction uses no endpoint-value input
+
+PART 5: clause failure models
+PASS: full conditional contract selects canonical P0
+PASS: full conditional contract supplies unit score
+PASS: full conditional contract reaches bridge
+PASS: full conditional contract fixes mu
+PASS: full conditional contract yields signed endpoint after kappa
+  missing omega_four: bridge=False, c_TE=None
+PASS: omega_four omission makes complete contract fail
+PASS: omega_four omission is named exactly
+PASS: omega_four omission blocks c_TE output
+  missing tau_involution: bridge=False, c_TE=None
+PASS: tau_involution omission makes complete contract fail
+PASS: tau_involution omission is named exactly
+PASS: tau_involution omission blocks c_TE output
+  missing p0_tau_invariant: bridge=False, c_TE=None
+PASS: p0_tau_invariant omission makes complete contract fail
+PASS: p0_tau_invariant omission is named exactly
+PASS: p0_tau_invariant omission blocks c_TE output
+  missing et_channel_symmetry: bridge=False, c_TE=None
+PASS: et_channel_symmetry omission makes complete contract fail
+PASS: et_channel_symmetry omission is named exactly
+PASS: et_channel_symmetry omission blocks c_TE output
+  missing score_tau_odd: bridge=False, c_TE=None
+PASS: score_tau_odd omission makes complete contract fail
+PASS: score_tau_odd omission is named exactly
+PASS: score_tau_odd omission blocks c_TE output
+  missing physical_score_typing: bridge=False, c_TE=None
+PASS: physical_score_typing omission makes complete contract fail
+PASS: physical_score_typing omission is named exactly
+PASS: physical_score_typing omission blocks c_TE output
+  missing same_source_riesz: bridge=False, c_TE=None
+PASS: same_source_riesz omission makes complete contract fail
+PASS: same_source_riesz omission is named exactly
+PASS: same_source_riesz omission blocks c_TE output
+  missing sign_after_kappa: bridge=True, c_TE=None
+PASS: sign_after_kappa omission makes complete contract fail
+PASS: sign_after_kappa omission is named exactly
+PASS: sign_after_kappa omission blocks c_TE output
+PASS: all eight reflection selector clauses were tested
+
+PART 6: current-surface boundary
+PASS: current surface has four slots and E/T symmetry candidate
+PASS: current surface has not supplied tau as source symmetry
+PASS: current surface has not supplied tau-invariant P0
+PASS: current surface has not typed physical odd score
+PASS: current surface has not supplied same-source Riesz line
+PASS: current surface does not complete reflection bridge
+PASS: current surface missing list names physical primitive
+
+PART 7: reachability
+PASS: reflection theorem reaches uniform P0
+PASS: reflection theorem reaches unit score
+PASS: reflection theorem reaches mu_one
+PASS: reflection theorem reaches physical c_TE node
+PASS: current typing reaches free parameter
+PASS: current typing does not reach uniform P0
+PASS: reachability graph contains no endpoint-value input
+PASS: support theorem and current typing are distinct nodes
+
+PART 8: document boundary
+PASS: note contains marker: Actual current-surface status: exact-support for a conditional shell/center reflection selector; not current-surface closure
+PASS: note contains marker: Conditional Selector Theorem
+PASS: note contains marker: Route-2 shell/center reflection source theorem
+PASS: note contains marker: same Fisher-unit Riesz line as the Block121 connected source scalar
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block136 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=119, FAIL=0
+VERDICT: a shell/center reflection source theorem would select uniform P0 and a unit center score; current surface still has to supply the physical reflection and same-source typing.

@@ -7,7 +7,7 @@ block: 149
 branch: physics-loop/s3-route2-physical-selector-instantiation-fanout-block149-20260622
 base: physics-loop/s3-route2-same-source-selector-bridge-block148-20260622
 base_commit: df1b301dc
-science_commit: pending
+science_commit: fd41f232a
 worktree: /private/tmp/cl3-physics-loop-s3-route2-physical-selector-instantiation-fanout-block149-20260622
 date: 2026-06-22
 mode: campaign
@@ -65,10 +65,12 @@ imports_retired:
 open_imports:
   - "Route-2 physical same-source selector realization theorem with Omega_R, P_0, P_h, X,Y, raw/product registry, connected typing, mu=1, and downstream sign."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4736
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4736
 next_exact_action: >-
-  Commit and push the Block149 branch and open the stacked PR without checking
-  conflict or mergeability state.
+  Refresh the opportunity queue and decide whether any non-duplicative
+  physical source/readout instantiation target still passes the dramatic-step
+  gate; do not refresh this PR to main and do not check conflict or
+  mergeability state.
 stop_condition: none

@@ -53,11 +53,14 @@ overclaim scan: clean
 ## PR
 
 ```text
-pending
+PR #4736
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4736
+base: physics-loop/s3-route2-same-source-selector-bridge-block148-20260622
+head: physics-loop/s3-route2-physical-selector-instantiation-fanout-block149-20260622
 ```
 
 ## Next Exact Action
 
-Commit, push, and open the stacked PR. If campaign time remains, refresh the
-opportunity queue and decide whether any non-duplicative physical source/readout
-instantiation target still passes the dramatic-step gate.
+Refresh the opportunity queue and decide whether any non-duplicative physical
+source/readout instantiation target still passes the dramatic-step gate. Do not
+refresh this PR to main and do not check conflict or mergeability state.

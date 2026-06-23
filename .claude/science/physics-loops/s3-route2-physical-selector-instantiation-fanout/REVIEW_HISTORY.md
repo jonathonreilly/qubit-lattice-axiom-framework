@@ -13,3 +13,12 @@ Hygiene: py_compile PASS; YAML, git diff --check, ASCII, and overclaim scans cle
 No review-loop worker was run.
 
 No audit worker was run and no audit verdict was applied.
+
+PR identity check:
+
+```text
+PR #4736 OPEN
+base: physics-loop/s3-route2-same-source-selector-bridge-block148-20260622
+head: physics-loop/s3-route2-physical-selector-instantiation-fanout-block149-20260622
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4736
+```

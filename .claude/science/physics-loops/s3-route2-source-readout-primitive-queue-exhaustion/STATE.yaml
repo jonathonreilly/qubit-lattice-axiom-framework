@@ -1,0 +1,56 @@
+loop_slug: s3-route2-source-readout-primitive-queue-exhaustion
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 150
+branch: physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
+base: physics-loop/s3-route2-physical-selector-instantiation-fanout-block149-20260622
+base_commit: 2520b105f
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: source/readout primitive queue exhaustion
+hard_residual: >-
+  Determine whether any non-duplicative current-surface source/readout route
+  remains after Blocks147-149.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SOURCE_READOUT_PRIMITIVE_QUEUE_EXHAUSTION_2026-06-22.md
+  - scripts/frontier_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22.py
+  - outputs/frontier_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-source-readout-primitive-queue-exhaustion/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22.py | tee outputs/frontier_quark_route2_source_readout_primitive_queue_exhaustion_2026_06_22.txt"
+  - "Adjacent guard runners for Blocks149, 148, 147, 142, 101, 144, 146, 140, 100, 126, and 130."
+  - "YAML parse check for STATE.yaml."
+  - "git diff --check"
+  - "ASCII scan across Block150 docs, runner, output, and loop pack."
+  - "Overclaim scan across 17 Block150 files."
+command_results:
+  - "py_compile: pass."
+  - "Block150 runner: TOTAL: PASS=82, FAIL=0."
+  - "Adjacent guards: Block149 79/0; Block148 79/0; Block147 113/0; Block142 72/0; Block101 75/0; Block144 95/0; Block146 76/0; Block140 95/0; Block100 72/0; Block126 55/0; Block130 88/0."
+  - "STATE.yaml YAML parse: pass."
+  - "git diff --check: pass."
+  - "ASCII scan: pass."
+  - "Overclaim scan: pass."
+imports_retired:
+  - "Prunes the remaining current-campaign non-duplicative source/readout route queue."
+open_imports:
+  - "Route-2 physical same-source selector realization theorem."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit the Block150 packet, push the science branch, open the stacked PR, and
+  patch PR identity into the branch-local loop pack.
+stop_condition: global_queue_exhaustion

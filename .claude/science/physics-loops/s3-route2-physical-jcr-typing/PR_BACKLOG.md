@@ -1,6 +1,10 @@
 # PR Backlog
 
-PR creation is pending.
+PR opened:
+
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4731
+```
 
 Expected command:
 

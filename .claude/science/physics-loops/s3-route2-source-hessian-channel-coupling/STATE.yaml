@@ -7,7 +7,7 @@ block: 125
 branch: physics-loop/s3-route2-source-hessian-channel-coupling-block125-20260622
 base: physics-loop/s3-route2-pr-channel-assignment-boundary-block124-20260622
 base_commit: 89c60f64e
-science_commit: PENDING
+science_commit: 8d284d23e
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-hessian-channel-coupling-block125-20260622
 date: 2026-06-22
 mode: campaign
@@ -56,9 +56,9 @@ open_imports:
   - "Construct Phi_ET from Block121 source-Hessian components to finite P_R E/T rows."
   - "mu=1 normalization remains separate."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4712
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4712
 next_exact_action: >-
   Construct Phi_ET from Block121 source-Hessian components to finite P_R E/T
   rows, or prove the current surface cannot supply it.

@@ -1,0 +1,93 @@
+Route-2 minimal multi-record extension support
+TRACE: upstream_support
+PART 1: grounding
+PASS: Block119 names same-source bridge primitive
+PASS: Block120 says current P_R does not instantiate primitive
+PASS: Block116 supports inverse-Killing uniqueness
+PASS: Block118 names identity factorization theorem
+PASS: endpoint sign support is sign-only
+
+PART 2: minimal source jet
+  D0Z=1, D00Z=1, D00logZ=0
+  DAZ=0, DAAlogZ=1, DABlogZ_offdiag=0
+PASS: identity one-point is one
+PASS: identity raw second moment equals product
+PASS: identity connected Hessian vanishes
+PASS: adjoint one-point vanishes
+PASS: adjoint diagonal connected Hessian is unit
+PASS: adjoint off-diagonal connected Hessian vanishes
+
+PART 3: bridge consequence under the added primitive
+  adjoint_units=8, identity_units=1, R=8/9, kappa=0, c_TE=-8/9
+PASS: connected fraction is 8/9
+PASS: kappa is zero
+PASS: negative endpoint sign gives -8/9 as consequence
+PASS: identity denominator is one unit
+PASS: adjoint numerator is eight units
+
+PART 4: import firewall
+  premise: same-source coordinates J_0,J_A
+PASS: premise recorded: same-source coordinates J_0,J_A
+  premise: orthonormal SU3 adjoint frame
+PASS: premise recorded: orthonormal SU3 adjoint frame
+  premise: W=log Z connected generator
+PASS: premise recorded: W=log Z connected generator
+  premise: identity coordinate pure normalization
+PASS: premise recorded: identity coordinate pure normalization
+  premise: equal source unit weights
+PASS: premise recorded: equal source unit weights
+  premise: endpoint sign consumed after kappa zero
+PASS: premise recorded: endpoint sign consumed after kappa zero
+PASS: forbidden marker absent from premises: rho_E
+PASS: forbidden marker absent from premises: q_E
+PASS: forbidden marker absent from premises: observed
+PASS: forbidden marker absent from premises: fitted
+PASS: forbidden marker absent from premises: data-tuned
+PASS: forbidden marker absent from premises: endpoint input
+PASS: endpoint sign is downstream rather than a source premise
+
+PART 5: current-surface boundary
+  abstract_source_jet: True
+PASS: abstract_source_jet has boolean status
+  identity_factorization: True
+PASS: identity_factorization has boolean status
+  adjoint_metric: True
+PASS: adjoint_metric has boolean status
+  equal_unit_weights: True
+PASS: equal_unit_weights has boolean status
+  physical_PR_ET_identification: False
+PASS: physical_PR_ET_identification has boolean status
+  current_surface_closure: False
+PASS: current_surface_closure has boolean status
+PASS: abstract extension is internally complete
+PASS: physical P_R/E-T identification remains missing
+PASS: current surface closure remains false
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: conditional-support for an added same-source source/readout primitive
+PASS: note contains marker: W(J_0,J) = J_0 + (1/2) sum_A J_A J_A
+PASS: note contains marker: D_0 D_0 Z = (D_0 Z)^2
+PASS: note contains marker: R_conn = 8 / (8 + 1) = 8/9
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block121 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=62, FAIL=0
+VERDICT: a minimal endpoint-free same-source 1+adjoint source extension is internally consistent and forces kappa=0 once physically identified with Route-2 E/T; that physical identification remains open.

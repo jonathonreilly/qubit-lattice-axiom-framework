@@ -1,0 +1,72 @@
+loop_slug: s3-route2-four-slot-rn-envelope-boundary
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 134
+branch: physics-loop/s3-route2-four-slot-probability-construction-block134-20260622
+base: physics-loop/s3-route2-shell-center-probability-support-block133-20260622
+base_commit: 748830e08
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-four-slot-probability-construction-block134-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Formal four-slot RN envelope as Route-2 probability surface
+hard_residual: >-
+  Decide whether constructing Omega_R, P0, P_h, and slot coordinate
+  functionals is enough to instantiate the physical Route-2 probability
+  surface after Block133.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_FOUR_SLOT_RN_ENVELOPE_BOUNDARY_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_four_slot_rn_envelope_boundary_2026_06_22.py
+  - outputs/frontier_quark_route2_four_slot_rn_envelope_boundary_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-four-slot-rn-envelope-boundary/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_four_slot_rn_envelope_boundary_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_four_slot_rn_envelope_boundary_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_shell_center_probability_surface_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_probability_surface_contract_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_fisher_riesz_realization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_fisher_riesz_isometry_sufficient_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_two_outcome_probability_surface_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "python3 - <<'PY' ... yaml.safe_load(STATE.yaml) ... PY"
+  - "git diff --check"
+  - "LC_ALL=C rg -n '[^\\\\x00-\\\\x7F]' <Block134 files>"
+  - "rg -n '<overclaim markers>' <Block134 files>"
+command_results:
+  - "py_compile: pass"
+  - "Block134 runner: TOTAL: PASS=91, FAIL=0"
+  - "Block133 adjacent guard: TOTAL: PASS=85, FAIL=0"
+  - "Block131 adjacent guard: TOTAL: PASS=86, FAIL=0"
+  - "Block130 adjacent guard: TOTAL: PASS=88, FAIL=0"
+  - "Fisher-Riesz sufficient adjacent guard: TOTAL: PASS=86, FAIL=0"
+  - "Block132 adjacent guard: TOTAL: PASS=75, FAIL=0"
+  - "Exact readout guard: PASS=11 FAIL=0"
+  - "Source-jet adjacent guard: TOTAL: PASS=63, FAIL=0"
+  - "STATE.yaml parse: pass"
+  - "git diff --check: pass"
+  - "ASCII scan: pass"
+  - "Overclaim marker scan: pass"
+imports_retired:
+  - "Constructs a formal four-slot RN envelope as auxiliary finite probability geometry."
+open_imports:
+  - "Canonical Route-2 P0 selected from framework primitives."
+  - "Physical center-ratio covariance readout on that source measure."
+  - "Same-source Fisher-unit Riesz identification with the Block121 scalar source."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Open the stacked PR, then construct the canonical Route-2 P0 and physical
+  center-ratio covariance line, or prove that primitive absent from current
+  Route-2 surfaces.
+stop_condition: none

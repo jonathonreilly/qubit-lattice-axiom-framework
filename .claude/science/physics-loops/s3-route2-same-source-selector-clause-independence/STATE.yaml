@@ -7,7 +7,7 @@ block: 148
 branch: physics-loop/s3-route2-same-source-selector-bridge-block148-20260622
 base: physics-loop/s3-route2-selector-equivalence-atlas-block147-20260622
 base_commit: 1a2335eb2
-science_commit: pending
+science_commit: 6dee31a2b
 worktree: /private/tmp/cl3-physics-loop-s3-route2-same-source-selector-bridge-block148-20260622
 date: 2026-06-22
 mode: campaign
@@ -67,10 +67,11 @@ open_imports:
   - "Physical P_R/E-T source variables X,Y on one reference source."
   - "Physical source/readout unit calibration mu=1."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4735
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4735
 next_exact_action: >-
-  Commit and push the Block148 branch and open the stacked PR without checking
-  conflict or mergeability state.
+  Continue the campaign by attacking physical instantiation of the full
+  same-source selector bridge theorem; do not refresh this PR to main and do
+  not check conflict or mergeability state.
 stop_condition: none

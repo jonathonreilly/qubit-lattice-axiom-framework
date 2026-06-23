@@ -1,0 +1,119 @@
+Route-2 source-coordinate gauge normalization no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block107 gives raw/product normal form
+PASS: Block110 prunes normalization-only scalar selector
+PASS: source-jet lift leaves raw/one-point split missing
+PASS: integrability gate requires symmetric source-index registry
+PASS: formal registry is vacuous for kappa
+PASS: source-Hessian support gives exact disconnected subtraction
+
+PART 2: affine source-origin gauge
+  base: a=0, b=0, raw=1, product=1/9, connected=8/9
+PASS: base raw formula is exact
+PASS: base product formula is exact
+PASS: base connected Hessian is invariant
+  x_shift: a=1, b=0, raw=4/3, product=4/9, connected=8/9
+PASS: x_shift raw formula is exact
+PASS: x_shift product formula is exact
+PASS: x_shift connected Hessian is invariant
+  y_shift: a=0, b=-1/3, raw=8/9, product=0, connected=8/9
+PASS: y_shift raw formula is exact
+PASS: y_shift product formula is exact
+PASS: y_shift connected Hessian is invariant
+  both_shift: a=1, b=1, raw=8/3, product=16/9, connected=8/9
+PASS: both_shift raw formula is exact
+PASS: both_shift product formula is exact
+PASS: both_shift connected Hessian is invariant
+PASS: affine origin gauge changes raw moments
+PASS: affine origin gauge changes disconnected products
+PASS: affine origin gauge preserves connected covariance in this family
+PASS: raw=1/product=1/9 is a gauge-fixed statement
+
+PART 3: multiplicative source-scale gauge
+  identity: s=1, t=1, raw=1, product=1/9, connected=8/9
+PASS: identity raw scales by st
+PASS: identity product scales by st
+PASS: identity connected scales by st
+PASS: identity connected/raw ratio remains 8/9
+PASS: identity product/raw ratio remains 1/9
+  double_x: s=2, t=1, raw=2, product=2/9, connected=16/9
+PASS: double_x raw scales by st
+PASS: double_x product scales by st
+PASS: double_x connected scales by st
+PASS: double_x connected/raw ratio remains 8/9
+PASS: double_x product/raw ratio remains 1/9
+  half_y: s=1, t=1/2, raw=1/2, product=1/18, connected=4/9
+PASS: half_y raw scales by st
+PASS: half_y product scales by st
+PASS: half_y connected scales by st
+PASS: half_y connected/raw ratio remains 8/9
+PASS: half_y product/raw ratio remains 1/9
+  opposite: s=-1, t=1, raw=-1, product=-1/9, connected=-8/9
+PASS: opposite raw scales by st
+PASS: opposite product scales by st
+PASS: opposite connected scales by st
+PASS: opposite connected/raw ratio remains 8/9
+PASS: opposite product/raw ratio remains 1/9
+PASS: absolute raw normalization needs scale fixing
+PASS: absolute connected coefficient needs scale fixing
+
+PART 4: dependency classes
+  Pcal_connected_subtraction: available_support
+PASS: Pcal_connected_subtraction status classified
+  formal_source_coordinates: available_support_but_vacuous
+PASS: formal_source_coordinates status classified
+  connected_hessian_covariance: conditional_support
+PASS: connected_hessian_covariance status classified
+  source_additive_origin: open
+PASS: source_additive_origin status classified
+  source_multiplicative_scale: open
+PASS: source_multiplicative_scale status classified
+  raw_E_XY_equals_one: open
+PASS: raw_E_XY_equals_one status classified
+  one_point_product_equals_one_ninth: open
+PASS: one_point_product_equals_one_ninth status classified
+  same_source_P_R_E_T_typing: open
+PASS: same_source_P_R_E_T_typing status classified
+  endpoint_value: forbidden
+PASS: endpoint_value status classified
+PASS: origin and scale are separate gates
+PASS: raw/product theorem remains open
+PASS: endpoint value remains forbidden
+
+PART 5: reachability
+PASS: formal source route reaches missing gauge-fixing node
+PASS: formal source route does not reach kappa=0
+PASS: gauge-fixing theorem would reach kappa=0 through raw/product route
+PASS: direct physical connected-Hessian theorem would bypass raw/product gauge split
+PASS: reachability graph contains no endpoint-value node
+PASS: reachability graph does not use finite-box comparator
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for formal source coordinates or connected Hessian data alone fixing the raw/disconnected Route-2 product normalization
+PASS: note contains marker: The raw/disconnected decomposition is not fixed until the physical source variables have a fixed origin and scale
+PASS: note contains marker: All three have the same connected Hessian 8/9
+PASS: note contains marker: Route-2 source-coordinate gauge-fixing theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block111 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names source-coordinate gauge-fixing theorem
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=86, FAIL=0
+VERDICT: formal source coordinates or connected Hessian data do not fix the raw/product normalization; Route-2 needs a source-coordinate gauge-fixing theorem or a directly coefficient-normalized physical connected-Hessian theorem.

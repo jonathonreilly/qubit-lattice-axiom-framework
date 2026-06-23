@@ -1,0 +1,76 @@
+loop_slug: s3-route2-source-gauge-normalization
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 111
+branch: physics-loop/s3-route2-source-gauge-normalization-block111-20260622
+base: physics-loop/s3-route2-scalar-partition-product-block110-20260622
+base_commit: 0ead8887d
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-source-gauge-normalization-block111-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Source-coordinate gauge normalization for raw/product selector
+hard_residual: >-
+  Determine whether formal source coordinates or connected Hessian data alone
+  fix the raw/disconnected product normalization needed for kappa=0.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SOURCE_COORDINATE_GAUGE_NORMALIZATION_NO_GO_NOTE_2026-06-22.md
+  - scripts/frontier_quark_route2_source_coordinate_gauge_normalization_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_source_coordinate_gauge_normalization_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-source-gauge-normalization/
+commands_run:
+  - python3 -m py_compile scripts/frontier_quark_route2_source_coordinate_gauge_normalization_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_coordinate_gauge_normalization_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_scalar_partition_product_selector_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_integrability_gate_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_formal_source_coordinate_registry_vacuity_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_measure_product_registry_transfer_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_pcal_moment_realization_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hessian_et_coefficient_normalization_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+  - python3 scripts/frontier_yukawa_color_projection_boundary.py
+  - git diff --check
+  - YAML parse for .claude/science/physics-loops/s3-route2-source-gauge-normalization/STATE.yaml
+  - ASCII scan for Block111 note, runner, output, and loop pack
+  - banned overclaim marker scan for Block111 note, runner, output, and loop pack
+command_results:
+  - "py_compile: PASS"
+  - "Block111 source-coordinate gauge normalization runner: PASS=86 FAIL=0"
+  - "Block110 scalar partition product selector guard: PASS=73 FAIL=0"
+  - "source-jet lift guard: PASS=63 FAIL=0"
+  - "source-Hessian integrability gate guard: PASS=53 FAIL=0"
+  - "formal source-coordinate registry guard: PASS=88 FAIL=0"
+  - "source-measure product registry guard: PASS=72 FAIL=0"
+  - "Pcal moment-realization guard: PASS=75 FAIL=0"
+  - "source-Hessian cumulant selector guard: PASS=49 FAIL=0"
+  - "Hessian E/T coefficient normalization guard: PASS=49 FAIL=0"
+  - "exact readout map guard: PASS=11 FAIL=0"
+  - "Yukawa color projection boundary guard: PASS=40 FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "banned overclaim marker scan: PASS"
+imports_retired:
+  - "The route that formal source coordinates or connected Hessian data alone fix raw E[XY]=1 and E[X]E[Y]=1/9."
+open_imports:
+  - "Route-2 source-coordinate gauge-fixing theorem."
+  - "Physical same-source P_R/E-T connected-Hessian coefficient normalization theorem."
+  - "Route-2 raw E[XY]=1 moment theorem for fixed physical variables."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct a Route-2 source-coordinate gauge-fixing theorem, or prove a
+  directly coefficient-normalized physical connected-Hessian theorem.
+stop_condition: none

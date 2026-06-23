@@ -7,7 +7,7 @@ block: 134
 branch: physics-loop/s3-route2-four-slot-probability-construction-block134-20260622
 base: physics-loop/s3-route2-shell-center-probability-support-block133-20260622
 base_commit: 748830e08
-science_commit: pending
+science_commit: a85b176fd8626895a4e3f29c9c3fcdfeb979bfd3
 worktree: /private/tmp/cl3-physics-loop-s3-route2-four-slot-probability-construction-block134-20260622
 date: 2026-06-22
 mode: campaign
@@ -62,11 +62,10 @@ open_imports:
   - "Physical center-ratio covariance readout on that source measure."
   - "Same-source Fisher-unit Riesz identification with the Block121 scalar source."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4721
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4721
 next_exact_action: >-
-  Open the stacked PR, then construct the canonical Route-2 P0 and physical
-  center-ratio covariance line, or prove that primitive absent from current
-  Route-2 surfaces.
+  Construct the canonical Route-2 P0 and physical center-ratio covariance
+  line, or prove that primitive absent from current Route-2 surfaces.
 stop_condition: none

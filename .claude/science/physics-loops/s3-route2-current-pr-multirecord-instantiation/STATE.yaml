@@ -7,7 +7,7 @@ block: 120
 branch: physics-loop/s3-route2-current-pr-multirecord-instantiation-block120-20260622
 base: physics-loop/s3-route2-bridge-hardwall-cut-block119-20260622
 base_commit: a1672a52b
-science_commit: PENDING
+science_commit: eef16572f
 worktree: /private/tmp/cl3-physics-loop-s3-route2-current-pr-multirecord-instantiation-block120-20260622
 date: 2026-06-22
 mode: campaign
@@ -63,9 +63,9 @@ open_imports:
   - "Physical coefficient/source normalization fixing equal singlet and adjoint unit weights."
   - "Endpoint magnitude typing from connected selector into the Route-2 center-ratio readout."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: opened
+pr_number: 4707
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4707
 next_exact_action: >-
   Add a new same-source covariant multi-record source/readout theorem, or pivot
   to a different non-Route-2 retained-positive opportunity.

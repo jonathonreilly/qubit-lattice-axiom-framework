@@ -56,10 +56,13 @@ overclaim marker scan: no hits
 ## PR
 
 ```text
-pending_create
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4729
+head: physics-loop/s3-route2-pr-row-ocr-functor-no-go-block142-20260622
+base: physics-loop/s3-route2-ocr-source-coordinate-stretch-block141-20260622
+science commit: 08ddd8b6e
 ```
 
 ## Next Exact Action
 
-Open the stacked Block142 PR, then construct `Phi_OCR` or pivot to source-jet
-`J_CR` construction if campaign runtime remains.
+Construct `Phi_OCR` or pivot to source-jet `J_CR` construction if campaign
+runtime remains.

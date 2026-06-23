@@ -1,0 +1,97 @@
+Route-2 minimal readout-coupling contract support
+TRACE: upstream_support
+PART 1: grounding
+PASS: Block121 supplies R_conn=8/9
+PASS: Block121 keeps physical identification open
+PASS: Block122 names mu=1 as missing coupling
+PASS: Block122 prunes internal-source shortcut
+PASS: Block119 supplies bridge blocker context
+PASS: coefficient no-go keeps E/T coefficient theorem separate
+PASS: sign support is orientation-only
+
+PART 2: sufficient contract
+  complete=True, missing=(), c_TE=-8/9
+PASS: all five clauses are present
+PASS: complete contract has no missing clauses
+PASS: complete contract yields c_TE=-8/9
+PASS: internal fraction is 8/9
+PASS: mu=1 leaves magnitude 8/9
+PASS: sigma=-1 orients the magnitude
+PASS: contract consumes no endpoint value input
+
+PART 3: single-clause failure models
+  missing internal_kappa_zero: complete=False, c_TE=None
+PASS: internal_kappa_zero omission makes contract incomplete
+PASS: internal_kappa_zero omission is named exactly
+PASS: internal_kappa_zero omission blocks c_TE output
+  missing same_source_pr_et: complete=False, c_TE=None
+PASS: same_source_pr_et omission makes contract incomplete
+PASS: same_source_pr_et omission is named exactly
+PASS: same_source_pr_et omission blocks c_TE output
+  missing channel_assignment: complete=False, c_TE=None
+PASS: channel_assignment omission makes contract incomplete
+PASS: channel_assignment omission is named exactly
+PASS: channel_assignment omission blocks c_TE output
+  missing mu_one: complete=False, c_TE=None
+PASS: mu_one omission makes contract incomplete
+PASS: mu_one omission is named exactly
+PASS: mu_one omission blocks c_TE output
+  missing sign_after_kappa: complete=False, c_TE=None
+PASS: sign_after_kappa omission makes contract incomplete
+PASS: sign_after_kappa omission is named exactly
+PASS: sign_after_kappa omission blocks c_TE output
+PASS: all five single-clause omissions were tested
+
+PART 4: countermodels for minimality
+  mu target: c_TE=-8/9
+PASS: mu target is rational
+  mu orientation_only: c_TE=-1
+PASS: mu orientation_only is rational
+  mu half: c_TE=-4/9
+PASS: mu half is rational
+PASS: missing mu=1 gives multiple possible magnitudes
+PASS: target magnitude is one member of the family
+  sign positive: c_TE=8/9
+PASS: sign positive output has target magnitude
+  sign negative: c_TE=-8/9
+PASS: sign negative output has target magnitude
+PASS: missing sign_after_kappa leaves both orientations
+PASS: missing same-source clause permits unrelated source/readout surfaces
+PASS: missing channel assignment permits untyped scalar ratio
+
+PART 5: reachability
+PASS: current Block121 path reaches only missing contract node
+PASS: current Block121 path does not reach physical c_TE
+PASS: full C1-C5 contract reaches physical c_TE
+PASS: contract order consumes sign last
+PASS: reachability graph contains no endpoint-value input
+PASS: contract has exactly five named clauses
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: exact-support for a conditional contract; not current-surface closure
+PASS: note contains marker: Minimal Contract
+PASS: note contains marker: c_TE = sigma * mu * R_* = (-1) * 1 * (8/9) = -8/9
+PASS: note contains marker: Single-Clause Failure Models
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block123 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=70, FAIL=0
+VERDICT: C1-C5 form a minimal conditional contract that consumes Block121 into c_TE=-8/9; the current Route-2 surface still has to prove those clauses.

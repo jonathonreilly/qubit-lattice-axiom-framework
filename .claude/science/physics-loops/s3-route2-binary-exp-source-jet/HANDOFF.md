@@ -55,10 +55,13 @@ overclaim marker scan: no hits
 ## PR
 
 ```text
-pending_create
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4730
+head: physics-loop/s3-route2-source-jet-exponential-family-support-block143-20260622
+base: physics-loop/s3-route2-pr-row-ocr-functor-no-go-block142-20260622
+science commit: 9d7f550a3
 ```
 
 ## Next Exact Action
 
-Open the stacked Block143 PR, then pivot to physical `J_CR` typing or
-same-source Riesz/unit-isometry if campaign runtime remains.
+Pivot to physical `J_CR` typing or same-source Riesz/unit-isometry if campaign
+runtime remains.

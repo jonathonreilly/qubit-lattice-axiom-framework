@@ -1,0 +1,72 @@
+loop_slug: s3-route2-phi-et-isometry-gap
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 128
+branch: physics-loop/s3-route2-phi-et-isometry-gap-block128-20260622
+base: physics-loop/s3-route2-source-readout-isometry-support-block127-20260622
+base_commit: 2a01c7d73
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-phi-et-isometry-gap-block128-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Typed Phi_ET existence as source/readout isometry
+hard_residual: >-
+  Decide whether a typed Phi_ET map alone forces unit-preserving source/readout
+  isometry and hence mu=1.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_PHI_ET_ISOMETRY_GAP_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_phi_et_isometry_gap_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_phi_et_isometry_gap_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-phi-et-isometry-gap/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_phi_et_isometry_gap_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_phi_et_isometry_gap_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_phi_et_isometry_gap_no_go_2026_06_22.py > outputs/frontier_quark_route2_phi_et_isometry_gap_no_go_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_isometry_sufficient_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_unit_calibration_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_channel_coupling_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_normalization_functional_parity_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_typed_parity_bridge_minimal_cut_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "git diff --check"
+  - "STATE.yaml parse"
+  - "ASCII scan"
+  - "overclaim marker scan"
+command_results:
+  - "py_compile: PASS"
+  - "phi_et_isometry_gap_no_go: TOTAL: PASS=93, FAIL=0"
+  - "cached output generated"
+  - "source_readout_isometry_sufficient_support: TOTAL: PASS=81, FAIL=0"
+  - "source_readout_unit_calibration_no_go: TOTAL: PASS=55, FAIL=0"
+  - "source_hessian_channel_coupling_no_go: TOTAL: PASS=62, FAIL=0"
+  - "source_jet_lift_no_go: TOTAL: PASS=63, FAIL=0"
+  - "normalization_functional_parity_no_go: TOTAL: PASS=55, FAIL=0"
+  - "typed_parity_bridge_minimal_cut: TOTAL: PASS=60, FAIL=0"
+  - "exact_readout_map: PASS=11 FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "overclaim marker scan: PASS"
+imports_retired:
+  - "Pruned typed Phi_ET existence alone as proof of source/readout isometry or mu=1."
+open_imports:
+  - >-
+    Route-2 source/readout metric-isometry theorem proving Phi_ET^* g_readout =
+    g_source on the normalized scalar line.
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit the Block128 no-go packet, push the science branch, and open the
+  stacked PR on Block127.
+stop_condition: none

@@ -59,7 +59,13 @@ overclaim marker scan: PASS
 ## PR
 
 ```text
-pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4717
+Number: 4717
+Title: [physics-loop] s3-route2 fisher-riesz realization block130 no-go
+State: OPEN
+Base: physics-loop/s3-route2-fisher-riesz-isometry-support-block129-20260622
+Head: physics-loop/s3-route2-fisher-riesz-realization-no-go-block130-20260622
+Science commit: c601a2868
 ```
 
 ## Next Exact Action

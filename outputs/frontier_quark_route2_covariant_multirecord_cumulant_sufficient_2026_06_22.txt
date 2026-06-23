@@ -1,0 +1,78 @@
+Route-2 covariant multi-record cumulant sufficient theorem
+TRACE: upstream_support
+PART 1: grounding
+PASS: invariant scalar output route is pruned
+PASS: covariant scalarization before E/T typing is pruned
+PASS: Block112 names physical connected-Hessian theorem
+PASS: Block114 names same-source color-matrix lift clauses
+
+PART 2: conditional theorem
+  adjoint_dim=8, identity_dim=1, fraction=8/9, kappa=0
+PASS: all multi-record premises supplied in conditional theorem
+PASS: connected fraction is 8/9
+PASS: conditional theorem forces kappa=0
+PASS: identity direction is one-dimensional
+
+PART 3: orientation-free contraction
+  trace original=36, permuted=36, sign_flipped=36
+PASS: Killing contraction trace is invariant under basis permutation
+PASS: Killing contraction trace is invariant under sign flips
+PASS: no adjoint covector is selected by trace contraction
+PASS: single chosen component is not orientation-free
+
+PART 4: current-surface firewall
+  current covariant_adjoint_family: False
+PASS: covariant_adjoint_family classification is boolean
+  current connected_hessian_typing: False
+PASS: connected_hessian_typing classification is boolean
+  current pure_disconnected_identity: False
+PASS: pure_disconnected_identity classification is boolean
+  current coefficient_normalization: False
+PASS: coefficient_normalization classification is boolean
+  current killing_contraction: False
+PASS: killing_contraction classification is boolean
+PASS: current multi-record theorem is not complete
+PASS: all five multi-record premises remain open
+
+PART 5: trace boundary
+  covariant_family: open
+PASS: covariant_family status classified
+  connected_subtraction: available_support
+PASS: connected_subtraction status classified
+  killing_contraction: conditional
+PASS: killing_contraction status classified
+  scalarize_before_typing: pruned
+PASS: scalarize_before_typing status classified
+  external_adjoint_covector: forbidden
+PASS: external_adjoint_covector status classified
+PASS: the theorem avoids scalarizing before typing
+PASS: the theorem forbids an external adjoint covector
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: conditional-support; the covariant multi-record Route-2 source/readout family is not supplied
+PASS: note contains marker: Sufficient Theorem
+PASS: note contains marker: orientation-free Killing contraction
+PASS: note contains marker: kappa = 0
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block115 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=50, FAIL=0
+VERDICT: a same-source covariant adjoint multi-record cumulant with Killing contraction would force kappa=0 without a color-orientation selector; that record family remains open on the current surface.

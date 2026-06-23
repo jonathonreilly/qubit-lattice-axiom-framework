@@ -1,8 +1,12 @@
 # PR Backlog
 
-PR creation is pending.
+PR creation completed:
 
-Expected command:
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4717
+```
+
+Recovery command if the PR body needs to be recreated:
 
 ```bash
 gh pr create --repo jonathonreilly/qubit-lattice-axiom-framework \

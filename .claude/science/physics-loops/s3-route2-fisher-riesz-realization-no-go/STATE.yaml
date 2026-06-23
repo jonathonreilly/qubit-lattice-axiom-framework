@@ -7,7 +7,7 @@ block: 130
 branch: physics-loop/s3-route2-fisher-riesz-realization-no-go-block130-20260622
 base: physics-loop/s3-route2-fisher-riesz-isometry-support-block129-20260622
 base_commit: a450a9684
-science_commit: pending
+science_commit: c601a2868
 worktree: /private/tmp/cl3-physics-loop-s3-route2-fisher-riesz-realization-no-go-block130-20260622
 date: 2026-06-22
 mode: campaign
@@ -61,10 +61,11 @@ open_imports:
     Route-2 sharp-record Fisher-Riesz realization theorem constructing
     Omega_R, P0, RN source path, and same-source Riesz unit lines.
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4717
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4717
 next_exact_action: >-
-  Commit the Block130 no-go packet, push the science branch, and open the
-  stacked PR on Block129.
+  Continue the campaign by constructing the Route-2 sharp-record probability
+  surface Omega_R, P0, and P_h, or proving that construction impossible on the
+  current surface.
 stop_condition: none

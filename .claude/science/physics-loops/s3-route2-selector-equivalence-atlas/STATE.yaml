@@ -1,0 +1,77 @@
+loop_slug: s3-route2-selector-equivalence-atlas
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 147
+branch: physics-loop/s3-route2-selector-equivalence-atlas-block147-20260622
+base: physics-loop/s3-route2-source-measure-bias-stretch-block146-20260622
+base_commit: 2e683f9cf
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-selector-equivalence-atlas-block147-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: selector-equivalence atlas
+hard_residual: >-
+  Map which endpoint-free selector formulations are equivalent to kappa=0 once
+  a physical same-source Route-2 source/readout theorem supplies the typed
+  selector.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SELECTOR_EQUIVALENCE_ATLAS_SUPPORT_2026-06-22.md
+  - scripts/frontier_quark_route2_selector_equivalence_atlas_support_2026_06_22.py
+  - outputs/frontier_quark_route2_selector_equivalence_atlas_support_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-selector-equivalence-atlas/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_selector_equivalence_atlas_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_selector_equivalence_atlas_support_2026_06_22.py | tee outputs/frontier_quark_route2_selector_equivalence_atlas_support_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_measure_bias_stretch_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_measure_bias_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_physical_jcr_typing_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_binary_exp_source_jet_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_nonbinary_product_normal_form_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_log_odds_selector_stretch_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_sharp_record_bias_selector_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_covariance_score_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_isometry_sufficient_support_2026_06_22.py"
+  - "python3 YAML parse check for STATE.yaml"
+  - "git diff --check"
+  - "perl ASCII scan over Block147 artifacts"
+  - "rg overclaim scan over Block147 artifacts"
+command_results:
+  - "py_compile: PASS"
+  - "Block147 selector-equivalence atlas runner: TOTAL PASS=113, FAIL=0"
+  - "Block146 source-measure bias stretch guard: TOTAL PASS=76, FAIL=0"
+  - "Block145 source-measure bias guard: TOTAL PASS=87, FAIL=0"
+  - "Block144 physical J_CR typing guard: TOTAL PASS=95, FAIL=0"
+  - "Block143 binary exponential source-jet guard: TOTAL PASS=95, FAIL=0"
+  - "Block107 nonbinary product normal-form guard: TOTAL PASS=70, FAIL=0"
+  - "Block106 log-odds selector stretch guard: TOTAL PASS=80, FAIL=0"
+  - "Block105 sharp-record bias selector guard: TOTAL PASS=67, FAIL=0"
+  - "Block140 covariance score-lift guard: TOTAL PASS=95, FAIL=0"
+  - "Block76 source-Hessian connected-cumulant selector guard: TOTAL PASS=49, FAIL=0"
+  - "Block127 source-readout isometry sufficient guard: TOTAL PASS=81, FAIL=0"
+  - "YAML parse clean"
+  - "git diff --check clean"
+  - "ASCII scan clean"
+  - "overclaim scan clean"
+imports_retired:
+  - "Retires ambiguity among formal selector formulations by mapping exact equivalences and subcase boundaries."
+open_imports:
+  - "Physical Route-2 typed selector theorem on the same-source P_R/E-T source/readout surface."
+  - "Physical O_CR/J_CR construction or equivalent covariance-score lift."
+  - "Same-source Fisher-unit Riesz identification where needed."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit and push the Block147 branch, then open the stacked PR without
+  checking conflict or mergeability state.
+stop_condition: none

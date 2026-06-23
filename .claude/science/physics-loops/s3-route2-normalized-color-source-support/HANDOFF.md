@@ -62,7 +62,12 @@ PASS banned overclaim marker scan
 ## PR
 
 ```text
-PENDING
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4700
+number: 4700
+title: [physics-loop] s3-route2 normalized color source block113 exact-support
+base: physics-loop/s3-route2-connected-hessian-stretch-block112-20260622
+head: physics-loop/s3-route2-normalized-color-source-support-block113-20260622
+science_commit: 94677886b
 ```
 
 ## Next Exact Action

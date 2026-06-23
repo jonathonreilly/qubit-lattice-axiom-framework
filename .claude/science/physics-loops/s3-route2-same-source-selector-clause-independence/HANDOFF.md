@@ -54,11 +54,14 @@ overclaim scan: clean
 ## PR
 
 ```text
-pending
+PR #4735
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4735
+base: physics-loop/s3-route2-selector-equivalence-atlas-block147-20260622
+head: physics-loop/s3-route2-same-source-selector-bridge-block148-20260622
 ```
 
 ## Next Exact Action
 
-Commit, push, and open the stacked PR. If the campaign continues, attack
-physical instantiation of the full Route-2 same-source selector bridge theorem
-rather than a weakened substitute.
+Continue the campaign by attacking physical instantiation of the full Route-2
+same-source selector bridge theorem rather than a weakened substitute. Do not
+refresh this PR to main and do not check conflict or mergeability state.

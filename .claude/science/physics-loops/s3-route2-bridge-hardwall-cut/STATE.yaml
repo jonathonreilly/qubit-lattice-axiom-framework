@@ -7,7 +7,7 @@ block: 119
 branch: physics-loop/s3-route2-bridge-hardwall-cut-block119-20260622
 base: physics-loop/s3-route2-singlet-residual-independence-block118-20260622
 base_commit: 8d4aa7df2
-science_commit: PENDING
+science_commit: e39dcc1b6
 worktree: /private/tmp/cl3-physics-loop-s3-route2-bridge-hardwall-cut-block119-20260622
 date: 2026-06-22
 mode: campaign
@@ -63,9 +63,9 @@ open_imports:
   - "Physical coefficient/source normalization fixing equal singlet and adjoint unit weights."
   - "Endpoint magnitude typing from connected selector into the Route-2 center-ratio readout."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: opened
+pr_number: 4706
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4706
 next_exact_action: >-
   Construct the same-source covariant multi-record bridge theorem, or prove
   the current P_R/E-T surface cannot supply one.

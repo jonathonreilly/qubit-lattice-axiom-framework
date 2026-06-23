@@ -7,7 +7,7 @@ block: 146
 branch: physics-loop/s3-route2-source-measure-bias-stretch-block146-20260622
 base: physics-loop/s3-route2-source-measure-bias-no-go-block145-20260622
 base_commit: 38bd822be
-science_commit: pending
+science_commit: b367afefe
 worktree: /private/tmp/cl3-physics-loop-s3-route2-source-measure-bias-stretch-block146-20260622
 date: 2026-06-22
 mode: campaign
@@ -55,11 +55,10 @@ open_imports:
   - "Physical J_CR source typing theorem."
   - "Same-source Riesz/unit-isometry theorem."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4733
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4733
 next_exact_action: >-
-  Commit the verified Block146 packet, push the science branch, open the
-  stacked PR, record the PR identity, then continue to the next campaign
-  target if runtime remains.
+  Continue the campaign by starting the next highest-ranked physical
+  source/readout primitive target if runtime remains.
 stop_condition: none

@@ -10,6 +10,8 @@ Local branch checks pass:
 - Source-Hessian selector guard: `PASS=49, FAIL=0`.
 - YAML parse, `git diff --check`, ASCII scan, and overclaim phrase scan are
   clean.
+- PR identity recorded: PR #4733,
+  `https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4733`.
 
 No review-loop worker was run.
 

@@ -58,10 +58,13 @@ overclaim phrase scan: clean
 ## PR
 
 ```text
-pending
+PR #4733
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4733
+base: physics-loop/s3-route2-source-measure-bias-no-go-block145-20260622
+head: physics-loop/s3-route2-source-measure-bias-stretch-block146-20260622
 ```
 
 ## Next Exact Action
 
-Commit the verified packet, push the branch, open the stacked PR, record the PR
-identity, then continue the campaign if runtime remains.
+Continue the campaign by starting the next highest-ranked physical
+source/readout primitive target if runtime remains.

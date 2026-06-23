@@ -1,0 +1,117 @@
+Route-2 binary exponential source-jet support
+TRACE: upstream_support
+PART 1: grounding
+PASS: source-Hessian packet gives D2 log Z subtraction
+PASS: source-Hessian packet names pure-disconnected singlet boundary
+PASS: source-jet no-go names source coordinates J_A
+PASS: source-jet no-go names one-point product
+PASS: isometry packet maps connected source fraction to c_TE conditionally
+PASS: Rconn factorization names kappa and orientation switches
+PASS: Block142 leaves Phi_OCR physical typing missing
+PASS: grounding uses no endpoint-value theorem
+
+PART 2: binary source-jet theorem
+  probabilities=(2/3, 1/3), values=(1, -1)
+  DZ=1/3, D2Z=1, disconnected=1/9, D2logZ=8/9
+PASS: binary source probabilities normalize
+PASS: binary source probabilities are positive
+PASS: binary source values are odd signs
+PASS: Z_CR[0] equals one
+PASS: D Z_CR at zero is one third
+PASS: D2 Z_CR at zero is one
+PASS: same-source disconnected product is one ninth
+PASS: connected Hessian is eight ninths
+PASS: selector kappa is zero
+PASS: raw jet splits into connected plus disconnected
+PASS: all source-jet values are exact Fractions
+PASS: binary source-jet model has no endpoint-value input
+
+PART 3: same-source disconnected subtraction load
+  raw=1, DZ=0, connected=1, kappa=1
+PASS: DZ=0 gives expected connected value
+PASS: DZ=0 gives expected kappa
+PASS: DZ=0 output is rational
+  raw=1, DZ=1/3, connected=8/9, kappa=0
+PASS: DZ=1/3 gives expected connected value
+PASS: DZ=1/3 gives expected kappa
+PASS: DZ=1/3 output is rational
+  raw=1, DZ=2/3, connected=5/9, kappa=-3
+PASS: DZ=2/3 gives expected connected value
+PASS: DZ=2/3 gives expected kappa
+PASS: DZ=2/3 output is rational
+  raw=1, DZ=1, connected=0, kappa=-8
+PASS: DZ=1 gives expected connected value
+PASS: DZ=1 gives expected kappa
+PASS: DZ=1 output is rational
+PASS: same raw second jet admits multiple connected values
+PASS: only the same-source one-third one-point product gives kappa zero
+PASS: one-point product is load-bearing for connected subtraction
+
+PART 4: formal support versus physical bridge
+PASS: source_functional has boolean status
+PASS: source_coordinate has boolean status
+PASS: raw_second_jet has boolean status
+PASS: one_point_product has boolean status
+PASS: connected_log_hessian has boolean status
+PASS: pure_disconnected_singlet has boolean status
+PASS: physical_typing has boolean status
+PASS: same_source_riesz has boolean status
+PASS: unit_isometry has boolean status
+PASS: orientation_sign has boolean status
+PASS: current block proves formal kappa-zero source jet
+PASS: current block does not prove the physical Route-2 bridge
+PASS: current missing fields are physical typing, Riesz, isometry, and orientation
+PASS: complete typed contract proves the physical bridge
+PASS: complete typed contract yields c_TE negative eight ninths
+PASS: complete typed contract still consumes no endpoint value
+PASS: physical_typing omission leaves formal kappa zero intact
+PASS: physical_typing omission blocks physical bridge
+PASS: physical_typing omission is named exactly
+PASS: same_source_riesz omission leaves formal kappa zero intact
+PASS: same_source_riesz omission blocks physical bridge
+PASS: same_source_riesz omission is named exactly
+PASS: unit_isometry omission leaves formal kappa zero intact
+PASS: unit_isometry omission blocks physical bridge
+PASS: unit_isometry omission is named exactly
+PASS: orientation_sign omission leaves formal kappa zero intact
+PASS: orientation_sign omission blocks physical bridge
+PASS: orientation_sign omission is named exactly
+PASS: all four physical bridge clauses were tested
+
+PART 5: reachability
+PASS: formal source reaches connected Hessian
+PASS: formal source reaches kappa zero
+PASS: formal source alone does not reach physical c_TE
+PASS: adding physical typing and orientation reaches c_TE
+PASS: reachability graph contains no endpoint-value input
+PASS: reachability graph exposes physical_typing as the first post-kappa gate
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: exact-support for a formal binary source-jet cumulant theorem; not current-surface closure
+PASS: note contains marker: Z_CR[J] = (2/3) exp(J) + (1/3) exp(-J)
+PASS: note contains marker: D^2 log Z_CR |0 = 8/9
+PASS: note contains marker: kappa = 0
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block143 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=95, FAIL=0
+VERDICT: formal binary source jet forces kappa=0; physical Route-2 typing remains open.

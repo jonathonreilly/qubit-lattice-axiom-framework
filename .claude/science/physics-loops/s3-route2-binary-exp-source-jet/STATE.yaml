@@ -1,0 +1,69 @@
+loop_slug: s3-route2-binary-exp-source-jet
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 143
+branch: physics-loop/s3-route2-source-jet-exponential-family-support-block143-20260622
+base: physics-loop/s3-route2-pr-row-ocr-functor-no-go-block142-20260622
+base_commit: b3f8c155e
+science_commit: pending_until_commit
+worktree: /private/tmp/cl3-physics-loop-s3-route2-source-jet-exp-family-support-block143-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: binary exponential source-jet connected-cumulant support
+hard_residual: >-
+  Build a source-jet object whose connected Hessian forces kappa=0 without
+  importing c_TE or the endpoint triple.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_BINARY_EXP_SOURCE_JET_SUPPORT_2026-06-22.md
+  - scripts/frontier_quark_route2_binary_exp_source_jet_support_2026_06_22.py
+  - outputs/frontier_quark_route2_binary_exp_source_jet_support_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-binary-exp-source-jet/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_binary_exp_source_jet_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_binary_exp_source_jet_support_2026_06_22.py | tee outputs/frontier_quark_route2_binary_exp_source_jet_support_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_cumulant_selector_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_isometry_sufficient_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_factorization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_pr_row_ocr_functor_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_covariant_scalarization_collapse_no_go_2026_06_22.py"
+  - "python3 -c \"import pathlib, yaml; yaml.safe_load(pathlib.Path('.claude/science/physics-loops/s3-route2-binary-exp-source-jet/STATE.yaml').read_text()); print('STATE.yaml parse OK')\""
+  - "git diff --check"
+  - "perl non-ascii scan over Block143 packet"
+  - "rg overclaim marker scan over Block143 packet"
+command_results:
+  - "py_compile: pass"
+  - "Block143 runner: TOTAL PASS=95 FAIL=0"
+  - "source-Hessian cumulant guard: TOTAL PASS=49 FAIL=0"
+  - "source-jet guard: TOTAL PASS=63 FAIL=0"
+  - "source-readout isometry guard: TOTAL PASS=81 FAIL=0"
+  - "Rconn factorization guard: TOTAL PASS=35 FAIL=0"
+  - "Block142 guard: TOTAL PASS=72 FAIL=0"
+  - "covariant scalarization guard: TOTAL PASS=50 FAIL=0"
+  - "STATE.yaml parse OK"
+  - "git diff --check: pass"
+  - "ASCII scan: no hits"
+  - "overclaim marker scan: no hits"
+imports_retired:
+  - "Retires the objection that no exact finite source-jet model can realize disconnected subtraction with kappa=0."
+open_imports:
+  - "Route-2 physical binary source-jet theorem mapping O_CR/readout to this same-source D2 log Z source."
+  - "Same-source Riesz/unit-isometry theorem from the formal source fraction to the physical Route-2 readout unit."
+  - "Orientation sign theorem sigma=-1."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending_create
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit the Block143 support packet, push the branch, and open the stacked PR;
+  then pivot to physical J_CR typing or same-source Riesz/unit-isometry if
+  campaign runtime remains.
+stop_condition: none

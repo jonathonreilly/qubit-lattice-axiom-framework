@@ -65,5 +65,11 @@ overclaim marker scan: PASS
 ## PR Identity
 
 ```text
-pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4715
+Number: 4715
+Title: [physics-loop] s3-route2 phi-et isometry gap block128 no-go
+State: OPEN
+Base: physics-loop/s3-route2-source-readout-isometry-support-block127-20260622
+Head: physics-loop/s3-route2-phi-et-isometry-gap-block128-20260622
+Science commit: 81f11352e
 ```

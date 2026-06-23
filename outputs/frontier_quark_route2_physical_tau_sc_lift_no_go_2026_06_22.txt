@@ -1,0 +1,88 @@
+Route-2 physical tau_sc lift no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block136 names tau_sc physical source theorem
+PASS: Block135 leaves selector primitive missing
+PASS: exact readout map has shell and center columns
+PASS: source-jet no-go separates finite readout from source data
+PASS: Fisher theorem needs supplied source measure
+PASS: grounding uses no endpoint-value theorem
+
+PART 2: formal carrier tau
+PASS: tau maps shell to center
+PASS: tau maps center to shell
+PASS: tau is involutive on shell
+PASS: tau is involutive on center
+PASS: tau is linear/involutive on sample (Fraction(0, 1), Fraction(0, 1))
+PASS: tau is linear/involutive on sample (Fraction(2, 1), Fraction(0, 1))
+PASS: tau is linear/involutive on sample (Fraction(3, 1), Fraction(1, 4))
+PASS: tau preserves channel coordinate u
+
+PART 3: formal odd score row
+PASS: odd row gives shell value -1
+PASS: odd row gives center value +1
+PASS: odd row is tau-odd
+PASS: odd row flips on sample (Fraction(1, 1), Fraction(1, 12))
+PASS: odd row flips on sample (Fraction(2, 1), Fraction(1, 3))
+PASS: odd row flips on sample (Fraction(3, 1), Fraction(0, 1))
+PASS: formal odd row uses no endpoint-value input
+
+PART 4: current readout row boundary
+  current E beta/alpha = 5.257476782082
+PASS: current E readout row is not tau-odd
+PASS: current E readout row is not the formal odd score row
+  current T beta/alpha = -1.000030814261
+PASS: current T readout row is not tau-odd
+PASS: current T readout row is not the formal odd score row
+PASS: current readout rows are endpoint-fixed carrier rows
+PASS: readout-row comparison does not use endpoint target value
+
+PART 5: current-surface model
+PASS: formal_carrier_tau has boolean status
+PASS: formal_odd_row has boolean status
+PASS: source_measure_space has boolean status
+PASS: p0_tau_invariant has boolean status
+PASS: physical_score_odd_typing has boolean status
+PASS: same_source_riesz has boolean status
+PASS: formal carrier support is present
+PASS: physical tau_sc lift is not present
+PASS: missing fields are source-measure lift fields
+PASS: current surface does not fix mu
+
+PART 6: reachability
+PASS: current carrier reaches formal tau
+PASS: current carrier reaches missing lift node
+PASS: current carrier does not reach mu_one
+PASS: physical lift theorem reaches mu_one
+PASS: reachability graph contains no endpoint-value input
+PASS: formal tau and physical lift theorem are distinct nodes
+
+PART 7: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for the current carrier/readout surface proving tau_sc is a physical source-measure automorphism
+PASS: note contains marker: Formal Carrier Reflection
+PASS: note contains marker: That is not yet a physical source-measure automorphism
+PASS: note contains marker: same-source Fisher-unit Riesz with Block121
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block137 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=68, FAIL=0
+VERDICT: the carrier has a formal shell/center reflection and odd row, but the current surface does not lift them to a physical source-measure automorphism.

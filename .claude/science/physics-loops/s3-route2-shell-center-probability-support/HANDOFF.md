@@ -57,7 +57,12 @@ overclaim marker scan: PASS
 ## PR
 
 ```text
-pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4720
+number: 4720
+state: OPEN
+head: physics-loop/s3-route2-shell-center-probability-support-block133-20260622
+base: physics-loop/s3-route2-two-outcome-probability-no-go-block132-20260622
+science_commit: 622370bffa64fac596d61a171267cf55d341071c
 ```
 
 ## Next Exact Action

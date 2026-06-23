@@ -7,7 +7,7 @@ block: 113
 branch: physics-loop/s3-route2-normalized-color-source-support-block113-20260622
 base: physics-loop/s3-route2-connected-hessian-stretch-block112-20260622
 base_commit: 5cd84aa56
-science_commit: PENDING
+science_commit: 94677886b
 worktree: /private/tmp/cl3-physics-loop-s3-route2-normalized-color-source-support-block113-20260622
 date: 2026-06-22
 mode: campaign
@@ -61,9 +61,12 @@ open_imports:
   - "Physical E/T D_A D_B log Z readout typing theorem."
   - "E/T coefficient and source-coordinate normalization theorem."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4700
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4700
+pr_title: "[physics-loop] s3-route2 normalized color source block113 exact-support"
+pr_base: physics-loop/s3-route2-connected-hessian-stretch-block112-20260622
+pr_head: physics-loop/s3-route2-normalized-color-source-support-block113-20260622
 next_exact_action: >-
   Construct the Route-2 same-source normalized color-matrix source lift theorem.
 stop_condition: none

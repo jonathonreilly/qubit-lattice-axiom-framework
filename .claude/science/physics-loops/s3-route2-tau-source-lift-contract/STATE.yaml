@@ -7,7 +7,7 @@ block: 138
 branch: physics-loop/s3-route2-tau-source-lift-contract-block138-20260622
 base: physics-loop/s3-route2-physical-tau-sc-lift-block137-20260622
 base_commit: d4554883e
-science_commit: pending
+science_commit: 8ec65e2b4
 worktree: /private/tmp/cl3-physics-loop-s3-route2-tau-source-lift-contract-block138-20260622
 date: 2026-06-22
 mode: campaign
@@ -62,10 +62,10 @@ imports_retired:
 open_imports:
   - "Construct Omega_S, iota, tau_S, invariant P0, odd physical score, and same-source Riesz typing."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4725
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4725
 next_exact_action: >-
-  Run the Block138 runner and adjacent guards, then open the stacked PR if the
-  branch-local checks pass.
+  Start the next block by attempting an actual construction/no-go for Omega_S,
+  iota, tau_S, invariant P0, odd physical score, and same-source Riesz typing.
 stop_condition: none

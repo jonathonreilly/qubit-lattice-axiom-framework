@@ -1,0 +1,73 @@
+loop_slug: s3-route2-color-matrix-lift-sufficient
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 114
+branch: physics-loop/s3-route2-color-matrix-lift-sufficient-block114-20260622
+base: physics-loop/s3-route2-normalized-color-source-support-block113-20260622
+base_commit: 5d945b030
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-color-matrix-lift-sufficient-block114-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: Same-source color-matrix lift sufficient theorem
+hard_residual: >-
+  Specify and verify the exact implication from a Route-2 same-source
+  color-matrix lift theorem to kappa=0 without endpoint import.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_COLOR_MATRIX_LIFT_SUFFICIENT_THEOREM_2026-06-22.md
+  - scripts/frontier_quark_route2_color_matrix_lift_sufficient_2026_06_22.py
+  - outputs/frontier_quark_route2_color_matrix_lift_sufficient_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-color-matrix-lift-sufficient/
+commands_run:
+  - python3 -m py_compile scripts/frontier_quark_route2_color_matrix_lift_sufficient_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_matrix_lift_sufficient_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_normalized_color_source_selector_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_connected_color_source_transfer_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_finite_endpoint_source_rank_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_measure_color_ensemble_transfer_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_endpoint_orientation_sign_support_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_physical_connected_hessian_bridge_stretch_no_go_2026_06_22.py
+  - PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+  - python3 scripts/frontier_yukawa_color_projection_boundary.py
+  - git diff --check
+  - YAML parse for .claude/science/physics-loops/s3-route2-color-matrix-lift-sufficient/STATE.yaml
+  - ASCII scan for Block114 note, runner, output, and loop pack
+  - banned overclaim marker scan for Block114 note, runner, output, and loop pack
+command_results:
+  - "py_compile: PASS"
+  - "Block114 color-matrix lift sufficient runner: PASS=53 FAIL=0"
+  - "Block113 normalized color-source selector guard: PASS=68 FAIL=0"
+  - "connected color-source transfer guard: PASS=51 FAIL=0"
+  - "finite endpoint source-rank guard: PASS=46 FAIL=0"
+  - "source-measure color-ensemble transfer guard: PASS=58 FAIL=0"
+  - "endpoint orientation sign guard: PASS=38 FAIL=0"
+  - "Block112 physical connected-Hessian stretch guard: PASS=84 FAIL=0"
+  - "exact readout map guard: PASS=11 FAIL=0"
+  - "Yukawa color projection boundary guard: PASS=40 FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "banned overclaim marker scan: PASS"
+imports_retired:
+  - "None on current Route-2 surface; the packet specifies a sufficient theorem."
+open_imports:
+  - "Same-source trace-one color records for Route-2 physical readout."
+  - "Full End(C^3) source variation on the same Route-2 source."
+  - "Physical E/T D_A D_B log Z readout typing."
+  - "Singlet typing and coefficient/source normalization."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Prove or refute one clause of the same-source color-matrix lift theorem on
+  the current Route-2 surface.
+stop_condition: none

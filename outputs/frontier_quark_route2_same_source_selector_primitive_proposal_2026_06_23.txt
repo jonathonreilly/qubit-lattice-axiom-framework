@@ -1,0 +1,117 @@
+Route-2 same-source selector primitive proposal
+TRACE: upstream_support
+PART 1: primitive arithmetic
+PASS: same-source clause is present
+PASS: raw moment is one
+PASS: mean X is one third
+PASS: mean Y is one third
+PASS: product selector is one ninth
+PASS: connected subtraction is typed
+PASS: connected value is eight ninths
+PASS: kappa is zero
+PASS: unit calibration is one
+PASS: orientation sign is negative
+PASS: signed readout is minus eight ninths
+PASS: typed source marker present: Omega_R: finite Route-2 record source space
+PASS: typed source marker present: P_0: strictly positive normalized reference law
+PASS: typed source marker present: P_h: normalized Route-2 source path with P_h << P_0
+PASS: typed source marker present: J_CR: physical center-ratio source coordinate
+PASS: typed source marker present: X,Y: physical P_R/E-T center-ratio readout variables
+
+PART 2: single-clause falsifiers
+  witness same_source: connected=None, kappa=None, c_TE=None
+PASS: same_source omission rejects typed physical cumulant
+  witness raw_moment: connected=5/9, kappa=-3, c_TE=-5/9
+PASS: raw_moment omission misses kappa zero
+  witness one_point: connected=3/4, kappa=-5/4, c_TE=-3/4
+PASS: one_point omission misses kappa zero
+  witness connected_typing: connected=None, kappa=None, c_TE=None
+PASS: connected_typing omission rejects kappa
+  witness unit: connected=8/9, kappa=0, c_TE=-4/9
+PASS: unit omission keeps kappa zero
+PASS: unit omission changes signed readout
+  witness orientation: connected=8/9, kappa=0, c_TE=8/9
+PASS: orientation omission keeps kappa zero
+PASS: orientation omission changes signed readout
+PASS: six single-clause falsifiers recorded
+
+PART 3: scope firewall
+PASS: note contains boundary marker: Actual current-surface status: open; candidate primitive proposal pending external adoption
+PASS: note contains boundary marker: does not edit the primitive registry
+PASS: note contains boundary marker: This is not an audit verdict
+PASS: note contains boundary marker: It does not quote the endpoint value
+PASS: note contains boundary marker: Only after explicit acceptance could downstream notes cite it as an adopted input
+PASS: note contains boundary marker: Even panel passage does not make the primitive accepted by the repo
+PASS: explicit non-import marker present: rho_E non-import
+PASS: explicit non-import marker present: q_E non-import
+PASS: explicit non-import marker present: endpoint-value reversal non-import
+PASS: explicit non-import marker present: fit-derived source weights non-import
+PASS: explicit non-import marker present: observed quark values non-import
+PASS: forbidden import assertion absent: rho_E assignment
+PASS: forbidden import assertion absent: q_E assignment
+PASS: forbidden import assertion absent: endpoint-value input
+PASS: forbidden import assertion absent: observed-value input
+PASS: forbidden import assertion absent: fit-selector input
+PASS: banned overclaim marker absent: branch-local status-promotion
+PASS: banned overclaim marker absent: future retention
+PASS: banned overclaim marker absent: promotion-to-retention
+PASS: banned overclaim marker absent: actual-surface retention
+PASS: banned overclaim marker absent: audit ratification
+PASS: banned overclaim marker absent: observed-target import
+PASS: banned overclaim marker absent: fitted-selector import
+PASS: banned overclaim marker absent: target-observation import
+PASS: banned overclaim marker absent: data-tuned-selector import
+
+PART 4: trace to blocker
+PASS: Block150 names physical same-source selector realization
+PASS: Block149 names missing primitive
+PASS: Block148 requires full clause set
+PASS: Block147 gives uv=1/9 selector support
+PASS: candidate S1-S6 covers same-source surface
+PASS: candidate S1-S6 covers raw moment
+PASS: candidate S1-S6 covers one-point product
+PASS: candidate S1-S6 covers unit calibration
+PASS: candidate S1-S6 covers orientation separation
+
+PART 5: physicist panel certificate
+PASS: panel marker present: PANEL_RESULT: PASS
+PASS: panel marker present: reviewer_count: 5
+PASS: panel marker present: passes: 5
+PASS: panel marker present: objections: 0
+PASS: panel marker present: Physicist A
+PASS: panel marker present: Physicist B
+PASS: panel marker present: Physicist C
+PASS: panel marker present: Physicist D
+PASS: panel marker present: Physicist E
+PASS: panel gate covered: mathematically coherent
+PASS: panel gate covered: endpoint-independent
+PASS: panel gate covered: non-circular
+PASS: panel gate covered: single route-2 source/readout premise
+PASS: panel gate covered: non-laundering boundaries
+
+PART 6: loop pack
+PASS: loop pack file exists: STATE.yaml
+PASS: loop pack file exists: GOAL.md
+PASS: loop pack file exists: ASSUMPTIONS_AND_IMPORTS.md
+PASS: loop pack file exists: ROUTE_PORTFOLIO.md
+PASS: loop pack file exists: OPPORTUNITY_QUEUE.md
+PASS: loop pack file exists: NO_GO_LEDGER.md
+PASS: loop pack file exists: LITERATURE_BRIDGES.md
+PASS: loop pack file exists: ARTIFACT_PLAN.md
+PASS: loop pack file exists: TRACE_GATE.md
+PASS: loop pack file exists: CLAIM_STATUS_CERTIFICATE.md
+PASS: loop pack file exists: REVIEW_HISTORY.md
+PASS: loop pack file exists: HANDOFF.md
+PASS: loop pack file exists: PR_BACKLOG.md
+PASS: loop pack file exists: PANEL_CERTIFICATE.md
+PASS: loop pack file exists: PR_BODY.md
+PASS: STATE records open status
+PASS: STATE records panel pass disposition
+PASS: certificate disallows proposal status promotion
+PASS: trace gate marks upstream support
+PASS: trace gate uses frontier_probe role
+PASS: handoff says no audit worker
+PASS: review history says panel, not audit
+
+TOTAL: PASS=95, FAIL=0
+VERDICT: the candidate Route-2 same-source selector primitive is internally coherent, endpoint-independent, panel-passed as a primitive proposal, and still open pending external adoption.

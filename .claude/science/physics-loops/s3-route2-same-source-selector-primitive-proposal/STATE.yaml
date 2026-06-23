@@ -1,0 +1,60 @@
+loop_slug: s3-route2-same-source-selector-primitive-proposal
+campaign_objective: >-
+  Propose the Route-2 same-source selector primitive that Block150 isolated,
+  then require a physicist panel to agree it is valid as a primitive proposal
+  before opening the science PR.
+block: 151
+branch: physics-loop/s3-route2-same-source-selector-primitive-proposal-block151-20260623
+base: physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
+base_commit: 3ad7775d0
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-same-source-selector-primitive-proposal-block151-20260623
+date: 2026-06-23
+mode: science_block
+actual_current_surface_status: open
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: same-source selector primitive proposal
+hard_residual: >-
+  Turn the Block150 physical same-source selector realization theorem into a
+  clean candidate primitive proposal, then validate it by a physicist panel.
+proposal_allowed: false
+proposal_allowed_reason: >-
+  This is a candidate primitive proposal, not an accepted primitive or
+  theorem-grade closure on the current surface.
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+panel_disposition: pass
+files_touched:
+  - docs/QUARK_ROUTE2_SAME_SOURCE_SELECTOR_PRIMITIVE_PROPOSAL_2026-06-23.md
+  - scripts/frontier_quark_route2_same_source_selector_primitive_proposal_2026_06_23.py
+  - outputs/frontier_quark_route2_same_source_selector_primitive_proposal_2026_06_23.txt
+  - .claude/science/physics-loops/s3-route2-same-source-selector-primitive-proposal/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_same_source_selector_primitive_proposal_2026_06_23.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_same_source_selector_primitive_proposal_2026_06_23.py | tee outputs/frontier_quark_route2_same_source_selector_primitive_proposal_2026_06_23.txt"
+  - "Adjacent guards: Block150 queue exhaustion; Block149 physical selector instantiation fan-out; Block148 same-source selector clause-independence; Block147 selector-equivalence atlas."
+  - "YAML parse check for STATE.yaml."
+  - "git diff --check"
+  - "ASCII scan across Block151 docs, runner, output, and loop pack."
+  - "Overclaim scan across 18 Block151 files."
+command_results:
+  - "py_compile: pass."
+  - "Block151 runner: TOTAL: PASS=95, FAIL=0."
+  - "Adjacent guards: Block150 82/0; Block149 79/0; Block148 79/0; Block147 113/0."
+  - "STATE.yaml YAML parse: pass."
+  - "git diff --check: pass."
+  - "ASCII scan: pass."
+  - "Overclaim scan: pass."
+imports_retired:
+  - "If externally accepted, the primitive retires the Block150 physical same-source selector realization blocker."
+open_imports:
+  - "External adoption/rejection of the proposed Route-2 same-source selector primitive."
+review_disposition: panel_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit the Block151 packet, push the science branch, open the stacked PR,
+  and patch PR identity into the loop pack.
+stop_condition: pr_pending

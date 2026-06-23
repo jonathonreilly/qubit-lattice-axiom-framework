@@ -41,20 +41,20 @@ PASS: same-source typing remains open
 PASS: mu=1 normalization remains open
 
 PART 4: same channel labels, different outputs
-  target_like: matrix=((Fraction(1, 1), Fraction(0, 1), Fraction(21, 4), Fraction(0, 1)), (Fraction(0, 1), Fraction(-2, 1), Fraction(0, 1), Fraction(2, 1))), qE=15/8, qT=5/6, shell=-2, center=-8/9
-PASS: target_like keeps block diagonal channel assignment
-PASS: target_like center ratio is rational
-  orientation_only: matrix=((Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(0, 1))), qE=1, qT=1, shell=-1, center=-1
-PASS: orientation_only keeps block diagonal channel assignment
-PASS: orientation_only center ratio is rational
-  neutral: matrix=((Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1))), qE=1, qT=1, shell=1, center=1
-PASS: neutral keeps block diagonal channel assignment
-PASS: neutral center ratio is rational
-PASS: target-like map gives -8/9
-PASS: orientation-only map gives -1
-PASS: neutral map gives +1
+  negative_unit: matrix=((Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(0, 1))), qE=1, qT=1, shell=-1, center=-1
+PASS: negative_unit keeps block diagonal channel assignment
+PASS: negative_unit center ratio is rational
+  negative_half: matrix=((Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(-1, 2), Fraction(0, 1), Fraction(0, 1))), qE=1, qT=1, shell=-1/2, center=-1/2
+PASS: negative_half keeps block diagonal channel assignment
+PASS: negative_half center ratio is rational
+  positive_unit: matrix=((Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1))), qE=1, qT=1, shell=1, center=1
+PASS: positive_unit keeps block diagonal channel assignment
+PASS: positive_unit center ratio is rational
+PASS: negative-unit map gives -1
+PASS: negative-half map gives -1/2
+PASS: positive-unit map gives +1
 PASS: same channel labels permit different center-ratio outputs
-PASS: channel assignment alone does not fix mu=1
+PASS: channel assignment alone does not fix output magnitude
 PASS: endpoint value is not used to build the counterfamily
 
 PART 5: reachability

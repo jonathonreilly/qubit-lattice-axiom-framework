@@ -83,5 +83,10 @@ PASS banned overclaim marker scan
 ## PR Identity
 
 ```text
-PENDING
+number: 4698
+url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4698
+title: [physics-loop] s3-route2 source gauge normalization block111 no-go
+base: physics-loop/s3-route2-scalar-partition-product-block110-20260622
+head: physics-loop/s3-route2-source-gauge-normalization-block111-20260622
+science_commit: 4646b8407
 ```

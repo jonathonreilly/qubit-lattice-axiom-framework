@@ -7,7 +7,7 @@ block: 121
 branch: physics-loop/s3-route2-minimal-multirecord-extension-block121-20260622
 base: physics-loop/s3-route2-current-pr-multirecord-instantiation-block120-20260622
 base_commit: fdea2df27
-science_commit: PENDING
+science_commit: e45d48a20
 worktree: /private/tmp/cl3-physics-loop-s3-route2-minimal-multirecord-extension-block121-20260622
 date: 2026-06-22
 mode: campaign
@@ -61,9 +61,9 @@ open_imports:
   - "Physical P_R/E-T identification of the minimal same-source source extension."
   - "Current-surface theorem that the Route-2 center-ratio magnitude readout consumes this connected Hessian."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4708
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4708
 next_exact_action: >-
   Prove or refute the physical P_R/E-T identification of the minimal
   same-source 1+adjoint source extension.

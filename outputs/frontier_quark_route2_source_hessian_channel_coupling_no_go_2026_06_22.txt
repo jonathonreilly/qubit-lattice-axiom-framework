@@ -1,0 +1,90 @@
+Route-2 source-Hessian channel-coupling no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block124 supplies finite row labels
+PASS: Block124 keeps source-Hessian channel coupling open
+PASS: Block123 names C3 source channel assignment
+PASS: Block121 names source coordinates J0 and JA
+PASS: Block121 names adjoint Hessian delta_AB
+PASS: source-jet no-go says finite P_R lacks source coordinates
+PASS: hidden carrier no-go says current K_R has no adjoint slot
+
+PART 2: typed domain separation
+  finite endpoint_slots: 4
+PASS: finite endpoint_slots is classified
+  finite output_rows: 2
+PASS: finite output_rows is classified
+  finite row_labels: True
+PASS: finite row_labels is classified
+  finite source_indices: False
+PASS: finite source_indices is classified
+  finite hessian_components: False
+PASS: finite hessian_components is classified
+  source source_coordinates: 9
+PASS: source source_coordinates is classified
+  source adjoint_coordinates: 8
+PASS: source adjoint_coordinates is classified
+  source identity_coordinate: 1
+PASS: source identity_coordinate is classified
+  source finite_endpoint_slots: False
+PASS: source finite_endpoint_slots is classified
+  source physical_output_rows: False
+PASS: source physical_output_rows is classified
+PASS: finite readout has E/T rows
+PASS: finite readout lacks source indices
+PASS: Block121 source has 1+8 coordinates
+PASS: Block121 source lacks finite endpoint rows by itself
+
+PART 3: arbitrary source-component assignments
+  adjoint_pair: E->H_A1A1, T->H_A2A2
+PASS: adjoint_pair preserves finite E/T row names
+PASS: adjoint_pair has two typed source selections
+  swapped_adjoint_pair: E->H_A2A2, T->H_A1A1
+PASS: swapped_adjoint_pair preserves finite E/T row names
+PASS: swapped_adjoint_pair has two typed source selections
+  identity_mixed: E->H_00, T->H_A1A1
+PASS: identity_mixed preserves finite E/T row names
+PASS: identity_mixed has two typed source selections
+  offdiag_pair: E->H_A1A2, T->H_A3A4
+PASS: offdiag_pair preserves finite E/T row names
+PASS: offdiag_pair has two typed source selections
+PASS: multiple source-component assignments preserve the same finite row labels
+PASS: finite row labels do not select one source assignment
+PASS: identity-line assignment is not excluded by row labels alone
+PASS: off-diagonal assignment is not excluded by row labels alone
+
+PART 4: reachability
+PASS: finite P_R reaches finite channel labels
+PASS: finite P_R reaches missing Phi_ET node
+PASS: finite P_R alone does not reach C3 satisfied
+PASS: Phi_ET theorem would reach C3 satisfied
+PASS: reachability graph contains no endpoint-value input
+PASS: mu=1 normalization is not smuggled into Phi_ET graph
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for finite P_R row labels alone supplying the source-Hessian E/T channel-coupling clause
+PASS: note contains marker: Phi_ET : Block121 source-Hessian components -> finite P_R E/T output rows
+PASS: note contains marker: Route-2 source-Hessian E/T channel-coupling theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block125 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=62, FAIL=0
+VERDICT: finite P_R row labels do not define Phi_ET from Block121 source-Hessian components to physical E/T output rows.

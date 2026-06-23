@@ -1,0 +1,65 @@
+loop_slug: s3-route2-source-hessian-channel-coupling
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 125
+branch: physics-loop/s3-route2-source-hessian-channel-coupling-block125-20260622
+base: physics-loop/s3-route2-pr-channel-assignment-boundary-block124-20260622
+base_commit: 89c60f64e
+science_commit: PENDING
+worktree: /private/tmp/cl3-physics-loop-s3-route2-source-hessian-channel-coupling-block125-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: Source-Hessian E/T channel-coupling clause for Block123 C3
+hard_residual: >-
+  Decide whether finite P_R row labels define Phi_ET from Block121
+  source-Hessian components to physical E/T output rows.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_SOURCE_HESSIAN_CHANNEL_COUPLING_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_source_hessian_channel_coupling_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_source_hessian_channel_coupling_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-source-hessian-channel-coupling/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_source_hessian_channel_coupling_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_channel_coupling_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_hessian_channel_coupling_no_go_2026_06_22.py > outputs/frontier_quark_route2_source_hessian_channel_coupling_no_go_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_pr_channel_assignment_boundary_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_minimal_readout_coupling_contract_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_hidden_adjoint_carrier_no_go_2026_06_22.py"
+  - "git diff --check"
+  - "STATE.yaml parse"
+  - "ASCII scan"
+  - "overclaim marker scan"
+command_results:
+  - "py_compile: PASS"
+  - "source_hessian_channel_coupling_no_go: TOTAL: PASS=62, FAIL=0"
+  - "cached output generated"
+  - "pr_channel_assignment_boundary_support: TOTAL: PASS=66, FAIL=0"
+  - "minimal_readout_coupling_contract_support: TOTAL: PASS=70, FAIL=0"
+  - "source_jet_lift_no_go: TOTAL: PASS=63, FAIL=0"
+  - "hidden_adjoint_carrier_no_go: TOTAL: PASS=60, FAIL=0"
+  - "git diff --check: PASS"
+  - "STATE.yaml parse: PASS"
+  - "ASCII scan: PASS"
+  - "overclaim marker scan: PASS"
+imports_retired:
+  - "Pruned finite P_R row labels as Phi_ET source-Hessian E/T channel-coupling."
+open_imports:
+  - "Construct Phi_ET from Block121 source-Hessian components to finite P_R E/T rows."
+  - "mu=1 normalization remains separate."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Construct Phi_ET from Block121 source-Hessian components to finite P_R E/T
+  rows, or prove the current surface cannot supply it.
+stop_condition: none

@@ -1,0 +1,111 @@
+Route-2 minimal extension readout-coupling no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block121 supplies minimal 1+adjoint source extension
+PASS: Block121 derives internal R_conn=8/9
+PASS: Block121 keeps physical P_R/E-T identification open
+PASS: Block119 names source/readout bridge as blocker
+PASS: Block120 says a same-source primitive must be added
+PASS: coefficient no-go keeps E/T normalization separate
+PASS: endpoint sign support leaves magnitude open
+
+PART 2: internal source fields versus physical readout fields
+  internal_source_jet: True
+PASS: internal_source_jet has boolean status
+  identity_factorization: True
+PASS: identity_factorization has boolean status
+  adjoint_metric: True
+PASS: adjoint_metric has boolean status
+  equal_unit_weights: True
+PASS: equal_unit_weights has boolean status
+  readout_coupling_phi: False
+PASS: readout_coupling_phi has boolean status
+  physical_center_ratio_typing: False
+PASS: physical_center_ratio_typing has boolean status
+  channel_assignment: False
+PASS: channel_assignment has boolean status
+  same_source_PR_ET_identification: False
+PASS: same_source_PR_ET_identification has boolean status
+PASS: internal Block121 source algebra is complete
+PASS: physical readout coupling remains missing
+PASS: physical center-ratio typing remains missing
+PASS: channel assignment remains missing
+PASS: same-source P_R/E-T identification remains missing
+
+PART 3: endpoint-free readout-coupling family
+  target_mu: mu=1, R=8/9, sigma=-1, c_TE=-8/9
+PASS: target_mu uses same internal R_conn
+PASS: target_mu center-ratio formula exact
+  orientation_only_mu: mu=9/8, R=8/9, sigma=-1, c_TE=-1
+PASS: orientation_only_mu uses same internal R_conn
+PASS: orientation_only_mu center-ratio formula exact
+  half_mu: mu=1/2, R=8/9, sigma=-1, c_TE=-4/9
+PASS: half_mu uses same internal R_conn
+PASS: half_mu center-ratio formula exact
+  three_quarter_mu: mu=3/4, R=8/9, sigma=-1, c_TE=-2/3
+PASS: three_quarter_mu uses same internal R_conn
+PASS: three_quarter_mu center-ratio formula exact
+PASS: coupling family gives distinct physical outputs
+PASS: target output is selected only by mu=1
+PASS: orientation-only choice gives sign without target magnitude
+PASS: source model alone does not select among mu choices
+PASS: endpoint value is not used to construct the family
+
+PART 4: required theorem clauses
+  same_source_source_jet: True
+PASS: same_source_source_jet has boolean status
+  pure_identity_factorization: True
+PASS: pure_identity_factorization has boolean status
+  unit_adjoint_hessian: True
+PASS: unit_adjoint_hessian has boolean status
+  equal_identity_adjoint_weights: True
+PASS: equal_identity_adjoint_weights has boolean status
+  physical_coupling_mu_one: False
+PASS: physical_coupling_mu_one has boolean status
+  route2_channel_assignment: False
+PASS: route2_channel_assignment has boolean status
+  same_source_PR_ET_readout: False
+PASS: same_source_PR_ET_readout has boolean status
+  endpoint_sign_after_kappa_zero: True
+PASS: endpoint_sign_after_kappa_zero has boolean status
+PASS: internal clauses reach kappa=0
+PASS: mu=1 coupling theorem is not supplied
+PASS: Route-2 channel assignment is not supplied
+PASS: same-source P_R/E-T readout theorem is not supplied
+
+PART 5: reachability
+PASS: Block121 reaches internal kappa=0
+PASS: Block121 reaches free physical coupling node
+PASS: current graph does not reach physical c_TE=-8/9
+PASS: readout-coupling theorem would reach physical c_TE=-8/9
+PASS: reachability graph contains no endpoint input node
+PASS: positive graph consumes sign after magnitude typing
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for the Block121 minimal source extension alone identifying the physical P_R/E-T center-ratio readout
+PASS: note contains marker: c_TE(mu) = sigma * mu * R_*
+PASS: note contains marker: mu = 1
+PASS: note contains marker: Route-2 minimal-extension readout-coupling theorem
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block122 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate names readout-coupling theorem
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=75, FAIL=0
+VERDICT: the Block121 minimal 1+adjoint source extension fixes internal kappa=0, but it does not identify the physical P_R/E-T readout without a Route-2 readout-coupling theorem fixing mu=1.

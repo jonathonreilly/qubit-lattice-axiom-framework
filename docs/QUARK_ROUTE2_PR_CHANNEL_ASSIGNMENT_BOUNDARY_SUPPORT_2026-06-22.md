@@ -48,11 +48,14 @@ does not supply C2 or C4.
 The same block-diagonal channel assignment permits different coefficient maps:
 
 ```text
-target-like:
-  alpha_E = 1, beta_E = 21/4, alpha_T = -2, beta_T = 2
-
-orientation-only:
+negative-unit:
   alpha_E = 1, beta_E = 0, alpha_T = -1, beta_T = 0
+
+negative-half:
+  alpha_E = 1, beta_E = 0, alpha_T = -1/2, beta_T = 0
+
+positive-unit:
+  alpha_E = 1, beta_E = 0, alpha_T = 1, beta_T = 0
 ```
 
 Both preserve the finite E/T row assignment. They give different center-ratio

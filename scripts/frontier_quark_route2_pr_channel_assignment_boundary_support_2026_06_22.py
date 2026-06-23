@@ -151,13 +151,10 @@ def part3_contract_coverage_boundary() -> None:
 def part4_same_channel_different_outputs() -> None:
     print()
     print("PART 4: same channel labels, different outputs")
-    target_like = PRMap(Fraction(1), Fraction(21, 4), Fraction(-2), Fraction(2))
-    orientation_only = PRMap(Fraction(1), Fraction(0), Fraction(-1), Fraction(0))
-    neutral = PRMap(Fraction(1), Fraction(0), Fraction(1), Fraction(0))
     maps = {
-        "target_like": target_like,
-        "orientation_only": orientation_only,
-        "neutral": neutral,
+        "negative_unit": PRMap(Fraction(1), Fraction(0), Fraction(-1), Fraction(0)),
+        "negative_half": PRMap(Fraction(1), Fraction(0), Fraction(-1, 2), Fraction(0)),
+        "positive_unit": PRMap(Fraction(1), Fraction(0), Fraction(1), Fraction(0)),
     }
     centers = {}
     for name, pr in maps.items():
@@ -166,11 +163,11 @@ def part4_same_channel_different_outputs() -> None:
         print(f"  {name}: matrix={matrix}, qE={pr.q_e()}, qT={pr.q_t()}, shell={pr.shell_te()}, center={pr.center_te()}")
         check(f"{name} keeps block diagonal channel assignment", matrix[0][1] == matrix[0][3] == matrix[1][0] == matrix[1][2] == 0)
         check(f"{name} center ratio is rational", isinstance(pr.center_te(), Fraction))
-    check("target-like map gives -8/9", centers["target_like"] == Fraction(-8, 9))
-    check("orientation-only map gives -1", centers["orientation_only"] == Fraction(-1))
-    check("neutral map gives +1", centers["neutral"] == Fraction(1))
+    check("negative-unit map gives -1", centers["negative_unit"] == Fraction(-1))
+    check("negative-half map gives -1/2", centers["negative_half"] == Fraction(-1, 2))
+    check("positive-unit map gives +1", centers["positive_unit"] == Fraction(1))
     check("same channel labels permit different center-ratio outputs", len(set(centers.values())) == len(centers))
-    check("channel assignment alone does not fix mu=1", centers["target_like"] != centers["orientation_only"])
+    check("channel assignment alone does not fix output magnitude", centers["negative_unit"] != centers["negative_half"])
     check("endpoint value is not used to build the counterfamily", True)
 
 

@@ -1,0 +1,76 @@
+Route-2 singlet residual independence no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block115 requires pure disconnected identity line
+PASS: Block116 retires orientation selector only
+PASS: Block117 keeps adjoint/singlet normalization separate
+PASS: source-Hessian support exposes eta family
+PASS: symmetric purity no-go keeps same-source factorization open
+
+PART 2: singlet residual eta family
+  pure_disconnected: eta=0, R=8/9, kappa=0
+PASS: pure_disconnected R matches expected
+PASS: pure_disconnected kappa matches expected
+  half_connected: eta=1/2, R=17/18, kappa=1/2
+PASS: half_connected R matches expected
+PASS: half_connected kappa matches expected
+  pure_connected: eta=1, R=1, kappa=1
+PASS: pure_connected R matches expected
+PASS: pure_connected kappa matches expected
+PASS: only eta=0 gives kappa=0 in sampled cases
+PASS: eta remains a one-parameter obstruction
+
+PART 3: factorization boundary
+  pure_raw: raw=1/9, connected=0
+PASS: pure_raw connected identity derivative matches
+  half_raw: raw=1/6, connected=1/18
+PASS: half_raw connected identity derivative matches
+  connected_raw: raw=2/9, connected=1/9
+PASS: connected_raw connected identity derivative matches
+PASS: raw second moment equal to product is extra information
+PASS: same one-point can support nonzero connected residual
+PASS: connected-cumulant formula subtracts product but does not choose raw second moment
+
+PART 4: trace boundary
+  singlet_adjoint_cross_term: forbidden
+PASS: singlet_adjoint_cross_term status classified
+  adjoint_contraction: unique_up_to_scale
+PASS: adjoint_contraction status classified
+  identity_connected_residual: open
+PASS: identity_connected_residual status classified
+  invariance_forces_eta_zero: pruned
+PASS: invariance_forces_eta_zero status classified
+  same_source_factorization_theorem: missing
+PASS: same_source_factorization_theorem status classified
+PASS: invariance forcing eta=0 is pruned
+PASS: same-source factorization theorem remains missing
+PASS: identity connected residual remains open
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for SU(3) invariance plus connected-cumulant algebra forcing the identity-line residual to vanish
+PASS: note contains marker: R_cumulant(eta) = 8/9 + eta/9
+PASS: note contains marker: Route-2 identity-line pure-disconnected factorization theorem
+PASS: note contains marker: D_0 D_0 log Z = 0
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block118 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative route pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=51, FAIL=0
+VERDICT: SU(3) invariance and connected-cumulant algebra do not force the identity-line residual eta to vanish; Route-2 still needs a same-source pure-disconnected factorization theorem.

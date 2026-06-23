@@ -1,0 +1,106 @@
+Route-2 physical selector instantiation fan-out no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: Block148 names full selector bridge theorem
+PASS: Block147 supplies selector atlas
+PASS: exact readout map is carrier/readout reduction
+PASS: generic source-measure product registry is pruned
+PASS: Pcal moment realization from P_R slots is pruned
+PASS: source-jet lift remains missing
+PASS: Fisher-Riesz realization remains missing
+PASS: minimal extension leaves physical identification open
+PASS: current P_R multi-record instantiation remains absent
+PASS: unit calibration remains missing
+PASS: grounding says no endpoint value is used
+
+PART 2: fan-out clause matrix
+  frame: exact_pr_slots, missing=('source_law', 'physical_variables', 'raw_moment_one', 'connected_typing', 'product_selector', 'unit_calibration')
+PASS: exact_pr_slots has all clause keys
+PASS: exact_pr_slots missing list matches false clauses
+PASS: exact_pr_slots does not close kappa
+PASS: exact_pr_slots does not close signed bridge
+  frame: normalized_four_slot_source, missing=('physical_variables', 'raw_moment_one', 'connected_typing', 'product_selector', 'unit_calibration')
+PASS: normalized_four_slot_source has all clause keys
+PASS: normalized_four_slot_source missing list matches false clauses
+PASS: normalized_four_slot_source does not close kappa
+PASS: normalized_four_slot_source does not close signed bridge
+  frame: generic_pcal_source_measure, missing=('physical_variables', 'raw_moment_one', 'product_selector', 'unit_calibration')
+PASS: generic_pcal_source_measure has all clause keys
+PASS: generic_pcal_source_measure missing list matches false clauses
+PASS: generic_pcal_source_measure does not close kappa
+PASS: generic_pcal_source_measure does not close signed bridge
+  frame: minimal_one_plus_adjoint_extension, missing=('physical_variables', 'unit_calibration')
+PASS: minimal_one_plus_adjoint_extension has all clause keys
+PASS: minimal_one_plus_adjoint_extension missing list matches false clauses
+PASS: minimal_one_plus_adjoint_extension does not close kappa
+PASS: minimal_one_plus_adjoint_extension does not close signed bridge
+  frame: formal_binary_source_jet, missing=('physical_variables', 'product_selector', 'unit_calibration', 'orientation_sign')
+PASS: formal_binary_source_jet has all clause keys
+PASS: formal_binary_source_jet missing list matches false clauses
+PASS: formal_binary_source_jet does not close kappa
+PASS: formal_binary_source_jet does not close signed bridge
+  frame: generic_fisher_riesz, missing=('source_law', 'physical_variables', 'raw_moment_one', 'connected_typing', 'product_selector', 'unit_calibration')
+PASS: generic_fisher_riesz has all clause keys
+PASS: generic_fisher_riesz missing list matches false clauses
+PASS: generic_fisher_riesz does not close kappa
+PASS: generic_fisher_riesz does not close signed bridge
+PASS: six candidate frames were tested
+PASS: no current frame closes kappa
+PASS: no current frame closes signed bridge
+
+PART 3: exact witnesses
+PASS: four-slot normalized tangent fraction is 3/4
+PASS: four-slot normalized tangent misses kappa zero
+  neutral: raw=1, product=0, connected=1, kappa=1
+PASS: neutral kappa matches expected
+  target: raw=1, product=1/9, connected=8/9, kappa=0
+PASS: target kappa matches expected
+  off_product: raw=1, product=1/4, connected=3/4, kappa=-5/4
+PASS: off_product kappa matches expected
+  wrong_raw: raw=2/3, product=1/9, connected=5/9, kappa=-3
+PASS: wrong_raw kappa matches expected
+  mu=1/2, c_TE=-4/9
+PASS: mu=1/2 output is rational
+  mu=1, c_TE=-8/9
+PASS: mu=1 output is rational
+  mu=3/2, c_TE=-4/3
+PASS: mu=3/2 output is rational
+PASS: only mu=1 gives signed target in sampled family
+
+PART 4: reachability
+PASS: current stack reaches missing realization node
+PASS: current stack does not reach kappa zero
+PASS: current stack does not reach signed bridge
+PASS: full realization theorem reaches kappa zero
+PASS: full realization theorem reaches signed bridge
+PASS: current graph has no endpoint-value input node
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for current candidate surfaces instantiating the full Route-2 same-source selector bridge theorem
+PASS: note contains marker: Route-2 physical same-source selector realization theorem
+PASS: note contains marker: No current candidate supplies all clauses
+PASS: note contains marker: Omega_R
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block149 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative route pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=79, FAIL=0
+VERDICT: no current candidate surface instantiates the full physical same-source selector realization; the missing primitive is Omega_R/P0/P_h plus physical readouts, raw/product registry, unit calibration, and post-selector orientation.

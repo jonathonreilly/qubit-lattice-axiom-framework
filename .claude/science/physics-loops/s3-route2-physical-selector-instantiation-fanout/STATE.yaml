@@ -1,0 +1,74 @@
+loop_slug: s3-route2-physical-selector-instantiation-fanout
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 endpoint blocker; make
+  science PRs without auditing, without pushing to main, and without checking
+  PR conflict or mergeability state.
+block: 149
+branch: physics-loop/s3-route2-physical-selector-instantiation-fanout-block149-20260622
+base: physics-loop/s3-route2-same-source-selector-bridge-block148-20260622
+base_commit: df1b301dc
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-physical-selector-instantiation-fanout-block149-20260622
+date: 2026-06-22
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: physical same-source selector instantiation fan-out
+hard_residual: >-
+  Determine whether any current candidate Route-2 surface supplies the full
+  physical same-source selector realization theorem.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_PHYSICAL_SELECTOR_INSTANTIATION_FANOUT_NO_GO_2026-06-22.md
+  - scripts/frontier_quark_route2_physical_selector_instantiation_fanout_no_go_2026_06_22.py
+  - outputs/frontier_quark_route2_physical_selector_instantiation_fanout_no_go_2026_06_22.txt
+  - .claude/science/physics-loops/s3-route2-physical-selector-instantiation-fanout/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_physical_selector_instantiation_fanout_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_physical_selector_instantiation_fanout_no_go_2026_06_22.py | tee outputs/frontier_quark_route2_physical_selector_instantiation_fanout_no_go_2026_06_22.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_same_source_selector_clause_independence_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_selector_equivalence_atlas_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_measure_product_registry_transfer_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_pcal_moment_realization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_jet_lift_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_fisher_riesz_realization_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_minimal_multirecord_extension_support_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_current_pr_multirecord_instantiation_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_readout_unit_calibration_no_go_2026_06_22.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "python3 YAML parse check for STATE.yaml"
+  - "git diff --check"
+  - "perl ASCII scan over Block149 artifacts"
+  - "python3 overclaim scan over Block149 artifacts"
+command_results:
+  - "py_compile: PASS"
+  - "Block149 physical selector instantiation fan-out runner: TOTAL PASS=79, FAIL=0"
+  - "Block148 same-source selector clause-independence guard: TOTAL PASS=79, FAIL=0"
+  - "Block147 selector-equivalence atlas guard: TOTAL PASS=113, FAIL=0"
+  - "Block100 source-measure product-registry guard: TOTAL PASS=72, FAIL=0"
+  - "Block101 P-cal moment-realization guard: TOTAL PASS=75, FAIL=0"
+  - "Block97 source-jet lift guard: TOTAL PASS=63, FAIL=0"
+  - "Block130 Fisher-Riesz realization guard: TOTAL PASS=88, FAIL=0"
+  - "Block121 minimal multi-record extension guard: TOTAL PASS=62, FAIL=0"
+  - "Block120 current P_R multi-record instantiation guard: TOTAL PASS=48, FAIL=0"
+  - "Block126 source-readout unit calibration guard: TOTAL PASS=55, FAIL=0"
+  - "Route-2 exact readout map guard: PASS=11, FAIL=0"
+  - "YAML parse clean"
+  - "git diff --check clean"
+  - "ASCII scan clean"
+  - "overclaim scan clean"
+imports_retired:
+  - "Prunes current candidate surfaces as already instantiating the full physical same-source selector realization."
+open_imports:
+  - "Route-2 physical same-source selector realization theorem with Omega_R, P_0, P_h, X,Y, raw/product registry, connected typing, mu=1, and downstream sign."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit and push the Block149 branch and open the stacked PR without checking
+  conflict or mergeability state.
+stop_condition: none

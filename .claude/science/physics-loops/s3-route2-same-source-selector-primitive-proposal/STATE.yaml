@@ -7,7 +7,7 @@ block: 151
 branch: physics-loop/s3-route2-same-source-selector-primitive-proposal-block151-20260623
 base: physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
 base_commit: 3ad7775d0
-science_commit: pending
+science_commit: 4e5f22cef8a98e0c2766e0d79b8bee10b44e7c69
 worktree: /private/tmp/cl3-physics-loop-s3-route2-same-source-selector-primitive-proposal-block151-20260623
 date: 2026-06-23
 mode: science_block
@@ -51,10 +51,10 @@ imports_retired:
 open_imports:
   - "External adoption/rejection of the proposed Route-2 same-source selector primitive."
 review_disposition: panel_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4739
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4739
 next_exact_action: >-
-  Commit the Block151 packet, push the science branch, open the stacked PR,
-  and patch PR identity into the loop pack.
-stop_condition: pr_pending
+  Hand PR #4739 to the review/cherry-pick path for external adoption or
+  rejection of the proposed primitive.
+stop_condition: pr_open

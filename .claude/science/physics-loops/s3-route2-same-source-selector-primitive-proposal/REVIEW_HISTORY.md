@@ -46,3 +46,13 @@ Block150 82/0; Block149 79/0; Block148 79/0; Block147 113/0.
 Hygiene passed:
 STATE.yaml YAML parse; git diff --check; ASCII scan; overclaim scan.
 ```
+
+PR identity:
+
+```text
+PR: #4739
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4739
+Head: physics-loop/s3-route2-same-source-selector-primitive-proposal-block151-20260623
+Base: physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
+Science commit: 4e5f22cef8a98e0c2766e0d79b8bee10b44e7c69
+```

@@ -61,10 +61,14 @@ objections: 0
 ## PR
 
 ```text
-pending
+PR: #4739
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4739
+Head: physics-loop/s3-route2-same-source-selector-primitive-proposal-block151-20260623
+Base: physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
+Science commit: 4e5f22cef8a98e0c2766e0d79b8bee10b44e7c69
 ```
 
 ## Next Exact Action
 
-Commit the Block151 packet, push the science branch, open the stacked PR, and
-patch PR identity into the loop pack.
+Hand PR #4739 to the review/cherry-pick path for external adoption or
+rejection of the proposed primitive.

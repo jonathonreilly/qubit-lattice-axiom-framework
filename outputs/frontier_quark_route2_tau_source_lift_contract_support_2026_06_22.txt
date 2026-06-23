@@ -1,0 +1,89 @@
+Route-2 tau source-lift contract support
+TRACE: upstream_support
+PART 1: grounding
+PASS: Block137 names source-measure lift as missing
+PASS: Block136 consumes physical reflection
+PASS: Block134 consumes canonical P0 and odd score
+PASS: Fisher support needs supplied source surface
+PASS: grounding uses no endpoint-value theorem
+
+PART 2: sufficient lift contract
+PASS: source_space has boolean status
+PASS: slot_lift has boolean status
+PASS: source_tau has boolean status
+PASS: lift_commutes has boolean status
+PASS: invariant_reference has boolean status
+PASS: odd_physical_score has boolean status
+PASS: same_source_riesz has boolean status
+PASS: sign_after_kappa has boolean status
+PASS: L1-L4 supply physical tau
+PASS: L1-L6 supply probability surface selector
+PASS: L1-L7 supply bridge
+PASS: contract fixes mu
+PASS: complete contract yields c_TE=-8/9
+PASS: contract uses no endpoint value input
+
+PART 3: single-clause failure models
+PASS: source_space omission makes complete contract fail
+PASS: source_space omission is named exactly
+PASS: source_space omission blocks c_TE output
+PASS: slot_lift omission makes complete contract fail
+PASS: slot_lift omission is named exactly
+PASS: slot_lift omission blocks c_TE output
+PASS: source_tau omission makes complete contract fail
+PASS: source_tau omission is named exactly
+PASS: source_tau omission blocks c_TE output
+PASS: lift_commutes omission makes complete contract fail
+PASS: lift_commutes omission is named exactly
+PASS: lift_commutes omission blocks c_TE output
+PASS: invariant_reference omission makes complete contract fail
+PASS: invariant_reference omission is named exactly
+PASS: invariant_reference omission blocks c_TE output
+PASS: odd_physical_score omission makes complete contract fail
+PASS: odd_physical_score omission is named exactly
+PASS: odd_physical_score omission blocks c_TE output
+PASS: same_source_riesz omission makes complete contract fail
+PASS: same_source_riesz omission is named exactly
+PASS: same_source_riesz omission blocks c_TE output
+PASS: sign_after_kappa omission makes complete contract fail
+PASS: sign_after_kappa omission is named exactly
+PASS: sign_after_kappa omission blocks c_TE output
+PASS: all eight lift clauses were tested
+
+PART 4: reachability
+PASS: contract reaches physical tau_sc
+PASS: contract reaches odd physical score
+PASS: contract reaches same-source Riesz
+PASS: contract reaches mu_one
+PASS: contract reaches physical c_TE node
+PASS: reachability graph contains no endpoint-value input
+
+PART 5: document boundary
+PASS: note contains marker: Actual current-surface status: exact-support for a conditional tau_sc source-measure lift contract; not current-surface closure
+PASS: note contains marker: Tau Source-Lift Contract
+PASS: note contains marker: L1. source_space
+PASS: note contains marker: L7. same_source_riesz
+PASS: note contains marker: No endpoint value is used as an input
+PASS: handoff contains marker: Block138 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: review history records no audit worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=75, FAIL=0
+VERDICT: L1-L7 give a sufficient tau_sc source-measure lift contract; current construction remains open.

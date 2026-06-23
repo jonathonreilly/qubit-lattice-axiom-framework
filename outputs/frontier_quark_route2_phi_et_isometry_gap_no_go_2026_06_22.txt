@@ -1,0 +1,128 @@
+Route-2 Phi_ET isometry gap no-go
+TRACE: negative_route_pruning
+PART 1: grounding
+PASS: exact readout map gives finite P_R rows
+PASS: source-jet lift separates finite readout from source two-jets
+PASS: Block125 says row labels do not construct Phi_ET
+PASS: Block126 leaves mu free without calibration
+PASS: Block127 requires unit preservation
+PASS: typed parity cut needs same-source Hessian premise
+PASS: normalization no-go keeps scale theorem separate
+PASS: Block127 names source/readout norms as separate clauses
+
+PART 2: typed map without metric isometry
+  phi_et: True
+PASS: phi_et has boolean status
+  same_source: True
+PASS: same_source has boolean status
+  channel_assignment: True
+PASS: channel_assignment has boolean status
+  source_metric: False
+PASS: source_metric has boolean status
+  readout_metric: False
+PASS: readout_metric has boolean status
+  unit_pullback: False
+PASS: unit_pullback has boolean status
+  sign_after_kappa: True
+PASS: sign_after_kappa has boolean status
+  typed=True, isometry=False, mu=None, c_TE=None
+PASS: typed Phi_ET clauses can be present
+PASS: typed clauses alone do not define source/readout isometry
+PASS: typed clauses alone do not fix mu
+PASS: typed clauses alone do not produce physical c_TE
+PASS: missing clauses are the metric and pullback clauses
+
+PART 3: endpoint-free Phi_ET rescaling family
+  lambda=1/2, c_TE=-4/9
+PASS: lambda=1/2 is rational
+PASS: lambda=1/2 preserves typed source/readout labels
+PASS: lambda=1/2 leaves internal R_conn fixed
+PASS: lambda=1/2 output is rational
+  lambda=1, c_TE=-8/9
+PASS: lambda=1 is rational
+PASS: lambda=1 preserves typed source/readout labels
+PASS: lambda=1 leaves internal R_conn fixed
+PASS: lambda=1 output is rational
+  lambda=3/2, c_TE=-4/3
+PASS: lambda=3/2 is rational
+PASS: lambda=3/2 preserves typed source/readout labels
+PASS: lambda=3/2 leaves internal R_conn fixed
+PASS: lambda=3/2 output is rational
+  lambda=2, c_TE=-16/9
+PASS: lambda=2 is rational
+PASS: lambda=2 preserves typed source/readout labels
+PASS: lambda=2 leaves internal R_conn fixed
+PASS: lambda=2 output is rational
+PASS: different lambda choices give different physical magnitudes
+PASS: lambda=1 is only one member of the typed family
+PASS: rescaling family uses no endpoint value
+
+PART 4: single-clause failure models
+  missing phi_et: typed=False, isometry=False, c_TE=None
+PASS: phi_et omission makes complete bridge fail
+PASS: phi_et omission is named exactly
+PASS: phi_et omission blocks c_TE output
+  missing same_source: typed=False, isometry=False, c_TE=None
+PASS: same_source omission makes complete bridge fail
+PASS: same_source omission is named exactly
+PASS: same_source omission blocks c_TE output
+  missing channel_assignment: typed=False, isometry=False, c_TE=None
+PASS: channel_assignment omission makes complete bridge fail
+PASS: channel_assignment omission is named exactly
+PASS: channel_assignment omission blocks c_TE output
+  missing source_metric: typed=True, isometry=False, c_TE=None
+PASS: source_metric omission makes complete bridge fail
+PASS: source_metric omission is named exactly
+PASS: source_metric omission blocks c_TE output
+  missing readout_metric: typed=True, isometry=False, c_TE=None
+PASS: readout_metric omission makes complete bridge fail
+PASS: readout_metric omission is named exactly
+PASS: readout_metric omission blocks c_TE output
+  missing unit_pullback: typed=True, isometry=False, c_TE=None
+PASS: unit_pullback omission makes complete bridge fail
+PASS: unit_pullback omission is named exactly
+PASS: unit_pullback omission blocks c_TE output
+  missing sign_after_kappa: typed=True, isometry=True, c_TE=None
+PASS: sign_after_kappa omission makes complete bridge fail
+PASS: sign_after_kappa omission is named exactly
+PASS: sign_after_kappa omission blocks c_TE output
+PASS: all seven typed/isometry clauses were tested
+
+PART 5: reachability
+PASS: typed Phi_ET reaches free metric scale
+PASS: typed Phi_ET does not satisfy C4
+PASS: metric-isometry theorem reaches unit pullback
+PASS: metric-isometry theorem reaches mu_one
+PASS: metric-isometry theorem reaches physical c_TE
+PASS: reachability graph contains no endpoint-value input
+PASS: reachability graph keeps typed map and metric theorem distinct
+PASS: C4 satisfaction is downstream of mu_one
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: no-go for typed Phi_ET existence alone proving source-readout isometry or mu=1
+PASS: note contains marker: Typing and isometry are separate clauses
+PASS: note contains marker: Phi_ET^(lambda) = lambda Phi_ET
+PASS: note contains marker: mu(lambda) = lambda
+PASS: note contains marker: Route-2 source/readout metric-isometry theorem
+PASS: handoff contains marker: Block128 Summary
+PASS: handoff contains marker: negative_route_pruning
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks negative pruning
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=93, FAIL=0
+VERDICT: typed Phi_ET existence alone does not prove source-readout isometry or mu=1; a metric pullback theorem is still required.

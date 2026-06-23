@@ -1,0 +1,85 @@
+Route-2 adjoint invariant contraction uniqueness support
+TRACE: upstream_support
+PART 1: grounding
+PASS: Block115 uses orientation-free Killing contraction
+PASS: Block115 leaves covariant multi-record family open
+PASS: covariant scalarization before E/T typing is pruned
+PASS: invariant scalar output has zero first-order response
+PASS: connected Hessian support names same-source primitive
+
+PART 2: exact sl_3 adjoint linear algebra
+  basis=('E12', 'E23', 'E13', 'E21', 'E32', 'E31', 'H1', 'H2')
+  generators=('E12', 'E23', 'E21', 'E32')
+PASS: basis has eight adjoint directions
+PASS: four Chevalley generators used
+PASS: coordinates recover basis vectors
+PASS: all basis matrices are traceless
+PASS: Killing form is nondegenerate
+PASS: Killing form is covariantly invariant
+PASS: inverse Killing tensor is contravariantly invariant
+
+PART 3: invariant tensor dimensions
+  invariant covector dim=0
+  invariant symmetric covariant form dim=1
+  invariant symmetric contravariant tensor dim=1
+  invariant bilinear form dim=1
+PASS: no nonzero invariant adjoint covector
+PASS: symmetric invariant bilinear forms are one-dimensional
+PASS: symmetric invariant contraction tensors are one-dimensional
+PASS: all invariant bilinear forms are one-dimensional
+PASS: linear orientation selector is impossible
+
+PART 4: contraction and normalization boundary
+  inverse-Killing contraction sample=5/3
+  scaled contraction sample=10/3
+  normalized selector kappa=0, scaled selector kappa=8
+PASS: inverse-Killing contraction is nonzero on a generic Hessian
+PASS: overall scale changes the scalar readout
+PASS: normalized 8/9 selector gives kappa=0
+PASS: unfixed factor two does not give kappa=0
+PASS: uniqueness still leaves coefficient normalization load-bearing
+
+PART 5: trace boundary
+  adjoint_covector_selector: forbidden
+PASS: adjoint_covector_selector status classified
+  symmetric_hessian_linear_contraction: unique_up_to_scale
+PASS: symmetric_hessian_linear_contraction status classified
+  killing_contraction_clause: exact_support
+PASS: killing_contraction_clause status classified
+  covariant_multirecord_source: open
+PASS: covariant_multirecord_source status classified
+  coefficient_source_normalization: open
+PASS: coefficient_source_normalization status classified
+PASS: external adjoint covector route is pruned
+PASS: Killing contraction clause is exact support
+PASS: source/readout family remains open
+PASS: normalization remains open
+
+PART 6: document boundary
+PASS: note contains marker: Actual current-surface status: exact-support for the invariant-contraction clause only
+PASS: note contains marker: Hom_SU3(adj, 1) = 0
+PASS: note contains marker: Hom_SU3(Sym^2(adj), 1) = 1
+PASS: note contains marker: orientation-free linear scalar readout on a symmetric adjoint Hessian is unique up to scale
+PASS: note contains marker: No endpoint value is used
+PASS: handoff contains marker: Block116 Summary
+PASS: handoff contains marker: upstream_support
+PASS: handoff contains marker: Do not audit
+PASS: handoff contains marker: Next Exact Action
+PASS: certificate keeps proposal disallowed
+PASS: trace gate marks upstream support
+PASS: state records no audit stop condition
+PASS: review history records no review-loop worker
+PASS: banned marker absent: branch-local status-promotion
+PASS: banned marker absent: future retention
+PASS: banned marker absent: promotion-to-retention
+PASS: banned marker absent: actual-surface retention
+PASS: banned marker absent: parent closure
+PASS: banned marker absent: current-surface endpoint derivation
+PASS: banned marker absent: audit ratification
+PASS: banned marker absent: observed-target import
+PASS: banned marker absent: fitted-selector import
+PASS: banned marker absent: target-observation import
+PASS: banned marker absent: data-tuned-selector import
+
+TOTAL: PASS=55, FAIL=0
+VERDICT: the orientation-free linear scalar contraction on a covariant sl_3 adjoint Hessian is unique up to scale; Block115's Killing contraction does not import a color-orientation selector, but the Route-2 source/readout family and normalization remain open.

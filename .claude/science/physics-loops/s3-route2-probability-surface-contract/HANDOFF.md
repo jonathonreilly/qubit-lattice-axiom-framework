@@ -55,7 +55,13 @@ overclaim marker scan: PASS
 ## PR
 
 ```text
-pending
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4718
+Number: 4718
+Title: [physics-loop] s3-route2 probability surface contract block131 exact-support
+State: OPEN
+Base: physics-loop/s3-route2-fisher-riesz-realization-no-go-block130-20260622
+Head: physics-loop/s3-route2-probability-surface-contract-block131-20260622
+Science commit: 1473b493c
 ```
 
 ## Next Exact Action

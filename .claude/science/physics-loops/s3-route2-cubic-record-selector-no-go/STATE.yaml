@@ -7,7 +7,7 @@ block: 152
 branch: physics-loop/s3-route2-cubic-record-selector-no-go-block152-20260625
 base: physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
 base_commit: 3ad7775d0
-science_commit: pending
+science_commit: e2c4a04628f1064008e2bd39f95275f7430d7908
 worktree: /private/tmp/cl3-physics-loop-s3-route2-cubic-record-selector-no-go-block152-20260625
 date: 2026-06-25
 mode: run
@@ -50,10 +50,11 @@ open_imports:
   - "Route-2 physical same-source selector realization theorem."
   - "Route-2 source/readout unit calibration mu=1."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4742
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4742
 next_exact_action: >-
-  Commit the block, push the branch, open a stacked PR against Block150, then
-  update PR identity in this loop pack.
+  Hand PR #4742 to the review/cherry-pick path. Do not reopen this route as a
+  primitive proposal; the remaining positive target is the Route-2 cubic-axis
+  readout identification theorem.
 stop_condition: none

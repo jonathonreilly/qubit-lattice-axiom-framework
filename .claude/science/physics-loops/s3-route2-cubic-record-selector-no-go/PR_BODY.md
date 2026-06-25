@@ -55,3 +55,13 @@ construct Omega_R/P_0/P_h and prove that the physical P_R/E-T readouts are one
 same-source signed cubic-axis record, or an equivalent same-source product
 record, forcing E[XY]=1 and E[X]E[Y]=1/9 without endpoint inputs.
 ```
+
+## PR Identity
+
+```text
+PR: #4742
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4742
+Head: physics-loop/s3-route2-cubic-record-selector-no-go-block152-20260625
+Base: physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
+Science commit: e2c4a04628f1064008e2bd39f95275f7430d7908
+```

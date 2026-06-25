@@ -53,10 +53,12 @@ overclaim scan: pass
 
 ## PR
 
-Pending. Open one stacked PR against:
-
 ```text
-physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
+PR: #4742
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4742
+Head: physics-loop/s3-route2-cubic-record-selector-no-go-block152-20260625
+Base: physics-loop/s3-route2-source-readout-primitive-queue-exhaustion-block150-20260622
+Science commit: e2c4a04628f1064008e2bd39f95275f7430d7908
 ```
 
 Do not refresh or rebase existing PRs to main. Do not check PR conflict or
@@ -64,4 +66,6 @@ mergeability state.
 
 ## Next Exact Action
 
-Commit, push, open the stacked PR, then record PR identity in the loop pack.
+Hand PR #4742 to the review/cherry-pick path. Do not reopen this route as a
+primitive proposal; the remaining positive target is the Route-2 cubic-axis
+readout identification theorem.

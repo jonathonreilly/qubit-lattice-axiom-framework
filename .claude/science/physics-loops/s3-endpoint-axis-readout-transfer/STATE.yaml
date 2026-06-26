@@ -50,8 +50,8 @@ checks:
   old_shorthand_scan: pass
 review_disposition: self_review_pass
 pr:
-  number: null
-  url: null
+  number: 4744
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4744
   head: physics-loop/s3-endpoint-axis-readout-transfer-block154-20260626
   base: prior Block153 branch
-next_exact_action: open the review PR, then continue with the physical endpoint transfer theorem
+next_exact_action: continue with the physical endpoint transfer theorem

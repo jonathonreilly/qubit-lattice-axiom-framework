@@ -1,13 +1,10 @@
 # PR Backlog
 
-PR not opened yet.
+No backlog. PR opened:
 
-Expected command:
-
-```bash
-gh pr create \
-  --base physics-loop/s3-route2-cubic-record-selector-no-go-block152-20260625 \
-  --head physics-loop/s3-route2-cubic-axis-readout-identification-block153-20260626 \
-  --title "[physics-loop] s3-route2 cubic-axis readout block153 exact-support" \
-  --body-file .claude/science/physics-loops/s3-route2-cubic-axis-readout-support/PR_BODY.md
+```text
+PR: #4743
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4743
+Head: physics-loop/s3-route2-cubic-axis-readout-identification-block153-20260626
+Base: physics-loop/s3-route2-cubic-record-selector-no-go-block152-20260625
 ```

@@ -18,3 +18,10 @@ Review focus:
 - no framework primitive proposal;
 - transfer theorem remains explicit;
 - runner checks support and firewall, not only arithmetic.
+
+## PR Identity
+
+```text
+PR: #4743
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4743
+```

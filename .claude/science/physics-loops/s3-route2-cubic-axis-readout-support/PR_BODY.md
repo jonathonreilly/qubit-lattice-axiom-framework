@@ -56,3 +56,13 @@ prove that the physical P_R/E-T readouts X,Y are +/- chi_mu on the same
 Route-2 source, with the S3-invariant axis law and connected-subtraction
 typing inherited physically rather than asserted.
 ```
+
+## PR Identity
+
+```text
+PR: #4743
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4743
+Head: physics-loop/s3-route2-cubic-axis-readout-identification-block153-20260626
+Base: physics-loop/s3-route2-cubic-record-selector-no-go-block152-20260625
+Science commit: 1079f7ef8af3c7cb89bd4a6342be131190b6089c
+```

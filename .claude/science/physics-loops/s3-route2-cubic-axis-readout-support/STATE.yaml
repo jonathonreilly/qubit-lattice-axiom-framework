@@ -1,0 +1,58 @@
+loop_slug: s3-route2-cubic-axis-readout-support
+campaign_objective: >-
+  Pursue the positive Route-2 cubic-axis readout theory isolated by Block152,
+  without auditing, without applying verdicts, without proposing new
+  framework primitives, and without pushing to main.
+block: 153
+branch: physics-loop/s3-route2-cubic-axis-readout-identification-block153-20260626
+base: physics-loop/s3-route2-cubic-record-selector-no-go-block152-20260625
+base_commit: 4ff81c53b
+science_commit: pending
+worktree: /private/tmp/cl3-physics-loop-s3-route2-cubic-axis-readout-identification-block153-20260626
+date: 2026-06-26
+mode: run
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: abstract S3-covariant cubic-axis signed readout theorem
+hard_residual: >-
+  Convert the Block152 positive one-vs-two signed collapse shape into an exact
+  theorem and identify the remaining physical Route-2 transfer clauses.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+files_touched:
+  - docs/QUARK_ROUTE2_CUBIC_AXIS_READOUT_SUPPORT_2026-06-26.md
+  - scripts/frontier_quark_route2_cubic_axis_readout_support_2026_06_26.py
+  - outputs/frontier_quark_route2_cubic_axis_readout_support_2026_06_26.txt
+  - .claude/science/physics-loops/s3-route2-cubic-axis-readout-support/
+commands_run:
+  - "python3 -m py_compile scripts/frontier_quark_route2_cubic_axis_readout_support_2026_06_26.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_cubic_axis_readout_support_2026_06_26.py | tee outputs/frontier_quark_route2_cubic_axis_readout_support_2026_06_26.txt"
+  - "Adjacent guard runners for Blocks147, 148, 149, 150, 152, graph-first selector, and graph-first SU3."
+  - "STATE.yaml YAML parse check."
+  - "git diff --check."
+  - "ASCII scan across Block153 docs, runner, output, and loop pack."
+  - "Overclaim scan across Block153 docs, runner, output, and loop pack."
+command_results:
+  - "py_compile: pass."
+  - "Block153 runner: TOTAL: PASS=203, FAIL=0."
+  - "Adjacent guards: Block147 113/0; Block148 79/0; Block149 79/0; Block150 82/0; Block152 119/0; graph-first selector 63/0; graph-first SU3 111/0."
+  - "STATE.yaml YAML parse: pass."
+  - "git diff --check: pass."
+  - "ASCII scan: pass."
+  - "Overclaim scan: pass."
+imports_retired:
+  - "Turns the Block152 positive shape into an exact abstract support theorem."
+open_imports:
+  - "Route-2 cubic-axis readout transfer theorem from the abstract axis source to physical P_R/E-T variables."
+  - "Route-2 connected-subtraction typing on the physical source/readout."
+  - "Route-2 source/readout unit calibration mu_readout=1."
+review_disposition: local_pass_no_review_loop_worker
+pr_status: pending
+pr_number: null
+pr_url: null
+next_exact_action: >-
+  Commit the block, push the branch, open a stacked PR against Block152, then
+  record PR identity.
+stop_condition: none

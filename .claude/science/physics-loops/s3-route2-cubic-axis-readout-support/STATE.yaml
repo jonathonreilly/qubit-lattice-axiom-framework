@@ -7,7 +7,7 @@ block: 153
 branch: physics-loop/s3-route2-cubic-axis-readout-identification-block153-20260626
 base: physics-loop/s3-route2-cubic-record-selector-no-go-block152-20260625
 base_commit: 4ff81c53b
-science_commit: pending
+science_commit: 1079f7ef8af3c7cb89bd4a6342be131190b6089c
 worktree: /private/tmp/cl3-physics-loop-s3-route2-cubic-axis-readout-identification-block153-20260626
 date: 2026-06-26
 mode: run
@@ -49,10 +49,10 @@ open_imports:
   - "Route-2 connected-subtraction typing on the physical source/readout."
   - "Route-2 source/readout unit calibration mu_readout=1."
 review_disposition: local_pass_no_review_loop_worker
-pr_status: pending
-pr_number: null
-pr_url: null
+pr_status: open
+pr_number: 4743
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4743
 next_exact_action: >-
-  Commit the block, push the branch, open a stacked PR against Block152, then
-  record PR identity.
+  Hand PR #4743 to the review/cherry-pick path. The next positive target is
+  the physical Route-2 cubic-axis readout transfer theorem.
 stop_condition: none

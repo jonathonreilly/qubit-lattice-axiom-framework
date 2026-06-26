@@ -1,15 +1,11 @@
 # PR Backlog
 
-PR creation is pending branch push.
+No PR backlog remains for this block.
 
-Intended head:
+Created PR:
 
 ```text
+PR: #4745
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4745
 physics-loop/s3-endpoint-witness-selection-block155-20260626
-```
-
-Intended base:
-
-```text
-physics-loop/s3-endpoint-axis-readout-transfer-block154-20260626
 ```

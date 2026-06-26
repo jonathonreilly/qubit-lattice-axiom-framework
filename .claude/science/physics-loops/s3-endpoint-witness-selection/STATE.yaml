@@ -52,8 +52,8 @@ checks:
   old_shorthand_scan: pass
 review_disposition: self_review_pass
 pr:
-  number: null
-  url: null
+  number: 4745
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4745
   head: physics-loop/s3-endpoint-witness-selection-block155-20260626
   base: physics-loop/s3-endpoint-axis-readout-transfer-block154-20260626
-next_exact_action: open the review PR, then attempt radial source-measure bias theorem
+next_exact_action: attempt radial source-measure bias theorem

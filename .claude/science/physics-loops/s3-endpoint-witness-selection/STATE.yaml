@@ -1,0 +1,59 @@
+loop_slug: s3-endpoint-witness-selection
+block: 155
+date: 2026-06-26
+mode: science_pr
+target: physical S3 endpoint witness selection theorem
+active_route: radial 2-to-1 bias reduction and current-source no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+artifact_role: no_go
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+audit_workers_run: false
+audit_verdicts_applied: false
+main_push: false
+mergeability_checked: false
+stop_condition: none
+files_touched:
+  - docs/S3_ENDPOINT_WITNESS_SELECTION_NO_GO_2026-06-26.md
+  - scripts/frontier_s3_endpoint_witness_selection_no_go_2026_06_26.py
+  - outputs/frontier_s3_endpoint_witness_selection_no_go_2026_06_26.txt
+  - .claude/science/physics-loops/s3-endpoint-witness-selection/
+open_imports:
+  - physical radial 1:2 or 2:1 source-measure bias
+  - physical same-type-pair endpoint quotient
+  - same-source endpoint readout identification with signed S3 axis variable
+  - connected-subtraction typing on the physical endpoint source
+  - unit readout calibration
+no_go_routes:
+  - ordinary signed-quotient and positivity controls selecting a witness
+  - shell/center reflection symmetry selecting a witness
+  - formal identity four-slot lift selecting a physical witness
+  - uniform four-slot law as a witness source
+checks:
+  py_compile: pass
+  primary_runner: "TOTAL: PASS=137, FAIL=0"
+  adjacent_guards:
+    block154_endpoint_axis_readout_transfer_classification: "TOTAL: PASS=489, FAIL=0"
+    source_measure_bias_no_go: "TOTAL: PASS=87, FAIL=0"
+    source_measure_bias_stretch_no_go: "TOTAL: PASS=76, FAIL=0"
+    signed_quotient_classification_no_go: "TOTAL: PASS=67, FAIL=0"
+    shell_center_reflection_selector_support: "TOTAL: PASS=119, FAIL=0"
+    identity_source_lift_no_go: "TOTAL: PASS=102, FAIL=0"
+    block153_signed_axis_support: "TOTAL: PASS=203, FAIL=0"
+    exact_endpoint_readout_map: "PASS=11 FAIL=0"
+    canonical_p0_selector_no_go: "TOTAL: PASS=82, FAIL=0"
+  yaml_parse: pass
+  git_diff_check: pass
+  ascii_scan: pass
+  overclaim_scan: pass
+  old_shorthand_scan: pass
+review_disposition: self_review_pass
+pr:
+  number: null
+  url: null
+  head: physics-loop/s3-endpoint-witness-selection-block155-20260626
+  base: physics-loop/s3-endpoint-axis-readout-transfer-block154-20260626
+next_exact_action: open the review PR, then attempt radial source-measure bias theorem

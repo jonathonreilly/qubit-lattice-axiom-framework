@@ -68,7 +68,12 @@ old shorthand scan on new artifacts: pass
 
 ## PR
 
-Pending creation.
+```text
+PR: #4744
+URL: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4744
+Head: physics-loop/s3-endpoint-axis-readout-transfer-block154-20260626
+Science commit: 6ecb38476
+```
 
 Do not refresh or rebase existing PRs to main. Do not check PR conflict or
 mergeability state.

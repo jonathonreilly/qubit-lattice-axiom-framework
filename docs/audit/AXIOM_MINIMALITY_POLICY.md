@@ -173,10 +173,11 @@ Recorded explicitly approved primitive:
     about the regulator, the time-direction analogue of the `LATTICE` axiom's
     spatial cubic adjacency `a_x = a_y = a_z` (a structural premise already
     accepted at axiom grade). It is irreducible for premise accounting:
-    `Lattice + Quantum + Record` + emergent-time + reflection positivity do not
-    supply a value of `c_t/c_s`, the scale reference carries no dimensionless
-    ratio, and since `c_t = c_s` is itself the emergent-Lorentz output, deriving
-    it from those structures would be circular. The adjacent freedoms are not
+    `Lattice + Qubit + Actualization + Record` + emergent-time + reflection
+    positivity do not supply a value of `c_t/c_s`, the scale reference carries
+    no dimensionless ratio, and since `c_t = c_s` is itself the
+    emergent-Lorentz output, deriving it from those structures would be
+    circular. The adjacent freedoms are not
     supplied here: the absolute scale belongs to `scale_reference_primitive`,
     while any spacing-ratio/reachability claims remain in their own derivation
     rows.
@@ -187,7 +188,7 @@ Recorded explicitly approved primitive:
     dimensionless **dynamical** content. Depending on this primitive cannot
     supply a physical observable, and the purity guard must keep the source note
     inside that boundary.
-  - **Scope.** The minimal framework baseline remains the three named axioms.
+  - **Scope.** The minimal framework baseline remains the four named axioms.
     This primitive does not re-axiomatize time: the emergent single-clock
     evolution remains derived, and only the one graining ratio `c_t/c_s` is
     fixed. It supplies no dynamics, no fourth spatial dimension, and no
@@ -206,7 +207,8 @@ promoted to axiom or primitive class):
   ten-persona adversarial physics panel (round 1: 9 reservations + 1 objection;
   round 2: 10/10 pass, no objections).
   - **Why it is admissible.** It is the laws-versus-initial-conditions floor
-    made explicit: the three axioms fix the carrier, adjacency, and registration
+    made explicit: the framework axioms fix the carrier, adjacency,
+    actualization interface, and registration
     structure, and a state is an additional datum no state-blind structure can
     supply. Irreducibility is exhibited case by case on exact instances
     (state-blind dynamics with state-contingent registered outcomes; no derived

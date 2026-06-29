@@ -69,10 +69,11 @@ The reset improves premise hygiene by replacing an untyped realization/record
 surface with four separated ontology roles:
 
 - **Lattice** says where physical locality is carried.
-- **Qubit** says each site carries one primitive two-level field of site
-  possibility.
-- **Admissibility** says nearby records locally constrain which possibilities
-  are available at a site.
+- **Qubit** says each site has the same unconstrained one-site possibility
+  algebra.
+- **Admissibility** says one fixed finite-neighborhood rule, translated over the
+  lattice, determines which possibilities are available from neighborhood
+  records.
 - **Record** says a record locks one available possibility at its site and
   supports finite scalar readout additivity over disjoint record collections.
 

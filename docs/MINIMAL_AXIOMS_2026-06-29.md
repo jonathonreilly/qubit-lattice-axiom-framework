@@ -89,11 +89,11 @@ Tier-A admissions recorded in `docs/audit/data/tier_a_admissions.json`.
 
 ## Relation To Dynamics And Kinetic Branch Selection
 
-Admissibility is not a dynamics axiom. It constrains availability of site
-possibility relative to nearby records; it does not choose a Hamiltonian or
-transfer operator, supply transition probabilities or weights, select a scalar
-or nonzero kinetic branch, assert a Dirac-square carrier, define a time metric,
-or provide a record-production process.
+Admissibility is not a dynamics axiom. It uses surrounding neighborhood records
+to determine which site possibilities are available; it does not choose a
+Hamiltonian or transfer operator, supply transition probabilities or weights,
+select a scalar or nonzero kinetic branch, assert a Dirac-square carrier, define
+a time metric, or provide a record-production process.
 
 Static spatial kinetic questions, probability/process questions, and temporal
 evolution questions should be tracked separately. A realized kinetic branch, if
@@ -126,11 +126,12 @@ fixed `K`/CPT conjugation were supplied. This reset separates generic site
 possibility, local admissibility, and fixed records from context-specific
 readout structure:
 
-- Qubit names the unconstrained one-site possibility algebra.
-- Admissibility names the finite-neighborhood rule that determines availability
-  from nearby records.
-- Record names the fixed locking of one available possibility at a site, plus
-  finite scalar readout additivity over disjoint record collections.
+- Qubit names the unconstrained one-site possibility algebra and its domain of
+  local possibilities.
+- Admissibility names the finite-neighborhood rule that uses surrounding
+  neighborhood records to determine available site possibilities.
+- Record names the fixed locking of one available local possibility, plus finite
+  scalar readout additivity over disjoint record collections.
 - `K`/CPT orbit structure, central-sector decomposition, and any sector
   generation rule are downstream readout-context content, not generic axiom
   content.
@@ -161,7 +162,7 @@ additivity as the third explicitly approved premise. The 2026-06-05 memo refined
 Record to durable realized-outcome registration in a supplied readout context.
 
 This memo exposes the remaining minimal ontology needed by the blocked audit
-lanes: records are not arbitrary mosaics. Site possibility is locally
-constrained by nearby records before a record can lock one available
-possibility. Probability, dynamics, readout contexts, and physical observable
-bridges remain downstream.
+lanes: records are not arbitrary mosaics. The admissibility rule uses
+surrounding neighborhood records to determine which site possibilities are
+available before a record can lock one available local possibility. Probability,
+dynamics, readout contexts, and physical observable bridges remain downstream.

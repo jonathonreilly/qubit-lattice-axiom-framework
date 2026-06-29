@@ -59,8 +59,8 @@ Tier-A admitted derivation targets remain exactly:
 - `theta`
 
 Admissibility does not absorb either Tier-A target. It also does not absorb the
-`realized_state_primitive`: Admissibility constrains availability of site
-possibility relative to nearby records, while the realized-state primitive
+`realized_state_primitive`: Admissibility uses surrounding neighborhood records
+to determine available site possibilities, while the realized-state primitive
 permits pointwise evaluation at a supplied law-admissible realized state.
 
 ## Blocked-Lane Impact
@@ -70,12 +70,12 @@ surface with four separated ontology roles:
 
 - **Lattice** says where physical locality is carried.
 - **Qubit** says each site has the same unconstrained one-site possibility
-  algebra.
+  algebra, which presents the domain of local possibilities.
 - **Admissibility** says one fixed finite-neighborhood rule, translated over the
-  lattice, determines which possibilities are available from neighborhood
-  records.
-- **Record** says a record locks one available possibility at its site and
-  supports finite scalar readout additivity over disjoint record collections.
+  lattice, uses surrounding neighborhood records to determine which site
+  possibilities are available.
+- **Record** says a record locks one available local possibility and supports
+  finite scalar readout additivity over disjoint record collections.
 
 This directly addresses the arbitrary-record-mosaic gap: records are not free
 assignments independent of the local constraint. It does not by itself promote
@@ -100,9 +100,10 @@ before use as load-bearing content.
 The four-axiom set is complete enough for the minimal ontology reset and for
 premise policing of record availability:
 
-- unrecorded sites carry site possibility;
-- nearby records constrain which possibilities are available;
-- a record can lock only an available possibility;
+- unrecorded sites carry local possibility;
+- surrounding neighborhood records determine which site possibilities are
+  available;
+- a record can lock only an available local possibility;
 - finite scalar record readout is additive over disjoint record collections.
 
 It is not complete enough, by itself, to unblock every predictive audit lane.
@@ -116,8 +117,8 @@ use them.
 
 The useful 30,000-foot split is:
 
-1. **Admissibility / record-availability layer.** This concerns which
-   possibilities are locally available relative to nearby records.
+1. **Admissibility / record-availability layer.** This concerns which site
+   possibilities are available relative to surrounding neighborhood records.
 2. **Spatial kinetic branch layer.** This concerns whether the realized spatial
    kinetic context is scalar/trivial or a nonzero first-order Dirac-square
    carrier.

@@ -84,11 +84,12 @@ Recorded explicitly approved axiom updates:
     realized-outcome registration, but it left arbitrary record mosaics
     underconstrained. This reset states the minimal ontology directly: Lattice
     carries physical locality; Qubit names the unconstrained one-site
-    possibility algebra; Admissibility names one fixed finite-neighborhood
-    rule, the same at every lattice translate, that determines available
-    possibilities from neighborhood records; Record locks exactly one available
-    possibility at a site and gives finite scalar readout additivity over
-    finite pairwise-disjoint record collections.
+    possibility algebra and its domain of local possibilities; Admissibility
+    names one fixed finite-neighborhood rule, the same at every lattice
+    translate, that uses surrounding neighborhood records to determine available
+    site possibilities; Record locks exactly one available local possibility and
+    gives finite scalar readout additivity over finite pairwise-disjoint record
+    collections.
   - **No laundering.** Admissibility does not choose the readout context, select
     a measurement basis, provide an occurrence rule, define probabilities,
     assign weights, normalize readouts, specify an update law, provide

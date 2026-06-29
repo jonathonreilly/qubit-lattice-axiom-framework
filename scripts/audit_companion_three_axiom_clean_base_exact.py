@@ -153,7 +153,7 @@ def source_boundary_checks() -> list[Check]:
         Check(
             "Registry note records Admissibility and downstream-boundary firewall",
             "Admissibility" in node.get("note", "")
-            and "nearby records" in node.get("note", "")
+            and "neighborhood records" in node.get("note", "")
             and "context-selection rule" in node.get("note", "")
             and "downstream theory consequence" in node.get("note", ""),
             "",
@@ -178,10 +178,10 @@ def source_boundary_checks() -> list[Check]:
             "",
         ),
         Check("Note names exactly four framework axioms", "1. **Lattice**" in note and "2. **Qubit**" in note and "3. **Admissibility**" in note and "4. **Record**" in note, ""),
-        Check("Lattice locality clause is present", "Physical locality is carried by the cubic lattice `Z^3`" in note and "nearest-neighbor adjacency" in note, ""),
-        Check("Qubit site-possibility clause is present", "primitive two-level field of site\npossibility" in note and "`M_2(C)`" in note, ""),
+        Check("Lattice locality clause is present", "Physical sites are the points of the cubic lattice `Z^3`" in note and "nearest-neighbor adjacency" in note, ""),
+        Check("Qubit site-possibility clause is present", "unconstrained one-site possibility algebra" in note and "`M_2(C)`" in note, ""),
         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
-        Check("Admissibility local-constraint clause is present", "evaluated at each site using the records in a finite neighborhood" in note and "compatible with those\nneighborhood records" in note, ""),
+        Check("Admissibility local-constraint clause is present", "one fixed finite-neighborhood admissibility rule" in note and "same at every\nlattice translate" in note and "records in that site's neighborhood determine" in note, ""),
         Check("Record fixed-reality clause is present", "locks exactly one available possibility" in note and "scalar-valued finitely\nadditive functional" in note and "`I(empty)=0`" in note, ""),
         Check("Qualification is named-content-only language", "These axioms state only their named primitive content" in note, ""),
         Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
@@ -257,7 +257,7 @@ def run_checks() -> list[Check]:
         Check(
             "Admissibility: nearby records constrain which site possibilities are available",
             not is_available("up", neighborhood_records) and is_available("down", neighborhood_records),
-            "toy predicate only: records in a finite neighborhood constrain availability; no probability, transition, or dynamics is used",
+            "toy predicate only: neighborhood records constrain availability; no probability, transition, or dynamics is used",
         )
     )
 

@@ -80,12 +80,13 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   `docs/audit/data/axiom_premise_nodes.json`; they satisfy dependency closure
   without making downstream rows `retained_bounded`. The current axiom baseline
   is Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
-  nearest-neighbor locality substrate. Qubit is the one-qubit site possibility
-  field represented by the one-site algebra `M_2(C)`, with `Cl(3,0)` only as
-  equivalent notation. Admissibility is the fixed translation-invariant rule
-  evaluated at each site using records in a finite neighborhood. Record locks
-  exactly one available possibility at its site, with scalar-valued finite
-  readout additive over finite pairwise-disjoint record collections. Downstream
+  nearest-neighbor locality substrate. Qubit is the unconstrained one-site
+  possibility algebra represented by `M_2(C)`, with `Cl(3,0)` only as
+  equivalent notation. Admissibility is one fixed finite-neighborhood rule, the
+  same at every lattice translate, determining availability from neighborhood
+  records. Record locks exactly one available possibility at its site, with
+  scalar-valued finite readout additive over finite pairwise-disjoint record
+  collections. Downstream
   structures such as context selection, decomposition, `K`/CPT structure,
   sector-generation rules, weighting, normalization, probability, occurrence
   rules, update laws, measurement/decoherence dynamics, time metric,

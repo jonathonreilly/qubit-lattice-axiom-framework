@@ -34,25 +34,24 @@ document.
 
 ### Lattice / Physical Locality
 
-Physical locality is carried by the cubic lattice `Z^3`, with standard
+Physical sites are the points of the cubic lattice `Z^3`, with standard
 translation action and nearest-neighbor adjacency.
 
 ### Qubit / Site Possibility
 
-Each site carries one qubit as its primitive two-level field of site
-possibility.
+Each site has the same unconstrained one-site possibility algebra, represented
+by `M_2(C)`.
 
-As an unconstrained one-site algebra, this is represented by `M_2(C)`; a
-`Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
+A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
 adds no further primitive structure.
 
 ### Admissibility / Local Constraint
 
-Site possibility is constrained by a fixed translation-invariant rule,
-evaluated at each site using the records in a finite neighborhood.
+There is one fixed finite-neighborhood admissibility rule, the same at every
+lattice translate.
 
-A possibility is available at a site when it is compatible with those
-neighborhood records under this rule.
+At each site, the records in that site's neighborhood determine which
+possibilities are available there.
 
 ### Record / Fixed Reality
 
@@ -125,9 +124,9 @@ fixed `K`/CPT conjugation were supplied. This reset separates generic site
 possibility, local admissibility, and fixed records from context-specific
 readout structure:
 
-- Qubit names the primitive two-level field of site possibility.
-- Admissibility names the local constraint on availability relative to nearby
-  records.
+- Qubit names the unconstrained one-site possibility algebra.
+- Admissibility names the finite-neighborhood rule that determines availability
+  from nearby records.
 - Record names the fixed locking of one available possibility at a site, plus
   finite scalar readout additivity over disjoint record collections.
 - `K`/CPT orbit structure, central-sector decomposition, and any sector

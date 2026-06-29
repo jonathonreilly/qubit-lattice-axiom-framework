@@ -4,10 +4,10 @@
 **Status:** draft PR impact note for PR #4747
 
 This note maps the expected repo impact of replacing the prior
-Lattice/Quantum/Record baseline with the Lattice/Qubit/Actualization/Record
+Lattice/Quantum/Record baseline with the Lattice/Qubit/Admissibility/Record
 baseline in `docs/MINIMAL_AXIOMS_2026-06-29.md`.
 
-It does not apply any audit verdict, admit any new primitive, or refresh the
+It does not apply any audit verdict, admit any new Tier-A target, or refresh the
 generated audit ledger/queue files.
 
 ## Reviewer Instruction
@@ -27,8 +27,8 @@ The refresh should be reviewed as mechanical generated fallout from the
 
 ## Dry-Run Audit Impact
 
-A dry run on the PR branch, performed in a throwaway worktree, produced this
-mechanical impact:
+A dry run on the PR branch, performed in a throwaway worktree before the final
+Admissibility wording pass, produced this mechanical impact:
 
 - `minimal_axioms` has 290 direct graph dependents and roughly 1700 transitive
   dependents.
@@ -58,15 +58,27 @@ Tier-A admitted derivation targets remain exactly:
 - `AC_phi_lambda`
 - `theta`
 
-Actualization does not absorb either Tier-A target. It also does not absorb the
-`realized_state_primitive`: Actualization names definite realization in a
-declared context, while the realized-state primitive permits pointwise
-evaluation at a supplied law-admissible realized state.
+Admissibility does not absorb either Tier-A target. It also does not absorb the
+`realized_state_primitive`: Admissibility constrains availability of site
+possibility relative to nearby records, while the realized-state primitive
+permits pointwise evaluation at a supplied law-admissible realized state.
 
 ## Blocked-Lane Impact
 
-The reset improves premise hygiene by splitting definite realization from fixed
-registration. It does not by itself promote downstream rows that require:
+The reset improves premise hygiene by replacing an untyped realization/record
+surface with four separated ontology roles:
+
+- **Lattice** says where physical locality is carried.
+- **Qubit** says each site carries one primitive two-level field of site
+  possibility.
+- **Admissibility** says nearby records locally constrain which possibilities
+  are available at a site.
+- **Record** says a record locks one available possibility at its site and
+  supports finite scalar readout additivity over disjoint record collections.
+
+This directly addresses the arbitrary-record-mosaic gap: records are not free
+assignments independent of the local constraint. It does not by itself promote
+downstream rows that require:
 
 - readout-context selection or measurement-basis selection;
 - probability, Born weights, occurrence rules, or update laws;
@@ -84,53 +96,30 @@ before use as load-bearing content.
 
 ## Completeness Verdict
 
-The four-axiom set is complete enough for the minimal ontology:
+The four-axiom set is complete enough for the minimal ontology reset and for
+premise policing of record availability:
 
-- **Lattice** says where local sites are.
-- **Qubit** says what local alternatives exist.
-- **Actualization** says that one context-indexed outcome is realized.
-- **Record** says that the realized outcome can be fixed as a record.
+- unrecorded sites carry site possibility;
+- nearby records constrain which possibilities are available;
+- a record can lock only an available possibility;
+- finite scalar record readout is additive over disjoint record collections.
 
-It is not complete enough, by itself, to unblock the predictive audit lanes.
-The missing ingredient is not probability and not metric time. The missing
-ingredient is a law-admissibility/process layer that constrains which
-actualizations and records are allowed to occur together.
-
-A minimal candidate, if the owner decides to extend the foundation later, would
-be:
-
-> **Law / Admissible Transition.** For finite lattice regions with supplied
-> boundary records, there is a local, composable, nontrivial admissibility
-> relation on actualization/record extensions. It constrains which extensions
-> are law-admissible. It does not assign probabilities or weights, choose a
-> readout context, supply a measurement basis, define a time metric, select
-> species/gauge content, fix source/action coefficients, or identify physical
-> observables.
-
-This is the minimal missing thing at the foundation level: not a full
-Hamiltonian, not Born dynamics, not an empirical action, and not a clock.
-It is the statement that reality's actualizations are law-constrained rather
-than arbitrary.
-
-This candidate would still not, on its own, select the nonzero Dirac-square
-kinetic branch. It would make room for branch-selection theorems or admissions
-without pretending the four ontology axioms already supplied them.
+It is not complete enough, by itself, to unblock every predictive audit lane.
+The remaining predictive work belongs downstream: probability/weighting,
+readout contexts, physical observable bridges, kinetic branch selection,
+source/action structure, and temporal dynamics must be derived, bridged,
+explicitly admitted, or registered as approved primitives before audit rows may
+use them.
 
 ## Dynamics Direction
 
-The parallel dynamics handoff attacks a real obstruction: Lattice, Qubit,
-Actualization, and Record are satisfied by trivial/scalar realized behavior as
-well as by a nonzero Dirac-square kinetic branch. Actualization names that a
-context-indexed outcome is realized; it does not select which kinetic branch is
-realized.
-
 The useful 30,000-foot split is:
 
-1. **Actualization / measurement layer.** This concerns definite outcomes,
-   occurrence rules, probabilities, and update laws.
-2. **Spatial kinetic branch layer.** This concerns whether the realized
-   spatial kinetic context is scalar/trivial or a nonzero first-order
-   Dirac-square carrier.
+1. **Admissibility / record-availability layer.** This concerns which
+   possibilities are locally available relative to nearby records.
+2. **Spatial kinetic branch layer.** This concerns whether the realized spatial
+   kinetic context is scalar/trivial or a nonzero first-order Dirac-square
+   carrier.
 3. **Temporal dynamics layer.** This concerns Hamiltonians, transfer matrices,
    record preservation, clock rates, and physical persistence.
 
@@ -140,10 +129,9 @@ Brillouin-zone or lattice-Green surface, not yet about a full time-evolution
 axiom.
 
 The right next direction is therefore not to add a broad "Dynamics" axiom to
-the foundation set. If the foundation is extended, the narrow extension should
-be a law/admissible-transition principle like the candidate above. The cleaner
-route for PR #4747 is to keep it as the ontology reset, then handle kinetic
-nontriviality as a separate downstream target:
+the foundation set. PR #4747 should keep the axiom base as the ontology and
+availability reset, then handle kinetic nontriviality as a separate downstream
+target:
 
 - either derive the nonzero Dirac-square branch from retained authorities;
 - or explicitly propose a narrow realized-kinetic-branch primitive/admission
@@ -168,14 +156,7 @@ must move downstream. PR #4747 does not do that larger move.
 
 ## Pre-Review Checklist
 
-Before moving PR #4747 out of draft:
-
-- Confirm the four-axiom baseline wording in `MINIMAL_AXIOMS_2026-06-29.md`.
-- Confirm methodology docs no longer instruct agents to use the old
-  three-axiom live baseline.
-- Confirm the Tier-A registry description names the four-axiom
-  `minimal_axioms` node.
-- Decide whether a realized-kinetic-branch primitive/admission should be opened
-  as a separate PR, source note, or audit campaign.
-- Run and review the generated pipeline refresh after the foundation wording is
-  final.
+- Confirm the owner-approved axiom text in `docs/MINIMAL_AXIOMS_2026-06-29.md`.
+- Confirm the stable `minimal_axioms` registry note matches the four axiom
+  names.
+- Run the pipeline refresh only after review accepts the premise reset.

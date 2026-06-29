@@ -116,14 +116,14 @@ or genericity predicate, weighting, or state-contingent value actually
 claimed.
 
 The framework baseline (per `MINIMAL_AXIOMS_2026-06-29.md`) is the four named
-axioms Lattice, Qubit, Actualization, and Record. Lattice is the cubic `Z^3`
-lattice with nearest-neighbor adjacency. Qubit is the one-qubit operator
-algebra at each site, equivalently `M_2(ℂ)`; `Cl(3,0)` is compatible notation,
-not extra primitive spin, rotation, gauge, or geometric content. Actualization
-identifies exactly one context-indexed realized outcome for finite support and
-a declared readout context with an outcome set. Record is fixed
-context-indexed registration of the realized outcome, with finite scalar
-readout additive over finite pairwise-disjoint record collections. Additional
+axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
+lattice with nearest-neighbor adjacency. Qubit is the one-qubit site
+possibility field represented by the one-site algebra `M_2(ℂ)`; `Cl(3,0)` is
+equivalent notation, not extra primitive structure. Admissibility is the fixed
+translation-invariant rule evaluated at each site using records in a finite
+neighborhood. Record locks exactly one available possibility at its site, with
+finite scalar readout additive over finite pairwise-disjoint record
+collections. Additional
 structures such as readout-context selection, decomposition, `K`/CPT
 structure, sector-generation rules, weighting, normalization, probability,
 measurement/decoherence dynamics, occurrence rules, update laws, time metric,

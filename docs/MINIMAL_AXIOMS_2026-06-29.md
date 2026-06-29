@@ -42,6 +42,8 @@ translation action and nearest-neighbor adjacency.
 Each site has the same unconstrained one-site possibility algebra, represented
 by `M_2(C)`.
 
+The one-site possibility algebra presents the domain of local possibilities.
+
 A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
 adds no further primitive structure.
 
@@ -55,7 +57,7 @@ which site possibilities are available there.
 
 ### Record / Fixed Reality
 
-A record locks exactly one available possibility at its site; the locked
+A record locks exactly one available local possibility; the locked
 possibility is invariant under repeated readout.
 
 Only records are readable. Record readout `I` is a scalar-valued finitely

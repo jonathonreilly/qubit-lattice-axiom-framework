@@ -100,7 +100,7 @@ def record_functional(records: set[str], weights: dict[str, float]) -> float:
 
 
 def is_available(candidate: str, neighborhood_records: frozenset[str]) -> bool:
-    """Toy admissibility predicate: nearby records constrain availability."""
+    """Toy admissibility predicate: surrounding neighborhood records constrain availability."""
     return not ("blocks_up" in neighborhood_records and candidate == "up")
 
 
@@ -179,10 +179,10 @@ def source_boundary_checks() -> list[Check]:
         ),
         Check("Note names exactly four framework axioms", "1. **Lattice**" in note and "2. **Qubit**" in note and "3. **Admissibility**" in note and "4. **Record**" in note, ""),
         Check("Lattice locality clause is present", "Physical sites are the points of the cubic lattice `Z^3`" in note and "nearest-neighbor adjacency" in note, ""),
-        Check("Qubit site-possibility clause is present", "unconstrained one-site possibility algebra" in note and "`M_2(C)`" in note, ""),
+        Check("Qubit site-possibility clause is present", "unconstrained one-site possibility algebra" in note and "domain of local possibilities" in note and "`M_2(C)`" in note, ""),
         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
-        Check("Admissibility local-constraint clause is present", "one fixed finite-neighborhood admissibility rule" in note and "same at every\nlattice translate" in note and "records in that site's neighborhood determine" in note, ""),
-        Check("Record fixed-reality clause is present", "locks exactly one available possibility" in note and "scalar-valued finitely\nadditive functional" in note and "`I(empty)=0`" in note, ""),
+        Check("Admissibility local-constraint clause is present", "one fixed finite-neighborhood admissibility rule" in note and "same at every\nlattice translate" in note and "rule uses the surrounding neighborhood records" in note and "which site possibilities are available there" in note, ""),
+        Check("Record fixed-reality clause is present", "locks exactly one available local possibility" in note and "scalar-valued finitely\nadditive functional" in note and "`I(empty)=0`" in note, ""),
         Check("Qualification is named-content-only language", "These axioms state only their named primitive content" in note, ""),
         Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
@@ -255,9 +255,9 @@ def run_checks() -> list[Check]:
     neighborhood_records = frozenset({"blocks_up"})
     checks.append(
         Check(
-            "Admissibility: nearby records constrain which site possibilities are available",
+            "Admissibility: surrounding neighborhood records constrain which site possibilities are available",
             not is_available("up", neighborhood_records) and is_available("down", neighborhood_records),
-            "toy predicate only: neighborhood records constrain availability; no probability, transition, or dynamics is used",
+            "toy predicate only: surrounding neighborhood records constrain availability; no probability, transition, or dynamics is used",
         )
     )
 

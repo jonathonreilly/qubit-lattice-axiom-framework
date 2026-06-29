@@ -5,9 +5,9 @@
 **Status:** binding rule for the audit lane through completion of the full
 repo audit.
 
-`A_min` is fixed for ordinary audit work as the three named framework axioms
-in `docs/MINIMAL_AXIOMS_2026-06-05.md`: Lattice, Quantum, and Record. Approved
-framework primitives are tracked separately in
+`A_min` is fixed for ordinary audit work as the four named framework axioms
+in `docs/MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit, Actualization, and
+Record. Approved framework primitives are tracked separately in
 `docs/audit/data/axiom_premise_nodes.json`. Lane closure must close from the
 current approved premise surface by derivation, identification, bounded
 composition, or no-go boundary, not by amending that surface inside the lane.
@@ -75,6 +75,37 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
   derivation.
 
 Recorded explicitly approved axiom updates:
+
+- **2026-06-29 -- Foundation reset: Actualization made explicit.** The
+  framework axiom set is updated to the four named axioms Lattice, Qubit,
+  Actualization, and Record, with source `docs/MINIMAL_AXIOMS_2026-06-29.md`
+  and stable registry id `minimal_axioms`.
+  - **Why it is admissible.** The 2026-06-05 Record wording already depended on
+    a realized outcome. This reset exposes that latent interface as a narrow
+    Actualization axiom: for finite lattice support and a declared readout
+    context with an outcome set, a primitive actualization relation identifies
+    exactly one context-indexed realized outcome. Record then states fixed
+    context-indexed registration of that realized outcome, plus finite scalar
+    additivity over finite pairwise-disjoint record collections.
+  - **No laundering.** Actualization does not choose the readout context, select
+    a measurement basis, provide an occurrence rule, define probabilities,
+    assign weights, normalize readouts, specify an update law, provide
+    measurement/decoherence dynamics, define time metric or arrow, or identify
+    physical observables. Record does not supply readout-context selection,
+    central decomposition, `K`/CPT structure, sector-generation rule, weighting,
+    normalization, probability, occurrence rule, update law,
+    measurement/decoherence dynamics, time metric, within-sector data,
+    occupancy rule, P2/modulus, log-det, source/action, scale, local
+    observability, or arbitrary observable identification.
+  - **Boundary language.** The new memo replaces the older "does not supply"
+    wording pattern with an explicit compatibility rule: downstream structures
+    remain compatible targets, but require derivation, bridge, or explicit
+    admission before use as load-bearing content.
+  - **Scope.** Dependencies on the four framework axioms chain-satisfy without
+    bounding downstream rows. This reset invalidates prior direct
+    `minimal_axioms` audits through the axiom-premise hash guard and must be
+    re-audited by the independent audit lane where relevant. It does not itself
+    promote any downstream theory surface or apply any audit verdict.
 
 - **2026-06-05 -- Record axiom refinement.** The framework axiom set remains
   the three named axioms Lattice, Quantum, and Record, with source

@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Boundary checks for the Lattice + Quantum + Record axiom memo.
+"""Boundary checks for the Lattice + Qubit + Actualization + Record axiom memo.
 
 This runner checks elementary algebra/notation facts plus source/registry
-firewalls for docs/MINIMAL_AXIOMS_2026-06-05.md. It does not derive the axioms
-and does not import readout-context generation, sector generation, log-det
-structure, P2/modulus, measurement, dynamics, normalization, scale,
-source/action, Born weights, occupancy, or observable identification.
+firewalls for docs/MINIMAL_AXIOMS_2026-06-29.md. It does not derive the axioms
+and does not import context selection, occurrence rules, sector generation,
+log-det structure, P2/modulus, measurement, dynamics, normalization, scale,
+source/action, Born weights, occupancy, local observability, or observable
+identification.
 """
 
 from __future__ import annotations
@@ -18,7 +19,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-NOTE = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+NOTE = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 POLICY = ROOT / "docs" / "audit" / "AXIOM_MINIMALITY_POLICY.md"
 REGISTRY = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 TIER_A = ROOT / "docs" / "audit" / "data" / "tier_a_admissions.json"
@@ -98,9 +99,10 @@ def record_functional(records: set[str], weights: dict[str, float]) -> float:
     return sum(weights[r] for r in records)
 
 
-def kcpt_orbit(label: str, conjugation: dict[str, str]) -> frozenset[str]:
-    partner = conjugation.get(label, label)
-    return frozenset({label, partner})
+def actualize(outcome_set: set[str], selected: str) -> str:
+    if selected not in outcome_set:
+        raise ValueError("selected outcome is outside declared context outcome set")
+    return selected
 
 
 def source_boundary_checks() -> list[Check]:
@@ -130,7 +132,8 @@ def source_boundary_checks() -> list[Check]:
         Check("Registry canonical ids include minimal_axioms", CLAIM_ID in registry.get("canonical_ids", []), ""),
         Check("Registry node exists", bool(node), CLAIM_ID),
         Check("Registry current path points to this note", node.get("current_path") == rel(NOTE), str(node.get("current_path"))),
-        Check("Registry aliases current 2026-06-05 memo", rel(NOTE) in aliases, str(sorted(aliases))),
+        Check("Registry aliases current 2026-06-29 memo", rel(NOTE) in aliases, str(sorted(aliases))),
+        Check("Registry aliases prior 2026-06-05 Record memo", "docs/MINIMAL_AXIOMS_2026-06-05.md" in aliases, ""),
         Check("Registry aliases prior 2026-06-04 Record memo", "docs/MINIMAL_AXIOMS_2026-06-04.md" in aliases, ""),
         Check("Registry aliases 2026-05-20 local-algebra memo", "docs/MINIMAL_AXIOMS_2026-05-20.md" in aliases, ""),
         Check(
@@ -149,15 +152,17 @@ def source_boundary_checks() -> list[Check]:
             "",
         ),
         Check(
-            "Registry note records Record no-supply boundary",
-            "supplies no readout context" in node.get("note", "")
+            "Registry note records Actualization and downstream-boundary firewall",
+            "Actualization" in node.get("note", "")
+            and "context-selection rule" in node.get("note", "")
             and "downstream theory consequence" in node.get("note", ""),
             "",
         ),
-        Check("Policy records 2026-06-05 Record refinement", "2026-06-05 -- Record axiom refinement" in policy, ""),
+        Check("Policy records 2026-06-29 foundation reset", "2026-06-29 -- Foundation reset: Actualization made explicit" in policy, ""),
         Check(
-            "Policy no-laundering clause lists forbidden Record imports",
-            contains(policy, "Record does not supply the readout context, central decomposition, `K`/CPT structure, sector-generation rule, weighting, normalization, probability, measurement/decoherence dynamics, time metric"),
+            "Policy no-laundering clause lists Actualization and Record boundaries",
+            contains(policy, "Actualization does not choose the readout context, select a measurement basis, provide an occurrence rule, define probabilities")
+            and contains(policy, "Record does not supply readout-context selection, central decomposition, `K`/CPT structure"),
             "",
         ),
         Check("Tier-A genuine admitted input count remains two", tier_a.get("genuine_admitted_input_count") == 2, str(tier_a.get("genuine_admitted_input_count"))),
@@ -165,20 +170,25 @@ def source_boundary_checks() -> list[Check]:
         Check("Tier-A registry records Record as reclassified primitive", bool(record_reclass), ""),
         Check("Tier-A Record reclassification source is current memo", record_reclass.get("source") == rel(NOTE), str(record_reclass.get("source"))),
         Check(
-            "Tier-A Record boundary forbids P2/log-det/source-action laundering",
+            "Tier-A Record boundary forbids P2/log-det/source-action/context-selection laundering",
             "P2/modulus" in record_reclass.get("boundary", "")
             and "log-det" in record_reclass.get("boundary", "")
-            and "source/action" in record_reclass.get("boundary", ""),
+            and "source/action" in record_reclass.get("boundary", "")
+            and "readout-context selection" in record_reclass.get("boundary", ""),
             "",
         ),
-        Check("Note names exactly three framework axioms", "1. **Lattice**" in note and "2. **Quantum**" in note and "3. **Record**" in note, ""),
-        Check("Lattice no-supply clause is present", "does\nnot supply a dynamics" in note and "physical unit conversion" in note, ""),
-        Check("Quantum no-supply clause is present", "does not supply a\ndynamics" in note and "gauge group" in note and "physical observable bridge" in note, ""),
-        Check("Record no-supply clause is present", "record supplies no readout context" in note and "occupancy rule" in note, ""),
+        Check("Note names exactly four framework axioms", "1. **Lattice**" in note and "2. **Qubit**" in note and "3. **Actualization**" in note and "4. **Record**" in note, ""),
+        Check("Lattice locality clause is present", "The primitive site set is `Z^3`" in note and "nearest-neighbor cubic adjacency" in note, ""),
+        Check("Qubit local-alternatives clause is present", "one qubit" in note and "`A_x ~= M_2(C)`" in note, ""),
+        Check("Cl(3,0) is fenced as notation", "does not add primitive spin, rotation, gauge, or geometric content" in note, ""),
+        Check("Actualization relation clause is present", "primitive actualization relation identifies exactly one context-indexed\nrealized outcome" in note, ""),
+        Check("Record fixed-registration clause is present", "context-indexed registration of a realized outcome" in note and "`I(empty)=0`" in note, ""),
+        Check("Boundary convention is compatibility-not-primitive language", "anti-laundering rule, not an exclusion rule" in note, ""),
         Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
         Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
         Check("Open gates outside axioms include theta", "strong-CP theta admission" in note, ""),
+        Check("Open gates outside axioms include context selection and occurrence rules", "context selection" in note and "occurrence rules" in note, ""),
         Check("Open gates outside axioms include g_bare", "`g_bare = 1` convention handling" in note, ""),
         Check("Open gates outside axioms include scale self-consistency", "natural unit equals the Planck length" in note, ""),
     ]
@@ -206,9 +216,9 @@ def run_checks() -> list[Check]:
             ok_pauli = ok_pauli and eq(anticommutator(a, b), expected)
     checks.append(
         Check(
-            "Quantum: Pauli generators satisfy the Cl(3,0) anticommutator table",
+            "Qubit: Pauli matrices provide a Cl(3,0)-compatible encoding",
             ok_pauli,
-            "{sigma_i, sigma_j} = 2 delta_ij I checked as 2x2 complex matrices",
+            "{sigma_i, sigma_j} = 2 delta_ij I checked as 2x2 complex matrices; encoding is notation-only",
         )
     )
 
@@ -218,7 +228,7 @@ def run_checks() -> list[Check]:
     no_fourth_generator = True
     checks.append(
         Check(
-            "Quantum: no nonzero 2x2 complex matrix anticommutes with all three Pauli generators",
+            "Qubit: no nonzero 2x2 complex matrix anticommutes with all three Pauli generators",
             no_fourth_generator,
             "linear coefficient solve gives a=d=0, b+c=0, b-c=0, so M=0",
         )
@@ -242,6 +252,16 @@ def run_checks() -> list[Check]:
         )
     )
 
+    context_outcomes = {"left", "right", "fixed"}
+    chosen = actualize(context_outcomes, "right")
+    checks.append(
+        Check(
+            "Actualization: declared finite context outcome set returns exactly one realized outcome",
+            chosen == "right" and chosen in context_outcomes,
+            "bookkeeping check only: no occurrence rule, probability, context selection, or update law is used",
+        )
+    )
+
     weights = {"r1": 1.25, "r2": 2.5, "r3": -0.75, "r4": 4.0}
     r_left = {"r1", "r2"}
     r_right = {"r3", "r4"}
@@ -260,33 +280,21 @@ def run_checks() -> list[Check]:
         )
     )
 
-    conjugation = {"omega": "omega2", "omega2": "omega", "one": "one"}
-    orbit_pair = kcpt_orbit("omega", conjugation)
-    orbit_partner = kcpt_orbit("omega2", conjugation)
-    orbit_fixed = kcpt_orbit("one", conjugation)
+    record = {"context": "example_context", "record_id": "r1", "value": chosen}
+    durable = record["value"] == chosen == record["value"]
     checks.append(
         Check(
-            "Record: realized outcome is a K/CPT orbit of a realized central sector",
-            orbit_pair == orbit_partner and orbit_fixed == frozenset({"one"}),
-            "conjugate sector labels share one orbit; fixed labels give singleton orbits",
-        )
-    )
-
-    recorded_outcome = orbit_pair
-    durable = recorded_outcome == orbit_pair == recorded_outcome
-    checks.append(
-        Check(
-            "Record: durable means the recorded outcome is fixed once registered",
+            "Record: fixed registration preserves the context-indexed realized value",
             durable,
-            "re-reading the stored outcome does not resample, reselect, or change it",
+            "same record identity and context return the same registered value; no resampling or re-selection is used",
         )
     )
 
     checks.append(
         Check(
-            "Boundary: runner imports no context-generation/log-det/P2/measurement/dynamics/scale conclusion",
+            "Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion",
             True,
-            "script checks only algebraic notation, graph adjacency, finite orbits, durability bookkeeping, and finite additivity",
+            "script checks only algebraic notation, graph adjacency, context-indexed outcome bookkeeping, fixed registration, and finite additivity",
         )
     )
     return checks

@@ -50,8 +50,8 @@ adds no further primitive structure.
 There is one fixed finite-neighborhood admissibility rule, the same at every
 lattice translate.
 
-At each site, the records in that site's neighborhood determine which
-possibilities are available there.
+For each site, the rule uses the surrounding neighborhood records to determine
+which site possibilities are available there.
 
 ### Record / Fixed Reality
 

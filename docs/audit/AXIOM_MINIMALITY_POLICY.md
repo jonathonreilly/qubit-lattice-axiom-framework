@@ -6,7 +6,7 @@
 repo audit.
 
 `A_min` is fixed for ordinary audit work as the four named framework axioms
-in `docs/MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit, Actualization, and
+in `docs/MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit, Admissibility, and
 Record. Approved framework primitives are tracked separately in
 `docs/audit/data/axiom_premise_nodes.json`. Lane closure must close from the
 current approved premise surface by derivation, identification, bounded
@@ -76,31 +76,32 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
-- **2026-06-29 -- Foundation reset: Actualization made explicit.** The
-  framework axiom set is updated to the four named axioms Lattice, Qubit,
-  Actualization, and Record, with source `docs/MINIMAL_AXIOMS_2026-06-29.md`
+- **2026-06-29 -- Foundation reset: site possibility and local admissibility.**
+  The framework axiom set is updated to the four named axioms Lattice, Qubit,
+  Admissibility, and Record, with source `docs/MINIMAL_AXIOMS_2026-06-29.md`
   and stable registry id `minimal_axioms`.
   - **Why it is admissible.** The 2026-06-05 Record wording already depended on
-    a realized outcome. This reset exposes that latent interface as a narrow
-    Actualization axiom: for finite lattice support and a declared readout
-    context with an outcome set, a primitive actualization relation identifies
-    exactly one context-indexed realized outcome. Record then states fixed
-    context-indexed registration of that realized outcome, plus finite scalar
-    additivity over finite pairwise-disjoint record collections.
-  - **No laundering.** Actualization does not choose the readout context, select
+    realized-outcome registration, but it left arbitrary record mosaics
+    underconstrained. This reset states the minimal ontology directly: Lattice
+    carries physical locality; Qubit carries site possibility; Admissibility
+    constrains site possibility by a fixed translation-invariant rule evaluated
+    at each site using nearby records; Record locks exactly one available
+    possibility at a site and gives finite scalar readout additivity over
+    finite pairwise-disjoint record collections.
+  - **No laundering.** Admissibility does not choose the readout context, select
     a measurement basis, provide an occurrence rule, define probabilities,
     assign weights, normalize readouts, specify an update law, provide
-    measurement/decoherence dynamics, define time metric or arrow, or identify
+    measurement/decoherence dynamics, define time metric or arrow, choose a
+    Hamiltonian or transfer operator, select a kinetic branch, or identify
     physical observables. Record does not supply readout-context selection,
     central decomposition, `K`/CPT structure, sector-generation rule, weighting,
     normalization, probability, occurrence rule, update law,
     measurement/decoherence dynamics, time metric, within-sector data,
     occupancy rule, P2/modulus, log-det, source/action, scale, local
     observability, or arbitrary observable identification.
-  - **Boundary language.** The new memo replaces the older "does not supply"
-    wording pattern with an explicit compatibility rule: downstream structures
-    remain compatible targets, but require derivation, bridge, or explicit
-    admission before use as load-bearing content.
+  - **Boundary language.** The new memo states that further physical structure
+    remains compatible, but requires derivation, bridge, explicit admission, or
+    approved primitive registration before use as load-bearing content.
   - **Scope.** Dependencies on the four framework axioms chain-satisfy without
     bounding downstream rows. This reset invalidates prior direct
     `minimal_axioms` audits through the axiom-premise hash guard and must be
@@ -173,7 +174,7 @@ Recorded explicitly approved primitive:
     about the regulator, the time-direction analogue of the `LATTICE` axiom's
     spatial cubic adjacency `a_x = a_y = a_z` (a structural premise already
     accepted at axiom grade). It is irreducible for premise accounting:
-    `Lattice + Qubit + Actualization + Record` + emergent-time + reflection
+    `Lattice + Qubit + Admissibility + Record` + emergent-time + reflection
     positivity do not supply a value of `c_t/c_s`, the scale reference carries
     no dimensionless ratio, and since `c_t = c_s` is itself the
     emergent-Lorentz output, deriving it from those structures would be
@@ -208,7 +209,7 @@ promoted to axiom or primitive class):
   round 2: 10/10 pass, no objections).
   - **Why it is admissible.** It is the laws-versus-initial-conditions floor
     made explicit: the framework axioms fix the carrier, adjacency,
-    actualization interface, and registration
+    local admissibility interface, and registration
     structure, and a state is an additional datum no state-blind structure can
     supply. Irreducibility is exhibited case by case on exact instances
     (state-blind dynamics with state-contingent registered outcomes; no derived

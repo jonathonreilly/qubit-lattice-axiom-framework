@@ -8,7 +8,7 @@ audit fields, repair classes, evidence terms, prose voice). One line
 per term, with a pointer to the canonical source-of-truth doc.
 
 **Scope rule:** vocabulary is disjoint from physics. Physics
-primitives (`Cl(3)`, `Z^3`, `A_min`, Lattice, Qubit, Actualization, Record, `Axiom*`,
+primitives (`Cl(3)`, `Z^3`, `A_min`, Lattice, Qubit, Admissibility, Record, `Axiom*`,
 `g_bare`, `u_0`, `M_Pl`, `R_conn`, `alpha_s`, etc.) are **not** in this
 index. They live in
 `docs/MINIMAL_AXIOMS_2026-06-29.md` (which supersedes the 2026-06-05

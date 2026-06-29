@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Boundary checks for the Lattice + Qubit + Actualization + Record axiom memo.
+"""Boundary checks for the Lattice + Qubit + Admissibility + Record axiom memo.
 
 This runner checks elementary algebra/notation facts plus source/registry
 firewalls for docs/MINIMAL_AXIOMS_2026-06-29.md. It does not derive the axioms
@@ -99,10 +99,9 @@ def record_functional(records: set[str], weights: dict[str, float]) -> float:
     return sum(weights[r] for r in records)
 
 
-def actualize(outcome_set: set[str], selected: str) -> str:
-    if selected not in outcome_set:
-        raise ValueError("selected outcome is outside declared context outcome set")
-    return selected
+def is_available(candidate: str, neighborhood_records: frozenset[str]) -> bool:
+    """Toy admissibility predicate: nearby records constrain availability."""
+    return not ("blocks_up" in neighborhood_records and candidate == "up")
 
 
 def source_boundary_checks() -> list[Check]:
@@ -152,16 +151,17 @@ def source_boundary_checks() -> list[Check]:
             "",
         ),
         Check(
-            "Registry note records Actualization and downstream-boundary firewall",
-            "Actualization" in node.get("note", "")
+            "Registry note records Admissibility and downstream-boundary firewall",
+            "Admissibility" in node.get("note", "")
+            and "nearby records" in node.get("note", "")
             and "context-selection rule" in node.get("note", "")
             and "downstream theory consequence" in node.get("note", ""),
             "",
         ),
-        Check("Policy records 2026-06-29 foundation reset", "2026-06-29 -- Foundation reset: Actualization made explicit" in policy, ""),
+        Check("Policy records 2026-06-29 foundation reset", "2026-06-29 -- Foundation reset: site possibility and local admissibility" in policy, ""),
         Check(
-            "Policy no-laundering clause lists Actualization and Record boundaries",
-            contains(policy, "Actualization does not choose the readout context, select a measurement basis, provide an occurrence rule, define probabilities")
+            "Policy no-laundering clause lists Admissibility and Record boundaries",
+            contains(policy, "Admissibility does not choose the readout context, select a measurement basis, provide an occurrence rule, define probabilities")
             and contains(policy, "Record does not supply readout-context selection, central decomposition, `K`/CPT structure"),
             "",
         ),
@@ -177,13 +177,13 @@ def source_boundary_checks() -> list[Check]:
             and "readout-context selection" in record_reclass.get("boundary", ""),
             "",
         ),
-        Check("Note names exactly four framework axioms", "1. **Lattice**" in note and "2. **Qubit**" in note and "3. **Actualization**" in note and "4. **Record**" in note, ""),
-        Check("Lattice locality clause is present", "The primitive site set is `Z^3`" in note and "nearest-neighbor cubic adjacency" in note, ""),
-        Check("Qubit local-alternatives clause is present", "one qubit" in note and "`A_x ~= M_2(C)`" in note, ""),
-        Check("Cl(3,0) is fenced as notation", "does not add primitive spin, rotation, gauge, or geometric content" in note, ""),
-        Check("Actualization relation clause is present", "primitive actualization relation identifies exactly one context-indexed\nrealized outcome" in note, ""),
-        Check("Record fixed-registration clause is present", "context-indexed registration of a realized outcome" in note and "`I(empty)=0`" in note, ""),
-        Check("Boundary convention is compatibility-not-primitive language", "anti-laundering rule, not an exclusion rule" in note, ""),
+        Check("Note names exactly four framework axioms", "1. **Lattice**" in note and "2. **Qubit**" in note and "3. **Admissibility**" in note and "4. **Record**" in note, ""),
+        Check("Lattice locality clause is present", "Physical locality is carried by the cubic lattice `Z^3`" in note and "nearest-neighbor adjacency" in note, ""),
+        Check("Qubit site-possibility clause is present", "primitive two-level field of site\npossibility" in note and "`M_2(C)`" in note, ""),
+        Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
+        Check("Admissibility local-constraint clause is present", "evaluated at each site using the records in a finite neighborhood" in note and "compatible with those\nneighborhood records" in note, ""),
+        Check("Record fixed-reality clause is present", "locks exactly one available possibility" in note and "scalar-valued finitely\nadditive functional" in note and "`I(empty)=0`" in note, ""),
+        Check("Qualification is named-content-only language", "These axioms state only their named primitive content" in note, ""),
         Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
         Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
@@ -252,13 +252,12 @@ def run_checks() -> list[Check]:
         )
     )
 
-    context_outcomes = {"left", "right", "fixed"}
-    chosen = actualize(context_outcomes, "right")
+    neighborhood_records = frozenset({"blocks_up"})
     checks.append(
         Check(
-            "Actualization: declared finite context outcome set returns exactly one realized outcome",
-            chosen == "right" and chosen in context_outcomes,
-            "bookkeeping check only: no occurrence rule, probability, context selection, or update law is used",
+            "Admissibility: nearby records constrain which site possibilities are available",
+            not is_available("up", neighborhood_records) and is_available("down", neighborhood_records),
+            "toy predicate only: records in a finite neighborhood constrain availability; no probability, transition, or dynamics is used",
         )
     )
 
@@ -280,13 +279,13 @@ def run_checks() -> list[Check]:
         )
     )
 
-    record = {"context": "example_context", "record_id": "r1", "value": chosen}
-    durable = record["value"] == chosen == record["value"]
+    record = {"site": origin, "record_id": "r1", "possibility": "down"}
+    durable = record["possibility"] == "down" == record["possibility"]
     checks.append(
         Check(
-            "Record: fixed registration preserves the context-indexed realized value",
+            "Record: locked possibility is invariant under repeated readout",
             durable,
-            "same record identity and context return the same registered value; no resampling or re-selection is used",
+            "same record identity returns the same locked possibility; no resampling or re-selection is used",
         )
     )
 
@@ -294,7 +293,7 @@ def run_checks() -> list[Check]:
         Check(
             "Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion",
             True,
-            "script checks only algebraic notation, graph adjacency, context-indexed outcome bookkeeping, fixed registration, and finite additivity",
+            "script checks only algebraic notation, graph adjacency, local availability bookkeeping, fixed record readout, and finite additivity",
         )
     )
     return checks

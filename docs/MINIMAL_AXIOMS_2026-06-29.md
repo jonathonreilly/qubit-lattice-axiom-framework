@@ -1,4 +1,4 @@
-# Minimal Framework Axioms (Lattice, Qubit, Actualization, Record)
+# Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)
 
 > **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
 > each row points to the canonical source-of-truth doc.
@@ -6,15 +6,15 @@
 **Date:** 2026-06-29
 **Type:** meta
 **Status:** current public framework axiom memo for the qubit-on-`Z^3`
-package with an explicit actualization relation and fixed scalar record readout.
+package with local admissibility and fixed scalar record readout.
 **Status authority:** explicit owner approval for the 2026-06-29 foundation
 reset is recorded in `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
 Audit status remains set only by the independent audit lane.
 
 **Supersedes:** `MINIMAL_AXIOMS_2026-06-05.md`. The 2026-06-05 memo remains the
 historical source for the prior Lattice/Quantum/Record wording in which
-realized outcome was latent in Record rather than named as an explicit
-actualization relation.
+realized outcome was latent in Record and no explicit local admissibility
+constraint was named.
 
 ## Purpose
 
@@ -23,7 +23,7 @@ rather than treated as bare letter codes:
 
 1. **Lattice**
 2. **Qubit**
-3. **Actualization**
+3. **Admissibility**
 4. **Record**
 
 Legacy `A1`/`A2` numbering and the older `Quantum` axiom name are historical.
@@ -32,58 +32,42 @@ document.
 
 ## The Four Framework Axioms
 
-### Lattice / Locality
+### Lattice / Physical Locality
 
-Reality has a discrete locality substrate. The primitive site set is `Z^3`
-with standard translation action and nearest-neighbor cubic adjacency.
+Physical locality is carried by the cubic lattice `Z^3`, with standard
+translation action and nearest-neighbor adjacency.
 
-Local structure is finite-supported or finite graph-distance range with
-respect to this lattice when a local expression is specified.
+### Qubit / Site Possibility
 
-### Qubit / Local Alternatives
+Each site carries one qubit as its primitive two-level field of site
+possibility.
 
-At each site `x`, the primitive local quantum degree of freedom is one qubit;
-equivalently, the primitive one-site operator algebra is `A_x ~= M_2(C)`.
+As an unconstrained one-site algebra, this is represented by `M_2(C)`; a
+`Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
+adds no further primitive structure.
 
-This is the local capacity for alternatives.
+### Admissibility / Local Constraint
 
-A real `Cl(3,0)`-compatible encoding may be used as notation. This encoding
-does not add primitive spin, rotation, gauge, or geometric content.
+Site possibility is constrained by a fixed translation-invariant rule,
+evaluated at each site using the records in a finite neighborhood.
 
-### Actualization / Definite Realization
+A possibility is available at a site when it is compatible with those
+neighborhood records under this rule.
 
-For finite lattice support and a declared readout context with an outcome set,
-a primitive actualization relation identifies exactly one context-indexed
-realized outcome.
+### Record / Fixed Reality
 
-Actualization names definite realization within the declared context. It does
-not choose the context or specify an occurrence rule.
+A record locks exactly one available possibility at its site; the locked
+possibility is invariant under repeated readout.
 
-### Record / Fixed Registration
+Only records are readable. Record readout `I` is a scalar-valued finitely
+additive functional on finite pairwise-disjoint collections of records, with
+`I(empty)=0`.
 
-A record is a context-indexed registration of a realized outcome whose
-registered value is fixed within that context.
+## Qualification
 
-For any finite pairwise-disjoint collection of records, scalar record readout
-`I` is finitely additive, with `I(empty)=0`.
-
-Fixed means the registered value is an invariant of that record identity within
-the declared context.
-
-## Boundary Convention
-
-These axioms state only their named primitive content. Additional structures
-such as probability rules, update laws, metric scale, measurement basis, gauge
-content, species identity, observable bridges, source/action bridges, occurrence
-rules, context-selection rules, central-sector decompositions, `K`/CPT
-structure, weighting, normalization, log-det readouts, P2/modulus structure,
-law-admissibility or transition relations, record-production dynamics, physical
-persistence dynamics, or local observability remain compatible downstream
-targets, but require derivation, bridge, or explicit admission before use.
-
-This convention replaces the older "does not supply" wording pattern. It is an
-anti-laundering rule, not an exclusion rule: a downstream structure is not
-primitive content of an axiom merely because it is compatible with that axiom.
+These axioms state only their named primitive content. Further physical
+structure requires derivation, bridge, explicit admission, or approved
+primitive registration before use as a premise.
 
 ## Audit-Pipeline Treatment
 
@@ -97,25 +81,25 @@ checks only elementary algebra/notation sanity for the four axiom names. It
 does not derive or enlarge the axiom set.
 
 Axioms and approved primitives are not Tier-A admitted derivation targets.
-Depending on the Lattice, Qubit, Actualization, or Record axiom, or on an
+Depending on the Lattice, Qubit, Admissibility, or Record axiom, or on an
 explicitly approved primitive such as `scale_reference_primitive`, must not be
 treated as a source of bounded status. Bounded status belongs to non-axiom
 Tier-A admissions recorded in `docs/audit/data/tier_a_admissions.json`.
 
 ## Relation To Dynamics And Kinetic Branch Selection
 
-Actualization is not a dynamics axiom. It names definite realization within a
-declared context; it does not by itself select a scalar or nonzero kinetic
-branch, assert a Dirac-square carrier, choose a Hamiltonian or transfer
-operator, or provide a law-admissibility relation, record-production process,
-or temporal evolution.
+Admissibility is not a dynamics axiom. It constrains availability of site
+possibility relative to nearby records; it does not choose a Hamiltonian or
+transfer operator, supply transition probabilities or weights, select a scalar
+or nonzero kinetic branch, assert a Dirac-square carrier, define a time metric,
+or provide a record-production process.
 
-Static spatial kinetic questions, law-admissibility/process questions, and
-temporal evolution questions should be tracked separately. A realized kinetic
-branch, if proposed, is downstream content: it needs derivation, bridge,
-explicit admission, or approved primitive registry update before audit rows may
-use it as load-bearing content. The four axioms are compatible with such later
-Actualization-instance content, but do not include it.
+Static spatial kinetic questions, probability/process questions, and temporal
+evolution questions should be tracked separately. A realized kinetic branch, if
+proposed, is downstream content: it needs derivation, bridge, explicit
+admission, or approved primitive registry update before audit rows may use it
+as load-bearing content. The four axioms are compatible with such later
+content, but do not include it.
 
 ## Relation To The Older Observable-Principle Parent
 
@@ -128,21 +112,24 @@ structure. That older parent must not be moved wholesale into
 Rows that require only the Record axiom should cite this minimal-axiom
 authority. Rows that require P2/modulus, log-det, source/action, measurement,
 Born weights, readout-context selection, central-sector decomposition, `K`/CPT
-structure, law-admissibility or transition relations, record-production
-dynamics, physical persistence dynamics, local observability, or any other
-additional bridge must cite separate retained authorities or remain
-bounded/pending according to the audit ledger.
+structure, transition relations, record-production dynamics, physical
+persistence dynamics, local observability, or any other additional bridge must
+cite separate retained authorities or remain bounded/pending according to the
+audit ledger.
 
 ## Relation To The 2026-06-05 Record Wording
 
 The 2026-06-05 Record axiom named durable realized-outcome registration and
 gave a `K`/CPT orbit reading once a finite central-sector readout context and
-fixed `K`/CPT conjugation were supplied. This reset separates the generic
-actualization interface from context-specific readout structure:
+fixed `K`/CPT conjugation were supplied. This reset separates generic site
+possibility, local admissibility, and fixed records from context-specific
+readout structure:
 
-- Actualization names the primitive relation from local alternatives, under a
-  declared context, to one context-indexed realized outcome.
-- Record names fixed registration of that realized outcome.
+- Qubit names the primitive two-level field of site possibility.
+- Admissibility names the local constraint on availability relative to nearby
+  records.
+- Record names the fixed locking of one available possibility at a site, plus
+  finite scalar readout additivity over disjoint record collections.
 - `K`/CPT orbit structure, central-sector decomposition, and any sector
   generation rule are downstream readout-context content, not generic axiom
   content.
@@ -172,7 +159,8 @@ written too axiomatically. The 2026-06-04 memo added scalar finite Record
 additivity as the third explicitly approved premise. The 2026-06-05 memo refined
 Record to durable realized-outcome registration in a supplied readout context.
 
-This memo exposes a latent premise in that Record wording: realized outcome
-requires a named actualization interface. Actualization is therefore stated as
-its own narrow axiom, while context selection, probability, update dynamics,
-physical observability, and phenomenological bridges remain downstream.
+This memo exposes the remaining minimal ontology needed by the blocked audit
+lanes: records are not arbitrary mosaics. Site possibility is locally
+constrained by nearby records before a record can lock one available
+possibility. Probability, dynamics, readout contexts, and physical observable
+bridges remain downstream.

@@ -77,9 +77,9 @@ such as probability rules, update laws, metric scale, measurement basis, gauge
 content, species identity, observable bridges, source/action bridges, occurrence
 rules, context-selection rules, central-sector decompositions, `K`/CPT
 structure, weighting, normalization, log-det readouts, P2/modulus structure,
-record-production dynamics, physical persistence dynamics, or local
-observability remain compatible downstream targets, but require derivation,
-bridge, or explicit admission before use.
+law-admissibility or transition relations, record-production dynamics, physical
+persistence dynamics, or local observability remain compatible downstream
+targets, but require derivation, bridge, or explicit admission before use.
 
 This convention replaces the older "does not supply" wording pattern. It is an
 anti-laundering rule, not an exclusion rule: a downstream structure is not
@@ -102,6 +102,21 @@ explicitly approved primitive such as `scale_reference_primitive`, must not be
 treated as a source of bounded status. Bounded status belongs to non-axiom
 Tier-A admissions recorded in `docs/audit/data/tier_a_admissions.json`.
 
+## Relation To Dynamics And Kinetic Branch Selection
+
+Actualization is not a dynamics axiom. It names definite realization within a
+declared context; it does not by itself select a scalar or nonzero kinetic
+branch, assert a Dirac-square carrier, choose a Hamiltonian or transfer
+operator, or provide a law-admissibility relation, record-production process,
+or temporal evolution.
+
+Static spatial kinetic questions, law-admissibility/process questions, and
+temporal evolution questions should be tracked separately. A realized kinetic
+branch, if proposed, is downstream content: it needs derivation, bridge,
+explicit admission, or approved primitive registry update before audit rows may
+use it as load-bearing content. The four axioms are compatible with such later
+Actualization-instance content, but do not include it.
+
 ## Relation To The Older Observable-Principle Parent
 
 `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not this axiom note and is not an
@@ -113,9 +128,10 @@ structure. That older parent must not be moved wholesale into
 Rows that require only the Record axiom should cite this minimal-axiom
 authority. Rows that require P2/modulus, log-det, source/action, measurement,
 Born weights, readout-context selection, central-sector decomposition, `K`/CPT
-structure, record-production dynamics, physical persistence dynamics, local
-observability, or any other additional bridge must cite separate retained
-authorities or remain bounded/pending according to the audit ledger.
+structure, law-admissibility or transition relations, record-production
+dynamics, physical persistence dynamics, local observability, or any other
+additional bridge must cite separate retained authorities or remain
+bounded/pending according to the audit ledger.
 
 ## Relation To The 2026-06-05 Record Wording
 

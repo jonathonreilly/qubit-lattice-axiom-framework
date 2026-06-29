@@ -24,7 +24,7 @@ layers:
     governs: "Single-page A-Z index of every repo-canonical process term."
   - id: 1_framework_substantive
     source_of_truth:
-      - docs/MINIMAL_AXIOMS_2026-06-05.md
+      - docs/MINIMAL_AXIOMS_2026-06-29.md
       - docs/audit/data/axiom_premise_nodes.json
     governs: "Framework axioms and explicitly approved primitive premise nodes. Out of scope for this vocabulary."
   - id: 2_external_paper_text
@@ -440,7 +440,7 @@ scope:
     - "Filename conventions"
     - "Forbidden patterns"
   out_of_scope:
-    - "Framework axioms and approved primitive premise nodes (live in MINIMAL_AXIOMS_2026-06-05.md and docs/audit/data/axiom_premise_nodes.json)"
+    - "Framework axioms and approved primitive premise nodes (live in MINIMAL_AXIOMS_2026-06-29.md and docs/audit/data/axiom_premise_nodes.json)"
     - "Physics quantities (live in ASSUMPTION_DERIVATION_LEDGER / per-claim notes)"
     - "Topic-specific physics wording (lives in topic notes; not vocabulary)"
 

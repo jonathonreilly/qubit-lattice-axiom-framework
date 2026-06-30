@@ -53494,11 +53494,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+      "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+      "to": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
     },
     {
       "from": "repo.repo_organization",
@@ -103186,11 +103186,11 @@
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
-        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
-        "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+        "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dc90481ad0e22d91b884e53aeca3cc84bebd5d3928ca86be140a3b4e6e1a4905",
+      "note_hash": "8587143afaa37b38dbd994b588ebfc065a29ca219e2a4a0a8491333cab338eb9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

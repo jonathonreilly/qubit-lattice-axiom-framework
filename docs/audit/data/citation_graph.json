@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
+      "to": "hierarchy_formula_honest_status_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
+        "hierarchy_formula_honest_status_note_2026-05-10",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
@@ -103190,7 +103190,7 @@
         "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "078e16470af9dde0c3cb627ae9ced05564a54883cd2c41ff0c99bf1061dd15f1",
+      "note_hash": "a8c8ca383cb8930af38f0aee7eae68fe93db59eb073eebd8f171c303d1250379",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

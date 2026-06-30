@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1441 |
-| Retained-grade rows, including boxed decorations | 1340 |
+| Applied audit verdicts | 1442 |
+| Retained-grade rows, including boxed decorations | 1341 |
 | Retained positive theorems | 198 |
 | Retained no-go rows | 198 |
 | Retained bounded rows | 887 |
-| Boxed decorations under retained parents | 57 |
+| Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1705 |
+| Unaudited rows | 1704 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 25 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1707 |
+| Total pending rows | 1706 |
 | Ready rows | 98 |
 | Cycle-break targets | 9 |
-| Critical pending | 296 |
+| Critical pending | 295 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
+- [`gravity_clean_derivation_note`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md) - critical; unaudited
 - [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
 - [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited

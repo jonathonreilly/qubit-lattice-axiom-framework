@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 885 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1709 |
+| unaudited | 1708 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 33 |
+| ~~audited_conditional~~ | 34 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1287 |
-| `audited_conditional` | 33 |
+| `audited_conditional` | 34 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2035 |
+| `unaudited` | 2034 |
 
 | claim_type | count |
 |---|---:|
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 7 | `key_terminology` | meta | critical | 1127 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 899 | 44.31 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
-| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 822 | 40.69 | `unaudited` | unaudited |
+| 10 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 822 | 40.69 | `audited_conditional` | ~~audited_conditional~~ |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
@@ -1457,6 +1457,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `yt_ward_identity_derivation_theorem` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
@@ -20426,6 +20427,21 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** With Dep 1 routed to the registered Tier-A target AC_φλ and Dep 2 routed to retained rescaling algebra plus retained finite-link g_bare convention authority, the published chain rule classifies the clean bounded row as a registered Tier-A-bounded candidate rather than an unregistered conditional blocker.  _(class `A`)_
 - **chain closes:** True — The bridge closes at the bounded Tier-A-admission level: the runner and packet support the algebraic F-flatness and the dependency-status arithmetic, while explicitly not retiring AC_φλ or promoting the parent to unbounded retained status. No extra empirical comparator or fitted coupling is load-bearing.
 - **rationale:** The load-bearing step is algebraic/status-rule closure over the restricted inputs, not a new physical derivation of the staggered-Dirac target. The beta-g_bare identities, F-flatness, SU(3)/Clifford normalization checks, and chain-rule arithmetic are internally consistent, and the runner source does more than print constants. The unaudited staggered-Dirac authority is handled as a registered Tier-A admitted derivation target, so it bounds the effective status rather than creating an unregistered conditional blocker.
+- **open / conditional deps cited:**
+  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
+- **auditor confidence:** medium
+
+### `yt_ward_identity_derivation_theorem`
+
+- **Note:** [`YT_WARD_IDENTITY_DERIVATION_THEOREM.md`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact point-split vector Ward identities and iso-vector breaking for the staggered Q_L action on the declared B1 surface, plus the H_unit scalar-singlet matrix element y_t_bare/g_bare = 1/sqrt(6); no SM readout, tadpole transport, or precision claim.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260630T191913Z-7a701a8a-yt_ward_identity_derivat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Localizing the exact vector symmetry of the staggered Q_L action gives the point-split current and the kernel Noether identity sum_mu[J_mu(x)-J_mu(x-mu)] = [E_x,M], while the unique unit scalar singlet H_unit gives the 1/sqrt(6) matrix element on the canonical surface.  _(class `C`)_
+- **chain closes:** False — The Ward-identity algebra and matrix-element normalization close on the declared staggered-Q_L/canonical-g_bare surfaces, and the runner source performs substantive matrix/residual checks. The full restricted chain does not close because the B1 staggered-Dirac/canonical Q_L surface is carried by a direct cited authority with effective_status unaudited rather than a retained-grade authority in this packet.
+- **rationale:** Issue: the presented Noether/Ward derivation and the 1/sqrt(6) H_unit matrix element are locally sound on the stated action surface, but the action/Q_L realization surface itself remains a direct non-retained dependency in the restricted packet. Why this blocks: the runner verifies identities after that surface is assumed; it does not retire AC_phi_lambda or derive the staggered-Dirac realization from the accepted axiom node. Repair target: provide a retained audit or explicit accepted Tier-A admission evidence for the B1 surface, then rerun this bounded audit. Claim boundary until fixed: exact finite-dimensional Ward/matrix-element algebra conditional on B1/C2 only.
 - **open / conditional deps cited:**
   - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
 - **auditor confidence:** medium

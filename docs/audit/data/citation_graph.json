@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+      "to": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
@@ -103190,7 +103190,7 @@
         "yt_vertex_power_derivation"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f078b178bd55eba163b03806c734b593bda7c6f229163572a4162476ebc31937",
+      "note_hash": "04e8a0468d9c2120d526f085da3a4729bca7218bd574ec49be473d392598f101",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

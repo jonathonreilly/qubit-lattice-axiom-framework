@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
     },
     {
@@ -53483,6 +53479,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_vertex_power_derivation"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_vertex_power_derivation",
+        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6d66d1e2b1e4d4c0a9487fb4f95eee7ba9dd0af42a5efe244c7d4141933e0a43",
+      "note_hash": "9da058b4eec329ba188aac6692e30f274e16913d8975be03ffd733f87e9df0e8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

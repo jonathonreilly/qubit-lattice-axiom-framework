@@ -1,7 +1,7 @@
 # Strict Nearest-Neighbor Composition Selects The Flux(-1) Branch
 
 **Date:** 2026-06-30
-**Claim type:** bounded_theorem / bridge theorem candidate
+**Claim type:** positive_theorem candidate / unbounded bridge theorem
 **Type:** theorem support for the PR #4747 axiom reset
 **Status authority:** independent audit lane only. This note does not set or
 predict an audit outcome, refresh ledgers, or register a primitive.
@@ -25,7 +25,7 @@ new primitive diagonal edge. The two square paths must cancel in the primitive
 availability channel whenever the intermediate sites add no distinguishing
 record content.
 
-Under this bridge, the kinetic selector is no longer open:
+Under this bridge, the kinetic selector is no longer open at any lattice size:
 
 ```text
 strict NN composition + one-qubit site possibility + cubic covariance
@@ -66,6 +66,15 @@ D = sum_mu Gamma_mu nabla_mu
 where each `Gamma_mu` acts on the one-site possibility carrier `M_2(C)`, and
 `nabla_mu` is the nearest-neighbor difference in direction `mu`.
 
+The load-bearing proof is not a finite-volume scan. Work in the free
+translation algebra of `Z^3`, so the monomials for the twelve face diagonals
+are independent:
+
+```text
+T_mu T_nu, T_mu T_nu^-1, T_mu^-1 T_nu, T_mu^-1 T_nu^-1
+    for mu != nu.
+```
+
 The strict-NN-composition bridge says that `D^2` has no mixed face-diagonal
 terms:
 
@@ -78,6 +87,12 @@ Equivalently:
 ```text
 Gamma_mu Gamma_nu + Gamma_nu Gamma_mu = 0     for mu != nu.
 ```
+
+This is an unbounded local-to-global statement: the coefficient identity is in
+the infinite `Z^3` translation algebra, so it holds on every simply connected
+finite region away from declared boundary terms and on the full lattice. Finite
+tori may add wrap-holonomy convention data, but they are not used to prove the
+selector.
 
 Inside `M_2(C)`, this forces the three edge coefficients to be a Pauli frame
 up to unitary/frame rotation. Their plaquette holonomy is:
@@ -129,7 +144,7 @@ If audit/review accepts strict NN composition as the downstream operational
 reading of Admissibility, then the main kinetic blocker is no longer an
 admission:
 
-- P-KIN narrows from a one-bit flux selector to a theorem;
+- P-KIN narrows from a one-bit flux selector to an unbounded bridge theorem;
 - P-SD remains discharged by the absorbing-frame theorem on the selected
   flux(-1) branch;
 - the staggered-Dirac realization gate can be re-audited with this bridge as
@@ -147,18 +162,19 @@ It attacks the kinetic spine only.
   evolution, record production, Hamiltonian choice, or probability.
 - The theorem is stated for the linearized nearest-neighbor edge-supported
   carrier. Extending it to interacting, nonlinear, or higher-order sectors is
-  downstream work.
+  downstream work; it is not a finite-volume limitation.
 - If a reviewer does not accept strict NN composition as a consequence/bridge
   of Admissibility, then this note identifies the exact minimal missing
   primitive: strict NN composition, not a broad Dynamics axiom.
 - Finite-volume wrap holonomies and APBC/PBC data remain separate convention
   surfaces, as in the two-flux-class theorem.
 
-## No-Go Discipline Gate For The Bounded Bridge
+## No-Go Discipline Gate For The Unbounded Bridge
 
 This is a positive conditional bridge with one named wall: strict NN
-composition. The negative subclaim is only that scalar `K0` fails this bridge,
-not that scalar branches are impossible under every future theory.
+composition. The theorem is unbounded in lattice volume once that bridge is
+accepted. The negative subclaim is only that scalar `K0` fails this bridge, not
+that scalar branches are impossible under every future theory.
 
 ### N1 - Alternative Routes
 
@@ -181,8 +197,9 @@ independent of APBC/PBC wrap data, probability, readout-context selection,
 
 "Linearized edge-supported carrier" is explicit scope, not an axiom import.
 "Strict NN composition" is the named bridge. The runner imports no probability,
-measurement, Hamiltonian, empirical values, or Dirac assumption. Anticommuting
-coefficients are derived from no mixed face-diagonal terms.
+measurement, Hamiltonian, empirical values, finite-volume fit, or Dirac
+assumption. Anticommuting coefficients are derived from no mixed
+face-diagonal terms in the free `Z^3` translation algebra.
 
 ### N4 - Residual Matching
 
@@ -206,7 +223,9 @@ The bridge can be accepted as:
 - a named bridge principle downstream of the axioms;
 - or, if rejected as theorem content, a narrow owner-approved primitive.
 
-It should not be promoted to a broad Dynamics axiom.
+It should not be promoted to a broad Dynamics axiom. If review requires the
+selector to be axiom-derived rather than bridge-derived, the minimal axiom edit
+is to add strict nearest-neighbor composition to Admissibility.
 
 ### N7 - Steelman
 
@@ -221,7 +240,8 @@ visible instead of hiding it.
 
 Prior kinetic-order no-go work already showed that support, cubic covariance,
 and one-qubit carrier do not select `K1`. This bridge adds the missing
-separator rather than reusing the failed routes. It also matches the
+separator rather than reusing the failed routes, and it makes the separator
+unbounded by proving it in the free translation algebra. It also matches the
 first-order coframe pattern: first-order structure is not free unless an
 incidence/composition law supplies it.
 
@@ -234,8 +254,9 @@ python3 scripts/strict_nn_composition_flux_selector_2026_06_30.py
 Expected close:
 
 ```text
-TOTAL: PASS=12 FAIL=0
+TOTAL: PASS=16 FAIL=0
 VERDICT: bridge theorem verified -- if strict nearest-neighbor composition is
-accepted as the operational reading of Admissibility, the flux(-1) /
-first-order branch is selected and the scalar flux(+1) branch is rejected.
+accepted as the operational reading of Admissibility, the unbounded free-Z^3
+coefficient identity selects the flux(-1) / first-order branch and rejects the
+scalar flux(+1) branch.
 ```

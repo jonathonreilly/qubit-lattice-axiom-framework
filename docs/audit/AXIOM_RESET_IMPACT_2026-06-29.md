@@ -158,10 +158,12 @@ coefficient family if the d<=3 Clifford-capacity theorem is being invoked.
 proposes the narrow bridge target exposed by the reset: strict
 nearest-neighbor composition. The bridge says that composing primitive
 nearest-neighbor availability influences must not create a direct
-face-diagonal availability influence. Its runner verifies that this condition
-is exactly the no-mixed-term condition; on one qubit per site it forces
-anticommuting edge coefficients, selects plaquette flux `(-1)`, and rejects
-the scalar flux `(+1)` branch by explicit face-diagonal leakage.
+face-diagonal availability influence. Its runner now verifies the
+load-bearing statement in the free `Z^3` translation algebra, not by finite
+volume scan: strict nearest-neighbor composition is exactly the no-mixed-term
+condition; on one qubit per site it forces anticommuting edge coefficients,
+selects plaquette flux `(-1)`, and rejects the scalar flux `(+1)` branch by
+unbounded face-diagonal leakage.
 
 This is downstream bridge theory, not new axiom content and not an audit
 verdict. If retained, it is the candidate route that retires the one-bit

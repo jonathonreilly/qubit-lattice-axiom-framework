@@ -194,7 +194,14 @@ def source_boundary_checks() -> list[Check]:
             and contains(note, "For each site, nearest-neighbor conditions determine the available subset of possibilities."),
             "",
         ),
-        Check("Record fixed-reality clause is present", "locks exactly one available local possibility" in note and "scalar-valued finitely\nadditive functional" in note and "`I(empty)=0`" in note, ""),
+        Check(
+            "Record fixed-reality clause is present",
+            contains(note, "locks exactly one available local possibility")
+            and contains(note, "Only records are readable")
+            and contains(note, "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive")
+            and "`I(empty)=0`" in note,
+            "",
+        ),
         Check("Qualification is named-content-only language", "These axioms state only their named primitive content" in note, ""),
         Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),

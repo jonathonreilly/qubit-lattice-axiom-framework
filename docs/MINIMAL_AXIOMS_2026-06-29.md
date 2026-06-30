@@ -59,9 +59,8 @@ possibilities.
 A record locks exactly one available local possibility; the locked
 possibility is invariant under repeated readout.
 
-Only records are readable. Record readout `I` is a scalar-valued finitely
-additive functional on finite pairwise-disjoint collections of records, with
-`I(empty)=0`.
+Only records are readable. For any finite collection of pairwise-disjoint
+records, scalar readout `I` is additive, with `I(empty)=0`.
 
 ## Qualification
 

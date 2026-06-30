@@ -74,8 +74,9 @@ surface with four separated ontology roles:
 - **Admissibility** says one fixed nearest-neighbor rule, covariant under
   lattice translations and proper cubic rotations, determines the available
   subset of possibilities at each site.
-- **Record** says a record locks one available local possibility and supports
-  finite scalar readout additivity over disjoint record collections.
+- **Record** says a record locks one available local possibility, only records
+  are readable, and scalar readout is additive over finite pairwise-disjoint
+  record collections.
 
 This directly addresses the arbitrary-record-mosaic gap: records are not free
 assignments independent of the local constraint. It does not by itself promote

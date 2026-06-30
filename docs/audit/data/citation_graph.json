@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
     },
     {
@@ -53491,6 +53487,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_vertex_power_derivation"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
         "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_vertex_power_derivation",
+        "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0bc9a2dbce55eaf6bf801872e0659ab15eb970adc669a59eb2c37aec292dedfe",
+      "note_hash": "bbf0c0c86f7e425b740487b5595fe89fd837f979c1d0213a43a890a9045f76b5",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

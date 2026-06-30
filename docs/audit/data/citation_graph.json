@@ -53469,6 +53469,38 @@
       "to": "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
     },
     {
+      "from": "repo.front_door_status",
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+    },
+    {
       "from": "repo.repo_organization",
       "to": "key_terminology"
     },
@@ -103147,9 +103179,18 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "c459013a4c2c033e1f6e78545d8fa78e1d7f8a8d48d16468f0c724a2867df6f4",
+      "note_hash": "fbc115980e78a04a3d329ce239695bc11c6e781448de8cd9f07b5e781d916504",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118267,7 +118308,6 @@
     "register_not_read_scope_correction_panel_verdict_2026-06-06",
     "reopened_lane_checklist",
     "replay_environment_note",
-    "repo.front_door_status",
     "repo.python_venv_setup",
     "repo_active_review_queue_note_2026-05-17",
     "repo_submission_consolidation_plan_2026-04-12",
@@ -118563,10 +118603,10 @@
       "open_gate": 192,
       "positive_theorem": 583
     },
-    "edge_count": 13466,
+    "edge_count": 13474,
     "leaf_count": 1154,
     "node_count": 3619,
-    "root_count": 1091,
+    "root_count": 1090,
     "runners_with_path": 3252
   }
 }

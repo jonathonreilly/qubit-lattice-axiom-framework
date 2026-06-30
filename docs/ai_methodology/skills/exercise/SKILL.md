@@ -42,8 +42,8 @@ refresher surfaces it read before giving conclusions.
 
 Minimum refresher surfaces:
 
-- `docs/MINIMAL_AXIOMS_2026-06-05.md` for the current Lattice, Quantum, and
-  Record baseline;
+- `docs/MINIMAL_AXIOMS_2026-06-29.md` for the current Lattice, Qubit,
+  Admissibility, and Record baseline;
 - `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` for how approved
   primitives enter assumption, import, wall, and bounded-status judgments;
 - `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` for the approved scale-reference

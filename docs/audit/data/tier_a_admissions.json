@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted derivation targets are two: AC_phi_lambda and theta. Record is no longer Tier-A; it is included in the explicitly approved three-axiom minimal_axioms node. The scale reference a^-1 is likewise not a Tier-A admission; it is registered as the explicitly approved framework primitive scale_reference_primitive in axiom_premise_nodes.json. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md. 2026-06-11 minimum-statement sharpening (owner-approved): both statements restated at their sharpest landed decomposition; no admission added, removed, adopted, or re-graded; count unchanged; no_go_portfolio lists unchanged (verified rows only); sharpening_sources fields list landed source notes whose audit status is set only by the audit lane. Human-readable decompositions: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md, minimum-statement section.",
+  "description": "Audit-lane owned registry for Tier-A accepted non-axiom premise handling. Genuine admitted derivation targets are two: AC_phi_lambda and theta. Record is no longer Tier-A; Admissibility and Record are included in the explicitly approved four-axiom minimal_axioms node. The scale reference a^-1 is likewise not a Tier-A admission; it is registered as the explicitly approved framework primitive scale_reference_primitive in axiom_premise_nodes.json. Derivation targets are accepted as chain-satisfying premises at the bounded tier, so a clean row depending on one resolves to retained_bounded rather than retained_pending_chain; when a target is derived, remove its entry and compute_effective_status will auto-cascade dependents toward unbounded retained status when otherwise eligible. Y0 and g0 are vacuous rescaling conventions listed for survey completeness only: not admitted inputs, not derivation targets, not accepted premises, and not status-bounding dependencies. This registry is distinct from axiom_premise_nodes.json and from standard textbook theorems, which must earn retained-grade inline. Human-readable registry: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md. 2026-06-11 minimum-statement sharpening (owner-approved): both statements restated at their sharpest landed decomposition; no admission added, removed, adopted, or re-graded; count unchanged; no_go_portfolio lists unchanged (verified rows only); sharpening_sources fields list landed source notes whose audit status is set only by the audit lane. Human-readable decompositions: docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md, minimum-statement section.",
   "genuine_admitted_input_count": 2,
   "canonical_ids": [
     "staggered_dirac_realization_gate_note_2026-05-03",
@@ -73,8 +73,8 @@
   "reclassified_primitives": {
     "minimal_axioms_record": {
       "label": "Record axiom",
-      "statement": "durable realized-outcome registration in a supplied readout context, with the realized outcome the K/CPT orbit of the realized central sector and finite scalar readout additive over pairwise-disjoint record collections; registered inside the explicitly approved minimal_axioms node, not as a Tier-A admitted derivation target",
-      "source": "docs/MINIMAL_AXIOMS_2026-06-05.md",
+      "statement": "fixed locking of exactly one available possibility at a site, with scalar-valued record readout finitely additive over finite pairwise-disjoint record collections; registered inside the explicitly approved minimal_axioms node, not as a Tier-A admitted derivation target",
+      "source": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "prior_no_go_portfolio_context": [
         "observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21",
         "observable_principle_p1_bridge_extensivity_primitive_narrow_note_2026-05-21",
@@ -83,7 +83,7 @@
         "observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21",
         "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21"
       ],
-      "boundary": "does not supply readout context, decomposition, K/CPT structure, sector-generation rule, weighting, normalization, probability, measurement/decoherence dynamics, time metric, within-sector data, occupancy rule, P2/modulus, log-det, source/action, scale, or arbitrary observable identification"
+      "boundary": "does not supply readout-context selection, decomposition, K/CPT structure, sector-generation rule, weighting, normalization, probability, occurrence rule, update law, measurement/decoherence dynamics, time metric, within-sector data, occupancy rule, P2/modulus, log-det, source/action, scale, local observability, or arbitrary observable identification"
     },
     "scale_reference_primitive": {
       "label": "scale-reference primitive",

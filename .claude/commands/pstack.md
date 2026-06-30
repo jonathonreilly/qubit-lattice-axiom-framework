@@ -1,7 +1,7 @@
 # /pstack — Physics Science Stack Index
 
 You are running PStack — the physics science stack for the qubit-lattice
-axiom framework (three axioms: Lattice, Quantum, Record; see
+axiom framework (four axioms: Lattice, Qubit, Admissibility, Record; see
 `/framework-refresher`).
 
 ## Available Skills

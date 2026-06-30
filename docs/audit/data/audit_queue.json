@@ -138,15 +138,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-      "claim_scope": null,
+      "claim_scope": "Finite-block finite-range Cl(3)=M_2(C) lattice Lieb-Robinson bound with corrected J_*, D_int, R_int constants, its lattice-light-cone corollary, the finite Cl(3) norm bound, and only conditional L2 transfer-gap routing; unconditional or spatial cluster decomposition is not closed.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
         "cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19",
@@ -154,11 +154,11 @@
         "minimal_axioms"
       ],
       "direct_in_degree": 20,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 22.87,
       "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "transitive_descendants": 935
@@ -188,10 +188,10 @@
         "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
       ],
-      "direct_in_degree": 24,
+      "direct_in_degree": 25,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 24.869,
+      "load_bearing_score": 25.369,
       "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
       "queue_reason": "unaudited",
       "ready": true,

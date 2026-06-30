@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 874 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
-| Unaudited rows | 1725 |
+| Unaudited rows | 1724 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 29 |
 | Audited renaming rows | 25 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`axiom_first_cluster_decomposition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
+- [`axiom_first_cluster_decomposition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) - critical; audit_in_progress
 - [`axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03`](../../docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md) - critical; unaudited
 - [`axiom_first_spin_statistics_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 - [`staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; unaudited

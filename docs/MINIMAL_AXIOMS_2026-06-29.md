@@ -48,11 +48,11 @@ adds no further primitive structure.
 
 ### Admissibility / Local Constraint
 
-There is one fixed finite-neighborhood admissibility rule, the same at every
-lattice translate.
+There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+translations and proper cubic rotations.
 
-A local possibility is available at a site exactly when the finite-neighborhood
-rule admits it there, consistent with local records.
+For each site, nearest-neighbor conditions determine the available subset of
+possibilities.
 
 ### Record / Fixed Reality
 
@@ -88,12 +88,12 @@ Tier-A admissions recorded in `docs/audit/data/tier_a_admissions.json`.
 
 ## Relation To Dynamics And Kinetic Branch Selection
 
-Admissibility is not a dynamics axiom. It determines availability by
-finite-neighborhood admission of local possibilities, consistent with local
-records; it does not choose a Hamiltonian or transfer operator, supply
-transition probabilities or weights, select a scalar or nonzero kinetic branch,
-assert a Dirac-square carrier, define a time metric, or provide a
-record-production process.
+Admissibility is not a dynamics axiom. It determines availability by a
+nearest-neighbor rule: for each site, nearest-neighbor conditions determine the
+available subset of possibilities. It does not choose a Hamiltonian or transfer
+operator, supply transition probabilities or weights, select a scalar or
+nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or
+provide a record-production process.
 
 Static spatial kinetic questions, probability/process questions, and temporal
 evolution questions should be tracked separately. A realized kinetic branch, if
@@ -128,9 +128,8 @@ readout structure:
 
 - Qubit names the domain of local possibilities and its full one-site algebraic
   presentation.
-- Admissibility names the finite-neighborhood rule under which a local
-  possibility is available at a site exactly when the rule admits it there,
-  consistent with local records.
+- Admissibility names the nearest-neighbor rule by which, for each site,
+  nearest-neighbor conditions determine the available subset of possibilities.
 - Record names the fixed locking of one available local possibility, plus finite
   scalar readout additivity over disjoint record collections.
 - `K`/CPT orbit structure, central-sector decomposition, and any sector
@@ -163,7 +162,7 @@ additivity as the third explicitly approved premise. The 2026-06-05 memo refined
 Record to durable realized-outcome registration in a supplied readout context.
 
 This memo exposes the remaining minimal ontology needed by the blocked audit
-lanes: records are not arbitrary mosaics. The admissibility rule admits local
-possibilities at sites, consistent with local records, before a record can lock
-one available local possibility. Probability, dynamics, readout contexts, and
+lanes: records are not arbitrary mosaics. The admissibility rule determines the
+available subset of possibilities at each site before a record can lock one
+available local possibility. Probability, dynamics, readout contexts, and
 physical observable bridges remain downstream.

@@ -138,15 +138,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "axiom_first_spin_statistics_theorem_note_2026-04-29",
-      "claim_scope": null,
+      "claim_scope": "Explicit-CCR/free-boson exclusion on the finite dim-2 one-qubit/Cl(3) per-site carrier, plus Grassmann algebra, Berezin determinant, and exchange-sign consequences conditional on the declared Grassmann frame; no statistics forcing or hard-core-vs-CAR selection audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "minimal_axioms",
@@ -154,11 +154,11 @@
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "direct_in_degree": 11,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 18.367,
       "note_path": "docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/axiom_first_spin_statistics_check.py",
       "transitive_descendants": 933
@@ -345,15 +345,15 @@
         "s3_taste_cube_decomposition_note",
         "minimal_axioms"
       ],
-      "direct_in_degree": 22,
+      "direct_in_degree": 23,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 20.577,
+      "load_bearing_score": 21.079,
       "note_path": "docs/CL3_TASTE_GENERATION_THEOREM.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py",
-      "transitive_descendants": 763
+      "transitive_descendants": 764
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

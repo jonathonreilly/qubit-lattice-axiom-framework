@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gravity_clean_derivation_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gravity_clean_derivation_note",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
         "single_axiom_hilbert_note",
-        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
+        "pre_record_reference_state_tracial_derivation_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "dc65944adc94aba14c64205219978e53c6465a2760108cd11e5c260b16d69453",
+      "note_hash": "8976a7de2fcfbe363f903420c70dfcbbc3472079ef5304e4f46e5665d088861b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

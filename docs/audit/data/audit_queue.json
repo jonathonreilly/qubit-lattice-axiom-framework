@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 304,
+    "critical": 303,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -136,41 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
-      "claim_scope": "Finite tensor-product qubit lattice blocks: equal-time strict locality, finite-range support-family Lieb-Robinson bounds with v_LR=2e q W R, free U=1 bilinear exact-log quasilocal LR bounds, and only the explicitly sector-scoped Lorentz-scaling continuum corollary.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
-        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
-        "emergent_lorentz_invariance_note",
-        "lorentz_kernel_positive_closure_note",
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 20,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [
-        "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
-        "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
-      ],
-      "load_bearing_score": 22.836,
-      "note_path": "docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_microcausality_check.py",
-      "transitive_descendants": 913
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -51241,6 +51206,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 97,
-  "total_pending": 1715
+  "ready_count": 96,
+  "total_pending": 1714
 }

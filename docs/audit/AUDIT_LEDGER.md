@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 881 |
+| **retained_bounded** | 882 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1712 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1283 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1284 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -192,6 +190,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2379,6 +2378,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The bounded Noether algebra itself closes as a class-A finite Grassmann/KS identity, but current audit-loop math-audit policy does not allow audited_clean when the restricted source packet contains wrong quantitative prose or stale runner counts. The source note's '(2Z)^3 index-2' statement is mathematically wrong for Z^3, and the kinetic-class runner count drifts from the cited authority's PASS=28, so the second audit's non-clean verdict is the applyable conservative result.
 - **rationale:** The bounded Noether algebra itself closes as a class-A finite Grassmann/KS identity, but current audit-loop math-audit policy does not allow audited_clean when the restricted source packet contains wrong quantitative prose or stale runner counts. The source note's '(2Z)^3 index-2' statement is mathematically wrong for Z^3, and the kinetic-class runner count drifts from the cited authority's PASS=28, so the second audit's non-clean verdict is the applyable conservative result.
 - **auditor confidence:** judicial
+
+### `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01`
+
+- **Note:** [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](../../docs/AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Equal-time one-site tensor locality plus finite-velocity LR bounds for the finite-range carrier and free U=1 bilinear exact-log quasilocal carrier; continuum microcausality only as a same-sector Lorentz-scaling corollary.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260630T185730Z-5ba84aab-axiom_first_microcausali`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Step 2 applies the retained finite-range and free-bilinear quasilocal Lieb-Robinson bridge bounds to obtain finite sector velocities, including v_LR = 2 e q W R and ||[alpha_t(O_x), O_y]|| <= 2||O_x||||O_y|| exp(-mu d_1(x,y) + 4 W_mu |t|).  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, M1 is exact tensor-factor algebra, M2 is a direct application of retained_bounded LR bridge theorems, and M3 is the elementary negative-exponent scaling limit under the explicit same-sector Lorentz-scaling condition. The packet does not claim gauged/interacting exact-log locality or full Wightman microcausality.
+- **rationale:** The scoped theorem closes from the accepted minimal axiom premise and retained-grade one-hop bridge authorities. The primary runner checks tensor-factor locality, finite-range LR behavior, and source/bridge constant sync; the helper runners compute the free exact-log kernel, weighted overlap, quasilocal LR envelope, and strict finite-range failure with falsification legs. The continuum statement is only audited as a conditional same-sector scaling implication, so the source does not overclaim the gauged/interacting exact-log or full continuum-QFT case.
+- **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
 

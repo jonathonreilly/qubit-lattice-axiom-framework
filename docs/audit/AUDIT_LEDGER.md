@@ -24,11 +24,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1721 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -64,9 +63,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
+| `audit_in_progress` | 2 |
 | `audited_clean` | 1277 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1444,6 +1442,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -17040,6 +17039,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The Qubit axiom is a registered accepted premise and supplies the one-site M_2(C) local algebra; the retained Cl(3) split supplies the Pauli irrep classification. Standard finite-dimensional representation theory then gives the stated multiplicity decomposition and the k=1 dimension readout without importing the downstream staggered-Dirac gate.
 - **rationale:** The load-bearing step is an algebraic closure from the accepted minimal_axioms premise and the retained Cl(3) split theorem, not a tuned comparator or definition-only substitution. The runner constructs Pauli and block-diagonal Cl(3) representations, verifies the Clifford relations, checks k=1 gives dimension 2, and exhibits k>=2 faithful abstract counterexamples. The source correctly scopes the result to the current one-qubit carrier and keeps the abstract representation counterexample surface outside the physical-carrier conclusion.
 - **auditor confidence:** high
+
+### `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract finite-dimensional algebra: Z_2^d per-hypercube component space is graded-isomorphic to Lambda^*(C^d), D_KD=d-delta has the stated parity, square, and Hermiticity properties, Wilson identity/block-diagonal r-terms break form-parity reversal, and the d=4 16=4*4 count matches the cited Cl(3) chirality-pair spinor count; no physical staggered-Dirac dynamical identification is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-judge-panel-gpt-5.5-p1-20260630T180300Z-d2a98a84-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** None  _(class `A`)_
+- **chain closes:** False — The algebraic core is class A and is correctly supported by the runner and retained-grade inputs, but the source note is not clean as written because Section 2 states that the per-hypercube Grassmann-Fock dimension 2^d is directly consequent on substep-1 per-site dim 2 and the tensor-product dimension formula. That statement contradicts E1/E8 and the cited substep-1 boundary, since tensoring 2^d per-site two-state spaces gives 2^(2^d), not 2^d. Under the supplied audit-loop math-audit rule, math-bearing quantitative prose must be clean even when the headline theorem has a clean bounded core, so audited_conditional is the correct terminal tuple until the wording is repaired.
+- **rationale:** The algebraic core is class A and is correctly supported by the runner and retained-grade inputs, but the source note is not clean as written because Section 2 states that the per-hypercube Grassmann-Fock dimension 2^d is directly consequent on substep-1 per-site dim 2 and the tensor-product dimension formula. That statement contradicts E1/E8 and the cited substep-1 boundary, since tensoring 2^d per-site two-state spaces gives 2^(2^d), not 2^d. Under the supplied audit-loop math-audit rule, math-bearing quantitative prose must be clean even when the headline theorem has a clean bounded core, so audited_conditional is the correct terminal tuple until the wording is repaired.
+- **auditor confidence:** judicial
 
 ### `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`
 

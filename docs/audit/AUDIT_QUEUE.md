@@ -15,7 +15,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | unaudited | critical | 901 | 16.82 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_reeh_schlieder_check.py` |
+| 1 | `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | audit_in_progress | critical | 901 | 16.82 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_reeh_schlieder_check.py` |
 | 2 | `yt_ward_identity_derivation_theorem` | bounded_theorem | unaudited | critical | 822 | 40.69 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 3 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 764 | 21.08 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py` |
 | 4 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | unaudited | critical | 384 | 12.09 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cpt_check.py` |

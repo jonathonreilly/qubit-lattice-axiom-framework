@@ -53478,15 +53478,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
@@ -103182,15 +103182,15 @@
       "deps": [
         "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_vertex_power_derivation"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0d8a09e3a8d4333d4a1eb97e4e1e829bd676c4e18bda4cc0a13e4152fad55112",
+      "note_hash": "215d75a9ca4b6fa864c4621f008c173dee0c41fdfecb16d72891196b15085cef",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

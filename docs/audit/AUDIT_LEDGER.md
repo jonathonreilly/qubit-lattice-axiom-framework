@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 195 |
-| **retained_bounded** | 873 |
+| **retained_bounded** | 874 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1728 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1272 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1273 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -519,6 +517,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7034,6 +7033,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under H1-H4 and 1/g_em^2 = 1/g_2^2 + 1/g_Y^2, one obtains 1/g_em^2 = 2d + 3, g_em^2 = 1/(2d + 3), alpha_3(bare)/alpha_em(bare) = 2d + 3, and sin^2(theta_W)(bare) = (d + 1)/(2d + 3).  _(class `A`)_
 - **chain closes:** True — The identities follow by inverting g_2^2 and g_Y^2 to d + 1 and d + 2, summing them, and canceling the common 4 pi factor in the alpha ratio. The note confines the result to a formal implication under H1-H4, so no retained physical coupling derivation is required for the bounded claim as stated.
 - **rationale:** The audited claim is not a first-principles physical coupling derivation; it is an exact algebraic theorem under explicit formal hypotheses. Independent symbolic checking confirms the displayed identities, including the d = 3 values and the weak-angle expression. The runner source performs fraction-level arithmetic and boundary checks consistent with this class A scope, and the packet supplies no cited non-retained authority or open physical bridge needed for the bounded theorem.
+- **auditor confidence:** high
+
+### `free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10`
+
+- **Note:** [`FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`](../../docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 bilinear staggered two-step exact-log Hamiltonian with m>0 and 0<d mu<eta<arcsinh(m): finite weighted overlap W_mu and the one-site quasilocal LR bound with velocity v_mu=4 W_mu/mu; no gauged/interacting, massless, or continuum microcausality claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260630T171106Z-81358765-free_bilinear_quasilocal`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Summing over intermediate sites bounds the weighted path sum by exp(-mu d_1(x,y)) W_mu^n, so the nested-commutator series gives the stated quasilocal Lieb-Robinson envelope.  _(class `A`)_
+- **chain closes:** True — The retained log-quasilocality authority supplies the exponential exact-log kernel and support-family pair norms, making W_mu finite by the displayed shell summation. The source note then closes the remaining algebraic weighted-path LR composition with a conservative 4 W_mu constant.
+- **rationale:** The load-bearing bridge is an algebraic closure over retained-bounded inputs, not a definition, renaming, or tuned numerical match. The primary and helper runners perform real FFT, convolution, finite-matrix, and falsification checks rather than merely printing the contested bound. The scoped theorem avoids the cited open gauged/interacting, massless, and continuum extensions, so those boundaries do not block this free bilinear result.
 - **auditor confidence:** high
 
 ### `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`

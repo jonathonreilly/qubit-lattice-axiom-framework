@@ -100,7 +100,7 @@ def record_functional(records: set[str], weights: dict[str, float]) -> float:
 
 
 def is_available(candidate: str, neighborhood_records: frozenset[str]) -> bool:
-    """Toy admissibility predicate: surrounding neighborhood records constrain availability."""
+    """Toy site-admission predicate: local records can make a candidate inadmissible."""
     return not ("blocks_up" in neighborhood_records and candidate == "up")
 
 
@@ -153,7 +153,7 @@ def source_boundary_checks() -> list[Check]:
         Check(
             "Registry note records Admissibility and downstream-boundary firewall",
             "Admissibility" in node.get("note", "")
-            and "neighborhood records" in node.get("note", "")
+            and "rule admits it there, consistent with local records" in node.get("note", "")
             and "context-selection rule" in node.get("note", "")
             and "downstream theory consequence" in node.get("note", ""),
             "",
@@ -181,7 +181,13 @@ def source_boundary_checks() -> list[Check]:
         Check("Lattice locality clause is present", "Physical sites are the points of the cubic lattice `Z^3`" in note and "nearest-neighbor adjacency" in note, ""),
         Check("Qubit site-possibility clause is present", "domain of local possibilities" in note and "full one-site possibility domain has algebraic presentation `M_2(C)`" in note, ""),
         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
-        Check("Admissibility local-constraint clause is present", "one fixed finite-neighborhood admissibility rule" in note and "same at every\nlattice translate" in note and "rule uses the surrounding neighborhood records" in note and "which site possibilities are available there" in note, ""),
+        Check(
+            "Admissibility local-constraint clause is present",
+            "one fixed finite-neighborhood admissibility rule" in note
+            and "same at every\nlattice translate" in note
+            and "finite-neighborhood\nrule admits it there, consistent with local records" in note,
+            "",
+        ),
         Check("Record fixed-reality clause is present", "locks exactly one available local possibility" in note and "scalar-valued finitely\nadditive functional" in note and "`I(empty)=0`" in note, ""),
         Check("Qualification is named-content-only language", "These axioms state only their named primitive content" in note, ""),
         Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
@@ -255,9 +261,9 @@ def run_checks() -> list[Check]:
     neighborhood_records = frozenset({"blocks_up"})
     checks.append(
         Check(
-            "Admissibility: surrounding neighborhood records constrain which site possibilities are available",
+            "Admissibility: finite-neighborhood rule can admit site possibilities relative to local records",
             not is_available("up", neighborhood_records) and is_available("down", neighborhood_records),
-            "toy predicate only: surrounding neighborhood records constrain availability; no probability, transition, or dynamics is used",
+            "toy predicate only: local records can make a candidate inadmissible; no probability, transition, or dynamics is used",
         )
     )
 

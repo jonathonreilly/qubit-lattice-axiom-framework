@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_ward_identity_derivation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
-        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
+        "koide_q23_k0_real_block_equivalence_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d399ef6506dae7906d28c77de9ee6f0c749dab487979095a3b5ae507158e3792",
+      "note_hash": "dc90481ad0e22d91b884e53aeca3cc84bebd5d3928ca86be140a3b4e6e1a4905",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

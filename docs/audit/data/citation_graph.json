@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+      "to": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
         "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
@@ -103190,7 +103190,7 @@
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "9634b47d3703d53705747f0d2c50fd7f4fc14f2d2d517fe35657205f55387f7f",
+      "note_hash": "f3a083c09363867f1e12a46a823c229b5d79e17be4aa436b014e3167cf741346",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

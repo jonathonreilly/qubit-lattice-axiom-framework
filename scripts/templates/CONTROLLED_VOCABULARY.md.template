@@ -15,9 +15,9 @@ their content here, and do not override their wording from here.
 
 For a single-term lookup (layer 0), use `KEY_TERMINOLOGY.md`. For
 framework axioms and approved primitive premise nodes (layer 1), cite
-`MINIMAL_AXIOMS_2026-06-05.md` and
-`docs/audit/data/axiom_premise_nodes.json` — do not redefine Lattice, Quantum,
-Record, `Cl(3)`, `Z^3`, `A_min`, or registered primitives here. For external paper text
+`MINIMAL_AXIOMS_2026-06-29.md` and
+`docs/audit/data/axiom_premise_nodes.json` — do not redefine Lattice, Qubit,
+Admissibility, Record, `Cl(3)`, `Z^3`, `A_min`, or registered primitives here. For external paper text
 (layer 2), use the canonical framing paragraph and the accountability
 disclosure verbatim — do not paraphrase. This doc governs layer 3 only.
 
@@ -224,7 +224,7 @@ primitives**, not process vocabulary. Per
 is disjoint from physics. The canonical home for these names and the
 policy governing their use is:
 
-- `docs/MINIMAL_AXIOMS_2026-06-05.md` — the framework axioms themselves (Lattice, Quantum, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-06-04.md`
+- `docs/MINIMAL_AXIOMS_2026-06-29.md` — the framework axioms themselves (Lattice, Qubit, Admissibility, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-06-05.md`
 - `docs/audit/data/axiom_premise_nodes.json` — explicitly approved primitive premise nodes such as `scale_reference_primitive` and `kinetic_isotropy_primitive`
 - [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
 

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 884 |
+| **retained_bounded** | 885 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1709 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1286 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1287 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -193,6 +191,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2394,6 +2393,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Step 2 applies the retained finite-range and free-bilinear quasilocal Lieb-Robinson bridge bounds to obtain finite sector velocities, including v_LR = 2 e q W R and ||[alpha_t(O_x), O_y]|| <= 2||O_x||||O_y|| exp(-mu d_1(x,y) + 4 W_mu |t|).  _(class `A`)_
 - **chain closes:** True — Within the stated bounded scope, M1 is exact tensor-factor algebra, M2 is a direct application of retained_bounded LR bridge theorems, and M3 is the elementary negative-exponent scaling limit under the explicit same-sector Lorentz-scaling condition. The packet does not claim gauged/interacting exact-log locality or full Wightman microcausality.
 - **rationale:** The scoped theorem closes from the accepted minimal axiom premise and retained-grade one-hop bridge authorities. The primary runner checks tensor-factor locality, finite-range LR behavior, and source/bridge constant sync; the helper runners compute the free exact-log kernel, weighted overlap, quasilocal LR envelope, and strict finite-range failure with falsification legs. The continuum statement is only audited as a conditional same-sector scaling implication, so the source does not overclaim the gauged/interacting exact-log or full continuum-QFT case.
+- **auditor confidence:** high
+
+### `axiom_first_reeh_schlieder_theorem_note_2026-05-01`
+
+- **Note:** [`AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional left-anchored tensor-factor local algebras on the scoped staggered qubit chains: RS-1 Schmidt-rank dichotomy exactly; RS-2 vacuum separating certificates for tested L=6,8 OBC regions; RS-3 L=6 time-translated algebra collapse as non-local vector-generic cyclicity. No continuum, interior-region, or uniform-in-volume claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260630T191456Z-a7666c1c-axiom_first_reeh_schlied`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the L=6 and L=8 open staggered carriers (m=0.3), the vacuum reduced state rho_O has full rank for every tested region, so by RS-1 the vacuum is separating for each such A(O).  _(class `C`)_
+- **chain closes:** True — RS-1 follows from the Schmidt decomposition and finite-dimensional commutant algebra. The runner genuinely constructs the Jordan-Wigner staggered carriers and computes the vacuum ranks, falsification legs, and L=6 time-translated commutant collapse without importing the contested result or using conditional SC3/cluster inputs.
+- **rationale:** The load-bearing certificate is a first-principles finite-carrier computation on a declared, bounded staggered Hamiltonian parameter, not a calibrated numerical match. The algebraic dichotomy is correct, and the runner source performs the relevant diagonalizations, Schmidt-rank/rank checks, annihilator exhibits, and invariant-subspace commutant computation rather than printing hard-coded passes. The cited upstreams are either the accepted minimal-axiom premise or retained_bounded authorities, and the note explicitly fences the continuum, uniform-volume, locality, and vector-genericity boundaries; the No-Go gate is narrow enough for those negative boundaries.
 - **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`

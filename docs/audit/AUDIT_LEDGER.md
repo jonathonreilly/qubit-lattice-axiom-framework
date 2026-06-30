@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 876 |
+| **retained_bounded** | 877 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1720 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1277 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1278 |
 | `audited_conditional` | 31 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1063,6 +1061,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_vertex_color_singlet_projection_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `rd_fixedness_is_arrow_invariant_on_the_retained_flow_family_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_axiom_audit_application_map_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_classical_semigroup_boundary_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -15148,6 +15147,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Fix(phi) = Fix(g) = {0, 1/2}, with the same projective fixed point at infinity, so fixedness-based selection is unchanged when the retained map orientation is reversed.  _(class `A`)_
 - **chain closes:** True — The cited retained-bounded authorities supply the two maps, and independent algebra verifies that they are inverses on r >= 0, have the same finite and projective fixed points, and reverse stability at r=1/2. The result closes only for the retained family and stated fixedness/side-condition reading; it does not close the physical R-D bridge or coarse-graining selector.
 - **rationale:** The load-bearing mathematics is a direct algebraic closure over the supplied retained-bounded maps, not a numerical fit, definition substitution, or external comparator. Manual checking confirms g(phi(r))=r and phi(g(r))=r on r>=0, Fix(phi)=Fix(g)={0,1/2}, the common projective fixed point at s=0, and the multiplier reversal 2 versus 1/2. The note’s firewall language keeps the clean result bounded to fixedness on the retained family and does not promote R-D, the physical arrow, or the coarse-graining prong.
+- **auditor confidence:** high
+
+### `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`
+
+- **Note:** [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For finite real antisymmetric D and positive real diagonal S, det(S+D) is strictly positive real; on the stated Neumann patch det(D+J)>0; with separately assumed continuity/regularity on R_{>0}, additive block readout is c log det with c=1 by convention.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260630T181135Z-8d639218-real_diagonal_source_det`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** S + D = S^{1/2}(I + B)S^{1/2} with B real antisymmetric, so det(I+B)=prod_k(1+lambda_k^2)>0 and det S>0.  _(class `A`)_
+- **chain closes:** True — The determinant-positivity and Neumann sign-constancy steps close by finite-dimensional linear algebra. The log-readout portion closes only within the stated bounded scope because continuity/regularity and c=1 are explicit conventions, while Record supplies only finite additivity over disjoint records.
+- **rationale:** The load-bearing determinant positivity proof is a direct algebraic closure over the stated finite matrices and does not import the observable-principle parent or any empirical comparator. The cited minimal-axiom authority is an accepted axiom premise and is used only for finite scalar additivity in L3. The runner source performs randomized and structural finite-dimensional checks plus the block/log identity check; it does not hard-code a contested physical value. The conclusion is clean for the bounded statement as written, with continuity and c=1 treated as explicit conventions rather than derived axiom content.
 - **auditor confidence:** high
 
 ### `record_axiom_audit_application_map_2026-06-06`

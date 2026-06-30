@@ -83,8 +83,8 @@ Recorded explicitly approved axiom updates:
   - **Why it is admissible.** The 2026-06-05 Record wording already depended on
     realized-outcome registration, but it left arbitrary record mosaics
     underconstrained. This reset states the minimal ontology directly: Lattice
-    carries physical locality; Qubit names the unconstrained one-site
-    possibility algebra and its domain of local possibilities; Admissibility
+    carries physical locality; Qubit names the domain of local possibilities
+    and its full one-site algebraic presentation; Admissibility
     names one fixed finite-neighborhood rule, the same at every lattice
     translate, that uses surrounding neighborhood records to determine available
     site possibilities; Record locks exactly one available local possibility and

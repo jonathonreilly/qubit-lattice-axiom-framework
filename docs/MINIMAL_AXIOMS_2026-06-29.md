@@ -39,10 +39,9 @@ translation action and nearest-neighbor adjacency.
 
 ### Qubit / Site Possibility
 
-Each site has the same unconstrained one-site possibility algebra, represented
-by `M_2(C)`.
+Each site has a domain of local possibilities.
 
-The one-site possibility algebra presents the domain of local possibilities.
+The full one-site possibility domain has algebraic presentation `M_2(C)`.
 
 A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
 adds no further primitive structure.
@@ -126,8 +125,8 @@ fixed `K`/CPT conjugation were supplied. This reset separates generic site
 possibility, local admissibility, and fixed records from context-specific
 readout structure:
 
-- Qubit names the unconstrained one-site possibility algebra and its domain of
-  local possibilities.
+- Qubit names the domain of local possibilities and its full one-site algebraic
+  presentation.
 - Admissibility names the finite-neighborhood rule that uses surrounding
   neighborhood records to determine available site possibilities.
 - Record names the fixed locking of one available local possibility, plus finite

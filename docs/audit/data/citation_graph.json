@@ -53470,11 +53470,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+      "to": "yt_vertex_power_derivation"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_vertex_power_derivation"
+      "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
@@ -53495,10 +53499,6 @@
     {
       "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
         "yt_vertex_power_derivation",
+        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
+        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
-        "cl3_taste_generation_theorem",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+        "cl3_taste_generation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "981c79a8ecbaefccd8ad70032ea205b8c27725c2115e490f0b6347156638f30b",
+      "note_hash": "bf61546df35098801b93fb0b5a7ba40e8a9de489e63f36fe10523be36697c6c9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

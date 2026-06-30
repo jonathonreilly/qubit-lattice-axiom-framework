@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 195 |
-| **retained_bounded** | 872 |
+| **retained_bounded** | 873 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1729 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1271 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1272 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -932,6 +930,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ordered_lattice_packet_reidentification_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `ordered_lattice_quasi_persistent_relaunch_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `packet_memory_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13122,6 +13121,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner instantiates the ordered-lattice propagation, constructs the packets, reidentifies top-k detector support, relaunches the surrogate, and computes the reported overlaps and centroid shifts. The note does not claim persistent mass, family-genericity, or a closed inertial-response theorem.
 - **rationale:** The load-bearing result is a first-principles numerical computation on the fixed retained ordered-lattice harness, not a definition, renaming, external comparator, or hard-coded numerical replay. The primary runner and helper source compute the lattice propagation and reported metrics directly from the stated parameters. The conclusion is appropriately bounded to support/compression control and explicitly denies persistent-mass or family-generic claims.
 - **auditor confidence:** high
+
+### `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`
+
+- **Note:** [`P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the explicitly scoped K0/K1 kinetic surface, retained_bounded FSB-K plus the retained (Z) certificate and self-contained mode-sum computations show K1 has finite g_eff while K0 has T^-2 divergent g_eff, selecting phi = -1 at the chain's retained-bounded grade.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-judge-panel-gpt-5.5-p1-20260630T165610Z-b0d946df-majority`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** None  _(class `C`)_
+- **chain closes:** True — The clean bounded verdict is correct: the non-axiom load-bearing authorities are retained-grade, the minimal axiom node is an accepted premise, and the source keeps the conclusion within the two-class surface and free-Fermi probe scope. The decisive selection is not a definition or tuned match; the runner constructs the K0/K1 kernels, computes zero geometry and low-temperature g_eff behavior, then reads off the flux of the unique finite-g_eff kernel. Because that discriminating pass/fail leg uses first-principles spectral and mode-sum computation rather than only a formal identity over inputs, class C is the correct load-bearing class.
+- **rationale:** The clean bounded verdict is correct: the non-axiom load-bearing authorities are retained-grade, the minimal axiom node is an accepted premise, and the source keeps the conclusion within the two-class surface and free-Fermi probe scope. The decisive selection is not a definition or tuned match; the runner constructs the K0/K1 kernels, computes zero geometry and low-temperature g_eff behavior, then reads off the flux of the unique finite-g_eff kernel. Because that discriminating pass/fail leg uses first-principles spectral and mode-sum computation rather than only a formal identity over inputs, class C is the correct load-bearing class.
+- **auditor confidence:** judicial
 
 ### `packet_memory_note`
 

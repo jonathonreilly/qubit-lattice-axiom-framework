@@ -138,25 +138,25 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-      "claim_scope": null,
+      "claim_scope": "For the explicitly constructed scalar NN K0 and Kawamoto-Smit K1 kernels on periodic Z^3 one-particle blocks, K1 satisfies the stated point-like linear-cone hypothesis (Z) with eight corner branches and V=2I (V=I for h/2), while K0 has an extended zero set with a zero-line direction forcing singular cone data; no flux selection or thermal conclusion is audited.",
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 14.886,
       "note_path": "docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/staggered_kernel_z_certificate_check_2026_06_11.py",
       "transitive_descendants": 945
@@ -330,15 +330,15 @@
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "minimal_axioms"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 11.849,
+      "load_bearing_score": 12.35,
       "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_vertex_power.py",
-      "transitive_descendants": 921
+      "transitive_descendants": 922
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

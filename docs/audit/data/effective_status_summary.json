@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1802,
-    "decoration": 67,
+    "bounded_theorem": 1805,
+    "decoration": 59,
     "meta": 332,
     "no_go": 359,
     "open_gate": 171,
-    "positive_theorem": 743
+    "positive_theorem": 748
   },
   "cycle_examples": [
     [
@@ -32,18 +32,16 @@
   ],
   "cycles_detected": 9,
   "effective_status_counts": {
-    "audited_conditional": 55,
+    "audited_conditional": 28,
     "audited_failed": 1,
     "audited_numerical_match": 10,
-    "audited_renaming": 29,
+    "audited_renaming": 24,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
-    "decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29": 1,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_cl3_color_automorphism_theorem": 8,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 6,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_cpt_exact_note": 4,
-    "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
@@ -54,8 +52,6 @@
     "decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 2,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
-    "decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05": 1,
-    "decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": 1,
     "decoration_under_lattice_nn_deterministic_rescale_note": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_mirror_mutual_information_chokepoint_note": 1,
@@ -65,20 +61,18 @@
     "decoration_under_plaquette_self_consistency_note": 1,
     "decoration_under_pmns_hw1_source_transfer_boundary_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
-    "decoration_under_staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16": 1,
     "decoration_under_strong_cp_theta_zero_note": 1,
-    "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 3,
     "decoration_under_three_generation_observable_theorem_note": 3,
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
     "meta": 326,
-    "open_gate": 39,
-    "retained": 213,
-    "retained_bounded": 1021,
-    "retained_no_go": 222,
+    "open_gate": 29,
+    "retained": 193,
+    "retained_bounded": 868,
+    "retained_no_go": 194,
     "retained_pending_chain": 4,
-    "unaudited": 1490
+    "unaudited": 1741
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

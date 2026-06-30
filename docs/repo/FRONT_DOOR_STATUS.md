@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1411 |
-| Retained-grade rows, including boxed decorations | 1316 |
+| Applied audit verdicts | 1412 |
+| Retained-grade rows, including boxed decorations | 1317 |
 | Retained positive theorems | 196 |
 | Retained no-go rows | 195 |
 | Retained bounded rows | 869 |
-| Boxed decorations under retained parents | 56 |
+| Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
-| Unaudited rows | 1735 |
+| Unaudited rows | 1734 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 28 |
 | Audited renaming rows | 25 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1737 |
-| Ready rows | 91 |
+| Total pending rows | 1736 |
+| Ready rows | 92 |
 | Cycle-break targets | 9 |
-| Critical pending | 326 |
+| Critical pending | 325 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`hopping_bilinear_hermiticity_theorem_note_2026-05-02`](../../docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; unaudited
 - [`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; unaudited
 - [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; unaudited
@@ -57,11 +57,11 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **440**.
+- Non-retained-grade cited rows in publication tables: **439**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 168 |
+| critical | `unaudited` | 167 |
 | high | `unaudited` | 162 |
 | medium | `unaudited` | 98 |
 | critical | `open_gate` | 2 |

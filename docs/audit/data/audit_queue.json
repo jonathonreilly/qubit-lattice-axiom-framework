@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 318,
+    "critical": 317,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -136,37 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
-      "claim_scope": "Bounded finite-Grassmann/Kawamoto-Smit lattice Noether identities on the admitted staggered carrier: the onsite/internal bilateral current, its U(1) specialization, and the (2Z)^3 central two-step Ward identity, with density (3) support-only.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-        "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
-        "minimal_axioms",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
-      ],
-      "direct_in_degree": 14,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.872,
-      "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_lattice_noether_check.py",
-      "transitive_descendants": 936
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -51620,6 +51589,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 97,
-  "total_pending": 1729
+  "ready_count": 96,
+  "total_pending": 1728
 }

@@ -171,6 +171,11 @@ kinetic-order selector without adding a broad Dynamics axiom. If rejected, it
 identifies the minimal missing primitive precisely: strict nearest-neighbor
 composition, not probability, time evolution, or a Hamiltonian.
 
+[`DIRAC_DYNAMICS_UNLOCK_PATH_FROM_AXIOM_RESET_2026-06-30.md`](../DIRAC_DYNAMICS_UNLOCK_PATH_FROM_AXIOM_RESET_2026-06-30.md)
+maps the source-side route from the #4747 axioms through this bridge to the
+Dirac/staggered kinetic spine and identifies the downstream rows that should be
+re-audited if the bridge is retained.
+
 One further governance point matters: the current Lattice axiom already names
 `Z^3`. Under PR #4747, d=3 is part of the foundation surface, not newly derived
 from dynamics. If the project goal changes to deriving the spatial dimension

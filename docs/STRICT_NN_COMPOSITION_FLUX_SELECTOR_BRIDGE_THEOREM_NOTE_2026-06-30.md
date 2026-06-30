@@ -156,6 +156,10 @@ This still does not derive probability, Born weights, measurement context,
 observable selection, source/action coefficients, gauge species, or `theta`.
 It attacks the kinetic spine only.
 
+The full source-side route from PR #4747 axioms to the Dirac kinetic spine is
+mapped in
+[`DIRAC_DYNAMICS_UNLOCK_PATH_FROM_AXIOM_RESET_2026-06-30.md`](DIRAC_DYNAMICS_UNLOCK_PATH_FROM_AXIOM_RESET_2026-06-30.md).
+
 ## Boundaries
 
 - The bridge is about **composition of availability influence**, not temporal

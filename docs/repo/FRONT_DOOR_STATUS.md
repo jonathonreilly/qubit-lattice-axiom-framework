@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1405 |
+| Applied audit verdicts | 1406 |
 | Retained-grade rows, including boxed decorations | 1311 |
 | Retained positive theorems | 193 |
 | Retained no-go rows | 194 |
 | Retained bounded rows | 868 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 29 |
-| Unaudited rows | 1741 |
+| Unaudited rows | 1740 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 28 |
-| Audited renaming rows | 24 |
+| Audited renaming rows | 25 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
 
@@ -33,12 +33,12 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1743 |
-| Ready rows | 80 |
+| Total pending rows | 1742 |
+| Ready rows | 79 |
 | Cycle-break targets | 9 |
 | Critical pending | 331 |
 | High pending | 314 |
-| Medium pending | 514 |
+| Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
@@ -88,11 +88,11 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 1700 descendants; score 159.732
+- `minimal_axioms` - critical; 1701 descendants; score 159.733
 - `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
-- `observable_principle_from_axiom_note` - critical; 920 descendants; score 63.347
 - `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
+- `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
-- `key_terminology` - critical; 1126 descendants; score 47.638
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312
+- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
+- `key_terminology` - critical; 1126 descendants; score 46.638
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
+      "to": "observable_principle_from_axiom_note"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
+        "observable_principle_from_axiom_note",
         "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
@@ -103190,7 +103190,7 @@
         "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d28066fb159200b37a9d6b2a33b97b7d87a3191a2c08115eac1ca3c72f73026e",
+      "note_hash": "19ab5e200ced059ac0975b3c128d56019a3d333435c48ae636c31c26d9dbd749",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

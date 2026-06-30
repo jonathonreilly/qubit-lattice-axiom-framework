@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 317,
+    "critical": 316,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -138,30 +138,6 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
-      "claim_scope": "Quantum/Qubit one-site M_2(C) local algebra alone does not force the physical matter boost action on C^2 to be the faithful Pauli/Weyl operator-frame action.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.872,
-      "note_path": "docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py",
-      "transitive_descendants": 936
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
@@ -186,6 +162,41 @@
       "ready": true,
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
       "transitive_descendants": 935
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
+        "minimal_axioms",
+        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
+        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+        "single_clock_uniqueness_scope_boundary_2026-06-06",
+        "kinetic_isotropy_primitive",
+        "emergent_lorentz_invariance_note",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
+      ],
+      "direct_in_degree": 24,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 24.869,
+      "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
+      "transitive_descendants": 934
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -534,41 +545,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
       "transitive_descendants": 1114
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
-        "minimal_axioms",
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
-        "single_clock_uniqueness_scope_boundary_2026-06-06",
-        "kinetic_isotropy_primitive",
-        "emergent_lorentz_invariance_note",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
-      ],
-      "direct_in_degree": 24,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 24.869,
-      "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
-      "transitive_descendants": 934
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -51590,5 +51566,5 @@
     }
   ],
   "ready_count": 96,
-  "total_pending": 1728
+  "total_pending": 1727
 }

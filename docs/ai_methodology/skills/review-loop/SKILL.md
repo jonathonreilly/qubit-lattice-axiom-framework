@@ -121,8 +121,9 @@ lattice with nearest-neighbor adjacency. Qubit is the domain of local
 possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is
 equivalent notation, not extra primitive structure.
 Admissibility is one fixed finite-neighborhood rule, the same at every lattice
-translate, using surrounding neighborhood records to determine available site
-possibilities. Record locks exactly one available local possibility, with finite
+translate; a local possibility is available at a site exactly when the rule
+admits it there, consistent with local records. Record locks exactly one
+available local possibility, with finite
 scalar readout additive over finite pairwise-disjoint record collections. Additional
 structures such as readout-context selection, decomposition, `K`/CPT
 structure, sector-generation rules, weighting, normalization, probability,

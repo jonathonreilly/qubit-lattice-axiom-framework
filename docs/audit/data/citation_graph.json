@@ -53470,11 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
+      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01"
+      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,8 +103180,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
@@ -103190,7 +103190,7 @@
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e3ce35c716758a0b24e10b97f967eec4a078a879e965b10c25ffb4175d72f78d",
+      "note_hash": "7d9e5cf385b5507be72ffab68f606884dd1156d80e90e565ed188f64d9f243da",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

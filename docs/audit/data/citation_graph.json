@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+      "to": "gravity_clean_derivation_note"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+        "gravity_clean_derivation_note",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
@@ -103190,7 +103190,7 @@
         "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bbaa5c811ac47d045c0b832d16bec3115d88a90c18813ef08911c5066a09a5c7",
+      "note_hash": "33058856d757a391ec3bcea7f4eb00677a500629f97eade5b93a850befeb12ae",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

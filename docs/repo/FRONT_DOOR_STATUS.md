@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1656 |
-| Retained-grade rows, including boxed decorations | 1520 |
-| Retained positive theorems | 213 |
-| Retained no-go rows | 222 |
-| Retained bounded rows | 1021 |
-| Boxed decorations under retained parents | 64 |
-| Open gates | 39 |
-| Unaudited rows | 1490 |
+| Applied audit verdicts | 1405 |
+| Retained-grade rows, including boxed decorations | 1311 |
+| Retained positive theorems | 193 |
+| Retained no-go rows | 194 |
+| Retained bounded rows | 868 |
+| Boxed decorations under retained parents | 56 |
+| Open gates | 29 |
+| Unaudited rows | 1741 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 55 |
-| Audited renaming rows | 29 |
+| Audited conditional rows | 28 |
+| Audited renaming rows | 24 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
 
@@ -33,39 +33,46 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1492 |
-| Ready rows | 0 |
+| Total pending rows | 1743 |
+| Ready rows | 80 |
 | Cycle-break targets | 9 |
-| Critical pending | 292 |
-| High pending | 280 |
-| Medium pending | 437 |
-| Leaf pending | 483 |
+| Critical pending | 331 |
+| High pending | 314 |
+| Medium pending | 514 |
+| Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- none
+- [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
+- [`no_per_site_chirality_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
+- [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
+- [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; unaudited
+- [`quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md) - critical; unaudited
+- [`axiom_first_cluster_decomposition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
+- [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **430**.
+- Non-retained-grade cited rows in publication tables: **441**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 163 |
-| high | `unaudited` | 159 |
-| medium | `unaudited` | 92 |
-| high | `audited_conditional` | 3 |
-| critical | `audited_conditional` | 2 |
+| critical | `unaudited` | 169 |
+| high | `unaudited` | 162 |
+| medium | `unaudited` | 98 |
 | critical | `open_gate` | 2 |
+| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
-| medium | `audited_conditional` | 2 |
+| critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
-| high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
+| medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
+| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

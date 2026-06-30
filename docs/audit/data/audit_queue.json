@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 298,
+    "critical": 297,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -138,31 +138,31 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_cpt_theorem_stretch_note_2026-04-29",
-      "claim_scope": "Finite-matrix fermion-sector CPT identities (CPT1)-(CPT5) on the explicitly supplied pure staggered KS carrier on even 4D finite blocks with periodic/APBC wraps and bond-centered reflection; no framework derivation of the KS carrier or SU(3) gauge-sector lift is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "axiom_first_kms_condition_theorem_note_2026-05-01",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
         "minimal_axioms",
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "assumption_derivation_ledger"
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
-      "direct_in_degree": 7,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 8,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.089,
-      "note_path": "docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 12.566,
+      "note_path": "docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/axiom_first_cpt_check.py",
-      "transitive_descendants": 384
+      "runner_path": "scripts/axiom_first_kms_condition_check.py",
+      "transitive_descendants": 378
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -5406,34 +5406,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_bminusl_anomaly_freedom.py",
       "transitive_descendants": 397
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_kms_condition_theorem_note_2026-05-01",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.566,
-      "note_path": "docs/AXIOM_FIRST_KMS_CONDITION_THEOREM_NOTE_2026-05-01.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/axiom_first_kms_condition_check.py",
-      "transitive_descendants": 378
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -19059,6 +19031,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.459,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
+      "transitive_descendants": 10
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "fs_rotation_exchange_discrete_insufficiency_narrow_no_go_note_2026-05-28",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -28167,32 +28165,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_fierz_singlet_selector_weight_not_partition_2026_06_08.py",
-      "transitive_descendants": 10
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_p1_p2_from_qubit_trace_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.459,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_observable_principle_p1_p2_qubit_trace_2026_05_22.py",
       "transitive_descendants": 10
     },
     {
@@ -51067,6 +51039,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 98,
-  "total_pending": 1709
+  "ready_count": 99,
+  "total_pending": 1708
 }

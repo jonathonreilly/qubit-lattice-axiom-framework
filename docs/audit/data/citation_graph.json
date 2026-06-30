@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "cl3_taste_generation_theorem"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
-        "cl3_taste_generation_theorem"
+        "cl3_taste_generation_theorem",
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c04f0c1e16c7338e7df46d9c1afb6950413eda814a6188cd10989b75e50a3770",
+      "note_hash": "eb521ccd23da90de62bb05cd3c81038bb7d6885242c38688fff1cec2974ce270",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

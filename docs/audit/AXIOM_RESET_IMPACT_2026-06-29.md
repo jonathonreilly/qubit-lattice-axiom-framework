@@ -60,9 +60,8 @@ Tier-A admitted derivation targets remain exactly:
 
 Admissibility does not absorb either Tier-A target. It also does not absorb the
 `realized_state_primitive`: Admissibility determines site-level availability
-through finite-neighborhood admission consistent with local records, while the
-realized-state primitive permits pointwise evaluation at a supplied
-law-admissible realized state.
+through nearest-neighbor conditions, while the realized-state primitive permits
+pointwise evaluation at a supplied law-admissible realized state.
 
 ## Blocked-Lane Impact
 
@@ -72,8 +71,9 @@ surface with four separated ontology roles:
 - **Lattice** says where physical locality is carried.
 - **Qubit** says each site has a domain of local possibilities, whose full
   one-site algebraic presentation is `M_2(C)`.
-- **Admissibility** says one fixed finite-neighborhood rule, translated over the
-  lattice, admits local possibilities at sites consistent with local records.
+- **Admissibility** says one fixed nearest-neighbor rule, covariant under
+  lattice translations and proper cubic rotations, determines the available
+  subset of possibilities at each site.
 - **Record** says a record locks one available local possibility and supports
   finite scalar readout additivity over disjoint record collections.
 
@@ -101,8 +101,8 @@ The four-axiom set is complete enough for the minimal ontology reset and for
 premise policing of record availability:
 
 - unrecorded sites carry local possibility;
-- the finite-neighborhood rule admits local possibilities at sites, consistent
-  with local records;
+- nearest-neighbor conditions determine the available subset of possibilities
+  at each site;
 - a record can lock only an available local possibility;
 - finite scalar record readout is additive over disjoint record collections.
 
@@ -117,9 +117,9 @@ use them.
 
 The useful 30,000-foot split is:
 
-1. **Admissibility / record-availability layer.** This concerns which site
-   possibilities are available through finite-neighborhood admission consistent
-   with local records.
+1. **Admissibility / record-availability layer.** This concerns which
+   possibilities are available at each site through nearest-neighbor
+   conditions.
 2. **Spatial kinetic branch layer.** This concerns whether the realized spatial
    kinetic context is scalar/trivial or a nonzero first-order Dirac-square
    carrier.

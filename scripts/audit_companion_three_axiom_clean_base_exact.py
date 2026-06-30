@@ -153,7 +153,7 @@ def source_boundary_checks() -> list[Check]:
         Check(
             "Registry note records Admissibility and downstream-boundary firewall",
             "Admissibility" in node.get("note", "")
-            and "rule admits it there, consistent with local records" in node.get("note", "")
+            and "nearest-neighbor conditions determine the available subset of possibilities" in node.get("note", "")
             and "context-selection rule" in node.get("note", "")
             and "downstream theory consequence" in node.get("note", ""),
             "",
@@ -189,9 +189,9 @@ def source_boundary_checks() -> list[Check]:
         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
         Check(
             "Admissibility local-constraint clause is present",
-            "one fixed finite-neighborhood admissibility rule" in note
-            and "same at every\nlattice translate" in note
-            and "finite-neighborhood\nrule admits it there, consistent with local records" in note,
+            contains(note, "one fixed nearest-neighbor admissibility rule")
+            and contains(note, "covariant under lattice translations and proper cubic rotations")
+            and contains(note, "For each site, nearest-neighbor conditions determine the available subset of possibilities."),
             "",
         ),
         Check("Record fixed-reality clause is present", "locks exactly one available local possibility" in note and "scalar-valued finitely\nadditive functional" in note and "`I(empty)=0`" in note, ""),
@@ -267,9 +267,9 @@ def run_checks() -> list[Check]:
     neighborhood_records = frozenset({"blocks_up"})
     checks.append(
         Check(
-            "Admissibility: finite-neighborhood rule can admit site possibilities relative to local records",
+            "Admissibility: nearest-neighbor conditions can constrain possibility availability",
             not is_available("up", neighborhood_records) and is_available("down", neighborhood_records),
-            "toy predicate only: local records can make a candidate inadmissible; no probability, transition, or dynamics is used",
+            "toy predicate only: neighbor conditions can make a candidate unavailable; no probability, transition, or dynamics is used",
         )
     )
 

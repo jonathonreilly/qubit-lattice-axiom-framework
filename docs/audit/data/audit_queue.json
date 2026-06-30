@@ -138,28 +138,28 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
-      "claim_scope": null,
+      "claim_scope": "Free U=1 bilinear staggered two-step sector with m>0: for 0 < d mu < eta < arcsinh(m), the exact-log quasilocal hopping Hamiltonian has finite W_mu and satisfies the stated one-site quasilocal Lieb-Robinson bound; no gauged/interacting or continuum claim audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
         "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
         "minimal_axioms"
       ],
       "direct_in_degree": 4,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py"
       ],
       "load_bearing_score": 14.88,
       "note_path": "docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
       "transitive_descendants": 941
@@ -187,6 +187,37 @@
       "ready": true,
       "runner_path": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py",
       "transitive_descendants": 938
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+        "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+        "minimal_axioms",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
+      ],
+      "direct_in_degree": 14,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 19.872,
+      "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/axiom_first_lattice_noether_check.py",
+      "transitive_descendants": 936
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -237,37 +268,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
-      "transitive_descendants": 935
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-        "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
-        "minimal_axioms",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.37,
-      "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "transitive_descendants": 935
     },
     {

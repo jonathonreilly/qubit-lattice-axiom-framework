@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 885 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
-| Unaudited rows | 1708 |
+| Unaudited rows | 1707 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 25 |
@@ -43,14 +43,14 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
+- [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; audit_in_progress
 - [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; unaudited
 - [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
 - [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
 - [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited
-- [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
+- [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,18 +61,18 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 164 |
+| critical | `unaudited` | 163 |
 | high | `unaudited` | 162 |
 | medium | `unaudited` | 98 |
 | critical | `audited_conditional` | 3 |
 | critical | `open_gate` | 2 |
 | high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
-| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 
@@ -89,10 +89,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
-- `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
-- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
+- `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
+- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
-- `minimal_axioms_2026-05-03` - critical; 1034 descendants; score 48.015
-- `key_terminology` - critical; 1127 descendants; score 46.640
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 899 descendants; score 44.314
+- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
+- `key_terminology` - critical; 1126 descendants; score 46.638
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

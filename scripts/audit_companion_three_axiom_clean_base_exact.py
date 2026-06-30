@@ -178,7 +178,13 @@ def source_boundary_checks() -> list[Check]:
             "",
         ),
         Check("Note names exactly four framework axioms", "1. **Lattice**" in note and "2. **Qubit**" in note and "3. **Admissibility**" in note and "4. **Record**" in note, ""),
-        Check("Lattice locality clause is present", "Physical sites are the points of the cubic lattice `Z^3`" in note and "nearest-neighbor adjacency" in note, ""),
+        Check(
+            "Lattice locality clause is present",
+            contains(note, "Physical sites are the points of the cubic lattice `Z^3`")
+            and contains(note, "nearest-neighbor adjacency")
+            and contains(note, "proper cubic rotations"),
+            "",
+        ),
         Check("Qubit site-possibility clause is present", "domain of local possibilities" in note and "full one-site possibility domain has algebraic presentation `M_2(C)`" in note, ""),
         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
         Check(

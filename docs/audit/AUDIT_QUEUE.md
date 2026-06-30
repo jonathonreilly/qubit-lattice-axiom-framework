@@ -15,10 +15,10 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | unaudited | critical | 928 | 19.86 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py` |
+| 1 | `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | critical | 928 | 19.86 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py` |
 | 2 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | unaudited | critical | 926 | 12.86 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
 | 3 | `yt_vertex_power_derivation` | bounded_theorem | unaudited | critical | 922 | 12.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
-| 4 | `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 915 | 14.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py` |
+| 4 | `staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 915 | 15.34 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py` |
 | 5 | `axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01` | bounded_theorem | unaudited | critical | 913 | 22.84 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_microcausality_check.py` |
 | 6 | `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | unaudited | critical | 901 | 16.82 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_reeh_schlieder_check.py` |
 | 7 | `yt_ward_identity_derivation_theorem` | bounded_theorem | unaudited | critical | 822 | 40.69 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |

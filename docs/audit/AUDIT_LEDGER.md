@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 874 |
+| **retained_bounded** | 875 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1723 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1275 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1276 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1190,6 +1188,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
+| `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -17006,6 +17005,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The narrowed claim closes from the registered minimal_axioms/Qubit premise, which is an accepted premise, plus the retained Cl(3) complexification split and standard finite-dimensional algebra. The operative move is an algebraic readout from M_2(C) and the Pauli/Cl(3) module classification, not a fresh first-principles computation producing a new number. No open staggered-Dirac realization gate or non-retained non-axiom dependency is load-bearing for the single-site carrier/multiplicity scope.
 - **rationale:** The narrowed claim closes from the registered minimal_axioms/Qubit premise, which is an accepted premise, plus the retained Cl(3) complexification split and standard finite-dimensional algebra. The operative move is an algebraic readout from M_2(C) and the Pauli/Cl(3) module classification, not a fresh first-principles computation producing a new number. No open staggered-Dirac realization gate or non-retained non-axiom dependency is load-bearing for the single-site carrier/multiplicity scope.
 - **auditor confidence:** judicial
+
+### `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the abstract per-hypercube Z2^d component-space to exterior-form-complex equivalence, the finite-dimensional D_KD = d - δ algebraic operator properties, the d=4 spinor-count factor match, Hermiticity of iD_KD, and the narrow Wilson parity-breaking statement, excluding any physical staggered-Dirac dynamical identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T214529Z-5e846e2b-staggered_dirac_substep2`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The canonical bijection between b in {0,1}^d with Hamming weight p and ordered p-subsets of {1,...,d} gives a graded linear-algebra bijection V_{H_n} = C^{2^d} ≅ Λ^*(C^d).  _(class `A`)_
+- **chain closes:** True — The scoped result closes by finite enumeration, binomial identities, standard exterior-algebra matrix identities, and retained-grade one-hop inputs. The note explicitly leaves the physical staggered-Dirac/Kawamoto-Smit/U4 identification out of scope, so that open bridge is not load-bearing here.
+- **rationale:** The load-bearing bridge is a genuine class-A algebraic closure over retained-grade inputs, not a definition substitution or tuned numerical match. The runner source performs explicit enumeration and exact sympy matrix checks for the stated finite-dimensional identities, including nilpotency, adjointness, parity reversal, Laplacian decomposition, Hermiticity, and the JW/form-complex dimension boundary. The bounded physical gaps are correctly scoped as non-claims rather than imported premises.
+- **auditor confidence:** high
 
 ### `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`
 

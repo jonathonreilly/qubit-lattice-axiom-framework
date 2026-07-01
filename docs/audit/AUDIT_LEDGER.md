@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 898 |
+| **retained_bounded** | 899 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1688 |
+| unaudited | 1687 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1303 |
+| `audited_clean` | 1304 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2014 |
+| `unaudited` | 2013 |
 
 | claim_type | count |
 |---|---:|
@@ -107,14 +107,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
-| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1400 | 40.45 | `audited_clean` | **retained** |
+| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_conditional` | ~~audited_conditional~~ |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
@@ -1098,6 +1098,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `registration_reinstates_chirality_no_go_note_2026-06-07` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
+| `restricted_strong_field_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `retardation_discriminator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `retarded_field_causality_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `retarded_field_compact_refinement_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -15725,6 +15726,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Within the restricted inputs, the note's operational claims close: the runner script matches the documented bootstrap behavior, the current inspection output supports that the helper is present and importable, and the usage search supports the claim that relevant retained numpy replay lanes call it. The note also explicitly limits its scope to local operational reproducibility and disclaims CI enforcement, scientific promotion, and generalization beyond this host.
 - **rationale:** The support note is internally accurate against the provided runner and inspection output. Its load-bearing operational convention is implemented by the bootstrap helper and reflected in listed script usages. Because the claim boundary is explicitly local, non-scientific, and non-CI-enforced, no hidden premise is needed for the stated support-level claim.
 - **auditor confidence:** high
+
+### `restricted_strong_field_closure_note`
+
+- **Note:** [`RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md`](../../docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-box scalar/static-conformal closure on the specified local O_h star-supported source class, including shell source, same-charge Dirichlet bridge, conformal readouts, and Schur boundary-action minimizer.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T074809Z-d52b92ed-restricted_strong_field_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With phi_ext fixed, sigma_R = H_0 phi_ext gives u = phi_ext by Dirichlet uniqueness; then H_0 psi = sigma_R and H_0 chi = -sigma_R solve uniquely for rho and S, while the SPD Schur complement makes the exact trace the unique action minimizer.  _(class `A`)_
+- **chain closes:** True — The conclusion follows as finite-dimensional algebra over the fixed source object, the Dirichlet-positive lattice Laplacian, and the retained_bounded shell-localization authority. The result is restricted to this scalar/static-conformal finite-box sector and does not assert a tensorial GR completion.
+- **rationale:** The direct cited authority is retained_bounded, which is retained-grade for this bounded theorem scope. The load-bearing steps are algebraic identities: applying H_0 to the exterior projection, Dirichlet uniqueness, triangular solution of the two conformal constraints, and the standard SPD Schur-complement minimizer argument. No external comparator or tuned empirical input is used; the numerical source parameters are part of the restricted finite-box hypothesis, not claimed as derived here.
+- **auditor confidence:** medium
 
 ### `retardation_discriminator_note`
 

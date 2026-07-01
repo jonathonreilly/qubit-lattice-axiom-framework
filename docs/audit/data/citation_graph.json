@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "single_axiom_hilbert_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "restricted_strong_field_closure_note"
     },
     {
@@ -53494,11 +53490,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+      "to": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "single_axiom_hilbert_note",
         "restricted_strong_field_closure_note",
         "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20",
         "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
         "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
         "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
-        "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
+        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
       ],
       "helper_runner_paths": [],
-      "note_hash": "a41435cee9a736df5009ac2c7e891ba1086ce560acf6b9ea9b0aec9a81a0b108",
+      "note_hash": "17c46f7156e5795d5e13e47ca36b410e6e9a98c7556751febc9d0eafad40c276",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

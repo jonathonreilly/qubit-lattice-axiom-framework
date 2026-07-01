@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 874 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1725 |
+| unaudited | 1724 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 29 |
+| ~~audited_conditional~~ | 30 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1275 |
-| `audited_conditional` | 29 |
+| `audited_conditional` | 30 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2051 |
+| `unaudited` | 2050 |
 
 | claim_type | count |
 |---|---:|
@@ -1415,6 +1415,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `accessible_prediction_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `axiom_first_spin_statistics_theorem_note_2026-04-29` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -2426,6 +2427,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Given finite-dimensional positive Hermitian T with spec(T) in (0,M_T], functional calculus gives H := -(1/(2 a_tau)) log(T/M_T) self-adjoint with H >= 0, and the gap formula follows when the top eigenvalue is nondegenerate.  _(class `A`)_
 - **chain closes:** True — The cited two-step positivity and blocked-time normalization inputs are retained-grade, and the downstream claims are finite-dimensional spectral calculus. The note explicitly excludes full U-integrated SU(3), Wilson extension, unconditional nondegeneracy, and spatial cluster decomposition.
 - **rationale:** The load-bearing theorem is an algebraic closure over independent retained-grade inputs: a positive Hermitian finite transfer matrix, the two-step time normalization, and the retained temporal bridge for the conditional SC4 corollary. The runner source is not a print-only certificate; it constructs a finite free-staggered exhibit, checks positivity, normalization, self-adjointness, and a positive finite-carrier gap. The clean verdict is only for the bounded/conditional scope stated in the note, not for U-integrated reflection positivity or spatial clustering.
+- **auditor confidence:** high
+
+### `axiom_first_spin_statistics_theorem_note_2026-04-29`
+
+- **Note:** [`AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md`](../../docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Re-scoped CCR/free-boson exclusion on the dim-2 substep-1 carrier, with hard-core-vs-CAR selection out of scope and Grassmann side consequences conditional on the declared Grassmann frame.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T213812Z-fa3199b6-axiom_first_spin_statist`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The canonical CCR has no finite-dimensional realization by tr([a,a†])=0 while tr(I)=d>0, and the cited substep-1 per-site matter carrier is a finite dim-2 Cl(3) module, so the free-boson CCR branch is excluded.  _(class `A`)_
+- **chain closes:** False — The S2 CCR exclusion core closes from finite-dimensional trace cyclicity plus the accepted minimal_axioms premise and retained dim-2/Cl(3) authorities. The full scoped claim does not close as written because S1 says the displayed Grassmann generator relations, including {χbar_x,χ_y}=0, are realized on a 2^{|Λ|}-dimensional Fock space, while the runner checks ordinary CAR {c,c†}=I instead.
+- **rationale:** The CCR exclusion itself is a valid algebraic closure: no finite-dimensional operator pair can satisfy [a,a†]=I, and the cited/accepted inputs supply a finite dim-2 per-site carrier. The hard-core boundary is also correctly scoped because σ+ violates the CCR hypothesis on-site. However the source-runner convention for S1 drifts: the note states all Grassmann generators anticommute with zero cross anticommutator, but the executable check verifies CAR creation/annihilation operators with nonzero mixed anticommutator. That prevents a clean verdict for the full claim as written.
 - **auditor confidence:** high
 
 ### `background_independence_note`

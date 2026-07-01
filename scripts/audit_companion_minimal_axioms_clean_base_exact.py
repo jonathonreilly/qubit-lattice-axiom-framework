@@ -196,7 +196,8 @@ def source_boundary_checks() -> list[Check]:
         ),
         Check(
             "Record fixed-reality clause is present",
-            contains(note, "locks exactly one available local possibility")
+            contains(note, "A site need not carry a record.")
+            and contains(note, "locks exactly one local possibility from the subset\navailable at that site under Admissibility")
             and contains(note, "Only records are readable")
             and contains(note, "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive")
             and "`I(empty)=0`" in note,

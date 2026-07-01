@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 313,
+    "critical": 312,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -138,29 +138,30 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "yt_vertex_power_derivation",
-      "claim_scope": "On the adjacency-licensed gauged staggered-Dirac nearest-neighbor hopping surface, with SU(3) site-local covariance, the link-exponential convention, quadratic-response coupling channel, and tree-level tadpole split, the vertex power is n_link=2 and hence alpha_s(v)=alpha_bare/u_0^2; no numerical strong-coupling input is used.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
         "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "minimal_axioms"
+        "yt_vertex_power_derivation",
+        "minimal_axioms_2026-05-03",
+        "physical_lattice_necessity_note"
       ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.35,
-      "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 11.342,
+      "note_path": "docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_vertex_power.py",
-      "transitive_descendants": 922
+      "runner_path": "scripts/frontier_yt_vertex_power_operator_counting_lemma.py",
+      "transitive_descendants": 917
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -573,33 +574,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_hierarchy_observable_principle_from_axiom.py",
       "transitive_descendants": 920
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
-        "yt_vertex_power_derivation",
-        "minimal_axioms_2026-05-03",
-        "physical_lattice_necessity_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.342,
-      "note_path": "docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_vertex_power_operator_counting_lemma.py",
-      "transitive_descendants": 917
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -51490,5 +51464,5 @@
     }
   ],
   "ready_count": 102,
-  "total_pending": 1724
+  "total_pending": 1723
 }

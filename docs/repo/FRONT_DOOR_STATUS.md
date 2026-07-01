@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1427 |
-| Retained-grade rows, including boxed decorations | 1328 |
+| Applied audit verdicts | 1428 |
+| Retained-grade rows, including boxed decorations | 1329 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 197 |
-| Retained bounded rows | 877 |
+| Retained bounded rows | 878 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
 | Unaudited rows | 1718 |
@@ -33,18 +33,18 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1721 |
-| Ready rows | 100 |
+| Total pending rows | 1720 |
+| Ready rows | 101 |
 | Cycle-break targets | 9 |
-| Critical pending | 310 |
+| Critical pending | 309 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; audit_in_progress
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
+- [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; unaudited
 - [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
 - [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
 - [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
@@ -57,7 +57,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **438**.
+- Non-retained-grade cited rows in publication tables: **437**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -67,12 +67,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `open_gate` | 2 |
 | high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
+| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

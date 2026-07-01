@@ -6,7 +6,9 @@
 
 **Repo addendum (2026-04-18):** a reviewed follow-on support stack now lives on
 current `main` via
-[CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md](./CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md).
+`CHARGED_LEPTON_KOIDE_NOTE_2026-04-18.md` (backticked non-load-bearing context
+reference; the row was narrowed 2026-05-26 to an open-gate two-gate
+certificate — an admission surface — and is not an input to this note).
 It closes the April 18 candidate route down to one microscopic scalar selector
 law, but it does **not** change the authoritative status of this note: the
 charged-lepton package remains bounded observational-pin compatibility rather

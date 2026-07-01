@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1732
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 92
+**Total pending:** 1731
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 93
 
 By criticality:
-- `critical`: 321
+- `critical`: 320
 - `high`: 314
 - `medium`: 513
 - `leaf`: 584
@@ -15,10 +15,10 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11` | bounded_theorem | audit_in_progress | critical | 944 | 14.38 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py` |
-| 2 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | unaudited | critical | 938 | 18.38 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py` |
-| 3 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | unaudited | critical | 936 | 15.87 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py` |
-| 4 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 935 | 22.87 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cluster_decomposition_check.py` |
+| 1 | `staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25` | no_go | unaudited | critical | 938 | 18.38 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py` |
+| 2 | `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | unaudited | critical | 936 | 15.87 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py` |
+| 3 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 935 | 22.87 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cluster_decomposition_check.py` |
+| 4 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 935 | 19.37 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_lattice_noether_check.py` |
 | 5 | `staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17` | bounded_theorem | unaudited | critical | 928 | 19.86 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_staggered_dirac_substep2_kahler_dirac_equivalence_exact_2026_05_17.py` |
 | 6 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | unaudited | critical | 926 | 12.86 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py` |
 | 7 | `yt_vertex_power_derivation` | bounded_theorem | unaudited | critical | 922 | 12.35 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_vertex_power.py` |
@@ -26,12 +26,12 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | unaudited | critical | 821 | 40.18 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
 | 10 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 763 | 20.58 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py` |
 | 11 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 289 | 8.68 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
-| 12 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 263 | 9.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |
-| 13 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | unaudited | critical | 1119 | 10.63 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |
-| 14 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1118 | 12.13 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
-| 15 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1114 | 40.12 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
-| 16 | `free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 940 | 14.38 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py` |
-| 17 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 935 | 19.37 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_lattice_noether_check.py` |
+| 12 | `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | unaudited | critical | 268 | 8.57 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py` |
+| 13 | `clifford_chirality_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | unaudited | critical | 263 | 9.04 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_clifford_chirality_dimension_narrow.py` |
+| 14 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | unaudited | critical | 1119 | 10.63 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py` |
+| 15 | `anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26` | bounded_theorem | unaudited | critical | 1118 | 12.13 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py` |
+| 16 | `anomaly_forces_time_theorem` | bounded_theorem | unaudited | critical | 1114 | 40.12 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_anomaly_forces_time.py` |
+| 17 | `free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10` | bounded_theorem | unaudited | critical | 940 | 14.38 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py` |
 | 18 | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | bounded_theorem | unaudited | critical | 933 | 24.87 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_single_clock_codimension1_evolution_check.py` |
 | 19 | `axiom_first_spin_statistics_theorem_note_2026-04-29` | bounded_theorem | unaudited | critical | 932 | 17.87 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_spin_statistics_check.py` |
 | 20 | `observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16` | no_go | unaudited | critical | 923 | 11.35 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py` |

@@ -53470,11 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_ward_identity_derivation_theorem"
+      "to": "cl3_taste_generation_theorem"
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_taste_generation_theorem"
+      "to": "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,8 +103180,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
+        "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
         "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
@@ -103190,7 +103190,7 @@
         "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e450347ee73f23976bb6d0f1c88996118496494b64f6f2c9e0d9a223bf3dff76",
+      "note_hash": "cb187a729407c4dd2bde6c5880bdd888763fd7fa047d869e9a2cb11b4e5ad668",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

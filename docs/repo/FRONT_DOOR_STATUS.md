@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1459 |
+| Applied audit verdicts | 1460 |
 | Retained-grade rows, including boxed decorations | 1355 |
 | Retained positive theorems | 200 |
 | Retained no-go rows | 198 |
 | Retained bounded rows | 899 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1687 |
+| Unaudited rows | 1686 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 37 |
+| Audited conditional rows | 38 |
 | Audited renaming rows | 25 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1689 |
-| Ready rows | 105 |
+| Total pending rows | 1688 |
+| Ready rows | 104 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 302 |
+| High pending | 301 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) - high; unaudited
 - [`pre_record_reference_state_tracial_derivation_note_2026-05-20`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) - high; unaudited
 - [`gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
 - [`busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`](../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
 - [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - high; unaudited
+- [`record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -56,8 +56,11 @@ possibilities.
 
 ### Record / Fixed Reality
 
-A record locks exactly one available local possibility; the locked
-possibility is invariant under repeated readout.
+Records may occur at sites.
+
+When present, a record locks exactly one local possibility from the subset
+available at that site under Admissibility; the locked possibility is invariant
+under repeated readout.
 
 Only records are readable. For any finite collection of pairwise-disjoint
 records, scalar readout `I` is additive, with `I(empty)=0`.

@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 199 |
+| **retained** | 200 |
 | **retained_no_go** | 198 |
 | **retained_bounded** | 891 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1698 |
+| unaudited | 1697 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1295 |
+| `audited_clean` | 1296 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2024 |
+| `unaudited` | 2023 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 568 |
-| `high` | 507 |
+| `critical` | 567 |
+| `high` | 508 |
 | `medium` | 929 |
 | `leaf` | 1470 |
 
@@ -122,7 +122,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
-| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1099 | 35.60 | `audited_clean` | **retained_bounded** |
+| 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
@@ -953,6 +953,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `persistent_inertial_object_probe_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_adaptive_readout_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -13516,6 +13517,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Within the rooted edge-simple length-4/6 loop enumeration on Z^3, all 24 length-4 loops are plaquettes satisfying the unit-neighborhood license and all 264 length-6 loops fail it.  _(class `C`)_
 - **chain closes:** True — The cited reachability note supplies nearest-neighbor dependency context, and the kinetic-isotropy primitive is flagged as an accepted premise used only for one-tick form context. The finite enumeration follows from the stated loop domain and license, without deriving the license or the gauge action.
 - **rationale:** The runner source actually enumerates length-4 and length-6 lattice loops with no immediate backtracking or repeated undirected edge and applies the endpoint-neighborhood license; it is not just printing constants. An independent recursive enumeration/classification gives the same quantitative identities: 24 licensed plaquette loops at length 4 and 264 length-6 loops, all failing with a min-distance-2 witness. The accepted primitive contributes no dynamics, normalization, selector, or empirical input, and the conclusion remains bounded to the explicit finite license test.
+- **auditor confidence:** high
+
+### `per_site_su2_spin_half_theorem_note_2026-05-02`
+
+- **Note:** [`PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a single accepted Qubit/Axiom-1 site with local algebra M_2(C) and an oriented Pauli triple used as S_i=σ_i/2, the local action is the irreducible two-dimensional complex j=1/2 su(2) module.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T071008Z-b53e2af2-per_site_su2_spin_half_t`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the Pauli relations, S_i=σ_i/2 obey [S_i,S_j]=i ε_ijk S_k, have S^2=(3/4)I, and because the S_i generate M_2(C), the commutant is only scalars.  _(class `A`)_
+- **chain closes:** True — The Qubit axiom supplies the one-site M_2(C) algebra as an accepted premise, and the retained Pauli/Cl(3) theorem plus admitted standard su(2) representation facts supply the remaining representation-theory inputs. The conclusion is a direct algebraic closure inside M_2(C), with physical spin-statistics and multi-site carrier claims kept out of scope.
+- **rationale:** Independent algebra confirms the commutator normalization, Casimir factor 3/4, S_3 spectrum, and scalar commutant. The runner source performs actual matrix products, eigenvalue checks, and an SVD commutant computation rather than merely printing pass constants; its source-firewall check is consistent with the scoped claim. The only non-retained upstream is the registered minimal-axiom premise, which falls under the accepted-premise carve-out, and the retained Cl(3) authority is used within its algebraic scope.
 - **auditor confidence:** high
 
 ### `periodic_2d_wraparound_fix_note_2026-04-11`

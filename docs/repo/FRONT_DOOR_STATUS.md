@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1493 |
-| Retained-grade rows, including boxed decorations | 1380 |
-| Retained positive theorems | 206 |
-| Retained no-go rows | 202 |
-| Retained bounded rows | 911 |
-| Boxed decorations under retained parents | 61 |
-| Open gates | 31 |
-| Unaudited rows | 1653 |
+| Applied audit verdicts | 1405 |
+| Retained-grade rows, including boxed decorations | 1311 |
+| Retained positive theorems | 193 |
+| Retained no-go rows | 194 |
+| Retained bounded rows | 868 |
+| Boxed decorations under retained parents | 56 |
+| Open gates | 29 |
+| Unaudited rows | 1741 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 42 |
-| Audited renaming rows | 27 |
+| Audited conditional rows | 28 |
+| Audited renaming rows | 24 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
 
@@ -33,41 +33,41 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1655 |
-| Ready rows | 92 |
+| Total pending rows | 1743 |
+| Ready rows | 80 |
 | Cycle-break targets | 9 |
-| Critical pending | 290 |
-| High pending | 287 |
-| Medium pending | 494 |
+| Critical pending | 331 |
+| High pending | 314 |
+| Medium pending | 514 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
-- [`darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05`](../../docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md) - medium; unaudited
-- [`gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`](../../docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - medium; unaudited
-- [`bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`](../../docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
-- [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
-- [`persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
-- [`color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05`](../../docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md) - medium; unaudited
-- [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
+- [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
+- [`no_per_site_chirality_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
+- [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
+- [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; unaudited
+- [`quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md) - critical; unaudited
+- [`axiom_first_cluster_decomposition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
+- [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **430**.
+- Non-retained-grade cited rows in publication tables: **441**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 162 |
-| high | `unaudited` | 159 |
-| medium | `unaudited` | 93 |
-| high | `audited_conditional` | 4 |
-| critical | `audited_conditional` | 3 |
+| critical | `unaudited` | 169 |
+| high | `unaudited` | 162 |
+| medium | `unaudited` | 98 |
 | critical | `open_gate` | 2 |
+| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
+| critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |

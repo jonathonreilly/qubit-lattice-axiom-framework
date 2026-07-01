@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 200 |
-| **retained_bounded** | 907 |
+| **retained_bounded** | 908 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1666 |
+| unaudited | 1665 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 27 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1321 |
+| `audited_clean` | 1322 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1992 |
+| `unaudited` | 1991 |
 
 | claim_type | count |
 |---|---:|
@@ -118,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_conditional` | ~~audited_conditional~~ |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
-| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
@@ -1103,6 +1103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15837,6 +15838,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the stated L=3/L=4/L=5 events, occupancies, seeds, depth choices, and fixed 300-permutation sampled-null protocol, the three-point min-gain ledger and sampled-null gap series have the displayed values.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite sparse Fock systems, evolves them with expm_multiply, computes determinant phases, prefix statistics, sampled-null p95 values, min-gains, and medians, and its cached output matches the source note. The closure is only for the explicitly scoped finite diagnostic, not an exhaustive permutation null, asymptotic law, or physical U(1) gauge-field claim.
 - **rationale:** The load-bearing numbers are computed directly by the provided runner rather than imported from the cited authority or hard-coded as a print-only result. The one-hop authority is retained_bounded, which is retained-grade under the rubric, and the source note explicitly confines load-bearing content to the runner-defined finite objects. The negative conclusion is scoped to the displayed finite period series and does not overclaim an all-permutation null, asymptotic behavior, L>=6 behavior, or a physical gauge interpretation.
+- **auditor confidence:** high
+
+### `record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18`
+
+- **Note:** [`RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md`](../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the explicit finite qubit controlled-copy/fresh-fragment model, the pi/4 kick plus fixed record-basis calibration induces the projective record-write isometry and extracted blocks K_r=P_r.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T130928Z-67153541-record_formation_control`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since sigma_z has eigenprojectors P_0 and P_1, U_cc(theta)=P_0 tensor exp(-i theta sigma_x)+P_1 tensor exp(+i theta sigma_x), and at theta=pi/4 the two blank-fragment images are orthogonal so a fixed calibration sends the dynamic write to W|psi>=P_0|psi> tensor |0>+P_1|psi> tensor |1>.  _(class `A`)_
+- **chain closes:** True — The spectral decomposition of sigma_z gives the conditional rotations, and the pi/4 images of the blank fragment have overlap <0|exp(i pi sigma_x/2)|0>=0. The resulting orthonormal record basis admits a unitary calibration, after which block extraction gives K_r=P_r under the stated tensor-order convention.
+- **rationale:** The load-bearing step is finite-dimensional algebra over explicit retained_bounded inputs, not a definition, renaming, tuned numerical match, or external comparator. Independent sign, overlap, calibration, and block-extraction checks agree with the note and runner source. The runner's source/scope checks and hard-coded boundary flags are not load-bearing, but the U_cc-to-W identity itself is actually computed. The clean verdict is scoped only to the bounded explicit controlled-copy/fresh-fragment model.
 - **auditor confidence:** high
 
 ### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`

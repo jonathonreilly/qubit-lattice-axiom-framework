@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "luders_rule_from_composition_consistency_note_2026-05-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "color_generation_independent_z3_structures_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "luders_rule_from_composition_consistency_note_2026-05-20",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
         "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
         "q_integer_spectrum_theorem_note_2026-05-02",
         "momentum_charge_commute_theorem_note_2026-05-02",
         "translation_abelian_composition_theorem_note_2026-05-02",
         "translation_covariance_local_op_theorem_note_2026-05-02",
-        "color_generation_independent_z3_structures_2026-06-05"
+        "color_generation_independent_z3_structures_2026-06-05",
+        "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "302674300f1485f08333f6954f9acd0d87100ac864b9a0c110db6f2443e2b648",
+      "note_hash": "0e6708309b64c3d492c7c289330e256f72317a508dc65a40cd0d060dbb930433",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

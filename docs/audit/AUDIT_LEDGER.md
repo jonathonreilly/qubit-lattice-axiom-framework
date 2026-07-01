@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 902 |
+| **retained_bounded** | 903 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 30 |
-| unaudited | 1680 |
+| unaudited | 1679 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1310 |
+| `audited_clean` | 1311 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2006 |
+| `unaudited` | 2005 |
 
 | claim_type | count |
 |---|---:|
@@ -200,6 +200,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_spectrum_condition_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_spin_statistics_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `background_independence_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2556,6 +2557,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The canonical CCR has no finite-dimensional realization because tr([a,a†])=0 in finite dimension while [a,a†]=I would require tr(I)=d>0; combined with the retained dim-2 one-qubit/Cl(3) per-site carrier, this excludes only the free-boson CCR branch.  _(class `A`)_
 - **chain closes:** True — The CCR exclusion follows by finite-dimensional trace algebra plus the accepted minimal-axiom premise and retained single-module/Cl(3) dimensional authorities. The hard-core alternative is correctly outside the CCR hypothesis, and the Grassmann determinant and antisymmetry statements are standard conditional Berezin/JW consequences rather than statistics-forcing claims.
 - **rationale:** The load-bearing step is a genuine algebraic obstruction, not a definition, renaming, numerical fit, or external comparator. The one-hop dependencies supplied in the packet are retained-grade or the registered minimal-axiom accepted premise, and the source scope no longer claims statistics forcing. The runner performs finite matrix checks for the CCR obstruction, Cl(3) chirality dimension, hard-core boundary, JW/CAR identities, Berezin determinant/Pfaffian identity, and the stated context check, with no D-class comparator or tuned empirical input.
+- **auditor confidence:** high
+
+### `axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional equivariant eta traces are well-defined cyclotomic sums and zero-crossing stable; the defined admissible finite local weight sum is nonsingular and evaluates to L_3(1,2)=2/9, with repeated weights giving 1/9, excluding continuum APS/operator-realization claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T121858Z-2e23e506-axiom_first_z_n_equivari`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For admissible weights the denominators are nonzero, and at N=3 the cyclotomic identity (omega - 1)(omega^2 - 1)=3 gives L_3(1,2)=(1/3)[1/3+1/3]=2/9.  _(class `A`)_
+- **chain closes:** True — The bounded finite theorem follows from finite spectral linear algebra, the unit-weight admissibility argument, and elementary cyclotomic algebra. The cited retained-bounded C3 authority supplies only the weight-pattern context; continuum fixed-point and physical operator bridges are explicitly outside the audited scope.
+- **rationale:** The source and runner restrict the claim to finite-dimensional spectral algebra and an explicitly defined finite local sum. The denominator condition and N=3 value are elementary algebraic closures over the stated inputs, with no empirical comparator, tuned scale, or symbol-renaming step. The runner directly computes the finite sums and symbolic reductions; its hard-coded narrative non-claim PASS lines are not load-bearing.
 - **auditor confidence:** high
 
 ### `background_independence_note`

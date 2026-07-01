@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_vertex_power_derivation"
+      "to": "yt_vertex_power_operator_counting_lemma_note_2026-05-17"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_vertex_power_derivation",
+        "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
@@ -103190,7 +103190,7 @@
         "per_site_su2_spin_half_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e1a696116fc01ed9fff8ef5871f19dd433b49936dc5252aafbb9d241976e3b8d",
+      "note_hash": "2c40f4c98c5785a646bf9b31c4626bfda3e263862c4bf055083d6c52239242f2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

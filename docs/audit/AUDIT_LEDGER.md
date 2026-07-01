@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 876 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1721 |
+| unaudited | 1720 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 31 |
+| ~~audited_conditional~~ | 32 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1277 |
-| `audited_conditional` | 31 |
+| `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2047 |
+| `unaudited` | 2046 |
 
 | claim_type | count |
 |---|---:|
@@ -1445,6 +1445,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
@@ -20235,6 +20236,21 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **chain closes:** True — The first audit has the correct tuple: the load-bearing exponent is a class-C structural/operator count, and the runner source substantively checks the SU(3) covariance, derivative, response, and link-degree claims without external comparator input. B-CHAN and B-SPLIT are not silently promoted to derived physics; they are explicit boundaries in the audited bounded scope. The clean verdict ratifies only that bounded theorem, not an unbounded derivation of the physical coupling normalization from the axioms.
 - **rationale:** The first audit has the correct tuple: the load-bearing exponent is a class-C structural/operator count, and the runner source substantively checks the SU(3) covariance, derivative, response, and link-degree claims without external comparator input. B-CHAN and B-SPLIT are not silently promoted to derived physics; they are explicit boundaries in the audited bounded scope. The clean verdict ratifies only that bounded theorem, not an unbounded derivation of the physical coupling normalization from the axioms.
 - **auditor confidence:** judicial
+
+### `yt_vertex_power_operator_counting_lemma_note_2026-05-17`
+
+- **Note:** [`YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`](../../docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the admitted staggered-Dirac nearest-neighbor operator with the stated link-exponential convention, audit the operator count that the current-current vacuum-polarization term has two single-link vertex insertions versus one link for hopping; no numerical alpha_s value or gate closure is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T221543Z-8c1cdf54-yt_vertex_power_operator`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In S2, Pi is taken to be the current-current term Tr[D^{-1} D' D^{-1} D']; since it contains two D' insertions and S1 makes each D' single-link, the vacuum-polarization link count is n_link = 2.  _(class `A`)_
+- **chain closes:** False — The two-insertion homogeneity count itself follows on the bounded operator surface. As written, the S2 Gamma_F = -Tr ln D quadratic expansion has the wrong sign for the current-current term and the source/runner disagree on the 1/2 normalization of Pi, so the exact displayed operator statement is not cleanly closed.
+- **rationale:** Issue: the source gives inconsistent Pi normalizations and an incorrect sign for the current-current term in the displayed expansion of Gamma_F = -Tr ln D. The numerical-verification prose also claims u_0^2 scaling with fixed D' even though the stated inverse-propagator scaling would give u_0^{-2}. Why this blocks: these are part of the audited math surface, while the runner only checks homogeneity and would not catch the sign, factor, or u_0-scaling convention errors. Repair target: reconcile S2 with a finite-difference log-det check and align the runner normalization; the bounded two-insertion count may then be re-audited cleanly.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-03.md`
+- **auditor confidence:** high
 
 ### `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`
 

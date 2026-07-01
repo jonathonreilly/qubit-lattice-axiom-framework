@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1458 |
-| Retained-grade rows, including boxed decorations | 1354 |
+| Applied audit verdicts | 1459 |
+| Retained-grade rows, including boxed decorations | 1355 |
 | Retained positive theorems | 200 |
 | Retained no-go rows | 198 |
-| Retained bounded rows | 898 |
+| Retained bounded rows | 899 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1688 |
+| Unaudited rows | 1687 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 37 |
 | Audited renaming rows | 25 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1690 |
-| Ready rows | 106 |
+| Total pending rows | 1689 |
+| Ready rows | 105 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 303 |
+| High pending | 302 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`restricted_strong_field_closure_note`](../../docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md) - high; unaudited
 - [`lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) - high; unaudited
 - [`pre_record_reference_state_tracial_derivation_note_2026-05-20`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) - high; unaudited
 - [`gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
@@ -51,18 +50,19 @@ Next ready rows by queue order:
 - [`observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md) - high; unaudited
 - [`axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
+- [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **436**.
+- Non-retained-grade cited rows in publication tables: **435**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 162 |
-| high | `unaudited` | 160 |
+| high | `unaudited` | 159 |
 | medium | `unaudited` | 98 |
 | high | `audited_conditional` | 4 |
 | critical | `audited_conditional` | 3 |
@@ -90,7 +90,7 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
 - `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
-- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
+- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014

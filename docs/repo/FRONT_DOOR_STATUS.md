@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1448 |
-| Retained-grade rows, including boxed decorations | 1346 |
-| Retained positive theorems | 199 |
+| Applied audit verdicts | 1449 |
+| Retained-grade rows, including boxed decorations | 1347 |
+| Retained positive theorems | 200 |
 | Retained no-go rows | 198 |
 | Retained bounded rows | 891 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1698 |
+| Unaudited rows | 1697 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 35 |
 | Audited renaming rows | 25 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1700 |
-| Ready rows | 99 |
+| Total pending rows | 1699 |
+| Ready rows | 101 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 313 |
+| High pending | 312 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited
+- [`internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27`](../../docs/INTERNAL_EXTERNAL_SU2_MERGER_FROM_UNIVERSAL_PROPERTY_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
 - [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
 - [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3619 |
-| Critical nodes | 576 |
-| High nodes | 509 |
+| Critical nodes | 575 |
+| High nodes | 510 |
 | Medium nodes | 972 |
 | Leaf nodes | 1562 |
 

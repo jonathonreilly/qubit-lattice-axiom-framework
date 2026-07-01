@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 876 |
+| **retained_bounded** | 877 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1719 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1277 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1278 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -193,6 +191,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `axiom_first_lattice_noether_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `axiom_first_reeh_schlieder_theorem_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2368,6 +2367,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The displayed sign, reindexing, and matrix-ordering steps close as finite algebra once the staggered/Grassmann KS carrier and phase form are admitted. The proof does not derive that carrier from the axioms, so the correct scope remains bounded rather than positive.
 - **rationale:** The load-bearing proof is an algebraic closure over the admitted carrier, not a numerical match or definition substitution. The runner source constructs the staggered matrix and two-step generators, checks the U(1) sign directly on arbitrary sampled fields, verifies the symbolic arbitrary-bilinear sign identity, and checks the localized two-step Ward identity; E8 is only a source-dependency boundary check. All provided direct dependencies are accepted-premise or retained-grade, including retained_bounded bounded suppliers, so the bounded theorem chain closes while not promoting the carrier itself.
 - **auditor confidence:** medium
+
+### `axiom_first_reeh_schlieder_theorem_note_2026-05-01`
+
+- **Note:** [`AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional tensor-factor RS-1 on H_O tensor H_Oc, plus deterministic L=6,8 open staggered-vacuum separating certificates for left-anchored R<=3 and the L=6 time-translated-algebra commutant collapse; no continuum or interior-region claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T222230Z-19d16847-axiom_first_reeh_schlied`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The staggered vacuum's reduced state rho_O has full rank on the tested L=6,8 open carriers and R=1,2,3 regions; by RS-1, full-rank rho_O is equivalent to separating for A(O).  _(class `C`)_
+- **chain closes:** True — RS-1 is standard Schmidt-decomposition linear algebra, and the runner source genuinely constructs the staggered finite-carrier Hamiltonian, local algebra actions, reduced-state ranks, falsifiers, and commutant-collapse computation rather than printing constants. The cited non-axiom dependencies are retained_bounded, and the minimal-axiom dependency is an accepted premise.
+- **rationale:** The claim is correctly bounded to finite tensor-factor carriers and per-carrier certificates. The load-bearing numerical checks are first-principles finite-matrix computations from the specified staggered carrier, with no external comparator, tuned empirical value, or imported contested premise. The negative boundaries pass the no-go discipline at the scoped level: small-region equal-time cyclicity is ruled out by exact finite-dimensional rank counting, while continuum/type-III, uniform-volume, and local time-translated claims are explicitly excluded.
+- **auditor confidence:** high
 
 ### `axiom_first_reflection_positivity_theorem_note_2026-04-29`
 

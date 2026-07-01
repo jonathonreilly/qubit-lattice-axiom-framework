@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 879 |
+| **retained_bounded** | 880 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1714 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1280 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1281 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `gravity_clean_derivation_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -629,6 +627,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gravitational_memory_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gravitational_wave_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gravitomagnetic_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `gravity_clean_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_full_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gravity_law_cleanup_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gravity_observable_hierarchy_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -8680,6 +8679,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under the configured probe parameters, the mean phase delta from the static v=0 baseline is monotonic in v_z, with small-|v| deltas approximately antisymmetric and the |v|=0.5 antisymmetry failing.  _(class `C`)_
 - **chain closes:** True — The retained bounded claim follows on its own restricted terms: the supplied runner source computes the reported phases from the configured DAG, propagator, imposed source trajectory, and static baseline, and the cached stdout matches the note's table. No GR, Shapiro, or self-consistent moving-source bridge is closed or claimed within the retained scope.
 - **rationale:** For the bounded diagnostic actually retained, the runner is not a constant-printing or hard-coded expected-value script; it constructs the configured grown families, propagates amplitudes, computes phases, and subtracts the v=0 baseline. The output supports monotonic increase in v_z, approximate antisymmetry only at |v|=0.2, and failure of full antisymmetry at |v|=0.5, matching the revised note. The broader gravitomagnetic/Shapiro and self-consistent moving-source claims are explicitly excluded, so they are not part of the audited closure.
+- **auditor confidence:** high
+
+### `gravity_clean_derivation_note`
+
+- **Note:** [`GRAVITY_CLEAN_DERIVATION_NOTE.md`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded weak-field composition: from the retained bridge inputs and the retained Z^3 graph-Laplacian Green-kernel normalization, Poisson linearity yields a 1/r potential and bilinear inverse-square test-source force in lattice units only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T225447Z-e42d6912-gravity_clean_derivation`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Given the weak-field bridge inputs L^{-1}=G_0, rho=|psi|^2, S=L(1-phi), and the Z^3 Green asymptotic G(r) ~ 1/(4 pi r), the lattice Poisson equation gives a 1/r potential and a bilinear inverse-square force in lattice units.  _(class `A`)_
+- **chain closes:** True — Within the stated bounded scope, the cited bridge supplies the weak-field source/readout/test-response inputs and the Green-kernel theorem supplies G(r) ~ 1/(4 pi r). The conclusion then follows by algebraic composition and radial differentiation, with nonlinear gravity and SI-unit G_Newton explicitly excluded.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade bounded inputs, not a new first-principles derivation from the framework axioms. The runner mostly verifies dependency wiring, status firewalls, SHA-pinned cache freshness, and then checks the elementary inverse-square algebra. The source note does not overclaim nonlinear self-gravity, physical G_Newton, or a zero-free-parameter gravity closure, so the bounded conclusion follows from the restricted packet.
 - **auditor confidence:** high
 
 ### `gravity_closure_from_weak_field_linear_response_bounded_theorem_note_2026-06-07`

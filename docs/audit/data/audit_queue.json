@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 290,
-    "high": 293,
+    "high": 292,
     "leaf": 584,
     "medium": 511
   },
@@ -8405,30 +8405,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 11,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.785,
-      "note_path": "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py",
-      "transitive_descendants": 38
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17837,15 +17813,15 @@
         "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
         "persistent_record_as_kraus_operator_note_2026-05-20"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.407,
+      "load_bearing_score": 7.229,
       "note_path": "docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_record_formation_controlled_copy_write_isometry_2026_06_18.py",
-      "transitive_descendants": 59
+      "transitive_descendants": 74
     },
     {
       "audit_independence_required": "any_non_self",
@@ -50257,6 +50233,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 109,
-  "total_pending": 1678
+  "ready_count": 108,
+  "total_pending": 1677
 }

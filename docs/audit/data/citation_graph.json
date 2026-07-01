@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "no_per_site_bosonic_ccr_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
         "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
-        "no_per_site_bosonic_ccr_theorem_note_2026-05-02"
+        "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+        "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "062d6d9067adab830ec81953de00acf047ad85bcf10ab99d526ab595c273aa6c",
+      "note_hash": "6e3b2c18eb0823d902d901fbc3cd0d545b9f9077f2f7e817cf3f9ba10d1c70ff",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

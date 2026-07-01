@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_dimensional_compression_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_dimensional_compression_note",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
         "single_axiom_hilbert_note",
         "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ef9ca35df55687124118ba925ce2b60e6861bf914729deed3a5d91ce2b0869bd",
+      "note_hash": "bccba0134f1010ef405a4070f7611aa1f618f2a68ad46ddb52cd6c2f492928d0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

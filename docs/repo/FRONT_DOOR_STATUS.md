@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1483 |
+| Applied audit verdicts | 1484 |
 | Retained-grade rows, including boxed decorations | 1373 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 200 |
 | Retained bounded rows | 910 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 31 |
-| Unaudited rows | 1663 |
+| Unaudited rows | 1662 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 39 |
+| Audited conditional rows | 40 |
 | Audited renaming rows | 27 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1665 |
-| Ready rows | 101 |
+| Total pending rows | 1664 |
+| Ready rows | 100 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 288 |
+| High pending | 287 |
 | Medium pending | 503 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`luders_rule_from_composition_consistency_note_2026-05-20`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md) - high; unaudited
 - [`tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`](../../docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md) - medium; unaudited
 - [`no_per_site_bosonic_ccr_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`q_integer_spectrum_theorem_note_2026-05-02`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`translation_abelian_composition_theorem_note_2026-05-02`](../../docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`translation_covariance_local_op_theorem_note_2026-05-02`](../../docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
+- [`axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

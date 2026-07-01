@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "record_formation_to_kraus_isometry_bridge_2026-06-06"
+      "to": "luders_rule_from_composition_consistency_note_2026-05-20"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "record_formation_to_kraus_isometry_bridge_2026-06-06",
+        "luders_rule_from_composition_consistency_note_2026-05-20",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
         "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
         "q_integer_spectrum_theorem_note_2026-05-02",
@@ -103190,7 +103190,7 @@
         "color_generation_independent_z3_structures_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "52183e60386738d62eddafc325f41c80b35e28f8ebc8a84a2388c7b150115935",
+      "note_hash": "302674300f1485f08333f6954f9acd0d87100ac864b9a0c110db6f2443e2b648",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

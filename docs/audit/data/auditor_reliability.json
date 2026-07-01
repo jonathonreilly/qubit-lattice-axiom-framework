@@ -65,7 +65,7 @@
     },
     "codex-gpt-5.5": {
       "audits_with_runner_class": {
-        "A": 675,
+        "A": 676,
         "B": 25,
         "C": 455,
         "D": 9,
@@ -79,31 +79,31 @@
         "same_severity": 36
       },
       "criticality_counts": {
-        "critical": 217,
+        "critical": 218,
         "high": 149,
         "leaf": 489,
         "medium": 345
       },
       "cross_confirmation_agreement_rate": 0.797,
       "cross_confirmation_outcomes": {
-        "confirmed": 274,
+        "confirmed": 275,
         "third_confirmed_first": 31,
         "third_confirmed_hybrid": 3,
         "third_confirmed_second": 36
       },
-      "cross_confirmation_pairs_agreed_first_try": 274,
-      "cross_confirmation_pairs_n": 344,
-      "cross_confirmation_pairs_seen": 344,
+      "cross_confirmation_pairs_agreed_first_try": 275,
+      "cross_confirmation_pairs_n": 345,
+      "cross_confirmation_pairs_seen": 345,
       "judicial_third_pass_count": 66,
       "overturned_by_third": 61,
       "ratified_by_third": 61,
       "third_pass_decisions_n": 122,
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 1200,
+      "total_audits": 1201,
       "verdict_changed_after_re_audit": 1056,
       "verdict_counts": {
-        "audited_clean": 1079,
+        "audited_clean": 1080,
         "audited_conditional": 29,
         "audited_decoration": 56,
         "audited_failed": 1,
@@ -134,9 +134,9 @@
   "totals": {
     "auditor_families_observed": 3,
     "overall_agreement_rate": 0.806,
-    "total_audits_recorded": 1414,
-    "total_cross_confirmation_family_participations": 403,
-    "total_cross_confirmation_pairs": 360,
+    "total_audits_recorded": 1415,
+    "total_cross_confirmation_family_participations": 404,
+    "total_cross_confirmation_pairs": 361,
     "total_third_pass_decisions": 134
   }
 }

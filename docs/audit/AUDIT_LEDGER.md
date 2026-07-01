@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 881 |
+| **retained_bounded** | 882 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1712 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1282 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1283 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -670,6 +668,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_formula_honest_status_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9290,6 +9289,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For any lambda > 0, rho_star -> lambda^4 rho_star and v_i -> lambda v_i leave all endpoint ratios unchanged, while multiple positive endpoint coefficient surfaces remain compatible with the same fixed-density algebra and no predicate selects the physical Higgs-density endpoint.  _(class `A`)_
 - **chain closes:** True — The conclusion follows from exact positive-real algebra: absolute density rescaling preserves all endpoint ratios, and the supplied fixed-density map admits multiple positive endpoint coefficients without a selector predicate. No observed EW value, fitted selector, or physical VEV identification is used.
 - **rationale:** The proof is an algebraic invariance and non-selection result over the cited fixed-density readout, not a positive physical identification. The D4 bridge is retained-grade via decoration-under-retained status, and the EW bridge is retained_bounded; the no-go uses their explicit boundary rather than importing an open selector as a premise. The runner mixes cross-note boundary checks with exact algebraic consistency checks and uses no external comparator. The N1-N8 no-go gate is present and the claim remains narrow: it blocks only reuse of fixed-density algebra alone, not future independent selector theorems.
+- **auditor confidence:** high
+
+### `hierarchy_formula_honest_status_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded structural-support theorem T1: local algebra verifies the d=4 naive species count, matching minimal-block determinant degree, exact eta/zeta selector, K identity, and sensitivity algebra; D1/C1 are audited only as declared-input map/readout appendices, not EW-VEV or formula closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T231102Z-43eee3c5-hierarchy_formula_honest`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** With B3/B4 fenced as open formula-closure gates, T1 computes that the naive four-direction surface has 16 species, the minimal 2^4 APBC staggered block has determinant u_0-degree 16, the selector is exactly (7/8)^(1/4), and K plus the sensitivity algebra follow over B1.  _(class `C`)_
+- **chain closes:** True — The bounded T1 conclusion follows from local computation plus retained-grade cited authorities and the registered kinetic-isotropy primitive. D1 is explicitly a definition over declared inputs and C1 is arithmetic over those inputs, while B3b/B4/B5 remain non-load-bearing open gates.
+- **rationale:** The runner source does real computation for the load-bearing pieces: zero-set enumeration, exact Fraction construction of the staggered operator, exact characteristic polynomial/determinant checks, eta/zeta bracketing, and independent sensitivity/falsification checks. The helper hard-codes only the licensed plaquette boundary input, which the source note correctly treats as B1 rather than deriving. The direct dependencies are retained-grade or an accepted primitive, and the PDG comparison is quarantined as class D rather than used to pass the theorem.
 - **auditor confidence:** high
 
 ### `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`

@@ -53470,11 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "no_per_site_chirality_theorem_note_2026-05-02"
+      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -53486,19 +53486,19 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "no_per_site_chirality_theorem_note_2026-05-02",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+        "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "081ba4ad635197cce49066c532cbafe37c7e9b75316b5271d20170e5cdc2a207",
+      "note_hash": "59391e4a19bc9953b5185c12f43096c572b445639300d1550b4301504288095f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

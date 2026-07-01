@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "color_generation_independent_z3_structures_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26"
     },
     {
@@ -53494,11 +53490,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
+      "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
     },
     {
       "from": "repo.front_door_status",
-      "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
+      "to": "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
     },
     {
       "from": "repo.repo_organization",
@@ -55818,7 +55818,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "583ebbfd627a4c4e344fc53822d711eab9572b6fd154a9db3d89e4c0782bd37d",
+      "note_hash": "02d31349f0ab51226fd8448cc88b78507b461eb8ccf944df2f61210cf5bc6541",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -55988,7 +55988,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "26535a2192e2e7046620d54d4e4506bafa1244819b94a25bef49f998323b8a0f",
+      "note_hash": "703318c961dc4e17d379b8c67b3b8ca70c282c6089b8141f3a94ea36a329aa5a",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -89880,7 +89880,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "06434d7c316820e555917a98d9c38ed65043a0b10d847268cac3c5cbe6cadcb7",
+      "note_hash": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1",
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "runner_path": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
       "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)"
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "color_generation_independent_z3_structures_2026-06-05",
         "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
         "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
         "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
         "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
         "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
+        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
+        "color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05",
+        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c41e74a738d1b530f37d0192845935ffe0d8ee023d126fc6df5c75e69c405661",
+      "note_hash": "a8fd28d2a0ee87f3d3fa86b4135039d9d87a8c2aaea8b61cee97ec89401ad1ef",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

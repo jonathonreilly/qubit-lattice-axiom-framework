@@ -108,7 +108,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 |---:|---|---|---|
 | 1 | `higgs_from_lattice_note` | bounded_theorem / unaudited / unaudited | not_a_direct_promotion_candidate |
 | 2 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem / audited_clean / retained_bounded | not_a_direct_promotion_candidate |
-| 3 | `yt_ward_identity_derivation_theorem` | bounded_theorem / audit_in_progress / audit_in_progress | deferred_normalization_convention |
+| 3 | `yt_ward_identity_derivation_theorem` | bounded_theorem / audited_clean / retained_bounded | deferred_normalization_convention |
 | 4 | `g_bare_rescaling_freedom_removal_theorem_note_2026-05-03` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 5 | `g_bare_constraint_vs_convention_theorem_note_2026-05-03` | bounded_theorem / audited_clean / retained_bounded | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |
 | 6 | `g_bare_derivation_note` | bounded_theorem / unaudited / unaudited | blocked_convention_see_G_BARE_PROMOTION_PANEL_FINDING_2026-05-28 |

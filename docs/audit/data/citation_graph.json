@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_spin_statistics_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_vertex_power_derivation",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+        "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cf9dc0babf1efc4888283e49d8ad19221fb13a8f920c9ffbc847f4e1b17deed3",
+      "note_hash": "9c87091deb1bb12e36c689185721894e79c7d5f55719911ccab2832edeacc52d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

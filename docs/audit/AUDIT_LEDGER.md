@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 880 |
+| **retained_bounded** | 881 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1713 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1281 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1282 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -665,6 +663,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_effective_potential_endpoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9194,6 +9193,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** At m=0 the Hermitian staggered Dirac operator anticommutes with staggered chirality Gamma_5, so every eigenvalue lambda is paired with -lambda and the signed spectral sum eta_APS = sum sign(lambda) vanishes on the stated finite bulk surface.  _(class `A`)_
 - **chain closes:** True — The spectral-vanishing claim follows from the stated staggered chirality anticommutation and exact +/- spectrum pairing on the specified finite operator. The identity-collapse claim follows by exact arithmetic from the retained seven-eighths Riemann-Dirichlet anchor.
 - **rationale:** The runner source constructs the finite staggered Hermitian matrices, checks Hermiticity, Gamma_5 anticommutation, eigenvalue pairing, signed sums, and the relevant rational identities; it is not merely printing expected PASS lines. The cited seven-eighths authority is retained, and the Matsubara determinant authority is a retained-parent decoration, so the one-hop dependency chain is retained-grade. The note keeps the conclusion bounded to the exact bare massless mean-field closed-torus surface and explicitly does not claim a broad APS no-go.
+- **auditor confidence:** high
+
+### `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`
+
+- **Note:** [`HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded B3 dependency repair: source the hierarchy-row exponent carrier N=16 from the accepted kinetic-isotropy primitive, retained 2^d count, retained regulator-dependence no-go, and retained-bounded P-FLUX within-surface branch selection, without claiming B4/B5 closure or labeled-generation realization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T230312Z-5b4bc409-hierarchy_b3_staggered_s`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the four-direction OS0 block, the B3 exponent carrier is only the unlabeled d=4 count 2^4=16 plus the matching minimal-block determinant u0-degree 16, so the parent staggered-realization species-labeling residual is non-load-bearing for this B3 surface.  _(class `A`)_
+- **chain closes:** True — Within the stated B3-only scope, the cited inputs supply the needed four-direction surface, the 2^4 count, the regulator-dependence boundary, and the KS branch-selection route. The runner independently verifies the finite algebra for the count, Hamming staircase, D^2=-4I, characteristic polynomial, and determinant degree 16.
+- **rationale:** The load-bearing step is finite algebra over retained-grade and accepted-premise inputs, not a definition, empirical comparator, or tuned numerical match. The kinetic-isotropy primitive is explicitly registered as an accepted premise, while the non-primitive cited authorities are retained-grade in the packet. The note preserves the regulator-dependence no-go and B4/B5 boundaries rather than promoting the B3 carrier to formula closure or regulator independence.
 - **auditor confidence:** high
 
 ### `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`

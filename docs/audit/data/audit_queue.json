@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 305,
+    "critical": 304,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -138,31 +138,34 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
-      "claim_scope": "Audited only the bounded B3 dependency repair: kinetic isotropy supplies the four-direction surface, retained 2^d count plus finite determinant algebra supply N=16/u_0-degree 16, retained no-go polices regulator-independent promotion, and retained-bounded P-FLUX supplies branch selection within its licensed surface; B4, B5, formula closure, and labeled-generation residuals remain outside scope.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hierarchy_formula_honest_status_note_2026-05-10",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
+        "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "kinetic_isotropy_primitive",
+        "plaquette_self_consistency_note",
         "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
         "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
+        "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.077,
-      "note_path": "docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md",
-      "queue_reason": "audit_in_progress",
+      "direct_in_degree": 19,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [
+        "scripts/canonical_plaquette_surface.py"
+      ],
+      "load_bearing_score": 17.566,
+      "note_path": "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py",
-      "transitive_descendants": 269
+      "runner_path": "scripts/frontier_hierarchy_formula_honest_status.py",
+      "transitive_descendants": 267
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7526,37 +7529,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_su3_anomaly_forced_3bar_completion.py",
       "transitive_descendants": 268
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hierarchy_formula_honest_status_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
-        "kinetic_isotropy_primitive",
-        "plaquette_self_consistency_note",
-        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
-        "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
-        "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 19,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/canonical_plaquette_surface.py"
-      ],
-      "load_bearing_score": 17.566,
-      "note_path": "docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_hierarchy_formula_honest_status.py",
-      "transitive_descendants": 267
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -51272,5 +51244,5 @@
     }
   ],
   "ready_count": 103,
-  "total_pending": 1716
+  "total_pending": 1715
 }

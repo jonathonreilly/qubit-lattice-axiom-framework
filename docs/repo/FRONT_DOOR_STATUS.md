@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1475 |
-| Retained-grade rows, including boxed decorations | 1365 |
-| Retained positive theorems | 202 |
+| Applied audit verdicts | 1476 |
+| Retained-grade rows, including boxed decorations | 1366 |
+| Retained positive theorems | 203 |
 | Retained no-go rows | 200 |
 | Retained bounded rows | 905 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 31 |
-| Unaudited rows | 1671 |
+| Unaudited rows | 1670 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 39 |
 | Audited renaming rows | 27 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1673 |
-| Ready rows | 104 |
+| Total pending rows | 1672 |
+| Ready rows | 103 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 290 |
+| High pending | 289 |
 | Medium pending | 509 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
 - [`kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`](../../docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
 - [`light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md) - medium; unaudited
 - [`record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18`](../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`](../../docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md) - medium; unaudited
 - [`no_per_site_bosonic_ccr_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`q_integer_spectrum_theorem_note_2026-05-02`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`momentum_charge_commute_theorem_note_2026-05-02`](../../docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "pre_record_reference_state_tracial_derivation_note_2026-05-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "pre_record_reference_state_tracial_derivation_note_2026-05-20",
         "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
         "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
         "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
         "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
-        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
+        "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1c8e4136973f024b4ae5583addeb769f128006ded3a829be5621f3ad67a6cb35",
+      "note_hash": "fdbee9c381ba503e75436af00f802657c324987706eaf5f51e096dcbc0990349",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

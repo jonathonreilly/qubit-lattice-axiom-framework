@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 895 |
+| **retained_bounded** | 896 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1692 |
+| unaudited | 1691 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1300 |
+| `audited_clean` | 1301 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2018 |
+| `unaudited` | 2017 |
 
 | claim_type | count |
 |---|---:|
@@ -121,7 +121,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
@@ -1328,6 +1328,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
@@ -19112,6 +19113,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The symbolic star-product residue gives the d2/dB2 core (f_- - f_+)(qx^2+qy^2)/(4 R^5), so its ratio to R Omega_z^2 is (qx^2+qy^2)/m^2 rather than a constant.  _(class `A`)_
 - **chain closes:** True — The runner source actually performs the Pauli/star-product algebra and residue checks supporting the nonconstant ratio, and recomputes the finite-cell Peierls anchors before using them. The disclosed no-fudge residual is scoped as residual, not claimed as full closed-form completion.
 - **rationale:** The load-bearing scalar-prefactor refutation is a genuine algebraic closure over the displayed two-band Hamiltonian and star-product calculation, not a renaming or tuned numerical match. The one cited authority is marked retained_bounded, which is retained-grade under the rubric, and the runner has no missing helper imports. The note does not overclaim full lattice completion; it explicitly preserves the positive over-capture residual as follow-on work.
+- **auditor confidence:** high
+
+### `two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05`
+
+- **Note:** [`TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/TWO_ENDPOINT_GAUSS_LAW_INVARIANCE_PROFILE_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite four-qubit endpoint model with stipulated U(1)/SU(2) endpoint generators: U(1) endpoint profiles 0/1/2, U(1) commutant dimension 36, and SU(2) bare versus double-singlet endpoint invariance.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T073131Z-d5ea285b-two_endpoint_gauss_law_i`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In the stated four-qubit endpoint model, the bare, A-dressed half-link, and fully dressed Wilson-type operators have endpoint invariance counts 0, 1, and 2, with U(1) invariant algebra dimension 36 and the analogous SU(2) bare/double-singlet boundary.  _(class `A`)_
+- **chain closes:** True — The U(1) calculation closes by direct commutator algebra: each endpoint has charge-sector dimensions 1,2,1, so the two-end commutant has dimension (1^2+2^2+1^2)^2 = 36, and the sigma-plus/sigma-minus charges give profiles 0,1,2. The SU(2) calculation closes because the local singlet projector commutes with total spin while the bare link operator does not.
+- **rationale:** The runner source constructs the Pauli matrices and four-qubit operators and computes commutators and ranks rather than merely printing constants. An independent check reproduces the U(1) commutant dimension from endpoint charge eigenspaces and the endpoint profiles from the sigma_z charges of sigma-plus/sigma-minus factors. The result is properly bounded because the link-end carrier, transport operator choices, and endpoint Gauss generators are stipulated finite-model conventions rather than derived physical gauge structure. The cited upstream inputs are retained-grade, accepted-premise, or meta for this scoped finite-algebra statement.
 - **auditor confidence:** high
 
 ### `two_field_retarded_family_closure_note_2026-04-10`

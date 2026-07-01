@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 314,
+    "critical": 313,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -136,30 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-      "claim_scope": "Finite real antisymmetric D with positive diagonal S has det(S+D)>0; small real diagonal perturbations of invertible D remain positive-det; under explicit finite-block continuity/regularity on R_{>0}, additive disjoint-record readout selects c log det, with c=1 by convention.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 12.856,
-      "note_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
-      "transitive_descendants": 926
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -51513,6 +51489,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 103,
-  "total_pending": 1725
+  "ready_count": 102,
+  "total_pending": 1724
 }

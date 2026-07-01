@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 893 |
+| **retained_bounded** | 894 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1694 |
+| unaudited | 1693 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1298 |
+| `audited_clean` | 1299 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2020 |
+| `unaudited` | 2019 |
 
 | claim_type | count |
 |---|---:|
@@ -121,7 +121,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
@@ -1073,6 +1073,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_rpsr_c3_joint_readout_rank_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quark_rpsr_single_scalar_readout_underdetermination_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5 | A | - |
 | `quasi_persistent_relaunch_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -15366,6 +15367,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On the fixed h=0.5, W=8, L=6 ordered-lattice segment, broad square-window and top-N compressed relaunch states preserve downstream free and weak-field profiles within the reported TV and relative-delta errors, while sharper localization fails.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the fixed lattice, propagates the point packet, compresses the detector-layer state, relaunches it, and computes TV distances and field-response deltas rather than printing hard-coded results. The conclusion is limited to the reported fixed-family bounded surrogate behavior.
 - **rationale:** Within the narrow audited scope, the load-bearing step is a first-principles numerical computation on the provided ordered-lattice harness, not a renaming or imported numerical match. The cited authorities are retained_bounded and are used only as bounded context, while the primary runner directly supplies the controlling metrics for this note. The note explicitly avoids upgrading the result to persistent mass, inertial closure, or family-generic behavior, so the bounded conclusion follows on its own terms.
+- **auditor confidence:** high
+
+### `qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04`
+
+- **Note:** [`QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md`](../../docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Under the explicitly conditioned unitary link-connection convention between two-dimensional qubit fibers, the finite-dimensional connection algebra is u(2)=su(2)+u(1), and a single qubit fiber has no faithful native su(3) color algebra.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T072513Z-390c9ae2-qubit_link_u2_connection`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Conditioned on a link connection being a unitary map between two C^2 qubit fibers, the infinitesimal algebra is u(2)=su(2)+u(1), with the Pauli spin-half su(2) generator data and a central phase line; the same dimension count excludes faithful native su(3) on one C^2 fiber.  _(class `A`)_
+- **chain closes:** True — The cited retained or accepted-premise inputs supply the C^2 carrier and Pauli su(2) data; the unitary-link convention is stated as the theorem's bounded hypothesis. From those inputs, the u(2) direct-sum decomposition and the su(3) dimension obstruction are finite-dimensional Lie-algebra facts.
+- **rationale:** The runner source performs actual matrix-rank, commutator, centrality, Hermiticity, Casimir, and scope-firewall checks rather than merely printing a PASS summary. No external comparator, tuned numerical scale, or hidden Standard Model identification is used. The explicit bounded convention is not derived, but the claim is scoped as conditional on that convention, so the bounded theorem closes on its stated terms.
 - **auditor confidence:** high
 
 ### `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08`

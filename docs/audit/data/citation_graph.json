@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
+      "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
         "single_axiom_hilbert_note",
@@ -103190,7 +103190,7 @@
         "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bccba0134f1010ef405a4070f7611aa1f618f2a68ad46ddb52cd6c2f492928d0",
+      "note_hash": "99ba062baca43da00b9c8facee0ee70358e318dcc3f12c187d979ea96799e731",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

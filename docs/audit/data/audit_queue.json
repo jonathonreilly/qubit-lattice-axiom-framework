@@ -138,15 +138,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "yt_ward_identity_derivation_theorem",
-      "claim_scope": null,
+      "claim_scope": "Exact point-split U(1)_B and U(2)_iso vector Ward identities, Schur-forced scalar-singlet uniformity, and the local H_unit matrix element y_t_bare=1/sqrt(6), all only on the declared staggered Q_L action surface with the canonical g_bare convention; no SM Yukawa, tadpole transport, RG, anomaly, or precision claim is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "staggered_dirac_realization_gate_note_2026-05-03",
         "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
@@ -155,13 +155,13 @@
         "native_gauge_closure_note"
       ],
       "direct_in_degree": 62,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [
         "scripts/canonical_plaquette_surface.py"
       ],
       "load_bearing_score": 40.685,
       "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_yt_ward_identity_derivation.py",
       "transitive_descendants": 822
@@ -8999,6 +8999,34 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
+        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.82,
+      "note_path": "docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py",
+      "transitive_descendants": 112
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -9019,34 +9047,6 @@
       "ready": true,
       "runner_path": "scripts/lattice_laplacian_shell_localization_2026_06_16.py",
       "transitive_descendants": 109
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_q23_k0_real_block_equivalence_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-        "koide_q23_block_weight_frontier_bounded_note_2026-05-29",
-        "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.214,
-      "note_path": "docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py",
-      "transitive_descendants": 104
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

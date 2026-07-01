@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
         "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
         "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
         "observable_principle_record_scalar_map_no_go_note_2026-06-05",
-        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "coarse_grained_exterior_law_helper_note_2026-04-14"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4c7c0a9033694ef059f917f4b576f10f723322ad39f3e898848604ddefcc5c90",
+      "note_hash": "448d59d07686b38e59867ae917ea28a74fc699e6ba5184cb51bae276ca504a6c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

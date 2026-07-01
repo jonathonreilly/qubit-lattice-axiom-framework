@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 900 |
+| **retained_bounded** | 901 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 30 |
-| unaudited | 1682 |
+| unaudited | 1681 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1308 |
+| `audited_clean` | 1309 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2008 |
+| `unaudited` | 2007 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 508 |
-| `medium` | 929 |
+| `high` | 509 |
+| `medium` | 928 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -940,6 +940,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13379,6 +13380,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The C5 family F_p[J]=r(J)^p inherits multiplicative factorization from r(J_A ⊕ J_B)=r_A r_B but, for every p != 0, admits witness pairs with r_A^p r_B^p != r_A^p + r_B^p, so multiplicative factorization does not force additive scalar-generator factorization.  _(class `A`)_
 - **chain closes:** True — Independently, set x=r_A^p and y=r_B^p; additivity would require xy=x+y, while multiplicative factorization only gives xy. For any p != 0, choose x=y=1+epsilon with 0<epsilon<1 and r_A=r_B=x^(1/p), giving defect x^2-2x != 0 with positive r values arbitrarily close to 1.
 - **rationale:** The load-bearing step is an elementary algebraic separation, not a definition, external comparator, tuned numerical match, or imported open dependency. The runner source performs actual symbolic/rational determinant, tensor-trace, logarithm, and F_p defect checks; its ledger and source-boundary checks are non-load-bearing artifact checks. The source note is scoped as a bounded negative result for this operator-algebraic scaffold and explicitly does not claim P1 closure or a global no-go beyond the stated primitives.
+- **auditor confidence:** high
+
+### `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded audit of the external classification scaffold: Cauchy/Shannon/Khinchin/Aczel-Daroczy classify additive functionals, and with Grassmann determinant factorization plus admitted P1 additivity the conditional output is W=c log|Z|; P1 is not retired.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T081513Z-a3718384-observable_principle_p1_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** If one assumes the parent P1 additivity condition, the continuous multiplicative-to-additive equation W(r1*r2)=W(r1)+W(r2) is classified by Cauchy/Aczel as W=c log r, while the Shannon/Khinchin route likewise assumes additivity and therefore does not derive P1.  _(class `A`)_
+- **chain closes:** True — The bounded conclusion follows: determinant factorization is supplied by the retained cited authority, and the functional-equation step is standard algebraic classification under an explicit additivity hypothesis. No P1-closure claim is made, so the unclosed physical observable/additivity bridge is outside the audited scope rather than a hidden premise.
+- **rationale:** The note is correctly scoped as a bounded theorem: it classifies consequences of additivity and explicitly refuses to claim that Shannon/Khinchin/Aczel-Daroczy derive additivity or retire P1. The runner performs real symbolic, numerical, determinant-factorization, and scope-string checks; it does not merely print constants or import a tuned comparator. The Khinchin/Aczel-Daroczy uniqueness theorem itself is cited rather than reproved, but the audited claim only needs that external classification role and does not overclaim framework closure.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21`

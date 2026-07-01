@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 892 |
+| **retained_bounded** | 893 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1696 |
+| unaudited | 1695 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1297 |
+| `audited_clean` | 1298 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2022 |
+| `unaudited` | 2021 |
 
 | claim_type | count |
 |---|---:|
@@ -121,7 +121,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
@@ -744,6 +744,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_block_total_frobenius_measure_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10504,6 +10505,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using r0 = u + v + w, r1 = 2u - v - w, and r2 = sqrt(3)(v - w), the note asserts 2 r0^2 - r1^2 - r2^2 = 2 [4(uv + uw + vw) - (u^2 + v^2 + w^2)].  _(class `A`)_
 - **chain closes:** True — The polynomial pullback and the equivalence to the standard sqrt(m) Koide form follow by direct algebra from the displayed map. The physical derivation of the Gamma orbit slots, the value law for (u,v,w), and the dynamical reason for the selector are explicitly outside this audited scope.
 - **rationale:** The load-bearing result is an exact algebraic identity, and the runner verifies the same symbolic expansion plus the algebraic equivalence to Q = 2/3. The two numeric checks only witness the usual charged-lepton Koide proximity and are not needed for theorem closure. This clean verdict covers the selector pullback under the stated map only; it does not audit or close the Gamma orbit value law or dynamical selector derivation.
+- **auditor confidence:** high
+
+### `koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02`
+
+- **Note:** [`KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md`](../../docs/KOIDE_GENERATION_ID_CL3_GRADE1_BRIDGE_NARROW_THEOREM_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite matrix audit of the Cl(3,0) grade-1 Pauli span as an algebraically compatible 3-dimensional carrier candidate: Gamma_chi is a native proper rotation, non-circulant anticommuting examples evade only the literal circulant no-go, and the r=1/2 pin plus physical sign bridge remain open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T071653Z-05d47f79-koide_generation_id_cl3_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Gamma_chi = 2vv^T - I is a proper body-diagonal pi-rotation with Pauli SU(2) lift, and explicit non-circulant Hermitian H = |v><w| + |w><v| with w perpendicular to v anticommute with Gamma_chi while lying outside the cited comm(R) no-go scope.  _(class `A`)_
+- **chain closes:** True — The core statements reduce to direct 3x3 and Pauli algebra, and the cited no-go has exactly the restricted comm(R) and anticomm(Gamma_chi) scope the note uses. The physical generation identification, r-selection, and vector-vs-spinor sign transport are explicitly excluded from the closed claim.
+- **rationale:** The load-bearing step is a genuine algebraic closure over retained-grade cited inputs, not a numerical match or definition substitution. Independent recomputation verifies the Gamma_chi rotation form, SU(2) lift square, circulant identity, non-circulant anticommuting family, and Q=2/3 at r=1/2 for the 120-degree ansatz. Four runner PASS lines are narrative True records rather than executable checks, so they were not treated as independent support; the bounded conclusion still closes by direct algebra.
 - **auditor confidence:** high
 
 ### `koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10`

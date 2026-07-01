@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 290,
-    "high": 288,
+    "high": 287,
     "leaf": 584,
     "medium": 495
   },
@@ -8405,32 +8405,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_wilson_isotropy_boundary_note_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "gauge_scalar_temporal_completion_theorem_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.2,
-      "note_path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
-      "transitive_descendants": 25
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17747,6 +17721,36 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
+        "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
+        "graph_first_su3_integration_note",
+        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
+        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
+        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
+        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.044,
+      "note_path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
+      "transitive_descendants": 32
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17768,36 +17772,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-        "higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06",
-        "graph_first_su3_integration_note",
-        "g_bare_rescaling_freedom_removal_theorem_note_2026-05-03",
-        "g_bare_constraint_vs_convention_theorem_note_2026-05-03",
-        "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17",
-        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_higgs_lattice_eigenvalue_ratio_narrow.py",
-      "transitive_descendants": 17
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49721,6 +49695,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 93,
-  "total_pending": 1657
+  "ready_count": 92,
+  "total_pending": 1656
 }

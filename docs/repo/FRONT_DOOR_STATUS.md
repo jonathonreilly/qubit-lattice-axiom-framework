@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1491 |
-| Retained-grade rows, including boxed decorations | 1378 |
+| Applied audit verdicts | 1492 |
+| Retained-grade rows, including boxed decorations | 1379 |
 | Retained positive theorems | 206 |
-| Retained no-go rows | 201 |
+| Retained no-go rows | 202 |
 | Retained bounded rows | 910 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 31 |
-| Unaudited rows | 1655 |
+| Unaudited rows | 1654 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 42 |
 | Audited renaming rows | 27 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1657 |
-| Ready rows | 93 |
+| Total pending rows | 1656 |
+| Ready rows | 92 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 288 |
+| High pending | 287 |
 | Medium pending | 495 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`gauge_wilson_isotropy_boundary_note_2026-05-04`](../../docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md) - high; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
 - [`axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
 - [`darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05`](../../docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md) - medium; unaudited
 - [`gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`](../../docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - medium; unaudited
 - [`bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`](../../docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
-- [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
 - [`higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02`](../../docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
+- [`persistent_record_instrument_construction_narrow_theorem_note_2026-05-22`](../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

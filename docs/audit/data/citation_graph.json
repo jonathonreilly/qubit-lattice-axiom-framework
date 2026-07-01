@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
         "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
         "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
+        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "40ba2dce0d692d27404cd52c500f5faff44c9aee6d7cf7ac4a5b0b194b761e23",
+      "note_hash": "31f952a6eddd7d0391f23c95408ff92c3eb7e8b318b398a5afd4ec8b5114cc88",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

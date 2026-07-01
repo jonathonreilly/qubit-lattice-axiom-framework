@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_vertex_power_derivation"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_vertex_power_derivation",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
         "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
-        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
+        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
+        "per_site_su2_spin_half_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "88e85a28fde7382f828dff33a3c8fd79d3fa30a8f144332aef0ab835181f954f",
+      "note_hash": "d3928293b746ef910d8598e3763f9be5070324c382952b03f49a423464912a2d",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

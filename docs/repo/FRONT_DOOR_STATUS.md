@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1430 |
-| Retained-grade rows, including boxed decorations | 1330 |
+| Applied audit verdicts | 1431 |
+| Retained-grade rows, including boxed decorations | 1331 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 197 |
 | Retained bounded rows | 879 |
-| Boxed decorations under retained parents | 57 |
+| Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1716 |
+| Unaudited rows | 1715 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 32 |
 | Audited renaming rows | 25 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1718 |
+| Total pending rows | 1717 |
 | Ready rows | 102 |
 | Cycle-break targets | 9 |
-| Critical pending | 307 |
+| Critical pending | 306 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
+- [`gravity_clean_derivation_note`](../../docs/GRAVITY_CLEAN_DERIVATION_NOTE.md) - critical; unaudited
 - [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
 - [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited
@@ -89,10 +89,10 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
-- `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
-- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
+- `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
+- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
-- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
-- `minimal_axioms_2026-05-03` - critical; 1034 descendants; score 48.015
-- `key_terminology` - critical; 1127 descendants; score 46.640
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 899 descendants; score 44.314
+- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
+- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
+- `key_terminology` - critical; 1126 descendants; score 46.638
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

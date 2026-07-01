@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1473 |
+| Applied audit verdicts | 1474 |
 | Retained-grade rows, including boxed decorations | 1365 |
 | Retained positive theorems | 202 |
 | Retained no-go rows | 200 |
 | Retained bounded rows | 905 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 31 |
-| Unaudited rows | 1673 |
+| Unaudited rows | 1672 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 38 |
+| Audited conditional rows | 39 |
 | Audited renaming rows | 26 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1675 |
-| Ready rows | 106 |
+| Total pending rows | 1674 |
+| Ready rows | 105 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 290 |
+| High pending | 289 |
 | Medium pending | 511 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`](../../docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md) - high; unaudited
 - [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 - [`kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`](../../docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
 - [`light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`](../../docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
 - [`tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`](../../docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md) - medium; unaudited
 - [`no_per_site_bosonic_ccr_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

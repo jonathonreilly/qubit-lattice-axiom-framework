@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 905 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1673 |
+| unaudited | 1672 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 26 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1316 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 26 |
-| `unaudited` | 1999 |
+| `unaudited` | 1998 |
 
 | claim_type | count |
 |---|---:|
@@ -1475,6 +1475,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -10792,6 +10793,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Full signed-permutation O_h equivariance on the R^3 generation carrier forces invariant symmetric forms and equivariant operators to be scalar while moving the democratic direction, so the C_3 trivial/doublet value-bit carrier is erased rather than selected.  _(class `A`)_
 - **chain closes:** True — The restricted packet gives the full finite-group action and runner source, and the core statements follow from standard linear algebra for signed permutations: diagonal sign flips kill off-diagonal invariant form entries and permutations equalize diagonal entries, while the commutant is scalar. This proves the scoped O_h-carrier obstruction without importing an external physical identification.
 - **rationale:** The runner is not a print-only or tuned-value check: it explicitly constructs O_h and C_3, averages forms/operators over the group, verifies invariant dimensions, and checks the projector and commutant claims. Independent formula inventory agrees with the load-bearing identities: |O_h|=2^3*3!=48, the C_3 symmetric-form space is span{I,J-I}, O_h-invariant forms are lambda I, the O_h average of vv^T/||v||^2 is I/3, and scalar H anticommutes with Gamma only at H=0. The no-go is properly scoped and leaves C_3-level or other split-preserving routes open, so it is a closed obstruction only to full O_h equivariance on R^3.
+- **auditor confidence:** high
+
+### `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`
+
+- **Note:** [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](../../docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded two-model independence exhibition and the non-adoption of the orbit-occupancy premise; not a derivation of r=1/2, not a mass prediction, and not approval of the proposed premise.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T124429Z-962e14cd-koide_orbit_occupancy_in`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Two explicit sector- and orbit-occupancy models satisfy the stated checked constraints but have doublet weights 2*pi/g and pi/g, so together with Record's non-supply of weighting/occupancy the current surface does not choose the occupancy rule.  _(class `A`)_
+- **chain closes:** False — The algebraic model checks close for the two listed models, but the restricted packet does not supply a retained or accepted authority that the K/CPT orbit, central-sector, generation-doublet, and four-cell bookkeeping constraints are exactly the current checked premise surface. The accepted minimal axiom expressly leaves those structures outside Record, so a direct retained bridge or dependency for the Koide bookkeeping surface is missing.
+- **rationale:** The runner genuinely computes the Gaussian/Berezin partition weights, the factor-2 ratio, and the rho-orientation algebra, while the PDG comparison is labeled non-load-bearing. However, several consistency, scope, and refuted-route-history lines are self-asserted, and the current minimal axiom supplies Record additivity while explicitly excluding K/CPT structure, sector decomposition, weighting, normalization, probability, and occupancy. No-Go discipline therefore does not permit a clean bounded independence verdict from this packet: N3/N6 leave the Record/Koide bookkeeping surface as an unwired premise rather than a supplied retained dependency.
 - **auditor confidence:** high
 
 ### `koide_order_one_circulant_diagnostic_note_2026-05-29`

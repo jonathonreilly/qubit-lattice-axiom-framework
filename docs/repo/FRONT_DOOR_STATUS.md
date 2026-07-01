@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1428 |
-| Retained-grade rows, including boxed decorations | 1329 |
+| Applied audit verdicts | 1429 |
+| Retained-grade rows, including boxed decorations | 1330 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 197 |
-| Retained bounded rows | 878 |
+| Retained bounded rows | 879 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
 | Unaudited rows | 1717 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1720 |
-| Ready rows | 101 |
+| Total pending rows | 1719 |
+| Ready rows | 103 |
 | Cycle-break targets | 9 |
-| Critical pending | 309 |
+| Critical pending | 308 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; audit_in_progress
 - [`yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md) - critical; unaudited
 - [`lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md) - critical; unaudited
 - [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
@@ -51,13 +50,14 @@ Next ready rows by queue order:
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
 - [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
+- [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **437**.
+- Non-retained-grade cited rows in publication tables: **436**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -67,12 +67,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | critical | `open_gate` | 2 |
 | high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
+| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

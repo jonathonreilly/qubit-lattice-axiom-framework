@@ -86,8 +86,10 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   fixed finite-neighborhood rule, the same at every lattice translate, under
   which a local possibility is available at a site exactly when the rule admits
   it there, consistent with local records.
-  Record locks exactly one available local possibility, with scalar-valued
-  finite readout additive over finite pairwise-disjoint record collections.
+  A site need not carry a record; when present, a record locks exactly one
+  local possibility from the subset available at that site under
+  Admissibility, with scalar-valued finite readout additive over finite
+  pairwise-disjoint record collections.
   Downstream
   structures such as context selection, decomposition, `K`/CPT structure,
   sector-generation rules, weighting, normalization, probability, occurrence

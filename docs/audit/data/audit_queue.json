@@ -138,30 +138,30 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
+      "claim_scope": "Algebraic audit of the naive d=4 taste count N_taste=16 and the Berezin/log-det mean-field W(J) curvature form for the explicit Cl(4) tadpole block; no physical Higgs-mass identification, physical species-realization claim, or full non-mean-field spectrum is audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17"
       ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "direct_in_degree": 3,
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.039,
+      "load_bearing_score": 9.544,
       "note_path": "docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_higgs_lattice_taste_count_wj_form_2026_06_05.py",
-      "transitive_descendants": 262
+      "transitive_descendants": 263
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

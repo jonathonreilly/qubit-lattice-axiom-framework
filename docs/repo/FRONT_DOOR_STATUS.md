@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 890 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1700 |
+| Unaudited rows | 1699 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 34 |
 | Audited renaming rows | 25 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`](../../docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; unaudited
+- [`higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`](../../docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
 - [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited

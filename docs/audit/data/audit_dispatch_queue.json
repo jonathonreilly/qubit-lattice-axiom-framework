@@ -49,7 +49,7 @@
       "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
       "queue_order": 1,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited,hypercharge_identification_note:audited_conditional,no_per_site_chirality_theorem_note_2026-05-02:unaudited",
+      "ready_blocker": "blocked_by_dependency:abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18:unaudited,hypercharge_identification_note:audited_conditional,no_per_site_chirality_theorem_note_2026-05-02:audit_in_progress",
       "runner_path": "scripts/anomaly_forces_time_abj_inconsistency_accepted_premise_runner.py",
       "source_json_path": "docs/audit/data/anomaly_forces_time_reaudit_queue_2026-06-21.json",
       "source_schema": "promotion_reaudit_queue.v1",
@@ -1867,9 +1867,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audit_in_progress",
       "actual_claim_type": "no_go",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audit_in_progress",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

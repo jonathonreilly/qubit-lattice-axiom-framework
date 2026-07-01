@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 904 |
+| **retained_bounded** | 905 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 30 |
-| unaudited | 1678 |
+| unaudited | 1677 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1312 |
+| `audited_clean` | 1313 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2004 |
+| `unaudited` | 2003 |
 
 | claim_type | count |
 |---|---:|
@@ -113,7 +113,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
-| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
+| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
 | 10 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_conditional` | ~~audited_conditional~~ |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
@@ -863,6 +863,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -12268,6 +12269,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The finite-dimensional calculation expands the Peierls phase as H(B)=H0+B H1+B^2 H2+O(B^3) and evaluates the grand-potential curvature with the full two-band sum, including interband H1 matrix elements.  _(class `C`)_
 - **chain closes:** True — A manual Taylor/Frechet check of Tr g(H(B)) gives the same normalization used in the runner: 2 Tr g'(H0)H2 plus the divided-difference H1 term with diagonal limit g''. The completed cache shows all sampled mass gates below 2e-2, and the provided source computes the matrix spectra and PT sums rather than reading expected chi values from another note.
 - **rationale:** The load-bearing step is a first-principles finite-matrix computation from the stated Harper cell: the runner constructs H(+B), H(0), H(-B), H1, and H2 and compares the finite-difference response with the full second-order divided-difference PT sum. Expected chi values are not hard-coded; the predecessor deviations are printed as retained bounded provenance and are not used as the proof of the new PT agreement. The finite-B and non-flux-quantized caveats are disclosed, so the conclusion does not overclaim a strict B->0, flux-quantized, continuum, or boundary-root result.
+- **auditor confidence:** high
+
+### `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional projective measurements on the supplied finite qubit-region carrier, with nonzero displayed outcome projectors and the canonical prepared-apparatus/readout frame; K_r=P_r, phase/permutation readout twists preserve up to phase/relabeling, and label-mixing apparatus unitaries do not preserve the same nonzero-sector POVM.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T122552Z-09ab09c5-lsp_projective_canonical`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Substituting the canonical isometry into Kraus extraction gives K_r = Σ_{r'} P_{r'}⟨r|r'⟩ = P_r, while a label-mixing V_A gives K_r†K_r = Σ_s |⟨r|V_A|s⟩|² P_s, which differs from P_r on distinct nonzero sectors.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by finite-dimensional projection algebra: orthogonality/completeness make the canonical dilation an isometry, the readout-basis contraction selects P_r, and linear independence of nonzero orthogonal projectors proves the label-mixing inequality. The minimal axiom authority is used only as the accepted finite qubit-lattice carrier premise, not as a measurement, Born-rule, or instrument-selection import.
+- **rationale:** The load-bearing step is a genuine algebraic closure over the stated projective-measurement hypotheses and accepted finite carrier premise, not a definition or tuned numerical match. The runner source actually constructs the projectors, isometry, Kraus contractions, phase/permutation cases, mixing counterexamples, and zero-label edge case; its 53 PASS checks are consistent with the note and are not merely hard-coded stdout. The negative boundary is explicitly narrowed to label-mixing on nonzero outcome sectors and does not claim instrument uniqueness or a physical measurement postulate.
 - **auditor confidence:** high
 
 ### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`

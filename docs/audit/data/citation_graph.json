@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
+      "to": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05"
+      "to": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
         "observable_principle_record_scalar_map_no_go_note_2026-06-05",
         "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
-        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05"
+        "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7918b495b241f970488979336595efe82d4e5bb0288faa43d7b13a10d656af19",
+      "note_hash": "736e8260b6381f632766cd3a870458afdafa4809be9fc1324a11a0571f525a39",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

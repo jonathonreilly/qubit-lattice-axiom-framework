@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 200 |
-| **retained_bounded** | 906 |
+| **retained_bounded** | 907 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1667 |
+| unaudited | 1666 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 27 |
@@ -65,22 +65,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1320 |
+| `audited_clean` | 1321 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1993 |
+| `unaudited` | 1992 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1802 |
+| `bounded_theorem` | 1803 |
 | `decoration` | 61 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 749 |
+| `positive_theorem` | 748 |
 
 | criticality | count |
 |---|---:|
@@ -853,6 +853,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `light_cone_framing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `linear_response_second_order_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -12162,6 +12163,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The subcritical arctan-series defect bound: ||[D, alpha_s(A)]|| <= ||[H,A]|| sum_{n>=1}(a_tau||H||/2)^{2n} = ||[H,A]|| y^2/(1-y^2), hence ||alpha_CN(A)-alpha_{a_tau}(A)|| <= zeta(A).  _(class `A`)_
 - **chain closes:** True — The spectral identity, Duhamel interpolation, Leibniz telescope, and geometric series close the per-step and n-step defect bounds on the stated finite-block subcritical domain. The cone term then follows from the cited retained_bounded finite-range LR lemma, and the note does not import the cited authority's open exact-log-H corollary.
 - **rationale:** The independent formula check confirms the factors: the (2n+1) from [H^{2n+1},B] cancels the arctan coefficient and leaves the geometric sum y^2/(1-y^2), with the extra a_tau giving zeta. The withdrawal coefficient also checks by Pauli projection: c3=(f(3)-3f(1))/4=(1/(2a_tau))[arctan(3a_tau/2)-3 arctan(a_tau/2)]. The runner source performs finite-matrix checks of these identities and inequalities rather than merely printing PASS, but the proof itself is algebraic over finite-dimensional operators plus the retained_bounded LR authority.
+- **auditor confidence:** high
+
+### `light_cone_framing_note`
+
+- **Note:** [`LIGHT_CONE_FRAMING_NOTE.md`](../../docs/LIGHT_CONE_FRAMING_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 bilinear staggered two-step sector with m>0: exact-log quasilocal LR envelope plus finite-block subcritical Crank-Nicolson cone inheritance with additive n zeta defect; separate staggered E^2=m^2+sin^2(k) dispersion has v_max=sqrt(m^2+1)-m <= 1.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T130555Z-5319615a-light_cone_framing_note`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The composed CN inheritance bound: ||[alpha_CN^n(A_x), B_y]|| <= 2||A_x||||B_y|| exp(-mu d_1(x,y) + 4 W_mu |t|) + 2||B_y|| n zeta(A_x) under the free-bilinear, finite-block, subcritical, and 0 < d mu < eta < arcsinh(m) hypotheses.  _(class `A`)_
+- **chain closes:** True — The cone statement is an algebraic composition of the retained_bounded quasilocal exact-evolution LR bridge and the retained_bounded CN defect theorem. The dispersion maximum follows by optimizing v_g^2 over s=sin^2(k).
+- **rationale:** The cited authorities are all retained_bounded and supply the exact-log kernel, weighted-overlap LR envelope, and CN defect inequality used by the note. The source keeps the sector boundaries explicit and does not claim strict v=1, exact finite range, a fixed-step CN velocity, a gauged/interacting theorem, or a volume-independent CN defect. The runner checks the corrected dispersion algebra, source rewiring, shell-condition finiteness, Cayley convention, and a finite-block CN inheritance inequality without using external comparator data.
 - **auditor confidence:** high
 
 ### `linear_response_derivation_note`

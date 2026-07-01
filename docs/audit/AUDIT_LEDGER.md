@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 879 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1717 |
+| unaudited | 1716 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
 | ~~audited_conditional~~ | 32 |
-| ~~audited_failed~~ | 1 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 8 |
@@ -67,19 +67,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1280 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
-| `audited_failed` | 23 |
+| `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2043 |
+| `unaudited` | 2042 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1804 |
+| `bounded_theorem` | 1805 |
 | `decoration` | 60 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 748 |
+| `positive_theorem` | 747 |
 
 | criticality | count |
 |---|---:|
@@ -1531,6 +1531,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | B | - |
 | `architecture_note_directional_measure` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
 | `hierarchy_dimensional_compression_audited_scope_narrow_bounded_note_2026-05-10` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -20160,6 +20161,23 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **chain closes:** True — The cancellation follows directly from the cited universal common rescaling and the cited SM Weinberg-angle definition. The open kappa_EW=0 selector is not needed for this scoped invariance claim.
 - **rationale:** The runner genuinely performs an exact Sympy algebra check of the common-factor cancellation, with no external comparator or numerical tuning. However, the load-bearing content is only a class-A corollary of the upstream EW color-projection family plus the standard Weinberg-angle definition, and the parent authority already states weak-angle preservation under the common rescaling. This is therefore valid as an algebraic decoration, not an independent bounded theorem.
 - **decoration parent:** `yt_ew_color_projection_theorem`
+- **auditor confidence:** high
+
+### `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`
+
+- **Note:** [`YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md`](../../docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the stated symbolic D_S1 reduction and the claimed |I_S| <= 23.35 consistency envelope for H_unit one-loop renormalization on the Wilson/staggered tadpole-improved surface, excluding numerical BZ quadrature.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T224337Z-5839b518-yt_p1_h_unit_renormaliza`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The claimed retained envelope bound |I_S^{framework}| <= 16 * |1 - 1/<P>|^{-1} = 23.35 is asserted to follow from tadpole subtraction and a BZ max-integrand envelope.  _(class `B`)_
+- **chain closes:** False — The arithmetic 16/|1 - 1/0.5934| = 23.35 checks, but the supplied packet does not derive that inequality from the stated BZ kernel. The kernel has vanishing denominators and no explicit finite tadpole-subtracted integrand is provided, so the max-integrand bound does not close.
+- **rationale:** The headline envelope is not a consequence of the supplied Feynman rules: D_psi and D_g vanish on the BZ, so an unqualified maximum-integrand bound is infinite unless a specific subtracted kernel is provided. The note also has normalization drift for N_S: 4*sum versus sum, and continuum N_S -> 1 versus the runner's N_S -> 4. The runner does not repair this because it hard-codes the plaquette helper value and several load-bearing booleans/constants, then checks arithmetic and string structure rather than deriving the BZ bound. The source also cites a superseded minimal-axioms file for the action and uses 0.5934 despite the supplied plaquette authority saying that value is admitted reuse rather than derived here.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-04-11.md`
+  - `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`
+  - `YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`
 - **auditor confidence:** high
 
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`

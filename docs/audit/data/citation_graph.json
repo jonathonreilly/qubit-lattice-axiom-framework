@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27"
+      "to": "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
@@ -53479,6 +53479,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04"
     },
     {
       "from": "repo.front_door_status",
@@ -53495,10 +53499,6 @@
     {
       "from": "repo.front_door_status",
       "to": "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
+        "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
         "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
+        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
         "single_axiom_hilbert_note",
         "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20",
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05"
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "99ba062baca43da00b9c8facee0ee70358e318dcc3f12c187d979ea96799e731",
+      "note_hash": "84cd60f01a1adace31e0d9cfe8249530e74ee78e5f94f893b92f26f332c70562",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

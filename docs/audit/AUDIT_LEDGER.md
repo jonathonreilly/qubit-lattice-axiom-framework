@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 905 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1675 |
+| unaudited | 1674 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 25 |
+| ~~audited_renaming~~ | 26 |
 | ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -70,8 +70,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 25 |
-| `unaudited` | 2001 |
+| `audited_renaming` | 26 |
+| `unaudited` | 2000 |
 
 | claim_type | count |
 |---|---:|
@@ -1609,6 +1609,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -20766,6 +20767,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **chain closes:** True — The cancellation follows directly from the cited universal common rescaling and the cited SM Weinberg-angle definition. The open kappa_EW=0 selector is not needed for this scoped invariance claim.
 - **rationale:** The runner genuinely performs an exact Sympy algebra check of the common-factor cancellation, with no external comparator or numerical tuning. However, the load-bearing content is only a class-A corollary of the upstream EW color-projection family plus the standard Weinberg-angle definition, and the parent authority already states weak-angle preservation under the common rescaling. This is therefore valid as an algebraic decoration, not an independent bounded theorem.
 - **decoration parent:** `yt_ew_color_projection_theorem`
+- **auditor confidence:** high
+
+### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`
+
+- **Note:** [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-block support identification of the Y_T signed RN source record with the coordinate on the local Pauli joint spectral outcome set, plus algebraic uniqueness of the exponential RN source family; no EW/Higgs/source-action physical authority.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T123639Z-f4e70992-yt_lsp_signed_record_sou`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because epsilon_x is now the coordinate function on the LSP joint spectral outcome set, the source-action packet's signed source record is not introduced through an extra carrier isomorphism.  _(class `F`)_
+- **chain closes:** True — The Pauli projector algebra, joint spectral coordinate identity, RN score identity, and source-family uniqueness close as finite algebra. The step that makes this the Y_T source record closes only because the note constructs/identifies the carrier, not because an upstream authority independently forces that bridge.
+- **rationale:** Issue: the load-bearing bridge is the assertion that the Y_T packet's primitive signed record is the same object as the Pauli joint-spectrum coordinate. Why this blocks clean derivation status: the cited Y_T packet supplies a signed {-1,+1} record and the LSP theorem supplies projective readout algebra, but neither independently forces their equality; the current note enforces it by constructing/identifying the carrier. Repair target: a separate bridge theorem would need to derive the source-record carrier from retained LSP/source semantics rather than stipulate it. Claim boundary until fixed: the finite algebra and RN uniqueness are valid support, but the source-readout link is a renaming/construction.
 - **auditor confidence:** high
 
 ### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`

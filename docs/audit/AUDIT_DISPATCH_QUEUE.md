@@ -73,7 +73,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 13 | resolved_or_superseded | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
 | 14 | resolved_or_superseded | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
 | 15 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
-| 16 | resolved_or_superseded | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / unaudited / unaudited |
+| 16 | resolved_or_superseded | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / audit_in_progress / audit_in_progress |
 | 17 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | positive_theorem / unaudited / unaudited |
 | 18 | resolved_or_superseded | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | positive_theorem / unaudited / unaudited |
 | 19 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |

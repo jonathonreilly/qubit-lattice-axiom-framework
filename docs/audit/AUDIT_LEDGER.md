@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 199 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 890 |
+| **retained_bounded** | 891 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1699 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1294 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1295 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -683,6 +681,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_seven_eighths_twisted_thermal_zeta_period_quotient_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `higgs_mass_from_axiom_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `higgs_mechanism_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9519,6 +9518,19 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** For a single Hamming-weight class hw = k, N_taste^(k) = binomial(4,k), while the uniform all-corners assignment uses sum_k binomial(4,k) = 16; substituting these into formula [5] gives three single-class values, none equal to the uniform-16 value.  _(class `A`)_
 - **chain closes:** True — The cited Wilson staircase gives binomial(4,k) = (1,4,6,4,1) and sum 16, and the parent formula supplies the N_taste slot. Direct substitution gives N = 1,4,6,4,1 versus uniform N = 16, so the narrow non-selection boundary follows without adding a channel selector.
 - **rationale:** The load-bearing step is exact finite algebra over retained-bounded cited inputs, not a physical Higgs-pole derivation or a tuned comparator match. Independent arithmetic confirms the displayed class counts, ratios 16/binomial(4,k), rounded masses, and the uniform v/(2u_0) = 140.3 GeV readout. The clean verdict applies only to the bounded boundary statement; channel selection, the parent Higgs interpretation, and the +12% gap remain outside scope.
+- **auditor confidence:** high
+
+### `higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic bridge, conditional on the explicit d=4 naive lattice Dirac symbol and the tadpole mean-field Cl(4) block, deriving the structural naive taste count 16 and the mean-field log-determinant W(J) curvature form.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T070311Z-bccb1a1b-higgs_lattice_taste_coun`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The naive Dirac symbol has zeros exactly on {0,pi}^d, giving N_taste=2^4=16 at d=4, and the tadpole mean-field block D_mf=i u_0 sum_mu gamma_mu has characteristic polynomial (lambda^2+4u_0^2)^2, so W(J)=(N_tot/2) log(J^2+4u_0^2) and W''(0)=N_tot/(4u_0^2).  _(class `A`)_
+- **chain closes:** True — The taste-count result follows from the Clifford cancellation in the naive symbol and elementary Brillouin-zone zero counting. The W(J) form follows from the retained Berezin determinant identity plus the explicitly scoped mean-field block spectrum and direct differentiation; no physical Higgs-mass or full non-mean-field spectral claim is used.
+- **rationale:** The load-bearing steps are exact algebraic/counting/calculus closures over retained-grade or retained-bounded one-hop inputs and the note's explicit bounded hypotheses. The runner source performs substantive symbolic and numerical checks of the Clifford zero count, Berezin determinant form, paired determinant algebra, mean-field characteristic polynomial, and curvature formula, with only metadata/dependency checks outside the algebraic path. The scope discipline is adequate: finite APBC exact-zero behavior is separated from the structural naive Brillouin-zone taste count, and no physical Higgs-mass identification is claimed.
 - **auditor confidence:** high
 
 ### `higgs_mass_from_axiom_note`

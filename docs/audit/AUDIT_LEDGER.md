@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 202 |
+| **retained** | 203 |
 | **retained_no_go** | 200 |
 | **retained_bounded** | 905 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1671 |
+| unaudited | 1670 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 27 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1316 |
+| `audited_clean` | 1317 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1997 |
+| `unaudited` | 1996 |
 
 | claim_type | count |
 |---|---:|
@@ -235,6 +235,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3046,6 +3047,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** From POVM additivity, partial additivity and bounded homogeneity extend m uniquely to a real-linear functional on Herm(M_2), whose Riesz representative is the unique density matrix sigma with m(E)=Tr(sigma E).  _(class `A`)_
 - **chain closes:** True — The proof uses only the accepted M_2 carrier plus the theorem's explicit M1-M3 hypotheses and finite-dimensional real linear algebra. The parent-row higher-dimensional and Born-rule admissions are explicitly outside this audited scope.
 - **rationale:** The load-bearing theorem closes as finite-dimensional algebra: M3 gives complement and partial additivity, bounded Cauchy additivity gives real homogeneity, the ordered cone extension gives a real-linear functional, and the Hilbert-Schmidt Riesz representation gives the stated Bloch reconstruction. Positivity follows because rank-1 projectors are effects and m(P_psi)>=0 implies <psi|sigma|psi>>=0. The runner is supportive rather than a substitute for the proof, but its exact and numeric checks match the independently audited signs, factors, and normalizations; the Busch/CFMR citations are comparators, not hidden imports.
+- **auditor confidence:** high
+
+### `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-region effect-Gleason representation on H_Lambda = tensor_x C^2 for all finite |Lambda|>=1, assuming the stated POVM-additive probability measure hypotheses.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T125108Z-18a58602-busch_povm_extension_on_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For |Lambda|=1 the cited M_2 effect-Gleason bridge gives m(E)=Tr(sigma E), and for |Lambda|>=2 the projection-Gleason representation on projections plus POVM-derived homogeneity and finite spectral decomposition gives m(E)=sum_j lambda_j Tr(sigma P_j)=Tr(sigma E).  _(class `A`)_
+- **chain closes:** True — The dim-2 case is supplied by the retained_bounded M_2 bridge, and the multi-site case follows from the retained projection-lattice companion plus finite-dimensional spectral decomposition and additivity/homogeneity derived from the POVM axioms. No additional probability, quasi-local, or Born-identification bridge is used beyond the theorem hypotheses.
+- **rationale:** The cited inputs are retained-grade or accepted axiom premises, and the source note's finite-region conclusion follows by standard finite-dimensional operator algebra. The runner source performs real algebraic and numerical sanity checks rather than merely printing passes, although its generated trace-form measures are supporting checks rather than the proof of universality. The universality is supplied by the written additivity-to-linearity/Riesz argument for M_2 and by the retained projection-Gleason authority plus spectral extension for |Lambda|>=2.
 - **auditor confidence:** high
 
 ### `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`

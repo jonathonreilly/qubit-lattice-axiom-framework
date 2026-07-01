@@ -138,26 +138,26 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
-      "claim_scope": null,
+      "claim_scope": "Finite-dimensional left-anchored tensor-factor local algebras on the specified free staggered open-chain carriers: RS-1 Schmidt-rank cyclic/separating dichotomy, RS-2 full-rank reduced-vacuum certificates for L=6,8 and R=1..3, and RS-3 non-local time-translated algebra cyclicity on the tested L=6 carrier.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "axiom_first_spectrum_condition_theorem_note_2026-04-29"
       ],
       "direct_in_degree": 8,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 16.817,
       "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/axiom_first_reeh_schlieder_check.py",
       "transitive_descendants": 901
@@ -9036,15 +9036,15 @@
         "minimal_axioms",
         "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.268,
+      "load_bearing_score": 8.781,
       "note_path": "docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/lattice_laplacian_shell_localization_2026_06_16.py",
-      "transitive_descendants": 108
+      "transitive_descendants": 109
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

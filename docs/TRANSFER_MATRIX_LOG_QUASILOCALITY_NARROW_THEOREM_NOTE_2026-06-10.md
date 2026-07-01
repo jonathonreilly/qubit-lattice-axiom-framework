@@ -240,12 +240,17 @@ segment: `Re(1 + u^2 w) >= 1`, so `|sqrt(1 + u^2 s^2)| >= 1` and
 ```
 
 (check T3.) Now shift the `p_{μ*}` contour in (2) from the real
-interval `[-π, π]` to `Im p_{μ*} = -eta·sgn(z_{μ*})`: the integrand is
+interval `[-π, π]` to `Im p_{μ*} = +eta·sgn(z_{μ*})`: the integrand is
 analytic in the closed strip and `2π`-periodic in `Re p_{μ*}`, so the
 two vertical sides of the rectangle cancel and the integral is
-unchanged. On the shifted contour `|e^{i p_{μ*} z_{μ*}}| =
-e^{-eta·|z_{μ*}|} = e^{-eta·||z||_inf}`, and bounding the integrand by
-(7) and the normalized measure by 1 gives (3). ∎ (Q1)
+unchanged. The `+` orientation is the decaying one for the `e^{+i p·z}`
+convention of (2): writing `p_{μ*} = a + i·eta·sgn(z_{μ*})`,
+`|e^{i p_{μ*} z_{μ*}}| = e^{-eta·sgn(z_{μ*})·z_{μ*}} =
+e^{-eta·|z_{μ*}|} = e^{-eta·||z||_inf}` (the opposite shift
+`Im p_{μ*} = -eta·sgn(z_{μ*})` carries `e^{+eta·|z_{μ*}|}`, growth, and
+cannot produce (3); orientation witnessed numerically, check T17).
+Bounding the integrand by (7) and the normalized measure by 1
+gives (3). ∎ (Q1)
 
 ### Step 2 — sharpness via the branch point (proves Q2, `d = 1`)
 
@@ -466,10 +471,12 @@ Deterministic (no random input), runtime under 5 minutes. The runner checks
 the symbol anchor, strip inequalities, `d = 1` and `Z^3` kernel bounds,
 sharp-rate fits, branch-point obstruction, even-sublattice support,
 not-finite-range exhibit, overlap weights, truncation tails, `a_tau` scaling,
-and two falsification legs: the gapless boundary and a positive, gapped,
-long-range-perturbed comparator symbol that violates the derived bound.
+two falsification legs (the gapless boundary and a positive, gapped,
+long-range-perturbed comparator symbol that violates the derived bound),
+and the Step 1 contour-shift orientation witness (shifted-contour
+identity at `Im p = +eta·sgn(z)`; growth on the opposite orientation).
 
-Runner cache: [`logs/runner-cache/transfer_matrix_log_quasilocality_check_2026_06_10.txt`](../logs/runner-cache/transfer_matrix_log_quasilocality_check_2026_06_10.txt) (PASS=16, FAIL=0).
+Runner cache: [`logs/runner-cache/transfer_matrix_log_quasilocality_check_2026_06_10.txt`](../logs/runner-cache/transfer_matrix_log_quasilocality_check_2026_06_10.txt) (PASS=19, FAIL=0).
 
 ## Citations
 
@@ -517,3 +524,12 @@ Runner cache: [`logs/runner-cache/transfer_matrix_log_quasilocality_check_2026_0
   positive comparator symbol violating the derived bound. Runner
   `PASS=16 FAIL=0`. Sector restriction: free (`U = 1`) bilinear
   two-step sector; gauged/interacting log-transfer locality open.
+- **2026-07-01** — repair: Step 1 contour-shift orientation corrected
+  from `Im p_{μ*} = -eta·sgn(z_{μ*})` to `+eta·sgn(z_{μ*})`, the
+  decaying orientation for the `e^{+i p·z}` convention of (2). No other
+  step, constant, rate, or claim changed; the displayed estimate
+  `|e^{i p_{μ*} z_{μ*}}| = e^{-eta·|z_{μ*}|}` was already the
+  `+`-orientation value. New check T17 (a/b/c) witnesses the
+  shifted-contour identity, the decay factor on the `+` orientation,
+  and the growth factor on the pre-repair `-` orientation. Runner
+  `PASS=19 FAIL=0`.

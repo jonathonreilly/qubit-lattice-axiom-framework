@@ -498,6 +498,54 @@ def test_T16_long_range_countermodel() -> None:
 
 
 # ----------------------------------------------------------------------------
+# T17 [A/C] Step 1 contour-shift orientation. For the e^{+i p z} convention
+# of (2), shifting to Im p = +eta*sgn(z) (a) leaves the integral unchanged
+# (strip analyticity + 2pi-periodicity) and (b) carries the decay factor
+# |e^{i p z}| = e^{-eta|z|}; the opposite orientation -eta*sgn(z) carries
+# e^{+eta|z|} (growth) and cannot produce bound (3). This witnesses the
+# 2026-07-01 repair of the Step 1 shift direction.
+# ----------------------------------------------------------------------------
+
+def test_T17_contour_orientation() -> None:
+    print("T17 — Step 1 contour orientation: +eta*sgn(z) decays; -eta*sgn(z) grows")
+    m = 0.3
+    est = eta_star(m)
+    eta = 0.8 * est
+    N = 8192
+    a = 2.0 * np.pi * np.arange(N) / N  # periodic uniform grid, no dup endpoint
+    ok_id, ok_decay, ok_growth = True, True, True
+    details = []
+    for z in (3, -4, 7):
+        sz = 1.0 if z > 0 else -1.0
+        # real-axis kernel value (normalized measure, a_tau = 1)
+        h_real = complex(np.mean(dispersion(m, a) * np.exp(1j * a * z)))
+        # shifted contour Im p = +eta*sgn(z): identity + decay factor
+        p_plus = a + 1j * eta * sz
+        E_plus = np.arcsinh(np.sqrt(m * m + np.sin(p_plus) ** 2))
+        h_plus = complex(np.mean(E_plus * np.exp(1j * p_plus * z)))
+        if abs(h_plus - h_real) > 1e-10 * max(1.0, abs(h_real)):
+            ok_id = False
+        mod_plus = np.abs(np.exp(1j * p_plus * z))
+        if not np.allclose(mod_plus, np.exp(-eta * abs(z)), rtol=1e-12):
+            ok_decay = False
+        # pre-repair orientation Im p = -eta*sgn(z): growth factor
+        p_minus = a - 1j * eta * sz
+        mod_minus = np.abs(np.exp(1j * p_minus * z))
+        if not np.allclose(mod_minus, np.exp(+eta * abs(z)), rtol=1e-12):
+            ok_growth = False
+        details.append(f"z={z:+d}: |h_shift - h_real| = {abs(h_plus - h_real):.1e}")
+    check("T17a [A] shifted-contour integral at Im p = +eta*sgn(z) equals the "
+          "real-axis kernel (periodicity + strip analyticity)", ok_id,
+          "; ".join(details))
+    check("T17b [A] on the +eta*sgn(z) contour |e^{i p z}| = e^{-eta|z|} exactly: "
+          "the decaying orientation for the e^{+i p z} convention of (2)",
+          ok_decay, f"m = {m}, eta = {eta:.4f} = 0.8 eta*")
+    check("T17c [C] the opposite orientation -eta*sgn(z) carries |e^{i p z}| = "
+          "e^{+eta|z|} (growth): the pre-repair shift direction cannot yield (3)",
+          ok_growth, f"growth factor at |z| = 7: x{np.exp(eta * 7):.1f}")
+
+
+# ----------------------------------------------------------------------------
 
 def main() -> None:
     print()
@@ -527,6 +575,7 @@ def main() -> None:
     test_T14_atau_scaling()
     test_T15_gapless_boundary()
     test_T16_long_range_countermodel()
+    test_T17_contour_orientation()
 
     print()
     print("=" * 72)

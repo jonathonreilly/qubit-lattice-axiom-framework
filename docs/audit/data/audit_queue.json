@@ -138,24 +138,24 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
-      "claim_scope": null,
+      "claim_scope": "Delta-zero B4 magnitude gate: the supplied block determinant/condensate formulas are u_0-only, the alpha_LM magnitude is an algebraic relabeling carrying alpha_bare^16, and the attachment-observable transport rule remains open.",
       "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "hierarchy_formula_honest_status_note_2026-05-10"
       ],
       "direct_in_degree": 15,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 12.454,
       "note_path": "docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py",
       "transitive_descendants": 30
@@ -8594,15 +8594,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 5.307,
+      "load_bearing_score": 7.459,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py",
-      "transitive_descendants": 6
+      "transitive_descendants": 21
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",

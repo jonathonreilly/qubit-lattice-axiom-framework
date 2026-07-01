@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05"
+      "to": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
+        "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
         "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
@@ -103190,7 +103190,7 @@
         "momentum_charge_commute_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "42b144e229e111900a1768baaa64c29bb7164007b5b1b7d8d9f266a21f28d9c6",
+      "note_hash": "a83ce93409a7810be4368e839fb8ff8d9f00ee7882f9555509b981003a5d4dae",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

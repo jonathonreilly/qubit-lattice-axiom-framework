@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1477 |
-| Retained-grade rows, including boxed decorations | 1367 |
-| Retained positive theorems | 204 |
+| Applied audit verdicts | 1478 |
+| Retained-grade rows, including boxed decorations | 1368 |
+| Retained positive theorems | 205 |
 | Retained no-go rows | 200 |
 | Retained bounded rows | 905 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 31 |
-| Unaudited rows | 1669 |
+| Unaudited rows | 1668 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 39 |
 | Audited renaming rows | 27 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1671 |
+| Total pending rows | 1670 |
 | Ready rows | 103 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 289 |
+| High pending | 288 |
 | Medium pending | 508 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
 - [`light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md) - medium; unaudited
 - [`record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18`](../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`](../../docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`no_per_site_bosonic_ccr_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`q_integer_spectrum_theorem_note_2026-05-02`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`momentum_charge_commute_theorem_note_2026-05-02`](../../docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`translation_abelian_composition_theorem_note_2026-05-02`](../../docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

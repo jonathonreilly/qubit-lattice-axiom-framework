@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 202 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 903 |
+| **retained_bounded** | 904 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 30 |
-| unaudited | 1679 |
+| unaudited | 1678 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1311 |
+| `audited_clean` | 1312 |
 | `audited_conditional` | 38 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2005 |
+| `unaudited` | 2004 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 508 |
-| `medium` | 929 |
+| `high` | 509 |
+| `medium` | 928 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -121,7 +121,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
-| 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
+| 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
 | 18 | `three_generation_structure_note` | bounded_theorem | critical | 1098 | 35.60 | `audited_clean` | **retained_bounded** |
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `audited_clean` | **retained_bounded** |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
@@ -287,6 +287,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
+| `cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_taste_generation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3846,6 +3847,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The cited retained_bounded authority supplies the 3-dimensional algebraic SU(3) carrier and generators; finite-dimensional linear algebra then gives the trace/traceless decomposition and unique scalar invariant line. The source note explicitly excludes the physical quark-color bridge, so the parent’s open physical-identification language is not imported into this claim scope.
 - **rationale:** The load-bearing work is standard algebra over the single upstream abstract SU(3) carrier: V ⊗ V* is End(C^3), the trace line is fixed by conjugation, and the traceless complement has dimension 8. The runner performs internal algebraic checks of normalization, projector rank/idempotence, invariance, traceless rank, and commutant dimension; it does not use external comparators or tuned numerical inputs. Because this adds no physical bridge or independent comparator beyond the retained-bounded parent plus standard mathematics, the proper terminal verdict is decoration rather than clean independent theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic embedding of the canonical Gell-Mann generators as the compact symmetric-block su(3) subalgebra inside the commutant of the fiber SU(2) action on the chosen abstract C^8 base-fiber carrier, with single-block and 8D trace normalizations; no physical SU(3)_c identification audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T122154Z-708522f8-cl3_su3_symmetric_base`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The construction T^a_8D = M_3_sym(lambda^a/2) tensor I_2, with M_3_sym(X)=U_base^dagger diag(X,0) U_base, makes the Gell-Mann commutators and the fiber-commutant identity reduce to block-diagonal matrix algebra and [A tensor I, I tensor B]=0.  _(class `A`)_
+- **chain closes:** True — Within the stated algebraic scope, the result follows from the retained-bounded carrier/base-fiber inputs plus finite-dimensional matrix algebra. The physical color bridge is explicitly outside the audited scope.
+- **rationale:** The displayed normalization factors, structure-constant convention, Jacobi closure, and commutant identification are algebraically consistent: Tr_4 gives 1/2 delta_ab and the fiber trace doubles this to Tr_8 = delta_ab. The runner source constructs the Pauli, Gell-Mann, block-embedded, and tensor-product matrices and checks the stated identities rather than only printing fixed pass lines. The one-hop authorities in the restricted packet are retained-grade for the bounded carrier and base-fiber inputs, and no external comparator, fitted selector, or physical-color readout bridge is imported.
 - **auditor confidence:** high
 
 ### `cl3_taste_generation_theorem`

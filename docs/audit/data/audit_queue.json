@@ -3,7 +3,7 @@
     "critical": 290,
     "high": 295,
     "leaf": 584,
-    "medium": 512
+    "medium": 511
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -8410,7 +8410,7 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+      "claim_id": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -8418,18 +8418,17 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "cl3_color_automorphism_theorem",
-        "cl3_taste_generation_theorem"
+        "minimal_axioms"
       ],
-      "direct_in_degree": 7,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.144,
-      "note_path": "docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "load_bearing_score": 9.055,
+      "note_path": "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py",
-      "transitive_descendants": 49
+      "runner_path": "scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
+      "transitive_descendants": 93
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17850,30 +17849,6 @@
       "ready": true,
       "runner_path": "scripts/light_cone_crank_nicolson_lr_2026_05_09.py",
       "transitive_descendants": 86
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.304,
-      "note_path": "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
-      "transitive_descendants": 78
     },
     {
       "audit_independence_required": "any_non_self",
@@ -33541,6 +33516,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "color_link_sym2_endpoint_projection_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "color_link_index_routing_carrier_budget_2026-06-05",
+        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_color_link_sym2_endpoint_projection_2026_06_05.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "gl_f_identification_bridge_decomposition_narrow_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -36401,32 +36402,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_closure_t2_gnewton_reaudit_2026_05_10_t2gnewton.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "color_link_sym2_endpoint_projection_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "color_link_index_routing_carrier_budget_2026-06-05",
-        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_color_link_sym2_endpoint_projection_2026_06_05.py",
       "transitive_descendants": 1
     },
     {
@@ -50335,5 +50310,5 @@
     }
   ],
   "ready_count": 110,
-  "total_pending": 1681
+  "total_pending": 1680
 }

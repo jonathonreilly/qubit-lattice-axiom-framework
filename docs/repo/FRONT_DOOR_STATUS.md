@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1467 |
-| Retained-grade rows, including boxed decorations | 1361 |
+| Applied audit verdicts | 1468 |
+| Retained-grade rows, including boxed decorations | 1362 |
 | Retained positive theorems | 202 |
 | Retained no-go rows | 198 |
-| Retained bounded rows | 903 |
+| Retained bounded rows | 904 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 30 |
-| Unaudited rows | 1679 |
+| Unaudited rows | 1678 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 38 |
 | Audited renaming rows | 25 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1681 |
+| Total pending rows | 1680 |
 | Ready rows | 110 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
 | High pending | 295 |
-| Medium pending | 512 |
+| Medium pending | 511 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
+- [`lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`](../../docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 - [`rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08`](../../docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - high; unaudited
 - [`record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) - high; unaudited
 - [`observable_principle_record_scalar_map_no_go_note_2026-06-05`](../../docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md) - high; unaudited
 - [`koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`](../../docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md) - high; unaudited
 - [`one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md) - medium; unaudited
 - [`light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md) - medium; unaudited
-- [`lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`](../../docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
+- [`kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`](../../docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
-| High nodes | 510 |
-| Medium nodes | 972 |
+| High nodes | 511 |
+| Medium nodes | 971 |
 | Leaf nodes | 1562 |
 
 Top load-bearing rows by graph score:

@@ -408,12 +408,13 @@ register itself, not promoted by it):
   Priority 2 as one of the two complementary results behind the
   Brannen-phase reduction.
 - [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-  — currently `unaudited` (audit row:
-  `koide_q_delta_linking_relation_theorem_note_2026-04-20`).
-  Sibling formal-only bounded-theorem note sharpening the load-bearing residual
-  statement to `Q_structural = 2/d`, `δ_structural = 2/d²`,
-  `δ/Q = 1/d`, and isolating the physical-base postulate `P` named
-  in the present register.
+  — formal-only Q-Delta arithmetic (audit row:
+  `koide_q_delta_linking_relation_theorem_note_2026-04-20`; status is
+  audit-lane-owned). Sibling formal-only note recording the residual
+  statement as `Q_structural = 2/d`, `δ_structural = 2/d²`,
+  `δ/Q = 1/d`; the repaired note no longer carries the physical-base
+  postulate `P` named in the present register (the radian-bridge no-go
+  notes do).
 - [`KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20.md`](KOIDE_HIGGS_DRESSED_RESOLVENT_ROOT_THEOREM_NOTE_2026-04-20.md)
   — currently `unaudited` (audit row:
   `koide_higgs_dressed_resolvent_root_theorem_note_2026-04-20`).

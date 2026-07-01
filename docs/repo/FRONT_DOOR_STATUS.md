@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1446 |
-| Retained-grade rows, including boxed decorations | 1345 |
+| Applied audit verdicts | 1447 |
+| Retained-grade rows, including boxed decorations | 1346 |
 | Retained positive theorems | 199 |
 | Retained no-go rows | 198 |
-| Retained bounded rows | 890 |
+| Retained bounded rows | 891 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
 | Unaudited rows | 1699 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1702 |
-| Ready rows | 99 |
+| Total pending rows | 1701 |
+| Ready rows | 100 |
 | Cycle-break targets | 9 |
-| Critical pending | 291 |
+| Critical pending | 290 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05`](../../docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - critical; audit_in_progress
+- [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
 - [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited

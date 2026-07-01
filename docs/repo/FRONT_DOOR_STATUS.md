@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1487 |
-| Retained-grade rows, including boxed decorations | 1374 |
-| Retained positive theorems | 205 |
+| Applied audit verdicts | 1488 |
+| Retained-grade rows, including boxed decorations | 1375 |
+| Retained positive theorems | 206 |
 | Retained no-go rows | 201 |
 | Retained bounded rows | 910 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 31 |
-| Unaudited rows | 1659 |
+| Unaudited rows | 1658 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 42 |
 | Audited renaming rows | 27 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1661 |
-| Ready rows | 97 |
+| Total pending rows | 1660 |
+| Ready rows | 96 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
 | High pending | 287 |
-| Medium pending | 500 |
+| Medium pending | 499 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`q_integer_spectrum_theorem_note_2026-05-02`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`momentum_charge_commute_theorem_note_2026-05-02`](../../docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`translation_abelian_composition_theorem_note_2026-05-02`](../../docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`translation_covariance_local_op_theorem_note_2026-05-02`](../../docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
@@ -51,19 +50,20 @@ Next ready rows by queue order:
 - [`axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
 - [`darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05`](../../docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md) - medium; unaudited
 - [`gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`](../../docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - medium; unaudited
+- [`bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`](../../docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **434**.
+- Non-retained-grade cited rows in publication tables: **433**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 162 |
 | high | `unaudited` | 159 |
-| medium | `unaudited` | 97 |
+| medium | `unaudited` | 96 |
 | high | `audited_conditional` | 4 |
 | critical | `audited_conditional` | 3 |
 | critical | `open_gate` | 2 |
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
-| High nodes | 511 |
-| Medium nodes | 971 |
+| High nodes | 510 |
+| Medium nodes | 972 |
 | Leaf nodes | 1562 |
 
 Top load-bearing rows by graph score:

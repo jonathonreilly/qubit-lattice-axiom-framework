@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1418 |
-| Retained-grade rows, including boxed decorations | 1322 |
+| Applied audit verdicts | 1419 |
+| Retained-grade rows, including boxed decorations | 1323 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 196 |
-| Retained bounded rows | 872 |
+| Retained bounded rows | 873 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
 | Unaudited rows | 1727 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1730 |
-| Ready rows | 95 |
+| Total pending rows | 1729 |
+| Ready rows | 97 |
 | Cycle-break targets | 9 |
-| Critical pending | 319 |
+| Critical pending | 318 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_lattice_noether_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md) - critical; audit_in_progress
 - [`quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md) - critical; unaudited
 - [`axiom_first_cluster_decomposition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 - [`axiom_first_spin_statistics_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_SPIN_STATISTICS_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 - [`yt_vertex_power_derivation`](../../docs/YT_VERTEX_POWER_DERIVATION.md) - critical; unaudited
 - [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
+- [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

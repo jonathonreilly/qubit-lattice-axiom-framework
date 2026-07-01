@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "no_per_site_bosonic_ccr_theorem_note_2026-05-02"
+      "to": "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09"
+      "to": "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
+        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
         "q_integer_spectrum_theorem_note_2026-05-02",
         "momentum_charge_commute_theorem_note_2026-05-02",
         "translation_abelian_composition_theorem_note_2026-05-02",
         "translation_covariance_local_op_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09"
+        "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c5cb2d7426bb50a4ac284511aea7e507fdc29fab58010697e39244bce19d76b3",
+      "note_hash": "95225d585170fc26a42c51c35179dfba1a171816379e85f6a65ed36c7d1be4eb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

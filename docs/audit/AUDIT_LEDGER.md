@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 910 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1660 |
+| unaudited | 1659 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 27 |
-| ~~audited_conditional~~ | 41 |
+| ~~audited_conditional~~ | 42 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1325 |
-| `audited_conditional` | 41 |
+| `audited_conditional` | 42 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1986 |
+| `unaudited` | 1985 |
 
 | claim_type | count |
 |---|---:|
@@ -111,7 +111,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1127 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
 | 10 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
@@ -1474,6 +1474,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | B | - |
 | `dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | E | - |
 | `dm_neutrino_schur_suppression_named_admissions_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_carrier_from_axioms_momentum_forced_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_gauge_representation_channel_cannot_source_the_sector_r_spread_narrow_no_go_note_2026-06-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -6279,6 +6280,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The proof closes from the admitted finite-dimensional spectral calculus, per-site Pauli ladder construction, and tensor-product Fock basis. The runner source actually constructs the matrices for N=4 and verifies the relevant algebraic identities rather than merely printing constants.
 - **rationale:** The load-bearing step is a genuine algebraic identity over the admitted finite-dimensional occupation basis and Pauli definitions. No cross-note authority, external comparator, fitted input, or physical fermion-statistics/superselection premise is imported. The proof appropriately keeps the dynamical conservation and physical selector claims conditional, so the audited algebraic scope follows.
 - **auditor confidence:** high
+
+### `fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Current-surface algebraic U(3) fibre-frame covariance for weak-factor operators and two-site hopping links, including the asserted Record/readout invariance of the current weak-sector data.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T133009Z-fdfa6bbc-fiber_frame_local_redund`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A Record readout context whose realized central sectors are the current weak-sector projectors is unchanged by the fibre-frame basis re-choice, while link conjugation sends H[U] to H[g_x U g_y^dag].  _(class `A`)_
+- **chain closes:** False — The finite tensor-factor and link-covariance algebra closes. The full observational-redundancy claim also needs a retained bridge identifying P_up/P_down as supplied Record/readout sectors and tying the scalar Record readout to those projectors, which the current minimal axioms explicitly do not supply.
+- **rationale:** Issue: the runner verifies the matrix covariance identities, but it does not supply the missing weak-sector Record/readout bridge. Why this blocks: Minimal Axioms 2026-06-29 provide locked local records and finite scalar additivity only, not central-sector decomposition, context selection, or a projector/rank readout identification. Repair target: add or cite a retained bridge making the P_up/P_down weak projectors an admitted Record readout context, or narrow the claim to pure operator-coordinate covariance. Claim boundary until fixed: U(3) fibre-frame conjugation is algebraically passive for the displayed weak operators and hopping links.
+- **auditor confidence:** medium
 
 ### `field_equation_derivation_note`
 

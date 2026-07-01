@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1486 |
+| Applied audit verdicts | 1487 |
 | Retained-grade rows, including boxed decorations | 1374 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 201 |
 | Retained bounded rows | 910 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 31 |
-| Unaudited rows | 1660 |
+| Unaudited rows | 1659 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 41 |
+| Audited conditional rows | 42 |
 | Audited renaming rows | 27 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1662 |
-| Ready rows | 98 |
+| Total pending rows | 1661 |
+| Ready rows | 97 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 288 |
+| High pending | 287 |
 | Medium pending | 500 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09`](../../docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md) - high; unaudited
 - [`q_integer_spectrum_theorem_note_2026-05-02`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`momentum_charge_commute_theorem_note_2026-05-02`](../../docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`translation_abelian_composition_theorem_note_2026-05-02`](../../docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
 - [`axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
 - [`darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05`](../../docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md) - medium; unaudited
+- [`gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`](../../docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -94,5 +94,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
-- `key_terminology` - critical; 1126 descendants; score 46.638
+- `key_terminology` - critical; 1127 descendants; score 46.640
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 290,
-    "high": 287,
+    "high": 288,
     "leaf": 584,
-    "medium": 497
+    "medium": 495
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -8405,6 +8405,32 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "gauge_wilson_isotropy_boundary_note_2026-05-04",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "gauge_scalar_temporal_completion_theorem_note",
+        "gauge_vacuum_plaquette_constant_lift_obstruction_note"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.2,
+      "note_path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
+      "transitive_descendants": 25
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17595,30 +17621,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "translation_covariance_local_op_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.615,
-      "note_path": "docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/translation_covariance_local_op_check.py",
-      "transitive_descendants": 48
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "color_generation_independent_z3_structures_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17766,32 +17768,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_wilson_isotropy_boundary_note_2026-05-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "gauge_scalar_temporal_completion_theorem_note",
-        "gauge_vacuum_plaquette_constant_lift_obstruction_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.17,
-      "note_path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py",
-      "transitive_descendants": 17
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49745,6 +49721,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 94,
-  "total_pending": 1658
+  "ready_count": 93,
+  "total_pending": 1657
 }

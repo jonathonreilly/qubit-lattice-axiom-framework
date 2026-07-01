@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "translation_abelian_composition_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "translation_covariance_local_op_theorem_note_2026-05-02"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "gauge_wilson_isotropy_boundary_note_2026-05-04"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "translation_abelian_composition_theorem_note_2026-05-02",
         "translation_covariance_local_op_theorem_note_2026-05-02",
         "color_generation_independent_z3_structures_2026-06-05",
         "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
         "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
         "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
         "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
-        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
+        "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
+        "gauge_wilson_isotropy_boundary_note_2026-05-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "14819fc78f80b6f793a9e9043abf1c15a52e358fe138ddb82ca26c13ae8ba64d",
+      "note_hash": "5be38a38e35e7b5f948a8fce616cb2133ceb5e651624c2d4be86744b3536e994",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

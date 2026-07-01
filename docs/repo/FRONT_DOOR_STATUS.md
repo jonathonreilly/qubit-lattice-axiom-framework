@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1436 |
+| Applied audit verdicts | 1437 |
 | Retained-grade rows, including boxed decorations | 1336 |
 | Retained positive theorems | 198 |
 | Retained no-go rows | 197 |
 | Retained bounded rows | 883 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1710 |
+| Unaudited rows | 1709 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 32 |
+| Audited conditional rows | 33 |
 | Audited renaming rows | 25 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1712 |
-| Ready rows | 104 |
+| Total pending rows | 1711 |
+| Ready rows | 103 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
-| High pending | 314 |
+| High pending | 313 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`hierarchy_dimensional_compression_note`](../../docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md) - high; unaudited
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited
 - [`koide_q23_k0_real_block_equivalence_note_2026-05-30`](../../docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md) - high; unaudited
 - [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) - high; unaudited
 - [`pre_record_reference_state_tracial_derivation_note_2026-05-20`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) - high; unaudited
 - [`gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
+- [`busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`](../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -62,10 +62,10 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 163 |
-| high | `unaudited` | 162 |
+| high | `unaudited` | 161 |
 | medium | `unaudited` | 98 |
+| high | `audited_conditional` | 3 |
 | critical | `open_gate` | 2 |
-| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3619 |
-| Critical nodes | 575 |
-| High nodes | 510 |
+| Critical nodes | 576 |
+| High nodes | 509 |
 | Medium nodes | 972 |
 | Leaf nodes | 1562 |
 

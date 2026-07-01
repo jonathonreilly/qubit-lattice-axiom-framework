@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 301,
-    "high": 314,
+    "high": 313,
     "leaf": 584,
     "medium": 513
   },
@@ -8720,34 +8720,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hierarchy_dimensional_compression_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
-        "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
-        "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
-        "higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05",
-        "wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.96,
-      "note_path": "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py",
-      "transitive_descendants": 248
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -51161,6 +51133,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 104,
-  "total_pending": 1712
+  "ready_count": 103,
+  "total_pending": 1711
 }

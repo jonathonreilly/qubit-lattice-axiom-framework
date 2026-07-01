@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 910 |
+| **retained_bounded** | 911 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1654 |
+| unaudited | 1653 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 27 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1327 |
+| `audited_clean` | 1328 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 27 |
-| `unaudited` | 1980 |
+| `unaudited` | 1979 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 509 |
-| `medium` | 928 |
+| `high` | 508 |
+| `medium` | 929 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -301,6 +301,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `color_generation_independent_z3_structures_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4068,6 +4069,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within that bounded scope, the chain closes from the retained_bounded finite-rank field helper, the retained_bounded shell-localization identity, and the supplied runner/helper code. The note explicitly excludes the unclosed physical bridge from this projection to a full tensorial gravity theorem.
 - **rationale:** The runner does more than print constants: it constructs the finite lattice fields, forms shell means, fits a/r by least squares, and computes Einstein-tensor finite-difference residuals for the direct and coarse metrics. The load-bearing helper slices needed by the dynamic imports are included in the restricted packet, and the direct dependencies are retained-grade for a bounded theorem. The note's highlighted finite-rank R_match=5.0 row differs from the runner's fixed PASS row at R_match=4.5, but both rows are present in stdout and satisfy the bounded residual claim.
 - **auditor confidence:** medium
+
+### `color_generation_independent_z3_structures_2026-06-05`
+
+- **Note:** [`COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract Z3 representation inequivalence between the cited color-center scalar action on the 3D carrier and the cited hw=1 cyclic generation action; no physical SM color or family bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T191526Z-82b1e56a-color_generation_indepen`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Color has Z3 character (3, 3 omega, 3 omega^2) while the hw=1 generation cycle has regular character (3, 0, 0), so the two Z3 representations are inequivalent.  _(class `A`)_
+- **chain closes:** True — Over C, finite-group characters determine Z3 representation equivalence, and the two supplied characters differ at both non-identity elements. The conclusion therefore closes for the stated abstract carrier boundary without importing a physical color/generation readout bridge.
+- **rationale:** The cited authorities are retained-bounded for the abstract carrier facts used here, and the audited claim stays within that abstract boundary. Independently recomputing the character comparison gives color = 3 chi_omega and generation = chi_0 + chi_omega + chi_omega^2, with differing non-identity traces and differing chi_omega multiplicity. The runner source constructs the matrices, traces, multiplicities, relabel check, and Hom-rank obstruction as algebraic checks rather than external comparator or tuned-value checks. Physical SM color and physical-generation identification remain explicitly outside scope, so they do not block this bounded theorem.
+- **auditor confidence:** high
 
 ### `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`
 

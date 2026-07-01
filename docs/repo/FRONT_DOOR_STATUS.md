@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1455 |
-| Retained-grade rows, including boxed decorations | 1352 |
+| Applied audit verdicts | 1456 |
+| Retained-grade rows, including boxed decorations | 1353 |
 | Retained positive theorems | 200 |
 | Retained no-go rows | 198 |
-| Retained bounded rows | 896 |
+| Retained bounded rows | 897 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1691 |
+| Unaudited rows | 1690 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 36 |
 | Audited renaming rows | 25 |
@@ -33,19 +33,19 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1693 |
-| Ready rows | 105 |
+| Total pending rows | 1692 |
+| Ready rows | 106 |
 | Cycle-break targets | 9 |
 | Critical pending | 290 |
-| High pending | 306 |
+| High pending | 305 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
 - [`record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md) - high; unaudited
 - [`single_axiom_hilbert_note`](../../docs/SINGLE_AXIOM_HILBERT_NOTE.md) - high; unaudited
+- [`restricted_strong_field_closure_note`](../../docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md) - high; unaudited
 - [`lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) - high; unaudited
 - [`pre_record_reference_state_tracial_derivation_note_2026-05-20`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) - high; unaudited
 - [`gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20`](../../docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited

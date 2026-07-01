@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 896 |
+| **retained_bounded** | 897 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1691 |
+| unaudited | 1690 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1301 |
+| `audited_clean` | 1302 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2017 |
+| `unaudited` | 2016 |
 
 | claim_type | count |
 |---|---:|
@@ -813,6 +813,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_keff_continuum_note` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_kernel_transfer_norm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_nn_continuum_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_deterministic_rescale_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lattice_nn_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -11535,6 +11536,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Using the measured norm with h^2 normalization, p = 1.5 is closest to stable across h = 1.0, 0.5, 0.25, 0.125.  _(class `C`)_
 - **chain closes:** True — The current runner, invoked with the note's four h values, reproduces the stated measured slopes: +0.102, -0.204, -0.598, and -1.046, ranking p = 1.5 closest to marginal. The note explicitly bounds the result away from branch promotion, same-harness propagation, and continuum-limit claims.
 - **rationale:** The load-bearing claim is a bounded numerical computation inside a specified local harness, not a physical promotion claim. The runner computes the relevant outgoing transfer norms and log-log measured slopes directly, and the scoped note does not import dependencies or overstate the result beyond the finite discriminator.
+- **auditor confidence:** high
+
+### `lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`
+
+- **Note:** [`LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite 15^3 zero-Dirichlet Z^3 nearest-neighbor Laplacian with R=4: seven-star Green columns induce a localized sewing-band shell source and a reduced radial/anisotropic shell map depending only on total charge.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260701T073519Z-db70e548-lattice_laplacian_shell_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the explicit 15^3 zero-Dirichlet nearest-neighbor lattice Laplacian, the exterior projection is represented by sigma_R = H Pi_R^ext phi, localized to the sewing band, and the reduced shell response of seven-star-supported sources factors only through total charge Q.  _(class `C`)_
+- **chain closes:** True — The runner constructs H directly from the accepted Z^3 nearest-neighbor adjacency, solves the finite Green problems, forms Pi_R^ext and sigma_R, and checks localization, charge, column-independence, and reduced zero-charge annihilation without helper imports or imported numerical surfaces. The audited closure is only for the explicit finite Dirichlet grid and reduced shell surface stated in the note.
+- **rationale:** The load-bearing computation is a first-principles finite-lattice calculation from the accepted Lattice premise plus retained-grade cubic symmetry input. The runner source genuinely builds the Laplacian and solves the relevant linear systems; it does not read helper outputs or hard-code the shell profile, DtN kernel, or c_aniso value. The result is clean only within the bounded finite-grid scope and does not audit any nonlinear GR, tensor-valued matching, continuum, or infinite-volume extension.
 - **auditor confidence:** high
 
 ### `lattice_nn_continuum_note`

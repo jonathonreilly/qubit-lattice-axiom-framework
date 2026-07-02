@@ -307,19 +307,19 @@ two generator channels, the idempotent/eigenvalue relation is no longer zero.
 
 ## Load-Bearing Inputs
 
-- `docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md` - parent
+- [FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md](FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md) - parent
   wall note; supplies the three scoring-rule definitions and the open theorem
   target.
-- `docs/MINIMAL_AXIOMS_2026-06-29.md` - axiom surface; supplies the Record
+- [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) - axiom surface; supplies the Record
   finite-additivity sentence used in D3.
-- `docs/ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md`
+- [ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md](ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md)
   - complement-reading equivalence authority; supplies the equality of
   Record-registrable scalar content under the `hw=1`/`hw=2` complement swap on
   the supplied finite slot model.
-- `docs/KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md`
+- [KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md](KOIDE_OCCUPANCY_KERNEL_COEFFICIENT_NOT_FIXED_BY_RETAINED_CORNER_MEASURE_BOUNDED_NOTE_2026-06-12.md)
   - adjacent negative boundary; used only to keep the block from claiming that
   measure/kernel normalization fixes the occupancy cell.
-- `docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md`
+- [OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md](OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md)
   - adjacent equipartition surface; used only to keep outcome equipartition
   separate from dictionary or cell discrimination.
 
@@ -329,6 +329,12 @@ Paired runner:
 
 ```text
 scripts/frontier_flavor_carrier_measure_scoring_discriminator_2026_07_02.py
+```
+
+Cached transcript:
+
+```text
+logs/runner-cache/frontier_flavor_carrier_measure_scoring_discriminator_2026_07_02.txt
 ```
 
 Expected terminal line:

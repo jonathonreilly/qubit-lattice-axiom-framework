@@ -53470,14 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14"
     },
     {
@@ -53490,6 +53482,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08"
     },
     {
@@ -53498,7 +53494,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
+      "to": "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_records_objectivity_conditional_note_2026-05-31"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
-        "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
         "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
         "color_link_sym2_endpoint_projection_2026-06-05",
+        "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
         "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
         "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
-        "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
+        "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
+        "koide_records_objectivity_conditional_note_2026-05-31"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bb0f2df067921ae3dbeaa00074147520e8ab7e1285e8624d65c1894b6e554297",
+      "note_hash": "ced9ab60e8d06f22091f75a555eacdead2641a328a8d3e6d491ab825d3cf55a9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

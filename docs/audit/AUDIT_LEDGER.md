@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 940 |
+| **retained_bounded** | 941 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1605 |
+| unaudited | 1604 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1369 |
+| `audited_clean` | 1370 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1931 |
+| `unaudited` | 1930 |
 
 | claim_type | count |
 |---|---:|
@@ -86,8 +86,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 941 |
-| `leaf` | 1458 |
+| `medium` | 942 |
+| `leaf` | 1457 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -729,6 +729,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hw1_second_order_return_shape_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `i1_native_quadratic_static_source_normalization_bridge_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `i3_zero_exact_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `independent_generators_heldout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -10365,6 +10366,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **open / conditional deps cited:**
   - `LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`
   - `HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`
+- **auditor confidence:** high
+
+### `i1_native_quadratic_static_source_normalization_bridge_2026-06-08`
+
+- **Note:** [`I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite zero-mode-projected periodic Z^3 complete-square result for a supplied source-normalized quadratic static-source action, including the -g^2 s1 s2 G(r) cross term and use of the retained Z^3 Green-kernel asymptotic normalization.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T060857Z-5e491845-i1_native_quadratic_stat`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Completing the square gives L phi_* = g^2 J and S_eff[J] = -(g^2/2)<J,L^+J>, hence the two-source cross term V_cross(r) = -g^2 s_1 s_2 G(r).  _(class `A`)_
+- **chain closes:** True — For the supplied action, differentiating gives L phi = g^2 J, substituting the pseudoinverse solution gives the stated effective action, and bilinearity gives the cross term. The Green-kernel asymptotic is supplied by a retained_bounded authority, while physical source-coupling and energy-readout bridges are explicitly outside the audited scope.
+- **rationale:** The load-bearing mathematics is a complete-square algebraic identity over the stated finite-lattice quadratic action. The only cited non-axiom authority, the Z^3 Green-kernel normalization, is retained_bounded; the minimal-axioms citation is an accepted premise for the lattice substrate. The runner source performs finite FFT/matrix checks and boundary text guards, with no external comparator or tuned numerical input. Clean status is only for the bounded supplied-action theorem, not for physical source normalization or general energy readout.
 - **auditor confidence:** high
 
 ### `i3_zero_exact_theorem_note`

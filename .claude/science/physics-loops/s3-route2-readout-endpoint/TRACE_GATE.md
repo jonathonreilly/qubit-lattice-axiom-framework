@@ -1,14 +1,12 @@
-trace_class: negative_route_pruning
+trace_class: upstream_support
 target_claim_id: s3_time_theta_to_slice_coupling_note
-target_blocker_text: "The Route-2 endpoint triple (-1, -2, 21/4), equivalently the E-channel map entry beta_E/alpha_E = 21/4 or lambda = q_E/q_T = 9/4, remains underived."
+target_blocker_text: "The parent theta-to-slice row has an exact conditional family, but no unique theorem while the Route-2 readout endpoint entry rho_E remains underived."
 source_of_blocker_text: user_goal
-reachability_to_target: prunes
-artifact_role: no_go
-next_trace_action: "Try finite-frame/Riesz dual-leg derivation or a coefficient-selection principle; if still blocked, package theta-to-slice consequences of unresolved rho_E."
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "Use the firewall to separate rho-independent theta-to-slice consumers from E-center consumers that still inherit rho_E."
 
 # Trace Gate
 
-If true, block15 prunes the pure `O_h` nonseparable quadratic primitive route:
-`O_h` permits a three-dimensional map space from `Sym^2(E (+) T1)` to
-`E (+) T1`, so representation content alone cannot select `lambda=9/4`.
-The artifact does not close the endpoint triple.
+If true, block16 supports the direct theta-to-slice consumer by localizing the
+unresolved readout dependence. It does not close the upstream endpoint triple.

@@ -1,6 +1,6 @@
 # Literature Bridges
 
-None used in block15.
+None used in block16.
 
-The proof is finite-dimensional character arithmetic on the six-arm
-`O_h` representation and exact endpoint algebra from repo notes.
+The proof is exact readout algebra plus the repo's existing Route-2 slice
+semigroup runner.

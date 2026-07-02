@@ -2,29 +2,25 @@
 
 ## Minimal Allowed Premises
 
-- The exact Route-2 readout reduction:
-  `docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`.
-- The six-arm `O_h` star and its exact `A1 (+) E (+) T1` decomposition.
-- Character arithmetic for symmetric squares and tensor products.
-- The target rationals as comparison targets already named by the exact
-  readout map, not as proof inputs.
+- The exact Route-2 readout reduction and reduced family `P(rho_E)`.
+- The exact Route-2 slice backbone and conditional family
+  `Xi_P(t;c) = (P_R c) tensor V_R(t)`.
+- The parent theta-to-slice open-gate boundary.
+- The target `rho_E = 21/4` as a comparison value, not as a proof input.
 
 ## Forbidden Inputs
 
 - Observed quark masses or fitted CKM/CP data.
-- Nearest-rational selection from live numerical endpoints.
-- Any endpoint selector that inserts `rho_E = 21/4`.
-- Treating the existence of a mixed nonseparable map as a coefficient
-  selection theorem.
+- Nearest-rational selection from live endpoints.
+- Treating `rho_E = 21/4` as adopted.
+- Promoting the parent theta-to-slice row to a unique theorem.
 
-## Newly Exposed Import
+## Newly Isolated Dependency
 
-The nonseparable quadratic route needs a new primitive selecting reduced
-coefficients inside
+Only `E-center` carries the unresolved `rho_E` factor:
 
 ```text
-Hom_Oh(Sym^2(E (+) T1), E (+) T1).
+Xi_P(t ; E-center) = (1 + rho_E/6) e_E tensor V_R(t).
 ```
 
-That space has dimension `3`, so symmetry alone leaves the endpoint ratio
-underdetermined.
+`E-shell`, `T-shell`, and `T-center` are independent of `rho_E`.

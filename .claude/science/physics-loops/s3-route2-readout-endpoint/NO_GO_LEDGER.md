@@ -8,9 +8,11 @@
   free.
 
 - **Pure channel-metric route.**
-  Pending PR #4543: channel metrics on `E (+) T1` are
-  `c_E P_E + c_T P_T1`, with `c_E/c_T` free.
+  Pending PR #4543: channel metrics on `E (+) T1` have free `c_E/c_T`.
 
-- **Current block15: nonseparable quadratic equivariant map route.**
-  `Hom_Oh(Sym^2(E (+) T1), E (+) T1)` has dimension `3`; representation
-  content supplies a map space, not a unique endpoint selector.
+- **Nonseparable quadratic map route.**
+  Pending PR #4544: `Hom_Oh(Sym^2(E (+) T1), E (+) T1)` has dimension `3`;
+  representation content does not select the endpoint coefficient.
+
+- **Current block16 support boundary.**
+  Not a no-go: exact consumer firewall localizing `rho_E` to E-center.

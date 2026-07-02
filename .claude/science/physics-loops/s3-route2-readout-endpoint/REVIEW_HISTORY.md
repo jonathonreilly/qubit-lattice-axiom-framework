@@ -1,16 +1,15 @@
 # Review History
 
-## Block15 Local Review
+## Block16 Local Review
 
 Disposition: `local_pass_external_review_pending`.
 
 Checks performed before PR:
 
-- exact runner: `PASS=12 FAIL=0`;
-- exact readout map: `PASS=11 FAIL=0`;
-- kappa covariance no-go: `PASS=7 FAIL=0`;
-- quadratic covariance no-go: `PASS=11 FAIL=0`;
-- exact time coupling: `PASS=8 FAIL=0`;
+- exact runner: `PASS=10 FAIL=0`;
+- parent theta-to-slice runner: `PASS=12 FAIL=0`;
+- exact time-coupling runner: `PASS=8 FAIL=0`;
+- exact readout-map runner: `PASS=11 FAIL=0`;
 - bilinear tensor carrier: `PASS=4 FAIL=0`;
 - `py_compile`;
 - `git diff --check`;

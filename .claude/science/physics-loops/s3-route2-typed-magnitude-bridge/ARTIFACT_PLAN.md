@@ -1,0 +1,21 @@
+# Artifact Plan
+
+Deliverables:
+
+- `docs/QUARK_ROUTE2_TYPED_RCONN_MAGNITUDE_BRIDGE_NO_GO_NOTE_2026-06-21.md`
+- `scripts/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.py`
+- `outputs/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.txt`
+- loop pack in this directory
+
+Verification:
+
+```text
+python3 scripts/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.py
+python3 -m py_compile scripts/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_center_ratio_bridge_obstruction.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py
+git diff --check
+```

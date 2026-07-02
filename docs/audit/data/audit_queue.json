@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 281,
     "leaf": 584,
-    "medium": 470
+    "medium": 469
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17744,36 +17744,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
-        "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28",
-        "internal_external_su2_merger_from_universal_property_narrow_theorem_note_2026-05-27",
-        "per_site_su2_spin_half_theorem_note_2026-05-02",
-        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.459,
-      "note_path": "docs/KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_koide_adjoint_map_quotients_spinor_z2.py",
-      "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17940,15 +17910,44 @@
         "koide_q_readout_factorization_theorem_2026-04-22",
         "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
+      "load_bearing_score": 6.248,
       "note_path": "docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_fisher_rao_spherical_reorganization.py",
-      "transitive_descendants": 3
+      "transitive_descendants": 18
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
+        "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
+        "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
+        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 3.585,
+      "note_path": "docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/cl3_frame_free_ambient_chiral_grading_no_go_2026_06_02.py",
+      "transitive_descendants": 5
     },
     {
       "audit_independence_required": "any_non_self",
@@ -28920,35 +28919,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/audit_companion_bae_ncg_kodim_real_structure_partial_narrowing_2026_05_17.py",
-      "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "koide_generation_id_cl3_grade1_bridge_narrow_theorem_note_2026-06-02",
-        "cl3_chiral_body_diagonal_axis_forced_doublet_h_not_sourced_narrow_no_go_note_2026-06-04",
-        "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_anticommuting_operator_derivation_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.585,
-      "note_path": "docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/cl3_frame_free_ambient_chiral_grading_no_go_2026_06_02.py",
       "transitive_descendants": 5
     },
     {
@@ -49177,5 +49147,5 @@
     }
   ],
   "ready_count": 91,
-  "total_pending": 1636
+  "total_pending": 1635
 }

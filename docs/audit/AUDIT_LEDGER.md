@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 206 |
-| **retained_bounded** | 923 |
+| **retained_bounded** | 924 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1634 |
+| unaudited | 1633 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1345 |
+| `audited_clean` | 1346 |
 | `audited_conditional` | 42 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1960 |
+| `unaudited` | 1959 |
 
 | claim_type | count |
 |---|---:|
@@ -106,7 +106,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
-| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
+| 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
@@ -736,6 +736,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kms_fermionic_brydges_majorant_external_narrow_theorem_note_2026-05-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_anticommuting_operator_derivation_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10436,6 +10437,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The exact wall is {q*pi : q in Q} cap Q = {0}, so a nonzero pure rational such as 2/9 is not supplied as a literal radian by the listed finite periodic phase sources; finite Wilson/root-of-unity escape routes remain q*pi as well.  _(class `A`)_
 - **chain closes:** True — Within the bounded scope of the listed finite periodic phase sources and finite Wilson constructions, the chain closes by exact rational-pi arithmetic and the irrationality/transcendence wall for pi. The note explicitly does not claim Koide closure, P_A1 retention, or a no-go against future nonlisted bridge theorems.
 - **rationale:** The note's retained claim is negative and carefully bounded: periodic phase sources give rational multiples of pi, while the Brannen selected-line target is the pure rational 2/9 used as radians. The cached runner exits 0 with 36/36 PASS checks and verifies the finite-source, rational-witness, finite-Wilson, and A1-route-elimination arithmetic without promoting the missing Type-B-to-radian map. No one-hop dependencies are listed for the claim, and the source note's boundary language prevents the result from being overstated as charged-lepton Koide closure.
+- **auditor confidence:** high
+
+### `koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02`
+
+- **Note:** [`KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md`](../../docs/KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited the bounded algebraic claim that the natural SU(2)->SO(3) adjoint/Bloch/Hopf spinor-to-vector map, and SU(2)-equivariant maps into the vector representation, kill the central spinor sign z=-1; Gamma_chi is instead the image of a pi-rotation lift q_gc with q_gc^2=z.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T042938Z-d17517c9-koide_adjoint_map_quotie`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The adjoint/Bloch/Hopf map q -> (v -> q v q^{-1}) has kernel exactly {+1,-1}, so adjoint(z=-1)=I_3 and the spinor Z_2 is quotiented rather than transported to the R^3 Gamma_chi sign.  _(class `A`)_
+- **chain closes:** True — For unit quaternions, the conjugation action on Im(H) has kernel exactly the real unit quaternions {+1,-1}; q_gc=(0,1,1,1)/sqrt(3) maps to 2vv^T-I and squares to z. Thus z acts as identity on R^3 while Gamma_chi is a nontrivial SO(3) pi-rotation, so the two Z_2 structures are distinct under the bounded adjoint/rotation-equivariant scope.
+- **rationale:** The result is exact quaternion/SU(2) algebra over retained-grade cited inputs and does not use Q=2/3, observed data, or the full Koide bridge. The runner checks the main quaternion identities and Gamma_chi lift; although its random sampling is not a proof of the exact kernel, the independent centralizer argument supplies that proof. No-Go Discipline passes for the narrow claim because the note explicitly limits the closure to the adjoint/rotation-equivariant route and leaves non-equivariant frame-dependent glues open.
 - **auditor confidence:** high
 
 ### `koide_anticommuting_eigenvector_vs_eigenvalue_readout_reconciliation_note_2026-06-01`

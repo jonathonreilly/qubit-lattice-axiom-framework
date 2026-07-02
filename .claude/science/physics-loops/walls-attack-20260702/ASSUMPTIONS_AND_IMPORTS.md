@@ -115,3 +115,49 @@ families against it; the record-composition bridge is not established here.
 - No Record bridge, action selector, new axiom, or new primitive is assumed.
 - No horn of the extended-step / many-step-limit / rejected-bridge trichotomy
   is selected.
+
+## Block13
+
+**New bounded artifact:**
+
+- `docs/EXACT_QGEN_NOT_POSITIVE_ON_ZN_WRAPPED_GAUSSIAN_CORRECTION_BOUNDED_NOTE_2026-07-02.md`
+- `scripts/frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02.py`
+- `outputs/frontier_exact_qgen_wrapped_gaussian_correction_2026_07_02.txt`
+
+**Role:**
+
+- Closes the named finite positivity follow-up to Block10 for tested `Z_N`.
+  The finite convolution semigroup `P_t=exp(tL)` is positive for all `t>=0`
+  exactly when the off-diagonal entries of the symmetric circulant generator
+  are nonnegative at the level needed here.
+- Applies the small-time direction to the exact finite `Q-gen` generators:
+  `N=5` has a certified negative entry at displacement `2` for
+  `t_0=1/2000`, and `N=7` has one at displacement `2` for `t_0=1/5000`.
+- Separates the positive finite Gaussian object from exact `Q-gen`: the wrapped
+  Gaussian is positive by construction, while its `Z_5` characters have
+  certified theta corrections at the sampled rational times.
+
+**In-runner certified inputs:**
+
+- The finite Markov positivity lemma is implemented with the Metzler shift
+  construction and the explicit matrix-exponential remainder bound
+  `|R_ij| < 2 t^2 ||L||_infty^2` when `t ||L||_infty <= 1`.
+- For `N=5`, the runner uses Block10's
+  `w_2=1-3 sqrt(5)/5`, the exact bound `sqrt(5)>223/100`,
+  `||L||_infty<=10`, and certifies
+  `(exp(t_0 L))_{j+2,j} <= -69/2000000`.
+- For `N=7`, the runner uses the exact cubic for `2 cos(2*pi/7)` to certify
+  `|L_2|>1/2`, `||L||_infty<=28`, and
+  `(exp(t_0 L))_{j+2,j} <= -233/6250000`.
+- For the wrapped Gaussian on `Z_5`, the runner evaluates the dual theta
+  character ratio with truncated sums and Gaussian tail bounds, certifying
+  nonzero deviations of `-log c_n(t)` from `(t/2)n^2` for
+  `t in {1/5,1,2}` and `n in {1,2}`.
+
+**Imports deliberately not used:**
+
+- No literature theorem is imported.
+- No all-`N` positivity obstruction is claimed.
+- No Record bridge, action selector, new axiom, or new primitive is assumed.
+- No wrapped-Gaussian correction outside the sampled rational `Z_5` points is
+  promoted to a certified numerical claim.

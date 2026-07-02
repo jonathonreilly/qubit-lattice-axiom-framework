@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/native_carrier_registration_kernel_rate_vs_unit_variance_point_2026_07_02.py
-runner_sha256: 94313400eb6f05aff682705451be3a802e829a319e12ccf74a29a3d885089bd4
-timeout_sec: 180
+runner_sha256: c6e850f667f26bbbc8770425f3796bef89541eee684b0ebcc7198cc86560b4f1
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.80
+elapsed_sec: 2.66
 status: ok
 ----- stdout -----
 NATIVE FINITE-CARRIER REGISTRATION KERNEL RATE VS UNIT-VARIANCE POINT
@@ -46,7 +46,7 @@ SECTION B -- link carrier sectors
 [PASS] B2 sectors commute with left and right su(3) action generators
        max=5.439e-16
 [PASS] B3 constructed overlaps match the closed character formula
-       max=2.685e-15
+       max=3.004e-15
 SECTION C -- exact Weyl-grid kernel identities
 [PASS] C0 Haar density averages to 1 on the centered M=800 grid
        mean=1.000000000000
@@ -109,7 +109,7 @@ SECTION F -- source-boundary guards
 [PASS] F1 rigidity dependency marker is present
 [PASS] F1 controlled-copy dependency marker is present
 [PASS] F1 semigroup dependency marker is present
-[PASS] F2 note preserve marker: set only by the independent audit lane
+[PASS] F2 note preserve marker: independent audit lane only
 [PASS] F2 note preserve marker: parameter-free
 [PASS] F2 note preserve marker: zero-sum
 [PASS] F2 note preserve marker: does not derive that a record step occurs
@@ -122,8 +122,11 @@ SECTION F -- source-boundary guards
 [PASS] F2 note preserve marker: load-bearing for registration dynamics
 [PASS] F2 note preserve marker: 1 + chi_8(x)/2
 [PASS] F2 note preserve marker: w_8 = 1/16
+[PASS] F2 canonical source metadata: **Claim type:** bounded_theorem
+[PASS] F2 canonical source metadata: **Claim scope:** parameter-free native finite-carrier full-resolution
+[PASS] F2 canonical source metadata: **Status authority:** independent audit lane only.
 [PASS] F3 note and runner avoid forbidden status and closure phrases
-TOTAL: PASS=65 FAIL=0
+TOTAL: PASS=68 FAIL=0
 
 ----- stderr -----
 

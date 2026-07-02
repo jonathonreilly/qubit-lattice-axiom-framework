@@ -1,0 +1,47 @@
+A. Sweep inputs
+PASS: block31 note exists -- docs/QUARK_ROUTE2_RCONN_W1_EXPANDED_AUTHORITY_SWEEP_NO_GO_NOTE_2026-06-21.md
+PASS: block31 note states expanded authority sweep scope
+PASS: block31 note avoids repo-wide status change
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md exists -- docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md
+PASS: QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md
+PASS: RCONN_DERIVED_NOTE.md exists -- docs/RCONN_DERIVED_NOTE.md
+PASS: RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md exists -- docs/RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md
+PASS: EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md exists -- docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+
+B. Mixed paragraph sweep
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md mixed paragraph count -- count=10
+PASS: QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md mixed paragraph count -- count=13
+PASS: QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md mixed paragraph count -- count=7
+PASS: RCONN_DERIVED_NOTE.md mixed paragraph count -- count=0
+PASS: RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md mixed paragraph count -- count=1
+PASS: EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md mixed paragraph count -- count=0
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md mixed paragraph count -- count=0
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md mixed paragraph count -- count=0
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md mixed paragraph count -- count=0
+PASS: expanded bank has 31 mixed paragraphs -- count=31
+PASS: pure-domain authority files have no mixed W1 paragraph -- zero-hit files=5
+
+C. Disposition classifier
+PASS: all mixed paragraphs have non-positive local context -- unclassified=0
+PASS: no mixed paragraph is a positive current W1 bridge -- positive_like=0
+PASS: sweep includes at least one live-comparator disposition -- count=1
+PASS: sweep includes at least one downstream-firewall disposition -- count=1
+PASS: sweep includes missing-edge dispositions -- count=9
+PASS: sweep includes conditional/hypothetical dispositions -- count=10
+
+D. Graph and arithmetic cross-check
+PASS: current W9 inventory lacks W1 center path
+PASS: current W9 inventory lacks color-to-rho path
+PASS: adjoining W1 reaches center path
+PASS: adjoining W1 reaches endpoint target chain
+PASS: W1 missing bridge endpoints match expected nodes
+PASS: F_adj value is exact 8/9
+PASS: W1 value gives q_E=15/8 -- 15/8
+PASS: W1 value gives rho_E=21/4 -- 21/4
+
+TOTAL: PASS=37, FAIL=0
+Status: exact negative boundary for hidden one-hop W1 authority.

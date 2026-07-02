@@ -2,12 +2,9 @@
 
 ## Allowed Premises
 
-- Exact Route-2 endpoint algebra and the current W9 typed-edge inventory.
-- Granted T-side stretch values `q_T=5/6` and
-  `gamma_T(shell)/gamma_E(shell)=-2`.
-- Exact SU(3) adjoint channel count `F_adj=8/9`.
-- Current physical selector family
-  `R_phys(kappa_EW)=F_adj+kappa_EW(1-F_adj)`.
+- Existing Route-2/Rconn source notes in the expanded one-hop authority bank.
+- Current W9 typed-edge inventory and derived reverse endpoint algebra edges.
+- Exact T-side stretch values used by the current W1 target.
 - Exact rational arithmetic.
 
 ## Forbidden Inputs
@@ -16,13 +13,12 @@
 - Fitted Yukawa values.
 - CKM/J or endpoint-data target fitting.
 - Nearest-rational selection from live endpoint data.
-- Untyped identification of a color scalar with a Route-2 endpoint ratio.
-- Treating `kappa_EW=0` as current-surface input.
+- Treating conditional, missing-edge, comparator, or firewall paragraphs as
+  positive W1 authority.
 
-## Open Imports After Block30
+## Open Imports After Block31
 
-- W1: a typed algebraic source-domain bridge from the color scalar to
-  `c_TE=-8/9`.
-- W2: a physical connected-trace selector, if a positive route uses physical
-  `R_conn` rather than the exact channel count alone.
-- An equivalent E-center primitive selecting `q_E=15/8`.
+- A new W1 theorem.
+- An equivalent E-center primitive.
+- A future explicit authority that types the color scalar as the Route-2
+  signed center ratio.

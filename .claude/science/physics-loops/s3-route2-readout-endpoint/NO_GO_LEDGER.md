@@ -1,9 +1,17 @@
 # No-Go Ledger
 
-| Route | Prior result | Block04 consequence |
-|---|---|---|
-| Minimal Route-2 carrier naturality | Leaves `rho_E` free | Still stands |
-| Current-bank source-domain bridge | No typed edge from color support to `c_TE` | Still stands, now targeted as `c_TE=-R_phys(0)` |
-| Registration/positivity | Fixes norm or sign bounds, not readout direction | Still stands |
-| Endpoint quotient matching | Exact after `q_E=15/8`, but endpoint value not derived | Still stands |
-| Physical color readout without selector | `xi` remains free | Block04 maps `xi` directly to a `rho_E(xi)` family |
+## Block05: Naive Finite-Box Extrapolation
+
+Pruned route:
+
+```text
+15^3 measured match -> therefore q_E(N) is converging to 15/8.
+```
+
+Reason:
+
+The size-inferred replay reproduces the `15^3` calibration, but boxes `11^3`, `13^3`, and `17^3` are outside a broad target envelope, include sign/orientation conflicts, and do not form monotone convergence evidence.
+
+Scope:
+
+This does not refute a future size-stable/infinite-volume theorem. It only blocks citing the isolated `15^3` finite-box match as convergence evidence under the current parameterization.

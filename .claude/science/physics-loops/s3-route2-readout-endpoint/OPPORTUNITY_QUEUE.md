@@ -1,19 +1,19 @@
 # Opportunity Queue
 
-1. Directly derive the typed selector theorem
-   `c_TE=-R_phys(0)` in the Route-2 readout context.
-   - Highest value: would close the compressed bridge target.
-   - Main blocker: physical connected-selector semantics are not supplied.
+1. **Size-stable E-center lift family**
+   - Probability of retained-positive movement: medium.
+   - Missing imports: size-stable Schur trace, shell orbit normalization, tensor interpolation semantics.
+   - Runner availability: current block supplies first replay harness.
+   - Landability: good as next physics-loop PR if scoped to definition plus scan.
 
-2. Run the finite-box E-center lift extrapolation route.
-   - Highest value: tests whether the measured calibration tends to `15/8`.
-   - Main blocker: needs a stable size-parameterized module chain.
+2. **Non-finite-box covariance bridge for `q_E/q_T = 9/4`**
+   - Probability of retained-positive movement: medium-low.
+   - Missing imports: source-domain principle linking E-center and T-center lifts.
+   - Runner availability: exact arithmetic and source-domain no-go runners exist.
+   - Landability: high if it produces exact support or a narrow no-go.
 
-3. Derive or no-go the T-side candidate origins.
-   - Highest value: could remove conditional status from `s_TE=-2` and
-     `rho_T=-1`.
-   - Main blocker: not enough if E-center remains free.
-
-4. Audit-free source-bank inventory strengthening.
-   - Highest value: improves downstream review confidence.
-   - Main blocker: less likely to move the science than a selector theorem.
+3. **Reduced-shell anchor transition theorem**
+   - Probability of retained-positive movement: low-medium.
+   - Missing imports: orbit activation and boundary geometry analysis across sizes.
+   - Runner availability: this block exposes `N=9` anchor unavailability and nonmonotone rows.
+   - Landability: good as a boundary/no-go packet.

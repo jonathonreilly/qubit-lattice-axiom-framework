@@ -1,29 +1,19 @@
 # Route Portfolio
 
-## Selected route
+## Active Route: E-Center Lift Size-Scan Boundary
 
-Direct typed-edge sharpening:
+Parameterize the `SIZE=15` Schur/tensor path by inferring the Schur size from `phi_grid`, replay the canonical source-family endpoint ratios across viable odd boxes, and test whether the June 10 measured match can be used as finite-size convergence evidence.
 
-```text
-kappa = N_color/N_pair,
-s_TE = -N_pair,
-c_TE = s_TE/kappa^2 = -N_pair^3/N_color^2.
-```
+Outcome: bounded support plus narrow no-go for the naive extrapolation route.
 
-At the current source counts `(N_pair,N_color)=(2,3)`, this equals
-`-8/9=-F_adj`.
+## Next Candidate: Size-Stable Family Definition
 
-## Candidate routes considered
+Define a continuum-compatible Schur/shell/tensor replay that keeps the same semantic object across `N`, then rerun the E-center lift extrapolation on that family.
 
-| Route | Expected movement | Disposition |
-|---|---|---|
-| Source-count compressed bridge | Exact support for the typed edge target | selected |
-| Physical color selector family | Sharpens remaining selector import | included |
-| Finite-box E-center extrapolation | Could test measured calibration route | deferred |
-| Recombination of existing endpoint algebra | Low novelty after block03 | rejected |
+## Next Candidate: Non-Finite-Box Covariance Bridge
 
-## Why this route
+Try to derive `q_E/q_T = 9/4` from a source-domain covariance or typed color bridge independent of the finite-box scan.
 
-Block03 compressed the color bridge and covariance bridge into one edge. This
-route gives that edge a source-count form and shows exactly which selector
-remains missing.
+## Next Candidate: Anchor-Transition Analysis
+
+Explain whether the reduced-shell anchor/orbit geometry has a threshold or resonance that can make `N=15` special.

@@ -1,4 +1,3 @@
 # Literature Bridges
 
-No literature bridge was used in block04. The packet uses repo-internal
-authorities and exact rational arithmetic only.
+No external literature was used in block05. The block consumes only current repo notes, scripts, and stack-internal runner caches.

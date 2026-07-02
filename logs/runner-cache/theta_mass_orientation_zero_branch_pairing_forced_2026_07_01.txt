@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta_mass_orientation_zero_branch_pairing_forced_2026_07_01.py
-runner_sha256: cfe6c625a390f8ca72d13f66a7d19c581930b574579a48a843da0f49bf666bb1
-timeout_sec: 300
+runner_sha256: 51a1e316b3f18832078f31da3b67bd4bf5e1334b972e8654a18ef0c1d55e64b6
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -23,7 +23,7 @@ T1 — Case-A structure on every tested configuration
   [PASS] T1d [A] bipartite grading {eps, M_KS} = 0 exactly
   [PASS] T1e [A] kernel dimension is even  (d=1 n=8 free: kernel=0; d=2 L=4 free: kernel=0; d=2 L=4 Z2(seed 1): kernel=0; d=2 L=4 Z2(seed 2): kernel=2)
 T2 — det(M_KS + m I) for ALL real m: pairing formula, sign, evenness
-  [PASS] T2a [A] pairing formula det = prod(m^2 + lambda^2) * m^(2z) at machine precision on every config and mass  (worst |ratio - 1| = 7.33e-15)
+  [PASS] T2a [A] pairing formula det = prod(m^2 + lambda^2) * m^(2z) at machine precision on every config and mass  (worst |ratio - 1| = 1.59e-14)
   [PASS] T2b [A] det(M_KS + m I) > 0 for every tested real m of BOTH signs
   [PASS] T2c [A] det is an EVEN function of m: det(M+mI) = det(M-mI)
   [PASS] T2d [A] strict positivity specifically on the m < 0 half: the positive-mass convention is not load-bearing for the orientation  (min det over m<0 grid = 1.663e-04 > 0)
@@ -39,7 +39,7 @@ T5 — refutation: breaking the pairing (real symmetric perturbation)
   [PASS] T5b [C] at the same real mass the UNPERTURBED Case-A operator stays on the zero branch  (unperturbed det = 9.900e+07)
 T6 — refutation: non-K-real flavor block leaves {0, pi}
   [PASS] T6a [C] non-Hermitian flavor block: arg det leaves {0, pi} by a finite margin — K-reality is what discretizes the orientation  (arg det = 0.5112 rad, distance from {0, pi} = 0.5112)
-  [PASS] T6b [C] restoring Hermiticity returns arg det to 0 exactly  (arg det = 2.07e-16)
+  [PASS] T6b [C] restoring Hermiticity returns arg det to 0 exactly  (arg det = -7.80e-17)
 
 ========================================================================
 SUMMARY

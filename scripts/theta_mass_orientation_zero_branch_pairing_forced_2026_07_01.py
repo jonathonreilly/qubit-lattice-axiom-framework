@@ -19,6 +19,9 @@ Class-A finite checks (deterministic, no comparator):
 from __future__ import annotations
 
 import numpy as np
+import warnings
+
+AUDIT_TIMEOUT_SEC = 120
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -35,6 +38,13 @@ def check(name: str, condition: bool, detail: str = "") -> None:
         tag = "[FAIL]"
     suffix = f"  ({detail})" if detail else ""
     print(f"  {tag} {name}{suffix}")
+
+
+def det_quiet(matrix: np.ndarray) -> complex:
+    """Evaluate a determinant while suppressing overflow warnings from scans."""
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", RuntimeWarning)
+        return np.linalg.det(matrix)
 
 
 # ----------------------------------------------------------------------------
@@ -136,7 +146,7 @@ def test_T2_scalar_mass() -> None:
         n = M.shape[0]
         pos, zeros = paired_positive_and_zeros(M)
         for m in M_GRID:
-            d = float(np.linalg.det(M + m * np.eye(n)))
+            d = float(det_quiet(M + m * np.eye(n)).real)
             pred = float(np.prod(m * m + pos * pos)) * (m ** zeros)
             ratio_err = abs(d / pred - 1.0)
             worst_ratio = max(worst_ratio, ratio_err)
@@ -144,7 +154,7 @@ def test_T2_scalar_mass() -> None:
                 ok_formula = False
             if not d > 0.0:
                 ok_pos = False
-            d_flip = float(np.linalg.det(M - m * np.eye(n)))
+            d_flip = float(det_quiet(M - m * np.eye(n)).real)
             if abs(d - d_flip) > 1e-9 * abs(d):
                 ok_even = False
             if m < 0:
@@ -181,8 +191,8 @@ def test_T3_flavor_tensor() -> None:
         if np.min(ak) < 0:
             n_negroot += 1
         big = np.kron(M, np.eye(3)) + np.kron(np.eye(N), A)
-        d = np.linalg.det(big)
-        dfac = float(np.prod([np.linalg.det(M + x * np.eye(N)) for x in ak]))
+        d = det_quiet(big)
+        dfac = float(np.prod([det_quiet(M + x * np.eye(N)).real for x in ak]))
         err = abs(d / dfac - 1.0)
         worst = max(worst, err)
         if err > 1e-8:
@@ -198,7 +208,7 @@ def test_T3_flavor_tensor() -> None:
     A = brannen(1.0, 1.2, 0.3)
     ak = np.linalg.eigvalsh(A)
     big = np.kron(M, np.eye(3)) + np.kron(np.eye(N), A)
-    d = np.linalg.det(big).real
+    d = det_quiet(big).real
     check("T3c [A] explicit negative-root dial (a=1, |b|=1.2, delta=0.3): "
           "min eigenvalue < 0 AND composed det > 0", bool(np.min(ak) < 0 and d > 0),
           f"roots = {np.round(ak, 4)}, det = {d:.3e}")
@@ -211,8 +221,8 @@ def test_T4_squared_class() -> None:
         for babs in (0.2, 0.8, 1.2):
             for delta in (0.0, 0.3, 2.0):
                 A = brannen(a, babs, delta)
-                dA = np.linalg.det(A).real
-                d2 = np.linalg.det(A @ A).real
+                dA = det_quiet(A).real
+                d2 = det_quiet(A @ A).real
                 if abs(d2 - dA * dA) > 1e-9 * max(1.0, dA * dA):
                     ok_id = False
                 if dA < 0:
@@ -233,7 +243,9 @@ def test_T5_pairing_refutation() -> None:
     Dp = M + 0.8 * S
     found_m, found_d = None, None
     for m in np.linspace(-3.0, 3.0, 601):
-        d = float(np.linalg.det(Dp + m * np.eye(N)))
+        d = float(det_quiet(Dp + m * np.eye(N)).real)
+        if not np.isfinite(d):
+            continue
         if d < 0.0:
             found_m, found_d = float(m), d
             break
@@ -242,7 +254,7 @@ def test_T5_pairing_refutation() -> None:
           "the zero branch", found_m is not None,
           f"det = {found_d:.3e} at m = {found_m:.3f}" if found_m is not None else "none found")
     if found_m is not None:
-        d0 = float(np.linalg.det(M + found_m * np.eye(N)))
+        d0 = float(det_quiet(M + found_m * np.eye(N)).real)
         check("T5b [C] at the same real mass the UNPERTURBED Case-A operator "
               "stays on the zero branch", d0 > 0.0, f"unperturbed det = {d0:.3e}")
     else:
@@ -255,19 +267,19 @@ def test_T6_kreality_refutation() -> None:
     N = M.shape[0]
     Anr = brannen(1.0, 1.2, 0.3) + 0.5j * np.diag([1.0, -0.3, 0.2])
     big = np.kron(M, np.eye(3)) + np.kron(np.eye(N), Anr)
-    ang = float(np.angle(np.linalg.det(big)))
+    ang = float(np.angle(det_quiet(big)))
     dist = min(abs(ang), abs(abs(ang) - np.pi))
     check("T6a [C] non-Hermitian flavor block: arg det leaves {0, pi} by a "
           "finite margin — K-reality is what discretizes the orientation",
           dist > 0.1, f"arg det = {ang:.4f} rad, distance from {{0, pi}} = {dist:.4f}")
     Ah = brannen(1.0, 1.2, 0.3)
     bigh = np.kron(M, np.eye(3)) + np.kron(np.eye(N), Ah)
-    angh = float(np.angle(np.linalg.det(bigh)))
+    angh = float(np.angle(det_quiet(bigh)))
     check("T6b [C] restoring Hermiticity returns arg det to 0 exactly",
           abs(angh) < 1e-8, f"arg det = {angh:.2e}")
 
 
-def main() -> None:
+def main() -> int:
     print()
     print("=" * 72)
     print("THETA MASS-ORIENTATION ZERO BRANCH — PAIRING-FORCED ON K-REAL SURFACE")
@@ -295,7 +307,8 @@ def main() -> None:
     print(f"  TOTAL: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print(f"  OVERALL: {'PASS' if FAIL_COUNT == 0 else 'FAIL'}")
     print()
+    return 0 if FAIL_COUNT == 0 else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

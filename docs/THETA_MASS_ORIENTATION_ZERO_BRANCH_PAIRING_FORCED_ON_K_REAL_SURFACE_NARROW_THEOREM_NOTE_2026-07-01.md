@@ -25,7 +25,7 @@ set or predict an audit outcome and does not edit any audit-owned registry.
 
 ## Why this note exists
 
-The Tier-A `theta` admission's mass-side minimum statement localizes the
+The Tier-A `theta` registry row's mass-side minimum statement localizes the
 residual to "the discrete orientation `arg det M in {0, pi} -> 0` on the
 K-real reading, localized onto the named determinant-readout bridge"
 (`docs/audit/data/tier_a_admissions.json`, minimum form 2026-06-11). The
@@ -43,7 +43,7 @@ landed chain around that residual currently splits as:
   positive-mass convention, not a new derived axiom"
   (`STRONG_CP_OPERATOR_BASIS_AND_MASS_ORIENTATION_THEOREM_NOTE_2026-05-19.md`,
   Theorem 3.4);
-- the retained Case-A positivity theorem
+- the landed Case-A positivity theorem
   (`STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md`) proves
   `det(M_KS + m·I) > 0` for `m > 0` only, because `m > 0` was the
   load-bearing input its reflection-positivity consumer needed.
@@ -53,7 +53,7 @@ convention. This note removes that dependence: on the same Case-A surface the
 zero branch is forced by the `±iλ` pairing for BOTH signs of the mass, for
 every Hermitian flavor spectrum (signed Brannen roots included), and for the
 squared mass class identically. The orientation component of the mass-side
-residual is thereby discharged on this surface; what remains supplied is only
+residual is thereby removed on this surface; what remains supplied is only
 the determinant-channel readout identification itself (the K-real reading),
 not any orientation choice.
 
@@ -151,14 +151,14 @@ block with `arg det` bounded away from `{0, π}`. ∎
   which this note does not derive.
 - For the theta-bar assembly interface wall `W_mass_determinant_action`
   (named in the assembly bridge PR line), the ORIENTATION component is
-  discharged on this surface; the IDENTIFICATION component (that the
+  removed on this surface; the IDENTIFICATION component (that the
   physical mass determinant/action entry reads this supplied class) stands
   and is the next path this opens.
 - Wilson-shifted surfaces (`+ r·d·I`), non-commuting flavor-kinetic
   couplings (mass operators not acting purely on the flavor tensor factor),
   and the gauge side (`theta_gauge`, winding/multi-plaquette account) are
   outside this note's surface.
-- No Tier-A retirement, registry edit, or audit status is claimed or
+- No Tier-A registry action, registry edit, or audit status is claimed or
   predicted.
 
 ## Hypothesis set used

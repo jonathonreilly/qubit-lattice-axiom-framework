@@ -50,3 +50,18 @@ Dependency classes: kappa wall note (audited_clean / retained_no_go); block01
 note (stacked branch-local, unaudited — dependency_not_retained bookkeeping
 expected per SKILL); minimal axioms node (approved). No observed values, no
 fitted selectors, no literature, no new axioms/primitives.
+
+# Claim status certificate — block03 (C1a from registrability, partial)
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure_attempt_partial  # honest label: upstream_support toward C1; partial discharge of C1a conditional on R*
+reachability_to_target: partially_closes
+conditional_surface_status: C1a discharged conditional on registrability reading R* (transport of the unaudited in-repo registrability theorem's boundary); C1b open; R* flagged for audit adjudication
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "self-contained exact hw=1 argument; single named interpretive premise R*; upstream registrability source unaudited — dependency_not_retained expected"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

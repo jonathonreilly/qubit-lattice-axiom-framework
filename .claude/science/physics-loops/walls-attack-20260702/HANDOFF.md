@@ -35,3 +35,23 @@ block formalizes that equivalence, the two walls need one supplier.
 Lock: repo automation lock unavailable on this machine (script hardcodes
 /Users/jonreilly); branch-local supervisor lock = single campaign worktree
 /Users/jonBridger/tp-walls-campaign owned by one supervisor session.
+
+## Cluster-cap evaluation — before PR #3 in the carrier-measure family (block03)
+
+Prior cluster PRs: #4816 (block01, discriminator/separation), #4817 (block02,
+supplier decomposition). Proposed: block03 (partial supplier DERIVATION via
+registrability + N-gated narrow exclusion of imported-basis scorings).
+
+1. New load-bearing premise: YES — the registrability mechanism (R* transport
+   of the in-repo registrability theorem's supplied-context boundary) appears
+   in neither prior PR.
+2. Distinct claim type: YES — derivation-attempt + narrow negative vs
+   separation (01) and decomposition (02).
+3. Independent reviewability: YES — self-contained hw=1 argument + own runner;
+   stack dependency disclosed.
+4. Marginal review value: HIGH — if C1a's discharge survives audit even at
+   bounded level, the frame half of BOTH readout walls reduces to one
+   adjudication (R*), which is the campaign's largest claim-state movement.
+
+Verdict: **OPEN**. (Evaluator run locally by the supervising agent per SKILL —
+separate evaluator agent not used; recorded here as required.)

@@ -43,6 +43,40 @@ This block uses only the five user-named authorities below. The D4 conclusion is
 - No audit-lane file, publication file, registry, or public status surface is
   edited by this block.
 
+## Block03
+
+### Claim Shape
+
+- Target: C1a only, the no-imported-basis half of the C1 frame component.
+- Status: conditional-support, bounded by the named registrability reading R*;
+  C1b remains open.
+- R* is the single interpretive premise: a Record-readable scalar must be
+  additive over disjoint records and constant on unsupplied auxiliary-choice
+  orbits.
+- R* is not asserted as axiom content, primitive content, or registry content.
+
+### Cited Authorities
+
+| path | role | what is used | load-bearing for Block03 bounded theorem |
+|---|---|---|---|
+| `docs/ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md` | scoped precedent | The supplied-slot-model pattern: registrable scalar content is symmetric spectral content, and frame-dependent components are not registrable on the supplied frame orbit. Used as pattern only, not transportable generality. | yes |
+| `docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md` | Block01 sibling | The S1/S2/S3 rule definitions, Hadamard witnesses, and the no-imported-frame residual. Dependency class: stacked branch-local, unaudited. | yes |
+| `docs/SUPPLIED_READOUT_CONTEXT_TWO_COMPONENT_DECOMPOSITION_BOUNDED_NOTE_2026-07-02.md` | Block02 sibling | The C1/C2 decomposition and independence witnesses. Dependency class: stacked branch-local, unaudited. | yes |
+| `docs/MINIMAL_AXIOMS_2026-06-29.md` | axiom surface | Record locking, repeated-readout invariance, readability, finite additivity, and the open-gates boundary for measurement basis/context selection. | yes |
+| `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` | primitive surface | Pointwise evaluation at one supplied law-admissible realized state; no state content, averaging, probability, typicality, or value is supplied. | yes |
+
+### Import Firewall
+
+- No imported basis is promoted to supplied structure.
+- No `Y`-dependent partition is excluded; C1b remains open.
+- No C2 weighting rule or `kappa_EW` value is supplied.
+- No probability, Born rule, observed target value, fitted selector, or state
+  selector is imported.
+- No new axiom, primitive, admission, normalization, dictionary, or occupancy
+  cell is introduced.
+- No audit-lane file, publication file, registry, or public status surface is
+  edited by this block.
+
 ## Block02
 
 **Date:** 2026-07-02

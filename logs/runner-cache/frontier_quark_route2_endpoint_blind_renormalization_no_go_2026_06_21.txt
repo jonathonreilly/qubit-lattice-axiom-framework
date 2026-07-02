@@ -1,0 +1,36 @@
+Route-2 endpoint-blind renormalization no-go
+======================================================================================
+Parsed source cache: logs/runner-cache/frontier_quark_route2_qe_box_size_scan_2026_06_10.txt
+
+Box-scan ratios
+N    q_T         q_E         lambda=q_E/q_T   common->q_T gives q_E   common->q_E gives q_T   E/T counterterm
+----------------------------------------------------------------------------------------------------------------------
+11  +0.90206   +0.84613   +0.93800        +0.78166              +1.99894              +2.39873
+13  +0.87009   -0.03887   -0.04467        -0.03723              -41.97115              -50.36538
+15  +0.83333   +1.87625   +2.25151        +1.87626              +0.83277              +0.99933
+17  -0.19680   -5.83700   +29.65955        +24.71629              +0.06322              +0.07586
+19  -0.81228   -7.45520   +9.17812        +7.64843              +0.20429              +0.24515
+21  -1.31647   -8.67461   +6.58930        +5.49108              +0.28455              +0.34146
+25  -2.08540   -10.37720   +4.97612        +4.14677              +0.37680              +0.45216
+29  -2.65468   -11.52705   +4.34216        +3.61847              +0.43181              +0.51818
+[CACHE] PASS: the box-size scan cache parses the Route-2 q_E/q_T rows needed for the renormalization boundary
+    parsed N = 11, 13, 15, 17, 19, 21, 25, 29
+[EXACT] PASS: separable endpoint-blind finite-box renormalizations preserve lambda=q_E/q_T exactly
+    q_E'=(r_center/r_shell) q_E; q_T'=(r_center/r_shell) q_T; lambda'=g_e_center*g_t_shell/(g_e_shell*g_t_center)
+[EXACT] PASS: the endpoint target pair is equivalent to lambda=9/4 and rho_E=21/4
+    q_T=5/6, q_E=15/8, lambda=9/4, center T/E=-8/9, rho_E=21/4
+[NO-GO] PASS: the live box-scan lambda is near 9/4 only at the N=15 pinning box, not in the bulk rows
+    near-target rows: N=15: q_T=+0.83333, q_E=+1.87625, lambda=+2.25151, C_lambda=+0.99933; bulk min gap=2.092
+[NO-GO] PASS: a common endpoint factor can fix one target ratio in the bulk only by breaking the other
+    fix q_T -> q_E values: N=17: u=-4.234, q_E'=+24.716, N=19: u=-1.026, q_E'=+7.648, N=21: u=-0.633, q_E'=+5.491, N=25: u=-0.400, q_E'=+4.147, N=29: u=-0.314, q_E'=+3.618; fix q_E -> q_T values: N=17: u=-0.321, q_T'=+0.063, N=19: u=-0.252, q_T'=+0.204, N=21: u=-0.216, q_T'=+0.285, N=25: u=-0.181, q_T'=+0.377, N=29: u=-0.163, q_T'=+0.432
+[NO-GO] PASS: bulk q_E has the wrong sign, so a positive endpoint-factor normalization cannot rescue q_E=15/8
+    required q_E factors: N=17: -0.321, N=19: -0.252, N=21: -0.216, N=25: -0.181, N=29: -0.163
+[BOUNDARY] PASS: the only algebraic rescue is a nonseparable E/T center-shell counterterm, i.e. a new readout primitive
+    C_lambda(N)=(9/4)/lambda(N): N=17: +0.076, N=19: +0.245, N=21: +0.341, N=25: +0.452, N=29: +0.518
+[FIREWALL] PASS: the paired note carries the claim-status and forbidden-import firewall
+    required boundary phrases present
+
+Verdict:
+Endpoint-blind/separable finite-box renormalizations cannot rescue the Route-2 endpoint triple. They preserve lambda=q_E/q_T, and the live bulk lambda rows miss 9/4.  A rescue therefore needs a nonseparable E-specific center/shell counterterm, which is the missing E-center readout datum rather than a harmless size-stable normalization.
+
+TOTAL: PASS=8 FAIL=0

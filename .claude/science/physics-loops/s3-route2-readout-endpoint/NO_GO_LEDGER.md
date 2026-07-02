@@ -1,17 +1,23 @@
 # No-Go Ledger
 
-## Block05: Naive Finite-Box Extrapolation
+## Block06: Endpoint-Blind Renormalization Rescue
 
 Pruned route:
 
 ```text
-15^3 measured match -> therefore q_E(N) is converging to 15/8.
+finite-box size-stable renormalization -> rescue q_E=15/8 without new readout primitive
 ```
 
 Reason:
 
-The size-inferred replay reproduces the `15^3` calibration, but boxes `11^3`, `13^3`, and `17^3` are outside a broad target envelope, include sign/orientation conflicts, and do not form monotone convergence evidence.
+Any separable endpoint-blind renormalization
+
+```text
+gamma_X(endpoint;N) -> c_X(N) r_endpoint(N) gamma_X(endpoint;N)
+```
+
+preserves `lambda=q_E/q_T`. The endpoint target requires `lambda=9/4`, but the box-scan cache has bulk `lambda` far from `9/4`. Therefore this class cannot rescue the endpoint triple.
 
 Scope:
 
-This does not refute a future size-stable/infinite-volume theorem. It only blocks citing the isolated `15^3` finite-box match as convergence evidence under the current parameterization.
+This does not rule out a future nonlinear tensor observable or explicitly derived nonseparable covariance primitive. It only rules out hiding the missing E-center datum inside endpoint-blind normalization.

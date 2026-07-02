@@ -1,19 +1,19 @@
 # Opportunity Queue
 
-1. **Size-stable E-center lift family**
-   - Probability of retained-positive movement: medium.
-   - Missing imports: size-stable Schur trace, shell orbit normalization, tensor interpolation semantics.
-   - Runner availability: current block supplies first replay harness.
-   - Landability: good as next physics-loop PR if scoped to definition plus scan.
-
-2. **Non-finite-box covariance bridge for `q_E/q_T = 9/4`**
+1. **Nonseparable E/T covariance primitive**
    - Probability of retained-positive movement: medium-low.
-   - Missing imports: source-domain principle linking E-center and T-center lifts.
-   - Runner availability: exact arithmetic and source-domain no-go runners exist.
-   - Landability: high if it produces exact support or a narrow no-go.
+   - Missing imports: a named source/tensor law that changes `lambda` rather than rescaling both channels.
+   - Runner availability: exact endpoint algebra and block06 renormalization boundary.
+   - Landability: high if scoped as exact support or narrow no-go.
 
-3. **Reduced-shell anchor transition theorem**
+2. **New nonlinear tensor observable**
    - Probability of retained-positive movement: low-medium.
-   - Missing imports: orbit activation and boundary geometry analysis across sizes.
-   - Runner availability: this block exposes `N=9` anchor unavailability and nonmonotone rows.
-   - Landability: good as a boundary/no-go packet.
+   - Missing imports: functional definition, source-domain admissibility, and endpoint proof.
+   - Runner availability: tensor and Route-2 helper stack.
+   - Landability: moderate if it produces a falsifier or bounded support packet.
+
+3. **Direct `Theta_R -> Lambda_R` consumer firewall**
+   - Probability of retained-positive movement: medium for support/no-go.
+   - Missing imports: none beyond existing readout/time coupling notes.
+   - Runner availability: `frontier_s3_time_theta_to_slice_coupling.py`.
+   - Landability: high as a precise consumer-side ambiguity narrowing packet.

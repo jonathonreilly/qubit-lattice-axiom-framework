@@ -1,18 +1,18 @@
 # Handoff
 
-## Block05 Summary
+## Block06 Summary
 
-This block turns the June 10 "box-size scan" follow-up into an executable boundary result. The runner patches the tensor Schur action locally to infer its size from `phi_grid`, then replays the E-center lift at sizes 9, 11, 13, 15, and 17.
+This block proves a narrow size-stability boundary. Endpoint-blind/separable finite-box renormalizations preserve `lambda=q_E/q_T`, so they cannot rescue the endpoint triple unless the unrenormalized finite-box family already has `lambda=9/4`.
 
-The `15^3` row reproduces the landed measured calibration. The neighboring executable rows do not support using that match as convergence evidence: they are outside the endpoint envelope, include sign/orientation conflicts, and fail monotone convergence behavior.
+The existing box-size scan has bulk `lambda` far from `9/4`. Therefore a valid positive rescue must supply a nonseparable E/T center-shell covariance primitive, not a harmless normalization.
 
 ## Honest Status
 
-Actual current-surface status: bounded-support.
+Actual current-surface status: no-go.
 
 Trace class: negative_route_pruning.
 
-This prunes only the route "15^3 match implies finite-size convergence." It does not refute a future size-stable/infinite-volume theorem and does not close the `rho_E = 21/4` endpoint.
+This prunes only endpoint-blind/separable finite-box renormalization. It does not rule out a future nonlinear tensor observable or derived nonseparable covariance primitive.
 
 ## PR Policy
 
@@ -20,23 +20,23 @@ Do not push to main. Do not refresh previous PR branches to main. Do not check c
 
 ## PR
 
-Opened PR #4534:
+Opened PR #4535:
 
 ```text
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4534
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4535
 ```
 
 Identity-only verification:
 
 ```text
-number=4534
-url=https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4534
-title=[physics-loop] s3-route2-readout-endpoint block05 bounded-support
-headRefName=physics-loop/s3-route2-readout-endpoint-block05-20260621
+number=4535
+url=https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4535
+title=[physics-loop] s3-route2-readout-endpoint block06 no-go
+headRefName=physics-loop/s3-route2-readout-endpoint-block06-20260621
 baseRefName=main
 state=OPEN
 ```
 
 ## Next Exact Action
 
-Continue the campaign to the next ranked science target if runtime remains. Best next target: define a size-stable Schur/shell/tensor family and rerun the E-center extrapolation there; fallback to a non-finite-box covariance bridge for `q_E/q_T = 9/4`.
+Continue the campaign to the next ranked science target if runtime remains. Best next target: derive a nonseparable E/T center-shell covariance primitive; fallback to the direct `Theta_R -> Lambda_R` consumer ambiguity packet.

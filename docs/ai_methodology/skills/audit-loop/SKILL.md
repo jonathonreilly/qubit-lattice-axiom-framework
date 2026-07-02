@@ -384,6 +384,32 @@ Answer these before choosing a verdict:
 - Would a hostile specialist be able to reject the conclusion without making a mistake?
 - If the claim is a `no_go`, a wall-naming `bounded_theorem`, or its rationale would cite walls: have at least 5 distinct attack routes against the no-go been considered (N1)? Are the named walls actually independent (N2)? Are any hidden in "bridge context" / "we assume" / "standard QFT" / "registered" prose (N3)? Do cited witness residuals match the claim's residual (N4)? Are "X is not a Y-fact" phrases verified at every named resolution (N5)? Is the "needs new axiom" framing actually a convention-reframe / labeling ratification (N6)? Can a steelman against the no-go be made convincing (N7)? Has a structurally similar prior wall been retired by a mechanism not considered here (N8)? See `no-go-discipline` skill.
 
+## Law-Domain Audit Procedure
+
+(Relocated from the AXIOM_MINIMALITY_POLICY section 6 reading notes,
+2026-07-02, under the owner rule that process lives in procedural docs while
+semantic content lives in axiom text or audited derivations. This section is
+audit process only; it carries no premise or interpretive weight.)
+
+When a claim's law domain (a supplied condition) is audited:
+
+- **Certificate demand.** Ask for the condition's certificate: its
+  derivation, bridge, explicit admission, or approved primitive registration.
+  A condition with no certificate does not enter as load-bearing content.
+- **Covariance transport.** Transport the condition under lattice motions and
+  check the selected state sets move covariantly; a condition whose selected
+  sets are not motion-covariant is flagged against the motion-closure theorem
+  rather than silently accepted.
+- **Decidability from record readouts.** The condition must be decidable from
+  record readouts without running the law it gates.
+- **Finite/local evaluability.** On the infinite lattice some conditions are
+  refutable but not verifiable; finite/local evaluability is audit practice,
+  not axiom content — audit at the finite ranges the runner exercises and say
+  so.
+- **Extensional judgment.** Judge a condition by the set of states it
+  selects, never by its wording; co-extensional conditions receive one
+  verdict (interface theorem in the final derivation note).
+
 ## Verdict Rules
 
 Use the audit-lane verdict enum exactly:

@@ -1,0 +1,129 @@
+===== runner cache v1 =====
+runner: scripts/native_carrier_registration_kernel_rate_vs_unit_variance_point_2026_07_02.py
+runner_sha256: 94313400eb6f05aff682705451be3a802e829a319e12ccf74a29a3d885089bd4
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.80
+status: ok
+----- stdout -----
+NATIVE FINITE-CARRIER REGISTRATION KERNEL RATE VS UNIT-VARIANCE POINT
+========================================================================
+SECTION A -- native taste-cube structure
+[PASS] A1 selected-axis involutions square to identity
+[PASS] A1 selected-axis su(2) commutators close cyclically
+[PASS] A2 residual base swap commutes with selected-axis X2 and Z2
+[PASS] A3 joint commutant of X2, Z2, tau has dimension 10
+       dim=10
+[PASS] A3 rejector: commutant of X2, Z2 alone has dimension 16
+       dim=16
+[PASS] A4 base swap splits C^4 into dimensions 3 and 1
+       plus=3, minus=1
+[PASS] A5 embedded generators close with the 3x3-computed su(3) constants
+       max=3.598e-16
+[PASS] A5 spot commutators use the same computed structure constants
+       max=3.598e-16
+[PASS] A5 Casimir spectrum is 4/3 x6 and 0 x2
+       4/3=6, 0=2
+[PASS] A6 derived su(3) generators commute with X2, Z2, and tau
+       max=0.000e+00
+SECTION B -- link carrier sectors
+[PASS] B0 rational Casimir projector equals spectral projector
+       norm=0.000e+00
+[PASS] B0 P3 is Hermitian
+       norm=0.000e+00
+[PASS] B0 P3 is idempotent
+       norm=3.140e-16
+[PASS] B0 P1 is Hermitian
+       norm=0.000e+00
+[PASS] B0 P1 is idempotent
+       norm=3.140e-16
+[PASS] B1 sector projectors are orthogonal projectors
+       proj=1.256e-15, orth=7.692e-16
+[PASS] B1 sector projectors sum to I_64
+       norm=0.000e+00
+[PASS] B1 sector traces are 36, 12, 12, 4
+       ['33', '31', '13', '11']=[36, 12, 12, 4]
+[PASS] B2 sectors commute with left and right su(3) action generators
+       max=5.439e-16
+[PASS] B3 constructed overlaps match the closed character formula
+       max=2.685e-15
+SECTION C -- exact Weyl-grid kernel identities
+[PASS] C0 Haar density averages to 1 on the centered M=800 grid
+       mean=1.000000000000
+[PASS] C1 T_V forms agree: (|chi_3|^2+1)/2 equals 1 + chi_8/2
+       max=1.110e-16
+[PASS] C2 native registration density normalizes to 1
+       mean=1.000000000000
+[PASS] C2 identity-readout density normalizes to 1
+       mean=1.000000000000
+[PASS] C3 native registration density is bounded below by 1/2
+       min=0.500002572151
+[PASS] C4 w_8(T_V) equals 1/16
+       w8=0.062500000000
+[PASS] C4 w_3(T_V) vanishes
+       w3=-3.790e-18+0.000e+00j
+[PASS] C4 w_3(T_id) equals 1/6
+       w3=0.166666666667
+[PASS] C4 w_8(T_id) equals 1/16
+       w8=0.062500000000
+[PASS] C5 sampled spectral coefficients have negligible imaginary parts
+       max_imag=7.579e-18
+SECTION D -- parameter-free numbers
+[PASS] D0 M=800 and M=1600 total moments agree
+       M800=2.440630852161, M1600=2.440630852155
+[PASS] D0 M=800 and M=1600 floor moments agree
+       M800=1.835061284713, M1600=1.835061284711
+[PASS] D0 M=800 and M=1600 increments agree
+       M800=0.605569567448, M1600=0.605569567444
+[PASS] D0 M=800 and M=1600 naive moments agree
+       M800=2.411845544735, M1600=2.411845544718
+[PASS] D0 M=800 and M=1600 pi-squared identities agree
+       M800=9.869604401089, M1600=9.869604401089
+[PASS] D1 m^2(T_V) equals the external anchor
+       2.440630852
+[PASS] D2 m^2(T_id) equals the external anchor
+       1.835061285
+[PASS] D3 registration-attributable increment equals the external anchor
+       0.605569567
+[PASS] D4 naive-branch native moment equals the sensitivity anchor
+       2.411845545
+[PASS] D5 naive-branch |chi_3|^2 identity equals pi^2
+       observed=9.869604401089, pi^2=9.869604401089
+[PASS] D6 total moment is more than one unit above the unit point
+       m2_total=2.440630852
+[PASS] D6 readout floor is above 1.5
+       m2_floor=1.835061285
+[PASS] D6 registration-attributable increment is below 0.7
+       increment=0.605569567
+       tau_native=1.220315426; beta_map=2.458380789
+[PASS] D7 Monte Carlo cross-check agrees with Weyl-grid total
+       MC/4=2.441121651, grid=2.440630852, diff=4.908e-04
+SECTION E -- Schur contrast
+[PASS] E1 triplet-only registration and identity kernels agree
+       max=0.000e+00
+[PASS] E1 native 3+1 carrier differs by exactly the killed w_3 block
+       w3_id=0.166666666667, w3_reg=-0.000000000000
+SECTION F -- source-boundary guards
+[PASS] F0 note and four dependency notes exist
+[PASS] F1 graph-first dependency marker is present
+[PASS] F1 rigidity dependency marker is present
+[PASS] F1 controlled-copy dependency marker is present
+[PASS] F1 semigroup dependency marker is present
+[PASS] F2 note preserve marker: set only by the independent audit lane
+[PASS] F2 note preserve marker: parameter-free
+[PASS] F2 note preserve marker: zero-sum
+[PASS] F2 note preserve marker: does not derive that a record step occurs
+[PASS] F2 note preserve marker: not a citation-graph dependency
+[PASS] F2 note preserve marker: does not claim:
+[PASS] F2 note preserve marker: an audit verdict or any effective-status promotion
+[PASS] F2 note preserve marker: refutes the single named route
+[PASS] F2 note preserve marker: readout floor
+[PASS] F2 note preserve marker: registration-attributable
+[PASS] F2 note preserve marker: load-bearing for registration dynamics
+[PASS] F2 note preserve marker: 1 + chi_8(x)/2
+[PASS] F2 note preserve marker: w_8 = 1/16
+[PASS] F3 note and runner avoid forbidden status and closure phrases
+TOTAL: PASS=65 FAIL=0
+
+----- stderr -----
+

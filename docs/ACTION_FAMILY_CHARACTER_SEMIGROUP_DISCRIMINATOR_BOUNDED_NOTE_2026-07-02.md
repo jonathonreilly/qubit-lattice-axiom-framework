@@ -3,14 +3,12 @@
 **Date:** 2026-07-02  
 **Type:** bounded support (finite-beta discriminator + exact characterization)  
 **Claim type:** bounded_theorem  
-**Status:** source proposal / bounded-support artifact. This note does not set an
-audit outcome and does not select an action.
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
 **Paired runner:**
 [`scripts/frontier_action_family_character_semigroup_discriminator_2026_07_02.py`](../scripts/frontier_action_family_character_semigroup_discriminator_2026_07_02.py)  
 **Cached output:**
-[`outputs/frontier_action_family_character_semigroup_discriminator_2026_07_02.txt`](../outputs/frontier_action_family_character_semigroup_discriminator_2026_07_02.txt)
+[`logs/runner-cache/frontier_action_family_character_semigroup_discriminator_2026_07_02.txt`](../logs/runner-cache/frontier_action_family_character_semigroup_discriminator_2026_07_02.txt)
 
 ## Purpose
 
@@ -62,11 +60,15 @@ The candidate families are:
   image-periodized Gaussian has pure Gaussian character coefficients and is
   therefore not the finite-window Manton witness used for T3.
 
-Conditional source context from the unaudited relocation note: it records the
-normalization line **"(`t = 2N_c/β`, Manton coefficient = Wilson's small-field coefficient)"**
-and scopes the older no-go by saying the verdict is **"scoped to the regulator reading"**
-and that action selection is a **"well-posed open physical question"**. It also
-states the load-bearing open question: **"Whether it is the framework's emergent-time generator (RECORD axiom: time = monotone record accumulation) is the load-bearing open question, not asserted here."**
+Conditional source context from the unaudited
+[`ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md`](ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md):
+it records the normalization line **"(`t = 2N_c/β`, Manton coefficient =
+Wilson's small-field coefficient)"** and scopes the older no-go by saying the
+verdict is **"scoped to the regulator reading"** and that action selection is a
+**"well-posed open physical question"**. It also states the load-bearing open
+question: **"Whether it is the framework's emergent-time generator (RECORD
+axiom: time = monotone record accumulation) is the load-bearing open question,
+not asserted here."**
 
 ## T1 — the n^2-law characterizes the HK parameterization
 

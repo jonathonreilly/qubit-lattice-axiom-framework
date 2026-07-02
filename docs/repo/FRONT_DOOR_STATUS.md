@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1516 |
-| Retained-grade rows, including boxed decorations | 1398 |
+| Applied audit verdicts | 1517 |
+| Retained-grade rows, including boxed decorations | 1399 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 207 |
-| Retained bounded rows | 925 |
+| Retained bounded rows | 926 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1630 |
+| Unaudited rows | 1629 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 43 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1632 |
+| Total pending rows | 1631 |
 | Ready rows | 88 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
-| Medium pending | 466 |
+| Medium pending | 465 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23`](../../docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md) - medium; unaudited
 - [`cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02`](../../docs/CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 - [`record_local_finite_atom_availability_narrow_theorem_note_2026-06-17`](../../docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 - [`car_from_positivity_neutrality_note_2026-06-02`](../../docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08`](../../docs/CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
+- [`wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -1,10 +1,10 @@
 loop_slug: s3-route2-readout-endpoint
-block: 29
+block: 30
 date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block29-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block30-20260621
 base: main
-base_commit: 7a6e5600f
-worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block29-20260621
+base_commit: 164cc2461
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block30-20260621
 mode: campaign
 user_constraints:
   - do_not_run_audit_or_apply_verdicts
@@ -12,39 +12,39 @@ user_constraints:
   - do_not_push_to_main
   - do_not_refresh_existing_prs_to_main
   - do_not_check_pr_conflicts_or_mergeability
-active_route: e_center_selector_fanout_no_go
+active_route: rconn_two_gate_source_bridge_factorization
 actual_current_surface_status: no-go
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 artifact_role: runner_certificate
-target_blocker: "can E-center-visible endpoint-matrix naturality select rho_E without the signed center-ratio bridge?"
-claim_movement: "prunes endpoint-matrix selector naturality and localizes target selection to a typed signed center-ratio/source-domain bridge"
+target_blocker: "can kappa_EW=0 alone supply the Route-2 signed center-ratio bridge?"
+claim_movement: "prunes the W2-only endpoint route and localizes the remaining bridge to W1 or an equivalent E-center primitive"
 files_touched:
-  - docs/QUARK_ROUTE2_E_CENTER_SELECTOR_FANOUT_NO_GO_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.py
-  - outputs/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.txt
-  - outputs/frontier_quark_route2_e_center_blindness_no_go_block29.txt
-  - outputs/frontier_quark_route2_exact_readout_map_block29.txt
+  - docs/QUARK_ROUTE2_RCONN_TWO_GATE_SOURCE_BRIDGE_FACTORIZATION_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.py
+  - outputs/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.txt
+  - outputs/frontier_rconn_kappa_ew_register_not_read_block30.txt
+  - outputs/frontier_quark_route2_exact_readout_map_block30.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 open_imports:
-  - signed center-ratio theorem
-  - typed source-domain rule
-  - equivalent E-center readout primitive
+  - W1 source-domain theorem
+  - equivalent E-center primitive
+  - physical W2 selector if a positive route uses physical Rconn
 verification:
-  block_runner: "PASS=26 FAIL=0"
-  e_center_blindness_parent: "PASS=14 FAIL=0"
-  e_channel_naturality_parent: "PASS=28 FAIL=0 (output not carried; generated text trips generic overclaim grep)"
-  source_domain_bridge_parent: "PASS=103 FAIL=0 (output not carried; generated text trips generic overclaim grep)"
+  block_runner: "PASS=49 FAIL=0"
+  parent_source_domain_bridge: "PASS=103 FAIL=0 (output not carried; historical generated text trips broad wording scans)"
+  parent_typed_bridge: "PASS=62 FAIL=0 (output not carried; parent packet is not a block30 artifact)"
+  parent_kappa_open_gate: "PASS=20 FAIL=0"
   exact_readout_map_parent: "PASS=11 FAIL=0"
   py_compile: pass
-review_verdict: not_run_by_user_constraint
+review_verdict: branch_local_pass_no_audit
 pr_status: open
 pr_identity:
-  number: 4558
-  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4558
-  title: "[physics-loop] s3-route2-readout-endpoint block29 no-go"
-  headRefName: physics-loop/s3-route2-readout-endpoint-block29-20260621
+  number: 4559
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4559
+  title: "[physics-loop] s3-route2-readout-endpoint block30 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block30-20260621
   baseRefName: main
   state: OPEN
-next_exact_action: "continue toward a typed source-domain bridge or alternate E-center primitive"
+next_exact_action: "attack W1 directly or search for an equivalent E-center primitive"
 stop_condition: null

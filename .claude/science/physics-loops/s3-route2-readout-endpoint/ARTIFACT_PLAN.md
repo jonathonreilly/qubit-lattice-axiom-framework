@@ -1,20 +1,15 @@
 # Artifact Plan
 
-## Delivered In Block29
+## Block30 Artifacts
 
-- Note:
-  `docs/QUARK_ROUTE2_E_CENTER_SELECTOR_FANOUT_NO_GO_NOTE_2026-06-21.md`
-- Runner:
-  `scripts/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.py`
-- Outputs:
-  block29 runner output plus selected parent output captures. Two parent
-  outputs are intentionally not carried because their generated wording trips
-  the generic overclaim grep despite reporting `FAIL=0`; their PASS counts are
-  recorded in `HANDOFF.md`.
-- Loop pack under this directory.
+- `docs/QUARK_ROUTE2_RCONN_TWO_GATE_SOURCE_BRIDGE_FACTORIZATION_NOTE_2026-06-21.md`
+- `scripts/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.py`
+- `outputs/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.txt`
+- Branch-local loop pack under
+  `.claude/science/physics-loops/s3-route2-readout-endpoint/`
 
-## Not Delivered
+## Verification Plan
 
-- No repo-wide status weaving.
-- No live review queue edits.
-- No endpoint promotion.
+Run the new runner, relevant parent runners, and Python syntax compilation.
+Do not run audits, do not apply verdicts, and do not update repo-wide status
+surfaces.

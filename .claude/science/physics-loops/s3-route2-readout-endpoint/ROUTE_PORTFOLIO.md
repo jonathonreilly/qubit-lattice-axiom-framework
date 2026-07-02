@@ -1,24 +1,22 @@
 # Route Portfolio
 
-## Block29 Route Chosen
+## Block30 Route
 
-**E-center-visible endpoint selector fan-out.**
+**Two-gate Rconn/source bridge factorization**
 
-The route allows selectors that see the E-center lift `q_E`, then tests exact
-endpoint-matrix symmetry equations. It prunes the idea that E-center visibility
-alone selects the target.
+- Target movement: prune a conflation route and sharpen the remaining bridge.
+- Expected status: no-go for the W2-only endpoint route.
+- Runner availability: high.
+- Blast radius: narrow branch-local note and runner.
 
 ## Remaining Routes
 
-1. **Typed source-domain bridge theorem attempt.**
-   Try to type a path from the color/source scalar to the signed center ratio.
-
-2. **Equivalent E-center readout primitive.**
-   Search for a support/readout primitive that computes the E-center quotient.
-
-3. **Alternate up-sector scalar route.**
-   Leave Route-2 endpoint readout and seek a separate typed edge into selected
-   `P_R`.
-
-4. **Physical/canonical gate selector falsifier.**
-   Test whether any current gate-selector language does more than membership.
+1. **Direct W1 theorem attempt**
+   - Try to type `su3_R_conn_8_9 -> route2_center_TE_minus_8_9` from current
+     source/readout primitives.
+2. **Equivalent E-center primitive search**
+   - Search current Route-2 primitives for a direct `q_E=15/8` selector.
+3. **Physical W2 selector route**
+   - Try to supply the physical `kappa_EW=0` selector, then separately test W1.
+4. **Reduced-amplitude-to-readout bridge**
+   - Test whether an amplitude scalar primitive selects the same `P_R`.

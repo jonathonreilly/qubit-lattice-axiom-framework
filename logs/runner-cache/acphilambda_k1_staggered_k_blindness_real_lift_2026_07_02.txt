@@ -1,0 +1,111 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py
+runner_sha256: 106a501c06c233ef37a331c4da070809d3b5063ff6b769dd84bc2fd4e9192367
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+
+========================================================================================
+A - sources and pins
+========================================================================================
+[PASS] paired note exists -- ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md
+[PASS] Dirac-row dependency exists -- STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md
+[PASS] true dependency pins are present
+[PASS] ledger row found for the dependency
+[PASS] note quotes the LEDGER claim_scope verbatim (authority gate)
+[PASS] quote marker appears exactly once
+[PASS] note does not present the file's self-declared scope as the ledger scope
+[PASS] primary runner link points to this script
+
+========================================================================================
+B - constructive real frame and rejectors
+========================================================================================
+[PASS] N=4 K1 edge ratios close on spanning-tree solve
+[PASS] N=4 K1 off-tree closure checked
+[PASS] N=4 K1 covariance residual exactly zero
+[PASS] N=4 K1 compensated cube is +I exactly
+[PASS] N=4 K1 cube diagonal values are all +1
+[PASS] N=6 K1 edge ratios close on spanning-tree solve
+[PASS] N=6 K1 off-tree closure checked
+[PASS] N=6 K1 covariance residual exactly zero
+[PASS] N=6 K1 compensated cube is +I exactly
+[PASS] N=6 K1 cube diagonal values are all +1
+[PASS] K0 lift is the bare rotation
+[PASS] K0 commutes with R exactly
+[PASS] K0 bare rotation has cube I
+[PASS] rejector exercises support-mismatch branch
+[PASS] rejector exercises cycle-inconsistency branch
+[PASS] fixed-seed random sign-gauge instance is solved
+
+========================================================================================
+C - U(1) frame remark
+========================================================================================
+[PASS] real modulus-one edge ratio solves to +-1
+[PASS] unit relative phase is real exactly when sin(theta)=0
+[PASS] global U(1) cube scaling is exp(3 i alpha)
+[PASS] note states trivial projective class
+
+========================================================================================
+D - blindness transfer and discriminator
+========================================================================================
+[PASS] Rt commutes with H_K1 exactly
+[PASS] Rt^2 equals separately constructed compensated R^2 lift
+[PASS] Rt^2 R^{-2} is diagonal +-1
+[PASS] K1 heat trace blind at N=4, t=0.3 -- diff=0.000e+00
+[PASS] K1 heat trace blind at N=4, t=1.0 -- diff=7.105e-15
+[PASS] K0 heat trace blind at N=4, t=0.3 -- diff=0.000e+00
+[PASS] K0 heat trace blind at N=4, t=1.0 -- diff=0.000e+00
+[PASS] single-edge complex phase breaks the original trace blindness test -- diff=6.246e+00
+
+========================================================================================
+E - note discipline
+========================================================================================
+[PASS] preserved sentence present: the compensated `C3[111]` lift on the one-
+[PASS] preserved sentence embedded: the compensated `C3[111]` lift on the one-
+[PASS] preserved sentence present: the one-component staggered surface, in bo
+[PASS] preserved sentence embedded: the one-component staggered surface, in bo
+[PASS] preserved sentence present: the projective seed irreducibly needs the 
+[PASS] preserved sentence embedded: the projective seed irreducibly needs the 
+[PASS] preserved sentence present: not a terminal no-go
+[PASS] preserved sentence embedded: not a terminal no-go
+[PASS] No-Go Discipline token N1: present
+[PASS] No-Go Discipline token N2: present
+[PASS] No-Go Discipline token N3: present
+[PASS] No-Go Discipline token N4: present
+[PASS] No-Go Discipline token N5: present
+[PASS] No-Go Discipline token N6: present
+[PASS] No-Go Discipline token N7: present
+[PASS] No-Go Discipline token N8: present
+[PASS] forbidden token absent: only route
+[PASS] forbidden token absent: last route
+[PASS] forbidden token absent: exhausted
+[PASS] forbidden token absent: closes the route
+[PASS] forbidden token absent: PDG
+[PASS] forbidden token absent: new wall
+[PASS] W-name inventory is whitelisted -- W_cycle_holonomy_value,W_defect_identity_unit,W_defect_readout_selection
+[PASS] exactly one markdown dependency link -- ['STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md']
+[PASS] exactly one runner link -- ['../scripts/acphilambda_k1_staggered_k_blindness_real_lift_2026_07_02.py']
+[PASS] in-flight basename is backticked: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_R
+[PASS] in-flight basename is not a link target: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_R
+[PASS] in-flight basename is backticked: ACPHILAMBDA_REAL_HOLONOMY_LOCUS_ID
+[PASS] in-flight basename is not a link target: ACPHILAMBDA_REAL_HOLONOMY_LOCUS_ID
+[PASS] in-flight basename is backticked: ACPHILAMBDA_POINTER_LABELED_REFINE
+[PASS] in-flight basename is not a link target: ACPHILAMBDA_POINTER_LABELED_REFINE
+[PASS] in-flight basename is backticked: ACPHILAMBDA_AMBIENT_EQUIVARIANT_HE
+[PASS] in-flight basename is not a link target: ACPHILAMBDA_AMBIENT_EQUIVARIANT_HE
+[PASS] in-flight basename is backticked: ACPHILAMBDA_AMBIENT_SCALAR_K_BLIND
+[PASS] in-flight basename is not a link target: ACPHILAMBDA_AMBIENT_SCALAR_K_BLIND
+[PASS] source-instruction phrase absent: /tmp/spec
+[PASS] source-instruction phrase absent: acceptance contract
+[PASS] source-instruction phrase absent: preserve verbatim
+[PASS] source-instruction phrase absent: must be absent
+[PASS] source-instruction phrase absent: runner greps
+[PASS] source-instruction phrase absent: anti-fabrication
+
+Runtime: 0.14 s
+TOTAL: PASS=77 FAIL=0
+
+----- stderr -----
+

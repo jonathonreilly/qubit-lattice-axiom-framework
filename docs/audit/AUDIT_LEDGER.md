@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 906 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1665 |
+| unaudited | 1664 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -56,7 +56,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
-| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 2 |
+| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 3 |
 | `decoration_under_three_generation_observable_theorem_note` | 3 |
 | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
@@ -67,20 +67,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1320 |
 | `audited_conditional` | 38 |
-| `audited_decoration` | 61 |
+| `audited_decoration` | 62 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1991 |
+| `unaudited` | 1990 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1805 |
-| `decoration` | 62 |
+| `decoration` | 63 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 745 |
+| `positive_theorem` | 744 |
 
 | criticality | count |
 |---|---:|
@@ -1551,6 +1551,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_casimir_fundamental_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `su3_dabc_symmetric_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_color_automorphism_theorem` | cross_family | codex-gpt-5.5 | A | `cl3_color_automorphism_theorem` |
 | `three_gen_z3_fourier_diagonalization_theorem_note_2026-05-03` | decoration | ~~audited_decoration~~ | `decoration_under_three_generation_observable_theorem_note` | cross_family | codex-gpt-5.5 | A | `three_generation_observable_theorem_note` |
+| `translation_abelian_composition_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `u0_su2_bivector_irrep_analytic_derivation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `wilson_generator_rescaling_beta_transformation_narrow_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | cross_family | codex-gpt-5.5 | A | `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` |
 | `yt_ew_f_adj_fierz_fraction_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01` | cross_family | codex-gpt-5.5 | A | `ew_current_fierz_channel_decomposition_note_2026-05-01` |
@@ -19391,6 +19392,20 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** False — The second audit correctly identifies the load-bearing sign error. With the stated Fourier convention h(z)=int E(p)e^{ip·z} dp, exponential decay requires shifting the selected contour to Im p_mu=+eta*sgn(z_mu), while the source note shifts to -eta*sgn(z_mu), which gives exponential growth in the displayed estimate. The theorem appears locally repairable and the runner is substantive, but the written proof does not close as audited_clean.
 - **rationale:** The second audit correctly identifies the load-bearing sign error. With the stated Fourier convention h(z)=int E(p)e^{ip·z} dp, exponential decay requires shifting the selected contour to Im p_mu=+eta*sgn(z_mu), while the source note shifts to -eta*sgn(z_mu), which gives exponential growth in the displayed estimate. The theorem appears locally repairable and the runner is substantive, but the written proof does not close as audited_clean.
 - **auditor confidence:** judicial
+
+### `translation_abelian_composition_theorem_note_2026-05-02`
+
+- **Note:** [`TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md`](../../docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Finite periodic tensor-permutation translations on H_Lambda obey the abelian quotient group law, unitary inverse identity, and trivial quotient kernel.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T024808Z-adabd18f-translation_abelian_comp`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The bridge supplies T_a T_b = T_{a+b}, T_0 = I, and T_a^{-1}=T_{-a}=T_a^dag; commutativity and faithfulness then follow from finite quotient addition and the tensor-permutation action on one-site occupation basis states.  _(class `A`)_
+- **chain closes:** True — The cited bridge is retained-grade and already supplies the translation operators, unitarity, identity, group law, and inverse. The remaining steps are ordinary finite-quotient algebra and the direct basis-permutation observation that a nonzero quotient shift moves a one-site occupation basis vector to a distinct orthonormal basis vector.
+- **rationale:** The chain closes, but it closes as a one-parent algebraic corollary of the retained tensor-product translation bridge plus standard finite quotient arithmetic. The runner constructs the same finite tensor-permutation matrices and checks identity, closure, commutativity, inverse, and kernel triviality; it has no external comparator checks. Because the note adds no new physical observable, bridge, or independent comparator beyond the parent surface, the conservative audit-lane classification is algebraic decoration.
+- **decoration parent:** `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+- **auditor confidence:** high
 
 ### `triage_no_promotion_note`
 

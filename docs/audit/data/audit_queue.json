@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 283,
     "leaf": 584,
-    "medium": 499
+    "medium": 498
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17799,30 +17799,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "translation_abelian_composition_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.615,
-      "note_path": "docs/TRANSLATION_ABELIAN_COMPOSITION_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/translation_abelian_composition_check.py",
-      "transitive_descendants": 48
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "translation_covariance_local_op_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17984,15 +17960,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 5.748,
+      "load_bearing_score": 7.087,
       "note_path": "docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
-      "transitive_descendants": 18
+      "transitive_descendants": 33
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49999,6 +49975,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 106,
-  "total_pending": 1667
+  "ready_count": 105,
+  "total_pending": 1666
 }

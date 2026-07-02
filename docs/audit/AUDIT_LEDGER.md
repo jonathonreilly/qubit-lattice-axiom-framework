@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 879 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1718 |
+| unaudited | 1717 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 30 |
+| ~~audited_conditional~~ | 31 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1281 |
-| `audited_conditional` | 30 |
+| `audited_conditional` | 31 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2044 |
+| `unaudited` | 2043 |
 
 | claim_type | count |
 |---|---:|
@@ -107,7 +107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
+| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 921 | 60.85 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1034 | 48.02 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1127 | 46.64 | `unaudited` | meta |
@@ -1436,6 +1436,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_from_axiom_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -12950,6 +12951,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** On Fraction-coefficient formal power series, finite partial sums, scalar powers, Cauchy products, geometric truncation errors, and the toy truncated Langevin update close order-by-order in Fraction arithmetic.  _(class `A`)_
 - **chain closes:** True — The narrowed conclusion follows from standard finite Fraction arithmetic and polynomial/Cauchy-product algebra as exercised by the runner. The note explicitly excludes the physics claims that would require external NSPT or lattice-gauge authorities.
 - **rationale:** The operative claim is narrowed to elementary algebra over rational formal series, not a physical NSPT computation. The runner source performs finite Fraction arithmetic, Cauchy products, a geometric truncation calculation, and boundary-text checks; it does not import contested external constants or rely on a calibrated numerical match. Hard-coded expected values are used only as elementary algebraic test expectations for worked examples, not as imported premises for a broader physical conclusion.
+- **auditor confidence:** high
+
+### `observable_principle_from_axiom_note`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](../../docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite exact-algebra result on the real-positive staggered source surface: given Record finite additivity, det-positivity/L3, and the explicit T1-d readout Boundary, the log-det generator family, source-derivative trace formulas, Matsubara kernel, and nonzero-representative Lt=4 orbit selector hold; off-sector P2 and the v comparator are out of scope.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T101917Z-382752d9-observable_principle_fro`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Once T1-d makes the scalar readout a continuous determinant-only function on all R_{>0} and makes disjoint source blocks disjoint records, Record additivity plus determinant multiplicativity gives W(r1 r2)=W(r1)+W(r2), so L3 selects W_c=c log r.  _(class `A`)_
+- **chain closes:** False — The algebraic chain closes after T1-d is assumed. It does not close from the cited inputs alone because the determinant-only readout quotient and source-blocks-to-records clause remain an explicit Boundary rather than a retained derivation.
+- **rationale:** Issue: the load-bearing readout-identification bridge T1-d is assumed, not derived from Record, the finite Grassmann determinant, or the retained det-positivity lemma. Why this blocks: the retained no-go and classifier show additive trace-sensitive readouts remain live until a determinant-sector readout context is supplied. Repair target: provide a retained theorem or approved premise supplying the determinant-only quotient and source-block-to-record disjointness. Claim boundary until fixed: the finite log-det algebra is usable only conditional on T1-d; the out-of-scope plaquette/v comparator does not affect this verdict.
 - **auditor confidence:** high
 
 ### `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21`

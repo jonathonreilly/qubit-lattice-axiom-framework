@@ -23,12 +23,16 @@ Sections:
      SU(3) with kernel exactly the triality line.
   E. Record-interface arithmetic: disjoint-region label additivity mod N;
      sector-sharp products compose with additive labels.
+  F. Source-note discipline: canonical metadata, graph links, fail-closed
+     hygiene.
 
-Expected close: TOTAL: PASS=51 FAIL=0
+Expected close: TOTAL: PASS=56 FAIL=0
 """
 from __future__ import annotations
 
 import cmath
+from pathlib import Path
+
 import numpy as np
 from scipy.linalg import expm
 
@@ -411,4 +415,28 @@ for beta in [6.0]:
 check("E3 interface shape: Z_k = ||P_k psi||^2 / ||psi||^2 nonnegative,"
       " normalized, finite (3 sectors)", born_ok)
 
+# ---------------------------------------------------------------------------
+# Section F: source-note discipline
+# ---------------------------------------------------------------------------
+print("Section F: source-note discipline")
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = (
+    ROOT
+    / "docs/GAUGE_CENTER_SECTOR_RECORD_CONTEXT_AND_THETA_Q_CHARACTER_GRADING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-01.md"
+).read_text(encoding="utf-8")
+check("F1 note declares canonical bounded_theorem claim type",
+      "**Claim type:** bounded_theorem" in NOTE)
+check("F1 note does not use runner PASS as source status",
+      "**Status:** PASS" not in NOTE)
+check("F1 note graph-links the Tier-A registry quote",
+      "(audit/data/tier_a_admissions.json)" in NOTE)
+check("F1 note graph-links the retained RP-half no-go row",
+      "(STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)" in NOTE)
+check("F1 unaudited no-winding-carrier note is non-load-bearing context",
+      "non-load-bearing context here and is not consumed as a premise" in NOTE)
+
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+if FAIL:
+    raise SystemExit(1)
+raise SystemExit(0)

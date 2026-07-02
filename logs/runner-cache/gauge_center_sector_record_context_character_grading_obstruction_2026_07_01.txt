@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_center_sector_record_context_character_grading_obstruction_2026_07_01.py
-runner_sha256: 32da8d4e2ad124ff6e9c5f772fea272cf0a0a5fbf7fb0c109c891b53768cffb3
+runner_sha256: 05f46ffd15b7240a5394edbd60943c48223cc23f04810540c1a37726d0955b82
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 Section A: center action is diagonal on characters
@@ -70,7 +70,13 @@ Section E: record-interface arithmetic
   [PASS] E1 disjoint regions: center acts as Delta x Delta; labels add mod 3
   [PASS] E2 sector-sharp product: (sector 1)x(sector 1) is sharp in sector 2
   [PASS] E3 interface shape: Z_k = ||P_k psi||^2 / ||psi||^2 nonnegative, normalized, finite (3 sectors)
-TOTAL: PASS=51 FAIL=0
+Section F: source-note discipline
+  [PASS] F1 note declares canonical bounded_theorem claim type
+  [PASS] F1 note does not use runner PASS as source status
+  [PASS] F1 note graph-links the Tier-A registry quote
+  [PASS] F1 note graph-links the retained RP-half no-go row
+  [PASS] F1 unaudited no-winding-carrier note is non-load-bearing context
+TOTAL: PASS=56 FAIL=0
 
 ----- stderr -----
 

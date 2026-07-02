@@ -1,18 +1,9 @@
 # Opportunity Queue
 
-Ranked after block19.
+| Rank | Candidate | Expected status | Why next |
+|---:|---|---|---|
+| 1 | E-center source/readout primitive stretch attempt | no-go or conditional-support | Directly attacks the surviving `delta_E != 0` wall. |
+| 2 | Direct consumers requiring only `delta_E=0` | exact-support | Can turn the block20 split into safe downstream reuse rules. |
+| 3 | Typed center-ratio bridge from current color/source bank | no-go/support | Prior work says the edge is missing; a fresh typed scan could sharpen the theorem target. |
+| 4 | Dual-leg finite-frame selector revisitation with stricter premises | conditional-support/no-go | Could constrain the missing `rho_E` route, but prior blocks already found it underlicensed. |
 
-1. **Direct consumer follow-up packet.**
-   Search downstream Route-2/S3-time notes for consumers whose carriers satisfy
-   `delta_E=0` and package exact rho-independent support if found.
-
-2. **Theta-to-slice parent demotion packet if needed.**
-   If review asks for stricter wording, package the parent row as exact
-   conditional family plus inherited readout obstruction only.
-
-3. **Source/readout selector theorem search.**
-   Reopen only if new typed E-center source/readout structure appears.
-
-4. **Archive endpoint-positive Route-2 route.**
-   Current endpoint-positive paths have been narrowed to the unresolved
-   E-center/source-readout selector.

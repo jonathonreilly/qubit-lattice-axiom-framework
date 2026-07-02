@@ -1,58 +1,42 @@
-loop: s3-route2-readout-endpoint
+slug: s3-route2-readout-endpoint
+goal: "Run physics-loop for 12 hours on the S3/Route-2 readout endpoint triple; attack s3_time_theta_to_slice_coupling_note from first principles and make PRs for coherent science blocks."
+target_status: best-honest-status
 mode: campaign
-date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block19-20260621
+block: 20
+branch: physics-loop/s3-route2-readout-endpoint-block20-20260621
 base: origin/main
-base_commit: 201b4e8f5
-block: 19
-active_route: endpoint_independent_consumer_inventory
-target_triple: "(-1, -2, 21/4)"
-target_residual: "rho_E = beta_E/alpha_E = 21/4"
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
-proposal_allowed: false
-bare_retained_allowed: false
-audit_actions: none
-main_push_actions: none
-pr_conflict_checks: none
-lock_mode: degraded
-lock_degraded_reason: "repo automation lock helper errored with permission denied for /Users/jonreilly; branch-local independent worktree used"
+base_commit: "01b080108 audit: quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18 audited_decoration"
+lock_status: degraded
+lock_note: "automation_lock.py status failed with permission denied on /Users/jonreilly in this worktree; continuing branch-local."
+current_phase: block20_pr_opened
+active_route: factor_rigidity_readout_primitive_split
+active_hard_residual: "E-center readout/source primitive selecting rho_E after T-side normalization."
 files_touched:
-  - docs/S3_TIME_ENDPOINT_INDEPENDENT_CONSUMER_INVENTORY_NOTE_2026-06-21.md
-  - scripts/frontier_s3_time_endpoint_independent_consumer_inventory_2026_06_21.py
-  - logs/runner-cache/frontier_s3_time_endpoint_independent_consumer_inventory_2026_06_21.txt
+  - docs/S3_TIME_FACTOR_RIGIDITY_READOUT_PRIMITIVE_SPLIT_NOTE_2026-06-21.md
+  - scripts/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.py
+  - scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py
+  - outputs/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
-claim_state_movement:
-  summary: "Exact-support inventory: direct rho_E dependence is rank one through the delta_E coordinate; the independent consumer subspace is exactly delta_E=0, spanned by E-shell, T-shell, and T-center."
-  import_retired: []
-  imports_exposed:
-    - "Any consumer with nonzero delta_E still inherits rho_E."
-    - "A unique theta-to-slice theorem still requires the upstream readout endpoint."
-prior_pending_blocks_not_main_dependencies:
-  - "PR #4537 block08 exact-support: E-center carrier firewall"
-  - "PR #4538 block09 no-go: reciprocal projector degree no-go"
-  - "PR #4539 block10 conditional-support: finite-frame/Riesz one-factor boundary"
-  - "PR #4540 block11 no-go: source/readout split gauge-underdetermined"
-  - "PR #4541 block12 no-go: rank-one K_R leg factorization"
-  - "PR #4542 block13 no-go: K_R source-side Gram/tensor-power route"
-  - "PR #4543 block14 no-go: channel metric Schur-free ratio"
-  - "PR #4544 block15 no-go: nonseparable quadratic equivariant map coefficient freedom"
-  - "PR #4545 block16 exact-support: theta-to-slice rho_E dependency firewall"
-  - "PR #4546 block17 conditional-support: finite-frame/Riesz dual-leg boundary"
-  - "PR #4547 block18 no-go: coefficient-selection boundary"
 verification:
-  new_runner: "PASS=8 FAIL=0"
-  exact_readout_map: "PASS=11 FAIL=0"
-  exact_time_coupling: "PASS=8 FAIL=0"
-  parent_theta_to_slice_runner: "PASS=12 FAIL=0"
-  primitive_chain_reaudit: "PASS=24 FAIL=0"
-  py_compile: pass
-  git_diff_check: pass
-  overclaim_scan: pass
+  - "new split runner: TOTAL PASS=49 FAIL=0"
+  - "factor-rigidity runner: PASS=64 FAIL=0"
+  - "bridge assessment runner: TOTAL PASS=14 FAIL=0"
+  - "exact time coupling runner: PASS=8 FAIL=0"
+  - "parent theta-to-slice runner: PASS=12 FAIL=0"
+  - "exact readout map runner: PASS=11 FAIL=0"
+  - "py_compile: pass"
+  - "git diff --check: pass"
+  - "overclaim scan: clean"
+claim_state_movement:
+  - "Exact split: (P(rho_b)-P(rho_a))c = ((rho_b-rho_a) delta_E, 0)."
+  - "delta_E=0 consumers are rho_E-blind; E-center remains conditional."
+  - "Factor-rigidity supports time-channel universality but not readout primitive selection."
+stop_condition: "Do not stop the campaign for block20 completion; pivot after PR handling unless a global stop condition appears."
 pr:
-  number: 4548
-  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4548"
-  state: OPEN
-next_exact_action: "Search for a concrete downstream delta_E=0 consumer to package, or pick the next highest-ranked Route-2/S3 direct consumer."
-stop_condition: "Do not stop campaign merely because this support packet does not close the endpoint; continue while runtime remains."
+  number: 4549
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4549"
+  title: "[physics-loop] s3-route2-readout-endpoint block20 exact-support"
+  headRefName: "physics-loop/s3-route2-readout-endpoint-block20-20260621"
+  baseRefName: "main"
+  state: "OPEN"
+next_exact_action: "Start block21 from opportunity queue rank 1 or rank 2."

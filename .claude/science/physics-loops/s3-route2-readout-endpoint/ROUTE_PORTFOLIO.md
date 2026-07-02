@@ -1,28 +1,27 @@
 # Route Portfolio
 
-## Current Block
+## Selected Route: Factor-Rigidity / Readout-Primitive Split
 
-1. **Endpoint-independent consumer inventory.**
-   Classify the direct theta-to-slice consumers by the `delta_E` coordinate.
+**Type:** exact support / import firewall.
+**Dramatic-step score:** 2.
+**Hard-residual pressure:** 1.
 
-## Remaining Routes
+This route does not claim the endpoint triple. It narrows the safe downstream
+reuse boundary by proving that factor-rigidity is a time-channel theorem and
+that remaining readout dependence is exactly the `delta_E` spatial prefactor.
 
-2. **Direct consumer follow-up packets.**
-   If a downstream note uses only `delta_E=0` carriers, package it as
-   rho-independent exact support.
+## Candidate Routes Kept For Later
 
-3. **Source/readout selector theorem search.**
-   Only pursue if a new typed source/readout object appears that can select
-   the E-center lift.
+| Route | Promise | Reason not selected for block20 |
+|---|---:|---|
+| Direct E-center source/readout primitive | high | Hard residual; needs a fresh first-principles theorem beyond this support split. |
+| Typed `R_conn -> center T/E` bridge | medium | Prior source-domain checks say the typed edge is missing; needs new theorem content. |
+| Finite-frame dual-leg theorem | medium | Previous blocks found conditional support only; needs an independent reason for the required two-leg count. |
+| Direct consumer inventory beyond `delta_E=0` | medium | Useful after the exact split is packaged. |
 
-4. **Theta-to-slice parent demotion packet if needed.**
-   If later review asks for stricter status language, isolate the parent as
-   exact conditional family plus inherited readout obstruction only.
+## Next Best Action
 
-## Stuck Fan-Out Synthesis
+After block20 PR creation, target a new block on the E-center source/readout
+primitive or a sharper direct-consumer no-go/support packet that uses the
+`delta_E` split.
 
-- Direct carrier algebra: exact rank-one rho dependence.
-- Slice semigroup: shared across all readout choices.
-- Endpoint columns: only E-center depends on `rho_E`.
-- Generic carrier: dependency iff `delta_E != 0`.
-- Unique theorem: still blocked upstream.

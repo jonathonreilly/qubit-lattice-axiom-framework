@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 870 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1733 |
+| unaudited | 1732 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 28 |
+| ~~audited_conditional~~ | 29 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1268 |
-| `audited_conditional` | 28 |
+| `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2059 |
+| `unaudited` | 2058 |
 
 | claim_type | count |
 |---|---:|
@@ -1432,6 +1432,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
@@ -18504,6 +18505,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner checks the finite algebra and arithmetic after these conventions are fixed.  _(class `A`)_
 - **chain closes:** True — The bounded certificate closes only after the source's explicit Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula are fixed as standard inputs. It does not derive Yang-Mills topology from Cl(3)/Z3 or close global smooth-bundle/existence theorems.
 - **rationale:** Clean only as a bounded finite certificate, not as a derivation of Yang-Mills topology from Cl(3)/Z3. The note makes the Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula explicit fixed inputs rather than hidden imports. Fresh-context independent checks confirmed *^2=1 and the Bogomolny inequality algebra, the BPST substitution gives 2*pi^2 * 4 = 8*pi^2, and the listed twist examples give k/N as claimed.
+- **auditor confidence:** high
+
+### `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 bilinear two-step log-transfer symbol E_d(p)=arcsinh(sqrt(m^2+sum sin^2 p_mu)); d=1 is anchored to the cited transfer-matrix note and d=3 is treated as the note's declared carrier. Audited claims include the explicit exponential kernel bound, d=1 sharpness, quasilocal support-family/tail translation, and the strict R<=2 finite-range falsity exhibit.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T080553Z-11c7ce57-transfer_matrix_log_quas`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The note's Q1 proof shifts the p_mu* contour to Im p_mu* = -eta*sgn(z_mu*) and asserts |e^{i p_mu* z_mu*}| = e^{-eta ||z||_inf}, yielding the exponential kernel bound.  _(class `A`)_
+- **chain closes:** False — The strip analyticity and C_d inequalities are correct, but the contour-shift sign is wrong for the stated Fourier convention e^{i p*z}: shifting to Im p=-eta*sgn(z) gives exponential growth, not decay. The theorem would be repaired by shifting to +eta*sgn(z), but the load-bearing proof as written does not close.
+- **rationale:** The cited one-hop authorities are retained-grade for the d=1 symbol and hopping-operator convention, and the runner performs substantive numerical and algebraic checks rather than hard-coded PASS output. The analytic bound's load-bearing contour step nevertheless contains a sign error that the runner does not test, so the source is not clean as written. The d=3 result is also clean only as a theorem for the declared symbol, not as an independently derived physical Z^3 transfer-matrix carrier.
 - **auditor confidence:** high
 
 ### `triage_no_promotion_note`

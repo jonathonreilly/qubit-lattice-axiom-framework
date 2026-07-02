@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 324,
+    "critical": 323,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -136,34 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.887,
-      "note_path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
-      "transitive_descendants": 946
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -51780,6 +51752,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 94,
-  "total_pending": 1735
+  "ready_count": 93,
+  "total_pending": 1734
 }

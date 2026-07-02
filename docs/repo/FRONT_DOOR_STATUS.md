@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1413 |
+| Applied audit verdicts | 1414 |
 | Retained-grade rows, including boxed decorations | 1318 |
 | Retained positive theorems | 196 |
 | Retained no-go rows | 195 |
 | Retained bounded rows | 870 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
-| Unaudited rows | 1733 |
+| Unaudited rows | 1732 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 28 |
+| Audited conditional rows | 29 |
 | Audited renaming rows | 25 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1735 |
-| Ready rows | 94 |
+| Total pending rows | 1734 |
+| Ready rows | 93 |
 | Cycle-break targets | 9 |
-| Critical pending | 324 |
+| Critical pending | 323 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; unaudited
 - [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`axiom_first_cluster_decomposition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 - [`staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
+- [`yt_vertex_power_derivation`](../../docs/YT_VERTEX_POWER_DERIVATION.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

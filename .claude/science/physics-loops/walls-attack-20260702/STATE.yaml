@@ -1,0 +1,32 @@
+campaign: walls-attack-20260702
+mode: campaign
+runtime_budget: 12h
+started_local: 2026-07-02T04:30-04:00
+hard_stop_local: 2026-07-02T16:30-04:00
+protocol: docs/ai_methodology/skills/physics-loop/SKILL.md
+execution_split: workhorse (codex exec workers, high reasoning; supervisor reviews/gates/lands)
+lock:
+  repo_lock: unavailable  # scripts/automation_lock.py hardcodes /Users/jonreilly (Errno 13 on this machine)
+  fallback: branch-local supervisor lock = this STATE.yaml on the block branch; single supervisor session owns the campaign worktree /Users/jonBridger/tp-walls-campaign
+target_status: best-honest-status
+cycle: 1
+active_block: block01
+active_branch: physics-loop/walls-attack-carrier-measure-block01-20260702
+active_route: carrier-measure scoring discriminator (invariance separation of the three named scorings on hw=1; conditional selection + sharpened residual)
+hard_residual_under_attack: >
+  Parent bridge (quoted from FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30):
+  "derive, from the current framework surface, why the physical generation
+  readout uses generator-channel Hilbert-Schmidt scoring rather than
+  dimension/per-mode or idempotent/eigenvalue scoring."
+files_touched:
+  - docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md (worker draft, supervisor review pending)
+  - scripts/frontier_flavor_carrier_measure_scoring_discriminator_2026_07_02.py
+  - outputs/frontier_flavor_carrier_measure_scoring_discriminator_2026_07_02.txt
+  - .claude/science/physics-loops/walls-attack-20260702/* (pack)
+open_imports: none expected (exact finite algebra on named main authorities)
+no_go_routes: see NO_GO_LEDGER.md (7 entries seeded)
+trace_gate: see TRACE_GATE.md (upstream_support -> carrier-measure bridge)
+review_findings: pending (supervisor line-by-line + adversarial lens after draft)
+pr_status: not yet opened
+next_exact_action: review worker draft of block01 note+runner; run runner independently; vocab_lint; V1-V5 record already staged in OPPORTUNITY_QUEUE.md; commit; push; open PR; then iterate per OPPORTUNITY_QUEUE
+stop_condition: hard_stop_local reached OR opportunity-queue exhaustion per SKILL stop conditions

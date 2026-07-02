@@ -1,13 +1,9 @@
 # No-Go Ledger
 
-- Shell normalization cannot select `rho_E`; `P(0)` and `P(21/4)` agree on
-  `E-shell`.
-- T-only consumers cannot close the missing E endpoint because
-  `(P(rho_b)-P(rho_a))c` has zero T-readout component for every carrier.
-- Endpoint-blind or separable finite-box renormalizations preserve the
-  unresolved E/T source ratio rather than selecting `rho_E = 21/4`.
-- The finite 15^3 calibration match is not convergence evidence across nearby
-  box sizes.
-- The block07 conditional bridge isolates the needed law
-  `q_X proportional to w_X^-2`; it does not derive that law on the current
-  surface.
+- Carrier and shell normalization leave `rho_E` free.
+- Equivariance gives `Hom_Oh(E,T1)=0`; E/T scales remain independent.
+- Positivity gives only `rho_E > -6`.
+- Generic quadratic `O_h`-invariant functionals have a free E:T1 ratio.
+- Zero reciprocal local projector-weight factors miss the endpoint.
+- One reciprocal source/readout/Schur-dual factor gives `lambda=3/2`, not
+  `9/4`.

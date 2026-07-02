@@ -1,8 +1,9 @@
 # Artifact Plan
 
-- Add an exact-support note for the E-center consumer ambiguity firewall.
-- Add a fraction-exact runner checking the readout support formula, the
-  downstream tensor factorization, and the blind/sensitive sectors.
-- Cache the runner output under `logs/runner-cache`.
-- Run focused Route-2/S3 checks and local wording review.
-- Commit, push the branch, and open one review PR.
+- Add a no-go/exact-support note for the double-local reciprocal factor-degree
+  gate.
+- Add a fraction-exact runner checking projector weights, endpoint consequences,
+  and current-source boundary markers.
+- Cache the runner output.
+- Run adjacent Route-2 checks and local wording review.
+- Commit, push, open one review PR, and verify identity fields only.

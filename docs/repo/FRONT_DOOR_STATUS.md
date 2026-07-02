@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1548 |
-| Retained-grade rows, including boxed decorations | 1424 |
+| Applied audit verdicts | 1549 |
+| Retained-grade rows, including boxed decorations | 1425 |
 | Retained positive theorems | 206 |
-| Retained no-go rows | 212 |
+| Retained no-go rows | 213 |
 | Retained bounded rows | 945 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 35 |
-| Unaudited rows | 1598 |
+| Unaudited rows | 1597 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 46 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1600 |
+| Total pending rows | 1599 |
 | Ready rows | 70 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
 | Medium pending | 454 |
-| Leaf pending | 564 |
+| Leaf pending | 563 |
 
 Next ready rows by queue order:
 
-- [`g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06`](../../docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_records_objectivity_conditional_note_2026-05-31`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md) - medium; unaudited
 - [`microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09`](../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md) - medium; unaudited
 - [`newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
 - [`powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - medium; unaudited
 - [`ring_monodromy_does_not_force_car_note_2026-06-04`](../../docs/RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md) - medium; unaudited
 - [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
-- [`sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18`](../../docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md) - leaf; unaudited
+- [`sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18`](../../docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
+- [`staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17`](../../docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -93,6 +93,6 @@ Top load-bearing rows by graph score:
 - `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
-- `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
-- `key_terminology` - critical; 1126 descendants; score 47.638
-- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312
+- `minimal_axioms_2026-05-03` - critical; 1034 descendants; score 49.015
+- `key_terminology` - critical; 1127 descendants; score 47.640
+- `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 899 descendants; score 45.314

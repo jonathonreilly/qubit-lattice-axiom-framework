@@ -1,11 +1,10 @@
-trace_class: upstream_support
+trace_class: negative_route_pruning
 target_claim_id: s3_time_theta_to_slice_coupling_note
 target_blocker_text: "the readout-map endpoint triple (beta_T / alpha_T, alpha_T / alpha_E, beta_E / alpha_E) = (-1, -2, 21/4) is not derived by the current exact stack"
 source_of_blocker_text: user_goal
-reachability_to_target: supports
-artifact_role: runner_certificate
-next_trace_action: "Prove or refute a typed bridge from an existing seven-eighths anchor to route2_e_E_7_8, or derive e_E directly from a Route-2 E-center source/readout primitive."
+reachability_to_target: prunes
+artifact_role: no_go
+next_trace_action: "Do not use SU(3)-invariant adjoint-complement 7/8 as a Route-2 E-center source unless a new physical adjoint-line selector or typed readout bridge is supplied."
 
-Block34 does not close the target blocker. It supports the target by reducing
-the remaining E-side value to the exact E-center excess `e_E=7/8` and proving
-that same-rational anchors are not yet typed to that role.
+Block35 prunes one candidate bridge into `route2_e_E_7_8`: the invariant
+color-complement route `(dim(adj)-1)/dim(adj)=7/8`.

@@ -2,10 +2,8 @@
 
 | Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
 |---|---|---|---|---|---|---|---|
-| Route-2 center-excess denominator `6` | Converts `rho_E` to `e_E=rho_E/6` | exact support | `TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md`, exact readout-map notes | yes | yes | already present as support-side endpoint step | used |
-| T-side granted entries `rho_T=-1`, `alpha_T/alpha_E=-2` | Equivalence from `q_E=15/8` to `c_TE=-8/9` | granted route condition | S3/Route-2 gate notes | yes for center-ratio equivalence | yes if using `c_TE` route | derive or separately certify T-side entries | carried as granted route condition |
-| Existing hierarchy `7/8` anchor | Candidate same-rational source | exact support, untyped for Route-2 | hierarchy seven-eighths note/runner | no | only if bridged | prove typed edge to `route2_e_E_7_8` | untyped candidate |
-| Existing thermal `7/8` anchor | Candidate same-rational source | bounded/exact thermal support, untyped for Route-2 | gstar thermal bridge note/runner | no | only if bridged | prove thermal-to-Route-2 readout role bridge | untyped candidate |
-| APBC/radian `7/8` inventory | Candidate same-rational source | contextual support, untyped for Route-2 | radian bridge inventory | no | only if bridged | prove APBC-to-E-center source bridge | untyped candidate |
-| Color complement `(N_c^2-2)/(N_c^2-1)=7/8` | New candidate arithmetic | exact arithmetic only | block34 runner/note | no | only if bridged | prove why connected-adjoint denominator supplies E-center excess | candidate only |
-| Typed bridge `existing_7_8_anchor -> route2_e_E_7_8` | Would compute the missing E-side datum | missing theorem | none found | yes for positive closure | yes | new source/readout theorem | open blocker |
+| SU(3) color count `N_c=3` | Fixes adjoint dimension `8` | framework/color support | graph-first SU3 / Fierz notes | yes for color route | yes for color route | existing color support | used |
+| Fierz split `3 x 3bar = 1 + adj` | Supplies adjoint carrier | exact support | EW current Fierz note | yes | yes for color route | existing support | used |
+| Candidate `(dim(adj)-1)/dim(adj)=7/8` | Color-complement source attempt | exact arithmetic only | block35 runner | yes for tested route | no unless bridged | prove typed adjoint-line selector | pruned invariantly |
+| Invariant adjoint-line selector | Would remove one adjoint direction | missing theorem | none | yes for color-complement route | yes for this route | new non-invariant/physical selector or source theorem | absent |
+| Route-2 E-center excess `e_E=7/8` | Downstream target | open readout datum | Route-2 readout notes | yes | yes | direct Route-2 primitive or typed bridge | remains open |

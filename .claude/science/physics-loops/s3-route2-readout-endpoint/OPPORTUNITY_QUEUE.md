@@ -1,18 +1,17 @@
 # Opportunity Queue
 
-1. **Typed `7/8 -> e_E` bridge theorem.**
-   Search for a source/readout primitive that maps hierarchy, APBC, thermal, or
-   color-complement `7/8` into `route2_e_E_7_8` without role substitution.
+1. **Measured-calibration box-size parameterization.**
+   The strongest remaining positive signal is the stack-internal measured
+   E-center lift. A runner that varies the size-pinned module chain could test
+   whether `q_E -> 15/8` or diverges from it.
 
-2. **Measured-calibration box-size parameterization.**
-   The measured E-center lift route remains the strongest positive signal, but
-   it needs a runner that varies the currently size-pinned module chain and
-   distinguishes finite-size drift from an exact `15/8` limit.
+2. **Hierarchy/APBC seven-eighths bridge.**
+   After block35, the color-complement route is pruned. The next same-rational
+   source to test is the hierarchy/APBC `7/8` anchor.
 
 3. **Direct tensor readout primitive.**
-   Attack the exact `P_R` selection problem from tensor/source primitives rather
-   than from scalar anchor matching.
+   Attack `P_R` selection directly from tensor/source primitives rather than
+   same-rational matching.
 
-4. **Alternate direct consumer support packet.**
-   If the E-center target stalls after a real stretch attempt, pivot to a direct
-   S3-time consumer and record the exact remaining readout ambiguity.
+4. **Thermal seven-eighths bridge.**
+   Lower priority because the thermal role is distant from Route-2 readout.

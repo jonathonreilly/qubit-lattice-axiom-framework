@@ -394,7 +394,8 @@ def section_H() -> None:
         "RP temporal-gauge bridge note": RP_TEMPORAL,
     }
     for label, path in paths.items():
-        check(f"{label} exists", path.exists(), str(path))
+        rel_path = path.relative_to(ROOT).as_posix()
+        check(f"{label} exists", path.exists(), rel_path)
 
     note_text = NOTE.read_text(encoding="utf-8")
     rigidity_flat = flat(RIGIDITY.read_text(encoding="utf-8"))
@@ -402,7 +403,7 @@ def section_H() -> None:
     rp_flat = flat(RP_TEMPORAL.read_text(encoding="utf-8"))
     note_flat = flat(note_text)
 
-    require_contains("note", note_flat, "set only by the independent audit lane")
+    require_contains("note", note_flat, "Status authority:** independent audit lane only")
     require_contains("note", note_flat, "does not derive `beta = 2 N_c`")
     require_contains("note", note_flat, "unit-coefficient")
     require_contains("note", note_flat, "half-trace")
@@ -413,6 +414,7 @@ def section_H() -> None:
     require_contains("note", note_flat, "not a citation-graph dependency")
     require_absent("note", note_text, "effective_status:")
     require_absent("note", note_text, "audit_status:")
+    require_absent("note", note_text, "**Audit status:**")
 
     require_contains("rigidity", rigidity_flat, "no independent scalar-normalization freedom")
     require_contains("rigidity", rigidity_flat, "Tr(T_a T_b) = delta_ab / 2")

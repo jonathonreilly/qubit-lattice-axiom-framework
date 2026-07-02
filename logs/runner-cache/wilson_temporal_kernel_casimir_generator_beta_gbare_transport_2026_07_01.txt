@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py
-runner_sha256: 5a9a6977c8b6913371508ba46c818784a7c3ceafe354da60d776ce18531d6459
+runner_sha256: 341f2a783666f4d0dcb44e139f8306add54909fa85c535e40fb95d35a2baa2f8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.50
+elapsed_sec: 1.56
 status: ok
 ----- stdout -----
 Wilson temporal-kernel Casimir generator / beta-g_bare dial transport check
@@ -83,11 +83,11 @@ SECTION G: exact leading-dial layer — coincidence at beta = 2 N_c
 
 SECTION H: source-boundary guards
 ------------------------------------------------------------------------------
-[PASS] transport note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md)
-[PASS] finite-link rigidity note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
-[PASS] Wilson small-a note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
-[PASS] RP temporal-gauge bridge note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
-[PASS] note contains marker: set only by the independent audit lane
+[PASS] transport note exists (docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md)
+[PASS] finite-link rigidity note exists (docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+[PASS] Wilson small-a note exists (docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+[PASS] RP temporal-gauge bridge note exists (docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+[PASS] note contains marker: Status authority:** independent audit lane only
 [PASS] note contains marker: does not derive `beta = 2 N_c`
 [PASS] note contains marker: unit-coefficient
 [PASS] note contains marker: half-trace
@@ -98,6 +98,7 @@ SECTION H: source-boundary guards
 [PASS] note contains marker: not a citation-graph dependency
 [PASS] note omits forbidden marker: effective_status:
 [PASS] note omits forbidden marker: audit_status:
+[PASS] note omits forbidden marker: **Audit status:**
 [PASS] rigidity contains marker: no independent scalar-normalization freedom
 [PASS] rigidity contains marker: Tr(T_a T_b) = delta_ab / 2
 [PASS] Wilson contains marker: beta * g_bare^2 = 2 N_c
@@ -107,7 +108,7 @@ SECTION H: source-boundary guards
 
 Summary
 ------------------------------------------------------------------------------
-TOTAL: PASS=72 FAIL=0
+TOTAL: PASS=73 FAIL=0
 Transport check passed.
 
 ----- stderr -----

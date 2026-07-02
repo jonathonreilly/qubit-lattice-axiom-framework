@@ -76,19 +76,20 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
-- **2026-07-02 -- Qualification clarification: supplied-structure readout
-  discipline and rule totality.** Two discipline clauses are added to the
-  Qualification section of `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved
-  wording update, 2026-07-02; source file edited in place, bundled same-day
-  with the Admissibility clarification below so the premise-hash re-audit
-  waves coincide). The two added sentences read: "A readout may depend only
-  on supplied structure, where the realized state and its records count as
-  supplied; a value that varies with an unsupplied choice is not readable
-  within the framework." and "A rule offered as a law must be well-defined at
-  every state admissible under Admissibility throughout its declared domain;
-  the domain must be declared as registered structure, not by enumerating
-  states, and a prescription defined only at particular states is pointwise
-  content, not a law." Wording validated by a seven-seat blind panel
+- **2026-07-02 -- Record readout determination and rule totality.** Two
+  wording updates to `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved,
+  2026-07-02; source file edited in place, bundled same-day with the
+  Admissibility clarification below so the premise-hash re-audit waves
+  coincide). First, the Record axiom's readability sentence is extended to
+  close the readout-function gap in place: "Only records are readable: a
+  readout value is determined by the locked possibilities read and by
+  supplied structure, and varies with nothing else." (previously the sentence
+  ended at "readable"; additivity unchanged). Second, one totality sentence
+  is added to the Qualification section: "A rule offered as a law must be
+  well-defined at every state admissible under Admissibility throughout its
+  declared domain; the domain must be declared as registered structure, not
+  by enumerating states, and a prescription defined only at particular states
+  is pointwise content, not a law." Wording validated by a seven-seat blind panel
   (operator algebras, quantum foundations, lattice gauge, philosophy of
   physics, GR/cosmology, condensed matter, experimental metrology; verdicts:
   S1 7x yes-with-caveat, S2 5x yes-with-caveat 2x contestable, 0 rejections;

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 942 |
+| **retained_bounded** | 943 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1602 |
+| unaudited | 1601 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1372 |
+| `audited_clean` | 1373 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1928 |
+| `unaudited` | 1927 |
 
 | claim_type | count |
 |---|---:|
@@ -309,6 +309,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `color_generation_independent_z3_structures_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `color_link_sym2_endpoint_projection_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -4204,6 +4205,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **load-bearing step:** The color carrier has Z3 character (3, 3 omega, 3 omega^2) while the hw=1 generation axis-cycle carrier has character (3, 0, 0), so the two Z3 representations are inequivalent.  _(class `A`)_
 - **chain closes:** True — The cited retained-bounded authorities supply the two abstract carrier actions, and finite Z3 character theory then proves inequivalence. The physical SM color and physical generation-label bridges are explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a standard algebraic character comparison over two retained-grade abstract representation inputs. The runner source constructs the scalar center action and the 3-cycle permutation action, then checks characters, multiplicities, relabeling, and Hom-rank obstruction without external comparators or tuned numerical inputs. The upstream open physical-identification language is respected as a scope boundary, not used as a premise for this abstract result.
+- **auditor confidence:** high
+
+### `color_link_sym2_endpoint_projection_2026-06-05`
+
+- **Note:** [`COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md`](../../docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-dimensional swap-projector decomposition and symmetric-block su(3) embedding for an admitted two-qubit link endpoint, with endpoint ontology, dynamics, transport, observables, and physical color out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T061950Z-0a899e54-color_link_sym2_endpoint`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given a two-qubit endpoint C^2_a ⊗ C^2_b, the swap operator canonically gives P_sym=(I+S_ab)/2 and P_anti=(I-S_ab)/2 with ranks 3 and 1, and the Gell-Mann su(3) action can be embedded on the symmetric block while killing the antisymmetric block.  _(class `A`)_
+- **chain closes:** True — Within the admitted-endpoint scope, the projector ranks, orthogonality, and block action follow from elementary C^2 ⊗ C^2 swap algebra plus the standard Gell-Mann action transported through the symmetric-basis isometry. The omitted endpoint, transport, Gauss/Wilson, dynamics, and readout steps are explicitly residual and not used to prove the bounded claim.
+- **rationale:** The load-bearing mathematics is exact finite-dimensional algebra: the swap eigenspaces have dimensions 3 and 1, and V(λ^a/2)V^† gives the standard su(3) representation on Sym^2 with zero action on the orthogonal complement. The runner source constructs the matrices rather than merely printing constants, and checks the projector identities, ranks, traces, block preservation, sample commutators, trace normalization, and source-scope markers. Full su(3) closure is inherited algebraically from the standard Gell-Mann relations under the symmetric-block isometry; the note does not claim the missing physical endpoint, transport law, or color-readout bridge.
 - **auditor confidence:** high
 
 ### `color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05`

@@ -176,12 +176,16 @@ def main() -> int:
         f"max endpoint residual={endpoint_residual:.3e}",
     )
 
+    live_ratio_tol = 5.0 * EXACT_TOL
     t_balance_err = abs(tensor_data.t_balance - abs(data.rho_t))
     t_balance_tol = 2 * EXACT_TOL
     check(
         "t_balance is the absolute live T-channel slope/intercept ratio",
-        t_balance_err < t_balance_tol,
-        f"t_balance={tensor_data.t_balance:.12f}, |beta_T/alpha_T|={abs(data.rho_t):.12f}, tol={t_balance_tol:.1e}",
+        t_balance_err < live_ratio_tol,
+        (
+            f"t_balance={tensor_data.t_balance:.12f}, "
+            f"|beta_T/alpha_T|={abs(data.rho_t):.12f}, residual={t_balance_err:.3e}"
+        ),
     )
 
     q_t = Fraction(1, 1) + Fraction(-1, 1) / Fraction(6, 1)

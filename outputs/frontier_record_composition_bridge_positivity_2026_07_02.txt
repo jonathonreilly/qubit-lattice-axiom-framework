@@ -1,0 +1,31 @@
+==============================================================================
+frontier_record_composition_bridge_positivity_2026_07_02
+bounded theorem (bridge decomposition + exact selection facts)
+EXACT arithmetic only (Fraction; Q[sqrt5] as Fraction pairs); no floats.
+NO action adopted; C-add named/grounded NOT derived; audit lane owns status.
+==============================================================================
+CHECK 01: PASS -- guard: axiom memo states 'A state is a configuration of records.' (T1 objects)
+CHECK 02: PASS -- guard: Record additivity sentence present (READOUT additive over disjoint union)
+CHECK 03: PASS -- guard: dynamics-section disclaimer present (axioms supply NO record-production process/kernel)
+CHECK 04: PASS -- guard: law sentence present (domain-restricted single-valued law)
+CHECK 05: PASS -- T1 axiom leg: readout I additive over disjoint record union, I(empty)=0 (Record axiom)
+CHECK 06: PASS -- T1 C-add clause: under INDEPENDENT composition the two-step kernel = one-step convolution
+CHECK 07: PASS -- T1 control: correlated process has IDENTICAL one-step marginals (both steps) as the independent one
+CHECK 08: PASS -- T1 independent content: readout-additive, same-marginal correlated process has two-step kernel != convolution (C-add is NOT supplied)
+CHECK 09: PASS -- T2 multiplicativity: c_n(t+s)=c_n(t)c_n(s) EXACT for c_n=q^(n^2), all n in Z_5
+CHECK 10: PASS -- T2 doubling: c_n(2t)=c_n(t)^2 EXACT (q -> q^2) for the wrapped-Gaussian family
+CHECK 11: PASS -- T2 closure: convolution of two wrapped Gaussians stays in family, q^(n^2)*r^(n^2)=(qr)^(n^2)
+CHECK 12: PASS -- T2 class-not-member: witness violates n^2-law (w_2 != w_1^4) while a genuine member obeys it (block09, review-pending)
+CHECK 13: PASS -- T3 Q[sqrt5] sanity: cos(2pi/5) satisfies 4c^2+2c-1=0 exactly (extension multiplication is correct)
+CHECK 14: PASS -- T3 root-of-unity identity: 2cos(2pi/5)+2cos(4pi/5) = -1 exactly in Q[sqrt5]
+CHECK 15: PASS -- T3 root-of-unity identity: sum_{n=0}^{4} cos(2pi n/5) = 0 exactly in Q[sqrt5]
+CHECK 16: PASS -- T3(i) Metzler-OK at j=1: L_{0,1} = 1/2 + (3/10)sqrt5 > 0 (exact)
+CHECK 17: PASS -- T3(i) Metzler VIOLATION at j=2: L_{0,2} = (5-3sqrt5)/10 < 0 strictly => exp(tL) not positivity-preserving (block14, review-pending)
+CHECK 18: PASS -- T3(ii) wrapped positivity q=1/2: K_t(j) >= S_M(j) > 0 for all j in Z_5, tail geometrically bounded (exact)
+CHECK 19: PASS -- T3(ii) wrapped positivity q=1/3: K_t(j) >= S_M(j) > 0 for all j in Z_5, tail geometrically bounded (exact)
+CHECK 20: PASS -- T3 locality: single-step deficit 4 sin^2(pi/5) = (5-sqrt5)/2 != 0 => single-step locality excludes exact Q-gen (block10, review-pending)
+CHECK 21: PASS -- T5 boundary: note asserts C-add 'not adopted' and 'no wall is closed'
+CHECK 22: PASS -- T5 boundary: note flags all campaign citations 'review-pending'
+CHECK 23: PASS -- T4 governance: note routes the residual as an 'owner decision' on the 'morning' list
+------------------------------------------------------------------------------
+TOTAL: PASS=23 FAIL=0

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact one-parameter reduced sewing-shell law on the star-supported source class.
+"""Bounded one-parameter reduced sewing-shell law on the star-supported source class.
 
 This primary runner now consumes the self-contained replay module added on
 2026-06-17, rather than importing the five older frontier helper modules. The
@@ -9,8 +9,8 @@ scientific scope is unchanged:
    same normalized reduced shell law.
 2. By linearity, any star-supported source on this reduced surface has sewing
    law fixed by total charge Q alone.
-3. The exact local O_h and finite-rank source families satisfy the same
-   reduced one-parameter law to machine precision.
+3. The admitted local O_h and finite-rank source-family comparators satisfy the
+   same reduced one-parameter law to machine precision.
 
 This remains bounded reduced-shell support, not full nonlinear GR closure.
 """
@@ -33,7 +33,7 @@ class Check:
 CHECKS: list[Check] = []
 
 
-def record(name: str, ok: bool, detail: str, status: str = "EXACT") -> None:
+def record(name: str, ok: bool, detail: str, status: str = "FINITE") -> None:
     CHECKS.append(Check(name=name, ok=ok, detail=detail, status=status))
     tag = "PASS" if ok else "FAIL"
     print(f"[{status}] {tag}: {name}")
@@ -42,7 +42,7 @@ def record(name: str, ok: bool, detail: str, status: str = "EXACT") -> None:
 
 
 def main() -> None:
-    print("Exact one-parameter reduced sewing-shell law")
+    print("Bounded one-parameter reduced sewing-shell law")
     print("=" * 72)
     print("source packet: self-contained 2026-06-17 finite-operator replay")
 
@@ -116,12 +116,12 @@ def main() -> None:
         ),
     )
     record(
-        "the anisotropic anchor amplitude obeys A_aniso = c_aniso * Q with one exact lattice constant",
+        "the anisotropic anchor amplitude obeys A_aniso = c_aniso * Q with one computed finite-lattice constant",
         point_mode_diff < 1e-12 and point_charge_diff < 1e-12,
         f"c_aniso = {c_aniso:.15f}",
     )
     record(
-        "the exact local O_h and finite-rank source families satisfy the same one-parameter reduced shell law",
+        "the admitted local O_h and finite-rank source-family comparators satisfy the same one-parameter reduced shell law",
         family_rad_diff < 1e-12
         and family_mode_diff < 1e-12
         and family_shell_diff < 1e-12

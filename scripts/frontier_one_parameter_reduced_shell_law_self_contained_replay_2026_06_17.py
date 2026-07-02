@@ -8,8 +8,8 @@ the finite lattice operators and source constructors that the proof consumes:
 
 1. the finite Dirichlet negative Laplacian on the 15^3 box;
 2. star-supported point-Green columns;
-3. the exact local O_h source-family constructor;
-4. the broader finite-rank source-family constructor;
+3. the admitted local O_h source-family comparator;
+4. the broader finite-rank source-family comparator;
 5. exterior projection, shell-source extraction, radial averaging, and
    shell-mean readout.
 
@@ -44,7 +44,7 @@ class Check:
 CHECKS: list[Check] = []
 
 
-def record(name: str, ok: bool, detail: str, status: str = "EXACT") -> None:
+def record(name: str, ok: bool, detail: str, status: str = "FINITE") -> None:
     CHECKS.append(Check(name=name, ok=ok, detail=detail, status=status))
     tag = "PASS" if ok else "FAIL"
     print(f"[{status}] {tag}: {name}")
@@ -187,13 +187,18 @@ def build_commutant_operator(a: float, b: float, c: float, lam_e: float, lam_t: 
 
 
 def build_best_oh_phi_grid() -> np.ndarray:
+    """Replay the admitted local O_h source-family comparator.
+
+    The numeric literals below are copied current source-family definitions from
+    the previous helper path. They are not observational targets and are not
+    derived here from the axiom surface.
+    """
     size = 15
     h0, interior = build_neg_laplacian_sparse(size)
     support, _ = star_support(size)
     g0p = solve_columns(h0, support)
     gs = g0p[support, :]
 
-    # Exact O_h-symmetric source law consumed by the reduced-shell row.
     x1, x2, mix, lam_e, lam_t = 0.0698, 0.0499, -0.0070, 0.0642, 0.1056
     m0, ms = 0.8247, 0.2271
     w = build_commutant_operator(x1, x2, mix, lam_e, lam_t)
@@ -217,6 +222,12 @@ def build_best_oh_phi_grid() -> np.ndarray:
 
 
 def finite_rank_setup() -> tuple[int, sparse.csr_matrix, int, list[int], np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """Replay the admitted finite-rank source-family comparator.
+
+    The base, correlation, scale, and mass literals are source-family
+    definitions copied into the replay for inspectability. They are support
+    comparators, not fitted observations or retained selector theorems.
+    """
     size = 15
     h0, interior = build_neg_laplacian_sparse(size)
     support, _ = star_support(size)
@@ -381,7 +392,10 @@ def reduced_data(phi_grid: np.ndarray, shell_radius: float = 4.0) -> dict[str, o
 def max_profile_diff(a: list[tuple[float, float]], b: list[tuple[float, float]]) -> float:
     if len(a) != len(b):
         return float("inf")
-    return max(abs(va - vb) for (_, va), (_, vb) in zip(a, b))
+    out = 0.0
+    for (ra, va), (rb, vb) in zip(a, b):
+        out = max(out, abs(ra - rb), abs(va - vb))
+    return out
 
 
 def max_mode_diff(
@@ -488,7 +502,7 @@ def main() -> None:
         ),
     )
     record(
-        "the anisotropic anchor amplitude obeys A_aniso = c_aniso * Q with one exact lattice constant",
+        "the anisotropic anchor amplitude obeys A_aniso = c_aniso * Q with one computed finite-lattice constant",
         point_mode_diff < 1e-12 and point_charge_diff < 1e-12,
         f"c_aniso = {c_aniso:.15f}",
     )
@@ -498,7 +512,7 @@ def main() -> None:
         f"c_aniso = {c_aniso:.15f}",
     )
     record(
-        "the exact local O_h and finite-rank source families satisfy the same one-parameter reduced shell law",
+        "the admitted local O_h and finite-rank source-family comparators satisfy the same one-parameter reduced shell law",
         family_rad_diff < 1e-12
         and family_mode_diff < 1e-12
         and family_shell_diff < 1e-12

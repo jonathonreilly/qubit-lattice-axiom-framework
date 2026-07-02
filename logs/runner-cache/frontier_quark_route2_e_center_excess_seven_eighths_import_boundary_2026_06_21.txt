@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.py
+runner_sha256: 7a4f32bab0c5eef216e10837c2a86bea1bd13114f4a339297985b7ce3d49c570
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+Route-2 E-center excess seven-eighths import-boundary checker
+========================================================================================
+PASS: docs/QUARK_ROUTE2_E_CENTER_EXCESS_SEVEN_EIGHTHS_IMPORT_BOUNDARY_NOTE_2026-06-21.md exists
+PASS: docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md exists
+PASS: docs/QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md exists
+PASS: docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists
+PASS: docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists
+PASS: docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md exists
+PASS: docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md exists
+PASS: docs/HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md exists
+PASS: docs/GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md exists
+PASS: scripts/cl3_radian_bridge_expanded_inventory_2026_05_10_radianexp.py exists
+PASS: docs/QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md exists
+
+A. Source-note status and scope
+PASS: note declares exact-support current status
+PASS: note blocks proposal language
+PASS: note names the active endpoint triple
+PASS: note states the import boundary
+PASS: note avoids banned status-overclaim phrases
+
+B. Exact Route-2 arithmetic
+PASS: rho_E/6 is 7/8 exactly -- 7/8
+PASS: q_E = 1 + rho_E/6 is 15/8 exactly -- 15/8
+PASS: c_TE under granted T-side values is -8/9 exactly -- -8/9
+PASS: e_E=7/8 reverses to rho_E=21/4 exactly
+PASS: e_E=7/8 reverses to q_E=15/8 exactly
+PASS: wrong no-lift e_E=0 gives different center ratio
+
+C. Seven-eighths anchors are visible but role-untyped
+PASS: E-center attempt already records rho_E/6 = 7/8 as target arithmetic
+PASS: E-center attempt says comparator evidence is not proof input
+PASS: hierarchy anchor proves the d=4 7/8 coincidence
+PASS: hierarchy anchor does not define Route-2 E-center objects
+PASS: thermal bridge proves a thermal 7/8 ratio
+PASS: thermal bridge does not define Route-2 E-center objects
+PASS: radian inventory carries APBC 7/8 context
+PASS: radian APBC context does not define Route-2 E-center objects
+
+D. Color-side candidate arithmetic remains only a candidate
+PASS: (N_c^2 - 2)/(N_c^2 - 1) at N_c=3 is 7/8 -- 7/8
+PASS: F_adj at N_c=3 is 8/9, not the E-center excess -- F_adj=8/9
+PASS: E-center excess and F_adj differ by 63/64
+PASS: Rconn typed bridge note says F_adj alone is not a Route-2 readout coefficient
+
+E. Current Route-2 residual surfaces still name the missing E-center role
+PASS: S3 gate names the endpoint triple as the theorem target
+PASS: readout map defines q_E through rho_E/6
+PASS: naturality no-go names the E-center lift discharge form
+PASS: E-center blindness note says a positive repair must see the E-center column
+PASS: quadratic no-go keeps the datum open in its scoped route
+
+F. Typed-edge reachability model
+PASS: hierarchy_d4_eta_zeta_7_8 has no current path to route2_rho_E_21_4 -- d=4 Riemann-Dirichlet / per-mode lattice coincidence
+PASS: thermal_fermi_bose_7_8 has no current path to route2_rho_E_21_4 -- Fermi/Bose thermal-integral weight
+PASS: apbc_fourth_power_7_8 has no current path to route2_rho_E_21_4 -- APBC fourth-power inventory factor
+PASS: color_adj_complement_candidate_7_8 has no current path to route2_rho_E_21_4 -- new candidate arithmetic only
+PASS: adjoining typed bridge from hierarchy_d4_eta_zeta_7_8 reaches rho_E
+PASS: adjoining typed bridge from thermal_fermi_bose_7_8 reaches rho_E
+PASS: adjoining typed bridge from apbc_fourth_power_7_8 reaches rho_E
+PASS: adjoining typed bridge from color_adj_complement_candidate_7_8 reaches rho_E
+PASS: Route-2 internal equivalence reaches c_TE from e_E
+PASS: Route-2 internal equivalence reaches e_E from c_TE
+
+G. Note consistency with runner model
+PASS: note lists all visible anchor classes
+PASS: note states existing same-rational anchors are not interchangeable
+PASS: note names the shortest next positive theorem target
+PASS: note records no audit verdict
+
+========================================================================================
+TOTAL: PASS=53 FAIL=0
+
+----- stderr -----
+

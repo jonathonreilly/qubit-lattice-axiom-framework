@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_positive_diagonal_e_center_selector_no_go_2026_06_21.py
+runner_sha256: 74f60efaa01ec8f5d52d5aa0cb248f33d9d4e20ca827a877373b3ff8b3ee88c6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+ROUTE-2 POSITIVE-DIAGONAL E-CENTER SELECTOR NO-GO
+==============================================================================
+
+A. Source surfaces
+------------------------------------------------------------------------------
+[PASS] new_note exists
+       docs/QUARK_ROUTE2_POSITIVE_DIAGONAL_E_CENTER_SELECTOR_NO_GO_NOTE_2026-06-21.md
+[PASS] readout exists
+       docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+[PASS] positivity exists
+       docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md
+[PASS] classifier exists
+       docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md
+[PASS] axioms exists
+       docs/MINIMAL_AXIOMS_2026-06-05.md
+[PASS] primitive_chain exists
+       docs/S3_TIME_PRIMITIVE_CHAIN_NOTE.md
+[PASS] theta_slice exists
+       docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+[PASS] readout authority supplies E-row endpoint algebra
+[PASS] positivity note says rho_E remains direction data
+[PASS] positive-diagonal classifier supplies one-site and determinant/log forms
+[PASS] Record axiom does not supply readout context or weighting
+[PASS] S3 primitive-chain and theta-slice consumers remain open gates
+
+B. Exact E-row endpoint algebra
+------------------------------------------------------------------------------
+[PASS] rho_E=21/4 maps to q_E=15/8
+       15/8
+[PASS] q_E=15/8 maps back to rho_E=21/4
+       21/4
+[PASS] positivity domain is rho_E > -6
+[PASS] no_lift witness is positive and exact
+       rho=0, q=1
+[PASS] same_as_T witness is positive and exact
+       rho=-1, q=5/6
+[PASS] unit_lift witness is positive and exact
+       rho=1, q=7/6
+[PASS] target witness is positive and exact
+       rho=21/4, q=15/8
+[PASS] integer_four witness is positive and exact
+       rho=4, q=5/3
+
+C. Positive-diagonal additive readouts see q_E but do not select it
+------------------------------------------------------------------------------
+[PASS] identity one-site readout is direct-sum additive
+       W(left+right)=113/24
+[PASS] square one-site readout is direct-sum additive
+       W(left+right)=3577/576
+[PASS] affine one-site readout is direct-sum additive
+       W(left+right)=257/12
+[PASS] determinant of normalized E pair is q_E
+       15/8
+[PASS] determinant quotient distinguishes target from no-lift
+[PASS] determinant quotient distinguishes target from same-as-T
+[PASS] distinguishing q_E is not selecting q_E
+
+D. Continuum of admissible positive E rows
+------------------------------------------------------------------------------
+[PASS] bounded rational scan has many positive rho_E values
+       count=1013
+[PASS] bounded rational scan includes target rho_E
+[PASS] bounded rational scan includes non-target positive witnesses
+[PASS] positive q_E values are likewise non-unique
+       q-count=1013
+[PASS] target is one classifier-admissible member, not a forced value
+
+E. Firewalls
+------------------------------------------------------------------------------
+[PASS] new note states the route pruned
+[PASS] new note preserves future fixed-carrier primitives
+[PASS] new note denies endpoint closure
+[PASS] new note denies audit or status changes
+[PASS] new note has no forbidden retained-status wording
+
+Summary
+------------------------------------------------------------------------------
+TOTAL: PASS=37, FAIL=0
+VERDICT: positive-diagonal E-center readouts see q_E but do not select q_E=15/8.
+
+----- stderr -----
+

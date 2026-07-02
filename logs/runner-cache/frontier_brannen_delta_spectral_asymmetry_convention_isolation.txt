@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py
-runner_sha256: add3677e8ca047b69b969ecfb558681a2b24a521a61560ac6d997851a2ab66be
+runner_sha256: 61f069e480da33ca877075e56f206f58c2b9337621916081f8db8a751b9d0fb5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.74
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
 
@@ -42,12 +42,18 @@ E. Family pun: the weight is (N^2-1)/(12N), NOT (N-1)/N^2 (coincide only at N=3)
 ========================================================================
 [PASS] weight family (N^2-1)/(12N) and rank family (N-1)/N^2 are DIFFERENT functions
 [PASS] they coincide ONLY at N=3 (both = 2/9); diverge at N=2,4,5 -- N=5: (N^2-1)/12N=0.4000 vs (N-1)/N^2=0.1600
+[PASS] downstream delta boundary: finite 2/9 weight row is registered as bounded_theorem -- flavor_asymmetry_2over9_forced_weight_2026-05-31: claim_type=bounded_theorem, note_path=docs/FLAVOR_ASYMMETRY_2OVER9_FORCED_WEIGHT_2026-05-31.md
+[PASS] downstream delta boundary: radian native-unit separation row is registered as bounded_theorem -- koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25: claim_type=bounded_theorem, note_path=docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md
+[PASS] downstream delta boundary: A1 radian bridge irreducibility row is registered as no_go -- koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24: claim_type=no_go, note_path=docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md
+[PASS] downstream delta boundary: delta orientation row is registered as bounded_theorem -- koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08: claim_type=bounded_theorem, note_path=docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md
+[PASS] downstream delta boundary: finite rational 2/9 is not the bare-radian phase by itself -- 2/9, pi*(2/9), 2*pi*(2/9) remain distinct
+[PASS] downstream delta boundary: finite 2/9 family coincidence is N=3-specific -- prevents promoting a family identity from the N=3 coincidence
 
 ========================================================================
 RESULT
 ========================================================================
 
-16/16 checks passed.
+22/22 checks passed.
 The same rational 2/9 appears in the finite C3 doublet weight and in the PDG-derived
 Brannen-angle comparator. The runner does not derive the bare-radian assignment:
 the Plancherel-step angle is (2/9)*pi, the eta-holonomy angle is 2pi*(2/9),

@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
 """Formal-ratio repair runner for the Koide Q-delta linking row.
 
-This runner checks only the exact rational identity:
+This runner checks the exact rational identity:
 
-    Q_d = 2/d, Delta_d = 2/d^2  =>  Delta_d = Q_d/d.
+    Q_d = 2/d, Delta_d = 2/d^2  =>  Delta_d = Q_d/d,
+
+plus the 2026-07-01 decoration corollary on the retained circulant
+character bridge parent: with lambda_k = a + b w^k + bbar w^{-k}
+(w = exp(2 pi i/3)), the spectral ratio functional
+R = sum(lambda^2)/(sum(lambda))^2 equals 1/3 + (2/3)(|b|^2/a^2),
+equals (a_0^2 + 2|z|^2)/(3 a_0^2) in character coefficients, and equals
+Q_3 = 2/3 exactly on the parent's a_0^2 = 2|z|^2 locus (3a^2 = 6|b|^2).
 
 It explicitly avoids the radian/Berry-holonomy bridge, equal-sector-norm
-selector, PDG comparators, and any physical charged-lepton claim.
+selector, PDG comparators, any physical charged-lepton claim, and any
+selection principle for the parent's locus.
 """
 
 from __future__ import annotations
@@ -60,11 +68,17 @@ def check_note_boundary() -> None:
     required = [
         "bounded-support formal algebra",
         "No Berry-holonomy radian bridge",
-        "That exact rational identity is the entire repaired theorem.",
+        "That exact rational identity is the entire freestanding content of this",
         "This repair withdraws both from the binding claim.",
         "The bridge from this formal algebra to physical Koide/Brannen geometry remains a separate open science problem.",
         "Citation firewall (2026-06-18)",
         "Direct citations to this note are allowed only for the definition-level",
+        "Decoration attachment (2026-07-01)",
+        "KOIDE_CIRCULANT_CHARACTER_BRIDGE_NARROW_THEOREM_NOTE_2026-05-09.md",
+        "that the locus is selected",
+        "never as a selection principle",
+        "claim_type_author_hint: decoration",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
     ]
     for needle in required:
         check(f"note contains required boundary: {needle!r}", needle in text)
@@ -76,6 +90,8 @@ def check_note_boundary() -> None:
         "retained selected-line",
         "Berry holonomy in radians is derived",
         "equal-sector-norm input is retained",
+        "the locus is selected by the framework",
+        "derives the selection principle",
     ]
     for needle in forbidden:
         check(f"note avoids overclaim/token: {needle!r}", needle not in text)
@@ -105,6 +121,9 @@ def check_direct_citation_firewall() -> None:
         "formal identity",
         "formal-only",
         "definition-level",
+        "decoration",
+        "decoration-support",
+        "corollary",
         "formal ratio",
         "formal q-delta identity",
         "formal q_d/delta_d identity",
@@ -198,6 +217,84 @@ def check_negative_control() -> None:
     check("d=3 is the unique tested coincidence for Q'_d=2/d", q_alt(3) == q_d(3), f"Q_alt(3)={q_alt(3)}")
 
 
+def ratio_from_squares(a_sq: Fraction, b_sq: Fraction) -> Fraction:
+    """Exact R = (3a^2 + 6|b|^2) / (9a^2) from squared parameters."""
+    return (3 * a_sq + 6 * b_sq) / (9 * a_sq)
+
+
+def check_decoration_corollary_exact() -> None:
+    section("Decoration corollary: exact ratio functional on the parent surface")
+    # (C1)/(C2) rational form and (C3) on-locus value 2/3, in exact arithmetic
+    # via the squared parameters (a^2, |b|^2). Parent T1/T2 give
+    # a_0^2 = 3 a^2 and |z|^2 = 3 |b|^2.
+    on_locus_pairs = [(Fraction(2), Fraction(1)), (Fraction(8), Fraction(4)), (Fraction(2, 9), Fraction(1, 9))]
+    for a_sq, b_sq in on_locus_pairs:
+        check(f"locus 3a^2=6|b|^2 holds for a^2={a_sq}, |b|^2={b_sq}", 3 * a_sq == 6 * b_sq)
+        r = ratio_from_squares(a_sq, b_sq)
+        check(f"(C3) on-locus R = 2/3 for a^2={a_sq}", r == Fraction(2, 3), f"R={r}")
+        a0_sq, z_sq = 3 * a_sq, 3 * b_sq
+        r_char = (a0_sq + 2 * z_sq) / (3 * a0_sq)
+        check(f"(C2) character form matches for a^2={a_sq}", r_char == r, f"R_char={r_char}")
+        check(f"(C3) companion Delta_3 = R/3 = 2/9 for a^2={a_sq}", r / 3 == Fraction(2, 9), f"R/3={r/3}")
+    # Off-locus negative controls: r_weight = |b|^2/a^2 in {0, 1} give R in {1/3, 1}.
+    check("off-locus |b|^2=0 gives R = 1/3", ratio_from_squares(Fraction(1), Fraction(0)) == Fraction(1, 3))
+    check("off-locus |b|^2=a^2 gives R = 1", ratio_from_squares(Fraction(1), Fraction(1)) == Fraction(1))
+    check(
+        "off-locus |b|^2=a^2 does NOT give Q_3",
+        ratio_from_squares(Fraction(1), Fraction(1)) != Fraction(2, 3),
+    )
+    # General rational-weight law (C1): R = 1/3 + (2/3) w for w = |b|^2/a^2.
+    for w in [Fraction(0), Fraction(1, 4), Fraction(1, 2), Fraction(3, 4), Fraction(2), Fraction(7, 5)]:
+        r = ratio_from_squares(Fraction(1), w)
+        check(f"(C1) weight law R = 1/3 + (2/3)w at w={w}", r == Fraction(1, 3) + Fraction(2, 3) * w, f"R={r}")
+
+
+def check_decoration_corollary_numeric() -> None:
+    section("Decoration corollary: numeric eigenvalue-triple confirmation")
+    import cmath
+    import math
+
+    w = cmath.exp(2j * cmath.pi / 3)
+    tol = 1e-12
+    # (a, b) pairs: two on-locus (a = sqrt(2)|b|), two off-locus; complex b phases.
+    cases = [
+        ("on-locus b=1", math.sqrt(2.0), 1.0 + 0.0j),
+        ("on-locus b=exp(i*0.7)/3", math.sqrt(2.0) / 3.0, cmath.exp(0.7j) / 3.0),
+        ("off-locus r_w=1", 1.0, cmath.exp(0.3j)),
+        ("off-locus r_w=0.2", 1.0, math.sqrt(0.2) * cmath.exp(1.1j)),
+    ]
+    for label, a, b in cases:
+        lam = [a + b * w**k + b.conjugate() * w**(-k) for k in range(3)]
+        check(f"{label}: eigenvalues are real", all(abs(l.imag) < tol for l in lam))
+        lam_r = [l.real for l in lam]
+        s1 = sum(lam_r)
+        s2 = sum(l * l for l in lam_r)
+        check(f"{label}: sum(lambda) = 3a", abs(s1 - 3 * a) < tol, f"s1={s1:.15f}")
+        check(
+            f"{label}: sum(lambda^2) = 3a^2 + 6|b|^2",
+            abs(s2 - (3 * a * a + 6 * abs(b) ** 2)) < tol,
+            f"s2={s2:.15f}",
+        )
+        r_num = s2 / (s1 * s1)
+        r_weight = abs(b) ** 2 / (a * a)
+        check(
+            f"{label}: R matches 1/3 + (2/3)|b|^2/a^2",
+            abs(r_num - (1.0 / 3.0 + 2.0 / 3.0 * r_weight)) < tol,
+            f"R={r_num:.15f}",
+        )
+        a0 = s1 / math.sqrt(3.0)
+        zc = (lam_r[0] + lam_r[1] * w.conjugate() + lam_r[2] * w) / math.sqrt(3.0)
+        check(
+            f"{label}: character form (a_0^2+2|z|^2)/(3a_0^2) matches R",
+            abs((a0 * a0 + 2 * abs(zc) ** 2) / (3 * a0 * a0) - r_num) < tol,
+        )
+        on_locus = abs(3 * a * a - 6 * abs(b) ** 2) < tol
+        if on_locus:
+            check(f"{label}: on-locus R = 2/3", abs(r_num - 2.0 / 3.0) < tol, f"R={r_num:.15f}")
+        else:
+            check(f"{label}: off-locus R != 2/3", abs(r_num - 2.0 / 3.0) > 1e-6, f"R={r_num:.15f}")
+
+
 def main() -> int:
     print("Koide Q-delta formal ratio repair")
     check_note_boundary()
@@ -205,6 +302,8 @@ def main() -> int:
     check_exact_identity()
     check_d3_values()
     check_negative_control()
+    check_decoration_corollary_exact()
+    check_decoration_corollary_numeric()
     print("\n" + "=" * 88)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 88)

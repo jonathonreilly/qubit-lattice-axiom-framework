@@ -702,9 +702,9 @@ def run_source_guards():
         root / "docs" / "RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
         root / "docs" / "AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
     ]
-    check("F source note exists", note_path.exists(), str(note_path))
+    check("F source note exists", note_path.exists(), str(note_path.relative_to(root)))
     for dep in dep_paths:
-        check("F dependency exists " + dep.name, dep.exists(), str(dep))
+        check("F dependency exists " + dep.name, dep.exists(), str(dep.relative_to(root)))
 
     if note_path.exists():
         note_text = note_path.read_text()
@@ -723,7 +723,8 @@ def run_source_guards():
         require_contains("F dependency marker " + dep.name, text, marker)
 
     preserve = [
-        "set only by the independent audit lane",
+        "independent audit lane only",
+        "Central-scalar record registration",
         "gauge-central",
         "derived, not assumed",
         "registration-centrality",
@@ -739,7 +740,17 @@ def run_source_guards():
     for marker in preserve:
         require_contains("F note preserve marker", note_text, marker)
 
+    canonical = [
+        "**Claim type:** bounded_theorem",
+        "**Claim scope:** Central-scalar record registration",
+        "**Status authority:** independent audit lane only.",
+    ]
+    for marker in canonical:
+        require_contains("F canonical source metadata", note_text, marker)
+
     forbidden = [
+        "**Audit " + "status:**",
+        "**Status:** " + "PASS",
         "audit" + "_" + "status" + ":",
         "effective" + "_" + "status" + ":",
         "only" + " " + "route",

@@ -71,6 +71,21 @@ These axioms state only their named primitive content. Further physical
 structure requires derivation, bridge, explicit admission, or approved
 primitive registration before use as a premise.
 
+**Supplied-structure readout discipline.** A scalar readout is admissible
+content only when it is well-defined from supplied structure alone: its value
+must be invariant under every auxiliary choice the framework has not supplied.
+Supplied structure means these four axioms, the approved primitives in
+`docs/audit/data/axiom_premise_nodes.json`, explicit admissions, and the
+realized state through the registered pointwise interface — nothing else.
+Dependence on an unsupplied choice, such as an imported basis, frame, or
+convention, is not readable content.
+
+**Rule totality.** A prescription offered as a framework-level readout or
+selection law must be well-defined at every law-admissible realized state in
+its declared domain. A prescription defined only at particular realized states
+remains admissible as pointwise evaluation under the realized-state primitive,
+but may not serve as a selection law.
+
 ## Audit-Pipeline Treatment
 
 The machine-readable source of this axiom set is the stable `minimal_axioms`

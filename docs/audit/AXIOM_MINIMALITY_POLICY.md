@@ -76,6 +76,30 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-02 -- Qualification clarification: supplied-structure readout
+  discipline and rule totality.** Two discipline clauses are added to the
+  Qualification section of `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved
+  wording update, 2026-07-02; source file edited in place, bundled same-day
+  with the Admissibility clarification below so the premise-hash re-audit
+  waves coincide). The clauses state readout discipline only: a scalar
+  readout must be well-defined from supplied structure alone (invariant under
+  every unsupplied auxiliary choice, with supplied structure meaning the four
+  axioms, approved primitives, explicit admissions, and the realized state
+  through the registered pointwise interface); and a prescription offered as
+  a framework-level readout or selection law must be well-defined at every
+  law-admissible realized state in its declared domain, while pointwise
+  evaluation under the realized-state primitive remains admissible. They name
+  no operator, basis, weighting, selector, kinetic class, or value; they add
+  no axiom and no primitive; downstream consequences remain theorem content
+  subject to independent audit. In the same update,
+  `docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md`
+  is recorded as a labeling-convention ratification (the import-retirement
+  path, not new structure): the singlet/doublet outcome cells and the
+  unit/complement generator channels on the supplied `hw=1` circulant class
+  are two namings of the same two cells of one canonical `C_3` generation
+  readout context. The premise-hash guard invalidates prior direct
+  `minimal_axioms` audits; the independent audit lane re-audits.
+
 - **2026-07-02 -- Admissibility clarification: availability varies with the
   neighbors.** The Admissibility clause now reads: "For each site, the
   available possibilities are determined by, and vary with, the

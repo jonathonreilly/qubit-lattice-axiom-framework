@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1519 |
-| Retained-grade rows, including boxed decorations | 1400 |
+| Applied audit verdicts | 1520 |
+| Retained-grade rows, including boxed decorations | 1401 |
 | Retained positive theorems | 205 |
-| Retained no-go rows | 208 |
+| Retained no-go rows | 209 |
 | Retained bounded rows | 926 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1627 |
+| Unaudited rows | 1626 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 44 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1629 |
-| Ready rows | 87 |
+| Total pending rows | 1628 |
+| Ready rows | 86 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
-| Medium pending | 463 |
+| Medium pending | 462 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`car_from_positivity_neutrality_note_2026-06-02`](../../docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md) - medium; unaudited
 - [`koide_fisher_rao_spherical_reorganization_note_2026-06-01`](../../docs/KOIDE_FISHER_RAO_SPHERICAL_REORGANIZATION_NOTE_2026-06-01.md) - medium; unaudited
 - [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08`](../../docs/CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 - [`cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17`](../../docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
+- [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 974 |
-| Leaf nodes | 1560 |
+| Medium nodes | 976 |
+| Leaf nodes | 1558 |
 
 Top load-bearing rows by graph score:
 

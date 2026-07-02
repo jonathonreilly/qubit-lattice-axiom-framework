@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 899 |
+| **retained_bounded** | 900 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1684 |
+| unaudited | 1683 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 27 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1306 |
+| `audited_clean` | 1307 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 27 |
-| `unaudited` | 2010 |
+| `unaudited` | 2009 |
 
 | claim_type | count |
 |---|---:|
@@ -111,7 +111,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1127 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
 | 10 | `native_gauge_closure_note` | positive_theorem | critical | 1400 | 40.45 | `audited_clean` | **retained** |
@@ -723,6 +723,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_berezin_detc_vs_detr_fork_mechanism_note_2026-06-04` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
+| `koide_berry_monopole_bridge_reduction_note_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_carrier_scoring_needs_nontrivial_modular_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -10200,6 +10201,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The r = 1/2 cell follows from holomorphic polarization, i.e. choosing the doublet complex structure J and counting the doublet as one complex slot, not merely from switching Gaussian to Berezin statistics.  _(class `A`)_
 - **chain closes:** True — The cited Q lever is retained, and the four cell assignments are algebraic model checks in the provided runner; no external comparator or unretained premise is used to reach the scoped mechanism statement. The note explicitly leaves derivation or adoption of J open, so that missing positive selector is outside the audited closure.
 - **rationale:** The runner source constructs the C3 idempotents, real split, doublet complex structure, determinant/Pfaffian checks, and the four modeled cells rather than merely printing pass lines. The load-bearing conclusion is an algebraic comparison of explicitly scoped cells, so it is class A rather than a first-principles class C derivation. The cited physics authorities are retained-grade for the uses made here, and the broad no-go is explicitly demoted rather than claimed.
+- **auditor confidence:** high
+
+### `koide_berry_monopole_bridge_reduction_note_2026-05-31`
+
+- **Note:** [`KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md`](../../docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite matrix support only: native C3 index projection, Fourier-rigid zero Berry curvature for the circulant mass, nonzero Berry in a separate anticommuting two-band comparator, the native circulant commutation obstruction, and standalone Q(r=1/2)=2/3 and Q(r=1)=1 identities; no physical r-weighting or Q-branch selection is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T013028Z-89154bbe-koide_berry_monopole_bri`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The native circulant mass is diagonalized by fixed C3 Fourier modes, so its doublet-coordinate Berry curvature is zero, while a separate Gamma_chi-anticommuting two-band Pauli comparator has nonzero Berry curvature and the Q(r) identities remain standalone algebra.  _(class `A`)_
+- **chain closes:** True — The finite statements close by direct circulant/Fourier algebra, the retained same-factor anticommuting obstruction, the Pauli two-band Berry calculation, and the elementary Q(r) formula. The missing Berry/chirality-to-r selection bridge is explicitly outside the claim boundary, so it is not needed for this bounded conclusion.
+- **rationale:** The runner performs actual finite-matrix checks rather than merely printing the claimed result, and the key identities also recompute independently: Tr(C^-1 H)/3=b, circulant eigenvectors are parameter-independent Fourier modes, nonzero anticommuting Pauli Berry follows from the standard two-band curvature, and Q(r)=1/3+2r/3. All cited authorities in the restricted packet are retained-grade for bounded use. The note does not promote the finite comparison into a physical readout, branch-selection rule, or off-generation chiral coupling theorem.
 - **auditor confidence:** high
 
 ### `koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29`

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_lsp_signed_record_source_readout_support_note_2026-05-24"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_berry_monopole_bridge_reduction_note_2026-05-31"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
         "koide_berry_monopole_bridge_reduction_note_2026-05-31",
         "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
         "observable_principle_record_scalar_map_no_go_note_2026-06-05",
         "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+        "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e08530d90a5c759bc0ef74db883b97e817e23b15766b9271be264221da974da0",
+      "note_hash": "a4e9c476d63c10f7289df3da047bf77ece1806239437db6e6232680f401ecd0f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

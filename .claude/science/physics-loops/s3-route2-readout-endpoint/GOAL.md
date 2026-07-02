@@ -1,16 +1,23 @@
 # Goal
 
-Block24 tests the magnitude/typecast target:
+Run a physics-loop campaign on the S3/Route-2 readout endpoint triple.
 
-> Is `|c_TE| = F_adj` a weaker scalar condition than the missing E-center
-> readout selection?
+The current block attacks the typed magnitude step from first principles. It
+asks whether the accepted source bank can identify the scalar color support
+`F_adj = 8/9` with the Route-2 magnitude `|c_TE|` without inserting a hidden
+normalization.
 
-Result: no. In the positive-lift family,
+This block does not run audits, does not apply verdicts, does not push to
+`main`, does not refresh old PR branches, and does not inspect PR conflict
+state.
+
+## Block 25 Target
+
+Try to source the unit typecast normalization
 
 ```text
-rho_E = 10 / |c_TE| - 6.
+|c_TE| = F_adj
 ```
 
-Thus each magnitude selects exactly one E-center readout entry. The equality
-`|c_TE| = F_adj` is useful only if a future theorem independently types that
-color-domain magnitude into Route-2 readout.
+or, if that fails, leave a precise no-go packet showing what theorem remains
+missing.

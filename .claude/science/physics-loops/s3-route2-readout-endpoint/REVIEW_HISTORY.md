@@ -1,29 +1,16 @@
 # Review History
 
-## Block24 Local Verification
+## Block25
 
-```text
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_magnitude_typecast_equivalence_no_go_2026_06_21.py
-TOTAL: PASS=33, FAIL=0
+No external review command was run. This follows the current user constraint:
+produce science PRs only, with later review/cherry-pick handled by the reviewer.
 
-PYTHONPATH=scripts python3 scripts/frontier_route2_readout_record_positivity_no_go.py
-TOTAL: PASS=8 FAIL=0
+Local self-checks completed:
 
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py
-TOTAL: PASS=28, FAIL=0
-
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
-PASS=11 FAIL=0
-
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py
-TOTAL: PASS=103, FAIL=0
-
-python3 -m py_compile scripts/frontier_quark_route2_source_domain_magnitude_typecast_equivalence_no_go_2026_06_21.py
-pass
-
-git diff --check
-pass
-
-branch-local wording scan
-pass
-```
+- Block25 runner: `PASS=48 FAIL=0`.
+- Rconn matching-rule no-go certificate: `PASS=30 FAIL=0`.
+- EW current Fierz channel decomposition: `PASS=31 FAIL=0`.
+- Rconn kappa register-not-read: `PASS=20 FAIL=0`.
+- Route-2 source-domain bridge no-go: `PASS=103 FAIL=0`.
+- Route-2 exact readout map: `PASS=11 FAIL=0`.
+- `py_compile`: pass.

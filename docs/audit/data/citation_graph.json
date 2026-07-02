@@ -56302,10 +56302,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "no_per_site_chirality_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "gmn_vev_annihilator_l4_support_note_2026-07-02"
     },
     {
@@ -56331,6 +56327,10 @@
     {
       "from": "repo.front_door_status",
       "to": "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.repo_organization",
@@ -108439,17 +108439,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "no_per_site_chirality_theorem_note_2026-05-02",
         "gmn_vev_annihilator_l4_support_note_2026-07-02",
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "cl3_taste_generation_theorem",
-        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18"
+        "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ddaeb4c503b2090872e07e07e0ab321447274b693533e3346cbbf1dd38e5af7a",
+      "note_hash": "c861b2c8510f34dad832591438c9244dcf00ff44f2ea5fd60d53f7e1f9699ba2",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -2996,9 +2996,9 @@
       "state": "retired"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audit_in_progress",
       "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audit_in_progress",
       "audit_question": "Highest single reach (960) but load-bearing step invokes a canonical fermion normalization (H_unit ~ 1/sqrt(N_c N_iso)) -- the same normalization-convention class that blocks the g_bare cluster.",
       "claim_id": "yt_ward_identity_derivation_theorem",
       "expected_current_audit_status": "audited_clean",

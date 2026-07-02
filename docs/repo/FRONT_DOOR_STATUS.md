@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3596 |
-| Applied audit verdicts | 1386 |
+| Applied audit verdicts | 1387 |
 | Retained-grade rows, including boxed decorations | 1311 |
 | Retained positive theorems | 192 |
 | Retained no-go rows | 194 |
 | Retained bounded rows | 869 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 24 |
-| Unaudited rows | 1890 |
+| Unaudited rows | 1889 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 26 |
+| Audited conditional rows | 27 |
 | Audited renaming rows | 21 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 14 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1901 |
-| Ready rows | 124 |
+| Total pending rows | 1900 |
+| Ready rows | 123 |
 | Cycle-break targets | 14 |
-| Critical pending | 403 |
+| Critical pending | 402 |
 | High pending | 289 |
 | Medium pending | 510 |
 | Leaf pending | 699 |
 
 Next ready rows by queue order:
 
-- [`hypercharge_identification_note`](../../docs/HYPERCHARGE_IDENTIFICATION_NOTE.md) - critical; unaudited
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
 - [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 - [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18`](../../docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md) - critical; unaudited
 - [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
 - [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; unaudited
+- [`axiom_first_cluster_decomposition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -61,11 +61,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 184 |
+| critical | `unaudited` | 183 |
 | high | `unaudited` | 151 |
 | medium | `unaudited` | 95 |
 | medium | `open_gate` | 3 |
 | high | `audited_numerical_match` | 2 |
+| critical | `audited_conditional` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |

@@ -1,0 +1,84 @@
+loop_slug: s3-route2-e-center-inverse-square-source-law
+campaign_objective: >-
+  Run physics-loop for 12 hours on the S3/Route-2 readout endpoint triple;
+  attack s3_time_theta_to_slice_coupling_note from first principles and make
+  review PRs for coherent science blocks without auditing, pushing to main, or
+  refreshing existing PRs onto main.
+block: 70
+branch: physics-loop/s3-route2-e-center-qe-15-8-block70-20260621
+base: origin/main
+base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
+local_science_commit: ea7af1b378f1620b3a99427bfec1f879714a5052
+remote_science_commit: fdb1e44613051c888ac154d236866cd658a36572
+worktree: /private/tmp/cl3-physics-loop-s3-route2-e-center-qe-15-8-block70-20260621
+date: 2026-06-21
+mode: campaign
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+active_route: direct E-center source/readout inverse-square law firewall
+hard_residual: >-
+  Derive or sharply constrain q_E=15/8 by reducing the target to the exact
+  inverse-square source/readout law q_E/q_T=(w_E/w_T1)^-2 and checking the
+  current named source bank.
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+repo_lock:
+  mode: degraded_branch_local
+  reason: "python3 scripts/automation_lock.py status fails with Permission denied on /Users/jonreilly"
+files_touched:
+  - docs/QUARK_ROUTE2_E_CENTER_INVERSE_SQUARE_SOURCE_LAW_FIREWALL_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_e_center_inverse_square_source_law_firewall_2026_06_21.py
+  - outputs/frontier_quark_route2_e_center_inverse_square_source_law_firewall_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-e-center-inverse-square-source-law/
+commands_run:
+  - "git fetch origin"
+  - "python3 scripts/automation_lock.py status"
+  - "python3 -m py_compile scripts/frontier_quark_route2_e_center_inverse_square_source_law_firewall_2026_06_21.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_inverse_square_source_law_firewall_2026_06_21.py | tee outputs/frontier_quark_route2_e_center_inverse_square_source_law_firewall_2026_06_21.txt"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_oh_seven_site_star_shell_leverage_positive_theorem_2026_06_10.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_route2_readout_record_positivity_no_go.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_box_size_scan_2026_06_10.py"
+command_results:
+  - "new clean worktree from origin/main at 4ee5700917feb377da8ece8b6b2934b9d65249ad"
+  - "automation_lock status unavailable: Permission denied on /Users/jonreilly; continuing under degraded branch-local lock"
+  - "py_compile: pass"
+  - "block70 runner: TOTAL: PASS=57, FAIL=0"
+  - "frontier_quark_route2_exact_readout_map.py: PASS=11 FAIL=0"
+  - "frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py: TOTAL: PASS=46, FAIL=0"
+  - "frontier_quark_route2_e_center_blindness_no_go.py: TOTAL: PASS=14, FAIL=0"
+  - "frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py: TOTAL: PASS=7 FAIL=0"
+  - "frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py: PASS=11 FAIL=0"
+  - "frontier_oh_seven_site_star_shell_leverage_positive_theorem_2026_06_10.py: TOTAL: PASS=5 FAIL=0"
+  - "frontier_route2_readout_record_positivity_no_go.py: TOTAL: PASS=8 FAIL=0"
+  - "frontier_quark_route2_source_domain_bridge_no_go.py: TOTAL: PASS=103, FAIL=0"
+  - "frontier_s3_time_theta_to_slice_coupling.py: PASS=12 FAIL=0"
+  - "frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py: PASS=64 FAIL=0"
+  - "frontier_quark_route2_qe_box_size_scan_2026_06_10.py: TOTAL: PASS=7 FAIL=0"
+  - "frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py: intentionally not run because this campaign has a known pre-existing tolerance issue on that runner; block70 uses note-marker coverage for the readout-primitive residual surface."
+imports_retired:
+  - "The vague direct E-center target is reduced to the exact inverse-square source/readout law."
+open_imports:
+  - "A theorem deriving q_E/q_T=(w_E/w_T1)^-2 from named source/readout structure."
+  - "An equivalent E-center distinguishing primitive."
+  - "A typed signed color/support bridge, if the proof routes through R_conn."
+  - "An explicit owner convention selecting a readout map, if the route becomes conventional rather than derived."
+review_disposition: local_firewall_pass_review_deferred_to_pr_reviewer
+pr_status: open
+pr_number: 4601
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4601
+pr_identity_view: >-
+  {"baseRefName":"main","headRefName":"physics-loop/s3-route2-e-center-qe-15-8-block70-20260621","number":4601,"state":"OPEN","title":"[physics-loop] s3-route2-e-center-inverse-square-source-law block70 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4601"}
+next_exact_action: >-
+  Pivot to the signed R_conn center bridge theorem or a direct derivation of
+  the inverse-square source/readout law.
+stop_condition: none

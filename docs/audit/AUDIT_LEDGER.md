@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 912 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 32 |
-| unaudited | 1653 |
+| unaudited | 1652 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1329 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1979 |
+| `unaudited` | 1978 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 508 |
-| `medium` | 929 |
+| `high` | 509 |
+| `medium` | 928 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -1484,6 +1484,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hierarchy_dimensional_compression_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -8026,6 +8027,23 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The scoped GB-S1a claim closes by direct algebraic instantiation of the cited weak-field response theorem with phi specialized to phi_GB. The broader Gate B source packet remains outside this audited scope.
 - **rationale:** The cited weak-field authority already provides S_test(phi;x)=L_test(1-phi(x)); the source note's load-bearing move is to substitute the runner-local phi_GB and observe the identical linear action shape. The runner source confirms this is not a first-principles Gate B source derivation: it performs textual dependency checks plus exact algebraic identity, additivity, and normalization-degeneracy checks. Because the scoped result adds no independent physical bridge beyond the retained-bounded parent theorem and explicitly excludes the rest of the Gate B packet, the correct classification is algebraic decoration rather than a new bounded theorem.
 - **decoration parent:** `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`
+- **auditor confidence:** high
+
+### `gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08`
+
+- **Note:** [`GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md`](../../docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Conditional finite-algebra support on a supplied C^3 x C^2 carrier, plus the stated open gate that the tested discriminator classes do not select the physical gauging subgroup.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T033011Z-79107353-gauge_algebra_supplied_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied C^3(base) x C^2(fiber) carrier, the factor-preserving algebra is su(N_c) + su(2) + u(1), while the unrestricted carrier algebra is u(6), so the cut to the dim-12 algebra is the supplied factor-locality/MR_color premise and not derived.  _(class `A`)_
+- **chain closes:** False — The finite matrix algebra closes once the carrier split and factor-preservation rule are supplied. The chain does not close from the cited retained inputs because MR_color/carrier factorization, physical factor-algebra preservation, gauging selection, and chiral su(2)_L remain unproved supplied premises.
+- **rationale:** Issue: the runner verifies exact algebraic consistency on the supplied carrier but does not derive the carrier, MR_color, physical factor-locality, or chiral weak gauging. Why this blocks: the dim-12 algebra is selected only after importing the factor-preserving rule against full u(6) and non-factor-local conjugates. Repair target: a retained bridge deriving or explicitly admitting MR_color plus the physical factor-algebra preservation/gauging-selection principle and chiral su(2)_L. Claim boundary until fixed: conditional algebraic support and a four-discriminator open gate, not an axiom-level SM gauge-algebra derivation.
+- **open / conditional deps cited:**
+  - `COLOR_SU3_MATTER_REALIZATION_RESIDUAL_MAP_2026-06-05.md`
+  - `CL3_COLOR_AUTOMORPHISM_THEOREM.md`
+  - `GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md`
 - **auditor confidence:** high
 
 ### `gauge_factor_local_selector_normalizer_theorem_note_2026-06-18`

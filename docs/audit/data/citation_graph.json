@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+      "to": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
+      "to": "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
+        "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
         "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08"
+        "ew_current_traceless_generator_selector_no_go_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "03fa8e51ba7a8020e3107b0086fe783d518b0a05b694e6ce96a2702f409025b1",
+      "note_hash": "e6d8a04f51d17069ffdb9a3abb4dab06bd956b083e27f809019b3737aaf4357f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

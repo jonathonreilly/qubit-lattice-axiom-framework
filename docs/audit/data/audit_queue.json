@@ -1,9 +1,9 @@
 {
   "by_criticality": {
     "critical": 301,
-    "high": 283,
+    "high": 284,
     "leaf": 584,
-    "medium": 487
+    "medium": 485
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -8720,6 +8720,32 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "ew_current_matching_rule_open_gate_note_2026-05-03",
+        "ew_current_fierz_channel_decomposition_note_2026-05-01",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29"
+      ],
+      "direct_in_degree": 5,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.454,
+      "note_path": "docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_ew_current_traceless_generator_selector_no_go.py",
+      "transitive_descendants": 30
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17799,38 +17825,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "color_su3_matter_realization_residual_map_2026-06-05",
-        "graph_first_su3_integration_note",
-        "cl3_color_automorphism_theorem",
-        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
-        "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.785,
-      "note_path": "docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gauge_algebra_supplied_carrier_2026_06_08.py",
-      "transitive_descendants": 38
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17978,32 +17972,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "ew_current_traceless_generator_selector_no_go_note_2026-05-03",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_current_matching_rule_open_gate_note_2026-05-03",
-        "ew_current_fierz_channel_decomposition_note_2026-05-01",
-        "axiom_first_lattice_noether_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.0,
-      "note_path": "docs/EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_NO_GO_NOTE_2026-05-03.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_ew_current_traceless_generator_selector_no_go.py",
-      "transitive_descendants": 15
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49688,6 +49656,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 98,
-  "total_pending": 1655
+  "ready_count": 97,
+  "total_pending": 1654
 }

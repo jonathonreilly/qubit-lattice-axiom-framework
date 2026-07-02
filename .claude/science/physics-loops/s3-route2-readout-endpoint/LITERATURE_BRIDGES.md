@@ -1,5 +1,5 @@
 # Literature Bridges
 
-No literature bridge was used in block37.
+No literature bridge was used in block38.
 
-The result uses exact integer-rank arithmetic, Route-2 endpoint algebra, and repo-internal SU(3) support only.
+The runner uses exact SU(3) structure constants and current repo source-bank notes.

@@ -1,11 +1,5 @@
 # Physics Loop Goal: S3 / Route-2 Readout Endpoint
 
-Attack the S3/Route-2 readout endpoint triple
+Attack the S3/Route-2 readout endpoint triple and package coherent science blocks as PRs. Do not audit, apply verdicts, push to `main`, refresh existing PRs, or check PR conflicts.
 
-```text
-(beta_T/alpha_T, alpha_T/alpha_E, beta_E/alpha_E) = (-1, -2, 21/4)
-```
-
-from first principles, without auditing or applying verdicts. Each coherent science block should land on its own PR branch, not on `main`.
-
-Current block: block37, conditional single-adjoint-line source selector for the missing E-center lift.
+Current block: block38, current-bank no-go for deriving the single-adjoint-line selector from SU(3)-equivariant source geometry.

@@ -8,10 +8,12 @@
   free.
 
 - **E-center-blind endpoint repairs.**
-  Main already records that shell normalization, T-side data, channel
-  preservation, and low-rational filters see the same data for all `rho_E`.
+  Main already records that E-center-blind constraints do not select `rho_E`.
 
-- **Current block18 coefficient-selection boundary.**
-  Target-free selectors do not pick `rho_E=21/4`; a quadratic variational
-  selector hits the target only by importing `B/A=-15/4`; inverse-square
-  weighting lands exactly but remains an unproved selector.
+- **Coefficient-selection target-free route.**
+  PR #4547: target-free selectors do not pick `rho_E=21/4`; inverse-square
+  weighting remains the missing selector.
+
+- **Current block19 consumer inventory.**
+  Not a no-go: exact support for downstream rho-independent consumers with
+  `delta_E=0`.

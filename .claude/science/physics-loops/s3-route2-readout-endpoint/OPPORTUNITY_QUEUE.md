@@ -1,19 +1,18 @@
 # Opportunity Queue
 
-Ranked after block18.
+Ranked after block19.
 
-1. **Endpoint-independent consumer inventory.**
-   Produce support/firewall packets for direct consumers that are independent
-   of unresolved `rho_E`.
+1. **Direct consumer follow-up packet.**
+   Search downstream Route-2/S3-time notes for consumers whose carriers satisfy
+   `delta_E=0` and package exact rho-independent support if found.
 
-2. **Source/readout selector theorem search.**
-   Only pursue if a new typed object can distinguish inverse-square weighting
-   or exponent `n=2` without importing the target.
-
-3. **Theta-to-slice parent demotion packet if needed.**
+2. **Theta-to-slice parent demotion packet if needed.**
    If review asks for stricter wording, package the parent row as exact
    conditional family plus inherited readout obstruction only.
 
-4. **Archive coefficient-selection route.**
-   Keep the block18 no-go boundary as the live record unless new selector
-   premises appear.
+3. **Source/readout selector theorem search.**
+   Reopen only if new typed E-center source/readout structure appears.
+
+4. **Archive endpoint-positive Route-2 route.**
+   Current endpoint-positive paths have been narrowed to the unresolved
+   E-center/source-readout selector.

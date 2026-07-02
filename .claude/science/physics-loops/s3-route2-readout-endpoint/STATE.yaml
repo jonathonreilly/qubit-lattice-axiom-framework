@@ -1,16 +1,16 @@
 loop: s3-route2-readout-endpoint
 mode: campaign
 date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block18-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block19-20260621
 base: origin/main
-base_commit: cbb67a6e6
-block: 18
-active_route: coefficient_selection_boundary
+base_commit: 201b4e8f5
+block: 19
+active_route: endpoint_independent_consumer_inventory
 target_triple: "(-1, -2, 21/4)"
-target_residual: "rho_E = beta_E/alpha_E = 21/4, equivalently lambda = q_E/q_T = 9/4"
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
+target_residual: "rho_E = beta_E/alpha_E = 21/4"
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
 proposal_allowed: false
 bare_retained_allowed: false
 audit_actions: none
@@ -19,16 +19,16 @@ pr_conflict_checks: none
 lock_mode: degraded
 lock_degraded_reason: "repo automation lock helper errored with permission denied for /Users/jonreilly; branch-local independent worktree used"
 files_touched:
-  - docs/QUARK_ROUTE2_COEFFICIENT_SELECTION_BOUNDARY_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_coefficient_selection_boundary_2026_06_21.py
-  - logs/runner-cache/frontier_quark_route2_coefficient_selection_boundary_2026_06_21.txt
+  - docs/S3_TIME_ENDPOINT_INDEPENDENT_CONSUMER_INVENTORY_NOTE_2026-06-21.md
+  - scripts/frontier_s3_time_endpoint_independent_consumer_inventory_2026_06_21.py
+  - logs/runner-cache/frontier_s3_time_endpoint_independent_consumer_inventory_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 claim_state_movement:
-  summary: "No-go boundary for target-free coefficient selection: positivity and E-center-blind data leave rho_E free; common target-free selectors pick rho_E=-1,0,3/2 or leave it free; quadratic selectors hit 21/4 only by importing target-equivalent coefficients; inverse-square weighting lands but remains the missing selector."
+  summary: "Exact-support inventory: direct rho_E dependence is rank one through the delta_E coordinate; the independent consumer subspace is exactly delta_E=0, spanned by E-shell, T-shell, and T-center."
   import_retired: []
   imports_exposed:
-    - "A theorem selecting inverse-square projector weighting or exponent n=2 remains open."
-    - "A theorem deriving the variational coefficient ratio B/A=-15/4 remains open."
+    - "Any consumer with nonzero delta_E still inherits rho_E."
+    - "A unique theta-to-slice theorem still requires the upstream readout endpoint."
 prior_pending_blocks_not_main_dependencies:
   - "PR #4537 block08 exact-support: E-center carrier firewall"
   - "PR #4538 block09 no-go: reciprocal projector degree no-go"
@@ -40,20 +40,19 @@ prior_pending_blocks_not_main_dependencies:
   - "PR #4544 block15 no-go: nonseparable quadratic equivariant map coefficient freedom"
   - "PR #4545 block16 exact-support: theta-to-slice rho_E dependency firewall"
   - "PR #4546 block17 conditional-support: finite-frame/Riesz dual-leg boundary"
+  - "PR #4547 block18 no-go: coefficient-selection boundary"
 verification:
-  new_runner: "PASS=9 FAIL=0"
+  new_runner: "PASS=8 FAIL=0"
   exact_readout_map: "PASS=11 FAIL=0"
-  ell_e_structural_narrowing: "PASS=47 FAIL=0"
-  e_center_blindness: "PASS=14 FAIL=0"
-  kappa_covariance_no_go: "PASS=7 FAIL=0"
-  quadratic_covariance_no_go: "PASS=11 FAIL=0"
+  exact_time_coupling: "PASS=8 FAIL=0"
   parent_theta_to_slice_runner: "PASS=12 FAIL=0"
+  primitive_chain_reaudit: "PASS=24 FAIL=0"
   py_compile: pass
   git_diff_check: pass
   overclaim_scan: pass
 pr:
-  number: 4547
-  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4547"
+  number: 4548
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4548"
   state: OPEN
-next_exact_action: "Create block19 for endpoint-independent consumer inventory."
-stop_condition: "Do not stop campaign merely because this block is a no-go boundary; continue while runtime remains."
+next_exact_action: "Search for a concrete downstream delta_E=0 consumer to package, or pick the next highest-ranked Route-2/S3 direct consumer."
+stop_condition: "Do not stop campaign merely because this support packet does not close the endpoint; continue while runtime remains."

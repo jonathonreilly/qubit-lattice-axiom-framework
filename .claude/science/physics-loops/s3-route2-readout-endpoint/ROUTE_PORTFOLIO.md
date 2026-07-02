@@ -2,20 +2,18 @@
 
 ## Current Block
 
-1. **Coefficient-selection boundary.**
-   Tests target-free selectors, quadratic variational anchors, free
-   coefficient ratios, and projector-weight powers on the positive E-row
-   projective family.
+1. **Endpoint-independent consumer inventory.**
+   Classify the direct theta-to-slice consumers by the `delta_E` coordinate.
 
 ## Remaining Routes
 
-2. **Endpoint-independent consumer inventory.**
-   Identify downstream Route-2 / theta-to-slice statements that can be
-   certified independent of unresolved `rho_E`.
+2. **Direct consumer follow-up packets.**
+   If a downstream note uses only `delta_E=0` carriers, package it as
+   rho-independent exact support.
 
-3. **Source/readout split theorem search.**
-   Only reopen if a new typed source/readout object appears that can select
-   inverse-square weighting or exponent `n=2`.
+3. **Source/readout selector theorem search.**
+   Only pursue if a new typed source/readout object appears that can select
+   the E-center lift.
 
 4. **Theta-to-slice parent demotion packet if needed.**
    If later review asks for stricter status language, isolate the parent as
@@ -23,13 +21,8 @@
 
 ## Stuck Fan-Out Synthesis
 
-- Positivity/admissibility: leaves interval `rho_E>-6`.
-- E-center-blind data: identical for all `rho_E`.
-- Natural target-free anchors: pick `rho_E=-1`, `0`, or `3/2`.
-- General quadratic variation: free coefficient ratio; target requires
-  `B/A=-15/4`.
-- Projector-weight power law: target requires exponent `n=2`, which is the
-  missing selector.
-
-Best next science move after block18: pivot to endpoint-independent consumer
-inventory unless a new typed source/readout selector appears.
+- Direct carrier algebra: exact rank-one rho dependence.
+- Slice semigroup: shared across all readout choices.
+- Endpoint columns: only E-center depends on `rho_E`.
+- Generic carrier: dependency iff `delta_E != 0`.
+- Unique theorem: still blocked upstream.

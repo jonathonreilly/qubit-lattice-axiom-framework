@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 904 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1672 |
+| unaudited | 1671 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 36 |
+| ~~audited_conditional~~ | 37 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,21 +66,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1316 |
-| `audited_conditional` | 36 |
+| `audited_conditional` | 37 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1998 |
+| `unaudited` | 1997 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1804 |
+| `bounded_theorem` | 1805 |
 | `decoration` | 61 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 747 |
+| `positive_theorem` | 746 |
 
 | criticality | count |
 |---|---:|
@@ -1476,6 +1476,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -12332,6 +12333,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Substituting the canonical dilation into the Kraus formula gives K_r = <r|_A U_int (I_sys otimes |0>_A) = sum_{r'} P_{r'} delta_{r,r'} = P_r.  _(class `A`)_
 - **chain closes:** False — The canonical K_r = P_r calculation closes by direct algebra. However the source also says an arbitrary apparatus twist V_A with fixed readout basis is still a dilation of the same labelled first-outcome POVM; generally K_r = U_sys sum_s (V_A)_{rs} P_s and K_r^dagger K_r = sum_s |(V_A)_{rs}|^2 P_s, not P_r.
 - **rationale:** The narrow canonical-frame result K_P = P is a valid algebraic consequence of the displayed construction, including the isometry check and finite-dimensional unitary extension. The source is not clean as written because Step 3 overstates the allowed apparatus-unitary twist: arbitrary V_A mixes outcome labels unless the readout basis is rotated or V_A is restricted. No runner was available, but the issue is decidable from the note text alone.
+- **auditor confidence:** high
+
+### `luders_rule_from_composition_consistency_note_2026-05-20`
+
+- **Note:** [`LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`](../../docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-matrix Lüders update derivation for positive-probability projective/Kraus conditioning, assuming trace/effect probability semantics, sequential joint effect PEP, and the U1-U4 update-consistency framing.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T021823Z-2b51d66f-luders_rule_from_composi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For (4) to hold for every effect E_i, equality of trace functionals forces sigma|_P = (P sigma P) / Tr(P sigma P).  _(class `A`)_
+- **chain closes:** False — The algebraic trace-functional step closes once the measurement probability semantics and sequential conditioning interpretation are assumed. The restricted packet does not derive or retain the physical trace/effect probability law, instrument/readout semantics, or acceptance of U1-U4 as governing update constraints.
+- **rationale:** The primary runner genuinely checks the finite PEP compression identities, trace cyclicity, nested compression, and the Jordan guard; those are class-A algebra over finite matrices. That support is not enough to prove a framework-native Lüders/Born measurement update, because the source note explicitly imports the trace/effect probability interpretation and record-conditioning semantics. The cited retained_bounded bridge itself states it does not supply the Lüders update, Born rule, or probability interpretation.
+- **open / conditional deps cited:**
+  - `measurement-side trace/effect probability interpretation and sequential record-conditioning semantics`
+  - `standard U1-U4 update-consistency requirements`
 - **auditor confidence:** high
 
 ### `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`

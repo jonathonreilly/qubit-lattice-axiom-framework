@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 301,
-    "high": 289,
+    "high": 288,
     "leaf": 584,
     "medium": 511
   },
@@ -8720,35 +8720,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kinetic_isotropy_primitive",
-        "minimal_axioms",
-        "scale_reference_primitive",
-        "emergent_lorentz_invariance_note",
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06"
-      ],
-      "direct_in_degree": 7,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.024,
-      "note_path": "docs/EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_emergent_lorentz_radiative_stability_discrete_tick_2026_06_08.py",
-      "transitive_descendants": 22
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -18071,15 +18042,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 6.883,
+      "load_bearing_score": 7.709,
       "note_path": "docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_luders_sequential_effect_composition_pep_2026_06_05.py",
-      "transitive_descendants": 58
+      "transitive_descendants": 73
     },
     {
       "audit_independence_required": "any_non_self",
@@ -19149,6 +19120,36 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
+      "claim_scope": null,
+      "claim_type": "open_gate",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18",
+        "kinetic_isotropy_primitive",
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "emergent_lorentz_invariance_note",
+        "minimal_axioms",
+        "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py",
       "transitive_descendants": 2
     },
     {
@@ -32442,36 +32443,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18",
-        "kinetic_isotropy_primitive",
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "emergent_lorentz_invariance_note",
-        "minimal_axioms",
-        "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "erosion_geometric_rate_closed_form_bounded_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -33641,6 +33612,34 @@
       "ready": true,
       "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
       "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+        "kinetic_isotropy_primitive",
+        "minimal_axioms",
+        "scale_reference_primitive"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_allorders_b4_marginal_protection_twoloop_2026_06_14.py",
+      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -34884,6 +34883,34 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "kinetic_isotropy_primitive",
+        "scale_reference_primitive",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/RESIDUAL_D_POWER_DIVERGENT_CS_REGENERATION_B4_NOTE_2026-06-13.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_residual_d_power_divergent_cs_regeneration_b4_2026_06_13.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -34961,6 +34988,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "minimal_axioms",
+        "kinetic_isotropy_primitive",
+        "scale_reference_primitive"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_taste_sector_marginal_lv_b4_2026_06_13.py",
       "transitive_descendants": 0
     },
     {
@@ -36385,34 +36439,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/adjacency_rank_qubit_clifford_bound_2026_06_10.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "kinetic_isotropy_primitive",
-        "minimal_axioms",
-        "scale_reference_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_allorders_b4_marginal_protection_twoloop_2026_06_14.py",
       "transitive_descendants": 1
     },
     {
@@ -47738,34 +47764,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "kinetic_isotropy_primitive",
-        "scale_reference_primitive",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/RESIDUAL_D_POWER_DIVERGENT_CS_REGENERATION_B4_NOTE_2026-06-13.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_residual_d_power_divergent_cs_regeneration_b4_2026_06_13.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -48919,33 +48917,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_su5_decomposition_proof_walk_lattice_independence.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "taste_sector_marginal_lv_b4_protection_on_os0_bounded_theorem_note_2026-06-13",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "minimal_axioms",
-        "kinetic_isotropy_primitive",
-        "scale_reference_primitive"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_taste_sector_marginal_lv_b4_2026_06_13.py",
       "transitive_descendants": 0
     },
     {
@@ -50467,6 +50438,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 114,
-  "total_pending": 1685
+  "ready_count": 117,
+  "total_pending": 1684
 }

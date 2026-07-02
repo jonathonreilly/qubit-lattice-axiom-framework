@@ -15,12 +15,7 @@ the unique exact `Theta_R -> Lambda_R` coupling theorem.
 
 ## Current Science Block
 
-Block12 performs the leg-level stretch attempt on the current class-A carrier
-itself. Result: the carrier has an exact rank-one leg factorization
-
-```text
-K_R(q) = [1, delta_A1(q)]^T [u_E(q), u_T(q)]
-```
-
-but that factorization is channel-blind and reciprocal degree zero. It cannot
-supply the two reciprocal factors needed for the endpoint.
+Block13 tests the nonseparable fallback built from source-side Gram or
+tensor-power contractions of the current `K_R` carrier. Result: such
+contractions are channel-blind on unit `E` and `T1` probes and give
+`lambda=1`, not `9/4`.

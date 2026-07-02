@@ -4,11 +4,11 @@ target_blocker_text: "the readout-map endpoint triple is not derived, blocking t
 source_of_blocker_text: user_goal
 reachability_to_target: prunes
 artifact_role: no_go
-next_trace_action: "Search for an additional normalization primitive outside the class-A K_R factorization, or a nonseparable total-degree-2 primitive."
+next_trace_action: "Derive a channel metric/normalization primitive, or construct a new nonseparable total-degree-2 primitive outside current K_R source-side Gram contractions."
 
 ## Explanation
 
-If block12 is true, it prunes the route that tries to extract the endpoint's
-two reciprocal factors from the current class-A `K_R` carrier factorization
-itself. The carrier factorization is real, but it is channel-blind and degree
-zero, so it does not close the endpoint.
+If block13 is true, it prunes the source-side Gram/tensor-power route inside
+the current `K_R` grammar. It does not close the endpoint; it shows the next
+successful primitive must add derived channel normalization or leave the
+current carrier grammar.

@@ -1,42 +1,39 @@
 loop_slug: s3-route2-readout-endpoint
-block: 34
-branch: physics-loop/s3-route2-readout-endpoint-block34-20260621
+block: 35
+branch: physics-loop/s3-route2-readout-endpoint-block35-20260621
 base: origin/main
-base_commit: 1f8e301a9fc14505d12d35192792ff3e284bed44
+base_commit: 281496d7613baad975a33bba87be231fcfaab8c2
 mode: campaign
 target_status: best-honest-status
-active_route: route2_e_center_excess_seven_eighths_import_boundary
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
+active_route: route2_color_complement_seven_eighths_bridge_no_go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
 hard_residual: "derive a typed source/readout bridge fixing e_E := q_E - 1 = rho_E/6 = 7/8"
 files_touched:
-  - docs/QUARK_ROUTE2_E_CENTER_EXCESS_SEVEN_EIGHTHS_IMPORT_BOUNDARY_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.py
-  - outputs/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.txt
+  - docs/QUARK_ROUTE2_COLOR_COMPLEMENT_SEVEN_EIGHTHS_BRIDGE_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py
+  - outputs/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 open_imports:
-  - "typed bridge from an existing seven-eighths anchor to route2_e_E_7_8"
-  - "typed Route-2 E-center source/readout primitive computing e_E directly"
-  - "alternate typed bridge deriving c_TE = -8/9"
+  - "typed bridge from a seven-eighths source to route2_e_E_7_8"
+  - "physical adjoint-line selector, if the color-complement route is revived"
+  - "direct Route-2 E-center source/readout primitive"
 no_go_routes_reused:
-  - "Rconn/F_adj alone does not type the signed Route-2 center ratio"
-  - "quadratic O_h-invariant functional does not force q_E/q_T = 9/4"
+  - "F_adj=8/9 alone is not a signed Route-2 center-ratio bridge"
   - "E-center-blind endpoint constraints cannot select rho_E"
 proposal_allowed: false
 audit_required_before_effective_retained: true
 pr_status: open
-pr_number: 4564
-pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4564"
+pr_number: 4565
+pr_url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4565"
 checks:
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.py -> PASS=53 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py -> PASS=12 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py -> PASS=11 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py -> PASS=46 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow.py -> PASS=14 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py -> PASS=14 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py -> PASS=51 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py -> PASS=62 FAIL=0"
-  - "python3 -m py_compile scripts/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.py -> pass"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py -> PASS=12 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_ew_current_fierz_channel_decomposition.py -> PASS=31 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py -> PASS=11 FAIL=0"
+  - "python3 -m py_compile scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py -> pass"
   - "branch-local overclaim scan -> no matches"
-next_exact_action: "Continue the campaign by attacking a typed bridge from one seven-eighths anchor to route2_e_E_7_8, or pivot to measured-calibration box-size parameterization."
+next_exact_action: "Continue the campaign by pivoting to measured-calibration box-size parameterization or the hierarchy/APBC seven-eighths bridge."
 stop_condition: "Do not stop campaign on this block; pivot after PR handling while runtime remains."

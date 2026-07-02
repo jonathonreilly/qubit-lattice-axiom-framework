@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1506 |
-| Retained-grade rows, including boxed decorations | 1390 |
+| Applied audit verdicts | 1507 |
+| Retained-grade rows, including boxed decorations | 1391 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 204 |
-| Retained bounded rows | 920 |
+| Retained bounded rows | 921 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1640 |
+| Unaudited rows | 1639 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 41 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1642 |
-| Ready rows | 93 |
+| Total pending rows | 1641 |
+| Ready rows | 92 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
-| Medium pending | 476 |
+| Medium pending | 475 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`complex_selectivity_compare_note`](../../docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
 - [`tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) - medium; unaudited
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02`](../../docs/KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 - [`koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05`](../../docs/KOIDE_DIRAC_MASS_FORCES_R_ONE_LR_COUPLING_BERRY_FLAT_BOUNDED_NO_GO_NOTE_2026-06-05.md) - medium; unaudited
 - [`p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18`](../../docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md) - medium; unaudited
+- [`wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07`](../../docs/WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

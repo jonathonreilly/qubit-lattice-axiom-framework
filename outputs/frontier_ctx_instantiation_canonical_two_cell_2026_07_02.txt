@@ -1,0 +1,58 @@
+==============================================================================
+CTX CANONICAL TWO-CELL FAMILY / GENERATION DISCHARGE / EW INSTANCE
+bounded support runner -- exact arithmetic, stdlib only
+==============================================================================
+
+------------------------------------------------------------------------------
+Source guards (landed on-main docs; whitespace-normalized)
+------------------------------------------------------------------------------
+CHECK 01: PASS -- C3 note: singlet-cell Definition sentence present
+CHECK 02: PASS -- C3 note: doublet-cell Definition sentence present
+CHECK 03: PASS -- C3 note: HS normalization ||I||^2 = 3 present
+CHECK 04: PASS -- C3 note: common-factor cancellation sentence present
+CHECK 05: PASS -- C3 note: ratified two-namings-of-the-same-two-cells sentence present
+CHECK 06: PASS -- kappa note: Pi_phys = C + kappa_EW S family present
+CHECK 07: PASS -- kappa note: 8/9 central-sector cardinality-count sentence present
+CHECK 08: PASS -- axiom memo: both distinction clauses + content-determination clause present
+
+------------------------------------------------------------------------------
+T1 -- canonical two-cell frame on the supplied hw=1 C3 circulant
+------------------------------------------------------------------------------
+CHECK 09: PASS -- C3 unit cell: HS norm^2 of the unit direction I equals 3 [||I||^2=3]
+CHECK 10: PASS -- C3 doublet cell = HS-orthocomplement of unit: B=J-I=U+U^2, ||B||^2=6, <I,B>=0 [||B||^2=6, <I,B>=0]
+CHECK 11: PASS -- C3 frame is supplied-structure-carried: all 6 slot-relabeling *-automorphisms fix the unit I and preserve the doublet B [6 permutation-matrix automorphisms]
+
+------------------------------------------------------------------------------
+T2 -- common factor N=3 and equal-cell-condition invariance
+------------------------------------------------------------------------------
+CHECK 12: PASS -- channel energies (3a^2, 6|b|^2) = 3*(a^2, 2|b|^2) exactly on rational samples [5 samples, |b|^2 = br^2 + bi^2]
+CHECK 13: PASS -- equal-cell condition invariant under the N=3 factor: (a^2=2|b|^2) iff (3a^2=6|b|^2) [4 samples (equal and unequal cases)]
+
+------------------------------------------------------------------------------
+T3 -- EW color instance: M_3(C) with the HS inner product
+------------------------------------------------------------------------------
+CHECK 14: PASS -- M_3 unit: Tr(I_3) = 3 and HS norm^2(I_3) = 3 [Tr(I_3)=3, ||I_3||^2=3]
+CHECK 15: PASS -- dim(traceless subspace) = 3^2 - 1 = 8: 8 exhibited traceless matrices, exact rank over Q = 8 [count=8, rank_Q=8]
+CHECK 16: PASS -- I_3 is HS-orthogonal to the traceless subspace: Tr(I_3^* T)=0 on the 8 basis + random rational combos
+CHECK 17: PASS -- cardinality fraction 8/9 = (3^2 - 1)/3^2 exactly (parent's own count; ledger's own formula)
+CHECK 18: PASS -- automorphism-canonical unit: conjugation by all 6 permutation matrices fixes I_3 [6 permutations]
+CHECK 19: PASS -- automorphism-canonical complement: all 6 permutation conjugations preserve tracelessness
+CHECK 20: PASS -- HS inner product preserved by all 6 permutation conjugations on the sampled set (exact integer) [8 sampled matrices]
+
+------------------------------------------------------------------------------
+T3/T4 -- block11 normal form Pi = x_C + kappa*x_S on the instance
+------------------------------------------------------------------------------
+CHECK 21: PASS -- block11 normal form Pi = x_C + kappa*x_S is content-determined/additive and reproduces the count toggle Pi(0)=C, Pi(1)=C+S at kappa=1
+CHECK 22: PASS -- diagonal (equal-cell-content x_C=x_S) ratios are kappa-independent across >=3 kappa values (parent's own K_EW-cancellation structure) [4 kappa values]
+CHECK 23: PASS -- off-diagonal (x_C != x_S) ratio is kappa-sensitive: the honest load-bearing premise (off-diagonal evaluation carries w's content) [3 distinct ratios]
+
+------------------------------------------------------------------------------
+Boundary greps on the generated note (firewall language)
+------------------------------------------------------------------------------
+CHECK 24: PASS -- note carries firewall phrases: 'nothing is adjudicated', 'not closed', 'review-pending', 'instance premise' [all present]
+CHECK 25: PASS -- ledger guard: the parent kappa row's rationale spells 8/9 = (3^2 - 1)/3^2
+CHECK 26: PASS -- ratification-record guard: policy section 6 names the C3 canonical definition note
+
+==============================================================================
+TOTAL: PASS=26 FAIL=0
+==============================================================================

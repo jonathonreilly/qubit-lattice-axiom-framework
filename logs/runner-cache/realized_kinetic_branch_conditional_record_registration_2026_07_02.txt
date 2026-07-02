@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py
-runner_sha256: 9120904a84eace2d54eae6ab1fe6bf88dce4cd03ab8b8b3840a49ecd789463cf
-timeout_sec: 300
+runner_sha256: 1f60d3704c7679b23708b123401a02d872c475e1f5a8ce81dadd2972ce102313
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -22,9 +22,19 @@ realized kinetic branch conditional-record registration (2026-07-02)
 [PASS] [T-D] 11. attempted covariant neighbor-conditioned K0 map has zero-dimensional difference space  |  difference-space dim=0, conditioned maps=0
 [PASS] [T-E] 12. external conditioned basis map on K0 exists but is a frame artifact, not C I data  |  conditioned gap=1.414, frame violation=1.000
 [PASS] [T-F] 13. one-link-flipped mixed-flux object degrades the K1 direction-tagged structure  |  + fluxes=4, - fluxes=20, anticommutator=4.000, single-generator dims=[2, 2, 2]
+[PASS] [SRC] 14. source note exists  |  docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md
+[PASS] [SRC] 15. source declares bounded_theorem claim type
+[PASS] [SRC] 16. legacy positive_theorem source metadata absent
+[PASS] [SRC] 17. status authority remains audit-lane only
+[PASS] [SRC] 18. source preserves conditional-only boundary
+[PASS] [SRC] 19. source preserves no record-formation claim
+[PASS] [SRC] 20. source preserves selector/admissibility open boundaries
+[PASS] [SRC] 21. source does not claim a missing cache
+[PASS] [SRC] 22. source links runner cache
+[PASS] [SRC] 23. source keeps sibling dependency linked
 
 SUMMARY: representative-level conditional record registration on the two-flux-class surface; selector bit NOT forced here; Admissibility reading not decided.
-TOTAL: PASS=13 FAIL=0
+TOTAL: PASS=23 FAIL=0
 
 ----- stderr -----
 

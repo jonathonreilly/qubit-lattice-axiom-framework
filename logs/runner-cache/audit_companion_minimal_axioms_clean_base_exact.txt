@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
-runner_sha256: d83ea3ad13c740126f4ad33038bb7b707cd0da344117da3adff206442b9aa7f8
+runner_sha256: 649ea9f31f35707e57eb14adbebbae788f198bac4df4107cb3e0edb6ab276150
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 PASS: Source note exists
@@ -74,6 +74,14 @@ PASS: Policy records 2026-07-02 Qubit distinction clause
       
 PASS: Registry note records the distinction clause
       
+PASS: Lattice motion list is named about each site
+      
+PASS: Lattice site-distinction clause is present
+      
+PASS: Policy records 2026-07-02 Lattice site-distinction clause
+      
+PASS: Registry note records the site clause
+      
 PASS: Cl(3,0) is fenced as representation-only
       
 PASS: Admissibility local-constraint clause is present
@@ -121,8 +129,8 @@ PASS: Qualification: supplied-condition law gives one answer where its condition
 PASS: Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion
       script checks only algebraic notation, graph adjacency, local availability bookkeeping, fixed record readout, and finite additivity
 
-runner_check_breakdown = {A: 57, B: 0, C: 0, D: 0, total_pass: 57}
-TOTAL: PASS=57 FAIL=0
+runner_check_breakdown = {A: 61, B: 0, C: 0, D: 0, total_pass: 61}
+TOTAL: PASS=61 FAIL=0
 RESULT: PASS
 
 ----- stderr -----

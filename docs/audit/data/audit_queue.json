@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 321,
+    "critical": 320,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -138,34 +138,6 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
-      "claim_scope": "Within the explicitly constructed two-class K0/K1 kinetic surface, using retained-bounded FSB-K and the retained Z certificate, the free-Fermi finite-g_eff requirement selects K1/phi = -1; this does not audit wholesale P-KIN forcing or thermal-equilibrium dynamics.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-        "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.384,
-      "note_path": "docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/p_flux_selection_via_fsb_k_check_2026_06_11.py",
-      "transitive_descendants": 944
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
@@ -237,6 +209,37 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
+      "transitive_descendants": 935
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
+        "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
+        "minimal_axioms",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
+        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
+      ],
+      "direct_in_degree": 13,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 19.37,
+      "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/axiom_first_lattice_noether_check.py",
       "transitive_descendants": 935
     },
     {
@@ -425,6 +428,34 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "kinetic_isotropy_primitive",
+        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
+        "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.571,
+      "note_path": "docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py",
+      "transitive_descendants": 268
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -559,37 +590,6 @@
       "ready": false,
       "runner_path": "scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
       "transitive_descendants": 940
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "axiom_first_lattice_noether_theorem_note_2026-04-29",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-        "eta_holonomy_base_flux_scope_boundary_note_2026-06-06",
-        "minimal_axioms",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
-        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.37,
-      "note_path": "docs/AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/axiom_first_lattice_noether_check.py",
-      "transitive_descendants": 935
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -7876,34 +7876,6 @@
       "ready": false,
       "runner_path": "scripts/probe_hk_cube_perron_l2_2026_05_06.py",
       "transitive_descendants": 273
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kinetic_isotropy_primitive",
-        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10",
-        "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.571,
-      "note_path": "docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py",
-      "transitive_descendants": 268
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -51700,6 +51672,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 92,
-  "total_pending": 1732
+  "ready_count": 93,
+  "total_pending": 1731
 }

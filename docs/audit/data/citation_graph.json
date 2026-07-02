@@ -53462,11 +53462,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
+      "to": "yt_vertex_power_derivation"
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_vertex_power_derivation"
+      "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
@@ -53487,10 +53491,6 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
     },
     {
       "from": "repo.repo_organization",
@@ -103170,17 +103170,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
         "yt_vertex_power_derivation",
+        "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
+        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
-        "axiom_first_cpt_theorem_stretch_note_2026-04-29",
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+        "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e1823aa093a708accaabc49d0f9d871fc56ff73be71cca15fb672a3366f84538",
+      "note_hash": "b7ec7c4bf3467cc9a33f61ee591fbe4dbd1cb7812420b5f55053047ebe45296e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

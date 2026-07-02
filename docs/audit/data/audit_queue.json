@@ -138,26 +138,26 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "yt_vertex_power_derivation",
-      "claim_scope": null,
+      "claim_scope": "On the adjacency-licensed SU(3)-gauged nearest-neighbor staggered-Dirac hopping surface, with the declared link-exponential convention, quadratic-response coupling channel, and tree-level split, the vertex-power exponent is n_link=2 and hence alpha_s(v)=alpha_bare/u_0^2 by the retained algebraic map.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "minimal_axioms"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 12.35,
       "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/frontier_vertex_power.py",
       "transitive_descendants": 922
@@ -176,15 +176,15 @@
       "deps": [
         "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.349,
+      "load_bearing_score": 10.85,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py",
-      "transitive_descendants": 921
+      "transitive_descendants": 922
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -201,15 +201,15 @@
         "minimal_axioms",
         "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 10.349,
+      "load_bearing_score": 10.85,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py",
-      "transitive_descendants": 921
+      "transitive_descendants": 922
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -363,15 +363,15 @@
         "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
         "minimal_axioms"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.185,
+      "load_bearing_score": 8.68,
       "note_path": "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py",
-      "transitive_descendants": 290
+      "transitive_descendants": 289
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

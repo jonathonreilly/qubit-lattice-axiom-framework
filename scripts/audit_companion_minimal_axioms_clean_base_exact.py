@@ -209,6 +209,28 @@ def source_boundary_checks() -> list[Check]:
             and "No possibility is privileged." in note,
             "",
         ),
+        Check(
+            "Qubit distinction clause is present and joined to the no-privilege sentence",
+            contains(
+                note,
+                "No possibility is privileged. Possibilities are distinguished by the supplied algebraic structure alone.",
+            ),
+            "",
+        ),
+        Check(
+            "Policy records 2026-07-02 Qubit distinction clause",
+            "2026-07-02 -- Qubit distinction clause" in policy
+            and contains(policy, "Possibilities are distinguished by the supplied algebraic structure alone"),
+            "",
+        ),
+        Check(
+            "Registry note records the distinction clause",
+            contains(
+                node.get("note", ""),
+                "no possibility privileged and possibilities distinguished by the supplied algebraic structure alone",
+            ),
+            "",
+        ),
         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
         Check(
             "Admissibility local-constraint clause is present",

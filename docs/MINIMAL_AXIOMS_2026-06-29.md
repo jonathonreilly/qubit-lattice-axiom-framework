@@ -46,7 +46,8 @@ The full one-site possibility domain has algebraic presentation `M_2(C)`.
 A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
 adds no further primitive structure.
 
-No possibility is privileged.
+No possibility is privileged. Possibilities are distinguished by the supplied
+algebraic structure alone.
 
 ### Admissibility / Local Constraint
 

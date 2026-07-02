@@ -19,12 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 192 |
-| **retained_no_go** | 193 |
+| **retained_no_go** | 194 |
 | **retained_bounded** | 867 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 24 |
 | unaudited | 1892 |
-| audit_in_progress | 1 |
 | meta | 309 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 21 |
@@ -63,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 12 |
-| `audited_clean` | 1245 |
+| `audit_in_progress` | 11 |
+| `audited_clean` | 1246 |
 | `audited_conditional` | 26 |
 | `audited_decoration` | 58 |
 | `audited_failed` | 23 |
@@ -139,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_axis_alignment_note` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -908,6 +906,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nn_lattice_rescaled_operator_cauchy_convergence_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_rg_gravity_saturation_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nn_lattice_rescaled_universal_parameter_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `no_per_site_chirality_theorem_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlabel_grown_drift_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -12583,6 +12582,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Both direct dependencies are retained_bounded. The runner re-derives the closed forms from explicit harness parameters, builds and propagates the lattice at the three alternate parameter points, measures sigma_arm and c2 directly, and compares those measurements against the parameterized formulas without importing publication framing or fitted target constants as hidden premises.
 - **rationale:** Clean only under the narrowed bounded scope. The source and runner support a harness-parameterized check over BETA, K_PHYS, and PHYS_L while holding the NN three-edge geometry fixed. The runner's secondary h->0 geodesic-limit C_arm fit comparison fails for Points A and C by just over 10%, but the note marks that comparison as tracked-only and not part of the primary acceptance; the load-bearing primary per-h coherent comparison closes at <=2.44%, and c2_inf closes at <=0.279%. The FANOUT language is acceptable only as the fixed FANOUT=3 normalization inside the current geometry, because no fanout-varying topology is tested.
 - **auditor confidence:** medium_high
+
+### `no_per_site_chirality_theorem_note_2026-05-02`
+
+- **Note:** [`NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Inside one fixed one-site M_2(C) Pauli/Cl(3,0) presentation, no nonzero matrix anticommutes with all three Pauli generators, hence no gamma5 with gamma5^2=I and no associated internal chirality projector pair exists.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T212752Z-f0736ce1-no_per_site_chirality_th`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Writing M = aI + b_1 sigma_1 + b_2 sigma_2 + b_3 sigma_3 gives {M, sigma_j} = 2a sigma_j + 2b_j I, so anticommuting with all three sigma_j forces a=b_1=b_2=b_3=0.  _(class `A`)_
+- **chain closes:** True — The Qubit axiom supplies the one-site algebra M_2(C), and the retained Pauli Cl(3) authority plus direct Pauli-basis algebra closes the anticommutator exhaustion. Larger spacetime, multi-site, and gauge chirality routes are explicitly outside the audited one-site scope.
+- **rationale:** The load-bearing step is an elementary algebraic closure in the Pauli basis, not a definition, comparator match, or hidden physical bridge. The runner actually computes the Pauli product, centrality, omega squared, the linear nullspace for simultaneous anticommutation, and the even/odd span statement; it does not merely print constants. The accepted minimal-axiom premise is registered, the other dependency is retained, and the no-go discipline is satisfied because the conclusion is narrowly limited to one internal M_2(C) site.
+- **auditor confidence:** high
 
 ### `nonlabel_grown_basin_note`
 

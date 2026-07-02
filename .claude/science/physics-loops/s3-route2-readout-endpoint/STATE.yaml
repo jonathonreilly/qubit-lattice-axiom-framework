@@ -1,23 +1,23 @@
 loop_slug: s3-route2-readout-endpoint
-block: block06
-branch: physics-loop/s3-route2-readout-endpoint-block06-20260621
-base_commit: abe7b196e
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
+block: block07
+branch: physics-loop/s3-route2-readout-endpoint-block07-20260621
+base_commit: 0a95b5208
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
 target_claim_id: s3_time_theta_to_slice_coupling_note
 target_blocker_text: "Route-2 endpoint still needs beta_E/alpha_E = 21/4, equivalently q_E = 15/8 and lambda=q_E/q_T=9/4 after granted T-side values."
-active_route: endpoint_blind_size_stable_renormalization_no_go
-hard_residual: "Can a size-stable finite-box reparameterization rescue the E-center lift without adding a new readout primitive?"
+active_route: double_local_projector_normalization_conditional_bridge
+hard_residual: "Derive or sharply constrain the nonseparable E/T center-shell covariance primitive needed for lambda=9/4."
 files_touched:
-  - docs/QUARK_ROUTE2_ENDPOINT_BLIND_RENORMALIZATION_NO_GO_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.py
-  - logs/runner-cache/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.txt
+  - docs/QUARK_ROUTE2_DOUBLE_LOCAL_PROJECTOR_NORMALIZATION_BRIDGE_CONDITIONAL_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.py
+  - logs/runner-cache/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.txt
 open_imports:
-  - "A nonseparable E/T center-shell covariance rule remains unproved."
-  - "A future nonlinear tensor observable could still supply a new primitive, but it would not be an endpoint-blind renormalization of the current finite-box scan."
+  - "The double reciprocal local projector-normalization primitive is isolated but not derived."
+  - "A future proof must justify why both source and readout supply reciprocal local projector factors."
 no_go_routes:
-  - "Endpoint-blind/separable finite-box renormalization cannot change lambda=q_E/q_T and cannot rescue the endpoint triple in the bulk."
+  - "Channel-blind, raw local projector, raw quadratic, and single reciprocal local-weight laws miss lambda=9/4."
 pr_policy:
   push_to_main: false
   refresh_prs_to_main: false
@@ -30,11 +30,11 @@ pr_policy:
     - baseRefName
     - state
 pr:
-  number: 4535
-  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4535"
-  title: "[physics-loop] s3-route2-readout-endpoint block06 no-go"
-  headRefName: physics-loop/s3-route2-readout-endpoint-block06-20260621
+  number: 4536
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4536"
+  title: "[physics-loop] s3-route2-readout-endpoint block07 conditional-support"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block07-20260621
   baseRefName: main
   state: OPEN
-next_exact_action: "Continue campaign with the next ranked target: derive a nonseparable E/T center-shell covariance primitive, or pivot to the direct Theta_R -> Lambda_R consumer ambiguity packet."
+next_exact_action: "Continue campaign with the next ranked target: derive the two reciprocal local projector-weight factors, or pivot to the direct Theta_R -> Lambda_R consumer ambiguity packet."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable science targets are blocked."

@@ -1,23 +1,19 @@
 # No-Go Ledger
 
-## Block06: Endpoint-Blind Renormalization Rescue
+## Block07: Nearby Local-Weight Laws
 
-Pruned route:
+Pruned routes:
+
+- channel-blind lift: `q_X proportional to w_X^0`, gives `lambda=1`;
+- raw local projector weight: `q_X proportional to w_X`, gives `lambda=2/3`;
+- raw quadratic projector weight: `q_X proportional to w_X^2`, gives `lambda=4/9`;
+- single reciprocal local normalization: `q_X proportional to w_X^-1`, gives `lambda=3/2`;
+- nearby center-excess denominator slips (`5`, `7`, `12`) do not close the endpoint chain.
+
+Remaining conditional route:
 
 ```text
-finite-box size-stable renormalization -> rescue q_E=15/8 without new readout primitive
+q_X proportional to w_X^-2
 ```
 
-Reason:
-
-Any separable endpoint-blind renormalization
-
-```text
-gamma_X(endpoint;N) -> c_X(N) r_endpoint(N) gamma_X(endpoint;N)
-```
-
-preserves `lambda=q_E/q_T`. The endpoint target requires `lambda=9/4`, but the box-scan cache has bulk `lambda` far from `9/4`. Therefore this class cannot rescue the endpoint triple.
-
-Scope:
-
-This does not rule out a future nonlinear tensor observable or explicitly derived nonseparable covariance primitive. It only rules out hiding the missing E-center datum inside endpoint-blind normalization.
+This gives `lambda=9/4` but remains an imported primitive until derived.

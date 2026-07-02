@@ -1,30 +1,29 @@
 # Opportunity Queue
 
-1. **Constructive W1 theorem**
+1. **Magnitude source rule**
    - retained-positive probability: low-medium
-   - missing imports: new typed bridge from SU(3) color scalar to Route-2
-     signed center ratio
+   - missing imports: typed rule setting `|c_TE|=F_adj`
    - runner availability: medium
    - review landability: high if falsifiable
-   - independence from block31: direct follow-up
+   - independence from block32: direct follow-up
 
-2. **Equivalent E-center primitive search**
+2. **Equivalent E-center primitive**
    - retained-positive probability: low-medium
    - missing imports: primitive evaluating `q_E=15/8`
    - runner availability: medium
    - review landability: high if falsifiable
-   - independence from block31: medium
+   - independence from block32: medium
 
-3. **Physical `kappa_EW=0` selector attempt**
+3. **Constructive W1 theorem**
    - retained-positive probability: low
-   - missing imports: physical EW readout/weighting bridge
+   - missing imports: full source-domain bridge
    - runner availability: medium
-   - review landability: high for an open-gate packet
-   - independence from block31: partial
+   - review landability: high for support/no-go
+   - independence from block32: partial
 
 4. **Reduced-amplitude-to-readout edge**
    - retained-positive probability: low
    - missing imports: bridge from reduced amplitude to selected `P_R`
    - runner availability: medium
    - review landability: high for no-go/support
-   - independence from block31: high
+   - independence from block32: high

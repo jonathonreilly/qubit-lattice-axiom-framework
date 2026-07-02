@@ -2,9 +2,10 @@
 
 ## Allowed Premises
 
-- Existing Route-2/Rconn source notes in the expanded one-hop authority bank.
-- Current W9 typed-edge inventory and derived reverse endpoint algebra edges.
-- Exact T-side stretch values used by the current W1 target.
+- Exact Route-2 endpoint algebra.
+- Granted T-side stretch values `q_T=5/6` and
+  `gamma_T(shell)/gamma_E(shell)=-2`.
+- Positive E-center branch `q_E>0` for the W1 target branch.
 - Exact rational arithmetic.
 
 ## Forbidden Inputs
@@ -13,12 +14,11 @@
 - Fitted Yukawa values.
 - CKM/J or endpoint-data target fitting.
 - Nearest-rational selection from live endpoint data.
-- Treating conditional, missing-edge, comparator, or firewall paragraphs as
-  positive W1 authority.
+- Treating the magnitude selector `|c_TE|=8/9` as already proved.
 
-## Open Imports After Block31
+## Open Imports After Block32
 
-- A new W1 theorem.
-- An equivalent E-center primitive.
-- A future explicit authority that types the color scalar as the Route-2
-  signed center ratio.
+- A magnitude/source rule proving `|c_TE|=8/9`.
+- An equivalent E-center primitive proving `q_E=15/8`.
+- A full W1 theorem typing the color scalar as the Route-2 center-ratio
+  magnitude.

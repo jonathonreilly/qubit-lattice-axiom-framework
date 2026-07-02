@@ -11,13 +11,8 @@ from first principles, without running audits or applying verdicts. Package
 each coherent science block as a review PR and do not push science work to
 main.
 
-## Block31 Focus
+## Block32 Focus
 
-Attack W1 directly:
-
-```text
-su3_R_conn_8_9 -> route2_center_TE_minus_8_9
-```
-
-by sweeping the expanded current one-hop authority bank for any hidden
-positive paragraph that already supplies the bridge.
+Split W1 into sign and magnitude. Test whether the negative sign in
+`c_TE=-8/9` is independently missing, or whether the remaining blocker is the
+magnitude condition `|c_TE|=8/9`.

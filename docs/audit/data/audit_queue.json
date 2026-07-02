@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 329,
+    "critical": 328,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -136,33 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-      "claim_scope": "On the declared Q-conserving nearest-neighbor bilinear surface over the per-site M2(C)/C2 carrier, with translation and proper cubic rotation covariance up to site-local U(1) frame on simply connected regions, the kinetic phase systems collapse to the two flux classes +/-1; the site-local absorbing frame exists uniquely up to gauge x global frame on flux -1; the flux -1 selector is not forced because K0 passes the same constraints.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-        "fermion_parity_z2_grading_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 15.573,
-      "note_path": "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py",
-      "transitive_descendants": 1076
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -389,6 +362,32 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
       "transitive_descendants": 925
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "yt_vertex_power_derivation",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 11.849,
+      "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_vertex_power.py",
+      "transitive_descendants": 921
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -861,32 +860,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py",
       "transitive_descendants": 923
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_vertex_power_derivation",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
-        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.849,
-      "note_path": "docs/YT_VERTEX_POWER_DERIVATION.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_vertex_power.py",
-      "transitive_descendants": 921
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -51911,5 +51884,5 @@
     }
   ],
   "ready_count": 86,
-  "total_pending": 1740
+  "total_pending": 1739
 }

@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 194 |
 | **retained_no_go** | 195 |
-| **retained_bounded** | 868 |
+| **retained_bounded** | 869 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1737 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -63,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1264 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1265 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 58 |
 | `audited_failed` | 23 |
@@ -137,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1179,6 +1177,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16819,6 +16818,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The path-product transport around each plaquette is identity exactly when the phases satisfy the Clifford -1 plaquette cocycle, and on simply connected regions the ratio of any two cocycle solutions is an exact local gauge one-cochain.  _(class `A`)_
 - **chain closes:** True — The bounded local theorem closes from Clifford anticommutation, unitary transport, and standard simply connected cubical cohomology. It does not derive P-KIN/P-SD or torus holonomy choices, but those are explicitly outside the audited claim scope.
 - **rationale:** The load-bearing step is exact algebra, not a definition, renaming, or numerical comparator: independently, gamma_nu gamma_mu gamma_nu gamma_mu = -I and the -1 cocycle makes the plaquette transport +I. The one-gauge-class claim follows because a closed U(1) or Z2 one-cochain is exact on the stated simply connected cubical regions. The runner source genuinely enumerates the unit cube and computes GF(2) ranks at scale rather than merely printing the claimed result.
+- **auditor confidence:** high
+
+### `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the adjacency-licensed Q-conserving nearest-neighbor bilinear surface over per-site C^2, imposing translation and proper-cubic covariance up to local U(1) frame gives exactly two gauge/scale classes K0 and K1; the K1 branch has the stated site-local absorbing frame uniqueness, and K0 shows the flux(-1) selector is not forced.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T073538Z-e386ca27-staggered_dirac_kinetic_`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Translation and proper-cubic covariance up to site-local U(1) frame force normalized NN hopping phases to have a uniform real plaquette flux φ∈{+1,-1}, flux classifies systems up to frame on simply connected regions, and the Pauli absorbing frame lands exactly in the φ=-1 class while K0 is a countermodel to forcing that selector.  _(class `C`)_
+- **chain closes:** True — The bounded theorem closes from the accepted minimal-axiom premise plus retained Cl(3), tensor-product translation/Fock, and parity authorities, with covariance/NN/Q-conservation/site-locality treated as explicit scope constraints. The selector residual is not a missing proof step in the audited claim because the claim explicitly includes the K0 countermodel and names φ=-1 as open residual content.
+- **rationale:** The runner source genuinely constructs the cubic rotation group, phase systems, gauge/flux invariants, finite cohomology certificates, Pauli/CAR algebra, Fock bilinears, and countermodels rather than only printing expected constants. The key signs and normalizations are consistent: the C2 stabilizer conjugates axis-containing plaquette flux, Pauli anticommutation gives absorbed holonomy -1, and K0 has invariant flux +1. The only non-retained authority is the registered minimal-axiom premise, which is covered by the accepted-premise carve-out; the remaining cited authorities are retained-grade. The negative part is narrowly scoped to 'not forced by this specified constraint set' and is certified by an explicit satisfying K0 countermodel, leaving future selectors open.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`

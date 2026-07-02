@@ -1,0 +1,54 @@
+loop_slug: s3-route2-rconn-magnitude-sign-split
+block: 52
+date: 2026-06-21
+branch: physics-loop/s3-route2-rconn-magnitude-sign-split-block52-20260621
+base: origin/main
+base_sha: 31ed36f29cb5154046cb2779a298f57ec76317f7
+mode: campaign
+active_goal: >
+  Run physics-loop on the S3/Route-2 readout endpoint triple and unblock the
+  audit by adding reviewable science PRs without applying audit verdicts.
+active_route: >
+  Split the missing signed color/readout bridge into a typed magnitude bridge
+  and a positivity-forced sign selection.
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+artifact_role: theorem_and_runner_certificate
+claim_movement: >
+  Shows that if |gamma_T(center)/gamma_E(center)| = R_conn = 8/9 is supplied,
+  the existing q_E > 0 positivity bound forces c_TE = -R_conn and the endpoint
+  algebra gives rho_E = 21/4.  The typed magnitude bridge remains open.
+open_imports:
+  - typed magnitude bridge |gamma_T(center)/gamma_E(center)| = R_conn
+  - independent derivation of the Route-2 E-center lift q_E = 15/8 if the color route is not used
+not_claimed:
+  - endpoint triple derivation on the current bank
+  - audit verdict
+  - repo-wide status update
+automation_lock:
+  status: degraded
+  detail: "scripts/automation_lock.py status fails with Permission denied: '/Users/jonreilly'"
+files_touched:
+  - docs/QUARK_ROUTE2_RCONN_MAGNITUDE_SIGN_SPLIT_EXACT_SUPPORT_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_rconn_magnitude_sign_split_2026_06_21.py
+  - outputs/frontier_quark_route2_rconn_magnitude_sign_split_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-rconn-magnitude-sign-split/
+verification:
+  new_runner: "PASS=52 FAIL=0"
+  py_compile: pass
+  parent_checks:
+    source_domain_bridge_no_go: "PASS=103 FAIL=0"
+    route2_readout_record_positivity_no_go: "PASS=8 FAIL=0"
+    exact_readout_map: "PASS=11 FAIL=0"
+    e_center_lift_derivation_attempt: "PASS=46 FAIL=0"
+    e_channel_readout_naturality_no_go: "PASS=28 FAIL=0"
+  overclaim_scan: clean
+  diff_check: clean
+pr:
+  status: open
+  number: 4582
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4582"
+  identity_json: '{"baseRefName":"main","headRefName":"physics-loop/s3-route2-rconn-magnitude-sign-split-block52-20260621","number":4582,"state":"OPEN","title":"[physics-loop] s3-route2-rconn-magnitude-sign-split block52 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4582"}'
+next_exact_action: "Pivot to a new science block on the typed magnitude bridge |center T/E| = R_conn."
+stop_condition: "Continue campaign until runtime or viable science queue is exhausted; do not mark goal complete from this support-only block."

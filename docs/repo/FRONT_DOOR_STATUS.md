@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1537 |
+| Applied audit verdicts | 1538 |
 | Retained-grade rows, including boxed decorations | 1416 |
 | Retained positive theorems | 206 |
 | Retained no-go rows | 211 |
 | Retained bounded rows | 938 |
 | Boxed decorations under retained parents | 61 |
-| Open gates | 33 |
-| Unaudited rows | 1609 |
+| Open gates | 34 |
+| Unaudited rows | 1608 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 45 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1611 |
-| Ready rows | 76 |
+| Total pending rows | 1610 |
+| Ready rows | 75 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
 | Medium pending | 454 |
-| Leaf pending | 575 |
+| Leaf pending | 574 |
 
 Next ready rows by queue order:
 
-- [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 - [`wilson_m_h_per_channel_closure_bounded_note_2026-05-09`](../../docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md) - medium; unaudited
 - [`d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12`](../../docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06`](../../docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md) - medium; unaudited
 - [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - medium; unaudited
 - [`allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14`](../../docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md) - medium; unaudited
 - [`brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31`](../../docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md) - medium; unaudited
-- [`color_link_sym2_endpoint_projection_2026-06-05`](../../docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md) - leaf; unaudited
+- [`color_link_sym2_endpoint_projection_2026-06-05`](../../docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md) - medium; unaudited
+- [`ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08`](../../docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -83,8 +83,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
 | High nodes | 510 |
-| Medium nodes | 983 |
-| Leaf nodes | 1551 |
+| Medium nodes | 986 |
+| Leaf nodes | 1548 |
 
 Top load-bearing rows by graph score:
 
@@ -94,5 +94,5 @@ Top load-bearing rows by graph score:
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014
-- `key_terminology` - critical; 1126 descendants; score 47.638
+- `key_terminology` - critical; 1127 descendants; score 47.640
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 45.312

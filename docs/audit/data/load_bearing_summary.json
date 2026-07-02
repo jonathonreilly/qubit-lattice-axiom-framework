@@ -2,8 +2,8 @@
   "criticality_counts": {
     "critical": 575,
     "high": 510,
-    "leaf": 1551,
-    "medium": 983
+    "leaf": 1548,
+    "medium": 986
   },
   "flagship_signal_used": false,
   "node_count": 3619,
@@ -55,8 +55,8 @@
     {
       "claim_id": "key_terminology",
       "criticality": "critical",
-      "load_bearing_score": 47.638,
-      "transitive_descendants": 1126
+      "load_bearing_score": 47.64,
+      "transitive_descendants": 1127
     },
     {
       "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
@@ -73,8 +73,8 @@
     {
       "claim_id": "cl3_color_automorphism_theorem",
       "criticality": "critical",
-      "load_bearing_score": 41.45,
-      "transitive_descendants": 988
+      "load_bearing_score": 41.451,
+      "transitive_descendants": 989
     },
     {
       "claim_id": "native_gauge_closure_note",

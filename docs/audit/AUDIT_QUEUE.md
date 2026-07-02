@@ -1,13 +1,13 @@
 # Audit Queue
 
-**Total pending:** 1611
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 76
+**Total pending:** 1610
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 75
 
 By criticality:
 - `critical`: 301
 - `high`: 281
 - `medium`: 454
-- `leaf`: 575
+- `leaf`: 574
 
 Auditor (current best Codex GPT model at maximum reasoning by default) should pull from the top of this list. Critical claims require cross-confirmation by a second independent clean-room auditor before `audited_clean` lands.
 
@@ -73,8 +73,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | # | cycle_id | length | max_desc | primary break target | criticality | audit_status |
 |---:|---|---:|---:|---|---|---|
 | 1 | `cycle-0001` | 2 | 372 | `quark_cp_carrier_completion_note_2026-04-18` | critical | unaudited |
-| 2 | `cycle-0002` | 2 | 273 | `bridge_gap_hk_cube_perron_note_2026-05-06` | critical | unaudited |
-| 3 | `cycle-0003` | 3 | 273 | `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | critical | unaudited |
+| 2 | `cycle-0002` | 2 | 274 | `bridge_gap_hk_cube_perron_note_2026-05-06` | critical | unaudited |
+| 3 | `cycle-0003` | 3 | 274 | `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06` | critical | unaudited |
 | 4 | `cycle-0004` | 2 | 58 | `hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26` | high | unaudited |
 | 5 | `cycle-0005` | 2 | 1 | `ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07` | leaf | unaudited |
 | 6 | `cycle-0006` | 2 | 1 | `gate_b_context_independence_no_go_note_2026-06-17` | leaf | unaudited |

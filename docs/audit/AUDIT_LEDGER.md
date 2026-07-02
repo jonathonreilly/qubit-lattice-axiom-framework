@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 211 |
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 4 |
-| open_gate | 33 |
-| unaudited | 1609 |
+| open_gate | 34 |
+| unaudited | 1608 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1366 |
+| `audited_clean` | 1367 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1935 |
+| `unaudited` | 1934 |
 
 | claim_type | count |
 |---|---:|
@@ -86,8 +86,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 940 |
-| `leaf` | 1459 |
+| `medium` | 943 |
+| `leaf` | 1456 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -111,10 +111,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1030 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 49.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1126 | 47.64 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1127 | 47.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 45.31 | `unaudited` | unaudited |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 44.18 | `audited_clean` | **retained_bounded** |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
+| 10 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
 | 11 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 39.29 | `unaudited` | unaudited |
@@ -1355,6 +1355,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_poisson_resource_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_resource_fidelity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `teleportation_resource_from_poisson_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -19613,6 +19614,21 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For an arbitrary supplied physical two-qubit resource density matrix rho_RB, the fixed Bell-basis measurement with fixed Bob Pauli correction induces a Pauli channel whose weights are the Bell-basis diagonal overlaps p_g=<beta_g|rho_RB|beta_g>; hence the identity entanglement fidelity is p_00=<Phi+|rho_RB|Phi+> and the qubit average fidelity is F_avg=(1+2 p_00)/3, giving the fixed-protocol threshold p_00>1/2 for beating 2/3.  _(class `C`)_
 - **chain closes:** True — Within the stated fixed protocol, the note supplies the algebraic channel reduction and the completed runner independently implements the same three-qubit protocol, exact Choi average fidelity, threshold brackets, no-record Bob diagnostics, and trace-preservation checks. The reported formula error is numerical roundoff scale and all acceptance gates pass. The broader native resource-preparation and non-ideal operational questions are explicitly outside scope rather than hidden premises for this bounded theorem.
 - **rationale:** The claim is narrowly bounded and does not overstate beyond the fixed supplied-resource protocol. The load-bearing formula and threshold follow from the stated teleportation-channel derivation and are corroborated by the completed runner across representative resource families and arbitrary random density matrices. No external comparator, tuned numerical match, unsupported physical identification, or unclosed dependency is needed for the scoped conclusion.
+- **auditor confidence:** high
+
+### `teleportation_resource_from_poisson_note`
+
+- **Note:** [`TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Bounded offline finite extraction on 1D N=8 and 2D 4x4, with RALA-sourced last-taste logical operators; native preparation/readout/apparatus remains outside the citeable core and open.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T055641Z-2138dc0b-teleportation_resource_f`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the two default finite surfaces, the runner diagonalizes the Poisson/CHSH finite Hamiltonians, traces cells and spectator tastes, keeps the last taste bit per species, and finds high Bell-overlap/teleportation-fidelity logical resources for the Poisson cases while the G=0 null control fails.  _(class `C`)_
+- **chain closes:** True — The bounded finite extraction closes from the visible runner/helper code plus retained-bounded RALA: the code constructs the finite Hamiltonians, diagonalizes, reduces to the logical two-qubit density matrix, and computes Bell/resource diagnostics. The physical deterministic preparation/readout/apparatus theorem is explicitly firewalled as not supplied, so it is not imported as a premise for the scoped core.
+- **rationale:** The primary runner is not a print-only certificate: it imports visible helper code, constructs the finite Poisson/CHSH Hamiltonians, computes ground states, performs the retained-axis trace, and computes the resource diagnostics. RALA is retained-bounded and is used only for the finite logical-operator selection. The source boundary is honest: this is clean as an open-gate row with a bounded finite extraction core, not as a deterministic physical teleportation-resource theorem.
+- **open / conditional deps cited:**
+  - `TELEPORTATION_OPERATOR_CONSISTENT_END_TO_END_NOTE.md`
 - **auditor confidence:** high
 
 ### `teleportation_retained_axis_operator_algebra_closure_note`

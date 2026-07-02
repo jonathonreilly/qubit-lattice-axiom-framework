@@ -2,12 +2,11 @@
 
 | Rank | Target | Why it matters | Expected honest output | Status |
 |---:|---|---|---|---|
-| 1 | Derive the independent source/readout dual-leg license | Would turn block10 conditional support into a direct endpoint bridge | theorem or sharp obstruction | next |
-| 2 | Search for a nonseparable total-degree-2 primitive | Avoids assuming separable source/readout factorization | construction or no-go | queued |
-| 3 | Bright-channel identification theorem | Retires one named admitted input in the tensor prototype | exact support or no-go | queued |
-| 4 | Exact reduced anisotropic shell amplitude | Retires the normalization gap that blocks endpoint coefficient authority | exact support or no-go | queued |
+| 1 | Leg-level source/readout factorization primitive | Needed to fix the gauge obstruction and certify independent dual legs | theorem or no-go | next |
+| 2 | Nonseparable total-degree-2 primitive | Could close the inverse-square target without separable legs | construction or no-go | queued |
+| 3 | Bright-channel identification theorem | Retires a named tensor-prototype admitted input | exact support or no-go | queued |
+| 4 | Exact reduced anisotropic shell amplitude | Retires the normalization gap | exact support or no-go | queued |
 | 5 | Physical tensor primitive bridge for `Theta_R^(0)` / `K_R` | Connects definition-only tensor surfaces to the physical readout chain | hard stretch attempt | queued |
 
-The next best target after block10 is rank 1: derive or no-go the actual
-Route-2 source/readout dual-leg license. It is the narrowest missing premise
-exposed by this block.
+Block11 makes rank 1 stricter: any positive route must fix the source/readout
+factorization gauges, not merely reproduce the total endpoint product.

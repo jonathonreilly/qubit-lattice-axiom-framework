@@ -1,15 +1,15 @@
-trace_class: upstream_support
+trace_class: negative_route_pruning
 target_claim_id: s3_time_theta_to_slice_coupling_note
 target_blocker_text: "the readout-map endpoint triple is not derived, blocking the unique exact Theta_R -> Lambda_R coupling theorem"
 source_of_blocker_text: user_goal
-reachability_to_target: supports
-artifact_role: theorem
-next_trace_action: "Derive or no-go the license that both Route-2 source preparation and readout evaluation are independently local Riesz-dual-normalized."
+reachability_to_target: prunes
+artifact_role: no_go
+next_trace_action: "Derive or no-go a leg-level source/readout factorization primitive that fixes the channel gauges."
 
 ## Explanation
 
-If block10 is true, it gives an exact conditional mechanism for the missing
-inverse-square projector-weight law: two independent local Riesz-dual legs
-produce `lambda = 9/4` and hence the endpoint algebra. This supports the named
-Route-2 blocker but does not close it, because the current surface does not yet
-derive those two independent legs inside the physical tensor primitive chain.
+If block11 is true, it prunes one tempting route: using endpoint product algebra
+or the current `P_R` matrix alone to certify two independent source/readout
+dual legs. It does not close the endpoint. It names the next required primitive:
+a leg-level factorization theorem or equivalent nonseparable total-degree-2
+construction.

@@ -1,19 +1,22 @@
 # No-Go Ledger
 
-- **Equivariance-only covariance route.**
-  `Hom_Oh(E,T1)=0`; equivariance leaves independent channel scalars.
+## Inherited
 
-- **Scalar quadratic-invariant route.**
-  `Sym^2(perm6)` has trivial multiplicity `3`; scalar quadratic ratios are
-  free.
+| Route | Status | Boundary |
+|---|---|---|
+| Exact carrier/readout reduction alone selects the endpoint triple | closed negatively on current surface | Exact restricted carrier and endpoint algebra leave `rho_E` free. |
+| Exact time-coupling family alone selects one `P_R` | closed negatively on current surface | `Xi_P(t;c)` is exact only after a readout map is supplied. |
+| Factor-rigidity of `Xi_P` selects the readout map | closed negatively by block20 split | The safe statements are time-channel statements; the spatial prefactor selector remains open. |
+| Eta-floor endpoint affine readout is the physical gate primitive by one-hop authority | closed negatively for that bridge attempt | The bridge assessment lands broad-class membership, not uniqueness. |
 
-- **E-center-blind endpoint repairs.**
-  Main already records that E-center-blind constraints do not select `rho_E`.
+## Block20 Narrowing
 
-- **Coefficient-selection target-free route.**
-  PR #4547: target-free selectors do not pick `rho_E=21/4`; inverse-square
-  weighting remains the missing selector.
+For `c=(u_E,u_T,delta_E,delta_T)`,
 
-- **Current block19 consumer inventory.**
-  Not a no-go: exact support for downstream rho-independent consumers with
-  `delta_E=0`.
+```text
+(P(rho_b)-P(rho_a))c = ((rho_b-rho_a) delta_E, 0).
+```
+
+Thus all `delta_E=0` consumers are safe against the unresolved `rho_E` entry,
+while E-center consumers remain conditional on a supplied readout/source rule.
+

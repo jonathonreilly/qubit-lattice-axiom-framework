@@ -1,27 +1,22 @@
 # Review History
 
-## Block19 Local Review
+## Block20 Branch-Local Self-Review
 
-Disposition: `local_pass_external_review_pending`.
+No audit or audit verdict was run. The user explicitly instructed that this
+campaign should make science PRs and not run audits or apply verdicts.
 
-Local science review result:
+Branch-local checks before PR:
 
-- The runner uses exact matrix/rational arithmetic.
-- The note keeps `rho_E=21/4` as comparison target, not proof input.
-- The actual status is exact-support for direct consumer inventory, not
-  endpoint-closing status.
-- The remaining open import is explicit: any nonzero `delta_E` consumer still
-  inherits unresolved `rho_E`.
-- No audit verdict was run or applied.
-- PR conflict/mergeability was not checked.
+- status is `exact-support`, not endpoint selection;
+- no measured endpoint value is used as a proof input;
+- `rho_E=21/4` appears only as target-family contrast, not as a selected
+  theorem output;
+- downstream rule separates `delta_E=0` safe consumers from E-center
+  conditional consumers.
+- the existing bridge-assessment runner's live `t_balance` comparator now uses
+  a floating tolerance appropriate for endpoint-fitted live-module data; no
+  theorem boundary changed.
 
-Focused verification results:
-
-- endpoint-independent consumer inventory runner: `PASS=8 FAIL=0`;
-- exact readout-map runner: `PASS=11 FAIL=0`;
-- exact time-coupling runner: `PASS=8 FAIL=0`;
-- parent theta-to-slice runner: `PASS=12 FAIL=0`;
-- primitive-chain reaudit runner: `PASS=24 FAIL=0`;
-- `py_compile`;
-- `git diff --check`;
-- overclaim wording scan.
+Verification summary: new block20 runner 49/0, factor-rigidity 64/0, bridge
+assessment 14/0, exact time 8/0, parent theta-to-slice 12/0, exact readout
+11/0, py-compile pass, diff-check pass, overclaim scan clean.

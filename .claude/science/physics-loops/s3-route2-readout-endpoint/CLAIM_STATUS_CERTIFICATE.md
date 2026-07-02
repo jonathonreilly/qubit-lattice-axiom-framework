@@ -5,29 +5,19 @@ conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The block is a consumer inventory/support theorem and explicitly leaves the endpoint triple open."
+proposal_allowed_reason: "Block20 is an exact support/boundary split, not a proposed endpoint theorem."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: local_pass_external_review_pending
+review_loop_disposition: "not run: user instruction says not to audit; branch-local self-review only"
 
-# Claim Status Certificate
+## Certificate Notes
 
-Block19 is exact support for direct consumer triage. It does not supply
-`rho_E=21/4` and does not close the parent theta-to-slice open gate.
+Block20 proves a safe consumer boundary for existing exact support surfaces:
 
-Allowed branch-local status language:
+- time-channel factor-rigidity statements are readout-independent;
+- `delta_E=0` carrier consumers are `rho_E`-blind;
+- E-center consumers remain conditional on the missing readout/source rule.
 
-- `exact-support`
-- `upstream_support`
-- `consumer inventory`
-- `rho-independent subspace`
+The PR must not claim endpoint selection, readout primitive selection, or
+promotion of the parent row.
 
-Disallowed language:
-
-- endpoint-closing language;
-- unique theta-to-slice theorem;
-- a claim that the unresolved readout entry has been selected;
-- any bare retained/promoted status wording.
-
-Independent audit remains required before any repo-wide status surface can use
-this block. This physics-loop PR does not run or apply an audit verdict.

@@ -1,18 +1,18 @@
 trace_class: upstream_support
 target_claim_id: s3_time_theta_to_slice_coupling_note
-target_blocker_text: "The parent theta-to-slice row has an exact conditional family, but no unique theorem while the Route-2 readout endpoint entry rho_E remains underived."
+target_blocker_text: "The parent row remains blocked by the unresolved Route-2 readout map, specifically the E-channel entry after T-side normalization."
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "Find downstream direct consumers whose carriers satisfy delta_E=0, or leave E-center consumers conditional."
+next_trace_action: "Use the delta_E split to attack the E-center source/readout primitive or to certify downstream consumers that avoid delta_E."
 
-# Trace Gate
+## Explanation
 
-If true, block19 supports downstream review by separating direct consumers
-that are independent of `rho_E` from consumers that inherit it.
+Block20 supports the target by proving an exact reuse boundary:
 
-It does not close the endpoint. It provides a reusable test:
+- factor-rigidity is safe for time-channel statements;
+- readout-primitive selection remains open;
+- local `rho_E` dependence is exactly the `delta_E` coordinate.
 
-```text
-delta_E = 0  ->  rho-independent direct consumer.
-```
+It does not retire the endpoint blocker.
+

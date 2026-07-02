@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1521 |
+| Applied audit verdicts | 1522 |
 | Retained-grade rows, including boxed decorations | 1402 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 209 |
 | Retained bounded rows | 927 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1625 |
+| Unaudited rows | 1624 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 44 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1627 |
-| Ready rows | 85 |
+| Total pending rows | 1626 |
+| Ready rows | 84 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
-| Medium pending | 461 |
+| Medium pending | 460 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08`](../../docs/CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
 - [`taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
 - [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
 - [`koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
+- [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

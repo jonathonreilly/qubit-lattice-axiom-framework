@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 927 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1625 |
+| unaudited | 1624 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 44 |
-| ~~audited_failed~~ | 2 |
+| ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_color_automorphism_theorem` | 8 |
@@ -68,10 +68,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 1352 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 63 |
-| `audited_failed` | 24 |
+| `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1951 |
+| `unaudited` | 1950 |
 
 | claim_type | count |
 |---|---:|
@@ -1615,6 +1615,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_diamond_frequency_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
 | `shapiro_five_family_portability_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `shapiro_scaling_direct_replay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.5 | A | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -17142,6 +17143,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using the relative gap-defined support frame s_j/s_0 > 0.05 and Procrustes frame transport, the measured native K_odd interface carrier has Pf(theta)/Pf(0.05)=+1 for all 63 tested theta points and an empty crossing set.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the stated lattice operator, O-real basis, relative support frames, transport alignment, and Pfaffian signs directly, with no helper imports or external comparators. The closure is for the measured finite grids only; it does not prove a continuum-in-theta no-crossing theorem between sampled points.
 - **rationale:** The load-bearing result is a first-principles finite computation of the stated matrix family, not a definition substitution or tuned external numerical match. The source code computes the spectra, ranks, transported frames, and Pfaffian signs rather than hard-coding the empty flip set; the hard-coded absolute-cutoff ranks are only a trap-control check and are not used as the label. The displayed main-line and marginal smooth-control numbers are consistent with the executable construction and the stated bounded scope.
+- **auditor confidence:** high
+
+### `signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional Clifford/product-grading claim that retained Cl(3,1) eps sectors are exchanged by e4, the boundary block A(a) eps gives opposite sector eta labels, and half-integer spectral cutoffs quantize those labels for the supplied twisted tower.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T050114Z-bb8315af-signed_gravity_product_g`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the spectrally truncated tower, the note counts positives and negatives as eta_delta(A(a)) = floor(Lambda - a) + 1 - floor(Lambda + a), giving eta_delta = +1 for all a in (0, 1/2) at half-integer Lambda and hence chi_s = s sign(eta_delta(A(a))).  _(class `A`)_
+- **chain closes:** False — The T3 interval statement is false as written for the stated repo regulator delta = 1e-8: for any 0 < a <= delta, the n = 0 eigenvalue lies in the zero window, so h_delta = 1 and the label is undefined even at half-integer cutoff. The proof and runner effectively use delta = 0 counting or sample only twists far from zero; the missing step is to restrict the claimed intervals to |a| > delta or change the regulator statement.
+- **rationale:** T1, T2, and T4 are straightforward finite-dimensional algebra and the runner genuinely checks those identities. The load-bearing T3 quantized-label formula omits the finite delta window, so the claimed branch failures do not occur exactly only at a = 0 and a = +/-1/2. The runner samples a = 0.1, 0.3, 0.49, etc., and therefore misses the small-nonzero-twist counterexample.
 - **auditor confidence:** high
 
 ### `signed_gravity_response_lane_status_note_2026-04-26`

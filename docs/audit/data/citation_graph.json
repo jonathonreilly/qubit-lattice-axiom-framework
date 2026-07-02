@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "car_from_positivity_neutrality_note_2026-06-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "koide_fisher_rao_spherical_reorganization_note_2026-06-01"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "car_from_positivity_neutrality_note_2026-06-02",
         "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
         "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
         "chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08",
         "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
         "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
         "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
-        "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06"
+        "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
+        "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3b076221378f4dd9401e90409725f19d2ff57efc72a7cab37ef54eedab474b2a",
+      "note_hash": "967916f75db7e85b00e3099c80cadba260416b470e193926be7815520739e2ff",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

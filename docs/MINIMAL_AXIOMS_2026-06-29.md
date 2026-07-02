@@ -51,8 +51,8 @@ adds no further primitive structure.
 There is one fixed nearest-neighbor admissibility rule, covariant under lattice
 translations and proper cubic rotations.
 
-For each site, nearest-neighbor conditions determine the available subset of
-possibilities.
+For each site, the available possibilities are determined by, and vary with,
+the nearest-neighbor conditions.
 
 ### Record / Fixed Reality
 
@@ -91,8 +91,8 @@ Tier-A admissions recorded in `docs/audit/data/tier_a_admissions.json`.
 ## Relation To Dynamics And Kinetic Branch Selection
 
 Admissibility is not a dynamics axiom. It determines availability by a
-nearest-neighbor rule: for each site, nearest-neighbor conditions determine the
-available subset of possibilities. It does not choose a Hamiltonian or transfer
+nearest-neighbor rule: for each site, the available possibilities are
+determined by, and vary with, the nearest-neighbor conditions. It does not choose a Hamiltonian or transfer
 operator, supply transition probabilities or weights, select a scalar or
 nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or
 provide a record-production process.

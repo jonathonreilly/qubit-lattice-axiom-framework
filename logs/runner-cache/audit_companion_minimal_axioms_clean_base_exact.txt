@@ -1,0 +1,111 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
+runner_sha256: dc1cd77d491b33f201f0caf5d72e96e5e59f92d787023fe4bfeab6347118aed6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS: Source note exists
+      docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: Policy exists
+      docs/audit/AXIOM_MINIMALITY_POLICY.md
+PASS: Axiom-premise registry exists
+      docs/audit/data/axiom_premise_nodes.json
+PASS: Tier-A registry exists
+      docs/audit/data/tier_a_admissions.json
+PASS: Source type is meta
+      framework memo, not theorem row
+PASS: Source status is current public framework axiom memo
+      audit status remains independent
+PASS: Source cites owner approval authority
+      section 6
+PASS: Source registers primary runner
+      scripts/audit_companion_minimal_axioms_clean_base_exact.py
+PASS: Registry canonical ids include minimal_axioms
+      
+PASS: Registry node exists
+      minimal_axioms
+PASS: Registry current path points to this note
+      docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: Registry aliases current 2026-06-29 memo
+      ['docs/MINIMAL_AXIOMS_2026-05-20.md', 'docs/MINIMAL_AXIOMS_2026-06-04.md', 'docs/MINIMAL_AXIOMS_2026-06-05.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md']
+PASS: Registry aliases prior 2026-06-05 Record memo
+      
+PASS: Registry aliases prior 2026-06-04 Record memo
+      
+PASS: Registry aliases 2026-05-20 local-algebra memo
+      
+PASS: Registry does not alias superseded 2026-04-11 four-input stack
+      prevents stale A4/g_bare laundering
+PASS: Registry does not alias restored 2026-05-03 transition memo
+      keeps transition memo separate
+PASS: Registry note blocks observable-principle laundering
+      
+PASS: Registry note records Admissibility and downstream-boundary firewall
+      
+PASS: Policy records 2026-06-29 foundation reset
+      
+PASS: Policy no-laundering clause lists Admissibility and Record boundaries
+      
+PASS: Tier-A genuine admitted input count remains two
+      2
+PASS: minimal_axioms is not a Tier-A derivation target
+      
+PASS: Tier-A registry records Record as reclassified primitive
+      
+PASS: Tier-A Record reclassification source is current memo
+      docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: Tier-A Record boundary forbids P2/log-det/source-action/context-selection laundering
+      
+PASS: Note names exactly four framework axioms
+      
+PASS: Lattice locality clause is present
+      
+PASS: Qubit site-possibility clause is present
+      
+PASS: Cl(3,0) is fenced as representation-only
+      
+PASS: Admissibility local-constraint clause is present
+      
+PASS: Record fixed-reality clause is present
+      
+PASS: Qualification is named-content-only language
+      
+PASS: Audit-pipeline treatment says chain-satisfy without bounding
+      
+PASS: Observable-principle parent is explicitly outside the axiom node
+      
+PASS: Open gates outside axioms include staggered realization
+      
+PASS: Open gates outside axioms include theta
+      
+PASS: Open gates outside axioms include context selection and occurrence rules
+      
+PASS: Open gates outside axioms include g_bare
+      
+PASS: Open gates outside axioms include scale self-consistency
+      
+PASS: Axiom/primitive purity guard passes
+        OK   realized_state_primitive (docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md): pure premise content
+PASS: Qubit: Pauli matrices provide a Cl(3,0)-compatible encoding
+      {sigma_i, sigma_j} = 2 delta_ij I checked as 2x2 complex matrices; encoding is notation-only
+PASS: Qubit: no nonzero 2x2 complex matrix anticommutes with all three Pauli generators
+      linear coefficient solve gives a=d=0, b+c=0, b-c=0, so M=0
+PASS: Lattice: Z^3 nearest-neighbor adjacency has six graph-distance-one neighbors
+      finite-range locality can be read as finite graph-distance range on this adjacency
+PASS: Admissibility: nearest-neighbor conditions can constrain possibility availability
+      toy predicate only: neighbor conditions can make a candidate unavailable; no probability, transition, or dynamics is used
+PASS: Record: finite scalar record functional is additive over disjoint collections
+      I(R1 union R2)=I(R1)+I(R2) and I(empty)=0 checked for finite weighted records
+PASS: Record: locked possibility is invariant under repeated readout
+      same record identity returns the same locked possibility; no resampling or re-selection is used
+PASS: Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion
+      script checks only algebraic notation, graph adjacency, local availability bookkeeping, fixed record readout, and finite additivity
+
+runner_check_breakdown = {A: 48, B: 0, C: 0, D: 0, total_pass: 48}
+TOTAL: PASS=48 FAIL=0
+RESULT: PASS
+
+----- stderr -----
+

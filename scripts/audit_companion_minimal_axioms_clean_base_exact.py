@@ -191,7 +191,7 @@ def source_boundary_checks() -> list[Check]:
             "Admissibility local-constraint clause is present",
             contains(note, "one fixed nearest-neighbor admissibility rule")
             and contains(note, "covariant under lattice translations and proper cubic rotations")
-            and contains(note, "For each site, nearest-neighbor conditions determine the available subset of possibilities."),
+            and contains(note, "For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions."),
             "",
         ),
         Check(

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/dm_iseed_selector_route_probes_2026_07_02.py
+runner_sha256: e45a4cca9106a650f6c995dba3326c14ddd9b4afa1a4a55cda370b67f6f2b13c
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.33
+status: ok
+----- stdout -----
+========================================================================================
+I_seed SELECTOR ROUTE PROBES (dm-leptogenesis minimum-information gate)
+========================================================================================
+gate note: docs/DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md
+seed surface: x_seed=(xbar,xbar,xbar), y_seed=(ybar,ybar,ybar)
+  xbar=0.5633333333333334, ybar=0.30666666666666664, eta_obs=6.12e-10
+I_seed = D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos delta)  [note's info_cost]
+transport map eta_columns imported from the gate note's own runner stack
+realized_state primitive respected: pointwise evaluation, no typicality
+
+========================================================================================
+PROBE 1: axiom-surface independence of the favored column i_*
+========================================================================================
+[PASS] Two law-admissible realized states favor DIFFERENT transport columns
+       witness: assignment A favors column 0: x=[0.076521, 0.076521, 1.536959], y=[0.10506 , 0.038649, 0.776291], delta=0, eta/eta_obs=[0.468627, 0.468618, 0.219751] | assignment B favors column 1: x=[0.076521, 0.076521, 1.536959], y=[0.041656, 0.041656, 0.836688], delta=0, eta/eta_obs=[0.442683, 0.442683, 0.222029] | both on fixed seed surface (mean-xbar/mean-ybar)=True | distinct favored columns 0 != 1
+
+========================================================================================
+PROBE 2: weighting-principle dependence of the I_seed argmin
+========================================================================================
+[PASS] Uniform vs modality-weighted minimum-information argmins disagree
+       witness: |bank|=191 off-seed sources (seed excluded) | uniform-argmin idx=71 (x=[0.498593, 0.822041, 0.369367], y=[0.306667, 0.306667, 0.306667], delta=0, I_seed=0.055557445) | modality-weighted (wx,wy)=(2,0.5) argmin idx=8 (x=[0.563333, 0.563333, 0.563333], y=[0.271423, 0.447501, 0.201075], delta=0, I_seed^w=0.027778722) | (1,1) reproduces note info_cost=True | both minima strictly positive proper costs=True | argmins differ=True
+
+========================================================================================
+PROBE 3: constraint independence of eta_{i_*}/eta_obs = 1
+========================================================================================
+[PASS] A model meeting all other premises has eta_(i_*)/eta_obs != 1
+       witness: model A = pure seed (x_seed,y_seed,delta=0): on_surface=True, positive=True, i_*=1, eta_(i_*)/eta_obs=0.719082664 (deviation from 1 = -0.280917336) | model B = off-seed (x=[0.940049, 0.283137, 0.466814], y=[0.166053, 0.451379, 0.302568], delta=0.4): on_surface=True, positive=True, i_*=0, eta_(i_*)/eta_obs=0.908774422 (deviation from 1 = -0.091225578) | both satisfy the other premises with ratio != 1 ==> equality is an independent imposed constraint
+
+========================================================================================
+TOTAL: PASS=3 FAIL=0
+========================================================================================
+
+----- stderr -----
+

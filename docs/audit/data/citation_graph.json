@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
     },
     {
@@ -53483,6 +53479,10 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_vertex_power_derivation",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d5ae7e11f360995081c42cd56a0efd27a2f01f21bc31f5289681921d368ff130",
+      "note_hash": "aebcfd46efba2e0c9529fa2b348066f6451a27b3d4c224b7d1c42dbac80c2c60",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

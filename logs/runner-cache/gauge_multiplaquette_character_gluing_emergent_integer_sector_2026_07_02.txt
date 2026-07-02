@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py
+runner_sha256: 40c9eed9bf8b3cdda96c4cd9e2f67d644b678150291cb6374f395d6f02953dd0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.79
+status: ok
+----- stdout -----
+Section A: U(1) dual coefficients
+  [PASS] A1 Wilson coefficients c_n(beta=1) = I_n(beta) (n<=6)
+  [PASS] A1 Wilson coefficients c_n(beta=6) = I_n(beta) (n<=6)
+  [PASS] A2 Wilson coefficients positive and paired c_n = c_-n (|n|<=30)
+  [PASS] A3 heat-kernel member: quadrature coefficients are the Gaussian dual-label profile
+Section B: gluing = label matching (derived, not assumed)
+  [PASS] B1 shared-link gluing: int dV w(A+V) w(B-V) = sum_n c_n^2 e^{in(A+B)}
+  [PASS] B2 2x2 torus: link constraints force all labels equal (enumeration)
+         solutions = 7, all matched
+  [PASS] B3 2x3 torus: link constraints force all labels equal (enumeration)
+         solutions = 7, all matched
+  [PASS] B4 every link column has exactly one +1 and one -1 (sums to zero)
+  [PASS] B5 constrained enumeration reproduces Z = sum_n c_n^V (2x2, beta=2)
+         Z = 40.261474
+Section C: flux-form sector weights
+  [PASS] C1 beta=1: Z_n > 0 all sectors, paired, odd support
+         V=4: Z_0=0.926203 Z_1=0.036776 Z_2=0.000122
+  [PASS] C1 beta=6: Z_n > 0 all sectors, paired, odd support
+         V=4: Z_0=0.339725 Z_1=0.235392 Z_2=0.079665
+  [PASS] C2 truncation stability |n|<=30 vs |n|<=60 (beta=6, V=4)
+         max drift = 0.00e+00
+  [PASS] C3 finite-truncation tail bound: mass at |n|>10 explicit and tiny
+         tail = 2.40e-16
+Section D: winding form and branch-datum discharge
+  [PASS] D1 theta slot: theta-inserted weight has coefficients shifted by theta/2pi (pairing derived from the action slot)
+  [PASS] D2 flux form equals Poisson winding form Z(theta) = sum_Q e^{i theta Q} Z_Q
+  [PASS] D3 winding weights Z_Q > 0, paired, odd support
+         Z_0=0.886227 Z_1=0.075156 Z_2=0.000046
+  [PASS] D4 closed surface: sum_p theta_p = 0 identically (link cancellation), so Q = sum_p k_p is an exact integer
+  [PASS] D5 total Q invariant under refundamentalizing any link; regional splits shift compensatingly (boundary chart covariance)
+Section E: selector interface arithmetic
+  [PASS] E1 at theta=pi odd winding sectors carry negative weight; at theta=0 all sector weights nonnegative
+Section F: nonabelian matched-label contrast
+  [PASS] F1 SU(2) gluing identity int dV chi_a(AV) chi_b(V^dag B) = delta_ab chi_a(AB)/d_a (S^3 quadrature)
+  [PASS] F2 SU(2) character orthogonality under the Weyl class measure
+  [PASS] F3 SU(2) matched-label decomposition on the 1-cell torus: Z = sum_j c_j/d_j with every sector weight positive
+         beta=6: Z(1-cell torus) = sum_j c_j/d_j = 56.032398
+  [PASS] F4 SU(3) dual coefficients at beta=6: positive on every matched label, conjugation-paired
+         c00=3.44144 c10=4.36235 c11=4.46726 c20=2.80743
+  [PASS] F5 Z-valued conjugation-odd functions on the SU(3) matched labels exist with odd support and are NON-unique (p-q vs (p-q)^3)
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

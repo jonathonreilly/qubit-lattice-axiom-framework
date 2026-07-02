@@ -393,13 +393,23 @@ def main() -> int:
             and row_note_path not in never_gate_source_paths
             and any(fnmatchcase(row_note_path, pat) for pat in excluded_source_patterns)
         ):
-            add_notice(
-                "excluded_path_row_grandfathered",
-                f"{cid}: {row_note_path} matches data/excluded_source_patterns.txt but "
-                "the row predates exclusion and is kept by the should_gate_node "
-                "grandfather guard; dropping grandfathered rows is an owner/audit-lane "
-                "decision"
-            )
+            row_has_audit_history = (
+                row.get("audit_status") not in (None, "unaudited")
+            ) or bool(row.get("previous_audits"))
+            if row_has_audit_history:
+                add_notice(
+                    "excluded_path_row_grandfathered",
+                    f"{cid}: {row_note_path} matches data/excluded_source_patterns.txt "
+                    "but carries audit history, so history-preserving exclusion keeps "
+                    "it (should_gate_node); retiring it is an owner/audit-lane decision"
+                )
+            else:
+                add_notice(
+                    "excluded_path_row_pending_drop",
+                    f"{cid}: {row_note_path} matches data/excluded_source_patterns.txt "
+                    "with no audit history; the next seeding run drops the row and "
+                    "strips its inbound dep edges"
+                )
         if ind not in ALLOWED_INDEPENDENCE:
             errors.append(f"{cid}: independence={ind!r} not in allowed set")
 

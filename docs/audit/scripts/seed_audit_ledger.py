@@ -135,7 +135,25 @@ def is_excluded_source_path(path: str) -> bool:
 
 
 def should_gate_node(node: dict, prior: dict | None) -> bool:
-    """Return True when a graph node should not become a ledger row."""
+    """Return True when a graph node should not become a ledger row.
+
+    Exclusion is history-preserving, exactly as
+    data/excluded_source_patterns.txt documents: a row under an excluded
+    pattern is dropped only when it is an unaudited unknown — no terminal
+    or in-flight audit_status AND no archived previous_audits. Rows
+    carrying audit history are never auto-dropped (retroactive exclusion
+    must not erase audit evidence); they stay in the ledger and surface as
+    `excluded_path_row_grandfathered` lint notices, and retiring them is
+    an owner/audit-lane decision. Exact paths in
+    data/never_gate_source_paths.txt always stay.
+
+    (The pre-2026-07 guard also kept any row whose effective_status was
+    set — which after one pipeline run is every row, making retroactive
+    exclusion a silent no-op. Citers of the droppable unaudited-unknown
+    rows are themselves unaudited, so enforcing the documented rule fires
+    no deps_changed re-audit cascade; the seeder strips gated ids from
+    dependents' dep lists.)
+    """
     path = node["path"]
     if not is_excluded_source_path(path):
         return False
@@ -146,10 +164,7 @@ def should_gate_node(node: dict, prior: dict | None) -> bool:
         audit_status = prior.get("audit_status")
         if audit_status and audit_status != "unaudited":
             return False
-        # This cleanup targets unknown infra rows; keep rows that already
-        # contribute to a different effective-status bucket.
-        effective_status = prior.get("effective_status")
-        if effective_status and effective_status != "unknown":
+        if prior.get("previous_audits"):
             return False
 
     return True

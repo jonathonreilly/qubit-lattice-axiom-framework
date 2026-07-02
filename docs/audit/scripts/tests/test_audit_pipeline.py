@@ -556,6 +556,48 @@ class SeedLedgerTest(unittest.TestCase):
                 ("positive_theorem", "default_positive_theorem"),
             )
 
+    def test_gate_drops_unaudited_unknown_under_excluded_pattern(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "EXCLUDED_SOURCE_PATTERNS", ("docs/lanes/**",)), \
+             mock.patch.object(m, "NEVER_GATE_SOURCE_PATHS", frozenset()):
+            node = {"path": "docs/lanes/legacy_lane.md"}
+            # Brand-new node: gated.
+            self.assertTrue(m.should_gate_node(node, None))
+            # Prior row that is an unaudited unknown: gated (history-free).
+            prior = {"audit_status": "unaudited", "previous_audits": [],
+                     "effective_status": "meta"}
+            self.assertTrue(m.should_gate_node(node, prior))
+
+    def test_gate_keeps_rows_with_audit_history(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "EXCLUDED_SOURCE_PATTERNS", ("docs/lanes/**",)), \
+             mock.patch.object(m, "NEVER_GATE_SOURCE_PATHS", frozenset()):
+            node = {"path": "docs/lanes/legacy_lane.md"}
+            # Terminal or in-flight audit_status: kept.
+            self.assertFalse(
+                m.should_gate_node(node, {"audit_status": "audited_renaming"})
+            )
+            self.assertFalse(
+                m.should_gate_node(node, {"audit_status": "audit_in_progress"})
+            )
+            # Archived previous_audits on an unaudited row: kept.
+            self.assertFalse(
+                m.should_gate_node(
+                    node,
+                    {"audit_status": "unaudited",
+                     "previous_audits": [{"audit_status": "audited_clean"}]},
+                )
+            )
+
+    def test_gate_respects_never_gate_pins_and_non_excluded_paths(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "EXCLUDED_SOURCE_PATTERNS", ("docs/lanes/**",)), \
+             mock.patch.object(
+                 m, "NEVER_GATE_SOURCE_PATHS", frozenset({"docs/lanes/pinned.md"})
+             ):
+            self.assertFalse(m.should_gate_node({"path": "docs/lanes/pinned.md"}, None))
+            self.assertFalse(m.should_gate_node({"path": "docs/REAL_NOTE.md"}, None))
+
 
 class ComputeEffectiveStatusTest(unittest.TestCase):
     def setUp(self):
@@ -1276,10 +1318,22 @@ class AuditLintTest(unittest.TestCase):
             "# infra families\ndocs/lanes/**\n", encoding="utf-8"
         )
         rows = {
+            # History-free unaudited unknown: drops at the next seeding run.
             "lanes.legacy_lane": {
                 "claim_id": "lanes.legacy_lane",
                 "note_path": "docs/lanes/legacy_lane.md",
                 "audit_status": "unaudited",
+                "claim_type": "open_gate",
+                "claim_type_provenance": "migration_hint",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
+            },
+            # Archived audit history: kept by history-preserving exclusion.
+            "lanes.audited_lane": {
+                "claim_id": "lanes.audited_lane",
+                "note_path": "docs/lanes/audited_lane.md",
+                "audit_status": "unaudited",
+                "previous_audits": [{"audit_status": "audited_clean"}],
                 "claim_type": "open_gate",
                 "claim_type_provenance": "migration_hint",
                 "effective_status": "unaudited",
@@ -1293,7 +1347,10 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         out = buf.getvalue()
         self.assertEqual(rc, 0, out)
+        self.assertIn("excluded_path_row_pending_drop", out)
+        self.assertIn("lanes.legacy_lane", out)
         self.assertIn("excluded_path_row_grandfathered", out)
+        self.assertIn("lanes.audited_lane", out)
         self.assertNotIn("warnings:", out)
 
 

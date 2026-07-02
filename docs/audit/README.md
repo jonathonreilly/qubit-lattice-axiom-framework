@@ -198,10 +198,40 @@ stay in the defaulted class, so the legacy backlog can only shrink.
 `meta` deserves care in both directions: meta rows are never queued for
 audit and chain-satisfy their dependents as stable context, so `meta` is
 reserved for documents that carry no claim any dependent could consume as
-evidence. Rows that match `data/excluded_source_patterns.txt` but predate
-their exclusion are kept by the `should_gate_node` grandfather guard and
-surfaced as `excluded_path_row_grandfathered` lint notices; actually
-dropping them is an owner/audit-lane decision, not an automatic cleanup.
+evidence.
+
+Exclusion is history-preserving: a ledger row whose path matches
+`data/excluded_source_patterns.txt` is dropped at the next seeding run
+only when it is an unaudited unknown — no terminal or in-flight
+`audit_status` and no archived `previous_audits` (lint notice
+`excluded_path_row_pending_drop` until then; the seeder also strips the
+dropped row's ids from dependents' dep lists, so no dangling edges).
+Rows carrying audit history are never auto-dropped — retroactive
+exclusion must not erase audit evidence; they stay in the ledger,
+surface as `excluded_path_row_grandfathered` lint notices, and retiring
+them is an owner/audit-lane decision. Exact paths in
+`data/never_gate_source_paths.txt` always stay.
+
+### Draining the `claim_type_defaulted` backlog
+
+The `claim_type_defaulted` lint warning list is the worklist; the
+pre-commit gate stops regrowth. Per row, in order of preference:
+
+1. **Infrastructure/doc rows** — covered by the meta tiers above or by
+   exclusion; nothing to do beyond the next seeding run.
+2. **Claim notes whose own text states the class** — add the matching
+   `Type:` header. This is an author hint only: the auditor confirms the
+   type at audit, and a header must describe the note as written, never
+   retype content to fit a desired class.
+3. **Evidence-adjacent catalogs** (package READMEs, `*_ledger` /
+   `*_packet` summaries with citers) — do **not** register these as meta
+   first; meta chain-satisfies dependents unaudited, so premature meta
+   typing launders evidence edges. Apply the dependency-honesty protocol
+   (precedent: PR #4780): read each citing note, rewire edges that
+   consume evidence to the underlying evidence notes, demote navigation
+   references to backticked context — and only when no dependent
+   consumes the catalog as evidence, register it in
+   `data/meta_source_patterns.txt`.
 
 ## The hard rules
 

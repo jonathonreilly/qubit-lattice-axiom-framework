@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 210 |
-| **retained_bounded** | 931 |
+| **retained_bounded** | 932 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1618 |
+| unaudited | 1617 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1357 |
+| `audited_clean` | 1358 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1944 |
+| `unaudited` | 1943 |
 
 | claim_type | count |
 |---|---:|
@@ -288,6 +288,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_color_automorphism_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
+| `cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
@@ -3887,6 +3888,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The determinant and grade-action identities follow by direct 2x2 matrix algebra once the retained upstream Cl(3,0)≅M_2(C) Pauli realisation is admitted. The lattice-readout statement is only a negative boundary disclaimer, not a claimed closure.
 - **rationale:** The proof is a genuine class-A algebraic check over the retained one-hop Cl(3) complexification/split authority plus standard 2x2 matrix algebra. The runner source actually computes symbolic and exact rational matrix identities and does not import PDG values, fitted constants, or hidden numerical comparators. Under the rubric tie-breaker, because the audit has only algebraic checks, zero external comparator checks, and reduces to one upstream retained parent plus standard mathematics, the terminal verdict is audited_decoration rather than audited_clean.
 - **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
+- **auditor confidence:** high
+
+### `cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27`
+
+- **Note:** [`CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md`](../../docs/CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic spectrum and eigenspace facts for Y=(1/3)P_symm-P_antisymm built from the b1<->b2 swap on C^8=(C^2)^{otimes 3}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T052742Z-edd1ded1-cl3_hypercharge_eigenval`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since P_symm and P_antisymm are complementary orthogonal projectors of ranks 6 and 2, Y acts as +1/3 on Im(P_symm) and -1 on Im(P_antisymm), giving spectrum {+1/3 multiplicity 6, -1 multiplicity 2}.  _(class `A`)_
+- **chain closes:** True — The swap is an involution with four fixed basis states and two swapped pairs, so the symmetric and antisymmetric projector ranks are 6 and 2. The stated trace, spectrum, |111> placement, and antisymmetric eigenspace then follow by direct finite-dimensional linear algebra without importing a physical hypercharge identification.
+- **rationale:** The proof's hard step is a finite-dimensional algebraic projector decomposition, and an independent hand check gives the same ranks, signs, trace, and eigenspaces. The runner source constructs the explicit 8x8 swap and Y at exact rational precision and checks the relevant projector identities, eigenvalue multiplicities, |111> placement, and antisymmetric block. The cited authorities are retained-bounded for the abstract C^8/base-fiber/Burnside inputs, and the audited claim does not use them to identify Y with physical SM hypercharge.
 - **auditor confidence:** high
 
 ### `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26`

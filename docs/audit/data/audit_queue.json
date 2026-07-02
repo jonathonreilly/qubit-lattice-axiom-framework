@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 281,
     "leaf": 582,
-    "medium": 456
+    "medium": 455
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17739,31 +17739,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_teleportation_native_record_apparatus.py",
       "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem",
-        "cl3_taste_generation_theorem"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.322,
-      "note_path": "docs/CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27.py",
-      "transitive_descendants": 19
     },
     {
       "audit_independence_required": "any_non_self",
@@ -48747,6 +48722,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 81,
-  "total_pending": 1620
+  "ready_count": 80,
+  "total_pending": 1619
 }

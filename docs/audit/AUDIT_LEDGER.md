@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 917 |
+| **retained_bounded** | 918 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1643 |
+| unaudited | 1642 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1337 |
+| `audited_clean` | 1338 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1969 |
+| `unaudited` | 1968 |
 
 | claim_type | count |
 |---|---:|
@@ -1462,6 +1462,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -21221,6 +21222,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The unique S_6-permutation-invariant unit vector on the six Q_L color-isospin components is (1,1,1,1,1,1)/sqrt(6), so each component amplitude is 1/sqrt(6).  _(class `A`)_
 - **chain closes:** True — The invariant-vector calculation closes as standard linear algebra once the six-component Q_L carrier and full S_6 democracy are taken as the stated setup. The physical bridge equating this amplitude with the top Yukawa response is explicitly outside the audited load-bearing scope.
 - **rationale:** The repaired note cleanly limits its load-bearing claim to the finite-dimensional S_6-invariant unit-vector lemma. The runner source actually performs symbolic checks of equality constraints, normalization, component amplitudes, and permutation invariance rather than merely printing constants. The note explicitly admits that the response bridge to y_33 remains open and does not use that bridge as a load-bearing step.
+- **auditor confidence:** high
+
+### `yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded source-side support that the signed-record epsilon source is affinely equivalent to P_- occupation, the one-Higgs lower ray is neutral, and the cited same-surface spectral-projector theorem identifies that ray as 1_0(Q_H), without positive Y_T closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T040059Z-9d87c6d5-yt_qubit_neutral_higgs_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The separate same-surface theorem supplies the missing step by functional calculus of Q_H: P_- = P_neut = 1_0(Q_H) on the one-Higgs carrier.  _(class `A`)_
+- **chain closes:** True — Within the bounded support scope, the finite Pauli/projector identities and EW neutral-ray identities follow algebraically from the provided matrices. The same-surface carrier identification is supplied by a retained-bounded cited authority, while top response and physical-scale Y_T closure are explicitly outside scope.
+- **rationale:** Independent matrix checks confirm epsilon = I - 2P_-, exp(h epsilon) = exp(h) exp(-2h P_-), Q_H = diag(1,0), and P_- = I - Q_H on the retained one-Higgs carrier. The runner's algebraic checks cover these equations, and its remaining passes are dependency, artifact, and scope guards rather than first-principles physics. All load-bearing non-axiom authorities used for the bounded support scope are retained_bounded, and the minimal-axiom dependency is an accepted premise. The note does not close positive Y_T; that is a scoped exclusion, not an unclosed dependency of this bounded theorem.
 - **auditor confidence:** high
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`

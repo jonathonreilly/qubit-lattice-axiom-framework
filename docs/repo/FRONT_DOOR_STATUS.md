@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1503 |
-| Retained-grade rows, including boxed decorations | 1387 |
+| Applied audit verdicts | 1504 |
+| Retained-grade rows, including boxed decorations | 1388 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 204 |
-| Retained bounded rows | 917 |
+| Retained bounded rows | 918 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1643 |
+| Unaudited rows | 1642 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 41 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1645 |
-| Ready rows | 93 |
+| Total pending rows | 1644 |
+| Ready rows | 94 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
-| High pending | 283 |
+| High pending | 282 |
 | Medium pending | 477 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25`](../../docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md) - high; unaudited
+- [`yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25`](../../docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md) - high; unaudited
 - [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`complex_selectivity_compare_note`](../../docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md) - medium; unaudited
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited

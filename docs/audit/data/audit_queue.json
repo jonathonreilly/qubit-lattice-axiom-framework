@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 301,
-    "high": 283,
+    "high": 282,
     "leaf": 584,
     "medium": 477
   },
@@ -8725,7 +8725,7 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25",
+      "claim_id": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -8733,22 +8733,19 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
-        "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
-        "minimal_axioms",
-        "yt_source_action_support_packet_note_2026-05-22",
         "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25"
+        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
       ],
-      "direct_in_degree": 8,
+      "direct_in_degree": 5,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.0,
-      "note_path": "docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md",
+      "load_bearing_score": 5.67,
+      "note_path": "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py",
-      "transitive_descendants": 15
+      "runner_path": "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py",
+      "transitive_descendants": 8
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -17612,32 +17609,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
-      ],
-      "direct_in_degree": 5,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/YT_STRICT_WZ_NEUTRAL_CARRIER_RESPONSE_PACKET_NOTE_2026-05-25.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py",
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lattice_physical_matching_theorem_bounded_obstruction_note_2026-05-10_match",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18329,6 +18300,32 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_emergent_lorentz_interacting_velocity_rg_attractor_2026_06_06.py",
+      "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "yt_ward_identity_derivation_theorem",
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
+        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.585,
+      "note_path": "docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py",
       "transitive_descendants": 2
     },
     {
@@ -31672,32 +31669,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_hierarchy_matsubara_determinant_ratio_narrow.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_ward_identity_derivation_theorem",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "yt_qubit_neutral_higgs_carrier_ray_bridge_note_2026-05-25"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py",
       "transitive_descendants": 2
     },
     {
@@ -49424,6 +49395,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 93,
-  "total_pending": 1645
+  "ready_count": 94,
+  "total_pending": 1644
 }

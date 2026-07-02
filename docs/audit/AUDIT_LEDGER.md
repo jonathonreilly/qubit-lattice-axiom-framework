@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 203 |
 | **retained_bounded** | 914 |
 | _retained_pending_chain_ | 4 |
-| open_gate | 32 |
-| unaudited | 1649 |
+| open_gate | 33 |
+| unaudited | 1648 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1332 |
+| `audited_clean` | 1333 |
 | `audited_conditional` | 40 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1975 |
+| `unaudited` | 1974 |
 
 | claim_type | count |
 |---|---:|
@@ -157,6 +157,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | B | - |
 | `alpha_s_sommer_static_potential_root_kernel_theorem_note_2026-06-18` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alt_connectivity_family_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1943,6 +1944,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the supplied certificate outputs/alpha_s_direct_wilson_loop_certificate_2026-04-30.json, the runner verifies Wilson-loop/static-potential authority on the configured beta=6 Wilson surface, blocks alpha_LM/u0/plaquette authority, checks three >=500-configuration volumes, and quarantines physical alpha_s(M_Z) bridge fields as context only.  _(class `A`)_
 - **chain closes:** True — The current repo certificate passes the direct runner and an independent field inspection: three distinct volumes, 500 configurations each, 72 qualified Wilson-loop statistics, 12 plateau diagnostics, 18 finite local alpha_qq values, and finite global Cornell parameters. The bounded/non-claim discipline is satisfied because the verdict ratifies only the finite packet gate and does not assert closure or impossibility for the physical alpha_s(M_Z) bridge.
 - **rationale:** The narrowed finite certificate gate closes on its own terms. The runner does not use the historical alpha_LM/u0 plaquette chain as authority, and direct inspection confirms that the physical scale/running fields remain quarantined rather than load-bearing. This is retained only at the bounded certificate level; it is not evidence for a physical alpha_s(M_Z) theorem or any downstream publication promotion.
+- **auditor confidence:** high
+
+### `alpha_s_direct_wilson_loop_honest_status_audit_note_2026-05-02`
+
+- **Note:** [`ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md`](../../docs/ALPHA_S_DIRECT_WILSON_LOOP_HONEST_STATUS_AUDIT_NOTE_2026-05-02.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Status-boundary audit of the direct Wilson-loop/static-potential alpha_s(M_Z) route: the finite certificate may be cited as bounded support, but not as a retained zero-input physical alpha_s theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T034229Z-1e279b4f-alpha_s_direct_wilson_lo`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Criteria 1, 2, 3, and 6 fail or are partial, Criterion 4 is partial, so the direct Wilson-loop alpha_s(M_Z) route is not eligible for candidate retained-grade and remains bounded/open until the named bridges are supplied.  _(class `B`)_
+- **chain closes:** True — The chain closes for the open-gate scope: the cited parent is narrowed to a finite certificate and explicitly excludes the physical alpha_s bridge, the minimal axioms do not supply g_bare = 1, and the Wilson matching note supplies beta = 2 N_c/g_bare^2 without selecting g_bare. The missing Sommer-scale, QCD-running/threshold, pure-gauge-to-full-QCD, and normalization bridges are the reason for the gate, not hidden support for a retained promotion.
+- **rationale:** Within the restricted packet, the one-hop authorities support the status correction and do not close the broad physical alpha_s(M_Z) theorem. The runner source validates a supplied JSON certificate and source-boundary firewall; its PDG, target, and standard lattice-range checks are comparator checks, not first-principles derivations. No-Go discipline does not convert this into a no-go: the note leaves the route open and names repair paths rather than asserting impossibility.
 - **auditor confidence:** high
 
 ### `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`

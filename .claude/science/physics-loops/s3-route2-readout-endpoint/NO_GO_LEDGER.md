@@ -2,9 +2,9 @@
 
 | Route | Boundary | Evidence |
 |---|---|---|
-| Sign-only repair | Negative sign is supported but leaves many admissible `rho_E` values | block23 runner |
-| Positive-lift positivity | Gives `q_E > 0`, not a magnitude | positivity parent and block23 runner |
-| Scalar `8/9` support | Supplies color-domain magnitude but not Route-2 typecast | Rconn/source-domain parents |
-| Physical selector shortcut | Separate readout/weighting context | kappa parent note |
+| Magnitude-only repair | Each magnitude selects one `rho_E`; `8/9` is not weaker than selection | block24 runner |
+| Color count alone | Supplies `F_adj`, not a Route-2 typecast | Rconn/source-domain parents |
+| Candidate magnitude scan | Different exact magnitudes select different readout entries | block24 runner |
 
-Block23 is support, not a new no-go against magnitude/typecast routes.
+This no-go is narrow. It does not rule out a future typed theorem for
+`|c_TE| = F_adj`.

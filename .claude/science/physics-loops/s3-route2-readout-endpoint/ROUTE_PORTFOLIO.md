@@ -1,27 +1,20 @@
 # Route Portfolio
 
-## Selected Route: Sign Support
+## Selected Route: Magnitude Equivalence
 
-Status: exact support.
+Status: delivered as a narrow no-go.
 
-This route proves the sign half of the source-domain split from existing
-positivity and T-side orientation. It does not touch the magnitude/typecast
-problem.
+The route proves that magnitude equality is not an easier scalar condition.
+It is exactly an E-center readout selector unless an independent typed theorem
+sources the equality.
 
-## Remaining Positive Route
+## Remaining Route
 
-Target one of:
+The only useful positive target is now the typed theorem itself:
 
 ```text
-|c_TE| = F_adj
-scalar_signed_minus_8_9 -> route2_center_TE_minus_8_9
-su3_R_conn_8_9 -> route2_center_TE_minus_8_9
-su3_R_conn_8_9 -> route2_q_E_15_8
-su3_R_conn_8_9 -> route2_rho_E_21_4
+scalar magnitude 8/9 -> Route-2 |c_TE|
 ```
 
-## Rejected Routes For This Block
-
-- Sign-only promotion: sign leaves a continuum of `rho_E` values.
-- Scalar magnitude without typecast: still color-domain support.
-- Physical selector shortcut: separate route, not a Route-2 endpoint ratio.
+or a direct typed landing edge into `route2_center_TE_minus_8_9`,
+`route2_q_E_15_8`, or `route2_rho_E_21_4`.

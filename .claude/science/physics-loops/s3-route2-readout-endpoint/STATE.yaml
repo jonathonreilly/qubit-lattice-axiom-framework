@@ -1,24 +1,24 @@
 loop_slug: s3-route2-readout-endpoint
-block: 23
+block: 24
 date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block23-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block24-20260621
 base: origin/main
-base_commit: 174db48cb
+base_commit: ac664c3ca
 mode: campaign_science_block
-actual_current_surface_status: exact-support
+actual_current_surface_status: no-go
 target_claim: s3_time_theta_to_slice_coupling_note
-active_route: sign_support_typecast_remainder
-hard_residual: magnitude/typecast edge from color-domain F_adj to Route-2 c_TE
+active_route: magnitude_typecast_equivalence_no_go
+hard_residual: independent typed source-domain theorem for |c_TE| = F_adj
 automation_lock:
   mode: degraded_branch_local
   note: "repo automation lock status failed with permission error at /Users/jonreilly; independent worktree used"
 files_touched:
-  - docs/QUARK_ROUTE2_SOURCE_DOMAIN_SIGN_SUPPORT_TYPECAST_REMAINDER_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.py
-  - outputs/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.txt
+  - docs/QUARK_ROUTE2_SOURCE_DOMAIN_MAGNITUDE_TYPECAST_EQUIVALENCE_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_source_domain_magnitude_typecast_equivalence_no_go_2026_06_21.py
+  - outputs/frontier_quark_route2_source_domain_magnitude_typecast_equivalence_no_go_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 verification:
-  new_runner: "TOTAL: PASS=45, FAIL=0"
+  new_runner: "TOTAL: PASS=33, FAIL=0"
   positivity_parent: "TOTAL: PASS=8, FAIL=0"
   naturality_parent: "TOTAL: PASS=28, FAIL=0"
   exact_readout_parent: "PASS=11 FAIL=0"
@@ -27,13 +27,13 @@ verification:
   diff_check: pass
   wording_scan: pass
 trace_gate:
-  trace_class: upstream_support
-  reachability_to_target: supports
-  artifact_role: theorem
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  artifact_role: no_go
 pr:
   status: open
-  number: 4552
-  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4552
-  title: "[physics-loop] s3-route2-readout-endpoint block23 exact-support"
-next_exact_action: "Continue campaign with magnitude/typecast theorem or no-go."
+  number: 4553
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4553
+  title: "[physics-loop] s3-route2-readout-endpoint block24 no-go"
+next_exact_action: "Continue campaign with typed magnitude theorem or current-bank no-go."
 stop_condition: "Continue campaign if runtime remains after PR handoff."

@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 899 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1685 |
+| unaudited | 1684 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 26 |
+| ~~audited_renaming~~ | 27 |
 | ~~audited_conditional~~ | 35 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -70,8 +70,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 26 |
-| `unaudited` | 2011 |
+| `audited_renaming` | 27 |
+| `unaudited` | 2010 |
 
 | claim_type | count |
 |---|---:|
@@ -1599,6 +1599,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_conclusion_boundary_note` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `yt_lsp_signed_record_source_readout_support_note_2026-05-24` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 
 
 ## Audit findings (full)
@@ -20604,6 +20605,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **rationale:** The runner genuinely performs an exact Sympy algebra check of the common-factor cancellation, with no external comparator or numerical tuning. However, the load-bearing content is only a class-A corollary of the upstream EW color-projection family plus the standard Weinberg-angle definition, and the parent authority already states weak-angle preservation under the common rescaling. This is therefore valid as an algebraic decoration, not an independent bounded theorem.
 - **decoration parent:** `yt_ew_color_projection_theorem`
 - **auditor confidence:** high
+
+### `yt_lsp_signed_record_source_readout_support_note_2026-05-24`
+
+- **Note:** [`YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md`](../../docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-block support identifying the Y_T signed RN source record with the coordinate label of a chosen local Pauli sharp-projective readout, without closing source/action EW-Higgs authority or downstream Yukawa gates.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T012647Z-f6f6f04f-yt_lsp_signed_record_sou`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because `epsilon_x` is now the coordinate function on the LSP joint spectral outcome set, the source-action packet's signed source record is not introduced through an extra carrier isomorphism.  _(class `F`)_
+- **chain closes:** True — The Pauli projector identities, joint spectral decomposition, RN score, and RN uniqueness algebra close. The headline source-readout equality closes only because the note defines/identifies the source-record carrier with the spectral outcome set, not because that identification is independently derived from the cited authorities.
+- **rationale:** Issue: the runner verifies the Pauli and RN algebra, but the load-bearing bridge is the carrier identification `Y_T` source record equals Pauli spectral coordinate. Why this blocks: the cited inputs supply a primitive signed source record and a projective Pauli readout theorem, but the equality between those two records is introduced by the audited note's construction. Repair target: add a retained bridge theorem deriving or authorizing that source-record carrier identification without definitional reuse. Claim boundary until fixed: exact algebraic compatibility of the product RN signed record with a Pauli spectral-coordinate realization.
+- **auditor confidence:** medium
 
 ### `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17`
 

@@ -1,0 +1,45 @@
+loop_slug: s3-route2-lift-coordinate-selector
+block: 87
+date: 2026-06-21
+mode: campaign
+runtime_budget: 12h
+branch: physics-loop/s3-route2-lift-coordinate-selector-block87-20260621
+base: origin/main
+repo_lock:
+  mode: degraded_branch_local
+  reason: "automation_lock.py status failed with Permission denied: '/Users/jonreilly'"
+target: "S3/Route-2 endpoint triple (-1, -2, 21/4)"
+active_route: "multiplicative lift coordinate selector for inverse-square channel ratio"
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+hard_residual: "derive why the 9/4 inverse-square channel ratio acts on q_X rather than rho_X or q_X-1"
+a_min:
+  - "exact endpoint algebra q_X=1+rho_X/6"
+  - "conditional T-side lift q_T=5/6 and rho_T=-1"
+  - "projector weights w_E=1/3 and w_T=1/2"
+  - "same-domain value kappa^2=9/4"
+  - "exact rational arithmetic"
+forbidden_imports:
+  - "observed quark masses"
+  - "fitted endpoint selectors"
+  - "nearest-rational live endpoint matching"
+  - "assuming q_X is the scaled coordinate without a theorem"
+files_touched:
+  - docs/QUARK_ROUTE2_LIFT_COORDINATE_SELECTOR_GATE_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_lift_coordinate_selector_gate_2026_06_21.py
+  - outputs/frontier_quark_route2_lift_coordinate_selector_gate_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-lift-coordinate-selector/
+open_imports:
+  - "typed multiplicative-lift coordinate selector"
+  - "equivalent source/readout theorem proving inverse-square weights scale q_X"
+pr_status: open
+pr:
+  number: 4618
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4618"
+  title: "[physics-loop] s3-route2-lift-coordinate-selector block87 no-go"
+  head: physics-loop/s3-route2-lift-coordinate-selector-block87-20260621
+  base: main
+  state: OPEN
+next_exact_action: "Continue the campaign with a typed q_X selector theorem attempt or a nonlinear observable route beyond quadratic Schur."
+stop_condition: "Continue campaign unless runtime expires, core tooling fails globally, or the queue is globally exhausted."

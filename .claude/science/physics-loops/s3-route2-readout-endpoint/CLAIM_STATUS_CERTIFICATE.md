@@ -1,39 +1,25 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The block classifies dependencies and does not supply the E-center/source/readout primitive."
+proposal_allowed_reason: "This block prunes weak source-domain repairs and does not supply the typed readout landing theorem."
 independent_review_required_before_authority_change: true
 bare_authority_status_allowed: false
 ```
 
-## Dependency Classes
+## Claim Boundary
 
-Safe direct consumers:
+The result is a typed-edge cut certificate:
 
-- `Lambda_R backbone`
-- `V_R(t) time seed`
-- `norm-ratio time attenuation`
-- `semigroup propagation`
-- `K_R definition-only carrier`
-- `E-shell/T-shell/T-center endpoint data`
+- the current source bank has no path from `su3_R_conn_8_9` to the Route-2
+  E-center readout nodes;
+- weak scalar/sign/selector/slot additions still fail;
+- adding a typed Route-2 landing edge succeeds by existing endpoint algebra.
 
-E-center-dependent consumers:
-
-- `unique P_R theorem`
-- `q_E or rho_E endpoint`
-- `c_TE center ratio`
-- `eta-floor as physical primitive`
-- `Einstein/Regge final identification`
-
-## Boundary
-
-The note and runner support a dependency split only. They do not select
-`rho_E`, do not supply a physical readout primitive, and do not justify a final
-dynamics identification.
+It is not a proof of the positive typed readout landing theorem.

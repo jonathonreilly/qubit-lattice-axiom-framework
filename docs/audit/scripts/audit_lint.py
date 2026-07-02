@@ -394,7 +394,8 @@ def main() -> int:
         # the prefix queue for re-audit.
         if a in ("audited_conditional", "audited_renaming"):
             notes = row.get("notes_for_re_audit_if_any") or ""
-            first_token = notes.strip().split(":", 1)[0].strip().split()[0].lower() if notes.strip() else ""
+            prefix_tokens = notes.strip().split(":", 1)[0].strip().split()
+            first_token = prefix_tokens[0].lower() if prefix_tokens else ""
             if first_token not in ALLOWED_REPAIR_CLASSES:
                 add_warning(
                     "conditional_repair_prefix",

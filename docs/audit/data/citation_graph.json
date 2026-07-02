@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "color_link_sym2_endpoint_projection_2026-06-05"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "color_link_sym2_endpoint_projection_2026-06-05",
         "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
         "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
         "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
         "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
         "koide_records_objectivity_conditional_note_2026-05-31",
         "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09",
-        "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
+        "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
+        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6d1029057e1ea5e612bdbf7fc66110c23f4b462f6d09eaa81227e0a6c003557b",
+      "note_hash": "35a4d408c702150d8e160ecc302fb03a6f076be1b474458b9e24beda8aad7fc1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

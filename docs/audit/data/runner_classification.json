@@ -20556,30 +20556,6 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py"
     },
-    "lanes.action-law.readme": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/frontier_3plus1d_closure_card.py"
-    },
-    "lanes.coin-walks.readme": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/frontier_chiral_bottleneck_card.py"
-    },
     "lanes.generated-geometry.readme": {
       "assert_count": 4,
       "counts": {
@@ -20615,18 +20591,6 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/lattice_3d_dense_10prop.py"
-    },
-    "lanes.staggered.readme": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 21,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_staggered_17card.py"
     },
     "lattice_3d_dense_refinement_reconciliation_note": {
       "assert_count": 0,
@@ -23178,10 +23142,10 @@
         "A": 0,
         "B": 1,
         "C": 0,
-        "D": 4
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "D",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py"
     },
     "neutrino_majorana_current_stack_exhaustion_note": {
@@ -27624,18 +27588,6 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_proton_lifetime_derived.py"
     },
-    "publication.ci3_z3.figure_plan": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 11,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_graph_first_su3_integration.py"
-    },
     "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22": {
       "assert_count": 1,
       "counts": {
@@ -29591,18 +29543,6 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/numpy_replay_bootstrap.py"
-    },
-    "repo.root_file_guide": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "toy_event_physics.py"
     },
     "reproduction_audit_note": {
       "assert_count": 0,
@@ -37272,18 +37212,6 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py"
     },
-    "work_history.cabibbo_jarlskog_route_note_2026-04-12": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "runner": "scripts/frontier_baryogenesis.py"
-    },
     "work_history.ckm.cabibbo_bound_note": {
       "assert_count": 0,
       "counts": {
@@ -37307,18 +37235,6 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_ckm_mass_basis_nni.py"
-    },
-    "work_history.ckm.jarlskog_phase_bound_note": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 51
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "scripts/frontier_jarlskog_derived.py"
     },
     "work_history.gw_echo_timing_route_note": {
       "assert_count": 0,
@@ -48130,21 +48046,6 @@
       "dominant_class": "B",
       "exists": true
     },
-    "scripts/frontier_3plus1d_closure_card.py": {
-      "assert_count": 0,
-      "claims": [
-        "lanes.action-law.readme"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true
-    },
     "scripts/frontier_a1_11_probe_campaign_synthesis.py": {
       "assert_count": 1,
       "claims": [
@@ -49083,21 +48984,6 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true
-    },
-    "scripts/frontier_baryogenesis.py": {
-      "assert_count": 1,
-      "claims": [
-        "work_history.cabibbo_jarlskog_route_note_2026-04-12"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 1,
         "C": 0,
         "D": 0
       },
@@ -50147,8 +50033,7 @@
     "scripts/frontier_chiral_bottleneck_card.py": {
       "assert_count": 0,
       "claims": [
-        "chiral_bottleneck_card_proposal",
-        "lanes.coin-walks.readme"
+        "chiral_bottleneck_card_proposal"
       ],
       "counts": {
         "A": 0,
@@ -58661,8 +58546,7 @@
       "assert_count": 1,
       "claims": [
         "graph_first_su3_integration_note",
-        "left_handed_charge_matching_note",
-        "publication.ci3_z3.figure_plan"
+        "left_handed_charge_matching_note"
       ],
       "counts": {
         "A": 0,
@@ -60835,21 +60719,6 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "exists": true
-    },
-    "scripts/frontier_jarlskog_derived.py": {
-      "assert_count": 1,
-      "claims": [
-        "work_history.ckm.jarlskog_phase_bound_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 51
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py": {
@@ -64365,10 +64234,10 @@
         "A": 0,
         "B": 1,
         "C": 0,
-        "D": 4
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "D",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_neutrino_majorana_current_stack_exhaustion.py": {
@@ -70955,7 +70824,6 @@
     "scripts/frontier_staggered_17card.py": {
       "assert_count": 0,
       "claims": [
-        "lanes.staggered.readme",
         "session_synthesis_2026-04-10_graph_axioms",
         "staggered_fermion_card_2026-04-10"
       ],
@@ -86151,21 +86019,6 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "exists": true
-    },
-    "toy_event_physics.py": {
-      "assert_count": 0,
-      "claims": [
-        "repo.root_file_guide"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true
     }
   },
   "schema_version": 1,
@@ -86175,11 +86028,11 @@
       "A": 464,
       "B": 557,
       "C": 1237,
-      "D": 425,
-      "none": 451
+      "D": 422,
+      "none": 450
     },
-    "runners_classified": 3134,
+    "runners_classified": 3130,
     "runners_with_C": 1684,
-    "runners_with_D": 997
+    "runners_with_D": 994
   }
 }

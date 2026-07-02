@@ -23489,6 +23489,10 @@
       "to": "koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25"
     },
     {
+      "from": "koide_q_delta_linking_relation_theorem_note_2026-04-20",
+      "to": "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+    },
+    {
       "from": "koide_q_delta_readout_retention_split_no_go_note_2026-04-24",
       "to": "observable_principle_from_axiom_note"
     },
@@ -53658,35 +53662,35 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10"
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_formula_honest_status_note_2026-05-10"
+      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.front_door_status",
-      "to": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "repo.front_door_status",
-      "to": "per_site_su2_spin_half_theorem_note_2026-05-02"
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
       "from": "repo.front_door_status",
-      "to": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+      "to": "cl3_taste_generation_theorem"
     },
     {
       "from": "repo.front_door_status",
-      "to": "single_axiom_hilbert_note"
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.front_door_status",
-      "to": "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
     },
     {
       "from": "repo.repo_organization",
@@ -54278,7 +54282,7 @@
         "l3a_v3_trace_surface_bounded_obstruction_note_2026-05-07_l3a"
       ],
       "helper_runner_paths": [],
-      "note_hash": "58a5832cafaa15e3261601e9c595fb3142f3a8395b32ecfee9c51bc5758cd1ed",
+      "note_hash": "83af9dc1c6ee2bd7a8c1d2414b54f92497c4acf061b9b67100472c2ddeec6c06",
       "path": "docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md",
       "runner_path": "scripts/cl3_a3_route1_higgs_yukawa_2026_05_08_r1.py",
       "title": "Bridge-Gap Route 1 \u2014 Higgs/Yukawa C_3-Breaking Dynamics Bounded Obstruction"
@@ -54424,7 +54428,7 @@
         "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cd18674cfe2afdb3cefadc6817dc7968d86d01c8ee3c09511f59f1372ba2df8f",
+      "note_hash": "d8774a1ab80efb1f499b1007dfafd9da96808d8c9e9bbac30d36eb69b4365f22",
       "path": "docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md",
       "runner_path": "scripts/cl3_a3_route5_no_proper_quotient_2026_05_08_r5.py",
       "title": "A3 Route 5 \u2014 No-Proper-Quotient Species-Disclaimer (Sharpened Obstruction, Bounded)"
@@ -60926,7 +60930,7 @@
         "anomaly_forces_time_fb_note_2026-05-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "4aae415b1a4f0977313cb6a0f7d4430b6e76d7834110f81c59598e46993d420d",
+      "note_hash": "764b7fdcbf9d2047ccaedea5adcd54fd336cce0c23acbfb1c42d6379f7adee5a",
       "path": "docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md",
       "runner_path": "scripts/frontier_chronology_operational_no_past_signaling.py",
       "title": "Chronology Protection: Operational No-Past-Signaling Support Theorem"
@@ -62327,7 +62331,7 @@
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "eb4af6e1cb6e4fb76e5c56b668b1f10165c51ed3942aad0f31349636aa430c01",
+      "note_hash": "8f8c1a7c485d8068bf1a5a59bab630345ebb678e174857306d0dc2192580f64d",
       "path": "docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
       "runner_path": "scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py",
       "title": "Clifford Volume-Element Chirality Forces Even Total Dimension Narrow Theorem"
@@ -74676,7 +74680,7 @@
         "g_newton_self_consistency_bounded_sharpening_note_2026-05-10_planckp4"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b37ce5614c914451d5459e1944a5a37a0492ae0efe6e4fd1ea8bf56f0cbb0f08",
+      "note_hash": "2321a02c49ee83a7d16e2dad899f0b736e4b01806e4a73a195dd1f18857e8a96",
       "path": "docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md",
       "runner_path": "scripts/cl3_g_newton_skeleton_selection_2026_05_10_gnewtonG1.py",
       "title": "Skeleton-Selection Bounded Support: `L = H` Under Cited Hamiltonian Uniqueness"
@@ -75702,7 +75706,7 @@
         "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py",
         "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py"
       ],
-      "note_hash": "963bb786b47040321bfa428d8bf6ea6479e13f7f7aa0037d9ab849afc32fcb0a",
+      "note_hash": "8fa2f31cdef8a19c3e068b54e9adcd1de71f622ce4624b51b82eafe698890da8",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_COMPRESSION_SCOPE_RHO_COMPLETE_INTERFACE_NARROW_THEOREM_NOTE_2026-06-12.md",
       "runner_path": "scripts/gauge_vacuum_plaquette_compression_scope_rho_complete_interface_narrow_2026_06_12.py",
       "title": "Gauge-Vacuum Plaquette Compression-Scope Rho Complete Interface Narrow Theorem"
@@ -76794,7 +76798,7 @@
         "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6bd6d2ad7f8800a3073842ee569d86c581732603d2e02bec732d5ee814f0ee15",
+      "note_hash": "7e57db4b1362db9efa14800577448a948c470a0fe0c1b8ad29c6704725a5aa23",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
       "title": "Gauge-Vacuum Plaquette Residual-Environment All-Weight Convolution Identification Narrow Theorem"
@@ -77294,7 +77298,7 @@
         "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_tensor_transfer.py",
         "scripts/frontier_gauge_vacuum_plaquette_tensor_transfer_perron_solve.py"
       ],
-      "note_hash": "d50a17b405abbcd9ca80f7315c7ac57bb34375164bd608b1b0600962f439223e",
+      "note_hash": "b71a3bc3971fb6199828b65d08704194732e6dc74a3213aabbf66f39cdefc259",
       "path": "docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md",
       "runner_path": "scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py",
       "title": "Gauge-Vacuum Plaquette Tensor-Word Perron-Derived Rho Composed Readout"
@@ -80658,7 +80662,7 @@
         "gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8a44e8a30742cf3823e90bd97a1819a953442c444c5c84fac6c686778985ed3f",
+      "note_hash": "42f78dbe0d7c8bfc374bc2e8b9062f202bfda1b24a307af38d8af66efcfca6c1",
       "path": "docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_higgs_mass_status_audit.py",
       "title": "Higgs Mass From Axiom Note \u2014 Status Correction Audit"
@@ -82688,7 +82692,7 @@
         "koide_a1_route_d_newton_girard_bounded_obstruction_note_2026-05-08_routed"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e2eff0eeb9c734dbf6cf651f3e0d2f14923b968997ae4e0afc1d65f57f867086",
+      "note_hash": "e817e30e02fed42a0f4954187823f37cac38d36d91abfb667063086f9cfbc304",
       "path": "docs/KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md",
       "runner_path": "scripts/cl3_koide_a1_probe_real_structure_2026_05_09_probe13.py",
       "title": "Koide A1 Probe 13 \u2014 Real-Structure / Antilinear-Involution Sharpened Bounded Obstruction"
@@ -83949,7 +83953,7 @@
         "koide_z3_qubit_radian_bridge_no_go_note_2026-04-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "09e2529ba1c333e3495b3ce8b1970bf73b6a6006cce7644e8f49a7b17163dc6f",
+      "note_hash": "2c6864cec38df0983cd2bc07ad73ded80e66f8bd061bced430250f2a853e496a",
       "path": "docs/KOIDE_DELTA_DIMENSIONLESS_CLOSURE_VIA_V8_THEOREM_NOTE_2026-04-29.md",
       "runner_path": "scripts/frontier_koide_delta_dimensionless_closure_via_v8.py",
       "title": "Koide \u03b4 Dimensionless Closure via V8 Theorem (V1)"
@@ -85227,7 +85231,7 @@
         "koide_q_delta_linking_relation_theorem_note_2026-04-20"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1d1b9562295a497e16b2c5bce38b1f6037ecdeaa07554bfd77e4ea7d53635d78",
+      "note_hash": "8cb73f62d0149d9e92a02907e042e0f842d79b825272e264ba049385114cb2b5",
       "path": "docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md",
       "runner_path": "scripts/frontier_koide_phase_aps_eta_parity_route_discriminator.py",
       "title": "Koide Phase delta=2/9: the APS-eta + Parity Route (re-opening the phase)"
@@ -85437,12 +85441,14 @@
     },
     "koide_q_delta_linking_relation_theorem_note_2026-04-20": {
       "claim_id": "koide_q_delta_linking_relation_theorem_note_2026-04-20",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "claim_type_author_hint": "decoration",
+      "claim_type_author_hint_raw": "decoration",
+      "claim_type_seed_hint": "decoration",
+      "deps": [
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "a9f41ae9c065fe0aee02c75f4c0ec02e16e9970145deced32930a766350b0c28",
+      "note_hash": "8d6d1434eb41e2f52f0777ad210605acc1ba8bca0793ce39d1610d9b5f9535d4",
       "path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
       "runner_path": "scripts/frontier_koide_q_delta_formal_ratio_repair.py",
       "title": "Koide Q-Delta Formal Ratio Identity"
@@ -88250,9 +88256,9 @@
     },
     "lattice_physical_matching_cluster_obstruction_note_2026-05-02": {
       "claim_id": "lattice_physical_matching_cluster_obstruction_note_2026-05-02",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
-      "claim_type_seed_hint": null,
+      "claim_type_author_hint": "no_go",
+      "claim_type_author_hint_raw": "no_go",
+      "claim_type_seed_hint": "no_go",
       "deps": [
         "yt_ew_matching_rule_m_note_2026-05-02",
         "gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02",
@@ -88261,7 +88267,7 @@
         "yt_ew_color_projection_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b8e75db99717895e120c6e9a4ef23d4081dd03f0b2be9a76f59cbe207597697b",
+      "note_hash": "ae96dc3c1bf6cd5876b22c01518adf314e8ed8a6d4d1dbfc1b83e715aa3e6546",
       "path": "docs/LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02.md",
       "runner_path": "scripts/frontier_lattice_physical_matching_cluster_obstruction.py",
       "title": "Lattice \u2192 Physical Matching Cluster Obstruction Theorem"
@@ -91633,7 +91639,7 @@
         "observable_principle_from_axiom_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5c77a08cb9c6b2249abc87c17f1897f23657a968d1bf3b751b763d9cc764d18e",
+      "note_hash": "6956635ed2cbb2d3f5bbc3e5fce512c27b376921f0a0ac1da5e0d082b21938fe",
       "path": "docs/NEUTRINO_MAJORANA_CURRENT_ATLAS_NONREALIZATION_NOTE.md",
       "runner_path": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py",
       "title": "Current Atlas Charge-Two Primitive Non-Realization"
@@ -94181,7 +94187,7 @@
         "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ea379cc8820bb5fc99c840b8fb5b2d32ca3a1dfea2e0330de382be9afdcd61a2",
+      "note_hash": "f0910936fb834f366541dd368290f137447ea604287c310bacb872777b8e8136",
       "path": "docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md",
       "runner_path": "scripts/p2_wick_rotation_sign_epsilon_closure_runner_2026_05_27.py",
       "title": "P2 Wick-Rotation Sign-`\u03b5` Closure Narrow Theorem"
@@ -98835,7 +98841,7 @@
         "universal_qg_optional_textbook_comparison_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3a3381b6feb60b9116ec31b52675feb78b79e822202663f110680b638b80cdf9",
+      "note_hash": "46b9294dd546ccf60860c61801a8b764739849235bb40cc02e4378d771d32b63",
       "path": "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
       "runner_path": null,
       "title": "Derivation Atlas"
@@ -103530,17 +103536,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10",
-        "hierarchy_formula_honest_status_note_2026-05-10",
-        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
-        "per_site_su2_spin_half_theorem_note_2026-05-02",
-        "koide_q23_k0_real_block_equivalence_note_2026-05-30",
-        "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
-        "single_axiom_hilbert_note",
-        "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22"
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "cl3_taste_generation_theorem",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "77748c53d7b24460575036174964e6d611cb9b8d51eb75c873ce8354c64c3bbd",
+      "note_hash": "5a9eebde3d25e67761b23aa94e85c8a4dfb33420fd9b60ee2b698b7f1c0c7fb7",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -104692,7 +104698,7 @@
         "scalar_selector_cycle13_meta_closure_status_note_2026-04-19"
       ],
       "helper_runner_paths": [],
-      "note_hash": "293c171146c7b901981da876b913f516cafbcba8c7b273c369c3083d11960e11",
+      "note_hash": "13613aa08bbd9c307d340627a6e3e9184e3473ea020631b73c775b24ebbf64a0",
       "path": "docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md",
       "runner_path": null,
       "title": "Scalar-Selector Cycle 1 \u2014 Remaining Open Imports"
@@ -105155,7 +105161,7 @@
       "helper_runner_paths": [
         "scripts/shapiro_delay_portable.py"
       ],
-      "note_hash": "1fa5613ab4eca54cd6126f48b9660f867b32aa2efb34857162f93f9820ca329b",
+      "note_hash": "26415e92204bf9c66b3112a618f54b45d3eb3614867256c0751b830033377d4c",
       "path": "docs/SHAPIRO_DELAY_NOTE.md",
       "runner_path": "scripts/shapiro_phase_lag_probe.py",
       "title": "Shapiro Delay Note"
@@ -105171,7 +105177,7 @@
         "retardation_discriminator_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "5b3fa318b365ffea59c346ad7eaa43420364a5da072b124c71acce9f02cec26a",
+      "note_hash": "eeec660afbdd217b4a0a6cb3ee12c8b5886a89c25da7ccaa41cf7a18650de066",
       "path": "docs/SHAPIRO_EXPERIMENTAL_CARD.md",
       "runner_path": null,
       "title": "Shapiro Phase Lag: Experimental Card"
@@ -107878,7 +107884,7 @@
         "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1372fcecb16f13ddc6dc6bff1c3c08062c5da68f955e1a38c1beb3418d3b2650",
+      "note_hash": "4bde37ec3cd69a4c257642561a8e6a3266981d60e862b0fb384317870436aa5e",
       "path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
       "runner_path": "scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py",
       "title": "Staggered-Dirac Realization Gate \u2014 Closure Synthesis (Block 01, 2026-05-17)"
@@ -108200,7 +108206,7 @@
         "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
       ],
       "helper_runner_paths": [],
-      "note_hash": "039862d6c577465d6bcad49c25bd58f304c3be1b9b77b32fd264805cb68ded69",
+      "note_hash": "6eb574d3f29502ee4513ca63a611d0489784c9894acfff6bb93fed392ac06cf5",
       "path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
       "runner_path": "scripts/cl3_staggered_dirac_substep4_ac_check_2026_05_07_substep4ac.py",
       "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)"
@@ -118453,7 +118459,6 @@
     "koide_q23_oh_covariance_nogo_note_2026-04-22",
     "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25_note_2026-05-17",
     "koide_q_bridge_single_primitive_note_2026-04-22",
-    "koide_q_delta_linking_relation_theorem_note_2026-04-20",
     "koide_q_delta_linking_relation_theorem_note_2026-04-20_note_2026-05-17",
     "koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24",
     "koide_q_dred_normalization_freedom_no_go_note_2026-06-15",
@@ -118981,27 +118986,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1389,
-      "decoration": 2,
+      "bounded_theorem": 1388,
+      "decoration": 3,
       "meta": 289,
-      "no_go": 208,
-      "none": 1428,
+      "no_go": 209,
+      "none": 1427,
       "open_gate": 119,
       "positive_theorem": 196
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 1791,
-      "decoration": 2,
+      "bounded_theorem": 1790,
+      "decoration": 3,
       "meta": 289,
-      "no_go": 313,
-      "none": 460,
+      "no_go": 314,
+      "none": 459,
       "open_gate": 193,
       "positive_theorem": 583
     },
-    "edge_count": 13521,
+    "edge_count": 13522,
     "leaf_count": 1160,
     "node_count": 3631,
-    "root_count": 1088,
+    "root_count": 1087,
     "runners_with_path": 3263
   }
 }

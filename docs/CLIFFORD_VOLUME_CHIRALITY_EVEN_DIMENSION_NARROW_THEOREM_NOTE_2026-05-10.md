@@ -235,8 +235,11 @@ separable pieces:
    completion. (Out of scope; routed to
    `NATIVE_GAUGE_CLOSURE_NOTE.md`.)
 3. Step 3: chirality requires `n = d_s + d_t` even. (**Carried here.**)
-4. Step 4: single-clock codimension-1 evolution excludes `d_t > 1`.
-   (Out of scope; routed to the single-clock theorem note.)
+4. Step 4: the B-AXIS boundary gives the conditional cap `d_t <= 1`
+   by supplying one blocked time step, one evolution axis/transfer
+   construction, and no admitted independent commuting transfer factor.
+   (Out of scope; routed to the single-clock theorem note; not derived
+   from RP uniqueness.)
 5. Admission (i): ABJ anomaly-to-inconsistency on the lattice (open
    external admission). (Out of scope; remains the parent's open
    admission.)

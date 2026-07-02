@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py
+runner_sha256: 1e840f22691f1f049fa9618c18a5f94dd6bd9730fe471fd1ddb9c51ae66aec0b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+
+-- Source and note pins --
+[PASS] note exists
+[PASS] fixed-locus source exists
+[PASS] axioms memo exists
+[PASS] fixed-locus local density pin exists
+[PASS] fixed-locus readout exclusion pin exists
+[PASS] axioms lattice sentence exists
+[PASS] note quotes local density pin
+[PASS] note quotes readout exclusion pin
+[PASS] note quotes lattice sentence
+
+-- T7-1 exact diagonal-momentum reduction --
+[PASS] N=3: R fixed momenta are diagonal  (count=3)
+[PASS] N=3: R^2 fixed momenta are diagonal  (count=3)
+[PASS] N=3: R and R^2 fixed sets coincide
+[PASS] N=4: R fixed momenta are diagonal  (count=4)
+[PASS] N=4: R^2 fixed momenta are diagonal  (count=4)
+[PASS] N=4: R and R^2 fixed sets coincide
+[PASS] N=5: R fixed momenta are diagonal  (count=5)
+[PASS] N=5: R^2 fixed momenta are diagonal  (count=5)
+[PASS] N=5: R and R^2 fixed sets coincide
+[PASS] N=3, j=1: fixed character sum is N^3
+[PASS] N=3, j=1: off-diagonal character sum vanishes
+[PASS] N=3, j=2: fixed character sum is N^3
+[PASS] N=3, j=2: off-diagonal character sum vanishes
+[PASS] N=4, j=1: fixed character sum is N^3
+[PASS] N=4, j=1: off-diagonal character sum vanishes
+[PASS] N=4, j=2: fixed character sum is N^3
+[PASS] N=4, j=2: off-diagonal character sum vanishes
+[PASS] C4 discriminator fixed count differs from C3 diagonal count  (C4 count=8)
+[PASS] C4 discriminator computed exact count
+[PASS] identity component gives full trace, not diagonal sum
+
+-- T7-1 dense numeric confirmations --
+[PASS] N=4, t=0.3: dense trace equals diagonal sum  (err=3.553e-15)
+[PASS] N=4, t=1.0: dense trace equals diagonal sum  (err=3.109e-15)
+[PASS] N=4, t=3.0: dense trace equals diagonal sum  (err=5.551e-15)
+[PASS] N=5, t=0.3: dense trace equals diagonal sum  (err=1.554e-15)
+[PASS] N=5, t=1.0: dense trace equals diagonal sum  (err=5.329e-15)
+[PASS] N=5, t=3.0: dense trace equals diagonal sum  (err=1.510e-14)
+[PASS] N=6, t=0.3: dense trace equals diagonal sum  (err=0.000e+00)
+[PASS] N=6, t=1.0: dense trace equals diagonal sum  (err=1.998e-15)
+[PASS] N=6, t=3.0: dense trace equals diagonal sum  (err=3.109e-15)
+[PASS] anchor N=4,t=0.3
+[PASS] anchor N=6,t=1.0
+[PASS] wrong dispersion breaks N=4,t=0.3
+[PASS] wrong dispersion breaks N=6,t=1.0
+
+-- T7-2 continuum bookkeeping --
+[PASS] t=25: torus size follows ceil(12 sqrt(t))  (N=60)
+[PASS] t=100: torus size follows ceil(12 sqrt(t))  (N=120)
+[PASS] t=400: torus size follows ceil(12 sqrt(t))  (N=240)
+[PASS] per-site continuum error strictly decreases  ([0.0008502844781874686, 0.0002211905665427949, 6.447689519628597e-05])
+[PASS] per-site continuum ratios discriminate  ([3.844126318212398, 3.4305399766758007])
+[PASS] per-length Lefschetz error strictly decreases  ([0.00028342815939591537, 7.373018884770932e-05, 2.1492298398928522e-05])
+[PASS] per-length Lefschetz ratios discriminate  ([3.844126318207864, 3.4305399766543845])
+[PASS] per-unit-length value approaches 1/3  (value=0.333354825632)
+[PASS] per-site value approaches 1/sqrt(3)  (value=0.577387494942)
+[PASS] normalization discriminator separates 1/sqrt(3) from 1/3
+[PASS] only per-unit-length is near 1/3
+[PASS] exact normalization ratio is sqrt(3)
+
+-- T7-3 exact face wiring --
+[PASS] omega core identity equals 3  (3)
+[PASS] j=1 transverse factor derives to 1/3  (1/3)
+[PASS] j=2 transverse factor derives to 1/3  (1/3)
+[PASS] unaveraged nontrivial-sector sum derives to 2/3
+[PASS] C3 group average derives to 2/9 (fixed-locus value)
+[PASS] wrong-member rejector L3 != 1/9
+[PASS] wrong-weight rejector: (1,1)-pair per-mode factor is not real-positive 1/3
+[PASS] PR #4783 rescale obstruction persists on the ambient normalization
+
+-- Note discipline --
+[PASS] three required ambient-face sentences and no-go sentence appear
+[PASS] N1 through N8 headers appear
+[PASS] forbidden route/status phrases absent
+[PASS] wall labels are whitelisted  (['W_cycle_holonomy_value', 'W_defect_identity_unit', 'W_defect_readout_selection'])
+[PASS] status-authority header is present
+[PASS] canonical bounded_theorem claim type is present
+[PASS] scope is separated from claim type
+[PASS] noncanonical bounded theorem metadata is absent
+[PASS] source note does not use runner PASS as status
+[PASS] exactly two markdown links appear  (['../scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py', 'KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md'])
+[PASS] exactly one markdown dependency target appears  (['KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md'])
+[PASS] runner link is present  (['../scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py'])
+[PASS] axioms memo is inline text, not a link
+[PASS] in-flight PR identifiers are backticked
+[PASS] in-flight PR identifiers are not link targets
+[PASS] spec leakage phrases absent from note
+[PASS] audit-grade authorship phrases absent
+[PASS] verification command is recorded
+[PASS] verification close is recorded
+
+TOTAL: PASS=81 FAIL=0
+
+----- stderr -----
+

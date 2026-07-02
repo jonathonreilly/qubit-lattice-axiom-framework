@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 314,
+    "critical": 313,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -138,27 +138,28 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-      "claim_scope": "Finite-dimensional real antisymmetric D with positive diagonal S gives det(S+D)>0; the small real-diagonal invertible patch has positive determinant; and a continuous determinant-branch readout additive over disjoint positive determinant blocks is c log det, with c=1 only a convention.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "minimal_axioms"
       ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 12.856,
-      "note_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 11.352,
+      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
-      "transitive_descendants": 926
+      "runner_path": "scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py",
+      "transitive_descendants": 923
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -549,31 +550,6 @@
       "ready": false,
       "runner_path": "scripts/axiom_first_single_clock_codimension1_evolution_check.py",
       "transitive_descendants": 934
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.352,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_observable_principle_t1d_determinant_readout_independence_2026_06_16.py",
-      "transitive_descendants": 923
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -51512,5 +51488,5 @@
     }
   ],
   "ready_count": 98,
-  "total_pending": 1725
+  "total_pending": 1724
 }

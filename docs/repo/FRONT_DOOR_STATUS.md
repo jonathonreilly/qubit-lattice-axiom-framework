@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1423 |
-| Retained-grade rows, including boxed decorations | 1326 |
+| Applied audit verdicts | 1424 |
+| Retained-grade rows, including boxed decorations | 1327 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 197 |
-| Retained bounded rows | 875 |
+| Retained bounded rows | 876 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
 | Unaudited rows | 1722 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1725 |
+| Total pending rows | 1724 |
 | Ready rows | 98 |
 | Cycle-break targets | 9 |
-| Critical pending | 314 |
+| Critical pending | 313 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; audit_in_progress
+- [`observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16`](../../docs/OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md) - critical; unaudited
 - [`yt_vertex_power_derivation`](../../docs/YT_VERTEX_POWER_DERIVATION.md) - critical; unaudited
 - [`staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; unaudited

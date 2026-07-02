@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1468 |
-| Retained-grade rows, including boxed decorations | 1359 |
-| Retained positive theorems | 202 |
+| Applied audit verdicts | 1469 |
+| Retained-grade rows, including boxed decorations | 1360 |
+| Retained positive theorems | 203 |
 | Retained no-go rows | 199 |
 | Retained bounded rows | 900 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 31 |
-| Unaudited rows | 1678 |
+| Unaudited rows | 1677 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 36 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1680 |
+| Total pending rows | 1679 |
 | Ready rows | 113 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 286 |
-| Medium pending | 509 |
+| Medium pending | 508 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`](../../docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
+- [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - high; unaudited
 - [`light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09`](../../docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md) - medium; unaudited
 - [`record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18`](../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`](../../docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) - medium; unaudited
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
-| High nodes | 511 |
-| Medium nodes | 971 |
+| High nodes | 510 |
+| Medium nodes | 972 |
 | Leaf nodes | 1562 |
 
 Top load-bearing rows by graph score:

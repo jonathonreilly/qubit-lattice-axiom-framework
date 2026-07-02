@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 876 |
+| **retained_bounded** | 877 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1720 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1278 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1279 |
 | `audited_conditional` | 30 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `yt_vertex_power_derivation` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1413,6 +1411,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_source_covariance_normalization_support_note_2026-05-24` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_higgs_pole_row_normalization_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ssb_matching_gap_analysis_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_vertex_power_derivation` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ward_step3_same_1pi_construction_narrow_theorem_note_2026-05-10` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -20240,6 +20239,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** Given H_unit = I_(N_iso*N_c)/sqrt(N_iso*N_c), the diagonal basis component overlap equals 1/sqrt(N_iso*N_c), hence 1/sqrt(6) at (2,3).  _(class `A`)_
 - **chain closes:** True — The scoped identity follows directly from the stated orthonormal basis, matrix-unit definition, and H_unit normalization. The note explicitly excludes the physical SSB/Yukawa matching bridge, so that unproved bridge is outside the audited claim boundary.
 - **rationale:** The supplied proof and runner close the finite-dimensional arithmetic claim without importing gauge coupling, VEV, LSZ, chirality, HS/source normalization, or physical Yukawa readout assumptions. The alias equality is only clean within the explicitly bounded component-overlap definition and is not used to assert physical operator matching. The runner completed with 13 passes and 0 failures against the current scoped claim.
+- **auditor confidence:** high
+
+### `yt_vertex_power_derivation`
+
+- **Note:** [`YT_VERTEX_POWER_DERIVATION.md`](../../docs/YT_VERTEX_POWER_DERIVATION.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the adjacency-licensed SU(3) covariant nearest-neighbor staggered-Dirac hopping surface, with the named link-exponential convention, quadratic current-current coupling channel, and tree-level mean-field split, the vertex-power exponent is n_link=2 and the retained algebra gives alpha_s(v)=alpha_bare/u_0^2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T100030Z-fedf8e6a-yt_vertex_power_derivati`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** On the edge-only SU(3)-covariant hopping surface Schur bi-equivariance forces f(U)=cU, so each vertex D' has one link, and the coupling-defining quadratic current-current response has two D' insertions; hence n_link=2.  _(class `C`)_
+- **chain closes:** True — Within the declared bounded surface, L1 gives an exact Schur forcing proof of one edge link per covariant hop, L2/L3 establish one link per D' insertion and two D' insertions in the selected quadratic channel, and L4 is retained algebra. The five named boundaries are not derived, but they are scoped premises/conventions rather than hidden imports.
+- **rationale:** The load-bearing exponent is derived structurally, not by fitting a strong-coupling value: the runner source constructs SU(3) link samples, staggered-Dirac matrices, finite-difference derivative operators, log-determinant response, and link-degree tests, with no external comparator checks. The Schur argument independently closes the one-link factor, and the two-insertion count follows from the explicitly scoped current-current quadratic channel. This is clean as a bounded theorem: B-GATE, B-ADJ, B-CONV, B-CHAN, and B-SPLIT remain boundaries, while the exponent and algebraic coupling map close inside that scope.
 - **auditor confidence:** high
 
 ### `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`

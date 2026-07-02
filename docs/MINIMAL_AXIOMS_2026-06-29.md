@@ -62,10 +62,9 @@ When present, a record locks exactly one local possibility from the subset
 available at that site under Admissibility; the locked possibility is invariant
 under repeated readout.
 
-Only records are readable: a readout value is determined by the locked
-possibilities read and by supplied structure, and varies with nothing else.
-For any finite collection of pairwise-disjoint records, scalar readout `I` is
-additive, with `I(empty)=0`.
+Only records are readable. A readout value is determined by record content
+alone. For any finite collection of pairwise-disjoint records, scalar readout
+`I` is additive, with `I(empty)=0`.
 
 ## Qualification
 

@@ -80,11 +80,9 @@ Recorded explicitly approved axiom updates:
   wording updates to `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved,
   2026-07-02; source file edited in place, bundled same-day with the
   Admissibility clarification below so the premise-hash re-audit waves
-  coincide). First, the Record axiom's readability sentence is extended to
-  close the readout-function gap in place: "Only records are readable: a
-  readout value is determined by the locked possibilities read and by
-  supplied structure, and varies with nothing else." (previously the sentence
-  ended at "readable"; additivity unchanged). Second, one totality sentence
+  coincide). First, the Record axiom's readability clause gains one sentence
+  closing the readout-function gap in place: "A readout value is determined
+  by record content alone." (owner wording; additivity unchanged). Second, one totality sentence
   is added to the Qualification section: "A rule offered as a law must be
   well-defined at every state admissible under Admissibility throughout its
   declared domain; the domain must be declared as registered structure, not
@@ -97,10 +95,12 @@ Recorded explicitly approved axiom updates:
   structure is pinned by the Qualification's first paragraph (the four
   axioms, approved primitives, explicit admissions, approved registrations),
   with the realized state entering through the registered pointwise-interface
-  primitive and its records through the Record axiom; an imported basis,
-  frame, or convention is an unsupplied choice, and explicitly admitting a
-  choice makes values relative to it readable; "not readable within the
-  framework" is a licensing statement, not a meaningfulness claim; the
+  primitive and its records through the Record axiom; determination is over
+  what varies — supplied structure is fixed background, so a readout built
+  from registered structure has content-determined values, while a value that
+  shifts with an imported basis, frame, or convention is not determined by
+  record content and is excluded; explicitly admitting a choice defines a
+  different fixed readout whose values are again content-determined; the
   admissible-state quantifier is fixed by the Admissibility axiom and prior
   registered structure, independent of the candidate rule (no gerrymandered
   domains — a declared domain must be a registered structural condition such

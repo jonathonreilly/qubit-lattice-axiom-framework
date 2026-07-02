@@ -247,3 +247,9 @@ block inputs; it does not set or predict an audit outcome.
 - The pre-reset wording caveat is carried, not resolved.
 - No docs/audit file, publication file, registry, or public status surface is
   edited by this block.
+
+## Block11
+
+- Added `docs/C2_WEIGHTING_NORMAL_FORM_ONE_PARAMETER_UNIQUENESS_BOUNDED_NOTE_2026-07-02.md` as a bounded normal-form theorem on the named rational content-determined two-cell class.
+- Added `scripts/frontier_c2_weighting_normal_form_uniqueness_2026_07_02.py` for exact Fraction checks.
+- No audit-lane verdict is set here; stacked sibling inputs remain unaudited unless independently adjudicated.

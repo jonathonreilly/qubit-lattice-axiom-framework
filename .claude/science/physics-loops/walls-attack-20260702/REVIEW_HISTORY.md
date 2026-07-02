@@ -135,3 +135,17 @@ Disposition: **pass-after-repair** (style-only).
 4. **F4 (verified).** Runner re-run independently: PASS=17 FAIL=0.
 
 Disposition: **pass**.
+
+## block11 — supervisor line-by-line review (2026-07-02, pre-PR)
+
+1. **F1 (verified).** Exact rational Cauchy argument: integer scaling from
+   additivity, rational from refinement, no continuity/real import; u=0/v=0
+   degenerate boundary enumerated.
+2. **F2 (verified).** The content-determination class assumption is explicit
+   (class definition item 3) and shown load-bearing by an exact
+   counterexample — the classic hidden-premise trap avoided.
+3. **F3 (verified).** kappa correspondence stated conditionally with the
+   claim_scope quote; no w value proposed.
+4. **F4 (verified).** Runner re-run independently: 24/0.
+
+Disposition: **pass**.

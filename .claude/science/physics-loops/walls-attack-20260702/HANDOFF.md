@@ -101,3 +101,18 @@ Prior: #4816, #4817, #4818, #4820, #4821. Proposed: block08 (E-ident decompositi
    premise weakens to a bookkeeping context-match; adjudication surface
    shrinks materially.
 Verdict: **OPEN** (evaluator run locally per SKILL).
+
+## Cluster-cap evaluation — before PR #7 in the carrier-measure family (block11)
+
+Prior: #4816, #4817, #4818, #4820, #4821, #4823. Proposed: block11 (C2 normal form).
+1. New load-bearing premise: YES — the uniqueness/normal-form theorem and the
+   content-determination counterexample are in no prior PR (block02 = existence
+   of the freedom only).
+2. Distinct claim type: YES — uniqueness theorem on a named class (vs
+   existence witnesses / decompositions / discharges).
+3. Independent reviewability: YES — self-contained exact rational argument +
+   own runner (24/0).
+4. Marginal review value: HIGH — C2's supplier spec becomes exact (one number
+   w); with block08 the whole ladder is now {R*, D-totality, w-supplier,
+   CTX-match}, each maximally specified.
+Verdict: **OPEN** (evaluator run locally per SKILL).

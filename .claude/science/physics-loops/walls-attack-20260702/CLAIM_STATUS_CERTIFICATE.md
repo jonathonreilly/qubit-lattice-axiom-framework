@@ -110,3 +110,18 @@ claim_type_reason: "exact algebra + verbatim stipulation anchoring; residual pre
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
+
+# Claim status certificate — block11 (C2 normal form)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: uniqueness holds on the named finite rational content-determined class; real extension needs a named (unsupplied) regularity import; kappa correspondence conditional
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact normal-form/uniqueness on a precisely constructed class; class assumption counterexampled; siblings unaudited"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

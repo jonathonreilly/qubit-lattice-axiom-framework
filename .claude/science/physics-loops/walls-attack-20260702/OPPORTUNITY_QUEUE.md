@@ -44,3 +44,10 @@ availability, review landability, blast radius, independence.
 - V3: framework-specific: rests on the equipartition note's verbatim stipulations and block01's channel norms.
 - V4: non-trivial: converting a physics-identification premise into a bookkeeping context-match is a real reduction, witnessed by exact algebra.
 - V5: distinct from block06 (which stated E-ident as a premise; this block decomposes and mostly discharges it); closest prior = block06, distinction stated.
+
+## Value-gate record (V1–V5) — block11 (pre-PR)
+- V1: obstruction = kappa claim_scope (quoted in trace gate) + C2's unspecified freedom. Block11 makes the missing supplier EXACT: one parameter w on the named class.
+- V2: new content = the uniqueness/normal-form theorem (block02 showed existence of freedom; this proves the freedom is exactly one-dimensional on the named class) + the load-bearing content-determination counterexample.
+- V3: framework-specific: the class is built from Record's own additivity sentence on the algebra-canonical partition.
+- V4: non-trivial: exact rational Cauchy argument without regularity imports, with the class assumption surfaced by counterexample.
+- V5: distinct from block02 (existence vs uniqueness/normal form); closest = block02, distinction stated.

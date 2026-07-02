@@ -68,3 +68,15 @@ reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: "ladder after block08: {R*, D-totality, C2, CTX-match}; CTX-match is a context-matching premise in the supplied-readout-context family — candidate merge into the C2/readout-context supplier spec (future note). Campaign then assesses corollary exhaustion."
 ```
+
+# Trace gate — block11 (C2 normal-form uniqueness)
+
+```yaml
+trace_class: upstream_support
+target_claim_id: ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09
+target_blocker_text: "the current approved Lattice + Quantum + Record baseline plus the registered scale-reference and kinetic-isotropy primitives do not supply a weighting/readout-bridge rule fixing kappa_EW"
+source_of_blocker_text: audit_ledger
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "C2's supplier spec is now exact: one parameter w on the content-determined rational class (plus degenerate boundary). Remaining campaign queue: moduli word-enumeration (block12); wrapped-Gaussian/Metzler recontextualization (block13, action PR#4 cluster-cap); then saturation assessment + queue refresh."
+```

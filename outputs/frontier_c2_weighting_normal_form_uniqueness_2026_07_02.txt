@@ -1,0 +1,3 @@
+Block11 C2 weighting normal form uniqueness
+checks: reachability, finite Cauchy, reconstruction, counterexample, degenerates
+TOTAL: PASS=24 FAIL=0

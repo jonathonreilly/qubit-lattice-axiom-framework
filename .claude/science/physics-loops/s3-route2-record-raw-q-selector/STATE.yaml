@@ -1,0 +1,45 @@
+loop_slug: s3-route2-record-raw-q-selector
+block: 89
+date: 2026-06-21
+mode: campaign
+runtime_budget: 12h
+branch: physics-loop/s3-route2-record-raw-q-selector-block89-20260621
+base: origin/main
+repo_lock:
+  mode: degraded_branch_local
+  reason: "automation_lock.py status failed with Permission denied: '/Users/jonreilly'"
+target: "S3/Route-2 endpoint triple (-1, -2, 21/4)"
+active_route: "Record finite-additivity raw-q selector gate"
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+hard_residual: "derive why Record/linear readout selects normalized raw q_X as the scaled coordinate"
+a_min:
+  - "Record finite scalar additivity in a supplied readout context"
+  - "exact endpoint algebra q_X=gamma_X(center)/gamma_X(shell)"
+  - "conditional T-side lift q_T=5/6"
+  - "inverse-square value lambda=9/4"
+  - "exact rational arithmetic"
+forbidden_imports:
+  - "observed quark masses"
+  - "fitted endpoint selectors"
+  - "nearest-rational live endpoint matching"
+  - "assuming quotient normalization from Record"
+files_touched:
+  - docs/QUARK_ROUTE2_RECORD_RAW_Q_SELECTOR_GATE_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_record_raw_q_selector_gate_2026_06_21.py
+  - outputs/frontier_quark_route2_record_raw_q_selector_gate_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-record-raw-q-selector/
+open_imports:
+  - "normalized-quotient readout theorem selecting q_X"
+  - "alternate typed source/readout bridge to q_E=15/8"
+pr_status: open
+pr:
+  number: 4620
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4620"
+  title: "[physics-loop] s3-route2-record-raw-q-selector block89 no-go"
+  head: physics-loop/s3-route2-record-raw-q-selector-block89-20260621
+  base: main
+  state: OPEN
+next_exact_action: "Continue the campaign with a normalized-quotient readout theorem attempt or alternate typed source/readout bridge."
+stop_condition: "Continue campaign unless runtime expires, core tooling fails globally, or the queue is globally exhausted."

@@ -1,0 +1,57 @@
+Route-2 semantic dimension bridge gate
+========================================================================================
+
+----------------------------------------------------------------------------------------
+1. Current target localization
+----------------------------------------------------------------------------------------
+PASS: exact readout note names the endpoint triple as missing
+PASS: S3 parent note keeps the unique readout-to-slice theorem open
+PASS: Schur covariance note identifies lambda=q_E/q_T=9/4 as the E-center target
+
+----------------------------------------------------------------------------------------
+2. Conditional endpoint algebra
+----------------------------------------------------------------------------------------
+PASS: reciprocal-square source-dimension ratio is exactly 9/4
+       (1/2^2)/(1/3^2) = 9/4
+PASS: lambda=9/4 gives q_T=5/6, q_E=15/8
+       q_T=5/6, q_E=15/8
+PASS: lambda=9/4 gives rho_E=21/4
+       rho_E=21/4
+PASS: lambda=9/4 gives c_TE=-8/9 with the granted T-side candidates
+       c_TE=-8/9
+PASS: conditional endpoint triple is (-1,-2,21/4)
+       (rho_T,s_TE,rho_E)=(-1,-2,21/4)
+
+----------------------------------------------------------------------------------------
+3. Dimension coincidence versus readout law
+----------------------------------------------------------------------------------------
+PASS: O_h channel dimensions match the CKM source dimensions numerically
+       (dim_E,dim_T1)=(2,3); (N_pair,N_color)=(2,3)
+PASS: inverse-square of O_h per-arm weights also gives 9/4
+       ((2/6)^-2)/((3/6)^-2) = 9/4
+PASS: dimension labels alone do not choose a coefficient ratio
+       same dimensions permit ratio 1, one-power 3/2, inverse-square 9/4, or square 4/9 unless a law selects one
+PASS: Schur note says the E:T1 quadratic ratio is free
+PASS: Schur note says no named functional supplies inverse-square projector-weight lift
+
+----------------------------------------------------------------------------------------
+4. Authority-surface bridge scan
+----------------------------------------------------------------------------------------
+PASS: CKM inverse-square note is CKM-side, not a Route-2 readout bridge
+PASS: CKM note frames inverse-square as eta^2/rho/A^2 bookkeeping
+PASS: Route-2 readout note does not cite N_pair/N_color as its missing-map selector
+PASS: S3 parent note still routes closure upstream to the readout-map endpoint triple
+
+----------------------------------------------------------------------------------------
+5. Minimal bridge requirements
+----------------------------------------------------------------------------------------
+PASS: typed bridge E<->N_pair and T1<->N_color is not supplied by current checked surfaces
+PASS: inverse-square readout law is not supplied by current checked surfaces
+PASS: no observed or fitted endpoint input is used in this verifier
+PASS: therefore the conditional arithmetic is support, not current-surface closure
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+TOTAL: PASS=21, FAIL=0
+VERDICT: conditional support plus current-bank bridge firewall. The reciprocal-square dimension ratio returns lambda=9/4 and the exact Route-2 endpoint triple if adopted, but current authority surfaces do not supply the typed E/T1-to-N_pair/N_color bridge or the inverse-square readout law.

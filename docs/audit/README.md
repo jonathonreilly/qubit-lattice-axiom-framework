@@ -249,9 +249,9 @@ compute blocker when supported, and then continues to the next ready row.
 Rows skipped this way need a completed run artifact, reduced deterministic
 runner, or proof-level replacement before re-audit.
 
-For every `audited_conditional` result, the auditor must make the repair lane
-machine-sortable by prefixing `notes_for_re_audit_if_any` with one repair
-class:
+For every `audited_conditional` or `audited_renaming` result, the auditor
+must make the repair lane machine-sortable by prefixing
+`notes_for_re_audit_if_any` with one repair class:
 
 - `missing_dependency_edge` — a needed source note or authority exists or is
   named, but is not wired as a direct dependency for the audited claim.
@@ -273,6 +273,14 @@ add an explicit citation/dependency edge, audit a named dependency first,
 create/open a bridge theorem, split a clean bounded core from a conditional
 extension, or repair/slice a runner. The audit lane surfaces these repairs; it
 does not perform them unless explicitly asked.
+
+When the cheapest repair action is dependent-side (for example, narrowing
+downstream citing sentences to the audited scope), the named action must also
+include adding a dated downstream-hygiene line to the audited note's own
+boundary. Terminal rows re-enter the audit queue only through their own
+note/runner hash drift or a dispatcher sidecar; a dependent-side repair that
+never touches the stuck row itself satisfies the audit's condition without
+ever rescheduling the row for re-audit.
 
 For high-stakes claims (`criticality = critical` by transitive-descendant
 count; the audit lane does not use author-declared flagship status), a second independent

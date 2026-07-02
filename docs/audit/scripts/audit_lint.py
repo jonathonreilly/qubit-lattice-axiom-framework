@@ -133,8 +133,8 @@ ALLOWED_PROSE_STATUS = {
     None,  # legacy rows pre-Cleanup-1 backfill
 }
 
-# Repair classes that audited_conditional rows must prefix in
-# notes_for_re_audit_if_any (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md).
+# Repair classes that audited_conditional / audited_renaming rows must prefix
+# in notes_for_re_audit_if_any (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md).
 ALLOWED_REPAIR_CLASSES = {
     "missing_dependency_edge",
     "dependency_not_retained",
@@ -386,18 +386,20 @@ def main() -> int:
                 f"{cid}: prose_status missing; run backfill_prose_status.py"
             )
 
-        # Repair-class enforcement on audited_conditional rows
-        # (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md and README.md).
-        # Conditional verdicts must prefix notes_for_re_audit_if_any with one
-        # of the seven allowed repair classes so the repair lane is
-        # machine-sortable. Legacy rows lacking the prefix queue for re-audit.
-        if a == "audited_conditional":
+        # Repair-class enforcement on audited_conditional / audited_renaming
+        # rows (per docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md and README.md).
+        # These terminal repairable verdicts must prefix
+        # notes_for_re_audit_if_any with one of the seven allowed repair
+        # classes so the repair lane is machine-sortable. Legacy rows lacking
+        # the prefix queue for re-audit.
+        if a in ("audited_conditional", "audited_renaming"):
             notes = row.get("notes_for_re_audit_if_any") or ""
-            first_token = notes.strip().split(":", 1)[0].strip().split()[0].lower() if notes.strip() else ""
+            prefix_tokens = notes.strip().split(":", 1)[0].strip().split()
+            first_token = prefix_tokens[0].lower() if prefix_tokens else ""
             if first_token not in ALLOWED_REPAIR_CLASSES:
                 add_warning(
                     "conditional_repair_prefix",
-                    f"{cid}: audited_conditional notes_for_re_audit_if_any must start with one of "
+                    f"{cid}: {a} notes_for_re_audit_if_any must start with one of "
                     f"{sorted(ALLOWED_REPAIR_CLASSES)} (got {first_token!r}); re-audit required"
                 )
 

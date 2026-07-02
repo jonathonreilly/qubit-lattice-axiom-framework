@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1453 |
-| Retained-grade rows, including boxed decorations | 1348 |
+| Applied audit verdicts | 1454 |
+| Retained-grade rows, including boxed decorations | 1349 |
 | Retained positive theorems | 200 |
 | Retained no-go rows | 197 |
-| Retained bounded rows | 893 |
+| Retained bounded rows | 894 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 30 |
-| Unaudited rows | 1693 |
+| Unaudited rows | 1692 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 35 |
 | Audited renaming rows | 26 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1695 |
+| Total pending rows | 1694 |
 | Ready rows | 107 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
-| High pending | 297 |
+| High pending | 296 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md) - high; unaudited
 - [`lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`](../../docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md) - high; unaudited
 - [`axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md) - high; unaudited
 - [`cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27`](../../docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md) - high; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) - high; unaudited
 - [`koide_berry_monopole_bridge_reduction_note_2026-05-31`](../../docs/KOIDE_BERRY_MONOPOLE_BRIDGE_REDUCTION_NOTE_2026-05-31.md) - high; unaudited
 - [`observable_principle_record_scalar_map_no_go_note_2026-06-05`](../../docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md) - high; unaudited
+- [`koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`](../../docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -81,8 +81,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 | Metric | Value |
 |---|---:|
 | Citation-graph nodes | 3619 |
-| Critical nodes | 576 |
-| High nodes | 509 |
+| Critical nodes | 575 |
+| High nodes | 510 |
 | Medium nodes | 972 |
 | Leaf nodes | 1562 |
 
@@ -92,7 +92,7 @@ Top load-bearing rows by graph score:
 - `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
 - `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
-- `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
+- `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
 - `key_terminology` - critical; 1126 descendants; score 46.638
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

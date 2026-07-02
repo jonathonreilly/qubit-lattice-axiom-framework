@@ -53462,10 +53462,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
     },
     {
@@ -53491,6 +53487,10 @@
     {
       "from": "repo.front_door_status",
       "to": "yt_ward_identity_derivation_theorem"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "cl3_taste_generation_theorem"
     },
     {
       "from": "repo.repo_organization",
@@ -103170,17 +103170,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
         "axiom_first_spin_statistics_theorem_note_2026-04-29",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_vertex_power_derivation",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
-        "yt_ward_identity_derivation_theorem"
+        "yt_ward_identity_derivation_theorem",
+        "cl3_taste_generation_theorem"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cfc2bb02ac706fa0e9ec0c0373b9b55850da08b5ab97518a5cf399d5b495a952",
+      "note_hash": "45255b93b6d94bdb21ad218af71b7ca434ba16648e6d4af859ac0eb5f0415d7f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

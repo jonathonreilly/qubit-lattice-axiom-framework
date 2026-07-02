@@ -161,3 +161,43 @@ families against it; the record-composition bridge is not established here.
 - No Record bridge, action selector, new axiom, or new primitive is assumed.
 - No wrapped-Gaussian correction outside the sampled rational `Z_5` points is
   promoted to a certified numerical claim.
+
+## Block14
+
+**New bounded artifact:**
+
+- `docs/EXACT_QGEN_METZLER_VIOLATION_ALL_ODD_N_CLOSED_FORM_BOUNDED_NOTE_2026-07-02.md`
+- `scripts/frontier_exact_qgen_metzler_all_odd_n_2026_07_02.py`
+- `outputs/frontier_exact_qgen_metzler_all_odd_n_2026_07_02.txt`
+
+**Role:**
+
+- Upgrades Block13's tested `Z_5,Z_7` exact `Q-gen` positivity obstruction to
+  a closed-form all-odd theorem: for every odd `N>=5`, the exact quadratic
+  generator has `L_2<0`, so the finite Metzler condition fails.
+- Fixes the Fourier sign convention explicitly: `hat L(k)=-psi(k)` and
+  `L_j=-(1/N) sum_k psi(k) exp(2 pi i k j/N)`, giving characters
+  `exp(-t psi(k))`.
+- Separately records the even-`N` analogue under the stated one-copy
+  self-inverse boundary-mode convention `{ -N/2+1, ..., N/2 }`.
+
+**In-runner certified inputs:**
+
+- The odd Dirichlet-kernel identity
+  `S_j=(N/2)(-1)^j cos(pi j/N)/sin^2(pi j/N)` is verified against direct exact
+  symbolic summation for `N=5,7,9,11,13` and all `1<=j<=N-1`.
+- The odd `j=2` generator sign is checked exactly for odd `N=5..41`.
+- The even convention gives
+  `S_j=(N/2)(-1)^j/sin^2(pi j/N)`; this is verified against direct exact
+  symbolic summation for `N=6,8,10,12,14` and all off-zero `j`, with `j=2`
+  negativity checked for the same even values.
+
+**Imports deliberately not used:**
+
+- No literature theorem is imported.
+- No source note other than the Block13 sibling is used as a load-bearing
+  input.
+- No Record bridge, action selector, horn selection, new axiom, or new
+  primitive is assumed.
+- No wrapped-Gaussian correction theorem beyond Block13's sampled data is
+  added.

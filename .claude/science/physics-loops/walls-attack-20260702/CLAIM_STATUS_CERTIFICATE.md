@@ -49,3 +49,5 @@ bare_retained_allowed: false
 ```
 
 # Certificate — block13: bounded_theorem; exact Q-gen not positive on tested Z_N (explicit witnesses); wrapped-Gaussian positive with certified non-quadratic deviations; bifurcation named; audit_required_before_effective_retained: true; bare_retained_allowed: false.
+
+# Certificate — block14: bounded_theorem; closed-form Metzler violation at j=2 for all odd N>=5 (and even N>=4 under stated convention); makes block13's bifurcation unconditional on those groups; audit_required: true; bare_retained_allowed: false.

@@ -64,3 +64,5 @@ T2 obstruction from generator-level to semigroup-level — future block if the
 action lane reopens.
 
 ## block13 — supervisor review: T1(⇒) remainder bound hand-checked (-t0(169/1000) + 2 t0^2 10^2 = -69/2000000 < 0 at t0 = 1/2000); T1(⇐) nonneg-series argument sound; N=5,7 witnesses explicit; wrapped-Gaussian deviations certified with tail bound 2e-95; all-N claims correctly avoided. Runner 37/0 re-run. Disposition: pass.
+
+## block14 — supervisor review: closed form S_j = (N/2)(-1)^j cos(pi j/N)/sin^2(pi j/N) matches the supervisor's independent derivation (quotient rule at numerator zero; u'(theta_j) = (N/2)(-1)^j; v' = (1/2)cos(pi j/N)); L_2 = -(1/2)cos(2pi/N)/sin^2(2pi/N) < 0 for N>=5; worker extended to even N under a stated convention (verified N=6..14 all j). Runner 109/0 re-run. Disposition: pass.

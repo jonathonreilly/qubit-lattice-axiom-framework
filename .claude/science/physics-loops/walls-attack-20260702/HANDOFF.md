@@ -17,3 +17,7 @@ Verdict: **OPEN** (evaluator run locally per SKILL).
 
 ## Cluster-cap evaluation — before PR #4 in the action family (block13)
 Prior: #4819, #4824, #4825. Proposed: block13 (Q-gen positivity incompatibility + wrapped-Gaussian correction). 1. New premise: YES — the Metzler lemma (both directions, explicit t_0 witnesses) and the wrapped-vs-exact bifurcation are new. 2. Distinct type: YES — positivity incompatibility theorem + certified corrections (vs deficit/tension). 3. Independently reviewable: YES (37/0, explicit rationals). 4. Marginal value: HIGH — the HK candidate bifurcates on the physical finite setting; any future bridge must name its object. Verdict: **OPEN** (local evaluator per SKILL).
+
+## Cluster-cap evaluation — before PR #5 in the action family (block14)
+Prior: #4819, #4824, #4825, #4828. Proposed: block14 (all-N closed form).
+New premise: YES (Dirichlet-kernel second-derivative closed form; upgrades tested-N to all-N). Distinct type: YES (unconditional closed-form theorem). Reviewable: YES (109/0; closed form cross-verified against direct sums N=5..13 all j). Marginal value: HIGH (makes the bifurcation unconditional). Verdict: **OPEN**.

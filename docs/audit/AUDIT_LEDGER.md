@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 194 |
+| **retained** | 195 |
 | **retained_no_go** | 195 |
 | **retained_bounded** | 869 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1736 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -63,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1265 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1266 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 58 |
 | `audited_failed` | 23 |
@@ -137,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1180,6 +1178,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -16833,6 +16832,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Translation and proper-cubic covariance up to site-local U(1) frame force normalized NN hopping phases to have a uniform real plaquette flux φ∈{+1,-1}, flux classifies systems up to frame on simply connected regions, and the Pauli absorbing frame lands exactly in the φ=-1 class while K0 is a countermodel to forcing that selector.  _(class `C`)_
 - **chain closes:** True — The bounded theorem closes from the accepted minimal-axiom premise plus retained Cl(3), tensor-product translation/Fock, and parity authorities, with covariance/NN/Q-conservation/site-locality treated as explicit scope constraints. The selector residual is not a missing proof step in the audited claim because the claim explicitly includes the K0 countermodel and names φ=-1 as open residual content.
 - **rationale:** The runner source genuinely constructs the cubic rotation group, phase systems, gauge/flux invariants, finite cohomology certificates, Pauli/CAR algebra, Fock bilinears, and countermodels rather than only printing expected constants. The key signs and normalizations are consistent: the C2 stabilizer conjugates axis-containing plaquette flux, Pauli anticommutation gives absorbed holonomy -1, and K0 has invariant flux +1. The only non-retained authority is the registered minimal-axiom premise, which is covered by the accepted-premise carve-out; the remaining cited authorities are retained-grade. The negative part is narrowly scoped to 'not forced by this specified constraint set' and is certified by an explicit satisfying K0 countermodel, leaving future selectors open.
+- **auditor confidence:** high
+
+### `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Within the explicitly restricted two-candidate canonical-pair surface {single-pair Grassmann G, free bosonic oscillator B}, the physical per-site dimension 2 excludes B, admits G, and G carries the cited Berezin determinant readout; no statistics forcing or hard-core-boson exclusion is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T074142Z-d048a87e-staggered_dirac_substep1`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Substituting the physical readout dim_C H_x = 2 into (D1)-(D3), candidate (B) is excluded (aleph_0 != 2) and the single-pair Grassmann candidate (G) matches (2 = 2), so within the two-candidate surface (G) is the unique survivor.  _(class `A`)_
+- **chain closes:** True — The accepted minimal-axiom/Qubit premise and retained dim-two row supply dim_C H_x = 2, while standard algebra gives dim F_x = 2 and bosonic Fock dimension aleph_0. The Berezin determinant readout is supplied by the retained_bounded Berezin authority under the candidate-G definitions, and the hard-core-boson statistics boundary is explicitly outside the claim.
+- **rationale:** The proof is an algebraic dimension comparison over retained-grade and accepted-premise inputs, not a definition substitution or tuned numerical match. The runner source performs exact symbolic checks of the Pauli/Clifford carrier, Berezin function-space module, determinant permutation formula, bosonic tower distinction, falsification leg, and scope-boundary witness, and the cached output reports PASS=45, FAIL=0. Independent inspection of the displayed dimension, CAR, nilpotency, and determinant-readout steps found no missing bridge within the stated two-candidate scope.
 - **auditor confidence:** high
 
 ### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`

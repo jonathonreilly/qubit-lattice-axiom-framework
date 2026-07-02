@@ -1,6 +1,10 @@
 # AC_phi_lambda Ambient Equivariant Heat-Trace Face
 **Date:** 2026-07-02
-**Claim type:** bounded theorem / ambient face + unit-junction persistence
+**Claim type:** bounded_theorem
+**Scope:** exact ambient equivariant heat-trace reduction plus continuum
+normalization bookkeeping on the stated `Z^3` lattice sums; no physical
+normalization, dynamics, value, readout, occurrence, or `AC_phi_lambda`
+retirement.
 **Status authority:** independent audit lane only. This note does not set an audit
 verdict, edit registries, register primitives, change axioms, or claim
 `AC_phi_lambda` retirement.
@@ -165,7 +169,8 @@ value wall citation is unchanged: one dependency line can remain
 - No continuum-limit physics claim is made beyond the stated asymptotics of the
   stated lattice sums.
 ## No-Go Discipline Gate
-**Status:** PASS for bounded ambient-face theorem; not a terminal no-go.
+This checklist supports the bounded ambient-face theorem; it is not a terminal
+no-go.
 ### N1
 Alternative-route inventory:
 - ring-internal faces: landed, `PR #4790
@@ -215,5 +220,5 @@ python3 scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py
 ```
 Measured close:
 ```text
-TOTAL: PASS=77 FAIL=0
+TOTAL: PASS=81 FAIL=0
 ```

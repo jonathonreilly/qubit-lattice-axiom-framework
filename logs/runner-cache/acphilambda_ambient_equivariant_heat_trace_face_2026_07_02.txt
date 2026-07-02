@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py
-runner_sha256: 5a220f7e851e549a2d0706cf0ee092334f5410a68b5ac1e75d6449e8a06c640f
+runner_sha256: 1e840f22691f1f049fa9618c18a5f94dd6bd9730fe471fd1ddb9c51ae66aec0b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.34
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 
@@ -41,15 +41,15 @@ status: ok
 [PASS] identity component gives full trace, not diagonal sum
 
 -- T7-1 dense numeric confirmations --
-[PASS] N=4, t=0.3: dense trace equals diagonal sum  (err=6.661e-16)
+[PASS] N=4, t=0.3: dense trace equals diagonal sum  (err=3.553e-15)
 [PASS] N=4, t=1.0: dense trace equals diagonal sum  (err=3.109e-15)
-[PASS] N=4, t=3.0: dense trace equals diagonal sum  (err=1.044e-14)
-[PASS] N=5, t=0.3: dense trace equals diagonal sum  (err=3.331e-15)
-[PASS] N=5, t=1.0: dense trace equals diagonal sum  (err=1.998e-15)
-[PASS] N=5, t=3.0: dense trace equals diagonal sum  (err=2.887e-15)
-[PASS] N=6, t=0.3: dense trace equals diagonal sum  (err=3.997e-15)
-[PASS] N=6, t=1.0: dense trace equals diagonal sum  (err=4.885e-15)
-[PASS] N=6, t=3.0: dense trace equals diagonal sum  (err=8.882e-15)
+[PASS] N=4, t=3.0: dense trace equals diagonal sum  (err=5.551e-15)
+[PASS] N=5, t=0.3: dense trace equals diagonal sum  (err=1.554e-15)
+[PASS] N=5, t=1.0: dense trace equals diagonal sum  (err=5.329e-15)
+[PASS] N=5, t=3.0: dense trace equals diagonal sum  (err=1.510e-14)
+[PASS] N=6, t=0.3: dense trace equals diagonal sum  (err=0.000e+00)
+[PASS] N=6, t=1.0: dense trace equals diagonal sum  (err=1.998e-15)
+[PASS] N=6, t=3.0: dense trace equals diagonal sum  (err=3.109e-15)
 [PASS] anchor N=4,t=0.3
 [PASS] anchor N=6,t=1.0
 [PASS] wrong dispersion breaks N=4,t=0.3
@@ -85,6 +85,10 @@ status: ok
 [PASS] forbidden route/status phrases absent
 [PASS] wall labels are whitelisted  (['W_cycle_holonomy_value', 'W_defect_identity_unit', 'W_defect_readout_selection'])
 [PASS] status-authority header is present
+[PASS] canonical bounded_theorem claim type is present
+[PASS] scope is separated from claim type
+[PASS] noncanonical bounded theorem metadata is absent
+[PASS] source note does not use runner PASS as status
 [PASS] exactly two markdown links appear  (['../scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py', 'KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md'])
 [PASS] exactly one markdown dependency target appears  (['KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md'])
 [PASS] runner link is present  (['../scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py'])
@@ -96,7 +100,7 @@ status: ok
 [PASS] verification command is recorded
 [PASS] verification close is recorded
 
-TOTAL: PASS=77 FAIL=0
+TOTAL: PASS=81 FAIL=0
 
 ----- stderr -----
 

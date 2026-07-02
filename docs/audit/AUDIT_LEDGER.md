@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 915 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1646 |
+| unaudited | 1645 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 40 |
+| ~~audited_conditional~~ | 41 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1335 |
-| `audited_conditional` | 40 |
+| `audited_conditional` | 41 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1972 |
+| `unaudited` | 1971 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 509 |
-| `medium` | 928 |
+| `high` | 508 |
+| `medium` | 929 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -1505,6 +1505,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_e_center_blindness_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
+| `registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `shapiro_delay_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `sm_gstar_i12_empirical_thermal_comparator_bridge_bounded_note_2026-06-15` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -16206,6 +16207,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Using S_+(Theta x)=S_+(x) and F(Theta x)=overline{F(x)}, the integrand exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) becomes exp(-2S_+(x)) |F(x)|^2 = |psi^2(x) F(x)|^2.  _(class `A`)_
 - **chain closes:** True — Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted source proves a direct pointwise algebraic identity followed by integration: exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) = exp(-2S_+(x)) |F(x)|^2 = |psi^2 F|^2, so the reflected integral is a real nonnegative weighted-L2 norm square and the associated form is Hermitian PSD. The runner exits cleanly with PASS=27 FAIL=0, all class-A checks, but the proof does not depend on the runner. The ratified claim is the exact conditional mathematical theorem under stated hypotheses; it does not assert that the framework Wilson/gauge/fermion action satisfies those hypotheses.
 - **rationale:** Five-judge panel result: 5/5 judges sided with the fresh positive-theorem retag. The restricted source proves a direct pointwise algebraic identity followed by integration: exp(-S_+(x)) exp(-S_+(Theta x)) F(Theta x) F(x) = exp(-2S_+(x)) |F(x)|^2 = |psi^2 F|^2, so the reflected integral is a real nonnegative weighted-L2 norm square and the associated form is Hermitian PSD. The runner exits cleanly with PASS=27 FAIL=0, all class-A checks, but the proof does not depend on the runner. The ratified claim is the exact conditional mathematical theorem under stated hypotheses; it does not assert that the framework Wilson/gauge/fermion action satisfies those hypotheses.
+- **auditor confidence:** high
+
+### `registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`
+
+- **Note:** [`REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic vanishing of an R-valued determinant-phase homomorphism under a supplied K/CPT-even determinant-character readout context, excluding downstream physical strong-CP and species-readout bridges.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T035117Z-b7fa8461-registrable_readout_dete`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** K/CPT orbit constancy makes the scalar even, g(-x)=g(x), while additivity makes it odd, so even and odd together force g(x)=0 for every phase datum.  _(class `A`)_
+- **chain closes:** False — The even-plus-odd algebra closes, but the restricted packet does not close the K/CPT orbit constancy/evenness of the scalar phase functional or the determinant-character/log-character readout boundary from the current accepted Record axiom. The current minimal-axiom authority explicitly leaves K/CPT structure and readout-context content downstream.
+- **rationale:** The runner verifies the elementary algebra and prose guardrails, but it also treats key boundary language as checked by note text rather than deriving it from the cited axiom. The cited current minimal-axiom authority supplies finite scalar additivity only, not K/CPT orbit constancy, central-sector readout context, or determinant-character/log-character homomorphism structure. The theorem is valid as a conditional algebra lemma once those readout assumptions are supplied, but the restricted packet does not close them as retained inputs.
 - **auditor confidence:** high
 
 ### `registration_reinstates_chirality_no_go_note_2026-06-07`

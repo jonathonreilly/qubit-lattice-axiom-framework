@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 205 |
-| **retained_no_go** | 204 |
+| **retained_no_go** | 205 |
 | **retained_bounded** | 922 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1638 |
+| unaudited | 1637 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1342 |
+| `audited_clean` | 1343 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1964 |
+| `unaudited` | 1963 |
 
 | claim_type | count |
 |---|---:|
@@ -1338,6 +1338,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -19295,6 +19296,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The ideal three-register protocol is the two-dimensional teleportation identity conjugated by the three encoding isometries V_A, V_R, and V_B, with A/R Bell projectors, identity R/B logical resource, and Bob corrections all expressed in the ordered logical bases.  _(class `A`)_
 - **chain closes:** True — The scoped claim is an ideal logical-support theorem, not a physical implementation claim. Given the supplied definitions, conjugating the standard two-qubit teleportation identity by V_A, V_R, and V_B proves the intended map for any valid ordered encoding triple, and the completed runner output is consistent with that algebraic boundary.
 - **rationale:** The load-bearing derivation is an algebraic identity on explicitly defined two-dimensional logical supports, and the runner output reports exact projector resolution/idempotence/orthogonality, all Bell outcomes, corrected-state fidelity, no-message Bob input independence, and the negative-control boundaries within tolerance. The 1609-triple default cap limits the telemetry counts, but the note does not use the capped survey as the theorem boundary; the theorem boundary is the conjugated teleportation identity for runner-valid encodings on the stated surface. No physical resource-preparation, measurement-apparatus, noise, Hamiltonian, or matter-transport bridge is being imported into the scoped claim.
+- **auditor confidence:** high
+
+### `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`
+
+- **Note:** [`TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite-dimensional counterexample showing that one-site M_2(C) plus operational locality read only as faithful commuting separated local copies/no-signalling does not force the ordinary generated two-qubit tensor product or local tomography.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T041612Z-31355320-tensor_composition_requi`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** In B = M_4(C) oplus M_4(C) with diagonal local embeddings, local products have form (a tensor b) oplus (a tensor b), so they span only a 16-dimensional diagonal M_4(C) while B_sa has real dimension 32 and contains Z = I_4 oplus (-I_4) outside that span.  _(class `A`)_
+- **chain closes:** True — The accepted minimal axiom supplies the one-site M_2(C) carrier, and the duplicate-sector construction satisfies the stated locality condition by direct faithfulness and commutation checks. The dimension and central-sector argument then proves that an added local-tomography or generated-composite premise is required for M_4(C).
+- **rationale:** The load-bearing step is exact finite-dimensional algebra over the accepted Qubit premise, not a definition, renaming, tuned numerical match, or external comparator. The runner actually constructs the Pauli/tensor/direct-sum matrices and checks ranks, commutators, and span independence; an independent dimension count gives the same 16 versus 32 obstruction. The only cited authority is the registered minimal-axiom premise, which supplies M_2(C) and does not trigger a dependency downgrade. The no-go is narrowly phrased: adding local tomography, generation, or an explicit ordinary tensor-product premise bypasses it exactly as the note says.
 - **auditor confidence:** high
 
 ### `tensor_network_connection_note`

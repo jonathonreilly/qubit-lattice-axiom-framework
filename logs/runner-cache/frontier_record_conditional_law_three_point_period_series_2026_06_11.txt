@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py
-runner_sha256: f38f825b244b635d02ec89ab483ab864bd1b79d2ffbed422b7b57b386c4ad6f6
-timeout_sec: 120
+runner_sha256: 59be6d7f42385aee3b5125f0f4ce2e08f93a0af6c50fa17fec0d2cbd7d1a65eb
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 47.12
+elapsed_sec: 48.83
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -45,8 +45,13 @@ Part 3  (G3) the three-point gap series: NO period trend
   [PASS] the gap medians fluctuate with NO monotone period trend (the #3555 'comparable-or-larger, not doubled' verdict extends: at three points there is no growth law; gap magnitudes are event/seed-dominated)  (medians L=3/4/5: +0.139 / +0.193 / +0.095)
   [PASS] source note declares fixed 300-permutation sampled-null scope
   [PASS] source note forbids exhaustive or MC-free null theorem
+  [PASS] source note declares dependency-edge rescope repair
+  [PASS] source note confines load-bearing inputs to runner-defined finite objects
+  [PASS] source note makes inherited framework language non-load-bearing labels
+  [PASS] source note forbids downstream retained-derivation citations
+  [PASS] source note forbids selector/null and record-conditional overclaim
 ==============================================================================
-TOTAL: PASS=19 FAIL=0
+TOTAL: PASS=24 FAIL=0
 ==============================================================================
 SCOPE: extends the period series to three points (L = 3, 4, 5 rings; uniform
   expm_multiply machinery -- no dense step unitary anywhere; measured peak

@@ -61,6 +61,26 @@ FROZEN_LOG = os.path.join(
     "logs",
     "2026-04-07-linear-response-derivation.txt",
 )
+NOTE_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "docs",
+    "LINEAR_RESPONSE_DERIVATION_NOTE.md",
+)
+
+SOURCE_BOUNDARY_REQUIRED_PHRASES = [
+    "Downstream source-boundary firewall",
+    "frozen 44-family detector-only heuristic record",
+    "no-fit Pearson correlations",
+    "no-fit sign agreement `36/44 = 81.8%`",
+    "in-sample tuned threshold result only as fitted",
+    "literal first-order Kubo lane",
+    "literal first-order Kubo theorem",
+    "closed first-principles derivation",
+    "no-fit generalization evidence",
+    "`<z*deltaH>_0`",
+    "true-Kubo sibling as a landed one-hop dependency",
+    "compact-principle row",
+]
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -341,8 +361,16 @@ def verify_frozen_log() -> int:
         return 1
 
     text = open(FROZEN_LOG, encoding="utf-8").read()
+    note = open(NOTE_PATH, encoding="utf-8").read()
     passed.append(check("frozen 44-family log exists", True, FROZEN_LOG))
     passed.append(check("finite-difference epsilon is 0.001", "Finite-difference epsilon: s = 0.001" in text))
+    passed.append(check("source note contains downstream firewall", all(phrase in note for phrase in SOURCE_BOUNDARY_REQUIRED_PHRASES)))
+    passed.append(check(
+        "source firewall forbids literal-Kubo/closed-derivation reuse",
+        "do not cite this heuristic record as the literal first-order Kubo theorem" in note
+        and "do not cite it as a closed first-principles derivation" in note
+        and "do not cite the in-sample tuned threshold as no-fit generalization evidence" in note,
+    ))
 
     row_re = re.compile(
         r"^(?P<family>\S+)\s+(?P<group>swept|scaffolded|off_scaffold)\s+"

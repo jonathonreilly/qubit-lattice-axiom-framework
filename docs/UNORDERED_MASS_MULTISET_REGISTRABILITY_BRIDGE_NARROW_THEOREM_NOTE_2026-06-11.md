@@ -3,8 +3,8 @@
 **Date:** 2026-06-11
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not
-set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
-registry, ledger, queue, or publication-status surfaces.
+set or predict downstream status and does not edit the Tier-A registry,
+ledger, queue, or publication-status surfaces.
 **Actual source scope:** conditional bounded theorem on a supplied finite
 readout context, with P-dep as an explicit row-local premise. Record supplies
 additivity and the realized-outcome orbit; it does not by itself derive P-dep.
@@ -16,9 +16,9 @@ additivity and the realized-outcome orbit; it does not by itself derive P-dep.
 ## Boundary
 
 This note proves one narrow theorem — the **unordered-mass-multiset
-registrability bridge** named open by the audit verdict on
+registrability bridge** named open by the prior review of
 `TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md`
-("if the intended audited consequence is registry reduction rather than the
+("if the intended downstream consequence is registry reduction rather than the
 algebraic orientation lemma, also provide a retained unordered-mass-multiset
 registrability bridge").
 
@@ -32,13 +32,35 @@ supplied finite surface **conditional on the supplied P-dep premise** and
 states the composition with the korbit orientation lemma as a consequence
 available to the gated lane under that same condition.
 
-**2026-06-15 audit-unlock scope repair.** The audit row correctly identified
+**2026-06-15 source-unlock scope repair.** Prior review correctly identified
 that the factorization leg requires P-dep. This note now treats P-dep as an
 explicit conditional premise, not as a theorem derived from the Record axiom,
 not as a new axiom, and not as an approved primitive premise node. A future
 cleaner bridge would have to prove P-dep from retained framework structure;
 this note instead gives the narrower conditional theorem whose premise is
-visible to re-audit.
+visible to later independent review.
+
+**2026-06-18 P-dep independence no-go.**
+`UNORDERED_MASS_PDEP_RECORD_INDEPENDENCE_NO_GO_NOTE_2026-06-18.md`
+proves the complementary boundary: Record additivity plus `K`/CPT orbit
+constancy alone do not derive P-dep. The no-go constructs an unregistered
+`K`-even context-scale family whose scalar readouts remain finitely additive
+and orbit-constant while assigning different values to the same registered
+sector datum. This does not alter the conditional theorem here; it explains why
+the P-dep premise must either remain explicit or be supplied by a separate
+physical-readout/extensionality theorem.
+
+**2026-06-20 conditional-scoping repair.** Prior boundary review named the source-side
+alternative: "keep this row explicitly conditional on P-dep" (the other arm —
+deriving P-dep from retained Record/readout structure — is the open bridge and
+is deliberately **not** attempted here). The factorization claim **(B1)** is
+now tagged "conditional on P-dep" at the point of the claim itself, with the
+unconditional part (the no-cross-term split from Additivity, L1) separated from
+the P-dep-dependent part (each contribution a function of the registered datum,
+L2). No derived value or symbol identification is changed; B2's power-sum
+registrability and B3's flip-invariance are untouched (their P-dep dependence
+flows through B1). The runner's source-scope check H1 now additionally requires
+the B1-level conditional tag.
 
 ## Setting: the supplied readout context (G1 — all of it is input)
 
@@ -115,12 +137,15 @@ the explicit P-dep conditional premise. With `M(delta)` denoting the
 `M(delta) = {{ ([k], lambda_k(delta)) : k in Lambda }}` (`[k]` the `K`/CPT
 label orbit, so within-orbit order is erased by construction):
 
-> **(B1 — factorization / upper bound.)** Every Record-registrable scalar
+> **(B1 — factorization / upper bound, conditional on P-dep.)** Under the
+> explicit P-dep premise, every Record-registrable scalar
 > readout equals a sum of per-record contributions with no cross terms, each
 > contribution a function of `([k], lambda_k)`; hence every registrable
 > readout factors through `M(delta)`. Sector labels beyond their orbit —
 > in particular the order within the doublet orbit `{1, 2}` — are not
-> registrable.
+> registrable. (Additivity supplies the no-cross-term split L1
+> unconditionally; P-dep is what makes each contribution a function of the
+> registered datum L2 — without it B1 is not a factorization theorem.)
 >
 > **(B2 — exactness / lower bound.)** The power-sum readouts
 > `p_m = sum_k lambda_k(delta)^m` (`m = 1, 2, 3`) and the orbit-class
@@ -291,7 +316,7 @@ than the bare one) is the right bridge resolution (W-orbit-type).
 ## What this note does NOT claim
 
 - It does **not** enact the registry reduction, retire `AC_phi_lambda` or
-  `theta`, or edit any audit-lane-owned surface.
+  `theta`, or edit any independent-status surface.
 - It does **not** derive `|delta| = 2/9`, supply R-eta, or address the global
   PL/ABSS bridge.
 - It does **not** prove the physical readout context must satisfy the Record

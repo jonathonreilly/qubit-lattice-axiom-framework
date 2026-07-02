@@ -1,31 +1,39 @@
-# Lane 5 Planck `(C1)` Gate Audit: The Metric-Compatible Primitive Clifford/CAR Coframe Response Is The Single Residual Premise For Retaining `R_Lambda` Numerically
+# Lane 5 Planck `(C1)` Gate Audit: Metric-Compatible Clifford/CAR Coframe Response And Action-Unit Self-Consistency
 
 **Date:** 2026-04-26
-**Status:** support gate-audit note on `main`. Identifies the precise residual
-structural premise whose retention (independent of any added carrier axiom)
-would promote the conditional Planck-scale completion to retained `R_Lambda`
-numerically, supplying the `(C1)` Lane 5 closure premise.
+**Status:** support gate-identification note on `main`.
+**Claim type:** open_gate
+**Status authority:** independent audit lane only; effective status is
+pipeline-derived.
+**Claim scope:** identifies the residual coframe/CAR response and action-unit
+self-consistency gate for the older `(C1)` scale route. This note does not
+derive or promote the scale route, does not treat the scale-reference
+primitive as a Planck import or bounded-status source, and does not apply an
+audit verdict.
 **Lane:** 5 — Hubble constant `H_0` derivation (sub-route 5B/scale,
 advancing `(C1)` per the cosmic-history-ratio necessity no-go).
 **Workstream:** `hubble-h0-20260426`
+**Primary runner:** [`scripts/frontier_hubble_lane5_planck_c1_gate_source_packet.py`](../scripts/frontier_hubble_lane5_planck_c1_gate_source_packet.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_hubble_lane5_planck_c1_gate_source_packet.txt`](../logs/runner-cache/frontier_hubble_lane5_planck_c1_gate_source_packet.txt)
 
 ---
 
 ## 0. Purpose
 
 Cycle 3 (`HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`)
-established that Lane 5 closure requires **(C1) absolute-scale axiom
-AND one of {(C2) cosmic-history-ratio retirement, (C3) direct cosmic-`L`
+established that Lane 5 closure requires **(C1) scale route AND one of
+{(C2) cosmic-history-ratio retirement, (C3) direct cosmic-`L`
 derivation}**. Cycle 4 isolated the single residual gate for `(C2)`:
 the right-sensitive 2-real `Z_3` doublet-block point-selection law on
 `dW_e^H = Schur_{E_e}(D_-)`.
 
-This note does the symmetric audit for `(C1)`. The Planck-scale lane
+This note does the symmetric gate inventory for `(C1)`. The Planck-scale lane
 status note `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` (and the
 2026-04-24 / 2026-04-25 packet that updated it) has already done
-extensive work narrowing the absolute-scale derivation to a **single
-load-bearing premise**: the metric-compatible primitive Clifford/CAR
-coframe response on `P_A H_cell`. This audit makes that gate explicit
+extensive work narrowing the dimensionless self-consistency route to a
+**single load-bearing premise**: the metric-compatible Clifford/CAR coframe
+response on `P_A H_cell`, together with the action-unit metrology boundary.
+This note makes that gate explicit
 in the Lane 5 closure-pathway taxonomy and connects it to the Lane 5
 sub-route 5B.
 
@@ -34,13 +42,24 @@ workstream's `(C1)` effort is directed at the right open premise.
 
 ## 1. Current Planck-lane state
 
+Current scale-reference boundary:
+
+- [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+  grants `a^{-1} = M_Pl` as a units conversion only. It is not a Planck
+  import, not a Tier-A admission, and not a bounded-status source.
+- This note does not treat that primitive as a derived `a/l_P = 1`
+  theorem. The remaining gate here is the dimensionless coframe/CAR
+  response and action-unit self-consistency route.
+
 Per `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md` (with the 2026-04-25
-update):
+update), the older conditional source packet says:
 
 - **Conditional theorem** (current `main`-compatible posture):
-  `a / l_P = 1`, equivalently `a^{-1} = M_Pl`, is a **conditional
-  structural theorem** on the **primitive metric-compatible Clifford/CAR
-  coframe-response surface** with natural phase/action units.
+  the `a / l_P = 1` self-consistency algebra is a **conditional
+  structural theorem** on the **metric-compatible Clifford/CAR
+  coframe-response surface** with natural phase/action units. This is
+  support for the open gate, not a derivation of the scale-reference
+  primitive.
 - The conditional packet
   (`PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md`) derives:
   - exact primitive coefficient `c_cell = Tr((I_16/16) P_A) = 1/4`;
@@ -56,7 +75,7 @@ update):
   the carrier surface).
 - The 2026-04-25 conditional Clifford phase bridge theorem
   (`PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md`)
-  shows that **if** the active primitive block carries the
+  shows that **if** the active boundary block carries the
   metric-compatible Clifford coframe response, then it polarizes to the
   complex `Cl_4` relations on `P_A H_cell`, which (since
   `rank(P_A) = 4`) is the irreducible `Cl_4(C) ~= M_4(C)` module,
@@ -68,16 +87,15 @@ update):
     closure under the bridge).
 
 So all three Planck-lane targets have collapsed to **one shared
-conditional**: the metric-compatible primitive Clifford/CAR coframe
-response on `P_A H_cell`.
+conditional**: the metric-compatible Clifford/CAR coframe response on
+`P_A H_cell` plus the action-unit self-consistency boundary.
 
 ## 2. The single residual gate
 
 The single residual premise on which all three Planck-lane targets
 hinge is:
 
-> **The metric-compatible primitive Clifford/CAR coframe response on
-> the rank-four primitive boundary block `P_A H_cell ⊆ H_cell`.**
+> **The metric-compatible Clifford/CAR coframe response on the rank-four boundary block `P_A H_cell ⊆ H_cell`.**
 
 Equivalently: the **native edge-statistics principle** that fixes
 `P_A H_cell` to the irreducible `Cl_4(C) ~= M_4(C)` module rather than
@@ -103,27 +121,27 @@ So two related residual obligations remain:
 
 - (G1) **Edge-statistics principle**: derive (or independently
   axiomatize) the native CAR semantics on `P_A H_cell` from the
-  minimal accepted axiom stack `A_min`.
+  current framework baseline.
 - (G2) **Action-unit metrology**: break the `(S, kappa)` rescaling
   degeneracy that the Hilbert-only stack leaves intact, pinning an
   absolute dimensional action quantum.
 
 (G1) and (G2) are not independent. Per the conditional Clifford phase
 bridge, deriving the Clifford coframe response on `P_A H_cell` and
-adopting natural phase/action units gives both `c_Widom = 1/4` and
-`G_Newton,lat = 1`, which then yield `a/l_P = 1` numerically. The
-residual obligation is therefore a single coupled premise: the
-metric-compatible primitive Clifford coframe response with natural
-phase/action units.
+deriving the natural phase/action unit self-consistency gives both
+`c_Widom = 1/4` and `G_Newton,lat = 1` on that conditional surface. The
+residual obligation is therefore a single coupled open gate: the
+metric-compatible Clifford coframe response with natural phase/action
+unit self-consistency.
 
-## 3. What landing this gate would deliver
+## 3. What resolving this gate would deliver
 
-If the metric-compatible primitive Clifford/CAR coframe response is
-retained from `A_min` alone (with no added carrier axiom), the chain of
-consequences is:
+If future work derives the metric-compatible Clifford/CAR coframe response
+and action-unit self-consistency from the current framework baseline (with
+no added carrier axiom), the chain of consequences to audit would be:
 
-1. The conditional Clifford phase bridge promotes from conditional to
-   **retained** structural theorem.
+1. The conditional Clifford phase bridge moves from conditional support to
+   an audit-ready structural theorem candidate.
 2. Target 1 (gravity/action unit-map uniqueness): closed via standard
    area/action normalization on the carrier surface.
 3. Target 2 (horizon-entropy carrier with exact `1/4`): closed via the
@@ -133,16 +151,17 @@ consequences is:
    (`AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md`).
 4. Target 3 (one-axiom information/action bridge): closed via the
    conditional Clifford phase bridge theorem.
-5. `a/l_P = 1` is retained: `a^{-1} = M_Pl` becomes a derived
-   numerical statement on the minimal accepted axiom stack.
-6. `R_Lambda = c / H_inf` becomes numerically retainable once `H_inf`
-   is fixed, but `H_inf = c / R_Lambda` is the same identity — what's
-   being supplied is the absolute length scale itself. With `R_Lambda`
-   numerical (via the retained Planck pin and the framework structure
-   that fixes `Lambda` in lattice units), `H_inf` follows.
+5. The `a/l_P = 1` self-consistency algebra becomes an audit-ready
+   dimensionless closure candidate. The already registered
+   scale-reference primitive still supplies only the units conversion
+   `a^{-1} = M_Pl`.
+6. The older `R_Lambda = c / H_inf` scale route would become ready for a
+   separate audit pass against the Hubble-lane closure taxonomy. This
+   note itself supplies no numerical `R_Lambda` or `H_inf` closure.
 7. Per the cosmic-history-ratio necessity no-go (Cycle 3), absolute
-   `R_Lambda` (hence `H_inf`) supplies the `(C1)` premise. Combined
-   with `(C2)` from Cycle 4 (eta retirement gate), gives retained `H_0`.
+   `R_Lambda` (hence `H_inf`) supplies the `(C1)` route premise.
+   Combined with `(C2)` from Cycle 4 (eta retirement gate), this would
+   make a future `H_0` closure candidate.
 
 This is exactly the `(C1)` half of the Lane 5 closure-pathway corollary.
 
@@ -150,10 +169,10 @@ This is exactly the `(C1)` half of the Lane 5 closure-pathway corollary.
 
 The gate-resolving derivation must:
 
-- be a derivation **from the minimal accepted axiom stack `A_min`**
-  (`Cl(3)` on `Z^3`, finite local Grassmann/staggered-Dirac dynamics,
-  `g_bare = 1` plus accepted plaquette / `u_0` surface and minimal APBC
-  hierarchy block);
+- be a derivation from the current framework baseline plus the named
+  retained machinery it explicitly invokes (`Cl(3)` on `Z^3`, finite
+  local Grassmann/staggered-Dirac dynamics, `g_bare = 1` plus accepted
+  plaquette / `u_0` surface and minimal APBC hierarchy block);
 - force the metric-compatible Clifford coframe response on
   `P_A H_cell`, distinguishing it from non-CAR rank-four semantics
   (two-qubit, ququart);
@@ -182,10 +201,9 @@ The gate-resolving derivation must:
 
 Every shortcut to the gate has been closed. The gate-resolving
 derivation must come from a **structurally new framework feature** of
-`A_min` itself — specifically, an argument that the local Clifford
-algebra `Cl(3)` plus the staggered-Dirac dynamics on `Z^3` already
-entail a Clifford-Majorana edge response on the rank-four primitive
-boundary block.
+the current framework stack itself — specifically, an argument that the
+local Clifford algebra `Cl(3)` plus the staggered-Dirac dynamics on `Z^3` already
+entail a Clifford-Majorana edge response on the rank-four boundary block.
 
 ## 5. Symmetry with Cycle 4 `(C2)` gate
 
@@ -193,13 +211,13 @@ The two Lane 5 gates are remarkably symmetric:
 
 | | `(C2)` gate (Cycle 4) | `(C1)` gate (Cycle 5) |
 |---|---|---|
-| **Object** | right-sensitive 2-real `Z_3` doublet-block point-selection law | metric-compatible primitive Clifford/CAR coframe response |
-| **Domain** | `dW_e^H = Schur_{E_e}(D_-)` (charged-lepton response) | `P_A H_cell ⊆ H_cell` (rank-four primitive boundary block) |
+| **Object** | right-sensitive 2-real `Z_3` doublet-block point-selection law | metric-compatible Clifford/CAR coframe response |
+| **Domain** | `dW_e^H = Schur_{E_e}(D_-)` (charged-lepton response) | `P_A H_cell ⊆ H_cell` (rank-four boundary block) |
 | **What it pins** | `(delta, q_+)` in the moving `Z_3` doublet block | the irreducible `Cl_4(C) ~= M_4(C)` module rather than non-CAR ququart/two-qubit semantics |
-| **Resulting closure** | retired `eta` from cosmology cascade | retained `a^{-1} = M_Pl`, hence `R_Lambda` numerical |
-| **Structural target** | sub-lane 5A (cosmic-history-ratio retirement) | sub-lane 5B (absolute-scale anchor) |
+| **Resulting closure** | retired `eta` from cosmology cascade | dimensionless `a/l_P = 1` self-consistency candidate, with `a^{-1} = M_Pl` supplied only by the scale-reference primitive |
+| **Structural target** | sub-lane 5A (cosmic-history-ratio retirement) | sub-lane 5B (scale route) |
 
-Both gates are **microscopic point/edge-selection laws on a primitive
+Both gates are **microscopic point/edge-selection laws on a
 algebraic block**, both are residual after extensive no-go work has
 closed adjacent routes, and both are necessary (per Cycle 3) for Lane 5
 closure.
@@ -210,7 +228,7 @@ closure.
 
 - Identifies the **single residual structural premise** for the `(C1)`
   half of the Lane 5 closure-pathway corollary.
-- Names the gate explicitly: metric-compatible primitive Clifford/CAR
+- Names the gate explicitly: metric-compatible Clifford/CAR
   coframe response on `P_A H_cell`, with natural phase/action units.
 - Connects the gate to the three Planck-lane targets (gravity/action
   unit-map uniqueness, horizon-entropy carrier, information/action
@@ -264,19 +282,23 @@ closure.
 
 ## 8. Boundary
 
-This is an audit / gate-identification artifact, not a theorem and not
-a runner-bearing cycle. It does not retire any input. It moves the lane
-state by isolating the precise gate on the `(C1)` side, completing the
-symmetric pair with Cycle 4's `(C2)` gate audit.
+This is an audit / gate-identification artifact, not a theorem. It does
+not retire any input. It moves the lane state by isolating the precise
+gate on the `(C1)` side, completing the symmetric pair with Cycle 4's
+`(C2)` gate audit.
 
-A runner is not authored: the audit is a structural review of existing
-retained material; no new symbolic or numerical claim is introduced.
+The attached source-packet runner makes the dependency anchors,
+single-gate inventory, and non-promotion boundary replayable for
+independent re-audit. It does not derive the metric-compatible
+Clifford/CAR coframe response, derive the scale-reference primitive,
+retain `R_Lambda` numerically, close `(C1)`, or apply an audit verdict.
 
 ## Audit dependency repair links
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
 - [planck_scale_lane_status_note_2026-04-23](PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
+- [scale_reference_primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
 - [planck_scale_conditional_completion_note_2026-04-24](PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md)
 - [planck_target3_clifford_phase_bridge_theorem_note_2026-04-25](PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
 - [area_law_native_car_semantics_tightening_note_2026-04-25](AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)

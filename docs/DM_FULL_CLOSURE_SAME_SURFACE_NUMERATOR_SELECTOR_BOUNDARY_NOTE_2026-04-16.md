@@ -82,3 +82,10 @@ SUMMARY: PASS=8 FAIL=0
 
 Regenerate the cache with the standard runner-cache tool after editing the
 runner.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16](DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md)
+- [dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16](DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md)

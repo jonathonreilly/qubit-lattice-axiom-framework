@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_formal_ratio_repair.py
-runner_sha256: 1a7accd0bd0b519872c2331580b3152f803378cf7d21eb6f186e683a7c4aec4c
+runner_sha256: 14cacf71bf8e627de6a09a1dcba030861ace633741c308de7815a6e5d6092afd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 Koide Q-delta formal ratio repair
@@ -16,12 +16,83 @@ Source-note boundary
   [PASS] note contains required boundary: 'That exact rational identity is the entire repaired theorem.'
   [PASS] note contains required boundary: 'This repair withdraws both from the binding claim.'
   [PASS] note contains required boundary: 'The bridge from this formal algebra to physical Koide/Brannen geometry remains a separate open science problem.'
+  [PASS] note contains required boundary: 'Citation firewall (2026-06-18)'
+  [PASS] note contains required boundary: 'Direct citations to this note are allowed only for the definition-level'
   [PASS] note avoids overclaim/token: 'uses PDG'
   [PASS] note avoids overclaim/token: 'matches observed'
   [PASS] note avoids overclaim/token: 'observed charged-lepton'
   [PASS] note avoids overclaim/token: 'retained selected-line'
   [PASS] note avoids overclaim/token: 'Berry holonomy in radians is derived'
   [PASS] note avoids overclaim/token: 'equal-sector-norm input is retained'
+
+========================================================================================
+Direct citation firewall
+========================================================================================
+  [PASS] docs/KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT_NOTE_2026-04-25.md:32 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_A1_BRANNEN_PLANCHEREL_IDENTITY_SUPPORT_NOTE_2026-04-25.md:32 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_AMPLITUDE_PHASE_INDEPENDENT_DATA_NARROW_NO_GO_NOTE_2026-06-04.md:131 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_AMPLITUDE_PHASE_INDEPENDENT_DATA_NARROW_NO_GO_NOTE_2026-06-04.md:131 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md:325 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_ANTICOMMUTING_OPERATOR_DERIVATION_THEOREM_NOTE_2026-05-10.md:325 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:115 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:115 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:185 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:185 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:213 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:213 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:358 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:358 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:521 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_PHI_FROM_Z3_CHARACTER_NOTE_2026-05-09_probe24.md:521 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:30 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:30 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:659 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md:659 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md:21 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20.md:21 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md:34 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_BRANNEN_PHASE_REDUCTION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md:34 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_DELTA_DIMENSIONLESS_CLOSURE_VIA_V8_THEOREM_NOTE_2026-04-29.md:24 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_DELTA_DIMENSIONLESS_CLOSURE_VIA_V8_THEOREM_NOTE_2026-04-29.md:24 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md:405 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION_NARROW_THEOREM_NOTE_2026-05-25.md:405 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md:344 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_LIGHTCONE_PRIMITIVE_THEOREM_NOTE_2026-05-10.md:344 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md:126 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_PHASE_APS_ETA_PARITY_ROUTE_NARROW_THEOREM_NOTE_2026-05-23.md:126 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md:172 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md:172 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:63 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:63 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:106 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:106 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:9 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:9 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:142 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:142 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:179 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:179 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:192 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:192 citation avoids forbidden authority language
+  [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:24 citation is explicitly formal/open/contextual
+  [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:24 citation avoids forbidden authority language
+  [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:592 citation is explicitly formal/open/contextual
+  [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:592 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:241 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:241 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:300 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:300 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:410 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:410 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md:173 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md:173 citation avoids forbidden authority language
+  [PASS] docs/publication/ci3_z3/DERIVATION_ATLAS.md:388 citation is explicitly formal/open/contextual
+  [PASS] docs/publication/ci3_z3/DERIVATION_ATLAS.md:388 citation avoids forbidden authority language
+  [PASS] scripts/frontier_koide_q_delta_linking_relation.py:5 citation is explicitly formal/open/contextual
+  [PASS] scripts/frontier_koide_q_delta_linking_relation.py:5 citation avoids forbidden authority language
+  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:23 citation is explicitly formal/open/contextual
+  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:23 citation avoids forbidden authority language
+  [PASS] at least one direct citation was scanned (citations=32)
 
 ========================================================================================
 Exact rational identity
@@ -64,7 +135,7 @@ Negative control: alternative Q'_d=(d-1)/d
   [PASS] d=3 is the unique tested coincidence for Q'_d=2/d (Q_alt(3)=2/3)
 
 ========================================================================================
-TOTAL: PASS=39 FAIL=0
+TOTAL: PASS=106 FAIL=0
 ========================================================================================
 
 ----- stderr -----

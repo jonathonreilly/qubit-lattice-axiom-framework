@@ -42,11 +42,11 @@ GENERATION_KOIDE_RE = re.compile(
 )
 
 EXPECTED_LANE_COUNTS = {
-    "bounded_obstruction_or_no_selection": 18,
-    "flow_or_records_stable_feature": 3,
-    "generation_or_koide_stable_feature": 4,
-    "generic_stable_feature": 14,
-    "thermal_or_score_stable_feature": 19,
+    "bounded_obstruction_or_no_selection": 21,
+    "flow_or_records_stable_feature": 9,
+    "generation_or_koide_stable_feature": 5,
+    "generic_stable_feature": 31,
+    "thermal_or_score_stable_feature": 25,
 }
 EXPECTED_FLOW_THERMAL_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 
@@ -155,7 +155,7 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md",
         [
-            "stability_or_dynamics_selector` | 94",
+            "stability_or_dynamics_selector` | 147",
             "stable settings into selected dials",
             "Does not turn stable settings into selected dials.",
         ],

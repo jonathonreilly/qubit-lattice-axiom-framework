@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_canonical_smooth_geometric_action.py
+runner_sha256: 41e01cb49317632d6d4e254ccc464458d9c3a2d68842d0de948a718620627229
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[EXACT] PASS: the route already has canonical smooth weak/measure closure on the positive-background class and exact Lorentzian/global GR stationary closure
+    this theorem composes the already-closed canonical smooth weak/Gaussian route with the already-closed Lorentzian/global Einstein/Regge stationary route
+[EXACT] PASS: the same exact bilinear/action formula defines both the convex positive weak/Gaussian sector and the nonconvex Lorentzian stationary sector
+    positive signature=(30, 0, 0), lorentzian signature=(21, 9, 0)
+[EXACT] PASS: the positive sector already carries the canonical weak/Gaussian covariance while the Lorentzian sector remains exactly stationary but indefinite
+    positive covariance transport error=1.776e-14, covariance pairing error=0.000e+00
+[EXACT] PASS: smooth chart changes preserve the exact action family on both signature sectors
+    positive action transport error=0.000e+00, lorentzian action transport error=2.842e-14
+[EXACT] PASS: stationary representatives and exact completion identities hold on both signature sectors
+    positive stationary error=2.487e-14, lorentzian stationary error=2.842e-14, positive completion error=7.265e-14, lorentzian completion error=7.485e-15
+[EXACT] PASS: the chosen smooth realization therefore already carries one canonical project-native geometric/action family whose positive sector is the QG weak/Gaussian route and whose Lorentzian sector is the exact Einstein/Regge stationary route
+    the route no longer lacks a project-native geometric/action comparison; it already has one canonical smooth stationary-action family with convex weak/Gaussian and Lorentzian Einstein/Regge sectors
+UNIVERSAL QG CANONICAL SMOOTH GEOMETRIC/ACTION EQUIVALENCE
+==============================================================================
+positive signature                    = (30, 0, 0)
+lorentzian signature                  = (21, 9, 0)
+positive covariance transport error   = 1.776e-14
+positive covariance pairing error     = 0.000e+00
+positive action transport error       = 0.000e+00
+lorentzian action transport error     = 2.842e-14
+positive stationary error             = 2.487e-14
+lorentzian stationary error           = 2.842e-14
+positive completion identity error    = 7.265e-14
+lorentzian completion identity error  = 7.485e-15
+
+Verdict:
+The chosen smooth realization already carries one canonical project-native geometric/action family: its convex positive sector is the exact canonical weak/Gaussian QG route, and its Lorentzian sector is the exact discrete Einstein/Regge stationary action family on PL S^3 x R.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=6 FAIL=0 TOTAL=6
+
+----- stderr -----
+

@@ -432,3 +432,51 @@ Out of scope for this repair (would be a separate PR):
 - altering the parent no-go packet's headline labels;
 - editing `docs/audit/data/*.json` (forbidden by physics-loop repair
   policy).
+
+## 2026-06-20 Source Repair: Conditional In-Toy Algebra Scoping
+
+This source repair keeps the row scoped as **conditional in-toy algebra
+only**. It does NOT derive or cite retained-grade support for `(A1)-(A5)`.
+It only re-confirms that the binding content of this note is the conditional
+in-toy algebraic identities and nothing more.
+
+**Binding scope (re-affirmed).** The binding claim of this note is exactly
+the conditional algebraic identities `(T1)-(T9)`, each of the strict form
+`(A_subset) ⊢ (T_k)`, holding by direct rational arithmetic in `Q` inside
+the fixed, explicitly-named two-channel source-response toy under the named
+toy admissions `(A1)-(A5)`. The admissions `(A1)-(A5)` are **toy /
+conditional assumptions, stated not derived**; none of them is a
+retained-grade framework fact, and this note makes **no claim of
+retained-grade propagation**.
+
+**No retained-grade propagation.** This row does not, and is not read to,
+propagate to any retained-grade derivation, retained Koide closure,
+retained `delta` closure, or retained dimensionless-objection no-go. The
+in-toy blockers `(T8)`/`(T9)` are in-toy admission-counting statements
+under the named admissions only; they are NOT retained-tier blocker
+theorems. The closing toy values `Q = 2/3` and `delta = 2/9` are reached
+only inside the toy under explicitly-named selecting admissions; this note
+does not assert that any toy value is forced, unique, or physical, and
+`eta_APS = 2/9` remains an admitted toy scalar.
+
+**Why no bridge here.** Sourcing `(A1)-(A5)` from retained authorities on
+`main` would be the alternative "derive or cite retained-grade support"
+path, which requires a separate bridge-theorem note and is explicitly
+deferred. This repair deliberately does not attempt it; it keeps the row
+strictly at the algebraic-checks (conditional-on-named-admissions) tier.
+
+No identity statement `(T1)-(T9)`, no proof, and no validation step is
+altered by this repair. No derived value is changed. No new axiom, import,
+literature comparator, fitted selector, Tier-A admission, retained Koide
+closure, retained `delta` closure, or status change is introduced. The repair
+is a note-level scoping clarification only.
+
+**Status authority:** independent audit lane only. This source note does not
+set status.
+
+In scope for this repair: this dated section; pinning the binding claim to
+conditional in-toy algebra only; a runner check that the
+conditional-in-toy-only scoping section is present. Out of scope:
+deriving/citing retained support for `(A1)-(A5)`; promoting any identity to
+retained-grade; altering the parent packet's labels; editing
+`docs/audit/data/*.json`.

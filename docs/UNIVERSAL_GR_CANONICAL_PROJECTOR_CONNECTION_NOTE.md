@@ -7,6 +7,8 @@
 **Purpose:** derive the strongest axiom-native candidate for a covariant
 complementary projector / connection after the exact invariant `A1`
 projector and the unique symmetric `3+1` quotient kernel are already in hand
+**Script:** `scripts/frontier_universal_gr_canonical_projector_connection.py`
+(source-side verifier; PASS=10 FAIL=0 on current source)
 
 ## Verdict
 

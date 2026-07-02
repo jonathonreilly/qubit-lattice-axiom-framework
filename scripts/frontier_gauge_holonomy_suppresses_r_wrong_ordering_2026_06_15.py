@@ -1,21 +1,27 @@
 #!/usr/bin/env python3
 """
-The gauge-holonomy channel can only SUPPRESS the Koide ratio r below its trivial-rep (leptonic)
-value -- it gives the WRONG ORDERING for the observed sector spread.
+Gauge-holonomy CHARACTER CAP on the Koide ratio: the algebraic bound r_R <= r0 (cap-only).
 
-Setup: the framework's b-term (the C3[111] doublet coupling) is a hop-RETURN that traverses a gauge
-link (matter_gauge_minimal_coupling / koide_gamma_axis_covariant, retained); the a-term is ON-SITE
-(no link). Dressing the hop with a background link U in gauge rep R and forming the gauge-invariant
-(fibre-averaged) effective generation operator gives
+SOURCE CONTENT (algebraic): the framework's b-term (the C3[111] doublet coupling) is a hop-RETURN
+that traverses a gauge link (matter_gauge_minimal_coupling / koide_gamma_axis_covariant, retained);
+the a-term is ON-SITE (no link). Dressing the hop with a background link U in gauge rep R and forming
+the gauge-invariant (fibre-averaged) effective generation operator gives
 
     b_eff = b * chi_R(U)/d_R ,   a_eff = a ,   r_R = r0 * |chi_R(U)/d_R|^2 ,
 
-where chi_R(U)=Tr_R(U), d_R=dim R, and r0=|b|^2/a^2 is the trivial-rep (colorless / leptonic) value.
+where chi_R(U)=Tr_R(U), d_R=dim R, and r0=|b|^2/a^2 is the trivial-rep value.
 Since |chi_R(U)| <= d_R for every unitary (sum of d_R unit-modulus eigenvalues), |chi_R(U)/d_R| <= 1,
-so r_R <= r0 ALWAYS, with equality iff U is a center (scalar-phase) element. Hence a gauge-invariant
-hopping holonomy can only DECREASE r for nontrivial-rep (colored) sectors below the trivial-rep
-(leptonic) value. The observed quarks sit ABOVE the leptonic value (r_down~0.597, r_up~0.773 > r_lep
-=1/2), so the holonomy channel gives the WRONG SIGN of spread = FALSIFIED as the spread source.
+so r_R <= r0 ALWAYS, with equality iff U is a center (scalar-phase) element. This is a bounded
+algebraic inequality; it is rep-agnostic and uses NO physical sector-to-representation assignment.
+
+OPEN BRIDGE (not source content; narrowed 2026-06-20): the *physical* reading that "a gauge
+holonomy suppresses the OBSERVED lepton/quark Koide ratio below the leptonic value and so gives the
+wrong ordering for the observed spread" requires an UNSUPPLIED bridge that (i) assigns the physical
+colourless-lepton sector to the trivial gauge rep and the coloured-quark sectors to nontrivial reps,
+and (ii) identifies the fibre-averaged ratio r_R with the registered physical Koide dial of each
+sector. Neither step is derived here. Section [4] below therefore checks only the *conditional*
+arithmetic (the cap value and the numeric ordering of the observed anchors) that WOULD constitute the
+falsification IF the bridge premise held -- it does NOT assert the bridge.
 
 This does NOT force any r value: r0 is a free bare coupling; the result is the inequality r_R<=r0.
 
@@ -126,16 +132,29 @@ check("a generic U(3) background strictly suppresses: r_R < r0", r_g < r0 - 1e-6
 
 
 # ============================================================================
-# 4. THE FALSIFICATION: observed quarks sit ABOVE the leptonic ceiling => wrong ordering.
+# 4. CONDITIONAL physical reading (not source content): the wrong-ordering falsification HOLDS ONLY
+#    IF the unsupplied bridge premise is granted. This section checks the conditional ARITHMETIC only.
+#    BRIDGE PREMISE (open, NOT derived here):
+#      (i)  colourless-lepton sector = trivial gauge rep; coloured-quark sectors = nontrivial reps;
+#      (ii) the fibre-averaged ratio r_R = the registered physical Koide dial of each sector.
+#    These checks assert the algebraic cap value and the numeric ordering of the OBSERVED anchors.
+#    They do NOT assert (i) or (ii) -- the physical sector-to-rep assignment and r_R->registered-dial
+#    identification remain the unsupplied bridge. Narrowed 2026-06-20.
 # ============================================================================
-print("\n[4] observed spread violates the mechanism's ceiling r_colored <= r_lepton")
+print("\n[4] CONDITIONAL (open bridge): IF lepton<->trivial-rep & r_R=registered dial, the observed")
+print("    spread would violate the cap r_colored <= r_lepton (arithmetic of the anchors only)")
 r_lep, r_down, r_up = 0.5, 0.597, 0.773      # observed (anchors, not derivation inputs)
-# the mechanism's ceiling for ANY colored (nontrivial-rep, any background) sector is r_lep = r0
+# the algebraic cap value for ANY nontrivial-rep, any-background sector is r0; under the OPEN bridge
+# premise this r0 would equal the leptonic r_lep -- that equality is the unsupplied identification.
 ceiling = r0
-check("mechanism ceiling for colored sectors = leptonic value r0=1/2", abs(ceiling - r_lep) < 1e-12)
-check("observed r_down = 0.597 is ABOVE the ceiling (mechanism predicts <= 0.5)", r_down > ceiling + 1e-3)
-check("observed r_up = 0.773 is ABOVE the ceiling (mechanism predicts <= 0.5)", r_up > ceiling + 1e-3)
-check("=> gauge-holonomy channel gives the WRONG ordering (r_quark>r_lep observed; <= predicted)",
+check("[conditional] algebraic cap value r0 = 1/2 equals leptonic anchor IF bridge held (open premise)",
+      abs(ceiling - r_lep) < 1e-12)
+check("[conditional] observed r_down = 0.597 exceeds the cap value (arithmetic of anchors)",
+      r_down > ceiling + 1e-3)
+check("[conditional] observed r_up = 0.773 exceeds the cap value (arithmetic of anchors)",
+      r_up > ceiling + 1e-3)
+check("[conditional] => IF the unsupplied bridge held, the holonomy channel would give the WRONG "
+      "ordering (r_quark>cap observed; <=cap predicted) -- bridge NOT asserted here",
       r_down > ceiling and r_up > ceiling)
 
 

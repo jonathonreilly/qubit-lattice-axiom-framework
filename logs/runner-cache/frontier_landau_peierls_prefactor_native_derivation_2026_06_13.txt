@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py
+runner_sha256: c72cd5d81db33b2aa76b9a24f6b1cda32b6d1e57f655e8f21f37ba8b52fd943d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.19
+status: ok
+----- stdout -----
+Landau-Peierls native prefactor derivation
+fixed numeric gate point: T=0.5, mu=-0.90000000000000002
+
+S1 symbolic Moyal derivation
+  local Omega B^2 term: -(Derivative(E(x, y), (x, 2))*Derivative(E(x, y), (y, 2)) - Derivative(E(x, y), x, y)**2)*Derivative(G(E(x, y)), (E(x, y), 2))/8 - (Derivative(E(x, y), x)**2*Derivative(E(x, y), (y, 2)) - 2*Derivative(E(x, y), x)*Derivative(E(x, y), y)*Derivative(E(x, y), x, y) + Derivative(E(x, y), (x, 2))*Derivative(E(x, y), y)**2)*Derivative(G(E(x, y)), (E(x, y), 3))/24
+  integrated Omega B^2 term: (-Derivative(E(x, y), (x, 2))*Derivative(E(x, y), (y, 2)) + Derivative(E(x, y), x, y)**2)*Derivative(G(E(x, y)), (E(x, y), 2))/24
+  centered-response prefactor: -1/12
+  [PASS] star/Moyal derivation gives the LP response prefactor exactly  (prefactor=-1/12)
+  [PASS] periodic divergence reduction is symbolic, not a fitted scalar  (residual=0)
+  [PASS] wrong prefactor discriminator rejects -1/11  (wrong residual=(Derivative(E(x, y), (x, 2))*Derivative(E(x, y), (y, 2)) - Derivative(E(x, y), x, y)**2)*Derivative(G(E(x, y)), (E(x, y), 2))/132)
+
+S2 derived LP Brillouin-zone integral
+  LP kgrid 48: -1.54931076443342586e-02
+  LP kgrid 96: -1.54931076443342274e-02
+  [PASS] derived LP integral is converged under k-grid refinement  (|fine-coarse|=3.123e-17, tol=1.0e-13)
+
+S0 independent finite-lattice Peierls diagonalization
+  exact L=24, nflux=1: -1.54902341405529428e-02
+  exact L=24, nflux=2: -1.54924629038020369e-02
+  exact L=24, nflux=3: -1.54929624907440156e-02
+  [PASS] exact Peierls response is nonzero real diagonalization data  (|response|=1.549e-02)
+  [PASS] finite Peierls B-step is converging  (|r2-r1|=2.229e-06, |r3-r2|/|r2-r1|=0.224)
+
+S2 exact-vs-derived thermodynamic comparison
+  exact L=20, nflux=1: -1.54820823091538530e-02  err=1.103e-05
+  exact L=24, nflux=1: -1.54902341405529428e-02  err=2.874e-06
+  exact L=28, nflux=1: -1.54932179738991160e-02  err=1.103e-07
+  derived LP thermodynamic value: -1.54931076443342274e-02
+  [PASS] finite-size Peierls sequence converges toward derived LP integral  (err_medium=2.874e-06, err_large/err_medium=0.038)
+  [PASS] derived -1/12 LP integral matches exact Peierls reference  (err_large=1.103e-07, tol=1.0e-06)
+
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

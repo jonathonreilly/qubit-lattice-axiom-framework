@@ -1,0 +1,98 @@
+===== runner cache v1 =====
+runner: scripts/gl_f_reconstruction_packet_verifier_2026_06_17.py
+runner_sha256: f7016ff9fdc772d2a959d46f6e11165e8f2ed0095aad7ab2601152843693f232
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+GL(F) Berezin/RP reconstruction restricted packet verifier
+============================================================================
+PASS docs/GL_F_FROM_BEREZIN_RP_RECONSTRUCTION_NARROW_THEOREM_NOTE_2026-06-10.md exists
+PASS docs/GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md exists
+PASS docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md exists
+PASS docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md exists
+PASS docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md exists
+PASS parent records 'conditional finite-block theorem'
+PASS parent records 'matter-functional/action surface'
+PASS parent records 'GL_F_IDENTIFICATION_BRIDGE_DECOMPOSITION_NARROW_THEOREM_NOTE_2026-06-11.md'
+PASS parent records 'only the matter-functional/action-surface clause remains open'
+PASS parent records 'This repair does not promote this row'
+PASS parent records 'does not claim a statistics-forcing theorem from the baseline axioms alone'
+PASS parent records 'gl_f_reconstruction_packet_verifier_2026_06_17.py'
+PASS parent records 'does not derive the matter-functional/action-surface clause'
+PASS identification bridge records 'conditional-support certificate'
+PASS identification bridge records 'first three have exact finite support'
+PASS identification bridge records 'matter-functional clause'
+PASS identification bridge records 'source note does not discharge that clause'
+PASS identification bridge records 'TOTAL: PASS=39 FAIL=0'
+PASS identification bridge records 'matter-functional clause (I-4) is NOT discharged'
+PASS identification bridge records 'HARD-CORE ESCAPE'
+PASS identification bridge records "Sets, promotes, or changes **no** row's effective status"
+PASS identification bridge has no stale PASS=36 expectation
+PASS forcing bridge records 'two-candidate surface only'
+PASS forcing bridge records 'NOT a statistics-forcing theorem'
+PASS forcing bridge records 'hard-core-boson frame ties'
+PASS forcing bridge records 'statistics selection remains an open input'
+PASS forcing bridge records 'TOTAL: PASS=45, FAIL=0'
+PASS statistics no-go records 'compatible, not forced'
+PASS statistics no-go records 'hard-core-boson reading remains'
+PASS statistics no-go records 'Conclusion (the no-go)'
+PASS statistics no-go records 'does not do that registration'
+PASS GL(F) discriminator records 'Conditional discriminator'
+PASS GL(F) discriminator records 'not supplied here'
+PASS GL(F) discriminator records 'retained no-go stands'
+PASS GL(F) discriminator records 'No unconditional statistics selection'
+PASS GL(F) discriminator records 'TOTAL: PASS=24 FAIL=0'
+PASS scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py exists
+PASS logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt exists
+PASS logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt records runner path -- runner=scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py
+PASS logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt exits zero -- exit_code=0
+PASS logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt status ok -- status=ok
+PASS logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt sha matches source -- cache=b8531ce758a4555c983e665dfab5f9305b9990b63e9862182f83f64194116fa3, live=b8531ce758a4555c983e665dfab5f9305b9990b63e9862182f83f64194116fa3
+PASS logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt contains 'TOTAL: PASS=48 FAIL=0'
+PASS logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt contains 'remaining boundary is only the matter-functional/action-surface supplier'
+PASS logs/runner-cache/gl_f_berezin_rp_reconstruction_check_2026_06_10.txt contains 'bridge cache validates the sibling packet without rerunning it here'
+PASS scripts/gl_f_identification_bridge_check_2026_06_11.py exists
+PASS logs/runner-cache/gl_f_identification_bridge_check_2026_06_11.txt exists
+PASS logs/runner-cache/gl_f_identification_bridge_check_2026_06_11.txt records runner path -- runner=scripts/gl_f_identification_bridge_check_2026_06_11.py
+PASS logs/runner-cache/gl_f_identification_bridge_check_2026_06_11.txt exits zero -- exit_code=0
+PASS logs/runner-cache/gl_f_identification_bridge_check_2026_06_11.txt status ok -- status=ok
+PASS logs/runner-cache/gl_f_identification_bridge_check_2026_06_11.txt sha matches source -- cache=db63cb339c74b2b5a3df46824b04f70b5fee4b205973cee3d039304dc5958e8d, live=db63cb339c74b2b5a3df46824b04f70b5fee4b205973cee3d039304dc5958e8d
+PASS logs/runner-cache/gl_f_identification_bridge_check_2026_06_11.txt contains 'TOTAL: PASS=39 FAIL=0'
+PASS logs/runner-cache/gl_f_identification_bridge_check_2026_06_11.txt contains 'matter-functional clause I-4 remains explicitly not discharged'
+PASS logs/runner-cache/gl_f_identification_bridge_check_2026_06_11.txt contains 'HARD-CORE ESCAPE'
+PASS scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py exists
+PASS logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt exists
+PASS logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt records runner path -- runner=scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py
+PASS logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt exits zero -- exit_code=0
+PASS logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt status ok -- status=ok
+PASS logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt sha matches source -- cache=65c97f804d4c3335d08467f08a0baf7e6730bd1ac819ef613a8cf94d6afbcac9, live=65c97f804d4c3335d08467f08a0baf7e6730bd1ac819ef613a8cf94d6afbcac9
+PASS logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt contains 'TOTAL: PASS=45, FAIL=0'
+PASS logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt contains 'SCOPE-BOUNDARY'
+PASS logs/runner-cache/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.txt contains 'hard-core-boson frame ties'
+PASS scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py exists
+PASS logs/runner-cache/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.txt exists
+PASS logs/runner-cache/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.txt records runner path -- runner=scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py
+PASS logs/runner-cache/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.txt sha matches source -- cache=861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee, live=861a8cb2edb607f055982eefa1cc96c6478f329de8b4c4f69af90dadc2aab9ee
+PASS logs/runner-cache/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.txt contains 'PASS=34 FAIL=0'
+PASS logs/runner-cache/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.txt contains 'SUBSTEP-1 IS A COMPATIBILITY, NOT A FORCING'
+PASS scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py exists
+PASS logs/runner-cache/staggered_dirac_substep1_statistics_selection_check_2026_06_10.txt exists
+PASS logs/runner-cache/staggered_dirac_substep1_statistics_selection_check_2026_06_10.txt records runner path -- runner=scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py
+PASS logs/runner-cache/staggered_dirac_substep1_statistics_selection_check_2026_06_10.txt exits zero -- exit_code=0
+PASS logs/runner-cache/staggered_dirac_substep1_statistics_selection_check_2026_06_10.txt status ok -- status=ok
+PASS logs/runner-cache/staggered_dirac_substep1_statistics_selection_check_2026_06_10.txt sha matches source -- cache=074624d9d587cad730972355ea14d4370f88f0330f60187f23d893f33fcd1f15, live=074624d9d587cad730972355ea14d4370f88f0330f60187f23d893f33fcd1f15
+PASS logs/runner-cache/staggered_dirac_substep1_statistics_selection_check_2026_06_10.txt contains 'TOTAL: PASS=24 FAIL=0'
+PASS logs/runner-cache/staggered_dirac_substep1_statistics_selection_check_2026_06_10.txt contains 'GL(F) is NOT retained and NOT a'
+PASS logs/runner-cache/staggered_dirac_substep1_statistics_selection_check_2026_06_10.txt contains 'unconditionally, the retained 2026-05-25 no-go stands'
+PASS packet leaves exactly the matter-functional supplier open
+PASS packet is non-promotional
+============================================================================
+TOTAL: PASS=82 FAIL=0
+GL(F) reconstruction packet is source-side re-audit ready: the kinematic identification clauses and runner caches are coherent, while the matter-functional/action-surface supplier remains the single explicit open pin.
+
+----- stderr -----
+

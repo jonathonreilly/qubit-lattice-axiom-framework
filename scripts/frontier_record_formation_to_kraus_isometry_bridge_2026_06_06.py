@@ -4,7 +4,7 @@
 This runner verifies a narrow exact statement:
 
   stable finite pointer projectors + orthonormal record labels
-  + ideal pointer-label write
+  + controlled-copy/fresh-fragment write-isometry bridge
     => W|psi> = sum_r (P_r|psi>) tensor |r> is an isometry
     => extracted K_r are the projectors P_r
     => the projective Kraus instrument is CPTP and repeat-readable.
@@ -23,6 +23,9 @@ import numpy as np
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+CONTROLLED_COPY_NOTE = (
+    "docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md"
+)
 TOL = 1e-12
 PASS = 0
 FAIL = 0
@@ -117,8 +120,20 @@ def source_anchor_checks() -> None:
             "actual_current_surface_status: exact-support",
             "trace_class: upstream_support",
             "audit_required_before_effective_retained: true",
+            "controlled-copy/fresh-fragment write-isometry theorem",
+            "The ideal write isometry is no longer an",
             "It does not derive arbitrary persistent-record dynamics into a normalized",
             "It does not select a generation or Koide dial location.",
+        ],
+    )
+    require_text(
+        CONTROLLED_COPY_NOTE,
+        [
+            "Controlled-Copy Write-Isometry Theorem",
+            "U_cc(pi/4)(|psi> tensor |0>_R)",
+            "<eta_0|eta_1> = 0",
+            "K_r = <r|W = P_r",
+            "What This Does Not Close",
         ],
     )
     require_text(
@@ -237,10 +252,12 @@ def boundary_controls() -> None:
     report("projector block split is the normalized two-record write", close(dagger(np.vstack([p0, p1])) @ np.vstack([p0, p1]), ident))
 
     general_dynamics_to_W_derived = False
+    controlled_copy_to_W_derived_for_explicit_model = True
     physical_hamiltonian_selected = False
     probability_law_derived_from_counts = False
     generation_or_koide_dial_selected = False
     audit_verdict_applied = False
+    report("controlled-copy to W derived for explicit finite model flag is true", controlled_copy_to_W_derived_for_explicit_model)
     report("general persistent dynamics to W derived flag is false", not general_dynamics_to_W_derived)
     report("physical Hamiltonian/coupling selected flag is false", not physical_hamiltonian_selected)
     report("probability law from post-record counts flag is false", not probability_law_derived_from_counts)

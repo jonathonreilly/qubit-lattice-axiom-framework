@@ -8,8 +8,8 @@ Authority note:
 Scope clarification (after two prior `audited_renaming` verdicts):
     This runner verifies an explicit algebraic CONSISTENCY-OF-CONSTRUCTION
     on the ADMITTED rank-four carrier K = P_A H_cell. The carrier itself
-    is NOT derived by this runner; it is admitted from the cited upstream
-    link-local first-variation candidate authority (unaudited candidate).
+    is NOT derived by this runner; it is sourced from the cited upstream
+    bounded/conditional link-local first-variation bridge.
     The runner hard-codes rank(P_A) = 4 and an explicit Cl_4(C) realization
     on C^4 by construction. Therefore PASS means the construction is
     internally consistent given the admitted carrier, NOT that the
@@ -166,7 +166,7 @@ def transverse_laplacian(qs: tuple[float, ...]) -> float:
 def main() -> int:
     print("=" * 78)
     print("PLANCK PRIMITIVE CLIFFORD-MAJORANA EDGE CONSISTENCY CHECK")
-    print("(bounded scope: P_A carrier admitted from upstream candidate authority)")
+    print("(bounded scope: P_A carrier sourced from a conditional bridge)")
     print("=" * 78)
     print()
     print("Question (narrowed after two audited_renaming verdicts):")
@@ -177,7 +177,8 @@ def main() -> int:
     print()
     print("Not in scope: substrate forcing of P_A (see SUBSTRATE_TO_P_A_FORCING")
     print("and FIRST_ORDER_COFRAME_UNCONDITIONALITY no-gos; conditional repair")
-    print("route in PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING is unaudited).")
+    print("route in PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING is")
+    print("bounded/conditional on its action-source premise).")
     print()
 
     gamma = clifford_generators()
@@ -396,9 +397,9 @@ def main() -> int:
             "Majorana pairing, and cross-checks c_Widom=c_cell=1/4. "
             "This is a renaming-class consistency theorem, not a "
             "substrate-forcing derivation of P_A. Substrate-to-P_A "
-            "provenance remains conditional on the cited unaudited "
-            "link-local first-variation candidate authority. Audit "
-            "ratification remains separate."
+            "provenance remains conditional on the cited bounded/conditional "
+            "link-local first-variation bridge and its action-source premise. "
+            "Audit ratification remains separate."
         )
         return 0
     return 1

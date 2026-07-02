@@ -1,23 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/shapiro_unique_discriminator_v2.py
-runner_sha256: 1b549202ae0b735fb3020e7ffd7a86c389cfd3145e17fcddb225bd8a2bd037a8
+runner_sha256: 8a46227c4badc37cda2b991ad54e13d19c4e52510e18c8f7bb0ee320041c4ef7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================================
-SHAPIRO UNIQUE DISCRIMINATOR V2
-  strongest remaining boundary for the retained c-dependent phase lag
+SHAPIRO UNIQUE DISCRIMINATOR V2: BOUNDED BOUNDARY VERIFIER
+  cache-backed check against the static-cone no-go boundary
 ========================================================================================
 
-Question:
-  Can anything stronger than the detector phase lag alone separate the
-  causal propagating-field lane from static lookalikes?
-
-Exact controls:
-  - exact zero control stays exact
-  - the phase-lag curve is portable across the retained grown families
+Source cache:
+  logs/runner-cache/shapiro_static_discriminator.txt
 
                 mode      c=2.0      c=1.0      c=0.5     c=0.25
 ------------------------------------------------------------------------
@@ -29,17 +24,22 @@ Boundary diagnostics:
   causal vs static-cone RMSE: 0.0000
   causal vs static-schedule RMSE: 0.0128
 
-Safe read:
-  - the detector-line phase lag is a real, portable observable
-  - a static cone-shape proxy reproduces the same curve exactly
-  - static scheduling does not reproduce the curve and stays near-flat
-  - no stronger discriminator appeared in the retained data
+RUNNER CHECKS
+  [PASS] static-discriminator cache exits cleanly
+  [PASS] static-discriminator cache is SHA-fresh
+  [PASS] causal and static-cone curves match to displayed precision
+  [PASS] static scheduling remains separated from causal curve
+  [PASS] source note is bounded and does not use retained-chain wording
+  [PASS] source note has no failed archive bridge dependency
+  [PASS] source note preserves the no-unique-causality boundary
 
-Conclusion:
-  The best remaining boundary is that the Shapiro-style phase lag is
-  portable and proxy-level, but not unique against static field-shape
-  effects. A unique causal-propagation discriminator will need another
-  observable beyond the detector-line phase lag alone.
+Safe read:
+  - the detector-line proxy phase is not a unique causal-propagation discriminator
+  - the static cone-shape proxy reproduces the displayed curve
+  - static scheduling remains separated and near-flat
+  - a stricter discriminator needs a second observable beyond this phase line
+
+ASSERTIONS: PASS
 
 ----- stderr -----
 

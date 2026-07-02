@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
-runner_sha256: c5795a5b504b522690e16b59746be66ce770c55bdc05eb508f29f07f4b04c191
+runner_sha256: 345a71c49750842f375895eeac3f71e25fcc7d8730f69182329e41d5b2d138fc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 ==========================================================================
@@ -67,7 +67,7 @@ status: ok
    PASS  D2 two-site shift is a symmetry but SITE-MIXING (named open item, out of scope)
 
 TOTAL: 14 PASS / 0 FAIL
-BOUNDARY GUARD: PASS retained abstract authority is cited; finite exhibit is not promoted
+BOUNDARY GUARD: PASS retained abstract authority is cited; finite exhibit is not promoted and no gate edge is present
 
 ----- stderr -----
 

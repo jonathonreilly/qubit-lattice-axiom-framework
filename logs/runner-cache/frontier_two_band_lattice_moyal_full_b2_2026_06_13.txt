@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_two_band_lattice_moyal_full_b2_2026_06_13.py
+runner_sha256: ebd8d851d63331445b3af69db450eb4d654b9f290fffff3eed2c6f9996bea296
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 16.64
+status: ok
+----- stdout -----
+Full lattice two-band Moyal B^2 runner
+mu=1.7086 T=0.2 masses=(0.0, 0.2, 0.3, 0.5)
+Model: H(k)=-2 cos(kx) sx -2 cos(ky) sy + m sz
+No scalar closure fit is performed; one cell normalization is fixed at m=0.
+PASS S0 finite-cell reference recomputed at m=0.0 :: value=0.042933687517 diff=0E-12
+PASS S0 finite-cell reference recomputed at m=0.2 :: value=0.041273318495 diff=0E-12
+PASS S0 finite-cell reference recomputed at m=0.3 :: value=0.039175811591 diff=0E-12
+PASS S0 finite-cell reference recomputed at m=0.5 :: value=0.030744459999 diff=0E-12
+PASS S1 finite-difference Moyal B^2 source matches implemented cross and second-derivative terms :: max_x_abs=5.590727e-07; coarse_to_fine_min_ratio=3.977; tol=7.0e-07
+PASS S0 control: Berry/interband residue probe vanishes at m=0 :: value=0.000000e+00
+PASS S0 anti-fabrication: interband residue probe is nonzero off m=0 :: m=0.2 7.672755e-03; m=0.5 3.132571e-02
+CELL_NORMALIZATION reference=m=0 raw=-1.919231499963e-01 target=4.293368751700e-02 norm=-2.237024950759e-01
+PASS single m=0 cell normalization is finite :: norm=-2.237024950759e-01
+PASS Gauss-Legendre Moyal integral 48->64 drift is below frozen tolerance :: max_rel=4.254397e-05
+PASS partial-fraction pole reconstruction of tr G2 is below frozen tolerance :: max_abs=2.903240e-12
+RESULT_TABLE
+m raw_full raw_cross raw_second closed_form exact rel_dev quad_rel
+0.0 -1.919231499963e-01 -1.512796811380e-01 -4.064346885829e-02 +4.293368751700e-02 +4.293368751700e-02 0.000000e+00 6.848300e-06
+PASS component accounting full=cross+second at m=0.0 :: delta=-2.220e-16
+0.2 -1.911159680716e-01 -1.511919018653e-01 -3.992406620630e-02 +4.275311890647e-02 +4.127331849500e-02 3.585368e-02 1.497703e-05
+PASS component accounting full=cross+second at m=0.2 :: delta=+3.664e-15
+0.3 -1.900675977836e-01 -1.510512013202e-01 -3.901639646342e-02 +4.251859585729e-02 +3.917581159100e-02 8.532776e-02 2.466104e-05
+PASS component accounting full=cross+second at m=0.3 :: delta=+1.998e-15
+0.5 -1.864358826837e-01 -1.503642275925e-01 -3.607165509114e-02 +4.170617212802e-02 +3.074445999900e-02 3.565427e-01 4.254397e-05
+PASS component accounting full=cross+second at m=0.5 :: delta=+4.469e-15
+PASS S2 measured non-reference residual is honestly bounded; complete Moyal B^2 does not close below 2% :: max_rel=3.565427e-01 at m=0.5; bound=0.38
+CLAIM_STATUS leaves named residual: after the single m=0 cell normalization, the full lattice Moyal B^2 response misses the independent masses by up to 35.654%; the missing object is a mass-dependent finite-cell/full-PT correction, not a scalar prefactor.
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

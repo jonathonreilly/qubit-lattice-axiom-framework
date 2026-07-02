@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/frontier_commensuration_unconditional_lemma_2026_06_12.py
+runner_sha256: bea72d655429f2e3d88bfb796fa0bc27587f5f421fc9fe95008169d0b9b22e60
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+commensuration unconditional period-parity lemma runner
+even_q_numeric_set=(2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100)
+odd_q_numeric_set=(3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99)
+assembly_L_values=(8, 10, 12, 16, 18, 26)
+A. frozen full-coset anchors first
+PASS: anchor L=10 mismatch count reproduces frozen copy :: computed=5700, frozen=5700
+PASS: anchor L=26 mismatch count reproduces frozen copy :: computed=1802892, frozen=1802892
+PASS: selected mismatch counts reproduce frozen copies :: observed=((8, 0), (10, 5700), (12, 0), (16, 0), (18, 197640), (26, 1802892))
+  L=10 witness: left=(0, 0, 0), right=(0, 0, 3), minimal_vector=(0, 0, -2), d2_parity=0, chart_delta_parity=1
+PASS: anti-fabrication L=10 witness coset parity flip is frozen :: witness=((0, 0, 0), (0, 0, 3), (0, 0, -2), 0, 1), d2_norm=4, flip_bit=1
+B. per-axis reduction gates
+PASS: SymPy even-q residue classes preserve parity :: rows=((0, 0, 0), (0, 1, 0), (1, 0, 0), (1, 1, 0))
+PASS: SymPy odd-q residue classes flip exactly on odd k :: rows=((0, 0, 0), (0, 1, 1), (1, 0, 0), (1, 1, 1))
+PASS: SymPy odd witness has centered round k=1 and flips parity :: (round_margin, delta, flip)=('1', '-m', '1')
+PASS: numeric even-q sweep covers the frozen case count :: cases=2550
+PASS: numeric odd-q sweep covers the frozen case count :: cases=2499
+PASS: centered delta equals a - q*k for every swept residue :: failures=0
+PASS: q=1 degenerate guard: period-1 axis has the single trivial coset (delta == 0), parity vacuously preserved; criterion scoped to q_i >= 2 :: q1_deltas=(0, 0, 0, 0, 0, 0, 0)
+PASS: even q has no odd q*k branch and no parity failures :: qk_odd=0, parity_failures=0
+PASS: odd q flip set matches centered odd-k round set and is nonempty :: rule_failures=0, set_mismatch_q=0, empty_flip_q=0
+PASS: odd q witness a=(q+1)/2 succeeds for every swept odd q :: witness_failures=0
+PASS: q=99 flip profile is the frozen high-half odd-k profile :: profile=(50, 98, 49)
+C. assembled chart-family gates
+  L= 8 periods=(4, 8, 4) per_axis_predicts_holds=True mismatches=0 first_mismatch=None
+  L=10 periods=(5, 10, 5) per_axis_predicts_holds=False mismatches=5700 first_mismatch=((0, 0, 0), (0, 0, 3), (0, 0, -2), 0, 1)
+  L=12 periods=(6, 12, 6) per_axis_predicts_holds=True mismatches=0 first_mismatch=None
+  L=16 periods=(8, 16, 8) per_axis_predicts_holds=True mismatches=0 first_mismatch=None
+  L=18 periods=(9, 18, 9) per_axis_predicts_holds=False mismatches=197640 first_mismatch=((0, 0, 0), (0, 0, 5), (0, 0, -4), 0, 1)
+  L=26 periods=(13, 26, 13) per_axis_predicts_holds=False mismatches=1802892 first_mismatch=((0, 0, 0), (0, 0, 7), (0, 0, -6), 0, 1)
+PASS: full-coset checks agree exactly with per-axis iff prediction :: iff_disagreements=0
+PASS: selected all-even-period charts have zero full-coset mismatches :: protected_mismatch_total=0
+PASS: selected odd-period charts all have a nonempty failure set :: unprotected_empty_failures=0
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

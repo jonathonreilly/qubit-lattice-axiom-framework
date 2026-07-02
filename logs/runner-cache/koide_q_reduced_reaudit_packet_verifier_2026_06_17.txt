@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/koide_q_reduced_reaudit_packet_verifier_2026_06_17.py
+runner_sha256: 937a4959f63e7b36de889185fd72cd1a9542571a9d51cdc153633f25c6638786
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Koide Q reduced-carrier restricted packet verifier
+========================================================================
+PASS parent note exists
+PASS carrier obstruction note exists
+PASS D_red normalization no-go note exists
+PASS parent records 'bounded algebraic support theorem'
+PASS parent records 'not a closure theorem'
+PASS parent records 'physical charged-lepton observable carrier/readout'
+PASS parent records 'D_red = I_2'
+PASS parent records 'KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md'
+PASS parent records 'KOIDE_Q_DRED_NORMALIZATION_FREEDOM_NO_GO_NOTE_2026-06-15.md'
+PASS parent records 'koide_q_reduced_reaudit_packet_verifier_2026_06_17.py'
+PASS parent records 'does not promote this row'
+PASS parent preserves exact reduced determinant support
+PASS parent leaves audit authority external
+PASS carrier obstruction records 'reduced two-slot carrier'
+PASS carrier obstruction records 'coarse-graining/readout'
+PASS carrier obstruction records 'Record/Quantum axioms do not supply the missing readout context'
+PASS carrier obstruction records 'not been derived as the physical'
+PASS carrier obstruction records 'add a new axiom'
+PASS D_red no-go records 'For every `c > 0`'
+PASS D_red no-go records '`D_red = c I_2`'
+PASS D_red no-go records 'source-coordinate rescaling'
+PASS D_red no-go records 'normalization bridge or convention'
+PASS D_red no-go records 'It does not add an axiom'
+PASS scripts/frontier_koide_q_reduced_observable_restriction_theorem.py exists
+PASS logs/runner-cache/frontier_koide_q_reduced_observable_restriction_theorem.txt exists
+PASS logs/runner-cache/frontier_koide_q_reduced_observable_restriction_theorem.txt records runner path -- runner=scripts/frontier_koide_q_reduced_observable_restriction_theorem.py
+PASS logs/runner-cache/frontier_koide_q_reduced_observable_restriction_theorem.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_koide_q_reduced_observable_restriction_theorem.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_koide_q_reduced_observable_restriction_theorem.txt sha matches source -- cache=27f6a20d99b10236d807a3ea90061ca6d3faac35312b92c0f02de3fae425ca70, live=27f6a20d99b10236d807a3ea90061ca6d3faac35312b92c0f02de3fae425ca70
+PASS logs/runner-cache/frontier_koide_q_reduced_observable_restriction_theorem.txt contains 'PASSED: 15/15'
+PASS logs/runner-cache/frontier_koide_q_reduced_observable_restriction_theorem.txt contains 'It does not by itself prove that this reduced carrier is the physical'
+PASS scripts/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.py exists
+PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt exists
+PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt records runner path -- runner=scripts/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.py
+PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt sha matches source -- cache=d53d5d90e8cb77dd727ca2b543ad6c18d69e49d392131a1f20837f33d2d4e05c, live=d53d5d90e8cb77dd727ca2b543ad6c18d69e49d392131a1f20837f33d2d4e05c
+PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt contains 'TOTAL: PASS=13 FAIL=0'
+PASS logs/runner-cache/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.txt contains 'missing bridge is a real readout/coarse-graining theorem'
+PASS scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py exists
+PASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt exists
+PASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt records runner path -- runner=scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py
+PASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt exits zero -- exit_code=0
+PASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt status ok -- status=ok
+PASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt sha matches source -- cache=f70178a8a17a1ecff920d2f92975fad23c1d4ce830a3d6be1a75cd8fa3d8ca62, live=f70178a8a17a1ecff920d2f92975fad23c1d4ce830a3d6be1a75cd8fa3d8ca62
+PASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt contains 'TOTAL: PASS=14 FAIL=0'
+PASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt contains 'positive repair must supply a physical response-unit theorem or approved premise'
+PASS packet class is boundary/exact-support only, not status promotion
+========================================================================
+TOTAL: PASS=48 FAIL=0
+Koide Q reduced packet is source-side re-audit ready: exact determinant support is cached, and both live blockers are explicit non-promotional boundary notes.
+
+----- stderr -----
+

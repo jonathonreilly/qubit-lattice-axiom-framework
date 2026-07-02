@@ -110,6 +110,12 @@ check("CTRL rescaled 2*S_i: cross-coeff = 512 != 32 (graph-shift normalization h
 # --- Source firewall: the row remains bounded on ADM-1/2/3 ---
 note_text = NOTE_PATH.read_text(encoding="utf-8")
 note_flat = " ".join(note_text.split())
+check("SRC top-level status is bounded support over ADM-1/2/3",
+      "**Claim type:** bounded_theorem" in note_text
+      and "bounded support over ADM-1/ADM-2/ADM-3" in note_flat
+      and "not an import-free physical coefficient theorem" in note_flat
+      and "No new axiom, retained bridge, audit verdict, ledger tag, or publication" in note_flat
+      and "TOTAL: PASS=18 FAIL=0" in note_text)
 check("SRC 2026-06-12 firewall keeps ADM-1/2/3 live, no retained promotion",
       "2026-06-12 Admissions-Closure Attempt And No-Go Routing" in note_text
       and "this is bounded support only" in note_flat

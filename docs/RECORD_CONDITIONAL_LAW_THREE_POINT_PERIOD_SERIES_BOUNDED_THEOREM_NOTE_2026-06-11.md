@@ -82,6 +82,39 @@ fixed 300-permutation sampled-null protocol, the three-point min-gain ledger
 and sampled-null gap series have the displayed values.
 ```
 
+## 2026-06-13 dependency-edge rescope repair
+
+This note does not use the #3554 fixed-prefix-`k` packet, the #3555
+period-scaling packet, the #3507 trajectory packet, or the Born-derived
+chain/readout premises as load-bearing one-hop authorities. Those packets
+name the historical route and vocabulary that led to this finite test, but
+the current source-positive is exactly the finite-runner-defined diagnostic
+above.
+
+Load-bearing inputs are confined to the finite objects instantiated by
+`scripts/frontier_record_conditional_law_three_point_period_series_2026_06_11.py`:
+
+- ring sizes `L=3`, `L=4`, and `L=5`, color count `N_c=3`, named occupancies
+  `K=5`, `K=7`, and `K=8`, and the displayed seed/depth choices;
+- the explicit sparse Fock evolution and SVD-polar determinant readout
+  constructed in the runner;
+- the fixed seeded 300-draw sampled-null protocol
+  `null_p95(Theta, w, kpref=3, n_draws=300, seed=7777)`;
+- the displayed finite inequalities: the L=3 baseline set, L=4 and L=5
+  min-gain ledgers, L=5 sampled-null non-clearing event, and gap-median
+  no-period-trend comparison.
+
+The symbols "Born", "record", "instrument", "C^3 carrier", "hopping",
+"selector/null protocol", and "U(1)" are therefore labels for the finite
+diagnostic instantiated in this runner, not imported framework closures. A
+downstream row must not cite this packet as a retained derivation of the
+#3554 fixed-prefix-`k` law, the #3555 period-scaling law, the #3507
+Born/readout chain, a framework-native `C^3` carrier, named `eps/tau`
+instruments, a selector/null theorem beyond the code-defined sampled
+diagnostic, a record-conditional interpretation from approved premises, a
+physical `U(1)` gauge field, an all-permutations null theorem, or a
+large-period law.
+
 ## What this does and does not claim
 
 - Not claimed: any exact full-permutation null certificate; asymptotic statement;

@@ -3,21 +3,24 @@
 Confinement and String Tension in the Cl(3) / Z³ Framework
 ===========================================================
 
-STATUS: retained structural theorem + bounded quantitative prediction
+STATUS: bounded support note / qualitative confinement consistency check
 
-THEOREM (Confinement):
-  The graph-first SU(3) gauge sector of the Cl(3)/Z³ framework confines
-  at zero temperature.  The string tension √σ is determined by the
-  framework's zero-free-parameter prediction α_s(M_Z) = 0.1181.
+SUPPORT CLAIM (bounded):
+  The graph-first SU(3) gauge-sector context with g_bare = 1 gives the
+  Wilson plaquette parameter beta = 6. On the standard SU(3) Yang-Mills
+  interpretation of that context, imported confinement, Sommer-scale,
+  EFT, and small-volume MC checks give bounded support for the expected
+  qualitative confinement/string-tension story.
 
 MECHANISM:
   1. Graph-first SU(3) at g_bare = 1 → Wilson plaquette at β = 2N_c/g² = 6.
   2. SU(3) Yang-Mills at T = 0 confines for all β > 0 (Wilson criterion,
      confirmed by decades of lattice Monte Carlo).
-  3. The framework derives α_s(M_Z) = 0.1181 (0.2% accuracy, retained lane).
+  3. A bounded source value α_s(M_Z) = 0.1181 is consumed as an EFT input.
   4. Two-loop QCD running from M_Z with flavor thresholds → Λ_QCD.
   5. √σ is determined by Λ_QCD through non-perturbative QCD dynamics.
-  6. The lattice ratio √σ / Λ_MS̄ is a universal property of SU(3) YM.
+  6. The lattice ratio √σ / Λ_MS̄ is imported standard SU(3) YM/lattice
+     context, not derived here.
 
 QUANTITATIVE PREDICTION:
   From α_s(M_Z) = 0.1181 → Λ_MS̄^(5) ≈ 210 MeV → √σ ≈ 440 MeV.
@@ -35,6 +38,7 @@ Self-contained: numpy only.
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 import numpy as np
 from canonical_plaquette_surface import CANONICAL_ALPHA_BARE, CANONICAL_ALPHA_S_V, CANONICAL_PLAQUETTE, CANONICAL_U0
 
@@ -44,6 +48,7 @@ AUDIT_TIMEOUT_SEC = 600
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+NOTE_PATH = Path(__file__).resolve().parents[1] / "docs" / "CONFINEMENT_STRING_TENSION_NOTE.md"
 
 
 def check(name, condition, detail="", kind="EXACT"):
@@ -75,7 +80,7 @@ BETA_LATTICE = 2 * N_C / G_BARE_SQ  # = 6.0
 ALPHA_S_V = CANONICAL_ALPHA_S_V
 V_EW = 246.28281829012906  # GeV, hierarchy theorem
 M_Z = 91.1876  # GeV
-ALPHA_S_MZ = 0.1181  # retained zero-import lane
+ALPHA_S_MZ = 0.1181  # bounded alpha_s source value consumed as EFT input
 
 # Quark thresholds (PDG central values)
 M_T = 172.69   # GeV
@@ -87,12 +92,12 @@ SQRT_SIGMA_EXP = 0.440  # GeV, from Regge slope / heavy quarkonium
 
 
 # =============================================================================
-# Part 1: Structural confinement theorem
+# Part 1: Beta=6 SU(3) support surface
 # =============================================================================
 
 def test_structural_confinement():
-    """Verify the structural argument: SU(3) YM at β = 6.0 confines."""
-    print("\n=== Part 1: Structural confinement theorem ===\n")
+    """Verify the bounded support surface: beta=6 plus imported YM context."""
+    print("\n=== Part 1: Beta=6 SU(3) support surface ===\n")
 
     check("g_bare² = 4π α_bare = 1",
           abs(G_BARE_SQ - 1.0) < 1e-12,
@@ -106,19 +111,19 @@ def test_structural_confinement():
           N_C == 3,
           "graph-first commutant: gl(3) ⊕ gl(1), compact part su(3)")
 
-    check("SU(3) YM confines at T = 0 for all β > 0 (Wilson criterion)",
+    check("Standard SU(3) YM confinement context is imported, not derived here",
           True,
-          "established by Wilson (1974), confirmed by lattice MC")
+          "used as bounded Yang-Mills/lattice background")
 
-    check("β = 6.0 is in the confined phase",
+    check("β = 6.0 sits on the standard low-temperature pure-gauge support surface",
           True,
-          "deconfining transition at finite T only; T = 0 always confined")
+          "qualitative support only; not a continuum confinement proof")
 
     # Plaquette consistency
     # At β = 6.0, standard lattice QCD: <P> ≈ 0.5934
     # This is a known result — the framework's <P> matches
     p_lattice_qcd = 0.5934  # standard MC result at β = 6.0
-    check("Framework <P> = 0.5934 matches standard SU(3) YM at β = 6.0",
+    check("Framework plaquette input matches the standard β=6 reuse value",
           abs(P_PLAQ - p_lattice_qcd) < 0.001,
           f"<P>_framework = {P_PLAQ}, <P>_lattice = {p_lattice_qcd}")
 
@@ -174,11 +179,11 @@ def run_alpha_s(alpha_s_0, mu0, mu1, nf):
 
 
 def test_coupling_running():
-    """Compute Λ_QCD and α_s at various scales from the framework's prediction."""
+    """Compute Λ_QCD and α_s at various scales from the bounded source value."""
     print("\n=== Part 2: QCD coupling running and Λ_QCD ===\n")
 
-    # Framework prediction
-    check("Framework α_s(M_Z) = 0.1181 (retained, 0.2% accuracy)",
+    # Bounded source input.
+    check("Bounded α_s(M_Z) source value = 0.1181 (consumed as EFT input)",
           abs(ALPHA_S_MZ - 0.1181) < 1e-6,
           f"α_s(M_Z) = {ALPHA_S_MZ}")
 
@@ -233,7 +238,7 @@ def test_coupling_running():
 # =============================================================================
 
 def test_string_tension(lam5, lam3):
-    """Predict √σ from the framework's Λ_QCD."""
+    """Estimate sqrt(sigma) from imported low-energy QCD context."""
     print("\n=== Part 3: String tension prediction ===\n")
 
     # The ratio √σ / Λ_MS̄ is a universal QCD constant.
@@ -246,8 +251,8 @@ def test_string_tension(lam5, lam3):
     # The phenomenological value √σ ≈ 440 MeV combined with Λ^(3) ≈ 332 MeV
     # gives the ratio √σ / Λ^(3) ≈ 1.33.
     #
-    # For the framework prediction, we use:
-    # √σ_predicted = (√σ/Λ)_lattice × Λ_framework
+    # For this bounded support estimate, use:
+    # sqrt(sigma)_support = (sqrt(sigma)/Lambda)_lattice * Lambda_source
 
     # Method 1: From Λ^(3) and lattice ratio
     ratio_nf3 = 1.33  # √σ / Λ_MS̄^(3), from lattice/phenomenology
@@ -261,7 +266,7 @@ def test_string_tension(lam5, lam3):
           kind="BOUNDED")
 
     # Method 2: Direct from Sommer scale
-    # At β = 6.0 (the framework's coupling), standard lattice QCD gives:
+    # At beta = 6.0 (the support-surface coupling), standard lattice QCD gives:
     #   r₀/a = 5.37 ± 0.05   (Sommer parameter in lattice units)
     #   a = r₀ / 5.37 = 0.472 fm / 5.37 = 0.0879 fm
     #   σa² = 0.0465 ± 0.001  (Creutz ratio, large Wilson loops)
@@ -281,7 +286,7 @@ def test_string_tension(lam5, lam3):
     check("Method 2: quenched √σ at β = 6.0 from Sommer scale",
           abs(sqrt_sigma_quenched_gev - 0.484) < 0.03,
           f"√σ_quenched = {sqrt_sigma_quenched_gev * 1000:.0f} MeV "
-          f"(quenched value at the framework's coupling)",
+          f"(quenched value at beta=6)",
           kind="BOUNDED")
 
     # With dynamical quarks: ~10% reduction
@@ -299,13 +304,13 @@ def test_string_tension(lam5, lam3):
     # d(ln Λ)/d(α_s) = 1/(2β₀α_s²) at one loop
     b0_5 = beta0(5)
     sensitivity = 1.0 / (2 * b0_5 * ALPHA_S_MZ ** 2)
-    delta_alpha = 0.1181 - 0.1179  # framework − experiment
+    delta_alpha = 0.1181 - 0.1179  # source value minus comparator
     delta_sqrt_sigma_pct = sensitivity * delta_alpha * 100
 
     check("Sensitivity: Δ(√σ)/√σ ≈ {:.1f}% from Δα_s = {:.4f}".format(
           abs(delta_sqrt_sigma_pct), abs(delta_alpha)),
           abs(delta_sqrt_sigma_pct) < 5.0,
-          f"framework α_s is 0.2% high → √σ shifts by ~{delta_sqrt_sigma_pct:+.1f}%",
+          f"source α_s is 0.2% high vs comparator -> √σ shifts by ~{delta_sqrt_sigma_pct:+.1f}%",
           kind="BOUNDED")
 
     return True
@@ -569,26 +574,26 @@ def test_combined():
     """Combine structural theorem with quantitative prediction."""
     print("\n=== Part 5: Combined confinement result ===\n")
 
-    check("Graph-first SU(3) at g_bare = 1 → SU(3) YM at β = 6.0 (structural)",
+    check("Graph-first SU(3) at g_bare = 1 -> beta=6 support surface",
           True,
-          "retained graph-first gauge theorem + canonical normalization")
+          "structural context + declared normalization")
 
-    check("SU(3) YM at T = 0 confines (Wilson criterion, lattice MC confirmed)",
+    check("Standard SU(3) YM confinement is bounded imported context",
           True,
-          "confinement is a proven property of the framework's gauge sector")
+          "not a framework-native proof in this note")
 
-    check("α_s(M_Z) = 0.1181 (framework, zero free parameters, 0.2% accuracy)",
+    check("α_s(M_Z) = 0.1181 consumed as a bounded transfer input",
           True,
-          "retained quantitative lane on main")
+          "source boundary remains with alpha_s row")
 
     check("√σ ≈ 440 MeV (determined by α_s through QCD dynamics)",
           True,
           "bounded: conditioned on standard low-energy EFT bridge",
           kind="BOUNDED")
 
-    check("Framework resolves confinement: SU(3) derived + correct coupling → confines",
+    check("Framework supplies bounded confinement support, not retained closure",
           True,
-          "no free parameters; confinement follows from the axiom stack")
+          "beta=6 support + imported YM/lattice context")
 
     # Predictions
     print("\n  --- Experimental predictions ---")
@@ -612,6 +617,30 @@ def test_combined():
 
 
 # =============================================================================
+# Part 6: Source-status firewall
+# =============================================================================
+
+def test_source_status_firewall():
+    """Ensure the companion note does not overstate this support result."""
+    print("\n=== Part 6: Source-status firewall ===\n")
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+
+    check("source note declares bounded-support actual current status",
+          "actual_current_surface_status: bounded-support" in text
+          and "trace_class: upstream_support" in text)
+    check("source note does not use proposed_retained wording",
+          "proposed_retained" not in text)
+    check("source note states confinement is not framework-derived here",
+          "does not derive four-dimensional Yang-Mills confinement" in flat
+          and "not a first-principles proof" in flat)
+    check("source note identifies imported YM/lattice/EFT inputs",
+          "imports standard Yang-Mills confinement" in flat
+          and "Sommer-scale data" in flat
+          and "EFT running" in flat)
+
+
+# =============================================================================
 # Main
 # =============================================================================
 
@@ -620,8 +649,9 @@ def main():
     print("Confinement and String Tension in the Cl(3) / Z³ Framework")
     print("=" * 72)
     print()
-    print("THEOREM: The graph-first SU(3) gauge sector confines at T = 0.")
-    print("         √σ ≈ 440 MeV from α_s(M_Z) = 0.1181 (zero free params).")
+    print("SUPPORT: beta=6 graph-first SU(3) context plus imported")
+    print("         Yang-Mills/lattice/EFT inputs gives bounded confinement")
+    print("         and string-tension consistency.")
     print()
 
     test_structural_confinement()
@@ -629,6 +659,7 @@ def main():
     test_string_tension(lam5, lam3)
     test_monte_carlo()
     test_combined()
+    test_source_status_firewall()
 
     print()
     print("=" * 72)
@@ -639,8 +670,9 @@ def main():
         print("\n*** FAILURES DETECTED ***")
         sys.exit(1)
     else:
-        print("\nAll checks passed. SU(3) confinement with √σ ≈ 440 MeV")
-        print("is a structural + bounded prediction of the Cl(3)/Z³ framework.")
+        print("\nAll checks passed. The branch provides bounded support for")
+        print("SU(3) confinement/string-tension consistency; it does not")
+        print("claim retained framework-native confinement closure.")
         sys.exit(0)
 
 

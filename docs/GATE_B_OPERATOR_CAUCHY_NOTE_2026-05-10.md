@@ -1,7 +1,7 @@
-# Gate B Family Operator-Cauchy Continuum-Bridge Probe
+# Gate B Operator-Cauchy Tested-Axis Boundary Probe
 
 **Date:** 2026-05-10
-**Claim type:** no_go (bounded numerical no-go for the tested
+**Claim type:** bounded_theorem (bounded negative boundary for the tested
 operator-Cauchy bridge on the Gate B connectivity-tolerance axes; method
 mismatch for the restricted strong-field finite-box theorem)
 **Type:** bounded negative boundary
@@ -23,9 +23,20 @@ pipeline after independent review.
 ## One-line read
 
 The operator-Cauchy continuum-bridge method used in the rescaled-NN
-harness does **not** extend cleanly to the Gate B family on the tested
-axes. The result is a scoped bounded no-go with structural diagnosis,
-parallel to the alt-connectivity null companion.
+harness fails the two tested Gate B Cauchy axes and is method-mismatched
+for the restricted strong-field finite-box theorem. The result is a scoped
+bounded negative boundary with structural diagnosis, parallel to the
+alt-connectivity null companion.
+
+2026-06-18 scope repair: this note is not an N1-N8 family-level no-go and
+does not claim that every possible Gate B continuum bridge is exhausted.
+The citable source claim is the narrower tested-axis packet:
+
+- the ordered lattice-resolution Cauchy gate fails;
+- the jittered ensemble-refinement Cauchy gate fails;
+- the restricted strong-field closure row is an algebraic finite-box theorem
+  for which this operator-Cauchy method is the wrong method;
+- other Gate B continuum-limit routes remain open unless separately tested.
 
 ## Rows targeted
 
@@ -194,9 +205,9 @@ strong-field closure  (Part 3):  N/A (algebraic finite-box theorem;
                                        operator-Cauchy mismatched)
 ```
 
-Operator-Cauchy continuum-bridge method does **not** extend cleanly to the
-Gate B family. The result is a **sharp bounded null with structural
-diagnosis**.
+Operator-Cauchy continuum-bridge method fails on the two tested Gate B
+Cauchy axes. The result is a **sharp bounded tested-axis null with
+structural diagnosis**, not a global family-level no-go.
 
 ### Structural reasons for the bounded scope
 
@@ -236,18 +247,19 @@ diagnosis**.
 | Gate B restricted strong-field closure | n/a -- algebraic theorem | METHOD MISMATCH | claim tested here |
 
 The pattern is that the operator-Cauchy bridge is a *feature of the
-rescaled-NN lane*, not a universal closure method for physical Cl(3) on
-Z^3 harnesses. The Gate B family and the alt-connectivity grown DAG
-family share the bounded scope coming from harness constructions that are
-not discretizations of a continuum PDE; the restricted strong-field
-closure is a different beast entirely -- it is a finite-box algebraic
-identity that needs algebraic, not Cauchy, bridges.
+rescaled-NN lane*, not automatically a universal closure method for physical
+Cl(3) on Z^3 harnesses. The tested Gate B axes and the alt-connectivity grown
+DAG family share the bounded scope coming from harness constructions that are
+not discretizations of a continuum PDE; the restricted strong-field closure
+is a different beast entirely -- it is a finite-box algebraic identity that
+needs algebraic, not Cauchy, bridges.
 
 ## What this is not
 
 - A claim that the Gate B family has no continuum limit -- only that this
   specific operator-Cauchy bridge does not find one on the observable
   basis we chose.
+- An N1-N8 exhaustive no-go for every Gate B bridge route.
 - A claim that the strong-field closure theorem is broken -- it is not;
   it is at machine precision on its hardcoded box. The claim is only that
   operator-Cauchy is the wrong method for that row.
@@ -273,8 +285,17 @@ the rescaled-NN protocol transfers; instead, the next useful question is
 which discrete construction admits a continuum-limit observable, and
 whether the harness can be reformulated to expose one.
 
+## Re-audit Handoff
+
+The repair target was the audited-conditional objection that this source
+elevated a finite tested-axis result into a family-level no-go without a
+visible N1-N8 no-go-discipline record. The current packet deliberately takes
+the narrower route: grade only the two completed Cauchy gates plus the
+restricted strong-field method-mismatch boundary. If a future author wants a
+family-level no-go, that should be a separate N1-N8 exhaustion theorem.
+
 ## Cached log
 
 Full runner stdout is at
 [`logs/runner-cache/gate_b_operator_cauchy.txt`](../logs/runner-cache/gate_b_operator_cauchy.txt).
-Runner wallclock: 5 s.
+Runner wallclock: 4 s.

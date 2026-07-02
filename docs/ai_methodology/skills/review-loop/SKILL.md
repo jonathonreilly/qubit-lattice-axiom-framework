@@ -115,23 +115,27 @@ and do not bound the row on that basis; audit only any averaging, typicality
 or genericity predicate, weighting, or state-contingent value actually
 claimed.
 
-The framework baseline (per `MINIMAL_AXIOMS_2026-06-05.md`) is the three named
-axioms Lattice, Quantum, and Record. Lattice is the cubic `Z^3` lattice with
-nearest-neighbor adjacency. Quantum is the one-qubit operator algebra at each
-site, equivalently `M_2(ℂ) ≅ Cl(3,0)` — these are co-equal labels for the same
-retained algebra-isomorphism class, supported by the retained narrow theorems
-`cl3_complexification_split_narrow_theorem_note_2026-05-10` and
-`cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`. The older
-`physical Cl(3) local algebra` phrasing remains valid as the
-real-algebra reading and continues to read correctly in legacy content. Record
-is durable registration of the realized outcome in a supplied readout context:
-the realized outcome is the `K`/CPT orbit of the realized central sector, and
-finite scalar readout is additive over finite pairwise-disjoint record
-collections. Record supplies no readout context, decomposition, `K`/CPT
-structure, sector-generation rule, weighting, normalization, probability,
-measurement/decoherence dynamics, time metric, within-sector data, occupancy
-rule, P2/modulus, log-det, source/action, scale, or arbitrary observable
-identification. Do not
+The framework baseline (per `MINIMAL_AXIOMS_2026-06-29.md`) is the four named
+axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
+lattice with nearest-neighbor adjacency. Qubit is the domain of local
+possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is
+equivalent notation, not extra primitive structure.
+Admissibility is one fixed finite-neighborhood rule, the same at every lattice
+translate; for each site, the available possibilities are determined by, and
+vary with, the nearest-neighbor conditions, consistent with local records. A
+site need not carry a record;
+when present, a record locks exactly one local possibility from the subset
+available at that site under Admissibility, with finite scalar readout additive
+over finite pairwise-disjoint record collections. Additional
+structures such as readout-context selection, decomposition, `K`/CPT
+structure, sector-generation rules, weighting, normalization, probability,
+measurement/decoherence dynamics, occurrence rules, update laws, time metric,
+within-sector data, occupancy rules, P2/modulus, log-det readouts,
+source/action bridges, scale, local observability, law-admissibility or
+transition relations, kinetic-branch selection, or arbitrary observable
+identification remain compatible downstream targets, but require derivation,
+bridge, explicit admission, or approved primitive registration before use as
+load-bearing content. Do not
 land new science under bare letter-number names such as `A1`, `A2`, `G1`,
 or `R3`; those labels are overloaded with axioms, assumptions, Lie
 types, lane stages, route codes, and branch blocks. Use the explicit
@@ -141,9 +145,10 @@ not treat the framework baseline as a
 new axiom, new admitted premise, regulator interpretation, or optional
 theory language. Correcting a PR back to this repo language is allowed. This
 does not promote downstream science by itself: physical-species
-identifications, `C_3`-breaking selectors, readout/scale/unit bridges, and
-empirical matches remain separate bounded/open inputs unless they have their
-own retained-grade derivation and independent audit closure.
+identifications, `C_3`-breaking selectors, kinetic-branch selectors,
+readout/scale/unit bridges, and empirical matches remain separate
+bounded/open inputs unless they have their own retained-grade derivation and
+independent audit closure.
 
 The bar is intentionally high: if review-loop is doing its job, the later
 fresh-context audit should be mostly confirmatory. Do not pass branches that

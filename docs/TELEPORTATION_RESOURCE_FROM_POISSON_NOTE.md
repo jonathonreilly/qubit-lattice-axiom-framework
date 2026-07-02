@@ -26,6 +26,54 @@ faster-than-light transport. The only audited object is a quantum state
 teleportation resource extracted from the two-species ground state used by
 `scripts/frontier_bell_inequality.py`.
 
+**Status authority:** independent audit lane only. This note records source-side
+content and does not set status.
+
+## 2026-06-20 Source Repair: Narrow To The Bounded Finite Extraction Core
+
+This source repair leaves the citeable content as the **bounded finite
+extraction core** and marks the native preparation/readout/apparatus bridge
+explicitly **open** (not supplied here). No new native bridge theorem is proved
+in this repair.
+
+**Citeable core (bounded finite extraction).** On the two default finite
+surfaces (`1D N=8` and `2D 4x4`), the runner certifies, with a final
+`TOTAL: PASS=N FAIL=0` summary:
+
+- the Poisson/CHSH helper source is present and hashed;
+- the retained-axis finite operator algebra (RALA) source is present and
+  retained-bounded on the ledger, supplying `Z_axis`, `X_axis`, the axis Bell
+  projectors, the fixed pair-hop `X` membership, and the finite teleportation
+  closure;
+- the last-taste-bit logical carrier algebra is verified per surface
+  (`X` is the last-taste logical flip; `Z_last` is a logical Pauli);
+- the standard Bell teleportation convention passes an ideal-`Phi+` sanity
+  check;
+- the `G=0` null control does **not** yield a high-fidelity logical resource,
+  while both Poisson/CHSH cases do (high traced Bell overlap, positive
+  negativity, high ideal state-teleportation fidelity).
+
+This bounded offline finite extraction is the only citeable core content.
+The derived diagnostics (Bell overlap, traced/full CHSH, negativity,
+teleportation fidelity) and the `G=0` vs Poisson contrast are unchanged by this
+repair.
+
+**Open bridge (NOT part of the citeable core).** The native
+preparation/readout and apparatus bridge — a physical deterministic
+teleportation apparatus realizing the offline retained-axis last-taste carrier
+(native preparation Hamiltonian/schedule, physical detector/readout path,
+endogenous durable records, apparatus dynamics) — is **not supplied here**. It
+remains an open, not-derived requirement for a separate theorem. The runner
+segregates this bridge: the prep/readout/apparatus firewall report is printed in
+a clearly labelled
+`=== OPEN BRIDGE (... NOT part of citeable core) ===` block as an `INFO:` line
+only, and it does **not** contribute to the core `TOTAL`/`SUMMARY`.
+
+This repair introduces no new axiom, primitive, import, comparator, or approved
+bridge. The parent row therefore remains a source-side open gate for the
+physical deterministic resource, with the bounded finite extraction core as the
+citeable content.
+
 ## 2026-05-28 Audit Repair (load-bearing core split from unsupplied bridge)
 
 The 2026-05-28 audit verdict was `audited_conditional`:
@@ -197,6 +245,27 @@ continuum/infinite-volume preparation theorem. The row therefore remains an
 open gate for a physical deterministic resource. The new artifact is bounded
 preparation-path support only; it introduces no new axiom, primitive,
 approved premise, or retained-grade proposal.
+
+## 2026-06-18 Finite Extraction Core Split
+
+The audit-confirmed finite part is now split into a bounded-support companion:
+[`TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md`](TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md)
+with runner
+`scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py`.
+
+That companion certifies only the bounded offline extraction:
+
+- on the default `1D N=8` and `2D 4x4` Poisson/CHSH surfaces, the runner
+  diagonalizes the finite Hamiltonian, traces cells and spectator tastes,
+  keeps the last retained taste bit per species, and obtains a high-fidelity
+  logical Bell resource;
+- the `G=0` null control does not produce an entangled logical resource;
+- the retained-axis finite operator algebra is routed through RALA;
+- postselected branches remain diagnostic only.
+
+The split does not change this parent row's open-gate status.  The physical
+native preparation/readout and apparatus theorem remains open, and this row
+must not be cited as a deterministic physical teleportation-resource theorem.
 
 ## Script
 

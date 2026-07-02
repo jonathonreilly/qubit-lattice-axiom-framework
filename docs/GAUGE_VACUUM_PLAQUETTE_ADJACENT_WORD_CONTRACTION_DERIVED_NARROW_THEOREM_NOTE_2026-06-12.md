@@ -321,7 +321,7 @@ PYTHONPATH=scripts python3 scripts/gauge_vacuum_plaquette_adjacent_word_contract
 Expected tail:
 
 ```text
-TOTAL: PASS=25, FAIL=0
+TOTAL: PASS=28, FAIL=0
 ```
 
 Cache refresh command:

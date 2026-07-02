@@ -1,18 +1,23 @@
 # Industrial SDP Bootstrap — Lattice ⟨P⟩(β=6) Bracket Attempt
 
-**Date:** 2026-05-03
-**Type:** numerical CVXPY bracket attempt + named-obstruction stretch
+**Date:** 2026-05-03; 2026-06-13 exact obstruction certificate repair
+**Type:** bounded no-upper-bound obstruction certificate + named open gate
+**Claim type:** open_gate
 **Claim scope:** apply the CVXPY-based SDP infrastructure validated in
 block 01 (PR [#433](https://github.com/jonathonreilly/cl3-lattice-framework/pull/433))
 to the actual lattice `⟨P⟩(β=6)` problem via multi-Wilson-loop moment
-bootstrap. **Honest result: bracket is loose**, `[0.4225, 1.0]` — the
-upper bound stays at the trivial support endpoint because no explicit
-Migdal-Makeenko loop equations are implemented. This consolidates the
+bootstrap. The auditable core is now the exact obstruction certificate:
+the PSD + Hausdorff + 4x4 Gram + stated area-law inequalities admit an
+explicit feasible point with `p1 = p2 = p3 = p4 = r1 = r2 = q1 = q2 =
+pr = pq = rq = 1`. Therefore this SDP surface cannot prove any
+nontrivial upper bound `p1 < 1`, even before numerical solver error is
+considered. The optional `p1 >= 0.4225` mean-field lower bound is an
+admitted comparison/input only, not derived by the SDP and not
+load-bearing for the no-upper-bound obstruction. This consolidates the
 named obstruction from prior PRs [#420](https://github.com/jonathonreilly/cl3-lattice-framework/pull/420),
 [#423](https://github.com/jonathonreilly/cl3-lattice-framework/pull/423):
-**loop equations are the critical missing piece**, and CVXPY-based bracketing
-without them does not improve over the bridge-support stack analytic
-upper-bound candidate (0.59353).
+**loop equations are the critical missing piece** for any nontrivial
+framework-native bracket.
 **Status authority:** independent audit lane only.
 **Primary runner:** `scripts/frontier_industrial_sdp_bootstrap_block02.py`
 **Run with:** `.venv/bin/python3 scripts/frontier_industrial_sdp_bootstrap_block02.py`
@@ -23,6 +28,25 @@ Block 01 (PR [#433](https://github.com/jonathonreilly/cl3-lattice-framework/pull
 established the CVXPY infrastructure works on this framework. Can it
 bracket the actual lattice `⟨P⟩(β=6) ≈ 0.5934` via multi-Wilson-loop
 SDP at small L_max, even without explicit Migdal-Makeenko loop equations?
+
+## 0.1 2026-06-13 repair summary
+
+The prior source surface invited a conditional reading because the displayed
+best bracket used the admitted `p1 >= 0.4225` bridge-support lower bound. This
+repair separates the exact theorem from that admitted comparison:
+
+- **Exact theorem:** on the encoded PSD/Hausdorff/Gram/area-law SDP surface,
+  `p1 = 1` is feasible by an explicit all-ones moment certificate. Hence the
+  surface has trivial upper optimum `max p1 = 1`; no nontrivial upper bound can
+  be derived without additional loop-equation constraints or another strict
+  framework-native relation.
+- **Non-theorem context:** `0.4225`, `0.5934`, `0.59353`, and the
+  Kazakov-Zheng literature brackets are comparison/admitted context only.
+- **No status edit:** this source note does not set the audit verdict. The
+  independent audit lane owns any reclassification.
+- **Scope guard:** this is not an exhaustive no-go against SDP/bootstrap
+  routes. Adding explicit loop equations or another strict framework-native
+  relation changes the constraint surface and remains the intended open path.
 
 ## 1. Setup
 
@@ -41,9 +65,9 @@ The bootstrap problem (CVXPY 1.8.2 + CLARABEL):
 - Support bounds: `p1, r1, q1 ∈ [-1/3, 1]`; `p2, r2, q2, p4 ∈ [0, 1]`
 - Hausdorff monotonicity: `p4 ≤ p2`
 - Area-law / perimeter inequalities: `r1 ≤ p2`, `q1 ≤ p4`
-- Optional bridge-support lower bound: `p1 ≥ 0.4225` (admitted: mean-field
-  correlation-raising — single-plaquette is a lower bound for confined
-  lattice gauge)
+- Optional bridge-support lower bound: `p1 ≥ 0.4225` (admitted comparison
+  only: mean-field correlation-raising — single-plaquette is asserted as a
+  lower bound for confined lattice gauge; this is not derived by this SDP)
 
 ## 2. Result
 
@@ -56,19 +80,34 @@ PSD + bridge-support lower bound (p1 ≥ 0.4225)          0.4225    1.0000   0.5
 PSD + bridge-support + area-law (full)                  0.4225    1.0000   0.5775
 ```
 
-**Best bracket: `⟨P⟩(β=6) ∈ [0.4225, 1.0]`** — width 0.578.
+**Best numerical bracket with the admitted lower-bound switch enabled:
+`⟨P⟩(β=6) ∈ [0.4225, 1.0]`** — width 0.578.
 
 Contains MC value 0.5934 ✓; contains bridge-support upper bound 0.59353 ✓.
+These comparator inclusions are not load-bearing theorem content.
 
 ## 3. Why the upper bound is trivial
 
-The PSD + Hausdorff constraints alone are satisfiable by ANY valid
-probability distribution on `[a, b]`. In particular, the **delta-distribution
-at P = 1** (which gives `p1 = p2 = p3 = p4 = 1`) is a valid moment
-sequence — its Hankel matrix is the all-ones matrix (rank 1, PSD).
+The PSD + Hausdorff constraints alone are satisfiable by the
+delta-distribution at `P = 1`, giving `p1 = p2 = p3 = p4 = 1`.
+The stronger encoded SDP surface also admits an all-ones certificate:
 
-So PSD + Hausdorff alone cannot bound `p1` strictly below 1. To get a
-non-trivial upper bound, we need either:
+```text
+p1 = p2 = p3 = p4 = 1
+r1 = r2 = q1 = q2 = 1
+pr = pq = rq = 1
+```
+
+Then the plaquette Hankel matrix and the `{1,P,R,Q}` Gram matrix are
+all-ones rank-one PSD matrices; the shifted Hausdorff upper matrix is
+zero PSD; the shifted lower matrix is a positive all-ones matrix; support
+bounds, `p4 <= p2`, `r1 <= p2`, and `q1 <= p4` are saturated. The
+optional admitted lower bound `p1 >= 0.4225` is also satisfied. Thus the
+feasible set itself contains `p1 = 1`, so no solver or finite precision
+issue can produce a framework-native upper bound below 1 from these
+constraints.
+
+To get a non-trivial upper bound, we need either:
 - **Explicit lattice Migdal-Makeenko / Schwinger-Dyson loop equations**
   relating moments to coupling β
 - OR **explicit area-law constraints** with strict inequalities tied to β
@@ -77,7 +116,8 @@ non-trivial upper bound, we need either:
 
 The lower bound `0.4225` comes only from the admitted "mean-field
 correlation-raising" assumption (lattice MC ≥ single-plaquette mean-field
-in confined regime), not from the bootstrap.
+in confined regime), not from the bootstrap. It is not used to prove the
+no-upper-bound obstruction.
 
 ## 4. Comparison with bridge-support stack and literature
 
@@ -92,10 +132,9 @@ in confined regime), not from the bootstrap.
 
 **Honest assessment:** the CVXPY moment bootstrap from this block does
 NOT provide a tighter bracket than the bridge-support stack's analytic
-upper-bound candidate (0.59353). The bridge-support stack already
-contains effectively the tightest analytic bound currently available
-on this framework's surface; CVXPY without Migdal-Makeenko adds no
-upper-bound information.
+upper-bound candidate (0.59353). More sharply, the all-ones feasible
+certificate proves that this encoded SDP surface cannot provide any
+nontrivial upper-bound information at all.
 
 ## 5. Sharper named obstruction (consolidated, after CVXPY infrastructure validation)
 
@@ -103,9 +142,11 @@ upper-bound information.
 [BOOTSTRAP-LOOP-EQUATION OBSTRUCTION (CONSOLIDATED, with industrial SDP)]:
   Even with industrial CVXPY SDP infrastructure now available (block 01,
   PR #433), the lattice ⟨P⟩(β=6) bracket from PSD + Hausdorff + framework-
-  specific positivity is essentially [mean-field LB, 1.0]. The upper bound
-  remains trivial without explicit Migdal-Makeenko loop equations, which
-  was already identified as the critical missing piece in PRs #420 + #423.
+  specific positivity is essentially [admitted mean-field LB, 1.0]. The
+  upper bound remains exactly trivial: an all-ones moment certificate is
+  feasible. Without explicit Migdal-Makeenko loop equations, which were
+  already identified as the critical missing piece in PRs #420 + #423,
+  this SDP surface cannot prove p1 < 1.
 
   Tightening to industrial precision (~10⁻²) requires:
     (a) explicit Migdal-Makeenko / Schwinger-Dyson loop equations on
@@ -125,29 +166,33 @@ upper-bound information.
 ## 6. Honest status
 
 ```yaml
-actual_current_surface_status: numerical bracket attempt + consolidated named-obstruction stretch
+actual_current_surface_status: bounded no-upper-bound obstruction certificate + named open gate
 target_claim_type: open_gate
 conditional_surface_status: bounded by missing Migdal-Makeenko derivation
 hypothetical_axiom_status: null
-admitted_observation_status: bridge-support mean-field lower bound (0.4225) admitted
+admitted_observation_status: bridge-support mean-field lower bound (0.4225) admitted as comparison/input only
 claim_type_reason: |
   CVXPY infrastructure validated in block 01 (PR #433); applied here to
-  the lattice problem with multi-Wilson-loop moment bootstrap. Honest
-  result is a wide bracket [0.4225, 1.0] with trivial upper bound. The
-  consolidated named obstruction (Migdal-Makeenko loop equations missing)
-  is sharper because we now know that even industrial SDP doesn't help
-  without them.
+  the lattice problem with multi-Wilson-loop moment bootstrap. The exact
+  all-ones feasible certificate proves the encoded SDP surface has
+  trivial upper optimum p1 = 1. The admitted lower bound 0.4225 is not
+  derived by the SDP. The consolidated named obstruction
+  (Migdal-Makeenko loop equations missing) is sharper because we now know
+  that even this industrial SDP surface cannot upper-bound the lattice
+  plaquette without those equations.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 proposal_allowed: false
 proposal_allowed_reason: |
-  Numerical bracket attempt with honest negative result (loose bracket).
-  The CONSOLIDATED named obstruction (loop equations are critical)
-  IS the value, but no closure is claimed.
+  Exact no-upper-bound obstruction plus an honest negative bracket result.
+  The CONSOLIDATED named obstruction (loop equations are critical) is the
+  value, but no physical plaquette-value closure is claimed.
 ```
 
 ## 7. What this note closes
 
+- Exact certificate that the encoded SDP surface admits `p1 = 1` and
+  therefore cannot upper-bound `⟨P⟩(β=6)` below the trivial support endpoint
 - First numerical CVXPY-based lattice bracket attempt on `⟨P⟩(β=6)` for
   this framework
 - Confirms that PSD + Hausdorff + framework-specific positivity alone do
@@ -160,7 +205,8 @@ proposal_allowed_reason: |
 ## 8. What this note does NOT close
 
 - The lattice `⟨P⟩(β=6)` value (famous open lattice problem)
-- A non-trivial upper bound on `⟨P⟩(β=6)` from the bootstrap
+- A non-trivial upper bound or retained lower bound on `⟨P⟩(β=6)` from the
+  bootstrap
 - Migdal-Makeenko derivation on framework surface
 - Industrial Kazakov-Zheng-precision (~10⁻²) brackets
 

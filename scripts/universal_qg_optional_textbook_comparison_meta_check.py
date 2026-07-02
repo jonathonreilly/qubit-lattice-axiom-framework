@@ -19,6 +19,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 NOTE_REL = Path("docs") / "UNIVERSAL_QG_OPTIONAL_TEXTBOOK_COMPARISON_NOTE.md"
 NOTE_PATH = REPO_ROOT / NOTE_REL
 RUNNER_REL = Path("scripts/universal_qg_optional_textbook_comparison_meta_check.py")
+CACHE_REL = Path("logs/runner-cache/universal_qg_optional_textbook_comparison_meta_check.txt")
 TARGET_NAME = NOTE_REL.name
 DOC_LINK_RE = re.compile(r"\[[^\]]+\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
@@ -94,11 +95,13 @@ def inbound_optional_contexts() -> tuple[bool, int, list[str]]:
 
 def main() -> int:
     body = read(NOTE_PATH)
+    normalized_body = " ".join(body.split())
     results: list[CheckResult] = []
 
     status = field(body, "Status")
     authority = field(body, "Authority role")
     primary_runner = field(body, "Primary runner")
+    runner_cache = field(body, "Runner cache")
 
     add(
         results,
@@ -134,6 +137,21 @@ def main() -> int:
         "A",
         str(RUNNER_REL) in primary_runner,
         primary_runner or "missing",
+    )
+    add(
+        results,
+        "Runner cache points to the cached replay transcript",
+        "A",
+        str(CACHE_REL) in runner_cache,
+        runner_cache or "missing",
+    )
+    add(
+        results,
+        "Audit-readiness metadata repair preserves zero-authority scope",
+        "A",
+        "does not change this row's zero-authority role" in normalized_body
+        and "does not assert an audit outcome" in normalized_body,
+        "source-side cache metadata is not a status promotion",
     )
     add(
         results,

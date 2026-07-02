@@ -2,6 +2,13 @@
 **Date:** 2026-04-01
 **Status:** RETRACTED 2026-04-30 — retracted aggregate session summary; audit failed; this note is archived under `archive_unlanded/session-summary-stale-aggregates-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. Future readers should consult the live audit ledger and live notes, not this aggregate. See `## Retraction` section.
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 ## Retraction
 
 - Date archived: 2026-04-30

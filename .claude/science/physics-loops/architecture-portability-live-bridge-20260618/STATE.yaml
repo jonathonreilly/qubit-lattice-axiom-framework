@@ -1,0 +1,14 @@
+loop: architecture-portability-live-bridge-20260618
+target_claim_id: work_history.repo.review_feedback.architecture_portability_audit_2026-04-11
+target_status: bounded-support re-audit bridge
+branch: codex/architecture-portability-live-bridge-20260618
+base: origin/main
+current_result: "Live architecture-portability sweep packaged as source-side re-audit target; archive remains failed."
+files_touched:
+  - archive_unlanded/work-history-unverifiable-portability-2026-04-30/ARCHITECTURE_PORTABILITY_AUDIT_2026-04-11.md
+  - docs/ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md
+  - docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md
+  - scripts/architecture_portability_live_reaudit_bridge_2026_06_18.py
+  - logs/runner-cache/architecture_portability_live_reaudit_bridge_2026_06_18.txt
+next_exact_action: "Open PR and hand to reviewer."
+stop_condition: "PR opened for this science block."

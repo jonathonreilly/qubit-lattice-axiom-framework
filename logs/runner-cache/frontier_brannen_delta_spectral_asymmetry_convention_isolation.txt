@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_brannen_delta_spectral_asymmetry_convention_isolation.py
-runner_sha256: 5e76b501464d6c7f681017d24b84d2bcd5389226a06a953777b85984efcf659d
+runner_sha256: add3677e8ca047b69b969ecfb558681a2b24a521a61560ac6d997851a2ab66be
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.74
@@ -23,10 +23,10 @@ B. Empirical Brannen delta (PDG) = bare 2/9 in radians
 ========================================================================
 C. The gap is EXACTLY one factor of pi (period-1-rad vs 2pi-rad convention)
 ========================================================================
-[PASS] Plancherel-step angle alpha_3 = (2/9)*pi = 0.698 rad (NOT the empirical 0.2222) -- alpha_3 = 0.698132
-[PASS] eta-holonomy angle 2pi*(2/9) = 1.396 rad (NOT the empirical 0.2222) -- 2pi*(2/9) = 1.396263
-[PASS] the gap is EXACTLY one factor of pi: alpha_3 = pi * delta_empirical -- alpha_3/delta_bare = 3.141593 = pi
-[PASS] => reaching bare 0.2222 rad requires a period-normalization choice
+[PASS] Plancherel-step angle alpha_3 = (2/9)*pi = 0.698 rad (NOT the bare 2/9 = 0.2222) -- alpha_3 = 0.698132
+[PASS] eta-holonomy angle 2pi*(2/9) = 1.396 rad (NOT the bare 2/9 = 0.2222) -- 2pi*(2/9) = 1.396263
+[PASS] the gap is EXACTLY one factor of pi: alpha_3 = pi * (bare 2/9) -- alpha_3/(bare 2/9) = 3.141593 = pi
+[PASS] => reaching bare 2/9 = 0.2222 rad requires a period-normalization choice
 
 ========================================================================
 D. eta-as-phase FALSIFIED: delta is NOT the APS-eta holonomy

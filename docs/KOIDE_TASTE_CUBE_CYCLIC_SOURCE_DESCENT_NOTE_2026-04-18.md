@@ -1,6 +1,6 @@
 # Koide Taste-Cube Cyclic-Source Descent Note
 
-**Date:** 2026-04-18  
+**Date:** 2026-04-18 (source-edge string repair 2026-06-17)
 **Type:** bounded_theorem (axiom-reset retag 2026-05-03; was positive_theorem)
 **Source boundary:** exact finite `C^8` taste-cube descent theorem. The
 physical charged-lepton carrier/readout interpretation is a downstream bridge,
@@ -297,16 +297,16 @@ Grassmann CAR statistics, or the physical readout bridge from the taste-cube
 three-plane to observed charged leptons. Those are downstream consumer gates.
 
 Plain-text non-load-bearing context pointer: the broad realization-gate parent
-is `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`. It may consume this
-structural descent theorem, but it is not a proof input for this theorem.
+may consume this structural descent theorem, but it is not a proof input for
+this theorem and is not named here by source path or claim id.
 
 The substantive science content is unchanged: exact full-cube averaging and
 Schur-compatible charged-sector reduction factor through the same three cyclic
-responses. What changes is only the dependency boundary: this row asks audit
-to judge the finite descent theorem directly, not the whole physical
+responses. What changes is only the dependency boundary: this row asks the
+independent audit lane to judge the finite descent theorem directly, not the whole physical
 realization gate.
 
-## Audit dependency repair links
+## Dependency repair links
 
 No load-bearing broad-gate dependency is recorded here. The prior
 staggered-realization parent link has been removed because the finite descent

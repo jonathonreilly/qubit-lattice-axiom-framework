@@ -4,6 +4,8 @@
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / project-native geometric-action
 capstone
+**Script:** `scripts/frontier_universal_qg_canonical_smooth_geometric_action.py`
+(source-side verifier; PASS=6 FAIL=0 on current source)
 
 ## Verdict
 

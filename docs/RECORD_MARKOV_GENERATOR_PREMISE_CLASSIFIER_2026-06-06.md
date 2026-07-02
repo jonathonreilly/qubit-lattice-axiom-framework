@@ -7,6 +7,20 @@ boundary
 **Cached output:** [`logs/runner-cache/frontier_record_markov_generator_premise_classifier_2026_06_06.txt`](../logs/runner-cache/frontier_record_markov_generator_premise_classifier_2026_06_06.txt)
 (`SCORECARD: PASS=22 FAIL=0`)
 
+## Source boundary (2026-06-12)
+
+**Boundary:** premise taxonomy / finite example support. Effective status is
+audit-derived; this source records only the claim boundary.
+
+The runner computes the displayed two-state stochasticity, generator, and
+embedding checks, but the classifier levels and gates are introduced as a
+premise map rather than derived from cited retained inputs or first-principles
+framework dynamics.
+
+This note may be cited for Markov-generator premise discipline and for the
+checked finite examples. It may not be cited as a retained derivation of a
+production kernel, clock, rate unit, Born/IID bridge, or physical dynamics law.
+
 ```yaml
 actual_current_surface_status: exact-support
 trace_class: direct_blocker_closure

@@ -20,10 +20,11 @@ chain has three independently-cited links:
         -- Source:
         LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md
 
-  (L3)  ABSOLUTE NORMALIZATION (admitted SM convention). Setting alpha = 1/3
+  (L3)  ABSOLUTE NORMALIZATION (bounded bridge or admitted convention). Setting alpha = 1/3
         in Y_alpha = alpha (P_sym - 3 P_anti) reproduces the SM convention
-        Y(L_L) = -1. This is *not* derived in the framework -- it is the
-        still-open LHCM repair item (2).
+        Y(L_L) = -1. This is *not* derived internally in this parent note:
+        it is supplied by the bounded 2026-05-25 normalization bridge if
+        independently retained, and otherwise remains an admitted convention.
 
 This runner reports each numerical block with one of four labels:
 
@@ -31,8 +32,9 @@ This runner reports each numerical block with one of four labels:
                     matches link (L1) of the chain;
    [CHAIN-L2]     = matter-assignment labels imported from LHCM matter
                     assignment note;
-   [CHAIN-L3]     = uses the admitted SM convention alpha = 1/3
-                    (or Q = T_3 + Y/2);
+   [CHAIN-L3]     = uses the upstream normalization bridge if retained,
+                    otherwise the admitted SM convention alpha = 1/3
+                    (and the admitted Q = T_3 + Y/2 readout);
    [CONSISTENCY]  = downstream consistency check under the chain
                     (informational only; not load-bearing).
 
@@ -47,10 +49,50 @@ Depends on: frontier-su3-commutant, frontier-lh-doublet-traceless-abelian-ratio,
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 from numpy.linalg import matrix_rank
 
 np.set_printoptions(precision=6, suppress=True, linewidth=100)
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = REPO_ROOT / "docs" / "HYPERCHARGE_IDENTIFICATION_NOTE.md"
+
+
+def check_source_boundary() -> tuple[int, int]:
+    """Fail closed if the source note drifts back into an unbounded claim."""
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    required = [
+        "**Status:** bounded/conditional chain assembly.",
+        "**Status authority:** independent audit lane only.",
+        "**Primary runner:** `scripts/frontier_hypercharge_identification.py`",
+        "**Runner cache:** `logs/runner-cache/frontier_hypercharge_identification.txt`",
+        "**Source-side boundary firewall (2026-06-17).**",
+        "This note does **not** claim to:",
+        "derive the (Sym², Anti²) ↔ (triplet, singlet) assignment internally",
+        "derive the absolute normalization `a = 1/3` internally",
+        "Bounded source scope (what the runner numerically verifies",
+        "not retag the ledger and does not assert an audit verdict",
+    ]
+    forbidden = [
+        "**Status:** proposed chain claim",
+        "**Status:** proposed " + "retained",
+        "**Status:** proposed-" + "retained",
+    ]
+    missing = [snippet for snippet in required if snippet not in note]
+    present_forbidden = [snippet for snippet in forbidden if snippet in note]
+    if missing or present_forbidden:
+        lines = []
+        if missing:
+            lines.append("missing boundary markers: " + ", ".join(missing))
+        if present_forbidden:
+            lines.append("forbidden stale markers: " + ", ".join(present_forbidden))
+        raise AssertionError("; ".join(lines))
+    return len(required), len(forbidden)
+
+
+BOUNDARY_REQUIRED, BOUNDARY_FORBIDDEN = check_source_boundary()
 
 # ============================================================================
 # Setup: reproduce the commutant construction from frontier_su3_commutant.py
@@ -111,6 +153,12 @@ print("=" * 72)
 print("HYPERCHARGE U(1)_Y IDENTIFICATION (CHAIN VERIFICATION)")
 print("=" * 72)
 print()
+print(
+    "Source boundary firewall: "
+    f"{BOUNDARY_REQUIRED} required markers present; "
+    f"{BOUNDARY_FORBIDDEN} stale-promotion markers absent"
+)
+print()
 print("Setup: C^8 = (C^2)^{x3}, SU(2)_weak on factor 1, SWAP_{23} on factors 2,3")
 print("Commutant of {SU(2), SWAP_{23}} = gl(3,C) + gl(1,C)  [upstream]")
 print()
@@ -121,7 +169,8 @@ print("                        EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02")
 print("  (L2) [CHAIN-L2]    Sym^2 -> SU(3) fundamental, Anti^2 -> SU(3) singlet")
 print("                     -- supplied by LHCM_MATTER_ASSIGNMENT_FROM_SU3_")
 print("                        REPRESENTATION_NOTE_2026-05-02")
-print("  (L3) [CHAIN-L3]    alpha = 1/3 (admitted SM convention, LHCM repair (2))")
+print("  (L3) [CHAIN-L3]    alpha = 1/3 (bounded bridge if retained;")
+print("                     otherwise admitted SM convention)")
 print()
 
 # ============================================================================
@@ -714,7 +763,8 @@ print("  Result: Y_(Sym^2) : Y_(Anti^2) = 1 : (-3)        [STRUCTURAL, alpha-fre
 print()
 print("  Under chain L2 (LHCM matter assignment): Sym^2 sector = Q_L (color")
 print("  triplet), Anti^2 sector = L_L (color singlet).")
-print("  Under chain L3 (admitted SM convention): alpha = 1/3.")
+print("  Under chain L3 (normalization bridge if retained; otherwise admitted")
+print("  SM convention): alpha = 1/3.")
 print("  Combined: Y(Q_L) = +1/3, Y(L_L) = -1.   [CHAIN-L2 + CHAIN-L3]")
 print()
 
@@ -797,8 +847,9 @@ print()
 print("  WHAT IS NOT CLAIMED:")
 print("    * Internal derivation of (Sym^2 = SU(3)-fundamental) -- chained")
 print("      to LHCM matter-assignment note (its own audit row)")
-print("    * Derivation of alpha = 1/3 from framework -- still-open LHCM")
-print("      repair item (2); admitted as SM convention here")
+print("    * Internal derivation of alpha = 1/3 in this parent -- chained to")
+print("      the bounded normalization bridge if retained, otherwise admitted")
+print("      as an SM convention here")
 print("    * Internal SM-Y identification step; the rewrite removes it from")
 print("      the load-bearing chain and routes matter assignment through L2")
 print()

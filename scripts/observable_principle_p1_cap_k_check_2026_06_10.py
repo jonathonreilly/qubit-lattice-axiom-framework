@@ -7,14 +7,14 @@ Mission (wave 3 of the P1 exponent campaign): the (BR)-license note
 claude/science-fix/p1-br-license-record-capacity-20260610) reduced the open
 P1 exponent premise to
 
-    (CAP-real) + (CAP-K),    with (CAP-M) covered at M = 1 by the retained
-                             unit-record normalization,
+    (CAP-real) + (CAP-K),    with (CAP-M) covered at M = 1 only inside the
+                             conditional supplied-record unit schema,
 
 via its Lemma C: (CAP-real)+(CAP-M)+(CAP-K) => sup_z |W(ez) - W(z)| <= K*M
 => (BR-int) => the pass set on the normalized exponent family {s*g_p} is
 exactly {p = 0} (log selected). It also proved (CAP-K) has ZERO retained
-*static* suppliers: the finite-sector algebra is cap-free, the retained
-unbounded-additivity schema affirmatively licenses 4^k unit records per
+*static* suppliers: the finite-sector algebra is cap-free, the conditional
+unbounded-additivity schema permits 4^k unit records per
 e-fold, the Busch/Gleason effect rows are magnitude-shaped and
 readout-blind, and bare register growth (2n+1)^3 defeats static rate
 inference. Every kill was static (algebraic capacity of the register
@@ -22,14 +22,14 @@ inventory); none consumed dynamics.
 
 This runner verifies the dynamical route: REGISTERING a record is a
 physical process on the lattice. Within the declared finite-speed
-registration realization class (REG-dyn: records established by the
-retained finite-range hopping dynamics of the microcausality bridge note's
-unconditional (F4) leg, with the e-fold source coupling V supported in a
+registration realization class (REG-dyn: records established by the linked
+finite-range hopping dynamics of the microcausality bridge note's
+bounded surface, with the e-fold source coupling V supported in a
 bounded region X; REG-tau: at most a supplied clock window tau per e-fold;
 REG-thr: a register registers only if delta-sensitive in operator norm to
 the source change; REG-site: pairwise-disjoint records occupy disjoint
 nonempty register-site sets — all four DECLARED, none asserted as
-framework-forced), the retained Lieb-Robinson data (q = 2, R = 1,
+framework-forced), the linked Lieb-Robinson data (q = 2, R = 1,
 W = |m| + 2d, v_LR = 2*e*q*W*R = 4e(|m| + 2d)) bound the sensitivity cone:
 
     Duhamel:  ||alpha^{H+V}_t(B_y) - alpha^H_t(B_y)||
@@ -295,7 +295,7 @@ int_bound = float(np.trapezoid([opnorm(V4 @ heis(ed4, B4, s_val) - heis(ed4, B4,
 check("A", "integrated-commutator bound: ||alpha^{H+V}_t(B) - alpha^H_t(B)|| <= int_0^t ||[V, alpha^H_u(B)]|| du on the same instance", opnorm(lhs) <= int_bound * (1 + 1e-9), f"lhs={opnorm(lhs):.4e} <= int={int_bound:.4e}")
 
 # ===========================================================================
-print("== T3: the registration cone on the chain — retained (F4) LR data, measured vs bound ==")
+print("== T3: the registration cone on the chain — linked finite-range LR data, measured vs bound ==")
 
 L10, m1 = 10, 0.0
 W1 = abs(m1) + 2 * 1  # bridge note (F4): W = |m| + 2d, d = 1
@@ -416,7 +416,7 @@ for t in [0.05, 0.1]:
 check("D", "one long-range bond (0 <-> 5) breaks the finite-range sensitivity bound at D = 5 by a factor > 100 (t = 0.05 and 0.1): without finite-range dynamics the registration cone (and hence the cap) does not exist", min(viol.values()) > 100, f"violations x{viol[0.05]:.0f}, x{viol[0.1]:.0f}")
 
 Dstar_vinf = sp.limit(Dstar_expr.subs({tau_s: 1, JV_s: 1, delta_s: sp.Rational(1, 10)}), vv, sp.oo)
-check("A", "symbolic comparator: lim_{v_LR -> oo} D* = oo (sympy limit) — an unbounded-speed process reaches every register in any window and (CAP-K) has no finite value; the retained v_LR < oo is the load-bearing physics", Dstar_vinf == sp.oo)
+check("A", "symbolic comparator: lim_{v_LR -> oo} D* = oo (sympy limit) — an unbounded-speed process reaches every register in any window and (CAP-K) has no finite value; finite v_LR < oo is the load-bearing physics", Dstar_vinf == sp.oo)
 
 # ===========================================================================
 print("== T9: quasilocal extension — landed exact-H numbers reused at their grade ==")

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py
+runner_sha256: a633888c4a6568f02154b9722c3cfbf4ddcf011ebf70a6b94ff37355ab57c4f9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Hierarchy EW order-parameter D=4 density readout bridge
+==============================================================================
+
+Section 1: neutral one-Higgs order-parameter coordinate
+  [PASS] neutral Higgs norm gives q = 2 H^dagger H = v^2
+         q=9/4, v^2=9/4
+  [PASS] positive quartic density is exactly rho = A v^4
+         rho=567/176, A v^4=567/176
+  [PASS] positive fourth-root coordinate is unique on v > 0
+         rho/A=81/16, v^4=81/16
+
+Section 2: endpoint coefficient ratio
+  [PASS] endpoint coefficient ratio A_ref/A_L is 7/8
+         A_ref/A_L=7/8
+  [PASS] fixed density forces (v_L/v_ref)^4 = A_ref/A_L
+         same rho_* = A_ref v_ref^4 = A_L v_L^4
+  [PASS] direct placement A_L/A_ref is the wrong fixed-density direction
+         wrong=8/7, correct=7/8
+  [PASS] D=4 fourth-root readout is distinct from D=16 readout
+         D4=0.967168210134, D16=0.991689016736, separation=0.024726
+
+Section 3: retained EW gauge-mass dictionary compatibility
+  [PASS] EW tree rho relation stays one for the neutral order parameter
+         rho_tree=1
+  [PASS] fixed-gauge-coupling mass ratios follow the same v ratio
+         (M_W,L/M_W,ref)^4 = (v_L/v_ref)^4 = A_ref/A_L
+
+Section 4: source firewalls
+  [PASS] new bridge carries bounded-support status fields and no retained claim
+  [PASS] new bridge markdown-links load-bearing EW and D4 readout authorities
+  [PASS] new bridge explicitly leaves endpoint selection and absolute scale open
+  [PASS] parent note cites the new bridge while preserving the residual
+
+==============================================================================
+TOTAL: PASS=13 FAIL=0
+VERDICT: bounded support passes for the EW order-parameter D=4 density readout bridge. Endpoint selection, absolute scale, and hierarchy-to-physical-Higgs-density identification remain open.
+
+----- stderr -----
+

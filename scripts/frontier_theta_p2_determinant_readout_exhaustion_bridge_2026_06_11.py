@@ -58,6 +58,11 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE = ROOT / "docs" / "THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md"
+MASS_SIDE_NOTE = (
+    ROOT
+    / "docs"
+    / "THETA_MASS_SIDE_EPSILON_HERMITICITY_REALITY_BRIDGE_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-06-11.md"
+)
 
 PASS = 0
 FAIL = 0
@@ -97,7 +102,10 @@ def main() -> int:
     section("B0 - source-boundary guards: W2/action-level premises quarantined")
 
     note_text = NOTE.read_text(encoding="utf-8")
+    mass_side_text = MASS_SIDE_NOTE.read_text(encoding="utf-8")
     note_flat = " ".join(note_text.split())
+    mass_side_flat = " ".join(mass_side_text.split())
+    note_guard = note_flat.replace("*", "").replace("`", "")
     check(
         "source note is supplied-boundary, not physical bridge closure",
         "Supplied-Boundary Repair" in note_text
@@ -110,9 +118,9 @@ def main() -> int:
         and "W2 is not derived, promoted, or smuggled by this note" in note_flat,
     )
     check(
-        "action-level determinant datum is supplied, not derived",
-        "The action-level determinant datum is supplied, not derived" in note_text
-        and "it does not prove that no physical datum outside the class can appear" in note_flat,
+        "full action-level determinant datum is not globally derived here",
+        "The full action-level determinant datum is not globally derived here" in note_text
+        and "this note still does not prove W2, K-reality, the orientation-bit choice" in note_text,
     )
     check(
         "physical/non-registrable/multi-plaquette exclusions remain non-claims",
@@ -120,8 +128,52 @@ def main() -> int:
         and "any multi-plaquette, source-insertion, or non-registrable readout exclusion" in note_text,
     )
     check(
+        "source note is scoped as supplied-context algebra only",
+        "**Claim type:** bounded_theorem" in note_text
+        and "**Type:** bounded_theorem" in note_text
+        and "conditional-support; supplied-context algebra only" in note_flat
+        and "not a physical theta_eff or action-level readout bridge" in note_flat
+        and "Downstream physical strong-CP use must carry a separate W2/action-level theorem" in note_flat,
+    )
+    check(
+        "2026-06-20 conditional-scoping repair names BOTH supplied premises (i) W2 and (ii) theta_eff entry",
+        "2026-06-20 Source Repair: Downstream Conditional Scope" in note_text
+        and "(i) W2 physical-registrability" in note_flat
+        and "(ii) action-level `theta_eff` determinant-entry" in note_text
+        and "Supplied here for the conditional theorem, not derived. Open bridge." in note_flat,
+    )
+    check(
+        "2026-06-20 repair keeps downstream strong-CP use explicitly conditional on (i) and (ii)",
+        "Downstream strong-CP use is explicitly conditional" in note_text
+        and "must additionally carry, or itself remain conditional on, premises (i)\nand (ii)".replace("\n", " ") in note_flat,
+    )
+    check(
+        "2026-06-20 repair does NOT derive the two supplied premises",
+        "does **not** derive the W2 physical-registrability theorem" in note_flat
+        and "action-level `theta_eff` determinant-entry theorem" in note_flat,
+    )
+    check(
         "source note expected scorecard matches runner count",
-        "TOTAL: PASS=40 FAIL=0" in note_text,
+        "TOTAL: PASS=47 FAIL=0" in note_text,
+    )
+    check(
+        "2026-06-18 wiring cites the mass-side epsilon-Hermiticity bridge as a source-edge",
+        MASS_SIDE_NOTE.name in note_text
+        and "mass-side source-edge wiring" in note_flat
+        and "source-edge for the bilinear matter half" in note_flat,
+    )
+    check(
+        "mass-side source-edge supplies first-power Berezin + epsilon-Hermiticity mechanisms",
+        "first-power Berezin" in mass_side_flat
+        and "Hermiticity Discharges the Determinant-Readout Bridge" in mass_side_text
+        and "det(D(U)+A)" in mass_side_text
+        and "K-reality premise" in mass_side_flat,
+    )
+    check(
+        "mass-side source-edge is not imported as audit status and keeps K-reality/orientation/gauge residuals live",
+        "not used here as an audit verdict or retained authority" in note_guard
+        and "orientation bit is not erased" in note_flat
+        and "gauge-side bare-`theta` / multi-plaquette residual is untouched" in note_text,
     )
 
     # ------------------------------------------------------------------
@@ -469,7 +521,7 @@ def main() -> int:
     )
     check(
         "BOUNDARY: per-plaquette class is a licensed input (retained_bounded); multi-plaquette/clover reopens a cross-plane slot",
-        "the action-level determinant datum is supplied, not derived" in note_plain
+        "the full action-level determinant datum is not globally derived here" in note_plain
         and "multi-plaquette" in note_plain,
         detail="the action-level half is conditional on the supplied class",
     )

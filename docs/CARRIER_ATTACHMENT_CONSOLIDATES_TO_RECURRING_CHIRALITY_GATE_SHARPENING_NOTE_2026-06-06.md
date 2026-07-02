@@ -1,24 +1,35 @@
-# The Half-Integer Matter-Field Carrier Residual Consolidates into the Recurring Chirality Gate (No-Go Sharpening)
+# The Half-Integer Matter-Field Carrier Escape Fails; Chirality Consolidation Is Boundary-Only
 
 **Date:** 2026-06-06
-**Claim type:** no_go (sharpening; refutes the spinor-module escape and consolidates the
-half-integer state-law carrier residual into the chirality gate)
+**Claim type:** no_go (sharpening; refutes the spinor-module escape and
+scopes the chirality-consolidation language to a source-boundary warning)
 **Status authority:** independent audit lane only. This source note does not set
 or predict an audit outcome.
 **Primary runner:** [`scripts/carrier_attachment_chirality_gate_consolidation_runner.py`](../scripts/carrier_attachment_chirality_gate_consolidation_runner.py)
 **Cached output:** [`logs/runner-cache/carrier_attachment_chirality_gate_consolidation_runner.txt`](../logs/runner-cache/carrier_attachment_chirality_gate_consolidation_runner.txt)
+
+**Claim scope (2026-06-18 repair):** The auditable source claim is the finite
+rotation-level no-go: operator-frame/Clifford data do not force the per-site
+`C^2` matter-state `j=1/2` law, and a spin-blind scalar kernel remains
+compatible with the trivial scalar lift. The staggered/Kawamoto-Smit
+`{epsilon,D}=0` route is identified only as the separate live route needed to
+exclude that scalar lift. This row does not prove the KS/Grassmann
+physical-state-law bridge, does not discharge the chirality import, and does
+not identify the Dirac/staggered chirality gate with the Koide/generation
+`r=1/2` gate.
 
 ## Audit context
 
 After the carrier admission's signature/time residual is discharged and the massive-doubling core
 has a structural/causal route, the live residual is the half-integer matter-field state-law carrier:
 [`KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT`](KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md)
-(`unaudited`): *the per-site C² qubit STATE carries the j=½ spinor rep of the PHYSICAL spatial
+(`retained_bounded`): *the per-site C² qubit STATE carries the j=½ spinor rep of the PHYSICAL spatial
 rotation as its transformation law* (vs the trivial scalar). A 13-agent find-the-escape panel
 attacked the candidate escape *"the qubit's `Cl(3,0)→Cl(3,1)` IS the emergent spacetime Clifford, so
 the spinor module supplies the j=½ state law by construction."* This note banks the verdict: the
-escape is **refuted**, and the half-integer state-law carrier residual **consolidates** into the
-framework's recurring chirality import.
+escape is **refuted**. The older consolidation language is retained only as a
+boundary statement: the remaining positive route is the separate
+staggered/Kawamoto-Smit chirality route, not a closed theorem inside this row.
 
 ## Safe statement
 
@@ -33,37 +44,47 @@ constraint and yields **identical measured numbers** (passive = active). So the 
 blind to `S(2π)=−1`. (The retained primary
 [`CL3_TO_CL31_SPINOR_EXTENSION`](CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md) §8
 confirms the `Cl(3,1)=M₄(ℝ)` action lives on the abstract algebra, **not** the per-site C² module —
-so the e₄ extension never transports a state law onto the qubit.) The standing reduction to the
-unaudited Kawamoto-Smit **stands**.
+so the e₄ extension never transports a state law onto the qubit.) The state-law residual therefore
+still lives on the separate Kawamoto-Smit/physical-state-law route.
 
-**Part 2 — the consolidation (the genuinely-new content).** Via the kernel-covariance route, the
-spin-blind scalar mass-shell kernel `H·I₂` **commutes** with `σ_i`, so the trivial scalar attachment
-is kernel-compatible; the **only** kernel excluding the scalar is the **spinful `σ·p`** (non-central,
-co-rotating). That spinful kernel emerges (Kähler-Dirac spin-diagonalization,
-[`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC`](STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md),
-`retained_bounded`) from the staggered Dirac operator `D`, whose chiral structure **`{ε, D}=0`**
-(`ε(x)=(−1)^{x+y+z}`, verified on a `Z³` torus) **is the framework's single recurring chirality
-import** — the same `{ε,D}=0` gate as **generation-identification** and **r=½'s chirality pin**
-(the standing `koide_z3_equivariant_anticommuting_no_go`, `retained_bounded`).
+**Part 2 — the kernel route is a boundary, not a closed consolidation.** Via the
+kernel-covariance route, the spin-blind scalar mass-shell kernel `H·I₂`
+**commutes** with `σ_i`, so the trivial scalar attachment is
+kernel-compatible; the **only** displayed kernel excluding the scalar is the
+**spinful `σ·p`** (non-central, co-rotating). The staggered/Kawamoto-Smit
+route supplies the live place where such a spinful selector can enter:
+Kähler-Dirac spin-diagonalization
+([`STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC`](STAGGERED_DIRAC_SUBSTEP2_KAHLER_DIRAC_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-17.md),
+`retained_bounded`) and the Kawamoto-Smit phase surface
+([`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md),
+`retained_bounded`) carry a staggered Dirac operator `D` with chiral structure
+**`{ε, D}=0`** (`ε(x)=(−1)^{x+y+z}`, verified on a `Z³` torus). But those
+sources are bounded local/route authorities; they do not by themselves close
+the physical matter-state-law bridge, the Grassmann/statistics residual, or a
+generation/r=1/2 selector.
 
-**So the half-integer state-law carrier residual is not a new independent carrier admission.** It
-collapses onto the chirality gate the flavor sector already carries — it is not a separate carrier
-cost.
+**So the half-integer state-law carrier residual remains exactly the named
+KS/physical-state-law route residual.** This row refutes the spinor-module
+escape and locates the required positive selector; it does not prove that the
+selector is already paid, and it is not the Koide/generation `r=1/2` gate.
 
 ## What this means for the carrier admission
 
-After this session, the staggered-Dirac carrier admission reduces to:
+After this repair, the staggered-Dirac carrier admission is scoped as:
 
 - **signature/time** — discharged (time axis / arrow / (3,1) signature);
 - **massive doubling** — structural+causal core delivered (the emergent time realizes the e₄
   doubling); positive-energy via R + rung C;
-- **half-integer state-law carrier + chirality + r=½ carrier gate** — **one and the same `{ε,D}=0` chirality gate**
-  (r=½ remains a *dial setting*, never forced — the chirality gate fixes the **carrier**, not the
-  value).
+- **half-integer state-law carrier** — not supplied by the operator-frame or by
+  the `Cl(3,0)→Cl(3,1)` extension; the live route is the separate
+  Kawamoto-Smit/physical-state-law bridge;
+- **Dirac/staggered `{ε,D}=0` chirality** — a bounded local chirality surface
+  on the staggered route, not the Koide/generation `r=1/2` selector.
 
-So the framework's flavor + carrier sector reduces to a **single** recurring chirality import (the
-`{ε,D}=0` staggered chiral gate), plus the positive-energy R/rung-C dependency — not a scatter of
-independent pins.
+The source-side conclusion is therefore a clean no-go plus a route boundary:
+operator-frame data cannot remove the state-law residual, and the spinful
+selector must be supplied on the staggered/Kawamoto-Smit route before any
+downstream carrier-cost consolidation is load-bearing.
 
 ## No-go gate (N1–N8)
 
@@ -74,8 +95,8 @@ independent pins.
   algebra, not the site module. (3) **ATTEMPTED:** use the operator-frame covariance constraints
   alone; the trivial scalar lift satisfies them with identical measured numbers. (4) **ATTEMPTED:**
   use kernel covariance; the scalar kernel is compatible, and only a spinful `σ·p` kernel excludes
-  it. (5) **OPEN:** force that spinful kernel from the staggered/Kawamoto-Smit route; that is the
-  recurring chirality gate, not a separate carrier pin, and remains the live audit target.
+  it. (5) **OPEN:** force that spinful kernel from the staggered/Kawamoto-Smit route and bridge it
+  to the physical matter-state law.
 - **N2 (wall-independence).** The `Spin→SO` cover blindness, trivial-lift compatibility, and
   spinful-kernel/chirality requirement are independent: closing the kernel route does not make
   operator-frame conjugation faithful, and faithful operator-frame data would not derive the
@@ -87,12 +108,15 @@ independent pins.
   `KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT`: the unresolved object is the state-law carrier,
   not the already-retained operator-frame merger. It also matches the boost-action faith no-go's
   residual: algebra action does not force state-module faithfulness.
-- **N5 (rhetoric).** The claim is scoped to the spinor-module escape and the carrier-cost
-  consolidation. It does not say the half-integer state law is forced, does not close the
-  Kawamoto-Smit route, and does not force the Koide `r=1/2` dial value.
-- **N6 (partial-closure).** The partial closure is precisely the consolidation: the carrier residual
-  reduces to the existing `{ε,D}=0` chirality gate rather than a new independent admission. This is
-  not a new axiom, primitive, or automatic retained status.
+- **N5 (rhetoric).** The claim is scoped to the spinor-module escape and the
+  source-boundary location of the live staggered route. It does not say the
+  half-integer state law is forced, does not close the Kawamoto-Smit route,
+  and does not force or identify the Koide `r=1/2` dial value.
+- **N6 (partial-closure).** The partial closure is the finite no-go:
+  operator-frame data and the `Cl(3,1)` extension do not supply the state law,
+  while scalar-kernel covariance leaves the scalar lift alive. Any
+  consolidation beyond that requires a separate retained KS/physical-state-law
+  bridge.
 - **N7 (steelman).** The strongest objection is that the qubit is already a spinor module, so the
   physical state law should be inherited. The reply is that this grants only an abstract module
   label; the physically tested rotation law still has a faithful-vs-trivial choice, and the trivial
@@ -103,13 +127,16 @@ independent pins.
 
 ## Boundary (honest)
 
-- A **negative/consolidation** result: it refutes the escape and consolidates the carrier residual into the chirality
-  gate; it does **not** force the state law or discharge the chirality import.
-- The single highest-leverage next object (named, not done here): **audit the unaudited
-  `staggered_dirac_kawamoto_smit_forcing` + upstream `grassmann_forcing` to a retained tier** — if
-  they pass, that route forces the state-law carrier modulo the merger + KS bounded tiers; the open sub-question is whether
-  the corner/`(Z₂)³`-taste reconstruction delivers the clean fundamental j=½ or a twisted Dirac-Kähler law.
-- r=½ is untouched (a dial setting, never forced); the chirality gate fixes the carrier, not the value.
+- A **negative/source-boundary** result: it refutes the spinor-module escape
+  and shows why a spinful staggered selector is still required; it does
+  **not** force the state law or discharge the chirality import.
+- The single highest-leverage next object (named, not done here): supply a
+  retained KS/Grassmann-to-physical-matter-state-law bridge. The current
+  Kawamoto-Smit and Grassmann rows are retained-bounded route authorities, not
+  this row's proof that a physical matter-state law has been selected.
+- `CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08`
+  is retained-bounded and blocks the old wording that `{ε,D}=0` is the same
+  gate as Koide/generation chirality or `r=1/2`. The latter remains untouched.
 
 ## Forbidden imports check
 
@@ -121,7 +148,8 @@ finite-dimensional. The boost-no-go analogy is to an existing `retained_no_go`.
 
 Class A: (1) operator-frame conjugation blind to the SU(2) cover; (2) trivial scalar lift satisfies
 all operator-frame constraints + identical measured numbers; (3) only the spinful `σ·p` excludes the
-scalar; (4) the spinful selector = the chiral staggered `D` (`{ε,D}=0`); (5) the consolidation.
+scalar; (4) the displayed staggered `D` has `{ε,D}=0`; (5) the source-boundary guardrails forbid
+reading this row as closed KS/Grassmann physical-state-law or Koide/generation `r=1/2` consolidation.
 Expected `runner_check_breakdown = {A: 5, B: 0, C: 0, D: 0, total_pass: 5}`.
 
 ## Honest auditor read
@@ -130,14 +158,19 @@ The operator-frame conjugation is the adjoint `SO(3)` (blind to the `SU(2)` cove
 the state `U(2π)=−I`), and the trivial scalar lift `V(R)=I₂` satisfies every operator-frame constraint
 with identical measured numbers — so the j=½ state law is a separate datum and the spinor-module
 escape is refuted (the rotation twin of the retained boost no-go). The spin-blind scalar kernel admits
-the scalar; the only kernel excluding it is the spinful `σ·p`, which is the chiral staggered `D`
-(`{ε,D}=0`, verified) — the framework's recurring chirality import. So the carrier residual consolidates into that
-single gate rather than adding a new carrier pin. The note is honest that this is a negative
-consolidation (not a forcing of the state law), names the KS-audit as the next object, and leaves r=½
-untouched. Effective status remains `unaudited`.
+the scalar; a spinful `σ·p`/staggered route is the next required selector, but this row does not
+derive the KS/Grassmann physical-state-law bridge and does not identify the Dirac/staggered chirality
+gate with Koide/generation chirality or `r=1/2`. Effective status is audit-owned.
 
 ## Runner
 
 ```bash
 PYTHONPATH=scripts python3 scripts/carrier_attachment_chirality_gate_consolidation_runner.py
 ```
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)
+- [staggered_dirac_grassmann_forcing_theorem_note_2026-05-07](STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md)

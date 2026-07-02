@@ -461,6 +461,11 @@ def main() -> int:
             and ".claude" not in text
             and "tmp/refs" not in text,
         )
+        check(
+            "note displays the corrected theta^2 secondary scale",
+            "theta^2 = 0.069561876543177" in text
+            and "0.0695618585" not in text,
+        )
     else:
         check("note exists for this runner", False, f"missing {NOTE_PATH}")
     print(

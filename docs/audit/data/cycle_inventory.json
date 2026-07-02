@@ -1,7 +1,357 @@
 {
-  "cycle_count": 0,
-  "cycles": [],
-  "length_counts": {},
+  "cycle_count": 9,
+  "cycles": [
+    {
+      "cycle_id": "cycle-0001",
+      "decision": null,
+      "edges": [
+        {
+          "from": "quark_cp_carrier_completion_note_2026-04-18",
+          "to": "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17"
+        },
+        {
+          "from": "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17",
+          "to": "quark_cp_carrier_completion_note_2026-04-18"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 372,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "quark_cp_carrier_completion_note_2026-04-18",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md",
+          "title": "Quark CP-Carrier Completion on the Live Mass-Ratio Lane",
+          "transitive_descendants": 372
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md",
+          "title": "Quark CP Carrier Slot Minimality Theorem",
+          "transitive_descendants": 372
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0002",
+      "decision": null,
+      "edges": [
+        {
+          "from": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+          "to": "bridge_gap_hk_cube_perron_note_2026-05-06"
+        },
+        {
+          "from": "bridge_gap_hk_cube_perron_note_2026-05-06",
+          "to": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 273,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 Heat-Kernel Thermodynamic \u27e8P\u27e9(6) Stretch Attempt (Block 03)",
+          "transitive_descendants": 273
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_hk_cube_perron_note_2026-05-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 HK Cube Perron L_s=2 (Block 06)",
+          "transitive_descendants": 273
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0003",
+      "decision": null,
+      "edges": [
+        {
+          "from": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
+          "to": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06"
+        },
+        {
+          "from": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+          "to": "bridge_gap_hk_cube_perron_note_2026-05-06"
+        },
+        {
+          "from": "bridge_gap_hk_cube_perron_note_2026-05-06",
+          "to": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 273,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 Action-Form Uniqueness No-Go",
+          "transitive_descendants": 273
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 Heat-Kernel Thermodynamic \u27e8P\u27e9(6) Stretch Attempt (Block 03)",
+          "transitive_descendants": 273
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_hk_cube_perron_note_2026-05-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 HK Cube Perron L_s=2 (Block 06)",
+          "transitive_descendants": 273
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0004",
+      "decision": null,
+      "edges": [
+        {
+          "from": "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26",
+          "to": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26"
+        },
+        {
+          "from": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26",
+          "to": "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 58,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md",
+          "title": "Lane 5 `eta` Retirement Gate Audit: The Single Microscopic Selector That Retires `eta` From The Bounded Cosmology Cascade",
+          "transitive_descendants": 58
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+          "title": "Lane 5 Cosmic-History-Ratio Necessity No-Go: `H_0` Needs Scale-Route And History-Ratio Content Beyond Baseline",
+          "transitive_descendants": 58
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0005",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+          "to": "ep_record_stiffness_context_independence_no_go_note_2026-06-17"
+        },
+        {
+          "from": "ep_record_stiffness_context_independence_no_go_note_2026-06-17",
+          "to": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+          "title": "EP Record-Stiffness Conditional Shared-Coupling Template",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "ep_record_stiffness_context_independence_no_go_note_2026-06-17",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md",
+          "title": "EP Record-Stiffness Context Independence No-Go",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0006",
+      "decision": null,
+      "edges": [
+        {
+          "from": "gate_b_context_independence_no_go_note_2026-06-17",
+          "to": "gate_b_dynamics_note"
+        },
+        {
+          "from": "gate_b_dynamics_note",
+          "to": "gate_b_context_independence_no_go_note_2026-06-17"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "gate_b_context_independence_no_go_note_2026-06-17",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md",
+          "title": "Gate B Context Independence No-Go",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "gate_b_dynamics_note",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/GATE_B_DYNAMICS_NOTE.md",
+          "title": "Gate B: Evolving Network Dynamics \u2014 Current Status",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0007",
+      "decision": null,
+      "edges": [
+        {
+          "from": "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
+          "to": "staggered_gbare_trace_surface_bridge_note_2026-06-06"
+        },
+        {
+          "from": "staggered_gbare_trace_surface_bridge_note_2026-06-06",
+          "to": "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md",
+          "title": "g_bare Root-SU2 Scale Transport Bridge",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_gbare_trace_surface_bridge_note_2026-06-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md",
+          "title": "Staggered g_bare Trace-Surface Bridge",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0008",
+      "decision": null,
+      "edges": [
+        {
+          "from": "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
+          "to": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16"
+        },
+        {
+          "from": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
+          "to": "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md",
+          "title": "Meron Half-Action Algebra Core From Topological Infrastructure",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+          "title": "Meron / Fractional-Instanton Half-Action `4\u03c0\u00b2/g\u00b2` \u2014 Algebraic Decoration of the Retained Half-Action Core",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0009",
+      "decision": null,
+      "edges": [
+        {
+          "from": "record_context_generator_nonidentifiability_no_go_2026-06-17",
+          "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
+        },
+        {
+          "from": "record_prerecord_instrument_kernel_gate_2026-06-06",
+          "to": "record_context_generator_nonidentifiability_no_go_2026-06-17"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_context_generator_nonidentifiability_no_go_2026-06-17",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md",
+          "title": "Record Context/Generator Nonidentifiability No-Go",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_prerecord_instrument_kernel_gate_2026-06-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md",
+          "title": "Record Pre-Record Instrument Kernel Gate Under Supplied Readout Context",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    }
+  ],
+  "length_counts": {
+    "2": 8,
+    "3": 1
+  },
   "sort": [
     "max_transitive_descendants descending",
     "length ascending",

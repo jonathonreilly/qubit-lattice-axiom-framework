@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_production_dynamics_needed_row_map_2026_06_06.py
-runner_sha256: 61ff1d099131b1d602f61e30663c51310ab52013fad3054cb99cce047e463b70
+runner_sha256: 42bbd8d07a7c93a063ddaee1fd6760675ef815763ef79b2aecf6d9f663c29419
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.93
+elapsed_sec: 1.83
 status: ok
 ----- stdout -----
 
@@ -53,7 +53,7 @@ PASS boundary bridge is represented
 PASS readout instrument bridge is represented
 PASS record-writing law bridge is represented
 PASS production time/barrier bridge is represented
-PASS audit ledger hash is unchanged :: c34509854f5e955f3925224c269e2114d29c35fe8df2c7925dab4722f4aec798
+PASS audit ledger hash is unchanged :: 49f667c79e1bbfda8c4bc8e5b3568b63e6ae3d6bccaeef7ac2e21ecadf2e6f04
 
 Production-dynamics lane counts:
   boundary_phase_finite_scan: 1

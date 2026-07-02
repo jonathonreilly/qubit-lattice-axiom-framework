@@ -72,10 +72,11 @@ If all three hold, finite additivity gives
 |W(ez) - W(z)| <= K M,
 ```
 
-so `(BR-int)` holds and the exponent selector closes. In the unit-record
-schema `(CAP-M)` holds with `M = 1` by normalization, but `(CAP-real)` and
-`(CAP-K)` remain open. This note does not license `(BR)`, `(BR-int)`, or
-`(CAP)`, and it does not retire P1.
+so `(BR-int)` holds and the exponent selector closes. In the conditional
+unit-record schema `(CAP-M)` holds with `M = 1` by normalization, but that is
+not an unconditional retained-grade supplier here. `(CAP-real)` and `(CAP-K)`
+remain open. This note does not license `(BR)`, `(BR-int)`, or `(CAP)`, and it
+does not retire P1.
 
 ## Lemma W: `(BR) => (BR-int)`, Strictly
 
@@ -130,11 +131,11 @@ The current record rows do not provide the capacity package:
   its sector data are supplied scalars. The runner recomputes the two-sector
   freedom showing arbitrary normalized coordinates. It does not bound
   magnitudes in general.
-- Conditional on a supplied readout context and supplied nonzero disjoint unit
-  records, the unbounded finite-additivity schema computes
-  arbitrary finite collections. That gives `(CAP-M)` with `M = 1` under the
-  unit-record premise, but it also permits violations of `(CAP-K)`: assigning
-  `4^k` supplied unit records to e-fold `k` is a fully finite collection at
+- The unbounded finite-additivity schema is conditional on its supplied
+  readout context and supplied nonzero disjoint unit records. Inside that
+  schema, it computes arbitrary finite collections. That gives `(CAP-M)` with
+  `M = 1` for unit records, but it also licenses violations of `(CAP-K)`:
+  assigning `4^k` unit records to e-fold `k` is a fully finite collection at
   each prefix and exceeds every uniform cap.
 - The minimal-record-block no-go says Record supplies no scale selector. It
   does not couple record collections to amplitude e-folds.

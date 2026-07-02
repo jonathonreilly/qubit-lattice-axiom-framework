@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_gr_picurv_route_exhaustion_no_go_2026_06_18.py
+runner_sha256: 268e2434a3b4d51884dceb88a476b3662d80867bb7486891db6e3235775b8403
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+UNIVERSAL GR PICURV ROUTE-EXHAUSTION NO-GO VERIFIER
+==============================================================================
+[PASS] target audit blocker quote is present
+    new note quotes the exact re-audit target
+[PASS] parent note points to repair packet
+    parent source note has a non-status-changing repair pointer
+[PASS] route table has eight explicit route families
+    routes present = ['ROUTE-1', 'ROUTE-2', 'ROUTE-3', 'ROUTE-4', 'ROUTE-5', 'ROUTE-6', 'ROUTE-7', 'ROUTE-8']
+[PASS] N1-N8 gate is complete
+    gates present = ['N1', 'N2', 'N3', 'N4', 'N5', 'N6', 'N7', 'N8']
+[PASS] route exhaustion is scoped to reviewed current route families
+    the note avoids claiming all possible repo or future routes are closed
+[PASS] N2 wall independence table is visible
+    multiple walls are separated rather than inflated or collapsed
+[PASS] proof-surface dependency links are present
+    route-boundary authorities are markdown dependencies
+[PASS] no absolute no-go overclaim
+    note scopes no-go to current repo surfaces
+[PASS] canonical channel positives are preserved
+    projector/channel work is not demoted
+[PASS] supplied geometric positives are preserved
+    positive supplied-geometric lanes remain available
+[PASS] independent audit authority is explicit
+    source packet does not claim audit authority
+[PASS] A1 finite witness is reproduced
+    a1_delta=0.000e+00, complement_delta=6.767e-02, frame_delta=6.767e-02
+[PASS] orbit average is not a section selector
+    average lies between sampled sections; delta_to_a=3.384e-02, delta_to_b=3.384e-02
+[PASS] attempt note still forbids treating old packet as exhaustive no-go
+    new packet supplies a separate route-exhaustion gate
+[PASS] A1 note keeps full Pi_curv open
+    A1 is exact support, not full closure
+[PASS] Casimir note excludes connection and dynamics
+    block projectors do not provide full Pi_curv
+[PASS] connection candidate note is candidate-only
+    orbit connection is not the full target
+[PASS] complement note contains no-go discipline boundaries
+    older complement no-go remains local
+[PASS] round Regge route is supplied-scope only
+    round Regge is positive but not direct-universal Pi_curv derivation
+[PASS] flat-atlas spin-2 route is not PL S3 x R closure
+    flat spin-2 supply leaves the target surface open
+[PASS] finite-rank helper is scalar/helper scoped
+    finite-rank helper is not a tensorial Pi_curv route
+[PASS] coarse exterior helper is scalar/isotropic scoped
+    coarse exterior law is not full Pi_curv
+
+==============================================================================
+FINITE WITNESS
+==============================================================================
+resp_a[0:5]      = ['-2.500000e-01', '-8.249579e-02', '3.111270e-02', '-1.818275e-02', '4.194312e-02']
+resp_b[0:5]      = ['-2.500000e-01', '-8.699980e-02', '-1.430351e-02', '-1.818275e-02', '4.194312e-02']
+a1_delta         = 0.000000000000e+00
+complement_delta = 6.767360754447e-02
+frame_delta      = 6.767360754447e-02
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=22 FAIL=0 TOTAL=22
+Current-stack result: eight Pi_curv construction routes are enumerated and blocked at connection, TT/gauge, dynamics, or supplied-input boundaries; existing positive channel and supplied-geometric GR work is preserved.
+
+----- stderr -----
+

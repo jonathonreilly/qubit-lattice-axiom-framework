@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_vacuum_plaquette_word_count_theta_identification_two_term_asymptotic_2026_06_12.py
-runner_sha256: bc69ebd4cef077b1cf3bebbe529c2ded98fe6084e390c00876317b7dbd3c48f0
+runner_sha256: 307f12fdeea9d739228b533a4a3c31cbabad0cc187d785d4655f1406cb2f4821
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 0.78
+elapsed_sec: 1.48
 status: ok
 ----- stdout -----
 Gauge-vacuum plaquette word-count theta identification
@@ -84,12 +84,12 @@ PASS: rho20 and rho02 freeze at the slice-lemma values
 Part 5: source Perron composition
 ================================================================================================================
 P_inf from pair-support source solve = 0.615191992185898
-source pair spectral gap = 0.457059856649614
-source perturbation p1 = -0.410170474927581
-source perturbation p2 = -3.715455712621879
-C_source = -p1 = 0.410170474927581
-C_source/theta = 1.555173154905773
-finite-difference p1 check error = 3.715084e-05
+source pair spectral gap = 0.457059856649612
+source perturbation p1 = -0.410170474927582
+source perturbation p2 = -3.715455712621910
+C_source = -p1 = 0.410170474927582
+C_source/theta = 1.555173154905779
+finite-difference p1 check error = 3.715087e-05
 PASS: source pair perturbation has a simple positive gap
       gap=4.570599e-01
 PASS: source perturbation P_inf matches the finite pair-support solve
@@ -97,36 +97,36 @@ PASS: source perturbation P_inf matches the finite pair-support solve
 PASS: source p1 finite-difference check is stable
       err=3.715e-05
 PASS: source sensitivity has the sign needed for P_k increasing to P_inf
-      C=0.410170474927581
+      C=0.410170474927582
 
 ================================================================================================================
 Part 6: source composition surface and measured envelope
 ================================================================================================================
 Finite-packet composition surface: P_inf - P_k = C_source * theta^(k-1) + 3*C_source*theta^(k-1)*alpha^k + finite-packet smaller-scale remainder.
-measured c_hat over k=2..20 = 3.927112357448190 at k=3
+measured c_hat over k=2..20 = 3.927112357448185 at k=3
 k | P_k | P_inf-P_k | err/theta^k | leading residual after alpha/gamma correction
 ----------------------------------------------------------------------------------------------------------------
  2 | 0.433061880380 | 1.821301118062e-01 | 2.618246097677e+00 | 5.480974727175e-02
  3 | 0.543142610051 | 7.204938213447e-02 | 3.927112357448e+00 | 2.822023265641e-02
- 4 | 0.603630724651 | 1.156126753490e-02 | 2.389257030358e+00 | 2.205581153947e-03
- 5 | 0.612857835719 | 2.334156466488e-03 | 1.828949616244e+00 | 1.288718753706e-04
- 6 | 0.614633873361 | 5.581188248838e-04 | 1.658107956623e+00 | 7.908217608852e-06
- 7 | 0.615050158856 | 1.418333299212e-04 | 1.597639490051e+00 | 5.085788125317e-07
- 8 | 0.615155144956 | 3.684723022856e-05 | 1.573691832410e+00 | 3.365186889653e-08
- 9 | 0.615182336693 | 9.655492899219e-06 | 1.563520741940e+00 | 2.263757789843e-09
-10 | 0.615189452932 | 2.539254029155e-06 | 1.559012882364e+00 | 1.537763993464e-10
-11 | 0.615191323349 | 6.688367297780e-07 | 1.556962038152e+00 | 1.050987591561e-11
-12 | 0.615191815890 | 1.762954560114e-07 | 1.556013579825e+00 | 7.213544408523e-13
-13 | 0.615191945702 | 4.648394913431e-08 | 1.555570279437e+00 | 5.016556675358e-14
-14 | 0.615191979928 | 1.225830403850e-08 | 1.555361568877e+00 | 3.447271617814e-15
-15 | 0.615191988953 | 3.232871859105e-09 | 1.555262932379e+00 | 4.605143958936e-16
-16 | 0.615191991333 | 8.526311878754e-10 | 1.555216660891e+00 | 4.151571363866e-16
-17 | 0.615191991961 | 2.248746744371e-10 | 1.555194059705e+00 | 6.727622250919e-17
-18 | 0.615191992127 | 5.930966828771e-11 | 1.555191563191e+00 | 3.288006681381e-16
-19 | 0.615191992170 | 1.564259832776e-11 | 1.555183519905e+00 | 5.706539953323e-17
-20 | 0.615191992182 | 4.125366714902e-12 | 1.555069012653e+00 | 2.822464755391e-16
+ 4 | 0.603630724651 | 1.156126753490e-02 | 2.389257030358e+00 | 2.205581153948e-03
+ 5 | 0.612857835719 | 2.334156466489e-03 | 1.828949616244e+00 | 1.288718753709e-04
+ 6 | 0.614633873361 | 5.581188248835e-04 | 1.658107956623e+00 | 7.908217608628e-06
+ 7 | 0.615050158856 | 1.418333299219e-04 | 1.597639490059e+00 | 5.085788131974e-07
+ 8 | 0.615155144956 | 3.684723022845e-05 | 1.573691832406e+00 | 3.365186878538e-08
+ 9 | 0.615182336693 | 9.655492899330e-06 | 1.563520741958e+00 | 2.263757900834e-09
+10 | 0.615189452932 | 2.539254029155e-06 | 1.559012882364e+00 | 1.537763993384e-10
+11 | 0.615191323349 | 6.688367297780e-07 | 1.556962038152e+00 | 1.050987591349e-11
+12 | 0.615191815890 | 1.762954563445e-07 | 1.556013582765e+00 | 7.216875072038e-13
+13 | 0.615191945702 | 4.648394880125e-08 | 1.555570268291e+00 | 4.983249969399e-14
+14 | 0.615191979928 | 1.225830437157e-08 | 1.555361611137e+00 | 3.780338485497e-15
+15 | 0.615191988953 | 3.232871748082e-09 | 1.555262878969e+00 | 3.494920830913e-16
+16 | 0.615191991333 | 8.526316319646e-10 | 1.555217470919e+00 | 8.592463434449e-16
+17 | 0.615191991961 | 2.248752295486e-10 | 1.555197898759e+00 | 6.223877340721e-16
+18 | 0.615191992127 | 5.930966828771e-11 | 1.555191563191e+00 | 3.288006679443e-16
+19 | 0.615191992170 | 1.564282037236e-11 | 1.555205595528e+00 | 2.791100044066e-16
+20 | 0.615191992182 | 4.126254893322e-12 | 1.555403814098e+00 | 6.059319441481e-16
 PASS: measured envelope c_hat dominates k=2..20 without an added safety factor
-      c_hat=3.927112357448190
+      c_hat=3.927112357448185
 PASS: tail-window prefactor matches the measured finite packet
       k=18 ratio=1.555191563191e+00
 PASS: two-channel corrected residual is governed by a smaller displayed scale on k=5..15
@@ -139,10 +139,11 @@ PASS: note delegates status to the independent audit lane
 PASS: note names this primary runner as a plain-text pointer
 PASS: note displays the audited theta^2 secondary scale
 PASS: note keeps scratch-packet context non-authoritative without stale temp paths
+PASS: note displays the corrected theta^2 secondary scale
 Named residuals: finite dominant-weight box; finite Bessel mode support; finite word count; no physical 3D unmarked spatial Wilson environment computation; no all-weight or untruncated convergence proof; no L_perp limit; no analytic P(6); no canonical repinning; all-k rigorous tail remainder remains a named finite-packet target.
 PASS: runner names residuals without claiming them retired
 
-TOTAL: PASS=23, FAIL=0
+TOTAL: PASS=24, FAIL=0
 
 ----- stderr -----
 

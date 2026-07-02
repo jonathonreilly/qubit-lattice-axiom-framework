@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_industrial_sdp_bootstrap_block02.py
-runner_sha256: 00310b164929d9679cf0fa3a36732b76b961977e053c28feb49a5bec92b7be29
+runner_sha256: 6f3e81a975be624d6ca65b9f518a81d24b136569781ddf33db500d9c1c97f9dd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.59
+elapsed_sec: 1.02
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -11,8 +11,8 @@ Industrial SDP Bootstrap — Block 02: lattice ⟨P⟩(β=6) bracket
 Built on block 01 infrastructure (PR #433)
 ==============================================================================
 
-CVXPY version: 1.8.2
-Available solvers: ['CLARABEL', 'HIGHS', 'OSQP', 'SCIPY', 'SCS']
+CVXPY version: 1.9.1
+Available solvers: ['CLARABEL', 'SCS', 'SCIPY', 'HIGHS', 'OSQP']
 
 === Multi-Wilson-loop bootstrap at β = 6.0, SU(3) ===
 
@@ -46,6 +46,8 @@ Constraints applied:
   CVXPY-derived bracket: ⟨P⟩(β=6) ∈ [0.422504, 1.000001]
   Width: 0.577497
   Contains MC value 0.5934? True
+  [PASS] full SDP upper solve saturates the support endpoint p1=1  (max=1.000001)
+  [PASS] admitted-lower-bound solve has lower endpoint near 0.4225  (min=0.422504)
 
   Upper-bound configuration variables:
     p1     = 1.000001
@@ -60,6 +62,25 @@ Constraints applied:
     pq     = 0.178025
     rq     = 0.025799
 
+--- Exact no-upper-bound certificate (solver-independent) ---
+  [PASS] all-ones plaquette Hankel matrix is PSD  (rank=1)
+  [PASS] shifted Hausdorff lower matrix is PSD  (min_eig=0.000e+00)
+  [PASS] shifted Hausdorff upper matrix is PSD  (max_abs=0.000e+00)
+  [PASS] {1,P,R,Q} all-ones Gram matrix is PSD  (rank=1)
+  [PASS] all support and cross-correlator bounds hold at p1=1
+  [PASS] moment monotonicity p4 <= p2 is saturated
+  [PASS] area-law inequalities r1 <= p2 and q1 <= p4 are saturated
+  [PASS] optional admitted lower-bound switch p1 >= 0.4225 does not remove p1=1
+  [PASS] support bound p1 <= 1 plus feasible p1=1 proves max p1 = 1
+
+--- Source-boundary firewall ---
+  [PASS] note records source-boundary phrase: exact obstruction certificate
+  [PASS] note records source-boundary phrase: p1 = 1 is feasible
+  [PASS] note records source-boundary phrase: not load-bearing for the no-upper-bound obstruction
+  [PASS] note records source-boundary phrase: comparison/admitted context only
+  [PASS] note records source-boundary phrase: No status edit
+  [PASS] note records source-boundary phrase: not an exhaustive no-go against SDP/bootstrap routes
+
 ==============================================================================
 Block 02 lattice bootstrap bracket complete.
 
@@ -73,6 +94,7 @@ Summary:
     (b) no explicit Migdal-Makeenko loop equations
     (c) CLARABEL/SCS solver precision (no Mosek)
   - Tightening to industrial precision (~10^-2) requires Mosek + larger L_max
+  - Certificate checks: PASS=17 FAIL=0
 ==============================================================================
 
 ----- stderr -----

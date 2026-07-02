@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/teleportation_poisson_finite_extraction_core_2026_06_18.py
+runner_sha256: ab8f528d2af592288ae3d52774707ade6184452a269600d4754678c2f86c80ed
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+# Teleportation Poisson finite extraction core
+# Source note: docs/TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md
+
+==============================================================================
+T0: source status and open-gate firewalls
+==============================================================================
+[PASS] core note contains Claim type:** bounded_theorem
+[PASS] core note contains Actual current-surface status:** bounded-support
+[PASS] core note contains Trace class:** upstream_support
+[PASS] core note contains proposal_allowed: false
+[PASS] core note contains bare_retained_allowed: false
+[PASS] core note contains TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md
+[PASS] parent cites bounded split boundary: Finite Extraction Core Split
+[PASS] parent cites bounded split boundary: TELEPORTATION_POISSON_FINITE_EXTRACTION_CORE_BOUNDED_NOTE_2026-06-18.md
+[PASS] parent cites bounded split boundary: open-gate status
+[PASS] parent cites bounded split boundary: native preparation/readout and apparatus theorem remains open
+[PASS] core note forbids overclaim: deterministic physical teleportation-resource closure
+[PASS] core note forbids overclaim: native Poisson-resource preparation/readout authority
+[PASS] core note forbids overclaim: retained-grade status for the parent open gate
+[PASS] forbidden promotion absent: parent is retained
+[PASS] forbidden promotion absent: physical deterministic resource theorem is closed
+[PASS] forbidden promotion absent: native preparation/readout theorem is proved
+[PASS] forbidden promotion absent: proposed_retained
+
+==============================================================================
+T1: helper and retained-axis source certificates
+==============================================================================
+[PASS] Poisson/CHSH helper source has required symbols
+[PASS] Poisson/CHSH helper source is nontrivial: 711
+[PASS] RALA source status is retained-grade
+[PASS] RALA source snippets are present: 5
+[PASS] parent source firewall remains intact: 18
+
+==============================================================================
+T2: last-taste logical carrier checks
+==============================================================================
+[PASS] 1d_null: environments present: 4
+[PASS] 1d_null: pair-hop X is last logical X
+[PASS] 1d_null: last-bit Z is Pauli
+[PASS] 1d_null: sublattice Z equals last-bit Z in 1D
+[PASS] 1d_poisson_chsh: environments present: 4
+[PASS] 1d_poisson_chsh: pair-hop X is last logical X
+[PASS] 1d_poisson_chsh: last-bit Z is Pauli
+[PASS] 1d_poisson_chsh: sublattice Z equals last-bit Z in 1D
+[PASS] 2d_poisson_chsh: environments present: 8
+[PASS] 2d_poisson_chsh: pair-hop X is last logical X
+[PASS] 2d_poisson_chsh: last-bit Z is Pauli
+[PASS] 2d_poisson_chsh: 2D sublattice Z is distinct from last-bit Z
+
+==============================================================================
+T3: bounded finite resource extraction
+==============================================================================
+[PASS] ideal Phi+ convention has unit minimum fidelity: {'mean': 0.9999999999999996, 'min': 0.9999999999999991, 'max': 1.0, 'max_trace_error': 0.0}
+[PASS] ideal Phi+ convention preserves trace: {'mean': 0.9999999999999996, 'min': 0.9999999999999991, 'max': 1.0, 'max_trace_error': 0.0}
+[PASS] G=0 null is not high-fidelity: 0.4999999999999995
+[PASS] G=0 null has zero negativity: 5.21038046954251e-16
+[PASS] G=0 null Bell overlap is 1/2: 0.4999999999999995
+[PASS] 1d_poisson_chsh: deterministic traced resource passes threshold
+[PASS] 1d_poisson_chsh: Bell overlap > 0.95: 0.997963462171045
+[PASS] 1d_poisson_chsh: negativity > 0.45: 0.497963462171045
+[PASS] 1d_poisson_chsh: standard teleportation min fidelity > 0.95: {'mean': 0.9985952778973791, 'min': 0.9980284600351765, 'max': 0.999439310660279, 'max_trace_error': 0.0}
+[PASS] 1d_poisson_chsh: trace preservation: {'mean': 0.9985952778973791, 'min': 0.9980284600351765, 'max': 0.999439310660279, 'max_trace_error': 0.0}
+[PASS] 2d_poisson_chsh: deterministic traced resource passes threshold
+[PASS] 2d_poisson_chsh: Bell overlap > 0.95: 0.97028309973601
+[PASS] 2d_poisson_chsh: negativity > 0.45: 0.47028309973601
+[PASS] 2d_poisson_chsh: standard teleportation min fidelity > 0.95: {'mean': 0.9804131032411254, 'min': 0.9702905260957693, 'max': 0.9993323652104861, 'max_trace_error': 0.0}
+[PASS] 2d_poisson_chsh: trace preservation: {'mean': 0.9804131032411254, 'min': 0.9702905260957693, 'max': 0.9993323652104861, 'max_trace_error': 0.0}
+
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

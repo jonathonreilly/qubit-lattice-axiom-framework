@@ -3,8 +3,9 @@
 **Date:** 2026-05-10
 **Type:** bounded_theorem
 **Claim scope:** the standalone algebraic implication that, given any positive integer count
-`n_color` and any pair `(a, b)` of real numbers with
-`2 n_color * a + 2 * b = 0`, the eigenvalue ratio is forced to `a : b = 1 : (-n_color)`,
+`n_color` and any nonzero pair `(a, b) != (0, 0)` of real numbers with
+`2 n_color * a + 2 * b = 0` (the ratio being read projectively, with the degenerate
+solution `a = b = 0` excluded), the eigenvalue ratio is forced to `a : b = 1 : (-n_color)`,
 and, under the convention `b = -1`, the reduced denominator of the resulting two left-handed
 quark electric charges `Q(u_L) = (n_color + 1)/(2 n_color)` and
 `Q(d_L) = (1 - n_color)/(2 n_color)` is `n_color` when `n_color` is odd and `2 n_color`
@@ -28,16 +29,21 @@ and `FRACTIONAL_CHARGE_DENOMINATOR_FROM_N_C_THEOREM_NOTE_2026-04-24.md`.
 Let `n_color` be an abstract positive integer and let `a, b` be real numbers
 satisfying the single homogeneous trace equation on the left-handed `(2 n_color + 2)`
 state count carried by one weak quark doublet (with `2 n_color` color-component
-states) plus one weak lepton doublet (with `2` states):
+states) plus one weak lepton doublet (with `2` states), and assume the eigenvalue
+pair is nonzero (equivalently, the ratio is read projectively with nonzero
+denominator, so the degenerate solution `a = b = 0` is excluded):
 
 ```text
-(L1)  2 n_color * a + 2 * b  =  0.
+(L1)  2 n_color * a + 2 * b  =  0,
+(L2)  (a, b) != (0, 0)        [nonzero eigenvalue-pair / projective-ratio premise].
 ```
 
 Then:
 
 ```text
-(R1)  a : b  =  1 : (-n_color),
+(R1)  a : b  =  1 : (-n_color)    [ratio well-defined under (L2); since (L1) forces
+        b = -n_color * a, the pair (a, b) = (0, 0) is the only solution excluded
+        by (L2), so on the nonzero branch a != 0 and b != 0],
 (R2)  setting the labelling convention b = -1,
         a  =  1 / n_color,
 (R3)  the two left-handed quark electric charges under the standard
@@ -191,6 +197,10 @@ verifies via exact sympy `Rational` / `simplify` arithmetic:
 
 1. `(R1)` parametric: under the trace hypothesis, `simplify(b + n_color * a) == 0`
    forces `a : b = 1 : (-n_color)` for symbolic positive-integer `n_color`.
+   A dedicated guard (Part 1b) confirms the degenerate solution `a = b = 0`
+   satisfies `(L1)` but is the unique solution excluded by `(L2)`, and that the
+   ratio identity `a : b = 1 : (-n_color)` holds on the nonzero branch where
+   `b != 0` (so the projective ratio has nonzero denominator).
 2. `(R2)` with convention `b = -1`: `a = 1/n_color` parametric in `n_color`.
 3. `(R3)` `Q(u_L)`, `Q(d_L)` closed forms parametric in `n_color`.
 4. `(R4)` reduced-denominator parity rule verified for `n_color in
@@ -201,6 +211,21 @@ verifies via exact sympy `Rational` / `simplify` arithmetic:
 6. Counterfactual: at `n_color = 2`, the reduced denominator is `4 != 2`
    (parity-even branch behaves differently).
 7. Corollaries `(C1)`, `(C2)` reduce symbolically to the claimed forms.
+8. Part 1b zero-solution guard: the degenerate pair `a = b = 0` satisfies `(L1)`
+   but is excluded by `(L2)`; the ratio identity `a : b = 1 : (-n_color)` is
+   verified on the nonzero branch (`a != 0`, `b = -n_color * a != 0`).
+
+## Repair history
+
+**2026-06-19 — scope_too_broad repair.** Added explicit nonzero-eigenvalue-pair
+premise `(L2) (a, b) != (0, 0)` to `(R1)` (also reflected in the Claim scope line
+and the Statement block), making explicit the assumption the projective ratio claim
+already relies on (the trivial `a = b = 0` solution of `(L1)` makes `a : b`
+ill-defined / vacuously satisfies any ratio). Added a matching runner guard
+(Part 1b) that detects the zero solution, confirms it is the unique solution
+excluded by `(L2)`, and verifies the ratio identity holds on the nonzero branch.
+No derived value changed; the parametric and framework-instance readouts
+(`a = 1/n_color`, `Q(u_L) = 2/3`, `Q(d_L) = -1/3`, `d_red(3) = 3`) are unchanged.
 
 ## Open derivation gap
 

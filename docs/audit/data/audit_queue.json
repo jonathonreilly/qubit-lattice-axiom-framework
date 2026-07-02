@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 283,
     "leaf": 584,
-    "medium": 500
+    "medium": 499
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17799,30 +17799,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "momentum_charge_commute_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.615,
-      "note_path": "docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/momentum_charge_commute_check.py",
-      "transitive_descendants": 48
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "translation_abelian_composition_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -17984,15 +17960,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 5.7,
+      "load_bearing_score": 6.858,
       "note_path": "docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/gauge_gauging_selection_conjugation_independence_2026_06_16.py",
-      "transitive_descendants": 25
+      "transitive_descendants": 40
     },
     {
       "audit_independence_required": "any_non_self",
@@ -50023,6 +49999,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 107,
-  "total_pending": 1668
+  "ready_count": 106,
+  "total_pending": 1667
 }

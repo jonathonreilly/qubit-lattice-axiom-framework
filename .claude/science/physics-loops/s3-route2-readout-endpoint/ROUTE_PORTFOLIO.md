@@ -1,28 +1,21 @@
 # Route Portfolio
 
-## Selected Route: Single-Adjoint-Line Selector
+## Selected Route
 
-Type: constructive conditional theorem.
+Current-bank single-adjoint-line no-go.
 
-Dramatic-step score: 3.
-Hard-residual pressure: 3.
+Scores:
 
-Reason: after multiple no-go/support blocks, the campaign needed a direct positive-primitive attempt. This route introduces a falsifiable source/readout primitive that could actually force the missing E-center lift, then certifies its exact consequences and its current absence.
+- Dramatic-step score: 2
+- Hard-residual pressure: 2
+
+Reason: block37 found an exact conditional primitive. Block38 checks whether that primitive is already available from current SU(3)-equivariant source geometry. It is not.
 
 ## Alternatives
 
-| Route | Score | Disposition |
-|---|---:|---|
-| Smooth box-path rescue | 1 | Pruned by block36 finite interpolation family. |
-| Rconn/Fierz direct bridge | 1 | Current bank lacks typed edge from `F_adj`/`R_conn` to Route-2 center ratio. |
-| E-center-blind endpoint constraints | 0 | No-go: cannot select `rho_E`. |
-| Single-adjoint-line selector | 3 | Block37 conditional support: exact if primitive is supplied; not current-surface closure. |
-| Derive the line from source geometry | 3 | Next route. |
-
-## Stuck Fan-Out
-
-1. Algebraic surface: `e_E=7/8` forces the target exactly.
-2. Projector-rank surface: rank 7 is unique among integer adjoint projectors.
-3. Same-number trap: using `F_adj=8/9` directly as E-excess fails.
-4. Current-source surface: no current note supplies a single-line selector.
-5. Next positive surface: derive the line from source geometry or prove that current source geometry cannot type it.
+| Route | Disposition |
+|---|---|
+| Derive line from invariant SU(3) source bank | Block38 no-go: no invariant line or rank-7 projector. |
+| Add non-invariant typed source line | Still open; requires new source geometry. |
+| Use Fadj/Rconn/Fierz scalar directly | Prior no-go plus block38 text scan: not a line selector. |
+| Use measured calibration | Already pruned as box-path rescue in block36. |

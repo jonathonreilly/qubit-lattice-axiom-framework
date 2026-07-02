@@ -174,7 +174,8 @@ to PDG precision.
   — top-quark Ward identity template
 - [CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md](../../CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md)
   — bounded charged-lepton compatibility package
-- [KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md](../../KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md)
+- `KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md`
+  (package survey; backticked non-load-bearing context reference)
   — Koide flagship lane (in flight)
 - [KOIDE_BRANNEN_GEOMETRY_DIRAC_SUPPORT_NOTE_2026-04-22.md](../../KOIDE_BRANNEN_GEOMETRY_DIRAC_SUPPORT_NOTE_2026-04-22.md)
   — Brannen geometry / 2-plane rotation interpretation

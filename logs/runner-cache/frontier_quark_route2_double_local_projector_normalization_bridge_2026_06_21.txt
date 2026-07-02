@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.py
+runner_sha256: e34d06d57fc118b8f19198487aab301b2af447ea82bd2c72b65b66e8e150bada
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+Route-2 double-local projector-normalization conditional bridge
+======================================================================================
+[EXACT] PASS: the six-arm O_h projector weights are exact and give kappa=3/2
+    w_A1=1/6, w_E=1/3, w_T1=1/2, kappa=w_T1/w_E=3/2
+
+Candidate local-weight laws
+law                                      exponent p   lambda=(w_E/w_T1)^p   hits target
+--------------------------------------------------------------------------------------------------
+channel-blind lift                              0               1              False
+raw local projector weight                      1             2/3              False
+raw quadratic projector weight                  2             4/9              False
+single reciprocal local normalization          -1             3/2              False
+double reciprocal local normalization          -2             9/4              True
+[FALSIFIER] PASS: all one-factor/raw local projector-weight variants miss lambda=9/4
+    channel-blind lift misses; raw local projector weight misses; raw quadratic projector weight misses; single reciprocal local normalization misses; hit=double reciprocal local normalization
+[CONDITIONAL] PASS: conditional on the double reciprocal local normalization primitive, the endpoint chain closes exactly
+    lambda=9/4 -> q_E=15/8, rho_E=21/4, center T/E=-8/9
+[EXACT] PASS: within monomial laws q_X proportional to w_X^p for |p|<=6, p=-2 is the unique target exponent
+    target exponents in [-6,6]: [-2]
+[FIREWALL] PASS: the double reciprocal law is a primitive candidate, not a consequence of equivariance
+    channel_blind lambda=1; target lambda=9/4; single_reciprocal lambda=3/2; raw_quadratic lambda=4/9
+[FALSIFIER] PASS: nearby center-excess denominator slips do not close the endpoint chain
+    d=5: q_E=41/20, center T/E=-100/123; d=7: q_E=7/4, center T/E=-20/21; d=12: q_E=23/16, center T/E=-80/69
+
+Verdict:
+The exact positive target is now isolated: a double reciprocal local projector-normalization primitive would give lambda=q_E/q_T=9/4 and hence rho_E=21/4.  The adjacent one-factor, raw, and quadratic variants miss.  The primitive is not derived here; it is the named remaining bridge that a future positive proof must justify.
+
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

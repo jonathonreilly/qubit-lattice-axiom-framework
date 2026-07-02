@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py
-runner_sha256: 7fae8c7106d8ec88a1a5b1f2d58ea1cf87bc4300aa82c768c480bf6296642a84
-timeout_sec: 300
+runner_sha256: 038b8a151a1962abb2249e8d9a5f8b694d451de1ebe5064af5037594038f308c
+timeout_sec: 600
 exit_code: 0
-elapsed_sec: 16.31
+elapsed_sec: 16.55
 status: ok
 ----- stdout -----
 
@@ -21,7 +21,7 @@ W_H = ||h||_l1; exponential tail weights; exact H not finite-range.
 Precomputing Z^3 kernels (128^3 FFT, m in {0.3, 0.6}) ...
 
 T1 — cross-note anchor: action-derived T_odd.T_even decaying eigenvalue
-  [PASS] T1 [B] decaying eigenvalue of T_odd.T_even equals e^{-2E(p)} over the BZ (m in {0.3, 0.5, 1.0})  (max residual 6.44e-16)
+  [PASS] T1 [B] decaying eigenvalue of T_odd.T_even equals e^{-2E(p)} over the BZ (m in {0.3, 0.5, 1.0})  (max residual 7.22e-16)
 T2/T3 — strip positivity and sup bound for the complexified symbol
   [PASS] T2 [A] Re(radicand) >= m^2 - sinh^2(eta) > 0 on the shifted strip (d in {1,3}, eta up to 0.99 eta*)  (d=1,m=0.3: min Re w=0.0018 >= 0.0018; d=1,m=1.0: min Re w=0.0247 >= 0.0247; d=3,m=0.3: min Re w=0.0018 >= 0.0018; d=3,m=0.6: min Re w=0.0079 >= 0.0079)
   [PASS] T3 [A] sup_strip |E| <= C_d(eta,m) = sqrt(m^2 + (d-1) + cosh^2 eta)  (d=1,m=0.3: sup|E|=0.9405 <= C=1.0854; d=1,m=1.0: sup|E|=1.3134 <= C=1.7249; d=3,m=0.3: sup|E|=1.3420 <= C=1.7827; d=3,m=0.6: sup|E|=1.4104 <= C=1.9267)
@@ -46,6 +46,10 @@ T15 — falsification: m = 0 closes the strip; kernel is power-law
   [PASS] T15 [C] at m = 0 the kernel is power-law (exp rate ~ 0; power fit R^2 > 0.999; the eta = 0.05 exponential bound is violated): the mass gap is load-bearing  (power -1.998 (~ -2), R^2 = 1.00000, exp-rate -0.0000, bound violation x1.9e+03)
 T16 — falsification: long-range-perturbed positive symbol breaks the bound
   [PASS] T16 [C] a positive, gapped, long-range-perturbed symbol (eps k^-3 cosine tail) VIOLATES the derived exponential bound that the framework kernel satisfies: analyticity is load-bearing and the check has teeth  (perturbed symbol gap 0.541 > 0; bound violation x6.23e+05 on the resolvable window n <= 60; unperturbed max ratio 0.014 <= 1)
+T17 — Step 1 contour orientation: +eta*sgn(z) decays; -eta*sgn(z) grows
+  [PASS] T17a [A] shifted-contour integral at Im p = +eta*sgn(z) equals the real-axis kernel (periodicity + strip analyticity)  (z=+3: |h_shift - h_real| = 4.4e-17; z=-4: |h_shift - h_real| = 2.5e-17; z=+7: |h_shift - h_real| = 5.1e-18)
+  [PASS] T17b [A] on the +eta*sgn(z) contour |e^{i p z}| = e^{-eta|z|} exactly: the decaying orientation for the e^{+i p z} convention of (2)  (m = 0.3, eta = 0.2365 = 0.8 eta*)
+  [PASS] T17c [C] the opposite orientation -eta*sgn(z) carries |e^{i p z}| = e^{+eta|z|} (growth): the pre-repair shift direction cannot yield (3)  (growth factor at |z| = 7: x5.2)
 
 ========================================================================
 SUMMARY
@@ -53,8 +57,9 @@ SUMMARY
   Scope: free (U=1) staggered bilinear two-step sector only; d=1 is the
   in-repo anchor, the Z^3 symbol is the declared d=3
   carrier of the same construction. Gauged/interacting T remains open.
-  TOTAL: PASS=16 FAIL=0
+  TOTAL: PASS=19 FAIL=0
   OVERALL: PASS
+
 
 ----- stderr -----
 

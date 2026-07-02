@@ -1,6 +1,7 @@
 # Literature Bridges
 
-No literature bridge was used in block13.
+None used in block14.
 
-The result is exact carrier/Gram algebra plus current repo Route-2 surfaces.
-No external theorem, experimental value, or observed quantity is load-bearing.
+The proof is finite-dimensional representation algebra on the six-arm
+`O_h` permutation representation and exact endpoint arithmetic from the repo
+notes.

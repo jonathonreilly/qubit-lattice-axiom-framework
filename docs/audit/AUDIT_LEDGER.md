@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 887 |
+| **retained_bounded** | 888 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1705 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,8 +64,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1289 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1290 |
 | `audited_conditional` | 33 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 23 |
@@ -139,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1315,6 +1313,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `three_generation_rooting_undefined_narrow_theorem_note_2026-05-27` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `three_generation_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `topological_instanton_textbook_infrastructure_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `triple_stack_collapse_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `two_band_lattice_moyal_full_b2_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18838,6 +18837,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The runner checks the finite algebra and arithmetic after these conventions are fixed.  _(class `A`)_
 - **chain closes:** True — The bounded certificate closes only after the source's explicit Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula are fixed as standard inputs. It does not derive Yang-Mills topology from Cl(3)/Z3 or close global smooth-bundle/existence theorems.
 - **rationale:** Clean only as a bounded finite certificate, not as a derivation of Yang-Mills topology from Cl(3)/Z3. The note makes the Hodge convention, Yang-Mills normalization, BPST density profile, and twisted-T4 charge formula explicit fixed inputs rather than hidden imports. Fresh-context independent checks confirmed *^2=1 and the Bogomolny inequality algebra, the BPST substitution gives 2*pi^2 * 4 = 8*pi^2, and the listed twist examples give k/N as claimed.
+- **auditor confidence:** high
+
+### `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free U=1 staggered bilinear two-step log-transfer sector: d=1 symbol anchored by the cited two-step transfer derivation, d=3 treated as the note's declared carrier; explicit exponential kernel bound for every eta<arcsinh(m), d=1 sharpness by branch point, finite l1 support-family tails, and strict diameter<=2 finite-range falsification on the displayed bilinear sector.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T121154Z-9aff2258-transfer_matrix_log_quas`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** Step 1: after proving Re w>0 and |E|<=C_d(eta,m) in the strip, shift the p_{mu*} contour to Im p_{mu*}=+eta*sgn(z_{mu*}) so |e^{ip_{mu*}z_{mu*}}|=e^{-eta||z||_inf}, yielding |h(z)|<=(1/a_tau)C_d(eta,m)e^{-eta||z||_inf}.  _(class `A`)_
+- **chain closes:** True — The cited retained-grade inputs supply the two-step free d=1 symbol, normalization, and hopping-bilinear support convention; the d=3 carrier is explicitly scoped as a declaration. Within that bounded surface, the contour-shift proof, branch-point obstruction, and support-family matrix-element argument close without an additional authority.
+- **rationale:** The load-bearing exponential bound is a direct complex-analysis/algebraic closure over the stated symbol, not a definition or tuned numerical match. The runner source performs actual FFT/quadrature and algebraic checks rather than printing expected constants, including the repaired contour orientation, tail weights, parity, and range-4 finite-range falsification. The clean verdict is only for the bounded scope stated here: gauged/interacting log-transfer locality, formal d=3 lower-bound sharpness, and the quasilocal Lieb-Robinson composition are outside the audited theorem.
 - **auditor confidence:** high
 
 ### `triage_no_promotion_note`

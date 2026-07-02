@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1440 |
-| Retained-grade rows, including boxed decorations | 1340 |
+| Applied audit verdicts | 1441 |
+| Retained-grade rows, including boxed decorations | 1341 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 198 |
-| Retained bounded rows | 887 |
+| Retained bounded rows | 888 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
 | Unaudited rows | 1705 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1708 |
-| Ready rows | 102 |
+| Total pending rows | 1707 |
+| Ready rows | 104 |
 | Cycle-break targets | 9 |
-| Critical pending | 296 |
+| Critical pending | 295 |
 | High pending | 315 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; audit_in_progress
+- [`free_bilinear_quasilocal_lr_bridge_theorem_note_2026-06-10`](../../docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`hierarchy_formula_honest_status_note_2026-05-10`](../../docs/HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md) - critical; unaudited
 - [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited

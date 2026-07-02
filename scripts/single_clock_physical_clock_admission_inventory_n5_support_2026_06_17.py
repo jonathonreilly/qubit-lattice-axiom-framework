@@ -71,8 +71,8 @@ def main() -> int:
     assert_contains(NOTE, "MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE")
     assert_contains(NOTE, "Does not mathematically exclude independent commuting transfer factors")
     assert_contains(NOTE, "Does not add an axiom")
-    assert_contains(NOTE, "actual_current_surface_status: exact-support")
-    assert_contains(NOTE, "proposal_allowed: false")
+    assert_contains(NOTE, "**Claim boundary:** source-inventory support")
+    assert_contains(NOTE, "No second physical-clock transfer is currently admitted.")
 
     assert_contains(SINGLE_CLOCK, "(B-AXIS.3)", "single-clock source names B-AXIS.3")
     assert_contains(SINGLE_CLOCK, "admitted\n    as a second physical clock", "B-AXIS.3 is phrased as an admission statement")

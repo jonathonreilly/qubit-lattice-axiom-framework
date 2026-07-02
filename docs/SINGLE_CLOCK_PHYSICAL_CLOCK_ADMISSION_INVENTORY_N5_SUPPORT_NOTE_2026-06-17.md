@@ -4,10 +4,10 @@
 **Claim type:** bounded_theorem
 **Type:** exact source-inventory support / N5 physical-clock-admission
 boundary
-**Actual current-surface status:** exact support for the current source-packet
+**Claim boundary:** source-inventory support for the current source-packet
 statement that no independent commuting transfer factor is **admitted as a
-second physical clock**; no-go for reading that support as a mathematical
-exclusion of all commuting positive factor transfers.
+second physical clock**; not a mathematical exclusion of all commuting
+positive factor transfers.
 **Primary runner:**
 [`scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py`](../scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py)
 with cached output
@@ -172,24 +172,6 @@ physical clocks.
 - Does not add an axiom, primitive, Tier-A admission, or audit verdict.
 - Does not update audit-ledger, queue, publication-status, axiom, or lane-board
   surfaces.
-
-## Claim-Status Certificate
-
-```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: partially_closes
-target_claim_id: axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03
-target_blocker_text: "B-AXIS.3 no independent commuting transfer factor is admitted as a second physical clock (= N5)"
-artifact_role: theorem
-conditional_surface_status: null
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "The artifact supports the N5 admission-inventory wording only; N2/N4 remain open and independent audit remains required."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Reproduction
 

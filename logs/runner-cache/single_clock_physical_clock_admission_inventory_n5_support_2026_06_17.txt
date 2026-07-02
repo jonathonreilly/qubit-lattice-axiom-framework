@@ -4,8 +4,8 @@ PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE'
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not mathematically exclude independent commuting transfer factors'
 PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not add an axiom'
-PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'actual_current_surface_status: exact-support'
-PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'proposal_allowed: false'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '**Claim boundary:** source-inventory support'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'No second physical-clock transfer is currently admitted.'
 PASS: single-clock source names B-AXIS.3
 PASS: B-AXIS.3 is phrased as an admission statement
 PASS: single-clock source names the sole supplied transfer/step pair

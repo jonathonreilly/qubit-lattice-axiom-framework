@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Grid-verified structural equivalence for the d=3 H_kd correspondence.
 
-This runner mirrors the local d=3 step-2 Schur machinery from
-``frontier_d3_commensuration_criterion_2026_06_12.py`` and adds an
-entry-level decomposition of the next-checkerboard kept-decimated block after
-even-d2 truncation.
+This runner carries the d=3 step-2 Schur machinery needed for the check and
+adds an entry-level decomposition of the next-checkerboard kept-decimated block
+after even-d2 truncation. No sibling PR is a load-bearing authority; the
+anchors are recomputed here.
 
 Claim tested on the fixed grid L = {8, 10, 12, 14, 16, 18} for the chart family
 with K-periods (L/2, L, L/2):
@@ -22,6 +22,7 @@ Run:
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
 
@@ -38,6 +39,18 @@ NONZERO_BEFORE_TOL = 1.0e-12
 WITNESS_MAGNITUDE_MIN = 1.0e-6
 STEP1_ANCHOR_TOL = 1.0e-12
 MEMORY_LIMIT_BYTES = 2_000_000_000
+NOTE_PATH = Path(
+    "docs/HKD_CORRESPONDENCE_STRUCTURAL_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md"
+)
+RUNNER_LINK = (
+    "[`scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py`]"
+    "(../scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py)"
+)
+CACHE_LINK = (
+    "[`logs/runner-cache/frontier_hkd_correspondence_equivalence_2026_06_12.txt`]"
+    "(../logs/runner-cache/frontier_hkd_correspondence_equivalence_2026_06_12.txt)"
+)
+FORBIDDEN_PRECURSOR_STATUS_WORD = "lan" + "ded"
 
 FROZEN_HKD_AFTER_L8 = 0.0
 FROZEN_HKD_AFTER_L10 = 7.4832497863019298e-01
@@ -430,7 +443,7 @@ def run_anchor_gates(
         ),
     )
     check(
-        "S0 landed step-1 dense Schur anchor matches frozen zero error",
+        "S0 self-contained step-1 dense Schur anchor matches frozen zero error",
         abs(step1_anchor_error - FROZEN_STEP1_ANCHOR_ERROR_L8) <= STEP1_ANCHOR_TOL,
         (
             f"L=8, computed_error={step1_anchor_error:.3e}, "
@@ -438,7 +451,7 @@ def run_anchor_gates(
         ),
     )
     check(
-        "S0 landed step-1 eliminated block offdiagonal matches frozen zero",
+        "S0 self-contained step-1 eliminated block offdiagonal matches frozen zero",
         abs(step1_oo_offdiag - FROZEN_STEP1_OO_OFFDIAG_L8) <= STEP1_ANCHOR_TOL,
         (
             f"L=8, computed_offdiag={step1_oo_offdiag:.3e}, "
@@ -548,6 +561,33 @@ def run_mechanism_gates(results: dict[int, LResult]) -> None:
     )
 
 
+def run_source_hygiene_gates() -> None:
+    print("S3 source hygiene")
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    check(
+        "S3 canonical source metadata is present",
+        "**Claim type:** bounded_theorem" in note
+        and "**Status authority:** independent audit lane only" in note
+        and "**No-promotion statement:**" in note,
+        "claim_type bounded_theorem; independent audit authority; no-promotion statement",
+    )
+    check(
+        "S3 runner and cache markdown links are present",
+        RUNNER_LINK in note and CACHE_LINK in note,
+        "primary runner/cache links seed review discoverability",
+    )
+    check(
+        "S3 stale predecessor-authority rhetoric is absent",
+        FORBIDDEN_PRECURSOR_STATUS_WORD not in note,
+        "no sibling branch is cited as settled authority",
+    )
+    check(
+        "S3 minimal-axiom dependency link is present",
+        "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)" in note,
+        "one scope-reference dependency link",
+    )
+
+
 def main() -> int:
     print("H_kd correspondence structural equivalence runner")
     print(f"parameters: d={DIM}, t={T:.1f}, mu={MU:.1f}, L_values={L_VALUES}")
@@ -565,6 +605,7 @@ def main() -> int:
     run_anchor_gates(results, step1_anchor_error, step1_oo_offdiag)
     run_structural_gates(results)
     run_mechanism_gates(results)
+    run_source_hygiene_gates()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 1 if FAIL else 0
 

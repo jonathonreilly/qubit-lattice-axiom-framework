@@ -1,9 +1,9 @@
-===== runner cache v1 =====
+===== runner cache v2 =====
 runner: scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py
-runner_sha256: 4613e5d587b41087c9ed97b41b3f079171b3028702f7d71502aa3541c830ca36
+runner_sha256: 4a8e0ee5c971d4370e53d07e3ddfdd3e93aecfc3ac48b1a8a65efddc86bef0ec
 timeout_sec: 3600
 exit_code: 0
-elapsed_sec: 1.24
+elapsed_sec: 0.86
 status: ok
 ----- stdout -----
 H_kd correspondence structural equivalence runner
@@ -14,9 +14,9 @@ PASS: S0 L=8 H_kd_after reproduces frozen protected anchor :: computed=0.0000000
 PASS: S0 L=10 H_kd_after reproduces frozen unprotected anchor :: computed=7.4832497863019298e-01, frozen=7.4832497863019298e-01, anchor_tol=1.0e-12
 PASS: S0 L=12 H_kd_after reproduces frozen protected anchor :: computed=0.0000000000000000e+00, frozen=0.0000000000000000e+00, anchor_tol=1.0e-12, protection_tol=1.0e-14
 PASS: S0 L=14 H_kd_after reproduces frozen unprotected anchor :: computed=7.4732149222164002e-01, frozen=7.4732149222164002e-01, anchor_tol=1.0e-12
-PASS: S0 anti-fabrication H_kd_before is nonzero at every grid L :: min_H_kd_before=7.4728589243652488e-01, nonzero_tol=1.0e-12
-PASS: S0 landed step-1 dense Schur anchor matches frozen zero error :: L=8, computed_error=0.000e+00, frozen=0.0e+00, tol=1.0e-12
-PASS: S0 landed step-1 eliminated block offdiagonal matches frozen zero :: L=8, computed_offdiag=0.000e+00, frozen=0.0e+00, tol=1.0e-12
+PASS: S0 anti-fabrication H_kd_before is nonzero at every grid L :: min_H_kd_before=7.4728589243652477e-01, nonzero_tol=1.0e-12
+PASS: S0 self-contained step-1 dense Schur anchor matches frozen zero error :: L=8, computed_error=0.000e+00, frozen=0.0e+00, tol=1.0e-12
+PASS: S0 self-contained step-1 eliminated block offdiagonal matches frozen zero :: L=8, computed_offdiag=0.000e+00, frozen=0.0e+00, tol=1.0e-12
 S1 structural decomposition table
   L   periods        all_even  H_kd_before        H_kd_after         nonzero_before  d2_even_survivors  aligned  misaligned  max_misaligned
    8  (4, 8, 4)      True      7.5322071744240682e-01  0.0000000000000000e+00            4096                  0        0           0  0.0000000000000000e+00
@@ -24,7 +24,7 @@ S1 structural decomposition table
   12  (6, 12, 6)     True      7.4747736396794551e-01  0.0000000000000000e+00           46656                  0        0           0  0.0000000000000000e+00
   14  (7, 14, 7)     False     7.4732149222164002e-01  7.4732149222164002e-01          117649              43512        0       43512  7.4732149222164002e-01
   16  (8, 16, 8)     True      7.4729172444226410e-01  0.0000000000000000e+00          262144                  0        0           0  0.0000000000000000e+00
-  18  (9, 18, 9)     False     7.4728589243652488e-01  7.4728589243652488e-01          531441             197640        0      197640  7.4728589243652488e-01
+  18  (9, 18, 9)     False     7.4728589243652477e-01  7.4728589243652477e-01          531441             197640        0      197640  7.4728589243652477e-01
 PASS: S1 zero misaligned survivor entries iff H_kd_after is protected on the grid :: fixed protection_tol=1.0e-14, entry_nonzero_tol=1.0e-12
 PASS: S1 zero misaligned survivor entries iff all K-chart periods are even on the grid :: K-periods=(L/2,L,L/2), grid=(8,10,12,14,16,18)
 PASS: S1 protected cases have no nonzero even-d2 survivor entries :: L8=0, L12=0, L16=0
@@ -34,7 +34,12 @@ S2 mechanism witness
 PASS: S2 L=10 has a nonzero surviving misaligned entry witness :: left=(0, 2, 0), right=(0, 1, 4), minimal_delta=(0, -1, -1), d2_parity=0, chart_pair_parity=1, magnitude=7.4832497863019298e-01, magnitude_min=1.0e-06
 PASS: S2 L=16 out-of-sample predicted hold has zero misaligned survivors and protected H_kd_after :: misaligned=0, H_kd_after=0.0000000000000000e+00, protection_tol=1.0e-14
 PASS: S2 memory estimate remains below the fixed 2 GB ceiling :: estimated_peak_dense_bytes=85030560, ceiling=2000000000
-TOTAL: PASS=14 FAIL=0
+S3 source hygiene
+PASS: S3 canonical source metadata is present :: claim_type bounded_theorem; independent audit authority; no-promotion statement
+PASS: S3 runner and cache markdown links are present :: primary runner/cache links seed review discoverability
+PASS: S3 stale predecessor-authority rhetoric is absent :: no sibling branch is cited as settled authority
+PASS: S3 minimal-axiom dependency link is present :: one scope-reference dependency link
+TOTAL: PASS=18 FAIL=0
 
 ----- stderr -----
 

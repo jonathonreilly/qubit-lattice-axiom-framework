@@ -51,8 +51,8 @@ adds no further primitive structure.
 There is one fixed nearest-neighbor admissibility rule, covariant under lattice
 translations and proper cubic rotations.
 
-For each site, nearest-neighbor conditions determine the available subset of
-possibilities.
+For each site, the available possibilities are determined by, and vary with,
+the nearest-neighbor conditions.
 
 ### Record / Fixed Reality
 
@@ -91,11 +91,11 @@ Tier-A admissions recorded in `docs/audit/data/tier_a_admissions.json`.
 ## Relation To Dynamics And Kinetic Branch Selection
 
 Admissibility is not a dynamics axiom. It determines availability by a
-nearest-neighbor rule: for each site, nearest-neighbor conditions determine the
-available subset of possibilities. It does not choose a Hamiltonian or transfer
-operator, supply transition probabilities or weights, select a scalar or
-nonzero kinetic branch, assert a Dirac-square carrier, define a time metric, or
-provide a record-production process.
+nearest-neighbor rule: for each site, the available possibilities are
+determined by, and vary with, the nearest-neighbor conditions. It does not
+choose a Hamiltonian or transfer operator, supply transition probabilities or
+weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
+carrier, define a time metric, or provide a record-production process.
 
 Static spatial kinetic questions, probability/process questions, and temporal
 evolution questions should be tracked separately. A realized kinetic branch, if
@@ -130,8 +130,9 @@ readout structure:
 
 - Qubit names the domain of local possibilities and its full one-site algebraic
   presentation.
-- Admissibility names the nearest-neighbor rule by which, for each site,
-  nearest-neighbor conditions determine the available subset of possibilities.
+- Admissibility names the nearest-neighbor rule by which, for each site, the
+  available possibilities are determined by, and vary with, the
+  nearest-neighbor conditions.
 - Record names the fixed locking of one available local possibility, plus finite
   scalar readout additivity over disjoint record collections.
 - `K`/CPT orbit structure, central-sector decomposition, and any sector
@@ -165,6 +166,7 @@ Record to durable realized-outcome registration in a supplied readout context.
 
 This memo exposes the remaining minimal ontology needed by the blocked audit
 lanes: records are not arbitrary mosaics. The admissibility rule determines the
-available subset of possibilities at each site before a record can lock one
-available local possibility. Probability, dynamics, readout contexts, and
-physical observable bridges remain downstream.
+available possibilities at each site from the nearest-neighbor conditions, and
+those available possibilities vary with those conditions, before a record can
+lock one available local possibility. Probability, dynamics, readout contexts,
+and physical observable bridges remain downstream.

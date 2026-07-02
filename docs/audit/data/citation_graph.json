@@ -3786,10 +3786,6 @@
     },
     {
       "from": "canonical_harness_index",
-      "to": "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03"
-    },
-    {
-      "from": "canonical_harness_index",
       "to": "alpha_s_derived_note"
     },
     {
@@ -4499,10 +4495,6 @@
     {
       "from": "canonical_harness_index",
       "to": "teleportation_protocol_note"
-    },
-    {
-      "from": "canonical_harness_index",
-      "to": "teleportation_native_axioms_theory_note"
     },
     {
       "from": "canonical_harness_index",
@@ -53474,15 +53466,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "axiom_first_lattice_noether_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
@@ -59421,7 +59413,6 @@
         "plaquette_bootstrap_framework_specific_positivity_note_2026-05-03",
         "axiom_first_reflection_positivity_theorem_note_2026-04-29",
         "industrial_sdp_bootstrap_infrastructure_note_2026-05-03",
-        "industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03",
         "alpha_s_derived_note",
         "alpha_lm_geometric_mean_identity_theorem_note_2026-04-24",
         "rconn_derived_note",
@@ -59600,7 +59591,6 @@
         "koide_cone_three_form_equivalence_narrow_theorem_note_2026-05-02",
         "lanes.active_working_lanes_2026-04-26",
         "teleportation_protocol_note",
-        "teleportation_native_axioms_theory_note",
         "teleportation_acceptance_suite_note",
         "frontier_extension_lane_opening_note_2026-04-25",
         "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
@@ -59618,7 +59608,7 @@
         "neutrino_lane4_workstream_closeout_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ca5f74750f88fdf43f3edb25bc22b6a6948ac2d9788ce96f52644c2cda5394fb",
+      "note_hash": "950b01fd1a8d8f264d21c37d9151800d08676c4727d6acaa1529c5ea43951661",
       "path": "docs/CANONICAL_HARNESS_INDEX.md",
       "runner_path": null,
       "title": "Canonical Harness Index"
@@ -103181,16 +103171,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "axiom_first_lattice_noether_theorem_note_2026-04-29",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_vertex_power_derivation",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "aebcfd46efba2e0c9529fa2b348066f6451a27b3d4c224b7d1c42dbac80c2c60",
+      "note_hash": "4aa6fe6076d29d6541f89e306be978ce8611d982c87d875943e526db905c7355",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -118603,7 +118593,7 @@
       "open_gate": 192,
       "positive_theorem": 583
     },
-    "edge_count": 13474,
+    "edge_count": 13472,
     "leaf_count": 1154,
     "node_count": 3619,
     "root_count": 1090,

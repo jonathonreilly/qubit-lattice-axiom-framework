@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py
+runner_sha256: e815638dddd6a3cacebdd858a5c57741108e7850be1b0f9a5880933c429dbd40
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+
+SECTION A - group and orbit classification
+PASS: A1 proper cubic rotation group has 24 elements - count=24
+PASS: A1 proper group is closed under multiplication
+PASS: A1 every proper element has its inverse in the group
+PASS: A2 proper rotations induce 24 distinct six-slot permutations
+PASS: A3 binary neighbor patterns have exactly 10 proper-rotation orbits
+PASS: A3 orbit sizes match the validated inventory - [1, 1, 3, 3, 6, 6, 8, 12, 12, 12]
+PASS: A3 orbit sizes sum to 64
+PASS: A3 every orbit has a single Hamming weight
+PASS: A3 size/weight/description inventory matches anchors - [(1, 0, 'empty'), (1, 6, 'full'), (3, 2, 'antipodal pair'), (3, 4, 'complement of antipodal pair'), (6, 1, 'single occupied neighbor'), (6, 5, 'single vacancy'), (8, 3, 'octant triple'), (12, 2, 'adjacent pair'), (12, 3, 'axial triple'), (12, 4, 'complement of adjacent pair')]
+PASS: A4 Burnside cross-check gives 10 orbits exactly - sum=240
+PASS: A5 inversion slot permutation is absent from the proper rotation action - (1, 0, 3, 2, 5, 4)
+PASS: A5 inversion slot permutation is odd on the six slots
+  improper-extension slot permutations: 48; inversion=(1, 0, 3, 2, 5, 4)
+PASS: A6 value-flip refinement has 6 combined orbits
+PASS: A6 value-flip orbit sizes are [2, 6, 8, 12, 12, 24] - [2, 6, 8, 12, 12, 24]
+
+SECTION B - attainable sets
+PASS: B1 rotation-covariant subset sums miss no k in 0..64 - missing=[]
+PASS: B1 rotation-covariant attainable set has 65 values
+PASS: B2 value-flip attainable k are even only - count=31
+PASS: B2 value-flip k=26 is attainable
+PASS: B2 value-flip k=27 is not attainable
+PASS: B2 value-flip k=28 is attainable
+
+SECTION C - p* recomputed in-packet
+PASS: C1 Haar density mean equals 1 on the centered Weyl grid - mean=1.000000000000001
+PASS: C2 <s2_min>_Haar matches the validated value - s2=9.466227112322
+PASS: C3 p* matches 0.409731 within 5e-6 - p*=0.409730132
+PASS: C4 64 p* is separated from the nearest integer by more than 0.2 - 64p*=26.222728
+PASS: C5 p* is bracketed by 26/64 and 27/64
+PASS: C5 bracket gaps are positive and printed - p*-26/64=0.003480132; 27/64-p*=0.012144868
+
+SECTION D - occupancy residual
+PASS: D1 R26 polynomial evaluates exactly to 13/32 at q=1/2 - value=13/32
+PASS: D1 R26 polynomial has degree at most 6 - 1 - 6q + 27q^2 - 56q^3 + 51q^4 - 18q^5 + 2q^6
+  R26(q) = 1 - 6q + 27q^2 - 56q^3 + 51q^4 - 18q^5 + 2q^6
+  R26 q* roots: 0.495326250643, 0.851530513018
+PASS: D1 R27 polynomial evaluates exactly to 27/64 at q=1/2 - value=27/64
+PASS: D1 R27 polynomial has degree at most 6 - 15q^2 - 48q^3 + 54q^4 - 24q^5 + 3q^6
+  R27(q) = 15q^2 - 48q^3 + 54q^4 - 24q^5 + 3q^6
+  R27 q* roots: 0.276026204497, 0.512443603247
+PASS: D2 at least one exhibited rule has an interior sign-change root - rules_with_roots=2
+PASS: D2 both fixed exhibited rules are scanned without silent replacement
+PASS: D2 every found q* lies in (0,1) - count=4
+PASS: D2 every found q* reproduces p* within 1e-8
+PASS: D3 no found q* equals the uniform baseline within 1e-3
+  Dial discipline: q* is located, not forced; no rule or occupancy law is selected here.
+
+SECTION F - source-boundary guards
+PASS: F files exist: note - docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md
+PASS: F files exist: runner - scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py
+PASS: F files exist: axioms - docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: F files exist: rigidity - docs/G_BARE_RIGIDITY_THEOREM_NOTE.md
+PASS: F files exist: semigroup - docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md
+PASS: F dep marker axioms covariance
+PASS: F dep marker axioms available-subset clause
+PASS: F dep marker axioms no weights
+PASS: F dep marker rigidity normalization
+PASS: F dep marker semigroup boundary
+PASS: F note preserve marker: set only by the independent audit lane
+PASS: F note preserve marker: recorded-neighborhood baseline
+PASS: F note preserve marker: quantized
+PASS: F note preserve marker: k/64
+PASS: F note preserve marker: off-lattice
+PASS: F note preserve marker: occupancy residual
+PASS: F note preserve marker: located, never forced
+PASS: F note preserve marker: not a citation-graph dependency
+PASS: F note preserve marker: does not claim:
+PASS: F note preserve marker: an audit verdict or any effective-status promotion
+PASS: F note preserve marker: does not derive the admissibility rule
+PASS: F note preserve marker: does not derive occupancy statistics
+PASS: F forbidden absent from note: audit_status:
+PASS: F forbidden absent from runner: audit_status:
+PASS: F forbidden absent from note: effective_status:
+PASS: F forbidden absent from runner: effective_status:
+PASS: F forbidden absent from note: only route
+PASS: F forbidden absent from runner: only route
+PASS: F forbidden absent from note: exhausted
+PASS: F forbidden absent from runner: exhausted
+PASS: F forbidden absent from note: closes the route
+PASS: F forbidden absent from runner: closes the route
+
+TOTAL: PASS=67 FAIL=0
+
+----- stderr -----
+

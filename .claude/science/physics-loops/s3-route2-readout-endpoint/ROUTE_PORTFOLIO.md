@@ -1,28 +1,32 @@
 # Route Portfolio
 
-## Route A: Direct Consumer Dependency Split
+## Block28 Route Chosen
 
-Goal: classify immediate S3-time consumers by exact readout dependence.
+**Quark up-amplitude scalar-bypass firewall.**
 
-Block27 result: exact support. The dependency split is now mechanical:
-rho_E-blind structural support is safe; unique readout claims remain open.
+Question:
 
-## Route B: Physical Gate Primitive Selector
+```text
+Can current-main up-amplitude scalar routes determine selected P_R without
+entering the Route-2 E-center readout family?
+```
 
-Goal: find or prove a selected physical/canonical gate readout map.
+Result: no-go for that bypass route.
 
-Block27 result: still open. Eta-floor membership is not a selector.
+## Alternatives
 
-## Route C: E-Center Positive Theorem
+1. **Physical/canonical gate selector search.**
+   High relevance, but block27 and current-main notes show it is likely to
+   repeat eta-floor membership rather than select `P_R`.
 
-Goal: supply an E-center endpoint ratio, source-domain rule, or stronger
-readout-map theorem.
+2. **Direct E-center lift attempt.**
+   Still the central positive route. Needs a new premise or theorem that sees
+   the E-center column.
 
-Block27 result: still the main positive target.
+3. **Typed reduced-amplitude-to-readout edge.**
+   Newly sharpened by block28. A positive route would need to map exact
+   reduced up-amplitude support into the selected Route-2 readout family.
 
-## Route D: Independent Non-Route-2 Scalar Route
-
-Goal: find a scalar-law path outside the blocked Route-2 endpoint selector.
-
-Block27 status: next queue candidate if direct-consumer classification is
-enough for the reviewer.
+4. **Source-domain bridge.**
+   Prior blocks show source-domain typecasts leave scale or E-center freedom
+   unless an additional typed landing rule is supplied.

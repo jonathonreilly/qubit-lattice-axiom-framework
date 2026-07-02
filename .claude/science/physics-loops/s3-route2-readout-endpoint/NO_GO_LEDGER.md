@@ -1,20 +1,25 @@
 # No-Go Ledger
 
-## Prior Endpoint Blocks
+## Block28
 
-- Source scalar support does not land in Route-2 center readout without a typed
-  edge.
-- Source-augmented E-center-blind signatures do not select the E-center lift.
-- Positivity, shell data, low-rational filters, and T-side values do not select
-  the E-channel entry.
+Route:
 
-## Block27
+```text
+rho_E-free up-amplitude scalar support -> selected Route-2 P_R
+```
 
-Direct-consumer split:
+Verdict: no-go on current main.
 
-- Structural S3-time factor-rigidity is rho_E-blind exact support.
-- Unique S3-time coupling and primitive-chain final use are E-center-sensitive.
-- Eta-floor live affine membership is not a physical/canonical selector.
+Reason:
 
-This is not a new endpoint no-go. It is a support packet showing which direct
-consumer claims inherit the open selector.
+- rho_E-free routes constrain reduced scalar support but do not select `P_R`.
+- endpoint-readout-sensitive routes inherit the E-center/readout primitive.
+- exact Route-2 time coupling remains conditional on supplied `P_R`.
+
+## Prior Campaign Memory
+
+- Typecast scale normalization leaves a free scale unless a typed landing rule
+  is supplied.
+- Source-augmented E-center-blind data leaves the E-center lift free.
+- Direct consumers split into rho_E-blind structural support and
+  E-center-sensitive open claims.

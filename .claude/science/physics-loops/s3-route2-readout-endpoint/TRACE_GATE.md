@@ -1,17 +1,18 @@
 # Trace Gate
 
 ```yaml
-trace_class: upstream_support
+trace_class: negative_route_pruning
 target_claim_id: s3_time_theta_to_slice_coupling_note
-target_blocker_text: "direct consumers must not confuse rho_E-blind structural support with selected readout-map closure"
+target_blocker_text: "fallback scalar/direct-consumer routes must not be mistaken for selected P_R closure"
 source_of_blocker_text: handoff
-reachability_to_target: supports
+reachability_to_target: prunes
 artifact_role: runner_certificate
-next_trace_action: "look for a physical/canonical gate readout selector or pivot to an independent scalar route"
+next_trace_action: "attempt either a direct E-center lift or a typed reduced-amplitude-to-readout edge"
 ```
 
 ## Reachability
 
-Block27 supports the S3-time direct consumer by separating usable structural
-support from E-center-sensitive claims. It does not close the endpoint and does
-not update any repo-wide status surface.
+Block28 prunes a false bypass: current-main quark up-amplitude scalar support
+does not select the Route-2 readout map. This supports the S3/Route-2 endpoint
+campaign by narrowing the remaining positive routes to a real E-center/readout
+primitive or a typed bridge into selected `P_R`.

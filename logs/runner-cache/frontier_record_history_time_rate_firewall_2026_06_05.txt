@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_history_time_rate_firewall_2026_06_05.py
-runner_sha256: d6f296fd41867dd4f2019cea671d795ba00cedd319c4b497a6283a65077fdb20
+runner_sha256: 6ac2cece90dc65f993d425527f943df60d2ab7617f8176399cc43500e7572881
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -63,12 +63,16 @@ bounded-support / negative-route-pruning runner
 6. Source note sanity
 ------------------------------------------------------------------------------
   [PASS] source note exists (docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md)
-  [PASS] note contains marker: actual_current_surface_status: bounded-support
-  [PASS] note contains marker: trace_class: negative_route_pruning
-  [PASS] note contains marker: conditional_surface_status:
+  [PASS] note contains marker: claim_type_author_hint: no_go
+  [PASS] note contains marker: **Claim type:** no_go
+  [PASS] note contains marker: bounded negative route-pruning certificate
+  [PASS] note contains marker: Trace class: negative route pruning
   [PASS] note contains marker: Does not derive physical time
   [PASS] note contains marker: Does not select a generation/Koide dial setting.
-  [PASS] note contains marker: audit_required_before_effective_retained: true
+  [PASS] note contains marker: This row is not a positive time/rate theorem.
+  [PASS] note contains marker: It is not a production theorem
+  [PASS] note contains marker: makes no retained-status proposal
+  [PASS] note contains marker: does not use bare retained language
   [PASS] forbidden wording absent: time closure
   [PASS] forbidden wording absent: rate closure
   [PASS] forbidden wording absent: generator closure
@@ -78,7 +82,7 @@ bounded-support / negative-route-pruning runner
 ------------------------------------------------------------------------------
 SCORECARD
 ------------------------------------------------------------------------------
-SCORECARD PASS=40 FAIL=0
+SCORECARD PASS=44 FAIL=0
 
 ----- stderr -----
 

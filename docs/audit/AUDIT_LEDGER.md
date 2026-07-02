@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 924 |
+| **retained_bounded** | 925 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1631 |
+| unaudited | 1630 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1347 |
+| `audited_clean` | 1348 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1957 |
+| `unaudited` | 1956 |
 
 | claim_type | count |
 |---|---:|
@@ -1440,6 +1440,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_static_single_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `weak_coupling_retention_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `wide_family_h0125_bridge_reopen_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wide_lattice_h2t_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wide_lattice_h2t_skeptic_audit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -20854,6 +20855,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** The weak-coupling regime is the strongest currently known sign-sensitive regime on the irregular graph families, with attractive coupling almost always contracting more and widening the spectral gap more than repulsive coupling.  _(class `C`)_
 - **chain closes:** True — The runner source genuinely constructs the graph families, Laplacian, parity-coupled Hamiltonian, Crank-Nicolson evolution, width, gap, and shell-force observables, and the cached output matches the note's reported counts and caveats. The audited scope is bounded to this explicit computational battery and does not close the broader off-lattice blocker.
 - **rationale:** Within the bounded computational scope, the claim follows from the completed runner output and the runner source does not hard-code the contested result or import it from another note. The note accurately preserves the non-universality caveats: 14/15 rather than 15/15 width separation and nonzero repulsive shell-force counts in some random-geometric runs. No external comparator or open cited dependency is used for the bounded claim.
+- **auditor confidence:** high
+
+### `wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07`
+
+- **Note:** [`WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md`](../../docs/WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional Clifford/spinor algebra orientation showing that the standard Wick map sends compact Spin(4) mixed rotations to Lorentzian non-compact boosts and is compatible with C^4 Dirac chiral doubling and the massive on-shell projector, without any framework time, dynamics, CAR, positive-energy, or interacting-field claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T043950Z-68f5b353-wick_rotation_compact_so`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Define gamma^0 = gamma^E_4 and gamma^j = i gamma^E_j; then the Lorentzian Clifford signature, non-compact boost sign [K_i,K_j] = -J_k, and C^4 chiral/projector facts follow by finite matrix algebra.  _(class `A`)_
+- **chain closes:** True — The asserted gamma-map, generator-adjointness, Lie-bracket signs, chirality traces, and on-shell idempotence are direct finite Clifford-algebra identities. The cited authorities are retained-grade for the bounded endpoints, and the note does not use the excluded framework-realization claims as premises.
+- **rationale:** The runner actually constructs 4x4 gamma matrices and checks the load-bearing algebraic signs and projector identities rather than reading fitted or external values. Independent sign checks confirm that the 1/4[gamma,gamma] convention gives compact Euclidean mixed generators, Hermitian Lorentzian boosts, and [K,K] = -J. The boundary language is scoped as exclusions, not as a no-go closure or hidden premise, so the finite algebra core closes cleanly at bounded scope.
 - **auditor confidence:** high
 
 ### `wide_family_h0125_bridge_reopen_audit`

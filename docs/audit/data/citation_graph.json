@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
         "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
         "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
         "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
         "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
         "car_from_positivity_neutrality_note_2026-06-02",
         "koide_fisher_rao_spherical_reorganization_note_2026-06-01",
-        "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11"
+        "signed_gravity_product_grading_eta_sector_selection_bridge_narrow_theorem_note_2026-06-11",
+        "chirality_separate_factor_dirac_mass_algebra_support_bounded_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "70a6aaba7eec5fe87cad804c2554582453cb88283c71927f14d298be3c06300b",
+      "note_hash": "2d770c8a6e2e1f65839c129afea42e014d5280eafc1b647ad84c1ccdba1429c8",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

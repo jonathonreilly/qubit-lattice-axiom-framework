@@ -1,24 +1,23 @@
 # Artifact Plan
 
-## Block17 Artifacts
+## Block18 Artifacts
 
 - Source note:
-  `docs/QUARK_ROUTE2_FINITE_FRAME_DUAL_LEG_COUNT_BOUNDARY_NOTE_2026-06-21.md`
+  `docs/QUARK_ROUTE2_COEFFICIENT_SELECTION_BOUNDARY_NOTE_2026-06-21.md`
 - Runner:
-  `scripts/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.py`
+  `scripts/frontier_quark_route2_coefficient_selection_boundary_2026_06_21.py`
 - Runner cache:
-  `logs/runner-cache/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.txt`
+  `logs/runner-cache/frontier_quark_route2_coefficient_selection_boundary_2026_06_21.txt`
 - Loop pack:
   `.claude/science/physics-loops/s3-route2-readout-endpoint/`
 
 ## Verification Plan
 
-- New finite-frame/Riesz runner.
+- New coefficient-selection boundary runner.
 - Exact readout-map runner.
-- Kappa-squared covariance no-go runner.
+- Ell-E structural narrowing runner.
+- E-center blindness runner.
+- Kappa covariance no-go runner.
 - Quadratic covariance no-go runner.
-- E-center lift derivation attempt runner.
-- Exact time-coupling runner.
 - Parent theta-to-slice runner.
-- Bilinear tensor carrier runner.
 - `py_compile`, `git diff --check`, and overclaim wording scan.

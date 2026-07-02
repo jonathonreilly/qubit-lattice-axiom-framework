@@ -1,8 +1,8 @@
 # Literature Bridges
 
-No external literature bridge is used in block17. The calculation is finite
-linear algebra on the six-arm `O_h` star and exact Route-2 endpoint algebra.
+No external literature bridge is used in block18. The result is exact rational
+algebra over repo-internal Route-2 endpoint notes.
 
-Any future source/readout split theorem would need to be entered here if it
-depends on an external frame, finite-element, or representation-theory theorem
-beyond the repo's current exact finite-dimensional algebra.
+Any future variational or source/readout selector imported from outside the
+repo must be entered here with its role classified as theorem, bridge,
+comparator, or admitted convention.

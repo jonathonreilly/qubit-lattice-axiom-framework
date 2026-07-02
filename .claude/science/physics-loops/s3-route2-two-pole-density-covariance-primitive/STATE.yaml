@@ -1,0 +1,43 @@
+loop_slug: s3-route2-two-pole-density-covariance-primitive
+date: 2026-06-21
+branch: physics-loop/s3-route2-two-pole-density-covariance-block43-20260621
+base_ref: origin/main
+base_commit: c250a51b40cbf43112c3dd56d32b33510ac92983
+mode: physics-loop
+block: 43
+active_route: two-pole channel-density covariance primitive candidate
+target_status: conditional-support
+actual_current_surface_status: conditional-support
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+repo_authority_edits: false
+audit_or_verdicts_run: false
+mergeability_or_conflict_checks_run: false
+remote_pr:
+  number: 4573
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4573
+created_files:
+  - docs/QUARK_ROUTE2_TWO_POLE_DENSITY_COVARIANCE_PRIMITIVE_CANDIDATE_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_two_pole_density_covariance_candidate_2026_06_21.py
+  - outputs/frontier_quark_route2_two_pole_density_covariance_candidate_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-two-pole-density-covariance-primitive/
+open_imports:
+  - Derive channel-density normalization from support/readout structure.
+  - Derive density-covariance readout from the current tensor primitive.
+  - Or prove the current polynomial carrier cannot supply those steps.
+verification:
+  new_runner: "PASS=18 FAIL=0 TOTAL=18"
+  py_compile: pass
+  parent_checks:
+    - "frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py: PASS=11 FAIL=0"
+    - "frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py: PASS=7 FAIL=0"
+    - "frontier_quark_route2_exact_readout_map.py: PASS=11 FAIL=0"
+    - "frontier_quark_route2_e_center_blindness_no_go.py: PASS=14 FAIL=0"
+    - "frontier_quark_route2_source_domain_bridge_no_go.py: PASS=103 FAIL=0"
+  diff_check: pass
+  overclaim_scan: pass
+lock_status: "repo automation lock not acquired in this branch; branch-local lock discipline used"
+next_exact_action: "Pivot to deriving the density-normalization step or proving a no-go for the current polynomial carrier."

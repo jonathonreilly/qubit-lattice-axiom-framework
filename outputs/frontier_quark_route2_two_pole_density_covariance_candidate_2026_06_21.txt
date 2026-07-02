@@ -1,0 +1,53 @@
+Route-2 two-pole channel-density covariance primitive candidate
+Scope: conditional support; current surface does not supply channel-density covariance primitive
+
+PART 1: exact target
+PASS: channel weights are w_E=1/3 and w_T=1/2 -- w_E/w_T=2/3
+PASS: inverse-square channel law gives lambda=9/4
+PASS: lambda=9/4 gives q_E=15/8, rho_E=21/4, c_TE=-8/9 -- q_E=15/8, rho_E=21/4, c_TE=-8/9
+
+PART 2: pipeline variants
+PASS: raw amplitude response -- p=0, lambda=1, rho_E=-1
+PASS: single channel-density response -- p=-1, lambda=3/2, rho_E=3/2
+PASS: raw channel-volume quadratic response -- p=2, lambda=4/9, rho_E=-34/9
+PASS: channel-density covariance response -- p=-2, lambda=9/4, rho_E=21/4
+
+PART 3: simple normalize-then-power pipeline
+  divisions=0, degree=1: p=0, lambda=1
+  divisions=0, degree=2: p=0, lambda=1
+  divisions=0, degree=3: p=0, lambda=1
+  divisions=0, degree=4: p=0, lambda=1
+  divisions=1, degree=1: p=-1, lambda=3/2
+  divisions=1, degree=2: p=-2, lambda=9/4
+  divisions=1, degree=3: p=-3, lambda=27/8
+  divisions=1, degree=4: p=-4, lambda=81/16
+  divisions=2, degree=1: p=-2, lambda=9/4
+  divisions=2, degree=2: p=-4, lambda=81/16
+  divisions=2, degree=3: p=-6, lambda=729/64
+  divisions=2, degree=4: p=-8, lambda=6561/256
+  divisions=3, degree=1: p=-3, lambda=27/8
+  divisions=3, degree=2: p=-6, lambda=729/64
+  divisions=3, degree=3: p=-9, lambda=19683/512
+  divisions=3, degree=4: p=-12, lambda=531441/4096
+  divisions=4, degree=1: p=-4, lambda=81/16
+  divisions=4, degree=2: p=-8, lambda=6561/256
+  divisions=4, degree=3: p=-12, lambda=531441/4096
+  divisions=4, degree=4: p=-16, lambda=43046721/65536
+PASS: simple pipeline reaches target exactly when divisions*degree=2 -- hits=[(1, 2, -2), (2, 1, -2)]
+PASS: quadratic covariance route needs exactly one channel-volume division -- covariance_hits=[(1, 2, -2)]
+PASS: one channel-density normalization needs quadratic response -- one_normalization_hits=[(1, 2, -2)]
+
+PART 4: typed reachability firewall
+PASS: current graph has no path to density covariance readout
+PASS: current graph has no path to rho_E=21/4
+PASS: adding channel-density covariance primitive reaches rho_E=21/4
+PASS: adding channel-density covariance primitive reaches c_TE=-8/9
+
+PART 5: current-surface quote anchors
+PASS: quote anchors present: exact readout missing entry -- all anchors found
+PASS: quote anchors present: kappa covariance bridge remains open -- all anchors found
+PASS: quote anchors present: quadratic note names inverse-square gap -- all anchors found
+PASS: quote anchors present: current bilinear carrier is polynomial definition -- all anchors found
+
+PASS=18 FAIL=0 TOTAL=18
+VERDICT: conditional support. A channel-density covariance primitive D_X=A_X/w_X followed by q_X proportional to D_X^2 gives the exact inverse-square law and endpoint triple; the current surface does not supply that primitive.

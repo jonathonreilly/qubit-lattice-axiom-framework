@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/theta_supplier_flavored_grading_spectral_flow_2026_07_02.py
+runner_sha256: e44f2980c8b6048a4ddbef6bb6c2dc648f35fb025a43edc4ca57ee09b37c71e4
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+PASS: flux self-check L=8 Q=0 -- tot=0 target=0 err=0.000e+00
+PASS: flux self-check L=8 Q=1 -- tot=6.28318530717958 target=6.28318530717959 err=6.217e-15
+PASS: D anti-Hermitian and eps anticommutes with D L=8 Q=0 -- ||D+D^dag||=0.000e+00 ||{eps,D}||=0.000e+00
+PASS: D anti-Hermitian and eps anticommutes with D L=8 Q=1 -- ||D+D^dag||=0.000e+00 ||{eps,D}||=0.000e+00
+PASS: Gamma_f/Gamma_w Hermitian and eps-commuting L=8 Q=0 -- Gf herm=0.000e+00 Gw herm=0.000e+00 [eps,Gf]=0.000e+00 [eps,Gw]=0.000e+00
+PASS: Gamma_f/Gamma_w Hermitian and eps-commuting L=8 Q=1 -- Gf herm=0.000e+00 Gw herm=0.000e+00 [eps,Gf]=0.000e+00 [eps,Gw]=0.000e+00
+PASS: forced-i identities -- eta2 C1 + C1 eta2=0.000e+00 eta2 C2 - C2 eta2=0.000e+00 eta2 S + S eta2=0.000e+00
+PASS: rejector gate Ge non-Hermitian -- ||Ge-Ge^dag||=7.990364
+PASS: free-field spectrum of Gamma_f L=8 -- maxdev=7.772e-16
+PASS: dressing discriminator free field L=8 -- ||{Gamma_f,D}||=0.000000 ||{Gamma_w,D}||=5.656854
+PASS: conjugation antisymmetry -- m=0.2: 0.000e+00 m=0.5: 0.000e+00
+PASS: flux self-check L=8 Q=-2 -- tot=-12.5663706143592 target=-12.5663706143592 err=8.882e-15
+PASS: registration Gamma_f L=8 Q=-2 -- flows=[4, 4, 4, 4, 4] target=[4, 4, 4, 4, 4]
+PASS: blind control eps L=8 Q=-2 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=8 Q=-2 -- flows=[0, 0, 0, 0, 0]
+PASS: flux self-check L=8 Q=-1 -- tot=-6.28318530717958 target=-6.28318530717959 err=6.217e-15
+PASS: registration Gamma_f L=8 Q=-1 -- flows=[2, 2, 2, 2, 2] target=[2, 2, 2, 2, 2]
+PASS: blind control eps L=8 Q=-1 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=8 Q=-1 -- flows=[0, 0, 0, 0, 0]
+MEASURED: gauged ||{Gamma_f,D}||_F L=8 Q=0 = 0.000000
+PASS: registration Gamma_f L=8 Q=0 -- flows=[0, 0, 0, 0, 0] target=[0, 0, 0, 0, 0]
+PASS: blind control eps L=8 Q=0 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=8 Q=0 -- flows=[0, 0, 0, 0, 0]
+MEASURED: gauged ||{Gamma_f,D}||_F L=8 Q=1 = 0.480184
+PASS: registration Gamma_f L=8 Q=1 -- flows=[-2, -2, -2, -2, -2] target=[-2, -2, -2, -2, -2]
+PASS: blind control eps L=8 Q=1 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=8 Q=1 -- flows=[0, 0, 0, 0, 0]
+PASS: flux self-check L=8 Q=2 -- tot=12.5663706143592 target=12.5663706143592 err=8.882e-15
+MEASURED: gauged ||{Gamma_f,D}||_F L=8 Q=2 = 0.955743
+PASS: registration Gamma_f L=8 Q=2 -- flows=[-4, -4, -4, -4, -4] target=[-4, -4, -4, -4, -4]
+PASS: blind control eps L=8 Q=2 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=8 Q=2 -- flows=[0, 0, 0, 0, 0]
+PASS: flux self-check L=12 Q=-2 -- tot=-12.5663706143592 target=-12.5663706143592 err=1.243e-14
+PASS: registration Gamma_f L=12 Q=-2 -- flows=[4, 4, 4, 4, 4] target=[4, 4, 4, 4, 4]
+PASS: blind control eps L=12 Q=-2 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=12 Q=-2 -- flows=[0, 0, 0, 0, 0]
+PASS: flux self-check L=12 Q=-1 -- tot=-6.28318530717958 target=-6.28318530717959 err=6.217e-15
+PASS: registration Gamma_f L=12 Q=-1 -- flows=[2, 2, 2, 2, 2] target=[2, 2, 2, 2, 2]
+PASS: blind control eps L=12 Q=-1 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=12 Q=-1 -- flows=[0, 0, 0, 0, 0]
+PASS: flux self-check L=12 Q=0 -- tot=0 target=0 err=0.000e+00
+MEASURED: gauged ||{Gamma_f,D}||_F L=12 Q=0 = 0.000000
+PASS: registration Gamma_f L=12 Q=0 -- flows=[0, 0, 0, 0, 0] target=[0, 0, 0, 0, 0]
+PASS: blind control eps L=12 Q=0 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=12 Q=0 -- flows=[0, 0, 0, 0, 0]
+PASS: flux self-check L=12 Q=1 -- tot=6.28318530717958 target=6.28318530717959 err=6.217e-15
+MEASURED: gauged ||{Gamma_f,D}||_F L=12 Q=1 = 0.320536
+PASS: registration Gamma_f L=12 Q=1 -- flows=[-2, -2, -2, -2, -2] target=[-2, -2, -2, -2, -2]
+PASS: blind control eps L=12 Q=1 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=12 Q=1 -- flows=[0, 0, 0, 0, 0]
+PASS: flux self-check L=12 Q=2 -- tot=12.5663706143592 target=12.5663706143592 err=1.243e-14
+MEASURED: gauged ||{Gamma_f,D}||_F L=12 Q=2 = 0.640461
+PASS: registration Gamma_f L=12 Q=2 -- flows=[-4, -4, -4, -4, -4] target=[-4, -4, -4, -4, -4]
+PASS: blind control eps L=12 Q=2 -- flows=[0, 0, 0, 0, 0]
+PASS: blind control Gamma_w L=12 Q=2 -- flows=[0, 0, 0, 0, 0]
+PASS: flux self-check L=8 Q=1 gauge_seed=7 -- tot=6.28318530717958 target=6.28318530717959 err=4.441e-15
+PASS: gauge covariance seed 7 L=8 Q=1 -- flow(Gamma_f)=[-2, -2, -2, -2, -2] flow(eps)=[0, 0, 0, 0, 0]
+PASS: flux self-check L=8 Q=1 deform_seed=11 amp=0.05 -- tot=6.28318530717959 target=6.28318530717959 err=2.665e-15
+PASS: deformation invariance seed 11 L=8 Q=1 -- flow(Gamma_f)=[-2, -2, -2, -2, -2, -2] flow(eps)=[0, 0, 0, 0, 0, 0]
+PASS: flux self-check L=8 Q=2 deform_seed=11 amp=0.05 -- tot=12.5663706143592 target=12.5663706143592 err=1.776e-15
+PASS: deformation invariance seed 11 L=8 Q=2 -- flow(Gamma_f)=[-4, -4, -4, -4, -4, -4] flow(eps)=[0, 0, 0, 0, 0, 0]
+PASS: undressed-S rejection -- REJECTED (ambiguous zero mode / no quantized flow); ||S-S^dag||=0.000e+00 error=ambiguous zero eigenvalue, gap=1.06e-15
+MEASURED: heat trace L=8 Q=0 t=0.5 value=-2.220e-15+0.000e+00j abs=2.220e-15
+MEASURED: heat trace L=8 Q=0 t=1.0 value=-4.441e-16+0.000e+00j abs=4.441e-16
+MEASURED: heat trace L=8 Q=1 t=0.5 value=-1.288e-14-4.379e-17j abs=1.288e-14
+MEASURED: heat trace L=8 Q=1 t=1.0 value=-8.771e-15-3.636e-17j abs=8.771e-15
+MEASURED: heat trace L=8 Q=2 t=0.5 value=3.331e-15-1.007e-17j abs=3.331e-15
+MEASURED: heat trace L=8 Q=2 t=1.0 value=5.551e-15-3.962e-18j abs=5.551e-15
+PASS: heat-trace control -- max_abs=1.288e-14
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

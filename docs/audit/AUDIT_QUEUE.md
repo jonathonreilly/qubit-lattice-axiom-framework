@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 1714
-**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 98
+**Total pending:** 1713
+**Ready (all deps at retained-grade/metadata tiers or accepted premises: axiom/primitive nodes and Tier-A admitted derivation targets):** 99
 
 By criticality:
-- `critical`: 303
+- `critical`: 302
 - `high`: 314
 - `medium`: 513
 - `leaf`: 584
@@ -15,8 +15,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 
 | # | claim_id | claim_type | reason | criticality | desc | score | ready | indep required | runner |
 |---:|---|---|---|---|---:|---:|:---:|---|---|
-| 1 | `yt_ward_identity_derivation_theorem` | bounded_theorem | audit_in_progress | critical | 822 | 40.69 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_ward_identity_derivation.py` |
-| 2 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 764 | 21.08 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py` |
+| 1 | `cl3_taste_generation_theorem` | bounded_theorem | unaudited | critical | 764 | 21.08 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py` |
+| 2 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | positive_theorem | unaudited | critical | 684 | 12.92 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p1_h_unit_renormalization.py` |
 | 3 | `axiom_first_cpt_theorem_stretch_note_2026-04-29` | bounded_theorem | unaudited | critical | 384 | 12.09 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/axiom_first_cpt_check.py` |
 | 4 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 290 | 9.19 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
 | 5 | `hierarchy_b3_staggered_supplier_cascade_note_2026-06-17` | bounded_theorem | unaudited | critical | 269 | 9.08 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py` |
@@ -64,7 +64,7 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 47 | `ckm_atlas_triangle_right_angle_theorem_note_2026-04-24` | positive_theorem | unaudited | critical | 737 | 23.03 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ckm_atlas_triangle_right_angle.py` |
 | 48 | `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` | positive_theorem | unaudited | critical | 727 | 28.01 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_ckm_magnitudes_structural_counts.py` |
 | 49 | `s3_anomaly_spacetime_lift_note` | open_gate | unaudited | critical | 687 | 15.93 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_s3_anomaly_spacetime_lift.py` |
-| 50 | `yt_p1_h_unit_renormalization_framework_native_note_2026-04-17` | positive_theorem | unaudited | critical | 684 | 12.92 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_yt_p1_h_unit_renormalization.py` |
+| 50 | `universal_gr_tensor_variational_candidate_note` | bounded_theorem | unaudited | critical | 683 | 14.92 |  | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_universal_gr_tensor_variational_candidate.py` |
 
 ## Citation cycle break targets
 

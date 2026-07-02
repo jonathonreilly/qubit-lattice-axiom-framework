@@ -1,0 +1,55 @@
+PASS: su3_adjoint_fraction_nc3 -- R_conn=8/9
+PASS: su3_adjoint_fraction_nc2_control -- R_conn(Nc=2)=3/4
+PASS: su3_adjoint_fraction_nc4_control -- R_conn(Nc=4)=15/16
+PASS: granted_q_T_exact -- q_T=5/6
+PASS: granted_shell_ratio_exact -- s_TE=-2
+PASS: center_ratio_numerator_negative -- s_TE*q_T=-5/3
+PASS: signed_bridge_forces_q_E -- q_E=15/8
+PASS: signed_bridge_forces_rho_E -- rho_E=21/4
+PASS: target_q_to_rho_equivalence -- rho_E=6(q_E-1)
+PASS: target_rho_to_q_equivalence -- q_E=1+rho_E/6
+PASS: magnitude_negative_branch_has_abs_R_conn -- c_TE=-8/9
+PASS: magnitude_positive_branch_has_abs_R_conn -- c_TE=8/9
+PASS: magnitude_negative_branch_is_target -- q_E=15/8, rho_E=21/4
+PASS: magnitude_positive_branch_is_wrong_sign -- q_E=-15/8, rho_E=-69/4
+PASS: positive_branch_violates_q_positive -- q_E=-15/8
+PASS: positive_branch_violates_rho_bound -- rho_E=-69/4 < -6
+PASS: negative_branch_satisfies_positivity -- q_E=15/8, rho_E=21/4
+PASS: positivity_forces_negative_center_ratio -- c_TE=-8/9
+PASS: magnitude_plus_positivity_forces_q_E -- q_E=15/8
+PASS: magnitude_plus_positivity_forces_rho_E -- rho_E=21/4
+PASS: sign_lemma_all_positive_q_examples_have_negative_center_ratio -- q=1/6 -> c=-10, q=1 -> c=-5/3, q=15/8 -> c=-8/9, q=7/3 -> c=-5/7
+PASS: sign_lemma_algebraic_reason -- c_TE=(s_TE*q_T)/q_E and q_E>0, so sign(c_TE)=negative
+PASS: positivity_bound_admits_multiple_rhos -- 0, 1, 21/4, 8
+PASS: positivity_alone_does_not_select_magnitude -- -5/3, -10/7, -8/9, -5/7
+PASS: only_target_example_has_R_conn_magnitude -- among tested positive examples
+PASS: rho_bound_equivalent_to_q_positive_on_controls -- rho=-69/4 q=-15/8, rho=-7 q=-1/6, rho=-5 q=1/6, rho=0 q=1, rho=21/4 q=15/8
+PASS: wrong_nc2_magnitude_changes_q_E -- q_E=20/9
+PASS: wrong_nc2_magnitude_changes_rho_E -- rho_E=22/3
+PASS: wrong_denominator5_changes_q_T -- q_T=4/5
+PASS: wrong_denominator5_changes_endpoint -- q_E=9/5, rho_E=4
+PASS: wrong_denominator12_changes_q_T -- q_T=11/12
+PASS: wrong_denominator12_changes_endpoint -- q_E=33/16, rho_E=51/4
+PASS: current_bank_lacks_signed_bridge_edge
+PASS: current_bank_lacks_magnitude_bridge_edge
+PASS: current_bank_has_no_R_conn_to_rho_path
+PASS: magnitude_without_sign_reduction_has_no_rho_path
+PASS: magnitude_plus_positivity_sign_edge_reaches_rho
+PASS: authority_anchor_RCONN_DERIVED_NOTE.md_1 -- At `N_c = 3`, `F_adj = 8/9`.
+PASS: authority_anchor_RCONN_DERIVED_NOTE.md_2 -- The exact `8/9` support remains available as `F_adj`, not as a
+PASS: authority_anchor_QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md_1 -- The sign and endpoint orientation are not supplied by the color projection
+PASS: authority_anchor_QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md_2 -- There is no current typed edge
+PASS: authority_anchor_ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md_1 -- **one-sided bound** `rho_E > -6`
+PASS: authority_anchor_ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md_2 -- Selecting `rho_E` requires a shell-vs-center **distinguishing** input.
+PASS: authority_anchor_QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md_1 -- c_TE  := gamma_T(center) / gamma_E(center) = s_TE * q_T / q_E.
+PASS: authority_anchor_QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md_2 -- q_T = 5/6,  s_TE = -2,  c_TE = -8/9
+PASS: authority_anchor_QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md_1 -- Use `F_adj = 8/9` as `|c_TE|`
+PASS: authority_anchor_QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md_2 -- Needs the typed signed bridge `gamma_T(center)/gamma_E(center) = -R_conn`
+PASS: paired_note_exists -- docs/QUARK_ROUTE2_RCONN_MAGNITUDE_SIGN_SPLIT_EXACT_SUPPORT_NOTE_2026-06-21.md
+PASS: paired_note_states_not_magnitude_derivation
+PASS: paired_note_keeps_exact_support_status
+PASS: paired_note_avoids_banned_overclaim_phrases
+PASS: paired_note_status_line_not_bare_retained
+
+TOTAL: PASS=52 FAIL=0
+VERDICT: exact support only. If a typed magnitude bridge |gamma_T(center)/gamma_E(center)|=R_conn=8/9 is supplied, the existing q_E>0 positivity bound forces c_TE=-R_conn, hence q_E=15/8 and rho_E=21/4. The current bank still lacks the typed magnitude bridge, so this is not an endpoint derivation.

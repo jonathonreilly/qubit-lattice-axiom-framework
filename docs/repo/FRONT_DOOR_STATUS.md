@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 882 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
-| Unaudited rows | 1713 |
+| Unaudited rows | 1712 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 32 |
 | Audited renaming rows | 25 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; unaudited
+- [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; audit_in_progress
 - [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 - [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; unaudited

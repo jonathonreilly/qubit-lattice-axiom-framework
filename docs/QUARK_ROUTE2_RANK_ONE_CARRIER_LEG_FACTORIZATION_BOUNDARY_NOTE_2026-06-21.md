@@ -1,14 +1,17 @@
 # Route-2 Rank-One Carrier Leg-Factorization Boundary
 
 **Date:** 2026-06-21  
-**Claim type:** no-go / exact carrier-factorization boundary  
+**Claim type:** no_go
+**Claim scope:** no-go / exact carrier-factorization boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go  
 **Trace class:** negative_route_pruning  
 **Reachability to target:** prunes the route that tries to extract the needed
 two reciprocal source/readout factors from the current `K_R` carrier
 factorization alone.  
-**Primary runner:** [`scripts/frontier_quark_route2_rank_one_carrier_leg_factorization_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_rank_one_carrier_leg_factorization_boundary_2026_06_21.py)  
-**Runner cache:** `logs/runner-cache/frontier_quark_route2_rank_one_carrier_leg_factorization_boundary_2026_06_21.txt`
+**Primary runner:** [`scripts/frontier_quark_route2_rank_one_carrier_leg_factorization_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_rank_one_carrier_leg_factorization_boundary_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_rank_one_carrier_leg_factorization_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_rank_one_carrier_leg_factorization_boundary_2026_06_21.txt)
+**Authority links:** [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md), [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
 ## Boundary
 

@@ -234,7 +234,8 @@ def main() -> int:
         firewall = (
             "does not prove impossibility over arbitrary future nonlinear observables" in text
             and "No observed masses, fitted targets, or PDG values" in text
-            and "not a retained-status claim" in text
+            and "**Claim type:** no_go" in text
+            and "independent audit lane only" in text
         )
         record(
             "the paired note carries the claim-status and forbidden-import firewall",

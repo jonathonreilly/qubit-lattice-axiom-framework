@@ -1,8 +1,12 @@
 # Quark Route-2 Color-Complement Seven-Eighths Bridge No-Go
 
 **Date:** 2026-06-21
-**Type:** exact negative boundary / no-go
-**Primary runner:** [scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py](../scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py)
+**Claim type:** no_go
+**Claim scope:** exact negative boundary / no-go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_color_complement_seven_eighths_bridge_no_go_2026_06_21.txt)
+**Authority links:** [`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md), [`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md), [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
 
 ```yaml
 actual_current_surface_status: no-go

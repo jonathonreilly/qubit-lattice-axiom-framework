@@ -1,7 +1,9 @@
 # Route-2 Dual-Normalized Source/Readout Two-Factor Bridge
 
 **Date:** 2026-06-21  
-**Claim type:** conditional support / exact source-readout normalization boundary  
+**Claim type:** bounded_theorem
+**Claim scope:** conditional support / exact source-readout normalization boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** conditional-support  
 **Trace class:** upstream_support  
 **Reachability to target:** supports the open Route-2 endpoint by proving the
@@ -12,8 +14,8 @@ independent factors.
 licenses two independent dual-normalized source/readout factors on the named
 Route-2 tensor primitive surface.  
 **Proposal allowed:** false  
-**Primary runner:** [`scripts/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.py`](../scripts/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.py)  
-**Runner cache:** `logs/runner-cache/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.txt`
+**Primary runner:** [`scripts/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.py`](../scripts/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.txt)
 
 ## Boundary
 
@@ -70,15 +72,15 @@ center T/E = -8/9.
 The current tensor/readout source notes still leave the exact endpoint theorem
 open:
 
-- `S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md` defines a staging object under
+- [`S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md`](S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md) defines a staging object under
   named admitted inputs and says it does not derive those inputs, including
   the exact reduced shell amplitude or physical tensor-primitive bridge.
-- `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` defines a bilinear carrier under
+- [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md) defines a bilinear carrier under
   named inputs and explicitly does not derive the physical tensor primitive.
-- `S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md` gives a bounded
+- [`S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md) gives a bounded
   response Jacobian, not an exact tensor observable or exact endpoint
   coefficient theorem.
-- `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md` imports the missing readout-map
+- [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) imports the missing readout-map
   endpoint triple as the blocker for uniqueness.
 
 ## Finite-Frame Dual-Normalization Lemma

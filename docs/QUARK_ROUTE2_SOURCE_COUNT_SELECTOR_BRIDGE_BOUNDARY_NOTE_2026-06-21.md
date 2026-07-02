@@ -1,14 +1,12 @@
 # Quark Route-2 Source-Count Selector Bridge Boundary
 
 **Date:** 2026-06-21
-**Type:** bounded_theorem
 **Claim type:** bounded_theorem
+**Claim scope:** bounded support boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** exact-support / selector-boundary.
-**Status authority:** independent audit lane only. This source note does not
-set, predict, or estimate any audit verdict. Effective status remains owned by
-the independent audit process after dependency closure.
-**Primary runner:** [scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py](../scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py)
-**Runner cache:** [logs/runner-cache/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.txt](../logs/runner-cache/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.txt)
+**Primary runner:** [`scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.txt)
 
 ## Scope
 
@@ -30,7 +28,7 @@ The contribution is narrower:
    `-N_pair^3/N_color^2 = -8/9 = -F_adj`.
 3. This equality is a sharp selector boundary, not a typed source/readout
    derivation. If the color route is physical, it still inherits the
-   disconnected-channel selector from `RCONN_DERIVED_NOTE.md`.
+   disconnected-channel selector from [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md).
 
 So the remaining target is not "find another low rational." It is a typed
 theorem saying that the Route-2 center ratio is the connected-color selector

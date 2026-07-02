@@ -1,9 +1,12 @@
 # Quark Route-2 Rconn W1 Expanded Authority Sweep No-Go
 
 **Date:** 2026-06-21
-**Status:** exact negative boundary for hidden one-hop W1 authority in the
+**Claim type:** no_go
+**Claim scope:** exact negative boundary for hidden one-hop W1 authority in the
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 expanded Route-2/Rconn bank
-**Primary runner:** `scripts/frontier_quark_route2_rconn_w1_expanded_authority_sweep_no_go_2026_06_21.py`
+**Primary runner:** [`scripts/frontier_quark_route2_rconn_w1_expanded_authority_sweep_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_rconn_w1_expanded_authority_sweep_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_rconn_w1_expanded_authority_sweep_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_rconn_w1_expanded_authority_sweep_no_go_2026_06_21.txt)
 
 ## Purpose
 
@@ -29,15 +32,15 @@ R_conn or F_adj
 
 The runner scans this expanded authority bank:
 
-- `QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`
-- `QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`
-- `QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md`
-- `RCONN_DERIVED_NOTE.md`
-- `RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`
-- `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
-- `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`
-- `QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`
-- `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`
+- [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)
+- [`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md)
+- [`QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md`](QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md)
+- [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md)
+- [`RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md)
+- [`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
+- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)
+- [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
 
 It splits each file into paragraphs, selects paragraphs containing both a
 color/Rconn token and a Route-2 center-ratio token, and classifies each hit by
@@ -104,5 +107,5 @@ Expected:
 
 ```text
 TOTAL: PASS=37, FAIL=0
-Status: exact negative boundary for hidden one-hop W1 authority.
+Boundary classification: exact negative boundary for hidden one-hop W1 authority.
 ```

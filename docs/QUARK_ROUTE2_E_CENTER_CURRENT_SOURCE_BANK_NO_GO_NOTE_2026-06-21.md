@@ -1,17 +1,15 @@
 # Quark Route-2 E-Center Current Source-Bank No-Go
 
 **Date:** 2026-06-21
-**Type:** no_go
 **Claim type:** no_go
+**Claim scope:** negative route boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go / bounded current-bank obstruction.
 This note does not derive `rho_E = 21/4`, does not prove that no future
 source-domain primitive can derive it, and does not close the
 `s3_time_theta_to_slice_coupling_note` open gate.
-**Status authority:** branch-local physics-loop artifact only. Independent
-review and the normal audit lane are required before any repo-wide status
-change.
-**Primary runner:** [scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py](../scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py)
-**Runner cache:** [logs/runner-cache/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.txt](../logs/runner-cache/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.txt)
+**Primary runner:** [`scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.txt)
 
 ## Scope
 
@@ -42,22 +40,22 @@ E-center bridge.
 
 The bank tested here is deliberately narrow and repo-internal:
 
-- [`TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md`](TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md)
+- [[`TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md`](TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md)](TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md)
   supplies the support scalar endpoint step `delta_A1(center)-delta_A1(shell)=1/6`.
-- [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
+- [[`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
   defines the carrier symbol
   `K_R(q)=(u_E,u_T,delta_A1 u_E,delta_A1 u_T)` under named admitted inputs,
   but does not identify a physical readout primitive.
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
   supplies the restricted readout class and endpoint algebra.
-- [`QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md)
+- [[`QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md)](QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md)
   records the positive E-projective family `rho_E > -6` and sign separation.
-- [`OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md`](OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md)
+- [[`OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md`](OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md)](OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md)
   supplies `kappa=3/2`, `kappa^2=9/4`, and `Hom_Oh(E,T1)=0`.
-- [`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md)
-  and [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md) supply exact
+- [[`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md)](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md)
+  and [[`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md)](RCONN_DERIVED_NOTE.md) supply exact
   `F_adj=8/9` support while keeping the typed Route-2 center bridge open.
-- [`QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md)
+- [[`QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md)](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md)
   supplies stack-internal measured calibration as comparator evidence, not as
   a proof input.
 

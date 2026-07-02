@@ -1,8 +1,12 @@
 # Quark Route-2 E-Center Excess Seven-Eighths Import Boundary Note
 
 **Date:** 2026-06-21
-**Type:** exact-support / exact negative boundary
-**Primary runner:** [scripts/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.py](../scripts/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.py)
+**Claim type:** no_go
+**Claim scope:** exact-support / exact negative boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.txt)
+**Authority links:** [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [`QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md), [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md), [`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md), [`HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md`](HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md), [`GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md), [`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)
 
 ```yaml
 actual_current_surface_status: exact-support

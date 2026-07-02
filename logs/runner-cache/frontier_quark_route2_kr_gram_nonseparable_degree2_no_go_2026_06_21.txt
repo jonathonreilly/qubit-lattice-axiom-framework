@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py
+runner_sha256: f4be464bf5a6b651037c88bbbfa5432c165cae3bd7fd2f9588c1ece03508ce8d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 Route-2 K_R Gram nonseparable degree-2 no-go
 ====================================================================================
 Status: no-go for K_R-generated channel-blind Gram/tensor-power route.
@@ -34,3 +42,6 @@ PASS=14 FAIL=0
 VERDICT: no-go. K_R-generated source-side Gram/tensor-power contractions are
 channel-blind on unit E and T probes, giving lambda=1. A tuned channel metric can
 produce 9/4 only as an extra normalization primitive, not as a K_R-derived result.
+
+----- stderr -----
+

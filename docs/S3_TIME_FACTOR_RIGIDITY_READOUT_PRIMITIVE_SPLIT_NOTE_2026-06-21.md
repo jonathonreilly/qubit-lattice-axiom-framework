@@ -1,11 +1,14 @@
 # S3 Time Factor-Rigidity / Readout-Primitive Split Note
 
 **Date:** 2026-06-21
-**Type:** exact support theorem / open-boundary split
+**Claim type:** bounded_theorem
+**Claim scope:** exact support theorem / open-boundary split
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** exact-support
 **Trace class:** upstream_support
 **Reachability:** supports and narrows the parent `s3_time_theta_to_slice_coupling_note`; not a readout-map selection theorem
-**Primary runner:** `scripts/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.py`
+**Primary runner:** [`scripts/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.py`](../scripts/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.txt`](../logs/runner-cache/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.txt)
 
 ## Purpose
 
@@ -29,17 +32,17 @@ do not cite it as a readout primitive theorem.
 
 ## One-hop authorities
 
-- [`S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md`](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)
+- [[`S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md`](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)
   proves the five factor-rigidity properties for the full admissible
   `P(rho_E)` family.
-- [`S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md`](S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md)
+- [[`S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md`](S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md)](S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md)
   checks the old endpoint-fitted eta-floor affine readout and lands only
   membership in the broad bright class, not uniqueness or physical-primitive
   selection.
-- [`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+- [[`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
   supplies the conditional time-coupling family once an admissible `P_R` is
   supplied.
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
   supplies the exact restricted bright readout class and names the remaining
   `E`-channel entry.
 

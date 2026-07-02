@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_endpoint_independent_consumer_inventory_2026_06_21.py
+runner_sha256: aa3bd5d407fcf0f8a1aecc5343a029e57b74adebe7892a83f31799f3a604872e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.46
+status: ok
+----- stdout -----
 S3/Route-2 endpoint-independent consumer inventory
 ========================================================================================
 [PASS] rho_E variation is rank one and acts only through the delta_E coordinate
@@ -45,3 +53,6 @@ carrier has delta_E=0 is independent of the unresolved rho_E entry.
 The only direct rho_E carrier quotient is the pure E-center-excess
 direction; consumers with nonzero delta_E inherit the scalar readout
 ambiguity, and a unique theta-to-slice theorem remains blocked upstream.
+
+----- stderr -----
+

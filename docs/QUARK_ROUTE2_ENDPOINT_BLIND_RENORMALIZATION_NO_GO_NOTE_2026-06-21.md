@@ -1,11 +1,12 @@
 # Route-2 Endpoint-Blind Renormalization No-Go: Size-Stable Reparameterizations Cannot Rescue the E-Center Lift
 
 **Date:** 2026-06-21
-**Claim type:** no_go / exact negative boundary
+**Claim type:** no_go
+**Claim scope:** no_go / exact negative boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go
 **Trace class:** negative_route_pruning
 **Reachability to target:** prunes the endpoint-blind finite-box renormalization rescue route for the open `rho_E = 21/4` endpoint.
-**Status authority:** branch-local physics-loop artifact only. This is not a retained-status claim, writes no audit verdict, retags no ledger row, and updates no repo-wide authority surface.
 **Primary runner:** [`scripts/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.py)
 **Runner cache:** [`logs/runner-cache/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.txt)
 

@@ -1,12 +1,14 @@
 # Route-2 Double-Local Projector Factor-Degree No-Go
 
 **Date:** 2026-06-21  
-**Claim type:** no-go / exact support boundary  
+**Claim type:** no_go
+**Claim scope:** no-go / exact support boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go  
 **Trace class:** negative_route_pruning  
 **Reachability to target:** prunes zero-factor and one-factor source/readout/Schur normalization routes for the open Route-2 endpoint; leaves the exact two-factor primitive open.  
-**Primary runner:** [`scripts/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.py)  
-**Runner cache:** `logs/runner-cache/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.txt`
+**Primary runner:** [`scripts/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.txt)
 
 ## Boundary
 
@@ -50,14 +52,14 @@ center T/E = -2 q_T / q_E = -8/9.
 The current source/readout notes still leave the endpoint coefficient theorem
 open:
 
-- `S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md` defines a staging object under
+- [`S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md`](S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md) defines a staging object under
   named admitted inputs and says it does not derive those inputs.
-- `S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md` gives a bounded
+- [`S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md) gives a bounded
   response Jacobian, not an exact tensor observable or exact endpoint
   coefficient theorem.
-- `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` defines the bilinear carrier
+- [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md) defines the bilinear carrier
   under named inputs and explicitly does not derive a physical tensor primitive.
-- `QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`
+- [`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)
   already shows the inverse-square law is the sharp gap and says no named
   functional supplies it.
 

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.py
+runner_sha256: 91e282cbfebeebd2d6d0d076f7ebf22be629778dcad08229237581d56dd91df6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
 Route-2 nonseparable quadratic equivariant primitive no-go
 ========================================================================================
 [PASS] O_h signed-permutation group has order 48
@@ -34,3 +42,6 @@ mixed E tensor T1 -> T1 channel, but the map is not unique: there are two
 independent E-output reduced coefficients and one T-output coefficient. The
 endpoint lambda=9/4 is therefore not selected by the representation content;
 it still requires an additional coefficient-selection or normalization primitive.
+
+----- stderr -----
+

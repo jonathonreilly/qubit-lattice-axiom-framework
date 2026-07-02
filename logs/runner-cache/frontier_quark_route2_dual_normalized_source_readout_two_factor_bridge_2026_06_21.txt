@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.py
+runner_sha256: 03d14cbe01eac1b55cc3c8f92487a894494d70a4a95114cc436960f1b643ff5e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
 Route-2 dual-normalized source/readout two-factor bridge
 ====================================================================================
 Status: conditional-support; no endpoint triple or audit verdict is adopted.
@@ -46,3 +54,6 @@ VERDICT: conditional-support. Finite-frame Riesz dual normalization supplies one
 local projector-weight factor. Two independent source/readout dual legs would supply the
 degree-two inverse-square law and hence the Route-2 endpoint algebra exactly. Current Route-2
 tensor/readout notes do not yet license those two independent legs, so rho_E remains open.
+
+----- stderr -----
+

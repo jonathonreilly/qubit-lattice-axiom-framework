@@ -1,13 +1,13 @@
 # Quark Route-2 Finite-Frame Dual-Leg Count Boundary
 
 **Date:** 2026-06-21
-**Claim type:** conditional_support
+**Claim type:** bounded_theorem
+**Claim scope:** conditional_support
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** conditional-support / no-go boundary
 **Trace class:** upstream_support
 **Reachability to target:** supports and prunes finite-frame/Riesz routes for the
 S3/Route-2 readout endpoint residual
-**Status authority:** independent audit lane only. This note does not set,
-predict, or estimate an audit outcome.
 **Primary runner:** [`scripts/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.py)
 (`PASS=9 FAIL=0`)
 **Runner cache:** [`logs/runner-cache/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.txt)
@@ -176,7 +176,7 @@ This is the precise remaining wall for the finite-frame/Riesz route.
 
 - This note does not supply `rho_E=21/4` on the current surface.
 - This note does not close the Route-2 readout endpoint triple.
-- This note does not close the parent `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`
+- This note does not close the parent [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
   open gate.
 - This note does not adopt a new primitive asserting two reciprocal analysis
   legs.
@@ -185,16 +185,16 @@ This is the precise remaining wall for the finite-frame/Riesz route.
 
 ## Load-Bearing Inputs
 
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
   - restricted readout map, granted T-side algebra, and the residual
   `rho_E=21/4`.
-- [`QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md`](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md)
+- [[`QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md`](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md)](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md)
   - same-domain `kappa=3/2` relocation and covariance residual.
-- [`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)
+- [[`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)
   - inverse-square projector-weight gap statement and quadratic no-go.
-- [`QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md)
+- [[`QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md)](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md)
   - typed E-center lift target.
-- [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+- [[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
   - downstream open gate that inherits the readout endpoint obstruction.
 
 ## Forbidden-Imports Check

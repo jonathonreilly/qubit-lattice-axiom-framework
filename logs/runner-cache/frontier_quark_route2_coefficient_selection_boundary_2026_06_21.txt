@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_coefficient_selection_boundary_2026_06_21.py
+runner_sha256: cd9fdcc76d50e0d7489b4466f32054aba8a6ff44934dcb8996221fa19373e9ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 Route-2 coefficient-selection boundary
 ========================================================================================
 [PASS] granted T-side algebra gives q_T=5/6 and leaves rho_E as the only E-row slope
@@ -29,3 +37,6 @@ General quadratic/variational selectors can hit 21/4 only by inserting
 the target-equivalent coefficient ratio B/A=-15/4. The inverse-square
 projector-weight rule lands exactly, but selecting that rule or exponent
 n=2 is the missing theorem content, not a current derivation.
+
+----- stderr -----
+

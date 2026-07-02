@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21.py
+runner_sha256: f76964c7b33a75d2a6bf54970413dae7b17ea4d43d78340072737b7833b9b5ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
 Route-2 channel metric Schur-free-parameter no-go
 ========================================================================================
 [PASS] O_h signed-permutation group has order 48
@@ -36,3 +44,6 @@ free. Symmetry alone permits ambient lambda=1, one-reciprocal lambda=3/2,
 and inverse-square lambda=9/4. The endpoint value is therefore not derived
 by declaring a channel metric; it is obtained only by supplying the inverse-
 square normalization law as an extra primitive.
+
+----- stderr -----
+

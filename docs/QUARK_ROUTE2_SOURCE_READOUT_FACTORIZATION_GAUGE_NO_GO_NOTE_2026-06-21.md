@@ -1,14 +1,16 @@
 # Route-2 Source/Readout Factorization Gauge No-Go
 
 **Date:** 2026-06-21  
-**Claim type:** no-go / exact factorization boundary  
+**Claim type:** no_go
+**Claim scope:** no-go / exact factorization boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go  
 **Trace class:** negative_route_pruning  
 **Reachability to target:** prunes the route that tries to certify two
 independent source/readout dual-normalized legs from the endpoint product
 algebra or the current restricted readout map alone.  
-**Primary runner:** [`scripts/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.py)  
-**Runner cache:** `logs/runner-cache/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.txt`
+**Primary runner:** [`scripts/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.txt)
 
 ## Boundary
 
@@ -129,14 +131,14 @@ leg" story. The endpoint product algebra itself does not select it.
 
 The current Route-2 surfaces have exactly the product-level structure above:
 
-- `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md` reduces the readout to
+- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) reduces the readout to
   the channelwise matrix `P_R` and says the endpoint ratios are algebraic once
   that readout is reduced.
-- `QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md` says selecting
+- [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) says selecting
   the target endpoint ratio is an extra source/readout rule and that no current
   typed edge supplies the required bridge.
-- `S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md` and
-  `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` define staging/carrier objects
+- [`S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md`](S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md) and
+  [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md) define staging/carrier objects
   under named inputs; they do not define leg-level Riesz-dual source and
   readout observables.
 

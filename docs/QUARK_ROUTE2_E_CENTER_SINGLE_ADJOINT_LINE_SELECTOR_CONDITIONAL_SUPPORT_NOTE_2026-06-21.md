@@ -1,16 +1,17 @@
 # Route-2 E-Center Single-Adjoint-Line Selector: Conditional Support and the Exact Primitive That Would Force 21/4
 
 **Date:** 2026-06-21
-**Claim type:** conditional support / source-primitive map
+**Claim type:** bounded_theorem
+**Claim scope:** conditional support / source-primitive map
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **actual_current_surface_status:** conditional-support
 **trace_class:** upstream_support
 **reachability_to_target:** supports
 **conditional_surface_status:** conditional on an accepted single-adjoint-line source selector
 **hypothetical_axiom_status:** single-adjoint-line source selector absent from the current source bank
 **proposal_allowed:** false
-**Status authority:** branch-local physics-loop artifact only. This note writes no audit verdict, does not retag any ledger row, and does not update repo-wide authority surfaces.
-**Primary runner:** [`scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py`](../scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py) (`PASS=27 FAIL=0`)
-**Runner output:** [`outputs/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.txt`](../outputs/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.txt)
+**Primary runner:** [`scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py`](../scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.txt)
 
 ## Question
 
@@ -127,12 +128,12 @@ The primitive fails if any of these is true:
 
 ## Load-Bearing Inputs
 
-- [`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](S3_TIME_PRIMITIVE_CHAIN_NOTE.md) - owner of the open Route-2 endpoint triple.
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - endpoint algebra and `q_E = 1 + (beta_E/alpha_E)/6`.
-- [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) - current-surface freedom of `rho_E` without an E-center/source/readout primitive.
-- [`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md) - E-center-blind constraints cannot select `rho_E`.
-- [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - current typed bank lacks the Rconn-to-center-ratio bridge.
-- [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md) - exact `F_adj=8/9` support, used here only as a comparator for the center-ratio magnitude.
+- [[`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](S3_TIME_PRIMITIVE_CHAIN_NOTE.md)](S3_TIME_PRIMITIVE_CHAIN_NOTE.md) - owner of the open Route-2 endpoint triple.
+- [[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - endpoint algebra and `q_E = 1 + (beta_E/alpha_E)/6`.
+- [[`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) - current-surface freedom of `rho_E` without an E-center/source/readout primitive.
+- [[`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md) - E-center-blind constraints cannot select `rho_E`.
+- [[`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - current typed bank lacks the Rconn-to-center-ratio bridge.
+- [[`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md)](RCONN_DERIVED_NOTE.md) - exact `F_adj=8/9` support, used here only as a comparator for the center-ratio magnitude.
 
 ## Forbidden-Imports Check
 

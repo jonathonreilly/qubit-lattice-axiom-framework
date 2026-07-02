@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py
+runner_sha256: f8ddae1c85880123bbb9d909f7134c470333b88d170ada42925d693c19745302
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 Route-2 source-count selector bridge boundary check
 Authority/file presence
 PASS: docs/QUARK_ROUTE2_SOURCE_COUNT_SELECTOR_BRIDGE_BOUNDARY_NOTE_2026-06-21.md exists
@@ -52,3 +60,6 @@ PASS: note records selector family formula
 PASS: note records wrong-structure falsifiers
 PASS: note names sharpened target
 TOTAL: PASS=44, FAIL=0
+
+----- stderr -----
+

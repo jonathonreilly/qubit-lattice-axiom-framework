@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.py
+runner_sha256: e34d06d57fc118b8f19198487aab301b2af447ea82bd2c72b65b66e8e150bada
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 Route-2 double-local projector-normalization conditional bridge
 ======================================================================================
 [EXACT] PASS: the six-arm O_h projector weights are exact and give kappa=3/2
@@ -26,3 +34,6 @@ Verdict:
 The exact positive target is now isolated: a double reciprocal local projector-normalization primitive would give lambda=q_E/q_T=9/4 and hence rho_E=21/4.  The adjacent one-factor, raw, and quadratic variants miss.  The primitive is not derived here; it is the named remaining bridge that a future positive proof must justify.
 
 TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

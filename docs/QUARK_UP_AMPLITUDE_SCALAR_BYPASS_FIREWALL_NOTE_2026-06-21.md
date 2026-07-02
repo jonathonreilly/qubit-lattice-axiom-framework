@@ -1,8 +1,12 @@
 # Quark Up-Amplitude Scalar-Bypass Firewall
 
 **Date:** 2026-06-21
-**Status:** exact negative boundary for the scalar-bypass route
-**Primary runner:** `scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py`
+**Claim type:** no_go
+**Claim scope:** exact negative boundary for the scalar-bypass route
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py`](../scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.txt`](../logs/runner-cache/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.txt)
+**Authority links:** [`QUARK_UP_AMPLITUDE_NATIVE_AFFINE_NO_GO_NOTE_2026-04-19.md`](QUARK_UP_AMPLITUDE_NATIVE_AFFINE_NO_GO_NOTE_2026-04-19.md), [`QUARK_UP_AMPLITUDE_TWO_STEP_NATIVE_SCAN_NOTE_2026-04-19.md`](QUARK_UP_AMPLITUDE_TWO_STEP_NATIVE_SCAN_NOTE_2026-04-19.md), [`QUARK_UP_AMPLITUDE_SCALAR_COMPARISON_BRIDGE_NOTE_2026-04-19.md`](QUARK_UP_AMPLITUDE_SCALAR_COMPARISON_BRIDGE_NOTE_2026-04-19.md), [`QUARK_UP_AMPLITUDE_RPSR_MASS_RETENTION_BOUNDARY_NOTE_2026-04-28.md`](QUARK_UP_AMPLITUDE_RPSR_MASS_RETENTION_BOUNDARY_NOTE_2026-04-28.md), [`QUARK_UP_AMPLITUDE_TENSOR_ENDPOINT_RESOLUTION_NOTE_2026-04-19.md`](QUARK_UP_AMPLITUDE_TENSOR_ENDPOINT_RESOLUTION_NOTE_2026-04-19.md), [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md), [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 
 ## Purpose
 
@@ -146,5 +150,5 @@ Expected result:
 
 ```text
 TOTAL: PASS=33, FAIL=0
-Status: exact negative boundary for the scalar-bypass route.
+Boundary classification: exact negative boundary for the scalar-bypass route.
 ```

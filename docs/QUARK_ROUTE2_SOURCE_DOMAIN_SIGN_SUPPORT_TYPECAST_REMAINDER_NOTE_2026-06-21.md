@@ -1,15 +1,18 @@
 # Quark Route-2 Source-Domain Sign Support And Typecast Remainder
 
 **Date:** 2026-06-21
-**Status:** exact support / source-domain split narrowing
-**Runner:** `scripts/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.py`
+**Claim type:** bounded_theorem
+**Claim scope:** exact support / source-domain split narrowing
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.py`](../scripts/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.txt)
 **Primary parents:**
-`ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md`,
-`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`,
-`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`,
-`RCONN_DERIVED_NOTE.md`,
-`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`,
-`RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`
+[`ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md`](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md),
+[`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md),
+[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md),
+[`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md),
+[`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md),
+[`RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md)
 
 ## Scope
 

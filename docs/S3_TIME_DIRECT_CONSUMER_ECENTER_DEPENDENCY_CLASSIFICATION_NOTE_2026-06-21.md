@@ -1,15 +1,18 @@
 # S3 Time Direct-Consumer E-Center Dependency Classification Note
 
 **Date:** 2026-06-21
-**Status:** exact support / dependency classification; no unique readout theorem
-**Runner:** `scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py`
+**Claim type:** bounded_theorem
+**Claim scope:** exact support / dependency classification; no unique readout theorem
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py`](../scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.txt`](../logs/runner-cache/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.txt)
 **Primary parents:**
-`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`,
-`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`,
-`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`,
-`S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md`,
-`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`,
-`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`
+[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md),
+[`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md),
+[`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](S3_TIME_PRIMITIVE_CHAIN_NOTE.md),
+[`S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md`](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md),
+[`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md),
+[`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md)
 
 ## Scope
 

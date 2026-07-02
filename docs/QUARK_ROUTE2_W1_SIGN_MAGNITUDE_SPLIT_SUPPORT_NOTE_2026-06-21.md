@@ -1,9 +1,13 @@
 # Quark Route-2 W1 Sign-Magnitude Split Support
 
 **Date:** 2026-06-21
-**Status:** exact support for splitting W1 into an already forced sign branch
-and an open magnitude selector
-**Primary runner:** `scripts/frontier_quark_route2_w1_sign_magnitude_split_support_2026_06_21.py`
+**Claim type:** bounded_theorem
+**Claim scope:** exact support for splitting W1 into an already forced sign branch
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** exact support for splitting W1 into an already forced sign branch and an open magnitude selector
+**Primary runner:** [`scripts/frontier_quark_route2_w1_sign_magnitude_split_support_2026_06_21.py`](../scripts/frontier_quark_route2_w1_sign_magnitude_split_support_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_w1_sign_magnitude_split_support_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_w1_sign_magnitude_split_support_2026_06_21.txt)
+**Authority links:** [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md)
 
 ## Purpose
 
@@ -103,5 +107,5 @@ Expected:
 
 ```text
 TOTAL: PASS=39, FAIL=0
-Status: exact support for W1 sign/magnitude split; W1 magnitude remains open.
+Boundary classification: exact support for W1 sign/magnitude split; W1 magnitude remains open.
 ```

@@ -1,16 +1,19 @@
 # Quark Route-2 Source-Domain Typed-Edge Cut Certificate
 
 **Date:** 2026-06-21
-**Status:** exact negative boundary / typed-edge cut certificate
-**Runner:** `scripts/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.py`
+**Claim type:** no_go
+**Claim scope:** exact negative boundary / typed-edge cut certificate
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.py`](../scripts/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.txt)
 **Primary parents:**
-`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`,
-`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`,
-`QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`,
-`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`,
-`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`,
-`RCONN_DERIVED_NOTE.md`,
-`RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`
+[`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md),
+[`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md),
+[`QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md),
+[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md),
+[`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md),
+[`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md),
+[`RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md)
 
 ## Scope
 

@@ -2,11 +2,12 @@
 
 **Date:** 2026-06-21
 **Claim type:** no_go
+**Claim scope:** negative route boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go
 **Trace class:** negative_route_pruning
 **Reachability to target:** prunes the pure `O_h` nonseparable quadratic primitive route to the Route-2 endpoint triple
-**Status authority:** independent audit lane only. This note does not set, predict, or estimate an audit outcome.
-**Primary runner:** [`scripts/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.py) (`PASS=12 FAIL=0`)
+**Primary runner:** [`scripts/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.py)
 **Runner cache:** [`logs/runner-cache/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.txt)
 
 ## Target
@@ -158,13 +159,13 @@ and does not change any repo-wide status surface.
 
 ## Load-Bearing Inputs
 
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) -
+- [[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) -
   the restricted readout reduction and endpoint algebra.
-- [`QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md`](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md) -
+- [[`QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md`](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md)](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md) -
   the same-domain `kappa=3/2` relocation and equivariance no-go.
-- [`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md) -
+- [[`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md) -
   the scalar quadratic no-go and inverse-square gap statement.
-- [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md) -
+- [[`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md) -
   the definition-only carrier boundary; no physical primitive bridge is
   imported from it.
 

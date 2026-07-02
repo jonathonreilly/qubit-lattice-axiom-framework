@@ -1,11 +1,12 @@
 # Route-2 Double-Local Projector Normalization: Exact Conditional Bridge to `rho_E = 21/4`, with Falsifiers for the Nearby Weaker Laws
 
 **Date:** 2026-06-21
-**Claim type:** conditional-support / exact support boundary
+**Claim type:** bounded_theorem
+**Claim scope:** conditional-support / exact support boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** conditional-support
 **Trace class:** upstream_support
 **Reachability to target:** supports the open Route-2 endpoint by isolating the exact nonseparable primitive that would close it; does not derive that primitive.
-**Status authority:** branch-local physics-loop artifact only. This is not a retained-status claim, writes no audit verdict, retags no ledger row, and updates no repo-wide authority surface.
 **Primary runner:** [`scripts/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.py`](../scripts/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.py)
 **Runner cache:** [`logs/runner-cache/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.txt)
 

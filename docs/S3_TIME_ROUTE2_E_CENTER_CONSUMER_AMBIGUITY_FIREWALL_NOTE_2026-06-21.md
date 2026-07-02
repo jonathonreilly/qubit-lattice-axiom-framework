@@ -1,10 +1,12 @@
 # S3-Time Route-2 E-Center Consumer Ambiguity Firewall
 
-**Status:** exact-support, consumer-boundary artifact only.  
 **Date:** 2026-06-21  
-**Primary runner:** [`scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py`](../scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py)  
-**Runner cache:** `logs/runner-cache/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.txt`  
-**Downstream target:** [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+**Claim type:** bounded_theorem
+**Claim scope:** bounded support boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py`](../scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.txt`](../logs/runner-cache/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.txt)
+**Downstream target:** [[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 
 ## Boundary
 
@@ -105,7 +107,7 @@ selection principle.
 
 ## Relation to the Parent Consumer
 
-[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+[[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 already records the exact conditional family and names the missing readout-map
 endpoint triple as the blocker for uniqueness.
 

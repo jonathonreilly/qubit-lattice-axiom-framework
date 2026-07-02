@@ -1,13 +1,14 @@
 # Route-2 q_E Box-Path Interpolation Family: the N=15 Lift Does Not Persist on the Sampled Radius-Scaling Paths
 
 **Date:** 2026-06-21
-**Claim type:** bounded support / negative route-pruning note
+**Claim type:** bounded_theorem
+**Claim scope:** bounded support / negative route-pruning note
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **actual_current_surface_status:** bounded-support
 **trace_class:** negative_route_pruning
 **reachability_to_target:** prunes
-**Status authority:** branch-local physics-loop artifact only. This note writes no audit verdict, does not retag any ledger row, and does not update repo-wide authority surfaces.
-**Primary runner:** [`scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py) (`PASS=5 FAIL=0`)
-**Runner output:** [`outputs/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.txt`](../outputs/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.txt)
+**Primary runner:** [`scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.txt)
 
 ## Target
 
@@ -96,11 +97,11 @@ This does not weaken the exact Route-2 carrier/readout reductions already in han
 
 ## Load-Bearing Inputs
 
-- [`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](S3_TIME_PRIMITIVE_CHAIN_NOTE.md) - the active open gate and the reduced endpoint triple.
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - the exact restricted carrier/readout reduction and missing-map obstruction.
-- [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) - the boundary that the restricted class leaves `rho_E` free.
-- [`QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md) - the `N=15` measured-calibration coincidence this packet tries to stress.
-- [`QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md`](QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md) - the endpoint path failures this packet extends to a bounded interpolation grid.
+- [[`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](S3_TIME_PRIMITIVE_CHAIN_NOTE.md)](S3_TIME_PRIMITIVE_CHAIN_NOTE.md) - the active open gate and the reduced endpoint triple.
+- [[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) - the exact restricted carrier/readout reduction and missing-map obstruction.
+- [[`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) - the boundary that the restricted class leaves `rho_E` free.
+- [[`QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md`](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md)](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md) - the `N=15` measured-calibration coincidence this packet tries to stress.
+- [[`QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md`](QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md)](QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md) - the endpoint path failures this packet extends to a bounded interpolation grid.
 
 ## Forbidden-Imports Check
 

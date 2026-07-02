@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.py
+runner_sha256: a7ff7e15e1507fd4774dd0a1dfea68582fe3b00a6eda61e48e87c5c6dc8cd9db
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.66
+status: ok
+----- stdout -----
 S3-time theta-to-slice rho_E dependency firewall
 ========================================================================================
 [PASS] reduced family P(rho_E) gives fixed E-shell, T-shell, and T-center source factors
@@ -30,3 +38,6 @@ Shell couplings and T-channel couplings are rho-independent for every checked
 time, and the rho-dependent E-center tensor is just a rank-one source factor
 times the same exact slice seed V_R(t). This narrows the consumer ambiguity but
 does not derive rho_E=21/4.
+
+----- stderr -----
+

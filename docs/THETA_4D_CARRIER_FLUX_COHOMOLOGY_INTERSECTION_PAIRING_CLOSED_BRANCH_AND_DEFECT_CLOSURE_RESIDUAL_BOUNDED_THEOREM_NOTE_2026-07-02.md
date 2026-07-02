@@ -1,6 +1,7 @@
 # The 4D Carrier Template: on Finite T^4 the Emergent Sector Labels Are the Six Flux-Cohomology Integers and the Theta Charge Is Their Cross-Plane Intersection Pairing, Exact on the Closed-Branch Abelian Surface — Defect (Monopole) Closure Is the Carrier Residual, and the Center Dual Alone Carries Only the Mod-N Pairing (Bounded Theorem)
 
 **Date:** 2026-07-02
+**Type:** bounded_theorem
 **Claim type:** bounded_theorem (exact finite cochain constructions on a
 witness surface plus wall-sharpening; not a terminal no-go, not a discharge
 of the theta admission).
@@ -14,12 +15,14 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 
 ## Question
 
-The two-block theta campaign (PRs #4784, #4796, both in-flight) left
-`W_theta_Q_context` in sharpened form: per-plaquette character gradings
-cannot carry a `Z`-valued label (PR #4784), while on closed 2D surfaces the
-multi-plaquette gluing derives the integer exactly and branch-datum-free but
-with a 2D-specific mechanism — every link borders exactly two plaquettes
-(PR #4796). The sharpened residual was named there:
+The two-block theta campaign left `W_theta_Q_context` in sharpened form:
+per-plaquette character gradings cannot carry a `Z`-valued label
+([`GAUGE_CENTER_SECTOR_RECORD_CONTEXT_AND_THETA_Q_CHARACTER_GRADING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-01.md`](GAUGE_CENTER_SECTOR_RECORD_CONTEXT_AND_THETA_Q_CHARACTER_GRADING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-01.md)),
+while on closed 2D surfaces the multi-plaquette gluing derives the integer
+exactly and branch-datum-free but with a 2D-specific mechanism — every link
+borders exactly two plaquettes
+([`GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`](GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md)).
+The sharpened residual was named there:
 
 ```text
 (i)  the 4D carrier: a derived multi-plaquette structure on the 4D surface
@@ -118,7 +121,8 @@ into two named sub-walls, and residual (ii) acquires its exact 4D template:
    decomposition is derived, not supplied by Record; record occurrence is
    not claimed.
 
-2. **Tier-A theta registry text** (docs/audit/data/tier_a_admissions.json,
+2. **Tier-A theta registry text**
+   ([`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json),
    gauge side, quoted exactly):
 
    > "(a) gauge side -- theta_gauge = 0 in the topological-sector weighting,
@@ -159,10 +163,11 @@ and the cubical cup product of a `p`- and a `q`-cochain
 Runner-verified structure: `dd = 0`; Leibniz `d(a u b) = da u b +
 (-1)^p a u db` exactly on integer and real cochains; the total sum of any
 exact 4-cochain over the closed torus vanishes. The branch-summed abelian
-weight class is the one from the companion 2D note (PR #4796): plaquette
-weights built from a real plaquette variable summed over `2 pi` shifts, the
-shift integers forming the branch 2-cochain `n`; the field 2-cochain is
-`F = d theta_link + 2 pi n`.
+weight class is the one from the companion 2D gluing note
+([`GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`](GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md)):
+plaquette weights built from a real plaquette variable summed over `2 pi`
+shifts, the shift integers forming the branch 2-cochain `n`; the field
+2-cochain is `F = d theta_link + 2 pi n`.
 
 ## Theorem 1 (flux-cohomology sectors)
 
@@ -262,9 +267,10 @@ cochain level. Consequences:
    3 (G2); but the `Z`-valued pairing has no period-3 descent: for every
    flux axis `e` there is `x` with `q(x + 3e) != q(x)` (G3). A `Z_3` flux
    assignment therefore supports only a `Z_3`-valued pairing — consistent
-   with and extending the companion per-plaquette obstruction (PR #4784) to
-   the multi-plaquette account: the `SU(3)` **center projection cannot carry
-   the integer theta charge**; the `Z`-valued carrier needs the full
+   with and extending the companion per-plaquette obstruction
+   ([`GAUGE_CENTER_SECTOR_RECORD_CONTEXT_AND_THETA_Q_CHARACTER_GRADING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-01.md`](GAUGE_CENTER_SECTOR_RECORD_CONTEXT_AND_THETA_Q_CHARACTER_GRADING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-01.md))
+   to the multi-plaquette account: the `SU(3)` **center projection cannot
+   carry the integer theta charge**; the `Z`-valued carrier needs the full
    abelianized (torus) dual. This is the sharpened carrier sub-wall (i-b).
 
 ## Identification checkpoint (what objects these are)
@@ -282,7 +288,7 @@ theta angle's `Q`.
 ## Relation to the RP-half no-go (route independence)
 
 The retained no-go row
-strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16
+[`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)
 forecloses only "the RP half-square identity alone cannot derive a
 no-bare-theta-slot exclusion." No reflection-positivity identity is used
 here and no bare-theta-slot exclusion is asserted; the reflection map of
@@ -293,7 +299,7 @@ argument.
 
 | Prior state | After this note |
 |---|---|
-| 4D carrier (residual (i) of PR #4796) = named unknown | template exact: sector labels = `H^2(T^4,Z) = Z^6` flux integers; charge = cross-plane intersection pairing; odd support at unit complementary fluxes |
+| 4D carrier (residual (i) of the linked 2D gluing note) = named unknown | template exact: sector labels = `H^2(T^4,Z) = Z^6` flux integers; charge = cross-plane intersection pairing; odd support at unit complementary fluxes |
 | theta pairing in 4D = interface input | derived on the closed branch: all `theta_link`-dependent terms telescope; theta couples to the flux intersection alone |
 | "multi-plaquette / large-gauge-winding account" (registry) | given exact finite content: the charge is a multi-plaquette cross-plane pairing with no single-plane or per-plaquette representation — consistent with the registry-tracked local absence result |
 | defect role unstated | theorem-shaped: `dn != 0` destroys class invariance (explicit witness values) — carrier requires defect closure (sub-wall i-a) |
@@ -312,7 +318,7 @@ W_theta_Q_context (sharpened again):
         surface (its exact sector reduction is supplied here).
 
 W_theta_bar_assembly:
-  unchanged; tracked by the in-flight assembly interface bridge (PR #4768).
+  unchanged; assembly-side bridge work remains outside this note.
 ```
 
 ## Non-claims
@@ -338,7 +344,7 @@ This note does not claim:
 
 ## No-Go Discipline Gate (for the negative boundary)
 
-**Status:** PASS as bounded scoping inside positive constructions. The
+**Gate result:** PASS as bounded scoping inside positive constructions. The
 negative content is exactly: (a) with branch defects present the cup square
 is not class-stable, so the unrestricted branch sum has no sector
 decomposition on this surface; (b) the `Z`-valued intersection pairing does
@@ -348,7 +354,7 @@ not descend to `Z_N` fluxes, so the center dual alone cannot carry it.
 
 | Route to the physical 4D sharp integer-Q context | Standing here |
 |---|---|
-| per-plaquette character grading | EXCLUDED by companion obstruction (PR #4784, in-flight) |
+| per-plaquette character grading | EXCLUDED by the linked companion obstruction |
 | 2D-style matched single label in 4D | FAILS STRUCTURALLY: links border 6 plaquettes; replaced by the cohomology construction (Theorem 1) |
 | closed-branch abelian flux sectors + intersection pairing | CONSTRUCTED (Theorems 1-3): the exact 4D template with odd support and action-derived pairing |
 | unrestricted branch sum (defects allowed) | EXCLUDED on this surface (Theorem 4.1): no class-stable charge — motivates sub-wall (i-a) |
@@ -384,11 +390,13 @@ The Tier-A registry names "the multi-plaquette / large-gauge-winding
 account" with the local cross-plane slot derived-absent per-plaquette; this
 note's charge is a global cross-plane pairing with `Q = 0` on single planes
 — landing on that account and respecting the absence result. The companion
-notes' residuals map exactly: PR #4796's (i) becomes (i-a) + (i-b); its (ii)
-becomes (ii') with the sector-reduction half now supplied. The landed
-(unaudited) no-winding-carrier note's Euclidean-carrier relocation is
-extended: the integer sector functional exists exactly on the closed-branch
-4D abelian surface, with the defect condition now the named price.
+notes' residuals map exactly: the linked 2D gluing note's (i) becomes
+(i-a) + (i-b); its (ii) becomes (ii') with the sector-reduction half now
+supplied. The landed
+[`THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_EMERGENT_Q_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_EMERGENT_Q_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+Euclidean-carrier relocation is extended: the integer sector functional
+exists exactly on the closed-branch 4D abelian surface, with the defect
+condition now the named price.
 
 ### N5 — Rhetoric audit
 
@@ -403,7 +411,7 @@ suppression; whether the framework's Admissibility rule bears on it is an
 open forward question, not asserted here); derive (i-b) the `SU(3)`
 torus-dual branch structure of the glued effective weight; derive (ii') the
 `F u F` insertion from the framework surface; the scaling-limit route; and
-the assembly-side work tracked by PR #4768.
+the separate assembly-side work.
 
 ### N7 — Steelman
 

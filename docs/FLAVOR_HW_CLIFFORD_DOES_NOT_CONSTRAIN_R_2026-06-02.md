@@ -80,7 +80,8 @@ No Clifford, Wigner, or HW equation is promoted to a selector here.
 ## Dependencies
 
 - [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
-  (downstream occupancy/slot-degree boundary; bounded support).
+  (downstream occupancy/slot-degree boundary; bounded-theorem source, not an
+  audit verdict).
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
   (Record axiom boundary and scope reference).
 

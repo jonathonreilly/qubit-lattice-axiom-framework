@@ -3,7 +3,7 @@ runner: scripts/flavor_record_readout_form_not_weight_2026_06_02.py
 runner_sha256: ee34a075b3fd68c1eebe6dace76fdc5c5311c7fa535ade7873fe3e850f048dac
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 [PASS] additive record readout selects log form once multiplicative Z is supplied
@@ -14,8 +14,8 @@ status: ok
 [PASS] form and weight are independent gates
        log form does not choose dimension count versus block count
 [PASS] pre-record normalized and post-record additive ledgers can coexist
-[PASS] downstream occupancy atom: downstream occupancy theorem is audited bounded support
-       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: effective=retained_bounded, audit=audited_clean
+[PASS] downstream occupancy atom: downstream occupancy theorem is ledger-registered as a bounded_theorem source
+       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: claim_type=bounded_theorem, note_path=docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md, effective=retained_bounded, audit=audited_clean
 [PASS] downstream occupancy atom: Record axiom declines weighting and occupancy supply
        checked live Minimal Axioms text
 [PASS] downstream occupancy atom: occupancy note records independence without adopting the premise
@@ -30,4 +30,3 @@ Genuine log|det| counts multiplicity 1:2; r=1/2 needs the separate block-count f
 DOWNSTREAM: the shared residual is the explicit occupancy/slot-degree atom; Record still supplies form, not weight.
 
 ----- stderr -----
-

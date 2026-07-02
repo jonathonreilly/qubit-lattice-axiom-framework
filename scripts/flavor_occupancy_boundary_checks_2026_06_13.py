@@ -24,10 +24,15 @@ def run_occupancy_boundary_checks(root: Path, check: Callable[[str, bool, str], 
     rows = json.loads((root / "docs" / "audit" / "data" / "audit_ledger.json").read_text())["rows"]
     occupancy_row = rows.get(OCCUPANCY_ROW, {})
     c(
-        "downstream occupancy theorem is audited bounded support",
-        occupancy_row.get("effective_status") == "retained_bounded"
-        and occupancy_row.get("audit_status") == "audited_clean",
-        f"{OCCUPANCY_ROW}: effective={occupancy_row.get('effective_status')}, audit={occupancy_row.get('audit_status')}",
+        "downstream occupancy theorem is ledger-registered as a bounded_theorem source",
+        occupancy_row.get("claim_type") == "bounded_theorem"
+        and occupancy_row.get("note_path") == "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
+        (
+            f"{OCCUPANCY_ROW}: claim_type={occupancy_row.get('claim_type')}, "
+            f"note_path={occupancy_row.get('note_path')}, "
+            f"effective={occupancy_row.get('effective_status')}, "
+            f"audit={occupancy_row.get('audit_status')}"
+        ),
     )
 
     minimal_axioms = (root / "docs" / "MINIMAL_AXIOMS_2026-06-05.md").read_text(encoding="utf-8")

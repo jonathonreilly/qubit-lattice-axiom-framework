@@ -3,7 +3,7 @@ runner: scripts/flavor_native_action_predicts_q1_2026_06_02.py
 runner_sha256: d1e4af22a80eee584afc12590e3d9f3b004c3802a34fd3ff22bc7ed0992daea7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.95
+elapsed_sec: 0.87
 status: ok
 ----- stdout -----
 [PASS] HS block norms 3a^2 and 6b^2 (||C+C^2||_F^2 = 6)
@@ -16,8 +16,8 @@ status: ok
        spectrum=[-3.33066907e-16 -2.37213427e-17  3.00000000e+00], Q=1.000000
 [PASS] mass grade (I) and hopping grade (C+C^2) are HS-orthogonal => one bi-invariant norm cannot fix the a:|b| ratio
        <mass,hop>_HS = 0.00e+00
-[PASS] downstream occupancy atom: downstream occupancy theorem is audited bounded support
-       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: effective=retained_bounded, audit=audited_clean
+[PASS] downstream occupancy atom: downstream occupancy theorem is ledger-registered as a bounded_theorem source
+       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: claim_type=bounded_theorem, note_path=docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md, effective=retained_bounded, audit=audited_clean
 [PASS] downstream occupancy atom: Record axiom declines weighting and occupancy supply
        checked live Minimal Axioms text
 [PASS] downstream occupancy atom: occupancy note records independence without adopting the premise
@@ -35,4 +35,3 @@ DOWNSTREAM: the residual is the explicit occupancy/slot-degree atom; no
 action-axis selector is introduced or adopted here.
 
 ----- stderr -----
-

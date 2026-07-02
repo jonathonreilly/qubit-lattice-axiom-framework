@@ -3,7 +3,7 @@ runner: scripts/flavor_hw_clifford_does_not_constrain_r_2026_06_02.py
 runner_sha256: dfcbe836e19b834ba1df7bfc21333afe3d49c4ce4ef1c52a881757bb649356fc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.35
 status: ok
 ----- stdout -----
 [PASS] Weyl relation Z X = omega X Z, and Fourier F X F^dag = Z (Clifford normalizer)
@@ -16,8 +16,8 @@ status: ok
        b=c F-fixed; b!=c not; a free for all values
 [PASS] trace and traceless-HS ratio are Fourier-conjugation invariant, but this is not value selection
        trace=1.300+0.000j; hs2=1.058400
-[PASS] downstream occupancy atom: downstream occupancy theorem is audited bounded support
-       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: effective=retained_bounded, audit=audited_clean
+[PASS] downstream occupancy atom: downstream occupancy theorem is ledger-registered as a bounded_theorem source
+       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: claim_type=bounded_theorem, note_path=docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md, effective=retained_bounded, audit=audited_clean
 [PASS] downstream occupancy atom: Record axiom declines weighting and occupancy supply
        checked live Minimal Axioms text
 [PASS] downstream occupancy atom: occupancy note records independence without adopting the premise
@@ -35,4 +35,3 @@ r=1/2 is unforced by the scoped HW/Fourier route.
 DOWNSTREAM: the residual is the explicit occupancy/slot-degree atom, not a HW/Fourier equation.
 
 ----- stderr -----
-

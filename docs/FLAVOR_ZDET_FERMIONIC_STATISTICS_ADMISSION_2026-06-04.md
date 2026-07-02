@@ -147,7 +147,8 @@ status.
 - [`STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
   (audited abstract two-candidate Grassmann forcing bridge).
 - [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
-  (downstream occupancy/slot-degree boundary; bounded support).
+  (downstream occupancy/slot-degree boundary; bounded-theorem source, not an
+  audit verdict).
 
 ## No-Go Discipline Gate
 

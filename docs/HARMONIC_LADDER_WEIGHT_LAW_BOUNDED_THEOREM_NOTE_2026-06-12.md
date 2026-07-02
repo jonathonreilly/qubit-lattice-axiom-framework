@@ -1,12 +1,15 @@
 # Harmonic Ladder Weight Law: Single-Sideband Refutation and Laurent Determinant Corrected Law
 
-Status: draft source note. The audit lane grades.
-
-Runner:
-
-```bash
-python3 scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py
-```
+**Date:** 2026-06-12
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note does not
+set, predict, or estimate any audit verdict. Effective status is
+pipeline-derived after independent audit and dependency closure.
+**Primary runner:** [`scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py`](../scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py)
+**Runner cache:** [`logs/runner-cache/frontier_harmonic_ladder_weight_law_2026_06_12.txt`](../logs/runner-cache/frontier_harmonic_ladder_weight_law_2026_06_12.txt)
+**No-promotion statement:** This source note records a bounded finite-state
+claim only; it creates no promotion, no registry edit, and no audit verdict.
 
 ## Scope
 
@@ -133,8 +136,9 @@ Ascending order: `K6,K5,K3,K4`, matching the landed capture-depth order.
 
 ## Claim Boundary
 
-The retained claim is bounded to these realized `L=3` states: the ladder weights
-follow the finite Laurent determinant principal-Arg law above. The single
-carrier/single-sideband law is not retained. The full `k>=2` tail is not the
-depth tail; the depth-ordering statement is restricted to the higher `k>=3`
-tail after the separately gated nonzero `k=2` sideband is removed.
+The bounded source claim is restricted to these realized `L=3` states: the
+ladder weights follow the finite Laurent determinant principal-Arg law above.
+The single carrier/single-sideband law is refuted on this surface. The full
+`k>=2` tail is not the depth tail; the depth-ordering statement is restricted
+to the higher `k>=3` tail after the separately gated nonzero `k=2` sideband is
+removed.

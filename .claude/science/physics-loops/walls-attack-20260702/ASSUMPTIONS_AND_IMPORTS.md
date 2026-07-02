@@ -89,3 +89,29 @@ families against it; the record-composition bridge is not established here.
 - No Record bridge, action selector, new axiom, or new primitive is assumed.
 - Block04's three-candidate conclusion is not changed: Wilson and
   principal-angle Manton remain non-semigroups at finite beta by Block04 T4.
+
+## Block10
+
+**New bounded artifact:**
+
+- `docs/SINGLE_STEP_LOCALITY_EXCLUDES_QUADRATIC_GENERATOR_BOUNDED_NOTE_2026-07-02.md`
+- `scripts/frontier_single_step_locality_excludes_qgen_2026_07_02.py`
+- `outputs/frontier_single_step_locality_excludes_qgen_2026_07_02.txt`
+
+**Role:**
+
+- Sharpens Block09's `Q-gen` condition by proving that finite-step generators
+  on `U(1)` are bounded and therefore cannot equal `s n^2` with `s>0`.
+- Separates the finite `Z_N` bookkeeping fact from positivity: full step sets
+  span the finite quadratic vector, but the tested exact matches
+  `N=5,7,8,9,12` require signed weights.
+- Proves that strict nearest-step locality on every finite `Z_N` fails the
+  first `Q-gen` check by the exact deficit `4 sin^2(pi/N)`.
+
+**Imports deliberately not used:**
+
+- No literature theorem is imported.
+- No continuum limit is used as authority.
+- No Record bridge, action selector, new axiom, or new primitive is assumed.
+- No horn of the extended-step / many-step-limit / rejected-bridge trichotomy
+  is selected.

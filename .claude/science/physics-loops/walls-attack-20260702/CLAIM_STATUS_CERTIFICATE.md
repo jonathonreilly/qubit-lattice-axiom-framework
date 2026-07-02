@@ -32,3 +32,18 @@ claim_type_reason: "exact positive-semigroup counterexample on Z_5 with symbolic
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
+
+# Claim status certificate — block10 (locality excludes Q-gen)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: exact tension theorem on constructed classes; trichotomy conditional on the (unbridged) record-composition premise; signed-weight obstruction stated at generator level only
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact identities and linear solves; no selection; siblings unaudited"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

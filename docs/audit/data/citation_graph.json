@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08"
+      "to": "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
+      "to": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+        "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
         "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
         "teleportation_resource_from_poisson_note",
         "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
         "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
-        "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07"
+        "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b8536993fc26bb7db1d6b5e75c60b050198629f3f972aa53a876c9c7624d7f12",
+      "note_hash": "1cbca593e9e1f41c784959955a055f389d3b2748eb332c90d66b821059d04835",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

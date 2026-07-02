@@ -1,11 +1,15 @@
 # Flavor — five finite spectral-action cutoffs do not select r=1/2
 
 **Date:** 2026-06-02
-**Claim type:** open_gate.
-**Review boundary:** source proposal for independent audit. No verdict or
-downstream grade is set here.
-**Runner:** `scripts/flavor_native_action_predicts_q1_2026_06_02.py` (SCORECARD 5/5).
-**Runner cache:** `logs/runner-cache/flavor_native_action_predicts_q1_2026_06_02.txt`
+**Type:** open_gate
+**Claim type:** open_gate
+**Status authority:** independent audit lane only. This source note sets source
+claim metadata only; it does not set, predict, or edit any audit outcome.
+**Primary runner:** [`scripts/flavor_native_action_predicts_q1_2026_06_02.py`](../scripts/flavor_native_action_predicts_q1_2026_06_02.py)
+**Runner cache:** [`logs/runner-cache/flavor_native_action_predicts_q1_2026_06_02.txt`](../logs/runner-cache/flavor_native_action_predicts_q1_2026_06_02.txt)
+**No-promotion statement:** This source note creates no promotion, no registry
+edit, no audit verdict, and no downstream status change; status remains owned
+by the independent audit lane.
 
 ## 2026-06-06 finite-scan scope repair
 
@@ -19,7 +23,7 @@ actually checks:
 - the spectrum and `Q=1` value at the finite-scan maximum near `b/a=1`;
 - Hilbert-Schmidt orthogonality of the mass and hopping grades.
 
-The branch does **not** claim a theorem for arbitrary monotone cutoffs, a
+This note does **not** claim a theorem for arbitrary monotone cutoffs, a
 Casimir/HK Brownian-time range theorem, or a Wilson/HK/Manton
 action-form-degeneracy theorem. Those remain separate bridge obligations.
 
@@ -52,6 +56,34 @@ The five tested finite spectral-action cutoffs do **not** supply `r=1/2`.
 `r=1/2` is the equal-block Hilbert-Schmidt partition `3a^2 = 6b^2`, not a
 maximum of the tested cutoff scans. This row does not claim a framework-native
 action-sector prediction for all admissible actions.
+
+## 2026-06-13 Downstream Boundary Alignment
+
+The later occupancy-independence theorem
+[`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+turns the residual named here into a single explicit atom: the doublet
+occupancy/slot-degree rule. This action-axis row therefore should not be read
+as a separate open search for "some native action" in general. Its safe use is
+narrower:
+
+- the five tested finite action cutoffs land on the dimension/sector-side
+  `r = 1` horn;
+- the equal-block `r = 1/2` horn remains the separate occupancy rule;
+- the Record axiom explicitly declines to supply weighting/occupancy; and
+- the downstream theorem exhibits both sector and orbit occupancy models as
+  consistent with the checked current surface.
+
+This update adds runner checks for that downstream boundary. It does not adopt
+orbit occupancy, does not add an action principle, and does not edit audit
+status.
+
+## Dependencies
+
+- [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+  (downstream occupancy/slot-degree boundary; bounded-theorem source, not an
+  audit verdict).
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  (Record axiom boundary and scope reference).
 
 ## The next paths this opens (not closing)
 - The residual is one object — the trace/dimension (→ Q=1) vs sector/block-count (→ Q=2/3) weighting

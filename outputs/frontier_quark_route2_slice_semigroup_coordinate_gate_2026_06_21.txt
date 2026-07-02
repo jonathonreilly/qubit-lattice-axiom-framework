@@ -1,0 +1,62 @@
+Route-2 slice-semigroup coordinate gate
+========================================================================================
+
+----------------------------------------------------------------------------------------
+1. Current-surface boundaries
+----------------------------------------------------------------------------------------
+PASS: parent note names the exact conditional slice family
+PASS: parent runner verifies the slice-semigroup law
+PASS: parent note leaves the endpoint triple open
+PASS: exact readout gives q_E and q_T as center/shell ratios
+PASS: exact readout names beta_E/alpha_E=21/4 as missing map entry
+PASS: Schur note names lambda=q_E/q_T=9/4 but not a bridge theorem
+
+----------------------------------------------------------------------------------------
+2. Exact target
+----------------------------------------------------------------------------------------
+q_T=5/6, lambda=9/4, q_target=15/8, rho_target=21/4
+PASS: q_T is below the identity lift
+PASS: needed inverse-square lambda is greater than one
+PASS: raw q scaling gives q_E=15/8
+PASS: raw q scaling gives rho_E=21/4
+PASS: target center ratio is c_TE=-8/9
+
+----------------------------------------------------------------------------------------
+3. Non-semigroup raw q scaling
+----------------------------------------------------------------------------------------
+F(1)=9/4
+F(q1 q2)=693/520, F(q1)F(q2)=6237/2080
+PASS: raw constant q scaling does not preserve semigroup identity
+PASS: raw constant q scaling fails composition for lambda=9/4
+PASS: raw constant q scaling would preserve composition only for lambda=1
+PASS: raw q scaling is exactly the endpoint-producing but non-semigroup map
+
+----------------------------------------------------------------------------------------
+4. Generator/log coordinates miss the endpoint
+----------------------------------------------------------------------------------------
+increment-scaled q=5/8, rho=-9/4
+sign-flipped log upper bound (6/5)^3=216/125
+PASS: additive increment scaling gives q_E=5/8
+PASS: additive increment scaling gives rho_E=-9/4
+PASS: positive log scaling q_T^lambda stays below one
+PASS: positive log scaling therefore cannot hit q_E=15/8
+PASS: sign-flipped log exponent is bounded above by (6/5)^3
+PASS: sign-flipped log upper bound is below q_E=15/8
+PASS: generator-natural coordinates miss the endpoint in both signs tested
+
+----------------------------------------------------------------------------------------
+5. Current-bank verdict
+----------------------------------------------------------------------------------------
+PASS: current bank does not name a raw q semigroup selector theorem
+PASS: parent assigns the blocker to readout ambiguity, not slice dynamics
+PASS: Schur note keeps q_X inverse-square as a gap
+PASS: no observed endpoint value is used as proof input
+PASS: positive target is now a non-semigroup raw q readout primitive or alternate bridge
+PASS: current result is a no-go for semigroup-derived raw q scaling
+PASS: this does not rule out future nonsemigroup readout primitives
+
+----------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------
+TOTAL: PASS=29, FAIL=0
+VERDICT: no-go / semigroup-coordinate boundary. Raw q scaling by 9/4 gives the endpoint, but it is not a semigroup coordinate law; semigroup-natural generator coordinates miss q_E=15/8.

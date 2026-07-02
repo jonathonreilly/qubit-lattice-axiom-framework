@@ -20,10 +20,11 @@ maximum: near U = exp(iX), X in su(3) (8 real dims), Re Tr U = 3 - (1/2)|X|^2
     c_(0,0)(beta) >= C_lower * e^beta * beta^(-(N_c^2-1)/2),
                   = C_lower * e^beta * beta^(-4)   for SU(3),
 
-with C_lower > 0 an explicit constant (the SU(3) small-ball Haar constant times
-e^-4 12^4 / 2). The power -(N_c^2-1)/2 = -4 is the group-dimension Gaussian
-normalization. The witnessed prefactor C = lim c_(0,0) beta^4 e^(-beta) ~ 14.85;
-any C_lower < C is a valid (loose) lower bound.
+with C_lower > 0 a fixed small-ball constant (the SU(3) small-ball Haar
+constant times e^-4 12^4 / 2). The power -(N_c^2-1)/2 = -4 is the
+group-dimension Gaussian normalization. The witnessed prefactor
+C = lim c_(0,0) beta^4 e^(-beta) ~ 14.85 is a numerical scale check, not the
+load-bearing source of the analytic lower-bound constant.
 
 DERIVATION OF THE LOWER BOUND (the Haar small-ball argument):
   c_(0,0) = E_Haar[exp((beta/3) Re Tr U)]
@@ -41,10 +42,8 @@ DERIVATION OF THE LOWER BOUND (the Haar small-ball argument):
 The runner (a) independently CHECKS the identification c_(0,0) = Haar average by
 Monte Carlo at small beta, (b) witnesses the asymptotic form e^beta beta^(-4)
 (c_(0,0) beta^4 e^(-beta) -> C ~ 14.85, power -4 = -(N_c^2-1)/2), and (c)
-witnesses that the lower bound holds with an explicit conservative C_lower
-(margin reported; the bound is loose, not fitted). Nothing is fitted; C_lower is
-NOT inferred from the data (it is a conservative explicit constant below the
-witnessed C).
+checks that a fixed grid constant C_GRID=8 holds on the sampled large-beta grid.
+Nothing is fitted; C_GRID is not the analytic lower-bound constant.
 """
 import importlib.util
 import math
@@ -64,7 +63,7 @@ _spec.loader.exec_module(se)
 
 N_C = 3
 POWER = (N_C ** 2 - 1) / 2.0  # = 4 for SU(3); the group-dimension Gaussian power
-C_LOWER = 8.0  # explicit conservative lower-bound constant (< witnessed C ~ 14.85)
+C_GRID = 8.0  # non-load-bearing finite-grid witness (< witnessed C ~ 14.85)
 
 PASS = 0
 FAIL = 0
@@ -146,24 +145,24 @@ def main():
         f"slope = {slope:.4f} (target -2.5); c_00 power = {slope - 1.5:.3f} ~ -4",
     )
 
-    # (c) THE DERIVED LOWER BOUND holds with explicit conservative C_LOWER.
+    # (c) Non-load-bearing finite-grid witness for the lower-bound scale.
     ok = True
     margins = []
     for beta in (48, 96, 192, 384):
         mode = int(0.8 * beta) + 30
         lnc = math.log(c00(beta, mode))
-        ln_bound = math.log(C_LOWER) + beta - POWER * math.log(beta)
+        ln_bound = math.log(C_GRID) + beta - POWER * math.log(beta)
         margins.append(lnc - ln_bound)  # > 0 means c_00 >= bound
         ok = ok and (lnc > ln_bound)
     check(
-        f"derived lower bound c_00 >= C_lower e^beta beta^(-{POWER:g}) holds (C_lower={C_LOWER:g})",
+        f"grid witness c_00 >= C_grid e^beta beta^(-{POWER:g}) holds on sampled betas (C_grid={C_GRID:g})",
         ok,
-        f"ln(c_00) - ln(bound) = {[round(m, 4) for m in margins]} (all > 0; bound loose, not fitted)",
+        f"ln(c_00) - ln(grid bound) = {[round(m, 4) for m in margins]} (all > 0; finite-grid witness)",
     )
     check(
-        "anti-fab: C_lower is an explicit constant BELOW the witnessed C, not fitted",
-        C_LOWER < min(Cs),
-        f"C_lower={C_LOWER:g} < witnessed C~{min(Cs):.2f}; the bound is conservative/derived, not tuned",
+        "anti-fab: C_grid is a fixed finite-grid witness BELOW the observed asymptotic scale, not fitted",
+        C_GRID < min(Cs),
+        f"C_grid={C_GRID:g} < witnessed C~{min(Cs):.2f}; analytic C_lower remains the small-ball constant",
     )
     # FALSIFIER: wrong group-dimension power breaks the asymptotic form.
     wrong = math.exp(math.log(c00(192, 184)) + 3.0 * math.log(192) - 192)  # power 3 not 4

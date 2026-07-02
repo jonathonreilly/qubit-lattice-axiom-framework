@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_2026_06_12.py
-runner_sha256: 12502ce74f1afd427b293653db4797c57e29b19a3e7b1d2357b5f20c08401d00
+runner_sha256: cb34a3ba90fa8e9ee51942b25f4d601c5f4109bb2906f2f3b60e8e9d640669d6
 timeout_sec: 1800
 exit_code: 0
 status: ok
@@ -18,10 +18,10 @@ PASS: c_00 ~ C e^beta beta^(-POWER), POWER = (N_c^2-1)/2 = 4
       C estimates [14.564, 14.728, 14.808, 14.847] converging upward to ~14.9
 PASS: measured power of beta^1.5 e^-beta c_00 is ~ -5/2 (=> c_00 power -4)
       slope = -2.4909 (target -2.5); c_00 power = -3.991 ~ -4
-PASS: derived lower bound c_00 >= C_lower e^beta beta^(-4) holds (C_lower=8)
-      ln(c_00) - ln(bound) = [0.5991, 0.6103, 0.6157, 0.6184] (all > 0; bound loose, not fitted)
-PASS: anti-fab: C_lower is an explicit constant BELOW the witnessed C, not fitted
-      C_lower=8 < witnessed C~14.56; the bound is conservative/derived, not tuned
+PASS: grid witness c_00 >= C_grid e^beta beta^(-4) holds on sampled betas (C_grid=8)
+      ln(c_00) - ln(grid bound) = [0.5991, 0.6103, 0.6157, 0.6184] (all > 0; finite-grid witness)
+PASS: anti-fab: C_grid is a fixed finite-grid witness BELOW the observed asymptotic scale, not fitted
+      C_grid=8 < witnessed C~14.56; analytic C_lower remains the small-ball constant
 PASS: falsifier: wrong power (3 not (N_c^2-1)/2=4) does NOT give a stable O(1) constant
       with power 3, scaled quantity = 7.712e-02 (drifts; the correct power is 4)
 

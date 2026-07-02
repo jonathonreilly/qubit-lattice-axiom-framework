@@ -47,3 +47,5 @@ claim_type_reason: "exact identities and linear solves; no selection; siblings u
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
+
+# Certificate — block13: bounded_theorem; exact Q-gen not positive on tested Z_N (explicit witnesses); wrapped-Gaussian positive with certified non-quadratic deviations; bifurcation named; audit_required_before_effective_retained: true; bare_retained_allowed: false.

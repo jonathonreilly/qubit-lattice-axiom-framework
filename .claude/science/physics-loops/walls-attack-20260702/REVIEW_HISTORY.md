@@ -62,3 +62,5 @@ Disposition: **pass**. Named for the queue: proving the Metzler-equivalence
 step (generator-signed ⟺ kernel non-positivity at small t) would upgrade the
 T2 obstruction from generator-level to semigroup-level — future block if the
 action lane reopens.
+
+## block13 — supervisor review: T1(⇒) remainder bound hand-checked (-t0(169/1000) + 2 t0^2 10^2 = -69/2000000 < 0 at t0 = 1/2000); T1(⇐) nonneg-series argument sound; N=5,7 witnesses explicit; wrapped-Gaussian deviations certified with tail bound 2e-95; all-N claims correctly avoided. Runner 37/0 re-run. Disposition: pass.

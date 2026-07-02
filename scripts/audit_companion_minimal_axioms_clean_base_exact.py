@@ -231,6 +231,33 @@ def source_boundary_checks() -> list[Check]:
             ),
             "",
         ),
+        Check(
+            "Lattice motion list is named about each site",
+            contains(note, "proper cubic rotations about each site"),
+            "",
+        ),
+        Check(
+            "Lattice site-distinction clause is present",
+            contains(
+                note,
+                "No site is privileged. Sites are distinguished by the supplied lattice structure alone.",
+            ),
+            "",
+        ),
+        Check(
+            "Policy records 2026-07-02 Lattice site-distinction clause",
+            "2026-07-02 -- Lattice site-distinction clause" in policy
+            and contains(policy, "Sites are distinguished by the supplied lattice structure alone"),
+            "",
+        ),
+        Check(
+            "Registry note records the site clause",
+            contains(
+                node.get("note", ""),
+                "no site privileged and sites distinguished by the supplied lattice structure alone",
+            ),
+            "",
+        ),
         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
         Check(
             "Admissibility local-constraint clause is present",

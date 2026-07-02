@@ -80,3 +80,18 @@ claim_type_reason: "exact eigenprojection witnesses on the hw=1 circulant surfac
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
+
+# Claim status certificate — block06 (equal-energy reduction)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: partially_closes
+conditional_surface_status: parent equal-channel-energy clause discharged conditional on {R*, E-ident, inherited equipartition-note conditions}; ladder reduces to {R*, D-totality, C2, E-ident}
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact two-branch value correspondence + reduction; E-ident and R* unadjudicated; upstream equipartition note is a bounded theorem with inherited conditions"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

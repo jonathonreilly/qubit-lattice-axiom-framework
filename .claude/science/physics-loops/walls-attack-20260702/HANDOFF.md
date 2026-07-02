@@ -71,3 +71,18 @@ Proposed: block05 (degeneracy-locus totality/C1b).
    {R*, D-totality, C2, equal-channel-energy}; the conditional C1-completion is
    the cross-PR payoff and is stated only here.
 Verdict: **OPEN** (evaluator run locally by the supervising agent per SKILL).
+
+## Cluster-cap evaluation — before PR #5 in the carrier-measure family (block06)
+
+Prior: #4816, #4817, #4818, #4820. Proposed: block06 (equal-energy reduction).
+1. New load-bearing premise: YES — the equipartition-surface reduction and the
+   exact two-branch dictionary⇔scoring correspondence connect two previously
+   unlinked repo surfaces; present in no prior PR.
+2. Distinct claim type: YES — cross-surface reduction discharging a parent
+   clause conditionally (vs separation/decomposition/registrability/totality).
+3. Independent reviewability: YES — correspondence is exact-value-checked in
+   its own runner (16/0), S3-outside guard included.
+4. Marginal review value: HIGH — removes the last non-adjudication-shaped rung
+   from the ladder; after this the wall is entirely a set of named
+   adjudications.
+Verdict: **OPEN** (evaluator run locally per SKILL).

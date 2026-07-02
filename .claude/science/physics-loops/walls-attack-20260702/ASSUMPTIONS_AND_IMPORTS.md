@@ -158,3 +158,44 @@ witness-level decomposition; neither supplier is derived here.
   introduced.
 - No audit-lane file, publication file, registry, or public status surface is
   edited by this block.
+
+## Block06
+
+**Date:** 2026-07-02
+**Block:** equal-channel-energy reduces to equipartition surface; dictionary
+residual is scoring residual
+**Status authority:** independent audit lane only. This ledger records local
+block inputs; it does not set or predict an audit outcome.
+
+### Claim Shape
+
+- Status: conditional-support / bounded support. The result is a conditional
+  reduction, not an unconditional equal-energy theorem.
+- `E-ident` is a named unadjudicated identification premise: the `C_3`
+  generator-channel split `{unit I, doublet complement B}` is identified with
+  the equipartition-note cell split `{s, d}` at the level of registered
+  weights.
+- `R*` is a named unadjudicated registrability reading inherited from Block03.
+- The equipartition note's own boundary and Does-NOT conditions are inherited,
+  not discharged.
+
+### Cited Authorities
+
+| path | role | what is used | load-bearing for Block06 bounded support |
+|---|---|---|---|
+| `docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md` | equipartition surface | The invariant selection `x=1`, the two dictionaries `x=2r` and `x=r`, the dictionary-as-atom paragraph, the tri-guise identity, and inherited boundary/Does-NOT conditions. | yes |
+| `docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md` | Block01 sibling | The exact S1 values `r=1/2`, `Q=2/3`; S2 values `r=1`, `Q=1`; S3 value `17/2 - 6 sqrt(2)`; and the scoring residual. Dependency class: stacked branch-local, unaudited. | yes |
+| `docs/C1_FRAME_COMPONENT_FROM_RECORD_REGISTRABILITY_PARTIAL_BOUNDED_NOTE_2026-07-02.md` | Block03 sibling | `R*`, the S2-class imported-basis exclusion, and S1 compatibility with `||I||^2=3`, `||B||^2=6`. Dependency class: stacked branch-local, unaudited; conditional on R*. | yes |
+| `docs/FLAVOR_MISSING_AXIOM_CARRIER_MEASURE_NOTE_2026-05-30.md` | parent carrier-measure wall | The parent equal-Hilbert-Schmidt-energy clause and carrier-measure residual. | yes |
+
+### Import Firewall
+
+- No unconditional equal-channel-energy theorem is imported or proved.
+- `E-ident` is not derived; it is isolated for adjudication.
+- `R*` is not promoted to axiom content or registry content.
+- D-totality and C2 remain open sibling gates.
+- The S3 scoring rule is not folded into the two-dictionary correspondence.
+- No probability rule, Born rule, observed value, fitted selector, state
+  selector, new axiom, primitive, or wall closure is introduced.
+- No docs/audit file, publication file, registry, or public status surface is
+  edited by this block.

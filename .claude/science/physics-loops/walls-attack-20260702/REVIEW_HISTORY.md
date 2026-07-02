@@ -97,3 +97,24 @@ Disposition: **pass-with-supervisor-addition**.
    (the adjudication question), not rescuing within it.
 
 Disposition: **pass**. Runner re-run independently: PASS=32 FAIL=0.
+
+## block06 — supervisor line-by-line review (2026-07-02, pre-PR)
+
+1. **F1 (verified).** Two-branch exact-value correspondence hand-checked:
+   component dictionary fixed point r*=1/2, Q=2/3 == block01 S1; slot
+   dictionary r*=1, Q=1 == block01 S2; fixed sets from r->2r^2 and r->r^2
+   exactly {0,1/2} and {0,1}. Equal weight under component counting reads
+   3a^2 = 6|b|^2 — precisely the parent clause.
+2. **F2 (verified).** E-ident stated as a named premise (not derived); the
+   structural support (both are the C_3 singlet/doublet split) is stated
+   without laundering. Inherited equipartition-note conditions quoted
+   verbatim, including "does not resolve the dictionary" — resolved here only
+   via sibling premise R*, correctly conditional.
+3. **F3 (verified).** S3-outside hostile check present (S3's r is in neither
+   fixed set) — the correspondence is a two-branch exact match, not
+   numerology.
+4. **F4 (style, fixed).** Removed one redundant repetition of the T4 hedge
+   sentence in the Does-NOT section.
+5. **F5 (verified).** Runner re-run independently: PASS=16 FAIL=0.
+
+Disposition: **pass-after-repair** (style-only).

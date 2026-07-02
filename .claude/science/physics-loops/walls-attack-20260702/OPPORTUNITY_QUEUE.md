@@ -30,3 +30,10 @@ availability, review landability, blast radius, independence.
 - V3: framework-specific: rests on the circulant algebra's Y-independent Fourier structure and the realized-state primitive's pointwise no-content boundary.
 - V4: non-trivial: the pointwise-escape honesty (T4) vs rule-totality (T5) distinction is a real structural finding, not relabeling.
 - V5: distinct from block03 (registrability/unsupplied-choice mechanism) — this block's mechanism is well-definedness/totality at admissible degeneracies; closest prior = block03, distinction stated.
+
+## Value-gate record (V1–V5) — block06 (pre-PR)
+- V1: obstruction = the parent's equal-channel-energy clause (quoted in trace gate). Block06 discharges it conditionally by reduction to the banked equipartition surface + E-ident + R*.
+- V2: new content = the exact two-branch correspondence (component/slot dictionary ⇔ S1/S2 scoring, matching r AND Q values on both branches) and the ladder collapse; absent from all siblings and both parents.
+- V3: framework-specific: rests on the equipartition note's flow surface and block01/03 structures.
+- V4: non-trivial: a two-branch exact-value correspondence with an S3-outside check is structure, not relabeling.
+- V5: distinct from blocks 01-05: reduction across two previously unconnected surfaces (occupancy/equipartition ⇔ scoring/channel-energy); closest = block02 (also cross-wall) but different pair and mechanism.

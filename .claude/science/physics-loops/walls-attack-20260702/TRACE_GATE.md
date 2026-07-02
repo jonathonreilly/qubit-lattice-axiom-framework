@@ -44,3 +44,15 @@ reachability_to_target: partially_closes
 artifact_role: theorem
 next_trace_action: "premise ladder complete after this block: {R*, D-totality, C2, equal-channel-energy}. Remaining queue: equal-channel-energy leg; moduli openings formalization; kappa C2-shape. Adjudications of R* and D-totality are audit/owner-lane questions — hand off."
 ```
+
+# Trace gate — block06 (equal-channel-energy reduction to equipartition surface)
+
+```yaml
+trace_class: upstream_support
+target_claim_id: flavor_missing_axiom_carrier_measure_note_2026-05-30
+target_blocker_text: "If a separate theorem selects equal Hilbert-Schmidt energy across the two generator channels, then ... r = b^2/a^2 = 1/(N-1)"
+source_of_blocker_text: audit_ledger
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "ladder after block06: {R*, D-totality, C2, E-ident} + inherited equipartition-note conditions. All four are adjudication-shaped. Campaign pivots to remaining queue: moduli openings formalization; kappa C2-shape. Synthesis lives in HANDOFF/final report, not a churn block."
+```

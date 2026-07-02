@@ -9437,10 +9437,10 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
+        "C": 2,
         "D": 0
       },
-      "decoration_candidate": true,
+      "decoration_candidate": false,
       "dominant_class": "B",
       "runner": "scripts/frontier_dm_wilson_to_dweh_hermitian_source_family_current_bank_boundary_2026_04_18.py"
     },
@@ -9959,6 +9959,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_epsstar_curve_pt_boundary_2026_06_12.py"
+    },
+    "epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 3,
+        "D": 27
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py"
     },
     "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12": {
       "assert_count": 1,
@@ -15492,6 +15504,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_harmonic_ladder_origin_2026_06_12.py"
     },
+    "harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 40
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py"
+    },
     "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
       "assert_count": 1,
       "counts": {
@@ -16475,6 +16499,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_hkd_correspondence_general_charts_2026_06_12.py"
+    },
+    "hkd_correspondence_structural_equivalence_bounded_theorem_note_2026-06-12": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py"
     },
     "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12": {
       "assert_count": 1,
@@ -20520,30 +20556,6 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py"
     },
-    "lanes.action-law.readme": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/frontier_3plus1d_closure_card.py"
-    },
-    "lanes.coin-walks.readme": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/frontier_chiral_bottleneck_card.py"
-    },
     "lanes.generated-geometry.readme": {
       "assert_count": 4,
       "counts": {
@@ -20579,18 +20591,6 @@
       "decoration_candidate": false,
       "dominant_class": null,
       "runner": "scripts/lattice_3d_dense_10prop.py"
-    },
-    "lanes.staggered.readme": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 21,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_staggered_17card.py"
     },
     "lattice_3d_dense_refinement_reconciliation_note": {
       "assert_count": 0,
@@ -22318,7 +22318,7 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
-      "runner": "scripts/audit_companion_three_axiom_clean_base_exact.py"
+      "runner": "scripts/audit_companion_minimal_axioms_clean_base_exact.py"
     },
     "minimal_axioms_2026-05-03": {
       "assert_count": 1,
@@ -22716,6 +22716,18 @@
       "dominant_class": "C",
       "runner": "scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py"
     },
+    "native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_2026_06_12.py"
+    },
     "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12": {
       "assert_count": 2,
       "counts": {
@@ -22739,6 +22751,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12.py"
+    },
+    "native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_2026_06_12.py"
     },
     "native_gauge_transfer_diagonal_domination_rung_nine_bounded_note_2026-06-12": {
       "assert_count": 2,
@@ -22787,6 +22811,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py"
+    },
+    "native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_2026_06_12.py"
     },
     "native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_note_2026-06-12": {
       "assert_count": 1,
@@ -22883,6 +22919,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_2026_06_12.py"
+    },
+    "native_gauge_transfer_w85_finite_witness_open_gate_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/native_gauge_transfer_w85_finite_witness_open_gate_2026_06_12.py"
     },
     "native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12": {
       "assert_count": 1,
@@ -23094,10 +23142,10 @@
         "A": 0,
         "B": 1,
         "C": 0,
-        "D": 4
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "D",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "runner": "scripts/frontier_neutrino_majorana_current_atlas_nonrealization.py"
     },
     "neutrino_majorana_current_stack_exhaustion_note": {
@@ -27540,18 +27588,6 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_proton_lifetime_derived.py"
     },
-    "publication.ci3_z3.figure_plan": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 11,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_graph_first_su3_integration.py"
-    },
     "pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22": {
       "assert_count": 1,
       "counts": {
@@ -28139,6 +28175,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py"
+    },
+    "quark_route2_e_channel_source_readout_construction_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.py"
     },
     "quark_route2_ell_e_structural_narrowing_bounded_note_2026-06-12": {
       "assert_count": 1,
@@ -29496,18 +29544,6 @@
       "dominant_class": null,
       "runner": "scripts/numpy_replay_bootstrap.py"
     },
-    "repo.root_file_guide": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "toy_event_physics.py"
-    },
     "reproduction_audit_note": {
       "assert_count": 0,
       "counts": {
@@ -29544,6 +29580,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_restricted_strong_field_closure_packet.py"
     },
+    "reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 13,
+        "B": 5,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py"
+    },
     "reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12": {
       "assert_count": 1,
       "counts": {
@@ -29555,6 +29603,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/frontier_reta_conversion_carrier_class_elimination_2026_06_12.py"
+    },
+    "reta_magnitude_is_continuum_index_theorem_lattice_index_is_integer_bounded_note_2026-06-12": {
+      "assert_count": 2,
+      "counts": {
+        "A": 7,
+        "B": 1,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_reta_magnitude_continuum_index_theorem_2026_06_12.py"
     },
     "retained_cross_lane_consistency_support_note_2026-04-22": {
       "assert_count": 0,
@@ -31008,6 +31068,18 @@
       "dominant_class": "C",
       "runner": "scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py"
     },
+    "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py"
+    },
     "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11": {
       "assert_count": 2,
       "counts": {
@@ -31020,6 +31092,30 @@
       "dominant_class": "C",
       "runner": "scripts/single_clock_axis_selection_check_2026_06_11.py"
     },
+    "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py"
+    },
+    "single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py"
+    },
     "single_clock_kms_apbc_axis_supplier_no_go_note_2026-06-16": {
       "assert_count": 1,
       "counts": {
@@ -31031,6 +31127,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py"
+    },
+    "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 6,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py"
     },
     "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10": {
       "assert_count": 1,
@@ -37140,18 +37248,6 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_atomic_hydrogen_helium_companion_packet_verifier_2026_06_12.py"
     },
-    "work_history.cabibbo_jarlskog_route_note_2026-04-12": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "runner": "scripts/frontier_baryogenesis.py"
-    },
     "work_history.ckm.cabibbo_bound_note": {
       "assert_count": 0,
       "counts": {
@@ -37175,18 +37271,6 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_ckm_mass_basis_nni.py"
-    },
-    "work_history.ckm.jarlskog_phase_bound_note": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 51
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "scripts/frontier_jarlskog_derived.py"
     },
     "work_history.gw_echo_timing_route_note": {
       "assert_count": 0,
@@ -41659,6 +41743,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/audit_companion_minimal_axioms_clean_base_exact.py": {
+      "assert_count": 1,
+      "claims": [
+        "minimal_axioms"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/audit_companion_multifactor_cannot_cleanly_give_koide_multiplicity_exact.py": {
       "assert_count": 0,
       "claims": [
@@ -42657,21 +42756,6 @@
       "counts": {
         "A": 0,
         "B": 3,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true
-    },
-    "scripts/audit_companion_three_axiom_clean_base_exact.py": {
-      "assert_count": 1,
-      "claims": [
-        "minimal_axioms"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 2,
         "C": 0,
         "D": 0
       },
@@ -47998,21 +48082,6 @@
       "dominant_class": "B",
       "exists": true
     },
-    "scripts/frontier_3plus1d_closure_card.py": {
-      "assert_count": 0,
-      "claims": [
-        "lanes.action-law.readme"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true
-    },
     "scripts/frontier_a1_11_probe_campaign_synthesis.py": {
       "assert_count": 1,
       "claims": [
@@ -48951,21 +49020,6 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true
-    },
-    "scripts/frontier_baryogenesis.py": {
-      "assert_count": 1,
-      "claims": [
-        "work_history.cabibbo_jarlskog_route_note_2026-04-12"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 1,
         "C": 0,
         "D": 0
       },
@@ -50015,8 +50069,7 @@
     "scripts/frontier_chiral_bottleneck_card.py": {
       "assert_count": 0,
       "claims": [
-        "chiral_bottleneck_card_proposal",
-        "lanes.coin-walks.readme"
+        "chiral_bottleneck_card_proposal"
       ],
       "counts": {
         "A": 0,
@@ -55820,10 +55873,10 @@
       "counts": {
         "A": 0,
         "B": 2,
-        "C": 0,
+        "C": 2,
         "D": 0
       },
-      "decoration_candidate": true,
+      "decoration_candidate": false,
       "dominant_class": "B",
       "exists": true
     },
@@ -56321,6 +56374,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 3,
+        "D": 27
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_epsstar_sommerfeld_derivation_2026_06_12.py": {
@@ -58514,8 +58582,7 @@
       "assert_count": 1,
       "claims": [
         "graph_first_su3_integration_note",
-        "left_handed_charge_matching_note",
-        "publication.ci3_z3.figure_plan"
+        "left_handed_charge_matching_note"
       ],
       "counts": {
         "A": 0,
@@ -59047,6 +59114,21 @@
         "B": 0,
         "C": 7,
         "D": 10
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 40
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -60074,6 +60156,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py": {
+      "assert_count": 2,
+      "claims": [
+        "hkd_correspondence_structural_equivalence_bounded_theorem_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_hkd_correspondence_general_charts_2026_06_12.py": {
       "assert_count": 1,
       "claims": [
@@ -60658,21 +60755,6 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
-      "exists": true
-    },
-    "scripts/frontier_jarlskog_derived.py": {
-      "assert_count": 1,
-      "claims": [
-        "work_history.ckm.jarlskog_phase_bound_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 51
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
       "exists": true
     },
     "scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py": {
@@ -64188,10 +64270,10 @@
         "A": 0,
         "B": 1,
         "C": 0,
-        "D": 4
+        "D": 0
       },
-      "decoration_candidate": false,
-      "dominant_class": "D",
+      "decoration_candidate": true,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_neutrino_majorana_current_stack_exhaustion.py": {
@@ -69513,6 +69595,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 13,
+        "B": 5,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_reta_conversion_carrier_class_elimination_2026_06_12.py": {
       "assert_count": 1,
       "claims": [
@@ -69525,6 +69622,21 @@
         "D": 0
       },
       "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_reta_magnitude_continuum_index_theorem_2026_06_12.py": {
+      "assert_count": 2,
+      "claims": [
+        "reta_magnitude_is_continuum_index_theorem_lattice_index_is_integer_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 1,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
       "dominant_class": "A",
       "exists": true
     },
@@ -70250,6 +70362,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py": {
+      "assert_count": 1,
+      "claims": [
+        "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
     "scripts/frontier_single_clock_uniqueness_scope_boundary_2026_06_06.py": {
       "assert_count": 1,
       "claims": [
@@ -70733,7 +70860,6 @@
     "scripts/frontier_staggered_17card.py": {
       "assert_count": 0,
       "claims": [
-        "lanes.staggered.readme",
         "session_synthesis_2026-04-10_graph_axioms",
         "staggered_fermion_card_2026-04-10"
       ],
@@ -80977,6 +81103,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12.py": {
       "assert_count": 2,
       "claims": [
@@ -81002,6 +81143,21 @@
         "B": 2,
         "C": 5,
         "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -81061,6 +81217,21 @@
         "A": 0,
         "B": 5,
         "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
@@ -81185,6 +81356,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/native_gauge_transfer_w85_finite_witness_open_gate_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "native_gauge_transfer_w85_finite_witness_open_gate_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12.py": {
@@ -82603,6 +82789,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "quark_route2_e_channel_source_readout_construction_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/quark_route2_ell_e_structural_narrowing_bounded_2026_06_12.py": {
       "assert_count": 1,
       "claims": [
@@ -83685,6 +83886,36 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "single_clock_blocked_time_unit_split_n2_support_note_2026-06-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "single_clock_independent_commuting_transfer_factor_n5_no_go_note_2026-06-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 9,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/single_clock_kms_apbc_axis_supplier_no_go_2026_06_16.py": {
       "assert_count": 1,
       "claims": [
@@ -83698,6 +83929,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/single_clock_physical_clock_admission_inventory_n5_support_2026_06_17.py": {
+      "assert_count": 1,
+      "claims": [
+        "single_clock_physical_clock_admission_inventory_n5_support_note_2026-06-17"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 6,
+        "D": 7
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/site_license_tick_dichotomy_all_periods_2026_06_11.py": {
@@ -85854,35 +86100,20 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "exists": true
-    },
-    "toy_event_physics.py": {
-      "assert_count": 0,
-      "claims": [
-        "repo.root_file_guide"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 2
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "exists": true
     }
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 624,
+    "decoration_candidates": 623,
     "dominant_class_distribution": {
-      "A": 462,
-      "B": 555,
-      "C": 1233,
-      "D": 422,
-      "none": 451
+      "A": 464,
+      "B": 558,
+      "C": 1238,
+      "D": 423,
+      "none": 450
     },
-    "runners_classified": 3123,
-    "runners_with_C": 1675,
-    "runners_with_D": 991
+    "runners_classified": 3133,
+    "runners_with_C": 1688,
+    "runners_with_D": 995
   }
 }

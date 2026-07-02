@@ -115,23 +115,32 @@ and do not bound the row on that basis; audit only any averaging, typicality
 or genericity predicate, weighting, or state-contingent value actually
 claimed.
 
-The framework baseline (per `MINIMAL_AXIOMS_2026-06-05.md`) is the three named
-axioms Lattice, Quantum, and Record. Lattice is the cubic `Z^3` lattice with
-nearest-neighbor adjacency. Quantum is the one-qubit operator algebra at each
-site, equivalently `M_2(ℂ) ≅ Cl(3,0)` — these are co-equal labels for the same
-retained algebra-isomorphism class, supported by the retained narrow theorems
-`cl3_complexification_split_narrow_theorem_note_2026-05-10` and
-`cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10`. The older
-`physical Cl(3) local algebra` phrasing remains valid as the
-real-algebra reading and continues to read correctly in legacy content. Record
-is durable registration of the realized outcome in a supplied readout context:
-the realized outcome is the `K`/CPT orbit of the realized central sector, and
+The framework baseline (per `MINIMAL_AXIOMS_2026-06-29.md`) is the four named
+axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
+lattice with nearest-neighbor adjacency. Qubit is the domain of local
+possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is
+equivalent notation, not extra primitive structure, and no possibility is
+privileged; possibilities are distinguished by the supplied algebraic structure
+alone.
+Admissibility is one fixed finite-neighborhood rule, the same at every lattice
+translate; for each site, the available possibilities are determined by, and
+vary with, the nearest-neighbor conditions, consistent with local records. A
+site need not carry a record; when present, a record locks exactly one local
+possibility from the subset available at that site under Admissibility. Only
+records are readable; a readout value is determined by record content alone;
 finite scalar readout is additive over finite pairwise-disjoint record
-collections. Record supplies no readout context, decomposition, `K`/CPT
-structure, sector-generation rule, weighting, normalization, probability,
-measurement/decoherence dynamics, time metric, within-sector data, occupancy
-rule, P2/modulus, log-det, source/action, scale, or arbitrary observable
-identification. Do not
+collections. A state is a configuration of records. A law privileges no states:
+its domain is a supplied condition, and where that condition holds it gives
+exactly one answer. Additional
+structures such as readout-context selection, decomposition, `K`/CPT
+structure, sector-generation rules, weighting, normalization, probability,
+measurement/decoherence dynamics, occurrence rules, update laws, time metric,
+within-sector data, occupancy rules, P2/modulus, log-det readouts,
+source/action bridges, scale, local observability, law-admissibility or
+transition relations, kinetic-branch selection, or arbitrary observable
+identification remain compatible downstream targets, but require derivation,
+bridge, explicit admission, or approved primitive registration before use as
+load-bearing content. Do not
 land new science under bare letter-number names such as `A1`, `A2`, `G1`,
 or `R3`; those labels are overloaded with axioms, assumptions, Lie
 types, lane stages, route codes, and branch blocks. Use the explicit
@@ -141,9 +150,10 @@ not treat the framework baseline as a
 new axiom, new admitted premise, regulator interpretation, or optional
 theory language. Correcting a PR back to this repo language is allowed. This
 does not promote downstream science by itself: physical-species
-identifications, `C_3`-breaking selectors, readout/scale/unit bridges, and
-empirical matches remain separate bounded/open inputs unless they have their
-own retained-grade derivation and independent audit closure.
+identifications, `C_3`-breaking selectors, kinetic-branch selectors,
+readout/scale/unit bridges, and empirical matches remain separate
+bounded/open inputs unless they have their own retained-grade derivation and
+independent audit closure.
 
 The bar is intentionally high: if review-loop is doing its job, the later
 fresh-context audit should be mostly confirmatory. Do not pass branches that
@@ -702,6 +712,34 @@ a stale ratification is a real integrity violation. Resolve it by re-auditing
 (the audit lane re-seeds and archives the prior verdict) or by demoting the edit
 per the audit-hash churn guard — never by refreshing the hash while keeping the
 retained verdict.
+
+**Stuck-row repair requeue gate.** Terminal non-clean rows
+(`audited_conditional` / `audited_renaming` / `audited_failed` /
+`audited_numerical_match`) re-enter the audit queue only through their own
+note or paired-runner hash drift, an upstream `deps_changed` invalidation, or
+a dispatcher-sidecar re-audit target. Dependent-side edits never reschedule
+the stuck row. When a branch's stated purpose is repairing such a row (the PR
+title/body names the row or quotes its audit repair target):
+
+1. Verify the stuck row itself will requeue: its note or paired runner
+   changes on the branch, or the branch ships dispatcher-sidecar targeting
+   metadata naming the row.
+2. If the audit-named repair is dependent-side only (for example, narrowing
+   dependents' citing sentences to the audited scope), add a dated
+   downstream-hygiene line to the stuck row's own note boundary as part of
+   the landing: a one-line source-side record of what changed downstream
+   (date + what was narrowed + PR number), with no grade or verdict
+   language. The hash drift re-enters the row into the ordinary queue and
+   the re-auditor (or second auditor) sees the recorded condition.
+3. Run the validation pipeline and confirm the row is queued or re-queued as
+   intended, then restore generated audit outputs per the
+   pipeline-output-stripped gate below.
+4. Repair-PR review checklist: the audit repair target is quoted verbatim
+   (from `verdict_rationale` / `notes_for_re_audit_if_any`) in the PR body;
+   a sibling-runner pin sweep was done before every note edit (grep
+   `scripts/` for runners pinning the edited sentences); no authored grade
+   language anywhere; no `docs/audit/data/` content beyond
+   dispatcher-sidecar targeting metadata.
 
 7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
    for validation, the framework PR must NOT land any pipeline-regenerated

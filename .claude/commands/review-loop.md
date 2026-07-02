@@ -77,14 +77,14 @@ Run the repo-native physics review loop from:
   `docs/repo/CONTROLLED_VOCABULARY.md`. Do not approve bare overloaded labels
   such as `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` as theorem/lane
   names, table labels, claim scopes, runner headlines, or review findings.
-  Use names such as `Quantum` / `one-qubit operator algebra` (the local algebra
-  fixed by `MINIMAL_AXIOMS_2026-06-05.md`, equivalently
-  `physical Cl(3,0) ≅ M_2(ℂ)`), `Lattice` / `Z^3 lattice`,
-  `Record` / durable realized-outcome readout,
+  Use names such as `Qubit` / `site possibility` / `one-site possibility
+  domain` (the local algebraic presentation fixed by
+  `MINIMAL_AXIOMS_2026-06-29.md`, with `Cl(3,0)` as equivalent notation),
+  `Lattice` / `Z^3 lattice`, `Admissibility` / `local constraint`,
+  `Record` / fixed record readout,
   `Koide Frobenius-equipartition condition`, or `Lie type A_1`; the
-  `M_2(ℂ)` / `Cl(3,0)` / qubit names are co-equal labels for the
-  same retained algebra-isomorphism class. Keep shorthand only as a
-  parenthetical legacy alias.
+  `M_2(ℂ)` / `Cl(3,0)` / qubit names are labels for the same one-site
+  algebraic presentation. Keep shorthand only as a parenthetical legacy alias.
 - `retained`, `retained_bounded`, and `retained_no_go` are the retained-grade
   dependency statuses. Reviewers must reject stale exact-status checks that
   require only `effective_status = retained` when bounded/no-go retained
@@ -112,6 +112,18 @@ Run the repo-native physics review loop from:
   salvageable, land the source-only salvage and dependency-chain/audit-queue
   repairs as part of the current landing path; otherwise close or reject the
   existing PR with a clear reason.
+- A PR whose purpose is repairing a stuck terminal ledger row
+  (`audited_conditional` / `audited_renaming` / `audited_failed` /
+  `audited_numerical_match`) must leave that row requeue-able: the row's own
+  note or paired runner must change in the PR, or the PR must ship
+  machine-readable re-audit targeting metadata (a dispatcher sidecar) naming
+  the row. Dependent-side edits alone never reschedule the stuck row. When
+  the audit-named repair is dependent-side only (for example, narrowing
+  dependents' citing sentences), add a dated downstream-hygiene line to the
+  stuck row's own note boundary as part of the landing — a source-side fact,
+  no grade language. Verify with the validation pipeline that the row
+  re-enters the queue, then restore generated audit outputs per the
+  pipeline-output-stripped gate.
 - `/review-loop` must ignore draft-status PRs. Drafts are not candidates for
   landing, review-loop comments, or salvage unless the user explicitly asks for
   draft inspection without landing.
@@ -121,17 +133,20 @@ Run the repo-native physics review loop from:
   three-way patch/rebase/merge/cherry-pick integration for overlapping paths.
   Whole-file checkout is allowed only for new paths or paths proven unchanged
   on current `main` since the PR base.
-- The repo baseline is the three named axioms in
-  `MINIMAL_AXIOMS_2026-06-05.md`: Lattice (`Z^3` with nearest-neighbor
-  cubic adjacency), Quantum (one-qubit operator algebra
-  `M_2(ℂ) ≅ Cl(3,0)` at each site), and Record (durable realized-outcome
-  readout with finite scalar additivity). Name them explicitly; do not compress
-  them to bare `A1` / `A2` / `A3` labels. Do not classify that baseline as a
-  new axiom, new admitted premise, regulator interpretation, or optional
-  theory language. Do not let
-  that baseline silently promote separate species identifications, selectors,
+- The repo baseline is the four named axioms in
+  `MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit, Admissibility, and Record.
+  Name them explicitly; do not compress them to bare `A1` / `A2` / `A3` /
+  `A4` labels. Do not classify that baseline as a new admitted premise,
+  regulator interpretation, or optional theory language. Do not let that
+  baseline silently promote separate species identifications, selectors,
+  probability or occurrence rules, K/CPT or central-sector structure,
   P2/modulus, log-det structure, source/action bridges, empirical matches, or
-  parent theorem/status surfaces.
+  parent theorem/status surfaces. The current baseline includes: no possibility
+  is privileged; possibilities are distinguished by the supplied algebraic
+  structure alone; readout value is determined by record content alone; a
+  state is a configuration of records; and a law privileges no states, has a
+  supplied condition as its domain, and gives exactly one answer where that
+  condition holds.
 - Nature-grade retention requires derived or explicitly admitted inputs,
   decisive artifact support, clear falsifiers, and no hidden semantic bridge.
 - Math-bearing runners require independent formula review: PASS lines do not

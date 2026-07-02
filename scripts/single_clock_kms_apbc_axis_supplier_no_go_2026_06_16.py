@@ -119,9 +119,9 @@ def main() -> int:
     assert_contains(NOTE, "Five scoped routes were checked")
     assert_contains(NOTE, "context only, not as a proof dependency")
 
-    assert_contains(KMS_NOTE, "RP-reconstructed transfer matrix", "KMS note starts from supplied RP transfer")
-    assert_contains(KMS_NOTE, "periodic Euclidean-time block", "KMS note names a supplied Euclidean time block")
-    assert_contains(KMS_NOTE, "anti-periodic in time, periodic in space", "KMS note APBC is already time-labelled")
+    assert_contains(KMS_NOTE, "RP-reconstructed two-step transfer-matrix", "KMS note starts from supplied RP transfer")
+    assert_contains(KMS_NOTE, "Euclidean-time block", "KMS note names a supplied Euclidean time block")
+    assert_contains(KMS_NOTE, "anti-periodic-in-time, periodic-in-space", "KMS note APBC is already time-labelled")
     assert_contains(SCOPE_NOTE, "N2:", "scope note keeps N2 explicit")
     assert_contains(SCOPE_NOTE, "N4:", "scope note keeps N4 explicit")
     assert_contains(SCOPE_NOTE, "N5:", "scope note keeps N5 explicit")

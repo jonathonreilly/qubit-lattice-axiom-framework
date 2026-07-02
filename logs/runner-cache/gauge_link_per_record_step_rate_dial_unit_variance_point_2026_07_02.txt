@@ -1,0 +1,111 @@
+===== runner cache v1 =====
+runner: scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py
+runner_sha256: 2bea94890959fd925847837af3e5aa5fd00275fed3f7acc6940a6a1e185e9ae7
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 13.84
+status: ok
+----- stdout -----
+Gauge-link per-record-step rate dial: blindness and the unit-variance point
+==============================================================================
+
+SECTION A: canonical anchors and machinery guards
+------------------------------------------------------------------------------
+[PASS] trace form Tr(T_a T_b) = delta_ab / 2 and dim su(3) = 8
+[PASS] all T_a Hermitian traceless
+[PASS] half-trace Casimir values (fund, adj, sym) = (4/3, 3, 10/3)
+[PASS] Weyl dimensions (fund, adj, sym) = (3, 8, 6)
+[PASS] beta=0: trivial coefficient = 1 (Haar)
+[PASS] beta=0: nontrivial coefficients = 0 (Haar orthogonality)
+[PASS] grid-doubling agreement at beta=48 (fund) (rel dev=8.98e-16)
+
+SECTION B: Lemma R0 — Wilson kernel in-class, rate tau_eff = N_c/beta
+------------------------------------------------------------------------------
+[PASS] Wilson kernel character coefficients positive at beta in {6,12,24,48,96}
+[PASS] rate map fund(1,0,0): |beta*eps/(N_c C2) - 1| strictly decreasing (f(96)=1.01859)
+[PASS] rate map fund(1,0,0): Richardson(48,96) hits 1 (R1=0.999277)
+[PASS] rate map adj(2,1,0): |beta*eps/(N_c C2) - 1| strictly decreasing (f(96)=1.01844)
+[PASS] rate map adj(2,1,0): Richardson(48,96) hits 1 (R1=0.999635)
+
+SECTION C: Theorem R1 — rate additivity; cross-kernel collapse
+------------------------------------------------------------------------------
+[PASS] exact additivity of composed exponents: tau1 C2 + tau2 C2 = (tau1+tau2) C2
+[PASS] numeric semigroup: w(tau)^2 = w(2 tau) on the fundamental
+[PASS] calibrated rate sanity at tau0=0.0625: tau_hat within 5% of tau0 (tau_hat=0.064868)
+[PASS] calibrated rate sanity at tau0=0.03125: tau_hat within 5% of tau0 (tau_hat=0.031831)
+[PASS] calibrated rate sanity at tau0=0.015625: tau_hat within 5% of tau0 (tau_hat=0.015769)
+[PASS] cross-kernel collapse on adj(2,1,0): k|W-M| strictly shrinking under refinement (0.00099 -> 0.00022 -> 0.00005)
+[PASS] cross-kernel collapse on adj(2,1,0): k|W-M| < 1e-3 at finest step (k|W-M|=5.33e-05)
+[PASS] cross-kernel collapse on sym(2,0,0): k|W-M| strictly shrinking under refinement (0.00132 -> 0.00030 -> 0.00007)
+[PASS] cross-kernel collapse on sym(2,0,0): k|W-M| < 1e-3 at finest step (k|W-M|=7.11e-05)
+[PASS] single calibrated number predicts all tested blocks (rate = complete invariant)
+
+SECTION D: Theorem R2 — rate-blindness of the named premises
+------------------------------------------------------------------------------
+[PASS] tau=1/8: positivity/record-compatibility (0 < w_R <= 1, all reps)
+[PASS] tau=1/8: covariant-channel form (conjugate-rep scalar symmetry)
+[PASS] tau=1/8: composition law w(tau)^2 = w(2 tau)
+[PASS] tau=1/8: diffusive moment law <x^2> = 2 tau (m2=0.25000000)
+[PASS] tau=1/2: positivity/record-compatibility (0 < w_R <= 1, all reps)
+[PASS] tau=1/2: covariant-channel form (conjugate-rep scalar symmetry)
+[PASS] tau=1/2: composition law w(tau)^2 = w(2 tau)
+[PASS] tau=1/2: diffusive moment law <x^2> = 2 tau (m2=1.00000000)
+[PASS] tau=3: positivity/record-compatibility (0 < w_R <= 1, all reps)
+[PASS] tau=3: covariant-channel form (conjugate-rep scalar symmetry)
+[PASS] tau=3: composition law w(tau)^2 = w(2 tau)
+[PASS] tau=3: diffusive moment law <x^2> = 2 tau (m2=6.00000000)
+[PASS] identical pass pattern across tau in {1/8, 1/2, 3}: premises are rate-blind
+[PASS] drifted step witness: fundamental Fourier block non-scalar (covariance premise fails, not the rate) (deviation=1.3080)
+[PASS] metric-dilation witness: scaling generators changes the fixed trace form (rigidity's freedom, not the rate)
+
+SECTION E: Theorem R3 — per-direction moment 2 tau; unit point tau = 1/2
+------------------------------------------------------------------------------
+[PASS] Wilson <sum theta^2> / (8 tau_eff): deviation strictly decreasing (ratio(96)=1.01055)
+[PASS] Wilson second-moment Richardson(48,96) hits 1 (R1=0.999731)
+[PASS] constructed per-direction moment matches 2 tau_eff at beta=96 within 2% (per-direction=0.063160, 2 tau=0.062500)
+
+SECTION F: exact layer — unit-variance point = the (SD)/beta=6 point
+------------------------------------------------------------------------------
+[PASS] tau = 1/2 gives per-direction moment 1 (unit variance per step)
+[PASS] tau = 1/2 maps to beta = N_c / tau = 6
+[PASS] consistency with the magnetic identity: g^2(beta(tau)) = 2 N_c / beta = 2 tau
+[PASS] coincidence at tau = 1/2: g^2 = 1 = s^2 (the same-slot point)
+[PASS] mismatched family: tau = 1/8 -> beta = 24, moment 1/4; tau = 3 -> beta = 1, moment 6
+[PASS] off-point coincidence failure: moments != 1 exactly at tau in {1/8, 3}
+
+SECTION G: source-boundary guards
+------------------------------------------------------------------------------
+[PASS] rate-dial note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md)
+[PASS] finite-link rigidity note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+[PASS] Wilson small-a note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+[PASS] RP temporal-gauge bridge note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+[PASS] record classical semigroup boundary note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md)
+[PASS] scale-reference primitive note exists (/Users/jonreilly/Projects/Physics/.claude/worktrees/goofy-liskov-2dfcb6/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+[PASS] note contains marker: set only by the independent audit lane
+[PASS] note contains marker: does not derive `tau = 1/2`
+[PASS] note contains marker: per-record-step
+[PASS] note contains marker: rate-blind
+[PASS] note contains marker: complete surviving invariant
+[PASS] note contains marker: unit-variance
+[PASS] note contains marker: distinguished setting
+[PASS] note contains marker: zero dimensionless content
+[PASS] note contains marker: not a citation-graph dependency
+[PASS] note contains marker: does not claim:
+[PASS] note contains marker: an audit verdict or any effective-status promotion
+[PASS] note omits forbidden marker: effective_status:
+[PASS] note omits forbidden marker: audit_status:
+[PASS] rigidity contains marker: no independent scalar-normalization freedom
+[PASS] rigidity contains marker: Tr(T_a T_b) = delta_ab / 2
+[PASS] Wilson contains marker: beta * g_bare^2 = 2 N_c
+[PASS] RP bridge contains marker: temporal gauge
+[PASS] RP bridge contains marker: plane positive kernel
+[PASS] semigroup boundary contains marker: continuous Markov semigroups live on the probability/ensemble
+[PASS] scale-reference primitive contains marker: zero dimensionless content
+
+Summary
+------------------------------------------------------------------------------
+TOTAL: PASS=72 FAIL=0
+Rate-dial check passed.
+
+----- stderr -----
+

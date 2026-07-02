@@ -1,6 +1,7 @@
 # AC_phi_lambda Real-Holonomy Locus Identity
 **Date:** 2026-07-01
-**Claim type:** bounded theorem / locus identity + wall coupling
+**Claim type:** bounded_theorem
+**Scope:** locus identity plus wall coupling.
 **Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` or `theta` retirement.
 **Primary runner:** [scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py](../scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py)
 
@@ -157,7 +158,7 @@ angle value. Rows must not cite this note as deriving either value.
 - Nothing here says that `r=1/2` is being forced; `r` remains a registered dial.
 
 ## No-Go Discipline Gate
-**Status:** PASS for bounded locus identity; not a terminal no-go.
+This checklist supports a bounded locus identity; it is not a terminal no-go.
 
 ### N1
 Routes and statuses inside this bounded claim:
@@ -167,7 +168,7 @@ Routes and statuses inside this bounded claim:
 | modulus-only objectives | RULED OUT BY RETAINED no-go: "stationary **only** at `δ = k·60°`" and "its stationary candidates are degenerate" |
 | registrable-relabel escape | RULED OUT: the locus is `G`-invariant |
 | off-locus transport/eta/holonomy theorem | OPEN, the named strike point |
-| rescale-invariant derivation | RULED OUT by PR #4783, `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01`: unit wall = R-eta junction; rescale obstruction |
+| rescale-invariant derivation | OUT OF SCOPE HERE; the live rescale wall is not discharged by this locus identity |
 | owner primitive | GOVERNANCE |
 
 ### N2
@@ -217,5 +218,5 @@ python3 scripts/acphilambda_real_holonomy_locus_identity_2026_07_01.py
 ```
 Expected close:
 ```text
-TOTAL: PASS=82 FAIL=0
+TOTAL: PASS=85 FAIL=0
 ```

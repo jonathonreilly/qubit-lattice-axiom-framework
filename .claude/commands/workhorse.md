@@ -1,11 +1,11 @@
 # /workhorse — Planner Thinks, Codex Executes
 
 Standing owner directive (2026-06-11): run science execution through the
-strongest configured text worker via the codex CLI (currently GPT-5.5 xhigh)
-to conserve planner tokens. The planner — the model running in this chat —
-NEVER delegates judgment; only execution. This document is the canonical
-shared copy of the workhorse split referenced by the science commands'
-"Execution Mechanism" blocks.
+strongest configured text reasoning worker available through the local codex
+CLI to conserve planner tokens. The planner — the model running in this chat —
+NEVER delegates judgment; only execution. This document is the canonical shared
+copy of the workhorse split referenced by the science commands' "Execution
+Mechanism" blocks.
 
 ## Division of labor (non-negotiable)
 
@@ -14,11 +14,11 @@ shared copy of the workhorse split referenced by the science commands'
   produces (never-believe-the-survey applies doubly to executor output), panel
   synthesis + verdicts, landing decisions, PR/commit text, memory updates. If
   a step requires judgment, it is the planner's.
-- **Executor (codex, GPT-5.5 xhigh):** note drafting per the planner's
-  outline, runner implementation per spec, scratch computation, structured
-  extraction from primary sources (with exact-quote contracts), mechanical
-  edit application, panel LENS execution (the planner writes the lens prompts
-  and synthesizes; never let the executor synthesize verdicts).
+- **Executor (codex text worker):** note drafting per the planner's outline,
+  runner implementation per spec, scratch computation, structured extraction
+  from primary sources (with exact-quote contracts), mechanical edit
+  application, panel LENS execution (the planner writes the lens prompts and
+  synthesizes; never let the executor synthesize verdicts).
 
 ## Design principles (what separates strong waves from weak ones)
 
@@ -218,12 +218,15 @@ per-target synthesis verdict; the planner lands on it.)
 
 ## Hard rules (unchanged by this mode — the executor changed, nothing else)
 
-- NEVER run review-loop or the audit lane (no `codex exec review`, no
-  codex_audit_runner, no `gh workflow run audit.yml`, no landing/closing via
-  review flow) — owner-operated only, even under "get it done" pressure.
+- Review-loop and audit-loop are owner-operated lanes. Workhorse mode may
+  prepare their hand-off surfaces, but it hands off unless the user explicitly
+  invokes that lane in the supervising chat. Executors never run those lanes,
+  apply their verdicts, or land/close/merge PRs through them.
 - Never author or alter audit-status grades in notes; the independent audit
   lane on origin/main is the only status authority.
-- All changes via PR from a dedicated worktree; never push main.
+- Science execution changes go through a dedicated worktree and PR hand-off.
+  The workhorse executor never pushes main; lane-specific review/audit
+  instructions own any later main landing.
 - Panels still gate every landing; lens prompts and synthesis are the
   planner's.
 - Physics repo: run the framework-refresher orientation first; respect the

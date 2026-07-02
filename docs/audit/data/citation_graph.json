@@ -56302,7 +56302,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+      "to": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
     },
     {
       "from": "repo.front_door_status",
@@ -108439,7 +108439,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "cl3_taste_generation_theorem",
@@ -108449,7 +108449,7 @@
         "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0e48454337febe8c5f0b63895ed01020d4e9705de5acb2eb61169862d9c1f8a9",
+      "note_hash": "edbb45038d99c96b65d22785cf8002c9f7c0f9e86d7c7e2129246b9933c6b09c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

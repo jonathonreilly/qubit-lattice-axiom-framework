@@ -30,14 +30,17 @@ graph-first 6+2 split plus admitted GMN / electron-charge readout. This
 parent remains conditional until that bridge and the remaining chain inputs
 are independently audited and dependency-closed.
 
-**GMN chain rewire — L4 (2026-07-01).** The Gell-Mann–Nishijima relation
+**GMN chain rewire — L4 (2026-07-01; acyclic carrier added 2026-07-02).** The Gell-Mann–Nishijima relation
 `Q = T_3 + Y/2` is no longer carried as an admitted SM-convention bridge.
-It is chained, as link L4, to the in-repo derivation
-[`EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md`](EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md),
-which derives `Q = T_3 + Y/2` as the UNIQUE generator in
-`span{T_3, Y}` annihilating the neutral Higgs vev record, with the Higgs
-hypercharge `Y_H = +1` supplied by
-[`HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md`](HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md).
+It is chained, as link L4, to the acyclic support carrier
+[`GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md`](GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md),
+which derives `Q = T_3 + Y/2` as the unique generator in
+`span{T_3, Y}` annihilating a supplied neutral Higgs vev record at supplied
+`Y_H = +1`. The older notes
+`EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md` and
+`HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md` remain historical
+context for that calculation, but are intentionally not graph authorities for
+this parent because their existing LHCM/hypercharge references create cycles.
 The runner's PART 9 recomputes the derivation (1-dimensional stabilizer,
 coefficient `+1/2` from the annihilation nullspace, the full charge table
 from the derived generator) plus two refutation legs: `Y_H = 0` yields a
@@ -273,7 +276,7 @@ authority:
 | Eigenvalue ratio +1:(−3) on (Sym², Anti²) | [`LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`](LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md) | direct structural input |
 | (Sym², Anti²) ↔ (SU(3)-fundamental, SU(3)-singlet) | [`LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md`](LHCM_MATTER_ASSIGNMENT_FROM_SU3_REPRESENTATION_NOTE_2026-05-02.md) | direct representation-theory input |
 | (color triplet ≡ quark, color singlet ≡ lepton) | SM-definition convention | vacuous naming for the derived charge-pattern blocks, not load-bearing physics |
-| GMN relation `Q = T_3 + Y/2` and the `T_3(e_L)` component assignment | [`EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md`](EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md) (unique vev-record annihilator) with `Y_H = +1` from [`HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md`](HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md); component assignment = vev-direction convention (check 9e) | chain L4 (2026-07-01 rewire); derivation dependency, own audit rows |
+| GMN relation `Q = T_3 + Y/2` and the `T_3(e_L)` component assignment | [`GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md`](GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md); historical context only: `EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md`, `HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md`; component assignment = vev-direction convention (check 9e) | chain L4 (2026-07-01 rewire, acyclic carrier 2026-07-02); derivation dependency, own audit row |
 | Absolute scale α = 1/3 (`Y(L_L) = −1`) | [`HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md`](HYPERCHARGE_ALPHA_THIRD_NORMALIZATION_BRIDGE_BOUNDED_NOTE_2026-05-25.md) after audit; otherwise SM-convention normalization | bounded bridge candidate; parent remains conditional until retained |
 
 The load-bearing step **of this note** is the chain assembly itself —
@@ -382,10 +385,10 @@ What this note is **not** claiming, post-rewrite:
   2026-05-25 bounded normalization bridge candidate and otherwise
   admitted as convention until retained);
 - to derive the Gell-Mann–Nishijima relation Q = T₃ + Y/2 in this note's
-  own algebra: it is chained out (L4, 2026-07-01) to the in-repo
-  unbroken-generator derivation and the `Y_H = +1` supply, each with its
-  own audit row; the PART 9 runner block recomputes the derivation and no
-  longer carries it as an admitted SM-convention bridge;
+  own algebra: it is chained out (L4, 2026-07-01/2026-07-02) to the acyclic
+  vev-annihilator support carrier, which takes the neutral vev record and
+  `Y_H = +1` as supplied inputs; the PART 9 runner block recomputes the
+  derivation and no longer carries it as an admitted SM-convention bridge;
 - to derive the Higgs vev direction or EWSB dynamics internally (the
   neutral-direction record is the L4 chain's supplied input; the direction
   choice itself is shown to be a component-naming convention by check 9e);

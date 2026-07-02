@@ -26,15 +26,22 @@ chain has three independently-cited links:
         it is supplied by the bounded 2026-05-25 normalization bridge if
         independently retained, and otherwise remains an admitted convention.
 
-This runner reports each numerical block with one of four labels:
+  (L4)  ELECTRIC-CHARGE READOUT. Q = T_3 + Y/2 is chained to the acyclic
+        GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md support carrier
+        rather than admitted here; PART 9 recomputes the vev-record
+        annihilator and keeps the chain unaudited until the independent audit
+        lane grades the cited row.
+
+This runner reports each numerical block with one of five labels:
 
    [STRUCTURAL]   = follows from algebra alone, no SM-target import,
                     matches link (L1) of the chain;
    [CHAIN-L2]     = matter-assignment labels imported from LHCM matter
                     assignment note;
    [CHAIN-L3]     = uses the upstream normalization bridge if retained,
-                    otherwise the admitted SM convention alpha = 1/3
-                    (and the admitted Q = T_3 + Y/2 readout);
+                    otherwise the admitted SM convention alpha = 1/3;
+   [CHAIN-L4]     = recomputes the chained GMN/EWSB readout from cited
+                    L4 authorities without asserting their audit grade;
    [CONSISTENCY]  = downstream consistency check under the chain
                     (informational only; not load-bearing).
 
@@ -171,6 +178,8 @@ print("                     -- supplied by LHCM_MATTER_ASSIGNMENT_FROM_SU3_")
 print("                        REPRESENTATION_NOTE_2026-05-02")
 print("  (L3) [CHAIN-L3]    alpha = 1/3 (bounded bridge if retained;")
 print("                     otherwise admitted SM convention)")
+print("  (L4) [CHAIN-L4]    Q = T_3 + Y/2 from the acyclic")
+print("                     GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02")
 print()
 
 # ============================================================================
@@ -316,17 +325,18 @@ print("      [Part 1 STRUCTURAL; cited from narrow ratio theorem]")
 print("    * [Y, S_i] = [Y, SWAP_23] = [Y, T_a] = 0 for all weak, perm,")
 print("      and color generators [Part 2 STRUCTURAL]")
 print()
-print("  NOT yet performed at this checkpoint (deferred to chain L2 + L3):")
+print("  NOT yet performed at this checkpoint (deferred to chain L2 + L3 + L4):")
 print("    * any identification of (Sym^2, Anti^2) sub-blocks with SM quark")
 print("      or lepton doublets")
 print("    * any choice of absolute scale alpha")
-print("    * any SM electric-charge readout via Q = T_3 + Y/2")
+print("    * the electric-charge readout via Q = T_3 + Y/2")
 print()
 print("  The chain claim of this note is precisely that, ONCE chain L2")
 print("  (LHCM matter assignment, separate audit row) and chain L3 (admitted")
 print("  SM convention alpha = 1/3) are layered on top of these structural")
-print("  facts, the SM hypercharge pattern follows. The next parts perform")
-print("  that layering and tag every block accordingly.")
+print("  facts, the SM hypercharge pattern follows; electric-charge readout is")
+print("  then chained through L4. The next parts perform that layering and tag")
+print("  every block accordingly.")
 print("-" * 72)
 
 
@@ -335,13 +345,16 @@ print("-" * 72)
 # ============================================================================
 print()
 print("=" * 72)
-print("PART 3: Electric charge Q = T_3 + Y/2  [CHAIN-L2 + CHAIN-L3 + admitted GMN]")
+print("PART 3: Electric charge Q = T_3 + Y/2  [CHAIN-L2 + CHAIN-L3 + CHAIN-L4]")
 print("=" * 72)
 print()
-print("  Note: Q = T_3 + Y/2 (Gell-Mann--Nishijima) is itself an SM-convention")
-print("  bridge, not a derived framework relation. The matter-assignment labels")
-print("  below ('u-type quark', 'electron', etc.) are imported from the LHCM")
-print("  matter-assignment note's chain to the SM-definition convention.")
+print("  Note: Q = T_3 + Y/2 (Gell-Mann--Nishijima) is chained through L4,")
+print("  not admitted here as a standalone SM-convention bridge. This block")
+print("  applies the chained readout to display charge-table consequents;")
+print("  PART 9 recomputes the vev-record annihilator directly. The")
+print("  matter-assignment labels below ('u-type quark', 'electron', etc.)")
+print("  are imported from the LHCM matter-assignment note's chain to the")
+print("  SM-definition convention.")
 print()
 
 T3 = S[2]  # S_3 = sigma_z / 2 on factor 1
@@ -790,10 +803,10 @@ print("PART 9: GMN derived as the unique vev-record annihilator  [CHAIN-L4]")
 print("=" * 72)
 print()
 print("  2026-07-01 premise rewire: Q = T_3 + Y/2 is no longer admitted as an")
-print("  SM-convention bridge. It is chained (L4) to the in-repo derivation")
-print("  EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md (unique unbroken")
-print("  generator annihilating the Higgs vev record, with Y_H = +1 supplied")
-print("  by HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md).")
+print("  SM-convention bridge. It is chained (L4) to the acyclic support carrier")
+print("  GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md, which")
+print("  computes the unique unbroken generator annihilating the supplied")
+print("  neutral Higgs vev record at supplied Y_H = +1.")
 print("  This block RECOMPUTES that derivation and its consequents; the")
 print("  chain's audit grade is owned by the independent audit lane.")
 print()
@@ -883,14 +896,16 @@ check9("9e [L4/naming] the opposite vev direction derives b/a = -1/2 and the "
 
 print()
 print(f"  PART 9 CHECKS: PASS={part9_pass} FAIL={part9_fail}")
+if part9_fail or part9_pass != 5:
+    raise AssertionError(f"PART 9 L4 checks failed: PASS={part9_pass} FAIL={part9_fail}")
 print()
 print("  Remaining admitted content in the charge table after L4:")
 print("    * alpha = 1/3 scale -- chain L3 (bounded normalization bridge /")
 print("      Y0 vacuous rescaling convention)")
 print("    * the electromagnetic charge UNIT (electron charge as unit anchor)")
 print("      -- a unit convention, same class as the Y-scale")
-print("    * the L4 chain itself (EWSB pattern + Higgs-Y notes) carries its")
-print("      own audit rows; this runner recomputes, the audit lane grades.")
+print("    * the L4 support carrier has its own audit row; this runner")
+print("      recomputes, the audit lane grades.")
 
 
 # ============================================================================
@@ -903,11 +918,13 @@ print("FINAL SUMMARY  (chain-claim verification)")
 print("=" * 72)
 print()
 print("  CHAIN ASSEMBLY THEOREM (this note):")
-print("  Under the chain (L1 ratio + L2 matter assignment + L3 admitted scale),")
+print("  Under the chain (L1 ratio + L2 matter assignment + L3 scale +")
+print("  L4 GMN/EWSB readout),")
 print("  the unique traceless U(1) in the gl(3)+gl(1) commutant of")
 print("  {SU(2)_weak, SWAP_{23}} reproduces SM hypercharge on the LH-doublet")
 print("  surface. The runner above checks each link of the chain numerically")
-print("  and tags every block as STRUCTURAL / CHAIN-L2 / CHAIN-L3 / CONSISTENCY.")
+print("  and tags every block as STRUCTURAL / CHAIN-L2 / CHAIN-L3 /")
+print("  CHAIN-L4 / CONSISTENCY.")
 print()
 print("  STRUCTURAL FACTS verified (no SM-target import):")
 print("    * gl(3)+gl(1) commutant decomposition (upstream)")

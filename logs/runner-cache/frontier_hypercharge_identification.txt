@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hypercharge_identification.py
-runner_sha256: 7fa471b3f28a40c8a19fe9e417cf8fe7d3d9b3cf1f17cec5089fef268acbdd25
-timeout_sec: 300
+runner_sha256: 92c52e9d977569d95ea5cc19b903e1f44e42f0ec6fc47dde68c10d26558436b4
+timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
 status: ok
@@ -24,6 +24,8 @@ CHAIN UNDER VERIFICATION:
                         REPRESENTATION_NOTE_2026-05-02
   (L3) [CHAIN-L3]    alpha = 1/3 (bounded bridge if retained;
                      otherwise admitted SM convention)
+  (L4) [CHAIN-L4]    Q = T_3 + Y/2 from the acyclic
+                     GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02
 
 ========================================================================
 PART 1: The U(1) generator from the commutant  [STRUCTURAL + CHAIN-L3]
@@ -74,27 +76,31 @@ AUDIT CHECKPOINT 1 (after STRUCTURAL Parts 1-2):
     * [Y, S_i] = [Y, SWAP_23] = [Y, T_a] = 0 for all weak, perm,
       and color generators [Part 2 STRUCTURAL]
 
-  NOT yet performed at this checkpoint (deferred to chain L2 + L3):
+  NOT yet performed at this checkpoint (deferred to chain L2 + L3 + L4):
     * any identification of (Sym^2, Anti^2) sub-blocks with SM quark
       or lepton doublets
     * any choice of absolute scale alpha
-    * any SM electric-charge readout via Q = T_3 + Y/2
+    * the electric-charge readout via Q = T_3 + Y/2
 
   The chain claim of this note is precisely that, ONCE chain L2
   (LHCM matter assignment, separate audit row) and chain L3 (admitted
   SM convention alpha = 1/3) are layered on top of these structural
-  facts, the SM hypercharge pattern follows. The next parts perform
-  that layering and tag every block accordingly.
+  facts, the SM hypercharge pattern follows; electric-charge readout is
+  then chained through L4. The next parts perform that layering and tag
+  every block accordingly.
 ------------------------------------------------------------------------
 
 ========================================================================
-PART 3: Electric charge Q = T_3 + Y/2  [CHAIN-L2 + CHAIN-L3 + admitted GMN]
+PART 3: Electric charge Q = T_3 + Y/2  [CHAIN-L2 + CHAIN-L3 + CHAIN-L4]
 ========================================================================
 
-  Note: Q = T_3 + Y/2 (Gell-Mann--Nishijima) is itself an SM-convention
-  bridge, not a derived framework relation. The matter-assignment labels
-  below ('u-type quark', 'electron', etc.) are imported from the LHCM
-  matter-assignment note's chain to the SM-definition convention.
+  Note: Q = T_3 + Y/2 (Gell-Mann--Nishijima) is chained through L4,
+  not admitted here as a standalone SM-convention bridge. This block
+  applies the chained readout to display charge-table consequents;
+  PART 9 recomputes the vev-record annihilator directly. The
+  matter-assignment labels below ('u-type quark', 'electron', etc.)
+  are imported from the LHCM matter-assignment note's chain to the
+  SM-definition convention.
 
   Q = T_3 + Y/2 as 8x8 matrix
   Q is Hermitian: True
@@ -311,10 +317,10 @@ PART 9: GMN derived as the unique vev-record annihilator  [CHAIN-L4]
 ========================================================================
 
   2026-07-01 premise rewire: Q = T_3 + Y/2 is no longer admitted as an
-  SM-convention bridge. It is chained (L4) to the in-repo derivation
-  EWSB_PATTERN_FROM_HIGGS_Y_NOTE_2026-05-02.md (unique unbroken
-  generator annihilating the Higgs vev record, with Y_H = +1 supplied
-  by HIGGS_Y_FROM_LHCM_AND_YUKAWA_STRUCTURE_NOTE_2026-05-02.md).
+  SM-convention bridge. It is chained (L4) to the acyclic support carrier
+  GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md, which
+  computes the unique unbroken generator annihilating the supplied
+  neutral Higgs vev record at supplied Y_H = +1.
   This block RECOMPUTES that derivation and its consequents; the
   chain's audit grade is owned by the independent audit lane.
 
@@ -331,8 +337,8 @@ PART 9: GMN derived as the unique vev-record annihilator  [CHAIN-L4]
       Y0 vacuous rescaling convention)
     * the electromagnetic charge UNIT (electron charge as unit anchor)
       -- a unit convention, same class as the Y-scale
-    * the L4 chain itself (EWSB pattern + Higgs-Y notes) carries its
-      own audit rows; this runner recomputes, the audit lane grades.
+    * the L4 support carrier has its own audit row; this runner
+      recomputes, the audit lane grades.
 
 
 ========================================================================
@@ -340,11 +346,13 @@ FINAL SUMMARY  (chain-claim verification)
 ========================================================================
 
   CHAIN ASSEMBLY THEOREM (this note):
-  Under the chain (L1 ratio + L2 matter assignment + L3 admitted scale),
+  Under the chain (L1 ratio + L2 matter assignment + L3 scale +
+  L4 GMN/EWSB readout),
   the unique traceless U(1) in the gl(3)+gl(1) commutant of
   {SU(2)_weak, SWAP_{23}} reproduces SM hypercharge on the LH-doublet
   surface. The runner above checks each link of the chain numerically
-  and tags every block as STRUCTURAL / CHAIN-L2 / CHAIN-L3 / CONSISTENCY.
+  and tags every block as STRUCTURAL / CHAIN-L2 / CHAIN-L3 /
+  CHAIN-L4 / CONSISTENCY.
 
   STRUCTURAL FACTS verified (no SM-target import):
     * gl(3)+gl(1) commutant decomposition (upstream)

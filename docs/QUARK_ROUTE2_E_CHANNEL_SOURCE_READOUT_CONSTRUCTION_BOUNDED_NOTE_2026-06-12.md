@@ -1,12 +1,16 @@
 # Quark Route-2 E-Channel Source/Readout Construction Attempt
 
 **Date:** 2026-06-12
-**Claim type:** bounded construction attempt with localized residual.
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set,
 predict, or estimate any audit verdict. Effective status is pipeline-derived
 after independent audit and dependency closure.
-**Primary runner:** scripts/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.py
-**Runner cache:** logs/runner-cache/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.txt
+**Primary runner:** [`scripts/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.py`](../scripts/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.py)
+**Runner cache:** [`logs/runner-cache/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.txt`](../logs/runner-cache/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.txt)
+**No-promotion statement:** This source note records a conditional localized
+construction attempt only; it creates no promotion, no registry edit, and no
+audit verdict.
 
 ## Scope
 

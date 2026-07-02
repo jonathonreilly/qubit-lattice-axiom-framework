@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 197 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 884 |
+| **retained_bounded** | 885 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1710 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1286 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1287 |
 | `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -136,7 +135,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `cl3_taste_generation_theorem` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -284,6 +282,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
+| `cl3_taste_generation_theorem` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3735,6 +3734,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — The cited retained_bounded authority supplies the 3-dimensional algebraic SU(3) carrier and generators; finite-dimensional linear algebra then gives the trace/traceless decomposition and unique scalar invariant line. The source note explicitly excludes the physical quark-color bridge, so the parent’s open physical-identification language is not imported into this claim scope.
 - **rationale:** The load-bearing work is standard algebra over the single upstream abstract SU(3) carrier: V ⊗ V* is End(C^3), the trace line is fixed by conjugation, and the traceless complement has dimension 8. The runner performs internal algebraic checks of normalization, projector rank/idempotence, invariance, traceless rank, and commutant dimension; it does not use external comparators or tuned numerical inputs. Because this adds no physical bridge or independent comparator beyond the retained-bounded parent plus standard mathematics, the proper terminal verdict is decoration rather than clean independent theorem.
 - **decoration parent:** `cl3_color_automorphism_theorem`
+- **auditor confidence:** high
+
+### `cl3_taste_generation_theorem`
+
+- **Note:** [`CL3_TASTE_GENERATION_THEOREM.md`](../../docs/CL3_TASTE_GENERATION_THEOREM.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Abstract C^8 tensor-position S3 representation theorem with hw=1 Z3 orbit and restricted Y/T3 spectra; no framework carrier or physical-family identification audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T111909Z-fec5d0b6-cl3_taste_generation_the`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The finite algebra computation gives χ_C8=(8,4,2) and χ_hw1=(3,1,0), hence C^8=4A1+0A2+2E and hw=1=A1+E, while the locally defined Y and T3 restrictions have spectra {-1,+1/3,+1/3} and {-1/2,+1/2,+1/2}.  _(class `A`)_
+- **chain closes:** True — Given the admitted abstract C^8, tensor-position S3 action, and local Y/T3 definitions, the character and eigenvalue calculations are exact finite-dimensional algebra. The S3 cited authority is retained and the axiom memo is an accepted premise; no carrier or family bridge is used.
+- **rationale:** Independent recomputation of the S3 fixed-point characters gives χ(e)=8, χ(2-cycle)=4, χ(3-cycle)=2, so the stated multiplicities 4A1+0A2+2E follow. On hw=1, the permutation character is (3,1,0), giving A1+E, and the stated Z3 cycle matches the tensor-position action. The Y/T3 restricted spectra also follow from the runner-defined matrices, with the corrected T3(e3) sign. The note's boundary excludes the unclosed physical carrier and family readings, so the audited claim closes as a bounded abstract representation theorem.
 - **auditor confidence:** high
 
 ### `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27`

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 302,
+    "critical": 301,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -136,31 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "cl3_taste_generation_theorem",
-      "claim_scope": "Exact abstract C^8 tensor-position S3 decomposition, hw=1 A1+E/Z3 orbit, and restricted Y/T3 spectra, with no framework-carrier or physical-family identification.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "s3_taste_cube_decomposition_note",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 23,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 21.079,
-      "note_path": "docs/CL3_TASTE_GENERATION_THEOREM.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py",
-      "transitive_descendants": 764
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -9001,6 +8976,31 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "high",
+      "criticality_rank": 2,
+      "cross_confirmation_status": null,
+      "deps": [
+        "cl3_color_automorphism_theorem",
+        "cl3_taste_generation_theorem"
+      ],
+      "direct_in_degree": 6,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 8.129,
+      "note_path": "docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py",
+      "transitive_descendants": 34
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -16712,31 +16712,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem",
-        "cl3_taste_generation_theorem"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 8.129,
-      "note_path": "docs/CL3_SU3_SYMMETRIC_BASE_COMMUTANT_GELL_MANN_EMBEDDING_NARROW_THEOREM_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_cl3_su3_symmetric_base_commutant_gell_mann_embedding_2026_05_27.py",
-      "transitive_descendants": 34
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -18862,6 +18837,31 @@
       "ready": true,
       "runner_path": "scripts/u1_fermion_number_conservation_check.py",
       "transitive_descendants": 47
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "color_generation_independent_z3_structures_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "cl3_color_automorphism_theorem",
+        "cl3_taste_generation_theorem"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.454,
+      "note_path": "docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/color_generation_z3_identification_no_go_2026_06_05.py",
+      "transitive_descendants": 30
     },
     {
       "audit_independence_required": "any_non_self",
@@ -25712,31 +25712,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_normalization_i3_accepted_premise_runner.py",
-      "transitive_descendants": 30
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "color_generation_independent_z3_structures_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem",
-        "cl3_taste_generation_theorem"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.454,
-      "note_path": "docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/color_generation_z3_identification_no_go_2026_06_05.py",
       "transitive_descendants": 30
     },
     {
@@ -34214,6 +34189,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "cl3_color_automorphism_theorem",
+        "cl3_taste_generation_theorem"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 2.822,
+      "note_path": "docs/CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27.py",
+      "transitive_descendants": 4
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -35254,31 +35254,6 @@
       "ready": true,
       "runner_path": "scripts/ward_bogoliubov_no_continuous_ssb_low_d_bridge_2026_06_11.py",
       "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cl3_color_automorphism_theorem",
-        "cl3_taste_generation_theorem"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.822,
-      "note_path": "docs/CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27.py",
-      "transitive_descendants": 4
     },
     {
       "audit_independence_required": "any_non_self",
@@ -51188,6 +51163,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 99,
-  "total_pending": 1713
+  "ready_count": 101,
+  "total_pending": 1712
 }

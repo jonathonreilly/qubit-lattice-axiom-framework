@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 867 |
 | Boxed decorations under retained parents | 56 |
 | Open gates | 24 |
-| Unaudited rows | 1893 |
+| Unaudited rows | 1892 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 26 |
 | Audited renaming rows | 21 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`no_per_site_chirality_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`no_per_site_chirality_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) - critical; audit_in_progress
 - [`gmn_vev_annihilator_l4_support_note_2026-07-02`](../../docs/GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md) - critical; unaudited
 - [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
@@ -61,11 +61,12 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 185 |
+| critical | `unaudited` | 184 |
 | high | `unaudited` | 151 |
 | medium | `unaudited` | 95 |
 | medium | `open_gate` | 3 |
 | high | `audited_numerical_match` | 2 |
+| critical | `audit_in_progress` | 1 |
 | high | `audited_conditional` | 1 |
 | high | `open_gate` | 1 |
 | medium | `audited_conditional` | 1 |

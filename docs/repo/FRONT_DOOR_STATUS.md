@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1475 |
+| Applied audit verdicts | 1476 |
 | Retained-grade rows, including boxed decorations | 1365 |
 | Retained positive theorems | 204 |
 | Retained no-go rows | 199 |
 | Retained bounded rows | 904 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 31 |
-| Unaudited rows | 1671 |
+| Unaudited rows | 1670 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 37 |
+| Audited conditional rows | 38 |
 | Audited renaming rows | 28 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1673 |
-| Ready rows | 110 |
+| Total pending rows | 1672 |
+| Ready rows | 109 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 284 |
-| Medium pending | 504 |
+| Medium pending | 503 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`tensorial_einstein_regge_completion_probe_helper_note_2026-04-14`](../../docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md) - medium; unaudited
 - [`no_per_site_bosonic_ccr_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`q_integer_spectrum_theorem_note_2026-05-02`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`momentum_charge_commute_theorem_note_2026-05-02`](../../docs/MOMENTUM_CHARGE_COMMUTE_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`translation_covariance_local_op_theorem_note_2026-05-02`](../../docs/TRANSLATION_COVARIANCE_LOCAL_OP_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`u1_fermion_number_conservation_theorem_note_2026-05-02`](../../docs/U1_FERMION_NUMBER_CONSERVATION_THEOREM_NOTE_2026-05-02.md) - medium; unaudited
 - [`color_generation_independent_z3_structures_2026-06-05`](../../docs/COLOR_GENERATION_INDEPENDENT_Z3_STRUCTURES_2026-06-05.md) - medium; unaudited
+- [`axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_LATTICE_WZ_FUJIKAWA_NARROW_THEOREM_NOTE_2026-05-26.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -90,9 +90,9 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
 - `three_generation_observable_theorem_note` - critical; 1027 descendants; score 67.006
-- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
+- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1029 descendants; score 54.008
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 48.014
-- `key_terminology` - critical; 1127 descendants; score 46.640
+- `key_terminology` - critical; 1126 descendants; score 46.638
 - `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` - critical; 898 descendants; score 44.312

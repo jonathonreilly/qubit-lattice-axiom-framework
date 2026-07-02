@@ -1,0 +1,68 @@
+========================================================================================
+ROUTE-2 SINGLE-BOX E-CENTER LIMIT UNDERDETERMINATION NO-GO
+========================================================================================
+
+A. Authority surfaces
+------------------------------------------------------------------------
+PASS: frontier_tensor_support_center_excess_law.txt exists -- logs/runner-cache/frontier_tensor_support_center_excess_law.txt
+PASS: QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md exists -- docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md exists -- docs/QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md
+PASS: authority_anchor_QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md_1 -- The landed cache cannot distinguish
+PASS: authority_anchor_QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md_2 -- The decisive discriminator is a **box-size scan and extrapolation of
+PASS: authority_anchor_QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md_3 -- a derivation of `21/4`
+PASS: authority_anchor_QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md_1 -- source-domain, or readout-map primitive is supplied.
+PASS: authority_anchor_QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md_2 -- E-center-blind endpoint class
+PASS: authority_anchor_QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md_1 -- The live `E`-channel shell/center quotient is
+PASS: authority_anchor_QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md_2 -- 15/8 = 1.875
+PASS: authority_anchor_QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md_3 -- not retained, because the current theorem stack does not yet derive `15/8`
+
+B. Parse the single-box measured calibration
+------------------------------------------------------------------------
+PASS: cache_has_all_gamma_values
+PASS: measured_qE_near_target -- q_E(15)=1.876246130347
+PASS: measured_qE_not_exact_target -- q_E(15)-15/8=1.246130347029e-03
+PASS: measured_rho_near_target -- rho_E(15)=5.257476782082
+PASS: measured_qT_much_tighter_than_qE -- q_T gap=5.136e-06; q_E gap=1.246e-03
+
+C. Two explicit finite-size laws with the same N=15 datum
+------------------------------------------------------------------------
+PASS: target_limit_law_matches_N15
+PASS: alternate_limit_law_matches_N15
+PASS: target_limit_is_15_8
+PASS: alternate_limit_is_not_15_8 -- alt=469/250
+PASS: target_rho_limit_is_21_4
+PASS: alternate_rho_limit_differs -- alt_rho=657/125
+PASS: target_correction_coefficient_small -- coeff=1.869196e-02
+PASS: alternate_correction_coefficient_small -- coeff=3.691955e-03
+PASS: laws_separate_at_N30 -- target=1.875623065174; alt=1.876123065174
+PASS: target_law_has_constant_1_over_N_coefficient_N30
+PASS: alt_law_has_constant_1_over_N_coefficient_N30
+PASS: laws_separate_at_N60 -- target=1.875311532587; alt=1.876061532587
+PASS: target_law_has_constant_1_over_N_coefficient_N60
+PASS: alt_law_has_constant_1_over_N_coefficient_N60
+PASS: laws_separate_at_N120 -- target=1.875155766293; alt=1.876030766293
+PASS: target_law_has_constant_1_over_N_coefficient_N120
+PASS: alt_law_has_constant_1_over_N_coefficient_N120
+PASS: laws_separate_at_N240 -- target=1.875077883147; alt=1.876015383147
+PASS: target_law_has_constant_1_over_N_coefficient_N240
+PASS: alt_law_has_constant_1_over_N_coefficient_N240
+
+D. Underdetermination persists for another common rate
+------------------------------------------------------------------------
+PASS: quadratic_laws_match_N15_and_separate_N30
+PASS: quadratic_laws_match_N15_and_separate_N60
+PASS: quadratic_laws_match_N15_and_separate_N120
+
+E. Paired note hygiene
+------------------------------------------------------------------------
+PASS: paired_note_exists -- docs/QUARK_ROUTE2_E_CENTER_SINGLE_BOX_LIMIT_UNDERDETERMINATION_NO_GO_NOTE_2026-06-21.md
+PASS: paired_note_states_single_box_no_go
+PASS: paired_note_preserves_measured_route
+PASS: paired_note_status_not_bare_retained
+PASS: paired_note_avoids_banned_phrases
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=45 FAIL=0
+VERDICT: no-go for exactifying the Route-2 E-center fingerprint from one finite-box calibration point.  The same N=15 q_E datum is compatible with explicit decaying finite-size laws converging to 15/8 and to a distinct nearby limit, so a box-size scan, convergence law, or independent source theorem remains required.

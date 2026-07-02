@@ -1,33 +1,32 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "this is a dependency split, not endpoint selection"
-bare_status_promotion_allowed: false
-independent_verdict_required_for_authority_change: true
+proposal_allowed_reason: "this block prunes a bypass route; it does not certify selected P_R"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
 ```
 
 ## Status
 
-Block27 is exact support for direct-consumer dependency classification. It does
-not certify a positive authority change for the endpoint itself.
+Block28 is an exact negative boundary for the scalar-bypass route. It does not
+change repo-wide authority status and does not close the S3/Route-2 endpoint.
 
 ## Dependency Classes
 
-- rho_E-blind support: conditional family, universal time channel, rank-1
-  prefactor localization.
-- E-center-sensitive open claims: unique `Theta_R -> Lambda_R` law,
-  physical/canonical gate readout, primitive-chain final use.
-- Membership-only: eta-floor live affine readout lies in the restricted bright
-  class but does not select `P_R`.
+- rho_E-free support: native projector/support grammars,
+  scalar-comparison bridge, STRC/RPSR reduced amplitude.
+- endpoint-readout-sensitive support: tensor endpoint slope/denominator
+  routes and Route-2 endpoint ratio-chain routes.
+- selected-map route: still conditional on a supplied `P_R`.
 
 ## Review Disposition
 
-No audit or review verdict was applied in this branch. The branch carries
-self-contained runners and outputs for the later reviewer pass.
+No audit verdict was applied in this branch. The branch carries self-contained
+runners and outputs for the later reviewer pass.

@@ -1,13 +1,29 @@
 # Opportunity Queue
 
-Ranked after block27.
+1. **Direct E-center lift attempt from exact carrier data**
+   - retained-positive probability: medium-low
+   - missing imports: E-center primitive
+   - runner availability: high
+   - review landability: high if negative, medium if positive
+   - independence from block28: partial
 
-| Rank | Target | Why It Moves Science | Risk | Next Action |
-|---:|---|---|---|---|
-| 1 | Physical/canonical gate readout selector | Would turn membership into selected `P_R` for S3-time consumers. | High | Search current gate/readout surfaces for an actual selector rather than eta-floor fit. |
-| 2 | E-center positive theorem | Would supply the missing endpoint selector directly. | High | Continue only if a new E-center-evaluating primitive appears. |
-| 3 | Independent non-Route-2 scalar route | Avoids the repeated typed-landing wall. | Medium | Scan direct consumers for a scalar-law route not routed through `rho_E`. |
-| 4 | Downstream safe-use weaving packet | Helps reviewer cherry-pick only rho_E-blind structural support. | Low | Prepare a handoff-only classifier if requested. |
+2. **Typed reduced-amplitude-to-readout edge**
+   - retained-positive probability: medium-low
+   - missing imports: typed edge from reduced amplitude to selected `P_R`
+   - runner availability: medium
+   - review landability: high for an exact no-go/support packet
+   - independence from block28: direct follow-up
 
-Current recommendation: pursue rank 1 only if there is a concrete selector
-surface; otherwise pivot to an independent non-Route-2 scalar route.
+3. **Physical/canonical gate selector falsifier**
+   - retained-positive probability: low
+   - missing imports: selector principle
+   - runner availability: medium
+   - review landability: high if framed as falsifier
+   - independence from block28: high
+
+4. **Source-domain typed landing theorem attempt**
+   - retained-positive probability: low
+   - missing imports: source-domain scale normalization and E-center landing
+   - runner availability: high
+   - review landability: high if it sharpens the no-go
+   - independence from block28: medium

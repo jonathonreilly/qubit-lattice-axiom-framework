@@ -1,12 +1,4 @@
 # Literature Bridges
 
-No external literature was used in block27.
-
-All checks are internal to the repo's current source bank:
-
-- `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`
-- `S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md`
-- `S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md`
-- `S3_TIME_PRIMITIVE_CHAIN_NOTE.md`
-- `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`
-- `QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`
+No external literature was used in block28. The packet is repo-internal and
+current-main grounded.

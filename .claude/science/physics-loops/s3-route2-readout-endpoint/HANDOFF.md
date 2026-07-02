@@ -1,72 +1,82 @@
 # Handoff
 
-## Block27 Result
+## Block28 Result
 
 Branch:
 
 ```text
-physics-loop/s3-route2-readout-endpoint-block27-20260621
+physics-loop/s3-route2-readout-endpoint-block28-20260621
 ```
 
 PR:
 
 ```text
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4556
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4557
 ```
 
 Identity verification:
 
 ```json
-{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block27-20260621","number":4556,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block27 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4556"}
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block28-20260621","number":4557,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block28 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4557"}
 ```
 
-Block27 delivers a direct-consumer readout ambiguity packet for the S3-time
-Route-2 gate. It proves that immediate consumers split into:
+Block28 delivers a scalar-bypass firewall for the S3/Route-2 readout endpoint.
+It proves that current-main quark up-amplitude scalar routes do not bypass the
+selected `P_R` ambiguity:
 
-- rho_E-blind structural support; and
-- E-center-sensitive claims that still need selected `P_R`.
+- rho_E-free scalar routes constrain reduced amplitude support but do not
+  select `P_R`;
+- endpoint-sensitive tensor/readout routes inherit the E-center primitive;
+- the Route-2 time-coupling family remains exact but conditional on supplied
+  `P_R`.
 
 ## Verification
 
 Commands run:
 
 ```bash
-PYTHONPATH=scripts python3 scripts/frontier_s3_time_direct_consumer_readout_ambiguity_packet_2026_06_21.py
-PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py
-PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py
-PYTHONPATH=scripts python3 scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py
-PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py
 PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
 PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py
-python3 -m py_compile scripts/frontier_s3_time_direct_consumer_readout_ambiguity_packet_2026_06_21.py scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_up_amplitude_tensor_endpoint_resolution.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_up_amplitude_rpsr_mass_retention_boundary.py
+python3 -m py_compile scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py
 ```
 
 Results:
 
 ```text
-block27 runner: PASS=35 FAIL=0
-S3 theta-to-slice: PASS=12 FAIL=0
-factor rigidity: PASS=64 FAIL=0
-bridge assessment: PASS=14 FAIL=0
-primitive chain: PASS=24 FAIL=0
-exact readout map: PASS=11 FAIL=0
-exact time coupling: PASS=8 FAIL=0
+block28 runner: PASS=33 FAIL=0
+Route-2 exact readout map: PASS=11 FAIL=0
+Route-2 exact time coupling: PASS=8 FAIL=0
+tensor endpoint resolution: PASS=16 FAIL=0
+scalar comparison bridge: PASS=11 FAIL=0
+RPSR mass-retention boundary: PASS=50 FAIL=0
 py_compile: pass
 ```
 
+## Parent Verifier Repair
+
+`scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py` had one
+stale note-wording probe. The mathematical check still targets the same two
+bilinear endpoint column identities, but the searched source phrase was
+updated from older "carrier columns are exact" wording to current
+"polynomial-identity columns" wording.
+
 ## Remaining Blocker
 
-The endpoint still needs a selected readout map:
+The endpoint still needs one of:
 
 ```text
 E-center endpoint ratio
+typed reduced-amplitude-to-readout edge
 source-domain rule
 stronger readout-map theorem
-physical/canonical gate readout selector
 ```
 
 ## Next Action
 
-Choose between a physical/canonical gate selector search and an independent
-non-Route-2 scalar route. Do not refresh existing PRs and do not check PR
-conflicts.
+Continue with either a direct E-center lift attempt or a typed
+reduced-amplitude-to-readout edge. Do not refresh existing PR branches and do
+not check PR conflicts or mergeability.

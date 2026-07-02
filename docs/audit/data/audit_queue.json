@@ -138,15 +138,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
-      "claim_scope": null,
+      "claim_scope": "T1 excludes the free CCR boson and selects single-pair Grassmann only within the two-candidate surface on the retained dim-2 site space; T2 conditionally selects Grassmann/CAR within {free boson, hard-core boson, Grassmann/CAR} given GL(F); T3 reproduces the no-unconditional-forcing boundary.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "minimal_axioms",
@@ -156,12 +156,12 @@
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
       ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
+      "direct_in_degree": 14,
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
-      "load_bearing_score": 19.333,
+      "load_bearing_score": 19.833,
       "note_path": "docs/STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/probe_grassmann_forcing_dependency_chain.py",
       "transitive_descendants": 911

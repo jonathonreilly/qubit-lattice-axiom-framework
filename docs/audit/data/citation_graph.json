@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
         "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
         "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
         "teleportation_resource_from_poisson_note",
         "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
         "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
         "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
-        "i1_native_quadratic_static_source_normalization_bridge_2026-06-08"
+        "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
+        "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fd4d42dd312d6e6735b1c1d723a938152ba1e4940e896bf42b2bde82341f3aa5",
+      "note_hash": "36d5d3469d0fb2e0b5b0e10359622d4f8047fcf84d5f902b0cc9b01f69e1fa7e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

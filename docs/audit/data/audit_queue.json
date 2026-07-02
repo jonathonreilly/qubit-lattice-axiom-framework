@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 301,
     "high": 281,
-    "leaf": 577,
+    "leaf": 576,
     "medium": 454
   },
   "cycle_break_target_count": 9,
@@ -17744,32 +17744,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_product_form_weakens_to_outcome_factorization_2026_06_12.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17933,6 +17907,34 @@
       "ready": true,
       "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
       "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
+        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
+        "kinetic_isotropy_primitive",
+        "minimal_axioms",
+        "scale_reference_primitive"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_allorders_b4_marginal_protection_twoloop_2026_06_14.py",
+      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -31767,34 +31769,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "kinetic_isotropy_primitive",
-        "minimal_axioms",
-        "scale_reference_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_allorders_b4_marginal_protection_twoloop_2026_06_14.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -32105,6 +32079,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/staggered_dirac_local_density_readout_bridge_2026_06_17.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+        "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py",
       "transitive_descendants": 1
     },
     {
@@ -37311,33 +37312,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-        "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py",
       "transitive_descendants": 1
     },
     {
@@ -48562,5 +48536,5 @@
     }
   ],
   "ready_count": 76,
-  "total_pending": 1613
+  "total_pending": 1612
 }

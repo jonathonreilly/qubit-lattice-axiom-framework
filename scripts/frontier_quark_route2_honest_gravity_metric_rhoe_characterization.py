@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import numpy as np  # noqa: E402
 
-import frontier_one_parameter_reduced_shell_law as shell  # noqa: E402
+import frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17 as shell_replay  # noqa: E402
 import frontier_quark_endpoint_readout_constraints as endpoint  # noqa: E402
 import frontier_same_source_metric_ansatz_scan as same  # noqa: E402
 import frontier_tensorial_einstein_regge_completion as tcomp  # noqa: E402
@@ -197,7 +197,7 @@ def eta_floor(system: SizeSystem, q: np.ndarray, axis: str = "x") -> float:
 def anchor(system: SizeSystem, q: np.ndarray) -> float:
     key = (system.size, q_key(q))
     if key not in ANCHOR_CACHE:
-        red = shell.reduced_data(phi_from_q(system, q), shell_radius=SHELL_RADIUS)
+        red = shell_replay.reduced_data(phi_from_q(system, q), shell_radius=SHELL_RADIUS)
         ANCHOR_CACHE[key] = float(red["anchor_per_Q"]) * float(np.sum(q))
     return ANCHOR_CACHE[key]
 
@@ -420,8 +420,8 @@ def main() -> int:
         check("A7 sanity bracket requires size 15 to compute", False, "size 15 was skipped")
     else:
         expected = {
-            "gamma_E(center)": (row15.gamma_e_center, -3.772329168017e-04),
-            "gamma_E(shell)": (row15.gamma_e_shell, -2.010572265638e-04),
+            "gamma_E(center)": (row15.gamma_e_center, -3.772329167975e-04),
+            "gamma_E(shell)": (row15.gamma_e_shell, -2.010572657265e-04),
             "gamma_T(center)": (row15.gamma_t_center, +3.359952396063e-04),
             "gamma_T(shell)": (row15.gamma_t_shell, +4.031967723697e-04),
         }

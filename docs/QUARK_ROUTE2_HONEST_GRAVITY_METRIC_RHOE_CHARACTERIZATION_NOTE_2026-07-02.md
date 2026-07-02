@@ -38,7 +38,7 @@ For each odd size `N`, the runner rebuilds the Dirichlet negative Laplacian on t
 delta_A1(q) = phi_support(center) / sum(q) - mean(phi_support(arms)) / sum(q).
 ```
 
-The tensor observable follows the landed helper composition from `frontier_tensor_support_center_excess_law.py`, `frontier_tensor_boundary_drive_two_channel.py`, and `frontier_one_parameter_reduced_shell_law.py`: `EPS = 0.005`; `eta_floor(q)` is the base spatial trace-free tensor floor at fixed physical probe radius `4.25`; the reduced anchor is `reduced_data(phi_N(q), shell_radius=4.0)["anchor_per_Q"] * sum(q)`. The E probe is
+The tensor observable follows the landed helper composition from `frontier_tensor_support_center_excess_law.py`, `frontier_tensor_boundary_drive_two_channel.py`, and the current self-contained replay helper consumed by `frontier_one_parameter_reduced_shell_law.py`: `EPS = 0.005`; `eta_floor(q)` is the base spatial trace-free tensor floor at fixed physical probe radius `4.25`; the reduced anchor is `reduced_data(phi_N(q), shell_radius=4.0)["anchor_per_Q"] * sum(q)`. The E probe is
 
 ```text
 ex = (sqrt(3) e1 + e2) / 2
@@ -59,27 +59,27 @@ At size 15 the live replay gives:
 delta_center = +1.666666666667e-01
 delta_shell  = +0.000000000000e+00
 endpoint_gap = +1.666666666667e-01
-gamma_E(center) = -3.772329168017e-04
-gamma_E(shell)  = -2.010572265638e-04
+gamma_E(center) = -3.772329167975e-04
+gamma_E(shell)  = -2.010572657265e-04
 gamma_T(center) = +3.359952396063e-04
 gamma_T(shell)  = +4.031967723697e-04
 q_T   = +8.333281976229e-01
-c_TE  = -8.906837782209e-01
-rho_E = +5.257478974983e+00
+c_TE  = -8.906837782309e-01
+rho_E = +5.257476782081e+00
 ```
 
 ## 3. Ladder
 
 Runner table:
 
-| size | solve_s | delta_center | endpoint_gap | gamma_E(center) | gamma_E(shell) | gamma_T(center) | gamma_T(shell) | q_T | c_TE | rho_E |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 11 | 5.310408041987e+00 | +1.666666666667e-01 | +1.666666666667e-01 | +2.365215296517e-03 | +2.795319344496e-03 | +5.557432873285e-03 | +6.160818102036e-03 | +9.020608596525e-01 | +2.349652009045e+00 | -9.231948016793e-01 |
-| 13 | 6.320241542009e+00 | +1.666666666667e-01 | +1.666666666667e-01 | -8.419277750910e-06 | +2.166009803896e-04 | +1.014462964759e-03 | +1.165933465424e-03 | +8.700864970799e-01 | -1.204928729961e+02 | -6.233219934714e+00 |
-| 15 | 7.005918457988e+00 | +1.666666666667e-01 | +1.666666666667e-01 | -3.772329168017e-04 | -2.010572265638e-04 | +3.359952396063e-04 | +4.031967723697e-04 | +8.333281976229e-01 | -8.906837782209e-01 | +5.257478974983e+00 |
-| 17 | 8.247433957993e+00 | +1.666666666667e-01 | +1.666666666667e-01 | -6.003207199383e-04 | +1.028474768269e-04 | -7.936366605569e-05 | +4.032808933992e-04 | -1.967950065443e-01 | +1.322021103384e-01 | -4.102199986579e+01 |
-| 19 | 9.970597500040e+00 | +1.666666666667e-01 | +1.666666666667e-01 | -7.146885984134e-04 | +9.586447172890e-05 | -2.884912632105e-04 | +3.551634857022e-04 | -8.122773731654e-01 | +4.036600889547e-01 | -5.073118678009e+01 |
-| 21 | 1.163806000003e+01 | +1.666666666667e-01 | +1.666666666667e-01 | -7.898826249488e-04 | +9.105688763062e-05 | -4.242924470598e-04 | +3.222967597622e-04 | -1.316465134098e+00 | +5.371588558330e-01 | -5.804763607689e+01 |
+| size | delta_center | endpoint_gap | gamma_E(center) | gamma_E(shell) | gamma_T(center) | gamma_T(shell) | q_T | c_TE | rho_E |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 11 | +1.666666666667e-01 | +1.666666666667e-01 | +2.365215296517e-03 | +2.795319344496e-03 | +5.557432873285e-03 | +6.160818102036e-03 | +9.020608596525e-01 | +2.349652009045e+00 | -9.231948016793e-01 |
+| 13 | +1.666666666667e-01 | +1.666666666667e-01 | -8.419277750910e-06 | +2.166009716960e-04 | +1.014462964759e-03 | +1.165933465424e-03 | +8.700864970799e-01 | -1.204928729961e+02 | -6.233219944075e+00 |
+| 15 | +1.666666666667e-01 | +1.666666666667e-01 | -3.772329167975e-04 | -2.010572657265e-04 | +3.359952396063e-04 | +4.031967723697e-04 | +8.333281976229e-01 | -8.906837782309e-01 | +5.257476782081e+00 |
+| 17 | +1.666666666667e-01 | +1.666666666667e-01 | -6.003206935299e-04 | +1.028474768269e-04 | -7.936367925796e-05 | +4.032808933992e-04 | -1.967950392815e-01 | +1.322021381460e-01 | -4.102199832515e+01 |
+| 19 | +1.666666666667e-01 | +1.666666666667e-01 | -7.146886106421e-04 | +9.586447172890e-05 | -2.884912632105e-04 | +3.551634857022e-04 | -8.122773731654e-01 | +4.036600820479e-01 | -5.073118754547e+01 |
+| 21 | +1.666666666667e-01 | +1.666666666667e-01 | -7.898826249488e-04 | +9.105688763062e-05 | -4.242924470598e-04 | +3.222967597452e-04 | -1.316465134168e+00 | +5.371588558330e-01 | -5.804763607689e+01 |
 
 Admission flags:
 
@@ -87,10 +87,10 @@ Admission flags:
 |---:|---:|---:|---|
 | 11 | +9.020608596525e-01 | 6.872752631916e-02 | PRE_ASYMPTOTIC |
 | 13 | +8.700864970799e-01 | 3.675316374659e-02 | PRE_ASYMPTOTIC |
-| 15 | +8.333281976229e-01 | 5.135710394288e-06 | ADMITTED |
-| 17 | -1.967950065443e-01 | 1.030128339878e+00 | PRE_ASYMPTOTIC |
+| 15 | +8.333281976229e-01 | 5.135710394399e-06 | ADMITTED |
+| 17 | -1.967950392815e-01 | 1.030128372615e+00 | PRE_ASYMPTOTIC |
 | 19 | -8.122773731654e-01 | 1.645610706499e+00 | PRE_ASYMPTOTIC |
-| 21 | -1.316465134098e+00 | 2.149798467432e+00 | PRE_ASYMPTOTIC |
+| 21 | -1.316465134168e+00 | 2.149798467501e+00 | PRE_ASYMPTOTIC |
 
 The fixed-geometry pre-asymptotic sign behavior is visible directly in the table: `gamma_E(center)` is positive at size 11 and negative by size 13, while `gamma_E(shell)` changes sign between sizes 13 and 15. The runner does not smooth or interpolate these rows.
 
@@ -129,32 +129,32 @@ The report-only E-basis finite differences are:
 
 | size | center_E_e1 | center_E_e2 | shell_E_e1 | shell_E_e2 |
 |---:|---:|---:|---:|---:|
-| 11 | +2.048336643987e-03 | +1.182607754621e-03 | +2.420817536906e-03 | +1.397659716456e-03 |
-| 13 | -7.291399278670e-06 | -4.209716016969e-06 | +1.875819135464e-04 | +1.083005613954e-04 |
+| 11 | +2.048336643924e-03 | +1.182607754621e-03 | +2.420817536906e-03 | +1.397659716456e-03 |
+| 13 | -7.291399278670e-06 | -4.209724724169e-06 | +1.875819135464e-04 | +1.083005613954e-04 |
 | 15 | -3.266933819644e-04 | -1.886164586437e-04 | -1.741206237369e-04 | -1.005285728691e-04 |
-| 17 | -5.198929425945e-04 | -3.001602908136e-04 | +0.000000000000e+00 | +2.056955805478e-04 |
+| 17 | -5.198929425932e-04 | -3.001602908136e-04 | -3.344648183757e-11 | +2.056955805478e-04 |
 | 19 | -6.189385189716e-04 | -3.573442670187e-04 | +0.000000000000e+00 | +1.917295849849e-04 |
-| 21 | -6.840584107896e-04 | -3.949413485223e-04 | +1.728282642917e-11 | +1.821143106072e-04 |
+| 21 | -6.840584107896e-04 | -3.949413485223e-04 | +7.211221880725e-15 | +1.821143106072e-04 |
 
-The exact-zero `shell_E_e1` finite differences at sizes 17 and 19 (`+0.000000000000e+00`, and `1.7e-11` at 21) are the signature of the floor-type (extremal) structure of `eta_floor`: off the size-15 geometry the E-shell perturbation fails to engage the floor's extremizing element at all, so the finite difference sits on a plateau. Together with the isotropy tripwire passing at every size, this locates the ladder instability at sizes 17-21 in the extremal functional itself rather than in any anisotropic porting defect: the licensed reconstruction is currently geometry-pinned to the size-15 surface on which it was defined. A convergence or infinite-volume statement therefore requires either a size-parametrized treatment of the floor family or a smooth (non-extremal) tensor-response functional that agrees with `eta_floor` on the size-15 anchor; both are named follow-ups, not deficiencies of the measured rows.
+The near-zero `shell_E_e1` finite differences at sizes 17-21 (`-3.3e-11`, `0.0`, and `7.2e-15`) are the signature of the floor-type (extremal) structure of `eta_floor`: off the size-15 geometry the E-shell perturbation effectively fails to engage the floor's extremizing element, so the finite difference sits on a numerical plateau. Together with the isotropy tripwire passing at every size, this locates the ladder instability at sizes 17-21 in the extremal functional itself rather than in any anisotropic porting defect: the licensed reconstruction is currently geometry-pinned to the size-15 surface on which it was defined. A convergence or infinite-volume statement therefore requires either a size-parametrized treatment of the floor family or a smooth (non-extremal) tensor-response functional that agrees with `eta_floor` on the size-15 anchor; both are named follow-ups, not deficiencies of the measured rows.
 
-Frozen certificate drift from `frontier_quark_endpoint_readout_constraints.py` to the size-15 live replay:
+Current certificate agreement between `frontier_quark_endpoint_readout_constraints.py` and the size-15 live replay:
 
 | quantity | fast_endpoint | size15_replay | relative_drift |
 |---|---:|---:|---:|
-| gamma_E_center | -3.772329167975e-04 | -3.772329168017e-04 | 1.125681309817e-11 |
-| gamma_E_shell | -2.010572657265e-04 | -2.010572265638e-04 | 1.947837945827e-07 |
-| gamma_T_center | +3.359952396063e-04 | +3.359952396063e-04 | 1.024521032404e-13 |
+| gamma_E_center | -3.772329167975e-04 | -3.772329167975e-04 | 3.721949360327e-14 |
+| gamma_E_shell | -2.010572657265e-04 | -2.010572657265e-04 | 9.086369766528e-14 |
+| gamma_T_center | +3.359952396063e-04 | +3.359952396063e-04 | 1.026134451352e-13 |
 | gamma_T_shell | +4.031967723697e-04 | +4.031967723697e-04 | 1.101151646189e-13 |
-| rho_E | +5.257476782082e+00 | +5.257478974983e+00 | 4.171014514230e-07 |
-| q_T | +8.333281976231e-01 | +8.333281976229e-01 | 2.124979965070e-13 |
+| rho_E | +5.257476782082e+00 | +5.257476782081e+00 | 2.741835361187e-13 |
+| q_T | +8.333281976231e-01 | +8.333281976229e-01 | 2.126312240910e-13 |
 
 ## 7. Boundary
 
 This note does not establish a derivation of `rho_E`, does not prove an infinite-volume limit, and does not change any audited row. It records a bounded finite ladder for the licensed reconstruction. The size-15 gravity-metric value
 
 ```text
-rho_E(15) = +5.257478974983e+00
+rho_E(15) = +5.257476782081e+00
 ```
 
 remains the sharpened target for any future E-center derivation path. The next path this opens is a derivation that explains the measured gravity-metric value or replaces the finite-ladder observable with a stronger, independently justified readout primitive. It is not a closure claim.

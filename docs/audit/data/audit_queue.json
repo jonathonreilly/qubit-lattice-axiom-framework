@@ -139,14 +139,14 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
       "claim_scope": "Conditional low-temperature asymptotic for the defined half-filled free-Fermi band-integral probe: any realized-class periodic Hermitian hopping kernel with a finite nonempty point-like linear-cone zero set satisfying (Z) has u(T)=\u03a3|det V|^{-1}(7/8)(\u03c0^2/30)T^4+O(T^5); the witness falsification legs only certify that both clauses of (Z) are load-bearing.",
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "minimal_axioms",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",

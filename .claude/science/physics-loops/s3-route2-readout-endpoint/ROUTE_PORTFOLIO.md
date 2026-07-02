@@ -1,19 +1,17 @@
 # Route Portfolio
 
-## Active Route: E-Center Lift Size-Scan Boundary
+## Active Route: Endpoint-Blind Renormalization No-Go
 
-Parameterize the `SIZE=15` Schur/tensor path by inferring the Schur size from `phi_grid`, replay the canonical source-family endpoint ratios across viable odd boxes, and test whether the June 10 measured match can be used as finite-size convergence evidence.
+Prove the algebraic invariance of `lambda=q_E/q_T` under endpoint-blind/separable finite-box renormalizations and combine it with the live box-scan cache. This prunes the route that tries to rescue `15/8` by harmless size-stable normalization.
 
-Outcome: bounded support plus narrow no-go for the naive extrapolation route.
+## Next Candidate: Nonseparable Covariance Primitive
 
-## Next Candidate: Size-Stable Family Definition
+Try to derive an E/T center-shell covariance rule that changes `lambda` to `9/4` without importing it. This is the direct positive route exposed by block06.
 
-Define a continuum-compatible Schur/shell/tensor replay that keeps the same semantic object across `N`, then rerun the E-center lift extrapolation on that family.
+## Next Candidate: New Nonlinear Tensor Observable
 
-## Next Candidate: Non-Finite-Box Covariance Bridge
+Construct a genuinely new tensor functional and prove that it supplies the missing nonseparable covariance from named source/tensor structure.
 
-Try to derive `q_E/q_T = 9/4` from a source-domain covariance or typed color bridge independent of the finite-box scan.
+## Next Candidate: Direct Consumer Firewall
 
-## Next Candidate: Anchor-Transition Analysis
-
-Explain whether the reduced-shell anchor/orbit geometry has a threshold or resonance that can make `N=15` special.
+If the endpoint triple remains blocked, produce a consumer-side no-go/support packet for `Theta_R -> Lambda_R` showing exactly how much of the coupling family is independent of the missing E endpoint.

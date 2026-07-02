@@ -1,23 +1,23 @@
 loop_slug: s3-route2-readout-endpoint
-block: block05
-branch: physics-loop/s3-route2-readout-endpoint-block05-20260621
-base_commit: 71f38d07a
-actual_current_surface_status: bounded-support
+block: block06
+branch: physics-loop/s3-route2-readout-endpoint-block06-20260621
+base_commit: abe7b196e
+actual_current_surface_status: no-go
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 target_claim_id: s3_time_theta_to_slice_coupling_note
-target_blocker_text: "Route-2 endpoint still needs beta_E/alpha_E = 21/4, equivalently q_E = 15/8."
-active_route: e_center_lift_size_scan_boundary
-hard_residual: "Turn the 15^3 measured E-center calibration into, or separate it from, a size-stable q_E(N) theorem."
+target_blocker_text: "Route-2 endpoint still needs beta_E/alpha_E = 21/4, equivalently q_E = 15/8 and lambda=q_E/q_T=9/4 after granted T-side values."
+active_route: endpoint_blind_size_stable_renormalization_no_go
+hard_residual: "Can a size-stable finite-box reparameterization rescue the E-center lift without adding a new readout primitive?"
 files_touched:
-  - docs/QUARK_ROUTE2_E_CENTER_LIFT_SIZE_SCAN_BOUNDARY_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py
-  - logs/runner-cache/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.txt
+  - docs/QUARK_ROUTE2_ENDPOINT_BLIND_RENORMALIZATION_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.py
+  - logs/runner-cache/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.txt
 open_imports:
-  - "A size-stable Schur/shell/tensor family proving q_E(N) -> 15/8 is still absent."
-  - "No non-finite-box covariance bridge deriving q_E = 15/8 has been supplied."
+  - "A nonseparable E/T center-shell covariance rule remains unproved."
+  - "A future nonlinear tensor observable could still supply a new primitive, but it would not be an endpoint-blind renormalization of the current finite-box scan."
 no_go_routes:
-  - "Naive route pruned: SIZE=15 measured match alone cannot be cited as finite-size convergence evidence."
+  - "Endpoint-blind/separable finite-box renormalization cannot change lambda=q_E/q_T and cannot rescue the endpoint triple in the bulk."
 pr_policy:
   push_to_main: false
   refresh_prs_to_main: false
@@ -30,11 +30,11 @@ pr_policy:
     - baseRefName
     - state
 pr:
-  number: 4534
-  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4534"
-  title: "[physics-loop] s3-route2-readout-endpoint block05 bounded-support"
-  headRefName: physics-loop/s3-route2-readout-endpoint-block05-20260621
+  number: 4535
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4535"
+  title: "[physics-loop] s3-route2-readout-endpoint block06 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block06-20260621
   baseRefName: main
   state: OPEN
-next_exact_action: "Continue campaign with the next ranked science target: size-stable E-center lift family, non-finite-box covariance bridge, or reduced-shell anchor transition theorem."
+next_exact_action: "Continue campaign with the next ranked target: derive a nonseparable E/T center-shell covariance primitive, or pivot to the direct Theta_R -> Lambda_R consumer ambiguity packet."
 stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable science targets are blocked."

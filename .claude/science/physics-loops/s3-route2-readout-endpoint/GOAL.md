@@ -6,4 +6,6 @@ Unblock the audit by producing PR-sized science artifacts for the open Route-2 r
 (beta_T/alpha_T, alpha_T/alpha_E, beta_E/alpha_E) = (-1, -2, 21/4).
 ```
 
-The active block tests the finite-box E-center lift discriminator named by the June 10 measured-calibration note. It does not run audits, apply verdicts, push to main, refresh prior PRs to main, or check PR conflict state.
+Block06 attacks the size-stable rescue route from first principles. It proves that endpoint-blind/separable finite-box renormalizations preserve `lambda=q_E/q_T`; therefore they cannot rescue the endpoint triple unless the unrenormalized finite-box family already has `lambda=9/4`.
+
+No audits, audit verdicts, pushes to main, existing-PR refreshes, or PR conflict checks are part of this block.

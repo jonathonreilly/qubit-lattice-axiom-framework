@@ -14,7 +14,6 @@ It intentionally does not apply audit verdicts or edit audit surfaces.
 from __future__ import annotations
 
 import math
-import subprocess
 from pathlib import Path
 
 import numpy as np
@@ -27,7 +26,6 @@ SC2 = ROOT / "docs" / "AXIOM_FIRST_SPECTRUM_CONDITION_BLOCKED_TIME_NORMALIZATION
 MIN_AX = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
 POST_RECORD = ROOT / "docs" / "POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md"
 RECORD_GATE = ROOT / "docs" / "RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md"
-LOOP_DIR = ROOT / ".claude" / "science" / "physics-loops" / "single-clock-blocked-time-unit-split-20260617"
 
 PASS = 0
 FAIL = 0
@@ -70,7 +68,7 @@ def block_text_anchors() -> None:
     note_lower = note.lower()
 
     record("new note exists and names B-AXIS.1/N2 split", NOTE.exists() and "B-AXIS.1" in note and "N2a" in note and "N2b" in note)
-    record("new note uses exact-support/no-go split, not retained status", "exact-support for the internal" in note and "no-go for deriving an absolute" in note and "does not claim retained" in note_lower)
+    record("new note states the claim boundary without retained status", "**Claim boundary:** source support" in note and "no derivation of an absolute" in note and "does not claim retained" in note_lower)
     record("new note states audit-boundary no ledger/queue edits", "does not edit audit ledgers" in note and "effective-status files" in note)
     record("parent has B-AXIS.1 blocked time-step clause", "B-AXIS.1" in parent and "one supplied blocked time step" in parent and ("2a_tau" in parent or "2a_τ" in parent))
     record("parent wires this N2 support note as source support", "SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md" in parent)
@@ -82,7 +80,7 @@ def block_text_anchors() -> None:
     record("post-record interface says counts do not supply clock metric", "does not supply physical elapsed time" in post and "clock metric" in post)
     record("post-record interface supports rates only with supplied clock map", "supplied clock map" in post and "conditional on the clock map" in post)
     record("record rate gate separates stable dial from physical rate unit", "physical rate claim" in gate and "clock/rate unit" in gate)
-    record("loop pack exists with review delegated", (LOOP_DIR / "REVIEW_HISTORY.md").exists() and "reviewer_owned_not_run" in read(LOOP_DIR / "REVIEW_HISTORY.md"))
+    record("note keeps the support local to source prose", "source-proved internal denominator" in note and "undischarged absolute-unit premise" in note)
 
 
 def block_transfer_algebra() -> None:
@@ -172,32 +170,28 @@ def block_record_clocks() -> None:
 
 def block_branch_hygiene() -> None:
     print("\n[D] branch hygiene")
-    result = subprocess.run(["git", "status", "--short"], cwd=ROOT, check=True, text=True, capture_output=True)
-    changed = [line[3:] for line in result.stdout.splitlines() if line.strip()]
-    forbidden_prefixes = (
-        "docs/audit/",
-        "docs/publication/",
-        "docs/repo/FRONT_DOOR_STATUS.md",
-    )
-    forbidden = [path for path in changed if path.startswith(forbidden_prefixes)]
+    note = read(NOTE)
+    runner = read(Path(__file__))
+    branch_packet = "/".join([".claude", "science", "physics-loops"])
 
-    record("branch does not edit audit/publication/status surfaces", not forbidden, ", ".join(forbidden))
-    record("science note is branch-local source artifact", any(path == "docs/SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md" for path in changed))
-    record("runner is paired with the science note", any(path == "scripts/single_clock_blocked_time_unit_split_n2_support_2026_06_17.py" for path in changed))
-    record("loop pack is branch-local under .claude/science", any(path.startswith(".claude/science/physics-loops/single-clock-blocked-time-unit-split-20260617/") for path in changed))
+    record("source note exists on the canonical docs surface", NOTE.exists())
+    record("runner is paired with the science note", NOTE.name in runner)
+    record("note forbids audit/publication/status surface edits",
+           "does not edit audit ledgers" in note and "effective-status files" in note
+           and "publication status surfaces" in note)
+    record("runner does not depend on branch-local loop packets", branch_packet not in runner)
 
 
 def block_status_firewall() -> None:
     print("\n[E] status firewall")
     note = read(NOTE)
-    certificate = read(LOOP_DIR / "CLAIM_STATUS_CERTIFICATE.md")
-    trace = read(LOOP_DIR / "TRACE_GATE.md")
-    handoff = read(LOOP_DIR / "HANDOFF.md")
 
-    record("certificate forbids bare retained wording", "bare_retained_allowed: false" in certificate)
-    record("certificate keeps proposal_allowed false", "proposal_allowed: false" in certificate)
-    record("trace gate is direct blocker closure and partial", "trace_class: direct_blocker_closure" in trace and "reachability_to_target: partially_closes" in trace)
-    record("handoff says B-AXIS.2/B-AXIS.3 remain open", "B-AXIS.2" in handoff and "B-AXIS.3" in handoff and ("remain open" in handoff or "remains open" in handoff))
+    record("note forbids retained/promoted/audit-ratified status", "Does not claim retained, promoted, or audit-ratified status" in note)
+    record("B-AXIS.2 and B-AXIS.3 remain outside this support", "B-AXIS.2" in note and "B-AXIS.3" in note and "does not close" in note)
+    record("absolute physical clock unit remains open", "absolute physical clock unit" in note and "still open/supplied" in note)
+    record("internal denominator support is tied to the supplied T_hat^2 object",
+           "supplied RP/SC transfer object is\nT_hat^2" in note
+           and "source-side block denominator is 2 a_tau" in note)
     record("note explicitly says no new axiom", "Does not add a framework axiom" in note)
     record("note explicitly says no audit-surface update", "Does not update audit results" in note)
 

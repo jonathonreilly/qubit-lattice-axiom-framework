@@ -4,7 +4,7 @@ SINGLE-CLOCK B-AXIS.1 BLOCKED-TIME UNIT SPLIT CHECK
 
 [A] source anchors
   [PASS] new note exists and names B-AXIS.1/N2 split
-  [PASS] new note uses exact-support/no-go split, not retained status
+  [PASS] new note states the claim boundary without retained status
   [PASS] new note states audit-boundary no ledger/queue edits
   [PASS] parent has B-AXIS.1 blocked time-step clause
   [PASS] parent wires this N2 support note as source support
@@ -16,7 +16,7 @@ SINGLE-CLOCK B-AXIS.1 BLOCKED-TIME UNIT SPLIT CHECK
   [PASS] post-record interface says counts do not supply clock metric
   [PASS] post-record interface supports rates only with supplied clock map
   [PASS] record rate gate separates stable dial from physical rate unit
-  [PASS] loop pack exists with review delegated
+  [PASS] note keeps the support local to source prose
 
 [B] two-step transfer algebra
   [PASS] T_hat^2 spectra are positive and vacuum-normalized
@@ -34,16 +34,16 @@ SINGLE-CLOCK B-AXIS.1 BLOCKED-TIME UNIT SPLIT CHECK
   [PASS] Record order/count data do not determine physical elapsed time
 
 [D] branch hygiene
-  [PASS] branch does not edit audit/publication/status surfaces
-  [PASS] science note is branch-local source artifact
+  [PASS] source note exists on the canonical docs surface
   [PASS] runner is paired with the science note
-  [PASS] loop pack is branch-local under .claude/science
+  [PASS] note forbids audit/publication/status surface edits
+  [PASS] runner does not depend on branch-local loop packets
 
 [E] status firewall
-  [PASS] certificate forbids bare retained wording
-  [PASS] certificate keeps proposal_allowed false
-  [PASS] trace gate is direct blocker closure and partial
-  [PASS] handoff says B-AXIS.2/B-AXIS.3 remain open
+  [PASS] note forbids retained/promoted/audit-ratified status
+  [PASS] B-AXIS.2 and B-AXIS.3 remain outside this support
+  [PASS] absolute physical clock unit remains open
+  [PASS] internal denominator support is tied to the supplied T_hat^2 object
   [PASS] note explicitly says no new axiom
   [PASS] note explicitly says no audit-surface update
 

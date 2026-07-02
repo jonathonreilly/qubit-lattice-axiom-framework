@@ -2,11 +2,9 @@
 
 **Date:** 2026-06-17
 **Claim type:** bounded_theorem
-**Actual current-surface status:** exact-support for the internal
-two-step blocked-transfer denominator; no-go for deriving an absolute
-physical clock unit from the current framework surface.
-**Trace class:** direct_blocker_closure
-**Reachability to target:** partially_closes
+**Claim boundary:** source support for the internal two-step
+blocked-transfer denominator; no derivation of an absolute physical clock
+unit from the current framework surface.
 **Target blocker:** `AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md`
 declares (B-AXIS.1) as "one supplied blocked time step `2a_tau` (= N2)".
 This note splits that phrase into a source-proved internal denominator and an
@@ -189,8 +187,8 @@ The runner checks:
 - minimal-axiom and Record clock/rate no-go anchors;
 - no audit-ledger, audit-queue, effective-status, or publication-surface
   edits in the branch;
-- branch-local status wording required by the physics-loop claim-status
-  firewall.
+- explicit boundaries that keep this support from becoming a status or audit
+  verdict.
 
 Expected output: `TOTAL: PASS=35 FAIL=0`.
 

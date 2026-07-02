@@ -1,22 +1,36 @@
 # Review History
 
-## Block20 Branch-Local Self-Review
+## Block21 Local Checks
 
-No audit or audit verdict was run. The user explicitly instructed that this
-campaign should make science PRs and not run audits or apply verdicts.
+Initial new-runner pass found one stale wording anchor against the live
+factor-rigidity note. The runner anchor was updated to match the parent note's
+actual wording. The mathematics and consumer rule were unchanged.
 
-Branch-local checks before PR:
+Current verification:
 
-- status is `exact-support`, not endpoint selection;
-- no measured endpoint value is used as a proof input;
-- `rho_E=21/4` appears only as target-family contrast, not as a selected
-  theorem output;
-- downstream rule separates `delta_E=0` safe consumers from E-center
-  conditional consumers.
-- the existing bridge-assessment runner's live `t_balance` comparator now uses
-  a floating tolerance appropriate for endpoint-fitted live-module data; no
-  theorem boundary changed.
+```text
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py
+TOTAL: PASS=29, FAIL=0
+VERDICT: direct consumers are classified by whether they evaluate the E-center delta_E direction.
 
-Verification summary: new block20 runner 49/0, factor-rigidity 64/0, bridge
-assessment 14/0, exact time 8/0, parent theta-to-slice 12/0, exact readout
-11/0, py-compile pass, diff-check pass, overclaim scan clean.
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py
+TOTAL: PASS=14, FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py
+TOTAL: PASS=24, FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+PASS=11 FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py
+PASS=8 FAIL=0
+
+python3 -m py_compile scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py
+pass
+
+git diff --check
+pass
+
+branch-local wording scan
+pass
+```

@@ -1,18 +1,23 @@
+# Trace Gate
+
+```yaml
 trace_class: upstream_support
 target_claim_id: s3_time_theta_to_slice_coupling_note
-target_blocker_text: "The parent row remains blocked by the unresolved Route-2 readout map, specifically the E-channel entry after T-side normalization."
-source_of_blocker_text: user_goal
+target_blocker_text: "unresolved E-center/source/readout primitive for the unique Route-2 readout map"
+source_of_blocker_text: frontier_question
 reachability_to_target: supports
-artifact_role: theorem
-next_trace_action: "Use the delta_E split to attack the E-center source/readout primitive or to certify downstream consumers that avoid delta_E."
+artifact_role: runner_certificate
+next_trace_action: "Use this split to send time-channel consumers forward and aim the next deep run at the E-center/source rule."
+```
 
-## Explanation
+If true, this artifact does not make the parent readout theorem unique. It
+supports the parent lane by identifying which direct consumers are already
+independent of the unresolved E-center direction and which are not.
 
-Block20 supports the target by proving an exact reuse boundary:
+Allowed downstream trace:
 
-- factor-rigidity is safe for time-channel statements;
-- readout-primitive selection remains open;
-- local `rho_E` dependence is exactly the `delta_E` coordinate.
-
-It does not retire the endpoint blocker.
-
+- direct support for `Lambda_R`, `V_R(t)`, norm-ratio time attenuation,
+  semigroup propagation, definition-only `K_R`, and E-shell/T-shell/T-center
+  endpoint data;
+- boundary statement for unique `P_R`, `q_E`, `rho_E`, center `T/E`,
+  eta-floor as physical primitive, and final Einstein/Regge identification.

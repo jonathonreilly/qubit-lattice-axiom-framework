@@ -1,76 +1,84 @@
-# S3 / Route-2 Readout Endpoint Handoff
+# Handoff
 
-**Updated:** 2026-06-21T14:01:08Z
-**Block:** 20
-**Branch:** `physics-loop/s3-route2-readout-endpoint-block20-20260621`
-**Status:** PR opened
-**PR:** https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4549
+## Block21 Summary
 
-## Claim-State Movement
+Branch:
 
-Block20 packages a precise factor-rigidity / readout-primitive split:
+```text
+physics-loop/s3-route2-readout-endpoint-block21-20260621
+```
 
-- factor-rigidity safely supports universal time-channel statements for
-  `Xi_P(t;c)`;
-- the unresolved `rho_E` entry propagates only through the spatial source
-  prefactor;
-- locally, the dependence is exactly `delta_E`;
-- E-shell, T-shell, and T-center are `rho_E`-blind, while E-center remains
-  conditional.
+This block adds an exact-support classifier for current S3/Route-2 direct
+consumers. It proves the readout-family difference identity
 
-## Artifacts
+```text
+(P(rho_b) - P(rho_a)) c = ((rho_b - rho_a) delta_E, 0)
+```
 
-- `docs/S3_TIME_FACTOR_RIGIDITY_READOUT_PRIMITIVE_SPLIT_NOTE_2026-06-21.md`
-- `scripts/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.py`
+and uses it to split current consumers into:
+
+- safe direct consumers that avoid the E-center delta direction;
+- dependent consumers that still require a separate E-center/source/readout
+  rule.
+
+## Files
+
+- `docs/S3_TIME_DIRECT_CONSUMER_ECENTER_DEPENDENCY_CLASSIFICATION_NOTE_2026-06-21.md`
+- `scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py`
+- `outputs/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.txt`
 - `.claude/science/physics-loops/s3-route2-readout-endpoint/`
-- `outputs/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.txt`
 
 ## Verification
 
-- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.py`
-  - `TOTAL: PASS=49, FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py`
-  - `PASS=64 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py`
-  - `TOTAL: PASS=14, FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py`
-  - `PASS=8 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py`
-  - `PASS=12 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py`
-  - `PASS=11 FAIL=0`
-- `python3 -m py_compile scripts/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.py scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py`
-  - pass
-- `git diff --check`
-  - pass
-- overclaim scan on new artifacts and loop pack
-  - no matches
-
-## Bridge Runner Repair
-
-The existing bridge-assessment runner had a stale exact-tolerance comparison
-for the floating live `t_balance` comparator. Block20 repairs that single
-check to use a `1e-9` comparator tolerance. The theorem boundary is unchanged:
-eta-floor remains membership-only, not primitive selection.
-
-## Remaining Blocker
-
-The hard residual remains the E-center source/readout primitive:
+Completed:
 
 ```text
-P(rho_E) E-center = (1 + rho_E/6, 0).
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py
+TOTAL: PASS=29, FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py
+TOTAL: PASS=14, FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py
+TOTAL: PASS=24, FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+PASS=11 FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py
+PASS=8 FAIL=0
+
+python3 -m py_compile scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py
+pass
+
+git diff --check
+pass
+
+branch-local wording scan
+pass
 ```
 
-Factor-rigidity does not select `rho_E`, so a future block must supply a
-source/readout theorem, a safe convention boundary, or a sharper no-go.
+## PR Status
 
-## Next Exact Action
+Open:
 
-Move to the top opportunity: a direct E-center source/readout primitive
-stretch attempt or a direct-consumer packet using the `delta_E` split.
+```text
+PR #4550
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4550
+title: [physics-loop] s3-route2-readout-endpoint block21 exact-support
+head: physics-loop/s3-route2-readout-endpoint-block21-20260621
+base: main
+state: OPEN
+```
 
-## PR Identity
+Identity-only verification:
 
 ```json
-{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block20-20260621","number":4549,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block20 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4549"}
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block21-20260621","number":4550,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block21 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4550"}
 ```
+
+## Next Target
+
+Recommended next `/goal`: source-domain E-center rule deep run. Use this
+classification as the dependency map and attack the typed source/readout
+mechanism directly.

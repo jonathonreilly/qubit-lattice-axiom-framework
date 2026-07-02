@@ -1,24 +1,23 @@
 # Artifact Plan
 
-## Block20
+## Delivered In Block21
 
-Create:
+- Add a note classifying safe and E-center-dependent direct consumers.
+- Add a runner that checks parent anchors, exact carrier ranks, subspace
+  dependence, and consumer inventory.
+- Capture runner output in `outputs/`.
+- Package the result for one review PR.
 
-- `docs/S3_TIME_FACTOR_RIGIDITY_READOUT_PRIMITIVE_SPLIT_NOTE_2026-06-21.md`
-- `scripts/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.py`
-- `outputs/frontier_s3_time_factor_rigidity_readout_primitive_split_2026_06_21.txt`
-- narrow tolerance repair in
-  `scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py`
-- loop pack files under `.claude/science/physics-loops/s3-route2-readout-endpoint/`
+## Verification Plan
 
-Verification:
+Run the new classifier plus focused parent checks:
 
-- new runner;
-- existing factor-rigidity runner;
-- existing readout-primitive bridge assessment runner;
-- exact time coupling runner;
-- exact theta-to-slice parent runner;
-- exact readout map runner;
-- `py_compile`;
-- `git diff --check`;
-- overclaim wording scan.
+```bash
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py
+python3 -m py_compile scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py
+git diff --check
+```

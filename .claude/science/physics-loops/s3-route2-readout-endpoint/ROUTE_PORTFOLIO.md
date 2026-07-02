@@ -1,27 +1,34 @@
 # Route Portfolio
 
-## Selected Route: Factor-Rigidity / Readout-Primitive Split
+## Selected Route: Direct-Consumer Classification
 
-**Type:** exact support / import firewall.
-**Dramatic-step score:** 2.
-**Hard-residual pressure:** 1.
+Score: high landability, medium claim movement, low overclaim risk.
 
-This route does not claim the endpoint triple. It narrows the safe downstream
-reuse boundary by proving that factor-rigidity is a time-channel theorem and
-that remaining readout dependence is exactly the `delta_E` spatial prefactor.
+This route converts prior support and no-go blocks into a direct downstream
+rule. It does not try to solve the E-center source problem; it tells reviewers
+which current consumers are independent of that problem.
 
-## Candidate Routes Kept For Later
+## Deferred Route: Source-Domain E-Center Rule
 
-| Route | Promise | Reason not selected for block20 |
-|---|---:|---|
-| Direct E-center source/readout primitive | high | Hard residual; needs a fresh first-principles theorem beyond this support split. |
-| Typed `R_conn -> center T/E` bridge | medium | Prior source-domain checks say the typed edge is missing; needs new theorem content. |
-| Finite-frame dual-leg theorem | medium | Previous blocks found conditional support only; needs an independent reason for the required two-leg count. |
-| Direct consumer inventory beyond `delta_E=0` | medium | Useful after the exact split is packaged. |
+Score: highest possible claim movement, high difficulty.
 
-## Next Best Action
+Attack the E-center/source readout entry from typed source-domain structure,
+R-connection constraints, Ward/source compatibility, or an equivalent
+readout-map theorem. This is the best next deep `/goal` after the current PR
+packet is delivered.
 
-After block20 PR creation, target a new block on the E-center source/readout
-primitive or a sharper direct-consumer no-go/support packet that uses the
-`delta_E` split.
+## Deferred Route: Stronger No-Go Around Typed Bridges
 
+Score: high pruning value, medium difficulty.
+
+If the source-domain route still fails, prove the strongest boundary for typed
+R-connection and center-ratio routes. The output should isolate exactly what
+extra information a future positive theorem must contain.
+
+## Rejected For This Block
+
+- Refreshing or conflict-checking old PR branches: not science progress for
+  the reviewer workflow.
+- Rewording parent notes without a new runner: too low value.
+- Adding another rational scan over `rho_E`: already pruned by E-center
+  blindness.

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
     },
     {
@@ -53490,6 +53486,10 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "observable_principle_record_scalar_map_no_go_note_2026-06-05"
     },
     {
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+      "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
         "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
         "observable_principle_record_scalar_map_no_go_note_2026-06-05",
         "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
+        "coarse_grained_exterior_law_helper_note_2026-04-14"
       ],
       "helper_runner_paths": [],
-      "note_hash": "c97006c0de943970461e72fe660357c4db69e52362abcfd785bff19a87b93f99",
+      "note_hash": "731f0188dbb92f8647a6d8804b23121a2004a21bd61e7693d82a85b01ea9b877",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

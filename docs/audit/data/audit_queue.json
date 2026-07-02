@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 281,
     "leaf": 569,
-    "medium": 455
+    "medium": 454
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17744,34 +17744,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
-        "kinetic_isotropy_primitive",
-        "minimal_axioms",
-        "scale_reference_primitive"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_allorders_b4_marginal_protection_twoloop_2026_06_14.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -32474,6 +32446,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20",
+      "claim_scope": null,
+      "claim_type": "no_go",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "kinetic_isotropy_primitive",
+        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
+        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
+        "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/kinetic_isotropy_b4_transitivity_route_no_go_2026_06_20.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "koide_carrier_locus_decomposition_note_2026-06-01",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -42224,33 +42223,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "kinetic_isotropy_b4_transitivity_route_no_go_2026-06-20",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "kinetic_isotropy_primitive",
-        "spatial_cubic_time_anisotropy_gate_no_go_2026-06-06",
-        "single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10",
-        "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KINETIC_ISOTROPY_B4_TRANSITIVITY_ROUTE_NO_GO_2026-06-20.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/kinetic_isotropy_b4_transitivity_route_no_go_2026_06_20.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_a1_loop_investigation_summary",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -48368,5 +48340,5 @@
     }
   ],
   "ready_count": 73,
-  "total_pending": 1606
+  "total_pending": 1605
 }

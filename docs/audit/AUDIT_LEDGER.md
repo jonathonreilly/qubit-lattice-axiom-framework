@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 941 |
+| **retained_bounded** | 942 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1604 |
+| unaudited | 1603 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1370 |
+| `audited_clean` | 1371 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1930 |
+| `unaudited` | 1929 |
 
 | claim_type | count |
 |---|---:|
@@ -154,6 +154,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_uniqueness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | C | - |
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_s_derived_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `alpha_s_direct_wilson_loop_derivation_theorem_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -1949,6 +1950,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `ai_methodology/raw/prompts_session_ebae4639_jonreilly.md is raw transcript rather than canonical theorem note`
   - `stale embedded PASS=41/JTS-residue transcript state conflicts with live PASS=13/JTS-derived runner state`
   - `canonical ISSR1/JTS theorem notes are not registered as this row's one-hop dependencies`
+- **auditor confidence:** high
+
+### `allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14`
+
+- **Note:** [`ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md`](../../docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the supplied B4-symmetric Wilson/staggered Euclidean regulator on the OS0 kinetic surface, perturbative 1PI terms cannot generate a diagonal marginal temporal-spatial velocity anisotropy; the runner additionally checks one-loop channels, a representative genuine 8D two-loop channel, and B4-breaking falsifiers.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T061348Z-7b4d82db-allorders_b4_marginal_pr`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Because the regulated action and integration measure are exactly B4-invariant, the perturbative effective action is B4-invariant order by order, and the only B4-invariant diagonal marginal kinetic form has c_t = c_s.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by finite-group change of variables in the regularized path integral plus the Reynolds-rank fact that B4 leaves one quadratic coefficient. The accepted kinetic-isotropy and scale primitives are used only within their declared scope, and no external comparator or tuned value is load-bearing.
+- **rationale:** The proof is an algebraic finite-symmetry closure over the supplied B4-covariant regulator: action and measure invariance imply Gamma invariance, which forbids the non-invariant marginal velocity operator. The runner source performs real finite group, loop-sum, nonfactorization, and B4-breaking checks rather than only printing constants; the two-loop numerics support but do not replace the all-orders symmetry argument. The claim is properly bounded to perturbation theory in the supplied regulator and does not assert nonperturbative, continuum-limit, or per-single-taste restoration results.
 - **auditor confidence:** high
 
 ### `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`

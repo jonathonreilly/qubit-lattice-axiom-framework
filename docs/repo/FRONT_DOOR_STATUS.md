@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1542 |
-| Retained-grade rows, including boxed decorations | 1419 |
+| Applied audit verdicts | 1543 |
+| Retained-grade rows, including boxed decorations | 1420 |
 | Retained positive theorems | 206 |
 | Retained no-go rows | 211 |
-| Retained bounded rows | 941 |
+| Retained bounded rows | 942 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 34 |
-| Unaudited rows | 1604 |
+| Unaudited rows | 1603 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 46 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1606 |
+| Total pending rows | 1605 |
 | Ready rows | 73 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
-| Medium pending | 455 |
+| Medium pending | 454 |
 | Leaf pending | 569 |
 
 Next ready rows by queue order:
 
-- [`allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14`](../../docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md) - medium; unaudited
 - [`brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31`](../../docs/BRANNEN_DELTA_SPECTRAL_ASYMMETRY_CONVENTION_ISOLATION_NOTE_2026-05-31.md) - medium; unaudited
 - [`color_link_sym2_endpoint_projection_2026-06-05`](../../docs/COLOR_LINK_SYM2_ENDPOINT_PROJECTION_2026-06-05.md) - medium; unaudited
 - [`d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`](../../docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18`](../../docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06`](../../docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md) - medium; unaudited
 - [`koide_records_objectivity_conditional_note_2026-05-31`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md) - medium; unaudited
+- [`microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09`](../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

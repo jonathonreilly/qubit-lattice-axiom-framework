@@ -917,7 +917,7 @@
     },
     {
       "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
+      "actual_claim_type": "positive_theorem",
       "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",

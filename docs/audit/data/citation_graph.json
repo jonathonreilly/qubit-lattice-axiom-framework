@@ -53470,35 +53470,35 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17"
+      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
       "from": "repo.front_door_status",
-      "to": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20"
+      "to": "no_per_site_chirality_theorem_note_2026-05-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "ring_monodromy_does_not_force_car_note_2026-06-04"
+      "to": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
     },
     {
       "from": "repo.front_door_status",
-      "to": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08"
+      "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
     },
     {
       "from": "repo.front_door_status",
-      "to": "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18"
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17"
+      "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17"
+      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
     },
     {
       "from": "repo.front_door_status",
-      "to": "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
-        "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
-        "ring_monodromy_does_not_force_car_note_2026-06-04",
-        "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
-        "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
-        "staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17",
-        "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
-        "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06"
+        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
+        "no_per_site_chirality_theorem_note_2026-05-02",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bfeebc8e8b5d8b829e88d148c45e06bd979c2ba701069a75fc976e48fc1fa6c1",
+      "note_hash": "bff3faa216a2e0f341750af6f62bb72afea3c0cb00e1a051e63e4e9d529bc673",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

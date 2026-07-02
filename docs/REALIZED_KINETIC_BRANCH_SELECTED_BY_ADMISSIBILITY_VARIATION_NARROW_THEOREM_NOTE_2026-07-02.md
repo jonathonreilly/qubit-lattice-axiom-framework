@@ -1,24 +1,28 @@
 # Realized Kinetic Branch: Selected by Admissibility Variation on the Two-Flux-Class Surface
 
 **Date:** 2026-07-02
-**Type:** positive_theorem
-**Claim type:** positive_theorem
-**Claim scope:** On the parent two-flux-class kinetic surface, the clarified
-Admissibility clause adds a variation premise to the nearest-neighbor
-availability rule. The finite one-qubit classification gives only two
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Claim scope:** On the parent two-flux-class kinetic surface, the current
+minimal-axiom Admissibility wording supplies a load-bearing variation premise
+for the nearest-neighbor availability rule. The finite one-qubit
+classification gives only two
 proper-cubic-covariant per-direction algebra-dimension patterns:
 neighbor-constant `[1, 1, 1]` and direction-tagged varying `[2, 2, 2]`.
 The sibling computations identify K0 with the neighbor-constant
 `[1, 1, 1]` structure and K1 with the direction-tagged varying
-`[2, 2, 2]` structure. Therefore, on this representative-level surface
-and under the enlarged premise set, the clarified clause selects K1.
-The boundary is that pairing terms remain outside by the parent's
-surface declaration; this note does not re-grade the parent, does not
-touch the Tier-A registry, and sets no audit status.
+`[2, 2, 2]` structure. Therefore, on this representative-level licensed
+surface and under that current premise wording, the clarified clause selects
+K1. The boundary is that pairing terms remain outside by the parent's surface
+declaration; this note does not re-grade the parent, does not claim selection
+from the four axioms alone outside the licensed surface, does not touch the
+Tier-A registry, and sets no audit status.
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome.
 **Primary runner:**
 [`scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py`](../scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py)
+**Runner cache:**
+[`logs/runner-cache/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.txt`](../logs/runner-cache/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.txt)
 
 ## Why This Note Exists
 
@@ -28,14 +32,16 @@ The minimal axiom note now states the clarified Admissibility clause:
 The kinetic-class parent left the one-bit residual explicit:
 "the flux(-1) selector is not forced because K0 also satisfies the constraints".
 That verdict concerned the parent's own constraint set; the clarified
-Admissibility clause is an additional axiom premise, so selection under
-the enlarged premise set does not contradict the parent's audited scope.
+Admissibility clause is a load-bearing premise in the current minimal-axiom
+wording, so selection under that current premise set does not contradict the
+parent's scoped residual.
 
 The reset context `AXIOM_RESET_IMPACT_2026-06-29.md` says a realized
 branch statement should name the "nonzero first-order Dirac-square kinetic
 carrier" and the "mutually anticommuting self-adjoint-unitary coefficient
-family". This note supplies the narrow rule-level selector that was not
-available to the parent before the clarified variation clause.
+family". This note supplies a narrow rule-level selector on the licensed
+surface that was not available to the parent before the clarified variation
+clause.
 
 ## Statement
 
@@ -70,8 +76,9 @@ T-A computation, K0 realizes only neighbor-constant maps, with dimensions
 conditional-record note's T-B computation, K1 carries the direction-tagged
 varying family, with dimensions `[2, 2, 2]`. Hence the clarified
 Admissibility clause selects the flux(-1) class on the licensed surface.
-The kinetic-order selector bit is derived here under the enlarged premise
-set. Composing with the sibling D1/D2 computations and the parent
+The kinetic-order selector bit is selected here only under the current
+minimal-axiom wording plus the parent licensed-surface assumptions. Composing
+with the sibling D1/D2 computations and the parent
 absorbing-frame theorem gives the nonzero first-order Dirac-square kinetic
 carrier with the mutually anticommuting self-adjoint-unitary coefficient
 family.
@@ -125,10 +132,11 @@ cell.
 ## Consequence
 
 On this surface, what this retires is the one-bit kinetic-order selector
-residual, P-KIN's surviving bit. The selection is a theorem of the enlarged
-premise set: the axioms including the 2026-07-02 clarified clause plus the
-landed chain. It does not re-grade the parent, does not touch the Tier-A
-registry, and sets no audit status.
+residual, P-KIN's surviving bit, for the representative-level licensed
+surface. The result is a bounded theorem under the current minimal-axiom
+Admissibility wording plus the landed parent/sibling chain. It does not
+re-grade the parent, does not assert class-wide transport beyond the parent
+frame theorems, does not touch the Tier-A registry, and sets no audit status.
 
 The next path this opens: transporting the selection off the representative
 level via the parent's frame theorems, and the gauged/interacting surface.
@@ -140,8 +148,8 @@ level via the parent's frame theorems, and the gauged/interacting surface.
   surface; pairing terms remain outside by the parent's declaration.
 - Class-level transport is inherited only where the parent's frame theorems
   transport it.
-- The selection uses the enlarged premise set and does not re-grade the
-  parent.
+- The selection uses the current Admissibility variation premise and the
+  parent licensed-surface assumptions; it does not re-grade the parent.
 - No Tier-A registry change and no audit status is set here.
 
 ## Dependencies
@@ -164,7 +172,8 @@ Context only: `AXIOM_RESET_IMPACT_2026-06-29.md`.
 Primary runner:
 [`scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py`](../scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py)
 
-No runner cache is generated by this note.
+Runner cache:
+[`logs/runner-cache/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.txt`](../logs/runner-cache/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.txt)
 
 Current local runner result:
 

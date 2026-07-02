@@ -16,6 +16,7 @@ from __future__ import annotations
 import itertools
 import math
 import sys
+from pathlib import Path
 
 import numpy as np
 
@@ -49,6 +50,8 @@ E_UNIT = [np.array(v, dtype=int) for v in ((1, 0, 0), (0, 1, 0), (0, 0, 1))]
 CELL = list(itertools.product((0, 1), repeat=3))
 CELL_INDEX = {r: i for i, r in enumerate(CELL)}
 HERM_BASIS = [I2, S1, S2, S3]
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md"
 
 
 def eta0(x, mu):
@@ -325,6 +328,21 @@ def blocked_derivative_gammas_8(phases):
     return out
 
 
+def run_source_guards():
+    note = NOTE.read_text(encoding="utf-8") if NOTE.exists() else ""
+    flat = " ".join(note.split())
+    check("SRC", "source note exists", NOTE.exists(), NOTE.relative_to(ROOT))
+    check("SRC", "source declares bounded_theorem claim type", "**Claim type:** bounded_theorem" in note)
+    check("SRC", "legacy positive_theorem source metadata absent", "**Claim type:** positive_theorem" not in note and "**Type:** positive_theorem" not in note)
+    check("SRC", "status authority remains audit-lane only", "**Status authority:** independent audit lane only." in note)
+    check("SRC", "source preserves conditional-only boundary", "Conditional only: the supplied realized state and its record stack are inputs" in flat)
+    check("SRC", "source preserves no record-formation claim", "No record-formation claim and no record-production dynamics." in flat)
+    check("SRC", "source preserves selector/admissibility open boundaries", "No decision on the Admissibility-reading question." in flat and "No selector forcing" in flat)
+    check("SRC", "source does not claim a missing cache", "No runner cache is generated" not in note)
+    check("SRC", "source links runner cache", "logs/runner-cache/realized_kinetic_branch_conditional_record_registration_2026_07_02.txt" in note)
+    check("SRC", "source keeps sibling dependency linked", note.count("REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md") >= 2)
+
+
 def main():
     print("=" * 78)
     print("realized kinetic branch conditional-record registration (2026-07-02)")
@@ -509,6 +527,7 @@ def main():
         f"+ fluxes={int(np.sum(np.isclose(pflux, 1.0)))}, - fluxes={int(np.sum(np.isclose(pflux, -1.0)))}, "
         f"anticommutator={pert_anti:.3f}, single-generator dims={pert_dims}",
     )
+    run_source_guards()
 
     print()
     print(

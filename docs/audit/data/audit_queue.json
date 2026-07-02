@@ -138,15 +138,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
-      "claim_scope": null,
+      "claim_scope": "On the declared Q-conserving nearest-neighbor bilinear surface over the per-site M2(C)/C2 carrier, with translation and proper cubic rotation covariance up to site-local U(1) frame on simply connected regions, the kinetic phase systems collapse to the two flux classes +/-1; the site-local absorbing frame exists uniquely up to gauge x global frame on flux -1; the flux -1 selector is not forced because K0 passes the same constraints.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms",
         "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
@@ -154,11 +154,11 @@
         "fermion_parity_z2_grading_theorem_note_2026-05-02"
       ],
       "direct_in_degree": 5,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 15.573,
       "note_path": "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py",
       "transitive_descendants": 1076
@@ -329,15 +329,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 6,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 15.37,
+      "load_bearing_score": 15.872,
       "note_path": "docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py",
-      "transitive_descendants": 935
+      "transitive_descendants": 936
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

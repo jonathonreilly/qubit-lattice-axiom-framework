@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py
-runner_sha256: 2e674345a7d29ec289a3b6515126f526598550cf336d5d49d94739c91079e68d
+runner_sha256: 71e39aefb2005a2fe0bf13a3b371adfb6b28cd62e89f79c337d7cb0760b2d3e7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 === AC_phi_lambda defect identity-unit rescale obstruction ===
@@ -97,6 +97,7 @@ PART G -- unit-blind interfaces (T4)
 [PASS] cross-lane same-unit clause is rescale-invariant (transport cannot pin)
 
 PART H -- note discipline
+[PASS] note declares canonical bounded_theorem claim type
 [PASS] note declares independent audit authority
 [PASS] note declares no registry/axiom/convention edit
 [PASS] note names W_defect_identity_unit
@@ -109,6 +110,15 @@ PART H -- note discipline
 [PASS] note quotes the radian-bridge primitive residual
 [PASS] note names the angle-native live route
 [PASS] note keeps the owner-governance route explicit
+[PASS] note graph-links authority (MINIMAL_AXIOMS_2026-06-29.md)
+[PASS] note graph-links authority (KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+[PASS] note graph-links authority (SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+[PASS] note graph-links authority (KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+[PASS] note graph-links authority (REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)
+[PASS] note graph-links authority (KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+[PASS] note graph-links authority (BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md)
+[PASS] note graph-links authority (KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
+[PASS] note graph-links authority (PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md)
 [PASS] note includes N1
 [PASS] note includes N2
 [PASS] note includes N3
@@ -126,11 +136,12 @@ PART H -- note discipline
 [PASS] note avoids overclaim phrase: requires a new ontology axiom
 [PASS] note avoids overclaim phrase: AC_phi_lambda is solved
 [PASS] note avoids overclaim phrase: AC_phi_lambda is closed
+[PASS] note does not use runner PASS as source status
 [PASS] note says not a terminal no-go
 [PASS] note preserves future bridge derivations explicitly
 [PASS] note does not import comparator data
 
-TOTAL: PASS=106 FAIL=0
+TOTAL: PASS=117 FAIL=0
 RESULT: PASS -- the scanned homogeneous premise surface cannot select the identity unit; the freedom is the R-eta density-read-as-angle junction coefficient; angle-native and rescale-breaking bridge routes remain live.
 
 ----- stderr -----

@@ -1,0 +1,83 @@
+Route-2 current-bank canonical-dualization gate
+Status: no-go for current-bank canonical-dual shortcut; not an audit verdict.
+TRACE: negative_route_pruning
+
+PART 1: exact Schur weights and dual-factor arithmetic
+PASS: six-arm projector ranks are A1=1, E=2, T=3
+      ranks=(Fraction(1, 1), Fraction(2, 1), Fraction(3, 1))
+PASS: per-arm Schur weights are w_A1=1/6, w_E=1/3, w_T=1/2
+      weights=(Fraction(1, 6), Fraction(1, 3), Fraction(1, 2))
+PASS: same-domain leverage is w_T/w_E=3/2
+      w_T/w_E=3/2
+           zero-dual: dual_factors=0, lambda=1, q_E=5/6, rho_E=-1, center T/E=-2
+PASS: zero-dual exact endpoint arithmetic matches expected values
+    source-only-dual: dual_factors=1, lambda=3/2, q_E=5/4, rho_E=3/2, center T/E=-4/3
+PASS: source-only-dual exact endpoint arithmetic matches expected values
+   readout-only-dual: dual_factors=1, lambda=3/2, q_E=5/4, rho_E=3/2, center T/E=-4/3
+PASS: readout-only-dual exact endpoint arithmetic matches expected values
+      two-sided-dual: dual_factors=2, lambda=9/4, q_E=15/8, rho_E=21/4, center T/E=-8/9
+PASS: two-sided-dual exact endpoint arithmetic matches expected values
+
+PART 2: current authority-bank marker checks
+PASS: authority file exists: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: authority file exists: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: authority file exists: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
+PASS: authority file exists: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: authority file exists: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md
+PASS: authority file exists: QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md
+PASS: authority file exists: QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md
+PASS: authority file exists: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: authority file exists: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: class-A definition only
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: does not derive
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: physical tensor primitive
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: any admissible bright-preserving linear readout
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: irreducible missing map entry
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: beta_E / alpha_E = 21/4
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: Given any admissible readout map `P_R`
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md contains marker: selects one unique `P_R`
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md contains marker: structurally localized in the spatial prefactor
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md contains marker: time-channel structure is universal
+PASS: QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md contains marker: requested source bank does not contain an exact E-channel row
+PASS: QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md contains marker: typed E-channel source/readout theorem
+PASS: QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md contains marker: does not derive that row
+PASS: QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md contains marker: (alpha_E, alpha_T, beta_T) = (1, -2, 2)
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md contains marker: There is no current typed edge
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md contains marker: extra source/readout rule
+PASS: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: fix the readout **norm**
+PASS: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: readout's **direction**
+
+PART 3: absence of current-bank dualization semantics
+PASS: authority bank does not supply marker: canonical dual
+PASS: authority bank does not supply marker: canonical-dual
+PASS: authority bank does not supply marker: dual frame
+PASS: authority bank does not supply marker: dual-frame
+PASS: authority bank does not supply marker: Moore-Penrose
+PASS: authority bank does not supply marker: pseudoinverse
+PASS: authority bank does not supply marker: Riesz
+PASS: authority bank does not supply marker: adjoint readout
+PASS: authority bank does not supply marker: source/readout adjoint
+PASS: authority bank does not supply marker: two-sided dual
+PASS: authority bank does not supply marker: two-sided canonical
+PASS: authority bank does not supply marker: inverse-square dualization
+PASS: current bank has exact conditional P_R algebra but no canonical-dual selector
+PASS: current bank names source/readout theorem target rather than deriving it
+
+PART 4: note and status firewall
+PASS: note contains marker: Actual current-surface status: no-go for current-bank canonical-dual dualization shortcut
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not resolve the parent
+PASS: note contains marker: does not rule out a future inverse-square dualization theorem
+PASS: note contains marker: one-sided source-only or readout-only dualization gives `p=1`
+PASS: note contains marker: the current authority bank does not supply a source/readout adjointness or canonical-dual law
+PASS: note avoids overclaim marker: status-authority phrase
+PASS: note avoids overclaim marker: parent-closure phrase
+PASS: note avoids overclaim marker: current-surface endpoint-derivation phrase
+PASS: note avoids overclaim marker: audit-ratification phrase
+PASS: note avoids overclaim marker: branch-local status-promotion phrase
+PASS: note avoids overclaim marker: future-retention phrase
+PASS: note avoids overclaim marker: promotion-to-retention phrase
+PASS: note avoids overclaim marker: no-future-theorem phrase
+
+TOTAL: PASS=62, FAIL=0
+VERDICT: no-go for the current-bank canonical-dual shortcut. The current Route-2 authority bank does not already supply the two-sided inverse-Schur source/readout law; deriving that law remains the next science target.

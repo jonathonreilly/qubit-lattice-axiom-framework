@@ -1,10 +1,10 @@
 loop_slug: s3-route2-readout-endpoint
-block: 32
+block: 33
 date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block32-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block33-20260621
 base: main
-base_commit: f04c5909c
-worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block32-20260621
+base_commit: 587d1c04b
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block33-20260621
 mode: campaign
 user_constraints:
   - do_not_run_audit_or_apply_verdicts
@@ -12,24 +12,24 @@ user_constraints:
   - do_not_push_to_main
   - do_not_refresh_existing_prs_to_main
   - do_not_check_pr_conflicts_or_mergeability
-active_route: w1_sign_magnitude_split_support
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
-artifact_role: theorem
-target_blocker: "which part of W1 is still load-bearing after the T-side signs are granted?"
-claim_movement: "shows W1 sign is forced in the positive E-center branch and localizes the remaining bridge to magnitude |c_TE|=8/9"
+active_route: magnitude_source_e_center_shear_no_go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+artifact_role: no_go
+target_blocker: "can shear-invariant shell/T-side/color data select |c_TE|=F_adj?"
+claim_movement: "prunes shear-invariant magnitude sources and localizes the next target to an E-center shear-breaking primitive"
 files_touched:
-  - docs/QUARK_ROUTE2_W1_SIGN_MAGNITUDE_SPLIT_SUPPORT_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_w1_sign_magnitude_split_support_2026_06_21.py
-  - outputs/frontier_quark_route2_w1_sign_magnitude_split_support_2026_06_21.txt
-  - outputs/frontier_quark_route2_exact_readout_map_block32.txt
+  - docs/QUARK_ROUTE2_MAGNITUDE_SOURCE_E_CENTER_SHEAR_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_magnitude_source_e_center_shear_no_go_2026_06_21.py
+  - outputs/frontier_quark_route2_magnitude_source_e_center_shear_no_go_2026_06_21.txt
+  - outputs/frontier_quark_route2_exact_readout_map_block33.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 open_imports:
-  - magnitude source rule |c_TE|=F_adj
-  - equivalent E-center primitive q_E=15/8
+  - E-center shear-breaking primitive
+  - non-shear-invariant magnitude theorem
 verification:
-  block_runner: "PASS=39 FAIL=0"
+  block_runner: "PASS=51 FAIL=0"
   exact_readout_parent: "PASS=11 FAIL=0"
   e_channel_naturality_parent: "PASS=28 FAIL=0 (output not carried; historical generated text trips broad wording scans)"
   source_domain_bridge_parent: "PASS=103 FAIL=0 (output not carried; historical generated text trips broad wording scans)"
@@ -37,11 +37,11 @@ verification:
 review_verdict: branch_local_pass_no_audit
 pr_status: open
 pr_identity:
-  number: 4561
-  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4561
-  title: "[physics-loop] s3-route2-readout-endpoint block32 exact-support"
-  headRefName: physics-loop/s3-route2-readout-endpoint-block32-20260621
+  number: 4562
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4562
+  title: "[physics-loop] s3-route2-readout-endpoint block33 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block33-20260621
   baseRefName: main
   state: OPEN
-next_exact_action: "attack magnitude source rule |c_TE|=F_adj or equivalent E-center primitive"
+next_exact_action: "search for an E-center shear-breaking primitive or non-shear-invariant magnitude theorem"
 stop_condition: null

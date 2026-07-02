@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1524 |
-| Retained-grade rows, including boxed decorations | 1404 |
+| Applied audit verdicts | 1525 |
+| Retained-grade rows, including boxed decorations | 1405 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 209 |
-| Retained bounded rows | 929 |
+| Retained bounded rows | 930 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1622 |
+| Unaudited rows | 1621 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 44 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1624 |
+| Total pending rows | 1623 |
 | Ready rows | 82 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
-| Medium pending | 458 |
+| Medium pending | 457 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08`](../../docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md) - medium; unaudited
 - [`cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17`](../../docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md) - medium; unaudited
 - [`emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06`](../../docs/EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md) - medium; unaudited
 - [`hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15`](../../docs/HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
 - [`product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`](../../docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_WILSON_MASS_HOLONOMY_TWISTED_EDGE_REALIZATION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
+- [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

@@ -2,8 +2,14 @@
 
 **Date:** 2026-07-02
 **Claim type:** bounded_theorem
-**Audit status:** set only by the independent audit lane. This source note
-does not set, predict, or apply an audit verdict.
+**Claim scope:** Central-scalar record registration on a one-link `L^2(G)`
+carrier induces normalized convolutional, Ad-invariant, inversion-symmetric,
+representation-positive step kernels for the registration class, with exact
+finite `S3`/`Q8` witnesses and truncated `SU(3)` softness numerics; no
+record-step occurrence, position-classicality, rate-value, heat-kernel,
+continuum, or Wilson action-surface selection closure.
+**Status authority:** independent audit lane only. This source note does not
+set, predict, or apply an audit verdict.
 **Primary runner:** [`scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py`](../scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py)
 
 ## Purpose
@@ -292,5 +298,5 @@ python3 scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel
 Expected:
 
 ```text
-TOTAL: PASS=95 FAIL=0
+TOTAL: PASS=103 FAIL=0
 ```

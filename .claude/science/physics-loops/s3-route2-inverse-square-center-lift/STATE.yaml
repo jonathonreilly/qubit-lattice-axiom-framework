@@ -1,0 +1,40 @@
+loop_slug: s3-route2-inverse-square-center-lift
+block: 97
+date: 2026-06-21
+branch: physics-loop/s3-route2-inverse-square-center-lift-block97-20260621
+base: origin/main@4ee570091
+mode: campaign
+target_status: best-honest-status
+active_route: inverse-square center-lift boundary
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+hard_residual: "Can current O_h/quadratic/naturality/Record surfaces derive q_X w_X^2=5/24?"
+lock_mode: degraded_branch_local
+lock_error: "[Errno 13] Permission denied: '/Users/jonreilly'"
+files_touched:
+  - docs/QUARK_ROUTE2_INVERSE_SQUARE_CENTER_LIFT_BOUNDARY_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_inverse_square_center_lift_boundary_2026_06_21.py
+  - outputs/frontier_quark_route2_inverse_square_center_lift_boundary_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-inverse-square-center-lift/
+open_imports:
+  - "No current-surface primitive derives q_X w_X^2=5/24."
+  - "No nonlinear E-center readout primitive has been derived."
+  - "No typed metric/source primitive derives the target Route-2 metric tensor."
+no_go_routes:
+  - "Current O_h/quadratic/naturality/Record surfaces derive the inverse-square center-lift normalization."
+checkpoint:
+  commands_run:
+    - "python3 -m py_compile scripts/frontier_quark_route2_inverse_square_center_lift_boundary_2026_06_21.py: pass"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_inverse_square_center_lift_boundary_2026_06_21.py: TOTAL PASS=40 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py: TOTAL PASS=7 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py: PASS=11 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py: PASS=11 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py: TOTAL PASS=28 FAIL=0"
+  pr:
+    number: 4628
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4628
+    identity_checked: true
+    conflict_mergeability_checked: false
+  next_exact_action: "Continue campaign toward a genuinely nonlinear E-center readout primitive."
+  stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

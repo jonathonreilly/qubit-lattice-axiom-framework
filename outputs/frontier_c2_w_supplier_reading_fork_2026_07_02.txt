@@ -1,0 +1,29 @@
+CHECK 01: PASS — premise guard: current axiom file has no-privilege, record, state, law, and additivity sentences
+CHECK 02: PASS — premise guard: policy section 6 has possibility relabelings and standing promotion rule
+CHECK 03: PASS — T1: rational contents are reachable from refined generators and disjoint union adds contents
+CHECK 04: PASS — T1: chain-derived values match u*x_A+v*x_B for weights (2,3)
+CHECK 05: PASS — T1: chain-derived values match u*x_A+v*x_B for weights (5/2,1/3)
+CHECK 06: PASS — T1: the derived form satisfies the refinement identity I(x)=k*I(x/k) exactly
+CHECK 07: PASS — T1: the detector rejects the identity-dependent assignment and accepts a content readout
+CHECK 08: PASS — T2 READING-X: sigma exchange sends a generator to a different level for weights (2,1)
+CHECK 09: PASS — T2 READING-X: u=v readouts are sigma-closed on asymmetric rational samples
+CHECK 10: PASS — T2 READING-X: sigma closure holds exactly when u=v across the weight family (forcing iff)
+CHECK 11: PASS — T2 READING-P: C3 multiplication-table relabelings are exactly id and U<->U2
+CHECK 12: PASS — T2 READING-P: every preserving relabeling fixes the unit I
+CHECK 13: PASS — T2 READING-P: U<->U2 conjugation leaves (a^2,2|b|^2) content pairs invariant
+CHECK 14: PASS — T2 READING-P: the (2,1) readout is invariant under the induced trivial content action
+CHECK 15: PASS — T2 READING-P: the w=2 witness survives all presentation-preserving checks
+CHECK 16: PASS — T3: equal-sum readouts agree on diagonal samples and separate off diagonal
+CHECK 17: PASS — T3: diagonal readout ratios equal content ratios for multiple nonzero weight pairs
+CHECK 18: PASS — T3: on the denominator<=12 grid in [0,2], x -> x^2 fixes exactly {0,1}
+CHECK 19: PASS — T3: component (2r^2) and slot (r^2) dictionary maps fix exactly {0,1/2} and {0,1} on the grid; both read x*=1
+CHECK 20: PASS — T3: 17/2-6*sqrt(2) lies strictly between 0 and 1/2 by rational bounds
+CHECK 21: PASS — T4: equal per-component EW weight gives kappa=1 and adjoint fraction 8/9
+CHECK 22: PASS — T4: unequal cell-level weights leave kappa as v/u rather than 1
+CHECK 23: PASS — T4: diagonal EW readout ratios are kappa-independent for multiple exact samples
+CHECK 24: PASS — T5 index: ladder replaces the independent w-supplier number with READ adjudication
+CHECK 25: PASS — T5 index: READ slot is a binary reading fork rather than a numeric supplier
+CHECK 26: PASS — boundary-denial: note says it does not adjudicate readings
+CHECK 27: PASS — boundary-denial: note says no wall closed
+CHECK 28: PASS — boundary-denial: note marks unmerged sibling citations review-pending
+TOTAL: PASS=28 FAIL=0

@@ -1,23 +1,24 @@
 # Route Portfolio
 
-## Block08 Chosen Route
+## Block09 Selected Route
 
-Consumer ambiguity firewall for `Theta_R -> Lambda_R`.
+No-go / exact support boundary for reciprocal projector factor degree.
 
-Claim-state movement: exact support. It proves
+Score: high route-pruning value, direct trace to endpoint, low blast radius,
+strong artifactability.
 
-```text
-(P(rho_b) - P(rho_a)) c = ((rho_b - rho_a) delta_E, 0)
-```
+## Fan-Out Frames
 
-and therefore identifies the exact downstream blind and sensitive sectors.
+| Frame | Expected reciprocal degree | Outcome |
+|---|---:|---|
+| raw carrier/readout | 0 | misses |
+| source-normalized single reciprocal | 1 | misses |
+| readout-normalized single reciprocal | 1 | misses |
+| Schur-dual single reciprocal | 1 | misses |
+| source times readout reciprocal | 2 | closes conditionally, but the two factors are not derived |
 
-## Alternative Routes Deferred
+## Deferred Positive Route
 
-- First-principles derivation of `rho_E = 21/4`: still the highest-value target,
-  but block07 exposed that it requires an additional projector-normalization
-  primitive not yet derived.
-- Additional finite-box scans: block05 showed the 15^3 calibration is not
-  convergence evidence.
-- Endpoint-blind renormalization rescue: block06 showed separable blind
-  renormalizations preserve the wrong lambda and cannot select the endpoint.
+Derive two independent reciprocal local projector-weight factors from named
+Route-2 source/readout/tensor structure. This is the next positive target after
+block09.

@@ -1,9 +1,8 @@
 # Goal
 
-Unblock the S3/Route-2 readout endpoint audit by producing PR-sized science
-blocks. This block targets the direct consumer `s3_time_theta_to_slice_coupling_note`.
+Attack the S3/Route-2 readout endpoint triple from first principles. Block09
+targets the remaining inverse-square projector-normalization primitive.
 
-The block does not derive `rho_E = 21/4`. It provides an exact consumer
-firewall: changing `rho_E` changes only the E-readout amplitude on carriers
-with nonzero `delta_E`, so rho-independent downstream subclaims can be separated
-from the still-blocked E-center-sensitive unique theorem.
+The block asks whether a zero-factor or one-factor source/readout/Schur
+normalization can force the endpoint. It proves they cannot: the endpoint
+needs total reciprocal projector-weight degree two.

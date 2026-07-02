@@ -1,0 +1,50 @@
+Route-2 double-local projector factor-degree no-go
+========================================================================
+
+========================================================================
+PART 1: current-source boundary
+========================================================================
+  [PASS] block09 note declares no-go/exact-support boundary rather than endpoint closure  (status and open primitive are explicit)
+  [PASS] prototype source note leaves endpoint coefficient inputs underived  (source/readout staging object is not a normalization theorem)
+  [PASS] constructed support-response note excludes exact endpoint coefficient closure  (bounded response Jacobian is not the missing endpoint primitive)
+  [PASS] bilinear carrier note is definition-only under named inputs  (carrier algebra does not select the readout direction)
+  [PASS] exact readout-map note names rho_E as the remaining missing map entry  (endpoint map entry remains open)
+  [PASS] quadratic covariance no-go already identifies inverse-square as the sharp gap  (block09 narrows the factor-degree requirement, not a new endpoint value)
+
+========================================================================
+PART 2: exact six-arm O_h projector weights
+========================================================================
+  w_A1=1/6, w_E=1/3, w_T1=1/2, kappa=3/2
+  [PASS] six-arm O_h per-arm weights are exact and give kappa=3/2  (weights are recomputed from the signed-permutation action)
+
+========================================================================
+PART 3: reciprocal factor-degree gate
+========================================================================
+  degree  lambda  q_E   rho_E  center T/E
+       0       1    5/6      -1          -2
+       1     3/2    5/4     3/2        -4/3
+       2     9/4   15/8    21/4        -8/9
+       3    27/8  45/16    87/8      -16/27
+       4   81/16  135/32  309/16      -32/81
+  [PASS] zero reciprocal factors miss the endpoint  (degree 0 gives lambda=1, rho_E=-1)
+  [PASS] one reciprocal source/readout factor misses the endpoint  (degree 1 gives lambda=3/2, q_E=5/4, rho_E=3/2)
+  [PASS] two reciprocal local projector-weight factors close the endpoint conditionally  (degree 2 gives lambda=9/4, q_E=15/8, rho_E=21/4, center T/E=-8/9)
+  [PASS] three or more reciprocal factors overshoot the endpoint in the checked degree range  (degrees 3 and 4 miss after passing the target degree)
+  [PASS] within integer reciprocal degrees |d|<=6, d=2 is the unique endpoint degree  (target degrees: [2])
+
+========================================================================
+PART 4: first-principles stuck fan-out synthesis
+========================================================================
+  raw carrier/readout degree             degree=0 lambda=1 hit=False
+  source-normalized single reciprocal    degree=1 lambda=3/2 hit=False
+  readout-normalized single reciprocal   degree=1 lambda=3/2 hit=False
+  Schur-dual single reciprocal           degree=1 lambda=3/2 hit=False
+  source times readout reciprocal        degree=2 lambda=9/4 hit=True
+  [PASS] all one-factor fan-out frames miss lambda=9/4  (single-factor frames all give lambda=3/2)
+  [PASS] the only fan-out frame that hits is the two-factor source-times-readout frame  (the positive route needs two independent reciprocal factors)
+
+========================================================================
+SUMMARY
+========================================================================
+Status: no-go for zero/one-factor normalizations; two-factor primitive remains open.
+PASS=14 FAIL=0

@@ -1,0 +1,38 @@
+Route-2 rank-one carrier leg-factorization boundary
+====================================================================================
+Status: no-go for extracting the endpoint from the current K_R carrier alone.
+[PASS] projector weights give kappa=w_T1/w_E=3/2
+       kappa=3/2
+
+-- Symbolic carrier facts --
+[PASS] K_R(delta,u_E,u_T) is exactly [1,delta]^T [u_E,u_T] with determinant zero
+       checked over exact rational samples
+
+-- Live endpoint carrier columns --
+[PASS] live K_R implementation equals the outer-product factorization
+       max factorization residual=0.000e+00
+[PASS] endpoint columns are the same A1 source leg times the selected bright channel
+       endpoint residual=2.220e-16
+[PASS] E and T endpoint source legs are channel-blind
+
+-- Degree consequence --
+[PASS] rank-one carrier factorization has reciprocal projector-weight degree zero
+       d=0, lambda_K=1
+[PASS] degree-zero carrier misses endpoint: q_E=5/6, rho_E=-1, center T/E=-2
+       q_E=5/6, rho_E=-1, center T/E=-2
+[PASS] target still requires degree two: lambda=9/4, q_E=15/8, rho_E=21/4, center T/E=-8/9
+
+-- Current-surface guards --
+[PASS] bilinear note defines K_R as the class-A polynomial carrier and not a physical primitive theorem
+[PASS] readout note keeps endpoint triple as an exact missing-map obstruction
+[PASS] new note records no-go status and forbids endpoint closure
+[PASS] new note states the remaining target as extra normalization or nonseparable degree-two primitive
+[PASS] forbidden proof inputs remain excluded
+[PASS] new note names the actual K_R carrier route as pruned
+
+====================================================================================
+PASS=14 FAIL=0
+
+VERDICT: no-go boundary. The current K_R carrier has an exact leg-level rank-one
+factorization, but the source leg is common to E and T and carries reciprocal degree zero.
+The endpoint still requires a new normalization primitive or nonseparable degree-two object.

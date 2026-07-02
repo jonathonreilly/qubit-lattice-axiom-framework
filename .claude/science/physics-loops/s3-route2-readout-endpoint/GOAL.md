@@ -15,8 +15,12 @@ the unique exact `Theta_R -> Lambda_R` coupling theorem.
 
 ## Current Science Block
 
-Block11 tests whether the current product-level endpoint/readout grammar can
-certify two independent source/readout dual-normalized legs. Result: no-go.
-The endpoint algebra fixes total reciprocal degree two, not the source/readout
-split; channelwise factorization gauges preserve all current products while
-changing leg attribution.
+Block12 performs the leg-level stretch attempt on the current class-A carrier
+itself. Result: the carrier has an exact rank-one leg factorization
+
+```text
+K_R(q) = [1, delta_A1(q)]^T [u_E(q), u_T(q)]
+```
+
+but that factorization is channel-blind and reciprocal degree zero. It cannot
+supply the two reciprocal factors needed for the endpoint.

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
         "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
         "koide_berry_monopole_bridge_reduction_note_2026-05-31",
         "observable_principle_record_scalar_map_no_go_note_2026-06-05",
-        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09"
+        "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
+        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6c4a7958a60d59a2f8a458b25639a9793676af003db322c0821922ddde097995",
+      "note_hash": "c97006c0de943970461e72fe660357c4db69e52362abcfd785bff19a87b93f99",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

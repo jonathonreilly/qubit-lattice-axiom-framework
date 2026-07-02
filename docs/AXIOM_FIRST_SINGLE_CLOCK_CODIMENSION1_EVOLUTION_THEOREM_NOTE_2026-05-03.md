@@ -182,6 +182,16 @@ rather than derived.
   no-go as an input; it leaves B-AXIS open. Avoiding the filename token
   keeps the audit citation graph from treating the forward
   cross-reference as a load-bearing edge back to the follow-up note.
+- **2026-06-16 (APBC axis-label bridge wiring, no status change).** The
+  companion
+  [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+  now packages the sharpened-pin positive theorem: given a supplied
+  per-axis boundary-condition datum `APBC` on one axis and `PBC` on the
+  other three, the APBC axis is invariantly selected. This source note
+  cites that bridge only as a conditional supplier for the axis-label
+  component of (B-AXIS.2). It does not derive the APBC/PBC datum, the
+  blocked time step, the transfer construction, or the no-second-clock
+  clause, and it does not change this row's status authority.
 
 ## Scope
 
@@ -281,6 +291,15 @@ No fitted parameters. No observed values used as proof inputs.
     (= N4);
   - (B-AXIS.3) no independent commuting transfer factor is admitted
     as a second physical clock (= N5).
+- **(B-AXIS-APBC)** — conditional supplier for the axis-label part of
+  (B-AXIS.2) only:
+  [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+  proves that, given a supplied APBC-on-axis/PBC-on-others boundary datum,
+  the APBC axis is the selected axis label. This does not supply the
+  datum itself, the blocked time step, the transfer construction, or
+  (B-AXIS.3). B-AXIS remains live unless the APBC/PBC datum is itself
+  supplied by the row consuming this theorem or by a later retained
+  supplier.
 
 The older declared finite-range generator premise `(B-RANGE)` is no
 longer a current premise of this theorem. It was replaced by the
@@ -321,11 +340,20 @@ still-live axis-selection premise:
   must provide a non-transportable registration-direction theorem or a
   reviewed boundary-condition asymmetry bridge; this note does not add
   such a premise and does not treat it as an axiom.
+- **APBC/PBC narrows the axis-label supplier shape but does not close
+  B-AXIS by itself.** The 2026-06-16 APBC bridge proves the axis-label
+  consequence if the per-axis boundary-condition datum is supplied. It
+  does not derive that datum and does not touch (B-AXIS.1) or
+  (B-AXIS.3), so this theorem remains axis-conditional on the live
+  premise surface.
 
 Source-surface summary: this is bounded support only. The repair prunes the
 old B-RANGE route from the current scope and leaves B-AXIS as the live
 declared blocker. No retained-grade proposal or status promotion is made here;
 the independent audit lane remains the only authority for effective status.
+Equivalently, B-AXIS as the live axis premise remains after the
+record-durability axis selection route-pruning context: those routes do not
+derive B-AXIS.
 
 ## Statement
 
@@ -618,6 +646,8 @@ independent audit lane remains the only authority for effective status.
   [`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`](QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md)
 - kinetic-form premise context (meta, approved premise):
   [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+- APBC/PBC axis-label bridge (conditional supplier; no status change):
+  [`SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
 - continuum bound (retained_bounded):
   [`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`](EMERGENT_LORENTZ_INVARIANCE_NOTE.md)
 - downstream consumer (cross-reference only, not a dep):

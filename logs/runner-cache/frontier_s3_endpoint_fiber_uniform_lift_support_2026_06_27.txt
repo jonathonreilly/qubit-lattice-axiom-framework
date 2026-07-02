@@ -1,0 +1,140 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_endpoint_fiber_uniform_lift_support_2026_06_27.py
+runner_sha256: 8e02d9339bf3329fb9bc1e44241589c354f0f0f327b37658dc02b02d5ca2180c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+S3 endpoint fiber-uniform lift support
+TRACE: conditional_finite_support
+PART 1: fiber-uniform lift classification
+PASS: there are thirty-six total surjective quotients
+PASS: each quotient has one two-label fiber and two singleton fibers
+PASS: all fiber-uniform lifts push forward to uniform axes
+PASS: six endpoint weight placements occur
+PASS: every lift uses only one-sixth and one-third weights
+PASS: twelve fiber-uniform lifts also satisfy E/T symmetry
+PASS: six E/T-symmetric lifts pair shell labels
+PASS: six E/T-symmetric lifts pair center labels
+PASS: mixed-pair quotients are the complement
+PASS: all mixed-pair fiber-uniform lifts break E/T symmetry
+PASS: E/T-symmetric lifts have exactly the two same-radial weight shapes
+
+PART 2: conditional radial-bias consequence
+  et_lift=00 quotient=(0, 1, 0, 2) pair=shell weights=(Fraction(1, 6), Fraction(1, 3), Fraction(1, 6), Fraction(1, 3)) shell=1/3 center=2/3 radial_mean=1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=01 quotient=(0, 1, 2, 1) pair=center weights=(Fraction(1, 3), Fraction(1, 6), Fraction(1, 3), Fraction(1, 6)) shell=2/3 center=1/3 radial_mean=-1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=02 quotient=(0, 2, 0, 1) pair=shell weights=(Fraction(1, 6), Fraction(1, 3), Fraction(1, 6), Fraction(1, 3)) shell=1/3 center=2/3 radial_mean=1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=03 quotient=(0, 2, 1, 2) pair=center weights=(Fraction(1, 3), Fraction(1, 6), Fraction(1, 3), Fraction(1, 6)) shell=2/3 center=1/3 radial_mean=-1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=04 quotient=(1, 0, 1, 2) pair=shell weights=(Fraction(1, 6), Fraction(1, 3), Fraction(1, 6), Fraction(1, 3)) shell=1/3 center=2/3 radial_mean=1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=05 quotient=(1, 0, 2, 0) pair=center weights=(Fraction(1, 3), Fraction(1, 6), Fraction(1, 3), Fraction(1, 6)) shell=2/3 center=1/3 radial_mean=-1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=06 quotient=(1, 2, 0, 2) pair=center weights=(Fraction(1, 3), Fraction(1, 6), Fraction(1, 3), Fraction(1, 6)) shell=2/3 center=1/3 radial_mean=-1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=07 quotient=(1, 2, 1, 0) pair=shell weights=(Fraction(1, 6), Fraction(1, 3), Fraction(1, 6), Fraction(1, 3)) shell=1/3 center=2/3 radial_mean=1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=08 quotient=(2, 0, 1, 0) pair=center weights=(Fraction(1, 3), Fraction(1, 6), Fraction(1, 3), Fraction(1, 6)) shell=2/3 center=1/3 radial_mean=-1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=09 quotient=(2, 0, 2, 1) pair=shell weights=(Fraction(1, 6), Fraction(1, 3), Fraction(1, 6), Fraction(1, 3)) shell=1/3 center=2/3 radial_mean=1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=10 quotient=(2, 1, 0, 1) pair=center weights=(Fraction(1, 3), Fraction(1, 6), Fraction(1, 3), Fraction(1, 6)) shell=2/3 center=1/3 radial_mean=-1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+  et_lift=11 quotient=(2, 1, 2, 0) pair=shell weights=(Fraction(1, 6), Fraction(1, 3), Fraction(1, 6), Fraction(1, 3)) shell=1/3 center=2/3 radial_mean=1/3 radial_kappa=0
+PASS: E/T-symmetric lift has endpoint weights in {1/6,1/3}
+PASS: E/T-symmetric lift has radial masses one-third and two-thirds
+PASS: E/T-symmetric lift gives radial mean magnitude one third
+PASS: E/T-symmetric lift gives connected eight ninths
+PASS: E/T-symmetric lift gives radial kappa zero
+PASS: shell-pair lifts make shell the lighter radial sector
+PASS: center-pair lifts make center the lighter radial sector
+PASS: no E/T-symmetric lift selects shell over center by itself
+
+PART 3: shortcut boundaries
+PASS: uniform four-slot law is not any fiber-uniform four-to-three lift
+PASS: fiber-uniform theorem is stronger than positivity
+PASS: the support result names four open physical premises
+PASS: the finite check supplies only axis law and E/T symmetry as premises
+PASS: quotient/lift premises remain distinct from readout/calibration premises
+PASS: same-source readout is not silently inserted
+PASS: connected typing and unit calibration are not silently inserted
+
+PART 4: reachability
+PASS: current surface reaches missing witness selection
+PASS: current surface does not reach radial bias
+PASS: fiber-uniform quotient theorem reaches radial bias
+PASS: fiber-uniform quotient theorem selects a conditional endpoint witness
+PASS: fiber-uniform quotient theorem alone does not claim physical kappa zero
+PASS: adding same-source readout and typing would reach physical kappa zero
+PASS: reachability graph has no endpoint-value input node
+
+PART 5: document boundary
+PASS: note contains marker: Claim-strength label: exact support theorem on a stated quotient-lift premise; no current endpoint closure
+PASS: note contains marker: uniform conditional law on each quotient fiber
+PASS: note contains marker: the radial 1:2 or 2:1 law is a consequence
+PASS: note contains marker: It is not a separate numerical input once those clauses are independently proven
+PASS: note contains marker: The note removes one apparent independent burden
+PASS: note contains marker: S3 endpoint quotient-lift theorem
+PASS: note contains marker: It proposes no new framework primitive
+PASS: banned marker absent: old output path
+PASS: banned marker absent: branch-local state path
+PASS: banned marker absent: claim-status certificate
+PASS: banned marker absent: audit clean prediction
+PASS: banned marker absent: target effective status
+PASS: banned marker absent: retained status leakage
+PASS: banned marker absent: closed predecessor block dependency
+PASS: banned marker absent: closed predecessor block dependency
+
+TOTAL: PASS=103, FAIL=0
+VERDICT: under a physical four-to-three quotient plus a fiber-uniform E/T-symmetric lift, the radial one-to-two law follows; the physical quotient-lift theorem remains open.
+
+----- stderr -----
+

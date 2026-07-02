@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/record_occurrence_thinned_iid_frequency_bridge_2026_07_01.py
+runner_sha256: ef852be4362d794b5a22a3669b38d1a61126640d5686f534ed2a93fce0d3b924
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Record occurrence thinned-IID frequency bridge
+TRACE: bounded_sparse_frequency_normal_form
+
+PART 1: one-attempt thinned kernel
+PASS: q(bot)=3/4
+PASS: q(0)=3/20
+PASS: q(1)=1/10
+PASS: kernel normalizes
+PASS: activation recovered from non-bot mass
+PASS: conditional p recovered from q/a
+PASS: bot mass is explicit no-record mass
+
+PART 2: exact finite-history enumeration
+PASS: all histories enumerated
+PASS: history weights normalize
+PASS: E[F_bot]=1-a
+PASS: E[F_0]=a p0
+PASS: E[F_1]=a p1
+PASS: E[M/N]=a
+PASS: Var(F_bot)=a(1-a)/N
+PASS: Var(F_0)=q0(1-q0)/N
+PASS: Var(F_1)=q1(1-q1)/N
+PASS: Var(M/N)=a(1-a)/N
+
+PART 3: multinomial and zero-record laws
+PASS: enumerated count probability matches multinomial
+PASS: P(M=0)=(1-a)^N
+PASS: record-count law is binomial
+
+PART 4: recorded-only conditional frequencies
+PASS: E[G_0 | M=1]=p0
+PASS: Var(G_0 | M=1)=p0(1-p0)/m
+PASS: E[G_0 | M=2]=p0
+PASS: Var(G_0 | M=2)=p0(1-p0)/m
+PASS: E[G_0 | M=3]=p0
+PASS: Var(G_0 | M=3)=p0(1-p0)/m
+PASS: E[G_0 | M=4]=p0
+PASS: Var(G_0 | M=4)=p0(1-p0)/m
+PASS: recorded-only statistic is intentionally undefined at M=0
+
+PART 5: special cases
+PASS: a=1 has no bot mass
+PASS: a=1 reduces to p on A
+PASS: a=0 has only bot mass
+PASS: a=0 always gives zero records
+
+PART 6: note boundary
+PASS: note includes ## Claim
+PASS: note includes ## Finite Theorem
+PASS: note includes ## Explicit Witness
+PASS: note includes ## Boundary
+PASS: note includes ## Non-Claims
+PASS: note includes ## No-Go Discipline
+PASS: note includes ## Verification
+PASS: note contains marker: supplied occurrence kernel
+PASS: note contains marker: supplied IID reset/preparation protocol
+PASS: note contains marker: does not derive a, p
+PASS: note contains marker: Rows that count only recorded tokens
+PASS: note contains marker: sparse records do not force a total-record model
+PASS: note contains marker: This is not an audit verdict
+PASS: open supplier retained in boundary: the record-writing instrument or trigger
+PASS: open supplier retained in boundary: the activation law a
+PASS: open supplier retained in boundary: the conditional selection law p
+PASS: open supplier retained in boundary: IID reset/preparation between repeated attempts
+PASS: open supplier retained in boundary: clock/rate normalization
+PASS: open supplier retained in boundary: local objectivity or redundant broadcast
+PASS: open supplier retained in boundary: the physical observable/context being sampled
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+PASS: banned marker absent from note
+
+TOTAL: PASS=65 FAIL=0
+RESULT: PASS -- supplied sparse activation plus IID reset gives thinned multinomial histories; occurrence and reset suppliers remain explicit.
+
+----- stderr -----
+

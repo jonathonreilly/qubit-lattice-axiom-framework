@@ -202,7 +202,7 @@ def part2_obstruction_and_anchor() -> BridgeSetup:
         require_text(
             TENSOR_NOTE,
             (
-                "carrier columns are exact",
+                "polynomial-identity columns",
                 "[[1,0],[delta_A1(r),0]]",
                 "[[0,1],[0,delta_A1(r)]]",
             ),

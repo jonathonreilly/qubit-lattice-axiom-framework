@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 213 |
-| **retained_bounded** | 945 |
+| **retained_bounded** | 946 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1596 |
+| unaudited | 1595 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1377 |
+| `audited_clean` | 1378 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1922 |
+| `unaudited` | 1921 |
 
 | claim_type | count |
 |---|---:|
@@ -936,6 +936,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_two_stage_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `minimal_absorbing_horizon_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_bidirectional_trapping_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -13370,6 +13371,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the retained 2D family, the stage-2 broad surrogate built from the stage-1 sourced response reproduces the stage-1 surrogate rows at printed precision across the tested topN values.  _(class `C`)_
 - **chain closes:** True — The provided runner constructs the 2D lattice, propagates the probe, builds stage-1 and stage-2 compressed surrogate source profiles, and computes the displayed ratios, TV distances, captures, spreads, and overlap. The bounded conclusion is limited to the frozen family and printed-precision two-stage stability.
 - **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
+- **auditor confidence:** high
+
+### `microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09`
+
+- **Note:** [`MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md`](../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Canonical xi = 1 one-step norm-convergent BCH/Magnus/small-step expansion methods using the landed per-site norm budget do not establish quasilocality of H = -log(T)/a_tau; spectral, resummed, differently factorized, and other non-one-step routes remain out of scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T063615Z-efe74dab-microcausality_exact_h_e`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For X = s sigma_x and Y = s sigma_z, tr(e^X e^Y)/2 = cosh^2(s) gives nearest BCH singularity |s*| = 1.80117, while the canonical matter floor 2.3 and full budget 78 exceed that radius and the ln 2 sufficient ball, so the one-step norm-convergent expansion route does not close at xi = 1.  _(class `C`)_
+- **chain closes:** True — The retained-bounded bridge note supplies the canonical budget J_max = |m| + 78, and the registered kinetic-isotropy primitive supplies the xi = 1 surface. The Pauli-pair radius, canonical-scale divergence, and budget ratios are computed from explicit matrices/exact arithmetic, and the conclusion is narrowed to the norm-convergent one-step route only.
+- **rationale:** The runner source does substantive computation rather than just printing expected PASS lines: it derives the Pauli trace identity, computes Taylor/root-test behavior, checks divergence at the cited canonical scales, and tests an explicit layered-chain method/object separation. Independent arithmetic reproduces |s*| = 1.8011719796, 2.3/|s*| = 1.27695, 78/|s*| = 43.305, and 78/ln2 = 112.53. The no-go discipline passes for the narrowed route obstruction because the note explicitly leaves spectral, resummed, alternative-factorization, and interacting/gauged extensions open instead of claiming a global exact-H no-go.
 - **auditor confidence:** high
 
 ### `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 301,
     "high": 281,
-    "leaf": 562,
+    "leaf": 561,
     "medium": 454
   },
   "cycle_break_target_count": 9,
@@ -17744,31 +17744,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "kinetic_isotropy_primitive"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.087,
-      "note_path": "docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/microcausality_exact_h_expansion_route_obstruction_2026_06_09.py",
-      "transitive_descendants": 16
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17917,6 +17892,33 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/staggered_dirac_local_density_readout_bridge_2026_06_17.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
+        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
+        "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py",
       "transitive_descendants": 16
     },
     {
@@ -31747,33 +31749,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
       "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20",
-        "busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05",
-        "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py",
-      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -48147,6 +48122,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 69,
-  "total_pending": 1598
+  "ready_count": 68,
+  "total_pending": 1597
 }

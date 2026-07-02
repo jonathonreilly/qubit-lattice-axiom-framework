@@ -76,6 +76,32 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-02 -- Reading-note retirement, first tranche (no rulings, only
+  clarity).** Owner rule of 2026-07-02: the only owner-approved premise
+  surfaces are axiom updates, framework primitives, and Tier-A admissions;
+  reading notes may not carry interpretive/premise weight. Dispositions for
+  the 2026-07-02 foundation entry's "Reading notes (citable)":
+  (1) the possibility-side "possibility relabelings" phrase is carried by the
+  Qubit distinction clause (see that entry) and is no longer load-bearing;
+  (2) statehood/admissibility inheritance, per-site record uniqueness, the
+  empty-state clause, and the "supplied" disambiguation are derived as axiom-
+  text theorems in
+  `docs/READING_NOTE_CLAIMS_ARE_AXIOM_TEXT_THEOREMS_BOUNDED_NOTE_2026-07-02.md`
+  (runner-backed; audit lane owns status) and are no longer citable as notes;
+  (3) the audit procedure items (certificate demand, covariance transport,
+  decidability without running the law, finite/local evaluability) are
+  relocated to `docs/ai_methodology/skills/audit-loop/SKILL.md` as process
+  content with no premise weight;
+  (4) REMAINING citable pending the second promotion batch (panel-honed
+  sentences, owner approval): the "answer" typing note, the "condition as
+  predicate on states" note, and the law-side extensional/naturality clause
+  (lattice-motion closure for law domains). These three are the only reading
+  notes still load-bearing; new work must not add reading notes.
+  The original foundation entry text above is preserved unedited as
+  historical record; this entry supersedes its reading-note paragraph's
+  citability as described. No axiom sentence is added or amended by this
+  entry.
+
 - **2026-07-02 -- Qubit distinction clause: possibility distinctions are
   structural.** One sentence is added to the Qubit axiom in
   `docs/MINIMAL_AXIOMS_2026-06-29.md`, joined to the no-privilege sentence as

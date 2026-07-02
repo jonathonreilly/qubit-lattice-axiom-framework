@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_records_objectivity_conditional_note_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
         "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
         "color_link_sym2_endpoint_projection_2026-06-05",
         "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
         "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
         "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
         "g2_bridge_c3_current_cannot_beat_gap_a_no_go_note_2026-06-06",
-        "koide_records_objectivity_conditional_note_2026-05-31"
+        "koide_records_objectivity_conditional_note_2026-05-31",
+        "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "68be3d09827278c88c84e0243a53530190bda19dfe8d016520841b2e72ec55a4",
+      "note_hash": "da60c13ae6603d3293ae9ea01e4080b4f1c573846295c77704f3a8e01651e153",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -53470,11 +53470,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05"
+      "to": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
     },
     {
       "from": "repo.front_door_status",
-      "to": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
+      "to": "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,8 +103180,8 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
         "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
+        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
         "single_axiom_hilbert_note",
         "lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22",
         "pre_record_reference_state_tracial_derivation_note_2026-05-20",
@@ -103190,7 +103190,7 @@
         "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8c4f5d3264fae8a31d38a3f9136704a259ec80650bf00ca935b4501eba59109e",
+      "note_hash": "d824e72446769ef8bd1ce0f78478271c3199107b81146dc8b7b802a43d36cb2b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -1,8 +1,15 @@
 # Flavor Record Readout Fixes Form Not Weight
 
 **Date:** 2026-06-02
-**Claim type:** open_gate.
-**Runner:** `scripts/flavor_record_readout_form_not_weight_2026_06_02.py`.
+**Type:** open_gate
+**Claim type:** open_gate
+**Status authority:** independent audit lane only. This source note sets source
+claim metadata only; it does not set, predict, or edit any audit outcome.
+**Primary runner:** [`scripts/flavor_record_readout_form_not_weight_2026_06_02.py`](../scripts/flavor_record_readout_form_not_weight_2026_06_02.py)
+**Runner cache:** [`logs/runner-cache/flavor_record_readout_form_not_weight_2026_06_02.txt`](../logs/runner-cache/flavor_record_readout_form_not_weight_2026_06_02.txt)
+**No-promotion statement:** This source note creates no promotion, no registry
+edit, no audit verdict, and no downstream status change; status remains owned
+by the independent audit lane.
 
 This source note translates the earlier qubit-to-record proposal into the
 approved Lattice, Quantum, Record framework. It does not add or rename an
@@ -59,9 +66,16 @@ two consistent models:
   `r = 1/2`.
 
 Thus this row's open-looking "form not weight" residual is the same explicit
-occupancy/slot-degree atom, not a second independent Record gate. The branch
-runner checks this downstream alignment directly and still makes no adoption or
+occupancy/slot-degree atom, not a second independent Record gate. The runner
+checks this downstream alignment directly and still makes no adoption or
 status claim.
+
+## Dependencies
+
+- [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+  (downstream occupancy/slot-degree boundary; bounded support).
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  (Record axiom boundary and scope reference).
 
 ## No-Go Discipline Gate
 

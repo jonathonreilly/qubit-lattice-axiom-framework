@@ -83,9 +83,9 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   nearest-neighbor locality substrate. Qubit is the domain of local possibilities
   with full one-site algebraic presentation `M_2(C)`, with `Cl(3,0)` only as
   equivalent notation. Admissibility is one
-  fixed finite-neighborhood rule, the same at every lattice translate, under
-  which a local possibility is available at a site exactly when the rule admits
-  it there, consistent with local records.
+  fixed finite-neighborhood rule, the same at every lattice translate; for
+  each site, the available possibilities are determined by, and vary with,
+  the nearest-neighbor conditions, consistent with local records.
   A site need not carry a record; when present, a record locks exactly one
   local possibility from the subset available at that site under
   Admissibility, with scalar-valued finite readout additive over finite

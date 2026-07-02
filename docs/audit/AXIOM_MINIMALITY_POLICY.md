@@ -76,6 +76,19 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-02 -- Admissibility clarification: availability varies with the
+  neighbors.** The Admissibility clause now reads: "For each site, the
+  available possibilities are determined by, and vary with, the
+  nearest-neighbor conditions" (owner-approved wording update, 2026-07-02;
+  source file edited in place). "Vary with" is existential, not
+  per-neighborhood: availability is not constant across nearest-neighbor
+  conditions; under most conditions the full domain may remain available. It
+  excludes the vacuous rule (full domain under every condition) and the
+  neighbor-independent constant rule; it names no operator, kinetic class,
+  selector, or carrier, and downstream consequences remain theorem content.
+  The premise-hash guard invalidates prior direct `minimal_axioms` audits;
+  the independent audit lane re-audits.
+
 - **2026-06-29 -- Foundation reset: site possibility and local admissibility.**
   The framework axiom set is updated to the four named axioms Lattice, Qubit,
   Admissibility, and Record, with source `docs/MINIMAL_AXIOMS_2026-06-29.md`
@@ -86,12 +99,12 @@ Recorded explicitly approved axiom updates:
     carries physical locality; Qubit names the domain of local possibilities
     and its full one-site algebraic presentation; Admissibility names one fixed
     nearest-neighbor rule, covariant under lattice translations and proper
-    cubic rotations, by which nearest-neighbor conditions determine the
-    available subset of possibilities for each site; a site need not carry a
-    record, and when present a record locks exactly one local possibility from
-    the subset available at that site under Admissibility; only records are
-    readable, and scalar readout is additive over finite pairwise-disjoint record
-    collections.
+    cubic rotations, by which the available possibilities are determined by,
+    and vary with, the nearest-neighbor conditions at each site; a site need
+    not carry a record, and when present a record locks exactly one local
+    possibility from the subset available at that site under Admissibility;
+    only records are readable, and scalar readout is additive over finite
+    pairwise-disjoint record collections.
   - **No laundering.** Admissibility does not choose the readout context, select
     a measurement basis, provide an occurrence rule, define probabilities,
     assign weights, normalize readouts, specify an update law, provide

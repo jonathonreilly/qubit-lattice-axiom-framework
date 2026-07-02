@@ -102,7 +102,8 @@ The four-axiom set is complete enough for the minimal ontology reset and for
 premise policing of record availability:
 
 - unrecorded sites carry local possibility;
-- nearest-neighbor conditions determine the available subset of possibilities
+- the available possibilities are determined by, and vary with, the
+  nearest-neighbor conditions
   at each site;
 - a record can lock only an available local possibility;
 - finite scalar record readout is additive over disjoint record collections.

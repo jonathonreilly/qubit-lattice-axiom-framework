@@ -122,6 +122,9 @@ PASS=10 FAIL=0
 - [`KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`](KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md)
   — the unaudited APS `η=2/9` route this note independently reproduces and
   reframes (context).
-- [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md),
-  [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
+- [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
   — the blocked Berry/radian-bridge route this one is distinct from (context).
+- [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
+  — formal-only `Delta_d = Q_d/d` identity (context); the repaired note no
+  longer carries the radian-bridge route, which lives in the explicit
+  radian-bridge no-go notes.

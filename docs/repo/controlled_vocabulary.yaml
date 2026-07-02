@@ -24,7 +24,7 @@ layers:
     governs: "Single-page A-Z index of every repo-canonical process term."
   - id: 1_framework_substantive
     source_of_truth:
-      - docs/MINIMAL_AXIOMS_2026-06-05.md
+      - docs/MINIMAL_AXIOMS_2026-06-29.md
       - docs/audit/data/axiom_premise_nodes.json
     governs: "Framework axioms and explicitly approved primitive premise nodes. Out of scope for this vocabulary."
   - id: 2_external_paper_text
@@ -195,7 +195,7 @@ term_families:
       "(B)":
         definition: "Cross-note input verification (reads value from another note)."
       "(C)":
-        definition: "First-principles compute from the approved premise surface (Lattice, Quantum, Record, plus any explicitly approved primitive when cited) producing a number not present in any input."
+        definition: "First-principles compute from the approved premise surface (Lattice, Qubit, Admissibility, Record, plus any explicitly approved primitive when cited) producing a number not present in any input."
       "(D)":
         definition: "External comparator check against PDG / lattice QCD / observation."
       "(E)":
@@ -440,7 +440,7 @@ scope:
     - "Filename conventions"
     - "Forbidden patterns"
   out_of_scope:
-    - "Framework axioms and approved primitive premise nodes (live in MINIMAL_AXIOMS_2026-06-05.md and docs/audit/data/axiom_premise_nodes.json)"
+    - "Framework axioms and approved primitive premise nodes (live in MINIMAL_AXIOMS_2026-06-29.md and docs/audit/data/axiom_premise_nodes.json)"
     - "Physics quantities (live in ASSUMPTION_DERIVATION_LEDGER / per-claim notes)"
     - "Topic-specific physics wording (lives in topic notes; not vocabulary)"
 

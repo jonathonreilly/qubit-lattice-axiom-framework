@@ -12,7 +12,7 @@ target_blocker_text: "Pi(1) - Pi(0) = S leaves the inter-sector coefficient free
 source_of_blocker_text: audit_ledger
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "owner adjudication of the no-privilege relabeling-closure reading (READING-X vs READING-P) — this is the retired w-supplier rung's replacement; if READING-X is adjudicated, queue the CTX-match block (instantiate the EW color two-cell context in the readout-context supplier family; kappa_EW = 1 lands as a conditional theorem); if READING-P is adjudicated, the enabling change is a policy-section-6 standing-promotion decision (owner governance, not a science block). Do NOT open a kappa_EW-value PR before CTX-match."
+next_trace_action: "SUPERSEDED same-day by a five-seat blind physicist panel (unanimous R2 = presentation-closed reading, high confidence, verdict 'not ambiguous'): the fork's READING-X leg is textually dead — do not build on it; the reading-adjudication route is closed by the owner rule 'no rulings, only clarity'. Live next actions: (1) owner selects the R2 clarity sentence for promotion into Qubit text (candidates in the panel record; promotion proposal to carry provenance); (2) live w route = CTX-match + scale-absorption: T3 shows w enters only the overall scale at flow-selected states, and overall scale is the scale-reference primitive's slot — queue as next science block; (3) otherwise w remains the W_readout_coupling gate (registered-number primitive candidate), never a ruling."
 ```
 
 Secondary target: `flavor_missing_axiom_carrier_measure_note_2026-05-30`

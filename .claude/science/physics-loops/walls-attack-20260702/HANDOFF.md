@@ -72,9 +72,30 @@ touched. Repo automation lock unavailable on this machine (script hardcodes
 
 ## Next actions after this block
 
-1. Hand the reading adjudication to the owner (it replaces backlog B1's
-   registration draft: derivation-or-enabling-change delivered instead).
-2. CTX-match block (gated on READING-X adjudication) — see TRACE_GATE
-   next_trace_action.
-3. No further w-value work before the adjudication; other campaign lanes
-   (action bifurcation, moduli word-supplier) are unaffected.
+PANEL UPDATE (2026-07-02, post-PR): a five-seat blind physicist panel ruled
+unanimously (high confidence, "not ambiguous") that the no-privilege sentence
+plus the section-6 naturality test read as R2 / presentation-closed — the
+READING-P leg of this block's fork. Convergent anchors: the lattice-motions
+parallel (named structure-preserving group, proper rotations only); READING-X
+would make the sentence itself name a weighting (u=v), contradicting the
+entry's certification that the added sentences name no weighting or value; a
+set-level closure forces readout constant per record (pure counting), gutting
+content-determination; the recorded round-3 entailment (unregistered-frame
+exclusion) and the C3 "two namings of the same two cells" ratification are the
+R2 boundary verbatim. Consequences:
+
+1. The fork's READING-X leg is textually dead; w = 1 is NOT derivable from
+   current axiom intent. The parent kappa no-go's narrow residual stands,
+   sharpened: the new sentences supply frame discipline and
+   content-determination, not weighting.
+2. Owner rule "no rulings, only clarity" (backlog B13): no reading is
+   adjudicated; instead one clarity sentence is promoted into Qubit text
+   (owner selects wording; promotion proposal carries the panel provenance;
+   premise-hash re-audit follows).
+3. Live w route: CTX-match + scale-absorption — T3's degeneration theorem
+   (w enters only overall scale at flow-selected states) composes with the
+   scale-reference primitive owning the overall-scale slot; a future block can
+   attack "w dissolves into scale-reference at flow-selected states" with no
+   reading dependence. Fallback: w = W_readout_coupling gate
+   (registered-number primitive), per the no-permanent-walls standard.
+4. Other campaign lanes (action bifurcation, moduli word-supplier) unaffected.

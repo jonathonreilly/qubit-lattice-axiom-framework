@@ -36,3 +36,23 @@ surface are framework-specific; V4 non-trivial; V5 first cycle of campaign).
 No negative claim is shipped (conditional selection + discriminator), so
 N1–N8 does not gate this block; the honesty-witness section covers the
 self-steelman anyway.
+
+## block02 — supervisor line-by-line review (2026-07-02, pre-PR)
+
+1. **F1 (style, fixed).** Worker over-applied the hedge instruction: the
+   "witness-level decomposition" clause was prefixed to all six T4 sentences,
+   burying content. Restructured T4 to state the hedge once + four clean
+   clauses. No mathematical change.
+2. **F2 (verified).** All four kappa-wall quotes grep-verified verbatim at
+   source (2/1/1 hits). Block01 quotes are from the sibling note on this
+   branch stack — dependency class disclosed in Load-Bearing Inputs.
+3. **F3 (verified).** Runner re-run independently: TOTAL PASS=29 FAIL=0;
+   output cache regenerated from supervisor run. T2 witness algebra checked
+   by hand (I_w additivity for w=1,2 trivially exact; frame unchanged);
+   T3 reuses block01's verified Hadamard identities.
+4. **F4 (scope).** Note claims no kappa value, no supplier derivation, walls
+   not identical — consistent with the kappa note's scope ("baseline alone")
+   and with N-gate avoidance (no repo-level negative claim; T2/T3 are
+   witness-level facts about constructed objects).
+
+Disposition: **pass-after-repair** (style-only repair).

@@ -16,3 +16,10 @@ availability, review landability, blast radius, independence.
 - V3: audit lane could NOT already complete this from standard machinery alone: the separation depends on the framework's registered complement-reading equivalence (ACPHILAMBDA HW complement note) and the hw=1 circulant surface — framework-specific structure, not textbook.
 - V4: non-trivial: generic-vs-pointwise separation with hostile witnesses is a real structural result; not a definition restatement.
 - V5: not a variant of a landed cycle: no prior campaign cycle exists (block01); closest repo neighbor is the corner-measure negative note (2026-06-12), which is a NON-selection result — this block adds the separation structure that note lacks.
+
+## Value-gate record (V1–V5) — block02 (pre-PR)
+- V1: obstruction quoted: kappa_EW claim_scope ("...do not supply a weighting/readout-bridge rule fixing kappa_EW...") + block01 residual item 1 (no-imported-frame). Block02 does not close either; it decomposes the supplier into independent components with witnesses (upstream_support).
+- V2: new content = the C1/C2 decomposition with independence witnesses (C1⇏C2, C2⇏C1) and the exact instance-mapping of both walls onto the components; none of this exists in either parent note.
+- V3: not completable from standard machinery: the decomposition rests on block01's partition-provenance separation and the kappa note's specific escape clauses — framework-specific structure.
+- V4: non-trivial: component independence is established by explicit witnesses, not definition-restating.
+- V5: distinct from block01 (separation among scorings) — this block is a cross-wall supplier decomposition; closest neighbor is block01 itself, distinction stated.

@@ -30,3 +30,23 @@ honesty witnesses added to the runner (PASS total 36 → 39). See
 REVIEW_HISTORY.md.
 
 Independent audit remains required before any effective status.
+
+# Claim status certificate — block02 (supplied-readout-context decomposition)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: supplier-shape decomposition conditional on the quoted wall texts; component independence established at witness level only
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite witnesses; cites an unmerged stacked sibling (block01 note) — dependency_not_retained expected on first audit"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+Dependency classes: kappa wall note (audited_clean / retained_no_go); block01
+note (stacked branch-local, unaudited — dependency_not_retained bookkeeping
+expected per SKILL); minimal axioms node (approved). No observed values, no
+fitted selectors, no literature, no new axioms/primitives.

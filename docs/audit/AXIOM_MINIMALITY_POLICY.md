@@ -82,16 +82,30 @@ Recorded explicitly approved axiom updates:
   Admissibility clarification below so the premise-hash re-audit waves
   coincide). First, the Record axiom's readability clause gains one sentence
   closing the readout-function gap in place: "A readout value is determined
-  by record content alone." (owner wording; additivity unchanged). Second, one totality sentence
+  by record content alone." (owner wording; additivity unchanged). Second,
+  the Qubit axiom gains one individuation sentence generalizing the
+  equivalent-presentation quotient beyond the named Cl(3,0) pair: "No
+  presentation, and no basis or frame within one, is primitive; possibilities
+  related by presentation equivalence are the same possibility." Third, one totality sentence
   is added to the Qualification section: "A rule offered as a law must be
   well-defined at every state admissible under Admissibility throughout its
   declared domain; the domain must be declared as registered structure, not
   by enumerating states, and a prescription defined only at particular states
-  is pointwise content, not a law." Wording validated by a seven-seat blind panel
-  (operator algebras, quantum foundations, lattice gauge, philosophy of
-  physics, GR/cosmology, condensed matter, experimental metrology; verdicts:
-  S1 7x yes-with-caveat, S2 5x yes-with-caveat 2x contestable, 0 rejections;
-  all caveats folded into the final wording above). Reading notes: supplied
+  is pointwise content, not a law." Wording validated by three blind panel
+  rounds (round 1: seven seats — operator algebras, quantum foundations,
+  lattice gauge, philosophy of physics, GR/cosmology, condensed matter,
+  experimental metrology — on the discipline clauses: S1 7x yes-with-caveat,
+  S2 5x yes-with-caveat 2x contestable, 0 rejections; round 2: five seats on
+  the owner's Record sentence in partial context: 4x works-with-qualifier, 1x
+  fails via the descriptive-reporting seam; round 3: four seats on the same
+  sentence in FULL four-axiom context, adjudicating whether the axiom set
+  already individuates content structurally: 4x sufficient-but-ambiguous,
+  unanimous that the exclusion of unregistered-frame readouts is JOINTLY
+  entailed by the Record sentence, the Qubit presentation clause, and the
+  Qualification supply paragraph — no readout-supply clause needed — with
+  the single ambiguity being the Cl(3,0)-pair scoping of "adds no further
+  primitive structure," closed by the Qubit individuation sentence above).
+  Reading notes: supplied
   structure is pinned by the Qualification's first paragraph (the four
   axioms, approved primitives, explicit admissions, approved registrations),
   with the realized state entering through the registered pointwise-interface
@@ -107,7 +121,20 @@ Recorded explicitly approved axiom updates:
   as a gap or phase condition, never an enumeration of the states where the
   rule happens to hold); totality binds the rule's verdicts, not auxiliary
   presentations; conditional rules and pointwise evaluation under the
-  realized-state primitive remain admissible. The clauses name
+  realized-state primitive remain admissible. Panel-derived reading notes on
+  content individuation: record content is the locked available possibility
+  as framework-individuated (structurally, per the Qubit individuation
+  sentence) — under it, readable quantities are exactly the invariants of
+  supplied-plus-registered structure, and registering structure monotonically
+  enlarges the readable class (scheme-relativity without per-readout
+  registration); descriptive reporting outside premise-use is not policed by
+  the axioms and binds at first premise-use via the supply paragraph; the
+  additivity clause together with per-record content-determination excludes
+  relational scalar readouts (invariant relational quantities remain derived
+  objects); whether the internal orientation/pseudoscalar sign is supplied
+  via proper-rotation covariance (chirality readouts) is the standing
+  downstream chirality-import question and is explicitly NOT decided by this
+  update. The clauses name
   no operator, basis, weighting, selector, kinetic class, or value; they add
   no axiom and no primitive; downstream consequences remain theorem content
   subject to independent audit. In the same update,

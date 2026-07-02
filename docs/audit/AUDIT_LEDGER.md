@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 199 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 889 |
+| **retained_bounded** | 890 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1701 |
+| unaudited | 1700 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1292 |
+| `audited_clean` | 1293 |
 | `audited_conditional` | 34 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2027 |
+| `unaudited` | 2026 |
 
 | claim_type | count |
 |---|---:|
@@ -1079,6 +1079,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_markov_generator_embeddability_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -15428,6 +15429,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the stated L=3/L=4/L=5 events, occupancies, seeds, depth choices, and fixed 300-permutation sampled-null protocol, the three-point min-gain ledger and sampled-null gap series have the displayed values.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite sparse Fock systems, evolves them with expm_multiply, computes determinant phases, prefix statistics, sampled-null p95 values, min-gains, and medians, and its cached output matches the source note. The closure is only for the explicitly scoped finite diagnostic, not an exhaustive permutation null, asymptotic law, or physical U(1) gauge-field claim.
 - **rationale:** The load-bearing numbers are computed directly by the provided runner rather than imported from the cited authority or hard-coded as a print-only result. The one-hop authority is retained_bounded, which is retained-grade under the rubric, and the source note explicitly confines load-bearing content to the runner-defined finite objects. The negative conclusion is scoped to the displayed finite period series and does not overclaim an all-permutation null, asymptotic behavior, L>=6 behavior, or a physical gauge interpretation.
+- **auditor confidence:** high
+
+### `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`
+
+- **Note:** [`RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md`](../../docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite S + E_1..E_n qubit-model theorem: given the quantum-Darwinism record convention and the explicit controlled-copy/fresh-fragment hypotheses, pointer conservation is necessary for all-state pointer persistence and the displayed local coupling forms redundant objective pointer records.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T000527Z-ba4c2a70-record_formation_pointer`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Under the stated quantum-Darwinism record convention, persistent objective pointer record formation requires pointer-non-demolition [H_int, Pi_S] = 0, while the explicit nonzero controlled-copy Hamiltonian at t = pi/(4g) with fresh/idle fragments is a sufficient finite construction.  _(class `C`)_
+- **chain closes:** True — The claim is correctly scoped to the explicit finite model and named record bridge rather than deriving record dynamics from the axioms. Within that bounded scope, the Heisenberg commutator argument and the dense-operator mutual-information computations support the necessity, sufficiency, counterexample, locality, and transfer-class statements.
+- **rationale:** The runner source actually constructs the finite qubit operators, unitaries, partial traces, pointer-dephased mutual information, redundancy counts, random-Hamiltonian witnesses, and counterexamples; it is not merely printing the claimed PASS total. The source note keeps the quantum-Darwinism record bridge, carrier choice, controlled-copy form, and fresh/idle persistence assumptions inside the bounded claim scope, and explicitly excludes dynamics, coupling magnitude, beta, continuum, and OS-record-formation overclaims. The cited minimal axioms are accepted premises, and the retained_bounded companion is contextual rather than an unclosed load-bearing bridge.
 - **auditor confidence:** high
 
 ### `record_function_finite_sector_algebra_2026-06-05`

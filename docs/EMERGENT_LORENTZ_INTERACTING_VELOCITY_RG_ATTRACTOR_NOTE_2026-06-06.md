@@ -29,6 +29,22 @@ IR-attractive, the `O_h` spatial split is one scalar, and canonical time
 reduces the Collins gate to one conditional scalar. No new axiom, primitive,
 Tier-A admission, or audit status change is introduced.
 
+## 2026-06-18 partial source-side support: spatial-BZ channel only
+
+[`EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md`](EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md)
+proves one narrow structural part of residual D directly on the
+continuous-time / spatial-`Z^3` surface: the central-difference spatial
+artifact begins as `sum_i k_i^4`; its quadratic projection has zero time
+component; and the `O_h` orbit average leaves one spatial scalar channel.
+
+This reduces the supplied "spatial-only power-divergent mixing" phrase to an
+exact source-side channel theorem plus a still-open coefficient. It does not
+derive the interacting one-loop velocity RG, the physical coefficient
+multiplying the spatial channel, the fixed-point anomalous dimension, or
+sufficiency against Lorentz-violation bounds. The parent row therefore remains
+conditional until those remaining bridges are supplied and independently
+audited.
+
 ## 2026-06-09 surface-scope update
 
 Residual D below (the power-divergent UV regeneration of the marginal anisotropy)
@@ -233,3 +249,18 @@ spatial-only power-divergent mixing theorem, and the physical anomalous
 dimension/sufficiency bound. Without those, this row remains conditional
 support only. This repair introduces no custodial symmetry, observed bound,
 new axiom, or status promotion.
+
+## 2026-06-18 velocity-RG exchange-matrix support
+
+[`EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md`](EMERGENT_LORENTZ_VELOCITY_RG_EXCHANGE_MATRIX_EXACT_SUPPORT_NOTE_2026-06-18.md)
+supplies an exact exchange-matrix theorem for the algebraic one-loop
+velocity-flow form: given positive mutual-drag coefficients `a,b`, the
+common-speed line is fixed, `b v_F + a v_B` is invariant, and the
+speed-difference mode has eigenvalue `-(a+b)`.
+
+This retires the algebraic exchange-matrix step in the supplied RG packet. It
+does not derive the physical one-loop coefficients from framework
+interactions, the spatial-only power-divergent coefficient, the physical
+anomalous dimension, or LV-bound sufficiency. No audit status changes here;
+the row remains conditional support / open gate until those physical bridges
+are supplied and independently audited.

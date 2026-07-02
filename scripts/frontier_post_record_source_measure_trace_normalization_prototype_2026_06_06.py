@@ -20,8 +20,8 @@ FAIL = 0
 
 PROTOTYPE_LANES = {"source_measure_or_rn_bridge", "trace_normalization_reference"}
 EXPECTED_LANE_COUNTS = {
-    "source_measure_or_rn_bridge": 15,
-    "trace_normalization_reference": 6,
+    "source_measure_or_rn_bridge": 16,
+    "trace_normalization_reference": 10,
 }
 
 
@@ -127,7 +127,7 @@ def source_anchor_checks() -> None:
         "docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md",
         [
             "trace/RN expectation identity",
-            "Total source/trace prototype rows indexed here: `21`.",
+            "Total source/trace prototype rows indexed here: `26`.",
             "Does not identify the unique tracial state with the physical pre-record",
             "Does not derive a measure, prior, source law, Born law, or selector from",
         ],
@@ -135,8 +135,8 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`source_measure_or_rn_bridge` | 15",
-            "`trace_normalization_reference` | 6",
+            "`source_measure_or_rn_bridge` | 16",
+            "`trace_normalization_reference` | 10",
             "Normalized measure is not selected dial.",
             "Does not derive a prior, measure, source unit, trace state, or weight rule",
         ],
@@ -229,7 +229,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
     section("Source/trace row checks")
     before = digest(LEDGER)
     rows, counts = prototype_rows()
-    report("source/trace prototype row count is current snapshot", len(rows) == 21, str(len(rows)))
+    report("source/trace prototype row count is current snapshot", len(rows) == 26, str(len(rows)))
     report("source/trace lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))
     report("source/trace lane counts sum to row count", sum(counts.values()) == len(rows), str(counts))
 

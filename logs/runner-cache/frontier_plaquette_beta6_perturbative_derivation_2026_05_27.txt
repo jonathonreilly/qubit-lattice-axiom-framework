@@ -1,38 +1,52 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py
-runner_sha256: e1c48d3511bc2dac59d649382997a5133065f357121b78e0c63d7f3d79829451
+runner_sha256: 7fbf43985e4530dbba529fdcda2cbed88281a932b69be142db42ecdf2b0f559f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
-Plaquette beta=6 perturbative-derivation admitted-input diagnostic runner
+Plaquette beta=6 perturbative-derivation repaired diagnostic runner
 (Pattern A; companion-note paired)
 
 
 ==============================================================================
 T0: admitted-input runner-local diagnostic license
 ==============================================================================
-PASS: note records 2026-06-12 audit-named demotion
+PASS: note records 2026-06-12 source-boundary demotion
       demotion and admitted-input sections present
 PASS: note records admitted finite packet I_PT
-      packet names beta, coefficient list, MC comparator, and F2 comparator
-PASS: note licenses NSPT/beta/MC/F2 for this diagnostic only
-      all four admitted inputs carry the no-derivation/no-reuse license
+      packet names source-wired Wilson relation, beta specialization, coefficient list, MC comparator, and F2 comparator
+PASS: note records Wilson small-a matching as an explicit dependency
+      Wilson coefficient relation is dependency-wired, not re-admitted
+PASS: note licenses unresolved NSPT/MC/F2 inputs for this diagnostic only
+      remaining admitted inputs and alpha/beta boundaries carry no downstream license
 PASS: note excludes actual beta=6 surface and non-perturbative route claims
       diagnostic remains conditional and finite-route only
 PASS: note firewalls retained beta=6 surface claim after demotion
-      source repair remains demotion-only
+      source repair remains diagnostic-only after the Wilson edge is wired
 PASS: note explicitly elects admitted-input diagnostic option
-      auditor's second repair option is source-locked
+      source-boundary second option is source-locked
+PASS: note scopes row as non-downstream-licensed runner-local diagnostic only
+      source-boundary non-downstream-licensed scoping present; not a citeable bridge/derivation
+PASS: note records remaining promotion authorities as unsupplied/open
+      NSPT packet, surface/g_bare specialization, MC comparator, and F2 comparator remain open; row not promotable
+PASS: note keeps 0.5934 MC value fenced as comparator-only, never a proof input
+      MC value stays a fenced comparator, never a derivation/proof input
 PASS: note blocks downstream reuse of admitted beta=6 inputs
       downstream authority must come from a separate retained/effective-bounded row
 PASS: note keeps non-perturbative routes open
       finite perturbative route only
 
 ==============================================================================
-C1: admitted beta=6 Wilson-gauge constants
+C1: source-wired Wilson-normalization edge
 ==============================================================================
+PASS: Wilson theorem supplies beta = 2 N_c / g_bare^2
+      coefficient-matching identity is present in the retained-bounded source note
+PASS: Wilson theorem includes the beta=6 specialization only with supplied g_bare^2=1
+      specialization remains conditional on N_c=3 and g_bare^2=1
+PASS: Wilson theorem keeps action-surface and g_bare boundaries explicit
+      the dependency supplies coefficient matching, not physical surface selection
 PASS: supplied beta = 2 N_c / g_bare^2 = 6 at N_c=3, g_bare=1
       beta = 6.0
 PASS: g_bare^2 = 2 N_c / beta = 1 at beta=6
@@ -272,7 +286,7 @@ PASS: admitted MC comparator 0.5934 enters only as comparator (not derivation in
 T10: paired note exists with matching status authority disclaimer
 ==============================================================================
 PASS: note file PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md exists
-      length = 17921 chars
+      length = 23701 chars
 PASS: note declares Status authority: independent audit lane only
       audit-lane authority pattern present
 PASS: note declares no new axioms / no new primitives
@@ -280,7 +294,7 @@ PASS: note declares no new axioms / no new primitives
 PASS: note declares admitted MC comparator 0.5934 as comparator only
       admitted comparator pattern present
 
-TOTAL: PASS=32, FAIL=0
+TOTAL: PASS=39, FAIL=0
 
 ----- stderr -----
 

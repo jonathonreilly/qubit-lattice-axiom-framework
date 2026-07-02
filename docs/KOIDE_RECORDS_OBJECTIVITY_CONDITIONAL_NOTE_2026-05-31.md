@@ -9,7 +9,7 @@ inputs from the framework baseline and does not set an audit verdict.
 `scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py`
 with cache
 `logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt`
-(13/13 checks passed).
+(17/17 checks passed).
 
 ## 2026-06-12 audit firewall: conditional certificate only
 
@@ -159,3 +159,18 @@ It does not derive equal-block weighting from Record, does not derive the
 objectivity selector from dephasing, and does not turn normalized records into
 a physical measure. The usable repair path is separate source science: derive
 one or both selector inputs, or explicitly admit them outside this note.
+
+## 2026-06-17 restricted packet verifier
+
+The re-audit packet is now pinned by
+[`scripts/koide_records_objectivity_packet_verifier_2026_06_17.py`](../scripts/koide_records_objectivity_packet_verifier_2026_06_17.py),
+with cached output at
+[`logs/runner-cache/koide_records_objectivity_packet_verifier_2026_06_17.txt`](../logs/runner-cache/koide_records_objectivity_packet_verifier_2026_06_17.txt).
+
+The verifier checks this conditional note, the block-weight frontier,
+Frobenius isotype-weight no-go, readout demarcation, and pre-record tracial
+state boundary against their SHA-fresh runner caches. It also checks that this
+note's expected count matches the current `17/17` cache. This is source-side
+packaging only: it does not derive either selector input, does not approve an
+equal-block measure or objectivity principle, and does not set any audit
+status.

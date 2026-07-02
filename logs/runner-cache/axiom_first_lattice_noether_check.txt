@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_lattice_noether_check.py
-runner_sha256: 8fe3782f37aa4931a51711dd192d0cccee53ae6e50a6c7fcd5897852054e5c92
+runner_sha256: a2979bff0a5ea8a11ec7b59f48dee73e59a9b5eeb712bbc40c6c11825dc3542d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 0.47
 status: ok
 ----- stdout -----
 ========================================================================
@@ -19,6 +19,7 @@ status: ok
  2026-06-06 onsite-generator repair: E5 arbitrary-bilinear symbolic
  sign check; (5) scoped to onsite/internal infinitesimal generators
  2026-06-06 audit repair: + E5b direct U(1) local-envelope sign check
+ 2026-06-12 source-boundary repair: + E8 parent gate plain-text target
 ========================================================================
 
 --- Exhibit E1: U(1) phase symmetry condition [T_U1, M] = 0 ---
@@ -85,6 +86,15 @@ status: ok
   -> verifies Step 4b's exact two-step Ward identity (3a).
      It does not promote the support-only density (3).
 
+--- Exhibit E8: source dependency boundary for parent staggered gate ---
+  note file exists: PASS
+  parent gate remains named as registered context: PASS
+  parent gate is not a markdown one-hop dependency: PASS
+  retained substep-1 remains the markdown load-bearing dependency: PASS
+  registered route is explicitly non-current graph dependency: PASS
+  source says parent uses no markdown edge: PASS
+  E8 verdict: PASS
+
 ========================================================================
  SUMMARY
 ========================================================================
@@ -96,8 +106,9 @@ status: ok
    E5b (direct U(1) sign-visible local variation): PASS
    E6 (support-only (3) momentum-density divergence): PASS
    E7 (field-level two-step Ward identity): PASS
+   E8 (parent gate source-boundary check): PASS
 
-   PASSED: 8/8
+   PASSED: 9/9
 
  verdict: bounded lattice Noether theorem exhibited on the admitted
           staggered/Grassmann carrier; U(1) current closes via E5

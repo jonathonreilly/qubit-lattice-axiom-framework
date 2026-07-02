@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
-runner_sha256: 0dc4baa94511650cd0be21e5406e823323d19a17057787f85ea6a91abca20ce8
+runner_sha256: c0d75b959c94a606b36a3ebc6623db780b8e98b49d9f147587a5f2758403b712
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.14
+elapsed_sec: 1.42
 status: ok
 ----- stdout -----
 
@@ -18,7 +18,7 @@ PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md cont
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: outputs/post_record_stability_dynamics_selector_slice_2026_06_07.json
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 94
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 147
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stable settings into selected dials
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
 PASS scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py exists
@@ -33,36 +33,36 @@ PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: 
 ------------------------------------------------------------------------------
 Stability/dynamics subdivision checks
 ------------------------------------------------------------------------------
-PASS stability/dynamics selector row count is current snapshot :: 94
-PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_thermal_stability': 58, 'arrow_or_dynamics_bridge': 36})
-PASS expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 58, 'arrow_or_dynamics_bridge': 36})
+PASS stability/dynamics selector row count is current snapshot :: 147
+PASS sub-bucket counts sum to stability/dynamics count :: Counter({'flow_or_thermal_stability': 91, 'arrow_or_dynamics_bridge': 56})
+PASS expected sub-bucket counts match :: Counter({'flow_or_thermal_stability': 91, 'arrow_or_dynamics_bridge': 56})
 PASS representative row present in flow_or_thermal_stability :: flavor_r_half_is_the_records_flow_separatrix_2026-06-02
 PASS representative row present in arrow_or_dynamics_bridge :: a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1
-PASS audit ledger hash is unchanged :: 4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679
+PASS audit ledger hash is unchanged :: 2ac5344278b0e37ee6419068aa1e0588600fbc98d8ed55d56650fb4b0e555b83
 
 Stability/dynamics sub-bucket counts:
-  arrow_or_dynamics_bridge: 36
-  flow_or_thermal_stability: 58
+  arrow_or_dynamics_bridge: 56
+  flow_or_thermal_stability: 91
 
 [arrow_or_dynamics_bridge]
   a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
   axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26 | audited_clean | retained_bounded | bounded_theorem | docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md
   bell_inequality_derived_note | audited_clean | retained_bounded | bounded_theorem | docs/BELL_INEQUALITY_DERIVED_NOTE.md
-  cl3_taste_generation_theorem | unaudited | unaudited | bounded_theorem | docs/CL3_TASTE_GENERATION_THEOREM.md
+  cl3_taste_generation_theorem | audited_clean | retained_bounded | bounded_theorem | docs/CL3_TASTE_GENERATION_THEOREM.md
   color_su3_restricted_transport_profile_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/COLOR_SU3_RESTRICTED_TRANSPORT_PROFILE_2026-06-05.md
-  color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md
-  flavor_interacting_matter_build_note_2026-05-30 | audited_renaming | audited_renaming | bounded_theorem | docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md
-  g_newton_skeleton_selection_bounded_note_2026-05-10_gnewtong1 | unaudited | unaudited | bounded_theorem | docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md
+  color_su3_symmetric_base_bridge_from_record_invariance_bounded_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/COLOR_SU3_SYMMETRIC_BASE_BRIDGE_FROM_RECORD_INVARIANCE_BOUNDED_NOTE_2026-06-05.md
+  emergent_metric_conformal_class_from_records_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/EMERGENT_METRIC_CONFORMAL_CLASS_FROM_RECORDS_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-06.md
+  flavor_absolute_handedness_is_gauge_relative_is_physical_narrow_theorem_note_2026-06-08 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md
 
 [flow_or_thermal_stability]
+  acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md
+  acphilambda_r_eta_readout_identification_narrowing_bounded_theorem_note_2026-06-11 | audited_conditional | audited_conditional | bounded_theorem | docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md
   arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md
   beta6_plaquette_twocube_closed_form_bounded_note_2026-06-04 | unaudited | unaudited | bounded_theorem | docs/BETA6_PLAQUETTE_TWOCUBE_CLOSED_FORM_BOUNDED_NOTE_2026-06-04.md
   born_lane_comparison_note | audited_clean | retained_bounded | bounded_theorem | docs/BORN_LANE_COMPARISON_NOTE.md
-  dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md
-  dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md
-  dynamics_form_from_record_preservation_gauge_invariant_local_class_bounded_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md
-  flavor_center_trace_closed_capstone_note_2026-05-30 | audited_conditional | audited_conditional | bounded_theorem | docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md
-  flavor_einselection_2sector_modulo_kreality_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md
+  branching_record_budget_inequality_bounded_theorem_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/BRANCHING_RECORD_BUDGET_INEQUALITY_BOUNDED_THEOREM_NOTE_2026-06-12.md
+  conditional_law_depth_axis_depth_stable_event_bounded_theorem_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/CONDITIONAL_LAW_DEPTH_AXIS_DEPTH_STABLE_EVENT_BOUNDED_THEOREM_NOTE_2026-06-12.md
+  corner_mode_set_fork_resolution_layer_is_record_dynamics_bounded_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/CORNER_MODE_SET_FORK_RESOLUTION_LAYER_IS_RECORD_DYNAMICS_BOUNDED_NOTE_2026-06-12.md
 
 
 ------------------------------------------------------------------------------
@@ -70,9 +70,9 @@ Bounded ledger-row export checks
 ------------------------------------------------------------------------------
 PASS bounded stability/dynamics row export exists :: outputs/post_record_stability_dynamics_selector_slice_2026_06_07.json
 PASS slice export is for the stability/dynamics selector bucket
-PASS slice export records current ledger sha :: 4b31e8573fb839a0606465ae08ae61bdbdfef55cbd88ccf7ecf5d2f7336a8679
-PASS slice export row count matches current split :: 94
-PASS slice export sub-counts match current split :: {'arrow_or_dynamics_bridge': 36, 'flow_or_thermal_stability': 58}
+PASS slice export records current ledger sha :: 2ac5344278b0e37ee6419068aa1e0588600fbc98d8ed55d56650fb4b0e555b83
+PASS slice export row count matches current split :: 147
+PASS slice export sub-counts match current split :: {'arrow_or_dynamics_bridge': 56, 'flow_or_thermal_stability': 91}
 PASS slice export rows match independently enumerated regex split
 
 ------------------------------------------------------------------------------
@@ -86,9 +86,9 @@ PASS generation/Koide dial selected flag is false
 PASS Record-derived physical arrow flag is false
 
 SUMMARY: PASS=37 FAIL=0
-STABILITY_DYNAMICS_SELECTOR_ROWS=94
-FLOW_OR_THERMAL_STABILITY_ROWS=58
-ARROW_OR_DYNAMICS_BRIDGE_ROWS=36
+STABILITY_DYNAMICS_SELECTOR_ROWS=147
+FLOW_OR_THERMAL_STABILITY_ROWS=91
+ARROW_OR_DYNAMICS_BRIDGE_ROWS=56
 AUDIT_LEDGER_WRITTEN=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE

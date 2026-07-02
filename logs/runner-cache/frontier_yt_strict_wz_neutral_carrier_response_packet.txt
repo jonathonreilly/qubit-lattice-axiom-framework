@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_strict_wz_neutral_carrier_response_packet.py
-runner_sha256: 48f9c92150f9086f5c4deaf49ba252502c50e984a834ee0943b61dc7521a1d16
+runner_sha256: 57366f88877698b0eb3f94b65f12a0949d64119c03aef7ad6ac18ced0dadd911
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.71
+elapsed_sec: 0.83
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -30,18 +30,21 @@ Part 1: anchors and authority scope
 [PASS] hypercharge uniqueness is not retained authority yet
 [PASS] EW coupling note is not retained g_2(v) authority
 
-Part 2: neutral ray tangent
-[PASS] H(s) lies on neutral P_- ray: Matrix([[0], [sqrt(2)*v(s)/2]])
-[PASS] dH/ds lies on neutral P_- ray: Matrix([[0], [sqrt(2)*Derivative(v(s), s)/2]])
-[PASS] dH/ds is Q-neutral: Matrix([[0], [0]])
+Part 2 (CONDITIONAL layer-2 support): neutral ray tangent algebra
+  NOTE: shared-coordinate ray algebra only; the physical same-surface
+        carrier-source identification is an UNSUPPLIED open bridge.
+[PASS] [L2-conditional] H(s) lies on neutral P_- ray: Matrix([[0], [sqrt(2)*v(s)/2]])
+[PASS] [L2-conditional] dH/ds lies on neutral P_- ray: Matrix([[0], [sqrt(2)*Derivative(v(s), s)/2]])
+[PASS] [L2-conditional] dH/ds is Q-neutral: Matrix([[0], [0]])
+[PASS] [L2-conditional] note marks the same-surface carrier-source bridge as an unsupplied open bridge: carrier-source identification remains conditional on the unsupplied same-surface bridge
 
-Part 3: strict W/Z response rows
+Part 3 (layer-1 clean EW derivative corollary): strict W/Z response rows
 [PASS] dM_W/ds row: g_2*Derivative(v(s), s)/2
 [PASS] dM_Z/ds row: sqrt(g_2**2 + g_Y**2)*Derivative(v(s), s)/2
 [PASS] W/Z response ratio cancels source Jacobian: g_2/sqrt(g_2**2 + g_Y**2)
 [PASS] absolute W response recovers radial Jacobian if g_2 is known: Derivative(v(s), s)
 
-Part 4: source-coordinate reparameterization
+Part 4 (layer-1 clean EW derivative corollary): source-coordinate reparameterization
 [PASS] W/Z response ratio invariant under s=f(r): g_2/sqrt(g_2**2 + g_Y**2)
 
 Part 5: current Y_T closure boundary
@@ -70,7 +73,7 @@ Part 6: firewalls
 [PASS] forbidden overclaim absent: physical-scale `g_2(v)` is retained
 
 wrote outputs/yt_strict_wz_neutral_carrier_response_packet_2026-05-25.json
-SUMMARY: PASS=47 FAIL=0
+SUMMARY: PASS=48 FAIL=0
 
 ----- stderr -----
 

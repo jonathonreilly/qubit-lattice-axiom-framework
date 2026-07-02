@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=7ec3e1b2acb350b59f4af772766708bab9e0908a09d94f1ffb8a4def5b301828 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=d0fcd0cff651e8c0141f8fa7836d927de738e81104945743381654e129817352 -->
 # Controlled Vocabulary
 
 > **Front-door lookup:** Looking up a single term? Go to
@@ -15,16 +15,16 @@ their content here, and do not override their wording from here.
 | Layer | Source-of-truth doc | Governs |
 |---|---|---|
 | 0. Front-door A-Z lookup | `docs/KEY_TERMINOLOGY.md` | Single-page A-Z index of every repo-canonical term with a one-line definition and a pointer to its source-of-truth doc. The reader entry-point above all layers below; an index, not an authority. New terms enter the index only after the source-of-truth doc accepts them. |
-| 1. Framework substantive | `docs/MINIMAL_AXIOMS_2026-06-05.md` and `docs/audit/data/axiom_premise_nodes.json` | Framework axioms and explicitly approved primitive premise nodes the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor cubic adjacency), Quantum (one qubit at every site, equivalently the one-site operator algebra `A_x ≅ M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra), Record (durable realized-outcome readout with finite scalar additivity), the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms, and registered primitive premise nodes such as the scale-reference and kinetic-isotropy primitives. Changes only when a framework-level science decision changes. |
+| 1. Framework substantive | `docs/MINIMAL_AXIOMS_2026-06-29.md` and `docs/audit/data/axiom_premise_nodes.json` | Framework axioms and explicitly approved primitive premise nodes the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor adjacency, standard translations, and proper cubic rotations), Qubit (the domain of local possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is equivalent notation, not extra primitive content; no possibility is privileged), Admissibility (one fixed nearest-neighbor rule, covariant under lattice translations and proper cubic rotations, by which the available possibilities are determined by, and vary with, the nearest-neighbor conditions at each site), Record (optional fixed locking of one available local possibility; readout value determined by record content alone; finite scalar additivity), the state/law qualification clauses, the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms, and registered primitive premise nodes such as the scale-reference and kinetic-isotropy primitives. Changes only when a framework-level science decision changes. |
 | 2. External paper text | [`docs/ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md`](../ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md), [`docs/ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md`](../ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md) | Verbatim reusable disclosure paragraphs for papers, preprints, and talks. The framing paragraph is the short paper-facing form; the accountability disclosure is the longer package-level form. Both carry their own usage guidance (e.g. replacing `[repo URL]`, narrowing the tool list when only one was used). |
 | 3. Operational (this doc) | `docs/repo/CONTROLLED_VOCABULARY.md` | Status taxonomy, claim-strength labels, audit-lane field enums, repair classes, filename conventions, archival paths, topic language, and paper-facing prose voice — the working vocabulary used inside the repo across ledgers, tables, notes, runners, skills, and PR descriptions. |
 | 4. Methodology framing (adjacent) | `docs/AI_METHODOLOGY_NOTE_2026-04-25.md` | The curated front-door note for the methodology lane. Defines how to talk about the AI / methodology side at the project level. |
 
 For a single-term lookup (layer 0), use `KEY_TERMINOLOGY.md`. For
 framework axioms and approved primitive premise nodes (layer 1), cite
-`MINIMAL_AXIOMS_2026-06-05.md` and
-`docs/audit/data/axiom_premise_nodes.json` — do not redefine Lattice, Quantum,
-Record, `Cl(3)`, `Z^3`, `A_min`, or registered primitives here. For external paper text
+`MINIMAL_AXIOMS_2026-06-29.md` and
+`docs/audit/data/axiom_premise_nodes.json` — do not redefine Lattice, Qubit,
+Admissibility, Record, `Cl(3)`, `Z^3`, `A_min`, or registered primitives here. For external paper text
 (layer 2), use the canonical framing paragraph and the accountability
 disclosure verbatim — do not paraphrase. This doc governs layer 3 only.
 
@@ -556,7 +556,7 @@ primitives**, not process vocabulary. Per
 is disjoint from physics. The canonical home for these names and the
 policy governing their use is:
 
-- `docs/MINIMAL_AXIOMS_2026-06-05.md` — the framework axioms themselves (Lattice, Quantum, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-06-04.md`
+- `docs/MINIMAL_AXIOMS_2026-06-29.md` — the framework axioms themselves (Lattice, Qubit, Admissibility, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-06-05.md`
 - `docs/audit/data/axiom_premise_nodes.json` — explicitly approved primitive premise nodes such as `scale_reference_primitive` and `kinetic_isotropy_primitive`
 - [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
 

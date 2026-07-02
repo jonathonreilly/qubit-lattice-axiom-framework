@@ -69,11 +69,13 @@ def _source_boundary_checks() -> None:
         and "2026-06-12 audit firewall: source index, not dynamics closure" in text,
     )
     _check(
-        "GB-S1/GB-S2/GB-S3 remain supplied row-local ingredients",
-        "valley-linear source/action rule" in flat
-        and "propagation/readout semantics" in flat
-        and "generated-connectivity rule" in flat
-        and "supplied row-local ingredients" in flat,
+        "GB-S1b-b/GB-S2b/GB-S3b residues remain supplied row-local data",
+        "`GB-S1b-b`" in flat
+        and "`GB-S2b`" in flat
+        and "`GB-S3b`" in flat
+        and "physical scalar source/boundary/regulator/normalization remains supplied" in flat
+        and "physical detector-window/TOWARD/`F~M` semantics remain supplied" in flat
+        and "physical selection/dynamical generation of that stencil remains supplied" in flat,
     )
     _check(
         "note forbids Gate B dynamics closure and axiom/admission/status changes",

@@ -7,10 +7,10 @@ if-premises-then-algebra lemma per audit path (b)).
 **Status authority:** independent audit lane only. This source note does
 not set or predict an audit outcome.
 **Status:** purely formal finite-dimensional linear-algebra lemma —
-GIVEN abstract operators `(S, η, K)` on the class-sector space with the
+GIVEN abstract operators `(S, η, ell_W)` on the class-sector space with the
 stated abstract hypotheses, the coefficient relations `z` and `Z(W)`
-follow by linear algebra, and the normalized coefficients `ρ` are defined on
-the subcase `z_(0,0) != 0`. The note makes **no claim** that these abstract
+follow by linear algebra, while normalized `ρ` statements are made only on
+the explicit domain `z_(0,0) != 0`. The note makes **no claim** that these abstract
 objects ARE the physical β=6 Wilson/Haar kernel/rim; that physical
 identification depends on four unsupplied authorities and is explicitly
 out of scope.
@@ -38,27 +38,30 @@ narrowing only began. The load-bearing content is hereby scoped as a
 - **In scope (formal lemma, unconditional on any physics):** Let `H` be the
   finite-dimensional class-sector inner-product space with orthonormal
   class basis `{χ_(p,q)}`. Let `S` be **any** linear operator on `H`, `η ∈ H`
-  **any** vector, and `K(·)` **any** linear evaluation functional. Define
-  `z_(p,q) = ⟨χ_(p,q), S^{L⊥−1} η⟩`, `v = Σ z_(p,q) χ_(p,q)`, and
-  `Z(W) = ⟨K(W), v⟩`. When `z_(0,0) != 0`, define the normalized coefficients
-  `ρ_(p,q) = z_(p,q)/z_(0,0)`. Then the relations in Theorem 1 /
-  Corollaries 1–2 below hold **by elementary linear algebra** on that stated
-  domain. This is true for arbitrary abstract `(S, η, K)` satisfying the
-  nonzero-denominator condition wherever normalized `ρ` is used; it carries **no**
+  **any** vector, and `ell_W: H -> C` **any** linear evaluation functional.
+  When inner-product notation is used, `k(W) ∈ H` denotes the Riesz
+  representative of `ell_W`, so `ell_W(v) = ⟨k(W), v⟩`. Define
+  `z_(p,q) = ⟨χ_(p,q), S^{L⊥−1} η⟩`, `v = Σ z_(p,q) χ_(p,q)`,
+  and `Z(W) = ell_W(v) = ⟨k(W), v⟩`. Define normalized
+  `ρ_(p,q) = z_(p,q)/z_(0,0)` **only on the domain `z_(0,0) != 0`**.
+  If `z_(0,0) = 0`, the formal lemma retains the unnormalized `z` and
+  `Z(W)` statements but makes no `ρ` claim. Then the relations in
+  Theorem 1 / Corollaries 1–2 below hold **by elementary linear algebra**.
+  This is true for arbitrary abstract `(S, η, ell_W)`; it carries **no**
   Wilson/Haar, β=6, or plaquette content and is conditional on nothing
   beyond the abstract hypotheses just stated.
 - **Out of scope (the physical identification — NOT claimed here):** that the
   abstract `S` equals the compressed β=6 Wilson/Haar environment kernel
   `S_6^env = P_cls K_6^env P_cls`, that `η` equals the β=6 rim lift
-  `η_6 = P_cls B_6`, and that `K(·)` is the canonical Peter–Weyl evaluation
-  vector. Each of those identifications requires the four
+  `η_6 = P_cls B_6`, and that `ell_W` is represented by the canonical
+  Peter–Weyl evaluation Riesz vector. Each of those identifications requires the four
   required-but-unsupplied retained authorities enumerated below
   (full Wilson/Haar one-slab kernel, full-slice rim-lift, exact kernel/rim
   compression, exact compressed rim-evaluation). They remain **unsupplied**;
   the β=6 application is therefore **not** part of this note's load-bearing
   claim.
 - The runner is a **finite-block structural check of the formal algebra**
-  (it verifies the coefficient relations on small explicit `(S, η, K)`
+  (it verifies the coefficient relations on small explicit `(S, η, ell_W)`
   instances); it does **not** derive the four physical Wilson/Haar
   identities.
 
@@ -134,8 +137,9 @@ audit can confirm or supply them.
    `eta_6(W) = P_cls B_6(W)` with the untruncated compression
    identity used downstream.
 4. **Exact compressed rim-evaluation theorem** —
-   `Z_6^env(W) = <K(W), v_6>` via the canonical Peter-Weyl evaluation
-   law on the compressed boundary.
+   `Z_6^env(W) = ell_W(v_6) = <k(W), v_6>` via the canonical
+   Peter-Weyl evaluation law on the compressed boundary, where `k(W)`
+   is the Riesz representative of the evaluation functional.
 
 Downstream consumers that need the reduction as a closed bounded
 theorem (not a conditional reduction) must wait until retained
@@ -192,8 +196,9 @@ closed.
 
 Unqualified phrases such as "exact reduction" are replaced or governed
 by "conditional reduction". The note does not claim explicit
-closed-form matrix elements, explicit `rho_(p,q)(6)`, plaquette PF
-data, or analytic `P(6)` closure.
+closed-form matrix elements, explicit normalized `rho_(p,q)(6)` outside
+the domain `z_(0,0)^env(6) != 0`, plaquette PF data, or analytic `P(6)`
+closure.
 
 #### N6 - Partial-closure path scan
 
@@ -262,6 +267,12 @@ and, when `z_(0,0)^env(6) != 0`,
 `rho_(p,q)(6)
  = z_(p,q)^env(6) / z_(0,0)^env(6)`.
 
+This normalized statement is part of the theorem only on the explicit
+domain `z_(0,0)^env(6) != 0`. If that denominator vanishes for a supplied
+premise packet, the unnormalized `z_(p,q)^env(6)` and `Z_6^env(W)` reduction
+statements remain well-defined, but no normalized `rho_(p,q)(6)` statement
+is made.
+
 Under the premise that `K_6^env` and `B_6(W)` are supplied as exact
 Wilson/Haar integrals, the remaining explicit `beta = 6` problem is
 evaluation of the integral-defined class-sector matrix elements
@@ -270,7 +281,7 @@ entering `S_6^env` and `eta_6`.
 Under the compressed rim-evaluation premise, the marked-holonomy
 dependence is canonical:
 
-`Z_6^env(W) = <K(W), v_6>`,
+`Z_6^env(W) = ell_W(v_6) = <k(W), v_6>`,
 
 with
 
@@ -295,15 +306,17 @@ From the full-slice rim-lift integral premise:
 
 From the exact kernel/rim compression premise:
 
-- once `K_6^env` and `B_6` are explicit, `S_6^env`, `eta_6`,
-  `z_(p,q)^env(6)`, and, on the nonzero-denominator subcase,
-  `rho_(p,q)(6)` and the downstream plaquette PF data follow canonically.
+- once `K_6^env` and `B_6` are explicit, `S_6^env`, `eta_6`, the
+  unnormalized `z_(p,q)^env(6)`, and the downstream plaquette PF data
+  follow canonically; normalized `rho_(p,q)(6)` follows only on the
+  explicitly stated nonzero-denominator domain.
 
 From the exact compressed rim-evaluation premise:
 
-- after compression, `Z_beta^env(W) = <K(W), v_beta>`,
+- after compression, `Z_beta^env(W) = ell_W(v_beta) = <k(W), v_beta>`,
 - so the compressed `W`-dependence is explicit through the canonical
-  Peter-Weyl evaluation vector `K(W)`.
+  Peter-Weyl evaluation functional, represented in `H` by the Riesz
+  vector `k(W)` when inner-product notation is used.
 
 Therefore the only honest next theorem seam is evaluation of the beta-side
 matrix elements generated by the premise integral objects.
@@ -359,9 +372,10 @@ Let
 
 Then for every marked holonomy `W`,
 
-`Z_6^env(W) = <K(W), v_6>`,
+`Z_6^env(W) = ell_W(v_6) = <k(W), v_6>`,
 
-with `K(W)` the canonical Peter-Weyl evaluation vector.
+with `ell_W` the canonical Peter-Weyl evaluation functional and `k(W)` its
+Riesz representative in the finite class-sector Hilbert space.
 
 Therefore, conditional on the compressed rim-evaluation premise, once
 the matrix elements determining `v_6` are evaluated, the full
@@ -398,7 +412,8 @@ statement is:
 
 - explicit closed-form matrix elements of `K_6^env`
 - explicit closed-form matrix elements of `B_6(W)`
-- explicit coefficients `rho_(p,q)(6)`
+- explicit normalized coefficients `rho_(p,q)(6)` outside the nonzero
+  denominator domain `z_(0,0)^env(6) != 0`
 - explicit framework-point plaquette PF data
 - analytic closure of canonical `P(6)`
 

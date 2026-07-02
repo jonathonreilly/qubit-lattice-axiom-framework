@@ -1,0 +1,57 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
+    "docs/ANOMALY_FORCES_TIME_BRIDGE_PREMISE_MANIFEST_RECHECK_NOTE_2026-06-17.md",
+    "docs/ANOMALY_FORCES_TIME_THEOREM.md",
+    "docs/ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "the premise-manifest recheck note as audit verdict evidence",
+    "PR #4225 discussion as evidence",
+    "prior assistant discussion",
+    "prior audit verdicts as evidence",
+    "generated audit queue output as evidence"
+  ],
+  "generated_date": "2026-06-21",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "anomaly_forces_time_bridge_fresh_context",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Fresh-context re-audit target: under the current dependency-edge repair and premise manifest, does the anomaly-forces-time ABJ bridge validate as a bounded_theorem over explicit premises P-ABJ, P-HY, P-COMP, and P-REC without crediting native_gauge_closure for hypercharge, abelian values, or matter completion?",
+          "claim_id": "anomaly_forces_time_abj_inconsistency_accepted_premise_bridge_bounded_note_2026-05-26",
+          "current_audit_status": "unaudited",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "unaudited",
+          "note_path": "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md"
+        }
+      ]
+    },
+    {
+      "blocked_by_group_ids": [
+        "anomaly_forces_time_bridge_fresh_context"
+      ],
+      "group_id": "anomaly_forces_time_parent_after_bridge",
+      "order": 2,
+      "targets": [
+        {
+          "audit_question": "Fresh-context audit target after the bridge resolves: does ANOMALY_FORCES_TIME_THEOREM.md close only the d_t odd/parity result under its explicit bridge and retained dependencies, while leaving the d_t = 1 single-generator cap to the emergent-dynamics open gate?",
+          "claim_id": "anomaly_forces_time_theorem",
+          "current_audit_status": "unaudited",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "unaudited",
+          "note_path": "docs/ANOMALY_FORCES_TIME_THEOREM.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

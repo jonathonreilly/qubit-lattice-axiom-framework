@@ -1,7 +1,2299 @@
 {
-  "cycle_count": 0,
-  "cycles": [],
-  "length_counts": {},
+  "cycle_count": 14,
+  "cycles": [
+    {
+      "cycle_id": "cycle-0001",
+      "decision": null,
+      "edges": [
+        {
+          "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "to": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16"
+        },
+        {
+          "from": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "to": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11"
+        },
+        {
+          "from": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 931,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+          "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+          "title": "Single-Clock APBC Axis-Label Bridge",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
+          "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
+          "transitive_descendants": 931
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0002",
+      "decision": null,
+      "edges": [
+        {
+          "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "to": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16"
+        },
+        {
+          "from": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "to": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11"
+        },
+        {
+          "from": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "to": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
+          "to": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
+          "to": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+          "to": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+          "to": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05"
+        },
+        {
+          "from": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+          "to": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05"
+        },
+        {
+          "from": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
+          "to": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05"
+        },
+        {
+          "from": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+          "to": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
+        },
+        {
+          "from": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17",
+          "to": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18"
+        },
+        {
+          "from": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18",
+          "to": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
+          "to": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16",
+          "to": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16",
+          "to": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
+          "to": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16",
+          "to": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16"
+        },
+        {
+          "from": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+          "to": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15"
+        },
+        {
+          "from": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15",
+          "to": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15"
+        },
+        {
+          "from": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15",
+          "to": "pmns_selector_unique_amplitude_slot_note"
+        },
+        {
+          "from": "pmns_selector_unique_amplitude_slot_note",
+          "to": "pmns_selector_class_space_uniqueness_note"
+        },
+        {
+          "from": "pmns_selector_class_space_uniqueness_note",
+          "to": "pmns_selector_sector_odd_reduction_note"
+        },
+        {
+          "from": "pmns_selector_sector_odd_reduction_note",
+          "to": "pmns_sector_exchange_nonforcing_note"
+        },
+        {
+          "from": "pmns_sector_exchange_nonforcing_note",
+          "to": "pmns_sector_orientation_orbit_note"
+        },
+        {
+          "from": "pmns_sector_orientation_orbit_note",
+          "to": "pmns_selector_bank_nonrealization_note"
+        },
+        {
+          "from": "pmns_selector_bank_nonrealization_note",
+          "to": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17"
+        },
+        {
+          "from": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+          "to": "neutrino_dirac_z3_support_trichotomy_note"
+        },
+        {
+          "from": "neutrino_dirac_z3_support_trichotomy_note",
+          "to": "neutrino_mass_reduction_to_dirac_note"
+        },
+        {
+          "from": "neutrino_mass_reduction_to_dirac_note",
+          "to": "higgs_vacuum_explicit_systematic_note"
+        },
+        {
+          "from": "higgs_vacuum_explicit_systematic_note",
+          "to": "higgs_mass_derived_note"
+        },
+        {
+          "from": "higgs_mass_derived_note",
+          "to": "yt_flagship_boundary_note"
+        },
+        {
+          "from": "yt_flagship_boundary_note",
+          "to": "yt_ward_identity_derivation_theorem"
+        },
+        {
+          "from": "yt_ward_identity_derivation_theorem",
+          "to": "staggered_dirac_realization_gate_note_2026-05-03"
+        },
+        {
+          "from": "staggered_dirac_realization_gate_note_2026-05-03",
+          "to": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
+        },
+        {
+          "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+          "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+        }
+      ],
+      "length": 35,
+      "max_transitive_descendants": 931,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+          "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+          "title": "Single-Clock APBC Axis-Label Bridge",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
+          "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 CAP-K From Finite-Speed Registration",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 BR Record-Capacity Narrow No-Go",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 NU License Narrowing No-Go",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 Exponent \u2014 Barrier-Parameter Selector Narrow Theorem (+ Irreducible-Class Extension)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+          "claim_type": "meta",
+          "effective_status": "meta",
+          "note_path": "docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md",
+          "title": "The Record-Outcome Observable Principle \u2014 Canonical Methodology (Proposal)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "title": "PMNS TM2 Trimaximal Column = the Recorded C3-Singlet Central Sector \u2014 Narrow Bridge Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "title": "PMNS TM2 Magic Residual is a Native Dynamical Unitary \u2014 Narrow Bridge Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
+          "title": "PMNS as `f(H(m, delta, q_+))` \u2014 Bounded P3 Package",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md",
+          "title": "P3 Sylvester Linear-Path Signature Theorem on the DM Neutrino Source Surface",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Active Half-Plane Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Shift-Quotient Bundle Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Exact H-Side Source-Surface Preimage-Bundle Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Leptogenesis `N_e` Projected-Source Triplet Sign Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
+          "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
+          "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
+          "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_unique_amplitude_slot_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
+          "title": "PMNS Selector Unique Amplitude Slot",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_class_space_uniqueness_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md",
+          "title": "PMNS Selector Class-Space Uniqueness",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_sector_odd_reduction_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_SECTOR_ODD_REDUCTION_NOTE.md",
+          "title": "PMNS Selector Sector-Odd Reduction",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_sector_exchange_nonforcing_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SECTOR_EXCHANGE_NONFORCING_NOTE.md",
+          "title": "PMNS Sector-Exchange Nonforcing",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_sector_orientation_orbit_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md",
+          "title": "PMNS Sector-Orientation Orbit Reduction",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_bank_nonrealization_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
+          "title": "PMNS Selector-Bank Nonrealization",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
+          "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "neutrino_dirac_z3_support_trichotomy_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
+          "title": "Neutrino Dirac `Z_3` Support Trichotomy",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "neutrino_mass_reduction_to_dirac_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
+          "title": "Neutrino Mass Reduction To The Dirac Lane",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_vacuum_explicit_systematic_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
+          "title": "Higgs / Vacuum Authority",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_mass_derived_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
+          "title": "Higgs Mass: Canonical Authority Boundary",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_flagship_boundary_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
+          "title": "y_t Flagship Boundary Note",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_ward_identity_derivation_theorem",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+          "title": "Staggered Vector Ward Identity on the Q_L Block: Lattice Noether Derivation, with the H_unit Matrix-Element Corollary y_t_bare = g_bare / sqrt(6)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+          "title": "Staggered-Dirac Realization Gate Note \u2014 Bounded Synthesis Closure",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
+          "title": "Staggered-Dirac Realization Gate \u2014 Closure Synthesis (Block 01, 2026-05-17)",
+          "transitive_descendants": 931
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0003",
+      "decision": null,
+      "edges": [
+        {
+          "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "to": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16"
+        },
+        {
+          "from": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "to": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11"
+        },
+        {
+          "from": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "to": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
+          "to": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
+          "to": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+          "to": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+          "to": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05"
+        },
+        {
+          "from": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+          "to": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05"
+        },
+        {
+          "from": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
+          "to": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05"
+        },
+        {
+          "from": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+          "to": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
+        },
+        {
+          "from": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17",
+          "to": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18"
+        },
+        {
+          "from": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18",
+          "to": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
+          "to": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16",
+          "to": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16",
+          "to": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
+          "to": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16",
+          "to": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16"
+        },
+        {
+          "from": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+          "to": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15"
+        },
+        {
+          "from": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15",
+          "to": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15"
+        },
+        {
+          "from": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15",
+          "to": "pmns_selector_unique_amplitude_slot_note"
+        },
+        {
+          "from": "pmns_selector_unique_amplitude_slot_note",
+          "to": "pmns_selector_class_space_uniqueness_note"
+        },
+        {
+          "from": "pmns_selector_class_space_uniqueness_note",
+          "to": "pmns_selector_sector_odd_reduction_note"
+        },
+        {
+          "from": "pmns_selector_sector_odd_reduction_note",
+          "to": "pmns_sector_exchange_nonforcing_note"
+        },
+        {
+          "from": "pmns_sector_exchange_nonforcing_note",
+          "to": "pmns_sector_orientation_orbit_note"
+        },
+        {
+          "from": "pmns_sector_orientation_orbit_note",
+          "to": "pmns_selector_bank_nonrealization_note"
+        },
+        {
+          "from": "pmns_selector_bank_nonrealization_note",
+          "to": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17"
+        },
+        {
+          "from": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+          "to": "neutrino_dirac_z3_support_trichotomy_note"
+        },
+        {
+          "from": "neutrino_dirac_z3_support_trichotomy_note",
+          "to": "neutrino_mass_reduction_to_dirac_note"
+        },
+        {
+          "from": "neutrino_mass_reduction_to_dirac_note",
+          "to": "higgs_vacuum_explicit_systematic_note"
+        },
+        {
+          "from": "higgs_vacuum_explicit_systematic_note",
+          "to": "higgs_mass_derived_note"
+        },
+        {
+          "from": "higgs_mass_derived_note",
+          "to": "yt_flagship_boundary_note"
+        },
+        {
+          "from": "yt_flagship_boundary_note",
+          "to": "yt_ward_identity_derivation_theorem"
+        },
+        {
+          "from": "yt_ward_identity_derivation_theorem",
+          "to": "staggered_dirac_realization_gate_note_2026-05-03"
+        },
+        {
+          "from": "staggered_dirac_realization_gate_note_2026-05-03",
+          "to": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07"
+        },
+        {
+          "from": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
+          "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+        }
+      ],
+      "length": 35,
+      "max_transitive_descendants": 931,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+          "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+          "title": "Single-Clock APBC Axis-Label Bridge",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
+          "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 CAP-K From Finite-Speed Registration",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 BR Record-Capacity Narrow No-Go",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 NU License Narrowing No-Go",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 Exponent \u2014 Barrier-Parameter Selector Narrow Theorem (+ Irreducible-Class Extension)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+          "claim_type": "meta",
+          "effective_status": "meta",
+          "note_path": "docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md",
+          "title": "The Record-Outcome Observable Principle \u2014 Canonical Methodology (Proposal)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "title": "PMNS TM2 Trimaximal Column = the Recorded C3-Singlet Central Sector \u2014 Narrow Bridge Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "title": "PMNS TM2 Magic Residual is a Native Dynamical Unitary \u2014 Narrow Bridge Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
+          "title": "PMNS as `f(H(m, delta, q_+))` \u2014 Bounded P3 Package",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md",
+          "title": "P3 Sylvester Linear-Path Signature Theorem on the DM Neutrino Source Surface",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Active Half-Plane Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Shift-Quotient Bundle Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Exact H-Side Source-Surface Preimage-Bundle Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Leptogenesis `N_e` Projected-Source Triplet Sign Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
+          "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
+          "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
+          "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_unique_amplitude_slot_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
+          "title": "PMNS Selector Unique Amplitude Slot",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_class_space_uniqueness_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md",
+          "title": "PMNS Selector Class-Space Uniqueness",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_sector_odd_reduction_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_SECTOR_ODD_REDUCTION_NOTE.md",
+          "title": "PMNS Selector Sector-Odd Reduction",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_sector_exchange_nonforcing_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SECTOR_EXCHANGE_NONFORCING_NOTE.md",
+          "title": "PMNS Sector-Exchange Nonforcing",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_sector_orientation_orbit_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md",
+          "title": "PMNS Sector-Orientation Orbit Reduction",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_bank_nonrealization_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
+          "title": "PMNS Selector-Bank Nonrealization",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
+          "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "neutrino_dirac_z3_support_trichotomy_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
+          "title": "Neutrino Dirac `Z_3` Support Trichotomy",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "neutrino_mass_reduction_to_dirac_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
+          "title": "Neutrino Mass Reduction To The Dirac Lane",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_vacuum_explicit_systematic_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
+          "title": "Higgs / Vacuum Authority",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_mass_derived_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
+          "title": "Higgs Mass: Canonical Authority Boundary",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_flagship_boundary_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
+          "title": "y_t Flagship Boundary Note",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_ward_identity_derivation_theorem",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+          "title": "Staggered Vector Ward Identity on the Q_L Block: Lattice Noether Derivation, with the H_unit Matrix-Element Corollary y_t_bare = g_bare / sqrt(6)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+          "title": "Staggered-Dirac Realization Gate Note \u2014 Bounded Synthesis Closure",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_physical_species_direct_theorem_note_2026-05-07",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md",
+          "title": "Staggered-Dirac Direct Three-State Algebraic Support",
+          "transitive_descendants": 931
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0004",
+      "decision": null,
+      "edges": [
+        {
+          "from": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+          "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+        },
+        {
+          "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "to": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16"
+        },
+        {
+          "from": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "to": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11"
+        },
+        {
+          "from": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "to": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
+          "to": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
+          "to": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+          "to": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+          "to": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05"
+        },
+        {
+          "from": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+          "to": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05"
+        },
+        {
+          "from": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
+          "to": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05"
+        },
+        {
+          "from": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+          "to": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
+        },
+        {
+          "from": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17",
+          "to": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18"
+        },
+        {
+          "from": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18",
+          "to": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
+          "to": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16",
+          "to": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16",
+          "to": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
+          "to": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16",
+          "to": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16"
+        },
+        {
+          "from": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+          "to": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15"
+        },
+        {
+          "from": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15",
+          "to": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15"
+        },
+        {
+          "from": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15",
+          "to": "pmns_selector_unique_amplitude_slot_note"
+        },
+        {
+          "from": "pmns_selector_unique_amplitude_slot_note",
+          "to": "pmns_selector_class_space_uniqueness_note"
+        },
+        {
+          "from": "pmns_selector_class_space_uniqueness_note",
+          "to": "pmns_selector_sector_odd_reduction_note"
+        },
+        {
+          "from": "pmns_selector_sector_odd_reduction_note",
+          "to": "pmns_sector_exchange_nonforcing_note"
+        },
+        {
+          "from": "pmns_sector_exchange_nonforcing_note",
+          "to": "pmns_sector_orientation_orbit_note"
+        },
+        {
+          "from": "pmns_sector_orientation_orbit_note",
+          "to": "pmns_selector_bank_nonrealization_note"
+        },
+        {
+          "from": "pmns_selector_bank_nonrealization_note",
+          "to": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17"
+        },
+        {
+          "from": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+          "to": "neutrino_dirac_z3_support_trichotomy_note"
+        },
+        {
+          "from": "neutrino_dirac_z3_support_trichotomy_note",
+          "to": "neutrino_mass_reduction_to_dirac_note"
+        },
+        {
+          "from": "neutrino_mass_reduction_to_dirac_note",
+          "to": "higgs_vacuum_explicit_systematic_note"
+        },
+        {
+          "from": "higgs_vacuum_explicit_systematic_note",
+          "to": "higgs_mass_derived_note"
+        },
+        {
+          "from": "higgs_mass_derived_note",
+          "to": "yt_flagship_boundary_note"
+        },
+        {
+          "from": "yt_flagship_boundary_note",
+          "to": "yt_ward_identity_derivation_theorem"
+        },
+        {
+          "from": "yt_ward_identity_derivation_theorem",
+          "to": "staggered_dirac_realization_gate_note_2026-05-03"
+        },
+        {
+          "from": "staggered_dirac_realization_gate_note_2026-05-03",
+          "to": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17"
+        },
+        {
+          "from": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+          "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
+        }
+      ],
+      "length": 36,
+      "max_transitive_descendants": 931,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
+          "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+          "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+          "title": "Single-Clock APBC Axis-Label Bridge",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
+          "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 CAP-K From Finite-Speed Registration",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 BR Record-Capacity Narrow No-Go",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 NU License Narrowing No-Go",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 Exponent \u2014 Barrier-Parameter Selector Narrow Theorem (+ Irreducible-Class Extension)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+          "claim_type": "meta",
+          "effective_status": "meta",
+          "note_path": "docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md",
+          "title": "The Record-Outcome Observable Principle \u2014 Canonical Methodology (Proposal)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "title": "PMNS TM2 Trimaximal Column = the Recorded C3-Singlet Central Sector \u2014 Narrow Bridge Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "title": "PMNS TM2 Magic Residual is a Native Dynamical Unitary \u2014 Narrow Bridge Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
+          "title": "PMNS as `f(H(m, delta, q_+))` \u2014 Bounded P3 Package",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md",
+          "title": "P3 Sylvester Linear-Path Signature Theorem on the DM Neutrino Source Surface",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Active Half-Plane Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Shift-Quotient Bundle Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Exact H-Side Source-Surface Preimage-Bundle Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Leptogenesis `N_e` Projected-Source Triplet Sign Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
+          "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
+          "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
+          "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_unique_amplitude_slot_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
+          "title": "PMNS Selector Unique Amplitude Slot",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_class_space_uniqueness_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md",
+          "title": "PMNS Selector Class-Space Uniqueness",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_sector_odd_reduction_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_SECTOR_ODD_REDUCTION_NOTE.md",
+          "title": "PMNS Selector Sector-Odd Reduction",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_sector_exchange_nonforcing_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SECTOR_EXCHANGE_NONFORCING_NOTE.md",
+          "title": "PMNS Sector-Exchange Nonforcing",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_sector_orientation_orbit_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md",
+          "title": "PMNS Sector-Orientation Orbit Reduction",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_bank_nonrealization_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
+          "title": "PMNS Selector-Bank Nonrealization",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
+          "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "neutrino_dirac_z3_support_trichotomy_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
+          "title": "Neutrino Dirac `Z_3` Support Trichotomy",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "neutrino_mass_reduction_to_dirac_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
+          "title": "Neutrino Mass Reduction To The Dirac Lane",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_vacuum_explicit_systematic_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
+          "title": "Higgs / Vacuum Authority",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_mass_derived_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
+          "title": "Higgs Mass: Canonical Authority Boundary",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_flagship_boundary_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
+          "title": "y_t Flagship Boundary Note",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_ward_identity_derivation_theorem",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+          "title": "Staggered Vector Ward Identity on the Q_L Block: Lattice Noether Derivation, with the H_unit Matrix-Element Corollary y_t_bare = g_bare / sqrt(6)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+          "title": "Staggered-Dirac Realization Gate Note \u2014 Bounded Synthesis Closure",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_gate_closure_synthesis_theorem_note_2026-05-17",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
+          "title": "Staggered-Dirac Realization Gate \u2014 Closure Synthesis (Block 01, 2026-05-17)",
+          "transitive_descendants": 931
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0005",
+      "decision": null,
+      "edges": [
+        {
+          "from": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+          "to": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
+        },
+        {
+          "from": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "to": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16"
+        },
+        {
+          "from": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "to": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11"
+        },
+        {
+          "from": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "to": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
+          "to": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
+          "to": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+          "to": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10"
+        },
+        {
+          "from": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+          "to": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05"
+        },
+        {
+          "from": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+          "to": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05"
+        },
+        {
+          "from": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
+          "to": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05"
+        },
+        {
+          "from": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+          "to": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17"
+        },
+        {
+          "from": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17",
+          "to": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18"
+        },
+        {
+          "from": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18",
+          "to": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
+          "to": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16",
+          "to": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16",
+          "to": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
+          "to": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16"
+        },
+        {
+          "from": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16",
+          "to": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16"
+        },
+        {
+          "from": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+          "to": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15"
+        },
+        {
+          "from": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15",
+          "to": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15"
+        },
+        {
+          "from": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15",
+          "to": "pmns_selector_unique_amplitude_slot_note"
+        },
+        {
+          "from": "pmns_selector_unique_amplitude_slot_note",
+          "to": "pmns_selector_class_space_uniqueness_note"
+        },
+        {
+          "from": "pmns_selector_class_space_uniqueness_note",
+          "to": "pmns_selector_sector_odd_reduction_note"
+        },
+        {
+          "from": "pmns_selector_sector_odd_reduction_note",
+          "to": "pmns_sector_exchange_nonforcing_note"
+        },
+        {
+          "from": "pmns_sector_exchange_nonforcing_note",
+          "to": "pmns_sector_orientation_orbit_note"
+        },
+        {
+          "from": "pmns_sector_orientation_orbit_note",
+          "to": "pmns_selector_bank_nonrealization_note"
+        },
+        {
+          "from": "pmns_selector_bank_nonrealization_note",
+          "to": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17"
+        },
+        {
+          "from": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+          "to": "neutrino_dirac_z3_support_trichotomy_note"
+        },
+        {
+          "from": "neutrino_dirac_z3_support_trichotomy_note",
+          "to": "neutrino_mass_reduction_to_dirac_note"
+        },
+        {
+          "from": "neutrino_mass_reduction_to_dirac_note",
+          "to": "higgs_vacuum_explicit_systematic_note"
+        },
+        {
+          "from": "higgs_vacuum_explicit_systematic_note",
+          "to": "higgs_mass_derived_note"
+        },
+        {
+          "from": "higgs_mass_derived_note",
+          "to": "yt_flagship_boundary_note"
+        },
+        {
+          "from": "yt_flagship_boundary_note",
+          "to": "yt_ward_identity_derivation_theorem"
+        },
+        {
+          "from": "yt_ward_identity_derivation_theorem",
+          "to": "staggered_dirac_realization_gate_note_2026-05-03"
+        },
+        {
+          "from": "staggered_dirac_realization_gate_note_2026-05-03",
+          "to": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17"
+        },
+        {
+          "from": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+          "to": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac"
+        }
+      ],
+      "length": 36,
+      "max_transitive_descendants": 931,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md",
+          "title": "Staggered-Dirac Substep 4 \u2014 AC Narrowing (Atomic Decomposition, Bounded)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+          "title": "Axiom-First Single-Clock Codimension-1 Unitary Evolution on the One-Qubit Cl(3) Pauli Factor over Z^3",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_APBC_AXIS_LABEL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+          "title": "Single-Clock APBC Axis-Label Bridge",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/SINGLE_CLOCK_AXIS_SELECTION_FROM_RECORD_DURABILITY_NARROW_NO_GO_NOTE_2026-06-11.md",
+          "title": "Single-Clock Axis Selection From Record Durability: Every Retained Candidate Structure Is W-Transportable \u2014 Narrow No-Go With a Sharpened Pin",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_cap_k_from_finite_speed_registration_narrow_theorem_note_2026-06-10",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_CAP_K_FROM_FINITE_SPEED_REGISTRATION_NARROW_THEOREM_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 CAP-K From Finite-Speed Registration",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_br_license_from_record_capacity_narrow_no_go_note_2026-06-10",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BR_LICENSE_FROM_RECORD_CAPACITY_NARROW_NO_GO_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 BR Record-Capacity Narrow No-Go",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_nu_license_from_retained_surface_narrow_no_go_note_2026-06-10",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_NU_LICENSE_FROM_RETAINED_SURFACE_NARROW_NO_GO_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 NU License Narrowing No-Go",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "observable_principle_p1_exponent_barrier_parameter_selector_narrow_theorem_note_2026-06-10",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_BARRIER_PARAMETER_SELECTOR_NARROW_THEOREM_NOTE_2026-06-10.md",
+          "title": "Observable-Principle P1 Exponent \u2014 Barrier-Parameter Selector Narrow Theorem (+ Irreducible-Class Extension)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_outcome_observable_principle_canonical_proposal_note_2026-06-05",
+          "claim_type": "meta",
+          "effective_status": "meta",
+          "note_path": "docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md",
+          "title": "The Record-Outcome Observable Principle \u2014 Canonical Methodology (Proposal)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_tm2_trimaximal_column_from_record_central_sector_narrow_theorem_note_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "title": "PMNS TM2 Trimaximal Column = the Recorded C3-Singlet Central Sector \u2014 Narrow Bridge Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_tm2_magic_residual_dynamical_generator_narrow_theorem_note_2026-06-05",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md",
+          "title": "PMNS TM2 Magic Residual is a Native Dynamical Unitary \u2014 Narrow Bridge Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_from_dm_neutrino_source_h_diagonalization_closure_theorem_note_2026-04-17",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_FROM_DM_NEUTRINO_SOURCE_H_DIAGONALIZATION_CLOSURE_THEOREM_NOTE_2026-04-17.md",
+          "title": "PMNS as `f(H(m, delta, q_+))` \u2014 Bounded P3 Package",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_P3_SYLVESTER_LINEAR_PATH_SIGNATURE_THEOREM_NOTE_2026-04-18.md",
+          "title": "P3 Sylvester Linear-Path Signature Theorem on the DM Neutrino Source Surface",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_active_affine_point_selection_boundary_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_AFFINE_POINT_SELECTION_BOUNDARY_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Active Affine Point-Selection Boundary",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_active_half_plane_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_ACTIVE_HALF_PLANE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Active Half-Plane Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_source_surface_shift_quotient_bundle_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_SOURCE_SURFACE_SHIFT_QUOTIENT_BUNDLE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Source-Surface Shift-Quotient Bundle Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_EXACT_H_SOURCE_SURFACE_PREIMAGE_BUNDLE_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Neutrino Exact H-Side Source-Surface Preimage-Bundle Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_ne_projected_source_triplet_sign_theorem_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_TRIPLET_SIGN_THEOREM_NOTE_2026-04-16.md",
+          "title": "DM Leptogenesis `N_e` Projected-Source Triplet Sign Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_ne_projected_source_law_derivation_note_2026-04-16",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md",
+          "title": "DM Leptogenesis `N_e` Projected-Source-Law Derivation",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_leptogenesis_exact_kernel_closure_note_2026-04-15",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_LEPTOGENESIS_EXACT_KERNEL_CLOSURE_NOTE_2026-04-15.md",
+          "title": "DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md",
+          "title": "DM Neutrino `c_odd` Bosonic Normalization Theorem",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_unique_amplitude_slot_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_UNIQUE_AMPLITUDE_SLOT_NOTE.md",
+          "title": "PMNS Selector Unique Amplitude Slot",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_class_space_uniqueness_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_CLASS_SPACE_UNIQUENESS_NOTE.md",
+          "title": "PMNS Selector Class-Space Uniqueness",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_sector_odd_reduction_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_SECTOR_ODD_REDUCTION_NOTE.md",
+          "title": "PMNS Selector Sector-Odd Reduction",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_sector_exchange_nonforcing_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SECTOR_EXCHANGE_NONFORCING_NOTE.md",
+          "title": "PMNS Sector-Exchange Nonforcing",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_sector_orientation_orbit_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md",
+          "title": "PMNS Sector-Orientation Orbit Reduction",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "pmns_selector_bank_nonrealization_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/PMNS_SELECTOR_BANK_NONREALIZATION_NOTE.md",
+          "title": "PMNS Selector-Bank Nonrealization",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_Z3_CHARGE_PMNS_GAUGE_REDUNDANCY_THEOREM_NOTE_2026-04-17.md",
+          "title": "Higgs `Z_3` Charge Gauge-Redundancy Theorem for PMNS",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "neutrino_dirac_z3_support_trichotomy_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/NEUTRINO_DIRAC_Z3_SUPPORT_TRICHOTOMY_NOTE.md",
+          "title": "Neutrino Dirac `Z_3` Support Trichotomy",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "neutrino_mass_reduction_to_dirac_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/NEUTRINO_MASS_REDUCTION_TO_DIRAC_NOTE.md",
+          "title": "Neutrino Mass Reduction To The Dirac Lane",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_vacuum_explicit_systematic_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_VACUUM_EXPLICIT_SYSTEMATIC_NOTE.md",
+          "title": "Higgs / Vacuum Authority",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "higgs_mass_derived_note",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/HIGGS_MASS_DERIVED_NOTE.md",
+          "title": "Higgs Mass: Canonical Authority Boundary",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_flagship_boundary_note",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_FLAGSHIP_BOUNDARY_NOTE.md",
+          "title": "y_t Flagship Boundary Note",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "yt_ward_identity_derivation_theorem",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+          "title": "Staggered Vector Ward Identity on the Q_L Block: Lattice Noether Derivation, with the H_unit Matrix-Element Corollary y_t_bare = g_bare / sqrt(6)",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+          "title": "Staggered-Dirac Realization Gate Note \u2014 Bounded Synthesis Closure",
+          "transitive_descendants": 931
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_dirac_substep4_labeling_no_go_note_2026-05-17",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md",
+          "title": "Staggered-Dirac Substep 4 \u2014 AC_\u03c6\u03bb Species-Labeling No-Go Theorem",
+          "transitive_descendants": 931
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0006",
+      "decision": null,
+      "edges": [
+        {
+          "from": "quark_cp_carrier_completion_note_2026-04-18",
+          "to": "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17"
+        },
+        {
+          "from": "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17",
+          "to": "quark_cp_carrier_completion_note_2026-04-18"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 365,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "quark_cp_carrier_completion_note_2026-04-18",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md",
+          "title": "Quark CP-Carrier Completion on the Live Mass-Ratio Lane",
+          "transitive_descendants": 365
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17",
+          "claim_type": "positive_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md",
+          "title": "Quark CP Carrier Slot Minimality Theorem",
+          "transitive_descendants": 365
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0007",
+      "decision": null,
+      "edges": [
+        {
+          "from": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+          "to": "bridge_gap_hk_cube_perron_note_2026-05-06"
+        },
+        {
+          "from": "bridge_gap_hk_cube_perron_note_2026-05-06",
+          "to": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 273,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 Heat-Kernel Thermodynamic \u27e8P\u27e9(6) Stretch Attempt (Block 03)",
+          "transitive_descendants": 273
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_hk_cube_perron_note_2026-05-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 HK Cube Perron L_s=2 (Block 06)",
+          "transitive_descendants": 273
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0008",
+      "decision": null,
+      "edges": [
+        {
+          "from": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
+          "to": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06"
+        },
+        {
+          "from": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+          "to": "bridge_gap_hk_cube_perron_note_2026-05-06"
+        },
+        {
+          "from": "bridge_gap_hk_cube_perron_note_2026-05-06",
+          "to": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06"
+        }
+      ],
+      "length": 3,
+      "max_transitive_descendants": 273,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_ACTION_FORM_UNIQUENESS_NO_GO_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 Action-Form Uniqueness No-Go",
+          "transitive_descendants": 273
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_HK_THERMODYNAMIC_STRETCH_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 Heat-Kernel Thermodynamic \u27e8P\u27e9(6) Stretch Attempt (Block 03)",
+          "transitive_descendants": 273
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "bridge_gap_hk_cube_perron_note_2026-05-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md",
+          "title": "Bridge Gap \u2014 HK Cube Perron L_s=2 (Block 06)",
+          "transitive_descendants": 273
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0009",
+      "decision": null,
+      "edges": [
+        {
+          "from": "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26",
+          "to": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26"
+        },
+        {
+          "from": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26",
+          "to": "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 58,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/HUBBLE_LANE5_ETA_RETIREMENT_GATE_AUDIT_NOTE_2026-04-26.md",
+          "title": "Lane 5 `eta` Retirement Gate Audit: The Single Microscopic Selector That Retires `eta` From The Bounded Cosmology Cascade",
+          "transitive_descendants": 58
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
+          "title": "Lane 5 Cosmic-History-Ratio Necessity No-Go: `H_0` Needs Scale-Route And History-Ratio Content Beyond Baseline",
+          "transitive_descendants": 58
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0010",
+      "decision": null,
+      "edges": [
+        {
+          "from": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+          "to": "ep_record_stiffness_context_independence_no_go_note_2026-06-17"
+        },
+        {
+          "from": "ep_record_stiffness_context_independence_no_go_note_2026-06-17",
+          "to": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/EP_RECORD_STIFFNESS_CONDITIONAL_SHARED_COUPLING_TEMPLATE_NOTE_2026-06-07.md",
+          "title": "EP Record-Stiffness Conditional Shared-Coupling Template",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "ep_record_stiffness_context_independence_no_go_note_2026-06-17",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md",
+          "title": "EP Record-Stiffness Context Independence No-Go",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0011",
+      "decision": null,
+      "edges": [
+        {
+          "from": "gate_b_context_independence_no_go_note_2026-06-17",
+          "to": "gate_b_dynamics_note"
+        },
+        {
+          "from": "gate_b_dynamics_note",
+          "to": "gate_b_context_independence_no_go_note_2026-06-17"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "gate_b_context_independence_no_go_note_2026-06-17",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/GATE_B_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md",
+          "title": "Gate B Context Independence No-Go",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "gate_b_dynamics_note",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/GATE_B_DYNAMICS_NOTE.md",
+          "title": "Gate B: Evolving Network Dynamics \u2014 Current Status",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0012",
+      "decision": null,
+      "edges": [
+        {
+          "from": "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
+          "to": "staggered_gbare_trace_surface_bridge_note_2026-06-06"
+        },
+        {
+          "from": "staggered_gbare_trace_surface_bridge_note_2026-06-06",
+          "to": "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md",
+          "title": "g_bare Root-SU2 Scale Transport Bridge",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "staggered_gbare_trace_surface_bridge_note_2026-06-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md",
+          "title": "Staggered g_bare Trace-Surface Bridge",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0013",
+      "decision": null,
+      "edges": [
+        {
+          "from": "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
+          "to": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16"
+        },
+        {
+          "from": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
+          "to": "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md",
+          "title": "Meron Half-Action Algebra Core From Topological Infrastructure",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16",
+          "claim_type": "open_gate",
+          "effective_status": "unaudited",
+          "note_path": "docs/MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md",
+          "title": "Meron / Fractional-Instanton Half-Action `4\u03c0\u00b2/g\u00b2` \u2014 Algebraic Decoration of the Retained Half-Action Core",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0014",
+      "decision": null,
+      "edges": [
+        {
+          "from": "record_context_generator_nonidentifiability_no_go_2026-06-17",
+          "to": "record_prerecord_instrument_kernel_gate_2026-06-06"
+        },
+        {
+          "from": "record_prerecord_instrument_kernel_gate_2026-06-06",
+          "to": "record_context_generator_nonidentifiability_no_go_2026-06-17"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 1,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_context_generator_nonidentifiability_no_go_2026-06-17",
+          "claim_type": "no_go",
+          "effective_status": "unaudited",
+          "note_path": "docs/RECORD_CONTEXT_GENERATOR_NONIDENTIFIABILITY_NO_GO_2026-06-17.md",
+          "title": "Record Context/Generator Nonidentifiability No-Go",
+          "transitive_descendants": 1
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "record_prerecord_instrument_kernel_gate_2026-06-06",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/RECORD_PRERECORD_INSTRUMENT_KERNEL_GATE_2026-06-06.md",
+          "title": "Record Pre-Record Instrument Kernel Gate Under Supplied Readout Context",
+          "transitive_descendants": 1
+        }
+      ],
+      "requires_lemma_extraction": false
+    }
+  ],
+  "length_counts": {
+    "2": 8,
+    "3": 2,
+    "35": 2,
+    "36": 2
+  },
   "sort": [
     "max_transitive_descendants descending",
     "length ascending",

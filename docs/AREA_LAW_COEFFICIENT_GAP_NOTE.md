@@ -1,7 +1,19 @@
 # Area-Law Coefficient Gap Audit
 
 **Date:** 2026-04-25
-**Status:** audited_conditional Planck Target 2 audit / support note
+**Status:** source-packet support for Planck Target 2 re-audit; historical
+audited-conditional boundary preserved, but the independent audit lane remains
+authoritative.
+
+Primary runner: `scripts/frontier_area_law_coefficient_gap_source_packet.py`
+
+Primary cache: `logs/runner-cache/frontier_area_law_coefficient_gap_source_packet.txt`
+
+The runner checks the source-level authority packet for this synthesis: the
+action-side primitive `1/4` input, the simple-fiber Widom `1/6` no-go, the
+conditional primitive parity-gate positive carrier, and the exact remaining
+rank-four CAR/CIP edge premise. It does not assign an audit verdict or retained
+status.
 
 ## Cited authorities (one-hop deps)
 
@@ -44,7 +56,8 @@ These are the live audit-ledger statuses at the time of this rigorization.
 The synthesis below makes the coefficient-gap structure explicit on this
 authority chain rather than asserting the no-go and positive carrier as
 implicit; status remains `audited_conditional` because the load-bearing
-carrier-identification premise (CIP) is not derived from `A_min` alone.
+carrier-identification premise (CIP) is not derived from the minimal axiom
+surface alone.
 
 ## Purpose
 
@@ -214,10 +227,10 @@ retained status.
 
 [AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md](./AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md)
 then identifies the exact remaining physical premise: accept the rank-four
-primitive packet as a minimal local complex-CAR edge algebra. With that premise,
+packet as a minimal local complex-CAR edge algebra. With that premise,
 `rank(P_A)=4` forces `F(C^2)`, the selected face supplies one normal channel,
 and the unique tangent-symmetric nearest-neighbor response is the self-dual
-Laplacian-gated channel. Inside those primitive-CAR edge axioms, the positive
+Laplacian-gated channel. Inside those CAR/CIP edge axioms, the positive
 `1/4` carrier is forced.
 
 [AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md](./AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)
@@ -258,16 +271,16 @@ two-orbital CAR / Laplacian-gated edge carrier." The two halves of that
 statement are now made explicit as imports, not assertions, and they trace to
 the named live authorities tabulated above.
 
-## What this PR is NOT
+## What this source packet is NOT
 
 This rigorization does **not**:
 
 - derive the action-side `c_cell = 1/4` here; that derivation lives in the
   cited primitive-coframe theorem and is imported with its conditional
   surface.
-- derive (CIP) from `A_min` alone. (CIP) remains the explicit named open
+- derive (CIP) from the minimal axiom surface alone. (CIP) remains the explicit named open
   premise inherited from the cited parity-gate carrier theorem and reduced
-  one step deeper by the cited primitive-CAR edge identification theorem.
+  one step deeper by the cited CAR edge-identification theorem.
 - close any of the cited audit_conditional rows. This synthesis inherits the
   conditional surface of every cited authority and remains
   `audited_conditional` itself.

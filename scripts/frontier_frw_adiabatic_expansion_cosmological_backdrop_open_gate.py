@@ -57,13 +57,26 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
 def part0_source_firewall() -> str:
     print("\n== Part 0: source firewall ==")
     note = NOTE_PATH.read_text(encoding="utf-8")
+    note_normalized = " ".join(note.split())
 
     required = [
         "Supplied premise packet (not axioms, not registry premises)",
         "C1 Cosmological principle",
         "C2 Adiabatic expansion",
         "C3 Standard FRW equation-of-state sequence",
-        "does **not** claim to derive C1, C2, or C3 from",
+        "2026-06-18 C2 entropy-bookkeeping partial bridge",
+        "FRW_C2_SOURCE_FREE_ENTROPY_BOOKKEEPING_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+        "2026-06-18 C3 kinetic-label partial bridge",
+        "FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+        "2026-06-18 C3 perfect-fluid lift partial bridge",
+        "FRW_C3_KINETIC_COMPONENT_PERFECT_FLUID_LIFT_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+        "does not derive C1 or C2",
+        "does not derive that the real leptogenesis-to-CMB window is source-free",
+        "does not derive the Standard Model `g_*S` table",
+        "does not derive the full FRW backdrop",
+        "does not derive real cosmological species allocation",
+        "two partial finite C3 bridges named above",
+        "partial finite C2 bookkeeping bridge",
         "no new repo-wide axiom is introduced",
         "introduces **no new admissions and no new repo-wide",
         "Status authority:** independent audit lane only",
@@ -72,7 +85,7 @@ def part0_source_firewall() -> str:
         RUNNER_PATH,
     ]
     for phrase in required:
-        check(f"source contains boundary phrase: {phrase}", phrase in note)
+        check(f"source contains boundary phrase: {phrase}", phrase in note_normalized)
 
     # Forbidden = positive over-claim or imported-physics framing. Quoted
     # uses inside disclaimer language ("no new 'cosmological backdrop
@@ -119,8 +132,8 @@ def part1_partition() -> tuple[set[str], set[str]]:
     }
     supplied_C123 = {
         "C1: cosmological principle (homogeneity + isotropy beyond S^3)",
-        "C2: adiabatic expansion (no entropy injection in leptogenesis -> CMB window)",
-        "C3: standard FRW EOS labels (w_r=1/3, w_m=0)",
+        "C2 residual: real no-injection era and g_*S table",
+        "C3 residual: real species allocation into ideal EOS components",
     }
     intersection = framework_or_conditional & supplied_C123
     union = framework_or_conditional | supplied_C123
@@ -232,8 +245,11 @@ def part5_admission_boundary_recorded() -> None:
     note = NOTE_PATH.read_text(encoding="utf-8")
     note_normalized = " ".join(note.split())
     required_honest_scope = [
-        "*Nothing.*",  # the "retired to bounded-derived class" column is empty
-        "does not retire any cosmological-backdrop admission",
+        "The finite source-free entropy and `g_*S T^3 a^3` bookkeeping behind C2 is now supported",
+        "The ideal kinetic component labels `w_r = 1/3` and `w_m = 0` are now supported",
+        "The finite component tensors for those ideal labels now assemble into the parent perfect-fluid form",
+        "retires only narrow finite C2/C3 bookkeeping and label/lift imports",
+        "does not retire the cosmological-backdrop admission",
         "records the admission boundary",
         "It does **not**",
         "open gate",
@@ -262,7 +278,7 @@ def part6_downstream_source_boundary_firewall() -> None:
             phrase in note_normalized,
         )
     blocked_targets = [
-        "C1, C2, or C3",
+        "C1, the physical no-injection part of C2, or the real species-allocation part of C3",
         "FRW dynamics",
         "entropy conservation or adiabatic expansion",
         "observational cosmology parameters",
@@ -284,10 +300,15 @@ def part6_result(fw_set: set[str], supplied_set: set[str]) -> None:
     for entry in sorted(supplied_set):
         print(f"  - {entry}")
     print(
-        "Net retirements to bounded-derived: 0 (the bridge re-bases the existing "
-        "open gate onto an explicit C1-C3 premise packet without eliminating admission)."
+        "Net retirement: finite C2 source-free entropy bookkeeping, the ideal "
+        "non-Lambda kinetic EOS labels, and their finite perfect-fluid lift are "
+        "narrowed to bounded support; C1, physical C2 no-injection, and real "
+        "species allocation remain open."
     )
-    print("No new repo-wide axiom and no claim to derive C1, C2, or C3.")
+    print(
+        "No new repo-wide axiom and no claim to derive C1, the physical "
+        "no-injection part of C2, or the full real species-allocation part of C3."
+    )
 
 
 def main() -> int:
@@ -304,8 +325,10 @@ def main() -> int:
     if FAIL == 0:
         print(
             "VERDICT: open gate passes; FRW + adiabatic backdrop decomposition "
-            "is recorded as an unresolved C1-C3 premise boundary. No new admissions "
-            "are introduced; no row's effective status is changed."
+            "is recorded as an unresolved C1-C3 premise boundary with partial "
+            "bounded support for finite C2 entropy bookkeeping, the ideal "
+            "non-Lambda C3 kinetic labels, and their finite perfect-fluid lift. "
+            "No new admissions are introduced; no row's effective status is changed."
         )
         return 0
     print("VERDICT: open gate FAILED.")

@@ -248,8 +248,8 @@ human judgment, the actual current surface status is **not** `retained`.
 
 **No-new-axiom/no-new-primitive rule.** The repo does NOT accept extensions to
 its axiom stack or primitive registry as part of physics-loop work. `A_min`
-means the current minimum axiom set, Lattice + Quantum + Record, NOT permission
-to enlarge it. A route or
+means the current minimum axiom set, Lattice + Qubit + Admissibility + Record,
+NOT permission to enlarge it. A route or
 counterfactual whose closure requires adopting a new axiom or new framework
 primitive is `infeasible`, regardless of how productive its consequences would
 be. The legitimate import-bearing shape is:
@@ -284,15 +284,20 @@ bounded imports. They must already be recorded in
 `docs/audit/data/axiom_premise_nodes.json`, where they chain-satisfy
 dependencies without bounding downstream rows. Tier-A admitted derivation
 targets live in `docs/audit/data/tier_a_admissions.json` and remain bounded
-until retired. Record is in the approved axiom baseline only in its narrow
-durable-realized-outcome form: it supplies durable registration of the realized
-outcome in a supplied readout context, identifies that outcome as the `K`/CPT
-orbit of the realized central sector, and keeps scalar readout finitely
-additive over finite pairwise-disjoint record collections. It does not supply
-the readout context, decomposition, `K`/CPT structure, sector-generation rule,
-weighting, normalization, probability, measurement/decoherence dynamics, time
-metric, within-sector data, occupancy rule, P2/modulus, log-det,
-source/action, scale, or arbitrary observable identification. The
+until retired. The approved axiom baseline is the current
+Lattice/Qubit/Admissibility/Record surface: no possibility is privileged; a
+site need not carry a record; when present, a record locks exactly one
+available local possibility; only records are readable; readout value is
+determined by record content alone; finite scalar readout is additive over
+finite pairwise-disjoint record collections; a state is a configuration of
+records; and a law privileges no states, has a supplied condition as its
+domain, and gives exactly one answer where the condition holds. It does not
+supply the readout context, decomposition, `K`/CPT structure,
+sector-generation rule, weighting, normalization, probability,
+measurement/decoherence dynamics, occurrence rule, update law, time metric,
+within-sector data, occupancy rule, P2/modulus, log-det, source/action,
+scale, state-selection rule, law-domain derivation, or arbitrary observable
+identification. The
 scale-reference primitive is the approved units primitive; do not describe it
 as a Tier-A admission or a bounded Planck import. The kinetic-isotropy
 primitive is the approved structural OS0 kinetic-form isotropy `c_t = c_s`;
@@ -601,7 +606,7 @@ routes are risky.
   a sharper obstruction, a falsified premise, or a worked failed derivation
   with the exact load-bearing wall named.
 - **First-principles reset:** before the stretch attempt, write the minimal
-  allowed premise set (`A_min`: Lattice, Quantum, Record), the approved
+  allowed premise set (`A_min`: Lattice, Qubit, Admissibility, Record), the approved
   primitive set from `docs/audit/data/axiom_premise_nodes.json`, and
   forbidden imports. The attempt must not
   rely on observed target values, fitted selectors, or literature as hidden

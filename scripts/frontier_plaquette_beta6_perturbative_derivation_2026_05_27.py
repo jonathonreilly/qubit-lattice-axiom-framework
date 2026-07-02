@@ -2,16 +2,20 @@
 """Pattern A runner-local diagnostic for the beta=6 perturbative packet note.
 
 The runner exercises the algebraic content of the admitted SU(3)
-Wilson-plaquette perturbative expansion at beta=6 GIVEN runner-local admitted
-inputs, and tests whether tadpole-improvement plus finite-order truncation
-plus a Pade [m/n] resummation reaches the admitted MC comparator
-<P>_MC = 0.5934 to any controlled accuracy.
+Wilson-plaquette perturbative expansion at beta=6 GIVEN the source-wired
+Wilson coefficient relation plus runner-local admitted inputs, and tests
+whether tadpole-improvement plus finite-order truncation plus a Pade [m/n]
+resummation reaches the admitted MC comparator <P>_MC = 0.5934 to any
+controlled accuracy.
 
-This is an ADMITTED-INPUT RUNNER-LOCAL DIAGNOSTIC: the beta=6 Wilson
-normalization, NSPT coefficient packet, MC comparator, and F2 comparator are
-admitted for this diagnostic only. They carry no derivation weight and are not
-licensed for downstream reuse. The runner reports the resulting numerical
-landscape and a scale diagnostic. The verdict the runner outputs is:
+This is a RUNNER-LOCAL DIAGNOSTIC: the Wilson coefficient relation
+beta = 2 N_c / g_bare^2 is dependency-wired to the retained-bounded Wilson
+small-a matching theorem, while the NSPT coefficient packet, MC comparator,
+and F2 comparator remain admitted for this diagnostic only. The beta=6
+diagnostic specialization, g_bare=1 specialization, and alpha_bare scale
+notation are not downstream-licensed physical authorities. The runner reports
+the resulting numerical landscape and a scale diagnostic. The verdict the
+runner outputs is:
 
     (i) at beta=6 the listed truncations through n=16 saturate near
         <P>_PT = 0.919331, missing the admitted comparator by about 54.9%;
@@ -37,6 +41,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE = ROOT / "docs" / "PLAQUETTE_BETA6_PERTURBATIVE_DERIVATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-27.md"
+WILSON_NOTE = ROOT / "docs" / "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md"
 
 PASS = 0
 FAIL = 0
@@ -105,7 +110,35 @@ W_COEFFS_NSPT_SU3 = [
 
 
 def test_framework_constants() -> None:
-    section("C1: admitted beta=6 Wilson-gauge constants")
+    section("C1: source-wired Wilson-normalization edge")
+    if not WILSON_NOTE.exists():
+        check(
+            f"Wilson small-a matching note {WILSON_NOTE.name} exists",
+            False,
+            f"path={WILSON_NOTE}",
+        )
+        return
+    wilson_body = WILSON_NOTE.read_text()
+    wilson_flat = " ".join(wilson_body.split())
+    check(
+        "Wilson theorem supplies beta = 2 N_c / g_bare^2",
+        "beta = 2 N_c / g_bare^2" in wilson_flat
+        and "beta * g_bare^2 = 2 N_c" in wilson_flat,
+        "coefficient-matching identity is present in the retained-bounded source note",
+    )
+    check(
+        "Wilson theorem includes the beta=6 specialization only with supplied g_bare^2=1",
+        "For `N_c = 3` and `g_bare^2 = 1`, this gives `beta = 6`." in wilson_flat,
+        "specialization remains conditional on N_c=3 and g_bare^2=1",
+    )
+    check(
+        "Wilson theorem keeps action-surface and g_bare boundaries explicit",
+        "does not derive that the framework must select the Wilson action surface" in wilson_flat
+        and "does not derive a physical value of `g_bare`" in wilson_flat
+        and "Wilson plaquette action-surface selection" in wilson_body
+        and "`g_bare = 1`" in wilson_body,
+        "the dependency supplies coefficient matching, not physical surface selection",
+    )
     # beta = 2 N_c / g_bare^2; with g_bare = 1, beta = 6 at N_c = 3.
     beta_from_axiom = 2.0 * N_C / 1.0
     check(
@@ -138,25 +171,33 @@ def test_source_boundary_manifest() -> None:
     flat = " ".join(body.split())
     flat_lower = flat.lower()
     check(
-        "note records 2026-06-12 audit-named demotion",
-        "2026-06-12 Audit-Named Demotion" in body
+        "note records 2026-06-12 source-boundary demotion",
+        "2026-06-12 Source-Boundary Demotion" in body
         and "Admitted Inputs (runner-local diagnostic license)" in body,
         "demotion and admitted-input sections present",
     )
     check(
         "note records admitted finite packet I_PT",
-        "I_PT = (beta = 6, w_1..w_16, <P>_MC = 0.5934, F2_SCALE_PERCENT = 0.0833%)." in flat,
-        "packet names beta, coefficient list, MC comparator, and F2 comparator",
+        "I_PT = (source-wired beta*g_bare^2 = 2 N_c relation, diagnostic specialization N_c = 3 and beta = 6, admitted w_1..w_16, admitted <P>_MC = 0.5934, admitted F2_SCALE_PERCENT = 0.0833%)." in flat,
+        "packet names source-wired Wilson relation, beta specialization, coefficient list, MC comparator, and F2 comparator",
     )
     check(
-        "note licenses NSPT/beta/MC/F2 for this diagnostic only",
+        "note records Wilson small-a matching as an explicit dependency",
+        "## 2026-06-17 source-side edge repair: Wilson coefficient relation is wired" in body
+        and "WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md" in body
+        and "Depends on" in body,
+        "Wilson coefficient relation is dependency-wired, not re-admitted",
+    )
+    check(
+        "note licenses unresolved NSPT/MC/F2 inputs for this diagnostic only",
         "nspt coefficient packet" in flat_lower
-        and "beta=6 wilson normalization" in flat_lower
         and "mc comparator" in flat_lower
         and "f2 comparator" in flat_lower
-        and flat_lower.count("admitted for this diagnostic only") >= 4
-        and flat_lower.count("not licensed for downstream reuse") >= 4,
-        "all four admitted inputs carry the no-derivation/no-reuse license",
+        and flat_lower.count("admitted for this diagnostic only") >= 3
+        and flat_lower.count("not licensed for downstream reuse") >= 3
+        and "does not derive wilson action-surface selection" in flat_lower
+        and "or a reusable `alpha_bare` authority" in flat_lower,
+        "remaining admitted inputs and alpha/beta boundaries carry no downstream license",
     )
     check(
         "note excludes actual beta=6 surface and non-perturbative route claims",
@@ -168,18 +209,48 @@ def test_source_boundary_manifest() -> None:
     )
     check(
         "note firewalls retained beta=6 surface claim after demotion",
-        "## 2026-06-12 audit firewall: no retained beta=6 surface claim" in body
-        and "do not derive the actual `beta = 6`\nplaquette" in body
-        and "do not\nlicense any downstream beta=6 Wilson/Haar surface claim" in body
-        and "no retained/effective-bounded bridge,\nnew axiom, external comparator authority, or audit status" in body,
-        "source repair remains demotion-only",
+        "## 2026-06-12 source firewall: no retained beta=6 surface claim" in body
+        and "do not derive the actual `beta = 6`\nplaquette surface" in body
+        and "do not derive `g_bare = 1`" in body
+        and "do not license any downstream beta=6\nWilson/Haar surface claim" in body
+        and "source-side dependency wiring plus demotion" in body,
+        "source repair remains diagnostic-only after the Wilson edge is wired",
     )
     check(
         "note explicitly elects admitted-input diagnostic option",
-        "## 2026-06-15 audit-boundary repair: second option elected" in body
+        "## 2026-06-15 source-boundary repair: second option elected" in body
         and "keep the row as\nan admitted-input runner-local diagnostic only" in body
-        and "not a retained or\neffective-bounded authority" in body,
-        "auditor's second repair option is source-locked",
+        and "not a retained or\neffective-bounded authority" in body
+        and "Wilson coefficient\nrelation is sourced only within the Wilson small-a theorem's stated boundary" in body,
+        "source-boundary second option is source-locked",
+    )
+    check(
+        "note scopes row as non-downstream-licensed runner-local diagnostic only",
+        "## 2026-06-20 source-boundary repair: non-downstream-licensed scoping" in body
+        and "non-downstream-licensed runner-local diagnostic only." in flat
+        and "No downstream row may cite this row as a retained or effective-bounded bridge or as a derivation" in flat
+        and "Wilson coefficient relation" in flat,
+        "source-boundary non-downstream-licensed scoping present; not a citeable bridge/derivation",
+    )
+    check(
+        "note records remaining promotion authorities as unsupplied/open",
+        "remaining authorities required *for promotion* are explicitly **unsupplied / open** here" in flat
+        and "NSPT coefficient packet" in flat
+        and "Wilson action-surface selection" in flat
+        and "g_bare = 1" in flat
+        and "MC comparator" in flat
+        and "F2 comparator" in flat
+        and flat.count("(open)") >= 4
+        and "not promotable" in flat
+        and "not licensed as a citeable bridge/derivation" in flat,
+        "NSPT packet, surface/g_bare specialization, MC comparator, and F2 comparator remain open; row not promotable",
+    )
+    check(
+        "note keeps 0.5934 MC value fenced as comparator-only, never a proof input",
+        "0.5934" in body
+        and "never a proof input" in flat
+        and "no comparator number in this note is licensed for downstream reuse" in flat,
+        "MC value stays a fenced comparator, never a derivation/proof input",
     )
     check(
         "note blocks downstream reuse of admitted beta=6 inputs",
@@ -189,8 +260,12 @@ def test_source_boundary_manifest() -> None:
     )
     check(
         "note keeps non-perturbative routes open",
-        "does not rule out strong-coupling,\ntransfer-matrix, Wigner-Racah, Borel-conformal, Monte Carlo" in body
-        and "non-perturbative route" in body,
+        "strong-coupling" in body
+        and "transfer-matrix" in body
+        and "Wigner-Racah" in body
+        and "Borel-conformal" in body
+        and "Monte Carlo" in body
+        and "not evaluated or excluded by this diagnostic" in body,
         "finite perturbative route only",
     )
 
@@ -606,8 +681,9 @@ def test_no_axiom_extension() -> None:
     section("T9: scope (no new axioms / primitives / vocabulary)")
     body_lower = NOTE.read_text().lower() if NOTE.exists() else ""
     plain_body = body_lower.replace("*", "")
-    # The perturbative coefficients, beta normalization, MC comparator, and
-    # F2 comparator are admitted for this runner-local diagnostic only.
+    # The perturbative coefficients, MC comparator, and F2 comparator remain
+    # admitted for this runner-local diagnostic only; the Wilson coefficient
+    # relation is dependency-wired without promoting the beta=6 surface.
     check(
         "no new axiom or primitive introduced (Lattice/Quantum/Record baseline unchanged)",
         "does not propose a new axiom or framework primitive" in plain_body,
@@ -663,7 +739,7 @@ def test_note_exists() -> None:
 
 def main() -> int:
     print(
-        "Plaquette beta=6 perturbative-derivation admitted-input diagnostic runner\n"
+        "Plaquette beta=6 perturbative-derivation repaired diagnostic runner\n"
         "(Pattern A; companion-note paired)\n"
     )
     test_source_boundary_manifest()

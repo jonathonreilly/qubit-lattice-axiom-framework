@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_emergent_lorentz_spatial_bz_power_mixing_boundary_2026_06_18.py
+runner_sha256: e364a76d5c59126ae75f4631c588f69d5e0701e5b560e8e425900712e28ae97b
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+========================================================================================
+Spatial-BZ power-mixing boundary: spatial-only scalar channel
+========================================================================================
+
+PART 1: spatial central-difference expansion
+PASS: central-difference dispersion has quartic spatial artifact -- a**4*k**6/360 - a**2*k**4/12 + k**2
+PASS: continuous-time kinetic term has no a^2 p0^4 lattice artifact
+
+PART 2: quartic artifact has no time component
+PASS: time-time second variation is zero
+PASS: time-space second variations are zero
+PASS: spatial second variation is nonzero before projection
+
+PART 3: O_h orbit average of the spatial quadratic projection
+PASS: O_h orbit average is a single spatial scalar -- Matrix([[4*kx**2 + 4*ky**2 + 4*kz**2, 0, 0], [0, 4*kx**2 + 4*ky**2 + 4*kz**2, 0], [0, 0, 4*kx**2 + 4*ky**2 + 4*kz**2]])
+
+PART 4: resulting marginal channel is spatial-only, coefficient open
+PASS: projected four-dimensional channel has zero p0^2 coefficient
+PASS: projected four-dimensional channel has equal spatial coefficients -- Matrix([[0, 0, 0, 0], [0, 4*kx**2 + 4*ky**2 + 4*kz**2, 0, 0], [0, 0, 4*kx**2 + 4*ky**2 + 4*kz**2, 0], [0, 0, 0, 4*kx**2 + 4*ky**2 + 4*kz**2]])
+PASS: the theorem fixes the support channel, not the physical coefficient -- delta c_t = 0, delta c_s = lambda remains an open coefficient
+
+PART 5: source-boundary guards
+PASS: source note declares audit-canonical bounded_theorem metadata
+PASS: source note names parent as trace target without markdown back-edge
+PASS: parent note records spatial-BZ channel addendum
+PASS: source note keeps coefficient, gamma, and LV sufficiency open
+
+========================================================================================
+TOTAL: PASS=13 FAIL=0
+========================================================================================
+VERDICT: exact support for a spatial-only O_h-scalar marginal mixing channel; one-loop coefficient/gamma/LV sufficiency remain open.
+
+----- stderr -----
+

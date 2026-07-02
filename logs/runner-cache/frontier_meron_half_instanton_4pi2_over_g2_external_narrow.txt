@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py
-runner_sha256: 74626901e5c6bf4811a8d061de821ee570561b49acd6353a71d4475a292a63d7
+runner_sha256: 153b9b4a56291531f60c84547ee60ae6cdae537d5eb7b6fa3479352e8db4e037
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 # Meron / fractional-instanton 4 pi^2 / g^2 external gate runner
@@ -38,14 +38,16 @@ T4: numerical exp(-S_half) at g^2 in {1/2, 1, 2}
          S_half = 39.4784176044, exp(-S_half) = 7.157e-18
 
 ==============================================================================
-T5: fractional topological charge Q = 1/2 structure is boundary-conditioned
+T5: fractional Q = 1/2 / regulator / patching SECTOR is recorded as CONDITIONAL/open and NOT supplied (segregated sector-claim check)
 ==============================================================================
-  [PASS] note states fractional topological charge Q = 1/2
-         Q = 1/2 stated explicitly
-  [PASS] note conditions Q = 1/2 on boundary/twist/half-volume data
-         boundary, twist, hemisphere, or half-volume convention recorded
-  [PASS] note records that two merons (a pair) sum to integer Q = 1
-         meron pair / sum to integer convention recorded
+  [PASS] fractional Q = 1/2 mentioned only as the conditional input
+         Q = 1/2 appears as the supplied/conditional sector value
+  [PASS] note carries an explicit Conditional / Open Premise (NOT Supplied) block
+         sector construction demoted to an open premise, not a note claim
+  [PASS] regulator/twist/patching sector is named as the OPEN GATE, not discharged
+         sector construction recorded as the open gate this note does not close
+  [PASS] note explicitly does NOT supply the sector construction
+         regulator/twist/patching sector authority explicitly not provided here
 
 ==============================================================================
 T6: singular-meron boundary refuses standalone finite-action theorem
@@ -107,7 +109,16 @@ T11: downstream source-boundary firewall
   [PASS] firewall forbids framework-substrate, finite-action, and hierarchy overclaims
          framework substrate, finite-action singular meron, hierarchy, alpha_LM^16, and v/M_Pl closures excluded
 
-=== TOTAL: PASS=27, FAIL=0 ===
+==============================================================================
+T12: 2026-06-18 algebra-core split and upstream authority boundary
+==============================================================================
+  [PASS] parent cites the 2026-06-18 half-action algebra core split
+  [PASS] parent says the split is action-arithmetic only
+  [PASS] old regulator/twist/patching authority overclaim is removed
+  [PASS] upstream infrastructure boundary excludes meron regulator/substrate bridge
+  [PASS] core note bars meron existence and boundary-construction use
+
+=== TOTAL: PASS=33, FAIL=0 ===
 
 ----- stderr -----
 

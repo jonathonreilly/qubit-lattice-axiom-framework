@@ -27,6 +27,29 @@ Promotion beyond wrapper support requires separate retained wrapper notes or
 complete helper-runner sources for the helper modules whose behavior is meant
 to be load-bearing.
 
+## Citation/use firewall (2026-06-18)
+
+Direct citations to this note are allowed only for its helper-wrapper registry
+function: it names the five helper modules consumed by
+`scripts/frontier_one_parameter_reduced_shell_law.py` and supplies the
+one-hop dependency handle that keeps those runner imports visible to the
+citation graph.
+
+Direct citations to this note may not be used as:
+
+- a derivation of any helper module;
+- a derivation of the parent one-parameter reduced shell law;
+- a derivation of the exterior projector, source-family constructors,
+  sewing-shell projection, radial DtN kernel, or nonlinear tensor / GR
+  completion;
+- an authority for moving any helper, parent shell-law, tensorial matching, or
+  publication row to a stronger status.
+
+The companion runner now checks the source tree for direct citations that lack
+this helper-wrapper / one-hop-registry qualifier. This is a source-side
+firewall only; independent audit remains responsible for any effective-status
+movement.
+
 ## Purpose
 
 This wrapper note documents the five frontier helper modules that the

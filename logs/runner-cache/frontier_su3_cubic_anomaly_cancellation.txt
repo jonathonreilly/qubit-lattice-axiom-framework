@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_su3_cubic_anomaly_cancellation.py
-runner_sha256: b31d3a9b3ec36b913e6345d6b9d13dec492d38686fcce168a4276041d78e7116
+runner_sha256: 39a66592a1f8d42fd38f3e343a5cc20ebb53212ef421daa69a154fc610940c51
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
-SU(3)^3 cubic gauge anomaly retained-count audit
+SU(3)^3 cubic gauge anomaly source-side verifier
 ========================================================================
 [PASS] A(1) reference value: A(1)=0
 [PASS] A(3) reference value: A(3)=1
@@ -16,6 +16,10 @@ SU(3)^3 cubic gauge anomaly retained-count audit
 [PASS] A(8) reference value: A(8)=0
 [PASS] conjugate fundamental has opposite anomaly index: A(3bar)=-1, -A(3)=-1
 [PASS] conjugate sextet has opposite anomaly index: A(6bar)=-7, -A(6)=-7
+[PASS] explicit Gell-Mann trace gives nonzero d118: d118=0.577350269190
+[PASS] explicit Gell-Mann trace derives A(3)=+1: A(3)=1.000000000000
+[PASS] explicit conjugate-rep trace derives A(3bar)=-1: A(3bar)=-1.000000000000
+[PASS] hard-coded core index table agrees with explicit trace derivation: table=(1,-1)
 [PASS] Q_L contributes two SU(3) fundamentals: Q_L=2
 [PASS] u_R^c contributes one anti-fundamental: u_R^c=-1
 [PASS] d_R^c contributes one anti-fundamental: d_R^c=-1
@@ -41,8 +45,13 @@ SU(3)^3 cubic gauge anomaly retained-count audit
 [PASS] colored-sector witness only: SU(3)^3 sees u_R^c and d_R^c but not color-singlet leptons
 [PASS] not a uniqueness theorem for all completions: balanced vectorlike or other anomaly-free color sectors can also cancel
 [PASS] separate from Witten and hypercharge anomalies: Witten SU(2), hypercharge uniqueness, and B-L have separate runners
+[PASS] source note records 2026-06-18 narrow-authority rebase: branch-local source repair section present
+[PASS] load-bearing inputs cite RH color anti-fundamental narrow theorem: A(3bar)=-1 source is explicit
+[PASS] load-bearing inputs cite anomaly singlet completion narrow theorem: right-handed slot arithmetic source is explicit
+[PASS] broad one-generation and hypercharge rows are not markdown load-bearing links: broad rows remain plain-text reader pointers only
+[PASS] handoff keeps full matter closure outside this row: remaining blockers are named
 
-TOTAL: PASS=33, FAIL=0
+TOTAL: PASS=42, FAIL=0
 
 ----- stderr -----
 

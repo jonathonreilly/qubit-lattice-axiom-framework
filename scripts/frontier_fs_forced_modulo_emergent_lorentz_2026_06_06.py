@@ -7,11 +7,11 @@ FS stress-test: conditional route map for "forced-modulo emergent-Lorentz + R"
 Output of the repo's /exercise skill (5-subagent fan-out + literature) run as a
 STRESS-TEST of the prior conclusion "FS (the cross-site fermion exchange sign) is
 an irreducible admission".  HARD CONSTRAINT (owner): introduce NO new
-import/principle/axiom beyond the approved Planck scale-reference primitive; only
+import/principle/axiom beyond already approved framework primitives; only
 conclude a new principle is needed if genuinely forced.
 
 REFINED ROUTE MAP.  The current route does not add a new principle beyond
-Planck.  It proposes a conditional "FORCED-MODULO realization-gate
+the existing primitive registry.  It proposes a conditional "FORCED-MODULO realization-gate
 identification + emergent-Lorentz + R" route -- conditional on the Link-B
 realization-gate identification, a framework TARGET (emergent Lorentz), and a
 buildable reconstruction R.  This runner does not derive those residuals or
@@ -127,7 +127,7 @@ def block4_cheapest_principle():
 
 def block5_owner_bottom_line():
     print("\n[BLOCK 5] Owner bottom line")
-    check("the current FS route adds no new axiom beyond the existing Planck primitive", True,
+    check("the current FS route adds no new axiom or primitive", True,
           "it remains conditional on realization-gate identification + emergent Lorentz + R")
     check("route map only: 'forced-modulo realization gate + emergent-Lorentz + R' is conditional, not closure",
           True)
@@ -143,6 +143,19 @@ def main():
     print("=" * 92)
     note_text = NOTE.read_text(encoding="utf-8")
     note_flat = " ".join(note_text.split())
+    check("note declares open_gate / conditional-support stress-test",
+          "**Claim type:** open_gate / conditional-support stress-test" in note_text)
+    check("note no longer declares bounded_theorem claim type",
+          "**Claim type:** bounded_theorem" not in note_text)
+    check("note has 2026-06-18 open-gate source-scope repair",
+          "2026-06-18 Open-Gate Source-Scope Repair" in note_text)
+    check("note source-scope certificate keeps actual surface open",
+          "actual_current_surface_status: open" in note_text
+          and "conditional_surface_status: conditional-support" in note_text)
+    check("note forbids branch-local retained proposal",
+          "proposal_allowed: false" in note_text
+          and "audit_required_before_effective_retained: true" in note_text
+          and "bare_retained_allowed: false" in note_text)
     check("note has 2026-06-16 post-audit scope firewall",
           "2026-06-16 Post-Audit Scope Firewall" in note_text)
     check("note says runner does not derive realization/Lorentz/R residuals",

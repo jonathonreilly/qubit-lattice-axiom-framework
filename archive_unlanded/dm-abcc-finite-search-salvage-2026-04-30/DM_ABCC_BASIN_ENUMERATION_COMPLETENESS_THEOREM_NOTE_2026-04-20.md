@@ -3,6 +3,14 @@
 **Date:** 2026-04-20
 **Lane:** Dark-matter A-BCC basin-selector (enumeration completeness).
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/dm-abcc-finite-search-salvage-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 **Dedicated runner:**
 `scripts/frontier_dm_abcc_basin_enumeration_completeness.py`
 **Runner result on land:** `PASS = 30, FAIL = 0`.
@@ -38,6 +46,25 @@ Any future live completeness claim needs a fresh source note plus either an
 interval/branch-and-bound proof over the `R = 50` box or a
 computer-algebra/root-isolation enumeration with certified eigenvalue-gap /
 Lipschitz bounds and deterministic far-field asymptotics.
+
+## Executable boundary repair (2026-06-17)
+
+The dedicated runner now enforces the same boundary. It verifies only the
+finite multistart/random-sampling scan, the clustering of discovered
+active-chamber minima to `{Basin 1, Basin 2, Basin X}`, the finite-root
+sanity checks, the signature partition, and explicit negative guards for the
+missing certification routes.
+
+The runner does **not** claim an interval/branch-and-bound proof, a
+computer-algebra/root-isolation enumeration, a certified worst-case
+Lipschitz/eigenvalue-gap bound, deterministic far-field asymptotic exclusion,
+or any retained completeness theorem. In particular, it did not prove
+deterministic far-field exclusion. Its terminal verdict is:
+
+```text
+VERDICT: FINITE MULTISTART BASIN SCAN BOUNDARY VERIFIED
+THEOREM-GRADE EXHAUSTIVENESS: NOT CLAIMED
+```
 
 ## 0. Historical executive summary (retracted)
 
@@ -440,10 +467,16 @@ performs:
   only Basin 1 passes 9/9 + sin δ_CP < 0 at σ = (2,1,0)).
 - **T7** — Sylvester signature partition across five basins; A-BCC
   (chamber ∩ C_base) selects Basin 1 uniquely.
-- **T8** — Final certificate at stated `(R, N, d_cluster, L_max)`.
+- **T8** — Finite-search boundary and missing-certification guards: confirms
+  the cluster tolerance remains below half the minimum basin separation,
+  checks this archived source note carries the finite-scan boundary markers,
+  and refuses interval/branch-and-bound, root-isolation, worst-case Lipschitz /
+  eigenvalue-gap, deterministic far-field, or theorem-grade exhaustiveness
+  claims.
 
-Every PASS stamp is keyed to a substantive numerical check; there are
-no hardcoded True values. Runner result on land: **PASS = 30, FAIL = 0**.
+Runner result on the original land was **PASS = 30, FAIL = 0**. After the
+2026-06-17 boundary repair, additional PASS stamps are boundary guards rather
+than new numerical evidence.
 
 ---
 

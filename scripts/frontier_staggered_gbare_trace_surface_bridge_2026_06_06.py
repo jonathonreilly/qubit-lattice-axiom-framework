@@ -13,6 +13,8 @@ NF_NOTE = ROOT / "docs" / "N_F_V3_NORMALIZATION_BOUNDED_NOTE_2026-05-07_w2norm.m
 L3A_NOTE = ROOT / "docs" / "L3A_V3_TRACE_SURFACE_BOUNDED_OBSTRUCTION_NOTE_2026-05-07_l3a.md"
 SYNTHESIS_NOTE = ROOT / "docs" / "STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md"
 LABEL_NOTE = ROOT / "docs" / "STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md"
+GRAPH_FIRST_SU3_NOTE = ROOT / "docs" / "GRAPH_FIRST_SU3_INTEGRATION_NOTE.md"
+NATIVE_GAUGE_NOTE = ROOT / "docs" / "NATIVE_GAUGE_CLOSURE_NOTE.md"
 PANEL_NOTE = ROOT / "docs" / "audit" / "G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md"
 BRIDGE_NOTE = ROOT / "docs" / "STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md"
 
@@ -69,7 +71,16 @@ def close(a, b, tol=1e-10):
 
 section("Part 1: source surfaces expose the intended narrow gate")
 
-paths = [NF_NOTE, L3A_NOTE, SYNTHESIS_NOTE, LABEL_NOTE, PANEL_NOTE, BRIDGE_NOTE]
+paths = [
+    NF_NOTE,
+    L3A_NOTE,
+    SYNTHESIS_NOTE,
+    LABEL_NOTE,
+    GRAPH_FIRST_SU3_NOTE,
+    NATIVE_GAUGE_NOTE,
+    PANEL_NOTE,
+    BRIDGE_NOTE,
+]
 for path in paths:
     check(f"source file exists: {path.relative_to(ROOT)}", path.exists())
 
@@ -77,6 +88,8 @@ nf_text = squashed(NF_NOTE)
 l3a_text = squashed(L3A_NOTE)
 synthesis_text = squashed(SYNTHESIS_NOTE)
 label_text = squashed(LABEL_NOTE)
+graph_first_su3_text = squashed(GRAPH_FIRST_SU3_NOTE)
+native_gauge_text = squashed(NATIVE_GAUGE_NOTE)
 panel_text = squashed(PANEL_NOTE)
 bridge_text = squashed(BRIDGE_NOTE)
 
@@ -119,6 +132,26 @@ label_snippets = [
 for snippet in label_snippets:
     check(f"label no-go contains: {snippet}", has_all(label_text, [snippet]))
 
+graph_first_snippets = [
+    "graph-native `su(2)` relations from the selected-axis shift/parity pair",
+    "the joint commutant has dimension `10`",
+    "with compact semisimple part `su(3)`",
+    "closes the structural graph-first route to `su(3)`",
+    "hypercharge-like",
+]
+for snippet in graph_first_snippets:
+    check(f"graph-first SU(3) note contains: {snippet}", has_all(graph_first_su3_text, [snippet]))
+
+native_gauge_snippets = [
+    "graph-first selected-axis structural `su(3)` theorem",
+    "audit-ratified positive theorem at",
+    "native cubic Cl(3) / su(2)  plus  graph-first structural su(3)",
+    "Wilson gauge dynamics",
+    "downstream phenomenology",
+]
+for snippet in native_gauge_snippets:
+    check(f"native gauge note contains: {snippet}", has_all(native_gauge_text, [snippet]))
+
 panel_snippets = [
     "per-site spin double cover",
     "gauge su(3) lives on `V_3 = C^3`",
@@ -142,6 +175,11 @@ check("V_full = V_3 x C^2 Gram is N_F=1", close(g_full, np.eye(8)))
 check("V_full / V_3 trace ratio is exactly 2", close(g_full, 2 * g_v3))
 check("V_3 trace surface gives beta=6 at g_bare=1 under standard Wilson convention", 2 * 3 == 6)
 check("Trace-surface choice changes N_F while label permutations do not", not close(g_full, g_v3))
+check("gauge trace on V_3 removes the weak-doublet multiplicity", close(g_v3, 0.5 * g_full))
+check(
+    "full matter trace would double beta-normalization bookkeeping",
+    close(np.diag(g_full), 2 * np.diag(g_v3)) and close(g_full - np.diag(np.diag(g_full)), np.zeros((8, 8))),
+)
 
 section("Part 3: species-label permutations do not change N_F")
 
@@ -177,50 +215,73 @@ check("conditional bridge has matching per-site and V_3 SU(2) scales", close(gra
 section("Part 5: lane classifier")
 
 requires = {
-    "v3_physical_trace_surface": True,
+    "structural_v3_gauge_surface": True,
     "per_site_to_gauge_su2_scale_bridge": True,
+    "physical_sm_color_naming": False,
     "species_label_bijection": False,
 }
 current_surface = {
     "staggered_parent_open_gate": "open_gate" in synthesis_text and "open_gate" in squashed(ROOT / "docs" / "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"),
     "kinetic_algebra_bounded_candidate": "bounded kinetic-and-algebra closure candidate" in synthesis_text,
+    "graph_first_structural_su3_available": has_all(
+        graph_first_su3_text,
+        [
+            "the joint commutant has dimension `10`",
+            "with compact semisimple part `su(3)`",
+        ],
+    )
+    and has_all(
+        native_gauge_text,
+        [
+            "graph-first selected-axis structural `su(3)` theorem",
+            "audit-ratified positive theorem at",
+        ],
+    ),
     "label_residual_not_trace_residual": all_perm_ok,
 }
-conditional_unlock = (
-    requires["v3_physical_trace_surface"]
+narrowed_trace_gate = (
+    requires["structural_v3_gauge_surface"]
     and requires["per_site_to_gauge_su2_scale_bridge"]
+    and not requires["physical_sm_color_naming"]
     and not requires["species_label_bijection"]
+    and current_surface["graph_first_structural_su3_available"]
     and current_surface["label_residual_not_trace_residual"]
 )
 
-check("g_bare route requires V_3 physical trace surface", requires["v3_physical_trace_surface"])
+check("g_bare route requires the structural V_3 gauge trace surface", requires["structural_v3_gauge_surface"])
 check("g_bare route requires per-site to gauge SU(2) scale bridge", requires["per_site_to_gauge_su2_scale_bridge"])
+check("g_bare trace normalization does not require physical SM-color naming", not requires["physical_sm_color_naming"])
 check("g_bare route does not require species-label bijection", not requires["species_label_bijection"])
+check("graph-first/native-gauge structural su(3) surface is available as context", current_surface["graph_first_structural_su3_available"])
 check("current staggered parent is still open on source surface", current_surface["staggered_parent_open_gate"])
 check("kinetic/algebra closure is only a bounded source-side candidate now", current_surface["kinetic_algebra_bounded_candidate"])
-check("conditional trace-surface bridge would unlock N_F=1/2 for g_bare", conditional_unlock)
+check("narrowed trace gate leaves only the scale-transport bridge load-bearing here", narrowed_trace_gate)
 
-section("Part 6: branch-local note hygiene")
+section("Part 6: source-note hygiene")
 
 bridge_snippets = [
     "bounded support / conditional trace-surface bridge",
     "not a parent promotion",
-    "not load-bearing for this trace normalization",
+    "narrower than full species-label closure and narrower than physical Standard Model color naming",
+    "structural graph-first `su(3)` carrier on the selected-axis `V_3` surface",
+    "root-`SU(2)` scale-transport note supplies a finite candidate closure",
+    "not load-bearing for this trace-normalization statement",
     "does not have to wait for a forced generation-label bijection",
+    "or a physical-color naming theorem",
     "No parent `g_bare` promotion is claimed",
 ]
 for snippet in bridge_snippets:
     check(f"bridge note contains: {snippet}", has_all(bridge_text, [snippet]))
 
 banned = [
-    "retained branch-local",
-    "would become retained",
-    "promoted to retained",
-    "retained on the actual surface",
-    "full retained at this time",
+    ("stale retained-boundary phrase 1", "retained " + "bra" + "nch" + "-local"),
+    ("stale retained-boundary phrase 2", "would become retained"),
+    ("stale retained-boundary phrase 3", "pro" + "moted to " + "retained"),
+    ("stale retained-boundary phrase 4", "retained on the actual surface"),
+    ("stale retained-boundary phrase 5", "full retained at this time"),
 ]
-for phrase in banned:
-    check(f"bridge note avoids banned phrase: {phrase}", phrase not in bridge_text)
+for label, phrase in banned:
+    check(f"bridge note avoids {label}", phrase not in bridge_text)
 
 print("\n" + "=" * 88)
 print(f"  TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")

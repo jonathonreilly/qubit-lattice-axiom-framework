@@ -10,6 +10,8 @@ uniqueness.
 **Date:** 2026-04-14 (audit-narrowing refresh: 2026-05-10)  
 **Branch:** `codex/review-active`  
 **Role:** direct universal route / bounded blocker label  
+**Script:** `scripts/frontier_universal_gr_tensor_action_blocker.py`
+(source-side verifier; PASS=5 FAIL=0 on current source)
 **Claim type:** bounded_blocker_label
 **Status authority:** independent audit lane only.
 **Purpose:** name the blocker so downstream notes can target a sharp object;

@@ -245,3 +245,18 @@ The runner independently checks:
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency. The independent audit lane is the only status
 authority.
+
+## 2026-06-17 restricted packet verifier
+
+The re-audit packet is now pinned by
+[`scripts/gl_f_reconstruction_packet_verifier_2026_06_17.py`](../scripts/gl_f_reconstruction_packet_verifier_2026_06_17.py),
+with cached output at
+[`logs/runner-cache/gl_f_reconstruction_packet_verifier_2026_06_17.txt`](../logs/runner-cache/gl_f_reconstruction_packet_verifier_2026_06_17.txt).
+
+The verifier checks this parent reconstruction note, the
+identification-bridge decomposition, the substep-1 compatibility no-go, and
+the GL(F) conditional discriminator against their SHA-fresh runner caches. It
+also checks that the bridge note's expected count matches the current
+`PASS=39 FAIL=0` cache. This is source-side packaging only: it does not derive
+the matter-functional/action-surface clause, does not supply `GL(F)` as an
+unconditional baseline theorem, and does not set any audit status.

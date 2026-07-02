@@ -442,6 +442,29 @@ gap reduces to "import order-one + KO-dim-6 as substrate primitives".
 If no, the gap remains the bundled open gate of the three NCG
 ingredients.
 
+## 2026-06-18 no-new-axioms underdetermination boundary
+
+[`P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md`](P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md)
+tests the no-new-axioms derivation route requested by the latest audit. Its
+runner uses the current `Lattice + Quantum + Record` baseline from
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) and finds the
+same source boundary from explicit countermodels:
+
+- the same `Cl(3)` chirality block admits both SM-like and Pati-Salam-like
+  `Cl⁺(3)` finite actions;
+- the one-site qubit algebra contains no nontrivial `M_3(C)` color factor;
+- both chirality-commuting and chirality-swapping antiunitary `J` choices exist
+  on the same finite block;
+- the order-one verdict depends on an extra finite Dirac/opposite-action
+  choice not supplied by the baseline.
+
+This new boundary does not approve or register the NCG primitives. It prunes
+only the current no-new-axioms derivation route for the order-one,
+KO-dim-6, and finite-algebra packet. The parent therefore remains an open
+gate unless those structures are derived by a separate retained bridge,
+explicitly approved as primitives, or bypassed by a different SM LH/RH content
+route.
+
 ```yaml
 claim_type_author_hint: open_gate
 claim_scope: |

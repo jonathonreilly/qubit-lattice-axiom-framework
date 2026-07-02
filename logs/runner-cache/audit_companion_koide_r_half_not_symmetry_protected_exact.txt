@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py
-runner_sha256: ea2926c008d3acd36628a986523a326bfae57fd01f16445032fedfcc02049d7f
+runner_sha256: 5d31f21cba4b95f09f621d6806edc9375d6a808c66ec286161301453c2de6940
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 PASS - (1a) Q = (1 + (q/p)^2)/3 for the C3 decomposition (singlet p, doublet q)
@@ -12,13 +12,16 @@ PASS - (2)  r = 1/2  <=>  E+ (=3a^2) = E_perp (=6|b|^2)  (equal singlet/doublet 
 PASS - (3)  S3-symmetric Yukawa -> eigenvalue multiplicities {1,2}: TWO degenerate masses (excluded for leptons)
 PASS - (4)  C3 leaves r free: Q=(1+2r)/3 is non-constant in r (Q'(r)=2/3 != 0), so C3 does not fix r
 PASS - (5)  dim(singlet)=1 != 2=dim(doublet): no unitary swaps them -> r=1/2 is a norm-balance, not a symmetry
+PASS - (6)  C3-compatible coefficient rephasing/doublet-basis rotation preserves |b|^2 and r=|b|^2/a^2, so it cannot force r=1/2
 
-6 PASS, 0 FAIL
+7 PASS, 0 FAIL
 
 NO-GO verified: r=1/2 (Q=2/3) is the equal-singlet/doublet-energy / 45-degree condition (1,2); it
 is NOT fixed by the tested C3/S3 unitary symmetry routes -- S3 forces degeneracy (3), C3 leaves
-r free (4), and the 1-vs-2-dim irreps cannot be swapped (5). Any positive derivation must enter
-through dynamics or extra structure rather than through those symmetry routes.
+r free (4), the 1-vs-2-dim irreps cannot be swapped (5), and C3-compatible coefficient
+rephasing/doublet-basis calibration preserves |b|^2/a^2 (6). These routes are not asserted to
+exhaust the symmetry-protection space; any positive derivation must enter through dynamics,
+extra structure, or another route not checked here rather than through those symmetry/calibration routes.
 
 ----- stderr -----
 

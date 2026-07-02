@@ -7,6 +7,8 @@
 **Purpose:** test whether an action-stationarity or constraint-style theorem
 can bypass the complement-frame selection problem on the exact universal
 `A1`-anchored quotient-kernel route
+**Script:** `scripts/frontier_universal_gr_constraint_action_stationarity.py`
+(source-side verifier; PASS=10 FAIL=0 on current source)
 
 ## Verdict
 

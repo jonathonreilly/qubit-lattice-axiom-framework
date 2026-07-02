@@ -1,0 +1,103 @@
+===== runner cache v1 =====
+runner: scripts/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py
+runner_sha256: b2fef5622432d13298c6c39339060da63e7044d5fff1891603bc45ae1df2b6a1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+SU(3) beta=6 conditional gap restricted packet verifier
+============================================================================
+PASS docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md exists
+PASS docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md exists
+PASS docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md exists
+PASS docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md exists
+PASS docs/RP_WILSON_TEMPORAL_GAUGE_BRIDGE_SIGN_AND_POSITIVITY_REPAIR_NOTE_2026-06-06.md exists
+PASS parent records 'open_gate / conditional fixed-lattice reduction'
+PASS parent records 'independent audit lane only'
+PASS parent records 'No second-order bulk critical point occurs'
+PASS parent records 'This is a reduction theorem, not an unconditional mass-gap theorem.'
+PASS parent records 'Not an unconditional `beta=6` gap.'
+PASS parent records '2026-06-15 audit-unlock residual certificate'
+PASS parent records '2026-06-16 transfer-kernel dependency-edge repair'
+PASS parent records 'no-second-order-bulk-critical-point premise'
+PASS parent records 'does not claim a beta=6 gap'
+PASS parent records 'does not retag any ledger row'
+PASS parent records 'WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md'
+PASS parent records 'AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md'
+PASS parent records 'su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py'
+PASS parent records 'does not prove the missing no-second-order-bulk-criticality theorem'
+PASS parent keeps fixed-lattice scope separate from continuum physics
+PASS parent identifies the exact remaining blocker
+PASS rigorous floor records 'explicit-constant convergence floor'
+PASS rigorous floor records '0.0047'
+PASS rigorous floor records '0.078%'
+PASS rigorous floor records 'remaining'
+PASS rigorous floor records 'Balaban-class RG-constructive work'
+PASS rigorous floor records 'does not promote, demote, or set the audit status'
+PASS floor clears only the lower edge of the premise interval
+PASS Wilson transfer note records 'gauge-kernel positivity half'
+PASS Wilson transfer note records 'positive semidefinite'
+PASS Wilson transfer note records 'reflection-positivity theorem for the full interacting'
+PASS Wilson transfer note records 'does NOT close the full interacting reflection positivity'
+PASS Wilson transfer note records 'gauge kernel alone'
+PASS RP bridge records 'Wilson Plaquette Temporal-Gauge Bridge'
+PASS RP bridge records "does not set the target row's status"
+PASS RP bridge records 'does **not** mean a full interacting `SU(N)` proof'
+PASS RP bridge records 'bosonic half'
+PASS RP bridge records 'plane-kernel positivity'
+PASS RP sign repair records 'Sign Repair'
+PASS RP sign repair records 'sign** of the weight'
+PASS RP sign repair records 'antilinearity'
+PASS RP sign repair records 'does not promote this note or change any audited claim scope'
+PASS RP sign repair records 'full interacting `SU(N)` finite'
+PASS scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py exists
+PASS logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt exists
+PASS logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt records runner path -- runner=scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py
+PASS logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt sha matches source -- cache=d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8, live=d9f3e0224701a59ba70c7b4a706c980e87a6b1b878c6ae23ab24d5254445f3d8
+PASS logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt contains 'TOTAL: PASS=10 FAIL=0'
+PASS logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt contains 'SCOPE: conditional fixed-lattice reduction plus diagnostics only'
+PASS logs/runner-cache/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.txt contains 'no-second-order-bulk-point premise remains open'
+PASS scripts/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.py exists
+PASS logs/runner-cache/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.txt exists
+PASS logs/runner-cache/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.txt records runner path -- runner=scripts/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.py
+PASS logs/runner-cache/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.txt sha matches source -- cache=1c1be9a59cb278bce7656a4d0ffd481ad6aeaf36b0e5e3fc59dff9840714ed11, live=1c1be9a59cb278bce7656a4d0ffd481ad6aeaf36b0e5e3fc59dff9840714ed11
+PASS logs/runner-cache/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.txt contains 'SUMMARY: PASS=15 FAIL=0'
+PASS logs/runner-cache/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.txt contains 'cleared 0.078% of the interval'
+PASS logs/runner-cache/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.txt contains 'Balaban-class RG-constructive work -- open, not claimed'
+PASS scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py exists
+PASS logs/runner-cache/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.txt exists
+PASS logs/runner-cache/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.txt records runner path -- runner=scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py
+PASS logs/runner-cache/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.txt exits zero -- exit_code=0
+PASS logs/runner-cache/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.txt status ok -- status=ok
+PASS logs/runner-cache/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.txt sha matches source -- cache=df8b075198deb08a69b5ce42e9386baae875374f303eb747e4689093f0584fa3, live=df8b075198deb08a69b5ce42e9386baae875374f303eb747e4689093f0584fa3
+PASS logs/runner-cache/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.txt contains 'SCORECARD PASS=6 FAIL=0'
+PASS logs/runner-cache/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.txt contains 'C4_wilson_transfer_kernel_gram_PSD'
+PASS scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py exists
+PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt exists
+PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt records runner path -- runner=scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py
+PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt exits zero -- exit_code=0
+PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt status ok -- status=ok
+PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt sha matches source -- cache=e577d695e122c88f8fc6ef8cccae52110cae196c2a76a181af3a40366642e1d0, live=e577d695e122c88f8fc6ef8cccae52110cae196c2a76a181af3a40366642e1d0
+PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt contains 'TOTAL: 16 PASS / 0 FAIL'
+PASS logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt contains 'integrated three-factor RP Gram PSD'
+PASS scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py exists
+PASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt records runner path -- runner=scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py
+PASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt sha matches source -- cache=7cf9638e41ef5bfadb5920787fc63802e0ed25888684e10e8ebd48bc9a94767d, live=7cf9638e41ef5bfadb5920787fc63802e0ed25888684e10e8ebd48bc9a94767d
+PASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt contains 'TOTAL: 17 PASS / 0 FAIL'
+PASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt contains 'sign is load-bearing'
+PASS restricted packet is non-promotional
+PASS remaining positive route is exactly the bulk-criticality theorem
+============================================================================
+TOTAL: PASS=87 FAIL=0
+SU(3) beta=6 packet is source-side re-audit ready: the lower-edge analyticity floor and transfer/RP dependencies are cached, while the no-second-order-bulk-criticality theorem on the remaining window is still explicitly open.
+
+----- stderr -----
+

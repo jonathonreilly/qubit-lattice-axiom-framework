@@ -32,10 +32,16 @@ inputs in a form the restricted packet can verify.
 Admitted-context inputs (named upstream authorities, cited but not closed
 inside this packet):
 
+- [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md) —
+  source-packet authority for the `delta_A1`, `u_E`, `u_T`, and `K_R`
+  bilinear-carrier anchors used by `CURRENT_TYPED_EDGES`
 - [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) (`audited_clean`) —
   exact bilinear carrier and restricted bright readout class
 - [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) (`audited_clean`) —
   exact slice backbone `Lambda_R`
+- [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md) —
+  source-packet authority for the conditional T-side candidate anchors and
+  reverse algebra edges used by the 2026-06-11 quote-anchored inventory repair
 - [RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md) (latest verdict `audited_conditional`,
   2026-05-10) — SU(3) connected color projection
   `R_conn = (N_c^2 - 1)/N_c^2`
@@ -84,11 +90,26 @@ three checks. Without `MISSING_BRIDGE`, the source-to-`rho_E` path remains
 absent; with `MISSING_BRIDGE`, the path remains present; the bypass
 predicate remains unchanged.
 
-Residual: this repair is complete over the named authority bank and the
-deterministic sentence-level assertion sweep. It does not claim coverage of
-authorities outside that bank. Quote anchoring certifies that the inventory
+Residual: this repair is complete over the named five-file authority bank and
+the deterministic sentence-level assertion sweep. It does not claim coverage
+of authorities outside that bank. Quote anchoring certifies that the inventory
 edges have current-file provenance; it does not certify the truth of those
 authority notes, and it is not an audit-status change.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** bounded no-go over the explicit five-file
+source packet and configured typed-edge bank. The runner now verifies the
+endpoint algebra, quote anchors, authority-bank sentence sweep, and no-flip
+reachability result, but the result is still conditional on the cited source
+packet and does not derive the missing cross-domain theorem
+`R_conn -> gamma_T(center)/gamma_E(center) = -R_conn`.
+
+This note may be cited for the typed-source-domain obstruction and for the
+fact that adding exactly the missing bridge would force
+`beta_E/alpha_E = 21/4` algebraically. It may not be cited as a retained
+derivation of the up-type scalar law, `m_u`, `m_c`, or any quark mass.
+Independent audit still owns any effective status movement.
 
 ## 1. Question
 
@@ -284,7 +305,7 @@ PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no
 Expected result:
 
 ```text
-TOTAL: PASS=33, FAIL=0
+TOTAL: PASS=103, FAIL=0
 VERDICT: current Route-2 + SU(3) support has no typed R_conn
 source-domain bridge. Adding that bridge would force rho_E=21/4,
 but without it the up-type scalar law remains open.

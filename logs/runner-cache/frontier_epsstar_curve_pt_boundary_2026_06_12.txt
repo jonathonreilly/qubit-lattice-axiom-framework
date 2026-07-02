@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/frontier_epsstar_curve_pt_boundary_2026_06_12.py
+runner_sha256: d2a306114c1aaff0250fba20e172eb6d21ac964ca636ccf8cd9f0f8cc68c1cc1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 20.01
+status: ok
+----- stdout -----
+PT epsstar boundary curve verifier
+landed anchor: q=24, GL=160; PT cell: Q=24, Ly=2, N=48, GL=20
+
+S0 ANCHORS
+LANDED_ANCHOR m=0.000 T=0.200 mu*=1.699119804762 frozen=1.708000000000 abs_delta=8.880195238500e-03
+PASS: S0 landed finite-flux boundary root matches frozen 1.708 within 2e-2 :: abs_delta=8.880e-03, tol=2.0e-02
+PASS: S0 PT anchor m=0.00 T=0.20: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.536074e-01, chi_hi=+3.450655e-01
+PT_ANCHOR m=0.000 T=0.200 mu*_PT=1.631150561591 chi_PT=+1.009609e-15 interband=-8.887936e-01
+PASS: S0 anti-fabrication: PT interband term is nontrivial at the m=0,T=0.2 root :: |interband|=8.888e-01, min=1.0e-01
+
+S1 PT BOUNDARY GRID
+PASS: S1 m=0.00 T=0.15: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.632554e-01, chi_hi=+3.517897e-01
+ROOT m=0.000 T=0.150 mu*_PT=1.618806032391 chi_PT=+4.857226e-17 interband=-8.386961e-01
+PASS: S1 m=0.20 T=0.15: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.672626e-01, chi_hi=+3.486682e-01
+ROOT m=0.200 T=0.150 mu*_PT=1.628545410087 chi_PT=-1.370432e-15 interband=-1.194397e+00
+PASS: S1 m=0.30 T=0.15: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.711796e-01, chi_hi=+3.448318e-01
+ROOT m=0.300 T=0.150 mu*_PT=1.640634116824 chi_PT=-2.050443e-15 interband=-1.610447e+00
+PASS: S1 m=0.50 T=0.15: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.837729e-01, chi_hi=+3.327423e-01
+ROOT m=0.500 T=0.150 mu*_PT=1.678720703286 chi_PT=-2.914335e-16 interband=-2.842215e+00
+PASS: S1 m=0.00 T=0.20: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.536074e-01, chi_hi=+3.450655e-01
+ROOT m=0.000 T=0.200 mu*_PT=1.631150561591 chi_PT=+1.009609e-15 interband=-8.887936e-01
+PASS: S1 m=0.20 T=0.20: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.595708e-01, chi_hi=+3.418429e-01
+ROOT m=0.200 T=0.200 mu*_PT=1.640625324075 chi_PT=+8.621576e-16 interband=-1.343681e+00
+PASS: S1 m=0.30 T=0.20: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.669687e-01, chi_hi=+3.378034e-01
+ROOT m=0.300 T=0.200 mu*_PT=1.652415056815 chi_PT=+1.720846e-15 interband=-1.839849e+00
+PASS: S1 m=0.50 T=0.20: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.904739e-01, chi_hi=+3.247866e-01
+ROOT m=0.500 T=0.200 mu*_PT=1.689750211078 chi_PT=-5.846018e-16 interband=-3.273157e+00
+PASS: S1 m=0.00 T=0.30: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.636907e-01, chi_hi=+3.162104e-01
+ROOT m=0.000 T=0.300 mu*_PT=1.664039218982 chi_PT=-2.321060e-15 interband=-1.069439e+00
+PASS: S1 m=0.20 T=0.30: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.686101e-01, chi_hi=+3.131088e-01
+ROOT m=0.200 T=0.300 mu*_PT=1.673191914374 chi_PT=+1.266348e-16 interband=-2.015376e+00
+PASS: S1 m=0.30 T=0.30: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.746139e-01, chi_hi=+3.092155e-01
+ROOT m=0.300 T=0.300 mu*_PT=1.684568044578 chi_PT=-1.334002e-15 interband=-2.785076e+00
+PASS: S1 m=0.50 T=0.30: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.926608e-01, chi_hi=+2.966392e-01
+ROOT m=0.500 T=0.300 mu*_PT=1.720502977869 chi_PT=+2.223915e-15 interband=-4.754766e+00
+PASS: S1 m=0.00 T=0.40: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.674006e-01, chi_hi=+2.757329e-01
+ROOT m=0.000 T=0.400 mu*_PT=1.707819786686 chi_PT=-2.152792e-15 interband=-1.296652e+00
+PASS: S1 m=0.20 T=0.40: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.705844e-01, chi_hi=+2.728390e-01
+ROOT m=0.200 T=0.400 mu*_PT=1.716167302649 chi_PT=-3.847617e-15 interband=-2.977581e+00
+PASS: S1 m=0.30 T=0.40: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.744217e-01, chi_hi=+2.692118e-01
+ROOT m=0.300 T=0.400 mu*_PT=1.726544950735 chi_PT=+3.075665e-15 interband=-4.070590e+00
+PASS: S1 m=0.50 T=0.40: fixed bracket [1.2,2.4] contains a PT zero :: chi_lo=-2.856365e-01, chi_hi=+2.575366e-01
+ROOT m=0.500 T=0.400 mu*_PT=1.759343199336 chi_PT=+1.006140e-16 interband=-6.551602e+00
+
+S2 QUADRATURE COLLAPSE
+COLLAPSE T=0.150 eps*(T)^2=2.600619157037 eps*(T)=1.612643530678 rel_spread=1.250315999130e-02
+PASS: S2 collapse spread at T=0.15 is below frozen 2% :: spread=1.250e-02, tol=2.0e-02
+COLLAPSE T=0.200 eps*(T)^2=2.639508726100 eps*(T)=1.624656494801 rel_spread=1.297701724708e-02
+PASS: S2 collapse spread at T=0.20 is below frozen 2% :: spread=1.298e-02, tol=2.0e-02
+COLLAPSE T=0.300 eps*(T)^2=2.746624424577 eps*(T)=1.657294308376 rel_spread=1.328682851332e-02
+PASS: S2 collapse spread at T=0.30 is below frozen 2% :: spread=1.329e-02, tol=2.0e-02
+COLLAPSE T=0.400 eps*(T)^2=2.889531148609 eps*(T)=1.699862096939 rel_spread=1.531136135402e-02
+PASS: S2 collapse spread at T=0.40 is below frozen 2% :: spread=1.531e-02, tol=2.0e-02
+S2 measured max per-T spread=1.531136135402e-02; frozen bound=2.0e-02
+
+S3 EPSSTAR CURVE CHARACTERIZATION
+EPS_TABLE T=0.150 eps*(T)=1.612643530678 collapse_spread=1.250315999130e-02
+EPS_TABLE T=0.200 eps*(T)=1.624656494801 collapse_spread=1.297701724708e-02
+EPS_TABLE T=0.300 eps*(T)=1.657294308376 collapse_spread=1.328682851332e-02
+EPS_TABLE T=0.400 eps*(T)=1.699862096939 collapse_spread=1.531136135402e-02
+PASS: S3 eps*(T) is strictly increasing on T={0.15,0.2,0.3,0.4} :: eps*(T)=1.612643530678, 1.624656494801, 1.657294308376, 1.699862096939
+REGRESSION linear_eps: a=1.556668656138 b=0.350268386898 max_rel_residual=2.688034230499e-03
+REGRESSION eps2_T2: c=2.555130272657 d=2.098439570228 max_rel_residual=9.592103586267e-04
+REGRESSION better_characterization=eps*(T)^2 = c + d*T^2
+PASS: S3 better fixed-form regression characterization has max relative residual below 2e-3 :: better=eps*(T)^2 = c + d*T^2, best_residual=9.592e-04, linear_residual=2.688e-03, eps2_T2_residual=9.592e-04, tol=2.0e-03
+
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

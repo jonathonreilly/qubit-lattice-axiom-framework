@@ -9,7 +9,7 @@ statuses all change; only current repo surfaces are authoritative.
 
 1. The current minimal-axioms memo. Resolve it through
    `docs/audit/data/axiom_premise_nodes.json` → `minimal_axioms.current_path`
-   (currently `docs/MINIMAL_AXIOMS_2026-06-05.md`) so a re-dated memo cannot
+   (currently `docs/MINIMAL_AXIOMS_2026-06-29.md`) so a re-dated memo cannot
    leave you on a stale axiom set.
 2. `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`, then the
    registry `docs/audit/data/axiom_premise_nodes.json` and each approved
@@ -24,23 +24,31 @@ statuses all change; only current repo surfaces are authoritative.
 6. For the specific lane: the relevant notes and runners, plus
    `docs/repo/LANE_REGISTRY.yaml` and `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
 
-## The Three Axioms (use the names, not letter codes)
+## The Four Axioms (use the names, not letter codes)
 
-- **Lattice** — the site set is `Z^3` with standard translation action and
-  nearest-neighbor cubic adjacency.
-- **Quantum** — one qubit per site; the one-site operator algebra is
-  `M_2(ℂ)`, equivalently `Cl(3,0)` in its real-algebra reading.
-- **Record** — durable registration of the realized outcome: given a readout
-  context with a finite central-sector decomposition and a fixed `K`/CPT
-  conjugation, the realized outcome is the `K`/CPT orbit of the realized
-  central sector, and scalar readout is finitely additive over finite
-  pairwise-disjoint record collections.
+- **Lattice** — physical sites are the points of the cubic lattice `Z^3`,
+  with nearest-neighbor adjacency, standard translations, and proper cubic
+  rotations.
+- **Qubit** — each site has a domain of local possibilities; the full one-site
+  possibility domain has algebraic presentation `M_2(ℂ)`, with `Cl(3,0)` as
+  equivalent real-algebra notation only; no possibility is privileged.
+- **Admissibility** — one fixed nearest-neighbor admissibility rule, covariant
+  under lattice translations and proper cubic rotations; for each site, the
+  available possibilities are determined by, and vary with, the
+  nearest-neighbor conditions.
+- **Record** — a site need not carry a record; when present, a record locks
+  exactly one available local possibility. Only records are readable; readout
+  value is determined by record content alone; scalar readout is finitely
+  additive over finite pairwise-disjoint record collections.
+- **Qualification** — a state is a configuration of records. A law privileges
+  no states; its domain is a supplied condition, and where that condition holds
+  it gives exactly one answer.
 
-Each axiom's memo states explicitly what it does NOT supply (dynamics, Born
-rule, readout context, species identification, gauge group, time metric,
-unit conversion, ...). Treat those exclusion lists as binding: anything on
-them enters only through a named derivation lane with retained status, an
-approved primitive, or an explicit Tier-A admission.
+The minimal-axioms memo states explicitly what the axiom baseline does NOT
+supply (dynamics, Born rule, readout context, species identification, gauge
+group, time metric, unit conversion, ...). Treat those exclusion lists as
+binding: anything on them enters only through a named derivation lane with
+retained status, an approved primitive, or an explicit Tier-A admission.
 
 ## Standing Discipline
 

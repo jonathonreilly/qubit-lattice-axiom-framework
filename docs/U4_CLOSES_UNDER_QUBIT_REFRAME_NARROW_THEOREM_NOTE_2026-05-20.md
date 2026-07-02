@@ -2,14 +2,16 @@
 
 **Date:** 2026-05-20
 **Type:** axiom-unpacking support note (not a new theorem-grade derivation)
-**Claim type:** bounded_theorem
+**Claim type:** positive_theorem
 **Status:** source-side proposal — independent audit lane owns the verdict
+**Script:** `scripts/frontier_u4_qubit_reframe_closure.py`
+(source-side verifier; PASS=15 FAIL=0 on current source)
 **Purpose:** Make explicit that the **U4 bridge** ("the framework's
 per-site Hilbert space on the Z^3 substrate IS the Cl(3) faithful
 complex irrep on per-site `V`") — open under the pre-2026-05-20 Cl(3)
 framing — is **directly given by the qubit-per-site baseline** of
-the qubit-reframe axiom set
-([`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)).
+the current Quantum axiom
+([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)).
 
 **Audit-dispatch parent candidate:** If a future independent audit
 evaluates whether this U4 closure note is a non-chain-closing
@@ -51,18 +53,17 @@ moving the U4-conditional sub-claims of several substep-1 narrow
 theorems (`staggered_dirac_substep1_u4_conditional_single_module`,
 `staggered_dirac_substep1_grassmann_forcing_bridge`,
 `staggered_dirac_substep1_jw_bridge`) from conditional to unconditional
-under the 2026-05-20 axiom set. It does not by itself close the parent
+under the current Quantum axiom. It does not by itself close the parent
 `staggered_dirac_realization_gate_note_2026-05-03` (which has additional
 substeps beyond U4) or retag any downstream row.
 
 ## Claim
 
 By the qubit-per-site baseline in
-[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md)
-("**Reality is a qubit at every lattice site.** Equivalently: each
-site `x ∈ Z^3` carries the per-site operator algebra `M_2(ℂ)`, the
-2×2 complex matrix algebra, equivalent under the real-algebra
-isomorphism `M_2(ℂ) ≅ Cl(3,0)`."):
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+("At each site `x`, the primitive physical local degree of freedom is
+one qubit; equivalently, the primitive one-site operator algebra is
+`A_x ~= M_2(C)`, equivalently `Cl(3,0)` in its real-algebra reading."):
 
 **Axiom-unpacking statement (narrow).** For every lattice site `x ∈ Z^3`, the per-site
 Hilbert space `H_x` is `ℂ²`, the unique faithful complex irreducible
@@ -108,19 +109,19 @@ additional physical premise — the staggered-Dirac/Grassmann
 one-particle-per-site realization — that lived in the open
 `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03` gate's substep 1.
 
-The 2026-05-20 axiom reframe replaces this two-step "abstract Cl(3) +
-open bridge" structure with a single-axiom commitment.
+The current Quantum axiom, introduced by the 2026-05-20 qubit reframe and
+carried by the 2026-06-05 three-axiom memo, replaces this two-step
+"abstract Cl(3) + open bridge" structure with a single-axiom commitment.
 
 ## Step 1 — The qubit-per-site baseline specifies the per-site object directly
 
-The qubit-per-site baseline in `MINIMAL_AXIOMS_2026-05-20.md` reads
+The qubit-per-site baseline in `MINIMAL_AXIOMS_2026-06-05.md` reads
 (as recorded in the canonical
 axiom doc):
 
-> "Reality is a qubit at every lattice site. Equivalently: each site
-> `x ∈ Z^3` carries the per-site operator algebra `M_2(ℂ)`, the 2×2
-> complex matrix algebra, equivalent under the real-algebra
-> isomorphism `M_2(ℂ) ≅ Cl(3,0)`."
+> "At each site `x`, the primitive physical local degree of freedom is
+> one qubit; equivalently, the primitive one-site operator algebra is
+> `A_x ~= M_2(C)`, equivalently `Cl(3,0)` in its real-algebra reading."
 
 The word "qubit" carries content: a qubit is, by standard quantum-
 information definition, a 2-dim complex Hilbert space `ℂ²` with the
@@ -182,7 +183,7 @@ no longer open under the qubit reframe.
 ## What this can support after audit
 
 - **Closure of the U4 conditional on substep-1 narrow theorems** under
-  the 2026-05-20 axiom set. If retained, the three named substep-1
+  the current Quantum axiom. If retained, the three named substep-1
   notes can be re-audited with their U4 admission marked closed by the
   qubit-per-site baseline,
   potentially promoting their bounded status.
@@ -211,7 +212,7 @@ no longer open under the qubit reframe.
 
 ## Admitted inputs
 
-1. **Qubit-per-site baseline of MINIMAL_AXIOMS_2026-05-20** —
+1. **Qubit-per-site baseline of MINIMAL_AXIOMS_2026-06-05** —
    qubit at every site,
    equivalently per-site `M_2(ℂ) ≅ Cl(3,0)`. The axiom is the input,
    not derived here.
@@ -225,8 +226,8 @@ no longer open under the qubit reframe.
 
 `positive_theorem` candidate at narrow-theorem granularity. The narrow
 contribution is making the U4 closure under the qubit reframe **explicit
-and citeable** — recording that the 2026-05-20 axiom set retires the
-U4 open bridge that the pre-2026-05-20 framing carried.
+and citeable** — recording that the current Quantum axiom retires the
+U4 open bridge that the pre-qubit-reframe framing carried.
 
 Granularity matches the retained
 `cl3_complexification_split_narrow_theorem_note_2026-05-10` and the
@@ -238,7 +239,7 @@ axiom applied to make the framework's commitments explicit.
 
 **Upstream framework dependencies** (load-bearing; markdown links):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site baseline (qubit per site = `M_2(ℂ) ≅ Cl(3,0)`)
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — current axiom memo; supplies the Quantum axiom (one qubit per site = `M_2(C)`, equivalently `Cl(3,0)`)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) — retained; §(K2) `M_2(ℂ) ≅ Cl(3,0)` real-algebra isomorphism, §(K4) two-dim irrep dimensional readout
 
 **Upstream standard-math imports** (named non-derivation):
@@ -254,6 +255,7 @@ axiom applied to make the framework's commitments explicit.
 - `STAGGERED_DIRAC_SUBSTEP1_JW_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md` — substep-1 cross-site anticommutation bridge with U4 admission
 - `CL3_PER_SITE_HILBERT_DIM_TWO_THEOREM_NOTE_2026-05-02.md` — pre-reframe theorem now derivable in one line from the qubit-per-site baseline
 - `A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md` — companion meta on the qubit identification
+- `MINIMAL_AXIOMS_2026-05-20.md` — historical axiom memo that introduced the qubit-reframe wording, superseded by the current three-axiom memo above
 
 ## What this file is not
 

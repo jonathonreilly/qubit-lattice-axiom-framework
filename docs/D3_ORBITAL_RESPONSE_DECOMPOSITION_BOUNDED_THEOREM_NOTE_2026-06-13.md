@@ -5,6 +5,10 @@
 **Primary runner:** `scripts/frontier_d3_orbital_response_decomposition_2026_06_13.py`
 **Runner cache:** `logs/runner-cache/frontier_d3_orbital_response_decomposition_2026_06_13.txt`
 **Status:** source proposal; the audit lane grades.
+**Native prefactor dependency:**
+[`LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md`](LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+**Normalization boundary dependency:**
+[`D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md`](D3_LANDAU_PEIERLS_SINGLE_BAND_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md)
 **Status authority:** independent audit lane. This source note does not set or
 predict an audit outcome and does not edit audit-owned registry, ledger, queue,
 or publication-status surfaces.
@@ -19,6 +23,15 @@ cubic `Z^3` lattice, the finite-torus small-field orbital grand-potential
 response for a uniform Peierls field through the xy plaquettes is tracked by
 the `d = 3` Landau-Peierls intraband term, with the single-band interband term
 equal to zero.
+
+2026-06-18 repair: the Landau-Peierls coefficient used by the runner is no
+longer a raw textbook input inside this packet. The runner consumes the exact
+rational exported by the source companion
+[`LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md`](LANDAU_PEIERLS_PREFACTOR_NATIVE_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+via `scripts/frontier_landau_peierls_prefactor_native_derivation_2026_06_13.py`.
+Independent audit still owns whether that companion becomes accepted support;
+this note only queues the D3 decomposition for re-audit with the dependency
+made explicit.
 
 At the reference point `L=32`, `mu=-2.0`, `T=0.30`, the measured residual is
 
@@ -53,8 +66,10 @@ The scope is deliberately narrow:
   `(Omega(B) + Omega(-B) - 2 Omega(0)) / B^2`.
 
 No fitted scalar prefactor is used. The Landau-Peierls cell normalization is
-fixed once as `-1/12`, the spinless unit-flux grand-potential second-derivative
-normalization:
+the companion runner's derived exact rational `-1/12`, the spinless unit-flux
+grand-potential second-derivative normalization. The same normalization
+convention is cross-recorded in the D3 normalization boundary note linked
+above; the computation below uses the native companion's returned rational.
 
 ```text
 chi_LP = -1/12 * integral_BZ f'(E(k))
@@ -63,13 +78,23 @@ E(k) = -2 (cos kx + cos ky + cos kz)
 E_xx E_yy - E_xy^2 = 4 cos(kx) cos(ky)
 ```
 
-## Input Boundary
+## Dependency Boundary
 
-The standard Landau-Peierls single-band formula and its `-1/12` spinless
-unit-flux normalization are used as explicit theory inputs. The runner tests
-that input against a finite periodic Peierls lattice reference. This note does
-not derive the Landau-Peierls formula from the repo axioms, does not claim a
-continuum-QFT theorem, and does not claim a thermodynamic-limit theorem.
+The prior source packet used the standard Landau-Peierls single-band formula
+and its `-1/12` spinless unit-flux normalization as explicit theory inputs.
+This repair removes the hidden-input role for the scalar: the D3 runner now
+imports the companion symbolic derivation, checks its exact rational
+`-1/12`, checks the divergence identity residual, and computes the D3
+Brillouin-zone integral with that returned value.
+
+This does not audit or promote the companion packet. Until the independent
+audit lane accepts the companion native-prefactor theorem, the honest status
+of this D3 note remains a source proposal with an explicit source-side
+dependency. The D3 normalization boundary note remains a source-side
+cross-check for the Peierls convention and the "no new axiom / no fitted
+scalar" boundary. The finite-torus Peierls reference remains independent of
+the Landau-Peierls formula and still tests the resulting decomposition at the
+frozen D3 points.
 
 ## Finite-Torus Reference
 
@@ -119,11 +144,24 @@ mu       exact chi             LP chi                residual
 ## Gates
 
 The runner declares all tolerances before computing spectra or integrals. Its
-load-bearing gates include the finite-torus reference construction, a
-sub-`1%` relative residual at the reference point, sign tracking across the
-sampled `chi(mu)` curve, and a sub-`1%` active relative residual across that
-curve. The passing run reports:
+load-bearing gates include consumption of the native prefactor companion, the
+source-normalization boundary anchors, the finite-torus reference
+construction, a sub-`1%` relative residual at the reference point, sign
+tracking across the sampled `chi(mu)` curve, and a sub-`1%` active relative
+residual across that curve. The passing run reports:
 
 ```text
-TOTAL: PASS=9 FAIL=0
+TOTAL: PASS=13 FAIL=0
 ```
+
+## Re-audit Handoff
+
+The 2026-06-18 source repair targets the audited-conditional blocker that this
+note imported the standard Landau-Peierls formula and `-1/12` normalization.
+The requested re-audit question is now narrower:
+
+- first grade the companion native-prefactor packet as a source-side bounded
+  theorem or identify its remaining import;
+- then grade whether this D3 packet cleanly consumes that companion, the
+  normalization-boundary note, and its own finite-torus Peierls reference,
+  without fitting or hiding a textbook scalar.

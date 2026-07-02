@@ -4,7 +4,7 @@
 **Status:** exact algebraic identity / support theorem on retained
 graph-first surface + cycle 15 (Y_H = +1) + standard SU(2) Lie algebra.
 NOT proposed_retained — see CLAIM_STATUS_CERTIFICATE.md.
-**Primary runner:** `scripts/frontier_ewsb_pattern_from_higgs_y.py`
+**Primary runner:** `scripts/frontier_ewsb_pattern_from_higgs_y.py` (36 checks)
 **Authority role:** exact-support theorem deriving the unbroken
 electromagnetic charge `Q = T_3 + Y/2` from the Higgs VEV and `Y_H = +1`.
 
@@ -139,3 +139,7 @@ bare_retained_allowed: false
 - Cycle 16 / PR [#279](https://github.com/jonathonreilly/cl3-lattice-framework/pull/279) — [`FULL_Y_SQUARED_TRACE_SU5_GUT_NOTE_2026-05-02.md`](FULL_Y_SQUARED_TRACE_SU5_GUT_NOTE_2026-05-02.md)
 - Cycle 6 / PR [#262](https://github.com/jonathonreilly/cl3-lattice-framework/pull/262) — [`LHCM_REPAIR_ATLAS_CONSOLIDATION_NOTE_2026-05-02.md`](LHCM_REPAIR_ATLAS_CONSOLIDATION_NOTE_2026-05-02.md)
 - LHCM closure trio: PRs [#254](https://github.com/jonathonreilly/cl3-lattice-framework/pull/254), [#255](https://github.com/jonathonreilly/cl3-lattice-framework/pull/255), [#256](https://github.com/jonathonreilly/cl3-lattice-framework/pull/256)
+
+## 8. Changelog
+
+- 2026-07-02 — runner hardened to discriminating grade: added SVD stabilizer derivation, displayed VEV actions, broken-generator actions, refutation legs, charge-table recomputation, and source-boundary firewall; check count 22 -> 36.

@@ -25,3 +25,19 @@ w-supplier rung as an independent missing NUMBER by exchanging it for one named
 binary reading adjudication on owner-approved axiom text, plus an unconditional
 degeneration theorem (w enters only the overall scale at flow-selected states)
 on the block11 class.
+
+# Trace gate — block17 (w scale-absorption classification)
+
+```yaml
+trace_class: upstream_support
+target_claim_id: ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09
+target_blocker_text: "Pi(1) - Pi(0) = S leaves the inter-sector coefficient free ... the note explicitly leaves selector, convention, derivation, and owner-approved admission routes open"
+source_of_blocker_text: audit_ledger
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "if the classification survives audit: hand the owner the convention-reclassification question (w as vacuous rescaling convention relative to the landed class — registry surface, owner-only) OR register the T4 residual triple as the W_readout_coupling gate content; the CTX-match block remains the EW instantiation step; no w-value work remains on this class absent a T4-residual observable."
+```
+
+Secondary target: `flavor_missing_axiom_carrier_measure_note_2026-05-30` (shared
+w rung). This block does NOT claim closure of either wall; it classifies where
+the w freedom is physically expressed and where it provably is not.

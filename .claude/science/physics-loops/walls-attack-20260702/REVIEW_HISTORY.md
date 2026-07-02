@@ -81,3 +81,53 @@ Disposition: **pass-after-repair**. V1–V5 value-gate record above. No
 standalone no_go claim is shipped (fork + witness-level non-forcing per the
 block02 precedent), so N1–N8 does not gate this block; the FIREWALL and
 honesty-boundary sections carry the steelman surface.
+
+## V1–V5 Promotion Value Gate — block17 (recorded pre-PR; not an audit certificate)
+
+- **V1.** Same verdict-identified obstruction as block16, from
+  `ew_kappa_weighting_not_axiom_derivable_no_go_note_2026-06-09`
+  (retained_no_go): "Pi(1) - Pi(0) = S leaves the inter-sector coefficient
+  free" with the derivation route left open. Block17 classifies exactly where
+  that free coefficient is physically expressed: nowhere in the landed
+  readout instances; alive only on a named residual triple.
+- **V2.** New: (i) multi-readout degeneration theorem (block16 T3 was a
+  single pair); (ii) absorption/calibration theorem with the cross-family
+  honesty witness; (iii) the landed-instance classification table; (iv) the
+  exact residual triple = operational W_readout_coupling gate content; (v)
+  the equivariant-escape counterexample (majority rule) that blocks the
+  tempting-but-false "set-level reading is inconsistent" no_go.
+- **V3.** No — requires the framework's flow-selection surface,
+  scale-reference primitive, and the block11/16 class; standard math alone
+  has none of these premises.
+- **V4.** Yes — converts "w unknown" into "w alive exactly on a named
+  triple"; the equivariance counterexample is a genuine construction.
+- **V5.** Closest prior: block16. Structural distinctions: generalization
+  from one pair to families and functionals, first campaign use of the
+  scale-reference primitive, classification+steelman content absent from all
+  prior cluster PRs. Not a relabeling.
+
+## block17 — supervisor line-by-line review (2026-07-02, pre-PR)
+
+Worker draft reviewed line-by-line against spec and sources. Findings:
+
+1. **F1 (wording, fixed).** Status line said "classification draft" (house
+   style: "result"); T5 closing line called the #4847 sentence
+   "owner-approved" — corrected to "owner-gated" (the note elsewhere marks it
+   in-flight/conditional correctly).
+2. **F2 (verified, no change).** Hand-checked: the perfect-square weight-sum
+   construction (sums 4/9/16 are squares of root scales 2/3/4, keeping the
+   Koide-shape roots exact rationals); the same-sum T4(i) witness ((1,3) vs
+   (3,1)) isolating pure w-sensitivity from overall scale; majority-rule
+   equivariance by full enumeration (2 bijections x 4 two-neighbor
+   conditions; availability sets {A},{B},{A,B} vary); the cross-family ratio
+   pair {1, 5/3} vanishing under same-family calibration.
+3. **F3 (process).** First worker draft in this campaign with zero
+   substantive runner defects; both repairs were prose-level.
+4. **F4 (grounding).** Parent quotes grep-verified at source (Pi_phys line,
+   common-K_EW cancellation, units-conversion sentence). Runner re-run
+   independently by the supervisor after repairs: TOTAL: PASS=28 FAIL=0;
+   output cache regenerated from the supervisor run; vocab lint clean.
+
+Disposition: **pass-after-repair** (prose-only). V1-V5 record above; no
+standalone no_go ships (T5 exhibits the equivariant-escape steelman precisely
+to avoid one), so N1-N8 does not gate.

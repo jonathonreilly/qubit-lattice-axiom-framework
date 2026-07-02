@@ -249,6 +249,11 @@ def main() -> int:
     for fragment in forbidden:
         check(f"PART F forbidden fragment absent: {fragment}", fragment not in note_flat)
 
+    check("PART F note declares canonical no_go claim type", "**Claim type:** no_go" in note)
+    check("PART F note does not use runner PASS as source status", "**Status:** PASS" not in note)
+    check("PART F note does not lean on PR #4783 as authority", "RULED OUT by PR #4783" not in note)
+    check("PART F campaign context is explicitly non-authority", "not authority for this note" in note)
+
     allowed_walls = {"W_cycle_holonomy_value", "W_defect_identity_unit", "W_defect_readout_selection"}
     found_walls = set(re.findall(r"\bW_[A-Za-z0-9_]+\b", note))
     check("PART F W identifier whitelist", found_walls <= allowed_walls, sorted(found_walls - allowed_walls))

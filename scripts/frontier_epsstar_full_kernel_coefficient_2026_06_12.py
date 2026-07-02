@@ -14,12 +14,14 @@ import math
 import sys
 from dataclasses import dataclass
 from functools import lru_cache
+from pathlib import Path
 
 import numpy as np
 from numpy.polynomial.legendre import leggauss
 
 
-# Mirrored two-band Harper/PT constants from the landed Sommerfeld runner.
+# Two-band Harper/PT constants used for the internally recomputed precursor
+# anchor and the complete finite-temperature kernel check.
 T_HOP = 1.0
 Q_HARPER = 24
 LX = Q_HARPER
@@ -30,15 +32,16 @@ BISECTION_LO = 1.2
 BISECTION_HI = 2.4
 BISECTION_STEPS = 60
 
-# Fixed finite-T truth grid specified by this runner, plus the landed branch
-# slope grid from the prior verifier.  The first grid is printed as the fine
-# scan; the second is the frozen measured-d comparator that produced +3.88.
+# Fixed finite-T truth grid specified by this runner, plus the branch-slope
+# grid that recomputes the measured-d comparator. The first grid is printed as
+# the fine scan; the second is the frozen measured-d comparator that produced
+# +3.88.
 TRUTH_TEMPERATURES = (0.08, 0.10, 0.12, 0.15, 0.20)
-LANDED_SLOPE_TEMPERATURES = (0.10, 0.15, 0.20, 0.25)
+PRECURSOR_SLOPE_TEMPERATURES = (0.10, 0.15, 0.20, 0.25)
 
-# Fixed T=0 Fermi-surface quadrature controls, mirrored from the landed
-# negative.  The Gaussian delta is a fixed surface proxy; the gates below are
-# therefore finite-cell/finite-eta statements, not a continuum theorem.
+# Fixed T=0 Fermi-surface quadrature controls. The Gaussian delta is a fixed
+# surface proxy; the gates below are therefore finite-cell/finite-eta
+# statements, not a continuum theorem.
 SURFACE_DELTA_ETA = 5.0e-2
 T0_BRANCH_LO = 1.48
 T0_BRANCH_HI = 1.56
@@ -56,6 +59,19 @@ FROZEN_D_MEASURED = 3.88
 FROZEN_D_MEASURED_ABS_TOL = 7.5e-1
 INTERBAND_H1_MIN = 1.0e-2
 ALPHA_REL_TOL = 1.5e-1
+NOTE_PATH = Path(
+    "docs/EPSSTAR_FULL_KERNEL_COEFFICIENT_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-12.md"
+)
+RUNNER_LINK = (
+    "[`scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py`]"
+    "(../scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py)"
+)
+CACHE_LINK = (
+    "[`logs/runner-cache/frontier_epsstar_full_kernel_coefficient_2026_06_12.txt`]"
+    "(../logs/runner-cache/frontier_epsstar_full_kernel_coefficient_2026_06_12.txt)"
+)
+FORBIDDEN_CLOSED_PR_MARKER = "PR #" + "3820"
+FORBIDDEN_PRECURSOR_STATUS_WORD = "lan" + "ded"
 
 SITE_SIGNS = np.array(
     [1.0 if (x + y) % 2 == 0 else -1.0 for x in range(LX) for y in range(LY)]
@@ -364,7 +380,7 @@ def sommerfeld_alpha(surface: SurfaceTable, mu0: float, full_degenerate: bool) -
     The occupation part is the standard one-energy Sommerfeld coefficient of
     the T=0 curvature kernel.  The contact part is the degenerate divided-
     difference limit K(E,E;T)=f'(E); its T^2 coefficient is the fixed second
-    moment of -f'(E), hence the -gamma'' term.  The naive landed negative uses
+    moment of -f'(E), hence the -gamma'' term.  The precursor negative uses
     only the diagonal H1 contact.  The full-kernel test keeps every H1 matrix
     element inside the fixed degenerate block before taking the same moment.
     """
@@ -441,12 +457,12 @@ def run() -> int:
         f"interband_H1_weight={anchor_row.interband_h1_weight_at_root:+.12e}"
     )
     check(
-        "S0 T=0 branch root is in the landed mu*_0=1.5216 region",
+        "S0 T=0 branch root is in the internally recomputed mu*_0=1.5216 region",
         abs(mu0 - FROZEN_MU0) <= FROZEN_MU0_ABS_TOL,
         f"mu0={mu0:.12f}, frozen={FROZEN_MU0:.4f}, tol={FROZEN_MU0_ABS_TOL:.2e}",
     )
     check(
-        "S0 landed naive seagull alpha is reproduced",
+        "S0 precursor naive seagull alpha is reproduced",
         abs(alpha_seagull - FROZEN_ALPHA_SEAGULL) <= FROZEN_ALPHA_SEAGULL_ABS_TOL,
         f"alpha_seagull={alpha_seagull:+.12f}, frozen={FROZEN_ALPHA_SEAGULL:+.2f}, "
         f"tol={FROZEN_ALPHA_SEAGULL_ABS_TOL:.2e}",
@@ -460,7 +476,7 @@ def run() -> int:
 
     print("\nS1 TRUTH: finite-T boundary roots")
     root_cache: dict[float, RootRow] = {}
-    for temp in sorted(set(TRUTH_TEMPERATURES + LANDED_SLOPE_TEMPERATURES)):
+    for temp in sorted(set(TRUTH_TEMPERATURES + PRECURSOR_SLOPE_TEMPERATURES)):
         root_cache[temp] = pt_boundary_root(table, temp)
 
     truth_rows = [root_cache[temp] for temp in TRUTH_TEMPERATURES]
@@ -470,10 +486,10 @@ def run() -> int:
             f"mu2={row.root * row.root:.12f} chi={row.chi_at_root:+.3e} "
             f"interband={row.interband_at_root:+.12e}"
         )
-    slope_rows = [root_cache[temp] for temp in LANDED_SLOPE_TEMPERATURES]
+    slope_rows = [root_cache[temp] for temp in PRECURSOR_SLOPE_TEMPERATURES]
     d_measured, mu2_intercept, mu2_max_abs_residual = fit_mu2_slope(slope_rows)
     print(
-        "LANDED_SLOPE_GRID "
+        "PRECURSOR_SLOPE_GRID "
         + " ".join(
             f"T={row.temperature:.3f}:mu={row.root:.12f}:mu2={row.root * row.root:.12f}"
             for row in slope_rows
@@ -484,7 +500,7 @@ def run() -> int:
         f"d_measured={d_measured:+.12f} max_abs_residual={mu2_max_abs_residual:.12e}"
     )
     check(
-        "S1 measured finite-T slope reproduces landed +3.88",
+        "S1 measured finite-T slope reproduces internally recomputed +3.88",
         abs(d_measured - FROZEN_D_MEASURED) <= FROZEN_D_MEASURED_ABS_TOL,
         f"d_measured={d_measured:+.12f}, frozen={FROZEN_D_MEASURED:+.2f}, "
         f"tol={FROZEN_D_MEASURED_ABS_TOL:.2e}",
@@ -528,6 +544,32 @@ def run() -> int:
         alpha_seagull < 0.0 and alpha_kernel > 0.0 and abs(alpha_kernel) > abs(alpha_seagull),
         f"alpha_seagull={alpha_seagull:+.12f}, alpha_kernel={alpha_kernel:+.12f}, "
         "gate seagull<0, kernel>0, |kernel|>|seagull|",
+    )
+
+    print("\nS4 SOURCE HYGIENE")
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    check(
+        "S4 canonical source metadata is present",
+        "**Claim type:** bounded_theorem" in note
+        and "**Status authority:** independent audit lane only" in note
+        and "**No-promotion statement:**" in note,
+        "claim_type bounded_theorem; independent audit authority; no-promotion statement",
+    )
+    check(
+        "S4 runner and cache markdown links are present",
+        RUNNER_LINK in note and CACHE_LINK in note,
+        "primary runner/cache links seed review discoverability",
+    )
+    check(
+        "S4 closed-PR authority rhetoric is absent",
+        FORBIDDEN_CLOSED_PR_MARKER not in note
+        and FORBIDDEN_PRECURSOR_STATUS_WORD not in note,
+        "no closed PR is cited as load-bearing authority",
+    )
+    check(
+        "S4 minimal-axiom dependency link is present",
+        "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)" in note,
+        "one scope-reference dependency link",
     )
 
     print(f"\nTOTAL: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

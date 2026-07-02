@@ -1,7 +1,15 @@
 # eps* Full-Kernel Coefficient: the Divided-Difference Kernel's T-Dependence Flips the Naive Sign (Bounded Finite-Cell Note, 2026-06-12)
 
-**Status:** source proposal; the audit lane grades. Runner:
-`scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py`
+**Date:** 2026-06-12
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Status authority:** independent audit lane only. This source note sets source
+claim metadata only; it does not set, predict, or edit any audit outcome.
+**Primary runner:** [`scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py`](../scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py)
+**Runner cache:** [`logs/runner-cache/frontier_epsstar_full_kernel_coefficient_2026_06_12.txt`](../logs/runner-cache/frontier_epsstar_full_kernel_coefficient_2026_06_12.txt)
+**No-promotion statement:** This source note creates no promotion, no registry
+edit, no audit verdict, and no downstream status change; status remains owned
+by the independent audit lane.
 
 ## Claim
 
@@ -15,7 +23,7 @@ chi(mu*(T), T) = 0
 
 and the coefficient of `mu*(T)^2` in `T^2` is reproduced only after the
 finite-temperature divided-difference kernel is retained.  The diagonal
-Sommerfeld/seagull proxy remains the landed honest negative:
+Sommerfeld/seagull proxy remains the internally recomputed precursor negative:
 
 ```text
 alpha_seagull = -9.266358431847
@@ -28,7 +36,7 @@ alpha_kernel = +13.408176855550
 alpha_full   =  +4.141818423703
 ```
 
-against the landed finite-root comparator
+against the internally recomputed finite-root comparator
 
 ```text
 d_measured = +3.877078419950
@@ -41,13 +49,16 @@ with the frozen runner tolerance `15%`.
 
 The load-bearing finding is the **sign-flip mechanism**, not an independent
 re-derivation of the magnitude. The naive (occupation-smearing) Sommerfeld
-coefficient of PR #3820 keeps only the seagull/contact piece and gives
+coefficient of the precursor route keeps only the seagull/contact piece and gives
 `alpha_seagull = -9.27` — the wrong sign. Decomposing the full coefficient
 `alpha_full = alpha_seagull + alpha_kernel` shows the divided-difference
 kernel's explicit finite-`T` dependence contributes `alpha_kernel = +13.41`,
 which **flips the sign** and is larger in magnitude than the seagull term. This
-is the precise localization PR #3820 pointed to: the `T^2` growth of the
-boundary is governed by the kernel's `T`-dependence, which the naive proxy drops.
+is the precise localization left by the precursor route: the `T^2` growth of
+the boundary is governed by the kernel's `T`-dependence, which the naive proxy
+drops. No closed PR is a load-bearing authority for this note; the runner
+recomputes the T=0 branch anchor, seagull coefficient, and finite-root slope
+internally.
 
 The agreement `alpha_full ≈ d_measured` (6.83%) is a **consistency
 cross-check**, not an independent second derivation of the slope: `alpha_full`
@@ -64,7 +75,7 @@ the finite-difference of `dchi/dmu`. Tightening the estimate is a named follow-o
 
 ## Method
 
-The runner mirrors the landed two-band Harper/PT machinery:
+The runner uses the same finite two-band Harper/PT machinery:
 
 - `Q=24`, `Ly=2`, `N=48`, `GL=20`;
 - `chi_PT = seagull + divided-difference kernel`;
@@ -72,8 +83,8 @@ The runner mirrors the landed two-band Harper/PT machinery:
   limit `f'(E)`;
 - branch bracket `[1.2, 2.4]`.
 
-The T=0 anchor is the same finite surface proxy used by the landed
-negative: Gaussian surface width `eta=0.05`, branch window
+The T=0 anchor is the same finite surface proxy recomputed from the precursor
+route: Gaussian surface width `eta=0.05`, branch window
 `[1.48, 1.56]`.  It gives
 
 ```text
@@ -92,10 +103,10 @@ instead of replacing the kernel by its T=0 occupation-smearing proxy.
 
 The runner freezes these checks:
 
-- T=0 branch root stays in the landed `mu*_0 ~= 1.5216` region.
-- Naive seagull alpha stays in the landed `-9.27` region.
+- T=0 branch root stays in the internally recomputed `mu*_0 ~= 1.5216` region.
+- Naive seagull alpha stays in the internally recomputed `-9.27` region.
 - Interband `|H1|` weight at the root is nonzero/nontrivial.
-- The finite-root branch reproduces landed `d ~= +3.88`.
+- The finite-root branch reproduces internally recomputed `d ~= +3.88`.
 - `alpha_full` and `d_measured` are both positive.
 - `alpha_full` matches `d_measured` within `15%`.
 - `alpha_seagull < 0`, `alpha_kernel > 0`, and
@@ -110,7 +121,12 @@ TOTAL: PASS=7 FAIL=0
 ## Scope
 
 This is a bounded finite-cell statement on the m=0 axis.  It does not
-promote the full `(m,T)` surface beyond the landed bounded result, and it
-does not claim a continuum theorem.  Memory: one-particle only.
+promote the full `(m,T)` surface, and it does not claim a continuum theorem.
+Memory: one-particle only.
 
 The audit lane grades.
+
+## Dependencies
+
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  (the current axiom surface; scope reference only).

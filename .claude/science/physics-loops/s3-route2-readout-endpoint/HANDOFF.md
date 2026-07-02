@@ -1,52 +1,42 @@
 # Handoff
 
-## Block04 summary
+## Block05 Summary
 
-Block04 gives the compressed Route-2 bridge target a source-count selector
-form:
+This block turns the June 10 "box-size scan" follow-up into an executable boundary result. The runner patches the tensor Schur action locally to infer its size from `phi_grid`, then replays the E-center lift at sizes 9, 11, 13, 15, and 17.
 
-```text
-kappa = N_color/N_pair = 3/2,
-s_TE = -N_pair = -2,
-c_TE = s_TE/kappa^2 = -N_pair^3/N_color^2 = -8/9 = -F_adj.
-```
+The `15^3` row reproduces the landed measured calibration. The neighboring executable rows do not support using that match as convergence evidence: they are outside the endpoint envelope, include sign/orientation conflicts, and fail monotone convergence behavior.
 
-It then maps the physical color selector family
-`R_phys(xi)=F_adj+xi(1-F_adj)` into exact Route-2 endpoint outputs. Only the
-connected selector `xi=0` gives `rho_E=21/4`; full-trace gives `rho_E=4`.
+## Honest Status
 
-## Remaining blocker
+Actual current-surface status: bounded-support.
 
-Derive the typed source/readout theorem that identifies the Route-2 center
-ratio with `-R_phys(0)`, or derive the same edge directly from source-count
-covariance. This block does not close the endpoint triple.
+Trace class: negative_route_pruning.
 
-## Checks
+This prunes only the route "15^3 match implies finite-size convergence." It does not refute a future size-stable/infinite-volume theorem and does not close the `rho_E = 21/4` endpoint.
 
-Completed:
+## PR Policy
 
-```text
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py
-  TOTAL: PASS=44, FAIL=0
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
-  PASS=11 FAIL=0
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py
-  TOTAL: PASS=46, FAIL=0
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py
-  TOTAL: PASS=103, FAIL=0
-python3 scripts/rconn_matching_rule_nogo_certificate.py
-  RUNNER STATUS: PASS (PASS=30 FAIL=0)
-python3 -m py_compile scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py
-  pass
-```
-
-Focused review disposition: PASS WITH EXACT SUPPORT / SELECTOR BOUNDARY.
-The audit pipeline was not run and no audit verdicts were applied.
+Do not push to main. Do not refresh previous PR branches to main. Do not check conflict or mergeability status. The reviewer will cherry-pick science. Verify only PR identity fields after PR creation.
 
 ## PR
 
-Opened PR #4533:
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4533
+Opened PR #4534:
 
-Identity was verified with `gh pr view` using only number, URL, title, head,
-base, and state fields. Mergeability/conflict state was not queried.
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4534
+```
+
+Identity-only verification:
+
+```text
+number=4534
+url=https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4534
+title=[physics-loop] s3-route2-readout-endpoint block05 bounded-support
+headRefName=physics-loop/s3-route2-readout-endpoint-block05-20260621
+baseRefName=main
+state=OPEN
+```
+
+## Next Exact Action
+
+Continue the campaign to the next ranked science target if runtime remains. Best next target: define a size-stable Schur/shell/tensor family and rerun the E-center extrapolation there; fallback to a non-finite-box covariance bridge for `q_E/q_T = 9/4`.

@@ -1,19 +1,11 @@
-trace_class: upstream_support
+trace_class: negative_route_pruning
 target_claim_id: s3_time_theta_to_slice_coupling_note
-target_blocker_text: "missing readout-map endpoint triple, especially beta_E/alpha_E = 21/4 after the T-side candidates are granted"
+target_blocker_text: "Route-2 endpoint still needs beta_E/alpha_E = 21/4, equivalently q_E = 15/8."
 source_of_blocker_text: handoff
-reachability_to_target: supports
-artifact_role: theorem
-next_trace_action: "Try to derive the typed selector theorem c_TE=-R_phys(0), or pivot to the finite-box E-center extrapolation route."
+reachability_to_target: prunes
+artifact_role: runner_certificate
+next_trace_action: "Define a size-stable Schur/shell/tensor family or pursue a non-finite-box covariance bridge for q_E/q_T = 9/4."
 
 # Trace Gate
 
-If true, block04 does not close the target. It supports the target by turning
-the compressed bridge into a concrete source-count selector statement:
-
-```text
-c_TE = s_TE/(N_color/N_pair)^2 = -F_adj
-```
-
-at the current quark source counts. It also shows that a physical color route
-still requires the connected-selector specialization.
+If true, this artifact prunes a route to the endpoint theorem: the route that cites the `15^3` measured E-center lift as finite-size convergence evidence. It does not close the endpoint theorem and does not demote the possibility of a future size-stable infinite-volume derivation.

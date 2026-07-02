@@ -1,51 +1,40 @@
 loop_slug: s3-route2-readout-endpoint
-mode: campaign
-runtime_requested: 12h
-block: 04
-branch: physics-loop/s3-route2-readout-endpoint-block04-20260621
-worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block04-20260621
-base_at_creation: f273f46b6
-base_label: origin/main at block04 worktree creation
-lock_status:
-  mode: degraded_branch_local
-  command: python3 scripts/automation_lock.py status
-  result: "error: [Errno 13] Permission denied: '/Users/jonreilly'"
-user_constraints:
-  do_not_audit: true
-  do_not_apply_verdicts: true
-  do_not_push_main: true
-  do_not_refresh_prs_to_main: true
-  do_not_check_pr_conflicts: true
-active_target: s3_time_theta_to_slice_coupling_note
-hard_residual: "derive or sharply constrain (-1, -2, 21/4), especially rho_E = 21/4"
-current_block_route: source_count_selector_bridge_boundary
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
-artifact_role: theorem
+block: block05
+branch: physics-loop/s3-route2-readout-endpoint-block05-20260621
+base_commit: 71f38d07a
+actual_current_surface_status: bounded-support
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+target_claim_id: s3_time_theta_to_slice_coupling_note
+target_blocker_text: "Route-2 endpoint still needs beta_E/alpha_E = 21/4, equivalently q_E = 15/8."
+active_route: e_center_lift_size_scan_boundary
+hard_residual: "Turn the 15^3 measured E-center calibration into, or separate it from, a size-stable q_E(N) theorem."
 files_touched:
-  - docs/QUARK_ROUTE2_SOURCE_COUNT_SELECTOR_BRIDGE_BOUNDARY_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py
-  - logs/runner-cache/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.txt
-  - .claude/science/physics-loops/s3-route2-readout-endpoint/
+  - docs/QUARK_ROUTE2_E_CENTER_LIFT_SIZE_SCAN_BOUNDARY_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py
+  - logs/runner-cache/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.txt
 open_imports:
-  - "No typed theorem identifies c_TE with -F_adj or -R_phys(0)."
-  - "No physical connected-selector derivation xi=0 is supplied."
-  - "No derivation of rho_E=21/4 is supplied on the actual current surface."
-review_disposition: pass_with_exact_support_selector_boundary
-pr_status: open
-pr_number: 4533
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4533
-pr_identity_verified_without_conflict_check: true
-verification:
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py -> TOTAL: PASS=44, FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py -> PASS=11 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py -> TOTAL: PASS=46, FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py -> TOTAL: PASS=103, FAIL=0"
-  - "python3 scripts/rconn_matching_rule_nogo_certificate.py -> RUNNER STATUS: PASS (PASS=30 FAIL=0)"
-  - "python3 -m py_compile scripts/frontier_quark_route2_source_count_selector_bridge_boundary_2026_06_21.py -> pass"
-review_notes:
-  - "Focused local review only; audit pipeline/verdict scripts intentionally not run under the no-audit campaign boundary."
-  - "Claim narrowed to exact source-count support plus selector-boundary; no typed bridge or endpoint-triple derivation claimed."
-next_exact_action: "Start the next block on the finite-box E-center lift extrapolation route or directly attack the typed selector theorem c_TE=-R_phys(0), without refreshing existing PRs or checking conflict state."
-stop_condition: "Runtime not exhausted; continue after block 04 PR delivery."
+  - "A size-stable Schur/shell/tensor family proving q_E(N) -> 15/8 is still absent."
+  - "No non-finite-box covariance bridge deriving q_E = 15/8 has been supplied."
+no_go_routes:
+  - "Naive route pruned: SIZE=15 measured match alone cannot be cited as finite-size convergence evidence."
+pr_policy:
+  push_to_main: false
+  refresh_prs_to_main: false
+  check_pr_conflicts: false
+  pr_identity_fields_only:
+    - number
+    - url
+    - title
+    - headRefName
+    - baseRefName
+    - state
+pr:
+  number: 4534
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4534"
+  title: "[physics-loop] s3-route2-readout-endpoint block05 bounded-support"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block05-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "Continue campaign with the next ranked science target: size-stable E-center lift family, non-finite-box covariance bridge, or reduced-shell anchor transition theorem."
+stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable science targets are blocked."

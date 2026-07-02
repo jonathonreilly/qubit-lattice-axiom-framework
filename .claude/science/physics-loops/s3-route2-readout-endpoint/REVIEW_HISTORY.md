@@ -1,26 +1,17 @@
 # Review History
 
-## Focused local review
+## Block05 Local Review
 
-Disposition: PASS WITH EXACT SUPPORT / SELECTOR BOUNDARY.
+Disposition: pass.
 
-Review boundary:
+Checks run:
 
-- no audit pipeline;
-- no audit verdict scripts;
-- no effective-status edits;
-- no PR conflict checks.
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py` -> PASS=7 FAIL=0.
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.py` -> PASS=6 FAIL=0.
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py` -> PASS=11 FAIL=0.
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_lift_derivation_attempt_bounded_2026_06_12.py` -> PASS=46 FAIL=0.
+- `python3 -m py_compile scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py` -> pass.
+- `git diff --check` -> pass.
+- Branch-local wording firewall -> pass; the only conflict/mergeability hits are policy text saying not to check them.
 
-Findings:
-
-- Code / runner: PASS. The runner checks authority presence, source-count
-  extraction, exact bridge arithmetic, selector-family outputs, and falsifiers.
-- Physics claim boundary: PASS after demoting wording from retained source
-  surface to current source-count surface.
-- Imports / support: DISCLOSED. The source-count and color-selector inputs are
-  explicit; no observed, fitted, or endpoint-proximity value is load-bearing.
-- Nature retention: OPEN. This is support only; it does not derive the typed
-  selector bridge or `rho_E=21/4`.
-- Repo governance: PASS for branch-local physics-loop packaging.
-- Audit compatibility: NOT RUN by user constraint; no audit verdicts or
-  effective-status edits were made.
+No audit-loop command, audit verdict script, or repo-wide queue update is part of this review.

@@ -1,16 +1,9 @@
-# Goal
+# S3 Route-2 Readout Endpoint Loop
 
-Run physics-loop block04 for the S3/Route-2 readout endpoint lane without
-auditing or applying verdicts.
+Unblock the audit by producing PR-sized science artifacts for the open Route-2 readout endpoint triple
 
-Target: sharpen the direct typed source/readout bridge target for
-`s3_time_theta_to_slice_coupling_note`, especially the compressed edge
-`c_TE=s_TE/kappa^2=-F_adj` and the remaining selector boundary.
+```text
+(beta_T/alpha_T, alpha_T/alpha_E, beta_E/alpha_E) = (-1, -2, 21/4).
+```
 
-User constraints:
-
-- do not audit;
-- do not apply verdicts;
-- do not push to main;
-- do not refresh existing PRs to main;
-- do not check PR conflict or mergeability state.
+The active block tests the finite-box E-center lift discriminator named by the June 10 measured-calibration note. It does not run audits, apply verdicts, push to main, refresh prior PRs to main, or check PR conflict state.

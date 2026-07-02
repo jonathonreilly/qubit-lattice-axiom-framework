@@ -147,6 +147,28 @@ narrow, frozen chain with all of the following:
 5. refinement and threshold stability
 6. a dedicated note/log pair
 
+## Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to:
+
+- cite the bounded negative hard-bar result that the tested current
+  self-coupled minima are Nyquist-unsafe;
+- cite the controls that were run: `G=0` null, matched fixed-field control,
+  fixed-field Born/Sorkin check, threshold/window/damping variation, and the
+  `h=1.0` to `h=0.75` refinement check;
+- cite the future positive-target requirements listed above.
+
+Forbidden downstream uses without a new retained bridge:
+
+- do not cite this packet as a positive QNM spectral law;
+- do not cite it as evidence for stable sub-Nyquist QNM hardening peaks;
+- do not cite the branch-side `G`-dependent peak story without a fresh
+  dedicated note/log pair;
+- do not promote the QNM lane unless the future runner supplies stable
+  sub-Nyquist peaks with `G=0` or null controls, fixed-field Born/Sorkin
+  checks, threshold/window/damping/refinement controls, and a dedicated note
+  and log pair.
+
 ## Safest current phrasing
 
 The safest claim surface today is:

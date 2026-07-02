@@ -164,6 +164,33 @@ primitive beyond the current restricted carrier/readout surface: derive the
 E-center endpoint ratio, a source-domain rule, or a stronger readout-map
 theorem.
 
+## Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to:
+
+- cite the exact Route-2 carrier/readout/time authority chain;
+- cite the reduced-family algebra showing that `rho_E = 21/4` gives
+  `q_E = 15/8` and, under the granted T-side data, center `T/E = -8/9`;
+- cite the admissibility boundary that the current restricted
+  carrier/readout class leaves `beta_E / alpha_E` free;
+- cite the open positive target: derive an E-center endpoint ratio,
+  source-domain rule, or stronger readout-map theorem.
+
+Forbidden downstream uses without a new retained bridge:
+
+- do not cite this packet as a derivation of `beta_E / alpha_E = 21/4`;
+- do not cite it as a unique readout-to-slice time-coupling theorem;
+- do not cite it as final Einstein/Regge identification;
+- do not cite the granted T-side candidates as selecting the E-channel ratio;
+- do not use the Route-2 no-go as an exhaustive no-go against all possible
+  readout primitives;
+- do not promote the primitive chain from open gate to positive theorem unless
+  a new E-center/source/readout primitive is supplied.
+
+Re-audit should be triggered if a downstream row uses this packet as a
+positive readout theorem, as a derivation of the `21/4` E-channel entry, or
+as closure of the Route-2 readout-to-slice time-coupling theorem.
+
 ## Upstream authorities (Route-2 theorem notes)
 
 - [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) — exact bilinear carrier `K_R` and restricted bright readout class `P_R`.

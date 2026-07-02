@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_yt_qubit_neutral_higgs_carrier_ray_bridge.py
-runner_sha256: 92bdfb5e93a585d2eb07b09aea3f26a48d1d891bcd0829e8a891bb1674c4e3a6
+runner_sha256: d5f879ca58ae209a4d7f5ada21868242f91831878fb0690c7f1da6c5c6d1cc76
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.89
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -12,9 +12,11 @@ Y_T QUBIT NEUTRAL-HIGGS CARRIER-RAY BRIDGE
 
 Part 1: anchors and authority scope
 [PASS] docs/YT_QUBIT_NEUTRAL_HIGGS_CARRIER_RAY_BRIDGE_NOTE_2026-05-25.md exists
+[PASS] docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md exists
 [PASS] docs/MINIMAL_AXIOMS_2026-05-20.md exists
 [PASS] docs/YT_SOURCE_ACTION_SUPPORT_PACKET_NOTE_2026-05-22.md exists
 [PASS] docs/EW_HIGGS_GAUGE_MASS_DIAGONALIZATION_THEOREM_NOTE_2026-04-26.md exists
+[PASS] docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md exists
 [PASS] docs/YT_SOURCE_COORDINATE_INVARIANT_TOP_W_RATIO_GATE_NOTE_2026-05-25.md exists
 [PASS] docs/audit/data/audit_ledger.json exists
 [PASS] note contains required section: Theorem
@@ -22,11 +24,23 @@ Part 1: anchors and authority scope
 [PASS] note contains required section: What This Still Does Not Close
 [PASS] note contains required section: Why This Is Not A Renaming
 [PASS] note contains required section: Review Boundary Certificate
-[PASS] source-action support packet is retained_bounded
-[PASS] EW Higgs gauge-mass theorem is retained
-[PASS] one-Higgs Yukawa gauge-selection row is not retained
-[PASS] hypercharge uniqueness row is not retained
-[PASS] EW coupling note is not retained g_2(v) authority
+[PASS] note contains required section: 2026-06-18 audit-scope repair
+[PASS] note contains required section: same-surface carrier repair
+[PASS] core note contains boundary phrase: Actual current-surface status:** bounded-support
+[PASS] core note contains boundary phrase: Trace class:** upstream_support
+[PASS] core note contains boundary phrase: not a same-surface physical carrier theorem
+[PASS] core note contains boundary phrase: bare_retained_allowed: false
+[PASS] same-surface carrier theorem contains marker: same-surface spectral-projector theorem
+[PASS] same-surface carrier theorem contains marker: P_neut = 1_0(Q_H)
+[PASS] same-surface carrier theorem contains marker: P_+ = P_ch
+[PASS] same-surface carrier theorem contains marker: P_- = P_neut
+[PASS] same-surface carrier theorem contains marker: exp(h epsilon_H) = exp(h) exp(-2 h P_neut)
+[PASS] same-surface carrier theorem contains marker: does not derive positive Y_T closure
+[PASS] source-action support packet is retained-grade
+[PASS] EW Higgs gauge-mass theorem is retained-grade
+[PASS] one-Higgs Yukawa gauge-selection row is not retained-grade
+[PASS] hypercharge uniqueness row is not retained-grade
+[PASS] EW coupling note is not retained-grade g_2(v) authority
 
 Part 2: signed record is affinely equivalent to P_- occupation
 [PASS] P_+ is a projector: Matrix([[1, 0], [0, 0]])
@@ -39,7 +53,7 @@ Part 2: signed record is affinely equivalent to P_- occupation
 [PASS] epsilon = 1 - 2 n_- on P_+
 [PASS] epsilon = 1 - 2 n_- on P_-
 
-Part 3: P_- is the retained neutral EW Higgs ray
+Part 3: P_- is the neutral lower ray in EW bookkeeping
 [PASS] P_- fixes H_0: Matrix([[0], [sqrt(2)*v/2]])
 [PASS] P_+ kills H_0: Matrix([[0], [0]])
 [PASS] Q annihilates H_0: Matrix([[0], [0]])
@@ -47,6 +61,8 @@ Part 3: P_- is the retained neutral EW Higgs ray
 [PASS] neutral ray is unique in the one-Higgs doublet: [Matrix([
 [0],
 [1]])]
+[PASS] P_- equals the zero spectral projector I-Q: Matrix([[0, 0], [0, 1]])
+[PASS] P_+ equals the charged spectral projector Q: Matrix([[1, 0], [0, 0]])
 
 Part 4: radial tangent stays on the same neutral ray
 [PASS] H(s) lies on P_- ray: Matrix([[0], [sqrt(2)*v(s)/2]])
@@ -55,7 +71,8 @@ Part 4: radial tangent stays on the same neutral ray
 [PASS] top/W response ratio cancels the remaining radial Jacobian: sqrt(2)*y_t/g_2
 
 Part 5: current closure boundary
-[PASS] neutral carrier-ray bridge is closed
+[PASS] lower-projector algebra core is closed
+[PASS] same-surface qubit/Higgs carrier bridge is closed
 [PASS] strict W/Z denominator response packet is present
 [PASS] symbolic top response row packet is present
 [PASS] full same-surface top/W transfer response remains open
@@ -73,15 +90,18 @@ Part 6: firewalls
 [PASS] firewall phrase present: plaquette/u0
 [PASS] firewall phrase present: observed top/W/Z/Higgs masses
 [PASS] firewall phrase present: fitted selector
+[PASS] firewall phrase present: same-surface carrier repair is a top-response
 [PASS] forbidden overclaim absent: Status:** retained
 [PASS] forbidden overclaim absent: proposed_retained
 [PASS] forbidden overclaim absent: This note derives `y_t`
 [PASS] forbidden overclaim absent: retained Y_T closure has been obtained
-[PASS] forbidden overclaim absent: full physical neutral EW/Higgs transfer surface
+[PASS] forbidden overclaim absent: carrier-ray bridge is closed
+[PASS] forbidden overclaim absent: same physical carrier surface has been derived
+[PASS] forbidden overclaim absent: signed-record source is physically the neutral EW radial source
 [PASS] forbidden overclaim absent: coefficient-certified top/W response rows are present
 
 wrote outputs/yt_qubit_neutral_higgs_carrier_ray_bridge_2026-05-25.json
-SUMMARY: PASS=56 FAIL=0
+SUMMARY: PASS=76 FAIL=0
 
 ----- stderr -----
 

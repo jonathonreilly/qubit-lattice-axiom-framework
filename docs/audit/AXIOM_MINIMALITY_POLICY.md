@@ -5,9 +5,9 @@
 **Status:** binding rule for the audit lane through completion of the full
 repo audit.
 
-`A_min` is fixed for ordinary audit work as the three named framework axioms
-in `docs/MINIMAL_AXIOMS_2026-06-05.md`: Lattice, Quantum, and Record. Approved
-framework primitives are tracked separately in
+`A_min` is fixed for ordinary audit work as the four named framework axioms
+in `docs/MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit, Admissibility, and
+Record. Approved framework primitives are tracked separately in
 `docs/audit/data/axiom_premise_nodes.json`. Lane closure must close from the
 current approved premise surface by derivation, identification, bounded
 composition, or no-go boundary, not by amending that surface inside the lane.
@@ -76,6 +76,55 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-02 -- Admissibility clarification: availability varies with the
+  neighbors.** The Admissibility clause now reads: "For each site, the
+  available possibilities are determined by, and vary with, the
+  nearest-neighbor conditions" (owner-approved wording update, 2026-07-02;
+  source file edited in place). "Vary with" is existential, not
+  per-neighborhood: availability is not constant across nearest-neighbor
+  conditions; under most conditions the full domain may remain available. It
+  excludes the vacuous rule (full domain under every condition) and the
+  neighbor-independent constant rule; it names no operator, kinetic class,
+  selector, or carrier, and downstream consequences remain theorem content.
+  The premise-hash guard invalidates prior direct `minimal_axioms` audits;
+  the independent audit lane re-audits.
+
+- **2026-06-29 -- Foundation reset: site possibility and local admissibility.**
+  The framework axiom set is updated to the four named axioms Lattice, Qubit,
+  Admissibility, and Record, with source `docs/MINIMAL_AXIOMS_2026-06-29.md`
+  and stable registry id `minimal_axioms`.
+  - **Why it is admissible.** The 2026-06-05 Record wording already depended on
+    realized-outcome registration, but it left arbitrary record mosaics
+    underconstrained. This reset states the minimal ontology directly: Lattice
+    carries physical locality; Qubit names the domain of local possibilities
+    and its full one-site algebraic presentation; Admissibility names one fixed
+    nearest-neighbor rule, covariant under lattice translations and proper
+    cubic rotations, by which the available possibilities are determined by,
+    and vary with, the nearest-neighbor conditions at each site; a site need
+    not carry a record, and when present a record locks exactly one local
+    possibility from the subset available at that site under Admissibility;
+    only records are readable, and scalar readout is additive over finite
+    pairwise-disjoint record collections.
+  - **No laundering.** Admissibility does not choose the readout context, select
+    a measurement basis, provide an occurrence rule, define probabilities,
+    assign weights, normalize readouts, specify an update law, provide
+    measurement/decoherence dynamics, define time metric or arrow, choose a
+    Hamiltonian or transfer operator, select a kinetic branch, or identify
+    physical observables. Record does not supply readout-context selection,
+    central decomposition, `K`/CPT structure, sector-generation rule, weighting,
+    normalization, probability, occurrence rule, update law,
+    measurement/decoherence dynamics, time metric, within-sector data,
+    occupancy rule, P2/modulus, log-det, source/action, scale, local
+    observability, or arbitrary observable identification.
+  - **Boundary language.** The new memo states that further physical structure
+    remains compatible, but requires derivation, bridge, explicit admission, or
+    approved primitive registration before use as load-bearing content.
+  - **Scope.** Dependencies on the four framework axioms chain-satisfy without
+    bounding downstream rows. This reset invalidates prior direct
+    `minimal_axioms` audits through the axiom-premise hash guard and must be
+    re-audited by the independent audit lane where relevant. It does not itself
+    promote any downstream theory surface or apply any audit verdict.
+
 - **2026-06-05 -- Record axiom refinement.** The framework axiom set remains
   the three named axioms Lattice, Quantum, and Record, with source
   `docs/MINIMAL_AXIOMS_2026-06-05.md` and stable registry id
@@ -142,10 +191,11 @@ Recorded explicitly approved primitive:
     about the regulator, the time-direction analogue of the `LATTICE` axiom's
     spatial cubic adjacency `a_x = a_y = a_z` (a structural premise already
     accepted at axiom grade). It is irreducible for premise accounting:
-    `Lattice + Quantum + Record` + emergent-time + reflection positivity do not
-    supply a value of `c_t/c_s`, the scale reference carries no dimensionless
-    ratio, and since `c_t = c_s` is itself the emergent-Lorentz output, deriving
-    it from those structures would be circular. The adjacent freedoms are not
+    `Lattice + Qubit + Admissibility + Record` + emergent-time + reflection
+    positivity do not supply a value of `c_t/c_s`, the scale reference carries
+    no dimensionless ratio, and since `c_t = c_s` is itself the
+    emergent-Lorentz output, deriving it from those structures would be
+    circular. The adjacent freedoms are not
     supplied here: the absolute scale belongs to `scale_reference_primitive`,
     while any spacing-ratio/reachability claims remain in their own derivation
     rows.
@@ -156,7 +206,7 @@ Recorded explicitly approved primitive:
     dimensionless **dynamical** content. Depending on this primitive cannot
     supply a physical observable, and the purity guard must keep the source note
     inside that boundary.
-  - **Scope.** The minimal framework baseline remains the three named axioms.
+  - **Scope.** The minimal framework baseline remains the four named axioms.
     This primitive does not re-axiomatize time: the emergent single-clock
     evolution remains derived, and only the one graining ratio `c_t/c_s` is
     fixed. It supplies no dynamics, no fourth spatial dimension, and no
@@ -175,7 +225,8 @@ promoted to axiom or primitive class):
   ten-persona adversarial physics panel (round 1: 9 reservations + 1 objection;
   round 2: 10/10 pass, no objections).
   - **Why it is admissible.** It is the laws-versus-initial-conditions floor
-    made explicit: the three axioms fix the carrier, adjacency, and registration
+    made explicit: the framework axioms fix the carrier, adjacency,
+    local admissibility interface, and registration
     structure, and a state is an additional datum no state-blind structure can
     supply. Irreducibility is exhibited case by case on exact instances
     (state-blind dynamics with state-contingent registered outcomes; no derived

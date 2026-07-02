@@ -9,6 +9,9 @@ must be tightened before `sqrt(sigma)` can move beyond bounded status.
 **Lane:** 1 — Hadron mass program (route 3E)
 **Source workstream:** `hadron-mass-program-20260427`
 
+**Primary runner:** [`scripts/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.py`](../scripts/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.txt`](../logs/runner-cache/frontier_hadron_lane1_sqrt_sigma_gate_source_packet.txt)
+
 ---
 
 ## 0. Statement
@@ -48,18 +51,18 @@ when:
 - (B5) is sharpened to a structural identification with explicit
   declared residual budget.
 
-**Net.** The single load-bearing open item is **(B2) — quenched →
+**Net.** The dominant numerical open item is **(B2) — quenched →
 dynamical screening factor for SU(3) Yang-Mills with `N_f = 2+1` flavors
 at `beta = 6.0`**. Closing this with a proper lattice calculation
-(rather than the current rough ×0.96 factor) plus declaring (B1) and
-(B5) explicitly could deliver a YT-lane-style retained-with-budget
-statement.
+(rather than the current rough ×0.96 factor), while separately declaring
+the (B1) precision propagation and tightening the (B5) framework bridge,
+would prepare a YT-lane-style explicit-budget statement.
 
-## 1. Premise (retained surface used)
+## 1. Premise and dependency surface used
 
 | Identity | Authority |
 |---|---|
-| `Cl(3)` on `Z^3` minimal axiom stack | `MINIMAL_AXIOMS_2026-04-11.md` |
+| Lattice/Quantum/Record minimal axiom stack | `MINIMAL_AXIOMS_2026-06-05.md` (axiom premise; chain-satisfies only) |
 | `g_bare = 1` and `N_c = 3` → `beta = 6.0` (Wilson plaquette action) | confinement note §3 (arithmetic) |
 | `T = 0` confinement of SU(3) YM (Wilson criterion + decades of lattice) | confinement note §3 |
 | `<P> = 0.5934` plaquette consistency at `beta = 6.0` | confinement note §3 (verified 0.7% on 4^4 lattice) |
@@ -198,19 +201,20 @@ is:
 | (B3) `Lambda^(3)` matching | absorbed via Method 2 | 0% | already done |
 | (B4) Method-disagreement | structural choice | 0% | select Method 2 (after B2) |
 | (B5) Framework ↔ standard SU(3) YM identification | structural | unquantified | volume-scaling / asymptotic Wilson loops |
-| **Total** | bounded | **~5.6%** | **gated on (B2) + (B5) declaration** |
+| **Total** | bounded | **~5.6%** | **gated on (B2) plus a declared (B5) structural bridge budget** |
 
 The `5.6%` central-value gap (465 vs 440) lines up cleanly with the
 ~5% (B2) contribution plus ~1% (B1) propagation. (B3), (B4) are
 methodologically resolved; (B5) is structural.
 
-## 4. The single load-bearing open item
+## 4. Dominant numerical open item
 
 **(B2) — quenched → dynamical screening factor for SU(3) Yang-Mills
 with `N_f = 2+1` at `beta = 6.0`.**
 
-This is the only bounded numerical residual in the current
-derivation. Closing it requires:
+This is the dominant bounded numerical residual in the current
+derivation. It does not close the separate (B5) framework-to-standard-QCD
+structural bridge. Tightening B2 requires:
 
 - a proper `N_f = 2+1` dynamical-fermion lattice calculation at
   `beta = 6.0`, using the framework's substrate (Wilson or staggered
@@ -219,10 +223,10 @@ derivation. Closing it requires:
   standard lattice-QCD `N_f = 2+1` literature value with PDG light-
   quark masses as a comparator and declaring the residual.
 
-Either path replaces the rough ×0.96 with a sub-percent retention
+Either path would replace the rough ×0.96 with an explicit numerical
 budget. The first path is preferable for full retention; the second
-path supplies a YT-lane-style retained-with-explicit-budget interim
-statement.
+path supports a retained-with-explicit-budget interim target only if
+the separate B5 bridge budget is also declared.
 
 ## 5. What this audit closes and does not close
 
@@ -230,8 +234,8 @@ statement.
 
 - A specific 5-component EFT-bridge decomposition of the bounded
   `sqrt(sigma)` derivation.
-- Identification of (B2) as the dominant residual and the single
-  load-bearing open item for retention promotion.
+- Identification of (B2) as the dominant numerical residual while
+  preserving (B5) as a separate structural bridge gate.
 - A structural placement of the YT-lane-style retained-with-budget
   pathway.
 
@@ -256,7 +260,9 @@ statement.
   promotion; §4.1 on Route R6 (this audit).
 - `docs/lanes/open_science/01_HADRON_MASS_PROGRAM_OPEN_LANE_2026-04-26.md`
   §3.5 — lane file's framing of 3E.
-- `docs/MINIMAL_AXIOMS_2026-04-11.md` — minimal accepted axiom stack.
+- `docs/MINIMAL_AXIOMS_2026-06-05.md` — current minimal accepted axiom
+  stack; axiom premises chain-satisfy only and do not source bounded
+  status.
 
 ## 7. Boundary
 
@@ -265,9 +271,11 @@ not promote `sqrt(sigma)` from bounded to retained. It does not
 retire any input. It identifies the precise residual budget that
 the retention promotion must close.
 
-A runner is not authored: the audit is structural review of an
-existing bounded derivation; no new symbolic or numerical content
-is introduced.
+The primary source-packet runner records no audit verdict and makes no
+status promotion. It verifies the dependency links requested for
+re-audit, replays the Method-2 / rough-screening budget arithmetic, and
+checks that the B2 dynamical-screening and B5 framework-to-standard-QCD
+links remain explicit current-surface gates.
 
 ## Audit dependency repair links
 
@@ -276,4 +284,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 - [confinement_string_tension_note](CONFINEMENT_STRING_TENSION_NOTE.md)
 - [alpha_s_derived_note](ALPHA_S_DERIVED_NOTE.md)
 - [hadron_mass_lane1_theorem_plan_support_note_2026-04-27](HADRON_MASS_LANE1_THEOREM_PLAN_SUPPORT_NOTE_2026-04-27.md)
-- [minimal_axioms_2026-04-11](MINIMAL_AXIOMS_2026-04-11.md)
+- [minimal_axioms](MINIMAL_AXIOMS_2026-06-05.md)

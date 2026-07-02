@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_up_amplitude_candidate_scan.py
-runner_sha256: 4765c6bdcf5038051724593a923aa6e85da8123a5060b2feeb7cbfb9a4bfd955
+runner_sha256: 4f3f94b8ba36a2035c47f108803da773e2d6774426c6c607db007b175b1bfdfd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.10
+elapsed_sec: 0.87
 status: ok
 ----- stdout -----
 ========================================================================

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_endpoint_ratio_chain_law.py
-runner_sha256: 022077b2a9b9a3f28c1f30cb1480f5334012c6f53fe7edf8cb6bca42f102c795
-timeout_sec: 600
+runner_sha256: 3cebd04613a7046e8fa9cc80c3547cd954991e646157b3323421713db4509f1b
+timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 219.40
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 Quark endpoint ratio-chain law
@@ -23,7 +23,7 @@ PART 1: Exact Endpoint Ratio Chain
       = [gamma_E(center)/gamma_T(center)]
         * [gamma_T(center)/gamma_T(shell)]
         * [gamma_T(shell)/gamma_E(shell)]
-  [PASS] The endpoint E-quotient is fixed exactly by the three endpoint ratio factors  (residual = 0.000e+00)
+  [PASS] The endpoint E-quotient is fixed exactly by the three endpoint ratio factors  (residual = 2.220e-16)
   [PASS] The T-chain factor remains the already-isolated exact-support candidate 5/6  (gap = 0.000616%)
 
 ========================================================================
@@ -46,7 +46,7 @@ PART 3: Implied E-Channel Quotient and Denominator
   chain-implied E ratio         = 5.250000000000
   chain-implied denominator     = 2.625000000000
   live E quotient               = 1.876246130347
-  live bounded denominator      = 2.621601678209
+  live bounded denominator      = 2.621601678213
   [PASS] The rational ratio chain implies gamma_E(center)/gamma_E(shell) = 15/8 exactly  (chain = 1.875000000000)
   [PASS] The rational ratio chain implies r_E = 21/4 exactly  (chain = 5.250000000000)
   [PASS] The rational ratio chain implies the anchored denominator D_E = 21/8 exactly  (chain = 2.625000000000)
@@ -87,5 +87,6 @@ The endpoint data now support a tighter theory-first chain than the standalone E
 SUMMARY
 ========================================================================
 PASS=21 FAIL=0
+
 ----- stderr -----
 

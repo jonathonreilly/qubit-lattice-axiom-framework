@@ -1,24 +1,54 @@
 ===== runner cache v1 =====
 runner: scripts/sm_gstar_i12_empirical_thermal_comparator_bridge_2026_06_15.py
-runner_sha256: 1caf8f8d25f7a679ee19dc65519ac787260c08e933c8995b9da2697300a31655
+runner_sha256: f6db85bc72479318f927b90713076878f62ac5377ff66996e5a081226ffe9b5c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 SM GSTAR I12 EMPIRICAL THERMAL COMPARATOR BRIDGE
-PASS: note contains boundary phrase: admitted empirical small-neutrino-mass observation
+PASS: note contains boundary phrase: Actual current-surface status:** conditional-support arithmetic over explicit
+PASS: note contains boundary phrase: Trace class:** upstream_support
+PASS: note contains boundary phrase: Proposal allowed:** false
+PASS: note contains boundary phrase: Bare retained allowed:** false
+PASS: note contains boundary phrase: 2026-06-18 Audit-Scope Repair
+PASS: note contains boundary phrase: the row to be narrowed to pure arithmetic over explicit declared comparator
+PASS: note contains boundary phrase: This source repair takes the second path
+PASS: note contains boundary phrase: None of these comparator premises is derived here
+PASS: note contains boundary phrase: not Tier-A admissions
+PASS: note contains boundary phrase: framework primitives
+PASS: note contains boundary phrase: conditional arithmetic over declared empirical m_nu and thermal-rate
+PASS: note contains boundary phrase: declared empirical small-neutrino-mass comparator
 PASS: note contains boundary phrase: Gamma_nuR ~ y_nu^2 T
 PASS: note contains boundary phrase: H ~ 1.66 sqrt(g_*) T^2 / M_Pl
 PASS: note contains boundary phrase: not a framework-native derivation
 PASS: note contains boundary phrase: does not derive small neutrino mass
 PASS: note contains boundary phrase: SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md
 PASS: note contains boundary phrase: `0.6 eV` edge remains more than three decades below it
+PASS: note contains boundary phrase: new approved framework primitive
+PASS: note contains boundary phrase: prefactor-robustness repair
+PASS: note contains boundary phrase: E = c_Gamma / c_H
+PASS: note contains boundary phrase: Gamma_nuR/H < 1e-3
+PASS: note contains boundary phrase: m_nu > 20 eV
 PASS: note contains boundary phrase: new axiom
-PASS: parent carries I12 phrase: empirical small `m_nu`
-PASS: parent carries I12 phrase: Gamma_nu_R  ~  y_nu^2  T
-PASS: parent carries I12 phrase: g_* = 106.75
-PASS: parent carries I12 phrase: g_* = 112
+PASS: note contains 2026-06-20 narrowing phrase: 2026-06-20 Audit-Scope Repair (pure-arithmetic narrowing)
+PASS: note contains 2026-06-20 narrowing phrase: narrow the row to pure arithmetic over explicitly admitted premises
+PASS: note contains 2026-06-20 narrowing phrase: narrowed to pure arithmetic over explicitly ADMITTED
+PASS: note contains 2026-06-20 narrowing phrase: ADMITTED-1  (empirical m_nu comparator value)
+PASS: note contains 2026-06-20 narrowing phrase: ADMITTED-3  (thermalization estimate)
+PASS: note contains 2026-06-20 narrowing phrase: ADMITTED-4  (radiation-era expansion estimate)
+PASS: note contains 2026-06-20 narrowing phrase: ADMITTED inputs to this packet
+PASS: note contains 2026-06-20 narrowing phrase: not derived here
+PASS: note contains 2026-06-20 narrowing phrase: not retained authorities
+PASS: note contains 2026-06-20 narrowing phrase: not Tier-A admissions
+PASS: note contains 2026-06-20 narrowing phrase: not accepted premise nodes
+PASS: note contains 2026-06-20 narrowing phrase: Bridge to retained authority: OPEN
+PASS: note contains 2026-06-20 narrowing phrase: does **not** supply retained authority
+PASS: note contains 2026-06-20 narrowing phrase: Closing that bridge
+PASS: note contains 2026-06-20 narrowing phrase: is left open
+PASS: parent exists and is non-empty
+PASS: parent names shared admitted premise: empirical small `m_nu`
+PASS: parent names shared admitted premise: Gamma_nu_R  ~  y_nu^2  T
 PASS: 0.05 eV gives y_nu between 2e-13 and 4e-13 (2.874e-13)
 PASS: 0.1 eV gives y_nu between 5e-13 and 7e-13 (5.747e-13)
 PASS: 0.6 eV generous edge stays below 4e-12 (3.448e-12)
@@ -32,10 +62,22 @@ PASS: 0.1 eV comparator is more than four decades below threshold (4.31)
 PASS: 0.6 eV generous edge is more than three decades below threshold (3.54)
 PASS: thermalization at 100 GeV implies m_nu above 1 keV (2.063e+03 eV)
 PASS: thermalization at 100 GeV is above 0.6 eV comparator by > 1000x
+PASS: prefactor grid has 3 masses x 3 temperatures x 5 enhancements = 45 cases
+PASS: all prefactor-grid cases remain out of equilibrium (Gamma/H < 1) (worst=8.458e-04 at m=0.6 eV, T=1.000e+02 GeV, E=1.0e+04)
+PASS: hostile E=1e4 at 0.6 eV, 100 GeV still has Gamma/H < 1e-3 (8.458e-04)
+PASS: hostile E=1e4 thermalization at 100 GeV still implies m_nu > 20 eV (2.063e+01 eV)
+PASS: hostile E=1e4 thermalization mass remains >30x the 0.6 eV generous edge (34.38x)
+PASS: central 0.1 eV branch survives even E=1e8 at 100 GeV (2.349e-01)
+PASS: temperature monotonicity makes 100 GeV the most lenient point for every enhancement
+PASS: exact 1.66/rate prefactors are not decisive inside the E<=1e4 robustness box
 PASS: note does not claim audit-retained status
+PASS: note does not allow bare retained wording
+PASS: note marks the arithmetic as conditional-support
 PASS: note keeps small mnu derivation excluded
+PASS: note keeps thermal-rate derivation excluded
+PASS: downstream citation rule prevents retained authority use
 PASS: note denies new axiom
-TOTAL: PASS=28 FAIL=0
+TOTAL: PASS=70 FAIL=0
 VERDICT: bounded comparator bridge passes
 
 ----- stderr -----

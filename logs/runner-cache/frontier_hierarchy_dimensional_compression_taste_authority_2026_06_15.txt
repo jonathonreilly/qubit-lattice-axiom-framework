@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_dimensional_compression_taste_authority_2026_06_15.py
-runner_sha256: 0aaa9c7c19a7b64a66c281e918c0192a25b35d73769abdca082b5d06cd864b48
+runner_sha256: 6ebb86e3d696ed7020cf3c01357f05e1513f9a289fe2df315b2e1961c982a842
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 Hierarchy dimensional-compression diagnostic
@@ -55,6 +55,7 @@ Hierarchy dimensional-compression diagnostic
          v_obs, v_pred, C_obs are not referenced before this point
   [PASS] source note demotes stale bounded-theorem proposal to conditional support
   [PASS] source note wires D=4 density-scale bridge while keeping physical VEV premise open
+  [PASS] source note wires EW order-parameter readout bridge while preserving endpoint-selection residual
   [PASS] taste-count one-hop authorities are retained-grade in the live ledger
          higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05=retained_bounded, wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08=retained_bounded
 
@@ -71,14 +72,15 @@ Hierarchy dimensional-compression diagnostic
 
 Conclusion (within-scope):
   Under the 2026-06-16 fixed-density coefficient-to-scale bridge,
-  a positive endpoint coefficient ratio R maps to the inverse
-  fourth-root scale factor R^(-1/4) at D=4. The runner checks
-  that this candidate is quantitatively distinct from the D=16
-  direct-scale alternative and that no within-scope PASS gate
-  depends on the imported v_obs.
+  and the 2026-06-18 EW order-parameter readout bridge, a positive
+  endpoint coefficient ratio R maps to the inverse fourth-root
+  scale factor R^(-1/4) at D=4 on a supplied quartic Higgs-density
+  surface. The runner checks that this candidate is quantitatively
+  distinct from the D=16 direct-scale alternative and that no
+  within-scope PASS gate depends on the imported v_obs.
 
 ==============================================================================
-SCORECARD: 8 pass, 0 fail out of 8
+SCORECARD: 9 pass, 0 fail out of 9
 ==============================================================================
 
 ----- stderr -----

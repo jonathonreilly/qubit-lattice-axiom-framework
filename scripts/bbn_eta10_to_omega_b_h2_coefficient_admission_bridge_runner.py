@@ -4,8 +4,10 @@
 The runner checks only:
 
 1. The analytic factor 2 zeta(3)/pi^2 from the supplied Planck distribution
-   integral, computed independently and matched against the standard
-   photon-number density per unit T^3;
+   integral, certified by the termwise series
+   int_0^inf x^2/(exp(x)-1) dx = sum_{n>=1} 2/n^3 and an explicit p-series
+   tail bound, then matched against the standard photon-number density per
+   unit T^3;
 2. The supplied P1-P4 premise packet recorded in the source note (proton
    mass, CMB temperature, critical-density unit from admitted H_100 and G,
    Cyburt convention / residual normalization);
@@ -32,8 +34,10 @@ RUNNER_PATH = "scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runn
 NOTE_PATH = ROOT / "docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md"
 
 # Apery's constant zeta(3) to high precision (Riemann zeta function at 3).
-# Pure analytic constant, no empirical input.
+# Pure analytic constant, no empirical input; Part 1 certifies this reference
+# value lies inside an independently computed series/tail interval.
 ZETA3 = 1.2020569031595942853997381615114499907649862923405
+ZETA3_SERIES_CERT_N = 20_000
 
 # Cyburt+ 2016 published value.
 CYBURT_2016_COEFFICIENT = 3.6515e-3
@@ -114,8 +118,26 @@ def part0_source_firewall() -> None:
 
 def part1_framework_clean_factor() -> float:
     print("\n== Part 1: analytic factor 2 zeta(3) / pi^2 ==")
-    # The standard Bose-Einstein integral: int_0^inf x^2 / (e^x - 1) dx = 2 zeta(3).
-    # Photon number density per T^3 is g_gamma/pi^2 * 2 zeta(3) with g_gamma = 2.
+    # The standard Bose-Einstein integral follows from
+    # 1/(e^x - 1) = sum_{n>=1} e^{-n x} and
+    # int_0^inf x^2 e^{-n x} dx = 2/n^3, giving 2 zeta(3).
+    partial = sum(1.0 / (n**3) for n in range(1, ZETA3_SERIES_CERT_N + 1))
+    tail_upper = 1.0 / (2.0 * (ZETA3_SERIES_CERT_N**2))
+    zeta_lower = partial
+    zeta_upper = partial + tail_upper
+    check(
+        "zeta(3) reference is certified by the p-series tail interval",
+        zeta_lower <= ZETA3 <= zeta_upper,
+        f"N={ZETA3_SERIES_CERT_N}, width <= {tail_upper:.3e}",
+    )
+    integral_lower = 2.0 * zeta_lower
+    integral_upper = 2.0 * zeta_upper
+    check(
+        "Planck integral identity is internally certified: integral = 2 zeta(3)",
+        integral_lower <= 2.0 * ZETA3 <= integral_upper,
+        f"2*zeta(3) in [{integral_lower:.12f}, {integral_upper:.12f}]",
+    )
+    # Photon number density per T^3 is g_gamma/(2*pi^2) times the integral.
     g_gamma = 2
     factor = g_gamma * ZETA3 / pi**2
     expected = 2 * ZETA3 / pi**2
@@ -213,6 +235,17 @@ def part4_premise_packet_named(s_cyburt_exact: float) -> None:
 def part5_retention_scorecard(coeff: float) -> None:
     print("\n== Part 5: retention scorecard ==")
     note = NOTE_PATH.read_text(encoding="utf-8")
+    check(
+        "source records the 2026-06-18 analytic-factor import retirement",
+        "2026-06-18 Analytic Factor Import Retirement" in note
+        and "p-series tail bound" in note
+        and "N=20000" in note,
+    )
+    check(
+        "source separates analytic proof from physical admissions",
+        "internal math certificate for the analytic Planck-distribution factor only" in " ".join(note.split())
+        and "P1-P4 admitted physical/comparator premises" in " ".join(note.split()),
+    )
     check(
         "source says critical-density unit is formula-expanded instead of black-boxed",
         "critical-density unit is formula-expanded instead of black-boxed" in note,

@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.py
+runner_sha256: d53d5d90e8cb77dd727ca2b543ad6c18d69e49d392131a1f20837f33d2d4e05c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+PASS: Record axiom does not supply the missing readout context Record is additive only after a readout context is supplied.
+PASS: Quantum axiom does not supply a physical observable bridge The one-site algebra is not a charged-lepton readout theorem.
+PASS: retained C3 generation theorem excludes physical-species/readout scope Finite M3(C) algebra is retained; physical flavor semantics are separate.
+PASS: readout factorization note keeps admissibility-to-carrier as conditional Rank/kernel quotient is retained-bounded; physical selector remains open.
+PASS: minimal selector note starts after the carrier is admitted Selector-variable uniqueness is not carrier identification.
+PASS: real-D uniqueness note admits the strengthened generator class Log-det uniqueness applies after its block-family class is supplied.
+PASS: flavor gate audit identifies the readout/carrier step as a gate, not a derivation The readout gate equals the carrier/basepoint identification gate.
+PASS: two-slot scalar compression is not the full C3 diagonal carrier (1,2,3) and (1,3,2) share sum/centered norm but differ as diagonal triples.
+PASS: compression also loses reflection/orientation data not removed by C3 Same scalar data, different C3 orbit.
+PASS: arbitrary positive diagonal baseline normalizes to I2 after rescaling sources D_red=I2 follows after choosing normalized source coordinates j_i/d_i.
+PASS: absolute D_red=I2 still needs source-unit/readout normalization The parent source already treats this as the audit-named missing bridge.
+PASS: parent exact reduced determinant support is preserved The repair does not retract the algebraic support theorem.
+PASS: parent note records this companion without promotion Source-side repair is graph-bookkeeping plus an open-gate boundary.
+
+TOTAL: PASS=13 FAIL=0
+OBSTRUCTION RESULT: the reduced two-slot determinant law remains exact support on a supplied scalar carrier, but the current retained inputs do not derive that carrier as the physical charged-lepton readout or force the absolute D_red=I2 normalization. The missing bridge is a real readout/coarse-graining theorem, not a stale algebra check.
+
+----- stderr -----
+

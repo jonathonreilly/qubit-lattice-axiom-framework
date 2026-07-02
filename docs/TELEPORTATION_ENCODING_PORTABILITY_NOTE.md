@@ -242,3 +242,18 @@ for the finite operator-targeting content of this note rather than only a
 case-by-case audit; the
 physical-implementation gate (apparatus, noise, durable record, dynamical
 preparation) remains open.
+
+## Downstream Boundary Alignment (2026-06-13)
+
+The runner now requires the audited downstream teleportation boundary stack
+before this finite portability artifact can report success. The direct
+consumers are the retained-axis operator-algebra closure, cross-encoding maps,
+three-register cross-encoding, no-signaling, 3D-operator, and conclusion
+boundary anchors; the shared helper also verifies the measurement, resource,
+and causal-channel anchors needed by the full planning stack.
+
+This alignment keeps the result bounded. It supports finite even-side encoding
+portability and operator targeting on the audited state-teleportation surface,
+but it still does not derive odd-side behavior, a physical apparatus,
+resource-preparation dynamics, durable records, matter transport, or
+nature-grade closure.

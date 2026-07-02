@@ -53,6 +53,33 @@ exploratory diagnostic only.
 - It does not import or modify any framework axiom and does not
   promote any audited row.
 
+## Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to:
+
+- cite it as an exploratory fixed-theta `g`-linearity diagnostic in a
+  1D local-unitary chiral-walk toy harness;
+- cite the runner's local checks of free dispersion, field-strength
+  scaling, `g`-sweep linearity, `theta_m` sweep, and `k` sweep;
+- cite the negative boundary that theta sensitivity and k-achromatic
+  closure remain open.
+
+Forbidden downstream uses without a new retained bridge:
+
+- do not cite this packet as a framework-level mass-gravity theorem;
+- do not cite it as equivalence-principle closure;
+- do not cite it as `theta_m` flattening closure;
+- do not cite it as k-achromatic closure;
+- do not cite it as overload-bottleneck closure;
+- do not cite it as a physical gravitation value, fitted selector, or
+  observational match;
+- do not use it to promote any audited row.
+
+Re-audit should be triggered if a downstream row applies this class-C
+toy-harness diagnostic to a framework-level mass-gravity claim,
+equivalence-principle claim, or residual-closure claim without adding a
+new retained bridge and explicit numeric thresholds.
+
 ## Diagnostic context for the 10-card (informational only)
 
 The following rows are recorded as the harness's current diagnostic

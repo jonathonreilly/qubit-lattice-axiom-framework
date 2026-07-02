@@ -578,7 +578,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     """
     cid = row["claim_id"]
     note_path = row.get("note_path") or ledger_rows.get(cid, {}).get("note_path") or ""
-    runner_path = row.get("runner_path") or ledger_rows.get(cid, {}).get("runner_path") or ""
+    raw_runner_path = row.get("runner_path") or ledger_rows.get(cid, {}).get("runner_path") or ""
+    runner_path = canonical_runner_path(raw_runner_path) if raw_runner_path else ""
     claim_type_hint = (
         row.get("claim_type")
         or ledger_rows.get(cid, {}).get("claim_type")
@@ -659,7 +660,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         or []
     )
     helper_sources_blocks: list[str] = []
-    for hp in helper_runner_paths:
+    for hp_raw in helper_runner_paths:
+        hp = canonical_runner_path(hp_raw)
         full_hp = REPO_ROOT / hp
         if not full_hp.exists():
             helper_sources_blocks.append(
@@ -1207,7 +1209,8 @@ def main() -> int:
             # has no log, the audit cannot judge load-bearing class without
             # invoking the runner inline — which breaks the "fresh-look in an
             # isolated workdir" model.
-            runner_path = row.get("runner_path") or full_led_row.get("runner_path")
+            raw_runner_path = row.get("runner_path") or full_led_row.get("runner_path")
+            runner_path = canonical_runner_path(raw_runner_path) if raw_runner_path else raw_runner_path
             if (
                 args.require_runner_output
                 and runner_path

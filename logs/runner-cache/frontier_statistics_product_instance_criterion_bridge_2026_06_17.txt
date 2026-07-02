@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py
+runner_sha256: f7a294fa06af8209df6f4fdbf2f417ccc704d26d04949b9bfa03aa0d23980897
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.12
+status: ok
+----- stdout -----
+Statistics product-instance criterion bridge runner
+Status authority: independent audit lane only; this runner sets no audit outcome.
+
+========================================================================================
+Symbolic product-instance checks
+========================================================================================
+PASS: P0 Pauli tensor ansatz is normalized, Hermitian, and has both marginals sigma
+PASS: P1a shifted Pauli product-effect cumulants are exactly (T_ab - s_a s_b)/4
+PASS: P1b vanishing product-effect cumulants force T_ab=s_a s_b
+      solutions=[{T_xx: s_x**2, T_xy: s_x*s_y, T_xz: s_x*s_z, T_yx: s_x*s_y, T_yy: s_y**2, T_yz: s_y*s_z, T_zx: s_x*s_z, T_zy: s_y*s_z, T_zz: s_z**2}]
+PASS: P1c same marginals plus product-effect criterion force rho=sigma tensor sigma
+PASS: P2a product state factors arbitrary product-effect expectations
+PASS: P3 quotient criterion is exactly vanishing registered-weight cumulants
+      cumulants={('s', 's'): 0, ('s', 'd'): 0, ('d', 's'): 0, ('d', 'd'): 0}
+PASS: P4 same-marginal correlated witness fails quotient factorization
+      mixed_cell=0, product_cell=p*(1 - p)
+
+========================================================================================
+Textual firewall checks
+========================================================================================
+PASS: T1 bridge note metadata is canonical bounded_theorem with independent audit required
+PASS: T2 bridge boundary and no-new-axiom firewall phrases present
+PASS: T3 retained-source dependencies are cited as dependencies, not redefined
+PASS: T4 product-to-outcome weakening dependency remains the downstream quotient authority
+PASS: T5 statistics atom note links the product-instance bridge as an explicit dependency
+PASS: T6 closing/promotion overclaim language absent
+PASS: T7 bridge markdown link inventory is exactly the dependency set
+      found=['[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)', '[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)', '[`PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md`](PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md)', '[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)']
+
+========================================================================================
+git diff --stat
+========================================================================================
+(computed without invoking git, per the no-git rule)
+ docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md | 175 +
+ docs/STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md | 255 +
+ scripts/frontier_statistics_product_instance_criterion_bridge_2026_06_17.py | 355 +
+ 3 files changed, 785 insertions(+)
+
+SUMMARY:
+Product-effect criterion, product-to-quotient implication, quotient cumulant criterion, same-marginal control, and textual status firewalls verified.
+Physical repeated-registration independence remains an open premise outside this bridge.
+TOTAL: PASS=14 FAIL=0
+CHAIN: {'pauli_ansatz': True, 'product_effect_criterion': True, 'product_implies_quotient': True, 'quotient_factorization': True, 'same_marginal_control': True}
+
+----- stderr -----
+

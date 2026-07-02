@@ -18,8 +18,8 @@ for:
           d rho_x / dt  +  (div^L j)_x  =  0,        rho_x := chibar_x chi_x,
 
       to hold, where (div^L j)_x = sum_mu ( j^mu_x - j^mu_{x-mu} ). With the
-      number density rho_x = chibar_x chi_x fixed as the physical (>= 0) charge
-      density and dQ/dt = 0, the current sign is determined uniquely.
+      onsite U(1) number-density operator rho_x = chibar_x chi_x and dQ/dt = 0,
+      the current sign is determined uniquely.
 
   (2) The general lattice Noether identity is RESTRICTED to onsite / internal
       symmetry generators T (acting site-locally, T_{xy} = t * delta_{xy} for a
@@ -301,7 +301,7 @@ def part_B_onsite_internal_locality() -> None:
 
 # ---------------------------------------------------------------------------
 # Part C — staggered specialization with the FIXED U(1) SIGN (numeric exhibit
-# on the admitted free staggered carrier). This pins the prefactor in the
+# on the finite free staggered carrier). This pins the prefactor in the
 # corrected formula (4):
 #
 #     j^mu_x  =  -(1/2) eta_mu(x) [ chibar_x chi_{x+mu} + chibar_{x+mu} chi_x ]
@@ -527,6 +527,7 @@ def main() -> int:
         / "docs"
         / "AXIOM_FIRST_LATTICE_NOETHER_ONSITE_INTERNAL_NARROW_THEOREM_NOTE_2026-06-05.md"
     ).read_text()
+    note_flat = " ".join(note.split())
     required_terms = [
         "2026-06-07 authority split",
         "AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06",
@@ -534,19 +535,23 @@ def main() -> int:
         "downstream realization-gate bridge",
         "physical realization/readout identification of this exhibit is",
         "downstream and is not consumed here",
+        "Finite carrier exhibit (constructed here, not a broad-gate dependency)",
+        "No load-bearing broad-gate dependency is recorded here",
+        "prior staggered-realization parent link has been removed",
     ]
     banned_terms = [
         "derives the admitted staggered",
         "derives the Kawamoto-Smit",
         "framework-native staggered carrier",
         "physical realization/readout identification of this exhibit is consumed",
+        "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)",
     ]
-    boundary_ok = all(term in note for term in required_terms) and not any(
-        term in note for term in banned_terms
+    boundary_ok = all(term in note_flat for term in required_terms) and not any(
+        term in note_flat for term in banned_terms
     )
     print(
         f"BOUNDARY GUARD: {'PASS' if boundary_ok else 'FAIL'} "
-        "retained abstract authority is cited; finite exhibit is not promoted"
+        "retained abstract authority is cited; finite exhibit is not promoted and no gate edge is present"
     )
     if not boundary_ok:
         return 1

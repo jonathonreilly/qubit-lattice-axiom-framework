@@ -248,8 +248,8 @@ human judgment, the actual current surface status is **not** `retained`.
 
 **No-new-axiom/no-new-primitive rule.** The repo does NOT accept extensions to
 its axiom stack or primitive registry as part of physics-loop work. `A_min`
-means the current minimum axiom set, Lattice + Quantum + Record, NOT permission
-to enlarge it. A route or
+means the current minimum axiom set, Lattice + Qubit + Admissibility + Record,
+NOT permission to enlarge it. A route or
 counterfactual whose closure requires adopting a new axiom or new framework
 primitive is `infeasible`, regardless of how productive its consequences would
 be. The legitimate import-bearing shape is:
@@ -601,7 +601,7 @@ routes are risky.
   a sharper obstruction, a falsified premise, or a worked failed derivation
   with the exact load-bearing wall named.
 - **First-principles reset:** before the stretch attempt, write the minimal
-  allowed premise set (`A_min`: Lattice, Quantum, Record), the approved
+  allowed premise set (`A_min`: Lattice, Qubit, Admissibility, Record), the approved
   primitive set from `docs/audit/data/axiom_premise_nodes.json`, and
   forbidden imports. The attempt must not
   rely on observed target values, fitted selectors, or literature as hidden

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Admitted-residue coefficient algebra for the two-Ward g_bare route.
+"""Conditional residue coefficient algebra for the two-Ward g_bare route.
 
 This runner checks only the narrow repaired claim:
 
@@ -7,9 +7,11 @@ This runner checks only the narrow repaired claim:
   * admitted same-1PI residue identity F_Htt^(0)^2 = g_bare^2/(2 N_c);
   * exact rational consequence g_bare = 1 on the positive branch;
   * source text keeps the residue premise conditional;
-  * exact residue-normalization obstruction: current retained inputs allow an
+  * exact residue-normalization obstruction: current cited inputs allow an
     undetermined same-direction multiplier R(g_bare), so g_bare = 1 is pinned
     only after adding the extra normalization R(g_bare) = 1.
+  * actual-surface scope lock: this packet is a conditional map plus
+    no-admission obstruction, not an unconditional pinning theorem.
 """
 
 from __future__ import annotations
@@ -55,13 +57,20 @@ def part0_source_firewall() -> None:
     source = Path(__file__).read_text(encoding="utf-8")
 
     required_note_phrases = [
+        "**Claim type:** bounded_theorem",
         "conditional-use firewall",
         "conditional Path-2 support theorem",
+        "actual-surface scope lock",
+        "not an unconditional pinning theorem",
         "H_unit-residue admission",
         "residue-normalization obstruction",
         "residue-normalization degree of freedom",
+        "free multiplier family `R(g_bare)=g_bare^2`",
         "R(g_bare)",
+        "Downstream firewall",
+        "They may not cite it as an actual-surface theorem deriving `g_bare = 1`",
         "present packet cannot derive `g_bare = 1`",
+        "not an actual-surface pinning theorem",
         "This note does not derive the complete same-projected 1PI exhaustion theorem",
         "The `g_bare = 1` closure is **conditional on the H_unit-residue",
         "does not prove the missing same-projected 1PI exhaustion bridge",
@@ -77,6 +86,7 @@ def part0_source_firewall() -> None:
         "H_unit-residue is the complete same-projected 1PI",
         "promoted to retained",
         "R(g_bare) is fixed by D17",
+        "This packet proves an actual-surface theorem deriving `g_bare = 1`",
     ]
     for phrase in forbidden_note_phrases:
         check(f"source note excludes overclaim phrase: {phrase}", phrase not in flat_note)

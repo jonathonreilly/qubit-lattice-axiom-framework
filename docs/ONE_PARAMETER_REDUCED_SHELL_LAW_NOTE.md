@@ -15,10 +15,11 @@ older helper modules (star_shell_projector,
 same_source_metric_ansatz_scan, coarse_grained_exterior_law,
 sewing_shell_source, radial_shell_matching_law; all wrapped via
 ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md
-in PR #1520) remain historical/provenance context rather than opaque
-live imports in the primary runner. On that bounded reduced surface,
-the seven star-support point-Green columns reproduce the reduced
-one-parameter law to machine precision on the finite replay
+as a helper-wrapper registry only in PR #1520) remain
+historical/provenance context rather than opaque live imports in the
+primary runner. On that bounded reduced surface, the seven
+star-support point-Green columns reproduce the reduced one-parameter
+law to machine precision on the finite replay
 `sigma_red(Q) = Q · (k_rad + c_aniso · m_orb)` with
 `c_aniso = 0.081435402995901`, and the two admitted source-family
 comparators (local O_h, finite-rank) match this law to machine

@@ -346,6 +346,27 @@ class BuildCitationGraphParserTest(unittest.TestCase):
             m.REPO_ROOT = original
         self.assertEqual(helpers, {"prefixed_helper"})
 
+    def test_from_scripts_import_name_form_is_detected(self):
+        # `from scripts import X [as Y]` must resolve to the imported module
+        # X (the real name), not the package `scripts` nor the local alias Y.
+        # This is the form the gate_b primary runners use
+        # (`from scripts import gate_b_connectivity_tolerance as gate_b`).
+        m = _import("build_citation_graph")
+        original = m.REPO_ROOT
+        m.REPO_ROOT = self.tmp_root
+        try:
+            self._write("gate_b_connectivity_tolerance", "K = 1\n")
+            self._write("plain_helper", "v = 5\n")
+            primary = self._write(
+                "primary",
+                "from scripts import gate_b_connectivity_tolerance as gate_b\n"
+                "from scripts import plain_helper\n",
+            )
+            helpers = m._parse_script_imports(primary)
+        finally:
+            m.REPO_ROOT = original
+        self.assertEqual(helpers, {"gate_b_connectivity_tolerance", "plain_helper"})
+
 
 class SeedLedgerTest(unittest.TestCase):
     def setUp(self):

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_dkd_berry_spectator_2026_05_31.py
-runner_sha256: 9e837b94219798da8d2b86c04dff62e08bdf0e59076bb276e9771819a1848f19
+runner_sha256: 3374d842963d8a1dd9e342eb80f103d987a4e6ea593c185c985da3a7871a481d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 
@@ -28,7 +28,7 @@ F2 - form-parity grading anticommutes with i*D_KD
 ========================================================================================
 F3 - the two circulant b-derivatives commute
 ========================================================================================
-[PASS] F3.1 [dH/dRe b, dH/dIm b] = 0 (C and C^2 commute) -> simultaneously diagonalizable -> zero abelian Berry curvature
+[PASS] F3.1 [dH/dRe b, dH/dIm b] = 0 (C and C^2 commute): local algebra diagnostic only, not a standalone Berry theorem
        max|[dH/dx, dH/dy]| = 0.0e+00
 
 ========================================================================================
@@ -46,9 +46,17 @@ F5 - Gamma_F restricts to scalar -I on Lambda^1
        Gamma_F|Lambda^1 = [-1.0, -1.0, -1.0] (= -I)
 
 ========================================================================================
+F6 - downstream source-boundary firewall
+========================================================================================
+[PASS] F6.1 note has downstream source-boundary firewall
+[PASS] F6.2 F3 is local algebra diagnostic, not a zero-curvature Berry theorem
+[PASS] F6.3 future Berry theorem requires missing band/observable data
+[PASS] F6.4 packet only blocks stale zero-Berry claim and records nonzero sweep
+
+========================================================================================
 SUMMARY
 ========================================================================================
-  7/7 checks passed
+  11/11 checks passed
 
   Form-parity anticommutes with i*D_KD, and Gamma_F is scalar on Lambda^1,
   but the corrected Lambda^1 embedding does not support the zero-Berry

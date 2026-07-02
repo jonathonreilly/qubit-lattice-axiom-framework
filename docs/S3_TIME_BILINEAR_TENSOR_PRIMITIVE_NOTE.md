@@ -34,7 +34,7 @@ The 2026-05-10 audit-narrowing refresh confirms there is **no upstream
 retained-grade derivation** of the named inputs on `main`, and adopts
 the explicit class-A definition framing.
 
-**Cited authorities (one-hop deps; cited, not closed in this note):**
+**Authority citations and non-authority context:**
 
 - [`TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md`](TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md)
   (`claim_type: bounded_theorem`, `effective_status: retained_bounded`,
@@ -46,10 +46,11 @@ the explicit class-A definition framing.
   close the `delta_A1`-decoupling, aligned-bright coordinate, or
   physical-primitive-bridge gaps (those remain open and explicitly
   named below).
-- [`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md)
+- `S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`
   (`claim_type: bounded_theorem`, `intrinsic_status: unaudited`) — the
   related Route-2 tensor-primitive surface this note identified as a
-  conceptual sibling. Cited as related, not as authority closure.
+  conceptual sibling. This is a non-authority peer pointer, deliberately
+  not a one-hop dependency for this definition-only row.
 - [`S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md`](S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md)
   (`claim_type: bounded_theorem`, `audit_status: audited_conditional`,
   `effective_status: audited_conditional`) — the Route-2 transfer-matrix
@@ -143,7 +144,8 @@ bilinear carrier under named inputs; it is **not** a positive theorem
 that `K_R` is a physical tensor primitive on the support block.
 
 Related current surfaces include
-[`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md),
+`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`
+(non-authority peer pointer),
 [`S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md`](S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md),
 [`OH_SCHUR_BOUNDARY_ACTION_NOTE.md`](OH_SCHUR_BOUNDARY_ACTION_NOTE.md),
 and the action-side sibling `S3_TIME_BILINEAR_TENSOR_ACTION_NOTE.md`

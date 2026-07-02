@@ -1,31 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_confinement_string_tension.py
-runner_sha256: 1a269662a53dfecc2596e5154aab16c4bd1913d0d8dc7f7ea2ef08849adec7fc
+runner_sha256: 6064d1c55601a7189d9c53e52e170164479ca186b388e85e4da80a460c0a3e14
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 47.92
+elapsed_sec: 38.44
 status: ok
 ----- stdout -----
 ========================================================================
 Confinement and String Tension in the Cl(3) / Z³ Framework
 ========================================================================
 
-THEOREM: The graph-first SU(3) gauge sector confines at T = 0.
-         √σ ≈ 440 MeV from α_s(M_Z) = 0.1181 (zero free params).
+SUPPORT: beta=6 graph-first SU(3) context plus imported
+         Yang-Mills/lattice/EFT inputs gives bounded confinement
+         and string-tension consistency.
 
 
-=== Part 1: Structural confinement theorem ===
+=== Part 1: Beta=6 SU(3) support surface ===
 
   [PASS] g_bare² = 4π α_bare = 1  (g² = 1.000000)
   [PASS] β = 2N_c/g² = 6.0  (β = 6.0)
   [PASS] N_c = 3 (from graph-first SU(3))  (graph-first commutant: gl(3) ⊕ gl(1), compact part su(3))
-  [PASS] SU(3) YM confines at T = 0 for all β > 0 (Wilson criterion)  (established by Wilson (1974), confirmed by lattice MC)
-  [PASS] β = 6.0 is in the confined phase  (deconfining transition at finite T only; T = 0 always confined)
-  [PASS] Framework <P> = 0.5934 matches standard SU(3) YM at β = 6.0  (<P>_framework = 0.5934, <P>_lattice = 0.5934)
+  [PASS] Standard SU(3) YM confinement context is imported, not derived here  (used as bounded Yang-Mills/lattice background)
+  [PASS] β = 6.0 sits on the standard low-temperature pure-gauge support surface  (qualitative support only; not a continuum confinement proof)
+  [PASS] Framework plaquette input matches the standard β=6 reuse value  (<P>_framework = 0.5934, <P>_lattice = 0.5934)
 
 === Part 2: QCD coupling running and Λ_QCD ===
 
-  [PASS] Framework α_s(M_Z) = 0.1181 (retained, 0.2% accuracy)  (α_s(M_Z) = 0.1181)
+  [PASS] Bounded α_s(M_Z) source value = 0.1181 (consumed as EFT input)  (α_s(M_Z) = 0.1181)
   [PASS] [BOUNDED] Λ_MS̄^(5) ≈ 210 MeV (from two-loop formula)  (Λ^(5) = 209.9 MeV (PDG: 210 ± 14 MeV))
   [PASS] [BOUNDED] α_s(m_b) ≈ 0.225 (run from M_Z with N_f = 5)  (α_s(m_b) = 0.2289 (PDG: 0.2268))
   [PASS] [BOUNDED] Λ_MS̄^(4) ≈ 292 MeV  (Λ^(4) = 311.4 MeV)
@@ -36,9 +37,9 @@ THEOREM: The graph-first SU(3) gauge sector confines at T = 0.
 === Part 3: String tension prediction ===
 
   [PASS] [BOUNDED] Method 1: √σ from Λ^(3) × (√σ/Λ)_lattice  (√σ = 1.33 × 389 MeV = 518 MeV (exp: 440 MeV, dev: +17.7%))
-  [PASS] [BOUNDED] Method 2: quenched √σ at β = 6.0 from Sommer scale  (√σ_quenched = 484 MeV (quenched value at the framework's coupling))
+  [PASS] [BOUNDED] Method 2: quenched √σ at β = 6.0 from Sommer scale  (√σ_quenched = 484 MeV (quenched value at beta=6))
   [PASS] [BOUNDED] Method 2: physical √σ with quark screening correction  (√σ_phys ≈ 465 MeV (exp: 440 MeV, dev: +5.6%))
-  [PASS] [BOUNDED] Sensitivity: Δ(√σ)/√σ ≈ 1.2% from Δα_s = 0.0002  (framework α_s is 0.2% high → √σ shifts by ~+1.2%)
+  [PASS] [BOUNDED] Sensitivity: Δ(√σ)/√σ ≈ 1.2% from Δα_s = 0.0002  (source α_s is 0.2% high vs comparator -> √σ shifts by ~+1.2%)
 
 === Part 4: Pure-gauge Monte Carlo at β = 6.0 ===
 
@@ -62,23 +63,31 @@ THEOREM: The graph-first SU(3) gauge sector confines at T = 0.
 
 === Part 5: Combined confinement result ===
 
-  [PASS] Graph-first SU(3) at g_bare = 1 → SU(3) YM at β = 6.0 (structural)  (retained graph-first gauge theorem + canonical normalization)
-  [PASS] SU(3) YM at T = 0 confines (Wilson criterion, lattice MC confirmed)  (confinement is a proven property of the framework's gauge sector)
-  [PASS] α_s(M_Z) = 0.1181 (framework, zero free parameters, 0.2% accuracy)  (retained quantitative lane on main)
+  [PASS] Graph-first SU(3) at g_bare = 1 -> beta=6 support surface  (structural context + declared normalization)
+  [PASS] Standard SU(3) YM confinement is bounded imported context  (not a framework-native proof in this note)
+  [PASS] α_s(M_Z) = 0.1181 consumed as a bounded transfer input  (source boundary remains with alpha_s row)
   [PASS] [BOUNDED] √σ ≈ 440 MeV (determined by α_s through QCD dynamics)  (bounded: conditioned on standard low-energy EFT bridge)
-  [PASS] Framework resolves confinement: SU(3) derived + correct coupling → confines  (no free parameters; confinement follows from the axiom stack)
+  [PASS] Framework supplies bounded confinement support, not retained closure  (beta=6 support + imported YM/lattice context)
 
   --- Experimental predictions ---
   [PASS] [BOUNDED] Linear Regge trajectories with slope α' = 1/(2πσ) ≈ 0.9 GeV⁻²  (α' = 0.82 GeV⁻² (exp: ≈ 0.9 GeV⁻²))
   [PASS] [BOUNDED] Deconfining transition at T_c ≈ 270 MeV (from √σ and lattice ratio T_c/√σ)  (T_c/√σ ≈ 0.60 (lattice QCD) → T_c ≈ 264 MeV)
   [PASS] Flux tube formation between static quarks  (Wilson area law ⇔ linear potential ⇔ chromoelectric flux tube)
 
+=== Part 6: Source-status firewall ===
+
+  [PASS] source note declares bounded-support actual current status
+  [PASS] source note does not use proposed_retained wording
+  [PASS] source note states confinement is not framework-derived here
+  [PASS] source note identifies imported YM/lattice/EFT inputs
+
 ========================================================================
-SUMMARY: PASS=30  FAIL=0
+SUMMARY: PASS=34  FAIL=0
 ========================================================================
 
-All checks passed. SU(3) confinement with √σ ≈ 440 MeV
-is a structural + bounded prediction of the Cl(3)/Z³ framework.
+All checks passed. The branch provides bounded support for
+SU(3) confinement/string-tension consistency; it does not
+claim retained framework-native confinement closure.
 
 ----- stderr -----
 

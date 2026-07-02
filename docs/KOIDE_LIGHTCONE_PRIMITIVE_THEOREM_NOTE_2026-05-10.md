@@ -341,7 +341,8 @@ dependencies of the proof above:
 - `LEPTON_BLOCK_D12_PRIME_MATCHING_NO_GO_NOTE_2026-05-10.md`
 - `LEPTON_BLOCK_SCALAR_SINGLET_COMPOSITE_UNIQUENESS_D17_PRIME_THEOREM_NOTE_2026-05-10.md`
 - `LEPTON_BLOCK_TREE_LEVEL_EXCHANGE_D16_PRIME_THEOREM_NOTE_2026-05-10.md`
-- `KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md` (retained δ = 2/9)
+- `KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md` (formal-only
+  Q-Delta identity; no retained physical `delta = 2/9`)
 - `ANOMALY_FORCES_TIME_THEOREM_NOTE.md` (emergent (1, 3) signature)
 
 The possible physics chain remains open: Lane 6 would need a

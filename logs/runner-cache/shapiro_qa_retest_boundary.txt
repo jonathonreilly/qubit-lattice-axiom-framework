@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/shapiro_qa_retest_boundary.py
+runner_sha256: ee2eddfdf08b5cc3e891e6c0d66ea1521a412e3b7ba8b55a88995c362c7f5bcd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================
+SHAPIRO QA RETEST: BOUNDED CACHE VERIFIER
+  phase-lag replay cache + static-discriminator cache
+========================================================================================
+
+phase replay max spread: 0.0002
+static cone RMSE: 0.0000
+static schedule RMSE: 0.0128
+
+RUNNER CHECKS
+  [PASS] phase-lag cache exits cleanly
+  [PASS] phase-lag cache is SHA-fresh
+  [PASS] static-discriminator cache exits cleanly
+  [PASS] static-discriminator cache is SHA-fresh
+  [PASS] phase replay has exact instantaneous zero control
+  [PASS] phase replay family spread is bounded by 2.5e-4 rad
+  [PASS] static cone reproduces causal curve to displayed precision
+  [PASS] static scheduling remains separated
+  [PASS] source note is bounded QA and has no retained/archived live dependency wording
+  [PASS] source note preserves claim boundary
+
+Safe read:
+  - this is bounded QA over existing caches
+  - archived failed bridge rows are not live dependencies
+  - static-cone mimic remains the no-unique-discriminator boundary
+  - no tracker issue is implied by the checked caches
+
+ASSERTIONS: PASS
+
+----- stderr -----
+

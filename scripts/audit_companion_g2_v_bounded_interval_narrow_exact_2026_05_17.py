@@ -5,9 +5,9 @@
 The narrow theorem's load-bearing content is the bounded-interval
 substitution implication: given
 
-  (X1) Literature import u_0(SU(2)) in [u_lo, u_hi] = [96/100, 98/100]
-       (named external admission, Trottier et al hep-lat/9803024 +
-       Munster strong-coupling series).
+  (X1) Native SU(2) beta=16 one-plaquette interval support
+       u_0(SU(2)) in [u_lo, u_hi] = [96/100, 98/100], supplied by the
+       2026-06-18 direct class-angle integral bridge.
   (X2) Retained b_2 = 19/6 (SU2_WEAK_BETA_COEFFICIENT_NARROW retained_bounded).
   (X3) Retained native SU(2) gauge structure from Cl(3) bivector irrep
        (NATIVE_GAUGE_CLOSURE_NOTE retained).
@@ -45,11 +45,12 @@ u_lo = 96/100, u_hi = 98/100, b_2 = 19/6, L = Rational(3844, 100) approximation
 of 38.44, then provides high-precision mpmath decimal endpoints for the
 result interval to 30 decimal digits.
 
-Companion role: no new claim row, no new source note, no status promotion.
+Companion role: no new claim row, no status promotion.
 Provides audit-friendly evidence at exact precision plus high-precision
 numeric readout. This is the audit-companion for the Pattern A narrow
-bounded theorem; literature import u_0(SU(2)) in [0.96, 0.98] is
-explicitly classified as NAMED EXTERNAL ADMISSION (not derived).
+bounded theorem; the former row-local literature u_0 interval is replaced
+by native one-plaquette SU(2) support, while independent audit remains
+required before any effective status change.
 """
 
 from __future__ import annotations
@@ -79,6 +80,7 @@ PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17.md"
+BRIDGE_NOTE = ROOT / "docs" / "SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md"
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -106,7 +108,7 @@ def main() -> int:
     print("G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17")
     print("Goal: sympy verification of g_2(v) bounded interval from u_0 in [0.96, 0.98]")
     print("Inputs (cited):")
-    print("  (X1) u_0(SU(2)) in [96/100, 98/100]   ... NAMED EXTERNAL ADMISSION")
+    print("  (X1) u_0(SU(2)) in [96/100, 98/100]   ... native beta=16 one-plaquette bridge")
     print("  (X2) b_2 = 19/6                        ... retained_bounded")
     print("  (X3) Cl(3) bivector -> SU(2)           ... retained")
     print("  (X4) 1/alpha_2^bare |_lattice = 16 pi  ... retained_bounded one-hop anchor")
@@ -119,6 +121,7 @@ def main() -> int:
     section("Part 0: source-packet dependency repair checks")
     # ------------------------------------------------------------------
     note_text = NOTE.read_text(encoding="utf-8")
+    bridge_text = BRIDGE_NOTE.read_text(encoding="utf-8")
     check("source note exists", NOTE.exists(), detail=str(NOTE.relative_to(ROOT)))
     check(
         "(X4) source note cites the retained_bounded SU2 lattice-alpha anchor",
@@ -139,6 +142,17 @@ def main() -> int:
     )
     bridge_name = "SU2_WEAK_ONE_LOOP_INVERSE_ALPHA_SCALE_LOG_BRIDGE_NARROW_THEOREM_NOTE_2026-06-15.md"
     check("(X6/X7) source note cites the framework-local scale/RGE bridge", bridge_name in note_text)
+    native_bridge = "SU2_U0_SINGLE_PLAQUETTE_BETA16_NATIVE_INTERVAL_BOUNDED_SUPPORT_NOTE_2026-06-18.md"
+    check("(X1) source note cites the native SU2 beta=16 u0 interval bridge", native_bridge in note_text)
+    check(
+        "(X1) source note says X1 is not a row-local literature admission",
+        "not a row-local literature admission" in note_text,
+    )
+    check(
+        "(X6) bridge includes direct ruler/current-v scale-log hardening",
+        "current value-surface cross-check" in bridge_text
+        and "ln(1.22e19 / 246.282818290129)" in bridge_text,
+    )
     check(
         "(X7) source note no longer registers one-loop RGE as a row-local named admission",
         "**(X7) Named 1-loop RGE admission.**" not in note_text,
@@ -148,12 +162,13 @@ def main() -> int:
         "brackets the weak-coupling-series value" not in note_text,
     )
     check(
-        "(X1) source note says 0.988 is outside the admitted interval",
-        "`u_0 ≈ 0.988`) is **outside** that interval" in note_text,
+        "(X1) source note says 0.988 is outside the parent interval",
+        "previously said `[0.96, 0.98]` bracketed `u_0 ≈ 0.988`. It does not."
+        in note_text,
     )
     check(
         "(X1) source note keeps 0.988 non-load-bearing",
-        "non-load-bearing literature context" in note_text,
+        "not inside the certified" in note_text,
     )
 
     # ------------------------------------------------------------------
@@ -321,7 +336,7 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------
-    section("Part 6b: weak-coupling 0.988 comparator is outside X1")
+    section("Part 6b: weak-coupling 0.988 comparator is outside parent X1 interval")
     # ------------------------------------------------------------------
     u_weak = Rational(988, 1000)
     g2_at_uweak_sym = g2_v_closed_form.subs({u0: u_weak, b2: b2_val, L: L_val})
@@ -329,7 +344,7 @@ def main() -> int:
     print(f"  weak-coupling comparator u_weak = {u_weak} = {float(u_weak)}")
     print(f"  g_2(v) at u_weak = 0.988 (context only): {g2_at_uweak_num}")
     check(
-        "(U1) weak-coupling readout 0.988 lies above the admitted upper endpoint 0.98",
+        "(U1) weak-coupling readout 0.988 lies above the parent upper endpoint 0.98",
         bool(u_weak > u_hi),
         detail=f"u_weak - u_hi = {float(u_weak - u_hi):.6f}",
     )
@@ -405,8 +420,8 @@ def main() -> int:
     #     scale log is supplied by the framework hierarchy candidate
     #     bridge and rounded to 38.44 for exact-symbolic evaluation.
     #   - any fitted selector for u_0
-    # The literature u_0 interval [0.96, 0.98] enters as a NAMED EXTERNAL
-    # ADMISSION (Trottier hep-lat/9803024; Munster strong-coupling series).
+    # The u_0 interval [0.96, 0.98] is supplied by the native beta=16
+    # one-plaquette bridge; no literature numerical interval is load-bearing.
     pdg_g2_obs = Float("0.646")  # not used in derivation, displayed for context only
     context_gap = abs(g_lo - pdg_g2_obs) / pdg_g2_obs
     print(f"  context-only (NOT consumed): PDG g_2(v) obs = {pdg_g2_obs}")

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_formula_honest_status.py
-runner_sha256: 9bcacb75a5c9d8ead19099f28503e145c73cffcf49293173684e2bd5d40ac992
+runner_sha256: d7fa5053b02e093a18ac3b0948805ba7f8c59f21e509a84cab47017e32341ddd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -44,7 +44,7 @@ status: ok
   [PASS][B] B3a kinetic substrate is sourced to registered kinetic_isotropy_primitive with c_t = c_s / OS0 hypercubic-form scope only
   [PASS][B] parent note splits B3a kinetic substrate from B3b regulator/species realization and keeps B4 open
   [PASS][B] staggered-Dirac realization gate on disk and referenced as backticked context (no markdown-link edge)
-  [PASS][B] all markdown-linked note citations resolve on disk  (links = ['HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md', 'HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md', 'KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md', 'NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md', 'PLAQUETTE_SELF_CONSISTENCY_NOTE.md'])
+  [PASS][B] all markdown-linked note citations resolve on disk  (links = ['HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md', 'HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md', 'HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md', 'KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md', 'NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md', 'PLAQUETTE_SELF_CONSISTENCY_NOTE.md'])
   [PASS][B] parent-note hygiene: required declarations present and forbidden overclaim tokens absent  (missing = [], hit = [])
   [PASS][B] runner self-scan: PDG VEV literal appears exactly once in the runner source (the class-D constant definition)  (occurrences = 1)
 

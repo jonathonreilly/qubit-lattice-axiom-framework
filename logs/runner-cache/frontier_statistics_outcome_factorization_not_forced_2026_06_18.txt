@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/frontier_statistics_outcome_factorization_not_forced_2026_06_18.py
+runner_sha256: 1baa94181d835d8eca881533a8a3005c0cf85095d17b52bcecc187ac115d8a50
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.06
+status: ok
+----- stdout -----
+STATISTICS OUTCOME-FACTORIZATION NO-GO
+
+========================================================================================
+1. two-outcome joint-law parameterization
+========================================================================================
+PASS: joint weights sum to one
+PASS: first marginal s is p
+PASS: second marginal s is p
+PASS: first marginal d is 1-p
+PASS: second marginal d is 1-p
+PASS: product point has m_ss=p^2
+PASS: product point has m_sd=p(1-p)
+PASS: product point has m_dd=(1-p)^2
+PASS: p=1/2 product law is admissible ({'ss': Fraction(1, 4), 'sd': Fraction(1, 4), 'ds': Fraction(1, 4), 'dd': Fraction(1, 4)})
+PASS: p=1/2 correlated law is admissible ({'ss': Fraction(1, 2), 'sd': Fraction(0, 1), 'ds': Fraction(0, 1), 'dd': Fraction(1, 2)})
+PASS: p=1/2 anti-correlated law is admissible ({'ss': Fraction(0, 1), 'sd': Fraction(1, 2), 'ds': Fraction(1, 2), 'dd': Fraction(0, 1)})
+PASS: same p=1/2 marginals do not select a unique joint law
+PASS: correlated p=1/2 law violates outcome factorization (corr={'ss': Fraction(1, 2), 'sd': Fraction(0, 1), 'ds': Fraction(0, 1), 'dd': Fraction(1, 2)}, product ss=1/4)
+
+========================================================================================
+2. Born-realizable diagonal witnesses on C^2 tensor C^2
+========================================================================================
+PASS: rho_product has trace one
+PASS: rho_correlated has trace one
+PASS: rho_product diagonal entries are nonnegative on 0<=p<=1
+PASS: rho_correlated diagonal entries are nonnegative on 0<=p<=1
+PASS: product witness left marginal is p
+PASS: product witness right marginal is p
+PASS: correlated witness left marginal is p
+PASS: correlated witness right marginal is p
+PASS: product witness has factorized ss and sd cells
+PASS: correlated witness has same marginals but nonfactorized cells
+
+========================================================================================
+3. source-scope and dependency firewall
+========================================================================================
+PASS: dependency/context file exists: STATISTICS_ATOM_REDUCES_TO_PRODUCT_FORM_ON_RETAINED_GLEASON_SURFACE_BOUNDED_NOTE_2026-06-12.md
+PASS: dependency/context file exists: PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md
+PASS: dependency/context file exists: GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+PASS: dependency/context file exists: BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+PASS: note contains firewall marker: Status authority
+PASS: note contains firewall marker: retained one-copy Born weights plus finite scalar additivi
+PASS: note contains firewall marker: do not force the two-registration outcome-factorization la
+PASS: note contains firewall marker: cannot be discharged by merely citing one-copy Gleason/Bus
+PASS: note contains firewall marker: separate record-stack independence
+PASS: note contains firewall marker: not a global no-go against future outcome independence
+PASS: note contains firewall marker: does not consume any unaudited unraveling measurement as p
+PASS: note contains firewall marker: ## No-Go Discipline Gate
+PASS: note contains firewall marker: Status: PASS
+PASS: note contains firewall marker: N1 alternative routes
+PASS: note contains firewall marker: finite table algebra
+PASS: note contains firewall marker: one-copy Gleason/Busch
+PASS: note contains firewall marker: exchange symmetry
+PASS: note contains firewall marker: two-copy Born realization
+PASS: note contains firewall marker: downstream product weakening
+PASS: note contains firewall marker: N2 wall independence
+PASS: note contains firewall marker: N3 hidden-wall scan
+PASS: note contains firewall marker: N4 residual matching
+PASS: note contains firewall marker: N5 rhetoric audit
+PASS: note contains firewall marker: N6 partial-closure path scan
+PASS: note contains firewall marker: N7 steelman
+PASS: note contains firewall marker: N8 cross-cycle echo
+PASS: note contains firewall marker: This note does not
+PASS: note contains firewall marker: update audit ledgers, queues, publication matrices
+PASS: note contains firewall marker: add a probability axiom or a new Record axiom
+PASS: forbidden overclaim absent: Status: retained
+PASS: forbidden overclaim absent: proposed_retained
+PASS: forbidden overclaim absent: outcome independence is impossible
+PASS: forbidden overclaim absent: physical repeated-registration independence is false
+
+TOTAL: PASS=56 FAIL=0
+VERDICT: bounded no-go passes; outcome factorization is not forced by retained one-copy Born marginals plus finite additivity.
+
+----- stderr -----
+

@@ -81,6 +81,17 @@ plain-text context handles rather than citation-graph dependencies:
   `9.7x` above the required `alpha_s = 0.1033038`; therefore ordinary
   mean-field link un-freezing is refuted as the supplier for the
   `alpha_s`-per-decoupling attachment rule.
+- `HIERARCHY_DELTA0_S3_FIXED_GAP_SPECTRUM_NO_GO_NOTE_2026-06-18.md`
+  — context-only pruning, not a load-bearing dependency for this
+  note: on the lattice-gauge-only NJL surface, the active-taste gap
+  equation gives `sigma_n^2 = nG - 4u_0^2`; at the leading-order
+  Kawamoto-Smit value `G = 1/(2N_c) = 1/6`, all `1 <= n <= 16`
+  are symmetric-phase, so no S3 threshold mass spectrum exists there.
+  Even granting a common broken-phase fixed `G`, requiring
+  `sigma_{n-1}/sigma_n = alpha_LM` forces a different `G_*(n)` at
+  each adjacent step. This prunes the fixed-`G` lattice-gauge-only
+  S3 arm and leaves threshold-dependent, electroweak-driven, and
+  non-NJL direct transport mechanisms open.
 
 The zero-induced-shift result forecloses quadratic-block-algebra
 closure routes at frozen links. After Block04, the ordinary
@@ -143,6 +154,14 @@ executes the declared K1-K8 candidate-readout enumeration and finds no
 non-definitional candidate readout carrying the required factor.  The
 two exact match-window cells in that enumeration are the supplier-chain
 identity itself, not a mechanism.
+`HIERARCHY_DELTA0_B4_CURRENT_BANK_ALPHA_ATTACHMENT_NO_GO_NOTE_2026-06-18.md`
+(context handle, not a citation-graph dependency) sharpens the same
+negative boundary as a current-bank alpha-attachment no-go: products,
+quotients, and integer powers of the K1-K8 genuine readout rows keep
+alpha exponent zero, while the alpha-bearing rows are supplier-chain
+identities with no readout mechanism.  This prunes reuse of the current
+bank as the missing attachment theorem and leaves outside-K1-K8
+readouts and non-perturbative route families open.
 
 The repair attempt therefore lands as a named-gap statement, not as a
 closure and not as a global no-go:

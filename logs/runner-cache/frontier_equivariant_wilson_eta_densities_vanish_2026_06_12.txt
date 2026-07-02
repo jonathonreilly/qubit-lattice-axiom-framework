@@ -1,0 +1,139 @@
+===== runner cache v1 =====
+runner: scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py
+runner_sha256: 2000ba6b2315f173c2202784ebfbc501e16052725ff04afc01b843bf9d04cf13
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.93
+status: ok
+----- stdout -----
+
+Sector-zero baseline (r=0, m=0):
+  raw: max_abs_sector_eta=0.000e+00
+[sector_zero_raw] PASS - r=0,m=0 sector etas vanish across variants, L, L_t
+  tanh eps=0.1: max_abs_sector_eta=0.000e+00
+[sector_zero_tanh_eps=0.1] PASS - r=0,m=0 sector etas vanish across variants, L, L_t
+  tanh eps=0.01: max_abs_sector_eta=0.000e+00
+[sector_zero_tanh_eps=0.01] PASS - r=0,m=0 sector etas vanish across variants, L, L_t
+
+K-odd sector cancellation count=160, max_abs(eta_omega-eta_omega2)=0.000e+00
+[k_odd_identically_zero] PASS - all tested parameter points
+
+Density tables over L=3,4,6,8:
+
+  variant=spatial_wilson
+    L_t= 4 r=0.5 m=-2.5 rho_mode=[0.148148, 0.062500, 0.018519, 0.007812] rho_orbit=[0.363636, 0.166667, 0.052632, 0.022727] tail_delta=0.010706 last3_range=0.054688
+    L_t= 4 r=0.5 m=-1.5 rho_mode=[0.074074, 0.000000, 0.000000, 0.000000] rho_orbit=[0.181818, 0.000000, 0.000000, 0.000000] tail_delta=0.000000 last3_range=0.000000
+    L_t= 4 r=0.5 m=-0.5 rho_mode=[0.074074, 0.062500, 0.018519, 0.007812] rho_orbit=[0.181818, 0.166667, 0.052632, 0.022727] tail_delta=0.010706 last3_range=0.054688
+    L_t= 4 r=0.5 m= 0.5 rho_mode=[0.074074, 0.062500, 0.037037, 0.015625] rho_orbit=[0.181818, 0.166667, 0.105263, 0.045455] tail_delta=0.021412 last3_range=0.046875
+    L_t= 4 r=1.0 m=-2.5 rho_mode=[0.074074, 0.000000, 0.000000, 0.000000] rho_orbit=[0.181818, 0.000000, 0.000000, 0.000000] tail_delta=0.000000 last3_range=0.000000
+    L_t= 4 r=1.0 m=-1.5 rho_mode=[0.074074, 0.062500, 0.018519, 0.007812] rho_orbit=[0.181818, 0.166667, 0.052632, 0.022727] tail_delta=0.010706 last3_range=0.054688
+    L_t= 4 r=1.0 m=-0.5 rho_mode=[0.074074, 0.062500, 0.037037, 0.015625] rho_orbit=[0.181818, 0.166667, 0.105263, 0.045455] tail_delta=0.021412 last3_range=0.046875
+    L_t= 4 r=1.0 m= 0.5 rho_mode=[0.222222, 0.062500, 0.037037, 0.023438] rho_orbit=[0.545455, 0.166667, 0.105263, 0.068182] tail_delta=0.013600 last3_range=0.039062
+    L_t= 8 r=0.5 m=-2.5 rho_mode=[0.037037, 0.062500, 0.018519, 0.007812] rho_orbit=[0.090909, 0.166667, 0.052632, 0.022727] tail_delta=0.010706 last3_range=0.054688
+    L_t= 8 r=0.5 m=-1.5 rho_mode=[0.074074, 0.000000, 0.000000, 0.000000] rho_orbit=[0.181818, 0.000000, 0.000000, 0.000000] tail_delta=0.000000 last3_range=0.000000
+    L_t= 8 r=0.5 m=-0.5 rho_mode=[0.074074, 0.062500, 0.018519, 0.007812] rho_orbit=[0.181818, 0.166667, 0.052632, 0.022727] tail_delta=0.010706 last3_range=0.054688
+    L_t= 8 r=0.5 m= 0.5 rho_mode=[0.074074, 0.062500, 0.037037, 0.015625] rho_orbit=[0.181818, 0.166667, 0.105263, 0.045455] tail_delta=0.021412 last3_range=0.046875
+    L_t= 8 r=1.0 m=-2.5 rho_mode=[0.074074, 0.000000, 0.000000, 0.003906] rho_orbit=[0.181818, 0.000000, 0.000000, 0.011364] tail_delta=0.003906 last3_range=0.003906
+    L_t= 8 r=1.0 m=-1.5 rho_mode=[0.074074, 0.062500, 0.009259, 0.007812] rho_orbit=[0.181818, 0.166667, 0.026316, 0.022727] tail_delta=0.001447 last3_range=0.054688
+    L_t= 8 r=1.0 m=-0.5 rho_mode=[0.074074, 0.062500, 0.037037, 0.015625] rho_orbit=[0.181818, 0.166667, 0.105263, 0.045455] tail_delta=0.021412 last3_range=0.046875
+    L_t= 8 r=1.0 m= 0.5 rho_mode=[0.222222, 0.093750, 0.037037, 0.023438] rho_orbit=[0.545455, 0.250000, 0.105263, 0.068182] tail_delta=0.013600 last3_range=0.070312
+
+  variant=spatial_temporal_wilson
+    L_t= 4 r=0.5 m=-2.5 rho_mode=[0.037037, 0.031250, 0.009259, 0.003906] rho_orbit=[0.090909, 0.083333, 0.026316, 0.011364] tail_delta=0.005353 last3_range=0.027344
+    L_t= 4 r=0.5 m=-1.5 rho_mode=[0.074074, 0.031250, 0.009259, 0.003906] rho_orbit=[0.181818, 0.083333, 0.026316, 0.011364] tail_delta=0.005353 last3_range=0.027344
+    L_t= 4 r=0.5 m=-0.5 rho_mode=[0.074074, 0.062500, 0.018519, 0.011719] rho_orbit=[0.181818, 0.166667, 0.052632, 0.034091] tail_delta=0.006800 last3_range=0.050781
+    L_t= 4 r=0.5 m= 0.5 rho_mode=[0.148148, 0.093750, 0.046296, 0.023438] rho_orbit=[0.363636, 0.250000, 0.131579, 0.068182] tail_delta=0.022859 last3_range=0.070312
+    L_t= 4 r=1.0 m=-2.5 rho_mode=[0.074074, 0.062500, 0.018519, 0.011719] rho_orbit=[0.181818, 0.166667, 0.052632, 0.034091] tail_delta=0.006800 last3_range=0.050781
+    L_t= 4 r=1.0 m=-1.5 rho_mode=[0.148148, 0.062500, 0.027778, 0.015625] rho_orbit=[0.363636, 0.166667, 0.078947, 0.045455] tail_delta=0.012153 last3_range=0.046875
+    L_t= 4 r=1.0 m=-0.5 rho_mode=[0.148148, 0.093750, 0.046296, 0.023438] rho_orbit=[0.363636, 0.250000, 0.131579, 0.068182] tail_delta=0.022859 last3_range=0.070312
+    L_t= 4 r=1.0 m= 0.5 rho_mode=[0.222222, 0.125000, 0.055556, 0.031250] rho_orbit=[0.545455, 0.333333, 0.157895, 0.090909] tail_delta=0.024306 last3_range=0.093750
+    L_t= 8 r=0.5 m=-2.5 rho_mode=[0.018519, 0.031250, 0.013889, 0.005859] rho_orbit=[0.045455, 0.083333, 0.039474, 0.017045] tail_delta=0.008030 last3_range=0.025391
+    L_t= 8 r=0.5 m=-1.5 rho_mode=[0.074074, 0.031250, 0.013889, 0.005859] rho_orbit=[0.181818, 0.083333, 0.039474, 0.017045] tail_delta=0.008030 last3_range=0.025391
+    L_t= 8 r=0.5 m=-0.5 rho_mode=[0.074074, 0.062500, 0.023148, 0.013672] rho_orbit=[0.181818, 0.166667, 0.065789, 0.039773] tail_delta=0.009476 last3_range=0.048828
+    L_t= 8 r=0.5 m= 0.5 rho_mode=[0.148148, 0.093750, 0.046296, 0.023438] rho_orbit=[0.363636, 0.250000, 0.131579, 0.068182] tail_delta=0.022859 last3_range=0.070312
+    L_t= 8 r=1.0 m=-2.5 rho_mode=[0.074074, 0.046875, 0.013889, 0.011719] rho_orbit=[0.181818, 0.125000, 0.039474, 0.034091] tail_delta=0.002170 last3_range=0.035156
+    L_t= 8 r=1.0 m=-1.5 rho_mode=[0.111111, 0.078125, 0.027778, 0.015625] rho_orbit=[0.272727, 0.208333, 0.078947, 0.045455] tail_delta=0.012153 last3_range=0.062500
+    L_t= 8 r=1.0 m=-0.5 rho_mode=[0.148148, 0.093750, 0.046296, 0.023438] rho_orbit=[0.363636, 0.250000, 0.131579, 0.068182] tail_delta=0.022859 last3_range=0.070312
+    L_t= 8 r=1.0 m= 0.5 rho_mode=[0.222222, 0.125000, 0.055556, 0.031250] rho_orbit=[0.545455, 0.333333, 0.157895, 0.090909] tail_delta=0.024306 last3_range=0.093750
+
+L=8 distance table against 2/9:
+  variant=          spatial_wilson L_t= 4 r=0.5 m=-2.5 candidate=0.007812 distance_to_2/9=0.214410
+  variant=          spatial_wilson L_t= 4 r=0.5 m=-1.5 candidate=0.000000 distance_to_2/9=0.222222
+  variant=          spatial_wilson L_t= 4 r=0.5 m=-0.5 candidate=0.007812 distance_to_2/9=0.214410
+  variant=          spatial_wilson L_t= 4 r=0.5 m= 0.5 candidate=0.015625 distance_to_2/9=0.206597
+  variant=          spatial_wilson L_t= 4 r=1.0 m=-2.5 candidate=0.000000 distance_to_2/9=0.222222
+  variant=          spatial_wilson L_t= 4 r=1.0 m=-1.5 candidate=0.007812 distance_to_2/9=0.214410
+  variant=          spatial_wilson L_t= 4 r=1.0 m=-0.5 candidate=0.015625 distance_to_2/9=0.206597
+  variant=          spatial_wilson L_t= 4 r=1.0 m= 0.5 candidate=0.023438 distance_to_2/9=0.198785
+  variant=          spatial_wilson L_t= 8 r=0.5 m=-2.5 candidate=0.007812 distance_to_2/9=0.214410
+  variant=          spatial_wilson L_t= 8 r=0.5 m=-1.5 candidate=0.000000 distance_to_2/9=0.222222
+  variant=          spatial_wilson L_t= 8 r=0.5 m=-0.5 candidate=0.007812 distance_to_2/9=0.214410
+  variant=          spatial_wilson L_t= 8 r=0.5 m= 0.5 candidate=0.015625 distance_to_2/9=0.206597
+  variant=          spatial_wilson L_t= 8 r=1.0 m=-2.5 candidate=0.003906 distance_to_2/9=0.218316
+  variant=          spatial_wilson L_t= 8 r=1.0 m=-1.5 candidate=0.007812 distance_to_2/9=0.214410
+  variant=          spatial_wilson L_t= 8 r=1.0 m=-0.5 candidate=0.015625 distance_to_2/9=0.206597
+  variant=          spatial_wilson L_t= 8 r=1.0 m= 0.5 candidate=0.023438 distance_to_2/9=0.198785
+  variant= spatial_temporal_wilson L_t= 4 r=0.5 m=-2.5 candidate=0.003906 distance_to_2/9=0.218316
+  variant= spatial_temporal_wilson L_t= 4 r=0.5 m=-1.5 candidate=0.003906 distance_to_2/9=0.218316
+  variant= spatial_temporal_wilson L_t= 4 r=0.5 m=-0.5 candidate=0.011719 distance_to_2/9=0.210503
+  variant= spatial_temporal_wilson L_t= 4 r=0.5 m= 0.5 candidate=0.023438 distance_to_2/9=0.198785
+  variant= spatial_temporal_wilson L_t= 4 r=1.0 m=-2.5 candidate=0.011719 distance_to_2/9=0.210503
+  variant= spatial_temporal_wilson L_t= 4 r=1.0 m=-1.5 candidate=0.015625 distance_to_2/9=0.206597
+  variant= spatial_temporal_wilson L_t= 4 r=1.0 m=-0.5 candidate=0.023438 distance_to_2/9=0.198785
+  variant= spatial_temporal_wilson L_t= 4 r=1.0 m= 0.5 candidate=0.031250 distance_to_2/9=0.190972
+  variant= spatial_temporal_wilson L_t= 8 r=0.5 m=-2.5 candidate=0.005859 distance_to_2/9=0.216363
+  variant= spatial_temporal_wilson L_t= 8 r=0.5 m=-1.5 candidate=0.005859 distance_to_2/9=0.216363
+  variant= spatial_temporal_wilson L_t= 8 r=0.5 m=-0.5 candidate=0.013672 distance_to_2/9=0.208550
+  variant= spatial_temporal_wilson L_t= 8 r=0.5 m= 0.5 candidate=0.023438 distance_to_2/9=0.198785
+  variant= spatial_temporal_wilson L_t= 8 r=1.0 m=-2.5 candidate=0.011719 distance_to_2/9=0.210503
+  variant= spatial_temporal_wilson L_t= 8 r=1.0 m=-1.5 candidate=0.015625 distance_to_2/9=0.206597
+  variant= spatial_temporal_wilson L_t= 8 r=1.0 m=-0.5 candidate=0.023438 distance_to_2/9=0.198785
+  variant= spatial_temporal_wilson L_t= 8 r=1.0 m= 0.5 candidate=0.031250 distance_to_2/9=0.190972
+
+Misread guard: candidate = 0; distance = 2/9 -- not a hit
+[density_tail_subextensive] PASS - all rows monotone on the tail or covered by the scoped zero-crossing tiny-tail guard
+[zero_crossing_guard_seen] PASS - finite zero-zero-small tail explicitly detected and printed
+[no_L8_near_2_over_9] PASS - max_L8=0.031250, min_distance_to_2/9=0.190972
+[misread_guard] PASS - candidate=0 has distance 2/9, not a fixed-locus hit
+
+Scoped boundary assembly booleans:
+  tested_window: True
+  does_not_close: True
+  next_paths: True
+  boundary_localized: True
+  multiset_to_geometry: True
+  no_delta_input_sentence: True
+  no_delta_variable: True
+[free_bulk_boundary_and_next_paths] PASS - boundary, next paths, and no-delta checks
+
+B-checks:
+[B01_bulk_note_exists] PASS - both markdown dependencies are present
+[B02_bulk_eta_lemma_grep] PASS - bulk note contains eta := sum sign(lambda) = 0 lemma line
+[B03_bulk_named_opens_grep] PASS - bulk note names the open APS paths preserved by the scoped boundary
+[B04_tested_window_sentence] PASS - tested window
+[B05_does_not_close_sentence] PASS - does not close
+[B06_next_paths_sentence] PASS - The next paths
+[B07_no_delta_sentence] PASS - No delta appears anywhere as an input on this surface
+[B08_firewall_r_never_fixed] PASS - r is never fixed
+[B09_no_readings_cells] PASS - No readings/cells are introduced
+[B10_forbidden_phrases_absent] PASS - absent=[]
+[B11_link_inventory_exactly_two] PASS - links=[('`HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md`', 'HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md'), ('`MINIMAL_AXIOMS_2026-06-05.md`', 'MINIMAL_AXIOMS_2026-06-05.md')]
+[B12_companions_backticked] PASS - context companions are backticked
+[B13_no_promotion] PASS - No-promotion statement present
+[B14_status_authority] PASS - standard status-authority line present
+[B15_claim_type] PASS - bounded theorem claim type
+[B16_source_disclaimer] PASS - source-note proposal disclaimer present
+[B17_memory_budget] PASS - memory budget text present
+[B18_both_variants] PASS - both Wilson variants documented
+[B19_zero_crossing_scoped] PASS - finite zero-crossing tail scoped honestly
+[B20_no_go_discipline_gate] PASS - N1-N8 gate present and scoped to the free-bulk boundary
+
+git diff --stat (not executed; no-git/no-network rule honored)
+  docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md | 152 lines | 9922 bytes
+  scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py | 386 lines | 15323 bytes
+
+SUMMARY: PASS=29 FAIL=0
+VERDICT: bounded theorem checks pass on the tested window.
+
+----- stderr -----
+

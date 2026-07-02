@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
-runner_sha256: 9bcd911b31cbcfca8db3ced3a5a2926844f6a14b79335578df2ab57d7e878fb9
+runner_sha256: 692cd81b90ccd987ab83400c7314e0d4ee1f05fe58b33b48f2b5bddde105b8bf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.10
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Admitted-residue same-1PI g_bare repair
@@ -13,13 +13,20 @@ Runner: scripts/frontier_gbare_same_1pi_admitted_residue_repair.py
 ========================================================================================
 PART 0: SOURCE FIREWALL
 ========================================================================================
+  [PASS] source note contains boundary phrase: **Claim type:** bounded_theorem
   [PASS] source note contains boundary phrase: conditional-use firewall
   [PASS] source note contains boundary phrase: conditional Path-2 support theorem
+  [PASS] source note contains boundary phrase: actual-surface scope lock
+  [PASS] source note contains boundary phrase: not an unconditional pinning theorem
   [PASS] source note contains boundary phrase: H_unit-residue admission
   [PASS] source note contains boundary phrase: residue-normalization obstruction
   [PASS] source note contains boundary phrase: residue-normalization degree of freedom
+  [PASS] source note contains boundary phrase: free multiplier family `R(g_bare)=g_bare^2`
   [PASS] source note contains boundary phrase: R(g_bare)
+  [PASS] source note contains boundary phrase: Downstream firewall
+  [PASS] source note contains boundary phrase: They may not cite it as an actual-surface theorem deriving `g_bare = 1`
   [PASS] source note contains boundary phrase: present packet cannot derive `g_bare = 1`
+  [PASS] source note contains boundary phrase: not an actual-surface pinning theorem
   [PASS] source note contains boundary phrase: This note does not derive the complete same-projected 1PI exhaustion theorem
   [PASS] source note contains boundary phrase: The `g_bare = 1` closure is **conditional on the H_unit-residue
   [PASS] source note contains boundary phrase: does not prove the missing same-projected 1PI exhaustion bridge
@@ -30,6 +37,7 @@ PART 0: SOURCE FIREWALL
   [PASS] source note excludes overclaim phrase: H_unit-residue is the complete same-projected 1PI
   [PASS] source note excludes overclaim phrase: promoted to retained
   [PASS] source note excludes overclaim phrase: R(g_bare) is fixed by D17
+  [PASS] source note excludes overclaim phrase: This packet proves an actual-surface theorem deriving `g_bare = 1`
   [PASS] runner source excludes non-load-bearing phrase: observed
   [PASS] runner source excludes non-load-bearing phrase: Standard Model top mass
   [PASS] runner source excludes non-load-bearing phrase: Planck-surface transport
@@ -68,7 +76,7 @@ PART 2: RESIDUE-NORMALIZATION OBSTRUCTION
 ========================================================================================
 SUMMARY
 ========================================================================================
-PASS=43 FAIL=0
+PASS=51 FAIL=0
 RESULT: PASS
 
 ----- stderr -----

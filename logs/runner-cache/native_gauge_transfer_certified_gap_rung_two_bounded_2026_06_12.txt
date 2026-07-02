@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12.py
+runner_sha256: 7c33c1d1688c7dfe2246fc09677ea65bc8221bc361e7f9f6095f71a9d1143bad
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 15.59
+status: ok
+----- stdout -----
+Native gauge-transfer certified gap rung-two bounded runner
+exact recurrence order: ORDER=80
+finite block: 0<=p,q<=4 (25 states)
+float cross-check MODE_MAX=220
+
+PASS: exact SU(3) recurrence layers are integer and nonnegative
+      layers n=0..80, final layer states=3321
+PASS: leading coefficients reproduce rung-one beta/6 branch and the first outside-block branch
+      (1, 0): beta^1 coeff=1/6; (0, 1): beta^1 coeff=1/6; (1, 1): beta^2 coeff=1/36; (2, 0): beta^2 coeff=1/72; (2, 1): beta^3 coeff=1/432; (4, 4): beta^8 coeff=1/967458816; (5, 0): beta^5 coeff=1/933120
+PASS: rung-one interval majorant is reproduced on 0<=beta<=1
+      n! >= 2^(n-1) gives c_lambda/c_00 <= (2/3) beta for nontrivial channels on 0<=beta<=1
+beta=     0 | upper=0.000000000000 | gap=1.000000000000 | tail_margin=1.000000000000 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=  1/10 | upper=0.016805539332 | gap=0.983194460668 | tail_margin=0.983194460668 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=   1/2 | upper=0.086795059239 | gap=0.913204940761 | tail_margin=0.913204940761 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=     1 | upper=0.180381228495 | gap=0.819618771505 | tail_margin=0.819618771505 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=   5/4 | upper=0.229602269929 | gap=0.770397730071 | tail_margin=0.770397730071 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=   3/2 | upper=0.280340601376 | gap=0.719659398624 | tail_margin=0.719659398624 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=     2 | upper=0.385951263263 | gap=0.614048736737 | tail_margin=0.614048736737 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=   5/2 | upper=0.496206311139 | gap=0.503793688861 | tail_margin=0.503793688861 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=     3 | upper=0.609877708274 | gap=0.390122291726 | tail_margin=0.390122291726 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=   7/2 | upper=0.725621577310 | gap=0.274378422690 | tail_margin=0.274378422690 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=     4 | upper=0.842110287152 | gap=0.157889712848 | tail_margin=0.157889712848 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=   9/2 | upper=0.958168142900 | gap=0.041831857100 | tail_margin=0.041831857100 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=  23/5 | upper=0.981242286148 | gap=0.018757713852 | tail_margin=0.018757713852 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=117/25 | upper=0.999658318050 | gap=0.000341681950 | tail_margin=0.000341681950 | certified=yes | block=(1, 0) | tail=(5, 0)
+beta=469/100 | upper=1.001957464152 | gap=-0.001957464152 | tail_margin=-0.001957464152 | certified=no | block=(1, 0) | tail=(5, 0)
+PASS: new certificate keeps the rung-one check points inside lambda1/lambda0 <= (2/3) beta
+      checked beta=1/10, 1/2, 1 with exact-rational upper bounds
+PASS: requested beta grid through beta=4 is certified
+      checked beta=5/4, 3/2, 2, 5/2, 3, 7/2, 4
+PASS: declared extension-grid frontier is certified and the next probe is not
+      frontier beta=117/25 gap=0.000341681949973; next beta=469/100 gap=-0.001957464152000
+PASS: float coefficient eigenvalues lie inside every certified block interval
+      checked all 24 nontrivial block weights for certified rows
+PASS: half-slice 25-state float ratios stay below one on certified rows
+      diagnostic only; not used as the full-operator certificate
+PASS: note contains scope, status-authority, table, frontier, and runner markers
+      checked required note markers
+PASS: one-hop authorities are present as markdown links
+      checked authority-link forms
+PASS: note avoids overreach phrases banned for this lane
+      scanned banned phrase set
+
+TOTAL: PASS=11, FAIL=0
+
+----- stderr -----
+

@@ -5,6 +5,9 @@ audit lane
 **Date:** 2026-04-15  
 **Branch:** `codex/dm-across-the-line`
 
+**Primary runner:** [`scripts/frontier_dm_neutrino_weak_vector_theorem.py`](../scripts/frontier_dm_neutrino_weak_vector_theorem.py)
+**Primary runner cache:** [`logs/runner-cache/frontier_dm_neutrino_weak_vector_theorem.txt`](../logs/runner-cache/frontier_dm_neutrino_weak_vector_theorem.txt)
+
 ---
 
 ## Status

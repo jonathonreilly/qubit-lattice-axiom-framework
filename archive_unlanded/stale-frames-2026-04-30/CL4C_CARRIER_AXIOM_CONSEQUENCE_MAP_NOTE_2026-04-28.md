@@ -2,6 +2,14 @@
 
 **Date:** 2026-04-28
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/stale-frames-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 **Lanes covered:** 1 (gravity/area-law), 4D (neutrino Dirac/Majorana),
 4F (Σm_ν), 5 (Hubble), Planck.
 **Loop:** `cl4c-carrier-axiom-consequence-map-20260428`
@@ -32,6 +40,14 @@ closures.
 The safe residue is recovery context only. If an Axiom* premise is ever
 adopted by an audit-clean extension decision, a new consequence map must be
 rebuilt from current dependencies.
+
+## 2026-06-18 registered-runner contract
+
+The registered runner for this archived row is a firewall witness only. It
+verifies this note's current-surface certificate, retraction, and archive
+boundary. It must not be used to re-prove the historical closure cascade. A
+PASS does not adopt Axiom*, close `(C1)`, move any Hubble, Planck, gravity, or
+neutrino chain, or upgrade any conditional theorem on the current surface.
 
 ## 0. Historical context (retracted)
 

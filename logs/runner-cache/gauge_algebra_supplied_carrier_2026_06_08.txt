@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_algebra_supplied_carrier_2026_06_08.py
-runner_sha256: fc913e218e530302694015b26377a8c343edb5e9be80ff1a2191dd04e4e88078
+runner_sha256: 7996c7ecbe5ffe261cabe353d374ca4aedf3eb1cfa6dc5c49fa4faf159a5075d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.53
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 GAUGE ALGEBRA SUPPORT GIVEN A SUPPLIED CARRIER
@@ -22,7 +22,7 @@ GAUGE ALGEBRA SUPPORT GIVEN A SUPPLIED CARRIER
 
 SCORECARD PASS=6 FAIL=0
 runner_check_breakdown = {A: 6, B: 0, C: 0, D: 0, total_pass: 6}
-VERDICT (bounded support, GIVEN the supplied carrier): su(3)(+)su(2)(+)u(1) (dim 12) is the FACTOR-PRESERVING algebra of the SUPPLIED C^3(base)(x)C^2(fiber) carrier (su(2)=Aut M_2 on the fiber; su(3) on the 3-dim base; commuting). The unrestricted carrier algebra is full u(6) (dim 36); the missing selection of the factor-preserving algebra rather than u(6) is exactly the supplied factor-locality/MR_color premise. The carrier factorization itself is a SUPPLIED realization (cited to GRAPH_FIRST_SU3_INTEGRATION / CL3_COLOR_AUTOMORPHISM / QUBIT_LINK_U2 [bounded/pending] + the weak-axis selection + the link-connection convention), NOT derived from the Lattice, Quantum, and Record axioms. The GAUGING selection -- which symmetry is dynamically gauged, MR_color, chiral su(2)_L -- is an OPEN GATE: both su(2) and su(3) act irreducibly and admit the same Gauss/dressing structure. So this is conditional algebra support, NOT a from-axioms derivation. Audit lane sets the verdict.
+VERDICT (bounded support, GIVEN the supplied carrier): su(3)(+)su(2)(+)u(1) (dim 12) is the FACTOR-PRESERVING algebra of the SUPPLIED C^3(base)(x)C^2(fiber) carrier (su(2)=Aut M_2 on the fiber; su(3) on the 3-dim base; commuting). The unrestricted carrier algebra is full u(6) (dim 36); the missing selection of the factor-preserving algebra rather than u(6) is exactly the supplied factor-locality/MR_color premise. The carrier factorization itself is a SUPPLIED realization (cited to GRAPH_FIRST_SU3_INTEGRATION / CL3_COLOR_AUTOMORPHISM / QUBIT_LINK_U2 [bounded/pending] + the weak-axis selection, with retained-bounded local-frame link-connection kinematics), NOT derived from the Lattice, Quantum, and Record axioms. The GAUGING selection -- which symmetry is dynamically gauged, MR_color, chiral su(2)_L -- is an OPEN GATE: both su(2) and su(3) act irreducibly and admit the same Gauss/dressing structure. So this is conditional algebra support, NOT a from-axioms derivation. Audit lane sets the verdict.
 
 ----- stderr -----
 

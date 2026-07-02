@@ -3,6 +3,13 @@
 **Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/causal-field-stale-runners-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 ## Retraction
 
 - **Date archived:** 2026-04-30
@@ -24,6 +31,11 @@ The current source for the finite configured replay is
 [`docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md)
 with primary runner
 [`scripts/causal_propagating_field.py`](../../scripts/causal_propagating_field.py).
+The source-side bridge
+[`docs/CAUSAL_PROPAGATING_FIELD_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md`](../../docs/CAUSAL_PROPAGATING_FIELD_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md)
+records the re-audit handoff boundary: this archived note remains failed
+historical evidence, and the live packet is the only narrowed source target for
+any future re-audit.
 That live packet explicitly does not restore the archived `0.63 / 0.45`
 positive table. This archived note must not be listed as live evidence for
 downstream causal-field, Shapiro, diamond/NV, or retarded-field claims.

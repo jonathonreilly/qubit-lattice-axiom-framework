@@ -290,6 +290,34 @@ the no-fit correlation pair, the three honest sign disagreements
 in `H1_ring`, `G2_asym_z`, `L1_longrange`) is supported by the
 listed cited authorities.
 
+## Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to:
+
+- cite the frozen 44-family detector-only heuristic record;
+- cite the no-fit Pearson correlations `r = 0.56` overall and
+  `r = 0.72` off-scaffold;
+- cite the no-fit sign agreement `36/44 = 81.8%`;
+- cite the in-sample tuned threshold result only as fitted on the same
+  44-family set;
+- cite the repair path to the literal first-order Kubo lane.
+
+Forbidden downstream uses without a new retained bridge:
+
+- do not cite this heuristic record as the literal first-order Kubo theorem;
+- do not cite it as a closed first-principles derivation;
+- do not cite the in-sample tuned threshold as no-fit generalization evidence;
+- do not use the detector-only reweighting as a substitute for
+  `<z*deltaH>_0`;
+- do not treat the true-Kubo sibling as a landed one-hop dependency unless
+  the audit graph has actually wired that edge;
+- do not use this packet to promote the compact-principle row, gravity-sign
+  classifier row, or any retained response theorem.
+
+Re-audit should be triggered if a downstream row cites this packet without
+preserving the no-fit/tuned split, or uses the heuristic as the literal
+first-order Kubo theorem rather than as a detector-only open-gate record.
+
 This rigorization edit only sharpens the conditional perimeter and
 registers the cited authority chain; it does not promote audit
 status, hand-author audit JSON, claim that the heuristic equals the

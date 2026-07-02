@@ -1,14 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_orbital_response_decomposition_2026_06_13.py
-runner_sha256: e9feb58adc15d856efc79db8991d0de2cd64e7d460afd00870746acf52ce9966
+runner_sha256: 640bfc4da896d4f940ac18f97e713df36c1b480cfb3caea236dfafe006b2c9f3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.33
+elapsed_sec: 2.20
 status: ok
 ----- stdout -----
 d=3 orbital-response decomposition runner
-frozen_parameters L=32 mu_ref=-2.000000 T=0.300000 p_fine=1 p_coarse=2 LP_GRID_N=176 cell_norm=-8.333333333333e-02
+frozen_parameters L=32 mu_ref=-2.000000 T=0.300000 p_fine=1 p_coarse=2 LP_GRID_N=176 derived_cell_norm=-8.333333333333e-02
 frozen_tolerances flux=2.000e-12 block=1.000e-10 step=4.000e-03 nonzero=1.000e-05 reference_rel=1.000e-02 curve_rel=1.000e-02 sign_floor=1.000e-04
+PASS: native LP prefactor companion is consumed: prefactor=-1/12, target_residual=0, divergence_residual=0
+PASS: source normalization note anchors the -1/12 factor without new axioms: source-boundary phrases present
+PASS: source normalization runner cache passes: normalization cache status ok with PASS=9 FAIL=0
+PASS: parent note cites prefactor dependencies and omits naked-import phrasing: parent markdown-cites native-prefactor and normalization-boundary dependencies
 PASS: uniform periodic xy flux p=1: max|plaquette-exp(iB)|=7.112e-16, B=6.135923151543e-03
 PASS: uniform periodic xy flux p=2: max|plaquette-exp(iB)|=1.342e-15, B=1.227184630309e-02
 PASS: exact 3d Hamiltonian block-diagonalization check: max spectrum mismatch=7.105e-15 at L=4
@@ -28,7 +32,7 @@ chi_curve mu=+3.000 exact=+2.938363946634e-03 lp=+2.935171660751e-03 residual=-3
 chi_curve mu=+4.500 exact=+6.422959248036e-03 lp=+6.417363451737e-03 residual=-5.595796298580e-06 sign_exact=+ sign_lp=+
 PASS: S3 chi(mu) active sign tracking: active_pairs=[('+', '+'), ('+', '+'), ('-', '-'), ('-', '-'), ('-', '-'), ('+', '+'), ('+', '+')], exact_signs=['+', '-'], lp_signs=['+', '-']
 PASS: S3 chi(mu) active relative residual stays below 1%: max_rel=6.089233694470e-03 at mu=+0.000, bound=1.000000000000e-02
-TOTAL: PASS=9 FAIL=0
+TOTAL: PASS=13 FAIL=0
 
 ----- stderr -----
 

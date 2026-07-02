@@ -1,0 +1,125 @@
+===== runner cache v1 =====
+runner: scripts/gauge_vacuum_plaquette_hf_identification_diagnostic_2026_06_12.py
+runner_sha256: c1aad899db48152d342660251bd274ffa541305ac5cdfe46b01656e29334a7f1
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 6.58
+status: ok
+----- stdout -----
+Gauge-vacuum plaquette Hellmann-Feynman identification diagnostic
+beta=6.0, source NMAX=7, source MODE_MAX=200, tensor-word NMAX=4, tensor-word MODE_MAX=80
+Status authority: independent audit lane only. This source note does not set or predict an audit outcome.
+Identification checkpoint: Perron J-readout = licensed <P>* = 1 + f'(6) remains open.
+
+================================================================================================
+Part 1: anchor reproduction
+================================================================================================
+rho=1:     lambda0=3.812630482037, <J>=0.452407159045
+rho=delta: lambda0=3.441440354984, <J>=0.422531739647
+rho^tw:    lambda0=3.577553737908, <J>=0.434215413260
+rho^tw tensor Perron: eig=1.012369912748, residual=1.665e-16, min=2.287e-23, swap=5.551e-17, rho10=0.378514922317
+PASS: rho=1 reference Perron anchor is reproduced
+      lambda=3.812630482037, <J>=0.452407159045
+PASS: rho=delta reference Perron anchor is reproduced
+      lambda=3.441440354984, <J>=0.422531739647
+PASS: rho^tw composed Perron anchor is reproduced under zero-extension
+      lambda=3.577553737908, <J>=0.434215413260, tensor residual=1.665e-16
+
+================================================================================================
+Part 2: Hellmann-Feynman derivative identity
+================================================================================================
+M_beta = exp((beta/2) J), with J=(chi_(1,0)+chi_(0,1))/6.
+For normalized Perron psi, the two multiplier derivative terms give exactly <psi,J psi> after division by lambda0.
+D_beta^loc uses a_(p,q)(beta)^4; c_lambda derivatives use the same Bessel determinant mode sums with row-wise determinant differentiation.
+PASS: source multiplier parameter at beta=6 is beta/2=3, matching exp(3J)
+PASS: term-by-term differentiated local factor keeps a_(0,0)=1 with zero derivative
+      a00=1.000000000000, da00=0.000e+00
+PASS: reference environments rho=1 and rho=delta are beta-independent by construction
+      there is no environment-derivative term for either reference solve
+
+================================================================================================
+Part 3: exact-vs-FD validation on beta-independent reference rhos
+================================================================================================
+rho=1: central finite differences for d_beta log(lambda_0)
+h | central FD | Richardson | |Richardson - exact assembly|
+------------------------------------------------------------------------------------------------
+0.01000000 | 0.515193970637 | n/a | n/a
+0.00500000 | 0.515193984013 | 0.515193988472 | 8.549e-14
+0.00250000 | 0.515193987358 | 0.515193988472 | 2.371e-13
+0.00125000 | 0.515193988194 | 0.515193988472 | 3.730e-14
+0.00062500 | 0.515193988403 | 0.515193988472 | 1.705e-13
+Richardson noise floor estimate: 1.332e-13
+
+rho=delta: central finite differences for d_beta log(lambda_0)
+h | central FD | Richardson | |Richardson - exact assembly|
+------------------------------------------------------------------------------------------------
+0.01000000 | 0.422531607447 | n/a | n/a
+0.00500000 | 0.422531706597 | 0.422531739647 | 2.370e-14
+0.00250000 | 0.422531731385 | 0.422531739647 | 1.644e-13
+0.00125000 | 0.422531737582 | 0.422531739647 | 5.884e-15
+0.00062500 | 0.422531739131 | 0.422531739647 | 3.050e-13
+Richardson noise floor estimate: 3.109e-13
+PASS: rho=1 exact derivative assembly agrees with Richardson FD
+      exact=0.515193988472, Richardson=0.515193988472, noise=1.332e-13
+PASS: rho=delta exact derivative assembly agrees with Richardson FD
+      exact=0.422531739647, Richardson=0.422531739647, noise=3.109e-13
+
+================================================================================================
+Part 4: rho^tw beta-dependent environment derivative
+================================================================================================
+rho^tw: central differences for environment term and full d_beta log(lambda_0)
+h | env central | env Richardson | full central | full Richardson | full - assembled central
+------------------------------------------------------------------------------------------------
+0.01000000 | 0.010304605540 | n/a | 0.468344012402 | n/a | 2.512e-07
+0.00500000 | 0.010304616091 | 0.010304619608 | 0.468343834526 | 0.468343775233 | 6.281e-08
+0.00250000 | 0.010304618728 | 0.010304619608 | 0.468343790056 | 0.468343775233 | 1.570e-08
+0.00125000 | 0.010304619388 | 0.010304619608 | 0.468343778939 | 0.468343775233 | 3.925e-09
+0.00062500 | 0.010304619553 | 0.010304619608 | 0.468343776160 | 0.468343775233 | 9.815e-10
+Environment Richardson noise floor estimate: 7.129e-14
+Full-derivative Richardson noise floor estimate: 5.181e-13
+PASS: rho^tw environment derivative has a stable Richardson sweep
+      env noise=7.129e-14, full noise=5.181e-13
+PASS: rho^tw assembled HF derivative agrees with full beta FD
+      assembled=0.468343775233, full FD Richardson=0.468343775233
+
+================================================================================================
+Part 5: correction scale
+================================================================================================
+rho | lambda0 | d_beta log(lambda0) | multiplier=<J> | D_loc prime | env prime | correction | correction/<J> | hypothetical 1+f'
+------------------------------------------------------------------------------------------------------------------------------------
+rho=1     | 3.812630482037 | 0.515193988472 | 0.452407159045 | 0.062786829428 | 0.000000000000 | 0.062786829428 | 0.138783898911 | 1.515193988472
+rho=delta | 3.441440354984 | 0.422531739647 | 0.422531739647 | 0.000000000000 | 0.000000000000 | 0.000000000000 | 0.000000000000 | 1.422531739647
+rho^tw    | 3.577553737908 | 0.468343775233 | 0.434215413260 | 0.023823742365 | 0.010304619608 | 0.034128361973 | 0.078597767216 | 1.468343775233
+PASS: rho=1 omitted derivative correction is measured as a nonzero fraction of the multiplier readout
+      correction=0.062786829428, ratio=0.138783898911
+PASS: rho=delta has zero local/environment correction in this normalized reference solve
+      correction=0.000e+00, ratio=0.000e+00
+PASS: rho^tw omitted derivative correction is measured with the beta-dependent environment term included
+      correction=0.034128361973, ratio=0.078597767216
+
+================================================================================================
+Fenced hypothetical identification context
+================================================================================================
+Hypothetical map only: if f were log(lambda0) per step, then 1+f' would be 1+d_beta log(lambda0).
+The per-plaquette normalization theorem is an open target; these numbers are not an identification.
+```text
+These are context distances only. The per-plaquette normalization theorem is open.
+rho=1: |<J> - 0.5934| = 0.140992840955; |d_beta log(lambda0) - 0.5934| = 0.078206011528; hypothetical 1+f' = 1.515193988472
+rho=delta: |<J> - 0.5934| = 0.170868260353; |d_beta log(lambda0) - 0.5934| = 0.170868260353; hypothetical 1+f' = 1.422531739647
+rho^tw: |<J> - 0.5934| = 0.159184586740; |d_beta log(lambda0) - 0.5934| = 0.125056224767; hypothetical 1+f' = 1.468343775233
+```
+PASS: canonical comparator is isolated to the fenced context block and is not used as construction input
+      only print_hypothetical_table references the comparator
+
+================================================================================================
+Part 6: named residuals
+================================================================================================
+Open target: prove or refute the per-plaquette normalization map linking the licensed plaquette readout to a beta derivative of the source-sector Perron value.
+Residuals: physical 3D rho_(p,q)(6), untruncated tensor-transfer limit, multi-word/L_perp limits, and the identification theorem remain open.
+PASS: finite diagnostic reports correction scale separately from the multiplier readout
+      rho=1 correction=0.062786829428; rho^tw correction=0.034128361973
+
+TOTAL: PASS=15, FAIL=0
+
+----- stderr -----
+

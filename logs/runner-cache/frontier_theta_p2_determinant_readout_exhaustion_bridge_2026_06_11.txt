@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py
-runner_sha256: 6adb894627887de96caeb315348f4f72626538055dd9a42d11cda885e43e8974
+runner_sha256: 80ce5205438d8d484eb4a1a75ce0555db62d5c990980188f66b5e04a0638be7a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.64
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 
@@ -12,9 +12,16 @@ B0 - source-boundary guards: W2/action-level premises quarantined
 ------------------------------------------------------------------------------
 PASS: source note is supplied-boundary, not physical bridge closure
 PASS: W2 physical-registrability identification is quarantined
-PASS: action-level determinant datum is supplied, not derived
+PASS: full action-level determinant datum is not globally derived here
 PASS: physical/non-registrable/multi-plaquette exclusions remain non-claims
+PASS: source note is scoped as supplied-context algebra only
+PASS: 2026-06-20 conditional-scoping repair names BOTH supplied premises (i) W2 and (ii) theta_eff entry
+PASS: 2026-06-20 repair keeps downstream strong-CP use explicitly conditional on (i) and (ii)
+PASS: 2026-06-20 repair does NOT derive the two supplied premises
 PASS: source note expected scorecard matches runner count
+PASS: 2026-06-18 wiring cites the mass-side epsilon-Hermiticity bridge as a source-edge
+PASS: mass-side source-edge supplies first-power Berezin + epsilon-Hermiticity mechanisms
+PASS: mass-side source-edge is not imported as audit status and keeps K-reality/orientation/gauge residuals live
 
 ------------------------------------------------------------------------------
 B1 - K/CPT orbit structure of the determinant datum (3x3 numeric)
@@ -72,7 +79,7 @@ PASS: BOUNDARY: fermion-source/insertion observables carry (D+M)^{-1} dependence
 PASS: BOUNDARY: prior additive+even core note is cited as prior statement (currently unaudited); its legs are re-derived self-contained here  [no unaudited dependency is load-bearing for this runner's checks]
 
 ==============================================================================
-TOTAL: PASS=40 FAIL=0
+TOTAL: PASS=47 FAIL=0
 ==============================================================================
 
 ----- stderr -----

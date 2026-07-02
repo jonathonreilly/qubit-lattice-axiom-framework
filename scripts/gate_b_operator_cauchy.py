@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Gate B family operator-Cauchy continuum-bridge probe.
+"""Gate B tested-axis operator-Cauchy continuum-bridge probe.
 
 Companion experiment to the rescaled-NN operator-Cauchy lane and the
 alt-connectivity negative companion.
 Question this runner attacks:
 
   Does the operator-Cauchy continuum-bridge method extend from the rescaled NN
-  lane to the Gate B family addressed by
+  lane to the tested Gate B axes addressed by
 
     docs/GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md  (numerical bounded replay)
     docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md (finite-box bounded theorem)
@@ -117,8 +117,8 @@ machine-precision Schur runners; the source note's evidence is already in
 the audit ledger).  Diagnostic is documented in this runner's output and in
 the source note.
 
-Exit code is nonzero if the tested no-go is not observed. The expected
-no-go condition is that both Gate B operator-Cauchy gates fail; the
+Exit code is nonzero if the tested bounded null is not observed. The expected
+bounded-null condition is that both Gate B operator-Cauchy gates fail; the
 restricted strong-field row is separately reported as a method mismatch.
 """
 
@@ -508,7 +508,7 @@ def measure_ensemble_seed(seed: int) -> List[float]:
 def main() -> int:
     t0 = time.time()
     print("=" * 110)
-    print("GATE B FAMILY OPERATOR-CAUCHY CONTINUUM-BRIDGE PROBE")
+    print("GATE B TESTED-AXIS OPERATOR-CAUCHY CONTINUUM-BRIDGE PROBE")
     print("=" * 110)
     print(f"  rows targeted:")
     print(f"    - gate_b_connectivity_tolerance_note     (numerical bounded "
@@ -738,12 +738,12 @@ def main() -> int:
 
     if res_cauchy_ok or ens_cauchy_ok:
         print("  Operator-Cauchy continuum-bridge method extends to the "
-              "Gate B family")
+              "tested Gate B axes")
         print(f"  on the {'resolution' if res_cauchy_ok else 'ensemble'}-"
               f"refinement axis.")
     else:
         print("  Operator-Cauchy continuum-bridge method does NOT extend "
-              "cleanly to the Gate B family.")
+              "cleanly to the tested Gate B axes.")
         print()
         print("  Structural reasons for the bounded scope:")
         print("    - Part 1: refining the lattice resolution while holding")
@@ -766,20 +766,22 @@ def main() -> int:
         print("      finite-box algebraic theorem; the operator-Cauchy")
         print("      method has no continuum axis to attack.")
         print()
-        print("  This is a SHARP BOUNDED NULL-RESULT: the Gate B family's")
-        print("  bounded scope is structural to its construction.  This")
+        print("  This is a SHARP BOUNDED TESTED-AXIS NULL-RESULT: the")
+        print("  sampled Gate B Cauchy axes have structural bounded scope. This")
         print("  mirrors the alt-connectivity negative companion")
         print("  and confirms that the operator-Cauchy bridge method is")
-        print("  a feature of the rescaled-NN lane, not of every")
-        print("  physical Cl(3) on Z^3 harness.")
+        print("  not automatically transferable from the rescaled-NN lane")
+        print("  to every physical Cl(3) on Z^3 harness.")
 
-    expected_no_go = (not res_cauchy_ok and not ens_cauchy_ok)
+    expected_bounded_null = (not res_cauchy_ok and not ens_cauchy_ok)
     print()
-    print("  Expected no-go check (both tested Cauchy gates fail): "
-          f"{'PASS' if expected_no_go else 'FAIL'}")
+    print("  Scope certificate: family_exhaustion_claim=False; "
+          "tested_cauchy_axes=2; strong_field_method_mismatch=True")
+    print("  Expected bounded-null check (both tested Cauchy gates fail): "
+          f"{'PASS' if expected_bounded_null else 'FAIL'}")
     print()
     print(f"  Total wallclock: {time.time() - t0:.0f}s")
-    return 0 if expected_no_go else 1
+    return 0 if expected_bounded_null else 1
 
 
 if __name__ == "__main__":

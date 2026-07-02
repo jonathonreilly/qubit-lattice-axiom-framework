@@ -1,10 +1,13 @@
 # Diamond Absolute Unit Bridge Note
 
 **Date:** 2026-04-06  
+**Type:** meta
+**Claim type:** meta
 **Status:** calibration bridge note, not an experimental claim
 
 ## Artifact Chain
 
+- [`docs/DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md`](DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md)
 - [`docs/DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md`](DIAMOND_SIGNAL_BUDGET_HARDENING_NOTE.md)
 - [`docs/DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md`](DIAMOND_NV_PHASE_RAMP_SIGNAL_BUDGET_NOTE.md)
 - [`docs/DIAMOND_SENSOR_PROTOCOL_NOTE.md`](DIAMOND_SENSOR_PROTOCOL_NOTE.md)
@@ -22,8 +25,11 @@ smallest extra simulation output that would tighten the bridge?
 
 The repo can already support a **relative** bridge:
 
+- ideal lock-in detector semantics for `X`, `Y`, `phi`, null controls,
+  `pi` reference flips, and affine widefield phase slopes
 - exact nulls and sign flips in the diamond-facing proxy cards
-- phase-quadrature and phase-ramp observables in the retained wavefield lane
+- phase-quadrature and phase-ramp observables in the source-candidate
+  wavefield lane
 - causal-field ratio comparisons that stay meaningful as **dimensionless**
   proxy observables
 
@@ -37,20 +43,25 @@ The repo cannot yet support an **absolute** bridge:
 
 ## What Can Be Inferred In Repo
 
-From the retained diamond-facing notes, the following are defensible without
+From the diamond-facing proxy notes, the following are defensible without
 external calibration:
 
+- the ideal detector map from a delayed driven source to lock-in `X`, `Y`,
+  `phi`, and a widefield phase slope is explicit and executable
 - zero-source and static-background nulls can be pinned exactly in the proxy
   model
-- the sign of the retained response can be tracked across a controlled
+- the sign of the proxy response can be tracked across a controlled
   protocol
 - phase lag, quadrature, and phase-ramp slope can be compared as
   dimensionless outputs
 - causal-field ratios such as forward-only / instantaneous and
   dynamic(c<1) / instantaneous remain usable as internal proxy diagnostics
 
-The newest causal-field notes also help here:
+The newest detector and causal-field notes also help here:
 
+- [`DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md`](DIAMOND_IDEAL_LOCKIN_DETECTOR_THEOREM_NOTE_2026-06-17.md)
+  closes the ideal lock-in detector map only; it does not supply an NV
+  transfer coefficient or lab sensitivity estimate.
 - [`CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md`](CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md) shows the configured finite-cone cases are
   structured proxy readouts, while the archived `0.45` table is stale
 - [`docs/CAUSAL_FIELD_PORTABILITY_NOTE.md`](CAUSAL_FIELD_PORTABILITY_NOTE.md) shows the same observable is
@@ -65,7 +76,7 @@ calibration:
 - proxy amplitude to NV readout counts or volts
 - proxy phase-ramp slope to an actual spatial phase gradient in the microscope
 - proxy signal size to absolute detectability above the NV noise floor
-- any claim that the retained proxy amplitude corresponds to a physical field
+- any claim that the proxy amplitude corresponds to a physical field
   strength in the lab setup
 
 In other words, the repo can tell us the proxy is nonzero and well-behaved, but
@@ -87,7 +98,8 @@ form:
 ## Single Best Observable
 
 If we had to pick one in-repo observable to tighten the bridge first, it would
-be the normalized phase-ramp slope from the retained phase-sensitive lane:
+be the normalized phase-ramp slope from the phase-sensitive source-candidate
+lane:
 
 - raw `X`, `Y`, and `phi`
 - plus the spatial phase-ramp slope, reported both raw and normalized

@@ -1,0 +1,61 @@
+Route-2 center-excess source target
+Status: bounded-support for the normalized source-map theorem target; not an audit verdict.
+TRACE: upstream_support
+
+PART 1: authority markers
+PASS: readout authority exists: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: Schur runner authority exists: frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py
+PASS: readout note contains marker: P_R = [[alpha_E, 0, beta_E, 0]
+PASS: readout note contains marker: q_E   := gamma_E(center) / gamma_E(shell) = 1 + (beta_E / alpha_E) / 6
+PASS: readout note contains marker: beta_E / alpha_E = 21/4
+PASS: readout note contains marker: irreducible missing map entry
+PASS: Schur runner contains marker: weights (1/6, 1/3, 1/2)
+PASS: Schur runner contains marker: (w_E/w_T1)^{-1} = 3/2 = kappa
+PASS: Schur runner contains marker: (w_E/w_T1)^{-2} = 9/4
+PASS: Schur runner contains marker: No named functional produces an
+
+PART 2: one-power readout premise
+PASS: Schur weights are w_E=1/3 and w_T=1/2
+PASS: one inverse Schur factor gives lambda=3/2
+PASS: two inverse Schur factors give lambda=9/4
+PASS: one-power readout gives q_E=5/4 from q_T=5/6
+PASS: one-power readout gives rho_E=3/2
+PASS: one-power readout keeps the granted T-side values
+
+PART 3: normalized source-excess target
+  normalized source target: shell_scale=1, b_T/a_T=1, b_E/a_E=7/2
+PASS: preserving shell T/E from -2 forces a_T/a_E=1
+PASS: preserving q_T=5/6 from rho_T=-1 forces b_T/a_T=1
+PASS: raising one-power rho_E=3/2 to 21/4 forces b_E/a_E=7/2
+PASS: the normalized source target gives final rho_T=-1
+PASS: the normalized source target gives final shell T/E=-2
+PASS: the normalized source target gives final rho_E=21/4
+PASS: the normalized source target gives q_T=5/6
+PASS: the normalized source target gives q_E=15/8
+PASS: the normalized source target gives center T/E=-8/9
+
+PART 4: necessity in the endpoint-normalized class
+PASS: solving the shell equation returns a_T/a_E=1
+PASS: solving the T-center equation returns b_T/a_T=1
+PASS: solving the E-center equation returns b_E/a_E=7/2
+PASS: low-rational sweep has a unique E-excess hit
+      hits=[Fraction(7, 2)]
+PASS: nearby simple tilts miss the target
+
+PART 5: note and status firewall
+PASS: note contains marker: Actual current-surface status: bounded-support for the normalized center-excess source target
+PASS: note contains marker: This is not an audit verdict
+PASS: note contains marker: does not resolve the parent gate
+PASS: note contains marker: b_E/a_E = 7/2
+PASS: note contains marker: the exact next source theorem target
+PASS: note avoids overclaim marker: status-authority phrase
+PASS: note avoids overclaim marker: parent-closure phrase
+PASS: note avoids overclaim marker: current-surface endpoint-derivation phrase
+PASS: note avoids overclaim marker: audit-ratification phrase
+PASS: note avoids overclaim marker: branch-local status-promotion phrase
+PASS: note avoids overclaim marker: future-retention phrase
+PASS: note avoids overclaim marker: promotion-to-retention phrase
+PASS: note avoids overclaim marker: no-future-theorem phrase
+
+TOTAL: PASS=43, FAIL=0
+VERDICT: bounded support. Under the one-power readout premise, the endpoint-normalized source theorem target is uniquely b_E/a_E=7/2 with a_T/a_E=1 and b_T/a_T=1. Existence of that source map remains open.

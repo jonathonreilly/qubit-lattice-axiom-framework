@@ -1,23 +1,20 @@
 # No-Go Ledger
 
-## Prior Route-2 Blocks
+## Prior Endpoint Blocks
 
-- Factor rigidity localized the ambiguity to the spatial prefactor.
-- Direct-consumer classification showed E-center dependence is load-bearing.
-- Typed-edge cut certificates showed source scalar support has no current path
-  to the endpoint.
-- Sign and magnitude splits showed sign support is not enough.
-- Typecast scale analysis isolated the missing unit normalization.
+- Source scalar support does not land in Route-2 center readout without a typed
+  edge.
+- Source-augmented E-center-blind signatures do not select the E-center lift.
+- Positivity, shell data, low-rational filters, and T-side values do not select
+  the E-channel entry.
 
-## Block26
+## Block27
 
-Source-augmented E-center functor no-go:
+Direct-consumer split:
 
-```text
-source-augmented blind signature
-= (F_adj, R_conn, E-shell, T-shell, T-center)
-```
+- Structural S3-time factor-rigidity is rho_E-blind exact support.
+- Unique S3-time coupling and primitive-chain final use are E-center-sensitive.
+- Eta-floor live affine membership is not a physical/canonical selector.
 
-is the same for multiple exact `rho_E` values. The E-center lift and center
-magnitude vary outside that signature. Therefore any selector that factors
-through the blind signature cannot choose the target E-center lift.
+This is not a new endpoint no-go. It is a support packet showing which direct
+consumer claims inherit the open selector.

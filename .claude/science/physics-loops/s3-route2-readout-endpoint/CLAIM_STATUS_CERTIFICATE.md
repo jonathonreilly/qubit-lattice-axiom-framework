@@ -1,32 +1,31 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
 conditional_surface_status: null
-hypothetical_axiom_status: "if a typed landing edge F_adj -> |c_TE| were supplied, endpoint algebra would select the target E-center lift"
+hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "the typed landing edge remains open"
+proposal_allowed_reason: "this is a dependency split, not endpoint selection"
 bare_status_promotion_allowed: false
 independent_verdict_required_for_authority_change: true
 ```
 
 ## Status
 
-Block26 is an exact negative boundary for source-augmented, E-center-blind
-functoriality. It does not certify a positive authority change.
+Block27 is exact support for direct-consumer dependency classification. It does
+not certify a positive authority change for the endpoint itself.
 
 ## Dependency Classes
 
-- Exact internal support: `F_adj = 8/9`.
-- Exact endpoint algebra: inverse between `q_E`, `rho_E`, and center
-  magnitude under granted T-side values.
-- Open theorem: typed landing from source scalar into Route-2 center readout,
-  or an equivalent primitive that evaluates `P_R E-center`.
-- Forbidden as proof input: observed targets, fitted selectors, live numerical
-  near misses, and unstated unit conventions.
+- rho_E-blind support: conditional family, universal time channel, rank-1
+  prefactor localization.
+- E-center-sensitive open claims: unique `Theta_R -> Lambda_R` law,
+  physical/canonical gate readout, primitive-chain final use.
+- Membership-only: eta-floor live affine readout lies in the restricted bright
+  class but does not select `P_R`.
 
 ## Review Disposition
 

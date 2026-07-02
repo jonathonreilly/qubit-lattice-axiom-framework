@@ -35,6 +35,7 @@ from frontier_s3_time_theta_to_slice_coupling_factor_rigidity import (
 )
 
 AUDIT_TIMEOUT_SEC = 120
+T_BALANCE_TOL = 5.0e-12
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DOCS = REPO_ROOT / "docs"
@@ -180,8 +181,8 @@ def main() -> int:
     t_balance_err = abs(tensor_data.t_balance - abs(data.rho_t))
     check(
         "t_balance is the absolute live T-channel slope/intercept ratio",
-        t_balance_err < BRIDGE_RATIO_TOL,
-        f"t_balance={tensor_data.t_balance:.12f}, |beta_T/alpha_T|={abs(data.rho_t):.12f}",
+        t_balance_err < T_BALANCE_TOL,
+        f"t_balance={tensor_data.t_balance:.12f}, |beta_T/alpha_T|={abs(data.rho_t):.12f}, err={t_balance_err:.3e}",
     )
 
     q_t = Fraction(1, 1) + Fraction(-1, 1) / Fraction(6, 1)

@@ -344,11 +344,19 @@ def main() -> int:
         and "This capstone wall" in note,
     )
     links = re.findall(r"\[[^\]]+\]\([^)]+\)", note)
+    dep_block = note.split("## Dependencies", 1)[1] if "## Dependencies" in note else ""
+    dep_links = re.findall(r"\[[^\]]+\]\([^)]+\)", dep_block)
     check(
         "B",
-        "markdown link inventory is exactly the three dependency links",
-        len(links) == 3,
-        f"links={len(links)}",
+        "dependency markdown link inventory is exactly the three dependency links",
+        len(dep_links) == 3,
+        f"dependency_links={len(dep_links)}, total_links={len(links)}",
+    )
+    check(
+        "B",
+        "runner and cache markdown links are present",
+        "[`scripts/frontier_reta_magnitude_continuum_index_theorem_2026_06_12.py`]" in note
+        and "[`logs/runner-cache/frontier_reta_magnitude_continuum_index_theorem_2026_06_12.txt`]" in note,
     )
     context_tokens = (
         "`KOIDE_DELTA_RANK2_SELECTOR_IS_THE_CLIFFORD_CHIRALITY_DOMAIN_WALL_EDGE_BOUNDED_NOTE_2026-06-05.md`",

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py
-runner_sha256: 97d6345e2bcf64b0b6613ac0e4dee71ec4b4f7f43ac5f22b685ae4c5305c41b8
+runner_sha256: 86a5ebbcf9c343e08d50d899cbfdc21fd7976b826acb3eeba571cf910eb0541a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.54
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 
@@ -135,6 +135,9 @@ PART E - note discipline
 [PASS] note excludes forbidden phrase: closes the route
 [PASS] note excludes forbidden phrase: PDG
 [PASS] note excludes forbidden phrase: new wall
+[PASS] note declares canonical bounded_theorem claim type
+[PASS] note does not use runner PASS as source status
+[PASS] note does not lean on PR #4783 as authority
 [PASS] note uses no unlisted W_ wall identifiers -- W_cycle_holonomy_value, W_defect_identity_unit
 [PASS] markdown-link inventory has exactly the three origin/main doc targets
 [PASS] in-flight basename appears in text: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01
@@ -148,10 +151,10 @@ PART E - note discipline
 [PASS] note excludes preserved-token meta-language
 [PASS] note excludes record-requirement meta-language
 [PASS] note excludes local-instruction meta-language
-[PASS] note line count is in requested band -- 241
-[PASS] runner line count is in requested band -- 290
+[PASS] note line count is in requested band -- 242
+[PASS] runner line count is in requested band -- 287
 
-TOTAL: PASS=124 FAIL=0
+TOTAL: PASS=127 FAIL=0
 
 ----- stderr -----
 

@@ -112,6 +112,18 @@ Run the repo-native physics review loop from:
   salvageable, land the source-only salvage and dependency-chain/audit-queue
   repairs as part of the current landing path; otherwise close or reject the
   existing PR with a clear reason.
+- A PR whose purpose is repairing a stuck terminal ledger row
+  (`audited_conditional` / `audited_renaming` / `audited_failed` /
+  `audited_numerical_match`) must leave that row requeue-able: the row's own
+  note or paired runner must change in the PR, or the PR must ship
+  machine-readable re-audit targeting metadata (a dispatcher sidecar) naming
+  the row. Dependent-side edits alone never reschedule the stuck row. When
+  the audit-named repair is dependent-side only (for example, narrowing
+  dependents' citing sentences), add a dated downstream-hygiene line to the
+  stuck row's own note boundary as part of the landing — a source-side fact,
+  no grade language. Verify with the validation pipeline that the row
+  re-enters the queue, then restore generated audit outputs per the
+  pipeline-output-stripped gate.
 - `/review-loop` must ignore draft-status PRs. Drafts are not candidates for
   landing, review-loop comments, or salvage unless the user explicitly asks for
   draft inspection without landing.
@@ -129,7 +141,12 @@ Run the repo-native physics review loop from:
   baseline silently promote separate species identifications, selectors,
   probability or occurrence rules, K/CPT or central-sector structure,
   P2/modulus, log-det structure, source/action bridges, empirical matches, or
-  parent theorem/status surfaces.
+  parent theorem/status surfaces. The current baseline includes: no possibility
+  is privileged; possibilities are distinguished by the supplied algebraic
+  structure alone; readout value is determined by record content alone; a
+  state is a configuration of records; and a law privileges no states, has a
+  supplied condition as its domain, and gives exactly one answer where that
+  condition holds.
 - Nature-grade retention requires derived or explicitly admitted inputs,
   decisive artifact support, clear falsifiers, and no hidden semantic bridge.
 - Math-bearing runners require independent formula review: PASS lines do not

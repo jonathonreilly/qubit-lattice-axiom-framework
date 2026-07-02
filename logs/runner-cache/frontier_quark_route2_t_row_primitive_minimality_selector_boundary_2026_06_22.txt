@@ -1,0 +1,92 @@
+Route-2 T-row primitive/minimality selector boundary
+==============================================================================
+
+A. Source-note and premise boundary
+PASS: new source note exists -- docs/QUARK_ROUTE2_T_ROW_PRIMITIVE_MINIMALITY_SELECTOR_BOUNDARY_NOTE_2026-06-22.md
+PASS: new note declares no_go claim type
+PASS: new note declares scoped no-go role
+PASS: new note leaves status authority to audit lane
+PASS: new note leaves audit fields pipeline-derived
+PASS: new note names selector boundary
+PASS: new note records minimality miss
+PASS: new note keeps endpoint target conditional
+PASS: new note does not depend on an unlanded sibling block
+PASS: new note markdown-links load-bearing authorities
+PASS: new note has no forbidden proposal wording
+PASS: MINIMAL_AXIOMS_2026-06-05.md contains required boundary markers -- record supplies no readout context; weighting, normalization
+PASS: QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md contains required boundary markers -- Missing T-row shape selector; Missing E/T shell normalization selector
+PASS: S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md contains required boundary markers -- endpoint triple; not yet derived
+
+B. Closed-form family identities
+PASS: closed form: shape family keeps rho_T=-1 for every n>=1
+PASS: closed form: shape family keeps q_T=5/6 for every n>=1
+PASS: closed form: shape family has s_TE=-n
+PASS: closed form: full integer-row gcd leaves every n primitive
+PASS: closed form: T-subrow gcd selects n=1 as the primitive member
+PASS: closed form: Frobenius norm is minimized at n=1 for n>=1
+PASS: closed form: center deformation ties across n>=1
+PASS: closed form: fixed-shell beta family keeps s_TE=-2
+PASS: closed form: beta_T=2 gives target rho_T
+PASS: closed form: beta_T=2 gives target q_T
+PASS: closed form: fixed-shell Frobenius norm is minimized at beta_T=0
+PASS: closed form: positive-beta minimality selects beta_T=1
+
+C. Shape-supplied integer family witnesses
+PASS: shape family n=1 keeps rho_T=-1
+PASS: shape family n=1 keeps q_T=5/6
+PASS: shape family n=1 has s_TE=-n
+PASS: shape family n=2 keeps rho_T=-1
+PASS: shape family n=2 keeps q_T=5/6
+PASS: shape family n=2 has s_TE=-n
+PASS: shape family n=3 keeps rho_T=-1
+PASS: shape family n=3 keeps q_T=5/6
+PASS: shape family n=3 has s_TE=-n
+PASS: shape family n=4 keeps rho_T=-1
+PASS: shape family n=4 keeps q_T=5/6
+PASS: shape family n=4 has s_TE=-n
+PASS: shape family n=5 keeps rho_T=-1
+PASS: shape family n=5 keeps q_T=5/6
+PASS: shape family n=5 has s_TE=-n
+PASS: n=2 is the target shell quotient
+PASS: n=1 misses target shell quotient
+PASS: target full triple is primitive as a three-entry row
+PASS: n=1 full triple is also primitive
+PASS: target T subrow is not primitive by gcd
+PASS: n=1 T subrow is primitive by gcd
+
+D. Minimality selector witnesses miss n=2
+PASS: minimal Frobenius selector picks n=1
+PASS: minimal center-deformation selector leaves all sampled n tied
+PASS: minimal shell magnitude selector picks n=1
+PASS: target n=2 Frobenius norm square is 9
+PASS: n=1 Frobenius norm square is 3
+PASS: minimal norm prefers n=1 over n=2
+PASS: note records norm miss
+PASS: note records gcd miss
+
+E. Shell-scale supplied beta family witnesses
+PASS: shell family beta=0 keeps s_TE=-2
+PASS: shell family beta=1 keeps s_TE=-2
+PASS: shell family beta=2 keeps s_TE=-2
+PASS: shell family beta=3 keeps s_TE=-2
+PASS: shell family beta=4 keeps s_TE=-2
+PASS: beta=2 gives target rho_T
+PASS: beta=2 gives target q_T
+PASS: beta=0 misses rho_T
+PASS: beta=0 misses q_T
+PASS: beta=1 misses rho_T
+PASS: beta=1 misses q_T
+PASS: fixed-shell minimal norm picks beta=0
+PASS: smallest positive beta picks beta=1
+
+F. Selector firewall
+PASS: note names missing multiplicity-two rule
+PASS: note blocks hidden parity import
+PASS: note preserves target boundary
+PASS: note leaves audit authority untouched
+PASS: note limits no-go to enumerated selectors
+PASS: note records fixed-shell beta-family miss
+
+==============================================================================
+TOTAL: PASS=74, FAIL=0
+STATUS: scoped no-go/exact support. The enumerated primitive-integer and minimality selectors do not select the full Route-2 T row (1,-2,2); the missing positive premise is a non-circular multiplicity-two or full-row selector.

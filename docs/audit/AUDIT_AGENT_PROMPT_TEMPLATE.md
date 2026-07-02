@@ -244,7 +244,7 @@ Return a single JSON object with exactly these fields. No other prose.
   "decoration_parent_claim_id": "<claim_id of the upstream parent if verdict = audited_decoration, else null>",
   "open_dependency_paths": ["<note path of any cited authority that is itself support / open / conditional>"],
   "auditor_confidence": "<low | medium | high>",
-  "notes_for_re_audit_if_any": "<for audited_conditional, prefix exactly one repair class from missing_dependency_edge, dependency_not_retained, missing_bridge_theorem, scope_too_broad, runner_artifact_issue, compute_required, other, then name the cheapest next repair action; otherwise short note flagging anything a second auditor should re-check, or empty>"
+  "notes_for_re_audit_if_any": "<for audited_conditional and audited_renaming, prefix exactly one repair class from missing_dependency_edge, dependency_not_retained, missing_bridge_theorem, scope_too_broad, runner_artifact_issue, compute_required, other, then name the cheapest next repair action; if that action is dependent-side (for example narrowing downstream citing sentences), it must also name adding a dated downstream-hygiene line to this note's own boundary, because only this note's own hash drift (or a dispatcher sidecar) re-enters the row into the audit queue; otherwise short note flagging anything a second auditor should re-check, or empty>"
 }
 ```
 

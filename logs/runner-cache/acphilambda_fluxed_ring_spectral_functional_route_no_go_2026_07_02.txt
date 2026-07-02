@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_02.py
-runner_sha256: 9be038f83e12c99d9de8a17180c46fd450ee01d2d9a61576f8057f3c9942bbfe
+runner_sha256: 5ef73bab85f2c814774bba207bcfa083d5d7a955bad63ed87b500c5668c7a9d4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.26
+elapsed_sec: 0.95
 status: ok
 ----- stdout -----
 [PASS] PART A note exists
@@ -120,6 +120,10 @@ status: ok
 [PASS] PART F forbidden fragment absent: closes the route
 [PASS] PART F forbidden fragment absent: PDG
 [PASS] PART F forbidden fragment absent: new wall
+[PASS] PART F note declares canonical no_go claim type
+[PASS] PART F note does not use runner PASS as source status
+[PASS] PART F note does not lean on PR #4783 as authority
+[PASS] PART F campaign context is explicitly non-authority
 [PASS] PART F W identifier whitelist
 [PASS] PART F markdown .md link inventory has exactly the two origin docs
 [PASS] PART F in-flight basenames are not markdown link targets
@@ -129,7 +133,7 @@ status: ok
 [PASS] PART F spec-leakage detector absent: this spec
 [PASS] PART F spec-leakage detector absent: PRESERVE
 [PASS] PART F note does not claim AC_phi_lambda retirement
-TOTAL: PASS=123 FAIL=0
+TOTAL: PASS=127 FAIL=0
 
 ----- stderr -----
 

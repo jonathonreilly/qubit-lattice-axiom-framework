@@ -1,7 +1,8 @@
 # AC_phi_lambda Fluxed-Ring Spectral-Functional Route No-Go
 
 **Date:** 2026-07-02
-**Claim type:** bounded route no-go / spectral reduction theorem
+**Claim type:** no_go
+**Scope:** bounded spectral-functional route no-go plus spectral reduction theorem.
 **Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
 **Primary runner:** [`scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_02.py`](../scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_02.py)
 
@@ -28,11 +29,13 @@ Thus, for every outer function `g` differentiable at `cos Phi = +-1`, the statio
 ## Retained Inputs
 - [BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15](BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md) supplies the C3 generation surface and shift `C`; pinned fragments: "circulant form" and "(a, |b|, delta)".
 - [KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04](KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md) is the retained modulus no-go precedent. Its ledger scope is: "Conditional on the stated C3-circulant lepton Yukawa and modulus-only objective V_mod = log|det M|, the clean determinant-modulus route does not select the non-degenerate physical phase δ≈2/9; its stationary candidates are δ=kπ/3 and are degenerate." Pinned file fragments: "stationary **only** at `δ = k·60°`" and "its stationary candidates are degenerate".
-- PR #4783 `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01`: identity unit `c=1` is not derivable from rescale-invariant clauses; the tuned clause `I({D}) := L` is a restatement, not a derivation.
-- PR #4788 `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01`: registrable content is `cos(3 delta)`; cycle holonomy `Phi = 3 delta`; `c = 1 <=> Phi = 2/3`; wall `W_cycle_holonomy_value`.
-- PR #4789 `ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01`: real-holonomy locus `Phi in {0, pi}` equals the `K`-reality face and the retained modulus-stationary set; the physical member is off-locus.
-- PR #4790 `ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01`: `Phi = Tr L+ = 2/3` is typed as flux equals return amplitude.
-- `RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15`: retained_bounded; next-path surface, cited as context only.
+
+## Program Context (not citation-graph dependencies)
+- PR #4783 `ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01`: campaign context for the restatement-circularity warning; not authority for this note.
+- PR #4788 `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01`: campaign context for the holonomy notation; not authority for this note.
+- PR #4789 `ACPHILAMBDA_REAL_HOLONOMY_LOCUS_IDENTITY_2026-07-01`: campaign context for the real-holonomy locus; not authority for this note.
+- PR #4790 `ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01`: in-flight transport-face context only; not authority for this note.
+- `RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15`: next-path surface, named as context only.
 
 ## Flux Localization (T-S1)
 For the symmetric-gauge fluxed ring, the characteristic polynomial
@@ -80,7 +83,7 @@ Differentiating gives
 ```text
 F'(Phi) = -g'(cos Phi) sin Phi.
 ```
-(a) For `g` differentiable at `cos Phi = +-1`, the stationary set contains `{0, pi}`. This is exactly the real-holonomy locus used by PR #4789. (Members singular at the locus, such as `log det L_Phi` at `Phi = 0`, are monotone up to the singularity and select nothing interior either.)
+(a) For `g` differentiable at `cos Phi = +-1`, the stationary set contains `{0, pi}`. This is the real-holonomy locus named in the campaign context. (Members singular at the locus, such as `log det L_Phi` at `Phi = 0`, are monotone up to the singularity and select nothing interior either.)
 
 (b) An interior stationary point `Phi* in (0, pi)` exists iff
 ```text
@@ -107,7 +110,7 @@ Consequently, selecting `Phi = 2/3` by a spectral functional requires writing an
 ```text
 g'(cos(2/3)) = 0.
 ```
-That is a tuned selector. It restates the target value in the same restatement-circularity class as the clause `I({D}) := L` rejected by PR #4783 under `W_defect_identity_unit`. The ring spectrum does not provide an untuned off-locus value selector.
+That is a tuned selector. It restates the target value in the same restatement-circularity class as the clause `I({D}) := L`; this note does not use that campaign context as authority. The ring spectrum does not provide an untuned off-locus value selector.
 
 ## Flux-Blind Faces (T-S3)
 For `N = 3,4,5,6`, the elementary symmetric faces
@@ -129,7 +132,7 @@ The route map for `W_cycle_holonomy_value` sharpens.
 
 Any mechanism that selects `Phi = 2/3` must read data beyond the fluxed-ring spectrum: record/state-facing content on the ring, such as record formation, occupancy, orientation data, or boundary data.
 
-That content must carry the `K`-breaking required by PR #4789, because the spectral stationary loci land on the real-holonomy face `{0, pi}` unless an outer function is tuned to the off-locus target.
+That content would have to carry `K`-breaking content, because the spectral stationary loci land on the real-holonomy face `{0, pi}` unless an outer function is tuned to the off-locus target.
 
 The named next path is the retained record-dynamics surface:
 ```text
@@ -163,7 +166,7 @@ The wall citation shape is unchanged: `W_cycle_holonomy_value` remains the value
 - This note says nothing about `r`, occurrence, Born, or theta.
 
 ## No-Go Discipline Gate
-**Status:** PASS for bounded spectral-route no-go; not a terminal no-go.
+This checklist supports a bounded spectral-route no-go; it is not a terminal no-go.
 
 ### N1
 Routes checked:
@@ -172,7 +175,7 @@ Routes checked:
 - general spectral functional: CLASSIFIED HERE, on-locus or tuned.
 - adjugate/tree faces: RULED OUT HERE, flux-blind.
 - record/state-facing route beyond the spectrum: OPEN, the named strike direction.
-- rescale-invariant derivation: RULED OUT by PR #4783 context.
+- rescale-invariant derivation: OUT OF SCOPE HERE; the live rescale wall is not discharged by the spectral classification.
 - owner primitive: GOVERNANCE.
 
 ### N2
@@ -188,8 +191,8 @@ Hidden-wall scan:
 ### N4
 Residual matching:
 - Retained modulus row: same on-locus conclusion, wider class, different surface.
-- PR #4788 and PR #4790: same wall, mechanism space narrowed.
-- PR #4789: this note's stationary sets land on its real-holonomy locus.
+- Campaign holonomy/transport context: same wall, mechanism space narrowed.
+- Real-holonomy campaign context: this note's stationary sets land on that locus.
 
 ### N5
 Proven sentences are the exact characteristic-polynomial facts, the monotonicity facts, and the factor-through-`cos Phi` classification at the stated finite resolution: `N = 3,4,5,6` for generality checks, and `N = 3` for the campaign surface.
@@ -217,5 +220,5 @@ python3 scripts/acphilambda_fluxed_ring_spectral_functional_route_no_go_2026_07_
 ```
 Expected close:
 ```text
-TOTAL: PASS=123 FAIL=0
+TOTAL: PASS=127 FAIL=0
 ```

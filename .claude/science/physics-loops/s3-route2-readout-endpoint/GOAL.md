@@ -1,11 +1,20 @@
-# S3/Route-2 Readout Endpoint Loop Goal
+# Physics Loop Goal: S3 / Route-2 Readout Endpoint
 
-Active goal: attack the S3/Route-2 readout endpoint triple
-`(-1, -2, 21/4)` from first principles without applying audit verdicts.
+Attack the S3/Route-2 readout endpoint triple
 
-Block35 target: test the color-complement candidate
-`(dim(adj)-1)/dim(adj)=7/8` as a possible source for the Route-2 E-center
-excess `e_E := rho_E/6 = 7/8`.
+```text
+(beta_T/alpha_T, alpha_T/alpha_E, beta_E/alpha_E) = (-1, -2, 21/4)
+```
 
-Delivery rule: one review PR per coherent science block, no direct push to
-`main`, no refresh of existing PRs onto `main`, and no PR conflict checks.
+from first principles, with emphasis on the remaining E-side entry after the T-side candidates are granted.
+
+Campaign rules:
+
+- do not audit or apply verdicts;
+- make PRs for coherent science blocks;
+- do not push science work to `main`;
+- do not refresh existing PR branches to `main`;
+- do not check PR conflicts or mergeability;
+- keep branch-local artifacts honest about status and trace reachability.
+
+Current block: block36, box-path interpolation-family route pruning for the measured `N=15` E-center lift.

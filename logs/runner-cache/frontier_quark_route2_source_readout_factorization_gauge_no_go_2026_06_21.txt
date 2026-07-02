@@ -1,0 +1,39 @@
+Route-2 source/readout factorization gauge no-go
+====================================================================================
+Status: no-go for certifying independent legs from product-level readout alone.
+[PASS] exact projector weights and kappa are the Route-2 six-arm values
+       (w_A1,w_E,w_T,kappa)=(1/6,1/3,1/2,3/2)
+[PASS] total reciprocal degree d=2 gives the exact endpoint algebra
+       lambda=9/4, q_E=15/8, rho_E=21/4, center T/E=-8/9
+
+-- Degree split degeneracy --
+  a= -1, b=  3: source=2/3, readout=27/8, product=9/4
+  a=  0, b=  2: source=1, readout=9/4, product=9/4
+  a=  1, b=  1: source=3/2, readout=3/2, product=9/4
+  a=  2, b=  0: source=9/4, readout=1, product=9/4
+  a=  3, b= -1: source=27/8, readout=2/3, product=9/4
+[PASS] all displayed source/readout degree splits have total degree two and product lambda=9/4
+[PASS] the endpoint product does not select the desired split a=b=1
+       multiple distinct source/readout attributions have the same product
+
+-- Channelwise factorization gauge --
+[PASS] channelwise source/readout gauge leaves products Q_X=S_X R_X invariant
+       Q_E=1, Q_T=1
+[PASS] the same gauge changes source/readout attribution while preserving endpoint products
+       source ratio 9/4->45/28; readout ratio 4/9->28/45
+
+-- Current-surface guards --
+[PASS] exact readout map exposes P_R and algebraic endpoint ratios, not source/readout legs
+[PASS] source-domain note names the missing bridge as an extra source/readout rule
+[PASS] current tensor primitive notes do not define Riesz or dual-normalized leg observables
+[PASS] prototype and bilinear notes remain definition/input-boundary surfaces
+[PASS] new note records no-go status and forbids endpoint closure
+[PASS] new note states the exact remaining target as a leg-level gauge-fixing primitive
+[PASS] forbidden proof inputs remain excluded
+
+====================================================================================
+PASS=13 FAIL=0
+
+VERDICT: no-go. Product-level endpoint/readout algebra fixes only total reciprocal
+degree two. It cannot certify the source/readout split or two independent dual legs
+without an additional leg-level factorization primitive that fixes the channel gauges.

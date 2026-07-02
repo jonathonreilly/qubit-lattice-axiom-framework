@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 281,
     "leaf": 584,
-    "medium": 471
+    "medium": 470
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17744,33 +17744,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
-        "minimal_axioms",
-        "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
-        "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.959,
-      "note_path": "docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py",
-      "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17939,15 +17912,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.322,
+      "load_bearing_score": 5.822,
       "note_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/car_from_positivity.py",
-      "transitive_descendants": 4
+      "transitive_descendants": 19
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49203,6 +49176,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 92,
-  "total_pending": 1637
+  "ready_count": 91,
+  "total_pending": 1636
 }

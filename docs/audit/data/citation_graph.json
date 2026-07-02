@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_strict_wz_neutral_carrier_response_packet_note_2026-05-25",
         "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
         "complex_selectivity_compare_note",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
         "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
         "magnitude_reads_minimal_record_block_2026-06-06",
         "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09",
-        "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02"
+        "koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02",
+        "koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6110c21580a7c0da670cb09dee87927ce5bd10e7845e242b62cd2e7583aa52c6",
+      "note_hash": "95332d710e7d9e3194a7c2309fcfbd5a7f924dc6d77aca3caf45e1fe883fa208",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

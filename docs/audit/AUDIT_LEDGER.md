@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 919 |
+| **retained_bounded** | 920 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1641 |
+| unaudited | 1640 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1339 |
+| `audited_clean` | 1340 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1967 |
+| `unaudited` | 1966 |
 
 | claim_type | count |
 |---|---:|
@@ -537,6 +537,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `fractional_instanton_action_core_from_topological_infrastructure_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `free_dirac_wigner_action_strong_continuity_bridge_note_2026-06-07` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -7397,6 +7398,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** Under H1-H4 and 1/g_em^2 = 1/g_2^2 + 1/g_Y^2, one obtains 1/g_em^2 = 2d + 3, g_em^2 = 1/(2d + 3), alpha_3(bare)/alpha_em(bare) = 2d + 3, and sin^2(theta_W)(bare) = (d + 1)/(2d + 3).  _(class `A`)_
 - **chain closes:** True — The identities follow by inverting g_2^2 and g_Y^2 to d + 1 and d + 2, summing them, and canceling the common 4 pi factor in the alpha ratio. The note confines the result to a formal implication under H1-H4, so no retained physical coupling derivation is required for the bounded claim as stated.
 - **rationale:** The audited claim is not a first-principles physical coupling derivation; it is an exact algebraic theorem under explicit formal hypotheses. Independent symbolic checking confirms the displayed identities, including the d = 3 values and the weak-angle expression. The runner source performs fraction-level arithmetic and boundary checks consistent with this class A scope, and the packet supplies no cited non-retained authority or open physical bridge needed for the bounded theorem.
+- **auditor confidence:** high
+
+### `free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`
+
+- **Note:** [`FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded algebraic audit of the continuum free Dirac kernel's inverse/poles, Minkowski +/-E mode spectrum, u/v completeness signs and norms, and finite CAR particle-antiparticle relabeling bounded below by zero.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T040704Z-ea003fa1-free_dirac_antiparticle_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given CAR quantization, the negative-energy branch can be relabeled as a positive-energy antiparticle branch, H_CAR = sum E(p)(a^dag a + b^dag b), so the finite-mode Fock spectrum is bounded below by 0.  _(class `A`)_
+- **chain closes:** True — The cited retained-bounded authority supplies the continuum free Dirac kernel and denominator. The remaining conclusions are finite Clifford/spinor/CAR algebra identities, with CAR quantization explicitly scoped as an assumption rather than derived statistics selection.
+- **rationale:** The runner source performs genuine finite matrix and finite-occupation checks: Euclidean inverse and pole continuation, Hermitian Dirac Hamiltonian spectrum, explicit u/v spinor completeness and bilinear signs, and CAR occupation-spectrum boundedness. Independent algebra confirms the key signs and normalizations: (m+i gamma.p)(m-i gamma.p)=p^2+m^2, H_D^2=E^2 with double degeneracy, the displayed v-spinor convention gives pslash-m, and CAR occupations are 0/1 with nonnegative energies after antiparticle relabeling. The note does not claim OS/Wightman reconstruction, microcausality, or CAR selection from Euclidean covariance, so those are not required for this bounded scope.
 - **auditor confidence:** high
 
 ### `free_dirac_poincare_generators_essential_selfadjointness_bounded_note_2026-05-30`

@@ -443,6 +443,13 @@ def require_absent(label, text, needle):
     require(label, needle not in text, f"needle={needle!r}")
 
 
+def rel_path(path):
+    try:
+        return path.relative_to(ROOT).as_posix()
+    except ValueError:
+        return path.as_posix()
+
+
 def section_f():
     print("\nSECTION F -- source-boundary guards")
     note = ROOT / "docs" / "GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md"
@@ -453,9 +460,9 @@ def section_f():
         "controlled-copy": ROOT / "docs" / "RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md",
         "semigroup": ROOT / "docs" / "RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md",
     }
-    require("F0-note-exists", note.exists(), str(note))
+    require("F0-note-exists", note.exists(), rel_path(note))
     for name, path in deps.items():
-        require(f"F0-dep-exists-{name}", path.exists(), str(path))
+        require(f"F0-dep-exists-{name}", path.exists(), rel_path(path))
 
     dep_text = {name: flatten(path.read_text(encoding="utf-8")) for name, path in deps.items()}
     require_contains(

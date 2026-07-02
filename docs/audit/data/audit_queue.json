@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 281,
     "leaf": 584,
-    "medium": 457
+    "medium": 456
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17744,31 +17744,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/cluster_decomposition_spatial_slab_bridge_check.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -17953,17 +17928,17 @@
         "teleportation_measurement_record_note",
         "teleportation_operator_consistent_end_to_end_note"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/frontier_bell_inequality.py"
       ],
-      "load_bearing_score": 2.585,
+      "load_bearing_score": 5.67,
       "note_path": "docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_teleportation_resource_from_poisson.py",
-      "transitive_descendants": 2
+      "transitive_descendants": 17
     },
     {
       "audit_independence_required": "any_non_self",
@@ -32434,6 +32409,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
+        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/CLUSTER_DECOMPOSITION_PARENT_EQ8_REPAIR_NARROW_NOTE_2026-06-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_cluster_decomposition_parent_eq8_repair_narrow_verifier.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "continuum_equivariant_eta_standard_form_delta_firewall_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -39043,33 +39045,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_t2_df_physical_consequences_2026_05_10_t2df.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cluster_decomposition_parent_eq8_repair_narrow_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
-        "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
-        "cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CLUSTER_DECOMPOSITION_PARENT_EQ8_REPAIR_NARROW_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_cluster_decomposition_parent_eq8_repair_narrow_verifier.py",
       "transitive_descendants": 0
     },
     {
@@ -48829,5 +48804,5 @@
     }
   ],
   "ready_count": 82,
-  "total_pending": 1623
+  "total_pending": 1622
 }

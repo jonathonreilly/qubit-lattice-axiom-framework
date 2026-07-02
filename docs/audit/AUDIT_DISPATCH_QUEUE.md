@@ -4,8 +4,8 @@ This queue is generated from machine-readable dispatcher manifests. It is a targ
 
 **Live entries:** 4
 **Ready entries:** 0
-**Resolved (post-manifest re-audit) entries:** 18
-**Resolved/invalid entries:** 43
+**Resolved (post-manifest re-audit) entries:** 19
+**Resolved/invalid entries:** 42
 **Retired entries:** 19
 
 Source sidecars:
@@ -44,15 +44,16 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 7 | `weak_coupling_sign_sensitivity_note_2026-04-11` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:02:48.474160+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T180225Z-2f0c69c0-weak_coupling_sign_sensi-01 |
 | 8 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-30T22:30:24.031778+00:00 | fresh_context | codex-cli-gpt-5.5-20260530-222822-4f97992e-cluster_decomposition_ma |
 | 9 | `gauge_vacuum_plaquette_distinct_shell_theorem_note` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-29T21:20:05.982098+00:00 | cross_family | codex-cli-audit-ready-20260529-gauge_vacuum_plaquette_d |
-| 10 | `cl3_color_automorphism_theorem` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-06-15T19:14:15.319586+00:00 | judicial_review | codex-gpt-5.5-five-judge-panel-majority-20260615T191415Z-cl3_color_automorphism_theorem |
-| 11 | `continuum_limit_note` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:13:56.019683+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181334Z-742480ea-continuum_limit_note-01 |
-| 12 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-06-19T20:51:36.034920+00:00 | fresh_context | codex-cli-gpt-5.5-20260619-203739-0fd17364-rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17-second |
-| 13 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:16:42.496617+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181535Z-d414d33e-hermitian_lift_theta_h_p-01 |
-| 14 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:23:17.872453+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182224Z-af104ef5-observable_principle_p1_-01 |
-| 15 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:27:21.287498+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182555Z-1ec5390a-observable_principle_p1_-01 |
-| 16 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:29:20.227225+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182816Z-85745dea-observable_principle_p1_-01 |
-| 17 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:32:39.949021+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T183104Z-20b5e4cf-observable_principle_p1_-01 |
-| 18 | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:36:40.690502+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T183621Z-944d0bf3-staggered_hamiltonian_di-01 |
+| 10 | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-07-02T09:18:53.319173+00:00 | fresh_context | codex-audit-loop-gpt-5.5-20260702T091853Z-bb12961e-axiom_first_cluster_deco |
+| 11 | `cl3_color_automorphism_theorem` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-06-15T19:14:15.319586+00:00 | judicial_review | codex-gpt-5.5-five-judge-panel-majority-20260615T191415Z-cl3_color_automorphism_theorem |
+| 12 | `continuum_limit_note` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:13:56.019683+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181334Z-742480ea-continuum_limit_note-01 |
+| 13 | `rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-06-19T20:51:36.034920+00:00 | fresh_context | codex-cli-gpt-5.5-20260619-203739-0fd17364-rh_completion_color_anti_fundamental_narrow_theorem_note_2026-05-17-second |
+| 14 | `hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:16:42.496617+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T181535Z-d414d33e-hermitian_lift_theta_h_p-01 |
+| 15 | `observable_principle_p1_bridge_connes_nc_spectral_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:23:17.872453+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182224Z-af104ef5-observable_principle_p1_-01 |
+| 16 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:27:21.287498+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182555Z-1ec5390a-observable_principle_p1_-01 |
+| 17 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:29:20.227225+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T182816Z-85745dea-observable_principle_p1_-01 |
+| 18 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go / audited_clean / retained_no_go | `same_status_fresh_context_reaudit_after_manifest` | 2026-05-23T18:32:39.949021+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T183104Z-20b5e4cf-observable_principle_p1_-01 |
+| 19 | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem / audited_clean / retained_bounded | `bounded_terminal_after_reaudit` | 2026-05-23T18:36:40.690502+00:00 | fresh_context | codex-cli-gpt-5.5-per-site-k1-20260523T183621Z-944d0bf3-staggered_hamiltonian_di-01 |
 
 ## Resolved Or Invalid
 
@@ -73,34 +74,33 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 13 | resolved_or_superseded | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
 | 14 | resolved_or_superseded | `three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
 | 15 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
-| 16 | resolved_or_superseded | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / audit_in_progress / audit_in_progress |
-| 17 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | positive_theorem / unaudited / unaudited |
-| 18 | resolved_or_superseded | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | positive_theorem / unaudited / unaudited |
-| 19 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 20 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 21 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
-| 22 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
-| 23 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
-| 24 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
-| 25 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
-| 26 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
-| 27 | resolved_or_superseded | `action_normalization_note` | no_go / audited_clean / retained_no_go |
-| 28 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
-| 29 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
-| 30 | invalid_missing_claim_id | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | None / None / None |
-| 31 | invalid_missing_claim_id | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | None / None / None |
-| 32 | invalid_missing_claim_id | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | None / None / None |
-| 33 | resolved_or_superseded | `linear_response_second_order_kubo_note` | bounded_theorem / audited_clean / retained_bounded |
-| 34 | resolved_or_superseded | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / audited_renaming / audited_renaming |
-| 35 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem / audited_clean / retained |
-| 36 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem / audited_clean / retained |
-| 37 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 |
-| 38 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 39 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
-| 40 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
-| 41 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
-| 42 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
-| 43 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 16 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | positive_theorem / unaudited / unaudited |
+| 17 | resolved_or_superseded | `born_rule_from_gleason_busch_derivation_note_2026-05-20` | positive_theorem / unaudited / unaudited |
+| 18 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 19 | resolved_or_superseded | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 20 | resolved_or_superseded | `three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10` | positive_theorem / audited_clean / retained |
+| 21 | resolved_or_superseded | `graph_first_selector_derivation_note` | positive_theorem / audited_clean / retained |
+| 22 | resolved_or_superseded | `graph_first_su3_integration_note` | positive_theorem / audited_clean / retained |
+| 23 | resolved_or_superseded | `su3_casimir_fundamental_algebraic_k1_k3_narrow_proof_walk_bounded_note_2026-05-10` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
+| 24 | resolved_or_superseded | `su3_dabc_symmetric_theorem_note_2026-05-02` | decoration / audited_decoration / decoration_under_cl3_color_automorphism_theorem |
+| 25 | resolved_or_superseded | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration / audited_decoration / decoration_under_graph_first_su3_integration_note |
+| 26 | resolved_or_superseded | `action_normalization_note` | no_go / audited_clean / retained_no_go |
+| 27 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
+| 28 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
+| 29 | invalid_missing_claim_id | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | None / None / None |
+| 30 | invalid_missing_claim_id | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | None / None / None |
+| 31 | invalid_missing_claim_id | `hubble_lane5_c1_stuck_fanout_synthesis_note_2026-04-28` | None / None / None |
+| 32 | resolved_or_superseded | `linear_response_second_order_kubo_note` | bounded_theorem / audited_clean / retained_bounded |
+| 33 | resolved_or_superseded | `u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20` | positive_theorem / audited_renaming / audited_renaming |
+| 34 | resolved_or_superseded | `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17` | positive_theorem / audited_clean / retained |
+| 35 | resolved_or_superseded | `staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16` | positive_theorem / audited_clean / retained |
+| 36 | resolved_or_superseded | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration / audited_decoration / decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10 |
+| 37 | resolved_or_superseded | `cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 38 | resolved_or_superseded | `no_per_site_bosonic_ccr_theorem_note_2026-05-02` | no_go / unaudited / unaudited |
+| 39 | resolved_or_superseded | `no_per_site_chirality_theorem_note_2026-05-02` | no_go / audited_clean / retained_no_go |
+| 40 | resolved_or_superseded | `pauli_group_order_theorem_note_2026-05-02` | positive_theorem / audited_clean / retained |
+| 41 | resolved_or_superseded | `q_integer_spectrum_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
+| 42 | resolved_or_superseded | `per_site_su2_spin_half_theorem_note_2026-05-02` | positive_theorem / unaudited / unaudited |
 
 ## Retired Dispatch Targets
 

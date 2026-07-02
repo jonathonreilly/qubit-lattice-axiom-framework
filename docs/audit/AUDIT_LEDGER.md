@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 933 |
+| **retained_bounded** | 934 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1614 |
+| unaudited | 1613 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1361 |
+| `audited_clean` | 1362 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1940 |
+| `unaudited` | 1939 |
 
 | claim_type | count |
 |---|---:|
@@ -763,6 +763,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cyclic_wilson_descendant_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_delta_lattice_wilson_selected_eigenline_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `koide_delta_marked_relative_cobordism_no_go_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_note_2026-04-24` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_radian_native_unit_separation_narrow_theorem_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dirac_mass_forces_r_one_lr_coupling_berry_flat_bounded_no_go_note_2026-06-05` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -10837,6 +10838,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Every retained Wilson/APS-derived boundary mark restricts to a scalar lambda I on the rank-two M_zeta multiplicity space, so it commutes with all rank-one selectors and cannot select a unique line.  _(class `A`)_
 - **chain closes:** True — The cited retained bridge supplies the scalar-on-M_zeta theorem, and the parent runner checks the downstream algebraic consequences plus endpoint countermodels. No non-retained selector or boundary-section theorem deriving c=0 is present in the restricted packet.
 - **rationale:** The load-bearing scalar-mark step is an algebraic closure over the retained bridge theorem, not a definition substitution or numerical match. The runner source does more than print constants: it symbolically checks the residual structure and re-verifies representative scalar restrictions by importing the sibling Wilson construction. Within the stated no-go scope, the conclusion follows from retained inputs and explicit countermodels showing marked relative cobordism does not force selected-line closure or c=0.
+- **auditor confidence:** high
+
+### `koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`
+
+- **Note:** [`KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite records-level algebra showing that, for the stated Brannen Born triple with the C3 chamber fixed, the phase mirror sign and the S3→C3 count orientation are the same sign-representation Z2; realized handedness, |δ|=2/9, and the r=1/2 cone are not derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T054009Z-386f813f-koide_delta_phase_and_ge`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The Vandermonde discriminant Δ(p) transforms by the S3 sign representation, sgn(σ)=det(ρ_perm(σ)), and under δ→−δ it flips sign while the sorted Born multiset is unchanged.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from finite S3 algebra plus the stated Born-weight formula: p(-δ) is a transposition of p(δ), Δ is alternating, and the cited positivity authorities identify the same sign character with the count-orientation determinant. The open global-handedness and magnitude bridges are explicitly outside the audited scope.
+- **rationale:** The load-bearing identities are exact algebraic checks, not fitted numerical matches or definitions: reflection acts as swap (1 2), Δ transforms by sgn, and sgn equals the determinant orientation whose positive subgroup is C3. The runner source actually computes these identities; its sole PDG line is a non-load-bearing comparator. All load-bearing one-hop authorities are retained-grade for the scoped statements, and their open physical-handedness bridge is preserved as an unclosed residual rather than imported.
 - **auditor confidence:** high
 
 ### `koide_dimensionless_note_2026-04-24`

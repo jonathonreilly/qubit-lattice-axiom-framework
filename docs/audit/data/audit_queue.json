@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 281,
     "leaf": 579,
-    "medium": 455
+    "medium": 454
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17744,7 +17744,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
+      "claim_id": "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -17752,22 +17752,19 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23",
-        "positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23",
-        "three_generation_observable_theorem_note",
-        "parity_violation_does_not_reach_generation_triplet_narrow_theorem_note_2026-05-23",
-        "cl3_frame_free_ambient_chiral_grading_no_go_note_2026-06-02",
-        "koide_z3_equivariant_anticommuting_no_go_note_2026-05-16",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
+        "gravity_clean_derivation_note",
+        "newton_law_derived_note",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
       ],
       "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 5.67,
-      "note_path": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "note_path": "docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_koide_delta_phase_count_one_z2_orientation.py",
+      "runner_path": "scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py",
       "transitive_descendants": 17
     },
     {
@@ -17936,33 +17933,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_d3_checkerboard_step1_parity_lemma_2026_06_12.py",
       "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "lattice_greens_1_over_r_from_heat_kernel_resolvent_theorem_note_2026-06-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07",
-        "gravity_clean_derivation_note",
-        "newton_law_derived_note",
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_lattice_greens_1_over_r_from_heat_kernel_resolvent.py",
-      "transitive_descendants": 2
     },
     {
       "audit_independence_required": "any_non_self",
@@ -32120,6 +32090,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_scalar_i_real_generation_k_parity_separation.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -37260,32 +37256,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_record_selective_instrument_atom_criterion_2026_06_05.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_scalar_i_real_generation_k_parity_separation.py",
       "transitive_descendants": 1
     },
     {
@@ -48647,5 +48617,5 @@
     }
   ],
   "ready_count": 78,
-  "total_pending": 1616
+  "total_pending": 1615
 }

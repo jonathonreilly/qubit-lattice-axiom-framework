@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 301,
-    "high": 292,
+    "high": 291,
     "leaf": 584,
     "medium": 511
   },
@@ -8725,7 +8725,7 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+      "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -8733,17 +8733,19 @@
       "criticality_rank": 2,
       "cross_confirmation_status": null,
       "deps": [
-        "minimal_axioms"
+        "minimal_axioms",
+        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
+        "yt_source_action_support_packet_note_2026-05-22"
       ],
-      "direct_in_degree": 5,
+      "direct_in_degree": 14,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 9.055,
-      "note_path": "docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md",
+      "load_bearing_score": 12.17,
+      "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/audit_companion_lsp_projective_canonical_kp_equals_p_2026_06_05.py",
-      "transitive_descendants": 93
+      "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
+      "transitive_descendants": 35
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -16534,32 +16536,6 @@
       "audit_independence_required": "fresh_context_or_stronger",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_lsp_signed_record_source_readout_support_note_2026-05-24",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
-        "yt_source_action_support_packet_note_2026-05-22"
-      ],
-      "direct_in_degree": 13,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.892,
-      "note_path": "docs/YT_LSP_SIGNED_RECORD_SOURCE_READOUT_SUPPORT_NOTE_2026-05-24.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_yt_lsp_signed_record_source_readout_support.py",
-      "transitive_descendants": 20
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "pmns_theta12_theta13_dcp_predictions_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18067,6 +18043,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 7.443,
+      "note_path": "docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/audit_companion_kraus_choi_normalization_reconciled_2026_06_05.py",
+      "transitive_descendants": 86
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18086,30 +18086,6 @@
       "ready": true,
       "runner_path": "scripts/light_cone_crank_nicolson_lr_2026_05_09.py",
       "transitive_descendants": 86
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.67,
-      "note_path": "docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_kraus_choi_normalization_reconciled_2026_06_05.py",
-      "transitive_descendants": 71
     },
     {
       "audit_independence_required": "any_non_self",
@@ -50547,5 +50523,5 @@
     }
   ],
   "ready_count": 113,
-  "total_pending": 1688
+  "total_pending": 1687
 }

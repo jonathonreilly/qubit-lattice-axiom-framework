@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 198 |
-| **retained_bounded** | 898 |
+| **retained_bounded** | 899 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1686 |
+| unaudited | 1685 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 26 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1305 |
+| `audited_clean` | 1306 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2012 |
+| `unaudited` | 2011 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 509 |
-| `medium` | 928 |
+| `high` | 508 |
+| `medium` | 929 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -860,6 +860,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lp_two_band_exact_completion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -12201,6 +12202,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The finite-dimensional calculation expands the Peierls phase as H(B)=H0+B H1+B^2 H2+O(B^3) and evaluates the grand-potential curvature with the full two-band sum, including interband H1 matrix elements.  _(class `C`)_
 - **chain closes:** True — A manual Taylor/Frechet check of Tr g(H(B)) gives the same normalization used in the runner: 2 Tr g'(H0)H2 plus the divided-difference H1 term with diagonal limit g''. The completed cache shows all sampled mass gates below 2e-2, and the provided source computes the matrix spectra and PT sums rather than reading expected chi values from another note.
 - **rationale:** The load-bearing step is a first-principles finite-matrix computation from the stated Harper cell: the runner constructs H(+B), H(0), H(-B), H1, and H2 and compares the finite-difference response with the full second-order divided-difference PT sum. Expected chi values are not hard-coded; the predecessor deviations are printed as retained bounded provenance and are not used as the proof of the new PT agreement. The finite-B and non-flux-quantized caveats are disclosed, so the conclusion does not overclaim a strict B->0, flux-quantized, continuum, or boundary-root result.
+- **auditor confidence:** high
+
+### `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional projective measurements on the finite qubit-lattice carrier, with nonzero displayed outcome projectors, fixed prepared apparatus state and outcome-basis readout; K_r=P_r is audited in the canonical frame and under phase/permutation readout relabeling, while label-mixing V_A is audited only as breaking the same projective POVM on nonzero sectors.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T011852Z-fa307b70-lsp_projective_canonical`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** K_r = <r|_A U_int (I_sys tensor |0>_A) = sum_s P_s <r|s>_A = P_r, and after an apparatus twist K_r^dag K_r = sum_s |<r|V_A|s>|^2 P_s.  _(class `A`)_
+- **chain closes:** True — The conclusion follows from the explicit projective-measurement hypotheses, the orthonormal apparatus basis contraction, and finite-dimensional isometry extension. The only upstream authority is the registered minimal_axioms accepted premise for the finite carrier, and no Born rule, instrument uniqueness, or measurement-selection axiom is imported.
+- **rationale:** The proof is finite-dimensional linear algebra: projection completeness gives the canonical isometry, Kraus extraction returns P_r, and label-mixing apparatus unitaries produce a nontrivial mixture of orthogonal projector sectors. The runner source genuinely constructs the projector families, isometries, twists, Haar samples, and zero-label edge case rather than merely printing constants. Its checks are algebraic/symbolic/numerical confirmations with no external comparator or tuned input value. The negative boundary is narrow and explicitly scoped, so the no-go discipline gate does not expose an overbroad closure claim.
 - **auditor confidence:** high
 
 ### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`

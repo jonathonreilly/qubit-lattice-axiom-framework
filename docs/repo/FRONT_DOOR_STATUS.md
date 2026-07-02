@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1534 |
-| Retained-grade rows, including boxed decorations | 1413 |
+| Applied audit verdicts | 1535 |
+| Retained-grade rows, including boxed decorations | 1414 |
 | Retained positive theorems | 206 |
 | Retained no-go rows | 211 |
-| Retained bounded rows | 935 |
+| Retained bounded rows | 936 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1612 |
+| Unaudited rows | 1611 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 45 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1614 |
-| Ready rows | 77 |
+| Total pending rows | 1613 |
+| Ready rows | 76 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
 | Medium pending | 454 |
-| Leaf pending | 578 |
+| Leaf pending | 577 |
 
 Next ready rows by queue order:
 
-- [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
 - [`product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`](../../docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_WILSON_MASS_HOLONOMY_TWISTED_EDGE_REALIZATION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 - [`wilson_m_h_per_channel_closure_bounded_note_2026-05-09`](../../docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md) - medium; unaudited
 - [`d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12`](../../docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md) - medium; unaudited
 - [`hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06`](../../docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md) - medium; unaudited
-- [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - leaf; unaudited
+- [`i1_native_quadratic_static_source_normalization_bridge_2026-06-08`](../../docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md) - medium; unaudited
+- [`allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14`](../../docs/ALLORDERS_B4_MARGINAL_PROTECTION_SYMMETRY_THEOREM_NOTE_2026-06-14.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

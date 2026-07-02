@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 935 |
+| **retained_bounded** | 936 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1612 |
+| unaudited | 1611 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1363 |
+| `audited_clean` | 1364 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1938 |
+| `unaudited` | 1937 |
 
 | claim_type | count |
 |---|---:|
@@ -900,6 +900,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `m2_tensor_d4_dimension_256_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_reads_minimal_record_block_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `magnitude_temporal_factor_is_count_not_rate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `main_open_cubic_validation_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -12870,6 +12871,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Since dim_C(M_2(C))=4 and finite tensor-product dimensions multiply, dim_C(M_2(C)^tensor d)=4^d, so at the bounded parameter d=4 the dimension is 4^4=256 and the reciprocal is 1/256.  _(class `A`)_
 - **chain closes:** True — The theorem closes by basis counting and tensor-product dimension multiplicativity over finite-dimensional complex vector spaces. The only physics-sensitive quantity, d=4, is an explicit bounded parameter rather than an output.
 - **rationale:** The row is a class-A algebraic bookkeeping theorem and does not import PDG values, mass-scale observations, or a physical dimension derivation. The cached runner reports PASS=14, FAIL=0 under SHA f8e6d0d9e6a6b88a48b3cea28cf0b4f73536762df53a0784c240c0dcf71a5e20, including explicit tensor basis/rank checks at d=4. Clean status is bounded by the claim_type: downstream effective status should be retained_bounded, not an unbounded derivation of the lepton scale or d=4.
+- **auditor confidence:** high
+
+### `magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`
+
+- **Note:** [`MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formula-local audit that the supplied 4π coupling slot, raised to exponent 16, is not interchangeable with a Gaussian 2π measure slot; no physical readout, convention, dressing, or value-gate closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T054712Z-05a2fb98-magnitude_4pi_is_native_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given the supplied hierarchy-formula slot alpha_bare = g_bare^2/(4π) and exponent 16, replacing the coupling normalization 4π with a Gaussian 2π changes the factor by exactly ((1/(2π))/(1/(4π)))^16 = 2^16.  _(class `A`)_
+- **chain closes:** True — For the scoped claim, the algebra closes exactly and the cited retained-grade inputs supply the native Z^3 Green-kernel 4π geometry and count-16 boundary. The note explicitly excludes the open physical readout/convention/dressing/value-gate bridges from this claim.
+- **rationale:** The load-bearing step is exact algebra over the supplied formula slot and exponent: replacing 1/(4π) by 1/(2π) multiplies the factor by 2^16. The one-hop authorities used for the bounded scope are retained-grade, and the open I1/I2/I3/P3 residuals are not used to close the audited conclusion. The runner mostly verifies source/dependency status, but it also checks the ratio algebra and reconstructs the 1/(4π) Fourier coefficient without observed-value or tuned-scale comparators.
 - **auditor confidence:** high
 
 ### `magnitude_reads_minimal_record_block_2026-06-06`

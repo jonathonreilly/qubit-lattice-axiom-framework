@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 301,
     "high": 281,
-    "leaf": 578,
+    "leaf": 577,
     "medium": 454
   },
   "cycle_break_target_count": 9,
@@ -17744,34 +17744,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-        "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
-        "g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10",
-        "magnitude_temporal_factor_is_count_not_rate_2026-06-06",
-        "magnitude_reads_minimal_record_block_2026-06-06"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.67,
-      "note_path": "docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17935,6 +17907,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_koide_acphilambda_two_bit_decomposition.py",
+      "transitive_descendants": 17
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
       "transitive_descendants": 17
     },
     {
@@ -31764,31 +31761,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_z3_character_isomorphism_color_generation.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
       "transitive_descendants": 2
     },
     {
@@ -48589,6 +48561,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 77,
-  "total_pending": 1614
+  "ready_count": 76,
+  "total_pending": 1613
 }

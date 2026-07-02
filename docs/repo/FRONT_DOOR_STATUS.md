@@ -19,7 +19,7 @@ It is not a physics claim surface and should not be edited by hand.
 | Retained bounded rows | 893 |
 | Boxed decorations under retained parents | 58 |
 | Open gates | 29 |
-| Unaudited rows | 1694 |
+| Unaudited rows | 1693 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 35 |
 | Audited renaming rows | 26 |
@@ -43,7 +43,7 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 Next ready rows by queue order:
 
-- [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - critical; unaudited
+- [`hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30`](../../docs/HIERARCHY_ALPHA_LM_MAGNITUDE_DELTA0_OPEN_GATE_NOTE_2026-05-30.md) - critical; audit_in_progress
 - [`observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md) - high; unaudited
 - [`lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29`](../../docs/LORENTZ_BOOST_FREE_STAGGERED_FERMION_2POINT_SO4_NARROW_THEOREM_NOTE_2026-05-29.md) - high; unaudited
 - [`axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md) - high; unaudited

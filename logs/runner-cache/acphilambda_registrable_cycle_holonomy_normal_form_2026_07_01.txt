@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py
-runner_sha256: 2a379a75ff8690f7a394abf6c9eb7b4d8f434debe837e2da484b40dac53eedda
+runner_sha256: fd002dcb35ea35f2c6058c358e9aca57aa85b717ea443a6374fd3669c87e7324
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 8.23
+elapsed_sec: 5.94
 status: ok
 ----- stdout -----
 === PART A: sources and boundary text ===
@@ -97,6 +97,9 @@ SUMMARY: PASS - forbidden phrase absent: closes the route
 SUMMARY: PASS - forbidden phrase absent: AC_phi_lambda is solved
 SUMMARY: PASS - forbidden phrase absent: AC_phi_lambda is closed
 SUMMARY: PASS - forbidden phrase absent: PDG
+SUMMARY: PASS - note declares canonical bounded_theorem claim type
+SUMMARY: PASS - note does not use runner PASS as source status
+SUMMARY: PASS - note does not lean on PR #4783 as authority
 SUMMARY: PASS - note says not a terminal no-go
 SUMMARY: PASS - status-authority header present
 SUMMARY: PASS - primary runner link present
@@ -109,7 +112,7 @@ SUMMARY: PASS - PR #4783 note basename appears backticked
 SUMMARY: PASS - verification block names expected TOTAL line
 SUMMARY: PASS - claim block flattened still carries Phi(c)=c*S_sum
 RESULT: PASS - all exact symbolic and note-discipline gates passed
-TOTAL: PASS=97 FAIL=0
+TOTAL: PASS=100 FAIL=0
 
 ----- stderr -----
 

@@ -1,0 +1,122 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_pointer_labeled_refinement_finer_record_clock_2026_07_02.py
+runner_sha256: 2512e281a8f392b5eeda360f3164d9b3b33b1a08eafad04168753554ed81f512
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 7.38
+status: ok
+----- stdout -----
+[PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] exists: docs/RECORD_PRESERVATION_CONSERVES_THE_WITHIN_SECTOR_MEASURE_BOUNDED_THEOREM_NOTE_2026-06-15.md
+[PASS] exists: docs/KOIDE_PHASE_DELTA_IS_ALSO_AN_ADMISSION_CLEAN_MODULUS_HAS_ONLY_DEGENERATE_STATIONARY_POINTS_NARROW_NO_GO_NOTE_2026-06-04.md
+[PASS] exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+[PASS] exists: docs/ACPHILAMBDA_POINTER_LABELED_REFINEMENT_FINER_RECORD_CLOCK_2026-07-02.md
+[PASS] exists: scripts/acphilambda_pointer_labeled_refinement_finer_record_clock_2026_07_02.py
+[PASS] Brannen pins: circulant form and couplings
+[PASS] record-preservation pins: dephasing and finer record
+[PASS] record-preservation pin: supplied sector dial
+[PASS] Koide modulus pin: degenerate stationary candidates
+[PASS] omega character basis is unitary
+[PASS] C chi_0 eigenrelation
+[PASS] H chi_0 eigenrelation
+[PASS] S chi_0 pointer eigenvalue
+[PASS] C chi_1 eigenrelation
+[PASS] H chi_1 eigenrelation
+[PASS] S chi_1 pointer eigenvalue
+[PASS] C chi_2 eigenrelation
+[PASS] H chi_2 eigenrelation
+[PASS] S chi_2 pointer eigenvalue
+[PASS] convention: singlet is chi_0
+[PASS] convention: ordered doublet d1=chi_2, d2=chi_1
+[PASS] W6-A singlet identity
+[PASS] W6-A doublet sum identity
+[PASS] W6-A sign-free splitting identity
+[PASS] wrong coefficient rejector: sqrt(2) impostor fails
+[PASS] injectivity pair has equal bare cos(3 delta)
+[PASS] injectivity pair is ordered inside [0, pi]
+[PASS] labeled cos delta data distinguish the pair
+[PASS] labeled |sin delta| data distinguish the pair
+[PASS] bare multiset discriminator is strict
+[PASS] finer character projector P_0 commutes with H
+[PASS] finer character projector P_1 commutes with H
+[PASS] finer character projector P_2 commutes with H
+[PASS] discriminator: site-basis projector is demolition-generic
+[PASS] D_chi trace preserving
+[PASS] D_chi idempotent
+[PASS] D_chi after D_S equals D_chi
+[PASS] D_S after D_chi equals D_chi
+[PASS] D_chi erases character off-diagonal 01
+[PASS] D_chi erases character off-diagonal 02
+[PASS] D_chi erases character off-diagonal 10
+[PASS] D_chi erases character off-diagonal 12
+[PASS] D_chi erases character off-diagonal 20
+[PASS] D_chi erases character off-diagonal 21
+[PASS] D_chi preserves character occupancy 0
+[PASS] D_chi preserves character occupancy 1
+[PASS] D_chi preserves character occupancy 2
+[PASS] partial-erasure rejector: chi_1-chi_2 entry is identically zero
+[PASS] partial-erasure rejector: chi_2-chi_1 entry is identically zero
+[PASS] U is built by exact spectral decomposition
+[PASS] doublet coherence ratio is exp(i(lambda_d2-lambda_d1))
+[PASS] per-step phase rate is 2 sqrt(3) rho_b sin(delta)
+[PASS] registrable magnitude square is 12 rho_b^2 sin^2(delta)
+[PASS] zero-clock at delta=0
+[PASS] zero-clock at delta=pi
+[PASS] cos(3 delta)=+1 at delta=0
+[PASS] cos(3 delta)=-1 at delta=pi
+[PASS] clock runs at delta=2/9 by exact positivity
+[PASS] dimensionless rate removes the |b| unit
+[PASS] dimensionless rate at 2/9 is well-defined and nonzero
+[PASS] PR #4783 rescale obstruction persists on the clock normalization
+[PASS] singlet-doublet rate to d1 is 2 sqrt(3) rho sin(delta + pi/3)
+[PASS] singlet-doublet rate to d2 is 2 sqrt(3) rho sin(pi/3 - delta)
+[PASS] note contains required phrase: the pointer-labeled registrable content is
+[PASS] note contains required phrase: the within-doublet phase advances by exact
+[PASS] note contains required phrase: the K-real locus is exactly the zero-clock
+[PASS] note contains required phrase: not a terminal no-go
+[PASS] note contains N1 gate header
+[PASS] note contains N2 gate header
+[PASS] note contains N3 gate header
+[PASS] note contains N4 gate header
+[PASS] note contains N5 gate header
+[PASS] note contains N6 gate header
+[PASS] note contains N7 gate header
+[PASS] note contains N8 gate header
+[PASS] forbidden phrase absent: only route
+[PASS] forbidden phrase absent: last route
+[PASS] forbidden phrase absent: exhausted
+[PASS] forbidden phrase absent: closes the route
+[PASS] forbidden phrase absent: PDG
+[PASS] forbidden phrase absent: new wall
+[PASS] forbidden phrase absent: r=1/2 is forced
+[PASS] forbidden phrase absent: occurrence probability
+[PASS] W_ labels are whitelisted -- W_cycle_holonomy_value, W_defect_identity_unit, W_defect_readout_selection
+[PASS] markdown dependency links are exactly the three retained origins
+[PASS] primary runner is markdown-linked
+[PASS] in-flight name appears as backticked context: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_R
+[PASS] in-flight name is not a link target: ACPHILAMBDA_DEFECT_IDENTITY_UNIT_R
+[PASS] in-flight name appears as backticked context: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLO
+[PASS] in-flight name is not a link target: ACPHILAMBDA_REGISTRABLE_CYCLE_HOLO
+[PASS] in-flight name appears as backticked context: ACPHILAMBDA_REAL_HOLONOMY_LOCUS_ID
+[PASS] in-flight name is not a link target: ACPHILAMBDA_REAL_HOLONOMY_LOCUS_ID
+[PASS] in-flight name appears as backticked context: ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_F
+[PASS] in-flight name is not a link target: ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_F
+[PASS] in-flight name appears as backticked context: ACPHILAMBDA_FLUXED_RING_SPECTRAL_F
+[PASS] in-flight name is not a link target: ACPHILAMBDA_FLUXED_RING_SPECTRAL_F
+[PASS] status-authority standard present
+[PASS] no retained audit-grade tokens
+[PASS] standard non-retirement text present
+[PASS] runner command names this script
+[PASS] verification section has measured total
+[PASS] source-instruction phrase absent: Acceptance contract
+[PASS] source-instruction phrase absent: PRESERVE VERBATIM
+[PASS] source-instruction phrase absent: MUST BE ABSENT
+[PASS] source-instruction phrase absent: Files to produce
+[PASS] source-instruction phrase absent: ANTI-FABRICATION
+[PASS] source-instruction phrase absent: derived and verified by the reviewer
+[PASS] source-instruction phrase absent: execute it exactly
+[PASS] source-instruction phrase absent: Spec CLOCK
+TOTAL: PASS=110 FAIL=0
+
+----- stderr -----
+

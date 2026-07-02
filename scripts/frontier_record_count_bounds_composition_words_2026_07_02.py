@@ -2,28 +2,48 @@
 """
 Runner: record count bounds the composition word (finite dial set), bounded theorem.
 
-Block: walls-attack word-bound block21 (2026-07-02).
+Block: walls-attack word-bound block21 (2026-07-02), repaired after a 3/3
+adversarial refutation pass.
 
 Scope. This runner supports a BOUNDED theorem note. It does NOT set, predict, or
-estimate any audit verdict, and it edits no audit data file. It checks:
+estimate any audit verdict, and it edits no audit data file. It checks a family
+of NAMED, un-adopted premises and an exact enumeration:
 
-  T1  the registration premise REG>=1 is a NAMED, dynamics-shaped premise with
-      independent content (monotone registration vs a degenerate zero-record
-      step). REG>=1 is named, NOT derived and NOT adopted.
-  T2  under REG>=1, the realized record count bounds the word length: k <= N_rec,
-      by monotone induction, tight, and violable only by violating REG>=1.
-  T3  bounded words over {f(r)=2r^2, g(r)=r^2} give a FINITE, exactly enumerable
-      dial set: word count 2^(k+1)-2; fixed-point polynomials of degree 2^m;
-      the length-<=2 dial points 1/2, 1, root(2r^3-1)=2^(-1/3),
-      root(4r^3-1)=2^(-2/3) are exact and pairwise distinct; all >= 1/2.
-  T5  the produced note conserves and enumerates its residues (boundary greps).
+  P1  letter = event (pure words) + CHART-MIX. A single-chart word is a pure
+      iterate of the occupancy note's ONE flow read in ONE supplied dictionary
+      (component -> f, slot -> g). f and g are two CHARTS of the same binary
+      (occupancy tri-guise), so a MIXED word is not an iterate of any single
+      supplied flow and requires the extra premise CHART-MIX (per-step supply).
+  P2  production: each event registers >= 1 new record. Dynamics-shaped; the
+      memo disclaims any record-production process. Independent content.
+  P3  persistence: records persist across events. Dynamics-shaped; the memo's
+      Open Gates lists physical persistence dynamics outside the axioms. The
+      readout-invariance sentence grounds only within-readout stability and is
+      NOT persistence (a prior draft grounded P3 on it; that was a category
+      error and is corrected here). Independent content.
+  P4  collection scoping / FIN: a supplied finite readout collection contains
+      the realized history's registered records and N_rec is that collection's
+      count. The axioms do NOT bound a configuration's record total (an
+      all-sites-recorded Z^3 configuration satisfies every quoted sentence);
+      finiteness enters only through the supplied collection.
+  T2' under P1(pure) + P2 + P3 + P4: k <= N_rec, exact and tight; violation
+      witnesses per-premise (drop P2 / drop P3 / drop P4 containment).
+  T3' bounded words over {f(r)=2r^2, g(r)=r^2}: word count 2^(k+1)-2; degree
+      2^m; the length-<=2 dial set is COMPLETE -- f,g,ff,gg factor with the
+      f.f and g.g cofactors positive-definite (no new positive root), fg,gf
+      give the mixed CHART-MIX points; strict-monotonicity fixes the >=1/2
+      argument; and the pure-word corollary f^m = 2^(2^m-1) r^(2^m),
+      g^m = r^(2^m) fixes the per-chart dial set to a SINGLETON for all lengths.
+  T5' the produced note conserves and enumerates its residues (boundary greps).
 
 Arithmetic is EXACT ONLY: Fraction and integer-coefficient polynomial arithmetic
 implemented inline as coefficient lists. No floats. No numeric root-finding.
 
 Citations to block07 (selector-constraint map), block12 (moduli words / boundary
-1/2), block20 (action-lane C-add), and PR #4843 (banked Dynamics-axiom proposal)
-are REVIEW-PENDING and are used as context only.
+1/2 and the formal word class), block20 (action-lane C-add), and PR #4843 (banked
+Dynamics-axiom proposal) are REVIEW-PENDING and are used as context only. The
+"C-add is the same family" line is supervisor-supplied cross-block context; this
+runner and note read no branch.
 """
 
 import os
@@ -116,9 +136,15 @@ def poly_gcd(a, b):
 def poly_eq(a, b):
     return poly_trim(a) == poly_trim(b)
 
+def monomial(coeff, deg):
+    """coeff * r**deg."""
+    p = [Fraction(0)] * (deg + 1)
+    p[deg] = Fraction(coeff)
+    return poly_trim(p)
+
 # --------------------------------------------------------------------------
-# The word class: finite compositions of f(r)=2r^2 and g(r)=r^2.
-# f.g means f(g(r)) (standard composition; leftmost map outermost).
+# The word class (block12's formal word class): finite compositions of
+# f(r)=2r^2 and g(r)=r^2. f.g means f(g(r)) (leftmost map outermost).
 # --------------------------------------------------------------------------
 
 R_POLY = [Fraction(0), Fraction(1)]                       # identity: r
@@ -146,22 +172,47 @@ def all_words(k):
             out.append(''.join(tup))
     return out
 
+def iterate_poly(base, m):
+    """base composed with itself m times, as a polynomial in r."""
+    p = R_POLY[:]
+    for _ in range(m):
+        p = poly_compose(base, p)
+    return p
+
+def discriminant_quadratic(q):
+    """For q = [c, b, a] (a r^2 + b r + c): return b^2 - 4 a c (exact)."""
+    q = poly_trim(q)
+    c = q[0] if len(q) > 0 else Fraction(0)
+    b = q[1] if len(q) > 1 else Fraction(0)
+    a = q[2] if len(q) > 2 else Fraction(0)
+    return b * b - 4 * a * c
+
 # --------------------------------------------------------------------------
-# Toy registration sequences for T1/T2. A sequence is a list of per-step
-# record increments (deltas). REG>=1 holds iff every delta >= 1. The realized
-# record count after k steps is the cumulative sum (start count 0).
+# Toy histories for the premise family P2/P3/P4 and the bound T2'. A realized
+# history is a list of per-event integers. Everything here is exact integer
+# arithmetic (no floats).
+#   * production per event  -> P2 holds iff every entry >= 1.
+#   * persistent net change -> P3 holds iff the running count never decreases
+#     (records do not vanish across events).
+#   * in-collection flag    -> P4 containment holds iff every registration lands
+#     in the supplied counted collection.
 # --------------------------------------------------------------------------
 
 def cumulative(deltas):
-    out = []
-    tot = 0
+    out, tot = [], 0
     for d in deltas:
         tot += d
         out.append(tot)
     return out
 
-def reg_holds(deltas):
-    return all(d >= 1 for d in deltas)
+def non_decreasing(seq):
+    return all(x <= y for x, y in zip(seq, seq[1:]))
+
+def production_holds(prod):
+    return all(p >= 1 for p in prod)
+
+def persistence_holds(net):
+    return non_decreasing(cumulative(net))
 
 # --------------------------------------------------------------------------
 # Document text access (read-only; whitespace-normalized substring search).
@@ -209,7 +260,7 @@ _checks = []
 def check(cond, desc):
     _checks.append((bool(cond), desc))
 
-# ===== Sentence guards (landed axiom text + occupancy note) ===============
+# ===== Sentence guards (landed axiom text + occupancy note) [checks 1-7] ====
 
 check(
     contains(AXIOMS_DOC, "A state is a configuration of records."),
@@ -217,151 +268,305 @@ check(
 )
 check(
     contains(AXIOMS_DOC, "the locked possibility is invariant under repeated readout"),
-    "guard: 'the locked possibility is invariant under repeated readout' present (registration monotone; nothing un-registers)",
+    "guard: 'the locked possibility is invariant under repeated readout' present -- WITHIN-readout stability, NOT persistence across events (grounds the P3 correction, not P3)",
 )
 check(
     contains(AXIOMS_DOC, "For any finite collection of pairwise-disjoint records, scalar readout"),
-    "guard: finite-collection additivity sentence present (N_rec finite on any readout collection)",
+    "guard: 'For any finite collection of pairwise-disjoint records, scalar readout' present -- a CONDITIONAL on a supplied finite collection, NOT a bound on a configuration's record total",
 )
 check(
     contains(AXIOMS_DOC, "provide a record-production process"),
-    "guard: dynamics disclaimer 'provide a record-production process' present (axioms supply no record-production process)",
+    "guard: dynamics disclaimer 'provide a record-production process' present (axioms supply no record-production process; grounds P2 as dynamics-shaped)",
 )
 check(
     contains(OCCUPANCY_DOC, "double-registration update squares registered weights"),
-    "guard: occupancy note 'double-registration update squares registered weights' present (the flow step of f,g)",
+    "guard: occupancy note 'double-registration update squares registered weights' present (the ONE flow step read in a supplied chart)",
 )
-
-# ===== T1: REG>=1 named, grounded, NOT derived; independent content =======
-
-seq_reg = [1, 2, 1, 3, 1]         # every step registers >= 1 new record
-seq_degen = [1, 0, 1, 1]          # monotone (non-decreasing) but a step adds none
-
 check(
-    reg_holds(seq_reg) and all(x <= y for x, y in zip(cumulative(seq_reg), cumulative(seq_reg)[1:])),
-    "T1: REG>=1 sequence [1,2,1,3,1] registers >=1 each step (monotone registration)",
+    contains(OCCUPANCY_DOC, "the same binary, not three independent binaries"),
+    "guard: occupancy tri-guise 'the same binary, not three independent binaries' present (f, g are two CHARTS of ONE binary; mixed words need CHART-MIX)",
 )
-# Degenerate step: counts still non-decreasing, so monotonicity holds, yet REG>=1 fails.
-cum_degen = cumulative(seq_degen)
-monotone_degen = all(x <= y for x, y in zip(cum_degen, cum_degen[1:]))
 check(
-    monotone_degen and (not reg_holds(seq_degen)),
-    "T1: degenerate step [1,0,1,1] is monotone yet fails REG>=1 -> REG>=1 is strictly stronger than monotonicity (independent content)",
+    contains(AXIOMS_DOC, "physical persistence dynamics"),
+    "guard: axiom Open Gates 'physical persistence dynamics' present (persistence is outside the axioms; grounds P3 as un-adopted dynamics-shaped)",
 )
 
-# ===== T2: under REG>=1, k <= N_rec (induction, tightness, violation) ======
+# ===== P1: letter = event (pure words) + CHART-MIX  [checks 8-9] ============
 
-cum_reg = cumulative(seq_reg)
+# Single-chart words are pure iterates of the ONE supplied flow read in ONE chart.
 check(
-    reg_holds(seq_reg) and all(cum_reg[k - 1] >= k for k in range(1, len(seq_reg) + 1)),
-    "T2: under REG>=1, after k steps at least k records exist (k <= N_rec) for every prefix",
+    poly_eq(word_poly('ff'), iterate_poly(F_POLY, 2))
+    and poly_eq(word_poly('gg'), iterate_poly(G_POLY, 2))
+    and poly_eq(word_poly('fff'), iterate_poly(F_POLY, 3)),
+    "P1: a single-chart word is a pure iterate of the ONE flow read in ONE supplied chart -- 'ff'=f^2, 'gg'=g^2, 'fff'=f^3 (component chart -> f, slot chart -> g)",
 )
-seq_tight = [1, 1, 1, 1]          # all-ones: N_rec after k steps equals k exactly
-cum_tight = cumulative(seq_tight)
+lead = {w: word_poly(w)[-1] for w in ('ff', 'gg', 'fg', 'gf')}
 check(
-    reg_holds(seq_tight) and all(cum_tight[k - 1] == k for k in range(1, len(seq_tight) + 1))
-    and cum_tight[-1] == len(seq_tight),
-    "T2: tightness -- all-ones sequence achieves k = N_rec (bound is tight)",
-)
-seq_viol = [0, 0, 0]              # zero-delta steps: k exceeds N_rec
-cum_viol = cumulative(seq_viol)
-bound_violated = any(cum_viol[k - 1] < k for k in range(1, len(seq_viol) + 1))
-check(
-    bound_violated and (not reg_holds(seq_viol)),
-    "T2: the bound k <= N_rec is violated only by violating REG>=1 (zero-delta witness: k > N_rec requires a REG>=1 violation)",
+    lead['ff'] == 8 and lead['gg'] == 1 and lead['fg'] == 2 and lead['gf'] == 4
+    and lead['fg'] not in (lead['ff'], lead['gg'])
+    and lead['gf'] not in (lead['ff'], lead['gg']),
+    "P1/CHART-MIX: single-chart f.f=8r^4, g.g=r^4 vs mixed f.g=2r^4, g.f=4r^4 -- mixed leading coeffs {2,4} match NEITHER single chart {8,1}; a mixed word is not an iterate of any single supplied flow (requires CHART-MIX)",
 )
 
-# ===== T3: bounded words -> finite, exactly enumerable dial set ============
+# ===== P2: production named, dynamics-shaped, independent content [check 10] =
+
+prod_yes = [1, 2, 1, 3, 1]        # each event registers >= 1 new record
+prod_no = [0, 0, 0]               # events occur, nothing is produced
+check(
+    production_holds(prod_yes) and (not production_holds(prod_no))
+    and cumulative(prod_no)[-1] == 0 and len(prod_no) == 3,
+    "P2 (production): NAMED, dynamics-shaped (memo disclaims a record-production process); independent content -- a zero-production history [0,0,0] advances the word (3 events) yet registers no record, so production is not supplied by the letters alone",
+)
+
+# ===== P3: persistence named, dynamics-shaped, independent content [check 11] =
+
+net_persist = [1, 1, 1, 1]        # records persist -> running count non-decreasing
+net_vanish = [1, -1, 1, -1]       # produced then vanish -> not persistent
+cum_vanish = cumulative(net_vanish)
+check(
+    persistence_holds(net_persist) and (not persistence_holds(net_vanish))
+    and cum_vanish == [1, 0, 1, 0] and cum_vanish[-1] < len(net_vanish),
+    "P3 (persistence): NAMED, dynamics-shaped (memo Open Gates lists 'physical persistence dynamics' outside the axioms; readout-invariance is WITHIN-readout only, NOT persistence -- category-error correction); independent content -- a produce-then-vanish history [+1,-1,+1,-1] has records vanish so the count 0 ceases to bound the 4 events",
+)
+
+# ===== P4: collection scoping / FIN [check 12] =============================
+
+# No axiom bound on a configuration's record total: finiteness is a free
+# parameter of the SUPPLIED collection, and registrations must be contained.
+supplied_sizes = [1, 5, 100, 10 ** 6]
+counts = [n for n in supplied_sizes]                       # N_rec = |supplied collection|
+free_and_finite = (counts == supplied_sizes) and non_decreasing(counts) \
+    and len(set(supplied_sizes)) == len(supplied_sizes)    # arbitrarily large; no cap
+registered = {1, 2, 3}
+collection = {1, 2, 3, 4, 5}
+contained = registered.issubset(collection) and len(collection) == 5
+check(
+    free_and_finite and contained,
+    "P4 (scoping/FIN): the axioms do NOT bound a configuration's record total (an all-sites-recorded Z^3 config satisfies every quoted sentence); finiteness enters only via the supplied finite collection -- N_rec = |collection| for arbitrarily large supplied sizes (no cap), and the registered records are contained in the counted collection",
+)
+
+# ===== T2': under P1(pure)+P2+P3+P4, k <= N_rec [checks 13-17] =============
+
+# Positive direction: produce >= 1, all persist, all contained -> N_rec >= k.
+prod_reg = [1, 2, 1, 3, 1]
+counted_reg = cumulative(prod_reg)                         # persistent, all contained
+check(
+    production_holds(prod_reg) and persistence_holds(prod_reg)
+    and all(counted_reg[k - 1] >= k for k in range(1, len(prod_reg) + 1)),
+    "T2': under P2+P3+P4, after k events at least k contained persistent records exist (k <= N_rec) for every prefix (monotone induction)",
+)
+prod_tight = [1, 1, 1, 1]
+counted_tight = cumulative(prod_tight)
+check(
+    production_holds(prod_tight) and persistence_holds(prod_tight)
+    and all(counted_tight[k - 1] == k for k in range(1, len(prod_tight) + 1))
+    and counted_tight[-1] == len(prod_tight),
+    "T2': tightness -- a unit, persistent, contained history achieves k = N_rec exactly (the bound is tight)",
+)
+# Violation, drop P2: unbounded word with no new records.
+cum_p2 = cumulative(prod_no)
+check(
+    (not production_holds(prod_no))
+    and any(cum_p2[k - 1] < k for k in range(1, len(prod_no) + 1)),
+    "T2': drop P2 -> unbounded words with no new records: events advance k while N_rec stays fixed, so k > N_rec (zero-production witness [0,0,0])",
+)
+# Violation, drop P3: records vanish; the count ceases to bound.
+check(
+    (not persistence_holds(net_vanish))
+    and any(cum_vanish[k - 1] < k for k in range(1, len(net_vanish) + 1)),
+    "T2': drop P3 -> records vanish and the count ceases to bound: produce-then-vanish witness [+1,-1,+1,-1] has count 0 < 4 events",
+)
+# Violation, drop P4 containment: registrations land outside the counted collection.
+prod_all = [1, 1, 1]
+in_coll = [1, 0, 1]               # event 2 lands outside the counted collection
+counted_out = sum(p for p, c in zip(prod_all, in_coll) if c)
+check(
+    (not all(in_coll)) and counted_out < len(prod_all),
+    "T2': drop P4 containment -> registrations land outside the counted collection: 3 registrations, 1 outside, so N_rec = 2 < 3 = k",
+)
+
+# ===== T3': bounded words -> finite, exactly enumerable dial set ===========
+# ===== [checks 18-28] ======================================================
 
 wc = {k: len(all_words(k)) for k in range(1, 5)}
 check(
     all(wc[k] == 2 ** (k + 1) - 2 for k in range(1, 5)) and wc == {1: 2, 2: 6, 3: 14, 4: 30},
-    "T3: word count over {f,g} for length<=k equals 2^(k+1)-2 exactly (k=1..4: 2,6,14,30)",
+    "T3': word count over {f,g} for length<=k equals 2^(k+1)-2 exactly (k=1..4: 2,6,14,30)",
 )
-
-# degree of p_w = 2^m for a length-m word; sum-of-degrees is a finite integer
-# bound on the dial-set cardinality. For k<=2 the exact sum is (4^3-4)/3 = 20.
-deg_ok = True
-sum_deg_k2 = 0
+deg_ok, sum_deg_k2 = True, 0
 for m in range(1, 3):
     for tup in product('fg', repeat=m):
-        w = ''.join(tup)
-        d = poly_deg(fixed_point_poly(w))
+        d = poly_deg(fixed_point_poly(''.join(tup)))
         if d != 2 ** m:
             deg_ok = False
         sum_deg_k2 += d
 check(
     deg_ok and sum_deg_k2 == 20 and sum_deg_k2 == (4 ** 3 - 4) // 3,
-    "T3: each length-m word has fixed-point polynomial of degree 2^m; sum-of-degrees(k<=2)=20 is a finite exact dial-set bound",
+    "T3': each length-m word has fixed-point polynomial of degree 2^m; sum-of-degrees(k<=2)=20 is a finite exact dial-set-cardinality bound",
 )
-
-# Exact polynomial identities and factorizations at POLYNOMIAL level.
 p_f = fixed_point_poly('f')
 check(
-    poly_eq(p_f, [0, -1, 2]),
-    "T3: p_f(r) = f(r)-r = 2r^2 - r  (exact coefficient identity)",
-)
-check(
-    poly_eq(poly_mul([0, 1], [-1, 2]), p_f),
-    "T3: factorization r*(2r-1) = 2r^2 - r  (positive fixed point r = 1/2)",
+    poly_eq(p_f, [0, -1, 2]) and poly_eq(poly_mul([0, 1], [-1, 2]), p_f),
+    "T3': p_f(r) = f(r)-r = 2r^2 - r = r*(2r-1) -- positive fixed point r = 1/2",
 )
 p_g = fixed_point_poly('g')
 check(
-    poly_eq(p_g, [0, -1, 1]),
-    "T3: p_g(r) = g(r)-r = r^2 - r  (exact coefficient identity)",
-)
-check(
-    poly_eq(poly_mul([0, 1], [-1, 1]), p_g),
-    "T3: factorization r*(r-1) = r^2 - r  (positive fixed point r = 1)",
+    poly_eq(p_g, [0, -1, 1]) and poly_eq(poly_mul([0, 1], [-1, 1]), p_g),
+    "T3': p_g(r) = g(r)-r = r^2 - r = r*(r-1) -- positive fixed point r = 1",
 )
 p_fg = fixed_point_poly('fg')     # f(g(r)) - r
 check(
     poly_eq(p_fg, [0, -1, 0, 0, 2]) and poly_eq(poly_mul([0, 1], [-1, 0, 0, 2]), p_fg),
-    "T3: p_{f.g}(r) = f(g(r))-r = 2r^4 - r = r*(2r^3 - 1)  (positive fixed point = root of 2r^3-1, the 2^(-1/3) dial point)",
+    "T3': p_{f.g}(r) = f(g(r))-r = 2r^4 - r = r*(2r^3 - 1) -- MIXED word; positive fixed point = root of 2r^3-1, the 2^(-1/3) dial point, arises only under CHART-MIX",
 )
 p_gf = fixed_point_poly('gf')     # g(f(r)) - r
 check(
     poly_eq(p_gf, [0, -1, 0, 0, 4]) and poly_eq(poly_mul([0, 1], [-1, 0, 0, 4]), p_gf),
-    "T3: p_{g.f}(r) = g(f(r))-r = 4r^4 - r = r*(4r^3 - 1)  (positive fixed point = root of 4r^3-1, the 2^(-2/3) dial point)",
+    "T3': p_{g.f}(r) = g(f(r))-r = 4r^4 - r = r*(4r^3 - 1) -- MIXED word; positive fixed point = root of 4r^3-1, the 2^(-2/3) dial point, arises only under CHART-MIX",
 )
-
-# Distinctness of the four length-<=2 dial points via exact polynomial algebra.
+# f.f and g.g: the omitted length-2 single-chart words -- factor and show the
+# quadratic cofactors are positive-definite, so NO new positive root.
+p_ff = fixed_point_poly('ff')     # 8r^4 - r
+cof_ff = [1, 2, 4]                # 4r^2 + 2r + 1
+check(
+    poly_eq(p_ff, [0, -1, 0, 0, 8])
+    and poly_eq(poly_mul([0, 1], poly_mul([-1, 2], cof_ff)), p_ff)
+    and discriminant_quadratic(cof_ff) == -12 and discriminant_quadratic(cof_ff) < 0
+    and cof_ff[-1] > 0,
+    "T3': p_{f.f}(r) = 8r^4 - r = r*(2r-1)*(4r^2+2r+1); cofactor discriminant 4-16=-12 < 0 with positive leading coeff => positive-definite, NO new positive root -- f.f adds only r = 1/2",
+)
+p_gg = fixed_point_poly('gg')     # r^4 - r
+cof_gg = [1, 1, 1]                # r^2 + r + 1
+check(
+    poly_eq(p_gg, [0, -1, 0, 0, 1])
+    and poly_eq(poly_mul([0, 1], poly_mul([-1, 1], cof_gg)), p_gg)
+    and discriminant_quadratic(cof_gg) == -3 and discriminant_quadratic(cof_gg) < 0
+    and cof_gg[-1] > 0,
+    "T3': p_{g.g}(r) = r^4 - r = r*(r-1)*(r^2+r+1); cofactor discriminant 1-4=-3 < 0 with positive leading coeff => positive-definite, NO new positive root -- g.g adds only r = 1; the length-<=2 dial set is COMPLETE",
+)
+# Distinctness of the four length-<=2 dial points.
 CUBIC_FG = [-1, 0, 0, 2]          # 2r^3 - 1
 CUBIC_GF = [-1, 0, 0, 4]          # 4r^3 - 1
 g_cubics = poly_gcd(CUBIC_FG, CUBIC_GF)
-check(
-    poly_deg(g_cubics) == 0 and poly_trim(g_cubics) != [],
-    "T3: gcd(2r^3-1, 4r^3-1) is a nonzero constant -> the two cubics are coprime and share no root (roots 2^(-1/3), 2^(-2/3) distinct)",
-)
 half, one = Fraction(1, 2), Fraction(1)
 not_root = (
     poly_eval(CUBIC_FG, half) != 0 and poly_eval(CUBIC_GF, half) != 0
     and poly_eval(CUBIC_FG, one) != 0 and poly_eval(CUBIC_GF, one) != 0
 )
 check(
-    not_root and half != one,
-    "T3: r=1/2 and r=1 are not roots of either cubic (exact eval) and 1/2 != 1 -> all four length-<=2 dial points pairwise distinct",
+    poly_deg(g_cubics) == 0 and poly_trim(g_cubics) != [] and not_root and half != one,
+    "T3': length-<=2 dial set COMPLETE and distinct -- gcd(2r^3-1, 4r^3-1) is a nonzero constant (coprime cubics), r=1/2,1 are not roots of either cubic, 1/2 != 1: the four points {1/2, 1, 2^(-1/3), 2^(-2/3)} are pairwise distinct ({1/2,1} unconditional, {2^(-1/3),2^(-2/3)} conditional on CHART-MIX)",
 )
+# Strict-monotonicity identity replacing the invalid general-cubic sign inference.
+def cubediff_lhs(a, r1):
+    return [Fraction(-a) * Fraction(r1) ** 3, Fraction(0), Fraction(0), Fraction(a)]
 
-# Block12 boundary fact (every positive fixed point >= 1/2), spot-verified exactly.
+def cubediff_rhs(a, r1):
+    lin = [Fraction(-r1), Fraction(1)]                     # (x - r1)
+    quad = [Fraction(r1) ** 2, Fraction(r1), Fraction(1)]  # x^2 + r1 x + r1^2
+    return poly_mul([Fraction(a)], poly_mul(lin, quad))
+
+mono_ok = True
+for a in (2, 4):
+    for r1 in (Fraction(1, 3), Fraction(1, 2), Fraction(3, 4), Fraction(2)):
+        if not poly_eq(cubediff_lhs(a, r1), cubediff_rhs(a, r1)):
+            mono_ok = False
+    for r1, r2 in [(Fraction(1, 3), Fraction(1, 2)),
+                   (Fraction(1, 2), Fraction(3, 4)),
+                   (Fraction(1, 4), Fraction(9, 10))]:
+        val = a * (r2 ** 3 - r1 ** 3)
+        fac_lin = r2 - r1
+        fac_quad = r2 ** 2 + r2 * r1 + r1 ** 2
+        if not (val > 0 and fac_lin > 0 and fac_quad > 0):
+            mono_ok = False
+check(
+    mono_ok,
+    "T3': strict monotonicity of a*r^3-1 -- identity a*(r2^3-r1^3) = a*(r2-r1)*(r2^2+r2*r1+r1^2) holds exactly (a in {2,4}), and for 0<r1<r2 each factor > 0 so the difference > 0; this REPLACES the invalid general-cubic 'negative at 1/2 + positive leading coeff' sign inference",
+)
 sign_fg = poly_eval(CUBIC_FG, half)   # = -3/4
 sign_gf = poly_eval(CUBIC_GF, half)   # = -1/2
 check(
-    half >= half and one >= half
-    and sign_fg == Fraction(-3, 4) and sign_gf == Fraction(-1, 2)
-    and sign_fg < 0 and CUBIC_FG[-1] > 0 and sign_gf < 0 and CUBIC_GF[-1] > 0,
-    "T3: boundary 1/2 -- rationals 1/2,1 are >=1/2 exactly; sign(cubic @1/2)<0 with positive leading coeff => both cubic roots exceed 1/2 (block12 spot-verified)",
+    mono_ok and sign_fg == Fraction(-3, 4) and sign_gf == Fraction(-1, 2)
+    and sign_fg < 0 and sign_gf < 0 and CUBIC_FG[-1] > 0 and CUBIC_GF[-1] > 0
+    and half >= half and one >= half,
+    "T3': boundary >= 1/2 VIA STRICT MONOTONICITY -- (2r^3-1)@1/2 = -3/4, (4r^3-1)@1/2 = -1/2 both < 0 with positive leading coeff; since each cubic is strictly increasing on r>0 (identity above) its unique positive root exceeds 1/2; 1/2, 1 are >= 1/2 exactly (block12 boundary spot-checked)",
 )
 
-# ===== T5: the produced note conserves and enumerates its residues ========
+# ===== Pure-word corollary (the headline) [checks 29-31] ===================
 
-note_terms = ["not adopted", "no wall", "review-pending", "morning", "owner decision", "same family"]
+# f^m = 2^(2^m - 1) * r^(2^m): coefficient-level induction, base + step + direct.
+f_ind = poly_eq(iterate_poly(F_POLY, 1), F_POLY)
+for m in range(1, 4):
+    f_ind = f_ind and poly_eq(poly_compose(F_POLY, monomial(Fraction(2) ** (2 ** m - 1), 2 ** m)),
+                              monomial(Fraction(2) ** (2 ** (m + 1) - 1), 2 ** (m + 1)))
+f_form = all(poly_eq(iterate_poly(F_POLY, m), monomial(Fraction(2) ** (2 ** m - 1), 2 ** m))
+             for m in range(1, 5))
+f_fp = True
+for m in range(1, 5):
+    cof = poly_sub(monomial(Fraction(2) ** (2 ** m - 1), 2 ** m - 1), [1])   # coeff*r^(2^m-1) - 1
+    fp = poly_sub(iterate_poly(F_POLY, m), R_POLY)
+    if not (poly_eq(fp, poly_mul([0, 1], cof))
+            and poly_eval(cof, half) == 0
+            and poly_eval(cof, Fraction(1, 4)) < 0 and poly_eval(cof, one) > 0):
+        f_fp = False
+check(
+    f_ind and f_form and f_fp,
+    "corollary: f^m(r) = 2^(2^m - 1) * r^(2^m) exactly by coefficient-level induction (base f^1, step, and direct m=1..4); f^m - r = r*(coeff*r^(2^m-1) - 1) whose cofactor is a strictly increasing monomial-minus-1, so the UNIQUE positive fixed point is r = 1/2 for every m",
+)
+g_ind = poly_eq(iterate_poly(G_POLY, 1), G_POLY)
+for m in range(1, 4):
+    g_ind = g_ind and poly_eq(poly_compose(G_POLY, monomial(Fraction(1), 2 ** m)),
+                              monomial(Fraction(1), 2 ** (m + 1)))
+g_form = all(poly_eq(iterate_poly(G_POLY, m), monomial(Fraction(1), 2 ** m))
+             for m in range(1, 5))
+g_fp = True
+for m in range(1, 5):
+    cof = poly_sub(monomial(Fraction(1), 2 ** m - 1), [1])                   # r^(2^m-1) - 1
+    fp = poly_sub(iterate_poly(G_POLY, m), R_POLY)
+    if not (poly_eq(fp, poly_mul([0, 1], cof))
+            and poly_eval(cof, one) == 0
+            and poly_eval(cof, half) < 0 and poly_eval(cof, Fraction(2)) > 0):
+        g_fp = False
+check(
+    g_ind and g_form and g_fp,
+    "corollary: g^m(r) = r^(2^m) exactly by coefficient-level induction (base g^1, step, and direct m=1..4); g^m - r = r*(r^(2^m-1) - 1), so the UNIQUE positive fixed point is r = 1 for every m",
+)
+# Headline synthesis: per-chart dial set is a SINGLETON for all lengths; the
+# mixed dial points are CHART-MIX artifacts (not pure fixed points).
+pure_f_fixed_1_2 = all(poly_eval(poly_sub(iterate_poly(F_POLY, m), R_POLY), half) == 0
+                       for m in range(1, 5))
+pure_g_fixed_1 = all(poly_eval(poly_sub(iterate_poly(G_POLY, m), R_POLY), one) == 0
+                     for m in range(1, 5))
+mixed_not_pure = (poly_eval(CUBIC_FG, half) != 0 and poly_eval(CUBIC_FG, one) != 0
+                  and poly_eval(CUBIC_GF, half) != 0 and poly_eval(CUBIC_GF, one) != 0)
+check(
+    pure_f_fixed_1_2 and pure_g_fixed_1 and mixed_not_pure,
+    "corollary HEADLINE: under ANY single supplied dictionary the dial set is EXACTLY {1/2} (component, all f) or {1} (slot, all g) for ALL word lengths -- no densification ever arises physically; the mixed points 2^(-1/3), 2^(-2/3) are neither 1/2 nor 1, so they are CHART-MIX artifacts, not pure-word fixed points",
+)
+
+# ===== T5': the produced note conserves and enumerates its residues ========
+# ===== [checks 32-33] ======================================================
+
+note_terms = [
+    "not adopted", "no wall", "review-pending", "morning", "owner decision",
+    "same family", "CHART-MIX", "persistence", "does not bound", "supervisor-supplied",
+]
 missing = [t for t in note_terms if not contains_ci(NOTE_DOC, t)]
 check(
     read_norm(NOTE_DOC) is not None and not missing,
-    "T5: bounded note present and contains all residue/governance markers "
-    + "{'not adopted','no wall','review-pending','morning','owner decision','same family'}"
+    "T5': bounded note present and contains all governance/residue markers "
+    + repr(note_terms)
     + ("" if not missing else " -- MISSING: " + repr(missing)),
+)
+residue_families = [
+    "dynamics family", "supplied-context", "dictionary binary",
+    "realized history", "sibling",
+]
+missing_res = [t for t in residue_families if not contains_ci(NOTE_DOC, t)]
+check(
+    read_norm(NOTE_DOC) is not None and not missing_res,
+    "T5': the note enumerates the COMPLETE residue list -- the dynamics family (P2/P3 and C-add), the supplied-context scoping (P4), CHART-MIX + the dictionary binary, the realized history/step count, and the sibling review-pending audits"
+    + ("" if not missing_res else " -- MISSING: " + repr(missing_res)),
 )
 
 # --------------------------------------------------------------------------

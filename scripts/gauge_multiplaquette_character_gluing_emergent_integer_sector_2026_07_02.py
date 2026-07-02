@@ -32,11 +32,12 @@ Sections:
      beta = 6; Z-valued conjugation-odd functions on matched labels exist and
      are non-unique.
 
-Expected close: TOTAL: PASS=24 FAIL=0
+Expected close: TOTAL: PASS=30 FAIL=0
 """
 from __future__ import annotations
 
 import cmath
+from pathlib import Path
 import numpy as np
 from scipy.special import iv
 
@@ -429,5 +430,16 @@ ok = (Q1(0, 1) == -Q1(1, 0) and Q2(0, 1) == -Q2(1, 0)
       and coefs[(1, 0)] > 0 and (Q1(1, 0) % 2 == 1))
 check("F5 Z-valued conjugation-odd functions on the SU(3) matched labels"
       " exist with odd support and are NON-unique (p-q vs (p-q)^3)", ok)
+
+print("Section G: source-boundary guards")
+ROOT = Path(__file__).resolve().parents[1]
+NOTE = ROOT / "docs" / "GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md"
+note = NOTE.read_text(encoding="utf-8")
+check("G1 note declares canonical bounded_theorem claim type", "**Claim type:** bounded_theorem" in note)
+check("G2 note separates scope from claim type", "**Scope:** exact finite witness-surface constructions plus wall-sharpening" in note)
+check("G3 note does not use runner PASS as source status", "**Status:** PASS" not in note)
+check("G4 note does not expose effective_status metadata", "effective_status =" not in note and "effective_status:" not in note)
+check("G5 note does not lean on in-flight PR wording as authority", "in-flight" not in note)
+check("G6 witness-surface is explicitly not physical", "not the physical gauge" in note and "sector" in note)
 
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

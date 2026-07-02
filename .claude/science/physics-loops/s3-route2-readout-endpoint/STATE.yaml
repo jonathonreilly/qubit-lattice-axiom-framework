@@ -1,12 +1,12 @@
 loop_slug: s3-route2-readout-endpoint
-block: 38
+block: 39
 date: 2026-06-21
 mode: campaign
 target_status: best-honest-status
-branch: physics-loop/s3-route2-readout-endpoint-block38-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block39-20260621
 base: origin/main
-base_commit: 3cd8202ec2ab49b7c3579d03ffd18683a30fb250
-worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block38-20260621
+base_commit: be801075c1b2c145d83f68deb4c8404ef4a7c7b1
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block39-20260621
 user_constraints:
   - "Do not audit or apply verdicts."
   - "Make PRs for coherent science blocks; do not push to main."
@@ -16,35 +16,44 @@ repo_lock:
   mode: degraded_branch_local
   reason: "scripts/automation_lock.py status failed with Permission denied for /Users/jonreilly."
 active_route:
-  name: current_bank_single_adjoint_line_no_go
-  route_type: no-go/obstruction
-  hard_residual: "Can current SU(3)-equivariant source geometry type the single adjoint line needed by the block37 conditional primitive?"
+  name: color_ray_adjoint_line_selector_boundary
+  route_type: selector/chamber + conditional-support
+  hard_residual: "Can a non-invariant current source/support datum type the adjoint line needed for e_E=7/8 and rho_E=21/4?"
 current_result:
-  actual_current_surface_status: no-go
-  trace_class: negative_route_pruning
-  reachability_to_target: prunes
-  summary: "Exact SU(3) adjoint linear algebra gives no invariant line, scalar commutant, and only rank 0/8 invariant idempotent projectors; rank 1/7 selector requires a new non-invariant typed source datum."
+  actual_current_surface_status: conditional-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  summary: "A supplied physical color ray selects H_psi=|psi><psi|-I/3, one adjoint line, complement fraction 7/8, and hence q_E=15/8, rho_E=21/4, c_TE=-8/9 under granted T-side values. Current source surfaces do not supply the physical color ray; color orientation is gauge/predictively vacuous and Fierz/singlet/depolarization surfaces do not select a line."
 files_touched:
-  - docs/QUARK_ROUTE2_SINGLE_ADJOINT_LINE_CURRENT_BANK_NO_GO_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py
-  - outputs/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.txt
+  - docs/QUARK_ROUTE2_COLOR_RAY_ADJOINT_LINE_SELECTOR_BOUNDARY_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py
+  - outputs/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 commands_run:
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py -> PASS=20 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py > outputs/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.txt"
-  - "python3 -m py_compile scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py -> pass"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py -> PASS=15 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py > outputs/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.txt"
+  - "python3 -m py_compile scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py -> pass"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py -> PASS=103 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_rconn_kappa_ew_register_not_read.py -> PASS=20 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py -> PASS=62 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_matter_color_depolarization_adm2_necessary_2026_06_09.py -> PASS=18 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_color_orientation_predictive_equivalence_2026_06_09.py -> PASS=19 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/cl3_quark_antiquark_color_singlet_check.py -> PASS=7 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_ew_current_fierz_channel_decomposition.py -> PASS=31 FAIL=0"
-  - "branch-local positive-overclaim scan over 16 changed files -> 0 hits"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py -> PASS=11 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py -> PASS=8 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling_factor_rigidity.py -> PASS=64 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py -> PASS=13 FAIL=1 (pre-existing tiny t_balance tolerance drift; not modified)"
+  - "gh pr create -> https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4569"
+  - "gh pr view 4569 --json number,url,title,headRefName,baseRefName,state -> OPEN, identity-only verification"
 open_imports:
-  - "A non-invariant typed source line or approved readout-map primitive remains open."
-next_exact_action: "Commit, publish, and open the block38 PR."
+  - "Physical color ray / gauge-frame source-line primitive is not supplied on the current source surface."
+  - "Endpoint triple still lacks actual current-surface derivation."
+next_exact_action: "Continue campaign with the next target: derive/deny a physical color-ray source primitive or pivot to a stronger readout-map theorem."
 pr_status:
-  number: 4568
-  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4568"
-  title: "[physics-loop] s3-route2-readout-endpoint block38 no-go"
-  head: physics-loop/s3-route2-readout-endpoint-block38-20260621
+  number: 4569
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4569
+  title: "[physics-loop] s3-route2-readout-endpoint block39 conditional-support"
+  head: physics-loop/s3-route2-readout-endpoint-block39-20260621
   base: main
   state: OPEN
 stop_condition: "None; campaign remains active after PR handoff."

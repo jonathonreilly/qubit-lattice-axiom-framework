@@ -74,10 +74,10 @@ These axioms state only their named primitive content. Further physical
 structure requires derivation, bridge, explicit admission, or approved
 primitive registration before use as a premise.
 
-A rule offered as a law must be well-defined at every state admissible under
-Admissibility throughout its declared domain; the domain must be declared as
-registered structure, not by enumerating states, and a prescription defined
-only at particular states is pointwise content, not a law.
+A state is a configuration of records.
+
+A law privileges no states. Its domain is a supplied condition, and at every
+state where the condition holds it gives exactly one answer.
 
 ## Audit-Pipeline Treatment
 

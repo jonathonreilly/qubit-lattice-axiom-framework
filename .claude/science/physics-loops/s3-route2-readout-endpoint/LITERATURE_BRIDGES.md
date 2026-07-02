@@ -1,3 +1,4 @@
 # Literature Bridges
 
-No external literature was used in block07. The block consumes exact `O_h` projector algebra and current Route-2 endpoint notes only.
+No literature bridge is used in block08. The result is exact algebra over the
+existing Route-2 readout and time-coupling notes.

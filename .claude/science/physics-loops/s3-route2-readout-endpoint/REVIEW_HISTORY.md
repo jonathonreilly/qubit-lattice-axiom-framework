@@ -1,17 +1,17 @@
 # Review History
 
-## Block07 Local Review
+## Block08
 
-Disposition: pass.
+Focused local review disposition: pass.
 
 Checks run:
 
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.py` -> PASS=6 FAIL=0.
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py` -> PASS=7 FAIL=0.
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py` -> PASS=11 FAIL=0.
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py` -> PASS=11 FAIL=0.
-- `python3 -m py_compile scripts/frontier_quark_route2_double_local_projector_normalization_bridge_2026_06_21.py` -> pass.
-- `git diff --check` -> pass.
-- Branch-local wording firewall -> pass; the only conflict/mergeability hits are policy text saying not to check them.
+- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py`: `PASS=12 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py`: `PASS=12 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py`: `PASS=11 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py`: `PASS=8 FAIL=0`
+- `python3 -m py_compile scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py`: pass
+- `git diff --check`: pass
+- Hard wording scan: no banned retained/proposed-retained status phrasing; only intended "does not derive" scope statements matched the overclaim scan.
 
-No audit-loop command, audit verdict script, or repo-wide queue update is part of this review.
+No audit runner or audit verdict application was run.

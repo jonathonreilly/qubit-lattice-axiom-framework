@@ -1,19 +1,18 @@
 # Opportunity Queue
 
-1. **Derive the two reciprocal local-weight factors**
-   - Probability of retained-positive movement: medium-low.
-   - Missing imports: source normalization factor, readout normalization factor, or Schur-dual response law.
-   - Runner availability: block07 conditional bridge.
-   - Landability: high if it becomes exact support or a precise no-go.
+1. Derive or falsify a current-surface origin for double-local projector
+   normalization `q_X proportional to w_X^-2`.
+   - Status: highest positive-retention chance after block07.
+   - Risk: likely needs a new primitive, not just algebra on the existing
+     readout family.
 
-2. **Build a nonlinear tensor observable realizing `w_X^-2`**
-   - Probability of retained-positive movement: low-medium.
-   - Missing imports: new functional definition and compatibility with existing Route-2 readout maps.
-   - Runner availability: tensor helper stack plus projector classification.
-   - Landability: moderate if it includes falsifiers.
+2. Package the direct consumer ambiguity firewall for `s3_time_theta_to_slice_coupling_note`.
+   - Status: selected for block08.
+   - Expected output: exact support, not endpoint closure.
 
-3. **Direct `Theta_R -> Lambda_R` consumer ambiguity packet**
-   - Probability of retained-positive movement: medium for no-go/support.
-   - Missing imports: none beyond existing readout/time coupling notes.
-   - Runner availability: `frontier_s3_time_theta_to_slice_coupling.py`.
-   - Landability: high as a direct consumer narrowing packet.
+3. Search for an E/T nonseparable center-shell counterterm with independent
+   current-surface definition.
+   - Status: possible, but block06 rules out endpoint-blind separable forms.
+
+4. Pivot to another direct consumer after the firewall lands.
+   - Status: next campaign move if the endpoint primitive remains blocked.

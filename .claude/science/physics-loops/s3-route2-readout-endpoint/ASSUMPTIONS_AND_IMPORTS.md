@@ -1,20 +1,23 @@
 # Assumptions And Imports
 
-## Allowed Premises
+## Current-Surface Imports
 
-- Current Route-2 readout notes reduce the remaining E endpoint to `rho_E = 21/4`, equivalently `q_E = 15/8`.
-- Granted T-side values imply `q_T = 5/6` and target `lambda=q_E/q_T=9/4`.
-- The six-arm `O_h` projector weights are exact: `w_E=1/3`, `w_T1=1/2`.
+- `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`: restricted carrier
+  coordinates and the reduced one-parameter family after granting the T-side
+  entries.
+- `QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`: conditional family
+  `Xi_P(t ; c) = (P_R c) tensor V_R(t)` once an admissible readout map is
+  supplied.
+- `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`: downstream consumer whose unique
+  theorem remains blocked by the unresolved readout-map endpoint triple.
 
-## Forbidden Inputs
+## Forbidden Imports
 
-- No observed quark masses.
-- No fitted targets.
-- No PDG values.
-- No nearest-rational promotion from a measured finite-box value.
-- No audit verdict or retained-status update.
+- No observed masses, fitted targets, PDG values, or phenomenological selectors.
+- No audit verdict is applied or modified.
+- No branch claims endpoint closure or a unique exact `Theta_R -> Lambda_R`
+  theorem.
 
-## Open Imports Exposed
+## Remaining Open Import
 
-- The double reciprocal local projector-normalization primitive is not derived.
-- A positive proof must explain why two reciprocal local-weight factors are supplied by named source/tensor/readout structure.
+The exact primitive selecting `rho_E = beta_E / alpha_E = 21/4` remains open.

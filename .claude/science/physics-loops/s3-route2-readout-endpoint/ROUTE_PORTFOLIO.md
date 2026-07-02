@@ -1,17 +1,23 @@
 # Route Portfolio
 
-## Active Route: Double-Local Projector Normalization
+## Block08 Chosen Route
 
-Classify monomial local-weight laws `q_X proportional to w_X^p` and isolate the exact target exponent `p=-2`. Record that weaker one-factor/raw/quadratic laws miss, while the double reciprocal law conditionally closes the endpoint.
+Consumer ambiguity firewall for `Theta_R -> Lambda_R`.
 
-## Next Candidate: Derive the Two Reciprocal Factors
+Claim-state movement: exact support. It proves
 
-Try to derive one reciprocal factor from source normalization and a second from readout normalization or Schur response duality. This is the most direct positive route.
+```text
+(P(rho_b) - P(rho_a)) c = ((rho_b - rho_a) delta_E, 0)
+```
 
-## Next Candidate: Nonlinear Tensor Observable
+and therefore identifies the exact downstream blind and sensitive sectors.
 
-Construct a tensor functional whose reduced E/T response actually realizes `w_X^-2`, then test it against the carrier/readout no-go firewalls.
+## Alternative Routes Deferred
 
-## Next Candidate: Direct Consumer Firewall
-
-If the primitive remains unproved, pivot to the direct `Theta_R -> Lambda_R` consumer and narrow exactly which downstream quantities depend on the missing E-center primitive.
+- First-principles derivation of `rho_E = 21/4`: still the highest-value target,
+  but block07 exposed that it requires an additional projector-normalization
+  primitive not yet derived.
+- Additional finite-box scans: block05 showed the 15^3 calibration is not
+  convergence evidence.
+- Endpoint-blind renormalization rescue: block06 showed separable blind
+  renormalizations preserve the wrong lambda and cannot select the endpoint.

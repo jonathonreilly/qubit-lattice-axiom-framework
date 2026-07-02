@@ -139,14 +139,14 @@
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
+      "blocker": "cross_confirmation_disagreement",
       "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
       "claim_scope": "For finite periodic tensor-product qubit blocks over Z^3, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates the defined per-site ladder operators and their adjoints, and commutes with Q_total = \u03a3_x a_x^\u2020a_x.",
       "claim_type": "positive_theorem",
       "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": "disagreement",
       "deps": [
         "minimal_axioms"
       ],

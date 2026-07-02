@@ -1,0 +1,110 @@
+===== runner cache v1 =====
+runner: scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py
+runner_sha256: ee3e195ef10371ea5777d676656b9a1c57e9c7be6ce4b111c9676db47660a7a8
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+PASS: A1 S3 projectors idempotent 
+PASS: A1 S3 projectors mutually orthogonal 
+PASS: A1 S3 projectors sum to identity 
+PASS: A2 S3 two-sided commutant dimension is 3 3
+PASS: A2 S3 left-only commutant dimension rejector is 6 6
+PASS: A3 S3 full-resolution closed formula matches projectors 
+PASS: A3 S3 full-resolution columns normalize exactly [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)]
+PASS: A3 S3 full-resolution two-sided invariance exactly 
+PASS: A3 S3 full-resolution inversion symmetry exactly 
+PASS: A3 S3 full-resolution character coefficients nonnegative [('triv', Fraction(1, 6)), ('sign', Fraction(1, 9)), ('std', Fraction(1, 9))]
+A3 S3 full-resolution character coefficients: [('triv', Fraction(1, 6)), ('sign', Fraction(1, 9)), ('std', Fraction(1, 9))]
+PASS: A4 S3 coarse central bin closed formula matches projectors 
+PASS: A4 S3 coarse central bin columns normalize exactly [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)]
+PASS: A4 S3 coarse central bin two-sided invariance exactly 
+PASS: A4 S3 coarse central bin inversion symmetry exactly 
+PASS: A4 S3 coarse central bin character coefficients nonnegative [('triv', Fraction(1, 6)), ('sign', Fraction(1, 6)), ('std', Fraction(1, 9))]
+A4 S3 coarse central bin character coefficients: [('triv', Fraction(1, 6)), ('sign', Fraction(1, 6)), ('std', Fraction(1, 9))]
+PASS: B0 Q8 closure has eight elements 
+PASS: B0 Q8 closure matches prototypes 
+PASS: B1 Q8 sum dimensions squared is 8 8
+PASS: B1 Q8 character rows orthonormal exactly 
+PASS: B2 Q8 two-sided commutant dimension is 5 5
+PASS: B2 Q8 left-only commutant dimension rejector is 8 8
+PASS: B3 Q8 full-resolution closed formula matches projectors 
+PASS: B3 Q8 full-resolution columns normalize exactly [Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1), Fraction(1, 1)]
+PASS: B3 Q8 full-resolution two-sided invariance exactly 
+PASS: B3 Q8 full-resolution inversion symmetry exactly 
+PASS: B3 Q8 full-resolution character coefficients nonnegative [('triv', Fraction(1, 8)), ('chi_i', Fraction(1, 16)), ('chi_j', Fraction(1, 16)), ('chi_k', Fraction(1, 16)), ('quat', Fraction(0, 1))]
+B3 Q8 full-resolution character coefficients: [('triv', Fraction(1, 8)), ('chi_i', Fraction(1, 16)), ('chi_j', Fraction(1, 16)), ('chi_k', Fraction(1, 16)), ('quat', Fraction(0, 1))]
+PASS: C1 intra-block channel column validity 1.2212453270876722e-15
+PASS: C1 intra-block non-scalar Kraus is non-convolution max=0.0029069998035760047
+PASS: C2 drift witness is a convolution kernel 
+PASS: C2 drift has negative nontrivial character coefficient [('triv', np.float64(0.16666666666666666)), ('sign', np.float64(0.16666666666666666)), ('std', np.float64(-0.16666666666666666))]
+PASS: C2 drift standard Fourier block is non-scalar 0.8660254037844387
+PASS: D0 SU3 Haar class density normalizes 1.0
+PASS: D1 SU3 scalar Jacobi-Trudi dimensions match Weyl dimensions reps=66
+PASS: D1 SU3 sampled character orthonormality [((1, 0, 0), (1, 0, 0), (1+2.1821677345877545e-20j)), ((2, 1, 0), (2, 1, 0), (1+1.8485267540907658e-35j)), ((1, 0, 0), (2, 1, 0), (4.163336342344337e-17+1.3877787807814457e-17j)), ((2, 0, 0), (1, 1, 0), (-7.28583859910259e-17+6.938893903907228e-18j))]
+PASS: D2 SU3 projective kernel normalizes 1.0
+PASS: D2 SU3 projective sampled coefficients real 4.3114292639356034e-19
+PASS: D2 SU3 projective sampled coefficients nonnegative 8.326672684688674e-17
+PASS: D2 SU3 w=0.5 kernel normalizes 1.0
+PASS: D2 SU3 w=0.5 sampled coefficients real 5.551115123125783e-17
+PASS: D2 SU3 w=0.5 sampled coefficients positive 0.5197844596397303
+PASS: D2 SU3 w=2.0 kernel normalizes 1.0
+PASS: D2 SU3 w=2.0 sampled coefficients real 1.18814007603214e-17
+PASS: D2 SU3 w=2.0 sampled coefficients positive 1.1259886418426086
+PASS: D2 SU3 w=6.0 kernel normalizes 1.0000000000000004
+PASS: D2 SU3 w=6.0 sampled coefficients real 4.163346285565054e-18
+PASS: D2 SU3 w=6.0 sampled coefficients positive 2.0943605558698195
+PASS: D2 SU3 w=15.0 kernel normalizes 1.0000000000000004
+PASS: D2 SU3 w=15.0 sampled coefficients real 5.254081560470718e-18
+PASS: D2 SU3 w=15.0 sampled coefficients positive 2.3176652703995417
+PASS: D3 SU3 variance strictly decreases with softness {'projective': 9.870230040800916, 'w=0.5': 8.047603644126955, 'w=2.0': 5.852318742110958, 'w=6.0': 2.4877727520125266, 'w=15.0': 1.8861389013174228}
+PASS: D3 SU3 projective variance near validation reference value=9.870230040800916 ref=9.87
+PASS: D3 SU3 w=0.5 variance near validation reference value=8.047603644126955 ref=8.048
+PASS: D3 SU3 w=2.0 variance near validation reference value=5.852318742110958 ref=5.852
+PASS: D3 SU3 w=6.0 variance near validation reference value=2.4877727520125266 ref=2.476
+PASS: D3 SU3 w=15.0 variance near validation reference value=1.8861389013174228 ref=1.861
+PASS: D4 SU3 width-6 per-block generator spread exceeds heat-form floor 0.43827942136673814
+PASS: D4 SU3 width-6 per-block generator spread remains bounded 0.43827942136673814
+PASS: E1 S3 dimension-square sum is group order 6
+PASS: E1 Q8 dimension-square sum is group order 8
+PASS: E2 S3 full-resolution spectral data exact {'triv': Fraction(1, 6), 'sign': Fraction(1, 9), 'std': Fraction(1, 9)}
+PASS: E3 S3 std tensor std multiplicities nonnegative {'triv': Fraction(1, 1), 'sign': Fraction(1, 1), 'std': Fraction(1, 1)}
+PASS: E3 S3 std tensor std exact decomposition {'triv': Fraction(1, 1), 'sign': Fraction(1, 1), 'std': Fraction(1, 1)}
+PASS: F source note exists /private/tmp/gauge-step-wt/docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md
+PASS: F dependency exists G_BARE_RIGIDITY_THEOREM_NOTE.md /private/tmp/gauge-step-wt/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md
+PASS: F dependency exists RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md /private/tmp/gauge-step-wt/docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md
+PASS: F dependency exists RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md /private/tmp/gauge-step-wt/docs/RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md
+PASS: F dependency exists AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md /private/tmp/gauge-step-wt/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+PASS: F dependency marker G_BARE_RIGIDITY_THEOREM_NOTE.md needle='no independent scalar-normalization freedom'
+PASS: F dependency marker RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md needle='projective record-write isometry'
+PASS: F dependency marker RECORD_CLASSICAL_SEMIGROUP_BOUNDARY_2026-06-06.md needle='continuous Markov semigroups live on the probability/ensemble'
+PASS: F dependency marker AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md needle='plane positive kernel'
+PASS: F note preserve marker needle='set only by the independent audit lane'
+PASS: F note preserve marker needle='gauge-central'
+PASS: F note preserve marker needle='derived, not assumed'
+PASS: F note preserve marker needle='registration-centrality'
+PASS: F note preserve marker needle='does not derive that a record step occurs'
+PASS: F note preserve marker needle='registration softness'
+PASS: F note preserve marker needle='not a citation-graph dependency'
+PASS: F note preserve marker needle='does not claim:'
+PASS: F note preserve marker needle='an audit verdict or any effective-status promotion'
+PASS: F note preserve marker needle='Kronecker'
+PASS: F note preserve marker needle='intra-block'
+PASS: F note preserve marker needle='the per-step kernel is not the heat kernel'
+PASS: F note forbidden string absent needle='audit_status:'
+PASS: F runner forbidden string absent needle='audit_status:'
+PASS: F note forbidden string absent needle='effective_status:'
+PASS: F runner forbidden string absent needle='effective_status:'
+PASS: F note forbidden string absent needle='only route'
+PASS: F runner forbidden string absent needle='only route'
+PASS: F note forbidden string absent needle='exhausted'
+PASS: F runner forbidden string absent needle='exhausted'
+PASS: F note forbidden string absent needle='closes the route'
+PASS: F runner forbidden string absent needle='closes the route'
+PASS: F note forbidden string absent needle='covariance implies the step-measure premise'
+PASS: F runner forbidden string absent needle='covariance implies the step-measure premise'
+TOTAL: PASS=95 FAIL=0
+
+----- stderr -----
+

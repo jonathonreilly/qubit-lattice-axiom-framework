@@ -14,3 +14,10 @@
 - V3: framework-specific value: recalibrates the record-composition premise chain the campaign itself introduced; witness built on the finite cyclic subgroup, no literature.
 - V4: non-trivial: an exact counterexample family with structural positivity proof is real content; hostile to our own result (anti-churn by construction).
 - V5: distinct from block04 (which separated three candidates; this block bounds what the semigroup reading can and cannot force among ALL families); closest = block04, distinction stated.
+
+## Value-gate record (V1–V5) — block10 (pre-PR)
+- V1: obstruction = the relocation note's open follow-on + block09's Q-gen (unsupplied). Block10 gives the exact locality tension: nearest-step classes fail Q-gen with exact deficit 4 sin^2(pi/N).
+- V2: new content = boundedness exclusion (U(1)), the finite-group full-step matching subtlety incl. weight-sign findings, the nearest-step exact-deficit identity, and the selection trichotomy; none exists in blocks 04/09.
+- V3: framework-specific: binds Q-gen to step-locality shapes relevant to the repo's nearest-neighbor surface; witnesses constructed, no literature.
+- V4: non-trivial: the 4cos^2(pi/N) ratio identity and the signed-weight question are structure, not restating.
+- V5: distinct from block09 (which showed the class is bigger than HK; this block shows LOCAL members of the class exclude HK exactly); closest = block09, distinction stated.

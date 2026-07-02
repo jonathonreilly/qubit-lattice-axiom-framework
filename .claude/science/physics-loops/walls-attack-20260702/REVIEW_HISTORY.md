@@ -43,3 +43,22 @@ Disposition: **pass-with-supervisor-addition**.
    runner re-run independently 39/0 with certified tail bounds.
 
 Disposition: **pass**.
+
+## block10 — supervisor line-by-line review (2026-07-02, pre-PR)
+
+1. **F1 (verified).** T3 ratio identity hand-checked: (1-cos(4pi/N))/(1-cos(2pi/N))
+   = 4 cos^2(pi/N); deficit 4 sin^2(pi/N) > 0 for all finite N >= 3; limit
+   behavior named honestly (deficit -> 0), not used as authority.
+2. **F2 (verified, notable).** T2's finding exceeds the spec: full-step Q-gen
+   matching on Z_N requires SIGNED weights for every tested N
+   (5,7,8,9,12; e.g. N=5: w_2 = 1 - 3 sqrt(5)/5 < 0). Claim level correct:
+   stated as a generator/linear-span obstruction ("not yet a positive-rate
+   step semigroup"), no unproven semigroup-positivity (Metzler) step.
+3. **F3 (verified).** T4 trichotomy horns exact; no horn selected; continuum
+   flavor of horn (b) flagged conditionally via block04's quoted context.
+4. **F4 (verified).** Runner re-run independently: 52/0.
+
+Disposition: **pass**. Named for the queue: proving the Metzler-equivalence
+step (generator-signed ⟺ kernel non-positivity at small t) would upgrade the
+T2 obstruction from generator-level to semigroup-level — future block if the
+action lane reopens.

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 306,
+    "critical": 305,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -138,33 +138,31 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
-      "claim_scope": "T1 excludes the free CCR boson and selects single-pair Grassmann only within the two-candidate surface on the retained dim-2 site space; T2 conditionally selects Grassmann/CAR within {free boson, hard-core boson, Grassmann/CAR} given GL(F); T3 reproduces the no-unconditional-forcing boundary.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "minimal_axioms",
-        "axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29",
-        "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
-        "axiom_first_spin_statistics_theorem_note_2026-04-29",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10"
+        "three_generation_structure_note",
+        "s3_taste_cube_decomposition_note",
+        "site_phase_cube_shift_intertwiner_note",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
       ],
-      "direct_in_degree": 14,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 44,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 19.833,
-      "note_path": "docs/STAGGERED_DIRAC_GRASSMANN_FORCING_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 34.819,
+      "note_path": "docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/probe_grassmann_forcing_dependency_chain.py",
-      "transitive_descendants": 911
+      "runner_path": "scripts/probe_bz_corner_decomposition.py",
+      "transitive_descendants": 902
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -565,34 +563,6 @@
       "ready": false,
       "runner_path": "scripts/axiom_first_microcausality_check.py",
       "transitive_descendants": 913
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "three_generation_structure_note",
-        "s3_taste_cube_decomposition_note",
-        "site_phase_cube_shift_intertwiner_note",
-        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
-        "staggered_dirac_kawamoto_smit_forcing_theorem_note_2026-05-07"
-      ],
-      "direct_in_degree": 44,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 34.819,
-      "note_path": "docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/probe_bz_corner_decomposition.py",
-      "transitive_descendants": 902
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -35169,6 +35139,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -49539,32 +49535,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/staggered_dirac_kinetic_class_two_component_exclusion_check_2026_06_11.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "staggered_dirac_substep4_positive_ratchet_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -51302,6 +51272,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 97,
-  "total_pending": 1717
+  "ready_count": 98,
+  "total_pending": 1716
 }

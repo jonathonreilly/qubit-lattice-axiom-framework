@@ -1,0 +1,44 @@
+loop_slug: s3-route2-fixed-carrier-selector
+block: 94
+date: 2026-06-21
+branch: physics-loop/s3-route2-fixed-carrier-selector-block94-20260621
+base: origin/main@4ee570091
+mode: campaign
+target_status: best-honest-status
+active_route: fixed-carrier selector equation boundary
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+hard_residual: "Can first-principles fixed-carrier source-vector equations force q_E=15/8?"
+lock_mode: degraded_branch_local
+lock_error: "[Errno 13] Permission denied: '/Users/jonreilly'"
+files_touched:
+  - docs/QUARK_ROUTE2_FIXED_CARRIER_SELECTOR_EQUATION_BOUNDARY_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py
+  - outputs/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-fixed-carrier-selector/
+open_imports:
+  - "No current-surface primitive derives c_TE=-8/9."
+  - "No current-surface primitive derives the positive diagonal metric ratio 1449/704."
+  - "No independent selector equation forcing q_E=15/8."
+no_go_routes:
+  - "Fixed carrier plus granted T-side values plus basic source-vector conservation/equipartition selects q_E=15/8."
+checkpoint:
+  commands_run:
+    - "python3 -m py_compile scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py: pass"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py: TOTAL PASS=51 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py: PASS=11 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py: PASS=8 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py: PASS=12 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py: TOTAL PASS=28 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py: TOTAL PASS=14 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py: TOTAL PASS=24 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py: TOTAL PASS=103 FAIL=0"
+    - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py: TOTAL PASS=62 FAIL=0"
+  pr:
+    number: 4625
+    url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4625
+    identity_checked: true
+    conflict_mergeability_checked: false
+  next_exact_action: "Continue campaign toward a typed E-center source/readout primitive for c_TE=-8/9 or a derivation of metric/source ratio 1449/704."
+  stop_condition: "Continue campaign after PR if runtime remains; do not mark the global goal complete."

@@ -55,3 +55,25 @@ resolved here.
 - No reading of the no-privilege sentence is adjudicated.
 - No axiom, primitive, Tier-A admission, or registry entry is added or edited.
 - kappa_EW is not assigned a value outside the READING-X + CTX-match conditional.
+
+# Assumptions and Imports — w Scale-Absorption Classification Block17
+
+**Date:** 2026-07-02. **Status authority:** independent audit lane only.
+
+NO new imports; NO literature values; NO fitted selectors; NO observed values.
+
+Cited authorities (on branch/main): block16 note (stacked parent,
+review-pending); kappa no-go note (parent wall, retained_no_go); scale-reference
+primitive note (units conversion only); occupancy/equipartition flow note;
+minimal axioms memo. Supervisor-supplied context (marked in-note): the landed
+charged-lepton chain shape (ratios + one calibrated absolute; Koide-shape
+functional degree-0); PR #4847 cited as in-flight owner-gated axiom PR only.
+
+Block-local premises: diagonal (flow-selected) evaluation where used —
+inherited conditionality, named per row; single-family calibration premise for
+T2 (cross-family witness shows it is load-bearing); EW rows conditional on
+CTX-match; toy majority-rule model for the equivariance steelman.
+
+Import firewall: no dictionary selected; no occupancy cell selected; no r/Q
+value derived; no registry or convention reclassification performed; no
+probability rule imported; kappa_EW never assigned a value.

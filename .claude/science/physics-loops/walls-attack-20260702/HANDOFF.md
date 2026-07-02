@@ -99,3 +99,35 @@ R2 boundary verbatim. Consequences:
    reading dependence. Fallback: w = W_readout_coupling gate
    (registered-number primitive), per the no-permanent-walls standard.
 4. Other campaign lanes (action bifurcation, moduli word-supplier) unaffected.
+
+## block17 (this branch, stacked on block16)
+
+Artifact set:
+- `docs/W_SCALE_ABSORPTION_CLASSIFICATION_LANDED_READOUTS_BOUNDED_NOTE_2026-07-02.md`
+- `scripts/frontier_w_scale_absorption_classification_2026_07_02.py`
+- `outputs/frontier_w_scale_absorption_classification_2026_07_02.txt`
+- pack appends in this directory (block16 entries retained above)
+
+Result shape: bounded support. w's remaining physical content after this
+block: the named T4 triple (off-diagonal evaluation; cross-family calibration;
+non-scale-referenced absolute). All landed instances classify w-free (rows
+conditional as named). Owner options after audit: reclassify w as a vacuous
+rescaling convention relative to the landed class (registry surface,
+owner-only) OR register the T4 triple as W_readout_coupling gate content.
+The folded reading-exclusion section makes NO inconsistency claim
+(equivariant-escape steelman exhibited); the set-level forcing leg dies by
+the in-flight #4847 axiom sentence.
+
+## Cluster-cap evaluation — before PR (carrier-measure family, PR #9)
+
+1. NEW load-bearing premise: YES — absorption theorem, classification table,
+   residual triple, equivariance counterexample; scale-reference primitive
+   enters the campaign for the first time.
+2. Distinct claim type: YES — classification/consolidation + counterexample,
+   vs block16's fork and block11's normal form.
+3. Independent reviewability: YES — against the five named authorities and
+   the runner alone.
+4. Marginal review value: HIGH — this is the dissolution-vs-gate decision
+   surface for the family's terminal rung.
+Verdict: **OPEN**. (Gates PR opening only; audit outcomes are the audit
+lane's.)

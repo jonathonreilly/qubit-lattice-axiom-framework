@@ -53462,10 +53462,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_cpt_theorem_stretch_note_2026-04-29"
     },
     {
@@ -53486,11 +53482,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
     },
     {
       "from": "repo.front_door_status",
-      "to": "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+      "to": "single_axiom_hilbert_note"
     },
     {
       "from": "repo.repo_organization",
@@ -103170,17 +103170,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_p1_h_unit_renormalization_framework_native_note_2026-04-17",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
         "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
         "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10",
         "per_site_su2_spin_half_theorem_note_2026-05-02",
+        "koide_q23_k0_real_block_equivalence_note_2026-05-30",
         "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
-        "koide_q23_k0_real_block_equivalence_note_2026-05-30"
+        "single_axiom_hilbert_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7c70c9d365110d3df283da4d636e31346587386c6dac27a51a135f8bb4a27bb7",
+      "note_hash": "e52a484692c6c0efb48626315ca8a506ca106ccdbd865b0e2c618719aac36732",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

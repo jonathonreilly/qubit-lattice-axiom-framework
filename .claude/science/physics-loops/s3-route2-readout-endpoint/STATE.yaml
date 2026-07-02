@@ -1,10 +1,10 @@
 loop_slug: s3-route2-readout-endpoint
-block: 28
+block: 29
 date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block28-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block29-20260621
 base: main
-base_commit: b80fa78ed
-worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block28-20260621
+base_commit: 7a6e5600f
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block29-20260621
 mode: campaign
 user_constraints:
   - do_not_run_audit_or_apply_verdicts
@@ -12,45 +12,39 @@ user_constraints:
   - do_not_push_to_main
   - do_not_refresh_existing_prs_to_main
   - do_not_check_pr_conflicts_or_mergeability
-active_route: quark_up_amplitude_scalar_bypass_firewall
+active_route: e_center_selector_fanout_no_go
 actual_current_surface_status: no-go
 trace_class: negative_route_pruning
 reachability_to_target: prunes
 artifact_role: runner_certificate
-target_blocker: "can non-Route-2 up-amplitude scalar routes bypass selected P_R for the S3/Route-2 endpoint?"
-claim_movement: "prunes the scalar-bypass route and classifies which up-amplitude routes are rho_E-free support versus endpoint-readout-sensitive support"
+target_blocker: "can E-center-visible endpoint-matrix naturality select rho_E without the signed center-ratio bridge?"
+claim_movement: "prunes endpoint-matrix selector naturality and localizes target selection to a typed signed center-ratio/source-domain bridge"
 files_touched:
-  - docs/QUARK_UP_AMPLITUDE_SCALAR_BYPASS_FIREWALL_NOTE_2026-06-21.md
-  - scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py
-  - scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py
-  - outputs/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.txt
-  - outputs/frontier_quark_route2_exact_readout_map_block28.txt
-  - outputs/frontier_quark_route2_exact_time_coupling_block28.txt
-  - outputs/frontier_quark_up_amplitude_tensor_endpoint_resolution_block28.txt
-  - outputs/frontier_quark_up_amplitude_scalar_comparison_bridge_block28.txt
-  - outputs/frontier_quark_up_amplitude_rpsr_mass_retention_boundary_block28.txt
+  - docs/QUARK_ROUTE2_E_CENTER_SELECTOR_FANOUT_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.py
+  - outputs/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.txt
+  - outputs/frontier_quark_route2_e_center_blindness_no_go_block29.txt
+  - outputs/frontier_quark_route2_exact_readout_map_block29.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 open_imports:
-  - selected readout map P_R
-  - E-center endpoint ratio
-  - typed reduced-amplitude-to-readout edge
-  - source-domain rule or stronger readout-map theorem
+  - signed center-ratio theorem
+  - typed source-domain rule
+  - equivalent E-center readout primitive
 verification:
-  block_runner: "PASS=33 FAIL=0"
-  route2_exact_readout_map_parent: "PASS=11 FAIL=0"
-  route2_exact_time_coupling_parent: "PASS=8 FAIL=0"
-  tensor_endpoint_resolution_parent: "PASS=16 FAIL=0"
-  scalar_comparison_bridge_parent: "PASS=11 FAIL=0"
-  rpsr_mass_retention_boundary_parent: "PASS=50 FAIL=0"
+  block_runner: "PASS=26 FAIL=0"
+  e_center_blindness_parent: "PASS=14 FAIL=0"
+  e_channel_naturality_parent: "PASS=28 FAIL=0 (output not carried; generated text trips generic overclaim grep)"
+  source_domain_bridge_parent: "PASS=103 FAIL=0 (output not carried; generated text trips generic overclaim grep)"
+  exact_readout_map_parent: "PASS=11 FAIL=0"
   py_compile: pass
 review_verdict: not_run_by_user_constraint
 pr_status: open
 pr_identity:
-  number: 4557
-  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4557
-  title: "[physics-loop] s3-route2-readout-endpoint block28 no-go"
-  headRefName: physics-loop/s3-route2-readout-endpoint-block28-20260621
+  number: 4558
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4558
+  title: "[physics-loop] s3-route2-readout-endpoint block29 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block29-20260621
   baseRefName: main
   state: OPEN
-next_exact_action: "continue the campaign toward either an E-center lift attempt or a typed reduced-amplitude-to-readout edge"
+next_exact_action: "continue toward a typed source-domain bridge or alternate E-center primitive"
 stop_condition: null

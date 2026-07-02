@@ -1,82 +1,66 @@
 # Handoff
 
-## Block28 Result
+## Block29 Result
 
 Branch:
 
 ```text
-physics-loop/s3-route2-readout-endpoint-block28-20260621
+physics-loop/s3-route2-readout-endpoint-block29-20260621
 ```
 
 PR:
 
 ```text
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4557
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4558
 ```
 
 Identity verification:
 
 ```json
-{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block28-20260621","number":4557,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block28 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4557"}
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block29-20260621","number":4558,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block29 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4558"}
 ```
 
-Block28 delivers a scalar-bypass firewall for the S3/Route-2 readout endpoint.
-It proves that current-main quark up-amplitude scalar routes do not bypass the
-selected `P_R` ambiguity:
-
-- rho_E-free scalar routes constrain reduced amplitude support but do not
-  select `P_R`;
-- endpoint-sensitive tensor/readout routes inherit the E-center primitive;
-- the Route-2 time-coupling family remains exact but conditional on supplied
-  `P_R`.
+Block29 delivers an E-center-visible selector fan-out no-go. It tests exact
+endpoint-matrix selectors that see the unknown E-center lift `q_E` and shows
+that none of the non-bridge selectors land the target. The target appears only
+when the signed center-ratio bridge or an equivalent quotient is supplied.
 
 ## Verification
 
 Commands run:
 
 ```bash
-PYTHONPATH=scripts python3 scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py
 PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py
-PYTHONPATH=scripts python3 scripts/frontier_quark_up_amplitude_tensor_endpoint_resolution.py
-PYTHONPATH=scripts python3 scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py
-PYTHONPATH=scripts python3 scripts/frontier_quark_up_amplitude_rpsr_mass_retention_boundary.py
-python3 -m py_compile scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py
+python3 -m py_compile scripts/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.py
 ```
 
 Results:
 
 ```text
-block28 runner: PASS=33 FAIL=0
-Route-2 exact readout map: PASS=11 FAIL=0
-Route-2 exact time coupling: PASS=8 FAIL=0
-tensor endpoint resolution: PASS=16 FAIL=0
-scalar comparison bridge: PASS=11 FAIL=0
-RPSR mass-retention boundary: PASS=50 FAIL=0
+block29 runner: PASS=26 FAIL=0
+E-center blindness parent: PASS=14 FAIL=0
+E-channel naturality parent: PASS=28 FAIL=0
+source-domain bridge parent: PASS=103 FAIL=0
+exact readout map parent: PASS=11 FAIL=0
 py_compile: pass
 ```
-
-## Parent Verifier Repair
-
-`scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py` had one
-stale note-wording probe. The mathematical check still targets the same two
-bilinear endpoint column identities, but the searched source phrase was
-updated from older "carrier columns are exact" wording to current
-"polynomial-identity columns" wording.
 
 ## Remaining Blocker
 
 The endpoint still needs one of:
 
 ```text
-E-center endpoint ratio
-typed reduced-amplitude-to-readout edge
-source-domain rule
-stronger readout-map theorem
+signed center-ratio theorem
+typed source-domain rule
+equivalent E-center readout primitive
 ```
 
 ## Next Action
 
-Continue with either a direct E-center lift attempt or a typed
-reduced-amplitude-to-readout edge. Do not refresh existing PR branches and do
-not check PR conflicts or mergeability.
+Try to type the source-domain bridge directly, or search for an equivalent
+E-center primitive. Do not refresh existing PR branches and do not check PR
+conflicts or mergeability.

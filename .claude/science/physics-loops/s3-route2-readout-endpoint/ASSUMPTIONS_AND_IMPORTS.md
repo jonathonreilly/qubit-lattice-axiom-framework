@@ -2,25 +2,25 @@
 
 ## Allowed Premises
 
-- Current-main quark up-amplitude source notes and their paired runners.
-- Current-main Route-2 exact readout-map and exact time-coupling runners.
-- Current-main tensor endpoint resolution runner.
-- Exact algebra inside the reduced readout family
-  `P(rho_E) = [[1,0,rho_E,0],[0,-2,0,2]]`.
+- Exact endpoint columns with granted T-side values:
+  `E_shell=1`, `T_shell=-2`, `T_center=-5/3`.
+- Exact readout algebra `q_E = 1 + rho_E/6`.
+- Exact rational arithmetic over endpoint-matrix selector equations.
+- Current-main E-center blindness, naturality, source-domain bridge, and exact
+  readout-map notes.
 
 ## Forbidden Shortcuts
 
-- Treating a reduced up-amplitude scalar as a selected Route-2 readout map.
-- Treating a scalar-comparison `kappa` bridge as the E-center variable
-  `rho_E`.
-- Treating bounded endpoint ratios as exact coefficient theorems.
-- Using observed quark masses, fitted selectors, or a human choice of
-  `P_R` as proof input.
+- Inserting the signed center ratio as if it were an endpoint-matrix
+  consequence.
+- Selecting the live endpoint nearest rational as a proof step.
+- Treating `nu=1` in the center-ratio scale family as automatic.
+- Using observed masses or fitted CKM/`J` objectives.
 
-## Imports Exposed By Block28
+## Imports Exposed By Block29
 
-- The scalar routes that avoid `rho_E` still need a typed
-  reduced-amplitude-to-readout edge before they can affect selected `P_R`.
-- The endpoint-sensitive tensor routes inherit the E-center/readout primitive.
-- The Route-2 time-coupling family remains exact but conditional on a supplied
-  admissible readout map.
+- E-center visibility alone is insufficient for the tested selector family.
+- The target lands only when the missing signed center-ratio bridge, or an
+  equivalent quotient statement, is supplied.
+- The remaining positive route must type the bridge rather than add another
+  endpoint-matrix symmetry.

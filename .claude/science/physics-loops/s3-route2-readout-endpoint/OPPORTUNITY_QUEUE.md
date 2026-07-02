@@ -1,29 +1,18 @@
 # Opportunity Queue
 
-1. **E-center shear-breaking primitive**
-   - retained-positive probability: low-medium
-   - missing imports: primitive evaluating `q_E=15/8`
-   - runner availability: medium
-   - review landability: high if falsifiable
-   - independence from block33: direct follow-up
+1. **Typed `7/8 -> e_E` bridge theorem.**
+   Search for a source/readout primitive that maps hierarchy, APBC, thermal, or
+   color-complement `7/8` into `route2_e_E_7_8` without role substitution.
 
-2. **Direct non-shear-invariant magnitude theorem**
-   - retained-positive probability: low
-   - missing imports: typed rule setting `|c_TE|=F_adj`
-   - runner availability: medium
-   - review landability: high for support/no-go
-   - independence from block33: direct follow-up
+2. **Measured-calibration box-size parameterization.**
+   The measured E-center lift route remains the strongest positive signal, but
+   it needs a runner that varies the currently size-pinned module chain and
+   distinguishes finite-size drift from an exact `15/8` limit.
 
-3. **Reduced-amplitude-to-readout edge**
-   - retained-positive probability: low
-   - missing imports: bridge from reduced amplitude to selected `P_R`
-   - runner availability: medium
-   - review landability: high for no-go/support
-   - independence from block33: high
+3. **Direct tensor readout primitive.**
+   Attack the exact `P_R` selection problem from tensor/source primitives rather
+   than from scalar anchor matching.
 
-4. **Direct consumer readout ambiguity packet**
-   - retained-positive probability: low
-   - missing imports: direct consumer bridge
-   - runner availability: medium
-   - review landability: high as fallback
-   - independence from block33: high
+4. **Alternate direct consumer support packet.**
+   If the E-center target stalls after a real stretch attempt, pivot to a direct
+   S3-time consumer and record the exact remaining readout ambiguity.

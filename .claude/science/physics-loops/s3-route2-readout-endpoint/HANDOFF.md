@@ -1,64 +1,35 @@
 # Handoff
 
-## Block33 Draft Result
-
-Branch:
+Block34 isolates a narrower positive target for the S3/Route-2 endpoint:
 
 ```text
-physics-loop/s3-route2-readout-endpoint-block33-20260621
+e_E := q_E - 1 = rho_E / 6 = 7/8.
 ```
 
-PR:
+The branch records exact support for that equivalence and an import boundary:
+hierarchy, thermal, APBC, and color-complement seven-eighths appearances are
+not currently typed to the Route-2 E-center excess role.
 
-```text
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4562
-```
+Current status: verification passed. PR open.
 
-Identity verification:
+PR identity:
 
 ```json
-{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block33-20260621","number":4562,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block33 no-go","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4562"}
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block34-20260621","number":4564,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block34 exact-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4564"}
 ```
 
-Block33 packages an E-center shear no-go for magnitude source rules. Draft
-result: shell normalization, granted T-side quantities, and `F_adj=8/9` are
-unchanged under E-center shear, while `|c_TE|` changes. Thus a magnitude rule
-must break the shear by evaluating the E-center lift.
+Checks:
 
-## Verification
+- block34 runner: `PASS=53 FAIL=0`
+- S3-time theta-to-slice parent: `PASS=12 FAIL=0`
+- Route-2 exact readout parent: `PASS=11 FAIL=0`
+- E-center lift derivation-attempt parent: `PASS=46 FAIL=0`
+- hierarchy seven-eighths parent: `PASS=14 FAIL=0`
+- E-center blindness parent: `PASS=14 FAIL=0`
+- Rconn typed bridge parent: `PASS=62 FAIL=0`
+- new runner py_compile: pass
+- branch-local overclaim scan: no matches
 
-Commands run:
-
-```bash
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_magnitude_source_e_center_shear_no_go_2026_06_21.py
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py
-python3 -m py_compile scripts/frontier_quark_route2_magnitude_source_e_center_shear_no_go_2026_06_21.py
-```
-
-Results:
-
-```text
-block33 runner: PASS=51 FAIL=0
-exact readout parent: PASS=11 FAIL=0
-E-channel naturality parent: PASS=28 FAIL=0 (output not carried; historical generated text trips broad wording scans)
-source-domain bridge parent: PASS=103 FAIL=0 (output not carried; historical generated text trips broad wording scans)
-py_compile: pass
-```
-
-## Remaining Blocker
-
-The endpoint still needs one of:
-
-```text
-E-center shear-breaking primitive
-non-shear-invariant magnitude theorem |c_TE|=F_adj
-equivalent primitive q_E=15/8
-```
-
-## Next Action
-
-Continue the campaign by searching for an E-center shear-breaking primitive or
-a non-shear-invariant magnitude theorem. Do not refresh existing PR branches
-and do not check PR conflicts or mergeability.
+Next exact action: attack the typed bridge from one specific
+seven-eighths anchor to `route2_e_E_7_8`, or pivot to the measured-calibration
+box-size parameterization if no bridge route passes the dramatic-step gate.

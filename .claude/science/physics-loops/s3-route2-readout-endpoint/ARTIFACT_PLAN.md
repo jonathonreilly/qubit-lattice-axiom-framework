@@ -1,15 +1,16 @@
 # Artifact Plan
 
-## Block33 Artifacts
+Block34 artifacts:
 
-- `docs/QUARK_ROUTE2_MAGNITUDE_SOURCE_E_CENTER_SHEAR_NO_GO_NOTE_2026-06-21.md`
-- `scripts/frontier_quark_route2_magnitude_source_e_center_shear_no_go_2026_06_21.py`
-- `outputs/frontier_quark_route2_magnitude_source_e_center_shear_no_go_2026_06_21.txt`
-- Branch-local loop pack under
-  `.claude/science/physics-loops/s3-route2-readout-endpoint/`
+- note: `docs/QUARK_ROUTE2_E_CENTER_EXCESS_SEVEN_EIGHTHS_IMPORT_BOUNDARY_NOTE_2026-06-21.md`
+- runner: `scripts/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.py`
+- output: `outputs/frontier_quark_route2_e_center_excess_seven_eighths_import_boundary_2026_06_21.txt`
+- loop pack: `.claude/science/physics-loops/s3-route2-readout-endpoint/`
 
-## Verification Plan
+Verification targets:
 
-Run the new runner, exact readout parent, E-channel naturality parent, source
-bridge parent, and Python syntax compilation. Do not run audits or update
-repo-wide status surfaces.
+- block34 runner returns `PASS=53 FAIL=0`;
+- parent exact readout map runner still passes;
+- parent E-center lift derivation attempt runner still passes;
+- parent hierarchy seven-eighths runner still passes;
+- no branch-local overclaim wording is introduced.

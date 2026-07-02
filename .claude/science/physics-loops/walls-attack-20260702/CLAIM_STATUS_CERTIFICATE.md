@@ -65,3 +65,18 @@ claim_type_reason: "self-contained exact hw=1 argument; single named interpretiv
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
+
+# Claim status certificate — block05 (C1b via degeneracy-locus totality)
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: partially_closes
+conditional_surface_status: C1b conditional on D-totality (this note's single interpretive premise, flagged for adjudication); pointwise escape stands without it; C1 completion conditional on R* AND D-totality
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact eigenprojection witnesses on the hw=1 circulant surface; the exclusion is conditional on an unadjudicated rule-level premise"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

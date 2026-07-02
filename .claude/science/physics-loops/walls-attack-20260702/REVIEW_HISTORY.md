@@ -79,3 +79,21 @@ Disposition: **pass-after-repair** (style-only repair).
    conditional framing. The narrow negative stays inside R*-conditionality.
 
 Disposition: **pass-with-supervisor-addition**.
+
+## block05 — supervisor line-by-line review (2026-07-02, pre-PR)
+
+1. **F1 (verified).** T2 witness hand-checked: P1 is algebra-canonical
+   (polynomial in U); per-cell HS contents (1,0) Fourier vs (1/2,1/2) rotated;
+   coarse content equal (1). Correct and decisive.
+2. **F2 (verified).** T1 collision enumeration: lambda_j = lambda_k iff
+   delta ≡ 0 mod pi/3 (cosine identity) — runner-enumerated on residues.
+3. **F3 (verified).** T4/T5 honesty split is exactly right: pointwise escape
+   stated with the primitive's no-content quotes; D-totality carries the whole
+   conditional load and is flagged for adjudication, shape-parallel to R*.
+4. **F4 (verified).** Premise-ladder table consistent with blocks 01-03
+   certificates; no premise silently promoted.
+5. **F5 (N-gate).** Block05 N-checklist present: 5 rescue routes incl. the
+   restrict-to-stratum horn correctly identified as rejecting D-totality
+   (the adjudication question), not rescuing within it.
+
+Disposition: **pass**. Runner re-run independently: PASS=32 FAIL=0.

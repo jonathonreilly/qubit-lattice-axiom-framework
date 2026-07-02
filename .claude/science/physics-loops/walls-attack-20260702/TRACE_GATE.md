@@ -32,3 +32,15 @@ next_trace_action: "block03 stretch candidate: attempt the C1-supplier itself �
 
 Secondary target: flavor_missing_axiom_carrier_measure_note_2026-05-30 (block01's
 item-4 residual is C1 exactly). Witness-level decomposition; no closure claimed.
+
+# Trace gate — block05 (C1b via degeneracy-locus totality)
+
+```yaml
+trace_class: upstream_support
+target_claim_id: flavor_missing_axiom_carrier_measure_note_2026-05-30
+target_blocker_text: "derive, from the current framework surface, why the physical generation readout uses generator-channel Hilbert-Schmidt scoring rather than dimension/per-mode or idempotent/eigenvalue scoring"
+source_of_blocker_text: audit_ledger
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "premise ladder complete after this block: {R*, D-totality, C2, equal-channel-energy}. Remaining queue: equal-channel-energy leg; moduli openings formalization; kappa C2-shape. Adjudications of R* and D-totality are audit/owner-lane questions — hand off."
+```

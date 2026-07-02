@@ -23,3 +23,10 @@ availability, review landability, blast radius, independence.
 - V3: not completable from standard machinery: the decomposition rests on block01's partition-provenance separation and the kappa note's specific escape clauses — framework-specific structure.
 - V4: non-trivial: component independence is established by explicit witnesses, not definition-restating.
 - V5: distinct from block01 (separation among scorings) — this block is a cross-wall supplier decomposition; closest neighbor is block01 itself, distinction stated.
+
+## Value-gate record (V1–V5) — block05 (pre-PR)
+- V1: obstruction = parent theorem target (quoted in trace gate) + block03's open C1b. Block05 partially closes C1b conditional on D-totality (new named premise with exact discriminators).
+- V2: new content = degeneracy-locus witnesses (fine partition not Y-recoverable; two Y-diagonalizing splits with differing cell content), the provenance-collapse trichotomy, and the D-totality premise naming. None exists in blocks 01-03 or the parent.
+- V3: framework-specific: rests on the circulant algebra's Y-independent Fourier structure and the realized-state primitive's pointwise no-content boundary.
+- V4: non-trivial: the pointwise-escape honesty (T4) vs rule-totality (T5) distinction is a real structural finding, not relabeling.
+- V5: distinct from block03 (registrability/unsupplied-choice mechanism) — this block's mechanism is well-definedness/totality at admissible degeneracies; closest prior = block03, distinction stated.

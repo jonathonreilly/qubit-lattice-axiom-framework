@@ -43,6 +43,42 @@ This block uses only the five user-named authorities below. The D4 conclusion is
 - No audit-lane file, publication file, registry, or public status surface is
   edited by this block.
 
+## Block05
+
+### Claim Shape
+
+- Target: C1b, the no-realized-state-dependent-partition half left open by
+  Block03.
+- Status: conditional-support only; conditional on D-totality.
+- D-totality: a physical readout rule must be well-defined at every
+  law-admissible realized state in its stated law-domain.
+- D-totality is not asserted as axiom content, primitive content, or registry
+  content; it is flagged for audit adjudication.
+- Pointwise escape remains: without D-totality, a nondegenerate realized `Y`
+  can still support an S3-class `Y`-dependent partition pointwise.
+
+### Cited Authorities
+
+| path | role | what is used | load-bearing for Block05 bounded theorem |
+|---|---|---|---|
+| `docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md` | Block01 sibling | S1/S2/S3 scoring definitions, partition provenance, and the equal-channel-energy parent surface. Dependency class: stacked branch-local, unaudited. | yes |
+| `docs/C1_FRAME_COMPONENT_FROM_RECORD_REGISTRABILITY_PARTIAL_BOUNDED_NOTE_2026-07-02.md` | Block03 sibling | C1a/C1b split, R*, and the honest limit that R* does not exclude realized-`Y`-dependent partitions. Dependency class: stacked branch-local, unaudited. | yes |
+| `docs/MINIMAL_AXIOMS_2026-06-29.md` | axiom surface | Record locking, repeated-readout invariance, readability, finite additivity, and the open-gates boundary for measurement basis/context selection. | yes |
+| `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` | primitive surface | Pointwise realized-state evaluation and the no-state-content boundary: no averaging, measure, typicality, genericity, state selector, or perturbation rule. | yes |
+
+### Import Firewall
+
+- D-totality is the single new interpretive premise for this block.
+- No measure-zero, typicality, perturbation, averaging, or genericity discount
+  is imported for degeneracy loci.
+- No S3 exclusion is claimed pointwise at a nondegenerate realized `Y`.
+- No C2 weighting rule, equal-channel-energy theorem, `kappa_EW`, `beta`,
+  probability rule, Born rule, observed value, or fitted selector is supplied.
+- No new axiom, primitive, admission, normalization, dictionary, or occupancy
+  cell is introduced.
+- No audit-lane file, publication file, registry, or public status surface is
+  edited by this block.
+
 ## Block03
 
 ### Claim Shape

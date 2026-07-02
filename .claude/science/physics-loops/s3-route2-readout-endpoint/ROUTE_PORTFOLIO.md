@@ -1,21 +1,14 @@
 # Route Portfolio
 
-## Selected Route
+| Route | Type | Hard-residual pressure | Dramatic-step score | Outcome |
+|---|---:|---:|---:|---|
+| Fundamental color ray selects adjoint line | selector/chamber | 3 | 3 | Conditional success: `psi -> H_psi -> rank-1 line`, complement `7/8`, `rho_E=21/4`. |
+| SU(3)-invariant color geometry | no-go/obstruction | 2 | 2 | No nonzero invariant traceless adjoint vector exists. |
+| Color depolarization / centrality | no-go/obstruction | 2 | 2 | Forces traceless mean zero, not a line selector. |
+| Fierz `1+8` channel algebra | no-go/obstruction | 2 | 2 | Supplies adjoint channel and `8/9`, not one line inside `8`. |
+| Axis / cyclic label geometry | selector/chamber | 2 | 2 | Current bridge is open; no physical color-axis line supplied. |
+| Stronger readout map theorem | constructive theorem | 3 | 2 | Deferred to next block if color-ray source primitive cannot be derived. |
 
-Current-bank single-adjoint-line no-go.
-
-Scores:
-
-- Dramatic-step score: 2
-- Hard-residual pressure: 2
-
-Reason: block37 found an exact conditional primitive. Block38 checks whether that primitive is already available from current SU(3)-equivariant source geometry. It is not.
-
-## Alternatives
-
-| Route | Disposition |
-|---|---|
-| Derive line from invariant SU(3) source bank | Block38 no-go: no invariant line or rank-7 projector. |
-| Add non-invariant typed source line | Still open; requires new source geometry. |
-| Use Fadj/Rconn/Fierz scalar directly | Prior no-go plus block38 text scan: not a line selector. |
-| Use measured calibration | Already pruned as box-path rescue in block36. |
+Selected block39 route: fundamental color-ray selector plus current-source
+firewall. It is the highest-leverage route because it converts the vague
+"non-invariant geometry" residual into a precise missing primitive.

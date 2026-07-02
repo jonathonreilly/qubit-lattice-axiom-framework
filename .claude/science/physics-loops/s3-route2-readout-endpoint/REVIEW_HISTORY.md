@@ -1,15 +1,23 @@
 # Review History
 
-## 2026-06-21 Block38 Local Science Firewall
+## Block39 Self-Firewall
 
-Disposition: pending focused checks.
+Disposition: `pass_self_firewall`
 
-Checks performed:
+Checks:
 
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py` -> `PASS=20 FAIL=0`
-- Output captured under `outputs/`.
-- `python3 -m py_compile scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py` -> pass
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py` -> `PASS=103 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_rconn_kappa_ew_register_not_read.py` -> `PASS=20 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_ew_current_fierz_channel_decomposition.py` -> `PASS=31 FAIL=0`
-- Branch-local positive-overclaim scan over 16 changed files -> `positive_overclaim_hits=0`
+- New runner gives `PASS=15 FAIL=0`.
+- Exact construction is explicitly conditional on a supplied physical color ray.
+- Current-source boundary is explicit: color orientation is gauge/predictively
+  vacuous; depolarization erases traceless mean; Fierz/singlet surfaces give
+  channel algebra, not an adjoint line.
+- No observed masses, fitted Yukawas, nearest-rational endpoint selection, or
+  hidden readout convention are load-bearing.
+- No audit verdicts were applied.
+
+Adjacent attempted check:
+
+- `frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py` returns
+  `PASS=13 FAIL=1` on current `origin/main` due to a tiny pre-existing
+  `t_balance` last-decimal tolerance drift. This branch does not modify that
+  parent runner.

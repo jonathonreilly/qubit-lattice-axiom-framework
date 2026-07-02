@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 892 |
+| **retained_bounded** | 893 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1695 |
+| unaudited | 1694 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 26 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1296 |
+| `audited_clean` | 1297 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2021 |
+| `unaudited` | 2020 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 567 |
-| `high` | 508 |
+| `critical` | 568 |
+| `high` | 507 |
 | `medium` | 929 |
 | `leaf` | 1470 |
 
@@ -109,7 +109,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1030 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
@@ -230,6 +230,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broad_gravity_derivation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `broad_surrogate_point_source_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2938,6 +2939,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The bounded damage ladder does not crown p = 1 as the most robust action power on this family: p = 1 is cleanest on exponent drift when it survives, while p = 2 survives more signed damage cases.  _(class `C`)_
 - **chain closes:** True — The included runner and helper source instantiate the lattice, damaged offset masks, propagator, field, Born diagnostic, gravity sign, F~M fits, and summary counts rather than printing constants. The audited conclusion is limited to the bounded replay result and does not require a universal graph theorem.
 - **rationale:** The runner output directly supports the note's negative robustness summary: p=0.5 and p=1.0 are TOWARD on 3/6 damaged cases, while p=2.0 is TOWARD on 5/6, and p=1.0 has the smallest mean |F~M-p| among finite surviving fits. The primary and helper source show an actual bounded numerical replay from the stated lattice/action setup, with no hard-coded expected summary values or external comparator calibration. The cited authorities are retained_bounded and are used only to bound the family and neighboring action-power context, so the narrowed claim closes as a bounded theorem.
+- **auditor confidence:** high
+
+### `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For a qubit effect functional m:E(M_2)->[0,1] satisfying the stated POVM-additivity hypotheses (M1)-(M3), the note proves the unique density-matrix trace representation m(E)=Tr(sigma E) on E(M_2).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T002943Z-502b66f4-busch_povm_effect_gleaso`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From (M1)-(M3), partial additivity and bounded homogeneity extend m uniquely to a real-linear functional on Herm(M_2), and the finite-dimensional Riesz/Pauli expansion gives m(E)=Tr(sigma E) with sigma a unique density matrix.  _(class `A`)_
+- **chain closes:** True — The accepted minimal-axiom premise supplies the M_2 carrier, and (M1)-(M3) are explicit theorem hypotheses. The complement/partial-additivity, bounded homogeneity, positive-cone linear extension, Riesz representation, and positivity/trace-one steps close by finite-dimensional linear algebra.
+- **rationale:** The audited claim is narrow: it does not derive (M1)-(M3) or the full all-dimensions Busch theorem, but proves the qubit representation theorem conditional on those hypotheses. The analytic proof closes independently of external Busch/CFMR authority; the runner supports the algebra with exact and randomized finite-matrix checks, although its sampled functionals are trace-form by construction and are not themselves the universal proof. The upstream minimal-axiom citation is an accepted premise and creates no dependency downgrade.
 - **auditor confidence:** high
 
 ### `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`

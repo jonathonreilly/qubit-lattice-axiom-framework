@@ -71,10 +71,10 @@
     "meta": 326,
     "open_gate": 34,
     "retained": 206,
-    "retained_bounded": 938,
+    "retained_bounded": 939,
     "retained_no_go": 211,
     "retained_pending_chain": 4,
-    "unaudited": 1607
+    "unaudited": 1606
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [

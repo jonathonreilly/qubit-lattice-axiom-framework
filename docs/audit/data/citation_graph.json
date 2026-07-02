@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "wilson_m_h_per_channel_closure_bounded_note_2026-05-09"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "wilson_m_h_per_channel_closure_bounded_note_2026-05-09",
         "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
         "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
         "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
         "allorders_b4_marginal_protection_symmetry_theorem_note_2026-06-14",
         "brannen_delta_spectral_asymmetry_convention_isolation_note_2026-05-31",
         "color_link_sym2_endpoint_projection_2026-06-05",
-        "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08"
+        "ew_kappa_self_energy_object_pin_mc_undecidable_no_go_note_2026-06-08",
+        "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3ac7b38b435dbb521c63fe8a0aadd32ed1c6a1f4da94a41310c7964353a5641a",
+      "note_hash": "7ad3cd37705d53da2bac5cdc334c5658e11f4231dd66ff3a1983aa26f2003878",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 206 |
 | **retained_no_go** | 211 |
-| **retained_bounded** | 938 |
+| **retained_bounded** | 939 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1607 |
+| unaudited | 1606 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1367 |
+| `audited_clean` | 1368 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1933 |
+| `unaudited` | 1932 |
 
 | claim_type | count |
 |---|---:|
@@ -344,6 +344,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d2_soft_band_truncation_also_closes_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_native_stable_orbit_upper_bound_composition_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `d3_staggered_two_band_orbital_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4696,6 +4697,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** For finite periodic L=12,16 at E=0, truncating the exact step-2 Hamiltonian to kept d²={4,8} shells and exactly stepping to step 3 gives retained projected-resolvent errors 4.558e-3 and 1.3547e-2, while the harsher keep-d²=4 truncation is larger and no truncation gives zero difference.  _(class `C`)_
 - **chain closes:** True — The included runner constructs the finite periodic free d=2 Laplacian, applies Schur-complement decimations and shell truncations, and computes the projected E=0 resolvent without importing the measured values. An independent zero-sum-subspace recomputation reproduces the stated tail sizes, support counts, resolvent errors, growth from L=12 to L=16, harshness ordering, and no-truncation zero check.
 - **rationale:** The audited claim is a bounded finite-lattice datum, not an asymptotic or fixed-point theorem. The runner source performs genuine first-principles finite linear algebra from the stated free d=2 convention and contains no helper imports, hard-coded contested constants, or external comparator values. The displayed numerical claims match both the runner output and an independent computation route, so the finite scoped conclusion closes.
+- **auditor confidence:** high
+
+### `d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Free one-orbital nearest-neighbor scalar Hamiltonian on periodic cubic Z^3 lattices L=6 and L=8, audited for the step-1 even/odd Schur complement at E=0 with one E=0.3 covariance probe and the parity lemma over |d|∞ <= 4.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T060242Z-9a0908ba-d3_checkerboard_step1_cl`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** On the cubic nearest-neighbor Z^3 parity split, h_oo = μI, so the step-1 Schur complement gives diag′ = μ - 6t²/μ, face-diagonal coupling -2t²/μ, axial coupling -t²/μ, and no farther generated couplings.  _(class `C`)_
+- **chain closes:** True — The minimal-axioms authority is an accepted premise for cubic Z^3 nearest-neighbor adjacency, and the finite free one-orbital Hamiltonian is part of the scoped theorem rather than an asserted physical dynamics bridge. Independent path counting gives 6 backtracks, 2 face-diagonal shared odd neighbors, 1 axial shared odd neighbor, and no other two-step even-even displacements, with the stated Schur-complement signs.
+- **rationale:** The runner genuinely builds the finite cubic nearest-neighbor Hamiltonian, performs the parity split and Schur complement, checks the signed shell coefficients, wraparound stability, E-shift, parity lemma, and resolvent identity. The small integer coefficients are also independently forced by two-step path counting on the bipartite cubic lattice, so the hard-coded expected constants in the assertions are not the sole support. No non-accepted upstream dependency or external comparator is used; the result is clean within the stated bounded finite-lattice/free-Hamiltonian scope.
 - **auditor confidence:** high
 
 ### `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18`

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 301,
     "high": 281,
-    "leaf": 573,
+    "leaf": 572,
     "medium": 454
   },
   "cycle_break_target_count": 9,
@@ -17744,30 +17744,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_d3_checkerboard_step1_parity_lemma_2026_06_12.py",
-      "transitive_descendants": 17
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17925,6 +17901,35 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_ew_kappa_self_energy_object_pin.py",
+      "transitive_descendants": 16
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+        "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.087,
+      "note_path": "docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py",
       "transitive_descendants": 16
     },
     {
@@ -31760,7 +31765,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
+      "claim_id": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -31768,21 +31773,17 @@
       "criticality_rank": 0,
       "cross_confirmation_status": null,
       "deps": [
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
-        "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-        "three_generation_observable_theorem_note"
+        "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12",
+        "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
       ],
       "direct_in_degree": 1,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 1.5,
-      "note_path": "docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md",
+      "note_path": "docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py",
+      "runner_path": "scripts/frontier_d3_commensuration_criterion_2026_06_12.py",
       "transitive_descendants": 1
     },
     {
@@ -35125,31 +35126,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_connes_kreimer_bridge_16fold_blocking_no_go.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12",
-        "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_d3_commensuration_criterion_2026_06_12.py",
       "transitive_descendants": 1
     },
     {
@@ -48447,5 +48423,5 @@
     }
   ],
   "ready_count": 74,
-  "total_pending": 1609
+  "total_pending": 1608
 }

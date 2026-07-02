@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 869 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1735 |
+| unaudited | 1734 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -55,6 +55,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_pmns_hw1_source_transfer_boundary_note` | 1 |
 | `decoration_under_pmns_oriented_cycle_channel_value_law_note` | 1 |
 | `decoration_under_strong_cp_theta_zero_note` | 1 |
+| `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | 1 |
 | `decoration_under_three_generation_observable_theorem_note` | 3 |
 | `decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07` | 1 |
 | `decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26` | 1 |
@@ -65,20 +66,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1267 |
 | `audited_conditional` | 28 |
-| `audited_decoration` | 58 |
+| `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2061 |
+| `unaudited` | 2060 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 1804 |
-| `decoration` | 59 |
+| `decoration` | 60 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
-| `positive_theorem` | 749 |
+| `positive_theorem` | 748 |
 
 | criticality | count |
 |---|---:|
@@ -1456,6 +1457,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | judicial_review | codex-gpt-5.5 | A | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` |
 | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_decomposition_note` | judicial_review | codex-gpt-5.5 | A | `hierarchy_matsubara_decomposition_note` |
 | `hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16` | decoration | ~~audited_decoration~~ | `decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` | cross_family | codex-gpt-5.5 | A | `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02` |
+| `hopping_bilinear_hermiticity_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | cross_family | codex-gpt-5.5 | A | `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `koide_mru_demotion_note_2026-04-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `koide_kappa_spectrum_operator_bridge_theorem_2026-04-19` |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
@@ -9409,6 +9411,20 @@ Five-judge panel breakdown: 5x ('second', 'audited_clean', 'bounded_theorem', 'C
 - **load-bearing step:** The current runner computes the stated correlation-matrix entropies/ranks and reports boundary-fit R^2 exceeding volume-fit R^2 for both G=0 and G=10 globally and per side, with boundary slopes 0.186053 and 0.211399 giving ratio 0.8801.  _(class `C`)_
 - **chain closes:** True — The finite-model computation directly evaluates the claimed observable and fit comparison under the stated parameters; the conclusion is only the bounded numerical boundary-preference statement and coefficient shift.
 - **rationale:** The audited claim is tightly bounded to the finite-lattice runner's fixed model, observable, regions, and fit criterion. The provided runner output matches the note's numerical values, including global entropy fits, rank fits, per-side boundary preference, and the gravity/free coefficient ratio. No stronger holographic, continuum, Bekenstein-Hawking, AdS/CFT, or quantum-gravity conclusion is needed for the scoped statement.
+- **auditor confidence:** high
+
+### `hopping_bilinear_hermiticity_theorem_note_2026-05-02`
+
+- **Note:** [`HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md`](../../docs/HOPPING_BILINEAR_HERMITICITY_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic corollary on the retained finite tensor-product translation/fermion bridge: H_{xy}=a_x^dag a_y+a_y^dag a_x is Hermitian, translation-covariant, Q_total-conserving, and unweighted translation-invariant finite link sums commute with translations and have real spectrum.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T075255Z-c481a0ee-hopping_bilinear_hermiti`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Using the bridge identities T_a a_x T_a^dag = a_{x+a} and T_a a_x^dag T_a^dag = a_{x+a}^dag, the note expands T_a H_{xy} T_a^dag to H_{x+a,y+a}, with the other conclusions following from adjoints, ladder commutators, relabeling, and the finite spectral theorem.  _(class `A`)_
+- **chain closes:** True — The cited bridge supplies the tensor-product ladder operators, Q_total, and translation covariance identities; the source note then uses only standard adjoint, commutator, finite-sum relabeling, and spectral-theorem algebra. The occupation-swap statement closes on the distinct two-site occupation subspace under the bridge's per-site Pauli convention.
+- **rationale:** Issue: the theorem is an exact algebraic corollary of the single retained tensor-product translation/fermion bridge, with no independent comparator or additional structural input. Why this blocks independent retained status: all load-bearing steps are class A adjoint/commutator/relabeling/spectral-theorem algebra over one parent, so the decoration tie-break applies even though the algebra is correct. Repair target: keep it boxed under the tensor-product translation/fermion bridge unless a later non-decoration claim makes this hopping surface load-bearing or adds an independent comparator. Claim boundary until fixed: cite it as a finite tensor-product operator-algebra corollary, not as an independent retained physics theorem.
+- **decoration parent:** `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
 - **auditor confidence:** high
 
 ### `hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29`

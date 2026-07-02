@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 283,
     "leaf": 584,
-    "medium": 490
+    "medium": 489
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17799,7 +17799,7 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+      "claim_id": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
       "claim_type_provenance": "author_hint",
@@ -17807,17 +17807,17 @@
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "minimal_axioms"
+        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
       ],
-      "direct_in_degree": 4,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 7.087,
-      "note_path": "docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md",
+      "load_bearing_score": 6.322,
+      "note_path": "docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
-      "transitive_descendants": 33
+      "runner_path": "scripts/gauge_factor_local_selector_normalizer_2026_06_18.py",
+      "transitive_descendants": 39
     },
     {
       "audit_independence_required": "any_non_self",
@@ -17974,30 +17974,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.144,
-      "note_path": "docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gauge_factor_local_selector_normalizer_2026_06_18.py",
-      "transitive_descendants": 24
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49766,6 +49742,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 100,
-  "total_pending": 1658
+  "ready_count": 99,
+  "total_pending": 1657
 }

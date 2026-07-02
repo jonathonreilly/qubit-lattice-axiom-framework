@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 202 |
-| **retained_bounded** | 909 |
+| **retained_bounded** | 910 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 32 |
-| unaudited | 1656 |
+| unaudited | 1655 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1326 |
+| `audited_clean` | 1327 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1982 |
+| `unaudited` | 1981 |
 
 | claim_type | count |
 |---|---:|
@@ -234,6 +234,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `broken_graph_action_power_robustness_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `causal_cone_speed_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `causal_distance_tail_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -3029,6 +3030,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For |Lambda|=1 the M_2(C) effect-Gleason bridge gives m(E)=Tr(sigma E), while for |Lambda|>=2 the projection-lattice companion gives m(P)=Tr(sigma P) and homogeneity plus the finite spectral decomposition E=sum_j lambda_j P_j gives m(E)=sum_j lambda_j Tr(sigma P_j)=Tr(sigma E).  _(class `A`)_
 - **chain closes:** True — The single-site case is supplied by a retained-grade bounded qubit bridge, and the multi-site case follows from the retained projection-Gleason authority plus standard finite-dimensional additivity, homogeneity, and spectral decomposition. The probability/POVM additivity assumptions are theorem hypotheses, not derived framework content.
 - **rationale:** The cited authorities are retained-grade or accepted axiom premises, and the source note's finite-region conclusion follows by algebraic closure from them. The runner source performs real finite-operator sanity checks and does not import external comparator values; its random trace-form examples support the algebra but are not the universal proof. The audited scope does not include a quasi-local inductive-limit theorem or a derivation of the POVM probability axioms themselves.
+- **auditor confidence:** high
+
+### `bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the narrow identification that the Z^3 Pontryagin dual T^3 has Haar probability measure d^3k/(2π)^3 in [-π,π]^3 coordinates, with the continuum (2π)^3 noted only as a numerical convention comparison.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T032106Z-f10a9bc4-bz_volume_two_pi_cubed_s`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** From vol_Lebesgue([-π,π]^3)=(2π)^3 and Haar probability normalization, μ_Haar(dk)=d^3k/(2π)^3 on the dual torus T^3 of Z^3.  _(class `A`)_
+- **chain closes:** True — The accepted minimal-axiom authority supplies the Z^3 lattice substrate; standard Pontryagin duality gives (Z^3)^*=T^3=(R/2πZ)^3 and Haar uniqueness fixes probability measure to Lebesgue-volume normalization. The continuum Fourier measure is not used upstream of this derivation.
+- **rationale:** With the stated e^{ik·x} pairing, characters of Z are 2π-periodic, so the three-dimensional torus fundamental domain has volume (2π)^3 and normalized Haar density 1/(2π)^3. The cited minimal-axiom node is an accepted premise and supplies only the Z^3 substrate needed here; no non-retained cited authority is required. The runner corroborates the algebra and source-boundary guards, but its hard-coded numeric fingerprints are not load-bearing for the verdict.
 - **auditor confidence:** high
 
 ### `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`

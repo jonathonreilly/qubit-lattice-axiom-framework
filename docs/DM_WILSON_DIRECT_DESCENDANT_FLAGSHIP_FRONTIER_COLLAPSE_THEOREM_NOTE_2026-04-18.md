@@ -58,7 +58,7 @@ The live direct-descendant blocker still includes:
   charged split when a route consumes it;
 - a right-sensitive microscopic value / selector law on
   `L_e = Schur_{E_e}(D_-)`;
-- equivalently, the retained selector law on
+- equivalently, the still-missing selector law on
   `dW_e^H = Schur_{E_e}(D_-)` / the intrinsic `2`-real `Z_3` doublet-block
   point-selection law.
 
@@ -198,4 +198,4 @@ place to spend effort.
 - support provenance for the charged split consumed by the direct-descendant
   route
 - an actual right-sensitive microscopic value law for `L_e`
-- the retained selector law choosing the physical source branch / point
+- the selector law choosing the physical source branch / point

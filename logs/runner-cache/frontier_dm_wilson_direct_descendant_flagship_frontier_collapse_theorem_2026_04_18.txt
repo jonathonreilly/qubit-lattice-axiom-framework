@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18.py
-runner_sha256: 5c2901757082d3e4dd3bb5bcdeb9f84ee5b2c71707bd1c5bbd4a64c93104935a
+runner_sha256: 8b344120f4157d9b4bf5c377542d34003027178b146e6964767920a35e2b13a1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -43,7 +43,7 @@ PART 4: WITH FIXED E_e, AMBIENT COMPLETION FREEDOM DOES NOT CHANGE THE FLAGSHIP 
 PART 5: BOTTOM LINE
 ========================================================================================
   [PASS] Given a supplied fixed charged support block, ambient completion freedom does not add a downstream flagship ambiguity  (the computation is conditional on supplied E_e/L_e data; support provenance is not closed here)
-  [BOUNDARY] The former exact collapse claim is retained only as bounded fixed-support diagnostic support  (Wilson-native support provenance and the right-sensitive microscopic selector law remain open)
+  [BOUNDARY] The former exact collapse claim is kept only as bounded fixed-support diagnostic support  (Wilson-native support provenance and the right-sensitive microscopic selector law remain open)
 
 ========================================================================================
 SUMMARY: PASS=12 BOUNDARY=3 HARD_ISSUES=0

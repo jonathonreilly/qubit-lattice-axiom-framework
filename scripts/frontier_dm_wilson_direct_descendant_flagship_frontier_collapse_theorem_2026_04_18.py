@@ -321,7 +321,7 @@ def main() -> int:
         "the computation is conditional on supplied E_e/L_e data; support provenance is not closed here",
     )
     boundary(
-        "The former exact collapse claim is retained only as bounded fixed-support diagnostic support",
+        "The former exact collapse claim is kept only as bounded fixed-support diagnostic support",
         "Wilson-native support provenance and the right-sensitive microscopic selector law remain open",
     )
 

@@ -53462,10 +53462,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_from_axiom_note"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_vertex_power_operator_counting_lemma_note_2026-05-17"
     },
     {
@@ -53491,6 +53487,10 @@
     {
       "from": "repo.front_door_status",
       "to": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
     },
     {
       "from": "repo.repo_organization",
@@ -103170,17 +103170,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_from_axiom_note",
         "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
         "axiom_first_cpt_theorem_stretch_note_2026-04-29",
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
+        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
+        "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
       ],
       "helper_runner_paths": [],
-      "note_hash": "be2babcc468c44eb1936aa72c01bb1d502a000409af73d35f60d588193f498ab",
+      "note_hash": "475cb9e2a697e5196c87dacefd3a5c1114c608b3b457fdf761281731711daf6e",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 879 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1717 |
+| unaudited | 1716 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
-| ~~audited_conditional~~ | 31 |
+| ~~audited_conditional~~ | 32 |
 | ~~audited_failed~~ | 1 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -65,12 +65,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1281 |
-| `audited_conditional` | 31 |
+| `audited_conditional` | 32 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2043 |
+| `unaudited` | 2042 |
 
 | claim_type | count |
 |---|---:|
@@ -107,7 +107,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1028 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
-| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 921 | 60.85 | `audited_conditional` | ~~audited_conditional~~ |
+| 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `audited_conditional` | ~~audited_conditional~~ |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1034 | 48.02 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1127 | 46.64 | `unaudited` | meta |
@@ -1449,6 +1449,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su2_weak_beta_coefficient_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
+| `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.5 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
@@ -20294,6 +20295,21 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** On the edge-only SU(3)-covariant hopping surface Schur bi-equivariance forces f(U)=cU, so each vertex D' has one link, and the coupling-defining quadratic current-current response has two D' insertions; hence n_link=2.  _(class `C`)_
 - **chain closes:** True — Within the declared bounded surface, L1 gives an exact Schur forcing proof of one edge link per covariant hop, L2/L3 establish one link per D' insertion and two D' insertions in the selected quadratic channel, and L4 is retained algebra. The five named boundaries are not derived, but they are scoped premises/conventions rather than hidden imports.
 - **rationale:** The load-bearing exponent is derived structurally, not by fitting a strong-coupling value: the runner source constructs SU(3) link samples, staggered-Dirac matrices, finite-difference derivative operators, log-determinant response, and link-degree tests, with no external comparator checks. The Schur argument independently closes the one-link factor, and the two-insertion count follows from the explicitly scoped current-current quadratic channel. This is clean as a bounded theorem: B-GATE, B-ADJ, B-CONV, B-CHAN, and B-SPLIT remain boundaries, while the exponent and algebraic coupling map close inside that scope.
+- **auditor confidence:** high
+
+### `yt_vertex_power_operator_counting_lemma_note_2026-05-17`
+
+- **Note:** [`YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md`](../../docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional operator-counting lemma: given the staggered nearest-neighbor Dirac operator, the link-exponential convention, and the coupling-map surface, `D'` is single-link and the current-current bubble has two vertex insertions relative to one-link hopping.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T102350Z-38901e99-yt_vertex_power_operator`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** `Pi` contains two insertions of `D'`; by S1 each carries one power of the gauge link `U`, hence the vacuum-polarization link-counting exponent is `n_link = 2`.  _(class `A`)_
+- **chain closes:** False — The narrow insertion count itself follows from the displayed operator product. The source as written does not fully close because the stated second-order expansion of `Gamma_F=-Tr ln D` has the wrong sign for the `D'D'` term, and the advertised `u_0` scaling check is both algebraically inconsistent and absent from the runner.
+- **rationale:** For `D(ε)=D0+εD'+ε²D''/2`, `-Tr ln D` gives the second-order term `-1/2 Tr[D0^{-1}D''] + 1/2 Tr[D0^{-1}D'D0^{-1}D']`, not the negative bubble sign printed in S2. The runner verifies homogeneity of a manually supplied bubble and supports the two-insertion count, but it does not verify the log-det sign/factor. The note also says a fixed-`D'` `u_0` rescaling gives `u_0^2` even though two inverses would give `u_0^{-2}`; that promised check is not in the cached runner output.
+- **open / conditional deps cited:**
+  - `MINIMAL_AXIOMS_2026-05-03.md`
 - **auditor confidence:** high
 
 ### `yt_ward_identity_dependencies_registered_bound_narrow_theorem_note_2026-06-05`

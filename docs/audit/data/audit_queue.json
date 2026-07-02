@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 308,
+    "critical": 307,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -136,33 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
-        "yt_vertex_power_derivation",
-        "minimal_axioms_2026-05-03",
-        "physical_lattice_necessity_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.844,
-      "note_path": "docs/YT_VERTEX_POWER_OPERATOR_COUNTING_LEMMA_NOTE_2026-05-17.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_vertex_power_operator_counting_lemma.py",
-      "transitive_descendants": 918
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -343,15 +316,15 @@
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 8.571,
+      "load_bearing_score": 9.077,
       "note_path": "docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_hierarchy_b3_staggered_supplier_cascade_2026_06_17.py",
-      "transitive_descendants": 268
+      "transitive_descendants": 269
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -51357,6 +51330,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 97,
-  "total_pending": 1719
+  "ready_count": 96,
+  "total_pending": 1718
 }

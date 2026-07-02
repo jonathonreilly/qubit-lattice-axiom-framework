@@ -113,6 +113,7 @@ def main() -> int:
 
     for phrase in [
         "**Status:** retained",
+        "**Status:** source-note proposal",
         "retained branch-local",
         "would become retained",
         "promoted to retained",
@@ -181,11 +182,11 @@ def main() -> int:
         check(f"packet section contains: {phrase}", contains_words(packet, phrase))
 
     for phrase in [
-        "**Claim type:** bounded_theorem",
+        "**Claim type:** positive_theorem",
         "If* the per-site Hilbert space `H_x`",
         "`k(x) = 1`",
         "`dim_C H_x = 2` exactly",
-        "does not close U4",
+        "U4 statement that this note does not close",
         "No new",
         "axioms",
     ]:
@@ -200,8 +201,8 @@ def main() -> int:
         check("primary cache pins current runner SHA", f"runner_sha256: {runner_sha}" in primary_cache)
         check("primary cache exit code zero", "exit_code: 0" in primary_cache)
         check("primary cache status ok", "status: ok" in primary_cache)
-        check("primary cache has expected total", "TOTAL: PASS=18 FAIL=0" in primary_cache)
-        for tag in ["[S2] PASS", "[FALS] PASS", "[S1] PASS", "[S3] PASS", "[S4] PASS", "[CTX] PASS"]:
+        check("primary cache has expected total", "TOTAL: PASS=20 FAIL=0" in primary_cache)
+        for tag in ["[S2] PASS", "[FALS] PASS", "[S1] PASS", "[S1-CAR] PASS", "[S3] PASS", "[S4] PASS", "[CTX] PASS"]:
             check(f"primary cache contains tag: {tag}", tag in primary_cache)
     else:
         check("primary cache contract can be checked", False, "runner/cache missing")

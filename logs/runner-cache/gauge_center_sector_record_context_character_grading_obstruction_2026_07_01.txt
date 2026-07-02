@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/gauge_center_sector_record_context_character_grading_obstruction_2026_07_01.py
+runner_sha256: 05f46ffd15b7240a5394edbd60943c48223cc23f04810540c1a37726d0955b82
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+Section A: center action is diagonal on characters
+  [PASS] A1 SU(3) chi_(1,0)(omega U) = omega^((p-q) mod 3) chi(U)
+  [PASS] A1 SU(3) chi_(0,1)(omega U) = omega^((p-q) mod 3) chi(U)
+  [PASS] A1 SU(3) chi_(1,1)(omega U) = omega^((p-q) mod 3) chi(U)
+  [PASS] A1 SU(3) chi_(2,0)(omega U) = omega^((p-q) mod 3) chi(U)
+  [PASS] A1 SU(3) chi_(3,1)(omega U) = omega^((p-q) mod 3) chi(U)
+  [PASS] A1 SU(3) chi_(2,2)(omega U) = omega^((p-q) mod 3) chi(U)
+  [PASS] A2 SU(2) chi_0(-U) = (-1)^0 chi_0(U)
+  [PASS] A2 SU(2) chi_1(-U) = (-1)^1 chi_1(U)
+  [PASS] A2 SU(2) chi_2(-U) = (-1)^2 chi_2(U)
+  [PASS] A2 SU(2) chi_3(-U) = (-1)^3 chi_3(U)
+  [PASS] A2 SU(2) chi_4(-U) = (-1)^4 chi_4(U)
+Section B: retained recurrence and center-grading shift
+  [PASS] B1 retained rule chi_(1,0) chi_(0,0) = sum of channels
+  [PASS] B1 retained rule chi_(1,0) chi_(1,0) = sum of channels
+  [PASS] B1 retained rule chi_(1,0) chi_(0,1) = sum of channels
+  [PASS] B1 retained rule chi_(1,0) chi_(1,1) = sum of channels
+  [PASS] B1 retained rule chi_(1,0) chi_(2,1) = sum of channels
+  [PASS] B1 retained rule chi_(1,0) chi_(3,2) = sum of channels
+  [PASS] B1 retained rule chi_(0,1) chi_(0,0) = sum of channels
+  [PASS] B1 retained rule chi_(0,1) chi_(1,0) = sum of channels
+  [PASS] B1 retained rule chi_(0,1) chi_(1,1) = sum of channels
+  [PASS] B2 multiplication by chi_(1,0) shifts triality by exactly +1
+  [PASS] B2 multiplication by chi_(0,1) shifts triality by exactly -1
+  [PASS] B3 J6 = MF + MFb is symmetric on the truncation cone
+  [PASS] B3 projectors: orthogonal, idempotent, complete
+  [PASS] B3 spectral construction P_k = (1/3) sum_j omega^(-jk) Delta_(omega^j)
+  [PASS] B3 P_k' J6 P_k = 0 unless k' = k +- 1 (mod 3); no diagonal block
+  [PASS] B4 word rule: an (F,Fb)-insertion word shifts the sector by (#F - #Fb) mod 3
+Section C: transfer-vector sector weights
+  [PASS] C1 beta=1: Z_k > 0 on every center sector
+         Z = [0.98513, 0.007435, 0.007435]
+  [PASS] C1 beta=1: conjugation pairing Z_1 = Z_2 exactly
+  [PASS] C1 beta=1: truncation-stable (cone 30 vs 24)
+         max drift = 8.67e-19
+  [PASS] C1 beta=6: Z_k > 0 on every center sector
+         Z = [0.572386, 0.213807, 0.213807]
+  [PASS] C1 beta=6: conjugation pairing Z_1 = Z_2 exactly
+  [PASS] C1 beta=6: truncation-stable (cone 30 vs 24)
+         max drift = 5.55e-17
+  [PASS] C1 beta=12: Z_k > 0 on every center sector
+         Z = [0.346236, 0.326882, 0.326882]
+  [PASS] C1 beta=12: conjugation pairing Z_1 = Z_2 exactly
+  [PASS] C1 beta=12: truncation-stable (cone 30 vs 24)
+         max drift = 1.11e-16
+  [PASS] C2 SU(2) beta=1: odd-parity sector weight Z_odd > 0
+         Z_odd = 0.057647
+  [PASS] C2 SU(2) beta=6: odd-parity sector weight Z_odd > 0
+         Z_odd = 0.475547
+  [PASS] C3 (chi_F + chi_Fb)^m e_0 has nonnegative coefficients (m <= 4)
+  [PASS] C3 (chi_F + chi_Fb)^m e_0 supports every triality for m in {2,3,4}
+Section D: grading obstruction
+  [PASS] D1 SU(3): fusion-additive labels over Q have nullity 0 (no nontrivial Z-valued label)
+  [PASS] D1 SU(3): nullity over GF(2) is 0 (no parity label (-1)^Q exists)
+  [PASS] D1 SU(3): nullity over GF(3) is 1 (center grading, and only it)
+  [PASS] D1 SU(3): the GF(3) kernel is exactly the triality line
+  [PASS] D2 SU(2): nullity over Q is 0 (no nontrivial Z-valued label)
+  [PASS] D2 SU(2): nullity over GF(2) is 1 and the kernel is n mod 2
+  [PASS] D3 hand-proof relation replay: F.(0,0)={(1,0)}, F.(1,0)={(2,0),(0,1)}, F.(0,1) contains (0,0) => 3a = 0
+  [PASS] D4 raw integer label p-q is not additive: fund x fund channels carry {2, -1}; only the mod-3 shadow is sharp
+Section E: record-interface arithmetic
+  [PASS] E1 disjoint regions: center acts as Delta x Delta; labels add mod 3
+  [PASS] E2 sector-sharp product: (sector 1)x(sector 1) is sharp in sector 2
+  [PASS] E3 interface shape: Z_k = ||P_k psi||^2 / ||psi||^2 nonnegative, normalized, finite (3 sectors)
+Section F: source-note discipline
+  [PASS] F1 note declares canonical bounded_theorem claim type
+  [PASS] F1 note does not use runner PASS as source status
+  [PASS] F1 note graph-links the Tier-A registry quote
+  [PASS] F1 note graph-links the retained RP-half no-go row
+  [PASS] F1 unaudited no-winding-carrier note is non-load-bearing context
+TOTAL: PASS=56 FAIL=0
+
+----- stderr -----
+

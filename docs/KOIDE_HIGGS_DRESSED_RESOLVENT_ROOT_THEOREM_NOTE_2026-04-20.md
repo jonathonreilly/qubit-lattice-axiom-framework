@@ -274,9 +274,16 @@ audit dependency transparent.
   -- the open-imports register listing this theorem as one of four candidate
   routes to the Koide cone, all currently conditional on the chamber pins
   (Priority 1 entry 3).
-- [KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md](KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md)
+- `KOIDE_CL3_SELECTOR_GAP_NOTE_2026-04-19.md`
+  (backticked context reference; the row is an open-gate admission surface
+  that never chain-satisfies by design)
   -- prior gap statement classifying the same three pins as G1 observational
-  chamber pins not derived from `Cl(3)`.
+  chamber pins not derived from `Cl(3)`. The registered carrier of the
+  dimensionless generation-pattern part of that admission (occupancy/`Q`
+  selection and `delta` readout) is the Tier-A `AC_phi_lambda` entry,
+  [STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
+  (`docs/audit/data/tier_a_admissions.json`); the absolute scale pin `m_*`
+  remains the separate open scale residual.
 
 The chart/readout constants `E1 = sqrt(8/3)`, `E2 = sqrt(8)/3`, `gamma = 1/2`,
 and the cyclic generators `T_M, T_Delta, T_Q, H_base` enter via

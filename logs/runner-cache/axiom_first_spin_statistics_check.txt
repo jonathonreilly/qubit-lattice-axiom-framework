@@ -3,7 +3,7 @@ runner: scripts/axiom_first_spin_statistics_check.py
 runner_sha256: 73862c205e3b94046537bdecfa9bb433cd20140fbe5ded72b6ab47d772827a46
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.23
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================

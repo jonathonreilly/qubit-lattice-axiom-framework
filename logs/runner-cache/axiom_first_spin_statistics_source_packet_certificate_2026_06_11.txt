@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_spin_statistics_source_packet_certificate_2026_06_11.py
-runner_sha256: b76ceca74806804979b4b6ed764c3b5ca92c0d4c39f5bc7b9063198f5633502d
+runner_sha256: d51abfcaa99fca265276f66b5017240c47d92e4a41095aee53b53d1dc1eeeb6d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 axiom-first spin-statistics source-packet certificate 2026-06-11
@@ -26,6 +26,7 @@ PASS: note contains status/scope phrase: No statistics forcing
 PASS: note contains status/scope phrase: No hard-core exclusion
 PASS: note contains status/scope phrase: Sets, promotes, or changes **no** row's effective status
 PASS: note excludes overclaim: **Status:** retained
+PASS: note excludes overclaim: **Status:** source-note proposal
 PASS: note excludes overclaim: retained branch-local
 PASS: note excludes overclaim: would become retained
 PASS: note excludes overclaim: promoted to retained
@@ -79,7 +80,7 @@ PASS: primary cache contains tag: [S1-CAR] PASS
 PASS: primary cache contains tag: [S3] PASS
 PASS: primary cache contains tag: [S4] PASS
 PASS: primary cache contains tag: [CTX] PASS
-TOTAL: PASS=71 FAIL=0
+TOTAL: PASS=72 FAIL=0
 
 ----- stderr -----
 

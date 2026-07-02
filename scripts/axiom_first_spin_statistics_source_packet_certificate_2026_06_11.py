@@ -113,6 +113,7 @@ def main() -> int:
 
     for phrase in [
         "**Status:** retained",
+        "**Status:** source-note proposal",
         "retained branch-local",
         "would become retained",
         "promoted to retained",

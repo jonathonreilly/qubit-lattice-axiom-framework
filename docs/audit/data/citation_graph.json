@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "koide_berry_monopole_bridge_reduction_note_2026-05-31"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "observable_principle_record_scalar_map_no_go_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "hierarchy_alpha_lm_magnitude_delta0_open_gate_note_2026-05-30",
         "observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17",
         "lorentz_boost_free_staggered_fermion_2point_so4_narrow_theorem_note_2026-05-29",
         "axiom_first_z_n_equivariant_spectral_asymmetry_narrow_theorem_note_2026-05-26",
         "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
-        "koide_berry_monopole_bridge_reduction_note_2026-05-31"
+        "koide_berry_monopole_bridge_reduction_note_2026-05-31",
+        "observable_principle_record_scalar_map_no_go_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ec939e5b3f6425313f5cca8e1c951adb3e18aa667f32242366af425d9311f2a1",
+      "note_hash": "b96a849cb5c316868a913ba3bd26e6f2ded3a5cf68b4c06778392e078543b0d4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 893 |
+| **retained_bounded** | 894 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 30 |
-| unaudited | 1693 |
+| unaudited | 1692 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 26 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1298 |
+| `audited_clean` | 1299 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2019 |
+| `unaudited` | 2018 |
 
 | claim_type | count |
 |---|---:|
@@ -84,8 +84,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 568 |
-| `high` | 507 |
+| `critical` | 567 |
+| `high` | 508 |
 | `medium` | 929 |
 | `leaf` | 1470 |
 
@@ -109,7 +109,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
 | 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
-| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1030 | 54.01 | `audited_clean` | **retained_bounded** |
+| 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
@@ -936,6 +936,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_operator_algebraic_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_bridge_tomita_gibbs_modular_narrow_note_2026-05-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
@@ -13281,6 +13282,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Independently, set x=r_A^p and y=r_B^p; additivity would require xy=x+y, while multiplicative factorization only gives xy. For any p != 0, choose x=y=1+epsilon with 0<epsilon<1 and r_A=r_B=x^(1/p), giving defect x^2-2x != 0 with positive r values arbitrarily close to 1.
 - **rationale:** The load-bearing step is an elementary algebraic separation, not a definition, external comparator, tuned numerical match, or imported open dependency. The runner source performs actual symbolic/rational determinant, tensor-trace, logarithm, and F_p defect checks; its ledger and source-boundary checks are non-load-bearing artifact checks. The source note is scoped as a bounded negative result for this operator-algebraic scaffold and explicitly does not claim P1 closure or a global no-go beyond the stated primitives.
 - **auditor confidence:** high
+
+### `observable_principle_p1_bridge_shannon_khinchin_external_narrow_bounded_note_2026-05-17`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_SHANNON_KHINCHIN_EXTERNAL_NARROW_BOUNDED_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded external-classification statement: additive Cauchy/Shannon/Khinchin-type hypotheses classify the logarithmic/additive functional class for factorized Grassmann blocks, but do not derive the P1 additivity premise.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T004258Z-f064a386-observable_principle_p1_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Given exact P1 additivity on |Z|, determinant factorization supplies W(r1 r2)=W(r1)+W(r2), so Cauchy's theorem classifies W=c log r, while the Shannon/Khinchin/Aczel-Daroczy hypotheses already assume additivity and therefore do not retire P1.  _(class `A`)_
+- **chain closes:** True — The bounded conclusion follows once exact additivity is treated as an explicit premise: block determinant factorization gives multiplicativity of Z, and Cauchy's equation classifies continuous multiplicative-to-additive scalar functionals as c log. The source note does not claim P1 closure, and its negative boundary follows from the listed additivity/chain-rule hypotheses.
+- **rationale:** The note is correctly scoped as a bounded theorem, not a derivation of the observable-principle P1 premise. The direct repo authority provided for the Grassmann determinant content is retained-grade, and the runner source performs real algebraic/symbolic checks plus source-scope guards rather than merely printing PASS. No external numerical comparator, tuned input scale, or hidden status promotion is used; the unretired P1 premise is declared as the boundary of the result.
+- **auditor confidence:** medium
 
 ### `observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21`
 

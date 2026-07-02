@@ -1,7 +1,7 @@
 {
   "criticality_counts": {
-    "critical": 576,
-    "high": 509,
+    "critical": 575,
+    "high": 510,
     "leaf": 1562,
     "medium": 972
   },
@@ -43,8 +43,8 @@
     {
       "claim_id": "plaquette_self_consistency_note",
       "criticality": "critical",
-      "load_bearing_score": 54.01,
-      "transitive_descendants": 1030
+      "load_bearing_score": 54.008,
+      "transitive_descendants": 1029
     },
     {
       "claim_id": "minimal_axioms_2026-05-03",

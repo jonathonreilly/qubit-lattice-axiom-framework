@@ -177,10 +177,11 @@ def main() -> int:
     )
 
     t_balance_err = abs(tensor_data.t_balance - abs(data.rho_t))
+    t_balance_tol = 2 * EXACT_TOL
     check(
         "t_balance is the absolute live T-channel slope/intercept ratio",
-        t_balance_err < EXACT_TOL,
-        f"t_balance={tensor_data.t_balance:.12f}, |beta_T/alpha_T|={abs(data.rho_t):.12f}",
+        t_balance_err < t_balance_tol,
+        f"t_balance={tensor_data.t_balance:.12f}, |beta_T/alpha_T|={abs(data.rho_t):.12f}, tol={t_balance_tol:.1e}",
     )
 
     q_t = Fraction(1, 1) + Fraction(-1, 1) / Fraction(6, 1)

@@ -2,8 +2,8 @@
 
 **Date:** 2026-07-01
 **Claim type:** bounded_theorem
-**Audit status:** set only by the independent audit lane. This source note
-does not set, predict, or apply an audit verdict.
+**Status authority:** independent audit lane only. This source note does not
+set, predict, or apply an audit verdict.
 **Primary runner:**
 [`scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py`](../scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_2026_07_01.py)
 
@@ -251,5 +251,5 @@ python3 scripts/wilson_temporal_kernel_casimir_generator_beta_gbare_transport_20
 Expected:
 
 ```text
-TOTAL: PASS=72 FAIL=0
+TOTAL: PASS=73 FAIL=0
 ```

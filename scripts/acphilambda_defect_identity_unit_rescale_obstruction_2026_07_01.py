@@ -407,6 +407,7 @@ def main() -> int:
 
     # ------------------------------------------------------------ PART H
     print("\nPART H -- note discipline")
+    check("note declares canonical bounded_theorem claim type", "**Claim type:** bounded_theorem" in note)
     check("note declares independent audit authority", "independent audit lane only" in note)
     check(
         "note declares no registry/axiom/convention edit",
@@ -430,6 +431,19 @@ def main() -> int:
           "Angle-native route" in note)
     check("note keeps the owner-governance route explicit",
           "Owner-governance primitive" in note)
+    linked_authorities = [
+        "(MINIMAL_AXIOMS_2026-06-29.md)",
+        "(KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)",
+        "(SCALE_REFERENCE_PRIMITIVE_NOTE.md)",
+        "(KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)",
+        "(REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)",
+        "(KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)",
+        "(BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md)",
+        "(KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)",
+        "(PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md)",
+    ]
+    for link in linked_authorities:
+        check(f"note graph-links authority {link}", link in note)
     for item in ["N1", "N2", "N3", "N4", "N5", "N6", "N7", "N8"]:
         check(f"note includes {item}", f"### {item}" in note)
     forbidden = [
@@ -445,7 +459,8 @@ def main() -> int:
     ]
     for phrase in forbidden:
         check(f"note avoids overclaim phrase: {phrase}", phrase not in note)
-    check("note says not a terminal no-go", "Not a terminal no-go" in note)
+    check("note does not use runner PASS as source status", "**Status:** PASS" not in note)
+    check("note says not a terminal no-go", "not a terminal no-go" in note)
     check(
         "note preserves future bridge derivations explicitly",
         "cannot be derived by a future angle-native" in flat_note

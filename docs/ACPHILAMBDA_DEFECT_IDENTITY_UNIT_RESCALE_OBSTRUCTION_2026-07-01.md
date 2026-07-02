@@ -1,7 +1,9 @@
 # AC_phi_lambda Defect Identity-Unit Rescale Obstruction And Junction Localization
 
 **Date:** 2026-07-01
-**Claim type:** bounded route no-go / selector narrowing + wall consolidation.
+**Claim type:** bounded_theorem
+**Scope:** bounded route no-go / selector narrowing + wall consolidation over
+the enumerated homogeneous premise surface.
 **Status authority:** independent audit lane only. This note does not set an
 audit verdict, edit registries, register primitives, change axioms, adopt a
 convention, or claim `AC_phi_lambda` retirement.
@@ -37,7 +39,7 @@ localizes it exactly.
 
 ## Self-Contained Normal Form
 
-The Record axiom (`docs/MINIMAL_AXIOMS_2026-06-29.md`) supplies, verbatim:
+The [Record axiom](MINIMAL_AXIOMS_2026-06-29.md) supplies, verbatim:
 
 ```text
 Only records are readable. For any finite collection of pairwise-disjoint
@@ -45,8 +47,9 @@ records, scalar readout I is additive, with I(empty)=0.
 ```
 
 On a class of selected-defect records whose scalar dependence factors through
-the single density value `L = L3(1,2) = 2/9` (retained fixed-locus
-arithmetic), additivity determines `I` from the singleton value
+the single density value `L = L3(1,2) = 2/9` (retained
+[`KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+fixed-locus arithmetic), additivity determines `I` from the singleton value
 `u = I({D})`: for `n = |R|` pairwise-disjoint records, `I(R) = n*u`. Writing
 `c = u/L` gives `I_c(R) = c*|R|*L`, and conversely every real `c` defines a
 finite additive readout. The identity-unit member is `c=1`, `I({D}) = 2/9`.
@@ -71,13 +74,13 @@ The scanned clauses, with their sources:
 | translation / proper cubic-rotation covariance | Lattice axiom + selected context | invariant |
 | disjoint-refinement consistency (composite reads the sum of parts) | additivity corollary | invariant |
 | same unit serves all lanes/sectors | cross-lane covariance | invariant (a global `lambda` preserves unit-sharing) |
-| `scale_reference_primitive` granted content | its note: "This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it." | grants nothing dimensionless; `c` is dimensionless |
-| `kinetic_isotropy_primitive` granted content | same clause in its note | grants no selector/readout bridge |
-| `realized_state_primitive` granted content | its note: "This is pointwise evaluation, not a state-selection rule. It carries zero state-contingent content: no state, ..., normalization rule, or value is supplied by it." | grants evaluation of an already-selected functional; selecting the functional is the wall |
+| `scale_reference_primitive` granted content | [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md): "This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it." | grants nothing dimensionless; `c` is dimensionless |
+| `kinetic_isotropy_primitive` granted content | [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md), same boundary clause | grants no selector/readout bridge |
+| `realized_state_primitive` granted content | [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md): "This is pointwise evaluation, not a state-selection rule. It carries zero state-contingent content: no state, ..., normalization rule, or value is supplied by it." | grants evaluation of an already-selected functional; selecting the functional is the wall |
 
 The Record axiom's registry node
-(`docs/audit/data/axiom_premise_nodes.json`, `minimal_axioms`) states the
-exclusion directly:
+([`docs/audit/data/axiom_premise_nodes.json`](audit/data/axiom_premise_nodes.json),
+`minimal_axioms`) states the exclusion directly:
 
 ```text
 It still supplies no context-selection rule, occurrence rule, weighting,
@@ -133,8 +136,9 @@ The retained charged-lepton surface is the circulant chamber form
 x_k = v0 * (1 + sqrt(2) * cos(delta + 2*pi*k/3)),   k in Z3
 ```
 
-(`koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`,
-retained; `brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15`,
+([`KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md),
+retained;
+[`BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md`](BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md),
 retained_bounded: Hermitian generators commuting with the cyclic shift have
 this circulant form; no derivation of `delta` is audited there).
 
@@ -165,11 +169,13 @@ number `2/9` with the angular offset `delta` — and nowhere else.
 That junction already has two registered names:
 
 - Tier-A `AC_phi_lambda` sub-admission (ii), verbatim from
-  `docs/audit/data/tier_a_admissions.json`: "the delta readout identification
+  [`docs/audit/data/tier_a_admissions.json`](audit/data/tier_a_admissions.json):
+  "the delta readout identification
   R-eta (density-read-as-angle; the magnitude 2/9 is retained-bounded
   fixed-locus arithmetic conditional on R-eta, not an admitted number)".
 - The retained_no_go row
-  `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24`, scope: the
+  [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md),
+  scope: the
   listed sources "do not derive the literal 2/9-radian selected-line bridge;
   the Type-B-to-radian identification remains primitive."
 
@@ -224,7 +230,7 @@ The obstruction is constructive about what a winning theorem looks like:
   same-surface source/action theorem whose output *is* the angular offset.
   On that route no unit parameter ever arises: the angular variable has no
   unit freedom (T3), and the retained boundary row
-  `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`
+  [`PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md`](PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md)
   records that U(1) phase is native on the finite Hilbert surface. The
   remaining work is then a same-surface equality: show the produced angle
   equals the fixed-locus density value `2/9` by derivation.
@@ -271,8 +277,8 @@ count `W_defect_identity_unit` and R-eta as independent walls.
 
 ## No-Go Discipline Gate
 
-**Status:** PASS for bounded route no-go over the scanned surface plus
-positive rigidity/consolidation theorems. Not a terminal no-go: the
+This checklist supports only a bounded route no-go over the scanned surface
+plus positive rigidity/consolidation theorems. It is not a terminal no-go: the
 angle-native and rescale-breaking bridge routes are live and are named with
 their required shape.
 

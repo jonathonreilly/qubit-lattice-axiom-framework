@@ -1,18 +1,14 @@
 # Opportunity Queue
 
-1. **Typed magnitude theorem**
-   - Target: source `|c_TE| = F_adj` as a Route-2 readout statement.
-   - Why next: block24 shows this is exactly the remaining source-domain
-     theorem, not a weaker scalar condition.
+Ranked after block25.
 
-2. **Physical readout/weighting route**
-   - Target: test whether the physical connected-trace selector can supply the
-     typed magnitude statement without endpoint matching.
-   - Why next: possible source for the typecast, but separate from color count.
+| Rank | Target | Why It Moves Science | Risk | Next Action |
+|---:|---|---|---|---|
+| 1 | E-center functoriality / typed landing theorem | A positive result would supply the missing `nu = 1` theorem or a direct typed edge. | High | Try a first-principles naturality/functor attack on the E-center landing map. |
+| 2 | Direct-consumer readout ambiguity packet | If the endpoint stays blocked, classify which downstream consumer depends only on E-center magnitude versus sign/support. | Medium | Pick the next direct consumer and build a narrow support/no-go packet. |
+| 3 | Source-domain scalar equivalence class | Sharpen whether any accepted scalar invariant besides `F_adj` can carry the Route-2 type. | Medium | Enumerate scalar candidates and prove same ambiguity or find a typed carrier. |
+| 4 | Positivity plus endpoint algebra convexity | Confirm no positivity/monotonicity constraint narrows `nu` enough to force the endpoint. | Low | Build a compact exact family runner over positive `nu`. |
 
-3. **Alternate E-channel source functional**
-   - Target: compute `q_E` from E-channel support/source geometry without
-     `R_conn`.
-   - Why next: bypasses the color magnitude route.
-
-Recommended next `/goal`: **typed magnitude theorem**.
+Current recommendation: pursue rank 1 next. Block25 reduced the missing step to
+one explicit normalization theorem, so the best next science is a direct attack
+on that theorem.

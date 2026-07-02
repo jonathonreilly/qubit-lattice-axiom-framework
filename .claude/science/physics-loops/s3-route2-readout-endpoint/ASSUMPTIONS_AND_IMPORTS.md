@@ -1,12 +1,46 @@
 # Assumptions And Imports
 
-| Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
-|---|---|---|---|---|---|---|---|
-| Positive-lift domain | Allows absolute-value inversion | exact support/no-go boundary | positivity parent note | yes | yes | already supplied | imported |
-| T-side values | Set `|c_TE|=(5/3)/q_E` | conditional parent surface | naturality/readout parent notes | yes | yes | separate T-side authority | granted as parent context |
-| Endpoint algebra | Gives inverse magnitude formula | framework-derived | exact readout parent note | yes | yes | already supplied | imported |
-| `F_adj=8/9` | Candidate color-domain magnitude | exact color support | `RCONN_DERIVED_NOTE.md` | yes | yes | typed Route-2 typecast theorem | not enough alone |
-| Typed source-domain theorem | Needed to make magnitude a Route-2 statement | open import | none on current branch | yes | yes | future positive theorem | remains open |
+## Allowed Minimal Premises
 
-No live endpoint matching, observed masses, fitted targets, or nearest-rational
-selector is used.
+- Exact source-domain color support: `F_adj = (N_c^2 - 1) / N_c^2 = 8/9` at
+  `N_c = 3`.
+- Positive-lift Route-2 domain: `rho_E > -6`.
+- Granted T-side values for the local reduction: `q_T = 5/6` and `s_TE = -2`.
+- Endpoint algebra:
+
+```text
+|c_TE| = (5/3) / q_E
+q_E = 1 + rho_E/6
+```
+
+- Existing quote-derived typed-edge inventory from the source-domain bridge
+  runner.
+- Exact rational arithmetic.
+
+## Forbidden Proof Inputs
+
+- Observed masses.
+- Fitted Yukawa, CKM, or J targets.
+- Live endpoint nearest-rational selection.
+- Physical connected-trace selector.
+- A hidden scalar-to-Route-2 unit normalization.
+
+## New Import Exposed
+
+The block exposes one missing theorem:
+
+```text
+unit typecast normalization: nu = 1
+```
+
+Equivalently, the current bank must supply one of:
+
+```text
+scalar magnitude 8/9 -> Route-2 |c_TE| = 8/9
+su3_R_conn_8_9 -> route2_center_TE_minus_8_9
+su3_R_conn_8_9 -> route2_q_E_15_8
+su3_R_conn_8_9 -> route2_rho_E_21_4
+```
+
+Block25 shows that the current parents do not already provide any of these
+typed landings.

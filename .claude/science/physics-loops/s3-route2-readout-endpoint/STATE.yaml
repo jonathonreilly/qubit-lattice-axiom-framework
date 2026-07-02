@@ -1,39 +1,54 @@
 loop_slug: s3-route2-readout-endpoint
-block: 24
+block: 25
 date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block24-20260621
-base: origin/main
-base_commit: ac664c3ca
-mode: campaign_science_block
+branch: physics-loop/s3-route2-readout-endpoint-block25-20260621
+base: main
+base_commit: 1d43e206d8bb
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block25-20260621
+mode: campaign
+user_constraints:
+  - do_not_run_audit_or_apply_verdicts
+  - make_prs_only
+  - do_not_push_to_main
+  - do_not_refresh_existing_prs_to_main
+  - do_not_check_pr_conflicts_or_mergeability
+active_route: typed_magnitude_unit_typecast_normalization
 actual_current_surface_status: no-go
-target_claim: s3_time_theta_to_slice_coupling_note
-active_route: magnitude_typecast_equivalence_no_go
-hard_residual: independent typed source-domain theorem for |c_TE| = F_adj
-automation_lock:
-  mode: degraded_branch_local
-  note: "repo automation lock status failed with permission error at /Users/jonreilly; independent worktree used"
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+artifact_role: no_go
+target_blocker: "source-domain scalar F_adj still lacks an accepted typed Route-2 landing theorem fixing |c_TE| = F_adj"
+claim_movement: "isolates the missing normalization as nu = 1 in |c_TE| = nu F_adj"
 files_touched:
-  - docs/QUARK_ROUTE2_SOURCE_DOMAIN_MAGNITUDE_TYPECAST_EQUIVALENCE_NO_GO_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_source_domain_magnitude_typecast_equivalence_no_go_2026_06_21.py
-  - outputs/frontier_quark_route2_source_domain_magnitude_typecast_equivalence_no_go_2026_06_21.txt
+  - docs/QUARK_ROUTE2_SOURCE_DOMAIN_TYPECAST_SCALE_NORMALIZATION_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_source_domain_typecast_scale_normalization_no_go_2026_06_21.py
+  - outputs/frontier_quark_route2_source_domain_typecast_scale_normalization_no_go_2026_06_21.txt
+  - outputs/rconn_matching_rule_nogo_certificate_block25.txt
+  - outputs/frontier_ew_current_fierz_channel_decomposition_block25.txt
+  - outputs/frontier_rconn_kappa_ew_register_not_read_block25.txt
+  - outputs/frontier_quark_route2_source_domain_bridge_no_go_block25.txt
+  - outputs/frontier_quark_route2_exact_readout_map_block25.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
+open_imports:
+  - unit typecast normalization: nu = 1
+  - scalar magnitude 8/9 to Route-2 |c_TE| = 8/9 typed landing
+  - direct typed edge su3_R_conn_8_9 to route2_center_TE_minus_8_9
 verification:
-  new_runner: "TOTAL: PASS=33, FAIL=0"
-  positivity_parent: "TOTAL: PASS=8, FAIL=0"
-  naturality_parent: "TOTAL: PASS=28, FAIL=0"
-  exact_readout_parent: "PASS=11 FAIL=0"
-  source_domain_parent: "TOTAL: PASS=103, FAIL=0"
+  block_runner: "PASS=48 FAIL=0"
+  rconn_matching_rule_nogo_certificate: "PASS=30 FAIL=0"
+  ew_current_fierz_channel_decomposition: "PASS=31 FAIL=0"
+  rconn_kappa_register_not_read: "PASS=20 FAIL=0"
+  route2_source_domain_bridge: "PASS=103 FAIL=0"
+  route2_exact_readout_map: "PASS=11 FAIL=0"
   py_compile: pass
-  diff_check: pass
-  wording_scan: pass
-trace_gate:
-  trace_class: negative_route_pruning
-  reachability_to_target: prunes
-  artifact_role: no_go
-pr:
-  status: open
-  number: 4553
-  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4553
-  title: "[physics-loop] s3-route2-readout-endpoint block24 no-go"
-next_exact_action: "Continue campaign with typed magnitude theorem or current-bank no-go."
-stop_condition: "Continue campaign if runtime remains after PR handoff."
+review_verdict: not_run_by_user_constraint
+pr_status: open
+pr_identity:
+  number: 4554
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4554
+  title: "[physics-loop] s3-route2-readout-endpoint block25 no-go"
+  headRefName: physics-loop/s3-route2-readout-endpoint-block25-20260621
+  baseRefName: main
+  state: OPEN
+next_exact_action: "start block26 on E-center functoriality / typed landing theorem without refreshing existing PRs or checking conflicts"
+stop_condition: null

@@ -1,5 +1,12 @@
 # Literature Bridges
 
-No external literature bridge was used.
+No external literature was used in block25.
 
-The packet uses exact rational arithmetic and current repository surfaces.
+All checks are internal to the repo's current source bank:
+
+- `RCONN_DERIVED_NOTE.md`
+- `EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`
+- `RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`
+- `QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`
+- `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`
+- `ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md`

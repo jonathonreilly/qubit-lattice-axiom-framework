@@ -56302,11 +56302,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
+      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
-      "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+      "to": "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10"
     },
     {
       "from": "repo.front_door_status",
@@ -56326,11 +56326,11 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+      "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
     },
     {
       "from": "repo.front_door_status",
-      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+      "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -108439,17 +108439,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
-        "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f80596ea9451d79790a650482d2ec3410df3d93895912000408838f0d09522ef",
+      "note_hash": "eb4e3ff25d3204b8798f07b349f2e1aafa29172e4ccd5f20805a17887e5bf5d9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

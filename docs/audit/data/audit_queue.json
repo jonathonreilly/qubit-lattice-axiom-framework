@@ -343,24 +343,24 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
-      "claim_scope": null,
+      "claim_scope": "Finite-dimensional real antisymmetric D with positive real diagonal S gives det(S+D) in R_{>0}; on the stated Neumann neighborhood det(D+J)>0; with explicit continuity on R_{>0}, finite disjoint-record additivity selects c log det up to the c=1 convention.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms"
       ],
       "direct_in_degree": 6,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 16.237,
       "note_path": "docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_real_diagonal_source_det_positivity_lemma_2026_06_08.py",
       "transitive_descendants": 1206
@@ -382,15 +382,15 @@
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "fermion_parity_z2_grading_theorem_note_2026-05-02"
       ],
-      "direct_in_degree": 9,
+      "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.713,
+      "load_bearing_score": 18.214,
       "note_path": "docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py",
-      "transitive_descendants": 1186
+      "transitive_descendants": 1187
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -511,15 +511,15 @@
         "gstar_thermal_seven_eighths_stefan_boltzmann_bridge_narrow_theorem_note_2026-06-06",
         "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.528,
+      "load_bearing_score": 15.029,
       "note_path": "docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_axiom_first_fermionic_stefan_boltzmann_narrow.py",
-      "transitive_descendants": 1043
+      "transitive_descendants": 1044
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -536,15 +536,15 @@
         "minimal_axioms",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 14.528,
+      "load_bearing_score": 15.029,
       "note_path": "docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/staggered_kernel_z_certificate_check_2026_06_11.py",
-      "transitive_descendants": 1043
+      "transitive_descendants": 1044
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -584,15 +584,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 11,
+      "direct_in_degree": 10,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 18.514,
+      "load_bearing_score": 18.013,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py",
-      "transitive_descendants": 1033
+      "transitive_descendants": 1032
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -611,15 +611,15 @@
         "strong_cp_theta_zero_note",
         "minimal_axioms"
       ],
-      "direct_in_degree": 20,
+      "direct_in_degree": 19,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 22.997,
+      "load_bearing_score": 22.496,
       "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
-      "transitive_descendants": 1021
+      "transitive_descendants": 1020
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

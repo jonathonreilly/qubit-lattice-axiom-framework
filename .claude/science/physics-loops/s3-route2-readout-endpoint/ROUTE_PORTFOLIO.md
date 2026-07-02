@@ -1,24 +1,26 @@
 # Route Portfolio
 
-## Block09 Selected Route
+| Route | Type | Claim movement | Trace reachability | Import retirement | Artifactability | Risk | Decision |
+|---|---|---:|---:|---:|---:|---:|---|
+| Dual-normalized source/readout two-factor bridge | constructive theorem / import audit | 3 | 3 | 2 | 3 | 1 | selected for block10 |
+| Nonseparable degree-2 primitive | novel construction | 3 | 2 | 3 | 1 | 2 | next if source/readout dual-leg license fails |
+| Exact bright-channel identification | import retirement | 2 | 2 | 3 | 2 | 2 | queued |
+| Exact reduced anisotropic shell amplitude | import retirement | 2 | 2 | 3 | 2 | 2 | queued |
+| Physical tensor primitive bridge for `Theta_R^(0)` / `K_R` | constructive theorem | 3 | 3 | 3 | 1 | 3 | queued, hard residual |
 
-No-go / exact support boundary for reciprocal projector factor degree.
+## Selected Route Rationale
 
-Score: high route-pruning value, direct trace to endpoint, low blast radius,
-strong artifactability.
+The prior inverse-square and factor-degree no-go stack made the remaining
+positive target precise: total reciprocal projector-weight degree two. The
+dual-normalized source/readout route is the most direct first-principles
+candidate because finite-frame Riesz duals naturally produce reciprocal local
+weights. It can either supply a real bridge or expose the exact missing license.
 
-## Fan-Out Frames
+## Fan-Out Synthesis
 
-| Frame | Expected reciprocal degree | Outcome |
-|---|---:|---|
-| raw carrier/readout | 0 | misses |
-| source-normalized single reciprocal | 1 | misses |
-| readout-normalized single reciprocal | 1 | misses |
-| Schur-dual single reciprocal | 1 | misses |
-| source times readout reciprocal | 2 | closes conditionally, but the two factors are not derived |
-
-## Deferred Positive Route
-
-Derive two independent reciprocal local projector-weight factors from named
-Route-2 source/readout/tensor structure. This is the next positive target after
-block09.
+- Raw carrier/readout degree 0 misses.
+- One source or readout dual leg has degree 1 and misses.
+- Independent source and readout dual legs have degree 2 and close the endpoint
+  algebra conditionally.
+- The current surface does not derive those independent legs.
+- A nonseparable degree-2 primitive remains a live alternative target.

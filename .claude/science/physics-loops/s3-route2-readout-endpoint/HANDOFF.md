@@ -1,49 +1,86 @@
 # Handoff
 
-## Block09 Summary
+## Block10 Summary
 
-This block attacks the inverse-square local projector-normalization target from
-factor-degree first principles.
-
-It proves a narrow no-go:
+Branch:
 
 ```text
-zero reciprocal factors -> lambda = 1      -> misses
-one reciprocal factor   -> lambda = 3/2    -> misses
-two reciprocal factors  -> lambda = 9/4    -> closes conditionally
+physics-loop/s3-route2-readout-endpoint-block10-20260621
 ```
 
-The current source/readout notes do not derive the two factors. The endpoint
-`rho_E = 21/4` remains open.
+PR:
 
-## PR Policy
+```text
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4539
+```
 
-Do not push to main. Do not refresh previous PR branches to main. Do not check
-conflict or mergeability status. Verify only PR identity fields after PR
-creation.
+Block10 proves a conditional support theorem:
 
-## Verification
+```text
+finite-frame local Riesz dual normalization gives one reciprocal projector-weight factor;
+two independent source/readout dual legs give total reciprocal degree two;
+degree two gives lambda = 9/4 and the Route-2 endpoint algebra exactly.
+```
 
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.py`: `PASS=14 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py`: `PASS=11 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py`: `PASS=7 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py`: `PASS=11 FAIL=0`
-- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py`: `PASS=12 FAIL=0`
-- `python3 -m py_compile scripts/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.py`: pass
-- `git diff --check`: pass
-- Local wording firewall: pass.
+The block also proves the current-surface license gap:
 
-No audit runner was run. No existing PR branch was refreshed or conflict-checked.
+```text
+current Route-2 tensor/readout notes do not derive the two independent
+source/readout dual legs on the physical tensor primitive surface.
+```
 
-## PR
+## Artifacts
 
-- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4538
-- Branch: `physics-loop/s3-route2-readout-endpoint-block09-20260621`
-- Commit: `226ff4075`
-- Identity-only verification: PR #4538, base `main`, head
-  `physics-loop/s3-route2-readout-endpoint-block09-20260621`, state `OPEN`.
+- `docs/QUARK_ROUTE2_DUAL_NORMALIZED_SOURCE_READOUT_TWO_FACTOR_BRIDGE_CONDITIONAL_NOTE_2026-06-21.md`
+- `scripts/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.py`
+- `logs/runner-cache/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.txt`
+- `.claude/science/physics-loops/s3-route2-readout-endpoint/`
 
-## Next Exact Action
+## Current Verification
 
-Continue the campaign with the next ranked science target. Do not refresh older
-PRs and do not check conflict state.
+Completed:
+
+```text
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.py
+PASS=19 FAIL=0
+
+python3 -m py_compile scripts/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.py
+pass
+
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
+PASS=11 FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py
+PASS=8 FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py
+PASS=12 FAIL=0
+
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py
+PASS=11 FAIL=0
+
+git diff --check
+pass
+
+branch-local status/overclaim rg scan
+no matches
+```
+
+PR identity verification:
+
+```json
+{"baseRefName":"main","headRefName":"physics-loop/s3-route2-readout-endpoint-block10-20260621","number":4539,"state":"OPEN","title":"[physics-loop] s3-route2-readout-endpoint block10 conditional-support","url":"https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4539"}
+```
+
+## Remaining Nature-Grade Blocker
+
+Derive or no-go the actual Route-2 license that both source preparation and
+readout evaluation are independently local Riesz-dual-normalized against the
+`E` and `T1` projected arms, or construct an equivalent total-degree-2
+nonseparable primitive.
+
+## Exact Next Action
+
+Continue the campaign with the independent source/readout dual-leg license
+target: derive or no-go the theorem that the physical Route-2 source and
+readout legs are both local Riesz-dual-normalized.

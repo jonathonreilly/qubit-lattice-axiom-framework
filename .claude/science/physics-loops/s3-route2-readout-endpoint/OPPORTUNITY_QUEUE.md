@@ -1,14 +1,13 @@
 # Opportunity Queue
 
-1. Derive the two reciprocal local projector-weight factors from source/readout
-   factorization or Schur-dual response.
-   - Best positive target after block09.
-   - Must avoid live endpoint fits and nearest-rational selection.
+| Rank | Target | Why it matters | Expected honest output | Status |
+|---:|---|---|---|---|
+| 1 | Derive the independent source/readout dual-leg license | Would turn block10 conditional support into a direct endpoint bridge | theorem or sharp obstruction | next |
+| 2 | Search for a nonseparable total-degree-2 primitive | Avoids assuming separable source/readout factorization | construction or no-go | queued |
+| 3 | Bright-channel identification theorem | Retires one named admitted input in the tensor prototype | exact support or no-go | queued |
+| 4 | Exact reduced anisotropic shell amplitude | Retires the normalization gap that blocks endpoint coefficient authority | exact support or no-go | queued |
+| 5 | Physical tensor primitive bridge for `Theta_R^(0)` / `K_R` | Connects definition-only tensor surfaces to the physical readout chain | hard stretch attempt | queued |
 
-2. Build a tensor-source no-go for possible two-factor origins if no named
-   factorization can be found.
-   - Would prune the next positive route family.
-
-3. Pivot to another direct consumer of the Route-2 readout ambiguity if the
-   endpoint primitive remains blocked.
-   - Use exact consumer firewalls like block08.
+The next best target after block10 is rank 1: derive or no-go the actual
+Route-2 source/readout dual-leg license. It is the narrowest missing premise
+exposed by this block.

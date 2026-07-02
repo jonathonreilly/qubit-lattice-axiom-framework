@@ -2,14 +2,13 @@
 
 | Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
 |---|---|---|---|---|---|---|---|
-| Restricted Route-2 carrier columns | Exact basis for E/T shell and center columns | framework-derived | `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md` | yes | yes | already supplied by parent note and runner | imported as exact parent surface |
-| Readout family `P(rho_E)` | Determines which carrier directions see unresolved E-center entry | framework-derived with one open parameter | `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md` | yes | yes | E-center/source/readout theorem | used only for dependency classification |
-| T-side entries | Permit the reduced two-row family used by current notes | conditional parent surface | Route-2 endpoint notes | yes | yes | separate positive theorem or admitted parent condition | granted as parent context, not newly claimed |
-| `Lambda_R` and `V_R(t)` | Safe time-channel consumers | framework-derived | `QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md` | yes | yes | already supplied by parent note | safe direct consumer |
-| Factor-rigidity theorem | Localizes ambiguity in spatial prefactor | exact support | `S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md` | yes | yes | already supplied by parent note | used as source anchor |
-| E-center blindness no-go | Proves blind constraints cannot see the missing direction | exact negative boundary | `QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md` | yes | yes | positive E-center rule | used to guard dependent consumers |
-| Physical readout primitive | Needed for final physical use | open import | none on current branch | no for this block | no | source-domain theorem, bridge, or explicit convention | remains open |
+| `CURRENT_TYPED_EDGES` | Base source-domain typed graph | quote-anchored configured graph | `frontier_quark_route2_source_domain_bridge_no_go.py` | yes | yes | replace with a stronger typed theorem | used as current bank |
+| `DERIVED_ADDITIONAL_EDGES` | Reverse endpoint algebra edges | quote-derived graph extension | `QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md` | yes | yes | already supplied by parent runner | used as current bank |
+| `MISSING_BRIDGE` | Exact absent bridge object | named open theorem edge | source-domain no-go runner | yes | yes | source-domain E-center theorem | remains missing |
+| `F_adj = 8/9` | SU(3) color-domain support | exact color support | `RCONN_DERIVED_NOTE.md` | yes | yes | typed Route-2 readout landing edge | scalar alone is insufficient |
+| Endpoint algebra | Converts `c_TE`, `q_E`, and `rho_E` | framework-derived | `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md` | yes | yes | already supplied by parent note | downstream algebra only |
+| Physical selector context | Tempting alternate route | separate open context | `RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md` | no | no | physical readout/weighting theorem | not used as a proof input |
 
-No endpoint value is used as proof input in this block. The comparison with
-`rho_E = 21/4` is only a classifier showing which columns change when the
-unresolved parameter changes.
+Forbidden proof inputs for this block: observed quark masses, fitted Yukawa
+entries, CKM/J targets, live endpoint nearest-rational selection, or untyped
+identification of a color scalar with a Route-2 endpoint ratio.

@@ -1,8 +1,7 @@
 # Literature Bridges
 
-No external literature bridge was used in this block.
+No external literature bridge was used.
 
-All inputs are current repository surfaces and exact runner checks. A future
-source-domain E-center run may need outside mathematics only if the repo lacks
-the typed source or representation theorem needed to constrain the center
-direction.
+The block is entirely repository-grounded: it imports the existing typed graph,
+Route-2 endpoint algebra, Rconn color-domain support, and physical-selector
+boundary notes.

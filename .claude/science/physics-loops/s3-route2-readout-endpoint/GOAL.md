@@ -1,16 +1,14 @@
 # Goal
 
-Block21 answers the next useful S3/Route-2 target:
+Block22 attacks the source-domain E-center target selected after block21:
 
-> Classify current direct consumers by whether they evaluate the unresolved
-> E-center `delta_E` direction.
+> Determine exactly what extra typed source/readout edge must be supplied for
+> `R_conn` support to reach the Route-2 E-center readout entry.
 
-The practical result is a reviewable exact-support split. Time-channel and
-carrier-definition consumers can be used without waiting for a new E-center
-rule, while `q_E`, `rho_E`, center `T/E`, physical eta-floor, unique `P_R`,
-and final Einstein/Regge consumers remain blocked by the same E-center/source
-readout residual.
+The result is a typed-edge cut certificate. The current source bank does not
+reach the E-center readout nodes. Weak additions such as scalar `8/9`, signed
+scalar `-8/9`, physical selector context, T-side sign, or slot existence still
+fail unless a typed edge lands in the Route-2 readout domain.
 
-This is the recommended near-term target because it creates branch-local
-science that reviewers can cherry-pick while preserving the hard positive
-target for a later source-domain run.
+This is a no-go for weaker source-domain repairs, not a no-go against future
+positive source/readout theorems.

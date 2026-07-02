@@ -1,32 +1,26 @@
 # Opportunity Queue
 
-1. **Source-domain E-center rule deep run**
-   - Target: find or rule out a typed source-domain mechanism that fixes the
-     E-center readout entry.
-   - Why next: it is the only known route that can move the hard residual from
-     dependency classification toward a unique readout theorem.
-   - Artifact: theorem, sharp no-go, or falsifier runner.
+1. **Positive typed readout landing theorem**
+   - Target: one of the three equivalent Route-2 readout landing edges named
+     in the block22 note.
+   - Expected output: exact support theorem or sharp obstruction.
 
-2. **Typed R-connection bridge boundary**
-   - Target: sharpen whether R-connection typed bridges can supply an E-center
-     lift rather than only T-side or shell data.
-   - Why next: prior bridge packets leave source/readout typing open.
-   - Artifact: exact no-go or conditional support note.
+2. **Two-edge scalarization/typecast split**
+   - Target: separate `R_conn -> scalar_signed_minus_8_9` from
+     `scalar_signed_minus_8_9 -> route2_center_TE_minus_8_9`.
+   - Expected output: identify which half is already present and which half is
+     truly new.
 
-3. **Direct-consumer integration map**
-   - Target: map all current parent rows that only need safe time-channel
-     consumers.
-   - Why next: lower risk, useful for review cherry-picks, but less dramatic
-     than the source-domain route.
-   - Artifact: narrow support index and runner.
+3. **Physical selector route**
+   - Target: test whether a physical connected-trace selector can be typed
+     into the Route-2 center ratio without importing endpoint data.
+   - Expected output: conditional support or separate no-go.
 
-4. **Physical eta-floor bridge audit packet**
-   - Target: classify the eta-floor as convention, bridge theorem, or open
-     primitive.
-   - Why next: useful only after direct consumers are sorted.
-   - Artifact: demotion/support boundary.
+4. **Direct E-channel source functional**
+   - Target: bypass `R_conn` and compute a Route-2 E-center readout node from
+     E-channel source structure.
+   - Expected output: exact theorem or falsifier.
 
-Recommended next `/goal` target: **Source-domain E-center rule deep run**.
-Use the current block21 split as the dependency map, forbid endpoint target
-values as proof inputs, and require either a positive theorem or a precise
-typed-bridge no-go.
+Recommended next `/goal`: **positive typed readout landing theorem**. Forbid
+endpoint target values as proof inputs and require the output to land in one
+of the three Route-2 readout nodes.

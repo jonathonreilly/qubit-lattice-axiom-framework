@@ -1,34 +1,34 @@
 # Route Portfolio
 
-## Selected Route: Direct-Consumer Classification
+## Selected Route: Typed-Edge Cut Certificate
 
-Score: high landability, medium claim movement, low overclaim risk.
+Status: delivered as a narrow no-go.
 
-This route converts prior support and no-go blocks into a direct downstream
-rule. It does not try to solve the E-center source problem; it tells reviewers
-which current consumers are independent of that problem.
+The current source bank cannot reach the Route-2 E-center readout nodes. The
+runner proves that weak scalar, sign, selector, and slot additions fail unless
+they include a typed Route-2 readout landing edge.
 
-## Deferred Route: Source-Domain E-Center Rule
+## Positive Route Left Open
 
-Score: highest possible claim movement, high difficulty.
+Target one of the equivalent typed readout edges:
 
-Attack the E-center/source readout entry from typed source-domain structure,
-R-connection constraints, Ward/source compatibility, or an equivalent
-readout-map theorem. This is the best next deep `/goal` after the current PR
-packet is delivered.
+```text
+su3_R_conn_8_9 -> route2_center_TE_minus_8_9
+su3_R_conn_8_9 -> route2_q_E_15_8
+su3_R_conn_8_9 -> route2_rho_E_21_4
+```
 
-## Deferred Route: Stronger No-Go Around Typed Bridges
+or the two-edge split:
 
-Score: high pruning value, medium difficulty.
+```text
+su3_R_conn_8_9 -> scalar_signed_minus_8_9
+scalar_signed_minus_8_9 -> route2_center_TE_minus_8_9
+```
 
-If the source-domain route still fails, prove the strongest boundary for typed
-R-connection and center-ratio routes. The output should isolate exactly what
-extra information a future positive theorem must contain.
+## Rejected Routes
 
-## Rejected For This Block
-
-- Refreshing or conflict-checking old PR branches: not science progress for
-  the reviewer workflow.
-- Rewording parent notes without a new runner: too low value.
-- Adding another rational scan over `rho_E`: already pruned by E-center
-  blindness.
+- Fresh numeric matching to `8/9`: already insufficient without a typed
+  landing edge.
+- T-side sign-only repair: does not supply E-center magnitude.
+- Physical selector shortcut: separate context and still not a Route-2 center
+  endpoint ratio.

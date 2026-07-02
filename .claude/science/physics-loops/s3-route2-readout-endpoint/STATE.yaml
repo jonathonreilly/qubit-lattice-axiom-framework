@@ -1,43 +1,39 @@
 loop_slug: s3-route2-readout-endpoint
-block: 21
+block: 22
 date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block21-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block22-20260621
 base: origin/main
-base_commit: 4f39c3f36
+base_commit: c8e116252
 mode: campaign_science_block
-actual_current_surface_status: exact-support
+actual_current_surface_status: no-go
 target_claim: s3_time_theta_to_slice_coupling_note
-active_route: direct_consumer_ecenter_dependency_classification
-hard_residual: unresolved_E_center_readout_entry_rho_E
+active_route: source_domain_typed_edge_cut_certificate
+hard_residual: source-domain E-center rule for the Route-2 readout landing edge
 automation_lock:
   mode: degraded_branch_local
   note: "repo automation lock status failed with permission error at /Users/jonreilly; independent worktree used"
 files_touched:
-  - docs/S3_TIME_DIRECT_CONSUMER_ECENTER_DEPENDENCY_CLASSIFICATION_NOTE_2026-06-21.md
-  - scripts/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.py
-  - outputs/frontier_s3_time_direct_consumer_ecenter_dependency_classification_2026_06_21.txt
+  - docs/QUARK_ROUTE2_SOURCE_DOMAIN_TYPED_EDGE_CUT_CERTIFICATE_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.py
+  - outputs/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 verification:
-  new_runner: "TOTAL: PASS=29, FAIL=0"
-  e_center_blindness_parent: "TOTAL: PASS=14, FAIL=0"
-  primitive_chain_parent: "TOTAL: PASS=24, FAIL=0"
+  new_runner: "TOTAL: PASS=53, FAIL=0"
+  source_domain_parent: "TOTAL: PASS=103, FAIL=0"
+  typed_bridge_parent: "TOTAL: PASS=62, FAIL=0"
+  e_center_derivation_attempt_parent: "TOTAL: PASS=46, FAIL=0"
   exact_readout_parent: "PASS=11 FAIL=0"
-  exact_time_parent: "PASS=8 FAIL=0"
   py_compile: pass
   diff_check: pass
   wording_scan: pass
-open_imports:
-  - E-center/source/readout rule selecting rho_E
-  - final physical readout primitive
-  - Einstein/Regge final dynamics bridge
 trace_gate:
-  trace_class: upstream_support
-  reachability_to_target: supports
-  artifact_role: runner_certificate
+  trace_class: negative_route_pruning
+  reachability_to_target: prunes
+  artifact_role: no_go
 pr:
   status: open
-  number: 4550
-  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4550
-  title: "[physics-loop] s3-route2-readout-endpoint block21 exact-support"
-next_exact_action: "Continue campaign with source-domain E-center rule deep run or typed bridge boundary."
-stop_condition: "Campaign remains active while runtime remains."
+  number: 4551
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4551
+  title: "[physics-loop] s3-route2-readout-endpoint block22 no-go"
+next_exact_action: "Continue campaign with a positive typed readout landing theorem attempt."
+stop_condition: "Continue campaign if runtime remains after PR handoff."

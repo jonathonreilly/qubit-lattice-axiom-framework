@@ -1,11 +1,13 @@
 # No-Go Ledger
 
-| Route | Boundary | Current use |
+| Route | Boundary | Evidence |
 |---|---|---|
-| E-center-blind endpoint constraints | Cannot select the missing E-center readout entry because they do not evaluate `delta_E` | imported from `QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md` |
-| Restricted carrier naturality | Low-rational or shell/T-side filters do not determine the E-center parameter | imported as parent context |
-| Factor-rigidity alone | Localizes ambiguity in the spatial prefactor but does not choose the prefactor | used to separate safe time consumers from dependent readout consumers |
-| Definition-only carrier | `K_R` can be exact as a carrier without being a physical tensor primitive | imported from `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` |
+| Scalar `+8/9` only | Wrong Route-2 sign and no typed landing edge | block22 runner |
+| Scalar `-8/9` only | Sign is present but still untyped | block22 runner |
+| Physical selector only | Does not identify a Route-2 center endpoint ratio | block22 runner |
+| T-side sign only | Does not supply E-center magnitude | block22 runner |
+| Center slot only | Slot existence is not a value | block22 runner |
+| Wrong signed typed bridge | Computes a different E-center entry | block22 runner |
 
-Block21 does not add a new impossibility theorem. It converts existing route
-boundaries into a direct-consumer dependency classifier.
+This ledger is narrow: it prunes weaker repairs, while leaving a future typed
+readout landing theorem open.

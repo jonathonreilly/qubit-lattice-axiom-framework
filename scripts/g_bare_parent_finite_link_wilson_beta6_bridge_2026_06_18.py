@@ -492,7 +492,8 @@ def section_G() -> None:
         "Wilson small-a note": WILSON,
     }
     for label, path in paths.items():
-        check(f"{label} exists", path.exists(), str(path))
+        rel_path = path.relative_to(ROOT).as_posix()
+        check(f"{label} exists", path.exists(), rel_path)
 
     bridge_text = BRIDGE.read_text(encoding="utf-8")
     parent_text = PARENT.read_text(encoding="utf-8")

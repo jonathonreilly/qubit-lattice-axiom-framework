@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_w85_finite_witness_open_gate_2026_06_12.py
+runner_sha256: 9a3edf407426b480031ad6e604ae267f22db35c28e12222663e19e6948709379
+timeout_sec: 1800
+exit_code: 0
+status: ok
+----- stdout -----
+beta   (x,y)     rho(sample)    K_geom(a)    rho/K_geom    mode_delta
+  108 (0.7,0.7)     0.00787         5.62     0.0014   0.00e+00
+  108 (1.0,0.6)     0.07023        11.81     0.0059   0.00e+00
+  108 (1.3,1.0)     0.09893        30.25     0.0033   0.00e+00
+  108 (0.5,1.4)     0.07349        37.62     0.0020   0.00e+00
+  108 (1.6,1.2)     0.03416        56.90     0.0006   0.00e+00
+  108 (0.9,0.9)     0.13529         9.22     0.0147   0.00e+00
+  300 (0.7,0.7)     0.00998         5.90     0.0017   0.00e+00
+  300 (1.0,0.6)     0.06322        12.40     0.0051   0.00e+00
+  300 (1.3,1.0)     0.10640        28.93     0.0037   0.00e+00
+  300 (0.5,1.4)     0.08179        33.04     0.0025   0.00e+00
+  300 (1.6,1.2)     0.03532        54.67     0.0006   0.00e+00
+  300 (0.9,0.9)     0.14520        10.70     0.0136   0.00e+00
+  600 (0.7,0.7)     0.00415         5.92     0.0007   0.00e+00
+  600 (1.0,0.6)     0.07266        12.35     0.0059   0.00e+00
+  600 (1.3,1.0)     0.11301        27.52     0.0041   0.00e+00
+  600 (0.5,1.4)     0.07266        33.22     0.0022   0.00e+00
+  600 (1.6,1.2)     0.04258        51.94     0.0008   0.00e+00
+  600 (0.9,0.9)     0.13790        10.02     0.0138   0.00e+00
+PASS: sampled W85 cells satisfy rho <= K_geom(a)
+      finite sample only; no uniform K_W bound is inferred
+PASS: sampled rho values are beta-stable on the checked cells
+      (0.7, 0.7):[0.0079, 0.01, 0.0042]; (1.0, 0.6):[0.0702, 0.0632, 0.0727]; (1.3, 1.0):[0.0989, 0.1064, 0.113]
+PASS: finite-mode coefficient probe is stable under mode doubling
+      max |rho(mode)-rho(2*mode)| = 0.00e+00
+PASS: falsifier: wrong saddle prefactor inflates rho on the sampled cell
+      wrong-H rho = 3.065 >> correct-H rho = 0.063
+INFO: worst sampled ratio beta=108, cell=(0.9,0.9), rho=0.13529, K_geom=9.22, ratio=0.0147
+INFO: W85 remains open; this runner is finite sampled support only.
+
+TOTAL: PASS=4, FAIL=0

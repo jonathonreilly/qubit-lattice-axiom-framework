@@ -10,6 +10,12 @@ negative diagnosis is not a retained h=0.125 failure theorem, and it should
 not be used to override the current computable h=0.125 audit lane in
 `docs/LATTICE_3D_L2_NUMPY_H0125_AUDIT_NOTE.md`.
 
+The source firewall is executable:
+
+- runner: [`scripts/h0125_archive_firewall_2026_06_16.py`](../../scripts/h0125_archive_firewall_2026_06_16.py)
+- cache: [`logs/runner-cache/h0125_archive_firewall_2026_06_16.txt`](../../logs/runner-cache/h0125_archive_firewall_2026_06_16.txt)
+- expected output: `PASS: h0125 archive firewall holds`
+
 The safe use is narrow: this archive records a failed diagnosis pattern. The
 current live question must be answered from executable runners and their
 current caches, not from the stale `P_det`/SNR table below.

@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/scale_reference_primitive_boundary_check.py
+runner_sha256: 995439520c351583d867dcfa0f4dd55fb5a8cf60119c8e51bcd9575836f94994
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+==============================================================================
+SCALE-REFERENCE PRIMITIVE BOUNDARY CHECK
+==============================================================================
+Scope: primitive registry/source firewall only; no downstream theorem.
+
+[PASS] source note exists -- docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+[PASS] policy exists -- docs/audit/AXIOM_MINIMALITY_POLICY.md
+[PASS] registry exists -- docs/audit/data/axiom_premise_nodes.json
+[PASS] Tier-A registry exists -- docs/audit/data/tier_a_admissions.json
+[PASS] source type is meta
+[PASS] source declares framework primitive status
+[PASS] registry canonical ids include scale primitive
+[PASS] registry node exists
+[PASS] registry current path points at source note -- docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+[PASS] registry note records units-conversion-only scope
+[PASS] registry note forbids dimensionless content
+[PASS] registry note forbids Planck-length self-consistency laundering
+[PASS] registry note records non-bounding chain satisfaction
+[PASS] policy records owner approval section
+[PASS] policy records scale primitive approval
+[PASS] policy records dimensional irreducibility
+[PASS] policy records no-laundering boundary
+[PASS] policy keeps Planck-length self-consistency separate
+[PASS] Tier-A registry genuine count remains two -- 2
+[PASS] scale primitive is not a Tier-A derivation target
+[PASS] Tier-A registry records scale as reclassified primitive
+[PASS] Tier-A reclassification says not status-bounding
+[PASS] note declares exactly one dimensionful reference
+[PASS] note names Planck mass scale reference
+[PASS] note says units conversion not physics axiom
+[PASS] note says zero dimensionless content
+[PASS] note says scale is irreducible by dimensional analysis
+[PASS] note says it does not add or amend an axiom
+[PASS] note says it does not assert a/l_P = 1 as derived
+[PASS] note says it does not supply dimensionless quantity
+[PASS] note says it does not change audit verdicts
+[PASS] note distinguishes axiom-premise registry from Tier-A admissions
+[PASS] note assigns scale primitive to first registry
+[PASS] forbidden overclaim absent: derives?\s+(?:the\s+)?Planck length
+[PASS] forbidden overclaim absent: derives?\s+(?:the\s+)?Planck mass
+[PASS] forbidden overclaim absent: a/l_P\s*=\s*1\s+is\s+derived
+[PASS] forbidden overclaim absent: 299792458
+[PASS] forbidden overclaim absent: 1\.616255
+[PASS] forbidden overclaim absent: mixing angle\s*=
+[PASS] forbidden overclaim absent: mass ratio\s*=
+[PASS] forbidden overclaim absent: coupling\s*=
+[PASS] forbidden overclaim absent: empirical fit\s*=
+[PASS] axiom/primitive purity guard passes --   OK   realized_state_primitive (docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md): pure premise content
+
+SUMMARY: SCALE REFERENCE PRIMITIVE BOUNDARY PASS=43 FAIL=0
+
+----- stderr -----
+

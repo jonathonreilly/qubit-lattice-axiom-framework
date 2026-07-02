@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/frontier_commensuration_general_lemma_2026_06_12.py
+runner_sha256: 89cd7b4dcaf85417530588650fb188d69c36e83b915222cf59bdd623d234c1f3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.68
+status: ok
+----- stdout -----
+commensuration general lemma period-parity runner
+parameters: d=3, t=1.0, mu=5.0
+extended_grid=(8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30)
+A. landed Hamiltonian anchors first
+PASS: A1 L=8 H_kd_after equals frozen parent protected value :: computed=0.0000000000000000e+00, frozen=0.0000000000000000e+00, tol=1.0e-12
+PASS: A2 L=10 H_kd_after equals frozen parent failing value :: computed=7.4832497863019298e-01, frozen=7.4832497863019298e-01, tol=1.0e-12
+PASS: A3 L=8/L=10 H_kd_after dichotomy is protected/failing :: L8=0.000e+00 <= 1.0e-14; L10=7.483e-01 >= 1.0e-01
+  L=10 failing coset: left=(0, 0, 0), right=(0, 0, 3), minimal_vector=(0, 0, -2), d2_parity=0, chart_delta_parity=1
+PASS: A4 anti-fabrication L=10 failing coset is frozen and nontrivial :: d2_norm=4, min=1, mismatch_bit=1, frozen_match=True
+B. symbolic residue-class algebra
+  L=0 mod 4: all K-periods even, so minimal parity equals chart parity.
+  L=2 mod 4: d2_mod2 = chart_mod2 + high_x + high_z (mod 2); flip rows=((0, 0, 0), (0, 1, 1), (1, 0, 1), (1, 1, 0))
+  forced L=2 mod 4 high-z coset: minimal_z=-q, mismatch=1
+PASS: B1 SymPy L=0 mod 4 residue table has zero mismatches :: mismatch_sum=0
+PASS: B2 SymPy L=2 mod 4 flip table: odd-axis parity-flip branch forces the mismatch :: rows=((0, 0, 0), (0, 1, 1), (1, 0, 1), (1, 1, 0))
+PASS: B3 SymPy forced odd-period coset flips parity :: minimal_z=-q, mismatch=1
+C. extended combinatorial grid
+  L= 8 periods=(4, 8, 4) pairs=4096 mismatches=0 holds=True first_mismatch=none
+PASS: C L=8 correspondence iff L=0 mod 4 :: holds=True, expected=True, mismatches=0
+  L=10 periods=(5, 10, 5) pairs=15625 mismatches=5700 holds=False first_mismatch=((0, 0, 0), (0, 0, 3), (0, 0, -2), 0, 1)
+PASS: C L=10 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=5700
+  L=12 periods=(6, 12, 6) pairs=46656 mismatches=0 holds=True first_mismatch=none
+PASS: C L=12 correspondence iff L=0 mod 4 :: holds=True, expected=True, mismatches=0
+  L=14 periods=(7, 14, 7) pairs=117649 mismatches=43512 holds=False first_mismatch=((0, 0, 0), (0, 0, 5), (0, 0, -2), 0, 1)
+PASS: C L=14 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=43512
+  L=16 periods=(8, 16, 8) pairs=262144 mismatches=0 holds=True first_mismatch=none
+PASS: C L=16 correspondence iff L=0 mod 4 :: holds=True, expected=True, mismatches=0
+  L=18 periods=(9, 18, 9) pairs=531441 mismatches=197640 holds=False first_mismatch=((0, 0, 0), (0, 0, 5), (0, 0, -4), 0, 1)
+PASS: C L=18 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=197640
+  L=20 periods=(10, 20, 10) pairs=1000000 mismatches=0 holds=True first_mismatch=none
+PASS: C L=20 correspondence iff L=0 mod 4 :: holds=True, expected=True, mismatches=0
+  L=22 periods=(11, 22, 11) pairs=1771561 mismatches=660660 holds=False first_mismatch=((0, 0, 0), (0, 0, 7), (0, 0, -4), 0, 1)
+PASS: C L=22 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=660660
+  L=24 periods=(12, 24, 12) pairs=2985984 mismatches=0 holds=True first_mismatch=none
+PASS: C L=24 correspondence iff L=0 mod 4 :: holds=True, expected=True, mismatches=0
+  L=26 periods=(13, 26, 13) pairs=4826809 mismatches=1802892 holds=False first_mismatch=((0, 0, 0), (0, 0, 7), (0, 0, -6), 0, 1)
+PASS: C L=26 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=1802892
+  L=28 periods=(14, 28, 14) pairs=7529536 mismatches=0 holds=True first_mismatch=none
+PASS: C L=28 correspondence iff L=0 mod 4 :: holds=True, expected=True, mismatches=0
+  L=30 periods=(15, 30, 15) pairs=11390625 mismatches=4258800 holds=False first_mismatch=((0, 0, 0), (0, 0, 9), (0, 0, -6), 0, 1)
+PASS: C L=30 correspondence iff L=0 mod 4 :: holds=False, expected=False, mismatches=4258800
+PASS: C-summary protected L values have zero mismatches :: protected grid L=(8,12,16,20,24,28)
+PASS: C-summary unprotected L values have at least one mismatch :: unprotected grid L=(10,14,18,22,26,30)
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

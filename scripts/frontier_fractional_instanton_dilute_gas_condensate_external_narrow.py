@@ -487,6 +487,91 @@ def test_T11_downstream_source_boundary_firewall() -> None:
     )
 
 
+def test_T12_action_core_decoration_segregation() -> None:
+    section("T12: algebra-core split / decoration segregation of the dilute-gas bridge")
+    text = NOTE.read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+    lower_flat = flat.lower()
+    # Markdown-bold markers split literal substrings when flattened; strip them
+    # for the prose-segregation checks below.
+    lower_flat_nomd = lower_flat.replace("**", "")
+
+    # (a) Parent frames the fractional-action algebra as a pure algebraic
+    #     decoration of the retained-bounded topological-instanton authority,
+    #     citing the 2026-06-18 action-core split note + its runner + cache.
+    cites_action_core = (
+        "FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md"
+        in text
+        and "fractional_instanton_action_core_split_2026_06_18.py" in text
+        and "fractional_instanton_action_core_split_2026_06_18.txt" in text
+    )
+    frames_decoration = (
+        "decoration" in lower_flat
+        and "retained-bounded topological-instanton authority" in lower_flat
+    )
+    check(
+        "parent frames the fractional-action algebra as a decoration of the "
+        "retained-bounded topological-instanton authority and cites the action-core split",
+        cites_action_core and frames_decoration,
+        "action-core split note/runner/cache cited; decoration framing present",
+    )
+
+    # (b) The dilute-gas determinant/measure/coupling-scale/convergence and
+    #     condensate content is segregated into an explicit open bridge block.
+    has_open_block = "## Open: Dilute-Gas Bridge".lower() in lower_flat or (
+        "open: dilute-gas bridge" in lower_flat
+    )
+    open_block_names_gaps = (
+        "not supplied here" in lower_flat
+        and "one-loop determinant" in lower_flat
+        and ("integration measure" in lower_flat or "measure" in lower_flat)
+        and ("coupling-scale prescription" in lower_flat or "coupling scale" in lower_flat)
+        and ("convergence" in lower_flat)
+        and ("condensate" in lower_flat)
+    )
+    check(
+        "dilute-gas determinant/measure/coupling-scale/convergence + condensate "
+        "content is segregated in an explicit open dilute-gas bridge block",
+        has_open_block and open_block_names_gaps,
+        "open dilute-gas bridge block present and names the unsupplied gaps",
+    )
+
+    # (c) Parent no longer presents the retained-bounded topological-instanton
+    #     authority as authority for the dilute-gas bridge: it backs the
+    #     action-core decoration ONLY.
+    retained_authority_is_action_core_only = (
+        "retained-bounded authority for the action-core" in lower_flat_nomd
+        and (
+            "does not supply, and is not authority for, the dilute-gas"
+            in lower_flat_nomd
+            or "not authority for, the dilute-gas" in lower_flat_nomd
+        )
+    )
+    # The stale bundling phrasing must be gone from the live Upstream-authority
+    # bullet. (The dated repair-log section may quote the removed phrase verbatim
+    # while describing the change; that is expected, so scope the check to the
+    # Upstream-authority section only.)
+    upstream_section = ""
+    if "## Upstream authority" in text:
+        upstream_section = text.split("## Upstream authority", 1)[1]
+        # Cut at the next top-level section so the repair-log quote is excluded.
+        for marker in ("\n## ",):
+            if marker in upstream_section:
+                upstream_section = upstream_section.split(marker, 1)[0]
+    upstream_nomd = " ".join(upstream_section.split()).lower().replace("**", "")
+    no_stale_bundling = (
+        "consumed by the fractional-instanton dilute-gas condensate construction"
+        not in upstream_nomd
+    )
+    check(
+        "retained-bounded topological-instanton authority backs the action-core "
+        "decoration only, not the dilute-gas bridge",
+        retained_authority_is_action_core_only and no_stale_bundling,
+        "upstream-authority section scopes the bounded import to the action core; "
+        "stale 'consumed by ... dilute-gas condensate construction' bundling removed",
+    )
+
+
 def main() -> int:
     print("# Fractional instanton dilute-gas hierarchy external gate runner")
     print(f"# Source note: {NOTE.relative_to(ROOT)}")
@@ -501,6 +586,7 @@ def main() -> int:
     test_T9_no_substrate_identification()
     test_T10_no_alpha_LM_16_closure()
     test_T11_downstream_source_boundary_firewall()
+    test_T12_action_core_decoration_segregation()
     print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")
     return 0 if FAIL == 0 else 1
 

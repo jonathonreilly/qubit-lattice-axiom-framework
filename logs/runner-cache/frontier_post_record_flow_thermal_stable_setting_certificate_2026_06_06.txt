@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py
-runner_sha256: 35820952bf8f0ad1b48cb74f3c938ce583f21297943d3d8a99b869aac5556f44
+runner_sha256: 5f9f171a36c3012aaef20775e679f4df08485feb831bd1ea61695958c869d2e7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.83
+elapsed_sec: 1.45
 status: ok
 ----- stdout -----
 
@@ -22,7 +22,7 @@ PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md cont
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: stable setting is not selected dial
 PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: These rows may support a stable setting
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 136
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 147
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stable settings into selected dials
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
 PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py exists
@@ -49,21 +49,21 @@ PASS finite supplied thermal table has unique root :: 3/20
 ------------------------------------------------------------------------------
 Flow/thermal row checks
 ------------------------------------------------------------------------------
-PASS flow/thermal stability row count is current snapshot :: 88
-PASS stable lane counts match expected :: Counter({'generic_stable_feature': 27, 'thermal_or_score_stable_feature': 25, 'bounded_obstruction_or_no_selection': 21, 'flow_or_records_stable_feature': 10, 'generation_or_koide_stable_feature': 5})
-PASS stable lane counts sum to row count :: Counter({'generic_stable_feature': 27, 'thermal_or_score_stable_feature': 25, 'bounded_obstruction_or_no_selection': 21, 'flow_or_records_stable_feature': 10, 'generation_or_koide_stable_feature': 5})
+PASS flow/thermal stability row count is current snapshot :: 91
+PASS stable lane counts match expected :: Counter({'generic_stable_feature': 31, 'thermal_or_score_stable_feature': 25, 'bounded_obstruction_or_no_selection': 21, 'flow_or_records_stable_feature': 9, 'generation_or_koide_stable_feature': 5})
+PASS stable lane counts sum to row count :: Counter({'generic_stable_feature': 31, 'thermal_or_score_stable_feature': 25, 'bounded_obstruction_or_no_selection': 21, 'flow_or_records_stable_feature': 9, 'generation_or_koide_stable_feature': 5})
 PASS representative row present in bounded_obstruction_or_no_selection :: koide_bae_probe_native_lattice_flow_bounded_obstruction_note_2026-05-09_probe21
 PASS representative row present in flow_or_records_stable_feature :: koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02
 PASS representative row present in generation_or_koide_stable_feature :: flavor_r_half_is_the_records_flow_separatrix_2026-06-02
 PASS representative row present in generic_stable_feature :: koide_phase_aps_eta_parity_route_narrow_theorem_note_2026-05-23
 PASS representative row present in thermal_or_score_stable_feature :: dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16
-PASS audit ledger hash is unchanged :: 49f667c79e1bbfda8c4bc8e5b3568b63e6ae3d6bccaeef7ac2e21ecadf2e6f04
+PASS audit ledger hash is unchanged :: 2ac5344278b0e37ee6419068aa1e0588600fbc98d8ed55d56650fb4b0e555b83
 
 Flow/thermal stable-setting lane counts:
   bounded_obstruction_or_no_selection: 21
-  flow_or_records_stable_feature: 10
+  flow_or_records_stable_feature: 9
   generation_or_koide_stable_feature: 5
-  generic_stable_feature: 27
+  generic_stable_feature: 31
   thermal_or_score_stable_feature: 25
 
 [bounded_obstruction_or_no_selection]
@@ -71,23 +71,22 @@ Flow/thermal stable-setting lane counts:
   flavor_einselection_2sector_modulo_kreality_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_EINSELECTION_2SECTOR_MODULO_KREALITY_2026-06-02.md
   flavor_emergent_chirality_no_transport_note_2026-05-30 | unaudited | unaudited | bounded_theorem | docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md
   flavor_find_j_round1_jcs_measure_neutral_2026-06-02 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md
-  flavor_max_record_entropy_is_sector_blind_cannot_derive_the_koide_dial_narrow_no_go_note_2026-06-15 | audited_conditional | audited_conditional | no_go | docs/FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md
   hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md
   interleaved_mean_map_peripheral_count_collapse_almost_periodicity_removal_bounded_theorem_note_2026-06-10 | unaudited | unaudited | bounded_theorem | docs/INTERLEAVED_MEAN_MAP_PERIPHERAL_COUNT_COLLAPSE_ALMOST_PERIODICITY_REMOVAL_BOUNDED_THEOREM_NOTE_2026-06-10.md
   koide_a1_probe_lattice_non_conjugation_bounded_obstruction_note_2026-05-09_probe17 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_LATTICE_NON_CONJUGATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe17.md
   koide_a1_probe_q_readout_functional_bounded_obstruction_note_2026-05-09_probe16 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_Q_READOUT_FUNCTIONAL_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe16.md
   koide_a1_probe_rg_fixed_point_bounded_obstruction_note_2026-05-08_probe5 | unaudited | unaudited | bounded_theorem | docs/KOIDE_A1_PROBE_RG_FIXED_POINT_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe5.md
+  koide_bae_probe_hw_sector_identification_bounded_obstruction_note_2026-05-09_probe27 | unaudited | unaudited | bounded_theorem | docs/KOIDE_BAE_PROBE_HW_SECTOR_IDENTIFICATION_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe27.md
 
 [flow_or_records_stable_feature]
   corner_mode_set_fork_resolution_layer_is_record_dynamics_bounded_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/CORNER_MODE_SET_FORK_RESOLUTION_LAYER_IS_RECORD_DYNAMICS_BOUNDED_NOTE_2026-06-12.md
   d2_truncation_error_budget_first_datum_bounded_theorem_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/D2_TRUNCATION_ERROR_BUDGET_FIRST_DATUM_BOUNDED_THEOREM_NOTE_2026-06-12.md
   d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/D3_TRUNCATED_CLOSURE_RECURS_BOUNDED_THEOREM_NOTE_2026-06-12.md
   dynamics_form_from_record_preservation_gauge_invariant_local_class_bounded_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/DYNAMICS_FORM_FROM_RECORD_PRESERVATION_GAUGE_INVARIANT_LOCAL_CLASS_BOUNDED_THEOREM_NOTE_2026-06-05.md
-  gate_b_dynamics_note | audited_conditional | audited_conditional | open_gate | docs/GATE_B_DYNAMICS_NOTE.md
   koide_rp_spectrum_reduce_to_transfer_positivity_narrow_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/KOIDE_RP_SPECTRUM_REDUCE_TO_TRANSFER_POSITIVITY_NARROW_THEOREM_NOTE_2026-06-02.md
   occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md
   record_classicalization_dynamics_firewall_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md
-  record_unbounded_finite_additivity_schema_2026-06-06 | audited_conditional | audited_conditional | bounded_theorem | docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md
+  theta_emergent_q_weighting_reality_rg_stable_bounded_theorem_note_2026-06-13 | unaudited | unaudited | bounded_theorem | docs/THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STABLE_BOUNDED_THEOREM_NOTE_2026-06-13.md
   within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/WITHIN_SECTOR_ESS_ADEQUACY_CONCLUSION_SURVIVES_BOUNDED_THEOREM_NOTE_2026-06-12.md
 
 [generation_or_koide_stable_feature]
@@ -115,11 +114,11 @@ Flow/thermal stable-setting lane counts:
   branching_record_budget_inequality_bounded_theorem_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/BRANCHING_RECORD_BUDGET_INEQUALITY_BOUNDED_THEOREM_NOTE_2026-06-12.md
   d2_truncated_flow_frozen_ratio_accumulated_budget_bounded_theorem_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/D2_TRUNCATED_FLOW_FROZEN_RATIO_ACCUMULATED_BUDGET_BOUNDED_THEOREM_NOTE_2026-06-12.md
   dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16 | audited_clean | retained_bounded | bounded_theorem | docs/DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md
+  emergent_gauge_heat_kernel_clt_attractor_conditional_on_bi_invariant_dynamics_narrow_theorem_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/EMERGENT_GAUGE_HEAT_KERNEL_CLT_ATTRACTOR_CONDITIONAL_ON_BI_INVARIANT_DYNAMICS_NARROW_THEOREM_NOTE_2026-06-08.md
   flavor_center_trace_closed_capstone_note_2026-05-30 | audited_clean | retained_bounded | bounded_theorem | docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md
   gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_bounded_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md
   generation_record_arrow_measure_selector_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/GENERATION_RECORD_ARROW_MEASURE_SELECTOR_2026-06-05.md
   generation_record_partition_selector_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/GENERATION_RECORD_PARTITION_SELECTOR_2026-06-05.md
-  hierarchy_delta0_s2_readout_dressing_leading_order_probe_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_DELTA0_S2_READOUT_DRESSING_LEADING_ORDER_PROBE_NOTE_2026-06-11.md
 
 
 ------------------------------------------------------------------------------
@@ -127,9 +126,9 @@ Bounded ledger-row export checks
 ------------------------------------------------------------------------------
 PASS bounded flow/thermal row export exists :: outputs/post_record_flow_thermal_stable_setting_slice_2026_06_07.json
 PASS slice export is for the flow/thermal stability bucket
-PASS slice export records current ledger sha :: 49f667c79e1bbfda8c4bc8e5b3568b63e6ae3d6bccaeef7ac2e21ecadf2e6f04
-PASS slice export row count matches current split :: 88
-PASS slice export lane counts match current split :: {'bounded_obstruction_or_no_selection': 21, 'flow_or_records_stable_feature': 10, 'generation_or_koide_stable_feature': 5, 'generic_stable_feature': 27, 'thermal_or_score_stable_feature': 25}
+PASS slice export records current ledger sha :: 2ac5344278b0e37ee6419068aa1e0588600fbc98d8ed55d56650fb4b0e555b83
+PASS slice export row count matches current split :: 91
+PASS slice export lane counts match current split :: {'bounded_obstruction_or_no_selection': 21, 'flow_or_records_stable_feature': 9, 'generation_or_koide_stable_feature': 5, 'generic_stable_feature': 31, 'thermal_or_score_stable_feature': 25}
 PASS slice export rows match independently enumerated regex split
 
 ------------------------------------------------------------------------------
@@ -146,11 +145,11 @@ PASS Record-derived physical arrow flag is false
 PASS clock/rate derived flag is false
 
 SUMMARY: PASS=55 FAIL=0
-FLOW_OR_THERMAL_STABILITY_ROWS=88
+FLOW_OR_THERMAL_STABILITY_ROWS=91
 BOUNDED_OBSTRUCTION_OR_NO_SELECTION_ROWS=21
-FLOW_OR_RECORDS_STABLE_FEATURE_ROWS=10
+FLOW_OR_RECORDS_STABLE_FEATURE_ROWS=9
 GENERATION_OR_KOIDE_STABLE_FEATURE_ROWS=5
-GENERIC_STABLE_FEATURE_ROWS=27
+GENERIC_STABLE_FEATURE_ROWS=31
 THERMAL_OR_SCORE_STABLE_FEATURE_ROWS=25
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE

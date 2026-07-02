@@ -6,6 +6,8 @@
 sets **no** audit status, promotes nothing, and changes no row's grade. It names
 and tracks, in one place, the framework's irreducible admitted inputs so they
 are not scattered across lanes as ad-hoc prose premises.
+**Primary runner:** [`scripts/admitted_input_registry_tier_a_boundary_check.py`](../scripts/admitted_input_registry_tier_a_boundary_check.py)
+**Cached output:** [`logs/runner-cache/admitted_input_registry_tier_a_boundary_check.txt`](../logs/runner-cache/admitted_input_registry_tier_a_boundary_check.txt)
 
 ## Purpose
 

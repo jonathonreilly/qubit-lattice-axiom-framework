@@ -1,9 +1,9 @@
 # Post-Record Dynamics Campaign Closeout Index
 
 **Date:** 2026-06-06
-**Type:** exact support / closeout index
-**Claim type:** methodology
-**Status:** exact-support branch-local for indexing the final dynamics stack;
+**Type:** meta
+**Claim type:** meta
+**Status:** closeout index / handoff map for indexing the final dynamics stack;
 audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py`](../scripts/frontier_post_record_dynamics_campaign_closeout_index_2026_06_06.py)
@@ -73,12 +73,26 @@ The runner verifies:
 - all six PR entries are present in this index;
 - cached summaries are present for each stack layer;
 - the directed-certificate layer consumes the repaired
-  `SUMMARY: PASS=60 FAIL=0` row-bucketing certificate and the stack-map layer
-  consumes the repaired `SUMMARY: PASS=47 FAIL=0` authority-map certificate;
+  `SUMMARY: PASS=64 FAIL=0` row-bucketing certificate and the stack-map layer
+  consumes the repaired `SUMMARY: PASS=52 FAIL=0` authority-map certificate;
 - the stack has four `exact-support` entries and two `no-go` entries;
 - no audit verdict, audit-data write, retained/promoted claim, unsupplied
   kernel selection, Record-derived rule/target, sample-as-law, stable-setting
   dial selection, or generation/Koide selection flag is set.
+
+## Cached summary inventory
+
+The closeout runner checks these source-side summary strings against the
+corresponding cached runner logs:
+
+| PR | Cached runner summary |
+|---:|---|
+| #2850 | `SUMMARY: PASS=64 FAIL=0` |
+| #2853 | `SUMMARY: PASS=52 FAIL=0` |
+| #2856 | `SUMMARY: PASS=39 FAIL=0` |
+| #2858 | `SUMMARY: PASS=36 FAIL=0` |
+| #2861 | `SUMMARY: PASS=30 FAIL=0` |
+| #2864 | `SUMMARY: PASS=52 FAIL=0` |
 
 Run:
 

@@ -1,8 +1,8 @@
-# Definitive Distance Law Closure
+# Distance Law Finite-Table Diagnostic
 
 **Date:** 2026-04-12
 **Script:** `scripts/frontier_distance_law_definitive.py`
-**Status:** bounded review candidate -- high-precision ordered-cubic distance-law closure
+**Status:** bounded support note -- finite ordered-cubic distance-law diagnostic
 **Claim type:** bounded_theorem
 
 ## Source boundary (2026-06-12)
@@ -20,6 +20,26 @@ continuum theorem, or retained estimator-selection theorem.
 Promotion beyond numerical-match support requires an independent
 estimator-selection theorem or a pre-registered protocol that selects the
 scaled-fit `N >= 56` weighted mean before looking at the result.
+
+## Finite-table diagnostic split (2026-06-17)
+
+This source-side repair splits the original headline from the runner-backed
+claim. The runner-backed source content is only the finite ordered-cubic Dirichlet
+diagnostic table produced by `scripts/frontier_distance_law_definitive.py`:
+
+- the per-grid sparse Poisson/path-sum measurements for `N = 31, 40, 48, 56,
+  64, 80, 96`;
+- the `alpha_scaled` table on the runner's scaled window `b = 4..N/6`;
+- the selected `N >= 56` weighted-mean diagnostic
+  `alpha = -1.00104 +/- 0.00416`;
+- the `N = 64`, `M = 0.5, 1.0, 2.0` mass-independence check.
+
+The split does **not** add an estimator-selection theorem. The weighted mean is
+recorded as a selected finite-table diagnostic, not as a continuum estimator,
+architecture-independent Newton law, or retained inverse-square closure. The
+other extrapolation estimators remain part of the record and remain the reason
+that this note should not be promoted beyond bounded numerical support without
+new science.
 
 **Audit-lane runner update (2026-05-09):** The primary runner `scripts/frontier_distance_law_definitive.py` previously timed out under the audit-lane 120s default budget; AUDIT_TIMEOUT_SEC=1800 added; runs in 234s under the new budget. The runner's pass/fail semantics are unchanged; this update only ensures the audit-lane sees a complete cache instead of a TIMEOUT row.
 
@@ -59,8 +79,10 @@ Three fit ranges compared:
 - **Core:** b = 4..8 (well inside all grids)
 - **Scaled:** b = 4..N/6 (scales with grid to maintain constant relative range)
 
-The scaled fit is the most robust because it avoids both near-field (b < 4) and
-boundary-contaminated (b > N/6) regions at all lattice sizes.
+The scaled fit is the diagnostic window carried by the original runner. It
+avoids both near-field (b < 4) and boundary-contaminated (b > N/6) regions at
+all lattice sizes, but this note does not prove that the window is the unique or
+theorem-selected continuum estimator.
 
 ## Key Results
 
@@ -78,14 +100,14 @@ boundary-contaminated (b > N/6) regions at all lattice sizes.
 
 For N >= 64, all individual values are within 1% of -1.0.
 
-### Best Estimate (weighted mean, N >= 56)
+### Selected Diagnostic Estimator (weighted mean, N >= 56)
 
 ```
 alpha     = -1.00104 +/- 0.00416
 deviation = 0.104%  (0.2 sigma)
 ```
 
-### Force Exponent
+### Diagnostic Force-Exponent Translation
 
 ```
 F ~ 1/r^n  where n = alpha - 1
@@ -108,22 +130,26 @@ insensitive to this overall amplitude shift and converges to -1.0 as N grows.
 
 All 1/N extrapolation methods give alpha_inf between -0.86 and -0.94 because
 the alpha(N) sequence is non-monotonic (overshoots -1.0 at small N, undershoots
-at large N). The weighted mean of converged large-N values is the correct
-estimator, not 1/N extrapolation.
+at large N). The weighted mean of large-N scaled values is therefore recorded
+only as the selected diagnostic estimator for this finite table, not as a
+theorem-selected replacement for the other extrapolation families.
 
-## Conclusion
+## Diagnostic Conclusion
 
 Valley-linear path summation with Coulomb field f = s/r on a 3D lattice produces
-gravitational deflection delta(b) ~ 1/b^alpha with alpha = -1.001 +/- 0.004.
-On this ordered-cubic Dirichlet surface, the inverse-square force-law exponent
-is numerically consistent with 1/r^2 at 0.1% precision.
+the finite ordered-cubic Dirichlet table above. On the selected `N >= 56`
+scaled-window weighted-mean diagnostic, the exponent is numerically consistent
+with `alpha = -1` at 0.1% precision. Because the estimator-selection theorem is
+still missing, this is bounded finite-table support only.
 
 ## Claim boundary
 
 - ordered 3D cubic only
 - Dirichlet boundary conditions
 - ray/path-sum deflection observable
-- not architecture-independent closure by itself
+- selected scaled-window weighted mean is a diagnostic, not an independently
+  justified continuum estimator
+- not an architecture-independent Newton-law theorem
 - not a replacement for the existing bounded Newton-family notes on `main`
 
 ## Runtime

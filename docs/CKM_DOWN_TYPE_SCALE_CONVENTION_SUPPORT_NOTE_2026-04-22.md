@@ -1,11 +1,47 @@
 # CKM Down-Type Mass-Ratio Scale-Convention Support Note
 
-**Date:** 2026-04-22 (runner patched 2026-05-16 in response to audit defects D1+D2)
-**Status:** **support-level strengthening**, not a theorem-grade closure. Consolidates the proposed_retained bounded lane's numerical scale-convention coincidence into a single cross-checked identity with explicit scope. The `5/6` bridge itself remains open; what this note closes is the SIZE of the bounded lane's live numerical evidence.
-**Audit status:** `audited_numerical_match` (class G), 2026-05-05; runner-level defects D1 and D2 (see below) addressed by the 2026-05-16 patch; D3 (missing retained derivation of the `5/6` bridge and threshold-local comparator) remains open.
+**Date:** 2026-04-22 (runner patched 2026-05-16 in response to audit defects D1+D2;
+source-graph cycle-edge repair 2026-06-17)
+**Claim type:** bounded_theorem
+**Status:** support-level source-graph repair, not a theorem-grade closure.
+Consolidates the bounded lane's numerical scale-convention coincidence into a
+single cross-checked identity with explicit scope. The `5/6` bridge itself
+remains open; what this note records is the size of the bounded lane's live
+numerical evidence.
+**Prior audit context:** a 2026-05-05 audit packet classified this as class-G
+numerical evidence and identified runner-level defects D1 and D2 plus open
+defect D3. The 2026-05-16 runner patch addressed D1 and D2; D3 (missing
+retained derivation of the `5/6` bridge and threshold-local comparator) remains
+open. Current audit status is set only by the independent audit lane after
+source changes.
 **Primary runner:** `scripts/frontier_ckm_down_type_scale_convention_support.py`
 
-## 0. What this note does
+## 0. Source-Graph Cycle-Edge Repair (2026-06-17)
+
+The audit queue identified this row as a primary cycle-break target before
+this repair:
+several co-cycle notes were markdown-linked even though this note uses
+them only as context about the still-open `5/6` bridge and
+threshold-local scale-selection problem. This source repair rewrites
+those co-cycle pointers as plain-text context while preserving the real
+load-bearing links to the retained/anchor rows
+[`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md) and
+[`CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md).
+
+Plain-context rows after this repair:
+`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`,
+`QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`,
+`DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md`, and the wider quark/CKM
+support stack. They remain scientifically relevant, but they are not
+load-bearing dependencies of this note's narrow calculation. The claim
+scope is unchanged: this row remains support-level / class-G numerical
+evidence and does not derive the `5/6` bridge, a unique threshold-local
+scale convention, or a retained down-type mass-ratio theorem.
+
+Cycle-edge verifier:
+`scripts/ckm_down_type_scale_convention_cycle_edge_hygiene_2026_06_17.py`.
+
+## 1. What this note does
 
 The retained down-type mass-ratio lane (`DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md`, bounded) has two distinct scale-comparison surfaces:
 
@@ -20,13 +56,15 @@ Both are "bounded lane comparisons" but they tell very different numerical stori
 
 **This does NOT close:**
 
-- the theorem-grade derivation of the `5/6` bridge itself ([`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`](CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) explicitly leaves this open);
+- the theorem-grade derivation of the `5/6` bridge itself
+  (`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md` explicitly leaves this
+  open);
 - a retained theorem forcing the threshold-local comparator as the unique framework-natural scale;
 - the down-type mass-ratio lane's bounded → retained promotion.
 
 The useful content is: **the bounded lane's live support is tighter than its "bounded" label suggests if the threshold-local comparator is accepted as live**, and this note cross-checks both the `α_s(v)` anchor and the `5/6`-bridge exponent simultaneously to sub-percent precision.
 
-## 1. Inputs and comparators declared on main
+## 2. Inputs and comparators declared on main
 
 | Input | Value | Authority |
 |-------|-------|-----------|
@@ -38,7 +76,7 @@ The useful content is: **the bounded lane's live support is tighter than its "bo
 | Threshold-local `m_b(m_b)` | `4.180 GeV` | PDG 2024 comparator |
 | 1-loop `gamma_m/(2 beta_0)` for `n_f=4` | `12/25` | standard QCD comparator convention |
 
-## 2. The consolidated identity (numerical)
+## 3. The consolidated identity (numerical)
 
 Define:
 
@@ -63,7 +101,7 @@ transport_1loop  = 1.14747                                                      
 
 The retained framework's `R_atlas` anchor is at scale `v` (electroweak scale). The 1-loop running factor `transport_1loop` converts between common-scale and threshold-local at the down-type pair `(m_s, m_b)`; numerically it equals `1.14747`, which is the precise factor that separates the `+15%` common-scale mismatch from the `+0.20%` threshold-local match.
 
-## 3. What the retained framework's natural scale is
+## 4. What the retained framework's natural scale is
 
 The retained `α_s(v)` is defined at the electroweak scale `v`. The retained CKM atlas ([`CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md)) derives `|V_cb| = α_s(v)/√6` from the canonical tensor/projector surface at that scale.
 
@@ -73,7 +111,7 @@ The numerical observation is: the framework's prediction `R_pred = 0.022390` mat
 
 The retained framework does NOT force one over the other. The bounded lane's current live support uses threshold-local because the match is numerically closer. A theorem-grade derivation of the `5/6` bridge is what would resolve which scale the framework structurally picks.
 
-## 4. Runner verification (2026-05-16 audit-response patch)
+## 5. Runner verification (2026-05-16 audit-response patch)
 
 `scripts/frontier_ckm_down_type_scale_convention_support.py` verifies, with **all transport factors and common-scale masses now taken from INDEPENDENT PDG / FLAG quotations** (no hard-coded transport literal, no circular construction):
 
@@ -101,20 +139,24 @@ Expected: `PASSED: 17/17`.
 |---|---|---|
 | D1 | Transport factor hard-coded to `1.14747` after the runner's own 1-loop computation gave a different value. | Transport factor now READ OFF two independent published quotations (PDG `m_s(2 GeV) = 93.4 MeV` and FLAG `m_s(m_b) = 81.0 MeV`), giving `1.15309` directly. No transport literal appears in the runner; no closed-form formula coefficient discretion is invoked. |
 | D2 | `R_common` was constructed by dividing `R_thresh` by the hard-coded transport, making the "consolidated identity" trivially circular. | `R_common` is now an INDEPENDENT FLAG 2024 quotation of `m_s(m_b)/m_b(m_b)`. The consolidated identity is now an algebraic bookkeeping consequence of three independent inputs, not a tautology hidden behind one hard-coded number. |
-| D3 | Neither the `5/6` bridge nor the threshold-local comparator was derived from retained inputs. | **Still open.** Deriving the `5/6` bridge and the threshold-local comparator from retained inputs is tracked at [`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`](CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) and [`QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`](QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md). The class-G numerical-match status of this note is **unchanged** by the runner patch; the +0.20% threshold-local match remains a numerical observation, not a derivation. |
+| D3 | Neither the `5/6` bridge nor the threshold-local comparator was derived from retained inputs. | **Still open.** Deriving the `5/6` bridge and the threshold-local comparator from retained inputs is tracked in the plain-context notes `CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md` and `QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`. The class-G numerical-match status of this note is **unchanged** by the runner patch; the +0.20% threshold-local match remains a numerical observation, not a derivation. |
 
-## 5. Scope qualifiers
+## 6. Scope qualifiers
 
 - This note is **support-level**; it does not upgrade the down-type mass-ratio lane from `bounded` to `retained`.
-- The `5/6` bridge itself remains bounded; [`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`](CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) explicitly flags the theorem-grade exponentiation mechanism at `g=1` as open.
+- The `5/6` bridge itself remains bounded; the plain-context note
+  `CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md` explicitly flags the
+  theorem-grade exponentiation mechanism at `g=1` as open.
 - The claim that the threshold-local comparator is the unique framework-natural scale is NOT derived here; it remains an empirical observation of where the bounded lane matches best.
 - After the 2026-05-16 runner patch, the `+0.20%` match no longer rests on a hard-coded `1.14747` transport literal or a circular `R_common = R_thresh / transport` construction. It now rests on three INDEPENDENT PDG/FLAG inputs (`m_s(2 GeV)`, `m_s(m_b)`, `m_b(m_b)`) plus the retained anchors `α_s(v)` and `5/6 = C_F − T_F`. The PDG and FLAG mass quotations themselves carry quoted uncertainties of order `~9%` on `m_s(m_b)`; the `+0.20%` figure is the central-value match, with the +/- 9% FLAG envelope on `m_s(m_b)` setting the precision floor on the common-scale comparator separately.
 - The class-G numerical-match status of this note is **unchanged** by the runner patch; what the patch closes is the runner-level circularity and hard-coding that the 2026-05-05 audit flagged, not the missing structural derivations (audit defect D3) of the `5/6` bridge or the threshold-local comparator.
 
-## 6. Cross-references
+## 7. Cross-references
 
 - `docs/DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md` — primary bounded lane note.
-- [`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`](CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md) — `5/6` bridge support.
+- `CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md` — `5/6` bridge support
+  context; not load-bearing for this narrow scale-convention
+  calculation.
 - [`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md) — retained `α_s(v)`.
 - [`CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md) — retained `|V_cb|_atlas`.
 - `docs/UP_TYPE_MASS_RATIO_CKM_INVERSION_NOTE.md` — bounded up-sector parallel-bridge lane.

@@ -1,20 +1,74 @@
-# Meron / Fractional-Instanton Half-Action `4π²/g²` — External Narrow Gate
+# Meron / Fractional-Instanton Half-Action `4π²/g²` — Algebraic Decoration of the Retained Half-Action Core
 
-**Date:** 2026-05-16
+**Date:** 2026-05-16 (decoration-split repair: 2026-06-20)
 **Claim type:** open_gate
-**Scope:** external 4D Euclidean SU(2) meron / fractional-instanton
-context for the half-instanton action scale `4π²/g² = (1/2) S_inst`.
-The note records the candidate scale only under explicit regulator,
-meron-pair, half-volume, or twisted-boundary/fractional-instanton
-conditions. It does **not** assert that the singular unregularized
-single meron on `R^4` is a standalone finite-action theorem. Cited only
-as published gauge-theory context. No framework substrate
-identification, hierarchy closure, scale ratio derivation, or
-`α_LM^16` substitution is claimed.
+**Scope:** pure algebraic decoration of the half-action
+algebra core (`S_half = (1/2) S_inst = 4π²/g²` once a half-charge sector
+`|Q| = 1/2` is supplied). The load-bearing content of this note is **only**
+that half-action arithmetic, attached to the source half-action core note.
+The specific regulator, meron-pair, half-volume, or
+twisted-boundary/fractional-instanton **sector construction** that would
+legitimate the `|Q| = 1/2` input is recorded here as an explicitly
+**CONDITIONAL / open** premise that this note does **not** supply. The note
+does **not** assert that the singular unregularized single meron on `R^4`
+is a standalone finite-action theorem. External meron / lattice
+fractional-instanton material is cited only as published gauge-theory
+context, never as a supplied regulator/twist/patching-sector authority.
+No framework substrate identification, hierarchy closure, scale ratio
+derivation, or `α_LM^16` substitution is claimed.
 **Status authority:** independent audit lane only; pipeline-derived
 status set by `compute_effective_status.py`.
 **Runner:** [`scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py`](../scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.txt`](../logs/runner-cache/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.txt)
+
+## 2026-06-20 Source-Scope Repair: Split To Pure Algebraic Decoration
+
+This repair takes the **split-to-pure-algebraic-decoration** route. It does
+**not** supply the regulator/twist/patching-sector authority. Instead it
+restructures the note so that:
+
+- the **only** load-bearing content is the closed half-action algebra
+  `S_half = (1/2) S_inst = 4π²/g²`, which is a pure algebraic decoration of
+  the source half-action core note
+  [`MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md),
+  itself a bounded child of the topological-instanton infrastructure
+  certificate;
+- the specific regulator, meron-pair, capped-core, half-volume, or
+  twisted-boundary / fractional-instanton **sector construction** that
+  would legitimate the `|Q| = 1/2` input — and any claim that a singular
+  meron, a meron pair, or a particular lattice configuration realizes that
+  sector — is **explicitly marked CONDITIONAL / open and is not supplied
+  here**. See the "Conditional / Open Premise (NOT Supplied)" block in the
+  Claim section.
+
+The source context that this note decorates is therefore the **half-action
+algebra core** (`bounded topological-instanton normalization +
+supplied |Q| = 1/2 ⇒ S_half = 4π²/g²`). Nothing in this note discharges,
+derives, or imports the regulator/twist/patching sector; that remains the
+open gate.
+
+## 2026-06-18 Source-Scope Repair: Algebra Core Split
+
+The paired source split
+[`MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md)
+extracts the closed half-action algebra core:
+
+```text
+bounded topological-instanton normalization + supplied |Q| = 1/2
+  => S_half = 4*pi^2/g^2.
+```
+
+That split is only bounded support for the arithmetic. It does not derive
+the meron regulator, cap, twist, patching, existence, framework substrate, or
+observable bridge. The parent row therefore remains an external open gate for
+the boundary-conditioned meron/fractional-instanton sector.
+The regulator/twist/patching construction remains open.
+
+Downstream citations may cite the split note for the action arithmetic only.
+They must not cite this parent or the split note as a finite-action singular
+meron theorem, retained meron/fractional-instanton existence theorem,
+framework substrate bridge, hierarchy bridge, `alpha_LM^16` closure, or
+`v/M_Pl` scale-ratio closure.
 
 ## Claim
 
@@ -47,62 +101,69 @@ A_μ^a(x) = (1 / g)  η^a_μν  ∂_ν  ln( x² / ρ² )
 where `η^a_μν` is the standard 't Hooft symbol, `ρ` is a size
 parameter, and `x² = δ_μν x^μ x^ν` is the Euclidean radius squared.
 
-**Statement (external open gate):**
+**Load-bearing statement (pure algebraic decoration):**
 
-1. *Regularized meron / fractional-instanton action scale.* The
-   singular de Alfaro-Fubini-Furlan / Callan-Dashen-Gross meron on
-   `R^4` requires a regulator or paired/capped construction; without
-   that boundary data the single-meron action is not being claimed here
-   as a finite standalone theorem. In the regularized meron-pair,
-   capped-core, half-volume, or fractional-instanton contexts cited
-   below, the candidate half-instanton scale is
-
-   ```text
-   S_half = 4 π² / g²,
-   ```
-
-   with the regulator/boundary construction remaining load-bearing.
-   This note therefore records an external target and source context,
-   not a retained theorem-grade admission of a universal unregularized
-   meron action.
-
-2. *Half-action identity under the stated boundary data.* The
-   half-instanton scale is algebraically half the BPST instanton
-   minimal action `S_inst = 8 π² / g²`:
+1. *Half-action identity — the only load-bearing content.* Given the
+   retained-bounded BPST instanton minimal-action normalization
+   `S_inst = 8 π² / g²` (supplied by the topological-instanton
+   infrastructure certificate) and a supplied half-charge sector value
+   `|Q| = 1/2`, the corresponding action scale is exactly half the BPST
+   minimal action:
 
    ```text
-   S_half  =  (1/2)  S_inst  =  4 π² / g².
+   S_half  =  (1/2)  S_inst  =  (8 π² / g²) |Q| |_{|Q|=1/2}  =  4 π² / g².
    ```
 
-   In a self-dual fractional-instanton setting this is the usual
-   `S = (8π²/g²) |Q|` formula at `|Q| = 1/2`. In a meron setting, the
-   regulator or pair construction is part of the claim boundary and is
-   not supplied by the bare algebraic identity alone.
+   This is finite algebra over the retained-bounded topological-instanton
+   normalization and the explicit `|Q| = 1/2` sector value. It is a pure
+   algebraic decoration of the source half-action core note
+   [`MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md).
+   No regulator, twist, patching, existence, or substrate claim enters this
+   line.
 
-3. *Fractional topological charge structure.* Fractional charge
-   `Q = 1/2` is admitted only in the cited half-volume, meron-pair, or
-   twisted-boundary/fractional-instanton settings, not as an ordinary
-   smooth compact SU(2) bundle charge. The topological charge integral
+**Conditional / Open Premise (NOT Supplied):**
 
-   ```text
-   Q = (1 / (32 π²)) ∫ d^4x  Tr( F_μν *F^μν )
-   ```
+The half-action arithmetic above is conditional on a legitimate half-charge
+sector `|Q| = 1/2`. The construction that would supply that sector is
+**explicitly open and is not provided by this note**. The following are
+recorded as conditional source context only; none is asserted as a supplied
+authority:
 
-   can contribute a half-unit once the relevant boundary/twist/patching
-   data are fixed. Two compatible half-units can sum to integer
-   `Q = 1`, recovering the BPST instanton integrality compatible with
-   Atiyah-Singer in the closed smooth setting.
+- (C1) *Regulated meron / fractional-instanton sector.* The
+  singular de Alfaro-Fubini-Furlan / Callan-Dashen-Gross meron on
+  `R^4` requires a regulator or paired/capped construction; without
+  that boundary data the single-meron action is **not** a finite
+  standalone theorem. Whether the regularized meron-pair, capped-core,
+  half-volume, or fractional-instanton contexts cited below realize the
+  `|Q| = 1/2` sector is the **open gate** this note does not close.
 
-4. *Lattice realization context.* On suitable 4D lattice/twisted-boundary
-   setups, the cited lattice fractional-instanton literature studies
-   fractional topological charge and half-instanton action scales. This
-   note does not claim that every 4D `Z^4` Wilson lattice realizes such a
-   sector, nor that the framework lattice is one of those sectors.
+- (C2) *Fractional topological charge structure.* Fractional charge
+  `Q = 1/2` would be admissible only in a half-volume, meron-pair, or
+  twisted-boundary/fractional-instanton setting, **not** as an ordinary
+  smooth compact SU(2) bundle charge. The topological charge integral
 
-The load-bearing boundary is the regulator/twist/patching construction.
-The singular meron configuration is not smooth at `x = 0` and has
-infrared/large-distance boundary subtleties; this note does not turn
-that singular object into a finite-action positive theorem.
+  ```text
+  Q = (1 / (32 π²)) ∫ d^4x  Tr( F_μν *F^μν )
+  ```
+
+  can contribute a half-unit **only once the relevant
+  boundary/twist/patching data are fixed** — which this note does not fix.
+  Two compatible half-units can sum to integer `Q = 1`, recovering BPST
+  integrality compatible with Atiyah-Singer in the closed smooth setting;
+  that pairing is likewise conditional context, not a supplied result.
+
+- (C3) *Lattice realization context.* On suitable 4D
+  lattice/twisted-boundary setups, the cited lattice fractional-instanton
+  literature studies fractional topological charge and half-instanton
+  action scales. This note does **not** claim that any 4D `Z^4` Wilson
+  lattice realizes such a sector, nor that the framework lattice is one of
+  those sectors.
+
+The regulator/twist/patching construction is the **open gate**, not a
+boundary discharged here. The singular meron configuration is not smooth at
+`x = 0` and has infrared/large-distance boundary subtleties; this note does
+not turn that singular object into a finite-action positive theorem and does
+not supply the sector that the half-action arithmetic is conditioned on.
 
 ## Boundary
 
@@ -194,9 +255,15 @@ symbolic and numerical surrogates where needed):
 4. **T4**: numerical `exp(-S_half)` at the same `g²` values,
    exhibiting the canonical half-instanton suppression at intermediate
    coupling; at `g² = 1`, `4 π² ≈ 39.48` and `exp(-39.48) ≈ 7.6×10^{-18}`.
-5. **T5**: fractional topological charge structure `Q = 1/2` is stated
-   only under boundary/twist/half-volume hypotheses (the runner does
-   **not** derive the fractional charge from first principles).
+5. **T5** *(segregated sector-claim check)*: the fractional `Q = 1/2`
+   regulator/twist/patching **sector** is recorded as an explicitly
+   CONDITIONAL / open premise that this note does **not** supply. The
+   runner verifies the conditional/open framing — that the note carries the
+   "Conditional / Open Premise (NOT Supplied)" demotion block, names the
+   sector construction as the open gate it does not close, and explicitly
+   does not supply that sector — rather than asserting the fractional charge
+   as a result. The runner does **not** derive the fractional charge and
+   does **not** supply the regulator/twist/patching authority.
 6. **T6**: singular-meron boundary — runner asserts that the note
    explicitly refuses to treat the unregularized single meron as a
    finite-action theorem and records the regulator/twist/patching
@@ -216,9 +283,15 @@ symbolic and numerical surrogates where needed):
     not a framework substrate theorem, finite-action singular meron
     theorem, positive hierarchy bridge, `alpha_LM^16` closure, or
     `v/M_Pl` closure.
+12. **T12**: algebra-core split — runner checks that this parent cites the
+    2026-06-18 half-action core note, that the core note is arithmetic-only,
+    and that the parent no longer presents the topological-instanton
+    infrastructure as authority for the full regulator/twist/patching
+    construction.
 
 Expected runner result: `PASS=N`, `FAIL=0`.
 
 ## Upstream authority
 
-- [TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md) — bounded named-import umbrella wrapper covering Luescher admissibility / gradient-flow lattice charge and twisted-`T^4` `'t Hooft / van Baal` fractional `Q = k / N` sectors. Provides the one-hop authority for the regulator / twist / patching construction yielding the `Q = 1/2`, `S = 4 pi^2 / g^2` meron half-action sector.
+- [MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md](MERON_HALF_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md) — bounded support for the arithmetic core `S_half = 4*pi^2/g^2` once `|Q| = 1/2` is supplied.
+- [TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md) — bounded Hodge/Bogomolny, BPST `8*pi^2`, and twisted-`T^4` `Q=k/N` arithmetic certificate, with external topology references cited in parallel. It does **not** supply a retained meron regulator, cap, twist, patching, existence, framework-substrate, or observable bridge for this parent row.

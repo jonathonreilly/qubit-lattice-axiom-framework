@@ -5,6 +5,8 @@ repair); 2026-05-28 (reclassified `bounded_theorem → meta` per audit path (b))
 **Type:** meta
 **Claim scope:** non-authoritative roadmap/index of package ingredient labels;
 sets no audit status and proves no ingredient row.
+**Primary runner:** [`scripts/assumption_derivation_ledger_meta_check.py`](../scripts/assumption_derivation_ledger_meta_check.py)
+(meta-firewall check; `PASS=16 FAIL=0` on 2026-06-18).
 
 This file exists to stop the package from blurring axioms, computed
 inputs, derived quantitative rows, and still-open companion lanes.
@@ -138,6 +140,7 @@ a load-bearing claim about any specific row's status.
 ```yaml
 claim_type_author_hint: meta
 claim_scope: "Non-authoritative roadmap/index of package ingredient labels; sets no audit status and proves no ingredient row."
+primary_runner: scripts/assumption_derivation_ledger_meta_check.py
 upstream_dependencies: []
 admitted_context_inputs: []
 ```

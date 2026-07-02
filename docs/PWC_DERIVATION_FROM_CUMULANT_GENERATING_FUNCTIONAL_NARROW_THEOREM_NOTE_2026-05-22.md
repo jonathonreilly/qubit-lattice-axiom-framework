@@ -1,25 +1,58 @@
 # PWC Derivation from the Standard Cumulant Generating Functional (Narrow)
 
-**Date:** 2026-05-22
-**Type:** bounded_theorem candidate
-**Status:** source-side proposal — independent audit lane owns the verdict
-**Purpose:** Identify the framework's pre-record connected generating functional `W[J] := log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` as the standard finite-source cumulant generating functional applied to a given pre-record reference state, rather than ratifying it as a framework rule. The clean theorem scope is commuting bounded source families, with the noncommuting quantum ordering convention left explicit.
+**Date:** 2026-05-22; 2026-06-17 finite-source proof repair
+**Claim type:** bounded_theorem
+**Status:** bounded finite-source proof; independent audit required.
+**Status authority:** independent audit lane only.
+**Purpose:** Prove, on the finite qubit-region commuting-source surface,
+that `W[J] := log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` is exactly the
+connected cumulant generator for the supplied finite-region state
+`ρ_ref`. Textbook cumulant-generator references are retained as
+parallel provenance, not as load-bearing premises. The clean theorem
+scope is commuting bounded source families, with the noncommuting
+quantum ordering convention left explicit.
+**Primary runner:** [`scripts/pwc_commuting_cgf_framework_native_2026_06_17.py`](../scripts/pwc_commuting_cgf_framework_native_2026_06_17.py)
 
 ## Source boundary (2026-06-12)
 
-**Boundary:** standard-object identification, not a framework-native derivation
-of the source functional. Effective status is audit-derived; this source
-records only the claim boundary.
+**Boundary:** finite commuting-source proof over a supplied state, not a
+derivation of the state or of a noncommuting ordering convention.
+Effective status is audit-derived; this source records only the claim
+boundary.
 
-The derivative signs and normalization are internally consistent on the
-commuting-source scope, but the load-bearing move is the identification of
-framework `W[J]` with the standard cumulant generating functional while
-`rho_ref`, the probabilistic/state bridge, and noncommuting ordering remain
-supplied or out of scope.
+The derivative signs and normalization are proved on the
+commuting-source scope by the finite spectral-measure calculation below
+and by the registered runner. The load-bearing move is no longer a bare
+appeal to textbook CGF terminology: once `rho_ref` and a commuting
+finite source family are supplied, the trace expression itself has the
+connected-cumulant derivatives. This note still does not derive `rho_ref`,
+the probabilistic/state bridge, or any noncommuting ordering convention.
 
 This note may be cited for the commuting-source cumulant identity and sign
 convention. It may not be cited as a retained derivation of `W[J]` from minimal
 axioms, of the reference state, or of the noncommuting source convention.
+
+## 2026-06-17 finite-source proof repair
+
+The previous source surface described the row as a standard-object
+identification and cited probability / statistical-mechanics textbooks
+as named non-derivation imports. This repair changes the load-bearing
+shape:
+
+- the finite commuting-source theorem is proved directly from the joint
+  spectral decomposition of mutually commuting observables on a finite
+  qubit-region algebra;
+- the runner verifies `W[0]=0`, first, second, and third derivative
+  cumulant identities with the fixed `(-1)^n` source-sign convention;
+- the runner verifies that the trace expression and spectral-measure
+  expression agree exactly on a two-qubit finite region;
+- falsification legs show that dropping the logarithm gives raw
+  moments, not connected cumulants, and that linearizing the source
+  loses the connected second cumulant;
+- textbook references now serve as parallel provenance for the same
+  finite calculation, not as load-bearing premises.
+
+Noncommuting source families remain outside this theorem.
 
 ## Why this note exists
 
@@ -31,15 +64,18 @@ Following the same audit-feedback that drove the k=1, LSP-projective, and PRR-lo
 
 This note **does not**:
 - Add a new framework rule
-- Re-derive the cumulant generating functional formalism from scratch (cited as standard probability / statistical mechanics)
 - Claim Pattern-L-style "selection from a family" for the commuting finite-source cumulant generator
-- Derive or audit the choice of `ρ_ref`; this note takes the finite-region state as the input to the cumulant generator
+- Derive or audit the choice of `ρ_ref` (`rho_ref`); this note takes the finite-region state as the input to the cumulant generator
 - Resolve noncommuting operator-ordering, Wick / Schwinger rotation, time-ordering conventions, or path-integral measures (separate lanes)
 
 This note **does**:
-- Cite the standard probability-theory definition of the cumulant generating functional
-- Show that the framework's `W[J]` form is the standard cumulant generating functional applied to `ρ_ref` with a commuting `J`-coupled observable source
-- Record that `W[0] = 0` and `∂^n W / ∂J^n |_{J=0}` reproduces the connected `n`-point function of the commuting source observables, which is the standard cumulant content
+- Prove the finite commuting-source cumulant identities directly from
+  the joint spectral measure induced by `ρ_ref`
+- Cite standard probability / statistical-mechanics treatments only as
+  parallel provenance for the same object
+- Record and runner-check that `W[0] = 0` and
+  `∂^n W / ∂J^n |_{J=0}` reproduces `(-1)^n` times the connected
+  `n`-point cumulant of the commuting source observables
 
 ## Position: identification, not selection
 
@@ -48,7 +84,12 @@ The selection / identification distinction matters for Pattern-L circularity dis
 - **Selection (Pattern-L-circular).** "Among a family of candidate functionals `{W_α[J]}`, the framework selects `W_0[J]`." This requires axiom-level input picking out which member of the family the framework uses, and risks circularity if downstream content already constrains the choice.
 - **Identification (the current case).** "On the commuting-source scope, there is one standard mathematical object — the cumulant generating functional — and the framework's `W` is that object." No family to select from; the standard definition is what `W` *is*.
 
-For commuting bounded sources, `W[J] := log Tr(ρ · e^{-J})` is the standard cumulant generating functional in classical probability theory applied to the joint spectral measure. For noncommuting quantum sources, the same expression is a standard Kubo/statistical-mechanics source convention, but it does not eliminate the separate ordering-convention lane.
+For commuting bounded sources, the finite trace expression reduces to
+the joint spectral measure and the logarithm extracts connected
+cumulants. For noncommuting quantum sources, the same expression is a
+standard Kubo/statistical-mechanics source convention, but this note
+does not prove ordering equivalence and does not eliminate the separate
+ordering-convention lane.
 
 The pre-record subscript reflects which state `ρ_ref` is used; this note does not derive that state. The cumulant-generating-functional form itself is not a framework choice on the commuting-source scope.
 
@@ -62,41 +103,64 @@ For a given finite-region pre-record reference state `ρ_ref` on the one-qubit o
 W[J]  :=  log Tr(ρ_ref · e^{-J})  -  log Tr(ρ_ref)                       (PWC)
 ```
 
-This is **the standard cumulant generating functional of probability theory** applied to the joint spectral measure induced by `ρ_ref` and the commuting source family. Its `n`-th `J`-derivatives at `J = 0` reproduce the connected `n`-point functions of those commuting source observables under `ρ_ref`. Since `Tr(ρ_ref) = 1` for normalized `ρ_ref`, the second term vanishes and `W[J] = log Tr(ρ_ref · e^{-J})` directly. The `- log Tr(ρ_ref)` term is recorded for the general case where `ρ_ref` may not yet be normalized (e.g., in intermediate constructions).
+This is the finite joint-spectral cumulant generator induced by
+`ρ_ref` and the commuting source family. Its `n`-th `J`-derivatives at
+`J = 0` reproduce `(-1)^n` times the connected `n`-point cumulants of
+those commuting source observables under `ρ_ref`. Since
+`Tr(ρ_ref) = 1` for normalized `ρ_ref`, the second term vanishes and
+`W[J] = log Tr(ρ_ref · e^{-J})` directly. The `- log Tr(ρ_ref)` term is
+recorded for the general case where `ρ_ref` may not yet be normalized
+(e.g., in intermediate constructions).
 
 ## Proof
 
-### Step 1 — Standard cumulant generating functional definition
+### Step 1 — Finite joint-spectrum calculation
 
-In classical probability theory (Feller *An Introduction to Probability Theory and Its Applications* Vol. II Ch. VII §5; Billingsley *Probability and Measure* §21), the **cumulant generating functional** of a real-valued random variable `X` under a probability measure `μ` is
-
-```text
-K(t)  :=  log E_μ[e^{tX}]  =  log ∫ e^{tx} dμ(x).                        (P1)
-```
-
-Its `n`-th derivative at `t = 0` gives the `n`-th cumulant `κ_n` of `X` under `μ`:
-
-```text
-κ_n  =  d^n K / dt^n |_{t=0}.                                            (P2)
-```
-
-In particular:
-- `K(0) = log E[1] = log 1 = 0` (normalization)
-- `K'(0) = E[X]` (mean)
-- `K''(0) = E[X²] - E[X]²` (variance)
-- Higher derivatives give higher cumulants
-
-For a *family* of source-coupled observables `{X_α}` with source vector `J = (J_α)`, the **multivariate cumulant generating functional** is
+Let `O_1,...,O_m` be mutually commuting bounded self-adjoint operators
+on a finite region algebra `A_Λ`. By simultaneous finite-dimensional
+spectral decomposition, there is a common eigenbasis indexed by `r`,
+with eigenvalue vectors `o(r) = (o_1(r),...,o_m(r))`. For a positive
+finite-region state `ρ_ref`, set `w_r := <r|ρ_ref|r>`. Off-diagonal
+entries of `ρ_ref` do not contribute to the trace of a diagonal source
+exponential, so
 
 ```text
-K(J)  :=  log E_μ[e^{Σ_α J_α X_α}]                                       (P3)
+Tr(ρ_ref e^{-Σ_a J_a O_a}) = Σ_r w_r exp(-Σ_a J_a o_a(r)).              (P1)
 ```
 
-with mixed `J`-derivatives at `J = 0` giving multivariate cumulants (connected `n`-point functions of the `X_α`).
+Therefore
+
+```text
+W[J] = log(Σ_r w_r exp(-Σ_a J_a o_a(r))) - log(Σ_r w_r).                (P2)
+```
+
+This finite formula proves the needed identities by direct
+differentiation:
+
+- `W[0] = 0`;
+- `∂_a W|_0 = -E[O_a]`;
+- `∂_a∂_b W|_0 = E[O_a O_b] - E[O_a]E[O_b]`;
+- higher derivatives give `(-1)^n` times the corresponding connected
+  cumulants, because the logarithm is exactly the finite moment-to-
+  cumulant transform.
+
+The runner verifies these identities exactly through third order on a
+non-degenerate two-source finite spectrum and also checks falsifiers:
+without the logarithm the second derivative is the raw moment, not the
+connected covariance; with a linearized source the connected second
+cumulant disappears.
+
+Classical probability texts call (P2) the cumulant generating
+functional; those references are parallel provenance, not the
+load-bearing proof.
 
 ### Step 2 — Quantum extension
 
-For a quantum state `ρ` and a mutually commuting bounded self-adjoint source family `J = Σ_α J_α O_α`, the same functional is obtained by applying (P3) to the joint spectral measure. In quantum statistical mechanics, the source-coupled expression is commonly written (Kubo, Toda, Hashitsume *Statistical Physics II* Ch. 1; Jaksic-Pillet *Course on Statistical Mechanics* §2):
+For a quantum state `ρ` and a mutually commuting bounded self-adjoint
+source family `J = Σ_α J_α O_α`, Step 1 is already the quantum proof:
+the trace reduces to the finite joint spectral measure. Quantum
+statistical mechanics commonly writes the same source-coupled
+expression as
 
 ```text
 W[J]  :=  log Tr(ρ · e^{-J})  -  log Tr(ρ).                              (Q1)
@@ -113,7 +177,12 @@ The functional `W[J]` satisfies:
 - `δ²W / δJ_α δJ_β |_{J=0} = Tr(ρ O_α O_β) - Tr(ρ O_α) Tr(ρ O_β)` for commuting `[O_α, O_β] = 0`; `(-1)^2 = +1` times the connected two-point function (covariance) — the textbook sign
 - Higher functional derivatives give `(-1)^n` times the connected `n`-point functions
 
-For commuting observable families (`[O_α, O_β] = 0` for all `α, β`), the multivariate quantum cumulant generating functional reduces to the classical one applied to the joint spectral measure of the `{O_α}`. For non-commuting families, ordering issues require care; (Q1) is a standard Kubo/source convention, not a proof that all ordering choices are physically equivalent.
+For commuting observable families (`[O_α, O_β] = 0` for all `α, β`),
+the multivariate quantum cumulant generating functional is therefore
+proved by the finite joint-spectrum calculation. For non-commuting
+families, ordering issues require care; (Q1) is a standard Kubo/source
+convention, not a proof that all ordering choices are physically
+equivalent.
 
 ### Step 3 — Framework's `W[J]` is exactly (Q1)
 
@@ -149,15 +218,21 @@ So on the stated commuting-source scope, the framework's `W[J]` form is the stan
 
 ### Step 5 — Conclusion
 
-For commuting bounded source families, the framework's `W[J] = log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` is the standard cumulant generating functional of probability theory / quantum statistical mechanics applied to the given pre-record reference state `ρ_ref`. Its content (connected `n`-point functions as `J`-derivatives at `J = 0`) is the standard cumulant content. No framework-rule selection is required on that scope: the form **is** the standard mathematical object. ∎
+For commuting bounded source families, the framework's
+`W[J] = log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` is the finite
+joint-spectral cumulant generator applied to the supplied finite-region
+state `ρ_ref`. Its content (connected `n`-point cumulants as
+`J`-derivatives at `J = 0`, with the fixed `(-1)^n` sign convention)
+follows by direct finite-dimensional differentiation. No framework-rule
+selection is required on that scope. ∎
 
 ## Cited authorities (one hop)
 
 Load-bearing markdown-link upstream:
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies the qubit-per-site axiom and `Z^3` spatial substrate on which `ρ_ref` lives
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — supplies the current Lattice/Quantum/Record axiom memo; this row uses only the Lattice and Quantum finite-region algebra surface on which `ρ_ref` lives
 
-Named non-derivation imports (standard textbook content):
+Parallel provenance (not load-bearing premises):
 
 - **Cumulant generating functional** in classical probability (Feller Vol. II Ch. VII §5; Billingsley §21; standard MGF / cumulant theory)
 - **Quantum cumulant generating functional** in quantum statistical mechanics (Kubo-Toda-Hashitsume *Statistical Physics II* Ch. 1; Jaksic-Pillet course; standard finite-temperature source-coupled formalism)
@@ -169,7 +244,11 @@ Plain-text contextual pointer (not load-bearing dep):
 
 ## What this derivation supplies
 
-The same `W[J] = log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` form, now stated as the **standard cumulant generating functional of probability theory applied to `ρ_ref`** on commuting source families, not a load-bearing framework rule. The "selection from a family" structure that would have made it a framework rule does not exist on that narrow scope.
+The same `W[J] = log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` form, now
+proved as the finite joint-spectral connected-cumulant generator
+applied to `ρ_ref` on commuting source families, not a load-bearing
+framework rule. The "selection from a family" structure that would have
+made it a framework rule does not exist on that narrow scope.
 
 ## What this does NOT close
 
@@ -180,9 +259,28 @@ The same `W[J] = log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` form, now stated as 
 - **Downstream Wilson-coefficient extraction from `W[J]`** — separate lane
 - **Promotion of any downstream row** — auditor-owned
 
+## Verification
+
+Run:
+
+```bash
+python3 scripts/pwc_commuting_cgf_framework_native_2026_06_17.py
+```
+
+Expected result:
+
+```text
+PWC commuting-source cumulant-generator finite proof
+TOTAL: PASS=14 FAIL=0
+```
+
 ## Citation-graph note
 
-This is a bounded_theorem candidate at narrow-theorem granularity. Standard probability / statistical mechanics applied to the framework's specific pre-record reference state to identify the framework's `W[J]` as the standard cumulant generating functional on commuting finite-source families.
+This is a bounded_theorem candidate at narrow-theorem granularity. The
+load-bearing proof is finite-dimensional and source-native over a
+supplied finite-region state and commuting finite-source family.
+Textbook probability / statistical-mechanics references are parallel
+provenance for the same object.
 
 Plain-text pointer references (NOT load-bearing deps):
 
@@ -195,7 +293,7 @@ Plain-text pointer references (NOT load-bearing deps):
 ## What this file is not
 
 - Not a new framework rule
-- Not a re-derivation of the cumulant generating functional formalism (cited as standard)
+- Not a derivation of `rho_ref`, noncommuting ordering, or source-production dynamics
 - Not a Pattern-L selection from a family of admissible cumulant generators on the stated commuting-source scope
 - Not a promotion of any downstream row (auditor-owned)
 - Not a numerical-prediction change

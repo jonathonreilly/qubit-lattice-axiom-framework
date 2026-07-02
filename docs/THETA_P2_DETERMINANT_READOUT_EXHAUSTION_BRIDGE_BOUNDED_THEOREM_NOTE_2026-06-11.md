@@ -1,14 +1,17 @@
 # Theta P2 Determinant-Readout Supplied-Boundary Exhaustion
 
-**Date:** 2026-06-11 (supplied-boundary repair 2026-06-15)
+**Date:** 2026-06-11 (supplied-boundary repair 2026-06-15;
+mass-side source-edge wiring 2026-06-18)
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
+**Status:** conditional-support; supplied-context algebra only, not a
+physical theta_eff or action-level readout bridge.
 **Status authority:** independent audit lane only. This source note does not
 set or predict an audit outcome and does not edit the audit-lane-owned Tier-A
 registry, ledger, queue, or publication-status surfaces.
 **Primary runner:**
 [`scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py`](../scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py)
-(TOTAL: PASS=40 FAIL=0; cached:
+(TOTAL: PASS=47 FAIL=0; cached:
 [`logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt`](../logs/runner-cache/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.txt))
 
 ---
@@ -32,6 +35,56 @@ action-level reduction from the framework. The word "exhaust" below is used
 only in the audit lane's own technical sense — a proved factorization statement
 about a constrained readout class — never as a claim about a search space.
 
+## 2026-06-18 Supplied-Context Scope Firewall
+
+This row takes the audit fallback path: it is scoped as supplied-context
+algebra only. The citable conclusion is restricted to the supplied determinant
+datum context, the supplied W2 registrability premise, and the supplied
+Gaussian/per-plaquette action class named below.
+
+It does not derive W2 physical registrability. It does not derive the physical
+theta_eff mass-orientation datum or prove that the framework action reduces
+that datum to `arg det(M_u M_d)`. It does not exclude physical
+non-registrable, multi-plaquette, source-insertion, gauge-side, or
+beyond-supplied-class action-level data. Downstream physical strong-CP use must
+carry a separate W2/action-level theorem or remain explicitly conditional.
+
+No new axiom, Tier-A admission, audit verdict, ledger tag, or publication
+status is introduced by this firewall.
+
+## 2026-06-20 Source Repair: Downstream Conditional Scope
+
+This source repair does **not** derive the W2 physical-registrability theorem
+or the action-level `theta_eff` determinant-entry theorem. Instead it states
+explicitly that the theorem, and all downstream strong-CP use of it, are
+**conditional on exactly those two supplied premises**:
+
+- **(i) W2 physical-registrability** — that the physical mass-surface readout
+  context satisfies the Record registrability constraints (additivity + orbit
+  constancy). Supplied here for the conditional theorem, not derived. Open
+  bridge.
+- **(ii) action-level `theta_eff` determinant-entry** — that the physical
+  mass-orientation dependence of the vacuum weight reduces, on the supplied
+  per-plaquette-plus-Gaussian-fermion action class, to the `theta_eff` datum
+  `arg det(M_u M_d)`. Supplied here for the conditional theorem, not derived.
+  Open bridge.
+
+The Statement's conditional clause now carries (i) and (ii) explicitly, part
+(5) is flagged as conditional on (ii), and the conclusion paragraph below
+restates that any downstream strong-CP consumer inherits the conditionality.
+No language in this note presents (i) or (ii) as derived, retained, or
+established within the framework; each is the named, unsupplied bridge the
+source boundary requires. No new axiom, import, comparator, or Tier-A admission
+is introduced.
+
+**Downstream strong-CP use is explicitly conditional.** Any consumer that uses
+this note's conclusion — that the supplied `arg det(M_u M_d)` datum carries zero
+Record-registrable phase content and is exhausted by the `k = 0`
+determinant-character readout — to assert a physical strong-CP / `theta`
+outcome must additionally carry, or itself remain conditional on, premises (i)
+and (ii). This note supplies neither; it proves only the supplied-context
+algebra that follows once (i) and (ii) are granted.
+
 ## 2026-06-15 Supplied-Boundary Repair
 
 The current audit verdict asked for a retained action-level bridge reducing
@@ -51,9 +104,38 @@ Load-bearing in this note:
 Not load-bearing in this note:
 
 - the physical claim that the mass readout satisfies W2;
-- a framework derivation that the only physical action-level orientation datum
-  is `arg det(M_u M_d)`;
+- a complete retained framework derivation that the only physical action-level
+  orientation datum is `arg det(M_u M_d)`;
 - any multi-plaquette, source-insertion, or non-registrable readout exclusion.
+
+## 2026-06-18 mass-side source-edge wiring
+
+After the supplied-boundary repair, the source tree gained a dedicated
+mass-side packet:
+[`THETA_MASS_SIDE_EPSILON_HERMITICITY_REALITY_BRIDGE_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](THETA_MASS_SIDE_EPSILON_HERMITICITY_REALITY_BRIDGE_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-06-11.md).
+That packet is **not** used here as an audit verdict or retained authority; its
+live audit status is independent-audit owned. It is wired here as a concrete
+source-edge for the bilinear matter half of the action-level blocker.
+
+The composition is narrow:
+
+- the mass-side packet re-proves the first-power Berezin determinant surface,
+  so at the bilinear matter partition level the phase-bearing vacuum-weight
+  datum is the determinant, not an independent non-multiplicative matter datum;
+- under the enumerated epsilon-graded K-real bilinear classes it proves
+  `det(D(U)+A) in R` for every tested unitary gauge background, reducing the
+  continuous mass-side phase to the shared K-reality premise plus a discrete
+  orientation bit;
+- this note's determinant-readout algebra then says that, inside the supplied
+  Record-registrable determinant context, the determinant phase has zero
+  registrable content.
+
+What remains unchanged: W2 is still not derived, K-reality is still a consumed
+selector rather than a theorem of this note, the orientation bit is not erased,
+the gauge-side bare-`theta` / multi-plaquette residual is untouched, and
+beyond-bilinear or source-insertion observables remain outside the vacuum-weight
+premise. This wiring therefore makes the downstream dependency explicit; it
+does not promote this row or the mass-side packet.
 
 ## Statement
 
@@ -63,9 +145,14 @@ decomposition; the fixed `K`/CPT conjugation acting on the central determinant
 data by complex conjugation; a per-record determinant datum map `e -> z(e)`
 in `C^x` that is multiplicative over disjoint records
 (`z(e_1 cup e_2) = z(e_1) z(e_2)`), with the scalar readout a function of that
-datum, `I(e) = F(z(e))`. Conditional on the supplied readout context satisfying
-the Record registrability constraints (the quarantined premise W2), and — for part
-(v) — on the supplied per-plaquette-plus-Gaussian-fermion action class:
+datum, `I(e) = F(z(e))`. The theorem is conditional on two supplied
+premises that are **not** derived in this note (each is an open bridge named in
+the Boundary section): **(i) W2 physical-registrability** — the supplied readout
+context satisfies the Record registrability constraints; and **(ii) the
+action-level `theta_eff` determinant-entry premise** — that the physical
+mass-orientation dependence of the vacuum weight reduces, on the supplied
+per-plaquette-plus-Gaussian-fermion action class, to the `theta_eff` datum
+`arg det(M_u M_d)` (used only in part (v)). Conditional on (i) and (ii):
 
 1. **(Orbit)** The `K`/CPT orbit of the datum `z = det(M_u M_d)` is
    `{z, conj z}`: `|z|` is fixed and `arg z -> -arg z`.
@@ -94,19 +181,21 @@ the Record registrability constraints (the quarantined premise W2), and — for 
    supplied character family. On the finite models in the runner this is
    verified as a complete solution-space computation (nullspace dimension
    count), not on a hand-picked family.
-5. **(Supplied action-level entry characterization)** On the supplied
-   strong-CP selected Gaussian surface, the fermion integral is exact, so the
-   admitted vacuum-weight dependence on the mass datum is the determinant
-   `det(D + M)`; its orientation-sensitive part is `arg det`, which is the
-   per-sector-additive phase datum of parts (2)-(4). The supplied
-   per-plaquette gauge class contains no local cross-plane `F Ftilde` slot
-   that could host an independent orientation-sensitive action-level datum
+5. **(Supplied action-level entry characterization, conditional on premise (ii))**
+   *Under the supplied action-level `theta_eff` determinant-entry
+   premise (ii)*: on the supplied strong-CP selected Gaussian surface, the
+   fermion integral is exact, so the supplied vacuum-weight dependence on the
+   mass datum is the determinant `det(D + M)`; its orientation-sensitive part is
+   `arg det`, which is the per-sector-additive phase datum of parts (2)-(4). The
+   supplied per-plaquette gauge class contains no local cross-plane `F Ftilde`
+   slot that could host an independent orientation-sensitive action-level datum
    (composition with the retained_bounded cross-plane note). Hence, within
-   the supplied action class and the `theta_eff` vacuum-weight premise, the
-   only orientation-sensitive action-level entry admitted by this supplied
-   action class is `arg det(M_u M_d)` — and parts (2)-(4) erase it at
-   registration. The
-   pieces this part does **not** cover are named in the Boundary section.
+   the supplied action class and the supplied `theta_eff` vacuum-weight premise
+   (ii), the only orientation-sensitive action-level entry supplied by this
+   supplied action class is `arg det(M_u M_d)` — and parts (2)-(4) erase it at
+   registration. Premise (ii) itself — that the physical action reduces the
+   mass-orientation datum to `arg det(M_u M_d)` — is supplied, not derived here;
+   the pieces this part does **not** cover are named in the Boundary section.
 
 ## Setup and derivation
 
@@ -213,6 +302,11 @@ mass-orientation datum enters the supplied action class:
   the `K`/CPT orbit pair of part (1). So the orientation-sensitive part of
   the action-level mass entry is `arg det`, the additive phase datum that
   parts (2)-(4) erase at registration.
+  The mass-side source-edge note linked above independently re-proves the
+  first-power Berezin determinant and epsilon-Hermiticity reality mechanisms at
+  the bilinear matter level, then localizes the remaining mass-side admission
+  to K-reality plus a discrete orientation bit. That packet is a source-side
+  dependency edge pending independent audit, not a status import.
 - **Gauge side.** The supplied gauge action class is the per-plaquette class
   under the unit-neighborhood link-support license
   ([`PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md`](PER_PLAQUETTE_FROM_ADJACENCY_LICENSE_BOUNDED_THEOREM_NOTE_2026-06-09.md),
@@ -274,12 +368,12 @@ This bridge is bounded. What survives, explicitly:
   positivity by
   [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md).
   This note addresses only the mass-orientation datum.
-- **The action-level determinant datum is supplied, not derived.** The
-  reduction from the physical fermion mass-orientation dependence to the
-  `theta_eff` datum `arg det(M_u M_d)` is a supplied premise of the bounded
-  action class. Part (5) checks the determinant/Gaussian and per-plaquette
-  composition inside that supplied class; it does not prove that no physical
-  datum outside the class can appear.
+- **The full action-level determinant datum is not globally derived here.** The
+  bilinear matter partition-level half now has a named source-edge in
+  `THETA_MASS_SIDE_EPSILON_HERMITICITY_REALITY_BRIDGE_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`,
+  but this note still does not prove W2, K-reality, the orientation-bit choice,
+  the gauge-side `theta` residual, or exclusion of physical data outside the
+  supplied bilinear/vacuum-weight class.
 - **Source/insertion observables.** Fermion-source correlators depend on
   `(D + M)^{-1}`, i.e. on more of `M` than `det(D + M)`. The bridge covers
   the supplied `arg det(M_u M_d)` contribution to `theta_eff` (the
@@ -326,10 +420,11 @@ registration.*
   hypotheses at the wrap. (e) Action-level re-entry through a local gauge
   `F Ftilde` slot: absent in the supplied per-plaquette class
   (retained_bounded). (f) Action-level re-entry through non-determinant mass
-  dependence of the vacuum weight: excluded by Gaussian exactness on the
-  selected surface. Routes outside these hypotheses (non-registrable
-  readouts, multi-plaquette classes, source insertions) are not closed — they
-  are the named Boundary.
+  dependence of the bilinear vacuum weight: source-wired to the epsilon-
+  Hermiticity mass-side packet and still conditional on its independent audit
+  and its K-reality/orientation-bit boundary. Routes outside these hypotheses
+  (non-registrable readouts, multi-plaquette classes, source insertions) are
+  not closed — they are the named Boundary.
 - **N2 — wall independence.** Surviving walls: W2 (registrability
   identification), premise 1 (bare `theta` slot), the per-plaquette license,
   and the multi-plaquette reopening. None implies another; none is collapsed
@@ -384,12 +479,18 @@ miniature here, with source insertions explicitly excluded; (4) that the
 unaudited prior note is not load-bearing (all used legs re-derived and
 re-checked in this note's runner); (5) that no claim is made beyond the
 registrable class, the supplied context, and the supplied action class; (6) that
-W2 and the action-level `arg det` reduction are quarantined premises, not
-derived conclusions. The claim is a conditional bounded theorem: if those named
-premises hold, the supplied `arg det(M_u M_d)` datum is exhausted by the
-multiplicative determinant-character readout (its `k = 0` members), and no
-phase-sensitive non-multiplicative or supplied-class action-level datum of the
-mass orientation remains within the stated surfaces.
+W2 (premise (i)) and the action-level `arg det` reduction (premise (ii)) are
+quarantined supplied premises, not derived conclusions; the 2026-06-18
+mass-side bridge is a source-side dependency edge, not an imported audit
+verdict or retained authority. The claim is a conditional bounded theorem: if
+those named premises hold, the supplied `arg det(M_u M_d)` datum is exhausted
+by the multiplicative determinant-character readout (its `k = 0` members), and
+no phase-sensitive non-multiplicative or supplied-class action-level datum of
+the mass orientation remains within the stated surfaces. Any downstream
+strong-CP use inherits this conditionality: a consumer that turns this
+conclusion into a physical strong-CP / `theta` statement must carry premises
+(i) and (ii) itself or remain explicitly conditional on them (see the
+2026-06-20 Source Repair).
 
 ## Dependencies
 
@@ -408,6 +509,13 @@ Live ledger `effective_status` checked on `origin/main`
   (**retained_bounded**) — the selected surface and Leg-A Gaussian/exact
   determinant structure consumed by part (5); also the consumer of the
   bridged premise.
+- [`THETA_MASS_SIDE_EPSILON_HERMITICITY_REALITY_BRIDGE_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`](THETA_MASS_SIDE_EPSILON_HERMITICITY_REALITY_BRIDGE_DISCHARGE_BOUNDED_THEOREM_NOTE_2026-06-11.md)
+  (**unaudited at this wiring date; source-side dependency edge only**) — a
+  bilinear matter-level source packet re-proving the first-power Berezin
+  determinant and epsilon-Hermiticity reality mechanisms, and localizing the
+  remaining mass-side admission to K-reality plus a discrete orientation bit.
+  Independent audit of that source packet is required before it can carry
+  retained-grade status for this row.
 - [`THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md`](THETA_CROSS_PLANE_TERM_ABSENT_IN_SUPPLIED_PER_PLAQUETTE_CLASS_BOUNDED_THEOREM_NOTE_2026-06-09.md)
   (**retained_bounded**) — gauge-side local cross-plane `F Ftilde` absence
   composed in part (5).

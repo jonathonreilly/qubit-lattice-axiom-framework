@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hk_thermodynamic_stretch_source_packet.py
+runner_sha256: c6723e16a4f8f7e585af1e57bb9a56d370bf785a0a468b491d07492e8a909627
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+HK THERMODYNAMIC STRETCH SOURCE PACKET
+==============================================================================
+
+Question: is Block 03 now runner-backed as an open gate, with
+the later L_s=2 HK cube result included but not overclaimed?
+
+[PASS] source note title is present: Heat-Kernel Thermodynamic
+[PASS] primary runner metadata names this verifier: Primary runner: `scripts/frontier_hk_thermodynamic_stretch_source_packet.py`
+[PASS] primary cache metadata names this verifier output: logs/runner-cache/frontier_hk_thermodynamic_stretch_source_packet.txt
+[PASS] audit authority firewall is present: independent audit lane
+[PASS] source note remains not a closure: NOT a closure
+[PASS] source note does not derive thermodynamic value: It does not derive a thermodynamic value
+[PASS] exact factorization T3.a is present: Z_HK,Λ(t) = Σ_{(λ_p)} (Π_p W_{λ_p}(t)) · F_Λ((λ_p))
+[PASS] marked plaquette expression T3.b is present: F_Λ^{(p_0,1,0)}
+[PASS] graph-trace obstruction is named: Obstruction (O3.1): graph-trace combinatorics
+[PASS] lambda-sum obstruction is named: Obstruction (O3.2): convergence of the (λ_p)-sum at t=1
+[PASS] cluster estimate is the open premise blocker: cluster-decomposition / exponential-clustering estimate
+[PASS] current premises do not contain the cluster estimate: current approved primitive or
+retained-premise surface
+[PASS] Block 06 update is cited: BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md
+[PASS] Block 06 finite cube value is cited: 0.5223243151
+[PASS] Block 06 still leaves the named obstruction open: Block 03's named obstruction stands
+[PASS] canonical HK Brownian time at beta=6 is one: t(6)=1
+[PASS] single-plaquette HK value matches exp(-2/3): exp(-2/3)=0.513417119032592
+[PASS] L_s=2 HK cube improves over single plaquette: 0.5223243151 > 0.5134171190
+[PASS] L_s=2 HK cube remains below thermodynamic comparator: 0.5223243151 < 0.5934
+[PASS] finite cube gap remains far from epsilon-witness scale: gap=0.0710756849
+[PASS] BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md exists: docs/BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md
+[PASS] BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md cited by Block 03 note: BRIDGE_GAP_HK_TIME_DERIVATION_NOTE_2026-05-06.md
+[PASS] BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md exists: docs/BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md
+[PASS] BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md cited by Block 03 note: BRIDGE_GAP_HK_PLAQUETTE_CLOSED_FORM_NOTE_2026-05-06.md
+[PASS] BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md exists: docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md
+[PASS] BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md cited by Block 03 note: BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md
+[PASS] SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md exists: docs/SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md
+[PASS] SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md cited by Block 03 note: SU3_CUBE_FULL_RHO_PERRON_2026-05-04.md
+[PASS] GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md exists: docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md
+[PASS] GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md cited by Block 03 note: GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_NO_GO_THEOREM_NOTE_2026-05-03.md
+[PASS] SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md exists: docs/SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md
+[PASS] SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md cited by Block 03 note: SU3_CASIMIR_FUNDAMENTAL_THEOREM_NOTE_2026-05-02.md
+[PASS] cube note names finite value: P_cube_HK(L_s=2, t=1) = 0.5223243151
+[PASS] cube note states thermodynamic limit remains open: does not
+establish the thermodynamic limit
+[PASS] cube note preserves Block 03 blocker: Block 03's named obstruction stands
+[PASS] scripts/probe_hk_time_derivation.py exists: scripts/probe_hk_time_derivation.py
+[PASS] logs/runner-cache/probe_hk_time_derivation.txt exists: logs/runner-cache/probe_hk_time_derivation.txt
+[PASS] scripts/probe_hk_time_derivation.py cache names same runner: scripts/probe_hk_time_derivation.py
+[PASS] scripts/probe_hk_time_derivation.py cache status ok: ok
+[PASS] scripts/probe_hk_time_derivation.py cache exit code zero: 0
+[PASS] scripts/probe_hk_time_derivation.py cache sha is fresh: cache=bd38846f35d4a83ce3076e5e0e92e6108fb3ed8d6395b4ff8e7a3798b8aa543d
+[PASS] scripts/probe_hk_time_derivation.py summary has expected pass count: PASS=7 FAIL=0
+[PASS] scripts/probe_hk_time_derivation.py cache contains required fragment: t(6) = 1
+[PASS] scripts/probe_hk_time_derivation.py cache contains required fragment: SUMMARY: PASS=7 FAIL=0
+[PASS] scripts/probe_hk_plaquette_closed_form.py exists: scripts/probe_hk_plaquette_closed_form.py
+[PASS] logs/runner-cache/probe_hk_plaquette_closed_form.txt exists: logs/runner-cache/probe_hk_plaquette_closed_form.txt
+[PASS] scripts/probe_hk_plaquette_closed_form.py cache names same runner: scripts/probe_hk_plaquette_closed_form.py
+[PASS] scripts/probe_hk_plaquette_closed_form.py cache status ok: ok
+[PASS] scripts/probe_hk_plaquette_closed_form.py cache exit code zero: 0
+[PASS] scripts/probe_hk_plaquette_closed_form.py cache sha is fresh: cache=031a6de1c6a6c0453e1eeaed1b7f98d5e8adf1c341774f70b242e0546b6dd045
+[PASS] scripts/probe_hk_plaquette_closed_form.py summary has expected pass count: PASS=8 FAIL=0
+[PASS] scripts/probe_hk_plaquette_closed_form.py cache contains required fragment: exp(-2/3)
+[PASS] scripts/probe_hk_plaquette_closed_form.py cache contains required fragment: SUMMARY: PASS=8 FAIL=0
+[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py exists: scripts/probe_hk_cube_perron_l2_2026_05_06.py
+[PASS] logs/runner-cache/probe_hk_cube_perron_l2_2026_05_06.txt exists: logs/runner-cache/probe_hk_cube_perron_l2_2026_05_06.txt
+[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache names same runner: scripts/probe_hk_cube_perron_l2_2026_05_06.py
+[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache status ok: ok
+[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache exit code zero: 0
+[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache sha is fresh: cache=6de88717f28d9e1967a1c3c81776756c2a7b338d3c4998c8feb52692560d5447
+[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache contains required fragment: P_cube_HK(L_s=2, t=1) ≈ 0.5223243151
+[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache contains required fragment: Block 03's named obstruction
+[PASS] scripts/probe_hk_cube_perron_l2_2026_05_06.py cache contains required fragment: thermodynamic-limit closure
+
+==============================================================================
+SUMMARY: PASS=62 FAIL=0
+==============================================================================
+
+Verdict: bounded source-packet support. Block 03 is runner-backed
+as an open gate; Block 06 closes the finite-cube comparator path,
+but thermodynamic closure still needs the named clustering estimate.
+No audit verdict or retained status is assigned.
+
+----- stderr -----
+

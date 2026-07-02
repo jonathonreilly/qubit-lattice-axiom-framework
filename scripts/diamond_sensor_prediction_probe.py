@@ -4,11 +4,11 @@
 This is a small theory harness, not an experimental simulator.
 
 It packages the smallest defensible lab-facing discriminator from the
-cited retarded / wavefield proxy lanes:
+ideal lock-in detector theorem and the cited retarded / wavefield proxy lanes:
 
 - standard null: calibrated quasi-static / instantaneous response -> zero
   quadrature and flat phase
-- cited proxy expectation: finite delay -> nonzero lock-in quadrature and a
+- ideal detector map: finite delay -> nonzero lock-in quadrature and a
   phase lag that grows with omega * tau
 
 The script prints a compact prediction card that a diamond/NV collaborator can
@@ -60,6 +60,9 @@ def format_card(points: list[PredictionPoint]) -> str:
     lines.append("")
     lines.append("Cited proxy expectation:")
     lines.append("  finite delay gives Y != 0, phi != 0, and a coherent spatial phase ramp")
+    lines.append("")
+    lines.append("Ideal detector bridge:")
+    lines.append("  scripts/diamond_ideal_lockin_detector_theorem.py verifies X, Y, phi, controls, and widefield slope")
     lines.append("")
     lines.append("Minimal controls:")
     lines.append("  drive off; source retracted / dummy load; pi reference flip; static-source baseline")

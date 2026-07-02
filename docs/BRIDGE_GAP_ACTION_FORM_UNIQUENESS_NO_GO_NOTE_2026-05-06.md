@@ -1,22 +1,25 @@
-# Bridge Gap — Action-Form Uniqueness No-Go (Block 04)
+# Bridge Gap — Action-Form Uniqueness No-Go
 
 **Date:** 2026-05-06
 **Type:** named-obstruction no-go
 **Claim type:** no_go
-**Status:** no-go proposal: under the framework's current
-retained primitive stack (A1+A2 + canonical Tr-form + per-site dim 2 +
-A11 RP + single-clock + Lieb-Robinson + retained Casimir), the
+**Status:** no-go proposal: under the current accepted-premise and retained
+support stack (Quantum / physical `Cl(3)` local algebra, Lattice / `Z^3`
+substrate, canonical Tr-form, per-site dimension two, reflection positivity,
+single-clock evolution, Lieb-Robinson support, and retained Casimir), the
 action-form uniqueness question — does Cl(3)/Z³ select Wilson,
 heat-kernel, Manton, or some other gauge action functional? — CANNOT
 be resolved. The framework's derived action is action-form ambiguous;
-distinct admissible actions (compatible with all current primitives)
-give distinct ⟨P⟩(6) values at finite β.
+distinct admissible actions remain compatible with the current support, and
+Wilson versus heat-kernel already give distinct ⟨P⟩(6) values at finite β.
+**Script:** `scripts/frontier_bridge_gap_action_form_uniqueness_no_go.py`
+(source-side no-go verifier; PASS=14 FAIL=0 on current source)
 **Authority role:** no-go source proposal. Audit verdict and downstream
 status are set only by the independent audit lane.
 
 ## Question
 
-Does the framework's current retained primitive stack uniquely select
+Does the framework's current accepted-premise and retained support stack uniquely select
 the gauge action functional `S(U)`? In particular, does it force
 **heat-kernel** `S_HK = -log P_t(U)` (Block 01-02 candidate) over
 **Wilson** `S_W = -β · Re Tr U / N_c` (currently imported per
@@ -24,26 +27,29 @@ the gauge action functional `S(U)`? In particular, does it force
 
 ## Answer
 
-**NO.** The framework's current retained primitives do not uniquely
+**NO.** The framework's current accepted premises and retained support do not uniquely
 select an action-form. At least three distinct gauge actions
 (Wilson, heat-kernel, Manton) are jointly compatible with:
 
-- A1 (Cl(3) local algebra)
-- A2 (Z³ substrate)
+- Quantum / physical `Cl(3)` local algebra
+- Lattice / `Z^3` substrate
 - Canonical Tr-form `Tr(T_a T_b) = δ_{ab}/2`
 - Per-site Hilbert dim 2 (Cl(3) Pauli)
-- A11 reflection positivity
+- Reflection-positivity support
 - Single-clock evolution + Lieb-Robinson
 - Retained Casimir `C_2(1,0) = 4/3`
 - Continuum-limit consistency at small `a`
 
-Each produces the same continuum limit `(1/2g²)∫Tr F² d⁴x` and the
-same retained algebraic structure. They differ only in **finite-β
-behavior**, including ⟨P⟩(β=6) values.
+Each has the same leading continuum limit `(1/2g²)∫Tr F² d⁴x` and the
+same retained algebraic structure. Wilson and heat-kernel differ in
+**finite-β behavior**, including ⟨P⟩(β=6) values; Manton is a third
+leading-order-compatible action form but its finite-β value is not needed for
+the non-uniqueness witness.
 
-## A_min for this no-go
+## Framework baseline for this no-go
 
-Same as Blocks 01-03. No new primitives.
+Same as the predecessor heat-kernel bridge notes. No new axioms or primitives
+are adopted here.
 
 ## Setup: candidate action functionals
 
@@ -91,12 +97,13 @@ Setting `(β/(4 N_c)) = 1/(2t) = (β_M / 2)` matches all three at leading
 order. At canonical `g_bare = 1, β = 6`:
 
 ```
-β_W = 6, t_HK = 1, β_M = 1/3.                                              (Step 1.1)
+β_W = 6, t_HK = 1, β_M = 1.                                                (Step 1.1)
 ```
 
-All three actions are consistent with A1+A2+canonical Tr-form +
-continuum-limit matching at the framework's canonical evaluation point.
-**No primitive in the retained stack distinguishes them.**
+All three actions are consistent with the Lattice + Quantum baseline,
+canonical Tr-form, and continuum-limit matching at the framework's canonical
+evaluation point. **No currently registered axiom, approved primitive, or
+retained support theorem distinguishes them.**
 
 ## Step 2: Higher-order expansions differ
 
@@ -110,11 +117,11 @@ Menotti-Onofri 1981):
 | Heat-kernel | proportional to same monomials with different (Brownian-motion-derived) coefficients |
 | Manton | proportional to same monomials with geodesic-curvature coefficients |
 
-These differences propagate to **distinct finite-β plaquette
-expectations**:
+These differences already propagate to **distinct finite-β plaquette
+expectations** for Wilson versus heat-kernel:
 
 ```
-⟨P⟩_W(β=6) ≠ ⟨P⟩_HK(t=1) ≠ ⟨P⟩_M(β=1/3) at finite β.                       (Step 2.1)
+⟨P⟩_W(β=6) ≠ ⟨P⟩_HK(t=1) at finite β.                                      (Step 2.1)
 ```
 
 In particular, single-plaquette evaluations:
@@ -123,12 +130,13 @@ In particular, single-plaquette evaluations:
 |---|---|---|
 | Wilson | 0.4225317396 | V=1 PF ODE certified |
 | **Heat-kernel** | **0.5134171190 = exp(-2/3)** | **Block 02** |
-| Manton | (uncomputed; bracketed by HK and Wilson at fixed β-matching) | not computed in this loop |
+| Manton | not used for the numeric separation | compatible leading-order action form |
 
 ## Step 3: Naturality arguments — suggestive, not tight
 
 Several arguments suggest HK is the most "Cl(3)-native" action, but
-none rises to a uniqueness theorem under the no-new-axiom rule:
+none rises to a uniqueness theorem without deriving or explicitly supplying an
+action-selection criterion:
 
 ### Naturality argument (a): Casimir-diagonal under retained Tr-form
 
@@ -170,10 +178,10 @@ others.
 
 The action-form ambiguity is structural because:
 
-1. **All three actions use only retained primitives.** Wilson's
+1. **All three actions use only the current support stack.** Wilson's
    functional `Re Tr U` is a Lie-algebra-level construction; HK uses
    retained Casimir; Manton uses canonical metric. None requires a
-   new axiom.
+   new axiom or primitive.
 
 2. **All three give the same continuum limit.** The `a → 0` matching
    at leading order is identical. There's no continuum-limit lever
@@ -181,26 +189,66 @@ The action-form ambiguity is structural because:
 
 3. **The differences are at finite β** = lattice scale = the framework's
    evaluation point. Finite-β evaluation is exactly where the famous
-   open lattice problem lives. There's no retained primitive that pins
+   open lattice problem lives. There's no accepted premise or retained theorem that pins
    the finite-β coefficient structure tightly enough to force one
    action over others.
 
-4. **The no-new-axiom rule** (per skill protocol) forbids enlarging the
-   axiom stack to break the ambiguity.
+4. **No action-selection premise is currently supplied.** A future derivation,
+   owner-approved admission, or convention could select an action, but that
+   would be an explicit additional input rather than a consequence of the
+   current stack.
 
-## Theorem 4 (Block 04 deliverable: NO-GO)
+## Theorem 4 (action-form uniqueness no-go)
 
-**Theorem (T4, no-go).** Under the framework's current retained
-primitive stack (A1+A2 + canonical Tr-form + per-site dim 2 + A11 RP +
-single-clock + Lieb-Robinson + retained Casimir + g_bare = 1 open
-gate), the gauge action functional cannot be uniquely selected from
-{Wilson, heat-kernel, Manton}. All three are jointly compatible with
-all retained primitives + continuum-limit matching. They give DISTINCT
-finite-β ⟨P⟩(6) values, and the difference structure cannot be
-resolved without enlarging the axiom stack or admitting an additional
-non-derivation convention.
+**Theorem (T4, no-go).** Under the framework's current accepted-premise and
+retained support stack (Lattice + Quantum baseline, canonical Tr-form,
+per-site dimension two, reflection positivity, single-clock evolution,
+Lieb-Robinson support, retained Casimir, and the `g_bare = 1` open gate), the
+gauge action functional cannot be uniquely selected from the current candidates.
+Wilson and heat-kernel are jointly compatible with the current support and
+continuum-limit matching yet give distinct finite-β ⟨P⟩(6) values. Manton is
+a third leading-order-compatible action form, but no Manton finite-β value is
+needed for the non-uniqueness witness. The difference structure cannot be
+resolved without deriving, explicitly admitting, or conventionally supplying an
+action-selection criterion.
 
 **Proof.** Steps 1-4. ∎
+
+## No-Go Discipline Gate
+
+This review uses the narrowed no-go above, not a permanent impossibility claim.
+
+- N1 route enumeration: continuum-leading matching fails because Wilson and
+  heat-kernel share the leading coefficient after parameter matching; Casimir /
+  trace-form naturality fails as an action selector without an added criterion;
+  diffusion-semigroup uniqueness selects HK only conditional on a supplied
+  continuous Markov generator; a scheme convention can select an action only as
+  an explicit admission or convention; a fixed-action nonperturbative solve
+  computes a value after the action is chosen and does not choose the action.
+- N2 wall independence: the collapsed wall is the missing action-selection
+  criterion / realized dynamics / explicit convention. The Wilson-HK finite-β
+  separation is the non-uniqueness witness, not a second wall.
+- N3 hidden-wall scan: terms such as canonical, current support, and standard
+  representation theory are non-load-bearing context unless linked above; the
+  load-bearing wall remains explicit.
+- N4 residual matching: the later HK diffusion theorem attacks exactly the
+  diffusion-selection residual and leaves the generator/rate-law residual open;
+  the record semigroup boundary names that same generator/rate-law residual.
+- N5 rhetoric audit: the result is at the gauge-action-functional level for the
+  named candidate surface. It is not a statement about every conceivable action
+  or every possible future dynamics.
+- N6 partial-closure scan: a future derivation of the gauge-link diffusion
+  generator, or an owner-approved action convention/admission, can close the
+  wall without changing the axioms. Approved primitives are not treated as
+  bounded walls here.
+- N7 steelman: the strongest counterargument is the HK diffusion theorem: among
+  Wilson/HK/Manton, HK is the unique continuous-time diffusion kernel. The
+  counterargument does not defeat this scoped no-go because the framework has
+  not supplied the realized gauge-link diffusion generator.
+- N8 cross-cycle echo: prior "new axiom" style walls have been narrowed by
+  convention/admission or route-sharpening; this note is therefore phrased as a
+  current-stack non-uniqueness boundary with explicit closure routes, not as a
+  permanent no-route theorem.
 
 ## Consequence for the four cluster-obstruction lanes
 
@@ -223,8 +271,8 @@ level**, not just at the famous-open-problem level.
 
 ## Scope and Non-Claims
 
-This no-go is conditional on the no-new-axiom rule, the current retained
-primitive stack enumerated in Step 4, and the representative action set
+This no-go is conditional on the current accepted-premise and retained support
+stack enumerated in Step 4, and the representative action set
 `{Wilson, heat-kernel, Manton}`. Other candidate actions may extend the
 no-go but do not weaken it.
 
@@ -234,7 +282,7 @@ or select a preferred action form.
 ## What this closes
 
 - The action-form uniqueness question is formally retired as a Resolution-A
-  closure path under current primitives.
+  closure path under current accepted premises and retained support.
 - The four cluster-obstruction lanes' downstream quantitative range-
   bounding is named explicitly: ~5-10% range across action choices,
   far exceeding ε_witness.

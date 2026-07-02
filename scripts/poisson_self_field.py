@@ -2,11 +2,12 @@
 """Poisson self-field: transverse profile from a local equation.
 
 Caveat: the transverse (y,z) profile at each layer is solved from the
-2D Poisson equation. The longitudinal (x) falloff is still imposed via
-an explicit 1/(dx+0.1) factor in _make_poisson_field. So this is NOT
-a fully derived 3D field — only the transverse profile is derived.
+supplied 2D Poisson equation. The longitudinal (x) falloff is still
+imposed via an explicit 1/(dx+0.1) factor in _make_poisson_field. So
+this is NOT a fully derived 3D field; only the transverse profile is
+computed inside the supplied branch.
 
-Reproduces all retained results in POISSON_SELF_FIELD_NOTE.md:
+Reproduces the bounded supplied-branch results in POISSON_SELF_FIELD_NOTE.md:
   1. Field profile from Poisson solver (laplacian f = -source)
   2. Gravity TOWARD on 3 families
   3. F~M ~ 1.000 on 3 families

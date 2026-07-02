@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/koide_q_reduced_cycle_edge_hygiene_2026_06_18.py
+runner_sha256: 3c834b6de947542999d9709d8f0f92f2dc71609dc3e27cbb7d4b5afd706523bc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+PASS: obstruction note exists
+PASS: cycle-edge hygiene section present
+PASS: parent claim id retained as context
+PASS: parent filename not used as markdown link target
+PASS: parent filename not used as bare markdown reference target
+PASS: parent context is explicitly non-load-bearing
+PASS: purpose keeps audit-review trace without markdown dependency edge
+PASS: obstruction proof still names live bridge residual
+PASS: no audit status authority claimed
+PASS: primary obstruction runner still cited
+TOTAL: PASS=10 FAIL=0
+Koide Q-reduced obstruction edge is context-only; no audit verdict applied.
+
+----- stderr -----
+

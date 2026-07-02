@@ -41,6 +41,14 @@ The safe residue is recovery context only. If an Axiom* premise is ever
 adopted by an audit-clean extension decision, a new consequence map must be
 rebuilt from current dependencies.
 
+## 2026-06-18 registered-runner contract
+
+The registered runner for this archived row is a firewall witness only. It
+verifies this note's current-surface certificate, retraction, and archive
+boundary. It must not be used to re-prove the historical closure cascade. A
+PASS does not adopt Axiom*, close `(C1)`, move any Hubble, Planck, gravity, or
+neutrino chain, or upgrade any conditional theorem on the current surface.
+
 ## 0. Historical context (retracted)
 
 PR #169 closed Cycles 2-6 of the

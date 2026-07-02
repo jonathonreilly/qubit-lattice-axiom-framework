@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/poisson_self_field.py
-runner_sha256: 3172eb9d7f9529a396ccc521260e4814bded4ac7488872a5ec21efb80fc0f15d
+runner_sha256: 1c0e140b3bc17b18e25aa175800e12ce59c3d3e2046854c878e66c10f4774180
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 135.72
+elapsed_sec: 79.55
 status: ok
 ----- stdout -----
 ======================================================================
@@ -36,7 +36,7 @@ NL=30, W=8, s=0.004, z_src=3.0
   Fam3: F~M = 0.9994
 
 4. BORN TEST (Fam1, seed=0, Poisson field active)
-  Born |I3|/P = 1.32e-15
+  Born |I3|/P = 9.84e-16
 
 5. NULL TEST
   s=0: delta = +0.000000e+00

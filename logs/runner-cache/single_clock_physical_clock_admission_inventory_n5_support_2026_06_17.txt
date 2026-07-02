@@ -1,0 +1,43 @@
+single-clock physical-clock admission inventory N5 support
+========================================================================
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not mathematically exclude independent commuting transfer factors'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'Does not add an axiom'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains '**Claim boundary:** source-inventory support'
+PASS: SINGLE_CLOCK_PHYSICAL_CLOCK_ADMISSION_INVENTORY_N5_SUPPORT_NOTE_2026-06-17.md contains 'No second physical-clock transfer is currently admitted.'
+PASS: single-clock source names B-AXIS.3
+PASS: B-AXIS.3 is phrased as an admission statement
+PASS: single-clock source names the sole supplied transfer/step pair
+PASS: single-clock source keeps B-AXIS declared
+PASS: minimal Lattice supplies no dynamics
+PASS: minimal Quantum supplies no dynamics
+PASS: Record supplies no time metric
+PASS: minimal axiom runner does not enlarge axioms
+PASS: RP2 supplies the two-step transfer
+PASS: RP2 supplies positivity
+PASS: RP2 excludes the single-step object as the physical positive transfer
+PASS: SC2 supplies the blocked time denominator
+PASS: SC2 supplies corrected log normalization
+PASS: Stone note is transfer-relative
+PASS: Stone uniqueness does not add a transfer
+PASS: post-record rates require supplied clock map
+PASS: post-record layer does not derive a clock
+PASS: inventory contains exactly one admitted physical-clock transfer
+PASS: the admitted transfer is the two-step blocked transfer with denominator 2 a_tau
+PASS: finite tensor-factor comparators are not physical-clock admissions
+PASS: admitted physical-clock count remains one after comparator scan
+PASS: mathematical comparator T_A x I is positive
+PASS: mathematical comparator I x T_B is positive
+PASS: mathematical comparator transfers commute -- resid=0.00e+00
+PASS: factor comparator tangent space is two-dimensional -- rank=2
+PASS: two positive factor transfers exist as mathematical comparators
+PASS: zero factor comparators are admitted physical clocks
+PASS: counterfactual second admission would visibly break the inventory
+PASS: note states why the support is source-inventory, not algebraic exclusion
+
+SUMMARY: PASS=35 FAIL=0
+ADMITTED_PHYSICAL_CLOCK_TRANSFERS=1
+B_AXIS_DERIVED=FALSE
+MATHEMATICAL_FACTOR_TRANSFERS_EXCLUDED=FALSE
+AUDIT_LEDGER_WRITTEN=FALSE

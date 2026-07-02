@@ -21,6 +21,18 @@ checks only that, once the supplied continuous context is granted, the same
 stiffness parameter appears in the inertial and recorded-source slots. No new
 axiom, Tier-A admission, WEP closure, or audit-status change is introduced.
 
+## 2026-06-17 Record-only independence no-go
+
+[`EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md`](EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md)
+proves that the firewall above is a real independence boundary: two completions
+can share the same Lattice + Quantum + Record data and the same finite additive
+record readout while assigning different continuous stiffnesses and different
+inertial/gravitational source ratios. The result does not refute this
+conditional template. It says a Record-only derivation cannot supply the
+continuous local energy/action context, rest-gap readout, or shared source
+coefficient consumed below; a separate dynamics/source theorem is still needed
+for any positive WEP closure.
+
 ## 2026-06-16 weak-field source/readout interface split
 
 The post-audit source/readout repair

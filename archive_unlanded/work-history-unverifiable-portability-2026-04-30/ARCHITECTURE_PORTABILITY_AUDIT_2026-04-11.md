@@ -40,6 +40,16 @@ listed as an evidence note for it. Its only safe use is to remind future edits
 not to overclaim Newton closure, distance-law closure, both-masses closure, or
 Wilson Born measurements from the portability sweep.
 
+## 2026-06-18 live source bridge
+
+[`docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md`](../../docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md)
+packages the current live source-side re-audit target for the failed historical
+row. It does not restore this archived packet as evidence. It points auditors
+to the live runner-backed sweep, its cache, and the explicit boundary that the
+safe claim is only bounded source-mass scaling / attraction portability on the
+configured finite architectures, with Born `I_3` checked only where the barrier
+implementation exists.
+
 ---
 
 ## Historical Original Text Below Is Retracted

@@ -32,6 +32,27 @@ gauge-vacuum-plaquette theorem.
 Promotion beyond wrapper support requires a separate theorem deriving the
 complement-line frame and selector rather than registering the helper choices.
 
+## Citation/use firewall (2026-06-18)
+
+Direct citations to this note are allowed only for its helper-interface
+registration function: constants, line normalization / parameterization,
+ordered projection / compression, and projector-distance routines in the
+named helper module.
+
+Direct citations to this note may not be used as:
+
+- a derivation of the complement-line frame;
+- a derivation or physical forcing of the `selected_line` selector;
+- a derivation of the boundary-first weights;
+- closure of any downstream gauge-vacuum-plaquette theorem;
+- an authority for moving a selector, complement-line theorem, or publication
+  row to a stronger status.
+
+The companion runner now executes helper-interface smoke checks and scans
+direct source citations to ensure they are qualified as helper-interface /
+one-hop dependency uses. This is a source-side firewall only; independent
+audit remains responsible for any effective-status movement.
+
 ## Purpose
 
 This wrapper note documents the shared helper layer used by several

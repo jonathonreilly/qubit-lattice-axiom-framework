@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py
-runner_sha256: 289c1241f64f261783d68766178e19f121edf7502fa5adbfaf429a3b6d1981ff
+runner_sha256: 09cbcb8012efd98e06c84f10bf250433fdf16b121ed7b1bb1bb9b1100e34656e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 # Fractional instanton dilute-gas hierarchy external gate runner
@@ -135,7 +135,17 @@ T11: downstream source-boundary firewall
   [PASS] firewall forbids hierarchy, condensate, and framework-identification overclaims
          positive hierarchy, condensate closure, substrate/observable, alpha_LM^16, v/M_Pl, and alpha^N closures excluded
 
-=== TOTAL: PASS=41, FAIL=0 ===
+==============================================================================
+T12: algebra-core split / decoration segregation of the dilute-gas bridge
+==============================================================================
+  [PASS] parent frames the fractional-action algebra as a decoration of the retained-bounded topological-instanton authority and cites the action-core split
+         action-core split note/runner/cache cited; decoration framing present
+  [PASS] dilute-gas determinant/measure/coupling-scale/convergence + condensate content is segregated in an explicit open dilute-gas bridge block
+         open dilute-gas bridge block present and names the unsupplied gaps
+  [PASS] retained-bounded topological-instanton authority backs the action-core decoration only, not the dilute-gas bridge
+         upstream-authority section scopes the bounded import to the action core; stale 'consumed by ... dilute-gas condensate construction' bundling removed
+
+=== TOTAL: PASS=44, FAIL=0 ===
 
 ----- stderr -----
 

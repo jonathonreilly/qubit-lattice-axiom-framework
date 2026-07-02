@@ -432,6 +432,7 @@ section("6. Note / authority cross-checks")
 
 # Load-bearing authorities cited as markdown links (citation-graph edges).
 SOURCED_AUTHORITIES = [
+    "SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md",
     "NEUTRINO_LANE4_DIRAC_SEESAW_FORK_NO_GO_NOTE_2026-04-27.md",
     "SM_RELATIVISTIC_DOF_COUNT_IMPORT_NOTE_2026-05-17.md",
 ]
@@ -488,6 +489,27 @@ check(
     "empirical" in NOTE_TEXT.lower()
     and ("admitted" in NOTE_TEXT.lower())
     and ("small" in NOTE_TEXT.lower()),
+)
+
+comparator_bridge = (
+    ROOT
+    / "docs"
+    / "SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md"
+)
+comparator_text = (
+    comparator_bridge.read_text(encoding="utf-8") if comparator_bridge.exists() else ""
+)
+check(
+    "comparator bridge isolates the admitted small-m_nu input",
+    "admitted empirical small-neutrino-mass observation" in comparator_text
+    and "does not derive small neutrino mass" in comparator_text.lower(),
+)
+check(
+    "comparator bridge isolates the thermalization comparator",
+    "Gamma_nuR ~ y_nu^2 T" in comparator_text
+    and "H ~ 1.66 sqrt(g_*) T^2 / M_Pl" in comparator_text
+    and "This note does **not**" in comparator_text
+    and "derive `Gamma_nuR ~ y_nu^2 T` from a framework collision operator" in comparator_text,
 )
 check(
     "note records the steelman (N7) FOR g_* = 112 and its rebuttal",

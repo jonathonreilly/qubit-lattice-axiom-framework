@@ -3,7 +3,7 @@
 **Date:** 2026-06-06
 **Type:** exact support / finite supplied-rule target-vector firewall
 **Claim type:** no-go
-**Status:** exact-support branch-local for the finite supplied-rule witness;
+**Status:** source-side finite supplied-rule witness;
 audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py`](../scripts/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.py)
@@ -61,6 +61,7 @@ bare_retained_allowed: false
 - Does not edit `docs/audit/data`.
 - Does not apply or predict audit verdicts.
 - Does not promote any row.
+- Record does not derive the target vector or weights.
 - Does not claim a broad Record-alone no-go for every possible target-vector or
   weight derivation.
 - Does not derive a physical arrow from Record.

@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_polarization_frame_bundle.py
-runner_sha256: 758003f0a0ad7eead81e7e65072136fb81e5248a1248d987d5d54c1ea44461a8
+runner_sha256: 50beee99f5f66fa679e292b730448a561ed8bdf045b9cb997b37b83c300254a6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
-UNIVERSAL GR POLARIZATION-FRAME BUNDLE AUDIT
+UNIVERSAL GR POLARIZATION-FRAME FINITE ORBIT VERIFIER
 ==============================================================================
 [PASS] scalar generator is exact
     observable principle gives the exact scalar generator
@@ -22,12 +22,14 @@ UNIVERSAL GR POLARIZATION-FRAME BUNDLE AUDIT
     rank = 10 / 10
 [PASS] scalar-line restriction matches the same Hessian
     direct = -4.215193e-01, expected = -4.215193e-01
-[PASS] blocker note names the curvature-localization map
-    blocker is still sharpened to the localization primitive
+[PASS] source note narrows to finite frame-orbit support
+    source row is scoped as finite support, not universal no-go
+[PASS] source note exposes non-reciprocal verifier dependencies
+    support sources are markdown-linked; reciprocal guardrail notes stay plain text
 [PASS] curvature-localization blocker isolates the frame-orbit obstruction
     older frame-orbit blocker is now historical; live blocker reframed as interpretation theorem beyond Lorentzian closure
-[PASS] frame-bundle note records the same missing primitive
-    the dedicated blocker note matches the curvature blocker
+[PASS] frame-bundle note records missing primitive without closure claim
+    the dedicated note keeps Pi_curv and full GR outside this packet
 [PASS] localization coefficients depend on frame choice
     max channel delta across two valid polarization frames = 6.767e-02
 [PASS] source-boundary firewall names allowed and forbidden downstream uses
@@ -50,8 +52,8 @@ resp_b[0:4]     = ['-2.500000e-01', '-8.699980e-02', '-1.430351e-02', '-1.818275
 ==============================================================================
 SUMMARY
 ==============================================================================
-PASS=13 FAIL=0 TOTAL=13
-Direct-universal progress: the scalar observable principle and the 3+1 lift now support an exact tensor-valued variational candidate with a unique symmetric quotient kernel, but the exact curvature-localization operator is still missing and only an associated localization orbit is currently determined.
+PASS=14 FAIL=0 TOTAL=14
+Direct-universal progress: the scalar observable principle and the 3+1 lift now support an exact tensor-valued variational candidate with a unique symmetric quotient kernel, but the exact curvature-localization operator is not supplied here. The checked result is finite frame-orbit support, not an exhaustive no-go.
 
 ----- stderr -----
 

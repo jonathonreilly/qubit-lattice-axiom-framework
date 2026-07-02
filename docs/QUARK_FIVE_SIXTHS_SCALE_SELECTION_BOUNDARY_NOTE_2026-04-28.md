@@ -255,11 +255,16 @@ The note produces (or directly supports) a quantitative gauge prediction (Wilson
 
 Therefore `claim_type: bounded_theorem` until both gates close. When both gates close, the lane becomes eligible for independent audit/governance retagging as `positive_theorem`; the audit pipeline recomputes `effective_status`, but it does not silently invent a new `claim_type`. The substantive science content of this note is unchanged by this retag.
 
-## Audit dependency repair links
+## Audit-history peer pointers
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+This historical bookkeeping section records peer/downstream rows named by a
+prior conditional audit. The load-bearing inputs for this boundary are the
+minimal premise set in Section 2 plus the two admitted context gates above.
+The bridge-support and mass-ratio rows below are non-authority pointers, not
+one-hop dependencies of this negative boundary; retaining them as markdown
+dependency edges creates a source-graph cycle without adding proof content.
 
 - [staggered_dirac_realization_gate_note_2026-05-03](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)
-- [ckm_five_sixths_bridge_support_note](CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md)
-- [quark_mass_ratios_taste_staircase_support_note_2026-04-25](QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md)
+- `ckm_five_sixths_bridge_support_note`
+- `quark_mass_ratios_taste_staircase_support_note_2026-04-25`
 - [quark_lane3_bounded_companion_retention_firewall_note_2026-04-27](QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md)

@@ -79,6 +79,33 @@ or the metrology constants from framework primitives. The repair removes a
 derivation typo and makes the residual convention auditable; it does not
 promote the bridge beyond conditional admission arithmetic.
 
+## 2026-06-18 Analytic Factor Import Retirement
+
+This revision removes the last avoidable textbook-math import from the
+analytic part of the coefficient. The runner no longer merely names
+`zeta(3)` as a supplied constant; it certifies the Planck integral by the
+standard internal series proof
+
+```text
+1/(exp(x)-1) = sum_{n>=1} exp(-n x),
+integral_0^infty x^2 exp(-n x) dx = 2/n^3,
+integral_0^infty x^2/(exp(x)-1) dx = sum_{n>=1} 2/n^3 = 2 zeta(3).
+```
+
+The executable certificate computes the partial `zeta(3)` sum through
+`N=20000` and uses the p-series tail bound
+
+```text
+0 <= zeta(3) - sum_{n=1}^N 1/n^3 <= 1/(2 N^2)
+```
+
+to bracket the reference `zeta(3)` value and therefore bracket
+`2 zeta(3)`. This is an internal math certificate for the analytic
+Planck-distribution factor only. It does not derive the Bose gas physical
+setup, photon polarization count, proton mass, CMB temperature, Newton
+constant, metrology constants, or `S_Cyburt_exact`; those remain exactly the
+P1-P4 admitted physical/comparator premises listed below.
+
 ## 0. Scope and Boundary
 
 This note formalizes a single textbook coefficient that currently enters the
@@ -196,15 +223,17 @@ With photon polarization count `g_gamma = 2`,
 n_gamma(T)  =  (2 * zeta(3) / pi^2) * T^3.                              (I)
 ```
 
-The bracketed prefactor `2 zeta(3) / pi^2` is pure transcendental
-arithmetic. `zeta(3)` is the Riemann zeta function at 3 (Apery's constant);
-`pi` is the framework's single allowed transcendental (consistent with the
-`Q-bar(pi)` algebraic-closure convention recorded in
-`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`). No fitted
-cosmological number enters identity (I), but the Bose-Einstein distribution
-and the photon polarization count `g_gamma = 2` are still part of the
-standard-physics setup. This factor is analytic, not a framework derivation
-of the full BBN coefficient.
+The bracketed prefactor `2 zeta(3) / pi^2` is pure transcendental arithmetic.
+The runner certifies the identity
+`integral_0^infty x^2/(exp(x)-1) dx = 2 zeta(3)` by expanding the Planck
+kernel into its exponential series and bounding the p-series tail for
+`zeta(3)`. `pi` is the framework's single allowed transcendental (consistent
+with the `Q-bar(pi)` algebraic-closure convention recorded in
+`ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md`). No fitted cosmological
+number enters identity (I), but the Bose-Einstein distribution and the photon
+polarization count `g_gamma = 2` are still part of the standard-physics
+setup. This factor is analytic, not a framework derivation of the full BBN
+coefficient.
 
 ### 3.2 Imported factors
 

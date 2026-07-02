@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=7ec3e1b2acb350b59f4af772766708bab9e0908a09d94f1ffb8a4def5b301828 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=d0fcd0cff651e8c0141f8fa7836d927de738e81104945743381654e129817352 -->
 # Key Terminology
 
 **Claim type:** meta
@@ -8,11 +8,11 @@ audit fields, repair classes, evidence terms, prose voice). One line
 per term, with a pointer to the canonical source-of-truth doc.
 
 **Scope rule:** vocabulary is disjoint from physics. Physics
-primitives (`Cl(3)`, `Z^3`, `A_min`, Lattice, Quantum, Record, `Axiom*`,
+primitives (`Cl(3)`, `Z^3`, `A_min`, Lattice, Qubit, Admissibility, Record, `Axiom*`,
 `g_bare`, `u_0`, `M_Pl`, `R_conn`, `alpha_s`, etc.) are **not** in this
 index. They live in
-`docs/MINIMAL_AXIOMS_2026-06-05.md` (which supersedes the 2026-06-04
-Record memo) and per-claim notes. See
+`docs/MINIMAL_AXIOMS_2026-06-29.md` (which supersedes the 2026-06-05
+Lattice/Quantum/Record memo) and per-claim notes. See
 `docs/repo/VOCABULARY_HYGIENE_DESIGN.md`
 for the principle.
 

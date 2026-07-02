@@ -1,16 +1,23 @@
 """
 Frontier runner - Koide Q ↔ δ linking relation.
 
-Companion to
+Historical pre-repair runner companion to
   docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md
 
-This runner verifies the partial closure of the linking relation
+This runner is preserved as historical/non-authority context. The current
+source authority for that note is the formal-only repair runner
+`frontier_koide_q_delta_formal_ratio_repair.py`, which treats the note only as
+the definition-level identity `Delta_d = Q_d/d` and rejects PDG/radian/physical
+Koide citation use.
+
+Historically this runner tested the candidate closure of the linking relation
 `δ = Q/d` as a consequence of two retained structural identities:
 
   I1  (equal-sector-norm)        →  Q = 2/d
   I2  (dimensional-ratio for δ)   →  δ = 2/d^2
 
-plus one named residual radian-bridge postulate P (see §4 of the note).
+plus one named residual radian-bridge postulate P. The repaired parent note no
+longer carries that as source authority.
 
 Checks:
 

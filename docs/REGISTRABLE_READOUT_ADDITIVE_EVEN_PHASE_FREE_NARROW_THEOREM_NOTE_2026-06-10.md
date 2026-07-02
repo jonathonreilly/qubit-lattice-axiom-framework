@@ -1,6 +1,6 @@
 # Registrable Determinant-Character Readout Is Additive-Plus-Even Hence Phase-Free — Narrow Bounded Theorem
 
-**Date:** 2026-06-10 (2026-06-12: two boundary-naming citations — the |delta|-magnitude chain note and the hw-complementation support note — are demoted from dependency links to context; both are cited only to name what this note does NOT close, and the sin(3 delta) / symmetric-function facts used by Conditional Implication B are verified directly in the primary runner. 2026-06-16: post-audit source firewall removes bridge-discharge language and scopes both downstream uses as conditional algebra inside the supplied readout context.)
+**Date:** 2026-06-10 (2026-06-12: two boundary-naming citations — the |delta|-magnitude chain note and the hw-complementation support note — are demoted from dependency links to context; both are cited only to name what this note does NOT close, and the sin(3 delta) / symmetric-function facts used by Conditional Implication B are verified directly in the primary runner. 2026-06-16: post-audit source firewall removes bridge-discharge language and scopes both downstream uses as conditional algebra inside the supplied readout context. 2026-06-18: algebraic-core split added in [`REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md`](REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md), isolating the determinant-character phase-erasure algebra from the physical strong-CP and AC_phi_lambda readout identifications.)
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status:** source-side claim-boundary declaration only — a narrow conditional
@@ -162,6 +162,11 @@ as a strong-CP source-side bridge input, a separate retained theorem still has t
 identify the physical mass-orientation readout with this supplied
 Record-registrable determinant-character / log-character surface and rule out
 additional action-level orientation-sensitive data.
+
+The 2026-06-18 algebraic-core split note isolates the exact determinant-character
+phase-erasure theorem as its own source-side exact-support artifact. That split
+does not discharge this paragraph's physical mass-readout identification; it
+only makes the algebraic core separately reviewable.
 
 Registry tracking guard (context only): the Tier-A registry names the shared
 K-real mass-side structure between theta(b) and AC_phi_lambda(i), but it also

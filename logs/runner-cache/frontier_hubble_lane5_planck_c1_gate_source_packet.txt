@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hubble_lane5_planck_c1_gate_source_packet.py
+runner_sha256: 6214314f261d9ad19f6d83e3dc1a0e3fc0cec2e3e6099362a28120c8462b8401
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================
+HUBBLE LANE 5 PLANCK C1 GATE SOURCE PACKET
+========================================================================================
+
+Question:
+  Is the Cycle 5 Planck C1 gate packaged with source anchors,
+  a replayable single-gate inventory, and a non-promotion boundary?
+
+Answer:
+  Yes for source-packet readiness. This runner does not close C1,
+  retain R_Lambda numerically, close H0, or apply an audit verdict.
+
+----------------------------------------------------------------------------------------
+Part 1: parent source-packet metadata
+----------------------------------------------------------------------------------------
+  [PASS] parent note exists  (docs/HUBBLE_LANE5_PLANCK_C1_GATE_AUDIT_NOTE_2026-04-26.md)
+  [PASS] parent declares this primary runner
+  [PASS] parent declares this runner cache
+  [PASS] parent remains an open-gate support source packet
+  [PASS] source-packet boundary says it is not a theorem
+  [PASS] source-packet boundary forbids promotion claims
+
+----------------------------------------------------------------------------------------
+Part 2: dependency links and source fingerprints
+----------------------------------------------------------------------------------------
+  [PASS] planck_scale_lane_status_note_2026-04-23: linked from parent
+  [PASS] planck_scale_lane_status_note_2026-04-23: file exists  (docs/PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md)
+  [PASS] scale_reference_primitive: linked from parent
+  [PASS] scale_reference_primitive: file exists  (docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+  [PASS] planck_scale_conditional_completion_note_2026-04-24: linked from parent
+  [PASS] planck_scale_conditional_completion_note_2026-04-24: file exists  (docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md)
+  [PASS] planck_target3_clifford_phase_bridge_theorem_note_2026-04-25: linked from parent
+  [PASS] planck_target3_clifford_phase_bridge_theorem_note_2026-04-25: file exists  (docs/PLANCK_TARGET3_CLIFFORD_PHASE_BRIDGE_THEOREM_NOTE_2026-04-25.md)
+  [PASS] area_law_native_car_semantics_tightening_note_2026-04-25: linked from parent
+  [PASS] area_law_native_car_semantics_tightening_note_2026-04-25: file exists  (docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md)
+  [PASS] planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25: linked from parent
+  [PASS] planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25: file exists  (docs/PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md)
+  [PASS] scale-reference primitive is units-only and non-bounding
+  [PASS] parent treats the scale primitive as units-only
+  [PASS] legacy Planck status keeps natural-unit derivation conditional
+  [PASS] Planck status names the coframe/CAR bridge and non-CAR alternatives
+  [PASS] conditional packet supplies c_cell and a/l_P algebra under a premise
+  [PASS] Target 3 bridge is conditional on supplied coframe response
+  [PASS] CAR tightening leaves rank-four semantics underdetermined
+  [PASS] phase-unit boundary records action-scale and CAR blockers
+
+----------------------------------------------------------------------------------------
+Part 3: single residual Planck C1 gate
+----------------------------------------------------------------------------------------
+  [PASS] parent identifies a single residual premise
+  [PASS] gate object is the metric-compatible Clifford/CAR coframe response
+  [PASS] edge-statistics and action-unit obligations are both named
+  [PASS] three Planck targets collapse to one shared conditional
+  [PASS] closed shortcut routes are inventoried
+  [PASS] parent explicitly says it does not close the Planck lane
+
+----------------------------------------------------------------------------------------
+Part 4: finite non-promotion model
+----------------------------------------------------------------------------------------
+  rule: the scale-reference primitive is units-only
+  rule: C1 closes only with coframe response and natural action units
+  rule: H0 still needs C2 or C3 after C1 closes
+  [PASS] actual current packet declares the units primitive
+  [PASS] scale-reference primitive alone does not close C1
+  [PASS] actual current packet does not close C1
+  [PASS] coframe response alone is not enough without action units
+  [PASS] C1 alone is not H0 closure without C2/C3
+  [PASS] full C1 plus C2/C3 packet would close the modeled route
+  [PASS] parent records C2/C3 as separately required
+  [PASS] runner boundary forbids audit-result mutation
+
+========================================================================================
+PASS=40 FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -1,10 +1,12 @@
 # DM Leptogenesis PMNS Minimum-Information Source Law
 
-**Type:** bounded_theorem
-**Claim boundary:** bounded conditional numerical selector diagnostic; not a
-selector theorem
-**Date:** 2026-04-16; 2026-06-12 numerical-match firewall repair
-**Script:** `scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py`  
+**Type:** open_gate
+**Claim boundary:** post-axiom selector diagnostic / open selector gate; not a
+selector theorem and not retained PMNS-branch authority
+**Date:** 2026-04-16; 2026-06-12 numerical-match firewall repair; 2026-06-18
+open-gate source repair
+**Primary runner:** [`scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py`](../scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py)
+**Cached output:** [`logs/runner-cache/frontier_dm_leptogenesis_pmns_mininfo_source_law.txt`](../logs/runner-cache/frontier_dm_leptogenesis_pmns_mininfo_source_law.txt)
 **Framework baseline:** one-qubit operator algebra on the `Z^3` lattice.
 
 ## Scope and honest framing
@@ -26,6 +28,23 @@ selector? — is **not** answered here. It is the subject of separate sister
 notes (see the relative-action stationarity theorem and the observable
 relative-action law, both of which strengthen this framing by rebuilding the
 objective from a framework-internal scalar `log|det|` observable principle).
+
+## Source repair for re-audit (2026-06-18)
+
+The prior top-level `bounded_theorem` label overstated what this row can
+source. The audited load-bearing move is the **definition** of a selector
+objective plus the imposed `eta_{i_*} / eta_obs = 1` equality constraint; the
+runner computes consequences of that convention. It does not derive the
+selector objective or equality constraint from the framework.
+
+The repaired audit surface is therefore:
+
+- **Open selector gate:** `I_seed` and the favored-column equality constraint
+  remain supplied/adopted selector data.
+- **Exact conditional diagnostic:** given that supplied selector surface, the
+  runner computes a low-cost off-seed closure source on the favored column.
+- **No retained-grade promotion:** this row must not be cited as a retained
+  selector theorem, baseline PMNS-branch closure, or derivation of `I_seed`.
 
 ## Definition of the law
 
@@ -176,7 +195,7 @@ In particular:
   charged-lepton-active seed surface; their use as reference distributions
   for KL is part of the imported selector setup
 
-### Narrowed source scope (bounded_theorem)
+### Narrowed source scope (open_gate)
 
 After this repair, the source-side claim of this note is narrowed to the
 following bounded conditional numerical diagnostic:
@@ -204,9 +223,9 @@ or whether the PMNS-assisted `N_e` branch closes from primitives) is
 
 ### Caveats
 
-- this note is `bounded_theorem` with explicit imported/adopted selector
-  assumptions; it is not a positive-theorem authority for the PMNS-assisted
-  `N_e` branch
+- this note is an `open_gate` with explicit imported/adopted selector
+  assumptions; it is not a positive-theorem or bounded-theorem authority for
+  the PMNS-assisted `N_e` branch
 - closure on that branch must be cited through the framework-internal
   sister theorems (relative-action stationarity, observable
   relative-action law), with this note used only for post-axiom

@@ -67,3 +67,11 @@ specific geometry. It is only a historical partial table.
 Any future repair must recompute every listed property for all three families,
 including Family 3 distance alpha, with explicit threshold assertions and a
 holdout check before reopening any equality or geometry-independence claim.
+
+## 2026-06-18 live missing-distance bridge
+
+[`docs/THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md`](../../docs/THREE_FAMILY_CARD_MISSING_DISTANCE_LIVE_BRIDGE_NOTE_2026-06-18.md)
+packages the current live evidence for the specific missing Family 3 distance
+alpha slot. It does not restore the historical 9/9 card, does not claim
+geometry independence, and does not provide the all-nine-property recomputation
+required for a full card repair.

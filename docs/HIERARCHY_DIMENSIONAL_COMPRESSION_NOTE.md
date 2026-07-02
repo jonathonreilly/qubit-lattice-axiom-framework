@@ -22,6 +22,11 @@ proves the fixed-density coefficient-to-scale bridge: for a positive D=4
 density surface `rho_* = A(L) v(L)^4`, the endpoint scale ratio is
 `v(L) / v(L_ref) = (A_ref / A(L))^(1/4)`. That supplies the exponent,
 inverse/direct placement, sign, and normalization for the coefficient readout.
+The 2026-06-18 hardening makes that bridge verifier recompute the endpoint
+coefficient ratios `A_2/A_4 = 7/8` and `A_inf/A_2 = 2/sqrt(3)` directly from
+the APBC small-m coefficient formula, so this parent row no longer waits on
+the live audit-ledger status of `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md`
+for those endpoint ratios.
 It still does not identify the electroweak VEV with that fixed-density
 readout, select the physical order parameter, or promote this parent row.
 
@@ -29,6 +34,36 @@ The old source edge to the unaudited staggered-realization gate is no longer
 load-bearing here: the D=4 taste-count input is now routed through retained
 bounded taste-count authorities named below. No new axiom, Tier-A admission,
 observed target, or audit status is introduced here.
+
+## 2026-06-18 bridge update: EW order-parameter coordinate supplied, endpoint selection still open
+
+A new source-side bridge,
+[`HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md`](HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md),
+proves that on the retained one-Higgs neutral EW surface the coordinate `v`
+is the positive fourth-root coordinate of any positive quartic D=4 density:
+with `H(v) = (0, v/sqrt(2))^T`, `q = 2 H^dagger H = v^2`, so
+`rho_* = A(L) q^2 = A(L) v(L)^4` and fixed density forces
+`v(L)/v_ref = (A_ref/A(L))^(1/4)`. This ties the fixed-density readout to the
+EW neutral order-parameter coordinate and fixed-coupling W/Z mass scale.
+
+This is still not full physical hierarchy closure. The endpoint-selection
+residual remains open: the new bridge does not derive that the hierarchy
+Matsubara endpoint coefficient is the physical Higgs density, does not derive
+the absolute EW scale, and does not use an observed EW value.
+
+## 2026-06-18 selector no-go: fixed-density algebra cannot pick the endpoint surface
+
+The fixed-density coefficient-to-scale bridge supplies ratios, not a physical
+endpoint selector. The source-side no-go
+[`HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md`](HIERARCHY_FIXED_DENSITY_PHYSICAL_SELECTOR_NO_GO_NOTE_2026-06-18.md)
+proves the remaining limitation exactly: for `rho_* = A(L) v(L)^4`,
+absolute-density rescalings leave all endpoint ratios unchanged, and the
+endpoint set `A_2`, `A_4`, `A_inf` admits multiple compatible reference
+surfaces. Even with the separate EW coordinate bridge above, the hierarchy
+endpoint coefficient-to-physical-Higgs-density selection and absolute EW scale
+cannot be recovered by reusing the fixed-density algebra alone. A future
+positive repair must supply an independent physical endpoint selector theorem;
+this parent note remains conditional until then.
 
 ## 0. Audit context — what this note still claims, and what it does not
 
@@ -89,10 +124,12 @@ not used in any PASS condition.
 
 The (1/4) exponent is supplied by the retained dimensional fourth-root
 theorem. The inverse placement, sign, and `L_t = 2` normalization are supplied
-by the 2026-06-16 fixed-density coefficient-to-scale bridge. This note records
-the consequent intra-framework arithmetic on the staggered Dirac
-condensate-density residual and still leaves the physical electroweak
-order-parameter identification outside scope.
+by the 2026-06-16 fixed-density coefficient-to-scale bridge. The 2026-06-18
+EW order-parameter bridge supplies the neutral-Higgs coordinate readout for a
+supplied positive quartic D=4 density. This note records the consequent
+intra-framework arithmetic on the staggered Dirac condensate-density residual
+and still leaves the physical hierarchy endpoint-selection and absolute-scale
+closure outside scope.
 
 ## 2. What this note does NOT claim
 
@@ -100,17 +137,20 @@ order-parameter identification outside scope.
   of the physical EW VEV `v` from the framework primitive stack remains
   open (the broader hierarchy chain `v_UV = M_Pl × α_LM^16 × (7/8)^(1/4)`
   is asserted elsewhere with its own open admissions).
-- **Not a derivation of the order parameter.** The identification of
-  the physical order parameter as the fixed positive D=4 density used by the
-  bridge remains open; this note does not re-derive it.
+- **Not a full endpoint-selection theorem.** The 2026-06-18 bridge identifies
+  the retained EW neutral-Higgs coordinate `v` as the fourth-root coordinate
+  of a supplied positive quartic D=4 density. It does not derive that the
+  hierarchy Matsubara endpoint coefficient is the physical Higgs density.
 - **Not an observation-comparison closure.** The `C_obs = v_obs / v_pred`
   ratio is printed as context only. The within-scope load-bearing
   content is intra-framework dimensional arithmetic, not any claim
   that `R^(-1/4)` matches `C_obs`.
 - **Not a full physical insertion theorem.** The 2026-06-16 bridge fixes the
-  sign and placement for the fixed-density coefficient readout, but the full
-  physical formula still needs the electroweak order-parameter identification;
-  see Section 5 below.
+  sign and placement for the fixed-density coefficient readout, and the
+  2026-06-18 bridge identifies the EW neutral order-parameter coordinate on a
+  supplied quartic density. The full physical formula still needs the
+  endpoint coefficient to physical Higgs density selection; see Section 5
+  below.
 - **Not a retained- or bounded-theorem status proposal.** This is conditional
   D=4 arithmetic support; the independent audit lane ratifies effective
   status.
@@ -153,13 +193,16 @@ interest, without that interest becoming a load-bearing audit input.
 The closure of these items would lift the broader hierarchy chain from
 bounded-support to retained-grade; none are claimed in this note.
 
-1. **Physical fixed-density/order-parameter bridge.** The source-side
+1. **Physical endpoint coefficient selection.** The source-side
    coefficient-to-scale map is now supplied by
    [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md):
    it fixes the exponent, inverse placement, sign, and `L_t = 2`
-   normalization for a positive D=4 density surface. What remains open is the
-   physical theorem identifying the electroweak VEV/order parameter with that
-   fixed-density readout and selecting the exact endpoint coefficient surface.
+   normalization for a positive D=4 density surface. The EW neutral
+   order-parameter coordinate readout is now supplied by
+   [`HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md`](HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md).
+   What remains open is the physical theorem identifying the hierarchy
+   Matsubara endpoint coefficient surface with the physical Higgs density
+   surface.
 2. **Absolute scale and legacy readout reconciliation.** The fixed-density
    coefficient-to-scale bridge supplies only endpoint ratios. A separate
    theorem is still needed to reconcile the absolute `L_t = 2` normalization
@@ -187,9 +230,11 @@ fixed positive D=4 density map from the 2026-06-16 bridge:
 `v(L)/v(L_ref) = (A_ref/A(L))^(1/4)`.
 
 Current row check: the 2026-06-16 bridge supplies the source-side fixed-density
-coefficient-to-scale algebra, but it is a new source proposal pending
-independent audit. It still does not identify the electroweak VEV with the
-fixed-density readout.
+coefficient-to-scale algebra, and the 2026-06-18 bridge supplies the EW
+neutral order-parameter coordinate for a supplied positive quartic D=4
+density. Both are source-side proposals pending independent audit. The
+endpoint-selection residual remains open: neither bridge proves that the
+hierarchy Matsubara coefficient surface is the physical Higgs density surface.
 `HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md` is retained-bounded
 for endpoint coefficient algebra, but its audited scope excludes the
 physical electroweak insertion map and its source text leaves Bridge 2
@@ -205,10 +250,10 @@ readout or the physical order-parameter bridge. The heat-kernel and
 Matsubara-ratio notes still name the physical D=4 readout as an admission in
 their own current text and are unaudited in the current ledger.
 
-Future proof obligation after the 2026-06-16 source bridge: derive, from
-retained framework inputs, the physical electroweak order-parameter
-identification and endpoint selection that allow this fixed-density
-coefficient-to-scale map to be used as the physical VEV readout.
+Future proof obligation after the 2026-06-16 and 2026-06-18 source bridges:
+derive, from retained framework inputs, the endpoint selection that allows the
+hierarchy Matsubara coefficient surface to be used as the physical Higgs
+density surface.
 
 ## Registered Tier-A routing (2026-06-11; audit-requested repair)
 
@@ -251,8 +296,13 @@ Graph-visible retained one-hop dependencies for the taste-count repair:
   — retained bounded `2^4 = 16` BZ-corner/Hamming-staircase combinatorics.
 - [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
   — source-side fixed-density coefficient-to-scale bridge for exponent,
-  inverse/direct placement, sign, and `L_t = 2` normalization. This is a new
-  source proposal pending independent audit, not an audit-ratified status.
+  inverse/direct placement, sign, `L_t = 2` normalization, and locally
+  recomputed endpoint ratios. This is a new source proposal pending
+  independent audit, not an audit-ratified status.
+- [`HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md`](HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md)
+  — source-side EW neutral order-parameter coordinate bridge for a supplied
+  positive quartic D=4 density. This partially closes the physical
+  order-parameter readout but leaves endpoint selection open.
 
 Non-load-bearing context pointers, intentionally left as backticked plain
 text rather than graph-visible dependency edges:
@@ -297,10 +347,12 @@ Verifies, using only intra-framework arithmetic, that:
 7. The source firewall records that the D=4 fixed-density coefficient-to-scale
    bridge is supplied as a source-side proposal while the physical VEV
    identification remains open.
-8. The live ledger reports the two taste-count one-hop authorities as
+8. The source firewall records that the EW order-parameter readout bridge is
+   supplied as a source-side proposal while endpoint selection remains open.
+9. The live ledger reports the two taste-count one-hop authorities as
    retained-grade.
 
-Expected scorecard: `8 pass, 0 fail out of 8`.
+Expected scorecard: `9 pass, 0 fail out of 9`.
 
 ### 7.1 Scorecard sync (2026-06-15)
 
@@ -325,7 +377,11 @@ Gate-by-gate check against
 7. `source note wires D=4 density-scale bridge while keeping physical VEV
    premise open` — the note names the new source-side bridge and records the
    remaining physical order-parameter/readout identification.
-8. `taste-count one-hop authorities are retained-grade in the live ledger` —
+8. `source note wires EW order-parameter readout bridge while preserving
+   endpoint-selection residual` — the note names the new source-side bridge
+   and records that the hierarchy endpoint coefficient to physical Higgs
+   density selection remains open.
+9. `taste-count one-hop authorities are retained-grade in the live ledger` —
    the runner checks the effective statuses of the Higgs lattice taste-count
    bridge and the Wilson BZ-corner staircase row.
 
@@ -342,6 +398,7 @@ graph_visible_one_hop_deps:
   - higgs_lattice_taste_count_and_wj_form_bridge_narrow_theorem_note_2026-06-05
   - wilson_bz_corner_hamming_staircase_bounded_note_2026-05-08
   - hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16
+  - hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18
 context_pointers_not_dependency_edges:
   - hierarchy_heat_kernel_d4_compression_bounded_theorem_note_2026-05-10
   - hierarchy_matsubara_determinant_ratio_narrow_theorem_note_2026-05-10
@@ -349,13 +406,12 @@ context_pointers_not_dependency_edges:
   - hierarchy_effective_potential_endpoint_note
 
 admitted_context_inputs:
-  - physical electroweak order-parameter identification for the fixed
-    D=4 density readout remains open
+  - hierarchy endpoint coefficient to physical Higgs density selection remains open
 
 forbidden_imports_used: false
 observed_target_used_in_pass_conditions: false
 proposal_allowed: false
-proposal_allowed_reason: "D=4 arithmetic support and a source-side fixed-density coefficient-to-scale bridge are source-ready, but independent audit and the physical electroweak order-parameter/readout identification remain open."
+proposal_allowed_reason: "D=4 arithmetic support, a source-side fixed-density coefficient-to-scale bridge, and a source-side EW order-parameter readout bridge are source-ready, but independent audit and endpoint-selection closure remain open."
 ```
 
 ## 8. Changelog
@@ -380,6 +436,16 @@ proposal_allowed_reason: "D=4 arithmetic support and a source-side fixed-density
   placement, sign, and `L_t = 2` normalization. This leaves the physical
   electroweak order-parameter/readout identification as the remaining open
   target.
+- **2026-06-18 EW order-parameter readout bridge.** Added the source-side
+  neutral-Higgs coordinate bridge proving that a supplied positive quartic D=4
+  density uses the retained EW `v` coordinate as its fourth-root scale. This
+  leaves endpoint coefficient to physical Higgs density selection as the
+  remaining open target.
+- **2026-06-18 endpoint-algebra hardening.** The D=4 bridge verifier now
+  recomputes `A_2/A_4 = 7/8` and `A_inf/A_2 = 2/sqrt(3)` inside the bridge
+  packet, removing the endpoint-note ledger-status import from this parent
+  row's source-side runner path. The physical order-parameter/readout
+  identification remains open.
 
 ## 2026-06-15 audit-unlock residual certificate
 
@@ -390,8 +456,10 @@ runner-checked facts are the condensate-density ratio, the distinct
 
 The remaining blocker is not the coefficient-to-scale arithmetic: the
 2026-06-16 bridge supplies exponent, inverse placement, sign, and
-normalization for the fixed-density readout. A later theorem must still derive
-the physical electroweak order-parameter/readout identification and any
-framework-native carrier realization needed to use that map as the physical
-VEV theorem. No observed VEV, new axiom, or status promotion is introduced by
-this repair.
+normalization for the fixed-density readout. It is also not the neutral-Higgs
+coordinate readout: the 2026-06-18 bridge supplies the EW order-parameter
+coordinate for a supplied positive quartic D=4 density. A later theorem must
+still derive the endpoint coefficient to physical Higgs density selection and
+any framework-native carrier realization needed to use that map as the
+physical VEV theorem. No observed VEV, new axiom, or status promotion is
+introduced by this repair.

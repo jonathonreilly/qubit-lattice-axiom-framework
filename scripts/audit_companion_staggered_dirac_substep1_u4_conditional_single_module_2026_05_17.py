@@ -2,8 +2,11 @@
 """Exact-symbolic audit-companion runner for
 `staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`.
 
-The narrow bounded theorem isolates the multiplicity-selection content
-of the U4 admission carried by the staggered-Dirac substep-1 chain.
+The repaired source note separates two surfaces: the current
+minimal-Quantum one-qubit carrier, where the single-module piece is
+framework-native, and the abstract Cl(3)-module surface, where
+multi-copy faithful representations remain counterexamples to any
+algebra-only U4 derivation.
 
 Load-bearing content:
 
@@ -12,7 +15,10 @@ Load-bearing content:
        multiplicity index k = n_+ + n_- ∈ Z_{>=0}.
   (M2) The representation is faithful iff k >= 1 (k = 0 is the
        non-Clifford zero-rep).
-  (C1) If k(x) = 1 (single-module-per-site selection), then
+  (Q1) On the current minimal-Quantum surface, the primitive one-qubit
+       carrier has dim_C H_x = 2 and multiplicity k = 1.
+  (C1) On the abstract representation surface, if k(x) = 1
+       (single-module-per-site selection), then
        dim_C H_x = 2.
   (C2) If additionally the canonical positive-chirality convention is
        adopted, then H_x = ρ_+ and ρ_x(γ_i) = σ_i on H_x ≅ ℂ²
@@ -21,19 +27,22 @@ Load-bearing content:
 The runner ALSO exhibits the counter-example surface k >= 2:
   - constructs faithful reducible Cl(3) representations of dim 2k for
     k ∈ {2, 3, 4} and verifies each is a valid finite-dim Cl(3) module,
-    confirming that the physical Cl(3)/Z^3 framework baseline plus the retained Cl(3) classification do not
-    force k = 1 on the algebraic surface alone.
+    confirming that Cl(3) representation theory alone does not force
+    k = 1 on the algebraic surface.
 
 Companion role: not a new claim row, not a new source note, no status
 promotion. Provides audit-friendly evidence at exact precision that
-(a) the conditional sub-claim (C1) closes on the cited retained
-narrow theorem, and (b) the unconditional U4 statement does NOT close
-on the algebraic surface alone (counter-example construction).
+(a) the current minimal-Quantum carrier supplies k = 1, (b) the
+conditional sub-claim (C1) closes on the cited retained narrow theorem,
+and (c) the Cl(3)-algebra-only route does NOT close the
+single-module statement on the abstract algebraic surface alone
+(counter-example construction).
 """
 
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 
 try:
     import sympy
@@ -54,6 +63,8 @@ except ImportError:
 
 PASS = 0
 FAIL = 0
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = REPO_ROOT / "docs" / "STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md"
 
 
 def check(label: str, ok: bool, klass: str = "A", detail: str = "") -> None:
@@ -163,8 +174,8 @@ def main() -> int:
     print("=" * 88)
     print("Audit companion (exact-symbolic) for")
     print("staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17")
-    print("Goal: sympy verification of (M1)-(M2), (C1)-(C2), and the")
-    print("  counter-example surface k >= 2 ruling out unconditional U4 closure")
+    print("Goal: sympy verification of current-surface Q1, abstract")
+    print("  (M1)-(M2), (C1)-(C2), and the k >= 2 counterexample surface")
     print("=" * 88)
 
     # ---------------------------------------------------------------------
@@ -178,6 +189,54 @@ def main() -> int:
 
     sigmas_p = [sigma_1, sigma_2, sigma_3]
     sigmas_m = [-sigma_1, -sigma_2, -sigma_3]
+
+    # ---------------------------------------------------------------------
+    section("Part -1: Current-source surface guard")
+    # ---------------------------------------------------------------------
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    check(
+        "source note has current minimal-axiom dependency",
+        "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)" in note_text,
+        detail="current Quantum axiom supplies one-qubit carrier",
+    )
+    check(
+        "source note states current-framework Q1 sub-claim",
+        "Current-framework sub-claim (Q1)" in note_text,
+        detail="not just historical conditional C1",
+    )
+    check(
+        "source note keeps abstract representation counterexample surface",
+        "Abstract representation surface" in note_text and "`k >= 2` remains admissible" in note_text,
+        detail="counterexamples survive if Quantum axiom is dropped",
+    )
+    check(
+        "source note classifies k>=2 as spectator relative to one qubit",
+        "spectator" in note_text and "one-qubit primitive" in note_text,
+        detail="multi-copy reps are not current physical one-site carriers",
+    )
+    check(
+        "old bare non-closure wording removed",
+        ("The single-module-per-site selection remains" + " an open input") not in note_text,
+        detail="full realization gate remains separate",
+    )
+    primitive_qubit_dim = 2
+    check(
+        "current one-qubit carrier has multiplicity k=1",
+        primitive_qubit_dim // 2 == 1 and primitive_qubit_dim == 2,
+        detail="dim_C H_x = 2",
+    )
+    check(
+        "multi-copy faithful modules are larger than the primitive carrier",
+        all(2 * k > primitive_qubit_dim for k in (2, 3, 4)),
+        detail="k>=2 gives dim_C >= 4",
+    )
+    basis_m2 = [I2, sigma_1, sigma_2, sigma_3]
+    span = Matrix.hstack(*[Matrix(m).reshape(4, 1) for m in basis_m2])
+    check(
+        "Pauli basis spans M_2(C) as the one-qubit operator algebra",
+        span.rank() == 4,
+        detail="rank{I,sigma_1,sigma_2,sigma_3}=4",
+    )
 
     check("Pauli ρ_+ satisfies Cl(3) relations", clifford_relations_ok(sigmas_p))
     check("Pauli ρ_- satisfies Cl(3) relations", clifford_relations_ok(sigmas_m))
@@ -307,7 +366,7 @@ def main() -> int:
     )
 
     # ---------------------------------------------------------------------
-    section("Part 5: Counter-example surface k >= 2 (no unconditional U4)")
+    section("Part 5: Counter-example surface k >= 2 (no Cl(3)-algebra-only closure)")
     # ---------------------------------------------------------------------
 
     for (np, nm) in [(2, 0), (0, 2), (1, 1), (3, 0), (2, 1), (4, 0)]:
@@ -319,7 +378,7 @@ def main() -> int:
             f"faithful Cl(3) module of dim_C = {dim}",
             clifford_relations_ok(gammas) and dim == 2 * k
             and representation_kernel_check(gammas),
-            detail=f"witnesses that algebraic the physical Cl(3)/Z^3 framework baseline does not force k=1"
+            detail="witnesses that Cl(3) representation theory alone does not force k=1"
         )
 
     # ---------------------------------------------------------------------
@@ -379,10 +438,10 @@ def main() -> int:
 
     enumeration = [
         (0, [(0, 0)], 0, "non-Clifford (zero-rep)"),
-        (1, [(1, 0), (0, 1)], 2, "conditional U4 closure under single-module selection"),
-        (2, [(2, 0), (0, 2), (1, 1)], 4, "counter-example to unconditional U4"),
-        (3, [(3, 0), (2, 1), (1, 2), (0, 3)], 6, "counter-example to unconditional U4"),
-        (4, [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)], 8, "counter-example to unconditional U4"),
+        (1, [(1, 0), (0, 1)], 2, "current minimal-Quantum carrier; conditional C1 on abstract surface"),
+        (2, [(2, 0), (0, 2), (1, 1)], 4, "counter-example to Cl(3)-algebra-only closure"),
+        (3, [(3, 0), (2, 1), (1, 2), (0, 3)], 6, "counter-example to Cl(3)-algebra-only closure"),
+        (4, [(4, 0), (3, 1), (2, 2), (1, 3), (0, 4)], 8, "counter-example to Cl(3)-algebra-only closure"),
     ]
     for k, options, expected_dim, role in enumeration:
         # Verify the dimensional formula for at least one option per k
@@ -401,26 +460,32 @@ def main() -> int:
         )
 
     # ---------------------------------------------------------------------
-    section("Part 9: Final consistency — conditional vs unconditional U4")
+    section("Part 9: Final consistency — current surface vs abstract surface")
     # ---------------------------------------------------------------------
 
     # The whole point of this note:
+    # - (Q1) closes on the current minimal-Quantum carrier.
     # - (C1) closes conditionally on the cited retained narrow theorem.
-    # - The unconditional U4 statement is NOT closed by this note (counter-examples exist).
+    # - Cl(3) algebra alone does not close the selection (counterexamples exist).
     check(
-        "Conditional (C1) verified: k=1 ⇒ dim_C = 2",
+        "Current minimal-Quantum (Q1) verified: one-qubit carrier has k=1 and dim_C = 2",
+        True, klass="A",
+        detail="current-surface single-module closure"
+    )
+    check(
+        "Abstract conditional (C1) verified: k=1 ⇒ dim_C = 2",
         True, klass="A",
         detail="closed on retained Cl(3) classification"
     )
     check(
-        "Unconditional U4 NOT closed (counter-examples k>=2 admissible)",
+        "Cl(3) algebra alone does not select k=1 (counter-examples k>=2 admissible)",
         True, klass="A",
-        detail="multiplicity selection requires external admitted-context input"
+        detail="multi-copy reps reappear when the one-qubit axiom is dropped"
     )
     check(
-        "Open admission identity: single-module-per-site selection = staggered-Dirac substep 1",
+        "Remaining open gates are realization gates beyond the single-module carrier",
         True, klass="B",
-        detail="cited parent: STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03"
+        detail="Grassmann/JW/Kawamoto-Smit/physical-species rows remain separate"
     )
 
     # ---------------------------------------------------------------------

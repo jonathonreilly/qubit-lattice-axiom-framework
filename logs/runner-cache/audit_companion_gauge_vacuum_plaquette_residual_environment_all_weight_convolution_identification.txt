@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py
-runner_sha256: 82f4029e4ae3db0224ba31ce425bf2b07ca0d6b57f3d2873d7bebd13adba3264
+runner_sha256: 070bee797fefb73e17b4d5403f6e0830cbf0c32617af531d64a762e3fe4b5ac3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -17,7 +17,9 @@ Goal: source repair + sympy-symbolic verification of (T1)-(T4) under cited (I1)-
 Part 0a: 2026-06-07 source repair checks
 ----------------------------------------------------------------------------------------
   [PASS (A)] I4 source files are present  (Wilson positivity note and runner exist in the restricted packet surface)
-  [PASS (A)] I4 ledger authority is audited_clean / retained_bounded  (audit_status=audited_clean effective_status=retained_bounded)
+  [PASS (A)] source note exposes plain primary runner and cache metadata  (audit-runner extraction can discover the restricted packet without following markdown link targets)
+  [PASS (A)] parent finite-packet notes cite this all-weight formal bridge as structural support only  (parent rows split formal convolution support from the still-open physical coefficient bridge)
+  [PASS (A)] I4 ledger authority has retained_bounded effective status  (audit_status=audited_clean effective_status=retained_bounded)
   [PASS (A)] target note cites the I4 Wilson coefficient source  (one-hop source edge to retained-bounded Wilson coefficient positivity)
   [PASS (A)] target note states the constructive all-weight occurrence lemma  (strict Wilson coefficient nonvanishing for beta>0 is source-visible)
   [PASS (A)] target note narrows Z_beta^env to a formal per-weight central sequence  (no hidden all-weight class-function object is required)
@@ -102,7 +104,7 @@ Summary
     Finite-truncation numerical sanity at one independent abstract sample
 
 ========================================================================================
-TOTAL: PASS=31, FAIL=0
+TOTAL: PASS=33, FAIL=0
 ========================================================================================
 
 ----- stderr -----

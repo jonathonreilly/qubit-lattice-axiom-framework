@@ -41,9 +41,40 @@ The safe surviving statement is narrower than the original text below:
   proves a thresholded detector-escape suppression criterion across field
   families or explicitly separates link-level damping from detector escape.
 
+## Executable boundary repair (2026-06-17)
+
+The current primary runner is now a boundary verifier rather than a retained
+separation proof. It checks the finite archived setup under three separate
+claims:
+
+1. **Local link statement:** for a traversed link with averaged field
+   `f_ij > 0` and `gamma > 0`, the local imaginary-action multiplier
+   `exp(-k gamma L f_ij)` has modulus below one. This is only a link-factor
+   theorem.
+2. **Detector-escape statement:** on the archived two-seed finite setup,
+   `gamma = 0.5` suppresses total detector escape for the tested nonzero
+   fields. The same runner explicitly checks that the historical stronger
+   statement is false at the detector level: the uniform fields and the tested
+   gravity field still have escape ratios above one at the small-gamma rows
+   listed in the retraction boundary above.
+3. **Centroid-crossover statement:** on the same finite setup, the tested
+   `1/r` gravity field is TOWARD at `gamma = 0` and AWAY by `gamma = 0.2`;
+   the uniform controls do not carry that TOWARD-to-AWAY crossover.
+
+Expected runner verdict:
+
+```text
+VERDICT: THRESHOLDED DETECTOR-ESCAPE BOUNDARY VERIFIED
+```
+
+This repair does not revive the archived row as retained, does not assert
+geometry independence, and does not prove a general threshold theorem. It makes
+the old failed distinction auditable as a finite, thresholded diagnostic only.
+
 ## Artifact chain
 
 - [`scripts/complex_action_kernel_vs_gravity.py`](../../scripts/complex_action_kernel_vs_gravity.py)
+- [`logs/runner-cache/complex_action_kernel_vs_gravity.txt`](../../logs/runner-cache/complex_action_kernel_vs_gravity.txt)
 - [`logs/2026-04-06-kernel-vs-gravity.txt`](../logs/2026-04-06-kernel-vs-gravity.txt)
 
 ## Question

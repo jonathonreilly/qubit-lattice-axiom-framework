@@ -8,16 +8,56 @@ with twisted boundary conditions ('t Hooft 1981; Anber-Poppitz
 arXiv:1811.05882, arXiv:2107.07252; Cox-Pisarski arXiv:2310.16289;
 Schäfer-Shuryak Rev. Mod. Phys. 70 (1998) 323), together with the
 published dilute-gas approximation form used for fractional-instanton
-ensembles. The dilute-gas/condensate part is recorded as an external
-modeling target whose determinant, phase-space, coupling scale, and
-validity regime remain load-bearing; it is **not** admitted here as a
-standalone positive theorem. Cited only as published gauge-theory
+ensembles. The fractional charge/action algebra is a pure algebraic
+**decoration** of the retained-bounded topological-instanton authority
+(split out as the bounded action-core note below). The dilute-gas/condensate
+part is segregated as an external modeling target whose determinant,
+phase-space, coupling scale, and validity regime remain load-bearing; it is
+**not** backed by the retained-bounded authority and is **not** admitted
+here as a standalone positive theorem. Cited only as published gauge-theory
 context. No framework substrate identification, hierarchy closure,
 scale ratio derivation, or `α_LM^16` substitution is claimed.
 **Status authority:** independent audit lane only; pipeline-derived
 status set by `compute_effective_status.py`.
 **Runner:** [`scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py`](../scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py)
 **Cache:** [`logs/runner-cache/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.txt`](../logs/runner-cache/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.txt)
+**Action-core split:** [`FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md)
+**Action-core runner/cache:** [`scripts/fractional_instanton_action_core_split_2026_06_18.py`](../scripts/fractional_instanton_action_core_split_2026_06_18.py),
+[`logs/runner-cache/fractional_instanton_action_core_split_2026_06_18.txt`](../logs/runner-cache/fractional_instanton_action_core_split_2026_06_18.txt)
+
+## 2026-06-18 Source Repair: Algebra Core Split
+
+The paired source split
+[`FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md`](FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md)
+extracts the closed fractional-action algebra core as a pure algebraic
+**decoration** of the retained-bounded topological-instanton authority
+[`TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md`](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md).
+The decoration consumes that retained-bounded surface only for the
+fixed-convention action normalization and the twisted `Q = k/N` arithmetic,
+yielding the action-core algebra
+
+```text
+bounded topological-instanton normalization + twisted Q = k/N
+  => S_frac(k,N) = (8*pi^2/g^2) |k/N|.
+```
+
+That split note is only bounded support for the fractional-action
+arithmetic. The retained-bounded topological-instanton authority backs the
+action-core algebra **only**; it is **not** authority for the dilute-gas
+determinant, measure, phase-space density, coupling-scale prescription,
+finite-volume/temperature regime, convergence, or condensate formation.
+Those remain an external open bridge block (see "Open: Dilute-Gas Bridge"
+below), not supplied here. The parent row therefore
+remains an external open gate decorating the bounded action core, with the
+dilute-gas/condensate content segregated as the unsupplied bridge.
+
+Downstream citations may cite the split note for the fractional-action
+arithmetic only. They must not cite this parent or the split note as a
+dilute-gas determinant/measure/coupling-scale prescription, a condensate
+formation closure, a framework substrate bridge, a hierarchy bridge,
+`alpha_LM^16` closure, or `v/M_Pl` scale-ratio closure. This split does not
+identify a framework substrate, close `alpha_LM^16`, derive `v/M_Pl`, or
+promote this parent open gate.
 
 ## Claim
 
@@ -97,7 +137,19 @@ Q = (1 / (32 π²)) ∫_{T⁴} d^4x  Tr( F_μν *F^μν ).
    cross-check of the scale only; it does not promote the singular
    unregularized meron to a finite-action theorem.
 
-4. *Dilute-gas free-energy structure.* In the dilute-gas approximation,
+### Open: Dilute-Gas Bridge (not supplied here)
+
+The following items 4–5 are **not** backed by the retained-bounded
+topological-instanton authority and are **not** part of the bounded
+action-core decoration. They record the external dilute-gas/condensate
+modeling target — the one-loop determinant, integration measure,
+phase-space density, coupling-scale prescription, finite-volume/temperature
+regime, and convergence/condensate criterion — as load-bearing open content
+that a separate bridge must supply. They are stated here only as
+external published gauge-theory context, segregated from the safe algebra.
+
+4. *Dilute-gas free-energy structure (open bridge).* In the dilute-gas
+   approximation,
    the partition function of the `Q = k/N` fractional-instanton
    ensemble factorizes as a sum over independent localized
    configurations only in the regime where the approximation is valid.
@@ -143,10 +195,13 @@ Q = (1 / (32 π²)) ∫_{T⁴} d^4x  Tr( F_μν *F^μν ).
    on the relevant scale. This is not a theorem-grade condensate
    formation claim inside this repo: the determinant, density of states,
    coupling scale, finite-volume/temperature limits, and convergence of
-   the expansion must be supplied by a future audited bridge.
+   the expansion must be supplied by a separate bridge.
 
-6. *Canonical numerical values.* At canonical bare coupling `g² = 1`
-   the action evaluates as
+### Action-core decoration (continued)
+
+6. *Canonical numerical values (action-core arithmetic).* At canonical
+   bare coupling `g² = 1` the action-core values and their raw Boltzmann
+   factors evaluate as
 
    ```text
    N = 2, k = 1:  S_frac = 4 π² ≈ 39.48,   exp(-S_frac) ≈ 7.16 × 10⁻¹⁸,
@@ -154,9 +209,11 @@ Q = (1 / (32 π²)) ∫_{T⁴} d^4x  Tr( F_μν *F^μν ).
    N = 4, k = 1:  S_frac = 2 π² ≈ 19.74,   exp(-S_frac) ≈ 2.7 × 10⁻⁹.
    ```
 
-   These are raw action Boltzmann factors for the stated external
-   normalization; they are not framework numerical predictions and do
-   not by themselves establish condensate formation.
+   The `S_frac` values are arithmetic outputs of the bounded action-core
+   decoration. The displayed `exp(-S_frac)` factors are raw action
+   Boltzmann factors for the stated external normalization; they are not
+   framework numerical predictions and do not by themselves establish
+   condensate formation, which requires the open dilute-gas bridge above.
 
 7. *Twisted boundary condition requirement.* The fractional charge
    `Q = k/N` requires the underlying 4-manifold to admit a non-trivial
@@ -167,15 +224,16 @@ Q = (1 / (32 π²)) ∫_{T⁴} d^4x  Tr( F_μν *F^μν ).
    1981, González-Arroyo 1979, Anber-Poppitz 2018-2021, and the modern
    Cox-Pisarski 2023 dilute-gas analysis.
 
-The action formula and schematic dilute-gas expression are external
-inputs/targets for later bridge work. This note does not assert that
+The action formula is now isolated as bounded action-core support in the
+2026-06-18 split note. The schematic dilute-gas expression remains an external
+input/target for later bridge work. This note does not assert that
 the dilute-gas expansion converges, that a condensate forms, or that
 the determinant/phase-space factors produce a framework hierarchy.
 
 ## Boundary
 
-This note records an external 4D Yang-Mills action formula and its
-standard published lattice / dilute-gas neighborhood. It does **not**
+This note records a bounded action-core split plus an external 4D Yang-Mills
+dilute-gas neighborhood. It does **not**
 claim:
 
 - that the fractional instanton substrate or the twisted-`T⁴` setting
@@ -209,10 +267,10 @@ substrate-specific bridge.
 
 ## Downstream Source-Boundary Firewall
 
-This packet may be cited only for the external twisted-`T^4`
-fractional-charge/action algebra and for the schematic dilute-gas
-modeling form under its stated determinant, measure, coupling-scale,
-phase-space, and convergence boundaries. Later framework use must
+This packet may be cited for the split action-core algebra only through the
+2026-06-18 bounded support note, and for the schematic dilute-gas modeling form
+only under its stated determinant, measure, coupling-scale, phase-space, and
+convergence boundaries. Later framework use must
 separately prove the twisted-`T^4` sector, the determinant/measure/
 coupling-scale prescription, the dilute-gas convergence or condensate
 criterion, and the substrate/observable bridge before importing this
@@ -298,9 +356,54 @@ symbolic and `mpmath`-equivalent numerical surrogates where needed):
     bridge, and that the packet is not cited as a positive hierarchy
     bridge, condensate closure, or framework substrate/observable
     identification.
+12. **T12**: algebra-core split / decoration segregation — runner checks
+    that this parent frames the fractional-action algebra as a pure
+    algebraic decoration of the retained-bounded topological-instanton
+    authority (citing the 2026-06-18 action-core note), that the
+    dilute-gas determinant/measure/coupling-scale/convergence and
+    condensate content is segregated into the explicit
+    "Open: Dilute-Gas Bridge" block as the unsupplied
+    bridge, and that the parent no longer presents the retained-bounded
+    topological-instanton authority as authority for the dilute-gas
+    bridge (it backs the action-core decoration only).
 
 Expected runner result: `PASS=N`, `FAIL=0`.
 
 ## Upstream authority
 
-- [TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md) — bounded named-import umbrella wrapper covering Bogomolny bound, Atiyah-Singer integrality, Luescher admissibility / gradient-flow lattice charge, and twisted-`T^4` `'t Hooft / van Baal` fractional `Q = k / N` sectors. Provides the one-hop authority for the upstream fractional-`Q` derivation on twisted `T^4` consumed by the fractional-instanton dilute-gas condensate construction.
+- [FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md](FRACTIONAL_INSTANTON_ACTION_CORE_FROM_TOPOLOGICAL_INFRASTRUCTURE_BOUNDED_NOTE_2026-06-18.md) — bounded support for the fractional-action arithmetic core `S_frac(k,N) = (8*pi^2/g^2)|k/N|` once the twisted `Q = k/N` charge and fixed action normalization are supplied. This is the action-core decoration; it supplies no dilute-gas determinant, measure, coupling-scale, convergence, or condensate data.
+- [TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md) — bounded named-import umbrella wrapper covering Bogomolny bound, Atiyah-Singer integrality, Luescher admissibility / gradient-flow lattice charge, and twisted-`T^4` `'t Hooft / van Baal` fractional `Q = k / N` sectors. It is the retained-bounded authority for the action-core **decoration only** (the fixed-convention action normalization and the twisted `Q = k/N` arithmetic). It does **not** supply, and is **not** authority for, the dilute-gas determinant, measure, phase-space density, coupling-scale prescription, finite-volume/temperature regime, convergence, or condensate formation — those remain the unsupplied open bridge segregated in the "Open: Dilute-Gas Bridge" block above.
+
+## 2026-06-20 Source Repair: Split-to-Decoration
+
+This source repair splits the fractional action algebra into a separate
+decoration of the retained-bounded topological-instanton authority and does
+**not** supply the dilute-gas bridge. It mirrors the 2026-06-18
+split-to-decoration repair already applied to the sibling
+`MERON_HALF_INSTANTON_4PI2_OVER_G2_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`
+(plain-text analogy only, not a load-bearing dependency).
+
+Changes:
+
+- The fractional charge/action algebra is reframed as a pure algebraic
+  **decoration** of the retained-bounded topological-instanton authority
+  [`TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md`](TOPOLOGICAL_INSTANTON_TEXTBOOK_INFRASTRUCTURE_IMPORT_NOTE_2026-05-17.md)
+  (via the 2026-06-18 bounded action-core split note). That authority now
+  backs the action-core algebra `S_frac(k,N) = (8*pi^2/g^2)|k/N|` only.
+- The dilute-gas determinant, integration measure, phase-space density,
+  coupling-scale prescription, finite-volume/temperature regime, convergence,
+  and condensate-formation content is segregated into the explicit
+  "Open: Dilute-Gas Bridge (not supplied here)" block (Statement
+  items 4–5) as the unsupplied bridge. No dilute-gas bridge theorem is added.
+- The stale Upstream-authority phrasing that presented the retained-bounded
+  topological-instanton authority as "consumed by the fractional-instanton
+  dilute-gas condensate construction" is removed; the bounded authority is now
+  scoped to the action-core decoration only.
+- Runner check **T12** is added to verify the decoration framing, the
+  segregation of the dilute-gas bridge into the open bridge block, and
+  that the retained-bounded authority no longer backs the dilute-gas bridge.
+
+No derived value is changed. The parent row remains an external open gate
+decorating the bounded action core, with the dilute-gas/condensate bridge open.
+**Status authority:** independent audit lane only; this source note does not set
+status.

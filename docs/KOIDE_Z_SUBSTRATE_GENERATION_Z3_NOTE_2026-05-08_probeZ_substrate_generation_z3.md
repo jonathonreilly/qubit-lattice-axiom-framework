@@ -8,6 +8,15 @@ pipeline-derived.
 **Source-note proposal disclaimer:** this note is a source-note proposal;
 audit verdict and downstream status are set only by the independent
 audit lane.
+**Actual current-surface status:** bounded theorem. The finite
+orbit-counting, Fourier, and no-proper-quotient algebra closes on the
+Lattice axiom's `Z^3` surface plus named `C_3[111]` support; this note
+does not derive the downstream SM species map or sector propagation.
+**Trace class:** upstream_support
+**Reachability to target:** supports
+**Proposal allowed:** false
+**Bare retained allowed:** false
+**Audit required before effective retained:** true
 
 **Primary runner:** [`scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py`](../scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py)
 **Cached output:** [`logs/runner-cache/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.txt`](../logs/runner-cache/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.txt)
@@ -22,17 +31,20 @@ gravitational-`U(1)`) are all **linear** in `n_gen`: they take the form
 `n_gen` that satisfies the per-generation cancellation also satisfies the
 total cancellation.
 
-This probe asks the dual question:
+This probe asks the dual bounded question:
 
-> Does the framework's physical `Z^3` spatial substrate plus `C_3[111]`
-> structure force a three-element `hw=1` substrate carrier via
-> orbit-counting / character theory, even though anomaly cancellation
-> alone does not force a generation count?
+> On the framework Lattice axiom's `Z^3` spatial surface plus the named
+> `C_3[111]` structure, does the finite orbit-counting /
+> character-theory packet force a three-element `hw=1` substrate carrier,
+> even though anomaly cancellation alone does not force a generation count?
 
 The current repo support relevant to this question provides:
 
-1. **Z^3 spatial substrate** (per `MINIMAL_AXIOMS_2026-05-03.md`): the framework
-   is discrete in lattice (3-dimensional spatial substrate) and time.
+1. **Lattice axiom `Z^3` spatial surface** (per
+   [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)): the
+   site set is `Z^3` with standard translation action and nearest-neighbor
+   cubic adjacency. Dependencies on the stable `minimal_axioms` premise
+   chain-satisfy without bounding downstream rows.
 2. **BZ-corner structure** (per
    [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md)):
    `Z³` BZ corners are `{0, π}³`, partitioned by Hamming weight as
@@ -58,17 +70,39 @@ The current repo support relevant to this question provides:
    `C_3[111]` is fundamental and unbroken; species labels {electron,
    muon, tau} are convention.
 
-This probe assembles items (1)–(7) into a single bounded
-three-orbit substrate-cardinality claim. The chain is independent of
-anomaly cancellation.
+This probe assembles items (1)–(7) into a single bounded three-orbit
+substrate-cardinality claim. The closed chain is independent of anomaly
+cancellation on the `Z^3`/`C_3[111]` surface.
+
+### 0.1 Audit-scope repair (2026-06-18)
+
+The prior conditional rationale identified missing accepted-premise
+handling for the physical `Z^3` substrate premise. Current repo governance
+handles Lattice through the stable `minimal_axioms` axiom-premise node.
+This note therefore narrows the downstream claim boundary only: it does
+not claim that three SM generations are fully derived, and it does not
+close the physical species map. The claim is the exact finite algebra:
+
+> Given the Lattice axiom's `Z^3` BZ-corner surface and the named
+> `C_3[111]` action on `H_{hw=1}`, the `hw=1` carrier has cardinality 3
+> and admits no nonzero algebra-preserving quotient reducing that
+> cardinality.
+
+Downstream citations must use the phrase **bounded
+substrate-cardinality algebra over the Lattice `Z^3` surface and named
+`C_3[111]` support**. They must not cite this note as an unconditional
+generation-count theorem, as a physical SM species identification, or as
+sector propagation to quarks/neutrinos. They should cite
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) directly
+for the Lattice axiom.
 
 ## 1. Theorem (bounded substrate-cardinality claim)
 
 **Theorem (Z-Substrate-Generation-Z3; bounded substrate-cardinality
-claim).** On the framework's physical `Z^3` spatial substrate with the
+claim).** Given the Lattice axiom's `Z^3` spatial surface with the
 named `C_3[111]` action, the lightest non-trivial substrate carrier on
-`H_{hw=1}` has cardinality exactly 3, and this cardinality is
-substrate-forced within the cited support surface. Specifically:
+`H_{hw=1}` has cardinality exactly 3, and this cardinality is forced
+inside that finite algebra surface. Specifically:
 
 1. **(`|C_3| = 3` by group order.)** The cyclic group `C_3 ≅ ℤ/3ℤ` has
    exactly 3 elements by definition. This is a group-theoretic
@@ -94,22 +128,23 @@ substrate-forced within the cited support surface. Specifically:
    `|H_{hw=1}|` below 3 while preserving the cited generation
    algebra.
 
-5. **(Substrate specificity.)** A counterfactual `Z^d × C_d` substrate
+5. **(Substrate specificity on the Lattice surface.)** A
+   counterfactual `Z^d × C_d` substrate
    would produce `|hw=1| = C(d, 1) = d` corners with a natural
    `C_d`-action of order `d`. The number 3 enters specifically because
-   the framework baseline is `Z^3` as physical spatial substrate
-   (lattice dimension `d = 3`,
-   per `MINIMAL_AXIOMS_2026-05-03.md`). The framework's lattice
-   dimension equals the cyclic-group order, and the BZ-corner
+   the Lattice axiom surface is `Z^3` (lattice dimension `d = 3`, per
+   [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)). The
+   lattice dimension equals the cyclic-group order, and the BZ-corner
    `hw = 1` count equals `C(d, 1) = d`.
 
 Combining items (1)–(5):
 
-> The physical `Z^3` substrate plus `C_3[111]` support forces exactly
-> three elements in the lightest non-trivial `hw = 1` substrate carrier.
-> This forcing is structurally
-> distinct from SM anomaly cancellation (which is linear in `n_gen` and
-> admits any positive integer).
+> On the Lattice axiom's `Z^3` surface plus the named `C_3[111]`
+> support, the finite algebra forces exactly three elements in the
+> lightest non-trivial `hw = 1` substrate carrier. This bounded
+> substrate-cardinality algebra is structurally distinct from SM anomaly
+> cancellation (which is linear in `n_gen` and admits any positive
+> integer).
 
 The bounded qualifications are:
 
@@ -124,15 +159,15 @@ single `hw = 1` carrier to the four observed SM sectors (charged
 leptons, up-quarks, down-quarks, light neutrinos) is a separate sector
 argument not load-bearing in this probe.
 
-(c) the **physical-lattice premise** — that `Z³` is the physical
-substrate rather than an abstract auxiliary lattice — remains delegated
-to `PHYSICAL_LATTICE_NECESSITY_NOTE.md`.
+(c) the **Lattice axiom boundary** — this note cites the accepted
+`Z^3` lattice premise but does not enlarge it into a dynamics, continuum
+limit, species map, or physical observable bridge.
 
 ## 2. Inputs (current support only)
 
 | ID | Statement | Class |
 |---|---|---|
-| Z3 | `Z^3` spatial substrate (3-dim spatial discrete carrier) | repo baseline per `MINIMAL_AXIOMS_2026-05-03.md` |
+| Z3 | Lattice axiom `Z^3` spatial surface (3-dim spatial discrete carrier) | accepted axiom-premise per [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md); not a bounded-status source |
 | BZ | BZ corners `{0,π}³` with `1+3+3+1` Hamming-weight partition | support from `STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`, `THREE_GENERATION_STRUCTURE_NOTE.md` |
 | C3OP | `C_3[111]` cyclic operator on `H_{hw=1} ≅ ℂ³` | support from `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` |
 | FT | Fourier diagonalization with eigenvalues `{1, ω, ω²}` on `ℂ³` | support from `THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md` |
@@ -146,8 +181,8 @@ to `PHYSICAL_LATTICE_NECESSITY_NOTE.md`.
 - NO PDG observed mass values used as derivation input
 - NO lattice MC empirical measurements
 - NO fitted matching coefficients
-- NO new axioms beyond the physical `Z^3` spatial substrate and cited
-  `C_3[111]` support
+- NO new axioms. The `Z^3` lattice surface is the current Lattice axiom,
+  not a newly derived or newly admitted premise.
 - Standard orbit-counting / group theory is admissible (mathematical only)
 
 ## 3. Derivation
@@ -265,18 +300,18 @@ A counterfactual `Z^d × C_d` substrate (for arbitrary lattice dimension
   the `d` standard basis directions
 - `|C_d| = d` orbit count
 
-The framework baseline is `Z^3` (lattice dimension `d = 3`) per
-`MINIMAL_AXIOMS_2026-05-03.md`. Therefore the framework's
-substrate-internal numbers are forced to:
+On the Lattice axiom's `Z^3` surface (lattice dimension `d = 3`) per
+[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md), the
+substrate-internal numbers are:
 
 - `|hw = 1| = 3`
 - `|C_3| = 3`
 - single regular orbit of size 3
 
 The number 3 is **not** a generic claim about cyclic groups (`C_N`
-exists for all `N ≥ 1`). It is forced by the framework's specific
-choice of substrate dimension `d = 3`. The lattice dimension and the
-cyclic-group order MATCH because the natural `C_3[111]` action arises
+exists for all `N ≥ 1`). It follows inside the Lattice surface from the
+substrate dimension `d = 3`. The lattice dimension and the
+cyclic-group order match because the natural `C_3[111]` action arises
 as the cyclic permutation of the `d = 3` standard basis directions of
 `Z³`.
 
@@ -289,24 +324,25 @@ The Standard Model has exactly 3 generations of:
 - down-type quarks: `{d, s, b}`
 - light neutrinos: `{ν_1, ν_2, ν_3}`
 
-The framework's substrate-forced cardinality (3) **matches** the SM's
+The Lattice-surface substrate cardinality (3) **matches** the SM's
 observed generation cardinality (3) at the cardinality level only. This
 is a **cardinality-level cross-check**, not a substrate-to-species
 identification.
 
 Important: the SM's `n_gen = 3` is **observed**, not used as
-derivation input here. Steps 1–5 give substrate cardinality 3; the
-cross-check in Step 6 only notes that the observed value matches.
+derivation input here. Steps 1–5 give bounded substrate cardinality 3;
+the cross-check in Step 6 only notes that the observed value matches.
 
 ## 4. What this probe DOES claim
 
-1. The cardinality of the lightest non-trivial `hw = 1` substrate
-   carrier is exactly three under the physical `Z^3` spatial substrate
-   plus the named `C_3[111]` action, by combined orbit-counting +
-   no-proper-quotient.
-2. This forcing is **structurally distinct** from anomaly cancellation
-   (which is linear in `n_gen` and admits any positive integer).
-3. The number 3 is tied to the framework's physical `Z^3` substrate
+1. On the Lattice axiom's `Z^3` spatial surface plus the named
+   `C_3[111]` action, the cardinality of the lightest non-trivial
+   `hw = 1` substrate carrier is exactly three by combined
+   orbit-counting + no-proper-quotient.
+2. This bounded algebra is **structurally distinct** from anomaly
+   cancellation (which is linear in `n_gen` and admits any positive
+   integer).
+3. The number 3 is tied to the Lattice axiom's `Z^3` substrate
    dimension `d = 3`. A counterfactual `Z^d × C_d` substrate with
    `d ≠ 3` would give a different `hw=1` substrate-cardinality.
 4. At the cardinality level, this substrate count matches the
@@ -327,9 +363,9 @@ cross-check in Step 6 only notes that the observed value matches.
    scale, phase)` for the `C_3`-invariant Hermitian operator on
    `H_{hw=1}` remain bounded research targets per
    `A3_OPTION_C_BRANNEN_RIVERO_PHYSICAL_LATTICE_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_optC.md`.
-4. **Physical-lattice premise:** that `Z³` is the physical substrate
-   (and not an abstract auxiliary lattice) remains delegated to
-   `PHYSICAL_LATTICE_NECESSITY_NOTE.md`.
+4. **Lattice-plus-count is not species physics:** the Lattice axiom gives
+   the `Z^3` carrier; this note does not turn the carrier count into an
+   SM species identification or sector-propagation theorem.
 5. **Right-handed-neutrino content:** the framework's content on
    right-handed neutrinos remains its own audit lane; this probe does
    not claim n_gen forcing for that sector.
@@ -338,7 +374,7 @@ cross-check in Step 6 only notes that the observed value matches.
 
 ### Inputs (one-hop)
 
-- [`MINIMAL_AXIOMS_2026-05-03.md`](MINIMAL_AXIOMS_2026-05-03.md) — `Z³` substrate
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — Lattice axiom `Z^3` surface
 - [`STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md) — `Z³` BZ corner structure
 - [`THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md`](THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md) — `M_3(ℂ)` on `hw=1`
 - [`THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md`](THREE_GEN_Z3_FOURIER_DIAGONALIZATION_THEOREM_NOTE_2026-05-03.md) — `C_3` Fourier basis
@@ -362,52 +398,61 @@ Run the runner:
 python3 scripts/cl3_koide_z_substrate_generation_z3_2026_05_08_probeZ_substrate_generation_z3.py
 ```
 
-Expected on the cited support surface:
+Expected on the narrowed bounded surface:
 
 ```
-SUMMARY: PASS=29 FAIL=0 ADMITTED=6
+SUMMARY: PASS=37 FAIL=0 ADMITTED=5
 ```
 
-The 29 PASS items establish:
+The 37 PASS items establish:
 
-1. `|C_3| = 3` by group order (4 PASS)
-2. `C_3[111]` has exactly 3 distinct eigenvalues `{1, ω, ω²}` on `ℂ³` (7 PASS)
-3. BZ-corner orbit-counting gives `|hw = 1| = 3` with single regular `C_3`-orbit (7 PASS)
-4. No proper quotient of `H_{hw=1}` preserves the cited algebra (5 PASS)
-5. Specificity: counterfactual `Z^d × C_d` substrates produce `|hw=1| = d` (5 PASS)
-6. Cardinality cross-check with SM observed `n_gen = 3` (1 PASS)
+1. source-scope and citation firewall checks (8 PASS)
+2. `|C_3| = 3` by group order (4 PASS)
+3. `C_3[111]` has exactly 3 distinct eigenvalues `{1, ω, ω²}` on `ℂ³` (7 PASS)
+4. BZ-corner orbit-counting gives `|hw = 1| = 3` with single regular `C_3`-orbit (7 PASS)
+5. No proper quotient of `H_{hw=1}` preserves the cited algebra (5 PASS)
+6. Specificity: counterfactual `Z^d × C_d` substrates produce `|hw=1| = d` (5 PASS)
+7. Cardinality cross-check with SM observed `n_gen = 3` (1 PASS)
 
-The 6 ADMITTED items track explicitly bounded admissions:
+The 5 ADMITTED items track bounded/context limits:
 
 1. species-map e/μ/τ
 2. species-map u/c/t
 3. species-map d/s/b
 4. carrying `n_gen = 3` to neutrino sector
-5. physical-lattice premise (delegated)
-6. anomaly-cancellation non-specificity (comparison context)
+5. anomaly-cancellation non-specificity (comparison context)
 
 ## 8. Honest status
 
-Bounded substrate-cardinality theorem. The substrate `Z^3 × C_3`
-support forces exactly three elements in the lightest `hw = 1`
-substrate carrier. This addresses the substrate-internal counting
-question that anomaly cancellation alone does not answer.
+Bounded substrate-cardinality theorem. Given the Lattice axiom's
+`Z^3` surface plus named `C_3` support, the finite algebra forces
+exactly three elements in the lightest `hw = 1` substrate carrier. This
+addresses the
+substrate-internal counting question that anomaly cancellation alone
+does not answer, but it does not close the downstream species map.
 
 The probe is bounded on:
 
 - species map (labeling convention)
 - sector propagation (separate argument needed for quarks and neutrinos)
-- physical-lattice premise (delegated)
+- the Lattice axiom boundary (no dynamics, species map, or observable bridge)
 
 The claim is therefore narrower than "n_gen = 3 is fully derived for
-all SM matter sectors." It is a bounded substrate-cardinality result
-with the cross-sector upgrade tracked as a separate research target.
+all SM matter sectors." It is bounded substrate-cardinality algebra with
+the species-map and cross-sector upgrades tracked as separate research
+targets.
 
 ```yaml
 claim_type_author_hint: bounded_theorem
-claim_scope: "Z^3 x C_3 substrate support gives |hw=1| = 3 (orbit count) via combined orbit-counting + no-proper-quotient. Structurally distinct from anomaly cancellation. Does not by itself identify SM species or propagate to all sectors."
+actual_current_surface_status: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+claim_scope: "On the Lattice axiom Z^3 surface with named C_3 substrate support, |hw=1| = 3 (orbit count) via combined orbit-counting + no-proper-quotient. Structurally distinct from anomaly cancellation. Does not identify SM species or propagate to all sectors."
 upstream_dependencies:
-  - minimal_axioms_2026_05_03 (Z^3 substrate)
+  - minimal_axioms (Lattice axiom Z^3 surface; accepted premise, not status-bounding)
   - staggered_dirac_bz_corner_forcing_theorem_note_2026_05_07 (BZ corner structure)
   - three_generation_observable_theorem_note (M_3(C) on hw=1)
   - three_gen_z3_fourier_diagonalization_theorem_note_2026_05_03 (C_3 eigenbasis)
@@ -423,7 +468,6 @@ bounded_admissions:
   - species_map_up_quarks_u_c_t (labeling convention)
   - species_map_down_quarks_d_s_b (labeling convention)
   - sector_propagation_neutrinos (separate argument)
-  - physical_lattice_premise (delegated)
   - anomaly_non_specificity (probe_y dual)
 context_notes:
   - anomaly cancellation alone is linear in n_gen and does not force n_gen = 3

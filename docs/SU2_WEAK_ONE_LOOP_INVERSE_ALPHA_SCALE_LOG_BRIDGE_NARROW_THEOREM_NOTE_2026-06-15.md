@@ -45,6 +45,31 @@ not set or predict an audit outcome.
 
 **Runner:** [`scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py`](../scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge_2026_06_15.py)
 
+## 2026-06-18 direct ruler/readout hardening
+
+The original 2026-06-15 bridge computes the log through the dimensionless
+hierarchy candidate map, where `M_Pl` cancels:
+
+```text
+ln(M_Pl/v_cand) = -ln((7/8)^(1/4) alpha_LM^16).
+```
+
+This update adds a second runner check against the current repo value surface:
+the reusable-values index records `v = 246.282818290129 GeV`, and the accepted
+unit-conversion runner uses the Planck-ruler decimal `M_Pl = 1.22e19 GeV`.
+Directly computing
+
+```text
+ln(1.22e19 / 246.282818290129) = 38.441487082215616...
+```
+
+still rounds to the same exact-symbolic surrogate `3844/100 = 38.44`. Using
+the hierarchy runner's more precise Planck decimal `1.2209e19 GeV` gives
+`38.44222451516312...`, matching the dimensionless candidate-map computation.
+Thus the downstream `g_2(v)` row's scale-log input is stable across the two
+repo-local ways of reading the same surface; the old `38.44` is not a free
+external constant.
+
 ## Inputs
 
 **(B1) SU(2)_L beta-coefficient convention and value.**
@@ -81,6 +106,14 @@ This bridge consumes only the dimensionless candidate-map arithmetic
 needed to compute `ln(M_Pl/v_cand)`. It does not use the fenced PDG
 comparator and does not close the hierarchy row's B3/B4/B5 formula
 gates.
+
+**(B5) Current value-surface cross-check.** The repo reusable-values index
+`docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` records
+`v = 246.282818290129 GeV`, and
+`scripts/unit_conversion_is_accepted_non_bounding_ruler_runner.py` records the
+accepted non-bounding Planck-ruler decimal `M_Pl_GeV = 1.22e19` for direct
+unit-conversion arithmetic. These are used only to harden the scale-log
+readout; they add no new axiom and no observed `g_2(v)` comparator.
 
 ## Theorem A: inverse-alpha one-loop integration
 
@@ -169,6 +202,21 @@ the framework hierarchy candidate log:
 |L_cand - L_100| = 0.00222451516312... < 0.003.
 ```
 
+The current value-surface cross-check gives the same conclusion without
+re-expanding the hierarchy candidate map:
+
+```text
+L_direct := ln(1.22e19 / 246.282818290129)
+          = 38.441487082215616...,
+|L_direct - L_100| = 0.001487082215616... < 0.002,
+|L_cand - L_direct| = 0.000737432947505... < 0.001.
+```
+
+Using `1.2209e19` in the direct readout gives `L_cand` to the displayed
+precision because the quoted `v_cand` is generated from that same runner
+decimal. Both repo-local readings therefore support the same rounded
+two-decimal exact surrogate.
+
 ## What This Claims
 
 - The integrated inverse-alpha one-loop law follows by calculus from
@@ -177,6 +225,10 @@ the framework hierarchy candidate log:
   computed from the repo's scale-reference primitive and hierarchy
   candidate map; the two-decimal value `38.44` is a rounded readout of
   `L_cand`, not an independent external number.
+- The current direct value-surface readout
+  `ln(1.22e19 / 246.282818290129)` also rounds to `38.44`, so the scale-log
+  surrogate is stable under the repo's accepted Planck-ruler decimal and
+  reusable EW-scale value.
 - The bridge is reusable by downstream rows that need only the
   inverse-alpha integration formula or the Planck-to-hierarchy-candidate
   scale log.
@@ -206,5 +258,5 @@ python3 scripts/audit_companion_su2_weak_one_loop_inverse_alpha_scale_log_bridge
 Expected summary:
 
 ```text
-TOTAL: PASS=19 FAIL=0
+TOTAL: PASS=27 FAIL=0
 ```

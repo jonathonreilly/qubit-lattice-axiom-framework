@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_g2_v_bounded_interval_narrow_exact_2026_05_17.py
-runner_sha256: 6ab1633d73c0372a14e8843fd54ea11a5a6592efbe7e75189195357b69e8b006
+runner_sha256: ddcddaa49c97e53ade486b9d6e6e69d8f465af6c78ff51657b75ff35ffe20c8e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,7 +11,7 @@ Audit companion (exact-symbolic) for
 G_2_V_BOUNDED_INTERVAL_NARROW_THEOREM_NOTE_2026-05-17
 Goal: sympy verification of g_2(v) bounded interval from u_0 in [0.96, 0.98]
 Inputs (cited):
-  (X1) u_0(SU(2)) in [96/100, 98/100]   ... NAMED EXTERNAL ADMISSION
+  (X1) u_0(SU(2)) in [96/100, 98/100]   ... native beta=16 one-plaquette bridge
   (X2) b_2 = 19/6                        ... retained_bounded
   (X3) Cl(3) bivector -> SU(2)           ... retained
   (X4) 1/alpha_2^bare |_lattice = 16 pi  ... retained_bounded one-hop anchor
@@ -29,9 +29,12 @@ Part 0: source-packet dependency repair checks
   [PASS (A)] (X4) source note does not leave G_BARE_CANONICAL as a load-bearing markdown edge
   [PASS (A)] (X4) source note states the coupling input is not rederived here
   [PASS (A)] (X6/X7) source note cites the framework-local scale/RGE bridge
+  [PASS (A)] (X1) source note cites the native SU2 beta=16 u0 interval bridge
+  [PASS (A)] (X1) source note says X1 is not a row-local literature admission
+  [PASS (A)] (X6) bridge includes direct ruler/current-v scale-log hardening
   [PASS (A)] (X7) source note no longer registers one-loop RGE as a row-local named admission
   [PASS (A)] (X1) source note no longer claims [0.96,0.98] brackets 0.988
-  [PASS (A)] (X1) source note says 0.988 is outside the admitted interval
+  [PASS (A)] (X1) source note says 0.988 is outside the parent interval
   [PASS (A)] (X1) source note keeps 0.988 non-load-bearing
 
 ----------------------------------------------------------------------------------------
@@ -86,11 +89,11 @@ Part 6: explicit bounded interval g_2(v) in [g_lo, g_hi]
   [PASS (A)] (I5) g_hi < 0.75 (loose physical sanity bound)  (g_hi = 0.6828343046)
 
 ----------------------------------------------------------------------------------------
-Part 6b: weak-coupling 0.988 comparator is outside X1
+Part 6b: weak-coupling 0.988 comparator is outside parent X1 interval
 ----------------------------------------------------------------------------------------
   weak-coupling comparator u_weak = 247/250 = 0.988
   g_2(v) at u_weak = 0.988 (context only): 0.650546388470004875964435583584
-  [PASS (A)] (U1) weak-coupling readout 0.988 lies above the admitted upper endpoint 0.98  (u_weak - u_hi = 0.008000)
+  [PASS (A)] (U1) weak-coupling readout 0.988 lies above the parent upper endpoint 0.98  (u_weak - u_hi = 0.008000)
   [PASS (A)] (U2) g_2 at u_weak is below g_lo, hence outside the certified interval  (g_2(u_weak) - g_lo = -0.00884644771670)
   [PASS (A)] (U3) 0.988 comparator is not used as an endpoint  (load-bearing endpoints remain 96/100 and 98/100)
 
@@ -114,11 +117,11 @@ Part 8: forbidden-import audit
 ----------------------------------------------------------------------------------------
 Summary
 ----------------------------------------------------------------------------------------
-  PASS = 30
+  PASS = 33
   FAIL = 0
   g_2(v_cand approx 246.28 GeV) in [0.659392836186702, 0.682834304553707]
   interval width = 0.0234414683670046
-  PASS=30 FAIL=0
+  PASS=33 FAIL=0
 
 ----- stderr -----
 

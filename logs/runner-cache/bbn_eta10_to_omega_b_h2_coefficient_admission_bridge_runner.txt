@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_runner.py
-runner_sha256: fe716c94aa155eb626dec07159f8f84d953997fc63456230cfdc658ee60ca1a2
+runner_sha256: f2e6995090ed12f70b7da111309afba915d47719b9f423b59c8a21345a1cfaaf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 BBN COEFFICIENT 3.6515e-3 ADMISSION BRIDGE
@@ -30,6 +30,8 @@ PASS: source excludes forbidden phrase: **Status:** retained
 PASS: source excludes forbidden phrase: audited_clean
 
 == Part 1: analytic factor 2 zeta(3) / pi^2 ==
+PASS: zeta(3) reference is certified by the p-series tail interval (N=20000, width <= 1.250e-09)
+PASS: Planck integral identity is internally certified: integral = 2 zeta(3) (2*zeta(3) in [2.404113803819, 2.404113806319])
 PASS: factor reduces to 2 zeta(3)/pi^2 with photon polarization count g_gamma = 2 (factor = 0.243587656467)
 PASS: factor numerically equals 0.24359... (standard) (factor = 0.243588)
 
@@ -50,12 +52,14 @@ PASS: P4 raw Cyburt convention baseline is S=1 (S_raw = 1.0 for the raw unit-con
 PASS: P4 exact Cyburt residual is admitted as a separate comparator convention (S_Cyburt_exact = 0.998927674264154)
 
 == Part 5: retention scorecard ==
+PASS: source records the 2026-06-18 analytic-factor import retirement
+PASS: source separates analytic proof from physical admissions
 PASS: source says critical-density unit is formula-expanded instead of black-boxed
 PASS: source keeps four admitted premise classes P1-P4
 PASS: source records exact S_Cyburt residual as admitted comparator, not derivation
 PASS: bridge does not promote the parent cosmology cascade row
 
-TOTAL: PASS=35 FAIL=0
+TOTAL: PASS=39 FAIL=0
 VERDICT: bounded admission bridge passes; the textbook coefficient 3.6515e-3 is split into a raw unit-conversion baseline from one analytic factor (2 zeta(3)/pi^2 from the Planck distribution) and admitted physical premises (P1 m_p, P2 T_CMB, P3 H_100/G critical-density unit), plus explicit admitted P4 residual S_Cyburt_exact = 0.9989276742641543. The raw baseline is within 0.107% of the Cyburt+ 2016 published value; exact equality uses the admitted residual comparator.
 
 ----- stderr -----

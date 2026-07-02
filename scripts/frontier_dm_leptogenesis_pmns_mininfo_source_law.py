@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-DM leptogenesis PMNS minimum-information source law.
+DM leptogenesis PMNS minimum-information selector diagnostic.
 
 Framework baseline:
   Lattice + Quantum + Record, with the one-qubit operator algebra on the Z^3
   lattice.
 
-Scope (bounded / conditional theorem):
+Scope (open gate / conditional diagnostic):
   This runner verifies the consequences of *adopting* a post-axiom selector
   law. The selector itself is an explicit definition imported from
   information geometry; it is NOT derived from the Lattice + Quantum + Record
@@ -35,7 +35,8 @@ What this runner does NOT prove:
 
 This yields a reproducible low-deformation exact-closure source on the current
 branch CONDITIONAL on adopting I_seed as the selector. It does not prove global
-uniqueness or a baseline-framework selector derivation.
+uniqueness, theorem-grade selector authority, or a baseline-framework selector
+derivation.
 """
 
 from __future__ import annotations
@@ -136,10 +137,16 @@ def part0_source_scope_firewall() -> None:
     print("=" * 88)
 
     check(
-        "Source note identifies the bounded conditional diagnostic",
-        "**Type:** bounded_theorem" in NOTE_TEXT
-        and "bounded conditional numerical selector diagnostic" in NOTE_TEXT
+        "Source note identifies the open-gate selector diagnostic",
+        "**Type:** open_gate" in NOTE_TEXT
+        and "**Type:** bounded_theorem" not in NOTE_TEXT
+        and "open selector gate" in NOTE_TEXT
         and "not a selector theorem" in NOTE_FLAT,
+    )
+    check(
+        "Source note registers primary runner and cached output",
+        "scripts/frontier_dm_leptogenesis_pmns_mininfo_source_law.py" in NOTE_TEXT
+        and "logs/runner-cache/frontier_dm_leptogenesis_pmns_mininfo_source_law.txt" in NOTE_TEXT,
     )
     check(
         "Source note does not claim global uniqueness as runner-proved",
@@ -155,6 +162,11 @@ def part0_source_scope_firewall() -> None:
         "Source note does not introduce a new axiom or retained bridge",
         "the Lattice + Quantum + Record baseline" in NOTE_TEXT
         and "none of those bridge a baseline framework derivation here" in NOTE_FLAT,
+    )
+    check(
+        "Source note forbids retained selector-theorem reuse",
+        "must not be cited as a retained" in NOTE_TEXT
+        and "No retained-grade promotion" in NOTE_TEXT,
     )
 
 
@@ -321,7 +333,7 @@ def part3_bottom_line() -> None:
         "it finds a low-deformation exact closure source, not just some overshooting source",
     )
     check(
-        "The runner verifies the conditional theorem, not the unconditional one",
+        "The runner verifies the conditional diagnostic, not a selector theorem",
         True,
         "I_seed is imported from information geometry; baseline-framework derivation is parked at sister theorems",
     )
@@ -334,7 +346,7 @@ def part4_honest_scope_assertions(
     etas_min: np.ndarray,
     i_star: int,
 ) -> None:
-    """Bake the bounded/conditional scope directly into runner PASS/FAIL output.
+    """Bake the open-gate/conditional scope directly into runner PASS/FAIL output.
 
     Each check restates the audit-honest claim: this note proves a conditional
     theorem of the form
@@ -346,7 +358,7 @@ def part4_honest_scope_assertions(
     It does NOT claim baseline-framework derivation of I_seed itself.
     """
     print("\n" + "=" * 88)
-    print("PART 4: HONEST SCOPE ASSERTIONS (bounded / conditional)")
+    print("PART 4: HONEST SCOPE ASSERTIONS (open gate / conditional)")
     print("=" * 88)
 
     check(
@@ -368,7 +380,7 @@ def part4_honest_scope_assertions(
     check(
         "Runner explicitly does NOT claim baseline-framework derivation of I_seed",
         True,
-        "I_seed is imported from information geometry; treat note as bounded support",
+        "I_seed is imported from information geometry; treat note as open-gate support",
     )
     check(
         "Selector is comparable to sister selectors (relative action, KKT classification)",
@@ -379,13 +391,13 @@ def part4_honest_scope_assertions(
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS PMNS MINIMUM-INFORMATION SOURCE LAW (bounded / conditional)")
+    print("DM LEPTOGENESIS PMNS MINIMUM-INFORMATION SELECTOR DIAGNOSTIC (open gate / conditional)")
     print("=" * 88)
     print()
     print("Framework baseline:")
     print("  Lattice + Quantum + Record; one-qubit operator algebra on the Z^3 lattice.")
     print()
-    print("Scope (bounded / conditional theorem):")
+    print("Scope (open gate / conditional diagnostic):")
     print("  IF the minimum-information selector law is adopted as a post-axiom")
     print("  convention on the fixed native N_e seed surface, THEN the runner")
     print("  finds a calibrated low-cost exact-closure off-seed source on the")

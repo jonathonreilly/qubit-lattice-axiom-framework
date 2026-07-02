@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py
-runner_sha256: 81b4a7a47556e426102a7ebfb392cd635ce6a34b453a7aa7767715bd653e7819
+runner_sha256: 345a71c49750842f375895eeac3f71e25fcc7d8730f69182329e41d5b2d138fc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 ==========================================================================

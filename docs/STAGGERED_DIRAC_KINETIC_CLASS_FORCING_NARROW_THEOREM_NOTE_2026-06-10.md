@@ -25,7 +25,7 @@ nearest-neighbor Cl(3) hopping bilinear") to exactly the flux-`−1` selector bi
 not set or predict an audit outcome; audit verdict and effective status
 are set only by the independent audit lane.
 **Primary runner:** [`scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py`](../scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py)
-(`TOTAL: PASS=27 FAIL=0`)
+(`TOTAL: PASS=28 FAIL=0`)
 **Authority role:** source-note proposal narrowing boundary B2 (P-KIN)
 and discharging boundary B3 (P-SD) of the Kawamoto-Smit forcing note's
 declared premise set, and the corresponding `P-SD` row of the
@@ -40,6 +40,13 @@ row's status.
   (boundaries B2 = P-KIN, B3 = P-SD) and consumed by
   `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (premise table
   Π, row P-SD).
+- **2026-06-17.** Removed the load-bearing dependency edge to the
+  `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
+  renaming row. The no-spectator input is now stated directly from the
+  current minimal Quantum axiom's one-site `M₂(C) ~= Cl(3,0)` qubit
+  carrier, the retained Cl(3) Pauli-module classification, and the
+  runner's CAR(2) dimension computation. U4 remains provenance context
+  only; no audit status or retained-grade promotion is asserted here.
 
 ## 1. Question
 
@@ -56,11 +63,13 @@ full, what exactly is the irreducible residual?
 
 ## 2. Answer (narrow, with computed sharpness)
 
-**P-SD: yes, on the surviving Dirac branch — it becomes the absorbing-frame theorem.** The qubit-reframe closure makes the per-site Hilbert space
-`C²` with no spectator factor; a per-site 2-component spinor would need
-a faithful CAR(2) module of dimension ≥ 4 (computed: CAR(2) generates
-the full `M₄(C)`), so the Cl(3) vector vertex has nowhere to live
-except site-local frames. The absorbing frame then exists
+**P-SD: yes, on the surviving Dirac branch — it becomes the absorbing-frame theorem.** The current minimal Quantum axiom supplies the per-site
+one-qubit carrier `A_x ~= M₂(C) ~= Cl(3,0)`; with the retained Cl(3)
+Pauli-module classification this is the single `C²` site module, not a
+spectator surface. A per-site 2-component spinor would need a faithful
+CAR(2) module of dimension ≥ 4 (computed: CAR(2) generates the full
+`M₄(C)`), so the Cl(3) vector vertex has nowhere to live except
+site-local frames. The absorbing frame then exists
 (`T(x) = σ₁^{x₁}σ₂^{x₂}σ₃^{x₃}`), its image is forced into the
 flux-`(−1)` class (γ anticommutation: plaquette holonomy
 `γ_ν γ_μ γ_ν γ_μ = −I`), and it is unique up to
@@ -145,32 +154,34 @@ Load-bearing (markdown links):
 1. [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) —
    axiom premise node. License used: Lattice (site set `Z³`, standard
    translation action, nearest-neighbor cubic adjacency) and Quantum
-   (per-site qubit, `A_x ≅ M₂(C) ≅ Cl(3,0)`). Nothing else (no
-   dynamics, no boundary condition) is drawn from the axioms.
-2. [`U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`](U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md)
-   — License used: the per-site physical Hilbert space is
-   `C²`, the single faithful complex irrep (`k = 1`, no multi-copy
-   direct sum, no spectator factor). Load-bearing for the no-spectator
-   lemma (the absorbing-frame theorem) and for the single-mode realizability
-   constraint K4.
-3. [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
-   — License used: the 2-dim faithful
-   complex Cl(3) irreps with Pauli realization `γ_μ = σ_μ`; only the
-   abstract classification is consumed, not the withdrawn U4 bridge
-   (which is supplied by item 2 instead).
-4. [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
+   (one-site qubit carrier, `A_x ≅ M₂(C) ≅ Cl(3,0)`). This is the
+   load-bearing source for the single primitive local carrier used in
+   the no-spectator lemma and K4. Nothing else (no dynamics, no boundary
+   condition, no kinetic selector) is drawn from the axioms.
+2. [`AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md)
+   — License used: the 2-dim faithful complex Cl(3) irreps with Pauli
+   realization `γ_μ = σ_μ`; consumed only as the retained
+   Pauli-module/classification statement that identifies the minimal
+   Quantum carrier with the single `C²` site module.
+3. [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
    — License used: the finite periodic tensor-product Fock
    surface, local ladder operators, `Q_total`, and the
    tensor-permutation translation covariance identities. This is the
    operator surface on which the kinetic bilinears of Definition D-kin
    live.
-5. [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
+4. [`FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md`](FERMION_PARITY_Z2_GRADING_THEOREM_NOTE_2026-05-02.md)
    — License used: the `(−1)^Q` grading with bilinears
    `Z₂`-even; consumed as a tested cited separator (runner check 18
    shows it does not separate `K0` from `K1`).
 
 Plain-text pointers (NOT load-bearing):
 
+- `U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md`
+  — audited-renaming/provenance context for older U4 language only.
+  This note does not consume U4 as a load-bearing theorem dependency;
+  the `C²`/no-spectator input is sourced directly from the current
+  minimal Quantum axiom, the retained Cl(3) classification, and runner
+  check 10.
 - `STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`
   — declares P-KIN (B2) and P-SD (B3); its Lemmas 2–4
   classify phase systems WITHIN the `−1` cocycle. Two-flux-class theorem here
@@ -276,14 +287,16 @@ case on the unit cube (check 7); exhaustive enumeration of all
 
 ### 5.3 Absorbing-frame theorem (P-SD discharged on the `K1` branch)
 
-**On the qubit-reframe closure (authority 2) and Cl(3) classification
-(authority 3):**
+**On the minimal Quantum axiom's one-site qubit carrier (authority 1)
+and Cl(3) classification (authority 2):**
 
 **(i) No-spectator / scalarization forced.** The per-site physical
-space is `C²` with `k = 1` (authority 2). Two independent fermion modes
-per site (a 2-component spinor) would require a faithful CAR(2)
-module; CAR(2) generates the full `M₄(C)` (computed dim 16, check 10),
-which is simple with unique faithful irrep of dim `4 > 2`. So the
+space is the single `C²` qubit carrier supplied by the minimal Quantum
+axiom and identified with the retained Pauli/Cl(3) module by authority
+2. Two independent fermion modes per site (a 2-component spinor) would
+require a faithful CAR(2) module; CAR(2) generates the full `M₄(C)`
+(computed dim 16, check 10), which is simple with unique faithful irrep
+of dim `4 > 2`. So the
 naive-Dirac kinetic structure `Σ_μ γ_μ ⊗ ∇_μ` admits NO site-local
 realization with an explicit per-site spinor index; in any site-local
 realization the Cl(3) vector vertex must be absorbed by site-local
@@ -348,7 +361,8 @@ two-point classification.
 
 [`scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py`](../scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py)
 — deterministic, no network, no randomness, runtime well under one
-minute. 27 checks in four sections tagged `[A]`/`[B]`/`[C]`/`[D]`
+minute. One source-dependency guard tagged `[S]`, plus 27 mathematical
+checks in four sections tagged `[A]`/`[B]`/`[C]`/`[D]`
 (two-flux-class theorem certificate; absorbing-frame theorem certificate; sharpness countermodel;
 falsification legs), with `RESIDUAL (declared-open): ...` lines printed
 at the point where each boundary is load-bearing. Exact sympy for all
@@ -403,7 +417,8 @@ that the named constraint rejects it.
 python3 scripts/staggered_dirac_kinetic_class_forcing_check_2026_06_10.py
 ```
 
-Expected output (deterministic): 27 numbered `[PASS]` lines in sections
+Expected output (deterministic): 28 `[PASS]` lines: one `[S]` source
+dependency guard and 27 numbered mathematical checks in sections
 `[A]`/`[B]`/`[C]`/`[D]` as described in §6, including
 `|O| = 24, direction orbit size = 6`,
 `V=64 E=144 P=108 rank(d1)=81 rank(d0)=63`,
@@ -416,7 +431,7 @@ lines (B-H, surface scope, B-SL, B-BIT, bilinear-sector scope); then
 exactly:
 
 ```text
-TOTAL: PASS=27 FAIL=0
+TOTAL: PASS=28 FAIL=0
 VERDICT: Two-flux-class theorem (two-flux-class collapse) and Absorbing-frame theorem
          (P-SD discharged on the flux(-1) branch) VERIFIED on
          the finite instantiation; the flux(+1) countermodel
@@ -433,7 +448,6 @@ claim_type_author_hint: bounded_theorem
 claim_scope: "On the adjacency-licensed Q-conserving NN bilinear surface over the qubit-reframe-closed per-site C^2, translation+cubic covariance up to site-local frame collapses the kinetic family to exactly two flux classes {+1, -1}; the site-local absorbing frame of P-SD exists, is unique up to gauge x global frame, and lands exactly in the flux(-1) class; the final one-bit class selector is NOT forced (computed countermodel)."
 upstream_dependencies:
   - minimal_axioms
-  - u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20
   - axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29
   - tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25
   - fermion_parity_z2_grading_theorem_note_2026-05-02

@@ -68,6 +68,7 @@ import sys
 import numpy as np
 import sympy as sp
 from itertools import product
+from pathlib import Path
 
 
 def staggered_eta(x, mu):
@@ -562,6 +563,31 @@ def exhibit_E7(L=6, dim=3, mass=0.3, tol=1e-9):
     return pass_all
 
 
+def exhibit_E8_source_boundary():
+    print("\n--- Exhibit E8: source dependency boundary for parent staggered gate ---")
+    root = Path(__file__).resolve().parents[1]
+    note_path = root / "docs" / "AXIOM_FIRST_LATTICE_NOETHER_THEOREM_NOTE_2026-04-29.md"
+    text = note_path.read_text(encoding="utf-8")
+    flat_text = " ".join(text.split())
+
+    parent = "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
+    retained_substep = "STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md"
+
+    checks = {
+        "note file exists": note_path.exists(),
+        "parent gate remains named as registered context": parent in text,
+        "parent gate is not a markdown one-hop dependency": f"]({parent})" not in text,
+        "retained substep-1 remains the markdown load-bearing dependency": f"]({retained_substep})" in text,
+        "registered route is explicitly non-current graph dependency": "not a current citation-graph dependency" in flat_text,
+        "source says parent uses no markdown edge": "no longer uses a markdown edge" in flat_text,
+    }
+    for label, ok in checks.items():
+        print(f"  {label}: {'PASS' if ok else 'FAIL'}")
+    passed = all(checks.values())
+    print(f"  E8 verdict: {'PASS' if passed else 'FAIL'}")
+    return passed
+
+
 def main():
     print("=" * 72)
     print(" axiom_first_lattice_noether_check.py")
@@ -576,6 +602,7 @@ def main():
     print(" 2026-06-06 onsite-generator repair: E5 arbitrary-bilinear symbolic")
     print(" sign check; (5) scoped to onsite/internal infinitesimal generators")
     print(" 2026-06-06 audit repair: + E5b direct U(1) local-envelope sign check")
+    print(" 2026-06-12 source-boundary repair: + E8 parent gate plain-text target")
     print("=" * 72)
 
     e1 = exhibit_E1(L=2, dim=3)
@@ -585,6 +612,7 @@ def main():
     e5b = exhibit_E5b(L=4, dim=3)
     e6 = exhibit_E6(L=4, dim=3)
     e7 = exhibit_E7(L=6, dim=3)
+    e8 = exhibit_E8_source_boundary()
 
     print()
     print("=" * 72)
@@ -597,7 +625,8 @@ def main():
                "E5 (bilateral (5) -> (4) algebraic closure)": e5,
                "E5b (direct U(1) sign-visible local variation)": e5b,
                "E6 (support-only (3) momentum-density divergence)": e6,
-               "E7 (field-level two-step Ward identity)": e7}
+               "E7 (field-level two-step Ward identity)": e7,
+               "E8 (parent gate source-boundary check)": e8}
     n_pass = sum(1 for v in results.values() if v)
     n_total = len(results)
     for k, v in results.items():

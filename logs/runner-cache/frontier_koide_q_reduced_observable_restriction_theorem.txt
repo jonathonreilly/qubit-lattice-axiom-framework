@@ -3,7 +3,7 @@ runner: scripts/frontier_koide_q_reduced_observable_restriction_theorem.py
 runner_sha256: 27f6a20d99b10236d807a3ea90061ca6d3faac35312b92c0f02de3fae425ca70
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.64
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 

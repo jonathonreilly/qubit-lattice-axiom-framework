@@ -1,9 +1,10 @@
-# Flavor — the Brannen-BAE 2/9 readout gate EQUALS the generation-carrier identification: three apparent gates collapse to one (and J_cs is silent on r)
+# Flavor — readout/carrier/basepoint gate-collapse map, with J_cs silent on r
 
 **Date:** 2026-05-31
-**Claim type:** bounded_theorem
-**Claim boundary:** bounded characterization (a gate-collapse) + one new verified negative. Not a closure; not an import.
-**Runner:** `scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py` (SCORECARD 7/7).
+**Claim type:** open_gate
+**Claim boundary:** open gate-collapse/support map plus one verified finite-algebra negative. Not a retained derivation of the physical flavor observable; not a forced intensive-readout theorem; not an import.
+**Primary runner:** [`scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py`](../scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py) (SCORECARD 11/11).
+**Cached output:** [`logs/runner-cache/flavor_readout_gate_equals_carrier_identification_2026_05_31.txt`](../logs/runner-cache/flavor_readout_gate_equals_carrier_identification_2026_05_31.txt).
 **Source:** workflow `wf_400cd07a-108` — 6 attack routes + 3-lens adversarial verification + synthesis (10 agents).
 
 ## Source boundary (2026-06-12)
@@ -22,6 +23,26 @@ the finite algebraic negative. It may not be cited as a retained derivation of
 the physical flavor observable, a forced intensive readout, or a proof that the
 carrier identification has been derived from baseline axioms.
 
+## Source repair for re-audit (2026-06-18)
+
+The prior top-level label `bounded_theorem` overstated the row's load-bearing
+move. This packet is an `open_gate`: it maps three names for the same
+remaining premise and records an exact negative route (`J_cs` does not select
+`r`). It does not derive the remaining premise.
+
+The repaired audit surface is:
+
+- **Exact finite algebra:** the `C3` fixed locus on `R^3` is a line; the
+  isolated-fixed-point `2/9` density lives on the transverse doublet; `J_cs`
+  commutes with the full circulant mass family and is silent on the
+  singlet/doublet ratio `r`; `L_3(1,2)=2/9` and `L_3(1,1)=1/9`.
+- **Open gate:** selecting the intrinsic intensive `R^3` density at the
+  `z=0` zero-section instead of the extensive lattice embedding is still the
+  single physical carrier/basepoint premise.
+- **No retained-grade promotion:** this row does not force the physical
+  charged-lepton flavor observable from baseline axioms and should not be used
+  as a theorem closing `lepton_brannen_bae_delta_two_ninths`.
+
 ## Question
 Does framework baseline+retained **force** the intensive local Lefschetz density `2/9` as THE physical
 charged-lepton flavor observable — over the *extensive* global equivariant index, which vanishes on
@@ -30,17 +51,17 @@ relocate to the generation-space identification, or stand as an independent thir
 
 This is the "readout gate" left by `FLAVOR_GENERATION_SPACE_BRIDGE_REDUCES_TO_OPEN_GATE_2026-05-31`.
 
-## Verdict: the readout gate IS the carrier identification — three apparent gates are one
+## Verdict: the readout gate is not an independent second gate
 
 Five of six attack routes (1, 2, 4, 5, 6) converge on the same algebraic fact, and adversarial
 verification of the sole dissenter (Route 3) confirms it delivers **no identification-independent
-forcing** of `2/9`. The honest result is a **collapse**, not a closure:
+forcing** of `2/9`. The honest result is a **gate-collapse map**, not a closure:
 
 > The **readout gate** (intensive-vs-extensive), the **generation-carrier identification**
 > (`open_gate` `lepton_brannen_bae_delta_two_ninths`), and the **zero-section/basepoint pick** of
 > `retained_no_go` `koide_q_delta_residual_cohomology_obstruction` are the **same single gate**.
 
-This pins the one remaining premise precisely and removes the illusion that the campaign faced
+This localizes the one remaining premise precisely and removes the illusion that the campaign faced
 several independent obstacles.
 
 ### Why the gates coincide (verified)

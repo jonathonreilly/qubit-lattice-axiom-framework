@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/carrier_attachment_chirality_gate_consolidation_runner.py
-runner_sha256: f22d63f0885aaf2e6f5eda07cc2f06249fadf5669c4c8b5458a0adaba6265be8
+runner_sha256: f8345e43497aeedf7a6c8813c9d3bb96736e9149920c03099b66d451ede2d7c9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.30
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -28,22 +28,17 @@ Kernel route: the spin-blind scalar kernel admits the scalar; only spinful sigma
   [PASS] the selector that excludes the trivial scalar is the spinful sigma.p kernel  | kernel-covariance alone admits the scalar; the spinful kernel is the matter-attachment
 
 ==============================================================================
-Chirality gate: the spinful selector is staggered {eps, D} = 0
+Staggered boundary: the displayed D has {eps, D} = 0
 ==============================================================================
    staggered D anti-Hermitian: True;  {eps, D} = 0 (chiral): True
-   => the spinful selector = the chiral staggered D (via Kahler-Dirac spin-diag, retained substep2)
-  [PASS] the matter-attachment selector consolidates into the recurring chirality import {eps,D}=0  | same chirality gate as generation-ID + r=1/2's carrier gate, NOT a new pin
+   => this is the local Dirac/staggered chirality surface used by the open KS route
+  [PASS] the displayed staggered D has the local chirality boundary {eps,D}=0  | does not by itself close KS/Grassmann physical-state-law selection
 
 ==============================================================================
-Consolidation summary
+Source-boundary guardrail
 ==============================================================================
-   the half-integer matter-field carrier residual is NOT a new independent carrier admission.
-   Operator-frame (adjoint, retained merger) under-determines the STATE law;
-   the only kernel excluding the trivial scalar is the spinful sigma.p; that spinful
-   kernel IS the chiral staggered D, {eps,D}=0 = the framework's single recurring
-   chirality import (generation-ID gate = r=1/2's carrier gate). So the residual collapses onto the
-   one chirality gate already paid once; it is not a separate carrier cost.
-  [PASS] the carrier residual consolidates into the single recurring chirality import (no separate pin)  | no-go on the escape stands; the live carrier residual = the chirality gate
+   source note forbids treating this as closed KS/Grassmann or generation/r=1/2 consolidation: True
+  [PASS] source boundary prevents overclaiming the unresolved chirality/state-law bridge  | runner verifies the repair target introduced by the conditional audit
 
 runner_check_breakdown = {A: 5, B: 0, C: 0, D: 0, total_pass: 5}
 TOTAL: PASS=5 FAIL=0

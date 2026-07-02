@@ -1,0 +1,38 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "the live re-audit bridge note as evidence",
+    "PR #4317 discussion as evidence",
+    "the archived causal_propagating_field_note as live evidence",
+    "the archived 0.63 / 0.45 table as evidence",
+    "prior audit verdicts as evidence",
+    "prior assistant discussion"
+  ],
+  "generated_date": "2026-06-18",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "causal_field_live_packet_fresh_context",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Fresh-context re-audit: ignoring the archived failed causal_propagating_field_note row and stale 0.63 / 0.45 table, does the current live bounded finite replay in CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md audit clean under its narrowed configured-family scope?",
+          "claim_id": "causal_propagating_field_live_packet_note_2026-06-05",
+          "current_audit_status": "audited_clean",
+          "current_claim_type": "bounded_theorem",
+          "current_effective_status": "retained_bounded",
+          "note_path": "docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

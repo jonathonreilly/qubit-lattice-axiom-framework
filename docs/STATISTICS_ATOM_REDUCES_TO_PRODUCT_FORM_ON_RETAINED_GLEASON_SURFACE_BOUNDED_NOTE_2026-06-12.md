@@ -56,11 +56,45 @@ outcome-factorization premise is the supplied bounded premise for this row; it
 is named, not derived or retained. R-D stays proposed; no occupancy cell is
 selected; `r` is never fixed; the occupancy binary stays open.
 
+## 2026-06-18 companion no-go: one-copy Born marginals are insufficient
+
+The companion source-side no-go
+`STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md`
+proves that the retained one-copy Born/Gleason surface plus finite scalar
+additivity does not force the quotient-level law `m(j,k)=p_j p_k`.
+
+That result does not refute future record-stack independence. It only prunes
+the false repair route in which this row's remaining premise is treated as a
+mere corollary of one-copy Born authority. A positive unbounded repair still
+needs a record-stack independence, stationarity, reset/preparation, or other
+framework-native theorem that supplies the registered two-copy quotient
+weights.
+
+## 2026-06-17 source-edge bridge: exact product-instance criterion
+
+The paired source bridge
+`STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md` proves the
+finite product-instance recognition theorem that the earlier wording lacked:
+on the `M_2(C)` effect surface, a same-marginal two-registration density matrix
+is forced to be `sigma tensor sigma` when its shifted-Pauli product-effect
+connected cumulants vanish. It also records the weaker registered quotient
+criterion `m(j,k)=p_j p_k` as the exact outcome-factorization premise consumed
+here, and checks a same-marginal correlated witness that fails the criterion.
+
+This bridge does not derive physical independence, iid repetition,
+record-stack stationarity, or an instrument law. It is a source-edge repair:
+the product-state witness and the weaker quotient premise are now executable
+finite criteria rather than vague prose imports. The physical
+outcome-factorization premise itself remains open outside this bounded row.
+
 ## Boundary
 
 This note proves K1-K4 only in the bounded setting above: retained one-copy
 Born authority plus the retained-bounded product-to-outcome weakening plus a
-supplied outcome-factorized two-registration quotient.
+supplied outcome-factorized two-registration quotient. The 2026-06-17 bridge
+supplies an exact product-instance criterion for the overstrong
+`sigma tensor sigma` witness and an exact quotient-cumulant criterion for the
+weaker premise; it does not supply the physical repeated-registration law.
 
 ## The Retained Surface
 
@@ -114,9 +148,11 @@ m(d,s) = p_d p_s, m(d,d) = p_d^2.
 
 If a full product state `sigma tensor sigma` is separately supplied, the Born
 trace-tensor identity gives the same four weights; that is a sufficient
-witness, not a load-bearing necessity. The runner verifies both the
-outcome-factorized algebra and the old product-state witness so the boundary
-is executable. **[check K2]**
+witness, not a load-bearing necessity. The 2026-06-17 product-instance bridge
+gives the finite product-effect criterion that forces that overstrong witness
+when its same-marginal cumulants vanish. The runner verifies the
+outcome-factorized algebra, the product-state witness, and the bridge link so
+the boundary is executable. **[check K2]**
 
 **K3 — the flow follows.** Agreement-conditioning the joint weights keeps the
 `(s,s)` and `(d,d)` cells and renormalizes:
@@ -149,8 +185,10 @@ and
 `UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md`.
 Everything else in this row's R-D algebraic reduction is derived from retained
 Born authority and the retained-bounded product-to-outcome weakening once that
-premise is supplied. The physical outcome-factorization premise itself remains
-open outside this bounded row. **[check K4]**
+premise is supplied. The product-instance criterion bridge makes the
+state-level sufficient witness checkable, but the physical
+outcome-factorization premise itself remains open outside this bounded row.
+**[check K4]**
 
 The runner also checks a correlated joint-state witness:
 `rho_corr = p_s P_s tensor P_s + p_d P_d tensor P_d`. It has the same one-copy
@@ -193,7 +231,9 @@ review; its G2 identification is reproven inline above),
 `FLAVOR_R_HALF_STABLE_UNDER_THERMALIZING_ARROW_2026-06-02.md`,
 `UNRAVELED_RECORD_TRAJECTORIES_SUPPLY_NONDEGENERATE_STEP_DISTRIBUTION_BOUNDED_THEOREM_NOTE_2026-06-10.md`,
 `UNRAVELED_STEP_LAW_BI_INVARIANT_QUASI_STATIONARITY_SPLIT_BOUNDED_THEOREM_NOTE_2026-06-10.md`,
-and `KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md`.
+`KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-11.md`,
+and
+`STATISTICS_OUTCOME_FACTORIZATION_NOT_FORCED_BY_BORN_MARGINALS_NARROW_NO_GO_NOTE_2026-06-18.md`.
 
 ## Dependencies
 
@@ -202,6 +242,10 @@ and `KOIDE_R_HALF_DURABILITY_STATIONARITY_CONDITIONAL_CHAIN_BOUNDED_THEOREM_NOTE
 - [`PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md`](PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md)
   — retained-bounded theorem proving that agreement-conditioned flow needs only
   outcome-level factorization, not state-level product form.
+- [`STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md`](STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md)
+  — exact finite criterion for recognizing the overstrong product-state
+  witness and the weaker quotient-cumulant premise; it does not derive the
+  physical repeated-registration law.
 - [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
 
 **No-promotion statement:** this note does not promote, demote, or set the

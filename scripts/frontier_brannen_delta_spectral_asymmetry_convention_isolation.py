@@ -12,8 +12,12 @@ Checks:
   D. The tested eta/Berry routes do not output bare 2/9 for these finite objects.
   E. (N^2-1)/(12N) and (N-1)/N^2 coincide at N=3 only.
 """
+from pathlib import Path
+
 import numpy as np
 import sympy as sp
+
+from lepton_brannen_boundary_checks_2026_06_13 import run_delta_boundary_checks
 
 PASSES = []
 def record(name, ok, detail=""):
@@ -65,14 +69,15 @@ section("C. The gap is EXACTLY one factor of pi (period-1-rad vs 2pi-rad convent
 # ----------------------------------------------------------------------
 alpha3 = (2/9)*np.pi               # finite Plancherel-step angle carrying 2/9
 eta_holonomy = 2*np.pi*(2/9)       # eta-holonomy argument exp(2pi i * 2/9)
-bare = 2/9                          # bare rational read as radians (the empirical value)
-record("Plancherel-step angle alpha_3 = (2/9)*pi = 0.698 rad (NOT the empirical 0.2222)", abs(alpha3 - 0.698132) < 1e-5,
+bare = 2/9                          # bare rational delta=2/9 read as radians (the FRAMEWORK value, not the empirical PDG angle)
+record("Plancherel-step angle alpha_3 = (2/9)*pi = 0.698 rad (NOT the bare 2/9 = 0.2222)", abs(alpha3 - 0.698132) < 1e-5,
        f"alpha_3 = {alpha3:.6f}")
-record("eta-holonomy angle 2pi*(2/9) = 1.396 rad (NOT the empirical 0.2222)", abs(eta_holonomy - 1.396263) < 1e-5,
+record("eta-holonomy angle 2pi*(2/9) = 1.396 rad (NOT the bare 2/9 = 0.2222)", abs(eta_holonomy - 1.396263) < 1e-5,
        f"2pi*(2/9) = {eta_holonomy:.6f}")
-record("the gap is EXACTLY one factor of pi: alpha_3 = pi * delta_empirical", abs(alpha3 - np.pi*bare) < 1e-12,
-       f"alpha_3/delta_bare = {alpha3/bare:.6f} = pi")
-record("=> reaching bare 0.2222 rad requires a period-normalization choice", True)
+# EXACT pi-factor comparison: alpha_3 vs the BARE framework rational 2/9 (NOT the empirical PDG angle, which differs at ~1e-4)
+record("the gap is EXACTLY one factor of pi: alpha_3 = pi * (bare 2/9)", abs(alpha3 - np.pi*bare) < 1e-12,
+       f"alpha_3/(bare 2/9) = {alpha3/bare:.6f} = pi")
+record("=> reaching bare 2/9 = 0.2222 rad requires a period-normalization choice", True)
 
 # ----------------------------------------------------------------------
 section("D. eta-as-phase FALSIFIED: delta is NOT the APS-eta holonomy")
@@ -121,6 +126,10 @@ record("they coincide ONLY at N=3 (both = 2/9); diverge at N=2,4,5",
        sp.solve(sp.Eq(fam1,fam2),Nn) and abs(float(fam1.subs(Nn,3))-2/9)<1e-12 and abs(float(fam2.subs(Nn,3))-2/9)<1e-12
        and abs(float(fam1.subs(Nn,5))-float(fam2.subs(Nn,5)))>1e-6,
        f"N=5: (N^2-1)/12N={float(fam1.subs(Nn,5)):.4f} vs (N-1)/N^2={float(fam2.subs(Nn,5)):.4f}")
+
+root = Path(__file__).resolve().parents[1]
+for ok in run_delta_boundary_checks(root, lambda n, c, d="": (record(n, c, d) or c), "downstream delta boundary"):
+    pass
 
 # ----------------------------------------------------------------------
 section("RESULT")

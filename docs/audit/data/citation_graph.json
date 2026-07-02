@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
         "koide_berry_monopole_bridge_reduction_note_2026-05-31",
         "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
         "observable_principle_record_scalar_map_no_go_note_2026-06-05",
         "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
-        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
+        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+        "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f37c6e05f23ec258579cf4367785f19c6da2eb615de562c5a258147f3f947c5a",
+      "note_hash": "f5f1c2b9b870ed8a756c2207a7621ecab3e8000fccd4d1efd90dcfac066c745c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

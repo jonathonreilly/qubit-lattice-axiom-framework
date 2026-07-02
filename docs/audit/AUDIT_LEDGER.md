@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 200 |
-| **retained_no_go** | 197 |
+| **retained_no_go** | 198 |
 | **retained_bounded** | 898 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1687 |
+| unaudited | 1686 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 26 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1304 |
+| `audited_clean` | 1305 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2013 |
+| `unaudited` | 2012 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 508 |
-| `medium` | 929 |
+| `high` | 509 |
+| `medium` | 928 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -107,14 +107,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---:|---|---|---|---:|---:|---|---|
 | 1 | `minimal_axioms` | meta | critical | 1701 | 159.73 | `unaudited` | meta |
 | 2 | `three_generation_observable_theorem_note` | positive_theorem | critical | 1027 | 67.01 | `audited_clean` | **retained** |
-| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1439 | 62.49 | `audited_clean` | **retained** |
+| 3 | `graph_first_su3_integration_note` | positive_theorem | critical | 1438 | 62.49 | `audited_clean` | **retained** |
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
-| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
+| 10 | `native_gauge_closure_note` | positive_theorem | critical | 1400 | 40.45 | `audited_clean` | **retained** |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_clean` | **retained_bounded** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
@@ -1089,6 +1089,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `record_iid_typicality_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -15585,6 +15586,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For the stated L=3/L=4/L=5 events, occupancies, seeds, depth choices, and fixed 300-permutation sampled-null protocol, the three-point min-gain ledger and sampled-null gap series have the displayed values.  _(class `C`)_
 - **chain closes:** True — The runner source constructs the finite sparse Fock systems, evolves them with expm_multiply, computes determinant phases, prefix statistics, sampled-null p95 values, min-gains, and medians, and its cached output matches the source note. The closure is only for the explicitly scoped finite diagnostic, not an exhaustive permutation null, asymptotic law, or physical U(1) gauge-field claim.
 - **rationale:** The load-bearing numbers are computed directly by the provided runner rather than imported from the cited authority or hard-coded as a print-only result. The one-hop authority is retained_bounded, which is retained-grade under the rubric, and the source note explicitly confines load-bearing content to the runner-defined finite objects. The negative conclusion is scoped to the displayed finite period series and does not overclaim an all-permutation null, asymptotic behavior, L>=6 behavior, or a physical gauge interpretation.
+- **auditor confidence:** high
+
+### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`
+
+- **Note:** [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Narrow no-go: the accepted minimal axioms alone do not unconditionally imply record formation; record-production or decoherence dynamics must be supplied separately.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T011405Z-5fe8aa74-record_formation_not_unc`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Record excludes record-production/decoherence dynamics and the baseline fixes neither dynamics nor state, so H=0, decoupled dynamics, and stationary eigenstates are baseline-consistent no-record witnesses.  _(class `A`)_
+- **chain closes:** True — The registered minimal axiom authority explicitly leaves record-production/decoherence dynamics, occurrence rules, state choice, and time evolution outside the axiom content. The stated counterexamples are consistent witness extensions, so unconditional forcing from the axioms alone is defeated.
+- **rationale:** The no-go is narrowly scoped and follows as a logical closure over the accepted minimal-axiom premise rather than from an imported dynamics theorem. The current minimal axiom note even strengthens the boundary by saying a site need not carry a record and that record-production dynamics and occurrence rules remain outside the axioms. The runner's finite-dimensional toy checks support the witness logic and do not import an external comparator or tuned value. No-Go Discipline N1-N8 is satisfied at this narrow scope: alternative routes are named, the single wall is not inflated, generic decoherence is separated from unconditional forcing, and the conditional closure path is explicit.
 - **auditor confidence:** high
 
 ### `record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05`

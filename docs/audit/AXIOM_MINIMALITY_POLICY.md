@@ -83,12 +83,17 @@ Recorded explicitly approved axiom updates:
   coincide). First, the Record axiom's readability clause gains one sentence
   closing the readout-function gap in place: "A readout value is determined
   by record content alone." (owner wording; additivity unchanged). Second,
-  the Qubit axiom gains one individuation sentence generalizing the
-  equivalent-presentation quotient beyond the named Cl(3,0) pair: "A
-  possibility is distinguished by its algebraic relations alone." (owner-form
-  wording; no presentation, basis, or frame distinguishes, since none is a
-  relation, and presentation-equivalent descriptions describe the same
-  possibility). Third, one totality sentence
+  the Qubit axiom gains one no-privilege sentence generalizing the
+  equivalent-presentation quotient beyond the named Cl(3,0) pair: "No
+  possibility is privileged." (owner-selected wording, deliberately parallel
+  to relativity's no-privileged-frame usage: the domain as given favors no
+  possibility, basis, axis, or frame — in M_2(C) every basis and axis is
+  given by projectors, which are possibilities, so the sentence covers them
+  all; privilege means favored by the domain itself, so registered or
+  admitted references are chosen through the Qualification channels, not
+  privileged, exactly as selecting a lab frame never contradicts
+  no-privileged-frame; every distinction beyond the algebra's own relations
+  must be supplied). Third, one totality sentence
   is added to the Qualification section: "A rule offered as a law must be
   well-defined at every state admissible under Admissibility throughout its
   declared domain; the domain must be declared as registered structure, not
@@ -106,7 +111,7 @@ Recorded explicitly approved axiom updates:
   entailed by the Record sentence, the Qubit presentation clause, and the
   Qualification supply paragraph — no readout-supply clause needed — with
   the single ambiguity being the Cl(3,0)-pair scoping of "adds no further
-  primitive structure," closed by the Qubit individuation sentence above).
+  primitive structure," closed by the Qubit no-privilege sentence above).
   Reading notes: supplied
   structure is pinned by the Qualification's first paragraph (the four
   axioms, approved primitives, explicit admissions, approved registrations),
@@ -125,7 +130,7 @@ Recorded explicitly approved axiom updates:
   presentations; conditional rules and pointwise evaluation under the
   realized-state primitive remain admissible. Panel-derived reading notes on
   content individuation: record content is the locked available possibility
-  as framework-individuated (structurally, per the Qubit individuation
+  as framework-individuated (structurally, per the Qubit no-privilege
   sentence) — under it, readable quantities are exactly the invariants of
   supplied-plus-registered structure, and registering structure monotonically
   enlarges the readable class (scheme-relativity without per-readout

@@ -20,3 +20,5 @@
 
 Disposition: **pass** (worker's honest narrowing is the headline of this
 review).
+
+## block12 — supervisor review: closed form r*_w = 2^{-e_w/(2^k-1)} hand-checked (k=2 reproduces 2^{-1/3}, 2^{-2/3}); exponent bijection = binary numerals; boundary e_w <= 2^k - 1 ⇒ r* >= 1/2; two-sided T4 (deflation + exact boundary) honest. Runner 460/0 re-run. Disposition: pass.

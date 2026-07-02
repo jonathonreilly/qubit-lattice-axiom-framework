@@ -12,3 +12,5 @@ claim_type_reason: "exact self-contained algebra on the circulant surface and th
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
+
+# Certificate — block12: bounded_theorem; frontier map; deflation + boundary exact; word-supplier residual named; audit_required_before_effective_retained: true; bare_retained_allowed: false.

@@ -24,3 +24,14 @@ admitted composition classes. Whether mixed-composition dial points bear any
 relation to empirically generic sector moduli is NOT a question for this lane
 (no empirical-comparator authority here); it belongs to an import-governed
 lane and is an owner routing decision.
+
+# Trace gate — block12 (composition-word dial sets)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "dial sets densify in [1/2,1]; nothing reachable below 1/2; sharpened residual = the word-supplier question (what bounds/supplies the composition word — finite registration steps named as candidate shape only). Recontextualizes block07's owner-flagged lead."
+```

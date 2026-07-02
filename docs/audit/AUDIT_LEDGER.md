@@ -23,10 +23,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 900 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1680 |
+| unaudited | 1679 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
-| ~~audited_renaming~~ | 27 |
+| ~~audited_renaming~~ | 28 |
 | ~~audited_conditional~~ | 36 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
@@ -70,8 +70,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
-| `audited_renaming` | 27 |
-| `unaudited` | 2006 |
+| `audited_renaming` | 28 |
+| `unaudited` | 2005 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 508 |
-| `medium` | 929 |
+| `high` | 509 |
+| `medium` | 928 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -128,7 +128,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
 | 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
-| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
+| 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 391 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
 
 
@@ -1593,6 +1593,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_3d_inverse_square_kernel_helper_note_2026-04-04` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `newton_derivation_top4_bridge_note` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
+| `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `pmns_tm2_column_site_basis_kcpt_predicate_bounded_theorem_note_2026-06-07` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | F | - |
 | `post_record_conditional_audit_evidence_ladder_2026-06-06` | meta | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
 | `post_record_flow_thermal_stable_setting_certificate_2026-06-06` | bounded_theorem | ~~audited_renaming~~ | ~~audited_renaming~~ | cross_family | codex-gpt-5.5 | E | - |
@@ -13541,6 +13542,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** Substituting Y_uR=a+1, Y_dR=a-1, Y_eR=b-1, and Y_nuR=b+1 into the anomaly equations gives direct color/gravity cancellation and a cubic anomaly equal to -6(n_color*a+b), which vanishes under b=-n_color*a.  _(class `A`)_
 - **chain closes:** True — The cited LH-trace authority is retained-grade at the bounded tier and supplies the trace relation and convention used here. Within the declared scope, the right-handed values are fixed by the stated SHIFT hypotheses and the anomaly cancellations follow by exact substitution.
 - **rationale:** The load-bearing work is exact algebra over explicitly stated bounded hypotheses, not an external comparator or tuned numerical match. The runner source performs symbolic Sympy simplification of the stated anomaly expressions and instance checks; it does not merely print pass counts or import hidden numerical data. The branch choice, b=-1 convention, chirality assignment, and n_color=3 selection are not derived, but the note correctly excludes those from the audited claim scope.
+- **auditor confidence:** high
+
+### `one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13`
+
+- **Note:** [`ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md`](../../docs/ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only the one-hop helper-wrapper registry naming the five helper modules consumed by scripts/frontier_one_parameter_reduced_shell_law.py and the citation firewall around that registry use.
+- **audit_status:** ~~audited_renaming~~
+- **effective_status:** ~~audited_renaming~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T014734Z-71a77cff-one_parameter_reduced_sh`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The load-bearing move is the creation of a citeable umbrella handle for five helper modules.  _(class `E`)_
+- **chain closes:** True — The registry claim closes: the primary runner imports the five named helper modules and the boundary checks verify the wrapper/firewall language and qualified direct citations. This does not derive any helper module or the parent shell-law; it only establishes the registry handle the note actually claims.
+- **rationale:** The source note's load-bearing act is definitional infrastructure: it creates and firewalls a citeable umbrella handle for existing helper modules. The runner does perform substantive finite-lattice shell-law checks, but those checks belong to the helper/parent shell-law surface rather than turning this wrapper into a derivation. Since the audited claim reduces to a registry definition rather than a new theorem, the correct verdict is audited_renaming.
 - **auditor confidence:** high
 
 ### `ordered_lattice_packet_reidentification_note`

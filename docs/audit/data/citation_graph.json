@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_vertex_power_derivation"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
         "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
         "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
         "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
         "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
         "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
         "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
-        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
+        "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
+        "yt_vertex_power_derivation"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f3a083c09363867f1e12a46a823c229b5d79e17be4aa436b014e3167cf741346",
+      "note_hash": "009b21cd1046f7fa9a9a4d3dd7ab14653dc9da57767361c4d5c8b81074dcbda1",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

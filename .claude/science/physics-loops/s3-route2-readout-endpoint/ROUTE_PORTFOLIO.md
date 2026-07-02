@@ -1,31 +1,18 @@
 # Route Portfolio
 
-## R1: E-center source primitive
+## Chosen route: current source-bank no-go
 
-Try to derive `gamma_E(center)/gamma_E(shell) = 15/8` directly from a typed
-E-channel source/readout primitive. Highest value, but current notes record no
-available theorem row.
+Attempt the typed E-center source primitive using the named current bank:
+`delta_A1`, `K_R`, T-side candidates, `F_adj`, `kappa`, positivity/sign, and
+measured calibration as comparator context only.
 
-## R2: R_conn or F_adj typed center bridge
+Result to verify: the current bank is identical for `P(0)` and `P(21/4)`,
+while their E-center witness values differ. If true, the route prunes
+current-bank recombination attempts and names the missing bridge.
 
-Try to derive `gamma_T(center)/gamma_E(center) = -8/9` from a typed bridge
-between the SU(3) adjoint/Fierz surface and Route-2 endpoint readout. Current
-state: exact conditional arithmetic only; the typed source-domain bridge is
-missing.
+## Remaining positive routes
 
-## R3: O_h covariance / kappa-squared
-
-Try to force `q_E/q_T = 9/4 = kappa^2` from shell leverage. Current state:
-quadratic invariant and equivariance routes are already closed as no-go in the
-existing notes.
-
-## R4: Direct S3-time consumer witness criterion
-
-Chosen for block 01. Prove exactly what the downstream `Xi_P(t; c)` family can
-see. This does not derive `rho_E`; it prunes blind downstream consumers and
-states the exact E-center witness a future positive route must supply.
-
-## R5: Alternate up-sector scalar route
-
-Leave Route-2 and seek a different up-sector scalar law. This is a later
-campaign pivot if the direct E-center/source-domain routes stay blocked.
+- Derive `q_E=15/8` from a new E-center source/readout theorem.
+- Derive the typed bridge `F_adj -> c_TE=-F_adj`.
+- Derive the typed covariance `q_E/q_T=kappa^2`.
+- Leave Route-2 and attempt an alternate up-sector scalar law.

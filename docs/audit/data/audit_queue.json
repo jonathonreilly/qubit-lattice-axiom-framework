@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 281,
     "leaf": 584,
-    "medium": 468
+    "medium": 467
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17744,30 +17744,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.459,
-      "note_path": "docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
-      "transitive_descendants": 21
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17939,15 +17915,15 @@
         "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26"
       ],
-      "direct_in_degree": 3,
+      "direct_in_degree": 4,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
+      "load_bearing_score": 6.248,
       "note_path": "docs/SIGNED_GRAVITY_PRODUCT_GRADING_ETA_SECTOR_SELECTION_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
-      "transitive_descendants": 3
+      "transitive_descendants": 18
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49119,6 +49095,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 90,
-  "total_pending": 1634
+  "ready_count": 89,
+  "total_pending": 1633
 }

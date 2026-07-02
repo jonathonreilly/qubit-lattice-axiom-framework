@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 924 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1632 |
+| unaudited | 1631 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1347 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1958 |
+| `unaudited` | 1957 |
 
 | claim_type | count |
 |---|---:|
@@ -1510,6 +1510,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_persistent_record_production_bridge_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -14053,6 +14054,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The row's load-bearing move is a logical/algebraic composition of retained-grade inputs: instantiate retained-bounded FSB-K on the kernel certified by the retained Z row, exclude K0 by the retained Z-K0 geometry plus the stated finite-g_eff criterion, then read off the selected kernel's computed flux. The runner contains genuine framework computations, but for this composer row they corroborate and re-check the retained inputs rather than making the primary derivation a new first-principles computation. The bounded clean verdict is appropriate because all load-bearing authorities are retained-grade or accepted premise nodes and the conclusion is explicitly limited to within-surface selection.
 - **rationale:** The row's load-bearing move is a logical/algebraic composition of retained-grade inputs: instantiate retained-bounded FSB-K on the kernel certified by the retained Z row, exclude K0 by the retained Z-K0 geometry plus the stated finite-g_eff criterion, then read off the selected kernel's computed flux. The runner contains genuine framework computations, but for this composer row they corroborate and re-check the retained inputs rather than making the primary derivation a new first-principles computation. The bounded clean verdict is appropriate because all load-bearing authorities are retained-grade or accepted premise nodes and the conclusion is explicitly limited to within-surface selection.
 - **auditor confidence:** judicial
+
+### `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18`
+
+- **Note:** [`P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md`](../../docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded underdetermination of the NCG finite algebra, KO-dim-6 real structure, and order-one condition on the accepted one-site M_2(C)/Cl(3) finite Pauli baseline; no SM LH/RH derivation or primitive approval is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T043529Z-d9c21840-p_lh_ncg_primitive_under`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Lattice + Quantum + Record do not determine the NCG finite algebra, order-one condition, or KO-dim-6 real structure used by the P-LH route.  _(class `A`)_
+- **chain closes:** False — The Pauli-block algebra substantively witnesses the three named NCG choices are not selected by the minimal baseline. As a clean bounded negative row, however, the packet lacks a policy-compliant N1 alternative-route enumeration: it lists only three tested route classes and expressly leaves other SM LH/RH routes untested.
+- **rationale:** The finite Pauli computations support the local underdetermination witnesses: Cl+(3) is insensitive to the rho sign, two J choices with different chirality signs exist, and order-one behavior depends on extra D/opposite-action data. The minimal axiom premise is accepted and supplies only the one-site M_2(C)/Cl(3) possibility algebra, not the NCG packet. But current no-go discipline applies to this bounded wall-bearing negative claim, and N1 requires at least five distinct attack routes; the source gate gives only three and states it does not test every possible SM LH/RH route. That prevents audited_clean for the claim as framed.
+- **auditor confidence:** high
 
 ### `packet_memory_note`
 

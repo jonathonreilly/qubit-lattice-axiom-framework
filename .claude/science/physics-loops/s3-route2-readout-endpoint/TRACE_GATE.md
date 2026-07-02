@@ -1,14 +1,14 @@
 # Trace Gate
 
 ```yaml
-trace_class: upstream_support
+trace_class: negative_route_pruning
 target_claim_id: s3_time_theta_to_slice_coupling_note
-target_blocker_text: "magnitude/typecast edge from color-domain F_adj to Route-2 c_TE"
+target_blocker_text: "independent typed source-domain theorem for |c_TE| = F_adj"
 source_of_blocker_text: frontier_question
-reachability_to_target: supports
-artifact_role: theorem
-next_trace_action: "Attack |c_TE| = F_adj or a direct typed readout landing edge."
+reachability_to_target: prunes
+artifact_role: no_go
+next_trace_action: "Do not treat |c_TE| = F_adj as weaker than E-center selection unless a typed source theorem supplies it."
 ```
 
-If true, this artifact supports the source-domain route by removing sign as
-the live blocker under positivity. Magnitude/typecast remains open.
+If true, this artifact prunes magnitude-only repairs. It keeps the typed
+magnitude theorem open as the next positive route.

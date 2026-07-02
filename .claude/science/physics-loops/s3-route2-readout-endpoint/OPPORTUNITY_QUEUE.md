@@ -1,18 +1,18 @@
 # Opportunity Queue
 
-1. **Magnitude/typecast theorem**
-   - Target: prove `|c_TE| = F_adj` or the equivalent typed landing edge.
-   - Why next: block23 removes the sign ambiguity; this is the remaining
-     source-domain edge.
+1. **Typed magnitude theorem**
+   - Target: source `|c_TE| = F_adj` as a Route-2 readout statement.
+   - Why next: block24 shows this is exactly the remaining source-domain
+     theorem, not a weaker scalar condition.
 
-2. **Direct Route-2 magnitude no-go**
-   - Target: show that current source-bank objects cannot supply the
-     `|c_TE| = F_adj` equality without a new typed readout map.
-   - Why next: useful if the positive theorem still fails.
+2. **Physical readout/weighting route**
+   - Target: test whether the physical connected-trace selector can supply the
+     typed magnitude statement without endpoint matching.
+   - Why next: possible source for the typecast, but separate from color count.
 
-3. **Physical selector route**
-   - Target: test whether a physical connected-trace selector can be typed
-     into the Route-2 center ratio.
-   - Why next: could supply magnitude but must avoid shortcutting the typecast.
+3. **Alternate E-channel source functional**
+   - Target: compute `q_E` from E-channel support/source geometry without
+     `R_conn`.
+   - Why next: bypasses the color magnitude route.
 
-Recommended next `/goal`: **magnitude/typecast theorem**.
+Recommended next `/goal`: **typed magnitude theorem**.

@@ -1,25 +1,25 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The block proves sign support only; it does not supply magnitude/typecast."
+proposal_allowed_reason: "The block proves magnitude equivalence and does not supply the typed source theorem."
 independent_review_required_before_authority_change: true
 bare_authority_status_allowed: false
 ```
 
 ## Boundary
 
-Block23 proves:
+Block24 proves:
 
-- positivity gives `q_E > 0`;
-- granted T-side values give `q_T > 0` and `s_TE < 0`;
-- therefore `c_TE < 0` throughout the positive-lift family.
+```text
+rho_E = 10 / |c_TE| - 6
+```
 
-It does not prove `|c_TE| = F_adj`, does not typecast color-domain magnitude
-into Route-2 readout, and does not select `rho_E`.
+inside the positive-lift family. Therefore `|c_TE| = F_adj` is a readout
+selection unless independently typed. The packet does not supply that typing.

@@ -2,8 +2,8 @@
 
 **Date:** 2026-07-02
 **Claim type:** bounded_theorem
-**Audit status:** set only by the independent audit lane. This source note
-does not set, predict, or apply an audit verdict.
+**Status authority:** independent audit lane only. This source note does not set,
+predict, or apply an audit verdict.
 **Primary runner:**
 [`scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py`](../scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py)
 
@@ -253,5 +253,5 @@ python3 scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07
 Expected:
 
 ```text
-TOTAL: PASS=72 FAIL=0
+TOTAL: PASS=74 FAIL=0
 ```

@@ -463,7 +463,7 @@ def section_G() -> None:
         "scale-reference primitive note": SCALE_REF,
     }
     for label, path in paths.items():
-        check(f"{label} exists", path.exists(), str(path))
+        check(f"{label} exists", path.exists(), str(path.relative_to(ROOT)))
 
     note_flat = flat(NOTE.read_text(encoding="utf-8"))
     note_text = NOTE.read_text(encoding="utf-8")
@@ -473,7 +473,9 @@ def section_G() -> None:
     semigroup_flat = flat(SEMIGROUP.read_text(encoding="utf-8"))
     scale_flat = flat(SCALE_REF.read_text(encoding="utf-8"))
 
-    require_contains("note", note_flat, "set only by the independent audit lane")
+    require_contains("note", note_flat, "**Status authority:** independent audit lane only")
+    require_absent("note", note_text, "**Audit status:**")
+    require_contains("note", note_flat, "does not set, predict, or apply an audit verdict")
     require_contains("note", note_flat, "does not derive `tau = 1/2`")
     require_contains("note", note_flat, "per-record-step")
     require_contains("note", note_flat, "rate-blind")

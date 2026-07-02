@@ -1,214 +1,233 @@
 # Record Count Bounds the Composition Word: a Finite, Exactly Enumerable Dial Set
 
 **Date:** 2026-07-02
-**Type:** bounded theorem (premise-named bound + exact finite enumeration)
+**Type:** bounded theorem (named-premise-family bound + exact finite enumeration)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only. This note does not set,
-predict, or estimate any audit verdict, and it edits no audit-lane-owned
-registry or audit data file.
+predict, or estimate any audit verdict, and it edits no audit-lane-owned registry
+or audit data file.
 **Actual current surface status:** open. No wall is closed and nothing is
-adjudicated. The moduli / word-supplier lane stays live, now carrying one
-named, un-adopted premise instead of an open densification.
+adjudicated. The moduli / word-supplier lane stays live, now carrying a named,
+un-adopted premise family instead of an open densification.
 **Primary runner:** `scripts/frontier_record_count_bounds_composition_words_2026_07_02.py`
 **Runner output:** `outputs/frontier_record_count_bounds_composition_words_2026_07_02.txt`
 
 ## FIREWALL
 
-- The registration premise **REG>=1** is NAMED. It is **not derived** and it is
-  **not adopted**. It is dynamics-shaped: the landed axiom memo states the
-  axioms do not "provide a record-production process", so no flow step's
-  production of a record is supplied by the axioms. REG>=1 is grounded only in
-  landed monotonicity and counting text (below); it is not promoted to an axiom
-  or to an admission here.
-- No selector is proposed. No empirical modulus is imported. No value of `r` is
-  fixed by this note.
-- The block07 selector-constraint map, the block12 moduli-word results
-  (including the boundary fact), the block20 action-lane premise `C-add`, and
-  the banked Dynamics-axiom proposal (PR #4843) are all **review-pending** and
-  are cited as context only. This note reads no branch.
-- Residues are conserved and enumerated in full (see T5): REG>=1 (a
-  dynamics-family premise), the realized record history (content), and the
-  sibling review-pending audits. Nothing is adjudicated; **no wall** is closed.
+- The bound rests on a **premise family** -- **P1** (letter = event, pure words),
+  **P2** (production), **P3** (persistence), **P4** (collection scoping) --
+  together with **CHART-MIX** (per-step dictionary supply for mixed words). Every
+  one is **NAMED**, **not derived**, and **not adopted**; none is promoted to an
+  axiom or admission here.
+- P2 and P3 are dynamics-shaped: the memo disclaims any "record-production
+  process" and lists "physical persistence dynamics" among the gates outside the
+  axioms. P4 is a scoping premise: the axiom set **does not bound** a
+  configuration's record total. CHART-MIX is inherited from review-pending
+  block12's word class, where the occupancy note's open dictionary binary enters.
+- No selector is proposed, no empirical modulus imported, no `r` fixed. block07
+  (selector-constraint map), block12 (moduli words / boundary `1/2` /
+  word class), block20 (action-lane `C-add`), and the banked Dynamics-axiom
+  proposal (PR #4843) are all **review-pending**, context only. This note reads no
+  branch; the "`C-add` is the **same family**" reading is **supervisor-supplied**
+  cross-block context. Residues are conserved and enumerated in full (T5');
+  nothing is adjudicated; **no wall** is closed.
 
 ## Purpose
 
-Block12 (review-pending) showed that with the composition word unbounded, the
-positive fixed points densify and selection loses discriminating power inside
-`[1/2, 1]`. This note isolates the structure that removes the densification: a
-bound on word length. It names one dynamics-shaped premise, REG>=1, grounds it
-in landed text without deriving it, shows it makes the record count bound the
-word length, and enumerates the resulting dial set exactly at fixed record
-count. The word-supplier residual is not resolved; it is sharpened into an
-owner-facing governance question and mapped.
+Under ANY single supplied dictionary the composition-word dial set is exactly
+`{1/2}` (component chart) or `{1}` (slot chart) for **all** word lengths:
+`f^m(r) = 2^(2^m - 1) r^(2^m)` has unique positive fixed point `1/2`, and
+`g^m(r) = r^(2^m)` has unique positive fixed point `1`. **No densification ever
+arises physically** -- densification needs mixed words, and a mixed word is not
+an iterate of any single supplied flow. This is the block's sharpest statement.
 
-## The Supplied Surface
+Block12 (review-pending) showed that with the word unbounded and the dictionary
+allowed to change per step, positive fixed points densify inside `[1/2, 1]`. This
+note names the premise family that removes it, grounds each premise in landed text
+without deriving it, bounds the word length by the record count, and enumerates
+the length-`<=2` dial set completely and exactly.
 
-Landed axiom text (`docs/MINIMAL_AXIOMS_2026-06-29.md`), quoted:
+## The Supplied Surface -- landed-text guards `[checks 1-7]`
 
-> A state is a configuration of records.
-
-> When present, a record locks exactly one local possibility from the subset
-> available at that site under Admissibility; the locked possibility is
-> invariant under repeated readout.
+Landed axiom text (`docs/MINIMAL_AXIOMS_2026-06-29.md`): "A state is a
+configuration of records", and the additivity conditional --
 
 > For any finite collection of pairwise-disjoint records, scalar readout `I` is
 > additive, with `I(empty)=0`.
 
-> [Admissibility] does not choose a Hamiltonian or transfer operator, supply
-> transition probabilities or weights, select a scalar or nonzero kinetic
-> branch, assert a Dirac-square carrier, define a time metric, or provide a
-> record-production process.
+Landed occupancy note: the flow is "the agreement-conditioned double-registration
+update squares registered weights and renormalizes", with charts `x = 2r` giving
+`r -> 2r^2` and `x = r` giving `r -> r^2`. Write `f(r) = 2r^2` (component),
+`g(r) = r^2` (slot). The note is explicit that `f`, `g` are two CHARTS of one
+binary -- its tri-guise theorem: the descriptions "form the same binary, not
+three independent binaries". The word class is block12's formal set of finite
+compositions of `f` and `g`.
 
-Landed occupancy note
-(`docs/OCCUPANCY_ATOM_..._BOUNDED_NOTE_2026-06-12.md`), quoted:
+## The premise family (all named; none derived; none adopted)
 
-> The agreement-conditioned double-registration update squares registered
-> weights and renormalizes ...
+**P1 -- letter = event (pure words); CHART-MIX for mixed words `[checks 8-9]`.**
+Each letter of a realized SINGLE-CHART word is one agreement-conditioned
+double-registration event of the occupancy flow read in that chart -- its own
+flow definition restricted to ONE supplied dictionary: under the component chart
+every step is `f` (word `f^m`), under slot every step is `g` (`g^m`). Since `f`,
+`g` are two charts of the *same binary*, a MIXED word is **not** an iterate of any
+single flow -- `f.f = 8r^4`, `g.g = r^4`, while `f.g = 2r^4`, `g.f = 4r^4` match
+neither -- so it needs **CHART-MIX** (per-step dictionary supply), inherited from
+review-pending block12's word class, where the occupancy note's open dictionary
+binary enters, carried as an existing campaign surface, not created here.
 
-with the two dictionary charts `x = 2r` giving `r -> 2r^2` and `x = r` giving
-`r -> r^2`. Write `f(r) = 2r^2` and `g(r) = r^2`. The word class is the set of
-finite compositions of `f` and `g` (block12).
+**P2 -- production `[check 10]`.** Each event registers at least one new record.
+Dynamics-shaped; the memo disclaims it:
 
-Review-pending block12 supplied verbatim (context only):
+> [Admissibility] ... does not ... provide a record-production process.
 
-> [every] target in `[1/2, 1]` [is reachable] by choosing an appropriate binary
-> word. Therefore fixed-point selection has no discriminating power inside
-> `[1/2, 1]` unless the composition word itself is supplied or bounded. ... Every
-> positive fixed point of every word in this class satisfies `r*_w >= 1/2`.
+Independent content: a history can advance event by event while registering
+nothing, so production is not supplied by the letters alone. Named, not adopted.
 
-## T1 -- the registration premise REG>=1: named and grounded, not derived `[checks 1-7]`
+**P3 -- persistence `[check 11]`.** Records persist across events. Dynamics-shaped;
+the memo's Open Gates list it outside the axioms:
 
-Each application of `f` or `g` is one agreement-conditioned double-REGISTRATION
-step of the occupancy note's flow -- the step whose "double-registration update
-squares registered weights and renormalizes". **REG>=1** is the premise that
-every such flow step registers at least one new record.
+> arrow, record-production dynamics, physical persistence dynamics, time metric,
+> and local observability of records ...
 
-Grounding from landed text, without derivation: records, once present, are fixed
--- "the locked possibility is invariant under repeated readout", so registration
-is monotone and nothing un-registers; and "A state is a configuration of
-records" supplies the counted objects. What is **not** supplied is that a flow
-step *produces* a record: the axiom memo's dynamics section disclaims any
-"record-production process". REG>=1 therefore names a dynamics-shaped premise; it
-is not adopted here.
+Correction (a prior draft's category error, rejected by the refutation pass): the
+Record sentence "the locked possibility is invariant under repeated readout"
+grounds only WITHIN-readout stability of an already-present record; it is **not**
+persistence across events, which is its own premise. Independent content: a
+produce-then-vanish history registers records that later vanish, and the count
+then ceases to bound the event total. Named, not adopted.
 
-REG>=1 has independent content: a toy monotone registration sequence in which
-each step adds `>= 1` record satisfies it, while a degenerate step that adds none
-keeps the record count non-decreasing (monotone) yet fails REG>=1. Monotonicity
-alone does not give REG>=1 `[checks 6-7]`.
+**P4 -- collection scoping / FIN `[check 12]`.** A supplied finite readout
+collection contains the realized history's registered records, and `N_rec` is
+that collection's count. Plainly: the axiom set **does not bound** a
+configuration's record total -- an all-sites-recorded configuration on `Z^3`
+satisfies every quoted sentence, since "For any finite collection ..." is a
+conditional, not a bound. Finiteness enters only through the supplied collection;
+`N_rec` is configuration data relative to it. No unit-weight readout gloss is used.
 
-## T2 -- under REG>=1 the record count bounds the word: k <= N_rec `[checks 8-10]`
+## T2' -- under P1(pure) + P2 + P3 + P4: k <= N_rec `[checks 13-17]`
 
-By monotone induction, after `k` registration steps at least `k` records exist.
-The realized configuration has a finite record count `N_rec` -- finite by the
-Record additivity sentence, whose scope is any finite collection of
-pairwise-disjoint records on a readout collection. Hence `k <= N_rec`.
+By monotone induction on a pure single-chart word: P2 gives `>= 1` new record per
+event, P3 keeps every registered record, and P4 places them in the supplied
+counted collection, so after `k` events `N_rec >= k`. Exact and tight: a unit,
+persistent, contained history achieves `k = N_rec` `[checks 13-14]`. `N_rec` is
+content relative to the supplied collection (motion-closed; no anchor). Each
+premise is load-bearing, with a per-premise violation witness `[checks 15-17]`:
 
-The bound is content-carried: `N_rec` is a record-content quantity (the count is
-the additive scalar readout with unit weights, expressible from the landed
-additivity sentence), so it is motion-closed and needs no anchor. The runner
-exhibits the induction witness, a tight sequence achieving `k = N_rec`, and a
-witness with `k > N_rec` that forces a REG>=1 violation -- so the bound is
-violated only by violating REG>=1 `[checks 8-10]`.
+- drop **P2** -> unbounded words with no new records: `k` advances while the
+  record count stays fixed, so `k > N_rec`;
+- drop **P3** -> records vanish and the count ceases to bound `k`;
+- drop **P4** containment -> registrations land outside the counted collection,
+  so `N_rec < k`.
 
-## T3 -- bounded words give a finite, exactly enumerable dial set `[checks 11-21]`
+## T3' -- the length-`<=2` dial set is finite, exact, and COMPLETE `[checks 18-28]`
 
-For word length `<= k` over `{f, g}` the number of words is exactly
-`2^(k+1) - 2` (`k = 1..4`: `2, 6, 14, 30`) `[check 11]`. Each word `w` of length
-`m` has fixed-point polynomial `p_w(r) = w(r) - r` of degree `2^m`, so for
-bounded `k` the dial set is contained in the roots of finitely many polynomials
-and is finite, with cardinality at most the sum of degrees (an exact integer;
-`20` for `k <= 2`) `[check 12]`.
+For length `<= k` over `{f, g}` the word count is exactly `2^(k+1) - 2`
+(`k = 1..4`: `2, 6, 14, 30`) `[check 18]`. A length-`m` word has fixed-point
+polynomial `p_w(r) = w(r) - r` of degree `2^m`, so the dial set is a finite set of
+roots, cardinality bounded by the sum of degrees (`20` for `k <= 2`) `[check 19]`.
+Exact enumeration at the polynomial level (no numerics):
 
-Exact small-word enumeration at the polynomial level (no numerics, no floats):
+- `f`: `2r^2 - r = r(2r-1)` -- fixed point `1/2` `[check 20]`.
+- `g`: `r^2 - r = r(r-1)` -- fixed point `1` `[check 21]`.
+- `f.g`: `2r^4 - r = r(2r^3-1)` -- root of `2r^3-1` `= 2^(-1/3)`; MIXED,
+  conditional on CHART-MIX `[check 22]`.
+- `g.f`: `4r^4 - r = r(4r^3-1)` -- root of `4r^3-1` `= 2^(-2/3)`; MIXED,
+  conditional on CHART-MIX `[check 23]`.
+- `f.f`: `8r^4 - r = r(2r-1)(4r^2+2r+1)`; cofactor discriminant `4-16 = -12 < 0`,
+  positive leading coeff, positive-definite -- adds **no** new positive root, only
+  `1/2` `[check 24]`.
+- `g.g`: `r^4 - r = r(r-1)(r^2+r+1)`; cofactor discriminant `1-4 = -3 < 0`,
+  positive-definite -- adds only `1` `[check 25]`.
 
-- `f`: `2r^2 - r = r(2r - 1)` -- positive fixed point `r = 1/2` `[checks 13-14]`.
-- `g`: `r^2 - r = r(r - 1)` -- positive fixed point `r = 1` `[checks 15-16]`.
-- `f.g` (`= f(g(r))`): `f(g(r)) - r = 2r^4 - r = r(2r^3 - 1)` -- the positive
-  fixed point is the root of `2r^3 - 1`, i.e. the campaign's `2^(-1/3)` dial
-  point, stated as an exact polynomial identity and never evaluated numerically
-  `[check 17]`.
-- `g.f` (`= g(f(r))`): `g(f(r)) - r = 4r^4 - r = r(4r^3 - 1)` -- root of
-  `4r^3 - 1`, i.e. `2^(-2/3)` `[check 18]`.
+Since `f.f`, `g.g` add nothing, the length-`<=2` dial set is **complete**:
+`{1/2, 1}` unconditionally (pure words) plus `{2^(-1/3), 2^(-2/3)}` conditional on
+CHART-MIX (mixed words). The four points are pairwise distinct:
+`gcd(2r^3-1, 4r^3-1)` is a nonzero constant (coprime cubics) and `1/2, 1` are
+roots of neither `[check 26]`.
 
-Distinctness of the four length-`<=2` dial points, by exact polynomial algebra:
-`gcd(2r^3 - 1, 4r^3 - 1)` is a nonzero constant (the Euclidean remainder is a
-nonzero constant), so the two cubics are coprime and share no root; equivalently
-a common root would need `r^3 = 1/2` and `r^3 = 1/4` at once, which is impossible
-`[check 19]`. And `r = 1/2` and `r = 1` are not roots of either cubic by exact
-evaluation, and `1/2 != 1`, so all four dial points are pairwise distinct
-`[check 20]`.
+The boundary `>= 1/2` (block12, review-pending) is fixed via strict monotonicity,
+not the earlier invalid "negative at `1/2` + positive leading coeff => root
+exceeds `1/2`" cubic inference: `a r^3 - 1` strictly increases on `r > 0` because
+`a(r2^3 - r1^3) = a(r2 - r1)(r2^2 + r2 r1 + r1^2) > 0` for `0 < r1 < r2`
+`[check 27]`. With `(2r^3-1)@(1/2) = -3/4` and `(4r^3-1)@(1/2) = -1/2` both `< 0`,
+each unique positive root exceeds `1/2`; and `1/2, 1 >= 1/2` `[check 28]`.
 
-Block12's boundary fact (every positive fixed point `>= 1/2`) is cited
-review-pending and spot-checked on the enumerated points: `1/2` and `1` are
-`>= 1/2` exactly; for the cubic roots, `2*(1/2)^3 - 1 = -3/4 < 0` and
-`4*(1/2)^3 - 1 = -1/2 < 0` with positive leading coefficients, so each real root
-exceeds `1/2` by exact sign arithmetic `[check 21]`.
+## Pure-word corollary -- the headline `[checks 29-31]`
 
-Consequence: with `k` bounded by `N_rec`, the dial set is finite and discrete.
-Fixed-point selection **regains** discriminating power at any fixed record count;
-block12's densification deflation applies only to UNBOUNDED words.
+For every `m >= 1`, by coefficient-level induction: `f^m(r) = 2^(2^m - 1) r^(2^m)`,
+so `f^m(r) - r = r(2^(2^m-1) r^(2^m-1) - 1)` with the cofactor a strictly
+increasing monomial-minus-`1` -- unique positive fixed point `r = 1/2` for every
+`m` `[check 29]`; and `g^m(r) = r^(2^m)`, unique positive fixed point `r = 1` for
+every `m` `[check 30]`. Hence under any single supplied dictionary the dial set is
+exactly `{1/2}` (component) or `{1}` (slot) for ALL word lengths: no densification
+ever arises physically, and the mixed dial points `2^(-1/3), 2^(-2/3)` are
+CHART-MIX artifacts, not pure-word fixed points `[check 31]`.
 
-## T4 -- the word-supplier residual updates; governance hand-off (morning list) `[check 22]`
+## T4' -- word-supplier residual; governance hand-off (morning list) `[checks 32-33]`
 
-The word-supplier question reduces: the word length is bounded by the record
-count (content) under one dynamics-shaped premise, REG>=1. REG>=1's candidate
-homes are recorded here **without adoption**:
+The residual is sharpened, not resolved: the word length is bounded by the record
+count (content), and the remaining supply questions are handed off without
+adoption as an **owner decision** on the owner's **morning** review list, mapped
+in full in T5'.
 
-1. a narrow record-production / registration-step primitive;
-2. the banked Dynamics-axiom proposal (PR #4843, review-pending) -- and note
-   that the action lane's composition premise `C-add` (review-pending block20)
-   is the **same family**: one Dynamics decision would supply both lanes;
-3. remain a named conditional premise.
-
-This is an **owner decision**; the note only maps it, and marks it for the
-owner's **morning** review list. What is **not** reduced is which word, within
-the bound, is realized -- that is the realized state's record history, content
-and not premise.
-
-## T5 -- moduli-lane end-state (flagged, not closed) `[check 22]`
-
-Under REG>=1: the dial sets are finite at fixed `N_rec`; the boundary `1/2`
-stands (block12, review-pending); the `2^(-1/3)` and `2^(-2/3)` points are the
-exact length-2 mixed-word fixed points (polynomial identities); and the block07
-selector constraints (review-pending) are unchanged.
+## T5' -- moduli-lane end-state (flagged, not closed) `[checks 32-33]`
 
 The lane's residue, enumerated completely and conserved:
 
-1. **REG>=1** -- a dynamics-family premise (morning list; owner decision;
-   not adopted).
-2. **The realized record history** -- which word within the bound is realized
-   (content, not premise).
-3. **The sibling review-pending audits** -- block07 (selector-constraint map),
-   block12 (moduli words / boundary `1/2`), block20 (action-lane `C-add`, the
-   same family as REG>=1), and PR #4843 (banked Dynamics-axiom proposal).
+1. **The dynamics family** -- P2 (production) and P3 (persistence); the action
+   lane's `C-add` is the **same family** per **supervisor-supplied** cross-block
+   context (morning list; owner decision; not adopted).
+2. **The supplied-context scoping** -- P4: the supplied finite readout collection
+   (the axiom set **does not bound** a configuration's total).
+3. **CHART-MIX and the dictionary binary** -- per-step dictionary supply and the
+   occupancy note's open dictionary binary (existing campaign surface, carried).
+4. **The realized history** -- which word within the bound is realized, and the
+   realized step count (content, not premise).
+5. **The sibling review-pending audits** -- block07 (selector-constraint map),
+   block12 (moduli words / boundary `1/2` / word class), block20 (action-lane
+   `C-add`), and PR #4843 (banked Dynamics-axiom proposal).
 
 No wall is closed; nothing is adjudicated; no empirical modulus is imported; no
 selector is proposed.
 
 ## Does NOT
 
-- Does not derive or adopt REG>=1; REG>=1 stays a named, un-adopted,
-  dynamics-shaped premise.
-- Does not supply, select, or fix which word is realized within the bound.
-- Does not propose a selector, fix `r`, or import an empirical modulus.
+- Does not derive or adopt P1, P2, P3, P4, or CHART-MIX; each stays named and not
+  adopted.
+- Does not supply/select which word is realized, propose a selector, fix `r`, or
+  import an empirical modulus.
 - Does not close any wall, adjudicate anything, or set any audit status.
-- Does not read or rely on any review-pending branch; block07 / block12 /
-  block20 / #4843 are context only.
+- Does not read any review-pending branch; block07 / block12 / block20 / #4843 are
+  context only, and the `C-add` same-family reading is supervisor-supplied.
 
 ## Dependencies
 
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) -- Record,
-  state definition, finite additivity, and the record-production disclaimer.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) -- Record, state
+  definition, the finite-additivity conditional, the record-production disclaimer,
+  the "physical persistence dynamics" open gate.
 - [`OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md`](OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md)
-  -- the double-registration flow and the two dictionary charts giving
-  `f(r)=2r^2`, `g(r)=r^2`.
+  -- the ONE double-registration flow, the two charts `f(r)=2r^2`, `g(r)=r^2`, the
+  tri-guise "same binary" identity.
 
-Context only, review-pending (not read here): block12 moduli-words (PR #4827),
-block07 selector-constraint map (PR #4822), block20 action-lane `C-add`, and the
-banked Dynamics-axiom proposal (PR #4843).
+Context only, review-pending: block12 (PR #4827), block07 (PR #4822), block20
+`C-add`, PR #4843.
 
 ## No-Promotion Statement
 
 This note does not promote, demote, or set the audit status of any dependency or
-sibling block. The independent audit lane is the only status authority. REG>=1
-is named and not adopted; its adoption, if any, is an owner decision.
+sibling block. The independent audit lane is the only status authority. P1-P4 and
+CHART-MIX are named and not adopted; their adoption, if any, is an owner decision.
+
+## Summary
+
+- **Checks:** 33, all PASS (`outputs/frontier_record_count_bounds_composition_words_2026_07_02.txt`).
+- **Headline:** under any single supplied dictionary the dial set is exactly
+  `{1/2}` (component) or `{1}` (slot) for all lengths -- `f^m = 2^(2^m-1) r^(2^m)`
+  fixes `1/2`, `g^m = r^(2^m)` fixes `1`; no physical densification, and the mixed
+  points `2^(-1/3), 2^(-2/3)` are CHART-MIX artifacts.
+- **Bound:** P1(pure)+P2+P3+P4 give `k <= N_rec`, exact and tight, with a
+  per-premise violation witness for each of P2, P3, P4.
+- **Residue (complete):** the dynamics family (P2/P3 and, per supervisor-supplied
+  context, `C-add`); the supplied-context scoping (P4); CHART-MIX + the dictionary
+  binary; the realized history / step count; the sibling review-pending audits.

@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_2026_06_12.py
-runner_sha256: 26a31fe8da147c8d121799b37bd61f5563ee937292ee424cd8be54380fe1a5c6
+runner_sha256: 75c054c242ad012437bfafebcad165cbe071bcefd3a2ab0e7d842c563e24229d
 timeout_sec: 1800
 exit_code: 0
 status: ok
 ----- stdout -----
 PASS: mode peak = -round((p+2q)/3) (= -round(sum lam /3))
       b48(7,3):pk-4~-4; b48(7,7):pk-7~-7; b108(10,5):pk-7~-7; b108(10,10):pk-10~-10; b192(14,7):pk-9~-9; b192(14,14):pk-14~-14; b300(17,8):pk-11~-11; b300(17,17):pk-17~-17
-PASS: tail beyond 2*sqrt(t) window is uniform (beta- and weight-independent)
+PASS: tail beyond 2*sqrt(t) window is uniform on the sampled active-weight grid
       g(2) = ['2.09e-04', '2.30e-04', '2.93e-04', '2.96e-04', '3.43e-04', '3.48e-04', '3.67e-04', '3.78e-04'] (flat ~3e-4)
-PASS: tail beyond 3*sqrt(t) window is uniform
+PASS: tail beyond 3*sqrt(t) window is uniform on the sampled active-weight grid
       g(3) = ['7.20e-08', '8.31e-08', '9.82e-08', '1.00e-07', '1.16e-07', '1.20e-07', '1.23e-07', '1.30e-07'] (flat ~1e-7)
 PASS: g(A) ~ exp(-c A^2): the implied c is positive and stable across cases
       implied c (from g2,g3) = [1.595, 1.585, 1.6, 1.599, 1.598, 1.595, 1.601, 1.594] (stable Gaussian rate)

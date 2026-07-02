@@ -10,8 +10,9 @@ determinant (the SU(3) Weyl character formula):
     lam = (p+q, q, 0)  (the SU(3) highest weight, sum lam = p + 2q).
 
 W88/W89 measured that 25-34% of the mode-sum mass sits outside a FIXED mode
-window — so a fixed cutoff does NOT dominate the tail. THIS NOTE establishes the
-correct window and the uniform tail bound: the mode profile is centered at
+window — so a fixed cutoff does NOT dominate the tail. This runner checks the
+correct window and the uniform tail form on the bounded active-weight surface:
+the mode profile is centered at
 
     mode_peak = -round((p + 2q)/3) = -round((sum lam)/3)
 
@@ -21,19 +22,23 @@ uniformly Gaussian-suppressed,
     sum_{|mode - mode_peak| > A sqrt(t)} |D_mode|  <=  g(A) * sum_mode |D_mode|,
     g(A) ~ exp(-c A^2),   g(2) ~ 3e-4,  g(3) ~ 1e-7,
 
-with g(A) INDEPENDENT of beta and of the active weight (a = weight/sqrt(beta) =
-O(1)). DERIVATION (via W87): factor e^{3t}; by the W87 uniform Bessel local-CLT,
+with g(A) independent of beta across the sampled bounded active-weight grid
+(a = weight/sqrt(beta) = O(1)). Derivation (via W87): factor e^{3t}; by the W87
+uniform Bessel local-CLT,
 e^{-t} I_nu(t) ~ (2 pi t)^{-1/2} exp(-nu^2/(2t)) for nu = O(sqrt(t)); each entry
 is then a Gaussian of width sqrt(t) in its index nu_ij = mode + lam_j + i - j;
 the 3x3 determinant of these Gaussians, as a function of mode, is a Gaussian in
-(mode - mode_peak) of width O(sqrt(t)); its tail beyond A sqrt(t) is exp(-c A^2),
-uniform in beta and the active weight. This is the determinant-level shadow of
-the same local-CLT scaling W87 proved at the scalar level.
+(mode - mode_peak) of width O(sqrt(t)); its tail beyond A sqrt(t) is exp(-c A^2)
+on the bounded active-weight surface. This is the determinant-level shadow of the
+same local-CLT scaling W87 proved at the scalar level. The `c ~ 1.60` value is a
+witnessed effective rate over the sampled `A in {2,3}` grid, not a rigorous
+standalone determinant-local-CLT constant.
 
 The runner WITNESSES (a) mode_peak = -round((sum lam)/3), (b) the A*sqrt(t)-window
-tail is uniform across beta and active weights, (c) g(A) ~ exp(-c A^2) decay, and
-(d) a FIXED window does NOT give a uniform tail (the W88/W89 failure mode).
-Nothing is fitted; the tail constants are computed from the exact determinants.
+tail is uniform across beta on the sampled bounded active-weight grid, (c)
+g(A) ~ exp(-c A^2) decay, and (d) a FIXED window does NOT give a uniform tail
+(the W88/W89 failure mode). Nothing is fitted; the tail constants are computed
+from the exact determinants.
 """
 import importlib.util
 import math
@@ -121,12 +126,12 @@ def main():
         g2.append(tail_fraction(modes, aD, center, 2.0, t))
         g3.append(tail_fraction(modes, aD, center, 3.0, t))
     check(
-        "tail beyond 2*sqrt(t) window is uniform (beta- and weight-independent)",
+        "tail beyond 2*sqrt(t) window is uniform on the sampled active-weight grid",
         (max(g2) / min(g2) < 3.0) and max(g2) < 2e-3,
         f"g(2) = {[f'{x:.2e}' for x in g2]} (flat ~3e-4)",
     )
     check(
-        "tail beyond 3*sqrt(t) window is uniform",
+        "tail beyond 3*sqrt(t) window is uniform on the sampled active-weight grid",
         (max(g3) / min(g3) < 5.0) and max(g3) < 2e-6,
         f"g(3) = {[f'{x:.2e}' for x in g3]} (flat ~1e-7)",
     )

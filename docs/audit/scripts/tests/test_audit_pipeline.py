@@ -496,6 +496,66 @@ class SeedLedgerTest(unittest.TestCase):
         self.assertEqual(row["note_hash"], current_hash)
         self.assertEqual(seeded["stats"]["preserved_archived_failed"], 1)
 
+    def test_infra_path_prefixes_default_to_meta_when_hintless(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "META_SOURCE_PATTERNS", ()):
+            for path in (
+                "docs/ai_methodology/README.md",
+                "docs/ai_methodology/raw/repo_audit.md",
+                "docs/repo/anything.md",
+                "docs/work_history/x/y.md",
+                "docs/lanes/open_science/lane.md",
+                "docs/publication/ci3_z3/table.md",
+            ):
+                claim_type, provenance = m.default_claim_type_for({"path": path})
+                self.assertEqual(
+                    (claim_type, provenance), ("meta", "backfilled_from_path"), path
+                )
+
+    def test_author_hint_beats_infra_path_prefix(self):
+        # Lane docs and other hinted notes under infra directories keep
+        # their declared types; the prefix tier only catches hint-less notes.
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "META_SOURCE_PATTERNS", ()):
+            claim_type, provenance = m.default_claim_type_for(
+                {
+                    "path": "docs/lanes/open_science/lane.md",
+                    "claim_type_author_hint": "open_gate",
+                }
+            )
+            self.assertEqual((claim_type, provenance), ("open_gate", "author_hint"))
+            claim_type, provenance = m.default_claim_type_for(
+                {
+                    "path": "docs/lanes/open_science/lane.md",
+                    "claim_type_seed_hint": "open_gate",
+                }
+            )
+            self.assertEqual((claim_type, provenance), ("open_gate", "migration_hint"))
+
+    def test_meta_source_pattern_registry_beats_hint(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(
+            m, "META_SOURCE_PATTERNS", ("docs/CANONICAL_HARNESS_INDEX.md",)
+        ):
+            claim_type, provenance = m.default_claim_type_for(
+                {
+                    "path": "docs/CANONICAL_HARNESS_INDEX.md",
+                    "claim_type_author_hint": "positive_theorem",
+                }
+            )
+            self.assertEqual((claim_type, provenance), ("meta", "backfilled_from_path"))
+
+    def test_untyped_docs_root_note_still_defaults_to_positive_theorem(self):
+        m = _import("seed_audit_ledger")
+        with mock.patch.object(m, "META_SOURCE_PATTERNS", ()):
+            claim_type, provenance = m.default_claim_type_for(
+                {"path": "docs/SOME_THEOREM_NOTE.md"}
+            )
+            self.assertEqual(
+                (claim_type, provenance),
+                ("positive_theorem", "default_positive_theorem"),
+            )
+
 
 class ComputeEffectiveStatusTest(unittest.TestCase):
     def setUp(self):
@@ -1163,6 +1223,145 @@ class AuditLintTest(unittest.TestCase):
         with contextlib.redirect_stdout(buf):
             rc = m.main()
         self.assertEqual(rc, 0, buf.getvalue())
+
+    def test_defaulted_claim_type_warns_but_passes(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "untyped_catalog": {
+                "claim_id": "untyped_catalog",
+                "audit_status": "unaudited",
+                "claim_type": "positive_theorem",
+                "claim_type_provenance": "default_positive_theorem",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        out = buf.getvalue()
+        self.assertEqual(rc, 0, out)
+        self.assertIn("claim_type_defaulted", out)
+        self.assertIn("'Type:' header", out)
+
+    def test_typed_rows_do_not_trigger_defaulted_warning(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "typed_note": {
+                "claim_id": "typed_note",
+                "audit_status": "unaudited",
+                "claim_type": "bounded_theorem",
+                "claim_type_provenance": "author_hint",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        out = buf.getvalue()
+        self.assertEqual(rc, 0, out)
+        self.assertNotIn("claim_type_defaulted", out)
+
+    def test_grandfathered_excluded_path_row_notices(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        (self.tmp_root / "docs" / "audit" / "data" / "excluded_source_patterns.txt").write_text(
+            "# infra families\ndocs/lanes/**\n", encoding="utf-8"
+        )
+        rows = {
+            "lanes.legacy_lane": {
+                "claim_id": "lanes.legacy_lane",
+                "note_path": "docs/lanes/legacy_lane.md",
+                "audit_status": "unaudited",
+                "claim_type": "open_gate",
+                "claim_type_provenance": "migration_hint",
+                "effective_status": "unaudited",
+                "criticality": "leaf",
+            },
+        }
+        self._write_minimal_ledger(rows)
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        out = buf.getvalue()
+        self.assertEqual(rc, 0, out)
+        self.assertIn("excluded_path_row_grandfathered", out)
+        self.assertNotIn("warnings:", out)
+
+
+class CheckStagedClaimTypingTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.fx = CleanLedgerFixture(self.tmp_root)
+
+    def _run(self, m, staged: str) -> tuple[int, str]:
+        import io, contextlib
+        buf = io.StringIO()
+        with mock.patch.object(sys, "stdin", io.StringIO(staged)):
+            with contextlib.redirect_stdout(buf):
+                rc = m.main()
+        return rc, buf.getvalue()
+
+    def _patch_paths(self, m) -> None:
+        m.REPO_ROOT = self.tmp_root
+        m.LEDGER_PATH = self.tmp_root / "docs" / "audit" / "data" / "audit_ledger.json"
+
+    def test_staged_defaulted_note_blocks(self):
+        m = _import("check_staged_claim_typing")
+        self._patch_paths(m)
+        self.fx.write_ledger(
+            {
+                "schema_version": 1,
+                "rows": {
+                    "untyped": {
+                        "claim_id": "untyped",
+                        "note_path": "docs/UNTYPED_NOTE.md",
+                        "claim_type": "positive_theorem",
+                        "claim_type_provenance": "default_positive_theorem",
+                    },
+                },
+            }
+        )
+        rc, out = self._run(m, "docs/UNTYPED_NOTE.md\nscripts/foo.py\n")
+        self.assertEqual(rc, 1)
+        self.assertIn("docs/UNTYPED_NOTE.md", out)
+        self.assertIn("'Type:' header", out)
+
+    def test_typed_and_unledgered_notes_pass(self):
+        m = _import("check_staged_claim_typing")
+        self._patch_paths(m)
+        self.fx.write_ledger(
+            {
+                "schema_version": 1,
+                "rows": {
+                    "typed": {
+                        "claim_id": "typed",
+                        "note_path": "docs/TYPED_NOTE.md",
+                        "claim_type": "bounded_theorem",
+                        "claim_type_provenance": "author_hint",
+                    },
+                },
+            }
+        )
+        rc, _ = self._run(m, "docs/TYPED_NOTE.md\ndocs/publication/gated_infra.md\n")
+        self.assertEqual(rc, 0)
+
+    def test_no_staged_docs_short_circuits(self):
+        m = _import("check_staged_claim_typing")
+        self._patch_paths(m)
+        # No ledger written at all: the gate must not fail on non-doc commits.
+        rc, _ = self._run(m, "scripts/foo.py\nlogs/runner-cache/x.json\n")
+        self.assertEqual(rc, 0)
 
 
 class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):

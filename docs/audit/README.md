@@ -165,6 +165,44 @@ audit that writes the scoped `claim_type`; missing `claim_type` fields in the
 old confirmation summaries are migration debt, not a cross-confirmation
 disagreement.
 
+## Claim typing at authoring time
+
+Every new source note under `docs/` must declare its claim class with an
+explicit header line the graph builder can read:
+
+```
+**Type:** positive_theorem | bounded_theorem | no_go | open_gate | decoration | meta
+```
+
+`seed_audit_ledger.default_claim_type_for` resolves the seeded `claim_type`
+in this precedence order (the auditor always owns the final value):
+
+1. `data/meta_source_patterns.txt` — curated per-file registry for
+   catalog/index/infrastructure docs (e.g. `docs/CANONICAL_HARNESS_INDEX.md`);
+   applies even over author hints.
+2. The explicit `Type:` / `Claim type:` header, else the legacy
+   Status-line migration hint.
+3. Infrastructure directory families
+   (`seed_audit_ledger.INFRA_META_PATH_PREFIXES`: `docs/repo/`,
+   `docs/work_history/`, `docs/lanes/`, `docs/publication/`,
+   `docs/ai_methodology/` — the same families as
+   `data/excluded_source_patterns.txt`): hint-less notes under these paths
+   seed as `meta` (documentation, not claims).
+4. Fallback: `positive_theorem` with provenance `default_positive_theorem`.
+
+Tier 4 is visible debt, not a hidden state: `audit_lint.py` warns on every
+such row (`claim_type_defaulted`), and `pre_commit_audit_check.sh` (via
+`check_staged_claim_typing.py`) refuses staged notes that would enter or
+stay in the defaulted class, so the legacy backlog can only shrink.
+
+`meta` deserves care in both directions: meta rows are never queued for
+audit and chain-satisfy their dependents as stable context, so `meta` is
+reserved for documents that carry no claim any dependent could consume as
+evidence. Rows that match `data/excluded_source_patterns.txt` but predate
+their exclusion are kept by the `should_gate_node` grandfather guard and
+surfaced as `excluded_path_row_grandfathered` lint notices; actually
+dropping them is an owner/audit-lane decision, not an automatic cleanup.
+
 ## The hard rules
 
 1. **Retained grade is audit-only.** The audit lane may grant

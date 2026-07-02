@@ -215,6 +215,7 @@ def section_d_doublet_clock():
 
 
 def section_e_note_discipline(note: str) -> None:
+    note_flat = flat(note)
     required = [
         "the pointer-labeled registrable content is `|delta|`: the distinguished singlet removes the `2 pi/3`-relabel quotient of the bare multiset",
         "the within-doublet phase advances by exactly `2 sqrt(3) |b| sin delta` per native step",
@@ -222,7 +223,7 @@ def section_e_note_discipline(note: str) -> None:
         "not a terminal no-go",
     ]
     for phrase in required:
-        check(f"note contains required phrase: {phrase[:42]}", phrase in note)
+        check(f"note contains required phrase: {phrase[:42]}", phrase in note_flat)
     for n in range(1, 9):
         check(f"note contains N{n} gate header", f"### N{n}" in note)
 
@@ -262,9 +263,13 @@ def section_e_note_discipline(note: str) -> None:
         check(f"in-flight name is not a link target: {name[:34]}", all(name not in target for target in links))
 
     check("status-authority standard present", "**Status authority:** independent audit lane only." in note)
+    check("canonical bounded_theorem claim type", "**Claim type:** bounded_theorem" in note)
+    check("scope separated from claim type", "**Scope:** pointer-labeled C3 spectral refinement plus exact finer" in note)
+    check("noncanonical bounded theorem metadata absent", "**Claim type:** bounded theorem /" not in note)
+    check("source note does not use runner PASS as status", "**Status:** PASS" not in note)
     grade_tokens = ["retained_" + "bounded", "retained_" + "no_go", "audited_" + "clean"]
     check("no retained audit-grade tokens", all(token not in note for token in grade_tokens))
-    check("standard non-retirement text present", "does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement" in note)
+    check("standard non-retirement text present", "does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement" in note_flat)
     check("runner command names this script", f"python3 scripts/{SELF.name}" in note)
     check("verification section has measured total", re.search(r"TOTAL: PASS=\d+ FAIL=0", note) is not None)
 

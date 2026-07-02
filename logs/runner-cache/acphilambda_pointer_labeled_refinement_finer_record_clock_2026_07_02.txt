@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_pointer_labeled_refinement_finer_record_clock_2026_07_02.py
-runner_sha256: 2512e281a8f392b5eeda360f3164d9b3b33b1a08eafad04168753554ed81f512
+runner_sha256: 840c594c7645fbb7ad0f6826028aea6ccf8f3d28b798b36e68044d1822117a2b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 7.38
+elapsed_sec: 5.94
 status: ok
 ----- stdout -----
 [PASS] exists: docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
@@ -104,6 +104,10 @@ status: ok
 [PASS] in-flight name appears as backticked context: ACPHILAMBDA_FLUXED_RING_SPECTRAL_F
 [PASS] in-flight name is not a link target: ACPHILAMBDA_FLUXED_RING_SPECTRAL_F
 [PASS] status-authority standard present
+[PASS] canonical bounded_theorem claim type
+[PASS] scope separated from claim type
+[PASS] noncanonical bounded theorem metadata absent
+[PASS] source note does not use runner PASS as status
 [PASS] no retained audit-grade tokens
 [PASS] standard non-retirement text present
 [PASS] runner command names this script
@@ -116,7 +120,7 @@ status: ok
 [PASS] source-instruction phrase absent: derived and verified by the reviewer
 [PASS] source-instruction phrase absent: execute it exactly
 [PASS] source-instruction phrase absent: Spec CLOCK
-TOTAL: PASS=110 FAIL=0
+TOTAL: PASS=114 FAIL=0
 
 ----- stderr -----
 

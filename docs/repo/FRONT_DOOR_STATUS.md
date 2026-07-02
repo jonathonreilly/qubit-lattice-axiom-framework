@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1529 |
-| Retained-grade rows, including boxed decorations | 1408 |
+| Applied audit verdicts | 1530 |
+| Retained-grade rows, including boxed decorations | 1409 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 210 |
-| Retained bounded rows | 932 |
+| Retained bounded rows | 933 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1617 |
+| Unaudited rows | 1616 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 45 |
 | Audited renaming rows | 28 |
@@ -33,24 +33,24 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1619 |
-| Ready rows | 80 |
+| Total pending rows | 1618 |
+| Ready rows | 79 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
 | Medium pending | 455 |
-| Leaf pending | 582 |
+| Leaf pending | 581 |
 
 Next ready rows by queue order:
 
-- [`local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03`](../../docs/LOCAL_TOMOGRAPHY_FROM_QUBIT_COMPLEX_STRUCTURE_NARROW_THEOREM_NOTE_2026-06-03.md) - medium; unaudited
+- [`flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02`](../../docs/FLAVOR_OPERATOR_SPECTRAL_FUNCTIONALS_DO_NOT_FORCE_R_HALF_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 - [`koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08`](../../docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md) - medium; unaudited
 - [`magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06`](../../docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md) - medium; unaudited
 - [`product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12`](../../docs/PRODUCT_FORM_PREMISE_WEAKENS_TO_OUTCOME_FACTORIZATION_BOUNDED_NOTE_2026-06-12.md) - medium; unaudited
 - [`signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11`](../../docs/SIGNED_GRAVITY_WILSON_MASS_HOLONOMY_TWISTED_EDGE_REALIZATION_NARROW_THEOREM_NOTE_2026-06-11.md) - medium; unaudited
 - [`teleportation_resource_from_poisson_note`](../../docs/TELEPORTATION_RESOURCE_FROM_POISSON_NOTE.md) - medium; unaudited
 - [`wilson_m_h_per_channel_closure_bounded_note_2026-05-09`](../../docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md) - medium; unaudited
-- [`flavor_operator_spectral_functionals_do_not_force_r_half_no_go_note_2026-06-02`](../../docs/FLAVOR_OPERATOR_SPECTRAL_FUNCTIONALS_DO_NOT_FORCE_R_HALF_NO_GO_NOTE_2026-06-02.md) - leaf; unaudited
+- [`gravity_leading_lattice_correction_cubic_anisotropy_theorem_note_2026-06-07`](../../docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md) - leaf; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -90,7 +90,7 @@ Top load-bearing rows by graph score:
 
 - `minimal_axioms` - critical; 1701 descendants; score 159.733
 - `three_generation_observable_theorem_note` - critical; 1028 descendants; score 67.007
-- `graph_first_su3_integration_note` - critical; 1439 descendants; score 62.492
+- `graph_first_su3_integration_note` - critical; 1438 descendants; score 62.491
 - `observable_principle_from_axiom_note` - critical; 920 descendants; score 60.347
 - `plaquette_self_consistency_note` - critical; 1030 descendants; score 54.010
 - `minimal_axioms_2026-05-03` - critical; 1033 descendants; score 49.014

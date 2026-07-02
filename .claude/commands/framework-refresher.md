@@ -33,8 +33,9 @@ statuses all change; only current repo surfaces are authoritative.
   possibility domain has algebraic presentation `M_2(ℂ)`, with `Cl(3,0)` as
   equivalent real-algebra notation only.
 - **Admissibility** — one fixed nearest-neighbor admissibility rule, covariant
-  under lattice translations and proper cubic rotations, determines the
-  available subset of possibilities at each site.
+  under lattice translations and proper cubic rotations; for each site, the
+  available possibilities are determined by, and vary with, the
+  nearest-neighbor conditions.
 - **Record** — a record locks exactly one available local possibility; only
   records are readable, and scalar readout is finitely additive over finite
   pairwise-disjoint record collections.

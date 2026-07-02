@@ -56302,10 +56302,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
     },
     {
@@ -56331,6 +56327,10 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -108439,17 +108439,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
         "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "staggered_dirac_kinetic_class_forcing_narrow_theorem_note_2026-06-10",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
         "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
-        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26"
+        "axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26",
+        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1a40f51241375bf8e37f7e9efde8642d0418ff9ecddac33b68d68cb93a92d8c1",
+      "note_hash": "175ceb6b275821eca51acfad22859b79a812831262978e2bd1b51a423d8ec039",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

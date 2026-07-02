@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_flavor_carrier_measure_scoring_discriminator_2026_07_02.py
+runner_sha256: 7d4dba45847dd37fc4b2e5acffd831cf4be54724cc3a15dbcdf2e6ccc7c3e6c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
 PASS D1 S1 generator-channel HS gives r=1/(N-1)
 PASS D1 S2 dimension/per-mode gives r=1
 PASS sympy available for exact radical/C3 witnesses
@@ -38,3 +46,5 @@ PASS D4 named invariance requirement rejects S3
 PASS D4 conditional survivor gives r=1/2
 PASS D4 parent theorem target string is preserved
 TOTAL: PASS=39 FAIL=0
+
+----- stderr -----

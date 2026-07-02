@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 283,
     "leaf": 584,
-    "medium": 479
+    "medium": 478
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17799,33 +17799,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26",
-        "yt_source_action_support_packet_note_2026-05-22",
-        "yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.0,
-      "note_path": "docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_ew_neutral_projector_same_surface_carrier.py",
-      "transitive_descendants": 31
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -18000,15 +17973,15 @@
         "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
         "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05"
       ],
-      "direct_in_degree": 2,
+      "direct_in_degree": 3,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 3.807,
+      "load_bearing_score": 5.959,
       "note_path": "docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_su3_beta6_gap_bulk_criticality_reduction_2026_06_09.py",
-      "transitive_descendants": 6
+      "transitive_descendants": 21
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49477,6 +49450,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 94,
-  "total_pending": 1647
+  "ready_count": 93,
+  "total_pending": 1646
 }

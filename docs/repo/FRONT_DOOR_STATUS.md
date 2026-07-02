@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1501 |
-| Retained-grade rows, including boxed decorations | 1385 |
+| Applied audit verdicts | 1502 |
+| Retained-grade rows, including boxed decorations | 1386 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 204 |
-| Retained bounded rows | 915 |
+| Retained bounded rows | 916 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1645 |
+| Unaudited rows | 1644 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 41 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1647 |
-| Ready rows | 94 |
+| Total pending rows | 1646 |
+| Ready rows | 93 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 283 |
-| Medium pending | 479 |
+| Medium pending | 478 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
 - [`complex_selectivity_compare_note`](../../docs/COMPLEX_SELECTIVITY_COMPARE_NOTE.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) - medium; unaudited
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - medium; unaudited
 - [`su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
+- [`koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02`](../../docs/KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

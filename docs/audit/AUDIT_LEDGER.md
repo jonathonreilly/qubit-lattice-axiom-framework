@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 204 |
-| **retained_bounded** | 915 |
+| **retained_bounded** | 916 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1645 |
+| unaudited | 1644 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1335 |
+| `audited_clean` | 1336 |
 | `audited_conditional` | 41 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1971 |
+| `unaudited` | 1970 |
 
 | claim_type | count |
 |---|---:|
@@ -1460,6 +1460,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_ew_matching_rule_m_note_2026-05-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
+| `yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -21149,6 +21150,19 @@ Claim boundary until fixed: the exact statement F_adj = 8/9 is correct as algebr
 - **load-bearing step:** The packet supplies the algebraic fraction F_adj = 8/9 but does not contain a retained selector promoting it to exact physical EW matching rule M, so exact physical R_conn = 8/9 is not derived by this packet.  _(class `A`)_
 - **chain closes:** True — The cited retained no-go parent supplies the open selector boundary, and the cited decoration authority supplies only the finite-dimensional SU(3) channel fraction. The source note does not claim an absolute finite-N_c impossibility or an exhaustive no-go over future selectors.
 - **rationale:** The restricted packet cleanly supports the narrowed no-go boundary: F_adj = (N_c^2 - 1) / N_c^2 gives 8/9 at N_c = 3, and no selector deriving physical R_conn = 8/9 is supplied. Independent formula checks of the kappa-family, Fierz normalization, channel dimensions, and listed specializations found no coefficient or normalization defect. The no-go discipline gate passes because the note explicitly limits itself to current-packet absence, leaves future non-perturbative selector routes open, and avoids absolute no-go rhetoric.
+- **auditor confidence:** high
+
+### `yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`
+
+- **Note:** [`YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic identification, on the declared one-Higgs EW doublet with Y_H = 1/2, of the neutral carrier ray as 1_0(Q_H)=P_- and of exp(h epsilon_H) as an affine neutral-occupation source with j=-2h.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T035440Z-ec16882e-yt_ew_neutral_projector_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Since Q_H = T_3 + Y_H = diag(1,0), its zero spectral projector is P_neut = I - Q_H = (I - sigma_z)/2 = P_-, identifying the neutral Higgs ray with the qubit P_- ray on the same EW doublet carrier.  _(class `A`)_
+- **chain closes:** True — The EW authority supplies the one-Higgs doublet ordering, T_3, Y_H, Q=T_3+Y, and the neutral vacuum; spectral calculus then gives the projector identities and the exponential source reparameterization. The audited scope is bounded to this carrier/source-coordinate algebra and does not assert positive Y_T closure.
+- **rationale:** The load-bearing step is a direct matrix/spectral-projector identity over retained-grade bounded EW inputs plus accepted one-qubit notation. Independent recomputation confirms Q_H=diag(1,0), P_neut=diag(0,1)=P_-, epsilon_H=I-2P_neut, and exp(h epsilon_H)=exp(h)exp(-2hP_neut) with the normalized coordinate change j=-2h. The runner mostly checks markers plus the same exact algebra; no external comparator or tuned numerical input is used. The source note keeps the conclusion within bounded support and does not promote the downstream Y_T/top-response claims.
 - **auditor confidence:** high
 
 ### `yt_ew_sin_sq_theta_w_preservation_bounded_note_2026-05-25`

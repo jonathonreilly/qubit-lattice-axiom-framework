@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "magnitude_reads_minimal_record_block_2026-06-06"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
         "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
         "free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30",
         "complex_selectivity_compare_note",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
         "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
-        "magnitude_reads_minimal_record_block_2026-06-06"
+        "magnitude_reads_minimal_record_block_2026-06-06",
+        "su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "6a839d10614e4982c96263d7b219d0dba086cce9d352bcce571e6443d3021a3d",
+      "note_hash": "2c1b06dd92a8142c4197ef004c82617f4e6f394e7db8df1a12554ea5daf3921b",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

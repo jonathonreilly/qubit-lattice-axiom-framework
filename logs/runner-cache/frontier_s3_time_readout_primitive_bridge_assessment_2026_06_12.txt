@@ -3,7 +3,7 @@ runner: scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.
 runner_sha256: ec91bd7b38e70fba036994949ddfe6c23707446422e02b9a1870e7e6c5b96370
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.71
+elapsed_sec: 16.16
 status: ok
 ----- stdout -----
 PASS: primitive note names the physical tensor-primitive bridge as open work

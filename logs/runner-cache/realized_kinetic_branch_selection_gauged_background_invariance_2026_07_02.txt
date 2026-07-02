@@ -13,7 +13,7 @@ realized kinetic branch selection under fixed gauged backgrounds (2026-07-02)
 [PASS] [T1]  2. random fixed U(1) backgrounds factor as recovered color link tensor qubit coefficient  |  seeds=11,17,23; extraction uses operator-Schmidt rank-one residuals
 [PASS] [T1]  3. U(1) backgrounds preserve K0 vacuity and K1 direction-tagged variation  |  K1 max anticommutator=4.44e-16, max link spread=5.66e-16
 [PASS] [T2]  4. U(1) boundary exhibit: plaquette flux is background-dependent off the U=1 slice  |  min max deviation from Z2 anchors=2.000
-[PASS] [T1]  5. random fixed SU(2) color links factor as recovered color matrix tensor qubit coefficient  |  max residual=7.79e-16
+[PASS] [T1]  5. random fixed SU(2) color links factor as recovered color matrix tensor qubit coefficient  |  max residual=8.54e-16
 [PASS] [T1]  6. SU(2) color background preserves algebra dimensions, K1 anticommutation, and sqrt(2) gaps  |  K0 dim sample=[1, 1, 1], K1 dim sample=[2, 2, 2]
 [PASS] [T2]  7. SU(2) boundary exhibit: Wilson plaquette traces vary with the fixed background  |  trace spread=1.535
 [PASS] [T2]  8. clarified Admissibility variation still selects K1 for every fixed legal background tested  |  legal cases: U(1) seeds 11/17/23 and SU(2) seed 31
@@ -27,4 +27,3 @@ SUMMARY: fixed-background gauged surface only; legal gauge links act on lattice/
 TOTAL: PASS=13 FAIL=0
 
 ----- stderr -----
-

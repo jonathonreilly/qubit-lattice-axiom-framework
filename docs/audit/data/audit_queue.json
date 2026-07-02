@@ -343,24 +343,24 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-      "claim_scope": null,
+      "claim_scope": "For a finite periodic block of the Z^3 lattice with one M_2(C) qubit factor per site and per-site Pauli ladder operators, the tensor-permutation translation T_a is unitary, obeys the finite translation group law, conjugates a_x and a_x^\u2020 to the translated site, and commutes with Q_total.",
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms"
       ],
       "direct_in_degree": 18,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 22.273,
       "note_path": "docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/tensor_product_translation_fermion_operator_bridge_check_2026_05_25.py",
       "transitive_descendants": 1236
@@ -532,15 +532,15 @@
         "strong_cp_theta_zero_note",
         "minimal_axioms"
       ],
-      "direct_in_degree": 19,
+      "direct_in_degree": 20,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 22.496,
+      "load_bearing_score": 22.997,
       "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
-      "transitive_descendants": 1020
+      "transitive_descendants": 1021
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

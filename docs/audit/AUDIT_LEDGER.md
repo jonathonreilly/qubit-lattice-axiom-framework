@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 200 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 897 |
+| **retained_bounded** | 898 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 30 |
-| unaudited | 1689 |
+| unaudited | 1688 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 26 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1302 |
+| `audited_clean` | 1303 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2015 |
+| `unaudited` | 2014 |
 
 | claim_type | count |
 |---|---:|
@@ -113,12 +113,12 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
 | 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
-| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
+| 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 988 | 41.45 | `audited_clean` | **retained_bounded** |
 | 10 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_clean` | **retained_bounded** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
-| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1093 | 36.59 | `audited_clean` | **retained** |
@@ -296,6 +296,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `cmw_2d_sublattice_no_ssb_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `coarse_grained_exterior_law_helper_note_2026-04-14` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `complex_action_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `complex_selectivity_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -3949,6 +3950,19 @@ Five-judge panel breakdown: ('hybrid', 'audited_decoration', 'decoration', 'B')=
 - **chain closes:** True — Within the stated W1-W4 hypotheses, W1, W3, and W4 give the per-mode lower bound on the anticommutator, and W2 turns the nonzero-momentum average into the displayed theorem bound. The d=1, d=2, and d>=3 IR threshold is covered by the retained_bounded cited authorities and matches the independent small-k comparison E_k ~ |k|^2.
 - **rationale:** The load-bearing step is a direct algebraic rearrangement of the four explicit finite-volume hypotheses with the stated unnormalized Fourier volume factors. The runner is not merely printing constants: it recomputes the finite lattice sums, checks the d=1 identity, monotonic/log behavior, bound monotonicity, and the symbolic rearrangement. The note explicitly excludes the broader claim that arbitrary continuous-symmetry Hamiltonians satisfy W1-W4, so the missing operator-construction theorem is outside this audited scope rather than a hidden dependency.
 - **auditor confidence:** high
+
+### `coarse_grained_exterior_law_helper_note_2026-04-14`
+
+- **Note:** [`COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md`](../../docs/COARSE_GRAINED_EXTERIOR_LAW_HELPER_NOTE_2026-04-14.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-grid check that the provided 15^3 O_h and finite-rank lattice fields, after shell averaging and least-squares a/r projection, give the reported isotropic-metric residual reductions.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T010416Z-a001b012-coarse_grained_exterior_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The module takes the exact finite-rank exterior field phi(x) and applies shell-averaging plus radial-harmonic projection phi_eff(r) := shell_average(phi,r) -> a/r, then reports the coarse-grained metric residual across scan radii.  _(class `C`)_
+- **chain closes:** True — The retained-bounded finite-rank helper supplies the field construction and the retained-bounded shell-localization note supplies the shell-helper surface; the primary runner then computes the shell means, fits a, and evaluates the finite-difference Einstein residuals. This closes only the bounded helper computation, not a physical derivation that the projection or metric ansatz is forced.
+- **rationale:** The runner is not print-only: it constructs the lattice fields, computes the shell-mean least-squares a/r projection, and evaluates the direct and coarse-grained metric residuals. The reported finite-rank R_match=5.0 values are generated by the executable table, and the PASS checks establish the same bounded residual-improvement claim at R_match=4.5. The hard-coded finite family, finite Dirichlet grid, and isotropic metric ansatz remain part of the audited bound, so this is not a framework-level exterior-gravity theorem.
+- **auditor confidence:** medium
 
 ### `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`
 

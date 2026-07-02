@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27"
+      "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "coarse_grained_exterior_law_helper_note_2026-04-14"
+      "to": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "cl3_su3_symmetric_base_commutant_gell_mann_embedding_narrow_theorem_note_2026-05-27",
+        "coarse_grained_exterior_law_helper_note_2026-04-14",
         "rconn_kappa_ew_register_not_read_color_trace_open_gate_note_2026-06-08",
         "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
         "koide_berry_monopole_bridge_reduction_note_2026-05-31",
         "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
         "observable_principle_record_scalar_map_no_go_note_2026-06-05",
         "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
-        "coarse_grained_exterior_law_helper_note_2026-04-14"
+        "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09"
       ],
       "helper_runner_paths": [],
-      "note_hash": "731f0188dbb92f8647a6d8804b23121a2004a21bd61e7693d82a85b01ea9b877",
+      "note_hash": "5b3869b4cbeb352d11c8bbf57fb165c7c961ac946a24c033cc1e18528618f204",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

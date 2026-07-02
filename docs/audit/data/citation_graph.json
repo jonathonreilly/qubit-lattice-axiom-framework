@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09"
+      "to": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08"
     },
     {
       "from": "repo.front_door_status",
@@ -103180,7 +103180,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
         "momentum_charge_commute_theorem_note_2026-05-02",
         "translation_abelian_composition_theorem_note_2026-05-02",
         "translation_covariance_local_op_theorem_note_2026-05-02",
@@ -103190,7 +103190,7 @@
         "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05"
       ],
       "helper_runner_paths": [],
-      "note_hash": "90dd758b865f121b7b087721d5dc7834da3d2574da2eabc8274575e02d50172c",
+      "note_hash": "eb9395f92e563ff8069bc67984355371b6bfc3c4d2966d3ae9f5c38c88561912",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

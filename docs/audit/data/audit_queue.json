@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 301,
-    "high": 284,
+    "high": 283,
     "leaf": 584,
     "medium": 500
   },
@@ -8720,33 +8720,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
-        "graph_first_su3_integration_note",
-        "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.755,
-      "note_path": "docs/MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py",
-      "transitive_descendants": 26
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -33311,6 +33284,35 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+        "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
+        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
+        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+        "three_generation_observable_theorem_note"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "koide_records_objectivity_conditional_note_2026-05-31",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -36799,35 +36801,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_ew_kappa_self_energy_object_pin.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "flavor_gauge_holonomy_character_suppression_kernel_narrow_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
-        "koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18",
-        "koide_circulant_character_bridge_narrow_theorem_note_2026-05-09",
-        "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
-        "three_generation_observable_theorem_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/FLAVOR_GAUGE_HOLONOMY_CHARACTER_SUPPRESSION_KERNEL_NARROW_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/flavor_gauge_holonomy_character_suppression_kernel_2026_06_18.py",
       "transitive_descendants": 1
     },
     {
@@ -50051,5 +50024,5 @@
     }
   ],
   "ready_count": 107,
-  "total_pending": 1669
+  "total_pending": 1668
 }

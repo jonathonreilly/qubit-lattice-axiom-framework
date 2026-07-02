@@ -12,14 +12,14 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1509 |
-| Retained-grade rows, including boxed decorations | 1393 |
+| Applied audit verdicts | 1510 |
+| Retained-grade rows, including boxed decorations | 1394 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 205 |
-| Retained bounded rows | 922 |
+| Retained bounded rows | 923 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1637 |
+| Unaudited rows | 1636 |
 | Retained-pending-chain rows | 4 |
 | Audited conditional rows | 41 |
 | Audited renaming rows | 28 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1639 |
-| Ready rows | 93 |
+| Total pending rows | 1638 |
+| Ready rows | 92 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 281 |
-| Medium pending | 473 |
+| Medium pending | 472 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18`](../../docs/work_history/atomic/HYDROGEN_HELIUM_ATOMIC_COMPANION_NOTE_2026-04-18.md) - medium; unaudited
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - medium; unaudited
 - [`su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 - [`koide_adjoint_map_quotients_spinor_z2_narrow_no_go_note_2026-06-02`](../../docs/KOIDE_ADJOINT_MAP_QUOTIENTS_SPINOR_Z2_NARROW_NO_GO_NOTE_2026-06-02.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18`](../../docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md) - medium; unaudited
 - [`wick_rotation_compact_so4_to_lorentzian_dirac_doubling_orientation_note_2026-06-07`](../../docs/WICK_ROTATION_COMPACT_SO4_TO_LORENTZIAN_DIRAC_DOUBLING_ORIENTATION_NOTE_2026-06-07.md) - medium; unaudited
 - [`positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23`](../../docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md) - medium; unaudited
+- [`record_local_finite_atom_availability_narrow_theorem_note_2026-06-17`](../../docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

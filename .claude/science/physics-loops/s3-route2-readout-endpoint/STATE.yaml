@@ -1,39 +1,39 @@
 loop_slug: s3-route2-readout-endpoint
-block: 22
+block: 23
 date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block22-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block23-20260621
 base: origin/main
-base_commit: c8e116252
+base_commit: 174db48cb
 mode: campaign_science_block
-actual_current_surface_status: no-go
+actual_current_surface_status: exact-support
 target_claim: s3_time_theta_to_slice_coupling_note
-active_route: source_domain_typed_edge_cut_certificate
-hard_residual: source-domain E-center rule for the Route-2 readout landing edge
+active_route: sign_support_typecast_remainder
+hard_residual: magnitude/typecast edge from color-domain F_adj to Route-2 c_TE
 automation_lock:
   mode: degraded_branch_local
   note: "repo automation lock status failed with permission error at /Users/jonreilly; independent worktree used"
 files_touched:
-  - docs/QUARK_ROUTE2_SOURCE_DOMAIN_TYPED_EDGE_CUT_CERTIFICATE_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.py
-  - outputs/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.txt
+  - docs/QUARK_ROUTE2_SOURCE_DOMAIN_SIGN_SUPPORT_TYPECAST_REMAINDER_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.py
+  - outputs/frontier_quark_route2_source_domain_sign_support_typecast_remainder_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 verification:
-  new_runner: "TOTAL: PASS=53, FAIL=0"
-  source_domain_parent: "TOTAL: PASS=103, FAIL=0"
-  typed_bridge_parent: "TOTAL: PASS=62, FAIL=0"
-  e_center_derivation_attempt_parent: "TOTAL: PASS=46, FAIL=0"
+  new_runner: "TOTAL: PASS=45, FAIL=0"
+  positivity_parent: "TOTAL: PASS=8, FAIL=0"
+  naturality_parent: "TOTAL: PASS=28, FAIL=0"
   exact_readout_parent: "PASS=11 FAIL=0"
+  source_domain_parent: "TOTAL: PASS=103, FAIL=0"
   py_compile: pass
   diff_check: pass
   wording_scan: pass
 trace_gate:
-  trace_class: negative_route_pruning
-  reachability_to_target: prunes
-  artifact_role: no_go
+  trace_class: upstream_support
+  reachability_to_target: supports
+  artifact_role: theorem
 pr:
   status: open
-  number: 4551
-  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4551
-  title: "[physics-loop] s3-route2-readout-endpoint block22 no-go"
-next_exact_action: "Continue campaign with a positive typed readout landing theorem attempt."
+  number: 4552
+  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4552
+  title: "[physics-loop] s3-route2-readout-endpoint block23 exact-support"
+next_exact_action: "Continue campaign with magnitude/typecast theorem or no-go."
 stop_condition: "Continue campaign if runtime remains after PR handoff."

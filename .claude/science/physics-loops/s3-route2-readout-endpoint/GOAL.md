@@ -1,14 +1,13 @@
 # Goal
 
-Block22 attacks the source-domain E-center target selected after block21:
+Block23 narrows the source-domain split left by the typed-edge work:
 
-> Determine exactly what extra typed source/readout edge must be supplied for
-> `R_conn` support to reach the Route-2 E-center readout entry.
+> Determine whether the sign half of the signed scalar candidate is already
+> supported by current Route-2 positivity and T-side orientation.
 
-The result is a typed-edge cut certificate. The current source bank does not
-reach the E-center readout nodes. Weak additions such as scalar `8/9`, signed
-scalar `-8/9`, physical selector context, T-side sign, or slot existence still
-fail unless a typed edge lands in the Route-2 readout domain.
+Result: yes. Positivity gives the positive-lift domain `q_E > 0`; the granted
+T-side data give `q_T > 0` and `s_TE < 0`; therefore `c_TE = s_TE q_T / q_E`
+is negative throughout that domain.
 
-This is a no-go for weaker source-domain repairs, not a no-go against future
-positive source/readout theorems.
+The remaining blocker is magnitude/typecast: the current surface still has to
+supply `|c_TE| = F_adj` or a direct typed landing edge.

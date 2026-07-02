@@ -2,12 +2,9 @@
 
 | Route | Boundary | Evidence |
 |---|---|---|
-| Scalar `+8/9` only | Wrong Route-2 sign and no typed landing edge | block22 runner |
-| Scalar `-8/9` only | Sign is present but still untyped | block22 runner |
-| Physical selector only | Does not identify a Route-2 center endpoint ratio | block22 runner |
-| T-side sign only | Does not supply E-center magnitude | block22 runner |
-| Center slot only | Slot existence is not a value | block22 runner |
-| Wrong signed typed bridge | Computes a different E-center entry | block22 runner |
+| Sign-only repair | Negative sign is supported but leaves many admissible `rho_E` values | block23 runner |
+| Positive-lift positivity | Gives `q_E > 0`, not a magnitude | positivity parent and block23 runner |
+| Scalar `8/9` support | Supplies color-domain magnitude but not Route-2 typecast | Rconn/source-domain parents |
+| Physical selector shortcut | Separate readout/weighting context | kappa parent note |
 
-This ledger is narrow: it prunes weaker repairs, while leaving a future typed
-readout landing theorem open.
+Block23 is support, not a new no-go against magnitude/typecast routes.

@@ -1,8 +1,8 @@
 # PR Backlog
 
-No PR backlog for block22. GitHub delivery succeeded.
+No PR backlog for block23. GitHub delivery succeeded.
 
 ```text
-PR #4551
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4551
+PR #4552
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4552
 ```

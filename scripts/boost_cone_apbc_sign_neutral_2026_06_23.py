@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
 The boost-cone-automorphism and antiperiodic-tau boundary-datum routes to
-eps = e_4^2 = -1 are both closed: the route is circular and the datum is
-sign-neutral.
+eps = e_4^2 = -1 are checked no-go boundaries: the boost route is circular and
+the boundary datum is sign-neutral.
 
-Companion to RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23 (PR #4738). That note
-showed the record-tick is signature-neutral and named one harder open route: the
-metric sign eps=-1 is equivalent to a NON-COMPACT (boost) symmetry of the
-emergent record-causal cone, which one might hope to ride on the per-axis Z_2
-(fermionic antiperiodic-tau) boundary datum. This runner certifies that sub-route
-is closed:
+Companion to RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23. That note showed the
+checked record-tick channels are signature-neutral and named one harder open
+route: the metric sign eps=-1 is equivalent to a NON-COMPACT (boost) symmetry
+of the emergent record-causal cone, which one might hope to ride on the per-axis
+Z_2 (fermionic antiperiodic-tau) boundary datum. This runner checks that
+sub-route:
 
   (A) the boost-cone-automorphism route is CIRCULAR -- a non-compact stabilizer
       of a 4D cone exists iff one metric sign is -1, which IS eps=-1;
@@ -27,9 +27,10 @@ is closed:
       unit circle), not a boost (off the unit circle) -- the wrong generator
       class for eps=-1.
 
-This MAPS a sub-route as closed; it does NOT reduce, amend, narrow, retire, or
-re-approve any registered primitive or admission, and adds no axiom/import.
-eps=-1 stays a separate, load-bearing binary admission (register-not-read class).
+This maps checked sub-routes as circular or sign-neutral; it does NOT reduce,
+amend, narrow, retire, or re-approve any registered primitive or admission, and
+adds no axiom/import. If the lane uses eps=-1, that sign remains a separate
+register-not-read input/admission.
 Negative/structural result. Class-A, finite, deterministic, memory-trivial.
 Expected: TOTAL: PASS=N FAIL=0.
 """
@@ -78,8 +79,10 @@ def boost_preserves_l1_cone(spatial_dim, eta=0.7):
 check("boost preserves the l1 forward cone in 1+1 (spatial dim 1)", boost_preserves_l1_cone(1))
 check("boost SHEARS the l1 cone out for spatial dim 2 (NOT an automorphism)", not boost_preserves_l1_cone(2))
 check("boost SHEARS the l1 cone out for spatial dim 3 (the actual record-cone)", not boost_preserves_l1_cone(3))
-# the surviving linear automorphisms of the cube/diamond cone are the hyperoctahedral group (finite=compact)
-check("the record-cone's linear automorphism group is finite hyperoctahedral x Z (compact)", True,
+# the surviving checked linear symmetries are finite signed axis permutations (compact).
+hyperoctahedral_count = (2 ** 3) * 6
+check("the checked record-cone symmetries are finite signed axis permutations x Z (compact)",
+      hyperoctahedral_count == 48 and not boost_preserves_l1_cone(3),
       "signed axis permutations preserve ||x||_1 and t; |B_3|=48 finite, no unbounded orbit")
 
 # ---------------------------------------------------------------------------
@@ -107,8 +110,16 @@ W = P @ D
 check("the tau<->x1 exchange W is REAL-orthogonal (W W^T = I, det = +-1)",
       np.allclose(W @ W.T, np.eye(4)) and abs(abs(np.linalg.det(W)) - 1.0) < 1e-12 and np.isrealobj(W),
       f"det(W) = {np.linalg.det(W):+.0f}; a real-orthogonal map preserves the Euclidean form -> transports APBC across axes with NO sign flip")
-check("=> APBC carries WHICH axis wraps (axis-labeling), never WHAT signature (sign-neutral)", True,
-      "consistent with the retained SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER no-go (axis-supply scope)")
+apbc_axis_label_only = (
+    on_circle < 1e-9
+    and no_root
+    and np.allclose(W @ W.T, np.eye(4))
+    and abs(abs(np.linalg.det(W)) - 1.0) < 1e-12
+    and np.isrealobj(W)
+)
+check("=> APBC carries WHICH axis wraps (axis-labeling), not WHAT signature in this check",
+      apbc_axis_label_only,
+      "consistent with the SINGLE_CLOCK_KMS_APBC_AXIS_SUPPLIER axis-supply scope")
 
 # ---------------------------------------------------------------------------
 banner("(D) the peripheral/unitary summand carries a COMPACT phase, not a boost")
@@ -138,10 +149,10 @@ J = [s / 2 for s in sig]; K = [-1j * s / 2 for s in sig]
 faithful = all(np.allclose(K[i] @ K[j] - K[j] @ K[i], -1j * sgn * J[k])
                for (i, j), (k, sgn) in {(0, 1): (2, 1), (1, 2): (0, 1), (2, 0): (1, 1)}.items())
 check("the faithful K=-i sigma/2 closes so(3,1) but REQUIRES the explicit i (not forced by Quantum alone)",
-      faithful, "boost-faith no-go (retained_no_go, f=935): the i + a matter-attachment selector are the import")
+      faithful, "boost-faith no-go: the i + a matter-attachment selector are the import")
 
 banner("SUMMARY")
-print("Both named sub-routes to eps=e_4^2=-1 from the boundary datum / cone are closed:")
+print("The named checked sub-routes to eps=e_4^2=-1 from the boundary datum / cone are mapped:")
 print("  (A) boost-cone-automorphism is CIRCULAR (boost-stabilizer EXISTS iff a metric sign is -1 = eps);")
 print("  (B) the discrete record-cone is a polytope whose automorphism group is COMPACT")
 print("      (a hyperbolic boost shears the l1/l_inf cone for spatial dim >= 2);")
@@ -149,10 +160,10 @@ print("  (C) the antiperiodic-tau datum is SIGN-NEUTRAL: compact unit-circle wra
 print("      group has no sqrt(-1), and the time<->space exchange is real-orthogonal")
 print("      (axis-labeling, not signature); eps=-1 lives in the Clifford fiber (the Wick i);")
 print("  (D) the peripheral phase is a compact SO(2) angle, not a boost (wrong generator class);")
-print("  (E) and independently, the on-site local algebra does not force the boost (retained no-go).")
-print("So eps=-1 stays a SEPARATE, load-bearing binary admission (register-not-read class).")
-print("The only remaining firewall-clean opening is an EMERGENT non-compact symmetry of the")
-print("record-formation DYNAMICS (the S4-transport note's open gate, owner-framing-gated) --")
-print("orthogonal to the static cone, the boundary datum, and the peripheral phase, all closed here.")
+print("  (E) and independently, the on-site local algebra does not force the boost.")
+print("So eps=-1 remains a separate binary input/admission if the lane uses Lorentzian signature.")
+print("A remaining firewall-clean opening is an EMERGENT non-compact symmetry of the")
+print("record-formation DYNAMICS (the S4-transport note's open gate, owner-framing-gated),")
+print("orthogonal to the static cone, the boundary datum, and the peripheral phase checked here.")
 print("Maps sub-routes only; no primitive/admission status touched; no axiom/import.")
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

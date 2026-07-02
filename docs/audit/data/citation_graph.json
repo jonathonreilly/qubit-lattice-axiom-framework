@@ -53462,7 +53462,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07"
+      "to": "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07"
     },
     {
       "from": "repo.front_door_status",
@@ -103170,7 +103170,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "staggered_dirac_grassmann_forcing_theorem_note_2026-05-07",
+        "staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
         "cl3_taste_generation_theorem",
@@ -103180,7 +103180,7 @@
         "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
       ],
       "helper_runner_paths": [],
-      "note_hash": "8635080fa83767cfa27c3be2099a035fe1b9a53f8211708973655de494d95723",
+      "note_hash": "5c38457d3bf8651e91784d34773c45cc15237a218a11b1719fd88c490f14d9ca",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

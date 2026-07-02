@@ -1,25 +1,25 @@
 # Claim Status Certificate
 
 ```yaml
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "This block prunes weak source-domain repairs and does not supply the typed readout landing theorem."
+proposal_allowed_reason: "The block proves sign support only; it does not supply magnitude/typecast."
 independent_review_required_before_authority_change: true
 bare_authority_status_allowed: false
 ```
 
-## Claim Boundary
+## Boundary
 
-The result is a typed-edge cut certificate:
+Block23 proves:
 
-- the current source bank has no path from `su3_R_conn_8_9` to the Route-2
-  E-center readout nodes;
-- weak scalar/sign/selector/slot additions still fail;
-- adding a typed Route-2 landing edge succeeds by existing endpoint algebra.
+- positivity gives `q_E > 0`;
+- granted T-side values give `q_T > 0` and `s_TE < 0`;
+- therefore `c_TE < 0` throughout the positive-lift family.
 
-It is not a proof of the positive typed readout landing theorem.
+It does not prove `|c_TE| = F_adj`, does not typecast color-domain magnitude
+into Route-2 readout, and does not select `rho_E`.

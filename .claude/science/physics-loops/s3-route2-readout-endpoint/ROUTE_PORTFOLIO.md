@@ -1,34 +1,27 @@
 # Route Portfolio
 
-## Selected Route: Typed-Edge Cut Certificate
+## Selected Route: Sign Support
 
-Status: delivered as a narrow no-go.
+Status: exact support.
 
-The current source bank cannot reach the Route-2 E-center readout nodes. The
-runner proves that weak scalar, sign, selector, and slot additions fail unless
-they include a typed Route-2 readout landing edge.
+This route proves the sign half of the source-domain split from existing
+positivity and T-side orientation. It does not touch the magnitude/typecast
+problem.
 
-## Positive Route Left Open
+## Remaining Positive Route
 
-Target one of the equivalent typed readout edges:
+Target one of:
 
 ```text
+|c_TE| = F_adj
+scalar_signed_minus_8_9 -> route2_center_TE_minus_8_9
 su3_R_conn_8_9 -> route2_center_TE_minus_8_9
 su3_R_conn_8_9 -> route2_q_E_15_8
 su3_R_conn_8_9 -> route2_rho_E_21_4
 ```
 
-or the two-edge split:
+## Rejected Routes For This Block
 
-```text
-su3_R_conn_8_9 -> scalar_signed_minus_8_9
-scalar_signed_minus_8_9 -> route2_center_TE_minus_8_9
-```
-
-## Rejected Routes
-
-- Fresh numeric matching to `8/9`: already insufficient without a typed
-  landing edge.
-- T-side sign-only repair: does not supply E-center magnitude.
-- Physical selector shortcut: separate context and still not a Route-2 center
-  endpoint ratio.
+- Sign-only promotion: sign leaves a continuum of `rho_E` values.
+- Scalar magnitude without typecast: still color-domain support.
+- Physical selector shortcut: separate route, not a Route-2 endpoint ratio.

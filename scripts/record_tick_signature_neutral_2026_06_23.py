@@ -3,18 +3,18 @@
 The record-tick is signature-neutral: eps = e_4^2 = -1 is a separate admission.
 
 Cross-sector / emergent-time question: does the monotone, irreversible Z^3
-record-tick FORCE the Lorentzian signature eps = e_4^2 = -1? This runner
-certifies that it does NOT: the record-tick natively supplies an ARROW
-(direction), a CPTP CONTRACTION T = exp(-tau H) (the Euclidean heat-kernel),
-positive energy H >= 0 (durability), and a causal order -- ALL of which are
-present in a purely Euclidean (eps = +1, SO(4)) theory and are therefore
-logically ORTHOGONAL to the metric sign. The sign eps = -1 is the
-multiplication-by-i of the Wick continuation tau -> i t (e_4 -> i e_4), which no
-monotonicity / contraction / causal-order / durability supplies.
+record-tick FORCE the Lorentzian signature eps = e_4^2 = -1? This runner checks
+that the record-tick channels below are signature-neutral: an ARROW (direction),
+a CPTP CONTRACTION T = exp(-tau H) (the Euclidean heat-kernel), positive energy
+H >= 0 (durability), and a causal order -- all present in a Euclidean
+(eps = +1, SO(4)) setting and therefore orthogonal to the metric sign. The sign
+eps = -1 enters through the multiplication-by-i of the Wick continuation
+tau -> i t (e_4 -> i e_4), not through those checked channels.
 
 This localizes eps = -1 into the same register-not-read import class as the
-readout admissions; it is NOT a record-tick corollary. This note does NOT amend,
-narrow, retire, or re-approve any registered primitive, and adds no axiom/import.
+readout admissions if the lane uses Lorentzian signature; it is NOT a
+record-tick corollary. This note does NOT amend, narrow, retire, or re-approve
+any registered primitive, and adds no axiom/import.
 
 Class-A, finite-dimensional, deterministic, memory-trivial (2x2/4x4 operators).
 Expected: TOTAL: PASS=N FAIL=0.
@@ -61,16 +61,23 @@ check("Euclidean exp(-tau H): |lambda| <= 1 (contraction, eps=+1 side)", np.all(
       f"|lambda(T_E)| = {np.round(lamE,4).tolist()}")
 check("Lorentzian exp(-i tau H): |lambda| = 1 (unitary, eps=-1 side) -- SAME H",
       np.allclose(lamL, 1.0), f"|lambda(T_L)| = {np.round(lamL,4).tolist()}")
-check("positivity/durability constrains only |spec(T)|, NEVER the sign of e_4^2",
-      True, "same H >= 0 gives both branches; the sign is the i, not in H")
+same_h_both_branches = (
+    np.all(np.linalg.eigvalsh(H.real) >= -1e-12)
+    and np.all(lamE <= 1 + 1e-12)
+    and np.allclose(lamL, 1.0)
+)
+check("positivity/durability constrains only |spec(T)|, not the sign of e_4^2",
+      same_h_both_branches, "same H >= 0 gives both branches; the sign is the i, not in H")
 
 banner("Contraction = unitary ONLY at the Wick point (H=0 or t imaginary)")
 # for H>0, real tau>0 the semigroup is strictly NON-unitary; only tau->i*tau (Wick) restores |lambda|=1
 nonunit = np.linalg.norm(TE.conj().T @ TE - I2)
 check("exp(-tau H) is NOT unitary for H>0, real tau>0 (strict contraction)",
       nonunit > 1e-6, f"||T_E^dag T_E - I|| = {nonunit:.4f}")
-check("the contraction->unitary identification IS the eps=-1 admission (the factor i: t = -i tau)",
-      True, "exp(-tau H) -> exp(-i t H) requires tau = i t; that i is the entire content of eps=-1")
+wick_unitary = np.allclose(TL.conj().T @ TL, I2)
+check("the contraction->unitary identification requires the eps=-1 input (the factor i: t = -i tau)",
+      nonunit > 1e-6 and wick_unitary,
+      "exp(-tau H) -> exp(-i t H) requires tau = i t; that i carries eps=-1")
 
 banner("The ARROW coexists with a Euclidean (eps=+1) substrate: irreversibility != signature")
 v = np.array([1.0, 1.0], complex)
@@ -78,8 +85,10 @@ norms = [np.linalg.norm(np.linalg.matrix_power(TE, n) @ v) for n in range(6)]
 mono = all(norms[i] > norms[i + 1] for i in range(len(norms) - 1))
 check("record-norm ||T_E^n v|| is strictly monotone (an ARROW) on the eps=+1 heat-kernel",
       mono, f"norms = {np.round(norms,4).tolist()}  (monotone decay = arrow, with eps=+1)")
-check("arrow fixes DIRECTION only (orientation, present in SO(4) and SO(3,1)); eps fixes KIND",
-      True, "past-hypothesis = theta->-theta in either group; eps = e_4^2 is orthogonal")
+heat_kernel_signature_neutral = mono and np.allclose(TE, TE.conj().T) and np.all(np.linalg.eigvalsh(TE) > 0)
+check("arrow fixes direction only in the checked heat-kernel channel; eps fixes metric kind",
+      heat_kernel_signature_neutral,
+      "monotone Euclidean heat-kernel gives an arrow while leaving eps=e_4^2 unselected")
 
 banner("On-site so(3,1) is available but the boost-vs-rotation (sign) is an unfixed label")
 J = [s / 2 for s in sig]
@@ -102,11 +111,11 @@ print("  - an ARROW (monotone record-norm = direction = the admitted past hypoth
 print("  - a CPTP CONTRACTION T=exp(-tau H) (the sign-neutral Euclidean heat-kernel),")
 print("  - POSITIVE ENERGY H>=0 (durability/spectrum condition),")
 print("  - a causal order (metric-free).")
-print("All four are present in a purely Euclidean theory, hence ORTHOGONAL to the")
-print("metric sign. eps = e_4^2 = -1 is the multiplication-by-i of the Wick step")
+print("All four checked channels are present in a Euclidean theory, hence ORTHOGONAL")
+print("to the metric sign. eps = e_4^2 = -1 is the multiplication-by-i of the Wick step")
 print("tau->i t (e_4->i e_4): no on-site e_4 exists (anticommutant dim 0), the SAME")
 print("H>=0 feeds both branches, and a contraction equals a unitary only at the Wick")
-print("point. So eps=-1 is a SEPARATE, load-bearing binary admission in the")
-print("register-not-read import class -- NOT a record-tick corollary. Negative/")
-print("structural result; adds no axiom/import; no primitive touched.")
+print("point. So eps=-1 is a separate binary input/admission if the lane uses")
+print("Lorentzian signature -- NOT a record-tick corollary of the checked channels.")
+print("Negative/structural result; adds no axiom/import; no primitive touched.")
 print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")

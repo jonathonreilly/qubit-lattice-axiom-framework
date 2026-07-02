@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/record_tick_signature_neutral_2026_06_23.py
-runner_sha256: ef51dc770279407aab48a661eef881809fd44ee09f404081cdbef99785761754
+runner_sha256: 06056842b269d1b0fa48a19d3a4710d47da4781cb4884f14974217b376d06fe5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -17,19 +17,19 @@ Same H>=0 feeds BOTH branches: contraction (eps=+1) and unitary (eps=-1)
 ============================================================================
 [PASS] Euclidean exp(-tau H): |lambda| <= 1 (contraction, eps=+1 side) -- |lambda(T_E)| = [0.8607, 0.5488]
 [PASS] Lorentzian exp(-i tau H): |lambda| = 1 (unitary, eps=-1 side) -- SAME H -- |lambda(T_L)| = [1.0, 1.0]
-[PASS] positivity/durability constrains only |spec(T)|, NEVER the sign of e_4^2 -- same H >= 0 gives both branches; the sign is the i, not in H
+[PASS] positivity/durability constrains only |spec(T)|, not the sign of e_4^2 -- same H >= 0 gives both branches; the sign is the i, not in H
 
 ============================================================================
 Contraction = unitary ONLY at the Wick point (H=0 or t imaginary)
 ============================================================================
 [PASS] exp(-tau H) is NOT unitary for H>0, real tau>0 (strict contraction) -- ||T_E^dag T_E - I|| = 0.7453
-[PASS] the contraction->unitary identification IS the eps=-1 admission (the factor i: t = -i tau) -- exp(-tau H) -> exp(-i t H) requires tau = i t; that i is the entire content of eps=-1
+[PASS] the contraction->unitary identification requires the eps=-1 input (the factor i: t = -i tau) -- exp(-tau H) -> exp(-i t H) requires tau = i t; that i carries eps=-1
 
 ============================================================================
 The ARROW coexists with a Euclidean (eps=+1) substrate: irreversibility != signature
 ============================================================================
 [PASS] record-norm ||T_E^n v|| is strictly monotone (an ARROW) on the eps=+1 heat-kernel -- norms = [1.4142, 1.0208, 0.7997, 0.6587, 0.5563, 0.475]  (monotone decay = arrow, with eps=+1)
-[PASS] arrow fixes DIRECTION only (orientation, present in SO(4) and SO(3,1)); eps fixes KIND -- past-hypothesis = theta->-theta in either group; eps = e_4^2 is orthogonal
+[PASS] arrow fixes direction only in the checked heat-kernel channel; eps fixes metric kind -- monotone Euclidean heat-kernel gives an arrow while leaving eps=e_4^2 unselected
 
 ============================================================================
 On-site so(3,1) is available but the boost-vs-rotation (sign) is an unfixed label
@@ -45,13 +45,13 @@ The Z^3 record-tick supplies, all natively at eps=+1 (Euclidean/SO(4)):
   - a CPTP CONTRACTION T=exp(-tau H) (the sign-neutral Euclidean heat-kernel),
   - POSITIVE ENERGY H>=0 (durability/spectrum condition),
   - a causal order (metric-free).
-All four are present in a purely Euclidean theory, hence ORTHOGONAL to the
-metric sign. eps = e_4^2 = -1 is the multiplication-by-i of the Wick step
+All four checked channels are present in a Euclidean theory, hence ORTHOGONAL
+to the metric sign. eps = e_4^2 = -1 is the multiplication-by-i of the Wick step
 tau->i t (e_4->i e_4): no on-site e_4 exists (anticommutant dim 0), the SAME
 H>=0 feeds both branches, and a contraction equals a unitary only at the Wick
-point. So eps=-1 is a SEPARATE, load-bearing binary admission in the
-register-not-read import class -- NOT a record-tick corollary. Negative/
-structural result; adds no axiom/import; no primitive touched.
+point. So eps=-1 is a separate binary input/admission if the lane uses
+Lorentzian signature -- NOT a record-tick corollary of the checked channels.
+Negative/structural result; adds no axiom/import; no primitive touched.
 
 TOTAL: PASS=10 FAIL=0
 

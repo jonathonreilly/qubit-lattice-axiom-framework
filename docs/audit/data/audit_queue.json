@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 283,
     "leaf": 584,
-    "medium": 492
+    "medium": 491
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17799,33 +17799,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "key_terminology",
-        "record_formation_pointer_non_demolition_dynamics_constraint_bounded_theorem_note_2026-06-05",
-        "flavor_qd_objectivity_fixes_basis_not_weight_2026-06-02",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.426,
-      "note_path": "docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_darwinism_bridge_residual_2026_06_05.py",
-      "transitive_descendants": 42
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -17953,6 +17926,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.0,
+      "note_path": "docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py",
+      "transitive_descendants": 31
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17974,30 +17971,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_verifier.py",
       "transitive_descendants": 25
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_registrable_readout_determinant_character_algebraic_core_split_2026_06_18.py",
-      "transitive_descendants": 16
     },
     {
       "audit_independence_required": "any_non_self",
@@ -49817,6 +49790,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 101,
-  "total_pending": 1660
+  "ready_count": 100,
+  "total_pending": 1659
 }

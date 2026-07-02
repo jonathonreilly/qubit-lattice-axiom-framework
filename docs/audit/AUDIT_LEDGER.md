@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 201 |
 | **retained_bounded** | 909 |
 | _retained_pending_chain_ | 4 |
-| open_gate | 31 |
-| unaudited | 1658 |
+| open_gate | 32 |
+| unaudited | 1657 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1324 |
+| `audited_clean` | 1325 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1984 |
+| `unaudited` | 1983 |
 
 | claim_type | count |
 |---|---:|
@@ -341,6 +341,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_upper_bound_import_scope_gate_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_independence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -4619,6 +4620,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **load-bearing step:** L_runner intersect {d : d <= 3} = {3}, while L_runner intersect {d : d <= 4} = {3,4}, so current unique d=3 selection depends on the native stable-orbit upper edge.  _(class `A`)_
 - **chain closes:** True — The cited lower-bound authority supplies L_runner = {3,4,5}; the stable-orbit support supplies the d <= 3 edge; and the Coulomb support supplies only the weaker d <= 4 companion. The stated intersections are correct and establish the bounded scope separation.
 - **rationale:** The load-bearing step is finite-set algebra over one-hop authorities that the packet marks retained_bounded, which is retained-grade under the rubric. The runner mainly verifies prose anchors and recomputes the same set intersections; it is not a first-principles physics derivation, but the claim does not require one. The note correctly fences off full Bertrand, hydrogen spectrum, atomic-stability, framework-native dimension selection, and repo-wide promotion claims.
+- **auditor confidence:** high
+
+### `darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05`
+
+- **Note:** [`DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md`](../../docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited whether the current minimal axioms force the quantum-Darwinism bridge from record additivity and lattice locality, and whether the residual premise is precisely local observability of a determined outcome.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T031500Z-ac7d71ab-darwinism_bridge_residua`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The decisive step is the explicit additive, determined, non-redundant witness: a global-parity or independent-record construction satisfies Record additivity and locality-compatible finite qubit algebra while no spatially disjoint local fragment can recover the same determined outcome, so local observability is not entailed by the axioms.  _(class `C`)_
+- **chain closes:** True — The restricted packet includes the current registered minimal axioms, which explicitly omit local observability, and the runner supplies concrete finite-qubit counterexamples separating additivity/determinacy from redundant local broadcast. The missing step for downstream Darwinism use is exactly the added local-observability premise, not an unstated derivation inside this open-gate note.
+- **rationale:** The source note is scoped as an open-gate classification, not as a derivation of the Darwinism bridge. The cited minimal-axiom authority is a registered axiom premise and expressly states that local observability remains outside the axiom content. The runner source performs actual finite-dimensional density-matrix and mutual-information computations rather than merely printing expected constants, and its witnesses support the separation claimed in the note. The one-hop retained authorities are consistent with this classification: they treat QD objectivity/redundancy as supplied or bounded input rather than closed axiom content.
 - **auditor confidence:** high
 
 ### `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12`

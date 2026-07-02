@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 205 |
 | **retained_no_go** | 207 |
-| **retained_bounded** | 925 |
+| **retained_bounded** | 926 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 33 |
-| unaudited | 1630 |
+| unaudited | 1629 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1348 |
+| `audited_clean` | 1349 |
 | `audited_conditional` | 43 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1956 |
+| `unaudited` | 1955 |
 
 | claim_type | count |
 |---|---:|
@@ -126,7 +126,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 19 | `staggered_dirac_bz_corner_forcing_theorem_note_2026-05-07` | bounded_theorem | critical | 901 | 34.82 | `unaudited` | unaudited |
 | 20 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 289 | 34.68 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 740 | 33.03 | `unaudited` | unaudited |
-| 22 | `kinetic_isotropy_primitive` | meta | critical | 985 | 32.95 | `unaudited` | meta |
+| 22 | `kinetic_isotropy_primitive` | meta | critical | 984 | 32.94 | `unaudited` | meta |
 | 23 | `left_handed_charge_matching_note` | decoration | critical | 1130 | 32.64 | `audited_decoration` | `decoration_under_graph_first_su3_integration_note` |
 | 24 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | critical | 392 | 32.62 | `audited_clean` | **retained** |
 | 25 | `wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24` | positive_theorem | critical | 737 | 31.53 | `unaudited` | unaudited |
@@ -1059,6 +1059,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_loop_v3_note` | no_go | ~~audited_clean~~ | **retained_no_go** | judicial_review | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_mechanism_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | C | - |
 | `poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_arrow_orientation_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -15147,6 +15148,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
   - `SIGN_PORTABILITY_INVARIANT_NOTE.md`
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
+- **auditor confidence:** high
+
+### `positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23`
+
+- **Note:** [`POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md`](../../docs/POSITIVITY_BRIDGE_REQUIRES_ORIENTATION_SIGN_NARROW_THEOREM_NOTE_2026-05-23.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** One-dimensional character/sign-magnitude constraints on the finite S_3 axis-ordering surface: det(D+mI) positivity is S_3-invariant and cannot select C_3; the sign/orientation character has positive set C_3 if such a physical constraint is independently supplied.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T044255Z-456b8f9f-positivity_bridge_requir`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Among one-dimensional character/sign-magnitude constraints on the finite S_3 axis-ordering surface, determinant-magnitude positivity is the trivial representation and selects all of S_3, while the sign character has positive level set A_3 = C_3.  _(class `A`)_
+- **chain closes:** True — The retained determinant-positivity input plus retained_bounded S_3 axis-symmetry make det(D+mI)>0 constant over the S_3 orderings, so it selects all of S_3. Finite S_3 representation theory then gives the only nontrivial one-dimensional character as sgn, whose +1 subset is A_3 = C_3; the separate physical handedness bridge is explicitly not claimed.
+- **rationale:** The audited claim is narrowly scoped and does not import the open physical orientation-positivity bridge. Its load-bearing step is finite group/linear-algebra closure over retained-grade inputs, not a definition, external comparator, or tuned numerical match. The runner source performs actual finite determinant and sign-character checks and includes scope guards, with no helper-artifact gap or forbidden comparator import. The no-go boundary is narrow: only the determinant-magnitude route is closed, while global orientation-sign selection remains open.
 - **auditor confidence:** high
 
 ### `positivity_orientation_selects_c3_narrow_theorem_note_2026-05-23`

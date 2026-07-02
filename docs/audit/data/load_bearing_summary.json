@@ -145,8 +145,8 @@
     {
       "claim_id": "kinetic_isotropy_primitive",
       "criticality": "critical",
-      "load_bearing_score": 32.945,
-      "transitive_descendants": 985
+      "load_bearing_score": 32.944,
+      "transitive_descendants": 984
     },
     {
       "claim_id": "left_handed_charge_matching_note",

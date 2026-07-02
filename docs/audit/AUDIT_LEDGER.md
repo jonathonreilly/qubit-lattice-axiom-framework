@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 945 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 35 |
-| unaudited | 1597 |
+| unaudited | 1596 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1377 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1923 |
+| `unaudited` | 1922 |
 
 | claim_type | count |
 |---|---:|
@@ -86,8 +86,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 938 |
-| `leaf` | 1461 |
+| `medium` | 937 |
+| `leaf` | 1462 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1538,6 +1538,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hypercharge_identification_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_records_objectivity_conditional_note_2026-05-31` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `n5_single_generator_clock_exchange_invariance_narrow_no_go_note_2026-06-17` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -11704,6 +11705,22 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The Hilbert-Schmidt Gram witness diag(3,6,6) realizes the (1,2) weighting while remaining real, positive-definite, C_3-invariant, and Theta-invariant, so the listed constraints do not forbid (1,2).  _(class `A`)_
 - **chain closes:** True — A single admissible (1,2) witness satisfying every listed retained constraint is enough to refute the proposed forcing route. The runner source actually computes the invariant Gram cone, Theta residuals, Hermitian eigenvalue form, Q compatibility, determinant weighting, and witness invariance rather than merely printing constants.
 - **rationale:** All cited authorities are retained-grade under the rubric, and no open or support-status dependency is used load-bearing. The load-bearing step is a genuine algebraic counterexample over the stated finite matrices, not a definition, renaming, fitted numerical match, or external comparator. The no-go is narrowly scoped and leaves the SO(2)/U(1)_b quotient/readout-factorization handle open, so the negative conclusion does not overreach the tested route.
+- **auditor confidence:** high
+
+### `koide_records_objectivity_conditional_note_2026-05-31`
+
+- **Note:** [`KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md`](../../docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the source-bounded conditional algebra: supplied equal-block `(1,1)` sector weighting plus supplied records/objectivity maximization selects `r=1/2` and `Q=2/3`; neither selector input is derived in the packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T063316Z-1f9578ff-koide_records_objectivit`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** For the two-block functional `w_s log E_+ + w_p log E_perp` at fixed total energy, the maximum occurs at `r*=w_p/(2w_s)`, so supplied equal weights `(1,1)` give `r=1/2` and hence `Q=(1+2r)/3=2/3`.  _(class `A`)_
+- **chain closes:** False — The extremum algebra closes conditionally: differentiating the fixed-total equal-weight log functional gives the unique maximum at `r=1/2`, and `Q=(1+2r)/3=2/3`. The full chain from retained/framework inputs does not close because the equal-block sector measure and records/objectivity selector are supplied rather than derived.
+- **rationale:** Issue: the optimizer algebra is correct, but the equal-block metric and records/objectivity maximization selector enter as supplied premises. Why this blocks: the cited authorities leave the weighting/selector choice open, and the Record/tracial comparison does not derive the objectivity selector. Repair target: derive or explicitly admit the equal-block sector measure and objectivity selector in separate retained-grade source work. Claim boundary until fixed: this is a non-circular conditional algebra certificate, not an unconditional Koide theorem.
+- **open / conditional deps cited:**
+  - `KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`
+  - `KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md`
 - **auditor confidence:** high
 
 ### `koide_records_pointer_grounds_block_channel_note_2026-05-31`

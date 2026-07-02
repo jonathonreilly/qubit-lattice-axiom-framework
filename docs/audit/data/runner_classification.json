@@ -9960,6 +9960,18 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_epsstar_curve_pt_boundary_2026_06_12.py"
     },
+    "epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 3,
+        "D": 27
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py"
+    },
     "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12": {
       "assert_count": 1,
       "counts": {
@@ -15492,6 +15504,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_harmonic_ladder_origin_2026_06_12.py"
     },
+    "harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 40
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py"
+    },
     "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
       "assert_count": 1,
       "counts": {
@@ -16475,6 +16499,18 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/frontier_hkd_correspondence_general_charts_2026_06_12.py"
+    },
+    "hkd_correspondence_structural_equivalence_bounded_theorem_note_2026-06-12": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py"
     },
     "hkd_entry_sum_full_l_closure_narrow_theorem_note_2026-06-12": {
       "assert_count": 1,
@@ -22716,6 +22752,18 @@
       "dominant_class": "C",
       "runner": "scripts/native_gauge_transfer_block_hellmann_monotonicity_rung_eight_bounded_2026_06_12.py"
     },
+    "native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_2026_06_12.py"
+    },
     "native_gauge_transfer_certified_gap_rung_four_bounded_note_2026-06-12": {
       "assert_count": 2,
       "counts": {
@@ -22739,6 +22787,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/native_gauge_transfer_certified_gap_rung_two_bounded_2026_06_12.py"
+    },
+    "native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_2026_06_12.py"
     },
     "native_gauge_transfer_diagonal_domination_rung_nine_bounded_note_2026-06-12": {
       "assert_count": 2,
@@ -22787,6 +22847,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py"
+    },
+    "native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_2026_06_12.py"
     },
     "native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_note_2026-06-12": {
       "assert_count": 1,
@@ -22883,6 +22955,18 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_2026_06_12.py"
+    },
+    "native_gauge_transfer_w85_finite_witness_open_gate_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/native_gauge_transfer_w85_finite_witness_open_gate_2026_06_12.py"
     },
     "native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_note_2026-06-12": {
       "assert_count": 1,
@@ -28140,6 +28224,18 @@
       "dominant_class": "D",
       "runner": "scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py"
     },
+    "quark_route2_e_channel_source_readout_construction_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "runner": "scripts/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.py"
+    },
     "quark_route2_ell_e_structural_narrowing_bounded_note_2026-06-12": {
       "assert_count": 1,
       "counts": {
@@ -29544,6 +29640,18 @@
       "dominant_class": null,
       "runner": "scripts/frontier_restricted_strong_field_closure_packet.py"
     },
+    "reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 13,
+        "B": 5,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py"
+    },
     "reta_conversion_factor_carrier_class_elimination_bounded_note_2026-06-12": {
       "assert_count": 1,
       "counts": {
@@ -29555,6 +29663,18 @@
       "decoration_candidate": true,
       "dominant_class": "A",
       "runner": "scripts/frontier_reta_conversion_carrier_class_elimination_2026_06_12.py"
+    },
+    "reta_magnitude_is_continuum_index_theorem_lattice_index_is_integer_bounded_note_2026-06-12": {
+      "assert_count": 2,
+      "counts": {
+        "A": 7,
+        "B": 1,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "runner": "scripts/frontier_reta_magnitude_continuum_index_theorem_2026_06_12.py"
     },
     "retained_cross_lane_consistency_support_note_2026-04-22": {
       "assert_count": 0,
@@ -31007,6 +31127,18 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py"
+    },
+    "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
+      "runner": "scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py"
     },
     "single_clock_axis_selection_from_record_durability_narrow_no_go_note_2026-06-11": {
       "assert_count": 2,
@@ -56323,6 +56455,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 3,
+        "D": 27
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_epsstar_sommerfeld_derivation_2026_06_12.py": {
       "assert_count": 1,
       "claims": [
@@ -59052,6 +59199,21 @@
       "dominant_class": "D",
       "exists": true
     },
+    "scripts/frontier_harmonic_ladder_weight_law_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 40
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true
+    },
     "scripts/frontier_heat_kernel_unique_diffusion_kernel_2026_06_08.py": {
       "assert_count": 1,
       "claims": [
@@ -60072,6 +60234,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/frontier_hkd_correspondence_equivalence_2026_06_12.py": {
+      "assert_count": 2,
+      "claims": [
+        "hkd_correspondence_structural_equivalence_bounded_theorem_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_hkd_correspondence_general_charts_2026_06_12.py": {
@@ -69513,6 +69690,21 @@
       "dominant_class": null,
       "exists": true
     },
+    "scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "reta_algebraic_irreducibility_genuine_readout_admission_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 13,
+        "B": 5,
+        "C": 0,
+        "D": 4
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/frontier_reta_conversion_carrier_class_elimination_2026_06_12.py": {
       "assert_count": 1,
       "claims": [
@@ -69525,6 +69717,21 @@
         "D": 0
       },
       "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/frontier_reta_magnitude_continuum_index_theorem_2026_06_12.py": {
+      "assert_count": 2,
+      "claims": [
+        "reta_magnitude_is_continuum_index_theorem_lattice_index_is_integer_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 7,
+        "B": 1,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
       "dominant_class": "A",
       "exists": true
     },
@@ -70248,6 +70455,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "D",
+      "exists": true
+    },
+    "scripts/frontier_single_clock_apbc_axis_label_bridge_2026_06_16.py": {
+      "assert_count": 1,
+      "claims": [
+        "single_clock_apbc_axis_label_bridge_bounded_theorem_note_2026-06-16"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "B",
       "exists": true
     },
     "scripts/frontier_single_clock_uniqueness_scope_boundary_2026_06_06.py": {
@@ -80977,6 +81199,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "native_gauge_transfer_c00_lower_bound_rung_twelve_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/native_gauge_transfer_certified_gap_rung_four_bounded_2026_06_12.py": {
       "assert_count": 2,
       "claims": [
@@ -81002,6 +81239,21 @@
         "B": 2,
         "C": 5,
         "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "native_gauge_transfer_determinant_mode_tail_rung_thirteen_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -81061,6 +81313,21 @@
         "A": 0,
         "B": 5,
         "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "native_gauge_transfer_outside_weight_tail_rung_fourteen_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
         "D": 0
       },
       "decoration_candidate": false,
@@ -81185,6 +81452,21 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
+      "exists": true
+    },
+    "scripts/native_gauge_transfer_w85_finite_witness_open_gate_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "native_gauge_transfer_w85_finite_witness_open_gate_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
       "exists": true
     },
     "scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded_2026_06_12.py": {
@@ -82601,6 +82883,21 @@
       },
       "decoration_candidate": false,
       "dominant_class": "C",
+      "exists": true
+    },
+    "scripts/quark_route2_e_channel_source_readout_construction_bounded_2026_06_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "quark_route2_e_channel_source_readout_construction_bounded_note_2026-06-12"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 0,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
       "exists": true
     },
     "scripts/quark_route2_ell_e_structural_narrowing_bounded_2026_06_12.py": {
@@ -85875,14 +86172,14 @@
   "stats": {
     "decoration_candidates": 624,
     "dominant_class_distribution": {
-      "A": 462,
-      "B": 555,
-      "C": 1233,
-      "D": 422,
+      "A": 464,
+      "B": 557,
+      "C": 1237,
+      "D": 425,
       "none": 451
     },
-    "runners_classified": 3123,
-    "runners_with_C": 1675,
-    "runners_with_D": 991
+    "runners_classified": 3134,
+    "runners_with_C": 1684,
+    "runners_with_D": 997
   }
 }

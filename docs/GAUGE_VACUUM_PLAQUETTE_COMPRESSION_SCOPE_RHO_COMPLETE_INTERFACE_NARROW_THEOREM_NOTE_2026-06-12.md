@@ -31,8 +31,10 @@ outputs; no exact-arithmetic claim is made for them.
   for the factorized source-sector kernel
   `T_src(beta) = exp[(beta / 2) J] D_beta exp[(beta / 2) J]`.
 - [GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md](GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md)
-  for the all-weight structural identification of the residual environment
-  with the central formal sequence `Z_beta^env`.
+  for the all-weight formal coefficient packaging of the residual
+  environment action as the central formal sequence `Z_beta^env`; cited as
+  formal packaging only, not as an independent unmarked-DOF environment
+  derivation.
 - [GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md](GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md)
   for the bounded tensor-transfer strip construction and the open
   boundary-character target for `z_(p,q)^env` and normalized `rho_(p,q)`.

@@ -10,6 +10,9 @@ scale.
 from __future__ import annotations
 
 import math
+from pathlib import Path
+
+from lepton_brannen_boundary_checks_2026_06_13 import run_delta_boundary_checks, run_scale_boundary_checks
 
 
 PASS = 0
@@ -119,6 +122,12 @@ def main() -> int:
           313.0 < a_pdg * a_pdg < 315.0,
           "not derived")
 
+    root = Path(__file__).resolve().parents[1]
+    for ok in run_delta_boundary_checks(root, lambda n, c, d="": (check(n, c, d) or c), "downstream delta boundary"):
+        pass
+    for ok in run_scale_boundary_checks(root, lambda n, c, d="": (check(n, c, d) or c), "downstream scale boundary"):
+        pass
+
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL:
@@ -126,7 +135,7 @@ def main() -> int:
         return 1
     print(
         "VERDICT: lepton Brannen-BAE delta=2/9 open gate verified; "
-        "phase and scale remain open."
+        "phase and scale remain open, with downstream bounded/no-go anchors now checked."
     )
     return 0
 

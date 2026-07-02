@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 304,
+    "critical": 303,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -136,32 +136,6 @@
     }
   ],
   "queue": [
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
-      "claim_scope": "Finite tensor-factor Reeh-Schlieder dichotomy on H_O tensor H_Oc, plus per-carrier separating certificates for the L=6 and L=8 open free-staggered chains at m=0.3 on left-anchored regions R=1..3, and the L=6 time-translated algebra corollary; no continuum, uniform-volume, interior-region, or local time-translated-algebra claim.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.817,
-      "note_path": "docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/axiom_first_reeh_schlieder_check.py",
-      "transitive_descendants": 901
-    },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
@@ -51244,6 +51218,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 99,
-  "total_pending": 1715
+  "ready_count": 98,
+  "total_pending": 1714
 }

@@ -1,19 +1,19 @@
 # Opportunity Queue
 
-Ranked after block14.
+Ranked after block15.
 
-1. **Nonseparable total-degree-2 primitive outside `K_R` source-side Gram and outside channel metrics.**
-   Highest retained-positive probability remaining on this lane because the
-   current source-side and metric-side separable routes have been pruned.
+1. **Finite-frame/Riesz dual-leg theorem attempt.**
+   Highest remaining positive route if it can overcome the source/readout
+   split gauge freedom and derive two reciprocal factors.
 
-2. **Finite-frame/Riesz dual-leg theorem attempt.**
-   Potentially positive if it can justify two independent reciprocal factors
-   without importing the source/readout split. Needs a leg-level primitive.
+2. **Quadratic-map coefficient-selection scan.**
+   Search for an exact non-fitting principle selecting reduced coefficients in
+   `Hom_Oh(Sym^2(E (+) T1), E (+) T1)`.
 
-3. **Theta-to-slice coupling uniqueness support/no-go.**
-   Direct consumer of the unresolved readout map. Good fallback if endpoint
-   derivation stays blocked.
+3. **Theta-to-slice coupling support/no-go packet.**
+   Direct consumer fallback: package the exact conditional time-coupling
+   dependence on unresolved `rho_E`.
 
-4. **Post-endpoint direct-consumer firewall.**
-   Package exact consequences showing which downstream Route-2 time/readout
-   claims are independent of `rho_E` and which remain blocked by it.
+4. **Endpoint-independent consumer firewall.**
+   Identify downstream Route-2 statements insensitive to the missing
+   `E`-center datum.

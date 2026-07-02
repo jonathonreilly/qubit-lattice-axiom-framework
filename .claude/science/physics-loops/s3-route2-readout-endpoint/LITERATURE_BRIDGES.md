@@ -1,7 +1,6 @@
 # Literature Bridges
 
-None used in block14.
+None used in block15.
 
-The proof is finite-dimensional representation algebra on the six-arm
-`O_h` permutation representation and exact endpoint arithmetic from the repo
-notes.
+The proof is finite-dimensional character arithmetic on the six-arm
+`O_h` representation and exact endpoint algebra from repo notes.

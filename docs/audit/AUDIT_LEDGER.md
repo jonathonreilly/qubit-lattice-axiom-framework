@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 885 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1708 |
+| unaudited | 1707 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -45,6 +45,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06` | 1 |
 | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | 2 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
+| `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | 1 |
 | `decoration_under_lattice_nn_deterministic_rescale_note` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_mirror_mutual_information_chokepoint_note` | 1 |
@@ -66,16 +67,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1287 |
 | `audited_conditional` | 34 |
-| `audited_decoration` | 59 |
+| `audited_decoration` | 60 |
 | `audited_failed` | 23 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 25 |
-| `unaudited` | 2034 |
+| `unaudited` | 2033 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 1805 |
-| `decoration` | 60 |
+| `bounded_theorem` | 1804 |
+| `decoration` | 61 |
 | `meta` | 332 |
 | `no_go` | 359 |
 | `open_gate` | 171 |
@@ -117,7 +118,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 821 | 40.18 | `audited_clean` | **retained_bounded** |
 | 12 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1114 | 40.12 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 914 | 38.84 | `unaudited` | unaudited |
-| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 976 | 38.43 | `audited_clean` | **retained_bounded** |
+| 14 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 975 | 38.43 | `audited_clean` | **retained_bounded** |
 | 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 883 | 38.29 | `unaudited` | unaudited |
 | 16 | `yt_ew_color_projection_theorem` | no_go | critical | 759 | 38.07 | `audited_clean` | **retained_no_go** |
 | 17 | `cpt_exact_note` | positive_theorem | critical | 1092 | 36.59 | `audited_clean` | **retained** |
@@ -1488,6 +1489,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_mru_demotion_note_2026-04-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | `koide_kappa_spectrum_operator_bridge_theorem_2026-04-19` |
 | `koide_rho_delta_dimensionless_dof_ratio_bridge_bounded_note_2026-05-25` | decoration | ~~audited_decoration~~ | `decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` | cross_family | codex-gpt-5.5 | A | `koide_circulant_character_bridge_narrow_theorem_note_2026-05-09` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
+| `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | cross_family | codex-gpt-5.5 | A | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` |
 | `lattice_nn_mass_response_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_nn_deterministic_rescale_note` | cross_family | codex-gpt-5.5 | A | `lattice_nn_deterministic_rescale_note` |
 | `left_handed_charge_matching_note` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -11286,6 +11288,20 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** Because the graph-Laplacian symbol satisfies lambda(k)=|k|^2+O(|k|^4) at the only singular mode, the leading Green kernel is the inverse Fourier transform of 1/|k|^2, namely 1/(4 pi |x|).  _(class `C`)_
 - **chain closes:** True — The stated stencil gives lambda(k)=sum_i k_i^2-(1/12)sum_i k_i^4+O(|k|^6), so the singular Fourier coefficient is exactly the continuum |k|^-2 one under the packet's transform convention. Independently, the axis residual of 1/(4 pi r) scales as 7/(8 pi) r^-5, matching the runner's coefficient and confirming the stated lower-order lattice-harmonic behavior away from the source.
 - **rationale:** The load-bearing coefficient is not imported from the listed textbook authorities; it follows from the exact framework stencil's small-k symbol and the standard continuum Fourier normalization. The runner source genuinely evaluates the stencil symbol, continuum flux convention, and discrete residual, with no helper imports or external comparator data. The runner does hard-code the candidate continuum kernel for the flux/residual checks, but the independent Taylor/Fourier check closes the normalization from the stated operator rather than relying on that printout alone.
+- **auditor confidence:** high
+
+### `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`
+
+- **Note:** [`LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Single-parent reroute/restatement of the retained-bounded Z^3 nearest-neighbor graph-Laplacian Green-kernel asymptotic, with local checks of symbol normalization, continuum flux normalization, and lattice-harmonic residual decay.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T113537Z-6adb8d09-lattice_greens_maradudin`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** (B4) The leading Green-kernel coefficient is c = 1/(4 pi) for the framework operator, using the parent framework-local theorem plus the local symbol, flux, and residual checks (B1)-(B3).  _(class `A`)_
+- **chain closes:** True — The cited parent authority is retained_bounded and supplies the full Green-kernel asymptotic; the minimal axioms are an accepted premise node. The local B1-B3 checks correctly match the stated stencil and normalization, so no external textbook or fitted value is needed for this row.
+- **rationale:** The math checks in the runner support the stated stencil expansion, unit-flux convention, and O(r^-5) residual, and the packet contains no external comparator or fitted input. However, the row does not independently establish a new Green-kernel asymptotic; it consumes the single retained-bounded parent theorem and replays standard local normalization arithmetic. Under the zero-D, single-parent decoration rule, this should be boxed under the parent rather than treated as a separate retained bounded theorem.
+- **decoration parent:** `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
 - **auditor confidence:** high
 
 ### `lattice_keff_continuum_note`

@@ -2,20 +2,24 @@
 
 **Date:** 2026-06-21
 **Claim type:** no_go
-**Actual current-surface status: no-go over the named current-bank candidate families.**
+**Claim scope:** no_go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.txt)
+**Authority links:** [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md), [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md), [QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md), [QUARK_ROUTE2_ENDPOINT_STEP_FREE_ACTIVE_BRANCH_SLOPES_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_ENDPOINT_STEP_FREE_ACTIVE_BRANCH_SLOPES_BOUNDED_NOTE_2026-06-12.md), [QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md), [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md), [QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+
 **Status authority:** independent audit lane only. This source note does not set,
 predict, estimate, or apply any audit verdict.
-**Primary runner:** [scripts/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.py](../scripts/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.py)
-**Runner output:** [outputs/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.txt](../outputs/frontier_quark_route2_nonblind_source_readout_primitive_gate_no_go_2026_06_21.txt)
-**TRACE:** negative_route_pruning
-
-This is not an audit verdict. It is a branch-local physics-loop artifact that
+This is not an audit verdict. It is a source note that
 narrows the remaining source/readout ambiguity for the parent
 `s3_time_theta_to_slice_coupling_note`.
 
 ## Scope
 
-The parent `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md` remains an open gate
+The parent [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) remains an open gate
 because the upstream Route-2 readout-map endpoint triple is not derived:
 
 ```text
@@ -134,14 +138,14 @@ that supplies one of those equivalent E-center inputs.
 
 | Candidate family | Source surface | Gate failure |
 |---|---|---|
-| Carrier/time/factor rigidity | `S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md` | G2 fails: the time factor is universal and the spatial prefactor keeps `rho_E` arbitrary. |
-| Registration/idempotency/positivity | `ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md` | G2 fails: norm/sign conditions leave the readout direction free or only bound it by `rho_E > -6`. |
-| Positive projective `ell_E` sign family | `QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md` | G2/G6 fail: it gives `c_TE < 0` over the positive family, not the magnitude `|c_TE|=8/9`. |
-| Active-branch eta-floor endpoint slopes | `QUARK_ROUTE2_ENDPOINT_STEP_FREE_ACTIVE_BRANCH_SLOPES_BOUNDED_NOTE_2026-06-12.md` | G2/G3/G4 fail: finite implemented-envelope comparator, no closed-form endpoint triple. |
-| Measured E-center lift calibration | `QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md` | G2/G3/G4 fail: nonblind comparator evidence, with exact infinite-volume identification still open. |
-| `F_adj` or `R_conn` color fraction | `QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md` | G1/G4 fail unless the missing typed color/support endpoint bridge is supplied. |
-| Register-not-read color-trace shortcut | `RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md` | G1/G2/G4 fail: Record supplies no physical EW readout or weighting rule. |
-| Explicit `q_E=15/8` or `c_TE=-8/9` premise | `QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md` | G3/G5 fail: this is exactly the missing premise, not an independent derivation. |
+| Carrier/time/factor rigidity | [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md) | G2 fails: the time factor is universal and the spatial prefactor keeps `rho_E` arbitrary. |
+| Registration/idempotency/positivity | [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md) | G2 fails: norm/sign conditions leave the readout direction free or only bound it by `rho_E > -6`. |
+| Positive projective `ell_E` sign family | [QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md) | G2/G6 fail: it gives `c_TE < 0` over the positive family, not the magnitude `|c_TE|=8/9`. |
+| Active-branch eta-floor endpoint slopes | [QUARK_ROUTE2_ENDPOINT_STEP_FREE_ACTIVE_BRANCH_SLOPES_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_ENDPOINT_STEP_FREE_ACTIVE_BRANCH_SLOPES_BOUNDED_NOTE_2026-06-12.md) | G2/G3/G4 fail: finite implemented-envelope comparator, no closed-form endpoint triple. |
+| Measured E-center lift calibration | [QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md) | G2/G3/G4 fail: nonblind comparator evidence, with exact infinite-volume identification still open. |
+| `F_adj` or `R_conn` color fraction | [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) | G1/G4 fail unless the missing typed color/support endpoint bridge is supplied. |
+| Register-not-read color-trace shortcut | [RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) | G1/G2/G4 fail: Record supplies no physical EW readout or weighting rule. |
+| Explicit `q_E=15/8` or `c_TE=-8/9` premise | [QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md) | G3/G5 fail: this is exactly the missing premise, not an independent derivation. |
 
 No named current-bank candidate satisfies all six gates.
 

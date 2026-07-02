@@ -1,17 +1,15 @@
----
-claim_id: quark_route2_rconn_magnitude_sign_split_exact_support_note_2026-06-21
-claim_type: exact-support
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
----
-
 # Route-2 Rconn Magnitude/Sign Split Exact Support Note
 
 **Date:** 2026-06-21
-**Runner:** `scripts/frontier_quark_route2_rconn_magnitude_sign_split_2026_06_21.py`
-**Output:** `outputs/frontier_quark_route2_rconn_magnitude_sign_split_2026_06_21.txt`
-**Status:** exact support for a conditional sign-reduction theorem; not an endpoint derivation.
+**Claim type:** bounded_theorem
+**Claim scope:** exact support for a conditional sign-reduction theorem; not an endpoint derivation
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** exact support for a conditional sign-reduction theorem; not an endpoint derivation
+**Trace class:** upstream_support
+**Reachability to target:** supports the open Route-2 endpoint by isolating a bounded source/readout condition; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_rconn_magnitude_sign_split_2026_06_21.py`](../scripts/frontier_quark_route2_rconn_magnitude_sign_split_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_rconn_magnitude_sign_split_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_rconn_magnitude_sign_split_2026_06_21.txt)
+**Authority links:** [RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md), [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md)
 
 ## Scope
 

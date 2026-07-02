@@ -1,22 +1,16 @@
 # Quark Route-2 Physical Color-Ray Source Primitive No-Go
 
 **Date:** 2026-06-21
-**Type:** current-bank no-go plus conditional-support boundary
+**Claim type:** no_go
+**Claim scope:** current-bank no-go plus conditional support boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** current-bank no-go plus conditional support boundary
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
 **Primary runner:** [`scripts/frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21.py)
-**Runner output:** [`outputs/frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21.txt`](../outputs/frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21.txt)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_physical_color_ray_source_primitive_no_go_2026_06_21.txt)
+**Authority links:** [COLOR_ORIENTATION_OF_THE_STATE_IS_PREDICTIVELY_VACUOUS_NARROW_THEOREM_NOTE_2026-06-09.md](COLOR_ORIENTATION_OF_THE_STATE_IS_PREDICTIVELY_VACUOUS_NARROW_THEOREM_NOTE_2026-06-09.md), [MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md](MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md), [EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md), [RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md), [Z3_CHARACTER_ISOMORPHISM_COLOR_GENERATION_OPEN_GATE_NOTE_2026-05-10.md](Z3_CHARACTER_ISOMORPHISM_COLOR_GENERATION_OPEN_GATE_NOTE_2026-05-10.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
-```yaml
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
-conditional_surface_status: "A supplied physical color ray selects one adjoint line; its complement has normalized fraction 7/8 and conditionally yields rho_E=21/4 under the granted T-side Route-2 values."
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "The current source bank does not supply a physical color ray, gauge-frame source line, or equivalent primitive."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Question
 

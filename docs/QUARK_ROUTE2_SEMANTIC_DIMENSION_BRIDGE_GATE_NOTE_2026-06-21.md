@@ -1,9 +1,15 @@
 # Quark Route-2 Semantic Dimension Bridge Gate Note
 
 **Date:** 2026-06-21
-**Status:** current-bank bridge firewall / no-go for direct semantic closure; conditional support if a future accepted bridge supplies the missing law.
-**Primary runner:** `scripts/frontier_quark_route2_semantic_dimension_bridge_gate_2026_06_21.py`
-**Output:** `outputs/frontier_quark_route2_semantic_dimension_bridge_gate_2026_06_21.txt`
+**Claim type:** no_go
+**Claim scope:** current-bank bridge firewall / no-go for direct semantic closure; conditional support if a future accepted bridge supplies the missing law
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** current-bank bridge firewall / no-go for direct semantic closure; conditional support if a future accepted bridge supplies the missing law
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_semantic_dimension_bridge_gate_2026_06_21.py`](../scripts/frontier_quark_route2_semantic_dimension_bridge_gate_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_semantic_dimension_bridge_gate_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_semantic_dimension_bridge_gate_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md](CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md)
 
 ## Claim Boundary
 
@@ -130,4 +136,4 @@ derive the typed channel-dimension bridge and inverse-square readout law.
 ```
 
 Until that theorem exists, this block supports the endpoint algebra but keeps
-the parent `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md` open.
+the parent [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) open.

@@ -2,14 +2,17 @@
 
 **Date:** 2026-06-21
 **Claim type:** no_go
-**Status:** exact current-bank selector firewall for the signed `R_conn`
+**Claim scope:** no_go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** exact current-bank selector firewall for the signed `R_conn`
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.py`](../scripts/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.txt)
+**Authority links:** [RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md), [EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md), [QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md), [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md](QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md), [CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md](CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md), [RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
+
 center bridge. This note does not derive the Route-2 endpoint triple and does
 not apply an audit verdict.
-**Primary runner:**
-[`scripts/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.py`](../scripts/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.py)
-**Output:**
-[`outputs/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.txt`](../outputs/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.txt)
-
 ## Scope
 
 The s3-time Route-2 parent row remains blocked by the upstream readout endpoint

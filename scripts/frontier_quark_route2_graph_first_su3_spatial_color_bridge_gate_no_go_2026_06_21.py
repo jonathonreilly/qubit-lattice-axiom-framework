@@ -156,7 +156,7 @@ def part4_companion_note() -> None:
     text = read_text(relpath)
     check(f"{relpath} exists", bool(text))
     required = [
-        "Actual current-surface status: no-go for the graph-first spatial-color escape",
+        "**Actual current-surface status:** no-go",
         "This is not an audit verdict",
         "Strongest Steelman",
         "Theorem",

@@ -253,9 +253,9 @@ def main() -> int:
     print("F. Claim-status firewall")
     print("-" * 78)
     check(
-        "new note declares no-go / negative route-pruning status",
-        "Claim type:** no-go / negative route pruning" in note
-        and "Trace class:** negative_route_pruning" in note,
+        "new note declares no_go / negative route pruning scope",
+        "**Claim scope:** no_go / negative route pruning" in note
+        and "**Trace class:** negative_route_pruning" in note,
     )
     check(
         "new note explicitly denies endpoint and time-coupling closure",

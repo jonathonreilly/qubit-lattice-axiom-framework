@@ -1,17 +1,15 @@
----
-claim_id: quark_route2_typed_rconn_magnitude_bridge_no_go_note_2026-06-21
-claim_type: no-go
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
----
-
 # Route-2 Typed Rconn Magnitude Bridge No-Go Note
 
 **Date:** 2026-06-21
-**Runner:** `scripts/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.py`
-**Output:** `outputs/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.txt`
-**Status:** no-go for the current color-only and E-center-blind typed-magnitude route.
+**Claim type:** no_go
+**Claim scope:** no-go for the current color-only and E-center-blind typed-magnitude route
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go for the current color-only and E-center-blind typed-magnitude route
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.txt)
+**Authority links:** [RCONN_DERIVED_NOTE.md](RCONN_DERIVED_NOTE.md), [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md](QUARK_ROUTE2_RCONN_CENTER_RATIO_BRIDGE_OBSTRUCTION_NOTE_2026-04-28.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)
 
 ## Scope
 

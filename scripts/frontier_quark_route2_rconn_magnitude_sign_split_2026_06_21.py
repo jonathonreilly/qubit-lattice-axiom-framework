@@ -279,7 +279,8 @@ def main() -> None:
         )
         check(
             "paired_note_keeps_exact_support_status",
-            "**Status:** exact support" in note and "not an endpoint derivation" in note,
+            "**Actual current-surface status:** exact support" in note
+            and "not an endpoint derivation" in note,
         )
         banned_phrases = (
             "retained " "branch-local",

@@ -1,17 +1,15 @@
----
-claim_id: quark_route2_e_center_fingerprint_exact_support_note_2026-06-21
-claim_type: exact-support
-actual_current_surface_status: exact-support
-trace_class: upstream_support
-reachability_to_target: supports
----
-
 # Route-2 E-Center Fingerprint Exact Support Note
 
 **Date:** 2026-06-21
-**Runner:** `scripts/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.py`
-**Output:** `outputs/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.txt`
-**Status:** exact support for a nonblind E-center acceptance test; not a derivation of the endpoint triple.
+**Claim type:** bounded_theorem
+**Claim scope:** exact support for a nonblind E-center acceptance test; not a derivation of the endpoint triple
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** exact support for a nonblind E-center acceptance test; not a derivation of the endpoint triple
+**Trace class:** upstream_support
+**Reachability to target:** supports the open Route-2 endpoint by isolating a bounded source/readout condition; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.py`](../scripts/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_e_center_fingerprint_exact_support_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md), [QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md](QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md), [QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md](QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md)
 
 ## Scope
 
@@ -130,7 +128,7 @@ apply an audit verdict, and does not update repo-wide authority surfaces.
 
 The paired runner checks exact rational equivalences, carrier/readout
 fingerprints, slice-factor fingerprints, comparator firewalls, trace graph
-reachability if the fingerprint is supplied, and branch-local wording hygiene.
+reachability if the fingerprint is supplied, and source-note wording hygiene.
 
 Expected local certificate:
 

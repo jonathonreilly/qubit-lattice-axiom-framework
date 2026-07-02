@@ -1,11 +1,15 @@
 # Quark Route-2 Source-Scalar Prep Gate No-Go
 
 **Date:** 2026-06-21
+**Claim type:** no_go
+**Claim scope:** no-go for channel-scalar source-preparation shortcut
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go for channel-scalar source-preparation shortcut
 **Trace class:** negative_route_pruning
-**Runner:** `scripts/frontier_quark_route2_source_scalar_prep_gate_no_go_2026_06_21.py`
-
-Actual current-surface status: no-go for channel-scalar source-preparation shortcut.
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_source_scalar_prep_gate_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_source_scalar_prep_gate_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_source_scalar_prep_gate_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_source_scalar_prep_gate_no_go_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md)
 
 ## Scope
 
@@ -31,7 +35,7 @@ c = (u_E, u_T, delta_A1 u_E, delta_A1 u_T).
 ```
 
 This is not an audit verdict and does not resolve the parent gate
-`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`. It prunes only the shortcut that a
+[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md). It prunes only the shortcut that a
 channel-scalar source map, including inverse Schur channel scaling, can supply
 the missing source-side endpoint factor.
 

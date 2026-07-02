@@ -236,7 +236,7 @@ def part5_companion_note() -> None:
     text = read_text(relpath)
     check(f"{relpath} exists", bool(text))
     required = [
-        "Actual current-surface status: no-go for the current primitive-bank p=2 gate",
+        "**Actual current-surface status:** no-go",
         "This is not an audit verdict",
         "negative_route_pruning",
         "does not close the parent S3/Route-2 gate",

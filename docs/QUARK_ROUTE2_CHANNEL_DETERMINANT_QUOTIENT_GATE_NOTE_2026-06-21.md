@@ -1,9 +1,15 @@
 # Quark Route-2 Channel Determinant Quotient Gate Note
 
 **Date:** 2026-06-21
-**Status:** no-go / conditional support boundary.
-**Primary runner:** `scripts/frontier_quark_route2_channel_determinant_quotient_gate_2026_06_21.py`
-**Output:** `outputs/frontier_quark_route2_channel_determinant_quotient_gate_2026_06_21.txt`
+**Claim type:** no_go
+**Claim scope:** no-go / conditional support boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go / conditional support boundary
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_channel_determinant_quotient_gate_2026_06_21.py`](../scripts/frontier_quark_route2_channel_determinant_quotient_gate_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_channel_determinant_quotient_gate_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_channel_determinant_quotient_gate_2026_06_21.txt)
+**Authority links:** [OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md](OBSERVABLE_PRINCIPLE_T1D_POSITIVE_DIAGONAL_READOUT_CLASSIFIER_NOTE_2026-06-18.md), [OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_CONTEXT_QUOTIENT_BRIDGE_NOTE_2026-06-18.md), [OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md](OBSERVABLE_PRINCIPLE_T1D_DETERMINANT_READOUT_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md](OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 
 ## Claim Boundary
 
@@ -118,7 +124,7 @@ positive target:
 3. prove that the diagonal-coordinate Hessian coefficients are the Route-2
    E-center/T-channel readout lifts.
 
-Without those bridges, the parent `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`
+Without those bridges, the parent [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 remains open.
 
 ## Verification

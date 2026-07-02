@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_time_readout_primitive_bridge_assessment_2026_06_12.py
-runner_sha256: feae034740019be67bc6099d17f4e3244dd64d1d4b73626c5fc51ea0e008975f
+runner_sha256: ec91bd7b38e70fba036994949ddfe6c23707446422e02b9a1870e7e6c5b96370
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 29.13
+elapsed_sec: 12.71
 status: ok
 ----- stdout -----
 PASS: primitive note names the physical tensor-primitive bridge as open work
@@ -13,12 +13,12 @@ PASS: rigidity note localizes ambiguity in the spatial prefactor
 PASS: readout-map note states the restricted bright channelwise form
 PASS: live carrier columns match the restricted endpoint basis (max carrier residual=2.220e-16)
 PASS: eta-floor endpoint affine map is a channelwise restricted bright readout (P_eta=[[a_E,0,b_E,0],[0,a_T,0,b_T]] with nonzero shell coefficients)
-PASS: eta-floor endpoint affine map reproduces the live endpoint coefficients (max endpoint residual=1.084e-19)
-PASS: t_balance is the absolute live T-channel slope/intercept ratio (t_balance=1.000030814262, |beta_T/alpha_T|=1.000030814262)
+PASS: eta-floor endpoint affine map reproduces the live endpoint coefficients (max endpoint residual=1.626e-19)
+PASS: t_balance is the absolute live T-channel slope/intercept ratio (t_balance=1.000030814262, |beta_T/alpha_T|=1.000030814261, err=1.064e-12)
 PASS: target triple gives the rational endpoint ratios exactly (q_T=5/6, q_E=15/8, c_TE=-8/9)
-PASS: live eta-floor endpoint affine map is not the exact normalized target triple (rho_T=-1.000030814262, mu=-2.005383530819, rho_E=+5.257481167681)
+PASS: live eta-floor endpoint affine map is not the exact normalized target triple (rho_T=-1.000030814261, mu=-2.005382749600, rho_E=+5.257476782082)
 PASS: rho_E is an exact selection freedom after T-side normalization (P(0)E_shell=(Fraction(1, 1), Fraction(0, 1)), P(21/4)E_shell=(Fraction(1, 1), Fraction(0, 1)), P(21/4)E_center=(Fraction(15, 8), Fraction(0, 1)))
-PASS: rho_E ambiguity factors through the spatial prefactor in Xi_P (factor residual=3.469e-18, rank-tail=0.000e+00)
+PASS: rho_E ambiguity factors through the spatial prefactor in Xi_P (factor residual=6.939e-18, rank-tail=0.000e+00)
 PASS: one-hop notes do not supply a uniqueness theorem for eta-floor as the gate primitive
 TOTAL: PASS=14, FAIL=0
 

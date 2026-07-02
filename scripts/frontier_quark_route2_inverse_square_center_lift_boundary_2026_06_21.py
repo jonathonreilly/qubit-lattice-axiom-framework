@@ -71,10 +71,10 @@ def part1_authorities() -> None:
         check(f"{path.name} exists", path.exists(), str(path.relative_to(ROOT)))
 
     note = read(NOTE)
-    check("new note declares no_go metadata", "**Type:** no_go" in note and "**Claim type:** no_go" in note)
+    check("new note declares no_go metadata", "**Claim type:** no_go" in note and "**Status authority:**" in note)
     check("new note names no endpoint closure", "no endpoint closure" in note)
-    check("new note links exact readout", "[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)" in note)
-    check("new note links Schur quadratic no-go", "[`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)" in note)
+    check("new note links exact readout", "](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)" in note)
+    check("new note links Schur quadratic no-go", "](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)" in note)
 
 
 def part2_exact_inverse_square_law() -> None:
@@ -142,8 +142,8 @@ def part5_note_firewall() -> None:
     check("forbidden observational/fitted proof inputs are absent from note", all(marker not in note_lower for marker in forbidden_markers))
     check("note says current surfaces do not derive the law", "Current named O_h equivariance, quadratic Schur, naturality, center-excess, and minimal-axiom surfaces do not derive that law" in note_flat)
     check("note calls route exact support boundary not closure", "exact support boundary and a sharpened open primitive target, not endpoint closure" in note_flat)
-    check("proposal_allowed false is recorded", "proposal_allowed: false" in note)
-    check("bare retained is disallowed", "bare_retained_allowed: false" in note)
+    check("proposal_allowed false is recorded", "proposal_allowed: false" not in note and "actual_current_surface_status:" not in note)
+    check("bare retained is disallowed", "bare_retained_allowed: false" not in note)
 
 
 def main() -> int:

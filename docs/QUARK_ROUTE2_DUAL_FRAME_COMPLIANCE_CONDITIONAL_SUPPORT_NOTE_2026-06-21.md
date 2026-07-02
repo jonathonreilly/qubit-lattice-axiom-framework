@@ -1,11 +1,14 @@
 # Quark Route-2 Dual-Frame Compliance Conditional Support
 
 **Date:** 2026-06-21
-**Actual current-surface status:** conditional-support
+**Claim type:** bounded_theorem
+**Claim scope:** conditional support
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** conditional support
 **Trace class:** upstream_support
-**Runner:** `scripts/frontier_quark_route2_dual_frame_compliance_conditional_2026_06_21.py`
-
-Actual current-surface status: conditional-support
+**Reachability to target:** supports the open Route-2 endpoint by isolating a bounded source/readout condition; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_dual_frame_compliance_conditional_2026_06_21.py`](../scripts/frontier_quark_route2_dual_frame_compliance_conditional_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_dual_frame_compliance_conditional_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_dual_frame_compliance_conditional_2026_06_21.txt)
 
 ## Scope
 
@@ -25,7 +28,7 @@ q_X proportional to w_X^-2.
 ```
 
 This is not an audit verdict. The note does not close the parent
-`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md` row and does not derive the T-side candidates.
+[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) row and does not derive the T-side candidates.
 It proves only the conditional consequence of the stated
 same-domain premise.
 

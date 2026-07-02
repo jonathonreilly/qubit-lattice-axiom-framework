@@ -218,7 +218,7 @@ def main() -> int:
     print("\nPART 4: note and status firewall")
     note = note_text("QUARK_ROUTE2_DUAL_FRAME_COMPLIANCE_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md")
     required_markers = (
-        "Actual current-surface status: conditional-support",
+        "**Actual current-surface status:** conditional support",
         "two-sided canonical-dual Schur compliance",
         "new source/readout premise",
         "This is not an audit verdict",
@@ -228,7 +228,7 @@ def main() -> int:
     for marker in required_markers:
         check(f"note contains marker: {marker}", marker in note)
     banned_markers = (
-        ("status-authority phrase", phrase("Status ", "authority", ":")),
+        ("legacy source-status certificate", "actual_current_surface_status:"),
         ("parent-closure phrase", phrase("closes ", "the parent")),
         (
             "current-surface endpoint-derivation phrase",

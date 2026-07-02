@@ -1,11 +1,15 @@
 # Quark Route-2 Source-Excess Bank Gap No-Go
 
 **Date:** 2026-06-21
+**Claim type:** no_go
+**Claim scope:** bounded current-bank no-go for the source-excess target
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** bounded current-bank no-go for the source-excess target
 **Trace class:** negative_route_pruning
-**Runner:** `scripts/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.py`
-
-Actual current-surface status: bounded current-bank no-go for the source-excess target.
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_source_excess_bank_gap_no_go_2026_06_21.txt)
+**Authority links:** [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 
 ## Scope
 
@@ -17,7 +21,7 @@ b_E/a_E = 7/2.
 ```
 
 This is not an audit verdict and does not resolve the parent gate
-`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`. It asks only whether the named
+[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md). It asks only whether the named
 current Route-2 source/readout bank already contains a typed source-excess
 primitive deriving that target.
 
@@ -25,11 +29,11 @@ primitive deriving that target.
 
 The checked bank is intentionally narrow and current-surface:
 
-- `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`
-- `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`
-- `QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`
-- `QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`
-- `S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`
+- [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
+- [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)
+- [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+- [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 - `scripts/frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py`
 - `scripts/frontier_quark_route2_source_domain_bridge_no_go.py`
 

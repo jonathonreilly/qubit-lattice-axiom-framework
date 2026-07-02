@@ -1,11 +1,15 @@
 # Quark Route-2 Current Dualization Gate No-Go
 
 **Date:** 2026-06-21
+**Claim type:** no_go
+**Claim scope:** no-go for current-bank canonical-dual dualization shortcut
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go for current-bank canonical-dual dualization shortcut
 **Trace class:** negative_route_pruning
-**Runner:** `scripts/frontier_quark_route2_current_dualization_gate_no_go_2026_06_21.py`
-
-Actual current-surface status: no-go for current-bank canonical-dual dualization shortcut
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_current_dualization_gate_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_current_dualization_gate_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_current_dualization_gate_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_current_dualization_gate_no_go_2026_06_21.txt)
+**Authority links:** [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md), [QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md), [QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md), [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md)
 
 ## Scope
 
@@ -23,7 +27,7 @@ registration/positivity no-go. It does not contain the needed two-sided
 canonical-dual law.
 
 This is not an audit verdict and does not resolve the parent
-`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md` row. It does not rule out a future inverse-square dualization theorem. It only prunes the shortcut that the current Route-2 source/readout authority bank already supplies that theorem.
+[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) row. It does not rule out a future inverse-square dualization theorem. It only prunes the shortcut that the current Route-2 source/readout authority bank already supplies that theorem.
 
 ## Exact Dual-Factor Arithmetic
 
@@ -73,14 +77,14 @@ The tested current bank is:
 
 | Surface | What it supplies | What remains missing |
 |---|---|---|
-| `S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md` | class-A carrier definition `K_R(q)` under named inputs | physical primitive bridge and source/readout adjointness |
-| `QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md` | exact restricted readout class and missing-map obstruction | `beta_E/alpha_E = 21/4` |
-| `QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md` | exact conditional family after a supplied `P_R` | a theorem selecting unique `P_R` |
-| `S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md` | ambiguity localized in spatial prefactor, universal time channel | spatial readout selector |
-| `QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md` | exact conditional arithmetic and named E-center target | exact E-channel source/readout row |
-| `QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md` | T-side values reproduced after candidate row is supplied | derivation of that row |
-| `QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md` | typed-edge color/source boundary | `R_conn -> c_TE` source/readout bridge |
-| `ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md` | positivity/registration fix norm or bounds | readout direction `rho_E` |
+| [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md) | class-A carrier definition `K_R(q)` under named inputs | physical primitive bridge and source/readout adjointness |
+| [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) | exact restricted readout class and missing-map obstruction | `beta_E/alpha_E = 21/4` |
+| [QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) | exact conditional family after a supplied `P_R` | a theorem selecting unique `P_R` |
+| [S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md](S3_TIME_THETA_TO_SLICE_COUPLING_FACTOR_RIGIDITY_NOTE_2026-05-17.md) | ambiguity localized in spatial prefactor, universal time channel | spatial readout selector |
+| [QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md) | exact conditional arithmetic and named E-center target | exact E-channel source/readout row |
+| [QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_T_SIDE_ENDPOINT_THEOREM_ATTEMPT_BOUNDED_NOTE_2026-06-12.md) | T-side values reproduced after candidate row is supplied | derivation of that row |
+| [QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) | typed-edge color/source boundary | `R_conn -> c_TE` source/readout bridge |
+| [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md) | positivity/registration fix norm or bounds | readout direction `rho_E` |
 
 The current authority bank does not supply a source/readout adjointness or
 canonical-dual law. In runner-firewall form: the current authority bank does not supply a source/readout adjointness or canonical-dual law. The runner

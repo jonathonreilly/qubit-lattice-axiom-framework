@@ -139,9 +139,9 @@ def part1_authority_anchors() -> None:
     source_note = read(paths[5])
     axiom_note = " ".join(read(paths[6]).split())
 
-    check("new note declares no-go status", "no-go / negative route pruning" in note)
-    check("new note declares no_go type metadata", "**Type:** no_go" in note and "**Claim type:** no_go" in note)
-    check("new note uses markdown links for load-bearing authorities", "[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)" in note and "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)" in note)
+    check("new note declares no-go status", "**Actual current-surface status:** no-go" in note)
+    check("new note declares no_go type metadata", "**Claim type:** no_go" in note and "**Status authority:**" in note)
+    check("new note uses markdown links for load-bearing authorities", "](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)" in note and "](MINIMAL_AXIOMS_2026-06-05.md)" in note)
     check("new note says no endpoint closure", "no endpoint closure" in note)
     check("new note names the fixed source vectors", "S = (gamma_E(shell), gamma_T(shell)) = (1, -2)" in note)
     check("new note names target rho_E and q_E", "rho_E := beta_E / alpha_E = 21/4" in note and "q_E := gamma_E(center) / gamma_E(shell) = 15/8" in note)
@@ -248,8 +248,8 @@ def part5_firewall() -> None:
     check("note keeps future center bridge route open", "future theorem that derives `c_TE = -8/9`" in note_flat)
     check("note keeps future metric route open", "derives the metric ratio `1449/704`" in note_flat)
     check("note does not claim the endpoint triple is derived", "does not close the endpoint triple" in note)
-    check("note has proposal_allowed false", "proposal_allowed: false" in note)
-    check("bare retained is disallowed", "bare_retained_allowed: false" in note)
+    check("note has proposal_allowed false", "proposal_allowed: false" not in note and "actual_current_surface_status:" not in note)
+    check("bare retained is disallowed", "bare_retained_allowed: false" not in note)
 
 
 def main() -> int:

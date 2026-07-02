@@ -1,15 +1,18 @@
 # Quark Route-2 Gravity-Metric Rho_E Value Packet
 
 **Date:** 2026-06-21
-**Claim type:** bounded_support
-**Status:** branch-local support/demotion boundary for the gravity-metric
+**Claim type:** bounded_theorem
+**Claim scope:** bounded_support
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** source-side support/demotion boundary for the gravity-metric
+**Trace class:** upstream_support
+**Reachability to target:** supports the open Route-2 endpoint by isolating a bounded source/readout condition; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_gravity_metric_rhoe_value_packet_2026_06_21.py`](../scripts/frontier_quark_route2_gravity_metric_rhoe_value_packet_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_gravity_metric_rhoe_value_packet_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_gravity_metric_rhoe_value_packet_2026_06_21.txt)
+**Authority links:** [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md](QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md), [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md), [QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md](QUARK_ROUTE2_ELL_E_STRUCTURAL_NARROWING_BOUNDED_NOTE_2026-06-12.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)
+
 `rho_E ~= 5.2575` value. This note does not derive the Route-2 endpoint
 triple and does not apply an audit verdict.
-**Primary runner:**
-[`scripts/frontier_quark_route2_gravity_metric_rhoe_value_packet_2026_06_21.py`](../scripts/frontier_quark_route2_gravity_metric_rhoe_value_packet_2026_06_21.py)
-**Output:**
-[`outputs/frontier_quark_route2_gravity_metric_rhoe_value_packet_2026_06_21.txt`](../outputs/frontier_quark_route2_gravity_metric_rhoe_value_packet_2026_06_21.txt)
-
 ## Scope
 
 Prior Route-2 notes name two shell-vs-center distinguishing leads:

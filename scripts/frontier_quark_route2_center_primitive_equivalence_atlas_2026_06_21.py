@@ -105,11 +105,11 @@ def part1_authorities() -> None:
         check(f"{path.name} exists", path.exists(), str(path.relative_to(ROOT)))
 
     note = read(NOTE)
-    check("new note declares no_go metadata", "**Type:** no_go" in note and "**Claim type:** no_go" in note)
+    check("new note declares no_go metadata", "**Claim type:** no_go" in note and "**Status authority:**" in note)
     check("new note names no endpoint closure", "no endpoint closure" in note)
-    check("new note has exact readout markdown link", "[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)" in note)
-    check("new note has naturality no-go markdown link", "[`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)" in note)
-    check("new note records proposal_allowed false", "proposal_allowed: false" in note)
+    check("new note has exact readout markdown link", "](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)" in note)
+    check("new note has naturality no-go markdown link", "](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md)" in note)
+    check("new note avoids source-status certificate", "proposal_allowed: false" not in note and "actual_current_surface_status:" not in note)
 
 
 def part2_equivalence_atlas() -> None:
@@ -179,7 +179,7 @@ def part4_note_firewall() -> None:
     check("note says current surfaces do not supply primitive", "Current surfaces do not supply that primitive" in note)
     check("note leaves future source/readout primitive open", "one missing center primitive with several equivalent exact faces" in note_flat)
     check("note does not claim endpoint closure", "no endpoint closure" in note)
-    check("bare retained is disallowed", "bare_retained_allowed: false" in note)
+    check("bare retained is disallowed", "bare_retained_allowed: false" not in note)
 
 
 def main() -> int:

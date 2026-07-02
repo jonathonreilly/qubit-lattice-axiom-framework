@@ -164,7 +164,7 @@ def main() -> int:
     ell_text = read(str(ell_e))
     parent_text = read(str(parent))
     usable_text = read(str(usable))
-    check("new note declares no_go claim type", "Claim type: no_go" in note_text)
+    check("new note declares no_go claim type", "**Claim type:** no_go" in note_text)
     check("new note says no audit verdict is applied", "No audit verdict is applied" in note_text)
     check("new note names pure inverse-square as the remaining theorem target", "pure inverse-square coefficient law" in note_text)
     check("new note names signed-cancellation alternatives as imports", "signed-cancellation" in note_text)

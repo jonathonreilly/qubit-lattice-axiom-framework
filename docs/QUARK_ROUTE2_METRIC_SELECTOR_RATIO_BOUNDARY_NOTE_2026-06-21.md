@@ -1,10 +1,15 @@
 # Quark Route-2 Metric Selector Ratio Boundary
 
 **Date:** 2026-06-21
-**Type:** no_go
 **Claim type:** no_go
-**Status:** no-go / negative route pruning; no endpoint closure
-**Primary runner:** `scripts/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.py`
+**Claim scope:** no_go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go / negative route pruning; no endpoint closure
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_metric_selector_ratio_boundary_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md](SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md), [SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md](SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md), [POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md](POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md), [YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md](YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md), [MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)
 
 ## Scope
 
@@ -23,18 +28,18 @@ q_E = gamma_E(center) / gamma_E(shell) = 15/8.
 
 ## Authority Inputs
 
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [[QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
   supplies the exact restricted Route-2 carrier and missing-map obstruction.
-- [`SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md`](SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- [[SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md](SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md)](SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md)
   supplies finite sharp-record Fisher tangent geometry.
-- [`SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md`](SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md)
+- [[SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md](SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md)](SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md)
   supplies the broader source/measure boundary and supplied-basis caveats.
-- [`POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md`](POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
+- [[POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md](POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)](POST_RECORD_SELECTOR_TANGENT_READOUT_WEIGHT_PROTOTYPE_2026-06-06.md)
   supplies only a conditional diagnostic with supplied metric/Hessian data.
-- [`YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md`](YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md)
+- [[YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md](YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md)](YT_EXACT_HESSIAN_SELECTOR_UNIQUENESS_NOTE.md)
   supplies a domain-specific bounded Hessian selector result, not a Route-2
   E/T metric.
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- [[MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)](MINIMAL_AXIOMS_2026-06-05.md)
   supplies the Record/Quantum non-supply boundary for readout context,
   weighting, tangent metric, Hessian, and source primitives.
 
@@ -129,21 +134,6 @@ fixed Route-2 carrier
 
 It does not prune a future theorem that derives the metric tensor from a typed
 Route-2 source/readout primitive.
-
-## Current Status
-
-```yaml
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
-conditional_surface_status: null
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "The block prunes current metric-selector surfaces; it does not derive the Route-2 metric/source primitive."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Verification
 

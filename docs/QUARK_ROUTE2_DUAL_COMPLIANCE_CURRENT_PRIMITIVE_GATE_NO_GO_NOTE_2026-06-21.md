@@ -2,12 +2,14 @@
 
 **Date:** 2026-06-21
 **Claim type:** no_go
-**Actual current-surface status: no-go for the current primitive-bank p=2 gate.**
-**Audit boundary:** This source note does not set, predict, estimate, or apply
-any audit verdict.
-**Primary runner:** [scripts/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.py](../scripts/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.py)
-**Runner output:** [outputs/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.txt](../outputs/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.txt)
-**TRACE:** negative_route_pruning
+**Claim scope:** no_go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** no-go
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_dual_compliance_current_primitive_gate_no_go_2026_06_21.txt)
+**Authority links:** [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md), [S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md](S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md), [ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md](ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
 This is not an audit verdict. It follows the conditional-support block that
 showed:

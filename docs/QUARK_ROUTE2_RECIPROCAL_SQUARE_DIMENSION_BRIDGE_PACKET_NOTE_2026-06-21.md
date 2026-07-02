@@ -1,11 +1,17 @@
 # Quark Route-2 Reciprocal-Square Dimension Bridge Packet
 
 **Date:** 2026-06-21
-**Claim type: bounded_theorem**
-**Status:** conditional support plus bridge firewall.
+**Claim type:** bounded_theorem
+**Claim scope:** conditional support plus bridge firewall
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** conditional support plus bridge firewall
+**Trace class:** upstream_support
+**Reachability to target:** conditionally supports the open Route-2 endpoint by isolating a bridge that would close it; does not derive that bridge or the endpoint triple.
 **Primary runner:** [`scripts/frontier_quark_route2_reciprocal_square_dimension_bridge_2026_06_21.py`](../scripts/frontier_quark_route2_reciprocal_square_dimension_bridge_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_reciprocal_square_dimension_bridge_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_reciprocal_square_dimension_bridge_2026_06_21.txt)
+**Authority links:** [CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md](CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md), [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 
-No audit verdict is applied. This note is a branch-local physics-loop artifact
+No audit verdict is applied. This note is a source note
 for the independent review process.
 
 ## Safe Claim
@@ -75,14 +81,14 @@ serve as that law.
 
 ## One-Hop Sources
 
-- [`CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md`](CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md)
+- [[CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md](CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md)](CKM_WOLFENSTEIN_ETA_INVERSE_SQUARE_GAP_THEOREM_NOTE_2026-04-26.md)
   packages the CKM-side inverse-square reading
   `eta^2 = 1/N_pair^2 - 1/N_color^2`.
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [[QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
   gives the endpoint algebra and the missing `beta_E/alpha_E=21/4` map entry.
-- [`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)
+- [[QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md)
   identifies the inverse-square projector-weight law as the exact Route-2 gap.
-- [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+- [[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
   inherits the unresolved endpoint triple as the s3-time coupling blocker.
 
 ## Exact CKM Components

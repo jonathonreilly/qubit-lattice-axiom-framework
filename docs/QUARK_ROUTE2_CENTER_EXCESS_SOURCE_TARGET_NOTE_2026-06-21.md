@@ -1,11 +1,15 @@
 # Quark Route-2 Center-Excess Source Target
 
 **Date:** 2026-06-21
-**Actual current-surface status:** bounded-support for the normalized center-excess source target
+**Claim type:** bounded_theorem
+**Claim scope:** bounded support for the normalized center-excess source target
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** bounded support for the normalized center-excess source target
 **Trace class:** upstream_support
-**Runner:** `scripts/frontier_quark_route2_center_excess_source_target_2026_06_21.py`
-
-Actual current-surface status: bounded-support for the normalized center-excess source target.
+**Reachability to target:** supports the open Route-2 endpoint by isolating a bounded source/readout condition; does not derive the endpoint triple.
+**Primary runner:** [`scripts/frontier_quark_route2_center_excess_source_target_2026_06_21.py`](../scripts/frontier_quark_route2_center_excess_source_target_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_center_excess_source_target_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_center_excess_source_target_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
 ## Scope
 
@@ -19,7 +23,7 @@ endpoint-normalized center-excess source theorem would finish the p=2 target?
 ```
 
 This is not an audit verdict and does not resolve the parent gate
-`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`. It is a bounded support packet for
+[S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md). It is a bounded support packet for
 the exact next source theorem target.
 
 ## Premises

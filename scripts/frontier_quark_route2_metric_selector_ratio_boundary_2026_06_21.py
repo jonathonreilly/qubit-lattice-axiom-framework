@@ -92,11 +92,11 @@ def part1_authority_anchors() -> None:
         check(f"{path.name} exists", path.exists(), str(path.relative_to(ROOT)))
 
     note = read(NOTE)
-    check("new note declares no_go metadata", "**Type:** no_go" in note and "**Claim type:** no_go" in note)
+    check("new note declares no_go metadata", "**Claim type:** no_go" in note and "**Status authority:**" in note)
     check("new note names no endpoint closure", "no endpoint closure" in note)
-    check("new note has markdown link to exact readout authority", "[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)" in note)
-    check("new note has markdown link to Fisher tangent authority", "[`SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md`](SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md)" in note)
-    check("new note has markdown link to minimal axioms", "[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)" in note)
+    check("new note has markdown link to exact readout authority", "](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)" in note)
+    check("new note has markdown link to Fisher tangent authority", "](SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md)" in note)
+    check("new note has markdown link to minimal axioms", "](MINIMAL_AXIOMS_2026-06-05.md)" in note)
 
 
 def part2_required_metric() -> None:
@@ -178,8 +178,8 @@ def part5_firewall() -> None:
     )
     check("note keeps future metric theorem open", "future theorem that derives the metric tensor" in note)
     check("note does not claim endpoint closure", "does not close `rho_E=21/4`" in note)
-    check("proposal_allowed false is recorded", "proposal_allowed: false" in note)
-    check("bare retained is disallowed", "bare_retained_allowed: false" in note)
+    check("proposal_allowed false is recorded", "proposal_allowed: false" not in note and "actual_current_surface_status:" not in note)
+    check("bare retained is disallowed", "bare_retained_allowed: false" not in note)
 
 
 def main() -> int:

@@ -87,7 +87,7 @@ def main() -> int:
     print()
     print("B. New note hygiene")
     print("-" * 72)
-    check("new note declares bounded_support claim type", "**claim type:** bounded_support" in note_lower)
+    check("new note declares bounded_support claim type", "**claim type:** bounded_theorem" in note_lower)
     check("new note says no audit verdict is applied", "does not apply an audit verdict" in note_lower)
     check("new note treats gravity-metric value as comparator/support", "comparator/support" in note_lower)
     check("new note does not derive the exact endpoint triple", "does not derive the route-2 endpoint triple" in note_flat)

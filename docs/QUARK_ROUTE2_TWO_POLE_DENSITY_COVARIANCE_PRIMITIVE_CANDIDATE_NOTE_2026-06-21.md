@@ -1,22 +1,16 @@
 # Quark Route-2 Two-Pole Density-Covariance Primitive Candidate
 
 **Date:** 2026-06-21
-**Type:** conditional-support / primitive-target refinement
+**Claim type:** no_go
+**Claim scope:** conditional support / primitive-target refinement
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Actual current-surface status:** conditional support / primitive-target refinement
+**Trace class:** negative_route_pruning
+**Reachability to target:** prunes a Route-2 endpoint escape route; does not derive the endpoint triple.
 **Primary runner:** [`scripts/frontier_quark_route2_two_pole_density_covariance_candidate_2026_06_21.py`](../scripts/frontier_quark_route2_two_pole_density_covariance_candidate_2026_06_21.py)
-**Runner output:** [`outputs/frontier_quark_route2_two_pole_density_covariance_candidate_2026_06_21.txt`](../outputs/frontier_quark_route2_two_pole_density_covariance_candidate_2026_06_21.txt)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_two_pole_density_covariance_candidate_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_two_pole_density_covariance_candidate_2026_06_21.txt)
+**Authority links:** [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md), [QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
 
-```yaml
-actual_current_surface_status: conditional-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "If Route-2 supplies a channel-density covariance primitive D_X=A_X/w_X with q_X proportional to D_X^2, then q_E/q_T=9/4, q_E=15/8, rho_E=21/4, and c_TE=-8/9."
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "The current surface does not derive the channel-density normalization plus density-covariance readout primitive."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Question
 

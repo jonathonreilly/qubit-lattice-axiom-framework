@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1412 |
-| Retained-grade rows, including boxed decorations | 1317 |
+| Applied audit verdicts | 1413 |
+| Retained-grade rows, including boxed decorations | 1318 |
 | Retained positive theorems | 196 |
 | Retained no-go rows | 195 |
-| Retained bounded rows | 869 |
+| Retained bounded rows | 870 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
 | Unaudited rows | 1733 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1736 |
-| Ready rows | 92 |
+| Total pending rows | 1735 |
+| Ready rows | 94 |
 | Cycle-break targets | 9 |
-| Critical pending | 325 |
+| Critical pending | 324 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md) - critical; audit_in_progress
+- [`transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10`](../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md) - critical; unaudited
 - [`axiom_first_fermionic_stefan_boltzmann_narrow_theorem_note_2026-05-26`](../../docs/AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md) - critical; unaudited
 - [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; unaudited

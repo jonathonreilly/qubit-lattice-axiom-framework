@@ -12,9 +12,9 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1415 |
-| Retained-grade rows, including boxed decorations | 1319 |
-| Retained positive theorems | 196 |
+| Applied audit verdicts | 1416 |
+| Retained-grade rows, including boxed decorations | 1320 |
+| Retained positive theorems | 197 |
 | Retained no-go rows | 195 |
 | Retained bounded rows | 871 |
 | Boxed decorations under retained parents | 57 |
@@ -33,17 +33,17 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1733 |
+| Total pending rows | 1732 |
 | Ready rows | 92 |
 | Cycle-break targets | 9 |
-| Critical pending | 322 |
+| Critical pending | 321 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md) - critical; audit_in_progress
+- [`p_flux_selection_via_fsb_k_and_z_certificate_conditional_theorem_note_2026-06-11`](../../docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md) - critical; unaudited
 - [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; unaudited
 - [`quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md) - critical; unaudited
 - [`axiom_first_cluster_decomposition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) - critical; unaudited

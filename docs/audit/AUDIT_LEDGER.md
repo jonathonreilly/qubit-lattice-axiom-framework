@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 196 |
+| **retained** | 197 |
 | **retained_no_go** | 195 |
 | **retained_bounded** | 871 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1730 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1269 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1270 |
 | `audited_conditional` | 29 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -138,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1198,6 +1196,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_graph_portability_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_graph_portability_stress_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `staggered_layered_backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_layered_gauge_engineering_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_layered_gauge_phase_diagram_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -17103,6 +17102,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** All six items follow from the explicit row-by-row matrix entries of D per (D), (eta).  _(class `A`)_
 - **chain closes:** True — The cited authority is retained and supplies the staggered hopping construction used as input. From the explicitly stated D and D_mu matrix entries, S1-S6 follow by direct support and Hilbert-Schmidt orthogonality arguments within the stated lattice-operator scope.
 - **rationale:** The claim is tightly scoped to lattice operator algebra and explicitly excludes the continuum SME dictionary and coefficient-level conclusions. The proof is a genuine algebraic closure over the provided retained staggered-hopping input, not a renaming, numerical fit, or external comparator check. The runner source constructs D and D_mu directly, checks the claimed support, Hermiticity, decomposition, and Hilbert-Schmidt projection identities, and contains no hard-coded contested output.
+- **auditor confidence:** high
+
+### `staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11`
+
+- **Note:** [`STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md`](../../docs/STAGGERED_KERNEL_SATISFIES_Z_POINT_CONE_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-11.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the explicitly constructed scalar NN K0 and Kawamoto-Smit K1 one-particle kernels on the Z^3 finite periodic/Bloch surface, K1 satisfies the restated point-like linear-cone (Z) condition with zeros {0,pi}^3 and V=2I, while K0 has an extended zero surface/zero line and a singular tangent cone; no flux selection or thermal conclusion is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T083012Z-c0ec669a-staggered_kernel_satisfi`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** The 8x8 K1 Bloch symbol satisfies H(kappa)^2 = 4 sum_mu cos^2(kappa_mu/2) I_8, hence the band form E = 2 sqrt(sum_mu sin^2 p_mu), zeros exactly at {0,pi}^3, and the local identity sin^2(c+q)=sin^2 q gives the cone V=2I with (C,r)=(2/3,1).  _(class `A`)_
+- **chain closes:** True — The matrix identity, zero-set equations, cone bound, and K0 zero-line/singularity follow by exact algebra and finite spectral enumeration from the explicitly defined nearest-neighbor kernels. The cited minimal axiom node is an accepted premise and the finite Fock bridge is retained; the note does not use them to select a realized flux branch or import FSB-K theorem content.
+- **rationale:** The load-bearing K1 claim is an exact algebraic closure over the constructed Bloch symbol, and the independent checks of the signs, factors, zero-set counts, cone constant, determinant weights, and K0 tangent/normal speeds agree with the note. The runner source performs symbolic matrix, trig, inequality, and finite spectral checks rather than merely printing the contested results. Textual checks for the FSB-K definition and own-file discipline are non-load-bearing for the audited kernel geometry scope. The residual boundaries are properly scoped: no flux selection, no thermal content, and no canonical-normalization claim beyond the stated scale covariance.
 - **auditor confidence:** high
 
 ### `staggered_layered_backreaction_note`

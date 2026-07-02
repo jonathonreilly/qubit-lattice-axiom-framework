@@ -1,23 +1,11 @@
-# Goal
+# S3/Route-2 Readout Endpoint Loop Goal
 
-Run a physics-loop campaign on the S3/Route-2 readout endpoint triple. Attack
-the source/readout route toward
+Active goal: attack the S3/Route-2 readout endpoint triple
+`(-1, -2, 21/4)` from first principles without applying audit verdicts.
 
-```text
-(-1, -2, 21/4)
-```
+Block34 target: rewrite the remaining E-side datum as the Route-2 E-center
+excess `e_E := q_E - 1 = rho_E/6 = 7/8`, then test whether existing exact
+`7/8` anchors in the repo are already typed to that role.
 
-from first principles, without running audits or applying verdicts. Package
-each coherent science block as a review PR and do not push science work to
-main.
-
-## Block33 Focus
-
-Attack the magnitude source rule left by block32:
-
-```text
-|c_TE| = F_adj.
-```
-
-The route tested here is whether shell/T-side/color data that do not evaluate
-the E-center lift can select that magnitude.
+Delivery rule: one review PR per coherent science block, no direct push to
+`main`, no refresh of existing PRs onto `main`, and no PR conflict checks.

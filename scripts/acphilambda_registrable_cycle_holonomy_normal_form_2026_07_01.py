@@ -260,7 +260,10 @@ def part_e_note() -> None:
     lower_text = text.lower()
     for phrase in forbidden:
         check(f"forbidden phrase absent: {phrase}", phrase.lower() not in lower_text)
-    check("note says not a terminal no-go", "not a terminal no-go" in lower_text)
+    check("note declares canonical bounded_theorem claim type", "**Claim type:** bounded_theorem" in text)
+    check("note does not use runner PASS as source status", "**Status:** PASS" not in text)
+    check("note does not lean on PR #4783 as authority", "BY PR #4783 obstruction" not in text)
+    check("note says not a terminal no-go", "not a terminal no-go" in flat_text.lower())
     check("status-authority header present", "**Status authority:** independent audit lane only." in text)
     check("primary runner link present", "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py" in text)
 

@@ -1,6 +1,7 @@
 # AC_phi_lambda Registrable Cycle-Holonomy Normal Form
 **Date:** 2026-07-01
-**Claim type:** bounded theorem / registrable normal form + selector re-coordination.
+**Claim type:** bounded_theorem
+**Scope:** registrable normal form plus selector re-coordination.
 **Status authority:** independent audit lane only. This note does not set an audit verdict, edit registries, register primitives, change axioms, or claim `AC_phi_lambda` retirement.
 **Primary runner:** [`scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py`](../scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py)
 ## Claim
@@ -136,7 +137,9 @@ W_cycle_holonomy_value:
   the generation-cycle holonomy of the physical charged-lepton readout equals
   the unaveraged C3 fixed-point sum: Phi = 2/3.
 ```
-This re-coordination does not derive `Phi = 2/3`; rescale `c -> lambda c` acts as `Phi -> lambda Phi`, and the rescale obstruction applies verbatim on holonomy coordinates.
+This re-coordination does not derive `Phi = 2/3`: the self-contained rescale
+witness is `Phi(lambda c) = lambda Phi(c)`, so homogeneous clauses still cannot
+pin the unit on holonomy coordinates.
 What changes is the coordinate surface: the wall now sits on the canonical
 gauge-invariant holonomy conjugacy class `cos Phi`, a per-cycle accumulated
 transport phase. The retained radian-bridge Type-A list covers periodic and
@@ -181,14 +184,15 @@ coordinate systems, not separate walls.
 - No new unit convention is adopted.
 - No axiom change, registry change, primitive registration, or audit-status edit is made.
 ## No-Go Discipline Gate
-**Status:** PASS for bounded normal form + re-coordination; not a terminal no-go.
+This checklist supports a bounded normal form plus re-coordination; it is not a
+terminal no-go.
 ### N1
 | route | disposition |
 |---|---|
 | spectrum / registrable route | ATTEMPTED here; succeeds as a normal form for `cos(3 delta)` |
 | gauge-representative readout route | SUPERSEDED: target the invariant holonomy class |
 | radian / Type-A periodic route | RULED OUT BY RETAINED radian row: retained periodic sources give `q*pi`, while nonzero rationals are not literal radians from those sources |
-| rescale-invariant derivation of `Phi` | RULED OUT BY PR #4783 obstruction restated: rescale-invariant clauses cannot pin the unit |
+| rescale-invariant derivation of `Phi` | RULED OUT HERE by the self-contained rescale witness: homogeneous clauses cannot pin the unit |
 | per-cycle accumulated transport phase route | OPEN: the named strike point is `W_cycle_holonomy_value` |
 | owner primitive | GOVERNANCE |
 ### N2
@@ -206,9 +210,10 @@ W_cycle_holonomy_value == W_defect_identity_unit == R-eta junction coefficient.
 | `physical readout` | the standing missing selector |
 ### N4
 Residual matching: against the radian row, this is the same Type-B-to-radian
-residual now placed on the invariant. Against PR #4783, it is the same unit
-wall re-coordinated. Against #4760/#4771, it is the same selector. Against the
-fixed-locus row, the arithmetic is supplied while readout remains excluded.
+residual now placed on the invariant. Against the non-linked #4783 context, it
+is the same unit wall re-coordinated. Against #4760/#4771, it is the same
+selector. Against the fixed-locus row, the arithmetic is supplied while readout
+remains excluded.
 ### N5
 The proven sentences are the finite spectrum algebra, the holonomy identity,
 and the equivalence `c=1 <=> Phi=2/3`. The runner tests these at finite 3x3
@@ -234,5 +239,5 @@ python3 scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py
 ```
 Expected final line:
 ```text
-TOTAL: PASS=97 FAIL=0
+TOTAL: PASS=100 FAIL=0
 ```

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
         "wilson_m_h_tree_at_extremum_all_orders_bounded_note_2026-05-08",
         "cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17",
         "emergent_lorentz_interacting_velocity_rg_attractor_note_2026-06-06",
         "hunit_to_ewsb_doublet_representation_no_go_note_2026-06-15",
         "koide_delta_phase_and_generation_count_share_one_z2_orientation_narrow_theorem_note_2026-06-08",
         "magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06",
-        "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12"
+        "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12",
+        "signed_gravity_wilson_mass_holonomy_twisted_edge_realization_narrow_theorem_note_2026-06-11"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0d04104a5418a9a5c35e77c517ea69c002b85b547ab768669eec06067312c502",
+      "note_hash": "923042f046961bd107321f3cfa015351931afba17db3b8a2a8319629ea28fc46",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

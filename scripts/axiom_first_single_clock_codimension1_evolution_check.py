@@ -60,8 +60,10 @@ Computes the load-bearing content of the axis-conditional theorem
   [D] composition / circularity discipline: textual checks that the
       companion note declares B-AXIS, retires B-RANGE from current
       scope, cites the free-bilinear quasilocal propagation supplier,
-      withdraws the old S3, and keeps the claim transfer- and
-      tau-relative (guards against wording regression).
+      withdraws the old S3, keeps the claim transfer- and tau-relative,
+      and preserves the 2026-06-17 B-AXIS.1 split between the supported
+      internal blocked-transfer denominator and the still-open absolute
+      physical clock unit (guards against wording regression).
 
 Deterministic; runtime well under one minute. TOTAL: PASS=n FAIL=0.
 """
@@ -600,7 +602,7 @@ def block_D_discipline() -> None:
     record("D", "proposal firewall: B-AXIS remains a declared blocker",
            "not a retained-grade proposal" in flat_text
            and "B-AXIS" in text
-           and "remains declared" in text,
+           and ("remains declared" in text or "remain declared/open" in text),
            "no retained-grade proposal while B-AXIS is declared")
     record("D", "spatial-clustering clause not consumed (cluster L2 is conditional)",
            "L2 spatial clustering is consumed nowhere" in text
@@ -618,10 +620,22 @@ def block_D_discipline() -> None:
     record("D", "2026-06-12 firewall: B-RANGE retired, B-AXIS remains the live blocker",
            "2026-06-12 Remaining-Blocker Source Firewall" in text
            and "B-AXIS as the live" in text
-           and "record-durability axis selection" in text
-           and "do not derive B-AXIS" in text
+           and ("record-durability axis selection" in text
+                or "record-durability axis-selection" in text)
+           and ("do not derive B-AXIS" in text
+                or "does not derive B-AXIS" in text
+                or "leaves B-AXIS open" in text)
            and "No retained-grade proposal or status promotion is made here" in text,
            "axis-selection route-pruning context wired without retained promotion")
+    record("D", "2026-06-17 B-AXIS.1 split note is wired",
+           "SINGLE_CLOCK_BLOCKED_TIME_UNIT_SPLIT_N2_SUPPORT_NOTE_2026-06-17.md" in text
+           and "S-N2-SPLIT" in text,
+           "blocked-time denominator support boundary is linked as source support")
+    record("D", "B-AXIS.1 split keeps absolute clock unit open",
+           "internal denominator `2a_tau`" in text
+           and "absolute physical clock unit" in text
+           and "B-AXIS.1b" in text,
+           "does not derive a physical clock/rate unit")
 
 
 # -------------------------------------------------------------------

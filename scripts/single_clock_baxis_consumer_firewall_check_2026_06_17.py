@@ -47,8 +47,8 @@ TARGETS = {
     },
     "docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md": {
         "required": [
-            "currently `audited_conditional`",
-            "| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | `bounded_theorem` | `audited_conditional` | `audited_conditional` |",
+            "axis-conditional single-clock Hilbert/local-data surface under",
+            "source-boundary prose, not as an audit-status update",
             "axis-conditional boundary: one supplied",
             "does not derive B-AXIS and is not retained authority for temporal-axis",
             "axis-conditional single-clock/local-data premise under B-AXIS",
@@ -56,6 +56,10 @@ TARGETS = {
         "forbidden": [
             "| `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | `positive_theorem` | `unaudited` | `unaudited` |",
             "single-clock source is currently axis-conditional on B-AXIS\n  (`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03`,\n  currently `unaudited`)",
+            "| Upstream | `claim_type` | `audit_status` | `effective_status` |",
+            "single-clock companion is `unaudited`",
+            "companion currently\n`unaudited`",
+            "retained single-clock local-data",
         ],
     },
     "docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md": {

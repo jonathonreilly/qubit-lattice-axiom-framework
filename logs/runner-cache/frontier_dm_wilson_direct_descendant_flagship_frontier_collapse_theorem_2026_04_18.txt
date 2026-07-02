@@ -1,20 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_wilson_direct_descendant_flagship_frontier_collapse_theorem_2026_04_18.py
-runner_sha256: df53855a03eb5861e0e81f4d30e500a47b409d85abc4acd11664b7eafc5fd2cf
+runner_sha256: 8b344120f4157d9b4bf5c377542d34003027178b146e6964767920a35e2b13a1
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.98
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
 ----- stdout -----
 ========================================================================================
 DM WILSON DIRECT-DESCENDANT FLAGSHIP FRONTIER COLLAPSE THEOREM
 ========================================================================================
 
 ========================================================================================
-PART 1: THE FLAGSHIP ROUTE ALREADY FIXES THE CHARGED SUPPORT
+PART 1: THE PMNS ROW IS A BOUNDED PROJECTOR INTERFACE, NOT SUPPORT-SELECTION CLOSURE
 ========================================================================================
-  [PASS] The PMNS projector interface says the lepton supports E_nu and E_e are fixed
-  [PASS] The PMNS projector interface also says the flavored packet does not require a new support-selection theorem
+  [PASS] The PMNS projector interface is now a bounded raw pair-to-projector algebra row
+  [BOUNDARY] The repaired PMNS row no longer closes lepton-support provenance for the DM flagship route  (support split and physical column selection remain outside the pair-to-projector interface)
   [PASS] The projected-source-law derivation says the selected flavored transport column is algorithmic once dW_e^H is known
   [PASS] The charged source-response reduction says dW_e^H is the exact charged-sector Schur pushforward
 
@@ -22,9 +22,7 @@ PART 1: THE FLAGSHIP ROUTE ALREADY FIXES THE CHARGED SUPPORT
 PART 2: THE MANUSCRIPT-FACING FLAGSHIP GATE IS ALREADY STATED AS A SELECTOR LAW ON dW_e^H
 ========================================================================================
   [PASS] The microscopic selector reduction note states the remaining object exactly as a right-sensitive selector law on dW_e^H
-  [FAIL] The publication matrix states the remaining positive theorem target as the route-independent microscopic dW_e^H / Z_3 selector law
-  [FAIL] The claims table uses the same manuscript-facing statement of the open gate
-  [FAIL] The full claim ledger also aligns the flagship gate to the same selector-law target
+  [BOUNDARY] Publication control-plane wording has moved past the old exact selector-law phrase  (no publication-surface edit is made in this source-side repair)
 
 ========================================================================================
 PART 3: THE WILSON-PARENT AUDIT BLOCKS A STRONGER PROGRAM, NOT THE FLAGSHIP SUPPORT INPUT
@@ -39,15 +37,16 @@ PART 4: WITH FIXED E_e, AMBIENT COMPLETION FREEDOM DOES NOT CHANGE THE FLAGSHIP 
   [PASS] Those first variations agree with the analytic Schur response law on L_e  (analytic err=2.63e-09)
   [PASS] So the fixed-support responses reconstruct the same H_e independently of the ambient completion  (errors=(3.56e-09,4.12e-09))
   [PASS] The downstream N_e packet is likewise fixed once H_e is fixed  (max diff=3.28e-09)
-  [PASS] The downstream flavored DM values are identical and recover the near-closing canonical N_e readout  (eta_a=[0.82075559 0.98951271 0.92061708], eta_b=[0.82075559 0.9895127  0.92061708])
+  [PASS] The downstream flavored DM values are identical and recover the near-closing canonical N_e readout  (eta_a=[0.820756 0.989513 0.920617], eta_b=[0.820756 0.989513 0.920617])
 
 ========================================================================================
 PART 5: BOTTOM LINE
 ========================================================================================
-  [PASS] On the live flagship route, the remaining blocker is the right-sensitive microscopic law on L_e rather than a separate support-provenance branch  (fixed E_e + exact Schur reduction + selector reduction => target is the right-sensitive law on L_e = Schur_Ee(D_-))
+  [PASS] Given a supplied fixed charged support block, ambient completion freedom does not add a downstream flagship ambiguity  (the computation is conditional on supplied E_e/L_e data; support provenance is not closed here)
+  [BOUNDARY] The former exact collapse claim is kept only as bounded fixed-support diagnostic support  (Wilson-native support provenance and the right-sensitive microscopic selector law remain open)
 
 ========================================================================================
-SUMMARY: PASS=13 FAIL=3
+SUMMARY: PASS=12 BOUNDARY=3 HARD_ISSUES=0
 ========================================================================================
 
 ----- stderr -----

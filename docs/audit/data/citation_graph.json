@@ -53462,15 +53462,15 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "yt_vertex_power_derivation"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
       "to": "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "yt_vertex_power_operator_counting_lemma_note_2026-05-17"
     },
     {
       "from": "repo.front_door_status",
@@ -103170,9 +103170,9 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "yt_vertex_power_derivation",
         "observable_principle_t1d_determinant_context_quotient_bridge_note_2026-06-18",
         "observable_principle_t1d_positive_diagonal_readout_classifier_note_2026-06-18",
+        "yt_vertex_power_operator_counting_lemma_note_2026-05-17",
         "staggered_dirac_substep1_statistics_gl_f_conditional_discriminator_bounded_theorem_note_2026-06-10",
         "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
         "yt_ward_identity_derivation_theorem",
@@ -103180,7 +103180,7 @@
         "axiom_first_cpt_theorem_stretch_note_2026-04-29"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e2e31e6de864adf83aac890ad2258ccb653d9b373297b821bf78e4bfd0785305",
+      "note_hash": "568c09ba3dc1a4e6c9338fb7600aafb402831c91653590a7dae6a3ff85015ef4",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

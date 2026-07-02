@@ -1,8 +1,15 @@
 # Flavor Record Readout Fixes Form Not Weight
 
 **Date:** 2026-06-02
-**Claim type:** open_gate.
-**Runner:** `scripts/flavor_record_readout_form_not_weight_2026_06_02.py`.
+**Type:** open_gate
+**Claim type:** open_gate
+**Status authority:** independent audit lane only. This source note sets source
+claim metadata only; it does not set, predict, or edit any audit outcome.
+**Primary runner:** [`scripts/flavor_record_readout_form_not_weight_2026_06_02.py`](../scripts/flavor_record_readout_form_not_weight_2026_06_02.py)
+**Runner cache:** [`logs/runner-cache/flavor_record_readout_form_not_weight_2026_06_02.txt`](../logs/runner-cache/flavor_record_readout_form_not_weight_2026_06_02.txt)
+**No-promotion statement:** This source note creates no promotion, no registry
+edit, no audit verdict, and no downstream status change; status remains owned
+by the independent audit lane.
 
 This source note translates the earlier qubit-to-record proposal into the
 approved Lattice, Quantum, Record framework. It does not add or rename an
@@ -42,6 +49,34 @@ Record readout can support the additive/log form gate once the multiplicative
 amplitude and observable surface are supplied. It does not close the Koide
 measure residual. The honest residual is still the reference-state or
 block-measure choice: dimension count `(1:2)` versus sector count `(1:1)`.
+
+## 2026-06-13 Downstream Boundary Alignment
+
+The downstream occupancy-independence theorem
+[`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+sharpens the Record boundary used here. Record supplies additive scalar form
+only after a readout surface and multiplicative amplitude have been specified;
+the live Record axiom also explicitly declines weighting, normalization,
+probability, and occupancy-rule supply. The downstream theorem then exhibits
+two consistent models:
+
+- sector occupancy, which counts the doublet as two real slots and gives
+  `r = 1`; and
+- orbit occupancy, which counts the K/CPT orbit as one complex slot and gives
+  `r = 1/2`.
+
+Thus this row's open-looking "form not weight" residual is the same explicit
+occupancy/slot-degree atom, not a second independent Record gate. The runner
+checks this downstream alignment directly and still makes no adoption or
+status claim.
+
+## Dependencies
+
+- [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
+  (downstream occupancy/slot-degree boundary; bounded-theorem source, not an
+  audit verdict).
+- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+  (Record axiom boundary and scope reference).
 
 ## No-Go Discipline Gate
 

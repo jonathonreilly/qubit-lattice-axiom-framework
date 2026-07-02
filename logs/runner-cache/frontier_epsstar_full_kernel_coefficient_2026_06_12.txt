@@ -1,0 +1,48 @@
+===== runner cache v2 =====
+runner: scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py
+runner_sha256: d7214d70862401c6002b6e645c78e379a4de53c4af3d6a3956a0f8988d83f632
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 2.89
+status: ok
+----- stdout -----
+eps* full-kernel Sommerfeld coefficient verifier
+PT cell: Q=24, Ly=2, N=48, GL=20; bracket=[1.2,2.4], surface_eta=0.050, deg_tol=1.0e-10
+
+S0 ANCHORS
+T0_BRANCH mu0=1.515550712171 branch_final=(-7.105427357601e-15,+4.973799150321e-14) R0_prime_naive=+2.557860549618e+02 C_T2_naive=+7.819617146794e+02
+NAIVE_ALPHA alpha_seagull=-9.266358431851 frozen=-9.270000000000
+ANTI_FAB T=0.20 root=1.631150561591 interband_chi=-8.887936149151e-01 interband_H1_weight=+1.080520517733e-01
+PASS: S0 T=0 branch root is in the internally recomputed mu*_0=1.5216 region :: mu0=1.515550712171, frozen=1.5216, tol=2.00e-02
+PASS: S0 precursor naive seagull alpha is reproduced :: alpha_seagull=-9.266358431851, frozen=-9.27, tol=7.50e-01
+PASS: S0 anti-fabrication: interband |H1| weight is nontrivial at the PT root :: interband_H1_weight=1.080521e-01, min=1.0e-02
+
+S1 TRUTH: finite-T boundary roots
+ROOT T=0.080 mu=1.554184343406 mu2=2.415488973288 chi=-7.105e-15 interband=-8.673378042320e-01
+ROOT T=0.100 mu=1.576146132255 mu2=2.484236630223 chi=+0.000e+00 interband=-8.513957965939e-01
+ROOT T=0.120 mu=1.600973650053 mu2=2.563116628165 chi=+0.000e+00 interband=-8.344882688032e-01
+ROOT T=0.150 mu=1.618806032391 mu2=2.620532970506 chi=-1.421e-14 interband=-8.386961351718e-01
+ROOT T=0.200 mu=1.631150561591 mu2=2.660652154577 chi=+0.000e+00 interband=-8.887936149151e-01
+PRECURSOR_SLOPE_GRID T=0.100:mu=1.576146132255:mu2=2.484236630223 T=0.150:mu=1.618806032391:mu2=2.620532970506 T=0.200:mu=1.631150561591:mu2=2.660652154577 T=0.250:mu=1.645930351011:mu2=2.709086720380
+TRUTH_FIT mu*(T)^2 = c + d*T^2: c=2.487775722248 d_measured=+3.877078419951 max_abs_residual=4.552298380931e-02
+PASS: S1 measured finite-T slope reproduces internally recomputed +3.88 :: d_measured=+3.877078419951, frozen=+3.88, tol=7.50e-01
+
+S2 FULL COEFFICIENT: complete finite-T divided-difference kernel
+COEFFICIENTS alpha_seagull=-9.266358431851 alpha_kernel=+13.408176855555 alpha_full=+4.141818423703
+FULL_INTERNAL coeff_T=0.050 chi_full(T)=-8.737907831617e-01 seagull(T)=+5.786462059832e+01 kernel(T)=-5.873841138148e+01 C_T2_full=-3.495163132647e+02; R0_prime=+2.557860549618e+02 C_T2_naive=+7.819617146794e+02
+COMPARISON d_measured=+3.877078419951 alpha_full=+4.141818423703 relative_mismatch=6.828337605706e-02
+
+S3 GATES
+PASS: S3 alpha_full has the same positive sign as the measured boundary slope :: alpha_full=+4.141818423703, d_measured=+3.877078419951, gate both > 0
+PASS: S3 alpha_full matches d_measured within the frozen relative tolerance :: relative_mismatch=6.828338e-02, tol=1.50e-01
+PASS: S3 kernel term flips the naive sign :: alpha_seagull=-9.266358431851, alpha_kernel=+13.408176855555, gate seagull<0, kernel>0, |kernel|>|seagull|
+
+S4 SOURCE HYGIENE
+PASS: S4 canonical source metadata is present :: claim_type bounded_theorem; independent audit authority; no-promotion statement
+PASS: S4 runner and cache markdown links are present :: primary runner/cache links seed review discoverability
+PASS: S4 closed-PR authority rhetoric is absent :: no closed PR is cited as load-bearing authority
+PASS: S4 minimal-axiom dependency link is present :: one scope-reference dependency link
+
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----

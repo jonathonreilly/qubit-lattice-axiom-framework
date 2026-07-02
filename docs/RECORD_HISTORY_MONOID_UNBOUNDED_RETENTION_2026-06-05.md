@@ -1,7 +1,10 @@
 # Record History Monoid And Unbounded Finite Retention
 
 **Date:** 2026-06-05
-**Claim type:** positive_theorem
+**Claim type:** bounded_theorem
+**Claim boundary:** exact post-record support theorem under a supplied finite
+record alphabet and supplied produced records. Independent audit is required
+before any effective-status use.
 **Status authority:** independent audit lane only. This source note does not
 apply audit verdicts, does not edit audit data, and does not assert package
 promotion.
@@ -17,6 +20,34 @@ with cache
 - [`RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md`](RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md)
 
 ---
+
+## 2026-06-17 source-boundary repair
+
+This note was previously labelled `positive_theorem`. That label was too
+broad for the payload. The runner proves exact finite monoid/count algebra and
+the absence of a fixed finite lattice-slot cap after a readout context supplies
+finite record atoms. It does **not** prove a production theorem for nonzero
+records, a measurement/decoherence dynamics, a probability law, a time metric,
+or a physical normalization.
+
+The auditable source claim is therefore:
+
+```text
+bounded support / exact post-record theorem:
+  supplied finite record alphabet + durable realized records
+  -> finite word monoid O*
+  -> count monoid N^O
+  -> finite scalar additivity over counts
+  -> no fixed finite cap across arbitrary finite tagged histories on Z^3.
+```
+
+Downstream rows may cite this note for post-record append/count support and
+for the finite-prefix-vs-arbitrary-finite-family distinction. They must still
+carry a separate premise for produced nonzero records, readout context,
+measurement dynamics, probability/independence, time/rate normalization, and
+any dial selection. This source-boundary repair is not an audit retag and
+does not claim that `RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md`
+is retained; it makes the parent dependency auditable at the correct strength.
 
 ## Result
 
@@ -172,9 +203,10 @@ the entire history to remain one coherent qubit state.
 
 ## What this unlocks
 
-1. **Unbounded history without a new axiom.** The combination of finite record
-   atoms, durable append, finite scalar additivity, and the infinite `Z^3`
-   carrier gives arbitrary finite histories.
+1. **Unbounded finite post-record support without a new axiom.** The
+   combination of a supplied finite record alphabet, durable append, finite
+   scalar additivity, and the infinite `Z^3` carrier gives arbitrary finite
+   tagged histories.
 2. **Cleaner dynamics.** Post-record dynamics is an information/count process,
    separate from pre-record quantum amplitudes.
 3. **Audit repair grammar.** Rows that only need append/count semantics can cite
@@ -186,10 +218,15 @@ the entire history to remain one coherent qubit state.
 
 ## Boundaries
 
+- Does not prove that nonzero records are physically produced at arbitrary
+  finite lengths.
+- Does not derive the readout context, central-sector decomposition, or finite
+  record alphabet.
 - Does not derive record-production dynamics.
 - Does not derive measurement/decoherence dynamics.
 - Does not prove physical persistence beyond the Record axiom's durability
   premise.
+- Does not derive probability, independence, IID structure, or Born weights.
 - Does not introduce a time metric or clock rate.
 - Does not claim a completed infinite history object.
 - Does not claim the history is stored as one coherent quantum state.
@@ -211,4 +248,16 @@ The runner verifies:
 - all constructed histories are finite even though lengths are unbounded over
   finite `N`.
 
-Scorecard: `PASS=25 FAIL=0`.
+Scorecard: `PASS=32 FAIL=0`.
+
+## Claim boundary
+
+- Claim id:
+  `record_history_monoid_unbounded_retention_2026-06-05`.
+- Trace class: upstream support.
+- Reachability: supports downstream rows that need exact post-record
+  monoid/count algebra under a supplied finite record alphabet and supplied
+  produced records.
+- This source note makes no retained-status proposal and does not use bare
+  retained language. Production, readout, probability, IID, and time/rate
+  bridges remain separate.

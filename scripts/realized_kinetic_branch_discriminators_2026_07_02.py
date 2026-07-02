@@ -19,6 +19,7 @@ from __future__ import annotations
 import itertools
 import math
 import sys
+from pathlib import Path
 
 import numpy as np
 
@@ -557,6 +558,13 @@ def main():
         "SUMMARY: representative-level discriminators on the two-flux-class "
         "surface; selector bit NOT forced here; Admissibility reading not decided."
     )
+    root = Path(__file__).resolve().parents[1]
+    note_path = root / "docs" / "REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md"
+    note = note_path.read_text(encoding="utf-8")
+    check("SRC", "source declares bounded_theorem claim type", "**Claim type:** bounded_theorem" in note)
+    check("SRC", "source does not set a Status field", "**Status:**" not in note)
+    check("SRC", "source keeps selector/admissibility residual open", "selector bit is not decided here" in note and "Admissibility" in note)
+    check("SRC", "source says cache is generated and SHA-pinned", "cache file is generated" in note and "SHA-pinned" in note)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 

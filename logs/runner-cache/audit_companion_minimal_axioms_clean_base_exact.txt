@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_minimal_axioms_clean_base_exact.py
-runner_sha256: fcdf3aca3e27508f459f6a3f494ba8472789c763b3f795709753427a65a79ea4
+runner_sha256: d83ea3ad13c740126f4ad33038bb7b707cd0da344117da3adff206442b9aa7f8
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -44,6 +44,10 @@ PASS: Registry note blocks observable-principle laundering
       
 PASS: Registry note records Admissibility and downstream-boundary firewall
       
+PASS: Registry note records 2026-07-02 no-privilege/readout/state/law wording
+      
+PASS: Policy records 2026-07-02 foundation wording additions
+      
 PASS: Policy records 2026-06-29 foundation reset
       
 PASS: Policy no-laundering clause lists Admissibility and Record boundaries
@@ -62,7 +66,13 @@ PASS: Note names exactly four framework axioms
       
 PASS: Lattice locality clause is present
       
-PASS: Qubit site-possibility clause is present
+PASS: Qubit site-possibility and no-privilege clauses are present
+      
+PASS: Qubit distinction clause is present and joined to the no-privilege sentence
+      
+PASS: Policy records 2026-07-02 Qubit distinction clause
+      
+PASS: Registry note records the distinction clause
       
 PASS: Cl(3,0) is fenced as representation-only
       
@@ -71,6 +81,8 @@ PASS: Admissibility local-constraint clause is present
 PASS: Record fixed-reality clause is present
       
 PASS: Qualification is named-content-only language
+      
+PASS: Qualification records state and law discipline
       
 PASS: Audit-pipeline treatment says chain-satisfy without bounding
       
@@ -100,11 +112,17 @@ PASS: Record: finite scalar record functional is additive over disjoint collecti
       I(R1 union R2)=I(R1)+I(R2) and I(empty)=0 checked for finite weighted records
 PASS: Record: locked possibility is invariant under repeated readout
       same record identity returns the same locked possibility; no resampling or re-selection is used
+PASS: Qubit: no possibility is privileged by the one-site domain
+      finite toy relabeling preserves the possibility domain; no default, weight, or selector is introduced
+PASS: Qualification: a state can be read as a configuration of records
+      unrecorded openness carries no hidden possibility assignment in this toy state
+PASS: Qualification: supplied-condition law gives one answer where its condition holds
+      toy law has a supplied condition on record configurations and returns one determinate verdict when defined
 PASS: Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion
       script checks only algebraic notation, graph adjacency, local availability bookkeeping, fixed record readout, and finite additivity
 
-runner_check_breakdown = {A: 48, B: 0, C: 0, D: 0, total_pass: 48}
-TOTAL: PASS=48 FAIL=0
+runner_check_breakdown = {A: 57, B: 0, C: 0, D: 0, total_pass: 57}
+TOTAL: PASS=57 FAIL=0
 RESULT: PASS
 
 ----- stderr -----

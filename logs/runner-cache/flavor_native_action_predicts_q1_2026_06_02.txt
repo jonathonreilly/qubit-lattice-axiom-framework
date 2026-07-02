@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_native_action_predicts_q1_2026_06_02.py
-runner_sha256: 77d9ced8289a9f5b00098293c2cab9bc097fd24b26a103ccb8b8a89853c7157d
+runner_sha256: d1e4af22a80eee584afc12590e3d9f3b004c3802a34fd3ff22bc7ed0992daea7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.89
+elapsed_sec: 0.87
 status: ok
 ----- stdout -----
 [PASS] HS block norms 3a^2 and 6b^2 (||C+C^2||_F^2 = 6)
@@ -16,12 +16,22 @@ status: ok
        spectrum=[-3.33066907e-16 -2.37213427e-17  3.00000000e+00], Q=1.000000
 [PASS] mass grade (I) and hopping grade (C+C^2) are HS-orthogonal => one bi-invariant norm cannot fix the a:|b| ratio
        <mass,hop>_HS = 0.00e+00
+[PASS] downstream occupancy atom: downstream occupancy theorem is ledger-registered as a bounded_theorem source
+       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: claim_type=bounded_theorem, note_path=docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md
+[PASS] downstream occupancy atom: Record axiom declines weighting and occupancy supply
+       checked live Minimal Axioms text
+[PASS] downstream occupancy atom: occupancy note records independence without adopting the premise
+[PASS] downstream occupancy atom: sector and orbit occupancy weights differ by exactly two
+       sector=2*pi/g, orbit=pi/g
+[PASS] downstream occupancy atom: orientation maps sector occupancy to r=1 and orbit occupancy to r=1/2
+       sector=1, orbit=1/2
 
-SCORECARD PASS=5 FAIL=0
+SCORECARD PASS=10 FAIL=0
 FINDING: the five displayed spectral-action cutoffs peak near r=1 (Q=1), not r=1/2.
 The mass/hop grades are HS-orthogonal, so one HS quadratic norm on this ansatz
 does not fix their ratio. This is a finite-scan/source-scope certificate, not
 an arbitrary native-action theorem.
+DOWNSTREAM: the residual is the explicit occupancy/slot-degree atom; no
+action-axis selector is introduced or adopted here.
 
 ----- stderr -----
-

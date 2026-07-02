@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 205 |
-| **retained_no_go** | 201 |
+| **retained_no_go** | 202 |
 | **retained_bounded** | 909 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 32 |
-| unaudited | 1657 |
+| unaudited | 1656 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1325 |
+| `audited_clean` | 1326 |
 | `audited_conditional` | 39 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1983 |
+| `unaudited` | 1982 |
 
 | claim_type | count |
 |---|---:|
@@ -111,7 +111,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 4 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 920 | 60.35 | `unaudited` | unaudited |
 | 5 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1029 | 54.01 | `audited_clean` | **retained_bounded** |
 | 6 | `minimal_axioms_2026-05-03` | meta | critical | 1033 | 48.01 | `unaudited` | meta |
-| 7 | `key_terminology` | meta | critical | 1127 | 46.64 | `unaudited` | meta |
+| 7 | `key_terminology` | meta | critical | 1126 | 46.64 | `unaudited` | meta |
 | 8 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 898 | 44.31 | `unaudited` | unaudited |
 | 9 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 989 | 41.45 | `audited_clean` | **retained_bounded** |
 | 10 | `native_gauge_closure_note` | positive_theorem | critical | 1401 | 40.45 | `audited_clean` | **retained** |
@@ -576,6 +576,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_strong_field_observable_split_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `gate_b_v6_nearfield_comparator_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `gate_b_weak_connectivity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_beta6_reproduction_contract_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_scalar_kz_su3_beta6_convention_split_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
@@ -8009,6 +8010,19 @@ Claim boundary until fixed: the algebraic identity Gamma_a = Gamma_p as an exact
 - **chain closes:** True — The scoped GB-S1a claim closes by direct algebraic instantiation of the cited weak-field response theorem with phi specialized to phi_GB. The broader Gate B source packet remains outside this audited scope.
 - **rationale:** The cited weak-field authority already provides S_test(phi;x)=L_test(1-phi(x)); the source note's load-bearing move is to substitute the runner-local phi_GB and observe the identical linear action shape. The runner source confirms this is not a first-principles Gate B source derivation: it performs textual dependency checks plus exact algebraic identity, additivity, and normalization-degeneracy checks. Because the scoped result adds no independent physical bridge beyond the retained-bounded parent theorem and explicitly excludes the rest of the Gate B packet, the correct classification is algebraic decoration rather than a new bounded theorem.
 - **decoration parent:** `gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11`
+- **auditor confidence:** high
+
+### `gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16`
+
+- **Note:** [`GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md`](../../docs/GAUGE_GAUGING_SELECTION_CONJUGATION_INDEPENDENCE_NO_GO_NOTE_2026-06-16.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the explicitly supplied H = C^3 x C^2 carrier, finite-dimensional invariant/commutant data do not select the factorwise su(3)+su(2)+u(1) embedding over non-factor-local unitary conjugates, and scalar-commutant irreducibility also does not distinguish it from u(6).
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T031809Z-f201488f-gauge_gauging_selection_`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** A non-factor-local unitary conjugate U S U* has the same dimension, closure, center profile, and scalar commutant as S while being a distinct embedding, so conjugation-invariant carrier data cannot select the factorwise algebra.  _(class `A`)_
+- **chain closes:** True — The finite-dimensional claims follow from standard Lie-algebra and commutant calculations on the supplied carrier: conjugation preserves the invariant profile, and the exhibited non-factor-local conjugate is distinct. The accepted minimal-axiom authority is used only to confirm that the axioms supply no factorization or gauging selector.
+- **rationale:** The load-bearing step is a class-A algebraic no-go, not a definition, renaming, tuned numerical match, or external comparator. The runner instantiates the su(3), su(2), identity, an entangling unitary, and a u(6) basis, then checks ranks, closure residuals, commutants, center dimension, and Schmidt-rank distinction rather than merely printing constants. No-Go Discipline passes for the narrow route-pruning scope: the result blocks invariant/commutant carrier criteria only and leaves matter, dynamics, chirality, and explicit bridge routes live.
 - **auditor confidence:** high
 
 ### `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02`

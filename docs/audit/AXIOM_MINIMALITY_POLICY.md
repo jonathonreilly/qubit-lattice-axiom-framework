@@ -84,9 +84,11 @@ Recorded explicitly approved axiom updates:
   closing the readout-function gap in place: "A readout value is determined
   by record content alone." (owner wording; additivity unchanged). Second,
   the Qubit axiom gains one individuation sentence generalizing the
-  equivalent-presentation quotient beyond the named Cl(3,0) pair: "No
-  presentation, and no basis or frame within one, is primitive; possibilities
-  related by presentation equivalence are the same possibility." Third, one totality sentence
+  equivalent-presentation quotient beyond the named Cl(3,0) pair: "A
+  possibility is individuated by its algebraic relations alone." (owner-form
+  wording; no presentation, basis, or frame individuates, since none is a
+  relation, and presentation-equivalent descriptions describe the same
+  possibility). Third, one totality sentence
   is added to the Qualification section: "A rule offered as a law must be
   well-defined at every state admissible under Admissibility throughout its
   declared domain; the domain must be declared as registered structure, not

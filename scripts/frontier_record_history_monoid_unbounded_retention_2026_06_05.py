@@ -195,12 +195,12 @@ def main() -> int:
     # ------------------------------------------------------------------
     note_text = NOTE.read_text(encoding="utf-8")
     note_flat = " ".join(note_text.split())
-    check("G8.1 source note declares bounded support, not positive closure", "**Claim type:** bounded_theorem / exact post-record support theorem." in note_text)
-    check("G8.2 source note records actual bounded-support status", "actual_current_surface_status: bounded-support" in note_text)
+    check("G8.1 source note declares bounded theorem, not positive closure", "**Claim type:** bounded_theorem" in note_text)
+    check("G8.2 source note records exact post-record support boundary", "exact post-record support theorem" in note_text)
     check("G8.3 source note says production is not derived", "Does not prove that nonzero records are physically produced" in note_text)
     check("G8.4 source note says readout context/alphabet are supplied", "supplied finite record alphabet" in note_flat and "Does not derive the readout context" in note_text)
     check("G8.5 source note keeps probability and IID outside the result", "Does not derive probability, independence, IID structure" in note_text)
-    check("G8.6 source note blocks bare retained language", "bare_retained_allowed: false" in note_text and "proposal_allowed: false" in note_text)
+    check("G8.6 source note blocks retained-status proposal language", "makes no retained-status proposal" in note_flat and "does not use bare retained language" in note_flat)
     check("G8.7 source note names downstream additivity row without promoting it", "RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md" in note_text and "does not claim" in note_flat)
 
     print("\n=== Record history interpretation ===")

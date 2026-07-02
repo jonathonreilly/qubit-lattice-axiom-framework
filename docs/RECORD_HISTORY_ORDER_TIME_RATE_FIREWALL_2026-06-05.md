@@ -6,9 +6,9 @@ claim_type_author_hint: no_go
 # Record History Order Is Not A Time/Rate Metric
 
 **Date:** 2026-06-05
-**Claim type:** no_go / bounded negative route-pruning certificate.
-**Actual current-surface status:** bounded-support source proposal; independent
-audit required before any effective-status use.
+**Claim type:** no_go
+**Claim boundary:** bounded negative route-pruning certificate. Independent
+audit is required before any effective-status use.
 **Status authority:** independent audit lane only. This source note does not
 set an audit verdict, edit audit data, or assert package-status promotion.
 **Primary runner:**
@@ -140,19 +140,15 @@ The runner verifies:
 Expected result:
 
 ```text
-SCORECARD PASS=45 FAIL=0
+SCORECARD PASS=44 FAIL=0
 ```
 
-```yaml
-claim_id: record_history_order_time_rate_firewall_2026-06-05
-actual_current_surface_status: bounded-support
-trace_class: negative_route_pruning
-reachability_to_target: prunes
-conditional_surface_status: "exact support for order/count/per-step-kernel facts; no physical time/rate closure"
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "This row prunes time/rate imports from post-record order; it does not propose retained closure."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
+## Claim boundary
+
+- Claim id:
+  `record_history_order_time_rate_firewall_2026-06-05`.
+- Trace class: negative route pruning.
+- Reachability: prunes imports from exact order/count/per-step-kernel facts to
+  physical time, rate, generator, clock, or metric-duration closure.
+- This source note makes no retained-status proposal and does not use bare
+  retained language.

@@ -1,9 +1,10 @@
 # Record History Monoid And Unbounded Finite Retention
 
 **Date:** 2026-06-05
-**Claim type:** bounded_theorem / exact post-record support theorem.
-**Actual current-surface status:** bounded-support source proposal; independent
-audit required before any effective-status use.
+**Claim type:** bounded_theorem
+**Claim boundary:** exact post-record support theorem under a supplied finite
+record alphabet and supplied produced records. Independent audit is required
+before any effective-status use.
 **Status authority:** independent audit lane only. This source note does not
 apply audit verdicts, does not edit audit data, and does not assert package
 promotion.
@@ -249,16 +250,14 @@ The runner verifies:
 
 Scorecard: `PASS=32 FAIL=0`.
 
-```yaml
-claim_id: record_history_monoid_unbounded_retention_2026-06-05
-actual_current_surface_status: bounded-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "exact post-record monoid/count support under a supplied finite record alphabet and supplied produced records"
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "This row supplies bounded post-record support; production/readout/probability/time bridges remain separate."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
+## Claim boundary
+
+- Claim id:
+  `record_history_monoid_unbounded_retention_2026-06-05`.
+- Trace class: upstream support.
+- Reachability: supports downstream rows that need exact post-record
+  monoid/count algebra under a supplied finite record alphabet and supplied
+  produced records.
+- This source note makes no retained-status proposal and does not use bare
+  retained language. Production, readout, probability, IID, and time/rate
+  bridges remain separate.

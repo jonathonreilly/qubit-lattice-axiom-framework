@@ -18,13 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 193 |
+| **retained** | 194 |
 | **retained_no_go** | 194 |
 | **retained_bounded** | 868 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1739 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -63,8 +62,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1262 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1263 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 58 |
 | `audited_failed` | 23 |
@@ -137,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -1268,6 +1266,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_three_register_cross_encoding_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `tensor_network_connection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | C | - |
 | `tensor_support_center_excess_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `thales_right_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `theta_cross_plane_term_absent_in_supplied_per_plaquette_class_bounded_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -18086,6 +18085,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — The runner source constructs the transfer matrices, tight-binding Hamiltonians, correlation matrices, entropies, SVDs, and fits directly rather than printing constants or importing the contested premise. The cached output matches the source note's rounded quantitative claims, and the note narrows away the unsupported holographic bridge.
 - **rationale:** The surviving claim is bounded to finite sampled computations and the supplied runner genuinely computes the reported quantities from its stated toy lattice definitions. The displayed coefficients and fit qualities in the note match the runner output to the stated rounding: c=1.0855, area-law R^2=0.999613, center chi 8 to 7 at f=20, inverse-coupling R^2=0.6465, and linear R^2=0.9745. There are no cited non-retained authorities, and the note explicitly rejects treating the finite sweep as an RT or holographic derivation.
 - **auditor confidence:** high
+
+### `tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`
+
+- **Note:** [`TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For finite periodic tensor-product qubit blocks over Z^3, the tensor-permutation translation T_a is unitary, obeys the translation group law, covariantly translates the defined per-site ladder operators and their adjoints, and commutes with Q_total = sum_x a_x^dagger a_x.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-judge-panel-gpt-5.5-20260702T072206Z-unanimous`  (codex-gpt-5.5; independence=judicial_review)
+- **load-bearing step:** The conjugation calculation showing that after T_a^dagger shifts basis contents, a_x lowers the content originally at x+a, and applying T_a moves that lowered factor to site x+a, hence T_a a_x T_a^dagger = a_{x+a}; charge conservation then follows by finite periodic relabeling.  _(class `C`)_
+- **chain closes:** True — All five independent panel judges sided with the first audit. The claim closes cleanly from the registered minimal_axioms premise plus the note's explicit finite tensor-product, ladder-operator, periodic-block, and tensor-permutation definitions. The covariance identity and charge conservation are bridge content constructed from the one-qubit local algebra on Z^3, not merely restatements of an independent retained input. Under the class rubric, accepted axiom-premise dependencies do not downgrade this first-principles framework-baseline closure; the exact runner also constructs those finite operators and reports 131 class-C pass checks with no failures.
+- **rationale:** All five independent panel judges sided with the first audit. The claim closes cleanly from the registered minimal_axioms premise plus the note's explicit finite tensor-product, ladder-operator, periodic-block, and tensor-permutation definitions. The covariance identity and charge conservation are bridge content constructed from the one-qubit local algebra on Z^3, not merely restatements of an independent retained input. Under the class rubric, accepted axiom-premise dependencies do not downgrade this first-principles framework-baseline closure; the exact runner also constructs those finite operators and reports 131 class-C pass checks with no failures.
+- **auditor confidence:** judicial
 
 ### `tensor_support_center_excess_law_note`
 

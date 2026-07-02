@@ -3,7 +3,7 @@
     "critical": 331,
     "high": 314,
     "leaf": 584,
-    "medium": 514
+    "medium": 513
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -19950,31 +19950,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_u4_qubit_reframe_closure.py",
       "transitive_descendants": 3
     },
     {
@@ -51984,6 +51959,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 80,
-  "total_pending": 1743
+  "ready_count": 79,
+  "total_pending": 1742
 }

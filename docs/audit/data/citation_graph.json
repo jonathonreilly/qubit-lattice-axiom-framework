@@ -53470,6 +53470,26 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "axiom_first_cluster_decomposition_theorem_note_2026-04-29"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08"
     },
     {
@@ -53479,26 +53499,6 @@
     {
       "from": "repo.front_door_status",
       "to": "axiom_first_reeh_schlieder_theorem_note_2026-05-01"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "yt_ward_identity_derivation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "cl3_taste_generation_theorem"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17"
-    },
-    {
-      "from": "repo.front_door_status",
-      "to": "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
     },
     {
       "from": "repo.repo_organization",
@@ -55818,7 +55818,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "02d31349f0ab51226fd8448cc88b78507b461eb8ccf944df2f61210cf5bc6541",
+      "note_hash": "0c04ea7c21a8dac6eccf23819e36a10d825c845e500aca12a894dd6a79203e39",
       "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Audit Loop"
@@ -55988,7 +55988,7 @@
         "ai_methodology.skills.no-go-discipline.skill"
       ],
       "helper_runner_paths": [],
-      "note_hash": "703318c961dc4e17d379b8c67b3b8ca70c282c6089b8141f3a94ea36a329aa5a",
+      "note_hash": "1695233a4c614d32942d18550885dede879b6ec82fb5ae07f06aad49a5a12a04",
       "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
       "runner_path": "scripts/vocab_lint.py",
       "title": "Review Loop"
@@ -89880,7 +89880,7 @@
       "claim_type_seed_hint": "meta",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1",
+      "note_hash": "bccb59d53119781f082a3b4bad0aaf4ba71cc852f6fccb61ce02ce450bc737b1",
       "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
       "runner_path": "scripts/audit_companion_minimal_axioms_clean_base_exact.py",
       "title": "Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)"
@@ -103169,7 +103169,7 @@
         "ai_methodology.ai_accountability_and_disclosure_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f5761e25a71c307916c8568ef3efe0bf19a1655c57f6ea42d6937b14128678d6",
+      "note_hash": "a996b86960e71b8cf74a328e913b055fc84414310e8680ceba75ec29e9ddb1c4",
       "path": "docs/repo/CONTROLLED_VOCABULARY.md",
       "runner_path": null,
       "title": "Controlled Vocabulary"
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "staggered_kernel_satisfies_z_point_cone_certificate_narrow_theorem_note_2026-06-11",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25",
+        "quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02",
+        "axiom_first_cluster_decomposition_theorem_note_2026-04-29",
+        "staggered_dirac_substep2_kahler_dirac_equivalence_narrow_theorem_note_2026-05-17",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "yt_vertex_power_derivation",
-        "axiom_first_reeh_schlieder_theorem_note_2026-05-01",
-        "yt_ward_identity_derivation_theorem",
-        "cl3_taste_generation_theorem",
-        "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
-        "hierarchy_b3_staggered_supplier_cascade_note_2026-06-17",
-        "clifford_chirality_dimension_narrow_theorem_note_2026-05-10"
+        "axiom_first_reeh_schlieder_theorem_note_2026-05-01"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f127a5f42549cae157c529877df38184b84f1c6c02d117a88e59539fa6c6ace2",
+      "note_hash": "787fdfff9d32aacb7ee86fda5765bc4d9ea3dbae21fdb170511b8befa86bbe1c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

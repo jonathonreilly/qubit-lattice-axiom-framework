@@ -20,11 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 196 |
 | **retained_no_go** | 195 |
-| **retained_bounded** | 869 |
+| **retained_bounded** | 870 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
 | unaudited | 1733 |
-| audit_in_progress | 1 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 25 |
@@ -64,8 +63,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 3 |
-| `audited_clean` | 1267 |
+| `audit_in_progress` | 2 |
+| `audited_clean` | 1268 |
 | `audited_conditional` | 28 |
 | `audited_decoration` | 59 |
 | `audited_failed` | 23 |
@@ -137,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `g_bare_constraint_vs_convention_restatement_note_2026-05-07` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
-| `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2` | bounded_theorem | audit_in_progress | _retained_pending_chain_ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_epsilon_index_square_block_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.5 | A | - |
 | `abj_p_comp_scale_free_singlet_completion_classification_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -864,6 +862,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `mesoscopic_surrogate_source_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_threshold_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `mesoscopic_surrogate_two_stage_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `minimal_absorbing_horizon_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_bidirectional_trapping_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `minimal_source_driven_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -12134,6 +12133,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** On the retained 2D family, the stage-2 broad surrogate built from the stage-1 sourced response reproduces the stage-1 surrogate rows at printed precision across the tested topN values.  _(class `C`)_
 - **chain closes:** True — The provided runner constructs the 2D lattice, propagates the probe, builds stage-1 and stage-2 compressed surrogate source profiles, and computes the displayed ratios, TV distances, captures, spreads, and overlap. The bounded conclusion is limited to the frozen family and printed-precision two-stage stability.
 - **rationale:** The primary runner does not merely print constants: it generates the lattice, propagates amplitudes under distributed and point-source fields, compresses computed profiles, and compares the second-stage surrogate against the first. The helper source supplies lattice generation and constants used by the computation rather than importing the contested result from another note. The cited authorities are retained_bounded and the note's conclusion stays bounded: mesoscopic two-stage stability, not localized persistent-mass closure.
+- **auditor confidence:** high
+
+### `microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09`
+
+- **Note:** [`MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md`](../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded carrier support/J/W arithmetic, the self-contained finite-range Lieb-Robinson lemma with v_LR=2eqWR, and its unconditional application to the retained tensor-product nearest-neighbor hopping Hamiltonian; exact reconstructed -log(T)/a_tau locality is only a stated conditional implication, not an audited unconditional result.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T080153Z-9c0ba7e1-microcausality_finite_ra`  (codex-gpt-5.5; independence=fresh_context)
+- **load-bearing step:** With q=2, R=1, ||H_xy||=1, and W=|m|+2d for the nearest-neighbor hopping family, applying the proved Lieb-Robinson corollary gives v_LR <= 4·e·(|m| + 2d).  _(class `C`)_
+- **chain closes:** True — The audited bounded core closes from the provided retained-grade inputs: the support and overlap counts follow from the declared carrier surface, and the hopping-H application follows from the retained hopping bilinear authority plus the in-note LR proof. The exact-H/quasilocal material is not used to close the unconditional theorem.
+- **rationale:** The LR constant is derived in the note by an explicit iterated-commutator argument, and the q, R, W inputs for H_hop are computed from the supplied tensor-product operator surface rather than imported as a literature constant. The runner source performs actual matrix/operator checks for support, norms, overlap arithmetic, exact commutator bounds, and the long-range falsification leg, rather than merely printing PASS lines. This verdict ratifies only the stated bounded and conditional scope; it does not ratify an unconditional locality theorem for the reconstructed logarithmic Hamiltonian.
 - **auditor confidence:** high
 
 ### `min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08`

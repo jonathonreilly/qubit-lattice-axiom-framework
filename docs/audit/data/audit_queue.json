@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 325,
+    "critical": 324,
     "high": 314,
     "leaf": 584,
     "medium": 513
@@ -138,30 +138,31 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-      "claim_scope": "Bounded action-density support/J/W budgets on the declared carrier surface, a self-contained finite-range LR lemma with v_LR=2eqWR, and its unconditional application to the tensor-product nearest-neighbor hopping Hamiltonian; exact -log(T) carrier locality remains only conditional/out of scope.",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
+      "cross_confirmation_status": null,
       "deps": [
-        "minimal_axioms",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29",
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
+        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
         "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-        "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05"
+        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
       ],
-      "direct_in_degree": 9,
-      "effective_status": "audit_in_progress",
+      "direct_in_degree": 8,
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 17.393,
-      "note_path": "docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md",
-      "queue_reason": "audit_in_progress",
+      "load_bearing_score": 16.887,
+      "note_path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
+      "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/microcausality_finite_range_h_bridge_2026_05_09.py",
-      "transitive_descendants": 950
+      "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
+      "transitive_descendants": 946
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -582,34 +583,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_anomaly_forces_time.py",
       "transitive_descendants": 1114
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-        "axiom_first_spectrum_condition_theorem_note_2026-04-29",
-        "hopping_bilinear_hermiticity_theorem_note_2026-05-02",
-        "axiom_first_reflection_positivity_theorem_note_2026-04-29"
-      ],
-      "direct_in_degree": 8,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 16.887,
-      "note_path": "docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py",
-      "transitive_descendants": 946
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -19245,6 +19218,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.926,
+      "note_path": "docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/light_cone_crank_nicolson_lr_2026_05_09.py",
+      "transitive_descendants": 85
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "lsp_projective_canonical_kp_equals_p_narrow_theorem_note_2026-06-05",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -20149,30 +20146,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_one_parameter_reduced_shell_law.py",
       "transitive_descendants": 87
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.926,
-      "note_path": "docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/light_cone_crank_nicolson_lr_2026_05_09.py",
-      "transitive_descendants": 85
     },
     {
       "audit_independence_required": "any_non_self",
@@ -34936,6 +34909,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
+        "kinetic_isotropy_primitive"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/microcausality_exact_h_expansion_route_obstruction_2026_06_09.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -38871,31 +38869,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_meron_half_instanton_4pi2_over_g2_external_narrow.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "microcausality_exact_h_expansion_route_quantified_obstruction_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "microcausality_finite_range_h_and_vlr_bridge_theorem_note_2026-05-09",
-        "kinetic_isotropy_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/microcausality_exact_h_expansion_route_obstruction_2026_06_09.py",
       "transitive_descendants": 1
     },
     {
@@ -51807,6 +51780,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 92,
-  "total_pending": 1736
+  "ready_count": 94,
+  "total_pending": 1735
 }

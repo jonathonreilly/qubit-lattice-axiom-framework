@@ -13,5 +13,5 @@ Do not audit or apply verdicts. Make review PRs for coherent science blocks,
 do not push to `main`, do not refresh existing PRs to `main`, and do not check
 PR conflict state. The reviewer will cherry-pick science from the PRs.
 
-Block14 target: test whether a positive `O_h` channel metric on `E (+) T1`
-derives the missing `lambda = q_E/q_T = 9/4` factor.
+Block15 target: test whether a nonseparable quadratic equivariant primitive
+`Sym^2(E (+) T1) -> E (+) T1` selects the missing endpoint factor.

@@ -2,30 +2,23 @@
 
 ## Current Block
 
-1. **Channel metric / normalization primitive.**
-   Test whether a positive `O_h` metric on `E (+) T1` fixes
-   `lambda = q_E/q_T = 9/4`.
-   Result: no-go. The metric cone is `G(c_E,c_T)=c_E P_E + c_T P_T1`,
-   with `c_E/c_T` free.
+1. **Nonseparable quadratic equivariant primitive.**
+   Test whether `Q : Sym^2(E (+) T1) -> E (+) T1` selects
+   `lambda = 9/4`.
+   Result: no-go. The Hom space has dimension `3`, with two independent
+   `E`-output coefficients and one `T1`-output coefficient.
 
 ## Remaining Routes
 
-2. **Nonseparable total-degree-2 primitive.**
-   Search for a tensor primitive outside separable source-side Gram
-   contractions and outside a pure channel metric scalar.
-   Potential movement: could supply a new exact mechanism for the second
-   reciprocal factor.
+2. **Finite-frame/Riesz dual-leg theorem attempt.**
+   Try to justify two reciprocal factors with independently defined source and
+   readout dual legs. Risk: prior work exposed leg-split gauge freedom.
 
-3. **Finite-frame dual-leg derivation.**
-   Try to turn the finite-frame/Riesz dual observation into a theorem with two
-   independently justified source/readout dual legs.
-   Risk: prior block exposed a leg-split gauge freedom.
+3. **Coefficient-selection principle.**
+   Look for a variational, positivity-extremal, trace-minimal, or boundary
+   condition that selects one point in the three-dimensional quadratic map
+   space without fitting the endpoint.
 
-4. **Theta-to-slice coupling uniqueness obstruction.**
-   Use the readout ambiguity to sharpen the exact conditional time-coupling
-   family into a direct no-go/support packet for `s3_time_theta_to_slice`.
-
-5. **Different direct consumer.**
-   If the endpoint triple remains hard-walled, pivot to a direct consumer
-   where the residual ambiguity can be bounded without pretending endpoint
-   closure.
+4. **Theta-to-slice coupling consumer packet.**
+   If endpoint derivation remains blocked, sharpen exactly how the unresolved
+   `rho_E` affects the conditional time-coupling family.

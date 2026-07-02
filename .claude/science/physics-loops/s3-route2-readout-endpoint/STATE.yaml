@@ -1,11 +1,11 @@
 loop: s3-route2-readout-endpoint
 mode: campaign
 date: 2026-06-21
-branch: physics-loop/s3-route2-readout-endpoint-block14-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block15-20260621
 base: origin/main
-base_commit: 355b09e6a
-block: 14
-active_route: channel_metric_schur_free_parameter_no_go
+base_commit: 43976d027
+block: 15
+active_route: nonseparable_quadratic_equivariant_primitive_no_go
 target_triple: "(-1, -2, 21/4)"
 target_residual: "rho_E = beta_E/alpha_E = 21/4, equivalently lambda = q_E/q_T = 9/4"
 actual_current_surface_status: no-go
@@ -16,15 +16,15 @@ audit_actions: none
 main_push_actions: none
 pr_conflict_checks: none
 files_touched:
-  - docs/QUARK_ROUTE2_CHANNEL_METRIC_SCHUR_FREE_PARAMETER_NO_GO_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21.py
-  - logs/runner-cache/frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21.txt
+  - docs/QUARK_ROUTE2_NONSEPARABLE_QUADRATIC_EQUIVARIANT_PRIMITIVE_NO_GO_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.py
+  - logs/runner-cache/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 claim_state_movement:
-  summary: "Pure O_h-invariant channel metrics on E (+) T1 form a two-parameter Schur cone, so c_E/c_T is free; lambda=9/4 is reached only by inserting inverse-square normalization."
+  summary: "Pure O_h nonseparable quadratic maps Sym^2(E (+) T1) -> E (+) T1 have three reduced coefficients, so O_h representation content does not select lambda=9/4."
   import_retired: []
   imports_exposed:
-    - "A new theorem or primitive must derive c_E/c_T = (w_T/w_E)^2 = 9/4; O_h invariance plus positivity does not."
+    - "A coefficient-selection or normalization primitive must choose a point in the 3D reduced-coefficient space."
 prior_pending_blocks_not_main_dependencies:
   - "PR #4537 block08 exact-support: E-center carrier firewall"
   - "PR #4538 block09 no-go: reciprocal projector degree no-go"
@@ -32,8 +32,9 @@ prior_pending_blocks_not_main_dependencies:
   - "PR #4540 block11 no-go: source/readout split gauge-underdetermined"
   - "PR #4541 block12 no-go: rank-one K_R leg factorization"
   - "PR #4542 block13 no-go: K_R source-side Gram/tensor-power route"
+  - "PR #4543 block14 no-go: channel metric Schur-free ratio"
 verification:
-  new_runner: "PASS=13 FAIL=0"
+  new_runner: "PASS=12 FAIL=0"
   exact_readout_map: "PASS=11 FAIL=0"
   kappa_covariance_no_go: "PASS=7 FAIL=0"
   quadratic_covariance_no_go: "PASS=11 FAIL=0"
@@ -43,8 +44,8 @@ verification:
   git_diff_check: pass
   overclaim_scan: "pass; only negative-boundary 'does not derive/close' firewall hits"
 pr:
-  number: 4543
-  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4543"
+  number: 4544
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4544"
   state: OPEN
-next_exact_action: "Pivot to a nonseparable degree-2 primitive or finite-frame dual-leg derivation attempt."
+next_exact_action: "Pivot to finite-frame dual-leg derivation or theta-to-slice consumer packet."
 stop_condition: "Do not stop campaign merely because this route is a no-go; continue to next ranked science opportunity while runtime remains."

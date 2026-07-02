@@ -1,12 +1,12 @@
 # Review History
 
-## Block14 Local Review
+## Block15 Local Review
 
 Disposition: `local_pass_external_review_pending`.
 
 Checks performed before PR:
 
-- exact runner: `PASS=13 FAIL=0`;
+- exact runner: `PASS=12 FAIL=0`;
 - exact readout map: `PASS=11 FAIL=0`;
 - kappa covariance no-go: `PASS=7 FAIL=0`;
 - quadratic covariance no-go: `PASS=11 FAIL=0`;

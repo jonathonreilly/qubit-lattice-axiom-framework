@@ -12,16 +12,15 @@ review_loop_disposition: local_pass_external_review_pending
 
 # Claim Status Certificate
 
-Block14 is a route-pruning no-go. It does not propose endpoint closure, does
-not derive `rho_E = 21/4`, and does not add or adopt an inverse-square
-normalization primitive.
+Block15 is a route-pruning no-go. It does not propose endpoint closure, does
+not derive `rho_E = 21/4`, and does not add or adopt a coefficient-selection
+primitive.
 
-The only positive theorem content is the exact classification of pure
-`O_h`-invariant channel metrics on `E (+) T1`:
+The positive theorem content is the exact character decomposition:
 
 ```text
-G(c_E,c_T)=c_E P_E + c_T P_T1.
+dim Hom_Oh(Sym^2(E (+) T1), E (+) T1) = 3.
 ```
 
-Because `c_E/c_T` is free, endpoint language stronger than `no-go` or
-`negative_route_pruning` is not allowed for this block.
+Because the reduced coefficients remain free, endpoint language stronger than
+`no-go` or `negative_route_pruning` is not allowed for this block.

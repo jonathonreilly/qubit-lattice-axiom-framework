@@ -1,0 +1,31 @@
+Route-2 coefficient-selection boundary
+========================================================================================
+[PASS] granted T-side algebra gives q_T=5/6 and leaves rho_E as the only E-row slope
+       rho_T=-1, s_TE=-2, q_T=5/6
+[PASS] target chain is exactly rho_E=21/4 <-> q_E=15/8 <-> c_TE=-8/9 <-> lambda=9/4
+       q_E=15/8, c_TE=-8/9, lambda=9/4
+[PASS] positivity/admissibility gives an interval rho_E>-6, not a selected point
+       samples=[(Fraction(-5, 1), Fraction(1, 6), Fraction(1, 5)), (Fraction(-1, 1), Fraction(5, 6), Fraction(1, 1)), (Fraction(0, 1), Fraction(1, 1), Fraction(6, 5)), (Fraction(1, 1), Fraction(7, 6), Fraction(7, 5)), (Fraction(21, 4), Fraction(15, 8), Fraction(9, 4)), (Fraction(6, 1), Fraction(2, 1), Fraction(12, 5))]
+[PASS] E-center-blind data are identical across distinct rho_E choices
+       blind_signature=(q_T=5/6, s_TE=-2); q_E varies
+[PASS] ordinary target-free selectors do not pick rho_E=21/4; only inverse-square weighting lands
+       selector_values={'minimal slope / no E-center lift': (Fraction(0, 1), Fraction(1, 1), Fraction(6, 5)), 'same E and T center/shell lift': (Fraction(-1, 1), Fraction(5, 6), Fraction(1, 1)), 'single reciprocal projector-weight lift': (Fraction(3, 2), Fraction(5, 4), Fraction(3, 2)), 'inverse-square projector-weight lift': (Fraction(21, 4), Fraction(15, 8), Fraction(9, 4))}
+[PASS] a quadratic variational selector picks the target only if its coefficient ratio imports q_E=15/8
+       For F(q)=A q^2+B q+C, q*=15/8 requires B/A=-15/4
+[PASS] target-free quadratic anchors land at q_E in {1,5/6,5/4}, not 15/8
+       anchors={'q*=1 (no lift)': Fraction(1, 1), 'q*=q_T': Fraction(5, 6), 'q*=kappa*q_T': Fraction(5, 4)}
+[PASS] free quadratic/readout coefficient ratios can realize target and non-target values in the same algebraic class
+       ratios_to_rho=[(Fraction(1, 1), Fraction(-1, 1)), (Fraction(3, 2), Fraction(3, 2)), (Fraction(9, 4), Fraction(21, 4)), (Fraction(4, 3), Fraction(2, 3))]
+[PASS] projector-weight power law selects the endpoint only after the exponent is set to n=2
+       rho(n)={0: Fraction(-1, 1), 1: Fraction(3, 2), 2: Fraction(21, 4)}
+
+========================================================================================
+PASS=9 FAIL=0
+
+VERDICT: no-go boundary for target-free coefficient selection. The reduced
+Route-2 endpoint algebra leaves rho_E as a positive projective slope.
+Common target-free selectors pick rho_E=-1,0,3/2 or leave the slope free.
+General quadratic/variational selectors can hit 21/4 only by inserting
+the target-equivalent coefficient ratio B/A=-15/4. The inverse-square
+projector-weight rule lands exactly, but selecting that rule or exponent
+n=2 is the missing theorem content, not a current derivation.

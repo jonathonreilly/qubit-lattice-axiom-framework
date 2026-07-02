@@ -138,15 +138,15 @@
   "queue": [
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
+      "audit_status": "audit_in_progress",
+      "blocker": "awaiting_cross_confirmation",
       "claim_id": "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-      "claim_scope": null,
+      "claim_scope": "Within the declared two-candidate surface {single-pair Grassmann, free bosonic CCR Fock}, the accepted per-site dim_C H_x = 2 input excludes the free bosonic Fock candidate and leaves the single-pair Grassmann candidate with its Berezin determinant readout; no statistics-forcing or exhaustive statistics-selection claim was audited.",
       "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited_pending_cross_confirmation",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": null,
+      "cross_confirmation_status": "awaiting_second",
       "deps": [
         "minimal_axioms",
         "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
@@ -154,11 +154,11 @@
         "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
       ],
       "direct_in_degree": 35,
-      "effective_status": "unaudited",
+      "effective_status": "audit_in_progress",
       "helper_runner_paths": [],
       "load_bearing_score": 30.476,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
       "transitive_descendants": 1006
@@ -329,15 +329,15 @@
         "strong_cp_theta_zero_note",
         "minimal_axioms"
       ],
-      "direct_in_degree": 19,
+      "direct_in_degree": 20,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 22.369,
+      "load_bearing_score": 22.87,
       "note_path": "docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/axiom_first_cluster_decomposition_check.py",
-      "transitive_descendants": 934
+      "transitive_descendants": 935
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",

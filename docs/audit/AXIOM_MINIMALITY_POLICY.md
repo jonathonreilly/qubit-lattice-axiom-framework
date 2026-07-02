@@ -76,6 +76,45 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-02 -- Lattice site-distinction clause: site distinctions are
+  structural; rotations named about each site.** The Lattice axiom in
+  `docs/MINIMAL_AXIOMS_2026-06-29.md` is edited in place (owner-approved,
+  2026-07-02): the motion list now reads "proper cubic rotations about each
+  site," and one paragraph is added: "No site is privileged. Sites are
+  distinguished by the supplied lattice structure alone." -- the exact
+  structural mirror of the Qubit distinction clause. Effect: the clause
+  fixes the transformation class of the no-privilege naturality test on the
+  site side to the named lattice motions; distinctions carried by supplied
+  adjacency and motion structure are legitimate law and readout inputs;
+  distinctions requiring coordinate names, a chosen origin, preferred axes,
+  enumerated site lists, or unregistered frames are privilege. Record
+  content remains the state-side distinguisher under Record and the
+  Qualification. The "about each site" phrase is load-bearing for the
+  clause: it forecloses the fixed-center reading of the rotation list, on
+  which "the site fixed by every supplied rotation" would be a
+  supplied-structure definite description anchoring an origin; the
+  generated motion group is unchanged, since site-rotations are
+  translation-conjugates. "Supplied" is load-bearing: it pins "lattice
+  structure" to the first sentence's named list, excluding `Z^3`'s unlisted
+  canonical presentation structure (group identity at the zero triple,
+  coordinate order) from legitimate distinguishers. The sentences name no
+  operator, basis, weighting, selector, kinetic class, or value.
+  Validation provenance: five-seat blind honing panel, 2026-07-02, on the
+  latest complete foundation, with seven determinate test cases: unanimous
+  ADOPT of both parts as a mutually load-bearing package, all high
+  confidence, all test cases ruled identically (coordinate-named domains
+  fail; existential, relational, and record-content definite-description
+  conditions pass; Admissibility's universal quantification and covariance
+  class are unchanged; the record-collapse misreading is unavailable under
+  composition with Record and Admissibility). Owner selected the
+  distributive determiner "each" within the panel-validated wording.
+  Supersession: this entry carries the lattice-motion half of the remaining
+  law-side extensional/naturality reading note on the site side; with the
+  Qubit clause carrying the possibility side, that note's residual citable
+  content narrows to its extensional-judgment framing pending the batch-2
+  disposition. The premise-hash guard invalidates prior direct
+  `minimal_axioms` audits; the independent audit lane re-audits.
+
 - **2026-07-02 -- Reading-note retirement, first tranche (no rulings, only
   clarity).** Owner rule of 2026-07-02: the only owner-approved premise
   surfaces are axiom updates, framework primitives, and Tier-A admissions;

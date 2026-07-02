@@ -35,7 +35,10 @@ document.
 ### Lattice / Physical Locality
 
 Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
-adjacency, standard translations, and proper cubic rotations.
+adjacency, standard translations, and proper cubic rotations about each site.
+
+No site is privileged. Sites are distinguished by the supplied lattice
+structure alone.
 
 ### Qubit / Site Possibility
 

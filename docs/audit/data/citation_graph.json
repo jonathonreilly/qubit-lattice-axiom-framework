@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "q_integer_spectrum_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "momentum_charge_commute_theorem_note_2026-05-02"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20",
         "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
         "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
         "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14",
         "no_per_site_bosonic_ccr_theorem_note_2026-05-02",
-        "q_integer_spectrum_theorem_note_2026-05-02"
+        "q_integer_spectrum_theorem_note_2026-05-02",
+        "momentum_charge_commute_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "e6cf28095a162b577fc5d86fb529c203f0b57bc14535e5f38372b7a5d65d48c2",
+      "note_hash": "d22908692c689ae152f604bd9f4516d64e60c56bfff36726f47c2240efb830d9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

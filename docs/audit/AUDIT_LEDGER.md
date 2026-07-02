@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 202 |
+| **retained** | 203 |
 | **retained_no_go** | 199 |
 | **retained_bounded** | 900 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 31 |
-| unaudited | 1678 |
+| unaudited | 1677 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1310 |
+| `audited_clean` | 1311 |
 | `audited_conditional` | 36 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 2004 |
+| `unaudited` | 2003 |
 
 | claim_type | count |
 |---|---:|
@@ -85,8 +85,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | criticality | count |
 |---|---:|
 | `critical` | 567 |
-| `high` | 509 |
-| `medium` | 928 |
+| `high` | 508 |
+| `medium` | 929 |
 | `leaf` | 1470 |
 
 - **Retained pending chain closure:** 4
@@ -796,6 +796,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_z3_joint_projector_identity_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `kubo_continuum_limit_families_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `kubo_continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `kubo_fam2_non_convergence_note_2026-05-02` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | A | - |
@@ -11266,6 +11267,19 @@ Five-judge panel breakdown: 2x ('second', 'audited_clean', 'no_go', 'A'); 3x ('h
 - **load-bearing step:** The displayed generator T_m satisfies T_m^2 = I_3, so Tr(T_m^2)=3 and Tr(T_m^3)=Tr(T_m)=1, fixing the m^2 and m^3 coefficients in the stipulated scalar potential as g_2=3/2 and g_3=1/6.  _(class `A`)_
 - **chain closes:** True — The in-scope coefficient claim follows by direct matrix multiplication and trace algebra from the displayed T_m plus the stated potential normalization. The broader mass-tower and physical selected-point language is explicitly excluded from the audited scope and is not needed for the local coefficient result.
 - **rationale:** The load-bearing algebra is local: T_m is displayed, T_m^2=I_3 is directly checkable, Tr(T_m^2)=3 and Tr(T_m^3)=1 then fix the quadratic and cubic coefficients under the note's stated potential normalization. No one-hop dependencies are wired for this row, and no runner is required because the audited claim is an exact finite matrix calculation. Residual risk is scope drift: the title and later mass-table material must not be cited as an audited derivation of the charged-lepton mass tower or physical m_* selector.
+- **auditor confidence:** high
+
+### `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite-dimensional Kraus-Choi correspondence on M_d, applied to finite qubit regions, with one unnormalized Choi convention and consistent d-factor bookkeeping for inverse, Kraus extraction, CP, and TP conditions.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T015429Z-53a58090-kraus_choi_representatio`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** With the unnormalized |Omega> convention, C_Phi=sum_ij |i><j|⊗Phi(|i><j|), Phi(rho)=Tr_1[(rho^T⊗I)C_Phi], K_a=sqrt(lambda_a) reshape(v_a)^T, and TP iff Tr_2 C_Phi=I_d, all with no extra d or sqrt(d) factor.  _(class `A`)_
+- **chain closes:** True — Expanding rho=sum_ab rho_ab E_ab gives Tr_1[(rho^T⊗I)C_Phi]=sum_ab rho_ab Phi(E_ab)=Phi(rho). The reshape transpose follows from (I⊗K)|Omega> components, and Tr_2 C_Phi=I_d is exactly trace preservation on the matrix units.
+- **rationale:** The load-bearing content is a finite-dimensional algebraic normalization reconciliation, not a tuned numerical match or a new physical bridge. The cited minimal axiom node is an accepted premise for the qubit matrix substrate, and the remaining steps are standard matrix-algebra identities under the chosen unnormalized convention. The runner source performs real symbolic and numerical checks of the inverse, partial traces, Kraus extraction, CP boundary, and mixed-convention failure factors; it does not merely print hard-coded pass counts.
 - **auditor confidence:** high
 
 ### `kubo_continuum_limit_families_note`

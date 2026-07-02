@@ -148,5 +148,5 @@ generically shifted off `eta = 1` at the `O(α/4π)` level — vastly above the
 
 ```
 python3 scripts/velocity_rg_logflow_framework_internal_2026_06_21.py
-# expect: TOTAL: PASS=15 FAIL=0
+# expect: TOTAL: PASS=16 FAIL=0
 ```

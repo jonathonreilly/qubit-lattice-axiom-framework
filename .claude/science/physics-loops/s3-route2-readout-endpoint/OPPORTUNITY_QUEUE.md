@@ -1,13 +1,15 @@
 # Opportunity Queue
 
-1. **New E-center source/readout theorem**
-   - Derive `q_E=15/8` without endpoint fitting.
+1. **Typed bridge semantics**
+   - Derive why the Route-2 center ratio should equal `s_TE/kappa^2` or
+     `-F_adj`.
 
-2. **Typed F_adj center bridge**
-   - Derive `F_adj -> c_TE=-F_adj` rather than inserting it.
+2. **Typed covariance theorem**
+   - Derive `q_E/q_T=kappa^2` from a non-quadratic source/readout primitive.
 
-3. **Typed covariance bridge**
-   - Derive `q_E/q_T=kappa^2` as a stack-native readout covariance.
+3. **Typed color/source theorem**
+   - Derive `F_adj -> c_TE=-F_adj` with a signed Route-2 endpoint map.
 
-4. **Alternate up-sector scalar route**
-   - Bypass the Route-2 endpoint map if a different exact scalar law exists.
+4. **Alternate scalar law**
+   - Bypass Route-2 endpoint readout if another exact up-sector scalar route
+     is available.

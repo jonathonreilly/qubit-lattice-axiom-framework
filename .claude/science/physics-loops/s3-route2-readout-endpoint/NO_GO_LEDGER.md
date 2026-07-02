@@ -2,15 +2,14 @@
 
 Prior no-go/support boundaries used:
 
-- Minimal carrier naturality leaves `rho_E` free.
-- E-center-blind constraints cannot fix `rho_E`.
-- Record positivity gives only a positive interval/sign boundary.
-- Raw `F_adj=8/9` needs a typed Route-2 center bridge.
-- Raw `kappa^2=9/4` needs a typed covariance bridge.
-- Measured calibration is comparator evidence, not source derivation.
+- O_h equivariance does not force `lambda=kappa^2`.
+- Quadratic invariant forms do not force `lambda=kappa^2`.
+- Raw `F_adj=8/9` does not type itself as a Route-2 center ratio.
+- Current source-bank invariants do not distinguish `P(0)` from `P(21/4)`.
 
-Block 02 adds:
+Block 03 adds a support boundary rather than a no-go:
 
-- Current source-bank invariants are identical for `rho_E=0` and
-  `rho_E=21/4`; therefore a current-bank-only derivation cannot select the
-  target E-center value.
+- With the current T-side orientation, the color bridge and covariance bridge
+  are algebraically equivalent. Treating them as independent positive routes
+  double-counts the same missing typed edge unless a future packet supplies
+  distinct source semantics.

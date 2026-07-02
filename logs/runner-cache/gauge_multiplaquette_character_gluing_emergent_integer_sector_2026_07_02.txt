@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_2026_07_02.py
-runner_sha256: 40c9eed9bf8b3cdda96c4cd9e2f67d644b678150291cb6374f395d6f02953dd0
+runner_sha256: ca695f5643be5a62a82b6c11067c74b51c7de3f02c6891b0dbc413bfef8eaf2e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.79
+elapsed_sec: 1.36
 status: ok
 ----- stdout -----
 Section A: U(1) dual coefficients
@@ -46,7 +46,14 @@ Section F: nonabelian matched-label contrast
   [PASS] F4 SU(3) dual coefficients at beta=6: positive on every matched label, conjugation-paired
          c00=3.44144 c10=4.36235 c11=4.46726 c20=2.80743
   [PASS] F5 Z-valued conjugation-odd functions on the SU(3) matched labels exist with odd support and are NON-unique (p-q vs (p-q)^3)
-TOTAL: PASS=24 FAIL=0
+Section G: source-boundary guards
+  [PASS] G1 note declares canonical bounded_theorem claim type
+  [PASS] G2 note separates scope from claim type
+  [PASS] G3 note does not use runner PASS as source status
+  [PASS] G4 note does not expose effective_status metadata
+  [PASS] G5 note does not lean on in-flight PR wording as authority
+  [PASS] G6 witness-surface is explicitly not physical
+TOTAL: PASS=30 FAIL=0
 
 ----- stderr -----
 

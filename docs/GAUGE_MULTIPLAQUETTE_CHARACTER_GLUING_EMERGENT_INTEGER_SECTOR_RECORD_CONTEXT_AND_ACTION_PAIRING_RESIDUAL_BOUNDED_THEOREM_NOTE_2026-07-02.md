@@ -1,9 +1,9 @@
 # Multi-Plaquette Character Gluing Derives the Emergent Integer Sector-Record Context Exactly on the Finite 2D U(1) Surface — Branch-Datum-Free, With the Theta Pairing Coming From the Action Slot — and Sharpens the Remaining Theta Q-Context Wall to Action-Level Pairing Selection on the Physical 4D SU(3) Surface (Bounded Theorem)
 
 **Date:** 2026-07-02
-**Claim type:** bounded_theorem (exact finite constructions on witness
-surfaces plus a wall-sharpening; not a terminal no-go, not a discharge of the
-theta admission).
+**Claim type:** bounded_theorem
+**Scope:** exact finite witness-surface constructions plus wall-sharpening; not
+a terminal no-go and not a discharge of the theta admission.
 **Status authority:** independent audit lane only. This note does not set an
 audit verdict, edit registries, register primitives, change axioms, retire or
 re-grade any Tier-A admission, or claim Strong-CP closure.
@@ -15,8 +15,7 @@ re-grade any Tier-A admission, or claim Strong-CP closure.
 ## Question
 
 The gauge side of the Tier-A theta admission needs an emergent integer sector
-label. The in-flight theta sector Born-measure bridge (PR #4766) states the
-wall as
+label. The campaign theta sector Born-measure bridge states the wall as
 
 ```text
 W_theta_Q_context:
@@ -24,9 +23,9 @@ W_theta_Q_context:
   context, with nonzero odd-sector support on the relevant surface.
 ```
 
-The companion center-grading note (PR #4784) proved that on the retained
-per-plaquette character surface no additive sector label can be `Z`-valued
-(and none can carry the `SU(3)` parity), localizing the wall onto the
+The companion center-grading context says that on the per-plaquette character
+surface no additive sector label can be `Z`-valued (and none can carry the
+`SU(3)` parity), localizing the wall onto the
 multi-plaquette / large-gauge-winding account named by the Tier-A registry.
 The landed substrate no-winding-carrier note (2026-06-11, unaudited; not
 consumed as a premise here) had already relocated the gauge side to an
@@ -88,7 +87,7 @@ the Tier-A registry.
 
 2. **Retained `SU(3)` character surface**
    ([`GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md),
-   ledger `effective_status = retained`): supplies the `SU(3)` Wilson weight
+   current retained source): supplies the `SU(3)` Wilson weight
    `exp((beta/3) Re Tr W)` and character basis used for the nonabelian
    contrast (Section F of the runner).
 
@@ -236,7 +235,7 @@ integer is therefore **derived from the action slot**, not supplied as an
 interface input. The pointwise selector arithmetic then runs end-to-end on
 the derived context (runner E1): at `theta = pi` every odd winding sector
 carries negative weight while at `theta = 0` all sector weights are
-nonnegative — the interface the in-flight theta chain consumes, populated
+nonnegative — the interface the campaign theta chain consumes, populated
 here entirely by derivation.
 
 ## Theorem 4 (nonabelian matched labels and the non-uniqueness fact)
@@ -340,7 +339,7 @@ W_theta_Q_context (sharpened):
   The 2D U(1) construction here is the exact finite template for both.
 
 W_theta_bar_assembly:
-  unchanged; tracked by the in-flight assembly interface bridge (PR #4768).
+  unchanged; tracked outside this note by the assembly interface bridge.
 ```
 
 ## Non-claims
@@ -368,7 +367,7 @@ This note does not claim:
 
 ## No-Go Discipline Gate (for the negative boundary)
 
-**Status:** PASS as bounded scoping inside positive constructions. The
+This checklist supports bounded scoping inside positive constructions. The
 negative content is exactly: (a) in the supplied 2D `SU(N)` class-function
 weight class there is no shift-sum index and hence no analogue of the
 action-derived theta pairing of Theorem 3; (b) matched-label `Z`-valued
@@ -379,7 +378,7 @@ residual of `W_theta_Q_context`.
 
 | Route to the physical sharp integer-Q context | Standing here |
 |---|---|
-| per-plaquette character grading | EXCLUDED by the companion obstruction (PR #4784, in-flight) |
+| per-plaquette character grading | EXCLUDED in the companion obstruction context; not used as a dependency here |
 | geometric per-plaquette integer functional | SUPPLIED-DATUM route as recorded by the landed no-winding note (branch choice); untouched here |
 | branch-summed abelian slot on the glued 2D surface | CONSTRUCTED (Theorems 1-3): exact, branch-datum-free, pairing action-derived — witness template |
 | nonabelian matched labels on glued 2D surfaces | CONSTRUCTED (Theorem 4): sharp, positive, paired — but no distinguished `Z` function and no theta slot in the supplied class |
@@ -417,11 +416,11 @@ carrier note's relocation ("emergent integer sector functional with
 nonvacuous weighting") is refined consistently: nonvacuous weighting and
 integer sectors are exhibited exactly on the witness surface; what its 2D
 contrast check treated as the supplied branch datum is shown removable in the
-branch-summed class. The companion PR #4784 obstruction and this note's
+branch-summed class. The companion obstruction context and this note's
 Theorem 4 fit as fusion-vs-matching: no contradiction, and jointly they
-explain why the wall lives on the multi-plaquette account. The in-flight
-bridges (PRs #4766, #4768) keep their walls explicit; this note sharpens the
-former and leaves the latter untouched.
+explain why the wall lives on the multi-plaquette account. The campaign
+bridges keep their walls explicit; this note sharpens the Q-context wall and
+leaves the assembly wall untouched.
 
 ### N5 — Rhetoric audit
 
@@ -476,7 +475,7 @@ python3 scripts/gauge_multiplaquette_character_gluing_emergent_integer_sector_20
 Expected close:
 
 ```text
-TOTAL: PASS=24 FAIL=0
+TOTAL: PASS=30 FAIL=0
 ```
 
 Sections: A dual coefficients (Wilson quadrature = Bessel; heat-kernel

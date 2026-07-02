@@ -1,13 +1,11 @@
 # Goal
 
-Block 02 continues the S3/Route-2 endpoint-triple campaign. It attacks the
-typed E-center source/readout primitive route from the current source bank.
+Block 03 continues the S3/Route-2 endpoint-triple campaign with a positive
+bridge stretch attempt. It asks whether the two live positive routes,
+typed `F_adj -> c_TE=-F_adj` and typed `q_E/q_T=kappa^2`, are independent.
 
-Named hard residual:
-
-```text
-rho_E = beta_E/alpha_E = 21/4
-```
+Result target: exact support for the bridge-equivalence boundary, not endpoint
+closure.
 
 Campaign constraints:
 

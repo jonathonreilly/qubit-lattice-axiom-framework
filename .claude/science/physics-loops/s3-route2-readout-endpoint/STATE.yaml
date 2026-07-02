@@ -1,11 +1,11 @@
 loop_slug: s3-route2-readout-endpoint
 mode: campaign
 runtime_requested: 12h
-block: 02
-branch: physics-loop/s3-route2-readout-endpoint-block02-20260621
-worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block02-20260621
-base_at_creation: 8a62c482c
-base_label: origin/main at block02 worktree creation
+block: 03
+branch: physics-loop/s3-route2-readout-endpoint-block03-20260621
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block03-20260621
+base_at_creation: a2117bf79
+base_label: origin/main at block03 worktree creation
 lock_status:
   mode: degraded_branch_local
   command: python3 scripts/automation_lock.py status
@@ -17,34 +17,34 @@ user_constraints:
   do_not_refresh_prs_to_main: true
   do_not_check_pr_conflicts: true
 active_target: s3_time_theta_to_slice_coupling_note
-hard_residual: "derive or sharply constrain rho_E = beta_E/alpha_E = 21/4"
-current_block_route: e_center_current_source_bank_no_go
-actual_current_surface_status: no-go
-trace_class: negative_route_pruning
-reachability_to_target: prunes
-artifact_role: no_go
+hard_residual: "derive or sharply constrain (-1, -2, 21/4), especially rho_E = 21/4"
+current_block_route: color_covariance_bridge_equivalence_support
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+artifact_role: theorem
 files_touched:
-  - docs/QUARK_ROUTE2_E_CENTER_CURRENT_SOURCE_BANK_NO_GO_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py
-  - logs/runner-cache/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.txt
+  - docs/QUARK_ROUTE2_COLOR_COVARIANCE_BRIDGE_EQUIVALENCE_SUPPORT_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py
+  - logs/runner-cache/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 open_imports:
-  - "No current-bank derivation of rho_E = 21/4 is supplied."
-  - "A non-blind E-center bridge remains required."
-review_disposition: pass_with_bounded_no_go_claim
-pr_status:
-  state: open
-  number: 4531
-  url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4531
-  identity_verified_without_conflict_check: true
+  - "No derivation of lambda=kappa^2 is supplied."
+  - "No derivation of c_TE=-F_adj is supplied."
+  - "No derivation of rho_E=21/4 is supplied."
+review_disposition: pass_with_exact_support_boundary
+pr_status: open
+pr_number: 4532
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4532
+pr_identity_verified_without_conflict_check: true
 verification:
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py -> TOTAL: PASS=21, FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py -> TOTAL: PASS=23, FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py -> TOTAL: PASS=7 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py -> TOTAL: PASS=62, FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/quark_route2_ell_e_structural_narrowing_bounded_2026_06_12.py -> TOTAL: PASS=47, FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py -> PASS=11 FAIL=0"
-  - "python3 -m py_compile scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py -> pass"
+  - "python3 -m py_compile scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py -> pass"
 review_notes:
   - "Focused review-loop pass only; audit pipeline/verdict scripts intentionally not run under the no-audit campaign boundary."
-  - "Claim narrowed to a bounded current-bank no-go; future E-center/source primitives remain open."
-next_exact_action: "Continue campaign with a positive-route attempt: derive a typed E-center bridge, typed F_adj center bridge, or typed q_E/q_T=kappa^2 covariance bridge."
-stop_condition: "Runtime not exhausted; continue after block 02 PR delivery."
+  - "Claim narrowed to exact bridge-equivalence support; no typed bridge or endpoint-triple derivation claimed."
+next_exact_action: "Start block 04 from a clean worktree and attempt direct typed source/readout semantics for c_TE=s_TE/kappa^2 without refreshing existing PRs or checking conflict state."
+stop_condition: "Runtime not exhausted; continue to block 04."

@@ -2,24 +2,22 @@
 
 ## Allowed inputs
 
-- Current Route-2 restricted readout family.
-- Support-center scalar `delta_A1` and endpoint step `1/6`.
-- Definition-only bilinear carrier `K_R`.
-- T-side candidates `rho_T=-1` and `alpha_T/alpha_E=-2`.
-- Exact `F_adj=8/9` support as a color/channel fraction.
-- Exact `kappa=3/2` and `kappa^2=9/4` shell-leverage support.
-- Positivity/sign-separation facts already recorded in the current bank.
+- Endpoint algebra from the Route-2 readout-map surface.
+- T-side candidates `rho_T=-1`, `s_TE=-2`, `q_T=5/6`.
+- Same-domain shell leverage `kappa=3/2` and `kappa^2=9/4`.
+- Exact color/Fierz fraction `F_adj=8/9` at `N_c=3`.
+- Exact rational arithmetic.
 
 ## Forbidden inputs
 
 - Observed masses, fitted Yukawa values, CKM/J target minimization.
-- Nearest-rational selection from live endpoint data.
-- Eta-floor endpoint fitting as a proof input.
-- Untyped `F_adj -> c_TE` identification.
-- Untyped `q_E/q_T -> kappa^2` covariance assertion.
+- Nearest-rational endpoint selection.
+- Eta-floor endpoint fitting.
+- Untyped color-to-readout identification.
+- Untyped covariance rule assertion.
 - Audit verdicts or repo-wide status updates.
 
 ## Import result
 
-The block exposes, rather than retires, the missing import: a typed
-E-center-evaluating bridge is still required.
+This block does not retire an import. It compresses two open imports into one
+typed bridge target under the current T-side orientation.

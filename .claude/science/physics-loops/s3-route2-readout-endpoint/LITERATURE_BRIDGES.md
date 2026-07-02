@@ -1,3 +1,3 @@
 # Literature Bridges
 
-No external literature is used in block 02.
+No external literature is used in block 03.

@@ -1,0 +1,27 @@
+Route-2 color/covariance bridge equivalence verifier
+========================================================================
+PASS: note is scoped as exact support, not endpoint-triple closure
+PASS: readout authority supplies endpoint algebra and T-side target chain
+PASS: O_h leverage authority supplies kappa=3/2 without readout closure
+PASS: Fierz authority supplies exact F_adj=8/9 at N_c=3
+PASS: covariance no-go names lambda=kappa^2 as missing bridge
+PASS: Rconn typed note names F_adj -> c_TE as missing bridge
+PASS: granted rho_T=-1 gives q_T=5/6 (5/6)
+PASS: same-domain kappa=3/2 gives kappa^2=9/4 (9/4)
+PASS: N_c=3 gives F_adj=8/9 (8/9)
+PASS: current constants obey F_adj = -s_TE/kappa^2 (F_adj=8/9, -s_TE/kappa^2=8/9)
+PASS: covariance bridge lambda=kappa^2 gives color target c_TE=-F_adj (c_TE=-8/9)
+PASS: color bridge c_TE=-F_adj gives covariance target lambda=kappa^2 (lambda=9/4)
+PASS: either bridge gives q_E=15/8 (q_E=15/8)
+PASS: either bridge gives rho_E=21/4 (rho_E=21/4)
+PASS: endpoint color form and covariance form are mutually inverse under s_TE
+PASS: wrong N_c=2 breaks color/covariance equivalence (F_adj(2)=3/4, lambda=8/3)
+PASS: wrong N_c=2 implies rho_E=22/3 instead of 21/4 (rho_E=22/3)
+PASS: wrong kappa=1 breaks equivalence with F_adj
+PASS: wrong shell ratio s_TE=-1 breaks F_adj = -s_TE/kappa^2 (-s/kappa^2=4/9)
+PASS: without shell orientation the relation stays symbolic
+PASS: note records bridge compression instead of independent route count
+PASS: note records all major falsifiers
+PASS: note does not claim typed bridge derivation
+========================================================================
+TOTAL: PASS=23, FAIL=0

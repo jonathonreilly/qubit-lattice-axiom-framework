@@ -1,51 +1,45 @@
 # Handoff
 
-## Block 02 summary
+## Block 03 summary
 
-This block attacks the typed E-center source/readout primitive route. It adds
-a bounded current-bank no-go: the named current source-bank invariants are the
-same for `P(0)` and `P(21/4)`, but their E-center outputs differ. The missing
-positive input is therefore a new non-blind E-center bridge.
+This block proves an exact support relation: under the current T-side
+orientation, the typed color bridge `c_TE=-F_adj` and typed covariance bridge
+`q_E/q_T=kappa^2` are algebraically equivalent. It does not derive either
+bridge.
 
 ## Checks
 
 Completed:
 
 ```text
-PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py
-  TOTAL: PASS=21, FAIL=0
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py
+  TOTAL: PASS=23, FAIL=0
+PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py
+  TOTAL: PASS=7 FAIL=0
 PYTHONPATH=scripts python3 scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py
   TOTAL: PASS=62, FAIL=0
-PYTHONPATH=scripts python3 scripts/quark_route2_ell_e_structural_narrowing_bounded_2026_06_12.py
-  TOTAL: PASS=47, FAIL=0
 PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py
   PASS=11 FAIL=0
-python3 -m py_compile scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py
+python3 -m py_compile scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py
   pass
 ```
 
-Focused review disposition: PASS WITH BOUNDED NO-GO CLAIM. The audit pipeline
-was not run and no audit verdicts were applied.
+Focused review disposition: PASS WITH EXACT SUPPORT BOUNDARY. The audit
+pipeline was not run and no audit verdicts were applied.
 
-PR opened:
+## PR
 
-```text
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4531
-```
+Opened PR #4532:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4532
 
-The PR identity was verified without querying mergeability or conflict state.
+Identity was verified with `gh pr view` using only number, URL, title, head,
+base, and state fields. Mergeability/conflict state was not queried.
 
 ## Remaining blocker
 
-Derive a typed bridge supplying one of:
+Supply typed source/readout semantics for the compressed bridge target.
 
-```text
-q_E=15/8,
-c_TE=-8/9,
-q_E/q_T=9/4,
-gamma_T(center)/gamma_E(center)=-F_adj.
-```
-
-Recommended next campaign action: switch from current-bank recombination to a
-positive bridge attempt. The highest-value candidates are a typed `F_adj`
-center bridge or a typed covariance theorem deriving `q_E/q_T=9/4`.
+Recommended next campaign action: try to derive the typed semantics for
+`c_TE=s_TE/kappa^2` directly from source/readout structure, since the color
+and covariance routes now reduce to the same edge on the current T-side
+surface.

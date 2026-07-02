@@ -1,6 +1,8 @@
 # Literature Bridges
 
-None used in block16.
+No external literature bridge is used in block17. The calculation is finite
+linear algebra on the six-arm `O_h` star and exact Route-2 endpoint algebra.
 
-The proof is exact readout algebra plus the repo's existing Route-2 slice
-semigroup runner.
+Any future source/readout split theorem would need to be entered here if it
+depends on an external frame, finite-element, or representation-theory theorem
+beyond the repo's current exact finite-dimensional algebra.

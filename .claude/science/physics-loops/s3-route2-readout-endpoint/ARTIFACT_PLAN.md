@@ -1,12 +1,24 @@
 # Artifact Plan
 
-## Block16
+## Block17 Artifacts
 
-- Add a source note recording the theta-to-slice `rho_E` dependency firewall.
-- Add a runner deriving exact source factors and checking the semigroup
-  propagation envelope.
-- Cache the runner output.
-- Add loop pack checkpoint files.
-- Run focused checks only; do not audit, apply verdicts, push to `main`, or
-  check PR conflict state.
-- Open one review PR for the science block.
+- Source note:
+  `docs/QUARK_ROUTE2_FINITE_FRAME_DUAL_LEG_COUNT_BOUNDARY_NOTE_2026-06-21.md`
+- Runner:
+  `scripts/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.py`
+- Runner cache:
+  `logs/runner-cache/frontier_quark_route2_finite_frame_dual_leg_count_boundary_2026_06_21.txt`
+- Loop pack:
+  `.claude/science/physics-loops/s3-route2-readout-endpoint/`
+
+## Verification Plan
+
+- New finite-frame/Riesz runner.
+- Exact readout-map runner.
+- Kappa-squared covariance no-go runner.
+- Quadratic covariance no-go runner.
+- E-center lift derivation attempt runner.
+- Exact time-coupling runner.
+- Parent theta-to-slice runner.
+- Bilinear tensor carrier runner.
+- `py_compile`, `git diff --check`, and overclaim wording scan.

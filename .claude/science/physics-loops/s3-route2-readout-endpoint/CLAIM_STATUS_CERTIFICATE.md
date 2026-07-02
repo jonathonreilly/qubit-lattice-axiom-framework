@@ -1,22 +1,34 @@
-actual_current_surface_status: exact-support
+actual_current_surface_status: conditional-support
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: null
+conditional_surface_status: "If a two-reciprocal-unit-frame-analysis-leg primitive is accepted, the granted T-side algebra gives rho_E=21/4."
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "The block is a consumer support theorem and explicitly leaves the endpoint triple open."
+proposal_allowed_reason: "The block still requires an unproved theorem selecting two independent reciprocal analysis legs and a source/readout split."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: local_pass_external_review_pending
 
 # Claim Status Certificate
 
-Block16 is exact support for a direct consumer. It does not derive
-`rho_E = 21/4` and does not close the parent theta-to-slice open gate.
+Block17 is conditional support plus a no-go boundary for the finite-frame/Riesz
+route.
 
-Allowed branch-local status language: `exact-support`, `upstream_support`,
-and `consumer firewall`.
+Allowed branch-local status language:
 
-Disallowed language: endpoint closure, unique theta-to-slice theorem, or any
-claim that the unresolved readout entry has been selected.
+- `conditional-support`
+- `upstream_support`
+- `finite-frame/Riesz boundary`
+- `two-leg primitive remains open`
+
+Disallowed language:
+
+- endpoint-closing language;
+- unique theta-to-slice theorem;
+- a claim that `rho_E=21/4` is derived;
+- a claim that canonical Riesz reconstruction supplies the target;
+- any bare retained/promoted status wording.
+
+Independent audit remains required before any repo-wide status surface can use
+this block. This physics-loop PR does not run or apply an audit verdict.

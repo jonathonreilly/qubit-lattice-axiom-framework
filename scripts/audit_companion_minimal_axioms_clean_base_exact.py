@@ -158,6 +158,23 @@ def source_boundary_checks() -> list[Check]:
             and "downstream theory consequence" in node.get("note", ""),
             "",
         ),
+        Check(
+            "Registry note records 2026-07-02 no-privilege/readout/state/law wording",
+            "no possibility privileged" in node.get("note", "")
+            and "a readout value is determined by record content alone" in node.get("note", "")
+            and "A state is a configuration of records" in node.get("note", "")
+            and "A law privileges no states" in node.get("note", ""),
+            "",
+        ),
+        Check(
+            "Policy records 2026-07-02 foundation wording additions",
+            "2026-07-02 -- Foundation wording additions" in policy
+            and contains(policy, "No possibility is privileged")
+            and contains(policy, "A readout value is determined by record content alone")
+            and contains(policy, "A state is a configuration of records")
+            and contains(policy, "A law privileges no states"),
+            "",
+        ),
         Check("Policy records 2026-06-29 foundation reset", "2026-06-29 -- Foundation reset: site possibility and local admissibility" in policy, ""),
         Check(
             "Policy no-laundering clause lists Admissibility and Record boundaries",
@@ -185,7 +202,13 @@ def source_boundary_checks() -> list[Check]:
             and contains(note, "proper cubic rotations"),
             "",
         ),
-        Check("Qubit site-possibility clause is present", "domain of local possibilities" in note and "full one-site possibility domain has algebraic presentation `M_2(C)`" in note, ""),
+        Check(
+            "Qubit site-possibility and no-privilege clauses are present",
+            "domain of local possibilities" in note
+            and "full one-site possibility domain has algebraic presentation `M_2(C)`" in note
+            and "No possibility is privileged." in note,
+            "",
+        ),
         Check("Cl(3,0) is fenced as representation-only", "adds no further primitive structure" in note, ""),
         Check(
             "Admissibility local-constraint clause is present",
@@ -199,11 +222,20 @@ def source_boundary_checks() -> list[Check]:
             contains(note, "A site need not carry a record.")
             and contains(note, "locks exactly one local possibility from the subset\navailable at that site under Admissibility")
             and contains(note, "Only records are readable")
+            and contains(note, "A readout value is determined by record content alone")
             and contains(note, "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive")
             and "`I(empty)=0`" in note,
             "",
         ),
         Check("Qualification is named-content-only language", "These axioms state only their named primitive content" in note, ""),
+        Check(
+            "Qualification records state and law discipline",
+            "A state is a configuration of records." in note
+            and "A law privileges no states." in note
+            and "Its domain is a supplied condition" in note
+            and "gives exactly one answer" in note,
+            "",
+        ),
         Check("Audit-pipeline treatment says chain-satisfy without bounding", "chain-satisfy without making downstream rows\n`retained_bounded`" in note, ""),
         Check("Observable-principle parent is explicitly outside the axiom node", "must not be moved wholesale into\n`docs/audit/data/axiom_premise_nodes.json`" in note, ""),
         Check("Open gates outside axioms include staggered realization", "staggered-Dirac/finite-Grassmann realization" in note, ""),
@@ -306,6 +338,41 @@ def run_checks() -> list[Check]:
             "Record: locked possibility is invariant under repeated readout",
             durable,
             "same record identity returns the same locked possibility; no resampling or re-selection is used",
+        )
+    )
+
+    relabeled = {"up": "left", "down": "right"}
+    possibilities = {"up", "down"}
+    checks.append(
+        Check(
+            "Qubit: no possibility is privileged by the one-site domain",
+            set(relabeled[p] for p in possibilities) == {"left", "right"},
+            "finite toy relabeling preserves the possibility domain; no default, weight, or selector is introduced",
+        )
+    )
+
+    state = {"r1": {"site": origin, "possibility": "down"}}
+    checks.append(
+        Check(
+            "Qualification: a state can be read as a configuration of records",
+            "r1" in state and "open_site_hidden_value" not in state,
+            "unrecorded openness carries no hidden possibility assignment in this toy state",
+        )
+    )
+
+    law_states = [
+        {"r1": "down"},
+        {"r1": "down", "r2": "up"},
+        {},
+    ]
+    condition = lambda s: "r1" in s
+    law = lambda s: "answer" if condition(s) else None
+    answers = [law(s) for s in law_states if condition(s)]
+    checks.append(
+        Check(
+            "Qualification: supplied-condition law gives one answer where its condition holds",
+            answers and all(a == "answer" for a in answers),
+            "toy law has a supplied condition on record configurations and returns one determinate verdict when defined",
         )
     )
 

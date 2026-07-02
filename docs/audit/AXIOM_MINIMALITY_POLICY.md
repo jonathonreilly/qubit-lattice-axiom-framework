@@ -76,6 +76,73 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-02 -- Foundation wording additions: no-privilege, readout
+  determination, state definition, and law discipline.** Five sentences are
+  added to `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved, 2026-07-02;
+  source file edited in place, bundled same-day with the Admissibility
+  clarification below so the premise-hash re-audit waves coincide). The
+  additions: Qubit gains "No possibility is privileged."; Record gains "A
+  readout value is determined by record content alone."; the Qualification
+  gains two paragraphs, "A state is a configuration of records." and "A law
+  privileges no states. Its domain is a supplied condition, and at every
+  state where the condition holds it gives exactly one answer." The
+  Admissibility axiom is not modified by this entry.
+  Validation provenance: blind physicist panels across five rounds (round 1,
+  seven seats, draft discipline clauses: 7x and 5x+2-contestable
+  yes-with-caveat, 0 rejections; round 2, five seats, the Record sentence in
+  partial context: 4x works-with-qualifier, 1x fails via a
+  descriptive-reporting seam; round 3, four seats, full four-axiom context:
+  4x sufficient-but-ambiguous with a unanimous joint-entailment finding —
+  the exclusion of unregistered-frame readouts is jointly entailed by the
+  Record sentence, the Qubit presentation clause, and the Qualification
+  supply paragraph; iterative owner-form simplification rounds; final
+  package round, five seats, on the complete set: 5x yes-with-caveat, 0
+  contestable, 0 rejections). Three owner corrections during honing are
+  recorded as load-bearing: (i) a state definition assigning one possibility
+  to every site was rejected as a hidden-variables picture — the state of
+  the world is the configuration of records, locked where recorded and open
+  elsewhere; (ii) a separate "admissible state" notion was rejected as
+  redundant — admissibility is definitionally inherited, since a
+  configuration containing an unavailable lock contains a non-record and is
+  therefore not a configuration of records; (iii) a proposed Admissibility
+  append defining nearest-neighbor conditions was rejected as derivable —
+  given the state definition, the conditions can only be each neighbor's
+  record content or openness, and rule totality is already stated by "are
+  determined."
+  Reading notes (citable): "answer" means one determinate verdict —
+  set-valued or distribution-valued verdicts are one answer, and a
+  registered answer-domain may type it; "condition" means a predicate on
+  states, record absence included; privileging is judged extensionally — by
+  the set of states a condition selects, never by the vocabulary selecting
+  them — with the naturality test that selected sets be closed under
+  lattice motions and possibility relabelings (a readout-encoded state list
+  generically fails it); the audit procedure for domains is certificate
+  demand (produce the condition's derivation, bridge, admission, or
+  registration), covariance transport, and decidability from record
+  readouts without running the law; a lock outside the available subset is
+  not a record, so statehood needs no separate admissibility check;
+  per-site record uniqueness follows from Record's option-carry syntax; the
+  empty configuration is a state, with I(empty)=0; on the infinite lattice
+  some conditions are refutable but not verifiable — finite/local
+  evaluability is audit practice, not axiom content; the law-domain word
+  "condition" is disambiguated from Admissibility's "nearest-neighbor
+  conditions" by the qualifier "supplied." Standing promotion rule: if an
+  audited case ever founders on the extensional-judgment reading or on the
+  derivable nearest-neighbor-conditions note, the corresponding clause is to
+  be proposed for promotion from this entry into axiom text by a further
+  owner approval.
+  The added sentences name no operator, basis, weighting, selector, kinetic
+  class, or value; they add no axiom and no primitive; downstream
+  consequences remain theorem content subject to independent audit. In the
+  same update,
+  `docs/C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md`
+  is recorded as a labeling-convention ratification (the import-retirement
+  path, not new structure): the singlet/doublet outcome cells and the
+  unit/complement generator channels on the supplied `hw=1` circulant class
+  are two namings of the same two cells of one canonical `C_3` generation
+  readout context. The premise-hash guard invalidates prior direct
+  `minimal_axioms` audits; the independent audit lane re-audits.
+
 - **2026-07-02 -- Admissibility clarification: availability varies with the
   neighbors.** The Admissibility clause now reads: "For each site, the
   available possibilities are determined by, and vary with, the

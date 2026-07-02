@@ -1,43 +1,37 @@
 # Assumptions And Imports
 
-## Allowed Minimal Premises
+## Allowed Premises
 
-- Exact source-domain support: `F_adj = (N_c^2 - 1) / N_c^2 = 8/9` at
-  `N_c = 3`.
-- Exact restricted Route-2 endpoint carrier.
-- Granted T-side values:
+- Exact Route-2 carrier columns from the readout-map authority.
+- Exact conditional S3-time family:
 
 ```text
-beta_T/alpha_T = -1
-alpha_T/alpha_E = -2
+Xi_P(t ; c) = (P_R c) tensor V_R(t)
 ```
 
-- Endpoint algebra:
+- Exact time channel `V_R(t) = exp(-t Lambda_R) u_*`.
+- Normalized readout family after T-side values are granted:
 
 ```text
-q_E = 1 + rho_E/6
-c_TE = (-2)(5/6) / q_E
+P(rho_E) =
+[[1, 0, rho_E, 0],
+ [0,-2, 0,     2]]
 ```
 
-- Existing quote-derived typed-edge inventory from the source-domain bridge
-  runner.
-- Exact rational arithmetic.
+- Existing S3-time consumer notes and exact rational/numerical checks.
 
 ## Forbidden Proof Inputs
 
 - Observed masses.
 - Fitted Yukawa, CKM, or J targets.
 - Live endpoint nearest-rational selection.
-- Physical connected-trace selector.
-- Untyped identification of a source scalar with a Route-2 center readout.
+- Treating eta-floor membership as a unique selector.
+- Treating factor rigidity as endpoint selection.
 
-## New Import Exposed
+## Import Exposed
 
-The source scalar can be present in the same signature for many endpoint maps.
-The missing import remains a typed landing:
+Direct consumers split cleanly:
 
-```text
-F_adj -> |c_TE|
-```
-
-or an equivalent E-center-evaluating readout primitive.
+- rho_E-blind structural support can use the conditional family and time-channel
+  rigidity.
+- E-center-sensitive claims still require a selected `P_R`.

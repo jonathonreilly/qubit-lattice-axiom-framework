@@ -1,12 +1,13 @@
 # Opportunity Queue
 
-Ranked after block26.
+Ranked after block27.
 
 | Rank | Target | Why It Moves Science | Risk | Next Action |
 |---:|---|---|---|---|
-| 1 | Direct-consumer readout ambiguity packet | The endpoint typed-landing wall is now sharp; downstream consumers should be split by whether they require E-center data. | Medium | Pick the next direct consumer and build a support/no-go packet over its dependency on `P_R E-center`. |
-| 2 | E-center evaluator primitive | A positive result would supply the missing typed landing by evaluating `P_R E-center`. | High | Search current Route-2 tensor/readout surfaces for an E-center-evaluating primitive. |
-| 3 | Typed landing edge theorem | A positive result would map `F_adj` into Route-2 `|c_TE|`. | High | Try a source/readout morphism proof that is not blind to E-center. |
-| 4 | Alternate up-sector scalar route | If Route-2 readout remains blocked, find a non-Route-2 scalar-law route with fewer missing imports. | Medium | Scan direct consumers for independent scalar-law support. |
+| 1 | Physical/canonical gate readout selector | Would turn membership into selected `P_R` for S3-time consumers. | High | Search current gate/readout surfaces for an actual selector rather than eta-floor fit. |
+| 2 | E-center positive theorem | Would supply the missing endpoint selector directly. | High | Continue only if a new E-center-evaluating primitive appears. |
+| 3 | Independent non-Route-2 scalar route | Avoids the repeated typed-landing wall. | Medium | Scan direct consumers for a scalar-law route not routed through `rho_E`. |
+| 4 | Downstream safe-use weaving packet | Helps reviewer cherry-pick only rho_E-blind structural support. | Low | Prepare a handoff-only classifier if requested. |
 
-Current recommendation: pursue rank 1 next, matching the campaign fallback.
+Current recommendation: pursue rank 1 only if there is a concrete selector
+surface; otherwise pivot to an independent non-Route-2 scalar route.

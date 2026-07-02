@@ -1,29 +1,28 @@
 # Route Portfolio
 
-## Route A: Source-Augmented Blind Functor
+## Route A: Direct Consumer Dependency Split
 
-Goal: show whether source scalar `F_adj = 8/9` plus E-center-blind endpoint
-data can select the E-center lift.
+Goal: classify immediate S3-time consumers by exact readout dependence.
 
-Block26 result: no-go. The source-augmented blind signature is identical for
-several exact readout maps with different E-center lifts.
+Block27 result: exact support. The dependency split is now mechanical:
+rho_E-blind structural support is safe; unique readout claims remain open.
 
-## Route B: Typed Landing Edge
+## Route B: Physical Gate Primitive Selector
 
-Goal: supply a typed edge from source scalar to Route-2 center magnitude.
+Goal: find or prove a selected physical/canonical gate readout map.
 
-Block26 result: still open. The edge is necessary for this route and is not in
-the current typed bank.
+Block27 result: still open. Eta-floor membership is not a selector.
 
-## Route C: E-Center Evaluator Primitive
+## Route C: E-Center Positive Theorem
 
-Goal: produce a source/readout primitive that evaluates `P_R E-center`.
+Goal: supply an E-center endpoint ratio, source-domain rule, or stronger
+readout-map theorem.
 
-Block26 result: still open and now the sharp positive target.
+Block27 result: still the main positive target.
 
-## Route D: Direct Consumer Ambiguity Packet
+## Route D: Independent Non-Route-2 Scalar Route
 
-Goal: pivot downstream and classify which direct consumers need only the blind
-signature and which truly require E-center data.
+Goal: find a scalar-law path outside the blocked Route-2 endpoint selector.
 
-Block26 status: recommended next campaign target.
+Block27 status: next queue candidate if direct-consumer classification is
+enough for the reviewer.

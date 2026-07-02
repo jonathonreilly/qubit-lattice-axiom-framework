@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_inverse_square_center_lift_boundary_2026_06_21.py
+runner_sha256: 200a78cc18695c8527250720c933b7b6df8c3616bd414ee5d7401339139a2f48
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+========================================================================================
+ROUTE-2 INVERSE-SQUARE CENTER-LIFT BOUNDARY
+========================================================================================
+
+A. Authority anchors
+PASS: QUARK_ROUTE2_INVERSE_SQUARE_CENTER_LIFT_BOUNDARY_NOTE_2026-06-21.md exists -- docs/QUARK_ROUTE2_INVERSE_SQUARE_CENTER_LIFT_BOUNDARY_NOTE_2026-06-21.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md exists -- docs/QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md exists -- docs/QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md
+PASS: TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md exists -- docs/TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md
+PASS: MINIMAL_AXIOMS_2026-06-05.md exists -- docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: new note declares no_go metadata
+PASS: new note names no endpoint closure
+PASS: new note links exact readout
+PASS: new note links Schur quadratic no-go
+
+B. Exact inverse-square boundary
+PASS: T-side fixes normalized constant C=5/24 -- 5/24
+PASS: inverse-square law maps E weight to q_E=15/8 -- 15/8
+PASS: q_E=15/8 maps to rho_E=21/4 -- 21/4
+PASS: q_E=15/8 maps to c_TE=-8/9 -- -8/9
+PASS: inverse-square law gives lambda=9/4 -- 9/4
+PASS: E and T normalized products agree -- 5/24
+PASS: constant 5/24 is not supplied by weights alone -- 5/24
+
+C. Power-law discriminator
+PASS: weight power -2 gives expected covariance -- 9/4
+PASS: weight power -1 gives expected covariance -- 3/2
+PASS: weight power 0 gives expected covariance -- 1
+PASS: weight power 1 gives expected covariance -- 2/3
+PASS: weight power 2 gives expected covariance -- 4/9
+PASS: only integer power -2 in [-6,6] gives target covariance -- [-2]
+PASS: quadratic positive power is wrong value -- 4/9
+PASS: one inverse leverage power is wrong value -- 3/2
+PASS: no-covariance power is wrong value -- 1
+
+D. Current-surface firewall
+PASS: naturality no-go leaves rho_E free
+PASS: kappa note says covariance bridge is not consequence
+PASS: Schur note identifies inverse-square gap
+PASS: Schur note says no named functional produces inverse-square lift
+PASS: Schur note says quadratic route has free E:T ratio
+PASS: center-excess note supplies 1/6 but not inverse-square law
+PASS: minimal axioms withhold readout context and weighting
+PASS: minimal axioms do not supply inverse-square law
+
+E. New-note claim firewall
+PASS: forbidden observational/fitted proof inputs are absent from note
+PASS: note says current surfaces do not derive the law
+PASS: note calls route exact support boundary not closure
+PASS: proposal_allowed false is recorded
+PASS: bare retained is disallowed
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=40, FAIL=0
+VERDICT: inverse-square center-lift normalization would close Route-2, but remains an open primitive.
+
+----- stderr -----
+

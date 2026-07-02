@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py
+runner_sha256: eb9c353d0e85864efc4cb3a9a886ef121671482b4108b44e3e3917684d707bcd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.65
+status: ok
+----- stdout -----
+========================================================================================
+ROUTE-2 FIXED-CARRIER SELECTOR EQUATION BOUNDARY
+========================================================================================
+
+A. Authority anchors
+PASS: QUARK_ROUTE2_FIXED_CARRIER_SELECTOR_EQUATION_BOUNDARY_NOTE_2026-06-21.md exists -- docs/QUARK_ROUTE2_FIXED_CARRIER_SELECTOR_EQUATION_BOUNDARY_NOTE_2026-06-21.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md exists -- docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: MINIMAL_AXIOMS_2026-06-05.md exists -- docs/MINIMAL_AXIOMS_2026-06-05.md
+PASS: new note declares no-go status
+PASS: new note declares no_go type metadata
+PASS: new note uses markdown links for load-bearing authorities
+PASS: new note says no endpoint closure
+PASS: new note names the fixed source vectors
+PASS: new note names target rho_E and q_E
+PASS: readout authority names beta_E/alpha_E as the missing map entry
+PASS: naturality note names the same E-center target
+PASS: source-domain note names the center bridge target
+PASS: minimal axioms do not supply readout weighting
+
+B. Fixed-carrier algebra
+PASS: imported E-shell carrier column is exact -- [ 1.00000000e+00  0.00000000e+00 -4.16333634e-17  0.00000000e+00]
+PASS: imported E-center carrier column is exact -- [1.         0.         0.16666667 0.        ]
+PASS: granted q_T is exact 5/6 -- 5/6
+PASS: granted shell T/E is exact -2 -- -2
+PASS: granted center T value is exact -5/3 -- -5/3
+PASS: target q_E maps to rho_E=21/4 -- 21/4
+PASS: target rho_E maps back to q_E=15/8 -- 15/8
+PASS: target q_E maps to center T/E=-8/9 -- -8/9
+PASS: center bridge c_TE=-8/9 maps to q_E=15/8 -- 15/8
+
+C. Selector equation fan-out
+  no_lift: q_E=1, rho_E=0, c_TE=-5/3
+PASS: no_lift does not select q_E=15/8
+  same_slope_collinear: q_E=5/6, rho_E=-1, c_TE=-2
+PASS: same_slope_collinear does not select q_E=15/8
+  product_conservation: q_E=6/5, rho_E=6/5, c_TE=-25/18
+PASS: product_conservation does not select q_E=15/8
+  l1_source_conservation: q_E=4/3, rho_E=2, c_TE=-5/4
+PASS: l1_source_conservation does not select q_E=15/8
+  center_abs_balance: q_E=5/3, rho_E=4, c_TE=-1
+PASS: center_abs_balance does not select q_E=15/8
+PASS: slope preservation gives rho_E=-1
+PASS: product conservation gives rho_E=6/5
+PASS: L1 conservation gives rho_E=2
+PASS: center absolute balance gives rho_E=4
+PASS: target q_E is greater than one
+PASS: positive linear source conservation cannot select target
+
+D. Metric and bridge boundary
+  target diagonal metric b/a = 1449/704
+PASS: target metric ratio is exact 1449/704 -- 1449/704
+PASS: target metric ratio is positive
+PASS: target metric ratio is not one of the primitive simple ratios
+PASS: target metric ratio is not in numerator/denominator <=64 scan
+PASS: bridge c_TE=-F_adj selects target q_E -- 15/8
+PASS: bridge c_TE=-F_adj selects target rho_E -- 21/4
+PASS: positive F_adj without signed center bridge gives wrong q_E -- -15/8
+PASS: target selection by bridge is equivalent to adding c_TE=-8/9 -- -8/9
+
+E. Claim firewall
+PASS: forbidden proof inputs are absent -- ['exact_fraction_arithmetic', 'fixed_carrier_vectors', 'granted_t_side_values', 'selector_equation_fanout']
+PASS: note keeps future center bridge route open
+PASS: note keeps future metric route open
+PASS: note does not claim the endpoint triple is derived
+PASS: note has proposal_allowed false
+PASS: bare retained is disallowed
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=51, FAIL=0
+VERDICT: fixed-carrier selector equations do not derive rho_E = 21/4.
+A genuine E-center source/readout primitive is still required.
+
+----- stderr -----
+

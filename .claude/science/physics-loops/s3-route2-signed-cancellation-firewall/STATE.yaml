@@ -1,0 +1,41 @@
+loop_slug: s3-route2-signed-cancellation-firewall
+date: 2026-06-21
+branch: physics-loop/s3-route2-signed-cancellation-firewall-block49-20260621
+base_ref: origin/main
+base_commit: 801140d78dfd3da532d9898e55bd38a118b95ba0
+mode: physics-loop
+block: 49
+active_route: signed affine source/readout cancellation plus positivity firewall
+target_status: no-go
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+repo_authority_edits: false
+audit_or_verdicts_run: false
+mergeability_or_conflict_checks_run: false
+remote_pr:
+  number: 4579
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4579"
+created_files:
+  - docs/QUARK_ROUTE2_SIGNED_CANCELLATION_FIREWALL_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_signed_cancellation_firewall_2026_06_21.py
+  - outputs/frontier_quark_route2_signed_cancellation_firewall_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-signed-cancellation-firewall/
+open_imports:
+  - Derive a typed signed affine selector and admissibility firewall.
+  - Define a larger nonlinear tensor-observable class if needed.
+verification:
+  new_runner: "PASS=92 FAIL=0 TOTAL=92"
+  py_compile: pass
+  parent_checks:
+    - "frontier_route2_readout_record_positivity_no_go.py: TOTAL: PASS=8 FAIL=0"
+    - "frontier_quark_route2_e_center_blindness_no_go.py: TOTAL: PASS=14, FAIL=0"
+    - "frontier_quark_route2_e_channel_readout_naturality_no_go.py: TOTAL: PASS=28, FAIL=0"
+    - "frontier_quark_route2_exact_readout_map.py: PASS=11 FAIL=0"
+  diff_check: pass
+  overclaim_scan: pass
+lock_status: "repo automation lock failed with permission error on /Users/jonreilly; branch-local lock discipline used"
+next_exact_action: "Continue campaign with a larger nonlinear tensor-observable class, or pivot to a different direct consumer if the endpoint route remains blocked."

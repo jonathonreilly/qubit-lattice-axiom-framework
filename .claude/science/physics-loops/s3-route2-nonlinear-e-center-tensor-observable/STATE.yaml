@@ -1,0 +1,52 @@
+loop_slug: s3-route2-nonlinear-e-center-tensor-observable
+block: 75
+date: 2026-06-21
+branch: physics-loop/s3-route2-nonlinear-e-center-tensor-observable-block75-20260621
+base_commit: 4ee5700917feb377da8ece8b6b2934b9d65249ad
+mode: campaign
+target_status: best-honest-status
+active_route: nonlinear E-center tensor observable gate
+hard_residual: >
+  Test whether a nonlinear observable built from the current rank-1 Route-2
+  carrier can derive or sharply constrain the endpoint covariance q_E/q_T=9/4
+  without a fitted endpoint selector or independent E/T channel law.
+actual_current_surface_status: no-go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+proposal_allowed: false
+bare_retained_allowed: false
+repo_lock:
+  mode: degraded_branch_local
+  reason: "automation_lock.py status failed with Permission denied: '/Users/jonreilly'"
+files_planned:
+  - docs/QUARK_ROUTE2_NONLINEAR_E_CENTER_TENSOR_OBSERVABLE_GATE_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py
+  - outputs/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.txt
+  - .claude/science/physics-loops/s3-route2-nonlinear-e-center-tensor-observable/
+open_imports:
+  - independent E/T channel-selecting nonlinear observable
+  - source/readout primitive deriving H_E/H_T between shell and center
+  - inverse-square projector-weight law if that route is pursued
+verification_results:
+  new_runner: "TOTAL: PASS=53, FAIL=0"
+  py_compile: pass
+  focused_checks:
+    - "frontier_s3_time_bilinear_tensor_primitive.py: PASS=4 FAIL=0 TOTAL=4"
+    - "frontier_s3_time_bilinear_tensor_primitive_rank1_factorization.py: PASS=11 FAIL=0 TOTAL=11"
+    - "frontier_quark_route2_qe_covariance_schur_quadratic_no_go_2026_06_14.py: PASS=11 FAIL=0"
+    - "frontier_quark_route2_exact_readout_map.py: PASS=11 FAIL=0"
+    - "frontier_s3_time_theta_to_slice_coupling.py: PASS=12 FAIL=0"
+    - "frontier_s3_time_constructed_support_tensor_primitive.py: PASS=7 FAIL=0 TOTAL=7"
+    - "frontier_tensor_support_center_excess_law.py: PASS=5 FAIL=0 TOTAL=5"
+review_disposition: pass
+review_notes: "Local branch self-review only; no audit verdicts applied and no repo-wide authority surfaces edited."
+pr_status: open
+pr:
+  number: 4606
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4606"
+  title: "[physics-loop] s3-route2-nonlinear-e-center-tensor block75 no-go"
+  base: main
+  head: physics-loop/s3-route2-nonlinear-e-center-tensor-observable-block75-20260621
+  state: OPEN
+next_exact_action: "Pivot to the next queued Route-2 target from a fresh worktree on current origin/main."
+stop_condition: "Continue campaign after PR unless runtime is exhausted or all viable targets are globally blocked."

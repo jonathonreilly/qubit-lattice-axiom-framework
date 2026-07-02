@@ -1,0 +1,82 @@
+========================================================================================
+ROUTE-2 NONLINEAR E-CENTER TENSOR OBSERVABLE GATE
+========================================================================================
+
+A. Authority surfaces
+------------------------------------------------------------------------
+PASS: note surface exists -- docs/QUARK_ROUTE2_NONLINEAR_E_CENTER_TENSOR_OBSERVABLE_GATE_NOTE_2026-06-21.md
+PASS: parent surface exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md
+PASS: exact_readout surface exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: bilinear surface exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md
+PASS: rank1 surface exists -- docs/S3_TIME_BILINEAR_TENSOR_PRIMITIVE_RANK1_FACTORIZATION_NOTE_2026-05-17.md
+PASS: naturality surface exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: covariance surface exists -- docs/QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md
+PASS: box_scan surface exists -- docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md
+PASS: measured surface exists -- docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md
+
+B. New note hygiene
+------------------------------------------------------------------------
+PASS: new note declares no_go claim type
+PASS: new note says no audit verdict is applied
+PASS: new note scopes to bright-linear endpoint readouts
+PASS: new note leaves future channel-selecting observables open
+PASS: new note forbids fitted endpoint selectors
+PASS: new note explicitly disclaims all-future nonlinear-observable failure
+
+C. Exact endpoint arithmetic
+------------------------------------------------------------------------
+PASS: support endpoint gap is 1/6 -- 1/6
+PASS: rho_T=-1 gives q_T=5/6 -- 5/6
+PASS: rho_E=21/4 gives q_E=15/8 -- 15/8
+PASS: target covariance lambda=q_E/q_T is 9/4 -- 9/4
+PASS: target center T/E ratio is -8/9 -- -8/9
+PASS: target requires unequal E and T center lifts -- q_E=15/8, q_T=5/6
+
+D. Rank-1 carrier and nonlinear normal form
+------------------------------------------------------------------------
+PASS: pure bright invariant u^2 has zero first derivative at A1
+PASS: pure bright invariant u^4 has zero first derivative at A1
+PASS: pure bright invariant u^6 has zero first derivative at A1
+PASS: pure bright invariant u^8 has zero first derivative at A1
+PASS: odd nonlinear monomial u^3 contributes no endpoint-linear readout
+PASS: odd nonlinear monomial u^5 contributes no endpoint-linear readout
+PASS: odd nonlinear monomial u^7 contributes no endpoint-linear readout
+PASS: linear bright factor is the only first-variation carrier term
+PASS: common scalar nonlinear dressing forces q_E/q_T=1 -- 1
+PASS: target q_E/q_T is not common-dressing value -- target=9/4
+PASS: common dressing set to q_T would also set q_E=5/6 -- common q=5/6
+PASS: common dressing set to q_E would also set q_T=15/8 -- common q=15/8
+
+E. Affine E-center response constraints
+------------------------------------------------------------------------
+PASS: affine T slope required by q_T=5/6 is rho_T=-1 -- -1
+PASS: affine E slope required by q_E=15/8 is rho_E=21/4 -- 21/4
+PASS: target affine slopes are unequal -- E=21/4, T=-1
+PASS: same affine slope cannot hit both endpoint targets -- common H(delta) fails
+PASS: the E slope is exactly the missing readout entry -- 21/4
+PASS: the T slope is exactly the granted T-side entry -- -1
+PASS: independent affine channel laws contain four free coefficients before normalization
+PASS: shell normalization leaves two independent channel slopes
+
+F. Current-bank marker scan
+------------------------------------------------------------------------
+PASS: exact readout names beta_E/alpha_E as missing map entry
+PASS: bilinear primitive is definition-only, not physical primitive closure
+PASS: rank-1 note factors K_R as w(q) v(q)^T
+PASS: naturality note leaves rho_E free absent E-center primitive
+PASS: covariance note says future nonlinear observable remains open
+PASS: box scan says current measured functional misses the target limits
+PASS: measured note treats finite-box calibration as sharpening not derivation
+PASS: parent note keeps endpoint triple open
+
+G. Result classification
+------------------------------------------------------------------------
+PASS: same-scalar nonlinear route is pruned -- lambda target is 9/4
+PASS: pure-invariant nonlinear route is pruned -- zero bright-linear first variation
+PASS: independent-channel route is not pruned -- it is exactly the open selector primitive
+PASS: block preserves positive target -- derive H_E/H_T channel law, do not fit endpoint values
+
+Summary
+------------------------------------------------------------------------
+TOTAL: PASS=53, FAIL=0
+VERDICT: rank-1-carrier nonlinear scalar dressings and pure carrier invariants cannot derive the Route-2 endpoint covariance q_E/q_T=9/4. A successful nonlinear E-center observable must supply an independent E/T channel law; in affine endpoint form that law is exactly (rho_E,rho_T)=(21/4,-1), so the missing readout selector is exposed, not retired.

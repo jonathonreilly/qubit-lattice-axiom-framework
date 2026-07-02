@@ -4,6 +4,10 @@
 **Type:** bounded support (structural decomposition + witnesses)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only, note does not set or predict audit outcome.
+**Paired runner:**
+[`scripts/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.py`](../scripts/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.py)
+**Cached output:**
+[`logs/runner-cache/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.txt`](../logs/runner-cache/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.txt)
 
 ## Purpose
 
@@ -13,11 +17,14 @@ This note separates one supplied readout context into two finite components:
 - **C2 (WEIGHTING):** scalar weighting/normalization data on the partition cells.
 
 The point is not to close either wall. The point is to give exact finite
-witnesses that the frame part and weighting part are independent, and that the
-Block01 carrier-measure residual and the `kappa_EW` wall name overlapping but
-nonidentical supplier shapes.
+witnesses that a frame part and a weighting part can be independent, and to
+record a candidate overlap between Block01's frame residual and the
+`kappa_EW` wall's quoted "supplied readout context" objection. This note does
+not prove that the `kappa_EW` wall has a separate C1 frame half.
 
-This is a supplier-shape decomposition conditional on the quoted wall texts; not a closure of either wall.
+This is a finite supplier-shape decomposition plus a candidate wall-map
+boundary, conditional on the quoted wall texts; it is not a closure of either
+wall.
 
 ## The Two Walls
 
@@ -176,8 +183,9 @@ I_w(R + S) = I_w(R) + I_w(S).
 
 Both choices satisfy every C1 constraint and Record additivity on explicit
 direct sums. Therefore the frame component leaves the weighting component free
-at witness level, matching the `kappa_EW` wall's separation of its missing
-"weighting/readout-bridge rule" from any partition choice.
+at witness level. This supports only the abstract separation needed for a
+future wall-merge attempt; it does not show that the actual `kappa_EW` wall has
+already separated weighting from every partition/readout-context choice.
 
 ## T3 - C2 Does Not Supply C1
 
@@ -208,21 +216,22 @@ cell is not the unit direction, and the second is not Hilbert-Schmidt
 orthogonal to the unit. Thus C2 alone permits an imported S2 frame and recovers
 no selection among the parent-named scorings.
 
-## T4 - Merge Statement
+## T4 - Candidate Wall-Map Boundary
 
-Every clause below is a witness-level decomposition statement; neither
-supplier is derived here, and neither wall is closed by this note.
+Every clause below is a bounded wall-map statement; neither supplier is derived
+here, and neither wall is closed by this note.
 
 1. Block01 residual item 1 is C1 exactly (T1's restatement bridge).
-2. The `kappa_EW` missing rule carries both component shapes: its
-   hostile-reviewer clause names a possible "supplied readout context"
-   (C1-shaped), and its summary names the missing "weighting/readout-bridge
-   rule" (C2-shaped).
-3. Therefore one C1-supplier would simultaneously discharge Block01's item-4
-   residual and the frame half of the `kappa_EW` missing rule.
-4. The `kappa_EW` wall additionally requires a C2-supplier (T2: a frame does
-   not fix scalar weights), and the walls are not identical (T2 and T3: the
-   components are independent in both directions).
+2. The `kappa_EW` wall text names two open phrases: a possible "supplied
+   readout context" in a hostile-reviewer objection and a missing
+   "weighting/readout-bridge rule" in the wall summary.
+3. This creates a candidate overlap only: a future C1 supplier might also
+   answer the quoted supplied-readout-context objection, but that is not proved
+   here and is not claimed as a `kappa_EW` closure.
+4. Independently, T2 shows that a frame supplier would not by itself fix scalar
+   weights, and T3 shows that equal weighting would not by itself recover the
+   frame. Thus the finite C1/C2 components are non-identical even in the
+   abstract witness model.
 
 ## What This Note Does NOT Claim
 
@@ -230,6 +239,8 @@ supplier is derived here, and neither wall is closed by this note.
 - No C1 supplier is derived here.
 - No C2 supplier is derived here.
 - Neither wall is closed by this note.
+- No theorem-grade decomposition of the actual `kappa_EW` wall into a C1 half
+  and C2 half is claimed.
 - The walls are not identical; T2 and T3 witness component independence.
 - No new axiom or primitive is introduced.
 - No probability or Born content is introduced.
@@ -239,9 +250,9 @@ supplier is derived here, and neither wall is closed by this note.
 
 | path | role |
 |---|---|
-| `docs/EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md` | Supplies the `kappa_EW` wall text quoted above: the missing weighting/readout-bridge rule, the open selector/readout-convention/observable-bridge route, the supplied-readout-context hostile-reviewer clause, and the common `K_EW` cancellation fact. |
-| `docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md` | Supplies Block01's D4 item 4 C1 requirement, residual list, and the finite Hadamard witnesses reused here. This note is an UNMERGED sibling on the same branch stack; dependency class: stacked branch-local, unaudited. |
-| `docs/MINIMAL_AXIOMS_2026-06-29.md` | Supplies the finite Record additivity sentence and the Open Gates list showing readout context, measurement basis, Born weights, source/action, and physical-observable identification remain outside axiom content. |
+| [`EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md`](EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md) | Supplies the `kappa_EW` wall text quoted above: the missing weighting/readout-bridge rule, the open selector/readout-convention/observable-bridge route, the supplied-readout-context hostile-reviewer clause, and the common `K_EW` cancellation fact. |
+| [`FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md`](FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md) | Supplies Block01's D4 item 4 C1 requirement, residual list, and the finite Hadamard witnesses reused here. This dependency has landed on `main` via PR #4816; independent audit still owns its verdict and any retained-grade dependency closure. |
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Supplies the finite Record additivity sentence and the Open Gates list showing readout context, measurement basis, Born weights, source/action, and physical-observable identification remain outside axiom content. |
 
 ## Paired Runner
 
@@ -254,5 +265,5 @@ scripts/frontier_supplied_readout_context_two_component_decomposition_2026_07_02
 Expected terminal line:
 
 ```text
-TOTAL: PASS=29 FAIL=0
+TOTAL: PASS=32 FAIL=0
 ```

@@ -1,32 +1,24 @@
 # Route Portfolio
 
-## Block28 Route Chosen
+## Block29 Route Chosen
 
-**Quark up-amplitude scalar-bypass firewall.**
+**E-center-visible endpoint selector fan-out.**
 
-Question:
+The route allows selectors that see the E-center lift `q_E`, then tests exact
+endpoint-matrix symmetry equations. It prunes the idea that E-center visibility
+alone selects the target.
 
-```text
-Can current-main up-amplitude scalar routes determine selected P_R without
-entering the Route-2 E-center readout family?
-```
+## Remaining Routes
 
-Result: no-go for that bypass route.
+1. **Typed source-domain bridge theorem attempt.**
+   Try to type a path from the color/source scalar to the signed center ratio.
 
-## Alternatives
+2. **Equivalent E-center readout primitive.**
+   Search for a support/readout primitive that computes the E-center quotient.
 
-1. **Physical/canonical gate selector search.**
-   High relevance, but block27 and current-main notes show it is likely to
-   repeat eta-floor membership rather than select `P_R`.
+3. **Alternate up-sector scalar route.**
+   Leave Route-2 endpoint readout and seek a separate typed edge into selected
+   `P_R`.
 
-2. **Direct E-center lift attempt.**
-   Still the central positive route. Needs a new premise or theorem that sees
-   the E-center column.
-
-3. **Typed reduced-amplitude-to-readout edge.**
-   Newly sharpened by block28. A positive route would need to map exact
-   reduced up-amplitude support into the selected Route-2 readout family.
-
-4. **Source-domain bridge.**
-   Prior blocks show source-domain typecasts leave scale or E-center freedom
-   unless an additional typed landing rule is supplied.
+4. **Physical/canonical gate selector falsifier.**
+   Test whether any current gate-selector language does more than membership.

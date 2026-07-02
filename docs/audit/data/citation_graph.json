@@ -56306,10 +56306,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25"
     },
     {
@@ -56331,6 +56327,10 @@
     {
       "from": "repo.front_door_status",
       "to": "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
     },
     {
       "from": "repo.repo_organization",
@@ -108440,16 +108440,16 @@
       "claim_type_seed_hint": null,
       "deps": [
         "hypercharge_identification_note",
-        "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10",
         "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
         "real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08",
         "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
         "cl3_taste_generation_theorem",
         "g_bare_parent_finite_link_wilson_beta6_bridge_note_2026-06-18",
-        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17"
+        "staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17",
+        "staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cbc578484ed5a096498c52e9def1d8756b51347f119f7e16dd469b8fdd78270f",
+      "note_hash": "c2f6a4275ff89edb5eb9ccbc848f1f6a651c07353e0f2c2fe63dcd364fedac5f",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

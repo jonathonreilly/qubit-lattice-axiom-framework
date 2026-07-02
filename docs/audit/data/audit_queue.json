@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 403,
+    "critical": 402,
     "high": 289,
     "leaf": 699,
     "medium": 510
@@ -345,34 +345,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "hypercharge_identification_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25",
-        "gmn_vev_annihilator_l4_support_note_2026-07-02",
-        "lhcm_matter_assignment_from_su3_representation_note_2026-05-02",
-        "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 22,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 24.441,
-      "note_path": "docs/HYPERCHARGE_IDENTIFICATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_hypercharge_identification.py",
-      "transitive_descendants": 1389
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -533,15 +505,15 @@
       "deps": [
         "minimal_axioms"
       ],
-      "direct_in_degree": 10,
+      "direct_in_degree": 11,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 18.013,
+      "load_bearing_score": 18.514,
       "note_path": "docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_staggered_dirac_substep1_statistics_agnostic_no_forcing_discriminator.py",
-      "transitive_descendants": 1032
+      "transitive_descendants": 1033
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -56368,6 +56340,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 124,
-  "total_pending": 1901
+  "ready_count": 123,
+  "total_pending": 1900
 }

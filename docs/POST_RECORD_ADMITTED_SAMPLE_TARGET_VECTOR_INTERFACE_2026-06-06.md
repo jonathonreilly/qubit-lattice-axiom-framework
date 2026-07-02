@@ -2,9 +2,11 @@
 
 **Date:** 2026-06-06
 **Type:** exact support / admitted observation interface
-**Claim type:** methodology / positive theorem
-**Status:** exact-support branch-local for admitted finite post-record samples;
+**Claim type:** bounded_theorem
+**Status:** bounded-support interface for admitted finite post-record samples;
 audit_required_before_effective_retained=true; bare_retained_allowed=false.
+**Status authority:** source-side type boundary only; this packet does not apply
+or predict an audit verdict.
 **Primary runner:**
 [`scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py`](../scripts/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.py)
 **Cached log:**

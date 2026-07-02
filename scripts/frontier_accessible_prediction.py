@@ -1,42 +1,44 @@
 #!/usr/bin/env python3
-"""Accessible predictions: where this framework DIFFERS from classical GR.
+"""Accessible conditional prediction scenarios.
 
 ===========================================================================
-THE PROBLEM: Lattice corrections at Planck spacing are ~10^-58 -- useless.
-We need predictions from regimes where the framework and GR DISAGREE.
+Scope boundary:
+This runner computes five scenario consequences after named premises P1..P6
+are granted. It does not derive P1..P6 from framework primitives, and it does
+not claim uniqueness, falsification, or audit status movement.
 
-KEY INSIGHT: The framework treats gravity as sourced by quantum density
-rho = |psi|^2. Classical GR has no such structure. The disagreement shows
-up whenever QUANTUM FEATURES of the source matter -- spatial superpositions,
-self-consistent backreaction at mesoscopic scales, and the correlation
-between Born rule precision and gravitational precision.
+Problem:
+Planck-spacing lattice corrections are too small to be useful directly. The
+conditional scenarios here ask what follows if the semiclassical Poisson
+source, branch dynamics, Born-gravity cross-link, and related ansatz premises
+are supplied.
 
-Five approaches computed with specific numbers:
+Five conditional approaches computed with specific numbers:
 
   1. Superposition-sourced gravity (BMV regime)
      -- Classical GR: field from expectation value <x>
-     -- Framework: field from |psi(x)|^2 density
-     -- Difference: measurable in BMV-class experiments
+     -- Conditional premise P1/P2: field from branch density
+     -- Difference: measurable in BMV-class experiments if P1/P2 hold
 
   2. Self-consistent mesoscopic backreaction
      -- Newtonian: point-mass potential
-     -- Framework: self-consistent quantum density profile
-     -- Difference at micron-scale wavepacket width
+     -- Conditional premise P1/P5: self-consistent quantum density profile
+     -- Difference at micron-scale wavepacket width if P1/P5 hold
 
   3. Next-order gravitational decoherence correction
      -- Diosi-Penrose: gamma = G m^2 / (hbar delta_x)
-     -- Framework: adds self-consistent field correction
-     -- Second-order term from iterative field structure
+     -- Conditional premise P1/P6: self-consistent field correction
+     -- Second-order term from the supplied iterative ansatz
 
   4. Self-energy correction to gravitational potential
      -- Newtonian: point mass, divergent self-energy
-     -- Framework: wavepacket width sigma regularizes
-     -- Delta_V ~ G m^2 / sigma at short range
+     -- Conditional premise P1/P4: wavepacket width sigma regularizes
+     -- Delta_V ~ G m^2 / sigma at short range if P1/P4 hold
 
   5. Born-gravity cross-constraint
-     -- Unique prediction: |I_3| bound constrains gravity precision
-     -- Quantitative: if |I_3/I_1| < epsilon, then force law is
-        Newtonian to precision f(epsilon)
+     -- Conditional premise P3: |I_3| bound constrains gravity precision
+     -- Quantitative: if P3 and |I_3/I_1| < epsilon hold, then the
+        companion beta bound is f(epsilon)
 
 PStack experiment: frontier-accessible-prediction
 ===========================================================================
@@ -47,6 +49,7 @@ from __future__ import annotations
 import math
 import time
 import sys
+from pathlib import Path
 
 import numpy as np
 
@@ -66,13 +69,63 @@ E_PL_J   = M_PL * C**2          # J  (Planck energy)
 G_EARTH  = 9.81                 # m/s^2
 
 
+def source_scope_checks():
+    """Fail fast if the source note or runner drifts back into overclaiming."""
+    note_path = Path("docs/ACCESSIBLE_PREDICTION_NOTE.md")
+    runner_path = Path(__file__)
+    note = note_path.read_text()
+    runner = runner_path.read_text()
+
+    required_note_markers = [
+        "conditional prediction scenarios",
+        "None of the premises is claimed retained",
+        "The note does not derive P1..P6 from framework primitives",
+        "It does **not** claim uniqueness of the framework",
+        "It does **not** strengthen the conditional scenarios into audited",
+    ]
+    forbidden_runner_phrases = [
+        "The framework " + "predicts",
+        "The framework" + "'s self-consistent",
+        "The framework replaces",
+        "UNIQUE " + "PREDICTION",
+        "UNIQUE to " + "framework",
+        "UNIQUE to this " + "framework",
+        "is " + "FALSIFIED",
+        "would kill the " + "framework",
+        "No other theory " + "predicts",
+        "framework-specific " + "prediction",
+        "This is proven by the " + "structure",
+    ]
+
+    failures = []
+    guarded_runner = runner.split("forbidden_runner_phrases = [", 1)[0]
+    for marker in required_note_markers:
+        if marker not in note:
+            failures.append(f"missing note marker: {marker}")
+    for phrase in forbidden_runner_phrases:
+        if phrase in guarded_runner:
+            failures.append(f"legacy overclaim phrase present: {phrase}")
+
+    print("=" * 78)
+    print("SOURCE SCOPE CHECKS")
+    print("=" * 78)
+    if failures:
+        for item in failures:
+            print(f"  [FAIL] {item}")
+        raise SystemExit(1)
+    for marker in required_note_markers:
+        print(f"  [PASS] note marker present: {marker}")
+    print("  [PASS] runner legacy overclaim phrases absent")
+    print()
+
+
 # =====================================================================
 # APPROACH 1: Superposition-sourced gravity (BMV regime)
 # =====================================================================
 #
-# In the framework, the gravitational field is sourced by the quantum
-# density rho(x) = |psi(x)|^2. For a mass in a superposition of two
-# locations x_L and x_R:
+# Conditional premise P1 sources the gravitational field by the quantum
+# density rho(x) = |psi(x)|^2. For a mass in a superposition of two locations
+# x_L and x_R:
 #
 #   |psi> = (|x_L> + |x_R>) / sqrt(2)
 #
@@ -85,12 +138,11 @@ G_EARTH  = 9.81                 # m/s^2
 #   The field is sourced by <T_mu,nu>, which for a superposition gives
 #   the SAME answer as the quantum density: phi = -Gm/2 * (1/r_L + 1/r_R)
 #
-# BUT: the test of QUANTUM gravity is whether the field ITSELF is in a
-# superposition. In the framework, the Poisson equation is solved for
-# each branch of the wavefunction independently. A second test mass
+# Under the additional branch-dynamics premise P2, the Poisson equation is
+# solved for each branch of the wavefunction independently. A second test mass
 # at position r_test experiences:
 #
-#   Framework: entanglement between source and test mass
+#   P1/P2 scenario: entanglement between source and test mass
 #     |psi> = (|x_L>|phi_L(r_test)> + |x_R>|phi_R(r_test)>) / sqrt(2)
 #
 #   Classical GR: test mass feels the AVERAGE field, no entanglement
@@ -99,7 +151,8 @@ G_EARTH  = 9.81                 # m/s^2
 # The entanglement phase is:
 #   Delta_phi = G m_source m_test T / hbar * [1/d_near - 1/d_far]
 #
-# This is the BMV prediction. Let's compute it for realistic parameters.
+# This is the conditional BMV-class scenario. Compute it for realistic
+# parameters after P1/P2 are granted.
 
 def approach_1_bmv_entanglement():
     """Compute BMV entanglement phase for realistic experimental parameters."""
@@ -107,9 +160,9 @@ def approach_1_bmv_entanglement():
     print("APPROACH 1: SUPERPOSITION-SOURCED GRAVITY (BMV)")
     print("=" * 78)
     print()
-    print("The framework predicts: gravity mediates ENTANGLEMENT between")
-    print("two masses in spatial superposition. Classical GR predicts: NO")
-    print("entanglement (field is classical, carries no quantum information).")
+    print("Conditional on P1/P2, gravity mediates ENTANGLEMENT between")
+    print("two masses in spatial superposition. A classical-field comparator")
+    print("with no branch-level dynamics carries no quantum information.")
     print()
 
     # Experimental parameters (current proposals)
@@ -197,17 +250,14 @@ def approach_1_bmv_entanglement():
         print(f"    DETECTABLE (delta_phi > 0.01): {'YES' if detectable else 'no'}")
         print()
 
-    # Key point: this is NOT a lattice correction. This is a QUALITATIVE
-    # difference between quantum and classical gravity.
+    # Key point: under P1/P2 this is not a lattice-spacing correction.
     print("  KEY RESULT:")
-    print("  This prediction does NOT depend on the lattice spacing a.")
-    print("  It is a QUALITATIVE prediction: gravity mediates entanglement.")
-    print("  Classical GR (any form) says: no gravitational entanglement.")
-    print("  The framework says: entanglement phase = G m^2 T / (hbar d).")
+    print("  Under P1/P2, this scenario does NOT depend on the lattice spacing a.")
+    print("  It is a conditional qualitative signature: gravity-mediated")
+    print("  entanglement with phase = G m^2 T / (hbar d).")
     print()
-    print("  The framework makes this prediction because the Poisson equation")
-    print("  is solved for the quantum density |psi|^2, which propagates")
-    print("  quantum coherence through the gravitational field.")
+    print("  This runner does not derive P1/P2. It computes the consequence")
+    print("  after those premises are supplied.")
     print()
 
     return results
@@ -243,8 +293,8 @@ def approach_2_mesoscopic_backreaction():
     print("APPROACH 2: SELF-CONSISTENT MESOSCOPIC BACKREACTION")
     print("=" * 78)
     print()
-    print("The framework iterates: propagate psi -> get rho=|psi|^2 -> solve")
-    print("Poisson -> propagate in phi -> ... This self-consistent loop produces")
+    print("Conditional on P1/P5: propagate psi -> get rho=|psi|^2 -> solve")
+    print("Poisson -> propagate in phi -> ... This supplied loop produces")
     print("a density profile that differs from the point-mass approximation.")
     print()
 
@@ -261,7 +311,7 @@ def approach_2_mesoscopic_backreaction():
     #
     # When alpha >> 1: the object collapses under its own gravity
     # When alpha << 1: quantum pressure dominates, Newtonian point-mass is fine
-    # When alpha ~ 1: TRANSITION REGIME -- framework and Newtonian differ
+    # When alpha ~ 1: transition regime for the supplied P1/P5 ansatz.
 
     configs = [
         {"name": "Electron", "m_kg": M_E, "sigma_m": 1e-10},  # atomic scale
@@ -353,9 +403,9 @@ def approach_2_mesoscopic_backreaction():
     print("  Need ~10^9 increase in mass -- challenging but not impossible")
     print("  with optomechanical systems in the next 10-20 years.")
     print()
-    print("  The framework-specific prediction: the gravitational potential")
-    print("  of a mesoscopic quantum object deviates from 1/r at distances")
-    print("  r < sigma by up to 32% (from the extended quantum density).")
+    print("  Conditional P1/P5 consequence: the gravitational potential of a")
+    print("  mesoscopic quantum object deviates from 1/r at distances r < sigma")
+    print("  by up to 32% (from the supplied extended quantum density).")
     print("  At r = sigma: phi_quantum / phi_point = erf(1/sqrt(2)) = 0.683")
     print()
 
@@ -369,8 +419,8 @@ def approach_2_mesoscopic_backreaction():
 # The Diosi-Penrose decoherence rate is:
 #   gamma_DP = G m^2 / (hbar * delta_x)
 #
-# In the framework, the self-consistent field iteration produces a
-# CORRECTION to this rate. The first iteration gives Diosi-Penrose.
+# Under P1/P6, the self-consistent field iteration produces a correction to
+# this rate. The first iteration gives Diosi-Penrose.
 # The second iteration includes the backreaction of the gravitational
 # field on the wavefunction, which modifies the density, which modifies
 # the field, giving a correction.
@@ -392,7 +442,7 @@ def approach_3_decoherence_correction():
     print("=" * 78)
     print()
     print("Diosi-Penrose gives the LEADING order: gamma_DP = G m^2 / (hbar delta_x)")
-    print("The framework's self-consistent iteration gives NEXT-ORDER corrections.")
+    print("Conditional P1/P6 self-consistent iteration gives NEXT-ORDER corrections.")
     print()
 
     # The self-consistent iteration:
@@ -496,7 +546,7 @@ def approach_3_decoherence_correction():
     print()
 
     # Now compute the physical correction for real experiments
-    print("  Physical predictions:")
+    print("  Physical scenario outputs:")
     print()
 
     exp_configs = [
@@ -547,8 +597,9 @@ def approach_3_decoherence_correction():
           f"{2*G_N*1e-14/(C**2*1e-6):.2e}")
     print("  This is ~10^{-37} -- unmeasurably small for any foreseeable")
     print("  experiment. The correction only matters near the Planck mass.")
-    print("  VERDICT: The decoherence rate matches Diosi-Penrose to all")
-    print("  accessible precision. The next-order correction is not testable.")
+    print("  Conditional verdict under P1/P6: the decoherence rate matches")
+    print("  Diosi-Penrose to accessible precision; the next-order correction")
+    print("  is not testable in this supplied ansatz.")
     print()
 
     return results
@@ -559,8 +610,8 @@ def approach_3_decoherence_correction():
 # =====================================================================
 #
 # In Newtonian gravity, a point mass has a divergent self-energy.
-# In the framework, the mass is a wavepacket of width sigma, and the
-# self-energy is FINITE:
+# Under P1/P4, the mass is modeled as a wavepacket of width sigma, and the
+# self-energy is finite:
 #
 #   E_self = -G m^2 / (sqrt(2 pi) sigma)   (3D Gaussian)
 #
@@ -583,7 +634,7 @@ def approach_4_self_energy():
     print("APPROACH 4: SELF-ENERGY CORRECTION TO GRAVITATIONAL POTENTIAL")
     print("=" * 78)
     print()
-    print("The framework replaces point masses with wavepackets of width sigma.")
+    print("Conditional P1/P4 replaces point masses with wavepackets of width sigma.")
     print("This modifies the gravitational potential at distances r < sigma.")
     print()
 
@@ -683,11 +734,9 @@ def approach_4_self_energy():
     print("  distances comparable to the quantum wavepacket width -- which")
     print("  is always far below any gravitational measurement range.")
     print()
-    print("  HOWEVER: this gives a QUALITATIVE prediction. Any object whose")
-    print("  wavepacket width sigma exceeds the distance scale r at which")
-    print("  gravity is measured MUST show this deviation. If optomechanical")
-    print("  experiments can create sigma > 1 um superpositions, short-range")
-    print("  gravity measurements between such objects would see it.")
+    print("  Conditional P1/P4 consequence: any object whose wavepacket width")
+    print("  sigma exceeds the distance scale r at which gravity is measured")
+    print("  shows this deviation inside the supplied extended-source ansatz.")
     print()
 
     return {"r_over_sigma": r_over_sigma.tolist()}
@@ -697,7 +746,7 @@ def approach_4_self_energy():
 # APPROACH 5: Born-gravity cross-constraint (MOST PROMISING)
 # =====================================================================
 #
-# This is the framework's UNIQUE, FALSIFIABLE prediction.
+# This is a conditional cross-constraint under premise P3.
 #
 # From the nonlinear Born-gravity analysis (frontier_nonlinear_born_gravity.py),
 # we showed that:
@@ -733,22 +782,20 @@ def approach_4_self_energy():
 # The Eot-Wash experiment measures 1/r^2 to 10^{-5} precision at mm scales.
 # So the cross-constraint from I_3 is WEAKER than direct measurements.
 #
-# The power of this prediction: it links TWO different experiments.
-# If a FUTURE I_3 measurement achieves 10^{-8} precision, the framework
-# predicts beta = 1 to 10^{-4}. Conversely, if gravity deviates at 10^{-4},
-# the framework predicts I_3 must be nonzero at 10^{-8}.
+# The power of this conditional scenario is that it links two different
+# experiments after P3 is supplied. This runner does not derive P3.
 #
-# This is a CORRELATION that no other theory predicts.
+# No uniqueness or falsification claim is made here.
 
 def approach_5_born_gravity_cross_constraint():
     """Compute the Born-gravity cross-constraint."""
     print("=" * 78)
-    print("APPROACH 5: BORN-GRAVITY CROSS-CONSTRAINT (UNIQUE PREDICTION)")
+    print("APPROACH 5: BORN-GRAVITY CROSS-CONSTRAINT (CONDITIONAL P3)")
     print("=" * 78)
     print()
-    print("In the framework, the Born rule (I_3 = 0) and Newton's law (beta = 1)")
-    print("are BOTH consequences of linear amplitude superposition. Any deviation")
-    print("in one REQUIRES a deviation in the other.")
+    print("Conditional on P3, the Born rule (I_3 = 0) and Newton's law")
+    print("(beta = 1) share a linear-superposition primitive. Under that")
+    print("premise, a deviation in one carries a companion deviation bound.")
     print()
 
     # The cross-constraint follows from the ANALYTICAL structure, not just
@@ -780,8 +827,8 @@ def approach_5_born_gravity_cross_constraint():
     print("    |beta - 1| ~ epsilon        (mass law violation)")
     print("  Therefore: |beta - 1| ~ sqrt(|I_3/I_1|)")
     print()
-    print("  This is proven by the structure of the path-sum propagator.")
-    print("  The numerics in frontier_nonlinear_born_gravity.py confirmed:")
+    print("  This follows inside the supplied P3 path-sum model.")
+    print("  The numerics in frontier_nonlinear_born_gravity.py support:")
     print("    LINEAR:     I_3 < 1e-10,  beta ~ 1.0,  attractive")
     print("    QUADRATIC:  I_3 ~ 0.09,   gravity REPULSIVE")
     print("    CUBIC:      I_3 ~ 0.09,   gravity REPULSIVE")
@@ -838,13 +885,11 @@ def approach_5_born_gravity_cross_constraint():
     print("  - Lunar laser ranging: 1/r^2 to 10^{-13} at Earth-Moon")
     print("  - Cassini: PPN gamma to 10^{-5}")
     print()
-    print("  UNIQUE PREDICTION:")
-    print("  The framework predicts that these two numbers are LINKED.")
-    print("  No other theory predicts this cross-constraint.")
+    print("  CONDITIONAL CROSS-CONSTRAINT:")
+    print("  P3 links these two numbers; without P3 this runner makes no")
+    print("  framework-level uniqueness or falsification claim.")
     print("  If |I_3| is measured to 10^{-8} and gravity is found to deviate")
-    print("  at 10^{-3}, the framework is FALSIFIED.")
-    print("  If both are consistent with the cross-constraint, the framework")
-    print("  passes a test that it didn't have to pass.")
+    print("  at 10^{-3}, the supplied P3 scenario fails.")
     print()
 
     return {"cross_results": cross_results, "slope": slope, "C_fit": C_fit}
@@ -858,7 +903,7 @@ def synthesis():
     """Rank the five approaches by experimental accessibility."""
     print()
     print("=" * 78)
-    print("SYNTHESIS: RANKING OF ACCESSIBLE PREDICTIONS")
+    print("SYNTHESIS: RANKING OF ACCESSIBLE CONDITIONAL SCENARIOS")
     print("=" * 78)
     print()
 
@@ -867,31 +912,31 @@ def synthesis():
             "rank": 1,
             "approach": "BMV gravitational entanglement",
             "type": "QUALITATIVE",
-            "prediction": "Gravity mediates entanglement between superposed masses",
+            "prediction": "P1/P2 imply gravity mediates entanglement between superposed masses",
             "competitor": "Classical GR: no entanglement",
             "experiment": "BMV (diamond microspheres), MAQRO, BECCAL",
             "timescale": "5-15 years",
             "lattice_dependent": False,
             "testable": True,
-            "notes": "Does NOT depend on lattice spacing. Tests quantum nature of gravity.",
+            "notes": "Conditional on P1/P2; does not depend on lattice spacing.",
         },
         {
             "rank": 2,
             "approach": "Born-gravity cross-constraint",
             "type": "QUANTITATIVE CORRELATION",
-            "prediction": "|beta - 1| < C * |I_3|^alpha",
-            "competitor": "No other theory links Born rule to gravity",
+            "prediction": "P3 implies |beta - 1| < C * |I_3|^alpha",
+            "competitor": "No comparator claim without deriving P3",
             "experiment": "Combine Sorkin test (I_3) with short-range gravity (ISL)",
             "timescale": "Available NOW with existing data",
             "lattice_dependent": False,
             "testable": True,
-            "notes": "UNIQUE to framework. Can be checked with CURRENT experiments.",
+            "notes": "Conditional P3 algebra; no uniqueness claim here.",
         },
         {
             "rank": 3,
             "approach": "Self-energy: extended source potential",
             "type": "QUANTITATIVE",
-            "prediction": "phi = -(Gm/r) erf(r/(sqrt(2) sigma)) for quantum source",
+            "prediction": "P1/P4 imply phi = -(Gm/r) erf(r/(sqrt(2) sigma))",
             "competitor": "Newton: phi = -Gm/r (point source)",
             "experiment": "Short-range gravity with delocalized masses",
             "timescale": "10-20 years (requires sigma > 1 um)",
@@ -903,7 +948,7 @@ def synthesis():
             "rank": 4,
             "approach": "Mesoscopic backreaction (alpha parameter)",
             "type": "QUANTITATIVE",
-            "prediction": "Self-gravitating wavepacket width deviates when alpha = Gm^3 sigma/hbar^2 ~ 1",
+            "prediction": "P1/P5 imply width deviation when alpha = Gm^3 sigma/hbar^2 ~ 1",
             "competitor": "Newton: point mass always",
             "experiment": "Optomechanical ground-state cooling + interferometry",
             "timescale": "15-25 years",
@@ -915,7 +960,7 @@ def synthesis():
             "rank": 5,
             "approach": "Next-order decoherence correction",
             "type": "QUANTITATIVE (tiny)",
-            "prediction": "delta gamma / gamma_DP = c_1 * r_S / sigma ~ 10^{-37}",
+            "prediction": "P1/P6 imply delta gamma / gamma_DP = c_1 * r_S / sigma",
             "competitor": "Diosi-Penrose (no correction)",
             "experiment": "None foreseeable",
             "timescale": "Not testable",
@@ -942,25 +987,23 @@ def synthesis():
     print("KEY FINDING")
     print("=" * 78)
     print()
-    print("Three of the five predictions are INDEPENDENT of the lattice spacing.")
-    print("They arise from the framework's quantum treatment of gravity, not")
-    print("from the discrete structure. This is the escape from the 10^{-58}")
-    print("prison of Planck-scale lattice corrections.")
+    print("Three of the five conditional scenarios are independent of the")
+    print("lattice spacing once P1..P6 are supplied. This is not a derivation")
+    print("of those premises from framework primitives.")
     print()
-    print("The most powerful prediction is #2 (Born-gravity cross-constraint)")
-    print("because it is:")
+    print("The most powerful conditional scenario is #2 (Born-gravity")
+    print("cross-constraint) because it is:")
     print("  - Testable with CURRENT experimental data")
-    print("  - UNIQUE to this framework (no other theory predicts it)")
-    print("  - FALSIFIABLE (a violation would kill the framework)")
+    print("  - a sharp P3-dependent correlation")
+    print("  - falsifiable as a supplied scenario once P3 is derived or admitted")
     print("  - Does not require any new experiment")
     print()
-    print("The most dramatic prediction is #1 (BMV entanglement) because it")
-    print("distinguishes quantum from classical gravity at accessible energies.")
-    print("But this prediction is shared with other quantum gravity approaches.")
+    print("The most dramatic conditional scenario is #1 (BMV entanglement)")
+    print("because it distinguishes branch-level gravity from a classical-field")
+    print("comparator at accessible energies after P1/P2 are supplied.")
     print()
-    print("The unique selling point: only this framework predicts that the")
-    print("Born rule precision and gravitational precision are QUANTITATIVELY")
-    print("LINKED through the propagator linearity.")
+    print("The useful future bridge target is P3: derive or register the")
+    print("Born-gravity cross-link before using it as a framework prediction.")
     print()
 
     return predictions
@@ -973,12 +1016,15 @@ def synthesis():
 def main():
     t_start = time.time()
 
+    source_scope_checks()
+
     print("=" * 78)
-    print("ACCESSIBLE PREDICTIONS: WHERE THE FRAMEWORK DIFFERS FROM GR")
+    print("ACCESSIBLE CONDITIONAL PREDICTION SCENARIOS")
     print("=" * 78)
     print()
     print("The lattice corrections at Planck spacing are ~10^{-58} -- useless.")
-    print("We look for predictions that do NOT depend on the lattice spacing.")
+    print("We compute scenario consequences that do not depend on lattice")
+    print("spacing after named premises P1..P6 are supplied.")
     print()
 
     # Run all five approaches

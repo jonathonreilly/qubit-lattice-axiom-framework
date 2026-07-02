@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_poisson_resource_scope_repair.py
-runner_sha256: 127fec63592b7d593968210fb0481135612b865ca046cba61e56d8c22ad3c54c
+runner_sha256: f7c89916e3fec6a887e55f806f16a0127af63dc67e9a8600bf61618a73c3320b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.64
 status: ok
 ----- stdout -----
 Teleportation Poisson resource scope repair

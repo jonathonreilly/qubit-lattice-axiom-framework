@@ -8,8 +8,12 @@ symmetry-protection routes. It is a norm-balance condition (equal energy in the
 C3 singlet and doublet channels). Full axis-permutation symmetry S3 forces TWO
 DEGENERATE masses; C3 leaves r free; there is no intermediate C3 < G < S3
 subgroup; and the 1-dim singlet and 2-dim doublet cannot be swapped by a
-unitary isomorphism. Dynamical, variational, nonunitary, and extra-structure
-mechanisms are left open.
+unitary isomorphism. A C3-compatible coefficient rephasing / doublet-basis
+rotation also preserves |b|^2/a^2, so it cannot calibrate arbitrary r to 1/2.
+The listed routes are not asserted to exhaust the symmetry-protection space.
+Dynamical, variational, nonunitary, extra-structure, and untested symmetry
+mechanisms are left open. The note makes no claim that r = 1/2 is forced or
+derived; here it remains a stable dial setting.
 
 Reproven by finite algebra; no external mass values, no fits, no imported authorities.
 """
@@ -68,6 +72,20 @@ chk("(4)  C3 leaves r free: Q=(1+2r)/3 is non-constant in r (Q'(r)=2/3 != 0), so
 chk("(5)  dim(singlet)=1 != 2=dim(doublet): no unitary swaps them -> r=1/2 is a norm-balance, not a symmetry",
     1 != 2)
 
+# (6) FIFTH DISTINCT ROUTE: C3-compatible coefficient rephasing / doublet-basis
+#     calibration.  The real doublet coordinates (Re b, Im b) may be rotated by
+#     an internal phase choice, but this preserves |b|^2 and hence preserves
+#     r = |b|^2/a^2 and E_perp/E+.  A phase/basis convention cannot tune a
+#     freely chosen r to 1/2.
+x, y, c, s = symbols('x y c s', real=True)
+x_rot = c*x - s*y
+y_rot = s*x + c*y
+unit_circle = c**2 + s**2 - 1
+doublet_norm_diff = sp.expand((x_rot**2 + y_rot**2) - (x**2 + y**2))
+remainder = sp.groebner([unit_circle], c, s, x, y, order='lex').reduce(doublet_norm_diff)[1]
+chk("(6)  C3-compatible coefficient rephasing/doublet-basis rotation preserves |b|^2 and r=|b|^2/a^2, so it cannot force r=1/2",
+    sp.simplify(remainder) == 0)
+
 P = sum(1 for _, o in R if o); F = sum(1 for _, o in R if not o)
 for l, o in R:
     print(("PASS" if o else "FAIL"), "-", l)
@@ -77,6 +95,8 @@ if F:
 print(
     "\nNO-GO verified: r=1/2 (Q=2/3) is the equal-singlet/doublet-energy / 45-degree condition (1,2); it\n"
     "is NOT fixed by the tested C3/S3 unitary symmetry routes -- S3 forces degeneracy (3), C3 leaves\n"
-    "r free (4), and the 1-vs-2-dim irreps cannot be swapped (5). Any positive derivation must enter\n"
-    "through dynamics or extra structure rather than through those symmetry routes."
+    "r free (4), the 1-vs-2-dim irreps cannot be swapped (5), and C3-compatible coefficient\n"
+    "rephasing/doublet-basis calibration preserves |b|^2/a^2 (6). These routes are not asserted to\n"
+    "exhaust the symmetry-protection space; any positive derivation must enter through dynamics,\n"
+    "extra structure, or another route not checked here rather than through those symmetry/calibration routes."
 )

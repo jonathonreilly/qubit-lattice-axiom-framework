@@ -1,7 +1,14 @@
 # Architecture Portability Audit
 
-**Date:** 2026-04-11  
+**Date:** 2026-04-11
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/work-history-unverifiable-portability-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
 
 ## Retraction
 
@@ -32,6 +39,16 @@ This archived note does not add support to that separate row and must not be
 listed as an evidence note for it. Its only safe use is to remind future edits
 not to overclaim Newton closure, distance-law closure, both-masses closure, or
 Wilson Born measurements from the portability sweep.
+
+## 2026-06-18 live source bridge
+
+[`docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md`](../../docs/ARCHITECTURE_PORTABILITY_LIVE_REAUDIT_BRIDGE_NOTE_2026-06-18.md)
+packages the current live source-side re-audit target for the failed historical
+row. It does not restore this archived packet as evidence. It points auditors
+to the live runner-backed sweep, its cache, and the explicit boundary that the
+safe claim is only bounded source-mass scaling / attraction portability on the
+configured finite architectures, with Born `I_3` checked only where the barrier
+implementation exists.
 
 ---
 

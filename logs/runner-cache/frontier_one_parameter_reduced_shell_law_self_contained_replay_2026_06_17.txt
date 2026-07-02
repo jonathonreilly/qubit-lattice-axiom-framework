@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py
+runner_sha256: 55020114ec83ccf1b61e6d167aaaed0b67dda356542fa363d79f5b2b4f81c791
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+Self-contained one-parameter reduced sewing-shell replay
+========================================================================
+[BOUNDED] PASS: source note registers this self-contained replay runner without status promotion
+    frontier_one_parameter_reduced_shell_law_self_contained_replay_2026_06_17.py
+[BOUNDED] PASS: self-contained replay source has no frontier-loader or helper-module imports
+    forbidden loader/helper import strings absent
+c_aniso = 0.081435402995901
+max point-column charge difference from unity = 4.441e-16
+max point-column radial-profile difference = 1.110e-15
+max point-column orbit-mode difference = 2.220e-16
+max point-column shell-mean total-field difference = 2.602e-18
+max point-column shell-mean anisotropic-field difference = 3.740e-18
+max family-vs-reference c_aniso difference = 4.163e-17
+[FINITE] PASS: all seven point-Green columns carry unit total charge
+    max |Q-1| across columns = 4.441e-16
+[FINITE] PASS: all seven point-Green columns induce the same radial shell kernel per unit charge
+    max radial-profile difference = 1.110e-15
+[FINITE] PASS: all seven point-Green columns induce the same anisotropic orbit mode per unit charge
+    max orbit-mode difference = 2.220e-16
+[FINITE] PASS: all seven point-Green columns induce the same shell-mean exterior response per unit charge
+    max total-field difference = 2.602e-18, max anisotropic-field difference = 3.740e-18
+[FINITE] PASS: the anisotropic anchor amplitude obeys A_aniso = c_aniso * Q with one computed finite-lattice constant
+    c_aniso = 0.081435402995901
+[FINITE] PASS: self-contained c_aniso reproduces the registered reduced-shell constant
+    c_aniso = 0.081435402995901
+[FINITE] PASS: the admitted local O_h and finite-rank source-family comparators satisfy the same one-parameter reduced shell law
+    radial=5.551e-16, orbit=1.804e-16, shell=2.602e-18, aniso=1.952e-18, c_diff=4.163e-17
+[BOUNDED] PASS: on the reduced surface the sewing-shell law behaves like one isotropic shell density plus one cubic shear mode tied to total charge
+    c_aniso = 0.081435402995901
+
+========================================================================
+SUMMARY
+========================================================================
+PASS=10 FAIL=0 TOTAL=10
+All checks passed.
+----- stderr -----
+

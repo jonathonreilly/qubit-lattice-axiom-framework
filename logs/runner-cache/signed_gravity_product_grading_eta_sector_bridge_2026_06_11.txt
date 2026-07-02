@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py
-runner_sha256: f3b3041f622ac2b855f2ccdd07b37635282b481d3d0704e87ede41c844ed4add
+runner_sha256: 318b27626a9570b0ea9780a9f7843c8006ac22b305d2c74a668ec7648ff118bf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 ============================================================================
@@ -43,7 +43,7 @@ plus ONE twist datum -- no sign axiom
   [PASS] [T3] label table over a in {0, +/-0.1, +/-0.3, 0.49, 0.5, 0.7, 0.9} at Lambda = 20.5 matches exactly (chi quantized; branch conditions fail exactly at a = 0 and a = 1/2)
   [PASS] [T3] a = 0 (untwisted): h_delta = 1, label undefined (gap branch condition fails)
   [PASS] [T3] a = 1/2: spectrum reflection-symmetric, eta_delta = 0, label undefined
-  [PASS] [T3] closed floor formula eta=floor(Lambda-a)+1-floor(Lambda+a) matches direct spectral counts on tested cutoffs
+  [PASS] [T3] closed floor/fractional formula for eta matches direct spectral counts on tested cutoffs
   [PASS] [T3] uniform half-integer cutoff family Lambda in Z>=0+1/2 gives chi=+1 on (0,1/2) and chi=-1 on (-1/2,0) for sampled twists
   [PASS] [T3] non-half-integer cutoffs Lambda=20.25 and 20.75 are excluded by explicit counterexamples at |a|=0.30
 

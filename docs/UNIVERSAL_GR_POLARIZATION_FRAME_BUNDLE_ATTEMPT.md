@@ -95,6 +95,36 @@ The smallest missing object is now:
 That is the extra primitive required to turn the exact quotient kernel into a
 canonical Einstein/Regge dynamics law.
 
+## Downstream source-boundary firewall
+
+Allowed downstream uses of this packet are limited to:
+
+- cite the exact scalar observable generator;
+- cite the exact `3+1` kinematic lift on `PL S^3 x R`;
+- cite the exact tensor-valued variational candidate and unique symmetric
+  quotient-kernel checks on the finite prototype;
+- cite the exact rank-2 scalar-channel projector on lapse and spatial trace;
+- cite the obstruction that complement-channel localization coefficients
+  depend on valid polarization-frame choices.
+
+Forbidden downstream uses without a new retained bridge:
+
+- do not cite this packet as a canonical full polarization-frame bundle;
+- do not cite it as a canonical full projector bundle;
+- do not cite it as a curvature-localization operator `Pi_curv`;
+- do not cite it as an Einstein/Regge dynamics law;
+- do not cite it as a framework-level GR derivation;
+- do not cite it as an exhaustive no-go against all curvature-localization
+  routes;
+- do not promote the frame-orbit obstruction into a positive theorem without
+  supplying a distinguished covariant frame/projector bundle with connection.
+
+Re-audit should be triggered if a downstream row uses this packet as more
+than an open-gate blocker, scalar-channel support theorem, or associated
+localization-orbit diagnostic. The missing retained bridge is still a
+covariant `3+1` polarization-frame/projector bundle equipped with a
+distinguished connection or horizontal distribution on the complement.
+
 ## Honest status
 
 The current direct universal route is:
@@ -106,3 +136,15 @@ The current direct universal route is:
 
 This is the sharpest exact statement currently available on the universal
 route.
+
+## Audit dependency repair links
+
+This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
+
+- [observable_principle_from_axiom_note](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
+- [s3_anomaly_spacetime_lift_note](S3_ANOMALY_SPACETIME_LIFT_NOTE.md)
+- [universal_gr_tensor_variational_candidate_note](UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md)
+- [universal_gr_tensor_quotient_uniqueness_note](UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md)
+- [universal_gr_tensor_action_blocker_note](UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md)
+- [universal_gr_curvature_localization_blocker_note](UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md)
+- [universal_gr_polarization_frame_bundle_blocker_note](UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md)

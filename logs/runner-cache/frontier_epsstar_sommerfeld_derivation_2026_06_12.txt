@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/frontier_epsstar_sommerfeld_derivation_2026_06_12.py
+runner_sha256: bf7a84215a3d15c889535de221621af177df540d11e008f71724d9044b43cebd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.18
+status: ok
+----- stdout -----
+eps* T=0/Sommerfeld boundary verifier
+landed anchor: q=24, GL=160; PT cell: Q=24, Ly=2, N=48, GL=20; T0 surface eta=0.05
+
+S0 ANCHOR GATES
+LANDED_ROOT m=0.000 T=0.200 mu=1.699119804762 frozen=1.708600000000 abs_delta=9.480195238500e-03
+PASS: S0 landed 1.7086-adjacent finite-flux root :: abs_delta=9.480e-03, tol=1.5e-02
+PT_ROOT m=0.000 T=0.200 mu=1.631150561591 frozen=1.631150561591 abs_delta=4.554134847012e-13 interband=-8.887936149151e-01
+PASS: S0 PT m=0,T=0.2 root reproduces the fixed GL=20 anchor :: abs_delta=4.554e-13, tol=1.0e-09
+PASS: S0 anti-fabrication: PT interband term is nonzero at the root :: |interband|=8.888e-01, min=1.0e-01
+ROOT_GRID m=0.000 T=0.150 mu*_PT=1.618806032391 chi=+4.857e-17 interband=-8.387e-01
+ROOT_GRID m=0.200 T=0.150 mu*_PT=1.628545410087 chi=-1.370e-15 interband=-1.194e+00
+ROOT_GRID m=0.300 T=0.150 mu*_PT=1.640634116824 chi=-2.050e-15 interband=-1.610e+00
+ROOT_GRID m=0.500 T=0.150 mu*_PT=1.678720703286 chi=-2.914e-16 interband=-2.842e+00
+ROOT_GRID m=0.000 T=0.200 mu*_PT=1.631150561591 chi=+1.010e-15 interband=-8.888e-01
+ROOT_GRID m=0.200 T=0.200 mu*_PT=1.640625324075 chi=+8.622e-16 interband=-1.344e+00
+ROOT_GRID m=0.300 T=0.200 mu*_PT=1.652415056815 chi=+1.721e-15 interband=-1.840e+00
+ROOT_GRID m=0.500 T=0.200 mu*_PT=1.689750211078 chi=-5.846e-16 interband=-3.273e+00
+ROOT_GRID m=0.000 T=0.300 mu*_PT=1.664039218982 chi=-2.321e-15 interband=-1.069e+00
+ROOT_GRID m=0.200 T=0.300 mu*_PT=1.673191914374 chi=+1.266e-16 interband=-2.015e+00
+ROOT_GRID m=0.300 T=0.300 mu*_PT=1.684568044578 chi=-1.334e-15 interband=-2.785e+00
+ROOT_GRID m=0.500 T=0.300 mu*_PT=1.720502977869 chi=+2.224e-15 interband=-4.755e+00
+ROOT_GRID m=0.000 T=0.400 mu*_PT=1.707819786686 chi=-2.153e-15 interband=-1.297e+00
+ROOT_GRID m=0.200 T=0.400 mu*_PT=1.716167302649 chi=-3.848e-15 interband=-2.978e+00
+ROOT_GRID m=0.300 T=0.400 mu*_PT=1.726544950735 chi=+3.076e-15 interband=-4.071e+00
+ROOT_GRID m=0.500 T=0.400 mu*_PT=1.759343199336 chi=+1.006e-16 interband=-6.552e+00
+EPS_ANCHOR T=0.200 eps*=1.624656494801 frozen=1.624700000000 abs_delta=4.350519860963e-05
+PASS: S0 landed eps*(0.2)=1.6247 anchor :: abs_delta=4.351e-05, tol=1.0e-03
+
+S1 T=0 FERMI-SURFACE BRANCH
+T0_BRANCH interval=[1.48,1.56] R(lo)=-1.530216759472e+01 R(hi)=+6.629853358390e+00 final_bracket=(-1.421085471520e-14,+4.263256414561e-14) mu0_surface=1.515550712171 R(mu0)=+4.263256414561e-14
+PASS: D1 fixed T=0 surface branch contains a response sign change :: mu0=1.515550712171, branch=[1.48,1.56]
+D1_LOW_T_ROOTS T=0.100:mu=1.576146132255 T=0.150:mu=1.618806032391 T=0.200:mu=1.631150561591
+D1_EXTRAP mu(T)=a+bT^2+cT^4: a=1.521712784578 b=6.345798215133 c=-90.246344745691; linear_T2_residual_scale=1.304018284169e-02; |a-mu0_surface|=6.162072407732e-03
+PASS: D1 T->0 quadratic extrapolation matches the fixed T=0 surface branch :: delta=6.162e-03, tol=1.5e-02
+
+S2 SOMMERFELD COEFFICIENT
+D2_MU2_FIT T=0.100:mu=1.576146132255 T=0.150:mu=1.618806032391 T=0.200:mu=1.631150561591 T=0.250:mu=1.645930351011
+D2_COEFF measured_d_m0=3.877078419951 fit_c=2.487775722248 max_rel_residual=1.737165085183e-02; alpha_analytic=-9.266358431847 R0_prime=2.557860549618e+02 C_T2=7.819617146790e+02 rel_mismatch=3.390036369696e+00
+PASS: D2 NEGATIVE: fixed Sommerfeld alpha has opposite sign from measured d :: measured_d=3.877e+00, alpha=-9.266e+00, margin=1.0e+00
+PASS: D2 NEGATIVE: analytic-vs-measured mismatch exceeds fixed 200% floor :: rel_mismatch=3.390e+00, floor=2.0e+00
+
+S3 WAVE-10 REGRESSION CROSS-CHECK
+EPS_TABLE T=0.150 eps*=1.612643530678 collapse_spread=1.250315999130e-02
+EPS_TABLE T=0.200 eps*=1.624656494801 collapse_spread=1.297701724708e-02
+EPS_TABLE T=0.300 eps*=1.657294308376 collapse_spread=1.328682851332e-02
+EPS_TABLE T=0.400 eps*=1.699862096939 collapse_spread=1.531136135402e-02
+D3_COEFF wave10_d=2.098439570228 eps2_fit_c=2.555130272657 eps2_max_rel_residual=9.592103586267e-04; alpha_analytic=-9.266358431847 wave_vs_alpha_rel_mismatch=5.415832870917e+00; m0_d_vs_wave10_d_rel=4.587575119889e-01
+PASS: D3 NEGATIVE: wave-10 d is not consistent with fixed alpha :: rel_mismatch=5.416e+00, floor=4.0e+00
+
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

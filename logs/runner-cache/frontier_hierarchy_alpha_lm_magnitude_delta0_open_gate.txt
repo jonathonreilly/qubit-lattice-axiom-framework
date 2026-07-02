@@ -3,7 +3,7 @@ runner: scripts/frontier_hierarchy_alpha_lm_magnitude_delta0_open_gate.py
 runner_sha256: 98c57bb196eea34d6d034f7b4381ba243f21b6ddb423d82e7af34e86404911f8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.65
 status: ok
 ----- stdout -----
 

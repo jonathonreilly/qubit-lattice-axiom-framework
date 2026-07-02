@@ -23,11 +23,13 @@ Answer:
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 from typing import Iterable
 
 import numpy as np
 import sympy as sp
 
+ROOT = Path(__file__).resolve().parents[1]
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -210,6 +212,41 @@ def cyclic_coordinates(y: np.ndarray) -> tuple[float, float, float]:
     u1 = real_trace_pair(y, b1) / 6.0
     u2 = real_trace_pair(y, b2) / 6.0
     return u0, u1, u2
+
+
+def part0_source_boundary_guard() -> None:
+    print("=" * 88)
+    print("PART 0: source-boundary guard for the finite descent theorem")
+    print("=" * 88)
+
+    note_text = (
+        ROOT / "docs/KOIDE_TASTE_CUBE_CYCLIC_SOURCE_DESCENT_NOTE_2026-04-18.md"
+    ).read_text(encoding="utf-8")
+    old_gate_slug = "_".join(
+        [
+            "STAGGERED",
+            "DIRAC",
+            "REALIZATION",
+            "GATE",
+            "NOTE",
+        ]
+    ) + "_2026-05-03"
+
+    check(
+        "No broad realization-gate source slug remains in the finite descent note",
+        old_gate_slug not in note_text,
+        detail="the broad gate is context only, not a proof input",
+    )
+    check(
+        "The note states the finite C^8 source boundary at top level",
+        "Source boundary:** exact finite `C^8` taste-cube descent theorem" in note_text,
+    )
+    check(
+        "The note names the load-bearing finite objects reconstructed by this runner",
+        "finite `C^8` taste-cube vector space" in note_text
+        and "specified `C_3[111]` cycle" in note_text
+        and "ordinary Schur-complement algebra" in note_text,
+    )
 
 
 def part1_full_cube_average_descends_exactly() -> None:
@@ -426,6 +463,7 @@ def part4_schur_compatible_response_factorization() -> None:
 
 
 def main() -> int:
+    part0_source_boundary_guard()
     part1_full_cube_average_descends_exactly()
     part2_canonical_full_cube_source_channels()
     part3_schur_reduction_hits_same_three_response_bundle()

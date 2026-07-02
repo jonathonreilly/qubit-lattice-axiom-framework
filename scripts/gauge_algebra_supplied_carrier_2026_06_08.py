@@ -100,7 +100,7 @@ def main() -> int:
         "2026-06-16 Post-Audit Conditional Boundary" in note_text
         and "do **not** prove that this dim-12 subalgebra is unique against the full `u(6)`" in note_flat
         and "do not derive `MR_color`" in note_flat
-        and "supplied carrier + supplied weak-axis/fiber split + supplied Gauss/link rules" in note_flat,
+        and "supplied carrier + supplied weak-axis/fiber split + retained-bounded local-frame link-connection kinematics" in note_flat,
     )
     I2 = np.eye(2, dtype=complex)
     X = np.array([[0,1],[1,0]], complex); Y = np.array([[0,-1j],[1j,0]], complex); Z = np.array([[1,0],[0,-1]], complex)
@@ -196,7 +196,7 @@ def main() -> int:
         "the missing selection of the factor-preserving algebra rather than u(6) is exactly the supplied "
         "factor-locality/MR_color premise. The carrier factorization itself is a SUPPLIED realization (cited "
         "to GRAPH_FIRST_SU3_INTEGRATION / CL3_COLOR_AUTOMORPHISM / QUBIT_LINK_U2 [bounded/pending] + the "
-        "weak-axis selection + the link-connection convention), NOT derived from the Lattice, Quantum, and Record axioms. "
+        "weak-axis selection, with retained-bounded local-frame link-connection kinematics), NOT derived from the Lattice, Quantum, and Record axioms. "
         "The GAUGING selection -- which symmetry is dynamically gauged, MR_color, chiral su(2)_L -- is an "
         "OPEN GATE: both su(2) and su(3) act irreducibly and admit the same Gauss/dressing structure. So "
         "this is conditional algebra support, NOT a from-axioms derivation. Audit lane sets the verdict."

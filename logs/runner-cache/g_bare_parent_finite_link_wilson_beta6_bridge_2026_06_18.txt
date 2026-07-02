@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/g_bare_parent_finite_link_wilson_beta6_bridge_2026_06_18.py
+runner_sha256: 6da507701ceea7dc0d4076d9ffdb03f4c6be419cb2ac983cdf02f50bf4f40bb0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+G_BARE parent finite-link/Wilson beta=6 bridge check
+==============================================================================
+[PASS] bridge note exists (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md)
+[PASS] parent note exists (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_DERIVATION_NOTE.md)
+[PASS] finite-link rigidity note exists (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/G_BARE_RIGIDITY_THEOREM_NOTE.md)
+[PASS] Wilson small-a note exists (/private/tmp/cl3-review-openprs-pgPvx7/repo/docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md)
+
+Source-boundary checks
+------------------------------------------------------------------------------
+[PASS] bridge contains marker: set only by the independent audit lane
+[PASS] bridge contains marker: same scalar slot
+[PASS] bridge contains marker: finite-link canonical Wilson surface
+[PASS] bridge contains marker: does not claim:
+[PASS] bridge contains marker: Wilson plaquette action-surface selection
+[PASS] bridge contains marker: global logarithm-branch selection
+[PASS] bridge contains marker: a dynamical fixed point
+[PASS] bridge contains marker: an audit verdict or any effective-status promotion
+[PASS] bridge omits forbidden marker: effective_status:
+[PASS] bridge omits forbidden marker: audit_status:
+
+Dependency-surface checks
+------------------------------------------------------------------------------
+[PASS] parent contains marker: G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md
+[PASS] parent contains marker: G_BARE_RIGIDITY_THEOREM_NOTE.md
+[PASS] parent contains marker: WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md
+[PASS] parent contains marker: No step uses `beta = 6` as a premise for `g_bare = 1`.
+[PASS] parent omits forbidden marker: beta_canonical
+[PASS] rigidity contains marker: finite-link
+[PASS] rigidity contains marker: no independent scalar-normalization freedom
+[PASS] rigidity contains marker: g_bare = 1
+[PASS] Wilson contains marker: beta * g_bare^2 = 2 N_c
+[PASS] Wilson contains marker: beta = 2 N_c / g_bare^2
+[PASS] Wilson contains marker: does not derive that the framework must select the Wilson action surface
+
+Exact arithmetic checks
+------------------------------------------------------------------------------
+[PASS] finite-link scalar slot gives g_link^2 = 1
+[PASS] Wilson scalar slot is identified with finite-link slot
+[PASS] beta = 2 N_c / g^2 gives beta = 6 at N_c=3 (beta=6)
+[PASS] product beta*g^2 = 2 N_c
+[PASS] positive branch gives g_bare = 1 from g_bare^2 = 1
+[PASS] noncanonical g^2=1/2 would not give beta=6 (beta=12)
+[PASS] noncanonical g^2=2 would not give beta=6 (beta=3)
+[PASS] noncanonical g^2=9/4 would not give beta=6 (beta=8/3)
+
+Scalar-slot model checks
+------------------------------------------------------------------------------
+[PASS] bridge contains marker: U = exp(i A^a T_a a)
+[PASS] bridge contains marker: U_P = exp(i a^2 g_bare F^a T_a + O(a^3))
+[PASS] bridge contains marker: g_bare = s = 1
+[PASS] bridge contains marker: The bridge would fail if
+
+Summary
+------------------------------------------------------------------------------
+TOTAL: PASS=37 FAIL=0
+Bridge check passed.
+
+----- stderr -----
+

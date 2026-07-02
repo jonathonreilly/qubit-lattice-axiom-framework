@@ -46,7 +46,8 @@ Checked legs (each PASS/FAIL):
   G6  hostile within-orbit order probe f(k, x) = [k == 1] * x -- violates the
       per-record orbit-constancy identity r_k(delta) = r_{sigma(k)}(-delta)
   H1  source-scope hygiene: the paired note names P-dep as an explicit
-      conditional premise and does not claim Record derives it
+      conditional premise, tags the load-bearing B1 factorization claim itself
+      as conditional on P-dep, and does not claim Record derives P-dep
 
 Prints one line per check and a final `TOTAL: PASS=N FAIL=0` scorecard.
 No randomness-dependent acceptance: violations must be witnessed for EVERY
@@ -359,6 +360,9 @@ required_markers = [
     "does **not** derive P-dep from the Record axiom",
     "not a new axiom",
     "not an approved primitive premise",
+    # the load-bearing factorization claim itself is tagged conditional on P-dep
+    "factorization / upper bound, conditional on P-dep",
+    "without it B1 is not a factorization theorem",
 ]
 forbidden_markers = [
     "P-dep is a reading of the Record boundary, not an extra import",

@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/anomaly_forces_time_premise_manifest_recheck_2026_06_17.py
+runner_sha256: 54b22d17336a4ace2d4b1fa129c53a80e093ba3eeb0d2c66c78e4295ec543cd4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PROVENANCE MANIFEST (input -> supplier):
+    d_s = 3 (Z^3 substrate)                          <- AXIOM:Lattice (GC operates on it; not GC-derived)
+    nonabelian SU(2)xSU(3) graph-first               <- RETAINED_SOURCE:native_gauge_closure (NONABELIAN ONLY)
+    abelian LH eigenvalue spectrum {+1/3 x6,-1 x2}   <- RETAINED_SOURCE:native_gauge_left_handed_abelian_surface_bounded
+    Y_like == anomaly-relevant U(1)_Y                <- PREMISE:P-HY
+    LH hypercharge values Y(Q)=+1/3,Y(L)=-1          <- PREMISE:P-HY
+    RH completion (4/3,-2/3,-2,0)                    <- PREMISE:P-COMP (SM branch = exact witness only)
+    ABJ anomaly => non-closure                       <- PREMISE:P-ABJ (standard external result)
+    staggered eps == Clifford chirality              <- PREMISE:P-REC
+    Clifford chirality exists iff d even             <- RETAINED_SOURCE:clifford_volume_chirality_even_dimension
+
+BLOCK [GC-SCOPE]: native_gauge_closure credited only for nonabelian content
+  [PASS] native_gauge_closure tag(s) are NONABELIAN-only (no hypercharge/abelian credit)
+  [PASS] hypercharge values are PREMISE (P-HY/P-COMP), not RETAINED_SOURCE
+
+BLOCK [B1]: LH-only anomaly traces (nonzero => chiral inconsistency under P-ABJ)
+  [PASS] Tr[Y^3]      == -16/9
+  [PASS] Tr[SU3^2 Y]  == +1/3
+  [PASS] Tr[SU3^3]    == +2
+  [PASS] Tr[SU2^2 Y]  == 0
+  [PASS] Tr[Y] (grav) == 0
+BLOCK [B3]: P-COMP completion (4/3,-2/3,-2,0) cancels ALL six anomalies
+  [PASS] full-set SU(3)^3       == 0
+  [PASS] full-set SU(3)^2 U(1)  == 0
+  [PASS] full-set SU(2)^2 U(1)  == 0
+  [PASS] full-set U(1)^3        == 0
+  [PASS] full-set grav^2 U(1)   == 0
+BLOCK [B5]: chirality anticommutes with all gammas IFF d even (finite diagnostic)
+  [PASS] d=2: gamma_5 anticommutes-with-all == True (even-d)
+  [PASS] d=3: gamma_5 anticommutes-with-all == False (even-d)
+  [PASS] d=4: gamma_5 anticommutes-with-all == True (even-d)
+  [PASS] d=5: gamma_5 anticommutes-with-all == False (even-d)
+BLOCK [B6]: with d_s=3 (Lattice axiom) and d even -> d_t odd in {1,3,5,...}
+  [PASS] d_s=3 + (d_s+d_t even) => d_t odd
+SCOPE: bridge yields d_t in {odd positives}; the d_t=1 pin is the one-time-dimension open gate, NOT claimed here.
+
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
-"""Conditional bounded arithmetic runner for beta * g_bare^2 = 2 N_c.
+"""Abstract joint-rescaling algebra runner for beta * g_bare^2 = 2 N_c.
 
 This runner supports
-docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md.
-It verifies, at exact rational precision, that once the Wilson
-action-surface matching premise
+docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md
+after the 2026-06-20 abstract-algebra narrowing.
 
-    WM: beta = 2 N_c / g_bare^2
+The load-bearing content is the abstract joint-rescaling algebra: on
+abstract symbolic variables (g, N) with g > 0, defining the rational
+function beta(g, N) := 2 N / g^2, the product beta * g^2 = 2 N is invariant
+under the abstract joint rescaling (g, beta) -> (g/c, c^2 * beta). Naming
+the abstract variables (g, N) = (g_bare, N_c) is a symbolic relabeling only.
 
-is assumed explicitly, the product beta * g_bare^2 is invariant under the
-joint rescaling beta -> c^2 beta and g_bare^2 -> g_bare^2 / c^2.
-
-The runner deliberately does not treat any Ward-route coupling-closure
-note as a Wilson-matching authority. The algebraic core is cross-checked
-against the already audited abstract polynomial identity note, while the
-generator-basis interpretation is bounded by the scoped rescaling note.
+The runner verifies this abstract identity at exact rational precision. It
+does NOT assert the physical Wilson action-surface induction
+T_a -> c T_a => (g_bare^2 -> g_bare^2/c^2, beta -> c^2 beta); that induction
+is the OPEN bridge requiring the named retained authority, not supplied by
+this row. The runner therefore also checks that the row's narrowed scope
+quarantines the physical Wilson-surface reading as open, and that the scoped
+rescaling note (now a Gram-only lemma) does not supply the beta-routing.
 """
 
 from __future__ import annotations
@@ -61,20 +64,19 @@ def normalized(text: str) -> str:
     return text.replace("β", "beta").replace("²", "^2").replace("·", "*")
 
 
-def beta_from_wm(n_c: Fraction, g_bare_sq: Fraction) -> Fraction:
+def beta_from_naming(n_c: Fraction, g_bare_sq: Fraction) -> Fraction:
+    """Abstract definition beta(g_bare, N_c) = 2 N_c / g_bare^2 (symbolic naming)."""
     return Fraction(2) * n_c / g_bare_sq
 
 
 def check_note_structure() -> None:
-    section("note structure and repaired scope")
+    section("note structure and narrowed (abstract-algebra) scope")
     required = [
-        "Claim type:** bounded support note",
-        "Type:** conditional / support",
-        "explicitly conditional arithmetic lemma",
-        "WM:  β = 2 N_c / g_bare²",
-        "not imported from any Ward-route coupling-closure note",
-        "BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10",
-        "G_BARE_RESCALING_FREEDOM_REMOVAL_THEOREM_NOTE_2026-05-03",
+        "Abstract Joint-Rescaling Algebra Lemma",
+        "abstract-algebra\nnarrowing: 2026-06-20",
+        "Status authority:** independent audit lane only",
+        "abstract joint-rescaling algebra",
+        "symbolic relabeling only",
         "conditional bounded arithmetic lemma",
         "fractions.Fraction",
     ]
@@ -85,23 +87,26 @@ def check_note_structure() -> None:
         )
 
     forbidden = [
-        "Claim type:** bounded_theorem",
-        "Type:** bounded_theorem",
         "Proposal allowed:",
         "source-note proposal only",
         "G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18",
         "carried by G_BARE_TWO_WARD_CLOSURE",
-        "supplies the Wilson small-`a` matching relation",
         "canonical `g_bare² = 1` value carried",
-        "is a retained conclusion of this row",
         "Wilson matching is proved here",
     ]
     for marker in forbidden:
+        ok = marker not in NOTE_TEXT and marker not in NOTE_FLAT
         check(
             f"forbidden old authority/framing absent: {marker[:54]}",
-            marker not in NOTE_TEXT and marker not in NOTE_FLAT,
-            "" if marker not in NOTE_TEXT and marker not in NOTE_FLAT else "found",
+            ok,
+            "" if ok else "found",
         )
+
+    # Firewall: g_bare physical value must not be asserted as derived.
+    norm = normalized(NOTE_TEXT)
+    for marker in ["g_bare = 1 follows", "derives g_bare = 1", "g_bare = 1 is forced"]:
+        ok = marker not in norm
+        check(f"no g_bare=1 derivation claim: {marker}", ok, "" if ok else "found")
 
     forbidden_framing = [
         "continuum-limit class",
@@ -114,15 +119,55 @@ def check_note_structure() -> None:
         if marker == "promote any status row":
             check("boundary says no status promotion", marker in NOTE_FLAT.lower())
         else:
+            ok = marker.lower() not in lower
             check(
                 f"forbidden framing absent: {marker}",
-                marker.lower() not in lower,
-                "" if marker.lower() not in lower else "found",
+                ok,
+                "" if ok else "found",
             )
 
 
+def check_narrowing_to_abstract_algebra() -> None:
+    section("narrowing: physical Wilson-surface induction quarantined as open")
+    # The load-bearing content is the abstract joint-rescaling algebra; the
+    # physical Wilson-action-surface induction is the open bridge and is NOT
+    # supplied here.
+    check(
+        "2026-06-20 repair section present",
+        "2026-06-20 Narrowing (abstract joint-rescaling algebra)"
+        in NOTE_TEXT,
+    )
+    check(
+        "abstract joint-rescaling algebra named as load-bearing",
+        "abstract joint-rescaling algebra" in NOTE_FLAT
+        and "load-bearing content" in NOTE_FLAT,
+    )
+    check(
+        "physical Wilson action-surface induction marked open / not supplied",
+        "physical Wilson-surface reading therefore remains" in NOTE_FLAT
+        and "not supplied" in NOTE_FLAT.replace("**", ""),
+    )
+    check(
+        "open bridge names the T_a -> c T_a Wilson-surface induction",
+        "generator-basis rescaling `T_a -> c · T_a` actually" in NOTE_TEXT
+        or "induces `g_bare² -> g_bare²/c²` and `β -> c²·β` *on the Wilson plaquette"
+        in NOTE_TEXT,
+    )
+    check(
+        "WM kept as symbolic naming only, not physical action-surface statement",
+        "symbolic naming" in NOTE_FLAT
+        and "As a *physical* Wilson action-surface matching statement it is not proved"
+        in NOTE_TEXT,
+    )
+    check(
+        "physical Wilson-surface interpretation stated conditional and open",
+        "physical Wilson-surface interpretation therefore remains" in NOTE_FLAT
+        and "conditional and open" in NOTE_FLAT,
+    )
+
+
 def check_dependencies_exist_and_are_scoped() -> None:
-    section("dependency files and scoped authority checks")
+    section("load-bearing dependency and reader-context file checks")
     for path in [ABSTRACT_IDENTITY_PATH, RESCALING_PATH]:
         check(f"dependency exists: docs/{path.name}", path.exists())
 
@@ -149,54 +194,48 @@ def check_dependencies_exist_and_are_scoped() -> None:
         or "beta * g^2" in abstract_norm,
     )
 
+    # The scoped rescaling note is reader-context only and (after its own
+    # 2026-06-16 gram-only narrowing) does NOT supply the beta-routing that
+    # would constitute the open physical Wilson-surface induction.
     rescaling = RESCALING_PATH.read_text()
-    rescaling_norm = normalized(rescaling)
+    rescaling_flat = re.sub(r"\s+", " ", rescaling)
+    rescaling_lower = rescaling_flat.lower()
     check(
-        "rescaling note explicitly treats Wilson matching as an input",
-        "WM** is the scoped Wilson matching relation" in rescaling
-        or "Wilson matching is an explicit scoped assumption" in rescaling
-        or "matching relation are scoped inputs" in rescaling,
-    )
-    check(
-        "rescaling note does not claim to derive Wilson matching",
-        "does not derive Wilson matching" in rescaling
-        or "not retained conclusions proved here" in rescaling,
-    )
-    check(
-        "rescaling note carries T_a -> c T_a map",
+        "reader-context rescaling note carries T_a -> c T_a scalar rescaling map",
         "T_a -> c" in rescaling
         or "T_a → c" in rescaling
         or "c * T_a" in rescaling
-        or "c T_a" in rescaling,
+        or "c T_a" in rescaling
+        or "(c T_a)" in rescaling,
     )
     check(
-        "rescaling note carries beta -> c^2 beta under scoped WM",
-        "c^2 * beta" in rescaling_norm
-        or "c^2 beta" in rescaling_norm
-        or "c^2 * (2 N_c" in rescaling_norm,
+        "rescaling note does NOT supply the beta-routing (open bridge stays open)",
+        "is no longer a beta-routing lemma" in rescaling_lower
+        and "normalization theorem not supplied by this row" in rescaling_flat
+        and "does not derive any `beta_new / beta_old`" in rescaling_flat,
+    )
+    check(
+        "rescaling note does not claim to derive Wilson matching / action-surface uniqueness",
+        "Wilson matching is not consumed by the narrowed lemma" in rescaling_flat
+        and "does not prove action-surface uniqueness" in rescaling_flat,
     )
 
 
 def check_explicit_premise_firewall() -> None:
-    section("explicit Wilson-matching premise firewall")
+    section("symbolic-naming / Wilson-surface firewall")
     norm = normalized(NOTE_TEXT)
     check(
-        "WM is stated as an assumption, not a theorem",
-        "Wilson action-surface matching premise" in NOTE_TEXT
-        and "not proved here" in NOTE_TEXT,
+        "physical WM stated as not proved here",
+        "is not proved\nhere" in NOTE_TEXT or "is not proved here" in NOTE_FLAT,
     )
     check(
         "WM formula is present in normalized text",
-        "WM:  beta = 2 N_c / g_bare^2" in norm
-        or "WM: beta = 2 N_c / g_bare^2" in norm,
+        "WM: beta = 2 N_c / g_bare^2" in norm or "WM:  beta = 2 N_c / g_bare^2" in norm,
     )
     check(
-        "Ward-route closure is not a load-bearing authority",
-        "No Ward-route coupling-closure result is used as authority for `WM`" in NOTE_FLAT,
-    )
-    check(
-        "physical interpretation remains conditional",
-        "physical Wilson-surface interpretation remains conditional on `WM`" in NOTE_FLAT,
+        "Ward-route closure is not a load-bearing authority for the Wilson reading",
+        "No Ward-route coupling-closure result is used as authority for the Wilson reading"
+        in NOTE_FLAT,
     )
 
 
@@ -204,10 +243,10 @@ def check_arithmetic_identity_table() -> None:
     section("representative exact rational table at N_c = 3, g_bare^2 = 1")
     n_c = Fraction(3)
     q = Fraction(1)
-    beta = beta_from_wm(n_c, q)
+    beta = beta_from_naming(n_c, q)
     target = 2 * n_c
-    check("assuming WM gives beta = 6 at representative q=1", beta == 6, str(beta))
-    check("assuming WM gives beta * q = 2 N_c", beta * q == target, str(beta * q))
+    check("abstract naming gives beta = 6 at representative q=1", beta == 6, str(beta))
+    check("abstract naming gives beta * q = 2 N_c", beta * q == target, str(beta * q))
 
     expected_pairs = {
         Fraction(1, 2): (Fraction(3, 2), Fraction(4)),
@@ -243,7 +282,7 @@ def check_arithmetic_identity_table() -> None:
 
 
 def check_arbitrary_positive_rational_instances() -> None:
-    section("conditional identity for arbitrary positive rational g_bare^2")
+    section("abstract joint-rescaling invariance for arbitrary positive rational g^2")
     n_c_values = [Fraction(3), Fraction(5), Fraction(7, 2)]
     q_values = [Fraction(1), Fraction(3, 4), Fraction(5, 7), Fraction(11, 13), Fraction(1, 100)]
     c_values = [Fraction(1, 2), Fraction(1), Fraction(2), Fraction(3), Fraction(7, 5)]
@@ -251,9 +290,9 @@ def check_arbitrary_positive_rational_instances() -> None:
     for n_c in n_c_values:
         target = 2 * n_c
         for q in q_values:
-            beta = beta_from_wm(n_c, q)
+            beta = beta_from_naming(n_c, q)
             check(
-                f"WM product at N_c={n_c}, g_bare^2={q}",
+                f"abstract product at N_c={n_c}, g^2={q}",
                 beta * q == target,
                 f"product={beta * q}",
             )
@@ -272,7 +311,7 @@ def check_boundary_clauses() -> None:
     section("boundary clauses present")
     boundaries = [
         "conditional bounded arithmetic lemma only",
-        "Wilson matching `β = 2 N_c / g_bare²` from the framework axioms",
+        "physical Wilson action-surface induction",
         "Wilson plaquette action selector",
         "any retention or promotion",
         "Ward-route coupling-closure theorem carries the Wilson matching",
@@ -288,6 +327,7 @@ def check_boundary_clauses() -> None:
 def main() -> int:
     print("frontier_beta_gbare_squared_rescaling_invariance.py")
     check_note_structure()
+    check_narrowing_to_abstract_algebra()
     check_dependencies_exist_and_are_scoped()
     check_explicit_premise_firewall()
     check_arithmetic_identity_table()
@@ -296,13 +336,11 @@ def main() -> int:
     print()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
-        print(
-            "VERDICT: conditional bounded arithmetic lemma passes; assuming WM,"
-        )
-        print(
-            "beta * g_bare^2 = 2 N_c is invariant under the scoped joint rescaling"
-        )
-        print("for c in {1/2, 1, 2, 3} at exact rational precision.")
+        print("VERDICT: abstract joint-rescaling algebra lemma passes; with the abstract")
+        print("naming (g, N) = (g_bare, N_c), beta * g_bare^2 = 2 N_c is invariant under")
+        print("the abstract joint rescaling for c in {1/2, 1, 2, 3} at exact rational")
+        print("precision; the physical Wilson-action-surface induction is the open bridge")
+        print("and is not asserted.")
     return 0 if FAIL == 0 else 1
 
 

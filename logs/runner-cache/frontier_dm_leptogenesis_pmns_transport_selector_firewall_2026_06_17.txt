@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_pmns_transport_selector_firewall_2026_06_17.py
+runner_sha256: 95b3bbf995fbddfa9e672cf01f7e7a8fa7cdc8be41b513fb4ea8e8a4bfdd99bc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.02
+status: ok
+----- stdout -----
+DM leptogenesis PMNS transport selector firewall
+PASS: parent endpoint interval brackets eta/eta_obs = 1 -- seed=0.719082664368, overshoot=1.052220313050
+PASS: linear crossing root lies in the open interval -- lambda=0.843247038405
+PASS: linear crossing evaluates exactly to the target level -- value=1.000000000000
+PASS: a different supplied overshoot endpoint gives a different root -- root=0.843247038405, alternate=0.529116901594
+PASS: the equality point is target-defined unless an independent selector is supplied
+PASS: firewall forbids using the observed comparator as the selector
+PASS: firewall preserves future positive selector routes
+PASS: parent cites the selector firewall companion
+PASS: parent scopes the exact root as diagnostic rather than selected
+PASS: parent keeps the bounded interval support claim
+PASS: parent out-of-scope list rejects lambda-star selection
+PASS: companion claims no audit status authority
+PASS=12 FAIL=0
+
+----- stderr -----
+

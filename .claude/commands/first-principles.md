@@ -10,10 +10,11 @@ Run `/framework-refresher` first if you have not this session.
 
 ## Allowed Starting Points (nothing else)
 
-1. **The three axioms** — Lattice, Quantum, Record — as stated in the current
-   minimal-axioms memo (resolve via `docs/audit/data/axiom_premise_nodes.json`
-   → `minimal_axioms.current_path`). Each memo section's "does not supply"
-   exclusion list is binding.
+1. **The four axioms** — Lattice, Qubit, Admissibility, Record — as stated in
+   the current minimal-axioms memo (resolve via
+   `docs/audit/data/axiom_premise_nodes.json` →
+   `minimal_axioms.current_path`). The memo's exclusion lists and downstream
+   boundary sections are binding.
 2. **Approved primitives** registered in
    `docs/audit/data/axiom_premise_nodes.json`, used strictly within what their
    source notes grant (run

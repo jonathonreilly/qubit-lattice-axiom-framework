@@ -26,9 +26,10 @@ not promote any downstream theorem.
   retained `C_3`-equivariant Hermitian circulant `H = aI + bC + b̄C²`
   on `hw=1 ≅ ℂ³`. Renaming captured in
   [`KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md`](KOIDE_BAE_PROBE_WILSON_DIMENSIONAL_CONSISTENCY_BOUNDED_NOTE_2026-05-09_probe26.md).
-- **`P`** = radian-bridge primitive. Per
+- **`P`** = radian-bridge primitive. The current repaired
   [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-  §4: the identification of the dimensionless character-algebra ratio
+  is formal-only and does not carry `P`; the historical pre-repair route used
+  `P` for the identification of the dimensionless character-algebra ratio
   `2/d² = 2/9` with the literal radian value `2/9 rad`.
 - **Probe 24 finding**: `P` and the BAE-level "magic angle" admission
   `φ = 2/9 rad` are the same primitive
@@ -656,7 +657,8 @@ Target: `=== TOTAL: PASS=N, FAIL=0 ===`.
 - [`KOIDE_SELECTED_LINE_LOCAL_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`](KOIDE_SELECTED_LINE_LOCAL_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md)
   — local CP¹ Berry packet is too small
 - [`KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md`](KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md)
-  §4 — names primitive `P`
+  — current repaired note is formal-only; it is not the live authority for
+  primitive `P`
 - [`AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md`](AXIOM_FIRST_MICROCAUSALITY_LIEB_ROBINSON_THEOREM_NOTE_2026-05-01.md)
   — `v_LR = 2erJ` retained form
 - [`PHYSICAL_LATTICE_NECESSITY_NOTE.md`](PHYSICAL_LATTICE_NECESSITY_NOTE.md)

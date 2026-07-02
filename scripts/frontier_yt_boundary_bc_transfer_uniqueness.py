@@ -310,16 +310,26 @@ log("SECTION 0: Source-boundary checks")
 log("=" * 78)
 log()
 note_text = NOTE.read_text(encoding="utf-8")
+note_flat = " ".join(note_text.split())
 check(
     "section0_2026_06_07_boundary_present",
     "2026-06-07 Implementation-Input Boundary Retargeting" in note_text,
     "source note carries the implementation-input retargeting section",
 )
 check(
+    "section0_source_status_is_conditional_support",
+    "**Claim type:** bounded_theorem" in note_text
+    and "**Type:** bounded_theorem" in note_text
+    and "conditional finite-grid implementation diagnostic only" in note_flat
+    and "not a continuum uniqueness theorem, physical BC-transfer theorem" in note_flat
+    and "No new axiom, retained bridge, downstream status, ledger tag, or publication" in note_flat,
+    "source type/status matches the finite-grid implementation boundary",
+)
+check(
     "section0_imports_are_implementation_inputs",
     "visible" in note_text
     and "declared implementation inputs" in note_text
-    and "declared implementation inputs for this bounded" in note_text,
+    and "declared/admitted implementation inputs for this bounded" in note_text,
     "canonical plaquette and Ward target are not proof authorities for this row",
 )
 check(
@@ -335,8 +345,17 @@ check(
     "plaquette, Ward target, RGE, thresholds, and EW initial conditions are enumerated",
 )
 check(
+    "section0_inputs_admitted_not_retained",
+    "2026-06-20 Source-Boundary Repair" in note_text
+    and "None of `I1`–`I5` carries a retained-grade dependency edge" in note_flat
+    and "supplied/" in note_flat and "admitted inputs" in note_flat
+    and "finite-grid numerical diagnostic conditional on `I1`–`I5`" in note_flat
+    and "not a retained-grade theorem" in note_flat,
+    "I1-I5 are admitted (not retained-grade, not self-contained-derived); result is conditional finite-grid diagnostic",
+)
+check(
     "section0_runner_count_updated",
-    "Counts: 29 PASS, 0 FAIL" in note_text,
+    "Counts: 31 PASS, 0 FAIL" in note_text,
     "note scorecard matches source-boundary runner",
 )
 check(

@@ -73,8 +73,8 @@ def render_vocab_hierarchy_table(data: dict) -> str:
         ),
         (
             "1. Framework substantive",
-            "`docs/MINIMAL_AXIOMS_2026-06-05.md` and `docs/audit/data/axiom_premise_nodes.json`",
-            "Framework axioms and explicitly approved primitive premise nodes the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor cubic adjacency), Quantum (one qubit at every site, equivalently the one-site operator algebra `A_x ≅ M_2(ℂ)`, equivalently `Cl(3,0)` as a real algebra), Record (durable realized-outcome readout with finite scalar additivity), the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms, and registered primitive premise nodes such as the scale-reference and kinetic-isotropy primitives. Changes only when a framework-level science decision changes.",
+            "`docs/MINIMAL_AXIOMS_2026-06-29.md` and `docs/audit/data/axiom_premise_nodes.json`",
+            "Framework axioms and explicitly approved primitive premise nodes the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor adjacency, standard translations, and proper cubic rotations), Qubit (the domain of local possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is equivalent notation, not extra primitive content), Admissibility (one fixed nearest-neighbor rule, covariant under lattice translations and proper cubic rotations, by which the available possibilities are determined by, and vary with, the nearest-neighbor conditions at each site), Record (fixed locking of one available local possibility with finite scalar additivity), the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms, and registered primitive premise nodes such as the scale-reference and kinetic-isotropy primitives. Changes only when a framework-level science decision changes.",
         ),
         (
             "2. External paper text",

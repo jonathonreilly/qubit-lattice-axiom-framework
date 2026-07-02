@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_color_generation_z3_scope_guard_2026_06_12.py
+runner_sha256: ba55729f7fadd3d3f89e380551933d7b080037c414534ddf05e57af4e832f141
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: title is abstract rather than physical-SM
+PASS: claim type uses canonical bounded_theorem metadata
+PASS: claim boundary excludes physical bridge and audit verdict
+PASS: statement keeps only abstract carrier inequivalence
+PASS: physical interpretation is routed to separate bridge theorems
+PASS: proof checks character and module inequivalence
+PASS: old physical conclusion is absent
+PASS: retained/audit status remains delegated to the ledger
+TOTAL: PASS=8, FAIL=0
+
+----- stderr -----
+

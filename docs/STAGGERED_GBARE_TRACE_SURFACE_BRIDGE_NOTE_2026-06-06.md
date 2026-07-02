@@ -26,20 +26,39 @@ for the `g_bare` normalization chain.
   status of the parent.
 - [`STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md`](STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md)
   for the species-labeling no-go.
+- [`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)
+  and [`NATIVE_GAUGE_CLOSURE_NOTE.md`](NATIVE_GAUGE_CLOSURE_NOTE.md)
+  for the already separated graph-first structural `su(3)` carrier on the
+  selected-axis `V_3` surface. These notes are cited only for the structural
+  gauge carrier, not for physical-color naming, Wilson dynamics, or
+  phenomenological coupling normalization.
 - [`docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md`](audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md)
   for the promotion-panel identification of the non-circular route.
+- [`GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md`](GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md)
+  supplies a finite root-`SU(2)` candidate for the remaining scale-transport
+  bridge. It is cited here as a bounded source note only; independent
+  review/audit still decides whether it can be consumed by the parent route.
 
 ## Claim
 
 For the `g_bare` normalization route, the required staggered-Dirac input is
-narrower than full species-label closure.
+narrower than full species-label closure and narrower than physical Standard
+Model color naming.
+
+The current source surface already separates a structural graph-first
+`su(3)` carrier on the selected-axis `V_3` surface. What remains load-bearing
+for the `g_bare` promotion route is not the existence of a graph-first
+`su(3)` block as an abstract gauge carrier; it is the scale-transport bridge
+from the per-site Cl(3) spin-double-cover normalization to that `V_3`
+`su(3)` trace form.
 
 The load-bearing input is:
 
 ```text
-V_3 is the physical gauge trace surface, and the per-site Cl(3) bivector
-SU(2) normalization is the same normalization carried by an SU(2) sub-block
-of gauge su(3) on V_3.
+the graph-first V_3 structural gauge surface is the trace surface consumed
+by the Wilson/Ward g_bare algebra, and the per-site Cl(3) bivector SU(2)
+normalization is the same normalization carried by an SU(2) sub-block of
+gauge su(3) on that V_3 surface.
 ```
 
 Under that input, the existing per-site spin-double-cover calculation and the
@@ -54,6 +73,12 @@ normalization. Permuting the three corner labels conjugates the `V_3`
 generators by a permutation matrix and leaves the Hilbert-Schmidt Gram matrix
 `Tr(T_a T_b)` unchanged.
 
+Likewise, the separate bridge that reads the graph-first `su(3)` as physical
+SM color is not load-bearing for this trace-normalization statement. It is
+load-bearing for physical color claims and EW/color matching claims, but the
+finite `g_bare` normalization obstruction named by the panel is the trace
+scale `N_F`, not the particle-name interpretation of the three color slots.
+
 ## Current Surface Status
 
 This is bounded support on the current surface.
@@ -62,12 +87,18 @@ This is bounded support on the current surface.
 - The current closure synthesis is a bounded source-side candidate for the
   kinetic-and-algebra surface, with upstream audit/dependency work still
   pending.
+- The graph-first selected-axis `V_3` structural `su(3)` surface is already
+  separated in the native gauge lane. This bridge cites that surface only as
+  the structural gauge carrier; it does not use it as a physical-color bridge.
 - The `AC_phi_lambda` species-label residual remains relevant to flavor-label
   identification, but it is not relevant to the `g_bare` trace normalization.
-- The `V_3` trace-surface input and per-site-to-gauge SU(2) normalization
-  input remain the actual gate for `g_bare`.
+- The per-site-to-gauge SU(2) normalization transport remains the actual
+  scale gate for `g_bare`. The companion root-`SU(2)` scale-transport note
+  supplies a finite candidate closure for that subclaim, but the parent
+  `g_bare` route remains not advanced until review/audit accepts the bridge
+  and rechecks the downstream chain.
 
-This branch does not assert that the gate has closed. It narrows what must
+This note does not assert that the gate has closed. It narrows what must
 close for this lane.
 
 ## Exact Algebra
@@ -104,8 +135,12 @@ traced on `V_full = V_3 x C^2`, the trace doubles:
 Tr_{V_full}(T_a x I_2)(T_b x I_2) = delta_ab.
 ```
 
-So the `g_bare` route still needs the physical trace surface to be `V_3`, not
-`V_full`, or an equivalent convention that removes the extra factor.
+So the `g_bare` route still needs the Wilson/Ward trace to be the structural
+gauge trace on `V_3`, not the full matter tensor trace `V_3 x C^2`, unless a
+separate theorem supplies an equivalent normalization quotient. This is why a
+generic "staggered realization" closure is too coarse for the `g_bare` lane:
+the trace target is the gauge carrier, while the full matter carrier carries
+an extra weak-doublet multiplicity.
 
 ## Route Consequence
 
@@ -113,13 +148,16 @@ The g_bare normalization campaign should separate three questions:
 
 | Question | Load-bearing for `g_bare`? | Current status |
 |---|---:|---|
-| Does the staggered kinetic/algebra surface canonicalize the physical `V_3` carrier? | yes | bounded/open pending audit chain |
-| Does the per-site spin-double-cover scale propagate to the gauge `su(3)` SU(2) sub-blocks on `V_3`? | yes | bounded/open as the trace-surface bridge |
+| Is the structural graph-first `V_3` gauge carrier separated from the full matter tensor trace? | yes | supplied as structural gauge context; not a physical-color claim |
+| Does the per-site spin-double-cover scale propagate to the gauge `su(3)` SU(2) sub-blocks on `V_3`? | yes | finite root-`SU(2)` candidate supplied by the companion source note; parent still review/audit gated |
+| Is the graph-first `su(3)` physically named as SM color? | no for this trace-normalization claim | separate physical-color/EW bridge |
 | Which `hw=1` corner is assigned to which named generation label? | no | no-go in `A_min`, convention/dynamics/empirical input needed for flavor labels |
 
 This is the practical unlock: the `g_bare` parent route does not have to wait
-for a forced generation-label bijection. It has to wait for the narrower
-physical trace-surface bridge.
+for a forced generation-label bijection or a physical-color naming theorem.
+It has to wait for the narrower scale-transport bridge: per-site spin
+normalization to graph-first `V_3` gauge `su(3)` normalization, with the trace
+surface kept on `V_3` rather than the full matter tensor.
 
 ## Boundaries
 
@@ -128,8 +166,9 @@ physical trace-surface bridge.
 - No new framework axiom is proposed.
 - No repo-wide audit verdict is applied.
 - No parent `g_bare` promotion is claimed.
-- The result is conditional on the named trace-surface bridge and later audit
-  closure.
+- The result is conditional on the named scale-transport bridge and later
+  audit closure. Physical-color and EW matching claims remain outside this
+  source note.
 
 ## Verification
 
@@ -142,5 +181,5 @@ python3 scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py
 Expected summary:
 
 ```text
-TOTAL: PASS=65, FAIL=0
+TOTAL: PASS=85, FAIL=0
 ```

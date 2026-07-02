@@ -10,6 +10,8 @@ mis-framing flagged by hostile audit finding F-B in
 [PR #1262](https://github.com/jonathonreilly/cl3-lattice-framework/pull/1262).
 
 **Status authority:** independent audit lane only.
+**Primary runner:** [`scripts/frontier_anomaly_forces_time_fb_framing_fix.py`](../scripts/frontier_anomaly_forces_time_fb_framing_fix.py)
+**Cached output:** [`logs/runner-cache/frontier_anomaly_forces_time_fb_framing_fix.txt`](../logs/runner-cache/frontier_anomaly_forces_time_fb_framing_fix.txt)
 
 ## The framing issue
 
@@ -65,6 +67,27 @@ class B, and the conditioning on independent audit ratification all
 remain unchanged. This is an honesty-of-framing fix, not a science
 change.
 
+## Current mainline reconciliation (2026-06-18)
+
+The parent theorem has since sharpened the Step-4 boundary from a direct
+single-clock-note dependency to the local declared `B-AXIS` premise:
+one supplied blocked time step, one declared evolution axis/transfer
+construction, and no admitted independent commuting transfer factor as
+a second clock. This supersedes the original prose form of the F-B
+remark while preserving the audit-relevant repair:
+
+- Step 3 supplies only the computed lower bound: `d_t` is odd, so
+  `d_t >= 1`.
+- Step 4 supplies only the declared upper bound: conditional on
+  `B-AXIS`, `d_t <= 1`.
+- The conjunction gives `d_t = 1`; neither the anomaly computation nor
+  `B-AXIS` alone derives the full result.
+- The single-clock note is provenance context for the boundary wording,
+  not a markdown dependency edge of the parent row.
+
+The runner now verifies this current-source reconciliation rather than
+the superseded exact wording of the original Step-4 remark.
+
 ## What this PR does NOT change
 
 - The proof chain (same five steps; same conclusion)
@@ -80,9 +103,12 @@ change.
 
 `scripts/frontier_anomaly_forces_time_fb_framing_fix.py` checks:
 
-- The Remark is present in `docs/ANOMALY_FORCES_TIME_THEOREM.md`
-- The Remark explicitly names "derived from Step 3" and "inherited from
-  admission (iv)"
+- This meta note declares its primary runner and cached output
+- The current parent theorem separates the Step-3 lower bound from the
+  Step-4 `B-AXIS` upper bound
+- The parent theorem states that it does not derive `B-AXIS`
+- The single-clock source note is context only, not a load-bearing
+  markdown dependency edge of the parent row
 - The proof structure (5 steps, conclusion `d_t = 1`) is unchanged
 
 ## Cross-references (non-load-bearing)

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sm_gstar_higgs_sector_count_2026_05_29.py
-runner_sha256: 7243ad785960840cf677dfe2eee53372dd04f0f36de0b716ff31d384b2d4a3a1
+runner_sha256: 7e413009ce1167072ca1b0f9e33a4a3f799be0ab514d0a6ca1d78b929275c7da
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -43,10 +43,14 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] H_unit representation no-go note exists
   [PASS] H_unit direct full-doublet bridge is marked representation-forbidden
   [PASS] SM note consumes accepted inventory premise without new axiom or audit verdict
+  [PASS] H_unit supplied-doublet radial/orbit support note exists
+  [PASS] radial/orbit support is cited as support only, not field-content authority
+  [PASS] radial/orbit support keeps the one-doublet inventory premise load-bearing
 
 [4] note + authority cross-checks
   [PASS] authority exists: YT_WARD_IDENTITY_DERIVATION_THEOREM.md
   [PASS] authority exists: HUNIT_TO_EWSB_DOUBLET_REPRESENTATION_NO_GO_NOTE_2026-06-15.md
+  [PASS] authority exists: SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md
   [PASS] authority exists: YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md
   [PASS] authority exists: CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md
   [PASS] authority exists: DM_NEUTRINO_TWO_HIGGS_MINIMALITY_THEOREM_NOTE_2026-04-15.md
@@ -79,7 +83,7 @@ g_* Higgs-sector count reconciliation runner (2026-05-29)
   [PASS] no new-vocabulary token: 'algebraic universality'
 
 ==============================================================================
-PASS=59 FAIL=0
+PASS=63 FAIL=0
 ==============================================================================
 
 ----- stderr -----

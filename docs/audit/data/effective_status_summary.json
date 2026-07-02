@@ -1,59 +1,86 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 1668,
-    "decoration": 48,
-    "meta": 325,
-    "no_go": 341,
-    "open_gate": 151,
-    "positive_theorem": 778
+    "bounded_theorem": 1804,
+    "decoration": 61,
+    "meta": 332,
+    "no_go": 359,
+    "open_gate": 171,
+    "positive_theorem": 747
   },
-  "cycle_examples": [],
-  "cycles_detected": 0,
+  "cycle_examples": [
+    [
+      "quark_cp_carrier_completion_note_2026-04-18",
+      "quark_cp_carrier_slot_minimality_theorem_note_2026-06-17"
+    ],
+    [
+      "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+      "bridge_gap_hk_cube_perron_note_2026-05-06"
+    ],
+    [
+      "bridge_gap_action_form_uniqueness_no_go_note_2026-05-06",
+      "bridge_gap_hk_thermodynamic_stretch_note_2026-05-06",
+      "bridge_gap_hk_cube_perron_note_2026-05-06"
+    ],
+    [
+      "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26",
+      "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26"
+    ],
+    [
+      "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07",
+      "ep_record_stiffness_context_independence_no_go_note_2026-06-17"
+    ]
+  ],
+  "cycles_detected": 9,
   "effective_status_counts": {
-    "audited_conditional": 57,
-    "audited_failed": 3,
-    "audited_numerical_match": 14,
-    "audited_renaming": 32,
+    "audited_conditional": 33,
+    "audited_failed": 1,
+    "audited_numerical_match": 10,
+    "audited_renaming": 25,
     "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 2,
-    "decoration_under_axiom_first_spin_statistics_theorem_note_2026-04-29": 1,
-    "decoration_under_cl3_color_automorphism_theorem": 1,
+    "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
+    "decoration_under_cl3_color_automorphism_theorem": 8,
     "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 6,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_cpt_exact_note": 4,
     "decoration_under_ew_current_fierz_channel_decomposition_note_2026-05-01": 1,
-    "decoration_under_gauge_vacuum_plaquette_compressed_rim_evaluation_theorem_note_2026-04-17": 1,
     "decoration_under_gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
+    "decoration_under_gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11": 1,
+    "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_hierarchy_matsubara_decomposition_note": 1,
     "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": 1,
-    "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 1,
+    "decoration_under_interaction_asymmetry_delta_occupation_curvature_two_body_structure_theorem_note_2026-06-06": 1,
+    "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 2,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
-    "decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05": 1,
-    "decoration_under_kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": 1,
+    "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
     "decoration_under_lattice_nn_deterministic_rescale_note": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
+    "decoration_under_mirror_mutual_information_chokepoint_note": 1,
     "decoration_under_moving_source_retarded_portability_note": 1,
+    "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "decoration_under_observable_principle_real_d_block_uniqueness_narrow_theorem_note_2026-05-10": 1,
+    "decoration_under_plaquette_self_consistency_note": 1,
     "decoration_under_pmns_hw1_source_transfer_boundary_note": 1,
     "decoration_under_pmns_oriented_cycle_channel_value_law_note": 1,
     "decoration_under_strong_cp_theta_zero_note": 1,
-    "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 3,
-    "decoration_under_three_generation_observable_theorem_note": 1,
+    "decoration_under_tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25": 1,
+    "decoration_under_three_generation_observable_theorem_note": 3,
+    "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "decoration_under_yt_declared_anchor_bounded_subchain_narrow_theorem_note_2026-05-26": 1,
     "decoration_under_yt_ew_color_projection_theorem": 1,
-    "meta": 317,
-    "open_gate": 41,
-    "retained": 221,
-    "retained_bounded": 959,
-    "retained_no_go": 214,
+    "meta": 326,
+    "open_gate": 29,
+    "retained": 197,
+    "retained_bounded": 888,
+    "retained_no_go": 198,
     "retained_pending_chain": 4,
-    "unaudited": 1404
+    "unaudited": 1705
   },
   "retained_pending_chain_count": 4,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "g_bare_constraint_vs_convention_restatement_note_2026-05-07",
-    "gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_note_2026-04-19",
+    "koide_mru_demotion_note_2026-04-20",
     "n_f_bounded_z2_reduction_theorem_note_2026-05-07_w2"
   ]
 }

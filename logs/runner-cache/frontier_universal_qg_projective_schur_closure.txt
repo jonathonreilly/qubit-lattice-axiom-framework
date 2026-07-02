@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/frontier_universal_qg_projective_schur_closure.py
+runner_sha256: c95ba73acaed43a4197fecd7cfaa66569aab02cdc8506789bd1e4fda53aefd88
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[EXACT] PASS: the repo already has exact discrete GR, exact UV-finite partition density, and the continuum bridge reduced past algebraic projective closure
+    this theorem starts from already-closed discrete GR plus the finite partition bridge and now sits below the refinement-net theorem
+[EXACT] PASS: Schur marginalization keeps the coarse family inside the same finite Gaussian partition class
+    min coarse effective eigenvalue=8.301122e-03, max log-partition factorization error=1.776e-14
+[EXACT] PASS: the coarse stationary field is exactly the projected full stationary field
+    max stationary projection error=6.750e-14
+[EXACT] PASS: the coarse covariance is exactly the projected full covariance
+    max covariance projection error=5.009e-13
+[EXACT] PASS: finite-dimensional coarse-graining is associative at the partition/operator/source level
+    max associativity error=7.105e-15
+UNIVERSAL QG PROJECTIVE SCHUR CLOSURE
+==============================================================================
+min coarse effective eigenvalue = 8.301122e-03
+max log-partition factor error  = 1.776e-14
+max stationary projection error = 6.750e-14
+max covariance projection error = 5.009e-13
+max associativity error         = 7.105e-15
+
+Verdict:
+The direct-universal UV-finite partition family is exactly closed under admissible finite-dimensional Schur coarse-graining. Once a coarse/fine split is chosen, the coarse operator, source, partition density, stationary field, and covariance all remain in the same universal family, and sequential coarse-graining is associative.
+The remaining continuum/QG issue is therefore no longer projective compatibility in the algebraic sense. And it is no longer the construction of the discrete geometric refinement net either. The remaining stronger issue is the inverse-limit / continuum interpretation beyond that exact discrete projective family.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=5 FAIL=0 TOTAL=5
+
+----- stderr -----
+

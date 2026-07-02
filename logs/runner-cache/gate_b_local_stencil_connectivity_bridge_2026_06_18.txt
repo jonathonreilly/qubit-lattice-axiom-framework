@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/gate_b_local_stencil_connectivity_bridge_2026_06_18.py
+runner_sha256: 2585063e3d01b6727978f79f08ec2a35c9c5fe7a9456b5efca688817207a10ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+Gate B local-stencil connectivity bridge
+========================================================================
+[PASS] Lattice axiom supplies Z^3, nearest-neighbor adjacency, and finite-range locality
+[PASS] theorem stencil exactly matches gate_b_connectivity_tolerance fixed adjacency
+       theorem_edges=1444, runner_edges=1444
+[PASS] every edge is finite range with cubic graph distance <= 3
+       min_distance=1, max_distance=3
+[PASS] all edges advance exactly one layer
+       unique_layer_offsets=[1]
+[PASS] transverse offsets are restricted to {-1,0,1}^2
+       unique_offsets=[(1, -1, -1), (1, -1, 0), (1, -1, 1), (1, 0, -1), (1, 0, 0), (1, 0, 1), (1, 1, -1), (1, 1, 0), (1, 1, 1)]
+[PASS] out-degree is bounded by the 9-edge local stencil
+       min_outdegree=4, max_outdegree=9
+[PASS] interior sources all have the same translation-covariant offset set
+       interior_sources=100
+[PASS] finite boundary only clips off-slab stencil targets
+       corner_offsets=[(1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+[PASS] terminal layer has no outgoing forward edges
+       terminal_sources=49
+[PASS] note states GB-S3a boundary without claiming Gate B closure
+[PASS] parent note wires the GB-S3 split and preserves open physical-growth selector
+[PASS] parent note still blocks scalar/readout/physical-gravity overclaims
+
+TOTAL: PASS=12 FAIL=0
+runner_check_breakdown = {A: 12, B: 0, C: 0, D: 0, total_pass: 12}
+VERDICT: GB-S3a is a finite-range Z^3 local-stencil bridge matching the Gate B runner adjacency; GB-S3b physical selection/readout remains open.
+
+----- stderr -----
+

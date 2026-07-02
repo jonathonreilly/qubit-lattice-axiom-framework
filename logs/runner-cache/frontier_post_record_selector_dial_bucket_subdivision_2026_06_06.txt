@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_selector_dial_bucket_subdivision_2026_06_06.py
-runner_sha256: 19eae8985c58f50248a8579f5a10a90311dbf192c462cff13c07d4959efda581
+runner_sha256: b793d07417476faad76ebf753c719fdf0ba6730462e5e858e817724498d8affc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.06
+elapsed_sec: 1.45
 status: ok
 ----- stdout -----
 
@@ -17,7 +17,7 @@ PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: k
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: measure_weight_normalization
 PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md exists
-PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: selector_or_dial_needed` | 322
+PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: selector_or_dial_needed` | 346
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: read-only scanner
 PASS docs/POST_RECORD_AUDIT_EVIDENCE_LADDER_ROW_BUCKETING_2026-06-06.md contains: audit ledger hash is unchanged
 PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
@@ -28,34 +28,35 @@ PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: 
 ------------------------------------------------------------------------------
 Selector/dial subdivision checks
 ------------------------------------------------------------------------------
-PASS selector/dial row count is current snapshot :: 322
-PASS sub-bucket counts sum to selector count :: Counter({'stability_or_dynamics_selector': 136, 'koide_or_generation_selector': 117, 'measure_weight_normalization': 67, 'generic_selector_rule': 2})
-PASS expected sub-bucket counts match :: Counter({'stability_or_dynamics_selector': 136, 'koide_or_generation_selector': 117, 'measure_weight_normalization': 67, 'generic_selector_rule': 2})
+PASS selector/dial row count is current snapshot :: 346
+PASS sub-bucket counts sum to selector count :: Counter({'stability_or_dynamics_selector': 147, 'koide_or_generation_selector': 125, 'measure_weight_normalization': 71, 'generic_selector_rule': 3})
+PASS expected sub-bucket counts match :: Counter({'stability_or_dynamics_selector': 147, 'koide_or_generation_selector': 125, 'measure_weight_normalization': 71, 'generic_selector_rule': 3})
 PASS representative row present in koide_or_generation_selector :: charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02
 PASS representative row present in stability_or_dynamics_selector :: a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1
 PASS representative row present in measure_weight_normalization :: architecture_note_directional_measure
 PASS representative row present in generic_selector_rule :: gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20
-PASS audit ledger hash is unchanged :: a2de3b7512118d206d90efce05be59ac8d4dc25e22244067248414c5348b09e9
+PASS audit ledger hash is unchanged :: 2ac5344278b0e37ee6419068aa1e0588600fbc98d8ed55d56650fb4b0e555b83
 
 Selector/dial sub-bucket counts:
-  generic_selector_rule: 2
-  koide_or_generation_selector: 117
-  measure_weight_normalization: 67
-  stability_or_dynamics_selector: 136
+  generic_selector_rule: 3
+  koide_or_generation_selector: 125
+  measure_weight_normalization: 71
+  stability_or_dynamics_selector: 147
 
 [generic_selector_rule]
   gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_note_2026-04-20 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_RHO1_LEAST_DISTORTION_SELECTOR_THEOREM_NOTE_2026-04-20.md
+  hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18 | audited_clean | retained_bounded | bounded_theorem | docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md
   staggered_chirality_selector_enumerator_narrow_theorem_note_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/STAGGERED_CHIRALITY_SELECTOR_ENUMERATOR_NARROW_THEOREM_NOTE_2026-06-06.md
 
 [koide_or_generation_selector]
   axiom_first_cluster_decomposition_theorem_note_2026-04-29 | audited_clean | retained_bounded | bounded_theorem | docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md
   bae_u1b_six_ray_dirac_measure_note_2026-05-17 | unaudited | unaudited | bounded_theorem | docs/BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md
+  brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15 | audited_clean | retained_bounded | bounded_theorem | docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md
   charged_lepton_koide_two_gate_tier_a_bounded_theorem_note_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_KOIDE_TWO_GATE_TIER_A_BOUNDED_THEOREM_NOTE_2026-06-02.md
   charged_lepton_koide_value_full_chain_of_custody_2026-06-02 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md
   charged_lepton_mass_hierarchy_review_note_2026-04-17 | unaudited | unaudited | bounded_theorem | docs/CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md
   chiral_content_is_the_epsilon_d_chirality_import_distinct_from_orientation_narrow_theorem_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/CHIRAL_CONTENT_IS_THE_EPSILON_D_CHIRALITY_IMPORT_DISTINCT_FROM_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md
   chirality_gate_is_two_independent_gates_dirac_vs_generation_scoping_note_2026-06-08 | audited_clean | retained_bounded | bounded_theorem | docs/CHIRALITY_GATE_IS_TWO_INDEPENDENT_GATES_DIRAC_VS_GENERATION_SCOPING_NOTE_2026-06-08.md
-  ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25 | unaudited | unaudited | bounded_theorem | docs/CKM_BERNOULLI_TWO_NINTHS_KOIDE_BRIDGE_SUPPORT_NOTE_2026-04-25.md
 
 [measure_weight_normalization]
   action_form_no_go_equivalence_premise_continuum_removal_scoped_relocation_note_2026-06-08 | unaudited | unaudited | bounded_theorem | docs/ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md
@@ -63,9 +64,9 @@ Selector/dial sub-bucket counts:
   architecture_note_directional_measure | audited_numerical_match | audited_numerical_match | bounded_theorem | docs/ARCHITECTURE_NOTE_DIRECTIONAL_MEASURE.md
   born_scattering_comparison_note | unaudited | unaudited | bounded_theorem | docs/BORN_SCATTERING_COMPARISON_NOTE.md
   busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  centered_u1_fluctuation_law_record_mixture_structure_bounded_theorem_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/CENTERED_U1_FLUCTUATION_LAW_RECORD_MIXTURE_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-06-11.md
   central_band_born_dense_sweep_note | audited_clean | retained_bounded | bounded_theorem | docs/CENTRAL_BAND_BORN_DENSE_SWEEP_NOTE.md
   closure_c_l1_per_graph_casimir_note_2026-05-10_cl1c | unaudited | unaudited | bounded_theorem | docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md
-  continuum_limit_note | audited_clean | retained_bounded | bounded_theorem | docs/CONTINUUM_LIMIT_NOTE.md
 
 [stability_or_dynamics_selector]
   a3_route1_higgs_yukawa_c3_breaking_bounded_obstruction_note_2026-05-08_r1 | unaudited | unaudited | bounded_theorem | docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md
@@ -89,11 +90,11 @@ PASS generation/Koide dial selected flag is false
 PASS Record-derived measure/prior flag is false
 
 SUMMARY: PASS=28 FAIL=0
-SELECTOR_DIAL_ROWS=322
-KOIDE_OR_GENERATION_SELECTOR_ROWS=117
-STABILITY_OR_DYNAMICS_SELECTOR_ROWS=136
-MEASURE_WEIGHT_NORMALIZATION_ROWS=67
-GENERIC_SELECTOR_RULE_ROWS=2
+SELECTOR_DIAL_ROWS=346
+KOIDE_OR_GENERATION_SELECTOR_ROWS=125
+STABILITY_OR_DYNAMICS_SELECTOR_ROWS=147
+MEASURE_WEIGHT_NORMALIZATION_ROWS=71
+GENERIC_SELECTOR_RULE_ROWS=3
 AUDIT_LEDGER_WRITTEN=FALSE
 STABLE_SETTING_SELECTS_DIAL=FALSE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE

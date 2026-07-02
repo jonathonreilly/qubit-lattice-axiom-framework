@@ -3,6 +3,13 @@
 **Date:** 2026-04-06
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/h0125-unverifiable-numerical-diagnostics-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
 
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 ## Retraction
 
 - **Date archived:** 2026-04-30
@@ -18,6 +25,11 @@
 This archived packet is historical / diagnostic and retired as evidence. It is
 not a retained h=0.125 failure derivation, not a quantified root-cause
 diagnosis, and not authority for the printed detector-probability or SNR rows.
+
+**Firewall runner:**
+[`scripts/h0125_archive_firewall_2026_06_16.py`](../../scripts/h0125_archive_firewall_2026_06_16.py)
+(`PASS: h0125 archive firewall holds`; cached at
+[`logs/runner-cache/h0125_archive_firewall_2026_06_16.txt`](../../logs/runner-cache/h0125_archive_firewall_2026_06_16.txt)).
 
 The old negative story is also not the current live h=0.125 status. The live
 computable reduced-family lane is documented separately in

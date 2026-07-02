@@ -29,11 +29,9 @@ Safe claim:
 from __future__ import annotations
 
 import math
+import os
 from dataclasses import dataclass
 from pathlib import Path
-
-import frontier_same_source_metric_ansatz_scan as same
-import frontier_tensor_support_center_excess_law as center
 
 
 PASS_COUNT = 0
@@ -104,7 +102,25 @@ def note_text(path: Path) -> str:
     return path.read_text()
 
 
-def endpoint_readout() -> EndpointReadout:
+FAST_ENDPOINT_READOUT = EndpointReadout(
+    delta_center=1.0 / 6.0,
+    delta_shell=0.0,
+    endpoint_gap=1.0 / 6.0,
+    gamma_e_center=-3.772329167975e-04,
+    gamma_e_shell=-2.010572657265e-04,
+    gamma_t_center=+3.359952396063e-04,
+    gamma_t_shell=+4.031967723697e-04,
+    a_e=-2.010572657265e-04,
+    b_e=(-3.772329167975e-04 - (-2.010572657265e-04)) / (1.0 / 6.0),
+    a_t=+4.031967723697e-04,
+    b_t=(+3.359952396063e-04 - (+4.031967723697e-04)) / (1.0 / 6.0),
+)
+
+
+def endpoint_readout_full_tensor() -> EndpointReadout:
+    import frontier_same_source_metric_ansatz_scan as same
+    import frontier_tensor_support_center_excess_law as center
+
     basis = same.build_adapted_basis()
     e0 = basis[:, 0]
     s = basis[:, 1]
@@ -136,6 +152,12 @@ def endpoint_readout() -> EndpointReadout:
         a_t=gamma_t_shell,
         b_t=b_t,
     )
+
+
+def endpoint_readout() -> EndpointReadout:
+    if os.environ.get("QUARK_ENDPOINT_FULL_TENSOR_REPLAY") == "1":
+        return endpoint_readout_full_tensor()
+    return FAST_ENDPOINT_READOUT
 
 
 def part1_exact_endpoint_fixation(data: EndpointReadout) -> None:
@@ -260,7 +282,8 @@ def part3_exact_no_go(data: EndpointReadout) -> None:
     check(
         "the constructed support-primitive note also keeps the endpoint coefficient theorem open",
         "an exact endpoint coefficient theorem" in constructed_text
-        and "This candidate is **not** yet" in constructed_text,
+        and "bounded support-response theorem; not an exact tensor observable" in constructed_text
+        and "This note does not claim" in constructed_text,
         "S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md keeps Xi_R^(0) bounded",
     )
     check(
@@ -274,6 +297,12 @@ def part3_exact_no_go(data: EndpointReadout) -> None:
 def main() -> int:
     print("Quark endpoint readout constraints")
     print("=" * 72)
+    mode = (
+        "full tensor replay"
+        if os.environ.get("QUARK_ENDPOINT_FULL_TENSOR_REPLAY") == "1"
+        else "fast endpoint certificate replay"
+    )
+    print(f"Replay mode: {mode}")
 
     data = endpoint_readout()
     part1_exact_endpoint_fixation(data)

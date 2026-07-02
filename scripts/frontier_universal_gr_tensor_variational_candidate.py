@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Audit the direct-universal tensor variational candidate.
+"""Verify the direct-universal tensor variational candidate.
 
-This is not a closure proof. It checks that the current atlas now supplies:
+This is not a closure proof. It checks that the current atlas now supplies
+the route ingredients at their stated source boundaries:
 
-1. the exact scalar observable generator from the axiom-side observable
-   principle;
-2. the exact `3+1` kinematic lift on `PL S^3 x R`;
-3. a well-defined symmetric bilinear Hessian candidate on `3+1` metric sources.
+1. the scalar observable generator from the axiom-side observable principle;
+2. the `3+1` kinematic lift candidate on `PL S^3 x R`;
+3. a well-defined symmetric bilinear Hessian candidate on `3+1` metric sources;
+4. an explicit remaining Einstein/Regge identification blocker.
 """
 
 from __future__ import annotations
@@ -84,14 +85,14 @@ def main() -> int:
 
     checks = [
         Check(
-            "scalar generator is exact",
+            "scalar generator source is present",
             has(obs, "log|det(d+j)|") or has(obs, "log |det(d+j)|"),
-            "observable principle gives the scalar generator",
+            "observable-principle note gives the scalar generator surface",
         ),
         Check(
-            "3+1 lift is exact",
+            "3+1 lift source is present at its inherited boundary",
             has(lift, "pl s^3 x r"),
-            "route-2 lift produces the exact PL S^3 x R scaffold",
+            "route-2 lift note supplies PL S^3 x R as a kinematic scaffold, not a dynamics theorem",
         ),
         Check(
             "candidate note defines a tensor-valued variational object",
@@ -117,7 +118,7 @@ def main() -> int:
         ),
     ]
 
-    print("UNIVERSAL GR TENSOR VARIATIONAL CANDIDATE AUDIT")
+    print("UNIVERSAL GR TENSOR VARIATIONAL CANDIDATE VERIFIER")
     print("=" * 78)
     for c in checks:
         tag = "PASS" if c.ok else "FAIL"
@@ -141,8 +142,9 @@ def main() -> int:
     if n_fail == 0:
         print(
             "Direct-universal progress: the scalar observable principle and the "
-            "3+1 lift now support an exact tensor-valued variational candidate "
-            "defined as the Hessian of W on the lifted background."
+            "3+1 lift source surfaces support a tensor-valued variational "
+            "candidate defined as the Hessian of W on the lifted background, "
+            "with Einstein/Regge identification still blocked."
         )
         return 0
 

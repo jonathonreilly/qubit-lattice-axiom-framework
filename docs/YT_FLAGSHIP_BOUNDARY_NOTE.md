@@ -16,6 +16,7 @@ Its purpose is narrower: state the honest current claim boundary of the live
 
 **Date:** 2026-04-17
 **Status:** DERIVED quantitative lane
+**Primary runner:** `scripts/frontier_yt_flagship_boundary_contract.py`
 **Current central values:** `y_t(v) = 0.9176`, canonical
 `m_t(pole) = 173.10 GeV` (3-loop), with retained `172.57 GeV` (2-loop)
 support

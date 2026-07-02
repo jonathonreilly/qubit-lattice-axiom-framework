@@ -13,7 +13,8 @@ from scipy.integrate import quad
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "GRAVITY_FIXED_ENERGY_EIKONAL_INDEX_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md"
 SOURCE_BRIDGE = ROOT / "docs" / "GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md"
-SCALAR_SHIFT = ROOT / "docs" / "SELF_CONSISTENCY_FORCES_POISSON_NOTE.md"
+SCALAR_SHIFT_BRIDGE = ROOT / "docs" / "GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md"
+SCALAR_FIELD_PACKET = ROOT / "docs" / "SELF_CONSISTENCY_FORCES_POISSON_NOTE.md"
 LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 
 PASS = 0
@@ -47,7 +48,8 @@ def k_of_shift(E: float, s: float) -> float:
 def main() -> int:
     note_text = NOTE.read_text(encoding="utf-8")
     source_text = SOURCE_BRIDGE.read_text(encoding="utf-8")
-    scalar_shift_text = SCALAR_SHIFT.read_text(encoding="utf-8")
+    scalar_shift_bridge_text = SCALAR_SHIFT_BRIDGE.read_text(encoding="utf-8")
+    scalar_field_text = SCALAR_FIELD_PACKET.read_text(encoding="utf-8")
     rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
 
     required_phrases = [
@@ -57,10 +59,12 @@ def main() -> int:
         "lambda_axis(k_s) + s = E",
         "n_j := k_{s_j} / k0",
         "S_eik[s] = sum_j n_j Delta l_j",
+        "GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+        "phi_action = c_E s",
         "c_E = 1 / (k0 lambda_axis'(k0))",
         "No observed constants, PDG values, fitted selectors, new repo-wide axioms",
         "it does not rederive universal matter coupling",
-        "The scalar generator shift is a cited retained-bounded input",
+        "The scalar generator shift/sign and fixed-energy action normalization are",
         "Independent audit must decide",
     ]
     for phrase in required_phrases:
@@ -77,16 +81,16 @@ def main() -> int:
         check(f"note excludes forbidden phrase: {phrase}", phrase not in note_text)
 
     bridge_row = rows.get("gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11", {})
-    scalar_shift_row = rows.get("self_consistency_forces_poisson_note", {})
+    scalar_field_row = rows.get("self_consistency_forces_poisson_note", {})
     check(
         "weak-field source-response bridge is retained_bounded in current ledger",
         bridge_row.get("effective_status") == "retained_bounded",
         f"effective_status={bridge_row.get('effective_status')}",
     )
     check(
-        "self-consistency scalar-shift packet is retained_bounded in current ledger",
-        scalar_shift_row.get("effective_status") == "retained_bounded",
-        f"effective_status={scalar_shift_row.get('effective_status')}",
+        "self-consistency scalar-field packet is retained_bounded in current ledger",
+        scalar_field_row.get("effective_status") == "retained_bounded",
+        f"effective_status={scalar_field_row.get('effective_status')}",
     )
     check(
         "source-response bridge supplies S_test sign convention",
@@ -94,9 +98,21 @@ def main() -> int:
         and "U_test(phi; x) = -m phi(x)" in source_text,
     )
     check(
+        "new scalar-shift bridge derives +sI sign and action normalization",
+        "H_s = H_0 + s I" in scalar_shift_bridge_text
+        and "lambda_axis(k_s) + s = E" in scalar_shift_bridge_text
+        and "phi_action := c_E s" in scalar_shift_bridge_text
+        and "s = phi_action / c_E = k0 lambda_axis'(k0) phi_action" in scalar_shift_bridge_text,
+    )
+    check(
+        "eikonal note consumes the new scalar-shift bridge",
+        "GRAVITY_SCALAR_SHIFT_SIGN_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-06-18.md" in note_text
+        and "phi_action = c_E s" in note_text,
+    )
+    check(
         "self-consistency packet supplies scalar propagator/action surface",
-        "The propagator uses action S = L(1-phi)" in scalar_shift_text
-        and "gravitational field phi is sourced" in scalar_shift_text,
+        "The propagator uses action S = L(1-phi)" in scalar_field_text
+        and "gravitational field phi is sourced" in scalar_field_text,
     )
 
     E = 0.04

@@ -2,6 +2,14 @@
 
 **Date:** 2026-04-28
 **Status:** RETRACTED 2026-04-30 — audit failed; this note is archived under `archive_unlanded/stale-frames-2026-04-30/`. Claims below are NOT supported by current runners or current audit lane. See `## Retraction` section.
+
+## Current-surface certificate (2026-06-12 source firewall)
+
+**Actual current-surface status:** archived `audited_failed` / retracted
+historical artifact. This file is kept only as audit history for a failed
+or inconsistent route. It may not be cited as retained, bounded, conditional,
+supporting, or methodological authority for any live framework chain.
+
 **Lane:** 5 — Hubble constant `H_0` derivation
 **Loop:** `hubble-c1-absolute-scale-gate-20260428`
 **Runner:** `scripts/frontier_hubble_c1_a5_minimal_carrier_axiom_audit.py`
@@ -30,6 +38,14 @@ authority for a minimal carrier-axiom narrative.
 The safe residue is archive recovery history only. Any future carrier-axiom
 analysis must start from a fresh proof surface rather than this failed wrapper
 frame.
+
+## 2026-06-18 registered-runner contract
+
+The registered runner for this archived row is a firewall witness only. It
+verifies this note's current-surface certificate, retraction, and archive
+boundary. It must not be used to re-prove the historical minimal-carrier
+theorem. A PASS does not certify a minimal carrier axiom, close `(G1)` or
+`(C1)`, or provide live support for the failed wrapper frame.
 
 ## 0. Historical context (retracted)
 

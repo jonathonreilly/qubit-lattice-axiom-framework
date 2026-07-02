@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/koide_records_objectivity_packet_verifier_2026_06_17.py
+runner_sha256: e815df75dbfe194fb9fa66d25f1fd6aa66eab4cb65a86122aa0082fa348c8056
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Koide records/objectivity restricted packet verifier
+============================================================================
+PASS docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md exists
+PASS docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md exists
+PASS docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md exists
+PASS docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md exists
+PASS docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md exists
+PASS parent records 'open_gate / conditional-support certificate'
+PASS parent records 'equal-block metric'
+PASS parent records 'records/objectivity maximization'
+PASS parent records 'does not select the singlet/doublet sector measure'
+PASS parent records 'supplied equal-block (1,1) metric'
+PASS parent records 'supplied records/objectivity maximization selector'
+PASS parent records '17/17 checks passed'
+PASS parent records 'koide_records_objectivity_packet_verifier_2026_06_17.py'
+PASS parent records 'does not derive either selector input'
+PASS parent has no stale 13/13 count
+PASS Q23 frontier records 'equal-block rule gives `Q=2/3`'
+PASS Q23 frontier records 'dimension-weighted trace gives `Q=1`'
+PASS Q23 frontier records 'does not derive that rule'
+PASS Q23 frontier records 'open_gate localization'
+PASS Frobenius no-go records 'do not force the Frobenius normalization'
+PASS Frobenius no-go records 'Conditional Corollary Kept Out Of Scope'
+PASS Frobenius no-go records 'does not claim'
+PASS Frobenius no-go records 'any new axiom or audit verdict'
+PASS readout demarcation records 'the readout supplies the formula, not r=1/2'
+PASS readout demarcation records 'readout itself supplies no rule'
+PASS readout demarcation records 'dynamics/evidence lane'
+PASS readout demarcation records 'does not rank them'
+PASS pre-record note records 'unique tracial-state characterization'
+PASS pre-record note records 'pre-record identification'
+PASS pre-record note records 'demoted to a separate open admission'
+PASS pre-record note records 'not part of the audited claim'
+PASS scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py exists
+PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt exists
+PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt records runner path -- runner=scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py
+PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt sha matches source -- cache=e11ed7daaeec049add53092b512500a30bd019168031fdf944546779bacecaac, live=e11ed7daaeec049add53092b512500a30bd019168031fdf944546779bacecaac
+PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt contains '17/17 checks passed'
+PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt contains 'THE HONEST RESULT: Q=2/3 is a CONDITIONAL, not a forced theorem.'
+PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt contains 'Both hypotheses (i)+(ii) remain explicit inputs'
+PASS scripts/koide_q23_block_weight_frontier_2026_05_29.py exists
+PASS logs/runner-cache/koide_q23_block_weight_frontier_2026_05_29.txt exists
+PASS logs/runner-cache/koide_q23_block_weight_frontier_2026_05_29.txt records runner path -- runner=scripts/koide_q23_block_weight_frontier_2026_05_29.py
+PASS logs/runner-cache/koide_q23_block_weight_frontier_2026_05_29.txt exits zero -- exit_code=0
+PASS logs/runner-cache/koide_q23_block_weight_frontier_2026_05_29.txt status ok -- status=ok
+PASS logs/runner-cache/koide_q23_block_weight_frontier_2026_05_29.txt sha matches source -- cache=7131a630687b8ec083a6e6b390c668a4139ab9b746870196b475c001fc70a7c6, live=7131a630687b8ec083a6e6b390c668a4139ab9b746870196b475c001fc70a7c6
+PASS logs/runner-cache/koide_q23_block_weight_frontier_2026_05_29.txt contains 'PASS=19 FAIL=0'
+PASS logs/runner-cache/koide_q23_block_weight_frontier_2026_05_29.txt contains 'equal-block rule'
+PASS logs/runner-cache/koide_q23_block_weight_frontier_2026_05_29.txt contains 'does not derive or approve that physical rule'
+PASS scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py exists
+PASS logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt exists
+PASS logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt records runner path -- runner=scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py
+PASS logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt sha matches source -- cache=c79461d0cac1857c61cd844fe61c6cd85881f4533f485c5fdecdb23fe1c6d89d, live=c79461d0cac1857c61cd844fe61c6cd85881f4533f485c5fdecdb23fe1c6d89d
+PASS logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt contains 'PASS=67 FAIL=0'
+PASS logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt contains 'No PDG observed values'
+PASS logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt contains 'selection-principle authority'
+PASS scripts/frontier_koide_frobenius_isotype_split_uniqueness.py exists
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt exists
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt records runner path -- runner=scripts/frontier_koide_frobenius_isotype_split_uniqueness.py
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt sha matches source -- cache=193c9bbb4999181cc7b4e5a43f24142e1a2266f773765cac498b8bb2f1880d02, live=193c9bbb4999181cc7b4e5a43f24142e1a2266f773765cac498b8bb2f1880d02
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt contains 'PASS=24 FAIL=0'
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt contains 'do not force the Frobenius normalization'
+PASS scripts/frontier_pre_record_reference_state_tracial_derivation.py exists
+PASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt exists
+PASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt records runner path -- runner=scripts/frontier_pre_record_reference_state_tracial_derivation.py
+PASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt sha matches source -- cache=4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8, live=4be58bffb231d772495d0d3e2c1df8dce0eff8a11aba1aca072cb0daa00b38d8
+PASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt contains 'PASS=12 FAIL=0'
+PASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt contains 'pre-record identification remains open'
+PASS scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py exists
+PASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt exists
+PASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt records runner path -- runner=scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py
+PASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt exits zero -- exit_code=0
+PASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt status ok -- status=ok
+PASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt sha matches source -- cache=647d52eaa0d55d5acccd067202621ebab8e17b5f5f141c0cbbabbfb81d30cfa8, live=647d52eaa0d55d5acccd067202621ebab8e17b5f5f141c0cbbabbfb81d30cfa8
+PASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt contains 'PASS=23 FAIL=0'
+PASS logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt contains 'Open derivation gaps'
+PASS packet leaves both selector inputs open
+PASS packet is non-promotional
+============================================================================
+TOTAL: PASS=84 FAIL=0
+Koide records/objectivity packet is source-side re-audit ready: the conditional algebra is cached, the stale 13/13 count is gone, and both selector inputs remain explicit open pins.
+
+----- stderr -----
+

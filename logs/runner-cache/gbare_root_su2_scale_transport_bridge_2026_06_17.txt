@@ -1,0 +1,126 @@
+===== runner cache v1 =====
+runner: scripts/gbare_root_su2_scale_transport_bridge_2026_06_17.py
+runner_sha256: 4c19de3862da24279c14649396cb0f9236572548c7b91e61d0fdfecbfc07b08c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+
+----------------------------------------------------------------------------------------
+Part 1: source surfaces and boundaries
+----------------------------------------------------------------------------------------
+  [PASS] source file exists: docs/GBARE_ROOT_SU2_SCALE_TRANSPORT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md
+  [PASS] source file exists: docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS] source file exists: docs/NATIVE_GAUGE_CLOSURE_NOTE.md
+  [PASS] source file exists: docs/STAGGERED_GBARE_TRACE_SURFACE_BRIDGE_NOTE_2026-06-06.md
+  [PASS] note contains: does not apply an audit verdict
+  [PASS] note contains: does not promote a parent `g_bare` claim
+  [PASS] note contains: root `SU(2)` subgroup of the compact unitary `SU(3)` representation
+  [PASS] note contains: not another root `su(2)` embedding with the same bracket
+  [PASS] note contains: Species-label bijections remain irrelevant
+  [PASS] graph-first source contains: embedded Gell-Mann generators close to `su(3)`
+  [PASS] graph-first source contains: closes the structural graph-first route to `su(3)`
+  [PASS] graph-first source contains: retained graph-first surface
+  [PASS] native-gauge source contains: native cubic Cl(3) / su(2)  plus  graph-first structural su(3)
+  [PASS] native-gauge source contains: Wilson gauge dynamics
+  [PASS] native-gauge source contains: phenomenology
+  [PASS] trace bridge source contains: per-site-to-gauge SU(2) normalization transport remains the actual scale gate
+  [PASS] trace bridge source contains: not load-bearing for this trace-normalization statement
+  [PASS] trace bridge source contains: Physical-color and EW matching claims remain outside
+
+----------------------------------------------------------------------------------------
+Part 2: per-site Pauli/2 spin-double-cover scale
+----------------------------------------------------------------------------------------
+  [PASS] Pauli/2 generator 1 is Hermitian
+  [PASS] Pauli/2 generator 2 is Hermitian
+  [PASS] Pauli/2 generator 3 is Hermitian
+  [PASS] [sx/2, sy/2] = i sz/2
+  [PASS] [sy/2, sz/2] = i sx/2
+  [PASS] [sz/2, sx/2] = i sy/2
+  [PASS] Pauli/2 Gram is 1/2 delta
+  [PASS] per-site exp(4 pi i Jz) = I
+  [PASS] per-site exp(2 pi i Jz) is nontrivial
+
+----------------------------------------------------------------------------------------
+Part 3: root SU(2) subgroups inside V3
+----------------------------------------------------------------------------------------
+  [PASS] root (0,1) generator 1 is Hermitian
+  [PASS] root (0,1) generator 2 is Hermitian
+  [PASS] root (0,1) generator 3 is Hermitian
+  [PASS] root (0,1): [Jx,Jy] = i Jz
+  [PASS] root (0,1): [Jy,Jz] = i Jx
+  [PASS] root (0,1): [Jz,Jx] = i Jy
+  [PASS] root (0,1): trace Gram is 1/2 delta
+  [PASS] root (0,1): Jz spectrum is -1/2, 0, +1/2  ([np.float64(-0.5), np.float64(0.0), np.float64(0.5)])
+  [PASS] root (0,1): exp(4 pi i Jz) = I_3
+  [PASS] root (0,1): exp(2 pi i Jz) is nontrivial
+  [PASS] root (0,1): active two-plane generator 1 is Pauli/2
+  [PASS] root (0,1): active two-plane generator 2 is Pauli/2
+  [PASS] root (0,1): active two-plane generator 3 is Pauli/2
+  [PASS] root (0,1): positive scaling c=1 preserves unit su2 bracket iff c=1
+  [PASS] root (0,1): positive scaling c=0.5 preserves unit su2 bracket iff c=1
+  [PASS] root (0,1): positive scaling c=2 preserves unit su2 bracket iff c=1
+  [PASS] root (0,1): positive scaling c=3 preserves unit su2 bracket iff c=1
+  [PASS] root (1,2) generator 1 is Hermitian
+  [PASS] root (1,2) generator 2 is Hermitian
+  [PASS] root (1,2) generator 3 is Hermitian
+  [PASS] root (1,2): [Jx,Jy] = i Jz
+  [PASS] root (1,2): [Jy,Jz] = i Jx
+  [PASS] root (1,2): [Jz,Jx] = i Jy
+  [PASS] root (1,2): trace Gram is 1/2 delta
+  [PASS] root (1,2): Jz spectrum is -1/2, 0, +1/2  ([np.float64(-0.5), np.float64(0.0), np.float64(0.5)])
+  [PASS] root (1,2): exp(4 pi i Jz) = I_3
+  [PASS] root (1,2): exp(2 pi i Jz) is nontrivial
+  [PASS] root (1,2): active two-plane generator 1 is Pauli/2
+  [PASS] root (1,2): active two-plane generator 2 is Pauli/2
+  [PASS] root (1,2): active two-plane generator 3 is Pauli/2
+  [PASS] root (1,2): positive scaling c=1 preserves unit su2 bracket iff c=1
+  [PASS] root (1,2): positive scaling c=0.5 preserves unit su2 bracket iff c=1
+  [PASS] root (1,2): positive scaling c=2 preserves unit su2 bracket iff c=1
+  [PASS] root (1,2): positive scaling c=3 preserves unit su2 bracket iff c=1
+  [PASS] root (0,2) generator 1 is Hermitian
+  [PASS] root (0,2) generator 2 is Hermitian
+  [PASS] root (0,2) generator 3 is Hermitian
+  [PASS] root (0,2): [Jx,Jy] = i Jz
+  [PASS] root (0,2): [Jy,Jz] = i Jx
+  [PASS] root (0,2): [Jz,Jx] = i Jy
+  [PASS] root (0,2): trace Gram is 1/2 delta
+  [PASS] root (0,2): Jz spectrum is -1/2, 0, +1/2  ([np.float64(-0.5), np.float64(0.0), np.float64(0.5)])
+  [PASS] root (0,2): exp(4 pi i Jz) = I_3
+  [PASS] root (0,2): exp(2 pi i Jz) is nontrivial
+  [PASS] root (0,2): active two-plane generator 1 is Pauli/2
+  [PASS] root (0,2): active two-plane generator 2 is Pauli/2
+  [PASS] root (0,2): active two-plane generator 3 is Pauli/2
+  [PASS] root (0,2): positive scaling c=1 preserves unit su2 bracket iff c=1
+  [PASS] root (0,2): positive scaling c=0.5 preserves unit su2 bracket iff c=1
+  [PASS] root (0,2): positive scaling c=2 preserves unit su2 bracket iff c=1
+  [PASS] root (0,2): positive scaling c=3 preserves unit su2 bracket iff c=1
+
+----------------------------------------------------------------------------------------
+Part 4: conjugacy and trace-surface controls
+----------------------------------------------------------------------------------------
+  [PASS] permutation (0, 1, 2) preserves root SU2 trace scale
+  [PASS] permutation (0, 2, 1) preserves root SU2 trace scale
+  [PASS] permutation (1, 0, 2) preserves root SU2 trace scale
+  [PASS] permutation (1, 2, 0) preserves root SU2 trace scale
+  [PASS] permutation (2, 0, 1) preserves root SU2 trace scale
+  [PASS] permutation (2, 1, 0) preserves root SU2 trace scale
+  [PASS] all graph label permutations preserve the root SU2 scale
+  [PASS] full matter tensor trace doubles the gauge trace
+  [PASS] V3 gauge trace is half the full matter trace
+
+----------------------------------------------------------------------------------------
+Part 5: lane conclusion
+----------------------------------------------------------------------------------------
+  [PASS] root SU2 scale transport closes inside the finite V3 packet
+  [PASS] packet does not claim parent g_bare promotion
+  [PASS] physical color naming is outside the proof
+  [PASS] Wilson and beta claims are outside the proof
+
+========================================================================================
+  TOTAL: PASS=91, FAIL=0
+========================================================================================
+
+----- stderr -----
+

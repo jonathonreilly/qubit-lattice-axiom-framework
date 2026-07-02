@@ -5,8 +5,8 @@
 
 ## Artifact chain
 
-- Script: [`scripts/lattice_3d_nyquist_diffraction_probe.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_3d_nyquist_diffraction_probe.py)
-- Log: [`logs/2026-04-04-lattice-3d-nyquist-diffraction-probe.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-lattice-3d-nyquist-diffraction-probe.txt)
+- Script: [`scripts/lattice_3d_nyquist_diffraction_probe.py`](../scripts/lattice_3d_nyquist_diffraction_probe.py)
+- Log: [`logs/2026-04-04-lattice-3d-nyquist-diffraction-probe.txt`](../logs/2026-04-04-lattice-3d-nyquist-diffraction-probe.txt)
 
 This probe freezes the narrow question that was only described in the commit
 message:
@@ -77,8 +77,9 @@ So the honest interpretation is:
 
 This note should be read alongside the valley-linear finite-lattice bridge:
 
-- [`VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md`](/Users/jonreilly/Projects/Physics/docs/VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md)
-- [`docs/START_HERE.md`](/Users/jonreilly/Projects/Physics/docs/START_HERE.md) if you want the retained 3D gravity lane in the broader repo context
+- [`VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md`](VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md)
+- `docs/START_HERE.md` only as non-load-bearing broader repo context for the
+  retained 3D gravity lane
 
 The difference is:
 

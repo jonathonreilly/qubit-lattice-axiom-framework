@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Exact support runner on the admitted second-order returned carrier:
+Exact support runner on the explicit abstract three-slot C3 carrier:
 the minimal nontrivial scale-free C3-invariant selector variable is unique up
 to reparametrization, with a corrected distinction between the block-energy
 ratio rho_Q and the raw Fourier ratio rho_Fourier.
@@ -12,6 +12,11 @@ import sys
 
 import sympy as sp
 
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = ROOT / "docs" / "KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md"
 
 PASSES: list[tuple[str, bool, str]] = []
 
@@ -33,7 +38,10 @@ def section(title: str) -> None:
 
 
 def main() -> int:
-    section("A. Linear invariant scalars on the returned carrier")
+    note_text = NOTE_PATH.read_text()
+    note_flat = " ".join(note_text.split())
+
+    section("A. Linear invariant scalars on the abstract three-slot carrier")
 
     u, v, w = sp.symbols("u v w", real=True)
     a, b, c = sp.symbols("a b c", real=True)
@@ -63,7 +71,7 @@ def main() -> int:
         sp.simplify(r0.subs({u: t * u, v: t * v, w: t * w}) - t * r0) == 0,
     )
 
-    section("B. Quadratic invariant scalars on the returned carrier")
+    section("B. Quadratic invariant scalars on the abstract three-slot carrier")
 
     q11, q12, q13, q22, q23, q33 = sp.symbols("q11 q12 q13 q22 q23 q33", real=True)
     Q = sp.Matrix([[q11, q12, q13], [q12, q22, q23], [q13, q23, q33]])
@@ -149,6 +157,45 @@ def main() -> int:
         f"Q = {q_expr}",
     )
 
+    section("D. Source-boundary guards")
+    forbidden_gate_link = (
+        "](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)" in note_text
+    )
+    record(
+        "D.1 source note has no markdown dependency edge to the staggered-Dirac realization gate",
+        not forbidden_gate_link,
+    )
+    required_boundary_markers = [
+        "**Type:** positive_theorem",
+        "explicit abstract real three-slot",
+        "`C_3` carrier",
+        "none for the load-bearing selector theorem",
+        "separate bridge",
+        "The load-bearing carrier in this note is the explicit three-slot real vector",
+        "No dependency edge to the physical gate",
+    ]
+    missing = [marker for marker in required_boundary_markers if marker not in note_flat]
+    record(
+        "D.2 source note states the abstract-carrier theorem boundary",
+        not missing,
+        "missing markers = " + repr(missing),
+    )
+    stale_dependency_phrases = [
+        "this note depends on the **staggered-Dirac realization derivation target**",
+        "on the exact second-order returned mass carrier",
+        "For the admitted second-order returned carrier",
+        "Within the bounded packet",
+        "claim_type` remains `bounded_theorem",
+        "open physical gate",
+        "MINIMAL_AXIOMS_2026-05-03.md",
+    ]
+    stale_present = [phrase for phrase in stale_dependency_phrases if phrase in note_text]
+    record(
+        "D.3 source note does not state the physical carrier gate as load-bearing",
+        not stale_present,
+        "stale phrases = " + repr(stale_present),
+    )
+
     section("Summary")
 
     n_pass = sum(1 for _, ok, _ in PASSES if ok)
@@ -161,13 +208,14 @@ def main() -> int:
 
     print()
     if n_pass == n_total:
-        print("RESULT: on the exact second-order returned carrier, there is no")
+        print("RESULT: on the explicit abstract three-slot C3 carrier, there is no")
         print("nontrivial scale-free C3-invariant at linear order, and at quadratic")
         print("order there is exactly one nontrivial ratio after removing overall")
         print("scale. So the selector variable is unique up to reparametrization:")
         print("E_perp/E_+, 2/kappa, and Q all encode the same one-dimensional data.")
         print()
-        print("This is an exact support result on the admitted second-order carrier.")
+        print("This is an exact support result on the abstract carrier, not a")
+        print("physical staggered-Dirac carrier-identification theorem.")
         print(f"TOTAL: PASS={n_pass}, FAIL={n_fail}")
         return 0
 

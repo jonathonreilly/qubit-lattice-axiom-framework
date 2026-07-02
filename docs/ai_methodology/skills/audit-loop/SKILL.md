@@ -79,15 +79,27 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   premises only when already registered in
   `docs/audit/data/axiom_premise_nodes.json`; they satisfy dependency closure
   without making downstream rows `retained_bounded`. The current axiom baseline
-  is Lattice, Quantum, and Record; Record means durable registration of the
-  realized outcome in a supplied readout context, where the realized outcome is
-  the `K`/CPT orbit of the realized central sector and scalar readout is
-  finitely additive over finite pairwise-disjoint record collections. Record
-  does not supply the readout context, decomposition, `K`/CPT structure,
-  sector-generation rule, weighting, normalization, probability,
-  measurement/decoherence dynamics, time metric, within-sector data, occupancy
-  rule, P2/modulus, log-det, source/action, scale, or arbitrary observable
-  identification. The scale-reference primitive is the approved units
+  is Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
+  nearest-neighbor locality substrate. Qubit is the domain of local possibilities
+  with full one-site algebraic presentation `M_2(C)`, with `Cl(3,0)` only as
+  equivalent notation. Admissibility is one
+  fixed finite-neighborhood rule, the same at every lattice translate; for
+  each site, the available possibilities are determined by, and vary with,
+  the nearest-neighbor conditions, consistent with local records.
+  A site need not carry a record; when present, a record locks exactly one
+  local possibility from the subset available at that site under
+  Admissibility, with scalar-valued finite readout additive over finite
+  pairwise-disjoint record collections.
+  Downstream
+  structures such as context selection, decomposition, `K`/CPT structure,
+  sector-generation rules, weighting, normalization, probability, occurrence
+  rules, update laws, measurement/decoherence dynamics, time metric,
+  within-sector data, occupancy rules, P2/modulus, log-det readouts,
+  source/action bridges, scale, local observability, law-admissibility or
+  transition relations, kinetic-branch selection, or arbitrary observable
+  identification remain compatible targets but require derivation, bridge,
+  explicit admission, or approved primitive registration before use as
+  load-bearing content. The scale-reference primitive is the approved units
   primitive, not a Tier-A admission or a bounded Planck import. The
   kinetic-isotropy primitive is the approved structural OS0 kinetic-form
   isotropy `c_t = c_s`, not a Tier-A admission or a bounded-status source; it

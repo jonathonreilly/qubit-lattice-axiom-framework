@@ -3,6 +3,8 @@
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / smooth local gravitational
 continuum identification theorem
+**Script:** `scripts/frontier_universal_qg_smooth_gravitational_local_identification.py`
+(source-side verifier; PASS=6 FAIL=0 on current source)
 
 ## Verdict
 

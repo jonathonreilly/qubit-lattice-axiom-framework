@@ -3,6 +3,8 @@
 **Date:** 2026-04-15  
 **Role:** direct-universal quantum-gravity / project-native Sobolev-interface theorem
 **Status:** support - canonical PL Sobolev interface
+**Script:** `scripts/frontier_universal_qg_pl_sobolev_interface.py`
+(source-side verifier; PASS=5 FAIL=0 on current source)
 
 ## Verdict
 

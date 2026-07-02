@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""Definitive distance-law closure: sub-1% via 96^3 lattice + analytic correction.
+"""Finite-table distance-law diagnostic on ordered-cubic Dirichlet lattices.
 
-Closes the gravitational force exponent to sub-1% precision by:
+Computes the finite diagnostic table by:
   1. Sparse-direct Poisson solver on lattices up to 96^3 (884K sites)
-  2. Finite-size extrapolation alpha(N) = alpha_inf + c/N
+  2. Reporting several finite-size extrapolation families
   3. Analytic finite-box deflection prediction for cross-validation
   4. Mass-independence check (alpha independent of M)
 
 Convention: deflection delta(b) ~ 1/b^alpha => alpha = -1.0 for Newtonian gravity.
 Force exponent = alpha - 1 = -2.0.
+
+Boundary: the weighted mean of scaled-fit values for N>=56 is a selected
+finite-table diagnostic, not an independently theorem-selected continuum
+estimator and not architecture-independent Newton-law closure.
 
 The analytic prediction for a point source f = s/r on an infinite 3D lattice gives
 delta(b) = 2*k*s / b  (exact). On a finite box [0,N-1]^3 with Dirichlet BC,
@@ -325,11 +329,11 @@ def main():
     t_start = time.time()
 
     print("=" * 85)
-    print("DEFINITIVE DISTANCE LAW CLOSURE — UP TO 96^3 + ANALYTIC CORRECTION")
+    print("DISTANCE LAW FINITE-TABLE DIAGNOSTIC — UP TO 96^3 + ANALYTIC CORRECTION")
     print("=" * 85)
     print()
-    print("Method: Sparse-direct Poisson solver + ray deflection + finite-size extrapolation")
-    print("Target: alpha_inf = -1.000 (deflection convention) => F ~ 1/r^2")
+    print("Method: Sparse-direct Poisson solver + ray deflection + finite-table diagnostics")
+    print("Reference: alpha = -1.000 (deflection convention) => diagnostic F ~ 1/r^2")
     print()
 
     k = 4.0
@@ -671,9 +675,9 @@ def main():
 
     print()
 
-    # Determine best estimate
-    # Priority: weighted mean of scaled (most stable), then scaled extrap
-    best_label = "Weighted mean scaled (N>=56)"
+    # Selected diagnostic estimator. This is not an estimator-selection theorem:
+    # the runner also reports extrapolators that land several percent away.
+    best_label = "Selected weighted mean scaled (N>=56)"
     best_alpha = wmean
     best_err = wmean_err
 
@@ -686,7 +690,7 @@ def main():
     deviation_pct = deviation * 100
     sigma = deviation / best_err if best_err > 0 else float('inf')
 
-    print(f"Best estimate ({best_label}):")
+    print(f"Selected diagnostic estimator ({best_label}):")
     print(f"  alpha = {best_alpha:.5f} +/- {best_err:.5f}")
     print(f"Target:   -1.00000")
     print(f"Deviation: {deviation:.5f} ({deviation_pct:.3f}%)")
@@ -699,11 +703,11 @@ def main():
     print()
 
     if deviation_pct < 1.0 and sigma < 3.0:
-        print("PASS: alpha consistent with -1.0 to sub-1% precision.")
-        print("      Deflection law delta(b) ~ 1/b confirmed.")
-        print("      Gravitational force F ~ 1/r^2 in 3D.")
+        print("DIAGNOSTIC MATCH: selected alpha is consistent with -1.0 to sub-1% precision.")
+        print("      This is finite-table support, not theorem-selected continuum closure.")
+        print("      Other extrapolation estimators above remain load-bearing caveats.")
     elif deviation_pct < 1.0:
-        print(f"PASS (marginal): deviation < 1% but {sigma:.1f} sigma tension.")
+        print(f"DIAGNOSTIC MATCH (marginal): deviation < 1% but {sigma:.1f} sigma tension.")
     elif deviation_pct < 2.0:
         print(f"CLOSE: deviation = {deviation_pct:.2f}% (sub-2% but above 1% target).")
     else:
@@ -725,26 +729,25 @@ def main():
     # -----------------------------------------------------------------------
     print()
     print("=" * 85)
-    print("SAFE CLAIMS")
+    print("BOUNDED DIAGNOSTIC CLAIMS")
     print("=" * 85)
     print()
-    print("1. Valley-linear action S = L(1-f) with Coulomb field f = s/r on a 3D")
-    print("   lattice produces ray deflection delta(b) ~ 1/b^alpha with alpha -> -1.0")
-    print("   in the continuum limit.")
+    print("1. The runner computes a finite ordered-cubic Dirichlet Poisson/path-sum")
+    print("   diagnostic table for N = 31, 40, 48, 56, 64, 80, 96.")
     print()
-    print("2. Measurement from 31^3 to 96^3 yields:")
+    print("2. The selected scaled-window weighted mean for N>=56 gives:")
     print(f"   alpha = {best_alpha:.4f} +/- {best_err:.4f} (deflection convention)")
     print(f"   Force exponent = {force_exp:.4f} +/- {force_err:.4f}")
     print()
-    print("3. The Dirichlet-box field differs from pure 1/r by image-charge corrections,")
-    print("   but the power-law exponent of the deflection converges to -1.0 as N grows.")
-    print("   With a scaled fit range (b=4..N/6), alpha is within 0.5% of -1.0 for N>=64.")
+    print("3. The Dirichlet-box field differs from pure 1/r by image-charge corrections.")
+    print("   With the selected scaled fit range (b=4..N/6), alpha is within 1% of")
+    print("   -1.0 for N>=64 in the finite table.")
     print()
     print("4. The distance exponent is independent of mass strength M (verified for")
     print("   M = 0.5, 1.0, 2.0 at N = 64).")
     print()
-    print("5. Combined evidence: the inverse-square force law F ~ M/r^2 emerges from")
-    print("   valley-linear path summation in 3D with sub-percent precision.")
+    print("5. Boundary: this is bounded finite-table numerical support. It is not")
+    print("   a retained inverse-square law, continuum theorem, or estimator-selection theorem.")
 
 
 if __name__ == "__main__":

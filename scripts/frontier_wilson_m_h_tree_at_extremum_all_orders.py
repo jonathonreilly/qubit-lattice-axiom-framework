@@ -11,29 +11,49 @@ This is the EXACT (all orders in r) closed form, derived from the curvature
 at the Wilson-shifted extremum m^* = -4r (sister forward-reference) under
 the parent's uniform-N_taste = 16 channel admission.
 
+Per the independent audit of this row, the content is SPLIT into two scopes,
+and the runner checks are segregated accordingly:
+
+  - Part I [CORE] = the clean algebraic curvature-scale core (eq. (2)/(3),
+    the r=0 reduction, the small-r leading-order reduction). This is the
+    standalone DERIVED content: finite-sum arithmetic in symbolic r, u_0.
+  - Part II [CONDITIONAL READOUT] = the physical / Higgs-matching readout
+    (the external-m_H_PDG matching equation, the bisection root, the
+    leading-order shift comparisons). This is exact-rational arithmetic but
+    is CONDITIONAL on the unsupplied readout-identification, channel-
+    selection, tree-level mean-field, nonzero-r, and parent-u_0
+    normalization closures. It is NOT a derived physical Higgs mass or a
+    derivation of a canonical Wilson coefficient.
+
 The runner verifies, at exact rational precision via fractions.Fraction:
-  (Part 1) note structure;
+  (Part 1) note structure (including the audit-named Part I/Part II split);
   (Part 2) forbidden-vocabulary absence;
   (Part 3) cited upstreams (with graceful forward-references);
-  (Part 4) reduction at r = 0: each summand → 1/u_0^2; sum → 16/u_0^2; /64 →
-           1/(4 u_0^2); matches parent eq. [5];
-  (Part 5) reduction to PR-#761's leading order at small r: extracts the
-           coefficient -3/4 of r^2/u_0^4 in the Taylor expansion at small r,
-           verifying the all-orders form contains PR-#761 as its leading
+  (Part 4) [CORE] reduction at r = 0: each summand → 1/u_0^2; sum → 16/u_0^2;
+           /64 → 1/(4 u_0^2); matches parent eq. [5];
+  (Part 5) [CORE] reduction to PR-#761's leading order at small r: extracts
+           the coefficient -3/4 of r^2/u_0^4 in the Taylor expansion at small
+           r, verifying the all-orders form contains PR-#761 as its leading
            contribution;
-  (Part 6) bisection on bracket [0.26, 0.28] in Fraction arithmetic; verifies
-           bracket-endpoint sign change and converges to r_all_orders ≈
-           0.26855 ± 10^{-5};
-  (Part 7) comparison to leading-order linear-form value r_leading ≈ 0.23572:
-           shift +13.9 %;
-  (Part 8) perturbative-validity confirmation: r_all_orders < u_0 / 2 ≈ 0.439
-           (radius of convergence boundary set by k = 0, 4 summands);
+  (Part 6) [CONDITIONAL READOUT] bisection on bracket [0.26, 0.28] in
+           Fraction arithmetic; verifies bracket-endpoint sign change and
+           converges to r_all_orders ≈ 0.26855 ± 10^{-5};
+  (Part 7) [CONDITIONAL READOUT] comparison to leading-order linear-form
+           value r_leading ≈ 0.23572: shift +13.9 %;
+  (Part 8) [CONDITIONAL READOUT] perturbative-validity confirmation:
+           r_all_orders < u_0 / 2 ≈ 0.439 (radius of convergence boundary
+           set by k = 0, 4 summands);
   (Part 9) forbidden-import audit (stdlib only, no PDG pins beyond declared
            comparison);
-  (Part 10) boundary check (what is NOT closed).
+  (Part 10) boundary check (what is NOT closed; the five audit-named
+            conditional closures);
+  (Part 11) [SPLIT] audit-named core/readout segregation check: the note
+            carries the Part I / Part II split and enumerates the five
+            conditional closures.
 
-m_H_PDG = 125.10 GeV is used ONLY as a comparison input for the closure-
-value computation; it is NOT load-bearing for the derivation of (2).
+m_H_PDG = 125.10 GeV is used ONLY as a comparison input for the conditional
+matching readout (Part II); it is NOT load-bearing for the derivation of the
+Part I algebraic core (eq. (2)).
 
 stdlib only; exact `Fraction` arithmetic.
 """
@@ -123,7 +143,21 @@ def part1_note_structure():
         ("claim_type: bounded_theorem", "Claim type:** bounded_theorem"),
         ("status authority phrase",
          "source-note proposal only; audit verdict and"),
-        ("Claim section header", "## Claim"),
+        ("audit-named scope split header (2026-06-20)",
+         "## Scope split (audit-named, 2026-06-20)"),
+        ("Part I core scope label (standalone derived)",
+         "Part I — clean algebraic curvature-scale core"),
+        ("Part II conditional readout scope label",
+         "Part II — physical / Higgs-matching readout"),
+        ("Part II flagged CONDITIONAL / not supplied here",
+         "CONDITIONAL; not supplied here"),
+        ("diagnostic Q_W symbol introduced for the core",
+         "Q_W(r, u_0)"),
+        ("readout-identification listed as conditional closure",
+         "readout identification"),
+        ("parent-u_0 normalization listed as conditional closure",
+         "0.877681381"),
+        ("Claim section header (Part I)", "## Part I — Claim"),
         ("Proof-Walk section header", "## Proof-Walk"),
         ("Exact Arithmetic Check section header",
          "## Exact Arithmetic Check"),
@@ -172,8 +206,8 @@ def part1_note_structure():
          "HIGGS_MASS_FROM_AXIOM_NOTE.md"),
         ("Higgs-channel boundary upstream cited (sister)",
          "HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08"),
-        ("MINIMAL_AXIOMS upstream cited",
-         "MINIMAL_AXIOMS_2026-05-03"),
+        ("current MINIMAL_AXIOMS upstream cited",
+         "MINIMAL_AXIOMS_2026-06-05"),
         ("PDG comparison input flagged not-load-bearing",
          "comparison input only, not load-bearing"),
     ]
@@ -232,7 +266,7 @@ def part3_cited_upstreams():
         "docs/WILSON_BZ_CORNER_HAMMING_STAIRCASE_BOUNDED_NOTE_2026-05-08.md",
         "docs/HIGGS_MASS_FROM_AXIOM_NOTE.md",
         "docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
-        "docs/MINIMAL_AXIOMS_2026-05-03.md",
+        "docs/MINIMAL_AXIOMS_2026-06-05.md",
     ]
     for rel in must_exist:
         check(f"upstream exists: {rel}", (ROOT / rel).exists())
@@ -256,7 +290,7 @@ def part3_cited_upstreams():
 # Part 4: Reduction at r = 0 to parent eq. [5] (1 / (4 u_0^2))
 # ---------------------------------------------------------------------------
 def part4_reduction_at_r_zero():
-    section("Part 4: reduction at r = 0 to parent eq. [5] = 1/(4 u_0^2)")
+    section("Part 4 [CORE]: reduction at r = 0 to parent eq. [5] = 1/(4 u_0^2)")
     val_at_zero = m_H_W_squared_over_v_squared(Fraction(0))
     expected = Fraction(1) / (4 * U_0_SQ)
     print(f"  u_0 = {float(U_0)}, u_0^2 = {float(U_0_SQ):.6f}")
@@ -301,7 +335,7 @@ def part4_reduction_at_r_zero():
 # Part 5: Reduction to PR-#761's leading order at small r
 # ---------------------------------------------------------------------------
 def part5_reduction_to_leading_order():
-    section("Part 5: reduction to PR-#761 leading-order form at small r")
+    section("Part 5 [CORE]: reduction to PR-#761 leading-order form at small r")
     # PR #761's leading-order squared form:
     #   (m_H_W / v)^2_LO = (1 / (4 u_0^2)) · (1 - 3 r^2 / u_0^2)
     # We extract the coefficient of r^2 in the expansion of (m_H_W/v)^2 by
@@ -378,7 +412,14 @@ def part5_reduction_to_leading_order():
 # Part 6: Bisection for r_all_orders on [0.26, 0.28] in Fraction arithmetic
 # ---------------------------------------------------------------------------
 def part6_bisection_for_r_all_orders():
-    section("Part 6: bisection for r_all_orders on [0.26, 0.28] (Fraction)")
+    section("Part 6 [CONDITIONAL READOUT]: bisection for r_all_orders on "
+            "[0.26, 0.28] (Fraction)")
+    print("  NOTE: this is the physical/Higgs-matching readout (Part II of the")
+    print("  note). It is CONDITIONAL on the unsupplied readout-identification,")
+    print("  channel-selection, tree-level mean-field, nonzero-r, and parent-u_0")
+    print("  normalization closures.")
+    print("  Exact-rational arithmetic, but NOT a derived physical Higgs mass or")
+    print("  a derivation of a canonical Wilson coefficient.")
     print(f"  Target: (m_H_PDG / v)^2 = ({float(M_H_PDG_COMPARISON)}/{float(V_GEV)})^2")
     print(f"           = {float(TARGET_SQ):.10f}  (PDG comparison input ONLY)")
     print()
@@ -453,7 +494,8 @@ def part6_bisection_for_r_all_orders():
 # Part 7: Comparison to leading-order linear-form (PR #761) value 0.23572
 # ---------------------------------------------------------------------------
 def part7_comparison_to_leading_order(r_all_orders: Fraction):
-    section("Part 7: comparison to leading-order linear-form (PR #761)")
+    section("Part 7 [CONDITIONAL READOUT]: comparison to leading-order "
+            "linear-form (PR #761)")
     # PR #761's leading-order linear-Taylor matching equation:
     #   m_H_W ≈ m_H_zero · (1 - (3/2) r^2 / u_0^2) = m_H_PDG
     # ⇒  (r/u_0)^2 = (2/3) · (1 - m_H_PDG/m_H_zero)
@@ -562,7 +604,8 @@ def part7_comparison_to_leading_order(r_all_orders: Fraction):
 # Part 8: Perturbative validity (radius of convergence boundary)
 # ---------------------------------------------------------------------------
 def part8_perturbative_validity(r_all_orders: Fraction):
-    section("Part 8: perturbative validity (r < u_0 / 2 ≈ 0.439)")
+    section("Part 8 [CONDITIONAL READOUT]: perturbative validity "
+            "(r < u_0 / 2 ≈ 0.439)")
     # The Taylor expansion of f(x) = (u_0^2 - x)/(u_0^2 + x)^2 has radius of
     # convergence x = u_0^2 (the singularity at x = -u_0^2 is at distance
     # u_0^2 from the origin). For the dominant k = 0, 4 summands, x = 4 r^2,
@@ -678,10 +721,14 @@ def part10_boundary_check():
         "source-note proposal only" in NOTE_TEXT,
     )
 
-    # The matching value is flagged as conditional on three admissions:
+    # The matching value is flagged as conditional on the audit-named closures:
     check(
-        "matching value flagged as conditional on uniform-N_taste=16 admission",
-        "uniform-`N_taste = 16` channel admission (non-derived)" in NOTE_TEXT,
+        "matching value flagged as conditional on readout identification",
+        "readout identification" in NOTE_TEXT,
+    )
+    check(
+        "matching value flagged as conditional on uniform-N_taste=16 selection",
+        "uniform-`N_taste = 16` channel selection (non-derived)" in NOTE_TEXT,
     )
     check(
         "matching value flagged as conditional on tree-level mean-field",
@@ -691,6 +738,59 @@ def part10_boundary_check():
         "matching value flagged as conditional on non-zero r (not canonical KS)",
         "not part of the canonical pure-" in NOTE_TEXT,
     )
+    check(
+        "matching value flagged as conditional on parent-u_0 normalization surface",
+        "parent-`u_0` normalization surface" in NOTE_TEXT,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Part 11: Split-segregation check (audit-named, 2026-06-20)
+# ---------------------------------------------------------------------------
+def part11_split_segregation():
+    section("Part 11 [SPLIT]: audit-named core/readout segregation (2026-06-20)")
+    # The note must carry the Part I (clean algebraic core) / Part II
+    # (conditional physical readout) split named by the independent audit.
+    split_markers = [
+        ("scope-split header present",
+         "## Scope split (audit-named, 2026-06-20)"),
+        ("Part I = standalone derived curvature-scale core",
+         "Part I — clean algebraic curvature-scale core"),
+        ("Part I claim section present",
+         "## Part I — Claim: clean algebraic curvature-scale core"),
+        ("Part II = conditional physical/Higgs-matching readout",
+         "## Part II — Physical / Higgs-matching readout (CONDITIONAL"),
+        ("Part II explicitly flagged not supplied here",
+         "not supplied here"),
+        ("diagnostic Q_W symbol carries the core (not a Higgs-pole mass)",
+         "per-channel diagnostic curvature scale (`m_curv,W`), NOT a"),
+        ("Proof-Walk segregates Part I core",
+         "Part I — clean algebraic curvature-scale core (derived)"),
+        ("Proof-Walk segregates Part II conditional readout",
+         "Part II — physical / Higgs-matching readout (CONDITIONAL"),
+        ("Boundaries name derived scope (Part I)",
+         "**Derived scope (Part I).**"),
+        ("Boundaries name conditional scope (Part II)",
+         "**Conditional scope (Part II) — this note does not close:**"),
+    ]
+    for label, marker in split_markers:
+        ok = marker in NOTE_TEXT or marker in NOTE_FLAT
+        check(f"split: {label}", ok, f"marker = {marker!r}")
+
+    # The five audit-named conditional closures must all be enumerated.
+    closures = [
+        ("(1) readout identification", "readout identification"),
+        ("(2) channel selection (uniform N_taste=16)",
+         "uniform-`N_taste = 16` channel selection"),
+        ("(3) tree-level mean-field", "tree-level mean-field formalism"),
+        ("(4) nonzero Wilson coefficient r",
+         "non-zero Wilson coefficient `r`"),
+        ("(5) parent-u_0 normalization",
+         "parent-`u_0` normalization surface"),
+    ]
+    for label, marker in closures:
+        check(f"conditional closure enumerated: {label}",
+              marker in NOTE_TEXT)
 
 
 def main() -> int:
@@ -712,6 +812,7 @@ def main() -> int:
     part8_perturbative_validity(r_all_orders)
     part9_forbidden_imports()
     part10_boundary_check()
+    part11_split_segregation()
 
     print()
     print("=" * 88)
@@ -719,15 +820,18 @@ def main() -> int:
     print("=" * 88)
     if FAIL == 0:
         print()
-        print(" VERDICT: all-orders closed form (m_H_W/v)^2 = (1/64) Σ_k binomial(4,k) ·")
-        print(" (u_0^2 - (k-2)^2 r^2) / ((k-2)^2 r^2 + u_0^2)^2 verified at exact")
-        print(" rational precision. Reduces to 1/(4u_0^2) at r=0 (matches parent eq.")
-        print(" [5]) and to PR-#761's leading order at small r. Bisection gives")
-        print(" r_all_orders ≈ 0.26855 ± 10^{-5}, a ~14% shift from the leading-order")
-        print(" matching value 0.23572. The all-orders shift is non-trivial: leading-")
-        print(" order linear-Taylor under-estimates r by ~14% under the canonical")
-        print(" admissions. The matching readout is conditional on uniform-N_taste=16 + tree-level")
-        print(" + non-zero r.")
+        print(" VERDICT: split into Part I [CORE] (derived) and Part II")
+        print(" [CONDITIONAL READOUT]. Part I: the all-orders curvature-scale core")
+        print(" Q_W = (1/64) Σ_k binomial(4,k) · (u_0^2 - (k-2)^2 r^2) /")
+        print(" ((k-2)^2 r^2 + u_0^2)^2 verified at exact rational precision; reduces")
+        print(" to 1/(4u_0^2) at r=0 (matches parent eq. [5]) and to PR-#761's")
+        print(" leading order at small r. Part II (CONDITIONAL): bisection gives the")
+        print(" matching value r_all_orders ≈ 0.26855 ± 10^{-5}, a ~14% shift from the")
+        print(" leading-order matching value 0.23572 — exact-rational arithmetic, but")
+        print(" CONDITIONAL on the unsupplied readout-identification, uniform-N_taste=16")
+        print(" channel-selection, tree-level mean-field, nonzero-r, and parent-u_0")
+        print(" normalization closures; NOT a derived physical Higgs mass or a")
+        print(" derivation of a canonical Wilson coefficient.")
     return 0 if FAIL == 0 else 1
 
 

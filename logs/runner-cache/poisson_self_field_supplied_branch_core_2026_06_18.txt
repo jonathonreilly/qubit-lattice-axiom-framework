@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/poisson_self_field_supplied_branch_core_2026_06_18.py
+runner_sha256: abe66b167f86d4468ee576f3123e39a1bab3e0fee10c960410f6683482ca21f9
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 70.22
+status: ok
+----- stdout -----
+========================================================================
+POISSON SUPPLIED-BRANCH CORE CERTIFICATE
+========================================================================
+PASS: core note contains firewall phrase: not a retained derivation of gravity
+PASS: core note contains firewall phrase: PDE, source, boundary condition, normalization, physic
+PASS: core note contains firewall phrase: longitudinal falloff remain supplied or imposed
+PASS: core note contains firewall phrase: This split adds no repo-wide axiom
+PASS: parent note cites supplied-branch core split
+PASS: parent note uses current Born cache value
+PASS: parent runner no longer advertises retained parent results
+PASS: longitudinal denominator remains formula-level source
+PASS: finite 2D Poisson residual within declared budget -- max_residual=3.18735706e-05
+PASS: zero transverse Dirichlet boundary remains exact -- max_boundary=0.0e+00
+PASS: Fam1 centroid shift is TOWARD -- delta=+0.002284
+PASS: Fam1 F~M remains near linear -- F~M=0.9997
+PASS: Fam2 centroid shift is TOWARD -- delta=+0.002243
+PASS: Fam2 F~M remains near linear -- F~M=0.9993
+PASS: Fam3 centroid shift is TOWARD -- delta=+0.002173
+PASS: Fam3 F~M remains near linear -- F~M=0.9994
+PASS: Born cancellation is at machine precision on active Poisson branch -- Born |I3|/P=9.84e-16
+PASS: s=0 null branch is exact -- delta=+0.000000e+00
+------------------------------------------------------------------------
+SUMMARY: PASS=18 FAIL=0
+VERDICT: PASS -- bounded supplied-branch core is audit-ready
+
+----- stderr -----
+

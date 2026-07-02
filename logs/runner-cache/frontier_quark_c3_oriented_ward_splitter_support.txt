@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_c3_oriented_ward_splitter_support.py
-runner_sha256: b3e8581f8e63aa58c4fdf55393ebf876ee68c7b19e22f8fdd6f1e5800813ceda
+runner_sha256: 0a25faadcc4b4af3f0a923eca20edf496ca97e5c21290b72e307192b22a947f0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -79,9 +79,19 @@ PASS: new note does not claim numerical Yukawa ratios
 PASS: runner carries no PDG mass constants
 PASS: Lane 3 remains open in note
 
+G. Dependency graph repair (2026-06-20)
+------------------------------------------------------------------------
+PASS: load-bearing carrier is re-cited as retained THREE_GEN observable surface
+PASS: staggered-Dirac gate is NOT a markdown one-hop authority of this note -- no `](STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md)` markdown link
+PASS: staggered-Dirac gate survives only as plain-text provenance pointer
+PASS: note records the 2026-06-20 dependency repair
+PASS: primary runner does not read the staggered-Dirac gate as a surface
+PASS: every authority/context surface read by the runner exists
+PASS: note preserves the source-status authority boundary
+
 Summary
 ------------------------------------------------------------------------
-TOTAL: PASS=51, FAIL=0
+TOTAL: PASS=58, FAIL=0
 VERDICT: oriented C3 supplies an exact local splitter primitive, but leaves
 the Lane 3 quark-mass Ward source/readout law open.
 

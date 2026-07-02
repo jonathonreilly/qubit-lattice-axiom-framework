@@ -6,7 +6,7 @@
 and bounded Coulomb Green-kernel scaling companion that complement the
 `d >= 3` lower-bound result in
 [DIMENSION_SELECTION_NOTE.md](DIMENSION_SELECTION_NOTE.md).
-**Primary source-packet runner:** [`scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py`](../scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py)
+**Primary runner:** [`scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py`](../scripts/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.py)
 **Cached source-packet output:** [`logs/runner-cache/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.txt`](../logs/runner-cache/dimension_selection_upper_bound_textbook_import_scope_certificate_2026_06_12.txt)
 **Status authority:** independent audit lane only.
 

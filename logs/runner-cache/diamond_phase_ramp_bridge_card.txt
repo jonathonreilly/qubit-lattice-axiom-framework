@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/diamond_phase_ramp_bridge_card.py
-runner_sha256: 1178d2f701c7fed9fd233f93264b9097ef282044081dce302dc712f15951db86
+runner_sha256: 8fb9e1f9ba8ac499cd7573f1f7ba677d0c21379a59db9f95055272f460950fee
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ====================================================================================================
@@ -12,7 +12,7 @@ DIAMOND PHASE-RAMP BRIDGE CARD
 ====================================================================================================
 
 Bridge row
-  retained exact-family row: s = 0.004
+  proxy phase-ramp row: s = 0.004
   raw proxy phasor: X = -0.966, Y = -0.259, phi = -2.880 rad
   raw phase-ramp slope: -0.4925 rad / z
   normalized to the s = 0.001 reference row: X = -1.308, Y = +0.384, phi = +3.892, slope = +4.053

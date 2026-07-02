@@ -30,6 +30,13 @@ No new axiom, literature value, external comparator, fitted constant, rounded an
   supplies `H_scalar`, the scalar Bessel local-CLT atom and explicit
   remainder bound. This note uses it as a dependency and does not re-prove it.
 
+- [`NATIVE_GAUGE_TRANSFER_HDET_GAUSSIAN_CORE_SUPPORT_NOTE_2026-06-18.md`](NATIVE_GAUGE_TRANSFER_HDET_GAUSSIAN_CORE_SUPPORT_NOTE_2026-06-18.md)
+  supplies `H_det_core`, a bounded-support determinant-core check showing that
+  the leading scalar Gaussian core, after 3x3 Weyl determinant mode summation
+  and `(0,0)` normalization, aligns with the `SU(3)` saddle diagonal on the
+  sampled active windows. This support does not derive `K_W(A)`, determinant
+  tail constants, or `H_spec`.
+
 - `NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md`
   is route-target context only, not a proof dependency, for the Route B
   value-side target and the already-derived geometric piece. Quote anchor:
@@ -166,7 +173,11 @@ E_lambda^trunc(M,R,t)
  <= Theta_R(t) sum_(|n|<=M sqrt(t)) Had_n.
 ```
 
-This is not yet K_W(a). The missing step is not entrywise scalar control; it is the determinant-level passage from the mode sums
+This is not yet K_W(a). The 2026-06-18 `H_det_core` support note checks that
+the leading Gaussian determinant mode sum has the correct normalized saddle
+shape on sampled active windows. The missing step is now narrower than
+entrywise scalar control: it is the determinant-level passage from the exact
+Bessel mode sums
 
 ```text
 S_0(lambda,t) = sum_n det G_n,
@@ -207,7 +218,7 @@ K_tail_sad(A) = ((A + 2)^3 / 8) exp[-3 A^2 / 4].
 
 This follows from `s = x + y > A`, `Q >= 3 s^2/4`, and the saddle polynomial bound. It is a saddle multiplier tail, not a true Wilson tail.
 
-For the true Wilson diagonal, `H_scalar` on compact windows can bound a finite annulus after the determinant propagation above. It does not control the infinite determinant-mode sum or the full outside-weight region unless it is supplemented by the tail clause inside `H_det(A)` or by a separate true-tail lemma. The exact next path this opens is therefore a determinant-level tail domination statement, not a scalar fit.
+For the true Wilson diagonal, `H_scalar` on compact windows can bound a finite annulus after the determinant propagation above, and `H_det_core` checks the leading Gaussian determinant normalization on sampled active windows. These do not control the exact-Bessel infinite determinant-mode sum or the full outside-weight region unless they are supplemented by the tail clause inside `H_det(A)` or by a separate true-tail lemma. The exact next path this opens is therefore a determinant-level tail domination statement, not a scalar fit.
 
 ## Route B Assembly
 
@@ -278,6 +289,7 @@ H_spec:
 ## Sufficiency Verdict
 
 H_scalar is necessary but not sufficient for the two-route half-line assembly.
+H_scalar plus H_det_core is necessary but not sufficient for the two-route half-line assembly.
 
 The precise outcome is:
 
@@ -288,7 +300,10 @@ partial-with-named-missing-link:
   Route A still needs H_spec, the reduced A2 spectral-domination lemma.
 ```
 
-Thus W87 finishing the scalar Bessel lemma is not, by itself, the whole theorem. The next path this opens is a focused `H_det(A)` determinant-normalization/tail note and a separate `H_spec` reduced-spectral comparison note.
+Thus W87 finishing the scalar Bessel lemma and the 2026-06-18 Gaussian-core
+support are not, by themselves, the whole theorem. The next path is now a
+focused exact-Bessel `H_det_remainder(A)` determinant-normalization/tail note
+and a separate `H_spec` reduced-spectral comparison note.
 
 ## Witness Rows
 
@@ -350,8 +365,15 @@ half-line assembly. It is not an audit verdict.
 N1 - Alternative route enumeration:
 
 1. Entrywise determinant propagation. ATTEMPTED. It succeeds at the finite multilinear expansion above, but stops before normalized `K_W` because determinant cancellation and `c_(0,0)` normalization are not supplied by entrywise bounds.
-2. Direct determinant Gaussian core evaluation. ATTEMPTED. Rung six supplies the leading saddle profile, but not the uniform determinant-mode summation and denominator lower bound needed to turn `S_0,S_1` into an explicit `K_W[A;P_1,C]`.
-3. Compact-window tail by H_scalar. ATTEMPTED. The literal scalar hypothesis controls finite annuli, but the infinite determinant-mode and outside-weight tails need an added domination clause.
+2. Direct determinant Gaussian core evaluation. ATTEMPTED and partially
+   supported by the 2026-06-18 `H_det_core` note for sampled active windows.
+   It still does not turn exact Bessel `S_0,S_1` into an explicit
+   `K_W[A;P_1,C]`.
+3. Compact-window tail by H_scalar. ATTEMPTED. The literal scalar hypothesis
+   controls finite annuli, and `H_det_core` verifies the leading Gaussian
+   determinant-core normalization on sampled active windows, but the
+   exact-Bessel infinite determinant-mode and outside-weight tails need an
+   added domination clause.
 4. Exact derivative transfer by recurrence. ATTEMPTED. The recurrence transfers value-side coefficient bounds to one-step derivative neighbors, but it does not compare the reduced spectral constants.
 5. Reduced spectral comparison. ATTEMPTED through W86. The formal `c_J/c_D` quantities are identified, but `c_D <= c_J` is not derived by the scalar Bessel hypothesis.
 6. Numerical residual grid. ATTEMPTED as a witness only. It is rejected as a proof route because fitting a `K_W` from those rows would be value-from-target.
@@ -360,10 +382,12 @@ N2 - Wall-independence audit:
 
 | wall | closes if H_scalar is proved? | independent reason |
 |---|---|---|
-| `H_det(A)` determinant cancellation/normalization and true tail | no | it concerns the 3x3 mode-summed Weyl determinant ratio and `c_(0,0)`, not scalar entries alone |
+| `H_det_remainder(A)` exact-Bessel determinant cancellation/normalization and true tail | no | `H_det_core` covers the leading Gaussian core; the remaining wall concerns scalar correction propagation, exact-Bessel tails, and `c_(0,0)` lower constants |
 | `H_spec` reduced A2 spectral domination | no | it concerns reduced eigenfunctions and Rayleigh quotients, not Bessel coefficient asymptotics |
 
-Closing `H_det(A)` would not prove `H_spec`. Closing `H_spec` would not provide `K_W(A)` or true tails. The collapsed wall set therefore has two independent additions beyond `H_scalar`.
+Closing `H_det_remainder(A)` would not prove `H_spec`. Closing `H_spec` would
+not provide `K_W(A)` or true tails. The collapsed wall set therefore has two
+independent additions beyond `H_scalar + H_det_core`.
 
 N3 - Hidden-wall scan:
 
@@ -405,7 +429,7 @@ python3 scripts/native_gauge_transfer_weyl_determinant_assembly_rung_ten_bounded
 Expected final line:
 
 ```text
-TOTAL: PASS=24, FAIL=0
+TOTAL: PASS=26, FAIL=0
 ```
 
 Regenerate the cache:

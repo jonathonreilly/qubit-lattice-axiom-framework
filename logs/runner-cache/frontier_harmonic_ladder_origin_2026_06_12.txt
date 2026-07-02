@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/frontier_harmonic_ladder_origin_2026_06_12.py
+runner_sha256: 9171fe0ca4c85e4d72b59a67bf2586c64f3ce7aadfea2eacbd3c4e2245eb2a11
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.23
+status: ok
+----- stdout -----
+==============================================================================
+Harmonic-ladder origin of the L=3 capture deficit
+==============================================================================
+constants: L=3, NC=3, tau=0.35, T=256, window=64
+raw FFT activity floor=1.0e-10 of coefficient energy; sampled gap resolution=0.0701248360176
+base-angle harmonic samples=4096, harmonic activity floor=1.0e-10
+
+H1 anchors from tracked capture-deficit note
+------------------------------------------------------------------------------
+  [PASS] ANCHOR: no-floor coupled eigenpair gap set is frozen as (-3,0,+3) per state  (K3:(-3.0, 0.0, 3.0), K4:(-3.0, 0.0, 3.0), K5:(-3.0, 0.0, 3.0), K6:(-3.0, 0.0, 3.0))
+  [PASS] ANCHOR: landed capture@order4/window64 table is reproduced  (K3:0.898130088565, K4:0.777619557343, K5:0.899155545493, K6:0.994936516891)
+  [PASS] ANCHOR: landed Hankel tail fractions are reproduced  (K3:0.101869911435, K4:0.222380442657, K5:0.100844454507, K6:0.00506348310869)
+  [PASS] anti-fabrication: landed raw FFT active counts are the frozen 255-per-state table  (K3:255, K4:255, K5:255, K6:255)
+  [PASS] ANCHOR: full raw tone sum reconstructs the centered trajectory below 1e-12  (K3:1.33226762955e-15, K4:6.66133814775e-16, K5:8.881784197e-16, K6:1.11022302463e-15)
+
+H2 sampled spectrum vs integer ladder
+------------------------------------------------------------------------------
+  [PASS] H2 raw FFT: active counts above the fixed 1e-10 energy floor are frozen  (K3:255, K4:255, K5:255, K6:255)
+  [PASS] H2 measured alternative: raw FFT has only the frozen near-ladder bin count  (K3:5, K4:5, K5:5, K6:5)
+  [PASS] H2 measured alternative: raw FFT has the frozen off-ladder leakage count  (K3:250, K4:250, K5:250, K6:250)
+  [PASS] H2 measured alternative: raw FFT off-ladder leakage mass is frozen  (K3:0.491794349374, K4:0.559221159462, K5:0.362396476343, K6:0.152027873683)
+  [PASS] H2 base-angle construction consistency: the ladder-grid readout carries integer-k gaps to machine precision (a consistency check of the grid, not a physical finding)  (K3:0, K4:0, K5:0, K6:0)
+  [PASS] H2 raw-FFT fundamental g=3 is off the FFT grid by the frozen margin (forces the leakage; not a tautology of the ladder construction)  (bin=42.780849, |offgrid|=0.219151, min=0.15)
+  [PASS] H2 physical base-angle active harmonic counts are frozen  (K3:1034, K4:4081, K5:978, K6:50)
+  [PASS] H2 physical base-angle maximum active ladder depth is frozen  (K3:589, K4:2048, K5:548, K6:27)
+
+H3 ladder weights and depth
+------------------------------------------------------------------------------
+  paired coefficient weights w_|k|; omitted mass is below activity floor
+  state active max|k|      w1        w2        w3        w4        w5    tail|k|>1  HankelTail
+  K=3   1034    589  0.080483  0.553096  0.224756  0.078559  0.003383     0.919517    0.101870
+  K=4   4081   2048  0.144052  0.039739  0.243851  0.046252  0.168455     0.855948    0.222380
+  K=5    978    548  0.538676  0.235903  0.078440  0.067069  0.010659     0.461324    0.100844
+  K=6     50     27  0.958536  0.031143  0.005116  0.002228  0.002721     0.041464    0.005063
+  [PASS] H3 coefficient ladder tail beyond |k|=1 is the frozen measured table  (K3:0.919517036237, K4:0.855947795669, K5:0.461324082129, K6:0.0414639470671)
+  [PASS] H3 raw nearest-ladder grouped tail beyond |k|=1 is the frozen measured table  (K3:0.896835531616, K4:0.44582105739, K5:0.380672001769, K6:0.0391430188619)
+  [PASS] H3 measured alternative: coefficient-tail order is frozen as K6,K5,K4,K3  (order=(6, 5, 4, 3))
+  [PASS] H3 landed depth order remains the Hankel-tail order K6,K5,K3,K4  (order=(6, 5, 3, 4))
+  [PASS] H3 measured alternative: coefficient ladder tail is not the landed Hankel tail  (K3:0.817647124802, K4:0.633567353012, K5:0.360479627623, K6:0.0364004639584)
+
+H4 nonlinearity tie: second harmonic
+------------------------------------------------------------------------------
+  K=3: physical w2=0.553095718694, w2/w1=6.87220948466
+  K=4: physical w2=0.0397389516712, w2/w1=0.275864933874
+  K=5: physical w2=0.235902871426, w2/w1=0.437930984609
+  K=6: physical w2=0.0311427370139, w2/w1=0.032489896362
+  [PASS] H4 anti-fabrication: physical k=2 ladder weight is nonzero in every state  (K3:0.553095718694, K4:0.0397389516712, K5:0.235902871426, K6:0.0311427370139)
+  [PASS] H4 physical fundamental weights w1 are frozen  (K3:0.0804829538344, K4:0.144052203784, K5:0.538675909484, K6:0.958536052775)
+  [PASS] H4 physical k=2 weights are frozen  (K3:0.553095718694, K4:0.0397389516712, K5:0.235902871426, K6:0.0311427370139)
+  [PASS] H4 physical k=2/fundamental ratios are frozen  (K3:6.87220948466, K4:0.275864933874, K5:0.437930984609, K6:0.032489896362)
+  [PASS] H4 raw nearest-ladder k=2 grouped weights are frozen  (K3:0.693763230988, K4:0.14179591721, K5:0.280326127923, K6:0.034301272387)
+==============================================================================
+TOTAL: PASS=23 FAIL=0
+==============================================================================
+SCOPE: exact finite L=3 realized states only.
+FINDING: the base-angle determinant-phase readout has an integer harmonic
+  ladder and nonzero k=2 in every state.  The raw 256-step FFT used for the
+  landed active-count anchor is not itself an exact ladder display; because
+  3*tau is off the FFT grid, it shows frozen off-ladder leakage.  The landed
+  capture depth is the Hankel-SVD tail order, not the simple coefficient
+  tail beyond the fundamental.
+
+----- stderr -----
+

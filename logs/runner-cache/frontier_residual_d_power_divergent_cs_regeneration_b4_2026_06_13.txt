@@ -1,0 +1,98 @@
+===== runner cache v1 =====
+runner: scripts/frontier_residual_d_power_divergent_cs_regeneration_b4_2026_06_13.py
+runner_sha256: 66f402f38fcc8e4fb7df247e0960bc1edb2ef3ffb7247d109095eebc1d54342c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.15
+status: ok
+----- stdout -----
+========================================================================================
+RESIDUAL-D POWER-DIVERGENT c_s REGENERATION vs THE B4-CUT DISCRETE-TICK MEASURE
+========================================================================================
+Question: does B4 axis-relabel, which kills the MARGINAL anisotropy on the
+OS0 discrete-tick surface, also forbid the POWER-DIVERGENT (a^-2) feed-through
+ON the fully-cut B4 measure, while CONTINUOUS-TIME lets it through?
+
+----------------------------------------------------------------------------------------
+Part A -- marginal B4 protection on the cut measure (sanity)
+----------------------------------------------------------------------------------------
+  [PASS] spatial O_h alone leaves two diagonal kinetic coefficients (c_t, c_s split allowed)  --  invariant dimension=2
+  [PASS] B4 leaves one diagonal kinetic coefficient (c_t=c_s forced)  --  invariant dimension=1
+  nk=8: cut-measure marginal curvature |Sigma_t - Sigma_s| = 0.000e+00
+  nk=10: cut-measure marginal curvature |Sigma_t - Sigma_s| = 6.939e-18
+  nk=12: cut-measure marginal curvature |Sigma_t - Sigma_s| = 0.000e+00
+  [PASS] B4-symmetric (cut) measure: marginal Sigma_t - Sigma_s = 0 to machine precision  --  max diff=6.939e-18
+
+----------------------------------------------------------------------------------------
+Part B -- isolate the power-divergent (a^-2) piece; verify a^-2 scaling
+----------------------------------------------------------------------------------------
+  physical power-divergent curvature integral Sigma_powerdiv(a):
+    a=0.50000: Sigma_powerdiv = 1.186248e-01,  a^2 * Sigma = 2.965621e-02
+    a=0.25000: Sigma_powerdiv = 4.744994e-01,  a^2 * Sigma = 2.965621e-02
+    a=0.12500: Sigma_powerdiv = 1.897997e+00,  a^2 * Sigma = 2.965621e-02
+    a=0.06250: Sigma_powerdiv = 7.591990e+00,  a^2 * Sigma = 2.965621e-02
+    a=0.03125: Sigma_powerdiv = 3.036796e+01,  a^2 * Sigma = 2.965621e-02
+  consecutive ratios Sigma(a/2)/Sigma(a) (expect ~4): ['4.0000', '4.0000', '4.0000', '4.0000']
+  [PASS] halving a quadruples the power-divergent integral (1/a^2 ratio ~ 4)  --  ratios=[4.0, 4.0, 4.0, 4.0]
+  [PASS] log-log slope of Sigma_powerdiv(a) vs a equals -2 (power-divergent a^-2 scaling)  --  fitted slope=-2.00000 (intercept C=2.96562e-02)
+  [PASS] a^2 * Sigma_powerdiv is constant across the a-grid (extracts the coefficient C)  --  relative spread of a^2*Sigma=2.410e-13, C~2.96562e-02
+
+----------------------------------------------------------------------------------------
+Part C -- CORE: marginal projection of the power-divergent piece on the B4-cut measure
+----------------------------------------------------------------------------------------
+  nk=8: delta_c_s_marginal (power-div, B4-cut) = +0.000e+00
+  nk=10: delta_c_s_marginal (power-div, B4-cut) = +6.939e-18
+  nk=12: delta_c_s_marginal (power-div, B4-cut) = +0.000e+00
+  raw curvature 4-vector spread (pre-orbit) = 1.388e-17
+  B4 orbit-averaged curvature spread        = 0.000e+00
+  [PASS] power-divergent marginal projection delta_c_s = 0 on the B4-cut measure (machine precision)  --  delta_c_s_marginal=6.939e-18
+  [PASS] raw cut-measure curvature 4-vector is ALREADY B4-isotropic (orbit average changes nothing)  --  raw spread=1.388e-17, orbit spread=0.000e+00
+  B4-broken (xi=1.5 temporal block, cut measure) |Sigma_t - Sigma_s| = 1.528e-02
+  [PASS] falsification: an anisotropic (xi=1.5) temporal block on the SAME cut measure gives nonzero Sigma_t - Sigma_s -- the Part C zero is genuine B4-covariance, not baked into the cut  --  B4-broken |Sigma_t - Sigma_s|=1.528e-02  vs  B4-symmetric=6.939e-18
+
+----------------------------------------------------------------------------------------
+Part D -- B4-covariance breaking on continuous time: BLOCK form is the dominant driver
+----------------------------------------------------------------------------------------
+  half0= 20.0: CASE 3 (continuum block, uncut) Sigma_t - Sigma_s = +4.19048e-03
+  half0= 40.0: CASE 3 (continuum block, uncut) Sigma_t - Sigma_s = +3.65759e-03
+  half0= 80.0: CASE 3 (continuum block, uncut) Sigma_t - Sigma_s = +3.45326e-03
+  CASE 2 (lattice block, cut range)     Sigma_t - Sigma_s = +0.00000e+00  [discrete-tick: PROTECTED]
+  CASE 1 (continuum block, CUT range)   Sigma_t - Sigma_s = +1.19209e-02  [block alone breaks it]
+  CASE 3 (continuum block, uncut range) Sigma_t - Sigma_s = +3.45326e-03  [full continuous time]
+  [PASS] the non-B4-covariant continuum temporal BLOCK alone -- with a fully CUT measure -- regenerates a nonzero marginal Sigma_t - Sigma_s (block, not range, is the dominant breaker)  --  CASE 1 (continuum block, cut)=+1.19209e-02  >=  CASE 3 (full continuous)=+3.45326e-03
+  [PASS] the full continuous-time surface regenerates a robustly NONZERO marginal Sigma_t - Sigma_s (the Collins obstruction lives off the discrete-tick surface)  --  delta_c_s(continuous)=+3.45326e-03
+  [PASS] continuous-time result is stable as the temporal range widens (genuine continuum value)  --  |change last widening|=2.043e-04 < 10% of value
+  [PASS] only the B4-covariant discrete-tick regulator (CASE 2) keeps the marginal projection many orders below the B4-broken cases (the protection IS the discrete-tick B4-covariance)  --  CASE 2=0.000e+00  vs  CASE 1=1.192e-02, CASE 3=3.453e-03
+
+----------------------------------------------------------------------------------------
+Part E -- on the B4 measure the power divergence renormalizes the dim-6 cubic harmonic
+----------------------------------------------------------------------------------------
+  [PASS] lattice dispersion's first correction is the dim-6 term with coefficient -a^2/3 (c_4=-1/3 family)  --  k^4 coefficient=-a**2/3
+  marginal (c_t-c_s) operator B4 orbit average -> max |.| = 2.368e-14 (projected out)
+  cubic harmonic sum p_mu^4 is B4-fixed: max |orbit-self| = 8.242e-13, std=6.834e+00
+  [PASS] the dim-4 marginal (c_t - c_s) operator is projected OUT by the B4 orbit average (-> no marginal regen)  --  B4-averaged marginal operator max|.|=2.368e-14
+  [PASS] the dim-6 cubic harmonic sum_mu p_mu^4 is B4-INVARIANT (survives the orbit average; power div lands here)  --  orbit-self=8.242e-13, nontrivial std=6.834e+00
+  [PASS] the surviving dim-6 residual is Planck-suppressed at 1 GeV via the scale primitive a^-1=M_Pl  --  (1/3)(1 GeV/M_Pl)^2=2.240e-39
+
+========================================================================================
+NARRATION (interpretation, not a check):
+  On the OS0 discrete-tick B4 regulator the power-divergent (a^-2) feed-through
+  is B4-isotropic: its marginal projection delta_c_s = 0 (Part C). Breaking the
+  temporal direction's B4-covariance regenerates a nonzero marginal delta_c_s --
+  dominantly via the non-B4-covariant continuum temporal BLOCK (Part D, CASE 1:
+  the block alone breaks it even with a fully cut measure), with the uncut range
+  adding to it (CASE 3). So the protection is the discrete-tick B4-covariance
+  (all four directions on the same lattice block + cut BZ), which the
+  continuous-time limit breaks; it is NOT the integration range alone. On OS0
+  the power divergence is confined to the Planck-suppressed dim-6 cubic harmonic
+  (Part E).
+
+  KEY NUMBERS: delta_c_s_marginal(B4-cut) = 6.939e-18
+               delta_c_s(continuous-time)  = +3.45326e-03
+               power-divergent scaling fit = a^(-2.0000) (expect a^-2)
+========================================================================================
+SUMMARY: PASS=17 FAIL=0
+========================================================================================
+
+----- stderr -----
+

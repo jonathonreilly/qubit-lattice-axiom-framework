@@ -1,23 +1,23 @@
+actual_current_surface_status: exact-support
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: "The artifact sharpens the typed bridge target but leaves the selector theorem and rho_E derivation open."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+
 # Claim Status Certificate
 
-## Block 03
+Block04 is exact support / selector-boundary only.
 
-- Artifact:
-  `docs/QUARK_ROUTE2_COLOR_COVARIANCE_BRIDGE_EQUIVALENCE_SUPPORT_NOTE_2026-06-21.md`
-- Actual current-surface status: `exact-support`
-- Trace class: `upstream_support`
-- Reachability to target: `supports`
-- Conditional surface status: null
-- Hypothetical axiom status: null
-- Admitted observation status: null
-- Proposal allowed: false
-- Proposal allowed reason: the artifact proves a bridge equivalence, not the
-  typed bridge or endpoint triple.
-- Audit required before effective retained: true
-- Bare retained allowed: false
+It does not derive:
 
-## Open imports
-
-- `lambda=kappa^2` remains open.
-- `c_TE=-F_adj` remains open.
-- `rho_E=21/4` remains open.
+- `c_TE=-F_adj`;
+- `c_TE=-R_phys(0)`;
+- `rho_E=21/4`;
+- the endpoint triple;
+- quark masses;
+- any audit verdict.

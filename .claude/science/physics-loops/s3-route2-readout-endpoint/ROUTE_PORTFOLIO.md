@@ -1,21 +1,29 @@
 # Route Portfolio
 
-## Chosen stretch route
+## Selected route
 
-Check whether the two live positive bridge targets are independent:
+Direct typed-edge sharpening:
 
 ```text
-c_TE=-F_adj,
-q_E/q_T=kappa^2.
+kappa = N_color/N_pair,
+s_TE = -N_pair,
+c_TE = s_TE/kappa^2 = -N_pair^3/N_color^2.
 ```
 
-Result: under `s_TE=-2`, `F_adj=8/9`, and `kappa^2=9/4`, they are exact
-algebraic equivalents. This supports future bridge work but does not derive
-the typed bridge.
+At the current source counts `(N_pair,N_color)=(2,3)`, this equals
+`-8/9=-F_adj`.
 
-## Remaining routes
+## Candidate routes considered
 
-- Derive the typed bridge semantically from source/readout structure.
-- Derive the typed covariance `q_E/q_T=kappa^2`.
-- Derive the typed color bridge `F_adj -> c_TE=-F_adj`.
-- Seek an alternate up-sector scalar law outside Route-2.
+| Route | Expected movement | Disposition |
+|---|---|---|
+| Source-count compressed bridge | Exact support for the typed edge target | selected |
+| Physical color selector family | Sharpens remaining selector import | included |
+| Finite-box E-center extrapolation | Could test measured calibration route | deferred |
+| Recombination of existing endpoint algebra | Low novelty after block03 | rejected |
+
+## Why this route
+
+Block03 compressed the color bridge and covariance bridge into one edge. This
+route gives that edge a source-count form and shows exactly which selector
+remains missing.

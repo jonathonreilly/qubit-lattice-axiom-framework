@@ -53470,7 +53470,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26"
+      "to": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18"
     },
     {
       "from": "repo.front_door_status",
@@ -53498,7 +53498,7 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18"
+      "to": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+        "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
         "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
         "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09",
         "registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18",
         "yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18"
+        "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18"
       ],
       "helper_runner_paths": [],
-      "note_hash": "71fbfcac86f445e2cf625f72b16f9bae882de2633b91ec74cdc9de6c4900dc7d",
+      "note_hash": "6407b272348ca13143bbcee680319b52f649db8a4740544b85f389f227d7d9e9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

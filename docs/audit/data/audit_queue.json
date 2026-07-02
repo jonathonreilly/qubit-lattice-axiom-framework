@@ -3,7 +3,7 @@
     "critical": 301,
     "high": 283,
     "leaf": 584,
-    "medium": 489
+    "medium": 488
   },
   "cycle_break_target_count": 9,
   "cycle_break_targets": [
@@ -17799,30 +17799,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 6.322,
-      "note_path": "docs/GAUGE_FACTOR_LOCAL_SELECTOR_NORMALIZER_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gauge_factor_local_selector_normalizer_2026_06_18.py",
-      "transitive_descendants": 39
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17953,6 +17929,32 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "yt_source_action_support_packet_note_2026-05-22",
+        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+      ],
+      "direct_in_degree": 2,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 6.0,
+      "note_path": "docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py",
+      "transitive_descendants": 31
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -17979,27 +17981,33 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18",
+      "claim_id": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
       "claim_scope": null,
-      "claim_type": "bounded_theorem",
+      "claim_type": "open_gate",
       "claim_type_provenance": "author_hint",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
       "deps": [
-        "minimal_axioms",
-        "yt_source_action_support_packet_note_2026-05-22",
-        "ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26"
+        "color_su3_matter_realization_residual_map_2026-06-05",
+        "graph_first_su3_integration_note",
+        "cl3_color_automorphism_theorem",
+        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
+        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
+        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
+        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
+        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
+        "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [],
-      "load_bearing_score": 4.587,
-      "note_path": "docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md",
+      "load_bearing_score": 5.585,
+      "note_path": "docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md",
       "queue_reason": "unaudited",
       "ready": true,
-      "runner_path": "scripts/frontier_yt_signed_record_lower_projector_neutral_ray_algebra_core_2026_06_18.py",
-      "transitive_descendants": 16
+      "runner_path": "scripts/gauge_algebra_supplied_carrier_2026_06_08.py",
+      "transitive_descendants": 23
     },
     {
       "audit_independence_required": "any_non_self",
@@ -24952,38 +24960,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_record_pointer_broadcast_circuit_interface_2026_06_05.py",
-      "transitive_descendants": 23
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gauge_algebra_supplied_carrier_gauging_selection_open_gate_note_2026-06-08",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "color_su3_matter_realization_residual_map_2026-06-05",
-        "graph_first_su3_integration_note",
-        "cl3_color_automorphism_theorem",
-        "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04",
-        "fiber_frame_local_redundancy_bridge_narrow_theorem_note_2026-06-09",
-        "matter_gauge_minimal_coupling_fiber_frame_forces_connection_narrow_theorem_note_2026-06-08",
-        "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05",
-        "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
-        "gauge_factor_local_selector_normalizer_theorem_note_2026-06-18"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.585,
-      "note_path": "docs/GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/gauge_algebra_supplied_carrier_2026_06_08.py",
       "transitive_descendants": 23
     },
     {
@@ -49743,5 +49719,5 @@
     }
   ],
   "ready_count": 99,
-  "total_pending": 1657
+  "total_pending": 1656
 }

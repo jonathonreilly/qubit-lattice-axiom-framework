@@ -23,11 +23,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 938 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 34 |
-| unaudited | 1608 |
+| unaudited | 1607 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 28 |
-| ~~audited_conditional~~ | 45 |
+| ~~audited_conditional~~ | 46 |
 | ~~audited_failed~~ | 3 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -66,12 +66,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 2 |
 | `audited_clean` | 1367 |
-| `audited_conditional` | 45 |
+| `audited_conditional` | 46 |
 | `audited_decoration` | 63 |
 | `audited_failed` | 25 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 28 |
-| `unaudited` | 1934 |
+| `unaudited` | 1933 |
 
 | claim_type | count |
 |---|---:|
@@ -86,8 +86,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `critical` | 567 |
 | `high` | 508 |
-| `medium` | 943 |
-| `leaf` | 1456 |
+| `medium` | 939 |
+| `leaf` | 1460 |
 
 - **Retained pending chain closure:** 4
 - **Citation cycles detected:** 9
@@ -1548,6 +1548,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensorial_einstein_regge_completion_probe_helper_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `transfer_matrix_log_quasilocality_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.5 | A | - |
 | `u1_fermion_number_conservation_theorem_note_2026-05-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `wilson_m_h_per_channel_closure_bounded_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_vertex_power_operator_counting_lemma_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -21273,6 +21274,23 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **chain closes:** True — Given the retained_bounded Wilson matching authority beta = 2 N_c / g^2 and the compensating relation g'^2 = g^2/c^2, the stated beta' = c^2 beta and beta' g'^2 = beta g^2 = 2 N_c follow by direct algebra. No Wilson action-surface selection, beta=6, or g_bare=1 claim is needed or audited.
 - **rationale:** The chain uses a single retained_bounded parent, the Wilson small-a matching theorem, and substitutes the compensating coupling rescaling into that formula. The independent algebra check gives beta' g'^2 = c^2 beta * g^2/c^2 = beta g^2 = 2 N_c. The runner performs finite rational algebra plus source-boundary checks; it does not compute new framework physics, so this is an algebraic decoration of the upstream Wilson matching result.
 - **decoration parent:** `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`
+- **auditor confidence:** high
+
+### `wilson_m_h_per_channel_closure_bounded_note_2026-05-09`
+
+- **Note:** [`WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md`](../../docs/WILSON_M_H_PER_CHANNEL_CLOSURE_BOUNDED_NOTE_2026-05-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional per-channel Wilson matching table for S={2}, {0,4}, {1,3}, and uniform-16 under the stated curvature-on-subset readout convention; not a derivation of the Higgs pole or Wilson coefficient.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T060044Z-4d8e7ed3-wilson_m_h_per_channel_c`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Set the subset readout (S), (m_H_W/v)^2_S = (1/(4 N_eff(S))) Σ_{k in S} binomial(4,k)(u_0^2-(k-2)^2 r^2)/((k-2)^2 r^2+u_0^2)^2, equal to the comparison target (m_H_PDG/v)^2 and bisect to obtain the per-channel r values.  _(class `D`)_
+- **chain closes:** False — The finite algebra and bisection values check out once the subset channel, curvature-on-subset readout rule, external target, tree-level mean-field surface, and nonzero r are admitted. The packet does not derive the channel/readout bridge or the Wilson coefficient, so the matching readouts do not close as retained-derived closure values.
+- **rationale:** Issue: the arithmetic from (S) to the reported roots is correct, but (S) is a non-derived per-channel readout applied to non-derived channel identifications and matched to an external PDG comparator. Why this blocks: the cited authorities explicitly retain only diagnostic curvature algebra and boundary statements while leaving readout identification, channel selection, nonzero r, and physical Higgs-pole closure open. Repair target: supply a bridge theorem deriving the channel/readout convention and Wilson coefficient selection, or narrow the source to a purely conditional algebraic lookup table. Claim boundary until fixed: exact conditional matching values under the stated admissions only.
+- **open / conditional deps cited:**
+  - `WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md`
+  - `HIGGS_MASS_FROM_AXIOM_NOTE.md`
+  - `HIGGS_CHANNEL_EFFECTIVE_NTASTE_BOUNDARY_BOUNDED_NOTE_2026-05-08.md`
 - **auditor confidence:** high
 
 ### `wilson_m_h_tree_at_extremum_algebraic_core_split_note_2026-06-18`

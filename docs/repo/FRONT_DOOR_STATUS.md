@@ -12,16 +12,16 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1500 |
+| Applied audit verdicts | 1501 |
 | Retained-grade rows, including boxed decorations | 1385 |
 | Retained positive theorems | 205 |
 | Retained no-go rows | 204 |
 | Retained bounded rows | 915 |
 | Boxed decorations under retained parents | 61 |
 | Open gates | 33 |
-| Unaudited rows | 1646 |
+| Unaudited rows | 1645 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 40 |
+| Audited conditional rows | 41 |
 | Audited renaming rows | 28 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1648 |
-| Ready rows | 95 |
+| Total pending rows | 1647 |
+| Ready rows | 94 |
 | Cycle-break targets | 9 |
 | Critical pending | 301 |
 | High pending | 283 |
-| Medium pending | 480 |
+| Medium pending | 479 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`registrable_readout_determinant_character_algebraic_core_split_note_2026-06-18`](../../docs/REGISTRABLE_READOUT_DETERMINANT_CHARACTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_ew_neutral_projector_same_surface_carrier_theorem_note_2026-06-18`](../../docs/YT_EW_NEUTRAL_PROJECTOR_SAME_SURFACE_CARRIER_THEOREM_NOTE_2026-06-18.md) - medium; unaudited
 - [`yt_signed_record_lower_projector_neutral_ray_algebra_core_bounded_note_2026-06-18`](../../docs/YT_SIGNED_RECORD_LOWER_PROJECTOR_NEUTRAL_RAY_ALGEBRA_CORE_BOUNDED_NOTE_2026-06-18.md) - medium; unaudited
 - [`free_dirac_antiparticle_mode_algebra_bounded_note_2026-05-30`](../../docs/FREE_DIRAC_ANTIPARTICLE_MODE_ALGEBRA_BOUNDED_NOTE_2026-05-30.md) - medium; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02`](../../docs/HYDROGEN_HELIUM_ATOMIC_LATTICE_KINETIC_DEPENDENCY_NARROW_REPAIR_NOTE_2026-06-02.md) - medium; unaudited
 - [`tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03`](../../docs/TENSOR_COMPOSITION_REQUIRES_LOCAL_TOMOGRAPHY_BEYOND_LOCALITY_NARROW_NO_GO_NOTE_2026-06-03.md) - medium; unaudited
 - [`magnitude_reads_minimal_record_block_2026-06-06`](../../docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md) - medium; unaudited
+- [`su3_beta6_gap_bulk_criticality_reduction_bounded_theorem_note_2026-06-09`](../../docs/SU3_BETA6_GAP_BULK_CRITICALITY_REDUCTION_BOUNDED_THEOREM_NOTE_2026-06-09.md) - medium; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
@@ -82,8 +82,8 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 |---|---:|
 | Citation-graph nodes | 3619 |
 | Critical nodes | 575 |
-| High nodes | 511 |
-| Medium nodes | 971 |
+| High nodes | 510 |
+| Medium nodes | 972 |
 | Leaf nodes | 1562 |
 
 Top load-bearing rows by graph score:

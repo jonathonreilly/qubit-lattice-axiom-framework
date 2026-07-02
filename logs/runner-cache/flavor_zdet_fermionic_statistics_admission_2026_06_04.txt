@@ -3,7 +3,7 @@ runner: scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py
 runner_sha256: 54811d712f535307c9d1da6389031d704563c832b2797d78ef3971da5a45fc31
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.41
 status: ok
 ----- stdout -----
 [PASS] Berezin finite Gaussian gives det(M) once Grassmann variables are supplied
@@ -26,7 +26,7 @@ status: ok
 [PASS] dependency boundary guard: consumed supports are algebraic, not physical spin-statistics selectors
        parity supplies Z2 grading; Grassmann bridge supplies abstract two-candidate determinant scope
 [PASS] downstream occupancy atom: downstream occupancy theorem is ledger-registered as a bounded_theorem source
-       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: claim_type=bounded_theorem, note_path=docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md, effective=retained_bounded, audit=audited_clean
+       koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09: claim_type=bounded_theorem, note_path=docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md
 [PASS] downstream occupancy atom: Record axiom declines weighting and occupancy supply
        checked live Minimal Axioms text
 [PASS] downstream occupancy atom: occupancy note records independence without adopting the premise

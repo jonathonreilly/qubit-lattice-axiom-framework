@@ -29,9 +29,7 @@ def run_occupancy_boundary_checks(root: Path, check: Callable[[str, bool, str], 
         and occupancy_row.get("note_path") == "docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md",
         (
             f"{OCCUPANCY_ROW}: claim_type={occupancy_row.get('claim_type')}, "
-            f"note_path={occupancy_row.get('note_path')}, "
-            f"effective={occupancy_row.get('effective_status')}, "
-            f"audit={occupancy_row.get('audit_status')}"
+            f"note_path={occupancy_row.get('note_path')}"
         ),
     )
 

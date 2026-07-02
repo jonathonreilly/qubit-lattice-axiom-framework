@@ -1,48 +1,54 @@
 # Handoff
 
-## Block07 Summary
+## Block08 Target
 
-This block is a stretch attempt on the nonseparable E/T covariance primitive. It classifies local projector-weight laws and isolates the exact conditional bridge:
+Direct consumer ambiguity firewall for `s3_time_theta_to_slice_coupling_note`.
+
+## Claim-State Movement
+
+Exact support. The block proves
 
 ```text
-q_X proportional to w_X^-2
+(P(rho_b) - P(rho_a)) c = ((rho_b - rho_a) delta_E, 0)
 ```
 
-With `w_E=1/3` and `w_T1=1/2`, this gives `lambda=(w_E/w_T1)^-2=9/4`, hence `q_E=15/8` and `rho_E=21/4` after the granted T-side values.
+and therefore
 
-The primitive is not derived here. The block falsifies the nearby one-factor/raw/quadratic laws and leaves the exact next positive target.
+```text
+Delta Xi(t ; c) = ((rho_b - rho_a) delta_E, 0) tensor V_R(t).
+```
 
-## Honest Status
+This separates rho-independent downstream sectors from E-center-sensitive
+sectors that still need `rho_E = 21/4`.
 
-Actual current-surface status: conditional-support.
+## What This Does Not Do
 
-Trace class: upstream_support.
-
-This supports the endpoint theorem by isolating the exact primitive needed, but it does not close the endpoint theorem.
-
-## PR Policy
-
-Do not push to main. Do not refresh previous PR branches to main. Do not check conflict or mergeability status. The reviewer will cherry-pick science. Verify only PR identity fields after PR creation.
+- Does not derive `rho_E = 21/4`.
+- Does not close the endpoint triple.
+- Does not update audit verdicts or repo-wide authority surfaces.
+- Does not claim a unique exact `Theta_R -> Lambda_R` theorem.
 
 ## PR
 
-Opened PR #4536:
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4537
+- Branch: `physics-loop/s3-route2-readout-endpoint-block08-20260621`
+- Commit: `2dcb76657`
+- Identity-only verification: PR #4537, base `main`, head
+  `physics-loop/s3-route2-readout-endpoint-block08-20260621`, state `OPEN`.
 
-```text
-https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4536
-```
+## Verification
 
-Identity-only verification:
+- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py`: `PASS=12 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_s3_time_theta_to_slice_coupling.py`: `PASS=12 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py`: `PASS=11 FAIL=0`
+- `PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_time_coupling.py`: `PASS=8 FAIL=0`
+- `python3 -m py_compile scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py`: pass
+- `git diff --check`: pass
+- Local wording firewall: pass.
 
-```text
-number=4536
-url=https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4536
-title=[physics-loop] s3-route2-readout-endpoint block07 conditional-support
-headRefName=physics-loop/s3-route2-readout-endpoint-block07-20260621
-baseRefName=main
-state=OPEN
-```
+No audit runner was run. No existing PR branch was refreshed or conflict-checked.
 
-## Next Exact Action
+## Next Action
 
-Continue the campaign to the next ranked science target if runtime remains. Best next target: derive the two reciprocal local projector-weight factors from source normalization plus readout or Schur-dual response; fallback to the direct `Theta_R -> Lambda_R` consumer ambiguity packet.
+Continue the campaign with the next ranked science target. Do not refresh older
+PRs and do not check conflict state.

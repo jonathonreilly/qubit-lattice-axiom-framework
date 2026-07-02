@@ -76,6 +76,41 @@ Framework primitives are distinct from Tier-A admitted derivation targets:
 
 Recorded explicitly approved axiom updates:
 
+- **2026-07-02 -- Qubit distinction clause: possibility distinctions are
+  structural.** One sentence is added to the Qubit axiom in
+  `docs/MINIMAL_AXIOMS_2026-06-29.md`, joined to the no-privilege sentence as
+  one paragraph: "No possibility is privileged. Possibilities are
+  distinguished by the supplied algebraic structure alone." (owner-approved,
+  2026-07-02; source file edited in place). Effect: the clause fixes the
+  transformation class of the no-privilege naturality test on the possibility
+  side to presentation-preserving relabelings -- distinctions carried by the
+  supplied presentation-invariant structure are legitimate law and readout
+  inputs; distinctions requiring names, enumerated state lists, or
+  unregistered frames are privilege. It names no operator, basis, weighting,
+  selector, kinetic class, or value; in particular it does not constrain
+  relative readout weights across structurally distinct cells, which remain
+  downstream theorem/registration content.
+  Validation provenance: five-seat blind physicist panel, 2026-07-02, ruling
+  on the reading of the no-privilege sentence plus the extensional naturality
+  note under a neutral three-reading brief (renaming-only /
+  presentation-closed / set-level exchange): unanimous presentation-closed,
+  all high confidence, none found the text ambiguous. Convergent anchors
+  recorded: the lattice-motions parallel (the named motion group is
+  structure-preserving, proper cubic rotations only); a set-level reading
+  would make the sentence itself name a weighting (uniform), contradicting
+  this section's certification that the 2026-07-02 sentences name no
+  weighting or value, and would collapse scalar readout to record counting
+  against the content-determination sentence; a renaming-only reading leaves
+  the relabeling conjunct extensionally inert against the "never by the
+  vocabulary" clause; the round-3 unregistered-frame entailment and the
+  canonical C_3 two-namings ratification state the presentation-closed
+  boundary directly.
+  Supersession: on the possibility side, the reading-note phrase "possibility
+  relabelings" is now carried by this axiom sentence; the reading note is no
+  longer load-bearing for possibility-distinction questions (procedural audit
+  content is unaffected). The premise-hash guard invalidates prior direct
+  `minimal_axioms` audits; the independent audit lane re-audits.
+
 - **2026-07-02 -- Foundation wording additions: no-privilege, readout
   determination, state definition, and law discipline.** Five sentences are
   added to `docs/MINIMAL_AXIOMS_2026-06-29.md` (owner-approved, 2026-07-02;

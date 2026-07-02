@@ -12,17 +12,17 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1551 |
-| Retained-grade rows, including boxed decorations | 1426 |
-| Retained positive theorems | 206 |
-| Retained no-go rows | 213 |
-| Retained bounded rows | 946 |
-| Boxed decorations under retained parents | 61 |
-| Open gates | 35 |
-| Unaudited rows | 1595 |
+| Applied audit verdicts | 1405 |
+| Retained-grade rows, including boxed decorations | 1311 |
+| Retained positive theorems | 193 |
+| Retained no-go rows | 194 |
+| Retained bounded rows | 868 |
+| Boxed decorations under retained parents | 56 |
+| Open gates | 29 |
+| Unaudited rows | 1741 |
 | Retained-pending-chain rows | 4 |
-| Audited conditional rows | 47 |
-| Audited renaming rows | 28 |
+| Audited conditional rows | 28 |
+| Audited renaming rows | 24 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 9 |
 
@@ -33,46 +33,46 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1597 |
-| Ready rows | 68 |
+| Total pending rows | 1743 |
+| Ready rows | 80 |
 | Cycle-break targets | 9 |
-| Critical pending | 301 |
-| High pending | 281 |
-| Medium pending | 454 |
-| Leaf pending | 561 |
+| Critical pending | 331 |
+| High pending | 314 |
+| Medium pending | 522 |
+| Leaf pending | 576 |
 
 Next ready rows by queue order:
 
-- [`newton_poisson_flat_friedmann_textbook_import_note_2026-05-17`](../../docs/NEWTON_POISSON_FLAT_FRIEDMANN_TEXTBOOK_IMPORT_NOTE_2026-05-17.md) - medium; unaudited
-- [`powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20`](../../docs/POWERS_UHF_TRACIAL_UNIQUENESS_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) - medium; unaudited
-- [`ring_monodromy_does_not_force_car_note_2026-06-04`](../../docs/RING_MONODROMY_DOES_NOT_FORCE_CAR_NOTE_2026-06-04.md) - medium; unaudited
-- [`scalar_i_and_real_generation_structure_k_parity_separation_bounded_note_2026-06-08`](../../docs/SCALAR_I_AND_REAL_GENERATION_STRUCTURE_K_PARITY_SEPARATION_BOUNDED_NOTE_2026-06-08.md) - medium; unaudited
-- [`sm_gstar_hunit_neutral_radial_orbit_support_note_2026-06-18`](../../docs/SM_GSTAR_HUNIT_NEUTRAL_RADIAL_ORBIT_SUPPORT_NOTE_2026-06-18.md) - medium; unaudited
-- [`staggered_dirac_local_density_readout_bridge_narrow_theorem_note_2026-06-17`](../../docs/STAGGERED_DIRAC_LOCAL_DENSITY_READOUT_BRIDGE_NARROW_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
-- [`statistics_product_instance_criterion_bridge_bounded_theorem_note_2026-06-17`](../../docs/STATISTICS_PRODUCT_INSTANCE_CRITERION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-17.md) - medium; unaudited
-- [`two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06`](../../docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md) - leaf; unaudited
+- [`tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25`](../../docs/TENSOR_PRODUCT_TRANSLATION_FERMION_OPERATOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-25.md) - critical; unaudited
+- [`no_per_site_chirality_theorem_note_2026-05-02`](../../docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md) - critical; unaudited
+- [`staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16`](../../docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md) - critical; unaudited
+- [`staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md) - critical; unaudited
+- [`staggered_dirac_substep1_statistics_agnostic_no_forcing_note_2026-05-25`](../../docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_AGNOSTIC_NO_FORCING_NOTE_2026-05-25.md) - critical; unaudited
+- [`quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md) - critical; unaudited
+- [`axiom_first_cluster_decomposition_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_THEOREM_NOTE_2026-04-29.md) - critical; unaudited
+- [`real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`](../../docs/REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **429**.
+- Non-retained-grade cited rows in publication tables: **441**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 163 |
-| high | `unaudited` | 159 |
-| medium | `unaudited` | 92 |
-| high | `audited_conditional` | 3 |
+| critical | `unaudited` | 169 |
+| high | `unaudited` | 162 |
+| medium | `unaudited` | 98 |
 | critical | `open_gate` | 2 |
+| high | `audited_conditional` | 2 |
 | high | `audited_numerical_match` | 2 |
-| medium | `audited_conditional` | 2 |
 | critical | `audited_conditional` | 1 |
 | critical | `audited_renaming` | 1 |
-| high | `audited_renaming` | 1 |
 | high | `open_gate` | 1 |
+| medium | `audited_conditional` | 1 |
 | medium | `audited_numerical_match` | 1 |
+| medium | `open_gate` | 1 |
 
 Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md).
 

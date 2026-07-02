@@ -27,17 +27,21 @@ The current atlas and retained matter toolkit supply:
 - the retained right-handed completion with `nu_R : (1,1)_0`
 - several gravity/source/tensor primitives and bounded candidates
 
-The atlas now also contains Majorana bookkeeping rows for:
+The atlas now also contains Majorana rows for:
 
-- charge-`2` reduction
-- unique local source-slot structure
-- `Z_3` non-activation on the retained flavor lift
-- observable-principle obstruction on the retained source-response toolkit
-- local Pfaffian uniqueness on the retained local bilinear lane
-- current-stack exhaustion on the retained stack as a whole
-- the explicit Nambu source-principle extension on the unique local block
-- the one-generation source-ray refinement on that admitted local block
-- the exact current-source-stack staircase-blindness boundary
+- operator classification
+- finite normal-grammar no-go
+- Pfaffian no-forcing
+- Nambu source principle
+- one-generation source-ray compression
+- three-generation `Z_3` non-activation
+- staircase blindness and no-stationary-scale boundaries
+- algebraic-bridge obstruction
+- endpoint-exchange midpoint support
+- residual-sharing split support
+- adjacent singlet-placement plus background-normalization support
+- lower-level pairing no-go
+- three-generation current-stack zero matrix
 
 But none of the currently retained or atlas-listed objects is itself a fully
 realized fermionic charge-`2` microscopic primitive with fixed physical
@@ -100,30 +104,22 @@ not the missing `nu_R` Majorana primitive.
 
 The atlas rows beyond the scalar observable backbone now split into two kinds:
 
-1. boundary/bookkeeping/source-principle rows on the Majorana lane:
+1. classification, support, and boundary rows on the Majorana lane:
 
-- Majorana charge-`2` reduction
-- Majorana unique source slot
-- Majorana `Z_3` non-activation
-- Majorana observable-principle obstruction
-- Majorana local Pfaffian uniqueness
-- Majorana current-stack exhaustion
+- Majorana operator classification
+- Majorana finite normal-grammar no-go
+- Pfaffian no-forcing theorem
 - Majorana Nambu source principle
-- Majorana Nambu radial observable
-- Majorana Nambu quadratic comparator
-- Majorana source ray
-- Majorana background-normalized response
-- Majorana axis-exchange fixed point
-- Majorana self-dual staircase-lift obstruction
-- Majorana algebraic/spectral bridge obstruction
-- Majorana scalar-datum transplant obstruction
-- Majorana source-response matching obstruction
-- Majorana tensor-variational transplant obstruction
-- Majorana partition/projective transplant obstruction
-- Majorana continuum-bridge transplant obstruction
+- Majorana source-ray theorem
+- Three-generation Majorana `Z_3` non-activation
 - Majorana staircase blindness
 - Majorana no-stationary-scale theorem
-- Majorana scale-selector necessity
+- Majorana algebraic-bridge obstruction
+- Majorana endpoint-exchange midpoint theorem
+- Majorana residual-sharing split theorem
+- Majorana adjacent singlet-placement + background-normalization theorem pair
+- Majorana lower-level pairing no-go
+- Three-generation Majorana current-stack zero matrix
 
 2. other non-scalar objects like:
 
@@ -136,14 +132,12 @@ The atlas rows beyond the scalar observable backbone now split into two kinds:
 
 These are real and useful atlas tools, but they are still not a fully realized
 fermionic `Delta L = 2` matter primitive with fixed background amplitude. The
-new Majorana rows record reduction, local-form, uniqueness, current-stack
-conclusion, the first exact beyond-retained-stack source principle, the
-positive local Nambu-complete bosonic observable on that admitted lane, the
-exact local quadratic comparator, the exact local background-normalized
-response curve, the one-generation source-direction refinement, the explicit
-current tensor-variational, partition/projective, and continuum-bridge
-transplant boundaries, and the current exact scale-boundary history; they do
-not themselves finish the physical activation law.
+new Majorana rows record operator grammar, current-stack no-go structure,
+the admitted Nambu-source extension route, source-ray compression,
+three-generation non-activation, scale/staircase boundaries, bridge
+obstructions, positive finite-register support, lower-level pairing no-go, and
+the current-stack zero law; they do not themselves finish the physical
+activation law.
 
 So on the current atlas they are analogy surfaces only, not hidden solutions to
 the neutrino Majorana lane.
@@ -161,10 +155,10 @@ and the retained one-generation matter closure. Then:
    determinant-based
 3. the current retained right-handed composite constructions do not realize a
    `nu_R` charge-`2` primitive
-4. the currently atlas-listed Majorana rows now include positive local
-   comparator/normalization results, but they are still not yet realized
-   fermionic `Delta L = 2` carriers with a full physical finite-point
-   selection law
+4. the currently atlas-listed Majorana rows include positive finite-register
+   support results and several exact no-go/boundary rows, but they are still
+   not yet realized fermionic `Delta L = 2` carriers with a full physical
+   finite-point selection law
 5. the other currently atlas-listed non-scalar primitives are tensor/gravity-
    side objects rather than fermionic `Delta L = 2` carriers
 
@@ -202,10 +196,9 @@ It is a current-atlas non-realization boundary only.
 - the current `main` atlas does not already supply the missing charge-`2`
   Majorana primitive
 - the right-handed composite route on `C^8` is not that object
-- the current atlas Majorana rows now include positive local
-  comparator/background-normalization results and a local self-dual fixed
-  point on the admitted block, but not yet a fermionic `Delta L = 2`
-  realization with an absolute staircase embedding
+- the current atlas Majorana rows now include positive finite-register support
+  results and exact current-stack boundaries, but not yet a fermionic
+  `Delta L = 2` realization with an absolute staircase embedding
 - the other atlas primitives beyond the scalar backbone are gravity/tensor
   analogy surfaces, not fermionic `Delta L = 2` realizations
 

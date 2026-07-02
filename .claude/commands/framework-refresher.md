@@ -31,14 +31,19 @@ statuses all change; only current repo surfaces are authoritative.
   rotations.
 - **Qubit** — each site has a domain of local possibilities; the full one-site
   possibility domain has algebraic presentation `M_2(ℂ)`, with `Cl(3,0)` as
-  equivalent real-algebra notation only.
+  equivalent real-algebra notation only; no possibility is privileged, and
+  possibilities are distinguished by the supplied algebraic structure alone.
 - **Admissibility** — one fixed nearest-neighbor admissibility rule, covariant
   under lattice translations and proper cubic rotations; for each site, the
   available possibilities are determined by, and vary with, the
   nearest-neighbor conditions.
-- **Record** — a record locks exactly one available local possibility; only
-  records are readable, and scalar readout is finitely additive over finite
-  pairwise-disjoint record collections.
+- **Record** — a site need not carry a record; when present, a record locks
+  exactly one available local possibility. Only records are readable; readout
+  value is determined by record content alone; scalar readout is finitely
+  additive over finite pairwise-disjoint record collections.
+- **Qualification** — a state is a configuration of records. A law privileges
+  no states; its domain is a supplied condition, and where that condition holds
+  it gives exactly one answer.
 
 The minimal-axioms memo states explicitly what the axiom baseline does NOT
 supply (dynamics, Born rule, readout context, species identification, gauge

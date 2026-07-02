@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_up_amplitude_scalar_comparison_bridge.py
-runner_sha256: a2dabf77c6dbe7e5695d2fa468bdfc407cd92d389e9a3ccf705deb1fa3512d70
+runner_sha256: de8aeb5c42433c0538420b52db916d07e25941deb3d2d0ffb4d684abae7190a4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.88
+elapsed_sec: 1.96
 status: ok
 ----- stdout -----
 ========================================================================

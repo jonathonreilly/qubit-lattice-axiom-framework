@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py
+runner_sha256: 8a48c62226d440afcd7b116e0870a9121296cc172a0c8a59f95fd294e9fe2314
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+========================================================================
+R-eta algebraic irreducibility / genuine readout admission verifier
+========================================================================
+[PASS] (01) I1 symbolic elementary symmetric invariants match the retained circulant formula  [e1=3*a, e2=-3*B**2 + 3*a**2, e3=(B*u**2 + B + a*u)*(B**2*u**4 - B**2*u**2 + B**2 - B*a*u**3 - B*a*u + a**2*u**2)/u**3]
+[PASS] (02) I1 delta enters e1,e2,e3 only through cos(3 delta)  [d(e3)/d(delta)=-6*B**3*sin(3*delta)]
+[PASS] (03) I2 x=cos(3 delta) is recovered affinely and e1,e2 fix only a and B^2  [x=cos(3*delta), slope=2*B**3, B^2=e1**2/9 - e2/3]
+[PASS] (04) I3 L_3(1,2)=2/9 exact; L_3(1,1)=L_3(2,2)=1/9; core product is 3  [L12=2/9, L11=1/9, L22=1/9, core=3]
+[PASS] (05) I3 fixed-locus computation is operator-free: no a, B, delta, or H symbol occurs  [free_symbols=set()]
+[PASS] (06) I4a C_3 covariance [H,C]=0 holds symbolically for generic delta  [commutator=Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])]
+[PASS] (07) I4b det H is real and positive on the sample positivity domain a>2B>0, so arg det H=0 there  [detH=(B*exp(2*I*delta) + B + a*exp(I*delta))*(B**2*exp(4*I*delta) - B**2*exp(2*I*delta) + B**2 - B*a*exp(3*I*delta) - B*a*exp(I*delta) + a**2*exp(2*I*delta))*exp(-3*I*delta), min_sample=16.000000]
+[PASS] (08) I4c spectral-scalar stationary set delta=n*pi/3 excludes delta=2/9  [n=2/(3*pi)=0.212206590789]
+[PASS] (09) I5 independence witness: same L_3 with different cos(3 delta), and L_3 unchanged under operator-parameter variation  [w1 x=1, w2 x=1/2, fixed-delta L=2/9]
+[PASS] (10) I6a A1 magnitude and A2 unit/coefficient are distinct data; 1, pi, 2pi readings are different angles  [angles=0.222222, 0.698132, 1.396263]
+    comparator, not a derivation input; no PDG enters any derivation step: delta=2/9 -> m_mu=105.659414, m_tau=1776.984968; pi-reading -> 7.327632, 20.499729; 2pi-reading -> 7.327632, 20.499729
+[PASS] (11) I6b labeled comparator: coefficient-1 reading lands masses; pi and 2pi readings miss by >0.3 relative  [rel_one_mu=9.832e-06, rel_one_tau=7.033e-05, rel_pi=0.988, rel_2pi=0.988]
+[PASS] (12) I6c 2/9 is not q*pi for rational q; 2/(9*pi) is irrational by pi irrationality  [2/(9*pi) is not rational]
+[PASS] (13) B-check dependency greps: fixed-locus L_3 phrase and real radian-bridge scope phrase are pinned
+[PASS] (14) B-check firewall / walls-move sentences are present without forbidden overclaim use
+[PASS] (15) B-check N1-N8 gate section is present
+[PASS] (16) B-check six-wall carrier map present with six backticked wall names
+[PASS] (17) B-check markdown link inventory is exactly the three dependencies and all resolve  [links=['KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md', 'KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md', 'MINIMAL_AXIOMS_2026-06-05.md']]
+[PASS] (18) B-check context inventory is backticked, not markdown-linked
+[PASS] (19) B-check status lines, No-promotion statement, no registry edit, and bounded theorem declaration are present
+[PASS] (20) B-check R-eta is characterized but not adopted, derived, or refuted
+[PASS] (21) B-check two live derivation targets are named and neither is probed here
+========================================================================
+git diff --stat
+ docs/RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md | 275 +
+ scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py | 393 +
+ 2 files changed, 668 insertions(+)
+========================================================================
+SUMMARY: TOTAL PASS=21 FAIL=0
+
+----- stderr -----
+

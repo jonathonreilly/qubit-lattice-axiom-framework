@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 301,
-    "high": 288,
+    "high": 287,
     "leaf": 584,
     "medium": 511
   },
@@ -8720,30 +8720,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_ckm_n9_structural_family_koide_bridge.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "observable_principle_record_scalar_map_no_go_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 7.459,
-      "note_path": "docs/OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py",
-      "transitive_descendants": 21
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -18067,7 +18043,7 @@
         "coarse_grained_exterior_law_helper_note_2026-04-14",
         "oh_schur_boundary_action_note"
       ],
-      "direct_in_degree": 1,
+      "direct_in_degree": 2,
       "effective_status": "unaudited",
       "helper_runner_paths": [
         "scripts/_frontier_loader.py",
@@ -18076,12 +18052,12 @@
         "scripts/frontier_oh_schur_boundary_action.py",
         "scripts/frontier_same_source_metric_ansatz_scan.py"
       ],
-      "load_bearing_score": 6.333,
+      "load_bearing_score": 6.858,
       "note_path": "docs/TENSORIAL_EINSTEIN_REGGE_COMPLETION_PROBE_HELPER_NOTE_2026-04-14.md",
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_tensorial_einstein_regge_completion.py",
-      "transitive_descendants": 56
+      "transitive_descendants": 57
     },
     {
       "audit_independence_required": "any_non_self",
@@ -50438,6 +50414,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 117,
-  "total_pending": 1684
+  "ready_count": 116,
+  "total_pending": 1683
 }

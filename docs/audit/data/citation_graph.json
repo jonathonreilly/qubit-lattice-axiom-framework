@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "observable_principle_record_scalar_map_no_go_note_2026-06-05"
     },
     {
@@ -53499,6 +53495,10 @@
     {
       "from": "repo.front_door_status",
       "to": "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05"
+    },
+    {
+      "from": "repo.front_door_status",
+      "to": "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "emergent_lorentz_radiative_stability_discrete_tick_b4_bounded_theorem_note_2026-06-08",
         "observable_principle_record_scalar_map_no_go_note_2026-06-05",
         "koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09",
         "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13",
         "kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
         "light_cone_crank_nicolson_lieb_robinson_bridge_note_2026-05-09",
         "record_formation_controlled_copy_write_isometry_theorem_note_2026-06-18",
-        "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05"
+        "luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05",
+        "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14"
       ],
       "helper_runner_paths": [],
-      "note_hash": "007626f6f5532ca8bbdbdae3d53a049df2168a29c99e111a396088fb0e5cbc86",
+      "note_hash": "3a248c1cb3eb2bff24e2e1af68a91c00847508bb526c2fe0836352a522042355",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

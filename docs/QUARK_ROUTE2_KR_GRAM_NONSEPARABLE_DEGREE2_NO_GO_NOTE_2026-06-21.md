@@ -1,14 +1,17 @@
 # Route-2 `K_R` Gram Nonseparable Degree-2 No-Go
 
 **Date:** 2026-06-21  
-**Claim type:** no-go / exact nonseparable carrier boundary  
+**Claim type:** no_go
+**Claim scope:** no-go / exact nonseparable carrier boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** no-go  
 **Trace class:** negative_route_pruning  
 **Reachability to target:** prunes the route that tries to obtain the
 endpoint's inverse-square covariance from nonseparable Gram or tensor-power
 contractions of the current class-A `K_R` carrier alone.  
-**Primary runner:** [`scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py)  
-**Runner cache:** `logs/runner-cache/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.txt`
+**Primary runner:** [`scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.txt)
+**Authority links:** [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md), [`QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md`](QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md), [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
 ## Boundary
 

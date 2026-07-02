@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py
+runner_sha256: 69b4c171fe9858171551f12841c6a598d14fe2538055b0fc0ca9652cb5fc06f0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 51.77
+status: ok
+----- stdout -----
 Route-2 E-center lift finite-box replay boundary
 ======================================================================================
 Patch: tensor Schur action is inferred from phi_grid.shape[0] for this runner only.
@@ -6,10 +14,10 @@ Finite-box replay table
 size  status      q_T             q_E             rho_E           shell T/E       center T/E      elapsed
 ----------------------------------------------------------------------------------------------------------------
    9  boundary    reduced-shell anchor unavailable: KeyError((3, 3, 0))                           0.01s
-  11  computed  +0.902060859652  +0.846134199720  -0.923194801679  +2.203976484535  +2.349652009045     7.60s
-  13  computed  +0.870086497080  -0.038869990679  -6.233219944075  +5.382863503774  -120.492872996107     8.72s
-  15  computed  +0.833328197623  +1.876246130347  +5.257476782081  -2.005382749600  -0.890683778231    10.92s
-  17  computed  -0.196795039281  -5.836999720859  -41.021998325154  +3.921154955292  +0.132202138146    16.25s
+  11  computed  +0.902060859652  +0.846134199720  -0.923194801679  +2.203976484535  +2.349652009045    11.04s
+  13  computed  +0.870086497080  -0.038869990679  -6.233219944075  +5.382863503774  -120.492872996107    10.39s
+  15  computed  +0.833328197623  +1.876246130347  +5.257476782081  -2.005382749600  -0.890683778231    11.78s
+  17  computed  -0.196795039281  -5.836999720859  -41.021998325154  +3.921154955292  +0.132202138146    17.92s
 [BOUNDARY] PASS: the parameterized replay records the too-small reduced-shell boundary instead of counting it as a failure
     N=9: reduced-shell anchor unavailable: KeyError((3, 3, 0))
 [REPRO] PASS: the size-inferred replay reproduces the landed 15^3 calibration cache
@@ -29,3 +37,6 @@ Verdict:
 The current executable size-parameterized replay reproduces the landed 15^3 E-center calibration, but the checked neighboring boxes do not support the naive finite-size extrapolation route.  This is a boundary/no-go for citing the 15^3 match as convergence evidence, not a refutation of a future size-stable infinite-volume theorem.
 
 TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

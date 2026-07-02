@@ -81,7 +81,10 @@ def part_a_authorities() -> None:
     source = read(source_path)
     typed = read(typed_path)
 
-    check("new note declares exact support status", "**Status:** exact support" in note)
+    check(
+        "new note declares canonical bounded support status",
+        "**Claim type:** bounded_theorem" in note and "exact support" in note,
+    )
     check("new note says W1 remains open", "This is not a proof of W1" in note and "magnitude selector" in note)
     check("readout note defines c_TE algebra", "c_TE  := gamma_T(center) / gamma_E(center) = s_TE * q_T / q_E" in readout)
     check("naturality note gives target equivalence", "q_E = gamma_E(center)/gamma_E(shell) = 15/8" in naturality and "c_TE = gamma_T(center)/gamma_E(center) = -8/9" in naturality)

@@ -1,17 +1,15 @@
 # Quark Route-2 Color/Covariance Bridge Equivalence Support
 
 **Date:** 2026-06-21
-**Type:** bounded_theorem
 **Claim type:** bounded_theorem
+**Claim scope:** bounded support boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** exact support / bridge-equivalence
 boundary. This note does not derive `rho_E = 21/4`, does not derive the
 typed color bridge, does not derive the typed covariance bridge, and does not
 close the `s3_time_theta_to_slice_coupling_note` open gate.
-**Status authority:** branch-local physics-loop artifact only. Independent
-review and the normal audit lane are required before any repo-wide status
-change.
-**Primary runner:** [scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py](../scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py)
-**Runner cache:** [logs/runner-cache/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.txt](../logs/runner-cache/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.txt)
+**Primary runner:** [`scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py`](../scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.txt)
 
 ## Scope
 
@@ -38,19 +36,19 @@ are not two independent missing primitives.
 
 Load-bearing authorities:
 
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
   supplies the endpoint algebra
   `c_TE = s_TE q_T/q_E`, `lambda=q_E/q_T`, and the T-side candidate values.
-- [`OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md`](OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md)
+- [[`OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md`](OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md)](OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md)
   supplies the same-domain star leverage `kappa=3/2`, hence `kappa^2=9/4`,
   while explicitly not deriving a Route-2 readout entry.
-- [`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
+- [[`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)
   supplies the exact group-theory color fraction
   `F_adj=(N_c^2-1)/N_c^2`, giving `F_adj=8/9` at `N_c=3`.
-- [`QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md`](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md)
+- [[`QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md`](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md)](QUARK_ROUTE2_QE_KAPPA_SQUARED_COVARIANCE_SHARPER_NO_GO_NARROW_NOTE_2026-06-10.md)
   identifies `lambda=kappa^2` as the missing covariance bridge, not a
   consequence of equivariance.
-- [`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md)
+- [[`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md)](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md)
   identifies `F_adj -> c_TE=-F_adj` as a missing typed Route-2 center bridge.
 
 Forbidden proof inputs: observed masses, fitted Yukawa values, CKM/J target

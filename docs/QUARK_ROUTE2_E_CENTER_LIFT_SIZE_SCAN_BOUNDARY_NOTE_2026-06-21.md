@@ -1,11 +1,12 @@
 # Route-2 E-Center Lift Size-Scan Boundary: the 15^3 Calibration Replay Is Real, but the Current Finite-Box Family Does Not Certify Convergence
 
 **Date:** 2026-06-21
-**Claim type:** bounded-support / narrow negative route pruning
+**Claim type:** bounded_theorem
+**Claim scope:** bounded-support / narrow negative route pruning
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** bounded-support
 **Trace class:** negative_route_pruning
 **Reachability to target:** prunes the naive finite-box extrapolation route for the open `rho_E = 21/4` endpoint, without closing the endpoint theorem.
-**Status authority:** branch-local physics-loop artifact only. This note writes no audit verdict, retags no ledger row, and does not update repo-wide authority surfaces.
 **Primary runner:** [`scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py)
 **Runner cache:** [`logs/runner-cache/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.txt)
 

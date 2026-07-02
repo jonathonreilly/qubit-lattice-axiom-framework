@@ -1,21 +1,19 @@
 # s3-Time Theta-to-Slice Readout Witness Criterion
 
 **Date:** 2026-06-21
-**Type:** bounded_theorem
 **Claim type:** bounded_theorem
+**Claim scope:** bounded support boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** bounded support / direct-consumer narrowing.
 This note does not derive the Route-2 endpoint triple and does not close the
 parent `s3_time_theta_to_slice_coupling_note` open gate.
-**Status authority:** branch-local physics-loop artifact only. Independent
-review and the normal audit lane are required before any repo-wide status
-change.
-**Primary runner:** [scripts/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.py](../scripts/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.py)
-**Runner cache:** [logs/runner-cache/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.txt](../logs/runner-cache/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.txt)
+**Primary runner:** [`scripts/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.py`](../scripts/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.txt`](../logs/runner-cache/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.txt)
 
 ## Scope
 
 The parent row
-[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+[[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 has an exact conditional family
 
 ```text

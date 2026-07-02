@@ -1,9 +1,13 @@
 # Quark Route-2 Rconn Two-Gate Source Bridge Factorization
 
 **Date:** 2026-06-21
-**Status:** exact negative boundary for conflating the Rconn source bridge
+**Claim type:** no_go
+**Claim scope:** exact negative boundary for conflating the Rconn source bridge
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 with the physical `kappa_EW` selector
-**Primary runner:** `scripts/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.py`
+**Primary runner:** [`scripts/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.py`](../scripts/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.txt)
+**Authority links:** [`RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md), [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md), [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md), [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
 ## Purpose
 
@@ -161,5 +165,5 @@ Expected:
 
 ```text
 TOTAL: PASS=49, FAIL=0
-Status: exact negative boundary for W1/W2 gate conflation.
+Boundary classification: exact negative boundary for W1/W2 gate conflation.
 ```

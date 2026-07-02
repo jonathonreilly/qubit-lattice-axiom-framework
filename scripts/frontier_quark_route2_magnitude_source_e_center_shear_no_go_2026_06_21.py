@@ -91,7 +91,7 @@ def part_a_authorities() -> None:
 
     for path in (note_path, readout_path, naturality_path, source_path):
         check(f"{path.name} exists", path.exists(), str(path.relative_to(ROOT)))
-    check("block32 sign-split note is not assumed on main", not sign_split_path.exists())
+    check("block32 sign-split note is reviewed in the same source slice", sign_split_path.exists())
 
     note = read(note_path)
     readout = read(readout_path)
@@ -99,7 +99,7 @@ def part_a_authorities() -> None:
     source = read(source_path)
     compact_note = norm(note)
 
-    check("new note declares exact negative boundary", "**Status:** exact negative boundary" in note)
+    check("new note declares canonical no-go boundary", "**Claim type:** no_go" in note and "exact negative boundary" in note)
     check("new note states shear rule", "q_E -> q_E + delta" in note and "rho_E -> rho_E + 6 delta" in note)
     check("new note scopes future routes open", "not a no-go against every future magnitude theorem" in note)
     check("readout note gives reduced family", "P(rho_E)" in readout and "beta_E / alpha_E = 21/4" in readout)

@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_rank_one_carrier_leg_factorization_boundary_2026_06_21.py
+runner_sha256: 1e8b039a64cd79e8a3a02612bf28b4ec96a4d08812d20c9c29f81eee5d82d705
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
 Route-2 rank-one carrier leg-factorization boundary
 ====================================================================================
 Status: no-go for extracting the endpoint from the current K_R carrier alone.
@@ -36,3 +44,6 @@ PASS=14 FAIL=0
 VERDICT: no-go boundary. The current K_R carrier has an exact leg-level rank-one
 factorization, but the source leg is common to E and T and carries reciprocal degree zero.
 The endpoint still requires a new normalization primitive or nonseparable degree-two object.
+
+----- stderr -----
+

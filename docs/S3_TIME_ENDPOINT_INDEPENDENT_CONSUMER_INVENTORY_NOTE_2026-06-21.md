@@ -1,20 +1,20 @@
 # S3-Time Endpoint-Independent Consumer Inventory
 
 **Date:** 2026-06-21
-**Claim type:** exact_support
+**Claim type:** bounded_theorem
+**Claim scope:** exact_support
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** exact-support
 **Trace class:** upstream_support
 **Reachability to target:** supports and narrows downstream use of the
 S3/Route-2 readout endpoint residual
-**Status authority:** independent audit lane only. This note does not set,
-predict, or estimate an audit outcome.
 **Primary runner:** [`scripts/frontier_s3_time_endpoint_independent_consumer_inventory_2026_06_21.py`](../scripts/frontier_s3_time_endpoint_independent_consumer_inventory_2026_06_21.py)
 (`PASS=8 FAIL=0`)
 **Runner cache:** [`logs/runner-cache/frontier_s3_time_endpoint_independent_consumer_inventory_2026_06_21.txt`](../logs/runner-cache/frontier_s3_time_endpoint_independent_consumer_inventory_2026_06_21.txt)
 
 ## Purpose
 
-The parent [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+The parent [[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 records an exact conditional family
 
 ```text
@@ -136,13 +136,13 @@ reviewer which downstream uses can be cherry-picked without waiting for the
 
 ## Load-Bearing Inputs
 
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
+- [[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
   - reduced readout map and endpoint obstruction.
-- [`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
+- [[`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)
   - exact slice backbone and conditional family.
-- [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+- [[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
   - parent open-gate theta-to-slice surface.
-- [`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](S3_TIME_PRIMITIVE_CHAIN_NOTE.md)
+- [[`S3_TIME_PRIMITIVE_CHAIN_NOTE.md`](S3_TIME_PRIMITIVE_CHAIN_NOTE.md)](S3_TIME_PRIMITIVE_CHAIN_NOTE.md)
   - primitive-chain open target and downstream use boundary.
 
 ## Forbidden-Imports Check

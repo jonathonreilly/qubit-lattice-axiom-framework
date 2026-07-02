@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_source_readout_factorization_gauge_no_go_2026_06_21.py
+runner_sha256: e63c7a9d1330a2e51cae489df4f48b69c9620c1196f7e03ca809e932ab95b95d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
 Route-2 source/readout factorization gauge no-go
 ====================================================================================
 Status: no-go for certifying independent legs from product-level readout alone.
@@ -37,3 +45,6 @@ PASS=13 FAIL=0
 VERDICT: no-go. Product-level endpoint/readout algebra fixes only total reciprocal
 degree two. It cannot certify the source/readout split or two independent dual legs
 without an additional leg-level factorization primitive that fixes the channel gauges.
+
+----- stderr -----
+

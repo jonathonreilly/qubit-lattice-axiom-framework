@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_color_covariance_bridge_equivalence_2026_06_21.py
+runner_sha256: ffeba61599faf84df4d54be04f0a2a3a7dafdf1ffeb70cf36265f3e1246b06a5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 Route-2 color/covariance bridge equivalence verifier
 ========================================================================
 PASS: note is scoped as exact support, not endpoint-triple closure
@@ -25,3 +33,6 @@ PASS: note records all major falsifiers
 PASS: note does not claim typed bridge derivation
 ========================================================================
 TOTAL: PASS=23, FAIL=0
+
+----- stderr -----
+

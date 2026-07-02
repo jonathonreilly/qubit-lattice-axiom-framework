@@ -1,13 +1,14 @@
 # Route-2 Single-Adjoint-Line Selector: Current SU(3)-Equivariant Source Bank No-Go
 
 **Date:** 2026-06-21
-**Claim type:** exact negative boundary / source-selector no-go
+**Claim type:** no_go
+**Claim scope:** exact negative boundary / source-selector no-go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **actual_current_surface_status:** no-go
 **trace_class:** negative_route_pruning
 **reachability_to_target:** prunes
-**Status authority:** branch-local physics-loop artifact only. This note writes no audit verdict, does not retag any ledger row, and does not update repo-wide authority surfaces.
-**Primary runner:** [`scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py) (`PASS=20 FAIL=0`)
-**Runner output:** [`outputs/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.txt`](../outputs/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.txt)
+**Primary runner:** [`scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.txt)
 
 ## Target
 
@@ -64,11 +65,11 @@ This note does not derive `beta_E/alpha_E=21/4` and does not close the S3/Route-
 
 ## Load-Bearing Inputs
 
-- [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - current typed bank lacks the Rconn-to-center-ratio bridge.
-- [`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md) - exact `F_adj=8/9` support and physical-readout boundary.
-- [`RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - color-trace readout/weighting selector remains open.
-- [`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) - exact singlet/adjoint Fierz channel split.
-- [`CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md`](CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - exact `1 + 8` singlet/traceless decomposition.
+- [[`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md)](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md) - current typed bank lacks the Rconn-to-center-ratio bridge.
+- [[`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md)](RCONN_DERIVED_NOTE.md) - exact `F_adj=8/9` support and physical-readout boundary.
+- [[`RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md`](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md)](RCONN_KAPPA_EW_REGISTER_NOT_READ_COLOR_TRACE_OPEN_GATE_NOTE_2026-06-08.md) - color-trace readout/weighting selector remains open.
+- [[`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md)](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) - exact singlet/adjoint Fierz channel split.
+- [[`CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md`](CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md)](CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md) - exact `1 + 8` singlet/traceless decomposition.
 
 ## Forbidden-Imports Check
 

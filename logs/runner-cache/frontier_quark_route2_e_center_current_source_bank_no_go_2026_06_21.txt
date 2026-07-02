@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_e_center_current_source_bank_no_go_2026_06_21.py
+runner_sha256: 6a733f2125889bed971557b0f23dc0d63d14ee80dc3a5dcad6ff7346ae78a85a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 Route-2 E-center current source-bank no-go verifier
 ========================================================================
 PASS: note scopes the result as a bounded current-bank obstruction
@@ -23,3 +31,6 @@ PASS: a third positive sample shares the bank but gives a third E-center value
 PASS: note records the exact counter-witness pair
 ========================================================================
 TOTAL: PASS=21, FAIL=0
+
+----- stderr -----
+

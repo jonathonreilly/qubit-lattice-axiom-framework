@@ -1,17 +1,18 @@
 # S3-Time Theta-to-Slice `rho_E` Dependency Firewall: The Unresolved Route-2 Readout Entry Propagates Only Through the E-Center Source Factor
 
 **Date:** 2026-06-21
-**Claim type:** exact_support
+**Claim type:** bounded_theorem
+**Claim scope:** exact_support
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Actual current-surface status:** exact-support
 **Trace class:** upstream_support
 **Reachability to target:** supports and narrows the `s3_time_theta_to_slice_coupling_note` open gate
-**Status authority:** independent audit lane only. This note does not set, predict, or estimate an audit outcome.
-**Primary runner:** [`scripts/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.py`](../scripts/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.py) (`PASS=10 FAIL=0`)
+**Primary runner:** [`scripts/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.py`](../scripts/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.py)
 **Runner cache:** [`logs/runner-cache/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.txt`](../logs/runner-cache/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.txt)
 
 ## Target
 
-The parent [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
+The parent [[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)
 already has the correct open-gate boundary:
 
 ```text
@@ -122,11 +123,11 @@ the reviewer.
 
 ## Load-Bearing Inputs
 
-- [`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) -
+- [[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md)](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md) -
   parent open-gate theta-to-slice surface.
-- [`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) -
+- [[`QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md) -
   exact slice backbone and conditional family.
-- [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) -
+- [[`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md) -
   restricted readout map and endpoint obstruction.
 
 ## Forbidden-Imports Check

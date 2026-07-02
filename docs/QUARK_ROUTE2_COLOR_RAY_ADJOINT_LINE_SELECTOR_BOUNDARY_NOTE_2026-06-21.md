@@ -1,9 +1,12 @@
 # Quark Route-2 Color-Ray Adjoint-Line Selector Boundary
 
 **Date:** 2026-06-21
-**Type:** conditional-support plus current-source boundary
+**Claim type:** bounded_theorem
+**Claim scope:** conditional-support plus current-source boundary
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
 **Primary runner:** [`scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py`](../scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py)
-**Runner output:** [`outputs/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.txt`](../outputs/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.txt)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.txt)
+**Authority links:** [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [`QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md), [`COLOR_ORIENTATION_OF_THE_STATE_IS_PREDICTIVELY_VACUOUS_NARROW_THEOREM_NOTE_2026-06-09.md`](COLOR_ORIENTATION_OF_THE_STATE_IS_PREDICTIVELY_VACUOUS_NARROW_THEOREM_NOTE_2026-06-09.md), [`MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md`](MATTER_COLOR_DEPOLARIZATION_NECESSARY_FOR_GAUGE_LINK_AD_INVARIANCE_NARROW_THEOREM_NOTE_2026-06-09.md), [`CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md`](CL3_QUARK_ANTIQUARK_COLOR_SINGLET_THEOREM_NOTE_2026-05-02.md), [`EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md`](EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md), [`Z3_CHARACTER_ISOMORPHISM_COLOR_GENERATION_OPEN_GATE_NOTE_2026-05-10.md`](Z3_CHARACTER_ISOMORPHISM_COLOR_GENERATION_OPEN_GATE_NOTE_2026-05-10.md), [`S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md`](S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md)
 
 ```yaml
 actual_current_surface_status: conditional-support

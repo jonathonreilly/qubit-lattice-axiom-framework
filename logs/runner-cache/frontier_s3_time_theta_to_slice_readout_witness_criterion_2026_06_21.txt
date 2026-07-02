@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_theta_to_slice_readout_witness_criterion_2026_06_21.py
+runner_sha256: 2d9bb1b66ebcc5e00aa65b20f59470b15eafa39e95b3b45d987918fc038ca9d3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.49
+status: ok
+----- stdout -----
 s3-time readout witness criterion verifier
 ========================================================================
 PASS: note is scoped as bounded support, not endpoint-triple closure
@@ -18,3 +26,6 @@ PASS: witness target is equivalent to the Route-2 endpoint chain (q_T=5/6, q_E=1
 PASS: current authorities do not supply the E-center witness value as a theorem
 ========================================================================
 TOTAL: PASS=16, FAIL=0
+
+----- stderr -----
+

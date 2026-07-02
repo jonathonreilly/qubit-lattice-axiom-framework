@@ -1,14 +1,17 @@
 # Quark Route-2 Source-Augmented E-Center Functor No-Go
 
 **Date:** 2026-06-21
-**Status:** exact negative boundary / functoriality no-go
-**Runner:** `scripts/frontier_quark_route2_source_augmented_e_center_functor_no_go_2026_06_21.py`
+**Claim type:** no_go
+**Claim scope:** exact negative boundary / functoriality no-go
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_quark_route2_source_augmented_e_center_functor_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_source_augmented_e_center_functor_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_source_augmented_e_center_functor_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_source_augmented_e_center_functor_no_go_2026_06_21.txt)
 **Primary parents:**
-`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`,
-`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`,
-`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`,
-`RCONN_DERIVED_NOTE.md`,
-`QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`
+[`S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`](S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md),
+[`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md),
+[`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md),
+[`RCONN_DERIVED_NOTE.md`](RCONN_DERIVED_NOTE.md),
+[`QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`](QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md)
 
 ## Scope
 

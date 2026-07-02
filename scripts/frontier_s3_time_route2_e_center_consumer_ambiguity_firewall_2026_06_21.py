@@ -114,7 +114,8 @@ def part1_note_and_authority_boundary() -> None:
 
     check(
         "firewall note is exact-support and not endpoint closure",
-        "**Status:** exact-support" in note
+        "**Claim type:** bounded_theorem" in note
+        and "bounded support boundary" in note
         and "does not derive `rho_E = 21/4`" in note
         and "unique" in note
         and "exact `Theta_R -> Lambda_R` coupling theorem" in note,

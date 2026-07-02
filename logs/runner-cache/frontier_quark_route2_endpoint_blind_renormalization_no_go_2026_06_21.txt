@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.py
+runner_sha256: a9ec119e697d28a1fd2d2689d71aaa638cc8b20a3de26993d0ac4a556709b9e9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
 Route-2 endpoint-blind renormalization no-go
 ======================================================================================
 Parsed source cache: logs/runner-cache/frontier_quark_route2_qe_box_size_scan_2026_06_10.txt
@@ -34,3 +42,6 @@ Verdict:
 Endpoint-blind/separable finite-box renormalizations cannot rescue the Route-2 endpoint triple. They preserve lambda=q_E/q_T, and the live bulk lambda rows miss 9/4.  A rescue therefore needs a nonseparable E-specific center/shell counterterm, which is the missing E-center readout datum rather than a harmless size-stable normalization.
 
 TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

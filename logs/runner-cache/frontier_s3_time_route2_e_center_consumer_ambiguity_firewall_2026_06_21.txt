@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_s3_time_route2_e_center_consumer_ambiguity_firewall_2026_06_21.py
+runner_sha256: c26dc5eb9ce9edf5db0c8cb412d361a5fa743d4fd50555ac635b95ed1c96c451
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
 S3-time Route-2 E-center consumer ambiguity firewall
 ========================================================================
 
@@ -46,3 +54,6 @@ SUMMARY
 ========================================================================
 Status: exact-support consumer firewall; endpoint rho_E remains open.
 PASS=12 FAIL=0
+
+----- stderr -----
+

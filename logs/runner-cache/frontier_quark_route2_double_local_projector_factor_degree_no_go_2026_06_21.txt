@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_double_local_projector_factor_degree_no_go_2026_06_21.py
+runner_sha256: 395ee62410742067cf0f73dfd82fa6013ba631cff8b4e6d43ea89d681a32fbe4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
 Route-2 double-local projector factor-degree no-go
 ========================================================================
 
@@ -48,3 +56,6 @@ SUMMARY
 ========================================================================
 Status: no-go for zero/one-factor normalizations; two-factor primitive remains open.
 PASS=14 FAIL=0
+
+----- stderr -----
+

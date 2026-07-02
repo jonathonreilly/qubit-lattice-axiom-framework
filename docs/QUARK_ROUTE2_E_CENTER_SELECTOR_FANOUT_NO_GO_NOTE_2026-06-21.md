@@ -1,8 +1,12 @@
 # Quark Route-2 E-Center Selector Fan-Out No-Go
 
 **Date:** 2026-06-21
-**Status:** exact negative boundary for E-center-visible natural selectors
-**Primary runner:** `scripts/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.py`
+**Claim type:** no_go
+**Claim scope:** exact negative boundary for E-center-visible natural selectors
+**Status authority:** independent audit lane only. This source note does not set, claim, or predict an audit outcome.
+**Primary runner:** [`scripts/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.py`](../scripts/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.py)
+**Runner cache:** [`logs/runner-cache/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.txt`](../logs/runner-cache/frontier_quark_route2_e_center_selector_fanout_no_go_2026_06_21.txt)
+**Authority links:** [`QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md`](QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md), [`QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md), [`QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md`](QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md), [`QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md`](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md)
 
 ## Purpose
 
@@ -160,5 +164,5 @@ Expected result:
 
 ```text
 TOTAL: PASS=26, FAIL=0
-Status: exact negative boundary for E-center-visible natural selectors.
+Boundary classification: exact negative boundary for E-center-visible natural selectors.
 ```

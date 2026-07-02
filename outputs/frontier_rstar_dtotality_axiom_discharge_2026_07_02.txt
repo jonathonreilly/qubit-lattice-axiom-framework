@@ -1,0 +1,22 @@
+CHECK 01: PASS — axiom memo carries the Record additivity sentence (R* clause 1 verbatim)
+CHECK 02: PASS — axiom memo carries 'A readout value is determined by record content alone.'
+CHECK 03: PASS — axiom memo carries the full law sentence (domain + exactly-one-answer)
+CHECK 04: PASS — axiom memo carries the Lattice distinction clause
+CHECK 05: PASS — axiom memo carries the Qubit distinction clause
+CHECK 06: PASS — axiom memo carries 'about each site' (proper cubic rotations; motion group)
+CHECK 07: PASS — T1: basis-dependent readout (varies at fixed content) flagged NOT content-determined
+CHECK 08: PASS — T1: orbit-constant (record-content-only) readout passes content-determination
+CHECK 09: PASS — T1: imported-basis orbit is a set of >=2 labelings inducing >=2 values (unsupplied choice, not record content)
+CHECK 10: PASS — T2: partial rule (undefined at an in-domain state) fails exactly-one-answer totality
+CHECK 11: PASS — T2: total rule passes exactly-one-answer totality on its supplied domain
+CHECK 12: PASS — T3(a): singleton domain at a generic one-record state is NOT motion-closed
+CHECK 13: PASS — T3(a): empty-configuration singleton IS motion-closed (the honest exception)
+CHECK 14: PASS — T3(a): uniform-configuration singleton is motion-closed (lawful narrow domain) yet no full-surface supplier
+CHECK 15: PASS — T3(a): pointwise evaluation of a motion-closed rule at s0 is distinct from a singleton domain (evaluation is not a domain)
+CHECK 16: PASS — T3(b): S3-class rule is total on the narrowed 'Y nondegenerate' domain
+CHECK 17: PASS — T3(b): S3-class rule fails full-surface supplier -- a law-admissible locus gets no context verdict
+CHECK 18: PASS — note asserts it adjudicates nothing
+CHECK 19: PASS — note asserts no wall is closed
+CHECK 20: PASS — note flags siblings as review-pending citations
+CHECK 21: PASS — note states 'evaluation is not a domain'
+TOTAL: PASS=21 FAIL=0

@@ -53470,10 +53470,6 @@
     },
     {
       "from": "repo.front_door_status",
-      "to": "gauge_wilson_isotropy_boundary_note_2026-05-04"
-    },
-    {
-      "from": "repo.front_door_status",
       "to": "color_generation_independent_z3_structures_2026-06-05"
     },
     {
@@ -53494,11 +53490,15 @@
     },
     {
       "from": "repo.front_door_status",
+      "to": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+    },
+    {
+      "from": "repo.front_door_status",
       "to": "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02"
     },
     {
       "from": "repo.front_door_status",
-      "to": "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+      "to": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
     },
     {
       "from": "repo.repo_organization",
@@ -103180,17 +103180,17 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "gauge_wilson_isotropy_boundary_note_2026-05-04",
         "color_generation_independent_z3_structures_2026-06-05",
         "axiom_first_lattice_wz_fujikawa_narrow_theorem_note_2026-05-26",
         "darwinism_bridge_residual_local_observability_open_gate_note_2026-06-05",
         "gauge_gauging_selection_conjugation_independence_no_go_note_2026-06-16",
         "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
+        "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02",
         "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02",
-        "higgs_lattice_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+        "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22"
       ],
       "helper_runner_paths": [],
-      "note_hash": "68a74e9d905f3c8ee2ec53ff747d66b51a824364e2a9fbdba45012728aca78d9",
+      "note_hash": "25434df45048d67c9e520c80b425aab68a82cae81597a78d9ffe17d9d59d5447",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

@@ -12,11 +12,11 @@ It is not a physics claim surface and should not be edited by hand.
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3474 |
-| Applied audit verdicts | 1433 |
-| Retained-grade rows, including boxed decorations | 1334 |
+| Applied audit verdicts | 1434 |
+| Retained-grade rows, including boxed decorations | 1335 |
 | Retained positive theorems | 197 |
 | Retained no-go rows | 198 |
-| Retained bounded rows | 882 |
+| Retained bounded rows | 883 |
 | Boxed decorations under retained parents | 57 |
 | Open gates | 29 |
 | Unaudited rows | 1712 |
@@ -33,17 +33,16 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 1715 |
-| Ready rows | 99 |
+| Total pending rows | 1714 |
+| Ready rows | 98 |
 | Cycle-break targets | 9 |
-| Critical pending | 304 |
+| Critical pending | 303 |
 | High pending | 314 |
 | Medium pending | 513 |
 | Leaf pending | 584 |
 
 Next ready rows by queue order:
 
-- [`axiom_first_reeh_schlieder_theorem_note_2026-05-01`](../../docs/AXIOM_FIRST_REEH_SCHLIEDER_THEOREM_NOTE_2026-05-01.md) - critical; audit_in_progress
 - [`yt_ward_identity_derivation_theorem`](../../docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md) - critical; unaudited
 - [`cl3_taste_generation_theorem`](../../docs/CL3_TASTE_GENERATION_THEOREM.md) - critical; unaudited
 - [`axiom_first_cpt_theorem_stretch_note_2026-04-29`](../../docs/AXIOM_FIRST_CPT_THEOREM_STRETCH_NOTE_2026-04-29.md) - critical; unaudited
@@ -51,6 +50,7 @@ Next ready rows by queue order:
 - [`hierarchy_b3_staggered_supplier_cascade_note_2026-06-17`](../../docs/HIERARCHY_B3_STAGGERED_SUPPLIER_CASCADE_NOTE_2026-06-17.md) - critical; unaudited
 - [`clifford_chirality_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`per_site_su2_spin_half_theorem_note_2026-05-02`](../../docs/PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02.md) - high; unaudited
+- [`lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16`](../../docs/LATTICE_LAPLACIAN_SHELL_LOCALIZATION_IDENTITY_BOUNDED_THEOREM_NOTE_2026-06-16.md) - high; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 [`docs/audit/data/audit_queue.json`](../audit/data/audit_queue.json).

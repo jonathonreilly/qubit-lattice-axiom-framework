@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 199 |
 | **retained_no_go** | 197 |
-| **retained_bounded** | 891 |
+| **retained_bounded** | 892 |
 | _retained_pending_chain_ | 4 |
 | open_gate | 29 |
-| unaudited | 1697 |
+| unaudited | 1696 |
 | meta | 326 |
 | ~~audited_numerical_match~~ | 10 |
 | ~~audited_renaming~~ | 26 |
@@ -65,13 +65,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 2 |
-| `audited_clean` | 1294 |
+| `audited_clean` | 1295 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 60 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 10 |
 | `audited_renaming` | 26 |
-| `unaudited` | 2023 |
+| `unaudited` | 2022 |
 
 | claim_type | count |
 |---|---:|
@@ -1044,6 +1044,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_supplied_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_transition_kernel_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `post_record_two_state_markov_stability_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `pre_record_reference_state_tracial_derivation_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.5 | A | - |
 | `qcd_beta_3_pure_gauge_vs_full_sm_narrow_theorem_note_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -14877,6 +14878,19 @@ Five-judge panel breakdown: 4x ('first', 'audited_clean', 'no_go', 'A'); 1x ('se
 - **load-bearing step:** For any row probability vector p=(x,1-x), (pK)_0 - pi_0 = (1-a-b)(p_0 - pi_0), so |1-a-b|<1 gives attraction to pi.  _(class `A`)_
 - **chain closes:** True — Independently expanding gives (pK)_0=b+x(1-a-b) and pi_0=b/(a+b), hence the stated deviation identity; iteration gives contraction by powers of 1-a-b. The kernel, physical bridge, and dial selection are explicitly outside the audited scope.
 - **rationale:** The load-bearing step is a direct algebraic identity for a supplied finite Markov kernel, not a numerical fit or symbol renaming. Independent calculation confirms the stationary vector, normalization, equal-letter subcase, biased subcase, and contraction factor, including the runner's displayed sample values. The clean verdict is limited to the supplied-kernel stability interface and does not certify any derivation or physical selection of the kernel, bridge, clock, Born law, Hamiltonian, generation dial, or Koide dial.
+- **auditor confidence:** high
+
+### `pre_record_reference_state_tracial_derivation_note_2026-05-20`
+
+- **Note:** [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Unique tracial state on the one-qubit-per-site Z^3 tensor-product quasi-local algebra, with finite-region density I/2^|Λ| and equivalent finite-region entropy/unitary-invariance characterizations; no pre-record-reference identification audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.5-20260702T002103Z-aa1c6ca1-pre_record_reference_sta`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** The UHF C*-algebra of type 2^∞ admits a unique tracial state, obtained as the inductive limit of the finite tracial states above.  _(class `C`)_
+- **chain closes:** True — From the accepted M2(C)-per-site and Z^3 substrate, the finite tensor algebras are full matrix algebras with unique normalized trace; any tracial state on the quasi-local UHF algebra restricts to those local traces and is determined on the dense local union. The pre-record identification is explicitly demoted outside the audited scope.
+- **rationale:** The finite matrix-unit proof, tensor trace factorization, inner-unitary invariance, and finite-region maximum-entropy claims are correct under the stated tensor-product algebra. The runner checks only finite-region identities and explicitly does not prove Powers/UHF uniqueness, but the independent dense-local restriction argument closes the infinite uniqueness step for the narrowed claim. The open pre-record identification is not load-bearing because the audited scope excludes it.
 - **auditor confidence:** high
 
 ### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`

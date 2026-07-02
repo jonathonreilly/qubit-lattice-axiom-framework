@@ -1,11 +1,12 @@
 loop_slug: s3-route2-readout-endpoint
-block: 36
+block: 37
 date: 2026-06-21
 mode: campaign
 target_status: best-honest-status
-branch: physics-loop/s3-route2-readout-endpoint-block36-20260621
+branch: physics-loop/s3-route2-readout-endpoint-block37-20260621
 base: origin/main
-worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block36-20260621
+base_commit: 46249450267b867ef93c66557ee7a74e39fdd064
+worktree: /private/tmp/cl3-physics-loop-s3-route2-readout-block37-20260621
 user_constraints:
   - "Do not audit or apply verdicts."
   - "Make PRs for coherent science blocks; do not push to main."
@@ -14,48 +15,47 @@ user_constraints:
 repo_lock:
   mode: degraded_branch_local
   reason: "scripts/automation_lock.py status failed with Permission denied for /Users/jonreilly."
-  branch_local_lock: .claude/science/physics-loops/s3-route2-readout-endpoint/SUPERVISOR_LOCK.json
 active_route:
-  name: box_path_interpolation_family
-  route_type: exact_runner
-  hard_residual: "Can the N=15 measured q_E ~= 15/8 E-center lift be promoted by a smooth radius-scaling boundary path between fixed and proportional boxes?"
+  name: single_adjoint_line_source_selector
+  route_type: constructive conditional theorem
+  hard_residual: "Can a typed E-center/source readout primitive force e_E=7/8 and hence rho_E=21/4 without importing the endpoint target?"
   A_min:
-    - "Exact Route-2 reduced endpoint algebra."
-    - "June 10 q_E box-size observable and its landed metric/Ricci primitives."
-    - "Rational radius-scaling family r_N(p)=4.25*((N-2)/13)^p."
+    - "Exact Route-2 endpoint algebra q_E=1+(beta_E/alpha_E)/6."
+    - "SU(3) adjoint dimension 8."
+    - "Hypothetical typed source selector: one distinguished adjoint line; E-center excess reads complement rank."
   forbidden_imports:
     - "observed quark masses"
     - "fitted Yukawa values"
     - "CKM/J target minimization"
     - "nearest-rational selection"
+    - "measured-calibration fitting"
 current_result:
-  actual_current_surface_status: bounded-support
-  trace_class: negative_route_pruning
-  reachability_to_target: prunes
-  summary: "The sampled p-grid {0,1/4,1/2,3/4,1} does not carry the common N=15 q_E ~= 15/8 origin to a stable larger-box value; best N=25 sample is q_E=0.981191 at p=1."
+  actual_current_surface_status: conditional-support
+  trace_class: upstream_support
+  reachability_to_target: supports
+  summary: "If a typed source-domain primitive selects one adjoint line and reads its complement rank, e_E=7/8, q_E=15/8, rho_E=21/4, and c_TE=-8/9 follow exactly. Rank 7 is unique among integer adjoint-projector ranks. The primitive is absent from the current source bank."
 files_touched:
-  - docs/QUARK_ROUTE2_QE_BOX_PATH_INTERPOLATION_FAMILY_NO_GO_NOTE_2026-06-21.md
-  - scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py
-  - outputs/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.txt
+  - docs/QUARK_ROUTE2_E_CENTER_SINGLE_ADJOINT_LINE_SELECTOR_CONDITIONAL_SUPPORT_NOTE_2026-06-21.md
+  - scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py
+  - outputs/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.txt
   - .claude/science/physics-loops/s3-route2-readout-endpoint/
 commands_run:
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py -> PASS=5 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py > outputs/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.txt"
-  - "python3 -m py_compile scripts/frontier_quark_route2_qe_box_path_interpolation_family_no_go_2026_06_21.py -> pass"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_exact_readout_map.py -> PASS=11 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py -> PASS=27 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py > outputs/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.txt"
+  - "python3 -m py_compile scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py -> pass"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_source_domain_bridge_no_go.py -> PASS=103 FAIL=0"
+  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_e_center_blindness_no_go.py -> PASS=14 FAIL=0"
   - "PYTHONPATH=scripts python3 scripts/frontier_s3_time_primitive_chain_reaudit.py -> PASS=24 FAIL=0"
-  - "PYTHONPATH=scripts python3 scripts/frontier_quark_route2_qe_box_size_scan_2026_06_10.py -> PASS=7 FAIL=0"
-  - "branch-local positive-overclaim scan over 17 changed files -> 0 hits"
+  - "branch-local positive-overclaim scan over 16 changed files -> 0 hits"
 open_imports:
-  - "No derivation of beta_E/alpha_E=21/4."
-  - "No source-domain rule or stronger readout-map primitive supplied."
-  - "Finite p-grid/N-grid only; not a theorem about all radius paths."
-next_exact_action: "Commit, publish the block36 branch, and open a PR. Then pivot to a direct typed E-center source/readout selector attempt."
+  - "No current-source derivation of the single-adjoint-line selector."
+  - "No proof that Route-2 E-center readout should use complement rank rather than line rank/full adjoint/F_adj-as-excess."
+next_exact_action: "Commit, publish, and open the block37 PR. Then attack whether current source geometry can type the single adjoint line."
 pr_status:
-  number: 4566
-  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4566"
-  title: "[physics-loop] s3-route2-readout-endpoint block36 bounded-support"
-  head: physics-loop/s3-route2-readout-endpoint-block36-20260621
+  number: 4567
+  url: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/4567"
+  title: "[physics-loop] s3-route2-readout-endpoint block37 conditional-support"
+  head: physics-loop/s3-route2-readout-endpoint-block37-20260621
   base: main
   state: OPEN
 stop_condition: "None; campaign remains active after PR handoff."

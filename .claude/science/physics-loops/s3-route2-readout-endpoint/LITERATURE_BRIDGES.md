@@ -1,5 +1,5 @@
 # Literature Bridges
 
-No literature bridge was used in block36.
+No literature bridge was used in block37.
 
-The route is internal to the repo's Route-2 endpoint algebra, the landed q_E box-size observable, and exact rational path choices. External values or theorems are not load-bearing.
+The result uses exact integer-rank arithmetic, Route-2 endpoint algebra, and repo-internal SU(3) support only.
